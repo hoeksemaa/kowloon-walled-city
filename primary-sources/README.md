@@ -11,8 +11,9 @@ are not primary. Do not put them here.
 ## Conventions
 
 - One folder for each source.
-- Each folder has a `SOURCE.md`: citation, URL, retrieval date, license, why
+- Each folder has a `SOURCE.md`: citation, link, retrieval date, license, why
   the source is primary, the key facts with page numbers, and checksums.
+- Each source has one main link in the table below.
 - Open-licensed files go in the folder and git stores them.
 - Copyrighted files go in `<folder>/local/`. Git ignores every `local/`
   folder (see `/.gitignore`). These files are on John's Mac only. The
@@ -24,15 +25,37 @@ are not primary. Do not put them here.
 
 ## Sources
 
-| Folder | What | Dates | Files | In git | Link |
-|---|---|---|---|---|---|
-| [`commons-photos-1972-1993/`](commons-photos-1972-1993/SOURCE.md) | 11 original photos: Lambot, Jidanni, Roger Price, ken93110 | 1972–1993 | JPG + Commons metadata JSON | yes (CC BY / CC BY-SA) | https://commons.wikimedia.org/wiki/Category:Historical_images_of_Kowloon_Walled_City |
-| [`legco-hansard-1986-1993/`](legco-hansard-1986-1993/SOURCE.md) | LegCo Hansard: 22 sittings that name the Walled City | Dec 1986 – Jul 1993 | PDF | no (LegCo copyright) | https://www.legco.gov.hk/yr86-87/english/lc_sitg/yr8687.htm |
-| [`mplus-suenn-ho-ca17/`](mplus-suenn-ho-ca17/SOURCE.md) | M+ catalogue of Suenn Ho's field research: 11 video cassettes, 3 route maps on a detailed city plan, 1 video still | 1988–1992 | HTML + JPG | no (© Suenn Ho, M+) | https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/ |
+| Folder | What | Dates | In git | Link |
+|---|---|---|---|---|
+| [`commons-photos-1972-1993/`](commons-photos-1972-1993/SOURCE.md) | 11 original photos: Lambot, Jidanni, Roger Price, ken93110 | 1972–1993 | yes (CC BY / CC BY-SA) | https://commons.wikimedia.org/wiki/Category:Historical_images_of_Kowloon_Walled_City |
+| [`legco-hansard-1986-1993/`](legco-hansard-1986-1993/SOURCE.md) | LegCo Hansard: 22 sittings that name the Walled City | Dec 1986 – Jul 1993 | no (LegCo copyright) | https://www.legco.gov.hk/yr86-87/english/lc_sitg/yr8687.htm |
+| [`mplus-suenn-ho-ca17/`](mplus-suenn-ho-ca17/SOURCE.md) | M+ catalogue of Suenn Ho's field research: 11 video cassettes, 3 route maps on a detailed city plan, 1 video still | 1988–1992 | no (© Suenn Ho, M+) | https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/ |
+| [`mplus-girard-lambot-photos/`](mplus-girard-lambot-photos/SOURCE.md) | M+ photos by Girard and Lambot: south elevation, alleys, roofs, stairs, aerial | 1987–1991 | no (© Girard, © Lambot) | https://www.mplus.org.hk/en/collection/makers/ian-lambot/ |
+| [`uk-lords-hansard-1974/`](uk-lords-hansard-1974/SOURCE.md) | House of Lords debate: a first-hand account of lanes, drains, water, power | 11 Jun 1974 | yes (Open Parliament Licence) | https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon |
 
-## Leads not yet collected
+## Blocked: links for John to look at
 
-Primary sources that I found but did not get. The reason is given for each.
+I can not get these with a script. Open each link in a browser, then we
+can decide what to download.
+
+| Source | Why it matters | Block | Link |
+|---|---|---|---|
+| FCO 40/2253 "Future of Hong Kong: Kowloon Walled City" (1987) | UK file on the clearance decision | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-1637-FCO40-2253-Future-of-Hong-Kong-Kowloon-Walled-City-1987 |
+| FCO 40/1511 "Compulsory acquisition of land in the Kowloon Walled City" (1982) | Land and buildings just before the peak | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-1208-FCO40-1511-Compulsory-acquisition-of-land-in-the-Kowloon-Walled-City-1982 |
+| FCO 40/790 "Kowloon Walled City and aircraft safety" (1977) | Height limits; 6 standpipes for 27,000 people | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0642-FCO40-790-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1977 |
+| FCO 40/980, same subject (1978) | Height limits | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0776-FCO40-980-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1978 |
+| UK Hansard search, 1980–1994 | Commons and Lords items on the clearance | Cloudflare bot check | https://hansard.parliament.uk/search/Contributions?searchTerm=%22walled%20city%22&startDate=1980-01-01&endDate=1994-12-31 |
+| UPI, 18 Dec 1984 | On-the-ground report at peak | 403 to scripts | https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/ |
+| UPI, 15 Feb 1987 | Report on the clearance plan | 403 to scripts | https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-down/8464540363600/ |
+| Gwulo media 22835, Suddaby photo, 1 Nov 1987 | Dentists' shops on Tung Tau Tsuen Road | No license on the page | https://gwulo.com/media/22835 |
+| WSJ 2014 project, Wayback copies | Clips of the Suenn Ho footage | Wayback was offline (503) on 2026-10-29; try again | https://web.archive.org/web/2016/http://projects.wsj.com/kwc/ |
+| Library of Congress, Paul Rudolph slide | Photo, 1960–1980 | "Publication may be restricted" | https://www.loc.gov/item/2010648314/ |
+
+The LA Times, NYT, AP, Chicago Tribune, Guardian and Independent block this
+tool's crawler. A library database (ProQuest, NewsBank) gives access to their
+1984–1993 reports. ProQuest Historical Newspapers also has the SCMP archive.
+
+## Other leads not yet collected
 
 **Plans and surveys**
 - The 1987 pre-clearance survey by the HK government, which counted residents,
@@ -47,14 +70,7 @@ Primary sources that I found but did not get. The reason is given for each.
   They are for sale at full resolution.
 
 **Government files**
-- UK National Archives: FCO 40/2253 "Future of Hong Kong: Kowloon Walled
-  City" (1987), FCO 40/2214 (1987), FCO 40/790 (1977, aircraft safety and
-  building heights). The online copies on hkintexts.histsyn.com are behind a
-  Cloudflare bot check, so I did not collect them. TNA Kew sells copies.
-- UK House of Lords Hansard, 11 Jun 1974, "Walled City of Kowloon"
-  (https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon).
-  It is open under the Open Parliament Licence, so git can store it. It is
-  before the peak, but it gives lane widths, drains and wiring.
+- FCO 40/2214 (1987, LegCo Hansards). No link found yet.
 - The LegCo Finance Committee paper of 9 Dec 1987 and the 1993 Director of
   Audit report on the compensation.
 
@@ -64,22 +80,9 @@ Primary sources that I found but did not get. The reason is given for each.
   for daily life. It is still in print as *City of Darkness Revisited*, so buy
   it. An archive.org copy exists, but it looks unauthorised, and I did not
   download it.
-- M+ photo objects: Lambot 1989 aerial print (2013.143), Lambot 1991 "Shared
-  staircase linking three buildings" (2017.411), Girard 1987 Tung Tau Tsuen
-  Road facade (20184).
+- Full-size scans of the M+ route maps (CA17/2/1–3) and the M+ photos. Ask M+.
 - RTHK documentary "Kowloon Walled City Stories" (1988). A copy is in M+ CA17/1/3.
-- Gwulo media 22835: Suddaby photo, 1 Nov 1987, dentists' shops on Tung Tau
-  Tsuen Road. License not yet checked.
 - hkmemory.hk photos of the area, 1968 and 1982.
-- More Roger Price photos from Sept 1991 on Flickr (CC BY 2.0).
-- Gerald Posner's account of his 1987 visit with a police escort (posner.com,
-  posted 2016). First-hand, but written later.
-
-**Press, 1984–1993**
-- UPI: "Walled City a Place of Myths and Crime" (18 Dec 1984) and "Kowloon's
-  walled city to come tumbling down" (15 Feb 1987). upi.com returns 403 to
-  scripts, so I did not collect them. Open them in a browser and save them by hand.
-- LA Times, NYT, AP, Chicago Tribune, Guardian and Independent block this
-  tool's crawler, so I did not search them. A library database
-  (ProQuest, NewsBank) gives access.
-- SCMP 1987–1993 reports. ProQuest Historical Newspapers has the SCMP archive.
+- Gerald Posner's account of his 1987 visit with a police escort
+  (https://posner.com/geraldposner/2016/05/tbt-reminder-of-my-1987-police-escort.html).
+  First-hand, but written in 2016.

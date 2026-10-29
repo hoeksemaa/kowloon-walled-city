@@ -65,8 +65,13 @@ vertical survey photo with no date. The city is only a few pixels in it. The
 
 ## More to collect here
 
-- More of Roger Price's 1991 photos: Flickr set 72157604194155789
-  (https://www.flickr.com/photos/rwp-roger/sets/72157604194155789/), CC BY 2.0.
-- The rest of the Commons category, if a file is an original and has a date
-  before 1994.
-- Paul Rudolph's photos on Commons (large TIFF files, not yet checked).
+- Nothing more from Roger Price. I checked his album "Hong Kong - September
+  1991" (https://www.flickr.com/photos/rwp-roger/albums/72157604194155789),
+  which has 24 photos. Only the two above show the city. Flickr now gives the
+  album as CC BY-NC-SA 2.0. The Commons copies stay CC BY 2.0, because
+  Commons reviewed them under that license in 2009 and 2012.
+- I checked the full category on 2026-10-29. The other files are from before
+  1960, or are crops, or show models. The one exception is Paul Rudolph's
+  photo (`Kowloon Walled City, Kowloon, China.tif`, 57.7 MB, "between 1960 and
+  1980"). Its source, the Library of Congress, says "Publication may be
+  restricted" (https://www.loc.gov/item/2010648314/). Thus I left it out for now.
