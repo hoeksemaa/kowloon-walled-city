@@ -1,7 +1,7 @@
 // The model's surroundings: plinth, streets, the hazy city below, light and time of day.
 import * as THREE from 'three';
 import { OUTSIDE } from './footprint.js';
-import { mulberry32, clamp, lerp, smoothstep } from './util.js';
+import { mulberry32, clamp, smoothstep } from './util.js';
 
 export const PLINTH_DEPTH = 150;
 
@@ -220,9 +220,11 @@ export function skyAt(hour, out) {
 }
 
 export class Lighting {
-  constructor(scene, center) {
+  constructor(scene, center, site) {
     this.scene = scene;
     this.center = center;
+    this.north = site.north;
+    this.east = site.east;
     this.hemi = new THREE.HemisphereLight('#dcd9cc', '#4a4540', 1.2);
     scene.add(this.hemi);
     this.sun = new THREE.DirectionalLight('#fff3df', 1.6);
@@ -238,22 +240,30 @@ export class Lighting {
     scene.fog = new THREE.Fog(this.sky, 900, 1700);
   }
 
-  // Hong Kong in mid-March: sunrise about 06:30, sunset about 18:30.
+  // The sun over Hong Kong in the week of 16-22 Dec 1986: latitude 22.33° N, declination
+  // -23.4°, solar noon at about 12:22 HKT. Sunrise about 06:57, sunset about 17:45.
   update(hour, explodeLift) {
-    const day = (hour - 6.5) / 12;
-    const elev = Math.sin(Math.PI * clamp(day, 0, 1));
-    const light = smoothstep(0.0, 0.25, elev) * (day > 0 && day < 1 ? 1 : 0);
-    const az = lerp(-Math.PI * 0.55, Math.PI * 0.55, clamp(day, 0, 1));
+    const D = Math.PI / 180, phi = 22.33 * D, dec = -23.4 * D;
+    const H = (hour - 12.37) * 15 * D;
+    const sinAlt = Math.sin(phi) * Math.sin(dec) + Math.cos(phi) * Math.cos(dec) * Math.cos(H);
+    const alt = Math.asin(sinAlt) + 0.83 * D; // with refraction
+    let az = Math.acos(clamp((Math.sin(dec) - sinAlt * Math.sin(phi)) / (Math.cos(Math.asin(sinAlt)) * Math.cos(phi)), -1, 1));
+    if (H > 0) az = 2 * Math.PI - az; // bearing from north
+    const elev = clamp(alt / (44.3 * D), 0, 1);
+    const light = smoothstep(0.0, 0.25, elev) * (alt > 0 ? 1 : 0);
     const r = 420;
-    const e = Math.max(0.18, elev) * 1.05;
-    const c = this.center;
-    this.sun.position.set(c.x + Math.sin(az) * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + Math.cos(az) * r * Math.cos(e) * 0.6 + 120);
+    const e = Math.max(0.16, alt);
+    const c = this.center, N = this.north, E = this.east;
+    const hx = E[0] * Math.sin(az) + N[0] * Math.cos(az), hz = E[1] * Math.sin(az) + N[1] * Math.cos(az);
+    this.sun.position.set(c.x + hx * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + hz * r * Math.cos(e));
     this.sun.target.position.set(c.x, c.y + explodeLift * 0.5, c.z);
     this.sun.intensity = 0.15 + 1.5 * light;
     this.sun.color.setHSL(0.09, 0.5 - 0.35 * elev, 0.82 + 0.1 * elev);
     this.hemi.intensity = 0.62 + 0.7 * smoothstep(-0.05, 0.3, elev);
     this.hemi.color.set(light > 0.05 ? '#dcd9cc' : '#8e96b0');
-    skyAt(hour, this.sky);
+    // The sky colours were set for March light: map December hours onto them.
+    const m = hour < 6.95 ? hour - 0.45 : hour > 17.75 ? hour + 0.75 : 6.5 + (hour - 6.95) * (12 / 10.8);
+    skyAt(clamp(m, 0, 24), this.sky);
     this.scene.fog.color.copy(this.sky);
     return 1 - smoothstep(0.02, 0.35, elev);
   }

@@ -9,6 +9,9 @@ import { createPopulation, Sim, makePeopleMesh } from './people.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
+import { BEATS, CHAPTERS, beatAt } from './story.js';
+import { Planes } from './planes.js';
+import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
 const GAP = 13; // extra metres between storeys when fully exploded
@@ -68,6 +71,7 @@ controls.maxPolarAngle = 1.42;
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1,
   speed: 60, hoverAgent: -1, hoverBld: -1, follow: false,
+  storyCam: true, camGoal: null, storySel: false, storyCut: false,
 };
 const offsets = new Float32Array(16);
 const shared = {
@@ -75,7 +79,7 @@ const shared = {
 };
 const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 } };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing;
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -83,7 +87,7 @@ async function init() {
   site = buildSite(plan);
   L = buildLayout(site, plan, biz);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
-  lighting = new Lighting(scene, center);
+  lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
   addStreetLabels(scene, site, env.roadOutline, STREETS);
   addNorthArrow();
@@ -142,6 +146,9 @@ async function init() {
   wires = new WireLayer(L, buildWires(L));
   scene.add(wires.object);
 
+  // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
+  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62, BEATS.filter((b) => b.plane).map((b) => b.minute + 0.05));
+
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
   sim = new Sim(L, agents);
@@ -156,7 +163,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, jumpBeat };
   requestAnimationFrame(frame);
 }
 
@@ -298,7 +305,7 @@ function pickAgent() {
     const o = a.id * 4;
     if (P[o + 3] < 0 || P[o + 2] > peopleU.uCutY.value) continue;
     const cellK = Math.floor(P[o + 1] - L.z0) * L.W + Math.floor(P[o] - L.x0);
-    const outdoors = !L.inside[cellK] || (a.loc && a.loc.type === 'roof');
+    const outdoors = !L.inside[cellK] || L.alley[cellK] > 0 || (a.loc && a.loc.type === 'roof');
     const lvl = Math.round(P[o + 2] / STOREY);
     if (!(outdoors || state.explode > 0.5 || (state.cut >= 0 && lvl === state.cut))) continue;
     const [sx, sy] = agentScreen(a);
@@ -328,6 +335,13 @@ function buildUI() {
   });
   tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
   $('rail-clear').onclick = () => setCut(-1);
+  $('st-prev').onclick = () => jumpBeat(-1);
+  $('st-next').onclick = () => jumpBeat(1);
+  $('st-cam').onclick = () => {
+    state.storyCam = !state.storyCam;
+    $('st-cam').classList.toggle('on', state.storyCam);
+    if (state.storyCam && storyIdx >= 0) focusBeat(BEATS[storyIdx]);
+  };
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
 
@@ -363,7 +377,8 @@ function buildUI() {
   });
   canvas.addEventListener('pointerleave', () => { mouse.inside = false; hideTooltip(); });
   let down = null;
-  canvas.addEventListener('pointerdown', (ev) => (down = [ev.clientX, ev.clientY]));
+  canvas.addEventListener('pointerdown', (ev) => { down = [ev.clientX, ev.clientY]; state.camGoal = null; });
+  canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
   canvas.addEventListener('pointerup', (ev) => {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     const id = pickAgent();
@@ -516,10 +531,15 @@ function buildingTooltip(b, k) {
 }
 
 function agentTooltip(id) {
-  const d = sim.describe(sim.agents[id]);
-  return `<div class="tt-h">${d.title} · ${d.age}</div><div>${d.role}</div>
+  const a = sim.agents[id];
+  const d = sim.describe(a);
+  const head = `<div class="tt-h">${d.title}${d.age ? ` · ${d.age}` : ''}</div><div>${d.role}</div>
     <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
-    <div><span class="tt-k">home</span> ${d.home}</div><div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+    <div><span class="tt-k">home</span> ${d.home}</div>`;
+  if (!a.real) return `${head}<div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+  const facts = a.real.facts.slice(0, 2).map(([t, src]) => `<div class="tt-r">${t} <i>${src}</i></div>`).join('');
+  return `<div class="tt-real">REAL PERSON</div>${head}${facts}
+    <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
 }
 
 function updateHover() {
@@ -639,8 +659,8 @@ const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 let lastDay = -1;
 function updateClock() {
   $('clk-time').textContent = fmtClock(sim.minute);
-  const d = new Date(Date.UTC(1986, 11, 16 + sim.day));
-  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  const d = new Date(Date.UTC(1986, 11, 16 + (sim.day % 7)));
+  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}${sim.day % 7 === DONGZHI ? ' · 冬至' : ''}`;
   $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
   const s = sim.stats();
   occ = s.perLevel;
@@ -656,6 +676,114 @@ function resize() {
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
   wires.setResolution(w, h);
+}
+
+// ---- story -----------------------------------------------------------------------------------------
+let storyIdx = -2;
+const dateOf = (day) => {
+  const d = new Date(Date.UTC(1986, 11, 16 + day));
+  return `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} DEC 1986`;
+};
+const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+function updateStory() {
+  const i = beatAt(sim.day % 7, sim.minute);
+  if (i === storyIdx) return;
+  storyIdx = i;
+  renderBeat(i);
+  if (i >= 0) focusBeat(BEATS[i]);
+}
+
+function renderBeat(i) {
+  const b = BEATS[i];
+  if (!b) {
+    $('st-chap').textContent = `DAY 1 · ${dateOf(0)} · ${CHAPTERS[0]}`;
+    $('st-time').textContent = '';
+    $('st-text').textContent = 'One ordinary week in the city, from Tuesday 16 December 1986 to the winter solstice. Press ▶ to start at the first scene.';
+    $('st-quote').innerHTML = '';
+    $('st-cite').textContent = '';
+    return;
+  }
+  $('st-chap').textContent = `DAY ${b.day + 1} · ${dateOf(b.day)} · ${CHAPTERS[b.day]}`;
+  const tags = [];
+  if (b.focus && b.focus.person) tags.push('<span class="chip real">REAL PERSON</span>');
+  if (b.inferred) tags.push('<span class="chip inf">INFERRED</span>');
+  $('st-time').innerHTML = `${b.t} ${tags.join('')}`;
+  $('st-text').textContent = b.text;
+  if (b.quote && b.quote.t) {
+    const [main, gloss] = b.quote.t.split(' [');
+    $('st-quote').innerHTML = `<div class="q">“${esc(main)}”</div>${gloss ? `<div class="g">[${esc(gloss)}</div>` : ''}<div class="w">— ${esc(b.quote.who)} · ${esc(b.quote.src)} · ${esc(b.quote.tag)}</div>`;
+  } else $('st-quote').innerHTML = '';
+  $('st-cite').textContent = b.cite ? `source: ${b.cite}` : '';
+}
+
+function jumpBeat(step) {
+  const n = BEATS.length;
+  const i = storyIdx < 0 ? (step > 0 ? 0 : n - 1) : (storyIdx + step + n) % n;
+  const b = BEATS[i];
+  sim.day = sim.day - (sim.day % 7) + b.day;
+  sim.setTime(b.minute);
+  lastDay = -1;
+  storyIdx = -2;
+}
+
+function focusBeat(b) {
+  // Cut and utilities as the scene asks; undo what an earlier scene set.
+  if (b.cut !== undefined) { setCut(b.cut); state.storyCut = true; }
+  else if (state.storyCut) { setCut(-1); state.storyCut = false; }
+  if (b.wires && !wires.object.visible) $('t-wires').click();
+  if (state.storySel && !(b.focus && b.focus.person)) { sim.select(-1); state.follow = false; state.storySel = false; }
+  if (!state.storyCam || !b.focus) return;
+  const f = b.focus;
+  let p = null, zoom = 5;
+  if (f.person) {
+    const a = sim.agents.find((x) => x.real && x.real.key === f.person);
+    if (a) {
+      sim.select(a.id);
+      state.follow = !!b.follow;
+      state.storySel = true;
+      const o = a.id * 4;
+      if (sim.aP[o + 3] >= 0) { p = [sim.aP[o], sim.aP[o + 2], sim.aP[o + 1]]; zoom = 6.5; }
+    }
+  } else if (f.street) {
+    if (f.street === 'ttt') {
+      const ids = L.frontage.ttt;
+      const c = ids.reduce((s, id) => [s[0] + L.buildings[id].cx, s[1] + L.buildings[id].cz], [0, 0]).map((v) => v / ids.length);
+      p = [c[0], 6, c[1] - 6];
+    } else {
+      const cells = L.streetLanes[f.street];
+      if (cells && cells.length) { const k = cells[Math.floor(cells.length / 2)]; p = [L.cellX(k), 4, L.cellZ(k)]; }
+    }
+    zoom = 6;
+  } else if (f.building) {
+    const B = L.buildings;
+    const b2 = f.building === 'yamen' ? B[L.yamenId] : f.building === 'temple'
+      ? B.find((x) => Object.values(x.prem).some((list) => list.some((pp) => pp.trade === 'temple')))
+      : B.find((x) => x.name === f.building);
+    if (b2) p = [b2.cx, b2.floors * STOREY * 0.5, b2.cz];
+    zoom = 6;
+  } else if (f.standpipe !== undefined) {
+    const sp = wires.standpipes[f.standpipe];
+    if (sp) p = [sp[0], 2, sp[1]];
+    zoom = 7;
+  } else if (f.view === 'plane') {
+    p = [150, 30, -40]; zoom = 2.2;
+  }
+  if (!p) { p = [0, 14, 0]; zoom = 1.15; }
+  state.camGoal = { x: p[0], y: p[1], z: p[2], zoom };
+}
+
+function glideCamera(dt) {
+  const g = state.camGoal;
+  if (!g) return;
+  const k = 1 - Math.exp(-dt * 1.6);
+  const dx = (g.x - controls.target.x) * k, dy = (g.y - controls.target.y) * k, dz = (g.z - controls.target.z) * k;
+  controls.target.x += dx; controls.target.y += dy; controls.target.z += dz;
+  camera.position.x += dx; camera.position.y += dy; camera.position.z += dz;
+  const zg = g.zoom * (state.zf || 1);
+  camera.zoom += (zg - camera.zoom) * k;
+  camera.updateProjectionMatrix();
+  if (Math.abs(g.x - controls.target.x) + Math.abs(g.z - controls.target.z) < 0.3 && Math.abs(zg - camera.zoom) < 0.02) state.camGoal = null;
 }
 
 // ---- loop -------------------------------------------------------------------------------------------
@@ -677,6 +805,9 @@ function frame(now) {
   shared.uHour.value = hour;
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
+  planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
+  updateStory();
+  glideCamera(dt);
   const dark = shared.uNight.value > 0.55;
   if (dark !== state.dark) {
     state.dark = dark;

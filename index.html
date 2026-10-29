@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kowloon Walled City · 1989</title>
+  <title>Kowloon Walled City · 1986</title>
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
   <header id="title">
     <div class="t-cn">九龍城寨</div>
     <div class="t-en">KOWLOON WALLED CITY</div>
-    <div class="t-sub">TUE 14 MAR 1989 · DRAFT 0.2 · PLAN TRACED · HEIGHTS PROVISIONAL</div>
+    <div class="t-sub">ONE WEEK · 16–22 DEC 1986 · PLAN TRACED · BUSINESSES FROM THE CLEARANCE FILES</div>
   </header>
 
   <nav id="toolbar" class="panel" aria-label="Tools">
@@ -53,7 +53,7 @@
 
   <section id="clock" class="panel" aria-label="Time">
     <div class="clk-row">
-      <span id="clk-date">TUE 14 MAR 1989</span>
+      <span id="clk-date">TUE 16 DEC 1986</span>
       <span id="clk-time">05:20</span>
     </div>
     <div id="spark" title="People away from home, through the day. Click to jump.">
@@ -70,6 +70,19 @@
     <div id="clk-stats"></div>
   </section>
 
+  <section id="story" class="panel" aria-label="Story" aria-live="polite">
+    <div class="st-head">
+      <button id="st-prev" title="Previous scene">◀</button>
+      <span id="st-chap"></span>
+      <button id="st-next" title="Next scene">▶</button>
+      <button id="st-cam" class="on" title="The camera follows the story">◎</button>
+    </div>
+    <div id="st-time"></div>
+    <div id="st-text"></div>
+    <div id="st-quote"></div>
+    <div id="st-cite"></div>
+  </section>
+
   <section id="legend" class="panel"></section>
 
   <div id="tooltip" role="status"></div>
@@ -80,7 +93,7 @@
   <button id="src-btn">SOURCES + NOTES</button>
   <section id="sources" class="panel" hidden>
     <button id="src-close" title="Close">×</button>
-    <h2>Sources and status of this draft</h2>
+    <h2>Sources and notes</h2>
     <div id="src-body"></div>
   </section>
 

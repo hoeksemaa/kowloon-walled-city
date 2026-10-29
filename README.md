@@ -1,6 +1,7 @@
-# Kowloon Walled City · 1989
+# Kowloon Walled City · 1986
 
-An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its densest.
+An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
+shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
 
 ## Run
 
@@ -8,6 +9,26 @@ An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its d
 python3 serve.py 8173
 # open http://127.0.0.1:8173/
 ```
+
+## What is in the model
+
+- **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
+  cages, signs, roof tanks and aerials. The heights on the south face come from Lambot's
+  1990 south elevation.
+- **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
+  names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
+- **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
+  that a resident recorded.
+- **People.** About 33,000 residents. Nine are real people who say only their own recorded
+  words. All the others are composites.
+- **Story.** Seven chapters, one for each day, with a camera that follows each scene.
+
+The "Sources + notes" panel in the app lists each source and each inference.
+
+## Sources
+
+`primary-sources/` has one folder for each primary source, with notes and short quotes.
+Copyrighted scans and downloads stay in `primary-sources/**/local/`, which git ignores.
 
 ## Data
 

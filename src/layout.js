@@ -37,7 +37,7 @@ export const USE_LABEL = {
   shop: 'shop',
   works: 'other workshop',
   office: 'trading / property office',
-  school: 'tuition school',
+  school: 'school / tuition school',
   kaifong: 'Kai Fong Welfare Association',
   temple: 'temple / shrine',
   youth: 'youth centre',
@@ -233,6 +233,9 @@ export function buildLayout(site, plan, biz = null, seed = 1986) {
     if (b.kind === 'yamen') { b.floors = 1; b.uses = ['yamen']; b.color = '#8f8a80'; continue; }
     if (b.name === 'tinHau') { b.floors = 1; b.kind = 'low'; b.uses = ['temple']; b.color = '#a5826f'; continue; }
     if (b.name === 'youthCentre') { b.floors = 2; b.kind = 'low'; b.uses = ['youth', 'youth']; continue; }
+    // The free-school centre (義學中心) stood with the youth centre and the old people's
+    // home in the middle of the city (HK01, 2016). Its upper floors: INFERRED flats.
+    if (b.name === 'freeSchool') { b.floors = 6; b.uses = ['school', 'school', 'home', 'home', 'home', 'home']; continue; }
     const dy = Math.hypot(b.cx - yc[0], b.cz - yc[1]);
     // Rim height: the south profile, carried north with noise; lower toward the Yamen.
     let f = profileAt(b.cx) - 0.5 + 2.4 * (vnoise(b.cx / 30, b.cz / 30, 3) - 0.5) + 1.6 * (vnoise(b.cx / 9, b.cz / 9, 7) - 0.5);
@@ -397,6 +400,7 @@ function placePremises(L, biz, rng) {
     }
     const nums = [...new Set(list.map((p) => p.num))].sort((a, b) => (desc[s] ? b - a : a - b));
     const rank = new Map(nums.map((n, i) => [n, i]));
+    (L.addr ||= {})[s] = { nums, F, desc: !!desc[s] };
     for (const p of list) {
       const t = nums.length > 1 ? rank.get(p.num) / (nums.length - 1) : 0.5;
       let idx = Math.round(t * (F.length - 1));
@@ -429,3 +433,20 @@ const MIX_FRONT = [['dentist', 80], ['clinic', 70], ['shop', 45], ['medicine', 1
 const MIX_LANE = [['plastics', 93], ['metal', 56], ['garment', 74], ['works', 41], ['foodfac', 68], ['shop', 32],
   ['dentist', 17], ['clinic', 19], ['eating', 10]];
 const MIX_FACTORY = [['plastics', 3], ['metal', 2], ['foodfac', 3], ['works', 2], ['garment', 1]];
+
+// The building at a recorded address (street key, house number), with at least `floor` + 1
+// storeys: the same house-number order that places the GRS premises. APPROXIMATE.
+export function locate(L, street, num, floor = 0) {
+  const A = L.addr && L.addr[street];
+  if (!A || !A.F.length) return null;
+  let r = 0;
+  while (r < A.nums.length && (A.desc ? A.nums[r] > num : A.nums[r] < num)) r++;
+  const t = A.nums.length > 1 ? Math.min(r, A.nums.length - 1) / (A.nums.length - 1) : 0.5;
+  const idx = Math.round(t * (A.F.length - 1));
+  for (let d = 0; d < A.F.length; d++)
+    for (const q of [idx - d, idx + d]) {
+      const b = L.buildings[A.F[q]];
+      if (b && b.floors > floor && b.kind !== 'yamen') return b;
+    }
+  return null;
+}
