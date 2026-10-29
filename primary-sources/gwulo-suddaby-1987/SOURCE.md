@@ -33,8 +33,32 @@ the largest size that Gwulo stores.
 | `gwulo-22837-walled_city3.jpg` | https://gwulo.com/media/22837 | South side across open, cleared ground, with parked cars and a fence. | 567×364 | `c2065ca8a6fea7a40e92bdb7fc3cc9115573084e057097f093ab6b5ca8627a03` |
 | `gwulo-22838-walled_city4.jpg` | https://gwulo.com/media/22838 | Edge of the city with a hut of metal sheet in front, and a public housing block on the right. | 567×367 | `3f9ccbb1c87045607884ec94375068ccc34e942cba606391a98150ee14a407d1` |
 
-The page HTML with the comments is still to come. John will save it from a
-browser, because the comments do not show in the page that a script gets.
+### Pages
+
+John saved each media page from a browser ("HTML only") on 2026-10-29. Each
+file is the HTML as served: no "saved from" marker, and the canonical URL
+matches. `gwulo-22835.html` is 36,334 bytes, the same size that a script got
+from the server.
+
+| File | Page | SHA-256 |
+|---|---|---|
+| `gwulo-22835.html` | https://gwulo.com/media/22835 | `13bd92a86421bd72d88abc2b0b4e7729aac815ee2c93a201835cd223b3f057d6` |
+| `gwulo-22836.html` | https://gwulo.com/media/22836 | `ea661e1b460c2b5d09107067eebed3baa36e846721f193548a3fd9326bbdff2c` |
+| `gwulo-22837.html` | https://gwulo.com/media/22837 | `11567175b9a444b3c0e587e39fb4d7d8b930db85ec8f164a17b849f09efcb547` |
+| `gwulo-22838.html` | https://gwulo.com/media/22838 | `0218ea61f28922deacc3851311d2cda27dbbf17192954050ab2f14df9b5ed9d5` |
+
+### Comments
+
+Only 22836 has a comment. It is not primary: it is from 2020, and the
+dentist part is a family memory. Use it as a lead for the street plan.
+
+- 22836, "cornwell", 27 Dec 2020: "The location should be Tung Tau Tsuen
+  Road, and Junction Road should be just behind the photographer's back. Yes,
+  one of the entrance should be at the centre of the pic, and join Tai Tseng
+  street (literally big well street). My mom used to visit those illegal
+  dentist once as she suffered from toothache at night."
+- Tai Tseng Street is 大井街. Check it against the street names on the
+  exhibit plan and the Suenn Ho base plan.
 
 ## Captions (Suddaby's own words)
 
