@@ -1,54 +1,79 @@
-// Shown in the "Sources + notes" panel. Each item says whether the model uses it as a
-// sourced fact or as a placeholder. Full notes with citations: research/kwc-research.md.
+// Shown in the "Sources + notes" panel. Each item says what the model takes from a source,
+// and what it infers. Full notes and quotes: primary-sources/ (one folder per source).
 const A = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
-const PLAN = A('https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg', 'exhibit plan');
-const WSJ = A('https://web.archive.org/web/2016id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life', 'WSJ 2014');
-const LAI = A('https://mdpi-res.com/d_attachment/land/land-13-02112/article_deploy/land-13-02112.pdf', 'Lai 2024');
-const ATLAS = A('https://www.atlasobscura.com/articles/kowloon-walled-city', 'Atlas Obscura');
-const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
+const GH = (dir, text) => A(`https://github.com/hoeksemaa/kowloon-walled-city/tree/main/primary-sources/${dir}`, text);
+const PLAN = A('https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg', 'the 1980s street plan');
+const GRS = GH('grs-catalogue-kwc', 'GRS HKRS1255-3');
+const MPLUS = GH('mplus-girard-lambot-photos', 'Girard and Lambot, M+');
+const HO = GH('mplus-suenn-ho-ca17', 'Suenn Ho, M+ CA17');
+const HANSARD = GH('legco-hansard-1986-1993', 'LegCo Hansard');
+const WSJ = GH('wsj-kwc-2014', 'WSJ 2014');
+const HK01 = GH('hk01-kaifong-series-2016', 'HK01 2016');
+const WEB = GH('retrospective-testimony-web', 'HK01 2024, SCMP 2013 and 2018, M+ audio guide');
+const PRESS = GH('press-articles-1959-1992', 'Baltimore Sun 1992');
 const LCSD = A('https://www.lcsd.gov.hk/en/parks/kwcp/historical.html', 'LCSD');
 const ZHWP = A('https://zh.wikipedia.org/wiki/九龍寨城', 'ZH Wikipedia');
+const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
 
 export const SOURCES_HTML = `
-<p>Draft 0.2. The ground plan now comes from a real 1980s plan of the city. The heights,
-the floor uses and the daily life are still placeholders, and each one is marked here.</p>
+<p>One ordinary week in the city at its height: Tuesday 16 to Monday 22 December 1986, the
+day of 冬至 (the winter solstice). Nine real people appear with their own recorded words,
+marked REAL PERSON. Every other person is a composite. A detail that no source records is
+marked inferred.</p>
 
-<h4>Sourced</h4>
+<h4>From primary sources</h4>
 <ul>
-  <li><span class="st ok">PLAN</span>Lanes, 474 plots, the Yamen compound and the outline are traced from the
-    ${PLAN}, a photo of the street plan on display in Kowloon Walled City Park
-    (photo by Lord Jaraxxus, CC BY-SA 4.0). The traced grid in <code>data/plan.json</code> is CC BY-SA 4.0 too.
-    The plan draws lanes wider than the real 0.6–1 m, so the model's lanes are 1–2 m.</li>
-  <li><span class="st ok">SIZE</span>Scaled so the lanes and plots cover 26,000 m² (${LCSD}). The long side
-    is then about 209 m, against 700 ft (213 m) in the 1898 survey (${ZHWP}).</li>
-  <li><span class="st ok">ROADS</span>Lung Chun Road 龍津道 runs on the old south wall base; its name and house
-    numbers are on the plan. Sai Shing Road 西城路 runs on the old west wall base (${ZHWP}). Outside, only
-    Tung Tau Tsuen Road and Tung Tsing Road touched the city.</li>
-  <li><span class="st ok">STREETS</span>Five street names are read off the plan. Lung Shing Road and Sai Shing
-    Road are placed from the descriptions in ${ZHWP}.</li>
-  <li><span class="st ok">BEARING</span>The plan's top faces about 330°: Tung Tau Tsuen Road runs at about 59.5°
-    beside the park (${OSM}, ODbL).</li>
-  <li><span class="st ok">FACTORIES</span>The 32 plots with green dots on Kwong Ming Street are factory sites,
-    as the plan's caption says.</li>
-  <li><span class="st ok">NAMES</span>Youth centre, old people's centre (in the Yamen), Lung Chun Free School
-    Building, Tin Hau temple and the Kai Fong Welfare Association, as labelled on the plan.</li>
-  <li><span class="st ok">PEOPLE</span>33,000 residents in 10,700 households, 1987 survey (${ATLAS}; ${WSJ}).</li>
-  <li><span class="st ok">TRADES</span>The trade types are the 11 categories of the 1983 Kai Fong count of
-    645 businesses (${WSJ}). Dentists and doctors face Tung Tau Tsuen Road; food premises line Lung Chun Road.</li>
-  <li><span class="st ok">DESIGN</span>Visual language after Andrew Blinn's exploded-city prototype
-    (${A('https://x.com/disconcision/status/2115661869478469848', 'x.com/disconcision')}).</li>
+  <li><span class="st ok">PLAN</span>Lanes, 474 plots, the Yamen compound, factory sites and named buildings
+    are traced from ${PLAN}, on display in Kowloon Walled City Park (photo by Lord Jaraxxus,
+    CC BY-SA 4.0). The traced grid in <code>data/plan.json</code> is CC BY-SA 4.0 too. The model draws
+    each plot as a polygon with straight walls, not as grid steps.</li>
+  <li><span class="st ok">SHOPS</span>459 premises with street, house number, floor, name and trade, from the
+    titles of the clearance files of 1987–92 (${GRS}). The signs carry these names.</li>
+  <li><span class="st ok">TRADES</span>The Kai Fong Association counted 645 shops, workshops and clinics in 1983,
+    97 of them dentists (charted in ${WSJ}).</li>
+  <li><span class="st ok">HEIGHT</span>Storeys along the south face, read off Lambot's south elevation of 1990
+    (${MPLUS}, 2017.412).</li>
+  <li><span class="st ok">NUMBERS</span>House numbers fall from west to east on Tung Tau Tsuen Road and Lung Chun
+    Road, and from north to south on Sai Shing Road (Suenn Ho's route map, ${HO}).</li>
+  <li><span class="st ok">PEOPLE</span>About 10,000 families (written answer, 18 Feb 1987) and 33,000 residents
+    (the Governor, 12 Oct 1988), in ${HANSARD}.</li>
+  <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB}, ${WSJ} and ${PRESS}.
+    Most of it was recorded long after 1986, thus each quote has the tag "retrospective" and its year.</li>
+  <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at
+    6–7 a.m. and to 3/F–4/F at 8–9 a.m. (林羅平, HK01 2024); about 70 wells (Gordon Jones, WSJ 2014);
+    standpipes only on the outer roads (葉德偉, HK01 2016).</li>
+  <li><span class="st ok">FACES</span>Window cages, signs, roof tanks and TV aerials follow the photos of 1987–90
+    (${MPLUS}).</li>
+  <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
+    (a police officer, SCMP 2018; the tailor across the road, HK01 2016).</li>
 </ul>
 
-<h4>Placeholders, to replace with sources</h4>
+<h4>Inferred, and marked</h4>
 <ul>
-  <li><span class="st prov">HEIGHT</span>Storeys per building. The mix follows the totals: up to 14 storeys,
-    mostly 10–14 by the 1980s, and some low structures (${LAI}). 3.05 m per storey, from "10 to 14 stories"
-    and "100 to 140 feet" (${WSJ}).</li>
-  <li><span class="st prov">USE</span>Which trade is in which building, and on which floor.</li>
-  <li><span class="st prov">YAMEN</span>The roof form of each hall, and the height of the youth centre and the temple.</li>
-  <li><span class="st prov">DAY</span>Roles and timetables of residents are rough guesses.</li>
-  <li><span class="st prov">WIRES</span>Cable and pipe routes are random. The colours are a diagram, not real cable colours.</li>
-  <li><span class="st prov">CITY</span>The city below the plinth is generic.</li>
+  <li><span class="st prov">HEIGHT</span>Storeys away from the south face: a tall rim of 10–14 and lower blocks
+    round the Yamen, as the 1989 aerial photos show.</li>
+  <li><span class="st prov">TRADE</span>The 459 premises fill 269 floors. 376 more floors get a trade from the
+    1983 mix, until 645 floors have one. No file records them, and the tooltip marks each one with *.</li>
+  <li><span class="st prov">PLACE</span>Where each premises sits on its street: the order of its house number.</li>
+  <li><span class="st prov">STOREY</span>3.05 m for each storey, a usual Hong Kong tenement storey. No measured
+    height is in hand.</li>
+  <li><span class="st prov">LANES</span>The plan draws the lanes wider than the real 0.6–1 m, thus the model's
+    lanes are 1–2 m wide.</li>
+  <li><span class="st prov">HOURS</span>The hour-by-hour week of every person, the real people too. A 1980s Hong
+    Kong week: six days of work and school, Saturday school in the morning, Sunday off for most.</li>
+  <li><span class="st prov">冬至</span>Family dinners on Monday 22 Dec 1986. 冬至 is a Hong Kong-wide custom; the
+    model infers that the city's families kept it too.</li>
+  <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>
+  <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.</li>
+  <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
 </ul>
-<p>People in this model are composites. Names are common Hong Kong surnames, given at random.</p>
+
+<h4>Secondary, for scale only</h4>
+<ul>
+  <li><span class="st prov">SIZE</span>26,000 m² for the plots and lanes (${LCSD}); about 700 ft for the long side
+    in the 1898 survey (${ZHWP}); the bearing of Tung Tau Tsuen Road (${OSM}, ODbL).</li>
+</ul>
+<p>Visual language after Andrew Blinn's exploded-city prototype
+(${A('https://x.com/disconcision/status/2115661869478469848', 'x.com/disconcision')}).
+Three weeks after this week, on 14 January 1987, the government announced the clearance of the city.</p>
 `;

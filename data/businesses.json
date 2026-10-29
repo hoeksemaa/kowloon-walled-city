@@ -1,0 +1,6155 @@
+{
+"source": "GRS catalogue HKRS1255-3, case files for business claimants of the Kowloon Walled City clearance (Lands Department). Titles parsed by tools/parse_grs.py.",
+"streets": {
+"ttt": "Tung Tau Tsuen Road 東頭村道",
+"lcr": "Lung Chun Road 龍津道",
+"lsr": "Lung Shing Road 龍城路",
+"ssr": "Sai Shing Road 西城路",
+"kms": "Kwong Ming Street 光明街",
+"tcs": "Tai Chang Street 大井街",
+"lys": "Lo Yan Street 老人街",
+"tht": "Tin Hau Temple Back Street",
+"skg": "Sz Kung Street 社公街",
+"lsg": "Lung Sing Street",
+"kwg": "Kwong Wah Street"
+},
+"premises": [
+{
+"street": "kms",
+"num": 1,
+"numText": "1",
+"floor": 0,
+"nameZh": "興業五金廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-417"
+],
+"title": "G/F, 1 Kwong Ming Street, 1st Lane - Hing Yip Metal Factory (興業五金廠)",
+"dates": "18.10.1990 - 12.5.1992"
+},
+{
+"street": "kms",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameZh": "光華公司",
+"nameEn": "Kwong Wah Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-428"
+],
+"title": "Front Block, G/F, 2 Kwong Ming Street, Kwong Wah Company(光華公司)",
+"dates": "8.9.1990 - 28.5.1992"
+},
+{
+"street": "kms",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameZh": "宏發麵廠",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-533"
+],
+"title": "G/F, 2 Kwong Ming Street, 1st Lane. Wang Fat Noodles Fty. [Factory] (宏發麵廠)",
+"dates": "28.8.1990 - 10.6.1992"
+},
+{
+"street": "kms",
+"num": 3,
+"numText": "3",
+"floor": 0,
+"nameZh": "照記伙食",
+"nameEn": "Chiu Kee Catering",
+"trade": "catering",
+"refs": [
+"HKRS1255-3-435"
+],
+"title": "G/F, 3 Kwong Ming Street - Chiu Kee Catering (照記伙食)",
+"dates": "15.8.1990 - 26.3.1992"
+},
+{
+"street": "kms",
+"num": 3,
+"numText": "3",
+"floor": 2,
+"nameZh": "祥茂伙食",
+"trade": "catering",
+"refs": [
+"HKRS1255-3-437"
+],
+"title": "2/F, Front, 3 Kwong Ming Street, Wing Kwong House - 祥茂伙食 Cheung Mau Catering",
+"dates": "18.9.1991 - 29.5.1992"
+},
+{
+"street": "kms",
+"num": 3,
+"numText": "3",
+"floor": 3,
+"nameZh": "聯興噴油廠",
+"nameEn": "Luen Hing Painters Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-436A"
+],
+"title": "3/F, Rear Portion, 3 Kwong Ming Street - Luen Hing Painters Fty. [Factory] (聯興噴油廠)",
+"dates": "13.6.1990 - 3.10.1991"
+},
+{
+"street": "kms",
+"num": 3,
+"numText": "3",
+"floor": 3,
+"nameZh": "順成工藝社",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-440"
+],
+"title": "3/F, 3 Kwong Ming Street, Wing Kwong House - Shun Shing Industrical Co. (順成工藝社)",
+"dates": "25.9.1990 - 10.5.1991"
+},
+{
+"street": "kms",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"nameZh": "李炳五金廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-416A",
+"HKRS1255-3-416B"
+],
+"title": "G/F, 4 Kwong Ming St., 1st Lane - Li Peng Metal Works Factory 李炳五金廠",
+"dates": "13.9.1990 - 13.9.1990"
+},
+{
+"street": "kms",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"nameZh": "羅英記食品公司",
+"nameEn": "Wing Fung Building",
+"trade": "food",
+"refs": [
+"HKRS1255-3-426"
+],
+"title": "G/F, 4 Kwong Ming Street. (Wing Fung Building). Law Ying Kee (羅英記食品公司)",
+"dates": "26.3.1991 - 26.3.1991"
+},
+{
+"street": "kms",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameZh": "達成膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-441"
+],
+"title": "G/F, Wing Kwong House, 5 Kwong Ming St. [Street] - Tat Shing Rubber Factory (達成膠廠)",
+"dates": "8.11.1990 - 30.6.1992"
+},
+{
+"street": "kms",
+"num": 5,
+"numText": "5",
+"floor": 1,
+"trade": "toys",
+"refs": [
+"HKRS1255-3-436B"
+],
+"title": "1/F, 5 Kwong Ming Street, Front, Wing Kwong House - Tung Shing Toys Factory",
+"dates": "15.11.1990 - 15.12.1990"
+},
+{
+"street": "kms",
+"num": 6,
+"numText": "6-8",
+"floor": 0,
+"nameEn": "KWC",
+"refs": [
+"HKRS1255-3-425A"
+],
+"title": "G/F, 6-8 Kwong Ming Street, KWC [Kowloon Walled City]. Hang Kam Kee",
+"dates": "26.11.1990 - 22.11.1991"
+},
+{
+"street": "kms",
+"num": 7,
+"numText": "7",
+"floor": 2,
+"nameZh": "寶興寶石公司",
+"nameEn": "Po Hing Jewel Co.",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-438"
+],
+"title": "2/F, 7 Kwong Ming Street, Rear, Wing Kwong House (Po Hing Jewel Co.) [寶興寶石公司]",
+"dates": "31.7.1990 - 3.6.1992"
+},
+{
+"street": "kms",
+"num": 7,
+"numText": "7",
+"floor": 2,
+"nameZh": "天香伙食",
+"trade": "catering",
+"refs": [
+"HKRS1255-3-439"
+],
+"title": "2/F, 7 Kwong Ming Street, Front, Wing Kwong House - Tin Heung Catering (天香伙食)",
+"dates": "14.11.1990 - 21.5.1992"
+},
+{
+"street": "kms",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "鏡記粥麵廠",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-442"
+],
+"title": "G/F, 9 Kwong Ming Street (鏡記粥麵廠) Keung Kee Flour & Noodle Works",
+"dates": "3.9.1990 - 1.7.1992"
+},
+{
+"street": "kms",
+"num": 9,
+"numText": "9",
+"floor": 1,
+"nameZh": "榮昌食品公司",
+"nameEn": "Wing Cheong Food Co.",
+"trade": "food",
+"refs": [
+"HKRS1255-3-443"
+],
+"title": "1/F, 9 Kwong Ming Street - Wing Cheong Food Co. (榮昌食品公司)",
+"dates": "17.10.1990 - 21.5.1992"
+},
+{
+"street": "kms",
+"num": 11,
+"numText": "11",
+"floor": 1,
+"nameZh": "恒發金屬製品廠",
+"nameEn": "Hang Fat Metal Plastic Works",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-444"
+],
+"title": "1/F, 11 Kwong Ming Street - Hang Fat Metal Plastic Works (恒發金屬製品廠)",
+"dates": "20.8.1990 - 23.4.1992"
+},
+{
+"street": "kms",
+"num": 12,
+"numText": "12",
+"floor": 0,
+"nameZh": "廣發食品公司",
+"nameEn": "Kong Fat Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-419"
+],
+"title": "G/F, 12 Kwong Ming Street - Kong Fat Food Company (廣發食品公司)",
+"dates": "22.3.1991 - 22.3.1991"
+},
+{
+"street": "kms",
+"num": 13,
+"numText": "13",
+"floor": 0,
+"nameZh": "楊記魚旦批發公司",
+"nameEn": "Yeung Kee Fish Ball Factory",
+"trade": "fishball",
+"refs": [
+"HKRS1255-3-446"
+],
+"title": "G/F, 13 Kwong Ming Street - Yeung Kee Fish Ball Fty. [Factory] (楊記魚旦批發公司)",
+"dates": "15.10.1990 - 21.5.1992"
+},
+{
+"street": "kms",
+"num": 13,
+"numText": "13",
+"floor": 1,
+"nameEn": "Hop Yee Handbag Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-445"
+],
+"title": "1/F, 13 Kwong Ming Street (Hop Yee Handbag Factory)",
+"dates": "30.7.1990 - 3.6.1992"
+},
+{
+"street": "kms",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"nameZh": "東聠食品公司",
+"nameEn": "Tung Luen",
+"trade": "food",
+"refs": [
+"HKRS1255-3-447"
+],
+"title": "G/F, 17 Kwong Ming Street - Tung Luen (東聠食品公司)",
+"dates": "20.8.1990 - 24.4.1992"
+},
+{
+"street": "kms",
+"num": 21,
+"numText": "21",
+"floor": 0,
+"nameZh": "榮利",
+"nameEn": "Wing Lee",
+"refs": [
+"HKRS1255-3-448"
+],
+"title": "G/F, 21 Kwong Ming Street - Wing Lee (榮利)",
+"dates": "15.11.1990 - 5.11.1991"
+},
+{
+"street": "kms",
+"num": 23,
+"numText": "23",
+"floor": 0,
+"nameZh": "合興瀨粉廠",
+"nameEn": "KWC",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-449"
+],
+"title": "Flat B, G/F, 23 Kwong Ming Street, KWC [Kowloon Walled City] - Hop Hing Noodle Factory (合興瀨粉廠)",
+"dates": "24.4.1991 - 1.7.1992"
+},
+{
+"street": "kms",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"nameZh": "義成商店",
+"nameEn": "Yee Shing Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-529"
+],
+"title": "G/F, 24 Kwong Ming Street. Yee Shing Store (義成商店)",
+"dates": "3.9.1990 - 30.8.1991"
+},
+{
+"street": "kms",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"cockloft": true,
+"nameZh": "合利金屬製品廠",
+"nameEn": "Hop Lee Metal Manufactory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-534"
+],
+"title": "G/F with Cockloft, 25, Kwong Ming Street, Hop Lee Metal Manufactory (合利金屬製品廠)",
+"dates": "9.10.1990 - 15.4.1991"
+},
+{
+"street": "kms",
+"num": 26,
+"numText": "26",
+"floor": 0,
+"nameZh": "張朗良",
+"nameEn": "Chang Long Leung",
+"refs": [
+"HKRS1255-3-528"
+],
+"title": "G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)",
+"dates": "17.8.1990 - 30.11.1991"
+},
+{
+"street": "kms",
+"num": 28,
+"numText": "28",
+"floor": 0,
+"nameZh": "联藝塑膠廠",
+"nameEn": "Luen Ngai Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-527A"
+],
+"title": "G/F, 28 Kwong Ming Street & 1/F. 28 Kwong Ming Street - Luen Ngai Plastic Factory (联藝塑膠廠)",
+"dates": "23.10.1990 - 8.11.1991"
+},
+{
+"street": "kms",
+"num": 28,
+"numText": "28",
+"floor": 0,
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-527B"
+],
+"title": "[G/F & 1/F, 28 Kwong Ming Street - Luen Ngai Plastic Factory - Business Loss Claim Operating Result Assessment Report, Sales, etc.]",
+"dates": "9.1984 - 15.7.1991"
+},
+{
+"street": "kms",
+"num": 33,
+"numText": "33",
+"floor": 0,
+"nameZh": "國興塑膠廠",
+"nameEn": "Kwok Hing Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-536A"
+],
+"title": "G/F, 33 Kwong Ming St. Kwok Hing Plastic Factory (國興塑膠廠)",
+"dates": "26.9.1990 - 6.8.1991"
+},
+{
+"street": "kms",
+"num": 35,
+"numText": "35",
+"floor": 0,
+"nameZh": "永輝紡織公司",
+"nameEn": "Wing Fai Weaving Co.",
+"trade": "textile",
+"refs": [
+"HKRS1255-3-537"
+],
+"title": "G/F, 35 Kwong Ming St. Wing Fai Weaving Co. (永輝紡織公司)",
+"dates": "28.11.1990 - 1.7.1992"
+},
+{
+"street": "kms",
+"num": 35,
+"numText": "35",
+"floor": 2,
+"nameZh": "光明診所",
+"nameEn": "Kwong Ming Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-184"
+],
+"title": "R/P [Rear Portion], 2/F, 35 Ting Tau Tsuen Road Kwong Ming Clinic (光明診所)",
+"dates": "18.4.1989 - 30.8.1991"
+},
+{
+"street": "kms",
+"num": 37,
+"numText": "37-37A",
+"floor": 0,
+"nameEn": "So Kee Food Factory",
+"trade": "food",
+"refs": [
+"HKRS1255-3-539"
+],
+"title": "G/F., 37-37A Kwong Ming Street (So Kee Food Factory)",
+"dates": "30.7.1990 - 29.5.1992"
+},
+{
+"street": "kms",
+"num": 38,
+"numText": "38",
+"floor": 0,
+"nameZh": "大生塑膠廠",
+"nameEn": "Tai Sang Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-526"
+],
+"title": "G/F, 38 Kwong Ming Street - Tai Sang Plastic Fty. (大生塑膠廠)",
+"dates": "26.9.1990 - 29.6.1992"
+},
+{
+"street": "kms",
+"num": 39,
+"numText": "39",
+"floor": 0,
+"nameZh": "成功傑記紙品廠",
+"nameEn": "Kit Kee",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-544"
+],
+"title": "G/F. 39, K.M. ST. [Kwong Ming Street], + G/F of M/F. 6 THT ST. [Tin Hau Temple Street], (Shing Kung (Kit Kee) Paper Products Fty.) 成功傑記紙品廠",
+"dates": "12.2.1990 - 7.4.1992"
+},
+{
+"street": "kms",
+"num": 39,
+"numText": "39",
+"floor": 1,
+"nameZh": "联發塑膠製品廠",
+"nameEn": "Luen Fat Plastic Products Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-545"
+],
+"title": "1/F, 39, Kwong Ming St. (Luen Fat Plastic Products Fty.) 联發塑膠製品廠",
+"dates": "22.11.1989 - 7.8.1991"
+},
+{
+"street": "kms",
+"num": 39,
+"numText": "39",
+"floor": 2,
+"nameEn": "Lam Hung Bone Setter",
+"trade": "bonesetter",
+"refs": [
+"HKRS1255-3-546"
+],
+"title": "2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)",
+"dates": "6.11.1989 - 13.1.1992"
+},
+{
+"street": "kms",
+"num": 42,
+"numText": "42",
+"floor": 1,
+"nameZh": "光明實業公司",
+"nameEn": "Kwong Ming Enterprise Co.",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-523"
+],
+"title": "1/F, 42 Kwong Ming Street - Kwong Ming Enterprise Co. (光明實業公司)",
+"dates": "26.9.1990 - 19.1.1993"
+},
+{
+"street": "kms",
+"num": 42,
+"numText": "42",
+"floor": 3,
+"nameZh": "永華製造廠",
+"nameEn": "Winner Manufactory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-525"
+],
+"title": "3/F, 42 Kwong Ming Street - Winner Manufactory (永華製造廠)",
+"dates": "13.6.1990 - 14.3.1993"
+},
+{
+"street": "kms",
+"num": 44,
+"numText": "44",
+"floor": 4,
+"nameEn": "Tung Hing Shoes",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-522"
+],
+"title": "4/F, 44 Kwong Ming Street (Tung Hing Shoes)",
+"dates": "13.8.1990 - 18.10.1991"
+},
+{
+"street": "kms",
+"num": 46,
+"numText": "46",
+"floor": 1,
+"nameZh": "長城塑膠玩具廠",
+"nameEn": "Same as Known 1/F, 48 Kwong Ming Street",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-520"
+],
+"title": "1/F, 46 Kwong Ming Street (Same as Known 1/F, 48 Kwong Ming Street) - Cheung Shing Plastic Toys Mfy. [Manufactory] (長城塑膠玩具廠)",
+"dates": "22.3.1991 - 1.7.1992"
+},
+{
+"street": "kms",
+"num": 48,
+"numText": "48",
+"floor": 2,
+"nameZh": "許氏工藝製品廠",
+"nameEn": "Also Known as 2/F, 46, Kwong Ming Street",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-521"
+],
+"title": "2/F, 48 Kwong Ming Street, Kwon Ming House (Also Known as 2/F, 46, Kwong Ming Street) - Hui's Arts Mfy. [Manufactory] (許氏工藝製品廠)",
+"dates": "18.8.1990 - 14.8.1991"
+},
+{
+"street": "kwg",
+"lane": 3,
+"num": 3,
+"numText": "3",
+"floor": 0,
+"nameZh": "廣華布廠",
+"trade": "textile",
+"refs": [
+"HKRS1255-3-326"
+],
+"title": "6, LC [Lung Chun] 3rd Lane, G/F & 7 LC [Lung Chun] 3 Lane, G/F, M/F & 1/F Kwong Wah Weaving Factory (廣華布廠)",
+"dates": "16.12.1988 - 16.9.1989"
+},
+{
+"street": "lcr",
+"num": 1,
+"numText": "1",
+"floor": 1,
+"nameEn": "Knitting Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-18"
+],
+"title": "Rear Portion, 1/F, 1 Lung Chun Road (Knitting Factory)",
+"dates": "13.8.1990 - 16.11.1990"
+},
+{
+"street": "lcr",
+"num": 1,
+"numText": "1",
+"floor": 2,
+"nameZh": "勤思補習社",
+"trade": "school",
+"refs": [
+"HKRS1255-3-19"
+],
+"title": "Flat B, 2/F, 1 Lung Chun Road (Diligence Tuition 勤思補習社)",
+"dates": "21.8.1990 - 18.4.1991"
+},
+{
+"street": "lcr",
+"num": 1,
+"numText": "1",
+"floor": 3,
+"nameZh": "廖廣森鐵打醫館",
+"nameEn": "Liu Kwok Sum Bonesetter & Gymnasium",
+"trade": "bonesetter",
+"refs": [
+"HKRS1255-3-20"
+],
+"title": "Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館",
+"dates": "17.8.1990 - 18.3.1992"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameZh": "萬里地產公司",
+"nameEn": "Manly Property Company",
+"trade": "property",
+"refs": [
+"HKRS1255-3-104"
+],
+"title": "G/F, Wang Lane, 2 Lung Chun Road - Manly Property Company (萬里地產公司)",
+"dates": "1.4.1992 - 27.9.1994"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "No. 2",
+"floor": 0,
+"nameEn": "Tak Shing Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-126"
+],
+"title": "A16/16/1-9 - OA: G/F, No. 7A, 53 Sz Kung Street; A16/16 - TA: G/F, Last Lane, No. 2 Lung Chun Road (Tak Shing Food Company)",
+"dates": "16.5.1988 - 29.11.1991"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "2C",
+"floor": 0,
+"nameEn": "Tung Heung Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-396A"
+],
+"title": "G/F, 2C Lung Chun Road and G/F, Rear Portion, 2D Lung Chun Road - Tung Heung Company",
+"dates": "11.3.1991 - 9.3.1994"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "2D",
+"floor": 0,
+"nameZh": "兩興腸粉",
+"trade": "store",
+"refs": [
+"HKRS1255-3-398"
+],
+"title": "G/F, Front Portion, 2D Lung Chun Road. (兩興腸粉) Leung Hing Rice Sausage",
+"dates": "10.8.1990 - 6.11.1991"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "2",
+"floor": 2,
+"nameZh": "甄榮德牙科",
+"nameEn": "Yan Wing Tak Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-125"
+],
+"title": "2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)",
+"dates": "13.8.1989 - 6.1.1992"
+},
+{
+"street": "lcr",
+"num": 2,
+"numText": "2C",
+"floor": 3,
+"nameZh": "祥明工藝製品廠",
+"nameEn": "Cheung Ming Handicraft Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-397"
+],
+"title": "3/F, 2C Lung Chun Road. Cheung Ming Handicraft Fty.[Factory] (祥明工藝製品廠)",
+"dates": "16.11.1990 - 13.4.1991"
+},
+{
+"street": "lcr",
+"num": 3,
+"numText": "3B",
+"floor": 0,
+"nameZh": "新興食品公司",
+"trade": "food",
+"refs": [
+"HKRS1255-3-21"
+],
+"title": "G/F, 3B Lung Chun Road. (Sun Hing Food Company (新興食品公司)",
+"dates": "2.4.1991 - 1.6.1992"
+},
+{
+"street": "lcr",
+"num": 3,
+"numText": "No. 3",
+"floor": 0,
+"nameEn": "Chi Shing Shoes Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-128"
+],
+"title": "G/F, No. 3 Last Lane, Lung Chun Road (Chi Shing Shoes Factory)",
+"dates": "31.3.1988 - 11.7.1989"
+},
+{
+"street": "lcr",
+"num": 3,
+"numText": "No. 3",
+"floor": 2,
+"nameEn": "Ma Kee Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-127"
+],
+"title": "2/F, No. 3, Last Lane, Lung Chun Road (Ma Kee Restaurant)",
+"dates": "8.4.1988 - 25.9.1991"
+},
+{
+"street": "lcr",
+"num": 4,
+"numText": "4A",
+"floor": 0,
+"nameZh": "興發五金絲牙制品廠",
+"nameEn": "Hing Fat Metal & Screw Manufactory",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-433"
+],
+"title": "G/F, 4A, Lung Chun Road (Hing Fat Metal & Screw Manufactory) 興發五金絲牙制品廠",
+"dates": "26.10.1990 - 8.7.1993"
+},
+{
+"street": "lcr",
+"num": 4,
+"numText": "4A",
+"floor": 2,
+"nameZh": "東誠貿易公司",
+"nameEn": "Tung Shing Trading Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-434"
+],
+"title": "2/F, 4A Lung Chun Road (Tung Shing Trading Company) [東誠貿易公司]",
+"dates": "17.8.1990 - 5.5.1992"
+},
+{
+"street": "lcr",
+"num": 4,
+"numText": "4E",
+"floor": 4,
+"nameZh": "和記鞋廠",
+"nameEn": "Wo Kee Shoes Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-430"
+],
+"title": "Flat A & B, 4/F Wing Fung Bldg, 4E Lung Chun Rd. (Wo Kee Shoes Factory) 和記鞋廠",
+"dates": "5.9.1990 - 5.9.1990"
+},
+{
+"street": "lcr",
+"num": 4,
+"numText": "4E",
+"floor": 6,
+"nameZh": "輝煌首飾燒焊",
+"nameEn": "Fai Wong Jewellery Welding",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-431"
+],
+"title": "Flat B, 6/F, 4E, Lung Chun Road, Wing Fung Bldg. 輝煌首飾燒焊 (Fai Wong Jewellery Welding)",
+"dates": "7.10.1990 - 7.10.1990"
+},
+{
+"street": "lcr",
+"num": 5,
+"numText": "5B",
+"floor": 0,
+"nameZh": "楊記",
+"nameEn": "Yeung Kee",
+"refs": [
+"HKRS1255-3-22"
+],
+"title": "G/F, 5B Lung Chun Road. 楊記 (Yeung Kee)",
+"dates": "6.9.1990 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameEn": "Tung Yuen Roasted Meat Shop",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-327"
+],
+"title": "G/F., 5 Lung Chun Road, 3rd Lane (Tung Yuen Roasted Meat Shop)",
+"dates": "25.1.1991 - 21.1.1992"
+},
+{
+"street": "lcr",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameZh": "明記士多",
+"nameEn": "Ming Kee Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-50"
+],
+"title": "G/F, 6, Lung Chun Road (Ming Kee Store) 明記士多",
+"dates": "23.12.1989 - 7.4.1992"
+},
+{
+"street": "lcr",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameZh": "華記鞋業",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-453"
+],
+"title": "G/F, 6 Lung Chun Rd. [Road] - Wah Kee Shoes (華記鞋業)",
+"dates": "7.12.1989 - 18.3.1992"
+},
+{
+"street": "lcr",
+"num": 6,
+"numText": "6",
+"floor": 1,
+"nameZh": "志成五金燒焊",
+"nameEn": "Chi Shing Metalware & Welding",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-70"
+],
+"title": "Flat B, 1/F, Nam Ning House, 6, L.C. Rd. [Lung Chun Road] 2nd Lane (Chi Shing Metalware & Welding) 志成五金燒焊",
+"dates": "24.11.1989 - 2.10.1991"
+},
+{
+"street": "lcr",
+"num": 6,
+"numText": "6",
+"floor": 4,
+"nameZh": "鄭劍山醫館",
+"nameEn": "Cheng Kim Shan",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-71A"
+],
+"title": "Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館",
+"dates": "10.11.1989 - 23.12.1991"
+},
+{
+"street": "lcr",
+"num": 8,
+"numText": "8",
+"floor": 0,
+"nameZh": "羅粦記糕品廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-451"
+],
+"title": "G/F, 8 Lung Chun Road & G/F, 1 Lung Chun Back St.[Street] - Law Lun Kee Pudding Product Workshop (羅粦記糕品廠)",
+"dates": "8.3.1991 - 15.3.1994"
+},
+{
+"street": "lcr",
+"num": 8,
+"numText": "8",
+"floor": 1,
+"nameZh": "奇麗鞋業",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-325"
+],
+"title": "8, LC Rd [Lung Chun Road], 3rd Lane, 1/F, Rear Portion, Wing Kwai Bldg Kei Lai Shoes (奇麗鞋業)",
+"dates": "1.12.1988 - 17.10.1990"
+},
+{
+"street": "lcr",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "華豐燒臘",
+"nameEn": "Wah Fung Roast Meat",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-25"
+],
+"title": "G/F, 9 Lung Chun Road, Wah Fung Roast Meat (華豐燒臘)",
+"dates": "13.11.1990 - 4.6.1992"
+},
+{
+"street": "lcr",
+"num": 9,
+"numText": "9A",
+"floor": 0,
+"nameZh": "豪達塑膠廠",
+"nameEn": "Ho Tat Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-31"
+],
+"title": "G/F, 9A Lung Chun Rd. [Road] & G/F, 92 Lung Chun Rd. [Road] (Ho Tat Plastic Factory) 豪達塑膠廠",
+"dates": "18.10.1990 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 10,
+"numText": "10",
+"floor": 0,
+"nameZh": "郭記",
+"nameEn": "Kwok Kee",
+"refs": [
+"HKRS1255-3-450"
+],
+"title": "G/F, 10 Lung Chun Road - Kwok Kee (郭記)",
+"dates": "12.10.1990 - 31.8.1994"
+},
+{
+"street": "lcr",
+"num": 13,
+"numText": "13",
+"floor": 0,
+"nameEn": "Chan Wai Kee",
+"refs": [
+"HKRS1255-3-26"
+],
+"title": "G/F, 13 Lung Chun Road (Chan Wai Kee)",
+"dates": "11.8.1990 - 11.3.1992"
+},
+{
+"street": "lcr",
+"num": 14,
+"numText": "14",
+"floor": 3,
+"nameZh": "林松記",
+"refs": [
+"HKRS1255-3-336"
+],
+"title": "3/f, 14 Lung Chun Road 3rd Lane Sam Hing House (Lam Chung Kee 林松記)",
+"dates": "13.12.1988 - 2.3.1992"
+},
+{
+"street": "lcr",
+"num": 15,
+"numText": "15C",
+"floor": 0,
+"nameEn": "Sung Tung Kong Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-116"
+],
+"title": "15C, Lung Chun Road, G/F (Sung Tung Kong Restaurant)",
+"dates": "30.7.1988 - 29.11.1991"
+},
+{
+"street": "lcr",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"nameZh": "陳成發士多",
+"nameEn": "Chan Shing Fat Store",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-46"
+],
+"title": "G/F, 17, Lung Chun Rd. [Road], + -Iron Cage at J/o, G/F, 20 L.C. Rd., & L.C. 1st Lane. -Kitchen under stair case of G/F, 17, L.C. RD., -Iron Cage attached to 1/F, 17, L.C. RD., (Chan Shing Fat Store) 陳成發士多",
+"dates": "24.12.1989 - 31.3.1992"
+},
+{
+"street": "lcr",
+"num": 20,
+"numText": "20",
+"floor": 0,
+"nameZh": "張記白糖糕批發",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-463",
+"HKRS1255-3-464"
+],
+"title": "Front Portion, G/F, 20 Lung Chun Rd.[Road] - Cheung Kee Rice Cake Retailing (張記白糖糕批發)",
+"dates": "25.11.1989 - 16.5.1994"
+},
+{
+"street": "lcr",
+"num": 20,
+"numText": "20",
+"floor": 0,
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-465A",
+"HKRS1255-3-465B"
+],
+"title": "G/F, Rear Portion, 20 Lung Chun Rd.[Road] - Hau Shun Hing Cake Shop",
+"dates": "28.11.1989 - 29.10.1990"
+},
+{
+"street": "lcr",
+"num": 21,
+"numText": "21 & 22",
+"floor": 0,
+"nameZh": "奇妙實業公司",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-462"
+],
+"title": "G/F, 21 & 22 L. C. Rd.[Lung Chun Road] - Kei Miu Industrial Co.[Company] (奇妙實業公司)",
+"dates": "23.11.1989 - 7.4.1992"
+},
+{
+"street": "lcr",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"nameZh": "王賢記",
+"nameEn": "Wong Yin Kee",
+"refs": [
+"HKRS1255-3-47"
+],
+"title": "G/F, 25, Lung Chun Rd. [Road] (Wong Yin Kee) 王賢記",
+"dates": "13.11.1989 - 6.1.1992"
+},
+{
+"street": "lcr",
+"num": 26,
+"numText": "26A",
+"floor": 0,
+"nameZh": "安利食品",
+"trade": "food",
+"refs": [
+"HKRS1255-3-459",
+"HKRS1255-3-460A",
+"HKRS1255-3-460B"
+],
+"title": "G/F, Man Lung H.[House] 26A L.C. Rd.[Lung Chun Road] - On Lee Food Products Fty.[Factory] (安利食品)",
+"dates": "29.4.1991 - 4.8.1994"
+},
+{
+"street": "lcr",
+"num": 26,
+"numText": "26",
+"floor": 0,
+"nameZh": "國民膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-461"
+],
+"title": "G/F, 26 Lung Chun Rd.[Road] - Kwok Man Rubber Factory (國民膠廠)",
+"dates": "8.1.1989 - 31.3.1992"
+},
+{
+"street": "lcr",
+"num": 27,
+"numText": "27",
+"floor": 0,
+"nameZh": "新光塑膠廠",
+"nameEn": "Sun Kwong Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-324"
+],
+"title": "27, LC Rd [Lung Chun Road], 3rd Lane, G/F (Sun Kwong Plastic Fty.) 新光塑膠廠",
+"dates": "20.12.1988 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 31,
+"numText": "31",
+"floor": 1,
+"nameZh": "五金及雲膠製品廠",
+"nameEn": "Also Known as Rear Portion, 1/F, Lung Yue House, 31 Lung Chun Road",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-93"
+],
+"title": "Block C, 1/F, 18 Sz Kung Street (Also Known as Rear Portion, 1/F, Lung Yue House, 31 Lung Chun Road) (馬儒記) [五金及雲膠製品廠]",
+"dates": "9.12.1988 - 13.1.1992"
+},
+{
+"street": "lcr",
+"num": 31,
+"numText": "31",
+"floor": 4,
+"nameEn": "Shun Cheong Gems Co.",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-100"
+],
+"title": "Front Portion, 4/F, 31, LC Rd. [Lung Chun Road] (Shun Cheong Gems Co.)",
+"dates": "16.10.1989 - 3.12.1990"
+},
+{
+"street": "lcr",
+"num": 31,
+"numText": "31",
+"floor": 4,
+"nameEn": "Lung Hing Jewellery Mfy",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-101"
+],
+"title": "Front Portion, 4/F, 31, LC Rd. [Lung Chun Road] (Lung Hing Jewellery Mfy.) [Manufactory]",
+"dates": "16.10.1989 - 3.12.1990"
+},
+{
+"street": "lcr",
+"num": 32,
+"numText": "32",
+"floor": 0,
+"nameZh": "源豐食品公司",
+"nameEn": "Yuen Fung Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-76"
+],
+"title": "32, LC Rd [Lung Chun Road], G/F (源豐食品公司) & 20, SK Rd, G/F (Yuen Fung Food Company)",
+"dates": "10.2.1989 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 33,
+"numText": "33",
+"floor": 0,
+"nameZh": "李奈記糕品廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-95"
+],
+"title": "33, LC Rd. [Lung Chun Road], G/F (李奈記糕品廠)",
+"dates": "8.12.1988 - 12.6.1990"
+},
+{
+"street": "lcr",
+"num": 35,
+"numText": "35",
+"floor": 0,
+"nameZh": "生記飯店",
+"nameEn": "Sang Kee Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-366"
+],
+"title": "G/F & M/F, 35 Lung Chun Road. Sang Kee Restaurant (生記飯店)",
+"dates": "18.1.1991 - 23.1.1992"
+},
+{
+"street": "lcr",
+"num": 40,
+"numText": "40C",
+"floor": 0,
+"nameZh": "黃輝記塑膠廠",
+"nameEn": "Wong Fai Kee Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-330"
+],
+"title": "G/F, 40C, Lung Chun RD. [Road] (Wong Fai Kee Plastic Fty.) 黃輝記塑膠廠",
+"dates": "17.11.1989 - 30.9.1991"
+},
+{
+"street": "lcr",
+"num": 40,
+"numText": "40",
+"floor": 1,
+"nameZh": "林仔水電裝修工程",
+"nameEn": "Lam Chai Water & Electrical Works",
+"trade": "plumbing",
+"refs": [
+"HKRS1255-3-331"
+],
+"title": "Flat D, 1/F, Man Shing House, 40, Lung Chun Rd. (Lam Chai Water & Electrical Works) 林仔水電裝修工程",
+"dates": "4.12.1989 - 23.3.1992"
+},
+{
+"street": "lcr",
+"num": 41,
+"numText": "41",
+"floor": 1,
+"nameZh": "新豐貿易公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-99"
+],
+"title": "Rear Portion, 1/F, 41 Lung Chun Road 新豐貿易公司",
+"dates": "3.2.1989 - 11.7.1991"
+},
+{
+"street": "lcr",
+"num": 43,
+"numText": "43",
+"floor": 0,
+"nameEn": "Wo Kee Electroplating Factory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-98A",
+"HKRS1255-3-98B"
+],
+"title": "43, Lung Chun Road, G/F, Man Kee House (Wo Kee Electroplating Factory)",
+"dates": "20.12.1988 - 12.2.1992"
+},
+{
+"street": "lcr",
+"num": 47,
+"numText": "No. 47",
+"floor": 0,
+"nameZh": "開利製模",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-136"
+],
+"title": "G/F, No. 47 Lung Chun Road (開利製模)",
+"dates": "8.3.1988 - 8.3.1990"
+},
+{
+"street": "lcr",
+"num": 48,
+"numText": "48",
+"floor": 0,
+"nameZh": "根記飯店",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-329"
+],
+"title": "G/F, 48, Lung Chun Road (Kun Kee General Restaurant 根記飯店)",
+"dates": "20.11.1988 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 56,
+"numText": "56",
+"floor": 0,
+"mezz": true,
+"nameZh": "林洪",
+"refs": [
+"HKRS1255-3-254"
+],
+"title": "56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung",
+"dates": "12.2.1988 - 11.7.1989"
+},
+{
+"street": "lcr",
+"num": 56,
+"numText": "No. 56",
+"floor": 0,
+"nameEn": "Wah Yuen Chiu Chow Food Factory",
+"trade": "food",
+"refs": [
+"HKRS1255-3-255"
+],
+"title": "G/F, Man Cheong House, No. 56 Lung Chun Road, Wah Yuen Chiu Chow Food Factory",
+"dates": "31.3.1988 - 12.12.1988"
+},
+{
+"street": "lcr",
+"num": 57,
+"numText": "57",
+"floor": 0,
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-253"
+],
+"title": "Flat B, G/F, 57, Lung Chun Road, Kat Cheung Hse, Kam Fai Electrical Works Co.",
+"dates": "16.3.1988 - 20.3.1990"
+},
+{
+"street": "lcr",
+"num": 58,
+"numText": "No. 58",
+"floor": 0,
+"nameEn": "Leun Hing Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-252"
+],
+"title": "G/F, No. 58, Lung Chun Road, Leun Hing Food Company",
+"dates": "21.2.1988 - 8.1.1992"
+},
+{
+"street": "lcr",
+"num": 61,
+"numText": "61",
+"floor": 0,
+"nameEn": "Tai Tin Trading + Golden Horse Metal",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-135"
+],
+"title": "61 Lung Chun Road, G/F (Tai Tin Trading + Golden Horse Metal)",
+"dates": "3.5.1988 - 14.11.1991"
+},
+{
+"street": "lcr",
+"num": 66,
+"numText": "66-68",
+"nameEn": "Lee Yuk Ha Newspaper Stall",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-384"
+],
+"title": "Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)",
+"dates": "16.3.1992 - 1.6.1992"
+},
+{
+"street": "lcr",
+"num": 66,
+"numText": "66 - 86",
+"floor": 0,
+"nameZh": "濃香冰室",
+"trade": "cafe",
+"refs": [
+"HKRS1255-3-385"
+],
+"title": "G/F and M/F, 66 - 86 Lung Chun Road - Lung Heong Café Shop (濃香冰室)",
+"dates": "4.6.1991 - 1.6.1992"
+},
+{
+"street": "lcr",
+"num": 68,
+"numText": "68",
+"floor": 2,
+"nameZh": "金燕手袋製品廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-387"
+],
+"title": "2/F & 3/F, 68 Lung Chun Rd. & 2/F, 70 Lung Chun Rd. Kam Yin Hand-Bag Mfty (金燕手袋製品廠)",
+"dates": "14.1.1991 - 20.5.1992"
+},
+{
+"street": "lcr",
+"num": 70,
+"numText": "70",
+"floor": 0,
+"nameZh": "濃香餅店",
+"nameEn": "Lung Heong Cake Shop",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-386A"
+],
+"title": "G/F, 70 Lung Chun Road - Lung Heong Cake Shop (濃香餅店)",
+"dates": "4.6.1991 - 17.2.1994"
+},
+{
+"street": "lcr",
+"num": 72,
+"numText": "72",
+"floor": 0,
+"nameZh": "美漢牙醫",
+"nameEn": "Mei Hon Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-2"
+],
+"title": "G/F, 72 Lung Chun Road. Mei Hon Dentistry (美漢牙醫)",
+"dates": "24.9.1990 - 3.6.1992"
+},
+{
+"street": "lcr",
+"num": 74,
+"numText": "74",
+"floor": 1,
+"nameZh": "陳子明牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-3"
+],
+"title": "1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科",
+"dates": "29.6.1992 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 74,
+"numText": "74",
+"floor": 2,
+"nameEn": "Fei Tan Garment Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-6"
+],
+"title": "2/F, Nam Ming House, 74 Lung Chun Road (Fei Tan Garment Factory)",
+"dates": "7.8.1990 - 13.1.1992"
+},
+{
+"street": "lcr",
+"num": 76,
+"numText": "76",
+"floor": 0,
+"nameZh": "麗光牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-4"
+],
+"title": "G/F, 76 Lung Chun Road. KWC. [Kowloon Walled City] Lai Kwong Dentistry (麗光牙科)",
+"dates": "30.6.1992 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 78,
+"numText": "78",
+"floor": 1,
+"nameZh": "有利眼鏡公司",
+"trade": "optical",
+"refs": [
+"HKRS1255-3-5"
+],
+"title": "Front Portion, 1/F Kui On House, 78 Lung Chun Road. (有利眼鏡公司) Yau Li Optical Co. [Company]",
+"dates": "23.8.1990 - 21.5.1992"
+},
+{
+"street": "lcr",
+"num": 80,
+"numText": "80",
+"floor": 0,
+"nameZh": "貫球鞋廠",
+"nameEn": "Koon Kau Shoes Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-7"
+],
+"title": "G/F, Chung Pak House, 80, Lung Chun Road. Koon Kau Shoes Fty. [Factory] (貫球鞋廠)",
+"dates": "18.6.1992 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 80,
+"numText": "80",
+"floor": 2,
+"nameZh": "順榮貿易公司",
+"nameEn": "Shun Wing Trading Co.",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-8"
+],
+"title": "Front Portion 2/F, Chung Pak House, 80 Lung Chun Road. Shun Wing Trading Co. [Company] (順榮貿易公司)",
+"dates": "24.8.1990 - 4.6.1992"
+},
+{
+"street": "lcr",
+"num": 80,
+"numText": "80",
+"floor": 3,
+"nameZh": "有成刷廠",
+"nameEn": "Yau Shing Brush Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-9"
+],
+"title": "Front Portion, 3/F, Chung Pak House, 80 Lung Chun Road. Yau Shing Brush Fty. [Factory] (有成刷廠)",
+"dates": "30.11.1990 - 4.6.1992"
+},
+{
+"street": "lcr",
+"num": 82,
+"numText": "82 - 84",
+"floor": 3,
+"nameZh": "奇適鞋業加工廠",
+"nameEn": "Kei Sik Shoes Processing Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-10"
+],
+"title": "Flat E. 3/F, 82 - 84 Lung Chu Road Kei Sik Shoes Processing Fty. [Factory] (奇適鞋業加工廠) Tel: 3834100",
+"dates": "24.8.1990 - 16.2.1993"
+},
+{
+"street": "lcr",
+"num": 84,
+"numText": "84",
+"floor": 0,
+"nameZh": "培記鐵器裝修工程",
+"nameEn": "KWC",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-14"
+],
+"title": "G/F, 84 Lung Chun Road, KWC. [Kowloon Walled City] Pui Kee Metal Engineering (培記鐵器裝修工程)",
+"dates": "21.5.1992 - 8.6.1992"
+},
+{
+"street": "lcr",
+"num": 84,
+"numText": "84",
+"floor": 9,
+"nameZh": "漢興水族五金廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-13"
+],
+"title": "Front Portion, Flat A, 9/F, Tung Fat House, 84 Lung Chun Rd. [Road] Hon Hing Aquarium (漢興水族五金廠)",
+"dates": "28.8.1990 - 14.4.1992"
+},
+{
+"street": "lcr",
+"num": 88,
+"numText": "88",
+"floor": 0,
+"nameZh": "麥汝剛牙科室",
+"nameEn": "Mak Yue Kong Dental Techician",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-27"
+],
+"title": "G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)",
+"dates": "22.5.1992 - 3.6.1992"
+},
+{
+"street": "lcr",
+"num": 90,
+"numText": "90",
+"floor": 0,
+"nameZh": "裕成士多",
+"nameEn": "KWC",
+"trade": "store",
+"refs": [
+"HKRS1255-3-28"
+],
+"title": "G/F, 90 Lung Chun Road, KWC. [Kowloon Walled City] Yue Shing Store (裕成士多)",
+"dates": "10.5.1991 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 94,
+"numText": "94",
+"floor": 0,
+"nameZh": "仁興毛巾廠",
+"nameEn": "Yan Hing Textile & Knitting Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-29"
+],
+"title": "Rear Portion, G/F, 94 Lung Chun Road Yan Hing Textile & Knitting Fty. [Factory] (仁興毛巾廠)",
+"dates": "4.1.1991 - 9.2.1994"
+},
+{
+"street": "lcr",
+"num": 94,
+"numText": "94",
+"floor": 0,
+"cockloft": true,
+"nameZh": "鄭凌生牙科",
+"nameEn": "Cheng Ling Sang Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-34"
+],
+"title": "G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)",
+"dates": "30.6.1992 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 94,
+"numText": "94",
+"floor": 3,
+"nameZh": "耀光寶石首飾公司",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-32"
+],
+"title": "Flat B, 3/F, 94 Lung Chun Road, (耀光寶石首飾公司) Yiu Kwong Jewellery Co. [Company]",
+"dates": "3.8.1990 - 30.12.1991"
+},
+{
+"street": "lcr",
+"num": 94,
+"numText": "94",
+"floor": 6,
+"nameZh": "星光運輸公司",
+"nameEn": "Star Transport Company",
+"trade": "transport",
+"refs": [
+"HKRS1255-3-33"
+],
+"title": "Front Portion, 6/F, 94 Lung Chun Road. Star Transport Company (星光運輸公司)",
+"dates": "24.10.1990 - 17.2.1992"
+},
+{
+"street": "lcr",
+"num": 98,
+"numText": "98",
+"floor": 0,
+"mezz": true,
+"nameZh": "新安妮髮型屋",
+"nameEn": "New Annie Hair Salon",
+"trade": "salon",
+"refs": [
+"HKRS1255-3-35"
+],
+"title": "Front Portion, M/F, 98 Lung Chun Road. New Annie Hair Salon (新安妮髮型屋)",
+"dates": "24.10.1990 - 1.6.1991"
+},
+{
+"street": "lcr",
+"num": 98,
+"numText": "98",
+"floor": 0,
+"nameZh": "泰國餐廳",
+"trade": "food",
+"refs": [
+"HKRS1255-3-36"
+],
+"title": "G/F 98 Lung Chun Rd. [Road] Thailand Food Restaurant (泰國餐廳)",
+"dates": "17.8.1990 - 5.8.1991"
+},
+{
+"street": "lcr",
+"num": 100,
+"numText": "100",
+"floor": 0,
+"nameZh": "振榮號",
+"nameEn": "Wing Wah House Chun Wing Ho",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-37"
+],
+"title": "G/F 100, Lung Chun Road, Wing Wah House Chun Wing Ho (振榮號)",
+"dates": "7.9.1990 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 100,
+"numText": "100",
+"floor": 1,
+"nameZh": "永利印花公司",
+"nameEn": "Wing Lee Screen Printing Co. [Company]",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-40A",
+"HKRS1255-3-40B",
+"HKRS1255-3-40C"
+],
+"title": "Flat A&B, 1/F 100 Lung Chun Rd. [Road], Wing Wah House (Wing Lee Screen Printing Co. [Company]) 永利印花公司",
+"dates": "14.8.1990 - 1.7.1992"
+},
+{
+"street": "lcr",
+"num": 100,
+"numText": "100",
+"floor": 1,
+"nameZh": "耀記",
+"nameEn": "Portion",
+"trade": "store",
+"refs": [
+"HKRS1255-3-42"
+],
+"title": "Flat B (Portion), 1/F, 100 Lung Chun Road & A Store Room Adjacent to Flat B, 1/F, 100 Lung Chun Rd. [Road] (耀記) Mayland",
+"dates": "5.9.1990 - 13.3.1992"
+},
+{
+"street": "lcr",
+"num": 100,
+"numText": "100",
+"floor": 1,
+"nameZh": "鳳陽堂藥廠",
+"nameEn": "Fung Yeung Tong Medicine",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-43"
+],
+"title": "1/F, 100 Lung Chun Road Fung Yeung Tong Medicine (鳳陽堂藥廠)",
+"dates": "18.12.1990 - 20.12.1993"
+},
+{
+"street": "lcr",
+"num": 100,
+"numText": "100",
+"floor": 2,
+"nameEn": "Hou Ngai Knitting Mfy. [Manufacturing] Factory [Factory]",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-44"
+],
+"title": "2/F, 100 Lung Chun Road (Hou Ngai Knitting Mfy. [Manufacturing] Fty. [Factory])",
+"dates": "8.8.1990 - 10.2.1992"
+},
+{
+"street": "lcr",
+"num": 102,
+"numText": "102",
+"floor": 0,
+"nameZh": "源香飯店",
+"nameEn": "KWC",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-17"
+],
+"title": "G/F, 102 Lung Chun Road, KWC. [Kowloon Walled City] Yuen Heung Restaurant (源香飯店)",
+"dates": "28.11.1991 - 19.3.1992"
+},
+{
+"street": "lcr",
+"num": 104,
+"numText": "104",
+"floor": 0,
+"nameEn": "Hing Fat Noodle Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-49"
+],
+"title": "G/F, 104, Lung Chun Road (Hing Fat Noodle Factory)",
+"dates": "2.8.1989 - 5.3.1990"
+},
+{
+"street": "lcr",
+"num": 108,
+"numText": "108",
+"floor": 0,
+"nameZh": "牙醫陳國祥",
+"nameEn": "K.W.C",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-52"
+],
+"title": "G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)",
+"dates": "14.10.1989 - 18.3.1992"
+},
+{
+"street": "lcr",
+"num": 110,
+"numText": "110",
+"floor": 0,
+"nameEn": "Happy Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-53"
+],
+"title": "G/F, 110, L.C. Rd. [Lung Chun Road] (Happy Restaurant)",
+"dates": "14.1.1990 - 6.4.1992"
+},
+{
+"street": "lcr",
+"num": 112,
+"numText": "112",
+"floor": 0,
+"nameEn": "Wang Lee Trading Co. [Company]",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-64"
+],
+"title": "G/F., 112 Lung Chun Road (Wang Lee Trading Co. [Company])",
+"dates": "29.1.1992 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 114,
+"numText": "114",
+"floor": 7,
+"nameZh": "莊裕宏狗房",
+"refs": [
+"HKRS1255-3-66"
+],
+"title": "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)",
+"dates": "23.11.1988 - 28.8.1990"
+},
+{
+"street": "lcr",
+"num": 116,
+"numText": "116",
+"nameEn": "Hon Hin Chung Medical Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-65"
+],
+"title": "116, LC Rd. [Lung Chun Road] (Hon Hin Chung Medical Clinic)",
+"dates": "29.11.1988 - 5.2.1990"
+},
+{
+"street": "lcr",
+"num": 118,
+"numText": "118",
+"floor": 0,
+"refs": [
+"HKRS1255-3-67"
+],
+"title": "G/F, 118, Lung Chun Road ",
+"dates": "18.11.1988 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 120,
+"numText": "120",
+"floor": 0,
+"nameZh": "茂安藥行",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-68"
+],
+"title": "G/F, 120 Lung Chun Road (茂安藥行) Mou On Medicine Co. [Company]",
+"dates": "4.10.1991 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 122,
+"numText": "122",
+"floor": 0,
+"nameZh": "吳美堅牙科",
+"nameEn": "Ng Mei Kin Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-69"
+],
+"title": "G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)",
+"dates": "1.2.1991 - 6.3.1991"
+},
+{
+"street": "lcr",
+"num": 128,
+"numText": "128",
+"floor": 0,
+"nameZh": "詹忠記茶莊",
+"trade": "store",
+"refs": [
+"HKRS1255-3-74"
+],
+"title": "128, LC Rd [Lung Chun Road] , G/F (詹忠記茶莊)",
+"dates": "11.1.1989 - 30.9.1991"
+},
+{
+"street": "lcr",
+"num": 130,
+"numText": "130",
+"floor": 0,
+"nameEn": "Man Sang Medicine Hong",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-75"
+],
+"title": "G/F, 130, Lung Chun Rd [Road] (Man Sang Medicine Hong)",
+"dates": "5.12.1988 - 17.2.1992"
+},
+{
+"street": "lcr",
+"num": 134,
+"numText": "134",
+"floor": 0,
+"nameZh": "金城冰室",
+"trade": "cafe",
+"refs": [
+"HKRS1255-3-84"
+],
+"title": "Block B, G/F, 134 Lung Chun Road 金城冰室",
+"dates": "12.1.1989 - 26.2.1992"
+},
+{
+"street": "lcr",
+"num": 134,
+"numText": "134",
+"floor": 5,
+"nameZh": "永興寶石廠",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-83"
+],
+"title": "134, LC Rd. [Lung Chun Road], 5/F, Flat A (永興寶石廠)",
+"dates": "19.11.1988 - 21.6.1990"
+},
+{
+"street": "lcr",
+"num": 136,
+"numText": "136",
+"floor": 0,
+"nameEn": "Wah Tung Paper",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-86"
+],
+"title": "136, Lung Chun Road, G/F (Wah Tung Paper)",
+"dates": "12.12.1988 - 1.11.1990"
+},
+{
+"street": "lcr",
+"num": 136,
+"numText": "136",
+"floor": 2,
+"nameZh": "大光電器",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-85"
+],
+"title": "136, LC Rd. [Lung Chun Road], 2/F (大光電器)",
+"dates": "18.11.1988 - 2.3.1992"
+},
+{
+"street": "lcr",
+"num": 140,
+"numText": "140",
+"floor": 0,
+"nameZh": "曾永利士多",
+"trade": "store",
+"refs": [
+"HKRS1255-3-107"
+],
+"title": "140, LC Rd. [Lung Chun Road], G/F (曾永利士多)",
+"dates": "14.1.1989 - 18.9.1991"
+},
+{
+"street": "lcr",
+"num": 146,
+"numText": "146",
+"floor": 0,
+"nameZh": "永豐食品公司",
+"trade": "food",
+"refs": [
+"HKRS1255-3-108"
+],
+"title": "146, Lung Chun Road, G/F, Flat D (永豐食品公司)",
+"dates": "29.11.1988 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 146,
+"numText": "146",
+"floor": 0,
+"nameZh": "創豐米業",
+"trade": "store",
+"refs": [
+"HKRS1255-3-109"
+],
+"title": "146, LC Rd. [Lung Chun Road], G/F, Flat C (創豐米業)",
+"dates": "10.1.1989 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 146,
+"numText": "146A & 146B",
+"floor": 0,
+"nameZh": "潮江粥麵飯店",
+"nameEn": "Cheung Hing House",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-110"
+],
+"title": "G/F, 146A & 146B, Lung Chun Road, Cheung Hing House (潮江粥麵飯店)",
+"dates": "27.2.1989 - 3.3.1992"
+},
+{
+"street": "lcr",
+"num": 146,
+"numText": "146",
+"floor": 9,
+"nameEn": "Cheung Hing Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-102"
+],
+"title": "146, LC Rd. [Lung Chun Road], 9/F, Flat C, Cheung Hing House (Cheung Hing Company)",
+"dates": "21.11.1988 - 5.12.1989"
+},
+{
+"street": "lcr",
+"num": 146,
+"numText": "146",
+"floor": 11,
+"nameZh": "李靜華",
+"trade": "storage",
+"refs": [
+"HKRS1255-3-103"
+],
+"title": "Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]",
+"dates": "3.3.1992 - 10.3.1992"
+},
+{
+"street": "lcr",
+"num": 150,
+"numText": "150",
+"floor": 0,
+"nameEn": "Wah Nam Drug Store and Supermarket",
+"trade": "store",
+"refs": [
+"HKRS1255-3-117"
+],
+"title": "G/F, 150 Lung Chun Road (Wah Nam Drug Store and Supermarket)",
+"dates": "8.1.1992 - 20.1.1992"
+},
+{
+"street": "lcr",
+"num": 150,
+"numText": "150",
+"floor": 0,
+"nameZh": "陳燕初牙科",
+"nameEn": "K.W.C. [Kowloon Walled City]",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-118"
+],
+"title": "G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科",
+"dates": "15.10.1991 - 29.11.1991"
+},
+{
+"street": "lcr",
+"num": 152,
+"numText": "152",
+"floor": 7,
+"trade": "storage",
+"refs": [
+"HKRS1255-3-115"
+],
+"title": "152, Lung Chun Road, 7/F, Flat E [Commerical Storage]",
+"dates": "20.6.1988 - 10.11.1988"
+},
+{
+"street": "lcr",
+"num": 156,
+"numText": "156A",
+"floor": 0,
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-113A"
+],
+"title": "Measurement of G/F, 156A Lung Chun Road, Kowloon - Yan Tak Dentistry",
+"dates": "23.1.1989 - 12.6.1992"
+},
+{
+"street": "lcr",
+"num": 156,
+"numText": "156",
+"floor": 3,
+"nameZh": "冠華製衣廠",
+"nameEn": "Koon Wah Garment Factory [Factory]",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-114"
+],
+"title": "3/F, Lung Nam House, 156, Lung Chun Rd. [Road] (Koon Wah Garment Fty. [Factory]) 冠華製衣廠",
+"dates": "14.3.1989 - 29.11.1991"
+},
+{
+"street": "lcr",
+"num": 160,
+"numText": "160",
+"floor": 0,
+"trade": "food",
+"refs": [
+"HKRS1255-3-138A"
+],
+"title": "160, Lung Chun Road, G/F - Shing Fung Foods Company",
+"dates": "29.7.1988 - 29.11.1991"
+},
+{
+"street": "lsr",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"cockloft": true,
+"nameZh": "何賢牙醫",
+"nameEn": "Ho Yin Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-391"
+],
+"title": "G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)",
+"dates": "17.8.1990 - 3.6.1992"
+},
+{
+"street": "lsr",
+"num": 4,
+"numText": "4",
+"floor": 1,
+"nameZh": "黃明桂針織廠",
+"nameEn": "Wong Ming Kwai Knitting Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-392"
+],
+"title": "1/F, 4 Lung Shing Road. Wong Ming Kwai Knitting Factory (黃明桂針織廠)",
+"dates": "4.12.1990 - 9.7.1991"
+},
+{
+"street": "lsr",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameZh": "超記(榮利)薄餅",
+"nameEn": "Wing Lee",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-388"
+],
+"title": "Front Portion, G/F, 5 Lung Shing Road - Chiu Kee (Wing Lee) Pizza (超記(榮利)薄餅)",
+"dates": "23.1.1991 - 30.4.1991"
+},
+{
+"street": "lsr",
+"num": 8,
+"numText": "8",
+"floor": 3,
+"nameZh": "興和針織廠",
+"nameEn": "Hing Wo Knitting Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-483"
+],
+"title": "3/F, 8 Lung Shing Road - Hing Wo Knitting Fty.[Factory] (興和針織廠)",
+"dates": "8.8.1990 - 1.5.1992"
+},
+{
+"street": "lsr",
+"num": 10,
+"numText": "10",
+"floor": 1,
+"nameZh": "張記凍肉食品公司",
+"trade": "meat",
+"refs": [
+"HKRS1255-3-406"
+],
+"title": "Rear Portion, 1/F, 10 Lung Shing Rd., Lung Hing House - Cheung Kee Food Company 張記凍肉食品公司",
+"dates": "13.9.1990 - 24.10.1990"
+},
+{
+"street": "lsr",
+"num": 11,
+"numText": "11",
+"floor": 0,
+"nameZh": "國際牙科及國際牙科分所",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-379"
+],
+"title": "G/F & 1/F, 11 Lung Shing Road, KWC [Kowloon Walled City]. International Dental Clinic & Branch (國際牙科及國際牙科分所)",
+"dates": "26.6.1992 - 26.6.1992"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 0,
+"nameZh": "戴記燒腊",
+"nameEn": "Tai Kee Roasted Meat",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-399"
+],
+"title": "Rear Portion, G/F, 12 Lung Shing Rd. Tai Kee Roasted Meat (戴記燒腊)",
+"dates": "28.12.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 1,
+"nameZh": "林明城麵廠",
+"nameEn": "Lam Ming Shing Noodles Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-407"
+],
+"title": "Block A, 1/F, 12 Lung Shing Road. Lam Ming Shing Noodles Fty. [Factory] (林明城麵廠)",
+"dates": "9.11.1990 - 1.11.1990"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 1,
+"nameZh": "雙喜號福食",
+"trade": "food",
+"refs": [
+"HKRS1255-3-420"
+],
+"title": "Flat E, 1/F, 12 Lung Shing Road, Wing Fung Building - Sheung Hei Ho Food (雙喜號福食)",
+"dates": "30.11.1990 - 21.5.1992"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 2,
+"nameEn": "Ho Wah Shoes Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-421"
+],
+"title": "Flat C, 2/F, 12 Lung Shing Road (Ho Wah Shoes Factory)",
+"dates": "22.11.1990 - 22.11.1990"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 2,
+"nameZh": "榮利麵廠",
+"nameEn": "Wing Lee Noodles Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-422"
+],
+"title": "Flat B, 2/F, 12 Lung Shing Road. Wing Lee Noodles Fty. [Factory] (榮利麵廠)",
+"dates": "20.12.1990 - 20.12.1990"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 3,
+"nameZh": "堅強鞋廠",
+"nameEn": "Kin Keung Shoes",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-423"
+],
+"title": "Flat E, 3/F, 12 Lung Shing Road. 堅強鞋廠 (Kin Keung Shoes)",
+"dates": "23.10.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 12,
+"numText": "12",
+"floor": 5,
+"nameZh": "豐恆金屬製品廠",
+"nameEn": "Fung Hang Metal Mfy",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-424"
+],
+"title": "Flat C, 5/F, 12 Lung Shing Rd. Fung Hang Metal Mfy. [Manufactory] (豐恆金屬製品廠)",
+"dates": "12.9.1990 - 14.11.1990"
+},
+{
+"street": "lsr",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"nameZh": "麥汝鋆牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-376"
+],
+"title": "G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)",
+"dates": "18.5.1992 - 3.6.1992"
+},
+{
+"street": "lsr",
+"num": 18,
+"numText": "18",
+"floor": 0,
+"nameZh": "大興粉麵廠",
+"nameEn": "KWC",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-408"
+],
+"title": "G/F & M/F, 18 Lung Shing Road, KWC [Kowloon Walled City] Tai Hing Noodle Factory (大興粉麵廠)",
+"dates": "5.7.1991 - 5.7.1991"
+},
+{
+"street": "lsr",
+"num": 19,
+"numText": "19A",
+"floor": 0,
+"nameZh": "林威豐商店",
+"nameEn": "Lam Shing Fung Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-375"
+],
+"title": "G/F & 1/F, 19A Lung Shing Road. Lam Shing Fung Store (林威豐商店)",
+"dates": "24.12.1990 - 12.5.1992"
+},
+{
+"street": "lsr",
+"num": 20,
+"numText": "20-24",
+"floor": 1,
+"trade": "trading",
+"refs": [
+"HKRS1255-3-477"
+],
+"title": "Flat C, 1/F, Tung Sing House, 20-24 Lung Shing Road - Yule Arts-Work Company",
+"dates": "15.8.1990 - 1.3.1991"
+},
+{
+"street": "lsr",
+"num": 21,
+"numText": "21",
+"floor": 0,
+"nameZh": "黃美如牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-374"
+],
+"title": "G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)",
+"dates": "15.1.1991 - 17.1.1992"
+},
+{
+"street": "lsr",
+"num": 22,
+"numText": "22",
+"floor": 0,
+"nameZh": "黎煥新牙科",
+"nameEn": "Lai Woon Sun Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-415"
+],
+"title": "G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)",
+"dates": "4.3.1993 - 6.1.1994"
+},
+{
+"street": "lsr",
+"num": 22,
+"numText": "22-24",
+"floor": 3,
+"nameEn": "Chu Wong Ornament Mfg. Co.",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-476"
+],
+"title": "Flat A, 3/F, 22-24 Lung Shing Road - Chu Wong Ornament Mfg. Co.[Manufacting Company]",
+"dates": "20.8.1990 - 27.4.1992"
+},
+{
+"street": "lsr",
+"num": 22,
+"numText": "22-24",
+"floor": 4,
+"nameZh": "朝陽鞋廠",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-474",
+"HKRS1255-3-475"
+],
+"title": "Flat A, 4/F, 22-24 Lung Shing Road, Tung Sing House - Chiu Yeung Shoes Fty.[Factory] (朝陽鞋廠)",
+"dates": "20.8.1990 - 13.7.1992"
+},
+{
+"street": "lsr",
+"num": 23,
+"numText": "23",
+"floor": 0,
+"cockloft": true,
+"nameZh": "李偉群牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-372A"
+],
+"title": "G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科",
+"dates": "3.9.1990 - 16.8.1993"
+},
+{
+"street": "lsr",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"nameZh": "大生號",
+"nameEn": "Tai Sang Ho",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-530A"
+],
+"title": "G/F, On Lok House, Rear Block, 24 Lung Shing Road. Tai Sang Ho (大生號)",
+"dates": "21.9.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 25,
+"numText": "25A",
+"floor": 0,
+"nameZh": "龍威電視電器工程",
+"nameEn": "Also known as G/F, 25A Lung Shing Road",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-371"
+],
+"title": "G/F, 25A Tung Tsing Road. (Also known as G/F, 25A Lung Shing Road) (龍威電視電器工程) King Dragon TV & Electric Service",
+"dates": "2.10.1990 - 1.5.1992"
+},
+{
+"street": "lsr",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"nameEn": "Wing Hang Rubber Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-389"
+],
+"title": "G/F, 25 Lung Shing Road (Wing Hang Rubber Factory)",
+"dates": "16.8.1990 - 18.5.1992"
+},
+{
+"street": "lsr",
+"num": 26,
+"numText": "26",
+"floor": 0,
+"nameZh": "中立食品公司",
+"nameEn": "Chung Lap Food Co.",
+"trade": "food",
+"refs": [
+"HKRS1255-3-478A",
+"HKRS1255-3-478B"
+],
+"title": "G/F, 26 Lung Shing Road - Chung Lap Food Co.[Company] (中立食品公司)",
+"dates": "22.8.1990 - 23.4.1992"
+},
+{
+"street": "lsr",
+"num": 29,
+"numText": "29A",
+"floor": 0,
+"nameEn": "Ching Kee Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-369"
+],
+"title": "G/F, 29 and 29A Lung Shing Road (Ching Kee Store)",
+"dates": "31.7.1990 - 3.12.1991"
+},
+{
+"street": "lsr",
+"num": 29,
+"numText": "29B",
+"floor": 0,
+"nameZh": "方玉成牙科",
+"nameEn": "KWC. Fong Yuk Shing Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-370"
+],
+"title": "G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)",
+"dates": "7.5.1992 - 21.5.1992"
+},
+{
+"street": "lsr",
+"num": 30,
+"numText": "30A",
+"floor": 0,
+"nameZh": "鴻光水電工程",
+"nameEn": "Hung Kwong Water Electric",
+"trade": "plumbing",
+"refs": [
+"HKRS1255-3-479"
+],
+"title": "G/F, 30A Lung Shing Road - Hung Kwong Water Electric (鴻光水電工程)",
+"dates": "23.8.1990 - 29.5.1992"
+},
+{
+"street": "lsr",
+"num": 31,
+"numText": "31",
+"floor": 0,
+"nameZh": "英發汽車電器冷氣電池輪呔",
+"nameEn": "KWC",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-368"
+],
+"title": "Rear Portion, G/F, 31 Lung Shing Road, KWC [Kowloon Wallted City] Ying Fat Company (英發汽車電器冷氣電池輪呔)",
+"dates": "28.5.1992 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 31,
+"numText": "31",
+"floor": 0,
+"nameZh": "長城紙號",
+"nameEn": "Cheung Shing Paper",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-390"
+],
+"title": "Front Portion, G/F, 31 Lung Shing Road - Cheung Shing Paper (長城紙號)",
+"dates": "28.5.1992 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 32,
+"numText": "32",
+"floor": 0,
+"nameZh": "遠達五金廠",
+"nameEn": "Yuen Tat Metal Factory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-480"
+],
+"title": "G/F, 32 Lung Shing Road - Yuen Tat Metal Fty.[Factory] (遠達五金廠)",
+"dates": "30.8.1990 - 29.5.1992"
+},
+{
+"street": "lsr",
+"num": 34,
+"numText": "34",
+"floor": 0,
+"nameEn": "Singapore Trading Co.",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-481",
+"HKRS1255-3-482A",
+"HKRS1255-3-482B",
+"HKRS1255-3-482C",
+"HKRS1255-3-482D",
+"HKRS1255-3-482E",
+"HKRS1255-3-482F"
+],
+"title": "G/F, 34 Lung Shing Road - Singapore Trading Co. [Company]",
+"dates": "12.11.1990 - 25.8.1993"
+},
+{
+"street": "lsr",
+"num": 38,
+"numText": "38",
+"floor": 0,
+"nameZh": "坤記魚蛋廠",
+"nameEn": "Kwan Kee Fish Ball Factory",
+"trade": "fishball",
+"refs": [
+"HKRS1255-3-484"
+],
+"title": "G/F, 38 Lung Shing Road - Kwan Kee Fish Ball Fty. [Factory] (坤記魚蛋廠)",
+"dates": "15.11.1990 - 2.6.1992"
+},
+{
+"street": "lsr",
+"num": 40,
+"numText": "40",
+"floor": 0,
+"nameZh": "標記食品公司",
+"nameEn": "Biu Kee Food",
+"trade": "food",
+"refs": [
+"HKRS1255-3-485"
+],
+"title": "G/F, 40 Lung Shing Road - Biu Kee Food (標記食品公司)",
+"dates": "15.11.1990 - 29.6.1992"
+},
+{
+"street": "lsr",
+"num": 42,
+"numText": "42",
+"floor": 0,
+"nameZh": "精華真空電鍍廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-488"
+],
+"title": "G/F, 42 Lung Shing Road, Heung Tung House - Brilliant Vacuum Evaporation Fty. [Factory] (精華真空電鍍廠)",
+"dates": "17.10.1990 - 13.5.1992"
+},
+{
+"street": "lsr",
+"num": 42,
+"numText": "42",
+"floor": 1,
+"nameZh": "榮盛製衣廠",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-486"
+],
+"title": "1/F, Rear Portion, Heung Tung House, 42 L. S. Rd.[Lung Shing Road] - Wing Shing Garment Fty.[Factory] (榮盛製衣廠)",
+"dates": "18.3.1991 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 42,
+"numText": "42",
+"floor": 1,
+"nameZh": "高雄牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-487"
+],
+"title": "1/F, 42 Lung Shing Road, KWC [Kowloon Walled City] - Ko Hung Dentistry (高雄牙科)",
+"dates": "20.10.1990 - 17.11.1992"
+},
+{
+"street": "lsr",
+"num": 45,
+"numText": "45",
+"floor": 0,
+"nameZh": "鈞威針織廠",
+"nameEn": "Kwan Wai Knitting Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-364"
+],
+"title": "G/F, 45 Lung Shing Road - Kwan Wai Knitting Fty. [Factory] 鈞威針織廠",
+"dates": "2.10.1990 - 15.7.1994"
+},
+{
+"street": "lsr",
+"num": 46,
+"numText": "46A",
+"floor": 0,
+"nameZh": "合成食品公司",
+"nameEn": "KWC",
+"trade": "food",
+"refs": [
+"HKRS1255-3-491",
+"HKRS1255-3-492"
+],
+"title": "G/F, 46A Lung Shing Road, KWC [Kowloon Walled City] - Hop Shing (合成食品公司)",
+"dates": "24.3.1992 - 17.12.1992"
+},
+{
+"street": "lsr",
+"num": 48,
+"numText": "48",
+"floor": 0,
+"nameZh": "永祥盛食品公司",
+"nameEn": "KWC",
+"trade": "meat",
+"refs": [
+"HKRS1255-3-493",
+"HKRS1255-3-494",
+"HKRS1255-3-495",
+"HKRS1255-3-496",
+"HKRS1255-3-497",
+"HKRS1255-3-498",
+"HKRS1255-3-499"
+],
+"title": "G/F, 48 Lung Shing Road, KWC [Kowloon Walled City] - Wing Cheung Shing (HK) Meat Co. [Company] (永祥盛食品公司)",
+"dates": "18.5.1992 - 14.2.1994"
+},
+{
+"street": "lsr",
+"num": 50,
+"numText": "50",
+"floor": 0,
+"mezz": true,
+"nameZh": "華富牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-347A",
+"HKRS1255-3-347B"
+],
+"title": "M/F & G/F, Tung Wah House, 50 L.S. Rd. [Lung Shing Road] & Rear Portion G/F, 71 Lung Shing Road, KWC (Wah Fu Dentistry 華富牙科)",
+"dates": "20.8.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 52,
+"numText": "52",
+"floor": 1,
+"nameZh": "源成實業公司",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-502",
+"HKRS1255-3-503"
+],
+"title": "1/F, 52 Lung Shing Road, Tung Wah House - Yuen Shing Industrial Co.[Company] (源成實業公司)",
+"dates": "23.5.1991 - 8.11.1994"
+},
+{
+"street": "lsr",
+"num": 52,
+"numText": "52",
+"floor": 2,
+"nameZh": "志誠鞋廠公司",
+"nameEn": "with film",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-500",
+"HKRS1255-3-501"
+],
+"title": "2/F, Tung Wah House, 52 Lung Shing Rd.[Road] - Chi Shing Shoes Fty. Co.[Factory Company] (with film) (志誠鞋廠公司)",
+"dates": "17.10.1990 - 17.6.1994"
+},
+{
+"street": "lsr",
+"num": 53,
+"numText": "53",
+"floor": 0,
+"nameZh": "新生金屬製品廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-363"
+],
+"title": "G/F, 53 Lung Shing Road. 新生金屬製品廠 Sun Sang Metalware Factory",
+"dates": "11.9.1990 - 10.2.1992"
+},
+{
+"street": "lsr",
+"num": 55,
+"numText": "55",
+"floor": 0,
+"nameZh": "城西號五金廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-367"
+],
+"title": "G/F, 55 Lung Shing Road. 城西號五金廠 Shing Sik Ho Metal Fty.",
+"dates": "14.9.1990 - 28.5.1992"
+},
+{
+"street": "lsr",
+"num": 57,
+"numText": "57",
+"floor": 0,
+"nameZh": "合興隆飯店",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-356"
+],
+"title": "G/F, 57 Lung Shing Road & G/F, 59 Lung Shing Rd. (合興隆飯店) Hop Hing Lung Restaurant",
+"dates": "4.9.1990 - 18.6.1992"
+},
+{
+"street": "lsr",
+"num": 57,
+"numText": "57A",
+"floor": 0,
+"nameZh": "惠民診所",
+"nameEn": "Wai Man Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-361"
+],
+"title": "G/F, 57A Lung Shing Road. Wai Man Clinic (惠民診所)",
+"dates": "22.8.1990 - 30.6.1992"
+},
+{
+"street": "lsr",
+"num": 57,
+"numText": "57B",
+"floor": 0,
+"nameZh": "華冠牙室",
+"nameEn": "KWC. Wah Koon Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-362"
+],
+"title": "G/F, 57B Lung Shing Road, KWC. Wah Koon Dentistry (華冠牙室)",
+"dates": "5.5.1992 - 29.6.1992"
+},
+{
+"street": "lsr",
+"num": 57,
+"numText": "57",
+"floor": 3,
+"nameZh": "昌興公司",
+"nameEn": "Cheong Hing Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-360"
+],
+"title": "3/F, 57 Lung Shing Road. Cheong Hing Company (昌興公司)",
+"dates": "11.11.1990 - 29.5.1992"
+},
+{
+"street": "lsr",
+"num": 59,
+"numText": "59",
+"floor": 0,
+"nameZh": "豐園麵家",
+"nameEn": "Fung Yuen Noodles Restaurant",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-355"
+],
+"title": "G/F, Rear Block, 59 Lung Shing Road Fung Yuen Noodles Restaurant (豐園麵家)",
+"dates": "7.7.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 63,
+"numText": "63",
+"floor": 0,
+"nameZh": "美東園飯店",
+"nameEn": "Mei Tung Yuen Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-349"
+],
+"title": "G/F, 63 Lung Shing Road & G/F, 67 Lung Shing Rd. 美東園飯店 (Mei Tung Yuen Restaurant)",
+"dates": "8.9.1990 - 29.6.1992"
+},
+{
+"street": "lsr",
+"num": 63,
+"numText": "63",
+"floor": 0,
+"nameZh": "曾志偉牙科",
+"nameEn": "Tsang Chi Wai Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-352"
+],
+"title": "G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)",
+"dates": "21.8.1990 - 1.7.1992"
+},
+{
+"street": "lsr",
+"num": 64,
+"numText": "64",
+"floor": 0,
+"nameZh": "水為財粥麵店",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-506"
+],
+"title": "G/F, 64 Lung Shing Road - 水為財粥麵店 Shui Wai Choi Congee & Noodle Shop",
+"dates": "8.10.1990 - 23.6.1992"
+},
+{
+"street": "lsr",
+"num": 64,
+"numText": "64",
+"floor": 0,
+"mezz": true,
+"nameZh": "龍都美容院",
+"nameEn": "Lung Dao Hair Salon",
+"trade": "salon",
+"refs": [
+"HKRS1255-3-508"
+],
+"title": "M/F, 64 Lung Shing Road, Lung Dao Hair Salon (龍都美容院)",
+"dates": "22.9.1990 - 3.6.1992"
+},
+{
+"street": "lys",
+"num": 1,
+"numText": "1",
+"floor": 0,
+"nameZh": "華生電鍍廠",
+"nameEn": "Wah Sang Electroplating Factory [Factory]",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-58"
+],
+"title": "G/F, 1, Lo Yan ST. [Street] (Wah Sang Electroplating Fty. [Factory]) 華生電鍍廠",
+"dates": "9.1.1990 - 21.1.1992"
+},
+{
+"street": "lys",
+"num": 2,
+"numText": "2-3",
+"floor": 0,
+"nameZh": "中南五金電鍍廠",
+"nameEn": "Chung Nam Metal & Electroplate Factory [Factory]",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-59"
+],
+"title": "G/F, 2-3, Lo Yan ST. [Street] (Chung Nam Metal & Electroplate Fty. [Factory]) 中南五金電鍍廠",
+"dates": "22.11.1989 - 23.12.1991"
+},
+{
+"street": "lys",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameZh": "香港實業公司",
+"nameEn": "STGE",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-317"
+],
+"title": "G/F., 2 Lo Yan Back ST. [Street] & G/F (STGE) Opposite to 2 Lo Yan Back ST., G/F (Hong Kong Industrial Co.) 香港實業公司",
+"dates": "5.10.1989 - 10.7.1990"
+},
+{
+"street": "lys",
+"num": 3,
+"numText": "3",
+"floor": 1,
+"nameEn": "Lau Fat Mau",
+"refs": [
+"HKRS1255-3-60"
+],
+"title": "1/F, 3 Lo Yan Street Lau Fat Mau",
+"dates": "16.3.1992 - 3.4.1992"
+},
+{
+"street": "lys",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameZh": "友記燒臘",
+"nameEn": "Yau Kee",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-61"
+],
+"title": "G/F, 5 Lo Yan Street Yau Kee (友記燒臘)",
+"dates": "12.6.1990 - 31.3.1992"
+},
+{
+"street": "lys",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameZh": "通行金屬制線廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-458"
+],
+"title": "G/F & M/F, 5 L. Y.[Lo Yan] 1 Lane - Toney Antenna Cord Factory (通行金屬制線廠)",
+"dates": "20.12.1989 - 7.4.1992"
+},
+{
+"street": "lys",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameZh": "馬儒記五金雲石膠製品",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-456"
+],
+"title": "G/F, 6 Lo Yan Street, 1st Lane - Ma Yee Kee Metal Cloud-stone Plastic Mfy.[Manufactory] (馬儒記五金雲石膠製品)",
+"dates": "12.10.1990 - 7.4.1992"
+},
+{
+"street": "lys",
+"num": 8,
+"numText": "8A",
+"floor": 0,
+"nameZh": "南方麵店",
+"nameEn": "Nam Fong Noodle Shop",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-54"
+],
+"title": "G/F, 8A, Lo Yan St. [Street] (Nam Fong Noodle Shop) 南方麵店",
+"dates": "29.11.1989 - 7.4.1992"
+},
+{
+"street": "lys",
+"num": 8,
+"numText": "8",
+"floor": 0,
+"nameZh": "鴻泰膠袋廠",
+"nameEn": "Hung Tai Plastic Bag Factory [Factory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-55A",
+"HKRS1255-3-55B"
+],
+"title": "G/F, 8, Lo Yan ST. [Street] (Hung Tai Plastic Bag Fty. [Factory]) 鴻泰膠袋廠",
+"dates": "25.11.1989 - 13.4.1993"
+},
+{
+"street": "lys",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "世界電業",
+"nameEn": "World Electrical Works",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-62"
+],
+"title": "G/F, 9, Lo Yan ST. [Street] (World Electrical Works) 世界電業",
+"dates": "11.12.1989 - 5.8.1991"
+},
+{
+"street": "lys",
+"num": 10,
+"numText": "10",
+"floor": 0,
+"nameZh": "吳和泰士多",
+"nameEn": "Ng Wo Tai Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-48"
+],
+"title": "G/F, 10 L.Y. ST. [Lo Yan Street] (Ng Wo Tai Store) 吳和泰士多",
+"dates": "28.4.1990 - 8.11.1990"
+},
+{
+"street": "lys",
+"num": 11,
+"numText": "11",
+"floor": 0,
+"nameZh": "合利食品公司",
+"trade": "food",
+"refs": [
+"HKRS1255-3-63"
+],
+"title": "G/F, 11 Lo Yan ST. [Street] G/F, 17 Lo Yan ST. [Street] 9op Lee Food Company) 合利食品公司",
+"dates": "30.11.1989 - 7.4.1992"
+},
+{
+"street": "lys",
+"num": 19,
+"numText": "19",
+"floor": 0,
+"nameZh": "國記燒腊",
+"nameEn": "Kwok Kee Roasted Meat",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-457B"
+],
+"title": "G/F, 19 LY St. [Lo Yan Street] (Kwok Kee Roasted Meat) 國記燒腊",
+"dates": "2.12.1989 - 7.4.1992"
+},
+{
+"street": "lys",
+"num": 20,
+"numText": "20",
+"floor": 0,
+"nameZh": "合興食品公司",
+"trade": "food",
+"refs": [
+"HKRS1255-3-469"
+],
+"title": "G/F, 20 Lo Yan St.[Street] - Hop Hing Foods Co.[Company] (合興食品公司)",
+"dates": "15.1.1990 - 14.1.1991"
+},
+{
+"street": "lys",
+"num": 23,
+"numText": "23",
+"floor": 0,
+"nameZh": "朱杰電機",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-457A"
+],
+"title": "G/F, 23 Lo Yan St.[Street] - Chu Kit Electrical (朱杰電機)",
+"dates": "6.11.1989 - 25.7.1990"
+},
+{
+"street": "lys",
+"num": 25,
+"numText": "25A",
+"floor": 0,
+"nameZh": "亞彭茶菓鋪",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-455"
+],
+"title": "G/F, 25A L. Y. St.[Lo Yan Street] - Ah Pang Cake (亞彭茶菓鋪)",
+"dates": "9.3.1990 - 21.10.1991"
+},
+{
+"street": "lys",
+"num": 27,
+"numText": "27",
+"floor": 1,
+"nameZh": "興昌植毛廠",
+"nameEn": "Hing Cheong",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-321"
+],
+"title": "1/F, 27 Lo Yan Street & 1/F, 34 Lo Yan Street Hing Cheong (興昌植毛廠)",
+"dates": "25.1.1989 - 19.6.1990"
+},
+{
+"street": "lys",
+"num": 27,
+"numText": "27",
+"floor": 3,
+"nameEn": "Chun Sik Shoes Maker",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-322"
+],
+"title": "27, L Y St [Lo Yan Street], 3/F, Rear Portion (Chun Sik Shoes Maker)",
+"dates": "29.11.1988 - 24.2.1992"
+},
+{
+"street": "lys",
+"num": 28,
+"numText": "28",
+"floor": 8,
+"refs": [
+"HKRS1255-3-468"
+],
+"title": "8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin",
+"dates": "15.12.1989 - 5.7.1990"
+},
+{
+"street": "lys",
+"num": 30,
+"numText": "30B",
+"floor": 0,
+"nameZh": "合發鐵器工程",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-466",
+"HKRS1255-3-467"
+],
+"title": "G/F, 30B L. Y. St.[Lo Yan Street] - Hop Fat Iron Ware Eng.[Engineering] (合發鐵器工程 )",
+"dates": "26.9.1991 - 17.12.1992"
+},
+{
+"street": "lys",
+"num": 30,
+"numText": "30",
+"floor": 0,
+"nameZh": "大華金屬製品廠",
+"nameEn": "Tai Wah Metal Mfy.[Manufactory]",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-585"
+],
+"title": "G/F, 30, Lo Yan St.[Street], - (Tai Wah Metal Mfy.[Manufactory]) 大華金屬製品廠",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 31,
+"numText": "31",
+"floor": 0,
+"nameZh": "全球製麵廠",
+"nameEn": "Chuen Kau Noodle Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-318"
+],
+"title": "G/F, Sze Fat H, 31, Lo Yan ST. [Street] (Chuen Kau Noodle Fty.) 全球製麵廠",
+"dates": "12.12.1989 - 30.5.1991"
+},
+{
+"street": "lys",
+"num": 32,
+"numText": "32",
+"floor": 0,
+"nameZh": "嘉煒塑膠廠",
+"nameEn": "Ka Wai Plastic Factory[Factory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-586"
+],
+"title": "G/F & M/F, 32, Lo Yan St.[Street], - (Ka Wai Plastic Fty.[Factory]) 嘉煒塑膠廠",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 35,
+"numText": "35",
+"floor": 2,
+"nameZh": "潮湘電機針織廠",
+"nameEn": "Chiu Sheung Elec. Machine Knitting",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-319"
+],
+"title": "Blk. F, 2/F, 35 Lo Yan St. [Street] (Chiu Sheung Elec. Machine Knitting) 潮湘電機針織廠",
+"dates": "16.1.1989 - 17.12.1991"
+},
+{
+"street": "lys",
+"num": 37,
+"numText": "37",
+"floor": 0,
+"nameZh": "溢利樹膠製品廠",
+"nameEn": "Yat Lee rubber Mfy. [Manufactory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-320"
+],
+"title": "G/F, 37 L.Y. ST. [Lo Yan Street], (Yat Lee rubber Mfy. [Manufactory]) 溢利樹膠製品廠",
+"dates": "8.12.1989 - 25.3.1992"
+},
+{
+"street": "lys",
+"num": 42,
+"numText": "42",
+"floor": 0,
+"nameEn": "Hop Hing Property Co.",
+"trade": "property",
+"refs": [
+"HKRS1255-3-583"
+],
+"title": "G/F, 42, Lo Yan Street, Hop Hing Property Co.[Company]",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 42,
+"numText": "42",
+"floor": 0,
+"nameZh": "有記時菓",
+"nameEn": "Yau Kee Fruit Stall",
+"trade": "store",
+"refs": [
+"HKRS1255-3-584"
+],
+"title": "G/F, 42, L.Y. St. [Lo Yan treet] - (Yau Kee Fruit Stall) 有記時菓",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 44,
+"numText": "44",
+"floor": 0,
+"nameZh": "文華金屬製品廠",
+"nameEn": "Man Wah Metal Mfy.[Manufactory]",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-582"
+],
+"title": "G/F, 44 L.Y. St.[Lo Yan Street] (Man Wah Metal Mfy.[Manufactory]) 文華金屬製品廠",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 46,
+"numText": "46A",
+"floor": 0,
+"nameZh": "義隆鐵器不銹鋼具工程",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-580"
+],
+"title": "G/F, 46A Lo Yan St.[Street], Yee Lun (義隆鐵器不銹鋼具工程)",
+"dates": "1987 - 1995"
+},
+{
+"street": "lys",
+"num": 46,
+"numText": "46",
+"floor": 0,
+"nameZh": "成發魚蛋批發",
+"trade": "fishball",
+"refs": [
+"HKRS1255-3-581"
+],
+"title": "46, LY[Lo Yan] Street, G/F, (成發魚蛋批發) Shing Fat Fishball Wholesale",
+"dates": "1987 - 1995"
+},
+{
+"street": "skg",
+"num": 1,
+"numText": "No. 1",
+"floor": 0,
+"nameEn": "Tak Tat Aluminium Decoration Fitting Co.",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-132"
+],
+"title": "G/F, No. 1 Sz Kung Street (Tak Tat Aluminium Decoration Fitting Co.)",
+"dates": "5.4.1988 - 21.11.1991"
+},
+{
+"street": "skg",
+"num": 6,
+"numText": "No. 6",
+"floor": 0,
+"nameEn": "Lai Ching Metal Factory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-133"
+],
+"title": "G/F, No. 6 Sz Kung Street (Lai Ching Metal Factory)",
+"dates": "15.4.1988 - 16.6.1992"
+},
+{
+"street": "skg",
+"num": 7,
+"numText": "7",
+"floor": 0,
+"nameEn": "Shing Kee Food",
+"trade": "food",
+"refs": [
+"HKRS1255-3-123B"
+],
+"title": "7, SK [Sz Kung] Street, G/F (Shing Kee Food)",
+"dates": "15.4.1988 - 12.12.1991"
+},
+{
+"street": "skg",
+"num": 8,
+"numText": "No. 8",
+"floor": 0,
+"nameEn": "Ma Kam Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-134"
+],
+"title": "G/F, No. 8, Sz Kung Street (Ma Kam Plastic Factory)",
+"dates": "31.3.1988 - 3.4.1991"
+},
+{
+"street": "skg",
+"num": 15,
+"numText": "15 & 16",
+"floor": 0,
+"trade": "garment",
+"refs": [
+"HKRS1255-3-92"
+],
+"title": "15 & 16, SK [Sz Kung] Street, G/F, Kowloon Knitting Needle Fty [Factory]",
+"dates": "23.11.1988 - 22.8.1990"
+},
+{
+"street": "skg",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"nameZh": "合豐",
+"refs": [
+"HKRS1255-3-80"
+],
+"title": "17, SK St. [Sz Kung Street], G/F (合豐)",
+"dates": "23.12.1988 - 30.4.1992"
+},
+{
+"street": "skg",
+"num": 19,
+"numText": "19",
+"floor": 0,
+"nameZh": "義發食品公司",
+"trade": "food",
+"refs": [
+"HKRS1255-3-77"
+],
+"title": "19, SK St. [Sz Kung Street], G/F & G/F, Flat B (義發食品公司)",
+"dates": "16.1.1989 - 9.7.1992"
+},
+{
+"street": "skg",
+"num": 19,
+"numText": "19",
+"floor": 3,
+"nameZh": "廖理",
+"trade": "construction",
+"refs": [
+"HKRS1255-3-94"
+],
+"title": "19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]",
+"dates": "21.11.1988 - 31.7.1991"
+},
+{
+"street": "skg",
+"num": 23,
+"numText": "23",
+"floor": 0,
+"nameZh": "超記",
+"refs": [
+"HKRS1255-3-89"
+],
+"title": "23, SK [Sz Kung] Street, G/F (超記)",
+"dates": "5.12.1988 - 30.9.1991"
+},
+{
+"street": "skg",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"nameZh": "祥與玩具",
+"trade": "toys",
+"refs": [
+"HKRS1255-3-90"
+],
+"title": "24, SK [Sz Kung] Street, G/F (祥與玩具)",
+"dates": "20.11.1988 - 3.3.1992"
+},
+{
+"street": "ssr",
+"num": 1,
+"numText": "1",
+"floor": 0,
+"nameEn": "Shing Fat Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-120"
+],
+"title": "1, Sai Shing Rd. [Road], G/F (Shing Fat Food Company)",
+"dates": "19.4.1988 - 24.1.1992"
+},
+{
+"street": "ssr",
+"num": 2,
+"numText": "2B",
+"floor": 0,
+"nameZh": "錶殼蝕刻",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-140"
+],
+"title": "2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就",
+"dates": "1.12.1988 - 24.5.1990"
+},
+{
+"street": "ssr",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"nameZh": "財記点心批發",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-143"
+],
+"title": "4. Sai Shing Road, G/F - 財記点心批發",
+"dates": "8.4.1988 - 5.8.1991"
+},
+{
+"street": "ssr",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameEn": "Tai Yau Provision & Grocery",
+"trade": "store",
+"refs": [
+"HKRS1255-3-141"
+],
+"title": "5, Sai Shing Road, G/F (I) (Tai Yau Provision & Grocery)",
+"dates": "1.12.1988 - 14.1.1992"
+},
+{
+"street": "ssr",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameEn": "Laundry Court Company",
+"trade": "laundry",
+"refs": [
+"HKRS1255-3-212"
+],
+"title": "5, SS [Sai Shing] Road, 3nd Lane , G/F (Laundry Court Company)",
+"dates": "18.5.1988 - 27.9.1991"
+},
+{
+"street": "ssr",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameZh": "金豐貿易公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-121"
+],
+"title": "6, Sai Shing Road, G/F (Kam Fung Trading Co. 金豐貿易公司)",
+"dates": "19.5.1988 - 18.1.1992"
+},
+{
+"street": "ssr",
+"num": 6,
+"numText": "No. 6A",
+"floor": 0,
+"nameEn": "Sun Sun Wah Leather Handbag Factory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-122"
+],
+"title": "G/F, No. 6A, Sai Shing Road - Sun Sun Wah Leather Handbag Fty. [Factory]",
+"dates": "6.5.1988 - 8.1.1992"
+},
+{
+"street": "ssr",
+"lane": 3,
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameEn": "Hoa Wah Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-213"
+],
+"title": "G/F, 6, 3nd Lane, Sai Shing Road (Hoa Wah Plastic Fty.)",
+"dates": "8.8.1988 - 29.11.1991"
+},
+{
+"street": "ssr",
+"num": 7,
+"numText": "7",
+"floor": 0,
+"nameEn": "Hop Kee Snack Shop",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-123A"
+],
+"title": "G/F, 7, SS [Sai Shing] Road (Hop Kee Snack Shop)",
+"dates": "27.4.1988 - 8.1.1992"
+},
+{
+"street": "ssr",
+"num": 9,
+"numText": "No. 9",
+"floor": 0,
+"nameEn": "Leung Kee Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-142"
+],
+"title": "G/F, Flat A, No. 9 Sai Shing Road (Leung Kee Store)",
+"dates": "10.5.1988 - 10.10.1991"
+},
+{
+"street": "ssr",
+"num": 10,
+"numText": "10",
+"floor": 0,
+"nameZh": "恩平五金製品廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-144"
+],
+"title": "10, SS [Sai Shing] Road, G/F (Yan Ping Metal Manufactory 恩平五金製品廠)",
+"dates": "18.8.1988 - 11.1.1992"
+},
+{
+"street": "ssr",
+"num": 10,
+"numText": "10A & 12",
+"floor": 0,
+"nameZh": "振記號",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-147"
+],
+"title": "10A & 12, Sai Shing Road, G/F (振記號)",
+"dates": "29.2.1988 - 29.11.1991"
+},
+{
+"street": "ssr",
+"lane": 7,
+"num": 10,
+"numText": "No. 10",
+"floor": 1,
+"nameEn": "Also Known as 1/F, No 46, 7th Lane Sai Shing Rd. [Road]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-217"
+],
+"title": "1/F, No. 10, 7th Lane Sai Shing Road (Also Known as 1/F, No 46, 7th Lane Sai Shing Rd. [Road]) (Eternal Plastic Products Fty. [Factory])",
+"dates": "8.4.1988 - 19.5.1989"
+},
+{
+"street": "ssr",
+"num": 11,
+"numText": "11",
+"floor": 0,
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-251"
+],
+"title": "11, SS [Sai Shing] Road, Lane 2, G/F, Rear Portion, Hang Tat Jewellery Fty.",
+"dates": "28.3.1988 - 12.11.1990"
+},
+{
+"street": "ssr",
+"num": 12,
+"numText": "No. 12",
+"floor": 0,
+"nameEn": "Lung Kwong House",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-233"
+],
+"title": "G/F, No. 12 Second Lane, Sai Shing Road (Lung Kwong House), Shui Tung Confectionery",
+"dates": "21.11.1988 - 7.7.1994"
+},
+{
+"street": "ssr",
+"num": 13,
+"numText": "No. 13",
+"floor": 0,
+"nameEn": "Man Kee Metalware Factory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-146"
+],
+"title": "G/F, Cheung Lok House, No. 13 Sai Shing Road (Man Kee Metalware Factory)",
+"dates": "16.3.1988 - 8.1.1992"
+},
+{
+"street": "ssr",
+"lane": 7,
+"num": 14,
+"numText": "No 14",
+"floor": 0,
+"nameEn": "Also known as LG/F, No 37B, 7th Lane, Tai Chang St. [Street]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-207"
+],
+"title": "G/F 2 Basement, No 14, 7th Lane, Sai Shing Road. (Also known as LG/F, No 37B, 7th Lane, Tai Chang St. [Street]) (Sun Lok Plastic Factory)",
+"dates": "4.4.1988 - 18.10.1990"
+},
+{
+"street": "ssr",
+"lane": 7,
+"num": 14,
+"numText": "No.14",
+"floor": 1,
+"nameEn": "Fung Shing Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-210"
+],
+"title": "1/F, No.14 7th Lane Sai Shing Road (Fung Shing Plastic Factory.)",
+"dates": "16.3.1988 - 16.1.1990"
+},
+{
+"street": "ssr",
+"num": 15,
+"numText": "15",
+"floor": 1,
+"nameEn": "Wan Tung Plastic Products Factory [Factory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-218"
+],
+"title": "15, Sai Shing Road, 7th Lane, 1/F Flat A, B & C, Kowloon House (Wan Tung Plastic Products Fty. [Factory])",
+"dates": "25.5.1989 - 3.4.1992"
+},
+{
+"street": "ssr",
+"num": 17,
+"numText": "No. 17",
+"floor": 0,
+"nameEn": "Chan Fung Lee Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-145"
+],
+"title": "G/F, No. 17 Sai Shing Road (Chan Fung Lee Store)",
+"dates": "23.3.1988 - 22.8.1991"
+},
+{
+"street": "ssr",
+"num": 18,
+"numText": "18",
+"floor": 0,
+"trade": "food",
+"refs": [
+"HKRS1255-3-250"
+],
+"title": "18, SS [Sai Shing] Road, G/F, Tin Shing House, Tak Fat Food Co.",
+"dates": "22.1.1989 - 16.1.1990"
+},
+{
+"street": "ssr",
+"num": 20,
+"numText": "20",
+"floor": 0,
+"trade": "food",
+"refs": [
+"HKRS1255-3-249"
+],
+"title": "20, SS [Sai Shing] Road, G/F, Shing Hing Food Co.",
+"dates": "17.5.1988 - 18.10.1991"
+},
+{
+"street": "ssr",
+"num": 21,
+"numText": "No. 21A",
+"floor": 0,
+"nameEn": "Sun Lik Electric Works",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-247"
+],
+"title": "G/F, No. 21A Sai Shing Road, Sun Lik Electric Works",
+"dates": "22.4.1988 - 7.8.1989"
+},
+{
+"street": "ssr",
+"num": 21,
+"numText": "21",
+"floor": 0,
+"nameZh": "吉祥服務中心 (羅開祥",
+"nameEn": "LAW Hoi-cheung",
+"refs": [
+"HKRS1255-3-248"
+],
+"title": "G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)",
+"dates": "17.3.1988 - 18.11.1991"
+},
+{
+"street": "ssr",
+"num": 24,
+"numText": "24A",
+"floor": 0,
+"nameZh": "一新五金廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-232"
+],
+"title": "24A, Sai Shing Road, G/F, 一新五金廠 Yat Sun Metal Factory",
+"dates": "6.9.1988 - 12.1.1989"
+},
+{
+"street": "ssr",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"nameEn": "Kwok Kwong Electrical Works",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-216"
+],
+"title": "25, SS [Sai Shing] Road, G/F (Kwok Kwong Electrical Works)",
+"dates": "2.5.1988 - 6.3.1991"
+},
+{
+"street": "ssr",
+"num": 25,
+"numText": "No. 25A",
+"floor": 0,
+"nameEn": "Kwong Hing Weaving Factory",
+"trade": "textile",
+"refs": [
+"HKRS1255-3-231"
+],
+"title": "G/F, No. 25A Sai Shing Road (Kwong Hing Weaving Factory)",
+"dates": "14.3.1988 - 4.12.1990"
+},
+{
+"street": "ssr",
+"num": 26,
+"numText": "26",
+"floor": 0,
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-230"
+],
+"title": "G/F, 26, SS Rd. [Sai Shing Road] (Kam Mei Plastic Bakelite Metal Mfy. [Manufactory]",
+"dates": "24.1.1989 - 14.11.1991"
+},
+{
+"street": "ssr",
+"num": 27,
+"numText": "27",
+"floor": 8,
+"nameZh": "曾紀尉 (首飾",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-229"
+],
+"title": "27, Sai Shing Road, 8/F 曾紀尉 (首飾)",
+"dates": "24.2.1988 - 10.5.1990"
+},
+{
+"street": "ssr",
+"num": 29,
+"numText": "29",
+"floor": 0,
+"trade": "food",
+"refs": [
+"HKRS1255-3-215"
+],
+"title": "29, Sai Shing Road, G/F Yau Shing Food Company",
+"dates": "10.3.1988 - 29.11.1991"
+},
+{
+"street": "ssr",
+"num": 29,
+"numText": "No 29",
+"floor": 1,
+"nameEn": "Kin Tat Hong",
+"refs": [
+"HKRS1255-3-228"
+],
+"title": "1/F, No 29 Sai Shing Road (Kin Tat Hong)",
+"dates": "4.2.1988 - 18.1.1990"
+},
+{
+"street": "ssr",
+"num": 30,
+"numText": "No.30",
+"floor": 0,
+"nameEn": "Hip Kwong Metal Manufactory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-227"
+],
+"title": "G/F, No.30 Sai Shing Road (Hip Kwong Metal Manufactory)",
+"dates": "22.4.1988 - 20.8.1991"
+},
+{
+"street": "ssr",
+"num": 31,
+"numText": "31",
+"nameEn": "Hang Hong Jai",
+"refs": [
+"HKRS1255-3-214"
+],
+"title": "31, Sai Shing Road, N/F (Hang Hong Jai)",
+"dates": "25.3.1988 - 7.3.1991"
+},
+{
+"street": "ssr",
+"num": 37,
+"numText": "37",
+"floor": 0,
+"nameZh": "皮草加工",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-226"
+],
+"title": "37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)",
+"dates": "7.4.1988 - 26.11.1991"
+},
+{
+"street": "ssr",
+"num": 39,
+"numText": "39",
+"floor": 1,
+"nameZh": "潮州點心",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-194"
+],
+"title": "39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)",
+"dates": "6.4.1988 - 2.2.1990"
+},
+{
+"street": "ssr",
+"num": 40,
+"numText": "40",
+"floor": 3,
+"nameEn": "Wing Kai Trading Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-193"
+],
+"title": "40, SS [Sai Shing] Road , 3/F (Wing Kai Trading Company)",
+"dates": "16.2.1988 - 21.9.1990"
+},
+{
+"street": "ssr",
+"num": 41,
+"numText": "No 41",
+"floor": 0,
+"nameEn": "Workshop",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-192"
+],
+"title": "G/F, No 41 Sai Shing Road (Sun Wong Kee Restaurant (Workshop))",
+"dates": "9.6.1988 - 20.9.1989"
+},
+{
+"street": "ssr",
+"num": 42,
+"numText": "42",
+"floor": 0,
+"mezz": true,
+"trade": "furniture",
+"refs": [
+"HKRS1255-3-224"
+],
+"title": "42, SS Rd [Sai Shing Road], M/F, Flat B Yan Kee Furniture Company",
+"dates": "26.1.1988 - 9.8.1991"
+},
+{
+"street": "ssr",
+"num": 42,
+"numText": "No.42",
+"floor": 2,
+"nameEn": "Kin Won Shoe Manufactory",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-225"
+],
+"title": "Flat D, 2/F, No.42 Sai Shing Road. (Kin Won Shoe Manufactory)",
+"dates": "25.3.1988 - 29.11.1989"
+},
+{
+"street": "ssr",
+"num": 43,
+"numText": "No 43",
+"floor": 0,
+"nameEn": "Nam Wing Hing",
+"refs": [
+"HKRS1255-3-191"
+],
+"title": "B22/83 - TA: G/F, No 43 Sai Shing Road. B25/78 - OA:G/F, No 28 Sai Shing Road. B26/95 - OA: 1/F , No 28 Sai Shing Road. B27/30 - OA: 1/F , No 24B Sai Shing Road. (Nam Wing Hing) ",
+"dates": "13.4.1988 - 19.7.1991"
+},
+{
+"street": "tcs",
+"num": 1,
+"numText": "1",
+"floor": 0,
+"nameZh": "宗記錶殼工廠",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-200"
+],
+"title": "1, Tai Chang St , 6th Lane,G/F (宗記錶殼工廠Chung Kee)",
+"dates": "28.3.1988 - 29.9.1991"
+},
+{
+"street": "tcs",
+"num": 1,
+"numText": "1",
+"floor": 0,
+"nameEn": "Also Known as Flat E, 1/F, 21-23 Tai Chang Street",
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-258"
+],
+"title": "G/F, 1 Third Lane, Tai Chang Street (Also Known as Flat E, 1/F, 21-23 Tai Chang Street), Ming Tat Gem Co.",
+"dates": "16.3.1988 - 17.3.1994"
+},
+{
+"street": "tcs",
+"num": 1,
+"numText": "1A",
+"floor": 6,
+"nameZh": "余恩機器廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-263"
+],
+"title": "1A, Tai Chang Street, 7th Lane, 6/F, Yu Yun Machinery Fty. [Factory] 余恩機器廠",
+"dates": "23.8.1988 - 13.4.1992"
+},
+{
+"street": "tcs",
+"num": 2,
+"numText": "No. 2A",
+"floor": 0,
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-235"
+],
+"title": "G/F, No. 2A Third Lane, Tai Chang Street, and 1/F, No. 25 Shung Yi Lane, Wai Tak Plastic Mfg.",
+"dates": "30.8.1988 - 21.11.1990"
+},
+{
+"street": "tcs",
+"num": 3,
+"numText": "3",
+"nameZh": "昌盛水電公司",
+"nameEn": "Ground Floor",
+"trade": "plumbing",
+"refs": [
+"HKRS1255-3-119"
+],
+"title": "3, Tai Chang Street, Ground Floor (昌盛水電公司)",
+"dates": "26.11.1990 - 14.1.1991"
+},
+{
+"street": "tcs",
+"num": 3,
+"numText": "3",
+"floor": 0,
+"nameZh": "金龍塑膠模廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-173"
+],
+"title": "3 ,Tai Chang Street ,6 th Lane , G/F Golden Dragon Plastic Mould Fty.金龍塑膠模廠",
+"dates": "6.8.1988 - 7.5.1991"
+},
+{
+"street": "tcs",
+"lane": 5,
+"num": 3,
+"numText": "3",
+"floor": 0,
+"nameEn": "Wah Sang Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-275"
+],
+"title": "G/F, 3, 5th Lane, Tai Chang Street, Wah Sang Plastic Fty. [Factory]",
+"dates": "10.1.1989 - 28.2.1992"
+},
+{
+"street": "tcs",
+"num": 3,
+"numText": "3",
+"floor": 6,
+"nameZh": "傳興布廠",
+"trade": "textile",
+"refs": [
+"HKRS1255-3-198"
+],
+"title": "3, Tai Chang Street, 7 Lane, 6/F & 2 Tai Chang Street, 6 Lane, G/F) (Chuen Hing Weaving Factory 傳興布廠)",
+"dates": "29.3.1988 - 26.9.1991"
+},
+{
+"street": "tcs",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"nameEn": "Shing Kee",
+"refs": [
+"HKRS1255-3-112"
+],
+"title": "4, TC [Tai Chang] Street, G/F (Shing Kee)",
+"dates": "26.1.1989 - 3.3.1992"
+},
+{
+"street": "tcs",
+"num": 5,
+"numText": "5",
+"floor": 0,
+"nameZh": "福德土地廟",
+"trade": "temple",
+"refs": [
+"HKRS1255-3-261"
+],
+"title": "G/F, 5 Tai Chang Street, 5th Lane, KWC [Kowloon Walled City], Fuk Tak Temple 福德土地廟",
+"dates": "7.4.1992 - 21.7.1992"
+},
+{
+"street": "tcs",
+"num": 5,
+"numText": "No. 5",
+"floor": 2,
+"nameEn": "Chiu Kee Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-129"
+],
+"title": "Flat A & B, 2/F, No. 5 Tai Chang Street (Chiu Kee Restaurant)",
+"dates": "7.4.1988 - 29.11.1991"
+},
+{
+"street": "tcs",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"trade": "jewellery",
+"refs": [
+"HKRS1255-3-234"
+],
+"title": "G/F, 6, Tai Chang Street, 3rd Lane, Cheung Kong Jewellery Co.",
+"dates": "9.9.1988 - 12.3.1991"
+},
+{
+"street": "tcs",
+"num": 7,
+"numText": "7",
+"floor": 0,
+"nameZh": "聠豐食品公司",
+"nameEn": "Luen Fung Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-130"
+],
+"title": "G/F, 7 Tai Chang Street - Luen Fung Food Company (聠豐食品公司)",
+"dates": "6.3.1991 - 8.1.1992"
+},
+{
+"street": "tcs",
+"num": 8,
+"numText": "8",
+"floor": 0,
+"nameEn": "Hing Fat Construction Co.",
+"trade": "construction",
+"refs": [
+"HKRS1255-3-96"
+],
+"title": "G/F, 8, Tai Chang St. [Street] (Hing Fat Construction Co.)",
+"dates": "1.8.1989 - 5.1.1990"
+},
+{
+"street": "tcs",
+"num": 8,
+"numText": "8",
+"floor": 0,
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-259"
+],
+"title": "G/F, 8, Third Lane, Tai Chang Street, Yu Yee Hse, Yuk Hing Shoes Factory",
+"dates": "7.3.1988 - 9.9.1991"
+},
+{
+"street": "tcs",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameEn": "Tai Wing Metal Factory",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-131"
+],
+"title": "G/F, 9 Tai Chang Street (Tai Wing Metal Factory)",
+"dates": "31.3.1988 - 8.4.1991"
+},
+{
+"street": "tcs",
+"num": 12,
+"numText": "12",
+"floor": 0,
+"nameZh": "順發士多",
+"trade": "store",
+"refs": [
+"HKRS1255-3-97"
+],
+"title": "12, TC St. [Tai Chang Street], G/F (順發士多)",
+"dates": "28.11.1988 - 3.1.1992"
+},
+{
+"street": "tcs",
+"num": 14,
+"numText": "14 + 25",
+"floor": 0,
+"nameZh": "龍西園",
+"refs": [
+"HKRS1255-3-236"
+],
+"title": "14 + 25. TC [Tai Chang] Street, G/F, 龍西園 Lung Sai Yuen",
+"dates": "21.12.1988 - 8.1.1992"
+},
+{
+"street": "tcs",
+"num": 14,
+"numText": "14",
+"floor": 0,
+"nameZh": "錦豐食品公司",
+"nameEn": "Kam Fung Food Co.",
+"trade": "food",
+"refs": [
+"HKRS1255-3-332"
+],
+"title": "14 A, TC St, G/F, Blk F, Ka Fu House (Kam Fung Food Co.) 錦豐食品公司",
+"dates": "11.12.1988 - 2.3.1992"
+},
+{
+"street": "tcs",
+"num": 15,
+"numText": "No. 15",
+"floor": 0,
+"nameEn": "Tai Kwong Ho Metals & Plastic Mfy. [Manufactory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-137"
+],
+"title": "G/F, No. 15 Tai Chang Street (Tai Kwong Ho Metals & Plastic Mfy. [Manufactory])",
+"dates": "17.8.1988 - 6.10.1989"
+},
+{
+"street": "tcs",
+"num": 16,
+"numText": "16-16A",
+"floor": 1,
+"nameZh": "宗記錶殼加工廠",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-333"
+],
+"title": "16-16A, TC Street, 1/F, Foon Hei House & 19A; TC St, G/F Chung Kee (宗記錶殼加工廠)",
+"dates": "20.12.1988 - 26.9.1991"
+},
+{
+"street": "tcs",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"cockloft": true,
+"nameZh": "恒暉地產",
+"trade": "property",
+"refs": [
+"HKRS1255-3-256"
+],
+"title": "Business Loss Claims - G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co.",
+"dates": "8.3.1988 - 6.7.1989"
+},
+{
+"street": "tcs",
+"num": 18,
+"numText": "18",
+"floor": 0,
+"nameZh": "盾旗塑膠廠",
+"nameEn": "Shield Flag Plastic Factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-148"
+],
+"title": "G/F, 18 TC [Tai Chang] Street, 7th Lane, G/F, 17A, Lo Yan Back Street; G/F & 1/F, 19 Lo Yan Back Street - Shield Flag Plastic Fty. [Factory] 盾旗塑膠廠",
+"dates": "23.8.1988 - 25.9.1992"
+},
+{
+"street": "tcs",
+"num": 22,
+"numText": "22",
+"floor": 0,
+"nameZh": "百合尺廠",
+"nameEn": "Pak Hop Ruler Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-262"
+],
+"title": "G/F, 22 Tai Chang St., Pak Hop Ruler Fty. [Factory] 百合尺廠",
+"dates": "15.11.1989 - 6.4.1992"
+},
+{
+"street": "tcs",
+"num": 25,
+"numText": "No. 25A",
+"floor": 0,
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-238"
+],
+"title": "G/F, No. 25A, Tai Chang Street, Rear Block, Sam Hing Plastic Factory",
+"dates": "2.5.1988 - 28.11.1991"
+},
+{
+"street": "tcs",
+"num": 28,
+"numText": "28",
+"floor": 6,
+"nameZh": "陳記豬紅",
+"trade": "meat",
+"refs": [
+"HKRS1255-3-197"
+],
+"title": "28, Tai Chang Street, 7th Lane, 6/F (陳記豬紅Chan Kee)",
+"dates": "22.8.1988 - 29.3.1989"
+},
+{
+"street": "tcs",
+"num": 31,
+"numText": "31",
+"floor": 0,
+"nameZh": "榮記鐵器工程",
+"nameEn": "KWC",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-199"
+],
+"title": "G/F, 31 T.C. [Tai Chang] Street KWC [Kowloon Walled City] - Wing Kee Iron Engineering榮記鐵器工程",
+"dates": "5.4.1988 - 28.11.1991"
+},
+{
+"street": "tcs",
+"num": 34,
+"numText": "34 & 36",
+"floor": 0,
+"nameZh": "潮發塑膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-151"
+],
+"title": "G/F, 32, 34 & 36, Tai Chang Road, 7th Lane (Chiu Fat Plastic Factory 潮發塑膠廠)",
+"dates": "8.4.1988 - 29.4.1992"
+},
+{
+"street": "tcs",
+"num": 38,
+"numText": "38",
+"floor": 0,
+"nameZh": "源江金屬製品廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-152"
+],
+"title": "38, Tai Chang Street, 7th Lane, G/F (Yuen Kong Metal Fty. [Factory] 源江金屬製品廠)",
+"dates": "24.3.1988 - 28.11.1991"
+},
+{
+"street": "tcs",
+"lane": 7,
+"num": 42,
+"numText": "42",
+"floor": 0,
+"nameEn": "Fai Tsai Café",
+"trade": "cafe",
+"refs": [
+"HKRS1255-3-153"
+],
+"title": "G/F, 42, 7th Lane, Tai Chang Street (Fai Tsai Café)",
+"dates": "22.4.1988 - 16.11.1989"
+},
+{
+"street": "tcs",
+"lane": 7,
+"num": 47,
+"numText": "No 47",
+"floor": 0,
+"nameEn": "Ho Fat Trading Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-196"
+],
+"title": "G/F, No 47, 7th Lane, Tai Chang Street (Ho Fat Trading Company)",
+"dates": "2.3.1988 - 27.10.1988"
+},
+{
+"street": "tcs",
+"num": 48,
+"numText": "48",
+"floor": 0,
+"nameEn": "Wong Hoi Ming Bonesetter",
+"trade": "bonesetter",
+"refs": [
+"HKRS1255-3-195"
+],
+"title": "G/F, 48 Tai Chang Street 7th Lane (Wong Hoi Ming Bonesetter)",
+"dates": "4.7.1991 - 17.10.1991"
+},
+{
+"street": "tht",
+"num": 2,
+"numText": "2-3",
+"floor": 0,
+"nameZh": "德生塑膠植毛廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-588"
+],
+"title": "G/F, 2-3, THT Back St.[Tin Hau Temple Back Street], - Tak Sang Plastic Fty.[Factory] (德生塑膠植毛廠)",
+"dates": "1987 - 1995"
+},
+{
+"street": "ttt",
+"num": 1,
+"numText": "1B",
+"floor": 0,
+"nameZh": "曾記飯店",
+"nameEn": "Tsang Kee Restaurant",
+"trade": "eatinghouse",
+"refs": [
+"HKRS1255-3-512"
+],
+"title": "G/F, 1B, Tung Tau Tsuen Rd. [Road], KWC [Kowloon Walled City] - Tsang Kee Restaurant (曾記飯店)",
+"dates": "30.6.1992 - 1.7.1992"
+},
+{
+"street": "ttt",
+"num": 1,
+"numText": "1A",
+"floor": 0,
+"nameZh": "興發西藥行",
+"nameEn": "Hing Fat",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-551"
+],
+"title": "G/F & M/F, 1A Tung Tau Tsuen Rd. Front Block, 2/F, 7 Tung Tau Tsuen Road. Hing Fat (興發西藥行)",
+"dates": "18.4.1990 - 8.5.1991"
+},
+{
+"street": "ttt",
+"num": 1,
+"numText": "1A",
+"floor": 5,
+"nameZh": "裕東行",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-509A"
+],
+"title": "Block B, 5/F Tak Cheong Bldg [Building], 1A TTT Rd. [Tung Tau Tsuen Road] - Itpin Manufacturing Company (裕東行)",
+"dates": "12.8.1990 - 30.9.1994"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2C",
+"floor": 0,
+"nameZh": "健生中西藥行",
+"nameEn": "Kin Sang Medicine",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-341"
+],
+"title": "G/F, 2C Tung Tau Tsuen Road Kin Sang Medicine (健生中西藥行)",
+"dates": "22.1.1991 - 29.5.1992"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2B",
+"floor": 0,
+"nameZh": "陳漢豐鮮菓士多",
+"nameEn": "KWC",
+"trade": "store",
+"refs": [
+"HKRS1255-3-342A",
+"HKRS1255-3-342B"
+],
+"title": "G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)",
+"dates": "12.4.1990 - 1.7.1992"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameZh": "李氏地產及報攤",
+"trade": "printing",
+"refs": [
+"HKRS1255-3-346"
+],
+"title": "G/F., B2, 2 Tung Tau Tsuen Road (Lee's Real Est. Co. & Newspaper Stall 李氏地產及報攤)",
+"dates": "13.6.1991 - 17.6.1992"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameEn": "Lo-Shui Goose Shop",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-513"
+],
+"title": "G/F, 2 TTT Rd. [Tung Tau Tsuen Road] (Lo-Shui Goose Shop)",
+"dates": "3.11.1989 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2",
+"floor": 0,
+"nameEn": "Tat Kee Fruit Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-519"
+],
+"title": "G/F, 2 TTT Rd. [Tung Tau Tsuen Road] (Tat Kee Fruit Store)",
+"dates": "13.10.1989 - 20.3.1992"
+},
+{
+"street": "ttt",
+"num": 2,
+"numText": "2-3",
+"floor": 2,
+"nameZh": "美東華跌打",
+"nameEn": "Mei Tung Wah Herbalist",
+"trade": "bonesetter",
+"refs": [
+"HKRS1255-3-518"
+],
+"title": "2/F, 2-3 Tung Tau Tsuen Road - Mei Tung Wah Herbalist (美東華跌打)",
+"dates": "30.8.1990 - 1.6.1992"
+},
+{
+"street": "ttt",
+"num": 3,
+"numText": "3",
+"floor": 0,
+"nameZh": "蕭秉隆牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-514"
+],
+"title": "G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)",
+"dates": "14.1.1992 - 11.10.1993"
+},
+{
+"street": "ttt",
+"num": 3,
+"numText": "3A",
+"floor": 4,
+"nameZh": "耀華貿易公司",
+"nameEn": "Yiu Wah Trading Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-166"
+],
+"title": "3A, TTT Rd [Tung Tau Tsuen Road], 4/F (Yiu Wah Trading Company )耀華貿易公司",
+"dates": "26.4.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 3,
+"numText": "3",
+"floor": 6,
+"nameEn": "Wing Lee Noodle Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-170"
+],
+"title": "R/P [Rear Portion], 6/F, 3/C, TTT Rd [Tung Tau Tsuen Road], Kin (Wing Lee Noodle Fty.)",
+"dates": "20.2.1989 - 29.11.1991"
+},
+{
+"street": "ttt",
+"num": 4,
+"numText": "4",
+"floor": 0,
+"nameZh": "啟安藥行",
+"nameEn": "Kai On Medicine Store",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-516"
+],
+"title": "G/F, 4 Tung Tau Tsuen Road - Kai On Medicine Store (啟安藥行)",
+"dates": "25.9.1990 - 8.6.1992"
+},
+{
+"street": "ttt",
+"num": 4,
+"numText": "4",
+"floor": 1,
+"nameZh": "長豐塑膠廠",
+"nameEn": "Cheung Fung Plastic factory",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-517"
+],
+"title": "1/F, 4 Tung Tau Tsuen Road (Cheung Fung Plastic factory) [長豐塑膠廠]",
+"dates": "13.8.1990 - 29.5.1991"
+},
+{
+"street": "ttt",
+"num": 6,
+"numText": "6",
+"floor": 0,
+"nameZh": "蕭秉陞牙科",
+"nameEn": "KWC",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-547"
+],
+"title": "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)",
+"dates": "27.12.1991 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 8,
+"numText": "8",
+"floor": 0,
+"nameZh": "葉華民牙科",
+"nameEn": "King's Dental Lab + Yip Wa Man Dentist",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-554"
+],
+"title": "G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科",
+"dates": "12.12.1989 - 29.12.1992"
+},
+{
+"street": "ttt",
+"num": 8,
+"numText": "8",
+"floor": 1,
+"nameZh": "志青診所",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-550"
+],
+"title": "1/F, Front Block, Shi Kee Building, 8 TTT RD. [Tung Tau Tsuen Road] Chee Ching Clinic (志青診所)",
+"dates": "15.10.1991 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 8,
+"numText": "8",
+"floor": 4,
+"nameZh": "麥釗牙科",
+"nameEn": "Mak Chiu Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-553"
+],
+"title": "4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)",
+"dates": "13.8.1991 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "大眾福利診所",
+"nameEn": "KWC",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-556"
+],
+"title": "G/F, 9 Tung Tau Tsuen Road, KWC [Kowloon Walled City]. [Kowloon Walled City] Public Walfare Clinic (大眾福利診所)",
+"dates": "23.11.1989 - 27.3.1992"
+},
+{
+"street": "ttt",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "德生行",
+"nameEn": "Tak Sang LP Gas Hong",
+"trade": "gas",
+"refs": [
+"HKRS1255-3-562A"
+],
+"title": "Flat B, G/F, 9, TTT RD. [Tung Tau Tsuen Road], 2. G/F, Side Lane. (Tak Sang LP Gas Hong) 德生行",
+"dates": "12.12.1989 - 30.4.1997"
+},
+{
+"street": "ttt",
+"num": 9,
+"numText": "9",
+"floor": 0,
+"nameZh": "仁昌塑膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-589"
+],
+"title": "G/F, 9, TTT St. [Tung Tau Tsuen Street] (Yan Cheong Plastic Fty. [Factory] 仁昌塑膠廠)",
+"dates": "9.11.1989 - 6.4.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"nameEn": "Man Wah Food Company",
+"trade": "food",
+"refs": [
+"HKRS1255-3-540"
+],
+"title": "R.M. [Room] 4.12, G/F, Hop Yick House BLK. [Block], 2; Rm. [Room] 7-8, G/F, Hop Yick House Rear Block, 10A, TTT Rd. [Tung Tau Tsuen Road], (Man Wah Food Company)",
+"dates": "21.8.1989 - 31.8.1989"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"mezz": true,
+"nameZh": "成興製麵廠",
+"nameEn": "Shing Hing Noodles Factory",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-541"
+],
+"title": "Rm. [Room] 9 & 10, M/F, 10A Tung Tau Tsuen Road. Shing Hing Noodles Fty. (成興製麵廠)",
+"dates": "10.10.1990 - 27.4.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"mezz": true,
+"nameZh": "永興手袋廠",
+"nameEn": "Wing Hing Handbag Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-542"
+],
+"title": "Rm. [Room] 12, M/F, Hop Yick House, Stage 2, 10A Tung Tau Tsuen Road Wing Hing Handbag Fty. [Factory] (永興手袋廠)",
+"dates": "6.9.1990 - 1.10.1991"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"mezz": true,
+"nameZh": "頌榮金屬製品廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-543"
+],
+"title": "Rm. [Room] 4, M/F, Hop Yick House, Stage 2, 10A Tung Tau Tsuen Road. (頌榮金屬製品廠) Chung Wing Metal Ware Factory",
+"dates": "4.9.1990 - 2.10.1991"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"nameZh": "京都食品公司",
+"nameEn": "D59/102 + 103",
+"trade": "food",
+"refs": [
+"HKRS1255-3-557A"
+],
+"title": "G/F, 10A, TTT RD. [Tung Tau Tsuen Road], (D59/102 + 103) - Flat 4 of 5. G/F, Kwai Shing H-2 42, L.Y. St., [Lo Yan Street] (King Dao Food) 京都食品公司",
+"dates": "5.2.1990 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"nameEn": "Shun Cheong",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-563"
+],
+"title": "G/F, 10A, TTT RD. [Tung Tau Tsuen Road], Keung Kee (Shun Cheong) Roast Meat",
+"dates": "13.3.1990 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"nameZh": "永達製衣廠",
+"nameEn": "Wing Tak Garment Factory [Factory]",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-590"
+],
+"title": "Flat 6, G/F, Rear Blk [Block], Hop Yick Hse [House], 10A TTT Rd. [Tung Tau Tsuen Road] - Also Known as Rm. [Room] 5, G/F, Hop Yick H-1 (Wing Tak Garment Fty. [Factory]) 永達製衣廠",
+"dates": "21.11.1989 - 10.5.1990"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"nameZh": "錦德手袋廠",
+"nameEn": "Kam Tak Handbags Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-591"
+],
+"title": "Rm [Room] 5, 10A Tung Tau Tsuen Road - Kam Tak Handbags Fty. [Factory] (錦德手袋廠)",
+"dates": "21.11.1990 - 15.11.1991"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"nameZh": "三合興公司",
+"nameEn": "San Hop Hing Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-592"
+],
+"title": "Rm. [Room] 11, G/F, Stage II, Hop Yick Building, 10A, Tung Tau Tsuen Road - San Hop Hing Company (三合興公司)",
+"dates": "29.10.1990 - 25.1.1990"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 0,
+"mezz": true,
+"nameZh": "木記",
+"nameEn": "Muk Kee",
+"refs": [
+"HKRS1255-3-593"
+],
+"title": "Rm. [Room] 11, M/F, Hop Yick H-2, 10A, TTT Rd. [Tung Tau Tsuen Road] (Muk Kee) 木記",
+"dates": "14.11.1989 - 27.9.1991"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 1,
+"nameZh": "堂和花生瓜子批發",
+"nameEn": "Tong Wo Peanut Retailing",
+"trade": "food",
+"refs": [
+"HKRS1255-3-558"
+],
+"title": "1/F, Blk. F, Hop Yick H-1, 10A. TTT RD. [Tung Tau Tsuen Road] (Tong Wo Peanut Retailing) 堂和花生瓜子批發",
+"dates": "15.11.1989 - 17.3.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 1,
+"nameZh": "楊江製品廠",
+"nameEn": "Yueng Kwong Manufactory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-559"
+],
+"title": "Flat H, 1/F, Hop Yick Hse. -1, 10A, TTT RD. [Tung Tau Tsuen Road] (Yueng Kwong Manufactory) 楊江製品廠",
+"dates": "25.10.1989 - 16.12.1991"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 2,
+"nameZh": "光明實業公司",
+"nameEn": "Kwong Ming Industries Co.",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-560"
+],
+"title": "Flat F, 2/F, Hop Yick House, 10A, Tung Tau Tsuen Road. Kwong Ming Industries Co. (光明實業公司)",
+"dates": "8.10.1990 - 18.10.1990"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 6,
+"refs": [
+"HKRS1255-3-535"
+],
+"title": "Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming",
+"dates": "31.12.1990 - 1.7.1992"
+},
+{
+"street": "ttt",
+"num": 10,
+"numText": "10A",
+"floor": 9,
+"nameZh": "鈞威針織廠",
+"nameEn": "Kwan Wai Knitting Factory [Factory]",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-594"
+],
+"title": "Rm. [Room] 6, 9/F, Hop Yick H-2, 10A, TTT Rd. [Tung Tau Tsuen Road] (Kwan Wai Knitting Fty. [Factory]) 鈞威針織廠",
+"dates": "2.10.1989 - 16.5.1991"
+},
+{
+"street": "ttt",
+"num": 11,
+"numText": "11",
+"floor": 1,
+"nameZh": "九龙公司",
+"nameEn": "Kowloon Co.",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-564"
+],
+"title": "1/F, Rear Block, Hop Shing Hse., 11. TTT RD. [Tung Tau Tsuen Road], (Kowloon Co.) 九龙公司",
+"dates": "27.2.1990 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 12,
+"numText": "12",
+"floor": 0,
+"nameEn": "Wing Shing Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-568"
+],
+"title": "12, G/F, Tung Tau Tsuen Road. (Wing Shing Store)",
+"dates": "23.11.1989 - 11.4.1991"
+},
+{
+"street": "ttt",
+"num": 12,
+"numText": "12",
+"floor": 1,
+"nameZh": "邱氏診所",
+"nameEn": "Yau's Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-565"
+],
+"title": "Front portion, 1/F, 12 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Yau's Clinic (邱氏診所)",
+"dates": "7.1.1992 - 20.3.1992"
+},
+{
+"street": "ttt",
+"num": 12,
+"numText": "12",
+"floor": 3,
+"nameZh": "燦時公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-567"
+],
+"title": "Front Block, 3/F, Hop Shing House, 12, TTT RD. [Tung Tau Tsuen Road] Chang Siz Co. 燦時公司",
+"dates": "13.11.1989 - 3.2.1994"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 0,
+"nameZh": "和德隆",
+"nameEn": "Wo Tak Lung",
+"refs": [
+"HKRS1255-3-569"
+],
+"title": "G/F, 16 Tung Tau Tsuen Road. Wo Tak Lung (和德隆)",
+"dates": "1.3.1990 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 0,
+"mezz": true,
+"nameZh": "軟膠製品廠",
+"nameEn": "Keung Yip PVC Plastic Mfy",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-571"
+],
+"title": "Flat 6-10 of M/F Wing Fat H. 16. TTT RD. [Tung Tau Tsuen Road] (Keung Yip PVC Plastic Mfy.) 強業PVC軟膠製品廠",
+"dates": "24.1.1989 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 1,
+"nameZh": "漢興地產公司",
+"nameEn": "Hon Hing Property Company",
+"trade": "property",
+"refs": [
+"HKRS1255-3-572"
+],
+"title": "Rm. 9, 1/F, 16 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Hon Hing Property Company (漢興地產公司)",
+"dates": "13.3.1992 - 1.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 1,
+"nameZh": "歡樂食品公司",
+"nameEn": "Foon Lok Food Stuffs",
+"trade": "food",
+"refs": [
+"HKRS1255-3-573"
+],
+"title": "Flat 4, 1/F, Wing Fat Hse. 16. TTT RD. [Tung Tau Tsuen Road] ,+ Flat 1, 3/F, Kwai Shing H-2, 42, L.Y. St. [Lo Yan Street], (Foon Lok Food Stuffs) 歡樂食品公司",
+"dates": "27.12.1989 - 16.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 1,
+"nameEn": "Cheong Chuen Bone-setter",
+"trade": "bonesetter",
+"refs": [
+"HKRS1255-3-574"
+],
+"title": "Flat 3, 1/F, Wing Fat Lau ,16 TTT RD. [Tung Tau Tsuen Road], (Cheong Chuen Bone-setter)",
+"dates": "12.12.1989 - 16.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 1,
+"nameZh": "廖坤中國新医針灸診所",
+"nameEn": "Liu Kwan China New Medical Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-575"
+],
+"title": "Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所",
+"dates": "30.11.1989 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 2,
+"nameZh": "健華診所",
+"nameEn": "King Wah Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-576"
+],
+"title": "Rm. [Room] 7, 2/F, Wing Fat House, 16 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]., King Wah Clinic (健華診所)",
+"dates": "14.8.1991 - 15.8.1991"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 2,
+"nameEn": "Kowloon Walled City Kai Fong Welfare Continuing Promotion Association",
+"trade": "kaifong",
+"refs": [
+"HKRS1255-3-577A"
+],
+"title": "2/F., Wing Fat House, 16 Tung Tau Tsuen Road (Kowloon Walled City Kai Fong Welfare Continuing Promotion Association)",
+"dates": "21.3.1992 - 16.7.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 2,
+"nameEn": "Kowloon Walled City Kai Fong Welfare Associations",
+"trade": "kaifong",
+"refs": [
+"HKRS1255-3-578A"
+],
+"title": "16 Tung Tau Tsuen Road, Wing Fat House, 2/F (Kowloon Walled City Kai Fong Welfare Associations) - [Ledger]",
+"dates": "1.1.1987 - 18.5.1992"
+},
+{
+"street": "ttt",
+"num": 16,
+"numText": "16",
+"floor": 3,
+"nameEn": "KWC [Kowloon Walled City] Kai Fong Welfare Promotion Committee",
+"trade": "kaifong",
+"refs": [
+"HKRS1255-3-577B"
+],
+"title": "3/F., 16 Tung Tau Tsuen Road, Wing Fat Hse. (KWC [Kowloon Walled City] Kai Fong Welfare Promotion Committee)",
+"dates": "10.3.1990 - 10.3.1990"
+},
+{
+"street": "ttt",
+"num": 17,
+"numText": "17",
+"floor": 0,
+"nameZh": "泰昌士多",
+"nameEn": "Tai Cheong Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-570"
+],
+"title": "G/F, 17 TTT RD. [Tung Tau Tsuen Road], (Tai Cheong Store) 泰昌士多",
+"dates": "27.2.1990 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 18,
+"numText": "18",
+"floor": 2,
+"nameEn": "Mei Tung Medical Laboratory Centre",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-308"
+],
+"title": "2/F, 18, TTT Rd [Tung Tau Tsuen Road] (Mei Tung Medical Laboratory Centre)",
+"dates": "25.1.1989 - 24.2.1990"
+},
+{
+"street": "ttt",
+"num": 19,
+"numText": "19",
+"floor": 0,
+"nameZh": "星洲鞋店",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-309"
+],
+"title": "19 B, TTT Rd [Tung Tau Tsuen Road], G/F & 42, LY St., 2/F, Kwai Shing House (星洲鞋店)",
+"dates": "23.1.1989 - 25.2.1992"
+},
+{
+"street": "ttt",
+"num": 19,
+"numText": "19",
+"nameZh": "通力製造廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-311"
+],
+"title": "19, TTT Rd [Tung Tau Tsuen Road], 3rd Floor, Hing Lee House Tung lik Manufactory Co. (通力製造廠)",
+"dates": "8.12.1988 - 20.11.1991"
+},
+{
+"street": "ttt",
+"num": 19,
+"numText": "19",
+"floor": 0,
+"nameEn": "Chung Fat Café",
+"trade": "cafe",
+"refs": [
+"HKRS1255-3-312"
+],
+"title": "G/F, 19 A, TTT Rd [Tung Tau Tsuen Road] (Chung Fat Café)",
+"dates": "20.2.1989 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 19,
+"numText": "19",
+"floor": 1,
+"nameEn": "Dr. CHAN WING LAN",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-310"
+],
+"title": "1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN",
+"dates": "22.7.1989 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20A",
+"floor": 0,
+"nameZh": "和盛號",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-277"
+],
+"title": "G/F, 20A, TTT Rd [Tung Tau Tsuen Road]. + G/F, 19A, TTT Rd [Tung Tau Tsuen Road]., Rear Blk. [Block], 和盛號 Wo Shing",
+"dates": "15.10.1989 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20-22",
+"floor": 0,
+"nameZh": "馬創忠牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-278"
+],
+"title": "G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科",
+"dates": "10.3.1992 - 24.6.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20",
+"floor": 0,
+"nameZh": "華興塑興廠",
+"nameEn": "P.H",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-316A",
+"HKRS1255-3-316B"
+],
+"title": "G/F, including C/L, 12, L.Y. [Lo Yan] Back ST. [Street], + C36/48 _ G/F, Opposite to 12 A, L.Y. [Lo Yan] Back ST. [Street], (P.H.) C36/48 - G/F, Opposite to 12, L.Y. [Lo Yan] Back St. [Street], (Toilets) C35/4 - G/F, Sze Hing Hse [House], Phase I, 20 TTT Rd [Tung Tau Tsuen Road]., C36/46 - G/F, Opposite to 11A, L.Y. [Lo Yan] Back ST. [Street], (Wah Hing Plastic Fty) 華興塑興廠",
+"dates": "16.11.1989 - 4.2.1991"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20-22",
+"floor": 1,
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-280A",
+"HKRS1255-3-280B"
+],
+"title": "Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic",
+"dates": "21.11.1988 - 22.7.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20-22",
+"floor": 1,
+"nameZh": "同安診所",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-282"
+],
+"title": "Unit 5, 1/F, 20-22 TTT Rd [Tung Tau Tsuen Road]., Tung On Clinic 同安診所",
+"dates": "7.4.1989 - 14.1.1993"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20",
+"floor": 1,
+"nameZh": "美香食品公司",
+"trade": "cakes",
+"refs": [
+"HKRS1255-3-313A",
+"HKRS1255-3-313B"
+],
+"title": "At the rear of 20, TTT Rd [Tung Tau Tsuen Road], Sze Hing House, Phase I, 1/F Rm [Room] D & Storage & A Phase II, 1/F, Rm 1, 2 & D (美香食品公司) Mei Hong Confectionery Co.",
+"dates": "2.11.1989 - 2.3.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20",
+"floor": 1,
+"nameZh": "偉聯飾錶燒焊",
+"nameEn": "Wai Luen Jewel Watches Welding Co.",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-314"
+],
+"title": "Flat 4, 1/F, Sze Hing H-2 20, TTT Rd [Tung Tau Tsuen Road]., 偉聯飾錶燒焊 (Wai Luen Jewel Watches Welding Co.)",
+"dates": "12.4.1990 - 25.3.1991"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20-22",
+"floor": 2,
+"nameZh": "德法牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-295"
+],
+"title": "Flat 8, 2/F, Hop Hing Bldg. [Building], 20-22 TTT Rd [Tung Tau Tsuen Road]., Tak Fat Dental Clinic 德法牙科",
+"dates": "7.12.1988 - 8.11.1990"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20-22",
+"floor": 2,
+"nameZh": "國強牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-296"
+],
+"title": "Flat 6, 2/F, Hop Hing Building, 20-22 TTT Rd [Tung Tau Tsuen Road]., Kwok Keung Dentistry 國強牙科",
+"dates": "21.4.1989 - 19.3.1991"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20",
+"floor": 2,
+"nameEn": "International Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-297"
+],
+"title": "2/F, Unit 2, 20, Tung Tau Tsuen Road, International Clinic",
+"dates": "2.3.1989 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 20,
+"numText": "20",
+"floor": 4,
+"nameZh": "國醫羅明德",
+"trade": "medicine",
+"refs": [
+"HKRS1255-3-315"
+],
+"title": "20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak",
+"dates": "30.11.1988 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 21,
+"numText": "21",
+"floor": 0,
+"nameZh": "聯德貿易公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-299A"
+],
+"title": "21, TTT Rd [Tung Tau Tsuen Road]., G/F, Rear Portion, Chung Hing House, 聯德貿易公司 Luen Tak Trading Co.",
+"dates": "19.12.1988 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 21,
+"numText": "21",
+"floor": 0,
+"nameZh": "聯德塑膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-299B"
+],
+"title": "21, TTT Rd [Tung Tau Tsuen Road]., G/F, Rear Portion, Chung Hing House, 聯德塑膠廠 Luen Tak Plastic Factory",
+"dates": "22.12.1988 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 21,
+"numText": "21",
+"floor": 1,
+"nameZh": "永光針織廠",
+"trade": "textile",
+"refs": [
+"HKRS1255-3-300"
+],
+"title": "21, TTT Rd [Tung Tau Tsuen Road]., 1/F, Flat B, Rear Portion, Chung Hing House, 永光針織廠 Wing Kwong Weaving Factory",
+"dates": "2.12.1988 - 30.12.1991"
+},
+{
+"street": "ttt",
+"num": 23,
+"numText": "23",
+"floor": 0,
+"nameZh": "太和商店",
+"refs": [
+"HKRS1255-3-276"
+],
+"title": "G/F, Hop Hing Building, 23 Tung Tau Tsuen Road, 太和商店 Tai Wo Shop",
+"dates": "18.1.1989 - 29.7.1991"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"nameEn": "General Clinics",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-267"
+],
+"title": "G/F, 24. TTT Rd [Tung Tau Tsuen Road]., Walled City General Clinics",
+"dates": "24.5.1989 - 13.11.1989"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"mezz": true,
+"nameZh": "偉大實業有限公司",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-268"
+],
+"title": "Basement + M/F of Basement Luen Hing Bldg [Building], Stage 1, 24 Tung Tau Tsuen Road, Wai Tai Industrial Co. 偉大實業有限公司",
+"dates": "4.8.1989 - 13.12.1991"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-301"
+],
+"title": "G/F, 24, TTT Rd [Tung Tau Tsuen Road]., Luen Hing Bldg, Luen Hing Noodle",
+"dates": "19.1.1990 - 5.7.1990"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24A",
+"floor": 0,
+"nameZh": "西醫邱家瑟",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-302"
+],
+"title": "G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟",
+"dates": "11.4.1989 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"nameEn": "Kin Shing Trading Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-304"
+],
+"title": "Flat D+F, 24, TTT Rd [Tung Tau Tsuen Road]., KWC [Kowloon Walled City], Kin Shing Trading Company",
+"dates": "4.12.1989 - 12.2.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 0,
+"nameZh": "廣泰號",
+"trade": "store",
+"refs": [
+"HKRS1255-3-334A",
+"HKRS1255-3-334B"
+],
+"title": "G/F, Luen Hing Lau, 24 TTT Rd [Tung Tau Tsuen Road]. Kwong Tai Hoo Store 廣泰號",
+"dates": "31.12.1990 - 2.3.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24A",
+"floor": 1,
+"nameZh": "恒生鞋業",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-264"
+],
+"title": "1/F, Rear Portion, 24A, TTT Rd [Tung Tau Tsuen Road]., + 1/F, Front Portion, 25, TTT Rd [Tung Tau Tsuen Road]., Hang Sang Shoes 恒生鞋業",
+"dates": "8.12.1989 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 1,
+"nameZh": "緯亞製品公司",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-271"
+],
+"title": "Flat A&B, 1/F, Stage 7 Luen Hing Building, 24 Tung Tau Tsuen Road, 緯亞製品公司 Wai Ya Manufactory Co.",
+"dates": "28.12.1988 - 17.10.1990"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 1,
+"trade": "factory",
+"refs": [
+"HKRS1255-3-303A",
+"HKRS1255-3-303B"
+],
+"title": "1/F, 24, Tung Tau Tsuen Road, Tai Shing Industrial Co.,",
+"dates": "11.9.1989 - 20.2.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24A",
+"floor": 2,
+"trade": "property",
+"refs": [
+"HKRS1255-3-265"
+],
+"title": "Flat D, 2/F, 24A, TTT Rd [Tung Tau Tsuen Road]., Wing Wah Property Company",
+"dates": "2.8.1988 - 7.4.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 2,
+"nameEn": "Man Sang Plastic Company",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-272"
+],
+"title": "Block B1, 2/F, Luen Hing Bldg. [Building], Stage 7, 24 Tung Tau Tsuen Road, Man Sang Plastic Company",
+"dates": "13.5.1991 - 2.3.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 3,
+"trade": "garment",
+"refs": [
+"HKRS1255-3-305"
+],
+"title": "24, TTT Rd [Tung Tau Tsuen Road]., 3/F, Flat D, F+G, Luen Hing B - 1, Mei Lai Garment Factory",
+"dates": "12.4.1989 - 30.9.1991"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 3,
+"nameZh": "紀氏製造廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-306"
+],
+"title": "Flat A+B, 3/F, Luen Hing B - 1, 24, TTT Rd [Tung Tau Tsuen Road]., Kee Sze Manufactory 紀氏製造廠",
+"dates": "4.1.1990 - 3.3.1992"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 4,
+"nameZh": "魏香泉牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-273"
+],
+"title": "Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科",
+"dates": "12.12.1988 - 3.6.1991"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 4,
+"nameZh": "鄭炎創",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-307"
+],
+"title": "24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創",
+"dates": "1.11.1988 - 12.7.1990"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24A",
+"floor": 6,
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-266"
+],
+"title": "Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic",
+"dates": "30.10.1989 - 28.5.1991"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 7,
+"nameZh": "珍華貿易公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-274"
+],
+"title": "Rear of 24, TTT Rd [Tung Tau Tsuen Road]., 7/F, Flat C, Luen Hing B-7, Chun Wah Trading Co. 珍華貿易公司",
+"dates": "9.11.1988 - 20.12.1989"
+},
+{
+"street": "ttt",
+"num": 24,
+"numText": "24",
+"floor": 11,
+"nameEn": "Leather Coat",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-338"
+],
+"title": "Flat 1, 11/F, 24, TTT Rd [Tung Tau Tsuen Road]., (Leather Coat)",
+"dates": "31.7.1989 - 8.9.1991"
+},
+{
+"street": "ttt",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"nameZh": "海棠花藝製品廠",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-269"
+],
+"title": "Flat A&B, G/F, Rear of Wing Kwai Building, 25 Tung Tau Tsuen Road, 海棠花藝製品廠 Hoi Yip Artificial Flowers Prod. Fty.",
+"dates": "20.12.1988 - 2.8.1991"
+},
+{
+"street": "ttt",
+"num": 25,
+"numText": "25",
+"floor": 0,
+"nameZh": "聯興",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-339"
+],
+"title": "25, TTT Rd [Tung Tau Tsuen Road], G/F, Flat E & F, Rear Portion, Wing Kwai Bldg [Building] (聯興) Luen Hing Noodle",
+"dates": "13.12.1988 - 4.7.1991"
+},
+{
+"street": "ttt",
+"num": 25,
+"numText": "25",
+"floor": 2,
+"nameZh": "永昌地產公司",
+"trade": "property",
+"refs": [
+"HKRS1255-3-260"
+],
+"title": "Measurement of 2/F, 25 Tung Tau Tsuen Road, Wing Cheong Property Co., 永昌地產公司",
+"dates": "27.1.1989 - 3.9.1992"
+},
+{
+"street": "ttt",
+"num": 26,
+"numText": "26",
+"nameEn": "Chi Tat Plastic Moulding Factory [Factory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-150"
+],
+"title": "26, TTT Rd. [Tung Tau Tsuen Road], Basement (Chi Tat Plastic Moulding Fty. [Factory])",
+"dates": "4.8.1988 - 15.11.1989"
+},
+{
+"street": "ttt",
+"num": 26,
+"numText": "26",
+"floor": 2,
+"nameZh": "李靜瑜醫務所(中醫",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-160"
+],
+"title": "26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))",
+"dates": "7.12.1988 - 8.1.1992"
+},
+{
+"street": "ttt",
+"num": 26,
+"numText": "26",
+"floor": 3,
+"nameZh": "盤氏鞋業",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-161"
+],
+"title": "26, TTT [Tung Tau Tsuen] Road, 3/F, Rear Portion (Pound's Shoes Fty [Factory] 盤氏鞋業)",
+"dates": "8.4.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 28,
+"numText": "28",
+"floor": 6,
+"nameZh": "榕江號",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-162"
+],
+"title": "R/P, 6/F , 28, TTT Rd [Tung Tau Tsuen Road] (榕江號)",
+"dates": "2.3.1989 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 30,
+"numText": "30-31",
+"floor": 0,
+"nameZh": "王偉權牙科",
+"nameEn": "Wong Wai Kuen Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-154"
+],
+"title": "G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)",
+"dates": "8.1.1992 - 21.1.1992"
+},
+{
+"street": "ttt",
+"num": 30,
+"numText": "30",
+"floor": 1,
+"nameZh": "黃照垣中醫",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-164"
+],
+"title": "30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)",
+"dates": "19.7.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31A",
+"floor": 0,
+"nameEn": "Hang Fa Chuen Store",
+"trade": "store",
+"refs": [
+"HKRS1255-3-155"
+],
+"title": "G/F, 31A, Tung Tau Tsuen Road (Hang Fa Chuen Store)",
+"dates": "18.2.1989 - 23.1.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31E",
+"floor": 0,
+"nameZh": "甘河冰室",
+"trade": "cafe",
+"refs": [
+"HKRS1255-3-156"
+],
+"title": "31E, TTT Rd. [Tung Tau Tsuen Road], G/F (甘河冰室)",
+"dates": "10.6.1988 - 25.9.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"floor": 0,
+"mezz": true,
+"nameZh": "明發貿易公司",
+"nameEn": "Ming Fat Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-165"
+],
+"title": "31D , TTT Rd [Tung Tau Tsuen Road] , M/F Flat 6 , Tuing Hing House ( Ming Fat Trading Company 明發貿易公司) + 31A , TTT Rd [Tung Tau Tsuen Road] ,2/F ( Ming Fat Factory)",
+"dates": "14.6.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31C",
+"nameZh": "協興塑膠廠",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-174"
+],
+"title": "31C , TTT Rd [Tung Tau Tsuen Road] , Basement Rear Pation Hip Hing Plastic Fty.協興塑膠廠",
+"dates": "7.4.1988 - 21.4.1993"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"nameEn": "Wah Cheong Handbag Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-175"
+],
+"title": "31D , TTT Rd [Tung Tau Tsuen Road] , N/F ,Flat 4 , Tung Hing House (Wah Cheong Handbag Fty.)",
+"dates": "14.4.1988 - 11.7.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 0,
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-239"
+],
+"title": "31B, TTT [Tung Tau Tsuen] Road, G/F, Flat B, Shing Hing Bldg [Building], Phase A, Shing Chou Plastic Fty.",
+"dates": "11.3.1988 - 17.10.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31C",
+"floor": 1,
+"nameZh": "同德鞋廠",
+"nameEn": "Also Known as 1/F, 3, 6th Lane, Tai Chang Street",
+"trade": "shoes",
+"refs": [
+"HKRS1255-3-171"
+],
+"title": "1/F Rear Portion 31C , Tung Tau Tsuen Road (Also Known as 1/F, 3, 6th Lane, Tai Chang Street) Tung Tak Shoes同德鞋廠",
+"dates": "18.3.1988 - 12.2.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"floor": 1,
+"nameEn": "Tai Chung Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-176"
+],
+"title": "1/F , Flat 2&4 , Tung Hing House , 31D, TTT Rd [Tung Tau Tsuen Road] (Tai Chung Clinic)",
+"dates": "9.5.1989 - 21.9.1989"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31",
+"floor": 1,
+"nameZh": "卡迪髪廊",
+"trade": "salon",
+"refs": [
+"HKRS1255-3-177"
+],
+"title": "31 D , TTT Road , 1/F , Flat 3 ,Tung Hing House (Cartik Hair Salon卡迪髪廊)",
+"dates": "28.6.1988 - 25.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"floor": 1,
+"nameEn": "Yick Fung Garment",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-178"
+],
+"title": "31D , TTT Rd [Tung Tau Tsuen Road], 1/F, Flat 5,Tung Hing Bldg [Building] (Yick Fung Garment)",
+"dates": "2.3.1988 - 29.10.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "No 31B",
+"floor": 1,
+"nameEn": "Also Known as Shing Hing Building Stage I",
+"refs": [
+"HKRS1255-3-201"
+],
+"title": "Flat 4&5 , 1/F , No 31B Tung Tau Tsuen Road (Also Known as Shing Hing Building Stage I) (Fu Shing Hao)",
+"dates": "25.3.1988 - 9.1.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 1,
+"nameZh": "香港民宜公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-202"
+],
+"title": "31B, TTT Rd [Tung Tau Tsuen Road], 1/F, Flat 3, Shing Hing Bldg [Building], Stage 1 (香港民宜公司 Man Yee Co.)",
+"dates": "10.5.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 1,
+"nameZh": "李漢明",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-240"
+],
+"title": "Flat 7, 1/F, Shing Hing Bldg, Stage 2, 31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes",
+"dates": "4.3.1988 - 16.1.1990"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"floor": 2,
+"nameZh": "耀光貿易公司",
+"nameEn": "You Kwong Garments Company",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-179"
+],
+"title": "31D , TTT Rd [Tung Tau Tsuen Road] , 2/F, Flat C & D , Tang Hing House (You Kwong Garments Company) (You Kwong Trading Co. 耀光貿易公司 )",
+"dates": "16.5.1988 - 25.10.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 2,
+"nameEn": "Chiu Kwong Electrical",
+"trade": "electrical",
+"refs": [
+"HKRS1255-3-203"
+],
+"title": "Flat 2, 2/F, Shing Hing Bldg [Building], Stage I, 31B Tung Tau Tsuen Road (Chiu Kwong Electrical)",
+"dates": "12.4.1988 - 4.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 2,
+"nameZh": "萬生製麵廠",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-241"
+],
+"title": "31B, TTT Rd [Tung Tau Tsuen Road], 2/F, Flat 7, Shing Hung Bldg, Stage 2, 萬生製麵廠 Man Sung Noodle Mfy. [Manufactory]",
+"dates": "14.3.1988 - 20.8.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 2,
+"nameZh": "協興機器製模廠",
+"trade": "metal",
+"refs": [
+"HKRS1255-3-242"
+],
+"title": "31B, TTT Rd [Tung Tau Tsuen Road], 2/F, Flat 6, Shing Hung Bldg, Phase 2, Hip Hing Machinery Mould Fty. [Factory] 協興機器製模廠",
+"dates": "5.3.1988 - 5.11.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 2,
+"nameZh": "美香麵廠",
+"trade": "noodles",
+"refs": [
+"HKRS1255-3-243"
+],
+"title": "31B, TTT Rd [Tung Tau Tsuen Road], 2/F, Flat 8, Shing Hung Bldg, Stage 2, 美香麵廠 Mei Heung Noodle Fty. [Factory]",
+"dates": "17.3.1988 - 15.10.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 2,
+"nameZh": "周坤興燒腊",
+"nameEn": "also known as 6/F",
+"trade": "roastmeat",
+"refs": [
+"HKRS1255-3-244"
+],
+"title": "Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊",
+"dates": "8.3.1988 - 29.1.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 3,
+"nameEn": "Wing Shing Company",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-204"
+],
+"title": "Flat 3 & 4 , 3/F, 31B Tung Tau Tsuen Road (Wing Shing Company)",
+"dates": "11.3.1988 - 18.2.1992"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 3,
+"nameZh": "中國西醫全科診所暨牙科診所",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-246"
+],
+"title": "Flat 5, 3/F, Shing Hung Building, Stage 2, 31B TTT R. [Tung Tau Tsuen Road], China General Clinic of Western Medicine 中國西醫全科診所暨牙科診所",
+"dates": "4.8.1988 - 30.9.1991"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31D",
+"floor": 4,
+"nameEn": "Mei Lung Garment Factory",
+"trade": "garment",
+"refs": [
+"HKRS1255-3-180"
+],
+"title": "31D , TTT Rd [Tung Tau Tsuen Road] , 4/F , Flat 1 Block A , Tung Hing Hse (Mei Lung Garment Fty)",
+"dates": "29.2.1988 - 16.1.1990"
+},
+{
+"street": "ttt",
+"num": 31,
+"numText": "31B",
+"floor": 6,
+"nameZh": "源發隆士多",
+"trade": "store",
+"refs": [
+"HKRS1255-3-205"
+],
+"title": "31B, TTT Rd [Tung Tau Tsuen Road], 6/F, Flat 2 (源發隆士多Yuen Fat Loong)",
+"dates": "19.3.1988 - 25.11.1991"
+},
+{
+"street": "ttt",
+"num": 32,
+"numText": "32",
+"floor": 0,
+"nameEn": "Lam Sam Yuk Dentistry",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-157"
+],
+"title": "Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry",
+"dates": "9.9.1992 - 20.1.1994"
+},
+{
+"street": "ttt",
+"num": 32,
+"numText": "32",
+"floor": 0,
+"nameEn": "Ho Lee Plastic Factory [Factory]",
+"trade": "plastics",
+"refs": [
+"HKRS1255-3-206"
+],
+"title": "G/F, Rear Portion, Tin Lay House, 32 TTT Rd [Tung Tau Tsuen Road] (Ho Lee Plastic Fty. [Factory])",
+"dates": "5.8.1988 - 18.2.1992"
+},
+{
+"street": "ttt",
+"num": 32,
+"numText": "32",
+"floor": 2,
+"nameZh": "合利貿易公司",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-209"
+],
+"title": "32, TTT Rd [Tung Tau Tsuen Road], 2/F Rear Portion, BLK [Block] A, Tin Lung Hse [House]. Also Known as Flat No 1, 5/F, 7th Lane, Tai Chang ST. [Street]) (合利貿易公司 Hop Lee Trading Co.)",
+"dates": "24.3.1988 - 16.7.1992"
+},
+{
+"street": "ttt",
+"num": 32,
+"numText": "32",
+"floor": 4,
+"nameZh": "藝麗公司",
+"nameEn": "Ngai Lai Artistic Co.",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-168"
+],
+"title": "4/F , Sung Yee House , 15 Shung Yi Laue , 32 Tung Tau Tsuen Road Ngai Lai Artistic Co.(藝麗公司)",
+"dates": "29.2.1988 - 2.9.1993"
+},
+{
+"street": "ttt",
+"num": 32,
+"numText": "32",
+"floor": 4,
+"nameZh": "羅釗林",
+"refs": [
+"HKRS1255-3-181"
+],
+"title": "4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林",
+"dates": "16.1.1988 - 4.1.1991"
+},
+{
+"street": "ttt",
+"num": 34,
+"numText": "34",
+"floor": 0,
+"nameZh": "南怡士多",
+"trade": "store",
+"refs": [
+"HKRS1255-3-182"
+],
+"title": "34, TTT Rd [Tung Tau Tsuen Road], G/F (南怡士多Nam Yee Store)",
+"dates": "5.8.1988 - 8.1.1992"
+},
+{
+"street": "ttt",
+"num": 35,
+"numText": "35",
+"floor": 0,
+"nameZh": "莊天麗牙科",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-187"
+],
+"title": "G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry",
+"dates": "5.2.1988 - 28.11.1991"
+},
+{
+"street": "ttt",
+"num": 35,
+"numText": "35",
+"floor": 1,
+"nameZh": "西醫李謀",
+"nameEn": "Li Mau Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-185"
+],
+"title": "1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)",
+"dates": "30.7.1988 - 1995"
+},
+{
+"street": "ttt",
+"num": 35,
+"numText": "35",
+"floor": 1,
+"nameZh": "張挺華診所",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-186"
+],
+"title": "1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所) & Lau Wing Medical Climic(羅宋榮診所)",
+"dates": "24.7.1989 - 6.2.1991"
+},
+{
+"street": "ttt",
+"num": 35,
+"numText": "35",
+"floor": 3,
+"nameZh": "東方專科診所",
+"nameEn": "Oriental Specialist Clinic",
+"trade": "clinic",
+"refs": [
+"HKRS1255-3-183"
+],
+"title": "Front Portion, 3/F, 35 TTT [Tung Tau Tsuen] Road Oriental Specialist Clinic (東方專科診所)",
+"dates": "6.8.1988 - 13.12.1990"
+},
+{
+"street": "ttt",
+"num": 36,
+"numText": "36-38",
+"floor": 2,
+"nameZh": "金鋒實業公司",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-188"
+],
+"title": "36-38 , Tung Tau Tsuen Road , 2/F (Comfort Industrial Compony 金鋒實業公司)",
+"dates": "15.4.1988 - 31.12.1990"
+},
+{
+"street": "ttt",
+"num": 36,
+"numText": "36",
+"floor": 5,
+"refs": [
+"HKRS1255-3-189"
+],
+"title": "36, TTT Rd [Tung Tau Tsuen Road], 5/F, 2008, Blk [Block] 4",
+"dates": "1.6.1988 - 21.7.1989"
+},
+{
+"street": "ttt",
+"num": 37,
+"numText": "37",
+"floor": 0,
+"nameZh": "黃源香",
+"refs": [
+"HKRS1255-3-190"
+],
+"title": "37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )",
+"dates": "22.6.1988 - 8.1.1992"
+},
+{
+"street": "ttt",
+"num": 40,
+"numText": "40",
+"floor": 0,
+"nameEn": "Hang Sing Co.",
+"trade": "trading",
+"refs": [
+"HKRS1255-3-220"
+],
+"title": "40, TTT Rd [Tung Tau Tsuen Road], G/F (Hang Sing Co.)",
+"dates": "5.8.1988 - 13.7.1989"
+},
+{
+"street": "ttt",
+"num": 40,
+"numText": "40A",
+"floor": 1,
+"nameEn": "Lee's Dental Clinic",
+"trade": "dentist",
+"refs": [
+"HKRS1255-3-222"
+],
+"title": "1/F, 40A, Tung Tau Tsuen Road (Lee's Dental Clinic)",
+"dates": "24.1.1992 - 18.3.1992"
+},
+{
+"street": "ttt",
+"num": 40,
+"numText": "No 40",
+"floor": 1,
+"nameEn": "Kong Loong Embroidery Factory",
+"trade": "factory",
+"refs": [
+"HKRS1255-3-223"
+],
+"title": "1/F, No 40 Tung Tau Tsuen Road. (Kong Loong Embroidery Factory)",
+"dates": "15.2.1988 - 22.1.1992"
+},
+{
+"street": "ttt",
+"num": 40,
+"numText": "40",
+"floor": 6,
+"nameZh": "榮發士多",
+"trade": "store",
+"refs": [
+"HKRS1255-3-221"
+],
+"title": "40, TTT Rd [Tung Tau Tsuen Road], 6/F (榮發士多 Wing Fat Store)",
+"dates": "8.3.1988 - 16.5.1990"
+}
+]
+}

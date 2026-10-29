@@ -1,7 +1,7 @@
 // The model's surroundings: plinth, streets, the hazy city below, light and time of day.
 import * as THREE from 'three';
-import { rects } from './cityMesh.js';
-import { mulberry32, clamp, lerp, smoothstep } from './util.js';
+import { OUTSIDE } from './footprint.js';
+import { mulberry32, clamp, smoothstep } from './util.js';
 
 export const PLINTH_DEPTH = 150;
 
@@ -32,25 +32,29 @@ export function buildEnvironment(scene, L) {
   street.position.set((xa + xb) / 2, 0, (za + zb) / 2);
   street.receiveShadow = true;
   group.add(street);
-  const pave = [];
-  for (let c = 0; c < L.N; c++) {
-    if (L.inside[c]) continue;
-    const i = c % L.W, j = (c / L.W) | 0;
-    let near = false;
-    for (let dj = -3; dj <= 3 && !near; dj++)
-      for (let di = -3; di <= 3 && !near; di++) {
-        const ni = i + di, nj = j + dj;
-        if (ni >= 0 && nj >= 0 && ni < L.W && nj < L.D && L.inside[nj * L.W + ni]) near = true;
-      }
-    if (near) pave.push(c);
+  // Pavement: a 3 m band round the city outline, with round joins at the corners.
+  const edges = [];
+  for (const b of L.buildings) for (const r of b.rings) for (const e of r.edges) if (e.other === OUTSIDE) edges.push(e);
+  for (const rings of Object.values(L.ground)) for (const r of rings) for (const e of r.edges) if (e.other === OUTSIDE) edges.push(e);
+  const pv = [], PW = 3, y = 0.006;
+  const tri = (a, b, c) => {
+    if ((b[1] - a[1]) * (c[0] - a[0]) - (b[0] - a[0]) * (c[1] - a[1]) < 0) [b, c] = [c, b]; // face up
+    pv.push(a[0], y, a[1], b[0], y, b[1], c[0], y, c[1]);
+  };
+  for (const e of edges) {
+    const dx = e.b[0] - e.a[0], dz = e.b[1] - e.a[1], l = Math.hypot(dx, dz) || 1;
+    const nx = (dz / l) * PW, nz = (-dx / l) * PW;
+    const A = e.a, B = e.b, C = [B[0] + nx, B[1] + nz], D = [A[0] + nx, A[1] + nz];
+    tri(A, C, B); tri(A, D, C);
+    for (let q = 0; q < 8; q++) {
+      const a0 = (q / 8) * 2 * Math.PI, a1 = ((q + 1) / 8) * 2 * Math.PI;
+      tri(A, [A[0] + Math.cos(a1) * PW, A[1] + Math.sin(a1) * PW], [A[0] + Math.cos(a0) * PW, A[1] + Math.sin(a0) * PW]);
+    }
   }
-  const pg = [];
-  for (const [i0, j0, i1, j1] of rects(L, pave)) {
-    const g = new THREE.PlaneGeometry(i1 - i0, j1 - j0).rotateX(-Math.PI / 2);
-    g.translate(L.x0 + (i0 + i1) / 2, 0.006, L.z0 + (j0 + j1) / 2);
-    pg.push(g);
-  }
-  const paveMesh = new THREE.Mesh(mergeGeoms(pg), new THREE.MeshLambertMaterial({ color: '#77736a' }));
+  const pg = new THREE.BufferGeometry();
+  pg.setAttribute('position', new THREE.Float32BufferAttribute(pv, 3));
+  pg.setAttribute('normal', new THREE.Float32BufferAttribute(new Float32Array(pv.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
+  const paveMesh = new THREE.Mesh(pg, new THREE.MeshLambertMaterial({ color: '#77736a' }));
   paveMesh.receiveShadow = true;
   group.add(paveMesh);
 
@@ -157,24 +161,6 @@ function buildContextCity(L) {
   return g;
 }
 
-function mergeGeoms(list) {
-  let n = 0;
-  for (const g of list) n += g.getAttribute('position').count;
-  const pos = new Float32Array(n * 3), nor = new Float32Array(n * 3), idx = [];
-  let o = 0;
-  for (const g of list) {
-    pos.set(g.getAttribute('position').array, o * 3);
-    nor.set(g.getAttribute('normal').array, o * 3);
-    for (const v of g.index.array) idx.push(v + o);
-    o += g.getAttribute('position').count;
-  }
-  const out = new THREE.BufferGeometry();
-  out.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  out.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
-  out.setIndex(idx);
-  return out;
-}
-
 function convexHull(inside, L) {
   const pts = [];
   for (let c = 0; c < L.N; c++) {
@@ -234,9 +220,11 @@ export function skyAt(hour, out) {
 }
 
 export class Lighting {
-  constructor(scene, center) {
+  constructor(scene, center, site) {
     this.scene = scene;
     this.center = center;
+    this.north = site.north;
+    this.east = site.east;
     this.hemi = new THREE.HemisphereLight('#dcd9cc', '#4a4540', 1.2);
     scene.add(this.hemi);
     this.sun = new THREE.DirectionalLight('#fff3df', 1.6);
@@ -252,22 +240,30 @@ export class Lighting {
     scene.fog = new THREE.Fog(this.sky, 900, 1700);
   }
 
-  // Hong Kong in mid-March: sunrise about 06:30, sunset about 18:30.
+  // The sun over Hong Kong in the week of 16-22 Dec 1986: latitude 22.33° N, declination
+  // -23.4°, solar noon at about 12:22 HKT. Sunrise about 06:57, sunset about 17:45.
   update(hour, explodeLift) {
-    const day = (hour - 6.5) / 12;
-    const elev = Math.sin(Math.PI * clamp(day, 0, 1));
-    const light = smoothstep(0.0, 0.25, elev) * (day > 0 && day < 1 ? 1 : 0);
-    const az = lerp(-Math.PI * 0.55, Math.PI * 0.55, clamp(day, 0, 1));
+    const D = Math.PI / 180, phi = 22.33 * D, dec = -23.4 * D;
+    const H = (hour - 12.37) * 15 * D;
+    const sinAlt = Math.sin(phi) * Math.sin(dec) + Math.cos(phi) * Math.cos(dec) * Math.cos(H);
+    const alt = Math.asin(sinAlt) + 0.83 * D; // with refraction
+    let az = Math.acos(clamp((Math.sin(dec) - sinAlt * Math.sin(phi)) / (Math.cos(Math.asin(sinAlt)) * Math.cos(phi)), -1, 1));
+    if (H > 0) az = 2 * Math.PI - az; // bearing from north
+    const elev = clamp(alt / (44.3 * D), 0, 1);
+    const light = smoothstep(0.0, 0.25, elev) * (alt > 0 ? 1 : 0);
     const r = 420;
-    const e = Math.max(0.18, elev) * 1.05;
-    const c = this.center;
-    this.sun.position.set(c.x + Math.sin(az) * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + Math.cos(az) * r * Math.cos(e) * 0.6 + 120);
+    const e = Math.max(0.16, alt);
+    const c = this.center, N = this.north, E = this.east;
+    const hx = E[0] * Math.sin(az) + N[0] * Math.cos(az), hz = E[1] * Math.sin(az) + N[1] * Math.cos(az);
+    this.sun.position.set(c.x + hx * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + hz * r * Math.cos(e));
     this.sun.target.position.set(c.x, c.y + explodeLift * 0.5, c.z);
     this.sun.intensity = 0.15 + 1.5 * light;
     this.sun.color.setHSL(0.09, 0.5 - 0.35 * elev, 0.82 + 0.1 * elev);
     this.hemi.intensity = 0.62 + 0.7 * smoothstep(-0.05, 0.3, elev);
     this.hemi.color.set(light > 0.05 ? '#dcd9cc' : '#8e96b0');
-    skyAt(hour, this.sky);
+    // The sky colours were set for March light: map December hours onto them.
+    const m = hour < 6.95 ? hour - 0.45 : hour > 17.75 ? hour + 0.75 : 6.5 + (hour - 6.95) * (12 / 10.8);
+    skyAt(clamp(m, 0, 24), this.sky);
     this.scene.fog.color.copy(this.sky);
     return 1 - smoothstep(0.02, 0.35, elev);
   }

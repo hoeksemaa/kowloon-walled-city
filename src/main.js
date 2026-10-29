@@ -1,13 +1,17 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
-import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL } from './layout.js';
+import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
+import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim, makePeopleMesh } from './people.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
+import { BEATS, CHAPTERS, beatAt } from './story.js';
+import { Planes } from './planes.js';
+import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
 const GAP = 13; // extra metres between storeys when fully exploded
@@ -67,6 +71,7 @@ controls.maxPolarAngle = 1.42;
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1,
   speed: 60, hoverAgent: -1, hoverBld: -1, follow: false,
+  storyCam: true, camGoal: null, storySel: false, storyCut: false,
 };
 const offsets = new Float32Array(16);
 const shared = {
@@ -74,15 +79,15 @@ const shared = {
 };
 const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 } };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing;
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const plan = await (await fetch('./data/plan.json')).json();
+  const [plan, biz] = await Promise.all(['./data/plan.json', './data/businesses.json'].map((u) => fetch(u).then((r) => r.json())));
   site = buildSite(plan);
-  L = buildLayout(site, plan);
+  L = buildLayout(site, plan, biz);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
-  lighting = new Lighting(scene, center);
+  lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
   addStreetLabels(scene, site, env.roadOutline, STREETS);
   addNorthArrow();
@@ -91,12 +96,20 @@ async function init() {
   const antMat = new THREE.LineBasicMaterial({ color: '#3a3935' });
   const slabGeo = new THREE.PlaneGeometry(L.W, L.D).rotateX(-Math.PI / 2).translate(center.x, 0, center.z);
   const slabEdge = new THREE.EdgesGeometry(slabGeo);
-  levels = buildLevels(L).map((d) => {
+  const built = buildLevels(L);
+  const signMat = makeSignMaterial(shared, built.signTexture);
+  levels = built.levels.map((d) => {
     const group = new THREE.Group();
     const mat = makeBuildingMaterial(shared);
     const mesh = new THREE.Mesh(d.geometry, mat);
     mesh.castShadow = mesh.receiveShadow = true;
     group.add(mesh);
+    let signs = null;
+    if (d.signs) {
+      signs = new THREE.Mesh(d.signs, signMat);
+      signs.castShadow = true;
+      group.add(signs);
+    }
     const ag = new THREE.BufferGeometry();
     ag.setAttribute('position', new THREE.BufferAttribute(d.antennas, 3));
     const antennas = new THREE.LineSegments(ag, antMat);
@@ -109,7 +122,7 @@ async function init() {
     slab.visible = edge.visible = false;
     group.add(slab, edge);
     scene.add(group);
-    return { k: d.k, group, mesh, mat, antennas, slab, edge, plan: null };
+    return { k: d.k, group, mesh, mat, antennas, signs, slab, edge, plan: null };
   });
 
   // Dotted corner posts that appear when the storeys are pulled apart.
@@ -133,6 +146,9 @@ async function init() {
   wires = new WireLayer(L, buildWires(L));
   scene.add(wires.object);
 
+  // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
+  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62, BEATS.filter((b) => b.plane).map((b) => b.minute + 0.05));
+
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
   sim = new Sim(L, agents);
@@ -147,7 +163,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, jumpBeat };
   requestAnimationFrame(frame);
 }
 
@@ -213,6 +229,7 @@ function setCut(c) {
     lv.group.visible = c < 0 || lv.k <= c;
     lv.mat.userData.uIsCut.value = lv.k === c ? 1 : 0;
     lv.antennas.visible = lv.k !== c;
+    if (lv.signs) lv.signs.visible = lv.k !== c;
     if (lv.plan) {
       lv.group.remove(lv.plan.mesh, lv.plan.lines);
       lv.plan.mesh.geometry.dispose();
@@ -288,7 +305,7 @@ function pickAgent() {
     const o = a.id * 4;
     if (P[o + 3] < 0 || P[o + 2] > peopleU.uCutY.value) continue;
     const cellK = Math.floor(P[o + 1] - L.z0) * L.W + Math.floor(P[o] - L.x0);
-    const outdoors = !L.inside[cellK] || (a.loc && a.loc.type === 'roof');
+    const outdoors = !L.inside[cellK] || L.alley[cellK] > 0 || (a.loc && a.loc.type === 'roof');
     const lvl = Math.round(P[o + 2] / STOREY);
     if (!(outdoors || state.explode > 0.5 || (state.cut >= 0 && lvl === state.cut))) continue;
     const [sx, sy] = agentScreen(a);
@@ -318,6 +335,13 @@ function buildUI() {
   });
   tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
   $('rail-clear').onclick = () => setCut(-1);
+  $('st-prev').onclick = () => jumpBeat(-1);
+  $('st-next').onclick = () => jumpBeat(1);
+  $('st-cam').onclick = () => {
+    state.storyCam = !state.storyCam;
+    $('st-cam').classList.toggle('on', state.storyCam);
+    if (state.storyCam && storyIdx >= 0) focusBeat(BEATS[storyIdx]);
+  };
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
 
@@ -353,7 +377,8 @@ function buildUI() {
   });
   canvas.addEventListener('pointerleave', () => { mouse.inside = false; hideTooltip(); });
   let down = null;
-  canvas.addEventListener('pointerdown', (ev) => (down = [ev.clientX, ev.clientY]));
+  canvas.addEventListener('pointerdown', (ev) => { down = [ev.clientX, ev.clientY]; state.camGoal = null; });
+  canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
   canvas.addEventListener('pointerup', (ev) => {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     const id = pickAgent();
@@ -431,7 +456,7 @@ function renderLegend() {
   if (state.cut >= 0) {
     const here = new Set(L.buildings.filter((b) => b.floors > state.cut).map((b) => b.uses[state.cut]));
     const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
-    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE (PLACEHOLDER)</h3>${uses
+    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${uses
       .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
       .join('')}</div>`);
   }
@@ -484,26 +509,37 @@ function buildingTooltip(b, k) {
     return `<div class="tt-h">YAMEN 衙門 · HALL</div><div>Qing-era official compound, the one old building left in the city</div><div>in the 1980s: old people’s centre (老人中心), per the exhibit plan</div><div class="tt-s">walls and roof from the traced plot · roof form is generic</div>`;
   const runs = [];
   for (let f = 0; f < B.floors; f++) {
-    const u = B.uses[f];
-    if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].to = f;
-    else runs.push({ u, from: f, to: f });
+    const u = B.uses[f], inf = !!(B.inferred && B.inferred[f]);
+    const last = runs[runs.length - 1];
+    if (last && last.u === u && last.inf === inf && !B.prem[f]) last.to = f;
+    else runs.push({ u, inf, from: f, to: f });
   }
   const rows = runs
-    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
+    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.inf ? ' *' : ''}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
     .join('');
-  const title = B.name ? buildingName(B).toUpperCase() : `BLDG ${b}`;
+  const recs = [];
+  for (const f of Object.keys(B.prem).map(Number).sort((x, y) => x - y))
+    for (const p of B.prem[f]) recs.push(`<div class="tt-r"><span class="tt-k">${levelName(f)}</span> ${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i></div>`);
+  const prem = recs.length ? `<div class="tt-s">in the clearance files (GRS HKRS1255-3):</div>${recs.slice(0, 6).join('')}${recs.length > 6 ? `<div class="tt-s">and ${recs.length - 6} more</div>` : ''}` : '';
+  const title = buildingName(B).toUpperCase();
   const front = B.front === 'top' ? '<div class="tt-s">fronts Tung Tau Tsuen Road</div>' : B.front === 'road' ? '<div class="tt-s">fronts a road on the old wall base</div>' : '';
   const fact = B.factory ? '<div class="tt-s">factory site marked on the exhibit plan</div>' : '';
-  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${front}${fact}
-    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>
-    <div class="tt-s">plot traced from the plan · storeys and uses are placeholders</div>`;
+  const inf = B.inferred ? '<div class="tt-s">* trade inferred from the Kai Fong count of 1983, not from a file</div>' : '';
+  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${prem}${front}${fact}
+    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>${inf}
+    <div class="tt-s">plot from the 1980s plan · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : 'storeys inferred from photos'} · place on street from house-number order</div>`;
 }
 
 function agentTooltip(id) {
-  const d = sim.describe(sim.agents[id]);
-  return `<div class="tt-h">${d.title} · ${d.age}</div><div>${d.role}</div>
+  const a = sim.agents[id];
+  const d = sim.describe(a);
+  const head = `<div class="tt-h">${d.title}${d.age ? ` · ${d.age}` : ''}</div><div>${d.role}</div>
     <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
-    <div><span class="tt-k">home</span> ${d.home}</div><div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+    <div><span class="tt-k">home</span> ${d.home}</div>`;
+  if (!a.real) return `${head}<div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+  const facts = a.real.facts.slice(0, 2).map(([t, src]) => `<div class="tt-r">${t} <i>${src}</i></div>`).join('');
+  return `<div class="tt-real">REAL PERSON</div>${head}${facts}
+    <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
 }
 
 function updateHover() {
@@ -623,8 +659,8 @@ const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 let lastDay = -1;
 function updateClock() {
   $('clk-time').textContent = fmtClock(sim.minute);
-  const d = new Date(Date.UTC(1989, 2, 14 + sim.day));
-  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  const d = new Date(Date.UTC(1986, 11, 16 + (sim.day % 7)));
+  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}${sim.day % 7 === DONGZHI ? ' · 冬至' : ''}`;
   $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
   const s = sim.stats();
   occ = s.perLevel;
@@ -640,6 +676,114 @@ function resize() {
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
   wires.setResolution(w, h);
+}
+
+// ---- story -----------------------------------------------------------------------------------------
+let storyIdx = -2;
+const dateOf = (day) => {
+  const d = new Date(Date.UTC(1986, 11, 16 + day));
+  return `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} DEC 1986`;
+};
+const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+function updateStory() {
+  const i = beatAt(sim.day % 7, sim.minute);
+  if (i === storyIdx) return;
+  storyIdx = i;
+  renderBeat(i);
+  if (i >= 0) focusBeat(BEATS[i]);
+}
+
+function renderBeat(i) {
+  const b = BEATS[i];
+  if (!b) {
+    $('st-chap').textContent = `DAY 1 · ${dateOf(0)} · ${CHAPTERS[0]}`;
+    $('st-time').textContent = '';
+    $('st-text').textContent = 'One ordinary week in the city, from Tuesday 16 December 1986 to the winter solstice. Press ▶ to start at the first scene.';
+    $('st-quote').innerHTML = '';
+    $('st-cite').textContent = '';
+    return;
+  }
+  $('st-chap').textContent = `DAY ${b.day + 1} · ${dateOf(b.day)} · ${CHAPTERS[b.day]}`;
+  const tags = [];
+  if (b.focus && b.focus.person) tags.push('<span class="chip real">REAL PERSON</span>');
+  if (b.inferred) tags.push('<span class="chip inf">INFERRED</span>');
+  $('st-time').innerHTML = `${b.t} ${tags.join('')}`;
+  $('st-text').textContent = b.text;
+  if (b.quote && b.quote.t) {
+    const [main, gloss] = b.quote.t.split(' [');
+    $('st-quote').innerHTML = `<div class="q">“${esc(main)}”</div>${gloss ? `<div class="g">[${esc(gloss)}</div>` : ''}<div class="w">— ${esc(b.quote.who)} · ${esc(b.quote.src)} · ${esc(b.quote.tag)}</div>`;
+  } else $('st-quote').innerHTML = '';
+  $('st-cite').textContent = b.cite ? `source: ${b.cite}` : '';
+}
+
+function jumpBeat(step) {
+  const n = BEATS.length;
+  const i = storyIdx < 0 ? (step > 0 ? 0 : n - 1) : (storyIdx + step + n) % n;
+  const b = BEATS[i];
+  sim.day = sim.day - (sim.day % 7) + b.day;
+  sim.setTime(b.minute);
+  lastDay = -1;
+  storyIdx = -2;
+}
+
+function focusBeat(b) {
+  // Cut and utilities as the scene asks; undo what an earlier scene set.
+  if (b.cut !== undefined) { setCut(b.cut); state.storyCut = true; }
+  else if (state.storyCut) { setCut(-1); state.storyCut = false; }
+  if (b.wires && !wires.object.visible) $('t-wires').click();
+  if (state.storySel && !(b.focus && b.focus.person)) { sim.select(-1); state.follow = false; state.storySel = false; }
+  if (!state.storyCam || !b.focus) return;
+  const f = b.focus;
+  let p = null, zoom = 5;
+  if (f.person) {
+    const a = sim.agents.find((x) => x.real && x.real.key === f.person);
+    if (a) {
+      sim.select(a.id);
+      state.follow = !!b.follow;
+      state.storySel = true;
+      const o = a.id * 4;
+      if (sim.aP[o + 3] >= 0) { p = [sim.aP[o], sim.aP[o + 2], sim.aP[o + 1]]; zoom = 6.5; }
+    }
+  } else if (f.street) {
+    if (f.street === 'ttt') {
+      const ids = L.frontage.ttt;
+      const c = ids.reduce((s, id) => [s[0] + L.buildings[id].cx, s[1] + L.buildings[id].cz], [0, 0]).map((v) => v / ids.length);
+      p = [c[0], 6, c[1] - 6];
+    } else {
+      const cells = L.streetLanes[f.street];
+      if (cells && cells.length) { const k = cells[Math.floor(cells.length / 2)]; p = [L.cellX(k), 4, L.cellZ(k)]; }
+    }
+    zoom = 6;
+  } else if (f.building) {
+    const B = L.buildings;
+    const b2 = f.building === 'yamen' ? B[L.yamenId] : f.building === 'temple'
+      ? B.find((x) => Object.values(x.prem).some((list) => list.some((pp) => pp.trade === 'temple')))
+      : B.find((x) => x.name === f.building);
+    if (b2) p = [b2.cx, b2.floors * STOREY * 0.5, b2.cz];
+    zoom = 6;
+  } else if (f.standpipe !== undefined) {
+    const sp = wires.standpipes[f.standpipe];
+    if (sp) p = [sp[0], 2, sp[1]];
+    zoom = 7;
+  } else if (f.view === 'plane') {
+    p = [150, 30, -40]; zoom = 2.2;
+  }
+  if (!p) { p = [0, 14, 0]; zoom = 1.15; }
+  state.camGoal = { x: p[0], y: p[1], z: p[2], zoom };
+}
+
+function glideCamera(dt) {
+  const g = state.camGoal;
+  if (!g) return;
+  const k = 1 - Math.exp(-dt * 1.6);
+  const dx = (g.x - controls.target.x) * k, dy = (g.y - controls.target.y) * k, dz = (g.z - controls.target.z) * k;
+  controls.target.x += dx; controls.target.y += dy; controls.target.z += dz;
+  camera.position.x += dx; camera.position.y += dy; camera.position.z += dz;
+  const zg = g.zoom * (state.zf || 1);
+  camera.zoom += (zg - camera.zoom) * k;
+  camera.updateProjectionMatrix();
+  if (Math.abs(g.x - controls.target.x) + Math.abs(g.z - controls.target.z) < 0.3 && Math.abs(zg - camera.zoom) < 0.02) state.camGoal = null;
 }
 
 // ---- loop -------------------------------------------------------------------------------------------
@@ -660,6 +804,10 @@ function frame(now) {
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
   shared.uNight.value = lighting.update(hour, state.lift);
+  wires.tick(hour, state.speed ? dt : 0);
+  planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
+  updateStory();
+  glideCamera(dt);
   const dark = shared.uNight.value > 0.55;
   if (dark !== state.dark) {
     state.dark = dark;
