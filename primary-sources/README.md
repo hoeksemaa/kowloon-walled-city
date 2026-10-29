@@ -32,6 +32,8 @@ are not primary. Do not put them here.
 | [`mplus-suenn-ho-ca17/`](mplus-suenn-ho-ca17/SOURCE.md) | M+ catalogue of Suenn Ho's field research: 11 video cassettes, 3 route maps on a detailed city plan, 1 video still | 1988–1992 | no (© Suenn Ho, M+) | https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/ |
 | [`mplus-girard-lambot-photos/`](mplus-girard-lambot-photos/SOURCE.md) | M+ photos by Girard and Lambot: south elevation, alleys, roofs, stairs, aerial | 1987–1991 | no (© Girard, © Lambot) | https://www.mplus.org.hk/en/collection/makers/ian-lambot/ |
 | [`uk-lords-hansard-1974/`](uk-lords-hansard-1974/SOURCE.md) | House of Lords debate: a first-hand account of lanes, drains, water, power | 11 Jun 1974 | yes (Open Parliament Licence) | https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon |
+| [`upi-reports-1984-1987/`](upi-reports-1984-1987/SOURCE.md) | UPI wire reports from Hong Kong: Battenfeld (1984), Jones (1987) | 18 Dec 1984, 15 Feb 1987 | no (© UPI) | https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/ |
+| [`gwulo-suddaby-1987/`](gwulo-suddaby-1987/SOURCE.md) | Andrew Suddaby's street photos of the north face, Tung Tau Tsuen Road | 1 Nov 1987 | no (photographer's rights) | https://gwulo.com/media/22835 |
 
 ## Blocked: links for John to look at
 
@@ -45,9 +47,6 @@ can decide what to download.
 | FCO 40/790 "Kowloon Walled City and aircraft safety" (1977) | Height limits; 6 standpipes for 27,000 people | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0642-FCO40-790-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1977 |
 | FCO 40/980, same subject (1978) | Height limits | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0776-FCO40-980-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1978 |
 | UK Hansard search, 1980–1994 | Commons and Lords items on the clearance | Cloudflare bot check | https://hansard.parliament.uk/search/Contributions?searchTerm=%22walled%20city%22&startDate=1980-01-01&endDate=1994-12-31 |
-| UPI, 18 Dec 1984 | On-the-ground report at peak | 403 to scripts | https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/ |
-| UPI, 15 Feb 1987 | Report on the clearance plan | 403 to scripts | https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-down/8464540363600/ |
-| Gwulo media 22835, Suddaby photo, 1 Nov 1987 | Dentists' shops on Tung Tau Tsuen Road | No license on the page | https://gwulo.com/media/22835 |
 | WSJ 2014 project, Wayback copies | Clips of the Suenn Ho footage | Wayback was offline (503) on 2026-10-29; try again | https://web.archive.org/web/2016/http://projects.wsj.com/kwc/ |
 | Library of Congress, Paul Rudolph slide | Photo, 1960–1980 | "Publication may be restricted" | https://www.loc.gov/item/2010648314/ |
 
