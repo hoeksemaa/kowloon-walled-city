@@ -24,11 +24,11 @@ are not primary. Do not put them here.
 
 ## Sources
 
-| Folder | What | Dates | Files | In git |
-|---|---|---|---|---|
-| [`commons-photos-1972-1993/`](commons-photos-1972-1993/SOURCE.md) | 11 original photos: Lambot, Jidanni, Roger Price, ken93110 | 1972–1993 | JPG + Commons metadata JSON | yes (CC BY / CC BY-SA) |
-| [`legco-hansard-1986-1993/`](legco-hansard-1986-1993/SOURCE.md) | LegCo Hansard: 22 sittings that name the Walled City | Dec 1986 – Jul 1993 | PDF | no (LegCo copyright) |
-| [`mplus-suenn-ho-ca17/`](mplus-suenn-ho-ca17/SOURCE.md) | M+ catalogue of Suenn Ho's field research: 11 video cassettes, 3 route maps on a detailed city plan, 1 video still | 1988–1992 | HTML + JPG | no (© Suenn Ho, M+) |
+| Folder | What | Dates | Files | In git | Link |
+|---|---|---|---|---|---|
+| [`commons-photos-1972-1993/`](commons-photos-1972-1993/SOURCE.md) | 11 original photos: Lambot, Jidanni, Roger Price, ken93110 | 1972–1993 | JPG + Commons metadata JSON | yes (CC BY / CC BY-SA) | https://commons.wikimedia.org/wiki/Category:Historical_images_of_Kowloon_Walled_City |
+| [`legco-hansard-1986-1993/`](legco-hansard-1986-1993/SOURCE.md) | LegCo Hansard: 22 sittings that name the Walled City | Dec 1986 – Jul 1993 | PDF | no (LegCo copyright) | https://www.legco.gov.hk/yr86-87/english/lc_sitg/yr8687.htm |
+| [`mplus-suenn-ho-ca17/`](mplus-suenn-ho-ca17/SOURCE.md) | M+ catalogue of Suenn Ho's field research: 11 video cassettes, 3 route maps on a detailed city plan, 1 video still | 1988–1992 | HTML + JPG | no (© Suenn Ho, M+) | https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/ |
 
 ## Leads not yet collected
 

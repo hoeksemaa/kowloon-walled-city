@@ -6,7 +6,8 @@ names the Walled City. That is 22 sittings out of 251.
 - **Publisher:** Legislative Council of Hong Kong, www.legco.gov.hk
 - **URL pattern:** `https://www.legco.gov.hk/yr<SESSION>/english/lc_sitg/hansard/h<YYMMDD>.pdf`
   (for example `yr86-87`). The session index pages are
-  `https://www.legco.gov.hk/yr<SESSION>/english/lc_sitg/yr<YYYY>.htm`.
+  `https://www.legco.gov.hk/yr<SESSION>/english/lc_sitg/yr<YYYY>.htm`, for
+  example https://www.legco.gov.hk/yr86-87/english/lc_sitg/yr8687.htm.
 - **Retrieved:** 2026-10-29. The server gives `Last-Modified` dates of about
   Aug 2005 for these PDFs.
 - **Stored in git:** no. The PDFs are in `local/`, which git ignores. Use the
