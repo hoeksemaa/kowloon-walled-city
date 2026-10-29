@@ -49,6 +49,8 @@ can decide what to download.
 | UK Hansard search for "Kowloon", 1980–1994 | Commons and Lords items on the clearance. A search for "walled city" finds York and Chester (checked 2026-10-29) | Cloudflare bot check | https://hansard.parliament.uk/search/Contributions?searchTerm=Kowloon&startDate=1980-01-01&endDate=1994-12-31 |
 | WSJ 2014 project, Wayback copies | Clips of the Suenn Ho footage | Wayback was offline (503) on 2026-10-29; try again | https://web.archive.org/web/2016/http://projects.wsj.com/kwc/ |
 | Library of Congress, Paul Rudolph slide | Photo, 1960–1980 | "Publication may be restricted" | https://www.loc.gov/item/2010648314/ |
+| Erich Tsang Shu-ming 曾樹明, "Community approach to youth work: working experience in Kowloon Walled City", MSW thesis, HKU, 1979 | A social worker's own account of his work in the city. DOI 10.5353/th_b3124685. Check for a full-text PDF | Cloudflare bot check | https://hub.hku.hk/handle/10722/35397 |
+| *Journal of the Royal Asiatic Society Hong Kong Branch* 27 (1987), p. 70 | A 1987 reference list on the city. It cites Michael Chiang's HKU architecture thesis (below) | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-rashkb-journal-engine/items/RAS-1987?p=70 |
 
 The LA Times, NYT, AP, Chicago Tribune, Guardian and Independent block this
 tool's crawler. A library database (ProQuest, NewsBank) gives access to their
@@ -67,6 +69,16 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
   *City of Darkness Revisited* for its origin.
 - HK Lands Department (Survey and Mapping Office) aerial photos of the 1980s.
   They are for sale at full resolution.
+- Terasawa Kazumi 寺澤一美 (drawings) and Kani Hiroaki 可児弘明 (editor),
+  『大図解 九龍城』 (Iwanami Shoten, 10 Jul 1997, ISBN 9784000080705). It is the
+  large cutaway panorama of the city. A Japanese team (九龍城探検隊) surveyed
+  the city before the demolition. The drawing is a reconstruction, so it is
+  primary only for what the team recorded. One review says the team's photos
+  show interiors that were almost empty, thus after the clearance. Buy a used
+  copy. https://www.kinokuniya.co.jp/f/dsg-01-9784000080705
+- Michael Chiang, "The Development of the Kowloon Walled City", student
+  thesis, HKU School of Architecture, 1979–80. Known only from the JRASHKB
+  1987 reference list. No copy online found yet.
 
 **Government files**
 - FCO 40/2214 (1987, LegCo Hansards). No link found yet.
@@ -82,6 +94,23 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
 - Full-size scans of the M+ route maps (CA17/2/1–3) and the M+ photos. Ask M+.
 - RTHK documentary "Kowloon Walled City Stories" (1988). A copy is in M+ CA17/1/3.
 - hkmemory.hk photos of the area, 1968 and 1982.
+- Ryuji Miyamoto 宮本隆司, photos of 1987, some from a helicopter. Book
+  『九龍城砦』 (Atelier Peyotl, 1988; Heibonsha, 1997, ISBN 4582277365).
+  https://en.wikipedia.org/wiki/Ry%C5%ABji_Miyamoto
+- "Hong Kong's Secret City" (1988, 45 min), Hawke Productions and ORF, with
+  Hugo Portisch. Footage from inside the city. No copy found yet.
+  https://www.themoviedb.org/movie/416270
+- "The Law of Love: The Jackie Pullinger Story" (Channel 4, 1989, dir. Paul
+  Lee). Footage from 1989. No copy found yet.
+- Jackie Pullinger, *Crack in the Wall: Life and Death in Kowloon Walled
+  City* (Hodder & Stoughton, 1989). A memoir of her work in the city from 1966.
+- SCMP photo archive. The SCMP gallery "Hong Kong's Kowloon Walled City, from
+  the 1970s to demolition" has staff photos. Find the dates and photographers.
 - Gerald Posner's account of his 1987 visit with a police escort
   (https://posner.com/geraldposner/2016/05/tbt-reminder-of-my-1987-police-escort.html).
   First-hand, but written in 2016.
+
+**Secondary works with useful references**
+- Lai, Chua and Chua, "The History of Planning for Kowloon City", *Planning
+  Perspectives* 33:1 (2018), 97–112. Read its references for government
+  planning records. https://doi.org/10.1080/02665433.2017.1331751
