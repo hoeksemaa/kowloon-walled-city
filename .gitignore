@@ -8,3 +8,6 @@ __pycache__/
 # trace inputs and previews (tools/trace_plan.py)
 plan.png
 trace-*.png
+
+# copyrighted originals: kept on this machine only (see primary-sources/README.md)
+primary-sources/**/local/

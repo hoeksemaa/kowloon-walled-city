@@ -1,0 +1,136 @@
+{
+  "continue": {
+    "iistart": "2006-04-27T11:41:20Z",
+    "continue": "||revisions"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 736281,
+        "ns": 6,
+        "title": "File:Aerial view of Kowloon Walled City in Hong Kong on 1989-03-27.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2007-08-20T19:17:53Z",
+            "user": "Interiot~commonswiki",
+            "size": 190927,
+            "width": 711,
+            "height": 514,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Aerial_view_of_Kowloon_Walled_City_in_Hong_Kong_on_1989-03-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Kowloon_Walled_City_in_Hong_Kong_on_1989-03-27.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=736281",
+            "sha1": "ed2935c80691ab0d48c7ed68c410fb6039660130",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-08-20 19:17:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Aerial view of Kowloon Walled City in Hong Kong on 1989-03-27",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Temple Hill|Unicorn Ridge|GFDL|License migration redundant|1989 in Hong Kong|Self-published work|Files with coordinates missing SDC location of creation|Historical images of Kowloon Walled City|Historical aerial photographs of Hong Kong|Tiu Tso Ngam",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "22.328333",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "114.186944",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Kowloon_Walled_City\" class=\"extiw\" title=\"en:Kowloon Walled City\">Kowloon Walled City</a>, Hong Kong, being dismanteled, that I photographed from an aeroplane 1989-03-27.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1989-03-27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jidanni\" title=\"User:Jidanni\">User:Jidanni</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "GFDL-self",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ],
+        "revisions": [
+          {
+            "user": "SchlurcherBot",
+            "timestamp": "2023-07-09T14:03:05Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "== {{int:filedesc}} ==\n{{Information\n|Description={{de|1=Luftbild der heute nicht mehr existierenden [[:de:Kowloon Walled City|Kowloon Walled City]] in Hongkong.}}\n{{en|[[:en:Kowloon Walled City|Kowloon Walled City]], Hong Kong, being dismanteled, that I photographed from an aeroplane 1989-03-27.}}\n|Source={{Own}}\n|Author=[[User:Jidanni]]\n|Date=1989-03-27\n|Permission=GFDL-self\n|other_versions=[[File:Kowloon Walled City.jpg|300px]]\n}}\n{{location|22|19|42|N|114|11|13|E|type:city_scale:1000_heading:NE}}\n{{Object location|22|19|56|N|114|11|25|E}}\n== {{int:license-header}} ==\n{{Self|GFDL|Cc-by-sa-3.0-migrated}}\n[[Category:Historical images of Kowloon Walled City]]\n[[Category:Historical aerial photographs of Hong Kong]]\n[[Category:Unicorn Ridge]]\n[[Category:Temple Hill]]\n[[Category:Tiu Tso Ngam]]\n[[Category:1989 in Hong Kong]]"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

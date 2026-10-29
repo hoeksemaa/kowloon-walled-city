@@ -1,0 +1,128 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 23017553,
+        "ns": 6,
+        "title": "File:九龍城寨 - Kowloon Walled City in 1991 (2350913856).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2012-12-05T12:19:43Z",
+            "user": "File Upload Bot (Magnus Manske)",
+            "size": 2497666,
+            "width": 2354,
+            "height": 3454,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_%282350913856%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=23017553",
+            "sha1": "be5719cd728558dfc6ea75cd4719711e34a7e696",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-12-05 12:19:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "九龍城寨 - Kowloon Walled City in 1991 (2350913856)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "September 1991|1991 in Hong Kong|Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by File Upload Bot (Magnus Manske)|Photos by antwerpenR|September 1991 photographs|Files with coordinates missing SDC location of creation|Historical images of Kowloon Walled City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "22.333089",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "114.158866",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Kowloon Walled City - Hong Kong - this was in September 1991 shortly before they demolished the place and replaced it with quite a nice park\n</p><p><a href=\"https://en.wikipedia.org/wiki/en:Kowloon_Walled_City\" class=\"extiw\" title=\"w:en:Kowloon Walled City\">en.wikipedia.org/wiki/Kowloon_Walled_City</a>\n</p>\n<a rel=\"nofollow\" class=\"external text\" href=\"http://www.lcsd.gov.hk/parks/kwcp/en/index.php\">www.lcsd.gov.hk/parks/kwcp/en/index.php</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken in September 1991",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/rwp-roger/2350913856/\">九龍城寨 - Kowloon Walled City in 1991</a>\n</p>\n<ul><li>Uploaded by <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6\" title=\"User:Fæ\">Fæ</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/83555001@N00\">Roger Price</a> from Hong Kong, Hong Kong",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ],
+        "revisions": [
+          {
+            "user": "SchlurcherBot",
+            "timestamp": "2025-12-25T21:19:47Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "== {{int:filedesc}} ==\n{{Information\n| Description = Kowloon Walled City - Hong Kong - this was in September 1991 shortly before they demolished the place and replaced it with quite a nice park\n\n[[w:en:Kowloon_Walled_City|en.wikipedia.org/wiki/Kowloon_Walled_City]]\n[http://www.lcsd.gov.hk/parks/kwcp/en/index.php www.lcsd.gov.hk/parks/kwcp/en/index.php]\n| Source      = [https://www.flickr.com/photos/rwp-roger/2350913856/ 九龍城寨 - Kowloon Walled City in 1991]\n* Uploaded by [[User:Fæ|Fæ]]\n| Date        = {{Taken in|1991-09}}\n| Author      = [https://www.flickr.com/people/83555001@N00 Roger Price] from Hong Kong, Hong Kong\n| Permission  = \n| other_versions={{other|File:Kowloon Walled City 1991.jpg}}\n}}\n{{Location dec|22.333089|114.158866|source:Flickr}}\n\n== {{int:license-header}} ==\n{{cc-by-2.0}}\n{{flickrreview|File Upload Bot (Magnus Manske)|2012-12-05}}\n\n[[Category:1991 in Hong Kong]]\n[[Category:Historical images of Kowloon Walled City]]\n[[Category:September 1991]]\n[[Category:Photos by antwerpenR]]\n[[Category:Photos uploaded from Flickr by Fæ using a script]]"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
