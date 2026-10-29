@@ -1,0 +1,684 @@
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { buildSite } from './site.js';
+import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL } from './layout.js';
+import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
+import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
+import { createPopulation, Sim, makePeopleMesh } from './people.js';
+import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
+import { clamp, smoothstep, fmtClock } from './util.js';
+import { SOURCES_HTML } from './sources.js';
+
+const NO_HI = -100; // highlight id meaning "nothing hovered"
+const GAP = 13; // extra metres between storeys when fully exploded
+const POPULATION = 33000;
+const START_MINUTE = 5 * 60 + 20;
+const $ = (id) => document.getElementById(id);
+const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
+// Roads outside the city, by side of the plan. Only these two touched the city directly;
+// Sai Tau Tsuen lay to the south and west until 1985 (research/kwc-research.md, 1.3).
+const STREETS = { top: 'TUNG TAU TSUEN ROAD 東頭村道', right: 'TUNG TSING ROAD 東正道' };
+
+// Haze: things fade with depth below the plinth top and with distance from the city, the
+// way the city below the model dissolves in the reference video.
+THREE.ShaderChunk.fog_pars_vertex = `#ifdef USE_FOG
+varying float vFogDepth; varying vec3 vFogW;
+#endif`;
+THREE.ShaderChunk.fog_vertex = `#ifdef USE_FOG
+vFogDepth = - mvPosition.z;
+vFogW = (inverse(viewMatrix) * mvPosition).xyz;
+#endif`;
+THREE.ShaderChunk.fog_pars_fragment = `#ifdef USE_FOG
+uniform vec3 fogColor; varying float vFogDepth; varying vec3 vFogW;
+uniform float fogNear; uniform float fogFar;
+#endif`;
+THREE.ShaderChunk.fog_fragment = `#ifdef USE_FOG
+float fogH = smoothstep(2.0, -${PLINTH_DEPTH.toFixed(1)}, vFogW.y) * 0.86;
+float fogR = smoothstep(260.0, 1400.0, length(vFogW.xz));
+float fogFactor = max(fogH, fogR);
+gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
+#endif`;
+
+const canvas = $('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+
+const VIEW_H = 250;
+const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 1, 6000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.dampingFactor = 0.09;
+controls.screenSpacePanning = true;
+controls.zoomToCursor = true;
+controls.minZoom = 0.45;
+controls.maxZoom = 14;
+controls.minPolarAngle = 0.12;
+controls.maxPolarAngle = 1.42;
+{
+  const az = Math.PI * 0.25, el = 0.58, d = 1400;
+  controls.target.set(0, 14, 0);
+  camera.position.set(Math.sin(az) * Math.cos(el) * d, 14 + Math.sin(el) * d, Math.cos(az) * Math.cos(el) * d);
+  camera.zoom = 1.15;
+}
+
+const state = {
+  explode: 0, explodeTarget: 0, lift: 0, cut: -1,
+  speed: 60, hoverAgent: -1, hoverBld: -1, follow: false,
+};
+const offsets = new Float32Array(16);
+const shared = {
+  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uCutH: { value: CUT_H },
+};
+const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 } };
+
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing;
+
+async function init() {
+  await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
+  const plan = await (await fetch('./data/plan.json')).json();
+  site = buildSite(plan);
+  L = buildLayout(site, plan);
+  const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
+  lighting = new Lighting(scene, center);
+  const env = buildEnvironment(scene, L);
+  addStreetLabels(scene, site, env.roadOutline, STREETS);
+  addNorthArrow();
+
+  // ---- storeys ----
+  const antMat = new THREE.LineBasicMaterial({ color: '#3a3935' });
+  const slabGeo = new THREE.PlaneGeometry(L.W, L.D).rotateX(-Math.PI / 2).translate(center.x, 0, center.z);
+  const slabEdge = new THREE.EdgesGeometry(slabGeo);
+  levels = buildLevels(L).map((d) => {
+    const group = new THREE.Group();
+    const mat = makeBuildingMaterial(shared);
+    const mesh = new THREE.Mesh(d.geometry, mat);
+    mesh.castShadow = mesh.receiveShadow = true;
+    group.add(mesh);
+    const ag = new THREE.BufferGeometry();
+    ag.setAttribute('position', new THREE.BufferAttribute(d.antennas, 3));
+    const antennas = new THREE.LineSegments(ag, antMat);
+    group.add(antennas);
+    const slab = new THREE.Mesh(slabGeo, new THREE.MeshBasicMaterial({ color: '#1c1b18', transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }));
+    slab.position.y = d.k * STOREY - 0.06;
+    slab.renderOrder = 1;
+    const edge = new THREE.LineSegments(slabEdge, new THREE.LineBasicMaterial({ color: '#efe8d6', transparent: true, opacity: 0 }));
+    edge.position.y = slab.position.y;
+    slab.visible = edge.visible = false;
+    group.add(slab, edge);
+    scene.add(group);
+    return { k: d.k, group, mesh, mat, antennas, slab, edge, plan: null };
+  });
+
+  // Dotted corner posts that appear when the storeys are pulled apart.
+  const postGeo = new THREE.BufferGeometry();
+  const pp = [];
+  for (const [x, z] of [[L.x0, L.z0], [L.x0 + L.W, L.z0], [L.x0, L.z0 + L.D], [L.x0 + L.W, L.z0 + L.D]]) pp.push(x, 0, z, x, 1, z);
+  postGeo.setAttribute('position', new THREE.Float32BufferAttribute(pp, 3));
+  const posts = new THREE.LineSegments(postGeo, new THREE.LineDashedMaterial({ color: '#efe8d6', dashSize: 0.012, gapSize: 0.012, transparent: true, opacity: 0 }));
+  posts.computeLineDistances();
+  posts.visible = false;
+  scene.add(posts);
+  state.posts = posts;
+
+  // Dashed ring marking the cut height.
+  const ringPts = site.polygon.map(([x, z]) => new THREE.Vector3(x, 0, z));
+  cutRing = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(ringPts), new THREE.LineDashedMaterial({ color: '#e7a43c', dashSize: 1.6, gapSize: 1.1 }));
+  cutRing.computeLineDistances();
+  cutRing.visible = false;
+
+  // ---- wires ----
+  wires = new WireLayer(L, buildWires(L));
+  scene.add(wires.object);
+
+  // ---- people ----
+  const agents = createPopulation(L, POPULATION);
+  sim = new Sim(L, agents);
+  sim.setTime(START_MINUTE);
+  people = makePeopleMesh(sim, peopleU);
+  scene.add(people.mesh);
+  residents = new Map();
+  for (const a of agents) residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
+
+  buildUI();
+  buildStreetTags();
+  resize();
+  setOffsets(0);
+  $('loading').classList.add('done');
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels };
+  requestAnimationFrame(frame);
+}
+
+function addNorthArrow() {
+  const c = document.createElement('canvas');
+  c.width = c.height = 128;
+  const g = c.getContext('2d');
+  g.fillStyle = '#e9e1cf';
+  g.beginPath(); g.moveTo(64, 8); g.lineTo(88, 64); g.lineTo(64, 52); g.lineTo(40, 64); g.closePath(); g.fill();
+  g.font = '34px Silkscreen, monospace'; g.textAlign = 'center'; g.fillText('N', 64, 108);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+  m.rotation.x = -Math.PI / 2;
+  // Point the arrow at true north.
+  m.rotation.z = Math.atan2(-site.north[0], -site.north[1]);
+  m.position.set(L.x0 + L.W - 9, 0.05, L.z0 + L.D - 9);
+  scene.add(m);
+  document.fonts.ready.then(() => {
+    g.clearRect(0, 0, 128, 128);
+    g.beginPath(); g.moveTo(64, 8); g.lineTo(88, 64); g.lineTo(64, 52); g.lineTo(40, 64); g.closePath(); g.fill();
+    g.fillText('N', 64, 108);
+    tex.needsUpdate = true;
+  });
+}
+
+// ---- explode + cut --------------------------------------------------------------------------
+const ease = (t) => t * t * (3 - 2 * t);
+
+function setOffsets(e) {
+  for (let k = 0; k < 16; k++) offsets[k] = Math.min(k, MAX_FLOORS - 1) * GAP * e;
+  const show = state.explode > 0.01;
+  const a = smoothstep(0.05, 0.7, state.explode);
+  for (const lv of levels) {
+    lv.group.position.y = offsets[lv.k];
+    lv.slab.visible = lv.edge.visible = show;
+    lv.slab.material.opacity = 0.26 * a;
+    lv.edge.material.opacity = 0.55 * a;
+  }
+  const top = (MAX_FLOORS - 1) * GAP * e + MAX_FLOORS * STOREY;
+  state.posts.visible = show;
+  state.posts.scale.y = Math.max(top, 0.01);
+  state.posts.material.opacity = 0.5 * a;
+  state.posts.material.dashSize = state.posts.material.gapSize = 0.8 / Math.max(top, 1);
+  wires.update(offsets, state.cut);
+  // Keep the model framed as it grows: lift the view and zoom out, relative to the
+  // user's own zoom.
+  const lift = e * GAP * (MAX_FLOORS - 1) * 0.5;
+  const d = lift - state.lift;
+  state.lift = lift;
+  camera.position.y += d;
+  controls.target.y += d;
+  const zf = 1 / (1 + 1.25 * e);
+  camera.zoom *= zf / (state.zf || 1);
+  state.zf = zf;
+  camera.updateProjectionMatrix();
+  if (state.cut >= 0) cutRing.position.y = state.cut * STOREY + CUT_H + 0.05;
+}
+
+function setCut(c) {
+  state.cut = c;
+  for (const lv of levels) {
+    lv.group.visible = c < 0 || lv.k <= c;
+    lv.mat.userData.uIsCut.value = lv.k === c ? 1 : 0;
+    lv.antennas.visible = lv.k !== c;
+    if (lv.plan) {
+      lv.group.remove(lv.plan.mesh, lv.plan.lines);
+      lv.plan.mesh.geometry.dispose();
+      lv.plan.lines.geometry.dispose();
+      lv.plan = null;
+    }
+  }
+  if (cutRing.parent) cutRing.parent.remove(cutRing);
+  if (c >= 0) {
+    const p = buildPlan(L, c);
+    const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
+    const lines = new THREE.LineSegments(p.lines, new THREE.LineDashedMaterial({ color: '#f1ead8', dashSize: 0.42, gapSize: 0.3 }));
+    lines.computeLineDistances();
+    levels[c].group.add(mesh, lines);
+    levels[c].plan = { mesh, lines };
+    levels[c].group.add(cutRing);
+    cutRing.position.y = c * STOREY + CUT_H + 0.05;
+    cutRing.visible = true;
+  }
+  peopleU.uCutY.value = c < 0 ? 1e5 : c * STOREY + 0.4;
+  wires.update(offsets, c);
+  renderRail();
+  renderLegend();
+}
+
+// ---- picking ----------------------------------------------------------------------------------
+const raycaster = new THREE.Raycaster();
+const ndc = new THREE.Vector2();
+const mouse = { x: -1, y: -1, moved: false, inside: false };
+
+function pickBuilding() {
+  raycaster.setFromCamera(ndc, camera);
+  const { origin: o, direction: d } = raycaster.ray;
+  if (Math.abs(d.y) < 1e-6) return null;
+  let best = null;
+  const hd = Math.hypot(d.x, d.z);
+  for (const lv of levels) {
+    if (!lv.group.visible) continue;
+    const k = lv.k;
+    const yb = k * STOREY + offsets[k], yt = yb + (k === state.cut ? CUT_H : STOREY);
+    let t0 = (yt - o.y) / d.y, t1 = (yb - o.y) / d.y;
+    if (t0 > t1) [t0, t1] = [t1, t0];
+    if (best && t0 > best.t) continue;
+    const steps = Math.ceil(((t1 - t0) * hd) / 0.3) + 1;
+    for (let s = 0; s <= steps; s++) {
+      const t = t0 + ((t1 - t0) * s) / steps;
+      const i = Math.floor(o.x + d.x * t - L.x0), j = Math.floor(o.z + d.z * t - L.z0);
+      if (i < 0 || j < 0 || i >= L.W || j >= L.D) continue;
+      const b = L.owner[j * L.W + i];
+      if (b >= 0 && L.buildings[b].floors > k) {
+        if (!best || t < best.t) best = { t, b, k };
+        break;
+      }
+    }
+  }
+  return best;
+}
+
+const _v = new THREE.Vector3();
+function agentScreen(a) {
+  const o = a.id * 4, P = sim.aP;
+  const lv = clamp(P[o + 3], 0, 14.99), i0 = Math.floor(lv);
+  const off = offsets[i0] + (offsets[i0 + 1] - offsets[i0]) * (lv - i0);
+  _v.set(P[o], P[o + 2] + off + 1.0, P[o + 1]).project(camera);
+  return [(_v.x * 0.5 + 0.5) * innerWidth, (-_v.y * 0.5 + 0.5) * innerHeight];
+}
+
+function pickAgent() {
+  if (!people.mesh.visible) return -1;
+  let best = -1, bd = 81;
+  const P = sim.aP;
+  for (const a of sim.agents) {
+    const o = a.id * 4;
+    if (P[o + 3] < 0 || P[o + 2] > peopleU.uCutY.value) continue;
+    const cellK = Math.floor(P[o + 1] - L.z0) * L.W + Math.floor(P[o] - L.x0);
+    const outdoors = !L.inside[cellK] || (a.loc && a.loc.type === 'roof');
+    const lvl = Math.round(P[o + 2] / STOREY);
+    if (!(outdoors || state.explode > 0.5 || (state.cut >= 0 && lvl === state.cut))) continue;
+    const [sx, sy] = agentScreen(a);
+    const dd = (sx - mouse.x) ** 2 + (sy - mouse.y) ** 2;
+    if (dd < bd) { bd = dd; best = a.id; }
+  }
+  return best;
+}
+
+// ---- UI -------------------------------------------------------------------------------------------
+function buildUI() {
+  $('src-body').innerHTML = SOURCES_HTML;
+  const tool = (id, on, fn) => {
+    const el = $(id);
+    el.onclick = () => {
+      const v = fn();
+      el.classList.toggle('on', v);
+      el.setAttribute('aria-pressed', String(v));
+    };
+    el.classList.toggle('on', on);
+  };
+  tool('t-explode', false, () => { state.explodeTarget = state.explodeTarget > 0.5 ? 0 : 1; return state.explodeTarget > 0.5; });
+  tool('t-wires', true, () => {
+    wires.object.visible = !wires.object.visible;
+    renderLegend();
+    return wires.object.visible;
+  });
+  tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
+  $('rail-clear').onclick = () => setCut(-1);
+  $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
+  $('src-close').onclick = () => ($('sources').hidden = true);
+
+  for (const b of $('speeds').querySelectorAll('button'))
+    b.onclick = () => setSpeed(Number(b.dataset.speed));
+
+  $('spark').onclick = (ev) => {
+    const r = $('spark').getBoundingClientRect();
+    sim.setTime(clamp((ev.clientX - r.left) / r.width, 0, 0.999) * 1440);
+  };
+
+  // Storey labels for the exploded view.
+  labels = levels.map((lv) => {
+    const el = document.createElement('div');
+    el.className = 'stratum';
+    el.textContent = `${levelName(lv.k)} ${levelTitle(lv.k)}`;
+    $('strata').appendChild(el);
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('stroke', '#2a2722');
+    line.setAttribute('stroke-width', '1');
+    $('overlay').appendChild(line);
+    return { el, line };
+  });
+
+  buildRail();
+  renderRail();
+  renderLegend();
+  drawSpark();
+
+  canvas.addEventListener('pointermove', (ev) => {
+    mouse.x = ev.clientX; mouse.y = ev.clientY; mouse.moved = true; mouse.inside = true;
+    ndc.set((ev.clientX / innerWidth) * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1);
+  });
+  canvas.addEventListener('pointerleave', () => { mouse.inside = false; hideTooltip(); });
+  let down = null;
+  canvas.addEventListener('pointerdown', (ev) => (down = [ev.clientX, ev.clientY]));
+  canvas.addEventListener('pointerup', (ev) => {
+    if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
+    const id = pickAgent();
+    sim.select(id);
+    state.follow = false;
+  });
+  addEventListener('keydown', (ev) => {
+    if (ev.target.closest && ev.target.closest('input, textarea')) return;
+    const k = ev.key.toLowerCase();
+    if (k === 'e') $('t-explode').click();
+    else if (k === 'w') $('t-wires').click();
+    else if (k === 'p') $('t-people').click();
+    else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
+    else if (k === 'escape') { setCut(-1); sim.select(-1); }
+    else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || 60); }
+    else if (ev.key === 'ArrowUp') { ev.preventDefault(); setCut(state.cut < 0 ? -1 : state.cut + 1 >= MAX_FLOORS ? -1 : state.cut + 1); }
+    else if (ev.key === 'ArrowDown') { ev.preventDefault(); setCut(state.cut < 0 ? MAX_FLOORS - 1 : Math.max(0, state.cut - 1)); }
+  });
+  addEventListener('resize', resize);
+}
+
+function setSpeed(s) {
+  if (state.speed) state.lastSpeed = state.speed;
+  state.speed = s;
+  for (const b of $('speeds').querySelectorAll('button')) b.classList.toggle('on', Number(b.dataset.speed) === s);
+}
+
+function levelTitle(k) {
+  if (k === 0) return 'STREET · SHOPS + FACTORIES';
+  let total = 0, work = 0, roofs = 0;
+  for (const b of L.buildings) {
+    if (b.floors > k) { total++; if (b.uses[k] !== 'home') work++; }
+    if (b.floors === k + 1) roofs++;
+  }
+  const t = work / Math.max(1, total) > 0.06 ? 'WORKSHOPS + FLATS' : 'HABITATION';
+  return roofs / Math.max(1, total + roofs) > 0.25 ? `${t} · ROOFS` : t;
+}
+
+let occ = new Map();
+const railRows = [];
+function buildRail() {
+  const ol = $('levels');
+  const row = (label, k) => {
+    const li = document.createElement('li');
+    const b = document.createElement('button');
+    b.innerHTML = `<span>${label}</span><span class="occ"><i></i></span>`;
+    b.onclick = () => setCut(k === -1 || k === state.cut ? -1 : k);
+    li.appendChild(b);
+    ol.appendChild(li);
+    railRows.push({ k, label, b, bar: b.querySelector('i') });
+  };
+  row('RF', -1);
+  for (let k = MAX_FLOORS - 1; k >= 0; k--) {
+    row(levelName(k), k);
+    if (k === 1) {
+      const sep = document.createElement('li');
+      sep.className = 'sep';
+      ol.appendChild(sep);
+    }
+  }
+}
+
+function renderRail() {
+  const maxOcc = Math.max(1, ...occ.values());
+  for (const r of railRows) {
+    const n = occ.get(r.k === -1 ? 'RF' : r.k) || 0;
+    r.b.className = ['has', (r.k === -1 ? state.cut < 0 : r.k === state.cut) ? 'sel' : '', state.cut >= 0 && r.k > state.cut ? 'above' : ''].join(' ');
+    r.bar.style.height = `${Math.round((n / maxOcc) * 100)}%`;
+    r.b.title = r.k === -1 ? `Roofs: ${n} people now. Click to show every storey.` : `${r.label}: ${n} people now. Click to cut the city at this storey.`;
+  }
+}
+
+function renderLegend() {
+  const g = [];
+  if (state.cut >= 0) {
+    const here = new Set(L.buildings.filter((b) => b.floors > state.cut).map((b) => b.uses[state.cut]));
+    const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
+    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE (PLACEHOLDER)</h3>${uses
+      .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
+      .join('')}</div>`);
+  }
+  if (wires && wires.object.visible) {
+    const seen = new Set();
+    const rows = WIRE_TYPES.filter((t) => (seen.has(t.label) ? false : seen.add(t.label)))
+      .map((t) => `<div class="row"><span class="sw" style="background:${t.color}"></span>${t.label}</div>`)
+      .join('');
+    g.push(`<div class="grp"><h3>UTILITIES (SCHEMATIC)</h3>${rows}</div>`);
+  }
+  $('legend').innerHTML = g.join('');
+}
+
+function drawSpark() {
+  const c = $('spark-c'), g = c.getContext('2d');
+  g.clearRect(0, 0, c.width, c.height);
+  g.fillStyle = 'rgba(40,40,60,0.12)';
+  g.fillRect(0, 0, (6.5 / 24) * c.width, c.height);
+  g.fillRect((18.5 / 24) * c.width, 0, c.width, c.height);
+  const max = Math.max(1, ...sim.activity);
+  g.fillStyle = '#26231f';
+  for (let i = 0; i < 144; i++) {
+    const h = Math.round((sim.activity[i] / max) * (c.height - 4));
+    g.fillRect(i * 2, c.height - h, 2, h);
+  }
+  g.fillStyle = '#6b6457';
+  g.font = '9px "IBM Plex Mono", monospace';
+  for (const h of [6, 12, 18]) g.fillText(String(h).padStart(2, '0'), (h / 24) * c.width + 2, 10);
+}
+
+function showTooltip(html) {
+  const t = $('tooltip');
+  t.innerHTML = html;
+  t.style.display = 'block';
+  const w = t.offsetWidth, h = t.offsetHeight;
+  let x = mouse.x + 16, y = mouse.y + 14;
+  if (x + w > innerWidth - 90) x = mouse.x - w - 16;
+  if (y + h > innerHeight - 10) y = mouse.y - h - 14;
+  t.style.left = `${x}px`;
+  t.style.top = `${y}px`;
+}
+function hideTooltip() {
+  $('tooltip').style.display = 'none';
+  shared.uHi.value = NO_HI;
+}
+
+function buildingTooltip(b, k) {
+  const B = L.buildings[b];
+  if (B.kind === 'yamen')
+    return `<div class="tt-h">YAMEN 衙門 · HALL</div><div>Qing-era official compound, the one old building left in the city</div><div>in the 1980s: old people’s centre (老人中心), per the exhibit plan</div><div class="tt-s">walls and roof from the traced plot · roof form is generic</div>`;
+  const runs = [];
+  for (let f = 0; f < B.floors; f++) {
+    const u = B.uses[f];
+    if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].to = f;
+    else runs.push({ u, from: f, to: f });
+  }
+  const rows = runs
+    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
+    .join('');
+  const title = B.name ? buildingName(B).toUpperCase() : `BLDG ${b}`;
+  const front = B.front === 'top' ? '<div class="tt-s">fronts Tung Tau Tsuen Road</div>' : B.front === 'road' ? '<div class="tt-s">fronts a road on the old wall base</div>' : '';
+  const fact = B.factory ? '<div class="tt-s">factory site marked on the exhibit plan</div>' : '';
+  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${front}${fact}
+    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>
+    <div class="tt-s">plot traced from the plan · storeys and uses are placeholders</div>`;
+}
+
+function agentTooltip(id) {
+  const d = sim.describe(sim.agents[id]);
+  return `<div class="tt-h">${d.title} · ${d.age}</div><div>${d.role}</div>
+    <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
+    <div><span class="tt-k">home</span> ${d.home}</div><div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+}
+
+function updateHover() {
+  if (!mouse.inside) return;
+  const id = pickAgent();
+  if (id >= 0) {
+    shared.uHi.value = NO_HI;
+    showTooltip(agentTooltip(id));
+    return;
+  }
+  const hit = pickBuilding();
+  if (hit) {
+    shared.uHi.value = hit.b;
+    showTooltip(buildingTooltip(hit.b, hit.k));
+  } else hideTooltip();
+}
+
+const _w = new THREE.Vector3();
+function updateLabels() {
+  const show = state.explode > 0.35;
+  const svg = $('overlay');
+  levels.forEach((lv, k) => {
+    const { el, line } = labels[k];
+    const visible = show && lv.group.visible;
+    el.style.display = visible ? 'block' : 'none';
+    line.style.display = visible ? 'block' : 'none';
+    if (!visible) return;
+    let bx = Infinity, by = 0;
+    for (const [x, z] of [[L.x0, L.z0], [L.x0 + L.W, L.z0], [L.x0, L.z0 + L.D], [L.x0 + L.W, L.z0 + L.D]]) {
+      _w.set(x, k * STOREY + offsets[k], z).project(camera);
+      const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
+      if (sx < bx) { bx = sx; by = sy; }
+    }
+    // Sit just left of the slab's outer corner, clear of the toolbar.
+    const w = el.offsetWidth;
+    const minX = by < 230 ? 96 : 14;
+    const lx = Math.max(minX, bx - w - 36);
+    el.style.left = `${lx}px`;
+    el.style.top = `${by}px`;
+    el.style.opacity = String(smoothstep(0.35, 0.8, state.explode));
+    const right = lx + w;
+    line.setAttribute('x1', right); line.setAttribute('y1', by);
+    line.setAttribute('x2', Math.max(right, bx)); line.setAttribute('y2', by);
+  });
+  svg.style.opacity = String(smoothstep(0.35, 0.8, state.explode));
+}
+
+function updateTags() {
+  const tag = $('tag');
+  if (sim.selected >= 0 && people.mesh.visible) {
+    const a = sim.agents[sim.selected];
+    const lv = sim.levelOf(a);
+    if (lv === null) {
+      tag.textContent = `${a.name} · outside the city`;
+      tag.style.display = 'block';
+      tag.style.left = '50%'; tag.style.top = '64px';
+    } else {
+      const [sx, sy] = agentScreen(a);
+      tag.textContent = `${a.name} · ${lv === 'RF' ? 'roof' : levelName(lv)}`;
+      tag.style.display = 'block';
+      tag.style.left = `${sx}px`; tag.style.top = `${sy}px`;
+      if (state.follow) {
+        const o = a.id * 4;
+        controls.target.x += (sim.aP[o] - controls.target.x) * 0.06;
+        controls.target.z += (sim.aP[o + 1] - controls.target.z) * 0.06;
+      }
+    }
+  } else tag.style.display = 'none';
+
+  const ct = $('cut-tag');
+  if (state.cut >= 0) {
+    let bx = Infinity, by = 0;
+    for (const [x, z] of site.polygon) {
+      _w.set(x, state.cut * STOREY + CUT_H + offsets[state.cut], z).project(camera);
+      const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
+      if (sx < bx) { bx = sx; by = sy; }
+    }
+    ct.textContent = `CUT ${levelName(state.cut)} ${levelTitle(state.cut)}`;
+    ct.style.display = state.explode > 0.35 ? 'none' : 'block';
+    ct.style.left = `${bx - 10}px`; ct.style.top = `${by}px`;
+  } else ct.style.display = 'none';
+}
+
+// Street names from the exhibit plan, tagged above the lanes with a leader to the ground.
+let streetTags = [];
+function buildStreetTags() {
+  streetTags = L.streets.map((st) => {
+    const el = document.createElement('div');
+    el.className = 'street-tag';
+    const [en, zh] = [st.name.replace(/\s*[\u3400-\u9fff]+$/, ''), (st.name.match(/[\u3400-\u9fff]+$/) || [''])[0]];
+    el.innerHTML = `<b>${zh}</b> ${en.toUpperCase()}`;
+    document.body.insertBefore(el, $('title')); // under the panels
+    // Lift the tag above the tallest building within 12 m.
+    let top = 0;
+    for (const b of L.buildings) if (Math.hypot(b.cx - st.x, b.cz - st.z) < 12) top = Math.max(top, b.floors);
+    return { st, el, y: top * STOREY + 7 };
+  });
+}
+function updateStreetTags() {
+  const show = state.explode < 0.3;
+  for (const t of streetTags) {
+    t.el.style.display = show ? 'block' : 'none';
+    if (!show) continue;
+    const y = state.cut >= 0 ? state.cut * STOREY + 7 : t.y;
+    _w.set(t.st.x, y, t.st.z).project(camera);
+    const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
+    _w.set(t.st.x, 0, t.st.z).project(camera);
+    const gy = (-_w.y * 0.5 + 0.5) * innerHeight;
+    t.el.style.left = `${sx}px`;
+    t.el.style.top = `${sy}px`;
+    t.el.style.setProperty('--lead', `${Math.max(0, gy - sy)}px`);
+  }
+}
+
+const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+let lastDay = -1;
+function updateClock() {
+  $('clk-time').textContent = fmtClock(sim.minute);
+  const d = new Date(Date.UTC(1989, 2, 14 + sim.day));
+  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
+  const s = sim.stats();
+  occ = s.perLevel;
+  $('clk-stats').innerHTML = `<b>${sim.agents.length.toLocaleString()}</b> residents (simulated) · <b>${s.away.toLocaleString()}</b> outside the walls · <b>${s.moving.toLocaleString()}</b> on the move`;
+  if (sim.day !== lastDay) { lastDay = sim.day; drawSpark(); }
+  renderRail();
+}
+
+function resize() {
+  const w = innerWidth, h = innerHeight, a = w / h;
+  renderer.setSize(w, h);
+  camera.left = (-VIEW_H * a) / 2; camera.right = (VIEW_H * a) / 2;
+  camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
+  camera.updateProjectionMatrix();
+  wires.setResolution(w, h);
+}
+
+// ---- loop -------------------------------------------------------------------------------------------
+let last = performance.now(), frameN = 0, clockT = 0;
+function frame(now) {
+  const dt = Math.min(0.1, (now - last) / 1000);
+  last = now;
+  frameN++;
+  const prev = state.explode;
+  state.explode += (state.explodeTarget - state.explode) * (1 - Math.exp(-dt * 3.0));
+  if (Math.abs(state.explodeTarget - state.explode) < 1e-3) state.explode = state.explodeTarget;
+  if (state.explode !== prev) setOffsets(ease(state.explode));
+
+  sim.step(dt * state.speed);
+  people.aP.needsUpdate = true;
+  if (sim.colorsDirty) { people.aC.needsUpdate = true; sim.colorsDirty = false; }
+
+  const hour = sim.minute / 60;
+  shared.uHour.value = hour;
+  shared.uNight.value = lighting.update(hour, state.lift);
+  const dark = shared.uNight.value > 0.55;
+  if (dark !== state.dark) {
+    state.dark = dark;
+    document.documentElement.style.setProperty('--title-ink', dark ? '#e9e1cf' : '#1c1b19');
+    document.documentElement.style.setProperty('--title-ink-2', dark ? '#b9b2a2' : '#3f3b34');
+  }
+
+  controls.update();
+  if (frameN % 3 === 0 && mouse.moved) updateHover();
+  updateLabels();
+  updateTags();
+  updateStreetTags();
+  clockT += dt;
+  if (clockT > 0.25) { clockT = 0; updateClock(); }
+  renderer.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+
+init().catch((err) => {
+  console.error(err);
+  $('loading').textContent = `FAILED TO BUILD: ${err.message}`;
+});

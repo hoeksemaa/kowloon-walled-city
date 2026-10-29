@@ -1,0 +1,10 @@
+.DS_Store
+.vercel
+.env*
+node_modules/
+__pycache__/
+*.pyc
+
+# trace inputs and previews (tools/trace_plan.py)
+plan.png
+trace-*.png

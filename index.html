@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kowloon Walled City · 1989</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <svg id="overlay" aria-hidden="true"></svg>
+  <div id="strata" aria-hidden="true"></div>
+
+  <header id="title">
+    <div class="t-cn">九龍城寨</div>
+    <div class="t-en">KOWLOON WALLED CITY</div>
+    <div class="t-sub">TUE 14 MAR 1989 · DRAFT 0.2 · PLAN TRACED · HEIGHTS PROVISIONAL</div>
+  </header>
+
+  <nav id="toolbar" class="panel" aria-label="Tools">
+    <div class="tb-head"><i></i><i></i><i></i></div>
+    <button class="tool" id="t-explode" title="Pull the storeys apart (E)" aria-pressed="false">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
+      <span class="chev">›</span>
+    </button>
+    <button class="tool on" id="t-wires" title="Cables and pipes (W)" aria-pressed="true">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M1 4h2v2h1v2h1v1h2v1h2V9h2V8h1V6h1V4h2v2h-1v2h-1v1h-1v1h-2v1H7v-1H5V9H4V8H3V6H1z" fill="currentColor"/></svg>
+      <span class="chev">›</span>
+    </button>
+    <button class="tool on" id="t-people" title="People (P)" aria-pressed="true">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M6 1h4v4H6z M5 6h6v5H9v4H7v-4H5z" fill="currentColor"/></svg>
+      <span class="chev">›</span>
+    </button>
+  </nav>
+
+  <aside id="rail" class="panel" aria-label="Storeys">
+    <button class="rail-head" id="rail-clear" title="Show every storey (Esc)">«</button>
+    <ol id="levels"></ol>
+    <div class="rail-foot">═</div>
+  </aside>
+
+  <section id="clock" class="panel" aria-label="Time">
+    <div class="clk-row">
+      <span id="clk-date">TUE 14 MAR 1989</span>
+      <span id="clk-time">05:20</span>
+    </div>
+    <div id="spark" title="People away from home, through the day. Click to jump.">
+      <canvas id="spark-c" width="288" height="44"></canvas>
+      <i id="playhead"></i>
+    </div>
+    <div class="clk-row speeds" id="speeds">
+      <button data-speed="0" title="Pause (Space)">❚❚</button>
+      <button data-speed="1">1×</button>
+      <button data-speed="60" class="on">60×</button>
+      <button data-speed="300">300×</button>
+      <button data-speed="1200">1200×</button>
+    </div>
+    <div id="clk-stats"></div>
+  </section>
+
+  <section id="legend" class="panel"></section>
+
+  <div id="tooltip" role="status"></div>
+  <div id="tag"></div>
+  <div id="cut-tag"></div>
+  <div id="hint">DRAG ROTATE · RIGHT-DRAG PAN · SCROLL ZOOM · CLICK A PERSON TO FOLLOW</div>
+
+  <button id="src-btn">SOURCES + NOTES</button>
+  <section id="sources" class="panel" hidden>
+    <button id="src-close" title="Close">×</button>
+    <h2>Sources and status of this draft</h2>
+    <div id="src-body"></div>
+  </section>
+
+  <div id="loading">BUILDING THE CITY…</div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
