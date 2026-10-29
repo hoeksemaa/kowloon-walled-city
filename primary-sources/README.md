@@ -33,7 +33,7 @@ are not primary. Do not put them here.
 | [`mplus-girard-lambot-photos/`](mplus-girard-lambot-photos/SOURCE.md) | M+ photos by Girard and Lambot: south elevation, alleys, roofs, stairs, aerial | 1987–1991 | no (© Girard, © Lambot) | https://www.mplus.org.hk/en/collection/makers/ian-lambot/ |
 | [`uk-lords-hansard-1974/`](uk-lords-hansard-1974/SOURCE.md) | House of Lords debate: a first-hand account of lanes, drains, water, power | 11 Jun 1974 | yes (Open Parliament Licence) | https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon |
 | [`upi-reports-1984-1987/`](upi-reports-1984-1987/SOURCE.md) | UPI wire reports from Hong Kong: Battenfeld (1984), Jones (1987) | 18 Dec 1984, 15 Feb 1987 | no (© UPI) | https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/ |
-| [`gwulo-suddaby-1987/`](gwulo-suddaby-1987/SOURCE.md) | Andrew Suddaby's street photos of the north face, Tung Tau Tsuen Road | 1 Nov 1987 | no (photographer's rights) | https://gwulo.com/media/22835 |
+| [`gwulo-suddaby-1987/`](gwulo-suddaby-1987/SOURCE.md) | Andrew Suddaby's four street photos: north face on Tung Tau Tsuen Road, and the south side | 1 Nov 1987 | no (photographer's rights) | https://gwulo.com/photos/by-gallery?gallery=8687&page=1 |
 
 ## Blocked: links for John to look at
 
