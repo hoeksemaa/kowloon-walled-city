@@ -1,156 +1,263 @@
-// Cables and pipes strung across the alleys and down the facades.
+// Utilities: power cables, water pipes, telephone lines and TV aerial leads, strung across
+// the lanes, along the walls and up the faces of the buildings.
 //
-// Each wire keeps a fixed length. When the storeys are pulled apart, its ends move with
+// SOURCED: two private suppliers inside, "一人專門供電，另一人專門供水", and power-company
+// meters near the outer streets (林羅平, HK01 2024); meters in each flat, asked for by the
+// kaifong (HK01 2016); water from about 70 wells (Gordon Jones, WSJ 2014) pumped to roof
+// tanks; street standpipes only on Tung Tau Tsuen Road and Tung Tsing Road (葉德偉, HK01
+// 2016), seven on the edge and one inside (WSJ narration, no date); water by floor in the
+// morning, "二、三樓可能於早上6、7點來水，然後8、9時就輪到三、四樓" (林羅平); a broken pipe was
+// not mended, "只會再駁一條新的" (HK01 2016); "knotted wires, dangling electric cables"
+// (Posner, 1987 visit). SCHEMATIC: where each line runs. No map of the lines survives.
+//
+// Each line keeps a fixed length. When the storeys are pulled apart, its ends move with
 // their storeys: a slack cable straightens, then stays taut.
 import * as THREE from 'three';
 import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { STOREY } from './layout.js';
-import { mulberry32, clamp } from './util.js';
+import { mulberry32, clamp, weighted } from './util.js';
+import { OUTSIDE } from './footprint.js';
+import { wallFrame } from './geom.js';
 
 export const WIRE_TYPES = [
-  { key: 'power', label: 'electricity', color: '#f2a43a', w: 5 },
-  { key: 'power', label: 'electricity', color: '#e2642f', w: 3 },
-  { key: 'water', label: 'water pipe', color: '#5cc6c4', w: 3 },
-  { key: 'phone', label: 'telephone', color: '#a68ad6', w: 1.5 },
-  { key: 'tv', label: 'TV cable', color: '#d9d3c2', w: 1.2 },
+  { key: 'power', label: 'electricity', color: '#f2a43a', px: 1.9 },
+  { key: 'water', label: 'water pipe (flows at its supply hour)', color: '#5cc6c4', px: 1.8 },
+  { key: 'phone', label: 'telephone', color: '#a68ad6', px: 1.2 },
+  { key: 'tv', label: 'TV aerial lead', color: '#d9d3c2', px: 1.0 },
 ];
-
+const T = Object.fromEntries(WIRE_TYPES.map((t, i) => [t.key, i]));
 const SEGS = 10;
+
+// Water by floor (林羅平, HK01 2024): [first floor, last floor, start hour, end hour].
+export const WATER_HOURS = [[2, 3, 6, 7], [3, 4, 8, 9]];
 
 export function buildWires(L) {
   const rng = mulberry32(42);
-  const { W, D, owner, alley, buildings, x0, z0 } = L;
+  const { W, D, owner, alley, buildings: B, x0, z0 } = L;
   const wires = [];
   const own = (i, j) => (i < 0 || j < 0 || i >= W || j >= D ? -1 : owner[j * W + i]);
-  const type = () => {
-    let r = rng() * WIRE_TYPES.reduce((s, t) => s + t.w, 0);
-    for (let t = 0; t < WIRE_TYPES.length; t++) if ((r -= WIRE_TYPES[t].w) <= 0) return t;
-    return 0;
-  };
-  const alleyCells = [];
-  for (let c = 0; c < L.N; c++) if (L.inside[c] && alley[c] === 1) alleyCells.push(c);
+  const isLane = (i, j) => i >= 0 && j >= 0 && i < W && j < D && alley[j * W + i] === 1;
 
-  // Spans across an alley, wall to wall.
-  for (let n = 0; n < 1500; n++) {
-    const c = alleyCells[Math.floor(rng() * alleyCells.length)];
+  // The walls of each building that face open ground, for fixing line ends to.
+  const open = B.map((b) => b.rings.flatMap((r) => r.edges.filter((e) => e.other < 0).map(wallFrame)));
+  const snap = (b, x, z, off = 0.08) => {
+    let best = null, bd = Infinity;
+    for (const f of open[b]) {
+      const t = clamp((x - f.A[0]) * f.t[0] + (z - f.A[1]) * f.t[1], 0.1, f.len - 0.1);
+      const px = f.A[0] + f.t[0] * t, pz = f.A[1] + f.t[1] * t;
+      const d = (px - x) ** 2 + (pz - z) ** 2;
+      if (d < bd) { bd = d; best = [px + f.n[0] * off, pz + f.n[1] * off, f.n[0], f.n[1], Math.sqrt(d)]; }
+    }
+    return best;
+  };
+  const laneCells = [];
+  for (let c = 0; c < L.N; c++) if (L.inside[c] && alley[c] === 1) laneCells.push(c);
+  const pickType = (mix) => T[weighted(rng, mix)];
+
+  // Spans across a lane, wall to wall: most low down, a few up to 9/F.
+  const SPAN_MIX = [['power', 45], ['phone', 18], ['tv', 22], ['water', 15]];
+  for (let n = 0; n < 1800; n++) {
+    const c = laneCells[Math.floor(rng() * laneCells.length)];
     const i = c % W, j = (c / W) | 0;
-    const horiz = rng() < 0.5;
-    const di = horiz ? 1 : 0, dj = horiz ? 0 : 1;
+    const horiz = rng() < 0.5, di = horiz ? 1 : 0, dj = horiz ? 0 : 1;
     let a = 0, b = 0;
     while (a < 6 && own(i - di * (a + 1), j - dj * (a + 1)) < 0 && alley[(j - dj * (a + 1)) * W + i - di * (a + 1)]) a++;
     while (b < 6 && own(i + di * (b + 1), j + dj * (b + 1)) < 0 && alley[(j + dj * (b + 1)) * W + i + di * (b + 1)]) b++;
     const oa = own(i - di * (a + 1), j - dj * (a + 1)), ob = own(i + di * (b + 1), j + dj * (b + 1));
-    if (oa < 0 || ob < 0 || a + b > 6) continue;
-    const top = Math.min(buildings[oa].floors, buildings[ob].floors, 8);
-    const fa = Math.floor(Math.pow(rng(), 1.6) * top);
-    const fb = clamp(fa + [-1, 0, 0, 0, 1][Math.floor(rng() * 5)], 0, top - 1);
+    if (oa < 0 || ob < 0 || oa === ob || a + b > 6 || B[oa].kind === 'yamen' || B[ob].kind === 'yamen') continue;
     const along = rng() * 0.8 + 0.1;
-    const pa = horiz ? [x0 + i - a, z0 + j + along] : [x0 + i + along, z0 + j - a];
-    const pb = horiz ? [x0 + i + b + 1, z0 + j + along + (rng() - 0.5) * 0.6] : [x0 + i + along + (rng() - 0.5) * 0.6, z0 + j + b + 1];
-    wires.push(make(pa, fa, fa * STOREY + 1.9 + rng() * 0.8, pb, fb, fb * STOREY + 1.9 + rng() * 0.8, 0.12 + rng() * 0.5, type(), [0, 0, 0]));
+    const pa = snap(oa, x0 + i + (horiz ? -a : along), z0 + j + (horiz ? along : -a));
+    const pb = snap(ob, x0 + i + (horiz ? b + 1 : along + (rng() - 0.5) * 0.6), z0 + j + (horiz ? along + (rng() - 0.5) * 0.6 : b + 1));
+    if (!pa || !pb || pa[4] > 1.5 || pb[4] > 1.5) continue;
+    const top = Math.min(B[oa].floors, B[ob].floors, 9);
+    const fa = Math.floor(Math.pow(rng(), 1.7) * top);
+    const fb = clamp(fa + [-1, 0, 0, 0, 1][Math.floor(rng() * 5)], 0, top - 1);
+    wires.push(make([pa[0], pa[1]], fa, fa * STOREY + 1.9 + rng() * 0.8, [pb[0], pb[1]], fb, fb * STOREY + 1.9 + rng() * 0.8, 0.12 + rng() * 0.5, pickType(SPAN_MIX), [0, 0, 0]));
   }
 
-  // Risers running down alley facades from upper floors to the street.
-  for (let n = 0; n < 420; n++) {
-    const c = alleyCells[Math.floor(rng() * alleyCells.length)];
+  // Trunks: bundles of cable and pipe that come in from the outer streets and run along the
+  // lanes, clipped to the walls every few metres.
+  const entrances = laneCells.filter((c) => {
     const i = c % W, j = (c / W) | 0;
-    const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]];
-    const [di, dj] = dirs[Math.floor(rng() * 4)];
-    const o = own(i + di, j + dj);
-    if (o < 0 || buildings[o].floors < 4) continue;
-    const bf = buildings[o].floors;
-    const fh = 3 + Math.floor(rng() * (bf - 3));
-    const fl = Math.floor(rng() * 2);
-    // Wall plane between the alley cell and the building, nudged into the alley.
-    const wx = di === 0 ? x0 + i + 0.2 + rng() * 0.6 : x0 + i + (di > 0 ? 1 : 0) - di * 0.15;
-    const wz = dj === 0 ? z0 + j + 0.2 + rng() * 0.6 : z0 + j + (dj > 0 ? 1 : 0) - dj * 0.15;
-    const drift = (rng() - 0.5) * 1.2;
-    const pb = di === 0 ? [wx + drift, wz] : [wx, wz + drift];
-    wires.push(make([wx, wz], fh, fh * STOREY + 1.0 + rng() * 1.5, pb, fl, fl * STOREY + 2.0 + rng() * 0.6, 0.05, type(), [-di, 0, -dj]));
+    return [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([a, b]) => !L.inside[(j + b) * W + i + a] || alley[(j + b) * W + i + a] === 3);
+  });
+  for (let n = 0; n < 70; n++) {
+    let c = entrances[Math.floor(rng() * entrances.length)];
+    const kind = rng() < 0.6 ? 'power' : 'water';
+    const strands = kind === 'power' ? 2 + Math.floor(rng() * 3) : 1 + Math.floor(rng() * 2);
+    const seen = new Set([c]);
+    const path = [c];
+    let dir = null;
+    for (let s = 0; s < 30 + rng() * 50; s++) {
+      const i = c % W, j = (c / W) | 0;
+      const opts = [[1, 0], [-1, 0], [0, 1], [0, -1]].filter(([a, b]) => isLane(i + a, j + b) && !seen.has((j + b) * W + i + a));
+      if (!opts.length) break;
+      const keep = dir && opts.find(([a, b]) => a === dir[0] && b === dir[1]);
+      dir = keep && rng() < 0.85 ? keep : opts[Math.floor(rng() * opts.length)];
+      c = (j + dir[1]) * W + i + dir[0];
+      seen.add(c);
+      path.push(c);
+    }
+    // Fix points every 3 cells, on the wall nearest the path.
+    const fixes = [];
+    for (let q = 0; q < path.length; q += 3) {
+      const k = path[q], i = k % W, j = (k / W) | 0;
+      const nb = [[1, 0], [-1, 0], [0, 1], [0, -1]].map(([a, b]) => own(i + a, j + b)).filter((o) => o >= 0 && B[o].kind !== 'yamen');
+      if (!nb.length) continue;
+      const p = snap(nb[0], x0 + i + 0.5, z0 + j + 0.5);
+      if (p && p[4] < 1.6) fixes.push(p);
+    }
+    for (let s = 0; s < strands; s++) {
+      const y = kind === 'power' ? 2.5 + s * 0.12 + rng() * 0.2 : 0.5 + s * 0.15 + rng() * 1.6;
+      for (let q = 0; q + 1 < fixes.length; q++) {
+        const a = fixes[q], b = fixes[q + 1];
+        wires.push(make([a[0] + a[2] * s * 0.05, a[1] + a[3] * s * 0.05], 0, y, [b[0] + b[2] * s * 0.05, b[1] + b[3] * s * 0.05], 0, y + (rng() - 0.5) * 0.15, 0.08 + rng() * 0.2, T[kind], [a[2], 0, a[3]]));
+      }
+    }
   }
 
-  // Runs along a wall, clipped every few metres.
-  for (let n = 0; n < 500; n++) {
-    const c = alleyCells[Math.floor(rng() * alleyCells.length)];
-    const i = c % W, j = (c / W) | 0;
-    const [di, dj] = [[1, 0], [-1, 0], [0, 1], [0, -1]][Math.floor(rng() * 4)];
-    const o = own(i + di, j + dj);
-    if (o < 0) continue;
-    const f = Math.floor(Math.pow(rng(), 1.4) * Math.min(buildings[o].floors, 6));
-    const len = 2 + rng() * 5;
-    const wx = di === 0 ? x0 + i + 0.5 : x0 + i + (di > 0 ? 1 : 0) - di * 0.12;
-    const wz = dj === 0 ? z0 + j + 0.5 : z0 + j + (dj > 0 ? 1 : 0) - dj * 0.12;
-    const y = f * STOREY + 2.0 + rng() * 0.6;
-    const pb = di === 0 ? [wx + len * (rng() < 0.5 ? -1 : 1), wz] : [wx, wz + len * (rng() < 0.5 ? -1 : 1)];
-    wires.push(make([wx, wz], f, y, pb, f, y + (rng() - 0.5) * 0.4, 0.1 + rng() * 0.25, type(), [-di, 0, -dj]));
+  // Risers on the open faces: water pumped up to the roof tanks, power up to the meters,
+  // TV aerial leads down from the roof, telephone lines.
+  for (const b of B) {
+    if (b.kind !== 'tenement' || b.floors < 3 || !open[b.id].length) continue;
+    const faces = open[b.id].filter((f) => f.len > 1.2);
+    if (!faces.length) continue;
+    const at = () => {
+      const f = faces[Math.floor(rng() * faces.length)];
+      const t = 0.3 + rng() * (f.len - 0.6);
+      return { p: [f.A[0] + f.t[0] * t + f.n[0] * 0.1, f.A[1] + f.t[1] * t + f.n[1] * 0.1], t: f.t, n: f.n };
+    };
+    const top = b.floors - 1, roof = b.floors * STOREY;
+    if (rng() < 0.55) {
+      const r = at();
+      wires.push(make(r.p, 0, 0.4, [r.p[0] + r.t[0] * 0.3, r.p[1] + r.t[1] * 0.3], top, roof + 0.8, 0.05, T.water, [r.n[0], 0, r.n[1]]));
+    }
+    const nr = 1 + Math.floor(rng() * 3);
+    for (let q = 0; q < nr; q++) {
+      const r = at();
+      const kind = weighted(rng, [['power', 4], ['tv', 4], ['phone', 2]]);
+      const f = 1 + Math.floor(rng() * top);
+      const drift = (rng() - 0.5) * 1.2;
+      const p2 = [r.p[0] + r.t[0] * drift, r.p[1] + r.t[1] * drift];
+      if (kind === 'tv') wires.push(make(r.p, top, roof + 0.6, p2, f, f * STOREY + 2.1, 0.06, T.tv, [r.n[0], 0, r.n[1]]));
+      else wires.push(make(r.p, 0, 2.6, p2, f, f * STOREY + 1.6 + rng(), 0.06, T[kind], [r.n[0], 0, r.n[1]]));
+    }
   }
-  return wires;
+
+  // Standpipes: seven on the outer edge (Tung Tau Tsuen Road on the north, Tung Tsing Road
+  // on the east) and one inside, by the Yamen. Their places are SCHEMATIC.
+  const pipes = [];
+  const edge = [];
+  for (const b of B)
+    for (const r of b.rings)
+      for (const e of r.edges)
+        if (e.other === OUTSIDE && (b.front === 'top' || b.cx > L.bbox.maxx - 30)) edge.push(wallFrame(e));
+  edge.sort((a, b) => b.len - a.len);
+  for (let q = 0; q < 7 && q < edge.length; q++) {
+    const f = edge[Math.floor((q / 7) * Math.min(edge.length, 60))];
+    pipes.push([f.A[0] + f.t[0] * f.len / 2 + f.n[0] * 1.2, f.A[1] + f.t[1] * f.len / 2 + f.n[1] * 1.2]);
+  }
+  if (L.yard.length) {
+    const k = L.yard[Math.floor(L.yard.length / 2)];
+    pipes.push([L.cellX(k), L.cellZ(k)]);
+  }
+  return { wires, standpipes: pipes };
 }
 
 function make(pa, la, ya, pb, lb, yb, sag, type, out) {
   const d = Math.hypot(pb[0] - pa[0], yb - ya, pb[1] - pa[1]);
   return {
     a: [pa[0], ya, pa[1]], la, b: [pb[0], yb, pb[1]], lb, type, out,
-    length: d + (8 * sag * sag) / (3 * Math.max(d, 0.3)),
+    top: Math.max(la, lb), length: d + (8 * sag * sag) / (3 * Math.max(d, 0.3)),
   };
 }
 
 export class WireLayer {
-  constructor(L, wires) {
-    this.wires = wires;
-    const n = wires.length * SEGS;
-    this.pos = new Float32Array(n * 6);
-    const colors = new Float32Array(n * 6);
-    const c = new THREE.Color();
-    wires.forEach((w, i) => {
-      c.set(WIRE_TYPES[w.type].color);
-      for (let s = 0; s < SEGS * 2; s++) colors.set([c.r, c.g, c.b], (i * SEGS * 2 + s) * 3);
+  constructor(L, data) {
+    this.object = new THREE.Group();
+    // One layer per type; water is split into the floors that get morning water and the rest.
+    const groups = new Map();
+    for (const w of data.wires) {
+      const key = w.type === T.water && w.top <= 4 ? 'waterLow' : WIRE_TYPES[w.type].key;
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(w);
+    }
+    this.layers = [...groups.entries()].map(([key, wires]) => {
+      const t = WIRE_TYPES[wires[0].type];
+      const pos = new Float32Array(wires.length * SEGS * 6);
+      const geometry = new LineSegmentsGeometry();
+      geometry.setPositions(pos);
+      const material = new LineMaterial({ color: t.color, linewidth: t.px, worldUnits: false, dashSize: 0.5, gapSize: 0.35 });
+      const object = new LineSegments2(geometry, material);
+      object.frustumCulled = false;
+      object.renderOrder = 2;
+      this.object.add(object);
+      return { key, wires, pos, geometry, material, object };
     });
-    this.geometry = new LineSegmentsGeometry();
-    this.geometry.setPositions(this.pos);
-    this.geometry.setColors(colors);
-    this.material = new LineMaterial({ linewidth: 1.5, vertexColors: true, worldUnits: false });
-    this.object = new LineSegments2(this.geometry, this.material);
-    this.object.frustumCulled = false;
-    this.object.renderOrder = 2;
+    // Standpipes: short posts with a tap.
+    const g = new THREE.CylinderGeometry(0.07, 0.07, 1.0, 6).translate(0, 0.5, 0);
+    const mat = new THREE.MeshLambertMaterial({ color: '#5cc6c4' });
+    const posts = new THREE.InstancedMesh(g, mat, data.standpipes.length);
+    data.standpipes.forEach(([x, z], i) => posts.setMatrixAt(i, new THREE.Matrix4().makeTranslation(x, 0, z)));
+    this.object.add(posts);
+    this.standpipes = data.standpipes;
+    this.flowing = false;
   }
 
-  // offsets[level] = vertical lift of that storey; cutY = hide wires above this height.
-  update(offsets, cut) {
-    const P = this.pos;
-    let o = 0;
-    const A = new THREE.Vector3(), B = new THREE.Vector3(), ch = new THREE.Vector3(), sd = new THREE.Vector3();
-    for (const w of this.wires) {
-      A.set(w.a[0], w.a[1] + offsets[w.la], w.a[2]);
-      B.set(w.b[0], w.b[1] + offsets[w.lb], w.b[2]);
-      const hidden = cut >= 0 && Math.max(w.la, w.lb) > cut;
-      if (hidden) B.copy(A);
-      ch.subVectors(B, A);
-      const d = ch.length();
-      const sag = w.length > d ? Math.sqrt((3 * d * (w.length - d)) / 8) : 0;
-      if (d > 1e-4) ch.divideScalar(d);
-      // Sag hangs down, perpendicular to the chord; for near-vertical runs it bows outward.
-      sd.set(0, -1, 0).addScaledVector(ch, ch.y);
-      if (sd.lengthSq() < 0.04) sd.set(w.out[0], 0, w.out[2]);
-      sd.normalize();
-      let px = A.x, py = A.y, pz = A.z;
-      for (let s = 1; s <= SEGS; s++) {
-        const t = s / SEGS, k = 4 * t * (1 - t) * sag;
-        const x = A.x + (B.x - A.x) * t + sd.x * k;
-        const y = A.y + (B.y - A.y) * t + sd.y * k;
-        const z = A.z + (B.z - A.z) * t + sd.z * k;
-        P[o++] = px; P[o++] = py; P[o++] = pz; P[o++] = x; P[o++] = y; P[o++] = z;
-        px = x; py = y; pz = z;
+  // Water runs in the low pipes during the morning supply hours.
+  tick(hour, dt) {
+    const on = WATER_HOURS.some(([, , h0, h1]) => hour >= h0 && hour < h1);
+    for (const l of this.layers) {
+      if (l.key !== 'waterLow') continue;
+      if (on !== this.flowing) {
+        l.material.dashed = on;
+        l.material.linewidth = on ? 2.6 : WIRE_TYPES[T.water].px;
+        l.material.needsUpdate = true;
+        if (on) l.object.computeLineDistances();
       }
+      if (on) l.material.dashOffset -= dt * 2.0;
     }
-    const attr = this.geometry.attributes.instanceStart;
-    attr.data.array.set(P);
-    attr.data.needsUpdate = true;
+    this.flowing = on;
+  }
+
+  // offsets[level] = vertical lift of that storey; lines above a cut storey are hidden.
+  update(offsets, cut) {
+    const A = new THREE.Vector3(), B = new THREE.Vector3(), ch = new THREE.Vector3(), sd = new THREE.Vector3();
+    for (const l of this.layers) {
+      const P = l.pos;
+      let o = 0;
+      for (const w of l.wires) {
+        A.set(w.a[0], w.a[1] + offsets[w.la], w.a[2]);
+        B.set(w.b[0], w.b[1] + offsets[w.lb], w.b[2]);
+        if (cut >= 0 && w.top > cut) B.copy(A);
+        ch.subVectors(B, A);
+        const d = ch.length();
+        const sag = w.length > d ? Math.sqrt((3 * d * (w.length - d)) / 8) : 0;
+        if (d > 1e-4) ch.divideScalar(d);
+        // Sag hangs down, at right angles to the chord; a near-vertical run bows outward.
+        sd.set(0, -1, 0).addScaledVector(ch, ch.y);
+        if (sd.lengthSq() < 0.04) sd.set(w.out[0], 0, w.out[2]);
+        sd.normalize();
+        let px = A.x, py = A.y, pz = A.z;
+        for (let s = 1; s <= SEGS; s++) {
+          const t = s / SEGS, k = 4 * t * (1 - t) * sag;
+          const x = A.x + (B.x - A.x) * t + sd.x * k;
+          const y = A.y + (B.y - A.y) * t + sd.y * k;
+          const z = A.z + (B.z - A.z) * t + sd.z * k;
+          P[o++] = px; P[o++] = py; P[o++] = pz; P[o++] = x; P[o++] = y; P[o++] = z;
+          px = x; py = y; pz = z;
+        }
+      }
+      const attr = l.geometry.attributes.instanceStart;
+      attr.data.array.set(P);
+      attr.data.needsUpdate = true;
+      if (l.material.dashed) l.object.computeLineDistances();
+    }
   }
 
   setResolution(w, h) {
-    this.material.resolution.set(w, h);
+    for (const l of this.layers) l.material.resolution.set(w, h);
   }
 }

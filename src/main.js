@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
-import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL } from './layout.js';
+import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
+import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim, makePeopleMesh } from './people.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
@@ -78,9 +79,9 @@ let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const plan = await (await fetch('./data/plan.json')).json();
+  const [plan, biz] = await Promise.all(['./data/plan.json', './data/businesses.json'].map((u) => fetch(u).then((r) => r.json())));
   site = buildSite(plan);
-  L = buildLayout(site, plan);
+  L = buildLayout(site, plan, biz);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center);
   const env = buildEnvironment(scene, L);
@@ -91,12 +92,20 @@ async function init() {
   const antMat = new THREE.LineBasicMaterial({ color: '#3a3935' });
   const slabGeo = new THREE.PlaneGeometry(L.W, L.D).rotateX(-Math.PI / 2).translate(center.x, 0, center.z);
   const slabEdge = new THREE.EdgesGeometry(slabGeo);
-  levels = buildLevels(L).map((d) => {
+  const built = buildLevels(L);
+  const signMat = makeSignMaterial(shared, built.signTexture);
+  levels = built.levels.map((d) => {
     const group = new THREE.Group();
     const mat = makeBuildingMaterial(shared);
     const mesh = new THREE.Mesh(d.geometry, mat);
     mesh.castShadow = mesh.receiveShadow = true;
     group.add(mesh);
+    let signs = null;
+    if (d.signs) {
+      signs = new THREE.Mesh(d.signs, signMat);
+      signs.castShadow = true;
+      group.add(signs);
+    }
     const ag = new THREE.BufferGeometry();
     ag.setAttribute('position', new THREE.BufferAttribute(d.antennas, 3));
     const antennas = new THREE.LineSegments(ag, antMat);
@@ -109,7 +118,7 @@ async function init() {
     slab.visible = edge.visible = false;
     group.add(slab, edge);
     scene.add(group);
-    return { k: d.k, group, mesh, mat, antennas, slab, edge, plan: null };
+    return { k: d.k, group, mesh, mat, antennas, signs, slab, edge, plan: null };
   });
 
   // Dotted corner posts that appear when the storeys are pulled apart.
@@ -213,6 +222,7 @@ function setCut(c) {
     lv.group.visible = c < 0 || lv.k <= c;
     lv.mat.userData.uIsCut.value = lv.k === c ? 1 : 0;
     lv.antennas.visible = lv.k !== c;
+    if (lv.signs) lv.signs.visible = lv.k !== c;
     if (lv.plan) {
       lv.group.remove(lv.plan.mesh, lv.plan.lines);
       lv.plan.mesh.geometry.dispose();
@@ -431,7 +441,7 @@ function renderLegend() {
   if (state.cut >= 0) {
     const here = new Set(L.buildings.filter((b) => b.floors > state.cut).map((b) => b.uses[state.cut]));
     const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
-    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE (PLACEHOLDER)</h3>${uses
+    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${uses
       .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
       .join('')}</div>`);
   }
@@ -484,19 +494,25 @@ function buildingTooltip(b, k) {
     return `<div class="tt-h">YAMEN 衙門 · HALL</div><div>Qing-era official compound, the one old building left in the city</div><div>in the 1980s: old people’s centre (老人中心), per the exhibit plan</div><div class="tt-s">walls and roof from the traced plot · roof form is generic</div>`;
   const runs = [];
   for (let f = 0; f < B.floors; f++) {
-    const u = B.uses[f];
-    if (runs.length && runs[runs.length - 1].u === u) runs[runs.length - 1].to = f;
-    else runs.push({ u, from: f, to: f });
+    const u = B.uses[f], inf = !!(B.inferred && B.inferred[f]);
+    const last = runs[runs.length - 1];
+    if (last && last.u === u && last.inf === inf && !B.prem[f]) last.to = f;
+    else runs.push({ u, inf, from: f, to: f });
   }
   const rows = runs
-    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
+    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.inf ? ' *' : ''}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
     .join('');
-  const title = B.name ? buildingName(B).toUpperCase() : `BLDG ${b}`;
+  const recs = [];
+  for (const f of Object.keys(B.prem).map(Number).sort((x, y) => x - y))
+    for (const p of B.prem[f]) recs.push(`<div class="tt-r"><span class="tt-k">${levelName(f)}</span> ${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i></div>`);
+  const prem = recs.length ? `<div class="tt-s">in the clearance files (GRS HKRS1255-3):</div>${recs.slice(0, 6).join('')}${recs.length > 6 ? `<div class="tt-s">and ${recs.length - 6} more</div>` : ''}` : '';
+  const title = buildingName(B).toUpperCase();
   const front = B.front === 'top' ? '<div class="tt-s">fronts Tung Tau Tsuen Road</div>' : B.front === 'road' ? '<div class="tt-s">fronts a road on the old wall base</div>' : '';
   const fact = B.factory ? '<div class="tt-s">factory site marked on the exhibit plan</div>' : '';
-  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${front}${fact}
-    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>
-    <div class="tt-s">plot traced from the plan · storeys and uses are placeholders</div>`;
+  const inf = B.inferred ? '<div class="tt-s">* trade inferred from the Kai Fong count of 1983, not from a file</div>' : '';
+  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${prem}${front}${fact}
+    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>${inf}
+    <div class="tt-s">plot from the 1980s plan · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : 'storeys inferred from photos'} · place on street from house-number order</div>`;
 }
 
 function agentTooltip(id) {
@@ -623,7 +639,7 @@ const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 let lastDay = -1;
 function updateClock() {
   $('clk-time').textContent = fmtClock(sim.minute);
-  const d = new Date(Date.UTC(1989, 2, 14 + sim.day));
+  const d = new Date(Date.UTC(1986, 11, 16 + sim.day));
   $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
   const s = sim.stats();
@@ -660,6 +676,7 @@ function frame(now) {
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
   shared.uNight.value = lighting.update(hour, state.lift);
+  wires.tick(hour, state.speed ? dt : 0);
   const dark = shared.uNight.value > 0.55;
   if (dark !== state.dark) {
     state.dark = dark;

@@ -1,6 +1,6 @@
 // The model's surroundings: plinth, streets, the hazy city below, light and time of day.
 import * as THREE from 'three';
-import { rects } from './cityMesh.js';
+import { OUTSIDE } from './footprint.js';
 import { mulberry32, clamp, lerp, smoothstep } from './util.js';
 
 export const PLINTH_DEPTH = 150;
@@ -32,25 +32,29 @@ export function buildEnvironment(scene, L) {
   street.position.set((xa + xb) / 2, 0, (za + zb) / 2);
   street.receiveShadow = true;
   group.add(street);
-  const pave = [];
-  for (let c = 0; c < L.N; c++) {
-    if (L.inside[c]) continue;
-    const i = c % L.W, j = (c / L.W) | 0;
-    let near = false;
-    for (let dj = -3; dj <= 3 && !near; dj++)
-      for (let di = -3; di <= 3 && !near; di++) {
-        const ni = i + di, nj = j + dj;
-        if (ni >= 0 && nj >= 0 && ni < L.W && nj < L.D && L.inside[nj * L.W + ni]) near = true;
-      }
-    if (near) pave.push(c);
+  // Pavement: a 3 m band round the city outline, with round joins at the corners.
+  const edges = [];
+  for (const b of L.buildings) for (const r of b.rings) for (const e of r.edges) if (e.other === OUTSIDE) edges.push(e);
+  for (const rings of Object.values(L.ground)) for (const r of rings) for (const e of r.edges) if (e.other === OUTSIDE) edges.push(e);
+  const pv = [], PW = 3, y = 0.006;
+  const tri = (a, b, c) => {
+    if ((b[1] - a[1]) * (c[0] - a[0]) - (b[0] - a[0]) * (c[1] - a[1]) < 0) [b, c] = [c, b]; // face up
+    pv.push(a[0], y, a[1], b[0], y, b[1], c[0], y, c[1]);
+  };
+  for (const e of edges) {
+    const dx = e.b[0] - e.a[0], dz = e.b[1] - e.a[1], l = Math.hypot(dx, dz) || 1;
+    const nx = (dz / l) * PW, nz = (-dx / l) * PW;
+    const A = e.a, B = e.b, C = [B[0] + nx, B[1] + nz], D = [A[0] + nx, A[1] + nz];
+    tri(A, C, B); tri(A, D, C);
+    for (let q = 0; q < 8; q++) {
+      const a0 = (q / 8) * 2 * Math.PI, a1 = ((q + 1) / 8) * 2 * Math.PI;
+      tri(A, [A[0] + Math.cos(a1) * PW, A[1] + Math.sin(a1) * PW], [A[0] + Math.cos(a0) * PW, A[1] + Math.sin(a0) * PW]);
+    }
   }
-  const pg = [];
-  for (const [i0, j0, i1, j1] of rects(L, pave)) {
-    const g = new THREE.PlaneGeometry(i1 - i0, j1 - j0).rotateX(-Math.PI / 2);
-    g.translate(L.x0 + (i0 + i1) / 2, 0.006, L.z0 + (j0 + j1) / 2);
-    pg.push(g);
-  }
-  const paveMesh = new THREE.Mesh(mergeGeoms(pg), new THREE.MeshLambertMaterial({ color: '#77736a' }));
+  const pg = new THREE.BufferGeometry();
+  pg.setAttribute('position', new THREE.Float32BufferAttribute(pv, 3));
+  pg.setAttribute('normal', new THREE.Float32BufferAttribute(new Float32Array(pv.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
+  const paveMesh = new THREE.Mesh(pg, new THREE.MeshLambertMaterial({ color: '#77736a' }));
   paveMesh.receiveShadow = true;
   group.add(paveMesh);
 
@@ -155,24 +159,6 @@ function buildContextCity(L) {
   const g = new THREE.Group();
   g.add(mesh, ground);
   return g;
-}
-
-function mergeGeoms(list) {
-  let n = 0;
-  for (const g of list) n += g.getAttribute('position').count;
-  const pos = new Float32Array(n * 3), nor = new Float32Array(n * 3), idx = [];
-  let o = 0;
-  for (const g of list) {
-    pos.set(g.getAttribute('position').array, o * 3);
-    nor.set(g.getAttribute('normal').array, o * 3);
-    for (const v of g.index.array) idx.push(v + o);
-    o += g.getAttribute('position').count;
-  }
-  const out = new THREE.BufferGeometry();
-  out.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  out.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
-  out.setIndex(idx);
-  return out;
 }
 
 function convexHull(inside, L) {
