@@ -40,7 +40,9 @@ are not primary. Do not put them here.
 | [`grs-catalogue-kwc/`](grs-catalogue-kwc/SOURCE.md) | GRS catalogue: 692 business compensation files with address, floor and trade; 87 clearance files; 274 search results | 1963–1997 | yes (catalogue only) | https://search.grs.gov.hk/en/search.xhtml?q=%22Kowloon+Walled+City%22 |
 | [`hku-newspaper-clippings/`](hku-newspaper-clippings/SOURCE.md) | Index of 334 SCMP and *Hong Kong Standard* clippings (HKU login to read them) | 1969–1997 | yes (index only) | https://digitalrepository.lib.hku.hk/hkclippings?q=%22walled+city%22 |
 | [`press-articles-1959-1992/`](press-articles-1959-1992/SOURCE.md) | Free press reports from inside the city: TIME (1959), *Baltimore Sun* (1992) | 7 Sep 1959, 30 Jun 1992 | no (© publishers) | https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ |
-| [`retrospective-testimony-web/`](retrospective-testimony-web/SOURCE.md) | Former residents and an official remember: fishball maker, a childhood, water and power, squatter control | retrospective (2009–2024) | no (© publishers) | https://www.hk01.com/社區專題/1033066/ |
+| [`retrospective-testimony-web/`](retrospective-testimony-web/SOURCE.md) | Former residents, workers and visitors remember: fishball maker, childhoods, water and power, police, Jackie Pullinger, Girard and Lambot, a tailor next door, Posner's 1987 visit | retrospective (2009–2024) | no (© publishers) | https://www.hk01.com/社區專題/1033066/ |
+| [`hk01-kaifong-series-2016/`](hk01-kaifong-series-2016/SOURCE.md) | HK01 series: five members of the residents' association on homes, water, power, fire, deeds and the survey day of 14 Jan 1987 | retrospective (2016) | no (© HK01) | https://www.hk01.com/article/39194 |
+| [`wsj-kwc-2014/`](wsj-kwc-2014/SOURCE.md) | WSJ interactive: six residents and workers with address, floor, years, rent; more quotes; the Kai Fong Association trade count of 1983 | retrospective (2014) | no (© Dow Jones) | https://web.archive.org/web/20161228012123/http://projects.wsj.com/kwc/ |
 
 ## Blocked: links for John to look at
 
@@ -54,7 +56,9 @@ can decide what to download.
 | FCO 40/790 "Kowloon Walled City and aircraft safety" (1977) | Height limits; 6 standpipes for 27,000 people | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0642-FCO40-790-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1977 |
 | FCO 40/980, same subject (1978) | Height limits | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0776-FCO40-980-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1978 |
 | UK Hansard search for "Kowloon", 1980–1994 | Commons and Lords items on the clearance. A search for "walled city" finds York and Chester (checked 2026-10-29) | Cloudflare bot check | https://hansard.parliament.uk/search/Contributions?searchTerm=Kowloon&startDate=1980-01-01&endDate=1994-12-31 |
-| WSJ 2014 project, Wayback copies | Clips of the Suenn Ho footage | Wayback was offline (503) on 2026-10-29; try again | https://web.archive.org/web/2016/http://projects.wsj.com/kwc/ |
+| The News Lens, article 98591 | 陳文龍 writes about his childhood in the city, with friends who lived there | Cloudflare block (403) | https://www.thenewslens.com/article/98591 |
+| Asia Society, "Life in Kowloon Walled City" | Interview with Albert Ng, a former resident (see `wsj-kwc-2014/`). No Wayback copy of this URL | Cloudflare bot check | https://asiasociety.org/node/17291 |
+| Kai Tak traffic figures, 1986–87, on hkintexts | Search extracts give 64,874 aircraft movements in 1986 and 73,643 in 1987 (Appendix 37), and a curfew "between midnight and 6.30 am" (undated). Not checked | Cloudflare bot check | https://hkintexts.histsyn.com/page/1731971 (also pages 1388492, 1392360, 965582) |
 | Library of Congress, Paul Rudolph slide | Photo, 1960–1980 | "Publication may be restricted" | https://www.loc.gov/item/2010648314/ |
 | Erich Tsang Shu-ming 曾樹明, "Community approach to youth work: working experience in Kowloon Walled City", MSW thesis, HKU, 1979 | A social worker's own account of his work in the city. DOI 10.5353/th_b3124685. Check for a full-text PDF | Cloudflare bot check | https://hub.hku.hk/handle/10722/35397 |
 | *Journal of the Royal Asiatic Society Hong Kong Branch* 27 (1987), p. 70 | A 1987 reference list on the city. It cites Michael Chiang's HKU architecture thesis (below) | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-rashkb-journal-engine/items/RAS-1987?p=70 |
@@ -66,7 +70,7 @@ can decide what to download.
 | HK Public Libraries old newspapers (華僑日報 to 1991) | Chinese-language reports of the survey and clearance. Search 九龍城寨 | queue-it waiting room | https://mmis.hkpl.gov.hk/old-hk-collection |
 | NewspaperSG: *Straits Times*, 2 Jul 1992 and other issues | "Last of HK Walled City residents evicted" | page needs JavaScript | https://eresources.nlb.gov.sg/newspapers/digitised/issue/straitstimes19920702-1 |
 | *Washington Post*, 22 Sep 1983 and 29 Nov 1991 | Reports from the city and from the first evictions | 403 to scripts | https://www.washingtonpost.com/archive/politics/1991/11/29/hong-kong-begins-effort-to-clear-walled-city-slum/8a714cb8-5413-4f46-bb9c-5d73e827d311/ |
-| SCMP reports, 1993–94 | "Walled City protest ends" and others (article ids 16808, 54450, 58392, 27691, 52237, 23347) | 403 to scripts | https://www.scmp.com/article/16808/walled-city-protest-ends |
+| SCMP reports, 1993–94 | "Walled City protest ends" and others (article ids 16808, 54450, 58392, 27691, 52237, 23347). Wayback copies of SCMP pages work: `retrospective-testimony-web/` uses two | 403 to scripts | https://www.scmp.com/article/16808/walled-city-protest-ends |
 | Hong Kong Heritage Project, oral history I200, LAW Hoi-cheung 羅開祥 (2008) | Lived in the city from 1952 to the clearance; kaifong secretary. Retrospective (2008) | 403 to scripts | https://www.hongkongheritage.org/nodes/view/22115 |
 | Patrick Zachmann, "Walled City of Hong Kong", *Granta* 29 | Photos and text from 1987–88 | 403 to scripts | https://granta.com/walled-city-of-hong-kong |
 | Plane-spotter photos at Kai Tak | Views of the roofs from the approach to runway 13 | bot gates (airliners.net, jetphotos) | https://www.airliners.net/photo-albums/view/Kai-Tak-Landings/16154 |
@@ -107,7 +111,8 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
   *PACE Interior Architecture* 39 (1992), 55–62, with maps and plans. At the
   CUHK Architecture Library. https://hkapi.lib.cuhk.edu.hk/handle/msO8s77aBT/6111
 - Chan Cheung Chuen's own map of the streets and upper walkways, drawn before
-  the demolition (see `retrospective-testimony-web/`). Ask M+.
+  the demolition (see `retrospective-testimony-web/`). WSJ says he finished it
+  in March 1987, after four months (see `wsj-kwc-2014/`). Ask M+.
 - HK Yellow Pages 1980s–1992 and the 1981 and 1986 census street-block tables:
   business addresses and households by block. Physical, at HK libraries.
 - Terasawa Kazumi 寺澤一美 (drawings) and Kani Hiroaki 可児弘明 (editor),
@@ -168,9 +173,23 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
 - Paid photo archives: Nik Wheeler 1979/80 roofs (Getty 1219604119), Robert
   Ng / SCMP demolition 23 Mar 1993 (Getty 1126363008), Patrick Zachmann 1987
   (Magnum).
-- Gerald Posner's account of his 1987 visit with a police escort
-  (https://posner.com/geraldposner/2016/05/tbt-reminder-of-my-1987-police-escort.html).
-  First-hand, but written in 2016.
+- The six WSJ resident videos of 2014 (52–92 s each). Transcribe them. Links
+  are in `wsj-kwc-2014/`.
+- Rod A. L. Mason, Hong Kong Police, a report on the city of 1985, made at the
+  time. WSJ quotes it (see `wsj-kwc-2014/`). Find the report.
+- The Kai Fong Association count of shops, factories and clinics, 1983. WSJ
+  charts it (645 in all, 97 dentists). Ask the former residents' association
+  (九龍城寨街坊福利事業延續促進會) for the original.
+- Gerald Posner, *Warlords of Crime* (1988), chapter 10, "White Powder Ma". A
+  visit of 1987 with a police escort. Only an extract is collected.
+- SCMP, 23 Mar 2018, "How the dark legacy of the Kowloon Walled City lives on
+  in modern-day Hong Kong" (article 2138468), and SCMP 2013, article 1191748.
+  Not yet read. Try Wayback copies.
+- 李昇敏 "敏叔", a former resident who guides visitors in Kowloon Walled City
+  Park (named in HK01, 20 Jul 2024). A possible new interview.
+- 中華書局, 《九龍寨城》 (2026), sample PDF with chapters on Kai Tak and on
+  community networks. Not yet checked for testimony:
+  https://www.chunghwabook.com.hk/upload/files/2026/07_09/8961d31fc1bbfcc1dbd8f8cb3e13d50a.pdf
 
 **Secondary works with useful references**
 - Lai, Chua and Chua, "The History of Planning for Kowloon City", *Planning
