@@ -13,6 +13,7 @@ const WEB = GH('retrospective-testimony-web', 'HK01 2024, SCMP 2013 and 2018, M+
 const PRESS = GH('press-articles-1959-1992', 'Baltimore Sun 1992');
 const LCSD = A('https://www.lcsd.gov.hk/en/parks/kwcp/historical.html', 'LCSD');
 const ZHWP = A('https://zh.wikipedia.org/wiki/九龍寨城', 'ZH Wikipedia');
+const BOOK = GH('city-of-darkness-revisited', 'City of Darkness Revisited (2014)');
 const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
 
 export const SOURCES_HTML = `
@@ -31,6 +32,12 @@ marked inferred.</p>
     titles of the clearance files of 1987–92 (${GRS}). The signs carry these names.</li>
   <li><span class="st ok">TRADES</span>The Kai Fong Association counted 645 shops, workshops and clinics in 1983,
     97 of them dentists (charted in ${WSJ}).</li>
+  <li><span class="st ok">BOOK</span>${BOOK}, by Greg Girard and Ian Lambot: the street names Tai Chang St,
+    Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbered places of its 1992 map
+    (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
+    occupants" and "8800 separate apartments" in January 1987 (p340). The map and the 1987 figure-ground plan
+    (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. Only numbers go into
+    <code>data/</code>; no image from the book is in the app.</li>
   <li><span class="st ok">HEIGHT</span>Storeys along the south face, read off Lambot's south elevation of 1990
     (${MPLUS}, 2017.412).</li>
   <li><span class="st ok">NUMBERS</span>House numbers fall from west to east on Tung Tau Tsuen Road and Lung Chun
@@ -41,7 +48,8 @@ marked inferred.</p>
     Most of it was recorded long after 1986, thus each quote has the tag "retrospective" and its year.</li>
   <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at
     6–7 a.m. and to 3/F–4/F at 8–9 a.m. (林羅平, HK01 2024); about 70 wells (Gordon Jones, WSJ 2014);
-    standpipes only on the outer roads (葉德偉, HK01 2016).</li>
+    eight Government standpipes in 1987, and "Only one of these was located within the City", on Tai Chang
+    Street (${BOOK}, pp28, 107; 葉德偉, HK01 2016).</li>
   <li><span class="st ok">FACES</span>Window cages, signs, roof tanks and TV aerials follow the photos of 1987–90
     (${MPLUS}).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
@@ -65,6 +73,8 @@ marked inferred.</p>
     model infers that the city's families kept it too.</li>
   <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>
   <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.</li>
+  <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five places
+    it disagrees with the address in the text; their discs have a dashed ring, and the tooltip gives the address.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
 </ul>
 

@@ -682,7 +682,7 @@ export class Sim {
   // Where is someone, in words.
   describe(a) {
     const B = this.L.buildings;
-    const STREET = { lys: '老人街 Lo Yan St', kms: '光明街 Kwong Ming St', tcs: '大井街 Tai Tseng St', skg: '社公街 Sz Kung St', lsr: '龍城路 Lung Shing Rd' };
+    const STREET = { lys: '老人街 Lo Yan St', kms: '光明街 Kwong Ming St', tcs: '大井街 Tai Chang St', skg: '社公街 Sz Kung St', lsr: '龍城路 Lung Shing Rd' };
     const where = (p) => {
       if (!p) return '';
       if (p.type === 'away') return 'outside the city';

@@ -295,7 +295,7 @@ data = {
         # label anchor (cell units) and direction for the street names on the plan
         'Kwong Ming St 光明街': [*cell_at(1150, 420), 'ns'],
         'Lo Yan St 老人街': [*cell_at(925, 520), 'ns'],
-        'Tai Tseng St 大井街': [*cell_at(432, 765), 'ns'],
+        'Tai Chang St 大井街': [*cell_at(432, 765), 'ns'],
         'Sz Kung St 社公街': [*cell_at(520, 734), 'ew'],
         'Lung Shing Rd 龍城路': [*cell_at(1262, 360), 'ns'],
         'Lung Chun Rd 龍津道': [*cell_at(900, 888), 'ew'],

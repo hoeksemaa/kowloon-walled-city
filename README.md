@@ -35,3 +35,8 @@ Copyrighted scans and downloads stay in `primary-sources/**/local/`, which git i
 The street plan in `data/plan.json` is traced from
 ["Streets in Kowloon Walled City.jpg"](https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg)
 by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license.
+
+`data/book.json` holds facts, page numbers and short quotes from *City of Darkness
+Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overlay.py`
+measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
+the repository or the app.

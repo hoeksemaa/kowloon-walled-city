@@ -4,11 +4,13 @@
 // SOURCED: two private suppliers inside, "一人專門供電，另一人專門供水", and power-company
 // meters near the outer streets (林羅平, HK01 2024); meters in each flat, asked for by the
 // kaifong (HK01 2016); water from about 70 wells (Gordon Jones, WSJ 2014) pumped to roof
-// tanks; street standpipes only on Tung Tau Tsuen Road and Tung Tsing Road (葉德偉, HK01
-// 2016), seven on the edge and one inside (WSJ narration, no date); water by floor in the
-// morning, "二、三樓可能於早上6、7點來水，然後8、9時就輪到三、四樓" (林羅平); a broken pipe was
-// not mended, "只會再駁一條新的" (HK01 2016); "knotted wires, dangling electric cables"
-// (Posner, 1987 visit). SCHEMATIC: where each line runs. No map of the lines survives.
+// tanks; eight Government standpipes in 1987, "Only one of these was located within the
+// City" (City of Darkness Revisited, p107), on Tai Chang Street (pp28, 292; the 1992 map,
+// no. 30), the others on Tung Tau Tsuen Road and Tung Tsing Road (葉德偉, HK01 2016); water
+// by floor in the morning, "二、三樓可能於早上6、7點來水，然後8、9時就輪到三、四樓" (林羅平); a
+// broken pipe was not mended, "只會再駁一條新的" (HK01 2016); "knotted wires, dangling
+// electric cables" (Posner, 1987 visit). SCHEMATIC: where each line runs. No map of the
+// lines survives.
 //
 // Each line keeps a fixed length. When the storeys are pulled apart, its ends move with
 // their storeys: a slack cable straightens, then stays taut.
@@ -146,9 +148,20 @@ export function buildWires(L) {
     }
   }
 
-  // Standpipes: seven on the outer edge (Tung Tau Tsuen Road on the north, Tung Tsing Road
-  // on the east) and one inside, by the Yamen. Their places are SCHEMATIC.
+  // Standpipes: the one inside, on Tai Chang Street at no. 30 of the 1992 map (APPROXIMATE),
+  // then seven on the outer edge (Tung Tau Tsuen Road on the north, Tung Tsing Road on the
+  // east; SCHEMATIC).
   const pipes = [];
+  const sp = L.places.find((p) => p.n === 30);
+  if (sp) {
+    let best = null, bd = Infinity;
+    for (let dj = -5; dj <= 5; dj++)
+      for (let di = -5; di <= 5; di++) {
+        const k = sp.k + dj * W + di;
+        if (alley[k] === 1 && di * di + dj * dj < bd) { bd = di * di + dj * dj; best = k; }
+      }
+    if (best !== null) pipes.push([L.cellX(best), L.cellZ(best)]);
+  }
   const edge = [];
   for (const b of B)
     for (const r of b.rings)
@@ -158,10 +171,6 @@ export function buildWires(L) {
   for (let q = 0; q < 7 && q < edge.length; q++) {
     const f = edge[Math.floor((q / 7) * Math.min(edge.length, 60))];
     pipes.push([f.A[0] + f.t[0] * f.len / 2 + f.n[0] * 1.2, f.A[1] + f.t[1] * f.len / 2 + f.n[1] * 1.2]);
-  }
-  if (L.yard.length) {
-    const k = L.yard[Math.floor(L.yard.length / 2)];
-    pipes.push([L.cellX(k), L.cellZ(k)]);
   }
   return { wires, standpipes: pipes };
 }

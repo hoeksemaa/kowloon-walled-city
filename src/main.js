@@ -69,7 +69,7 @@ controls.maxPolarAngle = 1.42;
 }
 
 const state = {
-  explode: 0, explodeTarget: 0, lift: 0, cut: -1,
+  explode: 0, explodeTarget: 0, lift: 0, cut: -1, mapPins: false,
   speed: 60, hoverAgent: -1, hoverBld: -1, follow: false,
   storyCam: true, camGoal: null, storySel: false, storyCut: false,
 };
@@ -83,9 +83,11 @@ let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, p
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const [plan, biz] = await Promise.all(['./data/plan.json', './data/businesses.json'].map((u) => fetch(u).then((r) => r.json())));
+  const [plan, biz, book, overlay] = await Promise.all(['./data/plan.json', './data/businesses.json', './data/book.json', './data/book_overlay.json']
+    .map((u) => fetch(u).then((r) => r.json())));
+  book.overlay = overlay;
   site = buildSite(plan);
-  L = buildLayout(site, plan, biz);
+  L = buildLayout(site, plan, biz, book);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
@@ -160,6 +162,7 @@ async function init() {
 
   buildUI();
   buildStreetTags();
+  buildPins();
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
@@ -334,6 +337,7 @@ function buildUI() {
     return wires.object.visible;
   });
   tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
+  tool('t-map', false, () => (state.mapPins = !state.mapPins));
   $('rail-clear').onclick = () => setCut(-1);
   $('st-prev').onclick = () => jumpBeat(-1);
   $('st-next').onclick = () => jumpBeat(1);
@@ -391,6 +395,7 @@ function buildUI() {
     if (k === 'e') $('t-explode').click();
     else if (k === 'w') $('t-wires').click();
     else if (k === 'p') $('t-people').click();
+    else if (k === 'm') $('t-map').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') { setCut(-1); sim.select(-1); }
     else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || 60); }
@@ -544,6 +549,12 @@ function agentTooltip(id) {
 
 function updateHover() {
   if (!mouse.inside) return;
+  const pin = pickPin();
+  if (pin) {
+    shared.uHi.value = NO_HI;
+    showTooltip(pinTooltip(pin));
+    return;
+  }
   const id = pickAgent();
   if (id >= 0) {
     shared.uHi.value = NO_HI;
@@ -652,6 +663,47 @@ function updateStreetTags() {
     t.el.style.top = `${sy}px`;
     t.el.style.setProperty('--lead', `${Math.max(0, gy - sy)}px`);
   }
+}
+
+// The 40 numbered places of the 1992 map in City of Darkness Revisited (pp352-353).
+let pins = [];
+function buildPins() {
+  pins = L.places.map((p) => {
+    const el = document.createElement('div');
+    el.className = `map-pin${p.conflict ? ' conflict' : ''}`;
+    el.textContent = p.n;
+    document.body.insertBefore(el, $('title'));
+    const b = L.owner[p.k];
+    return { p, el, floors: b >= 0 ? L.buildings[b].floors : 0, sx: -1e4, sy: -1e4 };
+  });
+}
+function updatePins() {
+  const show = state.mapPins && state.explode < 0.3;
+  for (const t of pins) {
+    t.el.style.display = show ? 'block' : 'none';
+    if (!show) { t.sx = -1e4; continue; }
+    const y = state.cut >= 0 ? state.cut * STOREY + CUT_H + 0.5 : t.floors * STOREY + 1.5;
+    _w.set(t.p.x, y, t.p.z).project(camera);
+    t.sx = (_w.x * 0.5 + 0.5) * innerWidth;
+    t.sy = (-_w.y * 0.5 + 0.5) * innerHeight;
+    t.el.style.left = `${t.sx}px`;
+    t.el.style.top = `${t.sy}px`;
+  }
+}
+function pickPin() {
+  let best = null, bd = 100;
+  for (const t of pins) {
+    const d = (t.sx - mouse.x) ** 2 + (t.sy - mouse.y) ** 2;
+    if (d < bd) { bd = d; best = t.p; }
+  }
+  return best;
+}
+function pinTooltip(p) {
+  return `<div class="tt-h">${p.n} · ${p.name.toUpperCase()}</div><div>${p.what}</div>
+    ${p.where ? `<div><span class="tt-k">at</span> ${p.where}</div>` : ''}
+    ${p.conflict ? `<div class="tt-r"><span class="tt-k">note</span> ${p.conflict}</div>` : ''}
+    ${p.note ? `<div class="tt-s">${p.note}</div>` : ''}
+    <div class="tt-s">the 1992 map, City of Darkness Revisited pp352–353${p.page ? ` · text p${p.page}` : ''} · place approximate</div>`;
 }
 
 const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -820,6 +872,7 @@ function frame(now) {
   updateLabels();
   updateTags();
   updateStreetTags();
+  updatePins();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); }
   renderer.render(scene, camera);

@@ -1,0 +1,131 @@
+{
+  "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014). Facts, page numbers and short quotes only. Notes: primary-sources/city-of-darkness-revisited/SOURCE.md.",
+  "note": "Hand-curated. Page numbers are printed pages. Places on the plan come from data/book_overlay.json (tools/book_overlay.py). Interviews are from about 1990: for 1986 they are APPROXIMATE.",
+  "counts": {
+    "buildings1987": { "value": 300, "pages": [134, 340], "quote": "some 300 individual buildings, each rising up to a possible 15 storeys" },
+    "occupants1987": { "value": 28200, "page": 340, "quote": "28,200 occupants residing in 8800 separate apartments" },
+    "apartments1987": { "value": 8800, "page": 340 },
+    "registered1987": { "value": 33000, "page": 339, "note": "just over 33,000 after the second day of the registration of 14-15 Jan 1987, with the people who worked in the City but lived elsewhere" },
+    "entrances1987": { "value": 83, "page": 339, "quote": "83 entrances were cordoned off" },
+    "standpipes1987": { "value": 8, "inside": 1, "page": 107, "quote": "Only one of these was located within the City" },
+    "wells1987": { "value": 67, "suppliers": 40, "page": 107, "quote": "identified 67 working wells owned by some 40 suppliers" },
+    "streets": { "page": 249, "quote": "around 30 main streets and alleys, some no more than three feet across" },
+    "storeys": { "pages": [118, 334, 340], "note": "\"14 storeys and more by 1972\" (p118); \"the maximum height of 12, 13 and 14 storeys\" (p334); \"a possible 15 storeys\" (p340)" }
+  },
+  "streets": {
+    "tcs": { "name": "Tai Chang St 大井街", "page": 296, "note": "\"Tai Chang (Big Well) Street\"; the clearance files use the same name. The 1992 map names two legs: south-west and north-west." },
+    "tcn": { "name": "Tai Chang St 大井街", "page": 352, "note": "The north-west leg, named on the 1992 map. Premises on Tai Chang St stay on the south-west leg." },
+    "abs": { "name": "Almshouse Back St", "page": 352, "note": "Named on the 1992 map, north of the Yamen. No Chinese name is in hand." },
+    "tts": { "name": "Tin Hau Temple St", "page": 352, "note": "Named on the 1992 map, by the Tin Hau Temple. The files have a 'Tin Hau Temple Back Street' (key tht)." },
+    "lcb": { "name": "Lung Chun Back Rd", "pages": [237, 300, 352], "note": "Named on the 1992 map, south of the Yamen. The rubber-plunger workshop (p237) and the Salvation Army kindergarten (p300) were on it." }
+  },
+  "lanes": {
+    "note": "Numbered lanes in the clearance file titles (data/businesses.json). Their places are not known.",
+    "tcs": ["3rd Lane", "5th Lane", "6th Lane", "7th Lane"],
+    "ssr": ["Second Lane", "3rd Lane", "7th Lane"],
+    "lcr": ["1st Lane", "2nd Lane", "3rd Lane", "Last Lane", "Wang Lane"],
+    "kms": ["1st Lane"],
+    "lys": ["1st Lane"],
+    "same": "\"No 14, 7th Lane, Sai Shing Road\" is \"also known as\" \"No 37B, 7th Lane, Tai Chang St.\" (HKRS1255-3): the 7th Lane joins the two streets."
+  },
+  "places": [
+    { "n": 1, "name": "Chan Kwan Leung", "what": "pigeon breeder", "page": 318, "where": "a rented roof; no address in the text" },
+    { "n": 2, "name": "Chan Kwong", "what": "golf-ball maker", "page": 88, "street": "tcs", "where": "Tai Chang Street, from 1972" },
+    { "n": 3, "name": "Chan Pui Yin", "what": "herbal doctor and store", "page": 82, "street": "lcr", "where": "Lung Chun Road, from 1955" },
+    { "n": 4, "name": "Chan Wai Shui", "what": "noodle maker", "page": 226, "street": "lys", "where": "Lo Yan Street, from 1979" },
+    { "n": 5, "name": "Chau Pak", "what": "storekeeper", "page": null },
+    { "n": 6, "name": "Chau Sau Yee", "what": "Chiu Chow cake maker", "page": 44 },
+    { "n": 7, "name": "Cheng Koon Yiu", "what": "dentist", "page": 242 },
+    { "n": 8, "name": "Cheng San", "what": "wooden-ruler maker", "page": 168, "street": "tcs", "where": "Tai Chang Street, 1968-1990; \"about 600 square feet\" (p169)" },
+    { "n": 9, "name": "Hui Kwong", "what": "Chiu Chow Music Club", "page": 40 },
+    { "n": 10, "name": "Chung family", "what": "residents", "page": 156, "street": "lcr", "num": 82, "floor": 4, "where": "4/F, 82 Lung Chun Road (p157)" },
+    { "n": 11, "name": "Ng Kam Mui", "what": "Chung Fat Café", "page": 56, "street": "ttt", "num": 19, "floor": 0, "where": "G/F, 19A Tung Tau Tsuen Road", "grs": "HKRS1255-3-312" },
+    { "n": 12, "name": "Fuk Tak Temple", "what": "shrine", "page": 12, "where": "\"this much simpler shrine on the City's east side\" (p32)", "conflict": "The files give 'G/F, 5 Tai Chang Street, 5th Lane, ... Fuk Tak Temple 福德土地廟' (HKRS1255-3). The book and the map put the shrine on the east side." },
+    { "n": 13, "name": "Ho Chi Kam", "what": "barber", "page": 28, "street": "tcs", "num": 10, "where": "Tai Chang Street, \"not far from the sole Government stand-pipe\" (p28)" },
+    { "n": 14, "name": "Hui Tung Choy", "what": "noodle maker", "page": 170, "street": "kms", "num": 2, "floor": 0, "where": "the back of 2 Kwong Ming Street, from 1965; \"barely 200 square feet\"", "grs": "HKRS1255-3-533", "grsNote": "宏發麵廠, G/F, 2 Kwong Ming Street, 1st Lane: probably his factory" },
+    { "n": 15, "name": "Chan Hip Ping", "what": "Kai Fong Association", "page": 178, "street": "ttt", "num": 16, "floor": 3, "where": "3/F, 16 Tung Tau Tsuen Road (p180)" },
+    { "n": 16, "name": "Kwok Lau Hing", "what": "retired office cleaner", "page": 308 },
+    { "n": 17, "name": "Lam Leung Po", "what": "minced-fish factory", "page": 292, "street": "tcs", "where": "an alley off Tai Chang Street, close to the one standpipe; \"around 480 square feet\"" },
+    { "n": 18, "name": "Jackie Pullinger", "what": "St Stephen's Society", "page": 262 },
+    { "n": 19, "name": "Lam Mei Kwong", "what": "retired dentist", "page": 11, "street": "lsr", "num": 4, "where": "4A Lung Shing Road, from 1949 (p11)", "conflict": "The map puts no. 19 in the west, far from Lung Shing Road. Use the address." },
+    { "n": 20, "name": "Lam Tseng Yat", "what": "grocery", "page": 296, "street": "tcs", "num": 25, "floor": 0, "where": "25 Tai Chang Street, from 1947" },
+    { "n": 21, "name": "Lau Yeung Yin", "what": "weaving workshop", "page": 48, "street": "ssr", "where": "Sai Shing Road, from 1982", "conflict": "The map puts no. 21 in the south-east, far from Sai Shing Road. Use the address.", "grsNote": "Kwong Hing Weaving Factory, G/F, 25A Sai Shing Road (HKRS1255-3-231): same trade and street, not the same name" },
+    { "n": 22, "name": "Law Kim Kwong", "what": "cake maker", "page": 182 },
+    { "n": 23, "name": "Law Yu Yi", "what": "retired maid", "page": 80 },
+    { "n": 24, "name": "Lee Pui Yuen", "what": "store", "page": 92, "street": "tcs", "num": 12, "floor": 0, "where": "12 Tai Chang Street, from 1979 (p93)", "grs": "HKRS1255-3-97", "grsNote": "順發士多, 12 TC St., G/F", "conflict": "The map puts no. 24 by Sai Shing Road. Use the address." },
+    { "n": 25, "name": "Lee Yu Chun", "what": "candy factory", "page": 76, "street": "ssr", "num": 12, "floor": 0, "where": "12 Sai Shing Road, from the early 1970s", "grs": "HKRS1255-3-233", "grsNote": "Shui Tung Confectionery, G/F, No. 12 Second Lane, Sai Shing Road", "conflict": "The map puts no. 25 in the middle of the City. Use the address." },
+    { "n": 26, "name": "Reverend Isaac Liu", "what": "missionary", "page": 304, "note": "The map key spells \"Lui\"." },
+    { "n": 27, "name": "Old People's Centre", "what": "in the Yamen, from 1979", "page": 306 },
+    { "n": 28, "name": "Old School", "what": "the old free school", "page": null },
+    { "n": 29, "name": "Simon Wong", "what": "Salvation Army kindergarten", "page": 300, "street": "lcb", "where": "Lung Chun Back Road" },
+    { "n": 30, "name": "Standpipe", "what": "the one Government standpipe inside the City", "page": 106, "street": "tcs", "where": "Tai Chang Street (pp28, 107, 292)" },
+    { "n": 31, "name": "Tin Hau Temple", "what": "temple, built 1951", "page": 240, "street": "lys", "where": "\"on an alley off Lo Yan Street\" (p241)" },
+    { "n": 32, "name": "To Gui Bon", "what": "rubber-plunger workshop", "page": 237, "street": "lcb", "where": "Lung Chun Back Road, 25 years" },
+    { "n": 33, "name": "Tsin Mu Lam", "what": "doctor", "page": 184, "street": "ttt", "num": 10, "floor": 2, "where": "2/F, 10 Tung Tau Tsuen Road, 1973-1992" },
+    { "n": 34, "name": "Well", "what": "a well", "page": 120 },
+    { "n": 35, "name": "Wong Hoi Ming", "what": "herbal doctor", "page": 232, "street": "tcs", "num": 48, "floor": 0, "where": "the files: G/F, 48 Tai Chang Street, 7th Lane", "grs": "HKRS1255-3-195", "grsNote": "Wong Hoi Ming Bonesetter: the same name" },
+    { "n": 36, "name": "Wong Yu Ming", "what": "dentist", "page": 34, "street": "lsr", "where": "Lung Shing Road, from the late 1950s" },
+    { "n": 37, "name": "Yamen", "what": "the Qing-era hall", "page": 298 },
+    { "n": 38, "name": "Yau Lap Cheong", "what": "retired shopkeeper", "page": 23 },
+    { "n": 39, "name": "Yim Kwok Yuen", "what": "roast-meat workshop", "page": 286, "street": "lys", "where": "Lo Yan Street, from 1981" },
+    { "n": 40, "name": "Yu Hing Wan", "what": "muslin maker", "page": 310, "street": "lcr", "where": "Lung Chun Road (p311)", "conflict": "The map puts no. 40 inside the City, away from Lung Chun Road. Use the address." }
+  ],
+  "matches": {
+    "note": "Places where the book and the clearance files agree. 'name': the same name; 'trade': the same trade on the same street.",
+    "list": [
+      { "n": 11, "grs": "HKRS1255-3-312", "by": "name" },
+      { "n": 14, "grs": "HKRS1255-3-533", "by": "trade" },
+      { "n": 24, "grs": "HKRS1255-3-97", "by": "trade" },
+      { "n": 25, "grs": "HKRS1255-3-233", "by": "trade" },
+      { "n": 35, "grs": "HKRS1255-3-195", "by": "name" },
+      { "n": 8, "grs": "HKRS1255-3-262", "by": "trade", "note": "百合尺廠 Pak Hop Ruler Factory, G/F, 22 Tai Chang St." }
+    ]
+  },
+  "hours": [
+    { "n": 3, "open": "08:00", "shut": "23:00", "page": 82, "quote": "officially we are open from 8am to 11pm" },
+    { "n": 24, "open": "08:00", "shut": "24:00", "busy": ["17:00", "21:00"], "page": 93 },
+    { "n": 25, "open": "07:00", "shut": "18:00", "late": "21:00", "page": 76, "note": "wrapping goes on to 9pm" },
+    { "n": 4, "open": "08:00", "hours": 9, "page": 228 },
+    { "n": 11, "open": "09:00", "shut": "late", "page": 57 },
+    { "n": 13, "open": "09:00", "shut": "when the customers stop", "page": 28 },
+    { "n": 33, "sessions": [["09:00", "13:00"], ["15:30", "20:00"]], "days": "Mon-Sat; Sunday morning", "page": 187 },
+    { "n": 7, "open": "10:00", "shut": "18:30", "days": "Saturday off", "page": 245 },
+    { "n": 39, "open": "04:00", "market": ["06:15", "08:00"], "page": 286 },
+    { "n": 32, "late": "02:00", "page": 237, "note": "after dinner to 2 or 3am, in a rush" },
+    { "n": 15, "days": "weekdays, office hours", "page": 180 },
+    { "n": 27, "days": "afternoons Mon-Sat; worship on Sunday", "page": 305 }
+  ],
+  "flats": {
+    "taiHing4F": {
+      "page": 340,
+      "address": "4/F, Tai Hing Building, 6 Sai Shing Road",
+      "ref": "BLD/SDU/COMP/SS 642(A); \"SS\" is handwritten and can be \"55\"",
+      "measured": "1987-11-09",
+      "note": "Read off the sketch survey plan (about 1:50). Metres from the inside top-left corner of the sheet, x right, y down; error about 0.2 m. Areas are the printed m2 in brackets.",
+      "size": [4.6, 5.4],
+      "rooms": [
+        { "id": "A", "use": "living", "area": 9.65, "note": "L-shaped, on the right and round G and F" },
+        { "id": "B", "use": "cubicle", "area": 3.54, "rect": [0, 3.05, 1.52, 5.38] },
+        { "id": "C", "use": "cubicle", "area": 3.54, "rect": [0, 0, 2.16, 1.64] },
+        { "id": "D", "use": "kitchen", "area": 2.0, "rect": [2.25, 0, 3.56, 1.53] },
+        { "id": "E", "use": "toilet", "area": 1.7, "rect": [3.62, 0.5, 4.6, 1.62] },
+        { "id": "F", "use": "bedspace", "area": 2.01, "rect": [1.6, 4.2, 3.32, 5.38] },
+        { "id": "G", "use": "bedspace", "area": 1.21, "rect": [1.6, 3.0, 3.36, 3.69] }
+      ],
+      "passage": [0, 1.64, 4.6, 2.39],
+      "door": [4.1, 5.38, 4.6, 5.38]
+    },
+    "cheungOn5F": {
+      "page": 340,
+      "note": "A shared 5/F, no scale. Three stairs share its landings; triangles mark the doors.",
+      "units": [
+        { "ref": "B24/114", "address": "Blk C, 5/F, 3 Cheung On Lane" },
+        { "ref": "B24/77", "address": "Blk A rear, 5/F, 3 Cheung On Lane" },
+        { "ref": "B24/76", "address": "Blk B rear, 5/F, 3 Cheung On Lane" },
+        { "ref": "B24/115", "address": "Flat B, 5/F, Rear Blk 3, Shing Hing Bldg, 31B Tung Tau Tsuen Road" },
+        { "ref": "B24/116", "address": "Flat A, 5/F, Rear Blk 3, Shing Hing Bldg, 31B Tung Tau Tsuen Road" }
+      ],
+      "stairs": [["B24/114", "B24/77"], ["B24/76", "B24/77"], ["B24/77", "B24/115"]]
+    }
+  }
+}
