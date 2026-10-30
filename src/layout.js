@@ -5,8 +5,9 @@
 // wall bases, the factory sites and named buildings (traced from the 1980s exhibit plan);
 // 459 premises with street, house number, floor, name and trade (GRS HKRS1255-3 titles,
 // parsed by tools/parse_grs.py); the storeys along the south face (Lambot's 1990 south
-// elevation, M+ 2017.412). APPROXIMATE: where on its street each premises sits (the order
-// follows the house numbers). INFERRED, and marked so: storeys away from the south face, and
+// elevation, M+ 2017.412); the street names and the 40 places of the 1992 map in City of
+// Darkness Revisited (data/book.json). APPROXIMATE: where on its street each premises sits
+// (the order follows the house numbers). INFERRED, and marked so: storeys away from the south face, and
 // the trade of a floor that no file records.
 import { mulberry32, vnoise, clamp, weighted } from './util.js';
 import { buildFootprints, mainAxis, LANE, YARD, ROAD } from './footprint.js';
@@ -84,6 +85,12 @@ export const USE_DOING = {
 const SOUTH_PROFILE = [11, 11, 11, 10, 11, 11, 10, 10, 10, 10, 11, 10, 11, 10, 10, 10, 11, 11, 11, 12,
   13, 12, 12, 12, 13, 14, 14, 13, 13, 14, 14, 14, 14, 14, 14, 12, 10, 10, 10, 10];
 
+// The street labels of data/plan.json, by the keys of data/businesses.json.
+const PLAN_STREET = {
+  'Kwong Ming St 光明街': 'kms', 'Lo Yan St 老人街': 'lys', 'Tai Chang St 大井街': 'tcs', 'Sz Kung St 社公街': 'skg',
+  'Lung Shing Rd 龍城路': 'lsr', 'Lung Chun Rd 龍津道': 'lcr', 'Sai Shing Rd 西城路': 'ssr',
+};
+
 const NAMES = {
   youthCentre: 'youth centre 青年中心',
   freeSchool: 'Lung Chun Free School Bldg 龍津義學大樓',
@@ -108,7 +115,7 @@ export function decodePlan(plan) {
   return code;
 }
 
-export function buildLayout(site, plan, biz = null, seed = 1986) {
+export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   const rng = mulberry32(seed);
   const pc = decodePlan(plan);
   const W = plan.W + 2 * MARGIN, D = plan.D + 2 * MARGIN, N = W * D;
@@ -249,9 +256,12 @@ export function buildLayout(site, plan, biz = null, seed = 1986) {
   }
 
   // ---- streets and premises ----------------------------------------------------------------
-  const streets = Object.entries(plan.streets).map(([name, [i, j, dir]]) => ({
-    name, dir, i: i + MARGIN, j: j + MARGIN, x: x0 + MARGIN + i + 0.5, z: z0 + MARGIN + j + 0.5,
-  }));
+  // Street names: the exhibit plan, and the four more that the 1992 map gives (book.json).
+  const street = (key, name, [i, j, dir]) => ({
+    key, name, dir, i: i + MARGIN, j: j + MARGIN, x: x0 + MARGIN + i + 0.5, z: z0 + MARGIN + j + 0.5,
+  });
+  const streets = Object.entries(plan.streets).map(([name, at]) => street(PLAN_STREET[name], name, at));
+  if (book) for (const [key, at] of Object.entries(book.overlay.streets)) streets.push(street(key, book.streets[key].name, at));
   L.streets = streets;
   L.frontage = streetFrontages(L, streets);
   if (biz) placePremises(L, biz, rng);
@@ -308,7 +318,15 @@ export function buildLayout(site, plan, biz = null, seed = 1986) {
   for (const f of [0.22, 0.5, 0.78]) { away.push(Math.round(f * (W - 1))); away.push((D - 1) * W + Math.round(f * (W - 1))); }
   for (const f of [0.33, 0.66]) { away.push(Math.round(f * (D - 1)) * W); away.push(Math.round(f * (D - 1)) * W + W - 1); }
 
-  return Object.assign(L, { cost, away, yard, yamenId, yamenCentre: yc });
+  // The 40 numbered places of the 1992 map (City of Darkness Revisited, pp352-353), fitted to
+  // the plan by tools/book_overlay.py. APPROXIMATE: the map "cannot be considered entirely
+  // accurate" (p353), and for five places it disagrees with the address in the text.
+  const places = !book ? [] : book.places.map((p) => {
+    const [i, j] = book.overlay.markers[p.n];
+    return { ...p, k: (Math.floor(j) + MARGIN) * W + Math.floor(i) + MARGIN, x: x0 + MARGIN + i, z: z0 + MARGIN + j };
+  });
+
+  return Object.assign(L, { cost, away, yard, yamenId, yamenCentre: yc, places });
 }
 
 // The plots along each street, in order. Tung Tau Tsuen Road, Lung Chun Road and Sai
@@ -369,14 +387,12 @@ function streetFrontages(L, streets) {
       }
     return { cells: seq, order };
   };
-  const key = { 'Kwong Ming St 光明街': 'kms', 'Lo Yan St 老人街': 'lys', 'Tai Tseng St 大井街': 'tcs', 'Sz Kung St 社公街': 'skg', 'Lung Shing Rd 龍城路': 'lsr' };
   L.streetLanes = {};
   for (const st of streets) {
-    const k = key[st.name];
-    if (!k) continue;
+    if (st.key === 'lcr' || st.key === 'ssr') continue;
     const w = walk(st);
-    out[k] = w.order || [];
-    L.streetLanes[k] = w.cells || [];
+    out[st.key] = w.order || [];
+    L.streetLanes[st.key] = w.cells || [];
   }
   return out;
 }
