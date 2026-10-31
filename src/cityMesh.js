@@ -1023,8 +1023,8 @@ if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
 // the storeys are only moved, never turned), the plan point (vXZ, for the lamps) and the
 // height before the lift (vRestY, for the section).
 const VERT_PARS = /* glsl */ `attribute vec2 aWall; attribute vec4 aInfo;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;`;
-const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vXZ = position.xz; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)}; vRestY = position.y;`;
+varying vec2 vWall; varying vec4 vInfo; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;`;
+const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vXZ = position.xz; vRestY = position.y;`;
 
 // The shadow pass of a storey: it drops what the colour pass drops for the section, so the
 // cut walls do not shade the rooms. Where the colour pass cuts out bars, leaves and pipes,
@@ -1041,7 +1041,7 @@ ${VERT_PARS}`)
 ${VERT_MAIN}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
-uniform float uIsCut; uniform float uCutTop; varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying float vRestY;
+uniform float uIsCut; uniform float uCutTop; varying vec2 vWall; varying vec4 vInfo; varying vec3 vWN; varying float vRestY;
 ${FACADE_GLSL}`)
       .replace('void main() {', `void main() {
   float kind = vInfo.z;
@@ -1070,7 +1070,7 @@ ${VERT_MAIN}`);
       .replace('#include <common>', `#include <common>
 uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutTop;
 uniform sampler2D uLampMap; uniform vec4 uLampBox;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;
+varying vec2 vWall; varying vec4 vInfo; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;
 ${FACADE_GLSL}
 ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) discard;' : '#define CUTOUT(c) if ((c) <= fcIgn(gl_FragCoord.xy)) discard;'}`)
       .replace('#include <color_fragment>', `#include <color_fragment>

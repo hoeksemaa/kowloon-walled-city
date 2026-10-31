@@ -267,8 +267,8 @@ function setOffsets(e) {
   if (state.cut >= 0) cutRing.position.y = state.cut * STOREY + CUT_H + 0.05;
 }
 
-// A cut storey is a level section, the same in both views: the storeys above it are hidden,
-// and all that rises above CUT_H over its floor is cut away, on every storey (cityMesh.js).
+// A cut storey is a level section, the same in both views: it hides the storeys above it, and
+// on every storey it drops all that rises above CUT_H over its floor (cityMesh.js).
 function setCut(c) {
   state.cut = c;
   shared.uCutTop.value = c >= 0 ? c * STOREY + CUT_H + 0.05 : NO_CUT;
