@@ -27,8 +27,9 @@ kept the outlines of buildings, joined the pieces of the resettlement blocks, an
 parks, slopes, roads and yards. I traced Mei Tung House and Block 23 by hand (the east wing
 of Mei Tung House by a seed fill). The result is in tools/context_input.json: `named`
 (buildings that are gone, with a name and storeys) and `traced` (buildings that are gone,
-with no name). That file also holds the City fit, the CSDI footprints that are left out, the
-road rules and the open ground. `build` reads only DL and that file.
+with no name; `storeys` and `what` mark the small structures that the sheet names, such as
+an ET). That file also holds the City fit, the CSDI footprints that are left out, the road
+rules and the open ground. `build` reads only DL and that file.
 
 The plan frame. HK1980 Grid (E, N) goes to plan metres (x, z) in two steps:
 1. T0, from src/site.js: dE = E - E0, dN = N - N0 with the anchor E0 837649.05,
@@ -848,7 +849,10 @@ def build(dl):
     for i, t in enumerate(inp['traced']):
         src, on_early, b_, share = sheet_note(t['ring'])
         A = abs(area(t['ring']))
-        if A < 30:
+        if t.get('storeys'):  # a small structure that the review named on the sheet
+            n = t['storeys']
+            rule = 'INFERRED: %s on the sheet, %s' % (t['what'], 'one storey' if n == 1 else '%d storeys' % n)
+        elif A < 30:
             n, rule = 1, 'INFERRED: under 30 m2, one storey'
         elif t['zone'] == 'cottage':
             n, rule = (1, 'INFERRED: a cottage area, under 80 m2, one storey') if A < 80 else (2, 'INFERRED: a cottage area, 80 m2 or more, two storeys')
