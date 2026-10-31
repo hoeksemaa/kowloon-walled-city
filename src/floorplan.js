@@ -190,6 +190,11 @@ export function makePlan(L, b, T, kind) {
     const s = sideOf(a, w);
     if (s >= 0) cellsOf[s].push(i);
   }
+  // Where the corridor runs inside the block, along a.
+  if (b.band) {
+    const as = aw.filter(([a, w]) => inBand(a, w) && !inCore(a, w)).map(([a]) => a);
+    b.bandA = as.length ? [Math.min(...as), Math.max(...as)] : [F.a0, F.a1];
+  }
   sides.forEach((side, s) => {
     const list = cellsOf[s].sort((i, j) => aw[i][0] - aw[j][0]);
     if (!list.length) return;
@@ -319,6 +324,106 @@ export function makePlan(L, b, T, kind) {
 }
 
 export const planAt = (b, f) => (b.plans ? (b.uses[f] === 'home' ? b.plans.home : b.plans.work) : null);
+
+// ---- walking on one storey ---------------------------------------------------------------
+// People walk from a room to its door, along the corridor, and into the stair, not through
+// walls. Points are plan [x, z].
+
+// Where people stand to climb: the middle of each stair. A block with no stair of its own
+// climbs at its stair cell (a narrow stair or a ladder): if it has no neighbour's stair to
+// use, or if it rises above that neighbour.
+export function stairPoints(L, b) {
+  if (b.cores && b.cores.length) {
+    const F = frameOf(b);
+    return b.cores.map((c) => ({ ...xzOf(F, (c.a0 + c.a1) / 2, (c.w0 + c.w1) / 2), k: c.k }));
+  }
+  const B = L.buildings;
+  if (b.shareWith >= 0 && B[b.shareWith].floors >= b.floors) return [];
+  let k = b.cells.includes(b.stair) ? b.stair : b.cells[0];
+  if (b.shareDoor) {
+    const [dx, dz] = b.shareDoor;
+    k = b.cells.reduce((p, q) => (Math.hypot(L.cellX(q) - dx, L.cellZ(q) - dz) < Math.hypot(L.cellX(p) - dx, L.cellZ(p) - dz) ? q : p));
+  }
+  return [{ x: L.cellX(k), z: L.cellZ(k), k }];
+}
+const xzOf = (F, a, w) => { const [x, z] = toXZ(F, a, w); return { x, z }; };
+
+// The middle line of the corridor, where people walk, at a.
+function corridorW(G) {
+  const lo = G.wall === G.w0 ? G.inner : G.w0, hi = G.wall === G.w1 ? G.inner : G.w1;
+  return (lo + hi) / 2;
+}
+
+// What is at plan point (x, z) on storey f of block b: { u } (a unit), 'corridor',
+// 'stair' (with the core), or null. k: the cell, if known.
+function regionAt(L, b, f, x, z, k) {
+  const P = planAt(b, f);
+  if (!P) return null;
+  if (k === undefined) k = Math.floor(z - L.z0) * L.W + Math.floor(x - L.x0);
+  const i = P.index.get(k);
+  if (i === undefined) return null;
+  const v = P.cell[i];
+  if (v >= 0) return { u: P.units[v] };
+  if (v === -2) {
+    const F = frameOf(b), [a, w] = toAW(F, x, z);
+    const c = b.cores.reduce((p, q) => (Math.hypot((q.a0 + q.a1) / 2 - a, (q.w0 + q.w1) / 2 - w) < Math.hypot((p.a0 + p.a1) / 2 - a, (p.w0 + p.w1) / 2 - w) ? q : p));
+    return { part: 'stair', core: c };
+  }
+  return { part: 'corridor' };
+}
+
+// From a point to the hub of its storey: the corridor (with the a where the path meets it),
+// or the stair of a block with no corridor. Returns { pts, a } (a: null when no corridor).
+function entry(L, b, f, x, z, k) {
+  const F = frameOf(b), legs = b.band, R = regionAt(L, b, f, x, z, k);
+  const lo = b.bandA ? b.bandA[0] : -Infinity, hi = b.bandA ? b.bandA[1] : Infinity;
+  const onCorridor = (a) => { a = Math.min(Math.max(a, lo), hi); return { pt: xzOf(F, a, corridorW(legAt(legs, a))), a }; };
+  const coreXZ = (c) => xzOf(F, (c.a0 + c.a1) / 2, (c.w0 + c.w1) / 2);
+  const pts = [];
+  if (R && R.u && R.u.door) {
+    const d = R.u.door;
+    if (d.axis === 'w') {
+      const s = R.u.where === 'below' ? -0.45 : 0.45;
+      pts.push(xzOf(F, d.a, d.w + s), xzOf(F, d.a, d.w));
+      if (legs) { const c = onCorridor(d.a); pts.push(c.pt); return { pts, a: c.a }; }
+      return { pts, a: null };
+    }
+    const c = b.cores.find((q) => Math.abs(q.a0 - d.a) < 1e-6 || Math.abs(q.a1 - d.a) < 1e-6) || b.cores[0];
+    const s = Math.abs(c.a0 - d.a) < 1e-6 ? -0.45 : 0.45;
+    pts.push(xzOf(F, d.a + s, d.w), xzOf(F, d.a, d.w), coreXZ(c));
+    if (legs) { const e = onCorridor((c.a0 + c.a1) / 2); pts.push(e.pt); return { pts, a: e.a }; }
+    return { pts, a: null };
+  }
+  if (R && R.part === 'stair') {
+    pts.push(coreXZ(R.core));
+    if (legs) { const e = onCorridor((R.core.a0 + R.core.a1) / 2); pts.push(e.pt); return { pts, a: e.a }; }
+    return { pts, a: null };
+  }
+  if (legs) { const e = onCorridor(toAW(F, x, z)[0]); pts.push(e.pt); return { pts, a: e.a }; }
+  if (b.cores.length) pts.push(coreXZ(b.cores[0]));
+  return { pts, a: null };
+}
+
+// The path on storey f of block b from P to Q ({ x, z, k? }): points after P, ending at Q.
+export function walkIn(L, b, f, P, Q) {
+  if (!planAt(b, f)) return [{ x: Q.x, z: Q.z }];
+  const RP = regionAt(L, b, f, P.x, P.z, P.k), RQ = regionAt(L, b, f, Q.x, Q.z, Q.k);
+  if (RP && RQ && RP.u && RP.u === RQ.u) return [{ x: Q.x, z: Q.z }];
+  const eP = entry(L, b, f, P.x, P.z, P.k), eQ = entry(L, b, f, Q.x, Q.z, Q.k);
+  const out = [...eP.pts];
+  if (eP.a !== null && eQ.a !== null) {
+    // Along the corridor, with a jog at each end of a leg on the way.
+    const F = frameOf(b), [a0, a1] = [eP.a, eQ.a];
+    const ends = b.band.slice(0, -1).map((G) => G.a1).filter((t) => (t - a0) * (t - a1) < 0);
+    if (a1 < a0) ends.reverse();
+    for (const t of ends) {
+      const e = 0.01 * Math.sign(a1 - a0);
+      out.push(xzOf(F, t, corridorW(legAt(b.band, t - e))), xzOf(F, t, corridorW(legAt(b.band, t + e))));
+    }
+  }
+  out.push(...[...eQ.pts].reverse(), { x: Q.x, z: Q.z });
+  return out.filter((p, i) => i === 0 || Math.hypot(p.x - out[i - 1].x, p.z - out[i - 1].z) > 0.05);
+}
 
 // The unit of block b at storey f that holds cell k: { plan, u } (u: unit, or null for the
 // corridor or the stair).

@@ -12,6 +12,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
 import { planAt, unitName } from './floorplan.js';
+import { WALK, CLIMB } from './routes.js';
 import { mulberry32, clamp } from './util.js';
 import { REAL } from './residents.js';
 
@@ -29,9 +30,6 @@ export const ROLES = {
 };
 
 const CLOTHES = ['#e9e4d8', '#d8d3c4', '#2f3d55', '#4a5a6e', '#7a2a24', '#c8b48a', '#3c3c3e', '#5c7a8c', '#a8c0c8', '#c97b5a', '#556b4f', '#efe8d0'];
-
-const WALK = 1.25; // m/s
-const CLIMB = 0.28; // m/s vertical on stairs
 
 // Days of the week from Tue 16 Dec 1986. Day 6 is 冬至.
 export const WEEK = ['TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'MON'];
@@ -515,50 +513,12 @@ export class Sim {
     pts.push([this.L.cellX(k) + ox, this.L.cellZ(k) + oz, 0, 0]);
   }
 
-  // Waypoints [x, z, y, level] from one place to another.
+  // Waypoints [x, z, y, level] from one place to another: through the corridors, stairs,
+  // links and roofs of routes.js, and along the lanes on the grid. When the clock runs fast,
+  // people take the plain way: down, along the lanes, and up.
   plan(a, from, to) {
-    const L = this.L, B = L.buildings;
-    const pts = [];
     const ox = (a.rng - 0.5) * 0.6, oz = (((a.rng * 7919) % 1) - 0.5) * 0.6;
-    const yOf = (p) => (p.type === 'roof' ? B[p.b].floors * STOREY : p.type === 'ground' ? 0 : p.f * STOREY);
-    const lvOf = (p) => (p.type === 'roof' ? B[p.b].floors - 1 : p.type === 'ground' ? 0 : p.f);
-    const stairXZ = (b) => [L.cellX(B[b].stair), L.cellZ(B[b].stair)];
-    if (from.type === 'away') {
-      const c = L.away[from.ap];
-      pts.push([L.cellX(c) + ox, L.cellZ(c) + oz, 0, 0]);
-    } else {
-      pts.push([from.x, from.z, yOf(from), lvOf(from)]);
-    }
-    const inB = (p) => p.type === 'in' || p.type === 'roof';
-    const sameBuilding = inB(from) && inB(to) && from.b === to.b;
-    if (sameBuilding) {
-      const [sx, sz] = stairXZ(from.b);
-      if (yOf(from) !== yOf(to)) {
-        pts.push([sx, sz, yOf(from), lvOf(from)]);
-        pts.push([sx, sz, yOf(to), lvOf(to)]);
-      }
-      pts.push([to.x, to.z, yOf(to), lvOf(to)]);
-      return pts;
-    }
-    let start;
-    if (from.type === 'away') start = L.away[from.ap];
-    else if (from.type === 'ground') start = from.k;
-    else {
-      const [sx, sz] = stairXZ(from.b);
-      pts.push([sx, sz, yOf(from), lvOf(from)]);
-      pts.push([sx, sz, 0, 0]);
-      start = B[from.b].stair;
-    }
-    const target = to.type === 'away' ? L.away[to.ap] : to.type === 'ground' ? to.k : B[to.b].stair;
-    this.groundRoute(start, target, ox, oz, pts);
-    if (to.type === 'ground') pts.push([to.x, to.z, 0, 0]);
-    else if (to.type !== 'away') {
-      const [sx, sz] = stairXZ(to.b);
-      pts.push([sx, sz, 0, 0]);
-      pts.push([sx, sz, yOf(to), lvOf(to)]);
-      pts.push([to.x, to.z, yOf(to), lvOf(to)]);
-    }
-    return pts;
+    return this.L.routes.trip(from, to, ox, oz, this.fast, (k0, k1, pts) => this.groundRoute(k0, k1, ox, oz, pts));
   }
 
   // ---- state ---------------------------------------------------------------------------
@@ -646,6 +606,7 @@ export class Sim {
 
   // Advance by dt simulated seconds.
   step(dt) {
+    this.fast = dt > 5;
     const prevMin = this.minute;
     this.minute += dt / 60;
     if (this.minute >= 1440) {
@@ -668,8 +629,10 @@ export class Sim {
       const n = this.agents.length, tries = Math.ceil(n * 0.004);
       for (let q = 0; q < tries; q++) {
         const a = this.agents[Math.floor(Math.random() * n)];
-        if (a.trip || a.act === 'asleep' || !a.loc || a.loc.type !== 'in') continue;
+        if (a.trip || a.act === 'asleep' || !a.loc) continue;
         const base = a.loc.base || a.loc;
+        if (a.loc.type === 'roof') { this.roam(a, base, nowS); continue; }
+        if (a.loc.type !== 'in') continue;
         const r = mulberry32((a.id * 31 + Math.floor(this.minute)) | 0);
         const spot = spotIn(this.L, this.L.buildings[base.b], base.f, base === a.home ? a.flat : -1, r);
         this.go(a, { ...base, ...spot, base }, nowS);
@@ -692,6 +655,22 @@ export class Sim {
       const f = span > 0 ? (el - tr.tc[tr.seg]) / span : 1;
       this.write(a, p[0] + (c[0] - p[0]) * f, p[1] + (c[1] - p[1]) * f, p[2] + (c[2] - p[2]) * f, p[3] + (c[3] - p[3]) * f);
     }
+  }
+
+  // On the roofs: to another spot on this roof, or over to the next roof (Albert Ng: "The
+  // kids would go onto the roofs and leap from building to building", SCMP 2013).
+  roam(a, base, nowS) {
+    const L = this.L, R = L.routes, B = L.buildings;
+    const r = mulberry32((a.id * 31 + Math.floor(this.minute)) | 0);
+    let t = B[a.loc.b].tower;
+    const near = R.roofNear(t);
+    if (near.length && r() < 0.6) t = near[Math.floor(r() * near.length)];
+    // Back toward the home roof, so nobody roams off for good.
+    if (t !== B[base.b].tower && B[a.loc.b].tower !== B[base.b].tower && r() < 0.5) t = B[base.b].tower;
+    const tops = L.towers[t].blocks.filter((id) => B[id].floors === R.towerTop[t]);
+    const b = B[tops[Math.floor(r() * tops.length)]];
+    const c = b.cells[Math.floor(r() * b.cells.length)];
+    this.go(a, { type: 'roof', b: b.id, x: L.cellX(c) + (r() - 0.5) * 0.6, z: L.cellZ(c) + (r() - 0.5) * 0.6, base }, nowS);
   }
 
   // Where is someone, in words.

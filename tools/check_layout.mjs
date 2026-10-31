@@ -3,10 +3,13 @@
 //     node tools/check_layout.mjs
 //
 // Prints counts. Fails (exit 1) if a unit has no cell, a cell is in no unit and not next to
-// the corridor or a stair, or a unit meets neither the corridor nor a stair.
+// the corridor or a stair, a unit meets neither the corridor nor a stair, a storey or a roof
+// has no way down to the lanes, or a walk on one storey goes through the room of another
+// unit.
 import { readFileSync } from 'node:fs';
 import { buildLayout } from '../src/layout.js';
-import { legAt } from '../src/floorplan.js';
+import { legAt, walkIn, planAt } from '../src/floorplan.js';
+import { buildRoutes } from '../src/routes.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -66,6 +69,40 @@ console.log(`flats ${flats} (book: 8800), size m2 p10 ${q(0.1)} p50 ${q(0.5)} p9
 console.log(`work units ${work}; units in more than one piece (a stair between two rooms) ${split}`);
 console.log(`units in blocks with no stair that reach out only through another unit ${landlocked}; units on a corridor with a door on a stair ${noCorridorDoor}`);
 console.log(`the survey flat: block ${L.realFlat && L.realFlat.b}, unit ${L.realFlat && L.realFlat.u}`);
+
+// Routes: every storey and roof has a way down, and walks on one storey keep out of the
+// rooms of other units.
+const R = buildRoutes(L);
+let cut = 0;
+for (let n = 0; n < R.N; n++) if (R.exitOf[n] < 0) { cut++; if (cut <= 5) problems.push(`node ${n} (block ${R.nB[n]}, storey ${R.nF[n]}, roof of tower ${R.nT[n]}) has no way down`); }
+console.log(`route network: ${R.N} nodes, ${R.doorsAt.flat().filter((d) => d.link).length} links between towers, ${R.bridges.length} bridges, ${R.hops.length} roof hops`);
+let rng = 7;
+const rnd = () => ((rng = (rng * 16807) % 2147483647) / 2147483647);
+let walks = 0, bad = 0;
+for (const b of B) {
+  if (!b.plans || b.floors < 2) continue;
+  const P = planAt(b, 1), units = P.units;
+  for (let t = 0; t < 6; t++) {
+    const u = units[Math.floor(rnd() * units.length)], v = units[Math.floor(rnd() * units.length)];
+    const k0 = u.cells[Math.floor(rnd() * u.cells.length)], k1 = v.cells[Math.floor(rnd() * v.cells.length)];
+    const from = { x: L.cellX(k0), z: L.cellZ(k0) }, path = [from, ...walkIn(L, b, 1, from, { x: L.cellX(k1), z: L.cellZ(k1) })];
+    walks++;
+    // Sample each step; a sample in the room of a third unit is a walk through a wall. Samples
+    // within 0.35 m of a door or a corner can fall in the next cell, thus they do not count.
+    let through = 0;
+    for (let q = 1; q < path.length; q++) {
+      const a = path[q - 1], c = path[q], len = Math.hypot(c.x - a.x, c.z - a.z);
+      for (let d = 0.35; d < len - 0.35; d += 0.25) {
+        const x = a.x + ((c.x - a.x) * d) / len, z = a.z + ((c.z - a.z) * d) / len;
+        const i = P.index.get(Math.floor(z - L.z0) * W + Math.floor(x - L.x0));
+        if (i !== undefined && P.cell[i] >= 0 && P.cell[i] !== u.id && P.cell[i] !== v.id) through++;
+      }
+    }
+    if (through > 2) bad++;
+  }
+}
+console.log(`walks on one storey: ${walks}, through another unit's room: ${bad}`);
+if (bad > walks * 0.02) problems.push(`${bad} of ${walks} walks go through the room of another unit`);
 
 if (problems.length) {
   console.log(`${problems.length} problems, e.g.:\n  ${problems.slice(0, 10).join('\n  ')}`);

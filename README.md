@@ -20,6 +20,9 @@ python3 serve.py 8173
   right) to see the plan, and point at a unit to see its name and size.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
+- **Routes.** People walk from their room to the door, along the corridor and up or down
+  the stair. They cross to other buildings through links and bridges and over the roofs,
+  or go down to the lanes, whichever is quicker.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** About 33,000 residents. Nine are real people who say only their own recorded
@@ -44,5 +47,6 @@ Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overl
 measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
 the repository or the app.
 
-`node tools/check_layout.mjs` builds the layout without a browser. It prints the counts of
-towers, stairs and flats, and fails if a unit does not meet a corridor or a stair.
+`node tools/check_layout.mjs` builds the layout and the route network without a browser. It
+prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
+corridor or a stair, if a storey has no way down, or if walks go through other rooms.
