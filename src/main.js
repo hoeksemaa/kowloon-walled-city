@@ -683,7 +683,7 @@ function homeSize(a) {
 function mapFacts(p) {
   if (!p) return '';
   return `<div class="tt-r"><span class="tt-k">1992 map</span> no. ${p.n}${p.key ? `, “${p.key}”` : ''}${p.page ? `, p${p.page}` : ''} <i>the key of the map, pp352–353</i></div>
-    ${p.conflict ? `<div class="tt-r"><span class="tt-k">map note</span> ${p.conflict}</div>` : ''}${p.note ? `<div class="tt-s">${p.note}</div>` : ''}`;
+    ${p.conflict ? `<div class="tt-r"><span class="tt-k">map note</span> ${p.conflict} The model uses the address in the text.</div>` : ''}${p.note ? `<div class="tt-s">${p.note}</div>` : ''}`;
 }
 
 function updateHover() {

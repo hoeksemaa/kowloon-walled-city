@@ -1,6 +1,6 @@
 {
   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014). Facts, page numbers and short quotes only. Notes: primary-sources/city-of-darkness-revisited/SOURCE.md.",
-  "note": "Hand-curated. Page numbers are printed pages. Places on the plan come from data/book_overlay.json (tools/book_overlay.py). Interviews are from about 1990: for 1986 they are APPROXIMATE. places: the 40 numbers of the 1992 map (pp352-353). key: the words of the map key after the name. place: the place that a number marks (12 numbers). For five of these places (9, 11, 15, 18, 29), the key also names a person. The other 28 numbers name people.",
+  "note": "Hand-curated. Page numbers are printed pages. Places on the plan come from data/book_overlay.json (tools/book_overlay.py). Interviews are from about 1990: for 1986 they are APPROXIMATE. places: the 40 numbers of the 1992 map (pp352-353). key: the words of the map key after the name. place: the place that a number marks (12 numbers). For five of these places (9, 11, 15, 18, 29), the key also names a person. The other 28 numbers name people. conflict: where the map disagrees with the text or the files. The model puts a person of the book at the address in the text, not at the number on the map.",
   "counts": {
     "buildings1987": { "value": 300, "pages": [134, 340], "quote": "some 300 individual buildings, each rising up to a possible 15 storeys" },
     "occupants1987": { "value": 28200, "page": 340, "quote": "28,200 occupants residing in 8800 separate apartments" },
@@ -47,13 +47,13 @@
     { "n": 16, "name": "Kwok Lau Hing", "what": "retired office cleaner", "key": "retired office cleaner", "page": 308 },
     { "n": 17, "name": "Lam Leung Po", "what": "minced-fish factory", "key": "fish factory owner", "page": 292, "street": "tcs", "where": "an alley off Tai Chang Street, close to the one standpipe; \"around 480 square feet\"" },
     { "n": 18, "name": "Jackie Pullinger", "place": "St Stephen's Society", "what": "St Stephen's Society", "key": "St Stephen's Society", "page": 262 },
-    { "n": 19, "name": "Lam Mei Kwong", "what": "retired dentist", "key": "retired dentist", "page": 11, "street": "lsr", "num": 4, "where": "4A Lung Shing Road, from 1949 (p11)", "conflict": "The map puts no. 19 in the west, far from Lung Shing Road. Use the address." },
+    { "n": 19, "name": "Lam Mei Kwong", "what": "retired dentist", "key": "retired dentist", "page": 11, "street": "lsr", "num": 4, "where": "4A Lung Shing Road, from 1949 (p11)", "conflict": "The map puts no. 19 in the west, far from Lung Shing Road." },
     { "n": 20, "name": "Lam Tseng Yat", "what": "grocery", "key": "shopkeeper", "page": 296, "street": "tcs", "num": 25, "floor": 0, "where": "25 Tai Chang Street, from 1947" },
-    { "n": 21, "name": "Lau Yeung Yin", "what": "weaving workshop", "key": "weaving factory", "page": 48, "street": "ssr", "where": "Sai Shing Road, from 1982", "conflict": "The map puts no. 21 in the south-east, far from Sai Shing Road. Use the address.", "grsNote": "Kwong Hing Weaving Factory, G/F, 25A Sai Shing Road (HKRS1255-3-231): same trade and street, not the same name" },
+    { "n": 21, "name": "Lau Yeung Yin", "what": "weaving workshop", "key": "weaving factory", "page": 48, "street": "ssr", "where": "Sai Shing Road, from 1982", "conflict": "The map puts no. 21 in the south-east, far from Sai Shing Road.", "grsNote": "Kwong Hing Weaving Factory, G/F, 25A Sai Shing Road (HKRS1255-3-231): same trade and street, not the same name" },
     { "n": 22, "name": "Law Kim Kwong", "what": "cake maker", "key": "cake maker", "page": 182 },
     { "n": 23, "name": "Law Yu Yi", "what": "retired maid", "key": "retired maid", "page": 80 },
-    { "n": 24, "name": "Lee Pui Yuen", "what": "store", "key": "shopkeeper", "page": 92, "street": "tcs", "num": 12, "floor": 0, "where": "12 Tai Chang Street, from 1979 (p93)", "grs": "HKRS1255-3-97", "grsNote": "順發士多, 12 TC St., G/F", "conflict": "The map puts no. 24 by Sai Shing Road. Use the address." },
-    { "n": 25, "name": "Lee Yu Chun", "what": "candy factory", "key": "candy factory", "page": 76, "street": "ssr", "num": 12, "floor": 0, "where": "12 Sai Shing Road, from the early 1970s", "grs": "HKRS1255-3-233", "grsNote": "Shui Tung Confectionery, G/F, No. 12 Second Lane, Sai Shing Road", "conflict": "The map puts no. 25 in the middle of the City. Use the address." },
+    { "n": 24, "name": "Lee Pui Yuen", "what": "store", "key": "shopkeeper", "page": 92, "street": "tcs", "num": 12, "floor": 0, "where": "12 Tai Chang Street, from 1979 (p93)", "grs": "HKRS1255-3-97", "grsNote": "順發士多, 12 TC St., G/F", "conflict": "The map puts no. 24 by Sai Shing Road." },
+    { "n": 25, "name": "Lee Yu Chun", "what": "candy factory", "key": "candy factory", "page": 76, "street": "ssr", "num": 12, "floor": 0, "where": "12 Sai Shing Road, from the early 1970s", "grs": "HKRS1255-3-233", "grsNote": "Shui Tung Confectionery, G/F, No. 12 Second Lane, Sai Shing Road", "conflict": "The map puts no. 25 in the middle of the City." },
     { "n": 26, "name": "Reverend Isaac Liu", "what": "missionary", "key": "missionary", "page": 304, "note": "The map key spells \"Lui\"." },
     { "n": 27, "name": "Old People's Centre", "place": "Old People's Centre", "what": "in the Yamen, from 1979", "page": 306 },
     { "n": 28, "name": "Old School", "place": "Old School", "what": "the old free school", "page": null },
@@ -68,7 +68,7 @@
     { "n": 37, "name": "Yamen", "place": "Yamen", "what": "the Qing-era hall", "page": 298 },
     { "n": 38, "name": "Yau Lap Cheong", "what": "retired shopkeeper", "key": "retired shopkeeper", "page": 23 },
     { "n": 39, "name": "Yim Kwok Yuen", "what": "roast-meat workshop", "key": "cooked meat factory", "page": 286, "street": "lys", "where": "Lo Yan Street, from 1981" },
-    { "n": 40, "name": "Yu Hing Wan", "what": "muslin maker", "key": "muslin maker", "page": 310, "street": "lcr", "where": "Lung Chun Road (p311)", "conflict": "The map puts no. 40 inside the City, away from Lung Chun Road. Use the address." }
+    { "n": 40, "name": "Yu Hing Wan", "what": "muslin maker", "key": "muslin maker", "page": 310, "street": "lcr", "where": "Lung Chun Road (p311)", "conflict": "The map puts no. 40 inside the City, away from Lung Chun Road." }
   ],
   "matches": {
     "note": "Places where the book and the clearance files agree. 'name': the same name; 'trade': the same trade on the same street.",

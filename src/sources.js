@@ -200,8 +200,9 @@ MAP tool shows these numbers with the place only.` : ''}</p>
     person, and the Which hint gives a band of three storeys; both change each half hour. Your hints and finds stay
     in this browser only.</li>
   <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five people
-    (nos. 19, 21, 24, 25 and 40) it disagrees with the address in the text. The model uses the address, and the
-    person's box or the list of the map's people gives the note. For the Fuk Tak Temple (no. 12) the map
+    (nos. 19, 21, 24, 25 and 40) it disagrees with the address in the text. The model puts nos. 21, 24 and 25 at
+    the address, and the box of each person gives the note. The list of the map's people gives the note for
+    nos. 19 and 40. For the Fuk Tak Temple (no. 12) the map
     disagrees with the clearance files; its disc has a dashed ring, and its card gives the note.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
 </ul>
