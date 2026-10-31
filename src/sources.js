@@ -155,7 +155,8 @@ inferred.</p>
     night. Who takes which place is a guess. At night a lamp lights each room of the cut storey while someone in
     it is awake: a bulb in a flat, tubes in a workshop.</li>
   <li><span class="st prov">DETAIL</span>Which building gets which colour, cage, overhang and stain; where each sheet,
-    pipe bundle, postbox wall and meter bank is; and which windows are lit at each hour. The floor lines of each
+    pipe bundle, postbox wall and meter bank is; what stands on each roof (pot plants, stools, junk, bird cages;
+    pp312–327); and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
     move.</li>
   <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.
