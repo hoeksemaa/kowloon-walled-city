@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { STOREY } from './layout.js';
 import { CUT_H } from './kinds.js';
 import { withDim } from './dim.js';
+import { USE_GLSL } from './useMap.js';
 
 // Each figure is a jointed body: legs with shoes, hips, a chest, arms with hands, a neck, a
 // head with eyes and hair, and what goes with it: a hat, a thing to carry, a stool or a mat,
@@ -350,9 +351,13 @@ vIn = aM.z > 31.5 ? 1.0 : 0.0;
 vLamp = aM.z > 63.5 ? texture2D(uLampMap, (aP.xy - uLampBox.xy) * uLampBox.zw).rgb : vec3(-1.0);
 // the storey for the dim of the layered view (dim.js); the gold marker and the selected person
 // (aL.w 2) keep their light, as if on a storey above every cut
-vLevel = int(aPart + 0.5) == 24 || aL.w > 1.5 ? 99.0 : aP.w;`)
+vLevel = int(aPart + 0.5) == 24 || aL.w > 1.5 ? 99.0 : aP.w;
+// the people of the cut storey outside the floor-use highlight of the legend are dim (useMap.js)
+if (uUseMode > 0.5 && vLevel < 98.0 && abs(aP.w - uUseCut) < 0.5 && useHit(aP.xy) < 0.5)
+  vAC = mix(vAC, vec3(dot(vAC, vec3(0.2126, 0.7152, 0.0722))), 0.5) * 0.3;`)
       .replace('#include <uv_pars_vertex>', `#include <uv_pars_vertex>
-uniform sampler2D uLampMap; uniform vec4 uLampBox; varying vec3 vLamp; varying float vLevel;`);
+uniform sampler2D uLampMap; uniform vec4 uLampBox; varying vec3 vLamp; varying float vLevel;
+${USE_GLSL}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; varying vec3 vLamp; varying float vLevel; uniform float uNight;`)
       .replace('#include <color_fragment>', `#include <color_fragment>\ndiffuseColor.rgb *= vAC;`)

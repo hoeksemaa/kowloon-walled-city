@@ -259,6 +259,9 @@ export class WireLayer {
     this.object.add(posts);
     this.standpipes = data.standpipes;
     this.flowing = false;
+    // The light kept by the lines of the cut storey: less than 1 while the legend lights a
+    // floor use (useMap.js), so that they do not hide the plan.
+    this.cutFade = 1;
   }
 
   // Water runs in the low pipes during the morning supply hours.
@@ -279,13 +282,15 @@ export class WireLayer {
 
   // offsets[k] = the lift of storey k. Each segment moves with its own storey. With a cut
   // storey, the storeys above it are hidden, and the rest is cut level at CUT_H over its floor
-  // (the section of cityMesh.js). Each segment takes the colour of its storey (dim.js).
+  // (the section of cityMesh.js). Each segment takes the colour of its storey (dim.js), and on
+  // the cut storey the fade cutFade.
   update(offsets, cut) {
     const top = cut >= 0 ? cut * STOREY + CUT_H + 0.05 : Infinity;
     for (const l of this.layers) {
       const R = l.rest, P = l.pos, K = l.k, C = l.cols;
       const tone = [];
       for (let k = 0; k < 16; k++) tone.push(dimColor(l.color, k, {}));
+      if (cut >= 0 && this.cutFade < 1) for (const ch of ['r', 'g', 'b']) tone[cut][ch] *= this.cutFade;
       let o = 0;
       for (let i = 0; i < K.length; i++) {
         const k = K[i];

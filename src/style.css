@@ -105,6 +105,22 @@ button { font: inherit; color: inherit; }
 #legend .sw { width: 14px; height: 3px; display: inline-block; }
 #legend .sq { width: 10px; height: 10px; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.35); }
 #legend .grp + .grp { margin-top: 8px; padding-top: 7px; border-top: 1px dashed var(--ink-3); }
+/* The rows of the floor uses: a point lights the use on the plan, a click keeps it lit. */
+#legend button.row { width: calc(100% + 8px); margin: 0 -4px; padding: 0 4px; border: 0; background: transparent; font: inherit; text-align: left; cursor: pointer; }
+#legend button.row:hover, #legend button.row.on { background: rgba(255, 255, 255, 0.6); }
+#legend button.row.lock { background: rgba(227, 154, 48, 0.2); box-shadow: inset 0 0 0 2px var(--accent); }
+#legend button.row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+#legend button.row .lb { flex: 1; }
+#legend button.row .lk { display: block; flex: none; visibility: hidden; color: var(--ink); }
+#legend button.row.lock .lk { visibility: visible; }
+#legend button.row.none { color: var(--ink-2); }
+#legend button.row.none .sq { filter: grayscale(1); opacity: 0.6; }
+#legend .use-n { width: 0; min-width: 100%; height: calc(3 * 1.45em + 5px); margin-top: 5px; padding-top: 4px; border-top: 1px dotted var(--ink-3); color: var(--ink-2); font-size: 10.5px; line-height: 1.45; }
+#legend .use-n div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 1.45em; }
+#legend .use-n b { color: var(--ink); font-weight: 600; }
+#legend .use-n .px { font-family: var(--pixel); font-size: 8px; letter-spacing: 0.03em; line-height: 15px; }
+#legend .use-n .ln { display: inline-block; width: 14px; margin: 0 4px 2px 0; border-top: 2px solid var(--ink); vertical-align: middle; }
+#legend .use-n .ln.d { margin-left: 6px; border-top-style: dashed; }
 
 /* ---- tooltip + tags ---- */
 #tooltip {

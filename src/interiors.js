@@ -609,8 +609,9 @@ const floorFor = (use) => (use === 'home' ? FLOORS.home : ['eating', 'shop', 'me
 // ---- the cut storey ------------------------------------------------------------------------
 // Floors, doors and furniture of the units of block b at storey f, plan P, drawing d. Gives
 // the spots of the people at the furniture (makeX), and a lamp for each unit: a pool of light
-// over its box in the frame (lamps.js), a tungsten bulb in a home, tubes elsewhere.
-export function furnish(M, L, b, f, P, d) {
+// over its box in the frame (lamps.js), a tungsten bulb in a home, tubes elsewhere. tint: a
+// colour that the floors take 40 % of (the colour of the use in the legend), or none.
+export function furnish(M, L, b, f, P, d, tint) {
   if (!P || !P.units.length) return { spots: [], lamps: [] };
   const F = frameOf(b), y0 = f * STOREY, use = b.uses[f];
   const rng = mulberry32((b.id * 7919 + f * 104729) | 0);
@@ -631,7 +632,8 @@ export function furnish(M, L, b, f, P, d) {
     X.lamps.push({ u: u.id, x: lx, z: lz, ra: (u.a1 - u.a0) / 2, rw: (u.w1 - u.w0) / 2, axis: [F.ux, F.uz, F.px, F.pz], warm: use === 'home' });
     // The floor: the unit's cells, clipped to the block and trimmed off the stairs.
     const [code, cols] = floorFor(use)[Math.floor(hash2(b.id * 31 + u.id, f) * floorFor(use).length)];
-    const fc = cols[Math.floor(hash2(u.id, b.id + f) * cols.length)];
+    let fc = cols[Math.floor(hash2(u.id, b.id + f) * cols.length)];
+    if (tint) fc = fc.clone().lerp(tint, 0.4);
     const pinfo = [b.tower, f, K.plate, code];
     const yy = y0 + 0.035 + (u.id % 4) * 0.0015;
     for (const k of u.cells) {

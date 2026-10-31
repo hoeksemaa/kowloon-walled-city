@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { unitAt, unitName, planAt } from './floorplan.js';
-import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
+import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
 import { DIM, withDim, dimOf } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
@@ -13,6 +13,7 @@ import { Flock } from './figures.js';
 import { Crowd } from './crowd.js';
 import { Post } from './post.js';
 import { Lamps } from './lamps.js';
+import { USE, UseMap, withUse } from './useMap.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH, groundMat } from './env.js';
@@ -35,6 +36,8 @@ const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // Roads outside the city, by side of the plan. Only these two touched the city directly;
 // Sai Tau Tsuen lay to the south and west until 1985 (research/kwc-research.md, 1.3).
 const STREETS = { top: 'TUNG TAU TSUEN ROAD 東頭村道', right: 'TUNG TSING ROAD 東正道' };
+// A padlock in pixels, on the row of the legend whose floor use a click keeps lit.
+const LOCK_ICON = '<svg class="lk" viewBox="0 0 7 8" width="7" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M2 0h3v1H2z M1 1h1v2H1z M5 1h1v2H5z M0 3h7v5H0z M3 5h1v1H3z" fill="currentColor" fill-rule="evenodd"/></svg>';
 
 // Haze: things fade with depth below the plinth top and with distance from the city, the
 // way the city below the model dissolves in the reference video.
@@ -82,9 +85,12 @@ controls.maxPolarAngle = 1.42;
   camera.zoom = 1.15;
 }
 
+// useHover, useFocus, useLock: the floor use that the pointer is on, that has the keyboard focus,
+// and that a click keeps lit, in the legend (useMap.js).
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1, mapPins: false,
   speed: SPEEDS[1], hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
+  useHover: null, useFocus: null, useLock: null,
 };
 const offsets = new Float32Array(16);
 const shared = {
@@ -94,10 +100,10 @@ const shared = {
 // open. uWalk and uIdle: the clocks of the steps and of the other moves (figures.js).
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap;
 const lamps = new Lamps(shared.uNight, renderer);
-Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
-Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
+Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
+Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 const unitRes = new Map();
 const sound = new Sound(); // off until the user turns it on
 
@@ -110,6 +116,7 @@ async function init() {
   L = buildLayout(site, plan, biz, book);
   L.routes = buildRoutes(L);
   lamps.setBox(L);
+  useMap = new UseMap(L);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
@@ -214,7 +221,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, dim: DIM };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, dim: DIM, useMap, showUse };
   requestAnimationFrame(frame);
 }
 
@@ -290,6 +297,8 @@ function setOffsets(e) {
 // on every storey it drops all that rises above CUT_H over its floor (cityMesh.js).
 function setCut(c) {
   state.cut = c;
+  // The floor use kept lit stays from storey to storey, until the cut goes.
+  if (c < 0) state.useLock = state.useHover = state.useFocus = null;
   shared.uCutTop.value = c >= 0 ? c * STOREY + CUT_H + 0.05 : NO_CUT;
   DIM.uDimCut.value = c;
   setSlabs();
@@ -304,16 +313,22 @@ function setCut(c) {
     }
   }
   if (cutRing.parent) cutRing.parent.remove(cutRing);
+  if (useMap.object.parent) useMap.object.parent.remove(useMap.object);
   people.setSpots(-1, []);
   lamps.set(-1, []);
+  useMap.set(-1);
   if (c >= 0) {
     const p = buildPlan(L, c);
     people.setSpots(c, p.spots);
     lamps.set(c, p.lamps);
+    useMap.set(c, p);
+    levels[c].group.add(useMap.object);
     const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = levels[c].mesh.customDepthMaterial;
     const lines = new THREE.LineSegments(p.lines, new THREE.LineDashedMaterial({ color: '#f1ead8', dashSize: 0.42, gapSize: 0.3 }));
+    lines.material.onBeforeCompile = withUse;
+    lines.material.customProgramCacheKey = () => 'kwc-plan-lines';
     lines.computeLineDistances();
     levels[c].group.add(mesh, lines);
     levels[c].plan = { mesh, lines };
@@ -324,6 +339,57 @@ function setCut(c) {
   wires.update(offsets, c);
   renderRail();
   renderLegend();
+}
+
+// ---- floor-use highlight (useMap.js) ----------------------------------------------------------
+// The use lit on the plan: the row that the pointer is on, else the row with the keyboard focus,
+// else the row kept lit with a click.
+const shownUse = () => (state.cut < 0 ? null : state.useHover || state.useFocus || state.useLock);
+const useColor = (key) => USE_COLORS[key] || PLAN_COLORS[key];
+
+function showUse() {
+  const key = shownUse();
+  useMap.show(key, key && useColor(key));
+  const fade = key ? 0.25 : 1;
+  if (fade !== wires.cutFade) {
+    wires.cutFade = fade;
+    wires.update(offsets, state.cut);
+  }
+  const box = $('legend');
+  for (const el of box.querySelectorAll('[data-key]')) {
+    const k = el.dataset.key;
+    el.classList.toggle('on', k === key);
+    el.classList.toggle('lock', k === state.useLock);
+    el.setAttribute('aria-pressed', String(k === state.useLock));
+  }
+  const n = box.querySelector('.use-n');
+  if (n) n.innerHTML = useCount(key);
+}
+
+// After a change of the use kept lit: the row of a use that this storey does not have goes.
+function relock() {
+  if ($('legend').querySelector('.none')) renderLegend();
+  else showUse();
+}
+
+// The foot of the floor-use legend: what the lit use holds on the cut storey, or how to use it.
+// It has three lines, always, so that the rows do not move under the pointer. The outline of a
+// block is solid if its trade is recorded, and dashed if it is inferred from the Kai Fong count
+// of 1983 (layout.js).
+function useCount(key) {
+  const lv = levelName(state.cut);
+  const line = (t) => `<div>${t}</div>`, px = (t) => `<div class="px">${t}</div>`;
+  if (!key) return px('POINT AT A USE TO LIGHT IT ON THE PLAN') + px('CLICK TO KEEP IT LIT');
+  const keep = px(state.useLock ? 'KEPT LIT · CLICK IT OR ESC TO CLEAR' : 'CLICK TO KEEP IT LIT');
+  if (key === 'corridor' || key === 'link') {
+    const p = useMap.plan, doors = p.doors.filter((d) => d.link === (key === 'link')).length;
+    if (key === 'link') return line(`<b>${doors} link${doors === 1 ? '' : 's'}</b> to the next building on ${lv}`) + line('places inferred') + keep;
+    return line(`<b>corridors</b> in ${new Set(p.corridors.map((q) => q.b)).size} blocks on ${lv}`) + line(`${doors} doors to the next block · plan inferred`) + keep;
+  }
+  const bs = useMap.blocks(key), n = bs.length, inf = bs.filter((b) => b.inferred && b.inferred[state.cut]).length;
+  const head = line(`<b>${n ? `${n} block${n === 1 ? '' : 's'}` : 'none'}</b> on ${lv} · ${USE_LABEL[key]}`);
+  const split = key === 'home' || !n ? line('') : line(`<span class="ln"></span>${n - inf} recorded${inf ? ` <span class="ln d"></span>${inf} inferred (1983 count)` : ''}`);
+  return head + split + keep;
 }
 
 // ---- picking ----------------------------------------------------------------------------------
@@ -437,6 +503,25 @@ function buildUI() {
   renderLegend();
   drawSpark();
 
+  // The floor-use legend: a point at a row (or the keyboard focus on it) lights its use; a
+  // click keeps it lit, and a click on the row kept lit lets it go. A touch only clicks.
+  const legend = $('legend');
+  const keyOf = (ev) => { const el = ev.target.closest && ev.target.closest('[data-key]'); return el ? el.dataset.key : null; };
+  legend.addEventListener('pointerover', (ev) => {
+    if (ev.pointerType === 'touch') return;
+    const k = keyOf(ev);
+    if (k !== state.useHover) { state.useHover = k; showUse(); }
+  });
+  legend.addEventListener('pointerleave', () => { if (state.useHover) { state.useHover = null; showUse(); } });
+  legend.addEventListener('focusin', (ev) => { state.useFocus = ev.target.matches(':focus-visible') ? keyOf(ev) : null; showUse(); });
+  legend.addEventListener('focusout', () => { state.useFocus = null; showUse(); });
+  legend.addEventListener('click', (ev) => {
+    const k = keyOf(ev);
+    if (!k) return;
+    state.useLock = state.useLock === k ? null : k;
+    relock();
+  });
+
   canvas.addEventListener('pointermove', (ev) => {
     mouse.x = ev.clientX; mouse.y = ev.clientY; mouse.moved = true; mouse.inside = true;
     ndc.set((ev.clientX / innerWidth) * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1);
@@ -463,7 +548,11 @@ function buildUI() {
     else if (k === 's') $('t-sound').click();
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
-    else if (k === 'escape') { setCut(-1); sim.select(-1); }
+    else if (k === 'escape') {
+      // the first Esc lets go of the floor use kept lit, the next one clears the cut
+      if (state.useLock) { state.useLock = null; relock(); }
+      else { setCut(-1); sim.select(-1); }
+    }
     else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || SPEEDS[1]); }
     else if (k === '1' || k === '2' || k === '3') setSpeed(SPEEDS[Number(k)]);
     else if (ev.key === 'ArrowUp') { ev.preventDefault(); setCut(state.cut < 0 ? -1 : state.cut + 1 >= MAX_FLOORS ? -1 : state.cut + 1); }
@@ -534,15 +623,23 @@ function renderRail() {
   }
 }
 
+// The legend. Each row of the floor uses is a button: a point at it lights that use on the plan,
+// and a click keeps it lit (showUse). The rows are made again on each call; one set of
+// listeners on #legend serves them all (buildUI).
 function renderLegend() {
   const g = [];
+  // A row with the keyboard focus keeps it, if this storey has the row.
+  const focusKey = state.useFocus;
+  state.useHover = state.useFocus = null;
   if (state.cut >= 0) {
     const here = new Set(L.buildings.filter((b) => b.floors > state.cut).map((b) => b.uses[state.cut]));
     const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
-    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${uses
-      .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
-      .join('')}<div class="row"><span class="sq" style="background:#e2ddd8"></span>corridor, door to the next block</div>
-      <div class="row"><span class="sq" style="background:#c9a35c"></span>link to the next building (place inferred)</div></div>`);
+    const row = (key, label, extra = '') => `<button class="row${extra}" data-key="${key}" aria-pressed="false"><span class="sq" style="background:${useColor(key)}"></span><span class="lb">${label}</span>${LOCK_ICON}</button>`;
+    // A use kept lit that this storey does not have stays at the top, in grey.
+    const gone = state.useLock && USE_LABEL[state.useLock] && !here.has(state.useLock) ? row(state.useLock, `${USE_LABEL[state.useLock]} · none on this storey`, ' none') : '';
+    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
+      ${row('corridor', 'corridor, door to the next block')}${row('link', 'link to the next building (place inferred)')}
+      <div class="use-n"></div></div>`);
   }
   if (wires && wires.object.visible) {
     const seen = new Set();
@@ -552,6 +649,8 @@ function renderLegend() {
     g.push(`<div class="grp"><h3>UTILITIES (SCHEMATIC)</h3>${rows}</div>`);
   }
   $('legend').innerHTML = g.join('');
+  if (focusKey) { const el = $('legend').querySelector(`[data-key="${focusKey}"]`); if (el) el.focus(); }
+  showUse();
 }
 
 function drawSpark() {
@@ -879,6 +978,7 @@ function resize() {
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
   wires.setResolution(w, h);
+  useMap.setResolution(w, h);
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
