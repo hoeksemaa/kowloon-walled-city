@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
-import { unitAt, unitName } from './floorplan.js';
+import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
 import { DIM, withDim, dimOf } from './dim.js';
@@ -99,7 +99,6 @@ const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
 const unitRes = new Map();
-const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 const sound = new Sound(); // off until the user turns it on
 
 async function init() {
@@ -208,7 +207,6 @@ async function init() {
   residents = new Map();
   for (const a of agents) if (a.home.type === 'in') residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
   for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
-  for (const a of agents) if (a.real && a.real.home && a.real.home.size && a.home.m !== undefined) unitReal.set(`${a.home.b}:${a.home.f}:${a.home.m}`, a.real);
 
   buildUI();
   buildStreetTags();
@@ -645,11 +643,9 @@ function unitTooltip(bid, f, cell) {
   const prem = (B.prem[f] || []).slice(0, 3).map((p) => `<div class="tt-r">${premLine(p)}</div>`).join('')
     + ((B.prem[f] || []).some((p) => p.mezz) ? '<div class="tt-s">the files name a mezzanine (M/F) on this floor</div>' : '');
   const flatNote = P.kind === 'home' && !note ? '<div class="tt-s">cubicles and bed spaces after the 1987 survey plan of a flat (p340), inferred</div>' : '';
-  const R = P.kind === 'home' && unitReal.get(`${bid}:${f}:${u.id}`);
-  const recorded = R ? `<div class="tt-real">REAL PERSON</div><div class="tt-r">The home of ${R.name}: ${R.home.size}. The model draws this flat smaller.</div>` : '';
   return `<div class="tt-h">${unitName(B, f, u).toUpperCase()}</div><div>${buildingName(B)}</div>${rows}
     ${prem ? `<div class="tt-s">on this floor, in the clearance files or the book:</div>${prem}` : ''}
-    ${recorded}${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
+    ${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
 }
 
 function agentTooltip(id) {
@@ -657,7 +653,7 @@ function agentTooltip(id) {
   const d = sim.describe(a);
   const head = `<div class="tt-h">${d.title}${d.age ? ` · ${d.age}` : ''}</div><div>${d.role}</div>
     <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
-    <div><span class="tt-k">home</span> ${d.home}</div>`;
+    <div><span class="tt-k">home</span> ${d.home}</div>${homeSize(a)}`;
   if (!a.real) return `${head}<div class="tt-s">${a.home.type === 'in' ? 'a composite resident' : 'a composite person from outside the city'}, not a real person · click to follow</div>`;
   const facts = a.real.facts.slice(0, 2).map(([t, src]) => `<div class="tt-r">${t} <i>${src}</i></div>`).join('');
   if (a.real.book)
@@ -669,6 +665,15 @@ function agentTooltip(id) {
   const quote = q ? `<div class="tt-q">“${said}”${gloss ? `<div class="g">[${gloss}</div>` : ''}<div class="w">${q.src} · ${q.tag}</div></div>` : '';
   return `<div class="tt-real">REAL PERSON</div>${head}${facts}${quote}
     <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
+}
+
+// The size of a real person's home that a source records, and the size of the model's flat.
+function homeSize(a) {
+  const size = a.real && a.real.home && a.real.home.size;
+  const P = size && a.home.type === 'in' && planAt(L.buildings[a.home.b], a.home.f), u = P && P.units[a.home.m];
+  if (!u) return '';
+  const sqft = Math.round(u.area * 10.76), smaller = sqft < +(size.match(/\d+/) || [0])[0];
+  return `<div class="tt-r"><span class="tt-k">home size</span> ${size} recorded; the model’s flat is ${smaller ? 'smaller, ' : ''}about ${u.area} m² (${sqft} sq ft)</div>`;
 }
 
 // What the 1992 map says of a person of the book: the number, the words of the key and the
