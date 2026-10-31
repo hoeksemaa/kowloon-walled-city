@@ -1,7 +1,7 @@
 // Residents and their week, Tue 16 to Mon 22 Dec 1986.
 //
 // SOURCED: about 33,000 residents (the Governor, Oct 1988; "more than 30,000", Baltimore
-// Sun 1992); about 8,500 households (see layout.js); nine real people with their homes and
+// Sun 1992); 8800 apartments (City of Darkness Revisited, p340; the flats of floorplan.js); nine real people with their homes and
 // trades (residents.js); water hours by floor (林羅平); schoolchildren in "pristine white
 // uniforms" (a police officer, 1987); children on the roofs (Albert Ng, 2013).
 // INFERRED: the share of each role and the hours of each day. A 1980s Hong Kong week: work
@@ -11,6 +11,7 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
+import { planAt, unitName } from './floorplan.js';
 import { mulberry32, clamp } from './util.js';
 import { REAL } from './residents.js';
 
@@ -42,6 +43,10 @@ export function createPopulation(L, total = 33000, seed = 1987) {
   const flats = [];
   for (const b of B)
     for (let f = 0; f < b.floors; f++) if (b.uses[f] === 'home') for (let m = 0; m < b.flats; m++) flats.push({ b: b.id, f, m });
+  const letter = (b, f, t) => {
+    const P = planAt(b, f), u = P && t ? P.units.findIndex((x) => x.letter === t) : -1;
+    return u >= 0 ? u : 0;
+  };
 
   const work = [], shops = [], schools = [];
   for (const b of B)
@@ -72,33 +77,42 @@ export function createPopulation(L, total = 33000, seed = 1987) {
     const h = R.home;
     if (h && h.street) {
       const b = locate(L, h.street, h.num, h.floor);
-      if (b) home = { type: 'in', b: b.id, f: h.floor, ...spotIn(L, b, 0, rng) };
+      if (b) { const m = letter(b, h.floor, h.unit); home = { type: 'in', b: b.id, f: h.floor, m, ...spotIn(L, b, h.floor, m, rng) }; }
     } else if (h) {
       const c = B.filter((b) => b.kind === 'tenement' && b.floors > h.floor + 1 && b.uses[h.floor] === 'home');
       const b = c[Math.floor(rng() * c.length)];
-      home = { type: 'in', b: b.id, f: h.floor, ...spotIn(L, b, 0, rng) };
+      home = { type: 'in', b: b.id, f: h.floor, m: 0, ...spotIn(L, b, h.floor, 0, rng) };
     }
     if (!home && homeOf.has(R.key)) home = homeOf.get(R.key);
     const a = {
-      id: agents.length, name: R.name, age: R.age, role: R.sched, real: R, home, flat: 0,
+      id: agents.length, name: R.name, age: R.age, role: R.sched, real: R, home, flat: home ? home.m : 0,
       color: new THREE.Color('#e8c14a'), rng: rng(),
     };
     if (h && h.pair) homeOf.set(h.pair, home);
     if (R.work) {
       const c = B.filter((b) => b.uses[0] === R.work.use && b.floors > 1 && (R.work.near === 'edge' ? b.front !== 'inner' : b.front === 'inner'));
       const b = c[Math.floor(rng() * c.length)] || B.find((x) => x.uses[0] === R.work.use);
-      a.work = { type: 'in', b: b.id, f: 0, what: R.work.use, ...spotIn(L, b, -1, rng) };
+      a.work = { type: 'in', b: b.id, f: 0, what: R.work.use, ...spotIn(L, b, 0, -1, rng) };
     }
     agents.push(a);
   }
   // 劉太 shares 劉先生's flat.
   for (const a of agents) if (!a.home) a.home = homeOf.get(a.real.key) || { type: 'away', ap: 0, what: 'outside the city' };
 
-  // About 8,500 households (layout.js): one to each flat; a few flats hold two.
-  const nHouse = Math.round(flats.length * 1.06);
+  // A real person's flat holds the household that the source gives, and no other.
+  const taken = new Set(), realHouses = [];
+  for (const a of agents) {
+    if (a.home.type !== 'in') continue;
+    taken.add(`${a.home.b}:${a.home.f}:${a.home.m}`);
+    const n = (a.real.household || 1) - 1;
+    if (n > 0) realHouses.push({ fl: { b: a.home.b, f: a.home.f, m: a.home.m }, n, surname: SURNAMES[Math.floor(rng() * SURNAMES.length)] });
+  }
+  const free = flats.filter((fl) => !taken.has(`${fl.b}:${fl.f}:${fl.m}`));
+  // About 8,800 flats (layout.js): one household to each; a few flats hold two.
+  const nHouse = Math.round(free.length * 1.06);
   const homes = [];
-  for (let h = 0; h < nHouse; h++) homes.push(h < flats.length ? flats[h] : flats[Math.floor(rng() * flats.length)]);
-  const left = total - agents.length;
+  for (let h = 0; h < nHouse; h++) homes.push(h < free.length ? free[h] : free[Math.floor(rng() * free.length)]);
+  const left = total - agents.length - realHouses.reduce((s, h) => s + h.n, 0);
   const mean = left / homes.length;
   const households = homes.map((fl) => ({
     fl,
@@ -111,8 +125,8 @@ export function createPopulation(L, total = 33000, seed = 1987) {
     const h = households[Math.floor(rng() * households.length)];
     if (sum < left) { h.n++; sum++; } else if (h.n > 1) { h.n--; sum--; }
   }
-  for (const { fl, n, surname } of households) {
-    const home = { type: 'in', b: fl.b, f: fl.f, ...spotIn(L, B[fl.b], fl.m, rng) };
+  for (const { fl, n, surname } of households.concat(realHouses)) {
+    const home = { type: 'in', b: fl.b, f: fl.f, m: fl.m, ...spotIn(L, B[fl.b], fl.f, fl.m, rng) };
     for (let p = 0; p < n; p++) {
       const role = pickRole();
       const [a0, a1] = ROLES[role].ages;
@@ -126,26 +140,27 @@ export function createPopulation(L, total = 33000, seed = 1987) {
         color: new THREE.Color(CLOTHES[Math.floor(rng() * CLOTHES.length)]),
         rng: rng(),
       };
-      if (role === 'worker_in' && work.length) { const w = pickW(work); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], -1, rng) }; }
-      if (role === 'shopkeeper' && shops.length) { const w = pickW(shops); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], -1, rng) }; }
-      if (role === 'student' && schools.length && rng() < 0.15) { const w = pickW(schools); a.school = { type: 'in', b: w.b, f: w.f, what: 'school', ...spotIn(L, B[w.b], -1, rng) }; }
+      if (role === 'worker_in' && work.length) { const w = pickW(work); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], w.f, -1, rng) }; }
+      if (role === 'shopkeeper' && shops.length) { const w = pickW(shops); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], w.f, -1, rng) }; }
+      if (role === 'student' && schools.length && rng() < 0.15) { const w = pickW(schools); a.school = { type: 'in', b: w.b, f: w.f, what: 'school', ...spotIn(L, B[w.b], w.f, -1, rng) }; }
       agents.push(a);
     }
   }
   return agents;
 }
 
-// A spot inside a building: within flat m's slice of the plan, or anywhere if m < 0.
-function spotIn(L, b, m, rng) {
-  const alongX = b.i1 - b.i0 >= b.j1 - b.j0;
+// A spot inside a block at storey f: in unit m of its floor plan; in any unit if m is -1;
+// in the corridor if m is -3.
+function spotIn(L, b, f, m, rng) {
   let cells = b.cells;
-  if (m >= 0 && b.flats > 1) {
-    const lo = m / b.flats, hi = (m + 1) / b.flats;
-    const sub = b.cells.filter((c) => {
-      const t = alongX ? ((c % L.W) - b.i0 + 0.5) / (b.i1 - b.i0) : (((c / L.W) | 0) - b.j0 + 0.5) / (b.j1 - b.j0);
-      return t >= lo && t < hi;
-    });
-    if (sub.length) cells = sub;
+  const P = planAt(b, f);
+  if (P) {
+    if (m >= 0 && P.units[m]) cells = P.units[m].cells;
+    else if (m === -1) cells = P.units[Math.floor(rng() * P.units.length)].cells;
+    else if (m === -3) {
+      const hall = b.cells.filter((k, i) => P.cell[i] === -1);
+      if (hall.length) cells = hall;
+    }
   }
   const c = cells[Math.floor(rng() * cells.length)];
   return { x: L.cellX(c) + (rng() - 0.5) * 0.6, z: L.cellZ(c) + (rng() - 0.5) * 0.6 };
@@ -300,7 +315,7 @@ function makeSchedule(a, L, rng, dow) {
       break;
     }
     case 'youth': {
-      const hall = { type: 'in', b: home.b, f: home.f, ...spotIn(L, L.buildings[home.b], -1, rng) };
+      const hall = { type: 'in', b: home.b, f: home.f, ...spotIn(L, L.buildings[home.b], home.f, -3, rng) };
       if (sun) { at(H(9, 0), home, 'Sunday at home'); at(H(10, 30), roof(), 'flying a kite from the roof'); at(H(12, 30), home, 'lunch'); at(H(15, 0), hall, 'playing ping pong in the hallway'); at(H(17, 30), home, 'dinner'); at(H(23, 0), home, 'asleep'); break; }
       at(H(6, 50), home, 'getting up');
       at(H(7, 30), away('at school or work outside (not recorded)'), 'at school or work outside (not recorded)');
@@ -325,7 +340,7 @@ function makeSchedule(a, L, rng, dow) {
       if (dow === 2) {
         const c = L.buildings.filter((b) => b.uses[0] === 'foodfac' && b.id !== shop.b);
         const ob = c[Math.floor(rng() * c.length)];
-        at(H(19, 15), { type: 'in', b: ob.id, f: 0, ...spotIn(L, ob, -1, rng) }, 'mahjong with other bosses after work');
+        at(H(19, 15), { type: 'in', b: ob.id, f: 0, ...spotIn(L, ob, 0, -1, rng) }, 'mahjong with other bosses after work');
         at(H(23, 0), a.home, 'home, outside the city (not recorded)');
       } else at(H(19, 0), a.home, 'home, outside the city (not recorded)');
       break;
@@ -339,7 +354,7 @@ function makeSchedule(a, L, rng, dow) {
         const c = L.buildings.filter((b) => b.kind === 'tenement' && b.floors > 3);
         const b = c[Math.floor(rng() * c.length)];
         const f = 1 + Math.floor(rng() * (b.floors - 1));
-        return { type: 'in', b: b.id, f, ...spotIn(L, b, -1, rng) };
+        return { type: 'in', b: b.id, f, ...spotIn(L, b, f, -1, rng) };
       };
       let t = H(8, 30);
       at(t, laneSpot(L, rng, null), 'starting his round');
@@ -656,7 +671,7 @@ export class Sim {
         if (a.trip || a.act === 'asleep' || !a.loc || a.loc.type !== 'in') continue;
         const base = a.loc.base || a.loc;
         const r = mulberry32((a.id * 31 + Math.floor(this.minute)) | 0);
-        const spot = spotIn(this.L, this.L.buildings[base.b], base === a.home ? a.flat : -1, r);
+        const spot = spotIn(this.L, this.L.buildings[base.b], base.f, base === a.home ? a.flat : -1, r);
         this.go(a, { ...base, ...spot, base }, nowS);
       }
     }
@@ -688,7 +703,10 @@ export class Sim {
       if (p.type === 'away') return 'outside the city';
       if (p.type === 'ground') return p.street ? `in the lane of ${STREET[p.street]}` : 'in a lane';
       if (p.type === 'roof') return `roof of ${buildingName(B[p.b])}`;
-      if (p.type === 'in') return `${p.f === 0 ? 'G/F' : p.f + '/F'}, ${buildingName(B[p.b])}`;
+      if (p.type === 'in') {
+        const P = planAt(B[p.b], p.f), u = P && p.m !== undefined ? P.units[p.m] : null;
+        return `${unitName(B[p.b], p.f, u)}, ${buildingName(B[p.b])}`;
+      }
       return '';
     };
     const moving = !!a.trip;
