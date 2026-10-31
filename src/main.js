@@ -67,7 +67,7 @@ controls.dampingFactor = 0.09;
 controls.screenSpacePanning = true;
 controls.zoomToCursor = true;
 controls.minZoom = 0.45;
-controls.maxZoom = 14;
+controls.maxZoom = 28;
 controls.minPolarAngle = 0.12;
 controls.maxPolarAngle = 1.42;
 {
