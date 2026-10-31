@@ -29,16 +29,20 @@ function nameText(p) {
   return t.slice(0, 8);
 }
 
+// Board colours measured in the photos (pp8, 61, 285). Most boards are white or cream with
+// black brush characters; about one in ten is red, yellow or blue. No neon: at dusk the
+// boards glow as lit boxes (pp152, 284).
 const STYLES = [
-  { bg: '#b8261c', fg: '#f4ead2', bd: '#f4ead2' },
-  { bg: '#f1ece0', fg: '#b8261c', bd: '#b8261c' },
-  { bg: '#e2b33c', fg: '#8c1d14', bd: '#8c1d14' },
-  { bg: '#1f5f8c', fg: '#f4ead2', bd: '#f4ead2' },
-  { bg: '#1d6a47', fg: '#f4ead2', bd: '#e2b33c' },
-  { bg: '#1c1b19', fg: '#e2b33c', bd: '#e2b33c' },
-  { bg: '#f1ece0', fg: '#1d4f8c', bd: '#1d4f8c' },
+  { bg: '#f4f1ea', fg: '#2a211d', bd: '#2a211d' },
+  { bg: '#e7d9c9', fg: '#3d2721', bd: '#3d2721' },
+  { bg: '#fdfefd', fg: '#362a31', bd: '#8a7f78' },
+  { bg: '#ece2cf', fg: '#7a1f17', bd: '#7a1f17' },
+  { bg: '#a75a49', fg: '#f3dcc2', bd: '#f3dcc2' },
+  { bg: '#d99f76', fg: '#4b2013', bd: '#4b2013' },
+  { bg: '#6f6290', fg: '#f4ead2', bd: '#f4ead2' },
 ];
-const STYLE_BY_TRADE = { dentist: [0, 1, 1, 6], clinic: [1, 4, 6, 0], bonesetter: [0, 5], medicine: [4, 5, 2] };
+const PLAIN = 4; // styles before this are the white and cream boards
+const pickStyle = (rng) => (rng() < 0.1 ? PLAIN + Math.floor(rng() * (STYLES.length - PLAIN)) : Math.floor(rng() * PLAIN));
 const FONTS = [
   '900 {s}px "PingFang TC", "Heiti TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif',
   '700 {s}px "Songti TC", "Noto Serif TC", "PMingLiU", serif',
@@ -82,10 +86,9 @@ export function planSigns(L, rng) {
         for (let q = 0; q < n; q++) {
           let r = rng() * total, pick = pool[0];
           for (const x of pool) { r -= x.fr.len; if (r <= 0) { pick = x; break; } }
-          const st = STYLE_BY_TRADE[w.trade];
           out.push({
             b: b.id, s, e: pick.e, u: 0.7 + rng() * (pick.fr.len - 1.4), text: w.t,
-            style: st ? st[Math.floor(rng() * st.length)] : Math.floor(rng() * STYLES.length),
+            style: pickStyle(rng),
             font: Math.floor(rng() * FONTS.length), w: 0.75 + rng() * 0.4, o: 0.25 + rng() * 0.35,
           });
         }

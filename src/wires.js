@@ -148,12 +148,14 @@ export function buildWires(L) {
     }
   }
 
-  // Standpipes: the one inside, on Tai Chang Street at no. 30 of the 1992 map (APPROXIMATE),
+  // Standpipes: the one inside, on Tai Chang Street at no. 30 of the 1992 map (APPROXIMATE;
+  // the lane cell of layout.js bookPlaces, where the people fetch water),
   // then seven on the outer edge (Tung Tau Tsuen Road on the north, Tung Tsing Road on the
   // east; SCHEMATIC).
   const pipes = [];
   const sp = L.places.find((p) => p.n === 30);
-  if (sp) {
+  if (L.standpipe) pipes.push([L.standpipe.x, L.standpipe.z]);
+  else if (sp) {
     let best = null, bd = Infinity;
     for (let dj = -5; dj <= 5; dj++)
       for (let di = -5; di <= 5; di++) {

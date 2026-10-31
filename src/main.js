@@ -474,7 +474,7 @@ function renderLegend() {
     const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
     g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${uses
       .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
-      .join('')}<div class="row"><span class="sq" style="background:#d6d0c1"></span>corridor, door to the next block</div>
+      .join('')}<div class="row"><span class="sq" style="background:#e2ddd8"></span>corridor, door to the next block</div>
       <div class="row"><span class="sq" style="background:#c9a35c"></span>link to the next building (place inferred)</div></div>`);
   }
   if (wires && wires.object.visible) {
