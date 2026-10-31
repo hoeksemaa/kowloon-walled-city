@@ -16,7 +16,6 @@
 // custom: families "做冬" and eat together, and many leave work early. That evening is
 // INFERRED for the city's families.
 import * as THREE from 'three';
-import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
 import { planAt, unitName } from './floorplan.js';
 import { WALK, CLIMB } from './routes.js';
@@ -49,7 +48,26 @@ export const OUTSIDERS = {
   patient: { label: 'patient from outside the city (p242)', n: 300, ages: [6, 85] },
 };
 
-const CLOTHES = ['#e9e4d8', '#d8d3c4', '#2f3d55', '#4a5a6e', '#7a2a24', '#c8b48a', '#3c3c3e', '#5c7a8c', '#a8c0c8', '#c97b5a', '#556b4f', '#efe8d0'];
+// December clothes, sRGB, measured in the photos of City of Darkness Revisited: navy or black
+// padded jackets for old people (p306); a white blouse and a navy skirt for schoolgirls
+// (p322); vests and yellow or pink tops for small children (pp322-325); singlets in the
+// workshops (pp246-247, 290-291); pale shirts and grey trousers; floral pyjama suits (p36);
+// quilted vests and cardigans (p30); "Bundled up against the chill of a Hong Kong winter"
+// (p293); police in a dark uniform and a peaked cap (pp220, 252). Who wears what is INFERRED.
+const WEAR = {
+  vest: ['#e4e7de', '#dcdcd2'],
+  shirt: ['#e4e7de', '#d9d4c7', '#c8d0d6', '#d6cfc0'],
+  trousers: ['#5a5754', '#4a4845', '#6b6762', '#3d3a37', '#454574'],
+  jacket: ['#454574', '#36312e', '#5a4a3c', '#3c4a5c'],
+  old: ['#454574', '#36312e', '#2f2c33'],
+  cardigan: ['#8c5a4a', '#6f7d62', '#7a6a58', '#5d6d7c', '#a0866c', '#9a7b8a'],
+  pyjama: ['#e9bea1', '#d88067', '#c9a3b8'],
+  kid: ['#d8b54a', '#e9a3b4', '#e4e7de', '#9fb6c2', '#d88067'],
+  kidLegs: ['#5d6d7c', '#3d3a37', '#454574', '#8c5a4a'],
+  blouse: ['#eef0ea'], skirt: ['#2f3557'],
+  police: ['#403430'],
+};
+const pickHex = (rng, list) => list[Math.floor(rng() * list.length)];
 
 // Days of the week from Tue 16 Dec 1986. Day 6 is 冬至.
 export const WEEK = ['TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'MON'];
@@ -104,7 +122,7 @@ export function createPopulation(L, total = 28200, seed = 1987) {
     if (!home && homeOf.has(R.key)) home = homeOf.get(R.key);
     const a = {
       id: agents.length, name: R.name, age: R.age, role: R.sched, real: R, home, flat: home ? home.m : 0,
-      color: new THREE.Color('#e8c14a'), rng: rng(),
+      rng: rng(),
     };
     if (h && h.pair) homeOf.set(h.pair, home);
     if (R.work) {
@@ -147,7 +165,7 @@ export function createPopulation(L, total = 28200, seed = 1987) {
     const a = {
       id: agents.length, name: p.name, age: null, role: P.sched || 'book', real, book: P,
       home: { type: 'in', ...fl, ...spotIn(L, B[fl.b], fl.f, fl.m, rng) }, flat: fl.m,
-      color: new THREE.Color('#e8c14a'), rng: rng(),
+      rng: rng(),
     };
     if (P.roof) {
       const c = b.cells[Math.floor(rng() * b.cells.length)];
@@ -195,7 +213,6 @@ export function createPopulation(L, total = 28200, seed = 1987) {
         role,
         home,
         flat: fl.m,
-        color: new THREE.Color(CLOTHES[Math.floor(rng() * CLOTHES.length)]),
         rng: rng(),
       };
       if (role === 'worker_in' && work.length) { const w = pickW(work); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], w.f, -1, rng) }; }
@@ -237,7 +254,6 @@ export function createPopulation(L, total = 28200, seed = 1987) {
         role,
         home: { type: 'away', ap: Math.floor(rng() * L.away.length), what: role === 'police' ? 'off duty' : 'home, outside the city' },
         flat: 0,
-        color: new THREE.Color(role === 'police' ? '#3b4a63' : CLOTHES[Math.floor(rng() * CLOTHES.length)]),
         rng: rng(),
       };
       if (role === 'day_worker') { const w = pickW(work); a.work = at(w.b, w.f); a.work.what = w.what; }
@@ -246,7 +262,54 @@ export function createPopulation(L, total = 28200, seed = 1987) {
       agents.push(a);
     }
   }
+  for (const a of agents) dress(a, rng);
   return agents;
+}
+
+// What someone wears: a top and a bottom colour, a body size (0 child, 1 adult, 2 old, with
+// a stoop) and a hat (0 none, 1 a police cap, 2 a flat cap). The people of the book wear
+// what their photo shows, if residents.js gives it.
+function dress(a, rng) {
+  const W = (k) => pickHex(rng, WEAR[k]);
+  const workshop = { factory: 1, noodles: 1, textile: 1, plastics: 1, roastmeat: 1, cakes: 1 };
+  let top, bottom = W('trousers');
+  a.size = a.role === 'elder' || (a.age && a.age >= 66) ? 2 : a.role === 'child' || (a.age && a.age < 12) ? 0 : 1;
+  a.hat = 0;
+  const look = a.book && a.book.look;
+  if (look) { top = look.top; bottom = look.bottom; a.hat = look.hat || 0; }
+  else if (a.book) top = workshop[a.book.trade] ? W('vest') : a.book.trade === 'clinic' || a.book.trade === 'dentist' || a.book.trade === 'bonesetter' ? W('shirt') : W('cardigan');
+  else switch (a.role) {
+    case 'child': top = rng() < 0.4 ? W('cardigan') : W('kid'); bottom = W('kidLegs'); break;
+    case 'student':
+      if (rng() < 0.7) { if (rng() < 0.5) { top = W('blouse'); bottom = W('skirt'); } else { top = W('shirt'); bottom = rng() < 0.5 ? '#2f3557' : W('trousers'); } }
+      else { top = rng() < 0.5 ? W('cardigan') : W('kid'); bottom = W('kidLegs'); }
+      break;
+    case 'elder': top = rng() < 0.75 ? W('old') : W('cardigan'); bottom = W('old'); break;
+    case 'homemaker': case 'market':
+      if (rng() < 0.35) { top = W('pyjama'); bottom = top; } else top = W('cardigan');
+      break;
+    case 'worker_in': case 'day_worker': case 'fishball': top = rng() < 0.45 ? W('vest') : rng() < 0.5 ? W('cardigan') : W('jacket'); break;
+    case 'shopkeeper': case 'store': top = rng() < 0.6 ? W('cardigan') : W('shirt'); break;
+    case 'police': top = bottom = W('police'); a.hat = 1; break;
+    default: top = rng() < 0.5 ? W('jacket') : W('shirt');
+  }
+  a.color = new THREE.Color(top);
+  a.bottom = new THREE.Color(bottom);
+}
+
+// What someone carries, by what they do: flour sacks (pp246, 248), buckets at the standpipe
+// (p108) and the sweepers' buckets (p104), baskets to the market and for the refuse (p93),
+// LP gas cylinders (p179) and the postman's bag (p144). 0 is nothing.
+export const PROPS = { none: 0, sack: 1, bucket: 2, basket: 3, gas: 4, mailbag: 5, sweeper: 6 };
+function propFor(a) {
+  const t = a.act || '';
+  if (a.role === 'postman') return PROPS.mailbag;
+  if (a.role === 'sweeper') return PROPS.sweeper;
+  if (a.role === 'refuse' || t.includes('market') || t.includes('buying food') || t === 'shopping') return PROPS.basket;
+  if (t.includes('standpipe')) return PROPS.bucket;
+  if ((t.includes('noodles') || t === USE_DOING.foodfac || t.includes('candy')) && a.rng < 0.25) return PROPS.sack;
+  if (t === USE_DOING.shop && a.rng < 0.03) return PROPS.gas;
+  return PROPS.none;
 }
 
 // A spot inside a block at storey f: in unit m of its floor plan; in any unit if m is -1;
@@ -709,6 +772,9 @@ export class Sim {
     const n = agents.length;
     this.aP = new Float32Array(n * 4);
     this.aC = new Float32Array(n * 3);
+    this.aB = new Float32Array(n * 3);
+    this.aL = new Float32Array(n * 4);
+    for (const a of agents) a.bottom.toArray(this.aB, a.id * 3);
     this.selected = -1;
     this.activity = new Float32Array(144);
     this.residents = agents.filter((a) => a.home.type === 'in').length;
@@ -786,12 +852,15 @@ export class Sim {
     else if (p.type === 'ground') this.write(a, p.x, p.z, 0, 0);
     else this.write(a, p.x, p.z, p.f * STOREY, p.f);
   }
+  // The look of a person: the top colour (aC), and aL = [size, prop, hat * 2 + real, dim].
   tint(a) {
-    const o = a.id * 3;
-    let r = a.color.r, g = a.color.g, b = a.color.b;
-    if (a.id === this.selected) { r = 1; g = 0.36; b = 0.22; }
-    else if (a.act === 'asleep') { r *= 0.3; g *= 0.3; b *= 0.34; }
-    this.aC[o] = r; this.aC[o + 1] = g; this.aC[o + 2] = b;
+    const o = a.id * 3, q = a.id * 4, sel = a.id === this.selected;
+    if (sel) { this.aC[o] = 1; this.aC[o + 1] = 0.36; this.aC[o + 2] = 0.22; }
+    else a.color.toArray(this.aC, o);
+    this.aL[q] = a.size;
+    this.aL[q + 1] = propFor(a);
+    this.aL[q + 2] = a.hat * 2 + (a.real ? 1 : 0);
+    this.aL[q + 3] = !sel && a.act === 'asleep' ? 0.32 : 1;
     this.colorsDirty = true;
   }
 
@@ -839,12 +908,12 @@ export class Sim {
     const from = a.loc;
     if (from === to) return;
     const pts = this.plan(a, from, to);
-    const speed = a.role === 'elder' ? WALK * 0.65 : a.role === 'child' ? WALK * 0.8 : WALK;
+    const speed = a.size === 2 ? WALK * 0.65 : a.size === 0 ? WALK * 0.8 : WALK;
     const tc = [0];
     for (let q = 1; q < pts.length; q++) {
       const p = pts[q - 1], c = pts[q];
       const h = Math.hypot(c[0] - p[0], c[1] - p[1]), v = Math.abs(c[2] - p[2]);
-      tc.push(tc[q - 1] + h / speed + v / (a.role === 'elder' ? CLIMB * 0.6 : CLIMB));
+      tc.push(tc[q - 1] + h / speed + v / (a.size === 2 ? CLIMB * 0.6 : CLIMB));
     }
     a.trip = { pts, tc, t0: now, seg: 0, to };
     a.loc = { type: 'moving' };
@@ -977,38 +1046,102 @@ export class Sim {
 }
 
 // Instanced figures, positioned in the vertex shader so that storeys can be lifted apart
-// without touching per-person data.
+// without touching per-person data. Each figure is boxes with a part number: legs (bottom
+// colour), body (top colour), head, hair, a prop, a hat, and a marker over a real person.
+// A box has no bottom face, because the camera looks down.
+const PART = { legs: 0, body: 1, head: 2, hair: 3, prop: 4, hat: 5, marker: 6 };
+function figureGeometry() {
+  const pos = [], nor = [], part = [], idx = [];
+  const box = (x0, y0, z0, x1, y1, z1, p) => {
+    const faces = [
+      [[x0, y1, z0], [x0, y1, z1], [x1, y1, z1], [x1, y1, z0], [0, 1, 0]],
+      [[x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1], [0, 0, 1]],
+      [[x1, y0, z0], [x0, y0, z0], [x0, y1, z0], [x1, y1, z0], [0, 0, -1]],
+      [[x1, y0, z1], [x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [1, 0, 0]],
+      [[x0, y0, z0], [x0, y0, z1], [x0, y1, z1], [x0, y1, z0], [-1, 0, 0]],
+    ];
+    for (const f of faces) {
+      const v = pos.length / 3;
+      for (let q = 0; q < 4; q++) { pos.push(...f[q]); nor.push(...f[4]); part.push(p); }
+      idx.push(v, v + 1, v + 2, v, v + 2, v + 3);
+    }
+  };
+  box(-0.2, 0, -0.14, 0.2, 0.62, 0.14, PART.legs);
+  box(-0.25, 0.62, -0.17, 0.25, 1.22, 0.17, PART.body);
+  box(-0.15, 1.24, -0.15, 0.15, 1.47, 0.15, PART.head);
+  box(-0.16, 1.47, -0.16, 0.16, 1.56, 0.16, PART.hair);
+  box(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, PART.prop);
+  box(-0.19, 1.53, -0.19, 0.19, 1.61, 0.19, PART.hat);
+  box(-0.11, 1.95, -0.11, 0.11, 2.17, 0.11, PART.marker);
+  const g = new THREE.InstancedBufferGeometry();
+  g.setIndex(idx);
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  g.setAttribute('aPart', new THREE.Float32BufferAttribute(part, 1));
+  return g;
+}
+
 export function makePeopleMesh(sim, shared) {
   const n = sim.agents.length;
-  const body = new THREE.BoxGeometry(0.5, 1.22, 0.34).translate(0, 0.61, 0);
-  const head = new THREE.BoxGeometry(0.3, 0.3, 0.3).translate(0, 1.4, 0);
-  const base = mergeGeometries([body, head]);
-  const g = new THREE.InstancedBufferGeometry();
-  g.index = base.index;
-  g.setAttribute('position', base.getAttribute('position'));
-  g.setAttribute('normal', base.getAttribute('normal'));
+  const g = figureGeometry();
   const aP = new THREE.InstancedBufferAttribute(sim.aP, 4);
   aP.setUsage(THREE.DynamicDrawUsage);
   const aC = new THREE.InstancedBufferAttribute(sim.aC, 3);
   aC.setUsage(THREE.DynamicDrawUsage);
+  const aL = new THREE.InstancedBufferAttribute(sim.aL, 4);
+  aL.setUsage(THREE.DynamicDrawUsage);
   g.setAttribute('aP', aP);
   g.setAttribute('aC', aC);
+  g.setAttribute('aB', new THREE.InstancedBufferAttribute(sim.aB, 3));
+  g.setAttribute('aL', aL);
   g.instanceCount = n;
   const m = new THREE.MeshLambertMaterial({ color: 0xffffff });
   m.onBeforeCompile = (s) => {
     Object.assign(s.uniforms, shared);
     s.vertexShader = s.vertexShader
       .replace('#include <common>', `#include <common>
-attribute vec4 aP; attribute vec3 aC; varying vec3 vAC;
-uniform float uOff[16]; uniform float uCutY; uniform float uPeopleScale;`)
+attribute vec4 aP; attribute vec3 aC; attribute vec3 aB; attribute vec4 aL; attribute float aPart;
+varying vec3 vAC;
+uniform float uOff[16]; uniform float uCutY; uniform float uPeopleScale; uniform float uMarkers;
+vec3 turnY(vec3 v, float a) { float c = cos(a), s = sin(a); return vec3(c * v.x + s * v.z, v.y, -s * v.x + c * v.z); }`)
+      .replace('#include <beginnormal_vertex>', `
+float yaw = fract(sin(float(gl_InstanceID) * 12.9898) * 43758.5453) * 6.2832;
+vec3 objectNormal = turnY(normal, yaw);`)
       .replace('#include <begin_vertex>', `
-vec3 transformed = position * uPeopleScale;
+float size = aL.x, prop = aL.y, real = mod(aL.z, 2.0), hat = floor(aL.z / 2.0);
+vec3 p = position;
+vec3 col = aC;
+if (aPart < 0.5) col = aB;
+else if (aPart < 1.5) col = aC;
+else if (aPart < 2.5) col = vec3(0.448, 0.239, 0.151);
+else if (aPart < 3.5) col = size > 1.5 ? vec3(0.33, 0.31, 0.29) : vec3(0.012, 0.009, 0.007);
+else if (aPart < 4.5) {
+  // the prop: a unit box, moved and sized by its kind
+  vec3 c = vec3(0.0), z = vec3(0.0);
+  if (prop == 1.0) { c = vec3(0.1, 1.33, 0.0); z = vec3(0.52, 0.22, 0.34); col = vec3(0.8, 0.8, 0.75); }
+  else if (prop == 2.0) { c = vec3(0.36, 0.17, 0.0); z = vec3(0.24, 0.28, 0.24); col = vec3(0.28, 0.33, 0.4); }
+  else if (prop == 6.0) { c = vec3(0.36, 0.17, 0.0); z = vec3(0.26, 0.3, 0.26); col = vec3(0.9, 0.3, 0.05); }
+  else if (prop == 3.0) { c = vec3(0.37, 0.42, 0.0); z = vec3(0.36, 0.2, 0.3); col = vec3(0.45, 0.3, 0.12); }
+  else if (prop == 4.0) { c = vec3(0.36, 0.3, 0.0); z = vec3(0.26, 0.56, 0.26); col = vec3(0.6, 0.08, 0.04); }
+  else if (prop == 5.0) { c = vec3(0.3, 0.72, 0.0); z = vec3(0.12, 0.36, 0.32); col = vec3(0.3, 0.25, 0.12); }
+  p = c + p * z;
+} else if (aPart < 5.5) {
+  if (hat < 0.5) p = vec3(0.0);
+  col = hat < 1.5 ? vec3(0.03, 0.03, 0.045) : vec3(0.38, 0.37, 0.35);
+} else {
+  // the marker of a real person, in the story only
+  if (real < 0.5 || uMarkers < 0.5) p = vec3(0.0);
+  col = vec3(0.81, 0.54, 0.066);
+}
+if (size < 0.5) p *= vec3(0.8, 0.66, 0.8);
+else if (size > 1.5 && aPart < 5.5) { p.y *= 0.93; p.x += max(p.y - 0.8, 0.0) * 0.3; }
+vec3 transformed = turnY(p, yaw) * uPeopleScale;
 float lv = clamp(aP.w, 0.0, 14.99);
 int i0 = int(floor(lv));
 int i1 = min(i0 + 1, 15);
 float off = mix(uOff[i0], uOff[i1], fract(lv));
 transformed += vec3(aP.x, aP.z + off, aP.y);
-vAC = aC;
+vAC = aPart > 5.5 ? col : col * aL.w;
 if (aP.w < -0.5 || aP.z > uCutY) transformed = vec3(0.0, -1.0e5, 0.0);`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
@@ -1019,5 +1152,5 @@ diffuseColor.rgb *= vAC;`);
   m.customProgramCacheKey = () => 'kwc-people';
   const mesh = new THREE.Mesh(g, m);
   mesh.frustumCulled = false;
-  return { mesh, aP, aC };
+  return { mesh, aP, aC, aL };
 }

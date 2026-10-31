@@ -60,7 +60,7 @@ marked inferred.</p>
   <li><span class="st ok">BOOK PEOPLE</span>Sixteen people of ${BOOK}, at their places: the pigeon breeder Chan Kwan
     Leung on his roof (pp318–321), the doctor Tsin Mu Lam on 2/F of 10 Tung Tau Tsuen Road (p184), the noodle
     maker Hui Tung Choy above his factory (p170), the herbal store, the candy factory, the store at 12 Tai Chang
-    Street, the roast meat on Lo Yan Street, and others. Each is gold in the crowd. The hours that the book gives
+    Street, the roast meat on Lo Yan Street, and others. A small gold marker floats over each real person. The hours that the book gives
     are in their week (pp57, 76, 82, 93, 187, 228, 237, 286). The book met them in about 1990, and they say no
     words in the model.</li>
   <li><span class="st ok">ROUTINES</span>From ${BOOK}: police on the beat, two to each beat, some of it on the roofs
@@ -87,6 +87,13 @@ marked inferred.</p>
     some degree of natural lighting" (p23). Tubes are near-white, windows at dusk blue-white, some rooms have
     warm bulbs, and Kowloon beyond is sodium amber (pp16–17, 30, 42, 316). Corridors are whitewashed and lit
     by tubes; stairs have mosaic treads (pp165, 177).</li>
+  <li><span class="st ok">CLOTHES</span>December clothes from the photos of ${BOOK}: navy or black padded jackets for
+    old people (p306), a white blouse and a navy skirt for schoolgirls (p322), vests and yellow or pink tops for
+    small children (pp322–325), singlets in the workshops (pp246–247), pale shirts and grey trousers, floral
+    pyjama suits (p36), quilted vests and cardigans (p30), and police in a dark uniform and a peaked cap
+    (pp220, 252). Hui Tung Choy wears a beige sweater and a grey flat cap (p171); Chan Kwan Leung wears a black
+    polo and jeans (p321). People carry flour sacks (pp246, 248), buckets (pp104, 108), baskets, LP gas
+    cylinders (p179) and the postman's bag (p144).</li>
   <li><span class="st ok">LANES</span>Upper floors overhang the lanes (p131). Plastic and metal sheets, and
     bundles of pipes and cables, hang over them (pp10, 106–107, 144, 249). Postboxes stand at the entrances
     (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
@@ -126,6 +133,8 @@ marked inferred.</p>
   <li><span class="st prov">冬至</span>Family dinners on Monday 22 Dec 1986. 冬至 is a Hong Kong-wide custom; the
     model infers that the city's families kept it too.</li>
   <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>
+  <li><span class="st prov">WEAR</span>Who wears what, and who carries what when: the model picks it by role and by
+    what each person does. A body has three sizes: child, adult, and old with a stoop.</li>
   <li><span class="st prov">DETAIL</span>Which building gets which colour, cage, overhang and stain; where each sheet,
     pipe bundle, postbox wall and meter bank is; and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
