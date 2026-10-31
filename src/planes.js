@@ -10,8 +10,8 @@
 // (primary-sources/README.md). Here one landing
 // about every 11 minutes from 06:30 to 23:50, fewer from 14:25 to 16:40. The schedule is the
 // same each week; a seed for each day makes the minutes. INFERRED: every landing uses runway 13.
-// No source gives the runway in use that week. Each plane flies on its own clock (see
-// update), not at the speed of the simulation.
+// No source gives the runway in use that week. A plane flies at its real speed when the
+// clock runs in real time, and faster when the clock is fast (see update).
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { mulberry32 } from './util.js';
@@ -23,6 +23,7 @@ const OPEN = 6 * 60 + 30; // the curfew ends: the first landing
 const SHUT = 23 * 60 + 50; // the last landing, so that it is down before midnight
 const GAP = 11; // mean minutes between landings: about 89 a day
 const LULL = [865, 1000], LULL_GAP = 20; // 14:25–16:40, when the pigeons flew (p321)
+const FLIGHT = 30; // the most minutes of the clock that one flight takes: less than 4 gaps
 
 function model(stripe) {
   const white = new THREE.MeshLambertMaterial({ color: '#e9e7e1' });
@@ -85,15 +86,19 @@ export class Planes {
     this.cache.set(day, t);
     return t;
   }
-  // A landing starts when the clock passes its time. The plane then flies in real time
-  // (at twice real speed), so that it can be seen at any speed of the clock.
-  update(day, minute, dt, hide) {
+  // A landing starts when the clock passes its time. dt: real seconds; speed: the speed of the
+  // clock. At 1× a plane flies at its real speed. When the clock is faster, it flies at twice
+  // its real speed, so that it shows for some seconds, but one flight takes at most FLIGHT
+  // minutes of the clock. Thus at the fastest speed the planes keep to their times and to the
+  // curfew, and the pool of four is enough.
+  update(day, minute, dt, speed, hide) {
     if (this.last && (this.last.day !== day || minute < this.last.minute || minute - this.last.minute > 30)) this.active = [];
     else if (this.last)
       for (const t of this.times(day))
         if (t > this.last.minute && t <= minute && (this.active ||= []).length < this.pool.length) this.active.push({ s: S0 });
     this.last = { day, minute };
-    this.active = (this.active || []).filter((a) => (a.s += SPEED * 2 * dt) < S1);
+    const pace = Math.max(Math.min(speed, 2), (speed * (S1 - S0)) / (SPEED * FLIGHT * 60));
+    this.active = (this.active || []).filter((a) => (a.s += SPEED * pace * dt) < S1);
     this.pool.forEach((m, q) => {
       const a = this.active[q];
       m.visible = !!a && !hide;

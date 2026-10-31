@@ -80,13 +80,19 @@ button { font: inherit; color: inherit; }
 .clk-row { display: flex; justify-content: space-between; align-items: baseline; }
 #clk-date { font-family: var(--pixel); font-size: 11px; }
 #clk-time { font-family: var(--mono); font-weight: 600; font-size: 26px; letter-spacing: 0.02em; }
+/* The colon blinks while the clock runs, so that real time does not look stopped. */
+#clock.run #clk-colon { animation: clk-blink 1s steps(1, end) infinite; }
+@keyframes clk-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { #clock.run #clk-colon { animation: none; } }
 #spark { position: relative; height: 44px; margin: 4px 0 6px; cursor: pointer; border-bottom: 2px solid var(--panel-edge); }
 #spark canvas { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
 #playhead { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--tag); left: 0; }
 .speeds { gap: 4px; }
 .speeds button {
-  flex: 1; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; font-size: 11px; padding: 2px 0; font-weight: 600;
+  flex: 1; height: 22px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; padding: 0;
+  display: flex; align-items: center; justify-content: center; color: var(--ink);
 }
+.speeds button svg { display: block; }
 .speeds button.on { background: var(--label-bg); color: var(--label-ink); }
 #clk-stats { margin-top: 7px; font-size: 11px; color: var(--ink-2); line-height: 1.45; }
 #clk-stats b { color: var(--ink); font-weight: 600; }

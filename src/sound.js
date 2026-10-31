@@ -17,7 +17,7 @@ import { mulberry32, clamp } from './util.js';
 
 const SAT = 4, SUN = 5, DONGZHI = 6; // days from Tue 16 Dec 1986, as in people.js
 const MASTER = 0.5;
-const MAX_SPEED = 60; // above this, the bed only
+const MAX_SPEED = 60; // two arrows (main.js); faster, the bed only
 
 // How full the city sounds, 0–1, by the hour: quiet from 1 to 5 a.m., full by day.
 const LEVEL = [[0, 0.5], [1, 0.25], [5, 0.2], [6.5, 0.5], [8, 0.9], [12, 1], [14, 0.9], [18, 1], [21, 0.8], [23, 0.6], [24, 0.5]];

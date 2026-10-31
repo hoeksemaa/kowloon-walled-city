@@ -180,8 +180,8 @@ composite. A detail that no source records is marked inferred.</p>
 
 <h4>Sound, from primary sources</h4>
 <p>The sound is off at first. Turn it on with the speaker tool or the key S. It follows the clock:
-it fades out when the clock stops, and above 60× you hear only the soft bed. The browser makes
-each sound, and the app has no recordings.</p>
+it fades out when the clock stops, and at three arrows, the fastest speed, you hear only the soft
+bed. The browser makes each sound, and the app has no recordings.</p>
 <ul>
   <li><span class="st ok">HUM</span>A low hum of the wires, the same at night and by day: "Night and day within the
     Walled City were the same, with buzzing electrical wires, dripping pipes" (a police officer, SCMP 2018).
