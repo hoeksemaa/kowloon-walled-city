@@ -985,6 +985,17 @@ if (kind < 0.5) {
 } else if (kind == 10.0) {
   glow += TUBE;
 }
+// On the cut storey at night, each room is lit by its own lamp (lamps.js) while someone in it
+// is awake, and is dim when all sleep. A television, a shrine lamp or a glass case keeps its
+// own light.
+if (uIsCut > 0.5 && (kind == 15.0 || kind == 16.0 || (kind == 1.0 && vInfo.w > 3.5))) {
+  float fc = vInfo.w;
+  bool own = kind == 15.0 && ((fc > 2.5 && fc < 4.5) || (fc > 8.5 && fc < 9.5));
+  if (!own) {
+    vec3 lamp = min(texture2D(uLampMap, (vXZ - uLampBox.xy) * uLampBox.zw).rgb, vec3(1.0));
+    glow = glow * mix(1.0, 0.3, uNight) + diffuseColor.rgb * lamp * (0.7 * uNight);
+  }
+}
 if (bid >= 0.0 && abs(bid - uHint) < 0.5) {
   // the tower of a hint of the game (game.js)
   diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.72, 0.25), 0.35);
@@ -996,11 +1007,11 @@ if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
 }
 `;
 
-// Both passes of a storey see the facade uv (vWall), aInfo and the normal (vWN, in world
-// space: the storeys are only moved, never turned).
+// Both passes of a storey see the facade uv (vWall), aInfo, the normal (vWN, in world space:
+// the storeys are only moved, never turned) and the plan point (vXZ, for the lamps).
 const VERT_PARS = /* glsl */ `attribute vec2 aWall; attribute vec4 aInfo;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN;`;
-const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)};`;
+varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ;`;
+const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vXZ = position.xz; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)};`;
 
 // The shadow pass of a storey: it drops what the colour pass drops on the cut storey, so the
 // cut walls do not shade the rooms. Where the colour pass cuts out bars, leaves and pipes,
@@ -1048,7 +1059,8 @@ ${VERT_MAIN}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
 uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutH;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN;
+uniform sampler2D uLampMap; uniform vec4 uLampBox;
+varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ;
 ${FACADE_GLSL}
 ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) discard;' : '#define CUTOUT(c) if ((c) <= fcIgn(gl_FragCoord.xy)) discard;'}`)
       .replace('#include <color_fragment>', `#include <color_fragment>
