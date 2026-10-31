@@ -345,12 +345,17 @@ vec3 col = paint();
 // a little darker low down and under the chin, for depth
 float y0 = position.y;
 vAC = int(aPart + 0.5) == 24 ? col : col * aL.w * (0.82 + 0.18 * smoothstep(0.0, 0.9, y0));
-vIn = aM.z > 31.5 ? 1.0 : 0.0;`);
+vIn = aM.z > 31.5 ? 1.0 : 0.0;
+vLamp = aM.z > 63.5 ? texture2D(uLampMap, (aP.xy - uLampBox.xy) * uLampBox.zw).rgb : vec3(-1.0);`)
+      .replace('#include <uv_pars_vertex>', `#include <uv_pars_vertex>
+uniform sampler2D uLampMap; uniform vec4 uLampBox; varying vec3 vLamp;`);
     s.fragmentShader = s.fragmentShader
-      .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; uniform float uNight;`)
+      .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; varying vec3 vLamp; uniform float uNight;`)
       .replace('#include <color_fragment>', `#include <color_fragment>\ndiffuseColor.rgb *= vAC;`)
-      // at night, the bulbs of the rooms light the people indoors, and the tubes of the lanes the rest
-      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>\ntotalEmissiveRadiance += vAC * uNight * (0.1 + 0.34 * vIn);`);
+      // At night, the tubes of the lanes light the people outdoors. In the rooms of the cut
+      // storey, the lamp of the room lights them (lamps.js), and they are dim if it is off.
+      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+totalEmissiveRadiance += vAC * uNight * (vLamp.x < -0.5 ? vec3(0.1 + 0.34 * vIn) : 0.07 + 0.6 * min(vLamp, vec3(1.0)));`);
   };
   m.customProgramCacheKey = () => (plain ? 'kwc-people-plain' : 'kwc-people');
   return m;

@@ -91,7 +91,9 @@ const shared = {
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
-const lamps = new Lamps(shared.uNight);
+const lamps = new Lamps(shared.uNight, renderer);
+Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
+Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
 const unitRes = new Map();
 const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 const sound = new Sound(); // off until the user turns it on
@@ -104,6 +106,7 @@ async function init() {
   site = buildSite(plan);
   L = buildLayout(site, plan, biz, book);
   L.routes = buildRoutes(L);
+  lamps.setBox(L);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
@@ -195,7 +198,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU, post };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU, post, lamps, renderer };
   requestAnimationFrame(frame);
 }
 
@@ -275,7 +278,7 @@ function setCut(c) {
   if (c >= 0) {
     const p = buildPlan(L, c);
     people.setSpots(c, p.spots);
-    lamps.set(c, p.lamps, levels[c].group);
+    lamps.set(c, p.lamps);
     const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = levels[c].mesh.customDepthMaterial;

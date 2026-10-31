@@ -13,7 +13,7 @@ const FINE_MAX = 4000; // with more people in view than this, the plain figures
 const SPOT_FOR = { [POSE.lie]: ['bed'], [POSE.sit]: ['seat', 'desk'], [POSE.desk]: ['desk', 'seat'], [POSE.work]: ['work'] };
 const SPOT_POSE = { bed: POSE.lie, seat: POSE.sit, desk: POSE.desk, work: POSE.work };
 // The packed aM.z (figures.js): the pose, + 16 if the furniture is the seat or the bed, + 32
-// indoors.
+// indoors, + 64 in a room of the cut storey (lit by its lamp, lamps.js).
 
 export class Crowd {
   constructor(sim, L, uniforms) {
@@ -75,18 +75,18 @@ export class Crowd {
     return u >= 0 ? loc.b * 4096 + u : -1;
   }
 
-  // The spot of person i, who holds pose: kept from the frames before, or the first free one.
-  spotFor(i, x, z, pose) {
+  // The spot of person i in unit key, who holds pose: kept from the frames before, or the
+  // first free one.
+  spotFor(i, key, pose) {
     const want = SPOT_FOR[pose];
     let si = this.claim[i];
-    const key = want ? this.unitKey(this.sim.agents[i], x, z) : -1;
     if (si >= 0) {
       const s = this.spots[si];
       if (want && want.includes(s.kind) && s.b * 4096 + s.u === key) { this.used[si] = this.frame; return s; }
       this.taken[si] = -1;
       this.claim[i] = -1;
     }
-    const list = key >= 0 ? this.byUnit.get(key) : null;
+    const list = want ? this.byUnit.get(key) : null;
     if (!list) return null;
     const start = (i * 7) % list.length;
     for (const kind of want)
@@ -125,14 +125,15 @@ export class Crowd {
       const nx = e[0] * x + e[4] * Y + e[8] * z + e[12], ny = e[1] * x + e[5] * Y + e[9] * z + e[13];
       if (nx < -1.08 || nx > 1.08 || ny < -1.12 || ny > 1.12) continue;
       let X = x, Z = z, H = y, hd = M[o], pose = M[o + 2];
-      if (spotsOn && M[o + 1] === 0 && !out && Math.abs(y - cut * STOREY) < 0.3) {
-        if (pose !== POSE.lie) { const key = this.unitKey(A[i], x, z); if (key >= 0) this.lit.add(key); }
-        const s = this.spotFor(i, x, z, pose);
+      const key = spotsOn && !out && Math.abs(y - cut * STOREY) < 0.3 ? this.unitKey(A[i], x, z) : -1, room = key >= 0;
+      if (room && M[o + 1] === 0) {
+        if (pose !== POSE.lie) this.lit.add(key);
+        const s = this.spotFor(i, key, pose);
         if (s) { X = s.x; Z = s.z; H = y + s.y; hd = s.h; pose = SPOT_POSE[s.kind] + (s.seat ? 16 : 0); }
       }
       const q = c * 4, r = c * 3, i3 = i * 3;
       buf.aP[q] = X; buf.aP[q + 1] = Z; buf.aP[q + 2] = H; buf.aP[q + 3] = lv;
-      buf.aM[q] = hd; buf.aM[q + 1] = M[o + 1]; buf.aM[q + 2] = pose + (out ? 0 : 32); buf.aM[q + 3] = M[o + 3];
+      buf.aM[q] = hd; buf.aM[q + 1] = M[o + 1]; buf.aM[q + 2] = pose + (out ? 0 : 32) + (room ? 64 : 0); buf.aM[q + 3] = M[o + 3];
       buf.aC[r] = sim.aC[i3]; buf.aC[r + 1] = sim.aC[i3 + 1]; buf.aC[r + 2] = sim.aC[i3 + 2];
       buf.aB[r] = sim.aB[i3]; buf.aB[r + 1] = sim.aB[i3 + 1]; buf.aB[r + 2] = sim.aB[i3 + 2];
       buf.aL[q] = sim.aL[o]; buf.aL[q + 1] = sim.aL[o + 1]; buf.aL[q + 2] = sim.aL[o + 2]; buf.aL[q + 3] = sim.aL[o + 3];

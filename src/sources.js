@@ -153,11 +153,12 @@ inferred.</p>
   <li><span class="st prov">POSE</span>How each person stands, sits, works or sleeps, by what they do. On the cut storey,
     people take the beds, seats and work places of their own room: two to a bed, and mats on the free floor at
     night. Who takes which place is a guess. At night a lamp lights each room of the cut storey while someone in
-    it is awake: a bulb in a flat, tubes in a workshop.</li>
+    it is awake: a bulb in a flat, tubes in a workshop. A room where all sleep is dark.</li>
   <li><span class="st prov">DETAIL</span>Which building gets which colour, cage, overhang and stain; where each sheet,
     pipe bundle, postbox wall and meter bank is; what stands on each roof (pot plants, stools, junk, bird cages;
-    pp312–327); what lies in each room (bowls, flasks, rice cookers, fans, basins, bags, drums of pellets); and
-    which windows are lit at each hour. The floor lines of each
+    pp312–327); what lies in each room (bowls, flasks, rice cookers, fans, basins, bags, drums of pellets) and
+    outside each door (iron gates, shoes, rubbish); what each window cage holds (pots, boxes, laundry, bird cages)
+    and what hangs behind each window (curtains, blinds, newspaper); and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
     move.</li>
   <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.
