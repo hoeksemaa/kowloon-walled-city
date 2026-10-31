@@ -25,6 +25,9 @@ python3 serve.py 8173
 - **People.** About 33,000 residents. Nine are real people who say only their own recorded
   words. All the others are composites.
 - **Story.** Seven chapters, one for each day, with a camera that follows each scene.
+- **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
+  follows the hour, with occasional clear sounds over it, for example drips, a plane and the
+  pigeon breeder's whistle. The browser makes each sound, and the repository has no audio files.
 
 The "Sources + notes" panel in the app lists each source and each inference.
 

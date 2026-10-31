@@ -90,6 +90,44 @@ marked inferred.</p>
   <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
 </ul>
 
+<h4>Sound, from primary sources</h4>
+<p>The sound is off at first. Turn it on with the speaker tool or the key S. It follows the clock:
+it fades out when the clock stops, and above 60× you hear only the soft bed. The browser makes
+each sound, and the app has no recordings.</p>
+<ul>
+  <li><span class="st ok">HUM</span>A low hum of the wires, the same at night and by day: "Night and day within the
+    Walled City were the same, with buzzing electrical wires, dripping pipes" (a police officer, SCMP 2018).
+    The hum is at 50 Hz, the mains frequency of Hong Kong.</li>
+  <li><span class="st ok">DRIPS</span>One pipe drips a few times, at all hours: "the constant dripping" (${BOOK},
+    pp148–149); "when we heard the sound of water dripping" (Tam Sau-kuen, ${WSJ}).</li>
+  <li><span class="st ok">PLANE</span>An airliner swells and fades as it passes on the approach to Kai Tak, at the
+    landing times of the model. The real noise stopped all talk (林財銳, the tailor across the road, HK01 2022).
+    The model plays it soft. It plays at most about one landing each minute, but a story scene always gets its
+    plane.</li>
+  <li><span class="st ok">PIGEONS</span>Chan Kwan Leung whistled before he fed his pigeons (${BOOK}, p320). He flew
+    them "usually in mid-afternoon when there was a lull in the number of landings at Kai Tak" (p321). Each day
+    the model plays his whistle and the wings in the longest gap between landings from 14:30 to 16:30. In those
+    hours the flock also circles, with a softer flutter. The tune of the whistle is inferred.</li>
+  <li><span class="st ok">COOKING</span>A cleaver on a block, or food in a hot wok, at lunch and at dinner:
+    "人們在煮食，聲音不斷傳出來" [people were cooking; sounds came out all the time] (Greg Girard, HK01 2024).
+    On the evening of 冬至 the model plays more cooking.</li>
+  <li><span class="st ok">MAHJONG</span>The tiles after work, until about 1 a.m.: 林羅平 played mahjong with other
+    bosses (HK01 2024, narration). The model plays more on Saturday and on the night of 冬至.</li>
+  <li><span class="st ok">PING PONG</span>A rally in a corridor from 7 to 10 p.m.: "We would just play ping pong in
+    the hallway" (Albert Ng, SCMP 2013). The model plays more on Saturday.</li>
+</ul>
+
+<h4>Sound, inferred and marked</h4>
+<ul>
+  <li><span class="st prov">CITY</span>The soft bed: a murmur of the dense city, and a low rumble from the roads
+    outside. It is quiet from 1 to 5 a.m., full by day, and a little lower on Sunday. No source records it.</li>
+  <li><span class="st prov">LOOM</span>A loom through a wall, from 8 a.m. to 7 p.m., but not on Sunday. On 冬至 it
+    stops at 5.30 p.m. The weaving workshops are in the sources (Lau Yeung Yin, ${BOOK}, p48; 織布廠, HK01 2016),
+    but their sound is not.</li>
+  <li><span class="st prov">SHAPE</span>The hour, the loudness and the shape of each sound. The sounds do not come
+    from a place in the model, and they do not follow the camera.</li>
+</ul>
+
 <h4>Secondary, for scale only</h4>
 <ul>
   <li><span class="st prov">SIZE</span>26,000 m² for the plots and lanes (${LCSD}); about 700 ft for the long side
