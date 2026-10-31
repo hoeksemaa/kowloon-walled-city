@@ -23,7 +23,10 @@ import { WEEK, DONGZHI } from './people.js';
 const NO_HI = -100; // highlight id meaning "nothing hovered"
 const GAP = 13; // extra metres between storeys when fully exploded
 const POPULATION = 28200; // occupants in January 1987 (p340); people from outside come on top (people.js)
-const START_MINUTE = 5 * 60 + 20;
+const START_MINUTE = 9 * 60 + 45;
+// The speeds of the clock: pause, then one, two and three arrows. Above two arrows the sound
+// plays only its bed (sound.js) and people take the plain way (people.js).
+const SPEEDS = [0, 1, 60, 2400];
 const $ = (id) => document.getElementById(id);
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // Roads outside the city, by side of the plan. Only these two touched the city directly;
@@ -78,7 +81,7 @@ controls.maxPolarAngle = 1.42;
 
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1, mapPins: false,
-  speed: 60, hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
+  speed: SPEEDS[1], hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
 };
 const offsets = new Float32Array(16);
 const shared = {
@@ -179,7 +182,7 @@ async function init() {
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
   sim = new Sim(L, agents);
-  sim.setTime(START_MINUTE);
+  sim.jumpTo(START_MINUTE);
   people = new Crowd(sim, L, peopleU);
   scene.add(people.group);
   flock = new Flock(sim);
@@ -375,12 +378,17 @@ function buildUI() {
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
 
-  for (const b of $('speeds').querySelectorAll('button'))
-    b.onclick = () => setSpeed(Number(b.dataset.speed));
+  $('speeds').querySelectorAll('button').forEach((b, i) => {
+    const s = SPEEDS[i], t = s ? `${s}×: ${s === 1 ? 'real time' : `a day in ${dayIn(s)}`} (${i})` : 'Pause (Space)';
+    b.title = t;
+    b.setAttribute('aria-label', t);
+    b.onclick = () => setSpeed(s);
+  });
+  setSpeed(state.speed);
 
   $('spark').onclick = (ev) => {
     const r = $('spark').getBoundingClientRect();
-    sim.setTime(clamp((ev.clientX - r.left) / r.width, 0, 0.999) * 1440);
+    sim.jumpTo(clamp((ev.clientX - r.left) / r.width, 0, 0.999) * 1440);
   };
 
   // Storey labels for the exploded view.
@@ -418,6 +426,7 @@ function buildUI() {
   });
   addEventListener('keydown', (ev) => {
     if (ev.target.closest && ev.target.closest('input, textarea')) return;
+    if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
     const k = ev.key.toLowerCase();
     if (k === 'e') $('t-explode').click();
     else if (k === 'w') $('t-wires').click();
@@ -427,7 +436,8 @@ function buildUI() {
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') { setCut(-1); sim.select(-1); }
-    else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || 60); }
+    else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || SPEEDS[1]); }
+    else if (k === '1' || k === '2' || k === '3') setSpeed(SPEEDS[Number(k)]);
     else if (ev.key === 'ArrowUp') { ev.preventDefault(); setCut(state.cut < 0 ? -1 : state.cut + 1 >= MAX_FLOORS ? -1 : state.cut + 1); }
     else if (ev.key === 'ArrowDown') { ev.preventDefault(); setCut(state.cut < 0 ? MAX_FLOORS - 1 : Math.max(0, state.cut - 1)); }
   });
@@ -437,7 +447,18 @@ function buildUI() {
 function setSpeed(s) {
   if (state.speed) state.lastSpeed = state.speed;
   state.speed = s;
-  for (const b of $('speeds').querySelectorAll('button')) b.classList.toggle('on', Number(b.dataset.speed) === s);
+  sim.fast = s > SPEEDS[2];
+  $('speeds').querySelectorAll('button').forEach((b, i) => {
+    b.classList.toggle('on', SPEEDS[i] === s);
+    b.setAttribute('aria-pressed', String(SPEEDS[i] === s));
+  });
+  $('clock').classList.toggle('run', s > 0);
+}
+
+// How long a simulated day takes at speed s, in words.
+function dayIn(s) {
+  const t = 86400 / s;
+  return t >= 3600 ? `${+(t / 3600).toFixed(1)} hours` : t >= 60 ? `${+(t / 60).toFixed(1)} minutes` : `${Math.round(t)} seconds`;
 }
 
 function levelTitle(k) {
@@ -785,7 +806,9 @@ const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 let lastDay = -1;
 function updateClock() {
-  $('clk-time').textContent = fmtClock(sim.minute);
+  const [hh, mm] = fmtClock(sim.minute).split(':');
+  $('clk-h').textContent = hh;
+  $('clk-m').textContent = mm;
   const d = new Date(Date.UTC(1986, 11, 16 + (sim.day % 7)));
   $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}${sim.day % 7 === DONGZHI ? ' · 冬至' : ''}`;
   $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
@@ -846,7 +869,7 @@ function frame(now) {
   }
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
-  planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
+  planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3);
   flock.update(now / 1000, offsets);
   updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
@@ -1017,7 +1040,7 @@ function renderGame() {
     el.onclick = () => {
       const act = el.dataset.act;
       if (act === 'hint') nextHint();
-      else if (act === 'go') { sim.setTime(game.back + 1); game.back = null; renderGame(); }
+      else if (act === 'go') { sim.jumpTo(game.back + 1); game.back = null; renderGame(); }
       else { closeCase(); renderGame(); }
     };
 }
