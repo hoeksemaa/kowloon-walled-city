@@ -1,9 +1,10 @@
 // The layered view with a cut storey: each storey below the cut is darker and greyer than the
 // one above it, so the shapes of the cut storey stand out. The dim comes in as the storeys move
-// apart. In the normal view there is none: the light is that of the sun and the lamps.
+// apart. In the normal view there is none: only the sun, the sky and the lamps light the city.
 //
-// The values are uniforms, thus they can be tuned from the console with no new shader, for
-// example kwc.dim.uDimKeep.value[0] = 0.35. The lines and labels read them on their next update.
+// The values are uniforms, thus you can tune them from the console with no new shader, for
+// example kwc.dim.uDimKeep.value[0] = 0.35. The labels read them in each frame. The wires read
+// them at their next update, that is, at the next cut or change of the explode.
 export const DIM = {
   uDimCut: { value: -1 }, // the cut storey; -1 with no cut
   uDimOn: { value: 0 }, // 0 in the normal view, 1 with the storeys fully apart

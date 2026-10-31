@@ -23,7 +23,7 @@ python3 serve.py 8173
   It removes all that rises higher, on every storey: also the signs, aerials, roof huts and
   lines of the lower storeys. In the layered view (key E), each storey below the cut is
   darker and greyer than the storey above it, thus the plan stands out. The normal view has
-  no such dim: its light comes only from the sun and the lamps.
+  no such dim: only the sun, the sky and the lamps light it.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down
