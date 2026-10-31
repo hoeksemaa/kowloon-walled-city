@@ -245,6 +245,14 @@ export class Lighting {
     scene.fog = new THREE.Fog(this.sky, 900, 1700);
   }
 
+  // Fit the shadow map to the part of the city in view (x, z, half size r): close up, the
+  // shadows of furniture and people are sharp.
+  setFocus(x, z, r) {
+    this.focus = [x, z];
+    const s = this.sun.shadow.camera;
+    if (Math.abs(s.right - r) > 0.5) { s.left = -r; s.right = r; s.top = r; s.bottom = -r; s.updateProjectionMatrix(); }
+  }
+
   // The sun over Hong Kong in the week of 16-22 Dec 1986: latitude 22.33° N, declination
   // -23.4°, solar noon at about 12:22 HKT. Sunrise about 06:57, sunset about 17:45.
   update(hour, explodeLift) {
@@ -258,7 +266,7 @@ export class Lighting {
     const light = smoothstep(0.0, 0.25, elev) * (alt > 0 ? 1 : 0);
     const r = 420;
     const e = Math.max(0.16, alt);
-    const c = this.center, N = this.north, E = this.east;
+    const c = this.focus ? { x: this.focus[0], y: this.center.y, z: this.focus[1] } : this.center, N = this.north, E = this.east;
     const hx = E[0] * Math.sin(az) + N[0] * Math.cos(az), hz = E[1] * Math.sin(az) + N[1] * Math.cos(az);
     this.sun.position.set(c.x + hx * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + hz * r * Math.cos(e));
     this.sun.target.position.set(c.x, c.y + explodeLift * 0.5, c.z);

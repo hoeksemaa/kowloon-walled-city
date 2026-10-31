@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { unitAt, unitName } from './floorplan.js';
-import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
+import { buildLevels, buildPlan, makeBuildingMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -115,6 +115,7 @@ async function init() {
     const mat = makeBuildingMaterial(shared);
     const mesh = new THREE.Mesh(d.geometry, mat);
     mesh.castShadow = mesh.receiveShadow = true;
+    mesh.customDepthMaterial = makeBuildingDepth(mat, shared);
     group.add(mesh);
     let signs = null;
     if (d.signs) {
@@ -259,6 +260,8 @@ function setCut(c) {
   if (c >= 0) {
     const p = buildPlan(L, c);
     const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
+    mesh.castShadow = mesh.receiveShadow = true;
+    mesh.customDepthMaterial = levels[c].mesh.customDepthMaterial;
     const lines = new THREE.LineSegments(p.lines, new THREE.LineDashedMaterial({ color: '#f1ead8', dashSize: 0.42, gapSize: 0.3 }));
     lines.computeLineDistances();
     levels[c].group.add(mesh, lines);
@@ -629,7 +632,8 @@ function updateHover() {
   }
   const hit = pickBuilding();
   if (hit) {
-    shared.uHi.value = L.buildings[hit.b].tower;
+    const hb = L.buildings[hit.b];
+    shared.uHi.value = hb.kind === 'yamen' ? L.buildings[L.yamenId].tower : hb.tower;
     const unit = hit.k === state.cut ? unitTooltip(hit.b, hit.k, hit.cell) : null;
     showTooltip(unit || buildingTooltip(hit.b, hit.k));
   } else hideTooltip();
@@ -929,6 +933,10 @@ function frame(now) {
 
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
+  {
+    const vw = (camera.right - camera.left) / camera.zoom, vh = (camera.top - camera.bottom) / camera.zoom;
+    lighting.setFocus(controls.target.x, controls.target.z, clamp(0.5 * Math.max(vw, vh / 0.55) * 0.9 + 12, 28, 190));
+  }
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
   planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
