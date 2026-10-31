@@ -44,9 +44,16 @@ python3 serve.py 8173
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
   and Show. The first hints quote the book with its page. A click on the right person closes
   the case. If the person is outside the City, the hint gives the time of return.
+- **Clock.** The week starts on Tuesday 16 December at 09:45, in real time. The curve in the
+  clock panel shows the people away from home through the day. A click on the curve moves the
+  clock to that time, with the people already on their way. The arrows under the curve set the
+  speed. One arrow is real time (1×), two arrows are 60× and three arrows are 2400×, a day in
+  36 seconds. Space stops the clock and starts it again, and the keys 1, 2 and 3 choose the
+  arrows.
 - **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
   follows the hour, with occasional clear sounds over it, for example drips, a plane and the
-  pigeon breeder's whistle. The browser makes each sound, and the repository has no audio files.
+  pigeon breeder's whistle. The sound fades out when the clock stops. At three arrows, you hear
+  only the soft bed. The browser makes each sound, and the repository has no audio files.
 
 The "Sources + notes" panel in the app lists each source and each inference.
 
