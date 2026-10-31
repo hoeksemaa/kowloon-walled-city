@@ -24,6 +24,13 @@ python3 serve.py 8173
   lines of the lower storeys. In the layered view (key E), each storey below the cut is
   darker and greyer than the storey above it, thus the plan stands out. The normal view has
   no such dim: only the sun, the sky and the lamps light it.
+- **Floor uses.** The legend lists the floor uses of the cut storey. Point at a use to light
+  it on the plan, and click it to keep it lit. The use stays lit when you step through the
+  storeys, until you press Esc. The rest of the cut storey goes grey, but the other storeys and
+  the light of the normal view do not change. A solid outline marks a recorded trade, and a
+  dashed outline marks a trade inferred from the 1983 Kai Fong count. Shop, workshop and
+  clinic floors have a light tint of their legend colour; the floors of flats keep their own
+  colours.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down

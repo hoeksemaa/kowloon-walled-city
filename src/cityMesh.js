@@ -13,16 +13,22 @@ import { roofClutter } from './roofs.js';
 import { emitCage, cageThings, emitAC, emitPipe, pipeColor, emitLedge, FACADE_GLSL } from './facades.js';
 import { K, CUT_H } from './kinds.js';
 import { withDim } from './dim.js';
+import { USE_GLSL } from './useMap.js';
 
 export { K, CUT_H };
 
+// The colours of the floor uses, in the plan and the legend. The rose of the Kai Fong
+// association is apart from the amber of the links (PLAN_COLORS).
 export const USE_COLORS = {
   home: '#cdbb9f',
   dentist: '#b4cbc4', clinic: '#a3c4b7', medicine: '#9fbf9a',
   plastics: '#8fa3ab', metal: '#7f8c94', garment: '#a3a7bb', foodfac: '#d3a46c', works: '#a0a69f',
   eating: '#d9b77a', shop: '#c99a78', office: '#b7a9c4', school: '#cbb96e',
-  kaifong: '#c9a35c', temple: '#b8574a', youth: '#b6b08c', yamen: '#bdb3a0',
+  kaifong: '#c4919a', temple: '#b8574a', youth: '#b6b08c', yamen: '#bdb3a0',
 };
+// The plan of the cut storey: the corridors and the doors to the next block in whitewash, and
+// the links to the next building in amber (routes.js).
+export const PLAN_COLORS = { corridor: '#e2ddd8', link: '#c9a35c' };
 
 const col = (hex) => new THREE.Color(hex);
 // Colours measured in the photos of City of Darkness Revisited (about 110 patches, sRGB, pulled
@@ -519,14 +525,18 @@ function buildYamen(M, L, b, tris, C, useCol, tower) {
 
 // Plan of one storey for the cut view: black wall caps and dotted outlines; inside each
 // block, the corridor, the stairs, the walls between units, and the cubicles and bed spaces
-// of the flats (floorplan.js).
+// of the flats (floorplan.js). It also gives the corridors and the doors of the storey, for
+// the floor-use highlight (useMap.js).
 const POSTBOX = col('#6f7d62'), METERS = col('#2b2b29');
 export function buildPlan(L, c) {
   const M = new Builder();
-  const lines = [], spots = [], lamps = [];
+  const lines = [], spots = [], lamps = [], corridors = [], doors = [];
   // Whitewashed walls and corridors, mosaic stairs (pp165, 177).
   const black = col('#141414'), part = col('#cfc8bd'), thin = col('#d8d2c6');
-  const plate = { corridor: col('#e2ddd8'), stair: col('#6e6966') };
+  const plate = { corridor: col(PLAN_COLORS.corridor), stair: col('#6e6966') };
+  // The floors of the shops, workshops and clinics take a share of the colour of their use
+  // (the legend), so that the plan shows the uses at a glance. The flats keep their floors.
+  const tint = Object.fromEntries(Object.entries(USE_COLORS).map(([k, v]) => [k, k === 'home' ? null : col(v)]));
   const plateW = { corridor: 2, stair: 3 };
   const y0 = c * STOREY, yc = y0 + CUT_H;
   const UV = [[0, 0], [1, 0], [1, 1], [0, 1]];
@@ -552,11 +562,14 @@ export function buildPlan(L, c) {
       if (dashed) lines.push(X0, y + 0.03, Z0, X1, y + 0.03, Z1);
     };
     const d = planDrawing(L, b, c);
-    for (const [q, key] of d.plates) M.face(q.map(([x, z]) => [x, y0 + 0.045, z]), [0, 1, 0], plate[key], q.map(([x, z]) => [x, z]), [b.tower, c, K.plate, plateW[key]]);
+    for (const [q, key] of d.plates) {
+      M.face(q.map(([x, z]) => [x, y0 + 0.045, z]), [0, 1, 0], plate[key], q.map(([x, z]) => [x, z]), [b.tower, c, K.plate, plateW[key]]);
+      if (key === 'corridor') corridors.push({ q, b: b.id });
+    }
     for (const w of d.walls) emit(w, 0.07, CUT_H, part, black, true);
     for (const w of d.fine) emit(w, 0.035, CUT_H * 0.8, thin, part, false);
     for (const w of d.treads) emit(w, 0.02, 0.08, black, black, false);
-    const fu = furnish(M, L, b, c, planAt(b, c), d);
+    const fu = furnish(M, L, b, c, planAt(b, c), d, tint[b.uses[c]]);
     for (const sp of fu.spots) spots.push({ ...sp, b: b.id });
     for (const lp of fu.lamps) lamps.push({ ...lp, b: b.id });
     // On G/F, a wall of postboxes at each entrance (p188) and a bank of meters at the stair
@@ -571,18 +584,20 @@ export function buildPlan(L, c) {
     }
   }
   // Doors through the walls between blocks: amber where they link two towers (routes.js).
-  const door = { inner: plate.corridor, link: col('#c9a35c') };
+  // aInfo.w 10: a door to the next block; 11: a link to the next building.
+  const door = { inner: plate.corridor, link: col(PLAN_COLORS.link) };
   for (const d of (L.routes && L.routes.doorsAt[c]) || []) {
     let nx = L.cellX(d.kc) - L.cellX(d.kb), nz = L.cellZ(d.kc) - L.cellZ(d.kb);
     const l = Math.hypot(nx, nz); nx /= l; nz /= l;
     const tx = -nz, tz = nx, x = d.pa.x, z = d.pa.z, y = yc + 0.012;
-    M.face([[x - tx * 0.45 - nx * 0.3, y, z - tz * 0.45 - nz * 0.3], [x + tx * 0.45 - nx * 0.3, y, z + tz * 0.45 - nz * 0.3],
-      [x + tx * 0.45 + nx * 0.3, y, z + tz * 0.45 + nz * 0.3], [x - tx * 0.45 + nx * 0.3, y, z - tz * 0.45 + nz * 0.3]],
-    [0, 1, 0], d.link ? door.link : door.inner, UV, [L.buildings[d.b].tower, c, K.plate, 1]);
+    const q = [[x - tx * 0.45 - nx * 0.3, z - tz * 0.45 - nz * 0.3], [x + tx * 0.45 - nx * 0.3, z + tz * 0.45 - nz * 0.3],
+      [x + tx * 0.45 + nx * 0.3, z + tz * 0.45 + nz * 0.3], [x - tx * 0.45 + nx * 0.3, z - tz * 0.45 + nz * 0.3]];
+    M.face(q.map(([qx, qz]) => [qx, y, qz]), [0, 1, 0], d.link ? door.link : door.inner, UV, [L.buildings[d.b].tower, c, K.plate, d.link ? 11 : 10]);
+    doors.push({ q, x, z, nx, nz, link: d.link });
   }
   const lg = new THREE.BufferGeometry();
   lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(lines), 3));
-  return { geometry: M.geometry(), lines: lg, spots, lamps };
+  return { geometry: M.geometry(), lines: lg, spots, lamps, corridors, doors };
 }
 
 // The section at a cut storey, the same in both views: each storey drops all that rises above
@@ -777,6 +792,7 @@ if (kind < 0.5) {
   }
 } else if (kind == 1.0) {
   float pw = vInfo.w;
+  if (pw > 9.5) pw = 1.0; // a door through a wall between blocks: as the slab
   vec2 q = vWall;
   if (pw > 2.5 && pw < 3.5) {
     // the floor round a stair: mosaic (p165)
@@ -1001,12 +1017,33 @@ if (kind < 0.5) {
 // On the cut storey at night, each room is lit by its own lamp (lamps.js) while someone in it
 // is awake, and is dim when all sleep. A television, a shrine lamp or a glass case keeps its
 // own light.
-if (uIsCut > 0.5 && (kind == 15.0 || kind == 16.0 || (kind == 1.0 && vInfo.w > 3.5))) {
+if (uIsCut > 0.5 && (kind == 15.0 || kind == 16.0 || (kind == 1.0 && vInfo.w > 3.5 && vInfo.w < 9.5))) {
   float fc = vInfo.w;
   bool own = kind == 15.0 && ((fc > 2.5 && fc < 4.5) || (fc > 8.5 && fc < 9.5));
   if (!own) {
     vec3 lamp = min(texture2D(uLampMap, (vXZ - uLampBox.xy) * uLampBox.zw).rgb, vec3(1.0));
     glow = glow * mix(1.0, 0.3, uNight) + diffuseColor.rgb * lamp * (0.7 * uNight);
+  }
+}
+// The floor-use highlight of the legend (useMap.js), on the cut storey only. A face reads the
+// map a little inside itself, so a wall reads its own block. The corridors and the doors read
+// their own codes. In it, the floors take the colour of the use; out of it, all goes grey and
+// dark. The hover and the hint of the game come after it, thus they still show.
+if (uIsCut > 0.5 && uUseMode > 0.5) {
+  float hit = kind == 1.0 && uUseMode > 1.5
+    ? (uUseMode < 2.5 ? float(abs(vInfo.w - 2.0) < 0.5 || abs(vInfo.w - 10.0) < 0.5) : float(abs(vInfo.w - 11.0) < 0.5))
+    : useHit(vXZ - normalize(vWN).xz * 0.25);
+  const vec3 LUMA = vec3(0.2126, 0.7152, 0.0722);
+  if (hit > 0.5) {
+    if (kind == 1.0 && (vInfo.w < 1.5 || (vInfo.w > 3.5 && vInfo.w < 9.5))) {
+      diffuseColor.rgb = mix(diffuseColor.rgb, uUseCol, 0.8);
+      glow = mix(glow, uUseCol * dot(glow, LUMA) / max(dot(uUseCol, LUMA), 0.05), 0.8);
+    }
+    // the corridors and the links are thin, thus they glow more
+    glow += uUseCol * (kind == 1.0 && uUseMode > 1.5 ? 0.3 : 0.05);
+  } else {
+    diffuseColor.rgb = vec3(dot(diffuseColor.rgb, LUMA)) * 0.3;
+    glow = vec3(dot(glow, LUMA)) * 0.15;
   }
 }
 if (bid >= 0.0 && abs(bid - uHint) < 0.5) {
@@ -1072,6 +1109,7 @@ ${VERT_MAIN}`);
 uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutTop;
 uniform sampler2D uLampMap; uniform vec4 uLampBox;
 varying vec2 vWall; varying vec4 vInfo; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;
+${USE_GLSL}
 ${FACADE_GLSL}
 ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) discard;' : '#define CUTOUT(c) if ((c) <= fcIgn(gl_FragCoord.xy)) discard;'}`)
       .replace('#include <color_fragment>', `#include <color_fragment>
