@@ -35,6 +35,11 @@ python3 serve.py 8173
   outside. All the others are composites. They wear the December clothes of the book's
   photos and carry sacks, buckets and baskets; a small gold marker shows each real person.
 - **Story.** Seven chapters, one for each day, with a camera that follows each scene.
+- **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
+  Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
+  key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
+  and Show. The first hints quote the book with its page. A click on the right person closes
+  the case. If the person is outside the City, the hint gives the time of return.
 - **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
   follows the hour, with occasional clear sounds over it, for example drips, a plane and the
   pigeon breeder's whistle. The browser makes each sound, and the repository has no audio files.
@@ -60,3 +65,6 @@ the repository or the app.
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
 corridor or a stair, if a storey has no way down, or if walks go through other rooms.
+
+`node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
+that each hint of the game points at the person, and that one view shows the person.

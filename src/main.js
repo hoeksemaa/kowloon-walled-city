@@ -6,7 +6,9 @@ import { unitAt, unitName } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
-import { createPopulation, Sim, makePeopleMesh } from './people.js';
+import { createPopulation, Sim } from './people.js';
+import { makePeopleMesh, Flock } from './figures.js';
+import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
@@ -78,12 +80,12 @@ const state = {
 };
 const offsets = new Float32Array(16);
 const shared = {
-  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uCutH: { value: CUT_H },
+  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutH: { value: CUT_H },
 };
 // uMarkers: the gold marker over each real person, shown in the story (people.js).
 const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 } };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
 const unitRes = new Map();
 const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 const sound = new Sound(); // off until the user turns it on
@@ -165,6 +167,9 @@ async function init() {
   sim.setTime(START_MINUTE);
   people = makePeopleMesh(sim, peopleU);
   scene.add(people.mesh);
+  flock = new Flock(sim);
+  scene.add(flock.mesh);
+  makeGameRings();
   residents = new Map();
   for (const a of agents) if (a.home.type === 'in') residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
   for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
@@ -176,7 +181,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, jumpBeat };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat };
   requestAnimationFrame(frame);
 }
 
@@ -349,6 +354,13 @@ function buildUI() {
   tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
   tool('t-map', false, () => (state.mapPins = !state.mapPins));
   tool('t-sound', false, () => sound.toggle());
+  tool('t-find', false, () => {
+    $('game').hidden = !$('game').hidden;
+    if ($('game').hidden) closeCase();
+    renderGame();
+    return !$('game').hidden;
+  });
+  $('game-close').onclick = () => $('t-find').click();
   $('rail-clear').onclick = () => setCut(-1);
   $('st-prev').onclick = () => jumpBeat(-1);
   $('st-next').onclick = () => jumpBeat(1);
@@ -397,6 +409,7 @@ function buildUI() {
   canvas.addEventListener('pointerup', (ev) => {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     const id = pickAgent();
+    if (game.c && !game.solved) { if (id >= 0) checkPick(id); return; }
     sim.select(id);
     state.follow = false;
   });
@@ -408,6 +421,7 @@ function buildUI() {
     else if (k === 'p') $('t-people').click();
     else if (k === 'm') $('t-map').click();
     else if (k === 's') $('t-sound').click();
+    else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') { setCut(-1); sim.select(-1); }
     else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || 60); }
@@ -610,7 +624,7 @@ function updateHover() {
   const id = pickAgent();
   if (id >= 0) {
     shared.uHi.value = NO_HI;
-    showTooltip(agentTooltip(id));
+    showTooltip(game.c && !game.solved ? '<div class="tt-h">A PERSON</div><div class="tt-s">click to check · Find them 尋人</div>' : agentTooltip(id));
     return;
   }
   const hit = pickBuilding();
@@ -911,6 +925,8 @@ function frame(now) {
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
   planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
+  flock.update(now / 1000, offsets);
+  updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
   updateStory();
   glideCamera(dt);
@@ -931,6 +947,156 @@ function frame(now) {
   if (clockT > 0.25) { clockT = 0; updateClock(); }
   renderer.render(scene, camera);
   requestAnimationFrame(frame);
+}
+
+// ---- Find them 尋人 (game.js) -----------------------------------------------------------------------
+// A case keeps running with the model. The hints, the time taken and the found cases stay in
+// this browser only (localStorage).
+const game = { c: null, a: null, n: 0, t0: 0, solved: false, msg: '', back: null, notes: loadNotes(), ring: null, follow: null, following: false };
+function loadNotes() { try { return JSON.parse(localStorage.getItem('kwc-find-v1')) || {}; } catch { return {}; } }
+function saveNotes() { try { localStorage.setItem('kwc-find-v1', JSON.stringify(game.notes)); } catch { /* storage off */ } }
+const when = () => `${WEEK[sim.day % 7]} ${fmtClock(sim.minute)}`;
+
+// Flat rings of radius 1, scaled to the hint; they draw over the buildings.
+function makeGameRings() {
+  const circle = (color, inner) => {
+    const m = new THREE.Mesh(new THREE.RingGeometry(inner, 1, 96).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color, depthTest: false, transparent: true, opacity: 0.85 }));
+    m.renderOrder = 10;
+    m.visible = false;
+    scene.add(m);
+    return m;
+  };
+  game.ring = circle('#e7a43c', 0.97);
+  game.follow = circle('#ff5c38', 0.72);
+}
+
+function clearHintMarks() {
+  game.ring.visible = game.follow.visible = game.following = false;
+  shared.uHint.value = NO_HI;
+}
+
+function openCase(c) {
+  game.c = c;
+  game.a = sim.agents.find(c.find);
+  game.n = 0;
+  game.t0 = performance.now();
+  game.solved = false;
+  game.msg = '';
+  game.back = null;
+  game.notes[c.key] = { hints: [], found: (game.notes[c.key] || {}).found || null };
+  saveNotes();
+  // The markers and the story camera would give the person away.
+  peopleU.uMarkers.value = 0;
+  state.storyCam = false;
+  $('st-cam').classList.remove('on');
+  sim.select(-1);
+  state.follow = false;
+  clearHintMarks();
+  setCut(-1);
+  renderGame();
+}
+
+function closeCase() {
+  if (!game.c) return;
+  game.c = null;
+  peopleU.uMarkers.value = 1;
+  clearHintMarks();
+}
+
+function nextHint() {
+  const c = game.c, h = gameHint(L, sim, c, game.a, game.n, sim.minute);
+  game.notes[c.key].hints.push({ step: STEPS[game.n], text: h.text, page: h.page, at: when() });
+  saveNotes();
+  game.back = h.away ? h.back : null;
+  if (h.away) { renderGame(); return; } // a hint that only says "outside" does not count
+  if (h.ring) {
+    game.ring.position.set(h.ring.x, 0.6, h.ring.z);
+    game.ring.scale.set(h.ring.r, 1, h.ring.r);
+    game.ring.visible = true;
+    state.camGoal = { x: h.ring.x, y: 6, z: h.ring.z, zoom: 3.4 };
+  }
+  if (h.tower !== undefined) {
+    shared.uHint.value = h.tower;
+    const t = L.towers[h.tower], b = L.buildings[t.blocks[0]];
+    state.camGoal = { x: b.cx, y: 10, z: b.cz, zoom: 5 };
+  }
+  if (h.cut !== undefined) setCut(h.cut);
+  if (h.follow) game.following = true;
+  game.n++;
+  renderGame();
+}
+
+function checkPick(id) {
+  if (id === game.a.id) {
+    game.solved = true;
+    const c = game.c;
+    game.notes[c.key].found = { hints: game.n, ms: Math.round(performance.now() - game.t0), at: when() };
+    saveNotes();
+    clearHintMarks();
+    peopleU.uMarkers.value = 1;
+    sim.select(id);
+    game.msg = '';
+  } else {
+    const d = sim.describe(sim.agents[id]);
+    game.msg = `That is ${d.title}, ${d.role}. Look again: a wrong click costs nothing.`;
+  }
+  renderGame();
+}
+
+function updateGameRings() {
+  if (!game.following || !game.a) return;
+  const o = game.a.id * 4, P = sim.aP;
+  game.follow.visible = P[o + 3] >= 0;
+  if (!game.follow.visible) return;
+  const lv = clamp(P[o + 3], 0, 14.99), i0 = Math.floor(lv);
+  const off = offsets[i0] + (offsets[Math.min(15, i0 + 1)] - offsets[i0]) * (lv - i0);
+  game.follow.position.set(P[o], P[o + 2] + off + 0.1, P[o + 1]);
+  game.follow.scale.set(1.4, 1, 1.4);
+}
+
+function renderGame() {
+  const body = $('game-body');
+  if (!body) return;
+  const esc = (t) => String(t).replace(/[&<>]/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[m]);
+  const mmss = (ms) => `${Math.floor(ms / 60000)}:${String(Math.floor(ms / 1000) % 60).padStart(2, '0')}`;
+  if (!game.c) {
+    body.innerHTML = `<div>Three people of <i>City of Darkness Revisited</i> are somewhere in the City this week. Pick a case. The clock keeps running; you can stop it or move it.</div>
+      ${CASES.map((c, i) => {
+        const f = (game.notes[c.key] || {}).found;
+        return `<button class="case${f ? ' done' : ''}" data-case="${i}"><b>${c.title.toUpperCase()} ${c.zh}</b><br>${c.name}${f ? ` · found ${f.at}, ${f.hints} hint${f.hints === 1 ? '' : 's'}, ${mmss(f.ms)}` : ''}</button>`;
+      }).join('')}
+      <div class="tt-s">Each case has five hints, each stronger than the one before. A click on the right person closes the case.</div>`;
+    for (const el of body.querySelectorAll('[data-case]')) el.onclick = () => openCase(CASES[Number(el.dataset.case)]);
+    return;
+  }
+  const c = game.c, notes = game.notes[c.key];
+  const hints = notes.hints.map((h) => `<div class="hint"><span class="k">${h.step.toUpperCase()}</span>${esc(h.text)}${h.page ? ` <i>(${h.page})</i>` : ''} <i>· ${h.at}</i></div>`).join('');
+  let foot;
+  if (game.solved) {
+    const r = game.a.real, f = notes.found;
+    foot = `<div class="found">FOUND · ${esc(c.name)}</div>
+      ${[c.who, c.looks, c.how].map(([t, page]) => `<div class="fact">${esc(t)} <i>(${page})</i></div>`).join('')}
+      ${r.quotes.map((q) => `<div class="fact">“${esc(q.t)}” <i>${esc(q.src)}, ${esc(q.tag)}</i></div>`).join('')}
+      ${c.place ? `<div class="fact"><i>${esc(c.place)}</i></div>` : ''}
+      <div class="tt-s">hints used: ${f.hints} of 5 · time taken: ${mmss(f.ms)} · found ${f.at}</div>
+      <div class="row"><button data-act="cases">ALL CASES</button></div>`;
+  } else {
+    foot = `<div class="row">
+      ${game.n < 5 ? `<button data-act="hint">HINT ${game.n + 1}/5 · ${STEPS[game.n].toUpperCase()}</button>` : ''}
+      ${game.back !== null ? `<button data-act="go">GO TO ${fmtClock(game.back)}</button>` : ''}
+      <button data-act="cases">ALL CASES</button></div>
+      ${game.msg ? `<div class="msg">${esc(game.msg)}</div>` : ''}`;
+  }
+  body.innerHTML = `<h3>${c.title.toUpperCase()} ${c.zh} · ${esc(c.name)}</h3>
+    ${hints || '<div class="tt-s">No hints yet. Look for him, or ask for the first hint.</div>'}${foot}`;
+  $('game').scrollTop = $('game').scrollHeight;
+  for (const el of body.querySelectorAll('[data-act]'))
+    el.onclick = () => {
+      const act = el.dataset.act;
+      if (act === 'hint') nextHint();
+      else if (act === 'go') { sim.setTime(game.back + 1); game.back = null; renderGame(); }
+      else { closeCase(); renderGame(); }
+    };
 }
 
 init().catch((err) => {

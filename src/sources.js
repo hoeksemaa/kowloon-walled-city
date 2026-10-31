@@ -63,6 +63,14 @@ marked inferred.</p>
     Street, the roast meat on Lo Yan Street, and others. A small gold marker floats over each real person. The hours that the book gives
     are in their week (pp57, 76, 82, 93, 187, 228, 237, 286). The book met them in about 1990, and they say no
     words in the model.</li>
+  <li><span class="st ok">POSTMAN</span>Lam Po Chun, "hu xu zi" (beardie) to the locals, sorted the mail at the Lung
+    Kong Road Post Office. His round started at a store on Lo Yan Street. He worked one north–south lane, then the
+    side alleys; he climbed one stair, crossed the roofs by ladders and windows, and went down another. He filled
+    the postbox walls, met some residents at 4/F or 5/F and delivered outside the City for part of the day
+    (${BOOK}, pp145–146). He wore a navy hat against "the constant dripping" (pp148–149) and carried a brown
+    canvas bag (p144). An 8-hour shift (WSJ, 2014).</li>
+  <li><span class="st ok">FIND THEM</span>The game 尋人 has three cases: the postman, the pigeon breeder and the noodle
+    maker. Each Who and How hint quotes ${BOOK}, with its page.</li>
   <li><span class="st ok">ROUTINES</span>From ${BOOK}: police on the beat, two to each beat, some of it on the roofs
     (pp251, 283); refuse collectors on Tai Chang Street at 4 a.m. (p93); street sweepers with their buckets (p104);
     meter readers with torches (p98); patients from outside at the dentists and doctors on the outer roads (p242);
@@ -139,7 +147,17 @@ marked inferred.</p>
     pipe bundle, postbox wall and meter bank is; and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
     move.</li>
-  <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.</li>
+  <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.
+    From 14:25 to 16:40 the landings are about 20 minutes apart, for the lull that the pigeon breeder waited for
+    (p321). No timetable gives that lull.</li>
+  <li><span class="st prov">FLOCK</span>The 34 birds that circle over the pigeon breeder's roof while he flies them, and
+    their size, larger than a real bird so that the flock shows. The book gives no count.</li>
+  <li><span class="st prov">POST</span>The hours of the postman's round: sorting from 7:00, Lo Yan Street from 8:20,
+    lunch 12:30–13:15, delivery outside the City from 14:00, off at 15:30, and on Saturday off at about 11:00.
+    The book gives the order of the round but no times.</li>
+  <li><span class="st prov">HINTS</span>The game reads the model as it runs. The Where circle does not centre on the
+    person, and the Which hint gives a band of three storeys; both change each half hour. Your hints and finds stay
+    in this browser only.</li>
   <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five places
     it disagrees with the address in the text; their discs have a dashed ring, and the tooltip gives the address.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>

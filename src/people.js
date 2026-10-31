@@ -15,11 +15,10 @@
 // only, Sunday off for most. 冬至 (Winter Solstice, Mon 22 Dec 1986) is a Hong Kong-wide
 // custom: families "做冬" and eat together, and many leave work early. That evening is
 // INFERRED for the city's families.
-import * as THREE from 'three';
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
 import { planAt, unitName } from './floorplan.js';
 import { WALK, CLIMB } from './routes.js';
-import { mulberry32, clamp } from './util.js';
+import { mulberry32, clamp, linearRGB } from './util.js';
 import { REAL, BOOK_PEOPLE } from './residents.js';
 
 const SURNAMES = ['Chan', 'Wong', 'Lee', 'Cheung', 'Lau', 'Ho', 'Ng', 'Leung', 'Lam', 'Tse', 'Yip', 'Kwok', 'Tang', 'Fung', 'Mak', 'Cheng', 'Lo', 'Yeung', 'Chow', 'Kwan', 'Chu', 'Tsang', 'Wu', 'So'];
@@ -267,7 +266,7 @@ export function createPopulation(L, total = 28200, seed = 1987) {
 }
 
 // What someone wears: a top and a bottom colour, a body size (0 child, 1 adult, 2 old, with
-// a stoop) and a hat (0 none, 1 a police cap, 2 a flat cap). The people of the book wear
+// a stoop) and a hat (0 none, 1 a police cap, 2 a flat cap, 3 a navy hat). The people of the book wear
 // what their photo shows, if residents.js gives it.
 function dress(a, rng) {
   const W = (k) => pickHex(rng, WEAR[k]);
@@ -275,8 +274,8 @@ function dress(a, rng) {
   let top, bottom = W('trousers');
   a.size = a.role === 'elder' || (a.age && a.age >= 66) ? 2 : a.role === 'child' || (a.age && a.age < 12) ? 0 : 1;
   a.hat = 0;
-  const look = a.book && a.book.look;
-  if (look) { top = look.top; bottom = look.bottom; a.hat = look.hat || 0; }
+  const look = (a.book && a.book.look) || (a.real && a.real.look);
+  if (look) { top = look.top || W('shirt'); bottom = look.bottom || bottom; a.hat = look.hat || 0; }
   else if (a.book) top = workshop[a.book.trade] ? W('vest') : a.book.trade === 'clinic' || a.book.trade === 'dentist' || a.book.trade === 'bonesetter' ? W('shirt') : W('cardigan');
   else switch (a.role) {
     case 'child': top = rng() < 0.4 ? W('cardigan') : W('kid'); bottom = W('kidLegs'); break;
@@ -293,8 +292,8 @@ function dress(a, rng) {
     case 'police': top = bottom = W('police'); a.hat = 1; break;
     default: top = rng() < 0.5 ? W('jacket') : W('shirt');
   }
-  a.color = new THREE.Color(top);
-  a.bottom = new THREE.Color(bottom);
+  a.color = linearRGB(top);
+  a.bottom = linearRGB(bottom);
 }
 
 // What someone carries, by what they do: flour sacks (pp246, 248), buckets at the standpipe
@@ -542,23 +541,44 @@ function makeSchedule(a, L, rng, dow) {
       break;
     }
     case 'postman': {
+      // Lam Po Chun's round (p146): he sorts the mail at the Lung Kong Road Post Office outside
+      // the City, starts at a store on Lo Yan Street, works the north-south lane and then the
+      // side alleys, climbs one stair, crosses the roofs by ladders and windows and goes down
+      // another (pp145-146), fills the postbox walls, meets some residents at 4/F or 5/F, and
+      // delivers outside the City for part of the day. An 8-hour shift (WSJ, 2014). The book
+      // gives no times, thus the hours are INFERRED.
       a.home = away('off duty');
       S.length = 0;
       at(0, a.home, 'off duty');
       if (sun) break;
-      const stop = () => {
-        const c = L.buildings.filter((b) => b.kind === 'tenement' && b.floors > 3);
-        const b = c[Math.floor(rng() * c.length)];
-        const f = 1 + Math.floor(rng() * (b.floors - 1));
-        return { type: 'in', b: b.id, f, ...spotIn(L, b, f, -1, rng) };
-      };
-      let t = H(8, 30);
-      at(t, laneSpot(L, rng, null), 'starting his round');
-      for (t += 15; t < H(sat ? 12 : 16, 15); t += 22 + rng() * 10) {
-        if (!sat && t > H(12, 30) && t < H(13, 15)) { t = H(13, 15); continue; }
-        at(t, stop(), 'delivering the mail, up the stairs');
+      const lys = B.filter((b) => b.kind !== 'yamen' && b.floors > 1 && L.addr.lys && L.addr.lys.F.includes(b.id));
+      const store = lys.find((b) => b.uses[0] === 'shop') || lys[0] || pick(B.filter((b) => b.floors > 1));
+      const inside = (b, f, act, m = -3) => ({ place: { type: 'in', b: b.id, f, ...spotIn(L, b, f, m, rng) }, act });
+      const stops = [inside(store, 0, 'with the mail, at a store on Lo Yan Street (p146)', -1)];
+      for (const b of lys.slice(0, 8)) stops.push(inside(b, 0, 'filling the postboxes in the entrance (p188)'));
+      const side = ['kms', 'tcs', 'skg', 'tts'].flatMap((st) => (L.addr[st] ? L.addr[st].F : []).map((id) => B[id]))
+        .filter((b) => b.kind === 'tenement' && b.floors > 5);
+      for (let q = 0; q < 6 && side.length; q++) {
+        const b = pick(side);
+        stops.push(inside(b, 0, 'filling the postboxes in the entrance (p188)'));
+        if (q % 2 === 0) stops.push(inside(b, 4 + Math.floor(rng() * 2), 'with a letter for a resident on 4/F or 5/F (p146)'));
+        if (q % 3 === 1) {
+          // Up one stair, over the roofs and down another (pp145-146).
+          stops.push({ place: roofOf(rng, b), act: 'crossing the roofs by ladders and windows (pp145-146)' });
+          const nb = B.filter((x) => x.tower !== b.tower && x.floors > 4 && Math.hypot(x.cx - b.cx, x.cz - b.cz) < 20);
+          if (nb.length) stops.push({ place: roofOf(rng, pick(nb)), act: 'crossing the roofs by ladders and windows (pp145-146)' });
+        }
       }
-      at(t, a.home, 'off duty');
+      at(H(7, 0), away('at the Lung Kong Road Post Office'), 'sorting the mail at the Lung Kong Road Post Office (p146)');
+      let t = H(8, 20);
+      for (const s0 of stops) {
+        if (t > H(12, 30) && t < H(13, 15)) t = H(13, 15);
+        if (t > H(sat ? 11 : 14, 0)) break;
+        at(t, s0.place, s0.act);
+        t += 11 + rng() * 8;
+      }
+      if (!sat) { at(Math.max(t, H(14, 0)), away('delivering outside the City'), 'delivering outside the City (p146)'); at(H(15, 30), a.home, 'off duty'); }
+      else at(t, a.home, 'off duty');
       break;
     }
     case 'commuter': {
@@ -774,7 +794,7 @@ export class Sim {
     this.aC = new Float32Array(n * 3);
     this.aB = new Float32Array(n * 3);
     this.aL = new Float32Array(n * 4);
-    for (const a of agents) a.bottom.toArray(this.aB, a.id * 3);
+    for (const a of agents) this.aB.set(a.bottom, a.id * 3);
     this.selected = -1;
     this.activity = new Float32Array(144);
     this.residents = agents.filter((a) => a.home.type === 'in').length;
@@ -856,7 +876,7 @@ export class Sim {
   tint(a) {
     const o = a.id * 3, q = a.id * 4, sel = a.id === this.selected;
     if (sel) { this.aC[o] = 1; this.aC[o + 1] = 0.36; this.aC[o + 2] = 0.22; }
-    else a.color.toArray(this.aC, o);
+    else this.aC.set(a.color, o);
     this.aL[q] = a.size;
     this.aL[q + 1] = propFor(a);
     this.aL[q + 2] = a.hat * 2 + (a.real ? 1 : 0);
@@ -1043,114 +1063,4 @@ export class Sim {
     }
     return { away, out, moving: this.moving.length, perLevel };
   }
-}
-
-// Instanced figures, positioned in the vertex shader so that storeys can be lifted apart
-// without touching per-person data. Each figure is boxes with a part number: legs (bottom
-// colour), body (top colour), head, hair, a prop, a hat, and a marker over a real person.
-// A box has no bottom face, because the camera looks down.
-const PART = { legs: 0, body: 1, head: 2, hair: 3, prop: 4, hat: 5, marker: 6 };
-function figureGeometry() {
-  const pos = [], nor = [], part = [], idx = [];
-  const box = (x0, y0, z0, x1, y1, z1, p) => {
-    const faces = [
-      [[x0, y1, z0], [x0, y1, z1], [x1, y1, z1], [x1, y1, z0], [0, 1, 0]],
-      [[x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1], [0, 0, 1]],
-      [[x1, y0, z0], [x0, y0, z0], [x0, y1, z0], [x1, y1, z0], [0, 0, -1]],
-      [[x1, y0, z1], [x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [1, 0, 0]],
-      [[x0, y0, z0], [x0, y0, z1], [x0, y1, z1], [x0, y1, z0], [-1, 0, 0]],
-    ];
-    for (const f of faces) {
-      const v = pos.length / 3;
-      for (let q = 0; q < 4; q++) { pos.push(...f[q]); nor.push(...f[4]); part.push(p); }
-      idx.push(v, v + 1, v + 2, v, v + 2, v + 3);
-    }
-  };
-  box(-0.2, 0, -0.14, 0.2, 0.62, 0.14, PART.legs);
-  box(-0.25, 0.62, -0.17, 0.25, 1.22, 0.17, PART.body);
-  box(-0.15, 1.24, -0.15, 0.15, 1.47, 0.15, PART.head);
-  box(-0.16, 1.47, -0.16, 0.16, 1.56, 0.16, PART.hair);
-  box(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, PART.prop);
-  box(-0.19, 1.53, -0.19, 0.19, 1.61, 0.19, PART.hat);
-  box(-0.11, 1.95, -0.11, 0.11, 2.17, 0.11, PART.marker);
-  const g = new THREE.InstancedBufferGeometry();
-  g.setIndex(idx);
-  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
-  g.setAttribute('aPart', new THREE.Float32BufferAttribute(part, 1));
-  return g;
-}
-
-export function makePeopleMesh(sim, shared) {
-  const n = sim.agents.length;
-  const g = figureGeometry();
-  const aP = new THREE.InstancedBufferAttribute(sim.aP, 4);
-  aP.setUsage(THREE.DynamicDrawUsage);
-  const aC = new THREE.InstancedBufferAttribute(sim.aC, 3);
-  aC.setUsage(THREE.DynamicDrawUsage);
-  const aL = new THREE.InstancedBufferAttribute(sim.aL, 4);
-  aL.setUsage(THREE.DynamicDrawUsage);
-  g.setAttribute('aP', aP);
-  g.setAttribute('aC', aC);
-  g.setAttribute('aB', new THREE.InstancedBufferAttribute(sim.aB, 3));
-  g.setAttribute('aL', aL);
-  g.instanceCount = n;
-  const m = new THREE.MeshLambertMaterial({ color: 0xffffff });
-  m.onBeforeCompile = (s) => {
-    Object.assign(s.uniforms, shared);
-    s.vertexShader = s.vertexShader
-      .replace('#include <common>', `#include <common>
-attribute vec4 aP; attribute vec3 aC; attribute vec3 aB; attribute vec4 aL; attribute float aPart;
-varying vec3 vAC;
-uniform float uOff[16]; uniform float uCutY; uniform float uPeopleScale; uniform float uMarkers;
-vec3 turnY(vec3 v, float a) { float c = cos(a), s = sin(a); return vec3(c * v.x + s * v.z, v.y, -s * v.x + c * v.z); }`)
-      .replace('#include <beginnormal_vertex>', `
-float yaw = fract(sin(float(gl_InstanceID) * 12.9898) * 43758.5453) * 6.2832;
-vec3 objectNormal = turnY(normal, yaw);`)
-      .replace('#include <begin_vertex>', `
-float size = aL.x, prop = aL.y, real = mod(aL.z, 2.0), hat = floor(aL.z / 2.0);
-vec3 p = position;
-vec3 col = aC;
-if (aPart < 0.5) col = aB;
-else if (aPart < 1.5) col = aC;
-else if (aPart < 2.5) col = vec3(0.448, 0.239, 0.151);
-else if (aPart < 3.5) col = size > 1.5 ? vec3(0.33, 0.31, 0.29) : vec3(0.012, 0.009, 0.007);
-else if (aPart < 4.5) {
-  // the prop: a unit box, moved and sized by its kind
-  vec3 c = vec3(0.0), z = vec3(0.0);
-  if (prop == 1.0) { c = vec3(0.1, 1.33, 0.0); z = vec3(0.52, 0.22, 0.34); col = vec3(0.8, 0.8, 0.75); }
-  else if (prop == 2.0) { c = vec3(0.36, 0.17, 0.0); z = vec3(0.24, 0.28, 0.24); col = vec3(0.28, 0.33, 0.4); }
-  else if (prop == 6.0) { c = vec3(0.36, 0.17, 0.0); z = vec3(0.26, 0.3, 0.26); col = vec3(0.9, 0.3, 0.05); }
-  else if (prop == 3.0) { c = vec3(0.37, 0.42, 0.0); z = vec3(0.36, 0.2, 0.3); col = vec3(0.45, 0.3, 0.12); }
-  else if (prop == 4.0) { c = vec3(0.36, 0.3, 0.0); z = vec3(0.26, 0.56, 0.26); col = vec3(0.6, 0.08, 0.04); }
-  else if (prop == 5.0) { c = vec3(0.3, 0.72, 0.0); z = vec3(0.12, 0.36, 0.32); col = vec3(0.3, 0.25, 0.12); }
-  p = c + p * z;
-} else if (aPart < 5.5) {
-  if (hat < 0.5) p = vec3(0.0);
-  col = hat < 1.5 ? vec3(0.03, 0.03, 0.045) : vec3(0.38, 0.37, 0.35);
-} else {
-  // the marker of a real person, in the story only
-  if (real < 0.5 || uMarkers < 0.5) p = vec3(0.0);
-  col = vec3(0.81, 0.54, 0.066);
-}
-if (size < 0.5) p *= vec3(0.8, 0.66, 0.8);
-else if (size > 1.5 && aPart < 5.5) { p.y *= 0.93; p.x += max(p.y - 0.8, 0.0) * 0.3; }
-vec3 transformed = turnY(p, yaw) * uPeopleScale;
-float lv = clamp(aP.w, 0.0, 14.99);
-int i0 = int(floor(lv));
-int i1 = min(i0 + 1, 15);
-float off = mix(uOff[i0], uOff[i1], fract(lv));
-transformed += vec3(aP.x, aP.z + off, aP.y);
-vAC = aPart > 5.5 ? col : col * aL.w;
-if (aP.w < -0.5 || aP.z > uCutY) transformed = vec3(0.0, -1.0e5, 0.0);`);
-    s.fragmentShader = s.fragmentShader
-      .replace('#include <common>', `#include <common>
-varying vec3 vAC;`)
-      .replace('#include <color_fragment>', `#include <color_fragment>
-diffuseColor.rgb *= vAC;`);
-  };
-  m.customProgramCacheKey = () => 'kwc-people';
-  const mesh = new THREE.Mesh(g, m);
-  mesh.frustumCulled = false;
-  return { mesh, aP, aC, aL };
 }

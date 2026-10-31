@@ -96,3 +96,10 @@ export function fmtClock(min) {
   const m = ((Math.floor(min) % 1440) + 1440) % 1440;
   return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
 }
+
+// A colour '#rrggbb' (sRGB) as linear [r, g, b], as THREE.Color stores it.
+export function linearRGB(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const lin = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+  return [lin(((n >> 16) & 255) / 255), lin(((n >> 8) & 255) / 255), lin((n & 255) / 255)];
+}
