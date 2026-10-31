@@ -52,7 +52,7 @@ TOWERS_BY_EYE = [
     ([118, 124, 129, 134], 'one mid-grey building; 129 is its east end'),
     ([135, 175, 189], 'one dark building; 189 is its south end'),
     ([181, 200, 215, 219], 'one mid-grey building; 219 is its west strip (fit off 4 m)'),
-    ([222, 230, 233, 236], 'one light-grey building; 236 is its west strip; 242 is past the 1987 edge (fit off 4 m)'),
+    ([222, 230, 233, 236], 'one light-grey building; 236 is its west strip; most of 242 is past the 1987 edge (fit off 4 m)'),
     ([247, 275], 'one dark building (fit off 3 m)'),
     ([251, 267, 276, 291, 300], 'one light L-shaped building (fit off 3 m)'),
     ([252, 258, 268, 269], 'one white building; 268 is its west corner (fit off 3 m)'),

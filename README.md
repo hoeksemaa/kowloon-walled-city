@@ -14,8 +14,8 @@ python3 serve.py 8173
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
-  towers (270 if the 17 Yamen halls count as one). 27 towers are checked by eye against
-  that plan. The heights on the south face come from Lambot's 1990 south elevation.
+  towers (270 if the 17 Yamen halls count as one). A check by eye against that plan
+  changed 27 of them. The heights on the south face come from Lambot's 1990 south elevation.
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
   types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
