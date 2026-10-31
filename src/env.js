@@ -122,6 +122,11 @@ export function addStreetLabels(scene, site, road, names) {
   }
 }
 
+// Kowloon at night, seen past the roofs, is sodium amber (#f8f1ba / #cfb272, p316). Lighting
+// sets its glow by the hour.
+const CONTEXT_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+const SODIUM = new THREE.Color('#cfb272');
+
 // Low blocks far below the plinth, mostly lost in haze. Kowloon City around the Walled
 // City was kept low by the airport height limits; heights here are placeholders.
 // Drawn as a miniature, so that it reads as far below rather than merely lower.
@@ -130,7 +135,7 @@ function buildContextCity(L) {
   const box = new THREE.BoxGeometry(1, 1, 1);
   box.translate(0, 0.5, 0);
   const n = 12000;
-  const mesh = new THREE.InstancedMesh(box, new THREE.MeshLambertMaterial({ color: '#ffffff' }), n);
+  const mesh = new THREE.InstancedMesh(box, CONTEXT_MAT, n);
   const m = new THREE.Matrix4(), c = new THREE.Color();
   const cx = L.x0 + L.W / 2, cz = L.z0 + L.D / 2;
   let k = 0;
@@ -265,6 +270,8 @@ export class Lighting {
     const m = hour < 6.95 ? hour - 0.45 : hour > 17.75 ? hour + 0.75 : 6.5 + (hour - 6.95) * (12 / 10.8);
     skyAt(clamp(m, 0, 24), this.sky);
     this.scene.fog.color.copy(this.sky);
-    return 1 - smoothstep(0.02, 0.35, elev);
+    const night = 1 - smoothstep(0.02, 0.35, elev);
+    CONTEXT_MAT.emissive.copy(SODIUM).multiplyScalar(0.32 * night);
+    return night;
   }
 }

@@ -77,6 +77,19 @@ marked inferred.</p>
     Street (${BOOK}, pp28, 107; 葉德偉, HK01 2016).</li>
   <li><span class="st ok">FACES</span>Window cages, signs, roof tanks and TV aerials follow the photos of 1987–90
     (${MPLUS}).</li>
+  <li><span class="st ok">COLOUR</span>About 110 colour patches measured in the photos of ${BOOK}: the render and
+    paint of the faces, the grilles ("dark green or orange rust-preventing paint", p150, and pale blue), the
+    dark inside of the cages, which fills 40–63 % of an open face (pp18, 26, 143), the grime and rust streaks
+    (pp14, 96–97), the roofs and sheds (pp313, 327), and the boards: most are white or cream with black
+    characters, about one in ten is coloured, and none is neon (pp8, 61, 285).</li>
+  <li><span class="st ok">LIGHT</span>A lane is 10–35 % as bright as an open face, with pools of light under tubes
+    and bulbs; daylight reaches the ground only at gaps (p103), and Lo Yan Street is "the only street that had
+    some degree of natural lighting" (p23). Tubes are near-white, windows at dusk blue-white, some rooms have
+    warm bulbs, and Kowloon beyond is sodium amber (pp16–17, 30, 42, 316). Corridors are whitewashed and lit
+    by tubes; stairs have mosaic treads (pp165, 177).</li>
+  <li><span class="st ok">LANES</span>Upper floors overhang the lanes (p131). Plastic and metal sheets, and
+    bundles of pipes and cables, hang over them (pp10, 106–107, 144, 249). Postboxes stand at the entrances
+    (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
     (a police officer, SCMP 2018; the tailor across the road, HK01 2016).</li>
 </ul>
@@ -113,6 +126,10 @@ marked inferred.</p>
   <li><span class="st prov">冬至</span>Family dinners on Monday 22 Dec 1986. 冬至 is a Hong Kong-wide custom; the
     model infers that the city's families kept it too.</li>
   <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>
+  <li><span class="st prov">DETAIL</span>Which building gets which colour, cage, overhang and stain; where each sheet,
+    pipe bundle, postbox wall and meter bank is; and which windows are lit at each hour. The floor lines of each
+    building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
+    move.</li>
   <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.</li>
   <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five places
     it disagrees with the address in the text; their discs have a dashed ring, and the tooltip gives the address.</li>

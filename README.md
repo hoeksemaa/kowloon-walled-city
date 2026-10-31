@@ -23,6 +23,9 @@ python3 serve.py 8173
 - **Routes.** People walk from their room to the door, along the corridor and up or down
   the stair. They cross to other buildings through links and bridges and over the roofs,
   or go down to the lanes, whichever is quicker.
+- **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
+  the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
+  the tubes; at night the windows are blue-white and Kowloon beyond is sodium amber.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** 28,200 residents in 8,800 flats, and 4,800 workers who come in from outside

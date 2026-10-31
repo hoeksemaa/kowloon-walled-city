@@ -21,11 +21,15 @@ export const STOREY = 3.05;
 export const MAX_FLOORS = 15;
 export const MARGIN = 18; // metres of street around the city, on the plinth
 
-// Weathered concrete, mosaic tile and paint, sRGB (from the 1987-90 photos).
+// Render and paint, sRGB, measured in the photos of City of Darkness Revisited: cream render
+// (pp61, 87), warm beige (p13), ochre (p97), grey concrete (pp143, 327), duck-egg blue (p60),
+// mint green (pp86, 142) and old brick (p96), with their shades. The outer faces are paint
+// and render; mosaic tile is mostly inside. Each building gets one, and its value moves by up
+// to 20-40 levels from its neighbours' (p143), thus a building strip stands out.
 const FACADES = [
-  ['#9d9a91', 9], ['#a9a59b', 8], ['#b8b2a4', 7], ['#8d8b85', 6], ['#c3bcaa', 5], ['#a8b6ab', 4],
-  ['#9eafb7', 4], ['#c3aca2', 3], ['#bab9b0', 5], ['#a48f72', 2], ['#7e8483', 3], ['#b4a58a', 3],
-  ['#d2cdbf', 4], ['#cfc6b0', 3],
+  ['#a79f96', 10], ['#8e877f', 6], ['#c9c0b2', 5], ['#e6d6bb', 3], ['#ddd6c8', 3], ['#c1a994', 5],
+  ['#a08d7d', 3], ['#d3b894', 4], ['#b19a83', 3], ['#93a9b0', 4], ['#7a8d91', 2], ['#98a290', 4],
+  ['#b69482', 2], ['#8f7a6e', 2],
 ];
 
 // Floor uses. Each GRS trade maps to one use; the labels say what the premises were.
