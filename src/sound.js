@@ -457,7 +457,7 @@ export class Sound {
     this.glide(this.murmurLp.frequency, 300 + 900 * lv, now, 0.5);
     this.glide(this.rumble.gain, 0.006 + 0.019 * lv, now, 0.5);
 
-    if (planes) this.updatePlane(planes, minute, shots, now);
+    if (planes) this.updatePlane(planes, shots, now);
 
     // The pigeons come down to feed in the mid-afternoon lull.
     const last = this.last;
@@ -483,17 +483,14 @@ export class Sound {
     }
   }
 
-  // Voice one plane at a time, at most about one a minute; a story plane always plays.
-  updatePlane(planes, minute, shots, now) {
+  // Voice one plane at a time, at most about one a minute.
+  updatePlane(planes, shots, now) {
     const act = planes.active || [];
     if (this.plane && !act.includes(this.plane)) this.plane = null;
     const fresh = act.reduce((b, a) => (!b || a.s < b.s ? a : b), null); // the last plane to start
-    if (shots && fresh && fresh.s < -900 && fresh !== this.plane) {
-      const story = planes.extra.some((m) => minute >= m && minute - m < 1);
-      if (story || (!this.plane && now >= this.planeAt)) {
-        this.plane = fresh;
-        this.planeAt = now + 50 + this.rng() * 30;
-      }
+    if (shots && fresh && fresh.s < -900 && !this.plane && now >= this.planeAt) {
+      this.plane = fresh;
+      this.planeAt = now + 50 + this.rng() * 30;
     }
     let amp = 0;
     if (this.plane && shots) {

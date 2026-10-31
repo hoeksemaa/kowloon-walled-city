@@ -164,23 +164,6 @@ export const REAL = [
   },
 ];
 
-// Other first-hand words the story uses (not followable people).
-export const VOICES = {
-  officer: { who: 'a police officer posted to Kowloon City in 1987', src: 'SCMP, 23 Mar 2018', tag: 'retrospective (2018)' },
-  tailor: { who: '林財銳, tailor on 城南道, across the road', src: 'HK01, 10 Nov 2016', tag: 'retrospective (2016)' },
-  jones: { who: 'Gordon Jones, Kowloon City District Officer', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  tam: { who: 'Tam Sau-kuen 谭秀娟, housewife', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  pw: { who: 'Wong Chan Pui-wah 黄陈佩华, garment-factory worker', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  lambot: { who: 'Ian Lambot, photographer, 1987–92', src: 'HK01, 8 May 2024 (interview 2019)', tag: 'retrospective (2019)' },
-  girard: { who: 'Greg Girard, photographer, 1987–92', src: 'HK01, 8 May 2024 (interview 2019)', tag: 'retrospective (2019)' },
-  akers: { who: 'Sir David Akers-Jones, government official', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  lcf: { who: 'Lau Chun-fat, toy-factory worker', src: 'SCMP, 23 Mar 2018', tag: 'retrospective (2018)' },
-  hauLin: { who: 'Chan Hau-lin 陈厚练, building developer', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  kamChiu: { who: 'Lau Kam-chiu 刘锦朝, electrician', src: 'WSJ, 2014', tag: 'retrospective (2014)' },
-  lamYM: { who: 'Lam Yin Ming, resident', src: 'Baltimore Sun, 30 Jun 1992', tag: 'at the time (1992)' },
-  hk01: { who: 'HK01 reporters, from five residents', src: 'HK01, 26–28 Aug 2016', tag: 'narration (2016)' },
-};
-
 // People of City of Darkness Revisited (2014) at their places, by their number on the book's
 // 1992 map (data/book.json). Only people whose dates, or a clearance file of 1987-92, put
 // them in the city in 1986. They say no words in the model: their facts and hours come from

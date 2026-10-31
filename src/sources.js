@@ -10,7 +10,6 @@ const HANSARD = GH('legco-hansard-1986-1993', 'LegCo Hansard');
 const WSJ = GH('wsj-kwc-2014', 'WSJ 2014');
 const HK01 = GH('hk01-kaifong-series-2016', 'HK01 2016');
 const WEB = GH('retrospective-testimony-web', 'HK01 2024, SCMP 2013 and 2018, M+ audio guide');
-const PRESS = GH('press-articles-1959-1992', 'Baltimore Sun 1992');
 const LCSD = A('https://www.lcsd.gov.hk/en/parks/kwcp/historical.html', 'LCSD');
 const ZHWP = A('https://zh.wikipedia.org/wiki/九龍寨城', 'ZH Wikipedia');
 const BOOK = GH('city-of-darkness-revisited', 'City of Darkness Revisited (2014)');
@@ -18,10 +17,10 @@ const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 16
 
 export const SOURCES_HTML = `
 <p>One ordinary week in the city at its height: Tuesday 16 to Monday 22 December 1986, the
-day of 冬至 (the winter solstice). Nine real people appear with their own recorded words,
-marked REAL PERSON. Sixteen more people of City of Darkness Revisited work at their places and
-say no words. Every other person is a composite. A detail that no source records is marked
-inferred.</p>
+day of 冬至 (the winter solstice). Nine real people have the mark REAL PERSON. Point at one of
+them to see their facts and one recorded quote, with the source of each. Sixteen more people
+of City of Darkness Revisited work at their places and say no words. Every other person is a
+composite. A detail that no source records is marked inferred.</p>
 
 <h4>From primary sources</h4>
 <ul>
@@ -31,8 +30,8 @@ inferred.</p>
     each plot as a polygon with straight walls, not as grid steps.</li>
   <li><span class="st ok">SHOPS</span>459 premises with street, house number, floor, name and trade, from the
     titles of the clearance files of 1987–92 (${GRS}). The signs carry these names.</li>
-  <li><span class="st ok">TRADES</span>The Kai Fong Association counted 645 shops, workshops and clinics in 1983,
-    97 of them dentists (charted in ${WSJ}).</li>
+  <li><span class="st ok">TRADES</span>The Kai Fong Association, set up on 1 May 1963 (${BOOK}, p178), counted 645
+    shops, workshops and clinics in 1983, 97 of them dentists (charted in ${WSJ}).</li>
   <li><span class="st ok">BOOK</span>${BOOK}, by Greg Girard and Ian Lambot: the street names Tai Chang St,
     Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbered places of its 1992 map
     (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
@@ -80,12 +79,9 @@ inferred.</p>
     water from the one standpipe (p108); the Salvation Army kindergarten (p300); children who wrap candy after
     school (p77); tea and TV at the Old People's Centre, and worship on Sunday (pp305–306); whole families on the roofs
     in the early evening, with the grandmothers minding the children while supper cooks below (p322).</li>
-  <li><span class="st ok">STORY</span>The story's scenes from ${BOOK}: the postman's round from Lo Yan Street
-    (pp145–146), the one standpipe on Tai Chang Street (pp107–108), the Kai Fong Association, set up on 1 May 1963
-    (p178), the pigeons in the mid-afternoon lull (p321) and the families on the roofs at dusk (p322). The scenes
-    quote the book's captions and the postman's own words (p149, 2014 edition).</li>
-  <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB}, ${WSJ} and ${PRESS}.
-    Most of it was recorded long after 1986, thus each quote has the tag "retrospective" and its year.</li>
+  <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB} and ${WSJ}, and the
+    postman's own words (${BOOK}, p149, 2014 edition). Most of it was recorded long after 1986, thus each quote
+    has the tag "retrospective" and its year.</li>
   <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at
     6–7 a.m. and to 3/F–4/F at 8–9 a.m. (林羅平, HK01 2024); about 70 wells (Gordon Jones, WSJ 2014);
     eight Government standpipes in 1987, and "Only one of these was located within the City", on Tai Chang
@@ -161,9 +157,12 @@ inferred.</p>
     and what hangs behind each window (curtains, blinds, newspaper); and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
     move.</li>
-  <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from a 1986 traffic figure that is not checked.
-    From 14:25 to 16:40 the landings are about 20 minutes apart, for the lull that the pigeon breeder waited for
-    (p321). No timetable gives that lull.</li>
+  <li><span class="st prov">FLIGHTS</span>Landing times: about 89 a day, from 64,874 aircraft movements in 1986, and
+    none from midnight to 06:30, the night curfew. Both come from search extracts of the government's figures
+    that are not checked, and the curfew has no date (<code>primary-sources/README.md</code>). From 14:25 to 16:40
+    the landings are about 20 minutes apart, for the lull that the pigeon breeder waited for (p321). No timetable
+    gives these times. Every landing comes in on runway 13, over the city; no source gives the runway in use that
+    week.</li>
   <li><span class="st prov">FLOCK</span>The 34 birds that circle over the pigeon breeder's roof while he flies them, and
     their size, larger than a real bird so that the flock shows. The book gives no count.</li>
   <li><span class="st prov">POST</span>The hours of the postman's round: sorting from 7:00, Lo Yan Street from 8:20,
@@ -189,8 +188,7 @@ each sound, and the app has no recordings.</p>
     pp148–149); "when we heard the sound of water dripping" (Tam Sau-kuen, ${WSJ}).</li>
   <li><span class="st ok">PLANE</span>An airliner swells and fades as it passes on the approach to Kai Tak, at the
     landing times of the model. The real noise stopped all talk (林財銳, the tailor across the road, HK01 2022).
-    The model plays it soft. It plays at most about one landing each minute, but a story scene always gets its
-    plane.</li>
+    The model plays it soft. It plays at most about one landing each minute.</li>
   <li><span class="st ok">PIGEONS</span>Chan Kwan Leung whistled before he fed his pigeons (${BOOK}, p320). He flew
     them "usually in mid-afternoon when there was a lull in the number of landings at Kai Tak" (p321). Each day
     the model plays his whistle and the wings in the longest gap between landings from 14:30 to 16:30. In those

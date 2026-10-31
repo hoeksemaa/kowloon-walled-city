@@ -31,17 +31,14 @@ python3 serve.py 8173
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
-  each day (City of Darkness Revisited, pp339–340). Nine real people say only their own
-  recorded words. Sixteen people of the book work at their places, in the hours that the
-  book gives. Police, sweepers, refuse collectors, meter readers and patients come in from
-  outside. All the others are composites. They wear the December clothes of the book's
-  photos and carry sacks, buckets and baskets; a small gold marker shows each real person.
-  Each body has joints: people walk, climb the stair flights, sit at tables and machines,
-  work at stoves and benches, and sleep in beds or on mats under a quilt.
-- **Story.** Seven chapters, one for each day, with 45 scenes and a camera that follows each
-  one. Each scene names its source, or is marked inferred. From the book come the postman's round from Lo Yan
-  Street, the standpipe on Tai Chang Street, the pigeons in the mid-afternoon and the
-  families on the roofs at dusk.
+  each day (City of Darkness Revisited, pp339–340). Point at one of the nine real people to
+  see their facts and one recorded quote, with the source of each. Sixteen people of the book
+  work at their places, in the hours that the book gives. Police, sweepers, refuse
+  collectors, meter readers and patients come in from outside. All the others are
+  composites. They wear the December clothes of the book's photos and carry sacks, buckets
+  and baskets; a small gold marker shows each real person. Each body has joints: people
+  walk, climb the stair flights, sit at tables and machines, work at stoves and benches, and
+  sleep in beds or on mats under a quilt.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which

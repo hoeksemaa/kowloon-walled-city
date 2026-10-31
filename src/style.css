@@ -91,28 +91,6 @@ button { font: inherit; color: inherit; }
 #clk-stats { margin-top: 7px; font-size: 11px; color: var(--ink-2); line-height: 1.45; }
 #clk-stats b { color: var(--ink); font-weight: 600; }
 
-/* ---- story ---- */
-#story { left: 344px; bottom: 14px; width: 440px; padding: 0 0 8px; font-size: 12.5px; line-height: 1.5; }
-.st-head { display: flex; align-items: center; gap: 6px; border-bottom: 2px solid var(--panel-edge); background: var(--panel); padding: 3px 4px; }
-.st-head button { border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; font-size: 10px; width: 24px; height: 20px; padding: 0; color: var(--ink); }
-.st-head button.on { background: var(--label-bg); color: var(--label-ink); }
-.st-head button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-#st-chap { flex: 1; font-family: var(--pixel); font-size: 9px; letter-spacing: 0.04em; text-align: center; }
-#st-time { padding: 6px 12px 0; font-weight: 600; font-size: 13px; display: flex; gap: 6px; align-items: center; }
-#st-time .chip { font-family: var(--pixel); font-size: 8px; font-weight: 400; padding: 1px 4px 0; border: 1px solid var(--panel-edge); }
-#st-time .chip.real { background: #e8c14a; }
-#st-time .chip.inf { background: transparent; color: var(--ink-2); border-style: dashed; }
-#st-text { padding: 3px 12px 0; }
-#st-quote:empty { display: none; }
-#st-quote { margin: 7px 12px 0; padding: 5px 0 0 9px; border-left: 3px solid var(--accent); }
-#st-quote .q { font-size: 12.5px; }
-#st-quote .g { font-size: 11.5px; color: var(--ink-2); }
-#st-quote .w { font-size: 10.5px; color: var(--ink-2); margin-top: 3px; }
-#st-cite { padding: 4px 12px 0; font-size: 10.5px; color: var(--ink-2); }
-#st-cite:empty { display: none; }
-#tooltip .tt-real { font-family: var(--pixel); font-size: 8px; background: #e8c14a; display: inline-block; padding: 1px 4px 0; border: 1px solid var(--panel-edge); margin-bottom: 3px; }
-#tooltip .tt-book { font-family: var(--pixel); font-size: 7px; color: #6b4f12; }
-
 /* ---- legend ---- */
 #legend { right: 92px; bottom: 14px; padding: 8px 10px; font-size: 11px; min-width: 170px; }
 #legend:empty { display: none; }
@@ -133,6 +111,11 @@ button { font: inherit; color: inherit; }
 #tooltip .tt-k { color: var(--ink-2); }
 #tooltip .tt-r { font-size: 11.5px; }
 #tooltip .tt-r i { color: var(--ink-2); font-style: normal; }
+#tooltip .tt-real { font-family: var(--pixel); font-size: 8px; background: #e8c14a; display: inline-block; padding: 1px 4px 0; border: 1px solid var(--panel-edge); margin-bottom: 3px; }
+#tooltip .tt-book { font-family: var(--pixel); font-size: 7px; color: #6b4f12; }
+#tooltip .tt-q { margin: 5px 0 3px; padding: 1px 0 1px 8px; border-left: 3px solid var(--accent); font-size: 11.5px; }
+#tooltip .tt-q .g, #tooltip .tt-q .w { color: var(--ink-2); }
+#tooltip .tt-q .w { font-size: 10.5px; margin-top: 2px; }
 #tag, #cut-tag {
   position: fixed; pointer-events: none; display: none; white-space: nowrap;
   font-family: var(--mono); font-weight: 500; font-size: 12.5px; padding: 1px 6px;
@@ -191,7 +174,6 @@ button { font: inherit; color: inherit; }
   #title .t-sub, #hint { display: none; }
   #clock { width: calc(100vw - 110px); }
   #legend { display: none; }
-  #story { left: 14px; width: calc(100vw - 32px); bottom: 190px; max-height: 38vh; overflow: auto; }
 }
 
 /* Find them 尋人 (game.js) */

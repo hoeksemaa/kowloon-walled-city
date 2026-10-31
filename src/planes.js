@@ -4,11 +4,13 @@
 // at Kai Tak", a police officer posted there in 1987; the tailor across the road waited for
 // each plane to pass before he spoke, HK01 2016). The runway 13 final runs on a bearing of
 // about 134°, NE of the city, on a 3° glide path (CAD; the IGS approach of 1974).
-// APPROXIMATE: the times. About 65,000 aircraft movements in 1986 (an extract of the
-// government's annual report, not checked) give about 89 landings a day; here one about
-// every 11 minutes from 06:30 to 23:50 (a night curfew, hours not checked), fewer from 14:25
-// to 16:40. Each plane flies
-// on its own clock (see update), not at the speed of the simulation.
+// APPROXIMATE: the times. Search extracts of the government's figures give 64,874 aircraft
+// movements at Kai Tak in 1986, thus about 89 landings a day, and a night curfew "between
+// midnight and 6.30 am" (undated; neither checked, primary-sources/README.md). Here one landing
+// about every 11 minutes from 06:30 to 23:50, fewer from 14:25 to 16:40. The schedule is the
+// same each week; a seed for each day makes the minutes. INFERRED: every landing uses runway 13.
+// No source gives the runway in use that week. Each plane flies on its own clock (see
+// update), not at the speed of the simulation.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { mulberry32 } from './util.js';
@@ -16,6 +18,10 @@ import { mulberry32 } from './util.js';
 const SPEED = 75; // m/s, about 145 knots
 const GLIDE = Math.tan((3 * Math.PI) / 180);
 const S0 = -1500, S1 = 950; // metres along the path, 0 = abeam the city
+const OPEN = 6 * 60 + 30; // the curfew ends: the first landing
+const SHUT = 23 * 60 + 50; // the last landing, so that it is down before midnight
+const GAP = 11; // mean minutes between landings: about 89 a day
+const LULL = [865, 1000], LULL_GAP = 20; // 14:25–16:40, when the pigeons flew (p321)
 
 function model(stripe) {
   const white = new THREE.MeshLambertMaterial({ color: '#e9e7e1' });
@@ -57,7 +63,7 @@ function model(stripe) {
 
 export class Planes {
   // dir: unit direction of travel in the plan; p0: the point abeam the city; h0: height there.
-  constructor(scene, dir, p0, h0, extra = []) {
+  constructor(scene, dir, p0, h0) {
     this.dir = dir; this.p0 = p0; this.h0 = h0;
     this.pool = ['#b8261c', '#1f5f8c', '#1d6a47', '#8c6a1d'].map((c) => {
       const m = model(c);
@@ -65,16 +71,16 @@ export class Planes {
       scene.add(m);
       return m;
     });
-    this.extra = extra; // minutes of the day with a landing for the story
     this.cache = new Map();
   }
+  // The minutes of the day's landings, from the end of the curfew to the last landing, each
+  // gap within 3 minutes of its mean. A lull in mid-afternoon, when the pigeons flew (p321;
+  // INFERRED from the caption).
   times(day) {
     if (this.cache.has(day)) return this.cache.get(day);
     const rng = mulberry32(5150 + day);
     const t = [];
-    // A lull in the landings in mid-afternoon, when the pigeons flew (p321; INFERRED from the caption).
-    for (let m = 390 + rng() * 6; m < 1430; m += (m > 865 && m < 1000 ? 17 : 8) + rng() * 6) t.push(m);
-    for (const m of this.extra) t.push(m);
+    for (let m = OPEN + rng() * 6; m < SHUT; m += (m > LULL[0] && m < LULL[1] ? LULL_GAP : GAP) - 3 + rng() * 6) t.push(m);
     this.cache.set(day, t);
     return t;
   }
@@ -96,9 +102,5 @@ export class Planes {
       m.position.set(x, y, z);
       m.lookAt(x + this.dir[0] * 100, y - 100 * GLIDE, z + this.dir[1] * 100);
     });
-  }
-  // The first plane in the air after `minute`, for the camera: [x, y, z] at abeam.
-  get abeam() {
-    return [this.p0[0], this.h0, this.p0[1]];
   }
 }
