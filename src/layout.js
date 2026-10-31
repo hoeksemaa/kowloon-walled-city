@@ -19,7 +19,7 @@ export const STOREY = 3.05;
 // "some 300 individual buildings, each rising up to a possible 15 storeys" (City of Darkness
 // Revisited, p340).
 export const MAX_FLOORS = 15;
-export const MARGIN = 18; // metres of street around the city, on the plinth
+export const MARGIN = 18; // metres of street around the city, on the street plate
 
 // Render and paint, sRGB, measured in the photos of City of Darkness Revisited: cream render
 // (pp61, 87), warm beige (p13), ochre (p97), grey concrete (pp143, 327), duck-egg blue (p60),
@@ -416,7 +416,8 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     else if (owner[k] >= 0) cost[k] = buildings[owner[k]].kind === 'yamen' ? 3 : 6;
   }
 
-  // People who leave the city walk to the edge of the plinth and vanish.
+  // People who leave the city walk to an exit at the edge of the street plate, where they fade
+  // out (figures.js).
   const away = [];
   for (const f of [0.22, 0.5, 0.78]) { away.push(Math.round(f * (W - 1))); away.push((D - 1) * W + Math.round(f * (W - 1))); }
   for (const f of [0.33, 0.66]) { away.push(Math.round(f * (D - 1)) * W); away.push(Math.round(f * (D - 1)) * W + W - 1); }
