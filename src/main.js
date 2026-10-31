@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { unitAt, unitName } from './floorplan.js';
-import { buildLevels, buildPlan, makeBuildingMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
+import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -123,6 +123,13 @@ async function init() {
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = makeBuildingDepth(mat, shared);
     group.add(mesh);
+    if (d.cutout) {
+      // the see-through cages, plants and pipes (cityMesh.js)
+      const cut = new THREE.Mesh(d.cutout, makeCutoutMaterial(mat, shared));
+      cut.castShadow = cut.receiveShadow = true;
+      cut.customDepthMaterial = mesh.customDepthMaterial;
+      group.add(cut);
+    }
     let signs = null;
     if (d.signs) {
       signs = new THREE.Mesh(d.signs, signMat);

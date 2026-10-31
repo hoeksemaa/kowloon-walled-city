@@ -8,4 +8,7 @@ export const K = {
   well: 14, // the walls of a stair well; the plan draws them on the cut storey
   furn: 15, // furniture and machines, on the cut storey only
   iwall: 16, // the faces of the walls inside a storey, on the cut storey only
+  thing: 17, // pots, plants, boxes and bird cages kept in the window cages (facades.js)
+  pipe: 18, // drain pipes and bundles of water pipes down the outer walls (facades.js)
+  stain: 19, // a water stain on a wall, under an air-conditioner; it casts no shadow
 };
