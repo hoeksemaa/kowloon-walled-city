@@ -19,8 +19,9 @@ const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 16
 export const SOURCES_HTML = `
 <p>One ordinary week in the city at its height: Tuesday 16 to Monday 22 December 1986, the
 day of 冬至 (the winter solstice). Nine real people appear with their own recorded words,
-marked REAL PERSON. Every other person is a composite. A detail that no source records is
-marked inferred.</p>
+marked REAL PERSON. Sixteen more people of City of Darkness Revisited work at their places and
+say no words. Every other person is a composite. A detail that no source records is marked
+inferred.</p>
 
 <h4>From primary sources</h4>
 <ul>
@@ -67,16 +68,22 @@ marked inferred.</p>
     Kong Road Post Office. His round started at a store on Lo Yan Street. He worked one north–south lane, then the
     side alleys; he climbed one stair, crossed the roofs by ladders and windows, and went down another. He filled
     the postbox walls, met some residents at 4/F or 5/F and delivered outside the City for part of the day
-    (${BOOK}, pp145–146). He wore a navy hat against "the constant dripping" (pp148–149) and carried a brown
-    canvas bag (p144). An 8-hour shift (WSJ, 2014).</li>
+    (${BOOK}, pp145–146). He was a postman in the City "From 1979 to 1989" (p145), or from 1979 to 1991 on an
+    8-hour shift (WSJ, 2014); both include 1986. A hat was "standard issue against the constant dripping in the
+    alleyways" (p149). The navy hat and the canvas bag in the model are those of postman Lui Man Sang in the
+    book's photos (pp144, 148): the model has one postman only.</li>
   <li><span class="st ok">FIND THEM</span>The game 尋人 has three cases: the postman, the pigeon breeder and the noodle
     maker. Each Who and How hint quotes ${BOOK}, with its page.</li>
   <li><span class="st ok">ROUTINES</span>From ${BOOK}: police on the beat, two to each beat, some of it on the roofs
     (pp251, 283); refuse collectors on Tai Chang Street at 4 a.m. (p93); street sweepers with their buckets (p104);
     meter readers with torches (p98); patients from outside at the dentists and doctors on the outer roads (p242);
     water from the one standpipe (p108); the Salvation Army kindergarten (p300); children who wrap candy after
-    school (p77); tea and TV at the Old People's Centre, and worship on Sunday (pp305–306); people on the roofs
-    in the early evening (p322).</li>
+    school (p77); tea and TV at the Old People's Centre, and worship on Sunday (pp305–306); whole families on the roofs
+    in the early evening, with the grandmothers minding the children while supper cooks below (p322).</li>
+  <li><span class="st ok">STORY</span>The story's scenes from ${BOOK}: the postman's round from Lo Yan Street
+    (pp145–146), the one standpipe on Tai Chang Street (pp107–108), the Kai Fong Association, set up on 1 May 1963
+    (p178), the pigeons in the mid-afternoon lull (p321) and the families on the roofs at dusk (p322). The scenes
+    quote the book's captions and the postman's own words (p149, 2014 edition).</li>
   <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB}, ${WSJ} and ${PRESS}.
     Most of it was recorded long after 1986, thus each quote has the tag "retrospective" and its year.</li>
   <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at

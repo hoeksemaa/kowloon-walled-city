@@ -154,7 +154,7 @@ A FIND button opens three cases. The model runs as usual, and you can play a cas
 ### The cases
 
 1. **The postman, Lam Po Chun.**
-   - Lam wears a navy hat against "the constant dripping" (pp148–149) and carries a brown canvas bag (p144). The case has one postman only, with no look-alike (John, 2026-10-31).
+   - A hat was "standard issue against the constant dripping in the alleyways" (p149). The photos on pp144 and 148 show postman Lui Man Sang, with a navy hat and a brown canvas bag. The case has one postman only, with no look-alike (John, 2026-10-31), thus Lam wears that hat and bag (INFERRED).
    - Lam "had a small moustache and was nicknamed by the locals 'hu xu zi' (beardie), or postman Ah-Po" (p146).
    - His day (the book gives no times; WSJ gives an 8-hour shift, so the times are INFERRED):
      - sort the mail at the Lung Kong Road Post Office, outside the City (p146);
@@ -209,7 +209,7 @@ Each case has five hints. Each hint is stronger than the one before, and each on
 | 5 | Visual style | medium | merged (#16) |
 | 6 | How people look | medium | merged (#17) |
 | 7 | The mystery game | medium | merged (#18) |
-| 8 | Story, sources, README | small |  |
+| 8 | Story, sources, README | small | merged (#19) |
 
 PR 5 does not depend on PRs 2–4, so it can go in parallel. The game needs PRs 3, 4 and 6.
 

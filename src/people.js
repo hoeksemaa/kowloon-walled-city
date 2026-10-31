@@ -488,7 +488,9 @@ function makeSchedule(a, L, rng, dow) {
       if (!sun && rng() < 0.35) { at(J(H(14, 30), 30), yamen(), 'tea and TV at the Old People’s Centre in the Yamen (pp305–306)'); at(J(H(17, 15), 30), home, 'resting'); }
       else if (sun && rng() < 0.2) { at(J(H(10, 15), 10), yamen(), 'Sunday worship at the Old People’s Centre (p305)'); at(J(H(11, 40), 15), home, 'resting'); }
       if (dz) { dongzhi(18); break; }
-      if (rng() < 0.1) { at(J(H(17, 55), 5), roof(), 'on the roof in the early evening (p322)'); at(J(H(18, 50), 10), home, 'resting'); }
+      // "A grandmother would keep her eye on her own grandchildren as well as the children of her
+      // neighbours, while her daughter prepared supper" (p322).
+      if (rng() < 0.3) { at(J(H(17, 35), 10), roof(), 'on the roof in the early evening, minding the children (p322)'); at(J(H(18, 45), 10), home, 'supper'); }
       at(J(H(21, 0), 40), home, 'asleep');
       break;
     }

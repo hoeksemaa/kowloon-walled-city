@@ -16,25 +16,30 @@ python3 serve.py 8173
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 311
   towers. The heights on the south face come from Lambot's 1990 south elevation.
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
-  types. The home floors hold the book's 8,800 flats. Cut a storey (the floor list on the
-  right) to see the plan, and point at a unit to see its name and size.
+  types. The model has 261 stairs, and its home floors hold 8,783 flats, against the book's
+  8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
+  see its name and size.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down
   the stair. They cross to other buildings through links and bridges and over the roofs,
-  or go down to the lanes, whichever is quicker.
+  or go down to the lanes, whichever is quicker. The network has 596 links between towers,
+  36 bridges over lanes and 248 roof crossings.
 - **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
   the tubes; at night the windows are blue-white and Kowloon beyond is sodium amber.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
-- **People.** 28,200 residents in 8,800 flats, and 4,800 workers who come in from outside
+- **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
   each day (City of Darkness Revisited, pp339–340). Nine real people say only their own
   recorded words. Sixteen people of the book work at their places, in the hours that the
   book gives. Police, sweepers, refuse collectors, meter readers and patients come in from
   outside. All the others are composites. They wear the December clothes of the book's
   photos and carry sacks, buckets and baskets; a small gold marker shows each real person.
-- **Story.** Seven chapters, one for each day, with a camera that follows each scene.
+- **Story.** Seven chapters, one for each day, with 45 scenes and a camera that follows each
+  one. Each scene names its source, or is marked inferred. From the book come the postman's round from Lo Yan
+  Street, the standpipe on Tai Chang Street, the pigeons in the mid-afternoon and the
+  families on the roofs at dusk.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
