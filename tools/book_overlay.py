@@ -16,7 +16,8 @@ Method. Each scan is fitted to the plot mask of data/plan.json with a homography
 ECC on blurred masks, from four corner points read by hand). The figure-ground plan is cut
 into buildings by its shades and outlines. Each plot then votes for the 1987 building
 under most of its cells. Touching plots with the same building, each with at least
-SHARE of its cells on it, join into one tower. The map's discs are found by template
+SHARE of its cells on it, join into one tower. Then the towers checked by eye
+(TOWERS_BY_EYE) replace the votes for their plots. The map's discs are found by template
 match near the places read by eye, and two are set by hand.
 """
 import json
@@ -32,7 +33,42 @@ BOOK = os.path.join(REPO, 'primary-sources/city-of-darkness-revisited/local')
 EX = os.path.join(BOOK, 'extracts')
 PREVIEW = os.path.join(BOOK, 'overlay')
 S = 4  # px per plan cell in the fit
-SHARE = 0.6  # 0.6 gives 296 towers; the book gives "around 300" (p134, p340)
+SHARE = 0.6  # the votes give 311 towers, and TOWERS_BY_EYE then 286; the book gives "around 300" (p134, p340)
+
+# Towers checked by eye: the plots and the 1987 plan drawn together at 14-24 px per cell, tile by
+# tile. Each entry is one building of the 1987 plan. Its plots become one tower, and they leave
+# the towers that the votes gave them. In the east half the fit is off by up to 4 m ("fit off"):
+# there the entries follow the plan after a local shift that puts the lanes of the two plans
+# on each other. A tower only joins plots that touch. Yamen and named plots stay as they are.
+TOWERS_BY_EYE = [
+    ([6, 7, 8], 'one mid-grey building; 8 is its east strip'),
+    ([18, 24, 26], 'one light building up to Tung Tau Tsuen Road; 18 is its north strip'),
+    ([52, 63], 'one mid-grey building, with no outline between the plots'),
+    ([58, 90, 108], 'one long white building; 108 is its south end'),
+    ([71, 86], 'one light-grey strip building'),
+    ([107, 110], 'one white building'),
+    ([114, 115], 'one mid-grey building'),
+    ([116, 125], 'one white building'),
+    ([118, 124, 129, 134], 'one mid-grey building; 129 is its east end'),
+    ([135, 175, 189], 'one dark building; 189 is its south end'),
+    ([181, 200, 215, 219], 'one mid-grey building; 219 is its west strip (fit off 4 m)'),
+    ([222, 230, 233, 236], 'one light-grey building; 236 is its west strip; most of 242 is past the 1987 edge (fit off 4 m)'),
+    ([247, 275], 'one dark building (fit off 3 m)'),
+    ([251, 267, 276, 291, 300], 'one light L-shaped building (fit off 3 m)'),
+    ([252, 258, 268, 269], 'one white building; 268 is its west corner (fit off 3 m)'),
+    ([256, 262], 'the south wing of the L-shaped building of 228, 229 and 232; a lane of the traced plan cuts it off'),
+    ([274, 293], 'one mid-grey building (fit off 3 m)'),
+    ([278, 308], 'one mid-grey building'),
+    ([280, 285, 290], 'one dark L-shaped building; 290 is its west end (fit off 3 m)'),
+    ([309, 313, 322, 326], 'one white building; 309 is its north-west corner'),
+    ([323, 324, 350], 'one mid-grey building (fit off 4 m)'),
+    ([339, 342], 'one mid-grey building'),
+    ([340, 367], 'one dark building'),
+    ([357, 373], 'one dark building'),
+    ([388, 389, 407], 'one white building; 405 beside it is a small dark building'),
+    ([400, 412], 'one dark building'),
+    ([419, 423], 'one mid-grey building'),
+]
 
 ALPH = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
 
@@ -180,15 +216,31 @@ def main():
             c = parent[c]
         return c
     ok = {c for c in votes if best[c] > 0 and share[c] >= SHARE and c not in keep}
+    touch = set()
     for a, b in ((code[:, :-1], code[:, 1:]), (code[:-1, :], code[1:, :])):
         m = (a != b) & (a >= 4) & (b >= 4)
-        for p, q in set(zip(a[m].tolist(), b[m].tolist())):
-            if p in ok and q in ok and best[p] == best[q]:
-                parent[find(p)] = find(q)
+        touch |= set(zip(a[m].tolist(), b[m].tolist()))
+    for p, q in touch:
+        if p in ok and q in ok and best[p] == best[q]:
+            parent[find(p)] = find(q)
     groups = defaultdict(list)
     for c in votes:
         groups[find(c)].append(int(c))
-    towers = sorted(sorted(v) for v in groups.values())
+    # The towers checked by eye replace the votes for their plots; the rest of a voted tower stays one.
+    by_eye = [t for t, _ in TOWERS_BY_EYE]
+    fixed = [c for t in by_eye for c in t]
+    assert len(fixed) == len(set(fixed)) and set(fixed) <= set(votes) and not set(fixed) & keep
+    towers = [t for t in ([c for c in g if c not in fixed] for g in groups.values()) if t] + by_eye
+    for t in towers:  # each tower is one piece
+        seen, todo = {t[0]}, [t[0]]
+        while todo:
+            p = todo.pop()
+            for q in t:
+                if q not in seen and ((p, q) in touch or (q, p) in touch):
+                    seen.add(q)
+                    todo.append(q)
+        assert len(seen) == len(t), t
+    towers = sorted(sorted(v) for v in towers)
     # Plots with no building in 1987 and no block on the 1992 map: low huts or open sheds.
     low = sorted(int(c) for c in votes if c not in keep and cover[c] / size[c] < 0.3 and orng[c] / size[c] < 0.35)
 

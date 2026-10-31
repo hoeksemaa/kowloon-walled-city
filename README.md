@@ -13,18 +13,19 @@ python3 serve.py 8173
 ## What is in the model
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
-  cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 311
-  towers. The heights on the south face come from Lambot's 1990 south elevation.
+  cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
+  towers (270 if the 17 Yamen halls count as one). A check by eye against that plan
+  changed 27 of them. The heights on the south face come from Lambot's 1990 south elevation.
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
-  types. The model has 261 stairs, and its home floors hold 8,783 flats, against the book's
+  types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
   see its name and size.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down
   the stair. They cross to other buildings through links and bridges and over the roofs,
-  or go down to the lanes, whichever is quicker. The network has 596 links between towers,
-  36 bridges over lanes and 248 roof crossings.
+  or go down to the lanes, whichever is quicker. The network has 560 links between towers,
+  36 bridges over lanes and 216 roof crossings.
 - **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
   the tubes; at night the windows are blue-white and Kowloon beyond is sodium amber.
