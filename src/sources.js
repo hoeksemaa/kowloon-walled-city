@@ -37,7 +37,9 @@ composite. A detail that no source records is marked inferred.</p>
     (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
     occupants" and "8800 separate apartments" in January 1987 (p340). The map and the 1987 figure-ground plan
     (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. The 1987 plan joins the 474
-    plots into 311 towers. Only numbers go into <code>data/</code>; no image from the book is in the app.</li>
+    plots into 286 towers. The fit is approximate (the masks overlap by 73%), thus the plots and the plan were
+    compared by eye, and 27 towers follow that check. Only numbers go into <code>data/</code>; no image from
+    the book is in the app.</li>
   <li><span class="st ok">STAIRS</span>Suenn Ho's stair types (${BOOK}, pp138–139): a stair in the centre or at the
     side, a corridor with a stair at each end, and stairs that two or three buildings share.</li>
   <li><span class="st ok">LINKS</span>"the upper-level walkways connecting different buildings" (Chan Cheung-chuen, M+ audio
