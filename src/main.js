@@ -9,6 +9,8 @@ import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
 import { Flock } from './figures.js';
 import { Crowd } from './crowd.js';
+import { Post } from './post.js';
+import { Lamps } from './lamps.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
@@ -58,6 +60,7 @@ const scene = new THREE.Scene();
 
 const VIEW_H = 250;
 const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 1, 6000);
+const post = new Post(renderer, scene, camera);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 controls.dampingFactor = 0.09;
@@ -85,9 +88,10 @@ const shared = {
 };
 // uMarkers: the gold marker over each real person, shown in the story (people.js). uWalk and
 // uIdle: the clocks of the steps and of the other moves (figures.js).
-const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 } };
+const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
+const lamps = new Lamps(shared.uNight);
 const unitRes = new Map();
 const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 const sound = new Sound(); // off until the user turns it on
@@ -184,7 +188,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU, post };
   requestAnimationFrame(frame);
 }
 
@@ -260,9 +264,11 @@ function setCut(c) {
   }
   if (cutRing.parent) cutRing.parent.remove(cutRing);
   people.setSpots(-1, []);
+  lamps.set(-1, []);
   if (c >= 0) {
     const p = buildPlan(L, c);
     people.setSpots(c, p.spots);
+    lamps.set(c, p.lamps, levels[c].group);
     const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = levels[c].mesh.customDepthMaterial;
@@ -788,6 +794,7 @@ function updateClock() {
 function resize() {
   const w = innerWidth, h = innerHeight, a = w / h;
   renderer.setSize(w, h);
+  post.setSize(w, h);
   camera.left = (-VIEW_H * a) / 2; camera.right = (VIEW_H * a) / 2;
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
@@ -951,6 +958,7 @@ function frame(now) {
   camera.updateMatrixWorld();
   peopleU.uPeopleScale.value = clamp(1.5 - 0.075 * camera.zoom, 1, 1.4);
   people.update(camera, state.cut, state.explode > 0.5, offsets);
+  lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
   updateLabels();
   updateTags();
@@ -958,7 +966,7 @@ function frame(now) {
   updatePins();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); }
-  renderer.render(scene, camera);
+  post.render(shared.uNight.value);
   requestAnimationFrame(frame);
 }
 

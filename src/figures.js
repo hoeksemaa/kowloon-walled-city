@@ -134,7 +134,7 @@ function plainFigure() {
 const RIG = /* glsl */ `
 attribute vec4 aP; attribute vec4 aM; attribute vec3 aC; attribute vec3 aB; attribute vec4 aL; attribute float aPart;
 uniform float uOff[16]; uniform float uPeopleScale; uniform float uMarkers; uniform float uWalk; uniform float uIdle;
-varying vec3 vAC;
+varying vec3 vAC; varying float vIn;
 vec3 turnY(vec3 v, float a) { float c = cos(a), s = sin(a); return vec3(c * v.x + s * v.z, v.y, -s * v.x + c * v.z); }
 // Swing about x: a positive angle swings a hanging limb forward (+z).
 vec3 fwdX(vec3 v, float a) { float c = cos(a), s = sin(a); return vec3(v.x, c * v.y + s * v.z, -s * v.y + c * v.z); }
@@ -146,7 +146,7 @@ vec3 rig(vec3 p, vec3 n, out vec3 nOut) {
   const float SHOY = ${J.shoY}, SHOX = ${J.shoX}, ELBY = ${J.elbY}, NECKY = ${J.neckY}, HEADY = ${J.headY};
   int part = int(aPart + 0.5);
   float hdg = aM.x, gait = aM.y, pose = mod(aM.z, 16.0), seed = aM.w;
-  bool furn = aM.z > 15.5;
+  bool furn = mod(aM.z, 32.0) > 15.5;
   float size = aL.x, prop = aL.y, real = mod(aL.z, 2.0), hat = floor(aL.z / 2.0);
   float t = uIdle + seed * 97.0;
   // hair: 0 and 3 short, 1 long, 2 a bun
@@ -344,10 +344,13 @@ vec3 transformed = rigP;
 vec3 col = paint();
 // a little darker low down and under the chin, for depth
 float y0 = position.y;
-vAC = int(aPart + 0.5) == 24 ? col : col * aL.w * (0.82 + 0.18 * smoothstep(0.0, 0.9, y0));`);
+vAC = int(aPart + 0.5) == 24 ? col : col * aL.w * (0.82 + 0.18 * smoothstep(0.0, 0.9, y0));
+vIn = aM.z > 31.5 ? 1.0 : 0.0;`);
     s.fragmentShader = s.fragmentShader
-      .replace('#include <common>', `#include <common>\nvarying vec3 vAC;`)
-      .replace('#include <color_fragment>', `#include <color_fragment>\ndiffuseColor.rgb *= vAC;`);
+      .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; uniform float uNight;`)
+      .replace('#include <color_fragment>', `#include <color_fragment>\ndiffuseColor.rgb *= vAC;`)
+      // at night, the bulbs of the rooms light the people indoors, and the tubes of the lanes the rest
+      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>\ntotalEmissiveRadiance += vAC * uNight * (0.1 + 0.34 * vIn);`);
   };
   m.customProgramCacheKey = () => (plain ? 'kwc-people-plain' : 'kwc-people');
   return m;

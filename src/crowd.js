@@ -12,6 +12,8 @@ import { figureGeometry, makeFigureMaterial, makeFigureDepth } from './figures.j
 const FINE_MAX = 4000; // with more people in view than this, the plain figures
 const SPOT_FOR = { [POSE.lie]: ['bed'], [POSE.sit]: ['seat', 'desk'], [POSE.desk]: ['desk', 'seat'], [POSE.work]: ['work'] };
 const SPOT_POSE = { bed: POSE.lie, seat: POSE.sit, desk: POSE.desk, work: POSE.work };
+// The packed aM.z (figures.js): the pose, + 16 if the furniture is the seat or the bed, + 32
+// indoors.
 
 export class Crowd {
   constructor(sim, L, uniforms) {
@@ -41,6 +43,7 @@ export class Crowd {
       return mesh;
     });
     this.claim = new Int32Array(n).fill(-1);
+    this.lit = new Set(); // the units of the cut storey with someone awake in them (lamps.js)
     this.setSpots(-1, []);
     this.frame = 0;
     this._m = new THREE.Matrix4();
@@ -107,6 +110,7 @@ export class Crowd {
     const spotsOn = cut >= 0 && !lifted && this.level === cut && this.spots.length > 0;
     this.frame++;
     for (let c = 0; c < this.count; c++) this.slot[this.ids[c]] = -1;
+    this.lit.clear();
     let c = 0;
     for (let i = 0; i < n; i++) {
       const o = i * 4, lv = P[o + 3];
@@ -122,12 +126,13 @@ export class Crowd {
       if (nx < -1.08 || nx > 1.08 || ny < -1.12 || ny > 1.12) continue;
       let X = x, Z = z, H = y, hd = M[o], pose = M[o + 2];
       if (spotsOn && M[o + 1] === 0 && !out && Math.abs(y - cut * STOREY) < 0.3) {
+        if (pose !== POSE.lie) { const key = this.unitKey(A[i], x, z); if (key >= 0) this.lit.add(key); }
         const s = this.spotFor(i, x, z, pose);
         if (s) { X = s.x; Z = s.z; H = y + s.y; hd = s.h; pose = SPOT_POSE[s.kind] + (s.seat ? 16 : 0); }
       }
       const q = c * 4, r = c * 3, i3 = i * 3;
       buf.aP[q] = X; buf.aP[q + 1] = Z; buf.aP[q + 2] = H; buf.aP[q + 3] = lv;
-      buf.aM[q] = hd; buf.aM[q + 1] = M[o + 1]; buf.aM[q + 2] = pose; buf.aM[q + 3] = M[o + 3];
+      buf.aM[q] = hd; buf.aM[q + 1] = M[o + 1]; buf.aM[q + 2] = pose + (out ? 0 : 32); buf.aM[q + 3] = M[o + 3];
       buf.aC[r] = sim.aC[i3]; buf.aC[r + 1] = sim.aC[i3 + 1]; buf.aC[r + 2] = sim.aC[i3 + 2];
       buf.aB[r] = sim.aB[i3]; buf.aB[r + 1] = sim.aB[i3 + 1]; buf.aB[r + 2] = sim.aB[i3 + 2];
       buf.aL[q] = sim.aL[o]; buf.aL[q + 1] = sim.aL[o + 1]; buf.aL[q + 2] = sim.aL[o + 2]; buf.aL[q + 3] = sim.aL[o + 3];
