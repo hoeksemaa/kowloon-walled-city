@@ -5,7 +5,7 @@
 // wall bases, the factory sites and named buildings (traced from the 1980s exhibit plan);
 // 459 premises with street, house number, floor, name and trade (GRS HKRS1255-3 titles,
 // parsed by tools/parse_grs.py); the storeys along the south face (Lambot's 1990 south
-// elevation, M+ 2017.412); the street names and the 40 places of the 1992 map in City of
+// elevation, M+ 2017.412); the street names and the 40 numbers of the 1992 map in City of
 // Darkness Revisited (data/book.json). APPROXIMATE: where on its street each premises sits
 // (the order follows the house numbers). INFERRED, and marked so: storeys away from the south face, and
 // the trade of a floor that no file records.
@@ -421,15 +421,17 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   for (const f of [0.22, 0.5, 0.78]) { away.push(Math.round(f * (W - 1))); away.push((D - 1) * W + Math.round(f * (W - 1))); }
   for (const f of [0.33, 0.66]) { away.push(Math.round(f * (D - 1)) * W); away.push(Math.round(f * (D - 1)) * W + W - 1); }
 
-  // The 40 numbered places of the 1992 map (City of Darkness Revisited, pp352-353), fitted to
-  // the plan by tools/book_overlay.py. APPROXIMATE: the map "cannot be considered entirely
-  // accurate" (p353), and for five places it disagrees with the address in the text.
-  const places = !book ? [] : book.places.map((p) => {
+  // The 40 numbers of the 1992 map (City of Darkness Revisited, pp352-353), fitted to the plan
+  // by tools/book_overlay.py. APPROXIMATE: the map "cannot be considered entirely accurate"
+  // (p353). places: the 12 numbers that mark a place, each with its own number. mapPeople:
+  // the 33 numbers that name a person; for five of them the key also names a place.
+  const places = !book ? [] : book.places.filter((p) => p.place).map((p) => {
     const [i, j] = book.overlay.markers[p.n];
     return { ...p, k: (Math.floor(j) + MARGIN) * W + Math.floor(i) + MARGIN, x: x0 + MARGIN + i, z: z0 + MARGIN + j };
   });
+  const mapPeople = !book ? [] : book.places.filter((p) => p.place !== p.name);
 
-  return Object.assign(L, { cost, away, yard, yamenId, yamenCentre: yc, places });
+  return Object.assign(L, { cost, away, yard, yamenId, yamenCentre: yc, places, mapPeople });
 }
 
 // The plots along each street, in order. Tung Tau Tsuen Road, Lung Chun Road and Sai
@@ -625,7 +627,7 @@ function bookPlaces(L, book) {
       const name = p.grsNote && p.grsNote.split(',')[0];
       if (name && /^[A-Za-z][^:]*$/.test(name)) grs.nameEn = name;
     }
-    else (b.prem[f] ||= []).push({ nameEn: `${p.name}: ${p.what}`, trade: P.trade, book: p.n, page: p.page });
+    else (b.prem[f] ||= []).push({ nameEn: P.premises || '', trade: P.trade, book: p.n, page: p.page });
     b.prem[f].use = b.uses[f] = TRADE_USE[P.trade];
     if (b.inferred) delete b.inferred[f];
   }

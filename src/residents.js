@@ -168,8 +168,9 @@ export const REAL = [
 // 1992 map (data/book.json). Only people whose dates, or a clearance file of 1987-92, put
 // them in the city in 1986. They say no words in the model: their facts and hours come from
 // the book, which met them in about 1990, thus the hours are APPROXIMATE for 1986. trade: the
-// trade key of the clearance files (layout.js). home: where they lived, if the book says;
-// else the model puts a flat near the work (INFERRED).
+// trade key of the clearance files (layout.js). premises: the name of the work place in the
+// building box, where no clearance file names it; the box names no person. home: where they
+// lived, if the book says; else the model puts a flat near the work (INFERRED).
 // look: the clothes in the book's photo of them (about 1990), sRGB; hat 2 is a flat cap.
 //
 // open: the hours of each day, [from, to] in hours. days: 7 every day, 6 Monday to
@@ -177,20 +178,20 @@ export const REAL = [
 // hours are INFERRED from the trade. On 冬至 every place shuts at 18:00 (INFERRED).
 export const BOOK_PEOPLE = [
   { n: 1, sched: 'pigeons', roof: true, doing: 'with the pigeons on his rented roof', look: { top: '#1f1d1d', bottom: '#3c5a80' } }, // black polo, jeans (p321)
-  { n: 2, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making golf balls' },
-  { n: 3, trade: 'medicine', open: [[8, 23]], days: 7, page: 82, doing: 'at the herbal store', hours: '“officially we are open from 8am to 11pm”' },
-  { n: 4, trade: 'noodles', open: [[8, 17]], days: 6, page: 228, doing: 'making noodles', hours: 'from 8am, about nine hours' },
+  { n: 2, trade: 'factory', premises: 'golf-ball factory', open: [[8, 19]], days: 6, doing: 'making golf balls' },
+  { n: 3, trade: 'medicine', premises: 'herbal store', open: [[8, 23]], days: 7, page: 82, doing: 'at the herbal store', hours: '“officially we are open from 8am to 11pm”' },
+  { n: 4, trade: 'noodles', premises: 'noodle factory', open: [[8, 17]], days: 6, page: 228, doing: 'making noodles', hours: 'from 8am, about nine hours' },
   { n: 8, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making wooden rulers' },
   { n: 11, trade: 'cafe', open: [[9, 23.5]], days: 7, page: 57, doing: 'running the café', hours: 'from 9am to very late at night' },
   { n: 14, trade: 'noodles', open: [[6.5, 17.5]], days: 6, doing: 'making noodles', home: { above: true, text: 'the family flat above the factory (p170)' },
     look: { top: '#c9b79c', bottom: '#5a5754', hat: 2 } }, // a beige sweater and a grey flat cap dusted with flour (p171)
-  { n: 20, trade: 'store', open: [[7.5, 22]], days: 7, doing: 'minding the grocery' },
-  { n: 21, trade: 'textile', open: [[8, 19]], days: 6, doing: 'at the looms' },
+  { n: 20, trade: 'store', premises: 'grocery', open: [[7.5, 22]], days: 7, doing: 'minding the grocery' },
+  { n: 21, trade: 'textile', premises: 'weaving workshop', open: [[8, 19]], days: 6, doing: 'at the looms' },
   { n: 24, trade: 'store', open: [[8, 24]], days: 7, page: 93, doing: 'minding the store', busy: [17, 21], hours: '8am to midnight, busiest from 5 to 9pm' },
   { n: 25, trade: 'cakes', open: [[7, 21]], days: 6, page: 76, doing: 'making candy', late: [18, 'the wrapping goes on to 9pm'], hours: '7am to 6pm; the wrapping goes on to 9pm' },
-  { n: 32, trade: 'plastics', open: [[8, 18]], days: 6, rush: [1, 3], doing: 'making rubber plungers', hours: 'in a rush, also after dinner to 2 or 3am (p237)' },
-  { n: 33, trade: 'clinic', open: [[9, 13], [15.5, 20]], sun: [[9, 13]], days: 6, page: 187, doing: 'seeing patients', hours: '9 to 1 and 3.30 to 8, Monday to Saturday; Sunday morning' },
+  { n: 32, trade: 'plastics', premises: 'rubber-plunger workshop', open: [[8, 18]], days: 6, rush: [1, 3], doing: 'making rubber plungers', hours: 'in a rush, also after dinner to 2 or 3am (p237)' },
+  { n: 33, trade: 'clinic', premises: 'doctor’s clinic', open: [[9, 13], [15.5, 20]], sun: [[9, 13]], days: 6, page: 187, doing: 'seeing patients', hours: '9 to 1 and 3.30 to 8, Monday to Saturday; Sunday morning' },
   { n: 35, trade: 'bonesetter', open: [[9, 19]], days: 6, doing: 'setting bones' },
-  { n: 36, trade: 'dentist', open: [[10, 19]], days: 6, doing: 'at the dentist’s chair' },
-  { n: 39, trade: 'roastmeat', open: [[4, 6.25], [8, 14]], days: 7, page: 286, doing: 'roasting meat', between: 'selling at the market', hours: 'from 4am; at the market 6.15 to 8am' },
+  { n: 36, trade: 'dentist', premises: 'dental clinic', open: [[10, 19]], days: 6, doing: 'at the dentist’s chair' },
+  { n: 39, trade: 'roastmeat', premises: 'roast-meat workshop', open: [[4, 6.25], [8, 14]], days: 7, page: 286, doing: 'roasting meat', between: 'selling at the market', hours: 'from 4am; at the market 6.15 to 8am' },
 ];

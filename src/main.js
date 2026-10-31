@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
-import { unitAt, unitName } from './floorplan.js';
+import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
 import { DIM, withDim, dimOf } from './dim.js';
@@ -17,7 +17,7 @@ import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH, groundMat } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
-import { SOURCES_HTML } from './sources.js';
+import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
 import { Sound } from './sound.js';
 import { WEEK, DONGZHI } from './people.js';
@@ -99,7 +99,6 @@ const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox });
 const unitRes = new Map();
-const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 const sound = new Sound(); // off until the user turns it on
 
 async function init() {
@@ -208,7 +207,6 @@ async function init() {
   residents = new Map();
   for (const a of agents) if (a.home.type === 'in') residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
   for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
-  for (const a of agents) if (a.real && a.real.home && a.real.home.size && a.home.m !== undefined) unitReal.set(`${a.home.b}:${a.home.f}:${a.home.m}`, a.real);
 
   buildUI();
   buildStreetTags();
@@ -378,7 +376,7 @@ function pickAgent() {
 
 // ---- UI -------------------------------------------------------------------------------------------
 function buildUI() {
-  $('src-body').innerHTML = SOURCES_HTML;
+  $('src-body').innerHTML = sourcesHtml(L.mapPeople.filter((p) => !L.book[p.n]));
   const tool = (id, on, fn) => {
     const el = $(id);
     el.onclick = () => {
@@ -618,10 +616,12 @@ function buildingTooltip(b, k) {
     <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
 }
 
-// One premises of a floor: its names and trade, and the page of the book that names it.
+// One premises of a floor: its names and trade, and the page of the book that names it. The
+// trade is left out when the name says it.
 function premLine(p) {
   const book = p.book ? ` · <span class="tt-book">BOOK p${p.page}</span>${p.inferred ? ' (INFERRED for 1986)' : ''}` : '';
-  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i>${book}`;
+  const trade = TRADE_LABEL[p.trade] || '';
+  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${(p.nameEn || '').toLowerCase().includes(trade.toLowerCase()) ? '' : trade}</i>${book}`;
 }
 
 // A unit of the cut storey: its name, size, and who lives or works there.
@@ -645,11 +645,9 @@ function unitTooltip(bid, f, cell) {
   const prem = (B.prem[f] || []).slice(0, 3).map((p) => `<div class="tt-r">${premLine(p)}</div>`).join('')
     + ((B.prem[f] || []).some((p) => p.mezz) ? '<div class="tt-s">the files name a mezzanine (M/F) on this floor</div>' : '');
   const flatNote = P.kind === 'home' && !note ? '<div class="tt-s">cubicles and bed spaces after the 1987 survey plan of a flat (p340), inferred</div>' : '';
-  const R = P.kind === 'home' && unitReal.get(`${bid}:${f}:${u.id}`);
-  const recorded = R ? `<div class="tt-real">REAL PERSON</div><div class="tt-r">The home of ${R.name}: ${R.home.size}. The model draws this flat smaller.</div>` : '';
   return `<div class="tt-h">${unitName(B, f, u).toUpperCase()}</div><div>${buildingName(B)}</div>${rows}
     ${prem ? `<div class="tt-s">on this floor, in the clearance files or the book:</div>${prem}` : ''}
-    ${recorded}${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
+    ${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
 }
 
 function agentTooltip(id) {
@@ -657,11 +655,11 @@ function agentTooltip(id) {
   const d = sim.describe(a);
   const head = `<div class="tt-h">${d.title}${d.age ? ` · ${d.age}` : ''}</div><div>${d.role}</div>
     <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
-    <div><span class="tt-k">home</span> ${d.home}</div>`;
+    <div><span class="tt-k">home</span> ${d.home}</div>${homeSize(a)}`;
   if (!a.real) return `${head}<div class="tt-s">${a.home.type === 'in' ? 'a composite resident' : 'a composite person from outside the city'}, not a real person · click to follow</div>`;
   const facts = a.real.facts.slice(0, 2).map(([t, src]) => `<div class="tt-r">${t} <i>${src}</i></div>`).join('');
   if (a.real.book)
-    return `<div class="tt-real">REAL PERSON · CITY OF DARKNESS REVISITED</div>${head}${facts}
+    return `<div class="tt-real">REAL PERSON · CITY OF DARKNESS REVISITED</div>${head}${facts}${mapFacts(L.bookPlaces[a.real.book])}
     <div class="tt-s">met by the book in about 1990 · says no words in the model · hours approximate for 1986 · click to follow</div>`;
   // The first recorded quote, with its source and its tag. A Chinese quote carries its gloss in [].
   const q = a.real.quotes[0];
@@ -671,12 +669,29 @@ function agentTooltip(id) {
     <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
 }
 
+// The size of a real person's home that a source records, and the size of the model's flat.
+function homeSize(a) {
+  const size = a.real && a.real.home && a.real.home.size;
+  const P = size && a.home.type === 'in' && planAt(L.buildings[a.home.b], a.home.f), u = P && P.units[a.home.m];
+  if (!u) return '';
+  const sqft = Math.round(u.area * 10.76), smaller = sqft < +(size.match(/\d+/) || [0])[0];
+  return `<div class="tt-r"><span class="tt-k">home size</span> ${size} recorded; the model’s flat is ${smaller ? 'smaller, ' : ''}about ${u.area} m² (${sqft} sq ft)</div>`;
+}
+
+// What the 1992 map says of a person of the book: the number, the words of the key and the
+// page. The map tool shows only places, thus the number of a person is here.
+function mapFacts(p) {
+  if (!p) return '';
+  return `<div class="tt-r"><span class="tt-k">1992 map</span> no. ${p.n}${p.key ? `, “${p.key}”` : ''}${p.page ? `, p${p.page}` : ''} <i>the key of the map, pp352–353</i></div>
+    ${p.conflict ? `<div class="tt-r"><span class="tt-k">map note</span> ${p.conflict} The model uses the address in the text.</div>` : ''}${p.note ? `<div class="tt-s">${p.note}</div>` : ''}`;
+}
+
 function updateHover() {
   if (!mouse.inside) return;
   const pin = pickPin();
   if (pin) {
     shared.uHi.value = NO_HI;
-    showTooltip(pinTooltip(pin));
+    showTooltip(placeCard(pin));
     return;
   }
   const id = pickAgent();
@@ -796,7 +811,8 @@ function updateStreetTags() {
   }
 }
 
-// The 40 numbered places of the 1992 map in City of Darkness Revisited (pp352-353).
+// The places of the 1992 map in City of Darkness Revisited (pp352-353), each with its own
+// number on the map. The numbers that name people are not here (L.mapPeople).
 let pins = [];
 function buildPins() {
   pins = L.places.map((p) => {
@@ -829,12 +845,13 @@ function pickPin() {
   }
   return best;
 }
-function pinTooltip(p) {
-  return `<div class="tt-h">${p.n} · ${p.name.toUpperCase()}</div><div>${p.what}</div>
+function placeCard(p) {
+  return `<div class="tt-h">${p.place.toUpperCase()}</div><div>no. ${p.n} on the 1992 map</div>
+    ${p.what.toLowerCase() !== p.place.toLowerCase() ? `<div>${p.what}</div>` : ''}
     ${p.where ? `<div><span class="tt-k">at</span> ${p.where}</div>` : ''}
     ${p.conflict ? `<div class="tt-r"><span class="tt-k">note</span> ${p.conflict}</div>` : ''}
     ${p.note ? `<div class="tt-s">${p.note}</div>` : ''}
-    <div class="tt-s">the 1992 map, City of Darkness Revisited pp352–353${p.page ? ` · text p${p.page}` : ''} · place approximate</div>`;
+    <div class="tt-s">City of Darkness Revisited pp352–353${p.page ? ` · text p${p.page}` : ''} · place approximate</div>`;
 }
 
 const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
