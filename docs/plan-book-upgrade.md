@@ -1,6 +1,6 @@
 # Plan: upgrade the model with *City of Darkness Revisited*
 
-Written 2026-10-30. Status: John approved PRs 1 and 2 (thus decision 4: yes). Decisions 1–3 are open. Page numbers are printed pages of the book.
+Written 2026-10-30. Status: PRs 1 and 2 are merged (#11, #12). On 2026-10-31 John answered decisions 1–3: yes to the head count, one postman with no look-alike, and sound now. Page numbers are printed pages of the book.
 
 ## Goal
 
@@ -52,6 +52,7 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
   - Add ladders where two roofs differ by one storey, and corridor windows with a stool under them (p145).
   - Make the roofs one walkable surface with steps.
 - **Routes.** Replace the ground-only route with a 3D network: alley grid, stairs, corridors, links and roofs. Then people cross the roofs and use the links, as the postmen did. For speed, I will route between towers on a small graph and use the grid only in the alleys.
+- **Moved to PR 5 (visual style).** The alley and ground-floor items below are visual. PR 3 builds the routes, links and roofs.
 - **Alleys.**
   - Narrow some lanes to 0.9 m ("no more than three feet across", p249).
   - Let the upper floors overhang the alleys (p131).
@@ -153,8 +154,8 @@ A FIND button opens three cases. The model runs as usual, and you can play a cas
 ### The cases
 
 1. **The postman, Lam Po Chun.**
-   - In 1986 two postmen served the City: Lui Man Sang and his apprentice, Lam (p146). Both wear a navy hat against "the constant dripping" (pp148–149) and carry a brown canvas bag (p144).
-   - Lam "had a small moustache and was nicknamed by the locals 'hu xu zi' (beardie), or postman Ah-Po" (p146). Lui looks like him, so you must tell them apart.
+   - Lam wears a navy hat against "the constant dripping" (pp148–149) and carries a brown canvas bag (p144). The case has one postman only, with no look-alike (John, 2026-10-31).
+   - Lam "had a small moustache and was nicknamed by the locals 'hu xu zi' (beardie), or postman Ah-Po" (p146).
    - His day (the book gives no times; WSJ gives an 8-hour shift, so the times are INFERRED):
      - sort the mail at the Lung Kong Road Post Office, outside the City (p146);
      - start at a store on Lo Yan Street (p146);
@@ -229,7 +230,7 @@ PR 5 does not depend on PRs 2–4, so it can go in parallel. The game needs PRs 
 
 ## Decisions for John
 
-1. **Head count:** 28,200 residents and about 4,800 day workers, in place of 33,000 residents. I recommend this, because two counts in the book support it.
-2. **Postman case:** Lam Po Chun, with Lui Man Sang as a look-alike. I recommend this.
-3. **Sound:** the model has none. Chan Kwan Leung whistled before he fed the pigeons (p320), and the planes were loud. I recommend a small sound layer later, in a separate PR.
+1. **Head count:** 28,200 residents and about 4,800 day workers, in place of 33,000 residents. **John: yes.** This goes into PR 4.
+2. **Postman case:** Lam Po Chun. **John: one postman only, no look-alike.** This goes into PR 7.
+3. **Sound:** the model has none. Chan Kwan Leung whistled before he fed the pigeons (p320), and the planes were loud. I recommend a small sound layer later, in a separate PR. **John: add it now; gentle, with occasional clear sounds.** It is a separate small PR.
 4. **Fewer, larger towers:** about 300–350 towers in place of 474 plots. This changes the look of the model. I recommend it.

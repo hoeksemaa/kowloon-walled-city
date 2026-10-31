@@ -140,6 +140,7 @@ export function buildLevels(L) {
         roofProps(M, L, b, ry, rng, ant, rinfo);
       }
     }
+    linksAt(M, L, k, rng);
     for (const s of signsAt[k]) emitSign(S, s, atlas.cell(s.text, s.style, s.font), C.white);
     if (k === 0) {
       for (const [rings, c] of [[L.ground.lane, C.alley], [L.ground.yard, C.yard], [L.ground.road, C.road]])
@@ -148,6 +149,33 @@ export function buildLevels(L) {
     levels.push({ k, geometry: M.geometry(), signs: S.nv ? S.geometry() : null, antennas: new Float32Array(ant) });
   }
   return { levels, signTexture: atlas.texture(), signCount: signs.length };
+}
+
+// Bridges over the lanes at storey k, and ladders up from roofs of k storeys to the next
+// roof (routes.js). A bridge is a closed passage of sheet metal and timber.
+const LINK_COL = { bridge: col('#5d5a50'), deck: col('#3f3d38'), ladder: col('#8b6b4a') };
+function linksAt(M, L, k, rng) {
+  const R = L.routes, B = L.buildings;
+  if (!R) return;
+  const y0 = k * STOREY;
+  for (const br of R.bridges) {
+    if (br.f !== k) continue;
+    const dx = br.pb.x - br.pa.x, dz = br.pb.z - br.pa.z, len = Math.hypot(dx, dz);
+    const t = [dx / len, dz / len], n = [-t[1], t[0]], info = [B[br.b].tower, k, K.cage, 1];
+    M.obox([br.pa.x, br.pa.z], t, n, -0.1, len + 0.1, -0.6, 0.6, y0, y0 + 0.2, LINK_COL.deck, info, true);
+    M.obox([br.pa.x, br.pa.z], t, n, -0.1, len + 0.1, -0.6, 0.6, y0 + 0.2, y0 + 2.3, LINK_COL.bridge, info, true);
+  }
+  for (const h of R.hops) {
+    const lo = B[L.owner[h.low]], hi = B[L.owner[h.high]];
+    if (lo.floors === hi.floors || lo.floors !== k) continue;
+    // Against the higher wall, on the lower roof.
+    let nx = L.cellX(h.low) - L.cellX(h.high), nz = L.cellZ(h.low) - L.cellZ(h.high);
+    const l = Math.hypot(nx, nz); nx /= l; nz /= l;
+    const O = [h.x, h.z], t = [-nz, nx], n = [nx, nz], info = [lo.tower, k, K.cage, 1];
+    const ya = k * STOREY, yb = ya + STOREY + 0.9;
+    for (const u of [-0.26, 0.2]) M.obox(O, t, n, u, u + 0.06, 0.12, 0.18, ya, yb, LINK_COL.ladder, info, true);
+    for (let y = ya + 0.3; y < yb - 0.1; y += 0.3) M.obox(O, t, n, -0.2, 0.2, 0.13, 0.17, y, y + 0.04, LINK_COL.ladder, info, true);
+  }
 }
 
 // A random point inside the footprint, at least m from its edges.
@@ -290,6 +318,16 @@ export function buildPlan(L, c) {
     for (const w of d.walls) emit(w, 0.07, CUT_H, part, black, true);
     for (const w of d.fine) emit(w, 0.035, CUT_H * 0.8, thin, part, false);
     for (const w of d.treads) emit(w, 0.02, 0.08, black, black, false);
+  }
+  // Doors through the walls between blocks: amber where they link two towers (routes.js).
+  const door = { inner: plate.corridor, link: col('#c9a35c') };
+  for (const d of (L.routes && L.routes.doorsAt[c]) || []) {
+    let nx = L.cellX(d.kc) - L.cellX(d.kb), nz = L.cellZ(d.kc) - L.cellZ(d.kb);
+    const l = Math.hypot(nx, nz); nx /= l; nz /= l;
+    const tx = -nz, tz = nx, x = d.pa.x, z = d.pa.z, y = yc + 0.012;
+    M.face([[x - tx * 0.45 - nx * 0.3, y, z - tz * 0.45 - nz * 0.3], [x + tx * 0.45 - nx * 0.3, y, z + tz * 0.45 - nz * 0.3],
+      [x + tx * 0.45 + nx * 0.3, y, z + tz * 0.45 + nz * 0.3], [x - tx * 0.45 + nx * 0.3, y, z - tz * 0.45 + nz * 0.3]],
+    [0, 1, 0], d.link ? door.link : door.inner, UV, [L.buildings[d.b].tower, c, K.plate, 1]);
   }
   const lg = new THREE.BufferGeometry();
   lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(lines), 3));

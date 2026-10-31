@@ -7,6 +7,7 @@ import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from 
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim, makePeopleMesh } from './people.js';
+import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
@@ -91,6 +92,7 @@ async function init() {
   book.overlay = overlay;
   site = buildSite(plan);
   L = buildLayout(site, plan, biz, book);
+  L.routes = buildRoutes(L);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
@@ -468,7 +470,8 @@ function renderLegend() {
     const uses = Object.keys(USE_LABEL).filter((u) => here.has(u));
     g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${uses
       .map((u) => `<div class="row"><span class="sq" style="background:${USE_COLORS[u]}"></span>${USE_LABEL[u]}</div>`)
-      .join('')}</div>`);
+      .join('')}<div class="row"><span class="sq" style="background:#d6d0c1"></span>corridor, door to the next block</div>
+      <div class="row"><span class="sq" style="background:#c9a35c"></span>link to the next building (place inferred)</div></div>`);
   }
   if (wires && wires.object.visible) {
     const seen = new Set();

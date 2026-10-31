@@ -40,6 +40,9 @@ marked inferred.</p>
     plots into 311 towers. Only numbers go into <code>data/</code>; no image from the book is in the app.</li>
   <li><span class="st ok">STAIRS</span>Suenn Ho's stair types (${BOOK}, pp138–139): a stair in the centre or at the
     side, a corridor with a stair at each end, and stairs that two or three buildings share.</li>
+  <li><span class="st ok">LINKS</span>"the upper-level walkways connecting different buildings" (Chan Cheung-chuen, M+ audio
+    guide); the postmen climbed one stair, crossed the roofs by ladders and windows, and went down another (${BOOK},
+    pp145–146); "The kids would go onto the roofs and leap from building to building" (Albert Ng, SCMP 2013).</li>
   <li><span class="st ok">FLATS</span>Two floors that the clearance survey drew in 1987 (p340): the 4/F flat of
     6 Sai Shing Road, measured on 9 Nov 1987, and a 5/F of 3 Cheung On Lane where three stairs meet. The
     model draws the rooms of the first and gives the units of the second their survey addresses. It places
@@ -67,6 +70,9 @@ marked inferred.</p>
 <ul>
   <li><span class="st prov">HEIGHT</span>Storeys away from the south face and Tung Tau Tsuen Road: a tall rim of
     10–15 and lower blocks round the Yamen, as the 1989 aerial photos show.</li>
+  <li><span class="st prov">ROUTES</span>Where each link, bridge and roof ladder is. The blocks of one tower connect on
+    every storey; two towers connect on about one storey in five. People take the quickest way: through the links and
+    over the roofs, or down to the lanes. A lane route counts as 1.4 times the straight distance.</li>
   <li><span class="st prov">PLANS</span>Where each stair, corridor and wall runs. A block with no lane frontage
     shares the stair of the next block. Each home flat gets cubicles and bed spaces after the survey flat.</li>
   <li><span class="st prov">FLATS</span>The home floors hold 8,800 flats, as the book counts. Thus a flat in the
