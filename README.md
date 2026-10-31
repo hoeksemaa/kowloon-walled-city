@@ -21,7 +21,9 @@ python3 serve.py 8173
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
   see its name and size. The cut is a level section 1.1 m above the floor of that storey.
   It removes all that rises higher, on every storey: also the signs, aerials, roof huts and
-  lines of the lower storeys.
+  lines of the lower storeys. In the layered view (key E), each storey below the cut is
+  darker and greyer than the storey above it, thus the plan stands out. The normal view has
+  no such dim: its light comes only from the sun and the lamps.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down
