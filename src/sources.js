@@ -14,6 +14,7 @@ const LCSD = A('https://www.lcsd.gov.hk/en/parks/kwcp/historical.html', 'LCSD');
 const ZHWP = A('https://zh.wikipedia.org/wiki/九龍寨城', 'ZH Wikipedia');
 const BOOK = GH('city-of-darkness-revisited', 'City of Darkness Revisited (2014)');
 const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
+const CSDI = A('https://portal.csdi.gov.hk', 'the CSDI Portal');
 
 export const SOURCES_HTML = `
 <p>One ordinary week in the city at its height: Tuesday 16 to Monday 22 December 1986, the
@@ -112,6 +113,11 @@ composite. A detail that no source records is marked inferred.</p>
     (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
     (a police officer, SCMP 2018; the tailor across the road, HK01 2022).</li>
+  <li><span class="st ok">AROUND</span>The real buildings, roads and open ground within 600 m of the city, as
+    they stood in December 1986, are in <code>data/context.json</code>. They come from the Lands Department
+    1:1000 survey sheets of 1987 (with the editions of 1981–85 as a check) and the building and road data of
+    ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Heights are from the building
+    data, or storeys × 2.9 m; the other heights are inferred and marked. The model does not draw them yet.</li>
 </ul>
 
 <h4>Inferred, and marked</h4>

@@ -76,9 +76,23 @@ Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overl
 measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
 the repository or the app.
 
+`data/context.json` holds the real buildings, roads and open ground round the City as they
+stood in December 1986, within 600 m of the centre of the plan box, in plan metres. Each
+building has an outline, a height, its storeys, its dates, a source, and "sourced" or
+"inferred". `tools/context.py` makes it from the Lands Department 1:1000 survey sheets of
+1987 (the editions of 1981-85 are a check) and the CSDI Building and Road Network data.
+Source: the Government of the Hong Kong SAR and the CSDI Portal; see
+`data/CONTEXT-NOTICE.md`. This data does not have a Creative Commons licence. No scan or
+download is in the repository. The app does not draw this data yet.
+
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
 corridor or a stair, if a storey has no way down, or if walks go through other rooms.
+
+`node tools/check_context.mjs` checks `data/context.json`. It fails if a building is on the
+City plate or beyond 600 m, if a building has no source, or if a survey sheet does not
+register on the standing buildings. It prints the buildings near the approach track of the
+planes that are taller than the track.
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.
