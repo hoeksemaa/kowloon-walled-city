@@ -12,6 +12,7 @@ import { emitStairs, furnish } from './interiors.js';
 import { roofClutter } from './roofs.js';
 import { emitCage, cageThings, emitAC, emitPipe, pipeColor, emitLedge, FACADE_GLSL } from './facades.js';
 import { K, CUT_H } from './kinds.js';
+import { withDim } from './dim.js';
 
 export { K, CUT_H };
 
@@ -1077,6 +1078,8 @@ ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) disc
 ${FRAG}`)
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
 totalEmissiveRadiance += glow;`);
+    // below the cut storey in the layered view, darker by storey (dim.js)
+    withDim(s, 'vInfo.y');
   };
   m.customProgramCacheKey = () => (a2c ? 'kwc-building-a2c' : 'kwc-building');
   return m;

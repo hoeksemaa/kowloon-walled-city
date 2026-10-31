@@ -7,6 +7,7 @@ import { STOREY } from './layout.js';
 import { OUTSIDE, ROAD } from './footprint.js';
 import { wallFrame } from './geom.js';
 import { withSection } from './kinds.js';
+import { withDim } from './dim.js';
 
 // Generic words for each trade (GRS trade key) and each floor use.
 const TRADE_ZH = {
@@ -158,7 +159,9 @@ export function emitSign(S, sign, cell, white) {
 }
 
 // A sign is cut by the section at the cut storey (kinds.js), in its colour and in its shadow.
-export function makeSignMaterial(shared, map) {
+// The signs of storey k have their own material, so the layered view can dim them with the
+// storey, their light at night too (dim.js).
+export function makeSignMaterial(shared, map, k) {
   const m = new THREE.MeshLambertMaterial({ map });
   m.onBeforeCompile = (s) => {
     s.uniforms.uNight = shared.uNight;
@@ -166,6 +169,7 @@ export function makeSignMaterial(shared, map) {
       .replace('#include <common>', '#include <common>\nuniform float uNight;')
       .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += diffuseColor.rgb * uNight * 0.9;');
     withSection(s, shared.uCutTop);
+    withDim(s, 'uLevel', { value: k });
   };
   m.customProgramCacheKey = () => 'kwc-sign';
   return m;
