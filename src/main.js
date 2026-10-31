@@ -204,7 +204,6 @@ async function init() {
   const agents = createPopulation(L, POPULATION);
   sim = new Sim(L, agents);
   sim.jumpTo(START_MINUTE);
-  peopleU.uExits = { value: L.away.map((c) => new THREE.Vector2(L.cellX(c), L.cellZ(c))) }; // the fade at the exits (figures.js)
   people = new Crowd(sim, L, peopleU);
   scene.add(people.group);
   flock = new Flock(sim);

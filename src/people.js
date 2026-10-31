@@ -979,7 +979,7 @@ export class Sim {
       const h = Math.hypot(c[0] - p[0], c[1] - p[1]), v = Math.abs(c[2] - p[2]);
       tc.push(tc[q - 1] + h / speed + v / (a.size === 2 ? CLIMB * 0.6 : CLIMB));
     }
-    a.trip = { pts, tc, t0: now, seg: 0, to };
+    a.trip = { pts, tc, t0: now, seg: 0, from, to };
     a.loc = { type: 'moving' };
     this.moving.push(a.id);
   }

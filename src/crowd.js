@@ -16,12 +16,23 @@ const SPOT_POSE = { bed: POSE.lie, seat: POSE.sit, desk: POSE.desk, work: POSE.w
 // The packed aM.z (figures.js): the pose, + 16 if the furniture is the seat or the bed, + 32
 // indoors, + 64 in a room of the cut storey (lit by its lamp, lamps.js).
 
+// How far person a, at (x, z), is from the exit at the end of a walk out of the city, or at the
+// start of a walk in (the fade of figures.js). Far for everyone else.
+function exitDistance(a, x, z) {
+  const t = a.trip;
+  if (!t) return 99;
+  let d = 99;
+  if (t.from.type === 'away') d = Math.hypot(x - t.pts[0][0], z - t.pts[0][1]);
+  if (t.to.type === 'away') { const p = t.pts[t.pts.length - 1]; d = Math.min(d, Math.hypot(x - p[0], z - p[1])); }
+  return d;
+}
+
 export class Crowd {
   constructor(sim, L, uniforms) {
     this.sim = sim;
     this.L = L;
     const n = sim.agents.length;
-    this.buf = { aP: new Float32Array(n * 4), aM: new Float32Array(n * 4), aC: new Float32Array(n * 3), aB: new Float32Array(n * 3), aL: new Float32Array(n * 4) };
+    this.buf = { aP: new Float32Array(n * 4), aM: new Float32Array(n * 4), aC: new Float32Array(n * 3), aB: new Float32Array(n * 3), aL: new Float32Array(n * 4), aX: new Float32Array(n) };
     this.attrs = {};
     for (const [k, arr] of Object.entries(this.buf)) {
       const a = new THREE.InstancedBufferAttribute(arr, arr.length / n);
@@ -138,6 +149,7 @@ export class Crowd {
       buf.aC[r] = sim.aC[i3]; buf.aC[r + 1] = sim.aC[i3 + 1]; buf.aC[r + 2] = sim.aC[i3 + 2];
       buf.aB[r] = sim.aB[i3]; buf.aB[r + 1] = sim.aB[i3 + 1]; buf.aB[r + 2] = sim.aB[i3 + 2];
       buf.aL[q] = sim.aL[o]; buf.aL[q + 1] = sim.aL[o + 1]; buf.aL[q + 2] = sim.aL[o + 2]; buf.aL[q + 3] = sim.aL[o + 3];
+      buf.aX[c] = exitDistance(A[i], x, z);
       this.ids[c] = i;
       this.slot[i] = c;
       c++;
