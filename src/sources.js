@@ -52,8 +52,23 @@ marked inferred.</p>
     building of 14 storeys from 1975 (p336).</li>
   <li><span class="st ok">NUMBERS</span>House numbers fall from west to east on Tung Tau Tsuen Road and Lung Chun
     Road, and from north to south on Sai Shing Road (Suenn Ho's route map, ${HO}).</li>
-  <li><span class="st ok">PEOPLE</span>About 10,000 families (written answer, 18 Feb 1987) and 33,000 residents
-    (the Governor, 12 Oct 1988), in ${HANSARD}.</li>
+  <li><span class="st ok">PEOPLE</span>"28,200 occupants residing in 8800 separate apartments" in January 1987
+    (${BOOK}, p340). The same count gives "just over 33,000" with the people who worked in the City but lived
+    elsewhere (p339). Thus the model has 28,200 residents, and 4,800 workers who come in each morning and go
+    home at night. About 10,000 families (written answer, 18 Feb 1987) and 33,000 residents (the Governor,
+    12 Oct 1988) are in ${HANSARD}.</li>
+  <li><span class="st ok">BOOK PEOPLE</span>Sixteen people of ${BOOK}, at their places: the pigeon breeder Chan Kwan
+    Leung on his roof (pp318–321), the doctor Tsin Mu Lam on 2/F of 10 Tung Tau Tsuen Road (p184), the noodle
+    maker Hui Tung Choy above his factory (p170), the herbal store, the candy factory, the store at 12 Tai Chang
+    Street, the roast meat on Lo Yan Street, and others. Each is gold in the crowd. The hours that the book gives
+    are in their week (pp57, 76, 82, 93, 187, 228, 237, 286). The book met them in about 1990, and they say no
+    words in the model.</li>
+  <li><span class="st ok">ROUTINES</span>From ${BOOK}: police on the beat, two to each beat, some of it on the roofs
+    (pp251, 283); refuse collectors on Tai Chang Street at 4 a.m. (p93); street sweepers with their buckets (p104);
+    meter readers with torches (p98); patients from outside at the dentists and doctors on the outer roads (p242);
+    water from the one standpipe (p108); the Salvation Army kindergarten (p300); children who wrap candy after
+    school (p77); tea and TV at the Old People's Centre, and worship on Sunday (pp305–306); people on the roofs
+    in the early evening (p322).</li>
   <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB}, ${WSJ} and ${PRESS}.
     Most of it was recorded long after 1986, thus each quote has the tag "retrospective" and its year.</li>
   <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at
@@ -77,8 +92,9 @@ marked inferred.</p>
     shares the stair of the next block. Each home flat gets cubicles and bed spaces after the survey flat.</li>
   <li><span class="st prov">FLATS</span>The home floors hold 8,800 flats, as the book counts. Thus a flat in the
     model is about 15 m² (160 sq ft), less than the 200–400 sq ft that residents give (WSJ 2014, SCMP 2013).</li>
-  <li><span class="st prov">TRADE</span>The 459 premises fill 268 floors. Each workshop room counts as one
-    business, and 291 more floors get a trade from the 1983 mix, until the count is 645. No file records
+  <li><span class="st prov">TRADE</span>The 459 premises fill 268 floors, and the places of the book fill 4 more.
+    Each workshop room counts as one business, and 280 more floors get a trade from the 1983 mix, until the
+    count is 645. No file records
     them, and the tooltip marks each one with *.</li>
   <li><span class="st prov">PLACE</span>Where each premises sits on its street: the order of its house number.</li>
   <li><span class="st prov">STOREY</span>3.05 m for each storey, a usual Hong Kong tenement storey. No measured
@@ -86,7 +102,14 @@ marked inferred.</p>
   <li><span class="st prov">LANES</span>The plan draws the lanes wider than the real 0.6–1 m, thus the model's
     lanes are 1–2 m wide.</li>
   <li><span class="st prov">HOURS</span>The hour-by-hour week of every person, the real people too. A 1980s Hong
-    Kong week: six days of work and school, Saturday school in the morning, Sunday off for most.</li>
+    Kong week: six days of work and school, Saturday school in the morning, Sunday off for most. The hours of
+    the book are from about 1990, thus they are approximate for 1986. When the book gives no hours, the model
+    uses the usual hours of the trade. On 冬至 every shop and workshop shuts at 18:00.</li>
+  <li><span class="st prov">ROLES</span>The share of each kind of resident. "About a third" of the residents were
+    over 60 in about 1990 (p178); the model gives 18 % for 1986. The number of each kind of visitor: 6 police,
+    3 refuse collectors, 10 sweepers, 2 meter readers and 300 patients. Their days and hours.</li>
+  <li><span class="st prov">HOMES</span>Where a person of the book lives, when the book does not say: a flat near
+    the work, with a household of three, the mean of the city (p340).</li>
   <li><span class="st prov">冬至</span>Family dinners on Monday 22 Dec 1986. 冬至 is a Hong Kong-wide custom; the
     model infers that the city's families kept it too.</li>
   <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>

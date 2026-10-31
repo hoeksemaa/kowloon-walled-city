@@ -12,6 +12,7 @@
 import { mulberry32, vnoise, clamp, weighted } from './util.js';
 import { buildFootprints, mainAxis, LANE, YARD, ROAD } from './footprint.js';
 import { setupCores, makePlan, WORK_AREA } from './floorplan.js';
+import { BOOK_PEOPLE } from './residents.js';
 
 // No measured storey height is in hand. 3.05 m is a usual Hong Kong tenement storey.
 export const STOREY = 3.05;
@@ -340,6 +341,9 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   setupCores(L);
   for (const b of buildings) if (b.kind !== 'yamen') b.plans = { work: makePlan(L, b, WORK_AREA, 'work') };
 
+  // The places of the people in City of Darkness Revisited go first, before the fill.
+  if (book) bookPlaces(L, book);
+
   // Floors that no file records. INFERRED: the Kai Fong Association counted 645 shops,
   // workshops and clinics in 1983 (charted by WSJ, 2014). The clearance files place fewer,
   // thus more floors take a trade until the count is 645; each workshop unit of a floor
@@ -363,7 +367,8 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     for (const { b, f } of cand) {
       if (n >= KAIFONG_1983_TOTAL) break;
       const pool = b.factory ? MIX_FACTORY : b.front === 'inner' ? MIX_LANE : MIX_FRONT;
-      b.uses[f] = weighted(rng, pool);
+      // Heavy metal shops stay on G/F (City of Darkness Revisited, p257).
+      do b.uses[f] = weighted(rng, pool); while (f > 0 && b.uses[f] === 'metal');
       (b.inferred ||= {})[f] = true;
       n += b.plans.work.units.length;
     }
@@ -559,6 +564,84 @@ export function locate(L, street, num, floor = 0) {
       if (b && b.floors > floor && b.kind !== 'yamen') return b;
     }
   return null;
+}
+
+// The places of City of Darkness Revisited that the model uses (BOOK_PEOPLE in residents.js),
+// and the kindergarten and the standpipe. A place goes to its file address if a clearance
+// file matches it, else to its address in the text, else to its street, nearest its pin on
+// the 1992 map. Where the map and the text disagree, the text wins. L.book[n]: { b, f }.
+function bookPlaces(L, book) {
+  const B = L.buildings, W = L.W;
+  const pin = (n) => {
+    const m = book.overlay.markers[n];
+    return m ? { x: L.x0 + MARGIN + m[0], z: L.z0 + MARGIN + m[1] } : null;
+  };
+  // The building nearest a point (or the middle one), not used by another place, with a
+  // floor that no file names if it can.
+  const used = new Set();
+  const near = (ids, at, f = 0) => {
+    const list = ids.map((id) => B[id]).filter((b) => b.kind !== 'yamen' && b.floors > f + 1 && !used.has(b.id));
+    if (!list.length) return null;
+    const free = list.filter((b) => !b.prem[f]);
+    if (!at) return (free.length ? free : list)[(free.length ? free : list).length >> 1];
+    const cost = (b) => Math.hypot(b.cx - at.x, b.cz - at.z) + (b.prem[f] ? 12 : 0);
+    return list.reduce((p, q) => (cost(q) < cost(p) ? q : p));
+  };
+  const onStreet = (st) => {
+    if (L.addr[st]) return L.addr[st].F;
+    const s = new Set();
+    for (const k of L.streetLanes[st] || []) for (const n of [k - 1, k + 1, k - W, k + W]) if (L.owner[n] >= 0) s.add(L.owner[n]);
+    return [...s];
+  };
+  const find = (p) => {
+    const grs = p.grs || ((book.matches.list.find((m) => m.n === p.n) || {}).grs);
+    if (grs)
+      for (const b of B)
+        for (const [f, list] of Object.entries(b.prem)) if (list.some((q) => q.refs && q.refs.includes(grs))) return { b, f: +f, grs: true };
+    const f = p.floor ?? 0;
+    if (p.street && p.num != null) { const b = locate(L, p.street, p.num, f); if (b) return { b, f }; }
+    if (p.street) { const b = near(onStreet(p.street), p.conflict ? null : pin(p.n), f); if (b) return { b, f }; }
+    const at = pin(p.n), b = at && near(B.map((b) => b.id), at, f);
+    return b ? { b, f } : null;
+  };
+  L.book = {};
+  L.bookPlaces = Object.fromEntries(book.places.map((p) => [p.n, p]));
+  for (const P of BOOK_PEOPLE) {
+    const p = book.places.find((q) => q.n === P.n), hit = p && find(p);
+    if (!hit) continue;
+    const { b, f } = hit;
+    L.book[P.n] = { b: b.id, f };
+    used.add(b.id);
+    if (P.roof) continue;
+    const grs = hit.grs && b.prem[f].find((q) => q.refs && q.refs.includes(p.grs || book.matches.list.find((m) => m.n === p.n).grs));
+    if (grs) {
+      Object.assign(grs, { book: p.n, page: p.page });
+      // The file title can give a house name first; the note in book.json gives the trade name.
+      const name = p.grsNote && p.grsNote.split(',')[0];
+      if (name && /^[A-Za-z][^:]*$/.test(name)) grs.nameEn = name;
+    }
+    else (b.prem[f] ||= []).push({ nameEn: `${p.name}: ${p.what}`, trade: P.trade, book: p.n, page: p.page });
+    b.prem[f].use = b.uses[f] = TRADE_USE[P.trade];
+    if (b.inferred) delete b.inferred[f];
+  }
+  // The Salvation Army kindergarten on Lung Chun Back Road (p300). The book does not say
+  // when it opened, thus it is INFERRED for 1986.
+  const kg = near(onStreet('lcb'), pin(29));
+  if (kg) {
+    used.add(kg.id);
+    (kg.prem[0] ||= []).push({ nameEn: 'Salvation Army kindergarten', trade: 'school', book: 29, page: 300, inferred: true });
+    kg.prem[0].use ||= 'school';
+    kg.uses[0] = 'school';
+    L.book.kindergarten = { b: kg.id, f: 0 };
+  }
+  // The one Government standpipe inside the city, on Tai Chang Street (pp28, 107, 292).
+  const sp = pin(30);
+  if (sp) {
+    let best = -1, bd = Infinity;
+    for (const k of L.streetLanes.tcs || []) { const d = Math.hypot(L.cellX(k) - sp.x, L.cellZ(k) - sp.z); if (d < bd) { bd = d; best = k; } }
+    if (best >= 0) L.standpipe = { k: best, x: L.cellX(best), z: L.cellZ(best) };
+  }
+  L.bookHours = book.hours;
 }
 
 // The two floors that the clearance survey drew in 1987 (City of Darkness Revisited, p340).

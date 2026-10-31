@@ -171,3 +171,32 @@ export const VOICES = {
   lamYM: { who: 'Lam Yin Ming, resident', src: 'Baltimore Sun, 30 Jun 1992', tag: 'at the time (1992)' },
   hk01: { who: 'HK01 reporters, from five residents', src: 'HK01, 26–28 Aug 2016', tag: 'narration (2016)' },
 };
+
+// People of City of Darkness Revisited (2014) at their places, by their number on the book's
+// 1992 map (data/book.json). Only people whose dates, or a clearance file of 1987-92, put
+// them in the city in 1986. They say no words in the model: their facts and hours come from
+// the book, which met them in about 1990, thus the hours are APPROXIMATE for 1986. trade: the
+// trade key of the clearance files (layout.js). home: where they lived, if the book says;
+// else the model puts a flat near the work (INFERRED).
+//
+// open: the hours of each day, [from, to] in hours. days: 7 every day, 6 Monday to
+// Saturday. sun: other hours on Sunday. page: the page that gives the hours; without it the
+// hours are INFERRED from the trade. On 冬至 every place shuts at 18:00 (INFERRED).
+export const BOOK_PEOPLE = [
+  { n: 1, sched: 'pigeons', roof: true, doing: 'with the pigeons on his rented roof' },
+  { n: 2, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making golf balls' },
+  { n: 3, trade: 'medicine', open: [[8, 23]], days: 7, page: 82, doing: 'at the herbal store', hours: '“officially we are open from 8am to 11pm”' },
+  { n: 4, trade: 'noodles', open: [[8, 17]], days: 6, page: 228, doing: 'making noodles', hours: 'from 8am, about nine hours' },
+  { n: 8, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making wooden rulers' },
+  { n: 11, trade: 'cafe', open: [[9, 23.5]], days: 7, page: 57, doing: 'running the café', hours: 'from 9am to very late at night' },
+  { n: 14, trade: 'noodles', open: [[6.5, 17.5]], days: 6, doing: 'making noodles', home: { above: true, text: 'the family flat above the factory (p170)' } },
+  { n: 20, trade: 'store', open: [[7.5, 22]], days: 7, doing: 'minding the grocery' },
+  { n: 21, trade: 'textile', open: [[8, 19]], days: 6, doing: 'at the looms' },
+  { n: 24, trade: 'store', open: [[8, 24]], days: 7, page: 93, doing: 'minding the store', busy: [17, 21], hours: '8am to midnight, busiest from 5 to 9pm' },
+  { n: 25, trade: 'cakes', open: [[7, 21]], days: 6, page: 76, doing: 'making candy', late: [18, 'the wrapping goes on to 9pm'], hours: '7am to 6pm; the wrapping goes on to 9pm' },
+  { n: 32, trade: 'plastics', open: [[8, 18]], days: 6, rush: [1, 3], doing: 'making rubber plungers', hours: 'in a rush, also after dinner to 2 or 3am (p237)' },
+  { n: 33, trade: 'clinic', open: [[9, 13], [15.5, 20]], sun: [[9, 13]], days: 6, page: 187, doing: 'seeing patients', hours: '9 to 1 and 3.30 to 8, Monday to Saturday; Sunday morning' },
+  { n: 35, trade: 'bonesetter', open: [[9, 19]], days: 6, doing: 'setting bones' },
+  { n: 36, trade: 'dentist', open: [[10, 19]], days: 6, doing: 'at the dentist’s chair' },
+  { n: 39, trade: 'roastmeat', open: [[4, 6.25], [8, 14]], days: 7, page: 286, doing: 'roasting meat', between: 'selling at the market', hours: 'from 4am; at the market 6.15 to 8am' },
+];
