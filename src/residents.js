@@ -64,17 +64,23 @@ export const REAL = [
     key: 'postman',
     name: 'Lam Po-chun',
     role: 'postman for the city',
-    age: null,
+    age: 26, // "from my 19th to 29th year", 1979 to 1989 (City of Darkness Revisited, p145)
     sched: 'postman',
-    look: { hat: 3 }, // a navy hat against "the constant dripping" (City of Darkness Revisited, pp148-149)
+    // A hat was "standard issue against the constant dripping in the alleyways" (City of Darkness
+    // Revisited, p149). The navy hat and the canvas bag are those of postman Lui Man Sang in the
+    // book's photos (pp144, 148); the model has one postman only, thus Lam wears them (INFERRED).
+    look: { hat: 3 },
     facts: [
       ['He delivered the mail inside the city from 1979 to 1991, on an 8-hour shift.', 'WSJ, 2014 (fact box)'],
+      ['"From 1979 to 1989 – that is, from my 19th to 29th year – I was a postman in the Walled City." The two sources give different last years; both include 1986.', 'City of Darkness Revisited, p145'],
       ['His count: about 350 buildings, and 2 with lifts.', 'WSJ, 2014 (fact box)'],
       ['"郵差和送貨員是例外" [postmen and delivery men were the exception]: the people who went everywhere in the city.', 'Greg Girard, HK01 2024 (interview 2019)'],
       ['He "had a small moustache and was nicknamed by the locals \'hu xu zi\' (beardie), or postman Ah-Po".', 'City of Darkness Revisited, p146'],
       ['He climbed one stair, crossed the roofs by ladders and windows, and went down another.', 'City of Darkness Revisited, pp145–146'],
     ],
-    quotes: [],
+    quotes: [
+      { t: 'In the Walled City, when times were hard, I felt how full of humanity the place was.', src: 'City of Darkness Revisited, p149', tag: 'retrospective (2014 edition)' },
+    ],
   },
   {
     key: 'yip',

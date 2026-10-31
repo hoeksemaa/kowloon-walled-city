@@ -14,7 +14,7 @@ export const CASES = [
     name: 'Lam Po Chun',
     find: (a) => a.real && a.real.key === 'postman',
     who: ['Locals called him "hu xu zi" (beardie), or postman Ah-Po. He had a small moustache.', 'p146'],
-    looks: ['He wears a navy hat against "the constant dripping", and he carries a brown canvas bag.', 'pp144, 148–149'],
+    looks: ['Postmen wore a hat, "standard issue against the constant dripping in the alleyways". In the book’s photos of a postman, the hat is navy and the bag is brown canvas.', 'pp144, 148–149'],
     how: ['His round starts at a store on Lo Yan Street. He works one north–south lane, then the side alleys. He climbs one stair, crosses the roofs by ladders and windows, and goes down another.', 'pp145–146'],
     usual: 'from 8:20, Monday to Saturday',
   },

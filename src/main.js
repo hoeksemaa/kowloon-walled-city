@@ -887,6 +887,13 @@ function focusBeat(b) {
     zoom = 7;
   } else if (f.view === 'plane') {
     p = [150, 30, -40]; zoom = 2.2;
+  } else if (f.view === 'roofs') {
+    // The roof with the most people on it now.
+    const n = new Map();
+    for (const a of sim.agents) if (a.loc && a.loc.type === 'roof' && !a.trip) n.set(a.loc.b, (n.get(a.loc.b) || 0) + 1);
+    let best = -1, bn = 0;
+    for (const [b2, c] of n) if (c > bn) { bn = c; best = b2; }
+    if (best >= 0) { const b2 = L.buildings[best]; p = [b2.cx, b2.floors * STOREY, b2.cz]; zoom = 5.5; }
   }
   if (!p) { p = [0, 14, 0]; zoom = 1.15; }
   state.camGoal = { x: p[0], y: p[1], z: p[2], zoom };
