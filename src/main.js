@@ -13,6 +13,7 @@ import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
 import { BEATS, CHAPTERS, beatAt } from './story.js';
 import { Planes } from './planes.js';
+import { Sound } from './sound.js';
 import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
@@ -84,6 +85,7 @@ const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale:
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
 const unitRes = new Map();
 const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
+const sound = new Sound(); // off until the user turns it on
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -345,6 +347,7 @@ function buildUI() {
   });
   tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
   tool('t-map', false, () => (state.mapPins = !state.mapPins));
+  tool('t-sound', false, () => sound.toggle());
   $('rail-clear').onclick = () => setCut(-1);
   $('st-prev').onclick = () => jumpBeat(-1);
   $('st-next').onclick = () => jumpBeat(1);
@@ -403,6 +406,7 @@ function buildUI() {
     else if (k === 'w') $('t-wires').click();
     else if (k === 'p') $('t-people').click();
     else if (k === 'm') $('t-map').click();
+    else if (k === 's') $('t-sound').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') { setCut(-1); sim.select(-1); }
     else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || 60); }
@@ -624,7 +628,7 @@ function updateLabels() {
     }
     // Sit just left of the slab's outer corner, clear of the toolbar.
     const w = el.offsetWidth;
-    const minX = by < 230 ? 96 : 14;
+    const minX = by < 330 ? 96 : 14;
     const lx = Math.max(minX, bx - w - 36);
     el.style.left = `${lx}px`;
     el.style.top = `${by}px`;
@@ -896,6 +900,7 @@ function frame(now) {
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
   planes.update(sim.day % 7, sim.minute, state.speed ? dt : 0, state.explode > 0.3);
+  sound.update(sim.day % 7, sim.minute, state.speed, planes);
   updateStory();
   glideCamera(dt);
   const dark = shared.uNight.value > 0.55;
