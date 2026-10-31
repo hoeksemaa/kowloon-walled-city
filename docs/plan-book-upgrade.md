@@ -100,7 +100,7 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
 - **Head count.** The 33,000 of the January 1987 count includes people who worked in the City but lived outside (p339). The same count gives 28,200 occupants in 8,800 apartments (p340). The model will have about 28,200 residents in 8,800 households. About 4,800 workers will come in each morning and leave at night.
 - **Old people.** "About a third" of residents were over 60 in about 1990 (p178). The model has 10 % now. I will raise the share, mark it INFERRED, and keep it below a third for 1986.
 - **New routines from the book:**
-  - two postmen (section 7);
+  - one postman, Lam Po Chun (John, 2026-10-31: "just one postman, no lookalike");
   - police: two officers on each of three beats a day, 8-hour shifts, some patrols on the roofs (pp251, 283);
   - refuse: collectors on Tai Chang Street at 4am (p93); 10 USD sweepers with orange buckets (p104);
   - water: people with containers at the standpipe all day (p108); the well pumps run at noon and midnight (p107);
@@ -192,23 +192,24 @@ Each case has five hints. Each hint is stronger than the one before, and each on
 
 ## 8. Story, sources and README (PR 8)
 
-- Update the story with the book: two postmen and the start on Lo Yan Street, the standpipe on Tai Chang Street, the Kai Fong office, pigeons in the mid-afternoon, and families on the roofs at dusk.
+- Update the story with the book: the postman and the start on Lo Yan Street, the standpipe on Tai Chang Street, the Kai Fong office, pigeons in the mid-afternoon, and families on the roofs at dusk.
 - Add the book to the sources panel, with the page for each item.
 - Lam Po-chun's years differ: 1979–1991 (WSJ) and 1979–1989 (p145). Both include 1986, and the app will give both.
 - Update the counts in the README.
 
 ## Order of work
 
-| PR | Content | Size |
-|---|---|---|
-| 1 | Evidence data, street names, addresses | small |
-| 2 | Towers, stairs, floor plans, plan view | large |
-| 3 | 3D route network, links, roofs | large |
-| 4 | Businesses, people, routines | medium |
-| 5 | Visual style | medium |
-| 6 | How people look | medium |
-| 7 | The mystery game | medium |
-| 8 | Story, sources, README | small |
+| PR | Content | Size | Status |
+|---|---|---|---|
+| 1 | Evidence data, street names, addresses | small | merged (#11) |
+| 2 | Towers, stairs, floor plans, plan view | large | merged (#12) |
+| 3 | 3D route network, links, roofs | large | merged (#13) |
+| — | Sound (decision 3) | small | merged (#14) |
+| 4 | Businesses, people, routines | medium | merged (#15) |
+| 5 | Visual style | medium |  |
+| 6 | How people look | medium |  |
+| 7 | The mystery game | medium |  |
+| 8 | Story, sources, README | small |  |
 
 PR 5 does not depend on PRs 2–4, so it can go in parallel. The game needs PRs 3, 4 and 6.
 

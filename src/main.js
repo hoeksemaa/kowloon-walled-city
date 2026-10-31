@@ -18,7 +18,7 @@ import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
 const GAP = 13; // extra metres between storeys when fully exploded
-const POPULATION = 33000;
+const POPULATION = 28200; // occupants in January 1987 (p340); people from outside come on top (people.js)
 const START_MINUTE = 5 * 60 + 20;
 const $ = (id) => document.getElementById(id);
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
@@ -165,7 +165,7 @@ async function init() {
   people = makePeopleMesh(sim, peopleU);
   scene.add(people.mesh);
   residents = new Map();
-  for (const a of agents) residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
+  for (const a of agents) if (a.home.type === 'in') residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
   for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
   for (const a of agents) if (a.real && a.real.home && a.real.home.size && a.home.m !== undefined) unitReal.set(`${a.home.b}:${a.home.f}:${a.home.m}`, a.real);
 
@@ -534,10 +534,11 @@ function buildingTooltip(b, k) {
   const rows = runs
     .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.inf ? ' *' : ''}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
     .join('');
-  const recs = [];
+  const recs = [], bookRecs = [];
   for (const f of Object.keys(B.prem).map(Number).sort((x, y) => x - y))
-    for (const p of B.prem[f]) recs.push(`<div class="tt-r"><span class="tt-k">${levelName(f)}</span> ${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i></div>`);
-  const prem = recs.length ? `<div class="tt-s">in the clearance files (GRS HKRS1255-3):</div>${recs.slice(0, 6).join('')}${recs.length > 6 ? `<div class="tt-s">and ${recs.length - 6} more</div>` : ''}` : '';
+    for (const p of B.prem[f]) (p.refs ? recs : bookRecs).push(`<div class="tt-r"><span class="tt-k">${levelName(f)}</span> ${premLine(p)}</div>`);
+  const prem = (recs.length ? `<div class="tt-s">in the clearance files (GRS HKRS1255-3):</div>${recs.slice(0, 6).join('')}${recs.length > 6 ? `<div class="tt-s">and ${recs.length - 6} more</div>` : ''}` : '')
+    + (bookRecs.length ? `<div class="tt-s">in City of Darkness Revisited (2014), place by address:</div>${bookRecs.join('')}` : '');
   const title = buildingName(B).toUpperCase();
   const front = B.front === 'top' ? '<div class="tt-s">fronts Tung Tau Tsuen Road</div>' : B.front === 'road' ? '<div class="tt-s">fronts a road on the old wall base</div>' : '';
   const fact = B.factory ? '<div class="tt-s">factory site marked on the exhibit plan</div>' : '';
@@ -546,6 +547,12 @@ function buildingTooltip(b, k) {
     <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>${inf}
     <div class="tt-s">plot from the 1980s plan${B.block ? `, one of ${L.towers[B.tower].blocks.length} blocks of a tower on the 1987 plan` : ''} · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : B.front === 'top' ? '“12 storeys and more” on this road (p132)' : 'storeys inferred from photos'} · place on street from house-number order</div>
     <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
+}
+
+// One premises of a floor: its names and trade, and the page of the book that names it.
+function premLine(p) {
+  const book = p.book ? ` · <span class="tt-book">BOOK p${p.page}</span>${p.inferred ? ' (INFERRED for 1986)' : ''}` : '';
+  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i>${book}`;
 }
 
 // A unit of the cut storey: its name, size, and who lives or works there.
@@ -566,13 +573,13 @@ function unitTooltip(bid, f, cell) {
   const rows = P.kind === 'home'
     ? `<div><span class="tt-k">flat</span> about ${u.area} m² (${Math.round(u.area * 10.76)} sq ft)</div><div><span class="tt-k">home of</span> ${who} ${who === 1 ? 'person' : 'people'} (simulated)</div>`
     : `<div><span class="tt-k">${USE_LABEL[B.uses[f]]}</span> about ${u.area} m² (${Math.round(u.area * 10.76)} sq ft)</div>`;
-  const prem = (B.prem[f] || []).slice(0, 3).map((p) => `<div class="tt-r">${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i></div>`).join('')
+  const prem = (B.prem[f] || []).slice(0, 3).map((p) => `<div class="tt-r">${premLine(p)}</div>`).join('')
     + ((B.prem[f] || []).some((p) => p.mezz) ? '<div class="tt-s">the files name a mezzanine (M/F) on this floor</div>' : '');
   const flatNote = P.kind === 'home' && !note ? '<div class="tt-s">cubicles and bed spaces after the 1987 survey plan of a flat (p340), inferred</div>' : '';
   const R = P.kind === 'home' && unitReal.get(`${bid}:${f}:${u.id}`);
   const recorded = R ? `<div class="tt-real">REAL PERSON</div><div class="tt-r">The home of ${R.name}: ${R.home.size}. The model draws this flat smaller.</div>` : '';
   return `<div class="tt-h">${unitName(B, f, u).toUpperCase()}</div><div>${buildingName(B)}</div>${rows}
-    ${prem ? `<div class="tt-s">on this floor, in the clearance files:</div>${prem}` : ''}
+    ${prem ? `<div class="tt-s">on this floor, in the clearance files or the book:</div>${prem}` : ''}
     ${recorded}${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
 }
 
@@ -582,8 +589,11 @@ function agentTooltip(id) {
   const head = `<div class="tt-h">${d.title}${d.age ? ` · ${d.age}` : ''}</div><div>${d.role}</div>
     <div><span class="tt-k">now</span> ${d.now}</div>${d.at ? `<div><span class="tt-k">at</span> ${d.at}</div>` : ''}
     <div><span class="tt-k">home</span> ${d.home}</div>`;
-  if (!a.real) return `${head}<div class="tt-s">a composite resident, not a real person · click to follow</div>`;
+  if (!a.real) return `${head}<div class="tt-s">${a.home.type === 'in' ? 'a composite resident' : 'a composite person from outside the city'}, not a real person · click to follow</div>`;
   const facts = a.real.facts.slice(0, 2).map(([t, src]) => `<div class="tt-r">${t} <i>${src}</i></div>`).join('');
+  if (a.real.book)
+    return `<div class="tt-real">REAL PERSON · CITY OF DARKNESS REVISITED</div>${head}${facts}
+    <div class="tt-s">met by the book in about 1990 · says no words in the model · hours approximate for 1986 · click to follow</div>`;
   return `<div class="tt-real">REAL PERSON</div>${head}${facts}
     <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
 }
@@ -758,7 +768,7 @@ function updateClock() {
   $('playhead').style.left = `${(sim.minute / 1440) * 100}%`;
   const s = sim.stats();
   occ = s.perLevel;
-  $('clk-stats').innerHTML = `<b>${sim.agents.length.toLocaleString()}</b> residents (simulated) · <b>${s.away.toLocaleString()}</b> outside the walls · <b>${s.moving.toLocaleString()}</b> on the move`;
+  $('clk-stats').innerHTML = `<b>${sim.residents.toLocaleString()}</b> residents + <b>${(sim.agents.length - sim.residents).toLocaleString()}</b> from outside (simulated) · <b>${(sim.agents.length - s.away).toLocaleString()}</b> in the city now · <b>${s.moving.toLocaleString()}</b> on the move`;
   if (sim.day !== lastDay) { lastDay = sim.day; drawSpark(); }
   renderRail();
 }

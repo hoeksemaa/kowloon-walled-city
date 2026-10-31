@@ -25,8 +25,11 @@ python3 serve.py 8173
   or go down to the lanes, whichever is quicker.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
-- **People.** About 33,000 residents. Nine are real people who say only their own recorded
-  words. All the others are composites.
+- **People.** 28,200 residents in 8,800 flats, and 4,800 workers who come in from outside
+  each day (City of Darkness Revisited, pp339–340). Nine real people say only their own
+  recorded words. Sixteen people of the book work at their places, in the hours that the
+  book gives. Police, sweepers, refuse collectors, meter readers and patients come in from
+  outside. All the others are composites.
 - **Story.** Seven chapters, one for each day, with a camera that follows each scene.
 - **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
   follows the hour, with occasional clear sounds over it, for example drips, a plane and the

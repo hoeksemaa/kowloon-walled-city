@@ -5,7 +5,7 @@
 // Prints counts. Fails (exit 1) if a unit has no cell, a cell is in no unit and not next to
 // the corridor or a stair, a unit meets neither the corridor nor a stair, a storey or a roof
 // has no way down to the lanes, or a walk on one storey goes through the room of another
-// unit.
+// unit, or a place of the book has no building.
 import { readFileSync } from 'node:fs';
 import { buildLayout } from '../src/layout.js';
 import { legAt, walkIn, planAt } from '../src/floorplan.js';
@@ -103,6 +103,20 @@ for (const b of B) {
 }
 console.log(`walks on one storey: ${walks}, through another unit's room: ${bad}`);
 if (bad > walks * 0.02) problems.push(`${bad} of ${walks} walks go through the room of another unit`);
+
+// The places of City of Darkness Revisited: each person of the book has a place, no two in
+// one building, and the standpipe and the kindergarten are placed.
+const { BOOK_PEOPLE } = await import('../src/residents.js');
+const placed = BOOK_PEOPLE.filter((P) => L.book[P.n]);
+console.log(`book places ${placed.length} of ${BOOK_PEOPLE.length}; kindergarten ${!!L.book.kindergarten}; standpipe ${!!L.standpipe}`);
+if (placed.length < BOOK_PEOPLE.length) problems.push(`book people with no place: ${BOOK_PEOPLE.filter((P) => !L.book[P.n]).map((P) => P.n)}`);
+const blocks = Object.values(L.book).map((v) => v.b);
+if (new Set(blocks).size < blocks.length) problems.push('two places of the book are in one building');
+if (!L.book.kindergarten || !L.standpipe) problems.push('no kindergarten or no standpipe');
+for (const P of BOOK_PEOPLE) {
+  const v = L.book[P.n];
+  if (v && !P.roof && !B[v.b].prem[v.f].some((q) => q.book === P.n)) problems.push(`place ${P.n} has no premises of the book`);
+}
 
 if (problems.length) {
   console.log(`${problems.length} problems, e.g.:\n  ${problems.slice(0, 10).join('\n  ')}`);

@@ -1,32 +1,52 @@
 // Residents and their week, Tue 16 to Mon 22 Dec 1986.
 //
-// SOURCED: about 33,000 residents (the Governor, Oct 1988; "more than 30,000", Baltimore
-// Sun 1992); 8800 apartments (City of Darkness Revisited, p340; the flats of floorplan.js); nine real people with their homes and
-// trades (residents.js); water hours by floor (林羅平); schoolchildren in "pristine white
-// uniforms" (a police officer, 1987); children on the roofs (Albert Ng, 2013).
-// INFERRED: the share of each role and the hours of each day. A 1980s Hong Kong week: work
-// and school six days, Saturday school in the morning only, Sunday off for most. 冬至
-// (Winter Solstice, Mon 22 Dec 1986) is a Hong Kong-wide custom: families "做冬" and eat
-// together, and many leave work early. That evening is INFERRED for the city's families.
+// SOURCED: "28,200 occupants residing in 8800 separate apartments" in January 1987
+// (City of Darkness Revisited, p340), and "just over 33,000" with the people who worked in
+// the City but lived elsewhere (p339): thus about 4,800 come in to work each day. Nine real
+// people with their homes and trades, and 16 people of the book at their places
+// (residents.js); water hours by floor (林羅平); schoolchildren in "pristine white uniforms"
+// (a police officer, 1987); children on the roofs (Albert Ng, 2013). From the book: police on
+// the beat (pp251, 283), refuse at 4am (p93), sweepers (p104), meter readers (p98), patients
+// from outside on the outer roads (p242), the one standpipe (p108), the kindergarten (p300),
+// candy wrapping after school (p77), the Old People's Centre (pp305-306), and the roofs in
+// the early evening (p322).
+// INFERRED: the share of each role, the number of each kind of visitor, and the hours of
+// each day. A 1980s Hong Kong week: work and school six days, Saturday school in the morning
+// only, Sunday off for most. 冬至 (Winter Solstice, Mon 22 Dec 1986) is a Hong Kong-wide
+// custom: families "做冬" and eat together, and many leave work early. That evening is
+// INFERRED for the city's families.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
 import { planAt, unitName } from './floorplan.js';
 import { WALK, CLIMB } from './routes.js';
 import { mulberry32, clamp } from './util.js';
-import { REAL } from './residents.js';
+import { REAL, BOOK_PEOPLE } from './residents.js';
 
 const SURNAMES = ['Chan', 'Wong', 'Lee', 'Cheung', 'Lau', 'Ho', 'Ng', 'Leung', 'Lam', 'Tse', 'Yip', 'Kwok', 'Tang', 'Fung', 'Mak', 'Cheng', 'Lo', 'Yeung', 'Chow', 'Kwan', 'Chu', 'Tsang', 'Wu', 'So'];
 const GIVEN = ['Ming', 'Wai', 'Kit', 'Fai', 'Ying', 'Mei', 'Hung', 'Keung', 'Lin', 'Chun', 'Sang', 'Yee', 'Kam', 'Wing', 'Yuk', 'Hing', 'Choi', 'Fong', 'Kwai', 'Tak', 'Lai', 'Shing'];
 
+// The shares are INFERRED. Elders: "about a third" of residents were over 60 in about 1990
+// (p178); the model gives fewer for 1986. Workshop hands: many came in from outside (p339).
 export const ROLES = {
   child: { label: 'young child', share: 0.08, ages: [1, 5] },
   student: { label: 'schoolchild', share: 0.2, ages: [6, 18] },
-  worker_out: { label: 'works outside the city', share: 0.27, ages: [17, 60] },
-  worker_in: { label: 'factory / workshop hand', share: 0.17, ages: [15, 65] },
+  worker_out: { label: 'works outside the city', share: 0.23, ages: [17, 60] },
+  worker_in: { label: 'factory / workshop hand', share: 0.13, ages: [15, 65] },
   shopkeeper: { label: 'shopkeeper', share: 0.06, ages: [25, 70] },
   homemaker: { label: 'homemaker', share: 0.12, ages: [22, 65] },
-  elder: { label: 'elder', share: 0.1, ages: [62, 90] },
+  elder: { label: 'elder', share: 0.18, ages: [62, 90] },
+};
+
+// People who come in from outside. n: how many; the numbers are INFERRED, but the day
+// workers are 33,000 less 28,200 (pp339-340).
+export const OUTSIDERS = {
+  day_worker: { label: 'workshop hand who lives outside the city', n: 4800, ages: [16, 60] },
+  police: { label: 'police constable on the beat (pp251, 283)', n: 6, ages: [22, 45] },
+  refuse: { label: 'refuse collector (p93)', n: 3, ages: [25, 60] },
+  sweeper: { label: 'street sweeper of the Urban Services Department (p104)', n: 10, ages: [30, 62] },
+  meter: { label: 'electricity meter reader (p98)', n: 2, ages: [25, 50] },
+  patient: { label: 'patient from outside the city (p242)', n: 300, ages: [6, 85] },
 };
 
 const CLOTHES = ['#e9e4d8', '#d8d3c4', '#2f3d55', '#4a5a6e', '#7a2a24', '#c8b48a', '#3c3c3e', '#5c7a8c', '#a8c0c8', '#c97b5a', '#556b4f', '#efe8d0'];
@@ -35,7 +55,7 @@ const CLOTHES = ['#e9e4d8', '#d8d3c4', '#2f3d55', '#4a5a6e', '#7a2a24', '#c8b48a
 export const WEEK = ['TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'MON'];
 export const SAT = 4, SUN = 5, DONGZHI = 6;
 
-export function createPopulation(L, total = 33000, seed = 1987) {
+export function createPopulation(L, total = 28200, seed = 1987) {
   const rng = mulberry32(seed);
   const B = L.buildings;
   const flats = [];
@@ -96,21 +116,61 @@ export function createPopulation(L, total = 33000, seed = 1987) {
   }
   // 劉太 shares 劉先生's flat.
   for (const a of agents) if (!a.home) a.home = homeOf.get(a.real.key) || { type: 'away', ap: 0, what: 'outside the city' };
+  const taken = new Set(agents.filter((a) => a.home.type === 'in').map((a) => `${a.home.b}:${a.home.f}:${a.home.m}`));
 
-  // A real person's flat holds the household that the source gives, and no other.
-  const taken = new Set(), realHouses = [];
+  // The people of City of Darkness Revisited, at their places (layout.js bookPlaces). A
+  // home that the book does not give is a flat near the work (INFERRED).
+  const nearFlat = (b0) => {
+    let best = null, bd = Infinity;
+    for (const fl of flats) {
+      if (taken.has(`${fl.b}:${fl.f}:${fl.m}`)) continue;
+      const d = Math.hypot(B[fl.b].cx - b0.cx, B[fl.b].cz - b0.cz) + rng() * 6;
+      if (d < bd) { bd = d; best = fl; }
+    }
+    return best;
+  };
+  for (const P of BOOK_PEOPLE) {
+    const at = L.book && L.book[P.n], p = L.bookPlaces && L.bookPlaces[P.n];
+    if (!at || !p) continue;
+    const b = B[at.b];
+    let fl = null;
+    if (P.home && P.home.above) for (let f = at.f + 1; f < b.floors && !fl; f++) if (b.uses[f] === 'home') fl = { b: b.id, f, m: 0 };
+    fl ||= nearFlat(b);
+    taken.add(`${fl.b}:${fl.f}:${fl.m}`);
+    const facts = [[p.where ? `${p.where}.` : `${p.what}.`, `City of Darkness Revisited, p${p.page}`]];
+    facts.push(P.hours ? [`Hours: ${P.hours}.`, `p${P.page || p.page}, about 1990`] : ['Hours not recorded: the model uses the usual hours of the trade.', 'INFERRED']);
+    const real = {
+      key: `book${P.n}`, book: P.n, name: p.name, role: `${p.what} (City of Darkness Revisited, p${p.page})`, age: null,
+      home: { text: P.home ? P.home.text : 'not recorded: the model puts a flat near the work (INFERRED)' },
+      household: 3, facts, quotes: [],
+    };
+    const a = {
+      id: agents.length, name: p.name, age: null, role: P.sched || 'book', real, book: P,
+      home: { type: 'in', ...fl, ...spotIn(L, B[fl.b], fl.f, fl.m, rng) }, flat: fl.m,
+      color: new THREE.Color('#e8c14a'), rng: rng(),
+    };
+    if (P.roof) {
+      const c = b.cells[Math.floor(rng() * b.cells.length)];
+      a.work = { type: 'roof', b: b.id, x: L.cellX(c), z: L.cellZ(c) };
+    } else a.work = { type: 'in', b: b.id, f: at.f, what: b.uses[at.f], ...spotIn(L, b, at.f, -1, rng) };
+    agents.push(a);
+  }
+
+  // A real person's flat holds the household that the source gives, and no other. The
+  // household of a person of the book is not recorded: three, the mean of the city (p340).
+  const realHouses = [];
   for (const a of agents) {
     if (a.home.type !== 'in') continue;
-    taken.add(`${a.home.b}:${a.home.f}:${a.home.m}`);
     const n = (a.real.household || 1) - 1;
-    if (n > 0) realHouses.push({ fl: { b: a.home.b, f: a.home.f, m: a.home.m }, n, surname: SURNAMES[Math.floor(rng() * SURNAMES.length)] });
+    const surname = a.real.book ? a.name.split(' ')[0] : SURNAMES[Math.floor(rng() * SURNAMES.length)];
+    if (n > 0) realHouses.push({ fl: { b: a.home.b, f: a.home.f, m: a.home.m }, n, surname });
   }
   const free = flats.filter((fl) => !taken.has(`${fl.b}:${fl.f}:${fl.m}`));
   // About 8,800 flats (layout.js): one household to each; a few flats hold two.
   const nHouse = Math.round(free.length * 1.06);
   const homes = [];
   for (let h = 0; h < nHouse; h++) homes.push(h < free.length ? free[h] : free[Math.floor(rng() * free.length)]);
-  const left = total - agents.length - realHouses.reduce((s, h) => s + h.n, 0);
+  const left = total - agents.filter((a) => a.home.type === 'in').length - realHouses.reduce((s, h) => s + h.n, 0);
   const mean = left / homes.length;
   const households = homes.map((fl) => ({
     fl,
@@ -141,6 +201,48 @@ export function createPopulation(L, total = 33000, seed = 1987) {
       if (role === 'worker_in' && work.length) { const w = pickW(work); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], w.f, -1, rng) }; }
       if (role === 'shopkeeper' && shops.length) { const w = pickW(shops); a.work = { type: 'in', b: w.b, f: w.f, what: w.what, ...spotIn(L, B[w.b], w.f, -1, rng) }; }
       if (role === 'student' && schools.length && rng() < 0.15) { const w = pickW(schools); a.school = { type: 'in', b: w.b, f: w.f, what: 'school', ...spotIn(L, B[w.b], w.f, -1, rng) }; }
+      // Some children go to the Salvation Army kindergarten (p300); some schoolchildren wrap
+      // candy for the candy factory after school (p77). The shares are INFERRED.
+      if (role === 'child' && a.age >= 3 && rng() < 0.1) a.kinder = true;
+      if (role === 'student' && a.age >= 8 && a.age <= 15 && rng() < 0.006) a.candy = true;
+      agents.push(a);
+    }
+  }
+
+  // Places that the routines of makeSchedule use.
+  const roofs = [];
+  for (const t of L.towers) {
+    const top = t.blocks.map((id) => B[id]).filter((b) => b.floors >= 4 && b.floors === Math.max(...t.blocks.map((id) => B[id].floors)));
+    if (top.length) roofs.push(top[0].id);
+  }
+  const at = (b, f, m = -1) => ({ type: 'in', b, f, ...spotIn(L, B[b], f, m, rng) });
+  L.people = {
+    roofs,
+    clinics: work.concat(shops).filter((e) => (e.what === 'clinic' || e.what === 'dentist') && B[e.b].front !== 'inner'),
+    eating: shops.filter((e) => e.what === 'eating'),
+    kinder: L.book && L.book.kindergarten ? L.book.kindergarten : null,
+    candy: L.book && L.book[25] ? L.book[25] : null,
+    at,
+  };
+
+  // People who come in from outside (OUTSIDERS). Each has a home outside, by one way out.
+  const BEATS = ['lys', 'kms', 'tcs', 'skg', 'lsr', 'tts', 'tcn', 'lcb'];
+  for (const [role, o] of Object.entries(OUTSIDERS)) {
+    for (let q = 0; q < o.n; q++) {
+      const [a0, a1] = o.ages;
+      const a = {
+        id: agents.length,
+        name: `${SURNAMES[Math.floor(rng() * SURNAMES.length)]} ${GIVEN[Math.floor(rng() * GIVEN.length)]}`,
+        age: Math.round(a0 + rng() * (a1 - a0)),
+        role,
+        home: { type: 'away', ap: Math.floor(rng() * L.away.length), what: role === 'police' ? 'off duty' : 'home, outside the city' },
+        flat: 0,
+        color: new THREE.Color(role === 'police' ? '#3b4a63' : CLOTHES[Math.floor(rng() * CLOTHES.length)]),
+        rng: rng(),
+      };
+      if (role === 'day_worker') { const w = pickW(work); a.work = at(w.b, w.f); a.work.what = w.what; }
+      if (role === 'police') a.shift = q >> 1;
+      if (role === 'sweeper') a.street = BEATS[q % BEATS.length];
       agents.push(a);
     }
   }
@@ -183,7 +285,7 @@ function makeSchedule(a, L, rng, dow) {
   const at = (t, place, act) => S.push([clamp(t, 1, 1435), place, act]);
   const H = (h, m = 0) => h * 60 + m;
   const J = (base, spread) => base + (rng() - 0.5) * 2 * spread;
-  const home = a.home;
+  const home = a.home, B = L.buildings;
   const away = (what) => ({ type: 'away', ap: Math.floor(rng() * L.away.length), what });
   const roof = () => ({ type: 'roof', b: home.b, x: home.x, z: home.z });
   const yamen = () => {
@@ -191,11 +293,30 @@ function makeSchedule(a, L, rng, dow) {
     return { type: 'in', b: L.yamenId, f: 0, x: L.cellX(c) + (rng() - 0.5) * 0.8, z: L.cellZ(c) + (rng() - 0.5) * 0.8 };
   };
   const sat = dow === SAT, sun = dow === SUN, dz = dow === DONGZHI;
+  const PL = L.people;
+  const pick = (list) => list[Math.floor(rng() * list.length)];
+  // The one Government standpipe inside the city, on Tai Chang Street (p108).
+  const standpipe = () => L.standpipe && { type: 'ground', k: L.standpipe.k, street: 'tcs', x: L.standpipe.x + (rng() - 0.5) * 1.2, z: L.standpipe.z + (rng() - 0.5) * 1.2 };
+  const roofOf = (r, b = B[pick(PL.roofs)]) => {
+    const c = b.cells[Math.floor(r() * b.cells.length)];
+    return { type: 'roof', b: b.id, x: L.cellX(c) + (r() - 0.5) * 0.6, z: L.cellZ(c) + (r() - 0.5) * 0.6 };
+  };
   const DZ = '冬至 dinner with the family (做冬)';
   // On 冬至 the family is home for dinner, and stays in.
   const dongzhi = (t = 18.25) => { at(J(H(Math.floor(t), (t % 1) * 60), 20), home, DZ); at(J(H(22, 40), 30), home, 'asleep'); };
   at(0, home, 'asleep');
   switch (a.role) {
+    case 'child': {
+      // The Salvation Army kindergarten on Lung Chun Back Road (p300); the hours are INFERRED.
+      if (a.kinder && PL.kinder && !sat && !sun) {
+        at(J(H(7, 0), 30), home, 'breakfast');
+        at(J(H(8, 40), 10), PL.at(PL.kinder.b, PL.kinder.f), 'at the Salvation Army kindergarten (p300)');
+        at(J(H(12, 5), 10), home, 'lunch at home');
+      } else at(J(H(7, 0), 30), home, 'at home');
+      if (dz) { dongzhi(); break; }
+      at(J(H(20, 30), 30), home, 'asleep');
+      break;
+    }
     case 'student': {
       if (sun) {
         at(J(H(8, 0), 40), home, 'Sunday at home');
@@ -207,6 +328,14 @@ function makeSchedule(a, L, rng, dow) {
         break;
       }
       at(J(H(6, 40), 20), home, 'getting ready for school');
+      // Children wrap the candy of the candy factory after school (p77); the wrapping goes on
+      // to 9pm (p76). The days and hours of a child are INFERRED.
+      const candy = () => {
+        if (!a.candy || !PL.candy || dz || (dow + a.id) % 3 === 0) return false;
+        at(J(H(16, 50), 10), PL.at(PL.candy.b, PL.candy.f), 'wrapping candy for the candy factory (p77)');
+        at(J(H(19, 30), 20), home, 'dinner');
+        return true;
+      };
       const school = a.school || away('at school');
       if (sat) {
         at(J(H(7, 35), 15), school, 'at school (Saturday morning)');
@@ -215,15 +344,15 @@ function makeSchedule(a, L, rng, dow) {
       } else if (a.age < 12 && a.rng < 0.5) {
         at(J(H(7, 25), 15), school, 'at school (morning session)');
         at(J(H(12, 50), 15), home, 'lunch at home');
-        if (rng() < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); }
+        if (candy()) { /* wrapping candy */ } else if (rng() < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); }
       } else if (a.age < 12) {
         if (rng() < 0.4) { at(J(H(9, 30), 30), roof(), 'playing on the roofs'); at(J(H(11, 15), 15), home, 'lunch'); }
         at(J(H(12, 30), 10), school, 'at school (afternoon session)');
         at(J(H(dz ? 17 : 18, 25), 10), home, dz ? 'home for 冬至' : 'dinner');
       } else {
         at(J(H(7, 30), 15), school, 'at secondary school');
-        at(J(H(16, 50), 25), home, 'homework');
-        if (!dz && rng() < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'dinner'); }
+        at(J(H(16, 30), 10), home, 'homework');
+        if (candy()) { /* wrapping candy */ } else if (!dz && rng() < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'dinner'); }
       }
       if (dz) dongzhi(18.4); else at(J(H(21, 45), 30), home, 'asleep');
       break;
@@ -274,6 +403,7 @@ function makeSchedule(a, L, rng, dow) {
       at(J(H(8, 15), 30), away('at the market'), 'at the market');
       at(J(H(9, 45), 25), home, 'cooking');
       if (rng() < 0.4) { at(J(H(10, 30), 25), roof(), 'hanging laundry on the roof'); at(J(H(11, 15), 15), home, 'housework'); }
+      if (L.standpipe && rng() < 0.1) { at(J(H(12, 45), 15), standpipe(), 'carrying water from the standpipe (p108)'); at(J(H(13, 25), 5), home, 'housework'); }
       if (dz) {
         at(J(H(14, 30), 30), away('buying food for the 冬至 dinner'), 'buying food for the 冬至 dinner');
         at(J(H(15, 45), 20), home, 'cooking the 冬至 dinner');
@@ -281,6 +411,7 @@ function makeSchedule(a, L, rng, dow) {
         break;
       }
       if (rng() < 0.2) { at(J(H(15, 30), 25), away('shopping'), 'shopping'); at(J(H(16, 30), 15), home, 'cooking dinner'); }
+      if (rng() < 0.1) { at(J(H(17, 15), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(18, 0), 10), home, 'cooking dinner'); }
       at(J(H(22, 30), 30), home, 'asleep');
       break;
     }
@@ -290,8 +421,12 @@ function makeSchedule(a, L, rng, dow) {
       if (r < 0.55) { at(J(H(6, 0), 20), away('at a tea house'), 'at a tea house'); at(J(H(9, 15), 40), home, 'resting'); }
       else if (r < 0.8) { at(J(H(6, 0), 20), roof(), 'morning exercise on the roof'); at(J(H(7, 15), 20), home, 'resting'); }
       else at(J(H(7, 30), 30), home, 'at home');
-      if (rng() < 0.35) { at(J(H(14, 30), 30), yamen(), 'at the old people’s centre in the Yamen'); at(J(H(17, 15), 30), home, 'resting'); }
+      // The Old People's Centre in the Yamen: afternoons Monday to Saturday, worship on Sunday
+      // (pp305-306).
+      if (!sun && rng() < 0.35) { at(J(H(14, 30), 30), yamen(), 'tea and TV at the Old People’s Centre in the Yamen (pp305–306)'); at(J(H(17, 15), 30), home, 'resting'); }
+      else if (sun && rng() < 0.2) { at(J(H(10, 15), 10), yamen(), 'Sunday worship at the Old People’s Centre (p305)'); at(J(H(11, 40), 15), home, 'resting'); }
       if (dz) { dongzhi(18); break; }
+      if (rng() < 0.1) { at(J(H(17, 55), 5), roof(), 'on the roof in the early evening (p322)'); at(J(H(18, 50), 10), home, 'resting'); }
       at(J(H(21, 0), 40), home, 'asleep');
       break;
     }
@@ -398,6 +533,123 @@ function makeSchedule(a, L, rng, dow) {
       at(H(23, 30), home, 'asleep');
       break;
     }
+    // ---- the people of City of Darkness Revisited (residents.js BOOK_PEOPLE) ----
+    case 'book': {
+      const P = a.book, w = a.work, T = (h) => Math.round(h * 60);
+      let open = sun ? P.sun || (P.days === 7 ? P.open : null) : P.open;
+      // On 冬至 every place shuts at 18:00 (INFERRED).
+      if (open && dz) open = open.map(([s0, s1]) => [s0, Math.min(s1, 18)]).filter(([s0, s1]) => s1 > s0);
+      // A rush order the night before: work after dinner to 2am (p237).
+      const rush = (d) => P.rush && P.rush.includes(d);
+      if (rush((dow + 6) % 7)) { S.length = 0; at(0, w, 'a rush order, after midnight (p237)'); at(T(2.2), home, 'asleep'); }
+      if (!open || !open.length) {
+        at(J(H(8, 30), 30), home, 'Sunday at home');
+        if (rng() < 0.5) { at(J(H(10, 0), 30), away('out with the family'), 'out with the family'); at(J(H(14, 0), 40), home, 'home'); }
+        at(J(H(22, 45), 20), home, 'asleep');
+        break;
+      }
+      // What the person does at hour h: the busy hours and the late work have their own words.
+      const doing = (h) => (P.busy && h >= P.busy[0] && h < P.busy[1] ? `${P.doing}: the busiest hours (p${P.page})`
+        : P.late && h >= P.late[0] ? `${P.late[1]} (p${P.page})` : P.doing);
+      at(T(open[0][0]) - 45, home, 'getting up');
+      open.forEach(([s0, s1], i) => {
+        at(T(s0) - 6, w, doing(s0));
+        if (s1 - s0 > 7 && s0 < 12 && s1 > 14) { at(T(12.5), w, 'lunch at work'); at(T(13.1), w, doing(13.1)); }
+        if (s1 - s0 > 7 && s0 < 18 && s1 > 20 && !P.busy) { at(T(18.5), w, 'dinner at work'); at(T(19.1), w, doing(19.1)); }
+        for (const h of [P.busy && P.busy[0], P.busy && P.busy[1], P.late && P.late[0]]) if (h && h > s0 && h < s1) at(T(h), w, doing(h));
+        const next = open[i + 1];
+        if (next && P.between) at(T(s1), away(P.between), `${P.between} (p${P.page})`);
+        else if (next && next[0] - s1 >= 1) at(T(s1) + 4, home, 'a break at home');
+      });
+      const end = Math.min(T(open[open.length - 1][1]) + 4, 1435);
+      at(end, home, dz ? 'home for 冬至' : 'home');
+      if (dz) { dongzhi(Math.max(18.4, end / 60 + 0.3)); break; }
+      if (rush(dow)) { at(T(20), w, 'a rush order, after dinner (p237)'); break; }
+      at(Math.max(end + 15, J(H(23, 15), 20)), home, 'asleep');
+      break;
+    }
+    case 'pigeons': {
+      // Chan Kwan Leung keeps pigeons on a roof that he rents (p318); they fly in the
+      // mid-afternoon (p321). His other hours are not recorded.
+      const w = a.work;
+      at(H(6, 50), w, 'feeding the pigeons (p318)');
+      if (sun) { at(H(9, 0), home, 'Sunday at home'); at(H(13, 45), w, 'on his roof with the pigeons'); }
+      else { at(H(8, 10), away('out (not recorded)'), 'out (not recorded)'); at(H(14, 10), w, 'on his roof with the pigeons'); }
+      at(H(14, 35), w, 'flying the pigeons (p321)');
+      at(H(16, 40), w, 'calling the pigeons back to the loft');
+      at(H(17, 20), home, dz ? 'home for 冬至' : 'dinner');
+      if (dz) { dongzhi(18.3); break; }
+      at(H(23, 0), home, 'asleep');
+      break;
+    }
+    // ---- people who come in from outside (OUTSIDERS) ----
+    case 'day_worker': {
+      S.length = 0;
+      at(0, home, home.what);
+      if (sun && rng() < 0.85) break;
+      const w = a.work, what = USE_DOING[w.what] || 'at work';
+      at(J(H(7, 45), 25), w, what);
+      if (PL.eating.length && rng() < 0.25) { const e = pick(PL.eating); at(J(H(12, 15), 10), PL.at(e.b, e.f), 'lunch at an eating house'); at(J(H(13, 0), 8), w, what); }
+      if (dz) { at(J(H(17, 15), 20), home, 'home for 冬至, outside the city'); break; }
+      at(sat && rng() < 0.5 ? J(H(13, 30), 20) : J(H(19, 0), 35), home, home.what);
+      break;
+    }
+    case 'police': {
+      // Two constables to each beat and three 8-hour shifts a day (pp251, 283), some of the
+      // beat on the roofs. The hours of the shifts are INFERRED. Both of a pair walk the same
+      // beat, thus the stops come from one seed for the pair.
+      S.length = 0;
+      const r = mulberry32(4100 + dow * 7 + a.shift);
+      const stop = () => (r() < 0.12 ? roofOf(r, B[PL.roofs[Math.floor(r() * PL.roofs.length)]]) : laneSpot(L, r, null));
+      const beat = (t0, t1) => { for (let t = t0; t < t1; t += 14 + r() * 8) at(t, stop(), 'on the beat'); };
+      if (a.shift === 2) { beat(0, H(7, 0)); at(H(7, 0), home, 'off duty'); beat(H(23, 0), H(23, 59)); }
+      else { at(0, home, home.what); const t0 = H(a.shift ? 15 : 7, 0); beat(t0, t0 + 480); at(t0 + 480, home, 'off duty'); }
+      break;
+    }
+    case 'refuse': {
+      // Refuse collectors on Tai Chang Street at 4am (p93). INFERRED: every day, until 5.30.
+      S.length = 0;
+      at(0, home, home.what);
+      let t = J(H(3, 50), 5);
+      for (let q = 0; q < 8; q++, t += 9 + rng() * 4) at(t, laneSpot(L, rng, 'tcs'), 'collecting the refuse (p93)');
+      at(t, home, 'gone with the refuse');
+      break;
+    }
+    case 'sweeper': {
+      // Sweepers of the Urban Services Department with their buckets (p104). The hours are
+      // INFERRED: 7 to 3, Monday to Saturday.
+      S.length = 0;
+      at(0, home, home.what);
+      if (sun) break;
+      for (let t = J(H(7, 0), 10); t < H(dz ? 14 : 15, 0); t += 18 + rng() * 12) at(t, laneSpot(L, rng, a.street), 'sweeping the lane (p104)');
+      at(H(dz ? 14 : 15, 5), home, home.what);
+      break;
+    }
+    case 'meter': {
+      // Meter readers with torches in the dark stairs (p98). The days are INFERRED.
+      S.length = 0;
+      at(0, home, home.what);
+      if (dow !== 1 && dow !== 2) break;
+      for (let t = J(H(9, 30), 10); t < H(16, 30); t += 12 + rng() * 8) {
+        const b = pick(B.filter((x) => x.kind === 'tenement' || x.kind === 'low'));
+        const f = Math.floor(rng() * Math.min(3, b.floors - 1));
+        at(t, { type: 'in', b: b.id, f, ...spotIn(L, b, f, -3, rng) }, 'reading the meters by torchlight (p98)');
+      }
+      at(H(16, 45), home, home.what);
+      break;
+    }
+    case 'patient': {
+      // Patients from outside go to the dentists and doctors on the outer roads, thus they do
+      // not enter the City (p242). How many, and when, is INFERRED.
+      S.length = 0;
+      at(0, home, home.what);
+      if (!PL.clinics.length || rng() > (sun ? 0.15 : 0.5)) break;
+      const c = pick(PL.clinics);
+      const t = sun ? J(H(10, 30), 50) : Math.min(J(H(14, 0), 270), dz ? H(16, 30) : 1440);
+      at(t, PL.at(c.b, c.f), c.what === 'dentist' ? 'at the dentist (p242)' : 'seeing the doctor (p242)');
+      at(t + 25 + rng() * 35, home, home.what);
+      break;
+    }
     default: {
       at(J(H(7, 0), 30), home, 'at home');
       if (dz) { dongzhi(); break; }
@@ -459,6 +711,7 @@ export class Sim {
     this.aC = new Float32Array(n * 3);
     this.selected = -1;
     this.activity = new Float32Array(144);
+    this.residents = agents.filter((a) => a.home.type === 'in').length;
   }
 
   // ---- paths ---------------------------------------------------------------------------
@@ -556,7 +809,7 @@ export class Sim {
     for (const a of this.agents) {
       a.sched = makeSchedule(a, this.L, rng, this.day % 7);
       for (let s = 0; s < a.sched.length; s++) {
-        if (a.sched[s][1].type === 'in' && a.sched[s][1] === a.home) continue;
+        if (a.sched[s][1] === a.home) continue;
         const t0 = a.sched[s][0], t1 = s + 1 < a.sched.length ? a.sched[s + 1][0] : 1440;
         for (let m = Math.floor(t0 / 10); m < Math.min(144, Math.ceil(t1 / 10)); m++) this.activity[m]++;
       }
@@ -691,7 +944,7 @@ export class Sim {
     const moving = !!a.trip;
     return {
       title: a.name,
-      role: a.real ? a.real.role : ROLES[a.role].label,
+      role: a.real ? a.real.role : (ROLES[a.role] || OUTSIDERS[a.role]).label,
       age: a.age,
       now: moving ? `walking → ${where(a.trip.to)}` : a.act,
       at: moving ? '' : where(a.loc),
