@@ -152,7 +152,8 @@ inferred.</p>
     what each person does. A body has three sizes: child, adult, and old with a stoop.</li>
   <li><span class="st prov">POSE</span>How each person stands, sits, works or sleeps, by what they do. On the cut storey,
     people take the beds, seats and work places of their own room: two to a bed, and mats on the free floor at
-    night. Who takes which place is a guess.</li>
+    night. Who takes which place is a guess. At night a lamp lights each room of the cut storey while someone in
+    it is awake: a bulb in a flat, tubes in a workshop.</li>
   <li><span class="st prov">DETAIL</span>Which building gets which colour, cage, overhang and stain; where each sheet,
     pipe bundle, postbox wall and meter bank is; and which windows are lit at each hour. The floor lines of each
     building move up or down a little from its neighbours' (p143), but the storeys that people walk on do not
