@@ -14,6 +14,7 @@
 // main axis, w across it. A corridor runs along a in straight legs, with a jog where the
 // block bends; units are slots along the corridor. Every unit meets the corridor or a stair.
 import { clipLine } from './footprint.js';
+import { pointInPolygon } from './util.js';
 
 const CORE_A = 3.0, CORE_W = 2.4; // a dog-leg stair: two flights of about 1.1 m and a landing
 const BAND = 1.2; // corridor width
@@ -90,6 +91,47 @@ function corridorLegs(b, F, side) {
   return legs.length ? legs : null;
 }
 export const legAt = (legs, a) => legs.find((L) => a < L.a1) || legs[legs.length - 1];
+
+// The built stair of a core: the largest box in the frame that stays 0.14 m inside the block,
+// or null when no dog-leg stair fits (then the plan draws the treads only). A floor landing of
+// LA at a0, two flights of RISERS risers side by side, and a half landing of LB at a1. The
+// sizes are INFERRED; "the steep stairs" of the tong lau.
+export const STAIR = { LA: 0.6, LB: 0.7, RISERS: 9 };
+const inside = (rings, x, z) => rings.reduce((n, r) => n + (pointInPolygon(x, z, r.pts) ? 1 : 0), 0) % 2 === 1;
+const insideM = (rings, x, z, m) => {
+  if (!inside(rings, x, z)) return false;
+  for (let q = 0; q < 8; q++) if (!inside(rings, x + Math.cos(q * Math.PI / 4) * m, z + Math.sin(q * Math.PI / 4) * m)) return false;
+  return true;
+};
+export function stairFit(b, c) {
+  if (c.fit !== undefined) return c.fit;
+  const F = frameOf(b), S = 0.2;
+  const na = Math.round((c.a1 - c.a0) / S), nw = Math.round((c.w1 - c.w0) / S);
+  // Prefix sums of the sample points that are inside: then each box is one lookup.
+  const sum = Array.from({ length: na + 1 }, () => new Int16Array(nw + 1));
+  for (let i = 0; i < na; i++)
+    for (let j = 0; j < nw; j++) {
+      const [x, z] = toXZ(F, c.a0 + (i + 0.5) * S, c.w0 + (j + 0.5) * S);
+      sum[i + 1][j + 1] = (insideM(b.rings, x, z, 0.14) ? 1 : 0) + sum[i][j + 1] + sum[i + 1][j] - sum[i][j];
+    }
+  let best = null, bs = -1;
+  for (let i0 = 0; i0 < na; i0++)
+    for (let i1 = i0 + 1; i1 <= na; i1++)
+      for (let j0 = 0; j0 < nw; j0++)
+        for (let j1 = j0 + 1; j1 <= nw; j1++) {
+          const n = (i1 - i0) * (j1 - j0);
+          if (sum[i1][j1] - sum[i0][j1] - sum[i1][j0] + sum[i0][j0] !== n) continue;
+          const s = Math.min((i1 - i0) * S, 3) * 2 + Math.min((j1 - j0) * S, 2.4);
+          if (s > bs) { bs = s; best = { a0: c.a0 + i0 * S, a1: c.a0 + i1 * S, w0: c.w0 + j0 * S, w1: c.w0 + j1 * S }; }
+        }
+  c.fit = best && best.w1 - best.w0 >= 1.2 && best.a1 - best.a0 >= 2.2 ? best : null;
+  return c.fit;
+}
+// The opening in the floor over a built stair: both flights and the half landing.
+export function stairHole(b, c) {
+  const r = stairFit(b, c);
+  return r ? { a0: r.a0 + STAIR.LA, a1: r.a1, w0: r.w0, w1: r.w1 } : null;
+}
 
 // Stairs. A block with a lane frontage and room for a stair gets its own; a long block
 // gets one at each end. A block with no frontage shares the stair of a neighbour: in its
@@ -449,7 +491,7 @@ export function unitName(b, f, u) {
 // [[x, z] x4, colour key].
 export function planDrawing(L, b, f) {
   const P = planAt(b, f);
-  const out = { walls: [], fine: [], treads: [], plates: [] };
+  const out = { walls: [], fine: [], treads: [], plates: [], flats: [] };
   if (!P || !b.rings.length) return out;
   const F = frameOf(b);
   const along = (w, a0, a1, gaps, list) => {
@@ -497,9 +539,16 @@ export function planDrawing(L, b, f) {
     const [w0, w1] = u.where === 'below' ? [lw[0], G.w0] : u.where === 'above' ? [G.w1, lw[1]] : lw;
     across(u.a1, w0, w1, gaps, out.walls);
   }
-  // Stairs: the core walls, a wall between the flights, the treads, and the landing.
+  // Stairs: the core walls, and the floor round the opening of a built stair (cityMesh.js
+  // builds its flights); or, where no stair fits, a wall between the flights and the treads.
   for (const c of P.cores) {
-    quad(c.a0, c.a1, c.w0, c.w1, 'stair');
+    const h = stairHole(b, c);
+    if (h) {
+      quad(c.a0, h.a0, c.w0, c.w1, 'stair');
+      if (h.w0 > c.w0 + 0.02) quad(h.a0, c.a1, c.w0, h.w0, 'stair');
+      if (h.w1 < c.w1 - 0.02) quad(h.a0, c.a1, h.w1, c.w1, 'stair');
+      if (h.a1 < c.a1 - 0.02) quad(h.a1, c.a1, h.w0, h.w1, 'stair');
+    } else quad(c.a0, c.a1, c.w0, c.w1, 'stair');
     const gapsW = [];
     for (const u of P.units) if (u.door && u.door.axis === 'a' && (Math.abs(u.door.a - c.a0) < 1e-6 || Math.abs(u.door.a - c.a1) < 1e-6)) gapsW.push([u.door.w - 0.45, u.door.w + 0.45, u.door.a]);
     for (const w of [c.w0, c.w1]) {
@@ -508,6 +557,7 @@ export function planDrawing(L, b, f) {
       if (!open && !(lw && (Math.abs(w - lw[0]) < 0.3 || Math.abs(w - lw[1]) < 0.3))) along(w, c.a0, c.a1, [], out.walls);
     }
     for (const a of [c.a0, c.a1]) across(a, c.w0, c.w1, gapsW.filter((g) => Math.abs(g[2] - a) < 1e-6).map((g) => [g[0], g[1]]), out.walls);
+    if (h) continue;
     const wm = (c.w0 + c.w1) / 2, land = c.a1 - 0.9;
     out.fine.push([...toXZ(F, c.a0, wm), ...toXZ(F, land, wm)]);
     for (let a = c.a0 + 0.27; a < land; a += 0.27) {
@@ -517,13 +567,16 @@ export function planDrawing(L, b, f) {
   }
   // Flats: cubicles and bed spaces after the 1987 survey plan (p340), fitted to the slot.
   if (P.kind === 'home')
-    for (const u of P.units) if (u.door) fitFlat(F, u, P.cores, !!(b.unitNotes && b.unitNotes[`${f}:${u.id}`]), out.fine);
+    for (const u of P.units) {
+      const map = u.door && fitFlat(F, u, P.cores, !!(b.unitNotes && b.unitNotes[`${f}:${u.id}`]), out.fine);
+      if (map) out.flats.push({ u, map });
+    }
   return out;
 }
 
 // The 4/F flat of 6 Sai Shing Road (p340), in metres: x along the outer wall, y from the
 // outer wall (0) to the door wall (5.38). Walls, with the openings left out.
-const FLAT = {
+export const FLAT = {
   w: 4.6, d: 5.38,
   walls: [
     [2.2, 0, 2.2, 1.62], // cubicle C | kitchen D
@@ -546,14 +599,15 @@ function fitFlat(F, u, cores, force, list) {
     pt = (s, t) => toXZ(F, t, s);
   }
   const wa = along[1] - along[0], dd = Math.abs(depth[1] - depth[0]);
-  if (!force && (wa < 3.2 || wa > 7.5 || dd < 3.6 || dd > 8.5)) return;
+  if (!force && (wa < 3.2 || wa > 7.5 || dd < 3.6 || dd > 8.5)) return null;
   const [ra0, ra1, rw0, rw1] = d.axis === 'w'
     ? [along[0], along[1], Math.min(...depth), Math.max(...depth)] : [Math.min(...depth), Math.max(...depth), along[0], along[1]];
-  if (cores.some((c) => c.a0 < ra1 - 0.05 && c.a1 > ra0 + 0.05 && c.w0 < rw1 - 0.05 && c.w1 > rw0 + 0.05)) return;
+  if (cores.some((c) => c.a0 < ra1 - 0.05 && c.a1 > ra0 + 0.05 && c.w0 < rw1 - 0.05 && c.w1 > rw0 + 0.05)) return null;
   // The template's door is near its x end: mirror it to meet the unit's door.
   const flip = Math.abs(at - along[0]) < Math.abs(at - along[1]);
   const map = (x, y) => pt(flip ? along[1] - (x / FLAT.w) * wa : along[0] + (x / FLAT.w) * wa, depth[0] + (y / FLAT.d) * (depth[1] - depth[0]));
   for (const [x0, y0, x1, y1] of FLAT.walls) list.push([...map(x0, y0), ...map(x1, y1)]);
+  return map;
 }
 
 export { FLOOR as floorName };

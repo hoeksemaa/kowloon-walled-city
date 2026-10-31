@@ -3,19 +3,15 @@
 // plot outlines from footprint.js: a plot line at an angle is one straight wall.
 import * as THREE from 'three';
 import { STOREY, MAX_FLOORS } from './layout.js';
-import { mulberry32, hash2 } from './util.js';
+import { mulberry32, hash2, pointInPolygon } from './util.js';
 import { LANE, YARD, ROAD, OUTSIDE } from './footprint.js';
 import { Builder, polygonsOf, triangulate, wallFrame, insideWithMargin } from './geom.js';
 import { planSigns, SignAtlas, emitSign } from './signs.js';
-import { planDrawing, frameOf, toXZ } from './floorplan.js';
+import { planDrawing, frameOf, toXZ, stairHole, planAt } from './floorplan.js';
+import { emitStairs, furnish } from './interiors.js';
+import { K, CUT_H } from './kinds.js';
 
-export const CUT_H = 1.1; // height of the plan cut above a floor, metres
-
-// Surface kinds, read by the facade shader.
-export const K = {
-  wall: 0, plate: 1, roof: 2, alley: 3, parapet: 4, prop: 5, cage: 6, ac: 7,
-  laundry: 8, sign: 9, tube: 10, plain: 11, poche: 12,
-};
+export { K, CUT_H };
 
 export const USE_COLORS = {
   home: '#cdbb9f',
@@ -51,8 +47,23 @@ export function buildLevels(L) {
     alley: col('#433d3c'), yard: col('#6c695f'), road: col('#5f5c55'), tube: col('#e8f5ee'), ac: col('#cfcac0'),
     bamboo: col('#b39b62'), yamenWall: col('#8c877c'), yamenRoof: col('#4f5651'), white: col('#ffffff'),
   };
-  // Triangles of each footprint, made once and used at every storey.
+  // Triangles of each footprint, made once and used at every storey. Above G/F the floor has
+  // an opening over each built stair (interiors.js).
   const tris = B.map((b) => polygonsOf(b.rings).map(triangulate));
+  const holed = B.map((b, i) => {
+    const holes = (b.cores || []).map((c) => stairHole(b, c)).filter(Boolean);
+    if (!holes.length) return tris[i];
+    const F = frameOf(b), polys = polygonsOf(b.rings);
+    for (const h of holes) {
+      const q = [[h.a0, h.w0], [h.a1, h.w0], [h.a1, h.w1], [h.a0, h.w1]].map(([a, w]) => toXZ(F, a, w));
+      const cx = q.reduce((s2, p) => s2 + p[0], 0) / 4, cz = q.reduce((s2, p) => s2 + p[1], 0) / 4;
+      const poly = polys.find((pl) => pointInPolygon(cx, cz, pl.outer)) || polys[0];
+      poly.holes.push(q);
+    }
+    return polys.map(triangulate);
+  });
+  // The Yamen's halls light up together when the pointer is over one of them.
+  const yamenTower = L.yamenId !== undefined ? B[L.yamenId].tower : -1;
   const exposedAt = (o, k) => o < 0 || B[o].floors <= k;
   // How dark a lane wall is: 1 in a lane under 2 m, less in a wider one. Daylight reaches the
   // ground "only in those few places where narrow gaps had been left" (p103); Lo Yan Street
@@ -83,13 +94,14 @@ export function buildLevels(L) {
     for (const b of B) {
       if (b.floors <= k) continue;
       if (b.kind === 'yamen') {
-        buildYamen(M, b, tris[b.id], C, useCol);
+        buildYamen(M, b, tris[b.id], C, useCol, yamenTower);
         continue;
       }
       const y0 = k * STOREY, y1 = y0 + STOREY;
       // aInfo.x is the tower: the shader varies and highlights by tower.
       const info = (kind, w = 1) => [b.tower, k, kind, w];
-      for (const t of tris[b.id]) M.flat(t, y0 + 0.02, useCol[b.uses[k]] || useCol.home, info(K.plate));
+      for (const t of (k ? holed : tris)[b.id]) M.flat(t, y0 + 0.02, useCol[b.uses[k]] || useCol.home, info(K.plate));
+      emitStairs(M, b, k);
 
       b.rings.forEach((ring, ri) => ring.edges.forEach((e, ei) => {
         if (!exposedAt(e.other, k)) return;
@@ -362,8 +374,8 @@ function roofProps(M, L, b, ry, rng, ant, info) {
 // A single-storey hall of the Yamen compound: walls on the plot outline and a pitched
 // tile roof over its long axis. The restored halls face SSE (OSM); the plan shows the
 // compound as the old people's centre, with the youth centre on its north side.
-function buildYamen(M, b, tris, C, useCol) {
-  const info = (kind) => [b.tower, 0, kind, 1];
+function buildYamen(M, b, tris, C, useCol, tower) {
+  const info = (kind) => [tower, 0, kind, 1];
   for (const t of tris) M.flat(t, 0.03, useCol.yamen, info(K.plate));
   const wh = 3.4, ov = 0.5;
   for (const ring of b.rings)
@@ -406,7 +418,7 @@ export function buildPlan(L, c) {
   const UV = [[0, 0], [1, 0], [1, 1], [0, 1]];
   for (const b of L.buildings) {
     if (b.floors <= c || b.kind === 'yamen') continue;
-    const info = [b.tower, c, K.poche, 1];
+    const info = [b.tower, c, K.poche, 1], faceInfo = [b.tower, c, K.iwall, 1];
     for (const ring of b.rings)
       for (const e of ring.edges) {
         const fr = wallFrame(e), q = 0.2;
@@ -420,7 +432,7 @@ export function buildPlan(L, c) {
       const dx = X1 - X0, dz = Z1 - Z0, l = Math.hypot(dx, dz);
       if (l < 0.1) return;
       const nx = -dz / l, nz = dx / l, y = y0 + h;
-      M.vwall([X0, Z0], [X1, Z1], y0, y, [nx, 0, nz], c0, 0, l, info);
+      M.vwall([X0, Z0], [X1, Z1], y0, y, [nx, 0, nz], c0, 0, l, faceInfo);
       M.face([[X0 + nx * t, y + 0.005, Z0 + nz * t], [X1 + nx * t, y + 0.005, Z1 + nz * t], [X1 - nx * t, y + 0.005, Z1 - nz * t], [X0 - nx * t, y + 0.005, Z0 - nz * t]],
         [0, 1, 0], cap, UV, info);
       if (dashed) lines.push(X0, y + 0.03, Z0, X1, y + 0.03, Z1);
@@ -430,6 +442,7 @@ export function buildPlan(L, c) {
     for (const w of d.walls) emit(w, 0.07, CUT_H, part, black, true);
     for (const w of d.fine) emit(w, 0.035, CUT_H * 0.8, thin, part, false);
     for (const w of d.treads) emit(w, 0.02, 0.08, black, black, false);
+    furnish(M, L, b, c, planAt(b, c), d);
     // On G/F, a wall of postboxes at each entrance (p188) and a bank of meters at the stair
     // (p101). Their places beside the stair are INFERRED.
     if (c === 0 && b.cores.length) {
@@ -462,7 +475,7 @@ float kind = vInfo.z;
 float bid = vInfo.x;
 float flr = vInfo.y;
 if (uIsCut > 0.5) {
-  if (kind == 2.0 || kind == 4.0 || kind == 5.0) discard;
+  if (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0) discard;
   if (kind != 1.0 && kind != 3.0 && vLocalY > uCutH + 0.05) discard;
 }
 // Light colours measured in the photos: tubes near-white (#f4f6f1), windows at dusk blue-white
@@ -544,18 +557,53 @@ if (kind < 0.5) {
   }
 } else if (kind == 1.0) {
   float pw = vInfo.w;
-  if (pw > 2.5) {
-    // a stair: mosaic treads (p165)
-    diffuseColor.rgb *= 0.75 + 0.45 * hash12(floor(vWall * 9.0));
-  } else if (pw > 1.5) {
+  vec2 q = vWall;
+  if (pw > 2.5 && pw < 3.5) {
+    // the floor round a stair: mosaic (p165)
+    diffuseColor.rgb *= 0.75 + 0.45 * hash12(floor(q * 9.0));
+  } else if (pw > 1.5 && pw < 2.5) {
     // a corridor: whitewash, the brightest space inside, lit by tubes (p177)
+    diffuseColor.rgb *= 0.9 + 0.12 * hash12(floor(q * vec2(3.0, 0.7)));
     glow += TUBE * (0.06 + 0.3 * uNight);
-  } else {
-    diffuseColor.rgb *= 0.9 + 0.1 * hash12(floor(vWall * 1.6) + bid);
+  } else if (pw < 1.5) {
+    diffuseColor.rgb *= 0.9 + 0.1 * hash12(floor(q * 1.6) + bid);
     // Tiles in the cut view: a checker (p156) or a small mosaic (pp25, 156).
     float tk = hash12(vec2(bid, flr * 1.7));
-    if (uIsCut > 0.5 && tk < 0.35) diffuseColor.rgb *= mix(0.8, 1.12, mod(floor(vWall.x / 0.3) + floor(vWall.y / 0.3), 2.0));
-    else if (uIsCut > 0.5 && tk < 0.55) diffuseColor.rgb *= 0.9 + 0.18 * hash12(floor(vWall * 7.0));
+    if (uIsCut > 0.5 && tk < 0.35) diffuseColor.rgb *= mix(0.8, 1.12, mod(floor(q.x / 0.3) + floor(q.y / 0.3), 2.0));
+    else if (uIsCut > 0.5 && tk < 0.55) diffuseColor.rgb *= 0.9 + 0.18 * hash12(floor(q * 7.0));
+  } else if (pw < 4.5) {
+    // terrazzo: chips in cement, with brass strips
+    diffuseColor.rgb *= 0.86 + 0.22 * hash12(floor(q * 30.0));
+    if (hash12(floor(q * 30.0) + 3.1) > 0.92) diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.7, 0.66, 0.6), 0.6);
+    if (min(fract(q.x / 1.2), fract(q.y / 1.2)) < 0.012) diffuseColor.rgb *= vec3(1.15, 0.9, 0.55);
+  } else if (pw < 5.5) {
+    // a checker of 30 cm tiles (p156)
+    vec2 g = q / 0.3;
+    diffuseColor.rgb *= mix(0.58, 1.1, mod(floor(g.x) + floor(g.y), 2.0));
+    if (min(fract(g.x), fract(g.y)) < 0.04) diffuseColor.rgb *= 0.7;
+  } else if (pw < 6.5) {
+    // a small mosaic (pp25, 156)
+    vec2 g = q * 20.0;
+    diffuseColor.rgb *= 0.8 + 0.32 * hash12(floor(g) + bid);
+    if (min(fract(g.x), fract(g.y)) < 0.1) diffuseColor.rgb *= 0.72;
+  } else if (pw < 7.5) {
+    // linoleum with a printed pattern
+    vec2 g = fract(q * 1.6) - 0.5;
+    float r = length(g), dm = abs(g.x) + abs(g.y);
+    diffuseColor.rgb *= 0.9 + 0.08 * vnoise(q * 3.0);
+    diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * 1.45, smoothstep(0.025, 0.0, abs(r - 0.28)));
+    diffuseColor.rgb *= 1.0 - 0.18 * step(0.46, dm);
+  } else if (pw < 8.5) {
+    // the cement floor of a workshop, with oil stains
+    diffuseColor.rgb *= 0.78 + 0.3 * vnoise(q * 0.7) + 0.06 * hash12(floor(q * 40.0));
+    float oil = vnoise(q * 1.3 + 7.0);
+    diffuseColor.rgb *= 1.0 - 0.45 * smoothstep(0.62, 0.8, oil);
+  } else {
+    // white wall tiles on the floor of a kitchen or a toilet, and wet
+    vec2 g = q / 0.15;
+    diffuseColor.rgb *= 0.92 + 0.1 * hash12(floor(g));
+    if (min(fract(g.x), fract(g.y)) < 0.06) diffuseColor.rgb *= 0.68;
+    diffuseColor.rgb *= 1.0 - 0.25 * smoothstep(0.55, 0.75, vnoise(q * 2.0 + 3.0));
   }
   // Floors are only seen in the cut and exploded views; light them like lit rooms at night.
   glow += diffuseColor.rgb * (0.08 + 0.42 * uNight);
@@ -580,6 +628,70 @@ if (kind < 0.5) {
   vec3 inner = mix(vec3(0.03, 0.022, 0.018), lc * 0.3, lit * uNight);
   glow += lc * lit * uNight * 0.55 * (1.0 - bar);
   diffuseColor.rgb = mix(inner, diffuseColor.rgb, bar);
+} else if (kind == 13.0) {
+  // A stair: mosaic treads with a dark nosing, plain risers, whitewashed stringers (p165).
+  float sc = vInfo.w;
+  if (sc < 0.5) {
+    diffuseColor.rgb *= 0.8 + 0.3 * hash12(floor(vWall * 22.0) + bid);
+    if (vWall.y < 0.045) diffuseColor.rgb *= vec3(0.5, 0.46, 0.4);
+  } else if (sc < 1.5) {
+    diffuseColor.rgb *= (0.85 + 0.15 * hash12(floor(vWall * 12.0))) * (0.75 + 0.25 * smoothstep(0.0, 0.17, vWall.y));
+  } else {
+    diffuseColor.rgb *= 0.82 + 0.18 * hash12(floor(vWall * vec2(2.0, 5.0)) + bid);
+  }
+  glow += diffuseColor.rgb * (0.05 + 0.3 * uNight);
+} else if (kind == 14.0) {
+  // the wall of a stair well, darker low down
+  diffuseColor.rgb *= (0.55 + 0.45 * smoothstep(0.0, 2.5, vWall.y)) * (0.85 + 0.15 * hash12(floor(vWall * vec2(1.5, 3.0)) + bid));
+  glow += diffuseColor.rgb * (0.03 + 0.2 * uNight);
+} else if (kind == 15.0) {
+  // Furniture and machines (interiors.js); vInfo.w picks the surface.
+  float fc = vInfo.w;
+  vec2 q = vWall;
+  float n = hash12(floor(q * 9.0) + bid);
+  if (fc < 0.5) diffuseColor.rgb *= 0.92 + 0.1 * n;
+  else if (fc < 1.5) diffuseColor.rgb *= 0.86 + 0.18 * hash12(vec2(floor((q.x + q.y * 0.15) * 16.0), bid));
+  else if (fc < 2.5) {
+    vec2 g = q * 8.0;
+    float h = hash12(vec2(bid, flr));
+    diffuseColor.rgb *= h < 0.5 ? mix(0.78, 1.1, mod(floor(g.x) + floor(g.y), 2.0)) : 0.88 + 0.25 * step(0.82, hash12(floor(g)));
+  } else if (fc < 3.5) {
+    // a television: on in the evening in some flats
+    float on = step(0.35, hash12(vec2(bid, flr + floor(q.x)))) * step(17.5, uHour) * step(uHour, 23.5);
+    vec3 tvC = vec3(0.35, 0.5, 0.8) * (0.75 + 0.25 * sin(uHour * 700.0 + bid));
+    diffuseColor.rgb = mix(vec3(0.03, 0.035, 0.04), tvC * 0.5, on);
+    glow += tvC * on * 0.9;
+  } else if (fc < 4.5) glow += vec3(0.9, 0.08, 0.04) * (0.5 + 0.7 * uNight);
+  else if (fc < 5.5) diffuseColor.rgb *= 0.95 + 0.15 * n;
+  else if (fc < 6.5) {
+    // a wall of drawers, with brass knobs (p228)
+    vec2 g = vec2(q.x * 4.0, q.y * 5.0), fg = fract(g);
+    diffuseColor.rgb *= 1.0 - 0.45 * clamp(step(fg.x, 0.06) + step(fg.y, 0.08), 0.0, 1.0);
+    if (length(fg - vec2(0.5, 0.55)) < 0.08) diffuseColor.rgb = vec3(0.55, 0.42, 0.12);
+  } else if (fc < 7.5) {
+    // shelves of goods
+    vec2 g = vec2(q.x * 7.0, q.y * 3.2), cl = floor(g);
+    float h = hash12(cl + bid);
+    vec3 gc = h < 0.2 ? vec3(0.55, 0.06, 0.04) : h < 0.4 ? vec3(0.7, 0.55, 0.08) : h < 0.55 ? vec3(0.08, 0.25, 0.5) : h < 0.7 ? vec3(0.75, 0.72, 0.65) : h < 0.85 ? vec3(0.12, 0.35, 0.12) : vec3(0.45, 0.3, 0.16);
+    diffuseColor.rgb = mix(gc * (0.7 + 0.3 * hash12(cl + 3.0)), diffuseColor.rgb, step(fract(g.y), 0.14));
+  } else if (fc < 8.5) {
+    // fresh noodles hung on the racks (p171)
+    float st = step(0.4, fract(q.x * 28.0 + hash12(vec2(floor(q.x * 28.0), 1.0))));
+    diffuseColor.rgb *= 0.72 + 0.32 * st;
+  } else if (fc < 9.5) glow += vec3(0.22, 0.28, 0.28) * (0.15 + 0.6 * uNight);
+  else if (fc < 10.5) diffuseColor.rgb *= 0.85 + 0.15 * step(0.5, fract(q.y * 20.0));
+  else if (fc < 11.5) diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.7), 0.6 * step(0.93, hash12(floor(q * vec2(30.0, 12.0)) + bid)));
+  glow += diffuseColor.rgb * (0.04 + 0.35 * uNight);
+} else if (kind == 16.0) {
+  // The inside walls: whitewash, a dark skirting, grime low down, and now and then a
+  // calendar or a poster.
+  float v = vWall.y, u = vWall.x;
+  diffuseColor.rgb *= 0.9 + 0.1 * hash12(floor(vec2(u * 1.5, v * 3.0)) + bid);
+  if (v < 0.1) diffuseColor.rgb *= 0.5;
+  else diffuseColor.rgb *= 0.78 + 0.22 * smoothstep(0.1, 1.0, v);
+  float pc = floor(u / 1.7), ph = hash12(vec2(pc, bid + flr)), px = fract(u / 1.7);
+  if (ph > 0.72 && px > 0.35 && px < 0.62 && v > 0.6) diffuseColor.rgb = ph > 0.9 ? vec3(0.55, 0.05, 0.04) : ph > 0.81 ? vec3(0.78, 0.76, 0.68) : vec3(0.7, 0.5, 0.12);
+  glow += diffuseColor.rgb * (0.04 + 0.3 * uNight);
 } else if (kind == 9.0) {
   glow += diffuseColor.rgb * 0.6 * uNight;
 } else if (kind == 10.0) {
@@ -596,6 +708,31 @@ if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
 }
 `;
 
+// The shadow pass of a storey: it drops what the colour pass drops on the cut storey, so the
+// cut walls do not shade the rooms.
+export function makeBuildingDepth(m, shared) {
+  const d = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking, side: THREE.DoubleSide });
+  d.onBeforeCompile = (s) => {
+    Object.assign(s.uniforms, { uCutH: shared.uCutH, uIsCut: m.userData.uIsCut });
+    s.vertexShader = s.vertexShader
+      .replace('#include <common>', `#include <common>
+attribute vec4 aInfo; varying vec4 vInfo; varying float vLocalY;`)
+      .replace('#include <begin_vertex>', `#include <begin_vertex>
+vInfo = aInfo; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)};`);
+    s.fragmentShader = s.fragmentShader
+      .replace('#include <common>', `#include <common>
+uniform float uIsCut; uniform float uCutH; varying vec4 vInfo; varying float vLocalY;`)
+      .replace('void main() {', `void main() {
+  float kind = vInfo.z;
+  if (uIsCut > 0.5) {
+    if (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0) discard;
+    if (kind != 1.0 && kind != 3.0 && vLocalY > uCutH + 0.05) discard;
+  }`);
+  };
+  d.customProgramCacheKey = () => 'kwc-building-depth';
+  return d;
+}
+
 export function makeBuildingMaterial(shared) {
   const m = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide });
   m.userData.uIsCut = { value: 0 };
@@ -611,7 +748,9 @@ vWall = aWall; vInfo = aInfo; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(
       .replace('#include <common>', `#include <common>
 uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutH;
 varying vec2 vWall; varying vec4 vInfo; varying float vLocalY;
-float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }`)
+float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+float vnoise(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(hash12(i), hash12(i + vec2(1.0, 0.0)), f.x), mix(hash12(i + vec2(0.0, 1.0)), hash12(i + vec2(1.0, 1.0)), f.x), f.y); }`)
       .replace('#include <color_fragment>', `#include <color_fragment>
 ${FRAG}`)
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
