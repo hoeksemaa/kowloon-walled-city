@@ -30,6 +30,11 @@ const C = {
   white: col('#ecebe4'), steel: col('#9aa0a3'), dark: col('#2a2826'), black: col('#141414'),
   red: col('#a8251c'), gold: col('#c9a23c'), green: col('#2f5f3f'), table: col('#2f6b4a'),
   concrete: col('#9a958b'), tile: col('#dcdcd4'), glass: col('#a9c4c9'), bamboo: col('#b39b62'),
+  china: pal(['#eef0ea', '#dfe8ec', '#e9e4d6', '#cfdde0']),
+  flask: pal(['#c8352b', '#e0b02c', '#3f8f5a', '#e87fa0', '#2b62a8', '#e8e2d0']),
+  bottle: pal(['#3a2418', '#5a3418', '#c9a23c', '#5a7a3a', '#e8e2d0']),
+  book: pal(['#8a2a22', '#2b4a7a', '#3f6a4a', '#c9b48a', '#d9d4c4', '#6a4a7a']),
+  alu: col('#b9bdbb'), paper: col('#dcd8cc'), ivory: col('#ece4cc'), back: col('#2f6b4a'),
 };
 
 // ---- stairs --------------------------------------------------------------------------------
@@ -167,6 +172,131 @@ const stools = (X, R, s, t, r, n) => {
     X.spot(R, s + Math.cos(a) * r, t + Math.sin(a) * r, 'seat', -Math.cos(a), -Math.sin(a));
   }
 };
+
+// Small things: on the tops of the pieces, on the tables and on the floor. draw(X, R, s, t, h)
+// centres the thing at (s, t) of the frame R, on a surface at height h. r: the radius of the
+// floor that it takes. INFERRED: what lies where. The red, white and blue bag, the thermos
+// flask and the rice cooker are the usual things of a Hong Kong home of the time.
+const tone = (c, k) => c.clone().multiplyScalar(k);
+const ITEMS = {
+  bowl: { r: 0.07, draw: (X, R, s, t, h) => X.round(R, s, t, 0.065, h, h + 0.045, X.pick(C.china), 0, 6) },
+  bowls: { r: 0.07, draw(X, R, s, t, h) {
+    const c = X.pick(C.china);
+    for (let q = 0; q < 3; q++) X.round(R, s, t, 0.066 - q * 0.004, h + q * 0.032, h + q * 0.032 + 0.04, c, 0, 6);
+  } },
+  cup: { r: 0.04, draw: (X, R, s, t, h) => X.round(R, s, t, 0.035, h, h + 0.08, X.pick(C.china), 0, 5) },
+  teapot: { r: 0.08, draw(X, R, s, t, h) {
+    const c = X.pick(C.china);
+    X.round(R, s, t, 0.075, h, h + 0.1, c, 0, 7);
+    X.round(R, s, t, 0.03, h + 0.1, h + 0.13, c, 0, 5);
+    X.part(R, s + 0.06, s + 0.13, t - 0.012, t + 0.012, h + 0.04, h + 0.065, c);
+  } },
+  thermos: { r: 0.06, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.058, h, h + 0.3, X.pick(C.flask), 5, 7);
+    X.round(R, s, t, 0.038, h + 0.3, h + 0.35, C.white, 0, 6);
+  } },
+  pot: { r: 0.14, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.13, h, h + 0.13, C.alu, 5, 9);
+    X.round(R, s, t, 0.115, h + 0.13, h + 0.15, tone(C.alu, 0.85), 5, 9);
+    X.round(R, s, t, 0.02, h + 0.15, h + 0.18, C.dark, 0, 5);
+  } },
+  cooker: { r: 0.14, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.13, h, h + 0.19, C.white, 5, 9);
+    X.round(R, s, t, 0.11, h + 0.19, h + 0.23, X.pick(C.flask), 5, 9);
+  } },
+  bottles: { r: 0.12, draw(X, R, s, t, h) {
+    for (let q = 0; q < 3; q++) X.round(R, s + (q - 1) * 0.07, t + (X.rng() - 0.5) * 0.05, 0.03, h, h + 0.17 + X.rng() * 0.08, X.pick(C.bottle), 0, 5);
+  } },
+  board: { r: 0.18, draw: (X, R, s, t, h) => X.part(R, s - 0.16, s + 0.16, t - 0.11, t + 0.11, h, h + 0.03, C.bamboo, 1) },
+  radio: { r: 0.14, draw(X, R, s, t, h) {
+    const c = X.pick([C.dark, C.red, col('#c9c4b5'), col('#4f6b5a')]);
+    X.part(R, s - 0.13, s + 0.13, t - 0.05, t + 0.05, h, h + 0.15, c, 5);
+    X.part(R, s - 0.1, s + 0.1, t + 0.05, t + 0.055, h + 0.03, h + 0.11, C.dark, 10);
+  } },
+  books: { r: 0.12, draw(X, R, s, t, h) {
+    let y = h;
+    for (let q = 2 + Math.floor(X.rng() * 3); q > 0; q--) {
+      const d = (X.rng() - 0.5) * 0.04;
+      X.part(R, s - 0.1 + d, s + 0.1 + d, t - 0.075, t + 0.075, y, y + 0.035, X.pick(C.book));
+      y += 0.035;
+    }
+  } },
+  paper: { r: 0.2, draw: (X, R, s, t, h) => X.part(R, s - 0.19, s + 0.19, t - 0.14, t + 0.14, h, h + 0.008, C.paper, 10) },
+  // a game of mahjong: four walls of tiles face down, and some tiles face up in the middle
+  mahjong: { r: 0.3, draw(X, R, s, t, h) {
+    for (const [s0, s1, t0, t1] of [[-0.22, 0.2, -0.24, -0.2], [0.2, 0.24, -0.22, 0.2], [-0.2, 0.22, 0.2, 0.24], [-0.24, -0.2, -0.2, 0.22]]) {
+      X.part(R, s + s0, s + s1, t + t0, t + t1, h, h + 0.025, C.ivory);
+      X.part(R, s + s0, s + s1, t + t0, t + t1, h + 0.025, h + 0.045, C.back);
+    }
+    for (let q = 0; q < 5; q++) {
+      const a = (X.rng() - 0.5) * 0.24, b = (X.rng() - 0.5) * 0.24;
+      X.part(R, s + a - 0.015, s + a + 0.015, t + b - 0.02, t + b + 0.02, h, h + 0.02, C.ivory);
+    }
+  } },
+  basin: { r: 0.24, draw(X, R, s, t, h) {
+    const c = X.pick(C.plastic);
+    X.round(R, s, t, 0.22, h, h + 0.11, c, 0, 10);
+    X.round(R, s, t, 0.18, h + 0.11, h + 0.112, tone(c, 0.72), 0, 10);
+  } },
+  bucket: { r: 0.16, draw: (X, R, s, t, h) => X.round(R, s, t, 0.15, h, h + 0.32, X.pick(C.plastic), 0, 8) },
+  fan: { r: 0.2, draw(X, R, s, t, h) {
+    const c = X.pick([col('#9fc3c8'), col('#e8e4da'), col('#7fae8f'), col('#d9a0a8')]);
+    X.round(R, s, t, 0.14, h, h + 0.04, c, 5, 8);
+    X.round(R, s, t, 0.02, h + 0.04, h + 0.62, C.steel, 5, 5);
+    X.part(R, s - 0.17, s + 0.17, t - 0.04, t + 0.04, h + 0.55, h + 0.89, c, 10);
+    X.part(R, s - 0.06, s + 0.06, t + 0.04, t + 0.14, h + 0.66, h + 0.78, c, 5);
+  } },
+  // the red, white and blue bag of woven plastic
+  bag: { r: 0.24, draw(X, R, s, t, h) {
+    const hh = 0.24 + X.rng() * 0.1;
+    X.part(R, s - 0.21, s - 0.07, t - 0.12, t + 0.12, h, h + hh, col('#2b4f9a'), 2);
+    X.part(R, s - 0.07, s + 0.07, t - 0.12, t + 0.12, h, h + hh, col('#e8e6df'), 2);
+    X.part(R, s + 0.07, s + 0.21, t - 0.12, t + 0.12, h, h + hh, col('#b8302a'), 2);
+  } },
+  slippers: { r: 0.16, draw(X, R, s, t, h) {
+    for (let q = 0; q < 2; q++) {
+      const c = X.pick(C.plastic), o = q * 0.22 - 0.11 + (X.rng() - 0.5) * 0.04;
+      X.part(R, s + o - 0.09, s + o - 0.01, t - 0.12, t + 0.12, h, h + 0.025, c);
+      X.part(R, s + o + 0.01, s + o + 0.09, t - 0.11, t + 0.13, h, h + 0.025, c);
+    }
+  } },
+  papers: { r: 0.22, draw(X, R, s, t, h) {
+    let y = h;
+    for (let q = 3 + Math.floor(X.rng() * 4); q > 0; q--) {
+      const d = (X.rng() - 0.5) * 0.05;
+      X.part(R, s - 0.2 + d, s + 0.2 + d, t - 0.15, t + 0.15, y, y + 0.04, C.paper, 10);
+      y += 0.04;
+    }
+  } },
+  // a drum of plastic pellets, its lid off
+  drum: { r: 0.27, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.25, h, h + 0.56, X.pick([col('#2b62a8'), col('#3a5f8a'), col('#7d8a9c')]), 5, 10);
+    X.round(R, s, t, 0.21, h + 0.56, h + 0.57, X.pick(C.plastic), 2, 10);
+  } },
+  scraps: { r: 0.32, draw(X, R, s, t, h) {
+    for (let q = 0; q < 4; q++) {
+      const a = (X.rng() - 0.5) * 0.3, b = (X.rng() - 0.5) * 0.3, l = 0.08 + X.rng() * 0.14;
+      X.part(R, s + a - l, s + a + l, t + b - 0.06, t + b + 0.06, h, h + 0.05 + X.rng() * 0.12, X.pick([C.steel, ...C.machine, ...C.card]), 5);
+    }
+  } },
+  trolley: { r: 0.45, draw(X, R, s, t, h) {
+    for (const [a, b] of [[-0.32, -0.2], [0.32, -0.2], [-0.32, 0.2], [0.32, 0.2]]) X.round(R, s + a, t + b, 0.05, h, h + 0.1, C.dark, 0, 6);
+    X.part(R, s - 0.4, s + 0.4, t - 0.25, t + 0.25, h + 0.1, h + 0.14, C.steel, 5);
+    X.part(R, s - 0.42, s - 0.38, t - 0.25, t + 0.25, h + 0.14, h + 0.95, C.steel, 5);
+    X.part(R, s - 0.3, s + 0.1, t - 0.2, t + 0.2, h + 0.14, h + 0.44, X.pick(C.card));
+    if (X.rng() < 0.6) X.part(R, s + 0.12, s + 0.38, t - 0.18, t + 0.12, h + 0.14, h + 0.36, X.pick(C.card));
+  } },
+  // a bamboo basket, full
+  basket: { r: 0.24, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.22, h, h + 0.3, C.bamboo, 1, 9);
+    X.round(R, s, t, 0.19, h + 0.3, h + 0.33, X.pick([...C.quilt, ...C.sack, ...C.plastic]), 2, 9);
+  } },
+  jar: { r: 0.09, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.08, h, h + 0.17, C.glass, 9, 8);
+    X.round(R, s, t, 0.06, h + 0.17, h + 0.2, X.pick([C.red, C.gold, C.dark]), 0, 8);
+  } },
+};
+const put = (X, R, key, s, t, h) => ITEMS[key].draw(X, R, s, t, h);
 const PIECES = {
   bed: { L: 1.9, D: 0.92, build(X, R) {
     const wood = X.rng() < 0.6, fr = X.pick(wood ? C.wood : C.paint), code = wood ? 1 : 5;
@@ -190,7 +320,16 @@ const PIECES = {
     X.part(R, 0, 1.0, 0, 0.45, 0, 0.6, X.pick(C.wood), 1);
     X.part(R, 0.22, 0.78, 0.03, 0.42, 0.6, 1.02, C.dark);
     X.part(R, 0.27, 0.73, 0.42, 0.44, 0.65, 0.98, C.dark, 3);
+    put(X, R, X.pick(['thermos', 'teapot', 'radio', 'cup', 'books']), X.rng() < 0.5 ? 0.11 : 0.89, 0.2, 0.6);
     X.spot(R, 0.5, 1.45, 'seat', 0, -1, 0, 0);
+  } },
+  // a low cupboard, with what a family keeps to hand on top of it
+  chest: { L: 1.0, D: 0.45, build(X, R) {
+    const w = X.pick(C.wood);
+    X.part(R, 0, 1.0, 0, 0.45, 0, 0.78, w, 1);
+    X.part(R, 0.49, 0.51, 0.45, 0.46, 0.1, 0.7, tone(w, 0.6), 1);
+    const k = 1 + Math.floor(X.rng() * 3);
+    for (let q = 0; q < k; q++) put(X, R, X.pick(['thermos', 'radio', 'teapot', 'cup', 'books', 'jar', 'bowls']), 0.18 + q * 0.32, 0.18 + X.rng() * 0.1, 0.78);
   } },
   fridge: { L: 0.62, D: 0.62, build(X, R) { X.part(R, 0, 0.62, 0, 0.62, 0, 1.45, X.pick(C.appl), 5); } },
   kitchen: { L: 1.5, D: 0.56, build(X, R) {
@@ -198,7 +337,10 @@ const PIECES = {
     X.part(R, 0.08, 0.62, 0.08, 0.48, 0.8, 0.9, C.dark, 5);
     X.round(R, 0.35, 0.28, 0.2, 0.9, 0.98, C.dark, 5);
     X.part(R, 0.95, 1.42, 0.06, 0.5, 0.74, 0.81, C.steel, 5);
-    X.round(R, 0.75, 0.42, 0.08, 0.8, 0.98, X.pick(C.plastic));
+    if (X.rng() < 0.5) put(X, R, 'cooker', 0.79, 0.38, 0.8);
+    else X.round(R, 0.75, 0.42, 0.08, 0.8, 0.98, X.pick(C.plastic));
+    put(X, R, 'bottles', 0.8, 0.1, 0.8);
+    put(X, R, X.pick(['bowls', 'bowls', 'pot', 'board']), 1.18, 0.3, 0.81);
     X.spot(R, 0.6, 0.86, 'work', 0, -1);
   } },
   shrine: { L: 0.34, D: 0.24, build(X, R) {
@@ -222,6 +364,8 @@ const PIECES = {
     X.part(R, 0, 0.4, 0, 0.55, 0, 0.7, w, 1);
     X.part(R, 0.96, 1.0, 0, 0.55, 0, 0.7, w, 1);
     X.part(R, 0.1, 0.5, 0.06, 0.32, 0.75, 0.8, C.white, 10);
+    put(X, R, X.pick(['books', 'books', 'radio', 'thermos']), 0.76, 0.14, 0.75);
+    if (X.rng() < 0.6) put(X, R, 'cup', 0.6, 0.4, 0.75);
     X.part(R, 0.58, 0.9, 0.6, 0.95, 0, 0.45, X.pick(C.paint));
     X.part(R, 0.58, 0.9, 0.9, 0.95, 0.45, 0.9, X.pick(C.paint));
     X.spot(R, 0.74, 0.8, 'desk', 0, -1);
@@ -320,6 +464,7 @@ const PIECES = {
     X.part(R, 0, 2.0, 0, 0.6, 0, 0.92, X.pick(C.wood), 1);
     X.part(R, 0.1, 1.2, 0.05, 0.55, 0.92, 1.08, C.glass, 9);
     X.part(R, 1.4, 1.75, 0.15, 0.45, 0.92, 1.02, C.dark, 5);
+    for (const t of [0.15, 0.42]) if (X.rng() < 0.7) put(X, R, 'jar', 1.88, t, 0.92);
     X.spot(R, 0.8, 0.95, 'work', 0, -1);
   } },
   goods: { L: 1.6, D: 0.4, build(X, R) { X.part(R, 0, 1.6, 0, 0.4, 0, 1.9, X.pick(C.wood), 7); } },
@@ -381,7 +526,7 @@ PIECES.schooldesk = { L: 0.7, D: 0.95, build(X, R) {
 // What each kind of unit holds, along the walls and in the middle of the room. Tables in the
 // middle get stools round them.
 const ROOM = {
-  home: { walls: ['bed', 'kitchen', 'wardrobe', 'bed', 'tv', 'fridge', 'shelf', 'boxes', 'buckets', 'bed', 'sofa', 'desk', 'boxes', 'cot'], table: 0.8 },
+  home: { walls: ['bed', 'kitchen', 'wardrobe', 'bed', 'tv', 'chest', 'fridge', 'shelf', 'boxes', 'buckets', 'bed', 'chest', 'sofa', 'desk', 'boxes', 'cot'], table: 0.8 },
   plastics: { walls: ['moulder', 'moulder', 'sacks', 'bench', 'moulder', 'sacks', 'crates', 'bench'], table: 0.3 },
   metal: { walls: ['lathe', 'bench', 'lathe', 'crates', 'bench', 'lathe', 'sacks'], table: 0.2 },
   garment: { walls: ['sewing', 'sewing', 'sewing', 'bolts', 'sewing', 'sewing', 'bolts', 'sewing', 'boxes'], table: 0.6 },
@@ -399,6 +544,42 @@ const ROOM = {
   youth: { walls: ['shelf', 'tv', 'boxes', 'sofa'], table: 0, middle: 'pingpong' },
 };
 ROOM.storage = ROOM.works;
+
+// What lies on the floor of each kind of unit (ITEMS). The floor plate is a little above the
+// storey line, so the things on it stand at FLOOR_Y.
+const STREW = {
+  home: ['basin', 'fan', 'bag', 'slippers', 'bucket', 'papers', 'bag', 'basin', 'fan', 'slippers'],
+  plastics: ['drum', 'drum', 'scraps', 'trolley', 'bag', 'basket'],
+  metal: ['scraps', 'scraps', 'drum', 'trolley', 'bucket'],
+  garment: ['basket', 'bag', 'basket', 'fan', 'bag', 'papers'],
+  foodfac: ['basin', 'basket', 'bucket', 'basin', 'drum'],
+  works: ['scraps', 'bag', 'drum', 'trolley', 'basket', 'papers'],
+  eating: ['basin', 'bucket', 'basket', 'bag'],
+  shop: ['basket', 'basket', 'bag', 'papers'],
+  medicine: ['basket', 'basket', 'bag'],
+  dentist: ['fan', 'bucket'], clinic: ['fan', 'bucket'], office: ['papers', 'fan', 'papers'],
+  kaifong: ['papers', 'fan'], school: ['bucket'], temple: ['basket'], youth: ['fan', 'bag'],
+};
+STREW.storage = STREW.works;
+const FLOOR_Y = 0.04;
+
+// What lies on a table of radius tr with n stools round it: a bowl for each stool in a cooked
+// food stall; in a home, a game of mahjong or a few cups, bowls and flasks.
+function tableTop(X, R, use, tr, n) {
+  const h = 0.74, a0 = X.rng() * Math.PI * 2;
+  if (use === 'eating') {
+    for (let q = 0; q < n; q++) { const a = a0 + (q / n) * Math.PI * 2; put(X, R, 'bowl', Math.cos(a) * tr * 0.64, Math.sin(a) * tr * 0.64, h); }
+    put(X, R, 'bottles', 0, 0, h);
+    return;
+  }
+  if (use === 'home' && X.rng() < 0.2) { put(X, R, 'mahjong', 0, 0, h); return; }
+  const list = use === 'home' ? ['bowl', 'bowls', 'cup', 'cup', 'teapot', 'thermos', 'paper', 'bowl'] : ['cup', 'paper', 'thermos', 'books', 'cup'];
+  const k = 1 + Math.floor(X.rng() * 4);
+  for (let q = 0; q < k; q++) {
+    const key = list[Math.floor(X.rng() * list.length)], a = a0 + (q / k) * Math.PI * 2, r = k === 1 ? 0 : tr - 0.06 - ITEMS[key].r;
+    put(X, R, key, Math.cos(a) * r, Math.sin(a) * r, h);
+  }
+}
 
 // Floors: [shader code, colours]. 4 terrazzo, 5 checker, 6 mosaic, 7 linoleum, 8 cement,
 // 9 wet tiles (kitchens and toilets).
@@ -428,6 +609,7 @@ export function furnish(M, L, b, f, P, d) {
 
   for (const u of P.units) {
     X.unit = u.id;
+    const s0 = X.spots.length;
     const [lx, lz] = toXZ(F, (u.a0 + u.a1) / 2, (u.w0 + u.w1) / 2);
     X.lamps.push({ u: u.id, x: lx, z: lz, ra: (u.a1 - u.a0) / 2, rw: (u.w1 - u.w0) / 2, axis: [F.ux, F.uz, F.px, F.pz], warm: use === 'home' });
     // The floor: the unit's cells, clipped to the block and trimmed off the stairs.
@@ -567,9 +749,30 @@ export function furnish(M, L, b, f, P, d) {
         taken.push([a - 0.72, a + 0.72, w - 0.72, w + 0.72]);
         const R = { loc: (s, t) => toXZ(F, a + s, w + t) };
         X.round(R, 0, 0, 0.08, 0, 0.7, C.dark, 0, 6);
-        X.round(R, 0, 0, 0.42 + rng() * 0.08, 0.7, 0.74, use === 'home' || rng() < 0.5 ? X.pick(C.wood) : C.white, 1, 14);
-        if (use === 'home' && rng() < 0.4) X.round(R, 0.1, 0.05, 0.1, 0.74, 0.8, C.white);
-        stools(X, R, 0, 0, 0.62, 3 + Math.floor(rng() * 2));
+        const tr = 0.42 + rng() * 0.08, ns = 3 + Math.floor(rng() * 2);
+        X.round(R, 0, 0, tr, 0.7, 0.74, use === 'home' || rng() < 0.5 ? X.pick(C.wood) : C.white, 1, 14);
+        stools(X, R, 0, 0, 0.62, ns);
+        tableTop(X, R, use, tr, ns);
+        break;
+      }
+    }
+    // Things on the free floor, along the walls or out in the room, but not where people
+    // sit, sleep or work.
+    const strew = STREW[use] || STREW.works, mine = X.spots.slice(s0);
+    const ns = Math.max(1, Math.min(8, Math.round(u.area / (use === 'home' ? 2.6 : 4))));
+    for (let q = 0; q < ns; q++) {
+      const key = strew[Math.floor(rng() * strew.length)], r = ITEMS[key].r + 0.03, e = r + 0.05;
+      for (let tries = 0; tries < 10; tries++) {
+        let a = u.a0 + e + rng() * Math.max(0, u.a1 - u.a0 - 2 * e), w = u.w0 + e + rng() * Math.max(0, u.w1 - u.w0 - 2 * e);
+        if (rng() < 0.65) {
+          if (rng() < 0.5) a = rng() < 0.5 ? u.a0 + e : u.a1 - e;
+          else w = rng() < 0.5 ? u.w0 + e : u.w1 - e;
+        }
+        if (!free(a - r, a + r, w - r, w + r)) continue;
+        const [x, z] = toXZ(F, a, w);
+        if (mine.some((p) => Math.hypot(p.x - x, p.z - z) < r + 0.42)) continue;
+        taken.push([a - r, a + r, w - r, w + r]);
+        put(X, { loc: (s, t) => toXZ(F, a + s, w + t) }, key, 0, 0, FLOOR_Y);
         break;
       }
     }
@@ -606,6 +809,10 @@ function furnishSurvey(X, map, M, b, f, y) {
   X.round(R, 0, 0, 0.08, 0, 0.7, C.dark, 0, 6);
   X.round(R, 0, 0, 0.45, 0.7, 0.74, X.pick(C.wood), 1, 14);
   stools(X, R, 0, 0, 0.62, 3);
+  tableTop(X, R, 'home', 0.45, 3);
+  const B = { loc: (s, t) => map(2.4 + s, 1.0 + t) };
+  put(X, B, 'basin', 0, 0, FLOOR_Y);
+  put(X, { loc: (s, t) => map(4.2 + s, 2.6 + t) }, 'fan', 0, 0, FLOOR_Y);
   // wet tiles in the kitchen and the toilet
   for (const [x0, y0, x1, y1] of WET) {
     const Q = [map(x0, y0), map(x1, y0), map(x1, y1), map(x0, y1)];
