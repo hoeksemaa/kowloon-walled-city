@@ -1,7 +1,7 @@
 // The lamps of the cut storey at night: one for each unit, on while someone in it is awake
-// (crowd.js). "Tungsten bulbs light the flats, and fluorescent tubes light the corridors"
-// (story.js); the workshops get tubes too. Where each lamp hangs is INFERRED: over the
-// middle of the unit.
+// (crowd.js). Tungsten bulbs in the flats and fluorescent tubes in the corridors (HK01 2024:
+// the reporter's words, from Lambot; primary-sources/retrospective-testimony-web); the
+// workshops get tubes too. Where each lamp hangs is INFERRED: over the middle of the unit.
 //
 // Each frame the lamps draw their light into a map in plan (uLampMap over the box
 // uLampBox = [x0, z0, 1 / width, 1 / depth]). The storey shader (cityMesh.js) and the people

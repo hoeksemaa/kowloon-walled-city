@@ -16,7 +16,6 @@ import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
-import { BEATS, CHAPTERS, beatAt } from './story.js';
 import { Planes } from './planes.js';
 import { Sound } from './sound.js';
 import { WEEK, DONGZHI } from './people.js';
@@ -79,15 +78,14 @@ controls.maxPolarAngle = 1.42;
 
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1, mapPins: false,
-  speed: 60, hoverAgent: -1, hoverBld: -1, follow: false,
-  storyCam: true, camGoal: null, storySel: false, storyCut: false,
+  speed: 60, hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
 };
 const offsets = new Float32Array(16);
 const shared = {
   uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutH: { value: CUT_H },
 };
-// uMarkers: the gold marker over each real person, shown in the story (people.js). uWalk and
-// uIdle: the clocks of the steps and of the other moves (figures.js).
+// uMarkers: the gold marker over each real person (people.js), off while a case of the game is
+// open. uWalk and uIdle: the clocks of the steps and of the other moves (figures.js).
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
@@ -176,7 +174,7 @@ async function init() {
   scene.add(wires.object);
 
   // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
-  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62, BEATS.filter((b) => b.plane).map((b) => b.minute + 0.05));
+  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62);
 
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
@@ -198,7 +196,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU, post, lamps, renderer };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer };
   requestAnimationFrame(frame);
 }
 
@@ -374,13 +372,6 @@ function buildUI() {
   });
   $('game-close').onclick = () => $('t-find').click();
   $('rail-clear').onclick = () => setCut(-1);
-  $('st-prev').onclick = () => jumpBeat(-1);
-  $('st-next').onclick = () => jumpBeat(1);
-  $('st-cam').onclick = () => {
-    state.storyCam = !state.storyCam;
-    $('st-cam').classList.toggle('on', state.storyCam);
-    if (state.storyCam && storyIdx >= 0) focusBeat(BEATS[storyIdx]);
-  };
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
 
@@ -621,7 +612,11 @@ function agentTooltip(id) {
   if (a.real.book)
     return `<div class="tt-real">REAL PERSON · CITY OF DARKNESS REVISITED</div>${head}${facts}
     <div class="tt-s">met by the book in about 1990 · says no words in the model · hours approximate for 1986 · click to follow</div>`;
-  return `<div class="tt-real">REAL PERSON</div>${head}${facts}
+  // The first recorded quote, with its source and its tag. A Chinese quote carries its gloss in [].
+  const q = a.real.quotes[0];
+  const [said, gloss] = q ? q.t.split(' [') : [];
+  const quote = q ? `<div class="tt-q">“${said}”${gloss ? `<div class="g">[${gloss}</div>` : ''}<div class="w">${q.src} · ${q.tag}</div></div>` : '';
+  return `<div class="tt-real">REAL PERSON</div>${head}${facts}${quote}
     <div class="tt-s">words and facts from the sources named · hours of the week inferred · click to follow</div>`;
 }
 
@@ -811,108 +806,8 @@ function resize() {
   wires.setResolution(w, h);
 }
 
-// ---- story -----------------------------------------------------------------------------------------
-let storyIdx = -2;
-const dateOf = (day) => {
-  const d = new Date(Date.UTC(1986, 11, 16 + day));
-  return `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} DEC 1986`;
-};
-const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
-
-function updateStory() {
-  const i = beatAt(sim.day % 7, sim.minute);
-  if (i === storyIdx) return;
-  storyIdx = i;
-  renderBeat(i);
-  if (i >= 0) focusBeat(BEATS[i]);
-}
-
-function renderBeat(i) {
-  const b = BEATS[i];
-  if (!b) {
-    $('st-chap').textContent = `DAY 1 · ${dateOf(0)} · ${CHAPTERS[0]}`;
-    $('st-time').textContent = '';
-    $('st-text').textContent = 'One ordinary week in the city, from Tuesday 16 December 1986 to the winter solstice. Press ▶ to start at the first scene.';
-    $('st-quote').innerHTML = '';
-    $('st-cite').textContent = '';
-    return;
-  }
-  $('st-chap').textContent = `DAY ${b.day + 1} · ${dateOf(b.day)} · ${CHAPTERS[b.day]}`;
-  const tags = [];
-  if (b.focus && b.focus.person) tags.push('<span class="chip real">REAL PERSON</span>');
-  if (b.inferred) tags.push('<span class="chip inf">INFERRED</span>');
-  $('st-time').innerHTML = `${b.t} ${tags.join('')}`;
-  $('st-text').textContent = b.text;
-  if (b.quote && b.quote.t) {
-    const [main, gloss] = b.quote.t.split(' [');
-    $('st-quote').innerHTML = `<div class="q">“${esc(main)}”</div>${gloss ? `<div class="g">[${esc(gloss)}</div>` : ''}<div class="w">— ${esc(b.quote.who)} · ${esc(b.quote.src)} · ${esc(b.quote.tag)}</div>`;
-  } else $('st-quote').innerHTML = '';
-  $('st-cite').textContent = b.cite ? `source: ${b.cite}` : '';
-}
-
-function jumpBeat(step) {
-  const n = BEATS.length;
-  const i = storyIdx < 0 ? (step > 0 ? 0 : n - 1) : (storyIdx + step + n) % n;
-  const b = BEATS[i];
-  sim.day = sim.day - (sim.day % 7) + b.day;
-  sim.setTime(b.minute);
-  lastDay = -1;
-  storyIdx = -2;
-}
-
-function focusBeat(b) {
-  // Cut and utilities as the scene asks; undo what an earlier scene set.
-  if (b.cut !== undefined) { setCut(b.cut); state.storyCut = true; }
-  else if (state.storyCut) { setCut(-1); state.storyCut = false; }
-  if (b.wires && !wires.object.visible) $('t-wires').click();
-  if (state.storySel && !(b.focus && b.focus.person)) { sim.select(-1); state.follow = false; state.storySel = false; }
-  if (!state.storyCam || !b.focus) return;
-  const f = b.focus;
-  let p = null, zoom = 5;
-  if (f.person) {
-    const a = sim.agents.find((x) => x.real && x.real.key === f.person);
-    if (a) {
-      sim.select(a.id);
-      state.follow = !!b.follow;
-      state.storySel = true;
-      const o = a.id * 4;
-      if (sim.aP[o + 3] >= 0) { p = [sim.aP[o], sim.aP[o + 2], sim.aP[o + 1]]; zoom = 6.5; }
-    }
-  } else if (f.street) {
-    if (f.street === 'ttt') {
-      const ids = L.frontage.ttt;
-      const c = ids.reduce((s, id) => [s[0] + L.buildings[id].cx, s[1] + L.buildings[id].cz], [0, 0]).map((v) => v / ids.length);
-      p = [c[0], 6, c[1] - 6];
-    } else {
-      const cells = L.streetLanes[f.street];
-      if (cells && cells.length) { const k = cells[Math.floor(cells.length / 2)]; p = [L.cellX(k), 4, L.cellZ(k)]; }
-    }
-    zoom = 6;
-  } else if (f.building) {
-    const B = L.buildings;
-    const b2 = f.building === 'yamen' ? B[L.yamenId] : f.building === 'temple'
-      ? B.find((x) => Object.values(x.prem).some((list) => list.some((pp) => pp.trade === 'temple')))
-      : B.find((x) => x.name === f.building);
-    if (b2) p = [b2.cx, b2.floors * STOREY * 0.5, b2.cz];
-    zoom = 6;
-  } else if (f.standpipe !== undefined) {
-    const sp = wires.standpipes[f.standpipe];
-    if (sp) p = [sp[0], 2, sp[1]];
-    zoom = 7;
-  } else if (f.view === 'plane') {
-    p = [150, 30, -40]; zoom = 2.2;
-  } else if (f.view === 'roofs') {
-    // The roof with the most people on it now.
-    const n = new Map();
-    for (const a of sim.agents) if (a.loc && a.loc.type === 'roof' && !a.trip) n.set(a.loc.b, (n.get(a.loc.b) || 0) + 1);
-    let best = -1, bn = 0;
-    for (const [b2, c] of n) if (c > bn) { bn = c; best = b2; }
-    if (best >= 0) { const b2 = L.buildings[best]; p = [b2.cx, b2.floors * STOREY, b2.cz]; zoom = 5.5; }
-  }
-  if (!p) { p = [0, 14, 0]; zoom = 1.15; }
-  state.camGoal = { x: p[0], y: p[1], z: p[2], zoom };
-}
-
+// ---- camera -----------------------------------------------------------------------------------------
+// The Find them game sets state.camGoal; the camera glides there until the user drags or scrolls.
 function glideCamera(dt) {
   const g = state.camGoal;
   if (!g) return;
@@ -955,7 +850,6 @@ function frame(now) {
   flock.update(now / 1000, offsets);
   updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
-  updateStory();
   glideCamera(dt);
   const dark = shared.uNight.value > 0.55;
   if (dark !== state.dark) {
@@ -1016,10 +910,8 @@ function openCase(c) {
   game.back = null;
   game.notes[c.key] = { hints: [], found: (game.notes[c.key] || {}).found || null };
   saveNotes();
-  // The markers and the story camera would give the person away.
+  // The markers would give the person away.
   peopleU.uMarkers.value = 0;
-  state.storyCam = false;
-  $('st-cam').classList.remove('on');
   sim.select(-1);
   state.follow = false;
   clearHintMarks();
