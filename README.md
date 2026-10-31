@@ -83,7 +83,9 @@ building has an outline, a height, its storeys, its dates, a source, and "source
 1987 (the editions of 1981-85 are a check) and the CSDI Building and Road Network data.
 Source: the Government of the Hong Kong SAR and the CSDI Portal; see
 `data/CONTEXT-NOTICE.md`. This data does not have a Creative Commons licence. No scan or
-download is in the repository. The app does not draw this data yet.
+download is in the repository. The app does not draw this data yet. The City plate of the
+model covers 59% of Mei Tung House, the long slab north of the City. The data keeps the
+parts off the plate as buildings, and `plateClipped` keeps the whole outline.
 
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
@@ -91,8 +93,9 @@ corridor or a stair, if a storey has no way down, or if walks go through other r
 
 `node tools/check_context.mjs` checks `data/context.json`. It fails if a building is on the
 City plate or beyond 600 m, if a building has no source, or if a survey sheet does not
-register on the standing buildings. It prints the buildings near the approach track of the
-planes that are taller than the track.
+register on the standing buildings. It also fails if a whole outline in `plateClipped`
+reaches onto the City itself. It prints the buildings near the approach track of the planes
+that are taller than the track.
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.

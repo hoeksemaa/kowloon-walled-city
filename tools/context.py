@@ -24,11 +24,11 @@ DL is a download folder outside the repository. No scan and no download is commi
 `trace` finds the regions that the ink of the 1987 sheets closes, outside the City plate and
 not under a kept CSDI footprint. I reviewed each candidate by eye on the sheet. The review
 kept the outlines of buildings, joined the pieces of the resettlement blocks, and rejected
-parks, slopes, roads and yards. I traced Mei Tung House and Block 23 by hand. The result is
-in tools/context_input.json: `named` (buildings that are gone, with a name and storeys) and
-`traced` (buildings that are gone, with no name). That file also holds the City fit, the
-CSDI footprints that are left out, the road rules and the open ground. `build` reads only DL
-and that file.
+parks, slopes, roads and yards. I traced Mei Tung House and Block 23 by hand (the east wing
+of Mei Tung House by a seed fill). The result is in tools/context_input.json: `named`
+(buildings that are gone, with a name and storeys) and `traced` (buildings that are gone,
+with no name). That file also holds the City fit, the CSDI footprints that are left out, the
+road rules and the open ground. `build` reads only DL and that file.
 
 The plan frame. HK1980 Grid (E, N) goes to plan metres (x, z) in two steps:
 1. T0, from src/site.js: dE = E - E0, dN = N - N0 with the anchor E0 837649.05,
@@ -628,15 +628,30 @@ def on_plate(ring, plate):
     return abs(area(r))
 
 
-def off_plate(ring, plate):
-    """The largest part of a ring that one side of the plate leaves off it."""
+def off_plate(ring, plate, res=0.05, grow=0.1):
+    """The parts of a ring (plan) off the City plate, largest first. The ring is drawn on a grid
+    of `res` m, the plate is cut out `grow` m wider (thus no part touches it), and each part is
+    traced again. A ring can leave the plate on two sides, or twice on one side."""
+    from skimage import measure
     x0, z0, x1, z1 = plate
-    best = []
-    for h in ((-1, 0, x0), (1, 0, -x1), (0, -1, z0), (0, 1, -z1)):
-        r = half_plane(ring, *h)
-        if len(r) >= 3 and abs(area(r)) > (abs(area(best)) if len(best) >= 3 else 0):
-            best = r
-    return best
+    xs, zs = [p[0] for p in ring], [p[1] for p in ring]
+    ox, oz = min(xs) - 1, min(zs) - 1
+    W, H = int((max(xs) + 1 - ox) / res) + 1, int((max(zs) + 1 - oz) / res) + 1
+    im = Image.new('L', (W, H), 0)
+    dr = ImageDraw.Draw(im)
+    dr.polygon([((x - ox) / res, (z - oz) / res) for x, z in ring], fill=1)
+    dr.rectangle(((x0 - grow - ox) / res, (z0 - grow - oz) / res, (x1 + grow - ox) / res, (z1 + grow - oz) / res), fill=0)
+    lab, n = ndi.label(np.asarray(im, bool))
+    parts = []
+    for k in range(1, n + 1):
+        m = lab == k
+        if m.sum() * res * res < 1:
+            continue
+        c = max(measure.find_contours(np.pad(m, 1).astype(np.uint8), 0.5), key=len)
+        c = measure.approximate_polygon(c, tolerance=1.0)  # one grid cell
+        r = [(ox + (q[1] - 1) * res, oz + (q[0] - 1) * res) for q in c[:-1]]
+        parts.append(r[::-1] if area(r) < 0 else r)
+    return sorted(parts, key=lambda r: -area(r))
 
 
 def centroid(r):
@@ -753,8 +768,9 @@ def build(dl):
         built = ('by %s' % e['date']) if on_early and e else ('%s to %s' % (e['date'], s['date']) if e else None)
         return 'LandsD 1:1000 sheet %s (%s)' % (s['no'], s['date']), on_early, built, share
 
-    out, dropped = [], {'plate': [], 'radius': 0}
+    out, dropped, clipped = [], {'plate': [], 'radius': 0}, []
     rings1986 = []
+    rnd = lambda P: [[round(x, 2), round(z, 2)] for x, z in P]
 
     def add(b, ring):
         rings1986.append(ring)
@@ -770,9 +786,17 @@ def build(dl):
             if o >= 0.98 * A:
                 dropped['plate'].append(b.get('name') or b['id'])
                 return
-            P = off_plate(P, plate)
-            b['clipped'] = 'The City plate covers %.0f%% of the 1987 footprint; this is the part off the plate.' % (100 * o / A)
-        b['ring'] = [[round(x, 2), round(z, 2)] for x, z in P]
+            # One record for each part off the plate; plateClipped keeps the whole outline.
+            parts = off_plate(P, plate)
+            ids = [b['id']] + ['%s/%d' % (b['id'], k + 1) for k in range(1, len(parts))]
+            clipped.append(dict(id=b['id'], name=b.get('name'), nameZh=b.get('nameZh'), height=b['height'],
+                                onPlate=round(o / A, 2), parts=ids, ring=rnd(P)))
+            for k, part in enumerate(parts):
+                out.append(dict(b, id=ids[k], ring=rnd(part), base=0, clipped=(
+                    'The City plate covers %.0f%% of the 1987 footprint. This is part %d of %d off the plate; '
+                    'plateClipped in the header has the whole outline.' % (100 * o / A, k + 1, len(parts)))))
+            return
+        b['ring'] = rnd(P)
         b['base'] = 0
         out.append(b)
 
@@ -879,12 +903,10 @@ def build(dl):
         if area(P) < 0:
             P.reverse()
         o = on_plate(P, plate)
-        if o > 0.01:
-            P = off_plate(P, plate)
-        P = [p for p in P]
-        ground.append(dict(name=g['name'], nameZh=g.get('nameZh'), kind=g['kind'], ring=[[round(x, 2), round(z, 2)] for x, z in P],
-                           note=g['note'] + (' The part on the City plate is left out.' if o > 0.01 else ''),
-                           outline='CSDI footprint' if g.get('csdi') else 'hand-drawn on the 1987 sheet, to about 3 m'))
+        for part in (off_plate(P, plate, res=0.1) if o > 0.01 else [P]):
+            ground.append(dict(name=g['name'], nameZh=g.get('nameZh'), kind=g['kind'], ring=rnd(part),
+                               note=g['note'] + (' The part on the City plate is left out.' if o > 0.01 else ''),
+                               outline='CSDI footprint' if g.get('csdi') else 'hand-drawn on the 1987 sheet, to about 3 m'))
 
     reg = json.load(open(os.path.join(dl, 'register.json')))
     registration = {}
@@ -906,6 +928,7 @@ def build(dl):
                                'x = cos(th) (x0 - dx) + sin(th) (z0 - dz), z = -sin(th) (x0 - dx) + cos(th) (z0 - dz)',
                        grid='HK1980 Grid (EPSG:2326)', cityFit=fit),
         plate=dict(x0=plate[0], z0=plate[1], x1=plate[2], z1=plate[3], note='the City plate: the plan box and MARGIN of src/layout.js'),
+        plateClipped=clipped,
         sheets=dict(late={s['no']: s['date'] for s in late.sheets}, early={s['no']: s['date'] for s in early.sheets}),
         registration=registration,
         storeyHeight=H0,
@@ -914,11 +937,13 @@ def build(dl):
             'undated': 'CSDI footprint with no date, on the 1984-85 and the 1987 sheets (edge share 0.8 or more on both)',
             'lot': 'CSDI footprint from 1987 on, under 400 m2 and not a thin strip, on both sheets (edge share 0.9 or more): the 1986 building on the same lot lines',
             'traced': 'outline traced on the 1987 sheet and checked by eye; not in CSDI now',
+            'plate': 'a building that the City plate partly covers has one record for each part off the plate; '
+                     'plateClipped has its whole 1987 outline (ring), which stands partly on the plate',
             'height': 'CSDI TopHeight - BaseHeight; else storeys x %.1f m; else INFERRED by the stated rule' % H0},
         counts=dict(buildings=len(out), within400=count(400), within600=count(600),
                     byKind={k: sum(1 for b in out if b['kind'] == k) for k in ('dated', 'undated', 'lot', 'traced')},
                     sourcedHeight=sum(1 for b in out if b['confidence'] == 'sourced'),
-                    clippedByPlate=sum(1 for b in out if 'clipped' in b),
+                    clippedByPlate=len(clipped),
                     droppedOnPlate=dropped['plate'], droppedBeyondRadius=dropped['radius'],
                     roads=len(roads), roadsLeftOut={w: sum(1 for d in rdrop if d['why'] == w) for w in sorted({d['why'] for d in rdrop})},
                     openGround=len(ground)),

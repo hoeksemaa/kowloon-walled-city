@@ -6,7 +6,9 @@
 // than the track there. Fails (exit 1) if a building is on the City plate (the plan box with
 // the MARGIN of src/layout.js), a building reaches beyond 600 m, a building has no source or no
 // height, or a survey sheet does not register on the standing buildings (90% of the control
-// residuals under 1 m, and a mean shift under 0.75 m), or the City fit is poor.
+// residuals under 1 m, and a median shift under 0.75 m), or the City fit is poor. It also
+// fails if the whole outline of a building that the plate cuts (plateClipped) reaches onto
+// the City itself.
 import { readFileSync } from 'node:fs';
 import { MARGIN } from '../src/layout.js';
 
@@ -68,7 +70,29 @@ for (const b of C.buildings) {
 }
 console.log(`buildings ${C.buildings.length}: ${in400} within 400 m, ${C.buildings.length} within 600 m`);
 console.log('by kind', kinds, 'height', conf);
-console.log(`named ${C.buildings.filter((b) => b.name).length}; clipped by the plate ${C.buildings.filter((b) => b.clipped).length}`);
+console.log(`named ${C.buildings.filter((b) => b.name).length}; parts of buildings that the plate cuts ${C.buildings.filter((b) => b.clipped).length}`);
+
+// ---- the buildings that the plate cuts: the whole outline must stay off the City itself ----
+const city = plan.outline.map(([x, z]) => [x - plan.W / 2, z - plan.D / 2]);
+function inRing(x, z, r) {
+  let c = false;
+  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+    const [xi, zi] = r[i], [xj, zj] = r[j];
+    if ((zi > z) !== (zj > z) && x < xi + ((z - zi) * (xj - xi)) / (zj - zi)) c = !c;
+  }
+  return c;
+}
+const ids = new Set(C.buildings.map((b) => b.id));
+for (const c of C.plateClipped) {
+  for (const p of c.parts) if (!ids.has(p)) problems.push(`plateClipped ${c.id}: no building ${p}`);
+  const xs = c.ring.map((p) => p[0]), zs = c.ring.map((p) => p[1]);
+  let n = 0; // samples 0.5 m apart that are in the outline and in the City
+  for (let x = Math.min(...xs); x < Math.max(...xs); x += 0.5) {
+    for (let z = Math.min(...zs); z < Math.max(...zs); z += 0.5) if (inRing(x, z, c.ring) && inRing(x, z, city)) n++;
+  }
+  if (n * 0.25 > 1) problems.push(`plateClipped ${c.id}: ${(n * 0.25).toFixed(1)} m2 on the City`);
+  console.log(`the plate covers ${Math.round(c.onPlate * 100)}% of ${c.name || c.id}; ${c.parts.length} parts off it; ${(n * 0.25).toFixed(1)} m2 on the City`);
+}
 
 // ---- registration ----
 for (const [sheet, s] of Object.entries(C.registration)) {
