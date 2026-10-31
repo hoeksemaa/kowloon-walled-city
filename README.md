@@ -40,6 +40,11 @@ python3 serve.py 8173
 - **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
   the tubes; at night the windows are blue-white and Kowloon beyond is sodium amber.
+- **Surroundings.** The City and the ground round it are at one level. A dark rectangle under
+  the City holds its streets, and it is also the floor shape of each storey in the layered
+  view. Low grey blocks round it hold the place of the real buildings. They are clear out to
+  350 m from the centre, fade slowly into the haze, and are gone at 600 m. The sky and the
+  haze follow the light of the city: pale grey by day, warm at dusk, dark slate at night.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside

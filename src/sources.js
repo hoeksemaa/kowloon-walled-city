@@ -205,7 +205,9 @@ MAP tool shows these numbers with the place only.` : ''}</p>
     the address, and the box of each person gives the note. The list of the map's people gives the note for
     nos. 19 and 40. For the Fuk Tak Temple (no. 12) the map
     disagrees with the clearance files; its disc has a dashed ring, and its card gives the note.</li>
-  <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
+  <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
+  <li><span class="st prov">KOWLOON</span>The grey blocks round the City and their heights. They hold the place of the
+    real buildings, which the model does not draw yet. The colours of the sky and the haze at each height of the sun.</li>
 </ul>
 
 <h4>Sound, from primary sources</h4>
