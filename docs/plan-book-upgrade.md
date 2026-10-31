@@ -205,7 +205,7 @@ Each case has five hints. Each hint is stronger than the one before, and each on
 | 2 | Towers, stairs, floor plans, plan view | large | merged (#12) |
 | 3 | 3D route network, links, roofs | large | merged (#13) |
 | — | Sound (decision 3) | small | merged (#14) |
-| 4 | Businesses, people, routines | medium | this PR |
+| 4 | Businesses, people, routines | medium | merged (#15) |
 | 5 | Visual style | medium |  |
 | 6 | How people look | medium |  |
 | 7 | The mystery game | medium |  |
