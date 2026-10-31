@@ -2,11 +2,12 @@
 //
 // SOURCED: the planes passed low over the city ("watch the planes skim over the top and land
 // at Kai Tak", a police officer posted there in 1987; the tailor across the road waited for
-// each plane to pass before he spoke, HK01 2016). The runway 13 final runs on a bearing of
+// each plane to pass before he spoke, HK01 2022). The runway 13 final runs on a bearing of
 // about 134°, NE of the city, on a 3° glide path (CAD; the IGS approach of 1974).
 // APPROXIMATE: the times. Search extracts of the government's figures give 64,874 aircraft
-// movements at Kai Tak in 1986, thus about 89 landings a day, and a night curfew "between
-// midnight and 6.30 am" (undated; neither checked, primary-sources/README.md). Here one landing
+// movements at Kai Tak in 1986, thus about 89 landings a day. They also give a night curfew
+// "between midnight and 6.30 am", with no date. Neither figure is checked
+// (primary-sources/README.md). Here one landing
 // about every 11 minutes from 06:30 to 23:50, fewer from 14:25 to 16:40. The schedule is the
 // same each week; a seed for each day makes the minutes. INFERRED: every landing uses runway 13.
 // No source gives the runway in use that week. Each plane flies on its own clock (see

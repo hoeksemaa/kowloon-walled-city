@@ -30,8 +30,8 @@ composite. A detail that no source records is marked inferred.</p>
     each plot as a polygon with straight walls, not as grid steps.</li>
   <li><span class="st ok">SHOPS</span>459 premises with street, house number, floor, name and trade, from the
     titles of the clearance files of 1987–92 (${GRS}). The signs carry these names.</li>
-  <li><span class="st ok">TRADES</span>The Kai Fong Association, set up on 1 May 1963 (${BOOK}, p178), counted 645
-    shops, workshops and clinics in 1983, 97 of them dentists (charted in ${WSJ}).</li>
+  <li><span class="st ok">TRADES</span>The Kai Fong Association started on 1 May 1963 (${BOOK}, p178). In 1983 it
+    counted 645 shops, workshops and clinics, 97 of them dentists (charted in ${WSJ}).</li>
   <li><span class="st ok">BOOK</span>${BOOK}, by Greg Girard and Ian Lambot: the street names Tai Chang St,
     Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbered places of its 1992 map
     (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
@@ -109,7 +109,7 @@ composite. A detail that no source records is marked inferred.</p>
     bundles of pipes and cables, hang over them (pp10, 106–107, 144, 249). Postboxes stand at the entrances
     (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
-    (a police officer, SCMP 2018; the tailor across the road, HK01 2016).</li>
+    (a police officer, SCMP 2018; the tailor across the road, HK01 2022).</li>
 </ul>
 
 <h4>Inferred, and marked</h4>
@@ -161,7 +161,7 @@ composite. A detail that no source records is marked inferred.</p>
     none from midnight to 06:30, the night curfew. Both come from search extracts of the government's figures
     that are not checked, and the curfew has no date (<code>primary-sources/README.md</code>). From 14:25 to 16:40
     the landings are about 20 minutes apart, for the lull that the pigeon breeder waited for (p321). No timetable
-    gives these times. Every landing comes in on runway 13, over the city; no source gives the runway in use that
+    gives these times. Every landing comes in on runway 13, beside the city; no source gives the runway in use that
     week.</li>
   <li><span class="st prov">FLOCK</span>The 34 birds that circle over the pigeon breeder's roof while he flies them, and
     their size, larger than a real bird so that the flock shows. The book gives no count.</li>
