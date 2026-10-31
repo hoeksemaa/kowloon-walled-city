@@ -16,7 +16,16 @@ const BOOK = GH('city-of-darkness-revisited', 'City of Darkness Revisited (2014)
 const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
 const CSDI = A('https://portal.csdi.gov.hk', 'the CSDI Portal');
 
-export const SOURCES_HTML = `
+// A person of the 1992 map: the number, the name, the trade, the page, the words of the key
+// where they differ, and the address (data/book.json).
+const mapPerson = (p) => {
+  const refs = [p.page && `p${p.page}`, p.key && p.key.toLowerCase() !== p.what.toLowerCase() && `key: “${p.key}”`].filter(Boolean);
+  return `<li><span class="st ok">NO. ${p.n}</span>${p.name}, ${p.what}${refs.length ? ` (${refs.join('; ')})` : ''}${p.where ? `: ${p.where}` : ''}.`
+    + `${p.conflict ? ` ${p.conflict}` : ''}${p.note ? ` ${p.note}` : ''}</li>`;
+};
+
+// others: the people of the 1992 map who are not in the model.
+export const sourcesHtml = (others) => `
 <p>One ordinary week in the city at its height: Tuesday 16 to Monday 22 December 1986, the
 day of 冬至 (the winter solstice). Nine real people have the mark REAL PERSON. Point at one of
 them to see their facts and one recorded quote, with the source of each. Sixteen more people
@@ -34,8 +43,10 @@ composite. A detail that no source records is marked inferred.</p>
   <li><span class="st ok">TRADES</span>The Kai Fong Association started on 1 May 1963 (${BOOK}, p178). In 1983 it
     counted 645 shops, workshops and clinics, 97 of them dentists (charted in ${WSJ}).</li>
   <li><span class="st ok">BOOK</span>${BOOK}, by Greg Girard and Ian Lambot: the street names Tai Chang St,
-    Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbered places of its 1992 map
-    (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
+    Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbers of its 1992 map
+    (pp352–353). Twelve numbers mark a place, and the 1992 MAP tool (key M) shows them. The other numbers
+    name people. Point at a person of the book to see their number. A list below gives the people of the map
+    that the model does not show. The book counts "some 300 individual buildings", "28,200
     occupants" and "8800 separate apartments" in January 1987 (p340). The map and the 1987 figure-ground plan
     (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. The 1987 plan joins the 474
     plots into 286 towers. The fit is approximate: the masks overlap by 73%. Thus a check by eye compared the
@@ -62,8 +73,9 @@ composite. A detail that no source records is marked inferred.</p>
     12 Oct 1988) are in ${HANSARD}.</li>
   <li><span class="st ok">BOOK PEOPLE</span>Sixteen people of ${BOOK}, at their places: the pigeon breeder Chan Kwan
     Leung on his roof (pp318–321), the doctor Tsin Mu Lam on 2/F of 10 Tung Tau Tsuen Road (p184), the noodle
-    maker Hui Tung Choy above his factory (p170), the herbal store, the candy factory, the store at 12 Tai Chang
-    Street, the roast meat on Lo Yan Street, and others. A small gold marker floats over each real person. The hours that the book gives
+    maker Hui Tung Choy above his factory (p170), the herbal doctor Chan Pui Yin (p82), the candy maker Lee Yu
+    Chun (p76), the storekeeper Lee Pui Yuen at 12 Tai Chang Street (p93), the roast-meat maker Yim Kwok Yuen on
+    Lo Yan Street (p286), and others. A small gold marker floats over each real person. The hours that the book gives
     are in their week (pp57, 76, 82, 93, 187, 228, 237, 286). The book met them in about 1990, and they say no
     words in the model.</li>
   <li><span class="st ok">POSTMAN</span>Lam Po Chun, "hu xu zi" (beardie) to the locals, sorted the mail at the Lung
@@ -118,6 +130,14 @@ composite. A detail that no source records is marked inferred.</p>
     1:1000 survey sheets of 1987 (with the editions of 1981–85 as a check) and the building and road data of
     ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Heights are from the building
     data, or storeys × 2.9 m; the other heights are inferred and marked. The model does not draw them yet.</li>
+</ul>
+
+<h4>People of the 1992 map, not in the model</h4>
+<p>The 1992 map (${BOOK}, pp352–353) also names these ${others.length} people. The model does not show them.
+${others.some((p) => p.place) ? `For nos. ${others.filter((p) => p.place).map((p) => p.n).join(', ')}, the key also names a place. The 1992
+MAP tool shows these numbers with the place only.` : ''}</p>
+<ul>
+  ${others.map(mapPerson).join('\n  ')}
 </ul>
 
 <h4>Inferred, and marked</h4>
@@ -179,8 +199,10 @@ composite. A detail that no source records is marked inferred.</p>
   <li><span class="st prov">HINTS</span>The game reads the model as it runs. The Where circle does not centre on the
     person, and the Which hint gives a band of three storeys; both change each half hour. Your hints and finds stay
     in this browser only.</li>
-  <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five places
-    it disagrees with the address in the text; their discs have a dashed ring, and the tooltip gives the address.</li>
+  <li><span class="st prov">MAP</span>The 1992 map "cannot be considered entirely accurate" (p353). For five people
+    (nos. 19, 21, 24, 25 and 40) it disagrees with the address in the text. The model uses the address, and the
+    person's box or the list of the map's people gives the note. For the Fuk Tak Temple (no. 12) the map
+    disagrees with the clearance files; its disc has a dashed ring, and its card gives the note.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall; the city below the plinth.</li>
 </ul>
 
