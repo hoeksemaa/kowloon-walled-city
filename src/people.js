@@ -938,7 +938,7 @@ export class Sim {
     }
   }
 
-  // Put everyone where they would be at a time of day, with nobody on the way.
+  // Put each person at the place of their schedule at a time of day, with nobody on the way.
   setTime(minute) {
     this.minute = minute;
     this.newDay();
