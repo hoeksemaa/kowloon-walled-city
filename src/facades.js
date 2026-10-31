@@ -8,6 +8,7 @@
 // patterns, the sizes, and which cage holds what.
 import * as THREE from 'three';
 import { K } from './kinds.js';
+import { STOREY } from './layout.js';
 
 const col = (hex) => new THREE.Color(hex);
 const pal = (list) => list.map(col);
@@ -25,7 +26,7 @@ const C = {
 
 // aInfo.w of a face that the shader draws with a frame: which face, a pattern (0-3), and the
 // face's width and height in cm. 2 is added, so that the codes 0 and 1 keep their old meaning
-// (0: a bridge or a ladder, 1: a small bird cage; see the shader).
+// (0: a bridge, 0.25: a ladder, 1: a small bird cage; see the shader).
 export const FACE = { front: 0, side: 1, topBars: 2, topSheet: 3, floor: 4 };
 export function faceCode(face, pat, W, H) {
   const cm = (x) => Math.max(0, Math.min(511, Math.round(x * 100)));
@@ -113,9 +114,9 @@ export function cageThings(M, fr, u0, u1, d, ya, yb, tw, k, rng, cloth) {
 
 // A window air-conditioner out of the wall at u, from height y: a box whose grilles the
 // shader draws (style 0-3), on some a hood of sheet iron, and under most a stain of drips
-// (in Mc, the see-through mesh). Window units were common on the open faces by the mid-1980s
-// (p8).
-export function emitAC(M, Mc, fr, u, y, rng, info, wallCol, stain) {
+// (in Mcs[k], the see-through mesh of storey k = info[1]). Window units were common on the
+// open faces by the mid-1980s (p8).
+export function emitAC(M, Mcs, fr, u, y, rng, info, wallCol, stain) {
   const st = Math.floor(rng() * 4);
   const w = [0.62, 0.7, 0.56, 0.66][st] * (0.92 + rng() * 0.16), h = [0.44, 0.52, 0.4, 0.48][st], d = [0.46, 0.55, 0.42, 0.5][st];
   const c = pick(rng, C.ac[st]);
@@ -127,10 +128,17 @@ export function emitAC(M, Mc, fr, u, y, rng, info, wallCol, stain) {
       [fr.n[0] * 0.5, 0.87, fr.n[1] * 0.5], pick(rng, C.sheet), rect(x1 - x0, d + 0.1), [info[0], info[1], info[2], faceCode(FACE.floor, st, x1 - x0, d + 0.1)]);
   }
   if (stain && rng() < 0.75) {
-    // drips from the unit: a dark stain fading down the wall; uv: 0-1 across, metres down
-    const sw = w * (0.4 + rng() * 0.4), sh = 0.8 + rng() * 2.2, o = 0.006;
-    Mc.face([at(fr, u - sw / 2, o, y - sh), at(fr, u + sw / 2, o, y - sh), at(fr, u + sw / 2, o, y), at(fr, u - sw / 2, o, y)],
-      [fr.n[0], 0, fr.n[1]], wallCol, [[0, sh], [1, sh], [1, 0], [0, 0]], [info[0], info[1], K.stain, sh]);
+    // Drips from the unit: a dark stain fading down the wall; uv: 0-1 across, metres down.
+    // It is cut at each slab line: the part below goes on the wall of the storey below, so
+    // that each part moves with its own storey. aInfo.w: the length, + 4 times the storey of
+    // the unit (the shader's noise follows that storey, thus the parts join).
+    const sw = w * (0.4 + rng() * 0.4), sh = 0.8 + rng() * 2.2, o = 0.006, k = info[1];
+    for (let j = k; j >= 0 && y - sh < (j + 1) * STOREY; j--) {
+      const ya = Math.max(y - sh, j * STOREY), yb = Math.min(y, (j + 1) * STOREY);
+      if (yb - ya < 1e-3) continue;
+      Mcs[j].face([at(fr, u - sw / 2, o, ya), at(fr, u + sw / 2, o, ya), at(fr, u + sw / 2, o, yb), at(fr, u - sw / 2, o, yb)],
+        [fr.n[0], 0, fr.n[1]], wallCol, [[0, y - ya], [1, y - ya], [1, y - yb], [0, y - yb]], [info[0], j, K.stain, sh + 4 * k]);
+    }
   }
 }
 

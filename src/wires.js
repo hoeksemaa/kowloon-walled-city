@@ -12,13 +12,14 @@
 // electric cables" (Posner, 1987 visit). SCHEMATIC: where each line runs. No map of the
 // lines survives.
 //
-// Each line keeps a fixed length. When the storeys are pulled apart, its ends move with
-// their storeys: a slack cable straightens, then stays taut.
+// Each line is cut at the slab lines into pieces of one storey each. When the storeys are
+// pulled apart, each piece moves with its storey, and keeps its shape.
 import * as THREE from 'three';
 import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { STOREY } from './layout.js';
+import { CUT_H } from './kinds.js';
 import { mulberry32, clamp, weighted } from './util.js';
 import { OUTSIDE } from './footprint.js';
 import { wallFrame } from './geom.js';
@@ -177,12 +178,46 @@ export function buildWires(L) {
   return { wires, standpipes: pipes };
 }
 
+// A line from pa ([x, z]) on storey la, at height ya, to pb on storey lb, at yb. sag: how far
+// its middle hangs from the straight line; out: the way a near-vertical run bows.
 function make(pa, la, ya, pb, lb, yb, sag, type, out) {
-  const d = Math.hypot(pb[0] - pa[0], yb - ya, pb[1] - pa[1]);
-  return {
-    a: [pa[0], ya, pa[1]], la, b: [pb[0], yb, pb[1]], lb, type, out,
-    top: Math.max(la, lb), length: d + (8 * sag * sag) / (3 * Math.max(d, 0.3)),
-  };
+  return { a: [pa[0], ya, pa[1]], la, b: [pb[0], yb, pb[1]], lb, type, out, top: Math.max(la, lb), sag };
+}
+
+// The line of wire w as it hangs in the normal view (SEGS segments, with the sag at right
+// angles to the chord), cut at each slab line between its two ends. Each segment goes to
+// out ([x, y, z] of its two ends) and its storey to ks. The part above the roof stays with
+// the top storey, as the roof does.
+function pieces(w, out, ks) {
+  const [ax, ay, az] = w.a, [bx, by, bz] = w.b, sag = w.sag;
+  let cx = bx - ax, cy = by - ay, cz = bz - az;
+  const d = Math.hypot(cx, cy, cz);
+  if (d > 1e-4) { cx /= d; cy /= d; cz /= d; }
+  // Sag hangs down, at right angles to the chord; a near-vertical run bows outward.
+  let sx = cx * cy, sy = cy * cy - 1, sz = cz * cy;
+  if (sx * sx + sy * sy + sz * sz < 0.04) { sx = w.out[0]; sy = 0; sz = w.out[2]; }
+  const sl = Math.hypot(sx, sy, sz) || 1;
+  sx /= sl; sy /= sl; sz /= sl;
+  const lo = Math.min(w.la, w.lb), hi = Math.max(w.la, w.lb);
+  const storey = (y) => Math.min(hi, Math.max(lo, Math.floor(y / STOREY)));
+  let p = [ax, ay, az];
+  for (let s = 1; s <= SEGS; s++) {
+    const t = s / SEGS, k = 4 * t * (1 - t) * sag;
+    const q = [ax + (bx - ax) * t + sx * k, ay + (by - ay) * t + sy * k, az + (bz - az) * t + sz * k];
+    let kp = storey(p[1]), a = p;
+    const kq = storey(q[1]);
+    while (kp !== kq) {
+      const up = kq > kp, f = ((up ? kp + 1 : kp) * STOREY - p[1]) / (q[1] - p[1]);
+      const m = [p[0] + (q[0] - p[0]) * f, p[1] + (q[1] - p[1]) * f, p[2] + (q[2] - p[2]) * f];
+      out.push(...a, ...m);
+      ks.push(kp);
+      a = m;
+      kp += up ? 1 : -1;
+    }
+    out.push(...a, ...q);
+    ks.push(kq);
+    p = q;
+  }
 }
 
 export class WireLayer {
@@ -197,7 +232,9 @@ export class WireLayer {
     }
     this.layers = [...groups.entries()].map(([key, wires]) => {
       const t = WIRE_TYPES[wires[0].type];
-      const pos = new Float32Array(wires.length * SEGS * 6);
+      const rest = [], ks = [];
+      for (const w of wires) pieces(w, rest, ks);
+      const pos = new Float32Array(rest);
       const geometry = new LineSegmentsGeometry();
       geometry.setPositions(pos);
       const material = new LineMaterial({ color: t.color, linewidth: t.px, worldUnits: false, dashSize: 0.5, gapSize: 0.35 });
@@ -205,7 +242,8 @@ export class WireLayer {
       object.frustumCulled = false;
       object.renderOrder = 2;
       this.object.add(object);
-      return { key, wires, pos, geometry, material, object };
+      // rest: the segments in the normal view; k: the storey of each segment.
+      return { key, rest: new Float32Array(rest), k: Uint8Array.from(ks), pos, geometry, material, object };
     });
     // Standpipes: short posts with a tap.
     const g = new THREE.CylinderGeometry(0.07, 0.07, 1.0, 6).translate(0, 0.5, 0);
@@ -233,37 +271,31 @@ export class WireLayer {
     this.flowing = on;
   }
 
-  // offsets[level] = vertical lift of that storey; lines above a cut storey are hidden.
+  // offsets[k] = the lift of storey k. Each segment moves with its own storey. With a cut
+  // storey, the storeys above it are hidden, and the rest is cut level at CUT_H over its floor
+  // (the section of cityMesh.js).
   update(offsets, cut) {
-    const A = new THREE.Vector3(), B = new THREE.Vector3(), ch = new THREE.Vector3(), sd = new THREE.Vector3();
+    const top = cut >= 0 ? cut * STOREY + CUT_H + 0.05 : Infinity;
     for (const l of this.layers) {
-      const P = l.pos;
+      const R = l.rest, P = l.pos, K = l.k;
       let o = 0;
-      for (const w of l.wires) {
-        A.set(w.a[0], w.a[1] + offsets[w.la], w.a[2]);
-        B.set(w.b[0], w.b[1] + offsets[w.lb], w.b[2]);
-        if (cut >= 0 && w.top > cut) B.copy(A);
-        ch.subVectors(B, A);
-        const d = ch.length();
-        const sag = w.length > d ? Math.sqrt((3 * d * (w.length - d)) / 8) : 0;
-        if (d > 1e-4) ch.divideScalar(d);
-        // Sag hangs down, at right angles to the chord; a near-vertical run bows outward.
-        sd.set(0, -1, 0).addScaledVector(ch, ch.y);
-        if (sd.lengthSq() < 0.04) sd.set(w.out[0], 0, w.out[2]);
-        sd.normalize();
-        let px = A.x, py = A.y, pz = A.z;
-        for (let s = 1; s <= SEGS; s++) {
-          const t = s / SEGS, k = 4 * t * (1 - t) * sag;
-          const x = A.x + (B.x - A.x) * t + sd.x * k;
-          const y = A.y + (B.y - A.y) * t + sd.y * k;
-          const z = A.z + (B.z - A.z) * t + sd.z * k;
-          P[o++] = px; P[o++] = py; P[o++] = pz; P[o++] = x; P[o++] = y; P[o++] = z;
-          px = x; py = y; pz = z;
+      for (let i = 0; i < K.length; i++) {
+        const k = K[i];
+        if (cut >= 0 && k > cut) continue;
+        const r = i * 6;
+        let x0 = R[r], y0 = R[r + 1], z0 = R[r + 2], x1 = R[r + 3], y1 = R[r + 4], z1 = R[r + 5];
+        if (y0 > top && y1 > top) continue;
+        if (y0 > top || y1 > top) {
+          const f = (top - y0) / (y1 - y0), x = x0 + (x1 - x0) * f, z = z0 + (z1 - z0) * f;
+          if (y0 > top) { x0 = x; y0 = top; z0 = z; } else { x1 = x; y1 = top; z1 = z; }
         }
+        const off = offsets[k];
+        P[o++] = x0; P[o++] = y0 + off; P[o++] = z0; P[o++] = x1; P[o++] = y1 + off; P[o++] = z1;
       }
       const attr = l.geometry.attributes.instanceStart;
       attr.data.array.set(P);
       attr.data.needsUpdate = true;
+      l.geometry.instanceCount = o / 6;
       if (l.material.dashed) l.object.computeLineDistances();
     }
   }

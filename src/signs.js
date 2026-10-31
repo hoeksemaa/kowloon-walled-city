@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { STOREY } from './layout.js';
 import { OUTSIDE, ROAD } from './footprint.js';
 import { wallFrame } from './geom.js';
+import { withSection } from './kinds.js';
 
 // Generic words for each trade (GRS trade key) and each floor use.
 const TRADE_ZH = {
@@ -156,6 +157,7 @@ export function emitSign(S, sign, cell, white) {
   }
 }
 
+// A sign is cut by the section at the cut storey (kinds.js), in its colour and in its shadow.
 export function makeSignMaterial(shared, map) {
   const m = new THREE.MeshLambertMaterial({ map });
   m.onBeforeCompile = (s) => {
@@ -163,7 +165,15 @@ export function makeSignMaterial(shared, map) {
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', '#include <common>\nuniform float uNight;')
       .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += diffuseColor.rgb * uNight * 0.9;');
+    withSection(s, shared.uCutTop);
   };
   m.customProgramCacheKey = () => 'kwc-sign';
+  return m;
+}
+
+export function makeSignDepth(shared) {
+  const m = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
+  m.onBeforeCompile = (s) => withSection(s, shared.uCutTop);
+  m.customProgramCacheKey = () => 'kwc-sign-depth';
   return m;
 }

@@ -4,7 +4,8 @@ import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { unitAt, unitName } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
-import { makeSignMaterial } from './signs.js';
+import { withSection } from './kinds.js';
+import { makeSignMaterial, makeSignDepth } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
 import { Flock } from './figures.js';
@@ -21,6 +22,7 @@ import { Sound } from './sound.js';
 import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
+const NO_CUT = 1e5; // uCutTop with no cut storey: above everything
 const GAP = 13; // extra metres between storeys when fully exploded
 const POPULATION = 28200; // occupants in January 1987 (p340); people from outside come on top (people.js)
 const START_MINUTE = 9 * 60 + 45;
@@ -85,7 +87,7 @@ const state = {
 };
 const offsets = new Float32Array(16);
 const shared = {
-  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutH: { value: CUT_H },
+  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutTop: { value: NO_CUT },
 };
 // uMarkers: the gold marker over each real person (people.js), off while a case of the game is
 // open. uWalk and uIdle: the clocks of the steps and of the other moves (figures.js).
@@ -115,11 +117,15 @@ async function init() {
   addNorthArrow();
 
   // ---- storeys ----
+  // Each storey is one group, moved only up and down: the normal view is the storeys of the
+  // exploded view put back together.
   const antMat = new THREE.LineBasicMaterial({ color: '#3a3935' });
+  antMat.onBeforeCompile = (s) => withSection(s, shared.uCutTop);
+  antMat.customProgramCacheKey = () => 'kwc-aerial';
   const slabGeo = new THREE.PlaneGeometry(L.W, L.D).rotateX(-Math.PI / 2).translate(center.x, 0, center.z);
   const slabEdge = new THREE.EdgesGeometry(slabGeo);
   const built = buildLevels(L);
-  const signMat = makeSignMaterial(shared, built.signTexture);
+  const signMat = makeSignMaterial(shared, built.signTexture), signDepth = makeSignDepth(shared);
   levels = built.levels.map((d) => {
     const group = new THREE.Group();
     const mat = makeBuildingMaterial(shared);
@@ -127,17 +133,19 @@ async function init() {
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = makeBuildingDepth(mat, shared);
     group.add(mesh);
+    let cutout = null;
     if (d.cutout) {
       // the see-through cages, plants and pipes (cityMesh.js)
-      const cut = new THREE.Mesh(d.cutout, makeCutoutMaterial(mat, shared));
-      cut.castShadow = cut.receiveShadow = true;
-      cut.customDepthMaterial = mesh.customDepthMaterial;
-      group.add(cut);
+      cutout = new THREE.Mesh(d.cutout, makeCutoutMaterial(mat, shared));
+      cutout.castShadow = cutout.receiveShadow = true;
+      cutout.customDepthMaterial = mesh.customDepthMaterial;
+      group.add(cutout);
     }
     let signs = null;
     if (d.signs) {
       signs = new THREE.Mesh(d.signs, signMat);
       signs.castShadow = true;
+      signs.customDepthMaterial = signDepth;
       group.add(signs);
     }
     const ag = new THREE.BufferGeometry();
@@ -152,7 +160,7 @@ async function init() {
     slab.visible = edge.visible = false;
     group.add(slab, edge);
     scene.add(group);
-    return { k: d.k, group, mesh, mat, antennas, signs, slab, edge, plan: null };
+    return { k: d.k, group, mesh, cutout, mat, antennas, signs, slab, edge, plan: null };
   });
 
   // Dotted corner posts that appear when the storeys are pulled apart.
@@ -199,7 +207,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets };
   requestAnimationFrame(frame);
 }
 
@@ -259,13 +267,14 @@ function setOffsets(e) {
   if (state.cut >= 0) cutRing.position.y = state.cut * STOREY + CUT_H + 0.05;
 }
 
+// A cut storey is a level section, the same in both views: the storeys above it are hidden,
+// and all that rises above CUT_H over its floor is cut away, on every storey (cityMesh.js).
 function setCut(c) {
   state.cut = c;
+  shared.uCutTop.value = c >= 0 ? c * STOREY + CUT_H + 0.05 : NO_CUT;
   for (const lv of levels) {
     lv.group.visible = c < 0 || lv.k <= c;
     lv.mat.userData.uIsCut.value = lv.k === c ? 1 : 0;
-    lv.antennas.visible = lv.k !== c;
-    if (lv.signs) lv.signs.visible = lv.k !== c;
     if (lv.plan) {
       lv.group.remove(lv.plan.mesh, lv.plan.lines);
       lv.plan.mesh.geometry.dispose();
@@ -331,13 +340,11 @@ function pickBuilding() {
 
 const _v = new THREE.Vector3();
 // Where someone is on the screen: where the crowd draws them (at a bed or a seat, crowd.js),
-// or else where they are.
+// or else where they are. A person moves with the storey they stand on (people.js).
 function agentScreen(a) {
   const o = a.id * 4, P = sim.aP, s = people.shown(a.id);
-  const [x, y, z, lv0] = s || [P[o], P[o + 2], P[o + 1], P[o + 3]];
-  const lv = clamp(lv0, 0, 14.99), i0 = Math.floor(lv);
-  const off = offsets[i0] + (offsets[i0 + 1] - offsets[i0]) * (lv - i0);
-  _v.set(x, y + off + 1.0, z).project(camera);
+  const [x, y, z, lv] = s || [P[o], P[o + 2], P[o + 1], P[o + 3]];
+  _v.set(x, y + offsets[clamp(lv, 0, 15) | 0] + 1.0, z).project(camera);
   return [(_v.x * 0.5 + 0.5) * innerWidth, (-_v.y * 0.5 + 0.5) * innerHeight];
 }
 
@@ -884,7 +891,7 @@ function frame(now) {
   controls.update();
   camera.updateMatrixWorld();
   peopleU.uPeopleScale.value = clamp(1.5 - 0.075 * camera.zoom, 1, 1.4);
-  people.update(camera, state.cut, state.explode > 0.5, offsets);
+  people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
   updateLabels();
@@ -994,9 +1001,7 @@ function updateGameRings() {
   const o = game.a.id * 4, P = sim.aP;
   game.follow.visible = P[o + 3] >= 0;
   if (!game.follow.visible) return;
-  const lv = clamp(P[o + 3], 0, 14.99), i0 = Math.floor(lv);
-  const off = offsets[i0] + (offsets[Math.min(15, i0 + 1)] - offsets[i0]) * (lv - i0);
-  game.follow.position.set(P[o], P[o + 2] + off + 0.1, P[o + 1]);
+  game.follow.position.set(P[o], P[o + 2] + offsets[clamp(P[o + 3], 0, 15) | 0] + 0.1, P[o + 1]);
   game.follow.scale.set(1.4, 1, 1.4);
 }
 

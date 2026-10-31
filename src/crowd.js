@@ -1,8 +1,9 @@
 // Who is drawn, and how. Each frame, the people in view are packed into the instance buffers
 // of the figures (figures.js): indoors, only the cut storey shows, because the walls hide the
-// rest, unless the storeys are lifted apart. On the cut storey, people who stay in a unit lie
-// in its beds, sit on its seats and stand at its stoves and machines (the spots of
-// interiors.js). Who takes which spot is INFERRED: the first free spot of the right kind.
+// rest, unless the storeys are apart. Each person moves with the storey they stand on (a
+// whole storey, people.js). On the cut storey, people who stay in a unit lie in its beds, sit
+// on its seats and stand at its stoves and machines (the spots of interiors.js). Who takes
+// which spot is INFERRED: the first free spot of the right kind.
 import * as THREE from 'three';
 import { STOREY } from './layout.js';
 import { planAt } from './floorplan.js';
@@ -102,12 +103,13 @@ export class Crowd {
     return null;
   }
 
-  // Pack the people in view. cut: the cut storey or -1; lifted: the storeys are apart.
+  // Pack the people in view. cut: the cut storey or -1; lifted: the storeys are apart. The beds,
+  // seats and lamps of the cut storey are the same in both views.
   update(camera, cut, lifted, offsets) {
     const { sim, L, buf } = this, B = L.buildings, P = sim.aP, M = sim.aM, A = sim.agents, n = A.length;
     const e = this._m.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse).elements;
     const top = cut < 0 ? Infinity : cut * STOREY + 1.0, low = cut * STOREY - STOREY * 0.6;
-    const spotsOn = cut >= 0 && !lifted && this.level === cut && this.spots.length > 0;
+    const spotsOn = cut >= 0 && this.level === cut && this.spots.length > 0;
     this.frame++;
     for (let c = 0; c < this.count; c++) this.slot[this.ids[c]] = -1;
     this.lit.clear();
@@ -120,8 +122,7 @@ export class Crowd {
       const k = Math.floor(z - L.z0) * L.W + Math.floor(x - L.x0), ow = L.owner[k];
       const out = !L.inside[k] || L.alley[k] > 0 || ow < 0 || y > B[ow].floors * STOREY - 0.3;
       if (!lifted && !out && !(cut >= 0 && y >= low)) continue;
-      const li = Math.min(lv, 14.99), i0 = li | 0;
-      const Y = y + offsets[i0] + (offsets[i0 + 1] - offsets[i0]) * (li - i0) + 0.8;
+      const Y = y + offsets[Math.min(lv, 15) | 0] + 0.8;
       const nx = e[0] * x + e[4] * Y + e[8] * z + e[12], ny = e[1] * x + e[5] * Y + e[9] * z + e[13];
       if (nx < -1.08 || nx > 1.08 || ny < -1.12 || ny > 1.12) continue;
       let X = x, Z = z, H = y, hd = M[o], pose = M[o + 2];
@@ -171,8 +172,8 @@ export class Crowd {
     const p = this.buf.aP;
     let best = -1, bd = r * r;
     for (let c = 0; c < this.count; c++) {
-      const x = p[c * 4], z = p[c * 4 + 1], lv = Math.min(p[c * 4 + 3], 14.99), i0 = lv | 0;
-      const Y = p[c * 4 + 2] + offsets[i0] + (offsets[i0 + 1] - offsets[i0]) * (lv - i0) + 1.0;
+      const x = p[c * 4], z = p[c * 4 + 1];
+      const Y = p[c * 4 + 2] + offsets[Math.min(p[c * 4 + 3], 15) | 0] + 1.0;
       const sx = ((e[0] * x + e[4] * Y + e[8] * z + e[12]) * 0.5 + 0.5) * w, sy = (-(e[1] * x + e[5] * Y + e[9] * z + e[13]) * 0.5 + 0.5) * h;
       const d = (sx - px) ** 2 + (sy - py) ** 2;
       if (d < bd) { bd = d; best = this.ids[c]; }

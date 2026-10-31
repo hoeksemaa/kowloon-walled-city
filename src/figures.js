@@ -265,9 +265,8 @@ vec3 rig(vec3 p, vec3 n, out vec3 nOut) {
   if (size < 0.5) q *= vec3(0.8, 0.68, 0.8);
   else if (size > 1.5) q *= vec3(1.0, 0.96, 1.0);
   nOut = turnY(m, hdg);
-  float lv = clamp(aP.w, 0.0, 14.99);
-  int i0 = int(floor(lv)), i1 = min(i0 + 1, 15);
-  float off = mix(uOff[i0], uOff[i1], fract(lv));
+  // the lift of the storey the person stands on (aP.w, a whole storey: people.js)
+  float off = uOff[int(clamp(aP.w, 0.0, 15.0))];
   return turnY(q, hdg) * uPeopleScale + vec3(aP.x, aP.z + off, aP.y);
 }
 `;
@@ -402,8 +401,9 @@ export class Flock {
     const a = this.keeper;
     this.mesh.visible = this.flying;
     if (!this.mesh.visible) return;
-    const b = this.sim.L.buildings[a.work.b], k = Math.min(15, b.floors);
-    const y0 = b.floors * STOREY + offsets[Math.min(15, k)] + 9;
+    // over the keeper's roof, which is part of the block's top storey
+    const b = this.sim.L.buildings[a.work.b];
+    const y0 = b.floors * STOREY + offsets[Math.min(15, b.floors - 1)] + 9;
     for (let i = 0; i < this.n; i++) {
       const [r1, r2, r3] = this.seed[i];
       const ang = t * (0.55 + 0.1 * r1) + r2 * 1.4, rad = 16 + 9 * r3;

@@ -101,11 +101,13 @@ export function buildLevels(L) {
   for (const s of signs) signsAt[s.s].push(s);
 
   const levels = [];
+  // The see-through things (cages, plants, pipes, stains) go in a mesh of their own, drawn
+  // with alpha to coverage (makeCutoutMaterial); the rest stays fully opaque, and fast. A stain
+  // that runs down past the slab line goes on in the mesh of the storey below (facades.js).
+  const Mcs = Array.from({ length: MAX_FLOORS }, () => new Builder());
   for (let k = 0; k < MAX_FLOORS; k++) {
     const M = new Builder();
-    // The see-through things (cages, plants, pipes, stains) go in a mesh of their own, drawn
-    // with alpha to coverage (makeCutoutMaterial); the rest stays fully opaque, and fast.
-    const Mc = new Builder();
+    const Mc = Mcs[k];
     const S = new Builder('uv');
     const ant = [];
     for (const b of B) {
@@ -205,7 +207,7 @@ export function buildLevels(L) {
             if (frng() < (facing === 'alley' ? 0.35 : 0.7)) cageThings(Mc, fr, u - hw, u + hw, d, ya, yb, b.tower, k, frng, palette.cloth);
             if (rng() < 0.3) box(u - hw * 0.9, u + hw * 0.9, d, d + 0.25, yw + 0.72, yw + 0.78, C.bamboo, K.laundry);
           } else if (r < cageP + acP) {
-            emitAC(M, Mc, fr, u, yw + 0.3, frng, info(K.ac, 0), facade[b.id].clone().multiplyScalar(0.45).lerp(RUST, 0.35), facing !== 'alley');
+            emitAC(M, Mcs, fr, u, yw + 0.3, frng, info(K.ac, 0), facade[b.id].clone().multiplyScalar(0.45).lerp(RUST, 0.35), facing !== 'alley');
           }
           if (rng() < (facing === 'alley' ? 0.035 : 0.07)) {
             // A bamboo pole of laundry, pushed out of the window.
@@ -243,8 +245,9 @@ export function buildLevels(L) {
       for (const [rings, c] of [[L.ground.lane, C.alley], [L.ground.yard, C.yard], [L.ground.road, C.road]])
         for (const p of polygonsOf(rings)) M.flat(triangulate(p), 0.01, c, [-1, 0, K.alley, 1]);
     }
-    levels.push({ k, geometry: M.geometry(), cutout: Mc.nv ? Mc.geometry() : null, signs: S.nv ? S.geometry() : null, antennas: new Float32Array(ant) });
+    levels.push({ k, geometry: M.geometry(), cutout: null, signs: S.nv ? S.geometry() : null, antennas: new Float32Array(ant) });
   }
+  for (const lv of levels) lv.cutout = Mcs[lv.k].nv ? Mcs[lv.k].geometry() : null;
   return { levels, signTexture: atlas.texture(), signCount: signs.length };
 }
 
@@ -308,8 +311,9 @@ function wellAt(M, L) {
   M.prism(L.cellX(best), L.cellZ(best), 0.38, 0.6, 0.61, 10, col('#1c1c1a'), [-1, 0, K.plain, 1]);
 }
 
-// Bridges over the lanes at storey k, and ladders up from roofs of k storeys to the next
-// roof (routes.js). A bridge is a closed passage of sheet metal and timber.
+// Bridges over the lanes at storey k, and ladders from the roof of a block whose top storey is
+// k up to the next roof (routes.js). A ladder stands on its roof, thus it is part of storey k
+// and moves with that roof. A bridge is a closed passage of sheet metal and timber.
 const LINK_COL = { bridge: col('#5d5a50'), deck: col('#3f3d38'), ladder: col('#8b6b4a') };
 function linksAt(M, L, k, rng) {
   const R = L.routes, B = L.buildings;
@@ -324,12 +328,12 @@ function linksAt(M, L, k, rng) {
   }
   for (const h of R.hops) {
     const lo = B[L.owner[h.low]], hi = B[L.owner[h.high]];
-    if (lo.floors === hi.floors || lo.floors !== k) continue;
+    if (lo.floors === hi.floors || lo.floors - 1 !== k) continue;
     // Against the higher wall, on the lower roof.
     let nx = L.cellX(h.low) - L.cellX(h.high), nz = L.cellZ(h.low) - L.cellZ(h.high);
     const l = Math.hypot(nx, nz); nx /= l; nz /= l;
-    const O = [h.x, h.z], t = [-nz, nx], n = [nx, nz], info = [lo.tower, k, K.cage, 0];
-    const ya = k * STOREY, yb = ya + STOREY + 0.9;
+    const O = [h.x, h.z], t = [-nz, nx], n = [nx, nz], info = [lo.tower, k, K.cage, 0.25];
+    const ya = (k + 1) * STOREY, yb = ya + STOREY + 0.9;
     for (const u of [-0.26, 0.2]) M.obox(O, t, n, u, u + 0.06, 0.12, 0.18, ya, yb, LINK_COL.ladder, info, true);
     for (let y = ya + 0.3; y < yb - 0.1; y += 0.3) M.obox(O, t, n, -0.2, 0.2, 0.13, 0.17, y, y + 0.04, LINK_COL.ladder, info, true);
   }
@@ -580,16 +584,21 @@ export function buildPlan(L, c) {
   return { geometry: M.geometry(), lines: lg, spots, lamps };
 }
 
+// The section at a cut storey, the same in both views: each storey drops all that rises above
+// the cut plane (uCutTop, a height of the normal view: the storeys before their lift; very
+// high with no cut). The cut storey also drops its roofs, parapets, roof things and stair
+// wells; its plan draws the walls.
+const SECTION = /* glsl */ `
+if (vRestY > uCutTop) discard;
+if (uIsCut > 0.5 && (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0)) discard;`;
+
 const FRAG = /* glsl */ `
 vec3 glow = vec3(0.0);
 float kind = vInfo.z;
 float bid = vInfo.x;
 float flr = vInfo.y;
 vec2 fwW = fwidth(vWall); // the size of a pixel in metres of the face
-if (uIsCut > 0.5) {
-  if (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0) discard;
-  if (kind != 1.0 && kind != 3.0 && vLocalY > uCutH + 0.05) discard;
-}
+${SECTION}
 // Light colours measured in the photos: tubes near-white (#f4f6f1), windows at dusk blue-white
 // (#b4dcfa), and some warm bulbs (pp16-17, 30, 42).
 const vec3 TUBE = vec3(0.9, 0.92, 0.88);
@@ -840,9 +849,10 @@ if (kind < 0.5) {
   // a parapet: black mould (pp14, 32-33)
   diffuseColor.rgb *= 0.5 + 0.35 * hash12(floor(vWall * vec2(1.3, 4.0)) + bid);
 } else if (kind == 6.0 && vInfo.w < 0.5) {
-  // A bridge or a ladder: a grille painted over a dark void, lit from inside at night.
+  // A bridge or a ladder (w 0.25): a grille painted over a dark void, lit from inside at
+  // night. A ladder takes its lights from the storey it climbs to.
   float bar = max(step(0.78, fract(vWall.x * 8.0)), step(0.84, fract(vWall.y * 2.6)));
-  vec2 cid = floor(vWall.xx * 0.6) + vec2(bid, flr);
+  vec2 cid = floor(vWall.xx * 0.6) + vec2(bid, flr + step(0.1, vInfo.w));
   float lit = step(0.45, hash12(cid));
   vec3 lc = hash12(cid + 7.0) < 0.55 ? DUSK : BULB;
   vec3 inner = mix(vec3(0.03, 0.022, 0.018), lc * 0.3, lit * uNight);
@@ -912,9 +922,11 @@ if (kind < 0.5) {
   if (fract(vWall.y / 1.6) < 0.045) diffuseColor.rgb *= 0.6;
   CUTOUT(facadeCover(kind, vInfo, vWall, vWN, fwW));
 } else if (kind == 19.0) {
-  // A stain of drips: u 0-1 across, v metres down from the unit, w its length.
-  float n = vnoise(vec2(vWall.x * 7.0, vWall.y * 1.5) + bid + flr);
-  float a = smoothstep(0.5, 0.2, abs(vWall.x - 0.5)) * (1.0 - smoothstep(0.1, vInfo.w, vWall.y)) * (0.35 + 0.65 * n);
+  // A stain of drips: u 0-1 across, v metres down from the unit; w its length, + 4 times the
+  // storey of the unit (a stain that runs past the slab line is in two storeys, facades.js).
+  float sl = mod(vInfo.w, 4.0), sf = floor(vInfo.w / 4.0);
+  float n = vnoise(vec2(vWall.x * 7.0, vWall.y * 1.5) + bid + sf);
+  float a = smoothstep(0.5, 0.2, abs(vWall.x - 0.5)) * (1.0 - smoothstep(0.1, sl, vWall.y)) * (0.35 + 0.65 * n);
   CUTOUT(a * 0.75);
 } else if (kind == 13.0) {
   // A stair: mosaic treads with a dark nosing, plain risers, whitewashed stringers (p165).
@@ -1008,19 +1020,20 @@ if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
 `;
 
 // Both passes of a storey see the facade uv (vWall), aInfo, the normal (vWN, in world space:
-// the storeys are only moved, never turned) and the plan point (vXZ, for the lamps).
+// the storeys are only moved, never turned), the plan point (vXZ, for the lamps) and the
+// height before the lift (vRestY, for the section).
 const VERT_PARS = /* glsl */ `attribute vec2 aWall; attribute vec4 aInfo;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ;`;
-const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vXZ = position.xz; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)};`;
+varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;`;
+const VERT_MAIN = /* glsl */ `vWall = aWall; vInfo = aInfo; vWN = normal; vXZ = position.xz; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)}; vRestY = position.y;`;
 
-// The shadow pass of a storey: it drops what the colour pass drops on the cut storey, so the
+// The shadow pass of a storey: it drops what the colour pass drops for the section, so the
 // cut walls do not shade the rooms. Where the colour pass cuts out bars, leaves and pipes,
 // it keeps a share of the texels as large as their cover, so cages cast barred shadows.
 // Stains cast none.
 export function makeBuildingDepth(m, shared) {
   const d = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking, side: THREE.DoubleSide });
   d.onBeforeCompile = (s) => {
-    Object.assign(s.uniforms, { uCutH: shared.uCutH, uIsCut: m.userData.uIsCut });
+    Object.assign(s.uniforms, { uCutTop: shared.uCutTop, uIsCut: m.userData.uIsCut });
     s.vertexShader = s.vertexShader
       .replace('#include <common>', `#include <common>
 ${VERT_PARS}`)
@@ -1028,14 +1041,11 @@ ${VERT_PARS}`)
 ${VERT_MAIN}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
-uniform float uIsCut; uniform float uCutH; varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN;
+uniform float uIsCut; uniform float uCutTop; varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying float vRestY;
 ${FACADE_GLSL}`)
       .replace('void main() {', `void main() {
   float kind = vInfo.z;
-  if (uIsCut > 0.5) {
-    if (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0) discard;
-    if (kind != 1.0 && kind != 3.0 && vLocalY > uCutH + 0.05) discard;
-  }
+  ${SECTION}
   if (kind == 19.0) discard;
   if (shadowCover(kind, vInfo, vWall) < 0.5) discard;`);
   };
@@ -1058,9 +1068,9 @@ ${VERT_PARS}`)
 ${VERT_MAIN}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
-uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutH;
+uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutTop;
 uniform sampler2D uLampMap; uniform vec4 uLampBox;
-varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ;
+varying vec2 vWall; varying vec4 vInfo; varying float vLocalY; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;
 ${FACADE_GLSL}
 ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) discard;' : '#define CUTOUT(c) if ((c) <= fcIgn(gl_FragCoord.xy)) discard;'}`)
       .replace('#include <color_fragment>', `#include <color_fragment>
