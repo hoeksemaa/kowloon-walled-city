@@ -9,6 +9,7 @@ import { Builder, polygonsOf, triangulate, wallFrame, insideWithMargin } from '.
 import { planSigns, SignAtlas, emitSign } from './signs.js';
 import { planDrawing, frameOf, toXZ, stairHole, planAt } from './floorplan.js';
 import { emitStairs, furnish } from './interiors.js';
+import { roofClutter } from './roofs.js';
 import { K, CUT_H } from './kinds.js';
 
 export { K, CUT_H };
@@ -189,6 +190,7 @@ export function buildLevels(L) {
             M.vwall(fr.A, fr.B, ry, ry + 0.9, [fr.n[0], 0, fr.n[1]], facade[b.id], 0, fr.len, rinfo(K.parapet));
           }
         roofProps(M, L, b, ry, rng, ant, rinfo);
+        roofClutter(M, L, b, ry, rinfo);
       }
     }
     linksAt(M, L, k, rng);
