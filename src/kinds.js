@@ -1,5 +1,19 @@
-// Surface kinds, read by the facade shader (cityMesh.js), and the height of the plan cut.
+// Surface kinds, read by the facade shader (cityMesh.js), the height of the plan cut, and the
+// section at the cut for the materials without aInfo.
 export const CUT_H = 1.1; // height of the plan cut above a floor, metres
+
+// The section at the cut storey for a material without aInfo (signs, aerials): drop what
+// rises above uCutTop, a height before the lift of the storeys (cityMesh.js SECTION). s: the
+// shader of onBeforeCompile; uCutTop: the shared uniform.
+export function withSection(s, uCutTop) {
+  s.uniforms.uCutTop = uCutTop;
+  s.vertexShader = s.vertexShader
+    .replace('#include <common>', '#include <common>\nvarying float vRestY;')
+    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvRestY = position.y;');
+  s.fragmentShader = s.fragmentShader
+    .replace('#include <common>', '#include <common>\nuniform float uCutTop; varying float vRestY;')
+    .replace('void main() {', 'void main() {\n  if (vRestY > uCutTop) discard;');
+}
 
 export const K = {
   wall: 0, plate: 1, roof: 2, alley: 3, parapet: 4, prop: 5, cage: 6, ac: 7,

@@ -1043,7 +1043,10 @@ export class Sim {
       const p = tr.pts[tr.seg], c = tr.pts[tr.seg + 1];
       const span = tr.tc[tr.seg + 1] - tr.tc[tr.seg];
       const f = span > 0 ? (el - tr.tc[tr.seg]) / span : 1;
-      this.write(a, p[0] + (c[0] - p[0]) * f, p[1] + (c[1] - p[1]) * f, p[2] + (c[2] - p[2]) * f, p[3] + (c[3] - p[3]) * f);
+      // The storey is whole: the one whose stair flight or roof ladder they are on, thus they
+      // move with it when the storeys are pulled apart. Up a flight they keep the storey of its
+      // foot until the top step; down a flight they take it at the first step.
+      this.write(a, p[0] + (c[0] - p[0]) * f, p[1] + (c[1] - p[1]) * f, p[2] + (c[2] - p[2]) * f, Math.floor(p[3] + (c[3] - p[3]) * f));
       // Face the way they go; a climb with no way along is a ladder.
       const o = a.id * 4, dx = c[0] - p[0], dz = c[1] - p[1];
       if (dx * dx + dz * dz > 1e-4) {

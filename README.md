@@ -19,7 +19,9 @@ python3 serve.py 8173
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
   types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
-  see its name and size.
+  see its name and size. The cut is a level section 1.1 m above the floor of that storey.
+  It removes all that rises higher, on every storey: also the signs, aerials, roof huts and
+  lines of the lower storeys.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Routes.** People walk from their room to the door, along the corridor and up or down
@@ -80,3 +82,20 @@ corridor or a stair, if a storey has no way down, or if walks go through other r
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.
+
+`tools/check_stack.js` checks that the storeys stack. Each drawn piece is part of one storey
+and moves only with that storey. Thus the normal view is the layered view (key E) with its
+storeys put back together, and nothing stretches. The check runs in the browser, because the
+meshes need one. Serve the repository, open the page, and type this in the console of the
+page:
+
+```js
+(await import('./tools/check_stack.js')).checkStack(kwc)
+```
+
+It returns `ok`, or a list of problems. It checks four things:
+
+- Each vertex, sign and aerial is on its own storey.
+- Each segment of a line moves with one storey.
+- No line rises above the section of a cut.
+- Each person moves with one whole storey.
