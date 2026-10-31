@@ -627,7 +627,7 @@ function bookPlaces(L, book) {
       const name = p.grsNote && p.grsNote.split(',')[0];
       if (name && /^[A-Za-z][^:]*$/.test(name)) grs.nameEn = name;
     }
-    else (b.prem[f] ||= []).push({ nameEn: `${p.name}: ${p.what}`, trade: P.trade, book: p.n, page: p.page });
+    else (b.prem[f] ||= []).push({ nameEn: P.premises || '', trade: P.trade, book: p.n, page: p.page });
     b.prem[f].use = b.uses[f] = TRADE_USE[P.trade];
     if (b.inferred) delete b.inferred[f];
   }

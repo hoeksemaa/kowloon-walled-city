@@ -616,10 +616,12 @@ function buildingTooltip(b, k) {
     <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
 }
 
-// One premises of a floor: its names and trade, and the page of the book that names it.
+// One premises of a floor: its names and trade, and the page of the book that names it. The
+// trade is left out when the name says it.
 function premLine(p) {
   const book = p.book ? ` · <span class="tt-book">BOOK p${p.page}</span>${p.inferred ? ' (INFERRED for 1986)' : ''}` : '';
-  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i>${book}`;
+  const trade = TRADE_LABEL[p.trade] || '';
+  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${(p.nameEn || '').toLowerCase().includes(trade.toLowerCase()) ? '' : trade}</i>${book}`;
 }
 
 // A unit of the cut storey: its name, size, and who lives or works there.
