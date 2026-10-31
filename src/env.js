@@ -121,8 +121,9 @@ export function addStreetLabels(scene, site, road, names) {
 }
 
 // The ground and the city around the City: light, plain greys by day, so that they show the
-// place and leave the eye on the City. At night their streets are sodium amber, as Kowloon seen
-// past the roofs (#f8f1ba / #cfb272, p316). Lighting darkens both and sets the glow by the hour.
+// place and leave the eye on the City. At night they are dark, with a faint glow of sodium
+// amber, the colour of Kowloon seen past the roofs (#f8f1ba / #cfb272, p316). Lighting darkens
+// both and sets the glow by the hour.
 const CONTEXT_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
 const GROUND_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
 const GROUND = new THREE.Color('#dddcd8');

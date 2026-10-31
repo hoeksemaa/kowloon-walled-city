@@ -39,7 +39,8 @@ python3 serve.py 8173
   36 bridges over lanes and 216 roof crossings.
 - **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
-  the tubes; at night the windows are blue-white and Kowloon beyond is sodium amber.
+  the tubes; at night the windows are blue-white, and Kowloon beyond is dark, with a faint
+  sodium glow.
 - **Surroundings.** The City and the ground round it are at one level. A dark rectangle under
   the City holds its streets, and it is also the floor shape of each storey in the layered
   view. Low grey blocks round it hold the place of the real buildings. They are clear out to
