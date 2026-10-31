@@ -36,10 +36,17 @@ marked inferred.</p>
     Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbered places of its 1992 map
     (pp352–353; the 1992 MAP tool, key M). The book counts "some 300 individual buildings", "28,200
     occupants" and "8800 separate apartments" in January 1987 (p340). The map and the 1987 figure-ground plan
-    (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. Only numbers go into
-    <code>data/</code>; no image from the book is in the app.</li>
+    (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. The 1987 plan joins the 474
+    plots into 311 towers. Only numbers go into <code>data/</code>; no image from the book is in the app.</li>
+  <li><span class="st ok">STAIRS</span>Suenn Ho's stair types (${BOOK}, pp138–139): a stair in the centre or at the
+    side, a corridor with a stair at each end, and stairs that two or three buildings share.</li>
+  <li><span class="st ok">FLATS</span>Two floors that the clearance survey drew in 1987 (p340): the 4/F flat of
+    6 Sai Shing Road, measured on 9 Nov 1987, and a 5/F of 3 Cheung On Lane where three stairs meet. The
+    model draws the rooms of the first and gives the units of the second their survey addresses. It places
+    both by house number.</li>
   <li><span class="st ok">HEIGHT</span>Storeys along the south face, read off Lambot's south elevation of 1990
-    (${MPLUS}, 2017.412).</li>
+    (${MPLUS}, 2017.412). On Tung Tau Tsuen Road, "12 storeys and more" from 1972 (p132), and one
+    building of 14 storeys from 1975 (p336).</li>
   <li><span class="st ok">NUMBERS</span>House numbers fall from west to east on Tung Tau Tsuen Road and Lung Chun
     Road, and from north to south on Sai Shing Road (Suenn Ho's route map, ${HO}).</li>
   <li><span class="st ok">PEOPLE</span>About 10,000 families (written answer, 18 Feb 1987) and 33,000 residents
@@ -58,10 +65,15 @@ marked inferred.</p>
 
 <h4>Inferred, and marked</h4>
 <ul>
-  <li><span class="st prov">HEIGHT</span>Storeys away from the south face: a tall rim of 10–14 and lower blocks
-    round the Yamen, as the 1989 aerial photos show.</li>
-  <li><span class="st prov">TRADE</span>The 459 premises fill 269 floors. 376 more floors get a trade from the
-    1983 mix, until 645 floors have one. No file records them, and the tooltip marks each one with *.</li>
+  <li><span class="st prov">HEIGHT</span>Storeys away from the south face and Tung Tau Tsuen Road: a tall rim of
+    10–15 and lower blocks round the Yamen, as the 1989 aerial photos show.</li>
+  <li><span class="st prov">PLANS</span>Where each stair, corridor and wall runs. A block with no lane frontage
+    shares the stair of the next block. Each home flat gets cubicles and bed spaces after the survey flat.</li>
+  <li><span class="st prov">FLATS</span>The home floors hold 8,800 flats, as the book counts. Thus a flat in the
+    model is about 15 m² (160 sq ft), less than the 200–400 sq ft that residents give (WSJ 2014, SCMP 2013).</li>
+  <li><span class="st prov">TRADE</span>The 459 premises fill 268 floors. Each workshop room counts as one
+    business, and 291 more floors get a trade from the 1983 mix, until the count is 645. No file records
+    them, and the tooltip marks each one with *.</li>
   <li><span class="st prov">PLACE</span>Where each premises sits on its street: the order of its house number.</li>
   <li><span class="st prov">STOREY</span>3.05 m for each storey, a usual Hong Kong tenement storey. No measured
     height is in hand.</li>

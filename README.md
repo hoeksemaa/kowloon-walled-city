@@ -13,8 +13,11 @@ python3 serve.py 8173
 ## What is in the model
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
-  cages, signs, roof tanks and aerials. The heights on the south face come from Lambot's
-  1990 south elevation.
+  cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 311
+  towers. The heights on the south face come from Lambot's 1990 south elevation.
+- **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
+  types. The home floors hold the book's 8,800 flats. Cut a storey (the floor list on the
+  right) to see the plan, and point at a unit to see its name and size.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
   names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
@@ -40,3 +43,6 @@ by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license
 Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overlay.py`
 measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
 the repository or the app.
+
+`node tools/check_layout.mjs` builds the layout without a browser. It prints the counts of
+towers, stairs and flats, and fails if a unit does not meet a corridor or a stair.

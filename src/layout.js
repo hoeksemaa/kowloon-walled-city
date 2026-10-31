@@ -11,10 +11,13 @@
 // the trade of a floor that no file records.
 import { mulberry32, vnoise, clamp, weighted } from './util.js';
 import { buildFootprints, mainAxis, LANE, YARD, ROAD } from './footprint.js';
+import { setupCores, makePlan, WORK_AREA } from './floorplan.js';
 
 // No measured storey height is in hand. 3.05 m is a usual Hong Kong tenement storey.
 export const STOREY = 3.05;
-export const MAX_FLOORS = 14;
+// "some 300 individual buildings, each rising up to a possible 15 storeys" (City of Darkness
+// Revisited, p340).
+export const MAX_FLOORS = 15;
 export const MARGIN = 18; // metres of street around the city, on the plinth
 
 // Weathered concrete, mosaic tile and paint, sRGB (from the 1987-90 photos).
@@ -100,8 +103,8 @@ const NAMES = {
 export function buildingName(b) {
   if (b.kind === 'yamen') return 'the Yamen';
   if (NAMES[b.name]) return NAMES[b.name];
-  if (b.address) return b.address;
-  return `bldg ${b.id}`;
+  const base = b.towerName || `bldg ${b.tower}`;
+  return b.block ? `${b.block}, ${base}` : base;
 }
 
 // Plan codes: 0 outside, 1 lane, 2 open yard, 3 road, 4+ plot.
@@ -174,8 +177,29 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     for (const k of cells) owner[k] = b.id;
     buildings.push(b);
   }
+  // ---- towers ----
+  // The 1987 figure-ground plan shows "around 300" buildings (p134, p340); tools/book_overlay.py
+  // joins the touching plots that stood as one. Each plot stays a block of its tower, as in
+  // the file addresses ("Front Block", "Rear Block"). A tower has one height, one face colour
+  // and one name. Plots with no building in 1987 and no block on the 1992 map are huts.
+  const towerOfCode = new Map();
+  if (book) book.overlay.towers.groups.forEach((g, t) => g.forEach((c) => towerOfCode.set(c, t)));
+  const lowCodes = new Set(book ? book.overlay.low : []);
+  const towers = [], byGroup = new Map();
+  for (const b of buildings) {
+    const g = towerOfCode.get(b.code);
+    let t = g === undefined ? null : byGroup.get(g);
+    if (!t) {
+      t = { id: towers.length, blocks: [] };
+      towers.push(t);
+      if (g !== undefined) byGroup.set(g, t);
+    }
+    b.tower = t.id;
+    t.blocks.push(b.id);
+    if (lowCodes.has(b.code) && b.kind === 'tenement') b.hut = true;
+  }
   const L = {
-    W, D, N, x0, z0, inside, alley, owner, buildings,
+    W, D, N, x0, z0, inside, alley, owner, buildings, towers,
     bbox: { minx: -plan.W / 2, maxx: plan.W / 2, minz: -plan.D / 2, maxz: plan.D / 2 },
     cellX: (k) => x0 + (k % W) + 0.5,
     cellZ: (k) => z0 + ((k / W) | 0) + 0.5,
@@ -218,11 +242,20 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
       return d < best.d ? { k, d } : best;
     }, { k: b.cells[0], d: Infinity });
     b.stair = near.k;
+    b.edge = [...new Set(alleyAdj)];
     b.color = weighted(rng, FACADES);
     b.modW = 1.5 + rng() * 1.1;
     b.cage = 0.25 + rng() * 0.6;
     b.seed = rng();
     b.prem = {}; // floor -> premises from the GRS files
+  }
+  for (const t of towers) {
+    const b0 = buildings[t.blocks[0]];
+    for (const id of t.blocks) Object.assign(buildings[id], { color: b0.color, modW: b0.modW, cage: b0.cage });
+    // Blocks from the street inward: the one with the most frontage first.
+    t.blocks.sort((p, q) => buildings[q].edge.length - buildings[p].edge.length);
+    t.blocks.forEach((id, i) => (buildings[id].block = t.blocks.length < 2 ? null
+      : t.blocks.length === 2 ? ['Front Block', 'Rear Block'][i] : `Block ${'ABCDEFGHJK'[i] || i + 1}`));
   }
 
   // ---- storeys ----------------------------------------------------------------------------
@@ -243,16 +276,36 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     // The free-school centre (義學中心) stood with the youth centre and the old people's
     // home in the middle of the city (HK01, 2016). Its upper floors: INFERRED flats.
     if (b.name === 'freeSchool') { b.floors = 6; b.uses = ['school', 'school', 'home', 'home', 'home', 'home']; continue; }
-    const dy = Math.hypot(b.cx - yc[0], b.cz - yc[1]);
+  }
+  // One height for each tower, at its centre. On Tung Tau Tsuen Road, buildings were
+  // "rising 12 storeys and more – the maximum height possible for buildings on this, the
+  // northern side of the City" in 1972 (p132), and "a 14-storey building appeared on Tung
+  // Tau Tsuen Road in 1975" (p336).
+  let north14 = false;
+  for (const t of towers) {
+    const bs = t.blocks.map((id) => buildings[id]).filter((b) => b.floors === undefined);
+    if (!bs.length) continue;
+    let n = 0, cx = 0, cz = 0;
+    for (const b of bs) { n += b.cells.length; cx += b.cx * b.cells.length; cz += b.cz * b.cells.length; }
+    cx /= n; cz /= n;
+    const dy = Math.hypot(cx - yc[0], cz - yc[1]);
     // Rim height: the south profile, carried north with noise; lower toward the Yamen.
-    let f = profileAt(b.cx) - 0.5 + 2.4 * (vnoise(b.cx / 30, b.cz / 30, 3) - 0.5) + 1.6 * (vnoise(b.cx / 9, b.cz / 9, 7) - 0.5);
+    let f = profileAt(cx) - 0.5 + 2.4 * (vnoise(cx / 30, cz / 30, 3) - 0.5) + 1.6 * (vnoise(cx / 9, cz / 9, 7) - 0.5);
     f -= 5.5 * (1 - clamp((dy - 16) / 34, 0, 1));
-    const southRow = b.front === 'road' && b.cz > bz1 - 22;
-    if (southRow) f = profileAt(b.cx) - 0.3 - (rng() < 0.25 ? 1 : 0);
-    const r = rng();
-    if (!southRow && r < 0.07 && b.cells.length < 120) { f = 2 + rng() * 3; b.kind = 'low'; }
-    b.floors = clamp(Math.round(f), 1, MAX_FLOORS);
-    b.uses = new Array(b.floors).fill('home');
+    const southRow = bs.some((b) => b.front === 'road' && b.cz > bz1 - 22);
+    if (southRow) f = profileAt(cx) - 0.3 - (rng() < 0.25 ? 1 : 0);
+    const north = bs.some((b) => b.front === 'top');
+    if (north) f = !north14 && n > 120 && rng() < 0.2 ? ((north14 = true), 14) : 12 + (rng() < 0.4 ? 1 : 0);
+    let kind = 'tenement';
+    if (bs.every((b) => b.hut)) { f = 1 + (rng() < 0.3 ? 1 : 0); kind = 'low'; }
+    else if (!southRow && !north && rng() < 0.07 && n < 120) { f = 2 + rng() * 3; kind = 'low'; }
+    else if (!north && f >= 13.5 && rng() < 0.15) f = 15;
+    const floors = clamp(Math.round(f), 1, MAX_FLOORS);
+    for (const b of bs) {
+      b.floors = floors;
+      b.kind = kind;
+      b.uses = new Array(floors).fill('home');
+    }
   }
 
   // ---- streets and premises ----------------------------------------------------------------
@@ -266,15 +319,36 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   L.frontage = streetFrontages(L, streets);
   if (biz) placePremises(L, biz, rng);
 
+  // Tower names: a file address of one of its blocks, or else a house number by the street
+  // order (APPROXIMATE, "near").
+  if (L.addr)
+    for (const [s, A] of Object.entries(L.addr)) {
+      const name = biz.streets[s].replace(/\s*[㐀-鿿]+$/, '');
+      A.F.forEach((id, i) => {
+        const n = A.nums[Math.round((i / Math.max(1, A.F.length - 1)) * (A.nums.length - 1))];
+        if (!buildings[id].near) buildings[id].near = `${n} ${name}`;
+      });
+    }
+  for (const t of towers) {
+    const bs = t.blocks.map((id) => buildings[id]);
+    const a = bs.find((b) => b.address), n = bs.find((b) => b.near);
+    t.name = a ? a.address : n ? `near ${n.near}` : null;
+    for (const b of bs) b.towerName = t.name;
+  }
+
+  // ---- stairs and floor plans ---------------------------------------------------------------
+  setupCores(L);
+  for (const b of buildings) if (b.kind !== 'yamen') b.plans = { work: makePlan(L, b, WORK_AREA, 'work') };
+
   // Floors that no file records. INFERRED: the Kai Fong Association counted 645 shops,
   // workshops and clinics in 1983 (charted by WSJ, 2014). The clearance files place fewer,
-  // thus more floors take a trade until the count is 645. Ground floors go first, street
-  // fronts before lanes; some upper floors too ("shops and factories were on upper floors",
-  // Lambot, 2019). The trade comes from the 1983 count: dentists and clinics on the street
-  // fronts, factories in the lanes.
+  // thus more floors take a trade until the count is 645; each workshop unit of a floor
+  // counts as one. Ground floors go first, street fronts before lanes; some upper floors too
+  // ("shops and factories were on upper floors", Lambot, 2019). The trade comes from the
+  // 1983 count: dentists and clinics on the street fronts, factories in the lanes.
   if (biz) {
     let n = 0;
-    for (const b of buildings) n += Object.keys(b.prem).length;
+    for (const b of buildings) if (b.plans) n += Object.keys(b.prem).length * b.plans.work.units.length;
     const cand = [];
     for (const b of buildings) {
       if (b.kind !== 'tenement' && b.kind !== 'low') continue;
@@ -291,13 +365,32 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
       const pool = b.factory ? MIX_FACTORY : b.front === 'inner' ? MIX_LANE : MIX_FRONT;
       b.uses[f] = weighted(rng, pool);
       (b.inferred ||= {})[f] = true;
-      n++;
+      n += b.plans.work.units.length;
     }
   }
-  // Flats: residents give 200-300 sq ft (19-28 m2) for their flats (WSJ fact boxes, 2014).
-  // 21 m2 of plot a flat gives about 8,500 households; residents counted "8000多戶" (HK01,
-  // 2016) and the Legislative Council was told of about 10,000 (Hansard, Feb 1987).
-  for (const b of buildings) b.flats = Math.max(1, Math.round(b.cells.length / 21));
+  // Flats: "28,200 occupants residing in 8800 separate apartments" in January 1987 (p340).
+  // The flat size is set so that the home floors hold about 8,800 flats. A flat then comes
+  // out at about 15 m2 (160 sq ft), less than the 200-400 sq ft that residents give (WSJ,
+  // 2014; SCMP, 2013). The model keeps the book's count.
+  const homeFloors = (b) => b.uses.filter((u) => u === 'home').length;
+  let net = 0;
+  for (const b of buildings) {
+    if (!b.plans) continue;
+    let c = 0;
+    for (const v of b.plans.work.cell) if (v >= 0) c++;
+    net += c * homeFloors(b);
+  }
+  let T = net / APARTMENTS_1987;
+  for (let it = 0; it < 4; it++) {
+    let count = 0;
+    for (const b of buildings) if (b.plans) { b.plans.home = makePlan(L, b, T, 'home'); count += b.plans.home.units.length * homeFloors(b); }
+    L.flatCount = count;
+    if (Math.abs(count - APARTMENTS_1987) < 80) break;
+    T *= count / APARTMENTS_1987;
+  }
+  L.flatArea = T;
+  for (const b of buildings) b.flats = b.plans ? b.plans.home.units.length : 0;
+  if (book) realFloors(L, book);
 
   // The main hall is the largest Yamen building; people "at the Yamen" use its yard.
   const yamens = buildings.filter((b) => b.kind === 'yamen');
@@ -445,6 +538,7 @@ function placePremises(L, biz, rng) {
 // plastics, 89 clinics, 77 shops, 56 metal, 44 garment, 41 other manufacturing, 35 meat,
 // 33 cake, 30 textile, 50 others (645). Split here between street fronts and lanes.
 const KAIFONG_1983_TOTAL = 645;
+const APARTMENTS_1987 = 8800;
 const MIX_FRONT = [['dentist', 80], ['clinic', 70], ['shop', 45], ['medicine', 10], ['eating', 12], ['office', 10]];
 const MIX_LANE = [['plastics', 93], ['metal', 56], ['garment', 74], ['works', 41], ['foodfac', 68], ['shop', 32],
   ['dentist', 17], ['clinic', 19], ['eating', 10]];
@@ -465,4 +559,41 @@ export function locate(L, street, num, floor = 0) {
       if (b && b.floors > floor && b.kind !== 'yamen') return b;
     }
   return null;
+}
+
+// The two floors that the clearance survey drew in 1987 (City of Darkness Revisited, p340).
+// The model places each by its house number (APPROXIMATE) and names its units.
+function realFloors(L, book) {
+  const B = L.buildings;
+  const flat = book.flats.taiHing4F;
+  const b = locate(L, 'ssr', 6, 4);
+  if (b && b.plans) {
+    if (b.uses[4] !== 'home' && !b.prem[4]) { b.uses[4] = 'home'; if (b.inferred) delete b.inferred[4]; }
+    const units = b.plans.home.units.filter((u) => u.door && u.door.axis === 'w');
+    const u = (units.length ? units : b.plans.home.units).reduce((p, q) => (Math.abs(q.area - 25) < Math.abs(p.area - 25) ? q : p));
+    (b.unitNotes ||= {})[`4:${u.id}`] = {
+      name: `${flat.address} (the survey's flat)`,
+      note: `Measured on 9 Nov 1987 (p340): living room 9.65 m², two cubicles of 3.54 m², kitchen 2.0 m², toilet, two bed spaces. Place by house number, approximate.`,
+    };
+    L.realFlat = { b: b.id, f: 4, u: u.id };
+  }
+  const shared = book.flats.cheungOn5F;
+  const c = locate(L, 'ttt', 31, 5);
+  if (c) {
+    // The units of the tower's 5/F nearest a stair, in the order of the survey sheet.
+    const list = [];
+    for (const id of L.towers[c.tower].blocks) {
+      const d = B[id];
+      if (!d.plans || d.floors <= 5 || d.uses[5] !== 'home') continue;
+      for (const u of d.plans.home.units) list.push({ d, u, near: d.cores.length ? 0 : 1 });
+    }
+    list.sort((p, q) => p.near - q.near || q.u.area - p.u.area);
+    shared.units.forEach((s, i) => {
+      if (!list[i]) return;
+      (list[i].d.unitNotes ||= {})[`5:${list[i].u.id}`] = {
+        name: s.address,
+        note: `${s.ref}. The 1987 survey (p340) drew a shared 5/F here: five units, and three stairs that share landings. The plan in the model is inferred.`,
+      };
+    });
+  }
 }

@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
 import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
+import { unitAt, unitName } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, CUT_H, USE_COLORS } from './cityMesh.js';
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
@@ -80,6 +81,8 @@ const shared = {
 const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 } };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
+const unitRes = new Map();
+const unitReal = new Map(); // a unit -> the real person whose home it is, with a recorded flat size
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -159,6 +162,8 @@ async function init() {
   scene.add(people.mesh);
   residents = new Map();
   for (const a of agents) residents.set(a.home.b, (residents.get(a.home.b) || 0) + 1);
+  for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
+  for (const a of agents) if (a.real && a.real.home && a.real.home.size && a.home.m !== undefined) unitReal.set(`${a.home.b}:${a.home.f}:${a.home.m}`, a.real);
 
   buildUI();
   buildStreetTags();
@@ -283,7 +288,7 @@ function pickBuilding() {
       if (i < 0 || j < 0 || i >= L.W || j >= L.D) continue;
       const b = L.owner[j * L.W + i];
       if (b >= 0 && L.buildings[b].floors > k) {
-        if (!best || t < best.t) best = { t, b, k };
+        if (!best || t < best.t) best = { t, b, k, cell: j * L.W + i };
         break;
       }
     }
@@ -532,7 +537,36 @@ function buildingTooltip(b, k) {
   const inf = B.inferred ? '<div class="tt-s">* trade inferred from the Kai Fong count of 1983, not from a file</div>' : '';
   return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${prem}${front}${fact}
     <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>${inf}
-    <div class="tt-s">plot from the 1980s plan · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : 'storeys inferred from photos'} · place on street from house-number order</div>`;
+    <div class="tt-s">plot from the 1980s plan${B.block ? `, one of ${L.towers[B.tower].blocks.length} blocks of a tower on the 1987 plan` : ''} · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : B.front === 'top' ? '“12 storeys and more” on this road (p132)' : 'storeys inferred from photos'} · place on street from house-number order</div>
+    <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
+}
+
+// A unit of the cut storey: its name, size, and who lives or works there.
+function unitTooltip(bid, f, cell) {
+  const B = L.buildings[bid];
+  const hit = unitAt(B, f, cell);
+  if (!hit) return null;
+  const src = '<div class="tt-s">plan inferred: stairs and corridors after Suenn Ho’s types (pp138–139); flats sized so the city holds 8,800 (p340)</div>';
+  if (!hit.u) {
+    const what = hit.part === 'stair' ? 'STAIR' : 'CORRIDOR';
+    const shares = L.buildings.filter((x) => x.shareWith === bid).length;
+    return `<div class="tt-h">${what} · ${levelName(f)}</div><div>${buildingName(B)}</div>
+      ${hit.part === 'stair' && shares ? `<div class="tt-s">shared with ${shares} block${shares > 1 ? 's' : ''} that have no stair of their own</div>` : ''}${src}`;
+  }
+  const u = hit.u, P = hit.plan;
+  const note = B.unitNotes && B.unitNotes[`${f}:${u.id}`];
+  const who = unitRes.get(`${bid}:${f}:${u.id}`) || 0;
+  const rows = P.kind === 'home'
+    ? `<div><span class="tt-k">flat</span> about ${u.area} m² (${Math.round(u.area * 10.76)} sq ft)</div><div><span class="tt-k">home of</span> ${who} ${who === 1 ? 'person' : 'people'} (simulated)</div>`
+    : `<div><span class="tt-k">${USE_LABEL[B.uses[f]]}</span> about ${u.area} m² (${Math.round(u.area * 10.76)} sq ft)</div>`;
+  const prem = (B.prem[f] || []).slice(0, 3).map((p) => `<div class="tt-r">${p.nameZh || ''} ${p.nameEn || ''} <i>${TRADE_LABEL[p.trade] || ''}</i></div>`).join('')
+    + ((B.prem[f] || []).some((p) => p.mezz) ? '<div class="tt-s">the files name a mezzanine (M/F) on this floor</div>' : '');
+  const flatNote = P.kind === 'home' && !note ? '<div class="tt-s">cubicles and bed spaces after the 1987 survey plan of a flat (p340), inferred</div>' : '';
+  const R = P.kind === 'home' && unitReal.get(`${bid}:${f}:${u.id}`);
+  const recorded = R ? `<div class="tt-real">REAL PERSON</div><div class="tt-r">The home of ${R.name}: ${R.home.size}. The model draws this flat smaller.</div>` : '';
+  return `<div class="tt-h">${unitName(B, f, u).toUpperCase()}</div><div>${buildingName(B)}</div>${rows}
+    ${prem ? `<div class="tt-s">on this floor, in the clearance files:</div>${prem}` : ''}
+    ${recorded}${note ? `<div class="tt-real">FROM THE 1987 SURVEY</div><div class="tt-r">${note.note}</div>` : flatNote}${src}`;
 }
 
 function agentTooltip(id) {
@@ -563,8 +597,9 @@ function updateHover() {
   }
   const hit = pickBuilding();
   if (hit) {
-    shared.uHi.value = hit.b;
-    showTooltip(buildingTooltip(hit.b, hit.k));
+    shared.uHi.value = L.buildings[hit.b].tower;
+    const unit = hit.k === state.cut ? unitTooltip(hit.b, hit.k, hit.cell) : null;
+    showTooltip(unit || buildingTooltip(hit.b, hit.k));
   } else hideTooltip();
 }
 

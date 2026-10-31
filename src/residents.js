@@ -11,7 +11,7 @@ export const REAL = [
     name: 'Chan Cheung-chuen',
     role: 'engineering student who drew a map of the city',
     age: null,
-    home: { street: 'ttt', num: 31, floor: 12, text: '12/F, Room B, 31 Tung Tau Tsuen Road' },
+    home: { street: 'ttt', num: 31, floor: 12, unit: 'B', text: '12/F, Room B, 31 Tung Tau Tsuen Road', size: '200–300 sq ft (WSJ, 2014)' },
     sched: 'mapper',
     household: 3,
     facts: [
@@ -28,7 +28,7 @@ export const REAL = [
     name: 'Albert Ng Kam-po',
     role: 'son of a Chiu Chow family, 18',
     age: 18,
-    home: { street: 'skg', num: 8, floor: 7, text: 'Room A, 7/F, 8 Sz Kung Street' },
+    home: { street: 'skg', num: 8, floor: 7, unit: 'A', text: 'Room A, 7/F, 8 Sz Kung Street', size: 'more than 200 sq ft (WSJ, 2014)' },
     sched: 'youth',
     household: 5,
     facts: [
@@ -78,7 +78,7 @@ export const REAL = [
     name: '葉德偉 Yip Tak-wai',
     role: 'accountant in Central, 30',
     age: 30,
-    home: { floor: 4, text: 'a flat of 400 sq ft (building not recorded; place inferred)' },
+    home: { floor: 4, text: 'a flat of 400 sq ft (building not recorded; place inferred)', size: '400 sq ft (SCMP, 2013)' },
     sched: 'commuter',
     facts: [
       ['He bought a 400 sq ft flat in the city in 1976 for HK$30,000, half the price outside.', 'SCMP, 4 Jan 2013'],

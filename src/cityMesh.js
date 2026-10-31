@@ -4,9 +4,10 @@
 import * as THREE from 'three';
 import { STOREY, MAX_FLOORS } from './layout.js';
 import { mulberry32, hash2 } from './util.js';
-import { clipLine, LANE, YARD, ROAD, OUTSIDE } from './footprint.js';
+import { LANE, YARD, ROAD, OUTSIDE } from './footprint.js';
 import { Builder, polygonsOf, triangulate, wallFrame, insideWithMargin } from './geom.js';
 import { planSigns, SignAtlas, emitSign } from './signs.js';
+import { planDrawing, frameOf, toXZ } from './floorplan.js';
 
 export const CUT_H = 1.1; // height of the plan cut above a floor, metres
 
@@ -67,7 +68,8 @@ export function buildLevels(L) {
         continue;
       }
       const y0 = k * STOREY, y1 = y0 + STOREY;
-      const info = (kind, w = 1) => [b.id, k, kind, w];
+      // aInfo.x is the tower: the shader varies and highlights by tower.
+      const info = (kind, w = 1) => [b.tower, k, kind, w];
       for (const t of tris[b.id]) M.flat(t, y0 + 0.02, useCol[b.uses[k]] || useCol.home, info(K.plate));
 
       b.rings.forEach((ring, ri) => ring.edges.forEach((e, ei) => {
@@ -126,8 +128,8 @@ export function buildLevels(L) {
 
       if (k === b.floors - 1) {
         const ry = b.floors * STOREY;
-        const rinfo = (kind) => [b.id, k, kind, 1];
-        const rc = pickc(rng, palette.roof);
+        const rinfo = (kind) => [b.tower, k, kind, 1];
+        const rc = palette.roof[Math.floor(hash2(b.tower, 7) * palette.roof.length)];
         for (const t of tris[b.id]) M.flat(t, ry, rc, rinfo(K.roof));
         for (const ring of b.rings)
           for (const e of ring.edges) {
@@ -159,16 +161,13 @@ function spot(L, b, rng, m) {
 }
 
 function roofProps(M, L, b, ry, rng, ant, info) {
-  const [ux, uz] = b.axis, px = -uz, pz = ux;
-  // Stair hut over the stair, square to the building.
-  const sx = L.x0 + (b.stair % L.W) + 0.5, sz = L.z0 + Math.floor(b.stair / L.W) + 0.5;
-  for (const [hl, hw] of [[2.4, 2.1], [1.6, 1.6]]) {
-    if (!insideWithMargin(b.rings, sx, sz, Math.hypot(hl, hw) / 2 - 0.1)) continue;
-    const O = [sx - ux * hl / 2 - px * hw / 2, sz - uz * hl / 2 - pz * hw / 2];
+  // A stair hut over each stair of the block (floorplan.js).
+  const F = frameOf(b), { ux, uz, px, pz } = F;
+  for (const c of b.cores) {
+    const O = toXZ(F, c.a0, c.w0), hl = c.a1 - c.a0, hw = c.w1 - c.w0;
     const hc = pickc(rng, palette.hut);
     M.obox(O, [ux, uz], [px, pz], 0, hl, 0, hw, ry, ry + 2.35, hc, info(K.prop), true);
     M.obox(O, [ux, uz], [px, pz], -0.15, hl + 0.15, -0.15, hw + 0.15, ry + 2.35, ry + 2.45, palette.roof[3], info(K.prop), true);
-    break;
   }
   // Water tanks: round and square, on short stands.
   const nt = 1 + Math.floor(rng() * 2) + Math.floor(b.cells.length / 90);
@@ -227,7 +226,7 @@ function roofProps(M, L, b, ry, rng, ant, info) {
 // tile roof over its long axis. The restored halls face SSE (OSM); the plan shows the
 // compound as the old people's centre, with the youth centre on its north side.
 function buildYamen(M, b, tris, C, useCol) {
-  const info = (kind) => [b.id, 0, kind, 1];
+  const info = (kind) => [b.tower, 0, kind, 1];
   for (const t of tris) M.flat(t, 0.03, useCol.yamen, info(K.plate));
   const wh = 3.4, ov = 0.5;
   for (const ring of b.rings)
@@ -255,68 +254,42 @@ function buildYamen(M, b, tris, C, useCol) {
   M.face([P(a1, wh, c1), P(a1, wh, c0), P(a1, ridge - 0.2, cm)], [ux, 0, uz], C.yamenWall, tuv, info(K.plain));
 }
 
-// Plan of one storey for the cut view: black wall caps and dotted outlines, plus
-// partitions that split each floor into flats. A deep floor gets a corridor down its
-// long axis with flats on both sides.
+// Plan of one storey for the cut view: black wall caps and dotted outlines; inside each
+// block, the corridor, the stairs, the walls between units, and the cubicles and bed spaces
+// of the flats (floorplan.js).
 export function buildPlan(L, c) {
   const M = new Builder();
   const lines = [];
-  const black = col('#141414'), part = col('#a39c8f');
+  const black = col('#141414'), part = col('#a39c8f'), thin = col('#bcb4a4');
+  const plate = { corridor: col('#d6d0c1'), stair: col('#8a857a') };
   const y0 = c * STOREY, yc = y0 + CUT_H;
+  const UV = [[0, 0], [1, 0], [1, 1], [0, 1]];
   for (const b of L.buildings) {
     if (b.floors <= c || b.kind === 'yamen') continue;
-    const info = [b.id, c, K.poche, 1];
+    const info = [b.tower, c, K.poche, 1];
     for (const ring of b.rings)
       for (const e of ring.edges) {
         const fr = wallFrame(e), q = 0.2;
         const ix = -fr.n[0] * q, iz = -fr.n[1] * q;
         M.face([[fr.A[0], yc + 0.005, fr.A[1]], [fr.B[0], yc + 0.005, fr.B[1]], [fr.B[0] + ix, yc + 0.005, fr.B[1] + iz], [fr.A[0] + ix, yc + 0.005, fr.A[1] + iz]],
-          [0, 1, 0], black, [[0, 0], [1, 0], [1, 1], [0, 1]], info);
+          [0, 1, 0], black, UV, info);
         lines.push(fr.A[0], yc + 0.03, fr.A[1], fr.B[0], yc + 0.03, fr.B[1]);
       }
-    if (b.flats < 2 || b.uses[c] !== 'home') continue;
-    const [ux, uz] = b.axis, px = -uz, pz = ux;
-    let a0 = Infinity, a1 = -Infinity, w0 = Infinity, w1 = -Infinity;
-    for (const ring of b.rings)
-      for (const [x, z] of ring.pts) {
-        const a = x * ux + z * uz, w = x * px + z * pz;
-        a0 = Math.min(a0, a); a1 = Math.max(a1, a); w0 = Math.min(w0, w); w1 = Math.max(w1, w);
-      }
-    // A partition from P + d*t0 to P + d*t1 (P, d in plan), with a black cap.
-    const emit = (X0, Z0, X1, Z1) => {
+    // A wall from (X0, Z0) to (X1, Z1): t is half its thickness, h its height over the floor.
+    const emit = ([X0, Z0, X1, Z1], t, h, c0, cap, dashed) => {
       const dx = X1 - X0, dz = Z1 - Z0, l = Math.hypot(dx, dz);
-      if (l < 0.6) return;
-      const nx = -dz / l, nz = dx / l, t = 0.07;
-      M.vwall([X0, Z0], [X1, Z1], y0, yc, [nx, 0, nz], part, 0, l, info);
-      M.face([[X0 + nx * t, yc + 0.005, Z0 + nz * t], [X1 + nx * t, yc + 0.005, Z1 + nz * t], [X1 - nx * t, yc + 0.005, Z1 - nz * t], [X0 - nx * t, yc + 0.005, Z0 - nz * t]],
-        [0, 1, 0], black, [[0, 0], [1, 0], [1, 1], [0, 1]], info);
-      lines.push(X0, yc + 0.03, Z0, X1, yc + 0.03, Z1);
+      if (l < 0.1) return;
+      const nx = -dz / l, nz = dx / l, y = y0 + h;
+      M.vwall([X0, Z0], [X1, Z1], y0, y, [nx, 0, nz], c0, 0, l, info);
+      M.face([[X0 + nx * t, y + 0.005, Z0 + nz * t], [X1 + nx * t, y + 0.005, Z1 + nz * t], [X1 - nx * t, y + 0.005, Z1 - nz * t], [X0 - nx * t, y + 0.005, Z0 - nz * t]],
+        [0, 1, 0], cap, UV, info);
+      if (dashed) lines.push(X0, y + 0.03, Z0, X1, y + 0.03, Z1);
     };
-    const corridor = w1 - w0 > 9 && b.flats >= 4;
-    const wc = (w0 + w1) / 2, cw = 0.65;
-    // Cross walls: lines across the axis, clipped to the footprint (and to one side of
-    // the corridor, when there is one).
-    const across = (a, lo, hi) => {
-      const P = [ux * a, uz * a];
-      for (const [t0, t1] of clipLine(b.rings, P, [px, pz])) {
-        const s0 = Math.max(t0, lo), s1 = Math.min(t1, hi);
-        if (s1 - s0 > 0.6) emit(P[0] + px * s0, P[1] + pz * s0, P[0] + px * s1, P[1] + pz * s1);
-      }
-    };
-    if (corridor) {
-      for (const w of [wc - cw, wc + cw]) {
-        const P = [px * w, pz * w];
-        for (const [t0, t1] of clipLine(b.rings, P, [ux, uz])) emit(P[0] + ux * t0, P[1] + uz * t0, P[0] + ux * t1, P[1] + uz * t1);
-      }
-      const n = Math.ceil(b.flats / 2);
-      for (let m = 1; m < n; m++) {
-        const a = a0 + ((a1 - a0) * m) / n;
-        across(a, -Infinity, wc - cw);
-        across(a, wc + cw, Infinity);
-      }
-    } else {
-      for (let m = 1; m < b.flats; m++) across(a0 + ((a1 - a0) * m) / b.flats, -Infinity, Infinity);
-    }
+    const d = planDrawing(L, b, c);
+    for (const [q, key] of d.plates) M.face(q.map(([x, z]) => [x, y0 + 0.045, z]), [0, 1, 0], plate[key], UV, [b.tower, c, K.plate, 1]);
+    for (const w of d.walls) emit(w, 0.07, CUT_H, part, black, true);
+    for (const w of d.fine) emit(w, 0.035, CUT_H * 0.8, thin, part, false);
+    for (const w of d.treads) emit(w, 0.02, 0.08, black, black, false);
   }
   const lg = new THREE.BufferGeometry();
   lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(lines), 3));
