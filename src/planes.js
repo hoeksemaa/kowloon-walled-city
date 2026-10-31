@@ -6,7 +6,8 @@
 // about 134°, NE of the city, on a 3° glide path (CAD; the IGS approach of 1974).
 // APPROXIMATE: the times. About 65,000 aircraft movements in 1986 (an extract of the
 // government's annual report, not checked) give about 89 landings a day; here one about
-// every 11 minutes from 06:30 to 23:50 (a night curfew, hours not checked). Each plane flies
+// every 11 minutes from 06:30 to 23:50 (a night curfew, hours not checked), fewer from 14:25
+// to 16:40. Each plane flies
 // on its own clock (see update), not at the speed of the simulation.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
@@ -71,7 +72,8 @@ export class Planes {
     if (this.cache.has(day)) return this.cache.get(day);
     const rng = mulberry32(5150 + day);
     const t = [];
-    for (let m = 390 + rng() * 6; m < 1430; m += 8 + rng() * 6) t.push(m);
+    // A lull in the landings in mid-afternoon, when the pigeons flew (p321; INFERRED from the caption).
+    for (let m = 390 + rng() * 6; m < 1430; m += (m > 865 && m < 1000 ? 17 : 8) + rng() * 6) t.push(m);
     for (const m of this.extra) t.push(m);
     this.cache.set(day, t);
     return t;

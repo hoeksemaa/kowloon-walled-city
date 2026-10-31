@@ -66,10 +66,13 @@ export const REAL = [
     role: 'postman for the city',
     age: null,
     sched: 'postman',
+    look: { hat: 3 }, // a navy hat against "the constant dripping" (City of Darkness Revisited, pp148-149)
     facts: [
       ['He delivered the mail inside the city from 1979 to 1991, on an 8-hour shift.', 'WSJ, 2014 (fact box)'],
       ['His count: about 350 buildings, and 2 with lifts.', 'WSJ, 2014 (fact box)'],
       ['"郵差和送貨員是例外" [postmen and delivery men were the exception]: the people who went everywhere in the city.', 'Greg Girard, HK01 2024 (interview 2019)'],
+      ['He "had a small moustache and was nicknamed by the locals \'hu xu zi\' (beardie), or postman Ah-Po".', 'City of Darkness Revisited, p146'],
+      ['He climbed one stair, crossed the roofs by ladders and windows, and went down another.', 'City of Darkness Revisited, pp145–146'],
     ],
     quotes: [],
   },

@@ -208,7 +208,7 @@ Each case has five hints. Each hint is stronger than the one before, and each on
 | 4 | Businesses, people, routines | medium | merged (#15) |
 | 5 | Visual style | medium | merged (#16) |
 | 6 | How people look | medium | merged (#17) |
-| 7 | The mystery game | medium |  |
+| 7 | The mystery game | medium | merged (#18) |
 | 8 | Story, sources, README | small |  |
 
 PR 5 does not depend on PRs 2–4, so it can go in parallel. The game needs PRs 3, 4 and 6.

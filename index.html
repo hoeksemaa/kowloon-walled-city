@@ -51,6 +51,10 @@
       <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 6h3v4H2z M5 6h1V5h1V4h1V3h1v10H8v-1H7v-1H6v-1H5z M11 6h1v4h-1z M13 4h1v8h-1z" fill="currentColor"/></svg>
       <span class="chev">›</span>
     </button>
+    <button class="tool" id="t-find" title="Find them 尋人: three people of the book (G)" aria-pressed="false">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M5 1h4v1h1v1h1v1h1v4h-1v1h-1v1H9v1H5v-1H4V9H3V8H2V4h1V3h1V2h1z M5 3v1H4v4h1v1h4V8h1V4H9V3z M11 10h1v1h1v1h1v1h1v2h-2v-1h-1v-1h-1v-1h-1v-1h1z" fill="currentColor" fill-rule="evenodd"/></svg>
+      <span class="chev">›</span>
+    </button>
   </nav>
 
   <aside id="rail" class="panel" aria-label="Storeys">
@@ -92,6 +96,12 @@
   </section>
 
   <section id="legend" class="panel"></section>
+
+  <section id="game" class="panel" hidden aria-label="Find them" aria-live="polite">
+    <button id="game-close" title="Close (G)">×</button>
+    <h2>FIND THEM 尋人</h2>
+    <div id="game-body"></div>
+  </section>
 
   <div id="tooltip" role="status"></div>
   <div id="tag"></div>

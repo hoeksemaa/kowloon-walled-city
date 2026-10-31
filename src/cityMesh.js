@@ -585,6 +585,11 @@ if (kind < 0.5) {
 } else if (kind == 10.0) {
   glow += TUBE;
 }
+if (bid >= 0.0 && abs(bid - uHint) < 0.5) {
+  // the tower of a hint of the game (game.js)
+  diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.72, 0.25), 0.35);
+  glow += vec3(0.22, 0.15, 0.03);
+}
 if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
   diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.45, 0.28), 0.5);
   glow += vec3(0.2, 0.07, 0.02);
@@ -604,7 +609,7 @@ varying vec2 vWall; varying vec4 vInfo; varying float vLocalY;`)
 vWall = aWall; vInfo = aInfo; vLocalY = position.y - aInfo.y * ${STOREY.toFixed(3)};`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
-uniform float uHour; uniform float uNight; uniform float uHi; uniform float uIsCut; uniform float uCutH;
+uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutH;
 varying vec2 vWall; varying vec4 vInfo; varying float vLocalY;
 float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }`)
       .replace('#include <color_fragment>', `#include <color_fragment>
