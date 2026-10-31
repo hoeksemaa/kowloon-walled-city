@@ -905,7 +905,9 @@ export class Sim {
     else if (p.type === 'ground') this.write(a, p.x, p.z, 0, 0);
     else this.write(a, p.x, p.z, p.f * STOREY, p.f);
   }
-  // The look of a person: the top colour (aC), and aL = [size, prop, hat * 2 + real, dim].
+  // The look of a person: the top colour (aC), and aL = [size, prop, hat * 2 + real, light]. The
+  // light is 0.62 asleep and 1 awake; 2 marks the selected person, whom the layered view never
+  // dims (figures.js).
   tint(a) {
     const o = a.id * 3, q = a.id * 4, sel = a.id === this.selected;
     if (sel) { this.aC[o] = 1; this.aC[o + 1] = 0.36; this.aC[o + 2] = 0.22; }
@@ -913,7 +915,7 @@ export class Sim {
     this.aL[q] = a.size;
     this.aL[q + 1] = propFor(a);
     this.aL[q + 2] = a.hat * 2 + (a.real ? 1 : 0);
-    this.aL[q + 3] = !sel && a.act === 'asleep' ? 0.62 : 1;
+    this.aL[q + 3] = sel ? 2 : a.act === 'asleep' ? 0.62 : 1;
     this.aM[q + 2] = poseFor(a);
   }
 

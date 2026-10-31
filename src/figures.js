@@ -1,6 +1,8 @@
 // The figures of the people (people.js, crowd.js), and the pigeon breeder's flock.
 import * as THREE from 'three';
 import { STOREY } from './layout.js';
+import { CUT_H } from './kinds.js';
+import { withDim } from './dim.js';
 
 // Each figure is a jointed body: legs with shoes, hips, a chest, arms with hands, a neck, a
 // head with eyes and hair, and what goes with it: a hat, a thing to carry, a stool or a mat,
@@ -343,18 +345,22 @@ vec3 transformed = rigP;
 vec3 col = paint();
 // a little darker low down and under the chin, for depth
 float y0 = position.y;
-vAC = int(aPart + 0.5) == 24 ? col : col * aL.w * (0.82 + 0.18 * smoothstep(0.0, 0.9, y0));
+vAC = int(aPart + 0.5) == 24 ? col : col * min(aL.w, 1.0) * (0.82 + 0.18 * smoothstep(0.0, 0.9, y0));
 vIn = aM.z > 31.5 ? 1.0 : 0.0;
-vLamp = aM.z > 63.5 ? texture2D(uLampMap, (aP.xy - uLampBox.xy) * uLampBox.zw).rgb : vec3(-1.0);`)
+vLamp = aM.z > 63.5 ? texture2D(uLampMap, (aP.xy - uLampBox.xy) * uLampBox.zw).rgb : vec3(-1.0);
+// the storey for the dim of the layered view (dim.js); the gold marker and the selected person
+// (aL.w 2) keep their light, as if on a storey above every cut
+vLevel = int(aPart + 0.5) == 24 || aL.w > 1.5 ? 99.0 : aP.w;`)
       .replace('#include <uv_pars_vertex>', `#include <uv_pars_vertex>
-uniform sampler2D uLampMap; uniform vec4 uLampBox; varying vec3 vLamp;`);
+uniform sampler2D uLampMap; uniform vec4 uLampBox; varying vec3 vLamp; varying float vLevel;`);
     s.fragmentShader = s.fragmentShader
-      .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; varying vec3 vLamp; uniform float uNight;`)
+      .replace('#include <common>', `#include <common>\nvarying vec3 vAC; varying float vIn; varying vec3 vLamp; varying float vLevel; uniform float uNight;`)
       .replace('#include <color_fragment>', `#include <color_fragment>\ndiffuseColor.rgb *= vAC;`)
       // At night, the tubes of the lanes light the people outdoors. In the rooms of the cut
       // storey, the lamp of the room lights them (lamps.js), and they are dim if it is off.
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
 totalEmissiveRadiance += vAC * uNight * (vLamp.x < -0.5 ? vec3(0.1 + 0.34 * vIn) : 0.07 + 0.6 * min(vLamp, vec3(1.0)));`);
+    withDim(s, 'vLevel');
   };
   m.customProgramCacheKey = () => (plain ? 'kwc-people-plain' : 'kwc-people');
   return m;
@@ -387,7 +393,12 @@ export class Flock {
     this.n = 34;
     // Larger than a bird (0.34 m), thus the flock reads at the usual zoom.
     const g = new THREE.BoxGeometry(0.9, 0.12, 0.5);
-    this.mesh = new THREE.InstancedMesh(g, new THREE.MeshLambertMaterial({ color: '#d9d6cf' }), this.n);
+    // The flock dims with the keeper's roof in the layered view (dim.js).
+    const mat = new THREE.MeshLambertMaterial({ color: '#d9d6cf' });
+    this.uLevel = { value: 0 };
+    mat.onBeforeCompile = (s) => withDim(s, 'uLevel', this.uLevel);
+    mat.customProgramCacheKey = () => 'kwc-flock';
+    this.mesh = new THREE.InstancedMesh(g, mat, this.n);
     this.mesh.frustumCulled = false;
     this.mesh.visible = false;
     this.seed = Array.from({ length: this.n }, (_, i) => [Math.sin(i * 12.9898) * 0.5 + 0.5, Math.sin(i * 78.233) * 0.5 + 0.5, Math.sin(i * 39.425) * 0.5 + 0.5]);
@@ -397,12 +408,16 @@ export class Flock {
     const a = this.keeper;
     return !!(a && a.act && a.act.startsWith('flying the pigeons') && !a.trip);
   }
-  update(t, offsets) {
+  // cut: the cut storey or -1. Like all else, the flock is gone if it flies above the section
+  // at the cut (kinds.js); the highest bird is 9 + 5 + 1.2 m over the roof.
+  update(t, offsets, cut) {
     const a = this.keeper;
     this.mesh.visible = this.flying;
     if (!this.mesh.visible) return;
     // over the keeper's roof, which is part of the block's top storey
     const b = this.sim.L.buildings[a.work.b];
+    if (cut >= 0 && b.floors * STOREY + 15.2 > cut * STOREY + CUT_H) { this.mesh.visible = false; return; }
+    this.uLevel.value = b.floors - 1;
     const y0 = b.floors * STOREY + offsets[Math.min(15, b.floors - 1)] + 9;
     for (let i = 0; i < this.n; i++) {
       const [r1, r2, r3] = this.seed[i];

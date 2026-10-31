@@ -13,13 +13,15 @@
 // lines survives.
 //
 // Each line is cut at the slab lines into pieces of one storey each. When the storeys are
-// pulled apart, each piece moves with its storey, and keeps its shape.
+// pulled apart, each piece moves with its storey, and keeps its shape, and below a cut storey
+// it dims with its storey (dim.js).
 import * as THREE from 'three';
 import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { STOREY } from './layout.js';
 import { CUT_H } from './kinds.js';
+import { withDim, dimColor } from './dim.js';
 import { mulberry32, clamp, weighted } from './util.js';
 import { OUTSIDE } from './footprint.js';
 import { wallFrame } from './geom.js';
@@ -234,20 +236,24 @@ export class WireLayer {
       const t = WIRE_TYPES[wires[0].type];
       const rest = [], ks = [];
       for (const w of wires) pieces(w, rest, ks);
-      const pos = new Float32Array(rest);
+      const pos = new Float32Array(rest), cols = new Float32Array(rest.length);
       const geometry = new LineSegmentsGeometry();
       geometry.setPositions(pos);
-      const material = new LineMaterial({ color: t.color, linewidth: t.px, worldUnits: false, dashSize: 0.5, gapSize: 0.35 });
+      geometry.setColors(cols);
+      // The colour of the type goes in the colour of each segment, dimmed by its storey.
+      const material = new LineMaterial({ color: '#ffffff', vertexColors: true, linewidth: t.px, worldUnits: false, dashSize: 0.5, gapSize: 0.35 });
       const object = new LineSegments2(geometry, material);
       object.frustumCulled = false;
       object.renderOrder = 2;
       this.object.add(object);
       // rest: the segments in the normal view; k: the storey of each segment.
-      return { key, rest: new Float32Array(rest), k: Uint8Array.from(ks), pos, geometry, material, object };
+      return { key, rest: new Float32Array(rest), k: Uint8Array.from(ks), pos, cols, color: new THREE.Color(t.color), geometry, material, object };
     });
-    // Standpipes: short posts with a tap.
+    // Standpipes: short posts with a tap, on the street (G/F).
     const g = new THREE.CylinderGeometry(0.07, 0.07, 1.0, 6).translate(0, 0.5, 0);
     const mat = new THREE.MeshLambertMaterial({ color: '#5cc6c4' });
+    mat.onBeforeCompile = (s) => withDim(s, '0.0');
+    mat.customProgramCacheKey = () => 'kwc-standpipe';
     const posts = new THREE.InstancedMesh(g, mat, data.standpipes.length);
     data.standpipes.forEach(([x, z], i) => posts.setMatrixAt(i, new THREE.Matrix4().makeTranslation(x, 0, z)));
     this.object.add(posts);
@@ -273,11 +279,13 @@ export class WireLayer {
 
   // offsets[k] = the lift of storey k. Each segment moves with its own storey. With a cut
   // storey, the storeys above it are hidden, and the rest is cut level at CUT_H over its floor
-  // (the section of cityMesh.js).
+  // (the section of cityMesh.js). Each segment takes the colour of its storey (dim.js).
   update(offsets, cut) {
     const top = cut >= 0 ? cut * STOREY + CUT_H + 0.05 : Infinity;
     for (const l of this.layers) {
-      const R = l.rest, P = l.pos, K = l.k;
+      const R = l.rest, P = l.pos, K = l.k, C = l.cols;
+      const tone = [];
+      for (let k = 0; k < 16; k++) tone.push(dimColor(l.color, k, {}));
       let o = 0;
       for (let i = 0; i < K.length; i++) {
         const k = K[i];
@@ -289,12 +297,14 @@ export class WireLayer {
           const f = (top - y0) / (y1 - y0), x = x0 + (x1 - x0) * f, z = z0 + (z1 - z0) * f;
           if (y0 > top) { x0 = x; y0 = top; z0 = z; } else { x1 = x; y1 = top; z1 = z; }
         }
-        const off = offsets[k];
+        const off = offsets[k], c = tone[k];
+        C[o] = C[o + 3] = c.r; C[o + 1] = C[o + 4] = c.g; C[o + 2] = C[o + 5] = c.b;
         P[o++] = x0; P[o++] = y0 + off; P[o++] = z0; P[o++] = x1; P[o++] = y1 + off; P[o++] = z1;
       }
       const attr = l.geometry.attributes.instanceStart;
       attr.data.array.set(P);
       attr.data.needsUpdate = true;
+      l.geometry.attributes.instanceColorStart.data.needsUpdate = true;
       l.geometry.instanceCount = o / 6;
       if (l.material.dashed) l.object.computeLineDistances();
     }

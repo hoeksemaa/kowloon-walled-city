@@ -2,8 +2,16 @@
 import * as THREE from 'three';
 import { OUTSIDE } from './footprint.js';
 import { mulberry32, clamp, smoothstep } from './util.js';
+import { withDim } from './dim.js';
 
 export const PLINTH_DEPTH = 150;
+
+// The ground is part of G/F: below a cut storey in the layered view, it dims with G/F (dim.js).
+export function groundMat(m) {
+  m.onBeforeCompile = (s) => withDim(s, '0.0');
+  m.customProgramCacheKey = () => `kwc-ground-${m.type}`;
+  return m;
+}
 
 export function buildEnvironment(scene, L) {
   const group = new THREE.Group();
@@ -12,14 +20,14 @@ export function buildEnvironment(scene, L) {
   // Plinth: the model stands on a block that drops into the haze.
   const plinth = new THREE.Mesh(
     new THREE.BoxGeometry(xb - xa, PLINTH_DEPTH, zb - za),
-    new THREE.MeshLambertMaterial({ color: '#4a4038' }),
+    groundMat(new THREE.MeshLambertMaterial({ color: '#4a4038' })),
   );
   plinth.position.set((xa + xb) / 2, -PLINTH_DEPTH / 2 - 0.02, (za + zb) / 2);
   plinth.receiveShadow = true;
   group.add(plinth);
   const rim = new THREE.LineSegments(
     new THREE.EdgesGeometry(new THREE.BoxGeometry(xb - xa, 0.01, zb - za)),
-    new THREE.LineBasicMaterial({ color: '#e9e1cf', transparent: true, opacity: 0.85 }),
+    groundMat(new THREE.LineBasicMaterial({ color: '#e9e1cf', transparent: true, opacity: 0.85 })),
   );
   rim.position.set((xa + xb) / 2, 0, (za + zb) / 2);
   group.add(rim);
@@ -27,7 +35,7 @@ export function buildEnvironment(scene, L) {
   // Street surface, with a pavement band along the city edge.
   const street = new THREE.Mesh(
     new THREE.PlaneGeometry(xb - xa, zb - za).rotateX(-Math.PI / 2),
-    new THREE.MeshLambertMaterial({ color: '#57534c' }),
+    groundMat(new THREE.MeshLambertMaterial({ color: '#57534c' })),
   );
   street.position.set((xa + xb) / 2, 0, (za + zb) / 2);
   street.receiveShadow = true;
@@ -54,7 +62,7 @@ export function buildEnvironment(scene, L) {
   const pg = new THREE.BufferGeometry();
   pg.setAttribute('position', new THREE.Float32BufferAttribute(pv, 3));
   pg.setAttribute('normal', new THREE.Float32BufferAttribute(new Float32Array(pv.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
-  const paveMesh = new THREE.Mesh(pg, new THREE.MeshLambertMaterial({ color: '#77736a' }));
+  const paveMesh = new THREE.Mesh(pg, groundMat(new THREE.MeshLambertMaterial({ color: '#77736a' })));
   paveMesh.receiveShadow = true;
   group.add(paveMesh);
 
@@ -68,7 +76,7 @@ export function buildEnvironment(scene, L) {
   }
   const rg = new THREE.BufferGeometry();
   rg.setAttribute('position', new THREE.Float32BufferAttribute(rp, 3));
-  const roadLine = new THREE.LineSegments(rg, new THREE.LineDashedMaterial({ color: '#d9cfae', dashSize: 2.2, gapSize: 2.6 }));
+  const roadLine = new THREE.LineSegments(rg, groundMat(new THREE.LineDashedMaterial({ color: '#d9cfae', dashSize: 2.2, gapSize: 2.6 })));
   roadLine.computeLineDistances();
   group.add(roadLine);
 
@@ -111,7 +119,7 @@ export function addStreetLabels(scene, site, road, names) {
     draw();
     document.fonts.ready.then(draw);
     const w = Math.min(best.l * 0.8, 64);
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, w / 16), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, w / 16), groundMat(new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false })));
     m.rotation.x = -Math.PI / 2;
     // Read along the road, upright from the default camera (which looks from +x, +z).
     let ang = Math.atan2(-best.ez, best.ex);

@@ -5,6 +5,7 @@ import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL }
 import { unitAt, unitName } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
+import { DIM, withDim, dimOf } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -14,7 +15,7 @@ import { Post } from './post.js';
 import { Lamps } from './lamps.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
-import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
+import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH, groundMat } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { SOURCES_HTML } from './sources.js';
 import { Planes } from './planes.js';
@@ -118,14 +119,22 @@ async function init() {
 
   // ---- storeys ----
   // Each storey is one group, moved only up and down: the normal view is the storeys of the
-  // exploded view put back together.
-  const antMat = new THREE.LineBasicMaterial({ color: '#3a3935' });
-  antMat.onBeforeCompile = (s) => withSection(s, shared.uCutTop);
-  antMat.customProgramCacheKey = () => 'kwc-aerial';
+  // exploded view put back together. The aerials, signs and slab edges of a storey have their
+  // own materials, so the layered view can dim them with the storey (dim.js).
+  const storeyLines = (k, color, opts, section) => {
+    const m = new THREE.LineBasicMaterial({ color, ...opts });
+    const uLevel = { value: k };
+    m.onBeforeCompile = (s) => {
+      if (section) withSection(s, shared.uCutTop);
+      withDim(s, 'uLevel', uLevel);
+    };
+    m.customProgramCacheKey = () => (section ? 'kwc-aerial' : 'kwc-slab-edge');
+    return m;
+  };
   const slabGeo = new THREE.PlaneGeometry(L.W, L.D).rotateX(-Math.PI / 2).translate(center.x, 0, center.z);
   const slabEdge = new THREE.EdgesGeometry(slabGeo);
   const built = buildLevels(L);
-  const signMat = makeSignMaterial(shared, built.signTexture), signDepth = makeSignDepth(shared);
+  const signDepth = makeSignDepth(shared);
   levels = built.levels.map((d) => {
     const group = new THREE.Group();
     const mat = makeBuildingMaterial(shared);
@@ -143,19 +152,19 @@ async function init() {
     }
     let signs = null;
     if (d.signs) {
-      signs = new THREE.Mesh(d.signs, signMat);
+      signs = new THREE.Mesh(d.signs, makeSignMaterial(shared, built.signTexture, d.k));
       signs.castShadow = true;
       signs.customDepthMaterial = signDepth;
       group.add(signs);
     }
     const ag = new THREE.BufferGeometry();
     ag.setAttribute('position', new THREE.BufferAttribute(d.antennas, 3));
-    const antennas = new THREE.LineSegments(ag, antMat);
+    const antennas = new THREE.LineSegments(ag, storeyLines(d.k, '#3a3935', {}, true));
     group.add(antennas);
     const slab = new THREE.Mesh(slabGeo, new THREE.MeshBasicMaterial({ color: '#1c1b18', transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }));
     slab.position.y = d.k * STOREY - 0.06;
     slab.renderOrder = 1;
-    const edge = new THREE.LineSegments(slabEdge, new THREE.LineBasicMaterial({ color: '#efe8d6', transparent: true, opacity: 0 }));
+    const edge = new THREE.LineSegments(slabEdge, storeyLines(d.k, '#efe8d6', { transparent: true, opacity: 0 }, false));
     edge.position.y = slab.position.y;
     slab.visible = edge.visible = false;
     group.add(slab, edge);
@@ -207,7 +216,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, dim: DIM };
   requestAnimationFrame(frame);
 }
 
@@ -220,7 +229,7 @@ function addNorthArrow() {
   g.font = '34px Silkscreen, monospace'; g.textAlign = 'center'; g.fillText('N', 64, 108);
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
-  const m = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), groundMat(new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false })));
   m.rotation.x = -Math.PI / 2;
   // Point the arrow at true north.
   m.rotation.z = Math.atan2(-site.north[0], -site.north[1]);
@@ -237,16 +246,28 @@ function addNorthArrow() {
 // ---- explode + cut --------------------------------------------------------------------------
 const ease = (t) => t * t * (3 - 2 * t);
 
+// The slabs between the storeys, in the layered view, and the dim (dim.js), which comes in with
+// them. With no cut storey, each storey shows through the dark slab of the storey above it. With
+// a cut storey, the dim of the storeys below it takes the place of the slabs; the edges stay,
+// and dim with their storey. In the normal view there is neither.
+function setSlabs() {
+  const show = state.explode > 0.01;
+  const a = smoothstep(0.05, 0.7, state.explode);
+  DIM.uDimOn.value = a;
+  for (const lv of levels) {
+    lv.slab.visible = show && state.cut < 0;
+    lv.edge.visible = show;
+    lv.slab.material.opacity = 0.26 * a;
+    lv.edge.material.opacity = 0.55 * a;
+  }
+}
+
 function setOffsets(e) {
   for (let k = 0; k < 16; k++) offsets[k] = Math.min(k, MAX_FLOORS - 1) * GAP * e;
   const show = state.explode > 0.01;
   const a = smoothstep(0.05, 0.7, state.explode);
-  for (const lv of levels) {
-    lv.group.position.y = offsets[lv.k];
-    lv.slab.visible = lv.edge.visible = show;
-    lv.slab.material.opacity = 0.26 * a;
-    lv.edge.material.opacity = 0.55 * a;
-  }
+  for (const lv of levels) lv.group.position.y = offsets[lv.k];
+  setSlabs();
   const top = (MAX_FLOORS - 1) * GAP * e + MAX_FLOORS * STOREY;
   state.posts.visible = show;
   state.posts.scale.y = Math.max(top, 0.01);
@@ -272,6 +293,8 @@ function setOffsets(e) {
 function setCut(c) {
   state.cut = c;
   shared.uCutTop.value = c >= 0 ? c * STOREY + CUT_H + 0.05 : NO_CUT;
+  DIM.uDimCut.value = c;
+  setSlabs();
   for (const lv of levels) {
     lv.group.visible = c < 0 || lv.k <= c;
     lv.mat.userData.uIsCut.value = lv.k === c ? 1 : 0;
@@ -694,6 +717,11 @@ function updateLabels() {
     el.style.left = `${lx}px`;
     el.style.top = `${by}px`;
     el.style.opacity = String(smoothstep(0.35, 0.8, state.explode));
+    // Below the cut storey, the label dims with its storey (dim.js). The light kept is in linear
+    // light; the filter works on the sRGB value, thus the power 1/2.2.
+    const [keep, grey] = dimOf(k);
+    el.style.filter = keep < 1 ? `brightness(${(keep ** (1 / 2.2)).toFixed(3)}) grayscale(${grey.toFixed(2)})` : '';
+    line.style.opacity = keep < 1 ? (keep ** (1 / 2.2)).toFixed(3) : '';
     const right = lx + w;
     line.setAttribute('x1', right); line.setAttribute('y1', by);
     line.setAttribute('x2', Math.max(right, bx)); line.setAttribute('y2', by);
@@ -877,7 +905,7 @@ function frame(now) {
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
   planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3);
-  flock.update(now / 1000, offsets);
+  flock.update(now / 1000, offsets, state.cut);
   updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
   glideCamera(dt);
