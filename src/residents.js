@@ -178,18 +178,20 @@ export const VOICES = {
 // the book, which met them in about 1990, thus the hours are APPROXIMATE for 1986. trade: the
 // trade key of the clearance files (layout.js). home: where they lived, if the book says;
 // else the model puts a flat near the work (INFERRED).
+// look: the clothes in the book's photo of them (about 1990), sRGB; hat 2 is a flat cap.
 //
 // open: the hours of each day, [from, to] in hours. days: 7 every day, 6 Monday to
 // Saturday. sun: other hours on Sunday. page: the page that gives the hours; without it the
 // hours are INFERRED from the trade. On 冬至 every place shuts at 18:00 (INFERRED).
 export const BOOK_PEOPLE = [
-  { n: 1, sched: 'pigeons', roof: true, doing: 'with the pigeons on his rented roof' },
+  { n: 1, sched: 'pigeons', roof: true, doing: 'with the pigeons on his rented roof', look: { top: '#1f1d1d', bottom: '#3c5a80' } }, // black polo, jeans (p321)
   { n: 2, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making golf balls' },
   { n: 3, trade: 'medicine', open: [[8, 23]], days: 7, page: 82, doing: 'at the herbal store', hours: '“officially we are open from 8am to 11pm”' },
   { n: 4, trade: 'noodles', open: [[8, 17]], days: 6, page: 228, doing: 'making noodles', hours: 'from 8am, about nine hours' },
   { n: 8, trade: 'factory', open: [[8, 19]], days: 6, doing: 'making wooden rulers' },
   { n: 11, trade: 'cafe', open: [[9, 23.5]], days: 7, page: 57, doing: 'running the café', hours: 'from 9am to very late at night' },
-  { n: 14, trade: 'noodles', open: [[6.5, 17.5]], days: 6, doing: 'making noodles', home: { above: true, text: 'the family flat above the factory (p170)' } },
+  { n: 14, trade: 'noodles', open: [[6.5, 17.5]], days: 6, doing: 'making noodles', home: { above: true, text: 'the family flat above the factory (p170)' },
+    look: { top: '#c9b79c', bottom: '#5a5754', hat: 2 } }, // a beige sweater and a grey flat cap dusted with flour (p171)
   { n: 20, trade: 'store', open: [[7.5, 22]], days: 7, doing: 'minding the grocery' },
   { n: 21, trade: 'textile', open: [[8, 19]], days: 6, doing: 'at the looms' },
   { n: 24, trade: 'store', open: [[8, 24]], days: 7, page: 93, doing: 'minding the store', busy: [17, 21], hours: '8am to midnight, busiest from 5 to 9pm' },

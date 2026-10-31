@@ -207,7 +207,7 @@ Each case has five hints. Each hint is stronger than the one before, and each on
 | — | Sound (decision 3) | small | merged (#14) |
 | 4 | Businesses, people, routines | medium | merged (#15) |
 | 5 | Visual style | medium | merged (#16) |
-| 6 | How people look | medium |  |
+| 6 | How people look | medium | merged (#17) |
 | 7 | The mystery game | medium |  |
 | 8 | Story, sources, README | small |  |
 

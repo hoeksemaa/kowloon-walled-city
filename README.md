@@ -32,7 +32,8 @@ python3 serve.py 8173
   each day (City of Darkness Revisited, pp339–340). Nine real people say only their own
   recorded words. Sixteen people of the book work at their places, in the hours that the
   book gives. Police, sweepers, refuse collectors, meter readers and patients come in from
-  outside. All the others are composites.
+  outside. All the others are composites. They wear the December clothes of the book's
+  photos and carry sacks, buckets and baskets; a small gold marker shows each real person.
 - **Story.** Seven chapters, one for each day, with a camera that follows each scene.
 - **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
   follows the hour, with occasional clear sounds over it, for example drips, a plane and the

@@ -80,7 +80,8 @@ const offsets = new Float32Array(16);
 const shared = {
   uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uCutH: { value: CUT_H },
 };
-const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 } };
+// uMarkers: the gold marker over each real person, shown in the story (people.js).
+const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 } };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes;
 const unitRes = new Map();
@@ -903,7 +904,7 @@ function frame(now) {
 
   sim.step(dt * state.speed);
   people.aP.needsUpdate = true;
-  if (sim.colorsDirty) { people.aC.needsUpdate = true; sim.colorsDirty = false; }
+  if (sim.colorsDirty) { people.aC.needsUpdate = people.aL.needsUpdate = true; sim.colorsDirty = false; }
 
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
