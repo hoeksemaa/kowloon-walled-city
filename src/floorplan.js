@@ -15,6 +15,7 @@
 // block bends; units are slots along the corridor. Every unit meets the corridor or a stair.
 import { clipLine } from './footprint.js';
 import { pointInPolygon } from './util.js';
+import { STOREY } from './layout.js'; // a live binding: layout.js imports this module
 
 const CORE_A = 3.0, CORE_W = 2.4; // a dog-leg stair: two flights of about 1.1 m and a landing
 const BAND = 1.2; // corridor width
@@ -371,13 +372,14 @@ export const planAt = (b, f) => (b.plans ? (b.uses[f] === 'home' ? b.plans.home 
 // People walk from a room to its door, along the corridor, and into the stair, not through
 // walls. Points are plan [x, z].
 
-// Where people stand to climb: the middle of each stair. A block with no stair of its own
-// climbs at its stair cell (a narrow stair or a ladder): if it has no neighbour's stair to
-// use, or if it rises above that neighbour.
+// Where people stand to climb: the landing at the foot of each built stair, or the middle of
+// a stair with no flights. A block with no stair of its own climbs at its stair cell (a
+// narrow stair or a ladder): if it has no neighbour's stair to use, or if it rises above that
+// neighbour.
 export function stairPoints(L, b) {
   if (b.cores && b.cores.length) {
     const F = frameOf(b);
-    return b.cores.map((c) => ({ ...xzOf(F, (c.a0 + c.a1) / 2, (c.w0 + c.w1) / 2), k: c.k }));
+    return b.cores.map((c) => { const [a, w] = hubAW(b, c); return { ...xzOf(F, a, w), k: c.k, core: c }; });
   }
   const B = L.buildings;
   if (b.shareWith >= 0 && B[b.shareWith].floors >= b.floors) return [];
@@ -389,6 +391,31 @@ export function stairPoints(L, b) {
   return [{ x: L.cellX(k), z: L.cellZ(k), k }];
 }
 const xzOf = (F, a, w) => { const [x, z] = toXZ(F, a, w); return { x, z }; };
+// The hub of a stair, in the frame: the middle of the floor landing, if the stair is built.
+function hubAW(b, c) {
+  const r = stairFit(b, c);
+  return r ? [r.a0 + STAIR.LA / 2, (r.w0 + r.w1) / 2] : [(c.a0 + c.a1) / 2, (c.w0 + c.w1) / 2];
+}
+
+// The way up (or down) the built stair of core c, from storey f to the next: up flight A to
+// the half landing, across it, and up flight B (interiors.js emitStairs). The feet stay on
+// the treads: a line through the middles of the treads. Returns [x, z, y, storey] points
+// from the floor landing of f to the floor landing above (reversed for the way down), or
+// null if the stair has no flights.
+export function flightPath(b, c, f, down) {
+  const r = stairFit(b, c);
+  if (!r) return null;
+  const F = frameOf(b), n = STAIR.RISERS, half = STOREY / 2, h = half / n;
+  const fa = r.a0 + STAIR.LA, la = r.a1 - STAIR.LB, t = (la - fa) / (n - 1), wm = (r.w0 + r.w1) / 2;
+  const wA = (r.w0 + wm) / 2, wB = (wm + r.w1) / 2, aL = r.a0 + STAIR.LA / 2, aT = (la + r.a1) / 2, y0 = f * STOREY;
+  const P = (a, w, y) => { const [x, z] = toXZ(F, a, w); return [x, z, y0 + y, f + y / STOREY]; };
+  const pts = [
+    P(aL, wA, 0), P(fa - 0.02, wA, 0), P(fa + t / 2, wA, h), P(la - t / 2, wA, (n - 1) * h), P(la + 0.15, wA, half),
+    P(aT, wA, half), P(aT, wB, half),
+    P(la + 0.02, wB, half), P(la - t / 2, wB, half + h), P(fa + t / 2, wB, half + (n - 1) * h), P(fa - 0.15, wB, STOREY), P(aL, wB, STOREY),
+  ];
+  return down ? pts.reverse() : pts;
+}
 
 // The middle line of the corridor, where people walk, at a.
 function corridorW(G) {
@@ -420,7 +447,7 @@ function entry(L, b, f, x, z, k) {
   const F = frameOf(b), legs = b.band, R = regionAt(L, b, f, x, z, k);
   const lo = b.bandA ? b.bandA[0] : -Infinity, hi = b.bandA ? b.bandA[1] : Infinity;
   const onCorridor = (a) => { a = Math.min(Math.max(a, lo), hi); return { pt: xzOf(F, a, corridorW(legAt(legs, a))), a }; };
-  const coreXZ = (c) => xzOf(F, (c.a0 + c.a1) / 2, (c.w0 + c.w1) / 2);
+  const coreXZ = (c) => xzOf(F, ...hubAW(b, c));
   const pts = [];
   if (R && R.u && R.u.door) {
     const d = R.u.door;
@@ -433,12 +460,12 @@ function entry(L, b, f, x, z, k) {
     const c = b.cores.find((q) => Math.abs(q.a0 - d.a) < 1e-6 || Math.abs(q.a1 - d.a) < 1e-6) || b.cores[0];
     const s = Math.abs(c.a0 - d.a) < 1e-6 ? -0.45 : 0.45;
     pts.push(xzOf(F, d.a + s, d.w), xzOf(F, d.a, d.w), coreXZ(c));
-    if (legs) { const e = onCorridor((c.a0 + c.a1) / 2); pts.push(e.pt); return { pts, a: e.a }; }
+    if (legs) { const e = onCorridor(hubAW(b, c)[0]); pts.push(e.pt); return { pts, a: e.a }; }
     return { pts, a: null };
   }
   if (R && R.part === 'stair') {
     pts.push(coreXZ(R.core));
-    if (legs) { const e = onCorridor((R.core.a0 + R.core.a1) / 2); pts.push(e.pt); return { pts, a: e.a }; }
+    if (legs) { const e = onCorridor(hubAW(b, R.core)[0]); pts.push(e.pt); return { pts, a: e.a }; }
     return { pts, a: null };
   }
   if (legs) { const e = onCorridor(toAW(F, x, z)[0]); pts.push(e.pt); return { pts, a: e.a }; }

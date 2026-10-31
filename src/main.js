@@ -7,7 +7,8 @@ import { buildLevels, buildPlan, makeBuildingMaterial, makeBuildingDepth, CUT_H,
 import { makeSignMaterial } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
-import { makePeopleMesh, Flock } from './figures.js';
+import { Flock } from './figures.js';
+import { Crowd } from './crowd.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH } from './env.js';
@@ -82,8 +83,9 @@ const offsets = new Float32Array(16);
 const shared = {
   uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutH: { value: CUT_H },
 };
-// uMarkers: the gold marker over each real person, shown in the story (people.js).
-const peopleU = { uOff: { value: offsets }, uCutY: { value: 1e5 }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 } };
+// uMarkers: the gold marker over each real person, shown in the story (people.js). uWalk and
+// uIdle: the clocks of the steps and of the other moves (figures.js).
+const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 } };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock;
 const unitRes = new Map();
@@ -166,8 +168,8 @@ async function init() {
   const agents = createPopulation(L, POPULATION);
   sim = new Sim(L, agents);
   sim.setTime(START_MINUTE);
-  people = makePeopleMesh(sim, peopleU);
-  scene.add(people.mesh);
+  people = new Crowd(sim, L, peopleU);
+  scene.add(people.group);
   flock = new Flock(sim);
   scene.add(flock.mesh);
   makeGameRings();
@@ -182,7 +184,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, jumpBeat, people, peopleU };
   requestAnimationFrame(frame);
 }
 
@@ -257,8 +259,10 @@ function setCut(c) {
     }
   }
   if (cutRing.parent) cutRing.parent.remove(cutRing);
+  people.setSpots(-1, []);
   if (c >= 0) {
     const p = buildPlan(L, c);
+    people.setSpots(c, p.spots);
     const mesh = new THREE.Mesh(p.geometry, levels[c].mat);
     mesh.castShadow = mesh.receiveShadow = true;
     mesh.customDepthMaterial = levels[c].mesh.customDepthMaterial;
@@ -270,7 +274,6 @@ function setCut(c) {
     cutRing.position.y = c * STOREY + CUT_H + 0.05;
     cutRing.visible = true;
   }
-  peopleU.uCutY.value = c < 0 ? 1e5 : c * STOREY + 0.4;
   wires.update(offsets, c);
   renderRail();
   renderLegend();
@@ -310,30 +313,20 @@ function pickBuilding() {
 }
 
 const _v = new THREE.Vector3();
+// Where someone is on the screen: where the crowd draws them (at a bed or a seat, crowd.js),
+// or else where they are.
 function agentScreen(a) {
-  const o = a.id * 4, P = sim.aP;
-  const lv = clamp(P[o + 3], 0, 14.99), i0 = Math.floor(lv);
+  const o = a.id * 4, P = sim.aP, s = people.shown(a.id);
+  const [x, y, z, lv0] = s || [P[o], P[o + 2], P[o + 1], P[o + 3]];
+  const lv = clamp(lv0, 0, 14.99), i0 = Math.floor(lv);
   const off = offsets[i0] + (offsets[i0 + 1] - offsets[i0]) * (lv - i0);
-  _v.set(P[o], P[o + 2] + off + 1.0, P[o + 1]).project(camera);
+  _v.set(x, y + off + 1.0, z).project(camera);
   return [(_v.x * 0.5 + 0.5) * innerWidth, (-_v.y * 0.5 + 0.5) * innerHeight];
 }
 
 function pickAgent() {
-  if (!people.mesh.visible) return -1;
-  let best = -1, bd = 81;
-  const P = sim.aP;
-  for (const a of sim.agents) {
-    const o = a.id * 4;
-    if (P[o + 3] < 0 || P[o + 2] > peopleU.uCutY.value) continue;
-    const cellK = Math.floor(P[o + 1] - L.z0) * L.W + Math.floor(P[o] - L.x0);
-    const outdoors = !L.inside[cellK] || L.alley[cellK] > 0 || (a.loc && a.loc.type === 'roof');
-    const lvl = Math.round(P[o + 2] / STOREY);
-    if (!(outdoors || state.explode > 0.5 || (state.cut >= 0 && lvl === state.cut))) continue;
-    const [sx, sy] = agentScreen(a);
-    const dd = (sx - mouse.x) ** 2 + (sy - mouse.y) ** 2;
-    if (dd < bd) { bd = dd; best = a.id; }
-  }
-  return best;
+  if (!people.group.visible) return -1;
+  return people.pick(mouse.x, mouse.y, camera, offsets, 9, innerWidth, innerHeight);
 }
 
 // ---- UI -------------------------------------------------------------------------------------------
@@ -354,7 +347,7 @@ function buildUI() {
     renderLegend();
     return wires.object.visible;
   });
-  tool('t-people', true, () => (people.mesh.visible = !people.mesh.visible));
+  tool('t-people', true, () => (people.group.visible = !people.group.visible));
   tool('t-map', false, () => (state.mapPins = !state.mapPins));
   tool('t-sound', false, () => sound.toggle());
   tool('t-find', false, () => {
@@ -671,7 +664,7 @@ function updateLabels() {
 
 function updateTags() {
   const tag = $('tag');
-  if (sim.selected >= 0 && people.mesh.visible) {
+  if (sim.selected >= 0 && people.group.visible) {
     const a = sim.agents[sim.selected];
     const lv = sim.levelOf(a);
     if (lv === null) {
@@ -928,8 +921,10 @@ function frame(now) {
   if (state.explode !== prev) setOffsets(ease(state.explode));
 
   sim.step(dt * state.speed);
-  people.aP.needsUpdate = true;
-  if (sim.colorsDirty) { people.aC.needsUpdate = people.aL.needsUpdate = true; sim.colorsDirty = false; }
+  if (state.speed) {
+    peopleU.uIdle.value += dt;
+    peopleU.uWalk.value += dt * clamp(state.speed / 20, 1, 3);
+  }
 
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
@@ -953,6 +948,9 @@ function frame(now) {
   }
 
   controls.update();
+  camera.updateMatrixWorld();
+  peopleU.uPeopleScale.value = clamp(1.5 - 0.075 * camera.zoom, 1, 1.4);
+  people.update(camera, state.cut, state.explode > 0.5, offsets);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
   updateLabels();
   updateTags();
