@@ -34,6 +34,7 @@ const C = {
   flask: pal(['#c8352b', '#e0b02c', '#3f8f5a', '#e87fa0', '#2b62a8', '#e8e2d0']),
   bottle: pal(['#3a2418', '#5a3418', '#c9a23c', '#5a7a3a', '#e8e2d0']),
   book: pal(['#8a2a22', '#2b4a7a', '#3f6a4a', '#c9b48a', '#d9d4c4', '#6a4a7a']),
+  gate: pal(['#3f4a44', '#4f5f52', '#4a4f4b', '#6b4a32', '#5d6b74']),
   alu: col('#b9bdbb'), paper: col('#dcd8cc'), ivory: col('#ece4cc'), back: col('#2f6b4a'),
 };
 
@@ -290,6 +291,21 @@ const ITEMS = {
   basket: { r: 0.24, draw(X, R, s, t, h) {
     X.round(R, s, t, 0.22, h, h + 0.3, C.bamboo, 1, 9);
     X.round(R, s, t, 0.19, h + 0.3, h + 0.33, X.pick([...C.quilt, ...C.sack, ...C.plastic]), 2, 9);
+  } },
+  rubbish: { r: 0.2, draw(X, R, s, t, h) {
+    const c = X.pick([C.black, col('#e8e6df'), col('#2b2b29'), col('#c8352b')]);
+    X.round(R, s, t, 0.19, h, h + 0.26, c, 0, 7);
+    X.round(R, s + 0.03, t, 0.1, h + 0.26, h + 0.36, c, 0, 6);
+  } },
+  'pot plant': { r: 0.17, draw(X, R, s, t, h) {
+    X.round(R, s, t, 0.15, h, h + 0.3, X.pick([col('#a65a3a'), col('#8a4a32'), col('#6e6a62')]), 0, 8);
+    X.round(R, s, t, 0.2, h + 0.3, h + 0.5, X.pick([col('#4f6b3a'), col('#5d7a42'), col('#3f5a32')]), 0, 7);
+    X.round(R, s + 0.03, t - 0.02, 0.11, h + 0.5, h + 0.75, X.pick([col('#4f6b3a'), col('#6f8f5a')]), 0, 6);
+  } },
+  sacks: { r: 0.3, draw(X, R, s, t, h) {
+    X.part(R, s - 0.28, s + 0.02, t - 0.2, t + 0.2, h, h + 0.27, X.pick(C.sack));
+    X.part(R, s + 0.03, s + 0.3, t - 0.2, t + 0.2, h, h + 0.25, X.pick(C.sack));
+    if (X.rng() < 0.5) X.part(R, s - 0.14, s + 0.16, t - 0.18, t + 0.18, h + 0.26, h + 0.5, X.pick(C.sack));
   } },
   jar: { r: 0.09, draw(X, R, s, t, h) {
     X.round(R, s, t, 0.08, h, h + 0.17, C.glass, 9, 8);
@@ -561,7 +577,7 @@ const STREW = {
   kaifong: ['papers', 'fan'], school: ['bucket'], temple: ['basket'], youth: ['fan', 'bag'],
 };
 STREW.storage = STREW.works;
-const FLOOR_Y = 0.04;
+const FLOOR_Y = 0.04, CORRIDOR_Y = 0.05;
 
 // What lies on a table of radius tr with n stools round it: a bowl for each stool in a cooked
 // food stall; in a home, a game of mahjong or a few cups, bowls and flasks.
@@ -606,6 +622,7 @@ export function furnish(M, L, b, f, P, d) {
   const inUnit = (u, x, z) => { const i = cellOf(x, z); return i !== undefined && P.cell[i] === u.id && inRings(b.rings, x, z); };
   const toAW = (x, z) => [x * F.ux + z * F.uz, x * F.px + z * F.pz];
   const flatMap = new Map(d.flats.map((q) => [q.u, q.map]));
+  const hallUsed = []; // [x, z, r] of the things in the corridor
 
   for (const u of P.units) {
     X.unit = u.id;
@@ -640,9 +657,11 @@ export function furnish(M, L, b, f, P, d) {
     }
 
     // The door: a leaf swung open into the room, and outside some home doors the little
-    // shrine to the earth god, with its red lamp.
+    // shrine to the earth god, with its red lamp. Outside the door, in the corridor: the iron
+    // gate of a flat folded back by day, shoes, a bucket, a bag of rubbish; sacks and drums
+    // by a workshop. INFERRED.
     const door = u.door;
-    let dA = null, dW = null, inA = 0, inW = 0;
+    let dA = null, dW = null, inA = 0, inW = 0, shrine = false;
     if (door) {
       dA = door.a; dW = door.w;
       if (door.axis === 'w') inW = u.where === 'below' ? -1 : 1;
@@ -656,7 +675,34 @@ export function furnish(M, L, b, f, P, d) {
           ? { loc: (s, t) => toXZ(F, dA - 0.85 + s, dW - inW * (0.04 + t)) }
           : { loc: (s, t) => toXZ(F, dA - inA * (0.04 + t), dW - 0.85 + s) };
         const [sx, sz] = sh.loc(0.17, 0.12), i = cellOf(sx, sz);
-        if (i !== undefined && P.cell[i] === -1) PIECES.shrine.build(X, sh);
+        if (i !== undefined && P.cell[i] === -1) { PIECES.shrine.build(X, sh); shrine = true; }
+      }
+      // The corridor side: s along the wall from the middle of the door, t out from the wall.
+      const out = door.axis === 'w'
+        ? { loc: (s, t) => toXZ(F, dA + s, dW - inW * t) }
+        : { loc: (s, t) => toXZ(F, dA - inA * t, dW + s) };
+      const hall = (s0, s1, t1) => [[s0, 0.04], [s1, 0.04], [s0, t1], [s1, t1]].every(([s, t]) => {
+        const [x, z] = out.loc(s, t), i = cellOf(x, z);
+        return i !== undefined && P.cell[i] === -1 && inRings(b.rings, x, z) && !P.cores.some((c) => {
+          const [a, w] = toAW(x, z);
+          return a > c.a0 - 0.1 && a < c.a1 + 0.1 && w > c.w0 - 0.1 && w < c.w1 + 0.1;
+        });
+      });
+      const home = use === 'home';
+      if (home && rng() < 0.7 && hall(0.42, 0.58, 0.12)) {
+        const g = X.pick(C.gate);
+        X.part(out, 0.43, 0.57, 0.04, 0.11, 0, 2.05, g, 5);
+        X.part(out, 0.41, 0.59, 0.03, 0.12, 2.05, 2.1, g, 5);
+      }
+      const things = home ? ['slippers', 'slippers', 'bucket', 'rubbish', 'basin', 'pot plant'] : ['sacks', 'drum', 'rubbish', 'bucket', 'basket'];
+      for (const s of shrine ? [0.82] : [0.82, -0.72]) {
+        if (rng() > (home ? 0.45 : 0.35)) continue;
+        const key = things[Math.floor(rng() * things.length)], r = ITEMS[key].r;
+        if (!hall(s - r, s + r, 0.06 + 2 * r)) continue;
+        const [x, z] = out.loc(s, 0.05 + r);
+        if (hallUsed.some(([x1, z1, r1]) => Math.hypot(x - x1, z - z1) < r + r1 + 0.1)) continue;
+        hallUsed.push([x, z, r]);
+        put(X, out, key, s, 0.05 + r, CORRIDOR_Y);
       }
     }
 
