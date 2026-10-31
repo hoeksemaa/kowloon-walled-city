@@ -803,6 +803,9 @@ class Heap {
   clear() { this.t.length = 0; this.i.length = 0; }
 }
 
+const STEP = 60; // the longest step of the simulation, in seconds: one minute
+const WARM = 10; // minutes that a jump runs before its time, so that people are on their way
+
 export class Sim {
   constructor(L, agents) {
     this.L = L;
@@ -812,6 +815,7 @@ export class Sim {
     this.moving = [];
     this.minute = 0;
     this.day = 0;
+    this.fast = false; // take the plain way (plan); main.js sets it from the speed of the clock
     const n = agents.length;
     this.aP = new Float32Array(n * 4);
     this.aC = new Float32Array(n * 3);
@@ -934,7 +938,7 @@ export class Sim {
     }
   }
 
-  // Jump to a time of day without walking: everyone is put where they would be.
+  // Put each person at the place of their schedule at a time of day, with nobody on the way.
   setTime(minute) {
     this.minute = minute;
     this.newDay();
@@ -951,6 +955,14 @@ export class Sim {
       this.tint(a);
       if (s + 1 < a.sched.length) this.heap.push(a.sched[s + 1][0], a.id);
     }
+  }
+
+  // Jump to a time of day with the city in motion: set the time WARM minutes before, then
+  // run up to it, so that the walks of those minutes are under way.
+  jumpTo(minute) {
+    const from = Math.max(0, minute - WARM);
+    this.setTime(from);
+    this.step((minute - from) * 60);
   }
 
   go(a, to, now) {
@@ -977,9 +989,14 @@ export class Sim {
     this.place(a, to);
   }
 
-  // Advance by dt simulated seconds.
+  // Advance by dt simulated seconds, in steps of at most a minute, so that a fast clock
+  // starts as many small moves as a slow one.
   step(dt) {
-    this.fast = dt > 5;
+    for (; dt > STEP; dt -= STEP) this.advance(STEP);
+    this.advance(dt);
+  }
+
+  advance(dt) {
     const prevMin = this.minute;
     this.minute += dt / 60;
     if (this.minute >= 1440) {
