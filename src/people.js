@@ -18,7 +18,7 @@
 import { STOREY, USE_GROUP, USE_DOING, buildingName, locate } from './layout.js';
 import { planAt, unitName } from './floorplan.js';
 import { WALK, CLIMB } from './routes.js';
-import { mulberry32, clamp, linearRGB } from './util.js';
+import { mulberry32, clamp, linearRGB, hash2 } from './util.js';
 import { REAL, BOOK_PEOPLE } from './residents.js';
 
 const SURNAMES = ['Chan', 'Wong', 'Lee', 'Cheung', 'Lau', 'Ho', 'Ng', 'Leung', 'Lam', 'Tse', 'Yip', 'Kwok', 'Tang', 'Fung', 'Mak', 'Cheng', 'Lo', 'Yeung', 'Chow', 'Kwan', 'Chu', 'Tsang', 'Wu', 'So'];
@@ -309,6 +309,27 @@ function propFor(a) {
   if ((t.includes('noodles') || t === USE_DOING.foodfac || t.includes('candy')) && a.rng < 0.25) return PROPS.sack;
   if (t === USE_DOING.shop && a.rng < 0.03) return PROPS.gas;
   return PROPS.none;
+}
+
+// How someone holds themselves while they stay (figures.js): 0 stand, 1 sit, 2 sit at work
+// (a machine, a desk, a table of mahjong), 3 lie, 4 work standing, 5 exercise or wave the
+// pigeons in, 6 squat. INFERRED from what they do.
+export const POSE = { stand: 0, sit: 1, desk: 2, lie: 3, work: 4, exercise: 5, squat: 6 };
+const SIT_WORK = /sewing|office|tuition|homework|map|candy|rush order|mahjong|accounts|kindergarten|clinic|school/;
+const STAND_WORK = /cooking|housework|workshop|metal works|food workshop|noodles|minding|eating house|ping pong|laundry|water|fishballs|sweeping|refuse|feeding|dentist/;
+const SIT = /breakfast|lunch|dinner|supper|tea|TV|resting|worship|a break/;
+function poseFor(a) {
+  const t = a.act || '';
+  if (t === 'asleep') return POSE.lie;
+  if (/exercise|flying the pigeons|calling the pigeons/.test(t)) return POSE.exercise;
+  if (SIT_WORK.test(t)) return POSE.desk;
+  if (STAND_WORK.test(t)) return POSE.work;
+  if (SIT.test(t)) return POSE.sit;
+  // At home or out on a roof: some sit on a stool, some squat, the rest stand.
+  const r = hash2(a.id, t.length);
+  if (a.size === 0 && r < 0.35) return POSE.squat;
+  if (a.size === 2 || r < 0.5) return POSE.sit;
+  return POSE.stand;
 }
 
 // A spot inside a block at storey f: in unit m of its floor plan; in any unit if m is -1;
@@ -796,7 +817,13 @@ export class Sim {
     this.aC = new Float32Array(n * 3);
     this.aB = new Float32Array(n * 3);
     this.aL = new Float32Array(n * 4);
-    for (const a of agents) this.aB.set(a.bottom, a.id * 3);
+    // aM = [heading, gait, pose, seed]: gait 0 still, 1 walking, 2 on a stair, 3 on a ladder.
+    this.aM = new Float32Array(n * 4);
+    for (const a of agents) {
+      this.aB.set(a.bottom, a.id * 3);
+      this.aM[a.id * 4] = a.rng * Math.PI * 2;
+      this.aM[a.id * 4 + 3] = a.rng;
+    }
     this.selected = -1;
     this.activity = new Float32Array(144);
     this.residents = agents.filter((a) => a.home.type === 'in').length;
@@ -882,8 +909,8 @@ export class Sim {
     this.aL[q] = a.size;
     this.aL[q + 1] = propFor(a);
     this.aL[q + 2] = a.hat * 2 + (a.real ? 1 : 0);
-    this.aL[q + 3] = !sel && a.act === 'asleep' ? 0.32 : 1;
-    this.colorsDirty = true;
+    this.aL[q + 3] = !sel && a.act === 'asleep' ? 0.62 : 1;
+    this.aM[q + 2] = poseFor(a);
   }
 
   select(id) {
@@ -917,6 +944,7 @@ export class Sim {
       while (s + 1 < a.sched.length && a.sched[s + 1][0] <= minute) s++;
       a.si = s;
       a.trip = null;
+      this.aM[a.id * 4 + 1] = 0;
       a.act = a.sched[s][2];
       a.fidget = minute + 5 + a.rng * 40;
       this.place(a, a.sched[s][1]);
@@ -945,6 +973,7 @@ export class Sim {
   finish(a) {
     const to = a.trip.to;
     a.trip = null;
+    this.aM[a.id * 4 + 1] = 0;
     this.place(a, to);
   }
 
@@ -998,6 +1027,12 @@ export class Sim {
       const span = tr.tc[tr.seg + 1] - tr.tc[tr.seg];
       const f = span > 0 ? (el - tr.tc[tr.seg]) / span : 1;
       this.write(a, p[0] + (c[0] - p[0]) * f, p[1] + (c[1] - p[1]) * f, p[2] + (c[2] - p[2]) * f, p[3] + (c[3] - p[3]) * f);
+      // Face the way they go; a climb with no way along is a ladder.
+      const o = a.id * 4, dx = c[0] - p[0], dz = c[1] - p[1];
+      if (dx * dx + dz * dz > 1e-4) {
+        this.aM[o] = Math.atan2(dx, dz);
+        this.aM[o + 1] = Math.abs(c[2] - p[2]) > 0.01 ? 2 : 1;
+      } else this.aM[o + 1] = Math.abs(c[2] - p[2]) > 0.01 ? 3 : 1;
     }
   }
 

@@ -409,7 +409,7 @@ function buildYamen(M, b, tris, C, useCol, tower) {
 const POSTBOX = col('#6f7d62'), METERS = col('#2b2b29');
 export function buildPlan(L, c) {
   const M = new Builder();
-  const lines = [];
+  const lines = [], spots = [];
   // Whitewashed walls and corridors, mosaic stairs (pp165, 177).
   const black = col('#141414'), part = col('#cfc8bd'), thin = col('#d8d2c6');
   const plate = { corridor: col('#e2ddd8'), stair: col('#6e6966') };
@@ -442,7 +442,7 @@ export function buildPlan(L, c) {
     for (const w of d.walls) emit(w, 0.07, CUT_H, part, black, true);
     for (const w of d.fine) emit(w, 0.035, CUT_H * 0.8, thin, part, false);
     for (const w of d.treads) emit(w, 0.02, 0.08, black, black, false);
-    furnish(M, L, b, c, planAt(b, c), d);
+    for (const sp of furnish(M, L, b, c, planAt(b, c), d)) spots.push({ ...sp, b: b.id });
     // On G/F, a wall of postboxes at each entrance (p188) and a bank of meters at the stair
     // (p101). Their places beside the stair are INFERRED.
     if (c === 0 && b.cores.length) {
@@ -466,7 +466,7 @@ export function buildPlan(L, c) {
   }
   const lg = new THREE.BufferGeometry();
   lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(lines), 3));
-  return { geometry: M.geometry(), lines: lg };
+  return { geometry: M.geometry(), lines: lg, spots };
 }
 
 const FRAG = /* glsl */ `

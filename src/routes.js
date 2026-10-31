@@ -13,7 +13,7 @@
 // at any ground floor with a stair and walk the lanes on the grid (people.js).
 import { STOREY } from './layout.js';
 import { hash2 } from './util.js';
-import { stairPoints, walkIn } from './floorplan.js';
+import { stairPoints, walkIn, flightPath } from './floorplan.js';
 
 export const WALK = 1.25; // m/s
 export const CLIMB = 0.28; // m/s vertical on stairs
@@ -270,7 +270,16 @@ export function buildRoutes(L) {
     const nearStair = (b) => sp[b].reduce((p, q) => (Math.hypot(q.x - cur.x, q.z - cur.z) < Math.hypot(p.x - cur.x, p.z - cur.z) ? q : p));
     const stepAlong = ([a, b, e]) => {
       if (e.kind === 'stair') {
+        // Up or down the flights of a built stair; else straight up at the stair point.
         const st = nearStair(e.b);
+        const fl = st.core ? flightPath(B[e.b], st.core, Math.min(nF[a], nF[b]), nF[b] < nF[a]) : null;
+        if (fl) {
+          walk({ x: fl[0][0], z: fl[0][1] });
+          for (let q = 1; q < fl.length; q++) pts.push(fl[q]);
+          const E = fl[fl.length - 1];
+          cur = { x: E[0], z: E[1], n: b };
+          return;
+        }
         walk(st);
         put(st.x, st.z, b);
         cur = { ...st, n: b };
