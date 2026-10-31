@@ -184,7 +184,8 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   }
   // ---- towers ----
   // The 1987 figure-ground plan shows "around 300" buildings (p134, p340); tools/book_overlay.py
-  // joins the touching plots that stood as one. Each plot stays a block of its tower, as in
+  // joins the touching plots that stood as one, by vote and then by a check by eye (286 towers,
+  // 270 with the Yamen as one). Each plot stays a block of its tower, as in
   // the file addresses ("Front Block", "Rear Block"). A tower has one height, one face colour
   // and one name. Plots with no building in 1987 and no block on the 1992 map are huts.
   const towerOfCode = new Map();

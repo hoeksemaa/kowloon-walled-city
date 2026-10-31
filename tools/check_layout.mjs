@@ -23,7 +23,19 @@ const floors = {};
 for (const t of L.towers) floors[B[t.blocks[0]].floors] = (floors[B[t.blocks[0]].floors] || 0) + 1;
 const layouts = {};
 for (const b of B) layouts[b.layout] = (layouts[b.layout] || 0) + 1;
-console.log(`towers ${L.towers.length}, blocks ${B.length}`);
+// Towers: one piece each, and one height for all blocks (data/book_overlay.json can change both).
+const yamenTowers = new Set(B.filter((b) => b.kind === 'yamen').map((b) => b.tower)).size;
+let mixed = 0;
+for (const t of L.towers) {
+  const own = new Set(t.blocks), seen = new Set([t.blocks[0]]), q = [t.blocks[0]];
+  while (q.length) for (const k of B[q.pop()].cells) for (const n of [k - 1, k + 1, k - W, k + W]) {
+    const o = L.owner[n];
+    if (own.has(o) && !seen.has(o)) { seen.add(o); q.push(o); }
+  }
+  if (seen.size < own.size) problems.push(`tower ${t.id}: its blocks do not touch`);
+  if (new Set(t.blocks.map((id) => B[id].floors)).size > 1) mixed++;
+}
+console.log(`towers ${L.towers.length} (${L.towers.length - yamenTowers + 1} with the Yamen as one), blocks ${B.length}; towers of 2+ blocks ${L.towers.filter((t) => t.blocks.length > 1).length}; with blocks of different heights ${mixed}`);
 console.log('towers by storeys', floors);
 console.log('block layouts', layouts);
 console.log(`stairs ${B.reduce((s, b) => s + (b.cores ? b.cores.length : 0), 0)}; blocks sharing a stair ${B.filter((b) => b.shareWith >= 0).length}`);
