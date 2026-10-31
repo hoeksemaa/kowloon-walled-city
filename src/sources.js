@@ -154,7 +154,8 @@ MAP tool shows these numbers with the place only.` : ''}</p>
   <li><span class="st prov">TRADE</span>The 459 premises fill 268 floors, and the places of the book fill 4 more.
     Each workshop room counts as one business, and 280 more floors get a trade from the 1983 mix, until the
     count is 645. No file records
-    them, and the tooltip marks each one with *.</li>
+    them. The tooltip marks each one with *, and the floor-use highlight of the legend draws a dashed outline
+    round each.</li>
   <li><span class="st prov">PLACE</span>Where each premises sits on its street: the order of its house number.</li>
   <li><span class="st prov">STOREY</span>3.05 m for each storey, a usual Hong Kong tenement storey. No measured
     height is in hand.</li>
