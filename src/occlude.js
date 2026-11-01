@@ -143,7 +143,7 @@ export class Occlusion {
 
 // ---- what the camera sees of the ground, for the names of the roads (labels.js) ----
 // A grid of SIGHT_RES metres holds the real building that stands on each cell (its index in
-// prisms; -1 for none). A ray goes from a point of the ground back to the camera, a metre at a
+// prisms; -1 for none). A building thus grows by up to a cell. A ray goes from a point of the ground back to the camera, a metre at a
 // time along the ground. It stops at the first cell where a building that is not a ghost, or
 // the City, rises above it. It is clear when it is higher than all that stands round it.
 const SIGHT_RES = 2, SIGHT_R = 620;
@@ -163,9 +163,12 @@ export class Sight {
       for (const [x, z] of p.ring) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); z0 = Math.min(z0, z); z1 = Math.max(z1, z); }
       const i0 = Math.max(0, Math.floor((x0 + SIGHT_R) / SIGHT_RES)), i1 = Math.min(n - 1, Math.floor((x1 + SIGHT_R) / SIGHT_RES));
       const j0 = Math.max(0, Math.floor((z0 + SIGHT_R) / SIGHT_RES)), j1 = Math.min(n - 1, Math.floor((z1 + SIGHT_R) / SIGHT_RES));
+      // a cell is in the building if its centre or a corner is, so that a small building is not
+      // missed
+      const at = (i, j) => inRing(i * SIGHT_RES - SIGHT_R, j * SIGHT_RES - SIGHT_R, p.ring);
       for (let j = j0; j <= j1; j++)
         for (let i = i0; i <= i1; i++)
-          if (inRing((i + 0.5) * SIGHT_RES - SIGHT_R, (j + 0.5) * SIGHT_RES - SIGHT_R, p.ring)) this.cell[j * n + i] = b;
+          if (at(i + 0.5, j + 0.5) || at(i, j) || at(i + 1, j) || at(i, j + 1) || at(i + 1, j + 1)) this.cell[j * n + i] = b;
     });
   }
 

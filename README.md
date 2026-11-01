@@ -90,8 +90,12 @@ python3 serve.py 8173
   height of the roofs, with thin lines down to the lane floor. In a cut, or in the layered
   view, it lies on the cut storey, or on G/F with no cut. A number lies on the building of
   its place. Each label moves and dims with its storey. Point at a number to see its card,
-  or at a street name to light its lane. The key M turns them off and on. The storey labels
-  of the layered view and the cut tag are plates of the same kind.
+  or at a street name to light its lane. The names of 23 real roads round the City lie on
+  those roads, as plates of the same kind. A road name lies on a straight part of its road
+  that the camera sees, as near the City as it can. It moves along the road when the view
+  changes, and fades with the haze. It does not dim in the layered view. Point at a road name
+  to light its road. The key M turns all of these off and on. The storey labels of the
+  layered view and the cut tag are plates of the same kind.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
@@ -151,6 +155,15 @@ touches the City outline. The zoom, the pan, the cut and the layered view do not
 result, thus the test runs only when the view direction changes. It takes about 0.03 ms.
 `src/env.js` keeps the fade of each building in a small texture, and the shader eases it.
 
+`roadRuns` in `src/context.js` gives the road names. It joins the segments of each named road
+into runs. A run of 100 m or more that comes within 430 m of the centre gets a name. The two
+carriageways of a road give one name. The English names of the data are those of today. I
+compared each of the 23 with the 1987-88 sheets, and the sheets print the same names. The
+Chinese names are those of the data of today (not compared). `Sight` in `src/occlude.js` keeps
+the real buildings on a grid of 2 m. A ray from a point of a road goes back to the camera
+across this grid and over the City. `src/labels.js` puts a name only where the camera sees
+nine tenths of the road under it. A ghost does not stop the ray.
+
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
 corridor or a stair, if a storey has no way down, or if walks go through other rooms.
@@ -167,6 +180,9 @@ cell of the City, or if the dark street reaches under a drawn building. It also 
 exit of the people is not on the street or a road. It fails if a walk between an exit
 and the lanes of the City goes through a drawn building. Last, in 48 views, it casts rays from
 the City wall back to the camera. It fails if a building that a ray meets does not fade.
+It fails if Tung Tau Tsuen Road, Tung Tsing Road or Carpenter Road has no name, or if a road
+name is not one of the 23 compared with the 1987 sheets. It also fails if `Sight` and the
+exact rays disagree on more than 5% of the points of the roads.
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.
