@@ -112,6 +112,42 @@ export function buildingName(b) {
   return b.block ? `${b.block}, ${base}` : base;
 }
 
+// A building as the user selects it: one tower of the 1987 figure-ground plan (p134), and the
+// 17 halls of the Yamen as one compound, under the tower of its main hall (cityMesh.js draws
+// them with that id). This gives 270 buildings. bldgOf gives the building of plot p.
+export function bldgOf(L, p) {
+  const b = L.buildings[p];
+  return b.kind === 'yamen' ? L.buildings[L.yamenId].tower : b.tower;
+}
+
+// The plots of building id.
+export function blocksOf(L, id) {
+  const B = L.buildings;
+  return B[L.yamenId].tower === id ? B.filter((b) => b.kind === 'yamen').map((b) => b.id) : L.towers[id].blocks;
+}
+
+// The name of building id: a named place, else the address or place of its tower.
+export function bldgName(L, id) {
+  const bs = blocksOf(L, id).map((p) => L.buildings[p]), named = bs.find((b) => NAMES[b.name]);
+  if (bs[0].kind === 'yamen') return 'the Yamen';
+  return named ? NAMES[named.name] : bs[0].towerName || `bldg ${id}`;
+}
+
+// The outline of building id on storey k: each edge { e, b } of a ring of its block b that
+// rises above k, where the other side is not a block of the same building on that storey. The
+// edges make closed loops. Today a building has the same plots on each storey; a building
+// that grows over its neighbours on upper storeys (Suenn Ho, p137) changes only this.
+export function footprintAt(L, id, k) {
+  const B = L.buildings, out = [];
+  for (const p of blocksOf(L, id)) {
+    const b = B[p];
+    if (b.floors <= k) continue;
+    for (const r of b.rings)
+      for (const e of r.edges) if (e.other < 0 || B[e.other].floors <= k || bldgOf(L, e.other) !== id) out.push({ e, b });
+  }
+  return out;
+}
+
 // Plan codes: 0 outside, 1 lane, 2 open yard, 3 road, 4+ plot.
 const ALPH = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_';
 export function decodePlan(plan) {

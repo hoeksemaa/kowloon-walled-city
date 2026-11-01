@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
-import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
+import { buildLayout, buildingName, bldgOf, bldgName, blocksOf, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
 import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
@@ -14,6 +14,7 @@ import { Crowd } from './crowd.js';
 import { Post } from './post.js';
 import { Lamps } from './lamps.js';
 import { USE, UseMap, withUse } from './useMap.js';
+import { Outline } from './select.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, Lighting } from './env.js';
@@ -85,21 +86,22 @@ controls.maxPolarAngle = 1.42;
 }
 
 // useHover, useFocus, useLock: the floor use that the pointer is on, that has the keyboard focus,
-// and that a click keeps lit, in the legend (useMap.js).
+// and that a click keeps lit, in the legend (useMap.js). selBld: the selected building (bldgOf in
+// layout.js), -1 for none.
 const state = {
   explode: 0, explodeTarget: 0, lift: 0, cut: -1,
   speed: SPEEDS[1], hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
-  useHover: null, useFocus: null, useLock: null,
+  useHover: null, useFocus: null, useLock: null, selBld: -1,
 };
 const offsets = new Float32Array(16);
 const shared = {
-  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uCutTop: { value: NO_CUT },
+  uHour: { value: START_MINUTE / 60 }, uNight: { value: 0 }, uHi: { value: NO_HI }, uHint: { value: NO_HI }, uSel: { value: NO_HI }, uCutTop: { value: NO_CUT },
 };
 // uMarkers: the gold marker over each real person (people.js), off while a case of the game is
 // open. uWalk and uIdle: the clocks of the steps and of the other moves (figures.js).
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap;
+let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap, outline;
 let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 const lamps = new Lamps(shared.uNight, renderer);
@@ -178,6 +180,7 @@ async function init() {
     scene.add(group);
     return { k: d.k, group, mesh, cutout, mat, antennas, signs, slab, edge, plan: null };
   });
+  outline = new Outline(L, levels);
 
   // Dotted corner posts that appear when the storeys are pulled apart.
   const postGeo = new THREE.BufferGeometry();
@@ -225,7 +228,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline };
   requestAnimationFrame(frame);
 }
 
@@ -240,6 +243,7 @@ function setSlabs() {
   const show = state.explode > 0.01;
   const a = smoothstep(0.05, 0.7, state.explode);
   DIM.uDimOn.value = a;
+  outline.apart(a);
   for (const lv of levels) {
     lv.slab.visible = show && state.cut < 0;
     lv.edge.visible = show;
@@ -317,9 +321,18 @@ function setCut(c) {
     cutRing.position.y = c * STOREY + CUT_H + 0.05;
     cutRing.visible = true;
   }
+  outline.show(state.selBld, c);
   wires.update(offsets, c);
   renderRail();
   renderLegend();
+}
+
+// Select building id (bldgOf), or none with -1. It takes a light warm tint (cityMesh.js) and an
+// outline on each storey (select.js); the rest of the city keeps its light.
+function selectBuilding(id) {
+  state.selBld = id;
+  shared.uSel.value = id >= 0 ? id : NO_HI;
+  outline.show(id, state.cut);
 }
 
 // ---- floor-use highlight (useMap.js) ----------------------------------------------------------
@@ -490,21 +503,31 @@ function buildUI() {
     relock();
   });
 
-  canvas.addEventListener('pointermove', (ev) => {
-    mouse.x = ev.clientX; mouse.y = ev.clientY; mouse.moved = true; mouse.inside = true;
+  const pointAt = (ev) => {
+    mouse.x = ev.clientX; mouse.y = ev.clientY;
     ndc.set((ev.clientX / innerWidth) * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1);
+  };
+  canvas.addEventListener('pointermove', (ev) => {
+    pointAt(ev);
+    mouse.moved = true; mouse.inside = true;
   });
   canvas.addEventListener('pointerleave', () => { mouse.inside = false; hideTooltip(); });
   let down = null;
   canvas.addEventListener('pointerdown', (ev) => { down = [ev.clientX, ev.clientY]; state.camGoal = null; });
   canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
+  // Past a label (below), a click tests a person, then a building. One thing at a time is
+  // selected, and a click on the ground or the sky lets go of both. In an open case of the game,
+  // a click on a person is a guess; a click on a building only selects it.
   canvas.addEventListener('pointerup', (ev) => {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
+    pointAt(ev); // a tap has no move before it
     const id = pickAgent();
-    if (game.c && !game.solved) { if (id >= 0) checkPick(id); return; }
+    if (id >= 0 && game.c && !game.solved) { checkPick(id); return; }
     // A click on a street name or a place number opens its card, as a hover does. In the game,
     // a click is for the people, also under a label.
     if (showLabel(pickLabel())) return;
+    const hit = id < 0 && pickBuilding(), b = hit ? bldgOf(L, hit.b) : -1;
+    selectBuilding(b === state.selBld ? -1 : b);
     sim.select(id);
     state.follow = false;
   });
@@ -520,9 +543,14 @@ function buildUI() {
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') {
-      // the first Esc lets go of the floor use kept lit, the next one clears the cut
-      if (state.useLock) { state.useLock = null; relock(); }
-      else { setCut(-1); sim.select(-1); }
+      // the first Esc lets go of all that is selected (the floor use kept lit, the building and
+      // the person), the next one clears the cut
+      if (state.useLock || state.selBld >= 0 || sim.selected >= 0) {
+        if (state.useLock) { state.useLock = null; relock(); }
+        selectBuilding(-1);
+        sim.select(-1);
+        state.follow = false;
+      } else setCut(-1);
     }
     else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed || SPEEDS[1]); }
     else if (k === '1' || k === '2' || k === '3') setSpeed(SPEEDS[Number(k)]);
@@ -687,6 +715,16 @@ function buildingTooltip(b, k) {
     <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
 }
 
+// The box of a building under the pointer: its name and storeys. Once it is selected, the box
+// gives the facts of the block under the pointer (buildingTooltip).
+function hoverTooltip(b, k) {
+  const id = bldgOf(L, b);
+  if (id === state.selBld) return buildingTooltip(b, k) + clickLine(id);
+  const n = Math.max(...blocksOf(L, id).map((p) => L.buildings[p].floors));
+  return `<div class="tt-h">${bldgName(L, id).toUpperCase()} · ${n} STOREY${n > 1 ? 'S' : ''}</div>${clickLine(id)}`;
+}
+const clickLine = (id) => `<div class="tt-s">${id === state.selBld ? 'click to deselect the building' : 'click to select the building and see its floors'}</div>`;
+
 // One premises of a floor: its names and trade, and the page of the book that names it. The
 // trade is left out when the name says it.
 function premLine(p) {
@@ -769,10 +807,10 @@ function updateHover() {
   }
   const hit = pickBuilding();
   if (hit) {
-    const hb = L.buildings[hit.b];
-    shared.uHi.value = hb.kind === 'yamen' ? L.buildings[L.yamenId].tower : hb.tower;
+    const id = bldgOf(L, hit.b);
+    shared.uHi.value = id;
     const unit = hit.k === state.cut ? unitTooltip(hit.b, hit.k, hit.cell) : null;
-    showTooltip(unit || buildingTooltip(hit.b, hit.k));
+    showTooltip(unit ? unit + clickLine(id) : hoverTooltip(hit.b, hit.k));
   } else hideTooltip();
 }
 
@@ -810,7 +848,7 @@ function showLabel(lb) {
   if (!lb) return false;
   if (lb.kind === 'place') {
     const B = lb.b >= 0 && L.buildings[lb.b];
-    shared.uHi.value = !B ? NO_HI : B.kind === 'yamen' ? L.buildings[L.yamenId].tower : B.tower;
+    shared.uHi.value = B ? bldgOf(L, lb.b) : NO_HI;
     labels.light(null);
     showTooltip(placeCard(lb));
   } else {
@@ -879,6 +917,7 @@ function resize() {
   wires.setResolution(w, h);
   useMap.setResolution(w, h);
   toolbarBox = $('toolbar').getBoundingClientRect();
+  outline.setResolution(w, h);
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -989,6 +1028,7 @@ function openCase(c) {
   // The markers would give the person away.
   peopleU.uMarkers.value = 0;
   sim.select(-1);
+  selectBuilding(-1);
   state.follow = false;
   clearHintMarks();
   setCut(-1);
@@ -1034,6 +1074,7 @@ function checkPick(id) {
     clearHintMarks();
     peopleU.uMarkers.value = 1;
     sim.select(id);
+    selectBuilding(-1);
     game.msg = '';
   } else {
     const d = sim.describe(sim.agents[id]);

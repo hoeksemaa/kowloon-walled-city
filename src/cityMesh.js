@@ -105,7 +105,8 @@ export function buildLevels(L) {
     }
     return polys.map(triangulate);
   });
-  // The Yamen's halls light up together when the pointer is over one of them.
+  // The Yamen's halls light up together when the pointer is over one of them, and a click
+  // selects them together (bldgOf in layout.js).
   const yamenTower = L.yamenId !== undefined ? B[L.yamenId].tower : -1;
   const exposedAt = (o, k) => o < 0 || B[o].floors <= k;
   // How dark a lane wall is: 1 in a lane under 2 m, less in a wider one. Daylight reaches the
@@ -619,6 +620,7 @@ if (uIsCut > 0.5 && (kind == 2.0 || kind == 4.0 || kind == 5.0 || kind == 14.0))
 
 const FRAG = /* glsl */ `
 vec3 glow = vec3(0.0);
+vec3 hiGlow = vec3(0.0); // the glow of the hover and the hint, added after the dim (LAST)
 float kind = vInfo.z;
 float bid = vInfo.x;
 float flr = vInfo.y;
@@ -1058,13 +1060,21 @@ if (uIsCut > 0.5 && uUseMode > 0.5) {
 if (bid >= 0.0 && abs(bid - uHint) < 0.5) {
   // the tower of a hint of the game (game.js)
   diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.72, 0.25), 0.35);
-  glow += vec3(0.22, 0.15, 0.03);
+  hiGlow += vec3(0.22, 0.15, 0.03);
 }
 if (bid >= 0.0 && abs(bid - uHi) < 0.5) {
   diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.45, 0.28), 0.5);
-  glow += vec3(0.2, 0.07, 0.02);
+  hiGlow += vec3(0.2, 0.07, 0.02);
 }
 `;
+
+// After the light and the dim of the layered view (dim.js): the selected building (uSel,
+// main.js) takes a light warm tint. The tint keeps the light and shade of the building, and
+// the rest of the city does not change. Then the hover and the hint of the game add their
+// glow, which no dim takes away.
+const LAST = /* glsl */ `
+if (bid >= 0.0 && abs(bid - uSel) < 0.5) outgoingLight = outgoingLight * vec3(1.1, 1.0, 0.84) + vec3(0.014, 0.009, 0.003);
+outgoingLight += hiGlow;`;
 
 // Both passes of a storey see the facade uv (vWall), aInfo, the normal (vWN, in world space:
 // the storeys are only moved, never turned), the plan point (vXZ, for the lamps) and the
@@ -1115,7 +1125,7 @@ ${VERT_PARS}`)
 ${VERT_MAIN}`);
     s.fragmentShader = s.fragmentShader
       .replace('#include <common>', `#include <common>
-uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uIsCut; uniform float uCutTop;
+uniform float uHour; uniform float uNight; uniform float uHi; uniform float uHint; uniform float uSel; uniform float uIsCut; uniform float uCutTop;
 uniform sampler2D uLampMap; uniform vec4 uLampBox;
 varying vec2 vWall; varying vec4 vInfo; varying vec3 vWN; varying vec2 vXZ; varying float vRestY;
 ${USE_GLSL}
@@ -1125,8 +1135,9 @@ ${a2c ? '#define CUTOUT(c) diffuseColor.a = (c); if (diffuseColor.a < 0.01) disc
 ${FRAG}`)
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
 totalEmissiveRadiance += glow;`);
-    // below the cut storey in the layered view, darker by storey (dim.js)
+    // below the cut storey in the layered view, darker by storey (dim.js); then LAST
     withDim(s, 'vInfo.y');
+    s.fragmentShader = s.fragmentShader.replace('#include <opaque_fragment>', `${LAST}\n#include <opaque_fragment>`);
   };
   m.customProgramCacheKey = () => (a2c ? 'kwc-building-a2c' : 'kwc-building');
   return m;
