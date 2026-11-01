@@ -7,8 +7,9 @@ import { withDim } from './dim.js';
 import { buildingPrisms, buildStreet, ROAD_WIDTH } from './context.js';
 
 // The haze (main.js): all is clear out to FADE_NEAR metres from the centre of the city, then
-// fades slowly into the sky, and is gone at FADE_FAR. Nothing is drawn beyond.
-const FADE_NEAR = 350, FADE_FAR = 600;
+// fades slowly into the sky, and is gone at FADE_FAR. Nothing is drawn beyond. The names of the
+// roads (labels.js) fade the same way.
+export const FADE_NEAR = 350, FADE_FAR = 600;
 
 // The flat layers on the ground are drawn first, in this order, each over the one before: they
 // do not need the depth test, because all else stands on them. The street keeps its depth, so
@@ -58,16 +59,11 @@ export function buildEnvironment(scene, L, ctx) {
   }
   group.add(flat(new THREE.Mesh(upGeometry(pv), groundMat(new THREE.MeshLambertMaterial({ color: '#77736a' }))), 'pave'));
 
-  // The road names keep their place beside the hull of the city pushed out by ~10 m, where the
-  // boundary roads were drawn before the real roads.
-  const hull = convexHull(L.inside, L);
-  const road = offsetConvex(hull, 10.5);
-
   const prisms = buildingPrisms(ctx);
   group.add(buildRoads(ctx.roads), buildOpenGround(ctx.openGround), buildContextCity(L, prisms));
   scene.add(group);
   // prisms: the real buildings as solids (context.js); ghosts: their fade to a ghost.
-  return { group, roadOutline: road, street, prisms, ghosts: new Ghosts(prisms.length) };
+  return { group, street, prisms, ghosts: new Ghosts(prisms.length) };
 }
 
 // A geometry of flat triangles at the ground, all facing up: [x, y, z] in a flat list.
@@ -331,48 +327,6 @@ export class Ghosts {
       this.tex.needsUpdate = true;
     }
   }
-}
-
-function convexHull(inside, L) {
-  const pts = [];
-  for (let c = 0; c < L.N; c++) {
-    if (!inside[c]) continue;
-    const x = L.x0 + (c % L.W), z = L.z0 + ((c / L.W) | 0);
-    pts.push([x, z], [x + 1, z], [x, z + 1], [x + 1, z + 1]);
-  }
-  pts.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
-  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
-  const lower = [], upper = [];
-  for (const p of pts) {
-    while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop();
-    lower.push(p);
-  }
-  for (let i = pts.length - 1; i >= 0; i--) {
-    const p = pts[i];
-    while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0) upper.pop();
-    upper.push(p);
-  }
-  return lower.slice(0, -1).concat(upper.slice(0, -1));
-}
-
-function offsetConvex(poly, d) {
-  // Hull is counter-clockwise in (x, z); push each edge outward and intersect neighbours.
-  const n = poly.length, lines = [];
-  for (let i = 0; i < n; i++) {
-    const [ax, az] = poly[i], [bx, bz] = poly[(i + 1) % n];
-    const dx = bx - ax, dz = bz - az, l = Math.hypot(dx, dz) || 1;
-    const nx = dz / l, nz = -dx / l;
-    lines.push([ax + nx * d, az + nz * d, dx, dz]);
-  }
-  const out = [];
-  for (let i = 0; i < n; i++) {
-    const [px, pz, dx, dz] = lines[(i + n - 1) % n], [qx, qz, ex, ez] = lines[i];
-    const den = dx * ez - dz * ex;
-    if (Math.abs(den) < 1e-6) { out.push([qx, qz]); continue; }
-    const t = ((qx - px) * ez - (qz - pz) * ex) / den;
-    out.push([px + dx * t, pz + dz * t]);
-  }
-  return out;
 }
 
 // ---- light and time of day ----------------------------------------------------------------

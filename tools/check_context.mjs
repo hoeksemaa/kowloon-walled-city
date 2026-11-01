@@ -20,14 +20,21 @@
 // drawn building, if an exit of the people is not on the street or on a road, or if a walk on
 // the grid between an exit and the City goes through a drawn building.
 //
-// Last it checks the ghosts (src/occlude.js) in 48 views. It fails if a building hides a point
-// of the City wall and the test does not fade it.
+// It checks the ghosts (src/occlude.js) in 48 views. It fails if a building hides a point of
+// the City wall and the test does not fade it.
+//
+// Last it checks the names of the roads (roadRuns in src/context.js, Sight in src/occlude.js).
+// It fails if Tung Tau Tsuen Road, Tung Tsing Road or Carpenter Road has no name, if a road has
+// a name that is not in NAMES_1987, or if Sight and the exact rays of Occlusion.hit disagree on
+// more than 5% of the points of the runs. A few points of the runs are in small drawn buildings
+// (the centre lines are of today): it fails if Sight sees one of them, because a name could then
+// lie over that building.
 import { readFileSync } from 'node:fs';
 import { MARGIN, STOREY, buildLayout } from '../src/layout.js';
 import { Sim } from '../src/people.js';
-import { drawnBuildings, buildStreet, buildingPrisms } from '../src/context.js';
+import { drawnBuildings, buildStreet, buildingPrisms, roadRuns } from '../src/context.js';
 import { buildSite } from '../src/site.js';
-import { Occlusion } from '../src/occlude.js';
+import { Occlusion, Sight } from '../src/occlude.js';
 import { track, S0, S1, CLEAR, SIDE, GRID, RUNWAY_END, HILL } from '../src/approach.js';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -289,6 +296,44 @@ console.log(`exits: ${L.away.length}, each on a road or the street; ${walks} wal
       }
     }
   console.log(`ghosts: ${views} views, ${(faded / views).toFixed(1)} buildings faded in a view (mean); ${missed} missed; ${extra} faded with no wall point hidden; the test takes ${(ms / views).toFixed(2)} ms a view in node, with the warm-up`);
+}
+
+// The names of the roads. NAMES_1987: the names that I compared with the 1987-88 editions of
+// the sheets (LATE in tools/context.py), all the same there. A new name must be compared too.
+// The rays: from every 8th point of each run, in 24 views (12 directions at 19° and 33°), with
+// no ghosts and with no City (Occlusion.hit does not know the City).
+{
+  const NAMES_1987 = ['Carpenter Road', 'Dumbarton Road', 'Fuk Lo Tsun Road', 'Grampian Road', 'Hau Wong Road', 'Inverness Road',
+    'Junction Road', 'Kai Tak Road', 'Lion Rock Road', 'Lok Sin Road', 'Lung Kong Road', 'Nam Kok Road', 'Nga Tsin Long Road',
+    'Nga Tsin Wai Road', 'Prince Edward Road East', 'Sa Po Road', 'South Wall Road', 'Tak Ku Ling Road', 'Tung Kwong Road',
+    'Tung Lei Road', 'Tung Lung Road', 'Tung Tau Tsuen Road', 'Tung Tsing Road'];
+  const outline = buildSite(plan).polygon, prisms = buildingPrisms(C);
+  const runs = roadRuns(C, outline), sight = new Sight(prisms), occ = new Occlusion(prisms, outline), none = new Uint8Array(prisms.length);
+  for (const name of ['Tung Tau Tsuen Road', 'Tung Tsing Road', 'Carpenter Road']) if (!runs.some((r) => r.name === name)) problems.push(`road names: ${name} has no name`);
+  for (const name of new Set(runs.map((r) => r.name))) if (!NAMES_1987.includes(name)) problems.push(`road names: ${name} is not compared with the 1987 sheets`);
+  let inside = 0, points = 0;
+  for (const r of runs)
+    for (let i = 0; i < r.n; i++) {
+      points++;
+      const x = r.x[i], z = r.z[i];
+      const b = occ.bld.findIndex((B) => B && x > B.lo[0] && x < B.hi[0] && z > B.lo[1] && z < B.hi[1] && inRing(x, z, B.ring));
+      if (b < 0) continue;
+      inside++;
+      if (sight.seen(x, 0.08, z, 0, 1, 20, none, null)) problems.push(`road names: Sight sees point ${i} of ${r.name}, in building ${b}`);
+    }
+  let rays = 0, differ = 0;
+  for (let a = 0; a < 12; a++)
+    for (const e of [0.33, 0.58]) {
+      const az = (a * Math.PI) / 6, ux = Math.sin(az), uz = Math.cos(az), k = Math.tan(e), l = Math.hypot(1, k), d = { x: ux / l, y: k / l, z: uz / l };
+      for (const r of runs)
+        for (let i = 0; i < r.n; i += 8) {
+          const o = { x: r.x[i], y: 0.08, z: r.z[i] };
+          rays++;
+          if (sight.seen(o.x, o.y, o.z, ux, uz, k, none, null) !== (occ.hit(o, d, () => true) === Infinity)) differ++;
+        }
+    }
+  if (differ > rays * 0.05) problems.push(`road names: Sight and Occlusion.hit disagree on ${differ} of ${rays} rays`);
+  console.log(`road names: ${runs.length} runs of ${new Set(runs.map((r) => r.name)).size} roads, ${points} points (${inside} in a building); Sight and the exact rays disagree on ${differ} of ${rays} (${((100 * differ) / rays).toFixed(1)}%)`);
 }
 
 if (problems.length) {

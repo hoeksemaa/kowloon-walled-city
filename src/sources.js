@@ -141,7 +141,9 @@ composite. A detail that no source records is marked inferred.</p>
     mornings its shadow can reach the east face of the city. The roads are at their widths on the 1987 sheets.
     The open ground is the cleared ground of Sai Tau Tsuen, the building sites, the market and the football
     field. The fit of the city on the 1987 sheet also gives the bearing of the model: 63.6°, not 60°. Thus north,
-    the sun and the approach of the planes turn 3.6°.</li>
+    the sun and the approach of the planes turn 3.6°. The label tool (key M) names 23 of the roads. Their English
+    names are those of the road data of today. I compared each one with the 1987–88 sheets, and the sheets print the
+    same name. The Chinese names are those of the road data of today; I did not compare them.</li>
 </ul>
 
 <h4>People of the 1992 map, not in the model</h4>
@@ -228,7 +230,9 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     near the place where the plan prints the name. In the normal view it lies at the height of the roofs beside
     the lane, with thin lines down to the lane floor. Each place number lies on the building where the model
     puts the place. For a place that the model does not put, the number lies on the building under it on the
-    1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m.</li>
+    1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m. Each
+    road name lies on a straight part of its road that the camera sees, as near the City as it can. Its words do
+    not lie on the City or on a building. The model picks that place again when the view changes.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
   <li><span class="st prov">KOWLOON</span>The greys of the buildings, roads and open ground round the City, and the
     lit windows at night: their count at each hour and which ones are lit. The 9 road segments with no measured

@@ -1,6 +1,6 @@
 // One layer of labels for the buildings: the street names, the numbers of the places of the
-// 1992 map, the two roads outside the City, the north arrow, the storey labels of the layered
-// view and the cut tag. Each is the same plate, dark with light pixel ink, laid flat on a
+// 1992 map, the names of the real roads round the City, the north arrow, the storey labels of
+// the layered view and the cut tag. Each is the same plate, dark with light pixel ink, laid flat on a
 // surface of the model ("plan lettering"). A plate is part of one storey (levels[k].group): it
 // moves with its storey in the layered view, it dims with it (dim.js), and it never rises
 // above the section of a cut.
@@ -14,6 +14,7 @@
 //   building lies on its roof.
 // - In the layered view, the names lie on the section of the cut storey, or on the top of
 //   G/F with no cut. A number lies on the top of its own storey; above the section it hides.
+// - The name of a road outside the City lies on that road, in all views (placeRoad).
 // A plate shows dim through a tower in front of it. Each frame sets the size of each plate, so
 // that its text keeps a readable size on the screen at each zoom, and turns each name so that
 // it does not read upside down.
@@ -21,6 +22,8 @@ import * as THREE from 'three';
 import { STOREY } from './layout.js';
 import { CUT_H } from './kinds.js';
 import { withDim } from './dim.js';
+import { NAME_STEP } from './context.js';
+import { FADE_NEAR, FADE_FAR } from './env.js';
 import { clamp, smoothstep } from './util.js';
 
 // The ink stays under the threshold of the bloom (post.js), thus the plates do not glow at night.
@@ -40,6 +43,16 @@ const ON_ROOF = 1.0; // over the parapets (0.9 m, cityMesh.js)
 const YAMEN_TOP = 6.6; // over the ridges of the Yamen halls (cityMesh.js)
 const OVER = 0.08; // over the section, or over the top of a storey
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
+// The road names: two names of one road are at least SAME_ROAD metres apart. A name goes only
+// where the camera sees nine tenths of the road under it (SEEN), and where other roads cross
+// under no more than a third of it (CROSSED). It goes behind a ghost only if no place in clear
+// view fits: the dither of the ghost blurs the small Chinese letters. ROAD_AGAIN: the seconds
+// between two tests of what the camera sees, while the view moves; ROAD_MS: the milliseconds of
+// a test in each frame.
+const SAME_ROAD = 240, SEEN = 0.9, CROSSED = 0.34, ROAD_AGAIN = 0.12, ROAD_MS = 3;
+// The level of a road name for the dim of the layered view (dim.js): above all storeys, thus it
+// never dims. The roads under it do not dim either.
+const NO_DIM = 1000;
 
 // A plate with its words: the Latin in Silkscreen, the Chinese in a CJK face. bar: the amber
 // bar of the cut tag. dashed: a dashed frame, for a place where the sources disagree.
@@ -130,12 +143,28 @@ function overlap(a, b, pad) {
 const UNIT = new THREE.PlaneGeometry(1, 1);
 const _r = new THREE.Vector3(), _u = new THREE.Vector3(), _d = new THREE.Vector3(), _C = new THREE.Vector3();
 
+// The share of a ground-plane line along (vx, vz) that the screen shows, never under 0.35: a
+// plate that the view sees at a low angle grows, but only so far. _d: the view direction.
+const fsOf = (vx, vz) => Math.max(0.35, Math.sqrt(Math.max(0, 1 - (vx * _d.x + vz * _d.z) ** 2)));
+
+// The corners on the screen, in order, of a plate w by h metres with its centre at (x, y, z),
+// its words along (ax, az).
+function screenQuad(camera, view, x, y, z, ax, az, w, h) {
+  const quad = [];
+  for (const [i, j] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
+    _C.set(x + (ax * w * i + az * h * j) / 2, y, z + (az * w * i - ax * h * j) / 2).project(camera);
+    quad.push([(_C.x * 0.5 + 0.5) * view.w, (-_C.y * 0.5 + 0.5) * view.h]);
+  }
+  return quad;
+}
+
 export class Labels {
-  // levels: the storeys of main.js. road: the outline of the roads round the City (env.js).
-  // roads: { top, right } names of those roads. title(k): the words after the name of storey k.
-  // mapStreets: the streets that only the 1992 map names (book_overlay.json). street: the dark
-  // street round the City (context.js).
-  constructor({ L, site, levels, road, roads, mapStreets, title, aniso, street }) {
+  // levels: the storeys of main.js. runs: the runs of the real roads to name (roadRuns,
+  // context.js). sight: what the camera sees of the ground (Sight, occlude.js). ghost: 1 for a
+  // real building that is a ghost (Occlusion.hide). title(k): the words after the name of
+  // storey k. mapStreets: the streets that only the 1992 map names (book_overlay.json). street:
+  // the dark street round the City (context.js).
+  constructor({ L, site, levels, runs, sight, ghost, mapStreets, title, aniso, street }) {
     this.L = L;
     this.mapStreets = mapStreets;
     this.levels = levels;
@@ -148,10 +177,17 @@ export class Labels {
     this.cutTex = new Map();
     this.corners = [[L.x0, L.z0], [L.x0 + L.W, L.z0], [L.x0, L.z0 + L.D], [L.x0 + L.W, L.z0 + L.D]];
     this.polygon = site.polygon;
+    this.sight = sight;
+    this.ghost = ghost;
+    this.clock = 0;
+    this.frame = 0;
+    // what the camera saw of the roads at the last test (seeRoads), and when
+    this.road = { key: null, dir: new THREE.Vector3(), size: 0, at: -Infinity, ver: 0, dirty: true, pass: null };
+    this.roads = [];
 
     for (const st of L.streets) this.addStreet(st);
     for (const p of L.places) this.addPlace(p);
-    this.addRoads(road, roads);
+    for (const run of runs) this.addRoad(run);
     // The north arrow lies on the street near its SE corner, clear of the roads; it turns with
     // true north.
     const north = this.add('north', drawNorth(), { prio: 9, solid: true });
@@ -276,24 +312,20 @@ export class Labels {
     }
   }
 
-  // The two roads that touched the City, on the road line round it (env.js), beside the side
-  // of the plan that each runs along.
-  addRoads(road, names) {
-    const dirs = { top: [0, -1], bottom: [0, 1], right: [1, 0], left: [-1, 0] };
-    const n = road.length;
-    for (const [side, text] of Object.entries(names)) {
-      if (!text) continue;
-      const [dx, dz] = dirs[side];
-      let best = null;
-      for (let i = 0; i < n; i++) {
-        const [ax, az] = road[i], [bx, bz] = road[(i + 1) % n];
-        const ex = bx - ax, ez = bz - az, l = Math.hypot(ex, ez);
-        const nx = ez / l, nz = -ex / l;
-        const score = (nx * dx + nz * dz) * l;
-        if (!best || score > best.score) best = { score, mx: (ax + bx) / 2, mz: (az + bz) / 2, ex: ex / l, ez: ez / l, nx, nz };
-      }
-      this.add('road', drawPlate(text), { prio: 4, solid: true, text, k: 0, y: OVER, x: best.mx + best.nx * 3.5, z: best.mz + best.nz * 3.5, axis: [best.ex, best.ez] });
-    }
+  // The name of a run of a real road (roadRuns, context.js), with RD and ST for Road and Street
+  // as in the street names of the City. Its place is new in each frame (placeRoad).
+  addRoad(run) {
+    const en = run.name.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').toUpperCase();
+    const prefix = (a) => { const p = new Uint16Array(run.n + 1); for (let i = 0; i < run.n; i++) p[i + 1] = p[i] + a[i]; return p; };
+    // The roads nearest the City go first. bad, veiled and crossed: running counts of the points
+    // that the camera does not see, and that it does not see clear (seeRoads; none is seen
+    // before the first test), and of the points at a junction. at: the point of
+    // the run under the middle of the name, -1 for none.
+    const lb = this.add('road', drawPlate(`${run.nameZh ? `${run.nameZh} ` : ''}${en}`), {
+      prio: 4 - run.near / 1000, solid: true, run, k: 0, y: OVER, x: run.x[run.home], z: run.z[run.home],
+      axis: [run.tx[run.home], run.tz[run.home]], bad: prefix(new Uint8Array(run.n).fill(1)), veiled: prefix(new Uint8Array(run.n).fill(1)), crossed: prefix(run.cross), at: -1, ver: -1, retry: 0,
+    });
+    this.roads.push(lb);
   }
 
   // The highest roof within r m of a line of half length h through (x, z).
@@ -360,7 +392,7 @@ export class Labels {
       }
       const g = levels[lb.k].group;
       for (const o of [lb.mesh, lb.xray, lb.lines]) if (o && o.parent !== g) g.add(o);
-      lb.uLevel.value = lb.k;
+      lb.uLevel.value = lb.kind === 'road' ? NO_DIM : lb.k;
     }
     if (this.lit) this.light(this.lit);
   }
@@ -370,7 +402,145 @@ export class Labels {
     return B.kind === 'yamen' ? YAMEN_TOP : B.floors * STOREY + ON_ROOF;
   }
 
-  // Each frame. view: { explode, cut, dt, w, h, toolbar }.
+  // The height of the City on each of its cells, as it is drawn now: to the roof, to the section
+  // of a cut, and with the storeys apart in the layered view (a storey and the gap under it
+  // count as solid). For Sight (occlude.js).
+  cityTops(cut) {
+    const { L, levels } = this, B = L.buildings;
+    if (!this.tops) this.tops = new Float32Array(L.W * L.D);
+    const top = this.tops;
+    let max = 0;
+    for (let c = 0; c < top.length; c++) {
+      const o = L.owner[c];
+      let y = 0;
+      if (o >= 0) {
+        const last = B[o].floors - 1, k = cut >= 0 ? Math.min(last, cut) : last;
+        y = levels[k].group.position.y + (k === cut ? k * STOREY + CUT_H : k === last ? this.roofY(o) : (k + 1) * STOREY);
+      }
+      top[c] = y;
+      if (y > max) max = y;
+    }
+    return { x0: L.x0, z0: L.z0, W: L.W, D: L.D, top, max };
+  }
+
+  // Which points of each road the camera sees: the point in the middle of the road and a point
+  // to each side of it, 0.4 of the height of its name away (the Chinese letters fill nearly all
+  // of that height). A point of the road is bad if the camera does not see one of the three, and
+  // veiled if it sees one only through a ghost. A test (pass) runs over a few frames, ROAD_MS
+  // milliseconds in each; it holds the view at its start. Returns true when the test is done.
+  seeRoads(pass) {
+    const { ux, uz, k, city, size } = pass, t0 = performance.now();
+    const look = (x, z) => this.sight.look(x, OVER, z, ux, uz, k, this.ghost, city);
+    while (pass.next < this.roads.length) {
+      const lb = this.roads[pass.next++], R = lb.run, { bad, veiled } = lb;
+      for (let i = 0; i < R.n; i++) {
+        const x = R.x[i], z = R.z[i], nx = -R.tz[i], nz = R.tx[i];
+        const off = Math.max(1, (0.4 * lb.h * size) / fsOf(nx, nz));
+        let v = look(x, z);
+        if (v < 2) v = Math.max(v, look(x + nx * off, z + nz * off));
+        if (v < 2) v = Math.max(v, look(x - nx * off, z - nz * off));
+        bad[i + 1] = bad[i] + (v === 2 ? 1 : 0);
+        veiled[i + 1] = veiled[i] + (v >= 1 ? 1 : 0);
+      }
+      if (performance.now() - t0 > ROAD_MS) return false;
+    }
+    return true;
+  }
+
+  // Test again what the camera sees of the roads when the view turns, the zoom changes the size
+  // of the names, or the storeys move; not more often than each ROAD_AGAIN seconds. size:
+  // metres for each pixel of the design, on a plate that faces the camera.
+  watchRoads(view, size) {
+    const r = this.road, key = `${view.cut}:${view.explode.toFixed(2)}`;
+    if (key !== r.key || _d.distanceToSquared(r.dir) > 1e-10 || Math.abs(Math.log(size / r.size)) > 0.1) r.dirty = true;
+    const hl = Math.hypot(_d.x, _d.z);
+    if (!r.pass && r.dirty && this.clock - r.at >= ROAD_AGAIN && _d.y < 0 && hl > 1e-6) {
+      r.pass = { ux: -_d.x / hl, uz: -_d.z / hl, k: -_d.y / hl, city: this.cityTops(view.cut), size, next: 0 };
+      Object.assign(r, { key, size, at: this.clock, dirty: false });
+      r.dir.copy(_d);
+    }
+    if (r.pass && this.seeRoads(r.pass)) {
+      r.pass = null;
+      r.ver++;
+    }
+  }
+
+  // Do the words of a road name, on a plate w by h metres at (x, z) along (ax, az), keep off the
+  // City and the drawn buildings? The road data is of today, and at places its line runs under
+  // the edge of the City: the test of what the camera sees (seeRoads) looks only at the line, but
+  // a straight plate can reach past a bend of the road. The words fill nine tenths of the plate
+  // along it and 0.8 across it.
+  offBuildings(x, z, ax, az, w, h) {
+    const { L } = this, n = Math.max(2, Math.ceil((0.9 * w) / NAME_STEP));
+    for (let q = 0; q <= n; q++) {
+      const t = (q / n - 0.5) * 0.9 * w;
+      for (const o of [-0.4 * h, 0, 0.4 * h]) {
+        const px = x + ax * t + az * o, pz = z + az * t - ax * o;
+        const i = Math.floor(px - L.x0), j = Math.floor(pz - L.z0);
+        if (i >= 0 && j >= 0 && i < L.W && j < L.D && L.inside[j * L.W + i]) return false;
+        if (this.sight.inside(px, pz)) return false;
+      }
+    }
+    return true;
+  }
+
+  // The place of a road name in this frame: where it was, if it still fits there, or else the
+  // point nearest its home where it fits. A place in clear view goes before a place behind a
+  // ghost. After a new test of what the camera sees, a name in clear view moves to a point in
+  // clear view that is 20 m or more nearer home, if there is one; a name behind a ghost moves
+  // to a point in clear view, if there is one. It fits where the road runs straight for the
+  // length of the name, the camera sees nine tenths of the road under it, its words do not lie
+  // on the City or in a drawn building (offBuildings), its middle is not at a junction, it is on
+  // the screen and clear of the labels before it, and no name of the same road is near. It keeps
+  // clear of the panels (view.panels, rects on the screen). Sets lb.x, lb.z and lb.axis; false if
+  // it fits nowhere.
+  // shown: the places of the road names so far in this frame, by name.
+  placeRoad(lb, size, camera, view, boxes, shown) {
+    const R = lb.run, others = shown.get(R.name) || [];
+    // clear: the camera sees the road there clear of the ghosts
+    const fit = (i, clear) => {
+      if (i < 0 || i >= R.n || R.cross[i]) return null;
+      const m = Math.ceil((lb.w * size) / fsOf(R.tx[i], R.tz[i]) / 2 / NAME_STEP), a = i - m, b = i + m, hid = clear ? lb.veiled : lb.bad;
+      if (a < 0 || b >= R.n || hid[b + 1] - hid[a] > (1 - SEEN) * (2 * m + 1) || lb.crossed[b + 1] - lb.crossed[a] > CROSSED * (2 * m + 1)) return null;
+      const ex = R.x[b] - R.x[a], ez = R.z[b] - R.z[a], l = Math.hypot(ex, ez) || 1, tol = Math.max(2, R.hw[i]);
+      for (let q = a + 1; q < b; q++) if (Math.abs((R.x[q] - R.x[a]) * ez - (R.z[q] - R.z[a]) * ex) / l > tol) return null;
+      const x = R.x[i], z = R.z[i], ax = ex / l, az = ez / l;
+      if (Math.hypot(x, z) > FADE_FAR - 100) return null;
+      for (const [u, v] of others) if (Math.hypot(u - x, v - z) < SAME_ROAD) return null;
+      const pw = (lb.w * size) / fsOf(ax, az), ph = (lb.h * size) / fsOf(az, -ax);
+      if (!this.offBuildings(x, z, ax, az, pw, ph)) return null;
+      const quad = screenQuad(camera, view, x, lb.y, z, ax, az, pw, ph);
+      if (quad.some(([u, v]) => u < 0 || v < 0 || u > view.w || v > view.h) || boxes.some((q) => overlap(q, quad, 3))) return null;
+      for (const p of view.panels || []) if (overlap([[p.left, p.top], [p.right, p.top], [p.right, p.bottom], [p.left, p.bottom]], quad, 3)) return null;
+      return { i, x, z, ax, az, clear };
+    };
+    const H = R.home;
+    const search = (clear, far) => {
+      for (let d = 0; d < far; d += 3) {
+        const got = fit(H - d, clear) || (d ? fit(H + d, clear) : null);
+        if (got) return got;
+      }
+      return null;
+    };
+    const fresh = lb.ver !== this.road.ver;
+    lb.ver = this.road.ver;
+    let at = lb.at >= 0 ? fit(lb.at, true) || fit(lb.at, false) : null;
+    if (!at || fresh) {
+      if (!at && !fresh && this.frame < lb.retry) return false;
+      at = search(true, at && at.clear ? Math.abs(lb.at - H) - 10 : R.n) || at || search(false, R.n);
+      // a name that fits nowhere looks again a few frames on
+      if (!at) { lb.at = -1; lb.retry = this.frame + 8; return false; }
+    }
+    lb.at = at.i;
+    lb.x = at.x;
+    lb.z = at.z;
+    lb.axis = [at.ax, at.az];
+    others.push([at.x, at.z]);
+    shown.set(R.name, others);
+    return true;
+  }
+
+  // Each frame. view: { explode, cut, dt, w, h, toolbar, panels }.
   update(camera, view) {
     const layered = view.explode > 0.5;
     const mode = `${layered}:${view.cut}`;
@@ -387,16 +557,20 @@ export class Labels {
     // Metres for each pixel on the screen, and pixels on the screen for each pixel of the
     // design: 2 at the start, so that the words read when they lie at a slant, up to 3 close in.
     const mpp = (camera.top - camera.bottom) / camera.zoom / view.h;
-    const s = clamp(2 * (camera.zoom / 1.15) ** 0.2, 1.7, 3);
-    // The share of a ground-plane line that the screen shows, never under 0.35: a plate that
-    // the view sees at a low angle grows, but only so far.
-    const fs = (vx, vz) => Math.max(0.35, Math.sqrt(Math.max(0, 1 - (vx * _d.x + vz * _d.z) ** 2)));
+    const s = clamp(2 * (camera.zoom / 1.15) ** 0.2, 1.7, 3), fs = fsOf;
     const tabs = smoothstep(0.35, 0.8, view.explode);
-    const boxes = [];
+    const boxes = [], shown = new Map();
+    this.frame++;
+    this.clock += view.dt;
+    if (this.on) this.watchRoads(view, s * mpp);
     for (const lb of this.order) {
       let want = !lb.hidden && this.levels[lb.k].group.visible, base = 1;
       if (lb.kind === 'street' || lb.kind === 'place' || lb.kind === 'road') want &&= this.on;
-      else if (lb.kind === 'storey') {
+      if (lb.kind === 'road') {
+        // on its road, where it fits; it fades with the haze, as the road does (env.js)
+        want &&= this.placeRoad(lb, s * mpp, camera, view, boxes, shown);
+        base = 1 - smoothstep(FADE_NEAR, FADE_FAR, Math.hypot(lb.x, lb.z));
+      } else if (lb.kind === 'storey') {
         want &&= view.explode > 0.35 && lb.k !== view.cut;
         base = tabs;
       } else if (lb.kind === 'cut') want &&= view.cut >= 0;
@@ -449,11 +623,7 @@ export class Labels {
       // Overlaps: a label gives way to the labels before it in the order. A street name first
       // slides along its lane, up to 12 m each way, to find room; it keeps the place it found.
       const quadAt = (x, z) => {
-        const quad = [];
-        for (const [i, j] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
-          _C.set(x + (ax * w * i + az * h * j) / 2, lb.y + gy, z + (az * w * i - ax * h * j) / 2).project(camera);
-          quad.push([(_C.x * 0.5 + 0.5) * view.w, (-_C.y * 0.5 + 0.5) * view.h]);
-        }
+        const quad = screenQuad(camera, view, x, lb.y + gy, z, ax, az, w, h);
         return boxes.some((q) => overlap(q, quad, 3)) ? null : quad;
       };
       const [sx, sz] = lb.span ? lb.axis : [0, 0];
@@ -502,7 +672,7 @@ export class Labels {
     }
   }
 
-  // The street name or place number under the pointer, of those that show.
+  // The street name, road name or place number under the pointer, of those that show.
   pick(raycaster) {
     const meshes = [];
     for (const lb of this.list) if ((lb.kind === 'street' || lb.kind === 'place' || lb.kind === 'road') && lb.want && lb.alpha > 0.5) meshes.push(lb.mesh);
@@ -510,20 +680,29 @@ export class Labels {
     return hit ? hit.object.userData.label : null;
   }
 
-  // Light the lane cells of a street (lb), or none (null). The cells lie under its name.
+  // Light the lane cells of a street (lb), or the run of a road, or none (null). The cells lie
+  // under its name. A road outside the City is lit at its width; the buildings in front of it
+  // hide the light.
   light(lb) {
     if (this.lane) this.lane.visible = false;
-    this.lit = lb && lb.cells ? lb : null;
+    this.lit = lb && (lb.cells || lb.run) ? lb : null;
     if (!this.lit) return;
     if (!lb.laneMesh) {
-      const { L } = this, v = [];
-      for (const k of lb.cells) {
-        const x = L.x0 + (k % L.W), z = L.z0 + ((k / L.W) | 0);
-        v.push(x, 0, z, x, 0, z + 1, x + 1, 0, z + 1, x, 0, z, x + 1, 0, z + 1, x + 1, 0, z);
-      }
+      const { L } = this, v = [], R = lb.run;
+      if (R) {
+        for (let i = 0; i + 1 < R.n; i++) {
+          const p = [R.x[i] - R.tz[i] * R.hw[i], R.z[i] + R.tx[i] * R.hw[i]], q = [R.x[i] + R.tz[i] * R.hw[i], R.z[i] - R.tx[i] * R.hw[i]];
+          const j = i + 1, r = [R.x[j] + R.tz[j] * R.hw[j], R.z[j] - R.tx[j] * R.hw[j]], t = [R.x[j] - R.tz[j] * R.hw[j], R.z[j] + R.tx[j] * R.hw[j]];
+          for (const [x, z] of [p, q, r, p, r, t]) v.push(x, 0, z);
+        }
+      } else
+        for (const k of lb.cells) {
+          const x = L.x0 + (k % L.W), z = L.z0 + ((k / L.W) | 0);
+          v.push(x, 0, z, x, 0, z + 1, x + 1, 0, z + 1, x, 0, z, x + 1, 0, z + 1, x + 1, 0, z);
+        }
       const g = new THREE.BufferGeometry();
       g.setAttribute('position', new THREE.Float32BufferAttribute(v, 3));
-      lb.laneMesh = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ color: AMBER, transparent: true, opacity: 0.35, depthTest: false, depthWrite: false, fog: false }));
+      lb.laneMesh = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ color: AMBER, transparent: true, opacity: 0.35, depthTest: !!R, depthWrite: false, fog: false, side: THREE.DoubleSide }));
       lb.laneMesh.renderOrder = 4;
     }
     this.lane = lb.laneMesh;
