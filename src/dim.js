@@ -40,7 +40,7 @@ export function withDim(s, level, uLevel) {
     .replace('#include <opaque_fragment>', `outgoingLight = layerDim(outgoingLight, ${level});\n#include <opaque_fragment>`);
 }
 
-// The same on the CPU, for the wires and the storey labels: [light kept, grey] on storey k.
+// The same on the CPU, for the wires: [light kept, grey] on storey k.
 export function dimOf(k) {
   const cut = DIM.uDimCut.value, on = DIM.uDimOn.value, d = cut < 0 ? 0 : Math.round(cut - k);
   if (d < 1 || on <= 0) return [1, 0];

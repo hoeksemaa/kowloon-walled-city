@@ -101,6 +101,7 @@ const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMark
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap;
 let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
+let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
@@ -876,6 +877,7 @@ function resize() {
   camera.updateProjectionMatrix();
   wires.setResolution(w, h);
   useMap.setResolution(w, h);
+  toolbarBox = $('toolbar').getBoundingClientRect();
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -939,7 +941,7 @@ function frame(now) {
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
-  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight });
+  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox });
   updateTags();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); }

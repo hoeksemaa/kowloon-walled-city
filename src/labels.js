@@ -160,11 +160,11 @@ export class Labels {
     north.axis = [-site.north[1], site.north[0]];
     // A storey label for each storey of the layered view, and the cut tag.
     for (const lv of levels) {
-      const t = this.add('storey', drawPlate(`${levelName(lv.k)} ${title(lv.k)}`), { prio: 10 });
+      const t = this.add('storey', drawPlate(`${levelName(lv.k)} ${title(lv.k)}`), { prio: 10, top: true });
       t.k = lv.k;
       t.y = lv.k * STOREY;
     }
-    this.add('cut', drawPlate('CUT', { bar: true }), { prio: 10 });
+    this.add('cut', drawPlate('CUT', { bar: true }), { prio: 10, top: true });
     this.order = [...this.list].sort((p, q) => q.prio - p.prio);
   }
 
@@ -182,6 +182,9 @@ export class Labels {
     };
     const mesh = new THREE.Mesh(UNIT, mat(false));
     const front = mesh.material;
+    // The storey labels and the cut tag lie beside the City, among the blocks of the city
+    // around it (env.js): those blocks do not hide them.
+    if (extra.top) front.depthTest = false;
     plate.tex = front.map;
     const xray = new THREE.Mesh(UNIT, mat(true));
     xray.material.map = front.map;
@@ -364,7 +367,7 @@ export class Labels {
     return B.kind === 'yamen' ? YAMEN_TOP : B.floors * STOREY + ON_ROOF;
   }
 
-  // Each frame. view: { explode, cut, dt, w, h }.
+  // Each frame. view: { explode, cut, dt, w, h, toolbar }.
   update(camera, view) {
     const layered = view.explode > 0.5;
     const mode = `${layered}:${view.cut}`;
@@ -429,6 +432,16 @@ export class Labels {
         const back = w / 2 + 3 * s * mpp;
         cx -= ax * back;
         cz -= az * back;
+        // Keep the plate on the screen and clear of the toolbar (view.toolbar, a rect on the
+        // screen): it slides to the right, over the City if it must.
+        _C.set(cx - (ax * w) / 2, lb.y + gy, cz - (az * w) / 2).project(camera);
+        const lx = (_C.x * 0.5 + 0.5) * view.w, ly = (-_C.y * 0.5 + 0.5) * view.h, tb = view.toolbar;
+        const minX = tb && ly < tb.bottom + 12 ? tb.right + 12 : 14;
+        if (lx < minX) {
+          const m = ((minX - lx) * mpp) / (Math.hypot(_r.x, _r.z) || 1);
+          cx += ax * m;
+          cz += az * m;
+        }
       }
       // Overlaps: a label gives way to the labels before it in the order. A street name first
       // slides along its lane, up to 12 m each way, to find room; it keeps the place it found.
@@ -466,7 +479,7 @@ export class Labels {
       const a = lb.alpha * base;
       lb.mesh.visible = a > 0.01;
       // the names on the ground are not seen through the City
-      lb.xray.visible = lb.mesh.visible && !lb.solid;
+      lb.xray.visible = lb.mesh.visible && !lb.solid && !lb.top;
       lb.mesh.material.opacity = a;
       lb.xray.material.opacity = a * XRAY;
       if (lb.lines) {
