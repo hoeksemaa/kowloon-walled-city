@@ -47,9 +47,10 @@ outgoingLight = layerDim(outgoingLight, ${level});
 // The dim code costs the shader of the buildings 0.6-0.9 ms of the 29 ms of GPU time of a
 // night frame, also with the dim off. By day, and in the other shaders, the cost is too small
 // to measure. Thus the materials of the buildings have two programs: one with the dim code,
-// for the layered view, and one with none, for the normal view. Both compile at the start
-// (compileDim), thus the first layered view does not stall: the change of program then adds
-// about 2 ms to one frame.
+// for the layered view, and one with none, for the normal view. compileDim compiles the
+// programs with the dim code before the first frame, and the first frame compiles the others.
+// Thus the first layered view does not stall: the change of program adds about 2 ms to one
+// frame.
 const SWITCHED = new Set();
 let codeOn = false;
 
