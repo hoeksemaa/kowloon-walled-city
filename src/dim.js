@@ -32,12 +32,57 @@ vec3 layerDim(vec3 c, float lvl) {
 // For onBeforeCompile: dim the final light of a built-in material (lit, emissive and all, so
 // that a lit window or a sign below the cut drops under the bloom) by the storey level, a GLSL
 // expression. uLevel: a uniform { value } that level can name, for a material of one storey.
+// A material of dimSwitch has the dim code only while setDimCode(true).
 export function withDim(s, level, uLevel) {
   Object.assign(s.uniforms, DIM);
   if (uLevel) s.uniforms.uLevel = uLevel;
   s.fragmentShader = s.fragmentShader
     .replace('#include <common>', `#include <common>\n${uLevel ? 'uniform float uLevel;' : ''}${DIM_GLSL}`)
-    .replace('#include <opaque_fragment>', `outgoingLight = layerDim(outgoingLight, ${level});\n#include <opaque_fragment>`);
+    .replace('#include <opaque_fragment>', `#if !defined(DIM_SWITCH) || defined(DIM_ON)
+outgoingLight = layerDim(outgoingLight, ${level});
+#endif
+#include <opaque_fragment>`);
+}
+
+// The dim code costs the shader of the buildings 0.6-0.9 ms of the 29 ms of GPU time of a
+// night frame, also with the dim off. By day, and in the other shaders, the cost is too small
+// to measure. Thus the materials of the buildings have two programs: one with the dim code,
+// for the layered view, and one with none, for the normal view. Both compile at the start
+// (compileDim), thus the first layered view does not stall: the change of program then adds
+// about 2 ms to one frame.
+const SWITCHED = new Set();
+let codeOn = false;
+
+// Give material m the two programs.
+export function dimSwitch(m) {
+  m.defines = { ...m.defines, DIM_SWITCH: '' };
+  if (codeOn) m.defines.DIM_ON = '';
+  SWITCHED.add(m);
+  return m;
+}
+
+// The dim code: on in the layered view, off in the normal view.
+export function setDimCode(on) {
+  if (on === codeOn) return;
+  codeOn = on;
+  for (const m of SWITCHED) {
+    if (on) m.defines.DIM_ON = '';
+    else delete m.defines.DIM_ON;
+    m.needsUpdate = true;
+  }
+}
+
+// Compile the programs with the dim code of the meshes now, for each render target (null: the
+// screen), in the scene that gives the lights and the fog.
+export function compileDim(renderer, scene, camera, meshes, targets) {
+  const was = renderer.getRenderTarget();
+  setDimCode(true);
+  for (const t of targets) {
+    renderer.setRenderTarget(t);
+    for (const m of meshes) renderer.compile(m, camera, scene);
+  }
+  renderer.setRenderTarget(was);
+  setDimCode(false);
 }
 
 // The same on the CPU, for the wires: [light kept, grey] on storey k.

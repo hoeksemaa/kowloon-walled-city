@@ -5,7 +5,7 @@ import { buildLayout, buildingName, bldgOf, bldgName, blocksOf, STOREY, MAX_FLOO
 import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
-import { DIM, withDim } from './dim.js';
+import { DIM, withDim, setDimCode, compileDim } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -234,6 +234,9 @@ async function init() {
   buildUI();
   resize();
   setOffsets(0);
+  // The programs of the storeys with the dim code (dim.js), for the screen and for the glow of
+  // the night (post.js): they compile now, thus the first layered view does not stall.
+  compileDim(renderer, scene, camera, levels.flatMap((lv) => (lv.cutout ? [lv.mesh, lv.cutout] : [lv.mesh])), [null, post.target]);
   $('loading').classList.add('done');
   window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline, occlusion, ghosts };
   requestAnimationFrame(frame);
@@ -250,6 +253,7 @@ function setSlabs() {
   const show = state.explode > 0.01;
   const a = smoothstep(0.05, 0.7, state.explode);
   DIM.uDimOn.value = a;
+  setDimCode(a > 0);
   outline.apart(a);
   CONTEXT_U.uOpen.value = a; // Mei Tung House fades, so that the slabs do not cut it (env.js)
   for (const lv of levels) {

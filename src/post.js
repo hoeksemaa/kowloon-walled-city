@@ -12,6 +12,7 @@ export class Post {
     this.scene = scene;
     this.camera = camera;
     const target = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
+    this.target = target; // the scene draws into it at night
     this.composer = new EffectComposer(renderer, target);
     this.composer.addPass(new RenderPass(scene, camera));
     this.bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.45, 0.12, 0.8);

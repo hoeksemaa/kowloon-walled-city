@@ -12,7 +12,7 @@ import { emitStairs, furnish } from './interiors.js';
 import { roofClutter } from './roofs.js';
 import { emitCage, cageThings, emitAC, emitPipe, pipeColor, emitLedge, FACADE_GLSL } from './facades.js';
 import { K, CUT_H } from './kinds.js';
-import { withDim } from './dim.js';
+import { withDim, dimSwitch } from './dim.js';
 import { USE_GLSL } from './useMap.js';
 
 export { K, CUT_H };
@@ -1140,7 +1140,7 @@ totalEmissiveRadiance += glow;`);
     s.fragmentShader = s.fragmentShader.replace('#include <opaque_fragment>', `${LAST}\n#include <opaque_fragment>`);
   };
   m.customProgramCacheKey = () => (a2c ? 'kwc-building-a2c' : 'kwc-building');
-  return m;
+  return dimSwitch(m);
 }
 
 export function makeBuildingMaterial(shared) {
