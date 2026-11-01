@@ -202,6 +202,7 @@ button { font: inherit; color: inherit; }
   #title .t-sub, #hint { display: none; }
   #clock { width: calc(100vw - 110px); }
   #legend { display: none; }
+  #sources { left: 14px; right: 14px; width: auto; }
 }
 
 /* Find them 尋人 (game.js) */
@@ -221,3 +222,4 @@ button { font: inherit; color: inherit; }
 #game .msg { margin-top: 6px; font-style: italic; }
 #game .found { background: #e8c14a; font-family: var(--pixel); font-size: 9px; display: inline-block; padding: 1px 5px; margin: 6px 0 2px; }
 #game .fact { margin: 3px 0; }
+@media (max-width: 720px) { #game { width: min(330px, calc(100vw - 110px)); } }

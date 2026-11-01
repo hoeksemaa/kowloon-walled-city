@@ -784,6 +784,9 @@ function showTooltip(html) {
   let x = mouse.x + 16, y = mouse.y + 14;
   if (x + w > innerWidth - 90) x = mouse.x - w - 16;
   if (y + h > innerHeight - 10) y = mouse.y - h - 14;
+  // on a narrow screen, the box stays on the screen
+  x = clamp(x, 8, Math.max(8, innerWidth - w - 8));
+  y = clamp(y, 8, Math.max(8, innerHeight - h - 8));
   t.style.left = `${x}px`;
   t.style.top = `${y}px`;
 }
