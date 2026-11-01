@@ -162,7 +162,8 @@ compared each of the 23 with the 1987-88 sheets, and the sheets print the same n
 Chinese names are those of the data of today (not compared). `Sight` in `src/occlude.js` keeps
 the real buildings on a grid of 2 m. A ray from a point of a road goes back to the camera
 across this grid and over the City. `src/labels.js` puts a name only where the camera sees
-nine tenths of the road under it. A ghost does not stop the ray.
+nine tenths of the road under it. A ghost does not stop the ray. But the dither of a ghost
+blurs the small Chinese letters, thus a name goes behind a ghost only if no clear place fits.
 
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
