@@ -16,7 +16,7 @@ import { Lamps } from './lamps.js';
 import { USE, UseMap, withUse } from './useMap.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
-import { buildEnvironment, addStreetLabels, Lighting, PLINTH_DEPTH, groundMat } from './env.js';
+import { buildEnvironment, addStreetLabels, Lighting, groundMat } from './env.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
@@ -39,23 +39,21 @@ const STREETS = { top: 'TUNG TAU TSUEN ROAD 東頭村道', right: 'TUNG TSING RO
 // A padlock in pixels, on the row of the legend whose floor use a click keeps lit.
 const LOCK_ICON = '<svg class="lk" viewBox="0 0 7 8" width="7" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M2 0h3v1H2z M1 1h1v2H1z M5 1h1v2H5z M0 3h7v5H0z M3 5h1v1H3z" fill="currentColor" fill-rule="evenodd"/></svg>';
 
-// Haze: things fade with depth below the plinth top and with distance from the city, the
-// way the city below the model dissolves in the reference video.
+// Haze: things fade into the sky with distance from the centre of the city, from fogNear to
+// fogFar (env.js), the same at every height. The world position comes from the view matrix,
+// which has no scale: its inverse is the transpose of its rotation.
 THREE.ShaderChunk.fog_pars_vertex = `#ifdef USE_FOG
-varying float vFogDepth; varying vec3 vFogW;
+varying vec2 vFogXZ;
 #endif`;
 THREE.ShaderChunk.fog_vertex = `#ifdef USE_FOG
-vFogDepth = - mvPosition.z;
-vFogW = (inverse(viewMatrix) * mvPosition).xyz;
+vFogXZ = ((mvPosition.xyz - viewMatrix[3].xyz) * mat3(viewMatrix)).xz;
 #endif`;
 THREE.ShaderChunk.fog_pars_fragment = `#ifdef USE_FOG
-uniform vec3 fogColor; varying float vFogDepth; varying vec3 vFogW;
+uniform vec3 fogColor; varying vec2 vFogXZ;
 uniform float fogNear; uniform float fogFar;
 #endif`;
 THREE.ShaderChunk.fog_fragment = `#ifdef USE_FOG
-float fogH = smoothstep(2.0, -${PLINTH_DEPTH.toFixed(1)}, vFogW.y) * 0.86;
-float fogR = smoothstep(260.0, 1400.0, length(vFogW.xz));
-float fogFactor = max(fogH, fogR);
+float fogFactor = smoothstep(fogNear, fogFar, length(vFogXZ));
 gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
 #endif`;
 
@@ -1016,8 +1014,11 @@ function frame(now) {
   const hour = sim.minute / 60;
   shared.uHour.value = hour;
   {
+    // The shadow box fits the view. Far out, it covers the ground in view up to the haze, so
+    // that the shadows of the city and of the planes do not end in plain view; a texel of the
+    // shadow map then stays smaller than a pixel.
     const vw = (camera.right - camera.left) / camera.zoom, vh = (camera.top - camera.bottom) / camera.zoom;
-    lighting.setFocus(controls.target.x, controls.target.z, clamp(0.5 * Math.max(vw, vh / 0.55) * 0.9 + 12, 28, 190));
+    lighting.setFocus(controls.target.x, controls.target.z, clamp(0.5 * Math.max(vw, vh / 0.55) * 0.9 + 12, 28, 400));
   }
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);

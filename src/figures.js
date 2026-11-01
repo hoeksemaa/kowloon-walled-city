@@ -334,10 +334,27 @@ vec3 rigN;
 vec3 rigP = rig(pIn, normal, rigN);
 vec3 objectNormal = rigN;`;
 
+// People who leave the city walk to one of the exits at the edge of the street plate, where they
+// are gone, and people who come in start there (layout.js). Over the last metres to the exit of
+// their walk they fade, dithered; people who only pass an exit do not. aX: the distance to the
+// exit of the walk (crowd.js).
+function withExitFade(s) {
+  s.vertexShader = s.vertexShader
+    .replace('#include <clipping_planes_pars_vertex>', `#include <clipping_planes_pars_vertex>
+attribute float aX; varying float vExit;`)
+    .replace('#include <project_vertex>', `#include <project_vertex>
+vExit = smoothstep(0.8, 6.0, aX);`);
+  s.fragmentShader = s.fragmentShader
+    .replace('#include <clipping_planes_pars_fragment>', '#include <clipping_planes_pars_fragment>\nvarying float vExit;')
+    .replace('#include <clipping_planes_fragment>', `#include <clipping_planes_fragment>
+if (fract(52.9829189 * fract(dot(gl_FragCoord.xy, vec2(0.06711056, 0.00583715)))) >= vExit) discard;`);
+}
+
 export function makeFigureMaterial(uniforms, plain) {
   const m = new THREE.MeshLambertMaterial({ color: 0xffffff });
   m.onBeforeCompile = (s) => {
     Object.assign(s.uniforms, uniforms);
+    withExitFade(s);
     s.vertexShader = s.vertexShader
       .replace('#include <common>', `#include <common>\n${RIG}\n${PAINT}`)
       .replace('#include <beginnormal_vertex>', VERT_MAIN)
@@ -376,6 +393,7 @@ export function makeFigureDepth(uniforms, plain) {
   const m = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
   m.onBeforeCompile = (s) => {
     Object.assign(s.uniforms, uniforms);
+    withExitFade(s);
     s.vertexShader = s.vertexShader
       .replace('#include <common>', `#include <common>\n${RIG}\n${PAINT}`)
       .replace('#include <begin_vertex>', `vec3 pIn = int(aPart + 0.5) == 21 ? propShape(position) : position;

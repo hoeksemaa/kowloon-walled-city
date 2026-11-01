@@ -1,10 +1,13 @@
-// The model's surroundings: plinth, streets, the hazy city below, light and time of day.
+// The model's surroundings: the street round the city, the ground and the city around it at
+// the same level, light and time of day.
 import * as THREE from 'three';
 import { OUTSIDE } from './footprint.js';
 import { mulberry32, clamp, smoothstep } from './util.js';
 import { withDim } from './dim.js';
 
-export const PLINTH_DEPTH = 150;
+// The haze (main.js): all is clear out to FADE_NEAR metres from the centre of the city, then
+// fades slowly into the sky, and is gone at FADE_FAR. Nothing is drawn beyond.
+const FADE_NEAR = 350, FADE_FAR = 600;
 
 // The ground is part of G/F: below a cut storey in the layered view, it dims with G/F (dim.js).
 export function groundMat(m) {
@@ -17,22 +20,9 @@ export function buildEnvironment(scene, L) {
   const group = new THREE.Group();
   const xa = L.x0, xb = L.x0 + L.W, za = L.z0, zb = L.z0 + L.D;
 
-  // Plinth: the model stands on a block that drops into the haze.
-  const plinth = new THREE.Mesh(
-    new THREE.BoxGeometry(xb - xa, PLINTH_DEPTH, zb - za),
-    groundMat(new THREE.MeshLambertMaterial({ color: '#4a4038' })),
-  );
-  plinth.position.set((xa + xb) / 2, -PLINTH_DEPTH / 2 - 0.02, (za + zb) / 2);
-  plinth.receiveShadow = true;
-  group.add(plinth);
-  const rim = new THREE.LineSegments(
-    new THREE.EdgesGeometry(new THREE.BoxGeometry(xb - xa, 0.01, zb - za)),
-    groundMat(new THREE.LineBasicMaterial({ color: '#e9e1cf', transparent: true, opacity: 0.85 })),
-  );
-  rim.position.set((xa + xb) / 2, 0, (za + zb) / 2);
-  group.add(rim);
-
-  // Street surface, with a pavement band along the city edge.
+  // Street surface: a dark rectangle under the city, flush with the ground round it. It is also
+  // the shape of each storey's slab in the layered view (main.js). A pavement band runs along
+  // the city edge.
   const street = new THREE.Mesh(
     new THREE.PlaneGeometry(xb - xa, zb - za).rotateX(-Math.PI / 2),
     groundMat(new THREE.MeshLambertMaterial({ color: '#57534c' })),
@@ -85,7 +75,7 @@ export function buildEnvironment(scene, L) {
   return { group, roadOutline: road };
 }
 
-// Road names painted on the plinth beside the side of the city they run along.
+// Road names painted on the street beside the side of the city they run along.
 // names: { top, right, bottom, left } (sides of the plan) -> label text.
 export function addStreetLabels(scene, site, road, names) {
   const dirs = { top: [0, -1], bottom: [0, 1], right: [1, 0], left: [-1, 0] };
@@ -130,28 +120,39 @@ export function addStreetLabels(scene, site, road, names) {
   }
 }
 
-// Kowloon at night, seen past the roofs, is sodium amber (#f8f1ba / #cfb272, p316). Lighting
-// sets its glow by the hour.
+// The ground and the city around the City: light, plain greys by day, so that they show the
+// place and leave the eye on the City. At night they are dark, with a faint glow of sodium
+// amber, the colour of Kowloon seen past the roofs (#f8f1ba / #cfb272, p316). Lighting darkens
+// both and sets the glow by the hour.
 const CONTEXT_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+const GROUND_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+const GROUND = new THREE.Color('#dddcd8');
 const SODIUM = new THREE.Color('#cfb272');
+// Soft light, as on a map: the normals of the blocks lean up, so the walls take nearly the
+// light of the roofs, and the blocks stay low in contrast.
+CONTEXT_MAT.onBeforeCompile = (s) => {
+  s.vertexShader = s.vertexShader.replace('#include <defaultnormal_vertex>', `#include <defaultnormal_vertex>
+transformedNormal = normalize(mix(normalize(transformedNormal), mat3(viewMatrix) * vec3(0.0, 1.0, 0.0), 0.55));`);
+};
+CONTEXT_MAT.customProgramCacheKey = () => 'kwc-context';
 
-// Low blocks far below the plinth, mostly lost in haze. Kowloon City around the Walled
-// City was kept low by the airport height limits; heights here are placeholders.
-// Drawn as a miniature, so that it reads as far below rather than merely lower.
+// Low blocks on the ground round the city, out to FADE_FAR. Kowloon City around the Walled
+// City was kept low by the airport height limits; the blocks and their heights are
+// placeholders. The ground is a disc that ends where the haze is whole.
 function buildContextCity(L) {
   const rng = mulberry32(5);
   const box = new THREE.BoxGeometry(1, 1, 1);
   box.translate(0, 0.5, 0);
-  const n = 12000;
+  const n = 8000;
   const mesh = new THREE.InstancedMesh(box, CONTEXT_MAT, n);
   const m = new THREE.Matrix4(), c = new THREE.Color();
   const cx = L.x0 + L.W / 2, cz = L.z0 + L.D / 2;
   let k = 0;
-  const block = 15, street = 5, R = 44;
+  const block = 15, street = 5, R = Math.ceil(FADE_FAR / (block + street));
   for (let gx = -R; gx <= R && k < n; gx++)
     for (let gz = -R; gz <= R && k < n; gz++) {
-      if (gx * gx + gz * gz > R * R) continue;
       const bx = cx + gx * (block + street) + (gz % 3) * 4, bz = cz + gz * (block + street);
+      if (Math.hypot(bx - cx, bz - cz) > FADE_FAR - block) continue;
       if (Math.abs(bx - cx) < L.W * 0.55 && Math.abs(bz - cz) < L.D * 0.55) continue;
       if (rng() < 0.07) continue;
       const parts = 1 + Math.floor(rng() * 3);
@@ -159,16 +160,19 @@ function buildContextCity(L) {
         const w = block / parts;
         const h = 4 + rng() * 7 + (rng() < 0.05 ? 7 : 0);
         m.makeScale(w - 0.6, h, block - 0.8 - rng() * 4);
-        m.setPosition(bx - block / 2 + w * (p + 0.5), -PLINTH_DEPTH, bz);
+        m.setPosition(bx - block / 2 + w * (p + 0.5), 0, bz);
         mesh.setMatrixAt(k, m);
-        c.setHSL(0.11, 0.04 + rng() * 0.05, 0.5 + rng() * 0.14);
+        c.setHSL(0.11, 0.02 + rng() * 0.03, 0.8 + rng() * 0.1);
         mesh.setColorAt(k, c);
         k++;
       }
     }
   mesh.count = k;
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(6000, 6000).rotateX(-Math.PI / 2), new THREE.MeshLambertMaterial({ color: '#7c7a70' }));
-  ground.position.set(cx, -PLINTH_DEPTH - 0.1, cz);
+  mesh.receiveShadow = true;
+  // A little below the street, so that the two do not fight where they overlap.
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(FADE_FAR, 128).rotateX(-Math.PI / 2), GROUND_MAT);
+  ground.position.set(cx, -0.05, cz);
+  ground.receiveShadow = true;
   const g = new THREE.Group();
   g.add(mesh, ground);
   return g;
@@ -217,19 +221,26 @@ function offsetConvex(poly, d) {
 }
 
 // ---- light and time of day ----------------------------------------------------------------
-const SKY = [
-  [0, '#252a36'], [4.8, '#2c3240'], [5.8, '#5f5f68'], [6.6, '#9a8e82'], [7.6, '#a3a093'],
-  [12, '#a8a89c'], [16.5, '#a4a194'], [17.8, '#b0927a'], [18.6, '#7c6a6a'], [19.4, '#444656'],
-  [20.5, '#2d3240'], [24, '#252a36'],
-];
-const skyCols = SKY.map(([h, c]) => [h, new THREE.Color(c)]);
+// The sky, which is also the colour of the haze, in sRGB by the height of the sun in degrees.
+// By day a pale grey, a little lighter than the lit ground, so that the city around melts into
+// it; warmer as the sun goes down. At night a dark slate, darker than the walls, so that the lit
+// windows stand out, with a dark afterglow near sunset and sunrise. Lighting mixes the two on
+// the curve of the city's own light (uNight).
+const SKY_DAY = [[-6, '#9c8174'], [4, '#b39b88'], [14, '#bfb8aa'], [30, '#c9c7c0'], [45, '#d0cfc9']];
+const SKY_NIGHT = [[-14, '#1e1f26'], [-5, '#28262c'], [3, '#3b3334']];
+const rgbOf = (t) => t.map(([a, c]) => [a, new THREE.Color(c).getRGB({}, THREE.SRGBColorSpace)]);
+const skyDay = rgbOf(SKY_DAY), skyNight = rgbOf(SKY_NIGHT);
 
-export function skyAt(hour, out) {
-  for (let i = 0; i < skyCols.length - 1; i++) {
-    const [h0, c0] = skyCols[i], [h1, c1] = skyCols[i + 1];
-    if (hour >= h0 && hour <= h1) return out.copy(c0).lerp(c1, (hour - h0) / (h1 - h0));
+function skyAt(table, alt) {
+  if (alt <= table[0][0]) return table[0][1];
+  for (let i = 0; i < table.length - 1; i++) {
+    const [a0, c0] = table[i], [a1, c1] = table[i + 1];
+    if (alt <= a1) {
+      const t = (alt - a0) / (a1 - a0);
+      return { r: c0.r + (c1.r - c0.r) * t, g: c0.g + (c1.g - c0.g) * t, b: c0.b + (c1.b - c0.b) * t };
+    }
   }
-  return out.copy(skyCols[0][1]);
+  return table[table.length - 1][1];
 }
 
 export class Lighting {
@@ -250,7 +261,8 @@ export class Lighting {
     scene.add(this.sun, this.sun.target);
     this.sky = new THREE.Color();
     scene.background = this.sky;
-    scene.fog = new THREE.Fog(this.sky, 900, 1700);
+    // fogNear and fogFar carry the radii of the haze (main.js).
+    scene.fog = new THREE.Fog(this.sky, FADE_NEAR, FADE_FAR);
   }
 
   // Fit the shadow map to the part of the city in view (x, z, half size r): close up, the
@@ -282,12 +294,17 @@ export class Lighting {
     this.sun.color.setHSL(0.09, 0.5 - 0.35 * elev, 0.82 + 0.1 * elev);
     this.hemi.intensity = 0.62 + 0.7 * smoothstep(-0.05, 0.3, elev);
     this.hemi.color.set(light > 0.05 ? '#dcd9cc' : '#8e96b0');
-    // The sky colours were set for March light: map December hours onto them.
-    const m = hour < 6.95 ? hour - 0.45 : hour > 17.75 ? hour + 0.75 : 6.5 + (hour - 6.95) * (12 / 10.8);
-    skyAt(clamp(m, 0, 24), this.sky);
-    this.scene.fog.color.copy(this.sky);
     const night = 1 - smoothstep(0.02, 0.35, elev);
-    CONTEXT_MAT.emissive.copy(SODIUM).multiplyScalar(0.32 * night);
+    // The sky and the haze follow the city's light: day and night mixed by uNight.
+    const d = skyAt(skyDay, alt / D), n = skyAt(skyNight, alt / D);
+    this.sky.setRGB(d.r + (n.r - d.r) * night, d.g + (n.g - d.g) * night, d.b + (n.b - d.b) * night, THREE.SRGBColorSpace);
+    this.scene.fog.color.copy(this.sky);
+    // The ground and the city around darken on the same curve.
+    const dark = 1 - 0.7 * night;
+    CONTEXT_MAT.color.setScalar(dark);
+    GROUND_MAT.color.copy(GROUND).multiplyScalar(dark);
+    CONTEXT_MAT.emissive.copy(SODIUM).multiplyScalar(0.012 * night);
+    GROUND_MAT.emissive.copy(SODIUM).multiplyScalar(0.02 * night);
     return night;
   }
 }
