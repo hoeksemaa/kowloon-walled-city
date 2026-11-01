@@ -14,10 +14,13 @@
 // workshops are sourced, p48, but not their sound), and the shape of every sound. The planes
 // play much softer than they were. Sounds follow the clock, not the camera.
 import { mulberry32, clamp } from './util.js';
+import { track, SPEED, S0, S1 } from './approach.js';
 
 const SAT = 4, SUN = 5, DONGZHI = 6; // days from Tue 16 Dec 1986, as in people.js
 const MASTER = 0.5;
 const MAX_SPEED = 60; // two arrows (main.js); faster, the bed only
+// The distance from the centre of the City to the plane where it passes nearest (s = 0).
+const NEAREST = ((t) => Math.hypot(t.x, t.y, t.z))(track(0));
 
 // How full the city sounds, 0–1, by the hour: quiet from 1 to 5 a.m., full by day.
 const LEVEL = [[0, 0.5], [1, 0.25], [5, 0.2], [6.5, 0.5], [8, 0.9], [12, 1], [14, 0.9], [18, 1], [21, 0.8], [23, 0.6], [24, 0.5]];
@@ -494,10 +497,13 @@ export class Sound {
     }
     let amp = 0;
     if (this.plane && shots) {
-      const s = this.plane.s, d = Math.hypot(s, 160);
-      amp = (160 / d) * clamp((s + 1500) / 300, 0, 1) * clamp((950 - s) / 400, 0, 1);
-      // A falling whine: the Doppler shift of a plane at 75 m/s.
-      this.glide(this.whine.frequency, (1800 * 343) / (343 + (75 * s) / d), now, 0.1);
+      // The distance from the centre of the City to the plane on its track (approach.js). The
+      // sound is loudest where the plane passes nearest, about 430 m to the south-west.
+      const s = this.plane.s, t = track(s), d = Math.hypot(t.x, t.y, t.z);
+      amp = (NEAREST / d) * clamp((s - S0) / 300, 0, 1) * clamp((S1 - s) / 400, 0, 1);
+      // A falling whine: the Doppler shift of the plane, from its speed away from the City.
+      const away = (SPEED * (t.x * t.dx + t.z * t.dz)) / d;
+      this.glide(this.whine.frequency, (1800 * 343) / (343 + away), now, 0.1);
       this.glide(this.planePan.pan, clamp(s / 1200, -0.7, 0.7), now, 0.1);
     }
     this.glide(this.planeGain.gain, 0.1 * amp, now, 0.12);
