@@ -57,6 +57,13 @@ python3 serve.py 8173
   and baskets; a small gold marker shows each real person. Each body has joints: people
   walk, climb the stair flights, sit at tables and machines, work at stoves and benches, and
   sleep in beds or on mats under a quilt.
+- **Labels.** The street names and the numbers of the places of the 1992 map lie on the
+  model, as dark plates with light pixel letters. A street name lies along its lane at the
+  height of the roofs, with thin lines down to the lane floor. In a cut, or in the layered
+  view, it lies on the cut storey, or on G/F with no cut. A number lies on the building of
+  its place. Each label moves and dims with its storey. Point at a number to see its card,
+  or at a street name to light its lane. The key M turns them off and on. The storey labels
+  of the layered view and the cut tag are plates of the same kind.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
@@ -125,9 +132,10 @@ page:
 (await import('./tools/check_stack.js')).checkStack(kwc)
 ```
 
-It returns `ok`, or a list of problems. It checks four things:
+It returns `ok`, or a list of problems. It checks five things:
 
 - Each vertex, sign and aerial is on its own storey.
 - Each segment of a line moves with one storey.
 - No line rises above the section of a cut.
 - Each person moves with one whole storey.
+- Each label is on its own storey, and no label rises above the section of a cut.
