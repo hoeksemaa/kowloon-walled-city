@@ -20,7 +20,8 @@ import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, Lighting, CONTEXT_U } from './env.js';
 import { Labels } from './labels.js';
-import { Occlusion } from './occlude.js';
+import { Occlusion, Sight } from './occlude.js';
+import { roadRuns } from './context.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
@@ -37,9 +38,6 @@ const START_MINUTE = 9 * 60 + 45;
 const SPEEDS = [0, 1, 60, 2400];
 const $ = (id) => document.getElementById(id);
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
-// Roads outside the city, by side of the plan. Only these two touched the city directly;
-// Sai Tau Tsuen lay to the south and west until 1985 (research/kwc-research.md, 1.3).
-const STREETS = { top: 'TUNG TAU TSUEN ROAD 東頭村道', right: 'TUNG TSING ROAD 東正道' };
 // A padlock in pixels, on the row of the legend whose floor use a click keeps lit.
 const LOCK_ICON = '<svg class="lk" viewBox="0 0 7 8" width="7" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M2 0h3v1H2z M1 1h1v2H1z M5 1h1v2H5z M0 3h7v5H0z M3 5h1v1H3z" fill="currentColor" fill-rule="evenodd"/></svg>';
 
@@ -106,6 +104,8 @@ const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMark
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap, outline;
 let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
+let panelBoxes = []; // the panels on the screen: the road names keep clear of them (labels.js)
+const PANELS = ['toolbar', 'rail', 'clock', 'legend', 'bld', 'game', 'src-btn'];
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
@@ -203,10 +203,13 @@ async function init() {
   cutRing.computeLineDistances();
   cutRing.visible = false;
 
-  // ---- labels: street names, place numbers, storey labels (labels.js) ----
+  // ---- labels: street names, place numbers, road names, storey labels (labels.js) ----
   // The plates draw their words on canvases: wait for the pixel font, but not for ever.
   await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
-  labels = new Labels({ L, site, levels, road: env.roadOutline, street: env.street, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
+  labels = new Labels({
+    L, site, levels, runs: roadRuns(context, site.polygon), sight: new Sight(env.prisms), ghost: occlusion.hide, street: env.street,
+    mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy(),
+  });
 
   // ---- wires ----
   wires = new WireLayer(L, buildWires(L));
@@ -881,13 +884,13 @@ function updateTags() {
   } else tag.style.display = 'none';
 }
 
-// The street name or place number under the pointer (labels.js).
+// The street name, road name or place number under the pointer (labels.js).
 function pickLabel() {
   raycaster.setFromCamera(ndc, camera);
   return labels.pick(raycaster);
 }
 
-// The card of a label: a place lights its tower, a street its lane cells.
+// The card of a label: a place lights its tower, a street its lane cells, a road its run.
 function showLabel(lb) {
   if (!lb) return false;
   if (lb.kind === 'place') {
@@ -929,9 +932,12 @@ function streetCard(st) {
     <div class="tt-s">${wall ? 'lit: the road on the old wall base' : 'lit: its lane, traced along the plan from the name (inferred)'}</div>`;
 }
 
+// A real road round the City (data/context.json), and its run that the model lights.
 function roadCard(lb) {
-  return `<div class="tt-h">${lb.text}</div><div class="tt-s">a road outside the City, on this side of it</div>
-    <div class="tt-s">the road line is schematic: the outline of the City, pushed out by about 10 m</div>`;
+  const r = lb.run;
+  return `<div class="tt-h">${r.nameZh} ${r.name.toUpperCase()}</div><div>a road outside the City, December 1986</div>
+    <div class="tt-s">the line and the name: the road network of the Transport Department, kept where it fits the 1:1000 survey sheets of 1987</div>
+    <div class="tt-s">lit: this run of the road</div>`;
 }
 
 const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -961,8 +967,13 @@ function resize() {
   wires.setResolution(w, h);
   useMap.setResolution(w, h);
   toolbarBox = $('toolbar').getBoundingClientRect();
+  findPanels();
   outline.setResolution(w, h);
   placePanel();
+}
+
+function findPanels() {
+  panelBoxes = PANELS.map($).filter((el) => el && !el.hidden && el.getClientRects().length).map((el) => el.getBoundingClientRect());
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -1027,10 +1038,10 @@ function frame(now) {
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
-  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox });
+  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox, panels: panelBoxes });
   updateTags();
   clockT += dt;
-  if (clockT > 0.25) { clockT = 0; updateClock(); }
+  if (clockT > 0.25) { clockT = 0; updateClock(); findPanels(); }
   post.render(shared.uNight.value);
   requestAnimationFrame(frame);
 }

@@ -140,3 +140,65 @@ export class Occlusion {
     return best;
   }
 }
+
+// ---- what the camera sees of the ground, for the names of the roads (labels.js) ----
+// A grid of SIGHT_RES metres holds the real building that stands on each cell (its index in
+// prisms; -1 for none). A ray goes from a point of the ground back to the camera, a metre at a
+// time along the ground. It stops at the first cell where a building that is not a ghost, or
+// the City, rises above it. It is clear when it is higher than all that stands round it.
+const SIGHT_RES = 2, SIGHT_R = 620;
+
+export class Sight {
+  constructor(prisms) {
+    const n = Math.ceil((2 * SIGHT_R) / SIGHT_RES);
+    this.n = n;
+    this.cell = new Int32Array(n * n).fill(-1);
+    this.h = new Float32Array(prisms.length);
+    this.top = 0;
+    prisms.forEach((p, b) => {
+      if (!p) return;
+      this.h[b] = p.h;
+      this.top = Math.max(this.top, p.h);
+      let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity;
+      for (const [x, z] of p.ring) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); z0 = Math.min(z0, z); z1 = Math.max(z1, z); }
+      const i0 = Math.max(0, Math.floor((x0 + SIGHT_R) / SIGHT_RES)), i1 = Math.min(n - 1, Math.floor((x1 + SIGHT_R) / SIGHT_RES));
+      const j0 = Math.max(0, Math.floor((z0 + SIGHT_R) / SIGHT_RES)), j1 = Math.min(n - 1, Math.floor((z1 + SIGHT_R) / SIGHT_RES));
+      for (let j = j0; j <= j1; j++)
+        for (let i = i0; i <= i1; i++)
+          if (inRing((i + 0.5) * SIGHT_RES - SIGHT_R, (j + 0.5) * SIGHT_RES - SIGHT_R, p.ring)) this.cell[j * n + i] = b;
+    });
+  }
+
+  // Does the camera see the point (x, y, z)? (ux, uz): the unit vector along the ground toward
+  // the camera; k: the tangent of the angle of the view over the horizon. ghost[b] is 1 for a
+  // building that the ray goes through. city: { x0, z0, W, D, top, max }, the height of the City
+  // on each of its cells of a metre (top) and the greatest (max); or null.
+  seen(x, y, z, ux, uz, k, ghost, city) {
+    const { n, cell, h } = this;
+    let end = (this.top - y) / k;
+    // the part of the ray over the box of the City
+    let c0 = Infinity, c1 = -Infinity;
+    if (city && city.max > y) {
+      c0 = 0; c1 = (city.max - y) / k;
+      for (const [p, q, lo, hi] of [[x, ux, city.x0, city.x0 + city.W], [z, uz, city.z0, city.z0 + city.D]]) {
+        if (Math.abs(q) < 1e-9) { if (p < lo || p > hi) c1 = -Infinity; continue; }
+        const ta = (lo - p) / q, tb = (hi - p) / q;
+        c0 = Math.max(c0, Math.min(ta, tb)); c1 = Math.min(c1, Math.max(ta, tb));
+      }
+      if (c0 <= c1) end = Math.max(end, c1);
+    }
+    for (let t = 0; t <= end; t += 1) {
+      const px = x + ux * t, pz = z + uz * t, py = y + k * t;
+      const i = Math.floor((px + SIGHT_R) / SIGHT_RES), j = Math.floor((pz + SIGHT_R) / SIGHT_RES);
+      if (i >= 0 && j >= 0 && i < n && j < n) {
+        const b = cell[j * n + i];
+        if (b >= 0 && !ghost[b] && h[b] > py) return false;
+      }
+      if (t >= c0 && t <= c1) {
+        const ci = Math.floor(px - city.x0), cj = Math.floor(pz - city.z0);
+        if (ci >= 0 && cj >= 0 && ci < city.W && cj < city.D && city.top[cj * city.W + ci] > py) return false;
+      }
+    }
+    return true;
+  }
+}
