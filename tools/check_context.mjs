@@ -15,7 +15,7 @@
 // drawn building, if an exit of the people is not on the street or on a road, or if a walk on
 // the grid between an exit and the City goes through a drawn building.
 //
-// Last it checks the ghosts (src/occlude.js) in 48 views: it fails if a building hides a point
+// Last it checks the ghosts (src/occlude.js) in 48 views. It fails if a building hides a point
 // of the City wall and the test does not fade it.
 import { readFileSync } from 'node:fs';
 import { MARGIN, buildLayout } from '../src/layout.js';
@@ -222,11 +222,11 @@ console.log(`exits: ${L.away.length}, each on a road or the street; ${walks} wal
 
 // The ghosts: in each view, cast a ray from points of the City wall back to the camera
 // (Occlusion.hit, which the pick also uses). A building that a ray meets hides that point, thus
-// the test (Occlusion.test) must fade it. The test can also fade a building that hides less than
-// the points show (a corner of the wall between two points): those are counted, not problems.
+// the test (Occlusion.test) must fade it. The test can also fade a building that hides only a
+// part of the wall between two points. The check counts those, but they are not problems.
 // The points: along the City outline every metre, at 0, 3, 15 and 40 m. The views: 12
-// directions round the City, each at 4 angles over the horizon from the lowest view of the app
-// (controls.maxPolarAngle 1.42, thus 8.6°) to 57°, the angle of the start view (33°) among them.
+// directions round the City, each at 4 angles over the horizon. The angles go from the lowest
+// view of the app (controls.maxPolarAngle 1.42, thus 8.6°) to 57°, with the start view (33°).
 {
   const outline = buildSite(plan).polygon;
   const occ = new Occlusion(buildingPrisms(C), outline);

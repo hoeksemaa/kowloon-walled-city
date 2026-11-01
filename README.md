@@ -62,7 +62,7 @@ python3 serve.py 8173
   the City, at one level with it. The buildings rise to their heights in light warm greys,
   cast shadows, and show a few lit windows at night. The roads have their widths, kerbs, and
   centre-line dashes near the City. The dark street under the City ends at the road kerbs.
-  A building that hides any part of the City fades in 0.25 s to a faint dotted ghost, and
+  A building that hides any part of the City fades in 0.25 s to a faint dotted ghost. It
   comes back when it no longer hides the City. Its shadow does not change. A click through a
   ghost reaches the City; a click on a solid building does not.
   All of it is clear out to 350 m from the centre, fades slowly into the haze, and is gone
@@ -139,11 +139,11 @@ segments with no measured width are inferred. The fit of the City on the 1987 sh
 model 3.6°: plan +x points along the bearing 63.6° (`PLAN_BEARING`, `src/site.js`).
 
 `src/occlude.js` finds the buildings that hide the City. The camera is orthographic and
-always looks down. Thus a building hides a part of the City exactly when its outline, pushed
-away from the camera by its height / tan(view angle), touches the City outline. The zoom, the
-pan, the cut and the layered view do not change the result, thus the test runs only when the
-view direction changes. It takes about 0.03 ms. `src/env.js` keeps the fade of each building
-in a small texture, and the shader eases it.
+always looks down. The test pushes the outline of each building away from the camera by its
+height / tan(view angle). The building hides a part of the City exactly when this outline
+touches the City outline. The zoom, the pan, the cut and the layered view do not change the
+result, thus the test runs only when the view direction changes. It takes about 0.03 ms.
+`src/env.js` keeps the fade of each building in a small texture, and the shader eases it.
 
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
@@ -159,7 +159,7 @@ Then `check_context.mjs` checks what the app draws. It fails if a drawn outline 
 cell of the City, or if the dark street reaches under a drawn building. It also fails if an
 exit of the people is not on the street or a road. It fails if a walk between an exit
 and the lanes of the City goes through a drawn building. Last, in 48 views, it casts rays from
-the City wall back to the camera, and it fails if a building that a ray meets does not fade.
+the City wall back to the camera. It fails if a building that a ray meets does not fade.
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.

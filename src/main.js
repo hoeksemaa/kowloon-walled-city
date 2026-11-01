@@ -452,7 +452,7 @@ const mouse = { x: -1, y: -1, moved: false, inside: false };
 let occlusion = null, ghosts = null;
 
 // The building of the City under the pointer. A real building in front of it that is not a
-// ghost (less than half faded) stops the ray: the pointer is then on that building, not on
+// ghost (less than half faded) stops the ray. The pointer is then on that building, not on
 // the City. A ghost lets the ray through.
 function pickBuilding() {
   raycaster.setFromCamera(ndc, camera);

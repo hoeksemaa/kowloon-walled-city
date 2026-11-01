@@ -1,23 +1,23 @@
-// The real buildings that hide the City: env.js draws each of them as a faint ghost, and a
-// click goes through a ghost to the City (main.js). No three.js here, so that
+// The real buildings that hide the City: env.js draws each of them as a faint ghost. A click
+// goes through a ghost to the City (main.js). No three.js here, so that
 // tools/check_context.mjs can test it in node.
 //
 // The camera is orthographic, thus all the rays of the view are parallel, along the view
 // direction d. The camera always looks down (controls.maxPolarAngle is under 90°), at an angle
 // e over the horizon. The ray from a point of the City back to the camera goes up tan(e) metres
-// for each metre across. Thus a building of height h hides a part of the City exactly when its
-// outline, pushed along the ground away from the camera by up to h / tan(e), touches the City
-// outline (site.polygon). The building then hides at least the foot of the City wall there,
-// at y = 0. A point higher on the City is hidden only if the foot below it is hidden too. Thus
-// the height of the City does not change the result, because the City always stands on the
-// ground: the result is the same in the normal view, with a cut storey, and in the layered
-// view, where G/F stays on the ground and the storeys above it go up. The zoom, the pan and
-// the lift of the layered view do not change it either: only the view direction does. Thus
-// main.js runs the test only when the view direction changes.
+// for each metre across. The test pushes the outline of a building of height h along the
+// ground, away from the camera, by up to h / tan(e). The building hides a part of the City
+// exactly when this pushed outline touches the City outline (site.polygon). The building then
+// hides at least the foot of the City wall there, at y = 0. A point higher on the City is
+// hidden only if the foot below it is hidden too. The City always stands on the ground, thus
+// its height does not change the result. The result is the same in the normal view, with a cut
+// storey, and in the layered view: there G/F stays on the ground and the storeys above it go
+// up. The zoom, the pan and the lift of the layered view do not change it either: only the
+// view direction does. Thus main.js runs the test only when the view direction changes.
 //
 // The test is in the plan, in the frame of the view: w along the ground direction of the view,
 // v across it. A ray along the ground leaves the building through an edge that faces away from
-// the camera, and comes into the City through an edge that faces the camera. For two such
+// the camera. It comes into the City through an edge that faces the camera. For two such
 // edges, over the span of v that both cover, the gap g(v) = w(City edge) - w(building edge) is
 // linear in v. The pushed building touches the City at that place if g has a value in
 // [0, h / tan(e)] there.

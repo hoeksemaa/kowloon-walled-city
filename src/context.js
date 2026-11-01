@@ -20,8 +20,9 @@ export function drawnBuildings(C) {
 }
 
 // The solids that env.js draws, in the order of drawnBuildings: for each building its outline
-// with no two points closer than 5 cm, clockwise in (x, z), and its height h. null for an
-// outline of fewer than 3 points, which is not drawn. occlude.js tests the same solids.
+// (ring) and its height h. The outline is clockwise in (x, z), with no two points closer than
+// 5 cm. null for an outline of fewer than 3 points, which is not drawn. occlude.js tests the
+// same solids.
 export function buildingPrisms(C) {
   return drawnBuildings(C).map((b) => {
     let ring = b.ring.filter((p, i, r) => Math.hypot(p[0] - r[(i + 1) % r.length][0], p[1] - r[(i + 1) % r.length][1]) > 0.05);

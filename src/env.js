@@ -298,10 +298,11 @@ function buildContextCity(L, prisms) {
 }
 
 // The ghosts of the real buildings that hide the City (occlude.js tests which ones, main.js
-// calls set when the view direction changes). The texel of building i in uGhost holds the fade
-// at the last change, the fade that it goes to, and the time of that change in seconds. The
-// shader eases from the one to the other in GHOST_EASE seconds, on the clock uClock. A fade of
-// 0 is the solid building, 1 a ghost: 15 % of it stays, as a dither (CTX_GHOST).
+// calls set when the view direction changes). The texel of building i in uGhost holds three
+// values: the fade at the last change, the fade that it goes to, and the time of that change
+// in seconds. The shader eases from the one to the other in GHOST_EASE seconds, on the clock
+// uClock. A fade of 0 is the solid building, 1 a ghost: 15 % of it stays, as a dither
+// (CTX_GHOST).
 
 export class Ghosts {
   constructor(n) {
