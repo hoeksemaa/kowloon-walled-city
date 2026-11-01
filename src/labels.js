@@ -46,8 +46,8 @@ const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // The road names: two names of one road are at least SAME_ROAD metres apart. A name goes only
 // where the camera sees nine tenths of the road under it (SEEN), and where other roads cross
 // under no more than a third of it (CROSSED). ROAD_AGAIN: the seconds between two tests of what
-// the camera sees, while the view moves.
-const SAME_ROAD = 240, SEEN = 0.9, CROSSED = 0.34, ROAD_AGAIN = 0.12;
+// the camera sees, while the view moves; ROAD_MS: the milliseconds of a test in each frame.
+const SAME_ROAD = 240, SEEN = 0.9, CROSSED = 0.34, ROAD_AGAIN = 0.12, ROAD_MS = 3;
 // The level of a road name for the dim of the layered view (dim.js): above all storeys, thus it
 // never dims. The roads under it do not dim either.
 const NO_DIM = 1000;
@@ -180,7 +180,8 @@ export class Labels {
     this.clock = 0;
     this.frame = 0;
     // what the camera saw of the roads at the last test (seeRoads), and when
-    this.road = { key: null, dir: new THREE.Vector3(), size: 0, at: -Infinity, ver: 0, dirty: true };
+    this.road = { key: null, dir: new THREE.Vector3(), size: 0, at: -Infinity, ver: 0, dirty: true, pass: null };
+    this.roads = [];
 
     for (const st of L.streets) this.addStreet(st);
     for (const p of L.places) this.addPlace(p);
@@ -313,14 +314,16 @@ export class Labels {
   // as in the street names of the City. Its place is new in each frame (placeRoad).
   addRoad(run) {
     const en = run.name.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').toUpperCase();
-    const prefix = (a) => { const p = new Uint16Array(run.n + 1); for (let i = 0; i < run.n; i++) p[i + 1] = p[i] + (a ? a[i] : 0); return p; };
+    const prefix = (a) => { const p = new Uint16Array(run.n + 1); for (let i = 0; i < run.n; i++) p[i + 1] = p[i] + a[i]; return p; };
     // The roads nearest the City go first. bad and crossed: running counts of the points that
-    // the camera does not see (seeRoads), and of the points at a junction. at: the point of
+    // the camera does not see (seeRoads; none is seen before the first test), and of the points
+    // at a junction. at: the point of
     // the run under the middle of the name, -1 for none.
-    this.add('road', drawPlate(`${run.nameZh ? `${run.nameZh} ` : ''}${en}`), {
+    const lb = this.add('road', drawPlate(`${run.nameZh ? `${run.nameZh} ` : ''}${en}`), {
       prio: 4 - run.near / 1000, solid: true, run, k: 0, y: OVER, x: run.x[run.home], z: run.z[run.home],
-      axis: [run.tx[run.home], run.tz[run.home]], bad: prefix(null), crossed: prefix(run.cross), at: -1, ver: -1, retry: 0,
+      axis: [run.tx[run.home], run.tz[run.home]], bad: prefix(new Uint8Array(run.n).fill(1)), crossed: prefix(run.cross), at: -1, ver: -1, retry: 0,
     });
+    this.roads.push(lb);
   }
 
   // The highest roof within r m of a line of half length h through (x, z).
@@ -420,34 +423,41 @@ export class Labels {
 
   // Which points of each road the camera sees: the point in the middle of the road and a point
   // to each side of it, a quarter of the height of its name away (thus the words). A point of the
-  // road is bad if the camera does not see one of the three. size: metres for each pixel of the
-  // design, on a plate that faces the camera.
-  seeRoads(cut, size) {
-    const hl = Math.hypot(_d.x, _d.z);
-    if (_d.y >= 0 || hl < 1e-6) return;
-    const ux = -_d.x / hl, uz = -_d.z / hl, k = -_d.y / hl, city = this.cityTops(cut), y = OVER;
-    const see = (x, z) => this.sight.seen(x, y, z, ux, uz, k, this.ghost, city);
-    for (const lb of this.list) {
-      if (lb.kind !== 'road') continue;
-      const R = lb.run, bad = lb.bad;
+  // road is bad if the camera does not see one of the three. A test (pass) runs over a few
+  // frames, ROAD_MS milliseconds in each; it holds the view at its start. Returns true when the
+  // test is done.
+  seeRoads(pass) {
+    const { ux, uz, k, city, size } = pass, t0 = performance.now();
+    const see = (x, z) => this.sight.seen(x, OVER, z, ux, uz, k, this.ghost, city);
+    while (pass.next < this.roads.length) {
+      const lb = this.roads[pass.next++], R = lb.run, bad = lb.bad;
       for (let i = 0; i < R.n; i++) {
         const x = R.x[i], z = R.z[i], nx = -R.tz[i], nz = R.tx[i];
         const off = Math.max(1, (0.25 * lb.h * size) / fsOf(nx, nz));
         const ok = see(x, z) && see(x + nx * off, z + nz * off) && see(x - nx * off, z - nz * off);
         bad[i + 1] = bad[i] + (ok ? 0 : 1);
       }
+      if (performance.now() - t0 > ROAD_MS) return false;
     }
+    return true;
   }
 
   // Test again what the camera sees of the roads when the view turns, the zoom changes the size
-  // of the names, or the storeys move; not more often than each ROAD_AGAIN seconds.
+  // of the names, or the storeys move; not more often than each ROAD_AGAIN seconds. size:
+  // metres for each pixel of the design, on a plate that faces the camera.
   watchRoads(view, size) {
     const r = this.road, key = `${view.cut}:${view.explode.toFixed(2)}`;
     if (key !== r.key || _d.distanceToSquared(r.dir) > 1e-10 || Math.abs(Math.log(size / r.size)) > 0.1) r.dirty = true;
-    if (!r.dirty || this.clock - r.at < ROAD_AGAIN) return;
-    this.seeRoads(view.cut, size);
-    Object.assign(r, { key, size, at: this.clock, ver: r.ver + 1, dirty: false });
-    r.dir.copy(_d);
+    const hl = Math.hypot(_d.x, _d.z);
+    if (!r.pass && r.dirty && this.clock - r.at >= ROAD_AGAIN && _d.y < 0 && hl > 1e-6) {
+      r.pass = { ux: -_d.x / hl, uz: -_d.z / hl, k: -_d.y / hl, city: this.cityTops(view.cut), size, next: 0 };
+      Object.assign(r, { key, size, at: this.clock, dirty: false });
+      r.dir.copy(_d);
+    }
+    if (r.pass && this.seeRoads(r.pass)) {
+      r.pass = null;
+      r.ver++;
+    }
   }
 
   // The place of a road name in this frame: where it was, if it still fits there, or else the
