@@ -48,6 +48,28 @@ const pickc = (rng, arr) => arr[Math.floor(rng() * arr.length)];
 const RUST = col('#4a2a1c');
 const facingOf = (o) => (o === OUTSIDE || o === ROAD ? 'street' : o === LANE || o === YARD ? 'alley' : 'building');
 
+// The width of the lane in front of the wall of frame fr (wallFrame), in metres, up to 9.
+function laneWidth(L, fr) {
+  const x = fr.A[0] + fr.t[0] * fr.len / 2, z = fr.A[1] + fr.t[1] * fr.len / 2;
+  let d = 0.3;
+  for (; d < 9; d += 0.5) {
+    const i = Math.floor(x + fr.n[0] * d - L.x0), j = Math.floor(z + fr.n[1] * d - L.z0);
+    if (i < 0 || j < 0 || i >= L.W || j >= L.D) break;
+    const c = j * L.W + i;
+    if (!L.inside[c] || L.owner[c] >= 0) break;
+  }
+  return d;
+}
+// From 2/F up, some buildings overhang the lanes (p131); the lane below stays at least a metre
+// wide. The overhang of a wall of block b on storey k, over a lane lw wide (0: no lane).
+const overhang = (b, k, lw) => (k >= 2 && lw >= 2.2 && hash2(b.id, 13) < 0.5 ? Math.min(0.6, (lw - 1.2) / 2) : 0);
+
+// The overhang in metres of the wall on ring edge e of block b on storey k, as buildLevels
+// draws it. The outline of the selected building (select.js) follows it.
+export function overhangAt(L, b, e, k) {
+  return overhang(b, k, facingOf(e.other) === 'alley' && k < 8 ? laneWidth(L, wallFrame(e)) : 0);
+}
+
 export function buildLevels(L) {
   const rng = mulberry32(77);
   const B = L.buildings;
@@ -89,17 +111,6 @@ export function buildLevels(L) {
   // How dark a lane wall is: 1 in a lane under 2 m, less in a wider one. Daylight reaches the
   // ground "only in those few places where narrow gaps had been left" (p103); Lo Yan Street
   // is "the only street that had some degree of natural lighting" (p23).
-  const laneWidth = (fr) => {
-    const x = fr.A[0] + fr.t[0] * fr.len / 2, z = fr.A[1] + fr.t[1] * fr.len / 2;
-    let d = 0.3;
-    for (; d < 9; d += 0.5) {
-      const i = Math.floor(x + fr.n[0] * d - L.x0), j = Math.floor(z + fr.n[1] * d - L.z0);
-      if (i < 0 || j < 0 || i >= L.W || j >= L.D) break;
-      const c = j * L.W + i;
-      if (!L.inside[c] || L.owner[c] >= 0) break;
-    }
-    return d;
-  };
   const laneDark = (d) => Math.max(1, Math.min(10, Math.round(10 - (d - 2) * 1.4)));
 
   const atlas = new SignAtlas();
@@ -134,10 +145,8 @@ export function buildLevels(L) {
         let fr = wallFrame(e);
         if (fr.len < 0.05) return;
         const facing = facingOf(e.other);
-        const lw = facing === 'alley' && k < 8 ? laneWidth(fr) : 0;
-        // From 2/F up, some buildings overhang the lanes (p131); the lane below stays at least
-        // a metre wide.
-        const ov = facing === 'alley' && k >= 2 && lw >= 2.2 && hash2(b.id, 13) < 0.5 ? Math.min(0.6, (lw - 1.2) / 2) : 0;
+        const lw = facing === 'alley' && k < 8 ? laneWidth(L, fr) : 0;
+        const ov = overhang(b, k, lw);
         if (ov) {
           const A = [fr.A[0] + fr.n[0] * ov, fr.A[1] + fr.n[1] * ov], Bq = [fr.B[0] + fr.n[0] * ov, fr.B[1] + fr.n[1] * ov];
           const pi = info(K.plain), shade = facade[b.id].clone().multiplyScalar(0.7);
