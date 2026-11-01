@@ -213,6 +213,11 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
   <li><span class="st prov">KOWLOON</span>The grey blocks round the City and their heights. They hold the place of the
     real buildings, which the model does not draw yet. The colours of the sky and the haze at each height of the sun.</li>
+  <li><span class="st prov">BUILDING</span>What a click selects as one building: a tower of the 1987 plan (p134), and
+    the 17 halls of the Yamen as one. This gives 270 buildings. The plan fits the traced plots only approximately,
+    thus a tower can differ from the real building. Each building has the same plots on each storey. Suenn Ho's
+    drawing on p137 shows a building whose upper storeys grow over its neighbours; the model has no such
+    building.</li>
 </ul>
 
 <h4>Sound, from primary sources</h4>
