@@ -45,7 +45,8 @@ const OVER = 0.08; // over the section, or over the top of a storey
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // The road names: two names of one road are at least SAME_ROAD metres apart. A name goes only
 // where the camera sees nine tenths of the road under it (SEEN), and where other roads cross
-// under no more than a third of it (CROSSED). ROAD_AGAIN: the seconds between two tests of what
+// under no more than a third of it (CROSSED). It goes behind a ghost only if no place in clear
+// view fits: the dither of the ghost blurs the small Chinese letters. ROAD_AGAIN: the seconds between two tests of what
 // the camera sees, while the view moves; ROAD_MS: the milliseconds of a test in each frame.
 const SAME_ROAD = 240, SEEN = 0.9, CROSSED = 0.34, ROAD_AGAIN = 0.12, ROAD_MS = 3;
 // The level of a road name for the dim of the layered view (dim.js): above all storeys, thus it
@@ -315,13 +316,13 @@ export class Labels {
   addRoad(run) {
     const en = run.name.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').toUpperCase();
     const prefix = (a) => { const p = new Uint16Array(run.n + 1); for (let i = 0; i < run.n; i++) p[i + 1] = p[i] + a[i]; return p; };
-    // The roads nearest the City go first. bad and crossed: running counts of the points that
-    // the camera does not see (seeRoads; none is seen before the first test), and of the points
-    // at a junction. at: the point of
+    // The roads nearest the City go first. bad, veiled and crossed: running counts of the points
+    // that the camera does not see, and that it does not see clear (seeRoads; none is seen
+    // before the first test), and of the points at a junction. at: the point of
     // the run under the middle of the name, -1 for none.
     const lb = this.add('road', drawPlate(`${run.nameZh ? `${run.nameZh} ` : ''}${en}`), {
       prio: 4 - run.near / 1000, solid: true, run, k: 0, y: OVER, x: run.x[run.home], z: run.z[run.home],
-      axis: [run.tx[run.home], run.tz[run.home]], bad: prefix(new Uint8Array(run.n).fill(1)), crossed: prefix(run.cross), at: -1, ver: -1, retry: 0,
+      axis: [run.tx[run.home], run.tz[run.home]], bad: prefix(new Uint8Array(run.n).fill(1)), veiled: prefix(new Uint8Array(run.n).fill(1)), crossed: prefix(run.cross), at: -1, ver: -1, retry: 0,
     });
     this.roads.push(lb);
   }
@@ -423,19 +424,23 @@ export class Labels {
 
   // Which points of each road the camera sees: the point in the middle of the road and a point
   // to each side of it, a quarter of the height of its name away (thus the words). A point of the
-  // road is bad if the camera does not see one of the three. A test (pass) runs over a few
+  // road is bad if the camera does not see one of the three, and veiled if it sees one only
+  // through a ghost. A test (pass) runs over a few
   // frames, ROAD_MS milliseconds in each; it holds the view at its start. Returns true when the
   // test is done.
   seeRoads(pass) {
     const { ux, uz, k, city, size } = pass, t0 = performance.now();
-    const see = (x, z) => this.sight.seen(x, OVER, z, ux, uz, k, this.ghost, city);
+    const look = (x, z) => this.sight.look(x, OVER, z, ux, uz, k, this.ghost, city);
     while (pass.next < this.roads.length) {
-      const lb = this.roads[pass.next++], R = lb.run, bad = lb.bad;
+      const lb = this.roads[pass.next++], R = lb.run, { bad, veiled } = lb;
       for (let i = 0; i < R.n; i++) {
         const x = R.x[i], z = R.z[i], nx = -R.tz[i], nz = R.tx[i];
         const off = Math.max(1, (0.25 * lb.h * size) / fsOf(nx, nz));
-        const ok = see(x, z) && see(x + nx * off, z + nz * off) && see(x - nx * off, z - nz * off);
-        bad[i + 1] = bad[i] + (ok ? 0 : 1);
+        let v = look(x, z);
+        if (v < 2) v = Math.max(v, look(x + nx * off, z + nz * off));
+        if (v < 2) v = Math.max(v, look(x - nx * off, z - nz * off));
+        bad[i + 1] = bad[i] + (v === 2 ? 1 : 0);
+        veiled[i + 1] = veiled[i] + (v >= 1 ? 1 : 0);
       }
       if (performance.now() - t0 > ROAD_MS) return false;
     }
@@ -461,8 +466,10 @@ export class Labels {
   }
 
   // The place of a road name in this frame: where it was, if it still fits there, or else the
-  // point nearest its home where it fits. After a new test of what the camera sees, it moves to
-  // a point that is 20 m or more nearer home, if there is one. It fits where the road runs
+  // point nearest its home where it fits. A place in clear view goes before a place behind a
+  // ghost. After a new test of what the camera sees, a name in clear view moves to a point in
+  // clear view that is 20 m or more nearer home, if there is one; a name behind a ghost moves
+  // to a point in clear view, if there is one. It fits where the road runs
   // straight for the length of the name, the camera sees nine tenths of the road under it, its
   // middle is not at a junction, it is on the screen and clear of the labels before it, and no
   // name of the same road is near. It keeps clear of the panels (view.panels, rects on the
@@ -470,10 +477,11 @@ export class Labels {
   // shown: the places of the road names so far in this frame, by name.
   placeRoad(lb, size, camera, view, boxes, shown) {
     const R = lb.run, others = shown.get(R.name) || [];
-    const fit = (i) => {
+    // clear: the camera sees the road there clear of the ghosts
+    const fit = (i, clear) => {
       if (i < 0 || i >= R.n || R.cross[i]) return null;
-      const m = Math.ceil((lb.w * size) / fsOf(R.tx[i], R.tz[i]) / 2 / NAME_STEP), a = i - m, b = i + m;
-      if (a < 0 || b >= R.n || lb.bad[b + 1] - lb.bad[a] > (1 - SEEN) * (2 * m + 1) || lb.crossed[b + 1] - lb.crossed[a] > CROSSED * (2 * m + 1)) return null;
+      const m = Math.ceil((lb.w * size) / fsOf(R.tx[i], R.tz[i]) / 2 / NAME_STEP), a = i - m, b = i + m, hid = clear ? lb.veiled : lb.bad;
+      if (a < 0 || b >= R.n || hid[b + 1] - hid[a] > (1 - SEEN) * (2 * m + 1) || lb.crossed[b + 1] - lb.crossed[a] > CROSSED * (2 * m + 1)) return null;
       const ex = R.x[b] - R.x[a], ez = R.z[b] - R.z[a], l = Math.hypot(ex, ez) || 1, tol = Math.max(2, R.hw[i]);
       for (let q = a + 1; q < b; q++) if (Math.abs((R.x[q] - R.x[a]) * ez - (R.z[q] - R.z[a]) * ex) / l > tol) return null;
       const x = R.x[i], z = R.z[i], ax = ex / l, az = ez / l;
@@ -482,18 +490,22 @@ export class Labels {
       const quad = screenQuad(camera, view, x, lb.y, z, ax, az, (lb.w * size) / fsOf(ax, az), (lb.h * size) / fsOf(az, -ax));
       if (quad.some(([u, v]) => u < 0 || v < 0 || u > view.w || v > view.h) || boxes.some((q) => overlap(q, quad, 3))) return null;
       for (const p of view.panels || []) if (overlap([[p.left, p.top], [p.right, p.top], [p.right, p.bottom], [p.left, p.bottom]], quad, 3)) return null;
-      return { i, x, z, ax, az };
+      return { i, x, z, ax, az, clear };
+    };
+    const H = R.home;
+    const search = (clear, far) => {
+      for (let d = 0; d < far; d += 3) {
+        const got = fit(H - d, clear) || (d ? fit(H + d, clear) : null);
+        if (got) return got;
+      }
+      return null;
     };
     const fresh = lb.ver !== this.road.ver;
     lb.ver = this.road.ver;
-    let at = lb.at >= 0 ? fit(lb.at) : null;
+    let at = lb.at >= 0 ? fit(lb.at, true) || fit(lb.at, false) : null;
     if (!at || fresh) {
       if (!at && !fresh && this.frame < lb.retry) return false;
-      const H = R.home, far = at ? Math.abs(lb.at - H) - 10 : R.n;
-      for (let d = 0; d < far; d += 3) {
-        const got = fit(H - d) || (d ? fit(H + d) : null);
-        if (got) { at = got; break; }
-      }
+      at = search(true, at && at.clear ? Math.abs(lb.at - H) - 10 : R.n) || at || search(false, R.n);
       // a name that fits nowhere looks again a few frames on
       if (!at) { lb.at = -1; lb.retry = this.frame + 8; return false; }
     }

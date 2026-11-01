@@ -177,6 +177,12 @@ export class Sight {
   // building that the ray goes through. city: { x0, z0, W, D, top, max }, the height of the City
   // on each of its cells of a metre (top) and the greatest (max); or null.
   seen(x, y, z, ux, uz, k, ghost, city) {
+    return this.look(x, y, z, ux, uz, k, ghost, city) < 2;
+  }
+
+  // As seen, but with three answers: 0 if the camera sees the point clear, 1 if it sees the point
+  // only through a ghost, 2 if a building that is not a ghost, or the City, hides it.
+  look(x, y, z, ux, uz, k, ghost, city) {
     const { n, cell, h } = this;
     let end = (this.top - y) / k;
     // the part of the ray over the box of the City
@@ -190,18 +196,22 @@ export class Sight {
       }
       if (c0 <= c1) end = Math.max(end, c1);
     }
+    let veil = 0;
     for (let t = 0; t <= end; t += 1) {
       const px = x + ux * t, pz = z + uz * t, py = y + k * t;
       const i = Math.floor((px + SIGHT_R) / SIGHT_RES), j = Math.floor((pz + SIGHT_R) / SIGHT_RES);
       if (i >= 0 && j >= 0 && i < n && j < n) {
         const b = cell[j * n + i];
-        if (b >= 0 && !ghost[b] && h[b] > py) return false;
+        if (b >= 0 && h[b] > py) {
+          if (!ghost[b]) return 2;
+          veil = 1;
+        }
       }
       if (t >= c0 && t <= c1) {
         const ci = Math.floor(px - city.x0), cj = Math.floor(pz - city.z0);
-        if (ci >= 0 && cj >= 0 && ci < city.W && cj < city.D && city.top[cj * city.W + ci] > py) return false;
+        if (ci >= 0 && cj >= 0 && ci < city.W && cj < city.D && city.top[cj * city.W + ci] > py) return 2;
       }
     }
-    return true;
+    return veil;
   }
 }
