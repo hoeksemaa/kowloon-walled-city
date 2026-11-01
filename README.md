@@ -21,8 +21,13 @@ python3 serve.py 8173
   all. A line marks its outline on each storey, and a faint line shows the outline through the
   buildings in front. The building takes a light warm tint, and the rest of the city keeps its
   light. In the layered view each storey has its own outline, and in a cut the line runs at the
-  section. Point at a building to see its name and storeys, and point at the selected building
-  to see its floors.
+  section. Point at a building to see its name and storeys.
+- **Building panel.** The selected building has a panel at the foot of the screen, with facts
+  about the building only and no list of people. It gives the name, the storeys, the footprint,
+  the blocks with their addresses, and the use of each storey in the colours of the legend. It
+  also gives the premises of the clearance files and the book, the flats and the number of
+  simulated residents. It gives the stairs, the links to other buildings and the sources. Click a
+  storey in the panel to cut the city there, or click the x to deselect the building.
 - **Clicks.** A click on a label opens its card. Else a click tests a person first, then a
   building. Only one thing at a time is selected: a click on a person deselects the building,
   and a click on a building deselects the person. A click on the ground or the sky deselects

@@ -154,7 +154,7 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
   <li><span class="st prov">TRADE</span>The 459 premises fill 268 floors, and the places of the book fill 4 more.
     Each workshop room counts as one business, and 280 more floors get a trade from the 1983 mix, until the
     count is 645. No file records
-    them. The tooltip marks each one with *, and the floor-use highlight of the legend draws a dashed outline
+    them. The panel of a building marks each one with *, and the floor-use highlight of the legend draws a dashed outline
     round each.</li>
   <li><span class="st prov">PLACE</span>Where each premises sits on its street: the order of its house number.</li>
   <li><span class="st prov">STOREY</span>3.05 m for each storey, a usual Hong Kong tenement storey. No measured
@@ -217,7 +217,8 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     the 17 halls of the Yamen as one. This gives 270 buildings. The plan fits the traced plots only approximately,
     thus a tower can differ from the real building. Each building has the same plots on each storey. Suenn Ho's
     drawing on p137 shows a building whose upper storeys grow over its neighbours; the model has no such
-    building.</li>
+    building. The panel of a building gives the file addresses of its blocks as its name. If no file gives an
+    address, the name is the house number of its place on the street, after "near", or else a number.</li>
 </ul>
 
 <h4>Sound, from primary sources</h4>

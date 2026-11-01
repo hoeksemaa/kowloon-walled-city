@@ -108,7 +108,7 @@ const NAMES = {
 export function buildingName(b) {
   if (b.kind === 'yamen') return 'the Yamen';
   if (NAMES[b.name]) return NAMES[b.name];
-  const base = b.towerName || `bldg ${b.tower}`;
+  const base = b.towerName || `Building ${b.tower}`;
   return b.block ? `${b.block}, ${base}` : base;
 }
 
@@ -126,11 +126,24 @@ export function blocksOf(L, id) {
   return B[L.yamenId].tower === id ? B.filter((b) => b.kind === 'yamen').map((b) => b.id) : L.towers[id].blocks;
 }
 
-// The name of building id: a named place, else the address or place of its tower.
+// The file addresses of the blocks of building id, one street at a time, in house-number
+// order: "6-8, 10A Tung Tau Tsuen Road". Empty if no file names a block.
+export function bldgAddresses(L, id) {
+  const by = new Map();
+  for (const p of blocksOf(L, id)) {
+    const a = L.buildings[p].addr;
+    if (a) by.set(a.street, [...(by.get(a.street) || []), a.num]);
+  }
+  const n = (t) => parseInt(t, 10) || 0;
+  return [...by].map(([s, nums]) => `${[...new Set(nums)].sort((x, y) => n(x) - n(y) || (x < y ? -1 : 1)).join(', ')} ${s}`).join(' · ');
+}
+
+// The name of building id: a named place, else the file addresses of its blocks, else the
+// place of its tower by house-number order ("near ..."), else its number.
 export function bldgName(L, id) {
   const bs = blocksOf(L, id).map((p) => L.buildings[p]), named = bs.find((b) => NAMES[b.name]);
   if (bs[0].kind === 'yamen') return 'the Yamen';
-  return named ? NAMES[named.name] : bs[0].towerName || `bldg ${id}`;
+  return named ? NAMES[named.name] : bldgAddresses(L, id) || L.towers[id].name || `Building ${id}`;
 }
 
 // The outline of building id on storey k: each edge { e, b } of a ring of its block b that
@@ -322,7 +335,8 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
   // One height for each tower, at its centre. On Tung Tau Tsuen Road, buildings were
   // "rising 12 storeys and more – the maximum height possible for buildings on this, the
   // northern side of the City" in 1972 (p132), and "a 14-storey building appeared on Tung
-  // Tau Tsuen Road in 1975" (p336).
+  // Tau Tsuen Road in 1975" (p336). t.storeysFrom says where the height of tower t comes
+  // from: 'south' (the elevation), 'p132', 'p336', 'hut' or 'photos' (INFERRED).
   let north14 = false;
   for (const t of towers) {
     const bs = t.blocks.map((id) => buildings[id]).filter((b) => b.floors === undefined);
@@ -334,14 +348,19 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     // Rim height: the south profile, carried north with noise; lower toward the Yamen.
     let f = profileAt(cx) - 0.5 + 2.4 * (vnoise(cx / 30, cz / 30, 3) - 0.5) + 1.6 * (vnoise(cx / 9, cz / 9, 7) - 0.5);
     f -= 5.5 * (1 - clamp((dy - 16) / 34, 0, 1));
+    let from = 'photos';
     const southRow = bs.some((b) => b.front === 'road' && b.cz > bz1 - 22);
-    if (southRow) f = profileAt(cx) - 0.3 - (rng() < 0.25 ? 1 : 0);
+    if (southRow) { f = profileAt(cx) - 0.3 - (rng() < 0.25 ? 1 : 0); from = 'south'; }
     const north = bs.some((b) => b.front === 'top');
-    if (north) f = !north14 && n > 120 && rng() < 0.2 ? ((north14 = true), 14) : 12 + (rng() < 0.4 ? 1 : 0);
+    if (north) {
+      f = !north14 && n > 120 && rng() < 0.2 ? ((north14 = true), 14) : 12 + (rng() < 0.4 ? 1 : 0);
+      from = f === 14 ? 'p336' : 'p132';
+    }
     let kind = 'tenement';
-    if (bs.every((b) => b.hut)) { f = 1 + (rng() < 0.3 ? 1 : 0); kind = 'low'; }
+    if (bs.every((b) => b.hut)) { f = 1 + (rng() < 0.3 ? 1 : 0); kind = 'low'; from = 'hut'; }
     else if (!southRow && !north && rng() < 0.07 && n < 120) { f = 2 + rng() * 3; kind = 'low'; }
-    else if (!north && f >= 13.5 && rng() < 0.15) f = 15;
+    else if (!north && f >= 13.5 && rng() < 0.15) { f = 15; from = 'photos'; }
+    t.storeysFrom = from;
     const floors = clamp(Math.round(f), 1, MAX_FLOORS);
     for (const b of bs) {
       b.floors = floors;
@@ -578,7 +597,11 @@ function placePremises(L, biz, rng) {
         b.prem[floor].use = TRADE_USE[p.trade] || 'works';
         b.uses[floor] = b.prem[floor].use;
       }
-      if (!b.address || fixed) b.address = `${p.numText} ${biz.streets[s].replace(/\s*[㐀-鿿]+$/, '')}`;
+      // Some files write the number as "No. 12"; the address drops the "No.".
+      if (!b.address || fixed) {
+        b.addr = { num: p.numText.replace(/^No\.?\s*/i, ''), street: biz.streets[s].replace(/\s*[㐀-鿿]+$/, '') };
+        b.address = `${b.addr.num} ${b.addr.street}`;
+      }
     }
   }
 }

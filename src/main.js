@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
-import { buildLayout, buildingName, bldgOf, bldgName, blocksOf, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL } from './layout.js';
+import { buildLayout, buildingName, bldgOf, bldgName, blocksOf, STOREY, MAX_FLOORS, USE_LABEL } from './layout.js';
 import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
@@ -15,6 +15,7 @@ import { Post } from './post.js';
 import { Lamps } from './lamps.js';
 import { USE, UseMap, withUse } from './useMap.js';
 import { Outline } from './select.js';
+import { panelHtml, premLine } from './panel.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, Lighting } from './env.js';
@@ -325,14 +326,65 @@ function setCut(c) {
   wires.update(offsets, c);
   renderRail();
   renderLegend();
+  renderPanel();
 }
 
-// Select building id (bldgOf), or none with -1. It takes a light warm tint (cityMesh.js) and an
-// outline on each storey (select.js); the rest of the city keeps its light.
+// Select building id (bldgOf), or none with -1. It takes a light warm tint (cityMesh.js), an
+// outline on each storey (select.js) and the panel of its facts (panel.js); the rest of the
+// city keeps its light.
 function selectBuilding(id) {
   state.selBld = id;
   shared.uSel.value = id >= 0 ? id : NO_HI;
   outline.show(id, state.cut);
+  renderPanel();
+}
+
+// The panel of the selected building, at the foot of the screen.
+function renderPanel() {
+  const el = $('bld');
+  el.hidden = state.selBld < 0;
+  if (el.hidden) { delete el.dataset.id; return; }
+  // The same building keeps its scroll, and the storey row with the keyboard focus keeps it.
+  const body = $('bld-body'), top = body.scrollTop, same = el.dataset.id === String(state.selBld);
+  const focus = same && body.contains(document.activeElement) && document.activeElement.dataset.k;
+  body.innerHTML = panelHtml(L, state.selBld, residents, state.cut);
+  body.scrollTop = same ? top : 0;
+  if (focus) body.querySelector(`[data-k="${focus}"]`).focus();
+  el.dataset.id = state.selBld;
+  placePanel();
+}
+
+// The panel goes in the free space at the foot of the screen: beside the clock, clear of the
+// legend; or, on a narrow screen, above the clock and clear of the toolbar. It never covers the
+// clock or the rail, and a long panel scrolls. While the game (Find them) is open, the panel
+// stays right of it.
+function placePanel() {
+  const el = $('bld');
+  if (el.hidden) return;
+  const box = (id) => $(id).getBoundingClientRect();
+  const clock = box('clock'), rail = box('rail'), tools = box('toolbar'), legend = box('legend');
+  const game = $('game').hidden ? null : box('game');
+  const s = el.style, gap = 14;
+  const right = (legend.width ? Math.min(legend.left, rail.left) : rail.left) - gap;
+  const from = Math.max(clock.right, game ? game.right : 0) + gap;
+  if (right - from >= 240) {
+    Object.assign(s, { left: `${from}px`, width: `${Math.min(440, right - from)}px`, bottom: `${gap}px` });
+    s.maxHeight = `${Math.min(innerHeight * 0.5, innerHeight - 120)}px`;
+  } else if (game && rail.left - game.right >= 256) {
+    // Right of the game, under the title and the hint, and above the legend.
+    const left = game.right + 8, top = Math.max(box('title').bottom, box('hint').bottom) + 8;
+    const bottom = legend.width ? innerHeight - legend.top + 8 : gap;
+    Object.assign(s, { left: `${left}px`, width: `${Math.min(440, rail.left - 8 - left)}px`, bottom: `${bottom}px` });
+    s.maxHeight = `${Math.max(120, Math.min(innerHeight * 0.5, innerHeight - bottom - top))}px`;
+  } else {
+    // Above the clock, as wide as the clock. If that leaves too little room under the toolbar,
+    // the panel moves right of the toolbar, under the title and the hint.
+    const bottom = innerHeight - clock.top + 8;
+    let left = clock.left, top = tools.bottom + 8;
+    if (innerHeight - bottom - top < 150) { left = tools.right + 8; top = Math.max(box('title').bottom, box('hint').bottom) + 8; }
+    Object.assign(s, { left: `${left}px`, width: `${Math.min(rail.left - 8, clock.right) - left}px`, bottom: `${bottom}px` });
+    s.maxHeight = `${Math.max(120, innerHeight - bottom - top)}px`;
+  }
 }
 
 // ---- floor-use highlight (useMap.js) ----------------------------------------------------------
@@ -459,12 +511,19 @@ function buildUI() {
     $('game').hidden = !$('game').hidden;
     if ($('game').hidden) closeCase();
     renderGame();
+    placePanel();
     return !$('game').hidden;
   });
   $('game-close').onclick = () => $('t-find').click();
   $('rail-clear').onclick = () => setCut(-1);
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
+  // The panel of the selected building: the x deselects it, and a storey cuts the city there.
+  $('bld-close').onclick = () => selectBuilding(-1);
+  $('bld-body').addEventListener('click', (ev) => {
+    const el = ev.target.closest && ev.target.closest('[data-k]');
+    if (el) setCut(+el.dataset.k === state.cut ? -1 : +el.dataset.k);
+  });
 
   $('speeds').querySelectorAll('button').forEach((b, i) => {
     const s = SPEEDS[i], t = s ? `${s}×: ${s === 1 ? 'real time' : `a day in ${dayIn(s)}`} (${i})` : 'Pause (Space)';
@@ -650,6 +709,7 @@ function renderLegend() {
   $('legend').innerHTML = g.join('');
   if (focusKey) { const el = $('legend').querySelector(`[data-key="${focusKey}"]`); if (el) el.focus(); }
   showUse();
+  placePanel(); // the legend can change its width
 }
 
 function drawSpark() {
@@ -686,52 +746,13 @@ function hideTooltip() {
   labels.light(null);
 }
 
-function buildingTooltip(b, k) {
-  const B = L.buildings[b];
-  if (B.kind === 'yamen')
-    return `<div class="tt-h">YAMEN 衙門 · HALL</div><div>Qing-era official compound, the one old building left in the city</div><div>in the 1980s: old people’s centre (老人中心), per the exhibit plan</div><div class="tt-s">walls and roof from the traced plot · roof form is generic</div>`;
-  const runs = [];
-  for (let f = 0; f < B.floors; f++) {
-    const u = B.uses[f], inf = !!(B.inferred && B.inferred[f]);
-    const last = runs[runs.length - 1];
-    if (last && last.u === u && last.inf === inf && !B.prem[f]) last.to = f;
-    else runs.push({ u, inf, from: f, to: f });
-  }
-  const rows = runs
-    .map((r) => `<div><span class="tt-k">${r.from === r.to ? levelName(r.from) : `${levelName(r.from)}–${levelName(r.to)}`}</span> ${USE_LABEL[r.u]}${r.inf ? ' *' : ''}${r.u === 'home' ? ` · ${B.flats} per floor` : ''}</div>`)
-    .join('');
-  const recs = [], bookRecs = [];
-  for (const f of Object.keys(B.prem).map(Number).sort((x, y) => x - y))
-    for (const p of B.prem[f]) (p.refs ? recs : bookRecs).push(`<div class="tt-r"><span class="tt-k">${levelName(f)}</span> ${premLine(p)}</div>`);
-  const prem = (recs.length ? `<div class="tt-s">in the clearance files (GRS HKRS1255-3):</div>${recs.slice(0, 6).join('')}${recs.length > 6 ? `<div class="tt-s">and ${recs.length - 6} more</div>` : ''}` : '')
-    + (bookRecs.length ? `<div class="tt-s">in City of Darkness Revisited (2014), place by address:</div>${bookRecs.join('')}` : '');
-  const title = buildingName(B).toUpperCase();
-  const front = B.front === 'top' ? '<div class="tt-s">fronts Tung Tau Tsuen Road</div>' : B.front === 'road' ? '<div class="tt-s">fronts a road on the old wall base</div>' : '';
-  const fact = B.factory ? '<div class="tt-s">factory site marked on the exhibit plan</div>' : '';
-  const inf = B.inferred ? '<div class="tt-s">* trade inferred from the Kai Fong count of 1983, not from a file</div>' : '';
-  return `<div class="tt-h">${title} · ${B.floors} STOREY${B.floors > 1 ? 'S' : ''}</div>${rows}${prem}${front}${fact}
-    <div class="tt-s">≈ ${residents.get(b) || 0} residents (simulated) · pointing at ${levelName(k)}</div>${inf}
-    <div class="tt-s">plot from the 1980s plan${B.block ? `, one of ${L.towers[B.tower].blocks.length} blocks of a tower on the 1987 plan` : ''} · ${B.front === 'road' && B.cz > 0 ? 'storeys from the 1990 south elevation' : B.front === 'top' ? '“12 storeys and more” on this road (p132)' : 'storeys inferred from photos'} · place on street from house-number order</div>
-    <div class="tt-s">${B.cores.length ? `${B.cores.length} stair${B.cores.length > 1 ? 's' : ''}` : B.shareWith >= 0 ? 'no stair: shares the stair of the next block' : 'no stair drawn'} · cut a storey to see the plan</div>`;
-}
-
-// The box of a building under the pointer: its name and storeys. Once it is selected, the box
-// gives the facts of the block under the pointer (buildingTooltip).
-function hoverTooltip(b, k) {
-  const id = bldgOf(L, b);
-  if (id === state.selBld) return buildingTooltip(b, k) + clickLine(id);
-  const n = Math.max(...blocksOf(L, id).map((p) => L.buildings[p].floors));
+// The box of a building under the pointer: its name and storeys. The panel (panel.js) gives the
+// facts of the selected building.
+function hoverTooltip(b) {
+  const id = bldgOf(L, b), n = Math.max(...blocksOf(L, id).map((p) => L.buildings[p].floors));
   return `<div class="tt-h">${bldgName(L, id).toUpperCase()} · ${n} STOREY${n > 1 ? 'S' : ''}</div>${clickLine(id)}`;
 }
 const clickLine = (id) => `<div class="tt-s">${id === state.selBld ? 'click to deselect the building' : 'click to select the building and see its floors'}</div>`;
-
-// One premises of a floor: its names and trade, and the page of the book that names it. The
-// trade is left out when the name says it.
-function premLine(p) {
-  const book = p.book ? ` · <span class="tt-book">BOOK p${p.page}</span>${p.inferred ? ' (INFERRED for 1986)' : ''}` : '';
-  const trade = TRADE_LABEL[p.trade] || '';
-  return `${p.nameZh || ''} ${p.nameEn || ''} <i>${(p.nameEn || '').toLowerCase().includes(trade.toLowerCase()) ? '' : trade}</i>${book}`;
-}
 
 // A unit of the cut storey: its name, size, and who lives or works there.
 function unitTooltip(bid, f, cell) {
@@ -810,7 +831,7 @@ function updateHover() {
     const id = bldgOf(L, hit.b);
     shared.uHi.value = id;
     const unit = hit.k === state.cut ? unitTooltip(hit.b, hit.k, hit.cell) : null;
-    showTooltip(unit ? unit + clickLine(id) : hoverTooltip(hit.b, hit.k));
+    showTooltip(unit ? unit + clickLine(id) : hoverTooltip(hit.b));
   } else hideTooltip();
 }
 
@@ -918,6 +939,7 @@ function resize() {
   useMap.setResolution(w, h);
   toolbarBox = $('toolbar').getBoundingClientRect();
   outline.setResolution(w, h);
+  placePanel();
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
