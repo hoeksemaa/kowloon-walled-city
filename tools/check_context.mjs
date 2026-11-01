@@ -268,7 +268,7 @@ console.log(`exits: ${L.away.length}, each on a road or the street; ${walks} wal
         if (!seen[b] && occ.hide[b]) extra++;
       }
     }
-  console.log(`ghosts: ${views} views, ${(faded / views).toFixed(1)} buildings faded in a view (mean); ${missed} missed; ${extra} faded with no wall point hidden; the test takes ${(ms / views).toFixed(2)} ms a view`);
+  console.log(`ghosts: ${views} views, ${(faded / views).toFixed(1)} buildings faded in a view (mean); ${missed} missed; ${extra} faded with no wall point hidden; the test takes ${(ms / views).toFixed(2)} ms a view in node, with the warm-up`);
 }
 
 if (problems.length) {

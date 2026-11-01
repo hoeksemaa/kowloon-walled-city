@@ -196,10 +196,11 @@ const CTX_FRAG = `uniform float uNight; uniform float uLit; uniform float uOpen;
 float ctxIgn(vec2 p) { return fract(52.9829189 * fract(dot(p, vec2(0.06711056, 0.00583715)))); }
 float ctxHash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }`;
 const CTX_OPEN = 'if (vCtx.w > 0.5 && ctxIgn(gl_FragCoord.xy) < 0.85 * uOpen) discard;';
-// The ghost: vGhost is the fade of the building (0 solid, 1 a ghost), from its texel of uGhost.
-// GHOST_W: the texels in a row of uGhost. GHOST_EASE: the seconds of the fade (Ghosts, below).
+// The ghost (Ghosts, below): vGhost is the fade of the building, 0 solid and 1 a ghost, from
+// its texel of uGhost. GHOST_W: the texels in a row of uGhost. GHOST_EASE: the seconds of the
+// fade. The ghost and the fade of the layered view use the same dither, thus the stronger one
+// wins. The shadow pass (CONTEXT_DEPTH) has no ghost.
 const GHOST_W = 64, GHOST_EASE = 0.25;
-// The ghost and the fade of the layered view use the same dither, thus the stronger one wins.
 const GHOST_VERT = ['#include <common>', `#include <common>
 attribute float aCtxId; uniform sampler2D uGhost; uniform float uClock; varying float vGhost;`, '#include <begin_vertex>', `#include <begin_vertex>
 int ghostId = int(aCtxId + 0.5);
