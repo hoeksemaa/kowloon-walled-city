@@ -130,7 +130,8 @@ composite. A detail that no source records is marked inferred.</p>
     ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Each building stands from the ground
     to its height. In the data, 613 heights are from the building data, or storeys × 2.9 m; the other 652 are inferred, and
     the data marks each one. Mei Tung House 美東樓 (12 storeys, 1974), the long slab across Tung Tau Tsuen Road,
-    stands whole. Tung Tau Estate Block 22 (16 storeys, 1965) stands across Tung Tsing Road, and on December
+    stands whole. A building that hides a part of the city fades to a faint ghost, so that the city stays in
+    view. Its shadow does not change. Tung Tau Estate Block 22 (16 storeys, 1965) stands across Tung Tsing Road, and on December
     mornings its shadow can reach the east face of the city. The roads are at their widths on the 1987 sheets.
     The open ground is the cleared ground of Sai Tau Tsuen, the building sites, the market and the football
     field. The fit of the city on the 1987 sheet also gives the bearing of the model: 63.6°, not 60°. Thus north,

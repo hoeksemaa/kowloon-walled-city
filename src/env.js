@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { OUTSIDE } from './footprint.js';
 import { mulberry32, clamp, smoothstep } from './util.js';
 import { withDim } from './dim.js';
-import { drawnBuildings, buildStreet, ROAD_WIDTH } from './context.js';
+import { buildingPrisms, buildStreet, ROAD_WIDTH } from './context.js';
 
 // The haze (main.js): all is clear out to FADE_NEAR metres from the centre of the city, then
 // fades slowly into the sky, and is gone at FADE_FAR. Nothing is drawn beyond.
@@ -63,9 +63,11 @@ export function buildEnvironment(scene, L, ctx) {
   const hull = convexHull(L.inside, L);
   const road = offsetConvex(hull, 10.5);
 
-  group.add(buildRoads(ctx.roads), buildOpenGround(ctx.openGround), buildContextCity(L, ctx));
+  const prisms = buildingPrisms(ctx);
+  group.add(buildRoads(ctx.roads), buildOpenGround(ctx.openGround), buildContextCity(L, prisms));
   scene.add(group);
-  return { group, roadOutline: road, street };
+  // prisms: the real buildings as solids (context.js); ghosts: their fade to a ghost.
+  return { group, roadOutline: road, street, prisms, ghosts: new Ghosts(prisms.length) };
 }
 
 // A geometry of flat triangles at the ground, all facing up: [x, y, z] in a flat list.
@@ -183,8 +185,9 @@ const SODIUM = new THREE.Color('#cfb272');
 // uNight: the light of the city (Lighting). uLit: the share of the windows lit at this hour.
 // uOpen: the layered view (main.js). A building that stands partly in the box of the City
 // (Mei Tung House) fades to a faint dither as the storeys open, so that the slabs of the
-// storeys do not cut through it.
-export const CONTEXT_U = { uNight: { value: 0 }, uLit: { value: 0 }, uOpen: { value: 0 } };
+// storeys do not cut through it. uGhost and uClock: the ghosts of the buildings that hide the
+// City (Ghosts, below).
+export const CONTEXT_U = { uNight: { value: 0 }, uLit: { value: 0 }, uOpen: { value: 0 }, uGhost: { value: null }, uClock: { value: 0 } };
 // aCtx: [metres along the walls, seed of the building, 1 on a wall (0 on a roof), 1 in the box].
 const CTX_VERT = ['#include <common>', `#include <common>
 attribute vec4 aCtx; varying vec4 vCtx; varying float vCtxY;`, '#include <begin_vertex>', `#include <begin_vertex>
@@ -193,14 +196,27 @@ const CTX_FRAG = `uniform float uNight; uniform float uLit; uniform float uOpen;
 float ctxIgn(vec2 p) { return fract(52.9829189 * fract(dot(p, vec2(0.06711056, 0.00583715)))); }
 float ctxHash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }`;
 const CTX_OPEN = 'if (vCtx.w > 0.5 && ctxIgn(gl_FragCoord.xy) < 0.85 * uOpen) discard;';
+// The ghost (Ghosts, below): vGhost is the fade of the building, 0 solid and 1 a ghost, from
+// its texel of uGhost. GHOST_W: the texels in a row of uGhost. GHOST_EASE: the seconds of the
+// fade. The ghost and the fade of the layered view use the same dither, thus the stronger one
+// wins. The shadow pass (CONTEXT_DEPTH) has no ghost.
+const GHOST_W = 64, GHOST_EASE = 0.25;
+const GHOST_VERT = ['#include <common>', `#include <common>
+attribute float aCtxId; uniform sampler2D uGhost; uniform float uClock; varying float vGhost;`, '#include <begin_vertex>', `#include <begin_vertex>
+int ghostId = int(aCtxId + 0.5);
+vec4 ghost = texelFetch(uGhost, ivec2(ghostId % ${GHOST_W}, ghostId / ${GHOST_W}), 0);
+vGhost = mix(ghost.x, ghost.y, smoothstep(ghost.z, ghost.z + ${GHOST_EASE.toFixed(2)}, uClock));`];
+const CTX_GHOST = 'if (ctxIgn(gl_FragCoord.xy) < 0.85 * max(vGhost, vCtx.w * uOpen)) discard;';
 CONTEXT_MAT.onBeforeCompile = (s) => {
   Object.assign(s.uniforms, CONTEXT_U);
-  s.vertexShader = s.vertexShader.replace(CTX_VERT[0], CTX_VERT[1]).replace(CTX_VERT[2], CTX_VERT[3]);
+  s.vertexShader = s.vertexShader.replace(CTX_VERT[0], CTX_VERT[1]).replace(CTX_VERT[2], CTX_VERT[3])
+    .replace(GHOST_VERT[0], GHOST_VERT[1]).replace(GHOST_VERT[2], GHOST_VERT[3]);
   s.fragmentShader = s.fragmentShader
     .replace('#include <common>', `#include <common>
-${CTX_FRAG}`)
+${CTX_FRAG}
+varying float vGhost;`)
     .replace('void main() {', `void main() {
-  ${CTX_OPEN}`)
+  ${CTX_GHOST}`)
     .replace('#include <normal_fragment_begin>', `#include <normal_fragment_begin>
 normal = normalize(mix(normal, normalize(mat3(viewMatrix) * vec3(0.0, 1.0, 0.0)), 0.3));`)
     // Lit windows at night (none by day or at dawn): a bay 3.2 m wide on each storey of 2.9 m;
@@ -218,7 +234,8 @@ if (vCtx.z > 0.5 && uNight > 0.0) {
 }`);
 };
 CONTEXT_MAT.customProgramCacheKey = () => 'kwc-context';
-// The shadow of a building that fades in the layered view fades with it.
+// The shadow of a building that fades in the layered view fades with it. A ghost keeps the
+// shadow of the whole building: the shadows do not change when the camera moves.
 const CONTEXT_DEPTH = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
 CONTEXT_DEPTH.onBeforeCompile = (s) => {
   Object.assign(s.uniforms, CONTEXT_U);
@@ -230,20 +247,22 @@ ${CTX_FRAG}`).replace('void main() {', `void main() {
 CONTEXT_DEPTH.customProgramCacheKey = () => 'kwc-context-depth';
 
 // The buildings of data/context.json stand on the ground, each from its outline up to its
-// height, all in one mesh; the ground is a disc that ends where the haze is whole.
-function buildContextCity(L, ctx) {
-  const pos = [], nor = [], col = [], att = [];
+// height, all in one mesh; the ground is a disc that ends where the haze is whole. The
+// outlines are clockwise in (x, z) (buildingPrisms, context.js), so that each wall faces out.
+// aCtxId: the index of the building in prisms, for its ghost.
+function buildContextCity(L, prisms) {
+  const pos = [], nor = [], col = [], att = [], ids = [];
   const base = new THREE.Color(), c = new THREE.Color();
   const box = (x, z) => x > L.x0 && x < L.x0 + L.W && z > L.z0 && z < L.z0 + L.D;
-  const put = (x, y, z, n, k, a) => { pos.push(x, y, z); nor.push(...n); col.push(base.r * k, base.g * k, base.b * k); att.push(...a); };
-  drawnBuildings(ctx).forEach((b, id) => {
-    let ring = b.ring.filter((p, i, r) => Math.hypot(p[0] - r[(i + 1) % r.length][0], p[1] - r[(i + 1) % r.length][1]) > 0.05);
-    if (ring.length < 3) return;
-    // Clockwise in (x, z), so that each wall faces out.
-    if (ring.reduce((s, p, i) => { const q = ring[(i + 1) % ring.length]; return s + p[0] * q[1] - q[0] * p[1]; }, 0) > 0) ring = ring.slice().reverse();
+  let id = 0;
+  const put = (x, y, z, n, k, a) => { pos.push(x, y, z); nor.push(...n); col.push(base.r * k, base.g * k, base.b * k); att.push(...a); ids.push(id); };
+  prisms.forEach((b, i) => {
+    if (!b) return;
+    id = i;
+    const ring = b.ring;
     const rng = mulberry32(id * 7 + 3), seed = rng();
     base.setHSL(0.09 + rng() * 0.03, 0.03 + rng() * 0.04, 0.79 + rng() * 0.08);
-    const h = b.height, inBox = ring.some(([x, z]) => box(x, z)) ? 1 : 0;
+    const h = b.h, inBox = ring.some(([x, z]) => box(x, z)) ? 1 : 0;
     let u = 0;
     for (let i = 0; i < ring.length; i++) {
       const [px, pz] = ring[i], [qx, qz] = ring[(i + 1) % ring.length];
@@ -265,6 +284,7 @@ function buildContextCity(L, ctx) {
   geo.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
   geo.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
   geo.setAttribute('aCtx', new THREE.Float32BufferAttribute(att, 4));
+  geo.setAttribute('aCtxId', new THREE.Float32BufferAttribute(ids, 1));
   const mesh = new THREE.Mesh(geo, CONTEXT_MAT);
   mesh.customDepthMaterial = CONTEXT_DEPTH;
   mesh.castShadow = mesh.receiveShadow = true;
@@ -275,6 +295,42 @@ function buildContextCity(L, ctx) {
   const g = new THREE.Group();
   g.add(mesh, ground);
   return g;
+}
+
+// The ghosts of the real buildings that hide the City (occlude.js tests which ones, main.js
+// calls set when the view direction changes). The texel of building i in uGhost holds three
+// values: the fade at the last change, the fade that it goes to, and the time of that change
+// in seconds. The shader eases from the one to the other in GHOST_EASE seconds, on the clock
+// uClock. A fade of 0 is the solid building, 1 a ghost: 15 % of it stays, as a dither
+// (CTX_GHOST).
+
+export class Ghosts {
+  constructor(n) {
+    this.n = n;
+    this.data = new Float32Array(GHOST_W * Math.max(1, Math.ceil(n / GHOST_W)) * 4);
+    this.tex = new THREE.DataTexture(this.data, GHOST_W, this.data.length / 4 / GHOST_W, THREE.RGBAFormat, THREE.FloatType);
+    this.tex.needsUpdate = true;
+    CONTEXT_U.uGhost.value = this.tex;
+  }
+
+  // The fade of building i at the time t, as the shader has it.
+  at(i, t) {
+    const d = this.data, o = 4 * i, x = clamp((t - d[o + 2]) / GHOST_EASE, 0, 1);
+    return d[o] + (d[o + 1] - d[o]) * x * x * (3 - 2 * x);
+  }
+
+  // From the time t, each building i goes to the fade to[i].
+  set(to, t) {
+    const d = this.data;
+    for (let i = 0; i < this.n; i++) {
+      const o = 4 * i;
+      if (d[o + 1] === to[i]) continue;
+      d[o] = this.at(i, t);
+      d[o + 1] = to[i];
+      d[o + 2] = t;
+      this.tex.needsUpdate = true;
+    }
+  }
 }
 
 function convexHull(inside, L) {
