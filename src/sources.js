@@ -123,7 +123,12 @@ composite. A detail that no source records is marked inferred.</p>
     bundles of pipes and cables, hang over them (pp10, 106–107, 144, 249). Postboxes stand at the entrances
     (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
-    (a police officer, SCMP 2018; the tailor across the road, HK01 2022).</li>
+    (a police officer, SCMP 2018; the tailor across the road, HK01 2022). The Lands Department 1:1000 survey
+    sheet 11-NE-11C of June 1987 draws the north-west end of the runway, 763 m SSE of the city. On the sheet the
+    runway is 61.9 m wide and runs at 134.0°; Wikipedia gives 134° true. Its centre line passes 388 m SW of the
+    city. The IGS beam was 47° off the runway. Pilots flew it towards Checkerboard Hill at Kowloon Tsai, then
+    turned right by eye from about 650 ft, and lined up with the runway at about 140 ft (Wikipedia, "Kai Tak
+    Airport" and "Checkerboard Hill"). Thus the planes passed the city on their left, over Kowloon City.</li>
   <li><span class="st ok">AROUND</span>The model draws the real buildings, roads and open ground within 600 m of the
     city, as they stood in December 1986 (<code>data/context.json</code>). They come from the Lands Department
     1:1000 survey sheets of 1987 (with the editions of 1981–85 as a check) and the building and road data of
@@ -197,7 +202,12 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     that are not checked, and the curfew has no date (<code>primary-sources/README.md</code>). From 14:25 to 16:40
     the landings are about 20 minutes apart, for the lull that the pigeon breeder waited for (p321). No timetable
     gives these times. Every landing comes in on runway 13, beside the city; no source gives the runway in use that
-    week.</li>
+    week. The track (<code>src/approach.js</code>): the beam passes over the top of Checkerboard Hill, the turn is
+    one circle from 650 ft to 140 ft, and the glide is 3.1° all the way (flight-simulator notes of the IGS chart,
+    not checked). Thus the turn has a radius of 3.5 km, and the planes bank 9°. They pass the city about 430 m
+    off, at about 70 m. The track stays at least 30 m over each roof within 60 m of it; this clearance is a rule
+    of the model. At night the planes darken like the buildings round the city, and show a red light on the left
+    wing tip, a green light on the right and a white landing light.</li>
   <li><span class="st prov">FLOCK</span>The 34 birds that circle over the pigeon breeder's roof while he flies them, and
     their size, larger than a real bird so that the flock shows. The book gives no count.</li>
   <li><span class="st prov">POST</span>The hours of the postman's round: sorting from 7:00, Lo Yan Street from 8:20,
