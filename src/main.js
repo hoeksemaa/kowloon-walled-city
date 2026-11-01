@@ -356,17 +356,26 @@ function renderPanel() {
 
 // The panel goes in the free space at the foot of the screen: beside the clock, clear of the
 // legend; or, on a narrow screen, above the clock and clear of the toolbar. It never covers the
-// clock or the rail, and a long panel scrolls.
+// clock or the rail, and a long panel scrolls. While the game (Find them) is open, the panel
+// stays right of it.
 function placePanel() {
   const el = $('bld');
   if (el.hidden) return;
   const box = (id) => $(id).getBoundingClientRect();
   const clock = box('clock'), rail = box('rail'), tools = box('toolbar'), legend = box('legend');
+  const game = $('game').hidden ? null : box('game');
   const s = el.style, gap = 14;
   const right = (legend.width ? Math.min(legend.left, rail.left) : rail.left) - gap;
-  if (right - (clock.right + gap) >= 240) {
-    Object.assign(s, { left: `${clock.right + gap}px`, width: `${Math.min(440, right - clock.right - gap)}px`, bottom: `${gap}px` });
+  const from = Math.max(clock.right, game ? game.right : 0) + gap;
+  if (right - from >= 240) {
+    Object.assign(s, { left: `${from}px`, width: `${Math.min(440, right - from)}px`, bottom: `${gap}px` });
     s.maxHeight = `${Math.min(innerHeight * 0.5, innerHeight - 120)}px`;
+  } else if (game && rail.left - game.right >= 256) {
+    // Right of the game, under the title and the hint, and above the legend.
+    const left = game.right + 8, top = Math.max(box('title').bottom, box('hint').bottom) + 8;
+    const bottom = legend.width ? innerHeight - legend.top + 8 : gap;
+    Object.assign(s, { left: `${left}px`, width: `${Math.min(440, rail.left - 8 - left)}px`, bottom: `${bottom}px` });
+    s.maxHeight = `${Math.max(120, Math.min(innerHeight * 0.5, innerHeight - bottom - top))}px`;
   } else {
     // Above the clock, as wide as the clock. If that leaves too little room under the toolbar,
     // the panel moves right of the toolbar, under the title and the hint.
@@ -502,6 +511,7 @@ function buildUI() {
     $('game').hidden = !$('game').hidden;
     if ($('game').hidden) closeCase();
     renderGame();
+    placePanel();
     return !$('game').hidden;
   });
   $('game-close').onclick = () => $('t-find').click();
