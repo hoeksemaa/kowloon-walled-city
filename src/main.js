@@ -106,6 +106,7 @@ let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 let panelBoxes = []; // the panels and the title on the screen: the road names keep clear of them (labels.js)
 const PANELS = ['title', 'hint', 'toolbar', 'rail', 'clock', 'legend', 'bld', 'game', 'src-btn'];
+let titleBox = null; // the title and the hint under it, on the screen: no label lies on it (labels.js)
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
@@ -989,6 +990,8 @@ function resize() {
 
 function findPanels() {
   panelBoxes = PANELS.map($).filter((el) => el && !el.hidden && el.getClientRects().length).map((el) => el.getBoundingClientRect());
+  const tb = $('title').getBoundingClientRect(), hb = $('hint').getBoundingClientRect();
+  titleBox = hb.width ? { left: Math.min(tb.left, hb.left), top: tb.top, right: Math.max(tb.right, hb.right), bottom: hb.bottom } : tb;
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -1053,7 +1056,7 @@ function frame(now) {
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
-  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox, panels: panelBoxes });
+  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox, panels: panelBoxes, title: titleBox });
   updateTags();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); findPanels(); }
