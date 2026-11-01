@@ -16,6 +16,18 @@ python3 serve.py 8173
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
   towers (270 if the 17 Yamen halls count as one). A check by eye against that plan
   changed 27 of them. The heights on the south face come from Lambot's 1990 south elevation.
+- **Select a building.** Click a building to select it, and click it again to deselect it. A
+  building is one tower of the 1987 plan, and the 17 halls of the Yamen are one building: 270 in
+  all. A line marks its outline on each storey, and a faint line shows the outline through the
+  buildings in front. The building takes a light warm tint, and the rest of the city keeps its
+  light. In the layered view each storey has its own outline, and in a cut the line runs at the
+  section. Point at a building to see its name and storeys, and point at the selected building
+  to see its floors.
+- **Clicks.** A click on a label opens its card. Else a click tests a person first, then a
+  building. Only one thing at a time is selected: a click on a person deselects the building,
+  and a click on a building deselects the person. A click on the ground or the sky deselects
+  both. The first Esc deselects all that is selected, and the next Esc clears the cut. In an
+  open case of the game, a click on a building only selects it and is not a guess.
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
   types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
