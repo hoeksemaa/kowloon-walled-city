@@ -119,7 +119,7 @@ async function init() {
   bookStreets = book.streets;
   mapStreets = overlay.streets;
   site = buildSite(plan);
-  L = buildLayout(site, plan, biz, book);
+  L = buildLayout(site, plan, biz, book, context);
   L.routes = buildRoutes(L);
   lamps.setBox(L);
   useMap = new UseMap(L);
