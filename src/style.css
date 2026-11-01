@@ -143,6 +143,8 @@ button { font: inherit; color: inherit; }
 #legend button.row.lock .lk { visibility: visible; }
 #legend button.row.none { color: var(--ink-2); }
 #legend button.row.none .sq { filter: grayscale(1); opacity: 0.6; }
+/* The floor-use group is as wide as its widest count line, on each storey. */
+#legend .grp.use { min-width: 47ch; }
 #legend .use-n { width: 0; min-width: 100%; height: calc(3 * 1.45em + 5px); margin-top: 5px; padding-top: 4px; border-top: 1px dotted var(--ink-3); color: var(--ink-2); font-size: 10.5px; line-height: 1.45; }
 #legend .use-n div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 1.45em; }
 #legend .use-n b { color: var(--ink); font-weight: 600; }
@@ -200,6 +202,7 @@ button { font: inherit; color: inherit; }
   #title .t-sub, #hint { display: none; }
   #clock { width: calc(100vw - 110px); }
   #legend { display: none; }
+  #sources { left: 14px; right: 14px; width: auto; }
 }
 
 /* Find them 尋人 (game.js) */
@@ -219,3 +222,4 @@ button { font: inherit; color: inherit; }
 #game .msg { margin-top: 6px; font-style: italic; }
 #game .found { background: #e8c14a; font-family: var(--pixel); font-size: 9px; display: inline-block; padding: 1px 5px; margin: 6px 0 2px; }
 #game .fact { margin: 3px 0; }
+@media (max-width: 720px) { #game { width: min(330px, calc(100vw - 110px)); } }

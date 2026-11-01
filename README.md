@@ -31,8 +31,10 @@ python3 serve.py 8173
 - **Clicks.** A click on a label opens its card. Else a click tests a person first, then a
   building. Only one thing at a time is selected: a click on a person deselects the building,
   and a click on a building deselects the person. A click on the ground or the sky deselects
-  both. The first Esc deselects all that is selected, and the next Esc clears the cut. In an
-  open case of the game, a click on a building only selects it and is not a guess.
+  both. Only the left button clicks: the right button pans, and a right click selects nothing.
+  If the sources panel is open, the first Esc closes it. Else the first Esc deselects all that
+  is selected, and the next Esc clears the cut. In an open case of the game, a click on a
+  building only selects it and is not a guess.
 - **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
   types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
   8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
@@ -96,7 +98,8 @@ python3 serve.py 8173
   building. It moves along the road when the view changes, and fades with the haze. It does
   not dim in the layered view. Point at a road name to light its road. The key M turns all of
   these off and on. The storey labels of the layered view and the cut tag are plates of the
-  same kind.
+  same kind. No plate lies on the title at the top left: a street name moves along its lane to
+  find room, and a storey label with no room hides.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
@@ -106,8 +109,9 @@ python3 serve.py 8173
   clock panel shows the people away from home through the day. A click on the curve moves the
   clock to that time, with the people already on their way. The arrows under the curve set the
   speed. One arrow is real time (1×), two arrows are 60× and three arrows are 2400×, a day in
-  36 seconds. Space stops the clock and starts it again, and the keys 1, 2 and 3 choose the
-  arrows.
+  36 seconds. Space stops the clock and starts it again, also after a click on a button. The
+  keys 1, 2 and 3 choose the arrows. A button that has the keyboard focus (from the Tab key)
+  takes Space and Enter, and the clock does not change.
 - **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
   follows the hour, with occasional clear sounds over it, for example drips, a plane and the
   pigeon breeder's whistle. The sound fades out when the clock stops. At three arrows, you hear

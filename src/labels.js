@@ -559,7 +559,11 @@ export class Labels {
     const mpp = (camera.top - camera.bottom) / camera.zoom / view.h;
     const s = clamp(2 * (camera.zoom / 1.15) ** 0.2, 1.7, 3), fs = fsOf;
     const tabs = smoothstep(0.35, 0.8, view.explode);
-    const boxes = [], shown = new Map();
+    // The title on the screen (view.title) is taken from the start: no plate lies on its words.
+    // Left of the title is the toolbar, thus a storey label there has no room and hides; the
+    // rail names the storeys too.
+    const tr = view.title, shown = new Map();
+    const boxes = tr ? [[[tr.left, tr.top], [tr.right, tr.top], [tr.right, tr.bottom], [tr.left, tr.bottom]]] : [];
     this.frame++;
     this.clock += view.dt;
     if (this.on) this.watchRoads(view, s * mpp);

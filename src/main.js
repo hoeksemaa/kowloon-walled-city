@@ -5,7 +5,7 @@ import { buildLayout, buildingName, bldgOf, bldgName, blocksOf, STOREY, MAX_FLOO
 import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
-import { DIM, withDim } from './dim.js';
+import { DIM, withDim, setDimCode, compileDim } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -106,6 +106,7 @@ let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 let panelBoxes = []; // the panels and the title on the screen: the road names keep clear of them (labels.js)
 const PANELS = ['title', 'hint', 'toolbar', 'rail', 'clock', 'legend', 'bld', 'game', 'src-btn'];
+let titleBox = null; // the title and the hint under it, on the screen: no label lies on it (labels.js)
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
@@ -234,6 +235,9 @@ async function init() {
   buildUI();
   resize();
   setOffsets(0);
+  // The programs of the storeys with the dim code (dim.js), for the screen and for the glow of
+  // the night (post.js): they compile now, thus the first layered view does not stall.
+  compileDim(renderer, scene, camera, levels.flatMap((lv) => (lv.cutout ? [lv.mesh, lv.cutout] : [lv.mesh])), [null, post.target]);
   $('loading').classList.add('done');
   window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline, occlusion, ghosts };
   requestAnimationFrame(frame);
@@ -250,6 +254,7 @@ function setSlabs() {
   const show = state.explode > 0.01;
   const a = smoothstep(0.05, 0.7, state.explode);
   DIM.uDimOn.value = a;
+  setDimCode(a > 0);
   outline.apart(a);
   CONTEXT_U.uOpen.value = a; // Mei Tung House fades, so that the slabs do not cut it (env.js)
   for (const lv of levels) {
@@ -440,7 +445,8 @@ function useCount(key) {
     return line(`<b>corridors</b> in ${new Set(p.corridors.map((q) => q.b)).size} blocks on ${lv}`) + line(`${doors} doors to the next block · plan inferred`) + keep;
   }
   const bs = useMap.blocks(key), n = bs.length, inf = bs.filter((b) => b.inferred && b.inferred[state.cut]).length;
-  const head = line(`<b>${n ? `${n} block${n === 1 ? '' : 's'}` : 'none'}</b> on ${lv} · ${USE_LABEL[key]}`);
+  // The head of the legend names the storey, thus this line has room for the longest use.
+  const head = line(`<b>${n ? `${n} block${n === 1 ? '' : 's'}` : 'no blocks'}</b> · ${USE_LABEL[key]}`);
   const split = key === 'home' || !n ? line('') : line(`<span class="ln"></span>${n - inf} recorded${inf ? ` <span class="ln d"></span>${inf} inferred (1983 count)` : ''}`);
   return head + split + keep;
 }
@@ -602,9 +608,10 @@ function buildUI() {
   canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
   // Past a label (below), a click tests a person, then a building. One thing at a time is
   // selected, and a click on the ground or the sky lets go of both. In an open case of the game,
-  // a click on a person is a guess; a click on a building only selects it.
+  // a click on a person is a guess; a click on a building only selects it. Only the main
+  // button clicks: the right button pans, also when it does not move.
   canvas.addEventListener('pointerup', (ev) => {
-    if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
+    if (!down || ev.button !== 0 || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     pointAt(ev); // a tap has no move before it
     const id = pickAgent();
     if (id >= 0 && game.c && !game.solved) { checkPick(id); return; }
@@ -616,10 +623,18 @@ function buildUI() {
     sim.select(id);
     state.follow = false;
   });
+  // A mouse click or a tap on a button does not keep the keyboard focus on it, thus Space then
+  // runs or stops the clock and does not press the button again. A button that has the focus
+  // from the keyboard (Tab) takes Space and Enter, and they do nothing else.
+  addEventListener('click', (ev) => {
+    const el = document.activeElement;
+    if (ev.detail > 0 && el && el !== document.body && el.matches('button')) el.blur();
+  });
   addEventListener('keydown', (ev) => {
     if (ev.target.closest && ev.target.closest('input, textarea')) return;
     if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
     const k = ev.key.toLowerCase();
+    if ((k === ' ' || k === 'enter') && ev.target.closest && ev.target.closest('button')) return;
     if (k === 'e') $('t-explode').click();
     else if (k === 'w') $('t-wires').click();
     else if (k === 'p') $('t-people').click();
@@ -628,9 +643,11 @@ function buildUI() {
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') {
-      // the first Esc lets go of all that is selected (the floor use kept lit, the building and
-      // the person), the next one clears the cut
-      if (state.useLock || state.selBld >= 0 || sim.selected >= 0) {
+      // the first Esc closes the sources panel if it is open, or else lets go of all that is
+      // selected (the floor use kept lit, the building and the person); the next one clears
+      // the cut
+      if (!$('sources').hidden) $('sources').hidden = true;
+      else if (state.useLock || state.selBld >= 0 || sim.selected >= 0) {
         if (state.useLock) { state.useLock = null; relock(); }
         selectBuilding(-1);
         sim.select(-1);
@@ -721,8 +738,12 @@ function renderLegend() {
     const row = (key, label, extra = '') => `<button class="row${extra}" data-key="${key}" aria-pressed="false"><span class="sq" style="background:${useColor(key)}"></span><span class="lb">${label}</span>${LOCK_ICON}</button>`;
     // A use kept lit that this storey does not have stays at the top, in grey.
     const gone = state.useLock && USE_LABEL[state.useLock] && !here.has(state.useLock) ? row(state.useLock, `${USE_LABEL[state.useLock]} · none on this storey`, ' none') : '';
-    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
-      ${row('corridor', 'corridor, door to the next block')}${row('link', 'link to the next building (place inferred)')}
+    // The link row shows on a storey that has links, and in grey if the links are kept lit.
+    const links = useMap.plan && useMap.plan.doors.some((d) => d.link);
+    const link = links ? row('link', 'link to the next building (place inferred)')
+      : state.useLock === 'link' ? row('link', 'link to the next building · none on this storey', ' none') : '';
+    g.push(`<div class="grp use"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
+      ${row('corridor', 'corridor, door to the next block')}${link}
       <div class="use-n"></div></div>`);
   }
   if (wires && wires.object.visible) {
@@ -763,6 +784,9 @@ function showTooltip(html) {
   let x = mouse.x + 16, y = mouse.y + 14;
   if (x + w > innerWidth - 90) x = mouse.x - w - 16;
   if (y + h > innerHeight - 10) y = mouse.y - h - 14;
+  // on a narrow screen, the box stays on the screen
+  x = clamp(x, 8, Math.max(8, innerWidth - w - 8));
+  y = clamp(y, 8, Math.max(8, innerHeight - h - 8));
   t.style.left = `${x}px`;
   t.style.top = `${y}px`;
 }
@@ -974,6 +998,8 @@ function resize() {
 
 function findPanels() {
   panelBoxes = PANELS.map($).filter((el) => el && !el.hidden && el.getClientRects().length).map((el) => el.getBoundingClientRect());
+  const tb = $('title').getBoundingClientRect(), hb = $('hint').getBoundingClientRect();
+  titleBox = hb.width ? { left: Math.min(tb.left, hb.left), top: tb.top, right: Math.max(tb.right, hb.right), bottom: hb.bottom } : tb;
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -1038,7 +1064,7 @@ function frame(now) {
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
-  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox, panels: panelBoxes });
+  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox, panels: panelBoxes, title: titleBox });
   updateTags();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); findPanels(); }
