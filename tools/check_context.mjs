@@ -2,13 +2,18 @@
 //
 //     node tools/check_context.mjs
 //
-// Prints counts, and the buildings near the approach track of src/planes.js that are taller
-// than the track there. Fails (exit 1) if a building is on the City plate (the plan box with
+// Prints counts, and the buildings nearest under the approach track of the planes
+// (src/approach.js). Fails (exit 1) if a building is on the City plate (the plan box with
 // the MARGIN of src/layout.js), a building reaches beyond 600 m, a building has no source or no
 // height, or a survey sheet does not register on the standing buildings (90% of the control
 // residuals under 1 m, and a median shift under 0.75 m), or the City fit is poor. It also
 // fails if the whole outline of a building that the plate cuts (plateClipped) reaches onto
 // the City itself.
+//
+// The planes: it fails if the track comes closer than CLEAR metres above the roof of a
+// building within SIDE metres of it (both in approach.js), or above the City and its roof
+// aerials. It also fails if the runway end or the hill of approach.js does not come from their
+// HK1980 Grid points through the transform of data/context.json.
 //
 // Then it checks what the app draws (src/context.js, src/env.js, src/layout.js). It fails if a
 // drawn outline covers a cell of the City, if the dark street round the City reaches under a
@@ -18,11 +23,12 @@
 // Last it checks the ghosts (src/occlude.js) in 48 views. It fails if a building hides a point
 // of the City wall and the test does not fade it.
 import { readFileSync } from 'node:fs';
-import { MARGIN, buildLayout } from '../src/layout.js';
+import { MARGIN, STOREY, buildLayout } from '../src/layout.js';
 import { Sim } from '../src/people.js';
 import { drawnBuildings, buildStreet, buildingPrisms } from '../src/context.js';
 import { buildSite } from '../src/site.js';
 import { Occlusion } from '../src/occlude.js';
+import { track, S0, S1, CLEAR, SIDE, GRID, RUNWAY_END, HILL } from '../src/approach.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -127,50 +133,64 @@ for (const r of C.roads) {
 console.log(`roads ${C.roads.length} segments, ${names.size} names, ${C.roads.filter((r) => r.width).length} with a measured width`);
 console.log(`open ground: ${C.openGround.map((g) => g.name).join('; ')}`);
 
-// ---- the approach track of src/planes.js ----
-const src = readFileSync(root + 'src/planes.js', 'utf8');
-const main = readFileSync(root + 'src/main.js', 'utf8');
-const glideDeg = +src.match(/GLIDE = Math\.tan\(\((\d+(?:\.\d+)?) \* Math\.PI\)/)[1];
-const [, S0, S1] = src.match(/S0 = (-?\d+), S1 = (-?\d+)/).map(Number);
-const m = main.match(/new Planes\(scene, \[([-\d.]+), ([-\d.]+)\], \[([-\d.]+), ([-\d.]+)\], ([-\d.]+)/);
-const [dx, dz, px, pz, h0] = m.slice(1).map(Number);
-const GLIDE = Math.tan((glideDeg * Math.PI) / 180);
-const trackY = (s) => Math.max(8, h0 - s * GLIDE);
-const NEAR = 60; // m either side of the track: half the span of the model plane and a margin
-const tall = [], close = [];
+// ---- the approach track of the planes (src/approach.js) ----
+// The runway end and the hill in approach.js: their HK1980 Grid points through the transform.
+const T = C.transform;
+function toPlan([E, N]) {
+  const b = (T.bearingDeg * Math.PI) / 180, dE = E - T.E0, dN = N - T.N0;
+  const x0 = Math.sin(b) * dE + Math.cos(b) * dN, z0 = Math.cos(b) * dE - Math.sin(b) * dN;
+  return [Math.cos(T.th) * (x0 - T.dx) + Math.sin(T.th) * (z0 - T.dz), -Math.sin(T.th) * (x0 - T.dx) + Math.cos(T.th) * (z0 - T.dz)];
+}
+for (const [name, p, g] of [['RUNWAY_END', RUNWAY_END, GRID.runwayEnd], ['HILL', HILL, GRID.hill]]) {
+  const q = toPlan(g);
+  if (Math.hypot(p[0] - q[0], p[1] - q[1]) > 0.5) problems.push(`approach.js: ${name} (${p}) is not E ${g[0]}, N ${g[1]} in the plan (${q.map((v) => v.toFixed(1))})`);
+}
+// The track every 2 m. For an outline: the least height of the track over the roof, at the
+// points of the track within SIDE m of the outline; null if none is that near.
+const pts = [];
+for (let s = S0; s <= S1; s += 2) pts.push({ s, ...track(s) });
+function segDist(x, z, [ax, az], [bx, bz]) {
+  const dx = bx - ax, dz = bz - az;
+  const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz)));
+  return Math.hypot(x - ax - t * dx, z - az - t * dz);
+}
+function underTrack(ring, height) {
+  const xs = ring.map((p) => p[0]), zs = ring.map((p) => p[1]);
+  const x0 = Math.min(...xs) - SIDE, x1 = Math.max(...xs) + SIDE, z0 = Math.min(...zs) - SIDE, z1 = Math.max(...zs) + SIDE;
+  let best = null;
+  for (const t of pts) {
+    if (t.x < x0 || t.x > x1 || t.z < z0 || t.z > z1) continue;
+    let d = inRing(t.x, t.z, ring) ? 0 : Infinity;
+    for (let i = 0; d && i < ring.length; i++) d = Math.min(d, segDist(t.x, t.z, ring[i], ring[(i + 1) % ring.length]));
+    if (d <= SIDE && (!best || t.y - height < best.gap)) best = { gap: t.y - height, side: d, s: t.s, y: t.y };
+  }
+  return best;
+}
+const under = [];
 for (const b of C.buildings) {
-  // the lowest track height over the part of the outline within NEAR of the track
-  let low = Infinity, lat = Infinity;
-  const pts = [];
-  for (let i = 0; i < b.ring.length; i++) {
-    const p = b.ring[i], q = b.ring[(i + 1) % b.ring.length];
-    for (let k = 0; k < 4; k++) pts.push([p[0] + (q[0] - p[0]) * k / 4, p[1] + (q[1] - p[1]) * k / 4]);
-  }
-  const sides = new Set();
-  for (const [x, z] of pts) {
-    const s = (x - px) * dx + (z - pz) * dz, l = (x - px) * dz - (z - pz) * dx;
-    sides.add(Math.sign(l));
-    if (s < S0 || s > S1) continue;
-    if (Math.abs(l) <= NEAR) { low = Math.min(low, trackY(s)); lat = Math.min(lat, Math.abs(l)); }
-  }
-  if (sides.has(1) && sides.has(-1)) lat = 0;
-  if (low < Infinity && b.height > low) tall.push({ b, low, lat });
-  else if (low < Infinity) close.push({ b, low, lat });
+  const u = underTrack(b.ring, b.height);
+  if (u) under.push({ b, ...u });
 }
-console.log(`approach track: ${glideDeg} deg glide from ${h0} m at (${px}, ${pz}), along (${dx}, ${dz}), s ${S0} to ${S1}`);
-console.log(`buildings within ${NEAR} m of the track and taller than the track there: ${tall.length}`);
-for (const { b, low, lat } of tall.sort((a, c) => (c.b.height - c.low) - (a.b.height - a.low))) {
-  console.log(`  ${b.id} ${b.name || ''} height ${b.height} m (${b.confidence}), track ${low.toFixed(1)} m, ${lat.toFixed(0)} m to the side`);
-}
-console.log('the least clearance below the track:');
-for (const { b, low, lat } of close.sort((a, c) => (a.low - a.b.height) - (c.low - c.b.height)).slice(0, 5)) {
-  console.log(`  ${b.id} ${b.name || ''} height ${b.height} m (${b.confidence}), track ${low.toFixed(1)} m, ${lat.toFixed(0)} m to the side`);
+under.sort((a, c) => a.gap - c.gap);
+for (const { b, gap, side, y } of under)
+  if (gap < CLEAR) problems.push(`${b.id} ${b.name || ''}: ${b.height} m high, ${gap.toFixed(1)} m under the track (${y.toFixed(1)} m) ${side.toFixed(0)} m to the side; the least is ${CLEAR} m`);
+const t0 = track(0);
+console.log(`approach track: s ${S0} to ${S1}; nearest the City at ${Math.hypot(t0.x, t0.z).toFixed(0)} m from its centre, ${t0.y.toFixed(1)} m high; ${under.length} buildings within ${SIDE} m of it`);
+console.log(`the least clearance under the track (at least ${CLEAR} m):`);
+for (const { b, gap, side, y } of under.slice(0, 5)) {
+  console.log(`  ${b.id} ${b.name || ''} height ${b.height} m (${b.confidence}), track ${y.toFixed(1)} m, ${gap.toFixed(1)} m clear, ${side.toFixed(0)} m to the side`);
 }
 
 // ---- what the app draws ----
 const book = json('data/book.json');
 book.overlay = json('data/book_overlay.json');
 const L = buildLayout(null, plan, json('data/businesses.json'), book, C);
+// The City under the track: its outline, and its highest roof with 10 m of stair huts, tanks
+// and aerials (INFERRED).
+const cityTop = Math.max(...L.buildings.map((b) => b.floors || 0)) * STOREY + 10;
+const cu = underTrack(city, cityTop);
+if (cu && cu.gap < CLEAR) problems.push(`the City: ${cityTop.toFixed(1)} m high, ${cu.gap.toFixed(1)} m under the track; the least is ${CLEAR} m`);
+console.log(`the City, ${cityTop.toFixed(1)} m high with its aerials: ${cu ? `${cu.gap.toFixed(1)} m under the track` : `more than ${SIDE} m from the track`}`);
 const drawn = drawnBuildings(C);
 const street = buildStreet(L, C.roads);
 const near = drawn.filter((b) => b.ring.some(([x, z]) => Math.abs(x) < x1 + 20 && Math.abs(z) < z1 + 20));

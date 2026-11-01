@@ -68,6 +68,12 @@ python3 serve.py 8173
   All of it is clear out to 350 m from the centre, fades slowly into the haze, and is gone
   at 600 m. The sky and the haze follow the light of the city: pale grey by day, warm at
   dusk, dark slate at night.
+- **Planes.** Airliners land on Kai Tak runway 13, about 89 a day, from 06:30 to 23:50. They
+  turn right from the IGS beam on to the line of the runway. They pass the City on their
+  left, about 430 m to the south-west, at about 70 m. Zoom out to see them. The end of the
+  runway comes from the 1987 survey sheet; the turn and the glide are inferred
+  (`src/approach.js`). At night the planes are dark like the buildings round the City, with
+  their wing-tip lights and landing light.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
@@ -133,8 +139,8 @@ the long slab north of the City. The data keeps the parts off the plate as build
 
 `src/context.js` picks the outlines that the app draws, and `src/env.js` draws them. For a
 building that the plate cuts, the app draws the whole outline from `plateClipped`. Thus
-Mei Tung House stands whole. Of the 1,263 drawn buildings, 611 have a sourced height and
-652 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
+Mei Tung House stands whole. Of the 1,263 drawn buildings, 612 have a sourced height and
+651 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
 segments with no measured width are inferred. The fit of the City on the 1987 sheet turns the
 model 3.6°: plan +x points along the bearing 63.6° (`PLAN_BEARING`, `src/site.js`).
 
@@ -152,8 +158,9 @@ corridor or a stair, if a storey has no way down, or if walks go through other r
 `node tools/check_context.mjs` checks `data/context.json`. It fails if a building is on the
 City plate or beyond 600 m, if a building has no source, or if a survey sheet does not
 register on the standing buildings. It also fails if a whole outline in `plateClipped`
-reaches onto the City itself. It prints the buildings near the approach track of the planes
-that are taller than the track.
+reaches onto the City itself. It fails if the track of the planes (`src/approach.js`) is less
+than 30 m over a roof within 60 m of the track, or over the City. It prints the five
+buildings with the least clearance.
 
 Then `check_context.mjs` checks what the app draws. It fails if a drawn outline covers a
 cell of the City, or if the dark street reaches under a drawn building. It also fails if an

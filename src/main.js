@@ -212,10 +212,8 @@ async function init() {
   wires = new WireLayer(L, buildWires(L));
   scene.add(wires.object);
 
-  // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
-  // The bearing of 134° in the plan frame (PLAN_BEARING, site.js): 134° - 63.63° from the
-  // plan's +x. The point abeam the city is in plan metres.
-  planes = new Planes(scene, [0.3359, 0.9419], [182, -52], 62);
+  // ---- Kai Tak: the turn on to runway 13, SW of the city (planes.js, approach.js) ----
+  planes = new Planes(scene);
 
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
@@ -1010,7 +1008,7 @@ function frame(now) {
   }
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
-  planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3);
+  planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3, shared.uNight.value);
   flock.update(now / 1000, offsets, state.cut);
   updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
