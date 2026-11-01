@@ -63,10 +63,10 @@ export function spot(L, sim, a) {
       }
   if (b < 0) for (const q of L.buildings) { const d = Math.hypot(q.cx - x, q.cz - z); if (q.kind !== 'yamen' && d < bd) { bd = d; b = q.id; } }
   const roof = !!(a.loc && a.loc.type === 'roof') || (b >= 0 && L.owner[k] === b && P[o + 2] >= L.buildings[b].floors * STOREY - 0.5);
-  let level = Math.round(P[o + 2] / STOREY);
+  // The storey that the person is drawn with (people.js): on a stair flight or the ladder to
+  // the roof, the storey of its foot.
+  const level = P[o + 3];
   const kind = roof ? 'roof' : L.owner[k] >= 0 ? 'in' : level > 0 ? 'link' : 'lane';
-  // Halfway up the ladder from the top storey to the roof is still the top storey.
-  if (kind === 'in') level = Math.min(level, L.buildings[b].floors - 1);
   return { x, z, level, kind, b };
 }
 

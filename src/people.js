@@ -805,6 +805,9 @@ class Heap {
 
 const STEP = 60; // the longest step of the simulation, in seconds: one minute
 const WARM = 10; // minutes that a jump runs before its time, so that people are on their way
+// A point of a route [x, z, y, storey] on a roof: a roof is one storey over the top storey of
+// its tower (routes.js). A point on a stair flight is at the height of its storey.
+const onRoof = (p) => p[2] - p[3] * STOREY > STOREY / 2;
 
 export class Sim {
   constructor(L, agents) {
@@ -1101,12 +1104,16 @@ export class Sim {
     };
   }
 
-  // Storey index, 'RF' on a roof, or null when outside the city.
+  // The storey that the person is drawn with (a whole storey, see update): on a stair flight
+  // or a roof ladder, the storey of its foot. 'RF' on a roof, also on the way across the
+  // roofs; null when outside the city.
   levelOf(a) {
-    const o = a.id * 4;
-    if (this.aP[o + 3] < 0) return null;
+    const o = a.id * 4, lv = this.aP[o + 3];
+    if (lv < 0) return null;
     if (a.loc && a.loc.type === 'roof') return 'RF';
-    return Math.round(this.aP[o + 2] / STOREY);
+    const tr = a.trip, p = tr && tr.pts[tr.seg], c = tr && tr.pts[tr.seg + 1];
+    if (c && onRoof(p) && onRoof(c)) return 'RF';
+    return lv;
   }
 
   stats() {
