@@ -2,7 +2,8 @@
 // the street round the City. env.js draws them; tools/check_context.mjs checks them. No three.js
 // here, so that the check runs in node.
 
-// Roads with no measured width (a few roads 300 m and more from the City) are drawn this wide.
+// The 9 road segments with no measured width (each 280 m or more from the centre of the plan
+// box) are drawn this wide.
 export const ROAD_WIDTH = 7; // INFERRED
 
 // The buildings to draw. The data has a building that the City plate partly covers as its parts

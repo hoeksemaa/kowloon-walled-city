@@ -217,9 +217,10 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
   <li><span class="st prov">KOWLOON</span>The greys of the buildings, roads and open ground round the City, and the
-    lit windows at night: their count at each hour and which ones are lit. Roads with no measured width (300 m and
-    more from the City) are 7 m wide. The dark street under the City ends at the kerbs of the real roads; its
-    shape is not a source. The colours of the sky and the haze at each height of the sun.</li>
+    lit windows at night: their count at each hour and which ones are lit. The 9 road segments with no measured
+    width (each 280 m or more from the centre of the City) are 7 m wide. The dark street under the City ends at
+    the kerbs of the real roads; its shape is not a source. The colours of the sky and the haze at each height of
+    the sun.</li>
   <li><span class="st prov">BUILDING</span>What a click selects as one building: a tower of the 1987 plan (p134), and
     the 17 halls of the Yamen as one. This gives 270 buildings. The plan fits the traced plots only approximately,
     thus a tower can differ from the real building. Each building has the same plots on each storey. Suenn Ho's
