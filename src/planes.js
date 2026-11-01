@@ -1,9 +1,10 @@
-// Airliners on the final approach to Kai Tak runway 13, low over the roofs.
+// Airliners on the final approach to Kai Tak runway 13, low past the City.
 //
-// SOURCED: the planes passed low over the city ("watch the planes skim over the top and land
+// SOURCED: the planes passed low beside the city ("watch the planes skim over the top and land
 // at Kai Tak", a police officer posted there in 1987; the tailor across the road waited for
-// each plane to pass before he spoke, HK01 2022). The runway 13 final runs on a bearing of
-// about 134°, NE of the city, on a 3° glide path (CAD; the IGS approach of 1974).
+// each plane to pass before he spoke, HK01 2022). The track is in approach.js: the IGS beam
+// towards Checkerboard Hill, a 47° right turn, and the centre line of runway 13 from the 1987
+// survey sheet. It passes the City on its left, about 430 m to the south-west.
 // APPROXIMATE: the times. Search extracts of the government's figures give 64,874 aircraft
 // movements at Kai Tak in 1986, thus about 89 landings a day. They also give a night curfew
 // "between midnight and 6.30 am", with no date. Neither figure is checked
@@ -15,10 +16,8 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { mulberry32 } from './util.js';
+import { track, GLIDE, SPEED, S0, S1 } from './approach.js';
 
-const SPEED = 75; // m/s, about 145 knots
-const GLIDE = Math.tan((3 * Math.PI) / 180);
-const S0 = -1500, S1 = 950; // metres along the path, 0 = abeam the city
 const OPEN = 6 * 60 + 30; // the curfew ends: the first landing
 const SHUT = 23 * 60 + 50; // the last landing, so that it is down before midnight
 const GAP = 11; // mean minutes between landings: about 89 a day
@@ -64,9 +63,7 @@ function model(stripe) {
 }
 
 export class Planes {
-  // dir: unit direction of travel in the plan; p0: the point abeam the city; h0: height there.
-  constructor(scene, dir, p0, h0) {
-    this.dir = dir; this.p0 = p0; this.h0 = h0;
+  constructor(scene) {
     this.pool = ['#b8261c', '#1f5f8c', '#1d6a47', '#8c6a1d'].map((c) => {
       const m = model(c);
       m.visible = false;
@@ -103,10 +100,10 @@ export class Planes {
       const a = this.active[q];
       m.visible = !!a && !hide;
       if (!m.visible) return;
-      const x = this.p0[0] + this.dir[0] * a.s, z = this.p0[1] + this.dir[1] * a.s;
-      const y = Math.max(8, this.h0 - a.s * GLIDE);
-      m.position.set(x, y, z);
-      m.lookAt(x + this.dir[0] * 100, y - 100 * GLIDE, z + this.dir[1] * 100);
+      const t = track(a.s);
+      m.position.set(t.x, t.y, t.z);
+      m.lookAt(t.x + t.dx * 100, t.y - 100 * GLIDE, t.z + t.dz * 100);
+      m.rotateZ(t.bank); // the model's +x is its left wing: a right bank lifts it
     });
   }
 }
