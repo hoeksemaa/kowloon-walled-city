@@ -1,13 +1,25 @@
-// The model's surroundings: the street round the city, the ground and the city around it at
-// the same level, light and time of day.
+// The model's surroundings: the street round the city, the real buildings, roads and open ground
+// of December 1986 round it at the same level, light and time of day.
 import * as THREE from 'three';
 import { OUTSIDE } from './footprint.js';
 import { mulberry32, clamp, smoothstep } from './util.js';
 import { withDim } from './dim.js';
+import { drawnBuildings, buildStreet, ROAD_WIDTH } from './context.js';
 
 // The haze (main.js): all is clear out to FADE_NEAR metres from the centre of the city, then
 // fades slowly into the sky, and is gone at FADE_FAR. Nothing is drawn beyond.
 const FADE_NEAR = 350, FADE_FAR = 600;
+
+// The flat layers on the ground are drawn first, in this order, each over the one before: they
+// do not need the depth test, because all else stands on them. The street keeps its depth, so
+// that nothing shows below it.
+const ORDER = { ground: -7, open: -6, street: -5, kerb: -4, road: -3, pave: -2, dash: -1 };
+const flat = (o, order) => {
+  o.renderOrder = ORDER[order];
+  o.receiveShadow = true;
+  if (order !== 'ground' && order !== 'street') o.material.depthTest = o.material.depthWrite = false;
+  return o;
+};
 
 // The ground is part of G/F: below a cut storey in the layered view, it dims with G/F (dim.js).
 export function groundMat(m) {
@@ -16,20 +28,15 @@ export function groundMat(m) {
   return m;
 }
 
-export function buildEnvironment(scene, L) {
+// ctx: data/context.json.
+export function buildEnvironment(scene, L, ctx) {
   const group = new THREE.Group();
-  const xa = L.x0, xb = L.x0 + L.W, za = L.z0, zb = L.z0 + L.D;
 
-  // Street surface: a dark rectangle under the city, flush with the ground round it. It is also
-  // the shape of each storey's slab in the layered view (main.js). A pavement band runs along
-  // the city edge.
-  const street = new THREE.Mesh(
-    new THREE.PlaneGeometry(xb - xa, zb - za).rotateX(-Math.PI / 2),
-    groundMat(new THREE.MeshLambertMaterial({ color: '#57534c' })),
-  );
-  street.position.set((xa + xb) / 2, 0, (za + zb) / 2);
-  street.receiveShadow = true;
-  group.add(street);
+  // Street surface: the dark ground under the city, flush with the ground round it. It ends at
+  // the kerbs of the real roads on the north and east, and at the edge of the plate on the
+  // open ground to the south and west (context.js). A pavement band runs along the city edge.
+  const street = buildStreet(L, ctx.roads);
+  group.add(flat(new THREE.Mesh(streetGeometry(street), groundMat(new THREE.MeshLambertMaterial({ color: '#57534c' }))), 'street'));
   // Pavement: a 3 m band round the city outline, with round joins at the corners.
   const edges = [];
   for (const b of L.buildings) for (const r of b.rings) for (const e of r.edges) if (e.other === OUTSIDE) edges.push(e);
@@ -49,85 +56,222 @@ export function buildEnvironment(scene, L) {
       tri(A, [A[0] + Math.cos(a1) * PW, A[1] + Math.sin(a1) * PW], [A[0] + Math.cos(a0) * PW, A[1] + Math.sin(a0) * PW]);
     }
   }
-  const pg = new THREE.BufferGeometry();
-  pg.setAttribute('position', new THREE.Float32BufferAttribute(pv, 3));
-  pg.setAttribute('normal', new THREE.Float32BufferAttribute(new Float32Array(pv.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
-  const paveMesh = new THREE.Mesh(pg, groundMat(new THREE.MeshLambertMaterial({ color: '#77736a' })));
-  paveMesh.receiveShadow = true;
-  group.add(paveMesh);
+  group.add(flat(new THREE.Mesh(upGeometry(pv), groundMat(new THREE.MeshLambertMaterial({ color: '#77736a' }))), 'pave'));
 
-  // Centre lines of the boundary roads: the hull of the city pushed out by ~10 m.
+  // The road names keep their place beside the hull of the city pushed out by ~10 m, where the
+  // boundary roads were drawn before the real roads.
   const hull = convexHull(L.inside, L);
   const road = offsetConvex(hull, 10.5);
-  const rp = [];
-  for (let q = 0; q < road.length; q++) {
-    const [ax, az] = road[q], [bx, bz] = road[(q + 1) % road.length];
-    rp.push(ax, 0.02, az, bx, 0.02, bz);
-  }
-  const rg = new THREE.BufferGeometry();
-  rg.setAttribute('position', new THREE.Float32BufferAttribute(rp, 3));
-  const roadLine = new THREE.LineSegments(rg, groundMat(new THREE.LineDashedMaterial({ color: '#d9cfae', dashSize: 2.2, gapSize: 2.6 })));
-  roadLine.computeLineDistances();
-  group.add(roadLine);
 
-  group.add(buildContextCity(L));
+  group.add(buildRoads(ctx.roads), buildOpenGround(ctx.openGround), buildContextCity(L, ctx));
   scene.add(group);
-  return { group, roadOutline: road };
+  return { group, roadOutline: road, street };
 }
 
-// The ground and the city around the City: light, plain greys by day, so that they show the
-// place and leave the eye on the City. At night they are dark, with a faint glow of sodium
-// amber, the colour of Kowloon seen past the roofs (#f8f1ba / #cfb272, p316). Lighting darkens
-// both and sets the glow by the hour.
-const CONTEXT_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+// A geometry of flat triangles at the ground, all facing up: [x, y, z] in a flat list.
+function upGeometry(pv) {
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pv, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(new Float32Array(pv.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
+  return g;
+}
+
+// The street as rectangles: the runs of each row of the grid, with equal runs of the rows
+// below joined to them.
+function streetGeometry(S) {
+  const pv = [], open = new Map(), m = 1 / S.RES;
+  const rect = (i0, i1, j0, j1) => {
+    const xa = S.x0 + i0 * m, xb = S.x0 + i1 * m, za = S.z0 + j0 * m, zb = S.z0 + j1 * m;
+    pv.push(xa, 0, za, xa, 0, zb, xb, 0, zb, xa, 0, za, xb, 0, zb, xb, 0, za);
+  };
+  for (let j = 0; j <= S.nz; j++) {
+    const runs = new Set();
+    for (let i = 0, a = -1; j < S.nz && i <= S.nx; i++) {
+      const on = i < S.nx && S.street[j * S.nx + i];
+      if (on && a < 0) a = i;
+      if (!on && a >= 0) { runs.add(`${a},${i}`); a = -1; }
+    }
+    for (const [key, j0] of open) if (!runs.has(key)) { const [a, b] = key.split(',').map(Number); rect(a, b, j0, j); open.delete(key); }
+    for (const key of runs) if (!open.has(key)) open.set(key, j);
+  }
+  return upGeometry(pv);
+}
+
+// ---- the roads and the open ground of December 1986 --------------------------------------
+// The real roads at their width, in a gentle grey darker than the ground, with a light kerb.
+// Near the city each carries a dashed centre line, as the boundary roads did before.
+const ROAD = new THREE.Color('#a19e97'), KERB = new THREE.Color('#c9c5bc'), DASH = new THREE.Color('#d9cfae');
+const ROAD_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+const KERB_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+const DASH_MAT = new THREE.LineDashedMaterial({ color: '#ffffff', dashSize: 2.2, gapSize: 2.6 });
+const KERB_W = 0.4, DASH_R = 260, DASH_MIN_W = 5;
+
+function buildRoads(roads) {
+  const band = (pv, line, h, y) => {
+    const tri = (a, b, c) => {
+      if ((b[1] - a[1]) * (c[0] - a[0]) - (b[0] - a[0]) * (c[1] - a[1]) < 0) [b, c] = [c, b]; // face up
+      pv.push(a[0], y, a[1], b[0], y, b[1], c[0], y, c[1]);
+    };
+    for (let q = 0; q < line.length; q++) {
+      const A = line[q];
+      // a round join (or end) at each point
+      for (let s = 0; s < 12; s++) {
+        const a0 = (s / 12) * 2 * Math.PI, a1 = ((s + 1) / 12) * 2 * Math.PI;
+        tri(A, [A[0] + Math.cos(a0) * h, A[1] + Math.sin(a0) * h], [A[0] + Math.cos(a1) * h, A[1] + Math.sin(a1) * h]);
+      }
+      if (q + 1 === line.length) break;
+      const B = line[q + 1], dx = B[0] - A[0], dz = B[1] - A[1], l = Math.hypot(dx, dz) || 1;
+      const nx = (dz / l) * h, nz = (-dx / l) * h;
+      const P = [A[0] + nx, A[1] + nz], Q = [B[0] + nx, B[1] + nz], R = [B[0] - nx, B[1] - nz], S = [A[0] - nx, A[1] - nz];
+      tri(P, Q, R); tri(P, R, S);
+    }
+  };
+  const rv = [], kv = [], dv = [];
+  for (const r of roads) {
+    const h = (r.width || ROAD_WIDTH) / 2;
+    band(rv, r.line, h, 0.01);
+    band(kv, r.line, h + KERB_W, 0.008);
+    if (2 * h < DASH_MIN_W) continue;
+    for (let q = 0; q + 1 < r.line.length; q++) {
+      const [ax, az] = r.line[q], [bx, bz] = r.line[q + 1];
+      if (Math.hypot((ax + bx) / 2, (az + bz) / 2) < DASH_R) dv.push(ax, 0.02, az, bx, 0.02, bz);
+    }
+  }
+  const g = new THREE.Group();
+  g.add(flat(new THREE.Mesh(upGeometry(kv), KERB_MAT), 'kerb'), flat(new THREE.Mesh(upGeometry(rv), ROAD_MAT), 'road'));
+  const dg = new THREE.BufferGeometry();
+  dg.setAttribute('position', new THREE.Float32BufferAttribute(dv, 3));
+  const dash = flat(new THREE.LineSegments(dg, DASH_MAT), 'dash');
+  dash.computeLineDistances();
+  g.add(dash);
+  return g;
+}
+
+// The open ground: faint tints on the ground. The cleared ground of Sai Tau Tsuen and the
+// building sites in a warm earth grey, the market a little lighter, the football field and the
+// courts a faint green grey.
+const OPEN_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff', vertexColors: true });
+const OPEN_TINT = { 'building site': '#d8d4ca', market: '#dbd8cf', 'sports ground': '#d3d8cb' };
+
+function buildOpenGround(open) {
+  const pv = [], col = [], c = new THREE.Color();
+  for (const g of open) {
+    c.set(OPEN_TINT[g.kind] || OPEN_TINT['building site']);
+    const ring = g.ring.map(([x, z]) => new THREE.Vector2(x, z));
+    for (const t of THREE.ShapeUtils.triangulateShape(ring, [])) {
+      let [a, b, d] = t.map((i) => g.ring[i]);
+      if ((b[1] - a[1]) * (d[0] - a[0]) - (b[0] - a[0]) * (d[1] - a[1]) < 0) [b, d] = [d, b]; // face up
+      for (const p of [a, b, d]) { pv.push(p[0], -0.03, p[1]); col.push(c.r, c.g, c.b); }
+    }
+  }
+  const geo = upGeometry(pv);
+  geo.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  return flat(new THREE.Mesh(geo, OPEN_MAT), 'open');
+}
+
+// ---- the real buildings of December 1986 --------------------------------------------------
+// Light warm greys, as on a 3D map: each building a little different, the roofs a little lighter
+// than the walls, and the walls a little darker toward the ground. The normals lean a little
+// toward up, so the walls stay soft, but each face keeps its own shade, so the edges stay crisp.
+// They cast shadows and take them. By day and at night they darken with the sky, as the ground
+// does; at night the streets take a faint sodium glow (#f8f1ba / #cfb272, p316), and a few
+// windows are lit.
+const CONTEXT_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff', vertexColors: true });
 const GROUND_MAT = new THREE.MeshLambertMaterial({ color: '#ffffff' });
 const GROUND = new THREE.Color('#dddcd8');
 const SODIUM = new THREE.Color('#cfb272');
-// Soft light, as on a map: the normals of the blocks lean up, so the walls take nearly the
-// light of the roofs, and the blocks stay low in contrast.
+// uNight: the light of the city (Lighting). uLit: the share of the windows lit at this hour.
+// uOpen: the layered view (main.js). A building that stands partly in the box of the City
+// (Mei Tung House) fades to a faint dither as the storeys open, so that the slabs of the
+// storeys do not cut through it.
+export const CONTEXT_U = { uNight: { value: 0 }, uLit: { value: 0 }, uOpen: { value: 0 } };
+// aCtx: [metres along the walls, seed of the building, 1 on a wall (0 on a roof), 1 in the box].
+const CTX_VERT = ['#include <common>', `#include <common>
+attribute vec4 aCtx; varying vec4 vCtx; varying float vCtxY;`, '#include <begin_vertex>', `#include <begin_vertex>
+vCtx = aCtx; vCtxY = position.y;`];
+const CTX_FRAG = `uniform float uNight; uniform float uLit; uniform float uOpen; varying vec4 vCtx; varying float vCtxY;
+float ctxIgn(vec2 p) { return fract(52.9829189 * fract(dot(p, vec2(0.06711056, 0.00583715)))); }
+float ctxHash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }`;
+const CTX_OPEN = 'if (vCtx.w > 0.5 && ctxIgn(gl_FragCoord.xy) < 0.85 * uOpen) discard;';
 CONTEXT_MAT.onBeforeCompile = (s) => {
-  s.vertexShader = s.vertexShader.replace('#include <defaultnormal_vertex>', `#include <defaultnormal_vertex>
-transformedNormal = normalize(mix(normalize(transformedNormal), mat3(viewMatrix) * vec3(0.0, 1.0, 0.0), 0.55));`);
+  Object.assign(s.uniforms, CONTEXT_U);
+  s.vertexShader = s.vertexShader.replace(CTX_VERT[0], CTX_VERT[1]).replace(CTX_VERT[2], CTX_VERT[3]);
+  s.fragmentShader = s.fragmentShader
+    .replace('#include <common>', `#include <common>
+${CTX_FRAG}`)
+    .replace('void main() {', `void main() {
+  ${CTX_OPEN}`)
+    .replace('#include <normal_fragment_begin>', `#include <normal_fragment_begin>
+normal = normalize(mix(normal, normalize(mat3(viewMatrix) * vec3(0.0, 1.0, 0.0)), 0.3));`)
+    // Lit windows at night (none by day or at dawn): a bay 3.2 m wide on each storey of 2.9 m;
+    // a window in the middle of each bay, lit by chance at the share uLit. Some warm, some the
+    // blue-white of a tube.
+    .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+vec2 g = vec2(vCtx.x / 3.2, vCtxY / 2.9), w = fwidth(g);
+if (vCtx.z > 0.5 && uNight > 0.0) {
+  vec2 c = floor(g), f = fract(g);
+  float m = smoothstep(0.25 - w.x, 0.25 + w.x, f.x) * smoothstep(0.75 + w.x, 0.75 - w.x, f.x)
+          * smoothstep(0.32 - w.y, 0.32 + w.y, f.y) * smoothstep(0.8 + w.y, 0.8 - w.y, f.y);
+  float h = ctxHash(c + vec2(vCtx.y * 61.0, vCtx.y * 17.0));
+  vec3 tint = fract(h * 37.0) < 0.6 ? vec3(1.0, 0.72, 0.42) : vec3(0.72, 0.84, 1.0);
+  totalEmissiveRadiance += tint * (0.2 * m * step(h, uLit) * smoothstep(0.35, 0.9, uNight));
+}`);
 };
 CONTEXT_MAT.customProgramCacheKey = () => 'kwc-context';
+// The shadow of a building that fades in the layered view fades with it.
+const CONTEXT_DEPTH = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
+CONTEXT_DEPTH.onBeforeCompile = (s) => {
+  Object.assign(s.uniforms, CONTEXT_U);
+  s.vertexShader = s.vertexShader.replace(CTX_VERT[0], CTX_VERT[1]).replace(CTX_VERT[2], CTX_VERT[3]);
+  s.fragmentShader = s.fragmentShader.replace('#include <common>', `#include <common>
+${CTX_FRAG}`).replace('void main() {', `void main() {
+  ${CTX_OPEN}`);
+};
+CONTEXT_DEPTH.customProgramCacheKey = () => 'kwc-context-depth';
 
-// Low blocks on the ground round the city, out to FADE_FAR. Kowloon City around the Walled
-// City was kept low by the airport height limits; the blocks and their heights are
-// placeholders. The ground is a disc that ends where the haze is whole.
-function buildContextCity(L) {
-  const rng = mulberry32(5);
-  const box = new THREE.BoxGeometry(1, 1, 1);
-  box.translate(0, 0.5, 0);
-  const n = 8000;
-  const mesh = new THREE.InstancedMesh(box, CONTEXT_MAT, n);
-  const m = new THREE.Matrix4(), c = new THREE.Color();
-  const cx = L.x0 + L.W / 2, cz = L.z0 + L.D / 2;
-  let k = 0;
-  const block = 15, street = 5, R = Math.ceil(FADE_FAR / (block + street));
-  for (let gx = -R; gx <= R && k < n; gx++)
-    for (let gz = -R; gz <= R && k < n; gz++) {
-      const bx = cx + gx * (block + street) + (gz % 3) * 4, bz = cz + gz * (block + street);
-      if (Math.hypot(bx - cx, bz - cz) > FADE_FAR - block) continue;
-      if (Math.abs(bx - cx) < L.W * 0.55 && Math.abs(bz - cz) < L.D * 0.55) continue;
-      if (rng() < 0.07) continue;
-      const parts = 1 + Math.floor(rng() * 3);
-      for (let p = 0; p < parts && k < n; p++) {
-        const w = block / parts;
-        const h = 4 + rng() * 7 + (rng() < 0.05 ? 7 : 0);
-        m.makeScale(w - 0.6, h, block - 0.8 - rng() * 4);
-        m.setPosition(bx - block / 2 + w * (p + 0.5), 0, bz);
-        mesh.setMatrixAt(k, m);
-        c.setHSL(0.11, 0.02 + rng() * 0.03, 0.8 + rng() * 0.1);
-        mesh.setColorAt(k, c);
-        k++;
-      }
+// The buildings of data/context.json stand on the ground, each from its outline up to its
+// height, all in one mesh; the ground is a disc that ends where the haze is whole.
+function buildContextCity(L, ctx) {
+  const pos = [], nor = [], col = [], att = [];
+  const base = new THREE.Color(), c = new THREE.Color();
+  const box = (x, z) => x > L.x0 && x < L.x0 + L.W && z > L.z0 && z < L.z0 + L.D;
+  const put = (x, y, z, n, k, a) => { pos.push(x, y, z); nor.push(...n); col.push(base.r * k, base.g * k, base.b * k); att.push(...a); };
+  drawnBuildings(ctx).forEach((b, id) => {
+    let ring = b.ring.filter((p, i, r) => Math.hypot(p[0] - r[(i + 1) % r.length][0], p[1] - r[(i + 1) % r.length][1]) > 0.05);
+    if (ring.length < 3) return;
+    // Clockwise in (x, z), so that each wall faces out.
+    if (ring.reduce((s, p, i) => { const q = ring[(i + 1) % ring.length]; return s + p[0] * q[1] - q[0] * p[1]; }, 0) > 0) ring = ring.slice().reverse();
+    const rng = mulberry32(id * 7 + 3), seed = rng();
+    base.setHSL(0.09 + rng() * 0.03, 0.03 + rng() * 0.04, 0.79 + rng() * 0.08);
+    const h = b.height, inBox = ring.some(([x, z]) => box(x, z)) ? 1 : 0;
+    let u = 0;
+    for (let i = 0; i < ring.length; i++) {
+      const [px, pz] = ring[i], [qx, qz] = ring[(i + 1) % ring.length];
+      const l = Math.hypot(qx - px, qz - pz), n = [-(qz - pz) / l, 0, (qx - px) / l];
+      const a0 = [u, seed, 1, inBox], a1 = [u + l, seed, 1, inBox];
+      put(px, 0, pz, n, 0.84, a0); put(qx, 0, qz, n, 0.84, a1); put(qx, h, qz, n, 1, a1);
+      put(px, 0, pz, n, 0.84, a0); put(qx, h, qz, n, 1, a1); put(px, h, pz, n, 1, a0);
+      u += l;
     }
-  mesh.count = k;
-  mesh.receiveShadow = true;
+    const tris = THREE.ShapeUtils.triangulateShape(ring.map(([x, z]) => new THREE.Vector2(x, z)), []);
+    for (const t of tris) {
+      let [p, q, r] = t.map((i) => ring[i]);
+      if ((q[1] - p[1]) * (r[0] - p[0]) - (q[0] - p[0]) * (r[1] - p[1]) < 0) [q, r] = [r, q]; // face up
+      for (const v of [p, q, r]) put(v[0], h, v[1], [0, 1, 0], 1.07, [0, seed, 0, inBox]);
+    }
+  });
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  geo.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  geo.setAttribute('aCtx', new THREE.Float32BufferAttribute(att, 4));
+  const mesh = new THREE.Mesh(geo, CONTEXT_MAT);
+  mesh.customDepthMaterial = CONTEXT_DEPTH;
+  mesh.castShadow = mesh.receiveShadow = true;
+  const cx = L.x0 + L.W / 2, cz = L.z0 + L.D / 2;
   // A little below the street, so that the two do not fight where they overlap.
-  const ground = new THREE.Mesh(new THREE.CircleGeometry(FADE_FAR, 128).rotateX(-Math.PI / 2), GROUND_MAT);
+  const ground = flat(new THREE.Mesh(new THREE.CircleGeometry(FADE_FAR, 128).rotateX(-Math.PI / 2), GROUND_MAT), 'ground');
   ground.position.set(cx, -0.05, cz);
-  ground.receiveShadow = true;
   const g = new THREE.Group();
   g.add(mesh, ground);
   return g;
@@ -198,6 +342,17 @@ function skyAt(table, alt) {
   return table[table.length - 1][1];
 }
 
+// The share of the windows round the City that are lit, by the hour: most in the evening,
+// few after midnight, some again before dawn. INFERRED; no source counts them.
+const LIT = [[0, 0.08], [2, 0.04], [5, 0.03], [6.5, 0.07], [8, 0.04], [17, 0.1], [19, 0.15], [22.5, 0.13], [24, 0.08]];
+function litAt(hour) {
+  for (let i = 0; i + 1 < LIT.length; i++) {
+    const [h0, v0] = LIT[i], [h1, v1] = LIT[i + 1];
+    if (hour <= h1) return v0 + ((v1 - v0) * (hour - h0)) / (h1 - h0);
+  }
+  return LIT[0][1];
+}
+
 export class Lighting {
   constructor(scene, center, site) {
     this.scene = scene;
@@ -254,12 +409,20 @@ export class Lighting {
     const d = skyAt(skyDay, alt / D), n = skyAt(skyNight, alt / D);
     this.sky.setRGB(d.r + (n.r - d.r) * night, d.g + (n.g - d.g) * night, d.b + (n.b - d.b) * night, THREE.SRGBColorSpace);
     this.scene.fog.color.copy(this.sky);
-    // The ground and the city around darken on the same curve.
+    // The ground and the city around darken on the same curve. The roads take a little more of
+    // the sodium glow than the ground, and the roofs less.
     const dark = 1 - 0.7 * night;
     CONTEXT_MAT.color.setScalar(dark);
+    OPEN_MAT.color.setScalar(dark);
     GROUND_MAT.color.copy(GROUND).multiplyScalar(dark);
+    ROAD_MAT.color.copy(ROAD).multiplyScalar(dark);
+    KERB_MAT.color.copy(KERB).multiplyScalar(dark);
+    DASH_MAT.color.copy(DASH).multiplyScalar(1 - 0.75 * night);
     CONTEXT_MAT.emissive.copy(SODIUM).multiplyScalar(0.012 * night);
-    GROUND_MAT.emissive.copy(SODIUM).multiplyScalar(0.02 * night);
+    for (const m of [GROUND_MAT, OPEN_MAT, KERB_MAT]) m.emissive.copy(SODIUM).multiplyScalar(0.02 * night);
+    ROAD_MAT.emissive.copy(SODIUM).multiplyScalar(0.035 * night);
+    CONTEXT_U.uNight.value = night;
+    CONTEXT_U.uLit.value = litAt(hour);
     return night;
   }
 }

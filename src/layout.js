@@ -13,6 +13,7 @@ import { mulberry32, vnoise, clamp, weighted } from './util.js';
 import { buildFootprints, mainAxis, LANE, YARD, ROAD } from './footprint.js';
 import { setupCores, makePlan, WORK_AREA } from './floorplan.js';
 import { BOOK_PEOPLE } from './residents.js';
+import { drawnBuildings, inRing } from './context.js';
 
 // No measured storey height is in hand. 3.05 m is a usual Hong Kong tenement storey.
 export const STOREY = 3.05;
@@ -172,7 +173,8 @@ export function decodePlan(plan) {
   return code;
 }
 
-export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
+// context: data/context.json (the real buildings round the City), or null.
+export function buildLayout(site, plan, biz = null, book = null, context = null, seed = 1986) {
   const rng = mulberry32(seed);
   const pc = decodePlan(plan);
   const W = plan.W + 2 * MARGIN, D = plan.D + 2 * MARGIN, N = W * D;
@@ -470,12 +472,25 @@ export function buildLayout(site, plan, biz = null, book = null, seed = 1986) {
     if (!inside[k] || alley[k]) cost[k] = 1;
     else if (owner[k] >= 0) cost[k] = buildings[owner[k]].kind === 'yamen' ? 3 : 6;
   }
+  // A real building of 1986 that stands on the street plate (Mei Tung House) closes its cells:
+  // no walk goes through it.
+  for (const b of context ? drawnBuildings(context) : []) {
+    const xs = b.ring.map((p) => p[0]), zs = b.ring.map((p) => p[1]);
+    for (let j = Math.max(0, Math.floor(Math.min(...zs) - z0)); j < Math.min(D, Math.ceil(Math.max(...zs) - z0)); j++)
+      for (let i = Math.max(0, Math.floor(Math.min(...xs) - x0)); i < Math.min(W, Math.ceil(Math.max(...xs) - x0)); i++)
+        if (!inside[j * W + i] && inRing(x0 + i + 0.5, z0 + j + 0.5, b.ring)) cost[j * W + i] = 0;
+  }
 
-  // People who leave the city walk to an exit at the edge of the street plate, where they fade
-  // out (figures.js).
+  // People who leave the city walk to an exit, where they fade out (figures.js). On the north
+  // and east the exits are on the real roads of 1986 (data/context.json): three on the near
+  // carriageway of Tung Tau Tsuen Road, and two on Tung Tsing Road. On the open ground to the
+  // south and west, the exits are at the edge of the street plate. tools/check_context.mjs
+  // checks that each exit is on a road or on the street.
+  const cellAt = ([x, z]) => Math.floor(z - z0) * W + Math.floor(x - x0);
+  const north = [[-76.5, -63], [0.5, -60], [76.5, -78]], east = [[126.5, -32], [123.5, 30]];
   const away = [];
-  for (const f of [0.22, 0.5, 0.78]) { away.push(Math.round(f * (W - 1))); away.push((D - 1) * W + Math.round(f * (W - 1))); }
-  for (const f of [0.33, 0.66]) { away.push(Math.round(f * (D - 1)) * W); away.push(Math.round(f * (D - 1)) * W + W - 1); }
+  [0.22, 0.5, 0.78].forEach((f, q) => { away.push(cellAt(north[q])); away.push((D - 1) * W + Math.round(f * (W - 1))); });
+  [0.33, 0.66].forEach((f, q) => { away.push(Math.round(f * (D - 1)) * W); away.push(cellAt(east[q])); });
 
   // The 40 numbers of the 1992 map (City of Darkness Revisited, pp352-353), fitted to the plan
   // by tools/book_overlay.py. APPROXIMATE: the map "cannot be considered entirely accurate"

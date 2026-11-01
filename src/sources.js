@@ -13,7 +13,6 @@ const WEB = GH('retrospective-testimony-web', 'HK01 2024, SCMP 2013 and 2018, M+
 const LCSD = A('https://www.lcsd.gov.hk/en/parks/kwcp/historical.html', 'LCSD');
 const ZHWP = A('https://zh.wikipedia.org/wiki/九龍寨城', 'ZH Wikipedia');
 const BOOK = GH('city-of-darkness-revisited', 'City of Darkness Revisited (2014)');
-const OSM = A('https://www.openstreetmap.org/relation/1650915', 'OSM relation 1650915');
 const CSDI = A('https://portal.csdi.gov.hk', 'the CSDI Portal');
 
 // A person of the 1992 map: the number, the name, the trade, the page, the words of the key
@@ -125,11 +124,17 @@ composite. A detail that no source records is marked inferred.</p>
     (p188) and meter banks at the stairs (p101). A well is near the standpipe (map no. 34, p120).</li>
   <li><span class="st ok">PLANES</span>Airliners on the runway 13 approach to Kai Tak passed low beside the city
     (a police officer, SCMP 2018; the tailor across the road, HK01 2022).</li>
-  <li><span class="st ok">AROUND</span>The real buildings, roads and open ground within 600 m of the city, as
-    they stood in December 1986, are in <code>data/context.json</code>. They come from the Lands Department
+  <li><span class="st ok">AROUND</span>The model draws the real buildings, roads and open ground within 600 m of the
+    city, as they stood in December 1986 (<code>data/context.json</code>). They come from the Lands Department
     1:1000 survey sheets of 1987 (with the editions of 1981–85 as a check) and the building and road data of
-    ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Heights are from the building
-    data, or storeys × 2.9 m; the other heights are inferred and marked. The model does not draw them yet.</li>
+    ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Each building stands from the ground
+    to its height. In the data, 613 heights are from the building data, or storeys × 2.9 m; the other 652 are inferred, and
+    the data marks each one. Mei Tung House 美東樓 (12 storeys, 1974), the long slab across Tung Tau Tsuen Road,
+    stands whole. Tung Tau Estate Block 22 (16 storeys, 1965) stands across Tung Tsing Road, and on December
+    mornings its shadow can reach the east face of the city. The roads are at their widths on the 1987 sheets.
+    The open ground is the cleared ground of Sai Tau Tsuen, the building sites, the market and the football
+    field. The fit of the city on the 1987 sheet also gives the bearing of the model: 63.6°, not 60°. Thus north,
+    the sun and the approach of the planes turn 3.6°.</li>
 </ul>
 
 <h4>People of the 1992 map, not in the model</h4>
@@ -211,8 +216,11 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     puts the place. For a place that the model does not put, the number lies on the building under it on the
     1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
-  <li><span class="st prov">KOWLOON</span>The grey blocks round the City and their heights. They hold the place of the
-    real buildings, which the model does not draw yet. The colours of the sky and the haze at each height of the sun.</li>
+  <li><span class="st prov">KOWLOON</span>The greys of the buildings, roads and open ground round the City, and the
+    lit windows at night: their count at each hour and which ones are lit. The 9 road segments with no measured
+    width (each 280 m or more from the centre of the City) are 7 m wide. The dark street under the City ends at
+    the kerbs of the real roads; its shape is not a source. The colours of the sky and the haze at each height of
+    the sun.</li>
   <li><span class="st prov">BUILDING</span>What a click selects as one building: a tower of the 1987 plan (p134), and
     the 17 halls of the Yamen as one. This gives 270 buildings. The plan fits the traced plots only approximately,
     thus a tower can differ from the real building. Each building has the same plots on each storey. Suenn Ho's
@@ -261,7 +269,7 @@ bed. The browser makes each sound, and the app has no recordings.</p>
 <h4>Secondary, for scale only</h4>
 <ul>
   <li><span class="st prov">SIZE</span>26,000 m² for the plots and lanes (${LCSD}); about 700 ft for the long side
-    in the 1898 survey (${ZHWP}); the bearing of Tung Tau Tsuen Road (${OSM}, ODbL).</li>
+    in the 1898 survey (${ZHWP}).</li>
 </ul>
 <p>Visual language after Andrew Blinn's exploded-city prototype
 (${A('https://x.com/disconcision/status/2115661869478469848', 'x.com/disconcision')}).

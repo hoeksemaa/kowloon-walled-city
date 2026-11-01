@@ -9,8 +9,15 @@
 // residuals under 1 m, and a median shift under 0.75 m), or the City fit is poor. It also
 // fails if the whole outline of a building that the plate cuts (plateClipped) reaches onto
 // the City itself.
+//
+// Then it checks what the app draws (src/context.js, src/env.js, src/layout.js). It fails if a
+// drawn outline covers a cell of the City, if the dark street round the City reaches under a
+// drawn building, if an exit of the people is not on the street or on a road, or if a walk on
+// the grid between an exit and the City goes through a drawn building.
 import { readFileSync } from 'node:fs';
-import { MARGIN } from '../src/layout.js';
+import { MARGIN, buildLayout } from '../src/layout.js';
+import { Sim } from '../src/people.js';
+import { drawnBuildings, buildStreet } from '../src/context.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -154,6 +161,59 @@ console.log('the least clearance below the track:');
 for (const { b, low, lat } of close.sort((a, c) => (a.low - a.b.height) - (c.low - c.b.height)).slice(0, 5)) {
   console.log(`  ${b.id} ${b.name || ''} height ${b.height} m (${b.confidence}), track ${low.toFixed(1)} m, ${lat.toFixed(0)} m to the side`);
 }
+
+// ---- what the app draws ----
+const book = json('data/book.json');
+book.overlay = json('data/book_overlay.json');
+const L = buildLayout(null, plan, json('data/businesses.json'), book, C);
+const drawn = drawnBuildings(C);
+const street = buildStreet(L, C.roads);
+const near = drawn.filter((b) => b.ring.some(([x, z]) => Math.abs(x) < x1 + 20 && Math.abs(z) < z1 + 20));
+let onCity = 0, underStreet = 0;
+for (const b of near) {
+  const xs = b.ring.map((p) => p[0]), zs = b.ring.map((p) => p[1]);
+  let city = 0, st = 0;
+  for (let x = Math.min(...xs) + 0.25; x < Math.max(...xs); x += 0.5)
+    for (let z = Math.min(...zs) + 0.25; z < Math.max(...zs); z += 0.5) {
+      if (!inRing(x, z, b.ring)) continue;
+      const i = Math.floor(x - L.x0), j = Math.floor(z - L.z0);
+      if (i >= 0 && j >= 0 && i < L.W && j < L.D && L.inside[j * L.W + i]) city++;
+      if (street.onStreet(x, z)) st++;
+    }
+  if (city) problems.push(`${b.id} (${b.name || ''}): ${(city * 0.25).toFixed(1)} m2 on a cell of the City`);
+  if (st * 0.25 > 0.5) problems.push(`${b.id} (${b.name || ''}): ${(st * 0.25).toFixed(1)} m2 of the dark street under it`);
+  onCity += city; underStreet += st;
+}
+const streetArea = street.street.reduce((s, v) => s + v, 0) / street.RES ** 2;
+console.log(`drawn: ${drawn.length} buildings (${C.plateClipped.map((c) => c.name).join(', ')} whole); ${near.length} near the plate; the dark street ${Math.round(streetArea)} m2 of the plate's ${L.W * L.D} m2`);
+
+// The exits of the people (layout.js): on the street or on a road, and the walks on the grid
+// (people.js) between each exit and the City stay clear of the drawn buildings.
+const sim = new Sim(L, []);
+const hit = (x, z) => near.find((b) => inRing(x, z, b.ring));
+for (const [q, c] of L.away.entries()) {
+  const x = L.cellX(c), z = L.cellZ(c);
+  const where = street.onRoad(x, z) ? 'a road' : street.onStreet(x, z) ? 'the street' : null;
+  if (!where || hit(x, z)) problems.push(`exit ${q} at (${x}, ${z}): not on a road or the street`);
+}
+const lanes = [];
+for (let k = 0; k < L.N; k++) if (L.inside[k] && L.alley[k] === 1) lanes.push(k);
+const sample = lanes.filter((_, i) => i % Math.ceil(lanes.length / 60) === 0);
+let walks = 0, bad = 0;
+for (const e of L.away)
+  for (const c of sample)
+    for (const [a, b] of [[e, c], [c, e]]) {
+      const pts = [[L.cellX(a), L.cellZ(a)]];
+      sim.groundRoute(a, b, 0, 0, pts);
+      walks++;
+      let through = null;
+      for (let i = 0; i + 1 < pts.length && !through; i++) {
+        const [ax, az] = pts[i], [bx, bz] = pts[i + 1], n = Math.ceil(Math.hypot(bx - ax, bz - az) / 0.5);
+        for (let s = 0; s <= n && !through; s++) through = hit(ax + ((bx - ax) * s) / n, az + ((bz - az) * s) / n);
+      }
+      if (through && bad++ < 5) problems.push(`a walk from cell ${a} to cell ${b} goes through ${through.id} (${through.name || ''})`);
+    }
+console.log(`exits: ${L.away.length}, each on a road or the street; ${walks} walks between the exits and the lanes of the City, ${bad} through a drawn building`);
 
 if (problems.length) {
   console.log(`\n${problems.length} problems:`);

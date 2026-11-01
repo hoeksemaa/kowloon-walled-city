@@ -18,7 +18,7 @@ import { Outline } from './select.js';
 import { panelHtml, premLine } from './panel.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
-import { buildEnvironment, Lighting } from './env.js';
+import { buildEnvironment, Lighting, CONTEXT_U } from './env.js';
 import { Labels } from './labels.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
@@ -113,19 +113,19 @@ const sound = new Sound(); // off until the user turns it on
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const [plan, biz, book, overlay] = await Promise.all(['./data/plan.json', './data/businesses.json', './data/book.json', './data/book_overlay.json']
+  const [plan, biz, book, overlay, context] = await Promise.all(['./data/plan.json', './data/businesses.json', './data/book.json', './data/book_overlay.json', './data/context.json']
     .map((u) => fetch(u).then((r) => r.json())));
   book.overlay = overlay;
   bookStreets = book.streets;
   mapStreets = overlay.streets;
   site = buildSite(plan);
-  L = buildLayout(site, plan, biz, book);
+  L = buildLayout(site, plan, biz, book, context);
   L.routes = buildRoutes(L);
   lamps.setBox(L);
   useMap = new UseMap(L);
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
-  const env = buildEnvironment(scene, L);
+  const env = buildEnvironment(scene, L, context);
 
   // ---- storeys ----
   // Each storey is one group, moved only up and down: the normal view is the storeys of the
@@ -203,14 +203,16 @@ async function init() {
   // ---- labels: street names, place numbers, storey labels (labels.js) ----
   // The plates draw their words on canvases: wait for the pixel font, but not for ever.
   await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
-  labels = new Labels({ L, site, levels, road: env.roadOutline, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
+  labels = new Labels({ L, site, levels, road: env.roadOutline, street: env.street, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
 
   // ---- wires ----
   wires = new WireLayer(L, buildWires(L));
   scene.add(wires.object);
 
   // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
-  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62);
+  // The bearing of 134° in the plan frame (PLAN_BEARING, site.js): 134° - 63.63° from the
+  // plan's +x. The point abeam the city is in plan metres.
+  planes = new Planes(scene, [0.3359, 0.9419], [182, -52], 62);
 
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
@@ -245,6 +247,7 @@ function setSlabs() {
   const a = smoothstep(0.05, 0.7, state.explode);
   DIM.uDimOn.value = a;
   outline.apart(a);
+  CONTEXT_U.uOpen.value = a; // Mei Tung House fades, so that the slabs do not cut it (env.js)
   for (const lv of levels) {
     lv.slab.visible = show && state.cut < 0;
     lv.edge.visible = show;

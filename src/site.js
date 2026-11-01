@@ -1,16 +1,21 @@
 // The site: the city outline and its orientation.
 //
 // The outline comes from the traced 1980s street plan (data/plan.json, see
-// tools/trace_plan.py). The plan's "up" is the Tung Tau Tsuen Road side. That road runs at a
-// bearing of about 59.5° beside the park, and Tung Tsing Road on the short side at about
-// 148° (OSM). Thus the plan's "right" points along a bearing of about 60°.
+// tools/trace_plan.py). The plan's "up" is the Tung Tau Tsuen Road side, its "right" the Tung
+// Tsing Road side, and its "down" faces Carpenter Road. The bearing of the plan's "right" comes
+// from the City on the 1:1000 survey sheet 11-NE-11A of 1987-05: tools/context.py first took
+// 60° (from the roads in OSM), then fitted the plan outline to the City on the sheet. The fit
+// turns the plan by th = 0.06327 rad (3.63°) more (cityFit in data/context.json). Thus the
+// plan's "right" points along a bearing of 63.63°. data/context.json is in this frame. Check:
+// in that data Tung Tau Tsuen Road runs at about 60-67° beside the City, Tung Tsing Road at
+// about 132-157° and Carpenter Road at about 92°.
 //
 // The park outline below (OpenStreetMap relation 1650915, "Kowloon Walled City Park",
 // © OpenStreetMap contributors, ODbL) is kept for reference only. The park is larger than
 // the city, because it also covers former Sai Tau Tsuen land on the south and west.
 import { polygonArea } from './util.js';
 
-export const PLAN_BEARING = 60; // degrees from north, of the plan's +x axis
+export const PLAN_BEARING = 63.63; // degrees from north, of the plan's +x axis: 60° + th
 export const CENTRE_LATLON = [22.33222, 114.19028]; // EN Wikipedia
 
 export const PARK_OUTLINE_LONLAT = [

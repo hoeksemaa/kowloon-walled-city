@@ -15,7 +15,7 @@ const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
 const book = json('data/book.json');
 book.overlay = json('data/book_overlay.json');
-const L = buildLayout(null, json('data/plan.json'), json('data/businesses.json'), book);
+const L = buildLayout(null, json('data/plan.json'), json('data/businesses.json'), book, json('data/context.json'));
 const B = L.buildings, W = L.W;
 const problems = [], nooks = [];
 

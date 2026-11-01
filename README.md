@@ -58,11 +58,13 @@ python3 serve.py 8173
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
   the tubes; at night the windows are blue-white, and Kowloon beyond is dark, with a faint
   sodium glow.
-- **Surroundings.** The City and the ground round it are at one level. A dark rectangle under
-  the City holds its streets, and it is also the floor shape of each storey in the layered
-  view. Low grey blocks round it hold the place of the real buildings. They are clear out to
-  350 m from the centre, fade slowly into the haze, and are gone at 600 m. The sky and the
-  haze follow the light of the city: pale grey by day, warm at dusk, dark slate at night.
+- **Surroundings.** The real buildings, roads and open ground of December 1986 stand round
+  the City, at one level with it. The buildings rise to their heights in light warm greys,
+  cast shadows, and show a few lit windows at night. The roads have their widths, kerbs, and
+  centre-line dashes near the City. The dark street under the City ends at the road kerbs.
+  All of it is clear out to 350 m from the centre, fades slowly into the haze, and is gone
+  at 600 m. The sky and the haze follow the light of the city: pale grey by day, warm at
+  dusk, dark slate at night.
 - **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
   that a resident recorded.
 - **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
@@ -122,9 +124,16 @@ building has an outline, a height, its storeys, its dates, a source, and "source
 1987 (the editions of 1981-85 are a check) and the CSDI Building and Road Network data.
 Source: the Government of the Hong Kong SAR and the CSDI Portal; see
 `data/CONTEXT-NOTICE.md`. This data does not have a Creative Commons licence. No scan or
-download is in the repository. The app does not draw this data yet. The City plate of the
-model covers 59% of Mei Tung House, the long slab north of the City. The data keeps the
-parts off the plate as buildings, and `plateClipped` keeps the whole outline.
+download is in the repository. The City plate of the model covers 59% of Mei Tung House,
+the long slab north of the City. The data keeps the parts off the plate as buildings, and
+`plateClipped` keeps the whole outline.
+
+`src/context.js` picks the outlines that the app draws, and `src/env.js` draws them. For a
+building that the plate cuts, the app draws the whole outline from `plateClipped`. Thus
+Mei Tung House stands whole. Of the 1,263 drawn buildings, 611 have a sourced height and
+652 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
+segments with no measured width are inferred. The fit of the City on the 1987 sheet turns the
+model 3.6°: plan +x points along the bearing 63.6° (`PLAN_BEARING`, `src/site.js`).
 
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
@@ -135,6 +144,11 @@ City plate or beyond 600 m, if a building has no source, or if a survey sheet do
 register on the standing buildings. It also fails if a whole outline in `plateClipped`
 reaches onto the City itself. It prints the buildings near the approach track of the planes
 that are taller than the track.
+
+Then `check_context.mjs` checks what the app draws. It fails if a drawn outline covers a
+cell of the City, or if the dark street reaches under a drawn building. It also fails if an
+exit of the people is not on the street or a road. Last, it fails if a walk between an exit
+and the lanes of the City goes through a drawn building.
 
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.

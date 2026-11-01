@@ -32,12 +32,13 @@ an ET). That file also holds the City fit, the CSDI footprints that are left out
 rules and the open ground. `build` reads only DL and that file.
 
 The plan frame. HK1980 Grid (E, N) goes to plan metres (x, z) in two steps:
-1. T0, from src/site.js: dE = E - E0, dN = N - N0 with the anchor E0 837649.05,
-   N0 821463.67 (22.33222 N, 114.19028 E, the centre of the plan box); then
-   x = sin(b) dE + cos(b) dN, z = cos(b) dE - sin(b) dN, with b = PLAN_BEARING = 60 deg.
+1. T0: dE = E - E0, dN = N - N0 with the anchor E0 837649.05, N0 821463.67
+   (22.33222 N, 114.19028 E, the centre of the plan box); then
+   x = sin(b) dE + cos(b) dN, z = cos(b) dE - sin(b) dN, with b = 60 deg (BEARING).
 2. The City fit: the 1987 sheet's outline of the City meets the outline of plan.json when
    the plan is turned by `th` and moved by (dx, dz). Thus p = R(-th) (T0(E, N) - (dx, dz)).
    The fit keeps the scale at 1 (a free scale gives 0.996-1.010).
+   Thus the plan's +x points along a bearing of b + th = 63.63 deg: PLAN_BEARING in src/site.js.
 """
 import glob
 import json
@@ -923,7 +924,7 @@ def build(dl):
     count = lambda R, pred=lambda b: True: sum(1 for b in out if near(b['ring'], R) and pred(b))
     head = dict(
         about='The buildings, roads and open ground round Kowloon Walled City as they stood in December 1986, '
-              'within %d m of the centre of the plan box. Data only: the app does not draw it yet.' % RADIUS,
+              'within %d m of the centre of the plan box. src/env.js draws it.' % RADIUS,
         notice=NOTICE,
         units='metres', frame='plan: x and z as in data/plan.json, with the origin at the centre of the plan box '
               '(the scene frame of src/layout.js); y up; base 0 for every building',
