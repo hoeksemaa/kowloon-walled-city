@@ -8,7 +8,8 @@
 // for each metre across. Thus a building of height h hides a part of the City exactly when its
 // outline, pushed along the ground away from the camera by up to h / tan(e), touches the City
 // outline (site.polygon). The building then hides at least the foot of the City wall there,
-// at y = 0. The height of the City does not change the result, because the City always stands on the
+// at y = 0. A point higher on the City is hidden only if the foot below it is hidden too. Thus
+// the height of the City does not change the result, because the City always stands on the
 // ground: the result is the same in the normal view, with a cut storey, and in the layered
 // view, where G/F stays on the ground and the storeys above it go up. The zoom, the pan and
 // the lift of the layered view do not change it either: only the view direction does. Thus
