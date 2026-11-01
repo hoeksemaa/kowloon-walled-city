@@ -445,7 +445,8 @@ function useCount(key) {
     return line(`<b>corridors</b> in ${new Set(p.corridors.map((q) => q.b)).size} blocks on ${lv}`) + line(`${doors} doors to the next block · plan inferred`) + keep;
   }
   const bs = useMap.blocks(key), n = bs.length, inf = bs.filter((b) => b.inferred && b.inferred[state.cut]).length;
-  const head = line(`<b>${n ? `${n} block${n === 1 ? '' : 's'}` : 'none'}</b> on ${lv} · ${USE_LABEL[key]}`);
+  // The head of the legend names the storey, thus this line has room for the longest use.
+  const head = line(`<b>${n ? `${n} block${n === 1 ? '' : 's'}` : 'no blocks'}</b> · ${USE_LABEL[key]}`);
   const split = key === 'home' || !n ? line('') : line(`<span class="ln"></span>${n - inf} recorded${inf ? ` <span class="ln d"></span>${inf} inferred (1983 count)` : ''}`);
   return head + split + keep;
 }
@@ -737,8 +738,12 @@ function renderLegend() {
     const row = (key, label, extra = '') => `<button class="row${extra}" data-key="${key}" aria-pressed="false"><span class="sq" style="background:${useColor(key)}"></span><span class="lb">${label}</span>${LOCK_ICON}</button>`;
     // A use kept lit that this storey does not have stays at the top, in grey.
     const gone = state.useLock && USE_LABEL[state.useLock] && !here.has(state.useLock) ? row(state.useLock, `${USE_LABEL[state.useLock]} · none on this storey`, ' none') : '';
-    g.push(`<div class="grp"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
-      ${row('corridor', 'corridor, door to the next block')}${row('link', 'link to the next building (place inferred)')}
+    // The link row shows on a storey that has links, and in grey if the links are kept lit.
+    const links = useMap.plan && useMap.plan.doors.some((d) => d.link);
+    const link = links ? row('link', 'link to the next building (place inferred)')
+      : state.useLock === 'link' ? row('link', 'link to the next building · none on this storey', ' none') : '';
+    g.push(`<div class="grp use"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
+      ${row('corridor', 'corridor, door to the next block')}${link}
       <div class="use-n"></div></div>`);
   }
   if (wires && wires.object.visible) {

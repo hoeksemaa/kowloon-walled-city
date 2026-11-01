@@ -143,6 +143,8 @@ button { font: inherit; color: inherit; }
 #legend button.row.lock .lk { visibility: visible; }
 #legend button.row.none { color: var(--ink-2); }
 #legend button.row.none .sq { filter: grayscale(1); opacity: 0.6; }
+/* The floor-use group is as wide as its widest count line, on each storey. */
+#legend .grp.use { min-width: 47ch; }
 #legend .use-n { width: 0; min-width: 100%; height: calc(3 * 1.45em + 5px); margin-top: 5px; padding-top: 4px; border-top: 1px dotted var(--ink-3); color: var(--ink-2); font-size: 10.5px; line-height: 1.45; }
 #legend .use-n div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 1.45em; }
 #legend .use-n b { color: var(--ink); font-weight: 600; }
