@@ -500,10 +500,11 @@ function buildUI() {
   canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
   canvas.addEventListener('pointerup', (ev) => {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
-    // A click on a street name or a place number opens its card, as a hover does.
-    if (showLabel(pickLabel())) return;
     const id = pickAgent();
     if (game.c && !game.solved) { if (id >= 0) checkPick(id); return; }
+    // A click on a street name or a place number opens its card, as a hover does. In the game,
+    // a click is for the people, also under a label.
+    if (showLabel(pickLabel())) return;
     sim.select(id);
     state.follow = false;
   });
