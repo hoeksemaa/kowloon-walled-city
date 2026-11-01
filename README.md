@@ -133,8 +133,8 @@ the long slab north of the City. The data keeps the parts off the plate as build
 
 `src/context.js` picks the outlines that the app draws, and `src/env.js` draws them. For a
 building that the plate cuts, the app draws the whole outline from `plateClipped`. Thus
-Mei Tung House stands whole. Of the 1,263 drawn buildings, 611 have a sourced height and
-652 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
+Mei Tung House stands whole. Of the 1,263 drawn buildings, 612 have a sourced height and
+651 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
 segments with no measured width are inferred. The fit of the City on the 1987 sheet turns the
 model 3.6°: plan +x points along the bearing 63.6° (`PLAN_BEARING`, `src/site.js`).
 

@@ -128,7 +128,7 @@ composite. A detail that no source records is marked inferred.</p>
     city, as they stood in December 1986 (<code>data/context.json</code>). They come from the Lands Department
     1:1000 survey sheets of 1987 (with the editions of 1981–85 as a check) and the building and road data of
     ${CSDI}. Source: the Government of the Hong Kong SAR and the CSDI Portal. Each building stands from the ground
-    to its height. In the data, 613 heights are from the building data, or storeys × 2.9 m; the other 652 are inferred, and
+    to its height. In the data, 614 heights are from the building data, or storeys × 2.9 m; the other 651 are inferred, and
     the data marks each one. Mei Tung House 美東樓 (12 storeys, 1974), the long slab across Tung Tau Tsuen Road,
     stands whole. A building that hides a part of the city fades to a faint ghost, so that the city stays in
     view. Its shadow does not change. Tung Tau Estate Block 22 (16 storeys, 1965) stands across Tung Tsing Road, and on December
