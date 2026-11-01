@@ -14,10 +14,15 @@
 // drawn outline covers a cell of the City, if the dark street round the City reaches under a
 // drawn building, if an exit of the people is not on the street or on a road, or if a walk on
 // the grid between an exit and the City goes through a drawn building.
+//
+// Last it checks the ghosts (src/occlude.js) in 48 views: it fails if a building hides a point
+// of the City wall and the test does not fade it.
 import { readFileSync } from 'node:fs';
 import { MARGIN, buildLayout } from '../src/layout.js';
 import { Sim } from '../src/people.js';
-import { drawnBuildings, buildStreet } from '../src/context.js';
+import { drawnBuildings, buildStreet, buildingPrisms } from '../src/context.js';
+import { buildSite } from '../src/site.js';
+import { Occlusion } from '../src/occlude.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -214,6 +219,57 @@ for (const e of L.away)
       if (through && bad++ < 5) problems.push(`a walk from cell ${a} to cell ${b} goes through ${through.id} (${through.name || ''})`);
     }
 console.log(`exits: ${L.away.length}, each on a road or the street; ${walks} walks between the exits and the lanes of the City, ${bad} through a drawn building`);
+
+// The ghosts: in each view, cast a ray from points of the City wall back to the camera
+// (Occlusion.hit, which the pick also uses). A building that a ray meets hides that point, thus
+// the test (Occlusion.test) must fade it. The test can also fade a building that hides less than
+// the points show (a corner of the wall between two points): those are counted, not problems.
+// The points: along the City outline every metre, at 0, 3, 15 and 40 m. The views: 12
+// directions round the City, each at 4 angles over the horizon from the lowest view of the app
+// (controls.maxPolarAngle 1.42, thus 8.6°) to 57°, the angle of the start view (33°) among them.
+{
+  const outline = buildSite(plan).polygon;
+  const occ = new Occlusion(buildingPrisms(C), outline);
+  const pts = [];
+  for (let i = 0; i < outline.length; i++) {
+    const [ax, az] = outline[i], [bx, bz] = outline[(i + 1) % outline.length], n = Math.max(1, Math.round(Math.hypot(bx - ax, bz - az)));
+    for (let s = 0; s < n; s++) for (const y of [0, 3, 15, 40]) pts.push([ax + ((bx - ax) * s) / n, y, az + ((bz - az) * s) / n]);
+  }
+  let views = 0, faded = 0, missed = 0, extra = 0, ms = 0;
+  const seen = new Uint8Array(occ.n);
+  for (let a = 0; a < 12; a++)
+    for (const e of [0.15, 0.33, 0.58, 1.0]) {
+      const az = (a * Math.PI) / 6, d = { x: -Math.sin(az) * Math.cos(e), y: -Math.sin(e), z: -Math.cos(az) * Math.cos(e) };
+      const t0 = performance.now();
+      occ.test(d.x, d.y, d.z);
+      ms += performance.now() - t0;
+      views++;
+      seen.fill(0);
+      // The points in the frame of the view (occlude.js): v across it, w along it, sorted by v.
+      const hl = Math.cos(e), ux = d.x / hl, uz = d.z / hl, k = Math.tan(e);
+      const P = pts.map(([x, y, z]) => [ux * z - uz * x, ux * x + uz * z, x, y, z]).sort((p, q) => p[0] - q[0]);
+      for (let b = 0; b < occ.n; b++) {
+        const B = occ.bld[b];
+        if (!B) continue;
+        // A circle round the building: only the rays that pass it can meet it.
+        const cx = (B.lo[0] + B.hi[0]) / 2, cz = (B.lo[1] + B.hi[1]) / 2, r = Math.hypot(B.hi[0] - cx, B.hi[1] - cz);
+        const vc = ux * cz - uz * cx, wc = ux * cx + uz * cz;
+        let lo = 0, hi = P.length;
+        while (lo < hi) { const m = (lo + hi) >> 1; if (P[m][0] < vc - r) lo = m + 1; else hi = m; }
+        for (let q = lo; q < P.length && P[q][0] <= vc + r && !seen[b]; q++) {
+          const [, w, x, y, z] = P[q];
+          if (y > B.h || wc - r > w || wc + r < w - (B.h - y) / k) continue;
+          if (occ.hitOne(b, { x: x - d.x * 1000, y: y - d.y * 1000, z: z - d.z * 1000 }, d) < 1000 - 1e-6) seen[b] = 1;
+        }
+      }
+      for (let b = 0; b < occ.n; b++) {
+        if (occ.hide[b]) faded++;
+        if (seen[b] && !occ.hide[b]) { missed++; if (missed <= 5) problems.push(`view ${a * 30}° at ${(e * 180 / Math.PI).toFixed(0)}°: building ${b} hides the City wall, but the test does not fade it`); }
+        if (!seen[b] && occ.hide[b]) extra++;
+      }
+    }
+  console.log(`ghosts: ${views} views, ${(faded / views).toFixed(1)} buildings faded in a view (mean); ${missed} missed; ${extra} faded with no wall point hidden; the test takes ${(ms / views).toFixed(2)} ms a view`);
+}
 
 if (problems.length) {
   console.log(`\n${problems.length} problems:`);
