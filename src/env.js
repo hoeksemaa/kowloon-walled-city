@@ -75,51 +75,6 @@ export function buildEnvironment(scene, L) {
   return { group, roadOutline: road };
 }
 
-// Road names painted on the street beside the side of the city they run along.
-// names: { top, right, bottom, left } (sides of the plan) -> label text.
-export function addStreetLabels(scene, site, road, names) {
-  const dirs = { top: [0, -1], bottom: [0, 1], right: [1, 0], left: [-1, 0] };
-  const n = road.length;
-  for (const [side, text] of Object.entries(names)) {
-    if (!text) continue;
-    const [dx, dz] = dirs[side];
-    let best = null;
-    for (let i = 0; i < n; i++) {
-      const [ax, az] = road[i], [bx, bz] = road[(i + 1) % n];
-      const ex = bx - ax, ez = bz - az, l = Math.hypot(ex, ez);
-      const nx = ez / l, nz = -ex / l;
-      const score = (nx * dx + nz * dz) * l;
-      if (!best || score > best.score) best = { score, mx: (ax + bx) / 2, mz: (az + bz) / 2, ex: ex / l, ez: ez / l, nx, nz, l };
-    }
-    const c = document.createElement('canvas');
-    c.width = 1024; c.height = 64;
-    const g = c.getContext('2d');
-    const draw = () => {
-      g.clearRect(0, 0, c.width, c.height);
-      g.fillStyle = '#ddd3b8';
-      g.font = '34px Silkscreen, monospace';
-      g.textAlign = 'center';
-      g.textBaseline = 'middle';
-      g.fillText(text, 512, 34);
-      tex.needsUpdate = true;
-    };
-    const tex = new THREE.CanvasTexture(c);
-    tex.colorSpace = THREE.SRGBColorSpace;
-    tex.anisotropy = 4;
-    draw();
-    document.fonts.ready.then(draw);
-    const w = Math.min(best.l * 0.8, 64);
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, w / 16), groundMat(new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false })));
-    m.rotation.x = -Math.PI / 2;
-    // Read along the road, upright from the default camera (which looks from +x, +z).
-    let ang = Math.atan2(-best.ez, best.ex);
-    if (Math.sin(ang) + Math.cos(ang) < 0) ang += Math.PI;
-    m.rotation.z = ang;
-    m.position.set(best.mx + best.nx * 3.5, 0.04, best.mz + best.nz * 3.5);
-    scene.add(m);
-  }
-}
-
 // The ground and the city around the City: light, plain greys by day, so that they show the
 // place and leave the eye on the City. At night they are dark, with a faint glow of sodium
 // amber, the colour of Kowloon seen past the roofs (#f8f1ba / #cfb272, p316). Lighting darkens
