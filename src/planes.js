@@ -59,6 +59,22 @@ function model(stripe) {
   g.add(lamp);
   g.userData.lamp = lamp;
   g.traverse((o) => { if (o.isMesh) o.castShadow = true; });
+  // At night the body darkens like the buildings round the City (env.js), and its lights show
+  // as dots of a fixed size: red on the left wing tip (+x), green on the right, the landing
+  // light white.
+  g.userData.paint = [white, grey, band].map((m) => [m, m.color.clone()]);
+  const dots = (pts, colors, size) => {
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pts.flat(), 3));
+    geo.setAttribute('color', new THREE.Float32BufferAttribute(colors.flat(), 3));
+    const mat = new THREE.PointsMaterial({ size, sizeAttenuation: false, vertexColors: true, transparent: true, opacity: 0 });
+    g.add(new THREE.Points(geo, mat));
+    return mat;
+  };
+  g.userData.lights = [
+    dots([[30.3, -1.5, -10], [-30.3, -1.5, -10]], [[1, 0.15, 0.1], [0.2, 1, 0.35]], 3),
+    dots([[0, -1.5, 30.5]], [[1, 0.97, 0.85]], 5),
+  ];
   return g;
 }
 
@@ -88,7 +104,8 @@ export class Planes {
   // its real speed, so that it shows for some seconds, but one flight takes at most FLIGHT
   // minutes of the clock. Thus at the fastest speed the planes keep to their times and to the
   // curfew, and the pool of four is enough.
-  update(day, minute, dt, speed, hide) {
+  // night: 0 by day, 1 at night (Lighting.update in env.js).
+  update(day, minute, dt, speed, hide, night = 0) {
     if (this.last && (this.last.day !== day || minute < this.last.minute || minute - this.last.minute > 30)) this.active = [];
     else if (this.last)
       for (const t of this.times(day))
@@ -104,6 +121,8 @@ export class Planes {
       m.position.set(t.x, t.y, t.z);
       m.lookAt(t.x + t.dx * 100, t.y - 100 * GLIDE, t.z + t.dz * 100);
       m.rotateZ(t.bank); // the model's +x is its left wing: a right bank lifts it
+      for (const [mat, c] of m.userData.paint) mat.color.copy(c).multiplyScalar(1 - 0.7 * night);
+      for (const mat of m.userData.lights) mat.opacity = night;
     });
   }
 }

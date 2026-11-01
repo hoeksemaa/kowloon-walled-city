@@ -1008,7 +1008,7 @@ function frame(now) {
   }
   shared.uNight.value = lighting.update(hour, state.lift);
   wires.tick(hour, state.speed ? dt : 0);
-  planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3);
+  planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3, shared.uNight.value);
   flock.update(now / 1000, offsets, state.cut);
   updateGameRings();
   sound.update(sim.day % 7, sim.minute, state.speed, planes);
