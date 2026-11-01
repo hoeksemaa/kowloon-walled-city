@@ -44,8 +44,8 @@ composite. A detail that no source records is marked inferred.</p>
     counted 645 shops, workshops and clinics, 97 of them dentists (charted in ${WSJ}).</li>
   <li><span class="st ok">BOOK</span>${BOOK}, by Greg Girard and Ian Lambot: the street names Tai Chang St,
     Almshouse Back St, Tin Hau Temple St and Lung Chun Back Rd, and the 40 numbers of its 1992 map
-    (pp352–353). Twelve numbers mark a place, and the 1992 MAP tool (key M) shows them. The other numbers
-    name people. Point at a person of the book to see their number. A list below gives the people of the map
+    (pp352–353). Twelve numbers mark a place. The label tool (key M) shows them on the buildings, with the
+    street names. The other numbers name people. Point at a person of the book to see their number. A list below gives the people of the map
     that the model does not show. The book counts "some 300 individual buildings", "28,200
     occupants" and "8800 separate apartments" in January 1987 (p340). The map and the 1987 figure-ground plan
     (p134) are fitted to the traced plan by <code>tools/book_overlay.py</code>. The 1987 plan joins the 474
@@ -134,8 +134,8 @@ composite. A detail that no source records is marked inferred.</p>
 
 <h4>People of the 1992 map, not in the model</h4>
 <p>The 1992 map (${BOOK}, pp352–353) also names these ${others.length} people. The model does not show them.
-${others.some((p) => p.place) ? `For nos. ${others.filter((p) => p.place).map((p) => p.n).join(', ')}, the key also names a place. The 1992
-MAP tool shows these numbers with the place only.` : ''}</p>
+${others.some((p) => p.place) ? `For nos. ${others.filter((p) => p.place).map((p) => p.n).join(', ')}, the key also names a place. The label
+tool (key M) shows these numbers with the place only.` : ''}</p>
 <ul>
   ${others.map(mapPerson).join('\n  ')}
 </ul>
@@ -204,7 +204,12 @@ MAP tool shows these numbers with the place only.` : ''}</p>
     (nos. 19, 21, 24, 25 and 40) it disagrees with the address in the text. The model puts nos. 21, 24 and 25 at
     the address, and the box of each person gives the note. The list of the map's people gives the note for
     nos. 19 and 40. For the Fuk Tak Temple (no. 12) the map
-    disagrees with the clearance files; its disc has a dashed ring, and its card gives the note.</li>
+    disagrees with the clearance files; its plate has a dashed frame, and its card gives the note.</li>
+  <li><span class="st prov">LABELS</span>Each street name lies along its lane: on the line that fits the lane
+    near the place where the plan prints the name. In the normal view it lies at the height of the roofs beside
+    the lane, with thin lines down to the lane floor. Each place number lies on the building where the model
+    puts the place. For a place that the model does not put, the number lies on the building under it on the
+    1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
   <li><span class="st prov">KOWLOON</span>The grey blocks round the City and their heights. They hold the place of the
     real buildings, which the model does not draw yet. The colours of the sky and the haze at each height of the sun.</li>

@@ -20,8 +20,6 @@
 </head>
 <body>
   <canvas id="scene"></canvas>
-  <svg id="overlay" aria-hidden="true"></svg>
-  <div id="strata" aria-hidden="true"></div>
 
   <header id="title">
     <div class="t-cn">九龍城寨</div>
@@ -43,8 +41,8 @@
       <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M6 1h4v4H6z M5 6h6v5H9v4H7v-4H5z" fill="currentColor"/></svg>
       <span class="chev">›</span>
     </button>
-    <button class="tool" id="t-map" title="Places of the 1992 map (M)" aria-pressed="false">
-      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M6 1h4v1h2v2h1v4h-1v2h-2v1H6v-1H4V8H3V4h1V2h2z M7 4v4h2V4z M7 12h2v3H7z" fill="currentColor" fill-rule="evenodd"/></svg>
+    <button class="tool on" id="t-map" title="Street names and places of the 1992 map (M)" aria-pressed="true">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M1 2h14v8H1z M3 4v4h2V4z M6 4v4h1V4z M8 4v1h2V4z M8 7v1h3V7z M12 4v4h1V4z M7 10h2v5H7z" fill="currentColor" fill-rule="evenodd"/></svg>
       <span class="chev">›</span>
     </button>
     <button class="tool" id="t-sound" title="Soft sound of the city (S)" aria-pressed="false">
@@ -91,7 +89,6 @@
 
   <div id="tooltip" role="status"></div>
   <div id="tag"></div>
-  <div id="cut-tag"></div>
   <div id="hint">DRAG ROTATE · RIGHT-DRAG PAN · SCROLL ZOOM · CLICK A PERSON TO FOLLOW</div>
 
   <button id="src-btn">SOURCES + NOTES</button>

@@ -5,7 +5,7 @@ import { buildLayout, buildingName, STOREY, MAX_FLOORS, USE_LABEL, TRADE_LABEL }
 import { unitAt, unitName, planAt } from './floorplan.js';
 import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeBuildingDepth, CUT_H, USE_COLORS, PLAN_COLORS } from './cityMesh.js';
 import { withSection } from './kinds.js';
-import { DIM, withDim, dimOf } from './dim.js';
+import { DIM, withDim } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
 import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
@@ -16,7 +16,8 @@ import { Lamps } from './lamps.js';
 import { USE, UseMap, withUse } from './useMap.js';
 import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
-import { buildEnvironment, addStreetLabels, Lighting, groundMat } from './env.js';
+import { buildEnvironment, Lighting } from './env.js';
+import { Labels } from './labels.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
@@ -86,7 +87,7 @@ controls.maxPolarAngle = 1.42;
 // useHover, useFocus, useLock: the floor use that the pointer is on, that has the keyboard focus,
 // and that a click keeps lit, in the legend (useMap.js).
 const state = {
-  explode: 0, explodeTarget: 0, lift: 0, cut: -1, mapPins: false,
+  explode: 0, explodeTarget: 0, lift: 0, cut: -1,
   speed: SPEEDS[1], hoverAgent: -1, hoverBld: -1, follow: false, camGoal: null,
   useHover: null, useFocus: null, useLock: null,
 };
@@ -99,6 +100,8 @@ const shared = {
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap;
+let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
+let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
@@ -110,6 +113,8 @@ async function init() {
   const [plan, biz, book, overlay] = await Promise.all(['./data/plan.json', './data/businesses.json', './data/book.json', './data/book_overlay.json']
     .map((u) => fetch(u).then((r) => r.json())));
   book.overlay = overlay;
+  bookStreets = book.streets;
+  mapStreets = overlay.streets;
   site = buildSite(plan);
   L = buildLayout(site, plan, biz, book);
   L.routes = buildRoutes(L);
@@ -118,8 +123,6 @@ async function init() {
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L);
-  addStreetLabels(scene, site, env.roadOutline, STREETS);
-  addNorthArrow();
 
   // ---- storeys ----
   // Each storey is one group, moved only up and down: the normal view is the storeys of the
@@ -193,6 +196,11 @@ async function init() {
   cutRing.computeLineDistances();
   cutRing.visible = false;
 
+  // ---- labels: street names, place numbers, storey labels (labels.js) ----
+  // The plates draw their words on canvases: wait for the pixel font, but not for ever.
+  await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
+  labels = new Labels({ L, site, levels, road: env.roadOutline, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
+
   // ---- wires ----
   wires = new WireLayer(L, buildWires(L));
   scene.add(wires.object);
@@ -214,36 +222,11 @@ async function init() {
   for (const a of agents) if (a.home.m !== undefined) { const key = `${a.home.b}:${a.home.f}:${a.home.m}`; unitRes.set(key, (unitRes.get(key) || 0) + 1); }
 
   buildUI();
-  buildStreetTags();
-  buildPins();
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, dim: DIM, useMap, showUse };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse };
   requestAnimationFrame(frame);
-}
-
-function addNorthArrow() {
-  const c = document.createElement('canvas');
-  c.width = c.height = 128;
-  const g = c.getContext('2d');
-  g.fillStyle = '#e9e1cf';
-  g.beginPath(); g.moveTo(64, 8); g.lineTo(88, 64); g.lineTo(64, 52); g.lineTo(40, 64); g.closePath(); g.fill();
-  g.font = '34px Silkscreen, monospace'; g.textAlign = 'center'; g.fillText('N', 64, 108);
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  const m = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), groundMat(new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false })));
-  m.rotation.x = -Math.PI / 2;
-  // Point the arrow at true north.
-  m.rotation.z = Math.atan2(-site.north[0], -site.north[1]);
-  m.position.set(L.x0 + L.W - 9, 0.05, L.z0 + L.D - 9);
-  scene.add(m);
-  document.fonts.ready.then(() => {
-    g.clearRect(0, 0, 128, 128);
-    g.beginPath(); g.moveTo(64, 8); g.lineTo(88, 64); g.lineTo(64, 52); g.lineTo(40, 64); g.closePath(); g.fill();
-    g.fillText('N', 64, 108);
-    tex.needsUpdate = true;
-  });
 }
 
 // ---- explode + cut --------------------------------------------------------------------------
@@ -457,7 +440,7 @@ function buildUI() {
     return wires.object.visible;
   });
   tool('t-people', true, () => (people.group.visible = !people.group.visible));
-  tool('t-map', false, () => (state.mapPins = !state.mapPins));
+  tool('t-map', true, () => labels.setOn(!labels.on));
   tool('t-sound', false, () => sound.toggle());
   tool('t-find', false, () => {
     $('game').hidden = !$('game').hidden;
@@ -482,19 +465,6 @@ function buildUI() {
     const r = $('spark').getBoundingClientRect();
     sim.jumpTo(clamp((ev.clientX - r.left) / r.width, 0, 0.999) * 1440);
   };
-
-  // Storey labels for the exploded view.
-  labels = levels.map((lv) => {
-    const el = document.createElement('div');
-    el.className = 'stratum';
-    el.textContent = `${levelName(lv.k)} ${levelTitle(lv.k)}`;
-    $('strata').appendChild(el);
-    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    line.setAttribute('stroke', '#2a2722');
-    line.setAttribute('stroke-width', '1');
-    $('overlay').appendChild(line);
-    return { el, line };
-  });
 
   buildRail();
   renderRail();
@@ -532,6 +502,9 @@ function buildUI() {
     if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     const id = pickAgent();
     if (game.c && !game.solved) { if (id >= 0) checkPick(id); return; }
+    // A click on a street name or a place number opens its card, as a hover does. In the game,
+    // a click is for the people, also under a label.
+    if (showLabel(pickLabel())) return;
     sim.select(id);
     state.follow = false;
   });
@@ -682,6 +655,7 @@ function showTooltip(html) {
 function hideTooltip() {
   $('tooltip').style.display = 'none';
   shared.uHi.value = NO_HI;
+  labels.light(null);
 }
 
 function buildingTooltip(b, k) {
@@ -785,12 +759,8 @@ function mapFacts(p) {
 
 function updateHover() {
   if (!mouse.inside) return;
-  const pin = pickPin();
-  if (pin) {
-    shared.uHi.value = NO_HI;
-    showTooltip(placeCard(pin));
-    return;
-  }
+  if (showLabel(pickLabel())) return;
+  labels.light(null);
   const id = pickAgent();
   if (id >= 0) {
     shared.uHi.value = NO_HI;
@@ -804,41 +774,6 @@ function updateHover() {
     const unit = hit.k === state.cut ? unitTooltip(hit.b, hit.k, hit.cell) : null;
     showTooltip(unit || buildingTooltip(hit.b, hit.k));
   } else hideTooltip();
-}
-
-const _w = new THREE.Vector3();
-function updateLabels() {
-  const show = state.explode > 0.35;
-  const svg = $('overlay');
-  levels.forEach((lv, k) => {
-    const { el, line } = labels[k];
-    const visible = show && lv.group.visible;
-    el.style.display = visible ? 'block' : 'none';
-    line.style.display = visible ? 'block' : 'none';
-    if (!visible) return;
-    let bx = Infinity, by = 0;
-    for (const [x, z] of [[L.x0, L.z0], [L.x0 + L.W, L.z0], [L.x0, L.z0 + L.D], [L.x0 + L.W, L.z0 + L.D]]) {
-      _w.set(x, k * STOREY + offsets[k], z).project(camera);
-      const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
-      if (sx < bx) { bx = sx; by = sy; }
-    }
-    // Sit just left of the slab's outer corner, clear of the toolbar.
-    const w = el.offsetWidth;
-    const minX = by < 330 ? 96 : 14;
-    const lx = Math.max(minX, bx - w - 36);
-    el.style.left = `${lx}px`;
-    el.style.top = `${by}px`;
-    el.style.opacity = String(smoothstep(0.35, 0.8, state.explode));
-    // Below the cut storey, the label dims with its storey (dim.js). The light kept is in linear
-    // light; the filter works on the sRGB value, thus the power 1/2.2.
-    const [keep, grey] = dimOf(k);
-    el.style.filter = keep < 1 ? `brightness(${(keep ** (1 / 2.2)).toFixed(3)}) grayscale(${grey.toFixed(2)})` : '';
-    line.style.opacity = keep < 1 ? (keep ** (1 / 2.2)).toFixed(3) : '';
-    const right = lx + w;
-    line.setAttribute('x1', right); line.setAttribute('y1', by);
-    line.setAttribute('x2', Math.max(right, bx)); line.setAttribute('y2', by);
-  });
-  svg.style.opacity = String(smoothstep(0.35, 0.8, state.explode));
 }
 
 function updateTags() {
@@ -862,93 +797,59 @@ function updateTags() {
       }
     }
   } else tag.style.display = 'none';
-
-  const ct = $('cut-tag');
-  if (state.cut >= 0) {
-    let bx = Infinity, by = 0;
-    for (const [x, z] of site.polygon) {
-      _w.set(x, state.cut * STOREY + CUT_H + offsets[state.cut], z).project(camera);
-      const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
-      if (sx < bx) { bx = sx; by = sy; }
-    }
-    ct.textContent = `CUT ${levelName(state.cut)} ${levelTitle(state.cut)}`;
-    ct.style.display = state.explode > 0.35 ? 'none' : 'block';
-    ct.style.left = `${bx - 10}px`; ct.style.top = `${by}px`;
-  } else ct.style.display = 'none';
 }
 
-// Street names from the exhibit plan, tagged above the lanes with a leader to the ground.
-let streetTags = [];
-function buildStreetTags() {
-  streetTags = L.streets.map((st) => {
-    const el = document.createElement('div');
-    el.className = 'street-tag';
-    const [en, zh] = [st.name.replace(/\s*[\u3400-\u9fff]+$/, ''), (st.name.match(/[\u3400-\u9fff]+$/) || [''])[0]];
-    el.innerHTML = `<b>${zh}</b> ${en.toUpperCase()}`;
-    document.body.insertBefore(el, $('title')); // under the panels
-    // Lift the tag above the tallest building within 12 m.
-    let top = 0;
-    for (const b of L.buildings) if (Math.hypot(b.cx - st.x, b.cz - st.z) < 12) top = Math.max(top, b.floors);
-    return { st, el, y: top * STOREY + 7 };
-  });
-}
-function updateStreetTags() {
-  const show = state.explode < 0.3;
-  for (const t of streetTags) {
-    t.el.style.display = show ? 'block' : 'none';
-    if (!show) continue;
-    const y = state.cut >= 0 ? state.cut * STOREY + 7 : t.y;
-    _w.set(t.st.x, y, t.st.z).project(camera);
-    const sx = (_w.x * 0.5 + 0.5) * innerWidth, sy = (-_w.y * 0.5 + 0.5) * innerHeight;
-    _w.set(t.st.x, 0, t.st.z).project(camera);
-    const gy = (-_w.y * 0.5 + 0.5) * innerHeight;
-    t.el.style.left = `${sx}px`;
-    t.el.style.top = `${sy}px`;
-    t.el.style.setProperty('--lead', `${Math.max(0, gy - sy)}px`);
-  }
+// The street name or place number under the pointer (labels.js).
+function pickLabel() {
+  raycaster.setFromCamera(ndc, camera);
+  return labels.pick(raycaster);
 }
 
-// The places of the 1992 map in City of Darkness Revisited (pp352-353), each with its own
-// number on the map. The numbers that name people are not here (L.mapPeople).
-let pins = [];
-function buildPins() {
-  pins = L.places.map((p) => {
-    const el = document.createElement('div');
-    el.className = `map-pin${p.conflict ? ' conflict' : ''}`;
-    el.textContent = p.n;
-    document.body.insertBefore(el, $('title'));
-    const b = L.owner[p.k];
-    return { p, el, floors: b >= 0 ? L.buildings[b].floors : 0, sx: -1e4, sy: -1e4 };
-  });
-}
-function updatePins() {
-  const show = state.mapPins && state.explode < 0.3;
-  for (const t of pins) {
-    t.el.style.display = show ? 'block' : 'none';
-    if (!show) { t.sx = -1e4; continue; }
-    const y = state.cut >= 0 ? state.cut * STOREY + CUT_H + 0.5 : t.floors * STOREY + 1.5;
-    _w.set(t.p.x, y, t.p.z).project(camera);
-    t.sx = (_w.x * 0.5 + 0.5) * innerWidth;
-    t.sy = (-_w.y * 0.5 + 0.5) * innerHeight;
-    t.el.style.left = `${t.sx}px`;
-    t.el.style.top = `${t.sy}px`;
+// The card of a label: a place lights its tower, a street its lane cells.
+function showLabel(lb) {
+  if (!lb) return false;
+  if (lb.kind === 'place') {
+    const B = lb.b >= 0 && L.buildings[lb.b];
+    shared.uHi.value = !B ? NO_HI : B.kind === 'yamen' ? L.buildings[L.yamenId].tower : B.tower;
+    labels.light(null);
+    showTooltip(placeCard(lb));
+  } else {
+    shared.uHi.value = NO_HI;
+    labels.light(lb);
+    showTooltip(lb.kind === 'road' ? roadCard(lb) : streetCard(lb.st));
   }
+  return true;
 }
-function pickPin() {
-  let best = null, bd = 100;
-  for (const t of pins) {
-    const d = (t.sx - mouse.x) ** 2 + (t.sy - mouse.y) ** 2;
-    if (d < bd) { bd = d; best = t.p; }
-  }
-  return best;
-}
-function placeCard(p) {
+
+// A place of the 1992 map. The number lies where the model puts the place; the card says
+// where the map puts it, if that is more than 8 m away.
+const COMPASS = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'];
+function placeCard(lb) {
+  const p = lb.p, B = lb.b >= 0 && L.buildings[lb.b];
+  const dx = p.x - lb.x, dz = p.z - lb.z;
+  const dir = COMPASS[(Math.round(Math.atan2(dx * site.east[0] + dz * site.east[1], dx * site.north[0] + dz * site.north[1]) / (Math.PI / 4)) + 8) % 8];
   return `<div class="tt-h">${p.place.toUpperCase()}</div><div>no. ${p.n} on the 1992 map</div>
     ${p.what.toLowerCase() !== p.place.toLowerCase() ? `<div>${p.what}</div>` : ''}
     ${p.where ? `<div><span class="tt-k">at</span> ${p.where}</div>` : ''}
+    ${B && B.floors > 1 ? `<div><span class="tt-k">storey</span> ${levelName(lb.f)}${p.floor == null ? ' (inferred)' : ''}</div>` : ''}
+    ${lb.off > 8 ? `<div class="tt-r"><span class="tt-k">1992 map</span> no. ${p.n} is about ${Math.round(lb.off / 5) * 5} m ${dir} of here</div>` : ''}
     ${p.conflict ? `<div class="tt-r"><span class="tt-k">note</span> ${p.conflict}</div>` : ''}
     ${p.note ? `<div class="tt-s">${p.note}</div>` : ''}
     <div class="tt-s">City of Darkness Revisited pp352–353${p.page ? ` · text p${p.page}` : ''} · place approximate</div>`;
+}
+
+// A street of the City, and the lane that the model lights for it.
+function streetCard(st) {
+  const note = bookStreets[st.key] && bookStreets[st.key].note, wall = st.key === 'lcr' || st.key === 'ssr';
+  return `<div class="tt-h">${st.name.toUpperCase()}</div>
+    <div class="tt-s">${st.key in mapStreets ? 'named on the 1992 map, City of Darkness Revisited p352' : 'named on the 1980s street plan'}</div>
+    ${note ? `<div class="tt-s">${note}</div>` : ''}
+    <div class="tt-s">${wall ? 'lit: the road on the old wall base' : 'lit: its lane, traced along the plan from the name (inferred)'}</div>`;
+}
+
+function roadCard(lb) {
+  return `<div class="tt-h">${lb.text}</div><div class="tt-s">a road outside the City, on this side of it</div>
+    <div class="tt-s">the road line is schematic: the outline of the City, pushed out by about 10 m</div>`;
 }
 
 const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -977,6 +878,7 @@ function resize() {
   camera.updateProjectionMatrix();
   wires.setResolution(w, h);
   useMap.setResolution(w, h);
+  toolbarBox = $('toolbar').getBoundingClientRect();
 }
 
 // ---- camera -----------------------------------------------------------------------------------------
@@ -1040,10 +942,8 @@ function frame(now) {
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
-  updateLabels();
+  labels.update(camera, { explode: state.explode, cut: state.cut, dt, w: innerWidth, h: innerHeight, toolbar: toolbarBox });
   updateTags();
-  updateStreetTags();
-  updatePins();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); }
   post.render(shared.uNight.value);
