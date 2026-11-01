@@ -46,8 +46,9 @@ const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // The road names: two names of one road are at least SAME_ROAD metres apart. A name goes only
 // where the camera sees nine tenths of the road under it (SEEN), and where other roads cross
 // under no more than a third of it (CROSSED). It goes behind a ghost only if no place in clear
-// view fits: the dither of the ghost blurs the small Chinese letters. ROAD_AGAIN: the seconds between two tests of what
-// the camera sees, while the view moves; ROAD_MS: the milliseconds of a test in each frame.
+// view fits: the dither of the ghost blurs the small Chinese letters. ROAD_AGAIN: the seconds
+// between two tests of what the camera sees, while the view moves; ROAD_MS: the milliseconds of
+// a test in each frame.
 const SAME_ROAD = 240, SEEN = 0.9, CROSSED = 0.34, ROAD_AGAIN = 0.12, ROAD_MS = 3;
 // The level of a road name for the dim of the layered view (dim.js): above all storeys, thus it
 // never dims. The roads under it do not dim either.
@@ -423,11 +424,10 @@ export class Labels {
   }
 
   // Which points of each road the camera sees: the point in the middle of the road and a point
-  // to each side of it, a quarter of the height of its name away (thus the words). A point of the
-  // road is bad if the camera does not see one of the three, and veiled if it sees one only
-  // through a ghost. A test (pass) runs over a few
-  // frames, ROAD_MS milliseconds in each; it holds the view at its start. Returns true when the
-  // test is done.
+  // to each side of it, 0.4 of the height of its name away (the Chinese letters fill nearly all
+  // of that height). A point of the road is bad if the camera does not see one of the three, and
+  // veiled if it sees one only through a ghost. A test (pass) runs over a few frames, ROAD_MS
+  // milliseconds in each; it holds the view at its start. Returns true when the test is done.
   seeRoads(pass) {
     const { ux, uz, k, city, size } = pass, t0 = performance.now();
     const look = (x, z) => this.sight.look(x, OVER, z, ux, uz, k, this.ghost, city);
@@ -435,7 +435,7 @@ export class Labels {
       const lb = this.roads[pass.next++], R = lb.run, { bad, veiled } = lb;
       for (let i = 0; i < R.n; i++) {
         const x = R.x[i], z = R.z[i], nx = -R.tz[i], nz = R.tx[i];
-        const off = Math.max(1, (0.25 * lb.h * size) / fsOf(nx, nz));
+        const off = Math.max(1, (0.4 * lb.h * size) / fsOf(nx, nz));
         let v = look(x, z);
         if (v < 2) v = Math.max(v, look(x + nx * off, z + nz * off));
         if (v < 2) v = Math.max(v, look(x - nx * off, z - nz * off));
@@ -465,15 +465,35 @@ export class Labels {
     }
   }
 
+  // Do the words of a road name, on a plate w by h metres at (x, z) along (ax, az), keep off the
+  // City and the drawn buildings? The road data is of today, and at places its line runs under
+  // the edge of the City: the test of what the camera sees (seeRoads) looks only at the line, but
+  // a straight plate can reach past a bend of the road. The words fill nine tenths of the plate
+  // along it and 0.8 across it.
+  offBuildings(x, z, ax, az, w, h) {
+    const { L } = this, n = Math.max(2, Math.ceil((0.9 * w) / NAME_STEP));
+    for (let q = 0; q <= n; q++) {
+      const t = (q / n - 0.5) * 0.9 * w;
+      for (const o of [-0.4 * h, 0, 0.4 * h]) {
+        const px = x + ax * t + az * o, pz = z + az * t - ax * o;
+        const i = Math.floor(px - L.x0), j = Math.floor(pz - L.z0);
+        if (i >= 0 && j >= 0 && i < L.W && j < L.D && L.inside[j * L.W + i]) return false;
+        if (this.sight.inside(px, pz)) return false;
+      }
+    }
+    return true;
+  }
+
   // The place of a road name in this frame: where it was, if it still fits there, or else the
   // point nearest its home where it fits. A place in clear view goes before a place behind a
   // ghost. After a new test of what the camera sees, a name in clear view moves to a point in
   // clear view that is 20 m or more nearer home, if there is one; a name behind a ghost moves
-  // to a point in clear view, if there is one. It fits where the road runs
-  // straight for the length of the name, the camera sees nine tenths of the road under it, its
-  // middle is not at a junction, it is on the screen and clear of the labels before it, and no
-  // name of the same road is near. It keeps clear of the panels (view.panels, rects on the
-  // screen). Sets lb.x, lb.z and lb.axis; false if it fits nowhere.
+  // to a point in clear view, if there is one. It fits where the road runs straight for the
+  // length of the name, the camera sees nine tenths of the road under it, its words do not lie
+  // on the City or in a drawn building (offBuildings), its middle is not at a junction, it is on
+  // the screen and clear of the labels before it, and no name of the same road is near. It keeps
+  // clear of the panels (view.panels, rects on the screen). Sets lb.x, lb.z and lb.axis; false if
+  // it fits nowhere.
   // shown: the places of the road names so far in this frame, by name.
   placeRoad(lb, size, camera, view, boxes, shown) {
     const R = lb.run, others = shown.get(R.name) || [];
@@ -487,7 +507,9 @@ export class Labels {
       const x = R.x[i], z = R.z[i], ax = ex / l, az = ez / l;
       if (Math.hypot(x, z) > FADE_FAR - 100) return null;
       for (const [u, v] of others) if (Math.hypot(u - x, v - z) < SAME_ROAD) return null;
-      const quad = screenQuad(camera, view, x, lb.y, z, ax, az, (lb.w * size) / fsOf(ax, az), (lb.h * size) / fsOf(az, -ax));
+      const pw = (lb.w * size) / fsOf(ax, az), ph = (lb.h * size) / fsOf(az, -ax);
+      if (!this.offBuildings(x, z, ax, az, pw, ph)) return null;
+      const quad = screenQuad(camera, view, x, lb.y, z, ax, az, pw, ph);
       if (quad.some(([u, v]) => u < 0 || v < 0 || u > view.w || v > view.h) || boxes.some((q) => overlap(q, quad, 3))) return null;
       for (const p of view.panels || []) if (overlap([[p.left, p.top], [p.right, p.top], [p.right, p.bottom], [p.left, p.bottom]], quad, 3)) return null;
       return { i, x, z, ax, az, clear };

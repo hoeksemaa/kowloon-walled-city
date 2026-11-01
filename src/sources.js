@@ -231,8 +231,8 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     the lane, with thin lines down to the lane floor. Each place number lies on the building where the model
     puts the place. For a place that the model does not put, the number lies on the building under it on the
     1992 map. The card of a number gives the distance to the number on the map, if it is more than 8 m. Each
-    road name lies on a straight part of its road that the camera sees, as near the city as it can. The model
-    picks that place again when the view changes.</li>
+    road name lies on a straight part of its road that the camera sees, as near the City as it can. Its words do
+    not lie on the City or on a building. The model picks that place again when the view changes.</li>
   <li><span class="st prov">YAMEN</span>The roof form of each hall.</li>
   <li><span class="st prov">KOWLOON</span>The greys of the buildings, roads and open ground round the City, and the
     lit windows at night: their count at each hour and which ones are lit. The 9 road segments with no measured

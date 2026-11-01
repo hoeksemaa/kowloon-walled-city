@@ -92,10 +92,11 @@ python3 serve.py 8173
   its place. Each label moves and dims with its storey. Point at a number to see its card,
   or at a street name to light its lane. The names of 23 real roads round the City lie on
   those roads, as plates of the same kind. A road name lies on a straight part of its road
-  that the camera sees, as near the City as it can. It moves along the road when the view
-  changes, and fades with the haze. It does not dim in the layered view. Point at a road name
-  to light its road. The key M turns all of these off and on. The storey labels of the
-  layered view and the cut tag are plates of the same kind.
+  that the camera sees, as near the City as it can. Its words do not lie on the City or on a
+  building. It moves along the road when the view changes, and fades with the haze. It does
+  not dim in the layered view. Point at a road name to light its road. The key M turns all of
+  these off and on. The storey labels of the layered view and the cut tag are plates of the
+  same kind.
 - **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
@@ -162,8 +163,10 @@ compared each of the 23 with the 1987-88 sheets, and the sheets print the same n
 Chinese names are those of the data of today (not compared). `Sight` in `src/occlude.js` keeps
 the real buildings on a grid of 2 m. A ray from a point of a road goes back to the camera
 across this grid and over the City. `src/labels.js` puts a name only where the camera sees
-nine tenths of the road under it. A ghost does not stop the ray. But the dither of a ghost
-blurs the small Chinese letters, thus a name goes behind a ghost only if no clear place fits.
+nine tenths of the road under it. At places the road line of today runs under the edge of the
+City, thus the words of a name must also keep off the City and the drawn buildings. A ghost
+does not stop the ray. But the dither of a ghost blurs the small Chinese letters, thus a name
+goes behind a ghost only if no clear place fits.
 
 `node tools/check_layout.mjs` builds the layout and the route network without a browser. It
 prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a

@@ -143,9 +143,10 @@ export class Occlusion {
 
 // ---- what the camera sees of the ground, for the names of the roads (labels.js) ----
 // A grid of SIGHT_RES metres holds the real building that stands on each cell (its index in
-// prisms; -1 for none). A building thus grows by up to a cell. A ray goes from a point of the ground back to the camera, a metre at a
-// time along the ground. It stops at the first cell where a building that is not a ghost, or
-// the City, rises above it. It is clear when it is higher than all that stands round it.
+// prisms; -1 for none). A building thus grows by up to a cell. A ray goes from a point of the
+// ground back to the camera, a metre at a time along the ground. It stops at the first cell
+// where a building that is not a ghost, or the City, rises above it. It is clear when it is
+// higher than all that stands round it.
 const SIGHT_RES = 2, SIGHT_R = 620;
 
 export class Sight {
@@ -154,6 +155,7 @@ export class Sight {
     this.n = n;
     this.cell = new Int32Array(n * n).fill(-1);
     this.h = new Float32Array(prisms.length);
+    this.rings = prisms.map((p) => p && p.ring);
     this.top = 0;
     prisms.forEach((p, b) => {
       if (!p) return;
@@ -170,6 +172,15 @@ export class Sight {
         for (let i = i0; i <= i1; i++)
           if (at(i + 0.5, j + 0.5) || at(i, j) || at(i + 1, j) || at(i, j + 1) || at(i + 1, j + 1)) this.cell[j * n + i] = b;
     });
+  }
+
+  // Is the point (x, z) of the ground in a drawn building? The grid gives the building, and its
+  // outline the answer, thus a building does not grow here.
+  inside(x, z) {
+    const { n } = this, i = Math.floor((x + SIGHT_R) / SIGHT_RES), j = Math.floor((z + SIGHT_R) / SIGHT_RES);
+    if (i < 0 || j < 0 || i >= n || j >= n) return false;
+    const b = this.cell[j * n + i];
+    return b >= 0 && inRing(x, z, this.rings[b]);
   }
 
   // Does the camera see the point (x, y, z)? (ux, uz): the unit vector along the ground toward
