@@ -210,7 +210,9 @@ async function init() {
   scene.add(wires.object);
 
   // ---- Kai Tak: the runway 13 final, NE of the city (planes.js) ----
-  planes = new Planes(scene, [0.2756, 0.9613], [182, -52], 62);
+  // The bearing of 134° in the plan frame (PLAN_BEARING, site.js): 134° - 63.63° from the
+  // plan's +x. The point abeam the city is in plan metres.
+  planes = new Planes(scene, [0.3359, 0.9419], [182, -52], 62);
 
   // ---- people ----
   const agents = createPopulation(L, POPULATION);
