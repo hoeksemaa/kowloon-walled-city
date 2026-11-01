@@ -17,7 +17,9 @@
 //   the roof, for the top storey), and when the storeys are pulled apart, both of its ends
 //   move up by the lift of that storey; with a cut storey, no segment rises above the section;
 // - each person is drawn with the lift of one whole storey, at this time and for 40 minutes
-//   of the morning, in steps of 2 seconds (people on the stairs, ladders and roofs).
+//   of the morning, in steps of 2 seconds (people on the stairs, ladders and roofs);
+// - each label (labels.js) is in the group of its storey, on that storey or on its roof, in
+//   both views; with a cut storey, no label rises above the section.
 // The clock and the cut are put back at the end.
 import { STOREY } from '../src/layout.js';
 import { CUT_H } from '../src/kinds.js';
@@ -96,6 +98,24 @@ export async function checkStack(kwc) {
   }
   setCut(cut0);
   wires.update(offsets, cut0);
+
+  // ---- labels ----
+  const { labels } = kwc;
+  for (const layered of [false, true])
+    for (const c of [-1, 0, 1, 4, 9]) {
+      labels.place(layered, c);
+      const top = c * STOREY + CUT_H + 0.1;
+      for (const lb of labels.list) {
+        // the storeys above a cut storey are not drawn, with their labels
+        if (lb.hidden || (lb.kind === 'cut' && c < 0) || (c >= 0 && lb.k > c)) continue;
+        const name = `${lb.kind} ${lb.p ? lb.p.n : lb.st ? lb.st.key : lb.text || lb.k}`;
+        if (lb.mesh.parent !== levels[lb.k].group) say(`label ${name}: not in the group of storey ${lb.k}`);
+        // a roof plate lies 1 m over the roof; the Yamen's over its ridges, 6.6 m up
+        if (lb.y < lb.k * STOREY - 0.01 || lb.y > (lb.k + 1) * STOREY + 3.6) say(`label ${name}: at ${lb.y.toFixed(2)} m, off storey ${lb.k}`);
+        if (c >= 0 && lb.y > top) say(`label ${name}: above the section of ${c}/F${layered ? ' in the layered view' : ''}`);
+      }
+    }
+  labels.mode = null; // the next frame places them again for the view
 
   // ---- people ----
   const P = sim.aP;
