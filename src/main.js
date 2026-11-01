@@ -20,6 +20,7 @@ import { CASES, STEPS, hint as gameHint } from './game.js';
 import { buildRoutes } from './routes.js';
 import { buildEnvironment, Lighting, CONTEXT_U } from './env.js';
 import { Labels } from './labels.js';
+import { Occlusion } from './occlude.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
@@ -126,6 +127,8 @@ async function init() {
   const center = new THREE.Vector3(L.x0 + L.W / 2, 0, L.z0 + L.D / 2);
   lighting = new Lighting(scene, center, site);
   const env = buildEnvironment(scene, L, context);
+  occlusion = new Occlusion(env.prisms, site.polygon);
+  ghosts = env.ghosts;
 
   // ---- storeys ----
   // Each storey is one group, moved only up and down: the normal view is the storeys of the
@@ -231,7 +234,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline, occlusion, ghosts };
   requestAnimationFrame(frame);
 }
 
@@ -445,7 +448,12 @@ function useCount(key) {
 const raycaster = new THREE.Raycaster();
 const ndc = new THREE.Vector2();
 const mouse = { x: -1, y: -1, moved: false, inside: false };
+// The real buildings round the City (occlude.js) and their ghosts (env.js).
+let occlusion = null, ghosts = null;
 
+// The building of the City under the pointer. A real building in front of it that is not a
+// ghost (less than half faded) stops the ray: the pointer is then on that building, not on
+// the City. A ghost lets the ray through.
 function pickBuilding() {
   raycaster.setFromCamera(ndc, camera);
   const { origin: o, direction: d } = raycaster.ray;
@@ -471,7 +479,21 @@ function pickBuilding() {
       }
     }
   }
+  if (best && occlusion.hit(o, d, (i) => ghosts.at(i, CONTEXT_U.uClock.value) < 0.5) < best.t) return null;
   return best;
+}
+
+// The real buildings that hide a part of the City fade to a ghost, and come back when they no
+// longer hide it. Which ones hide it depends only on the view direction (occlude.js), thus the
+// test runs only when that changes.
+const viewDir = new THREE.Vector3(), lastViewDir = new THREE.Vector3();
+function updateGhosts(now) {
+  CONTEXT_U.uClock.value = now / 1000;
+  camera.getWorldDirection(viewDir);
+  if (viewDir.distanceToSquared(lastViewDir) < 1e-12) return;
+  lastViewDir.copy(viewDir);
+  occlusion.test(viewDir.x, viewDir.y, viewDir.z);
+  ghosts.set(occlusion.hide, now / 1000);
 }
 
 const _v = new THREE.Vector3();
@@ -1002,6 +1024,7 @@ function frame(now) {
 
   controls.update();
   camera.updateMatrixWorld();
+  updateGhosts(now);
   peopleU.uPeopleScale.value = clamp(1.5 - 0.075 * camera.zoom, 1, 1.4);
   people.update(camera, state.cut, state.explode > 0.01, offsets);
   lamps.update(people.lit, dt);
