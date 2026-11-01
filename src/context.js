@@ -38,8 +38,8 @@ export function buildingPrisms(C) {
 // centre of the plan box. Thus the roads round the City and the main roads near it get their
 // names. NAME_R is a little past the start of the haze (350 m, env.js): Prince Edward Road East
 // and Nga Tsin Wai Road are in it. The data has the names of the Transport Department, thus of
-// today. The 1987 sheets print the same English names (tools/context.py has no list of old
-// names); Prince Edward Road East has its name from 1979 or before.
+// today. The 1987-88 sheets print the same English names, Prince Edward Road East too
+// (tools/context.py has no list of old names).
 export const NAME_R = 430, NAME_MIN = 100;
 export const NAME_STEP = 2; // metres between the points of a run
 const JOIN = 2; // the ends of two segments of a run are this close
