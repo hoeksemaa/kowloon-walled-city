@@ -602,9 +602,10 @@ function buildUI() {
   canvas.addEventListener('wheel', () => (state.camGoal = null), { passive: true });
   // Past a label (below), a click tests a person, then a building. One thing at a time is
   // selected, and a click on the ground or the sky lets go of both. In an open case of the game,
-  // a click on a person is a guess; a click on a building only selects it.
+  // a click on a person is a guess; a click on a building only selects it. Only the main
+  // button clicks: the right button pans, also when it does not move.
   canvas.addEventListener('pointerup', (ev) => {
-    if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
+    if (!down || ev.button !== 0 || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     pointAt(ev); // a tap has no move before it
     const id = pickAgent();
     if (id >= 0 && game.c && !game.solved) { checkPick(id); return; }
@@ -616,10 +617,18 @@ function buildUI() {
     sim.select(id);
     state.follow = false;
   });
+  // A mouse click or a tap on a button does not keep the keyboard focus on it, thus Space then
+  // runs or stops the clock and does not press the button again. A button that has the focus
+  // from the keyboard (Tab) takes Space and Enter, and they do nothing else.
+  addEventListener('click', (ev) => {
+    const el = document.activeElement;
+    if (ev.detail > 0 && el && el !== document.body && el.matches('button')) el.blur();
+  });
   addEventListener('keydown', (ev) => {
     if (ev.target.closest && ev.target.closest('input, textarea')) return;
     if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
     const k = ev.key.toLowerCase();
+    if ((k === ' ' || k === 'enter') && ev.target.closest && ev.target.closest('button')) return;
     if (k === 'e') $('t-explode').click();
     else if (k === 'w') $('t-wires').click();
     else if (k === 'p') $('t-people').click();
@@ -628,9 +637,11 @@ function buildUI() {
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') {
-      // the first Esc lets go of all that is selected (the floor use kept lit, the building and
-      // the person), the next one clears the cut
-      if (state.useLock || state.selBld >= 0 || sim.selected >= 0) {
+      // the first Esc closes the sources panel if it is open, or else lets go of all that is
+      // selected (the floor use kept lit, the building and the person); the next one clears
+      // the cut
+      if (!$('sources').hidden) $('sources').hidden = true;
+      else if (state.useLock || state.selBld >= 0 || sim.selected >= 0) {
         if (state.useLock) { state.useLock = null; relock(); }
         selectBuilding(-1);
         sim.select(-1);
