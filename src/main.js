@@ -203,7 +203,7 @@ async function init() {
   // ---- labels: street names, place numbers, storey labels (labels.js) ----
   // The plates draw their words on canvases: wait for the pixel font, but not for ever.
   await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
-  labels = new Labels({ L, site, levels, road: env.roadOutline, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
+  labels = new Labels({ L, site, levels, road: env.roadOutline, street: env.street, roads: STREETS, mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy() });
 
   // ---- wires ----
   wires = new WireLayer(L, buildWires(L));

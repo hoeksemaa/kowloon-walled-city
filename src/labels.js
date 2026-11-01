@@ -133,8 +133,9 @@ const _r = new THREE.Vector3(), _u = new THREE.Vector3(), _d = new THREE.Vector3
 export class Labels {
   // levels: the storeys of main.js. road: the outline of the roads round the City (env.js).
   // roads: { top, right } names of those roads. title(k): the words after the name of storey k.
-  // mapStreets: the streets that only the 1992 map names (book_overlay.json).
-  constructor({ L, site, levels, road, roads, mapStreets, title, aniso }) {
+  // mapStreets: the streets that only the 1992 map names (book_overlay.json). street: the dark
+  // street round the City (context.js).
+  constructor({ L, site, levels, road, roads, mapStreets, title, aniso, street }) {
     this.L = L;
     this.mapStreets = mapStreets;
     this.levels = levels;
@@ -151,12 +152,14 @@ export class Labels {
     for (const st of L.streets) this.addStreet(st);
     for (const p of L.places) this.addPlace(p);
     this.addRoads(road, roads);
-    // The north arrow lies on the plinth, in the SE corner; it turns with true north.
+    // The north arrow lies on the street near its SE corner, clear of the roads; it turns with
+    // true north.
     const north = this.add('north', drawNorth(), { prio: 9, solid: true });
     north.k = 0;
     north.y = OVER;
     north.x = L.x0 + L.W - 9;
     north.z = L.z0 + L.D - 9;
+    while (street && north.x > 0 && !street.fits(north.x, north.z, 5.5)) north.x -= 0.5;
     north.axis = [-site.north[1], site.north[0]];
     // A storey label for each storey of the layered view, and the cut tag.
     for (const lv of levels) {
