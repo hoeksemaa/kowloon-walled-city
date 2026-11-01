@@ -924,7 +924,7 @@ def build(dl):
     count = lambda R, pred=lambda b: True: sum(1 for b in out if near(b['ring'], R) and pred(b))
     head = dict(
         about='The buildings, roads and open ground round Kowloon Walled City as they stood in December 1986, '
-              'within %d m of the centre of the plan box. Data only: the app does not draw it yet.' % RADIUS,
+              'within %d m of the centre of the plan box. src/env.js draws it.' % RADIUS,
         notice=NOTICE,
         units='metres', frame='plan: x and z as in data/plan.json, with the origin at the centre of the plan box '
               '(the scene frame of src/layout.js); y up; base 0 for every building',

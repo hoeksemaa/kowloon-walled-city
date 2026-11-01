@@ -1,5 +1,5 @@
 {
-"about": "The buildings, roads and open ground round Kowloon Walled City as they stood in December 1986, within 600 m of the centre of the plan box. Data only: the app does not draw it yet.",
+"about": "The buildings, roads and open ground round Kowloon Walled City as they stood in December 1986, within 600 m of the centre of the plan box. src/env.js draws it.",
 "notice": "Contains data from the Government of the Hong Kong SAR and the CSDI Portal: the Lands Department 1:1000 survey sheets and Building data, the Buildings Department occupation permits, and the Transport Department Road Network. See data/CONTEXT-NOTICE.md.",
 "units": "metres",
 "frame": "plan: x and z as in data/plan.json, with the origin at the centre of the plan box (the scene frame of src/layout.js); y up; base 0 for every building",
