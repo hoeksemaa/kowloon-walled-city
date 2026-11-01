@@ -5,23 +5,27 @@
 // SOURCED:
 // - The runway. The 1:1000 survey sheet 11-NE-11C of 1987-06 (LandsD) draws the north-west end
 //   of runway 13/31. On that scan, the centre of the end is at HK1980 Grid E 837847.1,
-//   N 820728.3, the runway is 61.9 m wide, and its south-west edge runs on a bearing of
-//   134.0° (a line fit, 0.12 m rms). English Wikipedia ("Kai Tak Airport") gives 134° true.
-//   Thus the end of the runway is 763 m SSE of the centre of the City, and its centre line,
-//   drawn on to the north-west, passes 388 m SW of the City.
+//   N 820728.3. The runway is 61.9 m wide. Its south-west edge runs on a bearing of 134.0°
+//   (a line fit, 0.12 m rms). English Wikipedia ("Kai Tak Airport") gives 134° true. Thus the
+//   end of the runway is 763 m SSE of the centre of the City. Its centre line, drawn on to the
+//   north-west, passes 388 m SW of the City.
 // - The approach. The IGS beam was offset 47° from the runway heading. Pilots flew it towards
-//   Checkerboard Hill at Kowloon Tsai (22°20′09″N 114°11′03″E), then made a 47° right turn
-//   by eye, from about 650 ft (198 m) down to 140 ft (43 m), where they lined up with the
-//   runway (English Wikipedia, "Kai Tak Airport" and "Checkerboard Hill").
-// INFERRED: the beam passes over the hill; the turn is one circle that starts at 650 ft and
-// ends on the centre line at 140 ft; the glide is 3.1° all the way (flight-simulator notes of
-// the IGS chart; not checked). The circle then has a radius of 3.5 km, and the bank at 75 m/s
-// is 9°. The plane passes the City on its left, about 430 m off, at about 70 m.
+//   Checkerboard Hill at Kowloon Tsai (22°20′09″N 114°11′03″E). Then they made a 47° right
+//   turn by eye, from about 650 ft (198 m) down to 140 ft (43 m), and lined up with the runway.
+//   The turn started about 2 nautical miles from touchdown (English Wikipedia, "Kai Tak
+//   Airport" and "Checkerboard Hill").
+// INFERRED: the line of the beam passes over the top of the hill. The turn is one circle that
+// starts at 650 ft and ends on the centre line at 140 ft. The glide is 3.1° all the way
+// (flight-simulator notes of the IGS chart; not checked). The circle then has a radius of
+// 3.5 km, and the bank at 75 m/s is 9°. The turn starts 1.85 km before the hill, and 3.66 km
+// (1.97 nautical miles) before the glide meets the ground. This agrees with the 2 nautical
+// miles above. The plane passes the City on its left, about 430 m off, at about 70 m.
 import { PLAN_BEARING } from './site.js';
 
 const FT = 0.3048;
 // HK1980 Grid points: the centre of the runway end on sheet 11-NE-11C (1987-06), and
-// Checkerboard Hill (± 30 m, from its latitude and longitude).
+// Checkerboard Hill from its latitude and longitude in English Wikipedia ("Checkerboard Hill").
+// The article "Kai Tak Airport" puts the hill about 95 m further SSE.
 export const GRID = { runwayEnd: [837847.1, 820728.3], hill: [837019.6, 821863.9] };
 export const RUNWAY_END = [-144.8, 749.4]; // GRID.runwayEnd in the plan
 export const HILL = [-381.7, -635.5]; // GRID.hill in the plan
@@ -31,11 +35,12 @@ export const GLIDE = Math.tan((3.1 * Math.PI) / 180);
 export const TURN_IN = 650 * FT, LINE_UP = 140 * FT;
 export const SPEED = 75; // m/s, about 145 knots
 export const S0 = -1500, S1 = 950; // metres along the track, 0 = nearest the City
-// The clearance (INFERRED, a rule of the model, not of the CAD): the track stays at least CLEAR
-// metres (about 100 ft) over the roof of each building within SIDE metres of it, to either side.
-// The plane's wing tip is 30 m from the track and, in the bank, 6 m under it; its engines are
-// 5 m under it. Thus at least 24 m of air stays under the plane. tools/check_context.mjs fails
-// if a building, or the City with its aerials, comes closer.
+// The clearance (INFERRED): a rule of the model, not a rule of the Civil Aviation Department.
+// The track stays at least CLEAR metres (about 100 ft) over the roof of each building within
+// SIDE metres of it, to either side. The plane's wing tip is 30 m from the track and, in the
+// bank, 6 m under it. Its engines are 5 m under it. Thus at least 24 m of air stays under the
+// plane. tools/check_context.mjs fails if a building, or the City with its aerials, comes
+// closer.
 export const CLEAR = 30, SIDE = 60;
 
 const dir = (bearing) => {
