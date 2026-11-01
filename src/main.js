@@ -104,8 +104,8 @@ const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMark
 let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap, outline;
 let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
-let panelBoxes = []; // the panels on the screen: the road names keep clear of them (labels.js)
-const PANELS = ['toolbar', 'rail', 'clock', 'legend', 'bld', 'game', 'src-btn'];
+let panelBoxes = []; // the panels and the title on the screen: the road names keep clear of them (labels.js)
+const PANELS = ['title', 'hint', 'toolbar', 'rail', 'clock', 'legend', 'bld', 'game', 'src-btn'];
 const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
