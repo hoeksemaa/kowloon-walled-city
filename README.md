@@ -10,6 +10,9 @@ python3 serve.py 8173
 # open http://127.0.0.1:8173/
 ```
 
+The new 3D structure (a draft, without the simulation) is at
+http://127.0.0.1:8173/structure.html. See [docs/structure.md](docs/structure.md).
+
 ## What is in the model
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
@@ -126,7 +129,8 @@ Copyrighted scans and downloads stay in `primary-sources/**/local/`, which git i
 
 ## Data
 
-The street plan in `data/plan.json` is traced from
+The street plan in `data/plan.json` (1 m cells) and `data/plan_fine.json` (0.25 m cells) is
+traced from
 ["Streets in Kowloon Walled City.jpg"](https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg)
 by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license.
 
@@ -134,6 +138,10 @@ by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license
 Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overlay.py`
 measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
 the repository or the app.
+
+`data/terrain.json` holds the height of the ground round the City, out to 640 m, from the
+Lands Department 5 m Digital Terrain Model and the spot heights of the 1987 survey sheet
+11-NE-11A (`tools/terrain.py`; see `data/CONTEXT-NOTICE.md`).
 
 `data/context.json` holds the real buildings, roads and open ground round the City as they
 stood in December 1986, within 600 m of the centre of the plan box, in plan metres. Each

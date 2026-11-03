@@ -1,4 +1,4 @@
-// Building footprints as polygons, from the 1 m plot grid.
+// Building footprints as polygons, from the 1 m plot grid (or a finer grid: opts.scale).
 //
 // The traced plan is a grid of 1 m cells, thus a plot line that runs at an angle shows as a
 // staircase. Here each boundary between two neighbours (two plots, or a plot and a lane) is
@@ -10,8 +10,10 @@
 // Region labels: a plot is its building id (0 or more); the rest are negative.
 export const LANE = -1, YARD = -2, ROAD = -3, OUTSIDE = -4;
 
+// opts: eps (the Douglas-Peucker tolerance, in cells), scale (metres per cell, 1 by default),
+// pocket (the largest closed pocket of lane that is a gap in the trace, in cells).
 export function buildFootprints(L, opts = {}) {
-  const EPS = opts.eps ?? 1.0;
+  const EPS = opts.eps ?? 1.0, SC = opts.scale ?? 1, POCKET = opts.pocket ?? 4;
   const { W, D, owner, inside, alley } = L;
   const label = new Int32Array(W * D);
   for (let k = 0; k < W * D; k++) {
@@ -19,7 +21,7 @@ export function buildFootprints(L, opts = {}) {
     else if (!inside[k]) label[k] = OUTSIDE;
     else label[k] = alley[k] === 2 ? YARD : alley[k] === 3 ? ROAD : LANE;
   }
-  // A closed pocket of lane of 4 cells or fewer is a gap in the trace, not a lane: draw it
+  // A closed pocket of lane of POCKET cells or fewer is a gap in the trace, not a lane: draw it
   // as part of the plot it touches most. Larger closed pockets stay open, as light wells.
   const seen = new Uint8Array(W * D);
   for (let k = 0; k < W * D; k++) {
@@ -34,7 +36,7 @@ export function buildFootprints(L, opts = {}) {
         if (v === LANE) { if (!seen[n]) { seen[n] = 1; comp.push(n); } } else touch.set(v, (touch.get(v) || 0) + 1);
       }
     }
-    if (comp.length > 4 || [...touch.keys()].some((v) => v < 0)) continue;
+    if (comp.length > POCKET || [...touch.keys()].some((v) => v < 0)) continue;
     let best = -1, bn = 0;
     for (const [v, n] of touch) if (n > bn) { bn = n; best = v; }
     if (best >= 0) for (const c of comp) label[c] = best;
@@ -195,7 +197,7 @@ export function buildFootprints(L, opts = {}) {
     const bad = new Set();
     const segs = [];
     for (const ch of chains.values()) for (let q = 0; q < ch.s.length - 1; q++) segs.push([ch, ch.s[q], ch.s[q + 1]]);
-    const grid = new Map(), G = 4;
+    const grid = new Map(), G = Math.max(4, Math.round(4 / SC));
     segs.forEach((s, idx) => {
       const x0 = Math.floor(Math.min(s[1][0], s[2][0]) / G), x1 = Math.floor(Math.max(s[1][0], s[2][0]) / G);
       const z0 = Math.floor(Math.min(s[1][1], s[2][1]) / G), z1 = Math.floor(Math.max(s[1][1], s[2][1]) / G);
@@ -224,7 +226,7 @@ export function buildFootprints(L, opts = {}) {
   }
 
   // Output in world metres.
-  const X = (p) => [L.x0 + p[0], L.z0 + p[1]];
+  const X = (p) => [L.x0 + p[0] * SC, L.z0 + p[1] * SC];
   const out = new Map();
   for (const r of regions.keys()) {
     const rings = assemble(r).map(({ pts, parts }) => {

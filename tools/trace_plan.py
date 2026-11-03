@@ -4,7 +4,8 @@ Input: a PNG of "Streets in Kowloon Walled City.jpg" by Lord Jaraxxus (Wikimedia
 CC BY-SA 4.0) at its natural size, 2337 x 1525 px. It is a photo of the 1980s street plan
 on display in Kowloon Walled City Park.
 
-Output: plan.json (read by src/layout.js) and preview PNGs, in OUTDIR.
+Output: plan.json (read by src/layout.js), plan_fine.json (the same codes on 0.25 m cells, for
+the footprints of the 3D structure) and preview PNGs, in OUTDIR.
 
     python3 tools/trace_plan.py plan.png OUTDIR [PX_PER_M] [GAP]
 
@@ -324,3 +325,172 @@ for k in data['named'].values():
     pal[k] = (255, 255, 255)
 img = Image.fromarray(pal[grid]).resize((GW * 6, GD * 6), Image.NEAREST)
 img.save(f'{outdir}/trace-grid.png')
+
+
+# ---- the fine plan: 0.25 m cells, for the 3D structure (src/structure/) ----------------------
+# The 1 m grid gives each cell to one plot, thus a plot line at an angle is a staircase of 1 m
+# steps, and the text on the plan bends the plot lines. The fine plan gives each photo pixel a
+# code, then takes the codes at 0.25 m. The 1 m codes say which plot is which; the drawn lines
+# say where one plot stops. Output: plan_fine.json, in the frame of plan.json.
+def fine_plan():
+    from skimage.segmentation import watershed
+    SUB = 4
+    ys_, xs_ = np.mgrid[0:H, 0:W]
+    ci = np.floor((xs_ - x0) / ppm).astype(int); cj = np.floor((ys_ - y0) / ppm).astype(int)
+    ok = (ci >= 0) & (cj >= 0) & (ci < GW) & (cj < GD)
+    cellcode = np.zeros((H, W), np.int32)
+    cellcode[ok] = grid[cj[ok], ci[ok]]
+
+    # The drawn lines. The ink of the text is not a line: a mark is a line if it is long
+    # (26 px or more), or thin and 11 px or more long. A block of strokes 26-60 px wide that
+    # fills its box is a character.
+    ink = (tophat > 22) & ~erased & (cls != PINK) & (cls != STREET)
+    lab, n = ndi.label(ink, structure=np.ones((3, 3), bool))
+    sl = ndi.find_objects(lab)
+    idx = np.arange(1, n + 1)
+    cnt = ndi.sum(np.ones((H, W)), lab, idx)
+    mx, my = ndi.sum(xs_, lab, idx) / cnt, ndi.sum(ys_, lab, idx) / cnt
+    sxx = ndi.sum(xs_ * xs_, lab, idx) / cnt - mx * mx
+    syy = ndi.sum(ys_ * ys_, lab, idx) / cnt - my * my
+    sxy = ndi.sum(xs_ * ys_, lab, idx) / cnt - mx * my
+    tr, det = sxx + syy, sxx * syy - sxy * sxy
+    root = np.sqrt(np.maximum(tr * tr / 4 - det, 0))
+    l1, l2 = tr / 2 + root, np.maximum(tr / 2 - root, 0.05)
+    length, elong = np.sqrt(12 * l1), np.sqrt(l1 / l2)  # the length of a bar with this spread
+    keep = np.zeros(n + 1, bool)
+    for k, s in enumerate(sl, 1):
+        h, w = s[0].stop - s[0].start, s[1].stop - s[1].start
+        keep[k] = max(h, w) >= 26 or (length[k - 1] >= 11 and elong[k - 1] >= 4)
+        if keep[k] and 26 <= max(h, w) < 60 and min(h, w) >= 18:
+            box = ndi.binary_dilation(lab[s] == k, structure=np.ones((9, 9), bool))
+            keep[k] = box.mean() < 0.6
+    lines = keep[lab]
+    barrier = ndi.binary_closing(lines, structure=np.ones((GAP, GAP), bool)) | lines
+    # The lanes: the purple fill. The door marks and dots on a lane are small holes in it.
+    purple = ndi.binary_opening((cls == STREET) & built, structure=np.ones((3, 3), bool))
+    hl, _ = ndi.label(~purple)
+    purple |= (np.bincount(hl.ravel())[hl] < 220) & (hl > 0)
+    text = ink & ~lines
+    interior = ((cls == CREAM) | (cls == GREEN) | (cls == OTHER) | text) & ~barrier & built & ~purple
+    comp, _ = ndi.label(ndi.binary_erosion(interior, iterations=1))
+
+    # Seeds: in each drawn plot, the inner part of each 1 m code that has 25 px or more in it.
+    R = 4
+    same = ndi.maximum_filter(cellcode, 2 * R + 1) == ndi.minimum_filter(cellcode, 2 * R + 1)
+    sel = comp > 0
+    keys = comp.astype(np.int64) * 4096 + cellcode
+    u, c = np.unique(keys[sel], return_counts=True)
+    seeds = np.zeros((H, W), np.int32)
+    ok = np.isin(keys, u[c >= 25]) & sel & same & (cellcode > 0) & ~lines
+    seeds[ok] = cellcode[ok] + 1
+    # A code with no seed: its pixels off the lines and the lanes.
+    for v in np.setdiff1d(np.unique(cellcode[cellcode >= 4]), np.unique(seeds) - 1):
+        m = (cellcode == v) & ~lines & ~purple & built
+        seeds[m if m.any() else (cellcode == v)] = v + 1
+    lanepx = ndi.binary_dilation(purple)
+    # The city: the built area of the photo, and each cell that the 1 m plan gives to a plot.
+    region = built | (cellcode >= 4)
+    area = region & ~lanepx
+    seeds[~area] = 0
+    # The seeds grow until they meet; they meet on the drawn lines first, then on the text.
+    elev = ndi.gaussian_filter(np.where(lines, tophat, 0.35 * tophat), 0.8)
+    out = watershed(elev, seeds, mask=area) - 1
+    miss = area & (out < 0)  # no seed in this part: it keeps its 1 m code
+    out[miss] = np.where(cellcode[miss] > 0, cellcode[miss], 1)
+    lp = lanepx & region
+    out[lp] = np.where(np.isin(cellcode[lp], [2, 3]), cellcode[lp], 1)
+    out[~region] = np.where(cellcode[~region] == 3, 3, 0)
+
+    # A boundary between two plots that bends and has no drawn line on it follows the text.
+    # It becomes a straight line, at the angle of the drawn walls round it (or at a right
+    # angle to them), where the most of its length lies.
+    near_line = ndi.binary_dilation(lines, iterations=2)
+    lf = ndi.gaussian_filter(lines.astype(float), 1.5)
+    gy, gx = np.gradient(lf)
+    z4 = np.hypot(gx, gy) * np.exp(4j * np.arctan2(gy, gx))
+    size0 = np.bincount(out.ravel())
+    pairs = {}
+    for dy, dx in ((0, 1), (1, 0)):
+        A, B_ = out[:H - dy, :W - dx], out[dy:, dx:]
+        m = (A != B_) & (A >= 4) & (B_ >= 4)
+        for y, x, a_, b_ in zip(*np.nonzero(m), A[m], B_[m]):
+            pairs.setdefault((int(min(a_, b_)), int(max(a_, b_))), []).append((x + dx / 2, y + dy / 2, x, y, x + dx, y + dy))
+    nst = 0
+    for (a_, b_), pts in pairs.items():
+        if len(pts) < 12:
+            continue
+        Q = np.array(pts, float)
+        cen = Q[:, :2].mean(0); P0 = Q[:, :2] - cen
+        rms = np.sqrt(max(np.linalg.eigvalsh(np.cov(P0.T))[0], 0))
+        p, q = Q[:, 2:4].astype(int), Q[:, 4:6].astype(int)
+        inkf = (near_line[p[:, 1], p[:, 0]] | near_line[q[:, 1], q[:, 0]]).mean()
+        if rms <= 1.2 or rms > 10 or inkf >= 0.6:
+            continue
+        bx0, bx1, by0, by1 = int(Q[:, 0].min()), int(Q[:, 0].max()) + 1, int(Q[:, 1].min()), int(Q[:, 1].max()) + 1
+        th = np.angle(z4[max(by0 - 40, 0):by1 + 40, max(bx0 - 40, 0):bx1 + 40].sum()) / 4
+        best = None
+        for nrm in (np.array([np.cos(th), np.sin(th)]), np.array([-np.sin(th), np.cos(th)])):
+            sv = P0 @ nrm; off = np.median(sv); res = np.abs(sv - off).mean()
+            if best is None or res < best[0]:
+                best = (res, nrm, off)
+        _, nrm, off = best
+        d = np.array([-nrm[1], nrm[0]])
+        t = P0 @ d
+        Rb = np.abs(P0 @ nrm - off).max() + 3
+        X0_, X1_ = max(int(bx0 - Rb - 3), 0), int(bx1 + Rb + 4)
+        Y0_, Y1_ = max(int(by0 - Rb - 3), 0), int(by1 + Rb + 4)
+        win = out[Y0_:Y1_, X0_:X1_]
+        px, py = xs_[Y0_:Y1_, X0_:X1_] - cen[0], ys_[Y0_:Y1_, X0_:X1_] - cen[1]
+        tt, ss = px * d[0] + py * d[1], px * nrm[0] + py * nrm[1] - off
+        band = np.isin(win, (a_, b_)) & (tt >= t.min() - 2) & (tt <= t.max() + 2) & (np.abs(ss) <= Rb)
+        if not band.any():
+            continue
+        sa = np.sign(ss[band & (win == a_)].mean()) or 1.0
+        new, old = np.where(ss[band] * sa > 0, a_, b_), win[band]
+        if ((old == a_) & (new != a_)).sum() > 0.35 * size0[a_] or ((old == b_) & (new != b_)).sum() > 0.35 * size0[b_]:
+            continue
+        win[band] = new
+        nst += 1
+    # A small piece of a plot that a new line cut off joins the plot round it.
+    for v in np.unique(out[out >= 4]):
+        pl, pn = ndi.label(out == v)
+        if pn <= 1:
+            continue
+        sz = np.bincount(pl.ravel()); sz[0] = 0
+        for k in range(1, pn + 1):
+            if k == sz.argmax() or sz[k] >= 400 or sz[k] >= 0.25 * sz.max():
+                continue
+            piece = pl == k
+            nb = out[ndi.binary_dilation(piece) & ~piece]
+            nb = nb[nb != v]
+            if len(nb):
+                out[piece] = np.bincount(nb).argmax()
+
+    # The codes at the centres of the 0.25 m cells.
+    FW, FD = GW * SUB, GD * SUB
+    I, J = np.meshgrid(np.arange(FW), np.arange(FD))
+    X = np.round(x0 + (I + 0.5) / SUB * ppm - 0.5).astype(int)
+    Y = np.round(y0 + (J + 0.5) / SUB * ppm - 0.5).astype(int)
+    inb = (X >= 0) & (Y >= 0) & (X < W) & (Y < H)
+    fine = np.zeros((FD, FW), np.int32)
+    fine[inb] = out[Y[inb], X[inb]]
+    rows = []
+    for row in fine:
+        cut = np.nonzero(np.diff(row))[0] + 1
+        starts = np.concatenate([[0], cut]); ends = np.concatenate([cut, [FW]])
+        rows.append(''.join(enc(int(row[s])) + enc(int(e - s)) for s, e in zip(starts, ends)))
+    data = {
+        'source': 'see plan.json',
+        'note': 'Traced by tools/trace_plan.py with plan.json. 1 cell = 0.25 m, in the frame of plan.json '
+                '(cell i, j of this grid lies in cell i // 4, j // 4 of plan.json). The same codes as plan.json. '
+                'Each row is a list of runs: 2 characters for the code, 2 for the length, as in plan.json. '
+                'This derived data is shared under CC BY-SA 4.0.',
+        'SUB': SUB, 'W': int(FW), 'D': int(FD), 'rows': rows,
+    }
+    with open(f'{outdir}/plan_fine.json', 'w') as f:
+        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    lost = sorted(set(np.unique(grid[grid >= 4]).tolist()) - set(np.unique(fine[fine >= 4]).tolist()))
+    print('fine plan', FW, FD, 'straightened', nst, 'plot codes lost', lost, 'no seed px', int(miss.sum()))
+    return fine
+
+fine = fine_plan()
