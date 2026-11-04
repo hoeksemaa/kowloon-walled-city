@@ -9,46 +9,105 @@ import { buildingPrisms, ROAD_WIDTH } from '../context.js';
 import { FADE_FAR } from '../env.js';
 
 const MAP_PX = 2048;
+// The near ground: a sharper map of the City and its surroundings (data/surroundings.json):
+// the dirt paths, the courts, the pavements. NEAR: its box in the plan frame; NEAR_RES: metres
+// per pixel.
+const NEAR = { x0: -230, z0: -170, x1: 230, z1: 250 }, NEAR_RES = 0.15;
 const COL = {
   ground: '#d9d6ce', open: '#d3cfc4', sports: '#cfd4c6', kerb: '#c7c3b9', road: '#a4a19a', dash: '#d8cfae',
   city: '#77726a', yard: '#8a857b',
+  // the surroundings (data/surroundings.json), by surface; the cleared ground has the colour of
+  // the open ground of context.json, which goes on past the plate
+  dirt: '#cdb99b', path: '#c2ab88', cleared: '#d3cfc4', grass: '#bcc4a2', court: '#b7b3aa', courtLine: '#f6f4ee',
+  pavement: '#cdc9c0', kerbEdge: '#e9e6de', asphalt: '#8f8c86', fence: '#6f6b63', concrete: '#c6c2b8',
 };
+const SURFACE = { dirt: COL.dirt, path: COL.path, 'dirt-path': COL.path, cleared: COL.cleared, grass: COL.grass, court: COL.court,
+  pavement: COL.pavement, concrete: COL.concrete, asphalt: COL.asphalt };
 
-// A canvas map of the ground in the plan frame, REACH metres round the centre.
-function groundMap(T, ctx, S) {
-  const R = -T.x0, px = MAP_PX / (2 * R);
-  const cv = document.createElement('canvas');
-  cv.width = cv.height = MAP_PX;
-  const g = cv.getContext('2d');
-  const X = (x) => (x + R) * px, Z = (z) => (z + R) * px;
+// Paints the ground into a 2D context g, for the box (x0, z0) of side w x h metres, px pixels
+// a metre: the open ground and the roads of data/context.json, then the surroundings of
+// data/surroundings.json (sur), then the lanes and yards of the City.
+function paintGround(g, box, px, ctx, S, sur) {
+  const X = (x) => (x - box.x0) * px, Z = (z) => (z - box.z0) * px;
   g.fillStyle = COL.ground;
-  g.fillRect(0, 0, MAP_PX, MAP_PX);
-  const poly = (ring, fill) => {
+  g.fillRect(0, 0, g.canvas.width, g.canvas.height);
+  const path = (pts, close) => {
     g.beginPath();
-    ring.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
-    g.closePath();
-    g.fillStyle = fill;
-    g.fill();
+    pts.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
+    if (close) g.closePath();
+  };
+  const poly = (ring, fill) => { path(ring, true); g.fillStyle = fill; g.fill(); };
+  const line = (pts, w, stroke, dash) => {
+    path(pts, false);
+    g.lineWidth = Math.max(w * px, 0.6); g.strokeStyle = stroke; g.setLineDash(dash ? dash.map((d) => d * px) : []);
+    g.stroke(); g.setLineDash([]);
   };
   for (const o of ctx.openGround) poly(o.ring, o.kind === 'sports ground' ? COL.sports : COL.open);
   g.lineCap = g.lineJoin = 'round';
+  const feats = sur?.features || [];
+  // the surfaces under the roads: cleared ground, fields, courts, then the paths over them
+  const order = ['cleared-ground', 'football-field', 'field', 'court', 'hard', 'pavement', 'lane-strip', 'dirt-path', 'paved-path'];
+  const rank = (f) => { const i = order.indexOf(f.kind); return i < 0 ? order.length : i; };
+  const under = feats.filter((f) => f.kind !== 'road' && f.kind !== 'fence').sort((a, b) => rank(a) - rank(b));
+  for (const f of under) {
+    const fill = SURFACE[f.surface] || SURFACE[f.kind] || COL.dirt;
+    if (f.ring) poly(f.ring, fill);
+    if (f.line) line(f.line, f.width || 2, fill);
+  }
+  // the court markings: each court a rectangle with its centre line, centre circle, the keys
+  // and the three-point arcs left out (a structural model)
+  for (const f of feats) for (const c of f.courts || []) courtLines(g, X, Z, px, c);
   for (const pass of ['kerb', 'road']) {
     g.strokeStyle = COL[pass];
     for (const r of ctx.roads) {
       g.lineWidth = ((r.width || ROAD_WIDTH) + (pass === 'kerb' ? 0.8 : 0)) * px;
-      g.beginPath();
-      r.line.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
+      path(r.line, false);
       g.stroke();
     }
   }
-  // The City: its lanes, yards and roads, inside its outline.
+  // The streets of the 1987 survey sheet (polygons, kerb to kerb) over the centre lines of
+  // data/context.json, which are wider here; then the footways again over the spill of those
+  // lines, and a kerb on each edge.
+  for (const f of feats) if (f.kind === 'road' && f.line) line(f.line, f.width || 6, COL.road);
+  for (const f of feats) if (f.kind === 'road' && f.ring) poly(f.ring, COL.road);
+  for (const f of feats) if (f.kind === 'pavement' && f.ring) poly(f.ring, SURFACE[f.surface] || COL.pavement);
+  for (const f of feats) if (f.kind === 'road' && f.ring) { path(f.ring, true); g.lineWidth = Math.max(0.3 * px, 0.6); g.strokeStyle = COL.kerbEdge; g.stroke(); }
+  for (const f of feats) if (f.kind === 'fence' && f.line) line(f.line, 0.12, COL.fence, [0.6, 0.4]);
+  // The City: its lanes and roads, and the G/F outlines of its buildings (the mask takes the
+  // ground away under them), then its yards. The outlines come from the fine plan.
   const L = S.L;
-  g.fillStyle = COL.city;
-  for (let k = 0; k < L.N; k++) {
-    if (!L.inside[k]) continue;
-    g.fillStyle = L.alley[k] === 2 ? COL.yard : COL.city;
-    g.fillRect(X(L.cellX(k) - 0.5), Z(L.cellZ(k) - 0.5), px + 0.5, px + 0.5);
-  }
+  const fill = (rings, col) => {
+    g.beginPath();
+    for (const r of rings) r.pts.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
+    g.fillStyle = col;
+    g.fill('evenodd');
+  };
+  fill([...L.ground.lane, ...L.ground.road], COL.city);
+  for (const b of S.list) fill(b.phases[0].rings, COL.city);
+  fill(L.ground.yard, COL.yard);
+}
+
+// The lines of one basketball court c = { centre: [x, z], axis: degrees in the plan frame (0:
+// along x), length, width } (28 x 15 m by default): the boundary, the centre line, the centre
+// circle and the two keys.
+function courtLines(g, X, Z, px, c) {
+  const L = c.length || 28, W = c.width || 15, a = ((c.axis || 0) * Math.PI) / 180, ca = Math.cos(a), sa = Math.sin(a);
+  const P = (u, v) => [X(c.centre[0] + u * ca - v * sa), Z(c.centre[1] + u * sa + v * ca)];
+  g.strokeStyle = COL.courtLine; g.lineWidth = Math.max(0.12 * px, 0.8);
+  const seg = (pts, close) => { g.beginPath(); pts.forEach((p, i) => (i ? g.lineTo(...P(...p)) : g.moveTo(...P(...p)))); if (close) g.closePath(); g.stroke(); };
+  seg([[-L / 2, -W / 2], [L / 2, -W / 2], [L / 2, W / 2], [-L / 2, W / 2]], true);
+  seg([[0, -W / 2], [0, W / 2]]);
+  const circle = [];
+  for (let q = 0; q <= 24; q++) circle.push([1.8 * Math.cos((q / 24) * 2 * Math.PI), 1.8 * Math.sin((q / 24) * 2 * Math.PI)]);
+  seg(circle);
+  for (const s of [-1, 1]) seg([[s * L / 2, -2.45], [s * (L / 2 - 5.8), -2.45], [s * (L / 2 - 5.8), 2.45], [s * L / 2, 2.45]]);
+}
+
+// A canvas texture of the ground over box (x0, z0, x1, z1) at res metres per pixel.
+function groundTexture(box, res, ctx, S, sur) {
+  const cv = document.createElement('canvas');
+  cv.width = Math.ceil((box.x1 - box.x0) / res); cv.height = Math.ceil((box.z1 - box.z0) / res);
+  paintGround(cv.getContext('2d'), box, 1 / res, ctx, S, sur);
   const tex = new THREE.CanvasTexture(cv);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
@@ -76,7 +135,7 @@ function footMask(S) {
   return { tex, box: new THREE.Vector4(x0, z0, L.W, L.D) };
 }
 
-export function buildGround(T, ctx, S) {
+export function buildGround(T, ctx, S, sur = null) {
   const group = new THREE.Group();
   // ---- the terrain ----
   const n = T.nx, pos = new Float32Array(n * n * 3), uv = new Float32Array(n * n * 2);
@@ -101,13 +160,21 @@ export function buildGround(T, ctx, S) {
   geo.setIndex(idx);
   geo.computeVertexNormals();
   const mask = footMask(S);
-  const mat = new THREE.MeshLambertMaterial({ map: groundMap(T, ctx, S) });
+  const R = -T.x0;
+  const farTex = groundTexture({ x0: -R, z0: -R, x1: R, z1: R }, (2 * R) / MAP_PX, ctx, S, sur);
+  const near = groundTexture(NEAR, NEAR_RES, ctx, S, sur);
+  const mat = new THREE.MeshLambertMaterial({ map: farTex });
   mat.onBeforeCompile = (sh) => {
     sh.uniforms.uMask = { value: mask.tex };
     sh.uniforms.uMaskBox = { value: mask.box };
+    sh.uniforms.uNear = { value: near };
+    sh.uniforms.uNearBox = { value: new THREE.Vector4(NEAR.x0, NEAR.z0, NEAR.x1 - NEAR.x0, NEAR.z1 - NEAR.z0) };
     sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec2 vGXZ;')
       .replace('#include <begin_vertex>', '#include <begin_vertex>\nvGXZ = (modelMatrix * vec4(position, 1.0)).xz;');
-    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec2 vGXZ; uniform sampler2D uMask; uniform vec4 uMaskBox;')
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec2 vGXZ; uniform sampler2D uMask; uniform vec4 uMaskBox; uniform sampler2D uNear; uniform vec4 uNearBox;')
+      .replace('#include <map_fragment>', `#include <map_fragment>
+  vec2 nq = (vGXZ - uNearBox.xy) / uNearBox.zw;
+  if (nq.x > 0.0 && nq.y > 0.0 && nq.x < 1.0 && nq.y < 1.0) diffuseColor.rgb = diffuse * texture2D(uNear, nq).rgb;`)
       .replace('void main() {', `void main() {
   vec2 mq = (vGXZ - uMaskBox.xy) / uMaskBox.zw;
   if (mq.x > 0.0 && mq.y > 0.0 && mq.x < 1.0 && mq.y < 1.0 && texture2D(uMask, mq).r > 0.5) discard;`);

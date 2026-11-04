@@ -27,6 +27,10 @@ import { makeChoices } from './choices.js';
 export const WALL = 0.2; // each building has its own outer walls (p209)
 export const SLAB = 0.15;
 export const PARAPET = 1.0;
+// The share of the flat roofs with a parapet. John's estimate (2026-11-03): about 20 % of the
+// roofs had one; the bronze model in the park shows most roofs with a plain edge. Which roofs
+// have one is INFERRED (a hash of the building's key).
+export const PARAPET_RATE = 0.2;
 export const HUT = 2.4; // a stair hut on the roof, floor to roof
 export const STEP = 0.15; // the G/F floor is one step over the lane at the main door
 export const TERRACE = -10; // the label of a wall that a setback leaves on the roof below
@@ -220,8 +224,11 @@ export function buildStructure(L, T, opts = {}) {
   // ---- storeys and storey heights ----
   // A building keeps the storeys of the layout where a source gives them. Elsewhere (INFERRED)
   // its roof follows the roofline that the sourced buildings give: it rises to the north, with
-  // the ground, from 34-51 mPD on the south face to 51-60 mPD on Tung Tau Tsuen Road. It is
-  // lower toward the Yamen, as in the 1989 aerial photos.
+  // the ground, from 34-51 mPD on the south face to 51-60 mPD on Tung Tau Tsuen Road. The
+  // storeys counted on the bronze model of the City (fixes.storeys, from "bronze") set only the
+  // buildings counted: the bronze simplifies, and the roofline keeps to the photos of the City.
+  // The ring round the Yamen court is not lower than the rest: the 1989 aerial photos and the
+  // bronze show a deep court with tall walls.
   for (const b of S.list) {
     const r = b.rng;
     b.n = b.layN;
@@ -260,26 +267,20 @@ export function buildStructure(L, T, opts = {}) {
     if (f.kind) b.kind = f.kind;
     if (f.roof === 'pitched') b.pitched = true; // a sloped roof of tiles: no roof to walk on
     if (b.kind === 'low') { b.h0 = 3.2 + b.rng() * 0.4; b.hs = 2.8; }
-    if (f.from !== 'photo') b.inferred = true;
+    if (f.inferred || !['photo', 'bronze'].includes(f.from)) b.inferred = true;
   }
   const sourced = S.list.filter((b) => ['south', 'p132', 'p336', 'photo'].includes(b.from));
   const roofOf = (b) => b.g0 + b.h0 + (b.n - 1) * b.hs;
   const R = roofSurface(sourced.map((b) => ({ x: b.cx, z: b.cz, r: roofOf(b) })));
   S.roofline = R;
-  // The centre of the low ground round the Yamen: fixes.yamenCentre, else the centre of the
-  // halls. A fixed centre keeps the storeys round the Yamen when the outline of a hall changes.
-  const ys = P.filter((p) => p.kind === 'yamen');
-  const yc = fixes.yamenCentre || ys.reduce((s, p) => [s[0] + p.cx / ys.length, s[1] + p.cz / ys.length], [0, 0]);
   // The old layout made 7 % of these low at random, and a few 15-storey ones; no source gives
   // that, thus each one here takes its storeys from the roofline.
   for (const b of S.list) {
     if (b.from !== 'photos') continue;
     if (b.kind !== 'tenement' || b.n <= 3) { b.h0 = 3.3 + b.rng() * 0.6; b.hs = 2.7 + b.rng() * 0.3; }
     b.kind = 'tenement';
-    const dy = Math.hypot(b.cx - yc[0], b.cz - yc[1]);
     let f = (R(b.cx, b.cz) - b.g0 - b.h0) / b.hs + 1;
     f += 2.2 * (vnoise(b.cx / 14, b.cz / 14, 5) - 0.5) + 1.2 * (b.rng() - 0.5);
-    f -= 5.5 * (1 - clamp((dy - 16) / 34, 0, 1));
     b.n = S.choices.storeys(b.key, clamp(Math.round(f), 2, 15));
     b.inferred = true;
   }
@@ -296,8 +297,9 @@ export function buildStructure(L, T, opts = {}) {
 
   // ---- annexes: a building grows over the roof of a lower neighbour (p137) ----
   // A neighbour with a party wall of 2.5 m or more, 3 storeys or more lower, and not the Yamen
-  // or a named building. The tall one takes the air over it from its first floor above the
-  // lower roof. INFERRED: which ones; about half of the candidates.
+  // or a named building, or a building whose source says so (fixes.storeys "annex": false, the
+  // thin tower). The tall one takes the air over it from its first floor above the lower roof.
+  // INFERRED: which ones; about half of the candidates.
   const shared = (a, c) => {
     let s = 0;
     for (const r of a.rings)
@@ -315,7 +317,7 @@ export function buildStructure(L, T, opts = {}) {
   };
   S.neighbours = neighbours;
   for (const b of S.list) b.annex = [];
-  const plain = (b) => b.kind !== 'yamen' && !b.name;
+  const plain = (b) => b.kind !== 'yamen' && !b.name && b.fix?.annex !== false;
   for (const low of [...S.list].sort((p, q) => p.top - q.top)) {
     if (!plain(low) || low.over || low.annex.length || low.area > 90) continue;
     let best = null, bs = 0;
@@ -415,8 +417,10 @@ export function buildStructure(L, T, opts = {}) {
   }
   findSites(S, b => neighbours(b), shared);
   for (const b of S.list) {
-    // The setback keeps the end of the building with the stair. No setback on a floor that
-    // a wing reaches: the wing's door is in the party wall.
+    // The setback keeps the end of the building with the stair, and every other stair too:
+    // a stair goes up to the top roof, thus its hut must stand on the top storey. Where the
+    // stairs are at both ends, the cut leaves too little open roof and the building has no
+    // setback. No setback on a floor that a wing reaches: the wing's door is in the party wall.
     if (b.setback && S.list.some((w) => w.wingOf === b.id && w.n >= b.phases[b.phases.length - 1].k0 + 1)) b.setback = 0;
     if (b.setback) {
       const ph = b.phases[b.phases.length - 1], F = b.F;
@@ -424,7 +428,7 @@ export function buildStructure(L, T, opts = {}) {
       const mid = st ? (st.a0 + st.a1) / 2 : F.a0;
       const keep = mid < (F.a0 + F.a1) / 2 ? -1 : 1;
       let cut = keep < 0 ? F.a0 + (F.a1 - F.a0) * b.setback : F.a1 - (F.a1 - F.a0) * b.setback;
-      if (st) cut = keep < 0 ? Math.max(cut, st.a1 + 1.2) : Math.min(cut, st.a0 - 1.2);
+      for (const s of b.stairs) cut = keep < 0 ? Math.max(cut, s.a1 + 1.2) : Math.min(cut, s.a0 - 1.2);
       const rings = clipRings(ph.rings, F, cut, keep);
       if (rings.length && ringArea(rings) > 12 && ringArea(rings) < ph.area - 8) { ph.rings = rings; ph.area = ringArea(rings); ph.setback = { cut, keep }; }
       else b.setback = 0;
@@ -443,6 +447,9 @@ export function buildStructure(L, T, opts = {}) {
     for (const [y0, y1, id] of fill.get(p) || []) if (y >= y0 && y < y1) return S.list[id];
     return null;
   };
+
+  // ---- parapets: about 20 % of the flat roofs (PARAPET_RATE); the rest end at the slab ----
+  for (const b of S.list) b.parapet = !b.pitched && S.choices.num(`parapet:${b.key}`, 4243) < PARAPET_RATE;
 
   // ---- roof rooms ----
   // A room of one storey on the roof, beside a stair hut: about 20 % of the tenements (INFERRED
@@ -487,6 +494,28 @@ export const floorName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // buildings across a lane of BRIDGE_W m or less can get a bridge site, from 2/F up. INFERRED:
 // the rates; 15 % of the pairs have no door at all, and half the pairs across a lane a bridge.
 export const BRIDGE_W = 3.5;
+// The route inside the buildings from the SW corner of the City to the NE corner (below, and
+// links.js). p164 has a route on 3/F-4/F from one end of the City to the other. John asked
+// (2026-11-04) for a route from corner to corner at the middle of the City's height (the median
+// building has 12 storeys): an ARTISTIC choice, not SOURCED. CHAIN_FLOORS: its floors.
+export const CHAIN_FLOORS = [5, 7];
+const NE = [0.948, -0.32]; // north-east in the plan frame (+x is bearing 63.63 degrees)
+// The ends of the route: of the buildings in list, the CORNER_N nearest the SW corner and the
+// CORNER_N nearest the NE corner (the points of the outlines farthest to the SW and the NE).
+// One at each corner, thus the route goes the full way from corner to corner.
+const CORNER_N = 1;
+export function routeCorners(S, list) {
+  let sw = null, ne = null;
+  for (const b of S.list)
+    for (const r of b.rings)
+      for (const p of r.pts) {
+        const s = p[0] * NE[0] + p[1] * NE[1];
+        if (!sw || s < sw.s) sw = { s, p };
+        if (!ne || s > ne.s) ne = { s, p };
+      }
+  const near = (q) => [...list].sort((a, c) => Math.hypot(a.cx - q[0], a.cz - q[1]) - Math.hypot(c.cx - q[0], c.cz - q[1])).slice(0, CORNER_N);
+  return [near(sw.p), near(ne.p)];
+}
 function findSites(S, neighbours, shared) {
   const C = S.choices, R = (key) => C.num(key, 31337);
   const two = (b, c) => (b.key < c.key ? `${b.key}:${c.key}` : `${c.key}:${b.key}`); // a pair in one order
@@ -545,7 +574,7 @@ function findSites(S, neighbours, shared) {
           }
         }
       if (shared(b, c) < 1.4) continue;
-      // A pair with no good site: a site for the north-south route only, at the point nearest
+      // A pair with no good site: a site for the SW-NE route only, at the point nearest
       // the circulation of both.
       if (!best) { if (far) S.farPairs.set(`${b.id}:${c.id}`, { b: b.id, c: c.id, rate: 0, P: far.P, n: far.n }); continue; }
       // the factor of the pair on the rate of doors by height (links.js); no door for 15 %
@@ -593,17 +622,15 @@ function findSites(S, neighbours, shared) {
         if (!o || qd < o.d) S.bridgeSites.set(key, { b: b.id, c: c.id, P, Q, d: qd });
       }
   }
-  // One route inside the buildings from the north face to the south face, near 3/F-4/F
-  // (p164: a route on the third and fourth floors from one end of the City to the other).
-  // INFERRED: which buildings. The chain is the cheapest one over the party walls and the
-  // bridge sites, by the distance between the buildings and the floors that line up near
-  // 3/F-4/F.
-  const N = [0.444, -0.896]; // north in the plan frame (+x is bearing 63.63 degrees)
-  const north = (b) => b.cx * N[0] + b.cz * N[1];
+  // One route inside the buildings from the SW corner of the City to the NE corner, on the
+  // floors CHAIN_FLOORS (see there). INFERRED: which buildings. The chain is the cheapest one
+  // over the party walls and the bridge sites, by the distance between the buildings and the
+  // floors that line up on CHAIN_FLOORS.
   const links = S.list.filter(linkable);
   const step = (b, c) => {
     let dy = Infinity;
-    for (let k = 2; k <= 5 && k < b.n; k++) for (let kc = 2; kc <= 5 && kc < c.n; kc++) dy = Math.min(dy, Math.abs(b.y[k] - c.y[kc]));
+    const [lo, hi] = CHAIN_FLOORS;
+    for (let k = lo; k <= hi && k < b.n; k++) for (let kc = lo; kc <= hi && kc < c.n; kc++) dy = Math.min(dy, Math.abs(b.y[k] - c.y[kc]));
     return dy <= 0.6 ? 0 : dy <= 1.2 ? 15 : Infinity;
   };
   const adj = new Map(links.map((b) => [b.id, []]));
@@ -618,8 +645,7 @@ function findSites(S, neighbours, shared) {
     const w = (Math.hypot(b.cx - c.cx, b.cz - c.cz) + extra) * (onKept.has(`${b.key}:${c.key}`) ? 0.25 : 1);
     adj.get(b.id).push([c.id, w, bridge]); adj.get(c.id).push([b.id, w, bridge]);
   }
-  const byNorth = [...links].sort((p, q) => north(q) - north(p));
-  const starts = byNorth.slice(0, 5), ends = new Set(byNorth.slice(-5).map((b) => b.id));
+  const [starts, last] = routeCorners(S, links), ends = new Set(last.map((b) => b.id));
   const dist = new Map(), prev = new Map(), via = new Map(), todo = new Set();
   for (const b of starts) { dist.set(b.id, 0); todo.add(b.id); }
   let end = null;
@@ -648,7 +674,7 @@ function findSites(S, neighbours, shared) {
     S.list[x.b].sites.push({ P: x.P, n: x.n, key: `${x.b}:${x.c}` });
     S.list[x.c].sites.push({ P: x.P, n: [-x.n[0], -x.n[1]], key: `${x.b}:${x.c}` });
   }
-  S.bridgeAll = new Map(S.bridgeSites); // for the north-south route (links.js)
+  S.bridgeAll = new Map(S.bridgeSites); // for the SW-NE route (links.js)
   // Half of the bridge sites keep a bridge, and every one on the route.
   for (const [key, x] of [...S.bridgeSites]) {
     if (!x.chain && R(`bsite:${two(S.list[x.b], S.list[x.c])}`) >= 0.5) { S.bridgeSites.delete(key); continue; }

@@ -114,7 +114,7 @@ let S, shell, inner = null, ground, routeObj = null;
 const state = { cut: OFF, secAxis: 'off', sec: 0, secFlip: false, open: false, sel: -1, pick: null, routeMode: false, start: null };
 
 async function init() {
-  const [plan0, biz, book, overlay0, context, terrain, fixes, fine, kept] = await Promise.all(['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices']
+  const [plan0, biz, book, overlay0, context, terrain, fixes, fine, kept, sur] = await Promise.all(['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings']
     .map((n) => fetch(`./data/${n}.json`).then((r) => r.json())));
   // the corrections of data/structure_fixes.json (src/structure/fixes.js); the footprints come
   // from the fine plan (data/plan_fine.json)
@@ -131,7 +131,7 @@ async function init() {
   scene.add(shell);
   props.ladder = propsOf(buildProps(S, 'ladder'), '#ff3d00');
   props.stool = propsOf(buildProps(S, 'stool'), '#d400ff');
-  ground = buildGround(T, context, S);
+  ground = buildGround(T, context, S, sur);
   // A section cuts the ground too, as in a section drawing.
   ground.terrain.material.clippingPlanes = [secPlane];
   ground.context.material.clippingPlanes = [secPlane];
@@ -148,7 +148,7 @@ async function init() {
   $('loading').remove();
   bindUI();
   resize();
-  window.kwc = { S, camera, controls, state, scene, U, routePick, showInfo, showNorthSouth, highlight }; // for the console
+  window.kwc = { S, camera, controls, state, scene, U, renderer, ground, routePick, showInfo, showNorthSouth, highlight }; // for the console
   requestAnimationFrame(frame);
 }
 
@@ -258,7 +258,8 @@ function showInfo(b, k) {
   const from = { south: 'south face, Lambot 1990 elevation (SOURCED)',
     p132: 'north face: the range of p132 is SOURCED, the count of this building INFERRED',
     p336: 'north face: the range of p336 is SOURCED, the count of this building INFERRED',
-    photo: `photo (SOURCED): ${b.fix?.why || ''}`, aerial: `aerial photo (SOURCED): ${b.fix?.why || ''}`,
+    photo: `photo (SOURCED): ${b.fix?.why || ''}`,
+    bronze: `bronze model in the park (${b.inferred ? 'INFERRED' : 'SOURCED'}): ${b.fix?.why || ''}`, aerial: `aerial photo (SOURCED): ${b.fix?.why || ''}`,
     sheet1987: `survey sheet 1987 (SOURCED): ${b.fix?.why || ''}`,
     photos: 'roofline of the sourced faces (INFERRED)', hut: 'hut (INFERRED)', named: 'named building', yamen: 'Yamen hall' }[b.from] || b.from;
   const st = b.stairs.map((s) => `${s.type === 'dogleg' ? 'dog-leg' : s.rmax > 0.2 ? 'steep straight' : 'straight'}${s.spine ? ' + corridor' : ''}`).join(', ') || (b.wingOf !== undefined ? `shares the stair of building ${b.wingOf}` : 'none');
@@ -280,7 +281,7 @@ function showInfo(b, k) {
   $('info').innerHTML = `<b>${b.label}</b> <span class="dim">(no. ${b.id})</span><br>
     ${b.n} storeys · from ${from}<br>
     G/F floor ${fmt(b.g0)} mPD · roof ${fmt(b.top)} mPD · footprint ${b.area.toFixed(0)} m²<br>
-    stairs: ${st}${b.over ? ` · building ${b.over.id} grows over its roof` : ''}${S.chain.includes(b.id) ? ' · on the north-south route' : ''}<br>
+    stairs: ${st}${b.over ? ` · building ${b.over.id} grows over its roof` : ''}${S.chain.includes(b.id) ? ' · on the SW-NE route' : ''}<br>
     links: ${Object.entries(lc).map(([q, n]) => `${n} ${q}`).join(', ') || 'none'}
     <table><tr><th>floor</th><th>mPD</th><th>height</th><th>units</th><th>changes, links</th></tr>${rows.join('')}</table>`;
 }
@@ -309,12 +310,13 @@ function routePick(b, k, p) {
   drawRoute(r);
 }
 
-// The north-south route inside the buildings (links.js): from a flat on 3/F (or 2/F) of the
-// first building of S.chain to one of the last, with no lane and no roof.
+// The SW-NE route inside the buildings (links.js): from a flat of the first building of
+// S.chain to one of the last, on the floors of the route there (S.chainEnds), with no lane and
+// no roof.
 const INSIDE = new Set(['lane', 'street', 'step', 'ladder', 'roofdoor', 'window']);
 function showNorthSouth() {
-  const unitOn = (b) => [...S.unitNode].find(([k]) => k.startsWith(`${b}:3:`) || k.startsWith(`${b}:2:`))?.[1];
-  const a = S.chain.length > 1 ? unitOn(S.chain[0]) : undefined, z = S.chain.length > 1 ? unitOn(S.chain.at(-1)) : undefined;
+  const unitOn = (b, k) => [...S.unitNode].find(([q]) => q.startsWith(`${b}:${k}:`))?.[1];
+  const a = S.chainEnds ? unitOn(S.chain[0], S.chainEnds[0]) : undefined, z = S.chainEnds ? unitOn(S.chain.at(-1), S.chainEnds[1]) : undefined;
   drawRoute(a !== undefined && z !== undefined ? route(S, a, z, INSIDE) : null);
 }
 

@@ -9,6 +9,7 @@ import { FloatBuf } from '../util.js';
 import { toXZ, toAW, inRings, segDist } from './poly.js';
 import { G, OUT, FLIGHT, LANDING, CORR, UNIT, stairParts } from './plan.js';
 import { WALL, SLAB, PARAPET, HUT, OPEN } from './model.js';
+const PARAPET_T = 0.15; // the thickness of a roof parapet
 
 export const KIND = { WALL: 0, SLAB: 1, PART: 2, STAIR: 3, FLOOR: 4, ROOF: 5, LINK: 6, HUT: 7 };
 const KIND_NAMES = Object.keys(KIND);
@@ -183,7 +184,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
           const holes = ops.filter((o) => o.r === r && o.i === i).map((o) => [o.t - o.w / 2, o.t + o.w / 2, o.y0, o.y1]);
           // windows on a wall to the open air, from 1/F up
           let open = OPEN.has(lab);
-          if (!open && lab >= 0 && !S.fills(lab, y + 0.3)) { const low = S.bOf(lab); open = low && low.top + PARAPET <= y + 0.9; }
+          if (!open && lab >= 0 && !S.fills(lab, y + 0.3)) { const low = S.bOf(lab); open = low && low.top + (low.parapet ? PARAPET : 0) <= y + 0.9; }
           if (open && k > 0 && len >= 1.3) {
             const n = Math.max(1, Math.floor((len - 0.4) / 2.2)), w = Math.min(1.0, len - 0.5);
             for (let q = 0; q < n; q++) {
@@ -203,7 +204,8 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
       });
     }
 
-    // ---- parapets: round the roof, and round the part of a floor that a setback leaves open ----
+    // ---- parapets (b.parapet, about 20 % of the flat roofs): round the roof, and round the part of
+    // a floor that a setback leaves open ----
     const parapet = (ring, y, skip) => {
       for (let i = 0; i < ring.pts.length; i++) {
         const A = ring.pts[i], B = ring.pts[(i + 1) % ring.pts.length], dx = B[0] - A[0], dz = B[1] - A[1], len = Math.hypot(dx, dz);
@@ -213,7 +215,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const flush = (t1) => {
           if (t0 === null || t1 - t0 < 0.1) { t0 = null; return; }
           const O0 = [A[0] + tx * t0, A[1] + tz * t0], O1 = [A[0] + tx * t1, A[1] + tz * t1];
-          out.prism([O0, O1, [O1[0] - nx * 0.15, O1[1] - nz * 0.15], [O0[0] - nx * 0.15, O0[1] - nz * 0.15]], y, y + PARAPET, C.parapet, [b.id, b.n, KIND.ROOF], { top: true });
+          out.prism([O0, O1, [O1[0] - nx * PARAPET_T, O1[1] - nz * PARAPET_T], [O0[0] - nx * PARAPET_T, O0[1] - nz * PARAPET_T]], y, y + PARAPET, C.parapet, [b.id, b.n, KIND.ROOF], { top: true });
           t0 = null;
         };
         for (let t = 0; t < len; t += 0.25) {
@@ -227,8 +229,8 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
     if (b.pitched) hipRoof(out, b, b.phases[b.phases.length - 1].rings, b.top, triangulate);
     else if (b.kind !== 'yamen') {
       const top = b.phases[b.phases.length - 1];
-      for (const r of top.rings) parapet(r, b.y[b.n], null);
-      if (top.setback && b.phases.length > 1) {
+      if (b.parapet) for (const r of top.rings) parapet(r, b.y[b.n], null);
+      if (b.parapet && top.setback && b.phases.length > 1) {
         const below = b.phases[b.phases.length - 2];
         for (const r of below.rings) parapet(r, b.y[b.n - 1], (x, z) => inRings(top.rings.map((q) => q.pts), x, z));
       }
@@ -411,7 +413,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
       }
     }
     if (props && d.stool) stool(out, d, info);
-    if (props && d.kind === 'ladder') ladder(out, d, info);
+    if (props && d.kind === 'ladder') ladder(out, d, info, S);
   }
   return out.arrays();
 }
@@ -473,11 +475,17 @@ function stool(out, d, info) {
   const { x, z, y, h } = d.stool;
   out.prism([[x - 0.2, z - 0.2], [x + 0.2, z - 0.2], [x + 0.2, z + 0.2], [x - 0.2, z + 0.2]], y, y + h, C.wood, info, { top: true });
 }
-// A ladder from roof to roof (links.js): a plain slab from the lower roof to over the parapet.
-function ladder(out, d, info) {
-  const hi = Math.max(d.y, d.yc), lo = Math.min(d.y, d.yc);
-  out.deck([d.x - 0.2, d.z], [d.x + 0.2, d.z], lo + 0.02, lo + 0.02, 0.5, 0.02, C.wood, info);
-  out.prism([[d.x - 0.25, d.z - 0.25], [d.x + 0.25, d.z - 0.25], [d.x + 0.25, d.z - 0.2], [d.x - 0.25, d.z - 0.2]], lo, hi + PARAPET, C.wood, info, { top: true });
+// A ladder from roof to roof (links.js): a plain slab flat against the wall of the higher
+// building, on the lower roof, from the lower roof to 1 m over the higher roof: the top of its
+// parapet, or a handhold where it has none. A plank at its foot. d.n points out of the wall onto
+// the lower roof; t runs along the wall. Where the lower roof has a parapet (0.15 m thick, along
+// this wall too), the ladder stands against the parapet.
+function ladder(out, d, info, S) {
+  const hi = Math.max(d.y, d.yc), lo = Math.min(d.y, d.yc), [nx, nz] = d.n, tx = -nz, tz = nx;
+  const g = S.list[d.c]?.parapet ? PARAPET_T : 0;
+  const at = (t, o) => [d.x + tx * t + nx * (g + o), d.z + tz * t + nz * (g + o)];
+  out.deck(at(0, 0.02), at(0, 0.42), lo + 0.02, lo + 0.02, 0.5, 0.02, C.wood, info);
+  out.prism([at(-0.25, 0.05), at(0.25, 0.05), at(0.25, 0.1), at(-0.25, 0.1)], lo, hi + PARAPET, C.wood, info, { top: true });
 }
 
 // The ladders (kind 'ladder') or the stools (kind 'stool') only, as one mesh, and the top of
@@ -487,7 +495,7 @@ export function buildProps(S, kind) {
   for (const d of S.doors) {
     const info = [d.b, d.k ?? 0, KIND.LINK];
     if (kind === 'stool' && d.stool) { stool(out, d, info); tops.push([d.stool.x, d.stool.y + d.stool.h, d.stool.z]); }
-    if (kind === 'ladder' && d.kind === 'ladder') { ladder(out, d, info); tops.push([d.x, Math.max(d.y, d.yc) + PARAPET, d.z]); }
+    if (kind === 'ladder' && d.kind === 'ladder') { ladder(out, d, info, S); tops.push([d.x + d.n[0] * 0.08, Math.max(d.y, d.yc) + PARAPET, d.z + d.n[1] * 0.08]); }
   }
   return { arrays: out.arrays(), tops };
 }

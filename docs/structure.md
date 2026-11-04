@@ -16,9 +16,10 @@ add the art, and the movement of people can run on the route graph.
 | `data/structure_fixes.json` | corrections to the two files above, and storeys from photos, each with its source | SOURCED |
 | Lambot's 1990 south elevation | the storeys on the east half of the south face (plan x -0.6 to 104.9) | SOURCED |
 | City of Darkness Revisited, pp132, 336 | the range of 12-13 storeys on Tung Tau Tsuen Road, one of 14 | SOURCED as a range |
-| Survey sheet 11-NE-11A (May 1987) | the low temporary structures on the east edge, the Fuk Tak shrine | SOURCED |
+| Survey sheet 11-NE-11A (May 1987) | the low temporary structures on the east edge | SOURCED |
 | The park's plan of the City (the photo that the trace reads) | the outlines of the Yamen halls, the Youth Centre, the Old People's Centre | SOURCED |
-| Photos of the bronze model of the City in the park (Alamy stock photo 53451363; two screenshots on John's Mac, not in git). The model was made after the clearance and is a sculpture: its sizes do not agree with the plans | which buildings of the Yamen compound are one building, the sloped roofs, the low east strip, the huts on the east edge | secondary: shapes only, not sizes |
+| Photos of the bronze model of the City in the park, scale 1:200 (Alamy 49828257, 53451363 and similar stock photos; screenshots on John's Mac, not in git). The model was made after the clearance and is a sculpture: its outlines do not agree exactly with the plans | the storeys of the buildings that no photo of the City shows (John, 2026-11-03: the main source for heights); which buildings of the Yamen compound are one building, the sloped roofs, the low east strip, the huts on the east edge, the thin tower, the yard east of the Yamen | SOURCED for storeys where counted (`from: "bronze"`); shapes only for outlines |
+| City of Darkness Revisited, pp20-21 (Lambot) and the 1989 aerial (Lambot, Wikimedia Commons) | the storeys on the west half of the south face (12-13); a deep Yamen court with tall walls; the Free School at about full height | SOURCED for the counts; which buildings: INFERRED |
 | `data/terrain.json` (LandsD DTM, sheet 11-NE-11A of 1987) | the ground: 7.6 m to 23 m in the City | SOURCED round the City, INFERRED inside it |
 | pp137-139, pp145-146, p164, p167, p175, p179, p209, p249, p253, p340, Terasawa's fold-out | the types of stairs, shared stairs, buildings over buildings, stair huts, bridges, ladders between roofs, corridor windows, no lifts, the north-south route | SOURCED as types |
 
@@ -57,12 +58,30 @@ with its source.
   - A low building of 1 storey with a flat roof stands in the strip east of the east side
     range and of the middle hall: a light, flat roof on the bronze model (INFERRED).
   - The Youth Centre (2 storeys) is low too. No building stands over the Yamen or the courts.
-- Storeys counted on photos: five buildings on the west face, two on aerial photos.
+- Storeys counted on photos of the City: five buildings on the west face, and six on the
+  west half of the south face (12-13, pp20-21 and the 1989 aerial; which buildings is
+  INFERRED).
+- Storeys counted on the bronze model in the park (`from: "bronze"`): 24 buildings that no
+  photo counts, on the west face, round the Yamen court and at the north-east corner. Four
+  agents counted the window rows on four views (north, north-east, west, and down into the
+  court); four more agents counted each difference again. A row on the bronze is not always
+  a storey: on the west face, 5 blocks with photo counts give 1.1 storeys a row; on the north
+  face the rows agree with p132; in the court the camera fits the storeys of the model. Each
+  "why" gives the counts. The real photos rank above the bronze: on Tung Tau Tsuen Road the
+  bronze only chooses 12 or 13 inside the range of p132 (the 1987 and 1989 photos agree with
+  12-13 there).
+- The thin tower of the bronze (John circled it on the view from Tung Tau Tsuen Road): the
+  narrow strip of plots 267 and 276 (plan x 62.5-68.5, z 7.5-16.5) stands alone, 15 storeys
+  (p340: "up to a possible 15 storeys"). The north and north-east views put it at x 62-66;
+  they do not fix its depth (INFERRED: which plots). It does not grow over a neighbour's roof
+  (fixes.storeys `annex: false`).
+- Plot 210, between the Yamen's east side range and 23 Lo Yan Street, is a yard: the bronze
+  shows trees there and no building (two counts). The trace had it as part of the Yamen.
 - The south face: the steps of Lambot's elevation go on plan x -0.6 to 104.9 only, as fitted
   to the lot lines of the 1987 sheet. Each building takes the median step over its width.
-  The west half of the south face takes its storeys from the roofline (INFERRED).
-- The east edge: six temporary structures of one storey and the Fuk Tak shrine, from the
-  dashed outlines of the 1987 sheet. Their inner side moves 3 m west, because the plan's east
+- The east edge: six temporary structures of one storey, from the dashed outlines of the
+  1987 sheet. The sheet also draws the Fuk Tak shrine, free-standing east of the City: the
+  model leaves it out (John, 2026-11-04). Their inner side moves 3 m west, because the plan's east
   face is 1-3 m west of the sheet's. A lane that ends at the strip goes on through it.
 
 ## The outlines (`tools/trace_plan.py`, `data/plan_fine.json`)
@@ -85,6 +104,20 @@ The 1 m plan gives each cell to one plot, thus a plot line at an angle was a sta
 - The result: 56 % of the length of the walls lies on the axis of its building (46 % with
   the 1 m plan), and 18 % is oblique (26 %). The lanes have about 8 % less area (5326 m², 5759 m²
   before), thus more lanes are narrow enough for a bridge (about 95 bridges, 70 before).
+- Exact polygons (`src/footprint.js`, fine plan only): a building that a cell rule draws as
+  a polygon (the Yamen halls, the Youth Centre, the Old People's Centre, the low range, the
+  temporary structures on the east edge) takes that polygon, not the staircase of its cells.
+  Its neighbours meet it with no gap.
+- Straight walls (`regularise()` in `src/footprint.js`, fine plan only): a least-squares pass
+  moves the corners of the outlines, by 0.75 m at most, so that a wall lies on the axes of its
+  building, on a long wall next to it, or straight through a corner. A wall that fits the
+  drawn line of the plan photo closely (RMS 0.15 m or less) can turn by 3 degrees at most;
+  other walls by 8 degrees (5 degrees for walls of 4 m or more). Guards: no new crossings, a
+  lane keeps its width or 0.9 m, a party wall of 1.2 m or more keeps 1.2 m, a building keeps
+  its area within 10 %. Result (2026-11-03): 62 % of the walls lie within 2 degrees of the
+  plan photo (48 % before), 65 % of the wall length within 5 degrees of the building's axes
+  (59 %), and kinks went from 338 to 216. The curve of the NE corner keeps its bends. The 1 m
+  plan (`COARSE=1`) does not change.
 
 ## The kept choices (`src/structure/choices.js`, `data/structure_choices.json`)
 
@@ -100,7 +133,14 @@ centre of a building, thus a new outline moved some of them by a storey. The mod
 where its key comes up again; a new key takes a number from a hash of the key. The route
 prefers the kept chain of buildings and its floors. With the new outlines, 50-77 % of the
 kept doors, bridges, ladders, steps and windows stay, 63 % of the flats in two buildings,
-40 % of the holes, and 15 of the 19 links of the route.
+40 % of the holes, and 15 of the 19 links of the route. The route changed on purpose on
+2026-11-04 (SW corner to NE corner, 5/F-7/F): its kept chain and floors (`chain`,
+`chainLinks`) were made again with no kept route, then kept.
+
+When the roofline changes on purpose, each kept storey moves by the change of the roofline's
+value at its building, and a building that a source now counts loses its kept storey. That
+was done once (2026-11-03: no lower ring round the Yamen, the new photo counts): 73 kept
+storeys moved, most by +1 or +2 near the court, and 27 left.
 
 `--record` makes the file again from the old random sequence, with the fixes and outlines
 of the time: thus a record run with `COARSE=1` and the fixes of 2026-11-03 gives the
@@ -114,16 +154,19 @@ approved model exactly.
   neighbours seldom line up. Walls are 0.2 m thick and each building has its own (p209).
   Slabs are 0.15 m thick.
 - Storeys: the sourced faces keep their storeys. On Tung Tau Tsuen Road the source gives a
-  range (12-13, one of 14); the count of each building in that range is INFERRED. The other
-  buildings take their storeys from the roofline of the sourced faces. That roofline rises
-  to the north with the ground: about 34-51 mPD on the south face and 51-60 mPD on Tung Tau
-  Tsuen Road. It is lower near the Yamen (INFERRED): within 16-50 m of a fixed centre
-  (fixes.yamenCentre, the centre of the halls as John approved them), so that a new outline
-  of a hall does not change the storeys round it.
+  range (12-13, one of 14); the count of each building in that range is INFERRED (from the
+  bronze where it shows a lower or a higher block). The buildings that the bronze counts take
+  its counts. The other buildings take their storeys from the roofline of the faces that
+  photos count; the bronze counts are not part of that roofline, because the bronze
+  simplifies. That roofline rises to the north with the ground: about 34-51 mPD on the south
+  face and 51-60 mPD on Tung Tau Tsuen Road. It is not lower near the Yamen: the 1989 aerial
+  photos and the bronze show the court as a deep shaft with walls of 10-13 storeys. (Before
+  2026-11-03 the model made the ring round the court 3-5 storeys lower.)
 - The footprint can change with height:
   - a building grows over the roof of a neighbour that is 3 or more storeys lower (p137);
   - overhangs of up to 0.6 m over lanes of 2.2 m or more, from 1/F or 2/F up;
-  - a setback top storey on some tall buildings (not where a wing reaches that floor).
+  - a setback top storey on some tall buildings (not where a wing reaches that floor). The
+    top storey keeps every stair, thus each stair hut stands on the top roof.
 - Sloped roofs: the five halls of the Yamen have pitched roofs of tiles. The Old People's
   Centre, the Youth Centre and the temporary structures on the east edge have hipped roofs,
   from the bronze model in the park (fixes.storeys: roof "pitched"). The hipped roof follows the outline: its height over a
@@ -131,6 +174,9 @@ approved model exactly.
   one walks on a sloped roof, thus it has no stair hut and no links.
 - Roof rooms: a room of one storey beside the stair hut on about 16 % of the tenements, and
   on the one building that a photo gives one (INFERRED from the 1987 aerial photos).
+- Parapets: a wall of 1 m round about 20 % of the flat roofs (`PARAPET_RATE`; John's
+  estimate, 2026-11-03). The other roofs end at the slab. Which roofs have one is INFERRED
+  (a hash of the building's key).
 - `plan.js`: the plan of each floor, on a raster of 0.25 m.
   - A dog-leg stair at the side with a corridor of 1.0 m beside it, or a straight stair in
     a strip of 1.0 m in a narrow building, or a steep stair in a very small one. The stair
@@ -155,14 +201,25 @@ approved model exactly.
     0.05 higher, times a factor for each pair of buildings (INFERRED from pp164, 175).
   - Doors from the half landings of dog-leg stairs (p340), up to 1.2 m of steps.
   - Bridges over lanes of 3.5 m or less.
-  - One route inside the buildings from the north face to the south face, near 3/F-4/F
-    (p164). It goes through 20 buildings, with doors and bridges. Which buildings is
-    INFERRED.
-  - From roof to roof: over the parapet where the roofs differ by 0.5 m or less; a ladder for
-    30 % of the pairs up to one storey apart. The ladder is SOURCED: "When it was only one
-    floor, people... bridged the gap with the help of a ladder" (Lam Po Chun, p145). The 30 %
-    is INFERRED: most people used the lanes (p249). No source shows a plank from roof to
-    roof, thus the model has none.
+  - One route inside the buildings, the full way from the SW corner of the City to the NE
+    corner. p164 has a route on 3/F-4/F from one end of the City to the other. At John's
+    request (2026-11-04) the route goes from corner to corner at the middle of the City's
+    height (the median building has 12 storeys): an artistic choice, not SOURCED. In
+    `model.js`, `CHAIN_FLOORS` (5/F-7/F) sets its floors, and `routeCorners()` its two ends:
+    the building nearest each corner of the outlines (250 at the SW, 0 at the NE). A link off
+    those floors costs 15 m of walking a floor, thus the route goes round a link that only
+    lines up on 3/F-4/F. It goes through 23 buildings, with 9 doors and 13 bridges, on
+    6/F-8/F, and starts and ends on 6/F. Which buildings is INFERRED.
+  - From roof to roof: about 20 % of the flat roofs have a 1 m parapet (John's estimate,
+    2026-11-03; which roofs is INFERRED). Two nearly level roofs (0.3 m or less) with no parapet
+    make one open roof and always join. Elsewhere a step, where the wall to climb (the step,
+    with a parapet on it) is 1.5 m or less, for 90 % of the pairs; a ladder for 30 % of the
+    pairs with a higher wall, up to one storey apart. The ladder is SOURCED: "When it was only
+    one floor, people... bridged the gap with the help of a ladder" (Lam Po Chun, p145). The
+    30 % is INFERRED: most people used the lanes (p249). No source shows a plank from roof to
+    roof, thus the model has none. A step or a ladder needs the top roof of the lower building
+    at the wall: a setback terrace below it does not count. The ladder stands flat against the
+    wall of the higher building, on the lower roof (against its parapet, where it has one).
   - From a roof into a taller building (50 % of the pairs): a corridor window with a stool
     under it, in the corridor (p145: where the gap was two or three floors, the residents
     opened or broke a corridor window and put a stool under it). Where the floor is more
@@ -191,9 +248,13 @@ approved model exactly.
   87-96, z -73 to -62) that the plan does not have. Two buildings on the east face stand
   about 3 m into the sheet's strip of temporary structures (z 32-50).
 - The address labels of the south row do not agree with the 1987 sheet.
-- The bronze model in the park shows one thin tower far above the other roofs, near the
-  middle of the City. Its place is not known yet, and the texts give "up to a possible 15
-  storeys" (p340).
+- What the bronze shows and the model does not have yet (outlines, not storeys): the court
+  is 1-3.5 m wider at its south-east; the Free School covers the open south-west part of the
+  court; building 81 and 23 Lo Yan Street each have two heights (11 and 9 rows; 10-12 and
+  4-7); a tower of about 12 rows stands about 8 m behind the low block at the south-west
+  corner; a narrow stair tower stands in the notch of the west face at plan z 13-16.
+- The thin tower stands on plots 267 and 276; the bronze puts it about 2.5 m further west,
+  and its depth is not known.
 - The fine trace still bends at the text in a few places, and the strip of the west face is
   less clean than the rest.
 - A wing whose host has its stair on each shared wall opens onto another neighbour

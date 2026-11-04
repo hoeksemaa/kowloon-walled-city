@@ -15,13 +15,18 @@
 // them, thus the model has none.
 import { LANE, YARD, ROAD, OUTSIDE } from '../footprint.js';
 import { G, OUT, FLIGHT, LANDING, CORR, UNIT, stairParts, risers } from './plan.js';
-import { toXZ, toAW, segDist } from './poly.js';
+import { toXZ, toAW, segDist, inRings } from './poly.js';
+import { PARAPET, CHAIN_FLOORS, routeCorners } from './model.js';
 
 const WALL = 0.2, HUT = 2.4;
 export const DOOR_DY = 0.95; // m of steps in a party door
-const LOOSE_DY = 1.2; // m: a window or a door on the north-south route, with steps or a stool
+const LOOSE_DY = 1.2; // m: a window or a door on the SW-NE route, with steps or a stool
 const HOLE_DY = 0.3; // m: a hole joins two floors that are nearly level
-const STEP_DY = 0.5; // m: from roof to roof over the parapet with no aid; more needs a ladder
+// m: the most a person climbs from roof to roof with no aid: 0.5 m of step over a 1 m parapet,
+// thus 1.5 m of wall in all. A higher wall needs a ladder.
+const CLIMB = 1.5;
+// m: two roofs within this of each other, with no parapet between them, make one open roof.
+const FLAT_DY = 0.3;
 const BRIDGE_W = 3.5, BRIDGE_DY = 0.6, ROOF_DY = 3.2;
 const SILL = 1.0, STOOL = 0.45; // m: a corridor window over the floor, and a stool under it
 const SPAN_N = 40, HOLE_N = 40; // flats that span two buildings, and holes between buildings
@@ -66,7 +71,7 @@ export function buildLinks(S) {
   const put = (key, id) => { if (key == null) return; if (!regions.has(key)) regions.set(key, []); regions.get(key).push(id); };
   S.openings = []; // { b, k, r, i, t, w, y0, y1, kind }: a hole in a wall (mesh.js)
   S.doors = []; // every door, bridge and ladder, for the mesh and the counts
-  S.chainGaps = 0; // links of the north-south route that found no place
+  S.chainGaps = 0; // links of the SW-NE route that found no place
   const open = (b, k, e, w, y0, y1, kind) => S.openings.push({ b: b.id, k, r: e.r, i: e.i, t: e.t, w, y0, y1, kind });
 
   const planOf = (b, k) => b.phaseOf(k).plan;
@@ -404,18 +409,22 @@ export function buildLinks(S) {
     all.sort((p, q) => Math.min(p.k, p.kc) - Math.min(q.k, q.kc));
     if (all.length && !has.has(`${all[0].b}:${all[0].c}`) && Math.abs(all[0].yc - all[0].y) <= DOOR_DY) chosen.push(all[0]);
   }
-  // ---- the north-south route (model.js, p164) ----
-  // The cheapest chain of buildings from the north face to the south face, over party walls
-  // and lanes, with a door or a bridge between each two near 3/F-4/F. The doors go where the
+  // ---- the SW-NE route (model.js, CHAIN_FLOORS) ----
+  // The cheapest chain of buildings from the SW corner of the City to the NE corner, over party walls
+  // and lanes, with a door or a bridge between each two on CHAIN_FLOORS. The doors go where the
   // circulation (or a flat, if need be) of both is on the wall, with floors within LOOSE_DY.
   // the floors of the kept route (choices.js), by pair: the floor of the building with the lower key
   const keptFloor = new Map((C.kept?.chainLinks || []).map((key) => { const [a, c, k] = key.split(':'); return [`${a}:${c}`, +k]; }));
+  const MID = (CHAIN_FLOORS[0] + CHAIN_FLOORS[1]) / 2;
+  // a link of the route off CHAIN_FLOORS costs more (in m of walking), floor by floor
+  const off = (k) => Math.max(0, CHAIN_FLOORS[0] - k, k - CHAIN_FLOORS[1]);
+  const offCost = (x) => 15 * Math.max(off(x.k), off(x.kc));
   const direct = (b, c, P, bridge, pick) => {
     const pairs = [];
     for (let k = 1; k < b.n; k++) for (let kc = 1; kc < c.n; kc++) if (Math.abs(c.y[kc] - b.y[k]) <= LOOSE_DY) pairs.push([k, kc]);
     const want = keptFloor.get(ckPair({ b, c })), lowFirst = b.key < c.key;
     const kept = (p) => (want !== undefined && (lowFirst ? p[0] : p[1]) === want ? 0 : 1);
-    pairs.sort((p, q) => kept(p) - kept(q) || Math.abs(Math.min(...p) - 3.5) - Math.abs(Math.min(...q) - 3.5) || Math.abs(c.y[p[1]] - b.y[p[0]]) - Math.abs(c.y[q[1]] - b.y[q[0]]));
+    pairs.sort((p, q) => kept(p) - kept(q) || Math.abs(Math.min(...p) - MID) - Math.abs(Math.min(...q) - MID) || Math.abs(c.y[p[1]] - b.y[p[0]]) - Math.abs(c.y[q[1]] - b.y[q[0]]));
     const ok = (v) => circ(v) || v >= UNIT;
     for (const [k, kc] of pairs) {
       const rb = b.phaseOf(k).rings, rc = c.phaseOf(kc).rings, e0 = nearestEdge(rb, P[0], P[1]);
@@ -445,8 +454,8 @@ export function buildLinks(S) {
   };
   const chainBridges = [];
   {
-    const N = [0.444, -0.896], north = (b) => b.cx * N[0] + b.cz * N[1]; // north in the plan frame
-    const ends = S.list.filter((b) => b.stairs.length && b.wingOf === undefined && b.kind !== 'yamen').sort((p, q) => north(q) - north(p));
+    const ends = S.list.filter((b) => b.stairs.length && b.wingOf === undefined && b.kind !== 'yamen');
+    const [first, last] = routeCorners(S, ends);
     const adj = new Map(ends.map((b) => [b.id, []]));
     // the kept route (choices.js): a step on it costs a quarter
     const keptChain = C.kept?.chain || [], onKept = new Set();
@@ -466,8 +475,8 @@ export function buildLinks(S) {
       if (!memo.has(key)) memo.set(key, direct(S.list[e.x.b], S.list[e.x.c], e.x.P, e.bridge, (q) => q));
       return memo.get(key);
     };
-    const dist = new Map(), prev = new Map(), todo = new Set(), south = new Set(ends.slice(-5).map((b) => b.id));
-    for (const b of ends.slice(0, 5)) { dist.set(b.id, 0); todo.add(b.id); }
+    const dist = new Map(), prev = new Map(), todo = new Set(), south = new Set(last.map((b) => b.id));
+    for (const b of first) { dist.set(b.id, 0); todo.add(b.id); }
     let end = null;
     while (todo.size) {
       let v = null;
@@ -475,8 +484,11 @@ export function buildLinks(S) {
       todo.delete(v);
       if (south.has(v)) { end = v; break; }
       for (const e of adj.get(v)) {
-        const d = dist.get(v) + e.w;
-        if (d >= (dist.get(e.to) ?? Infinity) || !link(e)) continue;
+        if (dist.get(v) + e.w >= (dist.get(e.to) ?? Infinity)) continue;
+        const x = link(e);
+        if (!x) continue;
+        const d = dist.get(v) + e.w + offCost(x);
+        if (d >= (dist.get(e.to) ?? Infinity)) continue;
         dist.set(e.to, d); prev.set(e.to, { v, e }); todo.add(e.to);
       }
     }
@@ -490,6 +502,9 @@ export function buildLinks(S) {
       else chosen.push(x);
     }
     if (end === null) S.chainGaps = 1;
+    // the floor of the route in its first and in its last building (viewer.js, the checks)
+    const endFloor = (id, x) => (x.b === id ? x.k : x.kc);
+    S.chainEnds = S.chain.length > 1 ? [endFloor(S.chain[0], link(prev.get(S.chain[1]).e)), endFloor(S.chain.at(-1), link(prev.get(S.chain.at(-1)).e))] : null;
     C.out.chain = S.chain.map((id) => S.list[id].key);
     C.out.chainLinks = [];
     for (let q = 1; q < S.chain.length; q++) { const p = prev.get(S.chain[q]); if (p) C.out.chainLinks.push(ck(link(p.e))); }
@@ -660,10 +675,12 @@ export function buildLinks(S) {
     S.doors.push({ kind: 'bridge', b: b.id, k: x.k, c: c.id, kc: x.kc, x: x.P[0], z: x.P[1], x2: x.Q[0], z2: x.Q[1], y: ya, yc, w: 0.9, chain: !!x.chain });
   }
 
-  // ---- roofs: from roof to roof over the parapet (STEP_DY or less), or by a ladder ----
+  // ---- roofs: from roof to roof with a step (CLIMB or less of wall), or by a ladder ----
   // SOURCED: "When it was only one floor, people... bridged the gap with the help of a ladder"
   // (Lam Po Chun, p145). INFERRED: most people used the lanes (p249); thus a ladder for 30 %
-  // of the pairs that differ by up to one storey.
+  // of the pairs that differ by up to one storey. About 20 % of the roofs have a parapet
+  // (model.js). Where two roofs are nearly level and neither has a parapet, they make one open
+  // roof, thus they always join.
   for (const b of S.list) {
     if (!b.roofOpen || b.kind === 'yamen') continue;
     const rings = b.phases[b.phases.length - 1].rings;
@@ -693,17 +710,26 @@ export function buildLinks(S) {
         if (dy > ROOF_DY) continue;
         const A = r.pts[i], B = r.pts[(i + 1) % r.pts.length], len = Math.hypot(B[0] - A[0], B[1] - A[1]);
         if (len < 1.2) continue;
+        // the top roof of c must be at this wall, not the terrace of a setback below it
+        const M = [(A[0] + B[0]) / 2 + ((B[1] - A[1]) / len) * 0.3, (A[1] + B[1]) / 2 - ((B[0] - A[0]) / len) * 0.3];
+        if (!inRings(c.phases[c.phases.length - 1].rings.map((q) => q.pts), M[0], M[1])) continue;
         const key = `${b.id}:${c.id}`, o = roofPairs.get(key);
         if (!o || len > o.len) roofPairs.set(key, { b, c, len, P: [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2], dy, e: { r, i, t: len / 2, len } });
       }
   }
+  // The wall to climb from the lower roof c to the higher roof b: the step, with the parapet of
+  // b on it; or the parapet of c, where the step is lower than that parapet.
+  const wall = (b, c, dy) => (b.parapet ? dy + PARAPET : c.parapet ? Math.max(dy, PARAPET) : dy);
   for (const x of roofPairs.values()) {
-    const step = x.dy <= STEP_DY;
-    if (R(`roof:${ckPair(x)}`) >= (step ? 0.9 : 0.3)) continue;
+    const w = wall(x.b, x.c, x.dy), step = w <= CLIMB, open = !x.b.parapet && !x.c.parapet && x.dy <= FLAT_DY;
+    if (R(`roof:${ckPair(x)}`) >= (open ? 1 : step ? 0.9 : 0.3)) continue;
     const na = node(x.P[0], x.b.top, x.P[1], 'roofedge', { b: x.b.id, k: x.b.n }), nc = node(x.P[0], x.c.top, x.P[1], 'roofedge', { b: x.c.id, k: x.c.n });
     put(roofKey(x.b), na); put(roofKey(x.c), nc);
-    edge(na, nc, step ? 1.5 + x.dy * 2 : 3 + x.dy * 5, step ? 'step' : 'ladder');
-    S.doors.push({ kind: step ? 'step' : 'ladder', b: x.b.id, c: x.c.id, x: x.P[0], z: x.P[1], y: x.b.top, yc: x.c.top, e: x.e });
+    edge(na, nc, step ? 1 + w * 2 : 3 + x.dy * 5, step ? 'step' : 'ladder');
+    // n: the normal of the wall, out of b onto the roof of c (the ladder stands against it)
+    const { r, i } = x.e, A = r.pts[i], B = r.pts[(i + 1) % r.pts.length];
+    S.doors.push({ kind: step ? 'step' : 'ladder', b: x.b.id, c: x.c.id, x: x.P[0], z: x.P[1], y: x.b.top, yc: x.c.top, e: x.e,
+      n: [(B[1] - A[1]) / x.len, -(B[0] - A[0]) / x.len] });
   }
 
   // ---- each region joins all its nodes ----

@@ -186,7 +186,7 @@ export function decodeFine(fine) {
   return code;
 }
 
-// The footprints from the fine plan (plan.fine: { SUB, W, D, code }), in the frame of L. A
+// The footprints from the fine plan (plan.fine: { SUB, W, D, code, exact }), in the frame of L. A
 // code that has no building on the 1 m plan takes the region beside it.
 function fineFootprints(L, fine, idOf) {
   const s = fine.SUB, M = MARGIN * s, W = fine.W + 2 * M, D = fine.D + 2 * M, N = W * D;
@@ -263,9 +263,21 @@ function fineFootprints(L, fine, idOf) {
   for (let q = 0; q < queue.length; q++)
     for (const n of nb(queue[q])) if (n >= 0 && n < N && !inside[n] && !outer[n]) { outer[n] = 1; queue.push(n); }
   for (let k = 0; k < N; k++) if (!inside[k] && !outer[k]) { inside[k] = 1; alley[k] = 1; }
+  // The buildings that a rule of data/structure_fixes.json draws as a polygon (the Yamen halls,
+  // the Youth Centre, the Old People's Centre, the temporary structures ...): their outlines go
+  // back onto the polygons, not onto the steps of the cells (see buildFootprints, opts.exact).
+  const exact = new Map();
+  for (const { codes, poly, order, set } of fine.exact || [])
+    for (const c of codes) {
+      if (!idOf.has(c)) continue;
+      const id = idOf.get(c);
+      if (!exact.has(id)) exact.set(id, []);
+      exact.get(id).push({ poly, order, inside: c === set });
+    }
   // eps 3 cells (0.75 m; plan.fine.eps can set another): the steps of a line at an angle go,
-  // the corners of the plan stay.
-  return buildFootprints({ W, D, owner, inside, alley, x0: L.x0, z0: L.z0 }, { scale: 1 / s, eps: fine.eps ?? 3, pocket: 4 * s * s });
+  // the corners of the plan stay. regularise: then the walls go square and straight where they
+  // are within a few degrees of it (only here: the 1 m plan stays as it is).
+  return buildFootprints({ W, D, owner, inside, alley, x0: L.x0, z0: L.z0 }, { scale: 1 / s, eps: fine.eps ?? 3, pocket: 4 * s * s, exact, regularise: true });
 }
 
 // context: data/context.json (the real buildings round the City), or null.

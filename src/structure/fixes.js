@@ -60,9 +60,27 @@ function applyRules(code, W, D, sc, rules) {
   return changed;
 }
 
+// The polygons of the rules that draw a building: a rule with "poly" that sets a building
+// code, or that takes cells from a building ("codes"). On the cells, the edge of such a polygon
+// is a staircase; src/layout.js puts the outline of the building back on the polygon. Returns
+// [{ codes, poly, order, set }]; order: the place of the rule (a later rule wins); set: the
+// building inside the polygon, or null (the rule makes lane or yard of it).
+function exactPolys(rules) {
+  const out = [];
+  rules.forEach((rule, order) => {
+    const w = rule.where || {};
+    if (!w.poly) return;
+    const codes = (w.codes || []).filter((c) => c >= 4);
+    const set = typeof rule.set === 'number' && rule.set >= 4 ? rule.set : null;
+    if (set !== null) codes.push(set);
+    if (codes.length) out.push({ codes, poly: w.poly, order, set });
+  });
+  return out;
+}
+
 // plan, overlay: the parsed JSON files; fixes: data/structure_fixes.json; fine (optional):
 // data/plan_fine.json. Returns new objects. With fine, the new plan has plan.fine = { SUB, W,
-// D, code }, with the same rules applied to it.
+// D, code, exact }, with the same rules applied to it (exact: see exactPolys).
 export function applyFixes(plan, overlay, fixes, fine = null) {
   const code = decodePlan(plan), W = plan.W, D = plan.D;
   const rules = fixes.cells || [];
@@ -71,7 +89,7 @@ export function applyFixes(plan, overlay, fixes, fine = null) {
   if (fine) {
     const fc = decodeFine(fine);
     const changedFine = applyRules(fc, fine.W, fine.D, 1 / fine.SUB, rules);
-    fineOut = { SUB: fine.SUB, W: fine.W, D: fine.D, code: fc, changed: changedFine };
+    fineOut = { SUB: fine.SUB, W: fine.W, D: fine.D, code: fc, changed: changedFine, exact: exactPolys(rules) };
   }
   const rows = [];
   for (let j = 0; j < D; j++) {

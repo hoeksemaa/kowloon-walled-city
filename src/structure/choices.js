@@ -1,5 +1,5 @@
 // The random choices of the structure that stay put: the rate of doors of each pair of
-// buildings, which floors get a door or a bridge, the ladders, the holes, and the north-south
+// buildings, which floors get a door or a bridge, the ladders, the holes, and the SW-NE
 // route. Each choice has a key: the kind of choice, the buildings (by the lowest plot code of
 // each, thus a key does not change when an outline changes) and the floor.
 //
@@ -85,7 +85,7 @@ export function choicesFile(C) {
     about: 'The random choices of the 3D structure (src/structure/choices.js), kept so that a change of the '
       + 'outlines keeps the links. u: a number in [0, 1) for each choice (a choice is made where u is less '
       + 'than its rate); take: the flats in two buildings and the holes, in order; chain: the buildings of '
-      + 'the north-south route, north to south; chainLinks: its links (two buildings and a floor); seeds: the '
+      + 'the SW-NE route, SW to NE; chainLinks: its links (two buildings and a floor); seeds: the '
       + 'seed of the own random numbers of each building (its heights, its flats); layout: the storeys, kind, '
       + 'source of the storeys and name that the layout gave each building; storeys: the storeys that the roofline gave each '
       + 'building with no source for its storeys. Each building is the lowest code of its plots. INFERRED: all '

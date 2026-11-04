@@ -5,8 +5,8 @@
 //     COARSE=1 node tools/check_structure.mjs   # the 1 m outlines (no data/plan_fine.json)
 //
 // Prints counts: buildings, storeys, stairs, units by kind, doors and links, links by height,
-// the north-south route inside, and routes between flats on upper floors. Fails (exit 1) if
-// more than 0.1 % of the units have no way to the lanes, if there is no north-south route
+// the SW-NE route inside, and routes between flats on upper floors. Fails (exit 1) if
+// more than 0.1 % of the units have no way to the lanes, if there is no SW-NE route
 // inside, if a building has no floor, or if two floors of one building are out of order.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { buildLayout } from '../src/layout.js';
@@ -75,14 +75,15 @@ const floors = {}, mid = {};
 for (const b of S.list) if (b.stairs.length) for (let k = 1; k < b.n; k++) floors[band(k)] = (floors[band(k)] || 0) + 1;
 for (const d of S.doors) if (['party', 'half', 'span', 'hole', 'bridge'].includes(d.kind) && d.k > 0 && d.kc > 0) mid[band(Math.min(d.k, d.kc))] = (mid[band(Math.min(d.k, d.kc))] || 0) + 2;
 console.log('links to other buildings per floor:', Object.keys(floors).map((k) => `${k} ${((mid[k] || 0) / floors[k]).toFixed(2)}`).join(', '));
-// the north-south route inside the buildings: no lanes, no roofs
+// the SW-NE route inside the buildings: no lanes, no roofs
 const inside = new Set(['lane', 'street', 'step', 'ladder', 'roofdoor', 'window']);
-const unitOn = (b) => [...S.unitNode].find(([k]) => k.startsWith(`${b}:3:`) || k.startsWith(`${b}:2:`))?.[1];
-const ns = S.chain.length > 1 && unitOn(S.chain[0]) !== undefined && unitOn(S.chain.at(-1)) !== undefined ? route(S, unitOn(S.chain[0]), unitOn(S.chain.at(-1)), inside) : null;
+const unitOn = (b, k) => [...S.unitNode].find(([q]) => q.startsWith(`${b}:${k}:`))?.[1];
+const ns0 = S.chainEnds && unitOn(S.chain[0], S.chainEnds[0]), ns1 = S.chainEnds && unitOn(S.chain.at(-1), S.chainEnds[1]);
+const ns = ns0 !== undefined && ns1 !== undefined ? route(S, ns0, ns1, inside) : null;
 if (ns) {
   const ks = ns.path.map((v) => S.graph.nodes[v].k).filter((k) => k !== undefined);
-  console.log(`north-south route inside: ${S.chain.length} buildings, ${ns.kinds.filter((k) => k === 'party').length} doors, ${ns.kinds.filter((k) => k === 'bridge').length} bridges, floors ${Math.min(...ks)}-${Math.max(...ks)}`);
-} else problems.push('no north-south route inside the buildings');
+  console.log(`SW-NE route inside: ${S.chain.length} buildings, ${ns.kinds.filter((k) => k === 'party').length} doors, ${ns.kinds.filter((k) => k === 'bridge').length} bridges, floors ${Math.min(...ks)}-${Math.max(...ks)}`);
+} else problems.push('no SW-NE route inside the buildings');
 console.log(`graph: ${S.graph.nodes.length} nodes, ${S.graph.to.length / 2} edges`);
 
 // every unit reaches the lanes
