@@ -3,14 +3,45 @@
 An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
 shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
 
+## The definitive 3D structure
+
+**The 3D structure of `structure.html` is the definitive 3D structure of the City and of the
+terrain and city round it (2026-11-04).** All later work (art, visuals, simulation) builds on
+it. It is frozen: `node tools/check_structure.mjs` fails if anything changes its geometry
+(the colours are placeholders and can change). Change it
+only for a large error that a new source shows, and only when John approves it. See
+[docs/structure.md](docs/structure.md).
+
+- `src/city/`: **the City**, the focus of the work: each building, its storeys, floors,
+  stairs, rooms and roofs, the links between buildings, and a route inside the buildings
+  from the SW corner to the NE corner.
+- `src/surroundings/`: **the surroundings**, context only: the terrain, the roads, paths and
+  courts, and the real buildings of 1986 round the City.
+- `src/structureViewer.js` (`structure.html`): the viewer, the one place that puts the two
+  together.
+
+The two parts do not import each other. The colours are placeholders: only the structure is
+definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
+app (below).
+
 ## Run
 
 ```sh
 python3 serve.py 8173
-# open http://127.0.0.1:8173/
+# open http://127.0.0.1:8173/structure.html   the definitive 3D structure
+# open http://127.0.0.1:8173/                 the main app
 ```
 
-## What is in the model
+## The main app (on the superseded 3D city)
+
+The main app (`index.html`) runs the simulation of the week on an older 3D city
+(`src/cityMesh.js`, `src/floorplan.js`, `src/facades.js`, `src/roofs.js`,
+`src/interiors.js`). That 3D city is superseded by the definitive structure above. Its code
+stays only so that the main app runs until it moves to the definitive structure
+(`src/layout.js` also still calls two functions of `src/floorplan.js`). The rest of this
+section describes the main app.
+
+### What is in the model
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
@@ -126,7 +157,8 @@ Copyrighted scans and downloads stay in `primary-sources/**/local/`, which git i
 
 ## Data
 
-The street plan in `data/plan.json` is traced from
+The street plan in `data/plan.json` (1 m cells) and `data/plan_fine.json` (0.25 m cells) is
+traced from
 ["Streets in Kowloon Walled City.jpg"](https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg)
 by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license.
 
@@ -134,6 +166,10 @@ by Lord Jaraxxus, CC BY-SA 4.0. The traced data is shared under the same license
 Revisited* (2014). `data/book_overlay.json` holds numbers that `tools/book_overlay.py`
 measures on the book's 1987 figure-ground plan and 1992 map. No image from the book is in
 the repository or the app.
+
+`data/terrain.json` holds the height of the ground round the City, out to 640 m, from the
+Lands Department 5 m Digital Terrain Model and the spot heights of the 1987 survey sheet
+11-NE-11A (`tools/terrain.py`; see `data/CONTEXT-NOTICE.md`).
 
 `data/context.json` holds the real buildings, roads and open ground round the City as they
 stood in December 1986, within 600 m of the centre of the plan box, in plan metres. Each

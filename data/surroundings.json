@@ -1,0 +1,175 @@
+{
+ "about": "The ground right round the City in 1986-1988, for a sense of scale: the streets, the dirt paths, the courts and the fences. src/surroundings/ground.js paints the features on the ground. Plan frame: x right, z down the plan, metres. Sources: survey sheet 11-NE-11A (May 1987) and the 1989 Lambot aerial (Wikipedia's lead photo of the City), fitted to the plan frame (error about 2-4 m by the City, more far out). The park paths are on the 1989 photo, not on the 1987 sheet: they were built in 1987-89. The NW court is on the 1987 sheet and gone by 1989. Each feature has its source.",
+ "features": [
+  {
+   "name": "Tung Tau Tsuen Road, carriageway (north)",
+   "kind": "road",
+   "surface": "asphalt",
+   "ring": [[-125, -69.2], [-110, -67], [-100, -65.3], [-80, -61.7], [-60, -58.2], [-50, -56.3], [-40, -55], [-28, -53.9], [-18, -54.2], [-8, -55], [2, -56.7], [12, -59.2], [24, -62.2], [36, -65.4], [48, -68.4], [62, -71.8], [72, -74.6], [80, -77.9], [80, -91.2], [72, -88.4], [62, -85.6], [48, -82.2], [36, -79.2], [24, -75.8], [12, -72.5], [2, -70.9], [-8, -69.3], [-18, -68.1], [-28, -68], [-40, -69.1], [-50, -70.8], [-60, -72.6], [-80, -76.4], [-100, -79.2], [-110, -80.9], [-125, -83.4]],
+   "source": "SOURCED: kerb lines read on survey sheet 11-NE-11A (May 1987) in the plan frame, x -125..80",
+   "why": "The street on the north face. It is about 14 m kerb to kerb (13.3-14.7 m). context.json has two centre lines here (road:9024, 9.3 m; road:12782, 10.6 m). Together they paint about 17-19 m, and road:9024 runs 1-3 m onto the City side of the south kerb."
+  },
+  {
+   "name": "Tung Tau Tsuen Road, south footway (City side)",
+   "kind": "pavement",
+   "surface": "concrete",
+   "ring": [[-125, -69.2], [-110, -67], [-100, -65.3], [-80, -61.7], [-60, -58.2], [-50, -56.3], [-40, -55], [-28, -53.9], [-18, -54.2], [-8, -55], [2, -56.7], [12, -59.2], [24, -62.2], [36, -65.4], [48, -68.4], [62, -71.8], [72, -74.6], [80, -77.9], [80, -74.5], [72, -71], [62, -68.5], [48, -64.5], [36, -61.5], [24, -58.5], [12, -56.5], [2, -54], [-8, -52.5], [-18, -51.5], [-28, -51.5], [-40, -52.5], [-50, -54], [-60, -55.5], [-80, -58.5], [-100, -63.5], [-110, -64.5], [-125, -66]],
+   "source": "SOURCED: the kerb, from 11-NE-11A (May 1987). INFERRED: the inner edge is the City face of data/plan.json, set 0.5 m clear",
+   "why": "A strip of 1-5 m between the kerb and the City buildings. The sheet draws no other line here. That it was a footway is INFERRED."
+  },
+  {
+   "name": "Tung Tau Tsuen Road, north footway (Mei Tung side)",
+   "kind": "pavement",
+   "surface": "concrete",
+   "ring": [[-125, -83.4], [-110, -80.9], [-100, -79.2], [-80, -76.4], [-60, -72.6], [-50, -70.8], [-40, -69.1], [-28, -68], [-18, -68.1], [-8, -69.3], [2, -70.9], [12, -72.5], [24, -75.8], [36, -79.2], [48, -82.2], [62, -85.6], [72, -88.4], [72, -94.4], [62, -92], [48, -88.8], [36, -86], [24, -83], [12, -79.3], [2, -78], [-8, -75.8], [-18, -75.4], [-28, -74.3], [-40, -74.5], [-50, -76.4], [-60, -78.4], [-80, -82.3], [-100, -87], [-125, -91]],
+   "source": "SOURCED: the north kerb and the Mei Tung Estate boundary line, from 11-NE-11A (May 1987)",
+   "why": "About 6-8 m between the north kerb and the estate boundary."
+  },
+  {
+   "name": "Tung Tsing Road, carriageway (east)",
+   "kind": "road",
+   "surface": "asphalt",
+   "ring": [[120.4, -40], [120.4, -20], [119.8, 0], [119.4, 20], [119.4, 40], [119.1, 60], [118.7, 70], [118.5, 85], [118.9, 95], [120.3, 105], [124, 115], [128.4, 125], [139.9, 125], [135.5, 115], [132.1, 105], [131.9, 95], [130, 82], [126.5, 77], [124, 70], [124.5, 60], [124.9, 40], [125.5, 20], [125.6, 0], [124.9, -20], [124, -40]],
+   "source": "SOURCED: kerb lines read on 11-NE-11A (May 1987), z -40..125",
+   "why": "About 5-6 m kerb to kerb along the east face (z -40..70), with a 2-3 m footway on its east side. South of the side-road junction at z 75-88 it widens to 10-12 m. The context centre line road:9016 lies 2-4 m east of the 1987 kerbs at z -35..30."
+  },
+  {
+   "name": "Lung Chun Road strip along the south face",
+   "kind": "dirt-path",
+   "surface": "dirt",
+   "ring": [[-113.5, 66.5], [-110.5, 71], [-106, 74.5], [-100, 76.2], [-96, 76.3], [-92, 76.5], [-88, 76.6], [-84, 76.7], [-80, 76.9], [-76, 77], [-72, 77.1], [-68, 77.3], [-64, 77.4], [-60, 77.4], [-56, 77.5], [-52, 77.6], [-48, 77.7], [-44, 77.8], [-40, 78.8], [-36, 78.8], [-32, 78.8], [-28, 78], [-24, 77.8], [-20, 77.6], [-16, 77.3], [-12, 76.8], [-8, 76.2], [-4, 76], [0, 76], [4, 76], [8, 76], [12, 76.2], [16, 76.6], [20, 77], [24, 77], [30.8, 82.2], [60, 83.6], [90, 85.1], [104.8, 85.5], [110.5, 80.8], [112.5, 77.7], [112.5, 74.5], [109.5, 74.5], [108.5, 75.5], [107.5, 74.5], [87.5, 74.5], [86.5, 73.5], [80.5, 73.5], [78.5, 75.5], [73.5, 72.5], [62.5, 72.5], [59.5, 70.5], [55.5, 71.5], [53.5, 69.5], [51.5, 71.5], [50.5, 70.5], [49.5, 71.5], [40.5, 71.5], [39.5, 69.5], [38.5, 70.5], [9.5, 70.5], [8.5, 71.5], [7.5, 70.5], [3.5, 70.5], [2.5, 71.5], [-1.5, 71.5], [-2.5, 72.5], [-4.5, 71.5], [-5.5, 72.5], [-9.5, 67.5], [-10.5, 68.5], [-12, 67], [-7, 62], [-7.5, 61.5], [-13, 67], [-13, 70], [-14, 71], [-12.5, 73.5], [-33.5, 75.5], [-34.5, 76.5], [-36.5, 75.5], [-39.5, 71.5], [-40.5, 72.5], [-42.5, 71.5], [-43.5, 72.5], [-46.5, 69.5], [-49.5, 71.5], [-50.5, 70.5], [-52.5, 72.5], [-63.5, 72.5], [-68.5, 69.5], [-68.5, 71.5], [-75.5, 71.5], [-76.5, 72.5], [-79.5, 71.5], [-90.5, 71.5], [-91.5, 70.5], [-92.5, 71.5], [-95.5, 70.5], [-96.5, 71.5], [-103, 66]],
+   "source": "SOURCED: the name LUNG CHUN ROAD and the lot fence, from 11-NE-11A (May 1987). SOURCED: the width and the dirt, from the 1989 Lambot aerial (camera fit, see notes). The inner edge follows the City face of data/plan.json, with the notch at x -13..-7",
+   "why": "From the SW corner to x 24, the 1989 photo shows a strip of dirt, low shrubs and debris 4-6 m wide. It lies between the south face and the paved park promenade. East of x 24, it runs 8-12 m wide between the face and the court fence, with a line of trees on the 1989 photo. The sheet draws no south kerb: the road was open to the cleared ground."
+  },
+  {
+   "name": "Dirt strip along the west face",
+   "kind": "dirt-path",
+   "surface": "dirt",
+   "ring": [[-109, -67], [-119.2, -63], [-121.6, -59], [-124.3, -55], [-126.9, -51], [-129.1, -47], [-130.1, -43], [-130.2, -39], [-130.1, -35], [-128.6, -31], [-127.2, -27], [-127.1, -23], [-127.5, -19], [-127.4, -15], [-127, -11], [-125.4, -7], [-123.6, -3], [-121.3, 1], [-119.4, 5], [-119.2, 9], [-118.8, 13], [-118.1, 17], [-117.2, 21], [-116.5, 25], [-116.9, 29], [-117, 33], [-117.4, 37], [-117.5, 41], [-117, 45], [-116.3, 49], [-116.5, 53], [-116.6, 57], [-116.1, 61], [-115, 64], [-103, 66], [-104, 64], [-104, 59], [-102, 56], [-103, 52], [-100, 50], [-105, 38], [-104, 37], [-105, 36], [-107, 26], [-109, 23], [-109, 18], [-111, 11], [-112, 1], [-110, -3], [-112, -5], [-113, -18], [-114, -19], [-113, -32], [-118, -38], [-118, -43], [-113, -48], [-114, -49], [-112, -53], [-112, -56], [-110, -59], [-109, -67]],
+   "source": "SOURCED: 1989 Lambot aerial (camera fit, see notes). The widths are measured from the foot of the facades, and set out from the City face of data/plan.json",
+   "why": "A dirt strip 7.5-14 m wide along the whole west face, NW corner to SW corner. Its outer edge is the edge of the 1988-89 park path. It is 12-14 m wide at z -50..-5 and z 35..62, and 7.5 m wide by the two pavilions at z 4..25. A pale low wall or kerb runs about 2-3 m out from the facades (INFERRED from the photo)."
+  },
+  {
+   "name": "Footpath FP from Tung Tau Tsuen Road south (NW)",
+   "kind": "dirt-path",
+   "surface": "dirt",
+   "line": [[-127.8, -70], [-127.8, -63], [-128, -55], [-128.5, -50], [-129.5, -46]],
+   "width": 3,
+   "source": "SOURCED: \"FP\" on 11-NE-11A (May 1987). The surface is INFERRED",
+   "why": "About 3 m wide, between a solid line and a dashed line. It leads south from the road to the NW basketball court."
+  },
+  {
+   "name": "Footpath FP west of the NW court",
+   "kind": "dirt-path",
+   "surface": "dirt",
+   "line": [[-129.5, -46], [-133, -44], [-140, -43.2], [-150, -42.8], [-165, -43.5]],
+   "width": 4.5,
+   "source": "SOURCED: \"FP\" on 11-NE-11A (May 1987). The surface is INFERRED",
+   "why": "About 4-5 m wide, between the solid line at z -45.5 and the dash-dot fence of the court."
+  },
+  {
+   "name": "Basketball court enclosure (NW)",
+   "kind": "court",
+   "surface": "court",
+   "ring": [[-150, -21.6], [-129, -21], [-128.5, -23.5], [-127.5, -30], [-126.8, -37.3], [-133, -37.3], [-140, -38.5], [-150, -39.5]],
+   "source": "SOURCED: \"Basketball Court\" and its fences on 11-NE-11A (May 1987). The west end lies under the sheet-edge lines: x -150 is INFERRED",
+   "why": "About 22 x 17 m. It is gone by 1989: the photo shows park rockeries there.",
+   "courts": [
+    {
+     "centre": [-138.5, -29.6],
+     "axis": 2,
+     "length": 22,
+     "width": 13
+    }
+   ],
+   "courtsSource": "INFERRED: the sheet draws no markings; one court along the long side of the fenced ground."
+  },
+  {
+   "name": "Basketball court ground (south of the east half)",
+   "kind": "court",
+   "surface": "court",
+   "ring": [[30.8, 82.2], [104.8, 86.9], [103, 119.3], [30.5, 115]],
+   "source": "SOURCED: the \"Basketball Courts\" outline on 11-NE-11A (May 1987). The 1989 aerial shows the same paved ground",
+   "why": "74 x 33-37 m, turned about 3.5 deg. In 1989 three courts are marked on it (see courts). context.json covers only its part at z > 95.6.",
+   "courts": [
+    {
+     "centre": [62.0, 100.7],
+     "axis": 93.5,
+     "length": 26,
+     "width": 14
+    },
+    {
+     "centre": [79.5, 100.7],
+     "axis": 93.5,
+     "length": 26,
+     "width": 14
+    },
+    {
+     "centre": [97.0, 100.7],
+     "axis": 93.5,
+     "length": 26,
+     "width": 14
+    }
+   ],
+   "courtsSource": "SOURCED: the ground, from 11-NE-11A (May 1987). SOURCED: the markings, from the 1989 Lambot aerial rectified to the plan frame: key/three-point arcs at both ends, centre line z 100.7, sidelines x 56, 69.5, 73, 87.5, 91.5, 104.5, post bases at the north ends. Each court 26 x 14 m (the old FIBA size): INFERRED from the line spacing."
+  },
+  {
+   "name": "Football field",
+   "kind": "football-field",
+   "surface": "grass",
+   "ring": [[36.6, 126.2], [84.9, 128.8], [81.9, 194.7], [33.45, 192]],
+   "source": "SOURCED: the dashed fence \"Football Field\" on 11-NE-11A (May 1987); a tall fence on the 1989 aerial",
+   "why": "About 48 x 66 m, turned about 3 deg. It lies at z 126-195, outside the plate. context.json openGround \"Football field and basketball courts\" already covers it."
+  },
+  {
+   "name": "Fence: south lot line and court fence round to Tung Tsing Road",
+   "kind": "fence",
+   "line": [[40, 74.4], [60, 75.2], [80, 76.2], [100, 77.1], [112.5, 77.7], [113, 80.5], [113.5, 95], [114.5, 110], [116, 125]],
+   "width": 0.12,
+   "source": "SOURCED: dashed fence with ticks on 11-NE-11A (May 1987)",
+   "why": "East of x 40 the fence stands 2-3 m off the south face. It turns south along the west side of Tung Tsing Road."
+  },
+  {
+   "name": "Fence: north side of the court ground",
+   "kind": "fence",
+   "line": [[30.8, 82.2], [60, 83.6], [90, 85.1], [104.8, 85.5], [110.5, 80.8], [112.5, 77.7]],
+   "width": 0.12,
+   "source": "SOURCED: line with ticks on 11-NE-11A (May 1987); a row of trees along it on the 1989 aerial",
+   "why": "Ticks with small triangles. It can be a low retaining wall (INFERRED)."
+  },
+  {
+   "name": "Fence: south lot line west of x 40",
+   "kind": "fence",
+   "line": [[-101, 68.7], [-80, 69.8], [-60, 70.8], [-45, 72.2], [-20, 72.9], [-5, 73.2], [-2, 72.8], [1, 71.3], [10, 71.3], [12, 72.3]],
+   "width": 0.12,
+   "source": "SOURCED: dashed line with ticks on 11-NE-11A (May 1987)",
+   "why": "1-2 m out from the face. LUNG CHUN ROAD is lettered just south of it at x -38..-5."
+  },
+  {
+   "name": "Cleared ground west and south of the City (inside the plate)",
+   "kind": "cleared-ground",
+   "surface": "dirt",
+   "ring": [[-137, -39], [-137, 95.5], [25, 95.5], [25, 77], [24, 77], [20, 77], [16, 76.6], [12, 76.2], [8, 76], [4, 76], [0, 76], [-4, 76], [-8, 76.2], [-12, 76.8], [-16, 77.3], [-20, 77.6], [-24, 77.8], [-28, 78], [-32, 78.8], [-36, 78.8], [-40, 78.8], [-44, 77.8], [-48, 77.7], [-52, 77.6], [-56, 77.5], [-60, 77.4], [-64, 77.4], [-68, 77.3], [-72, 77.1], [-76, 77], [-80, 76.9], [-84, 76.7], [-88, 76.6], [-92, 76.5], [-96, 76.3], [-100, 76.2], [-106, 74.5], [-110.5, 71], [-113.5, 66.5], [-115, 64], [-116.1, 61], [-116.6, 57], [-116.5, 53], [-116.3, 49], [-117, 45], [-117.5, 41], [-117.4, 37], [-117, 33], [-116.9, 29], [-116.5, 25], [-117.2, 21], [-118.1, 17], [-118.8, 13], [-119.2, 9], [-119.4, 5], [-121.3, 1], [-123.6, -3], [-125.4, -7], [-127, -11], [-127.4, -15], [-127.5, -19], [-127.1, -23], [-127.2, -27], [-128.6, -31], [-130.1, -35], [-130.2, -39]],
+   "source": "SOURCED: 11-NE-11A (May 1987) draws nothing here but \"CIP June 1986\" and \"Construction in Progress May 1987\". context.json openGround \"Sai Tau Tsuen ground (cleared)\" covers the same ground outside the plate",
+   "why": "The ground of the cleared squatter village (Sai Tau Tsuen). It was a building site for the park in 1986-88. By 1989 it is the park, with paved paths (see the two park paths). Paint it under the strips, the courts and the paths."
+  },
+  {
+   "name": "Park path along the west face (1988-89, not on the May 1987 sheet)",
+   "kind": "paved-path",
+   "surface": "concrete",
+   "line": [[-134, -45], [-134, -30], [-135, -15], [-136, 0], [-137, 10], [-136, 20], [-133, 28], [-129, 36], [-127, 45], [-124, 52], [-120, 60], [-115, 68], [-109, 75], [-102, 79.5]],
+   "width": 7,
+   "source": "SOURCED: 1989 Lambot aerial (camera fit; absolute error about 3-6 m)",
+   "why": "Grey, crisp-edged, 6-8 m wide. It was built with the park after May 1987. Leave it out for 1986-87. On the photo it sets the outer edge of the west dirt strip."
+  },
+  {
+   "name": "Park promenade along the south face (1988-89, not on the May 1987 sheet)",
+   "kind": "paved-path",
+   "surface": "concrete",
+   "line": [[-102, 79.5], [-90, 80.8], [-70, 81.4], [-50, 81.8], [-40, 82.6], [-30, 82.6], [-15, 81.6], [0, 80.5], [15, 80.5], [24, 81]],
+   "width": 8.5,
+   "source": "SOURCED: 1989 Lambot aerial (camera fit)",
+   "why": "A grey band 8-9 m wide (z about 76-85), 4-6 m south of the face. The photo shows people on it. Its tone and kerbs match the curving park paths, thus it is paved (INFERRED). It was built after May 1987."
+  }
+ ]
+}

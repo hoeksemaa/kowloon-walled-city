@@ -1,3 +1,6 @@
+// SUPERSEDED (2026-11-04): this file is part of the old 3D city of the main app. The definitive
+// 3D structure of the City is src/city/ (docs/structure.md). Do not build new work on this file;
+// it stays only so that the main app runs until it moves to src/city/.
 // The clutter of the roofs, beside the stair huts, tanks, sheds and aerials of cityMesh.js:
 // plants in pots and in polystyrene boxes, stools, heaps of junk, pipes and bird cages.
 //

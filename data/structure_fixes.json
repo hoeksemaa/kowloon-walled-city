@@ -1,0 +1,1143 @@
+{
+ "about": "Corrections to the traced plan (data/plan.json) and to the towers (data/book_overlay.json) for the 3D structure (src/city/). src/city/fixes.js applies the cell rules in order, then the plan and tower edits. model.js applies the storeys and names. Plan frame: x right, z down the plan, metres. A rule changes the cells whose centre meets every condition in 'where': codes (the plot code now), open ('lane', 'yard' or 'road'), x and z ranges, poly (inside), left (on the left of the line from its first point to its second, in plan view). 'set' is a plot code, or 'lane', 'yard', 'road' or 'outside'.",
+ "cells": [
+  {
+   "why": "Strips of road or pavement in front of the 1987 building line: no building stood there in 1987. The 1987 figure-ground plan (p134), the 1992 map (pp352-353) and the photos of 1987-89 (Suddaby, Gwulo 22835-22837; Girard, M+ 2018.4; Lambot's 1989 aerial) show a full-height wall behind them. tools/book_overlay.py had marked six of them 'low' for that reason.",
+   "set": "outside",
+   "where": {
+    "codes": [
+     13,
+     22,
+     27,
+     42,
+     193,
+     442,
+     472
+    ]
+   }
+  },
+  {
+   "why": "Open ground: plot 24 Lung Shing Road and the strip beside it are open on the 1987 plan and on the 1992 map (a tree is drawn there); plot 27 Lo Yan Street is a lane or courtyard edge on the 1987 plan.",
+   "set": "yard",
+   "where": {
+    "codes": [
+     69,
+     78,
+     163
+    ]
+   }
+  },
+  {
+   "why": "The Yamen in 1987, as the park's plan of the City draws it. The halls of today (CSDI building footprints, LandsD) are shorter, and the 1987 survey sheet 11-NE-11A draws them as they are today. But the park's plan draws the east side range from the Youth Centre to the middle hall, and the two ranges of the front court as far south as the Old People's Centre. A photo of the bronze model of the City in the park (Alamy 53451363) shows the same halls and courts as the park's plan, thus the halls take the rectangles of the park's plan. The rear hall of today is not a hall of its own on the park's plan or on the bronze model: it is in the band of the Youth Centre. The west side range by the rear court: 4.5 x 8.8 m.",
+   "set": 4002,
+   "where": {
+    "poly": [
+     [
+      18.04,
+      -10.0
+     ],
+     [
+      22.44,
+      -9.02
+     ],
+     [
+      20.55,
+      -0.48
+     ],
+     [
+      16.15,
+      -1.45
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Yamen: the east side range by the rear court, 4.2 x 13.9 m, from the Youth Centre to the middle hall (see the west side range).",
+   "set": 4003,
+   "where": {
+    "poly": [
+     [
+      28.19,
+      -13.02
+     ],
+     [
+      32.24,
+      -12.12
+     ],
+     [
+      29.23,
+      1.45
+     ],
+     [
+      25.18,
+      0.55
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Yamen: the middle hall, 13.8 x 6.7 m (see the west side range).",
+   "set": 4004,
+   "where": {
+    "poly": [
+     [
+      15.74,
+      0.53
+     ],
+     [
+      29.2,
+      3.51
+     ],
+     [
+      27.75,
+      10.05
+     ],
+     [
+      14.29,
+      7.07
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Yamen: the west range of the front court, 6.4 x 17.6 m (see the west side range). Steps at its south end on the 1987 sheet.",
+   "set": 4005,
+   "where": {
+    "poly": [
+     [
+      13.71,
+      9.25
+     ],
+     [
+      19.91,
+      10.62
+     ],
+     [
+      16.11,
+      27.76
+     ],
+     [
+      9.91,
+      26.39
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Yamen: the east range of the front court, 'Clinic' on the 1987 sheet, 5.3 x 17.6 m (see the west side range). The front hall of today is left out: the 1987 sheet and the park's plan show none, and the two front ranges reach the forecourt.",
+   "set": 4006,
+   "where": {
+    "poly": [
+     [
+      24.71,
+      11.69
+     ],
+     [
+      29.93,
+      12.84
+     ],
+     [
+      26.13,
+      29.98
+     ],
+     [
+      20.91,
+      28.83
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The north band of the Yamen compound was the Youth Centre (青年中心 on the park's plan of the City; run by the Hong Kong Federation of Youth Groups, WSJ 2014). The band is plot 148 of the trace; plot 158 joins it. Its outline is set by a rule below.",
+   "set": 138,
+   "where": {
+    "codes": [
+     148,
+     158
+    ]
+   }
+  },
+  {
+   "why": "The courts and passages of the Yamen: white on the 1987 plan (p134) and open on the 1992 map. The parts of the old plots outside the halls are courts.",
+   "set": "yard",
+   "where": {
+    "codes": [
+     173,
+     203,
+     239,
+     273,
+     281
+    ]
+   }
+  },
+  {
+   "why": "The side passage of the Yamen: a narrow way between old brick walls, partly under corrugated sheets (photos p307).",
+   "set": "lane",
+   "where": {
+    "codes": [
+     304
+    ]
+   }
+  },
+  {
+   "why": "The strip east of the east side range and of the middle hall, inside the double wall of the compound: a light, flat, low roof on the bronze model of the City in the park (Alamy 53451363), in front of the tall Wing Fat Building. One storey and a flat roof INFERRED; its use is not known.",
+   "set": 4007,
+   "where": {
+    "codes": [
+     195
+    ],
+    "poly": [
+     [
+      30.71,
+      -5.21
+     ],
+     [
+      33.49,
+      -4.59
+     ],
+     [
+      29.64,
+      12.78
+     ],
+     [
+      27.26,
+      12.25
+     ],
+     [
+      29.2,
+      3.51
+     ],
+     [
+      28.8,
+      3.42
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The rest of plot 195 inside the compound is court or passage; the part east of the double wall is 永發樓 Wing Fat Building on Lo Yan Street (the park's plan of the City).",
+   "set": "yard",
+   "where": {
+    "codes": [
+     195
+    ],
+    "poly": [
+     [
+      16.7,
+      -16.82
+     ],
+     [
+      32.91,
+      -13.23
+     ],
+     [
+      27.26,
+      12.25
+     ],
+     [
+      11.05,
+      8.66
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Old People's Centre and the low range west of it: first their old cells become court, then each takes its rectangle on the park's plan of the City (the rules below).",
+   "set": "yard",
+   "where": {
+    "codes": [
+     188,
+     221
+    ]
+   }
+  },
+  {
+   "why": "The low range west of the Old People's Centre: the rectangle drawn on the park's plan of the City, 2.9 x 23.7 m.",
+   "set": 221,
+   "where": {
+    "poly": [
+     [
+      2.86,
+      -4.82
+     ],
+     [
+      5.64,
+      -4.21
+     ],
+     [
+      0.5,
+      18.96
+     ],
+     [
+      -2.28,
+      18.34
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Old People's Centre: the long rectangle marked 老人中心 on the park's plan of the City, 8.1 x 40.2 m; one long building with a sloped roof on the bronze model of the City in the park.",
+   "set": 188,
+   "where": {
+    "poly": [
+     [
+      8.07,
+      -15.17
+     ],
+     [
+      15.95,
+      -13.43
+     ],
+     [
+      7.25,
+      25.8
+     ],
+     [
+      -0.63,
+      24.05
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The strip between the school (Free School Building) and the low range: inside the school's outline on the park's plan (its green fill), not open ground.",
+   "set": 187,
+   "where": {
+    "open": "yard",
+    "poly": [
+     [
+      2.39,
+      -12.58
+     ],
+     [
+      4.48,
+      -12.12
+     ],
+     [
+      -3.97,
+      25.98
+     ],
+     [
+      -6.06,
+      25.52
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The Youth Centre: one rectangle, 36.4 x 9.0 m, from the lane on the west to the lane on the east, as the park's plan of the City draws the band 青年中心, with one sloped roof as on the bronze model of the City in the park (Alamy 53451363). Before, the trace and the rear hall of today made it a band with a thin arm on its north side, a thin court in it, and a lower hall in its east part.",
+   "set": 138,
+   "where": {
+    "poly": [
+     [
+      0.31,
+      -28.41
+     ],
+     [
+      35.87,
+      -20.53
+     ],
+     [
+      33.92,
+      -11.75
+     ],
+     [
+      -1.63,
+      -19.63
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The thin plots on the north side of the Youth Centre (149, 152; 27B Lo Yan Street) and the cells of the Youth Centre north of its north wall: the trace read part of the lane there as plots. The lane runs along the north wall of the Youth Centre.",
+   "set": "lane",
+   "where": {
+    "codes": [
+     138
+    ],
+    "poly": [
+     [
+      -1.46,
+      -39.07
+     ],
+     [
+      40.24,
+      -29.83
+     ],
+     [
+      38.07,
+      -20.04
+     ],
+     [
+      -3.63,
+      -29.28
+     ]
+    ]
+   }
+  },
+  {
+   "why": "See the rule before.",
+   "set": "lane",
+   "where": {
+    "codes": [
+     149,
+     152
+    ]
+   }
+  },
+  {
+   "why": "The purple of the lane north of the Youth Centre, which the trace read as open ground (see the rule before).",
+   "set": "lane",
+   "where": {
+    "open": "yard",
+    "poly": [
+     [
+      5.62,
+      -32.64
+     ],
+     [
+      37.47,
+      -25.58
+     ],
+     [
+      36.33,
+      -20.43
+     ],
+     [
+      4.48,
+      -27.49
+     ]
+    ]
+   }
+  },
+  {
+   "why": "Cells of the Youth Centre south of its south wall are court.",
+   "set": "yard",
+   "where": {
+    "codes": [
+     138
+    ],
+    "poly": [
+     [
+      -5.57,
+      -20.51
+     ],
+     [
+      36.12,
+      -11.26
+     ],
+     [
+      33.82,
+      -0.87
+     ],
+     [
+      -7.87,
+      -10.12
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The purple of the lane west of the Youth Centre, which the trace read as open ground.",
+   "set": "lane",
+   "where": {
+    "open": "yard",
+    "poly": [
+     [
+      -3.83,
+      -31.09
+     ],
+     [
+      0.68,
+      -30.09
+     ],
+     [
+      -1.68,
+      -19.44
+     ],
+     [
+      -6.19,
+      -20.44
+     ]
+    ]
+   }
+  },
+  {
+   "why": "The grey corner block of the south-west corner covers about 8 m of the west face (Lambot's 1989 aerial; book pp20-21, pp86-87, p221). The trace gave its north part to 128 Lung Chun Road, and a dead-end lane pocket lay between them.",
+   "set": 448,
+   "where": {
+    "codes": [
+     383
+    ],
+    "z": [
+     54.5,
+     58
+    ]
+   }
+  },
+  {
+   "why": "The lane pocket inside the grey corner block (see the rule before).",
+   "set": 448,
+   "where": {
+    "open": "lane",
+    "x": [
+     -96.5,
+     -90.5
+    ],
+    "z": [
+     57.5,
+     59.5
+    ]
+   }
+  },
+  {
+   "where": {
+    "open": "outside",
+    "poly": [
+     [
+      85.2,
+      -75.2
+     ],
+     [
+      91.2,
+      -79.0
+     ],
+     [
+      94.0,
+      -79.8
+     ],
+     [
+      96.2,
+      -76.8
+     ],
+     [
+      96.4,
+      -72.4
+     ],
+     [
+      98.4,
+      -66.0
+     ],
+     [
+      102.0,
+      -58.0
+     ],
+     [
+      105.5,
+      -46.0
+     ],
+     [
+      101,
+      -46.3
+     ],
+     [
+      96.5,
+      -51.5
+     ],
+     [
+      94,
+      -62.8
+     ],
+     [
+      86.8,
+      -73.2
+     ]
+    ]
+   },
+   "set": 4011,
+   "keepLanes": true,
+   "why": "TS-NE: Survey sheet 11-NE-11A (May 1987) draws temporary structures ('TS') on the east edge as dashed outlines, of one storey. Traced by the faces agent (2026-11-02). The inner side is moved 3 m west, because the plan's east face is 1-3 m west of the sheet's; only cells outside the City change."
+  },
+  {
+   "where": {
+    "open": "outside",
+    "poly": [
+     [
+      104.5,
+      -31.3
+     ],
+     [
+      106.8,
+      -31.3
+     ],
+     [
+      106.8,
+      -25.5
+     ],
+     [
+      106.5,
+      -10.5
+     ],
+     [
+      101,
+      -10.5
+     ],
+     [
+      97.3,
+      -25
+     ]
+    ]
+   },
+   "set": 4012,
+   "keepLanes": true,
+   "why": "TS-E1: Survey sheet 11-NE-11A (May 1987) draws temporary structures ('TS') on the east edge as dashed outlines, of one storey. Traced by the faces agent (2026-11-02). The inner side is moved 3 m west, because the plan's east face is 1-3 m west of the sheet's; only cells outside the City change."
+  },
+  {
+   "where": {
+    "open": "outside",
+    "poly": [
+     [
+      105.0,
+      -8.4
+     ],
+     [
+      110.0,
+      -9.0
+     ],
+     [
+      111.0,
+      -5.0
+     ],
+     [
+      112.3,
+      2.5
+     ],
+     [
+      112.5,
+      6.8
+     ],
+     [
+      114.3,
+      6.8
+     ],
+     [
+      115.3,
+      11.8
+     ],
+     [
+      112.3,
+      12.8
+     ],
+     [
+      105.5,
+      13
+     ],
+     [
+      105.5,
+      8
+     ],
+     [
+      102.5,
+      7
+     ],
+     [
+      102.5,
+      -1
+     ],
+     [
+      102,
+      -1
+     ]
+    ]
+   },
+   "set": 4014,
+   "keepLanes": true,
+   "why": "TS-E2: Survey sheet 11-NE-11A (May 1987) draws temporary structures ('TS') on the east edge as dashed outlines, of one storey. Traced by the faces agent (2026-11-02). The inner side is moved 3 m west, because the plan's east face is 1-3 m west of the sheet's; only cells outside the City change."
+  },
+  {
+   "where": {
+    "open": "outside",
+    "poly": [
+     [
+      110.5,
+      13.0
+     ],
+     [
+      112.8,
+      13.0
+     ],
+     [
+      112.8,
+      19.5
+     ],
+     [
+      107.5,
+      19.5
+     ]
+    ]
+   },
+   "set": 4015,
+   "keepLanes": true,
+   "why": "TS-E3: Survey sheet 11-NE-11A (May 1987) draws temporary structures ('TS') on the east edge as dashed outlines, of one storey. Traced by the faces agent (2026-11-02). The inner side is moved 3 m west, because the plan's east face is 1-3 m west of the sheet's; only cells outside the City change."
+  },
+  {
+   "where": {
+    "open": "outside",
+    "poly": [
+     [
+      115.0,
+      37.0
+     ],
+     [
+      117.8,
+      60.5
+     ],
+     [
+      113.5,
+      60.5
+     ],
+     [
+      112.3,
+      55
+     ],
+     [
+      111.5,
+      50
+     ],
+     [
+      107.5,
+      50
+     ],
+     [
+      107.5,
+      44
+     ],
+     [
+      106.8,
+      37
+     ]
+    ]
+   },
+   "set": 4016,
+   "keepLanes": true,
+   "why": "TS-E4: Survey sheet 11-NE-11A (May 1987) draws temporary structures ('TS') on the east edge as dashed outlines, of one storey. Traced by the faces agent (2026-11-02). The inner side is moved 3 m west, because the plan's east face is 1-3 m west of the sheet's; only cells outside the City change."
+  },
+  {
+   "why": "Plot 210, between the Yamen's east side range and 23 Lo Yan Street: an open yard with trees on the bronze model of the City in the park (the view down into the court, Alamy 53451363; counted twice). The trace had it as part of the Yamen. No building stood here (INFERRED).",
+   "where": {
+    "codes": [
+     210
+    ]
+   },
+   "set": "yard"
+  },
+  {
+   "why": "The thin tall tower of the bronze model of the City in the park (John circled it on the view from Tung Tau Tsuen Road): about 6 m wide, at plan x 62-66 on the north view and on the NE view (Alamy); the views do not fix its depth. Plots 267 and 276 are the narrow strip of the plan at that place (x 62.5-68.5, z 7.5-16.5): 276 joins 267, and they stand as one tower (ownTower). INFERRED: which plots.",
+   "where": {
+    "codes": [
+     276
+    ]
+   },
+   "set": 267
+  }
+ ],
+ "yamen": [
+  4002,
+  4003,
+  4004,
+  4005,
+  4006
+ ],
+ "notYamen": [
+  148,
+  149,
+  152,
+  158,
+  173,
+  188,
+  195,
+  203,
+  210,
+  221,
+  239,
+  273,
+  279,
+  281,
+  304,
+  321,
+  336
+ ],
+ "ownTower": [
+  188,
+  195,
+  221,
+  279,
+  321,
+  336,
+  4011,
+  4012,
+  4014,
+  4015,
+  4016,
+  4007,
+  267
+ ],
+ "names": {
+  "4002": "the Yamen, west side range",
+  "4003": "the Yamen, east side range",
+  "4004": "the Yamen, middle hall",
+  "4005": "the Yamen, west range of the front court",
+  "4006": "the Yamen, east range of the front court (clinic)",
+  "188": "Old People's Centre (a school until 1978)",
+  "138": "Youth Centre",
+  "195": "Wing Fat Building, Lo Yan Street",
+  "187": "Free School Building",
+  "4011": "Temporary structure (TS-NE)",
+  "4012": "Temporary structure (TS-E1)",
+  "4014": "Temporary structure (TS-E2)",
+  "4015": "Temporary structure (TS-E3)",
+  "4016": "Temporary structure (TS-E4)",
+  "221": "Low range on the west side of the Yamen compound",
+  "4007": "Low building on the east side of the Yamen court"
+ },
+ "storeys": [
+  {
+   "code": 345,
+   "n": 8,
+   "from": "photo",
+   "why": "150 Lung Chun Road, a white plain block on the west face: 8 rows of windows with a door at G/F (book pp20-21, pp86-87; 1989 aerial: a wall of 23 m)."
+  },
+  {
+   "code": 319,
+   "n": 13,
+   "from": "photo",
+   "why": "156A Lung Chun Road, a tall caged block on the west face: 13 (pp20-21), 13-14 (pp86-87), 14 (1989 aerial)."
+  },
+  {
+   "code": 448,
+   "n": 8,
+   "from": "photo",
+   "why": "134 Lung Chun Road, the grey plain corner block: 7 rows of windows over G/F (pp20-21); 7-8 on the 1989 aerial and p221."
+  },
+  {
+   "code": 383,
+   "n": 12,
+   "from": "photo",
+   "roofRoom": true,
+   "why": "128 Lung Chun Road, a green caged block on the west face: 12 (pp20-21, pp86-87, 1989 aerial), with a room on its roof."
+  },
+  {
+   "code": 265,
+   "n": 11,
+   "from": "photo",
+   "why": "4 Sai Shing Road: a wall of 29 m with its base seen on the 1989 aerial; 11-12 on pp20-21 (likely, not sure)."
+  },
+  {
+   "code": 187,
+   "n": 10,
+   "from": "bronze",
+   "why": "Free School Building (義學大樓), west of the Yamen court. On the bronze model in the park its roof (the tiled roof playground) is about 9 storeys over the court floor (the view down into the court, two counts), 1-2 below the 204 roof beside it; the view from the west gives 8-10 (not sure). The 1989 aerial (Lambot, Commons) shows its roof at about the level of the roofs round it. Thus 10. An earlier note gave 5 storeys and said that John remembered them: that was a mistake (John, 2026-11-03)."
+  },
+  {
+   "code": 131,
+   "n": 11,
+   "from": "bronze",
+   "why": "23 Lo Yan Street, north-east of the Yamen court. The bronze model in the park shows two heights: the south-west part over the yard is 9-11 rows (10-12 storeys), the north-west part is lower (4-7, not sure). The model has one height for the building: 11. An earlier reading of the 1989 aerial gave 3-5 storeys (INFERRED, camera fit to 1-2 storeys); the aerial also shows no low roofs round the court."
+  },
+  {
+   "code": 188,
+   "n": 1,
+   "kind": "low",
+   "from": "sheet1987",
+   "roof": "pitched",
+   "why": "The school / Old People's Centre: the long rectangle marked 老人中心 on the park's plan of the City; 'School' on the 1987 sheet (the CNEC ran its school there until 1978 and its centre for old people from 1979, Rev. Isaac Liu, p305); the 1994 photo of the cleared site (p347) shows only low buildings there. One storey INFERRED. A sloped roof: the bronze model in the park, as John read it (2026-11-03); the shape of the roof (hipped, its pitch) is INFERRED."
+  },
+  {
+   "code": 221,
+   "n": 1,
+   "kind": "low",
+   "from": "sheet1987",
+   "why": "The strip between the Old People's Centre and the west edge of the compound: a plot of its own on the park's plan of the City. The 1987 sheet draws the 'School' over it and over the Old People's Centre, thus it is low; one storey and a flat roof INFERRED."
+  },
+  {
+   "code": 138,
+   "n": 2,
+   "kind": "low",
+   "from": "named",
+   "roof": "pitched",
+   "why": "The Youth Centre: one rectangle with one sloped roof, as on the park's plan of the City and on the bronze model of the City in the park (Alamy 53451363; John read it, 2026-11-03). 1-2 storeys INFERRED; the shape of the roof (hipped, its pitch) is INFERRED."
+  },
+  {
+   "code": 4011,
+   "n": 1,
+   "from": "sheet1987",
+   "kind": "low",
+   "why": "one storey on survey sheet 11-NE-11A (May 1987). A sloped roof: the huts on the north-east corner and along the east face of the bronze model of the City in the park have ribbed, sloped roofs (photo, Alamy 53451363). The model gives the strip one hipped roof; the bronze model shows it as a row of small huts.",
+   "roof": "pitched"
+  },
+  {
+   "code": 4012,
+   "n": 1,
+   "from": "sheet1987",
+   "kind": "low",
+   "why": "one storey on survey sheet 11-NE-11A (May 1987). A sloped roof: the huts on the north-east corner and along the east face of the bronze model of the City in the park have ribbed, sloped roofs (photo, Alamy 53451363). The model gives the strip one hipped roof; the bronze model shows it as a row of small huts.",
+   "roof": "pitched"
+  },
+  {
+   "code": 4014,
+   "n": 1,
+   "from": "sheet1987",
+   "kind": "low",
+   "why": "one storey on survey sheet 11-NE-11A (May 1987). A sloped roof: the huts on the north-east corner and along the east face of the bronze model of the City in the park have ribbed, sloped roofs (photo, Alamy 53451363). The model gives the strip one hipped roof; the bronze model shows it as a row of small huts.",
+   "roof": "pitched"
+  },
+  {
+   "code": 4015,
+   "n": 1,
+   "from": "sheet1987",
+   "kind": "low",
+   "why": "one storey on survey sheet 11-NE-11A (May 1987). A sloped roof: the huts on the north-east corner and along the east face of the bronze model of the City in the park have ribbed, sloped roofs (photo, Alamy 53451363). The model gives the strip one hipped roof; the bronze model shows it as a row of small huts.",
+   "roof": "pitched"
+  },
+  {
+   "code": 4016,
+   "n": 1,
+   "from": "sheet1987",
+   "kind": "low",
+   "why": "one storey on survey sheet 11-NE-11A (May 1987). A sloped roof: the huts on the north-east corner and along the east face of the bronze model of the City in the park have ribbed, sloped roofs (photo, Alamy 53451363). The model gives the strip one hipped roof; the bronze model shows it as a row of small huts.",
+   "roof": "pitched"
+  },
+  {
+   "code": 4007,
+   "n": 1,
+   "kind": "low",
+   "from": "bronze",
+   "why": "A low, flat roof on the bronze model of the City in the park (Alamy 53451363). One storey INFERRED."
+  },
+  {
+   "code": 267,
+   "n": 15,
+   "from": "bronze",
+   "annex": false,
+   "inferred": true,
+   "why": "The thin tall tower: on the bronze model in the park its top stands 1.5-3 storeys over the roofs round it (12-13 storeys here); the texts give 'up to a possible 15 storeys' (City of Darkness Revisited, p340). Thus 15 (INFERRED). It does not grow over a neighbour's roof: the bronze shows it free above them."
+  },
+  {
+   "code": 6,
+   "n": 13,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 13 rows (count [13], recount [13]), thus this building takes the high end of that range (INFERRED)."
+  },
+  {
+   "code": 14,
+   "n": 14,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the NE corner (Alamy 53451363 and a close view): ne: 14 rows (count [14], recount []). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 14."
+  },
+  {
+   "code": 15,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the NE corner (Alamy 53451363 and a close view): ne: 11 rows (count [11], recount [11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 19,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 11 rows (count [10], recount [11]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 23,
+   "n": 10,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 9.5 rows (count [10], recount [9, 10]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 10."
+  },
+  {
+   "code": 25,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 10 rows (count [10], recount [10]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 40,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 12 rows (count [11], recount [12]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 46,
+   "n": 5,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the NE corner (Alamy 53451363 and a close view): ne: 5 rows (count [5], recount [5]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 5."
+  },
+  {
+   "code": 50,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 12 rows (count [12], recount [12]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 51,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 9 rows (count [9], recount [9]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 54,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 11 rows (count [10], recount [11]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 62,
+   "n": 12,
+   "from": "p132",
+   "inferred": true,
+   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 9 rows (count [9], recount [9]), thus this building takes the low end of that range (INFERRED)."
+  },
+  {
+   "code": 74,
+   "n": 12,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 11 rows (count [11], recount [11, 11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 12."
+  },
+  {
+   "code": 136,
+   "n": 10,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 9 rows (count [9], recount [9, 9]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 10."
+  },
+  {
+   "code": 160,
+   "n": 12,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 11 rows (count [11], recount [11, 11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 12."
+  },
+  {
+   "code": 192,
+   "n": 8,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 7.5 rows (count [8], recount [7, 8]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 8."
+  },
+  {
+   "code": 195,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 11 rows (count [11], recount [11, 11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 199,
+   "n": 9,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 8.5 rows (count [10], recount [8, 9]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 9."
+  },
+  {
+   "code": 202,
+   "n": 10,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 10 rows (count [10], recount [10, 10]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 10."
+  },
+  {
+   "code": 217,
+   "n": 9,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 8 rows (count [8], recount [8, 8]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 9."
+  },
+  {
+   "code": 238,
+   "n": 9,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the west face (Alamy, side view): west: 8 rows (count [8], recount [8, 8]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 9."
+  },
+  {
+   "code": 279,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 10.5 rows (count [11], recount [10, 11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 321,
+   "n": 10,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363) and the west face (Alamy, side view): top: 10 rows (count [12], recount [10]); west: 9 rows (count [11], recount [9]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 10."
+  },
+  {
+   "code": 336,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363) and the west face (Alamy, side view): top: 11 rows (count [11], recount [10, 11, 11]); west: 10 rows (count [11], recount [10]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 357,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 11 rows (count [], recount [11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 371,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 11 rows (count [12], recount [11, 11]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 377,
+   "n": 11,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 10.5 rows (count [12], recount [11, 10]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 11."
+  },
+  {
+   "code": 378,
+   "n": 10,
+   "from": "bronze",
+   "why": "Counted on the bronze model of the City in the park, the view down into the Yamen court (Alamy 53451363): top: 10 rows (count [10], recount [10]). A row on the bronze is about 1.1 storeys on the west face (5 blocks with photo counts) and 1 storey on the north face and in the court (the camera fits the model storeys there); thus 10."
+  },
+  {
+   "code": 456,
+   "n": 13,
+   "from": "photo",
+   "inferred": true,
+   "why": "The long wall on the west half of the south face, east of the 8-storey SW corner block: 2 white top storeys and about 11 caged storeys, thus 13 (City of Darkness Revisited pp20-21, Lambot); the 1989 aerial shows the wall about 1.3 times as high as 10 storeys. Which buildings: INFERRED."
+  },
+  {
+   "code": 453,
+   "n": 13,
+   "from": "photo",
+   "inferred": true,
+   "why": "The long wall on the west half of the south face: 13 (pp20-21, Lambot; 1989 aerial). Which buildings: INFERRED. The bronze shows a tall block behind the SW corner block."
+  },
+  {
+   "code": 427,
+   "n": 13,
+   "from": "photo",
+   "inferred": true,
+   "why": "The long wall on the west half of the south face: 13 (pp20-21, Lambot; 1989 aerial). Which buildings: INFERRED."
+  },
+  {
+   "code": 462,
+   "n": 12,
+   "from": "photo",
+   "inferred": true,
+   "why": "The south face at plan x -37 to -21: the 1989 aerial shows no step down here, and the wall is about 1.07 times 11 storeys, thus 12; pp20-21 shows the wall going on at about the same height. Which buildings: INFERRED."
+  },
+  {
+   "code": 414,
+   "n": 12,
+   "from": "photo",
+   "inferred": true,
+   "why": "74 Lung Chun Road, south face at plan x -37 to -21: 12, as its neighbours (1989 aerial, pp20-21). Which buildings: INFERRED."
+  },
+  {
+   "code": 425,
+   "n": 12,
+   "from": "photo",
+   "inferred": true,
+   "why": "South face at plan x -37 to -21: 12, as its neighbours (1989 aerial, pp20-21). Which buildings: INFERRED."
+  }
+ ],
+ "south": {
+  "x0": -0.6,
+  "step": 2.62,
+  "binding": {
+   "k": 22,
+   "dx": 0.75
+  },
+  "why": "Lambot's south elevation (M+ 2017.412; City of Darkness Revisited pp142-143) fitted to the lot lines of survey sheet 11-NE-11A (May 1987): 19 building edges, 37.5 px/m, mean residual 0.4 m. It covers plan x -0.6 to 104.9, the east half of the south face."
+ }
+}

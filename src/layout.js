@@ -91,7 +91,7 @@ export const USE_DOING = {
 // Storeys along the south face, west to east, read off Lambot's 1990 south elevation
 // (M+ 2017.412): the skyline height over the base, at 23.9 px per storey, in 40 steps.
 // The skyline includes stair huts, thus each value is one storey or less above the roof.
-const SOUTH_PROFILE = [11, 11, 11, 10, 11, 11, 10, 10, 10, 10, 11, 10, 11, 10, 10, 10, 11, 11, 11, 12,
+export const SOUTH_PROFILE = [11, 11, 11, 10, 11, 11, 10, 10, 10, 10, 11, 10, 11, 10, 10, 10, 11, 11, 11, 12,
   13, 12, 12, 12, 13, 14, 14, 13, 13, 14, 14, 14, 14, 14, 14, 12, 10, 10, 10, 10];
 
 // The street labels of data/plan.json, by the keys of data/businesses.json.
@@ -173,7 +173,115 @@ export function decodePlan(plan) {
   return code;
 }
 
+// data/plan_fine.json: the same codes on cells of 1/SUB m, as runs (2 characters for the
+// code, 2 for the length).
+export function decodeFine(fine) {
+  const code = new Int32Array(fine.W * fine.D);
+  const val = Object.fromEntries([...ALPH].map((ch, i) => [ch, i]));
+  const two = (row, p) => val[row[p]] * 64 + val[row[p + 1]];
+  fine.rows.forEach((row, j) => {
+    let i = j * fine.W;
+    for (let p = 0; p < row.length; p += 4) { const v = two(row, p), n = two(row, p + 2); code.fill(v, i, i + n); i += n; }
+  });
+  return code;
+}
+
+// The footprints from the fine plan (plan.fine: { SUB, W, D, code, exact }), in the frame of L. A
+// code that has no building on the 1 m plan takes the region beside it.
+function fineFootprints(L, fine, idOf) {
+  const s = fine.SUB, M = MARGIN * s, W = fine.W + 2 * M, D = fine.D + 2 * M, N = W * D;
+  const owner = new Int32Array(N).fill(-1), inside = new Uint8Array(N), alley = new Uint8Array(N);
+  const NONE = -2;
+  for (let j = 0; j < fine.D; j++)
+    for (let i = 0; i < fine.W; i++) {
+      const v = fine.code[j * fine.W + i];
+      if (!v) continue;
+      const k = (j + M) * W + i + M;
+      inside[k] = 1;
+      if (v < 4) alley[k] = v;
+      else owner[k] = idOf.has(v) ? idOf.get(v) : NONE;
+    }
+  const nb = (k) => [k - 1, k + 1, k - W, k + W];
+  for (let pass = 0, left = 1; left && pass < 400; pass++) {
+    left = 0;
+    const next = owner.slice();
+    for (let k = W; k < N - W; k++) {
+      if (owner[k] !== NONE) continue;
+      const n = nb(k).find((q) => inside[q] && owner[q] !== NONE);
+      if (n === undefined) { left++; continue; }
+      next[k] = owner[n];
+      if (owner[n] < 0) alley[k] = alley[n];
+    }
+    owner.set(next);
+  }
+  // Each building has no part narrower than 0.75 m (an opening of 3 x 3 cells) and is one
+  // piece: a thin neck between two rooms splits the floor inside the walls. A cell taken off
+  // goes to the building (or else the lane) that has the most cells beside it.
+  const ring8 = [-W - 1, -W, -W + 1, -1, 1, W - 1, W, W + 1];
+  const core = new Uint8Array(N), keep = new Uint8Array(N), hasCore = new Set();
+  for (let k = W + 1; k < N - W - 1; k++) {
+    const o = owner[k];
+    if (o >= 0 && ring8.every((d) => owner[k + d] === o)) { core[k] = 1; hasCore.add(o); }
+  }
+  for (let k = W + 1; k < N - W - 1; k++) {
+    const o = owner[k];
+    if (o >= 0 && (!hasCore.has(o) || core[k] || ring8.some((d) => core[k + d] && owner[k + d] === o))) keep[k] = 1;
+  }
+  const piece = new Int32Array(N).fill(-1), best = new Map();
+  for (let k = 0, n = 0; k < N; k++) {
+    if (!keep[k] || piece[k] >= 0) continue;
+    const o = owner[k], cells = [k];
+    piece[k] = n;
+    for (let q = 0; q < cells.length; q++)
+      for (const m of nb(cells[q])) if (keep[m] && piece[m] < 0 && owner[m] === o) { piece[m] = n; cells.push(m); }
+    if (!best.has(o) || cells.length > best.get(o).size) best.set(o, { id: n, size: cells.length });
+    n++;
+  }
+  for (let k = 0; k < N; k++) if (keep[k] && piece[k] !== best.get(owner[k]).id) keep[k] = 0;
+  const was = owner.slice();
+  for (let pass = 0, moved = 1; moved && pass < 50; pass++) {
+    moved = 0;
+    for (let k = W; k < N - W; k++) {
+      if (owner[k] < 0 || keep[k]) continue;
+      const votes = new Map();
+      let lane = 0;
+      for (const m of nb(k)) {
+        if (owner[m] >= 0 && keep[m] && owner[m] !== was[k]) votes.set(owner[m], (votes.get(owner[m]) || 0) + 1);
+        else if (owner[m] < 0 && inside[m]) lane = alley[m] || 1;
+      }
+      let o = -1, v = 0;
+      for (const [q, c] of votes) if (c > v) { o = q; v = c; }
+      if (o >= 0) { owner[k] = o; keep[k] = 1; moved++; } else if (lane) { owner[k] = -1; alley[k] = lane; moved++; }
+    }
+  }
+  // Gaps inside the outline are lanes, as on the 1 m plan.
+  const outer = new Uint8Array(N), queue = [];
+  for (let k = 0; k < N; k++) {
+    const i = k % W, j = (k / W) | 0;
+    if (!inside[k] && (i === 0 || j === 0 || i === W - 1 || j === D - 1)) { outer[k] = 1; queue.push(k); }
+  }
+  for (let q = 0; q < queue.length; q++)
+    for (const n of nb(queue[q])) if (n >= 0 && n < N && !inside[n] && !outer[n]) { outer[n] = 1; queue.push(n); }
+  for (let k = 0; k < N; k++) if (!inside[k] && !outer[k]) { inside[k] = 1; alley[k] = 1; }
+  // The buildings that a rule of data/structure_fixes.json draws as a polygon (the Yamen halls,
+  // the Youth Centre, the Old People's Centre, the temporary structures ...): their outlines go
+  // back onto the polygons, not onto the steps of the cells (see buildFootprints, opts.exact).
+  const exact = new Map();
+  for (const { codes, poly, order, set } of fine.exact || [])
+    for (const c of codes) {
+      if (!idOf.has(c)) continue;
+      const id = idOf.get(c);
+      if (!exact.has(id)) exact.set(id, []);
+      exact.get(id).push({ poly, order, inside: c === set });
+    }
+  // eps 3 cells (0.75 m; plan.fine.eps can set another): the steps of a line at an angle go,
+  // the corners of the plan stay. regularise: then the walls go square and straight where they
+  // are within a few degrees of it (only here: the 1 m plan stays as it is).
+  return buildFootprints({ W, D, owner, inside, alley, x0: L.x0, z0: L.z0 }, { scale: 1 / s, eps: fine.eps ?? 3, pocket: 4 * s * s, exact, regularise: true });
+}
+
 // context: data/context.json (the real buildings round the City), or null.
+// plan.fine (optional, from src/city/fixes.js): the footprints come from the fine plan.
 export function buildLayout(site, plan, biz = null, book = null, context = null, seed = 1986) {
   const rng = mulberry32(seed);
   const pc = decodePlan(plan);
@@ -263,7 +371,13 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
   };
 
   // ---- footprints -----------------------------------------------------------------------
-  const F = buildFootprints(L);
+  let F = buildFootprints(L);
+  if (plan.fine) {
+    const F1 = F;
+    F = fineFootprints(L, plan.fine, new Map(buildings.map((b) => [b.code, b.id])));
+    // a building with no cell on the fine plan keeps its 1 m outline
+    for (const b of buildings) if (!F.has(b.id)) F.set(b.id, F1.get(b.id) || []);
+  }
   L.ground = { lane: F.get(LANE) || [], yard: F.get(YARD) || [], road: F.get(ROAD) || [] };
 
   // ---- building attributes -------------------------------------------------------------

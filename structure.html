@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kowloon Walled City · 3D structure (definitive)</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #c9c7c0; font: 12px/1.45 -apple-system, "Helvetica Neue", Arial, sans-serif; color: #2b2925; }
+    #scene { display: block; width: 100vw; height: 100vh; }
+    .panel { position: absolute; background: rgba(246, 244, 238, 0.93); border: 1px solid #b9b4aa; border-radius: 4px; padding: 8px 10px; }
+    #ctl { top: 10px; left: 10px; width: 290px; }
+    #ctl h1 { font-size: 13px; margin: 0 0 2px; }
+    #ctl label { display: block; margin-top: 6px; }
+    #ctl input[type=range] { width: 100%; }
+    #stats, .dim { color: #77736a; }
+    #info { bottom: 10px; left: 10px; max-width: 520px; max-height: 55vh; overflow: auto; }
+    #info:empty, #route:empty { display: none; }
+    #route { top: 10px; right: 10px; max-width: 340px; }
+    table { border-collapse: collapse; margin-top: 6px; }
+    td, th { padding: 1px 6px; text-align: left; border-bottom: 1px solid #e1ddd3; font-variant-numeric: tabular-nums; }
+    tr.cur td { background: #f3d9b4; }
+    button { font: inherit; margin-top: 6px; padding: 3px 8px; border: 1px solid #9c968b; background: #fff; border-radius: 3px; cursor: pointer; }
+    button.on { background: #ff6a1a; color: #fff; border-color: #c84f0c; }
+    #loading { top: 45%; left: 50%; transform: translate(-50%, -50%); }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div id="ctl" class="panel">
+    <h1>Kowloon Walled City · 3D structure (definitive)</h1>
+    <div id="stats">Building the model…</div>
+    <label><input type="checkbox" id="cutOn"> Cut at height <b id="cutVal">off</b>
+      <input type="range" id="cut" min="6" max="66" step="0.1" value="30"></label>
+    <label>Section <select id="secAxis"><option value="off">off</option><option value="x">across x</option><option value="z">across z</option></select>
+      <b id="secVal">off</b> <input type="checkbox" id="secFlip"> flip
+      <input type="range" id="sec" min="-125" max="125" step="0.25" value="0"></label>
+    <label><input type="checkbox" id="xray"> X-ray: see through the outer walls and roofs</label>
+    <label><input type="checkbox" id="open"> Open the selected building: all its floors under the cut</label>
+    <button id="routeBtn">Route from room to room</button>
+    <button id="nsBtn">SW-NE route inside</button>
+    <button id="ladderBtn">Highlight the ladders</button>
+    <button id="stoolBtn">Highlight the stools</button>
+    <div class="dim" style="margin-top:6px">Click a building for its floors. Drag to turn, right-drag to move, scroll to zoom.
+      The dark faces are cut faces. Heights are metres above Principal Datum (mPD).</div>
+  </div>
+  <div id="info" class="panel"></div>
+  <div id="route" class="panel"></div>
+  <div id="loading" class="panel">Building the model…</div>
+  <script type="module" src="./src/structureViewer.js"></script>
+</body>
+</html>

@@ -1,3 +1,6 @@
+// SUPERSEDED (2026-11-04): this file is part of the old 3D city of the main app. The definitive
+// 3D structure of the City is src/city/ (docs/structure.md). Do not build new work on this file;
+// it stays only so that the main app runs until it moves to src/city/.
 // Turns the layout into one merged mesh per storey, so each storey can be lifted apart
 // (exploded view) or cut away (plan view) as a unit. Walls, floors and roofs follow the
 // plot outlines from footprint.js: a plot line at an angle is one straight wall.

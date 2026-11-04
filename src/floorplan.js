@@ -1,3 +1,7 @@
+// SUPERSEDED (2026-11-04) as the floor plans of the City: the definitive 3D structure of the City
+// is src/city/ (docs/structure.md), with its own plans (src/city/plan.js). Do not build new work
+// on these plans. Do not delete this file: buildLayout (src/layout.js) still calls setupCores
+// and makePlan, also for the definitive structure (the freeze covers their effect).
 // Floor plans: stairs, corridors and units in each block, for the cut view and for homes.
 //
 // SOURCED: Suenn Ho's stair types, among them a stair in the centre or at the side, a
