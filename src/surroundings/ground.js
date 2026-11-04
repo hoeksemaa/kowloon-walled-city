@@ -1,12 +1,16 @@
-// The ground for the structure viewer: the terrain of data/terrain.json as one mesh, painted
-// with a map of the roads, the open ground and the lanes of the City; the real buildings of
-// December 1986 (data/context.json) standing on it. There is no plate under the City: its
-// lanes are the ground itself, inside its own outline. The terrain under a building of the
-// City is not drawn (the building's walls go down into the ground), thus no ground shows in a
-// ground floor that is dug into the slope.
+// THE SURROUNDINGS of the City (the definitive 3D structure of 2026-11-04, docs/structure.md):
+// the terrain of data/terrain.json as one mesh, painted with a map of the roads, the open
+// ground, the paths and courts of data/surroundings.json, and the lanes of the City; the real
+// buildings of December 1986 (data/context.json) standing on it. Context only: the City itself
+// is src/city/. This module does not import the City model. It knows the City only by the
+// plain rings of cityGround() (src/city/model.js), which the viewer passes in.
+//
+// There is no plate under the City: its lanes are the ground itself, inside its own outline.
+// The terrain under a building of the City is not drawn (the building's walls go down into the
+// ground), thus no ground shows in a ground floor that is dug into the slope.
 import * as THREE from 'three';
-import { buildingPrisms, ROAD_WIDTH } from '../context.js';
-import { FADE_FAR } from '../env.js';
+import { ROAD_WIDTH } from '../context.js';
+import { REACH, contextSolids } from './shapes.js';
 
 const MAP_PX = 2048;
 // The near ground: a sharper map of the City and its surroundings (data/surroundings.json):
@@ -26,8 +30,8 @@ const SURFACE = { dirt: COL.dirt, path: COL.path, 'dirt-path': COL.path, cleared
 
 // Paints the ground into a 2D context g, for the box (x0, z0) of side w x h metres, px pixels
 // a metre: the open ground and the roads of data/context.json, then the surroundings of
-// data/surroundings.json (sur), then the lanes and yards of the City.
-function paintGround(g, box, px, ctx, S, sur) {
+// data/surroundings.json (sur), then the lanes and yards of the City (city, from cityGround()).
+function paintGround(g, box, px, ctx, city, sur) {
   const X = (x) => (x - box.x0) * px, Z = (z) => (z - box.z0) * px;
   g.fillStyle = COL.ground;
   g.fillRect(0, 0, g.canvas.width, g.canvas.height);
@@ -75,16 +79,15 @@ function paintGround(g, box, px, ctx, S, sur) {
   for (const f of feats) if (f.kind === 'fence' && f.line) line(f.line, 0.12, COL.fence, [0.6, 0.4]);
   // The City: its lanes and roads, and the G/F outlines of its buildings (the mask takes the
   // ground away under them), then its yards. The outlines come from the fine plan.
-  const L = S.L;
   const fill = (rings, col) => {
     g.beginPath();
-    for (const r of rings) r.pts.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
+    for (const r of rings) r.forEach(([x, z], i) => (i ? g.lineTo(X(x), Z(z)) : g.moveTo(X(x), Z(z))));
     g.fillStyle = col;
     g.fill('evenodd');
   };
-  fill([...L.ground.lane, ...L.ground.road], COL.city);
-  for (const b of S.list) fill(b.phases[0].rings, COL.city);
-  fill(L.ground.yard, COL.yard);
+  fill(city.lanes, COL.city);
+  for (const f of city.footprints) fill(f, COL.city);
+  fill(city.yards, COL.yard);
 }
 
 // The lines of one basketball court c = { centre: [x, z], axis: degrees in the plan frame (0:
@@ -104,10 +107,10 @@ function courtLines(g, X, Z, px, c) {
 }
 
 // A canvas texture of the ground over box (x0, z0, x1, z1) at res metres per pixel.
-function groundTexture(box, res, ctx, S, sur) {
+function groundTexture(box, res, ctx, city, sur) {
   const cv = document.createElement('canvas');
   cv.width = Math.ceil((box.x1 - box.x0) / res); cv.height = Math.ceil((box.z1 - box.z0) / res);
-  paintGround(cv.getContext('2d'), box, 1 / res, ctx, S, sur);
+  paintGround(cv.getContext('2d'), box, 1 / res, ctx, city, sur);
   const tex = new THREE.CanvasTexture(cv);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
@@ -116,26 +119,28 @@ function groundTexture(box, res, ctx, S, sur) {
 }
 
 // A mask of the building footprints of the City (their G/F outlines), at 0.1 m.
-function footMask(S) {
-  const L = S.L, x0 = L.x0, z0 = L.z0, res = 10;
+function footMask(city) {
+  const { x0, z0, w, d } = city.box, res = 10;
   const cv = document.createElement('canvas');
-  cv.width = Math.ceil(L.W * res); cv.height = Math.ceil(L.D * res);
+  cv.width = Math.ceil(w * res); cv.height = Math.ceil(d * res);
   const g = cv.getContext('2d');
   g.fillStyle = '#000'; g.fillRect(0, 0, cv.width, cv.height);
   g.fillStyle = '#fff';
-  for (const b of S.list) {
+  for (const f of city.footprints) {
     g.beginPath();
-    for (const r of b.phases[0].rings) r.pts.forEach(([x, z], i) => (i ? g.lineTo((x - x0) * res, (z - z0) * res) : g.moveTo((x - x0) * res, (z - z0) * res)));
+    for (const r of f) r.forEach(([x, z], i) => (i ? g.lineTo((x - x0) * res, (z - z0) * res) : g.moveTo((x - x0) * res, (z - z0) * res)));
     g.fill('evenodd');
   }
   const tex = new THREE.CanvasTexture(cv);
   tex.minFilter = tex.magFilter = THREE.NearestFilter;
   tex.generateMipmaps = false;
   tex.flipY = false;
-  return { tex, box: new THREE.Vector4(x0, z0, L.W, L.D) };
+  return { tex, box: new THREE.Vector4(x0, z0, w, d) };
 }
 
-export function buildGround(T, ctx, S, sur = null) {
+// T: the terrain (src/terrain.js); ctx: data/context.json; city: cityGround() of the City model;
+// sur: data/surroundings.json. Returns { group, terrain, context } (three.js objects).
+export function buildGround(T, ctx, city, sur = null) {
   const group = new THREE.Group();
   // ---- the terrain ----
   const n = T.nx, pos = new Float32Array(n * n * 3), uv = new Float32Array(n * n * 2);
@@ -146,7 +151,7 @@ export function buildGround(T, ctx, S, sur = null) {
       uv.set([i / (n - 1), j / (n - 1)], q * 2);
     }
   const idx = [];
-  const far = FADE_FAR + 3 * T.res;
+  const far = REACH + 3 * T.res;
   for (let j = 0; j + 1 < n; j++)
     for (let i = 0; i + 1 < n; i++) {
       const x = T.x0 + (i + 0.5) * T.res, z = T.z0 + (j + 0.5) * T.res;
@@ -159,10 +164,10 @@ export function buildGround(T, ctx, S, sur = null) {
   geo.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
   geo.setIndex(idx);
   geo.computeVertexNormals();
-  const mask = footMask(S);
+  const mask = footMask(city);
   const R = -T.x0;
-  const farTex = groundTexture({ x0: -R, z0: -R, x1: R, z1: R }, (2 * R) / MAP_PX, ctx, S, sur);
-  const near = groundTexture(NEAR, NEAR_RES, ctx, S, sur);
+  const farTex = groundTexture({ x0: -R, z0: -R, x1: R, z1: R }, (2 * R) / MAP_PX, ctx, city, sur);
+  const near = groundTexture(NEAR, NEAR_RES, ctx, city, sur);
   const mat = new THREE.MeshLambertMaterial({ map: farTex });
   mat.onBeforeCompile = (sh) => {
     sh.uniforms.uMask = { value: mask.tex };
@@ -184,15 +189,10 @@ export function buildGround(T, ctx, S, sur = null) {
   group.add(terrain);
 
   // ---- the real buildings of 1986, each standing on its lowest ground ----
-  const prisms = buildingPrisms(ctx);
   const P = [], N = [], Cl = [];
   const base = new THREE.Color();
-  prisms.forEach((p, id) => {
-    if (!p) return;
-    let lo = Infinity, sx = 0, sz = 0;
-    for (const [x, z] of p.ring) { lo = Math.min(lo, T.h(x, z)); sx += x; sz += z; }
-    if (Math.hypot(sx / p.ring.length, sz / p.ring.length) > FADE_FAR + 20) return;
-    const y0 = lo - 1, y1 = lo + p.h;
+  for (const p of contextSolids(ctx, T)) {
+    const { id, y0, y1 } = p;
     const r = Math.sin(id * 12.9898) * 43758.5453;
     base.setHSL(0.09 + (r - Math.floor(r)) * 0.03, 0.05, 0.8 + ((r * 7) % 1 + 1) % 1 * 0.07);
     const put = (x, y, z, n, k) => { P.push(x, y, z); N.push(...n); Cl.push(base.r * k, base.g * k, base.b * k); };
@@ -207,13 +207,13 @@ export function buildGround(T, ctx, S, sur = null) {
       if ((b[1] - a[1]) * (c[0] - a[0]) - (b[0] - a[0]) * (c[1] - a[1]) < 0) [b, c] = [c, b];
       for (const v of [a, b, c]) put(v[0], y1, v[1], [0, 1, 0], 1.06);
     }
-  });
+  }
   const cg = new THREE.BufferGeometry();
   cg.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
   cg.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
   cg.setAttribute('color', new THREE.Float32BufferAttribute(Cl, 3));
-  const city = new THREE.Mesh(cg, new THREE.MeshLambertMaterial({ vertexColors: true }));
-  city.castShadow = city.receiveShadow = true;
-  group.add(city);
-  return { group, terrain, context: city };
+  const context = new THREE.Mesh(cg, new THREE.MeshLambertMaterial({ vertexColors: true }));
+  context.castShadow = context.receiveShadow = true;
+  group.add(context);
+  return { group, terrain, context };
 }

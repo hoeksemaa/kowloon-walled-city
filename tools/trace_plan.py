@@ -327,7 +327,7 @@ img = Image.fromarray(pal[grid]).resize((GW * 6, GD * 6), Image.NEAREST)
 img.save(f'{outdir}/trace-grid.png')
 
 
-# ---- the fine plan: 0.25 m cells, for the 3D structure (src/structure/) ----------------------
+# ---- the fine plan: 0.25 m cells, for the 3D structure (src/city/) ----------------------
 # The 1 m grid gives each cell to one plot, thus a plot line at an angle is a staircase of 1 m
 # steps, and the text on the plan bends the plot lines. The fine plan gives each photo pixel a
 # code, then takes the codes at 0.25 m. The 1 m codes say which plot is which; the drawn lines

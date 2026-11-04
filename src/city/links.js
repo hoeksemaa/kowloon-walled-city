@@ -502,7 +502,7 @@ export function buildLinks(S) {
       else chosen.push(x);
     }
     if (end === null) S.chainGaps = 1;
-    // the floor of the route in its first and in its last building (viewer.js, the checks)
+    // the floor of the route in its first and in its last building (structureViewer.js, the checks)
     const endFloor = (id, x) => (x.b === id ? x.k : x.kc);
     S.chainEnds = S.chain.length > 1 ? [endFloor(S.chain[0], link(prev.get(S.chain[1]).e)), endFloor(S.chain.at(-1), link(prev.get(S.chain.at(-1)).e))] : null;
     C.out.chain = S.chain.map((id) => S.list[id].key);
@@ -650,17 +650,22 @@ export function buildLinks(S) {
           }
         }
     }
-  // A pair with a bridge site (model.js) gets a bridge on 50 % of the floors that can have
-  // one there, and at least one; another pair, rarely.
-  const bridges = [];
+  // One bridge at each place at most (John, 2026-11-04: no stacks of bridges between the same
+  // two buildings; one bridge is enough, the stairs do the rest). A pair with a bridge site
+  // (model.js) gets one, on the floor that lines up best of the floors its kept choices pick
+  // (50 % each), or else on one floor at random; another pair, rarely (2 % a floor). A pair on
+  // the SW-NE route keeps only the bridge of the route.
+  const bridges = [], onRoute = new Set(chainBridges.map((x) => (x.b.id < x.c.id ? `${x.b.id}:${x.c.id}` : `${x.c.id}:${x.b.id}`)));
+  const misfit = (x) => Math.abs(x.b.y[x.k] - x.c.y[x.kc]);
   for (const [key, list] of bridgeCand) {
+    if (onRoute.has(key)) continue;
     const site = S.bridgeSites.get(key);
     const near = site ? list.filter((x) => Math.min(Math.hypot(x.P[0] - site.P[0], x.P[1] - site.P[1]), Math.hypot(x.P[0] - site.Q[0], x.P[1] - site.Q[1])) < 1.5) : list;
     const byK = new Map();
     for (const x of shuffle(near, (q) => 'b:' + at(q))) if (!byK.has(x.k)) byK.set(x.k, x);
-    let any = false;
-    for (const x of byK.values()) if (R(`bridge:${ck(x)}`) < (site ? 0.5 : 0.02)) { bridges.push(x); any = true; }
-    if (!any && site && byK.size) bridges.push(shuffle([...byK.values()], (q) => 'bf:' + at(q))[0]);
+    const picked = [...byK.values()].filter((x) => R(`bridge:${ck(x)}`) < (site ? 0.5 : 0.02));
+    if (picked.length) bridges.push(picked.reduce((p, q) => (misfit(q) < misfit(p) ? q : p)));
+    else if (site && byK.size) bridges.push(shuffle([...byK.values()], (q) => 'bf:' + at(q))[0]);
   }
   bridges.push(...chainBridges);
   for (const x of bridges) {
@@ -704,7 +709,8 @@ export function buildLinks(S) {
         const lab = r.other[i];
         if (lab < 0) continue;
         const c = S.bOf(lab);
-        if (!c || c.id === b.id || c.roofNode === undefined || c.top > b.top) continue;
+        // c is the lower roof; two roofs of one height join once, from the one with the lower id
+        if (!c || c.id === b.id || c.roofNode === undefined || c.top > b.top || (c.top === b.top && c.id < b.id)) continue;
         if (S.fills(lab, c.top + 0.6) && S.fills(lab, c.top + 0.6) !== c) continue;
         const dy = b.top - c.top;
         if (dy > ROOF_DY) continue;

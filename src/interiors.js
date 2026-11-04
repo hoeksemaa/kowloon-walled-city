@@ -1,3 +1,6 @@
+// SUPERSEDED (2026-11-04): this file is part of the old 3D city of the main app. The definitive
+// 3D structure of the City is src/city/ (docs/structure.md). Do not build new work on this file;
+// it stays only so that the main app runs until it moves to src/city/.
 // Inside the storeys: the stairs of every storey, and, on the cut storey, the floors of the
 // units, their doors and their furniture.
 //

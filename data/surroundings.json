@@ -1,5 +1,5 @@
 {
- "about": "The ground right round the City in 1986-1988, for a sense of scale: the streets, the dirt paths, the courts and the fences. src/structure/ground.js paints the features on the ground. Plan frame: x right, z down the plan, metres. Sources: survey sheet 11-NE-11A (May 1987) and the 1989 Lambot aerial (Wikipedia's lead photo of the City), fitted to the plan frame (error about 2-4 m by the City, more far out). The park paths are on the 1989 photo, not on the 1987 sheet: they were built in 1987-89. The NW court is on the 1987 sheet and gone by 1989. Each feature has its source.",
+ "about": "The ground right round the City in 1986-1988, for a sense of scale: the streets, the dirt paths, the courts and the fences. src/surroundings/ground.js paints the features on the ground. Plan frame: x right, z down the plan, metres. Sources: survey sheet 11-NE-11A (May 1987) and the 1989 Lambot aerial (Wikipedia's lead photo of the City), fitted to the plan frame (error about 2-4 m by the City, more far out). The park paths are on the 1989 photo, not on the 1987 sheet: they were built in 1987-89. The NW court is on the 1987 sheet and gone by 1989. Each feature has its source.",
  "features": [
   {
    "name": "Tung Tau Tsuen Road, carriageway (north)",

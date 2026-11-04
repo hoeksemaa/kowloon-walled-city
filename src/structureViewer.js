@@ -1,18 +1,20 @@
-// A viewer for the 3D structure (structure.html): the City on its ground, a cut at any height,
-// a vertical section, x-ray walls, the facts of each building, and the cheapest route from one
-// room to another. The simulation of main.js does not run here.
+// The viewer of the definitive 3D structure (structure.html): the City (src/city/) on its
+// surroundings (src/surroundings/), a cut at any height, a vertical section, x-ray walls, the
+// facts of each building, and the cheapest route from one room to another. This is the one
+// place that puts the City and its surroundings together. The colours are placeholders: only
+// the structure is definitive. The simulation of main.js does not run here.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { buildSite } from '../site.js';
-import { buildLayout } from '../layout.js';
-import { Terrain } from '../terrain.js';
-import { Lighting } from '../env.js';
-import { buildStructure, floorName, levelAt } from './model.js';
-import { applyFixes } from './fixes.js';
-import { makeChoices } from './choices.js';
-import { buildMesh, buildProps, KIND } from './mesh.js';
-import { route } from './links.js';
-import { buildGround } from './ground.js';
+import { buildSite } from './site.js';
+import { buildLayout } from './layout.js';
+import { Terrain } from './terrain.js';
+import { Lighting } from './env.js';
+import { buildStructure, cityGround, floorName, levelAt } from './city/model.js';
+import { applyFixes } from './city/fixes.js';
+import { makeChoices } from './city/choices.js';
+import { buildMesh, buildProps, KIND } from './city/mesh.js';
+import { route } from './city/links.js';
+import { buildGround } from './surroundings/ground.js';
 
 // The haze of main.js: things fade with distance from the centre, from 350 m to 600 m.
 THREE.ShaderChunk.fog_pars_vertex = '#ifdef USE_FOG\nvarying vec2 vFogXZ;\n#endif';
@@ -116,12 +118,12 @@ const state = { cut: OFF, secAxis: 'off', sec: 0, secFlip: false, open: false, s
 async function init() {
   const [plan0, biz, book, overlay0, context, terrain, fixes, fine, kept, sur] = await Promise.all(['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings']
     .map((n) => fetch(`./data/${n}.json`).then((r) => r.json())));
-  // the corrections of data/structure_fixes.json (src/structure/fixes.js); the footprints come
+  // the corrections of data/structure_fixes.json (src/city/fixes.js); the footprints come
   // from the fine plan (data/plan_fine.json)
   const { plan, overlay } = applyFixes(plan0, overlay0, fixes, fine);
   book.overlay = overlay;
   const site = buildSite(plan);
-  const L = buildLayout(site, plan, biz, book, context);
+  const L = buildLayout(site, plan, biz, book, null); // the City does not depend on its surroundings
   const T = new Terrain(terrain);
   const t0 = performance.now();
   // the kept random choices of the links (data/structure_choices.json, choices.js)
@@ -131,7 +133,7 @@ async function init() {
   scene.add(shell);
   props.ladder = propsOf(buildProps(S, 'ladder'), '#ff3d00');
   props.stool = propsOf(buildProps(S, 'stool'), '#d400ff');
-  ground = buildGround(T, context, S, sur);
+  ground = buildGround(T, context, cityGround(S), sur);
   // A section cuts the ground too, as in a section drawing.
   ground.terrain.material.clippingPlanes = [secPlane];
   ground.context.material.clippingPlanes = [secPlane];

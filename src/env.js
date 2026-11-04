@@ -1,3 +1,6 @@
+// SUPERSEDED in part (2026-11-04): the surroundings drawn here belong to the old 3D city of the
+// main app. The definitive surroundings are src/surroundings/ (docs/structure.md). The light and
+// the haze here are still in use.
 // The model's surroundings: the street round the city, the real buildings, roads and open ground
 // of December 1986 round it at the same level, light and time of day.
 import * as THREE from 'three';

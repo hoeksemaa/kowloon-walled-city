@@ -1,3 +1,7 @@
+// THE DEFINITIVE 3D STRUCTURE OF KOWLOON WALLED CITY (frozen 2026-11-04; docs/structure.md).
+// src/city/ is the City alone; src/surroundings/ is the context round it. Do not change the
+// structure: tools/check_structure.mjs fails when it changes (data/structure_frozen.json).
+//
 // The 3D structure of the City: each building with its own ground floor level, its own storey
 // heights, its own walls, its own stairs, and a footprint that can change with height. No
 // three.js here, thus tools/check_structure.mjs runs it in node.
@@ -129,6 +133,19 @@ function solve3(M, v) {
 }
 
 // L: the layout (layout.js); T: the ground (terrain.js).
+// The ground plan of the City for the surroundings (src/surroundings/ground.js), as plain rings
+// of [x, z]: its lanes and roads, its yards, the G/F outline of each building (a list of rings
+// for each), and the box of the plan. The surroundings know the City only by this.
+export function cityGround(S) {
+  const L = S.L, pts = (rings) => rings.map((r) => r.pts);
+  return {
+    lanes: pts([...L.ground.lane, ...L.ground.road]),
+    yards: pts(L.ground.yard),
+    footprints: S.list.map((b) => pts(b.phases[0].rings)),
+    box: { x0: L.x0, z0: L.z0, w: L.W, d: L.D },
+  };
+}
+
 export function buildStructure(L, T, opts = {}) {
   const seed = opts.seed ?? 1987;
   const P = L.buildings; // the plots

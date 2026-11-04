@@ -601,7 +601,7 @@ export function clipLine(rings, p, dir) {
 // Guards: a node moves 0.9 m at most (0.5 m where nodes are dense), no two segments cross, no
 // segment turns round, a lane keeps its width (or at least 0.9 m) at each node and every 0.5 m
 // along its walls, a party wall of 1.2 m keeps 1.2 m (a door needs it, see
-// src/structure/links.js), a building keeps its area within 10 %. Where a lane, a wall or an
+// src/city/links.js), a building keeps its area within 10 %. Where a lane, a wall or an
 // area fails the first time, a term holds it; else, and the second time, the terms near it go.
 // Then the solve runs again (8 times at most); a node that fails twice stays where it was. At
 // the end, a node of two segments goes if it turns less than 1 deg or is less than 0.15 m from
@@ -610,11 +610,11 @@ export function clipLine(rings, p, dir) {
 // the small angles and kinks come from the trace and the cells. The numbers are from the
 // research prototype (2026-11-03), not from a source, except the limits. The prototype took 15
 // deg (8 deg for 4 m or more). With those, 6 flats of 2 buildings (43 and 112, 27 Lo Yan Street)
-// have no way to the lanes (src/structure/plan.js puts the stairs by the outline), and long walls
+// have no way to the lanes (src/city/plan.js puts the stairs by the outline), and long walls
 // turn away from the lines of the plan (checked on the photo of the plan, 2026-11-03). The fit
 // and the 3 deg limit keep a wall that the plan draws at an angle at that angle; in the curved
 // north-east corner (no frame), the bends between walls of 1.5 m or more stay. With a 2 deg
-// limit, the route of src/structure/links.js (then from north to south, near 3/F) went down to 1/F.
+// limit, the route of src/city/links.js (then from north to south, near 3/F) went down to 1/F.
 const RG = {
   wd: 6, wb: 4, short: 0.6, frame: 2.5, near: 10, coh: 0.5, tol: 8, tolLong: 5, long: 4, through: 12,
   run: 0.5, runMin: 2.5, runSnap: 10, move: 0.9, moveDense: 0.5, dense: 1, denseN: 4, lane: 0.9,

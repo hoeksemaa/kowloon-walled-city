@@ -1,3 +1,6 @@
+// SUPERSEDED (2026-11-04): this file is part of the old 3D city of the main app. The definitive
+// 3D structure of the City is src/city/ (docs/structure.md). Do not build new work on this file;
+// it stays only so that the main app runs until it moves to src/city/.
 // The outside of the blocks, beside the walls of cityMesh.js: the window cages and what is
 // kept in them, air-conditioners, pipes down the walls and the slab ledges. The facade shader
 // draws the bars, grilles and pipes from the codes in aInfo.w, with FACADE_GLSL below.

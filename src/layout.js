@@ -281,7 +281,7 @@ function fineFootprints(L, fine, idOf) {
 }
 
 // context: data/context.json (the real buildings round the City), or null.
-// plan.fine (optional, from src/structure/fixes.js): the footprints come from the fine plan.
+// plan.fine (optional, from src/city/fixes.js): the footprints come from the fine plan.
 export function buildLayout(site, plan, biz = null, book = null, context = null, seed = 1986) {
   const rng = mulberry32(seed);
   const pc = decodePlan(plan);

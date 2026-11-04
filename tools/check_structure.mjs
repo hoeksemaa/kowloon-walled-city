@@ -1,8 +1,17 @@
-// Checks the 3D structure of src/structure/ (model.js, plan.js, links.js).
+// Checks the 3D structure of the City, src/city/ (model.js, plan.js, links.js), and that the
+// DEFINITIVE structure (2026-11-04, docs/structure.md) has not changed.
 //
 //     node tools/check_structure.mjs
-//     node tools/check_structure.mjs --record   # write data/structure_choices.json
 //     COARSE=1 node tools/check_structure.mjs   # the 1 m outlines (no data/plan_fine.json)
+//     node tools/check_structure.mjs --refreeze # ONLY WITH JOHN'S APPROVAL: record a new
+//                                               # fingerprint in data/structure_frozen.json
+//     node tools/check_structure.mjs --record --refreeze   # ONLY WITH JOHN'S APPROVAL: make
+//                                               # data/structure_choices.json again
+//
+// The structure is frozen: the check fails if the fingerprint of the City model or of the data
+// of the surroundings (tools/structure_fingerprint.mjs) is not the one of
+// data/structure_frozen.json. Change the structure only for a large error that a new source
+// shows, and only when John approves it; then refreeze, and say why in docs/structure.md.
 //
 // Prints counts: buildings, storeys, stairs, units by kind, doors and links, links by height,
 // the SW-NE route inside, and routes between flats on upper floors. Fails (exit 1) if
@@ -11,11 +20,12 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { buildLayout } from '../src/layout.js';
 import { Terrain } from '../src/terrain.js';
-import { buildStructure } from '../src/structure/model.js';
-import { applyFixes } from '../src/structure/fixes.js';
-import { makeChoices, choicesFile } from '../src/structure/choices.js';
-import { route, reach } from '../src/structure/links.js';
+import { buildStructure } from '../src/city/model.js';
+import { applyFixes } from '../src/city/fixes.js';
+import { makeChoices, choicesFile } from '../src/city/choices.js';
+import { route, reach } from '../src/city/links.js';
 import { mulberry32 } from '../src/util.js';
+import { cityFingerprint, meshFingerprint, surroundingsFingerprint } from './structure_fingerprint.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -23,12 +33,21 @@ const book = json('data/book.json');
 const fixes = json('data/structure_fixes.json');
 const fixed = applyFixes(json('data/plan.json'), json('data/book_overlay.json'), fixes, process.env.COARSE ? null : json('data/plan_fine.json'));
 book.overlay = fixed.overlay;
-const L = buildLayout(null, fixed.plan, json('data/businesses.json'), book, json('data/context.json'));
+// no data/context.json: the City model does not depend on its surroundings
+const L = buildLayout(null, fixed.plan, json('data/businesses.json'), book, null);
 const T = new Terrain(json('data/terrain.json'));
 const t0 = Date.now();
-// the kept random choices (src/structure/choices.js); --record makes them again from the old
+// the kept random choices (src/city/choices.js); --record makes them again from the old
 // random sequence
-const record = process.argv.includes('--record');
+const record = process.argv.includes('--record'), refreeze = process.argv.includes('--refreeze');
+if (record && !refreeze) {
+  console.log('--record makes the kept choices again, thus it changes the frozen structure. Use it only with --refreeze, and only with John\'s approval (docs/structure.md).');
+  process.exit(1);
+}
+if (refreeze && process.env.COARSE) {
+  console.log('The freeze is of the fine outlines: run --refreeze (and --record) without COARSE=1.');
+  process.exit(1);
+}
 const choices = makeChoices(existsSync(root + 'data/structure_choices.json') ? json('data/structure_choices.json') : null, record);
 const S = buildStructure(L, T, { fixes, choices });
 const ms = Date.now() - t0;
@@ -107,6 +126,33 @@ for (let q = 0; q < 2000 && n < 150; q++) {
   sum += r.cost / d;
 }
 console.log(`routes between flats on 8/F+, 20-70 m apart: ${n}; down to the lanes ${lane}, over the roofs ${roofs}, off the lanes ${n - lane}; cost / distance ${(sum / n).toFixed(1)}`);
+
+// ---- the freeze: the definitive structure must not change ----
+if (!process.env.COARSE) {
+  // after --record, the structure that the next run builds from the new kept choices
+  const Sf = record ? buildStructure(L, T, { fixes, choices: makeChoices(JSON.parse(JSON.stringify(choicesFile(choices)))) }) : S;
+  const now = { city: cityFingerprint(Sf), mesh: meshFingerprint(Sf), surroundings: surroundingsFingerprint(root, T) };
+  const FROZEN = 'data/structure_frozen.json';
+  if (refreeze) {
+    const about = 'The fingerprint of the DEFINITIVE 3D structure of Kowloon Walled City (src/city/) and of the '
+      + 'data of its surroundings (src/surroundings/), frozen on 2026-11-04 (docs/structure.md). '
+      + 'tools/check_structure.mjs fails when the structure no longer gives these values. Change the structure '
+      + 'only for a large error that a new source shows, and only with John\'s approval; then run '
+      + 'node tools/check_structure.mjs --refreeze and say why in docs/structure.md. city: a SHA-256 of the City '
+      + 'model; mesh: a SHA-256 of the geometry that src/city/mesh.js makes of it (not the colours); surroundings: a '
+      + 'SHA-256 of each data file of the surroundings and of their shapes (tools/structure_fingerprint.mjs).';
+    writeFileSync(root + FROZEN, JSON.stringify({ about, frozen: new Date().toISOString().slice(0, 10), ...now }, null, 1) + '\n');
+    console.log(`wrote ${FROZEN}: city ${now.city.slice(0, 12)}`);
+  } else if (!existsSync(root + FROZEN)) problems.push(`no ${FROZEN}`);
+  else {
+    const was = json(FROZEN), before = problems.length;
+    if (was.city !== now.city) problems.push(`THE DEFINITIVE CITY STRUCTURE CHANGED (frozen ${was.frozen}): fingerprint ${now.city.slice(0, 12)}, frozen ${was.city.slice(0, 12)}. Undo the change, or get John's approval and refreeze (docs/structure.md).`);
+    if (was.mesh !== now.mesh) problems.push(`THE DEFINITIVE CITY GEOMETRY CHANGED (src/city/mesh.js; frozen ${was.frozen}). Undo the change, or get John's approval and refreeze (docs/structure.md).`);
+    for (const f of new Set([...Object.keys(now.surroundings), ...Object.keys(was.surroundings || {})]))
+      if (was.surroundings?.[f] !== now.surroundings[f]) problems.push(`THE DEFINITIVE SURROUNDINGS CHANGED: ${f} (frozen ${was.frozen}). Undo the change, or get John's approval and refreeze (docs/structure.md).`);
+    if (problems.length === before) console.log(`frozen structure: unchanged since ${was.frozen} (city ${now.city.slice(0, 12)})`);
+  }
+}
 
 if (record) {
   choices.out.made = new Date().toISOString().slice(0, 10) + (process.env.COARSE ? ', the 1 m outlines' : ', the fine outlines');

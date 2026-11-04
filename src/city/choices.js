@@ -82,7 +82,7 @@ export function choicesFile(C) {
   const u = {};
   for (const k of Object.keys(C.out.u).sort()) u[k] = Math.round(C.out.u[k] * 1e6) / 1e6;
   return {
-    about: 'The random choices of the 3D structure (src/structure/choices.js), kept so that a change of the '
+    about: 'The random choices of the 3D structure (src/city/choices.js), kept so that a change of the '
       + 'outlines keeps the links. u: a number in [0, 1) for each choice (a choice is made where u is less '
       + 'than its rate); take: the flats in two buildings and the holes, in order; chain: the buildings of '
       + 'the SW-NE route, SW to NE; chainLinks: its links (two buildings and a floor); seeds: the '

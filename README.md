@@ -3,17 +3,45 @@
 An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
 shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
 
+## The definitive 3D structure
+
+**The 3D structure of `structure.html` is the definitive 3D structure of the City and of the
+terrain and city round it (2026-11-04).** All later work (art, visuals, simulation) builds on
+it. It is frozen: `node tools/check_structure.mjs` fails if anything changes its geometry
+(the colours are placeholders and can change). Change it
+only for a large error that a new source shows, and only when John approves it. See
+[docs/structure.md](docs/structure.md).
+
+- `src/city/`: **the City**, the focus of the work: each building, its storeys, floors,
+  stairs, rooms and roofs, the links between buildings, and a route inside the buildings
+  from the SW corner to the NE corner.
+- `src/surroundings/`: **the surroundings**, context only: the terrain, the roads, paths and
+  courts, and the real buildings of 1986 round the City.
+- `src/structureViewer.js` (`structure.html`): the viewer, the one place that puts the two
+  together.
+
+The two parts do not import each other. The colours are placeholders: only the structure is
+definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
+app (below).
+
 ## Run
 
 ```sh
 python3 serve.py 8173
-# open http://127.0.0.1:8173/
+# open http://127.0.0.1:8173/structure.html   the definitive 3D structure
+# open http://127.0.0.1:8173/                 the main app
 ```
 
-The new 3D structure (a draft, without the simulation) is at
-http://127.0.0.1:8173/structure.html. See [docs/structure.md](docs/structure.md).
+## The main app (on the superseded 3D city)
 
-## What is in the model
+The main app (`index.html`) runs the simulation of the week on an older 3D city
+(`src/cityMesh.js`, `src/floorplan.js`, `src/facades.js`, `src/roofs.js`,
+`src/interiors.js`). That 3D city is superseded by the definitive structure above. Its code
+stays only so that the main app runs until it moves to the definitive structure
+(`src/layout.js` also still calls two functions of `src/floorplan.js`). The rest of this
+section describes the main app.
+
+### What is in the model
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286

@@ -1,0 +1,12 @@
+{
+ "about": "The fingerprint of the DEFINITIVE 3D structure of Kowloon Walled City (src/city/) and of the data of its surroundings (src/surroundings/), frozen on 2026-11-04 (docs/structure.md). tools/check_structure.mjs fails when the structure no longer gives these values. Change the structure only for a large error that a new source shows, and only with John's approval; then run node tools/check_structure.mjs --refreeze and say why in docs/structure.md. city: a SHA-256 of the City model; mesh: a SHA-256 of the geometry that src/city/mesh.js makes of it (not the colours); surroundings: a SHA-256 of each data file of the surroundings and of their shapes (tools/structure_fingerprint.mjs).",
+ "frozen": "2026-11-04",
+ "city": "0c674f7d24f5593117fc59d837fa35b810c5c4349489fb3d1d6bdec301a19d66",
+ "mesh": "2b3830d979801a65e8892a0e5ed7c9ba1d6b6257e2d7806c07f16a67c520f72f",
+ "surroundings": {
+  "data/context.json": "822c708d3fd63b41c642d29132212ec36c7ee03019c6957f3fc8dbfa6f20e867",
+  "data/surroundings.json": "41a80eb6d90d32ed5b77045aab6ffd544707c872a9f1c824472684e28ff76145",
+  "data/terrain.json": "3d5bd1ed1dcff9bd37d808c222363e1b9ce665f168c185da09a44da108eacfc3",
+  "shapes": "9e93eabe892722dc680363803df4e5093630ca90871be104df99676c752f6b46"
+ }
+}

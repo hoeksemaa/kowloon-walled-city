@@ -1,12 +1,58 @@
-# The 3D structure (draft)
+# The 3D structure (DEFINITIVE)
 
-`structure.html` shows a new 3D model of the City. It is a clean start: it does not use the
-3D geometry of the main app (`src/cityMesh.js`, `src/floorplan.js`). It uses only these
-inputs, and marks each inference.
+**This is the definitive 3D structure of Kowloon Walled City and of the terrain and city round
+it (John, 2026-11-04).** It is the structural foundation of all later work: the art, the
+visuals and the simulation build on it. Each earlier 3D model of the City is superseded. The
+3D city of the main app (`index.html`: `src/cityMesh.js`, `src/floorplan.js`,
+`src/facades.js`, `src/roofs.js`, `src/interiors.js`, and the surroundings in `src/env.js`) is
+no longer the model of the City. Its code stays only so that the main app runs until it
+moves to this structure.
 
 It is a structural model only: walls, floors, stairs, rooms, the ways between them and the
-paving of the routes. It has no furniture, signs, window cages or TV masts. A later pass can
-add the art, and the movement of people can run on the route graph.
+paving of the routes. It has no furniture, signs, window cages or TV masts. The colours and
+textures are placeholders: only the structure is definitive.
+
+## The structure is frozen
+
+`node tools/check_structure.mjs` fails if the structure changes. It compares these
+fingerprints with `data/structure_frozen.json` (`tools/structure_fingerprint.mjs`), all
+rounded to 1 cm:
+
+- `city`: a SHA-256 of the City model: each building with its storeys, floor levels, roof,
+  outlines on each storey band, stairs and rooms; each door, bridge, ladder, step, hole,
+  window and stool; the route; and the ground plan of the City (`cityGround()`);
+- `mesh`: a SHA-256 of the geometry that `src/city/mesh.js` makes of the model, as the viewer
+  draws it: every vertex of the walls, slabs, roofs, huts, parapets, stairs, partitions,
+  bridges, ladders and stools (wall thickness, door heights and stair treads too);
+- `surroundings`: a SHA-256 of each of `data/context.json`, `data/surroundings.json` and
+  `data/terrain.json`, and of the shapes of `src/surroundings/shapes.js` (how far the ground
+  reaches, and the solid of each real building of 1986).
+
+Thus a change to the code or to the data that moves the structure fails the check. A
+change of colour does not: the colours are placeholders, and the art can change them. Do not
+change the structure. Change it only for a large error that a new source shows, and only
+when John approves it. Then run `node tools/check_structure.mjs --refreeze`, and write the
+change, its source and the date in this file. `--record` (make the kept choices again) runs
+only with `--refreeze`.
+
+## Two parts: the City and its surroundings
+
+The City is the focus of the work. The surroundings are context only. The two parts are
+separate in the code:
+
+| Part | Code | Data | What it is |
+| --- | --- | --- | --- |
+| The City | `src/city/` | `data/plan.json`, `data/plan_fine.json`, `data/book_overlay.json`, `data/structure_fixes.json`, `data/structure_choices.json` | every building of the City, its storeys, floors, stairs, rooms, roofs, the links between them, and the SW-NE route |
+| The surroundings | `src/surroundings/` (`shapes.js`: the shapes, no three.js; `ground.js`: draws them) | `data/context.json`, `data/surroundings.json` | context: the roads, the paths, the courts and the real buildings of 1986 round the City |
+| Shared input | `src/terrain.js`, `src/layout.js` (with `src/footprint.js`, `src/floorplan.js`, `src/residents.js`, `src/context.js`), `src/util.js` | `data/terrain.json`, `data/book.json`, `data/businesses.json` | the ground levels, and the reader of the plan (the main app uses them too) |
+| The viewer | `src/structureViewer.js`, `structure.html` | | the one place that puts the two parts together |
+
+`src/city/` does not import `src/surroundings/`, and `src/surroundings/` does not import
+`src/city/`. The City model does not read the data of the surroundings: with or without
+`data/context.json`, it has the same fingerprint. The surroundings know the City only by the
+plain rings of `cityGround()` (`src/city/model.js`): its lanes, its yards and the G/F outline
+of each building, which the viewer passes in. With those, the ground shows the lanes of the
+City, and no ground shows under its buildings.
 
 | Input | What it gives | Status |
 | --- | --- | --- |
@@ -21,19 +67,19 @@ add the art, and the movement of people can run on the route graph.
 | Photos of the bronze model of the City in the park, scale 1:200 (Alamy 49828257, 53451363 and similar stock photos; screenshots on John's Mac, not in git). The model was made after the clearance and is a sculpture: its outlines do not agree exactly with the plans | the storeys of the buildings that no photo of the City shows (John, 2026-11-03: the main source for heights); which buildings of the Yamen compound are one building, the sloped roofs, the low east strip, the huts on the east edge, the thin tower, the yard east of the Yamen | SOURCED for storeys where counted (`from: "bronze"`); shapes only for outlines |
 | City of Darkness Revisited, pp20-21 (Lambot) and the 1989 aerial (Lambot, Wikimedia Commons) | the storeys on the west half of the south face (12-13); a deep Yamen court with tall walls; the Free School at about full height | SOURCED for the counts; which buildings: INFERRED |
 | `data/terrain.json` (LandsD DTM, sheet 11-NE-11A of 1987) | the ground: 7.6 m to 23 m in the City | SOURCED round the City, INFERRED inside it |
-| pp137-139, pp145-146, p164, p167, p175, p179, p209, p249, p253, p340, Terasawa's fold-out | the types of stairs, shared stairs, buildings over buildings, stair huts, bridges, ladders between roofs, corridor windows, no lifts, the north-south route | SOURCED as types |
+| pp137-139, pp145-146, p164, p167, p175, p179, p209, p249, p253, p340, Terasawa's fold-out | the types of stairs, shared stairs, buildings over buildings, stair huts, bridges, ladders between roofs, corridor windows, no lifts, a route from one end of the City to the other | SOURCED as types |
 
 ## Run
 
 ```sh
 python3 serve.py 8173
 # open http://127.0.0.1:8173/structure.html
-node tools/check_structure.mjs   # counts and checks
-node tools/check_structure.mjs --record   # make data/structure_choices.json again (see below)
-COARSE=1 node tools/check_structure.mjs   # the outlines of the 1 m plan
+node tools/check_structure.mjs   # counts and checks, and the freeze
+COARSE=1 node tools/check_structure.mjs   # the outlines of the 1 m plan (not frozen)
+node tools/check_structure.mjs --refreeze   # ONLY WITH JOHN'S APPROVAL (see above)
 ```
 
-## The fixes (`data/structure_fixes.json`, `src/structure/fixes.js`)
+## The fixes (`data/structure_fixes.json`, `src/city/fixes.js`)
 
 `applyFixes()` changes the plan and the towers before `buildLayout()`. Each rule has a "why"
 with its source.
@@ -119,7 +165,7 @@ The 1 m plan gives each cell to one plot, thus a plot line at an angle was a sta
   (59 %), and kinks went from 338 to 216. The curve of the NE corner keeps its bends. The 1 m
   plan (`COARSE=1`) does not change.
 
-## The kept choices (`src/structure/choices.js`, `data/structure_choices.json`)
+## The kept choices (`src/city/choices.js`, `data/structure_choices.json`)
 
 The model draws many random choices: the rate of doors of each pair of buildings, which
 floors get a door or a bridge, the ladders, the windows, the holes, the flats in two
@@ -144,9 +190,10 @@ storeys moved, most by +1 or +2 near the court, and 27 left.
 
 `--record` makes the file again from the old random sequence, with the fixes and outlines
 of the time: thus a record run with `COARSE=1` and the fixes of 2026-11-03 gives the
-approved model exactly.
+approved model exactly. Since the freeze, `--record` runs only with `--refreeze`, and only
+with John's approval.
 
-## The model (`src/structure/`)
+## The model (`src/city/`)
 
 - `model.js`: the buildings. Each one has its own G/F floor level: the ground at its main
   door plus one step of 0.15 m. Each one has its own storey heights: G/F 3.3-3.9 m, the
@@ -200,7 +247,11 @@ approved model exactly.
     The rate of a door on a floor goes down with height: 0.35 on 1/F-5/F, 0.15 on 6/F-9/F,
     0.05 higher, times a factor for each pair of buildings (INFERRED from pp164, 175).
   - Doors from the half landings of dog-leg stairs (p340), up to 1.2 m of steps.
-  - Bridges over lanes of 3.5 m or less.
+  - Bridges over lanes of 3.5 m or less, one at each place at most (John, 2026-11-04): 38
+    bridges, each between one pair of buildings, 13 of them on the SW-NE route. Before, a
+    place got a bridge on about half the floors that line up, thus stacks of 2-6 bridges
+    between the same two buildings (89 in all). A bridge is a deck 0.9 m wide with two rails
+    1.0 m high (p167; Terasawa's cut-away; the shape and the places are INFERRED).
   - One route inside the buildings, the full way from the SW corner of the City to the NE
     corner. p164 has a route on 3/F-4/F from one end of the City to the other. At John's
     request (2026-11-04) the route goes from corner to corner at the middle of the City's
@@ -231,15 +282,18 @@ approved model exactly.
     within 0.3 m of each other, thus it needs no stool. The broken walls of p209 were seen
     in the empty City of 1993, thus they can be damage from the clearance.
   - No lifts: only two buildings had lifts (pp146, 179), and no source names them.
-- `mesh.js`: the triangles. Ladders and stools are plain boxes. `ground.js`: the terrain with
-  the roads painted on it, and the real buildings of 1986 on it. The ground fades into the
-  haze from 350 m to 600 m, as in the main app. There is no plate under the City.
-- `viewer.js`: the viewer. A cut at any height, a vertical section, x-ray walls, the floors
-  of a building on a click (with its units by kind and its source), and routes.
+- `mesh.js`: the triangles. Ladders and stools are plain boxes.
+- `src/surroundings/ground.js` (the surroundings, not the City): the terrain with the roads,
+  paths and courts painted on it, and the real buildings of 1986 on it. The ground fades
+  into the haze from 350 m to 600 m, as in the main app. There is no plate under the City.
+- `src/structureViewer.js`: the viewer. A cut at any height, a vertical section, x-ray
+  walls, the floors of a building on a click (with its units by kind and its source), and
+  routes.
 
 ## Not done yet
 
-- The simulation (people, sounds, labels) still runs only on the old model.
+- The simulation (people, sounds, labels) still runs only on the old, superseded model of
+  the main app. It must move to this structure.
 - Mezzanines (p209), rooms inside a flat, and lanes with steps.
 - The rates of doors, bridges, holes, ladders and windows are guesses. More sources can set
   them.
