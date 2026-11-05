@@ -75,3 +75,24 @@ vertical survey photo with no date. The city is only a few pixels in it. The
   photo (`Kowloon Walled City, Kowloon, China.tif`, 57.7 MB, "between 1960 and
   1980"). Its source, the Library of Congress, says "Publication may be
   restricted" (https://www.loc.gov/item/2010648314/). Thus I left it out for now.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+An agent zoomed on the signs in four photos. The facts are P1–P13 and P31.
+
+- **Roger Price, Sept 1991, `九龍城寨 - Kowloon Walled City in 1991 (2350913856).jpg`**
+  (P1–P7). G/F shops on Lung Shing Road: "黃美如牙科" (21 Lung Shing Rd in the
+  GRS, HKRS1255-3-374); "牙科麥汝鋆" with a hanging sign "東正道11號" (17 Lung
+  Shing Rd in the GRS, HKRS1255-3-376); "世界牙科" with "陳發牙醫"; and a clinic
+  "…正診療所" (the first character is cut off). The last two are not in
+  `data/businesses.json`. In the photo, 17 is nearer the camera than 21. This
+  can show the direction of the Lung Shing Road numbers (a disagreement in
+  `data/room_research.json`).
+- **`KWC - 1975.jpg`** (P8–P11, P31). Window signs "廖廣森 … 跌打中醫診所" on an upper
+  floor at 1 Lung Chun Rd (P8, P9); two signs "麗光牙科" high on a new tower
+  under bamboo scaffolding (P10); "東成樓" painted on a facade (P11); and the
+  signs of iron works in one-storey sheds south of the City, outside it (P31).
+- **`KWC - Playground.jpg`** (P12). "東發樓" painted under the roof of a
+  tenement at 82–84 Lung Chun Rd, with laundry on nearly every upper floor.
+- **`KWC - Night.jpg`** (P13). At least four vertical dentist signs at
+  upper-floor level. The names are too small to read.

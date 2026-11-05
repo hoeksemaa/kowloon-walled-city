@@ -158,3 +158,12 @@ All quotes are retrospective (2016).
 the peak, over 8,000 households, over 40,000 people], "多達20條街道" [as many
 as 20 streets]. These differ from the official 1987 figure of 33,000 residents
 (see `legco-hansard-1986-1993/`).
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Part 1 (39195): T19, T29, T30, T57, T60.
+- Part 2 (39194): T18, T22–T24.
+- Part 3 (39597): T21.
+- More than one part: T6 (parts 2 and 3), T20 (parts 1 and 3), T25 (parts 1–3).
+- Shared with other pages: T6 (WSJ 2014, M+ audio guide), T18 ("阿榮", WSJ
+  2014), T30 (WSJ 2014), T56 (SCMP 2013).

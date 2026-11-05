@@ -157,7 +157,7 @@ All are cut out in `local/extracts/` (file names start with the page). The credi
 | 334 | *Hong Kong Standard*, "Walled City: 'cause for disquiet'" | 19 Jan 1963 | probably Public Records Office, HK (the p356 line is cut at the binding) |
 | 335–336 | Aerial view; a 14-storey building on Tung Tau Tsuen Road | 1973, 1975 | GIS |
 | 337–339, 346–347 | News photos of the clearance and the demolition; the cleared site | 1987–1994 | *Sing Pao Daily News* |
-| 340 | Handwritten clearance sketch-survey plans of 6 Sai Shing Road, 4/F (BLD/SDU/COMP/SS 642(A); "SS" is handwritten and can also be "55") | 9 Nov 1987 | Suenn Ho |
+| 340 | Handwritten clearance sketch-survey plans. Sheet 1: 6 Sai Shing Road, 4/F (BLD/SDU/COMP/SS 642(A); "SS" is handwritten and can also be "55"). Sheet 2: five 5/F flats that share stairs, B24/76, B24/77 and B24/114 at 3 Cheung On Lane, and B24/115 and B24/116 at 31B Tung Tau Tsuen Road (Shing Hing Bldg) | 9 Nov 1987 (sheet 1); sheet 2 undated, about 1987 | Suenn Ho |
 | 352–353 | The Map | 1992 | Anna Dalgliesh |
 
 ## Key facts
@@ -244,3 +244,87 @@ The writers used records that the book does not show. Find the record before you
 - **Buildings in 1987.** Two places give about 300 (p134, p340).
 - **Dentists.** The police count gives 9 in November 1954 (p274). A caption gives "more than 150" at the peak and 86 by 1987 (p36).
 - **The survey of the empty City.** p204 says "February 1993", but the p209 caption says "January 1993". If you use this date, give both months.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+The room research of 2026-11-04 and 2026-11-05 read every page of the scan.
+Its facts from this book are in the clusters `bookA` (A1–A89), `bookB`
+(B1–B78), `bookC` (C1–C97), `bookD` (D1–D57) and `map` (M1–M94). The
+`source_type` of each fact tells which part of the book it comes from:
+primary, retrospective or secondary (a caption, an intro or an essay).
+
+| Part of the book | Pages | Fact ids |
+|---|---|---|
+| The original interviews and the photos of Girard and Lambot | throughout | 156 facts with `source_type` "primary", and 14 "retrospective" (old memories inside the interviews) |
+| Captions, intros and the 2014 essays (secondary) | throughout | 83 facts, and the essays D8, D50–D52, D56, D57, C37–C39 |
+| Lam Po Chun, postman (retrospective, 2014) | 144–149 | A77, A80–A83 |
+| A Policeman's Story | 250–257 | D7, D54 |
+| The Map, Anna Dalgliesh (1992) | 352–353 | M1–M73 |
+| Clearance sketch-survey plans (1987) | 340 | M74–M86 |
+| Suenn Ho's drawings (1992) | 137–139 | M87, M88 |
+| Suzuki survey of the empty City (1993) | 208–209 | M89–M93 (see also `../daizukai-kowloon-1997/`) |
+| Fiona Hawthorne's sketch (1986) | 210 | M94 |
+| Survey and Mapping Office map (1968) | 126–127 | C78–C97 |
+| Sale contract (14 Dec 1960) | 116 | C51 |
+| Ko Tim Keung's photos (1962–1972) | 117–133, 278 | C6, C52–C61, D27, D28 |
+| *Hong Kong Standard*, 19 Jan 1963 | 334 | D25, D26 |
+| Cathie Breslin, *The Star Weekly*, Nov 1963 | 264–267 | D16–D24 |
+| Police memorandum, 4 Mar 1955 | 273–275 | D15 |
+| GIS photos (1975) | 336 | D29, D30 |
+| *Sing Pao Daily News* photos (1987–1992) | 337–339 | D45–D47 |
+| Police surveillance photo, Nicholas Millman (undated) | 280–282 | D55 |
+
+### Key facts from the reproduced documents
+
+**Clearance sketch-survey plans (p340).**
+- Sheet 1, "NO. 6, SAI SHING RD., 4/F, TAI HING BLDG.", measured 9 Nov 1987.
+  The plan divides the flat: "(A) LIVING ROOM", "(B) CUBICLE", "(C) CUBICLE",
+  "(D) KITCHEN", "(E) TOILET", "(F) BED SPACE", "(G) BED SPACE" (M74–M81). The
+  plan prints bracketed areas only for B, C (3.54), D (2.00) and E (1.70) m².
+  It also gives "H.D. Structure Ref.: A 19/57 (1-4)".
+- Sheet 2, undated: five flats on one 5/F, with the uses not written:
+  "B24/114 Blk. C. 5/F. 3. Cheung On Lane", "B24/77 5/F Blk A Rear 3 Cheung On
+  Lane", "B24/76 5/F Blk B Rear 3 Cheung On Lane", "B24/115 Flat B. 5/F 31B
+  Rear Blk 3 Shing Hing Bldg. T.T.T. Rd" and "B24/116 Flat A 5/F 31B ..."
+  (M82–M86). The sheet draws three stairs with door marks into the flats. The
+  model has no Cheung On Lane, thus these flats have no unit (see
+  `docs/rooms.md`).
+
+**Survey and Mapping Office map, 1968 (pp126–127).** The map labels lots and
+non-residential uses. The labels give 10 weaving factories (for example
+"Weaving Factory" at lot 37 on Kwong Ming Street, C78), a bleaching and dyeing
+factory (C93), a rattan ware factory (C86), five schools (C79–C81, C84), a
+child care centre (C83), two chapels (C84, C95), a nunnery with shrines and
+water tanks (C94), latrines on Lung Chun Road (C96) and a shrine beside a ruin
+(C97). The copy in the book is small and blurred at the gutter. The agent
+who read the map found that the model's Kwong Ming Street numbers probably run
+the wrong way.
+
+**Cathie Breslin, "The World's Wickedest City", *The Star Weekly*, Nov 1963
+(pp264–267).** A visit on Good Friday 1963, outside the period of the model.
+- An opium den "behind the unpainted door", with a lookout (D16).
+- "I saw a room packed with ragged but exuberant fan-tan players." (D17).
+- A prostitute's "cramped 6-by-6-foot room" behind "an unmarked doorway" (D18).
+- An opium lookout's "6-by-7-foot house" "down an alley lined with baskets of
+  bright orange squid" (D19). His den "services 200 customers a day from only
+  five pipes" (D20).
+- "the childcare clinic, founded by a British Quaker and manned two mornings a
+  week by Kentucky-born Dr Jim Turpin" (D21).
+- "In one-room textile factories, old ladies wind bobbins of thread by hand on
+  spinning wheels." (D22).
+- A photo caption: "Gambling is done right out on the street." (D24).
+
+**Other documents.**
+- Police memo of 1955: "1 Theatre which formerly showed Cantonese plays, was
+  then giving 2 performances per day, showing strip-tease acts." (D15).
+- *Hong Kong Standard*, 19 Jan 1963: the headmaster of the Sing Wah Primary
+  School (D25) and "Dr. Lam Fok-sung, an unregistered medical practitioner"
+  (D26).
+- Sale contract, 14 Dec 1960: two self-built stone houses, front and back, at
+  No. 11 Lo Yan Street, "自建石屋前後兩間坐落土名九龍城內老人街門牌拾壹號" (C51).
+- Ko Tim Keung's photos of Tung Tau Tsuen Road: the signs of clinics,
+  dentists and shops in 1963 and 1968. For example "二樓 醫師李志青" (1963), the
+  same clinic as GRS HKRS1255-3-550 (C57), and "龍門醫務所" (1968), the
+  "龍門診所" of about 1990 (C53).
+- GIS photo of 1975: the signs "麗新鑲牙室" (D29) and "郭衛人醫師" (D30) on the
+  14-storey building on Tung Tau Tsuen Road.

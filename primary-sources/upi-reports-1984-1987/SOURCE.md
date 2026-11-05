@@ -79,3 +79,7 @@ https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-do
   satisfied". A shopkeeper says "Even God cannot help us now".
 - China's Foreign Ministry: "Like other parts of Hong Kong the Kowloon Walled
   City is a question left over by history."
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Battenfeld, 18 Dec 1984: P22, P30. Jones, 15 Feb 1987: P14.

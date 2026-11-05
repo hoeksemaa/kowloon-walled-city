@@ -34,3 +34,7 @@ Each photographer took the photo at the city, at the date given.
   Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)" (see
   `../grs-catalogue-kwc/`). The sign in the photo can be the same shop. I
   did not confirm it.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- David Brian's dentist's shop (media 19655): T37, T38.

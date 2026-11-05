@@ -178,3 +178,10 @@ gives a WSJ video GUID for each clip.
   in the open."
 - Hamdani Milas, documentary filmmaker, about the entrances: "They were just
   narrow openings between the shops."
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- The six residents and their fact boxes: T1, T2, T4–T17.
+- Shared with other pages: T2 (SCMP 2013), T6 (HK01 2016, M+ audio guide),
+  T18 and T30 (HK01 2016).
+- The WSJ narration (secondary): T31–T34.

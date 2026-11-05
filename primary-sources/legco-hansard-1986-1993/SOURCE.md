@@ -114,3 +114,7 @@ text layer, so the search covered them. Chinese Hansard is not yet searched.
 - The Director of Audit's report (1993) and the PAC report on the ex gratia
   compensation.
 - Chinese-language Hansard for the same years.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- 3 Dec 1986, the Medicine and Dentistry by Unregistered Persons Bill: P20, P21.

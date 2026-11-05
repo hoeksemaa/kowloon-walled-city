@@ -76,3 +76,7 @@ The record URL is `https://digitalrepository.lib.hku.hk/catalog/<record>`.
 You must have an HKU Libraries login. Other ways to get the same reports:
 the SCMP historical archive (ProQuest), or a library that has the papers on
 microfilm.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Catalogue titles only: P23–P27.

@@ -3,6 +3,92 @@
 An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
 shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
 
+## What the folders hold
+
+- `src/`: the JavaScript of the two pages. The browser loads the modules as they are, with
+  three.js from a CDN. There is no build step.
+  - `src/city/`: **the City** of the definitive 3D structure, frozen on 2026-11-04.
+    `model.js` (buildings, storeys, roofs), `plan.js` (stairs, corridors and units of each
+    floor), `links.js` (doors, bridges, ladders, the route), `mesh.js` (the triangles),
+    `fixes.js` and `choices.js` (they apply the two structure data files), `poly.js`.
+  - `src/surroundings/`: **the surroundings** of the structure. `ground.js` (the terrain,
+    roads, paths, courts and the real buildings of 1986) and `shapes.js` (their solids).
+  - `src/structureViewer.js`: the viewer of `structure.html`.
+  - The other files: the main app of `index.html` (`main.js`, `people.js`, `routes.js`,
+    `planes.js`, `labels.js`, `sound.js`, `game.js`, `style.css` and others). `cityMesh.js`,
+    `floorplan.js`, `facades.js`, `roofs.js` and `interiors.js` are its superseded 3D city.
+    The structure and its viewer also use `layout.js`, `footprint.js`, `context.js`,
+    `terrain.js`, `site.js`, `env.js` (the light) and `util.js`.
+- `data/`: the data that the code reads, mostly JSON.
+  - The plan: `plan.json` (the 1980s street plan, traced on 1 m cells: lanes and 474 plots)
+    and `plan_fine.json` (the same plan on 0.25 m cells, for the outlines of the structure).
+  - The structure: `structure_fixes.json` (corrections to the plan and the towers, each with
+    its source), `structure_choices.json` (the kept random choices) and
+    `structure_frozen.json` (the fingerprint of the frozen structure).
+  - The book and the clearance: `book.json` (facts, pages and short quotes from *City of
+    Darkness Revisited*), `book_overlay.json` (numbers measured on its 1987 plan and 1992
+    map) and `businesses.json` (459 premises from the GRS clearance files).
+  - The room uses: `room_research.json` (771 research facts, each with its source and quote,
+    and the disagreements and leads) and `room_uses.json` (the use of each of the 8,926
+    units, with its basis: verified, likely or guess).
+  - The ground and the surroundings: `terrain.json` (the height of the ground, out to 640 m),
+    `context.json` (the real buildings, roads and open ground of December 1986, out to
+    600 m), `surroundings.json` (streets, dirt paths, courts and fences round the City) and
+    `CONTEXT-NOTICE.md` (the source and licence of the government data).
+- `docs/`: reports in Markdown.
+  - `structure.md`: the definitive 3D structure: the freeze, the fixes, the outlines, the
+    kept choices and the model, with their sources and inferences.
+  - `rooms.md`: how each room got its use: the sources, the method, the categories, the
+    basis, the counts, the disagreements and the leads.
+  - `room_places.md`: a generated table of the 698 documented places and their units, and of
+    the 54 places with no unit.
+  - `plan-book-upgrade.md`: the plan of 2026-10-30 to upgrade the main app with *City of
+    Darkness Revisited*.
+- `tools/`: scripts that build the data and check the model. The top of each file tells what
+  it does and how to run it.
+  - `check_structure.mjs` fails if the frozen structure changes (with
+    `structure_fingerprint.mjs`).
+  - `build_room_uses.mjs` writes `data/room_uses.json` and `docs/room_places.md`.
+  - The builders of the data: `trace_plan.py` (the plan), `parse_grs.py`
+    (`data/businesses.json`), `book_overlay.py` (`data/book_overlay.json`), `context.py`
+    with its input `context_input.json` (`data/context.json`), and `terrain.py`
+    (`data/terrain.json`).
+  - The checks of the main app and its data: `check_layout.mjs`, `check_context.mjs`,
+    `check_game.mjs`, and `check_stack.js` (it runs in the browser).
+- `primary-sources/`: the evidence. One folder for each primary source: a record made at the
+  time, or a first-hand account given later. Each folder has a `SOURCE.md` with the citation,
+  link, licence, why the source is primary, and the key facts with their pages. If facts of
+  `data/room_research.json` come from the source, the `SOURCE.md` also gives their ids.
+  Open-licensed copies (photos, CSVs, HTML) are in git. Copyrighted copies stay in `local/`
+  folders, which git ignores: they are on John's Mac only. `primary-sources/README.md` is the
+  index: a table of the sources, the blocked links, and the leads not yet collected.
+  - `city-of-darkness-revisited/`: Girard and Lambot's book (2014): photos, interviews, the
+    1992 map, old documents and the clearance sheets.
+  - `commons-photos-1972-1993/`: 11 open-licensed photos from Wikimedia Commons, in git.
+  - `daizukai-kowloon-1997/`: 24 room labels of the cutaway panorama of 『大図解 九龍城』
+    (1997). The panorama is a reconstruction, thus each label is a guess.
+  - `grs-catalogue-kwc/`: the Government Records Service catalogue (CSV): the clearance
+    files and the business compensation files.
+  - `gwulo-suddaby-1987/` and `gwulo-other-photos/`: street and shop photos of 1987-88 on
+    Gwulo.
+  - `hk01-kaifong-series-2016/`: five members of the residents' association remember (HK01).
+  - `hku-newspaper-clippings/`: an index of 334 SCMP and *Hong Kong Standard* clippings,
+    1969-97.
+  - `legco-hansard-1986-1993/`: 22 sittings of the Legislative Council that name the City.
+  - `mplus-girard-lambot-photos/`: Girard's and Lambot's photos at M+, 1987-91.
+  - `mplus-suenn-ho-ca17/`: the M+ catalogue of Suenn Ho's field research, 1988-92.
+  - `press-articles-1959-1992/`: TIME (1959) and *Baltimore Sun* (1992) reports.
+  - `retrospective-testimony-web/`: former residents, workers and visitors remember, on the
+    web (2009-2024).
+  - `uk-lords-hansard-1974/`: a House of Lords debate of 1974, with a first-hand account.
+  - `upi-reports-1984-1987/`: UPI wire reports of 1984 and 1987.
+  - `wsj-kwc-2014/`: the WSJ interactive of 2014: residents, rents and the 1983 trade count.
+- The root files: `index.html` (the main app), `structure.html` (the viewer of the
+  definitive 3D structure), `serve.py` (a local server that turns off the browser cache),
+  `CLAUDE.md` (notes for agents), `.gitignore` and `.vercelignore`.
+- Local folders that git does not hold: `.playwright-mcp/` (screenshots and logs of browser
+  sessions), `.claude/` (files of Claude Code) and `.vercel/` (the Vercel project link).
+
 ## The definitive 3D structure
 
 **The 3D structure of `structure.html` is the definitive 3D structure of the City and of the

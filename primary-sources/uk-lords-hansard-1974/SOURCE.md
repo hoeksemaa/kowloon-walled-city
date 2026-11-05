@@ -54,3 +54,7 @@ Column numbers are the printed Hansard columns.
   standpipes for street cleaning, "daily chlorination of wells" and public
   latrines. In 1973 the government "started to clear the sensitive areas on
   the fringe".
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Lord Kennet: P28. Lord Goronwy-Roberts: P29.

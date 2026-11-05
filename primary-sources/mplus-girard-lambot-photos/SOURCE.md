@@ -61,3 +61,7 @@ eda043f8968473ac0e50324382ee41bba8961a13a6744c99b9d683a7c8ea1f9e  mplus-20183_00
 f23bb2c768a9274f216efcb292f7541bfa19efe3d600212d0a5010250be4fefa  mplus-20184_008349_003.jpg
 03f980193f20f27e84bc8309fe7d895411da1fe139377f47f312fefbbd2d09f1  mplus-20184.html
 ```
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Greg Girard, "Tung Tau Tsuen Road facade" (1987), M+ 2018.4: the signs T39–T44.

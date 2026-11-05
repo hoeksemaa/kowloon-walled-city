@@ -1,8 +1,10 @@
 # Former residents and officials remember the city (retrospective, 2009–2024)
 
-Thirteen free web pages. In each, a person who lived or worked in the city,
-or went into it, tells what they saw. All are retrospective: the person speaks
-years after the demolition. One item (Posner) quotes a book of 1988.
+Thirteen free web pages of 2026-10-29, and seven more from the room research
+of 2026-11-05 (see "Added 2026-11-05" below). In each, a person who lived or
+worked in the city, or went into it, tells what they saw. All are
+retrospective: the person speaks years after the demolition. One item
+(Posner) quotes a book of 1988.
 
 - **Link:** https://www.hk01.com/社區專題/1033066/
 - **Retrieved:** 2026-10-29. The first five files are the HTML as served, from
@@ -260,3 +262,116 @@ post quotes chapter 10, "White Powder Ma".
   Rats' Piss."
 - The post says "The Walled City was torn down in 1992". That is wrong: the
   demolition was 1993–94.
+
+## Room facts in `data/room_research.json` (pages above)
+
+- 林羅平, HK01 2024: T26, T27, T28.
+- Jackie Pullinger, HK01 2024: T35, T36.
+- "阿榮", HK01 2016: T58, T59.
+- SCMP 2018 (Lau Chun-fat, Vivian Chan, the police officers): T47–T51.
+- SCMP 2013 (Albert Ng, Yip Tak-wai): T2, T3, T55, T56.
+- bkshopr_IHB, Talk Irvine 2009: T52–T54.
+
+## Added 2026-11-05: pages from the room research
+
+Seven more free pages. The agents of the room research (2026-11-05) read
+six of them. I opened these six again on 2026-11-05 and checked the titles,
+the dates and the speakers. One (陳文龍) is behind a bot check: its facts come
+from search-result extracts only. I did not save any of these pages.
+
+| Page | Who | Recorded | Copyright | Fact ids |
+|---|---|---|---|---|
+| 明周文化 (Ming Pao Weekly), 梁伊琪, 【九龍城寨】黑暗之外 城寨人真實記憶…, 13 Jun 2024. https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 | Charles, born in the City in 1959, and his wife Maggie; 平哥 (林羅平), the fishball maker of HK01 2024 above, and his wife May姐 | retrospective (2024) | © One Media Group | Z1–Z6, Z21 |
+| 大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024. https://hk.epochtimes.com/news/2024-05-05/28556552 | 袁家倫, a painter who came from the mainland in the 1970s and rented a flat in the City. An extract of her memoir 《火鳳凰》 (白象文化, 2020) | retrospective (2020 book, posted 2024) | © the writer; reprinted with leave of 大紀元時報. No © line on the page | Z7 |
+| Beijing Visitor, Christopher KL Lau, "Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng". Undated. https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city | Albert Ng Kam-po, in the City from the mid- or late 1970s to 1988 | retrospective (after 2013) | © Beijing Tourist Info | W2–W5 |
+| The Travel Club, John Carney, "Kowloon Walled City: life in the City of Darkness", 3 Jan 2015. https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness | Heung Yin-king and Ida Shum, former residents (and Albert Ng). The page says that its text and photos "are taken from www.scmp.com": SCMP article 1191748 (2013), which is blocked | retrospective (2013) | © The Travel Club; the text © SCMP | W8, W9 |
+| Comment by Sharon McAuley, 11 Feb 2020, on Hugh Farmer, "Kowloon Walled City 2 – manufacturing", The Industrial History of Hong Kong Group, 16 May 2018. https://industrialhistoryhk.org/kowloon-walled-city-2 | Sharon McAuley, who went into the City several times in 1970 with her aunt, an expatriate nurse | retrospective (2020) | © The Industrial History of Hong Kong Group, and the commenter | W10–W12 |
+| Shue Yan Newsletter (HKSYU), kyyan, "Love Your Neighbour: Jacqueline PULLINGER's selfless dedication in Hong Kong's forgotten corners", 29 Nov 2024 (January 2025 issue). https://newsletter.hksyu.edu/en/?p=11542 | Jackie Pullinger, in the City from 1966 | retrospective (2024) | © Hong Kong Shue Yan University | W13 |
+| The News Lens, 陳文龍, 我的城寨童年回憶（上）and（下）, about 2018. https://www.thenewslens.com/article/98485 and /98486 (also /98591, /98607; a copy at https://crossing.cw.com.tw/article/18963) | 陳文龍, who grew up in the City. Publisher 久石文化 | retrospective (about 2018) | © The News Lens and the writer | Z8–Z10 |
+
+**Not added.** Hugh Farmer's article itself retells *City of Darkness*, thus
+it is secondary (W6, W7). Only the comment below it is first-hand.
+
+### Key facts
+
+**Charles and 平哥 (明周 2024).**
+- Charles's childhood home: a two-storey tin hut, "在城寨出世時住的是鐵皮屋，只有兩層樓高".
+  The family of seven rented the upper floor, 400-odd sq ft. Drug users sat on
+  the stair: "有條樓梯直上二樓，以前的『道友』（吸毒者）就蹲在樓梯一邊吸毒" (Z2).
+- As a young man he put in water and power in the homes and workshops:
+  "到城寨的住宅、工場裏安裝水電". He was almost killed by a bare wire once.
+- After his marriage: a fifth-floor flat with no windows, "他們婚後住的五樓「後座」單位全屋都沒有窗"
+  (Z1). The couple moved out in about 1985.
+- As a child he hid outside a cinema to watch the strip shows,
+  "也躲在戲院外偷看艷舞表演" (Z21; 1960s–1970s).
+- 平哥 (林羅平): his shop, 德興魚蛋公司, was on Kwong Ming Street. "店舖所在的「光明街」有好幾間魚蛋工場，除此之外還有豬紅、黐膠花和製衣工場等等"
+  [Kwong Ming Street had several fishball workshops, and also pig-blood,
+  plastic-flower gluing and garment workshops] (Z3–Z6).
+- Power between neighbours: "譬如樓上突然間沒有電，便扔個插頭下來，我們就借電給他用。"
+- Rent: "我講兩句潮州話，（業主）就立刻便宜二百元租金！"
+- The reporter (not a resident) writes that only eight standpipes gave
+  drinking water: "提供可作食用水的街喉僅有八個".
+
+**袁家倫 (大紀元 2024).**
+- "我看到九龍城寨十三樓一套房子，一廳三房，有廁有廚房" [a 13/F flat: a hall,
+  three rooms, toilet and kitchen] (Z7). "我住的是十三樓，是頂樓。" She shared
+  it with a colleague, Mr Li.
+- No lift and no telephone: "可是卻沒有電梯，沒有電話".
+- Water: "每天下午三點鐘才有水供應" [water came only from 3 pm each day].
+- The roof: "可以上天臺做運動" [the roof was open to her for exercise].
+- The page does not give her years in the City.
+
+**Albert Ng (Beijing Visitor).** He left in 1988 for the University of Hong
+Kong. WSJ gives his flat as 7/F, 8 Sz Kung St (see `../wsj-kwc-2014/`).
+- "I used to live in a one bedroom flat and it used to be about 200 square
+  feet." The bedroom was for his mother and his younger sister.
+- "I lived on the eighth floor and there was no elevator." (W2). In English
+  usage the eighth floor can be 7/F, thus it agrees with WSJ.
+- "The top floor was the thirteenth floor and there was no water and no
+  elevator."
+- "The wall was always wet and mouldy and it used to smell really, really bad."
+- Water: "the supply was half an hour per week and there were times when there
+  was no water for months". Every day the family went to the public water
+  stations.
+- "My mother's family had a store which sold rice, oil and necessities." (W4,
+  no place given).
+- On "Bright Light Street" (光明街, Kwong Ming Street) "there were lots of drug
+  dens and people used candles to light up the tables" (W5).
+- "the roof top was the only place to play". A dropped ball meant a run "from
+  the eight floor all the way to the third floor" (W3).
+
+**Heung Yin-king and Ida Shum (SCMP 2013, via The Travel Club).** The Heung
+family of six moved into the City in the 1960s.
+- First home: "a 70 sq ft room in a two-storey house near Tung Tau Chuen
+  Road" (W8). "We ate from a board laid over the knitting machine and sat on
+  the bed."
+- Second home: "a two-bedroom flat on the fourth floor of a high-rise on Tai
+  Cheng Street" (W9), that is Tai Chang Street. "The second house was all
+  right but had no taps, so as the eldest daughter I had the responsibility of
+  hauling buckets of water from the public taps".
+- Ida Shum, 62 at the time of the article: "We all had very good
+  relationships in very bad conditions."
+
+**Sharon McAuley (comment, 2020).** "I visited KWC several times in 1970 with
+my expat aunt." All her facts are of 1970, outside the period.
+- "The expats ran a small clinic within KWC where some mothers with newborns
+  would bring them to be weighed" (W10). They gave out donated baby clothes and
+  rosehip drops.
+- A Chinese primary-school teacher's classroom. "There was a small room near
+  the classroom with a pile of plastic toy components" (W11, W12). "I was
+  informed by the teacher that the children worked there after school."
+
+**Jackie Pullinger (HKSYU 2024).** Her memories are of the late 1960s, outside
+the period.
+- "There was no water, not many people had electricity, and sewers were just
+  opened. There were more rats than people".
+- "One little school I was used to help in – charging $4 a month, many
+  students just couldn't afford it." (W13).
+
+**陳文龍 (The News Lens, about 2018).** Search-result extracts only. Read the
+full pages before you use these facts.
+- His family rented a 2/F home on Lung Chun Road near the corner of Lo Yan
+  Street: "一家曾租了龍津道近老人街街口二樓的房子" (Z8).
+- A café at the corner of Tung Ching Road and Lung Chun Road, with a telephone
+  at its door: "一間冰室，位於東正道和龍津道的交接處，門口掛了一支電話" (Z9).
+- A rice-roll factory on Lung Shing Road: "龍城路上有一間腸粉廠，蒸氣緲緲，工人把米漿倒在一塊發黃的布上" (Z10).

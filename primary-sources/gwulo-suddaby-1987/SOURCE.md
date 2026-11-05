@@ -74,3 +74,7 @@ dentist part is a family memory. Use it as a lead for the street plan.
 - 22838: "I think that the hill in the background might be Middle Hill, or
   possibly it's Diamond Hill. The fortune tellers had their stalls very close
   to this spot." Gwulo also tags this photo with Tung Tau Estate.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Gwulo 22835: T45. Gwulo 22836: T39 (with the M+ Girard photo). Gwulo 22837 and 22838: T46.

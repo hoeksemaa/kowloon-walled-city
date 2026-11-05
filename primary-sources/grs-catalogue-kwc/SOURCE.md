@@ -101,3 +101,10 @@ include:
 | HKRS1496-1-29 | RTHK 鏗鏘集 "城寨", episode 70 | 2 Dec 1979 | TV film. Scope note: "經常停水電, 污水, 垃圾問題". Copies need RTHK approval |
 | HKRS1500-1-3 | RTHK Weekly Magazine, "九龍城寨", episode 1 | 23 Mar 1985 | TV film. Scope note: "城寨內的環境" |
 | HKRS2292-1-10 | RTHK *All About Us*, episode 22, "Report on Kowloon Walled City" | 20 Dec 1988 | TV film |
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- File titles of HKRS1255-3, HKRS1255-2, HKRS1078-1 and HKRS1077-2: G1–G190.
+- 54 of these facts correct an entry of `data/businesses.json` (the field
+  `corrects`). `grs_fixes` lists GRS premises that are the same room as
+  another place, or are outside the period.

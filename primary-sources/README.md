@@ -24,6 +24,8 @@ are not primary. Do not put them here.
   re-encode them. If a host gives only a derived file, say so in `SOURCE.md`.
 - Before a commit, run `git status --ignored primary-sources` and make sure
   that no `local/` file is staged.
+- If facts in `data/room_research.json` come from a source, its `SOURCE.md`
+  ends with their ids (section "Room facts").
 
 ## Sources
 
@@ -41,9 +43,10 @@ are not primary. Do not put them here.
 | [`grs-catalogue-kwc/`](grs-catalogue-kwc/SOURCE.md) | GRS catalogue: 692 business compensation files with address, floor and trade; 87 clearance files; 274 search results | 1963–1997 | yes (catalogue only) | https://search.grs.gov.hk/en/search.xhtml?q=%22Kowloon+Walled+City%22 |
 | [`hku-newspaper-clippings/`](hku-newspaper-clippings/SOURCE.md) | Index of 334 SCMP and *Hong Kong Standard* clippings (HKU login to read them) | 1969–1997 | yes (index only) | https://digitalrepository.lib.hku.hk/hkclippings?q=%22walled+city%22 |
 | [`press-articles-1959-1992/`](press-articles-1959-1992/SOURCE.md) | Free press reports from inside the city: TIME (1959), *Baltimore Sun* (1992) | 7 Sep 1959, 30 Jun 1992 | no (© publishers) | https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ |
-| [`retrospective-testimony-web/`](retrospective-testimony-web/SOURCE.md) | Former residents, workers and visitors remember: fishball maker, childhoods, water and power, police, Jackie Pullinger, Girard and Lambot, a tailor next door, Posner's 1987 visit | retrospective (2009–2024) | no (© publishers) | https://www.hk01.com/社區專題/1033066/ |
+| [`retrospective-testimony-web/`](retrospective-testimony-web/SOURCE.md) | Former residents, workers and visitors remember: fishball maker, childhoods, water and power, police, Jackie Pullinger, Girard and Lambot, a tailor next door, Posner's 1987 visit. Added 2026-11-05: Charles and 平哥 (明周), 袁家倫's 13/F flat, Albert Ng, the Heung family (SCMP 2013, from a copy), a 1970 baby clinic, 陳文龍 (search extracts only) | retrospective (2009–2024) | no (© publishers) | https://www.hk01.com/社區專題/1033066/ |
 | [`hk01-kaifong-series-2016/`](hk01-kaifong-series-2016/SOURCE.md) | HK01 series: five members of the residents' association on homes, water, power, fire, deeds and the survey day of 14 Jan 1987 | retrospective (2016) | no (© HK01) | https://www.hk01.com/article/39194 |
 | [`wsj-kwc-2014/`](wsj-kwc-2014/SOURCE.md) | WSJ interactive: six residents and workers with address, floor, years, rent; more quotes; the Kai Fong Association trade count of 1983 | retrospective (2014) | no (© Dow Jones) | https://web.archive.org/web/20161228012123/http://projects.wsj.com/kwc/ |
+| [`daizukai-kowloon-1997/`](daizukai-kowloon-1997/SOURCE.md) | 『大図解 九龍城』 (Iwanami 1997): 24 room labels of its cutaway panorama, read on rioleo.org. The team's survey of the empty City is primary; the panorama is a reconstruction, thus every label is a guess | survey Jan–Feb 1993; book 1997 | no (© the artist, Iwanami Shoten) | https://www.rioleo.org/kowloon/ |
 
 ## Blocked: links for John to look at
 
@@ -57,7 +60,7 @@ can decide what to download.
 | FCO 40/790 "Kowloon Walled City and aircraft safety" (1977) | Height limits; 6 standpipes for 27,000 people | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0642-FCO40-790-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1977 |
 | FCO 40/980, same subject (1978) | Height limits | Cloudflare bot check | https://hkintexts.histsyn.com/series/histsyn-fco40-engine/items/TNAG-0776-FCO40-980-Kowloon-Walled-City-and-aircraft-safety-in-Hong-Kong-1978 |
 | UK Hansard search for "Kowloon", 1980–1994 | Commons and Lords items on the clearance. A search for "walled city" finds York and Chester (checked 2026-10-29) | Cloudflare bot check | https://hansard.parliament.uk/search/Contributions?searchTerm=Kowloon&startDate=1980-01-01&endDate=1994-12-31 |
-| The News Lens, article 98591 | 陳文龍 writes about his childhood in the city, with friends who lived there | Cloudflare block (403) | https://www.thenewslens.com/article/98591 |
+| The News Lens, articles 98485, 98486, 98591, 98607 | 陳文龍 writes about his childhood in the city: the family's homes on Lung Chun Road, a café, a rice-roll factory, the youth centre. Facts Z8–Z10 rest on search extracts only (see `retrospective-testimony-web/`). A copy at https://crossing.cw.com.tw/article/18963 is also blocked | Cloudflare block (403), again on 2026-11-05 | https://www.thenewslens.com/article/98485 |
 | Asia Society, "Life in Kowloon Walled City" | Interview with Albert Ng, a former resident (see `wsj-kwc-2014/`). No Wayback copy of this URL | Cloudflare bot check | https://asiasociety.org/node/17291 |
 | Kai Tak traffic figures, 1986–87, on hkintexts | Search extracts give 64,874 aircraft movements in 1986 and 73,643 in 1987 (Appendix 37), and a curfew "between midnight and 6.30 am" (undated). Not checked | Cloudflare bot check | https://hkintexts.histsyn.com/page/1731971 (also pages 1388492, 1392360, 965582) |
 | Library of Congress, Paul Rudolph slide | Photo, 1960–1980 | "Publication may be restricted" | https://www.loc.gov/item/2010648314/ |
@@ -72,10 +75,10 @@ can decide what to download.
 | NewspaperSG: *Straits Times*, 2 Jul 1992 and other issues | "Last of HK Walled City residents evicted" | page needs JavaScript | https://eresources.nlb.gov.sg/newspapers/digitised/issue/straitstimes19920702-1 |
 | *Washington Post*, 22 Sep 1983 and 29 Nov 1991 | Reports from the city and from the first evictions | 403 to scripts | https://www.washingtonpost.com/archive/politics/1991/11/29/hong-kong-begins-effort-to-clear-walled-city-slum/8a714cb8-5413-4f46-bb9c-5d73e827d311/ |
 | SCMP reports, 1993–94 | "Walled City protest ends" and others (article ids 16808, 54450, 58392, 27691, 52237, 23347). Wayback copies of SCMP pages work: `retrospective-testimony-web/` uses two | 403 to scripts | https://www.scmp.com/article/16808/walled-city-protest-ends |
-| Hong Kong Heritage Project, oral history I200, LAW Hoi-cheung 羅開祥 (2008) | Lived in the city from 1952 to the clearance; kaifong secretary. Retrospective (2008) | 403 to scripts | https://www.hongkongheritage.org/nodes/view/22115 |
-| Patrick Zachmann, "Walled City of Hong Kong", *Granta* 29 | Photos and text from 1987–88 | 403 to scripts | https://granta.com/walled-city-of-hong-kong |
+| Hong Kong Heritage Project, oral history I200, LAW Hoi-cheung 羅開祥 (2008) | Lived in the city from 1952 to the clearance; kaifong secretary. Retrospective (2008). Also node 22246 (not checked) | 403 to scripts, again on 2026-11-05 | https://www.hongkongheritage.org/nodes/view/22115 |
+| Patrick Zachmann, "Walled City of Hong Kong", *Granta* 29 | Photos and text from 1987–88 | 403 to scripts; Wayback offline (503) on 2026-11-05 | https://granta.com/walled-city-of-hong-kong |
 | Plane-spotter photos at Kai Tak | Views of the roofs from the approach to runway 13 | bot gates (airliners.net, jetphotos) | https://www.airliners.net/photo-albums/view/Kai-Tak-Landings/16154 |
-| Wayback copy of "Internet 九龍城砦" (1997) | Web exhibit of the Japanese team's February 1993 survey drawings | Wayback 429 | https://web.archive.org/web/1997/http://www.flex.co.jp/kowloon/ |
+| Wayback copy of "Internet 九龍城砦" (1997) | Web exhibit of the Japanese team's February 1993 survey drawings (see `daizukai-kowloon-1997/`) | live site 404; Wayback 429, and 503 on 2026-11-05 | https://web.archive.org/web/1997/http://www.flex.co.jp/kowloon/ |
 
 The LA Times, NYT, AP, Chicago Tribune, Guardian and Independent block this
 tool's crawler. A library database (ProQuest, NewsBank) gives access to their
@@ -116,13 +119,12 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
   in March 1987, after four months (see `wsj-kwc-2014/`). Ask M+.
 - HK Yellow Pages 1980s–1992 and the 1981 and 1986 census street-block tables:
   business addresses and households by block. Physical, at HK libraries.
-- Terasawa Kazumi 寺澤一美 (drawings) and Kani Hiroaki 可児弘明 (editor),
-  『大図解 九龍城』 (Iwanami Shoten, 10 Jul 1997, ISBN 9784000080705). It is the
-  large cutaway panorama of the city. A Japanese team (九龍城探検隊) surveyed
-  the city before the demolition. The drawing is a reconstruction, so it is
-  primary only for what the team recorded. One review says the team's photos
-  show interiors that were almost empty, thus after the clearance. Buy a used
-  copy. https://www.kinokuniya.co.jp/f/dsg-01-9784000080705
+- 『大図解 九龍城』 (Iwanami Shoten, 1997), drawings by 寺澤一美 Terasawa Hitomi:
+  see `daizukai-kowloon-1997/`. The web shows only panorama pages 5–6 and
+  11–12. The rest of the book, with the room plans of the team's survey, is
+  print only. One review says the team's photos show interiors that were
+  almost empty, thus after the clearance. Buy a used copy.
+  https://www.kinokuniya.co.jp/f/dsg-01-9784000080705
 - Michael Chiang, "The Development of the Kowloon Walled City", student
   thesis, HKU School of Architecture, 1979–80. Known only from the JRASHKB
   1987 reference list. No copy online found yet.
@@ -184,15 +186,64 @@ tool's crawler. A library database (ProQuest, NewsBank) gives access to their
 - Gerald Posner, *Warlords of Crime* (1988), chapter 10, "White Powder Ma". A
   visit of 1987 with a police escort. Only an extract is collected.
 - SCMP, 23 Mar 2018, "How the dark legacy of the Kowloon Walled City lives on
-  in modern-day Hong Kong" (article 2138468), and SCMP 2013, article 1191748.
-  Not yet read. Try Wayback copies.
+  in modern-day Hong Kong" (article 2138468). Not yet read. Try a Wayback
+  copy. The text of SCMP 2013, article 1191748, is in a copy on The Travel
+  Club (see `retrospective-testimony-web/`). The SCMP page itself is blocked.
 - 李昇敏 "敏叔", a former resident who guides visitors in Kowloon Walled City
   Park (named in HK01, 20 Jul 2024). A possible new interview.
 - 中華書局, 《九龍寨城》 (2026), sample PDF with chapters on Kai Tak and on
-  community networks. Not yet checked for testimony:
+  community networks. It cites 《城寨福利會訊》 of Feb 1987 and a 1978 Urban
+  Services Department document. Not yet checked for testimony:
   https://www.chunghwabook.com.hk/upload/files/2026/07_09/8961d31fc1bbfcc1dbd8f8cb3e13d50a.pdf
 
 **Secondary works with useful references**
 - Lai, Chua and Chua, "The History of Planning for Kowloon City", *Planning
   Perspectives* 33:1 (2018), 97–112. Read its references for government
   planning records. https://doi.org/10.1080/02665433.2017.1331751
+
+## Leads from the room research (2026-11-05)
+
+The two sweeps of the room research (2026-11-04 and 2026-11-05) did not get
+these sources: each one is blocked, print only or offline. `data/room_research.json` (`leads`) gives the full notes.
+This list does not repeat the leads in the tables above (Granta 29, The News
+Lens, the Hong Kong Heritage Project, flex.co.jp).
+
+**Blocked on the web**
+- Magnum, Patrick Zachmann's 1987 photos, with captions such as "Atelier de tissage": 403. https://pro.magnumphotos.com/Package/2TYRYD1A3SGY
+- SCMP 1191748 (2013), the original of the Heung Yin-king testimony: Cloudflare; Wayback offline. https://www.scmp.com/news/hong-kong/article/1191748/kowloon-walled-city-life-city-darkness
+- SCMP 2127786 ("When the death knell sounded for Kowloon Walled City"), 355483 ("Shady deals colour walled city's past"), 617754 ("Hallowed halls and tainted walls", a school beside the City) and 296184: Cloudflare. Search the ids on scmp.com.
+- WSJ interactive, "life" chapter: the captions of Suenn Ho's clips ("Visit a factory", "Candy factory", "Look at a well"). Wayback 503. https://web.archive.org/web/2016id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life
+- cityofdarkness.co.uk, old posts (?p=560 "A Clinic for Heroin", ?p=1228 "A Policeman's Story", ?p=791 "Government Interventions", and others): 404; Wayback offline. Probably the book's interviews.
+- Blue Lotus Gallery, Girard's photo titles ("Cafe, Tung Tau Tsuen Road, 1989", "Dentist's Window, 1989", "Barbecued Meat Factory"): pages 404 or built by JavaScript. https://bluelotus-gallery.com/greg-girard-1/city-of-darkness
+- *Tatler Hong Kong*, Oct 2019, "If these walls could talk", with Girard and Lambot: 403. https://www.pressreader.com/china/tatler-hong-kong/20191001/283738430946918
+- Blacksmith Books, 2021, Fiona Hawthorne on her drawings of the City: 403. https://blacksmithbooks.com/2021/08/an-artist-reveals-what-life-was-like-inside-the-legendary-walled-city-of-kowloon
+- Gale Primary Sources (Colonial Office papers, newspapers), shown at a CUHK workshop on 16 Jan 2025: login only. https://www.lib.cuhk.edu.hk/tc/about/events/ls-workshop-20250116-kowloon-walled-city/
+- M+ collection: no keyword search, and Ryuji Miyamoto's 9 objects have generic titles only. The guide https://mplus.libguides.com/kowloon-walled-city is 404.
+- A Japanese post on the City: it redirects to a Hatena login. https://reibun.hateblo.jp/entry/2019/07/19/232614
+- 立場新聞 and 蘋果日報 retrospectives: both sites are closed, and the Internet Archive was offline (503) on 2026-11-05.
+
+**Print, archives and photo collections**
+- 《城寨福利會訊》, the Kai Fong newsletter, Feb 1987: primary. Not found online. 中華書局 (2026) cites it.
+- *City of Darkness* (1993), pp172 and 178: photos of the Tung Tau Tsuen Road facade with about 22 named signs (Z22–Z38). The photos can give the floors. A blog of 2005 (secondary) lists the names: https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html
+- 『九龍城探訪 完全版』 (2026), the Japanese edition of *City of Darkness Revisited*, ed. 吉田一郎: new maps and resident interviews. Print only.
+- Jackie Pullinger, *Chasing the Dragon* (1980): her youth club and the school where she taught. No free text found; archive.org was offline.
+- UK National Archives CO 1030/394 (police report, Mar 1953) and CO 1030/934 (Savingram, 11 Mar 1955): the Lung Kung theatre, the 16 strip-tease theatres, dog-meat shops and divans of 1952–55. Lambot quotes them (CoDR p273). Not found online.
+- GRS HKRS1078-1-53, "Hsin On Centre of the Hong Kong and Macau Lutheran Church" (1987–1992): can give the address of the chapel on CoDR p252. Not digitised. https://search.grs.gov.hk/en/arcview.xhtml?eid=Kt4AVzZhTddf1jxuRF2XuQ%3D%3D
+- *Sing Pao Daily News* photo archive, 1987–94 (CoDR pp337–347): street photos with readable shop and clinic signs. Not online.
+- Ko Tim Keung's photo collection (Tung Tau Tsuen Road, 1962–72): larger prints can show more signs. Not online.
+- HK Government Information Services photo library: the 1975 photo of the 14-storey building on Tung Tau Tsuen Road (CoDR p336). A large copy can show the building and more signs.
+- SCMP, 1993, on the landlord Chang Kat Kong (HK$34.6m for about 100 flats; an air-conditioner repair shop), quoted in CoDR p344. Paywall.
+- Suenn Ho, 1992 Fulbright study (M+ CA17): the full drawings of "factories and other non-residential units by level" and the plan of each level. CoDR shows only small copies.
+- Survey and Mapping Office map of 1968: a full-size copy gives every lot number and label. The copy in CoDR (pp126–127) is small.
+- Girard and Lambot's negatives or the M+ prints: the address lines on the clinic signs of CoDR p8 are too small in the book.
+- Fiona Hawthorne's 1986 sketches: CoDR (p210) shows two of "dozens".
+- *City of Darkness Revisited* pp84–85: missing from the scan.
+- Hong Kong Yearbook 1970 (1970 年香港年鑑): addresses of dentists, for example 黃景志 at 25 Tung Tau Tsuen Rd. A Gwulo caption cites it (W1). https://gwulo.com/media/44692
+
+**Secondary works (leads only, not sources)**
+- 喬健等 (1992), pp1020–1034: a study of the residents, with the Kai Fong survey of 745 premises (1983). Print only.
+- 魯金《九龍城寨史話》(1988), pp104–133: the places street by street, for example the big well at 8 Tai Chang St. Print only.
+- Stephen CP Wu, "Healers in the maze", *Hong Kong Medical Journal* 2026: a survey of 72 unregistered doctors. Cloudflare. https://www.hkmj.org/node/11992 (PDF: https://www.hkmj.org/system/files/hkmj-SA202606.pdf)
+- Wu Chun Pong, "Drilling on the edge: the unregistered dentists in post-war Kowloon Walled City", HKU MA thesis, 2025: 403. https://hub.hku.hk/handle/10722/366214
+- "Kowloon Walled City Revisited: Photography and Postcoloniality", University of Michigan, with Girard's photo titles: 403. https://quod.lib.umich.edu/t/tap/7977573.0006.202
+- University of Waterloo study of the links between buildings (Tramontini, Dalla-Ali, Dai, Glebe; a Vimeo talk), in CoDR pp121 and 140. No link found.
