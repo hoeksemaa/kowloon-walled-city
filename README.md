@@ -21,10 +21,17 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     `style.css`. The structure, the viewer and the main app also use `layout.js`,
     `footprint.js`, `floorplan.js`, `context.js`, `residents.js`, `terrain.js`, `site.js`,
     `env.js` (the light) and `util.js`.
-  - Not loaded now: the people, the labels and the game of the main app (`people.js`,
+  - The life of the main app, on the structure: `src/life/`. `nav.js` finds the ways through
+    the route graph of the structure (A* with landmarks); `population.js` makes the people of
+    the week (28,200 residents and about 4,800 day workers, pp339-340, the services of the
+    Government, and the real people of `data/routines.json`); `routines.js` plans the day of
+    each person; `sim.js` moves them; `figures.js` draws them (instanced); `personPanel.js`
+    gives the panel of a person. `furnish.js` puts the things of `data/furnishings.json` in
+    the rooms and on the roofs (instanced, one mesh for each kind).
+  - Not loaded now: the old people, labels and game of the main app (`people.js`,
     `routes.js`, `crowd.js`, `figures.js`, `game.js`, `labels.js`, `occlude.js`, `useMap.js`,
-    `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app, and wait
-    to move onto the structure (see "Not yet on the structure" below).
+    `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app (see "Not
+    yet on the structure" below).
 - `data/`: the data that the code reads, mostly JSON.
   - The plan: `plan.json` (the 1980s street plan, traced on 1 m cells: lanes and 474 plots)
     and `plan_fine.json` (the same plan on 0.25 m cells, for the outlines of the structure).
@@ -194,14 +201,32 @@ deleted.
 The "Sources + notes" panel (`src/notes.js`) lists what the structure takes from each source,
 and what it infers.
 
+### The people and the things
+
+The main app shows the people of the week of 16 to 22 December 1986 (`src/life/`). The crowd
+follows the counts of the sources: 28,200 residents (City of Darkness Revisited, p340) and
+about 4,800 people who came in to work (p339). The crowd has no names, because no source
+names these people; their roles, homes, workplaces and hours are INFERRED. The 120 real
+people of `data/routines.json` have names, stories and days from the sources: each hour of
+their day says if it is sourced or inferred. Click a person to see their day, and FOLLOW
+them: the City peels to their storey when they go in.
+
+The rooms and the roofs hold the things of `data/furnishings.json` (`docs/furnishings.md`):
+the recipe of each kind of room comes from the photos and the texts of the sources, and a
+documented room has its own list. Where each thing stands is INFERRED. The things show where
+the floors show (pulled apart, or the peeled storey), and the small things show only near
+the camera. Click a thing to see what it is and its source; the panel of a room lists its
+things and the people in it now.
+
 ### Not yet on the structure
 
 These parts sat on the old 3D city of the main app. They come back when they move onto the
 structure. Until then the main app does not load them. Their code stays in `src/`, except
 the lit windows of the night, which must be made again:
 
-- the people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
-  `figures.js`), the pigeons (`figures.js`) and the game Find them 尋人 (`game.js`);
+- the old people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
+  `figures.js`) and the game Find them 尋人 (`game.js`): the people of `src/life/` replace
+  them;
 - the street names, the numbers of the 1992 map and the road names (`labels.js`,
   `occlude.js`, `roadRuns` in `context.js`);
 - the floor-use legend of a cut storey (`useMap.js`), and the ghosts of the real buildings

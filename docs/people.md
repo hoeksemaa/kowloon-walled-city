@@ -4,7 +4,7 @@ This file is made by `node tools/build_people.mjs` from `data/people.json`. Do n
 
 Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. The people of the GRS clearance files (政府檔案處, HKRS1255-3) come from the catalogue entries of the files: their stories give only what the catalogue gives. A check on 2026-11-05 compared each of the 230 quotes with its source: each press quote with the saved text of its article, each book quote with an OCR of the cited page scan, and each GRS quote with the research facts. All match. People sweep 2 (2026-11-06) added people from the press, books, archives and the Chinese media: each quote was checked by machine against its web page or a saved copy, and each quote of the 2014 book against the OCR of the cited page. A source that failed the check was dropped. details gives one fact per item, with the index of its source in sources; inferred marks the researcher's inference. related links the people of one family or workplace. lived_or_worked tells if the person lived in the City, worked there, or both. leads lists the people that the sources name but do not yet prove.
 
-183 people. In the City in December 1986, as their sources show: 44; not then: 20; not known: 119. Life details from the sources: 351.
+186 people. In the City in December 1986, as their sources show: 44; not then: 20; not known: 122. Life details from the sources: 361.
 
 | Person | Who | In the City | Dec 1986 | Rooms in the model |
 | --- | --- | --- | --- | --- |
@@ -105,6 +105,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 | [Mak Yue Kong (麥汝剛)](#mak-yue-kong) | dental technician | named in a clearance file dated 1992 | not known | 251:0:0 (G/F, Mak Yue Kong Dental Techician) |
 | [Mak Yue Kwan (麥汝鋆)](#mak-yue-kwan) | dentist | named in a clearance file dated 1992 | not known | 168:0:0 (G/F, 麥汝鋆牙科) |
 | [Maureen Clarke](#maureen-clarke) | missionary, child care | from 1959 (she set up the Child Care Centre); the end year is not given | not known | 78:2:0 (2/F, Child Care Centre (1968 lot 28)) |
+| [Mok Chung Yuk](#mok-chung-yuk) | power company engineer | worked in the City for China Light and Power in the late 1970s and early 1980s; he did not live there | not known | 129:0:2 (G/F, China Light & Power transformer room in church premises) |
 | [Mr Hui (許先生)](#mr-hui-flat-owner) | restaurant worker, flat owner | from the 1980s to the clearance (1993) | not known |  |
 | [Mr Lau (劉先生)](#mr-lau) | resident from age six | from age 6 (about 1949) to the clearance, at age 47 (HK01) | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
 | [Mr Shum](#mr-shum) | won tun pastry maker | worked in the City at the time of the photographs (c.1990); the book gives no years | not known | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
@@ -125,6 +126,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 | [Sin Kwai](#sin-kwai) | heroin divan manager | worked in the City until his murder in 1959 | no |  |
 | [Siu Ping Lung (蕭秉隆)](#siu-ping-lung) | dentist | named in a clearance file dated 1992-1993 | not known | 2:0:4 (G/F, 蕭秉隆牙科) |
 | [Siu Ping Sing (蕭秉陞)](#siu-ping-sing) | dentist | named in a clearance file dated 1991-1992 | not known | 2:0:0 (G/F, 蕭秉陞牙科) |
+| [Tam Sau-kuen (譚秀娟)](#tam-sau-kuen) | housewife | years not given | not known |  |
 | [Tam Yiu Hung](#tam-yiu-hung) | dentist | business files of 1994 | not known |  |
 | [The dentist of 凌生牙科](#ling-dentist) | dentist | about 1987-1988 (a photo) | not known | 254:0:4 (G/F, Ling Sang Dentistry (probably Cheng Ling Sang Dentistry)) |
 | [The landlord of the Lung Tsun Back Street heroin factory](#heroin-factory-landlord-1982) | landlord, drug assistant | April 1982 (a police raid) | not known |  |
@@ -179,6 +181,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 | [芬姐](#store-keepers-daughter-hk01) | store keeper's daughter | from her childhood; inside on 14 Jan 1987; moved out at the clearance (HK01) | yes |  |
 | [莊澄](#chong-ching) | boy, later film producer | almost four years of his childhood, until he was 7 | no |  |
 | [莊裕宏](#grs-g144) | dog-room (狗房) keeper | named in a clearance file dated 1988-1990 | not known | 244:7:2 (7/F, 莊裕宏狗房) |
+| [袁家倫](#painter-epochtimes-2024) | painter, top-floor tenant | years not given; the writer left Hong Kong in 1992 | not known |  |
 | [鄭炎創](#grs-g143) | garment workshop claimant | named in a clearance file dated 1988-1990 | not known | 32:4:3 (4/F, 鄭炎創) |
 | [阿平](#toy-factory-summer-boy) | summer factory boy | four summers in the 1970s, from Primary 4 to the summer of Form 1; the factory left in 1979 | no |  |
 | [阿平's aunt (伯娘)](#toy-factory-aunt) | plastic-toy factory owner | the 1970s, until 1979 | no |  |
@@ -1632,6 +1635,29 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Sources:
   1. City of Darkness Revisited (Girard and Lambot, 2014), text, p263: "Missionary work had been pioneered in the City during the late 1950s and early '60s by indefatigable foreign women such as Maureen Clarke, who set up the Child Care Centre in 1959, and Mrs Donnithorne, the wife of Hong Kong's archdeacon and the person who first introduced Jackie Pullinger to the Walled City and her life's work."
 
+## Mok Chung Yuk
+
+<a id="mok-chung-yuk"></a>**power company engineer.** Mok Chung Yuk worked for China Light and Power (中華電力) from the mid-1960s. In the late 1970s and early 1980s he was one of its engineers for the regulated supply of electricity in the Walled City. He did some of the very first surveys. At first the team dressed down, so that it did not look like an official team. The company brought its cable in from the outside, inch by inch. It rented about 250 square feet from the church in the City for a transformer, and in return it renovated the church's school. Permission for more substations came in 1984, and the work took three years. He declined to be photographed.
+
+- Work: the electricity supply of the City; the transformer room in the church premises (p100)
+- In the City: worked in the City for China Light and Power in the late 1970s and early 1980s; he did not live there (worked)
+- Rooms in the model (building:floor:unit): 129:0:2 (G/F, China Light & Power transformer room in church premises)
+- Life details:
+  - The first time he went in, he edged in a short way and then turned back. [5]
+  - Only when the team knew the streets and alleys did it bring out its maps and plans. [6]
+  - China Light and Power rented about 250 sq ft from the church in the City for a transformer, and renovated the church's school in return. [7]
+  - The substations took three years from 1984. By then the Government had announced the clearance. [8]
+  - (inferred) Whether he himself came into the City in December 1986 is not known. [8]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), introduction, p98: "An employee of China Light and Power since the mid-1960s, Mok Chung Yuk was one of the company's engineers responsible for the regulated installation of electricity within the Walled City during the late '70s and early '80s."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), introduction, p98: "He declined to be photographed."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p99: "I carried out some of the very first surveys."
+  4. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p99: "We all dressed down at first, and we were very careful not to enter looking like an official team."
+  5. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p99: "I remember well the first time I went in - edging in a short way then turning back!"
+  6. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p99: "Only when we were familiar with the streets and alleys did we bring out our maps and plans."
+  7. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p100: "We finally managed to persuade the church in the City to rent us around 250 square feet on condition we renovated their school."
+  8. City of Darkness Revisited (Girard and Lambot, 2014), interview with Mok Chung Yuk, p100: "they eventually gave us permission in 1984. It took us three years to set up the stations, by which time they had announced they were going to tear the place down!"
+
 ## Mr Hui (許先生)
 
 <a id="mr-hui-flat-owner"></a>**restaurant worker, flat owner.** Mr Hui (許先生) and a friend bought a flat of about 200 sq ft in the City in the 1980s, for more than HK$140,000. The friend lived with him. He worked in a restaurant (酒樓). At the clearance the two men took cash compensation, not a public flat, because the friend wanted the money and the restaurant gave Mr Hui a dormitory. They got HK$150,000 and divided it. Later he was a security guard and a gardener, then homeless. In 2023, aged 74, he applied for a judicial review: the Housing Authority had refused him public housing four times because of the Walled City compensation.
@@ -1914,6 +1940,17 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Rooms in the model (building:floor:unit): 2:0:0 (G/F, 蕭秉陞牙科)
 - Sources:
   1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-547: "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)"
+
+## Tam Sau-kuen (譚秀娟)
+
+<a id="tam-sau-kuen"></a>**housewife.** Tam Sau-kuen (譚秀娟) was a housewife in the Walled City. The Wall Street Journal (2014) quotes her about water. The City had no water supply for 24 hours a day. At any hour, even in the night, the sound of dripping water woke her. Then at once she did the housework, such as the laundry and the dishes. As a child she knew the area on Tai Chang Street (大井街) where the sex workers stayed. She said that it was dark 24 hours a day. The source does not give her years in the City or her address.
+
+- In the City: years not given (lived)
+- Life details:
+  - At the sound of dripping water, even at night, she got up at once to do the laundry and the dishes. [1]
+- Sources:
+  1. [WSJ 2014, Life chapter](https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life): "There was no 24-hour water supply in Kowloon Walled City… No matter what time it was, even while we were sleeping at night, when we heard the sound of water dripping, we would immediately wake up and do the housework such as laundry and washing the dishes."
+  2. [WSJ 2014, Life chapter](https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life): "The area where they stayed was dark 24 hours a day."
 
 ## Tam Yiu Hung
 
@@ -2677,6 +2714,27 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Rooms in the model (building:floor:unit): 244:7:2 (7/F, 莊裕宏狗房)
 - Sources:
   1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-66: "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)"
+
+## 袁家倫
+
+<a id="painter-epochtimes-2024"></a>**painter, top-floor tenant.** 袁家倫 was a painter who came to Hong Kong from the mainland in the 1970s. In the Walled City, 袁家倫 rented a flat on the 13th floor, the top floor, and shared it with a colleague, Mr Li. The flat had a hall, three rooms, a toilet and a kitchen. The building had no lift and no telephone. Water came only from 3 pm each day, but a small bucket could take water from the tank on the roof. The flat shared one toilet, and often people queued for it. It also shared one kitchen, with one kerosene stove for each family. The roof was a place for exercise. The source does not give the years in the City. 袁家倫 left Hong Kong in 1992 and wrote the memoir 《火鳳凰》 (2020).
+
+- Home: a flat on the 13th floor, the top floor, of a building that the source does not name
+- In the City: years not given; the writer left Hong Kong in 1992 (lived)
+- Life details:
+  - The flat was on the 13th floor, the top floor: a hall, three rooms, a toilet and a kitchen. [1]
+  - Water came only from 3 pm each day. [4]
+  - A small bucket could take water from the roof tank at any hour. [5]
+  - Each family had one kerosene stove in the shared kitchen; the rice cookers stood in the rooms. [7]
+- Sources:
+  1. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "我看到九龍城寨十三樓一套房子，一廳三房，有廁有廚房"
+  2. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "我住的是十三樓，是頂樓。"
+  3. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "可是卻沒有電梯，沒有電話"
+  4. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "這裡每天下午三點鐘才有水供應"
+  5. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "也可以用小水桶到水箱打水用，不受制水的限制。"
+  6. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "全屋共用一個洗手間，經常有人在排隊。"
+  7. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "全屋共用一個廚房，每家只能放一個火水爐用來炒菜，電飯鍋就放在各人的房間。"
+  8. [大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024](https://hk.epochtimes.com/news/2024-05-05/28556552): "可以上天臺做運動"
 
 ## 鄭炎創
 

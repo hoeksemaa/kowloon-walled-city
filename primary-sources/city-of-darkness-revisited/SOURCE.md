@@ -86,7 +86,7 @@ Type: E = essay, I = interview, F = feature (photos with captions or commentary)
 | 98 | The Electricity Supply: Mok Chung Yuk, China Light and Power engineer | I | 1987–1992 | yes |
 | 104 | Refuse Collection | F | unclear | photos |
 | 106 | The Water Supply | F | unclear | photos |
-| 112 | Chu Yiu Shan (朱耀山), private water supplier | I | 1987–1992 | yes |
+| 112 | Chu Yiu Shan (朱耀山), property developer and estate agent (p112: photo and caption of Chan Shing, a private water supplier; interview p113) | I | 1987–1992 | yes |
 | 116 | James Saywell, "The Architecture of a Mini City" | E | 2014 | no; the photos, documents and plans of 1949–1992 are |
 | 144 | Lam Po Chun (林寶鎮), postman | I | 2014 | retrospective |
 | 153 | Lam Shu Chuen, Kai Fong officer | I | 1987–1992 (standfirst 2014) | yes |

@@ -263,7 +263,8 @@ export class CityLayers {
   setSelected(b) { this.U.uSel.value = b >= 0 ? b : NO_ID; }
   setHover(b) { this.U.uHi.value = b >= 0 ? b : NO_ID; }
 
-  // What is under the screen point (x, y) of a w x h view: { b, k, kind } or null. A real
+  // What is under the screen point (x, y) of a w x h view: { b, k, kind } for a part of a
+  // building, { person, k, kind } for a figure (src/life/figures.js, kind 8), or null. A real
   // building or the ground in front stops the pick.
   pick(renderer, camera, x, y, w, h) {
     for (const lv of this.layers) {
@@ -281,19 +282,22 @@ export class CityLayers {
     renderer.setClearColor(cc, ca);
     camera.clearViewOffset();
     renderer.readRenderTargetPixels(this.pickRT, 0, 0, 1, 1, this.px);
-    const id = this.px[0] + this.px[1] * 256 - 1;
-    if (id < 0 || id >= this.S.list.length) return null;
-    return { b: id, k: this.px[2] % 16, kind: this.px[2] >> 4 };
+    const id = this.px[0] + this.px[1] * 256 - 1, kind = this.px[2] >> 4, k = this.px[2] % 16;
+    if (id < 0) return null;
+    if (kind === 8) return { person: id, k, kind };
+    if (id >= this.S.list.length) return null;
+    return { b: id, k, kind };
   }
 
   // The point on the floor of storey k of building b under a ray, in the model (not lifted).
-  floorPoint(ray, b, k) {
-    const B = this.S.list[b], y = B.y[k] + this.lift[k] * this.spread;
+  floorPoint(ray, b, k, h = 0) {
+    const B = this.S.list[b], y = B.y[k] + h + this.lift[k] * this.spread;
     if (Math.abs(ray.direction.y) < 1e-6) return null;
     const t = (y - ray.origin.y) / ray.direction.y;
     return t > 0 ? { x: ray.origin.x + ray.direction.x * t, z: ray.origin.z + ray.direction.z * t } : null;
   }
 
+  // (h: metres over the floor.)
   // The room (unit) of storey k of building b at the point p: the plan cell under it, else the
   // nearest unit within 3 m. On the roof (k = n): the roof room, if the building has one.
   roomAt(b, k, p) {

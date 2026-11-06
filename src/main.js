@@ -3,8 +3,9 @@
 // it; docs/structure.md). The City is drawn as floor layers (cityLayers.js): the tool E pulls
 // the floors apart, and the storey rail peels the City to one storey. A click on a building
 // gives its facts and the uses of its rooms in December 1986 (data/room_uses.json).
-// The people, the street names, the numbers of the 1992 map and the game Find them sat on the
-// old city of the main app. They come back when they move onto this structure.
+// The people of the week walk on the structure (src/life/): the real people of data/people.json
+// with their days (data/routines.json), and an anonymous crowd that follows the counts of the
+// sources. A click on a person gives their day; a real person also their story and sources.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
@@ -17,13 +18,19 @@ import { KIND } from './city/mesh.js';
 import { buildGround } from './surroundings/ground.js';
 import { cityColors, groundColors } from './structureColors.js';
 import { CityLayers } from './cityLayers.js';
-import { RoomUses } from './roomUses.js';
+import { RoomUses, esc } from './roomUses.js';
 import { panelHtml, buildingTip, roomTip, placesByBuilding } from './buildingPanel.js';
 import { notesHtml } from './notes.js';
 import { Lighting } from './env.js';
 import { Post } from './post.js';
 import { Planes } from './planes.js';
 import { clamp, fmtClock } from './util.js';
+import { Nav } from './life/nav.js';
+import { buildPopulation } from './life/population.js';
+import { Life } from './life/sim.js';
+import { Figures } from './life/figures.js';
+import { Furnish, ITEM_KIND, thingsHtml } from './life/furnish.js';
+import { personHtml, personTip } from './life/personPanel.js';
 
 const START_MINUTE = 9 * 60 + 45;
 // The speeds of the clock: pause, then one, two and three arrows.
@@ -69,14 +76,16 @@ const TARGET_Y = 28; // about the middle of the roofs, in mPD
 // explode: the floors apart, 0 to 1 (eased toward explodeTarget); peel: the storey that the
 // City is peeled to, -1 for none; sel: the selected building, -1 for none, with its room
 // (selRoom: { k, u } or null); hover: the building under the pointer.
-const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: SPEEDS[1], lastSpeed: SPEEDS[1], sel: -1, selRoom: null, hover: -1, dark: false };
+// person: the selected person, -1 for none; follow: the view follows them.
+const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: SPEEDS[1], lastSpeed: SPEEDS[1], sel: -1, selRoom: null, hover: -1, dark: false, person: -1, follow: false };
 // The clock of the week: day 0 is Tuesday 16 December 1986.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
+let pop, life, figures, furnish;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses'];
+  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings'];
   const D = Object.fromEntries(await Promise.all(names.map((n) => fetch(`./data/${n}.json`).then((r) => r.json()).then((j) => [n, j]))));
   // the structure, as the structure viewer builds it (structureViewer.js): the corrections of
   // data/structure_fixes.json on the fine plan, and the kept random choices
@@ -96,6 +105,15 @@ async function init() {
   const ground = buildGround(T, D.context, cityGround(S), D.surroundings, groundColors);
   scene.add(ground.group);
   layers.addOccluders([ground.terrain, ground.context]);
+  // the things in the rooms and on the roofs (data/furnishings.json)
+  furnish = new Furnish(S, uses, D.furnishings, layers);
+  scene.add(furnish.group);
+  // the people of the week
+  const nav = new Nav(S);
+  pop = buildPopulation(S, uses, nav, D.routines, D.people);
+  life = new Life(S, uses, pop, { nav });
+  figures = new Figures(life, layers);
+  scene.add(figures.mesh);
   lighting = new Lighting(scene, new THREE.Vector3(0, 20, 0), site);
   planes = new Planes(scene);
 
@@ -107,7 +125,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding };
+  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding, selectPerson, life, figures, pop, furnish };
   requestAnimationFrame(frame);
 }
 
@@ -146,22 +164,55 @@ function setPeel(c) {
 }
 
 // Select building b, or none with -1; room: { k, u } of a room in it, or null.
-function selectBuilding(b, room = null) {
+function selectBuilding(b, room = null, thing = null) {
   state.sel = b;
   state.selRoom = b >= 0 ? room : null;
+  state.thing = thing;
   layers.setSelected(b);
+  if (b >= 0) selectPerson(-1, false);
   renderPanel();
+}
+
+// Select person i, or none with -1.
+function selectPerson(i, render = true) {
+  state.person = i;
+  state.follow = false;
+  state.autoPeel = false;
+  figures.select(i);
+  if (i >= 0 && state.sel >= 0) { state.sel = -1; state.selRoom = null; layers.setSelected(-1); }
+  if (render) renderPanel();
 }
 
 function renderPanel() {
   const el = $('bld');
-  el.hidden = state.sel < 0;
+  const person = state.person >= 0;
+  el.hidden = state.sel < 0 && !person;
   if (el.hidden) { delete el.dataset.id; return; }
-  const body = $('bld-body'), top = body.scrollTop, same = el.dataset.id === String(state.sel);
-  body.innerHTML = panelHtml(S, uses, places, state.sel, state.peel, state.selRoom);
+  const id = person ? `p${state.person}` : String(state.sel);
+  const body = $('bld-body'), top = body.scrollTop, same = el.dataset.id === id;
+  $('bld-head').textContent = person ? 'SELECTED PERSON' : 'SELECTED BUILDING';
+  body.innerHTML = person ? personHtml({ life, S, uses, pop, follow: state.follow }, state.person)
+    : panelHtml(S, uses, places, state.sel, state.peel, state.selRoom?.roof ? null : state.selRoom, roomExtra());
   body.scrollTop = same ? top : 0;
-  el.dataset.id = state.sel;
+  el.dataset.id = id;
   placePanel();
+}
+
+// The things and the people of the selected room (or roof) for its panel.
+function roomExtra() {
+  const R = state.selRoom;
+  if (!R) return '';
+  const B = S.list[state.sel], key = R.roof ? `roof:${B.id}` : `${B.id}:${R.k}:${R.u}`;
+  let html = R.roof ? `<h3>THE ROOF OF ${esc(B.label).toUpperCase()}</h3>` : '';
+  html += thingsHtml(furnish, key, state.thing, esc);
+  const here = [];
+  for (let i = 0; i < life.N; i++) { const s = life.state[i]; if (!s.trip && s.cur && s.cur.key === key) here.push(i); }
+  if (here.length) {
+    html += `<h3>WHO IS HERE NOW (${here.length})</h3>`;
+    for (const i of here.slice(0, 8)) html += `<button class="who" data-person="${i}">${personTip(life, i)}</button>`;
+    if (here.length > 8) html += `<div class="sub">and ${here.length - 8} more</div>`;
+  }
+  return html;
 }
 
 // The panel goes at the foot of the screen, right of the clock; on a narrow screen, above the
@@ -191,8 +242,14 @@ const mouse = { x: -1, y: -1, moved: false, inside: false };
 // shows from above (pulled apart, or the peeled storey), { k, u }.
 function pickAt() {
   const hit = layers.pick(renderer, camera, mouse.x, mouse.y, innerWidth, innerHeight);
-  if (!hit) return null;
+  if (!hit || hit.person !== undefined) return hit;
   const B = S.list[hit.b];
+  if (hit.kind === ITEM_KIND) {
+    raycaster.setFromCamera(ndc, camera);
+    const t = furnish.pick(layers, raycaster.ray, hit.b, hit.k);
+    if (t) { hit.thing = t.thing; hit.thingKey = t.key; if (t.room) hit.room = t.room; }
+    return hit;
+  }
   const open = state.explode > 0.01 || hit.k === state.peel;
   const onFloor = hit.kind === KIND.FLOOR || hit.kind === KIND.PART || hit.kind === KIND.STAIR || (hit.kind === KIND.WALL && hit.k === state.peel);
   if (open && onFloor && hit.k < B.n) {
@@ -207,11 +264,16 @@ function updateHover() {
   if (!mouse.inside) return;
   mouse.moved = false;
   const hit = pickAt();
-  state.hover = hit ? hit.b : -1;
+  state.hover = hit && hit.b !== undefined ? hit.b : -1;
   layers.setHover(state.hover);
   if (!hit) { hideTooltip(); return; }
-  const click = `<div class="tt-s">${hit.b === state.sel ? 'click to deselect the building' : 'click to select the building and see its floors'}</div>`;
-  showTooltip((hit.room ? roomTip(S, uses, hit.b, hit.room) : buildingTip(S, hit.b)) + click);
+  if (hit.person !== undefined) {
+    showTooltip(`${personTip(life, hit.person)}<div class="tt-s">${hit.person === state.person ? 'click to let go of this person' : 'click to see their day'}</div>`);
+    return;
+  }
+  const click = `<div class="tt-s">${hit.b === state.sel && !hit.room ? 'click to deselect the building' : hit.room ? 'click to see the room' : 'click to select the building and see its floors'}</div>`;
+  const thing = hit.thing ? `<div class="tt-r">${esc(furnish.describe(hit.thing).label)}</div>` : '';
+  showTooltip(thing + (hit.room ? roomTip(S, uses, hit.b, hit.room) : buildingTip(S, hit.b)) + click);
 }
 
 function showTooltip(html) {
@@ -237,8 +299,11 @@ function buildUI() {
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
   // The panel of the selected building: the x deselects it, and a storey peels the City there.
-  $('bld-close').onclick = () => selectBuilding(-1);
+  $('bld-close').onclick = () => { selectBuilding(-1); selectPerson(-1); };
   $('bld-body').addEventListener('click', (ev) => {
+    if (ev.target.closest && ev.target.closest('[data-follow]')) { state.follow = !state.follow; renderPanel(); return; }
+    const who = ev.target.closest && ev.target.closest('[data-person]');
+    if (who) { selectPerson(+who.dataset.person); return; }
     const el = ev.target.closest && ev.target.closest('[data-k]');
     if (el) setPeel(+el.dataset.k === state.peel ? -1 : +el.dataset.k);
   });
@@ -256,7 +321,7 @@ function buildUI() {
   };
   drawDay();
   $('clk-stats').innerHTML = `<b>${S.list.length}</b> buildings · <b>${S.unitNode.size.toLocaleString()}</b> rooms and flats · <b>${S.doors.length.toLocaleString()}</b> doors and links`
-    + '<br>The people of the week come back later, on this structure.';
+    + `<br><b>${pop.persons.length.toLocaleString()}</b> people of the week: ${pop.persons.filter((p) => p.kind === 'real').length} of them real people of the sources`;
 
   buildRail();
   renderRail();
@@ -275,9 +340,10 @@ function buildUI() {
     if (!down || ev.button !== 0 || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 4) return;
     pointAt(ev); // a tap has no move before it
     const hit = pickAt();
-    if (!hit) selectBuilding(-1);
+    if (hit && hit.person !== undefined) selectPerson(hit.person === state.person ? -1 : hit.person);
+    else if (!hit) { selectBuilding(-1); selectPerson(-1); }
     else if (hit.b === state.sel && !hit.room) selectBuilding(-1);
-    else selectBuilding(hit.b, hit.room || null);
+    else selectBuilding(hit.b, hit.room || (hit.thingKey?.startsWith('roof:') ? { k: S.list[hit.b].n, roof: true } : null), hit.thing || null);
   });
   // A mouse click on a button does not keep the keyboard focus on it, thus Space then runs or
   // stops the clock and does not press the button again.
@@ -295,6 +361,7 @@ function buildUI() {
       // the first Esc closes the sources panel if it is open, or else lets go of the selected
       // building; the next one takes the peel away
       if (!$('sources').hidden) $('sources').hidden = true;
+      else if (state.person >= 0) selectPerson(-1);
       else if (state.sel >= 0) selectBuilding(-1);
       else setPeel(-1);
     } else if (k === ' ') { ev.preventDefault(); setSpeed(state.speed ? 0 : state.lastSpeed); }
@@ -386,7 +453,7 @@ function resize() {
 }
 
 // ---- loop -------------------------------------------------------------------------------------------
-let last = performance.now(), frameN = 0, clockT = 0;
+let last = performance.now(), frameN = 0, clockT = 0, personT = 0;
 function frame(now) {
   const dt = Math.min(0.1, (now - last) / 1000);
   last = now;
@@ -412,6 +479,27 @@ function frame(now) {
     document.documentElement.style.setProperty('--title-ink', dark ? '#e9e1cf' : '#1c1b19');
     document.documentElement.style.setProperty('--title-ink-2', dark ? '#b9b2a2' : '#3f3b34');
   }
+
+  // the people: where each one is at this minute
+  life.update(clock.day % 7, clock.minute, 4);
+  figures.update(now / 1000);
+  furnish.update((camera.top - camera.bottom) / camera.zoom / innerHeight);
+  if (state.person >= 0 && state.follow) {
+    const h = figures.head(state.person);
+    if (h) {
+      const d = h.sub(controls.target).multiplyScalar(1 - Math.exp(-dt * 4));
+      controls.target.add(d); camera.position.add(d);
+    }
+    // Inside a building the view peels the City to the person's storey, and lets go of the
+    // peel when they come out to the lanes or the roofs.
+    const i = state.person, k = Math.round(life.misc[i * 4 + 1]), inside = life.misc[i * 4 + 3] === 1;
+    if (state.explode < 0.5) {
+      if (inside && state.peel !== k) { state.autoPeel = true; setPeel(k); }
+      else if (!inside && state.autoPeel && state.peel >= 0) { state.autoPeel = false; setPeel(-1); }
+    }
+  }
+  personT += dt;
+  if ((state.person >= 0 && personT > 0.5) || (state.selRoom && personT > 2)) { personT = 0; renderPanel(); }
 
   controls.update();
   camera.updateMatrixWorld();

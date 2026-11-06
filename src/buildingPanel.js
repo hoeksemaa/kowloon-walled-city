@@ -69,8 +69,9 @@ function roomHtml(S, uses, B, { k, u }) {
 }
 
 // The panel of building b. peel: the storey that the City is peeled to (-1 for none); room:
-// { k, u } of the selected room, or null.
-export function panelHtml(S, uses, places, b, peel, room) {
+// { k, u } of the selected room, or null; roomExtra: more HTML for the room (the things and
+// the people in it, src/life/).
+export function panelHtml(S, uses, places, b, peel, room, roomExtra = '') {
   const B = S.list[b];
   const stairs = B.stairs.map((s) => `${s.type === 'dogleg' ? 'dog-leg' : s.rmax > 0.2 ? 'steep straight' : 'straight'}${s.spine ? ' + corridor' : ''}`).join(', ')
     || (B.wingOf !== undefined ? `the stair of building ${B.wingOf}` : 'none');
@@ -79,7 +80,7 @@ export function panelHtml(S, uses, places, b, peel, room) {
   const links = Object.entries(lc).map(([q, n]) => `${n} ${q}`).join(', ') || 'none';
   let html = `<div class="nm">${esc(B.label)}</div>
     <div class="sub">${B.n} storey${B.n > 1 ? 's' : ''} · building no. ${B.id} of the structure</div>
-    ${room ? roomHtml(S, uses, B, room) : ''}
+    ${room ? roomHtml(S, uses, B, room) : ''}${roomExtra}
     <h3>BUILDING</h3>
     <div class="r bl"><span class="k">storeys from</span><span>${storeysFrom(B)}</span></div>
     <div class="r bl"><span class="k">heights</span><span>G/F floor ${fmt(B.g0)} mPD · roof ${fmt(B.top)} mPD</span></div>

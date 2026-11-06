@@ -1,0 +1,318 @@
+// The people of the week on the structure: where each one is at each minute, and the walk
+// between two places on the routes of the structure (nav.js). The day of each person comes
+// from routines.js; the people from population.js.
+//
+// A person at a place stands, sits or lies at a spot of it: a cell of the room (unit), of the
+// roof, or of the lane. Between two places the person walks the route: down the stairs, along
+// the corridors and the lanes, over the bridges and the roofs. A person who is out of the City
+// walks out at the edge of the plan and is not drawn.
+import { Nav, WALK, CLIMB } from './nav.js';
+import { planDay, OUT } from './routines.js';
+import { mulberry32 } from '../util.js';
+
+// The node kinds of nav.js that are open to the sky (drawn always); the others are inside.
+const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofedge
+export const POSE = { stand: 0, sit: 1, lie: 2, walk: 3 };
+const SIT = /breakfast|lunch|dinner|supper|tea|TV|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|inking|accounts|drawing|map|music|playing cards|meeting|patients|cutting hair/i;
+const DOING = {
+  plastics: 'at the plastics workshop', metal: 'at the metal workshop', garment: 'at the garment workshop',
+  foodfac: 'at the food workshop', works: 'at the workshop', shop: 'in the shop', eating: 'at the eating house',
+  office: 'at the office', storage: 'at the store room', services: 'at work', dentist: 'at the dental clinic',
+  clinic: 'at the clinic', medicine: 'at the herbalist’s shop', school: 'at the school', religion: 'at the mission',
+  community: 'at the association', vice: 'at work',
+};
+const KEEP = {
+  shop: 'minding the shop', eating: 'running the eating house', office: 'at the office', medicine: 'minding the herbalist’s shop',
+  dentist: 'seeing patients at the dental clinic', clinic: 'seeing patients at the clinic', services: 'at work', storage: 'at the store room',
+};
+
+export class Life {
+  constructor(S, uses, pop, opts = {}) {
+    this.S = S;
+    this.nav = opts.nav || new Nav(S);
+    const nav = this.nav, L = S.L;
+    this.persons = pop.persons;
+    const N = (this.N = this.persons.length);
+    this.pos = new Float32Array(N * 3);
+    this.misc = new Float32Array(N * 4); // heading, layer, pose, flags (1 inside, 2 hidden)
+    this.state = this.persons.map(() => ({ ev: null, ei: -1, cur: null, spot: null, trip: null, wait: null, next: null }));
+    this.outTree = nav.tree(nav.exits);
+    this.cache = new Map();
+    this.queue = [];
+    this.day = -1;
+    this.lastW = -Infinity;
+    this.unitCache = new Map();
+
+    // ---- the places of the routines ----
+    const placeOf = (key) => {
+      if (key.startsWith('roof:')) { const b = +key.slice(5), node = nav.roof(b); return node >= 0 ? { kind: 'roof', node, b, k: S.list[b].n, key } : null; }
+      const [b, k, u] = key.split(':').map(Number), node = nav.unit(b, k, u);
+      return node >= 0 ? { kind: 'unit', node, b, k, u, key, cat: uses.get(b, k, u)?.cat } : null;
+    };
+    this.placeOf = placeOf;
+    const P = (key) => placeOf(key);
+    const units = (f) => [...uses.at].filter(([, r]) => f(r)).map(([key]) => P(key)).filter(Boolean);
+    const standpipe = P('216:0:1');
+    if (standpipe) { standpipe.tree = 'standpipe'; this.standTree = nav.tree([standpipe.node]); }
+    const places = {
+      standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'),
+      eating: units((r) => r.cat === 'eating'),
+      clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
+    };
+    const homes = pop.homes;
+    // The lanes inside the City, for the beats, the sweepers and the walkers.
+    const lanes = [];
+    for (let k = 0; k < L.N; k++) if (S.laneNode[k] >= 0 && L.inside[k]) lanes.push(S.laneNode[k]);
+    const roofs = S.list.filter((b) => nav.roof(b.id) >= 0).map((b) => b.id);
+    const roofFor = new Map();
+    const findRoof = (b) => {
+      if (b === undefined || b === null) return null;
+      if (roofFor.has(b)) return roofFor.get(b);
+      const B = S.list[b];
+      let best = nav.roof(b) >= 0 ? b : -1, bd = 25;
+      if (best < 0) for (const c of roofs) { const d = Math.hypot(S.list[c].cx - B.cx, S.list[c].cz - B.cz); if (d < bd) { bd = d; best = c; } }
+      const out = best >= 0 ? P(`roof:${best}`) : null;
+      roofFor.set(b, out);
+      return out;
+    };
+    // The roofs that join (ladders and steps, links.js): for the postman's way over the roofs.
+    this.roofAdj = new Map();
+    for (const d of S.doors) if (d.kind === 'ladder' || d.kind === 'step') {
+      for (const [a, c] of [[d.b, d.c], [d.c, d.b]]) { if (!this.roofAdj.has(a)) this.roofAdj.set(a, []); this.roofAdj.get(a).push(c); }
+    }
+    const lys = S.list.filter((b) => /Lo Yan Street/.test(b.label) && b.n > 1).map((b) => b.id);
+    const side = S.list.filter((b) => /Kwong Ming|Tai Chang|Sai Shing|Lung Chun|Tung Tau Tsuen/.test(b.label) && b.n > 5).map((b) => b.id);
+    this.X = {
+      places, place: P, roofFor: findRoof,
+      laneSpot: (r) => ({ kind: 'lane', node: lanes[Math.floor(r() * lanes.length)] }),
+      anyRoof: (r) => P(`roof:${roofs[Math.floor(r() * roofs.length)]}`),
+      anyHome: (r) => homes[Math.floor(r() * homes.length)],
+      workDoing: (w, keeper) => (w ? (keeper && KEEP[w.cat]) || DOING[w.cat] || 'at work' : 'at work'),
+      // The postman's round (pp145-146): the store on Lo Yan Street (老人街), the entrances along
+      // the street, letters on the 4/F or 5/F of buildings in the side alleys, then up one stair,
+      // over the roofs by ladders and windows, and down another. The stops are INFERRED.
+      postRound: (p, t0, t1, at, r, w) => {
+        const store = p.places?.store || P('45:0:2');
+        const g = (b) => { const B = S.list[b], us = B.phaseOf(0).plan.units; return us.length ? P(`${b}:0:${us[Math.floor(r() * us.length)].id}`) : null; };
+        const up = (b) => { const B = S.list[b], k = Math.min(B.n - 1, 4 + Math.floor(r() * 2)), us = B.phaseOf(k).plan.units; return us.length ? P(`${b}:${k}:${us[Math.floor(r() * us.length)].id}`) : null; };
+        const stops = [[store, 'with the mail at the store on Lo Yan Street (p146)']];
+        const L1 = [...lys].sort(() => r() - 0.5).slice(0, 7);
+        for (const b of L1) stops.push([g(b), 'filling the letter boxes in the entrance']);
+        for (let q = 0; q < 5 && side.length; q++) {
+          const b = side[Math.floor(r() * side.length)];
+          stops.push([g(b), 'filling the letter boxes in the entrance']);
+          stops.push([up(b), 'a letter for a resident on 4/F or 5/F (p146)']);
+          if (q === 1 || q === 3) {
+            let c = b;
+            for (let h = 0; h < 3; h++) {
+              const roof = P(`roof:${c}`);
+              if (roof) stops.push([roof, 'crossing the roofs by ladders and windows (pp145–146)']);
+              const nx = this.roofAdj.get(c);
+              if (!nx || !nx.length) break;
+              c = nx[Math.floor(r() * nx.length)];
+            }
+            stops.push([g(c), 'down another stair to the lanes (p146)']);
+          }
+        }
+        let t = t0;
+        for (const [pl, what] of stops) { if (t >= t1 - 5) break; if (pl) { at(t, pl, what, w); t += 8 + r() * 7; } }
+      },
+    };
+  }
+
+  // The unit object of a place, with its cells.
+  unitOf(pl) {
+    const key = pl.key;
+    let u = this.unitCache.get(key);
+    if (u === undefined) {
+      const B = this.S.list[pl.b];
+      u = pl.k < B.n ? { plan: B.phaseOf(pl.k).plan, unit: B.phaseOf(pl.k).plan.units.find((x) => x.id === pl.u) } : null;
+      this.unitCache.set(key, u);
+    }
+    return u;
+  }
+
+  // The spot of person i at place pl: [x, y, z, layer, inside].
+  spot(i, pl) {
+    const nav = this.nav, r = mulberry32((i * 7919 + (pl.node || 0) * 31) >>> 0);
+    if (pl.kind === 'out') return null;
+    const n = pl.node, base = [nav.x[n], nav.y[n], nav.z[n], nav.layer[n], OPEN_KIND.has(nav.kind[n]) ? 0 : 1];
+    if (pl.kind === 'unit') {
+      const U = this.unitOf(pl);
+      if (U && U.unit && U.unit.cells.length) {
+        const c = U.unit.cells[Math.floor(r() * U.unit.cells.length)], R = U.plan.R;
+        const [x, z] = R.xz(c % R.ni, Math.floor(c / R.ni));
+        return [x + (r() - 0.5) * 0.2, base[1], z + (r() - 0.5) * 0.2, base[3], 1];
+      }
+      return base;
+    }
+    if (pl.kind === 'roof') {
+      const B = this.S.list[pl.b], plan = B.phaseOf(B.n - 1).plan, R = plan.R;
+      for (let t = 0; t < 8; t++) {
+        const x = base[0] + (r() - 0.5) * 7, z = base[2] + (r() - 0.5) * 7, c = R.cellXZ(x, z);
+        if (c >= 0 && R.inside[c]) return [x, B.top, z, B.n, 0];
+      }
+      return [base[0], B.top, base[2], B.n, 0];
+    }
+    return [base[0] + (r() - 0.5) * 0.6, base[1], base[2] + (r() - 0.5) * 0.6, base[3], 0];
+  }
+
+  // The route between two places, as node ids, or undefined (not yet found) or null (none).
+  routeOf(a, b, now) {
+    const nav = this.nav;
+    if (b.kind === 'out') return a.kind === 'out' ? null : nav.follow(this.outTree, a.node);
+    if (a.kind === 'out') return nav.follow(this.outTree, b.node, true);
+    if (a.node === b.node) return Int32Array.of(a.node);
+    if (b.tree === 'standpipe') return nav.follow(this.standTree, a.node);
+    if (a.tree === 'standpipe') return nav.follow(this.standTree, b.node, true);
+    const key = `${a.node}>${b.node}`;
+    let p = this.cache.get(key);
+    if (p !== undefined) return p;
+    const back = this.cache.get(`${b.node}>${a.node}`);
+    if (back !== undefined) return back && back.slice().reverse();
+    if (!now) return undefined;
+    p = nav.route(a.node, b.node);
+    this.cache.set(key, p);
+    return p;
+  }
+
+  // A walk: the points of the route from spot sa to spot sb, with the time of each.
+  trip(i, path, sa, sb, t0) {
+    const nav = this.nav, n = path.length + (sa ? 1 : 0) + (sb ? 1 : 0);
+    const pts = new Float32Array(n * 3), lay = new Uint8Array(n), ins = new Uint8Array(n), T = new Float32Array(n);
+    let q = 0;
+    const put = (x, y, z, l, inside) => { pts[q * 3] = x; pts[q * 3 + 1] = y; pts[q * 3 + 2] = z; lay[q] = l; ins[q] = inside; q++; };
+    if (sa) put(...sa);
+    for (const v of path) put(nav.x[v], nav.y[v], nav.z[v], nav.layer[v], OPEN_KIND.has(nav.kind[v]) ? 0 : 1);
+    if (sb) put(...sb);
+    for (let j = 1; j < n; j++) {
+      const dx = pts[j * 3] - pts[j * 3 - 3], dy = pts[j * 3 + 1] - pts[j * 3 - 2], dz = pts[j * 3 + 2] - pts[j * 3 - 1];
+      T[j] = T[j - 1] + Math.max(Math.hypot(dx, dz) / WALK, Math.abs(dy) / CLIMB);
+    }
+    return { pts, lay, ins, T, t0, end: t0 + T[n - 1] / 60 };
+  }
+
+  // Put person i at a place, still.
+  settle(i, pl, doing, slot = null) {
+    const s = this.state[i];
+    s.cur = pl; s.trip = null; s.wait = null;
+    s.spot = this.spot(i, pl);
+    s.doing = doing; s.slot = slot;
+    this.draw(i);
+  }
+
+  draw(i) {
+    const s = this.state[i], o = i * 3, m = i * 4;
+    if (!s.spot) { this.misc[m + 3] = 2; return; }
+    this.pos[o] = s.spot[0]; this.pos[o + 1] = s.spot[1]; this.pos[o + 2] = s.spot[2];
+    this.misc[m] = (this.persons[i].seed * 6.283) % 6.283;
+    this.misc[m + 1] = s.spot[3];
+    this.misc[m + 2] = /asleep/.test(s.doing || '') ? POSE.lie : SIT.test(s.doing || '') ? POSE.sit : POSE.stand;
+    this.misc[m + 3] = s.spot[4] ? 1 : 0;
+  }
+
+  // The plans of a day for every person, and where each one is at minute 0 of it.
+  planAll(day) {
+    for (let i = 0; i < this.N; i++) {
+      const s = this.state[i];
+      s.ev = s.next && s.next.day === day ? s.next.ev : planDay(this.persons[i], day, this.X);
+      s.next = null;
+      s.ei = -1;
+    }
+    this.day = day;
+    this.nextPlan = 0;
+  }
+
+  // The clock jumped: each person goes straight to where the plan puts them at minute m.
+  jump(day, m) {
+    if (day !== this.day) this.planAll(day);
+    for (let i = 0; i < this.N; i++) {
+      const s = this.state[i], ev = s.ev;
+      let ei = 0;
+      while (ei + 1 < ev.length && ev[ei + 1][0] <= m) ei++;
+      s.ei = ei;
+      this.settle(i, ev[ei][1], ev[ei][2], ev[ei][3]);
+    }
+  }
+
+  // The time is minute m of day `day`. budget: ms for new routes in this frame.
+  update(day, m, budget = 4) {
+    const W = day * 1440 + m;
+    if (W < this.lastW || W - this.lastW > 180 || this.day < 0) { this.jump(day, m); this.lastW = W; return; }
+    if (day !== this.day) {
+      // a new day: the place of each person carries over
+      this.planAll(day);
+    }
+    this.lastW = W;
+    const t0 = performance.now();
+    let routed = 0;
+    for (let i = 0; i < this.N; i++) {
+      const s = this.state[i], ev = s.ev;
+      // the next event of the plan
+      if (!s.wait && s.ei + 1 < ev.length && ev[s.ei + 1][0] <= m) {
+        while (s.ei + 1 < ev.length && ev[s.ei + 1][0] <= m) s.ei++;
+        const [tm, pl, doing, x] = ev[s.ei];
+        s.wait = { pl, doing, x, t: day * 1440 + tm };
+      }
+      if (s.wait) {
+        const from = s.trip ? null : s.cur;
+        if (s.trip) { /* finish the walk first, from where it ends */ }
+        else if (!from || from === s.wait.pl || (from.kind === 'out' && s.wait.pl.kind === 'out')) { this.settle(i, s.wait.pl, s.wait.doing, s.wait.x); }
+        else {
+          let path = this.routeOf(from, s.wait.pl, false);
+          if (path === undefined && performance.now() - t0 < budget) { path = this.routeOf(from, s.wait.pl, true); routed++; }
+          if (path === null) this.settle(i, s.wait.pl, s.wait.doing, s.wait.x);
+          else if (path !== undefined) {
+            const sb = this.spot(i, s.wait.pl);
+            s.trip = this.trip(i, path, s.spot, sb, Math.max(s.wait.t, W - 0.5));
+            s.trip.to = s.wait.pl; s.trip.doing = s.wait.doing; s.trip.sb = sb; s.trip.slot = s.wait.x;
+            s.wait = null;
+          }
+        }
+      }
+      if (s.trip) {
+        const tr = s.trip;
+        if (W >= tr.end) {
+          s.cur = tr.to; s.spot = tr.sb; s.doing = tr.doing; s.slot = tr.slot; s.trip = null;
+          this.draw(i);
+        } else this.walk(i, tr, (W - tr.t0) * 60);
+      }
+    }
+    // plan the next day, a few people in each frame
+    if (this.day < 6) {
+      const n = Math.min(this.N, this.nextPlan + 600);
+      for (let i = this.nextPlan; i < n; i++) this.state[i].next = { day: this.day + 1, ev: planDay(this.persons[i], this.day + 1, this.X) };
+      this.nextPlan = n;
+    }
+    this.routedLast = routed;
+  }
+
+  // Person i on a walk, sec seconds after its start.
+  walk(i, tr, sec) {
+    const T = tr.T, n = T.length;
+    let lo = 0, hi = n - 1;
+    if (sec <= 0) hi = 0;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (T[mid] <= sec) lo = mid; else hi = mid; }
+    const j = Math.min(lo, n - 2), a = j * 3, b = a + 3, span = T[j + 1] - T[j];
+    const f = n < 2 ? 0 : span > 0 ? Math.min(1, Math.max(0, (sec - T[j]) / span)) : 1;
+    const P = tr.pts, o = i * 3, m = i * 4;
+    if (n < 2) { this.pos[o] = P[0]; this.pos[o + 1] = P[1]; this.pos[o + 2] = P[2]; return; }
+    this.pos[o] = P[a] + (P[b] - P[a]) * f;
+    this.pos[o + 1] = P[a + 1] + (P[b + 1] - P[a + 1]) * f;
+    this.pos[o + 2] = P[a + 2] + (P[b + 2] - P[a + 2]) * f;
+    const dx = P[b] - P[a], dz = P[b + 2] - P[a + 2];
+    if (dx * dx + dz * dz > 1e-4) this.misc[m] = Math.atan2(dx, dz);
+    this.misc[m + 1] = f < 0.5 ? tr.lay[j] : tr.lay[j + 1];
+    this.misc[m + 2] = POSE.walk;
+    this.misc[m + 3] = tr.ins[j] && tr.ins[j + 1] ? 1 : 0;
+  }
+
+  // What person i does now, and where: for the panel.
+  now(i) {
+    const s = this.state[i];
+    if (s.trip) return { walking: true, to: s.trip.to, doing: s.trip.doing, slot: s.trip.slot };
+    if (s.wait) return { walking: false, at: s.cur, doing: s.wait.doing, slot: s.wait.x, waiting: true };
+    return { walking: false, at: s.cur, doing: s.doing, slot: s.slot };
+  }
+}
+export { OUT };
