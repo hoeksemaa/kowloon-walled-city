@@ -1,4 +1,4 @@
-# Kowloon Walled City · 1986
+# Kowloon Walled City (九龍城寨) · 1986
 
 An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
 shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
@@ -13,7 +13,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     `fixes.js` and `choices.js` (they apply the two structure data files), `poly.js`.
   - `src/surroundings/`: **the surroundings** of the structure. `ground.js` (the terrain,
     roads, paths, courts and the real buildings of 1986) and `shapes.js` (their solids).
-  - `src/structureViewer.js`: the viewer of `structure.html`.
+  - `src/structureViewer.js`: the viewer of `structure.html`. `src/structureColors.js`: the viewer's placeholder colours.
   - The other files: the main app of `index.html` (`main.js`, `people.js`, `routes.js`,
     `planes.js`, `labels.js`, `sound.js`, `game.js`, `style.css` and others). `cityMesh.js`,
     `floorplan.js`, `facades.js`, `roofs.js` and `interiors.js` are its superseded 3D city.
@@ -27,7 +27,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     `structure_frozen.json` (the fingerprint of the frozen structure).
   - The book and the clearance: `book.json` (facts, pages and short quotes from *City of
     Darkness Revisited*), `book_overlay.json` (numbers measured on its 1987 plan and 1992
-    map) and `businesses.json` (459 premises from the GRS clearance files).
+    map) and `businesses.json` (459 premises from the GRS 政府檔案處 clearance files).
   - The room uses: `room_research.json` (771 research facts, each with its source and quote,
     and the disagreements and leads) and `room_uses.json` (the use of each of the 8,926
     units, with its basis: verified, likely or guess).
@@ -71,12 +71,12 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     files and the business compensation files.
   - `gwulo-suddaby-1987/` and `gwulo-other-photos/`: street and shop photos of 1987-88 on
     Gwulo.
-  - `hk01-kaifong-series-2016/`: five members of the residents' association remember (HK01).
-  - `hku-newspaper-clippings/`: an index of 334 SCMP and *Hong Kong Standard* clippings,
+  - `hk01-kaifong-series-2016/`: five members of the residents' association remember (HK01 香港01).
+  - `hku-newspaper-clippings/`: an index of 334 SCMP (南華早報) and *Hong Kong Standard* (英文虎報) clippings,
     1969-97.
-  - `legco-hansard-1986-1993/`: 22 sittings of the Legislative Council that name the City.
+  - `legco-hansard-1986-1993/`: 22 sittings of the Legislative Council (立法局) that name the City.
   - `mplus-girard-lambot-photos/`: Girard's and Lambot's photos at M+, 1987-91.
-  - `mplus-suenn-ho-ca17/`: the M+ catalogue of Suenn Ho's field research, 1988-92.
+  - `mplus-suenn-ho-ca17/`: the M+ catalogue of Suenn Ho's (何巽) field research, 1988-92.
   - `press-articles-1959-1992/`: TIME (1959) and *Baltimore Sun* (1992) reports.
   - `retrospective-testimony-web/`: former residents, workers and visitors remember, on the
     web (2009-2024).
@@ -94,7 +94,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
 **The 3D structure of `structure.html` is the definitive 3D structure of the City and of the
 terrain and city round it (2026-11-04).** All later work (art, visuals, simulation) builds on
 it. It is frozen: `node tools/check_structure.mjs` fails if anything changes its geometry
-(the colours are placeholders and can change). Change it
+(the structure has no colours: the viewer gives them). Change it
 only for a large error that a new source shows, and only when John approves it. See
 [docs/structure.md](docs/structure.md).
 
@@ -106,8 +106,8 @@ only for a large error that a new source shows, and only when John approves it. 
 - `src/structureViewer.js` (`structure.html`): the viewer, the one place that puts the two
   together.
 
-The two parts do not import each other. The colours are placeholders: only the structure is
-definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
+The two parts do not import each other. The structure has no colours: the viewer gives its
+placeholder colours (`src/structureColors.js`). Only the structure is definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
 app (below).
 
 ## Run
@@ -131,7 +131,7 @@ section describes the main app.
 
 - **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
   cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
-  towers (270 if the 17 Yamen halls count as one). A check by eye against that plan
+  towers (270 if the 17 Yamen (衙門) halls count as one). A check by eye against that plan
   changed 27 of them. The heights on the south face come from Lambot's 1990 south elevation.
 - **Select a building.** Click a building to select it, and click it again to deselect it. A
   building is one tower of the 1987 plan, and the 17 halls of the Yamen are one building: 270 in
@@ -164,7 +164,7 @@ section describes the main app.
   it on the plan, and click it to keep it lit. The use stays lit when you step through the
   storeys, until you press Esc. The rest of the cut storey goes grey, but the other storeys and
   the light of the normal view do not change. A solid outline marks a recorded trade, and a
-  dashed outline marks a trade inferred from the 1983 Kai Fong count. Shop, workshop and
+  dashed outline marks a trade inferred from the 1983 Kai Fong (九龍城砦街坊福利事業促進委員會) count. Shop, workshop and
   clinic floors have a light tint of their legend colour; the floors of flats keep their own
   colours.
 - **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
@@ -175,7 +175,7 @@ section describes the main app.
   36 bridges over lanes and 216 roof crossings.
 - **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
   the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
-  the tubes; at night the windows are blue-white, and Kowloon beyond is dark, with a faint
+  the tubes; at night the windows are blue-white, and Kowloon (九龍) beyond is dark, with a faint
   sodium glow.
 - **Surroundings.** The real buildings, roads and open ground of December 1986 stand round
   the City, at one level with it. The buildings rise to their heights in light warm greys,
@@ -187,7 +187,7 @@ section describes the main app.
   All of it is clear out to 350 m from the centre, fades slowly into the haze, and is gone
   at 600 m. The sky and the haze follow the light of the city: pale grey by day, warm at
   dusk, dark slate at night.
-- **Planes.** Airliners land on Kai Tak runway 13, about 89 a day, from 06:30 to 23:50. They
+- **Planes.** Airliners land on Kai Tak (啓德) runway 13, about 89 a day, from 06:30 to 23:50. They
   turn right from the IGS beam on to the line of the runway. They pass the City on their
   left, about 430 m to the south-west, at about 70 m. Zoom out to see them. The end of the
   runway comes from the 1987 survey sheet; the turn and the glide are inferred
@@ -217,7 +217,7 @@ section describes the main app.
   these off and on. The storey labels of the layered view and the cut tag are plates of the
   same kind. No plate lies on the title at the top left: a street name moves along its lane to
   find room, and a storey label with no room hides.
-- **Find them 尋人.** A game with three cases: the postman Lam Po Chun, the pigeon breeder
+- **Find them 尋人.** A game with three cases: the postman Lam Po Chun (林寶鎮), the pigeon breeder
   Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
   key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
   and Show. The first hints quote the book with its page. A click on the right person closes
@@ -254,7 +254,7 @@ measures on the book's 1987 figure-ground plan and 1992 map. No image from the b
 the repository or the app.
 
 `data/terrain.json` holds the height of the ground round the City, out to 640 m, from the
-Lands Department 5 m Digital Terrain Model and the spot heights of the 1987 survey sheet
+Lands Department (地政總署) 5 m Digital Terrain Model and the spot heights of the 1987 survey sheet
 11-NE-11A (`tools/terrain.py`; see `data/CONTEXT-NOTICE.md`).
 
 `data/context.json` holds the real buildings, roads and open ground round the City as they
@@ -262,9 +262,10 @@ stood in December 1986, within 600 m of the centre of the plan box, in plan metr
 building has an outline, a height, its storeys, its dates, a source, and "sourced" or
 "inferred". `tools/context.py` makes it from the Lands Department 1:1000 survey sheets of
 1987 (the editions of 1981-85 are a check) and the CSDI Building and Road Network data.
-Source: the Government of the Hong Kong SAR and the CSDI Portal; see
+Source: the Government of the Hong Kong SAR (香港特別行政區政府) and the CSDI Portal
+(空間數據共享平台入門網站); see
 `data/CONTEXT-NOTICE.md`. This data does not have a Creative Commons licence. No scan or
-download is in the repository. The City plate of the model covers 59% of Mei Tung House,
+download is in the repository. The City plate of the model covers 59% of Mei Tung House (美東樓),
 the long slab north of the City. The data keeps the parts off the plate as buildings, and
 `plateClipped` keeps the whole outline.
 
@@ -310,7 +311,8 @@ cell of the City, or if the dark street reaches under a drawn building. It also 
 exit of the people is not on the street or a road. It fails if a walk between an exit
 and the lanes of the City goes through a drawn building. Last, in 48 views, it casts rays from
 the City wall back to the camera. It fails if a building that a ray meets does not fade.
-It fails if Tung Tau Tsuen Road, Tung Tsing Road or Carpenter Road has no name, or if a road
+It fails if Tung Tau Tsuen Road (東頭村道), Tung Tsing Road (東正道) or Carpenter Road
+(賈炳達道) has no name, or if a road
 name is not one of the 23 compared with the 1987 sheets. It also fails if `Sight` and the
 exact rays disagree on more than 5% of the points of the roads.
 

@@ -6,496 +6,489 @@ Made by `node tools/build_room_uses.mjs` from `data/room_research.json` and `dat
 
 | Unit | Building | Floor | Category | Use | Name | Address in the source | Basis | How | Sources |
 |---|---|---|---|---|---|---|---|---|---|
-| 0:0:0 | 8 Lung Shing Road | G/F | herbalist / medicine shop | medicine shop | Kin Sang Medicine 健生中西藥行 | 2C ttt, G/F | verified | address | HKRS1255-3-341 |
-| 0:0:1 | 8 Lung Shing Road | G/F | herbalist / medicine shop | medicine shop | Hing Fat 興發西藥行 | 1A ttt, G/F | verified | address, next building | HKRS1255-3-551 |
-| 0:0:2 | 8 Lung Shing Road | G/F | eating house | restaurant | Tsang Kee Restaurant 曾記飯店 | 1B ttt, G/F | verified | address, next building | HKRS1255-3-512 |
-| 0:0:2 | 8 Lung Shing Road | G/F | herbalist / medicine shop | Chinese medicine shop; mezzanine reached by a ladder | Chinese medicine shop west of Lung Shing Road (大図解 panorama) 漢方薬局 | G/F | guess | clue, shares a unit | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈880) |
-| 0:0:3 | 8 Lung Shing Road | G/F | shop | store | 陳漢豐鮮菓士多 | 2B ttt, G/F | verified | address | HKRS1255-3-342A, HKRS1255-3-342B |
+| 0:0:0 | 8 Lung Shing Road | G/F | shop | property agent and newspaper stall | Lee's Real Estate Co. & Newspaper Stall (李氏地產及報攤) | 2 (B2) ttt, G/F | verified | address | HKRS1255-3-346 |
+| 0:0:1 | 8 Lung Shing Road | G/F | shop | store | 陳漢豐鮮菓士多 | 2B ttt, G/F | verified | address | HKRS1255-3-342A, HKRS1255-3-342B |
+| 0:0:2 | 8 Lung Shing Road | G/F | herbalist / medicine shop | medicine shop | Kin Sang Medicine (健生中西藥行) | 2C ttt, G/F | verified | address | HKRS1255-3-341 |
+| 0:0:2 | 8 Lung Shing Road | G/F | shop | store | Tat Kee Fruit Store | 2 ttt, G/F | verified | address, shares a unit | HKRS1255-3-519 |
+| 0:0:3 | 8 Lung Shing Road | G/F | food workshop | roast meat | Lo-Shui Goose Shop | 2 ttt, G/F | verified | address | HKRS1255-3-513 |
 | 0:1:3 | 8 Lung Shing Road | 1/F | food workshop | meat products | 張記凍肉食品公司 | 10 lsr, 1/F | verified | address | HKRS1255-3-406 |
-| 0:2:3 | 8 Lung Shing Road | 2/F | doctor / clinic | bone-setter | Mei Tung Wah Herbalist 美東華跌打 | 2-3 ttt, 2/F | verified | address | HKRS1255-3-518 |
-| 0:3:3 | 8 Lung Shing Road | 3/F | garment, textile + shoe workshop | garment maker | Hing Wo Knitting Factory 興和針織廠 | 8 lsr, 3/F | verified | address | HKRS1255-3-483 |
-| 0:3:5 | 8 Lung Shing Road | 3/F | doctor / clinic | Western-medicine clinic (two doctors named on the sign) | Kong Wah clinic 港華醫務所 | ttt | likely | street | p8 photo |
-| 0:11:3 | 8 Lung Shing Road | 11/F | flats | family flats (door shrines; survey number C34/144/1-6 on one door) | Stair landing with two flats in a Tung Tau Tsuen Road building | ttt | likely | street | p154 |
-| 1:0:0 | 1 Kwong Ming Street | G/F | metal + machine works | metalware factory | Hing Yip Metal Factory 興業五金廠 | 1 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-417 |
-| 1:1:0 | 1 Kwong Ming Street | 1/F | doctor / clinic | doctor's clinic | Chi On clinic 慈安醫所 | ttt | likely | street | p8 photo |
-| 1:1:1 | 1 Kwong Ming Street | 1/F | doctor / clinic | low-cost clinic | '... Ping Man' people's clinic □平民醫療所 | ttt | guess | street | p8 photo |
-| 1:2:0 | 1 Kwong Ming Street | 2/F | office / company | adult-toy wholesaler | Adult-toy wholesaler (大図解 panorama) 大人のおもちゃの問屋 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2840, y≈956) |
-| 1:4:0 | 1 Kwong Ming Street | 4/F | office / company | trading company | Yiu Wah Trading Company 耀華貿易公司 | 3A ttt, 4/F | verified | address | HKRS1255-3-166 |
+| 0:2:3 | 8 Lung Shing Road | 2/F | doctor / clinic | bone-setter | Mei Tung Wah Herbalist (美東華跌打) | 2-3 ttt, 2/F | verified | address | HKRS1255-3-518 |
+| 0:2:5 | 8 Lung Shing Road | 2/F | doctor / clinic | gynaecologist's clinic | Wu Seung gynaecology clinic (胡湘婦科) | ttt | likely | street | p9 photo strip |
+| 0:3:3 | 8 Lung Shing Road | 3/F | garment, textile + shoe workshop | garment maker | Hing Wo Knitting Factory (興和針織廠) | 8 lsr, 3/F | verified | address | HKRS1255-3-483 |
+| 0:10:3 | 8 Lung Shing Road | 10/F | flats | family flat | Flat 'Room 4' with New Year door couplets (四室) | ttt | likely | street | p155 |
+| 1:0:0 | 1 Kwong Ming Street | G/F | metal + machine works | metalware factory | Hing Yip Metal Factory (興業五金廠) | 1 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-417 |
+| 1:0:0 | 1 Kwong Ming Street | G/F | dentist | dentist | 蕭秉隆牙科 | 3 ttt, G/F | verified | address, shares a unit | HKRS1255-3-514 |
+| 1:2:0 | 1 Kwong Ming Street | 2/F | dentist | denture maker / dentist | Mei Sze denture surgery (美斯鑲牙) | ttt | likely | street | p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 1:2:1 | 1 Kwong Ming Street | 2/F | office / company | adult-toy wholesaler | Adult-toy wholesaler (大図解 panorama) (大人のおもちゃの問屋) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2840, y≈956) |
+| 1:4:0 | 1 Kwong Ming Street | 4/F | office / company | trading company | Yiu Wah Trading Company (耀華貿易公司) | 3A ttt, 4/F | verified | address | HKRS1255-3-166 |
 | 1:6:0 | 1 Kwong Ming Street | 6/F | food workshop | noodle maker | Wing Lee Noodle Factory | 3 ttt, 6/F | verified | address | HKRS1255-3-170 |
-| 1:10:0 | 1 Kwong Ming Street | 10/F | doctor / clinic | doctor's clinic | Lung Mun clinic 龍門醫務所 / 龍門診所 | ttt | likely | street | pp122-123; p152; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 1:10:1 | 1 Kwong Ming Street | 10/F | flats | family flat | Flat 'Room 4' with New Year door couplets 四室 | ttt | likely | street | p155 |
-| 2:0:0 | 2 Kwong Ming Street | G/F | herbalist / medicine shop | medicine shop | Kai On Medicine Store 啟安藥行 | 4 ttt, G/F | verified | address | HKRS1255-3-516 |
-| 2:0:1 | 2 Kwong Ming Street | G/F | garment, textile + shoe workshop | garment maker | Wing Tak Garment Factory [Factory] 永達製衣廠 | 10A ttt, G/F | verified | address, next building | HKRS1255-3-590 |
-| 2:0:2 | 2 Kwong Ming Street | G/F | dentist | dentist | 蕭秉隆牙科 | 3 ttt, G/F | verified | address, next building | HKRS1255-3-514 |
-| 2:0:3 | 2 Kwong Ming Street | G/F | office / company | trading company | Kwong Wah Company 光華公司 | 2 kms, G/F | verified | address | HKRS1255-3-428 |
-| 2:0:4 | 2 Kwong Ming Street | G/F | food workshop | noodle factory | Wang Fat Noodles Factory 宏發麵廠 | 2 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-533; pp170, 172-173; pp352-353, no. 14 |
-| 2:1:0 | 2 Kwong Ming Street | 1/F | plastics factory | plastics factory | Cheung Fung Plastic factory 長豐塑膠廠 | 4 ttt, 1/F | verified | address | HKRS1255-3-517 |
+| 1:11:0 | 1 Kwong Ming Street | 11/F | flats | family flats (door shrines; survey number C34/144/1-6 on one door) | Stair landing with two flats in a Tung Tau Tsuen Road building | ttt | likely | street | p154 |
+| 2:0:0 | 2 Kwong Ming Street | G/F | doctor / clinic | doctor's clinic | Yau Chai Clinic (柔濟診所) | ttt | likely | street | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 2:0:1 | 2 Kwong Ming Street | G/F | dentist | dental clinic | Suen Yeung Sin Dentistry (孫仰先牙科) | ttt | likely | street | p285 |
+| 2:0:2 | 2 Kwong Ming Street | G/F | herbalist / medicine shop | medicine shop | Kai On Medicine Store (啟安藥行) | 4 ttt, G/F | verified | address | HKRS1255-3-516 |
+| 2:0:3 | 2 Kwong Ming Street | G/F | office / company | trading company | Kwong Wah Company (光華公司) | 2 kms, G/F | verified | address | HKRS1255-3-428 |
+| 2:0:4 | 2 Kwong Ming Street | G/F | food workshop | noodle factory | Wang Fat Noodles Factory (宏發麵廠) | 2 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-533; pp170, 172-173; pp352-353, no. 14 |
+| 2:1:0 | 2 Kwong Ming Street | 1/F | plastics factory | plastics factory | Cheung Fung Plastic factory (長豐塑膠廠) | 4 ttt, 1/F | verified | address | HKRS1255-3-517 |
+| 2:1:2 | 2 Kwong Ming Street | 1/F | dentist | dentist's surgery | Ma Hing Fai dentistry (馬慶輝牙科) | ttt | likely | street | p8 photo |
+| 2:2:0 | 2 Kwong Ming Street | 2/F | doctor / clinic | doctor's clinic | Lam Tin Yam clinic (林天任診所) | ttt | likely | street | p8 photo |
 | 2:5:0 | 2 Kwong Ming Street | 5/F | flats | family flat (owned) | Hui family flat | 2 kms | likely | address | p170 |
-| 3:0:0 | 17 Lung Shing Road | G/F | shop | stationery shop | Sun Wah Stationery 新華文具 | 13 lsr, G/F | verified | address | HKRS1255-3-378 |
+| 3:0:0 | 17 Lung Shing Road | G/F | shop | stationery shop | Sun Wah Stationery (新華文具) | 13 lsr, G/F | verified | address | HKRS1255-3-378 |
 | 3:0:1 | 17 Lung Shing Road | G/F | dentist | dentist | 麥汝鋆牙科 | 17 lsr, G/F | verified | address | HKRS1255-3-376; https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg ; GRS HKRS1255-3-376 |
 | 3:0:2 | 17 Lung Shing Road | G/F | food workshop | noodle maker | 大興粉麵廠 | 18 lsr, G/F | verified | address | HKRS1255-3-408 |
 | 3:1:1 | 17 Lung Shing Road | 1/F | dentist | dentist | 高雄牙科 | 42 lsr, 1/F | verified | street | HKRS1255-3-487 |
-| 4:0:0 | 9 Tung Tau Tsuen Road | G/F | other workshop | factory | Wing Hing Handbag Factory 永興手袋廠 | 10A ttt, G/F | verified | address, next building | HKRS1255-3-542 |
+| 4:0:0 | 9 Tung Tau Tsuen Road | G/F | dentist | dental laboratory and dentist's surgery | King's Dental Lab and Yip Wa Man dentist (健齒牙科) | 8 ttt, G/F | likely | address | p152; HKRS1255-3-554 |
 | 4:0:1 | 9 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | 仁昌塑膠廠 | 9 ttt, G/F | verified | address | HKRS1255-3-589 |
 | 4:0:2 | 9 Tung Tau Tsuen Road | G/F | doctor / clinic | clinic | 大眾福利診所 | 9 ttt, G/F | verified | address | HKRS1255-3-556; p285; businesses.json 'G/F, 9 Tung Tau Tsuen Road ... Public Walfare Clinic (大眾福利診所)' |
-| 4:0:3 | 9 Tung Tau Tsuen Road | G/F | dentist | dentist | King's Dental Lab + Yip Wa Man Dentist 葉華民牙科 | 8 ttt, G/F | verified | address | HKRS1255-3-554 |
-| 4:0:4 | 9 Tung Tau Tsuen Road | G/F | shop | LP gas dealer | Tak Sang LP Gas Hong 德生行 | 9 ttt, G/F | verified | address | HKRS1255-3-562A |
+| 4:0:3 | 9 Tung Tau Tsuen Road | G/F | dentist | dentist | King's Dental Lab + Yip Wa Man Dentist (葉華民牙科) | 8 ttt, G/F | verified | address | HKRS1255-3-554 |
+| 4:0:4 | 9 Tung Tau Tsuen Road | G/F | shop | LP gas dealer | Tak Sang LP Gas Hong (德生行) | 9 ttt, G/F | verified | address | HKRS1255-3-562A |
 | 4:1:5 | 9 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | 志青診所 | 8 ttt, 1/F | verified | address | HKRS1255-3-550; p131; p152; HKRS1255-3-550 |
-| 4:1:6 | 9 Tung Tau Tsuen Road | 1/F | doctor / clinic | bone-setting (跌打) clinic | 張泉跌打 (Cheung Chuen bone-setter) | ttt | likely | street | jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 4:4:3 | 9 Tung Tau Tsuen Road | 4/F | herbalist / medicine shop | Chinese medicine doctor (direction sign with arrow) | Tang Kwong, Chinese doctor 鄧光中醫師 | ttt | guess | street | p174 |
-| 4:4:4 | 9 Tung Tau Tsuen Road | 4/F | dentist | dentist | Mak Chiu Dentistry 麥釗牙科 | 8 ttt, 4/F | verified | address | HKRS1255-3-553 |
+| 4:4:4 | 9 Tung Tau Tsuen Road | 4/F | dentist | dentist | Mak Chiu Dentistry (麥釗牙科) | 8 ttt, 4/F | verified | address | HKRS1255-3-553 |
 | 5:0:0 | 42 Sai Shing Road | G/F | shop | furniture | 42, SS Rd [Sai Shing Road], M/F, Flat B Yan Kee Furniture Co | 42 ssr, G/F | verified | address | HKRS1255-3-224; p342; p27 photo; HKRS1255-3-224 |
+| 5:0:0 | 42 Sai Shing Road | G/F | office / company | trading company | Hang Sing Co. | 40 ttt, G/F | verified | address, shares a unit | HKRS1255-3-220 |
 | 5:1:0 | 42 Sai Shing Road | 1/F | dentist | dentist | Lee's Dental Clinic | 40A ttt, 1/F | verified | address | HKRS1255-3-222 |
+| 5:1:0 | 42 Sai Shing Road | 1/F | other workshop | factory | Kong Loong Embroidery Factory | No 40 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-223 |
 | 5:2:0 | 42 Sai Shing Road | 2/F | garment, textile + shoe workshop | shoe or leather maker | Kin Won Shoe Manufactory | No.42 ssr, 2/F | verified | address | HKRS1255-3-225 |
 | 5:6:0 | 42 Sai Shing Road | 6/F | shop | store | 榮發士多 | 40 ttt, 6/F | verified | address | HKRS1255-3-221 |
-| 6:0:0 | 3 Kwong Ming Street | G/F | shop | property agent and newspaper stall | Lee's Real Estate Co. & Newspaper Stall 李氏地產及報攤 | 2 (B2) ttt, G/F | verified | address, next building | HKRS1255-3-346 |
-| 6:0:1 | 3 Kwong Ming Street | G/F | shop | store | Tat Kee Fruit Store | 2 ttt, G/F | verified | address, next building | HKRS1255-3-519 |
-| 6:0:2 | 3 Kwong Ming Street | G/F | food workshop | roast meat | Lo-Shui Goose Shop | 2 ttt, G/F | verified | address, next building | HKRS1255-3-513 |
-| 7:0:0 | 11 Lung Shing Road | G/F | dentist | dentist | 國際牙科及國際牙科分所 | 11 lsr, G/F | verified | address | HKRS1255-3-379 |
-| 7:0:1 | 11 Lung Shing Road | G/F | food workshop | cakes and dim sum | Wing Lee 超記(榮利)薄餅 | 5 lsr, G/F | verified | address, next building | HKRS1255-3-388 |
-| 7:0:2 | 11 Lung Shing Road | G/F | food workshop | roast meat | Tai Kee Roasted Meat 戴記燒腊 | 12 lsr, G/F | verified | address | HKRS1255-3-399 |
-| 7:0:2 | 11 Lung Shing Road | G/F | food workshop | roast-pig factory; mezzanine used as the materials store | Roast-pig factory at the east end, beside Lung Shing Road (大図解 panorama) 豚の丸焼き製造工場 | lsr, G/F | guess | street, shares a unit | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈394) |
+| 6:0:0 | 3 Kwong Ming Street | G/F | herbalist / medicine shop | Chinese medicine shop; mezzanine reached by a ladder | Chinese medicine shop west of Lung Shing Road (大図解 panorama) (漢方薬局) | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈880) |
+| 7:0:0 | 11 Lung Shing Road | G/F | dentist | dentist's surgery, G/F shop with a roller shutter, and a hanging sign over the road | World Dental (dentist Chan Fat) (世界牙科 (陳發牙醫)) | lsr, G/F | likely | clue, next building | https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg |
+| 7:0:1 | 11 Lung Shing Road | G/F | dentist | dentist | 國際牙科及國際牙科分所 | 11 lsr, G/F | verified | address | HKRS1255-3-379 |
+| 7:0:2 | 11 Lung Shing Road | G/F | food workshop | roast meat | Tai Kee Roasted Meat (戴記燒腊) | 12 lsr, G/F | verified | address | HKRS1255-3-399 |
 | 7:1:1 | 11 Lung Shing Road | 1/F | garment, textile + shoe workshop | garment maker | 榮盛製衣廠 | 42 lsr, 1/F | verified | street | HKRS1255-3-486 |
 | 7:1:2 | 11 Lung Shing Road | 1/F | food workshop | food products | 雙喜號福食 | 12 lsr, 1/F | verified | address | HKRS1255-3-420 |
-| 7:1:3 | 11 Lung Shing Road | 1/F | food workshop | noodle maker | Lam Ming Shing Noodles Factory 林明城麵廠 | 12 lsr, 1/F | verified | address | HKRS1255-3-407 |
-| 7:2:2 | 11 Lung Shing Road | 2/F | food workshop | noodle maker | Wing Lee Noodles Factory 榮利麵廠 | 12 lsr, 2/F | verified | address | HKRS1255-3-422 |
+| 7:1:3 | 11 Lung Shing Road | 1/F | food workshop | noodle maker | Lam Ming Shing Noodles Factory (林明城麵廠) | 12 lsr, 1/F | verified | address | HKRS1255-3-407 |
+| 7:2:2 | 11 Lung Shing Road | 2/F | food workshop | noodle maker | Wing Lee Noodles Factory (榮利麵廠) | 12 lsr, 2/F | verified | address | HKRS1255-3-422 |
 | 7:2:3 | 11 Lung Shing Road | 2/F | garment, textile + shoe workshop | shoe or leather maker | Ho Wah Shoes Factory | 12 lsr, 2/F | verified | address | HKRS1255-3-421 |
-| 7:3:3 | 11 Lung Shing Road | 3/F | garment, textile + shoe workshop | shoe or leather maker | Kin Keung Shoes 堅強鞋廠 | 12 lsr, 3/F | verified | address | HKRS1255-3-423 |
-| 7:5:2 | 11 Lung Shing Road | 5/F | metal + machine works | metal works | Fung Hang Metal Mfy 豐恆金屬製品廠 | 12 lsr, 5/F | verified | address | HKRS1255-3-424 |
+| 7:3:3 | 11 Lung Shing Road | 3/F | garment, textile + shoe workshop | shoe or leather maker | Kin Keung Shoes (堅強鞋廠) | 12 lsr, 3/F | verified | address | HKRS1255-3-423 |
+| 7:5:2 | 11 Lung Shing Road | 5/F | metal + machine works | metal works | Fung Hang Metal Mfy (豐恆金屬製品廠) | 12 lsr, 5/F | verified | address | HKRS1255-3-424 |
 | 8:0:0 | 3 Lo Yan Street | G/F | food workshop | food products | Man Wah Food Company | 10A ttt, G/F | verified | address | HKRS1255-3-540 |
-| 8:0:1 | 3 Lo Yan Street | G/F | food workshop | noodle maker | Shing Hing Noodles Factory 成興製麵廠 | 10A ttt, G/F | verified | address | HKRS1255-3-541 |
-| 8:0:2 | 3 Lo Yan Street | G/F | metal + machine works | metal works | Wah Sang Electroplating Factory [Factory] 華生電鍍廠 | 1 lys, G/F | verified | address | HKRS1255-3-58 |
-| 8:1:0 | 3 Lo Yan Street | 1/F | food workshop | food products | Tong Wo Peanut Retailing 堂和花生瓜子批發 | 10A ttt, 1/F | verified | address | HKRS1255-3-558 |
-| 8:1:1 | 3 Lo Yan Street | 1/F | office / company | trading company | Kowloon Co. 九龙公司 | 11 ttt, 1/F | verified | address | HKRS1255-3-564 |
-| 8:1:2 | 3 Lo Yan Street | 1/F | other workshop | factory | Yueng Kwong Manufactory 楊江製品廠 | 10A ttt, 1/F | verified | address | HKRS1255-3-559 |
-| 8:2:0 | 3 Lo Yan Street | 2/F | other workshop | factory | Kwong Ming Industries Co. 光明實業公司 | 10A ttt, 2/F | verified | address | HKRS1255-3-560 |
-| 8:2:1 | 3 Lo Yan Street | 2/F | dentist | denture maker / dentist | Mei Sze denture surgery 美斯鑲牙 | ttt | likely | street | p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 8:0:0 | 3 Lo Yan Street | G/F | office / company | trading company | San Hop Hing Company (三合興公司) | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-592 |
+| 8:0:1 | 3 Lo Yan Street | G/F | food workshop | noodle maker | Shing Hing Noodles Factory (成興製麵廠) | 10A ttt, G/F | verified | address | HKRS1255-3-541 |
+| 8:0:2 | 3 Lo Yan Street | G/F | metal + machine works | metal works | Wah Sang Electroplating Factory [Factory] (華生電鍍廠) | 1 lys, G/F | verified | address | HKRS1255-3-58 |
+| 8:0:2 | 3 Lo Yan Street | G/F | other workshop | factory | Wing Hing Handbag Factory (永興手袋廠) | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-542 |
+| 8:0:2 | 3 Lo Yan Street | G/F | metal + machine works | metal works | 頌榮金屬製品廠 | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-543 |
+| 8:0:2 | 3 Lo Yan Street | G/F | food workshop | food products | D59/102 + 103 (京都食品公司) | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-557A |
+| 8:0:2 | 3 Lo Yan Street | G/F | food workshop | roast meat | Shun Cheong | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-563 |
+| 8:0:2 | 3 Lo Yan Street | G/F | garment, textile + shoe workshop | garment maker | Wing Tak Garment Factory [Factory] (永達製衣廠) | 10A ttt, G/F | verified | address, shares a unit | HKRS1255-3-590 |
+| 8:1:0 | 3 Lo Yan Street | 1/F | food workshop | food products | Tong Wo Peanut Retailing (堂和花生瓜子批發) | 10A ttt, 1/F | verified | address | HKRS1255-3-558 |
+| 8:1:1 | 3 Lo Yan Street | 1/F | office / company | trading company | Kowloon Co. (九龙公司) | 11 ttt, 1/F | verified | address | HKRS1255-3-564 |
+| 8:1:2 | 3 Lo Yan Street | 1/F | other workshop | factory | Yueng Kwong Manufactory (楊江製品廠) | 10A ttt, 1/F | verified | address | HKRS1255-3-559 |
+| 8:2:0 | 3 Lo Yan Street | 2/F | other workshop | factory | Kwong Ming Industries Co. (光明實業公司) | 10A ttt, 2/F | verified | address | HKRS1255-3-560 |
 | 8:2:2 | 3 Lo Yan Street | 2/F | doctor / clinic | doctor's clinic (China-trained, Chinese and Western medicine, acupuncture) and family home | Tsin Mu Lam's clinic | 10 ttt, 2/F, map 33 | verified | address | pp184-187; pp352-353, no. 33 |
-| 8:3:0 | 3 Lo Yan Street | 3/F | association / community | property owners' association (sign at its premises) | Kowloon Walled City Landlords' Association 九龍城寨業主聯誼會 | lys | likely | clue | p22 |
-| 8:4:0 | 3 Lo Yan Street | 4/F | dentist | dentist's surgery | Hung Wai dentistry 雄偉牙科 | ttt | likely | street | p152 |
+| 8:3:0 | 3 Lo Yan Street | 3/F | association / community | property owners' association (sign at its premises) | Kowloon Walled City Landlords' Association (九龍城寨業主聯誼會) | lys | likely | clue | p22 |
 | 8:6:0 | 3 Lo Yan Street | 6/F | shop | business premises (trade not in the title) | Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau | 10A ttt, 6/F | guess | address | HKRS1255-3-535 |
-| 8:9:0 | 3 Lo Yan Street | 9/F | garment, textile + shoe workshop | garment maker | Kwan Wai Knitting Factory [Factory] 鈞威針織廠 | 10A ttt, 9/F | verified | address | HKRS1255-3-594 |
-| 9:0:0 | 3 Kwong Ming Street | G/F | food workshop | catering (伙食) | Chiu Kee Catering 照記伙食 | 3 kms, G/F | verified | address | HKRS1255-3-435 |
-| 9:1:0 | 3 Kwong Ming Street | 1/F | gambling / drugs / sex | mahjong parlours | Mahjong parlours on two floors east of Kwong Ming Street (大図解 panorama) マージャン屋 | 1/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1569) |
+| 8:9:0 | 3 Lo Yan Street | 9/F | garment, textile + shoe workshop | garment maker | Kwan Wai Knitting Factory [Factory] (鈞威針織廠) | 10A ttt, 9/F | verified | address | HKRS1255-3-594 |
+| 9:0:0 | 3 Kwong Ming Street | G/F | food workshop | catering (伙食) | Chiu Kee Catering (照記伙食) | 3 kms, G/F | verified | address | HKRS1255-3-435 |
+| 9:1:0 | 3 Kwong Ming Street | 1/F | gambling / drugs / sex | mahjong parlours | Mahjong parlours on two floors east of Kwong Ming Street (大図解 panorama) (マージャン屋) | 1/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1569) |
 | 9:2:0 | 3 Kwong Ming Street | 2/F | food workshop | catering (伙食) | 祥茂伙食 | 3 kms, 2/F | verified | address | HKRS1255-3-437 |
-| 9:3:0 | 3 Kwong Ming Street | 3/F | other workshop | factory | Luen Hing Painters Factory 聯興噴油廠 | 3 kms, 3/F | verified | address | HKRS1255-3-436A |
-| 9:4:0 | 3 Kwong Ming Street | 4/F | garment, textile + shoe workshop | garment workshop | Garment workshop(s) on Kwong Ming Street 製衣工場 | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
-| 10:0:0 | 36-38 Tung Tau Tsuen Road | G/F | shop | electrical shop/workshop | Wang Too Electrical Co. 宏圖電器公司 | ttt, G/F | likely | street | HKRS1255-3-548A |
-| 10:0:1 | 36-38 Tung Tau Tsuen Road | G/F | dentist | dentist | 樂福華牙科 (Lok Fuk Wah Dentistry) | ttt | likely | street | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 10:0:2 | 36-38 Tung Tau Tsuen Road | G/F | dentist | dentist | 莊天麗牙科 (Chong Tin Lai Dentistry) | ttt | likely | clue, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 9:3:0 | 3 Kwong Ming Street | 3/F | other workshop | factory | Luen Hing Painters Factory (聯興噴油廠) | 3 kms, 3/F | verified | address | HKRS1255-3-436A |
+| 9:3:0 | 3 Kwong Ming Street | 3/F | other workshop | factory | 順成工藝社 | 3 kms, 3/F | verified | address, shares a unit | HKRS1255-3-440 |
+| 9:4:0 | 3 Kwong Ming Street | 4/F | garment, textile + shoe workshop | garment workshop | Garment workshop(s) on Kwong Ming Street (製衣工場) | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
+| 10:0:0 | 36-38 Tung Tau Tsuen Road | G/F | doctor / clinic | doctor's clinic (internal medicine, surgery, gynaecology, paediatrics) | Doctor Kwok Wai Yan's clinic (醫師郭衛人) | ttt | likely | street | p8 photo; pp284, 336 |
+| 10:0:1 | 36-38 Tung Tau Tsuen Road | G/F | doctor / clinic | doctor's clinic | Shung On clinic (崇安診所) | ttt | likely | street | p152 (caption p153); https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 10:0:2 | 36-38 Tung Tau Tsuen Road | G/F | dentist | dentist's surgery | Fuji dentistry (富士牙科) | ttt | likely | street | p9 photo strip |
 | 10:2:0 | 36-38 Tung Tau Tsuen Road | 2/F | other workshop | factory | 金鋒實業公司 | 36-38 ttt, 2/F | verified | address | HKRS1255-3-188 |
 | 10:5:0 | 36-38 Tung Tau Tsuen Road | 5/F | shop | business premises (trade not in the title) | 36, TTT Rd [Tung Tau Tsuen Road], 5/F, 2008, Blk [Block] 4 | 36 ttt, 5/F | guess | address | HKRS1255-3-189 |
-| 11:0:0 | 37 Tung Tau Tsuen Road | G/F | office / company | trading company | Hang Sing Co. | 40 ttt, G/F | verified | address, next building | HKRS1255-3-220 |
-| 11:1:0 | 37 Tung Tau Tsuen Road | 1/F | other workshop | factory | Kong Loong Embroidery Factory | No 40 ttt, 1/F | verified | address, next building | HKRS1255-3-223 |
+| 11:0:0 | 37 Tung Tau Tsuen Road | G/F | shop | electrical shop/workshop | Wang Too Electrical Co. (宏圖電器公司) | ttt, G/F | likely | street | HKRS1255-3-548A |
+| 11:1:0 | 37 Tung Tau Tsuen Road | 1/F | doctor / clinic | low-cost clinic | '... Ping Man' people's clinic (□平民醫療所) | ttt | guess | street | p8 photo |
 | 11:2:0 | 37 Tung Tau Tsuen Road | 2/F | food workshop | Chiu Chow cake shop and bakery | Jetly Chau's Chiu Chow cake shop | ssr, map 6 | likely | map | pp44-45; pp352-353, no. 6 |
 | 12:0:0 | near 35 Tung Tau Tsuen Road | G/F | dentist | dentist | 莊天麗牙科 | 35 ttt, G/F | verified | address | HKRS1255-3-187 |
-| 12:1:0 | near 35 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | Li Mau Clinic 西醫李謀 | 35 ttt, 1/F | verified | address | HKRS1255-3-185 |
-| 12:2:0 | near 35 Tung Tau Tsuen Road | 2/F | doctor / clinic | medical clinic | Kwong Ming Clinic 光明診所 | 35 ttt, 2/F | verified | address | HKRS1255-3-184 |
-| 12:3:0 | near 35 Tung Tau Tsuen Road | 3/F | doctor / clinic | clinic | Oriental Specialist Clinic 東方專科診所 | 35 ttt, 3/F | verified | address | HKRS1255-3-183 |
-| 13:0:0 | 39 Sai Shing Road | G/F | eating house | restaurant | Workshop | No 41 ssr, G/F | verified | address | HKRS1255-3-192 |
-| 13:0:1 | 39 Sai Shing Road | G/F | metal + machine works | metal works | Hip Kwong Metal Manufactory | No.30 ssr, G/F | verified | address, next building | HKRS1255-3-227 |
-| 13:0:2 | 39 Sai Shing Road | G/F | garment, textile + shoe workshop | fur coat workshop | Fur coat manufacturer 姚正明 皮草加工 | 37 ssr, G/F | verified | address, next building | HKRS1255-3-226 |
+| 12:1:0 | near 35 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | Li Mau Clinic (西醫李謀) | 35 ttt, 1/F | verified | address | HKRS1255-3-185 |
+| 12:1:0 | near 35 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | 張挺華診所 | 35 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-186 |
+| 12:2:0 | near 35 Tung Tau Tsuen Road | 2/F | doctor / clinic | medical clinic | Kwong Ming Clinic (光明診所) | 35 ttt, 2/F | verified | address | HKRS1255-3-184 |
+| 12:3:0 | near 35 Tung Tau Tsuen Road | 3/F | doctor / clinic | clinic | Oriental Specialist Clinic (東方專科診所) | 35 ttt, 3/F | verified | address | HKRS1255-3-183 |
+| 13:0:0 | 39 Sai Shing Road | G/F | services + utilities | rubbish dump | Gap beside the Suzuki building, seen from the roof | ssr | likely | street | p209 |
+| 13:0:1 | 39 Sai Shing Road | G/F | eating house | restaurant | Workshop | No 41 ssr, G/F | verified | address | HKRS1255-3-192 |
+| 13:0:2 | 39 Sai Shing Road | G/F | shop | shop on the left, passage to the stair on the right | Suzuki survey gap building, G/F | ssr, G/F | likely | street | p209 |
 | 13:1:1 | 39 Sai Shing Road | 1/F | food workshop | cakes and dim sum | 潮州點心 | 39 ssr, 1/F | verified | address | HKRS1255-3-194 |
 | 13:3:1 | 39 Sai Shing Road | 3/F | office / company | trading company | Wing Kai Trading Company | 40 ssr, 3/F | verified | address | HKRS1255-3-193 |
-| 14:0:0 | 34 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | Ho Lee Plastic Factory [Factory] | 32 ttt, G/F | verified | address, next building | HKRS1255-3-206 |
-| 14:0:1 | 34 Tung Tau Tsuen Road | G/F | dentist | dentist | Lam Sam Yuk Dentistry | 32 ttt, G/F | verified | address, next building | HKRS1255-3-157 |
-| 14:2:0 | 34 Tung Tau Tsuen Road | 2/F | dentist | dentist's surgery | Lai Sze dentist 麗斯牙醫 | ttt | likely | street | p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 15:0:0 | 32 Tung Tau Tsuen Road | G/F | other workshop | factory | Ming Fat Factory 明發貿易公司 | 31D ttt, G/F | verified | address, next building | HKRS1255-3-165 |
-| 15:0:1 | 32 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | 31B, TTT [Tung Tau Tsuen] Road, G/F, Flat B, Shing Hing Bldg | 31B ttt, G/F | verified | address, next building | HKRS1255-3-239 |
-| 15:0:2 | 32 Tung Tau Tsuen Road | G/F | eating house | ice café (冰室) | 甘河冰室 | 31E ttt, G/F | verified | address, next building | HKRS1255-3-156 |
-| 15:1:0 | 32 Tung Tau Tsuen Road | 1/F | services + utilities | hair salon | 卡迪髪廊 | 31 ttt, 1/F | verified | address, next building | HKRS1255-3-177 |
-| 15:1:1 | 32 Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | garment maker | Yick Fung Garment | 31D ttt, 1/F | verified | address, next building | HKRS1255-3-178 |
-| 15:1:2 | 32 Tung Tau Tsuen Road | 1/F | food workshop | catering workshop making student lunch boxes | Student lunch-box workshop 李漢明 | 31B ttt, 1/F | verified | address, next building | HKRS1255-3-240 |
-| 15:1:3 | 32 Tung Tau Tsuen Road | 1/F | services + utilities | hair salon | Cartik hair salon 卡迪髪廊 | 31D ttt, 1/F | likely | address, next building | p8 photo; HKRS1255-3-177 |
-| 15:1:4 | 32 Tung Tau Tsuen Road | 1/F | office / company | trading company | 香港民宜公司 | 31B ttt, 1/F | verified | address, next building | HKRS1255-3-202 |
-| 15:1:5 | 32 Tung Tau Tsuen Road | 1/F | dentist | dentist's surgery | Tak Yuen dentistry 德源牙科 | 32 ttt, 1/F | verified | address | p9 photo strip |
-| 15:2:0 | 32 Tung Tau Tsuen Road | 2/F | food workshop | noodle maker | 萬生製麵廠 | 31B ttt, 2/F | verified | address, next building | HKRS1255-3-241 |
-| 15:2:1 | 32 Tung Tau Tsuen Road | 2/F | food workshop | noodle maker | 美香麵廠 | 31B ttt, 2/F | verified | address, next building | HKRS1255-3-243 |
-| 15:2:2 | 32 Tung Tau Tsuen Road | 2/F | office / company | trading company | 合利貿易公司 | 32 ttt, 2/F | verified | address | HKRS1255-3-209 |
-| 15:2:3 | 32 Tung Tau Tsuen Road | 2/F | other workshop | factory (trade not stated) | Ming Fat Factory | 31A ttt, 2/F | verified | address, next building | HKRS1255-3-165 |
-| 15:2:4 | 32 Tung Tau Tsuen Road | 2/F | metal + machine works | metal works | 協興機器製模廠 | 31B ttt, 2/F | verified | address, next building | HKRS1255-3-242 |
-| 15:2:5 | 32 Tung Tau Tsuen Road | 2/F | food workshop | roast meat | also known as 6/F 周坤興燒腊 | 31B ttt, 2/F | verified | address, next building | HKRS1255-3-244 |
-| 15:3:0 | 32 Tung Tau Tsuen Road | 3/F | garment, textile + shoe workshop | fur workshop | Tse Choi Kwan Fur Workshop | 31C ttt, 3/F | verified | address, next building | HKRS1255-3-167 |
-| 15:3:4 | 32 Tung Tau Tsuen Road | 3/F | doctor / clinic | doctor's clinic (診所); Chinese-Western medicine is probable but not certain | Chinese-Western clinic at 32 Tung Tau Tsuen Road …西診所 (first character hidden in the binding; probably 中西診所) | 32 ttt, 3/F | likely | address | p9 photo strip; https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
-| 15:4:0 | 32 Tung Tau Tsuen Road | 4/F | office / company | trading company | Ngai Lai Artistic Co. 藝麗公司 | 32 ttt, 4/F | verified | address | HKRS1255-3-168 |
-| 15:4:4 | 32 Tung Tau Tsuen Road | 4/F | shop | business premises (trade not in the title) | 羅釗林 | 32 ttt, 4/F | guess | address | HKRS1255-3-181 |
-| 16:0:0 | 17 Tung Tau Tsuen Road | G/F | food workshop | food products | D59/102 + 103 京都食品公司 | 10A ttt, G/F | verified | address, next building | HKRS1255-3-557A |
-| 16:1:0 | 17 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | Liu Kwan China New Medical Clinic 廖坤中國新医針灸診所 | 16 ttt, 1/F | verified | address, next building | HKRS1255-3-575 |
-| 17:0:0 | 4 Kwong Ming Street | G/F | metal + machine works | metalware factory | Li Peng Metal Works Factory 李炳五金廠 | 4 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-416A, HKRS1255-3-416B; HKRS1255-3-416A, -416B |
-| 17:3:1 | 4 Kwong Ming Street | 3/F | other workshop | factory | 順成工藝社 | 3 kms, 3/F | verified | address, next building | HKRS1255-3-440 |
-| 18:0:0 | 35 Tung Tau Tsuen Road | G/F | shop | store | 南怡士多 | 34 ttt, G/F | verified | address, next building | HKRS1255-3-182 |
-| 18:1:0 | 35 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | 張挺華診所 | 35 ttt, 1/F | verified | address, next building | HKRS1255-3-186 |
-| 18:2:0 | 35 Tung Tau Tsuen Road | 2/F | doctor / clinic | doctor's clinic: skin, internal and general medicine, acupuncture, electrotherapy, pregnancy tests | 張廷華皮膚專科 (Cheung Ting Wah skin clinic) | 35 ttt, 2/F | likely | address, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
-| 19:0:0 | 2-3 Lo Yan Street | G/F | metal + machine works | metal works | Chung Nam Metal & Electroplate Factory [Factory] 中南五金電鍍廠 | 2-3 lys, G/F | verified | address | HKRS1255-3-59 |
-| 19:1:0 | 2-3 Lo Yan Street | 1/F | doctor / clinic | clinic | Yau's Clinic 邱氏診所 | 12 ttt, 1/F | verified | address | HKRS1255-3-565 |
+| 14:0:0 | 34 Tung Tau Tsuen Road | G/F | eating house | cockloft store/sleeping space over the café | Chung Fat Café cockloft | ttt | likely | street | p56 |
+| 14:0:1 | 34 Tung Tau Tsuen Road | G/F | shop | store | 南怡士多 | 34 ttt, G/F | verified | address | HKRS1255-3-182 |
+| 14:1:0 | 34 Tung Tau Tsuen Road | 1/F | doctor / clinic | doctor's clinic | Chi On clinic (慈安醫所) | ttt | likely | street | p8 photo |
+| 14:10:0 | 34 Tung Tau Tsuen Road | 10/F | doctor / clinic | doctor's clinic | Lung Mun clinic (龍門醫務所 / 龍門診所) | ttt | likely | street | pp122-123; p152; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 15:0:0 | 32 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | Ho Lee Plastic Factory [Factory] | 32 ttt, G/F | verified | address | HKRS1255-3-206 |
+| 15:0:1 | 32 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory in a basement | Hip Hing Plastic Factory (協興塑膠廠) | 31C ttt, G/F | likely | address, next building | HKRS1255-3-174 |
+| 15:0:2 | 32 Tung Tau Tsuen Road | G/F | dentist | dentist | Lam Sam Yuk Dentistry | 32 ttt, G/F | verified | address | HKRS1255-3-157 |
+| 15:1:0 | 32 Tung Tau Tsuen Road | 1/F | dentist | dentist's surgery | Tak Yuen dentistry (德源牙科) | 32 ttt, 1/F | verified | address | p9 photo strip |
+| 15:1:1 | 32 Tung Tau Tsuen Road | 1/F | services + utilities | hair salon | Cartik hair salon (卡迪髪廊) | 31D ttt, 1/F | likely | address, next building | p8 photo; HKRS1255-3-177 |
+| 15:1:4 | 32 Tung Tau Tsuen Road | 1/F | shop | business premises (trade not in the title) | Also Known as Shing Hing Building Stage I | No 31B ttt, 1/F | guess | address, next building | HKRS1255-3-201 |
+| 15:2:0 | 32 Tung Tau Tsuen Road | 2/F | office / company | trading company | 合利貿易公司 | 32 ttt, 2/F | verified | address | HKRS1255-3-209 |
+| 15:3:0 | 32 Tung Tau Tsuen Road | 3/F | doctor / clinic | doctor's clinic (診所); Chinese-Western medicine is probable but not certain | Chinese-Western clinic at 32 Tung Tau Tsuen Road (…西診所 (first character hidden in the binding; probably 中西診所)) | 32 ttt, 3/F | likely | address | p9 photo strip; https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 15:4:0 | 32 Tung Tau Tsuen Road | 4/F | office / company | trading company | Ngai Lai Artistic Co. (藝麗公司) | 32 ttt, 4/F | verified | address | HKRS1255-3-168 |
+| 15:4:1 | 32 Tung Tau Tsuen Road | 4/F | shop | business premises (trade not in the title) | 羅釗林 | 32 ttt, 4/F | guess | address | HKRS1255-3-181 |
+| 15:4:4 | 32 Tung Tau Tsuen Road | 4/F | dentist | dental clinic | Ngai Hon Man Dentistry (魏漢文牙科) | ttt | likely | street | jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 16:0:0 | 17 Tung Tau Tsuen Road | G/F | eating house | cha chaan teng café | Chung Fat Café | ttt, map 11 | likely | map, next building | pp56-58; pp352-353, no. 11; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 16:1:0 | 17 Tung Tau Tsuen Road | 1/F | services + utilities | barber's shop (barber's pole) | New Lung Dou barber's (新龍都理髮公司) | ttt | likely | street | p152 (caption p153); https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 16:4:0 | 17 Tung Tau Tsuen Road | 4/F | dentist | dentist's surgery | Hung Wai dentistry (雄偉牙科) | ttt | likely | street | p152 |
+| 17:0:0 | 4 Kwong Ming Street | G/F | metal + machine works | metalware factory | Li Peng Metal Works Factory (李炳五金廠) | 4 Kwong Ming St 1st Lane, G/F | verified | street | HKRS1255-3-416A, HKRS1255-3-416B; HKRS1255-3-416A, -416B |
+| 17:0:0 | 4 Kwong Ming Street | G/F | food workshop | food products | Wing Fung Building (羅英記食品公司) | 4 kms, G/F | verified | address, shares a unit | HKRS1255-3-426 |
+| 18:0:0 | 35 Tung Tau Tsuen Road | G/F | dentist | dentist | Chong Tin Lai Dentistry (莊天麗牙科) | ttt | likely | clue, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 18:1:0 | 35 Tung Tau Tsuen Road | 1/F | dentist | dentist's surgery and denture work | Suen Yeung Kwong dentistry (孫仰光牙科 / 孫仰光鑲牙 / 仰光牙科) | ttt | likely | street | p133 (1972 photo); p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 18:2:0 | 35 Tung Tau Tsuen Road | 2/F | doctor / clinic | doctor's clinic: skin, internal and general medicine, acupuncture, electrotherapy, pregnancy tests | Cheung Ting Wah Skin Clinic (張廷華皮膚專科) | 35 ttt, 2/F | likely | address, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 18:4:0 | 35 Tung Tau Tsuen Road | 4/F | herbalist / medicine shop | Chinese medicine doctor (direction sign with arrow) | Tang Kwong, Chinese doctor (鄧光中醫師) | ttt | guess | street | p174 |
+| 19:0:0 | 2-3 Lo Yan Street | G/F | metal + machine works | metal works | Chung Nam Metal & Electroplate Factory [Factory] (中南五金電鍍廠) | 2-3 lys, G/F | verified | address | HKRS1255-3-59 |
+| 19:0:0 | 2-3 Lo Yan Street | G/F | other workshop | industrial company, with a store room opposite | Hong Kong Industrial Co. (香港實業公司) | 2 Lo Yan Back Street, G/F | verified | street, shares a unit | HKRS1255-3-317 |
+| 19:0:0 | 2-3 Lo Yan Street | G/F | shop | store | Wing Shing Store | 12 ttt, G/F | verified | address, shares a unit | HKRS1255-3-568 |
+| 19:1:0 | 2-3 Lo Yan Street | 1/F | doctor / clinic | clinic | Yau's Clinic (邱氏診所) | 12 ttt, 1/F | verified | address | HKRS1255-3-565 |
 | 19:3:0 | 2-3 Lo Yan Street | 3/F | office / company | trading company | 燦時公司 | 12 ttt, 3/F | verified | address | HKRS1255-3-567 |
 | 20:0:0 | 31A Tung Tau Tsuen Road | G/F | shop | store | Hang Fa Chuen Store | 31A ttt, G/F | verified | address | HKRS1255-3-155 |
-| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | shoe or leather maker | Also Known as 1/F, 3, 6th Lane, Tai Chang Street 同德鞋廠 | 31C ttt, 1/F | verified | address | HKRS1255-3-171 |
+| 20:0:0 | 31A Tung Tau Tsuen Road | G/F | eating house | ice café (冰室) | 甘河冰室 | 31E ttt, G/F | verified | address, shares a unit | HKRS1255-3-156 |
+| 20:0:0 | 31A Tung Tau Tsuen Road | G/F | other workshop | factory | Ming Fat Factory (明發貿易公司) | 31D ttt, G/F | verified | address, shares a unit | HKRS1255-3-165 |
+| 20:0:0 | 31A Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | 31B, TTT [Tung Tau Tsuen] Road, G/F, Flat B, Shing Hing Bldg | 31B ttt, G/F | verified | address, shares a unit | HKRS1255-3-239 |
+| 20:0:0 | 31A Tung Tau Tsuen Road | G/F | doctor / clinic | members' clinic of the HK-Kowloon Yeung Kong Welfare Association (Kowloon branch); Western-medicine doctor Hui Tin Fan | Yeung Kong Welfare Association members' clinic (Dr Hui Tin Fan) (港九楊江福利會九龍分會會員診療所 (西醫許天勳)) | 31D ttt, G/F | verified | address, shares a unit | p8 photo (caption p9); building no. from GRS HKRS1255-3-176/-177 |
+| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | shoe or leather maker | Also Known as 1/F, 3, 6th Lane, Tai Chang Street (同德鞋廠) | 31C ttt, 1/F | verified | address | HKRS1255-3-171 |
+| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | services + utilities | hair salon | 卡迪髪廊 | 31 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-177 |
+| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | garment maker | Yick Fung Garment | 31D ttt, 1/F | verified | address, shares a unit | HKRS1255-3-178 |
+| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | office / company | trading company | 香港民宜公司 | 31B ttt, 1/F | verified | address, shares a unit | HKRS1255-3-202 |
+| 20:1:0 | 31A Tung Tau Tsuen Road | 1/F | food workshop | catering workshop making student lunch boxes | Student lunch-box workshop (李漢明) | 31B ttt, 1/F | verified | address, shares a unit | HKRS1255-3-240 |
 | 20:1:1 | 31A Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | Tai Chung Clinic | 31D ttt, 1/F | verified | address | HKRS1255-3-176; p8 photo; HKRS1255-3-176 |
-| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | garment, textile + shoe workshop | garment maker | You Kwong Garments Company 耀光貿易公司 | 31D ttt, 2/F | verified | address | HKRS1255-3-179 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | garment, textile + shoe workshop | garment maker | You Kwong Garments Company (耀光貿易公司) | 31D ttt, 2/F | verified | address | HKRS1255-3-179 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | food workshop | noodle maker | 萬生製麵廠 | 31B ttt, 2/F | verified | address, shares a unit | HKRS1255-3-241 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | metal + machine works | metal works | 協興機器製模廠 | 31B ttt, 2/F | verified | address, shares a unit | HKRS1255-3-242 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | food workshop | noodle maker | 美香麵廠 | 31B ttt, 2/F | verified | address, shares a unit | HKRS1255-3-243 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | food workshop | roast meat | also known as 6/F (周坤興燒腊) | 31B ttt, 2/F | verified | address, shares a unit | HKRS1255-3-244 |
+| 20:2:0 | 31A Tung Tau Tsuen Road | 2/F | other workshop | factory (trade not stated) | Ming Fat Factory | 31A ttt, 2/F | verified | address, shares a unit | HKRS1255-3-165 |
 | 20:2:1 | 31A Tung Tau Tsuen Road | 2/F | metal + machine works | electrical works | Chiu Kwong Electrical | 31B ttt, 2/F | verified | address | HKRS1255-3-203 |
 | 20:3:0 | 31A Tung Tau Tsuen Road | 3/F | office / company | trading company | Wing Shing Company | 31B ttt, 3/F | verified | address | HKRS1255-3-204 |
+| 20:3:0 | 31A Tung Tau Tsuen Road | 3/F | garment, textile + shoe workshop | fur workshop | Tse Choi Kwan Fur Workshop | 31C ttt, 3/F | verified | address, shares a unit | HKRS1255-3-167 |
 | 20:3:1 | 31A Tung Tau Tsuen Road | 3/F | dentist | dentist | 中國西醫全科診所暨牙科診所 | 31B ttt, 3/F | verified | address | HKRS1255-3-246 |
 | 20:4:0 | 31A Tung Tau Tsuen Road | 4/F | garment, textile + shoe workshop | garment maker | Mei Lung Garment Factory | 31D ttt, 4/F | verified | address | HKRS1255-3-180 |
 | 20:5:0 | 31A Tung Tau Tsuen Road | 5/F | flats | flat (use not written) | B24/115, Flat B, 5/F, Rear Blk 3, Shing Hing Bldg, 31B TTT | 31B ttt, 5/F | verified | address | p340 |
 | 20:5:1 | 31A Tung Tau Tsuen Road | 5/F | flats | flat (use not written) | B24/116, Flat A, 5/F, Rear Blk 3, Shing Hing Bldg, 31B TTT | 31B ttt, 5/F | verified | address | p340 |
 | 20:6:0 | 31A Tung Tau Tsuen Road | 6/F | shop | store | 源發隆士多 | 31B ttt, 6/F | verified | address | HKRS1255-3-205 |
-| 21:0:0 | 18 Tung Tau Tsuen Road | G/F | food workshop | roast meat | Shun Cheong | 10A ttt, G/F | verified | address, next building | HKRS1255-3-563 |
-| 21:1:0 | 18 Tung Tau Tsuen Road | 1/F | dentist | dentist's surgery | Ma Hing Fai dentistry 馬慶輝牙科 | ttt | likely | street | p8 photo |
-| 21:4:0 | 18 Tung Tau Tsuen Road | 4/F | dentist | dental clinic | 中華牙科診所 (Chung Wah Dental Clinic) | ttt | likely | clue | p284 |
+| 21:0:0 | 18 Tung Tau Tsuen Road | G/F | shop | store | Tai Cheong Store (泰昌士多) | 17 ttt, G/F | verified | address | HKRS1255-3-570; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html; p284; businesses.json 'G/F, 17 TTT RD. (Tai Cheong Store) 泰昌士多' |
+| 21:1:0 | 18 Tung Tau Tsuen Road | 1/F | doctor / clinic | doctor's clinic (internal, surgery, women, children) | Hong Ning clinic (康寧診所) | ttt | likely | street | p9 photo strip |
+| 21:4:0 | 18 Tung Tau Tsuen Road | 4/F | dentist | dental clinic | Chung Wah Dental Clinic (中華牙科診所) | ttt | likely | clue | p284 |
 | 22:0:0 | 8 Tung Tau Tsuen Road | G/F | dentist | dentist | 蕭秉陞牙科 | 6 ttt, G/F | verified | address | HKRS1255-3-547 |
-| 22:2:0 | 8 Tung Tau Tsuen Road | 2/F | herbalist / medicine shop | Western-medicine dealer, upper-floor premises | Hing Fat Western medicine (second premises) 興發西藥行 | 7 ttt, 2/F | verified | address | HKRS1255-3-551 |
-| 23:0:0 | Building 23 | G/F | doctor / clinic | medical clinic, G/F shop behind a folding gate | '…Ching' Clinic (first character cut off) …正診療所 | lsr, G/F | likely | clue, next building | https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg |
-| 23:0:1 | Building 23 | G/F | dentist | dental clinic | Lam Mei Kwong dental clinic | 4A lsr, map 19 | likely | address, next building | p11 |
-| 24:0:0 | 30-31 Tung Tau Tsuen Road | G/F | doctor / clinic | members' clinic of the HK-Kowloon Yeung Kong Welfare Association (Kowloon branch); Western-medicine doctor Hui Tin Fan | Yeung Kong Welfare Association members' clinic (Dr Hui Tin Fan) 港九楊江福利會九龍分會會員診療所 (西醫許天勳) | 31D ttt, G/F | verified | address, next building | p8 photo (caption p9); building no. from GRS HKRS1255-3-176/-177 |
-| 24:0:1 | 30-31 Tung Tau Tsuen Road | G/F | dentist | dentist | Wong Wai Kuen Dentistry 王偉權牙科 | 30-31 ttt, G/F | verified | address | HKRS1255-3-154 |
+| 22:1:0 | 8 Tung Tau Tsuen Road | 1/F | doctor / clinic | Western-medicine doctor's clinic | Sun Wah clinic (Dr Lee Hung Shan) (新華醫所 西醫李雄山) | ttt | likely | street | p8 photo |
+| 22:2:0 | 8 Tung Tau Tsuen Road | 2/F | herbalist / medicine shop | Western-medicine dealer, upper-floor premises | Hing Fat Western medicine (second premises) (興發西藥行) | 7 ttt, 2/F | verified | address | HKRS1255-3-551 |
+| 24:0:0 | 30-31 Tung Tau Tsuen Road | G/F | other workshop | factory | Wah Cheong Handbag Factory | 31D ttt | likely | address, next building | HKRS1255-3-175 |
+| 24:0:1 | 30-31 Tung Tau Tsuen Road | G/F | dentist | dentist | Wong Wai Kuen Dentistry (王偉權牙科) | 30-31 ttt, G/F | verified | address | HKRS1255-3-154 |
 | 24:1:0 | 30-31 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | 黃照垣中醫 | 30 ttt, 1/F | verified | address | HKRS1255-3-164 |
-| 24:1:1 | 30-31 Tung Tau Tsuen Road | 1/F | shop | business premises (trade not in the title) | Also Known as Shing Hing Building Stage I | No 31B ttt, 1/F | guess | address, next building | HKRS1255-3-201 |
-| 24:2:0 | 30-31 Tung Tau Tsuen Road | 2/F | flats | two floors given to the café owners in a 1970s redevelopment (café and home) | Ng family's two storeys in the 11-storey building | ttt | likely | street, next building | p57 |
-| 24:2:1 | 30-31 Tung Tau Tsuen Road | 2/F | dentist | dental clinic | Dental clinic of the dentist 黃景志 黃景志 (dentist's name; clinic name not given) | 25 ttt | likely | address, next building | https://gwulo.com/media/44692; p8 photo |
-| 25:0:0 | 16 Tung Tau Tsuen Road | G/F | metal + machine works | antenna cable factory | Toney Antenna Cord Factory 通行金屬制線廠 | 5 Lo Yan St 1st Lane, G/F | verified | street | HKRS1255-3-458 |
-| 25:0:1 | 16 Tung Tau Tsuen Road | G/F | food workshop | roast meat | Yau Kee 友記燒臘 | 5 lys, G/F | verified | address | HKRS1255-3-61 |
-| 25:0:2 | 16 Tung Tau Tsuen Road | G/F | food workshop | roast meat | Kwok Kee Roasted Meat 國記燒腊 | 19 lys, G/F | verified | address, next building | HKRS1255-3-457B |
+| 25:0:0 | 16 Tung Tau Tsuen Road | G/F | metal + machine works | antenna cable factory | Toney Antenna Cord Factory (通行金屬制線廠) | 5 Lo Yan St 1st Lane, G/F | verified | street | HKRS1255-3-458 |
+| 25:0:1 | 16 Tung Tau Tsuen Road | G/F | food workshop | roast meat | Yau Kee (友記燒臘) | 5 lys, G/F | verified | address | HKRS1255-3-61 |
+| 25:0:2 | 16 Tung Tau Tsuen Road | G/F | shop | business premises (trade not in the title) | Muk Kee (木記) | 10A ttt, G/F | guess | address, next building | HKRS1255-3-593 |
 | 25:1:1 | 16 Tung Tau Tsuen Road | 1/F | shop | business premises (trade not in the title) | Lau Fat Mau | 3 lys, 1/F | guess | address, next building | HKRS1255-3-60 |
 | 25:2:0 | 16 Tung Tau Tsuen Road | 2/F | association / community | kaifong association | Kowloon Walled City Kai Fong Welfare Associations | 16 ttt, 2/F | verified | address | HKRS1255-3-578A |
 | 25:2:1 | 16 Tung Tau Tsuen Road | 2/F | association / community | kaifong association | Kowloon Walled City Kai Fong Welfare Continuing Promotion Association | 16 ttt, 2/F | verified | address | HKRS1255-3-577A; HKRS1255-3-577A, -578A (ledgers -578B to -579); HKRS1255-2-110; HKRS590-5-747 |
-| 25:3:1 | 16 Tung Tau Tsuen Road | 3/F | association / community | kaifong association | KWC [Kowloon Walled City] Kai Fong Welfare Promotion Committee | 16 ttt, 3/F | verified | address | HKRS1255-3-577B; HKRS1255-3-577B; HKRS1255-1-7675, -7676; HKRS1078-1-83 |
-| 26:0:0 | Building 26 | G/F | dentist | dental laboratory and dentist's surgery | King's Dental Lab and Yip Wa Man dentist 健齒牙科 | 8 ttt, G/F | likely | address, next building | p152; HKRS1255-3-554 |
-| 26:0:1 | Building 26 | G/F | dentist | dental clinic (several signs) | 伍錫隆牙科 (Ng Sek Lung Dentistry) | ttt | likely | street, next building | jacket front |
-| 26:0:2 | Building 26 | G/F | dentist | dentist's surgery | Tam Shu Fai dentistry 譚樹輝牙科 | ttt | likely | street, next building | p8 photo |
-| 28:0:0 | 6-8 Kwong Ming Street | G/F | food workshop | food products | Wing Fung Building 羅英記食品公司 | 4 kms, G/F | verified | address, next building | HKRS1255-3-426 |
-| 28:0:1 | 6-8 Kwong Ming Street | G/F | plastics factory | plastics factory | 達成膠廠 | 5 kms, G/F | verified | address, next building | HKRS1255-3-441 |
-| 28:1:0 | 6-8 Kwong Ming Street | 1/F | other workshop | toy maker | 1/F, 5 Kwong Ming Street, Front, Wing Kwong House - Tung Shi | 5 kms, 1/F | verified | address, next building | HKRS1255-3-436B |
-| 29:0:0 | 19A Lung Shing Road | G/F | shop | store | Lam Shing Fung Store 林威豐商店 | 19A lsr, G/F | verified | address | HKRS1255-3-375 |
-| 29:0:1 | 19A Lung Shing Road | G/F | dentist | dentist | Lai Woon Sun Dentistry 黎煥新牙科 | 22 lsr, G/F | verified | address, next building | HKRS1255-3-415 |
+| 25:3:1 | 16 Tung Tau Tsuen Road | 3/F | association / community | kaifong association | Kai Fong Welfare Promotion Committee | 16 ttt, 3/F | verified | address | HKRS1255-3-577B; HKRS1255-3-577B; HKRS1255-1-7675, -7676; HKRS1078-1-83 |
+| 28:0:0 | 6-8 Kwong Ming Street | G/F | plastics factory | plastics factory | 達成膠廠 | 5 kms, G/F | verified | address, next building (the model's building at this address has no room on G/F) | HKRS1255-3-441 |
+| 28:0:1 | 6-8 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | G/F, 6-8 Kwong Ming Street, KWC [Kowloon Walled City]. Hang | 6-8 kms, G/F | guess | address | HKRS1255-3-425A |
+| 28:1:0 | 6-8 Kwong Ming Street | 1/F | other workshop | toy maker | 1/F, 5 Kwong Ming Street, Front, Wing Kwong House - Tung Shi | 5 kms, 1/F | verified | address, next building (the model's building at this address has no room on 1/F) | HKRS1255-3-436B |
+| 29:0:0 | 19A Lung Shing Road | G/F | shop | store | Lam Shing Fung Store (林威豐商店) | 19A lsr, G/F | verified | address | HKRS1255-3-375 |
+| 29:0:1 | 19A Lung Shing Road | G/F | doctor / clinic | medical clinic, G/F shop behind a folding gate | '…Ching' Clinic (first character cut off) (…正診療所) | lsr, G/F | likely | clue, next building | https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg |
 | 29:1:0 | 19A Lung Shing Road | 1/F | office / company | trading company | Flat C, 1/F, Tung Sing House, 20-24 Lung Shing Road - Yule A | 20-24 lsr, 1/F | verified | address | HKRS1255-3-477 |
-| 30:0:0 | 19 Tung Tau Tsuen Road | G/F | shop | store | Tai Cheong Store 泰昌士多 | 17 ttt, G/F | verified | address, next building | HKRS1255-3-570; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html; p284; businesses.json 'G/F, 17 TTT RD. (Tai Cheong Store) 泰昌士多' |
-| 30:0:1 | 19 Tung Tau Tsuen Road | G/F | eating house | cha chaan teng café | Chung Fat Café | ttt, map 11 | likely | map, next building | pp56-58; pp352-353, no. 11; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 30:0:2 | 19 Tung Tau Tsuen Road | G/F | eating house | ice café (冰室) | Chung Fat Café | 19 ttt, G/F | verified | address | HKRS1255-3-312 |
-| 30:0:3 | 19 Tung Tau Tsuen Road | G/F | shop | leather-shoe shop | Sing Chow Shoes (星洲皮鞋), Tung Tau Tsuen Road 星洲鞋店 | 19B ttt, G/F | verified | address | HKRS1255-3-309; p284; businesses.json '19 B, TTT Rd, G/F & 42, LY St., 2/F (星洲鞋店)' |
+| 30:0:0 | 19 Tung Tau Tsuen Road | G/F | shop | leather-shoe shop | Sing Chow Shoes, Tung Tau Tsuen Road (星洲鞋店) | 19B ttt, G/F | verified | address | HKRS1255-3-309; p284; businesses.json '19 B, TTT Rd, G/F & 42, LY St., 2/F (星洲鞋店)' |
+| 30:0:1 | 19 Tung Tau Tsuen Road | G/F | dentist | dental clinic (three signs) | Hui Chi Cheong Dentistry (許熾昌牙科) | ttt | likely | clue, next building | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 30:0:2 | 19 Tung Tau Tsuen Road | G/F | dentist | dentist | Lok Fuk Wah Dentistry (樂福華牙科) | ttt | likely | street | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 30:0:3 | 19 Tung Tau Tsuen Road | G/F | eating house | ice café (冰室) | Chung Fat Café | 19 ttt, G/F | verified | address | HKRS1255-3-312 |
 | 30:1:0 | 19 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | Dr. CHAN WING LAN | 19 ttt, 1/F | verified | address | HKRS1255-3-310; p60; GRS '1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN' |
 | 30:1:2 | 19 Tung Tau Tsuen Road | 1/F | food workshop | bakery of Ng Kam Mui's brother | Bakery behind the Chung Fat Café | 19 ttt, map 11 | likely | address | p291 |
 | 30:2:0 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | clinic | Mei Tung Medical Laboratory Centre | 18 ttt, 2/F | verified | address | HKRS1255-3-308; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html; p284; businesses.json '2/F, 18, TTT Rd (Mei Tung Medical Laboratory Centre)' |
-| 30:2:1 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | doctor's clinic | Lam Tin Yam clinic 林天任診所 | ttt | likely | street | p8 photo |
-| 30:2:2 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | Western-medicine clinic: internal, paediatrics, gynaecology, X-ray and laboratory, skin, VD | 萬國診所 (Man Kwok / International Clinic), Dr Mui Lap Lim | 18 ttt, 2/F | likely | address | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 30:2:3 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | gynaecology clinic | 蕭美美婦科 (Siu Mei Mei gynaecology) | 18 ttt, 2/F | likely | address | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 30:3:0 | 19 Tung Tau Tsuen Road | 3/F | other workshop | factory | Tung Lik Manufactory Co. 通力製造廠 | 19 ttt, 3/F | likely | address | HKRS1255-3-311 |
+| 30:2:1 | 19 Tung Tau Tsuen Road | 2/F | flats | two floors given to the café owners in a 1970s redevelopment (café and home) | Ng family's two storeys in the 11-storey building | ttt | likely | street | p57 |
+| 30:2:2 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | Western-medicine clinic: internal, paediatrics, gynaecology, X-ray and laboratory, skin, VD | Man Kwok (International) Clinic, Dr Mui Lap Lim (萬國診所) | 18 ttt, 2/F | likely | address | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 30:2:3 | 19 Tung Tau Tsuen Road | 2/F | doctor / clinic | gynaecology clinic | Siu Mei Mei Gynaecology (蕭美美婦科) | 18 ttt, 2/F | likely | address | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 30:3:0 | 19 Tung Tau Tsuen Road | 3/F | other workshop | factory | Tung Lik Manufactory Co. (通力製造廠) | 19 ttt, 3/F | likely | address | HKRS1255-3-311 |
 | 30:5:0 | 19 Tung Tau Tsuen Road | 5/F | other workshop | factory | 裕東行 | 1A ttt, 5/F | verified | street | HKRS1255-3-509A |
-| 31:0:0 | 6 Lo Yan Street | G/F | plastics factory | metal and imitation-marble plastic workshop | Ma Yee Kee Metal Cloud-stone Plastic Manufactory 馬儒記五金雲石膠製品 | 6 Lo Yan St 1st Lane, G/F | verified | street | HKRS1255-3-456 |
-| 31:0:1 | 6 Lo Yan Street | G/F | other workshop | industrial company, with a store room opposite | Hong Kong Industrial Co. 香港實業公司 | 2 Lo Yan Back Street, G/F | verified | street, next building | HKRS1255-3-317 |
-| 31:0:2 | 6 Lo Yan Street | G/F | metal + machine works | metal works | 頌榮金屬製品廠 | 10A ttt, G/F | verified | address, next building | HKRS1255-3-543 |
-| 31:1:0 | 6 Lo Yan Street | 1/F | food workshop | food products | Foon Lok Food Stuffs 歡樂食品公司 | 16 ttt, 1/F | verified | address | HKRS1255-3-573 |
-| 31:1:1 | 6 Lo Yan Street | 1/F | office / company | property agent | Hon Hing Property Company 漢興地產公司 | 16 ttt, 1/F | verified | address | HKRS1255-3-572 |
+| 31:0:0 | 6 Lo Yan Street | G/F | plastics factory | plastics factory | Keung Yip PVC Plastic Mfy (軟膠製品廠) | 16 ttt, G/F | verified | address | HKRS1255-3-571 |
+| 31:0:1 | 6 Lo Yan Street | G/F | plastics factory | metal and imitation-marble plastic workshop | Ma Yee Kee Metal Cloud-stone Plastic Manufactory (馬儒記五金雲石膠製品) | 6 Lo Yan St 1st Lane, G/F | verified | street | HKRS1255-3-456 |
+| 31:0:2 | 6 Lo Yan Street | G/F | other workshop | factory | Kam Tak Handbags Factory (錦德手袋廠) | 10A ttt | likely | address, next building | HKRS1255-3-591 |
+| 31:1:0 | 6 Lo Yan Street | 1/F | food workshop | food products | Foon Lok Food Stuffs (歡樂食品公司) | 16 ttt, 1/F | verified | address | HKRS1255-3-573 |
+| 31:1:1 | 6 Lo Yan Street | 1/F | office / company | property agent | Hon Hing Property Company (漢興地產公司) | 16 ttt, 1/F | verified | address | HKRS1255-3-572 |
+| 31:1:1 | 6 Lo Yan Street | 1/F | doctor / clinic | clinic | Liu Kwan China New Medical Clinic (廖坤中國新医針灸診所) | 16 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-575 |
 | 31:1:2 | 6 Lo Yan Street | 1/F | doctor / clinic | bone-setter | Cheong Chuen Bone-setter | 16 ttt, 1/F | verified | address | HKRS1255-3-574 |
-| 31:2:1 | 6 Lo Yan Street | 2/F | doctor / clinic | clinic | King Wah Clinic 健華診所 | 16 ttt, 2/F | verified | address | HKRS1255-3-576 |
+| 31:2:1 | 6 Lo Yan Street | 2/F | doctor / clinic | clinic | King Wah Clinic (健華診所) | 16 ttt, 2/F | verified | address | HKRS1255-3-576 |
 | 31:3:1 | 6 Lo Yan Street | 3/F | association / community | Kai Fong Association office (open weekdays, two full-time secretaries) and function room (Christmas party, dental-equipment exhibitions) | Kowloon Walled City Kai Fong Association offices | 16 ttt, 3/F, map 15 | verified | address | pp178-181, 245; p40; pp352-353, no. 15; https://www.hk01.com/article/39194; https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/ |
 | 32:0:0 | near 20 Tung Tau Tsuen Road | G/F | dentist | dentist | 馬創忠牙科 | 20-22 ttt, G/F | verified | address | HKRS1255-3-278 |
 | 32:0:1 | near 20 Tung Tau Tsuen Road | G/F | office / company | trading company | 和盛號 | 20A ttt, G/F | verified | address | HKRS1255-3-277 |
-| 32:0:2 | near 20 Tung Tau Tsuen Road | G/F | other workshop | industrial workshop in basement and basement mezzanine | Wai Tai Industrial Co. 偉大實業有限公司 | 24 ttt, G/F | verified | address, next building | HKRS1255-3-268 |
-| 32:0:3 | near 20 Tung Tau Tsuen Road | G/F | food workshop | noodle maker | G/F, 24, TTT Rd [Tung Tau Tsuen Road]., Luen Hing Bldg, Luen | 24 ttt, G/F | verified | address, next building | HKRS1255-3-301 |
-| 32:1:0 | near 20 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic upstairs (sign: 由此樓上, 'upstairs from here') | Wing Hong Clinic 永康診所 | 24 ttt | guess | address, next building | pp174-175 |
-| 32:1:1 | near 20 Tung Tau Tsuen Road | 1/F | metal + machine works | metal works | Wai Luen Jewel Watches Welding Co. 偉聯飾錶燒焊 | 20 ttt, 1/F | verified | address | HKRS1255-3-314 |
+| 32:0:2 | near 20 Tung Tau Tsuen Road | G/F | dentist | dental clinic (two signs) | Mok Sze Luk Dental Room (莫斯錄牙室) | ttt | likely | street | p285 |
+| 32:0:3 | near 20 Tung Tau Tsuen Road | G/F | office / company | trading company | Kin Shing Trading Company | 24 ttt | likely | address, next building | HKRS1255-3-304 |
+| 32:1:0 | near 20 Tung Tau Tsuen Road | 1/F | doctor / clinic | bone-setting (跌打) clinic | Cheung Chuen Bone-setter (張泉跌打) | ttt | likely | street | jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 32:1:1 | near 20 Tung Tau Tsuen Road | 1/F | metal + machine works | metal works | Wai Luen Jewel Watches Welding Co. (偉聯飾錶燒焊) | 20 ttt, 1/F | verified | address | HKRS1255-3-314 |
 | 32:1:2 | near 20 Tung Tau Tsuen Road | 1/F | dentist | dentist | Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun | 20-22 ttt, 1/F | verified | address | HKRS1255-3-280A, HKRS1255-3-280B; HKRS1255-3-298 |
 | 32:1:3 | near 20 Tung Tau Tsuen Road | 1/F | doctor / clinic | clinic | 同安診所 | 20-22 ttt, 1/F | verified | address | HKRS1255-3-282; p8 photo; HKRS1255-3-282 |
 | 32:1:4 | near 20 Tung Tau Tsuen Road | 1/F | food workshop | cakes and dim sum | 美香食品公司 | 20 ttt, 1/F | verified | address | HKRS1255-3-313A, HKRS1255-3-313B |
-| 32:2:1 | near 20 Tung Tau Tsuen Road | 2/F | doctor / clinic | gynaecologist's clinic | Wu Seung gynaecology clinic 胡湘婦科 | ttt | likely | street | p9 photo strip |
+| 32:2:1 | near 20 Tung Tau Tsuen Road | 2/F | dentist | dentist's surgery | Lai Sze dentist (麗斯牙醫) | ttt | likely | street | p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
 | 32:2:2 | near 20 Tung Tau Tsuen Road | 2/F | dentist | dentist | 德法牙科 | 20-22 ttt, 2/F | verified | address | HKRS1255-3-295 |
 | 32:2:3 | near 20 Tung Tau Tsuen Road | 2/F | dentist | dentist | 國強牙科 | 20-22 ttt, 2/F | verified | address | HKRS1255-3-296 |
 | 32:2:4 | near 20 Tung Tau Tsuen Road | 2/F | doctor / clinic | clinic | International Clinic | 20 ttt, 2/F | verified | address | HKRS1255-3-297 |
+| 32:3:2 | near 20 Tung Tau Tsuen Road | 3/F | doctor / clinic | Western-medicine clinic (two doctors named on the sign) | Kong Wah clinic (港華醫務所) | ttt | likely | street | p8 photo |
 | 32:4:2 | near 20 Tung Tau Tsuen Road | 4/F | herbalist / medicine shop | medicine shop | 國醫羅明德 | 20 ttt, 4/F | verified | address | HKRS1255-3-315 |
-| 33:0:0 | 1 Tai Chang Street | G/F | metal + machine works | watch-case workshop | Chung Kee watch-case factory 宗記錶殼工廠 | 1 Tai Chang St 6th Lane, G/F | verified | street | HKRS1255-3-200 |
-| 33:1:0 | 1 Tai Chang Street | 1/F | other workshop | factory | 緯亞製品公司 | 24 ttt, 1/F | verified | address, next building | HKRS1255-3-271; p165 (photo); businesses.json HKRS1255-3-271 (Flat A&B, 1/F, Stage 7 Luen Hing Building, 24 TTT) |
-| 33:2:0 | 1 Tai Chang Street | 2/F | plastics factory | plastics factory | Man Sang Plastic Company | 24 ttt, 2/F | verified | address, next building | HKRS1255-3-272 |
-| 33:3:0 | 1 Tai Chang Street | 3/F | other workshop | factory | 紀氏製造廠 | 24 ttt, 3/F | verified | address, next building | HKRS1255-3-306 |
-| 33:4:0 | 1 Tai Chang Street | 4/F | garment, textile + shoe workshop | garment maker | 鄭炎創 | 24 ttt, 4/F | verified | address, next building | HKRS1255-3-307 |
-| 33:6:0 | 1 Tai Chang Street | 6/F | metal + machine works | machinery workshop | Yu Yun Machinery Factory 余恩機器廠 | 1A Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-263 |
+| 33:0:0 | 1 Tai Chang Street | G/F | metal + machine works | watch-case workshop | Chung Kee watch-case factory (宗記錶殼工廠) | 1 Tai Chang St 6th Lane, G/F | verified | street | HKRS1255-3-200 |
+| 33:0:0 | 1 Tai Chang Street | G/F | metal + machine works | gem workshop | Ming Tat Gem Co. | 1 Tai Chang St 3rd Lane, G/F | verified | street, shares a unit | HKRS1255-3-258 |
+| 33:1:0 | 1 Tai Chang Street | 1/F | doctor / clinic | clinic upstairs (sign: 由此樓上, 'upstairs from here') | Wing Hong Clinic (永康診所) | 24 ttt | guess | address, next building | pp174-175 |
+| 33:2:0 | 1 Tai Chang Street | 2/F | dentist | dental clinic | Dental clinic of the dentist 黃景志 (黃景志 (dentist's name; clinic name not given)) | 25 ttt | likely | address, next building | https://gwulo.com/media/44692; p8 photo |
+| 33:3:0 | 1 Tai Chang Street | 3/F | metal + machine works | electronics and metal factory | Ching Kung Electronic & Metal Manufactory | ttt, 3/F | likely | street | HKRS1255-3-552 |
+| 33:6:0 | 1 Tai Chang Street | 6/F | metal + machine works | machinery workshop | Yu Yun Machinery Factory (余恩機器廠) | 1A Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-263 |
+| 33:11:0 | 1 Tai Chang Street | 11/F | flats | family flat (owned) | Ho Chi Kam's flat on Tung Tau Tsuen Road | ttt | likely | street | p28 |
 | 34:0:0 | 23 Tung Tau Tsuen Road | G/F | doctor / clinic | clinic | General Clinics | 24 ttt, G/F | verified | address | HKRS1255-3-267 |
+| 34:0:0 | 23 Tung Tau Tsuen Road | G/F | other workshop | industrial workshop in basement and basement mezzanine | Wai Tai Industrial Co. (偉大實業有限公司) | 24 ttt, G/F | verified | address, shares a unit | HKRS1255-3-268 |
+| 34:0:0 | 23 Tung Tau Tsuen Road | G/F | food workshop | noodle maker | G/F, 24, TTT Rd [Tung Tau Tsuen Road]., Luen Hing Bldg, Luen | 24 ttt, G/F | verified | address, shares a unit | HKRS1255-3-301 |
+| 34:0:0 | 23 Tung Tau Tsuen Road | G/F | doctor / clinic | clinic | 西醫邱家瑟 | 24A ttt, G/F | verified | address, shares a unit | HKRS1255-3-302 |
+| 34:0:0 | 23 Tung Tau Tsuen Road | G/F | shop | store | 廣泰號 | 24 ttt, G/F | verified | address, shares a unit | HKRS1255-3-334A, HKRS1255-3-334B; p174; HKRS1255-3-334A |
 | 34:1:0 | 23 Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | shoe or leather maker | 恒生鞋業 | 24A ttt, 1/F | verified | address | HKRS1255-3-264 |
+| 34:1:0 | 23 Tung Tau Tsuen Road | 1/F | other workshop | factory | 緯亞製品公司 | 24 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-271; p165 (photo); businesses.json HKRS1255-3-271 (Flat A&B, 1/F, Stage 7 Luen Hing Building, 24 TTT) |
+| 34:1:0 | 23 Tung Tau Tsuen Road | 1/F | other workshop | factory | 1/F, 24, Tung Tau Tsuen Road, Tai Shing Industrial Co., | 24 ttt, 1/F | verified | address, shares a unit | HKRS1255-3-303A, HKRS1255-3-303B |
 | 34:2:0 | 23 Tung Tau Tsuen Road | 2/F | office / company | property agent | Flat D, 2/F, 24A, TTT Rd [Tung Tau Tsuen Road]., Wing Wah Pr | 24A ttt, 2/F | verified | address | HKRS1255-3-265 |
+| 34:2:0 | 23 Tung Tau Tsuen Road | 2/F | plastics factory | plastics factory | Man Sang Plastic Company | 24 ttt, 2/F | verified | address, shares a unit | HKRS1255-3-272 |
 | 34:3:0 | 23 Tung Tau Tsuen Road | 3/F | garment, textile + shoe workshop | garment maker | 24, TTT Rd [Tung Tau Tsuen Road]., 3/F, Flat D, F+G, Luen Hi | 24 ttt, 3/F | verified | address | HKRS1255-3-305 |
+| 34:3:0 | 23 Tung Tau Tsuen Road | 3/F | other workshop | factory | 紀氏製造廠 | 24 ttt, 3/F | verified | address, shares a unit | HKRS1255-3-306 |
 | 34:4:0 | 23 Tung Tau Tsuen Road | 4/F | dentist | dentist | 魏香泉牙科 | 24 ttt, 4/F | verified | address | HKRS1255-3-273 |
+| 34:4:0 | 23 Tung Tau Tsuen Road | 4/F | garment, textile + shoe workshop | garment maker | 鄭炎創 | 24 ttt, 4/F | verified | address, shares a unit | HKRS1255-3-307 |
 | 34:6:0 | 23 Tung Tau Tsuen Road | 6/F | doctor / clinic | clinic | Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen | 24A ttt, 6/F | verified | address | HKRS1255-3-266 |
 | 34:7:0 | 23 Tung Tau Tsuen Road | 7/F | office / company | trading company | 珍華貿易公司 | 24 ttt, 7/F | verified | address | HKRS1255-3-274 |
 | 34:11:0 | 23 Tung Tau Tsuen Road | 11/F | garment, textile + shoe workshop | leather coat workshop | Leather Coat workshop | 24 ttt, 11/F | verified | address | HKRS1255-3-338 |
-| 35:0:0 | Building 35 | G/F | other workshop | factory | Kam Tak Handbags Factory 錦德手袋廠 | 10A ttt | likely | address, next building | HKRS1255-3-591 |
-| 35:0:1 | Building 35 | G/F | dentist | dental clinic (three signs) | 許熾昌牙科 (Hui Chi Cheong Dentistry) | ttt | likely | clue, next building | p284; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 36:0:0 | 28 Tung Tau Tsuen Road | G/F | food workshop | noodle maker | 聯興 | 25 ttt, G/F | verified | address, next building | HKRS1255-3-339 |
-| 36:1:0 | 28 Tung Tau Tsuen Road | 1/F | doctor / clinic | Western-medicine doctor's clinic | Sun Wah clinic (Dr Lee Hung Shan) 新華醫所 西醫李雄山 | ttt | likely | street | p8 photo |
-| 36:2:0 | 28 Tung Tau Tsuen Road | 2/F | doctor / clinic | Western-medicine doctor's clinic | Western doctor Chan Kit Sang's clinic 西醫陳杰生 | 26 ttt, 2/F | verified | address, next building | p8 photo (caption p9); https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 35:0:0 | Building 35 | G/F | dentist | dental clinic | Yeung Wing Kwong Dentistry (楊永光牙科) | ttt | likely | clue, next building | p284; jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 35:0:1 | Building 35 | G/F | shop | supermarket / provisions shop | Supermarket on the TTT frontage (和興?超級市場) | ttt, G/F | guess | street, next building | p8 photo |
+| 36:0:0 | 28 Tung Tau Tsuen Road | G/F | dentist | dental surgery | Tse Hon Keung Dentistry (謝漢強牙科) | ttt, G/F | likely | street | HKRS1255-3-549 |
 | 36:6:0 | 28 Tung Tau Tsuen Road | 6/F | office / company | trading company | 榕江號 | 28 ttt, 6/F | verified | address | HKRS1255-3-162 |
-| 36:11:0 | 28 Tung Tau Tsuen Road | 11/F | flats | family flat (owned) | Ho Chi Kam's flat on Tung Tau Tsuen Road | ttt | likely | street | p28 |
-| 37:0:0 | 3 Kwong Wah Street | G/F | office / company | trading company | San Hop Hing Company 三合興公司 | 10A ttt, G/F | verified | address, next building | HKRS1255-3-592 |
+| 37:0:0 | 3 Kwong Wah Street | G/F | shop | business on three ground floors, with cockloft (trade not stated) | Cheong Kee To Yuen (昌記桃園) | 2, 4, 5A tts, G/F | guess | street | HKRS1255-3-587 |
 | 37:0:1 | 3 Kwong Wah Street | G/F | plastics factory | plastics factory | 德生塑膠植毛廠 | 2-3 tht, G/F | verified | address | HKRS1255-3-588 |
-| 37:0:2 | 3 Kwong Wah Street | G/F | plastics factory | plastics factory | Wah Hing Plastic Factory 華興塑興廠 | 12 Lo Yan Back Street, G/F | verified | street, next building | HKRS1255-3-316A, HKRS1255-3-316B; HKRS1255-3-316A, -316B |
-| 37:0:3 | 3 Kwong Wah Street | G/F | plastics factory | plastics factory | Shield Flag Plastic Factory (Lo Yan Back Street premises) 盾旗塑膠廠 | 17A; 19 Lo Yan Back Street, G/F | verified | street, next building | HKRS1255-3-148 (ledger -149) |
-| 38:0:0 | Building 38 | G/F | store room | passage to the next building and storage space of the shop in front | Gap beside the Suzuki building, ground level | ssr, G/F | guess | street, next building | p209 |
-| 38:0:1 | Building 38 | G/F | shop | business premises (trade not in the title) | 黃源香 | 37 ttt, G/F | guess | address, next building | HKRS1255-3-190 |
-| 38:0:2 | Building 38 | G/F | doctor / clinic | doctor's clinic (internal medicine, surgery, gynaecology, paediatrics) | Doctor Kwok Wai Yan's clinic 醫師郭衛人 | ttt | likely | street, next building | p8 photo; pp284, 336 |
-| 38:0:3 | Building 38 | G/F | shop | business premises (trade not in the title) | Nam Wing Hing | No 43 ssr, G/F | guess | address, next building | HKRS1255-3-191 |
-| 39:0:0 | 8A Lo Yan Street | G/F | food workshop | noodle maker | Nam Fong Noodle Shop 南方麵店 | 8A lys, G/F | verified | address | HKRS1255-3-54 |
-| 39:0:1 | 8A Lo Yan Street | G/F | plastics factory | plastics factory | Hung Tai Plastic Bag Factory [Factory] 鴻泰膠袋廠 | 8 lys, G/F | verified | address | HKRS1255-3-55A, HKRS1255-3-55B |
-| 40:0:0 | near 28 Tung Tau Tsuen Road | G/F | other workshop | factory | 海棠花藝製品廠 | 25 ttt, G/F | verified | address, next building | HKRS1255-3-269 |
-| 40:1:0 | near 28 Tung Tau Tsuen Road | 1/F | dentist | dentist's surgery and denture work | Suen Yeung Kwong dentistry 孫仰光牙科 / 孫仰光鑲牙 / 仰光牙科 | ttt | likely | street | p133 (1972 photo); p8 photo; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 37:0:2 | 3 Kwong Wah Street | G/F | shop | provisions store (cigarette advertising sign) | Wing Fat Store, with a KENT sign (榮發士多) | ttt, G/F | guess | clue, next building | https://gwulo.com/media/22835 |
+| 39:0:0 | 8A Lo Yan Street | G/F | food workshop | noodle maker | Nam Fong Noodle Shop (南方麵店) | 8A lys, G/F | verified | address | HKRS1255-3-54 |
+| 39:0:0 | 8A Lo Yan Street | G/F | food workshop | roast meat | Kwok Kee Roasted Meat (國記燒腊) | 19 lys, G/F | verified | address, shares a unit | HKRS1255-3-457B |
+| 39:0:0 | 8A Lo Yan Street | G/F | plastics factory | plastics factory | Wah Hing Plastic Factory (華興塑興廠) | 12 Lo Yan Back Street, G/F | verified | street, shares a unit | HKRS1255-3-316A, HKRS1255-3-316B; HKRS1255-3-316A, -316B |
+| 39:0:0 | 8A Lo Yan Street | G/F | plastics factory | plastics factory | Shield Flag Plastic Factory (Lo Yan Back Street premises) (盾旗塑膠廠) | 17A; 19 Lo Yan Back Street, G/F | verified | street, shares a unit | HKRS1255-3-148 (ledger -149) |
+| 39:0:1 | 8A Lo Yan Street | G/F | plastics factory | plastics factory | Hung Tai Plastic Bag Factory [Factory] (鴻泰膠袋廠) | 8 lys, G/F | verified | address | HKRS1255-3-55A, HKRS1255-3-55B |
+| 39:0:1 | 8A Lo Yan Street | G/F | shop | store | Ng Wo Tai Store (吳和泰士多) | 10 lys, G/F | verified | address, shares a unit | HKRS1255-3-48 |
+| 40:0:0 | near 28 Tung Tau Tsuen Road | G/F | plastics factory | plastic moulding factory in a basement | Chi Tat Plastic Moulding Factory | 26 ttt, G/F | likely | address | HKRS1255-3-150 |
 | 40:2:0 | near 28 Tung Tau Tsuen Road | 2/F | doctor / clinic | clinic | 李靜瑜醫務所(中醫 | 26 ttt, 2/F | verified | address | HKRS1255-3-160 |
+| 40:2:0 | near 28 Tung Tau Tsuen Road | 2/F | doctor / clinic | Western-medicine doctor's clinic | Western doctor Chan Kit Sang's clinic (西醫陳杰生) | 26 ttt, 2/F | verified | address, shares a unit | p8 photo (caption p9); https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
 | 40:3:0 | near 28 Tung Tau Tsuen Road | 3/F | garment, textile + shoe workshop | shoe or leather maker | 盤氏鞋業 | 26 ttt, 3/F | verified | address | HKRS1255-3-161 |
-| 40:4:0 | near 28 Tung Tau Tsuen Road | 4/F | dentist | dental clinic | 魏漢文牙科 (Ngai Hon Man Dentistry) | ttt | likely | street | jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 41:0:0 | 21 Tung Tau Tsuen Road | G/F | office / company | trading company | Kin Shing Trading Company | 24 ttt | likely | address, next building | HKRS1255-3-304 |
+| 41:0:0 | 21 Tung Tau Tsuen Road | G/F | office / company | trading company office | Shing Tak Trading Co. (盛德貿易公司) | ttt | likely | street | p8 photo |
 | 41:0:1 | 21 Tung Tau Tsuen Road | G/F | plastics factory | plastics factory | 聯德塑膠廠 | 21 ttt, G/F | verified | address | HKRS1255-3-299B |
 | 41:0:2 | 21 Tung Tau Tsuen Road | G/F | office / company | trading company | 聯德貿易公司 | 21 ttt, G/F | verified | address | HKRS1255-3-299A |
-| 41:0:3 | 21 Tung Tau Tsuen Road | G/F | eating house | cockloft store/sleeping space over the café | Chung Fat Café cockloft | ttt | likely | street | p56 |
-| 41:0:4 | 21 Tung Tau Tsuen Road | G/F | doctor / clinic | clinic | 西醫邱家瑟 | 24A ttt, G/F | verified | address, next building | HKRS1255-3-302 |
-| 41:0:5 | 21 Tung Tau Tsuen Road | G/F | shop | store | 廣泰號 | 24 ttt, G/F | verified | address, next building | HKRS1255-3-334A, HKRS1255-3-334B; p174; HKRS1255-3-334A |
-| 41:0:6 | 21 Tung Tau Tsuen Road | G/F | dentist | dental surgery | Tse Hon Keung Dentistry 謝漢強牙科 | ttt, G/F | likely | street | HKRS1255-3-549 |
-| 41:0:7 | 21 Tung Tau Tsuen Road | G/F | doctor / clinic | doctor's clinic | 柔濟診所 (Yau Chai Clinic) | ttt | likely | street | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 41:0:3 | 21 Tung Tau Tsuen Road | G/F | shop | business premises (trade not in the title) | 太和商店 | 23 ttt, G/F | guess | address, next building | HKRS1255-3-276 |
+| 41:0:4 | 21 Tung Tau Tsuen Road | G/F | dentist | dental clinic (several signs) | Ng Sek Lung Dentistry (伍錫隆牙科) | ttt | likely | street | jacket front |
+| 41:0:5 | 21 Tung Tau Tsuen Road | G/F | dentist | dentist's surgery | Tam Shu Fai dentistry (譚樹輝牙科) | ttt | likely | street | p8 photo |
+| 41:0:6 | 21 Tung Tau Tsuen Road | G/F | dentist | dentist's surgery | Tung Luk dentistry (東陸牙科) | ttt | likely | street | p152 |
+| 41:0:7 | 21 Tung Tau Tsuen Road | G/F | eating house | café with glass counter windows; round tables and stools on the pavement | café on the Tung Tau Tsuen Road pavement (Japanese tourists photo) | ttt, G/F | guess | street | p339 |
 | 41:1:1 | 21 Tung Tau Tsuen Road | 1/F | garment, textile + shoe workshop | weaving / textile | 永光針織廠 | 21 ttt, 1/F | verified | address | HKRS1255-3-300 |
-| 41:1:2 | 21 Tung Tau Tsuen Road | 1/F | doctor / clinic | doctor's clinic (internal, surgery, women, children) | Hong Ning clinic 康寧診所 | ttt | likely | street | p9 photo strip |
-| 41:1:3 | 21 Tung Tau Tsuen Road | 1/F | services + utilities | barber's shop (barber's pole) | New Lung Dou barber's 新龍都理髮公司 | ttt | likely | street | p152 (caption p153); https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 41:12:2 | 21 Tung Tau Tsuen Road | 12/F | flats | rented family flat (3 people) | Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd 东头村道31号12楼B室 | 31 ttt, 12/F | verified | street | https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people |
-| 42:0:0 | Building 42 | G/F | shop | shop on the left, passage to the stair on the right | Suzuki survey gap building, G/F | ssr, G/F | likely | street, next building | p209 |
-| 43:0:0 | 2A Tai Chang Street | G/F | metal + machine works | gem workshop | Ming Tat Gem Co. | 1 Tai Chang St 3rd Lane, G/F | verified | street, next building | HKRS1255-3-258 |
-| 43:1:0 | 2A Tai Chang Street | 1/F | other workshop | factory | 1/F, 24, Tung Tau Tsuen Road, Tai Shing Industrial Co., | 24 ttt, 1/F | verified | address, next building | HKRS1255-3-303A, HKRS1255-3-303B |
+| 41:12:2 | 21 Tung Tau Tsuen Road | 12/F | flats | rented family flat (3 people) | Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd (东头村道31号12楼B室) | 31 ttt, 12/F | verified | street | https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people |
+| 42:0:0 | Building 42 | G/F | shop | business premises (trade not in the title) | Nam Wing Hing | No 43 ssr, G/F | guess | address, next building | HKRS1255-3-191 |
+| 43:0:0 | 2A Tai Chang Street | G/F | plastics factory | plastics factory | Wai Tak Plastic Mfg. | 2A Tai Chang St 3rd Lane, G/F | verified | street | HKRS1255-3-235 |
+| 43:0:0 | 2A Tai Chang Street | G/F | other workshop | factory | 海棠花藝製品廠 | 25 ttt, G/F | verified | address, shares a unit | HKRS1255-3-269 |
+| 43:0:0 | 2A Tai Chang Street | G/F | food workshop | noodle maker | 聯興 | 25 ttt, G/F | verified | address, shares a unit | HKRS1255-3-339 |
+| 43:0:0 | 2A Tai Chang Street | G/F | garment, textile + shoe workshop | weaving factory | Chuen Hing Weaving Factory (ground-floor premises) (傳興布廠) | 2 Tai Chang St 6th Lane, G/F | verified | street, shares a unit | HKRS1255-3-198 |
 | 43:2:0 | 2A Tai Chang Street | 2/F | office / company | property agent | 永昌地產公司 | 25 ttt, 2/F | verified | address | HKRS1255-3-260 |
-| 43:3:0 | 2A Tai Chang Street | 3/F | metal + machine works | electronics and metal factory | Ching Kung Electronic & Metal Manufactory | ttt, 3/F | likely | street | HKRS1255-3-552 |
-| 44:0:0 | Building 44 | G/F | shop | hardware shop; Miss Lee in charge, one part-time helper | Hardware shop on Lung Shing Road (run by Miss Lee) 五金店 | lsr | likely | street, next building | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 45:0:0 | 9 Lo Yan Street | G/F | plastics factory | plastics factory | Keung Yip PVC Plastic Mfy 軟膠製品廠 | 16 ttt, G/F | verified | address, next building | HKRS1255-3-571 |
-| 45:0:1 | 9 Lo Yan Street | G/F | shop | store | Wing Shing Store | 12 ttt, G/F | verified | address, next building | HKRS1255-3-568 |
-| 45:0:2 | 9 Lo Yan Street | G/F | metal + machine works | electrical works | World Electrical Works 世界電業 | 9 lys, G/F | verified | address | HKRS1255-3-62 |
+| 44:0:0 | Building 44 | G/F | food workshop | noodle factory | Noodle factory between Lung Shing Road and Kwong Ming Street (大図解 panorama) (製麺工場) | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1150) |
+| 45:0:0 | 9 Lo Yan Street | G/F | shop | business premises (trade not in the title) | Wo Tak Lung (和德隆) | 16 ttt, G/F | guess | address, next building | HKRS1255-3-569 |
+| 45:0:1 | 9 Lo Yan Street | G/F | food workshop | egg-noodle and won tun pastry factory (premises bought; four partners; delivery by car) | Chan Wai Shui's noodle factory | lys, map 4 | likely | map, next building | pp226-229; pp352-353, no. 4 |
+| 45:0:2 | 9 Lo Yan Street | G/F | metal + machine works | electrical works | World Electrical Works (世界電業) | 9 lys, G/F | verified | address | HKRS1255-3-62 |
 | 46:0:0 | 21 Lung Shing Road | G/F | dentist | dentist | 黃美如牙科 | 21 lsr, G/F | verified | address | HKRS1255-3-374; https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg ; GRS HKRS1255-3-374 |
-| 46:0:0 | 21 Lung Shing Road | G/F | food workshop | noodle factory | Noodle factory between Lung Shing Road and Kwong Ming Street (大図解 panorama) 製麺工場 | G/F | guess | clue, shares a unit | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1150) |
+| 46:0:0 | 21 Lung Shing Road | G/F | dentist | dentist | Lai Woon Sun Dentistry (黎煥新牙科) | 22 lsr, G/F | verified | address, shares a unit | HKRS1255-3-415 |
 | 46:3:0 | 21 Lung Shing Road | 3/F | other workshop | factory | Chu Wong Ornament Mfg. Co. | 22-24 lsr, 3/F | verified | address | HKRS1255-3-476 |
 | 46:4:0 | 21 Lung Shing Road | 4/F | garment, textile + shoe workshop | shoe or leather maker | 朝陽鞋廠 | 22-24 lsr, 4/F | verified | address | HKRS1255-3-474, HKRS1255-3-475 |
-| 47:0:0 | 23 Lung Shing Road | G/F | dentist | dentist's surgery, G/F shop with a roller shutter, and a hanging sign over the road | World Dental (dentist Chan Fat) 世界牙科 (陳發牙醫) | lsr, G/F | likely | clue, next building | https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg |
+| 47:0:0 | 23 Lung Shing Road | G/F | shop | hardware shop; Miss Lee in charge, one part-time helper | Hardware shop on Lung Shing Road (run by Miss Lee) (五金店) | lsr | likely | street | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
 | 47:0:1 | 23 Lung Shing Road | G/F | dentist | dentist | 李偉群牙科 | 23 lsr, G/F | verified | address | HKRS1255-3-372A |
-| 47:0:2 | 23 Lung Shing Road | G/F | office / company | trading company | Tai Sang Ho 大生號 | 24 lsr, G/F | verified | address | HKRS1255-3-530A |
-| 47:0:3 | 23 Lung Shing Road | G/F | temple / church / mission | shrine among low street restaurants (dai pai dongs) and dentists | Fuk Tak shrine and the east-side row of 'temporary' structures | lsr, G/F, map 12 | likely | map, next building | pp32-33; pp352-353, no. 12; https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life |
-| 48:0:0 | near 7 Kwong Ming Street | G/F | food workshop | food products | Kong Fat Food Company 廣發食品公司 | 12 kms, G/F | verified | address, next building | HKRS1255-3-419 |
-| 48:0:1 | near 7 Kwong Ming Street | G/F | dentist | dental clinic | 鄧志成牙科 sign (Tang Chi Shing dentistry) | lsr, G/F | guess | street, next building | p33 |
-| 48:0:2 | near 7 Kwong Ming Street | G/F | eating house | street restaurant | 生記飯店 sign (Sang Kee restaurant) | lsr, G/F | guess | street, next building | p33 |
-| 49:0:0 | Building 49 | G/F | other workshop | factory | Wah Cheong Handbag Factory | 31D ttt | likely | address, next building | HKRS1255-3-175 |
-| 49:0:1 | Building 49 | G/F | plastics factory | plastics factory in a basement | Hip Hing Plastic Factory 協興塑膠廠 | 31C ttt, G/F | likely | address, next building | HKRS1255-3-174 |
-| 49:0:2 | Building 49 | G/F | dentist | dentist | 王偉權牙科 (Wong Wai Kuen Dentistry) | ttt | likely | clue, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
-| 50:0:0 | Building 50 | G/F | services + utilities | rubbish dump | Gap beside the Suzuki building, seen from the roof | ssr | likely | street, next building | p209 |
-| 51:0:0 | 7 Kwong Ming Street | G/F | shop | business on three ground floors, with cockloft (trade not stated) | Cheong Kee To Yuen 昌記桃園 | 2, 4, 5A tts, G/F | guess | street | HKRS1255-3-587 |
+| 47:0:2 | 23 Lung Shing Road | G/F | office / company | trading company | Tai Sang Ho (大生號) | 24 lsr, G/F | verified | address | HKRS1255-3-530A |
+| 47:0:3 | 23 Lung Shing Road | G/F | dentist | dental clinic | Lam Mei Kwong dental clinic | 4A lsr, map 19 | likely | address, next building | p11 |
+| 48:0:0 | near 7 Kwong Ming Street | G/F | gambling / drugs / sex | triad office; strip joints on the floors above and below | Triad office in a unit joined to the next building, with strip joints above and below (大図解 panorama) (香港黒社会の事務所) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1717) |
+| 50:0:0 | Building 50 | G/F | shop | business premises (trade not in the title) | 黃源香 | 37 ttt, G/F | guess | address, next building | HKRS1255-3-190 |
 | 51:0:1 | 7 Kwong Ming Street | G/F | flats | ground-floor premises with an open door to a lit workroom (use not shown) | ground-floor premises at 6 Kwong Ming Street | 6 kms, G/F | guess | address, next building | pp190-191 |
-| 51:0:2 | 7 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | G/F, 6-8 Kwong Ming Street, KWC [Kowloon Walled City]. Hang | 6-8 kms, G/F | guess | address, next building | HKRS1255-3-425A |
-| 51:0:3 | 7 Kwong Ming Street | G/F | garment, textile + shoe workshop | spinning / textile mill | Spinning mill just west of Kwong Ming Street (大図解 panorama) 紡績工場 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2200) |
-| 51:1:2 | 7 Kwong Ming Street | 1/F | plastics factory | plastics factory | Hang Fat Metal Plastic Works 恒發金屬製品廠 | 11 kms, 1/F | verified | address | HKRS1255-3-444 |
-| 51:2:2 | 7 Kwong Ming Street | 2/F | metal + machine works | jewellery or gems | Po Hing Jewel Co. 寶興寶石公司 | 7 kms, 2/F | verified | address | HKRS1255-3-438 |
+| 51:0:2 | 7 Kwong Ming Street | G/F | other workshop | paper products factory | Shing Kung (Kit Kee) Paper Products Factory (second premises) (成功傑記紙品廠) | 6 tts, G/F | verified | street | HKRS1255-3-544 |
+| 51:1:2 | 7 Kwong Ming Street | 1/F | plastics factory | plastics factory | Hang Fat Metal Plastic Works (恒發金屬製品廠) | 11 kms, 1/F | verified | address | HKRS1255-3-444 |
+| 51:2:2 | 7 Kwong Ming Street | 2/F | metal + machine works | jewellery or gems | Po Hing Jewel Co. (寶興寶石公司) | 7 kms, 2/F | verified | address | HKRS1255-3-438 |
 | 51:2:3 | 7 Kwong Ming Street | 2/F | food workshop | catering (伙食) | 天香伙食 | 7 kms, 2/F | verified | address | HKRS1255-3-439 |
-| 52:0:0 | 30 Sai Shing Road | G/F | metal + machine works | electrical works | Kwok Kwong Electrical Works | 25 ssr, G/F | verified | address, next building | HKRS1255-3-216 |
+| 52:0:0 | 30 Sai Shing Road | G/F | metal + machine works | metal works | Hip Kwong Metal Manufactory | No.30 ssr, G/F | verified | address | HKRS1255-3-227 |
+| 52:0:0 | 30 Sai Shing Road | G/F | garment, textile + shoe workshop | fur coat workshop | Fur coat manufacturer 姚正明 (皮草加工) | 37 ssr, G/F | verified | address, shares a unit | HKRS1255-3-226 |
 | 52:1:0 | 30 Sai Shing Road | 1/F | store room | storeroom of the G/F shop (same user; shared toilet) | Suzuki survey gap building, 1/F | ssr, 1/F | guess | street | p209 |
 | 52:4:0 | 30 Sai Shing Road | 4/F | flats | rooftop add-on room; its toilet probably also a shower room | Suzuki survey gap building, top floor | ssr, 4/F | guess | street | p209 |
-| 53:0:0 | near 2 Tai Chang Street | G/F | plastics factory | plastics factory | Wai Tak Plastic Mfg. | 2A Tai Chang St 3rd Lane, G/F | verified | street, next building | HKRS1255-3-235 |
-| 54:0:0 | near 3 Kwong Wah Street | G/F | other workshop | paper products factory | Shing Kung (Kit Kee) Paper Products Factory (second premises) 成功傑記紙品廠 | 6 tts, G/F | verified | street | HKRS1255-3-544 |
-| 55:0:0 | 3 Tai Chang Street | G/F | other workshop | plumbing and electrical contractor | 昌盛水電公司 | 3 tcs, G/F | likely | address | HKRS1255-3-119 |
-| 55:0:1 | 3 Tai Chang Street | G/F | plastics factory | plastic moulding factory in a basement | Chi Tat Plastic Moulding Factory | 26 ttt, G/F | likely | address, next building | HKRS1255-3-150 |
+| 53:0:0 | near 2 Tai Chang Street | G/F | eating house | café (bing sutt) | Café under a Coca-Cola sign (□□飲冰室) | ttt, G/F | guess | street, next building | p8 photo |
+| 54:0:0 | near 3 Kwong Wah Street | G/F | temple / church / mission | temple, under a metal mesh grill against refuse thrown from the surrounding flats | Tin Hau Temple | lys, G/F, map 31 | likely | map | pp240-241; pp352-353, no. 31; HKRS1255-2-63; HKRS1078-1-67; https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life |
+| 55:0:0 | 3 Tai Chang Street | G/F | dentist | dentist | Wong Wai Kuen Dentistry (王偉權牙科) | ttt | likely | clue, next building | https://www.mplus.org.hk/en/collection/makers/greg-girard/ (object 2018.4) |
+| 55:0:1 | 3 Tai Chang Street | G/F | shop | business premises (trade not in the title) | Shing Kee | 4 tcs, G/F | guess | address | HKRS1255-3-112 |
 | 55:0:2 | 3 Tai Chang Street | G/F | plastics factory | plastics factory | Wah Sang Plastic Factory | 3 tcs, G/F | verified | address | HKRS1255-3-275 |
-| 55:0:3 | 3 Tai Chang Street | G/F | plastics factory | plastic mould factory | Golden Dragon Plastic Mould Factory 金龍塑膠模廠 | 3 Tai Chang St 6th Lane, G/F | verified | street | HKRS1255-3-173 |
-| 55:0:4 | 3 Tai Chang Street | G/F | garment, textile + shoe workshop | weaving factory | Chuen Hing Weaving Factory (ground-floor premises) 傳興布廠 | 2 Tai Chang St 6th Lane, G/F | verified | street, next building | HKRS1255-3-198 |
-| 55:6:5 | 3 Tai Chang Street | 6/F | garment, textile + shoe workshop | weaving factory | Chuen Hing Weaving Factory 傳興布廠 | 3 Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-198 |
-| 56:0:1 | Building 56 | G/F | shop | supermarket / provisions shop | Supermarket on the TTT frontage 和興?超級市場 | ttt, G/F | guess | street, next building | p8 photo |
-| 56:0:2 | Building 56 | G/F | dentist | dental clinic | 楊永光牙科 (Yeung Wing Kwong Dentistry) | ttt | likely | clue, next building | p284; jacket front; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 56:0:3 | Building 56 | G/F | dentist | dentist's surgery | Tung Luk dentistry 東陸牙科 | ttt | likely | street, next building | p152 |
+| 55:0:3 | 3 Tai Chang Street | G/F | plastics factory | plastic mould factory | Golden Dragon Plastic Mould Factory (金龍塑膠模廠) | 3 Tai Chang St 6th Lane, G/F | verified | street | HKRS1255-3-173 |
+| 55:0:4 | 3 Tai Chang Street | G/F | other workshop | plumbing and electrical contractor | 昌盛水電公司 | 3 tcs, G/F | likely | address | HKRS1255-3-119 |
+| 55:6:5 | 3 Tai Chang Street | 6/F | garment, textile + shoe workshop | weaving factory | Chuen Hing Weaving Factory (傳興布廠) | 3 Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-198 |
 | 56:2:2 | Building 56 | 2/F | school / kindergarten | child care centre | Child Care Centre (1968 lot 28) | 28 (1968 lot) abs | guess | street | pp126-127; p263 |
-| 57:0:0 | Building 57 | G/F | dentist | dental clinic (two signs) | 莫斯錄牙室 (Mok Sze Luk dental room) | ttt | likely | street, next building | p285 |
-| 57:0:1 | Building 57 | G/F | dentist | dental clinic | 孫仰先牙科 (Suen Yeung Sin Dentistry) | ttt | likely | street, next building | p285 |
-| 57:0:3 | Building 57 | G/F | doctor / clinic | doctor's clinic | Shung On clinic 崇安診所 | ttt | likely | street, next building | p152 (caption p153); https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 58:0:0 | Building 58 | G/F | other workshop | racing-pigeon lofts (two cages, over 1000 birds); roof rented at $1500 a month; pigeon business closed January 1987 | Chan Kwan Leung's pigeon lofts | map 1 | likely | map, next building | pp318-321; pp352-353, no. 1 |
-| 58:0:1 | Building 58 | G/F | shop | business premises (trade not in the title) | Wo Tak Lung 和德隆 | 16 ttt, G/F | guess | address, next building | HKRS1255-3-569 |
-| 58:0:2 | Building 58 | G/F | shop | provisions store (cigarette advertising sign) | 榮發士多 (Wing Fat store) with KENT sign | ttt, G/F | guess | clue, next building | https://gwulo.com/media/22835 |
-| 58:0:3 | Building 58 | G/F | shop | business premises (trade not in the title) | Muk Kee 木記 | 10A ttt, G/F | guess | address, next building | HKRS1255-3-593 |
-| 58:0:4 | Building 58 | G/F | office / company | trading company office | Shing Tak Trading Co. 盛德貿易公司 | ttt | likely | street, next building | p8 photo |
-| 59:0:0 | 11 Lo Yan Street | G/F | food workshop | food products | 合利食品公司 | 11 lys, G/F | verified | address | HKRS1255-3-63 |
-| 59:0:1 | 11 Lo Yan Street | G/F | shop | store | Ng Wo Tai Store 吳和泰士多 | 10 lys, G/F | verified | address, next building | HKRS1255-3-48 |
+| 59:0:0 | 11 Lo Yan Street | G/F | shop | store where the postman's daily round began | Store on Lo Yan Street (postman's base) | lys, G/F | likely | street | p146 |
+| 59:0:1 | 11 Lo Yan Street | G/F | food workshop | food products | 合利食品公司 | 11 lys, G/F | verified | address | HKRS1255-3-63 |
 | 59:2:2 | 11 Lo Yan Street | 2/F | flats | family flat (bought for $68,000 in 1981; held a pigeon cage over 10 ft long) | Chan Kwan Leung's flat | map 1 | likely | map | p319 |
-| 60:0:2 | Building 60 | G/F | shop | business premises (trade not in the title) | Hang Hong Jai | 31 ssr | guess | address, next building | HKRS1255-3-214 |
-| 63:0:0 | Building 63 | G/F | food workshop | food products | 29, Sai Shing Road, G/F Yau Shing Food Company | 29 ssr, G/F | verified | address, next building | HKRS1255-3-215 |
-| 63:0:1 | Building 63 | G/F | shop | business premises (trade not in the title) | LAW Hoi-cheung 吉祥服務中心 (羅開祥 | 21 ssr, G/F | guess | address, next building | HKRS1255-3-248 |
-| 64:0:0 | 25A Lung Shing Road | G/F | metal + machine works | electrical works | Also known as G/F, 25A Lung Shing Road 龍威電視電器工程 | 25A lsr, G/F | verified | address | HKRS1255-3-371 |
+| 63:0:0 | Building 63 | G/F | shop | business premises (trade not in the title) | Hang Hong Jai | 31 ssr | guess | address, next building | HKRS1255-3-214 |
+| 63:0:1 | Building 63 | G/F | store room | passage to the next building and storage space of the shop in front | Gap beside the Suzuki building, ground level | ssr, G/F | guess | street, next building | p209 |
+| 64:0:0 | 25A Lung Shing Road | G/F | metal + machine works | electrical works | Also known as G/F, 25A Lung Shing Road (龍威電視電器工程) | 25A lsr, G/F | verified | address | HKRS1255-3-371 |
 | 64:0:1 | 25A Lung Shing Road | G/F | other workshop | factory | Wing Hang Rubber Factory | 25 lsr, G/F | verified | address | HKRS1255-3-389 |
-| 64:0:2 | 25A Lung Shing Road | G/F | food workshop | food products | Chung Lap Food Co. 中立食品公司 | 26 lsr, G/F | verified | address | HKRS1255-3-478A, HKRS1255-3-478B |
-| 65:0:0 | Building 65 | G/F | dentist | dentist's surgery | Fuji dentistry 富士牙科 | ttt | likely | street, next building | p9 photo strip |
-| 65:0:1 | Building 65 | G/F | shop | business premises (trade not in the title) | 太和商店 | 23 ttt, G/F | guess | address, next building | HKRS1255-3-276 |
-| 65:0:2 | Building 65 | G/F | eating house | café with glass counter windows; round tables and stools on the pavement | café on the Tung Tau Tsuen Road pavement (Japanese tourists photo) | ttt, G/F | guess | street, next building | p339 |
+| 64:0:2 | 25A Lung Shing Road | G/F | food workshop | food products | Chung Lap Food Co. (中立食品公司) | 26 lsr, G/F | verified | address | HKRS1255-3-478A, HKRS1255-3-478B |
 | 66:0:0 | 9 Kwong Ming Street | G/F | food workshop | noodle maker | 鏡記粥麵廠 | 9 kms, G/F | verified | address | HKRS1255-3-442 |
-| 66:1:0 | 9 Kwong Ming Street | 1/F | food workshop | food products | Wing Cheong Food Co. 榮昌食品公司 | 9 kms, 1/F | verified | address | HKRS1255-3-443 |
+| 66:0:0 | 9 Kwong Ming Street | G/F | food workshop | food products | Kong Fat Food Company (廣發食品公司) | 12 kms, G/F | verified | address, shares a unit | HKRS1255-3-419 |
+| 66:1:0 | 9 Kwong Ming Street | 1/F | food workshop | food products | Wing Cheong Food Co. (榮昌食品公司) | 9 kms, 1/F | verified | address | HKRS1255-3-443 |
 | 67:0:0 | Building 67 | G/F | other workshop | wooden-ruler factory (sawing, painting, printing of scales) | Cheng San's ruler factory | tcs, map 8 | likely | map | pp168-169; pp352-353, no. 8 |
 | 69:0:0 | 29A Lung Shing Road | G/F | shop | store | Ching Kee Store | 29A lsr, G/F | verified | address | HKRS1255-3-369 |
-| 70:0:0 | Building 70 | G/F | garment, textile + shoe workshop | weaving / textile | Kwong Hing Weaving Factory | No. 25A ssr, G/F | verified | address, next building | HKRS1255-3-231 |
-| 70:0:1 | Building 70 | G/F | plastics factory | plastics factory | G/F, 26, SS Rd. [Sai Shing Road] (Kam Mei Plastic Bakelite M | 26 ssr, G/F | verified | address, next building | HKRS1255-3-230 |
-| 71:0:0 | Building 71 | G/F | shop | convenience store (cigarettes, soft drinks, beer, mahjong-set rental) | Heung Chai store 香齋士多 | ssr, G/F | guess | street, next building | p235 |
-| 72:0:1 | 20 Lo Yan Street | G/F | eating house | canteen (eating house) | Canteen by Lo Yan Street (大図解 panorama) 食堂 | lys, G/F | guess | street | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈3786) |
-| 72:0:2 | 20 Lo Yan Street | G/F | temple / church / mission | temple, under a metal mesh grill against refuse thrown from the surrounding flats | Tin Hau Temple | lys, G/F, map 31 | likely | map, next building | pp240-241; pp352-353, no. 31; HKRS1255-2-63; HKRS1078-1-67; https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life |
-| 72:0:3 | 20 Lo Yan Street | G/F | temple / church / mission | temple | temple that must move again |  | guess | clue | https://digitalrepository.lib.hku.hk/catalog/2f75zf33f |
+| 69:0:0 | 29A Lung Shing Road | G/F | dentist | dentist | Fong Yuk Shing Dentistry (方玉成牙科) | 29B lsr, G/F | verified | address, shares a unit | HKRS1255-3-370 |
+| 69:0:0 | 29A Lung Shing Road | G/F | other workshop | water + electrical works (水電) | Hung Kwong Water Electric (鴻光水電工程) | 30A lsr, G/F | verified | address, shares a unit | HKRS1255-3-479 |
+| 69:0:0 | 29A Lung Shing Road | G/F | metal + machine works | electrical works | 英發汽車電器冷氣電池輪呔 | 31 lsr, G/F | verified | address, shares a unit | HKRS1255-3-368 |
+| 69:0:0 | 29A Lung Shing Road | G/F | other workshop | printing or paper | Cheung Shing Paper (長城紙號) | 31 lsr, G/F | verified | address, shares a unit | HKRS1255-3-390 |
+| 70:0:0 | Building 70 | G/F | shop | convenience store (cigarettes, soft drinks, beer, mahjong-set rental) | Heung Chai store (香齋士多) | ssr, G/F | guess | street, next building | p235 |
+| 72:0:2 | 20 Lo Yan Street | G/F | temple / church / mission | temple | temple that must move again |  | guess | clue | https://digitalrepository.lib.hku.hk/catalog/2f75zf33f |
 | 72:0:8 | 20 Lo Yan Street | G/F | food workshop | food products | 合興食品公司 | 20 lys, G/F | verified | address | HKRS1255-3-469 |
-| 72:0:10 | 20 Lo Yan Street | G/F | services + utilities | toilets (and a 'P.H.') held by Wah Hing Plastic Factory | Toilets and 'P.H.' opposite 12 Lo Yan Back Street | opp. 12 / 12A Lo Yan Back Street, G/F | likely | street | HKRS1255-3-316A, -316B |
-| 73:0:2 | near 5 Tai Chang Street | G/F | eating house | café (bing sutt) | Café under a Coca-Cola sign □□飲冰室 | ttt, G/F | guess | street, next building | p8 photo |
-| 73:0:3 | near 5 Tai Chang Street | G/F | shop | business premises (trade not in the title) | Shing Kee | 4 tcs, G/F | guess | address, next building | HKRS1255-3-112 |
-| 74:0:0 | 5 Tai Chang Street | G/F | temple / church / mission | Earth God (Tou Dei) shrine | Fuk Tak Temple 福德土地廟 | 5 Tai Chang St 5th Lane, G/F | verified | street | HKRS1255-3-261; HKRS1255-3-261; HKRS1255-2-129; HKRS1077-2-1 |
+| 74:0:0 | 5 Tai Chang Street | G/F | temple / church / mission | Earth God (Tou Dei) shrine | Fuk Tak Temple (福德土地廟) | 5 Tai Chang St 5th Lane, G/F | verified | street | HKRS1255-3-261; HKRS1255-3-261; HKRS1255-2-129; HKRS1077-2-1 |
 | 74:2:0 | 5 Tai Chang Street | 2/F | eating house | restaurant | Chiu Kee Restaurant | No. 5 tcs, 2/F | verified | address | HKRS1255-3-129 |
-| 75:0:0 | Building 75 | G/F | food workshop | egg-noodle and won tun pastry factory (premises bought; four partners; delivery by car) | Chan Wai Shui's noodle factory | lys, map 4 | likely | map, next building | pp226-229; pp352-353, no. 4 |
-| 76:0:0 | 32 Lung Shing Road | G/F | other workshop | printing or paper | Cheung Shing Paper 長城紙號 | 31 lsr, G/F | verified | address, next building | HKRS1255-3-390 |
-| 76:0:1 | 32 Lung Shing Road | G/F | metal + machine works | electrical works | 英發汽車電器冷氣電池輪呔 | 31 lsr, G/F | verified | address, next building | HKRS1255-3-368 |
-| 76:0:2 | 32 Lung Shing Road | G/F | metal + machine works | metal works | Yuen Tat Metal Factory 遠達五金廠 | 32 lsr, G/F | verified | address | HKRS1255-3-480 |
-| 77:0:0 | 38 Lung Shing Road | G/F | dentist | dentist | KWC. Fong Yuk Shing Dentistry 方玉成牙科 | 29B lsr, G/F | verified | address, next building | HKRS1255-3-370 |
+| 75:0:0 | Building 75 | G/F | other workshop | racing-pigeon lofts (two cages, over 1000 birds); roof rented at $1500 a month; pigeon business closed January 1987 | Chan Kwan Leung's pigeon lofts | map 1 | likely | map, next building | pp318-321; pp352-353, no. 1 |
+| 76:0:0 | 32 Lung Shing Road | G/F | office / company | trading company | Singapore Trading Co. | 34 lsr, G/F | verified | address | HKRS1255-3-481, HKRS1255-3-482A, HKRS1255-3-482B, HKRS1255-3-482C, HKRS1255-3-482D, HKRS1255-3-482E, HKRS1255-3-482F |
+| 76:0:1 | 32 Lung Shing Road | G/F | metal + machine works | metal works | Yuen Tat Metal Factory (遠達五金廠) | 32 lsr, G/F | verified | address | HKRS1255-3-480 |
+| 76:0:2 | 32 Lung Shing Road | G/F | eating house | street restaurant | Sang Kee Restaurant sign (生記飯店) | lsr, G/F | guess | street | p33 |
+| 77:0:0 | 38 Lung Shing Road | G/F | food workshop | fishball maker | Kwan Kee Fish Ball Factory (坤記魚蛋廠) | 38 lsr, G/F | verified | address | HKRS1255-3-484 |
+| 77:0:0 | 38 Lung Shing Road | G/F | food workshop | food products | Biu Kee Food (標記食品公司) | 40 lsr, G/F | verified | address, shares a unit | HKRS1255-3-485 |
 | 78:0:0 | near 23 Lo Yan Street | G/F | metal + machine works | electrical works | 朱杰電機 | 23 lys, G/F | verified | address | HKRS1255-3-457A |
-| 80:0:0 | 13 Kwong Ming Street | G/F | plastics factory | two plastics factories in one ground floor | Tsuen Fat Plastic Factory and Chung Mei Plastic Factory 泉發塑膠廠; 中美塑膠廠 | 52 lsr, G/F | verified | address, next building | HKRS1255-3-504 |
-| 80:0:1 | 13 Kwong Ming Street | G/F | plastics factory | factory of plastic parts for toys | Toy plastic-parts factory (大図解 panorama) おもちゃのプラスチック部品工場 | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1349) |
-| 80:0:2 | 13 Kwong Ming Street | G/F | food workshop | fishball maker | Yeung Kee Fish Ball Factory 楊記魚旦批發公司 | 13 kms, G/F | verified | address | HKRS1255-3-446 |
-| 80:0:3 | 13 Kwong Ming Street | G/F | gambling / drugs / sex | gambling room | Gambling room beside Kwong Ming Street (大図解 panorama) 賭博場 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1900, y≈1347) |
-| 80:0:6 | 13 Kwong Ming Street | G/F | office / company | estate agent for units inside the City only | Estate agent dealing only in City property (大図解 panorama) 不動産屋 | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1362) |
+| 80:0:0 | 13 Kwong Ming Street | G/F | plastics factory | factory of plastic parts for toys | Toy plastic-parts factory (大図解 panorama) (おもちゃのプラスチック部品工場) | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1349) |
+| 80:0:1 | 13 Kwong Ming Street | G/F | garment, textile + shoe workshop | spinning / textile mill | Spinning mill just west of Kwong Ming Street (大図解 panorama) (紡績工場) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2200) |
+| 80:0:2 | 13 Kwong Ming Street | G/F | food workshop | fishball maker | Yeung Kee Fish Ball Factory (楊記魚旦批發公司) | 13 kms, G/F | verified | address | HKRS1255-3-446 |
+| 80:0:6 | 13 Kwong Ming Street | G/F | office / company | estate agent for units inside the City only | Estate agent dealing only in City property (大図解 panorama) (不動産屋) | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1362) |
 | 80:1:0 | 13 Kwong Ming Street | 1/F | other workshop | factory | Hop Yee Handbag Factory | 13 kms, 1/F | verified | address | HKRS1255-3-445 |
-| 81:0:0 | 26 Sai Shing Road | G/F | metal + machine works | jewellery workshop | Hang Tat Jewellery Factory | 11 Sai Shing Rd 2nd Lane, G/F | verified | street, next building | HKRS1255-3-251 |
+| 81:0:0 | 26 Sai Shing Road | G/F | plastics factory | plastics factory | G/F, 26, SS Rd. [Sai Shing Road] (Kam Mei Plastic Bakelite M | 26 ssr, G/F | verified | address | HKRS1255-3-230 |
+| 81:0:0 | 26 Sai Shing Road | G/F | food workshop | food products | 29, Sai Shing Road, G/F Yau Shing Food Company | 29 ssr, G/F | verified | address, shares a unit | HKRS1255-3-215 |
 | 81:1:0 | 26 Sai Shing Road | 1/F | shop | business premises (trade not in the title) | Kin Tat Hong | No 29 ssr, 1/F | guess | address | HKRS1255-3-228 |
 | 81:8:0 | 26 Sai Shing Road | 8/F | metal + machine works | jewellery or gems | 曾紀尉 (首飾 | 27 ssr, 8/F | verified | address | HKRS1255-3-229 |
 | 82:0:0 | Youth Centre | G/F | food workshop | cakes and dim sum | 亞彭茶菓鋪 | 25A lys, G/F | verified | address | HKRS1255-3-455 |
-| 82:0:4 | Youth Centre | G/F | dentist | dentist's surgery with a street show window of dentures | Dentist with dentures in the show window, between Lo Yan Street and Lung Chun 2nd Lane (大図解 panorama) 歯医者 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈3992) |
-| 82:1:5 | Youth Centre | 1/F | doctor / clinic | doctor's clinic | Doctor's clinic down Lo Yan Street □濟醫務所 | lys | likely | street | p22 |
+| 82:0:4 | Youth Centre | G/F | dentist | dentist's surgery with a street show window of dentures | Dentist with dentures in the show window, between Lo Yan Street and Lung Chun 2nd Lane (大図解 panorama) (歯医者) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈3992) |
+| 82:1:5 | Youth Centre | 1/F | doctor / clinic | doctor's clinic | Doctor's clinic down Lo Yan Street (□濟醫務所) | lys | likely | street | p22 |
 | 82:1:14 | Youth Centre | 1/F | flats | home of a retired office cleaner | Kwok Lau Hing's home | map 16 | guess | map | pp352-353, no. 16 |
-| 84:0:0 | Building 84 | G/F | food workshop | food products | 20, SS [Sai Shing] Road, G/F, Shing Hing Food Co. | 20 ssr, G/F | verified | address, next building | HKRS1255-3-249 |
-| 84:0:1 | Building 84 | G/F | metal + machine works | electrical works | Sun Lik Electric Works | No. 21A ssr, G/F | verified | address, next building | HKRS1255-3-247 |
-| 84:0:2 | Building 84 | G/F | food workshop | food products | 18, SS [Sai Shing] Road, G/F, Tin Shing House, Tak Fat Food | 18 ssr, G/F | verified | address, next building | HKRS1255-3-250 |
-| 84:0:3 | Building 84 | G/F | metal + machine works | metal works | 一新五金廠 | 24A ssr, G/F | verified | address, next building | HKRS1255-3-232 |
+| 84:0:2 | Building 84 | G/F | shop | business premises (trade not in the title) | LAW Hoi-cheung (吉祥服務中心 (羅開祥) | 21 ssr, G/F | guess | address, next building | HKRS1255-3-248 |
 | 86:0:0 | 6 Tai Chang Street | G/F | metal + machine works | jewellery workshop | Cheung Kong Jewellery Co. | 6 Tai Chang St 3rd Lane, G/F | verified | street | HKRS1255-3-234 |
-| 87:0:0 | 23 Kwong Ming Street | G/F | shop | bakery | Bakery west of Kwong Ming Street (大図解 panorama) パン屋 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2675) |
+| 87:0:0 | 23 Kwong Ming Street | G/F | shop | bakery | Bakery west of Kwong Ming Street (大図解 panorama) (パン屋) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2675) |
 | 87:0:1 | 23 Kwong Ming Street | G/F | gambling / drugs / sex | prostitute's premises | No. 23 Kwong Ming Street (prostitute) | 23 kms | likely | address | p149 |
 | 87:0:2 | 23 Kwong Ming Street | G/F | food workshop | noodle maker | 合興瀨粉廠 | 23 kms, G/F | verified | address | HKRS1255-3-449 |
-| 87:0:3 | 23 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Wing Lee 榮利 | 21 kms, G/F | guess | address | HKRS1255-3-448 |
-| 87:0:5 | 23 Kwong Ming Street | G/F | food workshop | food products | Tung Luen 東聠食品公司 | 17 kms, G/F | verified | address, next building | HKRS1255-3-447 |
-| 87:3:2 | 23 Kwong Ming Street | 3/F | doctor / clinic | medical clinic with an operating room | Clinic with an operating room, high floor beside Kwong Ming Street (大図解 panorama) 手術室もある医院 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1890, y≈307) |
-| 88:0:0 | 46A Lung Shing Road | G/F | food workshop | fishball maker | Kwan Kee Fish Ball Factory 坤記魚蛋廠 | 38 lsr, G/F | verified | address, next building | HKRS1255-3-484 |
-| 88:0:1 | 46A Lung Shing Road | G/F | food workshop | food products | Biu Kee Food 標記食品公司 | 40 lsr, G/F | verified | address, next building | HKRS1255-3-485 |
-| 88:0:2 | 46A Lung Shing Road | G/F | office / company | trading company | Singapore Trading Co. | 34 lsr, G/F | verified | address, next building | HKRS1255-3-481, HKRS1255-3-482A, HKRS1255-3-482B, HKRS1255-3-482C, HKRS1255-3-482D, HKRS1255-3-482E, HKRS1255-3-482F |
-| 88:0:3 | 46A Lung Shing Road | G/F | garment, textile + shoe workshop | garment maker | Kwan Wai Knitting Factory 鈞威針織廠 | 45 lsr, G/F | verified | address, next building | HKRS1255-3-364 |
-| 88:1:0 | 46A Lung Shing Road | 1/F | other workshop | candle factory | Colourful Candle Manufactory 五光燭業製品廠 | 46 Lung Shing Avenue, 1/F | likely | street | HKRS1255-3-489, -490 |
-| 89:2:0 | 17 Kwong Ming Street | 2/F | school / kindergarten | primary school (classroom with rows of desks) | Primary school room beside Kwong Ming Street (大図解 panorama) 小学校 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1945, y≈1313) |
+| 87:0:3 | 23 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Wing Lee (榮利) | 21 kms, G/F | guess | address | HKRS1255-3-448 |
+| 87:0:5 | 23 Kwong Ming Street | G/F | food workshop | food products | Tung Luen (東聠食品公司) | 17 kms, G/F | verified | address, next building (the model's building at this address has no room on G/F) | HKRS1255-3-447 |
+| 87:3:2 | 23 Kwong Ming Street | 3/F | doctor / clinic | medical clinic with an operating room | Clinic with an operating room, high floor beside Kwong Ming Street (大図解 panorama) (手術室もある医院) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1890, y≈307) |
+| 88:0:0 | 46A Lung Shing Road | G/F | food workshop | food products | 合成食品公司 | 46A lsr, G/F | verified | address | HKRS1255-3-491, HKRS1255-3-492 |
+| 88:0:1 | 46A Lung Shing Road | G/F | food workshop | meat products | 永祥盛食品公司 | 48 lsr, G/F | verified | address | HKRS1255-3-493, HKRS1255-3-494, HKRS1255-3-495, HKRS1255-3-496, HKRS1255-3-497, HKRS1255-3-498, HKRS1255-3-499 |
+| 88:0:2 | 46A Lung Shing Road | G/F | temple / church / mission | shrine among low street restaurants (dai pai dongs) and dentists | Fuk Tak shrine and the east-side row of 'temporary' structures | lsr, G/F, map 12 | likely | map, next building | pp32-33; pp352-353, no. 12; https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life |
+| 88:0:3 | 46A Lung Shing Road | G/F | dentist | dental clinic | Tang Chi Shing Dentistry sign (鄧志成牙科) | lsr, G/F | guess | street | p33 |
+| 88:1:0 | 46A Lung Shing Road | 1/F | other workshop | candle factory | Colourful Candle Manufactory (五光燭業製品廠) | 46 Lung Shing Avenue, 1/F | likely | street | HKRS1255-3-489, -490 |
+| 89:2:0 | 17 Kwong Ming Street | 2/F | school / kindergarten | primary school (classroom with rows of desks) | Primary school room beside Kwong Ming Street (大図解 panorama) (小学校) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1945, y≈1313) |
 | 90:0:0 | 8 Tai Chang Street | G/F | garment, textile + shoe workshop | shoe factory | Yuk Hing Shoes Factory | 8 Tai Chang St 3rd Lane, G/F | verified | street | HKRS1255-3-259 |
 | 90:0:2 | 8 Tai Chang Street | G/F | other workshop | construction | Hing Fat Construction Co. | 8 tcs, G/F | verified | address | HKRS1255-3-96 |
-| 91:0:0 | 21A Sai Shing Road | G/F | shop | store | Leung Kee Store | No. 9 ssr, G/F | verified | address, next building | HKRS1255-3-142 |
-| 91:0:1 | 21A Sai Shing Road | G/F | metal + machine works | metal works | 恩平五金製品廠 | 10 ssr, G/F | verified | address, next building | HKRS1255-3-144 |
+| 91:0:0 | 21A Sai Shing Road | G/F | metal + machine works | electrical works | Sun Lik Electric Works | No. 21A ssr, G/F | verified | address | HKRS1255-3-247 |
+| 91:0:0 | 21A Sai Shing Road | G/F | metal + machine works | electrical works | Kwok Kwong Electrical Works | 25 ssr, G/F | verified | address, shares a unit | HKRS1255-3-216 |
+| 91:0:0 | 21A Sai Shing Road | G/F | garment, textile + shoe workshop | weaving / textile | Kwong Hing Weaving Factory | No. 25A ssr, G/F | verified | address, shares a unit | HKRS1255-3-231 |
+| 91:0:1 | 21A Sai Shing Road | G/F | metal + machine works | metal works | 一新五金廠 | 24A ssr, G/F | verified | address | HKRS1255-3-232 |
 | 91:1:0 | 21A Sai Shing Road | 1/F | office / company | premises of a claimant firm (trade not stated) | Nam Wing Hing (other premises) | 28; 24B ssr, 1/F | guess | address, next building | HKRS1255-3-191 |
-| 92:0:0 | 7 Tai Chang Street | G/F | food workshop | food products | Luen Fung Food Company 聠豐食品公司 | 7 tcs, G/F | verified | address | HKRS1255-3-130 |
-| 98:0:0 | 50 Lung Shing Road | G/F | metal + machine works | metal works | 城西號五金廠 | 55 lsr, G/F | verified | address, next building | HKRS1255-3-367 |
-| 98:0:1 | 50 Lung Shing Road | G/F | shop | store | Yee Shing Store 義成商店 | 24 kms, G/F | verified | address | HKRS1255-3-529 |
-| 98:0:2 | 50 Lung Shing Road | G/F | dentist | dentist | 華富牙科 | 50 lsr, G/F | verified | address | HKRS1255-3-347A, HKRS1255-3-347B |
-| 98:0:3 | 50 Lung Shing Road | G/F | food workshop | food products | 合成食品公司 | 46A lsr, G/F | verified | address, next building | HKRS1255-3-491, HKRS1255-3-492 |
-| 98:0:4 | 50 Lung Shing Road | G/F | food workshop | meat products | 永祥盛食品公司 | 48 lsr, G/F | verified | address, next building | HKRS1255-3-493, HKRS1255-3-494, HKRS1255-3-495, HKRS1255-3-496, HKRS1255-3-497, HKRS1255-3-498, HKRS1255-3-499 |
+| 92:0:0 | 7 Tai Chang Street | G/F | food workshop | food products | Luen Fung Food Company (聠豐食品公司) | 7 tcs, G/F | verified | address | HKRS1255-3-130 |
+| 98:0:0 | 50 Lung Shing Road | G/F | food workshop | roast-pig factory; mezzanine used as the materials store | Roast-pig factory at the east end, beside Lung Shing Road (大図解 panorama) (豚の丸焼き製造工場) | lsr, G/F | guess | street | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈394) |
+| 98:0:1 | 50 Lung Shing Road | G/F | shop | store | Yee Shing Store (義成商店) | 24 kms, G/F | verified | address | HKRS1255-3-529 |
+| 98:0:2 | 50 Lung Shing Road | G/F | food workshop | fishball factory | Fishball factory off Kwong Ming Street | kms | likely | street | p290 |
+| 98:0:3 | 50 Lung Shing Road | G/F | dentist | dentist | 華富牙科 | 50 lsr, G/F | verified | address | HKRS1255-3-347A, HKRS1255-3-347B |
+| 98:0:4 | 50 Lung Shing Road | G/F | plastics factory | two plastics factories in one ground floor | Tsuen Fat Plastic Factory and Chung Mei Plastic Factory (泉發塑膠廠; 中美塑膠廠) | 52 lsr, G/F | verified | address | HKRS1255-3-504 |
 | 98:1:1 | 50 Lung Shing Road | 1/F | other workshop | factory | 源成實業公司 | 52 lsr, 1/F | verified | address | HKRS1255-3-502, HKRS1255-3-503 |
-| 98:1:3 | 50 Lung Shing Road | 1/F | garment, textile + shoe workshop | garment maker | Wong Ming Kwai Knitting Factory 黃明桂針織廠 | 4 lsr, 1/F | verified | street | HKRS1255-3-392 |
-| 98:2:3 | 50 Lung Shing Road | 2/F | garment, textile + shoe workshop | shoe or leather maker | with film 志誠鞋廠公司 | 52 lsr, 2/F | verified | address | HKRS1255-3-500, HKRS1255-3-501 |
-| 99:3:4 | Free School Building | 3/F | association / community | youth centre where young people gathered | Youth centre (青年中心), Hong Kong Federation of Youth Groups 青年中心 (香港青年協會) |  | likely | clue (the model's building at this place has only 1 storeys) | https://www.hk01.com/article/39195; HKRS1078-1-51; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 98:1:3 | 50 Lung Shing Road | 1/F | garment, textile + shoe workshop | garment maker | Wong Ming Kwai Knitting Factory (黃明桂針織廠) | 4 lsr, 1/F | verified | street | HKRS1255-3-392 |
+| 98:2:3 | 50 Lung Shing Road | 2/F | garment, textile + shoe workshop | shoe or leather maker | with film (志誠鞋廠公司) | 52 lsr, 2/F | verified | address | HKRS1255-3-500, HKRS1255-3-501 |
+| 99:3:4 | Free School Building | 3/F | association / community | youth centre where young people gathered | Youth centre, Hong Kong Federation of Youth Groups (青年中心 (香港青年協會)) |  | likely | clue (the model's building at this place has only 1 storeys) | https://www.hk01.com/article/39195; HKRS1078-1-51; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
 | 101:0:1 | 9 Tai Chang Street | G/F | metal + machine works | metal works | Tai Wing Metal Factory | 9 tcs, G/F | verified | address | HKRS1255-3-131 |
-| 102:0:0 | 18 Sai Shing Road | G/F | eating house | restaurant | Hop Kee Snack Shop | 7 ssr, G/F | verified | address, next building | HKRS1255-3-123A |
+| 102:0:0 | 18 Sai Shing Road | G/F | plastics factory | plastics factory in a basement | Sun Lok Plastic Factory | 14 Sai Shing Rd 7th Lane, G/F | verified | street | HKRS1255-3-207 |
+| 102:0:0 | 18 Sai Shing Road | G/F | shop | store | Chan Fung Lee Store | No. 17 ssr, G/F | verified | address, shares a unit | HKRS1255-3-145 |
+| 102:0:0 | 18 Sai Shing Road | G/F | food workshop | food products | 18, SS [Sai Shing] Road, G/F, Tin Shing House, Tak Fat Food | 18 ssr, G/F | verified | address, shares a unit | HKRS1255-3-250 |
+| 102:0:0 | 18 Sai Shing Road | G/F | food workshop | food products | 20, SS [Sai Shing] Road, G/F, Shing Hing Food Co. | 20 ssr, G/F | verified | address, shares a unit | HKRS1255-3-249 |
 | 102:1:0 | 18 Sai Shing Road | 1/F | plastics factory | plastics factory | Fung Shing Plastic Factory | No.14 ssr, 1/F | verified | address | HKRS1255-3-210 |
 | 102:1:1 | 18 Sai Shing Road | 1/F | plastics factory | plastics factory | Wan Tung Plastic Products Factory | 15 Sai Shing Rd 7th Lane, 1/F | verified | street | HKRS1255-3-218; HKRS1255-3-218 (ledger -219) |
-| 102:2:0 | 18 Sai Shing Road | 2/F | plastics factory | business reached up a stair (perhaps Wan Tung Plastic Products Factory, GRS 1/F flats A-C, Kowloon House, 15 Sai Shing Rd 7th Lane) | Stairwell direction sign '運通' (probably Wan Tung plastics factory) | 15 Sai Shing Road 7th Lane | guess | street | p53; HKRS1255-3-218 |
-| 103:0:0 | Wing Fat Building, Lo Yan Street | G/F | food workshop | noodle maker | Chuen Kau Noodle Factory 全球製麵廠 | 31 lys, G/F | verified | address | HKRS1255-3-318 |
-| 106:0:0 | 53 Lung Shing Road | G/F | metal + machine works | metal works | 精華真空電鍍廠 | 42 lsr, G/F | verified | address, next building | HKRS1255-3-488 |
-| 107:0:0 | Building 107 | G/F | shop | store | Chan Fung Lee Store | No. 17 ssr, G/F | verified | address, next building | HKRS1255-3-145 |
-| 107:0:1 | Building 107 | G/F | plastics factory | plastics factory in a basement | Sun Lok Plastic Factory | 14 Sai Shing Rd 7th Lane, G/F | verified | street, next building | HKRS1255-3-207 |
-| 107:0:2 | Building 107 | G/F | metal + machine works | metal works | Man Kee Metalware Factory | No. 13 ssr, G/F | verified | address, next building | HKRS1255-3-146 |
-| 107:0:3 | Building 107 | G/F | food workshop | candy factory | Shui Tung Confectionery | 12 Sai Shing Rd 2nd Lane, G/F | verified | street, next building | HKRS1255-3-233; pp76-79; p77 |
+| 102:2:0 | 18 Sai Shing Road | 2/F | plastics factory | business reached up a stair (perhaps Wan Tung Plastic Products Factory, GRS 1/F flats A-C, Kowloon House, 15 Sai Shing Rd 7th Lane) | Stairwell direction sign, probably Wan Tung plastics factory (運通) | 15 Sai Shing Road 7th Lane | guess | street | p53; HKRS1255-3-218 |
+| 103:0:0 | Wing Fat Building, Lo Yan Street | G/F | food workshop | noodle maker | Chuen Kau Noodle Factory (全球製麵廠) | 31 lys, G/F | verified | address | HKRS1255-3-318 |
+| 106:0:0 | 53 Lung Shing Road | G/F | metal + machine works | metal works | 新生金屬製品廠 | 53 lsr, G/F | verified | address | HKRS1255-3-363 |
+| 106:0:0 | 53 Lung Shing Road | G/F | metal + machine works | metal works | 城西號五金廠 | 55 lsr, G/F | verified | address, shares a unit | HKRS1255-3-367 |
 | 108:0:2 | 12 Tai Chang Street | G/F | office / company | property agent | 恒暉地產 | 17 tcs, G/F | verified | address | HKRS1255-3-256; p113; HKRS1255-3-256 |
 | 108:0:3 | 12 Tai Chang Street | G/F | shop | store | 順發士多 | 12 tcs, G/F | verified | address | HKRS1255-3-97; pp92-95; pp352-353, no. 24 |
 | 108:0:4 | 12 Tai Chang Street | G/F | services + utilities | barber's shop (the only hair parlour inside the City) | Ho Chi Kam's barber's shop | 10 tcs, G/F, map 13 | likely | address | pp28-29 |
 | 108:0:5 | 12 Tai Chang Street | G/F | flats | family sleeping area behind a partition | Living area behind Lee Pui Yuen's store | 12 tcs, G/F | likely | address | pp94-95 |
 | 108:0:6 | 12 Tai Chang Street | G/F | plastics factory | plastics factory | Tai Kwong Ho Metals & Plastic Mfy. [Manufactory] | No. 15 tcs, G/F | verified | address | HKRS1255-3-137; p88; pp352-353, no. 2; https://industrialhistoryhk.org/kowloon-walled-city-2 |
 | 108:1:1 | 12 Tai Chang Street | 1/F | metal + machine works | electrical works | 宗記錶殼加工廠 | 16-16A tcs, 1/F | verified | address | HKRS1255-3-333 |
-| 109:1:2 | 28 Lo Yan Street | 1/F | other workshop | factory | Hing Cheong 興昌植毛廠 | 27 lys, 1/F | verified | address | HKRS1255-3-321 |
+| 109:1:2 | 28 Lo Yan Street | 1/F | other workshop | factory | Hing Cheong (興昌植毛廠) | 27 lys, 1/F | verified | address | HKRS1255-3-321 |
 | 109:3:2 | 28 Lo Yan Street | 3/F | garment, textile + shoe workshop | shoe or leather maker | Chun Sik Shoes Maker | 27 lys, 3/F | verified | address | HKRS1255-3-322 |
-| 109:4:2 | 28 Lo Yan Street | 4/F | dentist | dental surgery | Wong Chun Wah Dentistry 黃振華牙科 | 27 lys, 4/F | verified | address | HKRS1255-3-323 |
+| 109:4:2 | 28 Lo Yan Street | 4/F | dentist | dental surgery | Wong Chun Wah Dentistry (黃振華牙科) | 27 lys, 4/F | verified | address | HKRS1255-3-323 |
 | 109:8:2 | 28 Lo Yan Street | 8/F | shop | business premises (trade not in the title) | 8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street | 28 lys, 8/F | guess | address | HKRS1255-3-468 |
-| 111:0:0 | 14 + 25 Tai Chang Street | G/F | food workshop | food products | Kam Fung Food Co. 錦豐食品公司 | 14 tcs, G/F | verified | address | HKRS1255-3-332 |
+| 111:0:0 | 14 + 25 Tai Chang Street | G/F | food workshop | food products | Kam Fung Food Co. (錦豐食品公司) | 14 tcs, G/F | verified | address | HKRS1255-3-332 |
 | 111:0:1 | 14 + 25 Tai Chang Street | G/F | shop | business premises (trade not in the title) | 龍西園 | 14 + 25 tcs, G/F | guess | address | HKRS1255-3-236 |
 | 111:3:0 | 14 + 25 Tai Chang Street | 3/F | flats | home of a retired dentist | Lam Mei Kwong's home / former dental surgery | map 19 | guess | map | pp352-353, no. 19 |
-| 113:0:0 | 11 Sai Shing Road | G/F | shop | laundry | Laundry Court Company | 5 Sai Shing Rd 3rd Lane, G/F | verified | street, next building | HKRS1255-3-212 |
-| 113:4:0 | 11 Sai Shing Road | 4/F | flats | cubicle | Tai Hing 4/F room B | 6 ssr, 4/F | verified | address, next building | p340 |
+| 113:0:0 | 11 Sai Shing Road | G/F | metal + machine works | jewellery workshop | Hang Tat Jewellery Factory | 11 Sai Shing Rd 2nd Lane, G/F | verified | street | HKRS1255-3-251 |
+| 113:0:0 | 11 Sai Shing Road | G/F | food workshop | candy factory | Shui Tung Confectionery | 12 Sai Shing Rd 2nd Lane, G/F | verified | street, shares a unit | HKRS1255-3-233; pp76-79; p77 |
+| 113:0:0 | 11 Sai Shing Road | G/F | metal + machine works | metal works | Man Kee Metalware Factory | No. 13 ssr, G/F | verified | address, shares a unit | HKRS1255-3-146 |
 | 114:0:0 | Low range on the west side of the Yamen compound | G/F | food workshop | alley with small fishball workshops between two high-rises | Alley behind the Old People's Home | G/F, map 27 | likely | map | p145 |
-| 115:0:0 | 28 Kwong Ming Street | G/F | plastics factory | plastics factory | Luen Ngai Plastic Factory 联藝塑膠廠 | 28 kms, G/F | verified | address | HKRS1255-3-527A; HKRS1255-3-527B |
+| 115:0:0 | 28 Kwong Ming Street | G/F | plastics factory | plastics factory | Luen Ngai Plastic Factory (联藝塑膠廠) | 28 kms, G/F | verified | address | HKRS1255-3-527A; HKRS1255-3-527B |
+| 115:0:0 | 28 Kwong Ming Street | G/F | food workshop | noodle maker | Fung Yuen Noodles Restaurant (豐園麵家) | 59 lsr, G/F | verified | address, shares a unit | HKRS1255-3-355 |
 | 115:0:1 | 28 Kwong Ming Street | G/F | eating house | restaurant | 合興隆飯店 | 57 lsr, G/F | verified | address | HKRS1255-3-356 |
-| 115:0:2 | 28 Kwong Ming Street | G/F | dentist | dentist | KWC. Wah Koon Dentistry 華冠牙室 | 57B lsr, G/F | verified | address | HKRS1255-3-362; p33 photo; HKRS1255-3-362 |
-| 115:0:3 | 28 Kwong Ming Street | G/F | doctor / clinic | clinic | Wai Man Clinic 惠民診所 | 57A lsr, G/F | verified | address | HKRS1255-3-361 |
-| 115:3:0 | 28 Kwong Ming Street | 3/F | office / company | trading company | Cheong Hing Company 昌興公司 | 57 lsr, 3/F | verified | address | HKRS1255-3-360 |
-| 116:0:0 | 25 Kwong Ming Street | G/F | services + utilities | hair salon / barber | Hair salon beside Kwong Ming Street (大図解 panorama) 髪型屋 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1942, y≈1278) |
-| 116:0:4 | 25 Kwong Ming Street | G/F | metal + machine works | metal works | Hop Lee Metal Manufactory 合利金屬製品廠 | 25 kms, G/F | verified | address | HKRS1255-3-534 |
-| 116:0:5 | 25 Kwong Ming Street | G/F | metal + machine works | sheet-metal workshop | Sheet-metal workshop west of Kwong Ming Street (大図解 panorama) 鈑金屋 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2380) |
-| 117:0:0 | Building 117 | G/F | office / company | trading company | 振記號 | 10A & 12 ssr, G/F | verified | address, next building | HKRS1255-3-147 |
-| 121:0:0 | 7 Sai Shing Road | G/F | food workshop | cakes and dim sum | 財記点心批發 | 4 ssr, G/F | verified | address, next building | HKRS1255-3-143 |
-| 121:0:1 | 7 Sai Shing Road | G/F | shop | store | Tai Yau Provision & Grocery | 5 ssr, G/F | verified | address, next building | HKRS1255-3-141 |
+| 115:0:2 | 28 Kwong Ming Street | G/F | dentist | dentist | Wah Koon Dentistry (華冠牙室) | 57B lsr, G/F | verified | address | HKRS1255-3-362; p33 photo; HKRS1255-3-362 |
+| 115:0:3 | 28 Kwong Ming Street | G/F | doctor / clinic | clinic | Wai Man Clinic (惠民診所) | 57A lsr, G/F | verified | address | HKRS1255-3-361 |
+| 115:3:0 | 28 Kwong Ming Street | 3/F | office / company | trading company | Cheong Hing Company (昌興公司) | 57 lsr, 3/F | verified | address | HKRS1255-3-360 |
+| 116:0:4 | 25 Kwong Ming Street | G/F | metal + machine works | metal works | Hop Lee Metal Manufactory (合利金屬製品廠) | 25 kms, G/F | verified | address | HKRS1255-3-534 |
+| 121:0:0 | 7 Sai Shing Road | G/F | eating house | restaurant | Hop Kee Snack Shop | 7 ssr, G/F | verified | address | HKRS1255-3-123A |
+| 121:0:0 | 7 Sai Shing Road | G/F | metal + machine works | metal works | 恩平五金製品廠 | 10 ssr, G/F | verified | address, shares a unit | HKRS1255-3-144 |
+| 121:0:0 | 7 Sai Shing Road | G/F | office / company | trading company | 振記號 | 10A & 12 ssr, G/F | verified | address, shares a unit | HKRS1255-3-147 |
+| 121:0:1 | 7 Sai Shing Road | G/F | shop | store | Leung Kee Store | No. 9 ssr, G/F | verified | address | HKRS1255-3-142 |
 | 121:1:0 | 7 Sai Shing Road | 1/F | plastics factory | plastics factory | Also Known as 1/F, No 46, 7th Lane Sai Shing Rd. [Road] | No. 10 ssr, 1/F | verified | address | HKRS1255-3-217 |
-| 121:4:0 | 7 Sai Shing Road | 4/F | flats | living room | Tai Hing 4/F room A | 6 ssr, 4/F | verified | address, next building | p340 |
-| 122:0:0 | 26 Kwong Ming Street | G/F | food workshop | fishball factory | Fishball factory off Kwong Ming Street | kms | likely | street | p290 |
-| 124:0:0 | 63 Lung Shing Road | G/F | metal + machine works | metal works | 新生金屬製品廠 | 53 lsr, G/F | verified | address, next building | HKRS1255-3-363 |
-| 124:6:0 | 63 Lung Shing Road | 6/F | flats | named tenement block (name painted on the facade) | Tung Shing House (probable) 東成樓 |  | guess | clue | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg |
-| 125:0:0 | 30B Lo Yan Street | G/F | metal + machine works | metal works | Tai Wah Metal Mfy.[Manufactory] 大華金屬製品廠 | 30 lys, G/F | verified | address | HKRS1255-3-585 |
+| 122:0:0 | 26 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Chang Long Leung (張朗良) | 26 kms, G/F | guess | address | HKRS1255-3-528 |
+| 124:0:0 | 63 Lung Shing Road | G/F | eating house | restaurant | Mei Tung Yuen Restaurant (美東園飯店) | 63 lsr, G/F | verified | address | HKRS1255-3-349 |
+| 124:0:0 | 63 Lung Shing Road | G/F | dentist | dentist | Tsang Chi Wai Dentistry (曾志偉牙科) | 63 lsr, G/F | verified | address, shares a unit | HKRS1255-3-352 |
+| 124:0:0 | 63 Lung Shing Road | G/F | food workshop | noodle maker | 水為財粥麵店 | 64 lsr, G/F | verified | address, shares a unit | HKRS1255-3-506 |
+| 124:0:0 | 63 Lung Shing Road | G/F | services + utilities | hair salon | Lung Dao Hair Salon (龍都美容院) | 64 lsr, G/F | verified | address, shares a unit | HKRS1255-3-508 |
+| 124:0:0 | 63 Lung Shing Road | G/F | dentist | dental surgery | Wah Fu Dentistry (second premises) (華富牙科) | 71 lsr, G/F | verified | address, shares a unit | HKRS1255-3-347A |
+| 124:6:0 | 63 Lung Shing Road | 6/F | flats | named tenement block (name painted on the facade) | Tung Shing House (probable) (東成樓) |  | guess | clue | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg |
+| 125:0:0 | 30B Lo Yan Street | G/F | metal + machine works | metal works | Tai Wah Metal Mfy.[Manufactory] (大華金屬製品廠) | 30 lys, G/F | verified | address | HKRS1255-3-585 |
 | 125:0:1 | 30B Lo Yan Street | G/F | metal + machine works | metal works | 合發鐵器工程 | 30B lys, G/F | verified | address | HKRS1255-3-466, HKRS1255-3-467 |
 | 125:1:0 | 30B Lo Yan Street | 1/F | other workshop | small factory opening on to the street | Factory on Lo Yan Street (photo) | lys | likely | street | p236 |
-| 129:0:0 | Building 129 | G/F | services + utilities | hair salon | Lung Dao Hair Salon 龍都美容院 | 64 lsr, G/F | verified | address, next building | HKRS1255-3-508 |
-| 129:0:1 | Building 129 | G/F | food workshop | noodle maker | Fung Yuen Noodles Restaurant 豐園麵家 | 59 lsr, G/F | verified | address, next building | HKRS1255-3-355 |
-| 129:0:2 | Building 129 | G/F | dentist | dentist | Tsang Chi Wai Dentistry 曾志偉牙科 | 63 lsr, G/F | verified | address, next building | HKRS1255-3-352 |
-| 129:0:3 | Building 129 | G/F | food workshop | noodle maker | 水為財粥麵店 | 64 lsr, G/F | verified | address, next building | HKRS1255-3-506 |
-| 131:0:0 | Building 131 | G/F | office / company | trading company | 金豐貿易公司 | 6 ssr, G/F | verified | address, next building | HKRS1255-3-121 |
-| 131:0:1 | Building 131 | G/F | garment, textile + shoe workshop | shoe or leather maker | Sun Sun Wah Leather Handbag Factory | No. 6A ssr, G/F | verified | address, next building | HKRS1255-3-122 |
-| 131:0:2 | Building 131 | G/F | plastics factory | plastics factory | Hoa Wah Plastic Factory | 6 ssr, G/F | verified | address, next building | HKRS1255-3-213 |
-| 131:4:0 | Building 131 | 4/F | flats | toilet | Tai Hing 4/F room E | 6 ssr, 4/F | verified | address, next building | p340 |
-| 131:4:1 | Building 131 | 4/F | flats | bed space | Tai Hing 4/F space F | 6 ssr, 4/F | verified | address, next building | p340 |
-| 131:4:2 | Building 131 | 4/F | flats | bed space | Tai Hing 4/F space G | 6 ssr, 4/F | verified | address, next building | p340 |
+| 129:0:2 | Building 129 | G/F | services + utilities | electricity transformer room (about 250 sq ft rented from the church) | China Light & Power transformer room in church premises |  | guess | clue, next building | p100 |
 | 135:0:0 | near 33 Kwong Ming Street | G/F | doctor / clinic | medical clinic, operating room extended through to the next building | Clinic that extended its operating room into the next building (大図解 panorama) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2814, y≈1320) |
-| 135:0:1 | near 33 Kwong Ming Street | G/F | services + utilities | electricity transformer room (about 250 sq ft rented from the church) | China Light & Power transformer room in church premises |  | guess | clue, next building | p100 |
-| 135:1:0 | near 33 Kwong Ming Street | 1/F | doctor / clinic | unlicensed doctor's clinic | Unlicensed clinic beside Kwong Ming Street (大図解 panorama) 無免許の診療所 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1890, y≈1211) |
-| 137:0:2 | 18 Tai Chang Street | G/F | plastics factory | plastics factory | Shield Flag Plastic Factory 盾旗塑膠廠 | 18 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-148 |
-| 138:0:0 | 4 Sai Shing Road | G/F | food workshop | food products | Shing Fat Food Company | 1 ssr, G/F | verified | address, next building | HKRS1255-3-120 |
+| 135:1:0 | near 33 Kwong Ming Street | 1/F | doctor / clinic | unlicensed doctor's clinic | Unlicensed clinic beside Kwong Ming Street (大図解 panorama) (無免許の診療所) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1890, y≈1211) |
+| 137:0:2 | 18 Tai Chang Street | G/F | plastics factory | plastics factory | Shield Flag Plastic Factory (盾旗塑膠廠) | 18 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-148 |
+| 138:0:0 | 4 Sai Shing Road | G/F | food workshop | cakes and dim sum | 財記点心批發 | 4 ssr, G/F | verified | address | HKRS1255-3-143 |
+| 138:0:0 | 4 Sai Shing Road | G/F | shop | store | Tai Yau Provision & Grocery | 5 ssr, G/F | verified | address, shares a unit | HKRS1255-3-141 |
+| 138:0:0 | 4 Sai Shing Road | G/F | shop | laundry | Laundry Court Company | 5 Sai Shing Rd 3rd Lane, G/F | verified | street, shares a unit | HKRS1255-3-212 |
+| 138:0:0 | 4 Sai Shing Road | G/F | office / company | trading company | 金豐貿易公司 | 6 ssr, G/F | verified | address, shares a unit | HKRS1255-3-121 |
+| 138:0:0 | 4 Sai Shing Road | G/F | garment, textile + shoe workshop | shoe or leather maker | Sun Sun Wah Leather Handbag Factory | No. 6A ssr, G/F | verified | address, shares a unit | HKRS1255-3-122 |
+| 138:0:0 | 4 Sai Shing Road | G/F | plastics factory | plastics factory | Hoa Wah Plastic Factory | 6 ssr, G/F | verified | address, shares a unit | HKRS1255-3-213 |
 | 138:4:0 | 4 Sai Shing Road | 4/F | flats | flat divided into a living room, 2 cubicles, kitchen, toilet and 2 bed spaces | 4/F, Tai Hing Building, 6 Sai Shing Road | 6 ssr, 4/F | verified | address | p340 |
-| 140:0:0 | Building 139 | G/F | dentist | dental surgery | Wah Fu Dentistry (second premises) 華富牙科 | 71 lsr, G/F | verified | address, next building | HKRS1255-3-347A |
-| 141:0:0 | 33 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Chang Long Leung 張朗良 | 26 kms, G/F | guess | address, next building | HKRS1255-3-528 |
-| 141:0:1 | 33 Kwong Ming Street | G/F | plastics factory | plastics factory | Kwok Hing Plastic Factory 國興塑膠廠 | 33 kms, G/F | verified | address | HKRS1255-3-536A |
-| 144:0:0 | 32 Lo Yan Street | G/F | plastics factory | plastics factory | Ka Wai Plastic Factory[Factory] 嘉煒塑膠廠 | 32 lys, G/F | verified | address | HKRS1255-3-586 |
-| 146:0:0 | 37 Lo Yan Street | G/F | plastics factory | plastics factory | Yat Lee rubber Mfy. [Manufactory] 溢利樹膠製品廠 | 37 lys, G/F | verified | address | HKRS1255-3-320 |
-| 146:0:1 | 37 Lo Yan Street | G/F | food workshop | food company | King Dao Food (second premises) 京都食品公司 | 42 lys, G/F | verified | address, next building | HKRS1255-3-557A |
-| 146:0:2 | 37 Lo Yan Street | G/F | shop | store where the postman's daily round began | Store on Lo Yan Street (postman's base) | lys, G/F | likely | street | p146 |
-| 146:2:0 | 37 Lo Yan Street | 2/F | garment, textile + shoe workshop | garment maker | Chiu Sheung Elec. Machine Knitting 潮湘電機針織廠 | 35 lys, 2/F | verified | address | HKRS1255-3-319 |
-| 148:0:0 | Building 147 | G/F | food workshop | Shanghai pastry shop | Luen On Kee Shanghai Cake Shop 联安記上海點心 | 5 Tung Tsing Road, G/F | likely | street, next building | HKRS1255-3-383 |
-| 148:2:0 | Building 147 | 2/F | office / company | company premises (trade not stated) | Wan Sing Company 宏昇公司 | 63 Tung Tsing Road, 2/F | guess | street (the model's building at this place has only 1 storeys) | HKRS1255-3-354 |
-| 150:0:0 | 35 Kwong Ming Street | G/F | garment, textile + shoe workshop | weaving / textile | Wing Fai Weaving Co. 永輝紡織公司 | 35 kms, G/F | verified | address | HKRS1255-3-537; pp126-127 |
-| 150:0:1 | 35 Kwong Ming Street | G/F | other workshop | toilet-paper factory | Toilet-paper factory west of Kwong Ming Street (大図解 panorama) トイレットペーパー工場 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2688) |
-| 150:0:2 | 35 Kwong Ming Street | G/F | plastics factory | plastic-flower assembly (gluing) workshop | Plastic-flower gluing workshop(s) on Kwong Ming Street 黐膠花工場 | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
-| 150:2:0 | 35 Kwong Ming Street | 2/F | food workshop | pig-blood curd workshop | Pig-blood workshop(s) on Kwong Ming Street 豬紅工場 | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | living room | Tai Hing 4/F room A | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | cubicle | Tai Hing 4/F room B | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | cubicle | Tai Hing 4/F room C | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | kitchen | Tai Hing 4/F room D | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | toilet | Tai Hing 4/F room E | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | bed space | Tai Hing 4/F space F | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 138:4:0 | 4 Sai Shing Road | 4/F | flats | bed space | Tai Hing 4/F space G | 6 ssr, 4/F | verified | part of M74 | p340 |
+| 140:0:0 | Building 139 | G/F | dentist | dental surgery that is also the dentist's home | Wong Yu Ming's dental surgery (Cheung Mei in the shop) | lsr, G/F, map 36 | likely | map, next building | pp36-37; pp34-36; pp352-353, no. 36 |
+| 141:0:0 | 33 Kwong Ming Street | G/F | food workshop | fishball workshop and wholesale shop; police patrol book kept in a letter box beside it | 林羅平's fishball workshop (德興魚蛋公司) on Kwong Ming Street | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629; https://www.hk01.com/社區專題/1033066/ |
+| 141:0:1 | 33 Kwong Ming Street | G/F | plastics factory | plastics factory | Kwok Hing Plastic Factory (國興塑膠廠) | 33 kms, G/F | verified | address | HKRS1255-3-536A |
+| 144:0:0 | 32 Lo Yan Street | G/F | plastics factory | plastics factory | Ka Wai Plastic Factory[Factory] (嘉煒塑膠廠) | 32 lys, G/F | verified | address | HKRS1255-3-586 |
+| 146:0:0 | 37 Lo Yan Street | G/F | plastics factory | plastics factory | Yat Lee rubber Mfy. [Manufactory] (溢利樹膠製品廠) | 37 lys, G/F | verified | address | HKRS1255-3-320 |
+| 146:0:1 | 37 Lo Yan Street | G/F | services + utilities | toilets (and a 'P.H.') held by Wah Hing Plastic Factory | Toilets and 'P.H.' opposite 12 Lo Yan Back Street | opp. 12 / 12A Lo Yan Back Street, G/F | likely | street | HKRS1255-3-316A, -316B |
+| 146:0:2 | 37 Lo Yan Street | G/F | eating house | canteen (eating house) | Canteen by Lo Yan Street (大図解 panorama) (食堂) | lys, G/F | guess | street | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈3786) |
+| 146:2:0 | 37 Lo Yan Street | 2/F | garment, textile + shoe workshop | garment maker | Chiu Sheung Elec. Machine Knitting (潮湘電機針織廠) | 35 lys, 2/F | verified | address | HKRS1255-3-319 |
+| 148:0:0 | Building 147 | G/F | food workshop | Shanghai pastry shop | Luen On Kee Shanghai Cake Shop (联安記上海點心) | 5 Tung Tsing Road, G/F | likely | street, next building | HKRS1255-3-383 |
+| 148:2:0 | Building 147 | 2/F | office / company | company premises (trade not stated) | Wan Sing Company (宏昇公司) | 63 Tung Tsing Road, 2/F | guess | street (the model's building at this place has only 1 storeys) | HKRS1255-3-354 |
+| 150:0:0 | 35 Kwong Ming Street | G/F | garment, textile + shoe workshop | weaving / textile | Wing Fai Weaving Co. (永輝紡織公司) | 35 kms, G/F | verified | address | HKRS1255-3-537; pp126-127 |
+| 150:2:0 | 35 Kwong Ming Street | 2/F | food workshop | pig-blood curd workshop | Pig-blood workshop(s) on Kwong Ming Street (豬紅工場) | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
 | 152:0:0 | 22 Tai Chang Street | G/F | shop | furniture company (sign) | 和興傢俬公司 sign at the standpipe | tcs | guess | street | p106 |
-| 152:0:1 | 22 Tai Chang Street | G/F | metal + machine works | watch-case workshop | Chung Kee watch-case works (second premises) 宗記錶殼加工廠 | 19A tcs, G/F | verified | address | HKRS1255-3-333 |
-| 152:0:2 | 22 Tai Chang Street | G/F | other workshop | factory | Pak Hop Ruler Factory 百合尺廠 | 22 tcs, G/F | verified | address | HKRS1255-3-262 |
+| 152:0:1 | 22 Tai Chang Street | G/F | metal + machine works | watch-case workshop | Chung Kee watch-case works (second premises) (宗記錶殼加工廠) | 19A tcs, G/F | verified | address | HKRS1255-3-333 |
+| 152:0:2 | 22 Tai Chang Street | G/F | other workshop | factory | Pak Hop Ruler Factory (百合尺廠) | 22 tcs, G/F | verified | address | HKRS1255-3-262 |
 | 157:0:0 | 37-37A Kwong Ming Street | G/F | food workshop | food products | So Kee Food Factory | 37-37A kms, G/F | verified | address | HKRS1255-3-539 |
+| 157:0:1 | 37-37A Kwong Ming Street | G/F | metal + machine works | sheet-metal workshop | Sheet-metal workshop west of Kwong Ming Street (大図解 panorama) (鈑金屋) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2380) |
 | 157:3:0 | 37-37A Kwong Ming Street | 3/F | association / community | Chiu Chow music club room (about 20 members) | Chiu Chow Music Club | map 9 | likely | map | pp40-41; pp352-353, no. 9 |
-| 159:0:0 | Building 158 | G/F | dentist | dental surgery that is also the dentist's home | Wong Yu Ming's dental surgery (Cheung Mei in the shop) | lsr, G/F, map 36 | likely | map, next building | pp36-37; pp34-36; pp352-353, no. 36 |
+| 159:0:0 | Building 158 | G/F | eating house | street-side restaurant | Dai pai dong on Tung Tsing Road | Tung Tsing Road, G/F | guess | street, next building | p294 |
 | 160:0:0 | 46A Lo Yan Street | G/F | office / company | property agent | Hop Hing Property Co. | 42 lys, G/F | verified | address | HKRS1255-3-583 |
-| 160:0:1 | 46A Lo Yan Street | G/F | metal + machine works | metal works | Man Wah Metal Mfy.[Manufactory] 文華金屬製品廠 | 44 lys, G/F | verified | address | HKRS1255-3-582 |
-| 160:0:2 | 46A Lo Yan Street | G/F | shop | store | Yau Kee Fruit Stall 有記時菓 | 42 lys, G/F | verified | address | HKRS1255-3-584 |
+| 160:0:0 | 46A Lo Yan Street | G/F | food workshop | food company | King Dao Food (second premises) (京都食品公司) | 42 lys, G/F | verified | address, shares a unit | HKRS1255-3-557A |
+| 160:0:1 | 46A Lo Yan Street | G/F | metal + machine works | metal works | Man Wah Metal Mfy.[Manufactory] (文華金屬製品廠) | 44 lys, G/F | verified | address | HKRS1255-3-582 |
+| 160:0:2 | 46A Lo Yan Street | G/F | shop | store | Yau Kee Fruit Stall (有記時菓) | 42 lys, G/F | verified | address | HKRS1255-3-584 |
 | 160:0:3 | 46A Lo Yan Street | G/F | metal + machine works | metal works | 義隆鐵器不銹鋼具工程 | 46A lys, G/F | verified | address | HKRS1255-3-580 |
 | 160:0:4 | 46A Lo Yan Street | G/F | food workshop | fishball maker | 成發魚蛋批發 | 46 lys, G/F | verified | address | HKRS1255-3-581 |
-| 160:2:5 | 46A Lo Yan Street | 2/F | garment, textile + shoe workshop | shoe shop/workshop | 星洲鞋店 (second premises) | 42 lys, 2/F | verified | address | HKRS1255-3-309 |
-| 160:3:5 | 46A Lo Yan Street | 3/F | food workshop | food company | Foon Lok Food Stuffs (second premises) 歡樂食品公司 | 42 lys, 3/F | verified | address | HKRS1255-3-573 |
-| 162:0:0 | near 6 Sz Kung Street | G/F | food workshop | food products | 160, Lung Chun Road, G/F - Shing Fung Foods Company | 160 lcr, G/F | verified | address, next building | HKRS1255-3-138A |
-| 162:0:2 | near 6 Sz Kung Street | G/F | metal + machine works | electrical works | 錶殼蝕刻 | 2B ssr, G/F | verified | address, next building | HKRS1255-3-140 |
-| 162:0:3 | near 6 Sz Kung Street | G/F | metal + machine works | metal works | Tak Tat Aluminium Decoration Fitting Co. | No. 1 skg, G/F | verified | address, next building | HKRS1255-3-132 |
-| 162:0:4 | near 6 Sz Kung Street | G/F | dentist | dentist | Measurement of G/F, 156A Lung Chun Road, Kowloon - Yan Tak D | 156A lcr, G/F | verified | address, next building | HKRS1255-3-113A; p114 photo; HKRS1255-3-113A |
-| 167:0:0 | 156A Lung Chun Road | G/F | dentist | dentist | K.W.C. [Kowloon Walled City] 陳燕初牙科 | 150 lcr, G/F | verified | address, next building | HKRS1255-3-118 |
-| 167:0:1 | 156A Lung Chun Road | G/F | shop | store | Wah Nam Drug Store and Supermarket | 150 lcr, G/F | verified | address, next building | HKRS1255-3-117 |
-| 167:3:1 | 156A Lung Chun Road | 3/F | garment, textile + shoe workshop | garment maker | Koon Wah Garment Factory [Factory] 冠華製衣廠 | 156 lcr, 3/F | verified | address | HKRS1255-3-114 |
-| 167:4:0 | 156A Lung Chun Road | 4/F | flats | kitchen | Tai Hing 4/F room D | 6 ssr, 4/F | verified | address, next building | p340 |
-| 167:4:1 | 156A Lung Chun Road | 4/F | flats | cubicle | Tai Hing 4/F room C | 6 ssr, 4/F | verified | address, next building | p340 |
+| 160:2:5 | 46A Lo Yan Street | 2/F | garment, textile + shoe workshop | shoe shop/workshop | Sing Chow Shoes (second premises) (星洲鞋店) | 42 lys, 2/F | verified | address | HKRS1255-3-309 |
+| 160:3:5 | 46A Lo Yan Street | 3/F | food workshop | food company | Foon Lok Food Stuffs (second premises) (歡樂食品公司) | 42 lys, 3/F | verified | address | HKRS1255-3-573 |
+| 167:0:0 | 156A Lung Chun Road | G/F | food workshop | food products | 160, Lung Chun Road, G/F - Shing Fung Foods Company | 160 lcr, G/F | verified | address | HKRS1255-3-138A |
+| 167:0:1 | 156A Lung Chun Road | G/F | dentist | dentist | Measurement of G/F, 156A Lung Chun Road, Kowloon - Yan Tak D | 156A lcr, G/F | verified | address | HKRS1255-3-113A; p114 photo; HKRS1255-3-113A |
+| 167:0:1 | 156A Lung Chun Road | G/F | food workshop | food products | Shing Fat Food Company | 1 ssr, G/F | verified | address, shares a unit | HKRS1255-3-120 |
+| 167:0:1 | 156A Lung Chun Road | G/F | metal + machine works | electrical works | 錶殼蝕刻 | 2B ssr, G/F | verified | address, shares a unit | HKRS1255-3-140 |
+| 167:3:1 | 156A Lung Chun Road | 3/F | garment, textile + shoe workshop | garment maker | Koon Wah Garment Factory [Factory] (冠華製衣廠) | 156 lcr, 3/F | verified | address | HKRS1255-3-114 |
 | 167:7:1 | 156A Lung Chun Road | 7/F | store room | storage | 152, Lung Chun Road, 7/F, Flat E [Commerical Storage] | 152 lcr, 7/F | verified | address | HKRS1255-3-115 |
-| 168:0:0 | Building 167 | G/F | eating house | street-side restaurant | Dai pai dong on Tung Tsing Road | Tung Tsing Road, G/F | guess | street, next building | p294 |
 | 169:1:0 | Building 168 | 1/F | food workshop | roast-pork / cooked-meat processing workshop (rented, unlicensed; oven, fridge); rent $2000 a month incl. power and water | Yim Kwok Yuen's cooked-meat workshop | lys, map 39 | likely | map | pp286-289; pp352-353, no. 39 |
-| 170:0:2 | near 37 Kwong Ming Street | G/F | food workshop | fishball workshop and wholesale shop; police patrol book kept in a letter box beside it | 林羅平's fishball workshop (德興魚蛋公司) on Kwong Ming Street | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629; https://www.hk01.com/社區專題/1033066/ |
+| 170:0:1 | near 37 Kwong Ming Street | G/F | services + utilities | hair salon / barber | Hair salon beside Kwong Ming Street (大図解 panorama) (髪型屋) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1942, y≈1278) |
+| 170:0:2 | near 37 Kwong Ming Street | G/F | eating house | canteen (eating house) | Canteen east of Kwong Ming Street (大図解 panorama) (食堂) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1593) |
 | 171:0:1 | 7 Sz Kung Street | G/F | food workshop | food products | Shing Kee Food | 7 skg, G/F | verified | address | HKRS1255-3-123B |
-| 172:2:0 | Building 171 | 2/F | school / kindergarten | free-school centre (rebuilt or converted in the 1970s from the old Lung Tsun Free School) | Free-school centre (義學中心), former Lung Tsun Free School 義學中心 / 龍津義學 | map 28 | likely | map | https://www.hk01.com/article/39195; pp352-353, no. 28 |
+| 172:2:0 | Building 171 | 2/F | school / kindergarten | free-school centre (rebuilt or converted in the 1970s from the old Lung Tsun Free School) | Free-school centre, former Lung Tsun Free School (義學中心 / 龍津義學) | map 28 | likely | map | https://www.hk01.com/article/39195; pp352-353, no. 28 |
 | 172:2:1 | Building 171 | 2/F | association / community | elderly centre: afternoons Mon-Sat, Sunday worship; afternoon tea, TV, classes; 184 members; kitchen | Old People's Centre | map 27 | likely | map | pp305-306; pp352-353, no. 27; https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life; https://digitalrepository.lib.hku.hk/catalog/61092k64x |
 | 173:0:2 | 8 Sz Kung Street | G/F | plastics factory | plastics factory | Ma Kam Plastic Factory | No. 8 skg, G/F | verified | address | HKRS1255-3-134 |
 | 173:4:5 | 8 Sz Kung Street | 4/F | flats | children's play: ping pong in the hallway; kites and jumping on mattresses on the roof | Hallway and roof of Albert Ng's building | 8 skg | guess | address | https://web.archive.org/web/20200803125015id_/https://www.scmp.com/news/hong-kong/article/1119265/kowloon-city-den-evil-lush-gardens |
-| 173:7:5 | 8 Sz Kung Street | 7/F | flats | family flat (5 people, Chiu Chow family), owner-occupied, bought 1975 | Ng family flat, Room A, 7/F, 8 Sz Kung St 社公街8号楼7层A室 | 8 skg, 7/F | verified | address | https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people; https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city |
+| 173:7:5 | 8 Sz Kung Street | 7/F | flats | family flat (5 people, Chiu Chow family), owner-occupied, bought 1975 | Ng family flat, Room A, 7/F, 8 Sz Kung St (社公街8号楼7层A室) | 8 skg, 7/F | verified | address | https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people; https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city |
 | 174:0:0 | Building 173 | G/F | garment, textile + shoe workshop | muslin-weaving factory (large machinery, cloth store) | Yu Hing Wan's muslin factory | lcr, map 40 | likely | map | pp310-311; pp352-353, no. 40 |
-| 176:0:1 | 38 Kwong Ming Street | G/F | plastics factory | plastics factory | Tai Sang Plastic Factory 大生塑膠廠 | 38 kms, G/F | verified | address | HKRS1255-3-526 |
+| 176:0:1 | 38 Kwong Ming Street | G/F | plastics factory | plastics factory | Tai Sang Plastic Factory (大生塑膠廠) | 38 kms, G/F | verified | address | HKRS1255-3-526 |
 | 181:0:0 | Building 180 | G/F | food workshop | fishball factory behind shutters | Fishball factory on Lung Chun Back Road | lcb, G/F | likely | street | p43 |
-| 181:4:0 | Building 180 | 4/F | garment, textile + shoe workshop | garment factory | Ying Kee Garment Factory 英記製衣 | 12C lcb, 4/F | verified | street | HKRS1255-3-471 |
+| 181:4:0 | Building 180 | 4/F | garment, textile + shoe workshop | garment factory | Ying Kee Garment Factory (英記製衣) | 12C lcb, 4/F | verified | street | HKRS1255-3-471 |
 | 182:0:0 | 25A Tai Chang Street | G/F | plastics factory | plastics factory | G/F, No. 25A, Tai Chang Street, Rear Block, Sam Hing Plastic | No. 25A tcs, G/F | verified | address | HKRS1255-3-238 |
 | 182:0:1 | 25A Tai Chang Street | G/F | metal + machine works | metalware factory | 捷信五金廠 | 12 skg, G/F | verified | address | HKRS1255-3-82B |
 | 182:0:2 | 25A Tai Chang Street | G/F | metal + machine works | knitting-needle factory | Kowloon Knitting Needle Factory | 15 & 16 skg, G/F | verified | address | HKRS1255-3-92 |
@@ -506,12 +499,12 @@ Made by `node tools/build_room_uses.mjs` from `data/room_research.json` and `dat
 | 186:0:1 | 28 Tai Chang Street | G/F | shop | general store (drinks, household goods), open 6am-midnight | Corner store at Lung Chun Back Road and Tai Chang Street | tcs, G/F | likely | clue, next building | pp90-91 |
 | 186:0:2 | 28 Tai Chang Street | G/F | shop | grocery store (rice, beer, peanut oil, cigarettes, fruit); also the owner's home | Lam family grocery | 25 tcs, G/F, map 20 | likely | address, next building | pp296-297; pp352-353, no. 20 |
 | 186:3:0 | 28 Tai Chang Street | 3/F | flats | small windowless flat of two widows | Law Yu Yi's flat | Lung Chun First Alley, 3/F, map 23 | likely | map | pp80-81; pp352-353, no. 23 |
-| 186:6:0 | 28 Tai Chang Street | 6/F | food workshop | pig-blood curd workshop | Chan Kee pig blood 陳記豬紅 | 28 Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-197 |
-| 187:0:0 | 150 Lung Chun Road | G/F | food workshop | food products | 永豐食品公司 | 146 lcr, G/F | verified | address, next building | HKRS1255-3-108 |
-| 188:0:0 | 39 Kwong Ming Street | G/F | other workshop | printing or paper | Kit Kee 成功傑記紙品廠 | 39 kms, G/F | verified | address | HKRS1255-3-544 |
-| 188:1:0 | 39 Kwong Ming Street | 1/F | plastics factory | plastics factory | Luen Fat Plastic Products Factory 联發塑膠製品廠 | 39 kms, 1/F | verified | address | HKRS1255-3-545 |
+| 186:6:0 | 28 Tai Chang Street | 6/F | food workshop | pig-blood curd workshop | Chan Kee pig blood (陳記豬紅) | 28 Tai Chang St 7th Lane, 6/F | verified | street | HKRS1255-3-197 |
+| 187:0:0 | 150 Lung Chun Road | G/F | shop | store | Wah Nam Drug Store and Supermarket | 150 lcr, G/F | verified | address | HKRS1255-3-117 |
+| 187:0:0 | 150 Lung Chun Road | G/F | dentist | dentist | 陳燕初牙科 | 150 lcr, G/F | verified | address, shares a unit | HKRS1255-3-118 |
+| 188:0:0 | 39 Kwong Ming Street | G/F | other workshop | printing or paper | Kit Kee (成功傑記紙品廠) | 39 kms, G/F | verified | address | HKRS1255-3-544 |
+| 188:1:0 | 39 Kwong Ming Street | 1/F | plastics factory | plastics factory | Luen Fat Plastic Products Factory (联發塑膠製品廠) | 39 kms, 1/F | verified | address | HKRS1255-3-545 |
 | 188:2:0 | 39 Kwong Ming Street | 2/F | doctor / clinic | bone-setter | Lam Hung Bone Setter | 39 kms, 2/F | verified | address | HKRS1255-3-546 |
-| 191:0:1 | Building 190 | G/F | shop | hardware store among low-rise temporary structures | Hardware store off Tung Tsing Road | Tung Tsing Road, G/F | guess | street, next building | p294 |
 | 192:0:2 | 19 Sz Kung Street | G/F | food workshop | food products | 義發食品公司 | 19 skg, G/F | verified | address | HKRS1255-3-77 |
 | 192:3:2 | 19 Sz Kung Street | 3/F | other workshop | construction | 廖理 | 19 skg, 3/F | verified | address | HKRS1255-3-94 |
 | 193:0:5 | 24 Sz Kung Street | G/F | other workshop | toy maker | 祥與玩具 | 24 skg, G/F | verified | address | HKRS1255-3-90 |
@@ -520,189 +513,196 @@ Made by `node tools/build_room_uses.mjs` from `data/room_research.json` and `dat
 | 195:0:0 | Building 194 | G/F | plastics factory | rubber-plunger workshop (heated press; one employee) | To Gui Bon's rubber factory | lcb, G/F, map 32 | likely | map | pp237-238; pp352-353, no. 32 |
 | 196:0:0 | Building 195 | G/F | shop | store (shop) | Chau Pak's store | lcb, map 5 | guess | map | pp352-353, no. 5 |
 | 197:0:0 | 140 Lung Chun Road | G/F | shop | store | 曾永利士多 | 140 lcr, G/F | verified | address | HKRS1255-3-107 |
-| 198:0:0 | 44 Kwong Ming Street | G/F | eating house | canteen (eating house) | Canteen east of Kwong Ming Street (大図解 panorama) 食堂 | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1593) |
-| 198:2:0 | 44 Kwong Ming Street | 2/F | food workshop | sausage factory | Sausage factory, upper floor beside Kwong Ming Street (大図解 panorama) 腸詰め工場 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1898, y≈938) |
+| 197:0:0 | 140 Lung Chun Road | G/F | food workshop | food products | 永豐食品公司 | 146 lcr, G/F | verified | address, shares a unit | HKRS1255-3-108 |
+| 197:0:0 | 140 Lung Chun Road | G/F | shop | store | 創豐米業 | 146 lcr, G/F | verified | address, shares a unit | HKRS1255-3-109 |
+| 197:0:0 | 140 Lung Chun Road | G/F | food workshop | noodle maker | Cheung Hing House (潮江粥麵飯店) | 146A & 146B lcr, G/F | verified | address, shares a unit | HKRS1255-3-110 |
+| 197:0:0 | 140 Lung Chun Road | G/F | metal + machine works | metal works | Tak Tat Aluminium Decoration Fitting Co. | No. 1 skg, G/F | verified | address, shares a unit | HKRS1255-3-132 |
+| 198:0:0 | 44 Kwong Ming Street | G/F | shop | shops and factories opening directly onto the alley along its whole length | Suenn Ho's alley of shops and factories (probably Kwong Ming Street) | kms | guess | street | p137 |
+| 198:2:0 | 44 Kwong Ming Street | 2/F | food workshop | sausage factory | Sausage factory, upper floor beside Kwong Ming Street (大図解 panorama) (腸詰め工場) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1898, y≈938) |
 | 198:4:0 | 44 Kwong Ming Street | 4/F | garment, textile + shoe workshop | shoe or leather maker | Tung Hing Shoes | 44 kms, 4/F | verified | address | HKRS1255-3-522 |
-| 200:0:0 | 42 Kwong Ming Street | G/F | shop | shops and factories opening directly onto the alley along its whole length | Suenn Ho's alley of shops and factories (probably Kwong Ming Street) | kms | guess | street | p137 |
-| 200:1:0 | 42 Kwong Ming Street | 1/F | other workshop | factory | Kwong Ming Enterprise Co. 光明實業公司 | 42 kms, 1/F | verified | address | HKRS1255-3-523 |
-| 200:3:0 | 42 Kwong Ming Street | 3/F | other workshop | factory | Winner Manufactory 永華製造廠 | 42 kms, 3/F | verified | address | HKRS1255-3-525 |
+| 200:0:0 | 42 Kwong Ming Street | G/F | other workshop | toilet-paper factory | Toilet-paper factory west of Kwong Ming Street (大図解 panorama) (トイレットペーパー工場) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈2688) |
+| 200:1:0 | 42 Kwong Ming Street | 1/F | other workshop | factory | Kwong Ming Enterprise Co. (光明實業公司) | 42 kms, 1/F | verified | address | HKRS1255-3-523 |
+| 200:3:0 | 42 Kwong Ming Street | 3/F | other workshop | factory | Winner Manufactory (永華製造廠) | 42 kms, 3/F | verified | address | HKRS1255-3-525 |
 | 201:0:0 | 31 Tai Chang Street | G/F | metal + machine works | metal works | 榮記鐵器工程 | 31 tcs, G/F | verified | address | HKRS1255-3-199 |
-| 202:0:0 | Building 201 | G/F | shop | firm (trade not stated) | Yue Fung Hoo 裕豐號 | 18 & 19 lcb, G/F | guess | street | HKRS1255-3-470 |
+| 202:0:0 | Building 201 | G/F | shop | firm (trade not stated) | Yue Fung Hoo (裕豐號) | 18 & 19 lcb, G/F | guess | street | HKRS1255-3-470 |
 | 202:1:0 | Building 201 | 1/F | office / company | business premises (trade not stated) | Ngai Shing | 8 lcb, 1/F | guess | street | HKRS1255-3-473 |
-| 206:0:0 | 6 Sz Kung Street | G/F | shop | tea merchant | 中興茶行 (tea merchant) | 124 lcr, G/F | verified | address, next building | HKRS1255-3-71B |
-| 206:0:1 | 6 Sz Kung Street | G/F | dentist | dental surgery | Chan Hay Sing Dentistry 陳喜星牙科 | 126 lcr, G/F | verified | address, next building | HKRS1255-3-72 (ledgers -73A to -73C) |
 | 206:0:2 | 6 Sz Kung Street | G/F | metal + machine works | metal works | Lai Ching Metal Factory | No. 6 skg, G/F | verified | address | HKRS1255-3-133 |
-| 207:0:0 | near 7 Sz Kung Street | G/F | shop | business premises (trade not in the title) | G/F, 118, Lung Chun Road | 118 lcr, G/F | guess | address, next building | HKRS1255-3-67 |
-| 207:0:1 | near 7 Sz Kung Street | G/F | doctor / clinic | clinic operating on a patient; family waits in the next room | Surgery room with a waiting family next door, west of Lung Chun 2nd Lane (大図解 panorama) | G/F | guess | clue, next building | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈4399) |
-| 209:0:0 | 134 Lung Chun Road | G/F | food workshop | noodle maker | Cheung Hing House 潮江粥麵飯店 | 146A & 146B lcr, G/F | verified | address, next building | HKRS1255-3-110 |
-| 209:0:1 | 134 Lung Chun Road | G/F | shop | store | 創豐米業 | 146 lcr, G/F | verified | address, next building | HKRS1255-3-109 |
-| 209:0:2 | 134 Lung Chun Road | G/F | other workshop | printing or paper | Wah Tung Paper | 136 lcr, G/F | verified | address | HKRS1255-3-86 |
-| 209:0:3 | 134 Lung Chun Road | G/F | herbalist / medicine shop | medicine shop | Man Sang Medicine Hong | 130 lcr, G/F | verified | address, next building | HKRS1255-3-75 |
-| 209:0:4 | 134 Lung Chun Road | G/F | eating house | ice café (冰室) | 金城冰室 | 134 lcr, G/F | verified | address | HKRS1255-3-84 |
+| 209:0:2 | 134 Lung Chun Road | G/F | doctor / clinic | clinic operating on a patient; family waits in the next room | Surgery room with a waiting family next door, west of Lung Chun 2nd Lane (大図解 panorama) | G/F | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈4399) |
+| 209:0:3 | 134 Lung Chun Road | G/F | eating house | ice café (冰室) | 金城冰室 | 134 lcr, G/F | verified | address | HKRS1255-3-84 |
+| 209:0:4 | 134 Lung Chun Road | G/F | other workshop | printing or paper | Wah Tung Paper | 136 lcr, G/F | verified | address | HKRS1255-3-86 |
 | 209:2:2 | 134 Lung Chun Road | 2/F | metal + machine works | electrical works | 大光電器 | 136 lcr, 2/F | verified | address | HKRS1255-3-85 |
 | 209:5:2 | 134 Lung Chun Road | 5/F | metal + machine works | jewellery or gems | 永興寶石廠 | 134 lcr, 5/F | verified | address | HKRS1255-3-83 |
-| 211:0:0 | 38 Tai Chang Street | G/F | metal + machine works | metalware factory | Yuen Kong Metal Factory 源江金屬製品廠 | 38 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-152 |
-| 211:0:1 | 38 Tai Chang Street | G/F | herbalist / medicine shop | bonesetter's clinic | Wong Hoi Ming Bonesetter | 48 Tai Chang St 7th Lane, G/F | verified | street, next building | HKRS1255-3-195 |
-| 211:0:2 | 38 Tai Chang Street | G/F | herbalist / medicine shop | herbal bonesetter's clinic and home; earlier also a mahjong room for two tables (stopped 'a few years ago') | Wong Hoi Ming Bonesetter | 48 tcs, G/F, map 35 | verified | address, next building | pp232-233; pp352-353, no. 35 |
-| 211:0:3 | 38 Tai Chang Street | G/F | temple / church / mission | Christian youth centre and drug-rehabilitation contact point | Shuiyuan youth centre (Jackie Pullinger) | tcs | likely | street | pp258-260 |
-| 213:0:0 | Building 212 | G/F | food workshop | pudding/cake workshop | Law Lun Kee Pudding Product Workshop (back premises) 羅粦記糕品廠 | 1 lcb, G/F | verified | street | HKRS1255-3-451 (ledger -452) |
-| 213:0:1 | Building 212 | G/F | food workshop | fish-ball workshop | Cheung Kwong Fishball Workshop 祥光魚蛋廠 | 11 lcb, G/F | verified | street | HKRS1255-3-454 |
-| 213:0:2 | Building 212 | G/F | food workshop | roast meat shop/workshop | Tai Sam Yuen Roasted Meat 大三元燒臘 | 10 lcb, G/F | verified | street | HKRS1255-3-472 |
+| 211:0:0 | 38 Tai Chang Street | G/F | metal + machine works | metalware factory | Yuen Kong Metal Factory (源江金屬製品廠) | 38 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-152 |
+| 211:0:1 | 38 Tai Chang Street | G/F | temple / church / mission | Christian youth centre and drug-rehabilitation contact point | Shuiyuan youth centre (Jackie Pullinger) | tcs | likely | street | pp258-260 |
+| 213:0:0 | Building 212 | G/F | food workshop | pudding/cake workshop | Law Lun Kee Pudding Product Workshop (back premises) (羅粦記糕品廠) | 1 lcb, G/F | verified | street | HKRS1255-3-451 (ledger -452) |
+| 213:0:1 | Building 212 | G/F | food workshop | fish-ball workshop | Cheung Kwong Fishball Workshop (祥光魚蛋廠) | 11 lcb, G/F | verified | street | HKRS1255-3-454 |
+| 213:0:2 | Building 212 | G/F | food workshop | roast meat shop/workshop | Tai Sam Yuen Roasted Meat (大三元燒臘) | 10 lcb, G/F | verified | street | HKRS1255-3-472 |
 | 214:0:1 | Building 213 | G/F | shop | business premises (trade not in the title) | 林洪 | 56 lcr, G/F | guess | address, next building | HKRS1255-3-254 |
-| 215:0:2 | Building 214 | G/F | shop | newspaper stall on the street | Lee Yuk Ha Newspaper Stall | 66-68 (outside) lcr, G/F | likely | address, next building | HKRS1255-3-384 |
 | 216:0:0 | 17 Sz Kung Street | G/F | metal + machine works | metal sandblasting workshop | 裕豐五金噴砂 | 17 skg, G/F | verified | address | HKRS1255-3-82A |
 | 216:0:1 | 17 Sz Kung Street | G/F | services + utilities | the only Government standpipe inside the City; hoses run to nearby food factories | Government standpipe, Tai Chang Street | tcs, G/F, map 30 | likely | map, next building | pp106-110; pp352-353, no. 30 |
-| 216:0:2 | 17 Sz Kung Street | G/F | plastics factory | plastics factory | Chiu Fat Plastic Factory 潮發塑膠廠 | 32, 34 & 36 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-151 |
+| 216:0:2 | 17 Sz Kung Street | G/F | plastics factory | plastics factory | Chiu Fat Plastic Factory (潮發塑膠廠) | 32, 34 & 36 Tai Chang St 7th Lane, G/F | verified | street | HKRS1255-3-151 |
 | 216:0:3 | 17 Sz Kung Street | G/F | shop | business premises (trade not in the title) | 合豐 | 17 skg, G/F | guess | address | HKRS1255-3-80 |
 | 216:0:4 | 17 Sz Kung Street | G/F | food workshop | cluster of food factories filling tanks by hose from the standpipe | Food factories around the standpipe | tcs, map 30 | likely | map, next building | p110 |
-| 218:0:0 | Building 217 | G/F | herbalist / medicine shop | bone-setting and Chinese medicine clinic on an upper floor (GRS 1990: bonesetter and gymnasium) | Liu Kwok Sum Bonesetter 廖廣森 跌打中醫診所 (sign, 1975); 廖廣森鐵打醫館 (GRS) | 1 lcr | likely | address, next building | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg ; businesses.json 'Front Portion, 3/F, 1 Lung Chun Road' |
-| 218:0:1 | Building 217 | G/F | shop | hardware and paint shop | Lam Hung Hing Metalware & Paint 林鴻興五金漆油 | 9 Tung Tsing Road, G/F | likely | street, next building | HKRS1255-3-380 (ledger -382) |
-| 218:2:1 | Building 217 | 2/F | office / company | engineering company | Woods & David Engineering Co. 吳氏工程公司 | 59 Tung Tsing Road, 2/F | likely | street (the model's building at this place has only 1 storeys) | HKRS1255-3-353 |
+| 217:0:0 | near 46 Kwong Ming Street | G/F | gambling / drugs / sex | gambling room | Gambling room beside Kwong Ming Street (大図解 panorama) (賭博場) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1900, y≈1347) |
+| 218:0:1 | Building 217 | G/F | shop | hardware store among low-rise temporary structures | Hardware store off Tung Tsing Road | Tung Tsing Road, G/F | guess | street, next building | p294 |
+| 218:2:1 | Building 217 | 2/F | office / company | engineering company | Woods & David Engineering Co. (吳氏工程公司) | 59 Tung Tsing Road, 2/F | likely | street (the model's building at this place has only 1 storeys) | HKRS1255-3-353 |
 | 218:6:1 | Building 217 | 6/F | flats | one-room flat of an old man living alone | Yau Lap Cheong's one-room flat | map 38 | likely | map | p24; pp352-353, no. 38 |
 | 219:0:0 | Building 218 | G/F | food workshop | Chiu Chow cake bakery (steamed sweet cakes, wood-fired stove) | Law Kim Kwong's bakery | map 22 | likely | map | pp182-183; pp352-353, no. 22 |
-| 220:0:0 | Building 219 | G/F | shop | business premises (trade not in the title) | Wong Yin Kee 王賢記 | 25 lcr, G/F | guess | address, next building | HKRS1255-3-47 |
-| 220:0:1 | Building 219 | G/F | temple / church / mission | premises of the Christian Nationals' Evangelism Commission (mission; elderly work) | CNEC premises, 28 Lung Chun Road | 28 lcr | likely | address, next building | HKRS1078-1-65; HKRS1255-2-28; HKRS1078-1-52 |
-| 221:0:0 | 23 Sz Kung Street | G/F | food workshop | food company | Yuen Fung Food Company (second premises) 源豐食品公司 | 20 skg, G/F | likely | address | HKRS1255-3-76 |
+| 220:0:1 | Building 219 | G/F | shop | business premises (trade not in the title) | Wong Yin Kee (王賢記) | 25 lcr, G/F | guess | address, next building | HKRS1255-3-47 |
+| 221:0:0 | 23 Sz Kung Street | G/F | food workshop | food company | Yuen Fung Food Company (second premises) (源豐食品公司) | 20 skg, G/F | likely | address | HKRS1255-3-76 |
 | 221:0:1 | 23 Sz Kung Street | G/F | metal + machine works | silverware factory | 金榜銀製品廠 | 21 & 21A skg, G/F | verified | address | HKRS1255-3-91 |
-| 222:0:0 | 26A Lung Chun Road | G/F | food workshop | food products | 安利食品 | 26A lcr, G/F | verified | address | HKRS1255-3-459, HKRS1255-3-460A, HKRS1255-3-460B |
-| 222:0:1 | 26A Lung Chun Road | G/F | food workshop | cakes and dim sum | G/F, Rear Portion, 20 Lung Chun Rd.[Road] - Hau Shun Hing Ca | 20 lcr, G/F | verified | address, next building | HKRS1255-3-465A, HKRS1255-3-465B |
-| 222:0:2 | 26A Lung Chun Road | G/F | other workshop | factory | 奇妙實業公司 | 21 & 22 lcr, G/F | verified | address, next building | HKRS1255-3-462 |
-| 222:0:3 | 26A Lung Chun Road | G/F | plastics factory | plastics factory | 國民膠廠 | 26 lcr, G/F | verified | address | HKRS1255-3-461 |
+| 222:0:0 | 26A Lung Chun Road | G/F | plastics factory | plastics factory | Sun Kwong Plastic Factory (新光塑膠廠) | 27 Lung Chun 3rd Lane, G/F | verified | street | HKRS1255-3-324 |
+| 222:0:1 | 26A Lung Chun Road | G/F | food workshop | food products | 安利食品 | 26A lcr, G/F | verified | address | HKRS1255-3-459, HKRS1255-3-460A, HKRS1255-3-460B |
+| 222:0:2 | 26A Lung Chun Road | G/F | plastics factory | plastics factory | 國民膠廠 | 26 lcr, G/F | verified | address | HKRS1255-3-461 |
+| 222:0:3 | 26A Lung Chun Road | G/F | dentist | medical or dental clinic (photo) | Clean clinic on Lung Chun Road (not Cheng Koon Yiu's) | lcr | likely | street | p243 |
 | 222:9:3 | 26A Lung Chun Road | 9/F | office / company | trading company | Cheung Hing Company | 146 lcr, 9/F | verified | street | HKRS1255-3-102 |
-| 224:0:0 | 46 Kwong Ming Street | G/F | food workshop | cakes and dim sum | 張記白糖糕批發 | 20 lcr, G/F | verified | address, next building | HKRS1255-3-463, HKRS1255-3-464 |
-| 224:0:1 | 46 Kwong Ming Street | G/F | shop | grocery store (士多), with kitchen under the stair and iron cages | Chan Shing Fat Store 陳成發士多 | 17 lcr, G/F | verified | address, next building | HKRS1255-3-46 |
-| 224:0:2 | 46 Kwong Ming Street | G/F | other workshop | factory | 羅粦記糕品廠 | 8 lcr, G/F | verified | address, next building | HKRS1255-3-451 |
-| 224:0:3 | 46 Kwong Ming Street | G/F | food workshop | roast meat | Wah Fung Roast Meat 華豐燒臘 | 9 lcr, G/F | verified | address, next building | HKRS1255-3-25 |
-| 224:0:4 | 46 Kwong Ming Street | G/F | plastics factory | plastics factory | Ho Tat Plastic Factory 豪達塑膠廠 | 9A lcr, G/F | verified | address, next building | HKRS1255-3-31 |
-| 224:1:2 | 46 Kwong Ming Street | 1/F | plastics factory | plastics factory | Same as Known 1/F, 48 Kwong Ming Street 長城塑膠玩具廠 | 46 kms, 1/F | verified | address | HKRS1255-3-520 |
-| 224:4:2 | 46 Kwong Ming Street | 4/F | food workshop | steamed-bun factory (a child studies in a corner) | Steamed-bun factory beside Kwong Ming Street (大図解 panorama) 蒸しパン工場 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1903, y≈1436) |
+| 224:0:0 | 46 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Chan Wai Kee | 13 lcr, G/F | guess | address | HKRS1255-3-26 |
+| 224:0:1 | 46 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Kwok Kee (郭記) | 10 lcr, G/F | guess | address | HKRS1255-3-450 |
+| 224:0:2 | 46 Kwong Ming Street | G/F | temple / church / mission | religious hall in the ground-floor lobby of the high-rise built on the old free-school site | 義德善社 religious hall, G/F lobby of 義學大樓, 5 Lung Chun Road (義德善社 (義學大樓)) | 5 lcr, G/F | likely | address, next building | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
+| 224:0:3 | 46 Kwong Ming Street | G/F | plastics factory | plastic-flower assembly (gluing) workshop | Plastic-flower gluing workshop(s) on Kwong Ming Street (黐膠花工場) | kms | likely | street | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
+| 224:0:4 | 46 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Yeung Kee (楊記) | 5B lcr, G/F | guess | address, next building | HKRS1255-3-22 |
+| 224:1:2 | 46 Kwong Ming Street | 1/F | plastics factory | plastics factory | Same as Known 1/F, 48 Kwong Ming Street (長城塑膠玩具廠) | 46 kms, 1/F | verified | address | HKRS1255-3-520 |
+| 224:4:2 | 46 Kwong Ming Street | 4/F | food workshop | steamed-bun factory (a child studies in a corner) | Steamed-bun factory beside Kwong Ming Street (大図解 panorama) (蒸しパン工場) |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1903, y≈1436) |
 | 224:11:2 | 46 Kwong Ming Street | 11/F | store room | storage | 李靜華 | 146 lcr, 11/F | verified | street | HKRS1255-3-103 |
-| 225:0:0 | Building 224 | G/F | doctor / clinic | clinic | Hon Hin Chung Medical Clinic | 116 lcr | likely | address, next building | HKRS1255-3-65 |
-| 225:0:1 | Building 224 | G/F | dentist | dentist's surgery: dental chair, overhead light, glass shelves, pink wall tiles | 凌生牙科 dentist's surgery (probably 鄭凌生牙科, Cheng Ling Sang Dentistry) 凌生牙科 (mirror lettering appears to begin 鄭凌生牙科) | G/F | likely | clue, next building | https://gwulo.com/media/19655 |
-| 225:0:2 | Building 224 | G/F | dentist | medical or dental clinic (photo) | Clean clinic on Lung Chun Road (not Cheng Koon Yiu's) | lcr | likely | street, next building | p243 |
-| 226:0:0 | Building 225 | G/F | dentist | dental clinic in a shop rented from his teacher; the family also sleeps there | Cheng Koon Yiu's dental clinic | G/F, map 7 | likely | map, next building | pp242-245; p245; pp352-353, no. 7 |
-| 227:0:0 | Building 226 | G/F | eating house | restaurant | Happy Restaurant | 110 lcr, G/F | verified | address, next building | HKRS1255-3-53 |
-| 227:0:1 | Building 226 | G/F | office / company | trading company | Wang Lee Trading Co. [Company] | 112 lcr, G/F | verified | address, next building | HKRS1255-3-64 |
+| 227:0:0 | Building 226 | G/F | dentist | dentist's surgery: dental chair, overhead light, glass shelves, pink wall tiles | Ling Sang Dentistry (probably Cheng Ling Sang Dentistry) (凌生牙科) | G/F | likely | clue, next building | https://gwulo.com/media/19655 |
 | 228:0:0 | 47 Tai Chang Street | G/F | office / company | trading company | Ho Fat Trading Company | No 47 tcs, G/F | verified | address | HKRS1255-3-196 |
 | 228:0:1 | 47 Tai Chang Street | G/F | eating house | ice café (冰室) | Fai Tsai Café | 42 tcs, G/F | verified | address | HKRS1255-3-153 |
+| 228:4:0 | 47 Tai Chang Street | 4/F | flats | family flat (two bedrooms, no taps; water carried up four floors) | Heung Yin-king's family flat, 4/F, Tai Chang Street | tcs, 4/F | likely | street | https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness |
 | 229:0:0 | 74 Lung Chun Road | G/F | dentist | dentist | 麗光牙科 | 76 lcr, G/F | verified | address | HKRS1255-3-4 |
-| 229:0:1 | 74 Lung Chun Road | G/F | plastics factory | plastics factory | Ho Tat Plastic Factory (second premises) 豪達塑膠廠 | 92 lcr, G/F | verified | address, next building | HKRS1255-3-31 |
+| 229:0:1 | 74 Lung Chun Road | G/F | dentist | dentist's surgery | Wong San Fai dentistry (王新暉牙科) | lcr, G/F | likely | street | p114 photo |
 | 229:1:2 | 74 Lung Chun Road | 1/F | dentist | dentist | 陳子明牙科 | 74 lcr, 1/F | verified | address | HKRS1255-3-3; p143 photo; HKRS1255-3-3 |
+| 229:2:1 | 74 Lung Chun Road | 2/F | eating house | basic Chiu Chow restaurant (male clientele) | Chiu Chow restaurant off Lung Chun Road | lcr | likely | street | pp58-59 |
 | 229:2:3 | 74 Lung Chun Road | 2/F | garment, textile + shoe workshop | garment maker | Fei Tan Garment Factory | 74 lcr, 2/F | verified | address | HKRS1255-3-6 |
-| 229:4:3 | 74 Lung Chun Road | 4/F | dentist | dentist; in 1975 two signs hang high on a new tower under bamboo scaffolding, probably named 麗光樓 | Lai Kwong Dentistry 麗光牙科 | 76 lcr | guess | address | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg ; businesses.json 'G/F, 76 Lung Chun Road ... Lai Kwong Dentistry (麗光牙科)' |
+| 229:4:3 | 74 Lung Chun Road | 4/F | dentist | dentist; in 1975 two signs hang high on a new tower under bamboo scaffolding, probably named 麗光樓 | Lai Kwong Dentistry (麗光牙科) | 76 lcr | guess | address | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg ; businesses.json 'G/F, 76 Lung Chun Road ... Lai Kwong Dentistry (麗光牙科)' |
 | 230:0:0 | Building 229 | G/F | temple / church / mission | Christian mission (St Stephen's Society) | St Stephen's Society | map 18 | likely | map | pp352-353, no. 18; https://www.hk01.com/article/1033063 |
-| 232:0:0 | 48 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Yeung Kee 楊記 | 5B lcr, G/F | guess | address, next building | HKRS1255-3-22 |
-| 232:0:1 | 48 Kwong Ming Street | G/F | temple / church / mission | religious hall in the ground-floor lobby of the high-rise built on the old free-school site | 義德善社 religious hall, G/F lobby of 義學大樓, 5 Lung Chun Road 義德善社 (義學大樓) | 5 lcr, G/F | likely | address, next building | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 232:0:2 | 48 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Kwok Kee 郭記 | 10 lcr, G/F | guess | address, next building | HKRS1255-3-450 |
-| 232:0:3 | 48 Kwong Ming Street | G/F | shop | business premises (trade not in the title) | Chan Wai Kee | 13 lcr, G/F | guess | address, next building | HKRS1255-3-26 |
-| 232:0:4 | 48 Kwong Ming Street | G/F | gambling / drugs / sex | triad office; strip joints on the floors above and below | Triad office in a unit joined to the next building, with strip joints above and below (大図解 panorama) 香港黒社会の事務所 |  | guess | clue | https://www.rioleo.org/kowloon/ (crosssection.jpg, x≈1717) |
-| 232:2:1 | 48 Kwong Ming Street | 2/F | other workshop | factory | Also Known as 2/F, 46, Kwong Ming Street 許氏工藝製品廠 | 48 kms, 2/F | verified | address | HKRS1255-3-521 |
+| 232:2:1 | 48 Kwong Ming Street | 2/F | other workshop | factory | Also Known as 2/F, 46, Kwong Ming Street (許氏工藝製品廠) | 48 kms, 2/F | verified | address | HKRS1255-3-521 |
 | 232:2:2 | 48 Kwong Ming Street | 2/F | garment, textile + shoe workshop | weaving and threading factory (glove fabric); family often sleeps here | Lau Yeung Yin's weaving and threading factory | ssr, map 21 | likely | map | pp48-50; pp352-353, no. 21 |
 | 233:0:0 | Building 232 | G/F | services + utilities | the last natural ground well (19th century) | Natural ground well off Tai Chang Street | tcs, G/F, map 34 | likely | map | p120; pp352-353, no. 34 |
-| 234:0:0 | 31 Lung Chun Road | G/F | food workshop | food products | Yuen Fung Food Company 源豐食品公司 | 32 lcr, G/F | verified | address | HKRS1255-3-76 |
-| 234:0:1 | 31 Lung Chun Road | G/F | plastics factory | plastics factory | Sun Kwong Plastic Factory 新光塑膠廠 | 27 Lung Chun 3rd Lane, G/F | verified | street, next building | HKRS1255-3-324 |
-| 234:1:0 | 31 Lung Chun Road | 1/F | plastics factory | plastics factory | Also Known as Rear Portion, 1/F, Lung Yue House, 31 Lung Chun Road 五金及雲膠製品廠 | 31 lcr, 1/F | verified | address | HKRS1255-3-93 |
+| 234:0:0 | 31 Lung Chun Road | G/F | temple / church / mission | premises of the Christian Nationals' Evangelism Commission (mission; elderly work) | CNEC premises, 28 Lung Chun Road | 28 lcr | likely | address, next building | HKRS1078-1-65; HKRS1255-2-28; HKRS1078-1-52 |
+| 234:0:1 | 31 Lung Chun Road | G/F | food workshop | food products | Yuen Fung Food Company (源豐食品公司) | 32 lcr, G/F | verified | address | HKRS1255-3-76 |
+| 234:1:0 | 31 Lung Chun Road | 1/F | plastics factory | plastics factory | Also Known as Rear Portion, 1/F, Lung Yue House, 31 Lung Chun Road (五金及雲膠製品廠) | 31 lcr, 1/F | verified | address | HKRS1255-3-93 |
 | 234:4:0 | 31 Lung Chun Road | 4/F | metal + machine works | jewellery or gems | Shun Cheong Gems Co. | 31 lcr, 4/F | verified | address | HKRS1255-3-100 |
 | 234:4:1 | 31 Lung Chun Road | 4/F | metal + machine works | jewellery or gems | Lung Hing Jewellery Mfy | 31 lcr, 4/F | verified | address | HKRS1255-3-101 |
-| 235:0:0 | 88 Lung Chun Road | G/F | dentist | dentist | Mak Yue Kong Dental Techician 麥汝剛牙科室 | 88 lcr, G/F | verified | address | HKRS1255-3-27 |
+| 235:0:0 | 88 Lung Chun Road | G/F | dentist | dentist | Mak Yue Kong Dental Techician (麥汝剛牙科室) | 88 lcr, G/F | verified | address | HKRS1255-3-27 |
 | 235:0:1 | 88 Lung Chun Road | G/F | shop | store | 裕成士多 | 90 lcr, G/F | verified | address | HKRS1255-3-28 |
 | 235:0:2 | 88 Lung Chun Road | G/F | metal + machine works | metal works | 培記鐵器裝修工程 | 84 lcr, G/F | verified | address | HKRS1255-3-14 |
+| 235:0:2 | 88 Lung Chun Road | G/F | plastics factory | plastics factory | Ho Tat Plastic Factory (second premises) (豪達塑膠廠) | 92 lcr, G/F | verified | address, shares a unit | HKRS1255-3-31 |
 | 235:1:1 | 88 Lung Chun Road | 1/F | flats | family flat | Law Yu Yi's son's flat | Lung Chun First Alley | likely | street | p80 |
-| 235:3:2 | 88 Lung Chun Road | 3/F | garment, textile + shoe workshop | shoe or leather maker | Kei Sik Shoes Processing Factory 奇適鞋業加工廠 | 82 - 84 lcr, 3/F | verified | address | HKRS1255-3-10 |
+| 235:3:2 | 88 Lung Chun Road | 3/F | garment, textile + shoe workshop | shoe or leather maker | Kei Sik Shoes Processing Factory (奇適鞋業加工廠) | 82 - 84 lcr, 3/F | verified | address | HKRS1255-3-10 |
 | 235:4:2 | 88 Lung Chun Road | 4/F | flats | family flat (owned); a room with a window once let | Chung Lo Ying's flat, 4/F, 82 Lung Chun Road | 82 lcr, 4/F, map 10 | verified | address | pp156-158; pp352-353, no. 10 |
 | 235:5:2 | 88 Lung Chun Road | 5/F | flats | windowless two-room family flat | Chung Yuk Yee's flat | 82 lcr | likely | address | pp159-161 |
 | 235:9:2 | 88 Lung Chun Road | 9/F | metal + machine works | metal works | 漢興水族五金廠 | 84 lcr, 9/F | verified | address | HKRS1255-3-13 |
-| 235:9:3 | 88 Lung Chun Road | 9/F | flats | tenement of flats: laundry and plants on the balconies of nearly every upper floor; the name is painted under the roof | Tung Fat House 東發樓 | 82-84 lcr | likely | address | https://commons.wikimedia.org/wiki/File:KWC_-_Playground.jpg |
+| 235:9:3 | 88 Lung Chun Road | 9/F | flats | tenement of flats: laundry and plants on the balconies of nearly every upper floor; the name is painted under the roof | Tung Fat House (東發樓) | 82-84 lcr | likely | address | https://commons.wikimedia.org/wiki/File:KWC_-_Playground.jpg |
 | 236:0:0 | 56 Lung Chun Road | G/F | food workshop | food products | Wah Yuen Chiu Chow Food Factory | No. 56 lcr, G/F | verified | address | HKRS1255-3-255 |
 | 236:0:1 | 56 Lung Chun Road | G/F | metal + machine works | electrical works | Flat B, G/F, 57, Lung Chun Road, Kat Cheung Hse, Kam Fai Ele | 57 lcr, G/F | verified | address | HKRS1255-3-253 |
-| 237:0:0 | Building 236 | G/F | metal + machine works | machinery workshop | Wing Keung Machinery Factory | 1 Lung Chun Rd Last Lane, G/F | verified | street, next building | HKRS1255-3-124 |
-| 238:0:0 | Building 237 | G/F | food workshop | food company | Tak Fung Food Co. 德豐食品公司 | 4 lcr, G/F | likely | address, next building | HKRS1255-3-400A (accounts -400B to -405B) |
-| 240:0:0 | Building 239 | G/F | other workshop | handicraft workshop | 三星工艺社 | 4 Lung Chun West Lane, G/F | verified | street, next building | HKRS1255-3-88 |
-| 241:0:0 | Building 240 | G/F | eating house | ice café (冰室) | 濃香冰室 | 66 - 86 lcr, G/F | verified | address, next building | HKRS1255-3-385; p113; HKRS1255-3-385 |
-| 242:0:0 | Building 241 | G/F | plastics factory | plastics factory | Wong Fai Kee Plastic Factory 黃輝記塑膠廠 | 40C lcr, G/F | verified | address, next building | HKRS1255-3-330 |
-| 243:0:0 | Building 242 | G/F | temple / church / mission | nuns' residence; care of elderly residents | Home of three nuns | lcr | likely | street, next building | p263 |
-| 244:0:0 | 41 Lung Chun Road | G/F | dentist | dentist's surgery | Wong San Fai dentistry 王新暉牙科 | lcr, G/F | likely | street | p114 photo |
+| 241:0:0 | Building 240 | G/F | shop | newspaper stall on the street | Lee Yuk Ha Newspaper Stall | 66-68 (outside) lcr, G/F | likely | address, next building | HKRS1255-3-384 |
+| 244:0:0 | 41 Lung Chun Road | G/F | herbalist / medicine shop | herbal medicine shop with consultations (and Western toiletries) | Chan Pui Yin's herbal medicine store | lcr, map 3 | likely | map | pp82-83; pp352-353, no. 3 |
 | 244:0:1 | 41 Lung Chun Road | G/F | eating house | restaurant | 根記飯店 | 48 lcr, G/F | verified | address | HKRS1255-3-329 |
 | 244:0:2 | 41 Lung Chun Road | G/F | metal + machine works | metal works | Wo Kee Electroplating Factory | 43 lcr, G/F | verified | address | HKRS1255-3-98A, HKRS1255-3-98B |
 | 244:0:3 | 41 Lung Chun Road | G/F | metal + machine works | metal works | 開利製模 | No. 47 lcr, G/F | verified | address | HKRS1255-3-136 |
 | 244:1:2 | 41 Lung Chun Road | 1/F | office / company | trading company | 新豐貿易公司 | 41 lcr, 1/F | verified | address | HKRS1255-3-99 |
-| 245:0:0 | Building 244 | G/F | herbalist / medicine shop | herbal medicine shop with consultations (and Western toiletries) | Chan Pui Yin's herbal medicine store | lcr, map 3 | likely | map, next building | pp82-83; pp352-353, no. 3 |
 | 246:0:0 | 120 Lung Chun Road | G/F | herbalist / medicine shop | medicine shop | 茂安藥行 | 120 lcr, G/F | verified | address | HKRS1255-3-68 |
+| 246:0:0 | 120 Lung Chun Road | G/F | dentist | dentist | Ng Mei Kin Dentistry (吳美堅牙科) | 122 lcr, G/F | verified | address, shares a unit | HKRS1255-3-69 |
+| 246:0:0 | 120 Lung Chun Road | G/F | shop | tea merchant | 中興茶行 (tea merchant) | 124 lcr, G/F | verified | address, shares a unit | HKRS1255-3-71B |
+| 246:0:0 | 120 Lung Chun Road | G/F | dentist | dental surgery | Chan Hay Sing Dentistry (陳喜星牙科) | 126 lcr, G/F | verified | address, shares a unit | HKRS1255-3-72 (ledgers -73A to -73C) |
 | 246:1:0 | 120 Lung Chun Road | 1/F | flats | family flat from a redevelopment exchange | Chung family's first-floor flat in the new building | lcr, 1/F | guess | street | p157 |
 | 247:0:0 | 58 Lung Chun Road | G/F | food workshop | food products | Leun Hing Food Company | No. 58 lcr, G/F | verified | address | HKRS1255-3-252; pp292-293; pp352-353, no. 17; https://industrialhistoryhk.org/kowloon-walled-city-2; https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
-| 248:0:0 | Building 247 | G/F | food workshop | cake and pastry wholesaler | Sing Kee Cakes 勝記茶菓糕品批發 | 2&3 Lung Chun 1st Lane, G/F | verified | street, next building | HKRS1255-3-45 |
-| 249:0:0 | Building 248 | G/F | food workshop | food company | Tak Shing Food Company | 2 Lung Chun Rd Last Lane, G/F | verified | street, next building | HKRS1255-3-126 |
-| 249:0:1 | Building 248 | G/F | office / company | trading company | Tung Heung Company | 2C lcr, G/F | verified | address, next building | HKRS1255-3-396A |
-| 249:0:2 | Building 248 | G/F | food workshop | rice-noodle roll (cheung fun) maker | Leung Hing Rice Sausage 兩興腸粉 | 2D lcr, G/F | verified | address, next building | HKRS1255-3-398 |
-| 250:0:0 | 128 Lung Chun Road | G/F | shop | store | 詹忠記茶莊 | 128 lcr, G/F | verified | address | HKRS1255-3-74 |
-| 250:0:1 | 128 Lung Chun Road | G/F | dentist | dentist | Ng Mei Kin Dentistry 吳美堅牙科 | 122 lcr, G/F | verified | address, next building | HKRS1255-3-69 |
-| 251:0:0 | 14 Lung Chun Road | G/F | garment, textile + shoe workshop | shoe or leather maker | 華記鞋業 | 6 lcr, G/F | verified | address, next building | HKRS1255-3-453 |
-| 251:3:0 | 14 Lung Chun Road | 3/F | office / company | business (trade not stated) | Lam Chung Kee 林松記 | 14 Lung Chun 3rd Lane, 3/F | verified | street | HKRS1255-3-336 |
-| 251:6:0 | 14 Lung Chun Road | 6/F | plastics factory | plastic bag factory | Hop Chung Plastic Factory 合眾膠袋製品廠 | 17 Lung Chun 3rd Lane, 6/F | verified | street | HKRS1255-3-337 |
-| 252:0:0 | 66-68 Lung Chun Road | G/F | metal + machine works | metal works | Tai Tin Trading + Golden Horse Metal | 61 lcr, G/F | verified | address, next building | HKRS1255-3-135 |
+| 247:0:0 | 58 Lung Chun Road | G/F | metal + machine works | metal works | Tai Tin Trading + Golden Horse Metal | 61 lcr, G/F | verified | address, shares a unit | HKRS1255-3-135 |
+| 248:0:0 | Building 247 | G/F | other workshop | handicraft workshop | 三星工艺社 | 4 Lung Chun West Lane, G/F | verified | street, next building (the model's building at this address has no room on G/F) | HKRS1255-3-88 |
+| 249:0:0 | Building 248 | G/F | dentist | dental clinic in a shop rented from his teacher; the family also sleeps there | Cheng Koon Yiu's dental clinic | G/F, map 7 | likely | map | pp242-245; p245; pp352-353, no. 7 |
+| 249:0:1 | Building 248 | G/F | herbalist / medicine shop | bone-setting and Chinese medicine clinic on an upper floor (GRS 1990: bonesetter and gymnasium) | Liu Kwok Sum Bonesetter (廖廣森 跌打中醫診所 (sign, 1975); 廖廣森鐵打醫館 (GRS)) | 1 lcr | likely | address, next building | https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg ; businesses.json 'Front Portion, 3/F, 1 Lung Chun Road' |
+| 250:0:0 | 128 Lung Chun Road | G/F | herbalist / medicine shop | medicine shop | Man Sang Medicine Hong | 130 lcr, G/F | verified | address | HKRS1255-3-75 |
+| 250:0:1 | 128 Lung Chun Road | G/F | shop | store | 詹忠記茶莊 | 128 lcr, G/F | verified | address | HKRS1255-3-74 |
+| 251:0:0 | 14 Lung Chun Road | G/F | eating house | restaurant | Sung Tung Kong Restaurant | 15C lcr, G/F | verified | address | HKRS1255-3-116 |
+| 251:0:0 | 14 Lung Chun Road | G/F | shop | grocery store (士多), with kitchen under the stair and iron cages | Chan Shing Fat Store (陳成發士多) | 17 lcr, G/F | verified | address, shares a unit | HKRS1255-3-46 |
+| 251:0:0 | 14 Lung Chun Road | G/F | food workshop | cakes and dim sum | 張記白糖糕批發 | 20 lcr, G/F | verified | address, shares a unit | HKRS1255-3-463, HKRS1255-3-464 |
+| 251:0:0 | 14 Lung Chun Road | G/F | food workshop | cakes and dim sum | G/F, Rear Portion, 20 Lung Chun Rd.[Road] - Hau Shun Hing Ca | 20 lcr, G/F | verified | address, shares a unit | HKRS1255-3-465A, HKRS1255-3-465B |
+| 251:3:0 | 14 Lung Chun Road | 3/F | office / company | business (trade not stated) | Lam Chung Kee (林松記) | 14 Lung Chun 3rd Lane, 3/F | verified | street | HKRS1255-3-336 |
+| 251:3:0 | 14 Lung Chun Road | 3/F | food workshop | dim sum workshop | Chau Kee (Dim Sum) (秋記) | 17 Lung Chun 3rd Lane, 3/F | verified | street, shares a unit | HKRS1255-3-335 |
+| 251:6:0 | 14 Lung Chun Road | 6/F | plastics factory | plastic bag factory | Hop Chung Plastic Factory (合眾膠袋製品廠) | 17 Lung Chun 3rd Lane, 6/F | verified | street | HKRS1255-3-337 |
+| 252:0:0 | 66-68 Lung Chun Road | G/F | eating house | ice café (冰室) | 濃香冰室 | 66 - 86 lcr, G/F | verified | address | HKRS1255-3-385; p113; HKRS1255-3-385 |
 | 252:2:0 | 66-68 Lung Chun Road | 2/F | other workshop | factory | 金燕手袋製品廠 | 68 lcr, 2/F | verified | address | HKRS1255-3-387 |
-| 253:0:0 | 8 Lung Chun Road | G/F | food workshop | roast meat shop | Tung Yuen Roasted Meat Shop | 5 Lung Chun 3rd Lane, G/F | verified | street, next building | HKRS1255-3-327 |
-| 253:1:0 | 8 Lung Chun Road | 1/F | garment, textile + shoe workshop | shoe workshop | Kei Lai Shoes 奇麗鞋業 | 8 Lung Chun 3rd Lane, 1/F | verified | street | HKRS1255-3-325 |
-| 253:3:0 | 8 Lung Chun Road | 3/F | food workshop | dim sum workshop | Chau Kee (Dim Sum) 秋記 | 17 Lung Chun 3rd Lane, 3/F | verified | street, next building | HKRS1255-3-335 |
-| 253:12:0 | 8 Lung Chun Road | 12/F | office / company | company premises (trade not stated) | Hon Wah Company 漢華公司 | 3 Lung Chun 3rd Lane, 12/F | guess | street | HKRS1255-3-328 |
-| 254:0:0 | 108 Lung Chun Road | G/F | garment, textile + shoe workshop | garment maker | Yan Hing Textile & Knitting Factory 仁興毛巾廠 | 94 lcr, G/F | verified | address | HKRS1255-3-29 |
-| 254:0:1 | 108 Lung Chun Road | G/F | services + utilities | hair salon | New Annie Hair Salon 新安妮髮型屋 | 98 lcr, G/F | verified | address | HKRS1255-3-35 |
-| 254:0:2 | 108 Lung Chun Road | G/F | dentist | dentist | Cheng Ling Sang Dentistry 鄭凌生牙科 | 94 lcr, G/F | verified | address | HKRS1255-3-34 |
-| 254:0:3 | 108 Lung Chun Road | G/F | office / company | trading company | Wing Wah House Chun Wing Ho 振榮號 | 100 lcr, G/F | verified | address | HKRS1255-3-37 |
-| 254:0:4 | 108 Lung Chun Road | G/F | eating house | Thai restaurant | Thailand Food Restaurant 泰國餐廳 | 98 lcr, G/F | verified | address | HKRS1255-3-36 |
-| 254:1:0 | 108 Lung Chun Road | 1/F | shop | store | Portion 耀記 | 100 lcr, 1/F | verified | address | HKRS1255-3-42 |
-| 254:1:2 | 108 Lung Chun Road | 1/F | herbalist / medicine shop | medicine shop | Fung Yeung Tong Medicine 鳳陽堂藥廠 | 100 lcr, 1/F | verified | address | HKRS1255-3-43 |
-| 254:1:4 | 108 Lung Chun Road | 1/F | other workshop | printing or paper | Wing Lee Screen Printing Co. [Company] 永利印花公司 | 100 lcr, 1/F | verified | address | HKRS1255-3-40A, HKRS1255-3-40B, HKRS1255-3-40C |
+| 253:0:0 | 8 Lung Chun Road | G/F | other workshop | factory | 羅粦記糕品廠 | 8 lcr, G/F | verified | address | HKRS1255-3-451 |
+| 253:0:0 | 8 Lung Chun Road | G/F | food workshop | roast meat | Wah Fung Roast Meat (華豐燒臘) | 9 lcr, G/F | verified | address, shares a unit | HKRS1255-3-25 |
+| 253:0:0 | 8 Lung Chun Road | G/F | plastics factory | plastics factory | Ho Tat Plastic Factory (豪達塑膠廠) | 9A lcr, G/F | verified | address, shares a unit | HKRS1255-3-31 |
+| 253:1:0 | 8 Lung Chun Road | 1/F | garment, textile + shoe workshop | shoe workshop | Kei Lai Shoes (奇麗鞋業) | 8 Lung Chun 3rd Lane, 1/F | verified | street | HKRS1255-3-325 |
+| 253:12:0 | 8 Lung Chun Road | 12/F | office / company | company premises (trade not stated) | Hon Wah Company (漢華公司) | 3 Lung Chun 3rd Lane, 12/F | guess | street | HKRS1255-3-328 |
+| 254:0:0 | 108 Lung Chun Road | G/F | garment, textile + shoe workshop | garment maker | Yan Hing Textile & Knitting Factory (仁興毛巾廠) | 94 lcr, G/F | verified | address | HKRS1255-3-29 |
+| 254:0:0 | 108 Lung Chun Road | G/F | eating house | restaurant | 源香飯店 | 102 lcr, G/F | verified | address, shares a unit | HKRS1255-3-17 |
+| 254:0:0 | 108 Lung Chun Road | G/F | food workshop | noodle maker | Hing Fat Noodle Factory | 104 lcr, G/F | verified | address, shares a unit | HKRS1255-3-49 |
+| 254:0:0 | 108 Lung Chun Road | G/F | dentist | dentist | 牙醫陳國祥 | 108 lcr, G/F | verified | address, shares a unit | HKRS1255-3-52; p142 photo; HKRS1255-3-52 |
+| 254:0:0 | 108 Lung Chun Road | G/F | eating house | restaurant | Happy Restaurant | 110 lcr, G/F | verified | address, shares a unit | HKRS1255-3-53 |
+| 254:0:0 | 108 Lung Chun Road | G/F | office / company | trading company | Wang Lee Trading Co. [Company] | 112 lcr, G/F | verified | address, shares a unit | HKRS1255-3-64 |
+| 254:0:0 | 108 Lung Chun Road | G/F | herbalist / medicine shop | bonesetter's clinic | Wong Hoi Ming Bonesetter | 48 Tai Chang St 7th Lane, G/F | verified | street, shares a unit | HKRS1255-3-195 |
+| 254:0:0 | 108 Lung Chun Road | G/F | herbalist / medicine shop | herbal bonesetter's clinic and home; earlier also a mahjong room for two tables (stopped 'a few years ago') | Wong Hoi Ming Bonesetter | 48 tcs, G/F, map 35 | verified | address, shares a unit | pp232-233; pp352-353, no. 35 |
+| 254:0:1 | 108 Lung Chun Road | G/F | services + utilities | hair salon | New Annie Hair Salon (新安妮髮型屋) | 98 lcr, G/F | verified | address | HKRS1255-3-35 |
+| 254:0:2 | 108 Lung Chun Road | G/F | dentist | dentist | Cheng Ling Sang Dentistry (鄭凌生牙科) | 94 lcr, G/F | verified | address | HKRS1255-3-34 |
+| 254:0:3 | 108 Lung Chun Road | G/F | office / company | trading company | Wing Wah House Chun Wing Ho (振榮號) | 100 lcr, G/F | verified | address | HKRS1255-3-37 |
+| 254:0:4 | 108 Lung Chun Road | G/F | eating house | Thai restaurant | Thailand Food Restaurant (泰國餐廳) | 98 lcr, G/F | verified | address | HKRS1255-3-36 |
+| 254:1:0 | 108 Lung Chun Road | 1/F | shop | store | Portion (耀記) | 100 lcr, 1/F | verified | address | HKRS1255-3-42 |
+| 254:1:2 | 108 Lung Chun Road | 1/F | herbalist / medicine shop | medicine shop | Fung Yeung Tong Medicine (鳳陽堂藥廠) | 100 lcr, 1/F | verified | address | HKRS1255-3-43 |
+| 254:1:4 | 108 Lung Chun Road | 1/F | other workshop | printing or paper | Wing Lee Screen Printing Co. [Company] (永利印花公司) | 100 lcr, 1/F | verified | address | HKRS1255-3-40A, HKRS1255-3-40B, HKRS1255-3-40C |
 | 254:2:0 | 108 Lung Chun Road | 2/F | flats | rented family flat, the family's last home in the City; sunny, no dark lane to cross | Flat of 陳文龍's family, 2/F, Lung Chun Road near the Lo Yan Street corner | lcr, 2/F | guess | clue | https://www.thenewslens.com/article/98485 (text seen only in search-result extracts; page behind a bot check) |
 | 254:2:4 | 108 Lung Chun Road | 2/F | garment, textile + shoe workshop | garment maker | Hou Ngai Knitting Mfy. [Manufacturing] Factory [Factory] | 100 lcr, 2/F | verified | address | HKRS1255-3-44 |
 | 254:3:4 | 108 Lung Chun Road | 3/F | metal + machine works | jewellery or gems | 耀光寶石首飾公司 | 94 lcr, 3/F | verified | address | HKRS1255-3-32 |
-| 254:4:0 | 108 Lung Chun Road | 4/F | flats | family flat (two bedrooms, no taps; water carried up four floors) | Heung Yin-king's family flat, 4/F, Tai Chang Street | tcs, 4/F | likely | street | https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness |
-| 254:4:4 | 108 Lung Chun Road | 4/F | flats | family flat | flat of the Ng family (吳宅), 4/F, 94 Lung Chun Road | 94 lcr, 4/F | verified | address | p189 (photo), p188 (caption) |
+| 254:4:4 | 108 Lung Chun Road | 4/F | flats | family flat | Ng family flat, 4/F, 94 Lung Chun Road (吳宅) | 94 lcr, 4/F | verified | address | p189 (photo), p188 (caption) |
 | 254:5:4 | 108 Lung Chun Road | 5/F | flats | flat (resident's postbox; use not written) | front flat, 5/F, 94 Lung Chun Road | 94 lcr, 5/F | likely | address | p189 |
-| 254:6:4 | 108 Lung Chun Road | 6/F | office / company | transport company | Star Transport Company 星光運輸公司 | 94 lcr, 6/F | verified | address | HKRS1255-3-33 |
+| 254:6:4 | 108 Lung Chun Road | 6/F | office / company | transport company | Star Transport Company (星光運輸公司) | 94 lcr, 6/F | verified | address | HKRS1255-3-33 |
 | 254:7:4 | 108 Lung Chun Road | 7/F | shop | business premises (trade not in the title) | 莊裕宏狗房 | 114 lcr, 7/F | verified | address | HKRS1255-3-66 |
-| 256:0:0 | 116 Lung Chun Road | G/F | food workshop | noodle maker | Hing Fat Noodle Factory | 104 lcr, G/F | verified | address, next building | HKRS1255-3-49 |
-| 256:0:1 | 116 Lung Chun Road | G/F | dentist | dentist | K.W.C 牙醫陳國祥 | 108 lcr, G/F | verified | address, next building | HKRS1255-3-52; p142 photo; HKRS1255-3-52 |
-| 256:0:2 | 116 Lung Chun Road | G/F | eating house | restaurant | 源香飯店 | 102 lcr, G/F | verified | address, next building | HKRS1255-3-17 |
-| 257:0:0 | 21 & 22 Lung Chun Road | G/F | eating house | restaurant | Sung Tung Kong Restaurant | 15C lcr, G/F | verified | address, next building | HKRS1255-3-116 |
-| 257:2:0 | 21 & 22 Lung Chun Road | 2/F | eating house | basic Chiu Chow restaurant (male clientele) | Chiu Chow restaurant off Lung Chun Road | lcr | likely | street | pp58-59 |
-| 258:0:0 | 78 Lung Chun Road | G/F | garment, textile + shoe workshop | shoe or leather maker | Koon Kau Shoes Factory 貫球鞋廠 | 80 lcr, G/F | verified | address | HKRS1255-3-7 |
+| 256:0:0 | 116 Lung Chun Road | G/F | temple / church / mission | nuns' residence; care of elderly residents | Home of three nuns | lcr | likely | street | p263 |
+| 256:0:1 | 116 Lung Chun Road | G/F | shop | business premises (trade not in the title) | G/F, 118, Lung Chun Road | 118 lcr, G/F | guess | address | HKRS1255-3-67 |
+| 256:0:2 | 116 Lung Chun Road | G/F | doctor / clinic | clinic | Hon Hin Chung Medical Clinic | 116 lcr | likely | address | HKRS1255-3-65 |
+| 257:0:0 | 21 & 22 Lung Chun Road | G/F | other workshop | factory | 奇妙實業公司 | 21 & 22 lcr, G/F | verified | address | HKRS1255-3-462 |
+| 258:0:0 | 78 Lung Chun Road | G/F | garment, textile + shoe workshop | shoe or leather maker | Koon Kau Shoes Factory (貫球鞋廠) | 80 lcr, G/F | verified | address | HKRS1255-3-7 |
 | 258:1:0 | 78 Lung Chun Road | 1/F | shop | optical shop | 有利眼鏡公司 | 78 lcr, 1/F | verified | address | HKRS1255-3-5 |
-| 258:2:0 | 78 Lung Chun Road | 2/F | office / company | trading company | Shun Wing Trading Co. 順榮貿易公司 | 80 lcr, 2/F | verified | address | HKRS1255-3-8 |
-| 258:3:0 | 78 Lung Chun Road | 3/F | other workshop | factory | Yau Shing Brush Factory 有成刷廠 | 80 lcr, 3/F | verified | address | HKRS1255-3-9 |
-| 259:0:0 | Building 258 | G/F | food workshop | cake shop | Yuen Fat Cake Shop 源發蛋糕店 | 3 Lung Chun West Lane, G/F | verified | street, next building | HKRS1255-3-87 |
-| 259:0:1 | Building 258 | G/F | metal + machine works | screw and metalware factory | Hing Fat Metal & Screw Manufactory 興發五金絲牙制品廠 | 4A lcr, G/F | verified | address, next building | HKRS1255-3-433; HKRS1255-3-433 (ledger -432) |
-| 260:0:0 | Building 259 | G/F | shop | store | Ming Kee Store 明記士多 | 6 lcr, G/F | verified | address, next building | HKRS1255-3-50 |
+| 258:2:0 | 78 Lung Chun Road | 2/F | office / company | trading company | Shun Wing Trading Co. (順榮貿易公司) | 80 lcr, 2/F | verified | address | HKRS1255-3-8 |
+| 258:3:0 | 78 Lung Chun Road | 3/F | other workshop | factory | Yau Shing Brush Factory (有成刷廠) | 80 lcr, 3/F | verified | address | HKRS1255-3-9 |
+| 259:0:0 | Building 258 | G/F | food workshop | cake shop | Yuen Fat Cake Shop (源發蛋糕店) | 3 Lung Chun West Lane, G/F | verified | street, next building (the model's building at this address has no room on G/F) | HKRS1255-3-87 |
+| 259:0:1 | Building 258 | G/F | metal + machine works | screw and metalware factory | Hing Fat Metal & Screw Manufactory (興發五金絲牙制品廠) | 4A lcr, G/F | verified | address, next building (the model's building at this address has no room on G/F) | HKRS1255-3-433; HKRS1255-3-433 (ledger -432) |
+| 260:0:0 | Building 259 | G/F | food workshop | food company | Tak Fung Food Co. (德豐食品公司) | 4 lcr, G/F | likely | address, next building (the model's building at this address has no room on G/F) | HKRS1255-3-400A (accounts -400B to -405B) |
 | 261:0:0 | 33 Lung Chun Road | G/F | food workshop | cake/pudding workshop | 李奈記糕品廠 | 33 lcr, G/F | verified | address | HKRS1255-3-95 |
-| 261:0:1 | 33 Lung Chun Road | G/F | eating house | restaurant | Sang Kee Restaurant 生記飯店 | 35 lcr, G/F | verified | address | HKRS1255-3-366 |
-| 261:1:0 | 33 Lung Chun Road | 1/F | other workshop | water + electrical works (水電) | Lam Chai Water & Electrical Works 林仔水電裝修工程 | 40 lcr, 1/F | verified | address | HKRS1255-3-331 |
-| 262:0:0 | 1 Lung Chun Road | G/F | office / company | property agent | Manly Property Company 萬里地產公司 | 2 lcr, G/F | verified | address | HKRS1255-3-104 |
+| 261:0:0 | 33 Lung Chun Road | G/F | plastics factory | plastics factory | Wong Fai Kee Plastic Factory (黃輝記塑膠廠) | 40C lcr, G/F | verified | address, shares a unit | HKRS1255-3-330 |
+| 261:0:1 | 33 Lung Chun Road | G/F | eating house | restaurant | Sang Kee Restaurant (生記飯店) | 35 lcr, G/F | verified | address | HKRS1255-3-366 |
+| 261:1:0 | 33 Lung Chun Road | 1/F | other workshop | water + electrical works (水電) | Lam Chai Water & Electrical Works (林仔水電裝修工程) | 40 lcr, 1/F | verified | address | HKRS1255-3-331 |
+| 262:0:0 | 1 Lung Chun Road | G/F | office / company | property agent | Manly Property Company (萬里地產公司) | 2 lcr, G/F | verified | address | HKRS1255-3-104 |
+| 262:0:0 | 1 Lung Chun Road | G/F | food workshop | food company | Tak Shing Food Company | 2 Lung Chun Rd Last Lane, G/F | verified | street, shares a unit | HKRS1255-3-126 |
+| 262:0:0 | 1 Lung Chun Road | G/F | office / company | trading company | Tung Heung Company | 2C lcr, G/F | verified | address, shares a unit | HKRS1255-3-396A |
+| 262:0:0 | 1 Lung Chun Road | G/F | food workshop | rice-noodle roll (cheung fun) maker | Leung Hing Rice Sausage (兩興腸粉) | 2D lcr, G/F | verified | address, shares a unit | HKRS1255-3-398 |
+| 262:0:0 | 1 Lung Chun Road | G/F | food workshop | cake and pastry wholesaler | Sing Kee Cakes (勝記茶菓糕品批發) | 2&3 Lung Chun 1st Lane, G/F | verified | street, shares a unit | HKRS1255-3-45 |
+| 262:0:0 | 1 Lung Chun Road | G/F | metal + machine works | machinery workshop | Wing Keung Machinery Factory | 1 Lung Chun Rd Last Lane, G/F | verified | street, shares a unit | HKRS1255-3-124 |
 | 262:1:0 | 1 Lung Chun Road | 1/F | garment, textile + shoe workshop | garment maker | Knitting Factory | 1 lcr, 1/F | verified | address | HKRS1255-3-18 |
 | 262:2:0 | 1 Lung Chun Road | 2/F | school / kindergarten | tuition school | 勤思補習社 | 1 lcr, 2/F | verified | address | HKRS1255-3-19 |
-| 262:3:0 | 1 Lung Chun Road | 3/F | doctor / clinic | bone-setter | Liu Kwok Sum Bonesetter & Gymnasium 廖廣森鐵打醫館 | 1 lcr, 3/F | verified | address | HKRS1255-3-20 |
-| 263:0:0 | 5B Lung Chun Road | G/F | garment, textile + shoe workshop | weaving factory | Kwong Wah Weaving Factory 廣華布廠 | 6 & 7 Lung Chun 3rd Lane, G/F | verified | street | HKRS1255-3-326 |
-| 263:0:1 | 5B Lung Chun Road | G/F | garment, textile + shoe workshop | shoe factory | Chi Shing Shoes Factory | 3 Lung Chun Rd Last Lane, G/F | verified | street, next building | HKRS1255-3-128 |
-| 263:0:2 | 5B Lung Chun Road | G/F | food workshop | food products | 新興食品公司 | 3B lcr, G/F | verified | address, next building | HKRS1255-3-21 |
-| 263:1:0 | 5B Lung Chun Road | 1/F | metal + machine works | metalware and welding workshop | Chi Shing Metalware & Welding 志成五金燒焊 | 6 Lung Chun 2nd Lane, 1/F | verified | street | HKRS1255-3-70 |
-| 263:2:0 | 5B Lung Chun Road | 2/F | eating house | restaurant on an upper floor | Ma Kee Restaurant | 3 Lung Chun Rd Last Lane, 2/F | verified | street, next building | HKRS1255-3-127 |
-| 263:2:1 | 5B Lung Chun Road | 2/F | food workshop | noodle factory | Kwok Kee Noodle Factory 國記麵家 | 4E lcr, 2/F | verified | address, next building | HKRS1255-3-429 |
-| 263:2:2 | 5B Lung Chun Road | 2/F | office / company | trading company | Tung Shing Trading Company 東誠貿易公司 | 4A lcr, 2/F | verified | address, next building | HKRS1255-3-434 |
-| 263:4:0 | 5B Lung Chun Road | 4/F | herbalist / medicine shop | Chinese medicine clinic (醫館) | Cheng Kim Shan clinic 鄭劍山醫館 | 6 Lung Chun 2nd Lane, 4/F | verified | street | HKRS1255-3-71A |
+| 262:2:0 | 1 Lung Chun Road | 2/F | dentist | dental surgery | Yan Wing Tak Dentistry (甄榮德牙科) | 2 Lung Chun Rd Last Lane, 2/F | verified | street, shares a unit | HKRS1255-3-125 |
+| 262:3:0 | 1 Lung Chun Road | 3/F | doctor / clinic | bone-setter | Liu Kwok Sum Bonesetter & Gymnasium (廖廣森鐵打醫館) | 1 lcr, 3/F | verified | address | HKRS1255-3-20 |
+| 262:3:0 | 1 Lung Chun Road | 3/F | other workshop | factory | Cheung Ming Handicraft Factory (祥明工藝製品廠) | 2C lcr, 3/F | verified | address, shares a unit | HKRS1255-3-397 |
+| 263:0:0 | 5B Lung Chun Road | G/F | garment, textile + shoe workshop | weaving factory | Kwong Wah Weaving Factory (廣華布廠) | 6 & 7 Lung Chun 3rd Lane, G/F | verified | street | HKRS1255-3-326 |
+| 263:0:0 | 5B Lung Chun Road | G/F | food workshop | roast meat shop | Tung Yuen Roasted Meat Shop | 5 Lung Chun 3rd Lane, G/F | verified | street, shares a unit | HKRS1255-3-327 |
+| 263:0:0 | 5B Lung Chun Road | G/F | shop | store | Ming Kee Store (明記士多) | 6 lcr, G/F | verified | address, shares a unit | HKRS1255-3-50 |
+| 263:0:0 | 5B Lung Chun Road | G/F | garment, textile + shoe workshop | shoe or leather maker | 華記鞋業 | 6 lcr, G/F | verified | address, shares a unit | HKRS1255-3-453 |
+| 263:0:1 | 5B Lung Chun Road | G/F | garment, textile + shoe workshop | shoe factory | Chi Shing Shoes Factory | 3 Lung Chun Rd Last Lane, G/F | verified | street, next building (the model's building at this address has no room on G/F) | HKRS1255-3-128 |
+| 263:0:2 | 5B Lung Chun Road | G/F | food workshop | food products | 新興食品公司 | 3B lcr, G/F | verified | address, next building (the model's building at this address has no room on G/F) | HKRS1255-3-21 |
+| 263:1:0 | 5B Lung Chun Road | 1/F | metal + machine works | metalware and welding workshop | Chi Shing Metalware & Welding (志成五金燒焊) | 6 Lung Chun 2nd Lane, 1/F | verified | street | HKRS1255-3-70 |
+| 263:4:0 | 5B Lung Chun Road | 4/F | herbalist / medicine shop | Chinese medicine clinic (醫館) | Cheng Kim Shan clinic (鄭劍山醫館) | 6 Lung Chun 2nd Lane, 4/F | verified | street | HKRS1255-3-71A |
 | 263:5:0 | 5B Lung Chun Road | 5/F | other workshop | workshop (trade not stated) | Lo Mei Workshop | 5 Lung Chun 1st Lane, 5/F | guess | street | HKRS1255-3-340 |
-| 264:0:0 | 70 Lung Chun Road | G/F | food workshop | cakes and dim sum | Lung Heong Cake Shop 濃香餅店 | 70 lcr, G/F | verified | address | HKRS1255-3-386A |
-| 264:0:1 | 70 Lung Chun Road | G/F | dentist | dentist | Mei Hon Dentistry 美漢牙醫 | 72 lcr, G/F | verified | address | HKRS1255-3-2 |
-| 264:2:0 | 70 Lung Chun Road | 2/F | other workshop | handbag factory | Kam Yin Hand-Bag Manufactory (other floors) 金燕手袋製品廠 | 70 lcr, 2/F | verified | address | HKRS1255-3-387 |
-| 265:2:0 | 3B Lung Chun Road | 2/F | dentist | dental surgery | Yan Wing Tak Dentistry 甄榮德牙科 | 2 Lung Chun Rd Last Lane, 2/F | verified | street, next building | HKRS1255-3-125 |
-| 265:3:0 | 3B Lung Chun Road | 3/F | other workshop | factory | Cheung Ming Handicraft Factory 祥明工藝製品廠 | 2C lcr, 3/F | verified | address, next building | HKRS1255-3-397 |
-| 265:4:0 | 3B Lung Chun Road | 4/F | garment, textile + shoe workshop | shoe or leather maker | Wo Kee Shoes Factory 和記鞋廠 | 4E lcr, 4/F | verified | address | HKRS1255-3-430 |
-| 265:6:0 | 3B Lung Chun Road | 6/F | metal + machine works | metal works | Fai Wong Jewellery Welding 輝煌首飾燒焊 | 4E lcr, 6/F | verified | address | HKRS1255-3-431 |
+| 264:0:0 | 70 Lung Chun Road | G/F | food workshop | cakes and dim sum | Lung Heong Cake Shop (濃香餅店) | 70 lcr, G/F | verified | address | HKRS1255-3-386A |
+| 264:0:1 | 70 Lung Chun Road | G/F | dentist | dentist | Mei Hon Dentistry (美漢牙醫) | 72 lcr, G/F | verified | address | HKRS1255-3-2 |
+| 264:2:0 | 70 Lung Chun Road | 2/F | other workshop | handbag factory | Kam Yin Hand-Bag Manufactory (other floors) (金燕手袋製品廠) | 70 lcr, 2/F | verified | address | HKRS1255-3-387 |
+| 265:2:0 | 3B Lung Chun Road | 2/F | eating house | restaurant on an upper floor | Ma Kee Restaurant | 3 Lung Chun Rd Last Lane, 2/F | verified | street | HKRS1255-3-127 |
+| 265:2:0 | 3B Lung Chun Road | 2/F | office / company | trading company | Tung Shing Trading Company (東誠貿易公司) | 4A lcr, 2/F | verified | address, shares a unit | HKRS1255-3-434 |
+| 265:2:0 | 3B Lung Chun Road | 2/F | food workshop | noodle factory | Kwok Kee Noodle Factory (國記麵家) | 4E lcr, 2/F | verified | address, shares a unit | HKRS1255-3-429 |
+| 265:4:0 | 3B Lung Chun Road | 4/F | garment, textile + shoe workshop | shoe or leather maker | Wo Kee Shoes Factory (和記鞋廠) | 4E lcr, 4/F | verified | address | HKRS1255-3-430 |
+| 265:6:0 | 3B Lung Chun Road | 6/F | metal + machine works | metal works | Fai Wong Jewellery Welding (輝煌首飾燒焊) | 4E lcr, 6/F | verified | address | HKRS1255-3-431 |
 | 266:0:0 | the Yamen, west range of the front court | G/F | temple / church / mission | church compound: chapel, clinic, school (to 1978), Old People's Centre (from 1979); courtyard used by residents as a meeting place | Yamen (CNEC Living Word Church compound) | map 37 | likely | map | pp298-299, 304; pp352-353, no. 37; pp268-269; p70 |
 | 269:0:0 | the Yamen, west side range | G/F | temple / church / mission | missionary's church work | Rev. Isaac Liu's mission | map 26 | guess | map | pp352-353, no. 26 |
 | 271:0:0 | Low building on the east side of the Yamen court | G/F | food workshop | candy factory | Lee Yu Chun's candy factory | map 25 | guess | map | pp352-353, no. 25 |
-| 272:0:0 | Temporary structure (TS-NE) | G/F | dentist | dentist | Ho Yin Dentistry 何賢牙醫 | 4 lsr, G/F | verified | address | HKRS1255-3-391 |
-| 273:0:0 | Temporary structure (TS-E1) | G/F | other workshop | water + electrical works (水電) | Hung Kwong Water Electric 鴻光水電工程 | 30A lsr, G/F | verified | address, next building | HKRS1255-3-479 |
-| 274:0:0 | Temporary structure (TS-E2) | G/F | eating house | restaurant | Mei Tung Yuen Restaurant 美東園飯店 | 63 lsr, G/F | verified | address, next building | HKRS1255-3-349 |
-| 275:0:0 | Temporary structure (TS-E3) | G/F | eating house | café (bing sutt) | Hop Hing Café Restaurant 合興冰室 | 69 Tung Tsing Road, G/F | likely | street | HKRS1255-3-348 |
+| 272:0:0 | Temporary structure (TS-NE) | G/F | dentist | dentist | Ho Yin Dentistry (何賢牙醫) | 4 lsr, G/F | verified | address | HKRS1255-3-391 |
+| 272:0:0 | Temporary structure (TS-NE) | G/F | food workshop | cakes and dim sum | Wing Lee (超記(榮利)薄餅) | 5 lsr, G/F | verified | address, shares a unit | HKRS1255-3-388 |
+| 272:0:0 | Temporary structure (TS-NE) | G/F | eating house | restaurant | Tsang Kee Restaurant (曾記飯店) | 1B ttt, G/F | verified | address, shares a unit | HKRS1255-3-512 |
+| 272:0:0 | Temporary structure (TS-NE) | G/F | herbalist / medicine shop | medicine shop | Hing Fat (興發西藥行) | 1A ttt, G/F | verified | address, shares a unit | HKRS1255-3-551 |
+| 273:0:0 | Temporary structure (TS-E1) | G/F | metal + machine works | metal works | 精華真空電鍍廠 | 42 lsr, G/F | verified | address | HKRS1255-3-488 |
+| 273:0:0 | Temporary structure (TS-E1) | G/F | garment, textile + shoe workshop | garment maker | Kwan Wai Knitting Factory (鈞威針織廠) | 45 lsr, G/F | verified | address, shares a unit | HKRS1255-3-364 |
+| 274:0:0 | Temporary structure (TS-E2) | G/F | shop | hardware and paint shop | Lam Hung Hing Metalware & Paint (林鴻興五金漆油) | 9 Tung Tsing Road, G/F | likely | street | HKRS1255-3-380 (ledger -382) |
+| 275:0:0 | Temporary structure (TS-E3) | G/F | eating house | café (bing sutt) | Hop Hing Café Restaurant (合興冰室) | 69 Tung Tsing Road, G/F | likely | street | HKRS1255-3-348 |
 | 276:0:0 | Temporary structure (TS-E4) | G/F | office / company | property agency | Chan's Property Company | 13B Tung Tsing Road, G/F | likely | street | HKRS1255-3-377 |
 
 ## Documented places with no unit
@@ -714,9 +714,9 @@ These places existed in the period, but the sources give no place that the model
 | M82 | flats | flat (use not written) | B24/114, Blk C, 5/F, 3 Cheung On Lane | 3 Cheung On Lane 5/F | verified | p340 |
 | M83 | flats | flat (use not written) | B24/77, Blk A Rear, 5/F, 3 Cheung On Lane | 3 Cheung On Lane 5/F | verified | p340 |
 | M84 | flats | flat (use not written) | B24/76, Blk B Rear, 5/F, 3 Cheung On Lane | 3 Cheung On Lane 5/F | verified | p340 |
-| G11 | other workshop | furniture workshop | May Ngai Furniture Factory | 14 Shun Yi Lane 3/F | verified | HKRS1255-3-208 |
+| G11 | other workshop | furniture workshop | May Ngai Furniture Factory (美藝梳代坊) | 14 Shun Yi Lane 3/F | verified | HKRS1255-3-208 |
 | G12 | food workshop | candy workshop | Kit Kee Candies Company | 4A Co Lane 5/F | verified | HKRS1255-3-211 |
-| G13 | plastics factory | plastics factory | Yee Hing Plastic Factory | 9 Shun Yi Lane G/F | verified | HKRS1255-3-237 |
+| G13 | plastics factory | plastics factory | Yee Hing Plastic Factory (義興塑膠廠) | 9 Shun Yi Lane G/F | verified | HKRS1255-3-237 |
 | G45 | plastics factory | plastics factory | Wai Tak Plastic Mfg. (second premises) | 25 Shun Yi Lane 1/F | verified | HKRS1255-3-235 |
 | T46 | shop | fortune tellers' stalls on open ground | Fortune tellers' stalls, south side | G/F | likely | https://gwulo.com/media/22837 |
 | C40 | dentist | dental practice | Rusty dental sign on an old brick building, east end of the south elevation |  | likely | pp96-97 |
@@ -724,14 +724,14 @@ These places existed in the period, but the sources give no place that the model
 | A57 | services + utilities | former big well, built over by a building | Site of the covered big well | G/F | guess | p82; p12 caption |
 | A82 | flats | family flat (mother and two children) | 12th-floor family flat | 12/F | guess | p149 |
 | T22 | flats | family flat; escaped a fire by going down to 3/F and stepping across to the next building's corridor | 劉 family flat on 6/F above a rattan shop | 6/F | guess | https://www.hk01.com/article/39194 |
-| T26 | food workshop | fishball workshop; fish scraped by hand; sold to markets and eateries in other districts | 林羅平's brother's fishball workshop (rented ground-floor shop) | G/F | guess | https://www.hk01.com/社區專題/1033066/ |
+| T26 | food workshop | fishball workshop; fish scraped by hand; sold to markets and eateries in other districts | 林羅平's brother's fishball workshop (rented ground-floor shop) (打魚蛋工場) | G/F | guess | https://www.hk01.com/社區專題/1033066/ |
 | T47 | flats | family flat (600 sq ft) | Chan family flat on 10/F | 10/F | guess | https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled |
 | T52 | flats | windowless 10 ft x 10 ft rooms; 20 families shared one toilet and a communal kitchen | Shared 8/F floor of single rooms (bkshopr_IHB's home) | 8/F | guess | https://www.talkirvine.com/threads/a-glimpse-of-my-life-experience.10174/ |
 | Z1 | flats | windowless family flat of a married couple | Flat of Charles and Maggie (5/F, rear block) | 5/F | guess | https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629 |
 | Z7 | flats | rented flat, one hall and three rooms, toilet and kitchen; shared by two co-workers; roof used for exercise and water from the tank | Flat of 袁家倫 and a colleague, 13/F (top floor) | 13/F | guess | https://hk.epochtimes.com/news/2024-05-05/28556552 |
 | D12 | dentist | dental surgery (chair, lamp, spittoon, dentures on display), seen through a street window beside an alley | street-level dental surgery with a display window | G/F | guess | p248 |
 | D46 | services + utilities | water point: pipes and taps over a concrete well-head, residents filling kettles | private water point visited by senior civil servants | G/F | guess | p337 |
-| A42 | doctor / clinic | clinic | 國際診所 (International Clinic) sign |  | guess | p61 |
+| A42 | doctor / clinic | clinic | International Clinic sign (國際診所) |  | guess | p61 |
 | A55 | flats | family flat, high floor with sea view | Chan Pui Yin's home |  | guess | p82 |
 | A69 | flats | flats owned by the storekeeper (use not given) | Lee Pui Yuen's two owned flats |  | guess | p94 |
 | A70 | shop | store | Store of Lee Pui Yuen's brother-in-law |  | guess | p93 |
@@ -740,7 +740,7 @@ These places existed in the period, but the sources give no place that the model
 | B36 | temple / church / mission | Christian meeting place | 'The Well' (Jackie Pullinger) |  | guess | p263; HKRS1078-1-55 |
 | B42 | flats | two owned flats in one building: one family flat (he, brother, uncle; three bedrooms, two living rooms), one let at $800 a month; the lower one has no windows | Yim Kwok Yuen's two flats |  | guess | p289 |
 | M88 | flats | 12-level building (levels 0-11) of several units per level; room labels illegible | Suenn Ho's building that grew over its neighbours |  | guess | p137 |
-| T21 | shop | hair salon (perms), open on the survey day 14 Jan 1987 | Hair salon (髮廊) inside the City, 14 Jan 1987 |  | guess | https://www.hk01.com/article/39597 |
+| T21 | shop | hair salon (perms), open on the survey day 14 Jan 1987 | Hair salon (髮廊) inside the City, 14 Jan 1987 (寨內髮廊) |  | guess | https://www.hk01.com/article/39597 |
 | T23 | shop | rattan-ware shop (caught fire) | Rattan shop (籐器店) below the 劉 flat |  | guess | https://www.hk01.com/article/39194 |
 | T49 | flats | owner-occupied family flat, bought for about HK$40,000 | Lau Chun-fat's family flat |  | guess | https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled |
 | T50 | shop | provisions store (soy sauce and goods; offered to carry goods upstairs) | Store downstairs from Lau Chun-fat's flat |  | guess | https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled |
@@ -752,11 +752,11 @@ These places existed in the period, but the sources give no place that the model
 | P26 | school / kindergarten | child-care centre or nursery for toddlers | toddlers' haven |  | guess | https://digitalrepository.lib.hku.hk/catalog/b277b233v |
 | W4 | shop | provisions store (rice, oil, daily necessities) | Store of Albert Ng's mother's family |  | guess | https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city |
 | D7 | temple / church / mission | mission chapel and school; a red cross on the sign shows a clinic | Hsin On Chapel and Hsin On School, Norwegian Lutheran Mission |  | guess | p252; HKRS1078-1-53; p344 |
-| D9 | doctor / clinic | clinic (a dental poster beside the door) | 仁濟診所 (Yan Chai Clinic) |  | guess | p253 |
+| D9 | doctor / clinic | clinic (a dental poster beside the door) | Yan Chai Clinic (仁濟診所) |  | guess | p253 |
 | D10 | metal + machine works | small machine-repair workshop; bird cage, sacks of white fibre | Yu Kwok Fai's machine-repair workshop |  | guess | p256 |
 | D11 | other workshop | factory (workroom with telephone, shrine shelf and a 1987 Kwong On Bank calendar) | factory used by the police patrol to telephone the station |  | guess | pp250-251 |
 | D13 | plastics factory | plastics moulding workshop (GPPS resin bags, injection machines) | plastic injection-moulding workshop (photo) |  | guess | pp162-163 |
-| D45 | doctor / clinic | doctor's clinic (sign cut off) | doctor's sign 洪耀譚醫[...] |  | guess | p338 |
+| D45 | doctor / clinic | doctor's clinic (sign cut off) | doctor's sign 洪耀譚醫[...] (洪耀譚醫…) |  | guess | p338 |
 | D49 | doctor / clinic | doctor's clinic (venereal disease), tiled entrance steps | VD clinic doorway (統治男婦… 精醫花柳…) |  | guess | p344 |
 | D50 | services + utilities | air-conditioner-repair shop | Chang Kat Kong's air-conditioner-repair shop |  | guess | p344 |
 | D51 | flats | 12-storey block of flats built by a landlord with Chiu Chow friends; he was compensated for about 100 apartments | Chang Kat Kong's first 12-storey block of flats |  | guess | p344 |

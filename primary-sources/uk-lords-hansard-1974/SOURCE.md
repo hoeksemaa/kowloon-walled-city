@@ -50,7 +50,7 @@ Column numbers are the printed Hansard columns.
 - **Rents (c467):** "about one-third below what they are in the rest of Kowloon".
 - **Government works (c472–473, Goronwy-Roberts):** "Pumphouses are being
   installed and the open ditches have, since last year at least, been cleared
-  twice daily". The Urban Services Department has sweepers, refuse bins,
+  twice daily". The Urban Services Department (市政事務署) has sweepers, refuse bins,
   standpipes for street cleaning, "daily chlorination of wells" and public
   latrines. In 1973 the government "started to clear the sensitive areas on
   the fringe".

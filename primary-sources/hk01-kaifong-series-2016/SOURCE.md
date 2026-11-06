@@ -1,8 +1,8 @@
-# HK01, 【真．城寨英雄】 series: five former residents (2016)
+# HK01 (香港01), 【真．城寨英雄】 series: five former residents (2016)
 
 A three-part series in HK01. Five former residents, now members of the
 residents' welfare association, talk together about life in the city. They
-answer the TVB drama 《城寨英雄》 of 2016.
+answer the TVB (無綫電視) drama 《城寨英雄》 of 2016.
 
 - **Reporter:** 余秋婷. Photos: 鍾偉德.
 - **Links:**
@@ -49,7 +49,7 @@ shasum -a 256 local/*
 
 | Name in the article | Who | Years in the city |
 |---|---|---|
-| 葉德偉 | 總幹事 [general secretary] of 九龍城寨街坊福利會. In 1987 he worked in an office in Central | not given here (see SCMP 2013 in `retrospective-testimony-web/`: flat bought 1976) |
+| 葉德偉 | 總幹事 [general secretary] of 九龍城寨街坊福利會. In 1987 he worked in an office in Central (中環) | not given here (see SCMP 2013 in `retrospective-testimony-web/`: flat bought 1976) |
 | 陳祥全 | 城寨租客 [tenant], with his wife. Part 2 prints "陳存全" once, for the 1979 move. It is probably the same man | from 1979 |
 | 芬姐 | grew up in the city; minded her family's 士多 [store] | from childhood |
 | 劉太 | moved in as an adult; her children were grown by 1987 | not given |
@@ -66,7 +66,7 @@ All quotes are retrospective (2016).
   neighbour]. Two flats so close "兩戶人不能同時打開窗戶" [two households can not
   open their windows at the same time].
 - 陳祥全 (narration): he and his wife left a 板間房 [partitioned room] in Kowloon
-  City in 1979. In the city, "房租約莫800元" [rent about HK$800] gave a whole
+  City (九龍城) in 1979. In the city, "房租約莫800元" [rent about HK$800] gave a whole
   flat. He says: "都叫做有一個自己的空間。" [at least it was a space of our own].
 - Fire escape (narration, told by 劉太): a 籐器店 [rattan shop] downstairs caught
   fire. The 劉 family lived on 六樓 [6/F]. The back stair was locked. They went
@@ -98,7 +98,7 @@ All quotes are retrospective (2016).
   running everywhere, dirty water on the ground, leaking pipes, and drips in
   the humid spring].
 - Narration (part 2), about the early years: no water supply. People carried
-  water from 老虎岩 [now Wang Tau Hom]. Young men carried water for weak old
+  water from 老虎岩 [now Wang Tau Hom (橫頭磡)]. Young men carried water for weak old
   people at "5毛一擔水" [50 cents a load].
 - 葉德偉 (narration): "有水上樓" [water up to the floors] needed pipes dug under
   the ground. The ground was unstable, and the government "不敢處理" [did not dare

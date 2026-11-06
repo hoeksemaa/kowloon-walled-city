@@ -78,6 +78,33 @@ const TRADE_CAT = {
   school: 'school', kaifong: 'community', temple: 'religion',
 };
 const BASIS_RANK = { verified: 0, likely: 1, guess: 2 };
+// English names first (CLAUDE.md): the places whose record puts the Chinese name first but also
+// gives an English name. Each one: id -> [the English name, the Chinese name]. A place whose
+// sources give only a Chinese name keeps it: no English translation is made up.
+const ENGLISH_FIRST = {
+  A14: ['Sang Kee Restaurant sign', '生記飯店'], A15: ['Tang Chi Shing Dentistry sign', '鄧志成牙科'],
+  A42: ['International Clinic sign', '國際診所'], T29: ['Free-school centre, former Lung Tsun Free School', '義學中心 / 龍津義學'],
+  T30: ['Youth centre, Hong Kong Federation of Youth Groups', '青年中心 (香港青年協會)'],
+  T37: ['Ling Sang Dentistry (probably Cheng Ling Sang Dentistry)', '凌生牙科'], T39: ['Chong Tin Lai Dentistry', '莊天麗牙科'],
+  T40: ['Cheung Ting Wah Skin Clinic', '張廷華皮膚專科'], T43: ['Wong Wai Kuen Dentistry', '王偉權牙科'],
+  T45: ['Wing Fat Store, with a KENT sign', '榮發士多'], Z27: ['Lok Fuk Wah Dentistry', '樂福華牙科'], Z29: ['Yau Chai Clinic', '柔濟診所'],
+  D3: ['Ng family flat, 4/F, 94 Lung Chun Road', '吳宅'], D9: ['Yan Chai Clinic', '仁濟診所'],
+  D31: ['Man Kwok (International) Clinic, Dr Mui Lap Lim', '萬國診所'], D32: ['Siu Mei Mei Gynaecology', '蕭美美婦科'],
+  D33: ['Chung Wah Dental Clinic', '中華牙科診所'], D35: ['Hui Chi Cheong Dentistry', '許熾昌牙科'],
+  D36: ['Yeung Wing Kwong Dentistry', '楊永光牙科'], D39: ['Suen Yeung Sin Dentistry', '孫仰先牙科'],
+  D40: ['Mok Sze Luk Dental Room', '莫斯錄牙室'], D42: ['Ng Sek Lung Dentistry', '伍錫隆牙科'],
+  D43: ['Ngai Hon Man Dentistry', '魏漢文牙科'], D44: ['Cheung Chuen Bone-setter', '張泉跌打'],
+  G46: ['Sing Chow Shoes (second premises)', '星洲鞋店'], C32: ['Stairwell direction sign, probably Wan Tung plastics factory', '運通'],
+  'grs:HKRS1255-3-309': ['Sing Chow Shoes, Tung Tau Tsuen Road', '星洲鞋店'],
+};
+// "K.W.C." (Kowloon Walled City) is not a name: some GRS titles put it before the name, or in
+// place of it.
+const KWC = /^K\.?\s?W\.?\s?C\b\.?\s*(\[Kowloon Walled City\])?\s*/i;
+function named(p) {
+  if (ENGLISH_FIRST[p.id]) return { name: ENGLISH_FIRST[p.id][0], nameZh: ENGLISH_FIRST[p.id][1] };
+  const name = KWC.test(p.name || '') ? p.name.replace(KWC, '').trim() || p.nameZh || p.name : p.name;
+  return { name, nameZh: p.nameZh || undefined };
+}
 
 // ---- the units of the structure ----
 const units = [], unitAt = new Map();
@@ -266,8 +293,16 @@ const grsAt = new Map(); // GRS ref -> the building and floor where the layout p
 L.buildings.forEach((P, q) => {
   for (const [f, list] of Object.entries(P.prem || {})) for (const x of list) for (const r of x.refs || []) grsAt.set(r, { b: S.ofPlot[q], k: +f });
 });
-const order = [...places].sort((a, b) => BASIS_RANK[a.basis] - BASIS_RANK[b.basis] || (a.floor == null) - (b.floor == null));
+// The rooms of one documented flat (a drawn plan) are parts of the flat: they share its unit.
+const PART_OF = { M75: 'M74', M76: 'M74', M77: 'M74', M78: 'M74', M79: 'M74', M80: 'M74', M81: 'M74' };
+const order = [...places].sort((a, b) => BASIS_RANK[a.basis] - BASIS_RANK[b.basis] || (a.floor == null) - (b.floor == null)
+  || !!PART_OF[a.id] - !!PART_OF[b.id]);
 for (const p of order) {
+  const whole = PART_OF[p.id] && byId.get(PART_OF[p.id]);
+  if (whole) {
+    if (whole.at) { p.at = whole.at; p.how = `part of ${whole.id}`; } else unplaced.push(p);
+    continue;
+  }
   allowYamen = HALL.has(p.cat) || p.cat === 'clinic';
   const k0 = p.floor != null ? Math.max(0, p.floor) : defaultFloor(p); // a basement: G/F (the model has none)
   let k = k0 ?? 1, found = null;
@@ -286,11 +321,14 @@ for (const p of order) {
   }
   if (!found) { unplaced.push(p); continue; }
   if (k0 == null) k = 1 + (hash(p.id) % Math.max(1, S.list[found.b].n - 1)); // a home with no floor
-  // no free unit on that floor (or no unit: an open G/F): the nearest building within 30 m that
-  // has one, the same street first. The address order is approximate (src/layout.js locate).
+  // no free unit on that floor (or no unit: an open G/F): a verified place stays in its building
+  // and shares a unit (the source gives its address; the model's rooms are not sourced). Any
+  // other place goes to the nearest building within 30 m that has a free unit, the same street
+  // first.
   const freeAt = (id) => (onFloor.get(`${id}:${k}`) || []).filter((r) => !r.place);
   let bu = found.b, moved = false;
-  if (!freeAt(bu).length) {
+  const noUnit = !(onFloor.get(`${bu}:${k}`) || []).length; // the model's floor has no room here (an open G/F)
+  if (!freeAt(bu).length && (p.basis !== 'verified' || noUnit)) {
     const b0 = S.list[found.b], key = streetKey(p.street);
     const street = new Set(key && L.addr[key] ? L.addr[key].F.map((q) => S.ofPlot[q]) : []);
     const near = S.list.filter((b) => b.id !== b0.id && usable(b.id, k) && freeAt(b.id).length)
@@ -305,6 +343,7 @@ for (const p of order) {
   p.at = [[r.b, r.k, r.u]];
   p.how = found.how + (moved ? ', next building' : '') + (free.length ? '' : ', shares a unit');
   if (found.note) p.note = found.note;
+  if (moved && noUnit) p.note = [p.note, `the model's building at this address has no room on ${k ? k + '/F' : 'G/F'}`].filter(Boolean).join('; ');
   if (!r.place) { r.place = p.id; r.cat = p.cat; r.basis = p.basis; }
 }
 
@@ -417,13 +456,13 @@ const out = {
   categories: CATEGORIES.map((c) => ({ ...c, units: byCat[c.id] || 0 })),
   counts: { units: units.length, basis: byBasis, places: places.length, placed: placedCount, unplaced: unplaced.length, targets: target, level: LEVEL, shortfall },
   places: places.filter((p) => p.at).map((p) => ({
-    id: p.id, name: p.name, nameZh: p.nameZh || undefined, use: p.use, cat: p.cat, basis: p.basis,
+    id: p.id, ...named(p), use: p.use, cat: p.cat, basis: p.basis,
     address: [p.num, p.street].filter((v) => v != null && v !== '').join(' ') || undefined, floor: p.floor ?? undefined,
     map_pin: p.map_pin ?? undefined, clue: p.clue || undefined, at: p.at, how: p.how, note: p.note, sources: p.sources,
   })),
   grs_merged_or_dropped: grsDropped,
   unplaced: unplaced.map((p) => ({
-    id: p.id, name: p.name, use: p.use, cat: p.cat, basis: p.basis, street: p.street ?? undefined, num: p.num ?? undefined,
+    id: p.id, ...named(p), use: p.use, cat: p.cat, basis: p.basis, street: p.street ?? undefined, num: p.num ?? undefined,
     floor: p.floor ?? undefined, clue: p.clue || undefined,
     why: p.street && !streetKey(p.street) ? 'the model does not know this lane' : 'no source gives the street, the building or a map number',
     sources: p.sources,
@@ -451,7 +490,7 @@ const md = [
   '|---|---|---|---|---|---|---|---|---|---|',
   ...placed.map((p) => {
     const [b, k, u] = p.at[0];
-    return `| ${b}:${k}:${u} | ${esc(S.list[b].label)} | ${FL(k)} | ${catLabel[p.cat]} | ${esc(p.use)} | ${esc(p.name)}${p.nameZh && !String(p.name).includes(p.nameZh) ? ' ' + esc(p.nameZh) : ''} | ${esc([p.address, p.floor != null ? FL(Math.max(0, p.floor)) : '', p.map_pin != null ? 'map ' + p.map_pin : ''].filter(Boolean).join(', '))} | ${p.basis} | ${esc(p.how)}${p.note ? ' (' + esc(p.note) + ')' : ''} | ${esc([...new Set(p.sources.map((x) => x.cite))].join('; '))} |`;
+    return `| ${b}:${k}:${u} | ${esc(S.list[b].label)} | ${FL(k)} | ${catLabel[p.cat]} | ${esc(p.use)} | ${esc(p.name)}${p.nameZh && !String(p.name).includes(p.nameZh) ? ` (${esc(p.nameZh)})` : ''} | ${esc([p.address, p.floor != null ? FL(Math.max(0, p.floor)) : '', p.map_pin != null ? 'map ' + p.map_pin : ''].filter(Boolean).join(', '))} | ${p.basis} | ${esc(p.how)}${p.note ? ' (' + esc(p.note) + ')' : ''} | ${esc([...new Set(p.sources.map((x) => x.cite))].join('; '))} |`;
   }),
   '',
   '## Documented places with no unit',
@@ -460,7 +499,7 @@ const md = [
   '',
   '| Id | Category | Use | Name | Place in the source | Basis | Sources |',
   '|---|---|---|---|---|---|---|',
-  ...out.unplaced.map((p) => `| ${p.id} | ${catLabel[p.cat]} | ${esc(p.use)} | ${esc(p.name)} | ${esc([p.num, p.street, p.floor != null ? FL(Math.max(0, p.floor)) : ''].filter(Boolean).join(' '))} | ${p.basis} | ${esc(p.sources.map((x) => x.cite).join('; '))} |`),
+  ...out.unplaced.map((p) => `| ${p.id} | ${catLabel[p.cat]} | ${esc(p.use)} | ${esc(p.name)}${p.nameZh && !String(p.name).includes(p.nameZh) ? ` (${esc(p.nameZh)})` : ''} | ${esc([p.num, p.street, p.floor != null ? FL(Math.max(0, p.floor)) : ''].filter(Boolean).join(' '))} | ${p.basis} | ${esc(p.sources.map((x) => x.cite).join('; '))} |`),
   '',
 ];
 writeFileSync(root + 'docs/room_places.md', md.join('\n'));

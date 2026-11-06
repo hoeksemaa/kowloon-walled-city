@@ -165,7 +165,7 @@ export function buildStructure(L, T, opts = {}) {
     const key = Math.min(...plots.map((p) => P[p].code)); // the key of the building in choices.js
     const lay = S.choices.layout(key, { n: p0.floors, kind: p0.kind, from: t.storeysFrom || 'named', name: t.name || `Building ${t.id}` });
     const b = {
-      id, tower: t.id, plots, rings, kind: lay.kind, name: p0.name || null, color: p0.color,
+      id, tower: t.id, plots, rings, kind: lay.kind, name: p0.name || null,
       label: nameOf(plots) || (lay.kind === 'yamen' ? `the Yamen, hall ${id}` : lay.name),
       from: lay.kind === 'yamen' ? 'yamen' : lay.from, layN: lay.n, key,
     };

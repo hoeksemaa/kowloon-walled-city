@@ -30,7 +30,7 @@ Each photographer took the photo at the city, at the date given.
   Oct 2014.
 - What it shows: a dental chair, an overhead light, glass shelves, pink wall
   tiles, a terrazzo floor and a shop sign "凌生牙科" over the room.
-- **Probable match:** GRS case file HKRS1255-3-34 is "G/F with a cockloft, 94
+- **Probable match:** GRS (政府檔案處) case file HKRS1255-3-34 is "G/F with a cockloft, 94
   Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)" (see
   `../grs-catalogue-kwc/`). The sign in the photo can be the same shop. I
   did not confirm it.

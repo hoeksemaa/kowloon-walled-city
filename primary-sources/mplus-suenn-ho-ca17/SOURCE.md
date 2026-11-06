@@ -2,7 +2,7 @@
 
 Field research by the architect Suenn Ho (何巽), inside the city during the
 last years before the clearance. The archive has 12 VHS cassettes (11 are
-listed online) and 3 route maps. Suenn Ho gave it to M+, Hong Kong, in 2015.
+listed online) and 3 route maps. Suenn Ho gave it to M+, Hong Kong (香港), in 2015.
 
 - **Holder:** M+, Hong Kong. Object number CA17.
 - **Record:** https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/
@@ -57,14 +57,14 @@ many labels are hard to read. A scan at full size from M+ will make them clear.
 |---|---|---|---|
 | CA17/1/1 | 20–21 Nov 1991, 24 Feb 1992 | 90:22 | Routes 1–6 and a roof garden. |
 | CA17/1/2 | 24 Feb 1992 | 34:18 | Copy of the 24 Feb 1992 footage in cassette 1. Routes 2–5, roof garden. |
-| CA17/1/3 | 1988 | 27:39 | RTHK documentary "Kowloon Walled City Stories" (1988), and demolition videos labelled "Bristol" and "Sydney". |
+| CA17/1/3 | 1988 | 27:39 | RTHK (香港電台) documentary "Kowloon Walled City Stories" (九龍城寨的故事) (1988), and demolition videos labelled "Bristol" and "Sydney". |
 | CA17/1/4 | 19 Nov 1991 | 78:42 | Interview with K.K. Siu (蕭國健). |
 | CA17/1/6 | 15 and 17 Nov 1989; 22 Oct 1991 | 83:29 | Footage by Po-Chih Leong (梁普智) in 1989, and by Suenn Ho in 1991. |
 | CA17/1/7 | Oct 1991 | 81:48 | Interview in English with Michael Chang, a feng shui expert, "on the history and spatial formation of the city". Part 1. |
 | CA17/1/8 | 29 Oct 1991 | 35:08 | Interview with Liang Tao (梁濤). |
 | CA17/1/9 | 14 Nov 1991 | 17:26 | Interviews with residents. |
 | CA17/1/10 | [1991] | 38:28 | Michael Chang interview, part 2. |
-| CA17/1/11 | 23 Feb – 3 Mar 1992 | 68:55 | Alleys and shop interiors (24 Feb and 2 Mar 1992). Police and media at the edge of the city (3 Mar 1992). Also Tao Ho's office in Kowloon Tong. |
+| CA17/1/11 | 23 Feb – 3 Mar 1992 | 68:55 | Alleys and shop interiors (24 Feb and 2 Mar 1992). Police and media at the edge of the city (3 Mar 1992). Also Tao Ho's (何弢) office in Kowloon Tong (九龍塘). |
 | CA17/1/12 | 21 Nov 1991 | 52:17 | Phase one clearance: "remaining shops before clearance, and interviews with remaining shopkeepers and food manufacturers". |
 
 Cassette 5 is not listed online.

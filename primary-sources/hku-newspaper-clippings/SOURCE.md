@@ -1,6 +1,6 @@
-# HKU Hong Kong Newspaper Clippings Online: 334 clippings on the Walled City, 1969–1997
+# HKU (香港大學) Hong Kong Newspaper Clippings Online: 334 clippings on the Walled City (九龍城寨), 1969–1997
 
-Clippings from Hong Kong English-language newspapers, mostly the *South China
+Clippings from Hong Kong (香港) English-language newspapers, mostly the *South China
 Morning Post* and the *Hong Kong Standard*. Dr Norman Miners collected them
 for the HKU Department of Political Science. HKU Libraries scanned them.
 
@@ -9,7 +9,7 @@ for the HKU Department of Political Science. HKU Libraries scanned them.
 - **Access:** the catalogue records (title, date, byline) are free. Each
   clipping image has `visibility: authenticated`, thus you must sign in to HKU
   to read it. I did not read any clipping.
-- **Copyright:** the newspapers (SCMP, Sing Tao / *Hong Kong Standard*).
+- **Copyright:** the newspapers (SCMP, Sing Tao (星島) / *Hong Kong Standard*).
 - **Stored in git:** only `index.csv`, the catalogue index. There are no images.
 
 ## Why this is primary

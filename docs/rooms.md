@@ -17,12 +17,12 @@ A roof room is `b:n:0`, where `n` is the number of storeys of the building.
 
 ## Sources and method
 
-1. The GRS catalogue (HKRS1255-3, the clearance compensation files of 1987-1992) gives 459 premises with a street, a house number and usually a floor (`data/businesses.json`).
+1. The GRS (政府檔案處) catalogue (HKRS1255-3, the clearance compensation files of 1987-1992) gives 459 premises with a street, a house number and usually a floor (`data/businesses.json`).
 2. Agents read the sources in two sweeps (2026-11-04 and 2026-11-05):
-   - every page of Girard and Lambot, *City of Darkness Revisited* (2014), with its interviews, photos, captions, the 1992 numbered map (pp352-353), Suenn Ho (pp137-139), the Suzuki survey (pp208-209), the 1968 Survey and Mapping Office map, and the clearance sketch-survey sheets (p340);
+   - every page of Girard and Lambot, *City of Darkness Revisited* (2014), with its interviews, photos, captions, the 1992 numbered map (pp352-353), Suenn Ho (何巽) (pp137-139), the Suzuki (鈴木隆行) survey (pp208-209), the 1968 Survey and Mapping Office (測繪處) map, and the clearance sketch-survey sheets (p340);
    - the GRS catalogue titles (HKRS1255-3, HKRS1078-1), with the address errors of `data/businesses.json`;
-   - the LegCo Hansard 1986-1993, UPI, the Baltimore Sun, TIME, and the HKU clippings;
-   - the resident testimony on the web (WSJ 2014, HK01, SCMP, M+, Gwulo, 明周 2024, lichokiu 2005, the Industrial History of Hong Kong pages);
+   - the LegCo (立法局) Hansard 1986-1993, UPI, the Baltimore Sun, TIME, and the HKU (香港大學) clippings;
+   - the resident testimony on the web (WSJ 2014, HK01 (香港01), SCMP, M+, Gwulo, 明周 2024, lichokiu 2005, the Industrial History of Hong Kong pages);
    - an open web search in English, Chinese and Japanese (with the labels of the 大図解 九龍城 panorama at rioleo.org).
 3. A second agent checked each verified fact against its source. It confirmed 8 facts of sweep 2, and corrected 2.
 4. I merged the facts (`data/room_research.json`):
@@ -54,7 +54,7 @@ A roof room is `b:n:0`, where `n` is the number of storeys of the building.
 | services | services + utilities | 12 | barbers, laundries, water and power suppliers, toilets |
 | school | school / kindergarten | 5 | schools, kindergartens, child care, tuition |
 | religion | temple / church / mission | 11 | temples, shrines, churches, missions and their centres |
-| community | association / community | 11 | the Kai Fong association, clubs, youth and old people's centres |
+| community | association / community | 11 | the Kai Fong association (九龍城砦街坊福利事業促進委員會), clubs, youth and old people's centres |
 | vice | gambling / drugs / sex | 4 | only where a source shows one room in the period |
 
 ## Basis
@@ -94,9 +94,9 @@ The floors of the guesses come from the floor spread of the GRS premises of the 
 (the spread of all GRS premises for a category with fewer than 10). Then a weighted random pick
 (seed 19861201) chooses the units on each floor:
 
-- dentists, clinics and medicine ×4 on the edge roads (Tung Tau Tsuen Rd, Lung Chun Rd, Lung Shing Rd);
-- dentists and eating houses ×4 in the temporary structures on Tung Tsing Rd (p32);
-- food workshops ×2 on Tai Chang St and Kwong Ming St (pp110, 290);
+- dentists, clinics and medicine ×4 on the edge roads (Tung Tau Tsuen Rd (東頭村道), Lung Chun Rd (龍津道), Lung Shing Rd (龍城路));
+- dentists and eating houses ×4 in the temporary structures on Tung Tsing Rd (東正道) (p32);
+- food workshops ×2 on Tai Chang St (大井街) and Kwong Ming St (光明街) (pp110, 290);
 - factories ×0.5 on the west side (p12), and ×12 on the factory units of the model above G/F.
 
 A factory unit of the model is an inference from the building's form. If the counts do not fill
@@ -128,7 +128,7 @@ Non-home units by level, against Suenn Ho's drawing (p139, about ±20 %):
 
 | Level | G/F | 1/F | 2/F | 3/F | 4/F+ |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Suenn Ho | 350-450 | 160 | 110 | 70 | (none drawn; 40 GRS) |
+| Suenn Ho (何巽) | 350-450 | 160 | 110 | 70 | (none drawn; 40 GRS) |
 | Labels | 471 | 104 | 78 | 43 | 58 |
 | Factories in the labels | 245 | 56 | 36 | 25 | 28 |
 
@@ -145,10 +145,10 @@ second agent confirmed them. It found no factory that a source dates outside Dec
 
 - **House-number order.** Several streets do not follow the model's order. Kwong Ming Street numbers "went somewhere else" after 43 (p146). The 1992 map puts 82 Lung Chun Rd (map 10) on the east part of the road, 121 m east of model building 235. Map 14 (2 Kwong Ming St) is about 110 m south of model building 2.
 - **Kai Fong office.** The GRS gives 2/F and 3/F of Wing Fat House, 16 Tung Tau Tsuen Rd. The layout puts it in building 25, `locate` gives building 31, and map 15 is near building 8.
-- **Fuk Tak shrine.** The GRS gives the Fuk Tak Temple at 5 Tai Chang St 5th Lane. The book (p32) and map 12 put the later, simpler shrine on the east side.
-- **Old School and Old People's Centre.** The 1992 map draws map 28 (Old School) as a small building at the south-west corner of the Yamen court. Model building 172 there is an 11-storey tenement, and `docs/structure.md` gives the Free School at about full height (pp20-21). Model building 100 has the label of the Old People's Centre, but map 27 puts the centre in the Yamen.
+- **Fuk Tak shrine (福德古廟).** The GRS gives the Fuk Tak Temple (福德土地廟) at 5 Tai Chang St 5th Lane. The book (p32) and map 12 put the later, simpler shrine on the east side.
+- **Old School and Old People's Centre (老人中心).** The 1992 map draws map 28 (Old School) as a small building at the south-west corner of the Yamen (衙門) court. Model building 172 there is an 11-storey tenement, and `docs/structure.md` gives the Free School (義學) at about full height (pp20-21). Model building 100 has the label of the Old People's Centre, but map 27 puts the centre in the Yamen.
 - **Building heights.** Chung Lo Ying's building, the Chung Fat Café building (11 storeys in the source, 12 in the model), and the 12/F flat at 31 Tung Tau Tsuen Rd (the model has G/F-11/F there).
-- **Streets that the model does not have.** "Kwong Wah Street" (model building 37) comes from the firm name Kwong Wah Weaving Factory. Tung Tsing Road premises are the City's east edge, and one title makes 25A Tung Tsing Rd the same as 25A Lung Shing Rd. Tin Hau Temple Street and Tin Hau Temple Back Street are two streets, but the model has one.
+- **Streets that the model does not have.** "Kwong Wah Street" (model building 37) comes from the firm name Kwong Wah Weaving Factory (廣華布廠). Tung Tsing Road premises are the City's east edge, and one title makes 25A Tung Tsing Rd the same as 25A Lung Shing Rd. Tin Hau Temple Street (天后廟街) and Tin Hau Temple Back Street are two streets, but the model has one.
 - **Lane numbers.** 33 GRS premises are in numbered lanes, but `data/businesses.json` files them as main-street numbers. The floor of one flat can also change with the entrance ("2/F, also known as 6/F").
 - **Missing premises.** 39 addressed GRS premises are missing from `data/businesses.json`, because the parser does not read their street forms.
 - **The number of buildings.** The model has 277 buildings. The sources give about 350 (the postman, M+, the Baltimore Sun 1992).
@@ -166,7 +166,7 @@ The model stays frozen. These disagreements are for John to decide.
 
 These sources can give more rooms, but I could not read them:
 
-- 大図解 九龍城 (Iwanami 1997): the room plans of the February 1993 survey. Only panorama pages 5-6 and 11-12 are on the web. Print only.
+- 大図解 九龍城 (Iwanami (岩波書店) 1997): the room plans of the February 1993 survey. Only panorama pages 5-6 and 11-12 are on the web. Print only.
 - Suenn Ho, 1992 Fulbright study (M+ CA17): the full "non-residential units by level" drawings and the plans of each level.
 - 城寨福利會訊 (the Kai Fong newsletter), February 1987: a primary source; not online.
 - 魯金《九龍城寨史話》(1988), pp104-133: the places street by street. Print only.
@@ -178,7 +178,7 @@ These sources can give more rooms, but I could not read them:
 - GRS HKRS1078-1-53 (Hsin On Centre, 1987-1992): can give the chapel's address.
 - The Hong Kong Heritage Project oral history of 羅開祥, the Kai Fong secretary: blocked (403).
 - Fiona Hawthorne's 1986 sketches: the book shows two of "dozens".
-- The Sing Pao photo archive 1987-94 and the Ko Tim Keung collection: not online.
+- The Sing Pao (成報) photo archive 1987-94 and the Ko Tim Keung (高添強) collection: not online.
 
 `data/room_research.json` (`leads`) has all 44 leads with their links.
 

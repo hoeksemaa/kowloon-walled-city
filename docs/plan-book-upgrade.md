@@ -12,7 +12,7 @@ The model will show the City from the inside: towers, stairs, corridors, roofs a
 - Each item is SOURCED, APPROXIMATE or INFERRED, and the app says which.
 - Real people say only recorded words. The interviews of about 1990 describe "now". For 1986, I use only what people say about their life before the clearance announcement (14 Jan 1987).
 - No book image goes into git or into the app. I use facts, short quotes, page numbers and measured colours.
-- When sources conflict, the printed text wins, then the clearance file (GRS), then the 1992 map. The map disagrees with the printed address for markers 19, 21, 24, 25 and 40.
+- When sources conflict, the printed text wins, then the clearance file (GRS 政府檔案處), then the 1992 map. The map disagrees with the printed address for markers 19, 21, 24, 25 and 40.
 
 ## 1. Evidence data (PR 1, small)
 
@@ -20,25 +20,25 @@ The model will show the City from the inside: towers, stairs, corridors, roofs a
   - the 40 places of the 1992 map (pp352–353), placed on the plan grid;
   - the street names and the numbered lanes;
   - the real addresses and opening hours;
-  - the 4/F flat plan of 6 Sai Shing Road (p340).
+  - the 4/F flat plan of 6 Sai Shing Road (西城路) (p340).
 - **`tools/book_overlay.py` (new).** It lays the 1992 map and the 1987 figure-ground plan (p134) over `data/plan.json`. It reads the scans in `local/` and writes only numbers.
 - **Street names.**
   - Rename "Tai Tseng St" to "Tai Chang St 大井街". The clearance files and the book both use that name.
-  - Add the four streets that the model does not name: Almshouse Back St, Tin Hau Temple St, Lung Chun Back Road, and the north-west leg of Tai Chang St.
+  - Add the four streets that the model does not name: Almshouse Back St, Tin Hau Temple St (天后廟街), Lung Chun Back Road (龍津後街), and the north-west leg of Tai Chang St.
   - Add the numbered lanes from the files, for example "Tai Chang Street, 7th Lane" and "Sai Shing Road, Second Lane".
 - **Address matches.** The book and the clearance files agree on four places:
-  - Chung Fat Café, 19A Tung Tau Tsuen Road (p57);
-  - the noodle factory at the back of 2 Kwong Ming Street (p170; file: 宏發麵廠, 1st Lane);
+  - Chung Fat Café, 19A Tung Tau Tsuen Road (東頭村道) (p57);
+  - the noodle factory at the back of 2 Kwong Ming Street (光明街) (p170; file: 宏發麵廠, 1st Lane);
   - the store at 12 Tai Chang Street (p93; file: 順發士多);
   - the candy factory at 12 Sai Shing Road (p76; file: Shui Tung Confectionery, Second Lane).
 
 ## 2. Towers, floor plans and routes (PRs 2 and 3, large)
 
-The model has 474 plots now. Each storey is one open floor with one stair, and people walk only on the ground. The book gives "around 300" buildings in 1987 (p134, p340). Lam Po-chun counted 350 (WSJ, 2014).
+The model has 474 plots now. Each storey is one open floor with one stair, and people walk only on the ground. The book gives "around 300" buildings in 1987 (p134, p340). Lam Po-chun (林寶鎮) counted 350 (WSJ, 2014).
 
 - **Towers.** Join the 474 plots into about 300–350 towers. Use the 1987 figure-ground where the overlay fits. Elsewhere, join neighbours that have no lane between them. Each tower keeps its plots as blocks, as in the file addresses ("Front Block", "Rear Block").
 - **Heights.** Keep the 1990 south elevation. On the north side, use "12 storeys and more" (p132). Keep 14 as the usual top, with a few towers at 15 ("a possible 15 storeys", p340). Let the upper floors of a tall tower spread over a lower neighbour's roof (p137).
-- **Stairs.** Give each tower one of Suenn Ho's stair types (pp138–139): centre, side, corner, strip, outside with a bridge, or a corridor with a stair at each end. Where two or three towers meet, let them share one stair. Only two buildings have lifts (p146; WSJ).
+- **Stairs.** Give each tower one of Suenn Ho's (何巽) stair types (pp138–139): centre, side, corner, strip, outside with a bridge, or a corridor with a stair at each end. Where two or three towers meet, let them share one stair. Only two buildings have lifts (p146; WSJ).
 - **Floor plans.** Divide each storey into units along a corridor from the stair:
   - Flats are 200–300 sq ft (19–28 m²). They are cut into cubicles and bed spaces as on the 1987 plan (p340): living room 9.65 m², two cubicles of 3.54 m², kitchen 2.0 m², toilet, two bed spaces.
   - Workshops are 480–600 sq ft (pp169, 292), on G/F to 3/F.
@@ -48,7 +48,7 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
   - Build 4/F of the Tai Hing Building, 6 Sai Shing Road, from the 1987 plan (p340).
   - Build the shared 5/F of 3 Cheung On Lane and 31B Tung Tau Tsuen Road, where three stairs share landings (p340).
 - **Links between towers.**
-  - Add corridors between towers on the upper floors (p131; Chan Cheung-chuen, M+ audio guide).
+  - Add corridors between towers on the upper floors (p131; Chan Cheung-chuen 陳祥全, M+ audio guide).
   - Add ladders where two roofs differ by one storey, and corridor windows with a stool under them (p145).
   - Make the roofs one walkable surface with steps.
 - **Routes.** Replace the ground-only route with a 3D network: alley grid, stairs, corridors, links and roofs. Then people cross the roofs and use the links, as the postmen did. For speed, I will route between towers on a small graph and use the grid only in the alleys.
@@ -67,13 +67,13 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
 - **Book places at their addresses.**
   - Tai Chang Street: the barber at no. 10 (p28), the store at no. 12 (p93), Lam Tseng Yat's shop at no. 25 (p296), the fishball workshop in an alley off it (p292).
   - Sai Shing Road: the candy factory at no. 12 (p76) and the weaving workshop (p48).
-  - Tung Tau Tsuen Road: Chung Fat Café at 19A (p57), the doctor's clinic on 2/F of no. 10 (p184), the Kai Fong office on 3/F of no. 16 (p180).
-  - Lung Shing Road: the dentists, one at 4A (pp11, 34).
-  - Lung Chun Road: the herbal store (p82) and the muslin maker (p311).
+  - Tung Tau Tsuen Road: Chung Fat Café at 19A (p57), the doctor's clinic on 2/F of no. 10 (p184), the Kai Fong (九龍城砦街坊福利事業促進會) office on 3/F of no. 16 (p180).
+  - Lung Shing Road (龍城路): the dentists, one at 4A (pp11, 34).
+  - Lung Chun Road (龍津道): the herbal store (p82) and the muslin maker (p311).
   - Kwong Ming Street: the noodle factory at the back of no. 2 (p170).
-  - Lo Yan Street: a noodle factory (p226), roast meat (p286), and the Tin Hau Temple in an alley off it (p241).
-  - Lung Chun Back Road: the rubber-plunger workshop (p237) and the Salvation Army kindergarten (p300).
-  - The Yamen: the church and the Old People's Centre (p304).
+  - Lo Yan Street (老人街): a noodle factory (p226), roast meat (p286), and the Tin Hau Temple (天后廟) in an alley off it (p241).
+  - Lung Chun Back Road: the rubber-plunger workshop (p237) and the Salvation Army (救世軍) kindergarten (p300).
+  - The Yamen (衙門): the church and the Old People's Centre (老人中心) (p304).
 - **Floors.** Heavy metal shops stay on G/F (p257). Most workshops are on G/F to 3/F (p139). Dentists and doctors stay on the outer roads, so that patients do not enter the City (p242).
 - **Hours.** These are from about 1990; for 1986 they are APPROXIMATE.
 
@@ -89,8 +89,8 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
 | Dentist (Cheng Koon Yiu) | 10am to 6 or 7pm; Saturday off | 245 |
 | Roast meat, Lo Yan Street | from 4am; market 6.15–8am | 286–289 |
 | Rubber plungers | also after dinner to 2 or 3am, in a rush | 237 |
-| Kai Fong office | weekdays, office hours | 180 |
-| Old People's Centre | afternoons Mon–Sat; worship on Sunday | 305 |
+| Kai Fong (九龍城砦街坊福利事業促進會) office | weekdays, office hours | 180 |
+| Old People's Centre (老人中心) | afternoons Mon–Sat; worship on Sunday | 305 |
 
 - **Open and shut.** Steel gates open and shut with the hours. Sign boxes light at dusk. Light from open shops falls into the alley.
 - **Goods.** Flour sacks, pigs for the roast-meat shop (p289), frozen fish thawed at the standpipe (p108), noodles out by car and candy by van at the edge (pp78, 228), rice and kerosene carried up the stairs (p93), and LP gas cylinders (p179).
@@ -102,7 +102,7 @@ The model has 474 plots now. Each storey is one open floor with one stair, and p
 - **New routines from the book:**
   - one postman, Lam Po Chun (John, 2026-10-31: "just one postman, no lookalike");
   - police: two officers on each of three beats a day, 8-hour shifts, some patrols on the roofs (pp251, 283);
-  - refuse: collectors on Tai Chang Street at 4am (p93); 10 USD sweepers with orange buckets (p104);
+  - refuse: collectors on Tai Chang Street at 4am (p93); 10 USD (市政總署) sweepers with orange buckets (p104);
   - water: people with containers at the standpipe all day (p108); the well pumps run at noon and midnight (p107);
   - meter readers with torches (p98);
   - the Old People's Centre: afternoon tea and TV, Monday to Saturday (pp305–306);
@@ -126,7 +126,7 @@ These come from about 110 colour patches measured in the photos. They are in ord
 5. **Signs on Tung Tau Tsuen Road.** Hang more than 50 boards up to 5/F. Most are white or cream with black characters, and about one in ten is coloured. At dusk they light as boxes. There is no neon (pp8–9, 152, 284).
 6. **Alleys.** Make them 10–35 % as bright as the outer faces, with pools of tube and bulb light. Daylight reaches only the gaps and Lo Yan Street (pp23, 103).
 7. **December sun.** The sun is 44° high at noon. The north face never gets direct sun. The south and west faces get warm, low light (pp12–13).
-8. **Night.** Fluorescent tubes are near-white (#f4f6f1), and windows at dusk are blue-white (#b4dcfa), not yellow. Some rooms have warm bulbs. Kowloon beyond is sodium amber (pp16–17, 316).
+8. **Night.** Fluorescent tubes are near-white (#f4f6f1), and windows at dusk are blue-white (#b4dcfa), not yellow. Some rooms have warm bulbs. Kowloon (九龍) beyond is sodium amber (pp16–17, 316).
 9. **Inside, in the cut view.** Whitewashed corridors, mosaic stairs, checker floors and red painted signs (pp30, 156, 164–165, 177).
 10. **Game cards.** Use the style of the 1992 map (coloured pencil, spaced capitals, numbered discs) and Hawthorne's 1986 sketches (mauve wash, grille hatch, one yellow light). The pixel frame stays.
 
@@ -157,7 +157,7 @@ A FIND button opens three cases. The model runs as usual, and you can play a cas
    - A hat was "standard issue against the constant dripping in the alleyways" (p149). The photos on pp144 and 148 show postman Lui Man Sang, with a navy hat and a brown canvas bag. The case has one postman only, with no look-alike (John, 2026-10-31), thus Lam wears that hat and bag (INFERRED).
    - Lam "had a small moustache and was nicknamed by the locals 'hu xu zi' (beardie), or postman Ah-Po" (p146).
    - His day (the book gives no times; WSJ gives an 8-hour shift, so the times are INFERRED):
-     - sort the mail at the Lung Kong Road Post Office, outside the City (p146);
+     - sort the mail at the Lung Kong Road (龍崗道) Post Office, outside the City (p146);
      - start at a store on Lo Yan Street (p146);
      - work one north–south lane, then the side alleys (p146);
      - climb one stair, cross the roofs by ladders and windows, and go down another (pp145–146);
@@ -165,7 +165,7 @@ A FIND button opens three cases. The model runs as usual, and you can play a cas
      - deliver outside the City for part of the day (p146).
 2. **The pigeon breeder, Chan Kwan Leung.**
    - He moved in in 1981, left his job and bred racing pigeons on a roof that he rented for HK$1500 a month (pp318–320). He closed the business on registration day in January 1987, so it ran in December 1986.
-   - He flew the birds "usually in mid-afternoon when there was a lull in the number of landings at Kai Tak" (p321). A flock will circle over his roof, and the Kai Tak landings will thin at that hour (INFERRED from the caption).
+   - He flew the birds "usually in mid-afternoon when there was a lull in the number of landings at Kai Tak" (p321). A flock will circle over his roof, and the Kai Tak (啓德) landings will thin at that hour (INFERRED from the caption).
    - Place: map no. 1, at the north end of Lo Yan Street. The text gives no address, so the place is APPROXIMATE.
 3. **The noodle maker, Hui Tung Choy.**
    - His factory is at the back of 2 Kwong Ming Street, from 1965. It is "barely 200 square feet", with no windows and a narrow door on to Kwong Ming Street (p170). His family's flat is above it.
@@ -227,7 +227,7 @@ PR 5 does not depend on PRs 2–4, so it can go in parallel. The game needs PRs 
 - The 1987 figure-ground is small in the book, so the overlay can be off. If the error is more than about 3 m, I will join plots by rule.
 - 3D routes for 33,000 people can be slow. I will plan routes over several frames and keep a cache for each tower.
 - Most photos are from 1987–92, and most show summer clothes. For December, I use the few winter photos and mark the rest INFERRED.
-- The book disagrees with itself on the Chiu Chow share ("about a third", p44; "more than 70 per cent", p183) and on the month of the 1993 survey. I will give both values or not use them.
+- The book disagrees with itself on the Chiu Chow (潮州) share ("about a third", p44; "more than 70 per cent", p183) and on the month of the 1993 survey. I will give both values or not use them.
 
 ## Decisions for John
 

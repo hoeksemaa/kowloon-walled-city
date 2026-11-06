@@ -1,6 +1,6 @@
 # M+ photographs by Greg Girard and Ian Lambot, 1987–1991
 
-The eight Kowloon Walled City photos by Girard and Lambot that M+ shows
+The eight Kowloon Walled City (九龍城寨) photos by Girard and Lambot that M+ shows
 online. The two photographers worked in the city for about five years before
 the clearance, for the book *City of Darkness* (1993).
 
@@ -26,7 +26,7 @@ are from 2013–2015, but the negatives are from 1987–1991.
 | 2017.412 | Lambot | 1990 | South Elevation | The whole south face from the park. You can count the storeys of each building. |
 | 2017.410 | Lambot | 1990 | Caged Balconies | Facade detail: metal cages on balconies. |
 | 2017.411 | Lambot | 1991 | Shared staircase linking three buildings | Inside: how stairs join buildings. |
-| 2018.4 | Girard | 1987 | Tung Tau Tsuen Road facade | North edge: shop signs and flats on the main road. |
+| 2018.4 | Girard | 1987 | Tung Tau Tsuen Road facade (東頭村道建築外牆) | North edge: shop signs and flats on the main road. |
 | 2018.2 | Girard | 1989 | Children on Rooftop | The roofs. |
 | 2018.1 | Girard | 1990 | Alley View #2 | Inside an alley. |
 | 2018.3 | Girard | 1990 | Alley View #3 | Inside an alley. |

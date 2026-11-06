@@ -1,6 +1,6 @@
 # The 3D structure (DEFINITIVE)
 
-**This is the definitive 3D structure of Kowloon Walled City and of the terrain and city round
+**This is the definitive 3D structure of Kowloon Walled City (九龍城寨) and of the terrain and city round
 it (John, 2026-11-04).** It is the structural foundation of all later work: the art, the
 visuals and the simulation build on it. Each earlier 3D model of the City is superseded. The
 3D city of the main app (`index.html`: `src/cityMesh.js`, `src/floorplan.js`,
@@ -9,8 +9,10 @@ no longer the model of the City. Its code stays only so that the main app runs u
 moves to this structure.
 
 It is a structural model only: walls, floors, stairs, rooms, the ways between them and the
-paving of the routes. It has no furniture, signs, window cages or TV masts. The colours and
-textures are placeholders: only the structure is definitive.
+paving of the routes. It has no furniture, signs, window cages or TV masts. It has no
+colours: `src/city/` and `src/surroundings/` name the parts, and the code that draws them gives
+the colours (`colorOf` in `buildMesh` and `buildProps`, `colors` in `buildGround`). The viewer
+keeps its placeholder colours in `src/structureColors.js`. Only the structure is definitive.
 
 ## The structure is frozen
 
@@ -29,7 +31,7 @@ rounded to 1 cm:
   reaches, and the solid of each real building of 1986).
 
 Thus a change to the code or to the data that moves the structure fails the check. A
-change of colour does not: the colours are placeholders, and the art can change them. Do not
+change of colour does not: the structure has no colours, and the art gives its own. Do not
 change the structure. Change it only for a large error that a new source shows, and only
 when John approves it. Then run `node tools/check_structure.mjs --refreeze`, and write the
 change, its source and the date in this file. `--record` (make the kept choices again) runs
@@ -56,18 +58,18 @@ City, and no ground shows under its buildings.
 
 | Input | What it gives | Status |
 | --- | --- | --- |
-| `data/plan.json` (the traced 1980s street plan) | the plots, the lanes, the yards, the Yamen | SOURCED |
+| `data/plan.json` (the traced 1980s street plan) | the plots, the lanes, the yards, the Yamen (衙門) | SOURCED |
 | `data/plan_fine.json` (the same trace on 0.25 m cells) | the outlines of the buildings and of the lanes | SOURCED |
 | `data/book_overlay.json` (the 1987 figure-ground plan, p134) | which plots stood as one building | SOURCED |
 | `data/structure_fixes.json` | corrections to the two files above, and storeys from photos, each with its source | SOURCED |
 | Lambot's 1990 south elevation | the storeys on the east half of the south face (plan x -0.6 to 104.9) | SOURCED |
-| City of Darkness Revisited, pp132, 336 | the range of 12-13 storeys on Tung Tau Tsuen Road, one of 14 | SOURCED as a range |
+| City of Darkness Revisited, pp132, 336 | the range of 12-13 storeys on Tung Tau Tsuen Road (東頭村道), one of 14 | SOURCED as a range |
 | Survey sheet 11-NE-11A (May 1987) | the low temporary structures on the east edge | SOURCED |
-| The park's plan of the City (the photo that the trace reads) | the outlines of the Yamen halls, the Youth Centre, the Old People's Centre | SOURCED |
+| The park's plan of the City (the photo that the trace reads) | the outlines of the Yamen halls, the Youth Centre (青年中心), the Old People's Centre (老人中心) | SOURCED |
 | Photos of the bronze model of the City in the park, scale 1:200 (Alamy 49828257, 53451363 and similar stock photos; screenshots on John's Mac, not in git). The model was made after the clearance and is a sculpture: its outlines do not agree exactly with the plans | the storeys of the buildings that no photo of the City shows (John, 2026-11-03: the main source for heights); which buildings of the Yamen compound are one building, the sloped roofs, the low east strip, the huts on the east edge, the thin tower, the yard east of the Yamen | SOURCED for storeys where counted (`from: "bronze"`); shapes only for outlines |
-| City of Darkness Revisited, pp20-21 (Lambot) and the 1989 aerial (Lambot, Wikimedia Commons) | the storeys on the west half of the south face (12-13); a deep Yamen court with tall walls; the Free School at about full height | SOURCED for the counts; which buildings: INFERRED |
-| `data/terrain.json` (LandsD DTM, sheet 11-NE-11A of 1987) | the ground: 7.6 m to 23 m in the City | SOURCED round the City, INFERRED inside it |
-| pp137-139, pp145-146, p164, p167, p175, p179, p209, p249, p253, p340, Terasawa's fold-out | the types of stairs, shared stairs, buildings over buildings, stair huts, bridges, ladders between roofs, corridor windows, no lifts, a route from one end of the City to the other | SOURCED as types |
+| City of Darkness Revisited, pp20-21 (Lambot) and the 1989 aerial (Lambot, Wikimedia Commons) | the storeys on the west half of the south face (12-13); a deep Yamen court with tall walls; the Free School (義學) at about full height | SOURCED for the counts; which buildings: INFERRED |
+| `data/terrain.json` (LandsD 地政總署 DTM, sheet 11-NE-11A of 1987) | the ground: 7.6 m to 23 m in the City | SOURCED round the City, INFERRED inside it |
+| pp137-139, pp145-146, p164, p167, p175, p179, p209, p249, p253, p340, Terasawa's (寺澤一美) fold-out | the types of stairs, shared stairs, buildings over buildings, stair huts, bridges, ladders between roofs, corridor windows, no lifts, a route from one end of the City to the other | SOURCED as types |
 
 ## Run
 
@@ -96,7 +98,7 @@ with its source.
   - The Youth Centre is one rectangle of 36.4 x 9.0 m with one sloped roof, from the lane on
     the west to the lane on the east (the band 青年中心). The rear hall of today stands in
     it: the park's plan and the bronze model do not show it as a hall of its own.
-  - The thin plots on the north side of the Youth Centre (27B Lo Yan Street and the plot
+  - The thin plots on the north side of the Youth Centre (27B Lo Yan Street 老人街 and the plot
     beside it, 2.6 m deep) are lane. The trace read part of the lane there as plots.
   - The Old People's Centre (1 storey) is the long rectangle marked 老人中心. The strip west
     of it is a low range of 1 storey with a flat roof (INFERRED; the 1987 sheet draws the
@@ -126,7 +128,7 @@ with its source.
 - The south face: the steps of Lambot's elevation go on plan x -0.6 to 104.9 only, as fitted
   to the lot lines of the 1987 sheet. Each building takes the median step over its width.
 - The east edge: six temporary structures of one storey, from the dashed outlines of the
-  1987 sheet. The sheet also draws the Fuk Tak shrine, free-standing east of the City: the
+  1987 sheet. The sheet also draws the Fuk Tak shrine (福德古廟), free-standing east of the City: the
   model leaves it out (John, 2026-11-04). Their inner side moves 3 m west, because the plan's east
   face is 1-3 m west of the sheet's. A lane that ends at the strip goes on through it.
 
@@ -266,7 +268,7 @@ with John's approval.
     make one open roof and always join. Elsewhere a step, where the wall to climb (the step,
     with a parapet on it) is 1.5 m or less, for 90 % of the pairs; a ladder for 30 % of the
     pairs with a higher wall, up to one storey apart. The ladder is SOURCED: "When it was only
-    one floor, people... bridged the gap with the help of a ladder" (Lam Po Chun, p145). The
+    one floor, people... bridged the gap with the help of a ladder" (Lam Po Chun 林寶鎮, p145). The
     30 % is INFERRED: most people used the lanes (p249). No source shows a plank from roof to
     roof, thus the model has none. A step or a ladder needs the top roof of the lower building
     at the wall: a setback terrace below it does not count. The ladder stands flat against the
@@ -288,7 +290,7 @@ with John's approval.
   into the haze from 350 m to 600 m, as in the main app. There is no plate under the City.
 - `src/structureViewer.js`: the viewer. A cut at any height, a vertical section, x-ray
   walls, the floors of a building on a click (with its units by kind and its source), and
-  routes.
+  routes. `src/structureColors.js`: its placeholder colours.
 
 ## Not done yet
 

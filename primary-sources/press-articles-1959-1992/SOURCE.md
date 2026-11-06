@@ -21,7 +21,7 @@ The 1992 reporter went inside with a resident.
 
 ## 1. "Denizens of noted hellhole face Walled City eviction"
 
-By Robert Benjamin. *The Baltimore Sun*, 30 Jun 1992. Dateline Hong Kong.
+By Robert Benjamin. *The Baltimore Sun*, 30 Jun 1992. Dateline Hong Kong (香港).
 The day before the police removed the last holdouts.
 
 - Buildings: "350 seven- to 14-story buildings interlaced by a maze of dark,
