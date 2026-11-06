@@ -13676,8 +13676,8 @@
   },
   {
    "id": "G7",
-   "name": "三星工艺社",
-   "nameZh": "三星工艺社",
+   "name": "三星工藝社",
+   "nameZh": "三星工藝社",
    "use": "handicraft workshop",
    "cat": "works",
    "basis": "verified",
@@ -14778,7 +14778,7 @@
   {
    "id": "T1",
    "name": "Ng family flat, Room A, 7/F, 8 Sz Kung St",
-   "nameZh": "社公街8号楼7层A室",
+   "nameZh": "社公街8號樓7層A室",
    "use": "family flat (5 people, Chiu Chow family), owner-occupied, bought 1975",
    "cat": "home",
    "basis": "verified",
@@ -14830,7 +14830,7 @@
   {
    "id": "T4",
    "name": "Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd",
-   "nameZh": "东头村道31号12楼B室",
+   "nameZh": "東頭村道31號12樓B室",
    "use": "rented family flat (3 people)",
    "cat": "home",
    "basis": "verified",
