@@ -35,10 +35,11 @@ if (problems.length) {
 const esc = (s) => String(s ?? '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
 const FL = (k) => (k === 0 ? 'G/F' : `${k}/F`);
 // the room place of a fact: its own, else the place of the same record (same_as, for example a
-// GRS file), else the place of the fact that it belongs to (linked_place, for a person)
+// GRS file, with or without its grs: prefix), else the place of the fact that it belongs to
+// (linked_place, for a person)
 const placeFor = (id, depth = 0) => {
   const f = facts.get(id);
-  return placeOf.get(id) || (f?.same_as && placeOf.get(f.same_as))
+  return placeOf.get(id) || placeOf.get(`grs:${id}`) || (f?.same_as && placeOf.get(f.same_as))
     || (f?.linked_place && depth < 3 ? placeFor(f.linked_place, depth + 1) : null);
 };
 const roomsOf = (p) => {

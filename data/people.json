@@ -1,5 +1,5 @@
 {
- "about": "Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. A check on 2026-11-05 compared each of the 147 quotes with its source: each press quote with the saved text of its article, and each book quote with an OCR of the cited page scan. All match.",
+ "about": "Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. The people of the GRS clearance files (政府檔案處, HKRS1255-3) come from the catalogue entries of the files: their stories give only what the catalogue gives. A check on 2026-11-05 compared each of the 230 quotes with its source: each press quote with the saved text of its article, each book quote with an OCR of the cited page scan, and each GRS quote with the research facts. All match.",
  "period": "December 1986",
  "people": [
   {
@@ -899,7 +899,8 @@
     "M57",
     "T35",
     "T36",
-    "W13"
+    "W13",
+    "B34"
    ],
    "sources": [
     {
@@ -1206,6 +1207,1578 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
      "cite": "p320",
      "quote": "the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
+    }
+   ]
+  },
+  {
+   "id": "chu-yiu-shan",
+   "name": "Chu Yiu Shan",
+   "nameZh": "朱耀山",
+   "short": "property agent",
+   "story": "Chu Yiu Shan was born in 1951 and grew up in the Walled City. His parents ran a store. At about 13 he delivered drinks to nearby places, some of them opium, gambling and sex-show dens. Later he became an intermediary between the sellers and buyers of flats, because he had seen much cheating. As a long-time resident, he could find out who the real owners were. He said that his property business became the biggest in the City and earned him about $20,000 a month. He saw water as the main hardship of the residents. He moved to Junk Bay when the clearance was announced. The GRS clearance file of his firm, Hang Fai Property Co., gives his Chinese name as 朱耀山 and the firm's address as 17 Tai Chang Street (大井街).",
+   "lived": "born 1951; grew up in the City and spent much of his adult life there; moved to Junk Bay when the clearance was announced (January 1987)",
+   "in_dec_1986": true,
+   "home": null,
+   "work": "Hang Fai Property Co., G/F and cockloft, 17 Tai Chang Street (大井街) (GRS file)",
+   "linked_facts": [
+    "C44",
+    "C45",
+    "G126"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
+     "cite": "p113",
+     "quote": "Born in 1951, Chu Yiu Shan was brought up and spent much of his adult life in the Walled City."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
+     "cite": "p113",
+     "quote": "I used to earn around $20,000 a month through my property business, which became the biggest in the Walled City."
+    },
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-256",
+     "quote": "G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co."
+    }
+   ]
+  },
+  {
+   "id": "lam-shu-chuen",
+   "name": "Lam Shu Chuen",
+   "nameZh": null,
+   "short": "Kai Fong officer, manufacturer",
+   "story": "Lam Shu Chuen came to the Walled City from the mainland as a small boy, before the War, and lived there for more than 50 years. He said that he once owned land in the City, which he bought for $25. In the 1940s he made his money by renting out kerosene lamps, and later he sold electricity from generators. In 1953 he was the first person in the City to own a car. He was a senior member of the Kai Fong Association (九龍城寨街坊福利會) and for many years chairman of the Industrial Commercial Liaison Committee. His family factory made components for radio-controlled toys. He called the clearance compensation not at all fair. After the clearance he moved the factory to Tai Po.",
+   "lived": "from early childhood, before the War, for more than 50 years, to the clearance",
+   "in_dec_1986": true,
+   "home": null,
+   "work": "his family's factory of components for radio-controlled toys (no address in the book)",
+   "linked_facts": [
+    "C70"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
+     "cite": "p153",
+     "quote": "Lam Shu Chuen lived in the City for more than 50 years."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
+     "cite": "p153",
+     "quote": "It was a good business and I was the first person in the Walled City to own a car."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview",
+     "cite": "p153",
+     "quote": "I have lived here since childhood and have built this place with my own hands."
+    }
+   ]
+  },
+  {
+   "id": "mrs-law",
+   "name": "Mrs Law",
+   "nameZh": null,
+   "short": "child-minding grandmother",
+   "story": "Mrs Law was a grandmother in the Walled City. Every day she collected her two grandchildren from school and took them back to her small apartment for the afternoon. The children often did their homework on her bed while they knelt on the floor. Their parents, who both worked full-time, picked them up on their way home from work. The book gives her only in a photo caption, and gives no address or dates.",
+   "lived": null,
+   "in_dec_1986": null,
+   "home": "a small apartment in the City (no address in the book)",
+   "work": null,
+   "linked_facts": [
+    "C33"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p54",
+     "quote": "Mrs Law (above) collected her two grandchildren from school every day and took them back to her small apartment for the afternoon"
+    }
+   ]
+  },
+  {
+   "id": "lui-man-sang",
+   "name": "Lui Man Sang",
+   "nameZh": null,
+   "short": "senior postman",
+   "story": "Lui Man Sang was the senior postman of the Walled City. The book says that few people knew the layout of the City as completely as he did. He knew its buildings, alleys, staircases and rooftops, also in the building boom of the late 1970s, when addresses changed often. His daily round began at a store on Lo Yan Street (老人街). From there he climbed dark stairwells and crossed the rooftops from building to building. His apprentice, the postman Lam Po Chun (林寶鎮), started with him at 19, when Mr Lui was 32. The two men were nicknamed 'the rooftop posties'. At the end of the 1980s, after about eight years together, Mr Lui moved to a different job.",
+   "lived": "postman in the City from about 1979 to the end of the 1980s (Lam Po Chun's account); the book does not say where he lived",
+   "in_dec_1986": true,
+   "home": null,
+   "work": "the City's post round, from a store on Lo Yan Street (老人街)",
+   "linked_facts": [
+    "A79"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p144",
+     "quote": "Postman Lui Man Sang emerges from a building staircase and enters one of the Walled City's alleys while making his rounds."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), interview with Lam Po Chun",
+     "cite": "p146",
+     "quote": "At the end of the 1980s, after I had partnered Mr Lui for eight years or so, he was transferred to a different job."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), caption",
+     "cite": "p146",
+     "quote": "Mr Lui's daily round began at a store on Lo Yan Street"
+    }
+   ]
+  },
+  {
+   "id": "chan-shing",
+   "name": "Chan Shing",
+   "nameZh": null,
+   "short": "private water supplier",
+   "story": "Chan Shing was one of the 70 or so private water suppliers of the Walled City. He collected the monthly charges from his customers himself. Sometimes he waived the charge for the elderly. He said: \"we are all poor people here and we should help each other\". His pump was usually hidden behind a floor panel. At various times he switched it on to fill a large storage tank on the roof. The book gives him only in a photo caption, with no address or dates.",
+   "lived": null,
+   "in_dec_1986": null,
+   "home": null,
+   "work": "his water pump room (no address in the book)",
+   "linked_facts": [
+    "A75"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p112",
+     "quote": "One of the City's 70 or so private water suppliers, Chan Shing collected monthly charges personally from his customers"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p112",
+     "quote": "we are all poor people here and we should help each other"
+    }
+   ]
+  },
+  {
+   "id": "mr-shum",
+   "name": "Mr Shum",
+   "nameZh": null,
+   "short": "won tun pastry maker",
+   "story": "Mr Shum worked with Chan Wai Shui in his noodle factory on Lo Yan Street (老人街). He made the pastry sheets that became the wrappers of won tun. He had made won tun pastry for years, and before that he made noodles. Every day he made more than 100 pounds of pastry. A machine stirred the flour, but he rubbed it by hand and flattened it with a long pole, on which he sat. He said that the work was hard and that he was often soaked to the skin.",
+   "lived": "worked in the City at the time of the photographs (c.1990); the book gives no years",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Chan Wai Shui's noodle factory, Lo Yan Street (老人街)",
+   "linked_facts": [
+    "B20"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p226",
+     "quote": "Chan Wai Shui (centre) with his coworkers, Mr Shum (left) and Kwan Tsin On (right)."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), caption",
+     "cite": "p228",
+     "quote": "I am responsible for making more than 100 pounds of pastry every day."
+    }
+   ]
+  },
+  {
+   "id": "kwok-tsan-ming",
+   "name": "Kwok Tsan Ming",
+   "nameZh": null,
+   "short": "fishball factory worker",
+   "story": "Kwok Tsan Ming worked in a small fishball factory off Kwong Ming Street (光明街). A photo shows him as he ladles a batch of fried fishballs into a basket. The caption says that most of the City's fishball makers were in that area. The book gives no other facts about his life.",
+   "lived": null,
+   "in_dec_1986": null,
+   "home": null,
+   "work": "a small fishball factory off Kwong Ming Street (光明街)",
+   "linked_facts": [
+    "B46"
+   ],
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), photo caption",
+     "cite": "p290",
+     "quote": "Employee Kwok Tsan Ming (below) ladles a batch of fried fishballs into a basket in a small factory off Kwong Ming Street"
+    }
+   ]
+  },
+  {
+   "id": "cheng-kim-shan",
+   "name": "Cheng Kim Shan",
+   "nameZh": "鄭劍山",
+   "short": "Chinese medicine practitioner",
+   "story": "Cheng Kim Shan (鄭劍山) was a Chinese medicine practitioner in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-71A, dated 1989-1991, that names this person. Its catalogue entry reads: “Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": null,
+   "linked_facts": [
+    "G123"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-71A",
+     "quote": "Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館"
+    }
+   ]
+  },
+  {
+   "id": "grs-g124",
+   "name": "陳廷乾",
+   "nameZh": "陳廷乾",
+   "short": "Lo Mei Workshop claimant",
+   "story": "陳廷乾 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-340, dated 1992, that names this person. Its catalogue entry reads: “Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": null,
+   "linked_facts": [
+    "G124"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-340",
+     "quote": "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+    }
+   ]
+  },
+  {
+   "id": "grs-g125",
+   "name": "陳鎮波",
+   "nameZh": "陳鎮波",
+   "short": "Lo Mei Workshop claimant",
+   "story": "陳鎮波 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-340, dated 1992, that names this person. Its catalogue entry reads: “Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": null,
+   "linked_facts": [
+    "G125"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-340",
+     "quote": "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+    }
+   ]
+  },
+  {
+   "id": "grs-g127",
+   "name": "林惠珠",
+   "nameZh": "林惠珠",
+   "short": "Chiu Chow dim-sum maker",
+   "story": "林惠珠 was a Chiu Chow dim-sum maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-194, dated 1988-1990, that names this person. Its catalogue entry reads: “39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, 39 Sai Shing Road",
+   "linked_facts": [
+    "G127"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-194",
+     "quote": "39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)"
+    }
+   ]
+  },
+  {
+   "id": "grs-g128",
+   "name": "姚正明",
+   "nameZh": "姚正明",
+   "short": "fur coat maker",
+   "story": "姚正明 was a fur coat maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-226, dated 1988-1991, that names this person. Its catalogue entry reads: “37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 37 Sai Shing Road",
+   "linked_facts": [
+    "G128"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-226",
+     "quote": "37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)"
+    }
+   ]
+  },
+  {
+   "id": "grs-g129",
+   "name": "李就",
+   "nameZh": "李就",
+   "short": "watch-case etcher",
+   "story": "李就 was a watch-case etcher in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-140, dated 1988-1990, that names this person. Its catalogue entry reads: “2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 2B Sai Shing Road",
+   "linked_facts": [
+    "G129"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-140",
+     "quote": "2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就"
+    }
+   ]
+  },
+  {
+   "id": "grs-g130",
+   "name": "廖理",
+   "nameZh": "廖理",
+   "short": "drilling subcontractor",
+   "story": "廖理 was a drilling subcontractor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-94, dated 1988-1991, that names this person. Its catalogue entry reads: “19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "3/F, Flat A, 19 Sz Kung Street",
+   "linked_facts": [
+    "G130"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-94",
+     "quote": "19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]"
+    }
+   ]
+  },
+  {
+   "id": "grs-g131",
+   "name": "李漢明",
+   "nameZh": "李漢明",
+   "short": "lunch-box workshop claimant",
+   "story": "李漢明 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-240, dated 1988-1990, that names this person. Its catalogue entry reads: “31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat 7, 1/F, 31B Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G131"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-240",
+     "quote": "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+    }
+   ]
+  },
+  {
+   "id": "grs-g132",
+   "name": "黃錫榮",
+   "nameZh": "黃錫榮",
+   "short": "lunch-box workshop claimant",
+   "story": "黃錫榮 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-240, dated 1988-1990, that names this person. Its catalogue entry reads: “31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat 7, 1/F, 31B Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G132"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-240",
+     "quote": "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+    }
+   ]
+  },
+  {
+   "id": "law-hoi-cheung",
+   "name": "Law Hoi-cheung",
+   "nameZh": "羅開祥",
+   "short": "service centre claimant",
+   "story": "Law Hoi-cheung (羅開祥) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-248, dated 1988-1991, that names this person. Its catalogue entry reads: “G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 21 Sai Shing Road",
+   "linked_facts": [
+    "G133"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-248",
+     "quote": "G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)"
+    }
+   ]
+  },
+  {
+   "id": "li-ching-wa",
+   "name": "Li Ching Wa",
+   "nameZh": "李靜華",
+   "short": "commercial storage claimant",
+   "story": "Li Ching Wa (李靜華) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-103, dated 1992, that names this person. Its catalogue entry reads: “Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat A, 11/F, 146 Lung Chun Road",
+   "linked_facts": [
+    "G134"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-103",
+     "quote": "Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]"
+    }
+   ]
+  },
+  {
+   "id": "grs-g135",
+   "name": "曾紀尉",
+   "nameZh": "曾紀尉",
+   "short": "jewellery maker",
+   "story": "曾紀尉 was a jewellery maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-229, dated 1988-1990, that names this person. Its catalogue entry reads: “27, Sai Shing Road, 8/F 曾紀尉 (首飾)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "8/F, 27 Sai Shing Road",
+   "linked_facts": [
+    "G135"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-229",
+     "quote": "27, Sai Shing Road, 8/F 曾紀尉 (首飾)"
+    }
+   ]
+  },
+  {
+   "id": "grs-g136",
+   "name": "羅釗林",
+   "nameZh": "羅釗林",
+   "short": "business claimant",
+   "story": "羅釗林 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-181, dated 1988-1991, that names this person. Its catalogue entry reads: “4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "4/F, Front Portion, 32 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G136"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-181",
+     "quote": "4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林"
+    }
+   ]
+  },
+  {
+   "id": "wong-yuen-heung",
+   "name": "Wong Yuen Heung",
+   "nameZh": "黃源香",
+   "short": "business claimant",
+   "story": "Wong Yuen Heung (黃源香) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-190, dated 1988-1992, that names this person. Its catalogue entry reads: “37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 37 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G137"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-190",
+     "quote": "37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )"
+    }
+   ]
+  },
+  {
+   "id": "tse-ma-ming",
+   "name": "Tse Ma Ming",
+   "nameZh": null,
+   "short": "business claimant",
+   "story": "Tse Ma Ming was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-535, dated 1990-1992, that names this person. Its catalogue entry reads: “Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Rm. 2, 6/F, Block 3, 10A Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G138"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-535",
+     "quote": "Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming"
+    }
+   ]
+  },
+  {
+   "id": "lam-hong-tin",
+   "name": "Lam Hong-Tin",
+   "nameZh": null,
+   "short": "business claimant",
+   "story": "Lam Hong-Tin was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-468, dated 1989-1990, that names this person. Its catalogue entry reads: “8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "8/F, Rear Portion, 28 Lo Yan Street",
+   "linked_facts": [
+    "G139"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-468",
+     "quote": "8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin"
+    }
+   ]
+  },
+  {
+   "id": "lau-fat-mau",
+   "name": "Lau Fat Mau",
+   "nameZh": null,
+   "short": "business claimant",
+   "story": "Lau Fat Mau was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-60, dated 1992, that names this person. Its catalogue entry reads: “1/F, 3 Lo Yan Street Lau Fat Mau”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, 3 Lo Yan Street",
+   "linked_facts": [
+    "G140"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-60",
+     "quote": "1/F, 3 Lo Yan Street Lau Fat Mau"
+    }
+   ]
+  },
+  {
+   "id": "chang-long-leung",
+   "name": "Chang Long Leung",
+   "nameZh": "張朗良",
+   "short": "business claimant",
+   "story": "Chang Long Leung (張朗良) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-528, dated 1990-1991, that names this person. Its catalogue entry reads: “G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F + M/F, 26 Kwong Ming Street",
+   "linked_facts": [
+    "G141"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-528",
+     "quote": "G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)"
+    }
+   ]
+  },
+  {
+   "id": "lam-hung-g142",
+   "name": "Lam Hung",
+   "nameZh": "林洪",
+   "short": "business claimant",
+   "story": "Lam Hung (林洪) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-254, dated 1988-1989, that names this person. Its catalogue entry reads: “56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1989",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "M/F, Block F (mezzanine), 56 Lung Chun Road",
+   "linked_facts": [
+    "G142"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-254",
+     "quote": "56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung"
+    }
+   ]
+  },
+  {
+   "id": "grs-g143",
+   "name": "鄭炎創",
+   "nameZh": "鄭炎創",
+   "short": "garment workshop claimant",
+   "story": "鄭炎創 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-307, dated 1988-1990, that names this person. Its catalogue entry reads: “24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "4/F, Flat E, 24 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G143"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-307",
+     "quote": "24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創"
+    }
+   ]
+  },
+  {
+   "id": "grs-g144",
+   "name": "莊裕宏",
+   "nameZh": "莊裕宏",
+   "short": "dog-room (狗房) keeper",
+   "story": "莊裕宏 was a dog-room (狗房) keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-66, dated 1988-1990, that names this person. Its catalogue entry reads: “114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1990",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "7/F, 114 Lung Chun Road",
+   "linked_facts": [
+    "G144"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-66",
+     "quote": "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)"
+    }
+   ]
+  },
+  {
+   "id": "tse-choi-kwan",
+   "name": "Tse Choi Kwan",
+   "nameZh": null,
+   "short": "fur worker",
+   "story": "Tse Choi Kwan was a fur worker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-167, dated 1988-1991, that names this person. Its catalogue entry reads: “31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "3/F, Flat 1, 31C Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G145"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-167",
+     "quote": "31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)"
+    }
+   ]
+  },
+  {
+   "id": "lee-yuk-ha",
+   "name": "Lee Yuk Ha",
+   "nameZh": null,
+   "short": "newspaper vendor",
+   "story": "Lee Yuk Ha was a newspaper vendor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-384, dated 1992, that names this person. Its catalogue entry reads: “Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 66-68 (outside) Lung Chun Road",
+   "linked_facts": [
+    "G146"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-384",
+     "quote": "Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)"
+    }
+   ]
+  },
+  {
+   "id": "chan-hay-sing",
+   "name": "Chan Hay Sing",
+   "nameZh": "陳喜星",
+   "short": "dentist",
+   "story": "Chan Hay Sing (陳喜星) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-72, dated 1989-1993, that names this person. Its catalogue entry reads: “G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1993",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 126 Lung Chun Road",
+   "linked_facts": [
+    "G147"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-72",
+     "quote": "G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)"
+    }
+   ]
+  },
+  {
+   "id": "lau-moon-wah",
+   "name": "Lau Moon Wah",
+   "nameZh": "劉滿華",
+   "short": "dentist",
+   "story": "Lau Moon Wah (劉滿華) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-298, dated 1989-1991, that names this person. Its catalogue entry reads: “Lau Moon Wah Dental Clinic 劉滿華牙科醫務所”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat A, 1/F, Rear, 20-22 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G148"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-298",
+     "quote": "Lau Moon Wah Dental Clinic 劉滿華牙科醫務所"
+    }
+   ]
+  },
+  {
+   "id": "wong-chun-wah",
+   "name": "Wong Chun Wah",
+   "nameZh": "黃振華",
+   "short": "dentist",
+   "story": "Wong Chun Wah (黃振華) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-323, dated 1992, that names this person. Its catalogue entry reads: “4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "4/F, Front Portion, 27 Lo Yan Street",
+   "linked_facts": [
+    "G149"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-323",
+     "quote": "4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)"
+    }
+   ]
+  },
+  {
+   "id": "tse-hon-keung",
+   "name": "Tse Hon Keung",
+   "nameZh": "謝漢強",
+   "short": "dentist",
+   "story": "Tse Hon Keung (謝漢強) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-549, dated 1992, that names this person. Its catalogue entry reads: “Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": null,
+   "linked_facts": [
+    "G150"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-549",
+     "quote": "Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)"
+    }
+   ]
+  },
+  {
+   "id": "chan-che-ming",
+   "name": "Chan Che Ming",
+   "nameZh": "陳子明",
+   "short": "dentist",
+   "story": "Chan Che Ming (陳子明) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-3, dated 1992, that names this person. Its catalogue entry reads: “1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, 74 Lung Chun Road",
+   "linked_facts": [
+    "G151"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-3",
+     "quote": "1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科"
+    }
+   ]
+  },
+  {
+   "id": "chan-kwok-cheung",
+   "name": "Chan Kwok Cheung",
+   "nameZh": "陳國祥",
+   "short": "dentist",
+   "story": "Chan Kwok Cheung (陳國祥) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-52, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 108 Lung Chun Road",
+   "linked_facts": [
+    "G152"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-52",
+     "quote": "G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)"
+    }
+   ]
+  },
+  {
+   "id": "chan-yin-chor",
+   "name": "Chan Yin Chor",
+   "nameZh": "陳燕初",
+   "short": "dentist",
+   "story": "Chan Yin Chor (陳燕初) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-118, dated 1991, that names this person. Its catalogue entry reads: “G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 150 Lung Chun Road",
+   "linked_facts": [
+    "G153"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-118",
+     "quote": "G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科"
+    }
+   ]
+  },
+  {
+   "id": "ng-mei-kin",
+   "name": "Ng Mei Kin",
+   "nameZh": "吳美堅",
+   "short": "dentist",
+   "story": "Ng Mei Kin (吳美堅) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-69, dated 1991, that names this person. Its catalogue entry reads: “G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 122 Lung Chun Road",
+   "linked_facts": [
+    "G154"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-69",
+     "quote": "G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)"
+    }
+   ]
+  },
+  {
+   "id": "cheng-ling-sang",
+   "name": "Cheng Ling Sang",
+   "nameZh": "鄭凌生",
+   "short": "dentist",
+   "story": "Cheng Ling Sang (鄭凌生) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-34, dated 1992, that names this person. Its catalogue entry reads: “G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F with a cockloft, 94 Lung Chun Road",
+   "linked_facts": [
+    "G155"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-34",
+     "quote": "G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)"
+    }
+   ]
+  },
+  {
+   "id": "mak-yue-kong",
+   "name": "Mak Yue Kong",
+   "nameZh": "麥汝剛",
+   "short": "dental technician",
+   "story": "Mak Yue Kong (麥汝剛) was a dental technician in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-27, dated 1992, that names this person. Its catalogue entry reads: “G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 88 Lung Chun Road",
+   "linked_facts": [
+    "G156"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-27",
+     "quote": "G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)"
+    }
+   ]
+  },
+  {
+   "id": "yan-wing-tak",
+   "name": "Yan Wing Tak",
+   "nameZh": "甄榮德",
+   "short": "dentist",
+   "story": "Yan Wing Tak (甄榮德) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-125, dated 1989-1992, that names this person. Its catalogue entry reads: “2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": null,
+   "linked_facts": [
+    "G157"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-125",
+     "quote": "2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)"
+    }
+   ]
+  },
+  {
+   "id": "ho-yin",
+   "name": "Ho Yin",
+   "nameZh": "何賢",
+   "short": "dentist",
+   "story": "Ho Yin (何賢) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-391, dated 1990-1992, that names this person. Its catalogue entry reads: “G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F & Cockloft, 4 Lung Shing Road",
+   "linked_facts": [
+    "G158"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-391",
+     "quote": "G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)"
+    }
+   ]
+  },
+  {
+   "id": "mak-yue-kwan",
+   "name": "Mak Yue Kwan",
+   "nameZh": "麥汝鋆",
+   "short": "dentist",
+   "story": "Mak Yue Kwan (麥汝鋆) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-376, dated 1992, that names this person. Its catalogue entry reads: “G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons (Sept 1991), “牙科麥汝鋆”.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 17 Lung Shing Road",
+   "linked_facts": [
+    "G159",
+    "P4"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-376",
+     "quote": "G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)"
+    },
+    {
+     "source": "Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons",
+     "cite": "https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg",
+     "quote": "牙科麥汝鋆"
+    }
+   ]
+  },
+  {
+   "id": "wong-mei-yue",
+   "name": "Wong Mei Yue",
+   "nameZh": "黃美如",
+   "short": "dentist",
+   "story": "Wong Mei Yue (黃美如) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-374, dated 1991-1992, that names this person. Its catalogue entry reads: “G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons (Sept 1991), “黃美如牙科”.",
+   "lived": "named in a clearance file dated 1991-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 21 Lung Shing Road",
+   "linked_facts": [
+    "G160",
+    "P2"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-374",
+     "quote": "G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)"
+    },
+    {
+     "source": "Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons",
+     "cite": "https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg",
+     "quote": "黃美如牙科"
+    }
+   ]
+  },
+  {
+   "id": "lee-wai-kwan",
+   "name": "Lee Wai Kwan",
+   "nameZh": "李偉群",
+   "short": "dentist",
+   "story": "Lee Wai Kwan (李偉群) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-372A, dated 1990-1993, that names this person. Its catalogue entry reads: “G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1993",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F & Cockloft, 23 Lung Shing Road",
+   "linked_facts": [
+    "G161"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-372A",
+     "quote": "G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科"
+    }
+   ]
+  },
+  {
+   "id": "fong-yuk-shing",
+   "name": "Fong Yuk Shing",
+   "nameZh": "方玉成",
+   "short": "dentist",
+   "story": "Fong Yuk Shing (方玉成) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-370, dated 1992, that names this person. Its catalogue entry reads: “G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 29B Lung Shing Road",
+   "linked_facts": [
+    "G162"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-370",
+     "quote": "G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)"
+    }
+   ]
+  },
+  {
+   "id": "tsang-chi-wai",
+   "name": "Tsang Chi Wai",
+   "nameZh": "曾志偉",
+   "short": "dentist",
+   "story": "Tsang Chi Wai (曾志偉) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-352, dated 1990-1992, that names this person. Its catalogue entry reads: “G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 63 Lung Shing Road",
+   "linked_facts": [
+    "G163"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-352",
+     "quote": "G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)"
+    }
+   ]
+  },
+  {
+   "id": "lai-woon-sun",
+   "name": "Lai Woon Sun",
+   "nameZh": "黎煥新",
+   "short": "dentist",
+   "story": "Lai Woon Sun (黎煥新) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-415, dated 1993-1994, that names this person. Its catalogue entry reads: “G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1993-1994",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 22 Lung Shing Road",
+   "linked_facts": [
+    "G164"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-415",
+     "quote": "G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)"
+    }
+   ]
+  },
+  {
+   "id": "siu-ping-lung",
+   "name": "Siu Ping Lung",
+   "nameZh": "蕭秉隆",
+   "short": "dentist",
+   "story": "Siu Ping Lung (蕭秉隆) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-514, dated 1992-1993, that names this person. Its catalogue entry reads: “G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992-1993",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 3 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G165"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-514",
+     "quote": "G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)"
+    }
+   ]
+  },
+  {
+   "id": "siu-ping-sing",
+   "name": "Siu Ping Sing",
+   "nameZh": "蕭秉陞",
+   "short": "dentist",
+   "story": "Siu Ping Sing (蕭秉陞) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-547, dated 1991-1992, that names this person. Its catalogue entry reads: “G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1991-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 6 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G166"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-547",
+     "quote": "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)"
+    }
+   ]
+  },
+  {
+   "id": "yip-wa-man",
+   "name": "Yip Wa Man",
+   "nameZh": "葉華民",
+   "short": "dentist",
+   "story": "Yip Wa Man (葉華民) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-554, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F of C/L (cockloft), 8 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G167"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-554",
+     "quote": "G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科"
+    }
+   ]
+  },
+  {
+   "id": "mak-chiu",
+   "name": "Mak Chiu",
+   "nameZh": "麥釗",
+   "short": "dentist",
+   "story": "Mak Chiu (麥釗) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-553, dated 1991-1992, that names this person. Its catalogue entry reads: “4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1991-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "4/F, Rear Block, 8 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G168"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-553",
+     "quote": "4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)"
+    }
+   ]
+  },
+  {
+   "id": "ma-chong-chung",
+   "name": "Ma Chong Chung",
+   "nameZh": "馬創忠",
+   "short": "dentist",
+   "story": "Ma Chong Chung (馬創忠) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-278, dated 1992, that names this person. Its catalogue entry reads: “G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 20-22 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G169"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-278",
+     "quote": "G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科"
+    }
+   ]
+  },
+  {
+   "id": "tsang-keong",
+   "name": "Tsang Keong",
+   "nameZh": null,
+   "short": "dentist",
+   "story": "Tsang Keong was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-280A (also -280D to -281), dated 1988-1992, that names this person. Its catalogue entry reads: “Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat F, 1/F, rear Hop Hing House, 20-22 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G170"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-280A (also -280D to -281)",
+     "quote": "Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic"
+    }
+   ]
+  },
+  {
+   "id": "ngai-heung-chuen",
+   "name": "Ngai Heung Chuen",
+   "nameZh": "魏香泉",
+   "short": "dentist",
+   "story": "Ngai Heung Chuen (魏香泉) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-273, dated 1988-1991, that names this person. Its catalogue entry reads: “Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat A, 4/F, Stage 7, 24 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G171"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-273",
+     "quote": "Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科"
+    }
+   ]
+  },
+  {
+   "id": "wong-wai-kuen",
+   "name": "Wong Wai Kuen",
+   "nameZh": "王偉權",
+   "short": "dentist",
+   "story": "Wong Wai Kuen (王偉權) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-154, dated 1992, that names this person. Its catalogue entry reads: “G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 30-31 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G172"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-154",
+     "quote": "G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)"
+    }
+   ]
+  },
+  {
+   "id": "lam-sam-yuk",
+   "name": "Lam Sam Yuk",
+   "nameZh": null,
+   "short": "dentist",
+   "story": "Lam Sam Yuk was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-157 (ledgers -158B to -159B, from 1987), dated 1987-1994, that names this person. Its catalogue entry reads: “Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1987-1994",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 32 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G173"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-157 (ledgers -158B to -159B, from 1987)",
+     "quote": "Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry"
+    }
+   ]
+  },
+  {
+   "id": "chong-tin-lai",
+   "name": "Chong Tin Lai",
+   "nameZh": "莊天麗",
+   "short": "dentist",
+   "story": "Chong Tin Lai (莊天麗) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-187, dated 1988-1991, that names this person. Its catalogue entry reads: “G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 35 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G174"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-187",
+     "quote": "G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry"
+    }
+   ]
+  },
+  {
+   "id": "liu-kwan",
+   "name": "Liu Kwan",
+   "nameZh": "廖坤",
+   "short": "acupuncture doctor",
+   "story": "Liu Kwan (廖坤) was a acupuncture doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-575, dated 1989-1992, that names this person. Its catalogue entry reads: “Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat 1, 1/F, 16 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G175"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-575",
+     "quote": "Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所"
+    }
+   ]
+  },
+  {
+   "id": "chan-wing-lan",
+   "name": "Chan Wing Lan",
+   "nameZh": null,
+   "short": "doctor",
+   "story": "Chan Wing Lan was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-310, dated 1989-1992, that names this person. Its catalogue entry reads: “1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, 19 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G176"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-310",
+     "quote": "1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN"
+    }
+   ]
+  },
+  {
+   "id": "yau-ka-sut",
+   "name": "Yau Ka Sut",
+   "nameZh": "邱家瑟",
+   "short": "Western-medicine doctor",
+   "story": "Yau Ka Sut (邱家瑟) was a Western-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-302, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 24A Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G177"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-302",
+     "quote": "G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟"
+    }
+   ]
+  },
+  {
+   "id": "ng-ping-wai",
+   "name": "Ng Ping Wai",
+   "nameZh": null,
+   "short": "doctor",
+   "story": "Ng Ping Wai was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-266, dated 1989-1991, that names this person. Its catalogue entry reads: “Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat 2, 6/F, 24A Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G178"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-266",
+     "quote": "Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic"
+    }
+   ]
+  },
+  {
+   "id": "grs-g179",
+   "name": "李靜瑜",
+   "nameZh": "李靜瑜",
+   "short": "Chinese-medicine doctor",
+   "story": "李靜瑜 was a Chinese-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-160, dated 1988-1992, that names this person. Its catalogue entry reads: “26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "2/F, Flat A, Rear Portion, 26 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G179"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-160",
+     "quote": "26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))"
+    }
+   ]
+  },
+  {
+   "id": "grs-g180",
+   "name": "黃照垣",
+   "nameZh": "黃照垣",
+   "short": "Chinese-medicine doctor",
+   "story": "黃照垣 was a Chinese-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-164, dated 1988-1991, that names this person. Its catalogue entry reads: “30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, 30 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G180"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-164",
+     "quote": "30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)"
+    }
+   ]
+  },
+  {
+   "id": "li-mau",
+   "name": "Li Mau",
+   "nameZh": "李謀",
+   "short": "Western-medicine doctor",
+   "story": "Li Mau (李謀) was a Western-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-185, dated 1988-1995, that names this person. Its catalogue entry reads: “1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1995",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F, Rear Portion, 35 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G181"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-185",
+     "quote": "1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)"
+    }
+   ]
+  },
+  {
+   "id": "cheung-ting-wan",
+   "name": "Cheung Ting Wan",
+   "nameZh": "張挺華",
+   "short": "doctor",
+   "story": "Cheung Ting Wan (張挺華) was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-186, dated 1989-1991, that names this person. Its catalogue entry reads: “1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F Front Block, 35 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G182"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-186",
+     "quote": "1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)"
+    }
+   ]
+  },
+  {
+   "id": "lau-wing",
+   "name": "Lau Wing",
+   "nameZh": "羅宋榮",
+   "short": "doctor",
+   "story": "Lau Wing (羅宋榮) was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-186, dated 1989-1991, that names this person. Its catalogue entry reads: “& Lau Wing Medical Climic(羅宋榮診所)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1991",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "1/F Front Block, 35 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G183"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-186",
+     "quote": "& Lau Wing Medical Climic(羅宋榮診所)"
+    }
+   ]
+  },
+  {
+   "id": "lo-ming-tak",
+   "name": "Lo Ming Tak",
+   "nameZh": "羅明德",
+   "short": "Chinese herbalist",
+   "story": "Lo Ming Tak (羅明德) was a Chinese herbalist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-315, dated 1988-1992, that names this person. Its catalogue entry reads: “20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "4/F, Flat B, Sze Hing House 2, 20 Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G184"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-315",
+     "quote": "20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak"
+    }
+   ]
+  },
+  {
+   "id": "liu-kwok-sum",
+   "name": "Liu Kwok Sum",
+   "nameZh": "廖廣森",
+   "short": "bonesetter",
+   "story": "Liu Kwok Sum (廖廣森) was a bonesetter in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-20, dated 1990-1992, that names this person. Its catalogue entry reads: “Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons (1975-1992), “廖廣森”.",
+   "lived": "named in a clearance file dated 1990-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Front Portion, 3/F, 1 Lung Chun Road",
+   "linked_facts": [
+    "G185",
+    "P9"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-20",
+     "quote": "Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館"
+    },
+    {
+     "source": "Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons",
+     "cite": "https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg",
+     "quote": "廖廣森"
+    }
+   ]
+  },
+  {
+   "id": "lam-hung-g186",
+   "name": "Lam Hung",
+   "nameZh": null,
+   "short": "bonesetter",
+   "story": "Lam Hung was a bonesetter in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-546, dated 1989-1992, that names this person. Its catalogue entry reads: “2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1989-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "2/F, 39 Kwong Ming Street",
+   "linked_facts": [
+    "G186"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-546",
+     "quote": "2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)"
+    }
+   ]
+  },
+  {
+   "id": "chan-hon-fung",
+   "name": "Chan Hon Fung",
+   "nameZh": "陳漢豐",
+   "short": "fruit store keeper",
+   "story": "Chan Hon Fung (陳漢豐) was a fruit store keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-342A (ledgers -343 to -345), dated 1990-1992; ledgers 1987-1995, that names this person. Its catalogue entry reads: “G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1990-1992; ledgers 1987-1995",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "G/F, 2B Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G187"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-342A (ledgers -343 to -345)",
+     "quote": "G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)"
+    }
+   ]
+  },
+  {
+   "id": "chau-kwan-hing",
+   "name": "Chau Kwan Hing",
+   "nameZh": "周坤興",
+   "short": "roast-meat stall keeper",
+   "story": "Chau Kwan Hing (周坤興) was a roast-meat stall keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-244 (ledger -245), dated 1988-1992, that names this person. Its catalogue entry reads: “Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊”. The catalogue gives no other facts about this person's life.",
+   "lived": "named in a clearance file dated 1988-1992",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "Flat 5, 2/F (also known as 6/F), 31B Tung Tau Tsuen Road",
+   "linked_facts": [
+    "G188"
+   ],
+   "sources": [
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-244 (ledger -245)",
+     "quote": "Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊"
     }
    ]
   },
