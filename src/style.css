@@ -64,8 +64,6 @@ button { font: inherit; color: inherit; }
 #levels button:hover { background: rgba(255, 255, 255, 0.5); }
 #levels button.sel { border-color: var(--accent); background: rgba(227, 154, 48, 0.18); color: var(--ink); }
 #levels button.above { color: var(--ink-3); }
-#levels .occ { width: 5px; height: 11px; background: #b9b2a2; position: relative; overflow: hidden; }
-#levels .occ i { position: absolute; left: 0; right: 0; bottom: 0; background: var(--tag); }
 #levels .sep { border-top: 2px dashed var(--ink-3); margin: 4px 7px; }
 
 /* ---- clock ---- */
