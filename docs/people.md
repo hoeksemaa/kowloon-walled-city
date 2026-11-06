@@ -2,62 +2,134 @@
 
 This file is made by `node tools/build_people.mjs` from `data/people.json`. Do not edit it by hand.
 
-Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. A check on 2026-11-05 compared each of the 147 quotes with its source: each press quote with the saved text of its article, and each book quote with an OCR of the cited page scan. All match.
+Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. The people of the GRS clearance files (政府檔案處, HKRS1255-3) come from the catalogue entries of the files: their stories give only what the catalogue gives. A check on 2026-11-05 compared each of the 230 quotes with its source: each press quote with the saved text of its article, each book quote with an OCR of the cited page scan, and each GRS quote with the research facts. All match.
 
-50 people. In the City in December 1986, as their sources show: 36; not then: 6; not known: 8.
+122 people. In the City in December 1986, as their sources show: 39; not then: 6; not known: 77.
 
 | Person | Who | In the City | Dec 1986 | Rooms in the model |
 | --- | --- | --- | --- | --- |
 | [Albert Ng Kam-po (吳錦波)](#albert-ng-kam-po) | boy, later pastor | 1975-1991 or 1992 | yes | 171:7:1 (7/F, Ng family flat, Room A, 7/F, 8 Sz Kung St); 171:1:0 (1/F, Hallway and roof of Albert Ng's building) |
+| [Chan Che Ming (陳子明)](#chan-che-ming) | dentist | named in a clearance file dated 1992 | not known | 265:1:0 (1/F, 陳子明牙科) |
 | [Chan Cheung-chuen (陳祥全)](#chan-cheung-chuen) | map maker, tenant | 1985-1991 (WSJ fact box); HK01 gives a move into the City in 1979 | yes | 43:12:0 (12/F, Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd) |
+| [Chan Hay Sing (陳喜星)](#chan-hay-sing) | dentist | named in a clearance file dated 1989-1993 | not known | 247:0:0 (G/F, Chan Hay Sing Dentistry) |
 | [Chan Hip Ping](#chan-hip-ping) | Kai Fong Association vice-president | Helped the Kai Fong Association from its start in 1963; Vice-President from 1966; no longer a resident at the time of the interview | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
+| [Chan Hon Fung (陳漢豐)](#chan-hon-fung) | fruit store keeper | named in a clearance file dated 1990-1992; ledgers 1987-1995 | not known | 0:0:3 (G/F, 陳漢豐鮮菓士多) |
 | [Chan Kwan Leung](#chan-kwan-leung) | pigeon breeder | From 1981 to the interview; the Housing Department registered him as a resident in January 1987 | yes | 75:0:0 (G/F, Chan Kwan Leung's pigeon lofts); 59:2:2 (2/F, Chan Kwan Leung's flat) |
+| [Chan Kwok Cheung (陳國祥)](#chan-kwok-cheung) | dentist | named in a clearance file dated 1989-1992 | not known | 261:0:0 (G/F, 牙醫陳國祥) |
 | [Chan Kwong](#chan-kwong) | golf-ball maker | factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming | yes | 111:0:0 (G/F, Tai Kwong Ho Metals & Plastic Mfy. [Manufactory]) |
 | [Chan Pui Yin](#chan-pui-yin) | herbal doctor | store on Lung Chun Road from 1955; still living and working in the City at the time of the interview | yes | 243:0:0 (G/F, Chan Pui Yin's herbal medicine store) |
+| [Chan Shing](#chan-shing) | private water supplier |  | not known |  |
 | [Chan Wai Shui](#chan-wai-shui) | noodle maker | Worked in the City from 1979 for more than 10 years; did not live in the City | yes | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Chan Wing Lan](#chan-wing-lan) | doctor | named in a clearance file dated 1989-1992 | not known | 21:1:0 (1/F, Dr. CHAN WING LAN) |
+| [Chan Yin Chor (陳燕初)](#chan-yin-chor) | dentist | named in a clearance file dated 1991 | not known | 254:0:2 (G/F, 陳燕初牙科) |
+| [Chang Long Leung (張朗良)](#chang-long-leung) | business claimant | named in a clearance file dated 1990-1991 | not known | 98:0:0 (G/F, Chang Long Leung) |
+| [Chau Kwan Hing (周坤興)](#chau-kwan-hing) | roast-meat stall keeper | named in a clearance file dated 1988-1992 | not known | 24:2:2 (2/F, also known as 6/F) |
 | [Chau Pak](#chau-pak) | storekeeper | worked in the City in the late 1980s (map of 1992) | not known | 196:0:0 (G/F, Chau Pak's store) |
+| [Cheng Kim Shan (鄭劍山)](#cheng-kim-shan) | Chinese medicine practitioner | named in a clearance file dated 1989-1991 | not known |  |
 | [Cheng Koon Yiu](#cheng-koon-yiu) | dentist | school in the City from about age 8 or 9; dental apprentice from age 14; in the City again from 1963 until the clearance | yes | 249:0:0 (G/F, Cheng Koon Yiu's dental clinic) |
-| [Cheng San](#cheng-san) | wooden-ruler maker | 1968-1990: factory on Tai Chang Street, where he also lived and slept | yes | 67:0:0 (G/F, Cheng San's ruler factory) |
+| [Cheng Ling Sang (鄭凌生)](#cheng-ling-sang) | dentist | named in a clearance file dated 1992 | not known | 257:0:0 (G/F, Cheng Ling Sang Dentistry) |
+| [Cheng San](#cheng-san) | wooden-ruler maker | 1968-1990: factory on Tai Chang Street, where he also lived and slept | yes | 67:0:0 (G/F, Cheng San's ruler factory); 111:0:2 (G/F, Pak Hop Ruler Factory) |
+| [Cheung Ting Wan (張挺華)](#cheung-ting-wan) | doctor | named in a clearance file dated 1989-1991 | not known | 14:1:1 (1/F, 張挺華診所) |
+| [Chong Tin Lai (莊天麗)](#chong-tin-lai) | dentist | named in a clearance file dated 1988-1991 | not known | 14:0:0 (G/F, 莊天麗牙科) |
+| [Chu Yiu Shan (朱耀山)](#chu-yiu-shan) | property agent | born 1951; grew up in the City and spent much of his adult life there; moved to Junk Bay when the clearance was announced (January 1987) | yes | 111:0:1 (G/F, 恒暉地產) |
 | [Chung Lo Ying](#chung-lo-ying) | mother of 10 | from 1958 to at least the time of the interview (more than 30 years); more than 10 years in the 4/F flat | yes | 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road); 222:1:0 (1/F, Chung family's first-floor flat in the new building) |
 | [Chung Yuk Yee](#chung-yuk-yee) | daughter, mother of two | 1961-1991: born in the City; moved out during the clearance in 1991 | yes | 263:12:0 (12/F, Chung Yuk Yee's flat); 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road) |
+| [Fong Yuk Shing (方玉成)](#fong-yuk-shing) | dentist | named in a clearance file dated 1992 | not known | 124:0:0 (G/F, Fong Yuk Shing Dentistry) |
 | [Ho Chi Kam](#ho-chi-kam) | barber | lived in a flat on Tung Tau Tsuen Road from 1974; ran the barber's shop at 10 Tai Chang Street from 1985 to 1991 | yes | 201:0:0 (G/F, Ho Chi Kam's barber's shop); 0:11:3 (11/F, Ho Chi Kam's flat on Tung Tau Tsuen Road); 186:0:2 (G/F, Ho Chi Kam's barber shop) |
+| [Ho Yin (何賢)](#ho-yin) | dentist | named in a clearance file dated 1990-1992 | not known | 230:0:0 (G/F, Ho Yin Dentistry) |
 | [Hui Kwong](#hui-kwong) | Chiu Chow music player | in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991 | yes | 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
 | [Hui Tung Choy](#hui-tung-choy) | noodle maker | From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City | yes | 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat) |
 | [Jackie Pullinger (潘靈卓)](#jackie-pullinger) | missionary | worked in the City from 1973 ('The Well') until shortly after the clearance announcement; she did not live there | yes | 254:0:3 (G/F, Shuiyuan youth centre (Jackie Pullinger)); 237:0:0 (G/F, St Stephen's Society) |
 | [Jetly Chau Sau Yee](#chau-sau-yee) | Chiu Chow cake maker | worked in the City; bought the shop before he heard of the demolition plan (the clearance was announced in 1987); no start year given | yes | 11:2:0 (2/F, Jetly Chau's Chiu Chow cake shop) |
 | [Kwok Lau Hing](#kwok-lau-hing) | retired office cleaner | Never a resident of the City itself; lived at 5C Sai Tau New Street, a settlement on its outskirts, from her 30s until the settlement's clearance (decided for 1985); later a regular visitor to the Old People's Centre | no | 172:2:1 (2/F, Old People's Centre); 82:1:5 (1/F, Kwok Lau Hing's home) |
+| [Kwok Tsan Ming](#kwok-tsan-ming) | fishball factory worker |  | not known | 80:0:0 (G/F, Fishball factory off Kwong Ming Street) |
+| [Lai Woon Sun (黎煥新)](#lai-woon-sun) | dentist | named in a clearance file dated 1993-1994 | not known | 115:0:2 (G/F, Lai Woon Sun Dentistry) |
+| [Lam Hong-Tin](#lam-hong-tin) | business claimant | named in a clearance file dated 1989-1990 | not known | 109:8:2 (8/F, 8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street) |
+| [Lam Hung (林洪)](#lam-hung-g142) | business claimant | named in a clearance file dated 1988-1989 | not known | 214:0:1 (G/F, 林洪) |
+| [Lam Hung](#lam-hung-g186) | bonesetter | named in a clearance file dated 1989-1992 | not known | 28:2:0 (2/F, Lam Hung Bone Setter) |
 | [Lam Leung Po](#lam-leung-po) | minced-fish factory partner | partner in the factory in the City from 1983 until the clearance | yes | 247:0:0 (G/F, Leun Hing Food Company) |
 | [Lam Mei Kwong](#lam-mei-kwong) | retired dentist | in the City from 1949 to the late 1980s; at 4A Lung Shing Road almost continuously | yes | 101:0:0 (G/F, Lam Mei Kwong dental clinic); 111:3:0 (3/F, Lam Mei Kwong's home / former dental surgery) |
 | [Lam Po-chun (林寶鎮)](#lam-po-chun) | postman | worked inside 1979-1991 | yes | 45:0:2 (G/F, Store on Lo Yan Street (postman's base)) |
+| [Lam Sam Yuk](#lam-sam-yuk) | dentist | named in a clearance file dated 1987-1994 | not known | 20:0:0 (G/F, Lam Sam Yuk Dentistry) |
+| [Lam Shu Chuen](#lam-shu-chuen) | Kai Fong officer, manufacturer | from early childhood, before the War, for more than 50 years, to the clearance | yes |  |
 | [Lam Tseng Yat](#lam-tseng-yat) | grocer | From 1947, when the family opened the store, to the interview; he said that the shop had existed for more than 40 years | yes | 84:0:2 (G/F, Lam family grocery); 111:1:0 (1/F, Lam family flat, first floor); 111:4:0 (4/F, Lam family flat, fourth floor) |
 | [Lam Yin Ming](#lam-yin-ming) | last holdout | until 1992 (years not given) | not known |  |
+| [Lau Fat Mau](#lau-fat-mau) | business claimant | named in a clearance file dated 1992 | not known | 205:1:1 (1/F, Lau Fat Mau) |
+| [Lau Moon Wah (劉滿華)](#lau-moon-wah) | dentist | named in a clearance file dated 1989-1991 | not known | 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun) |
+| [Lau Wing (羅宋榮)](#lau-wing) | doctor | named in a clearance file dated 1989-1991 | not known | 14:1:1 (1/F, 張挺華診所) |
 | [Lau Yeung Yin](#lau-yeung-yin) | weaving factory owner | born in the City; ran his factory on Sai Shing (West City) Road from 1982 | yes | 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory) |
+| [Law Hoi-cheung (羅開祥)](#law-hoi-cheung) | service centre claimant | named in a clearance file dated 1988-1991 | not known | 117:0:0 (G/F, LAW Hoi-cheung) |
 | [Law Kim Kwong](#law-kim-kwong) | cake maker | Resident in the City for 20 years (at the time of the photograph; the book gives no year) | not known | 219:0:0 (G/F, Law Kim Kwong's bakery) |
 | [Law Yu Yi](#law-yu-yi) | retired maid | in the City for 28 years at the time of the caption, when she was 90; the years are not given | yes | 186:3:0 (3/F, Law Yu Yi's flat); 250:4:1 (4/F, Law Yu Yi's son's flat) |
 | [Lee Pui Yuen](#lee-pui-yuen) | shopkeeper | 1964-1991: about 15 years in the City before 1979, then 12 years at his store | yes | 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store) |
+| [Lee Wai Kwan (李偉群)](#lee-wai-kwan) | dentist | named in a clearance file dated 1990-1993 | not known | 115:0:0 (G/F, 李偉群牙科) |
 | [Lee Yu Chun](#lee-yu-chun) | candy maker | worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s | yes | 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory) |
+| [Lee Yuk Ha](#lee-yuk-ha) | newspaper vendor | named in a clearance file dated 1992 | not known |  |
+| [Li Ching Wa (李靜華)](#li-ching-wa) | commercial storage claimant | named in a clearance file dated 1992 | not known | 235:11:1 (11/F, 李靜華) |
+| [Li Mau (李謀)](#li-mau) | Western-medicine doctor | named in a clearance file dated 1988-1995 | not known | 14:1:0 (1/F, Li Mau Clinic) |
+| [Liu Kwan (廖坤)](#liu-kwan) | acupuncture doctor | named in a clearance file dated 1989-1992 | not known | 19:1:0 (1/F, Liu Kwan China New Medical Clinic) |
+| [Liu Kwok Sum (廖廣森)](#liu-kwok-sum) | bonesetter | named in a clearance file dated 1990-1992 | not known | 262:3:0 (3/F, Liu Kwok Sum Bonesetter & Gymnasium); 249:0:1 (G/F, Liu Kwok Sum Bonesetter) |
+| [Lo Ming Tak (羅明德)](#lo-ming-tak) | Chinese herbalist | named in a clearance file dated 1988-1992 | not known | 30:4:0 (4/F, 國醫羅明德) |
+| [Lui Man Sang](#lui-man-sang) | senior postman | postman in the City from about 1979 to the end of the 1980s (Lam Po Chun's account); the book does not say where he lived | yes | 45:0:2 (G/F, Store on Lo Yan Street (postman's base)) |
+| [Ma Chong Chung (馬創忠)](#ma-chong-chung) | dentist | named in a clearance file dated 1992 | not known | 30:0:3 (G/F, 馬創忠牙科) |
+| [Mak Chiu (麥釗)](#mak-chiu) | dentist | named in a clearance file dated 1991-1992 | not known | 2:4:0 (4/F, Mak Chiu Dentistry) |
+| [Mak Yue Kong (麥汝剛)](#mak-yue-kong) | dental technician | named in a clearance file dated 1992 | not known | 251:0:0 (G/F, Mak Yue Kong Dental Techician) |
+| [Mak Yue Kwan (麥汝鋆)](#mak-yue-kwan) | dentist | named in a clearance file dated 1992 | not known | 168:0:0 (G/F, 麥汝鋆牙科) |
 | [Mr Lau (劉先生)](#mr-lau) | resident from age six | from age 6 (about 1949) to the clearance, at age 47 (HK01) | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
+| [Mr Shum](#mr-shum) | won tun pastry maker | worked in the City at the time of the photographs (c.1990); the book gives no years | not known | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
 | [Mrs Lau (劉太)](#mrs-lau) | resident | from adulthood (year not given) to the clearance (HK01) | yes |  |
+| [Mrs Law](#mrs-law) | child-minding grandmother |  | not known |  |
 | [Ng Kam Mui](#ng-kam-mui) | Chung Fat Café worker | lived or worked at the Chung Fat Café for nearly 30 years, from its opening in the 1960s to its closure in 1991 | yes | 31:0:0 (G/F, Chung Fat Café); 31:0:2 (G/F, Chung Fat Café cockloft); 12:2:0 (2/F, Ng family's two storeys in the 11-storey building) |
+| [Ng Mei Kin (吳美堅)](#ng-mei-kin) | dentist | named in a clearance file dated 1991 | not known | 236:0:0 (G/F, Ng Mei Kin Dentistry) |
+| [Ng Ping Wai](#ng-ping-wai) | doctor | named in a clearance file dated 1989-1991 | not known | 32:6:2 (6/F, Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen ) |
+| [Ngai Heung Chuen (魏香泉)](#ngai-heung-chuen) | dentist | named in a clearance file dated 1988-1991 | not known | 32:4:2 (4/F, 魏香泉牙科) |
 | [Paul Tang Kam-cheung (鄧金祥)](#paul-tang-kam-cheung) | former triad, later pastor | 1948-1979 | no |  |
 | [Reverend Isaac Liu](#isaac-liu) | missionary | Worked in the City from his seminary years in the 1950s and visited it often from the mid-1950s; lived in the City from 1971; left the Yamen premises in 1991 | yes | 266:0:0 (G/F, Yamen (CNEC Living Word Church compound)); 172:2:1 (2/F, Old People's Centre); 269:0:0 (G/F, Rev. Isaac Liu's mission) |
 | [Simon Wong](#simon-wong) | Salvation Army officer | Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968 | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
+| [Siu Ping Lung (蕭秉隆)](#siu-ping-lung) | dentist | named in a clearance file dated 1992-1993 | not known | 2:0:4 (G/F, 蕭秉隆牙科) |
+| [Siu Ping Sing (蕭秉陞)](#siu-ping-sing) | dentist | named in a clearance file dated 1991-1992 | not known | 2:0:0 (G/F, 蕭秉陞牙科) |
 | [To Gui Bon](#to-gui-bon) | rubber-plunger maker | about 25 years of work in the City ('more than 20 years' at one spot), until the clearance | yes | 195:0:0 (G/F, To Gui Bon's rubber factory) |
+| [Tsang Chi Wai (曾志偉)](#tsang-chi-wai) | dentist | named in a clearance file dated 1990-1992 | not known | 3:0:1 (G/F, Tsang Chi Wai Dentistry) |
+| [Tsang Keong](#tsang-keong) | dentist | named in a clearance file dated 1988-1992 | not known | 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun) |
+| [Tse Choi Kwan](#tse-choi-kwan) | fur worker | named in a clearance file dated 1988-1991 | not known | 24:3:0 (3/F, Tse Choi Kwan Fur Workshop) |
+| [Tse Hon Keung (謝漢強)](#tse-hon-keung) | dentist | named in a clearance file dated 1992 | not known | 18:0:0 (G/F, Tse Hon Keung Dentistry) |
+| [Tse Ma Ming](#tse-ma-ming) | business claimant | named in a clearance file dated 1990-1992 | not known | 4:6:4 (6/F, Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau) |
 | [Tsin Mu Lam](#tsin-mu-lam) | doctor | 1973 to 1992 (clinic and home); his father practised in the City in the 1950s and 1960s | yes | 4:2:3 (2/F, Tsin Mu Lam's clinic) |
 | [Wang Ching](#wang-ching) | plastic factory owner | until 1992 (years not given) | not known |  |
 | [Wong Chan Pui-wah (黃陳佩華)](#wong-chan-pui-wah) | garment-factory worker |  | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
+| [Wong Chun Wah (黃振華)](#wong-chun-wah) | dentist | named in a clearance file dated 1992 | not known | 109:4:2 (4/F, Wong Chun Wah Dentistry) |
 | [Wong Chun-ping (王鎮平)](#wong-chun-ping) | fishball maker's son | 1972-1983 (WSJ fact box) | no |  |
 | [Wong Hoi Ming](#wong-hoi-ming) | herbal doctor | no years given: from his move from Hong Kong Island until the clearance | not known | 104:0:0 (G/F, Wong Hoi Ming Bonesetter) |
+| [Wong Mei Yue (黃美如)](#wong-mei-yue) | dentist | named in a clearance file dated 1991-1992 | not known | 115:0:3 (G/F, 黃美如牙科) |
+| [Wong Wai Kuen (王偉權)](#wong-wai-kuen) | dentist | named in a clearance file dated 1992 | not known | 40:0:0 (G/F, Wong Wai Kuen Dentistry) |
 | [Wong Yu Ming](#wong-yu-ming) | dentist | lived and worked in his clinic on Lung Shing Road from the late 1950s; 'nearly 30 years' at the interview (about 1989) | yes | 140:0:0 (G/F, Wong Yu Ming's dental surgery (Cheung Mei in the shop)) |
+| [Wong Yuen Heung (黃源香)](#wong-yuen-heung) | business claimant | named in a clearance file dated 1988-1992 | not known | 38:0:2 (G/F, 黃源香) |
 | [Wong Yum-fai (王欽輝)](#wong-yum-fai) | fishball maker | 1972-1983 (WSJ fact box); the WSJ video says 30 years | no |  |
+| [Yan Wing Tak (甄榮德)](#yan-wing-tak) | dentist | named in a clearance file dated 1989-1992 | not known |  |
+| [Yau Ka Sut (邱家瑟)](#yau-ka-sut) | Western-medicine doctor | named in a clearance file dated 1989-1992 | not known | 32:0:3 (G/F, 西醫邱家瑟) |
 | [Yau Lap Cheong](#yau-lap-cheong) | retired shopkeeper | near and in the City from 1928 to 1990 | yes | 218:6:1 (6/F, Yau Lap Cheong's one-room flat) |
 | [Yeung Lai-wan (楊麗雲)](#yeung-lai-wan) | dim sum hawker | 1959-1981 | no |  |
-| [Yim Kwok Yuen](#yim-kwok-yuen) | roast-meat maker | from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance | yes | 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop) |
+| [Yim Kwok Yuen](#yim-kwok-yuen) | roast-meat maker | from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance | yes | 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop); 181:0:0 (G/F, Kwok Kee Roasted Meat) |
 | [Yip Tak-wai (葉德偉)](#yip-tak-wai) | residents' association head | from 1976 (flat bought; SCMP 2013) to the clearance (HK01) | yes |  |
+| [Yip Wa Man (葉華民)](#yip-wa-man) | dentist | named in a clearance file dated 1989-1992 | not known | 2:0:1 (G/F, King's Dental Lab + Yip Wa Man Dentist) |
 | [Yu Hing Wan](#yu-hing-wan) | muslin maker | 18 years, as "a long-term resident"; the caption gives no dates | not known | 174:0:0 (G/F, Yu Hing Wan's muslin factory) |
+| [姚正明](#grs-g128) | fur coat maker | named in a clearance file dated 1988-1991 | not known |  |
+| [廖理](#grs-g130) | drilling subcontractor | named in a clearance file dated 1988-1991 | not known | 192:3:2 (3/F, 廖理) |
+| [曾紀尉](#grs-g135) | jewellery maker | named in a clearance file dated 1988-1990 | not known | 91:8:3 (8/F, 曾紀尉 (首飾) |
+| [李就](#grs-g129) | watch-case etcher | named in a clearance file dated 1988-1990 | not known | 167:0:0 (G/F, 錶殼蝕刻) |
+| [李漢明](#grs-g131) | lunch-box workshop claimant | named in a clearance file dated 1988-1990 | not known |  |
+| [李靜瑜](#grs-g179) | Chinese-medicine doctor | named in a clearance file dated 1988-1992 | not known | 34:2:0 (2/F, 李靜瑜醫務所(中醫) |
+| [林惠珠](#grs-g127) | Chiu Chow dim-sum maker | named in a clearance file dated 1988-1990 | not known | 13:1:1 (1/F, 潮州點心) |
 | [林羅平](#fishball-wholesaler-hk01) | fishball maker | worked in the City from his Primary 3 years; own shop from 1983 to the clearance; lived outside in Lok Fu (HK01 2024) | yes | 66:0:0 (G/F, 林羅平's fishball workshop (德興魚蛋公司) on Kwong Ming Street) |
+| [羅釗林](#grs-g136) | business claimant | named in a clearance file dated 1988-1991 | not known | 20:4:1 (4/F, 羅釗林) |
 | [芬姐](#store-keepers-daughter-hk01) | store keeper's daughter | from her childhood; inside on 14 Jan 1987; moved out at the clearance (HK01) | yes |  |
+| [莊裕宏](#grs-g144) | dog-room (狗房) keeper | named in a clearance file dated 1988-1990 | not known | 244:7:2 (7/F, 莊裕宏狗房) |
+| [鄭炎創](#grs-g143) | garment workshop claimant | named in a clearance file dated 1988-1990 | not known | 32:4:3 (4/F, 鄭炎創) |
 | [阿榮](#childhood-resident-hk01) | childhood resident | from his birth (his parents came in the early 1950s) to the age of 20 | no |  |
+| [陳廷乾](#grs-g124) | Lo Mei Workshop claimant | named in a clearance file dated 1992 | not known | 263:5:0 (5/F, Lo Mei Workshop) |
+| [陳鎮波](#grs-g125) | Lo Mei Workshop claimant | named in a clearance file dated 1992 | not known | 263:5:0 (5/F, Lo Mei Workshop) |
+| [黃照垣](#grs-g180) | Chinese-medicine doctor | named in a clearance file dated 1988-1991 | not known | 43:1:0 (1/F, 黃照垣中醫) |
+| [黃錫榮](#grs-g132) | lunch-box workshop claimant | named in a clearance file dated 1988-1990 | not known |  |
 
 ## Albert Ng Kam-po (吳錦波)
 
@@ -70,6 +142,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Room A, 7/F, 8 Sz Kung St."
 - Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng', by Christopher KL Lau (undated), https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city: "I lived on the eighth floor and there was no elevator."
 
+## Chan Che Ming (陳子明)
+
+<a id="chan-che-ming"></a>**dentist.** Chan Che Ming (陳子明) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-3, dated 1992, that names this person. Its catalogue entry reads: “1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, 74 Lung Chun Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 265:1:0 (1/F, 陳子明牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-3: "1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科"
+
 ## Chan Cheung-chuen (陳祥全)
 
 <a id="chan-cheung-chuen"></a>**map maker, tenant.** Chan Cheung-chuen (陳祥全) was a tenant in the Walled City with his wife. HK01 says that the couple left a partitioned room in Kowloon City (九龍城) in 1979. In the City, a rent of about HK$800 got them a whole flat. He said that it was at least a space of their own. WSJ gives his years inside as 1985-1991 and a household of three. His first home was Room B, 12/F, 31 Tung Tau Tsuen Road (東頭村道). Later the family rented Room 2, 11/F, 16 Tung Tau Tsuen Road. The rent went from HK$800-900 a month to HK$1,100. As an engineering student, he spent four months on a hand-drawn map of the City. He walked its dark, dripping alleys, none of them wider than three feet. He finished the map in March 1987, two months after the government announced the clearance. He paid little attention to the clearance because he was only a tenant.
@@ -80,6 +161,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Chan Cheung-chuen spent four months making a hand-drawn map of the Walled City while he was an engineering student."
 - HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "陳存全與妻子倆原居九龍城的板間房，與鄰居多磨擦，1979年遷入城寨，房租約莫800元"
 - HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我沒有用心理會清拆，因為我只是個租客"
+
+## Chan Hay Sing (陳喜星)
+
+<a id="chan-hay-sing"></a>**dentist.** Chan Hay Sing (陳喜星) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-72, dated 1989-1993, that names this person. Its catalogue entry reads: “G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 126 Lung Chun Road
+- In the City: named in a clearance file dated 1989-1993
+- Rooms in the model (building:floor:unit): 247:0:0 (G/F, Chan Hay Sing Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-72: "G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)"
 
 ## Chan Hip Ping
 
@@ -92,6 +182,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p178: "his work as Vice-President of the Kai Fong Association, a position he had held since 1966."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p180: "more than 3000 residents came to the KFA to express their concerns. At the peak, we were holding nine meetings a day."
 
+## Chan Hon Fung (陳漢豐)
+
+<a id="chan-hon-fung"></a>**fruit store keeper.** Chan Hon Fung (陳漢豐) was a fruit store keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-342A (ledgers -343 to -345), dated 1990-1992; ledgers 1987-1995, that names this person. Its catalogue entry reads: “G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 2B Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1990-1992; ledgers 1987-1995
+- Rooms in the model (building:floor:unit): 0:0:3 (G/F, 陳漢豐鮮菓士多)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-342A (ledgers -343 to -345): "G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)"
+
 ## Chan Kwan Leung
 
 <a id="chan-kwan-leung"></a>**pigeon breeder.** Chan Kwan Leung grew up in the first resettlement estates at Shek Kip Mei, and later in the New Territories. His parents were teachers. At 24 he worked for the Hong Kong Telephone Company and left his parents' house. In 1981 he moved into the Walled City, where he bought a flat for $68,000. He met his wife there. Her mother gave him a pigeon, and soon he kept many birds. In about 1981 or 1982 he built cages on the roof of his building. The owner of the flat below agreed, but other people complained. He quit his job to care for the birds, and at one stage he had more than 1000. He did not tell his wife or his parents. He bought and sold pigeons and started a pigeon-racing club with friends. The club raced birds from Shanghai and other places in China. In January 1987 the Housing Department registered him as a resident and announced the clearance. On that day he decided to close his pigeon business.
@@ -103,6 +202,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p318: "Chan Kwan Leung moved into the Walled City in 1981, while working for Hongkong Telecom."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p319: "I think it was around 1981 or '82 when I built my pigeon cages on the roof."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p320: "the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
+
+## Chan Kwok Cheung (陳國祥)
+
+<a id="chan-kwok-cheung"></a>**dentist.** Chan Kwok Cheung (陳國祥) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-52, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 108 Lung Chun Road
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 261:0:0 (G/F, 牙醫陳國祥)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-52: "G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)"
 
 ## Chan Kwong
 
@@ -127,6 +235,14 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I sold mainly herbs, but provided medical consultations as well."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I live high up where I can see the sea and the sights at night, and it has plenty of fresh air."
 
+## Chan Shing
+
+<a id="chan-shing"></a>**private water supplier.** Chan Shing was one of the 70 or so private water suppliers of the Walled City. He collected the monthly charges from his customers himself. Sometimes he waived the charge for the elderly. He said: "we are all poor people here and we should help each other". His pump was usually hidden behind a floor panel. At various times he switched it on to fill a large storage tank on the roof. The book gives him only in a photo caption, with no address or dates.
+
+- Work: his water pump room (no address in the book)
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "One of the City's 70 or so private water suppliers, Chan Shing collected monthly charges personally from his customers"
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "we are all poor people here and we should help each other"
+
 ## Chan Wai Shui
 
 <a id="chan-wai-shui"></a>**noodle maker.** Chan Wai Shui came to Hong Kong from China in 1947, at the age of 18. He learned the noodle business from his uncle. His old premises in Wang Tau Hom were demolished for the MTR. Thus in 1979 he bought a factory on Lo Yan Street (老人街) for $200,000. Prices outside the Walled City were too high for his small business. He registered the purchase with the Welfare Association and needed no licences. At first there was no electricity, so he arranged for cables. Four partners from before the move worked there about nine hours a day from 8am. His co-workers included Mr Shum and Kwan Tsin On. They made egg noodles and won tun pastry from about 10 bags of flour a day. They delivered by car every day to 40 or 50 regular customers. Chan did not live in the City and seldom slept in the factory. He came only to earn a living. He ran the factory for more than 10 years. He was not sure that the compensation was enough for a new factory.
@@ -138,6 +254,42 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p226: "I set up this factory in the Walled City in 1979, after my old premises in Wang Tau Hom were demolished"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p228: "I seldom sleep in the factory overnight and I have not thought of living here just for the convenience of coming to work."
 
+## Chan Wing Lan
+
+<a id="chan-wing-lan"></a>**doctor.** Chan Wing Lan was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-310, dated 1989-1992, that names this person. Its catalogue entry reads: “1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, 19 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 21:1:0 (1/F, Dr. CHAN WING LAN)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-310: "1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN"
+
+## Chan Yin Chor (陳燕初)
+
+<a id="chan-yin-chor"></a>**dentist.** Chan Yin Chor (陳燕初) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-118, dated 1991, that names this person. Its catalogue entry reads: “G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 150 Lung Chun Road
+- In the City: named in a clearance file dated 1991
+- Rooms in the model (building:floor:unit): 254:0:2 (G/F, 陳燕初牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-118: "G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科"
+
+## Chang Long Leung (張朗良)
+
+<a id="chang-long-leung"></a>**business claimant.** Chang Long Leung (張朗良) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-528, dated 1990-1991, that names this person. Its catalogue entry reads: “G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F + M/F, 26 Kwong Ming Street
+- In the City: named in a clearance file dated 1990-1991
+- Rooms in the model (building:floor:unit): 98:0:0 (G/F, Chang Long Leung)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-528: "G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)"
+
+## Chau Kwan Hing (周坤興)
+
+<a id="chau-kwan-hing"></a>**roast-meat stall keeper.** Chau Kwan Hing (周坤興) was a roast-meat stall keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-244 (ledger -245), dated 1988-1992, that names this person. Its catalogue entry reads: “Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat 5, 2/F (also known as 6/F), 31B Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1992
+- Rooms in the model (building:floor:unit): 24:2:2 (2/F, also known as 6/F)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-244 (ledger -245): "Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊"
+
 ## Chau Pak
 
 <a id="chau-pak"></a>**storekeeper.** Chau Pak was a storekeeper in the Walled City. The book names him only in the index of its map. Anna Dalgliesh drew the map in 1992. The index gives no page number for him. The repo has no interview or caption about him. The map shows the City in the late 1980s, at about the time of the clearance announcement. It marks his place as number 5, beside number 29, the Salvation Army Kindergarten. The repo's facts place his store on Lung Chun Back Road, but that is a guess from the map. The book says that the map is not entirely accurate. The sources give nothing about his home, his family or his years in the City.
@@ -147,6 +299,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Rooms in the model (building:floor:unit): 196:0:0 (G/F, Chau Pak's store)
 - City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), index, p353: "5 Chau Pak storekeeper"
 - City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), caption, p353: "a good represenation of the Walled City's layout in the late 1980s, at about the time that the City's clearance was announced"
+
+## Cheng Kim Shan (鄭劍山)
+
+<a id="cheng-kim-shan"></a>**Chinese medicine practitioner.** Cheng Kim Shan (鄭劍山) was a Chinese medicine practitioner in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-71A, dated 1989-1991, that names this person. Its catalogue entry reads: “Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館”. The catalogue gives no other facts about this person's life.
+
+- In the City: named in a clearance file dated 1989-1991
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-71A: "Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館"
 
 ## Cheng Koon Yiu
 
@@ -160,6 +319,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "after a while, building work started next door and we moved to the clinic here."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "it has gone up gradually over the years and, since 1987, it has been $2000."
 
+## Cheng Ling Sang (鄭凌生)
+
+<a id="cheng-ling-sang"></a>**dentist.** Cheng Ling Sang (鄭凌生) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-34, dated 1992, that names this person. Its catalogue entry reads: “G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F with a cockloft, 94 Lung Chun Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 257:0:0 (G/F, Cheng Ling Sang Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-34: "G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)"
+
 ## Cheng San
 
 <a id="cheng-san"></a>**wooden-ruler maker.** Cheng San was a seaman. At the end of 1967, at about 40, he came back to live in Hong Kong, on the Ngau Tau Kok housing estate. He had six children. He knew no trade, so on a relative's advice he started to make rulers. He first rented a factory on Ko Shan Road. In 1968 he moved to bigger, cheaper premises of about 600 square feet on Tai Chang Street (大井街) in the Walled City. He sawed wood from Borneo by machine and painted the rulers. His daughter printed the measurements upstairs. He once had seven or eight workers and sold to Singapore and Malaysia. Later he worked alone, mostly for local and Macau buyers. He often worked from about 10am until midnight or later. He slept in the factory every night to keep drug addicts from stealing. His wife delivered rulers, and his sons carried the wood. He joined a local association that objected to low compensation. He moved out in 1990.
@@ -167,10 +335,39 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: his factory on Tai Chang Street (大井街), where he stayed every night; the family flat was outside the City (the book does not say where)
 - Work: his wooden-ruler factory, about 600 square feet, on Tai Chang Street (大井街), 1968-1990
 - In the City: 1968-1990: factory on Tai Chang Street, where he also lived and slept
-- Rooms in the model (building:floor:unit): 67:0:0 (G/F, Cheng San's ruler factory)
+- Rooms in the model (building:floor:unit): 67:0:0 (G/F, Cheng San's ruler factory); 111:0:2 (G/F, Pak Hop Ruler Factory)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "Cheng San set up his small factory on Tai Chang Street, in the City, in 1968."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I saw the wood, which comes from Borneo, by machine and my daughter prints the measurements on upstairs."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I have to stay here at night otherwise the drug addicts would steal everything."
+
+## Cheung Ting Wan (張挺華)
+
+<a id="cheung-ting-wan"></a>**doctor.** Cheung Ting Wan (張挺華) was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-186, dated 1989-1991, that names this person. Its catalogue entry reads: “1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F Front Block, 35 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1991
+- Rooms in the model (building:floor:unit): 14:1:1 (1/F, 張挺華診所)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)"
+
+## Chong Tin Lai (莊天麗)
+
+<a id="chong-tin-lai"></a>**dentist.** Chong Tin Lai (莊天麗) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-187, dated 1988-1991, that names this person. Its catalogue entry reads: “G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 35 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 14:0:0 (G/F, 莊天麗牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-187: "G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry"
+
+## Chu Yiu Shan (朱耀山)
+
+<a id="chu-yiu-shan"></a>**property agent.** Chu Yiu Shan was born in 1951 and grew up in the Walled City. His parents ran a store. At about 13 he delivered drinks to nearby places, some of them opium, gambling and sex-show dens. Later he became an intermediary between the sellers and buyers of flats, because he had seen much cheating. As a long-time resident, he could find out who the real owners were. He said that his property business became the biggest in the City and earned him about $20,000 a month. He saw water as the main hardship of the residents. He moved to Junk Bay when the clearance was announced. The GRS clearance file of his firm, Hang Fai Property Co., gives his Chinese name as 朱耀山 and the firm's address as 17 Tai Chang Street (大井街).
+
+- Work: Hang Fai Property Co., G/F and cockloft, 17 Tai Chang Street (大井街) (GRS file)
+- In the City: born 1951; grew up in the City and spent much of his adult life there; moved to Junk Bay when the clearance was announced (January 1987)
+- Rooms in the model (building:floor:unit): 111:0:1 (G/F, 恒暉地產)
+- City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "Born in 1951, Chu Yiu Shan was brought up and spent much of his adult life in the Walled City."
+- City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "I used to earn around $20,000 a month through my property business, which became the biggest in the Walled City."
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-256: "G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co."
 
 ## Chung Lo Ying
 
@@ -194,6 +391,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p159: "Chung Yuk Yee's windowless flat was in the bowels of the City. Just 230 square feet in area, it was divided into two rooms"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "Once, I actually saw a rat run over my baby daughter's bed."
 
+## Fong Yuk Shing (方玉成)
+
+<a id="fong-yuk-shing"></a>**dentist.** Fong Yuk Shing (方玉成) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-370, dated 1992, that names this person. Its catalogue entry reads: “G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 29B Lung Shing Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 124:0:0 (G/F, Fong Yuk Shing Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-370: "G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)"
+
 ## Ho Chi Kam
 
 <a id="ho-chi-kam"></a>**barber.** Ho Chi Kam was a barber. He read about a flat in the Sing Pao Daily News (成報) and bought it. He moved in at the start of 1974. The flat was on Tung Tau Tsuen Road (東頭村道), thus he had no reason to go inside the City. The book says that he lived in the City long before 1985. Before 1985 he worked as a barber for other people. Then a friend offered him the barber's shop at 10 Tai Chang Street (大井街). He borrowed money and took it over in 1985. After that he came into the City every day. The shop stood near the only Government standpipe inside the City. He and his wife both worked there. Most customers were local residents, and the shop was cheaper than barbers outside. When the City was to be demolished, he went back to work for others. He came to the shop only on Wednesdays, his day off. The shop closed in 1991.
@@ -205,6 +411,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p28: "Ho Chi Kam only took over the running of the barber's shop at 10 Tai Chang Street in 1985."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p28: "The flat is on the Tung Tau Tsuen Road, so I didn't really have to come inside the City"
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p29: "The shop eventually closed in 1991, shortly before the start of phase two of the clearance."
+
+## Ho Yin (何賢)
+
+<a id="ho-yin"></a>**dentist.** Ho Yin (何賢) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-391, dated 1990-1992, that names this person. Its catalogue entry reads: “G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F & Cockloft, 4 Lung Shing Road
+- In the City: named in a clearance file dated 1990-1992
+- Rooms in the model (building:floor:unit): 230:0:0 (G/F, Ho Yin Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-391: "G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)"
 
 ## Hui Kwong
 
@@ -263,6 +478,50 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "So we bought a small flat on the second floor of 5C Sai Tau New Street, the settlement on the outskirts of the City."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "I was working for the Jardine Airline Company as a cleaner and general office woman."
 
+## Kwok Tsan Ming
+
+<a id="kwok-tsan-ming"></a>**fishball factory worker.** Kwok Tsan Ming worked in a small fishball factory off Kwong Ming Street (光明街). A photo shows him as he ladles a batch of fried fishballs into a basket. The caption says that most of the City's fishball makers were in that area. The book gives no other facts about his life.
+
+- Work: a small fishball factory off Kwong Ming Street (光明街)
+- Rooms in the model (building:floor:unit): 80:0:0 (G/F, Fishball factory off Kwong Ming Street)
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p290: "Employee Kwok Tsan Ming (below) ladles a batch of fried fishballs into a basket in a small factory off Kwong Ming Street"
+
+## Lai Woon Sun (黎煥新)
+
+<a id="lai-woon-sun"></a>**dentist.** Lai Woon Sun (黎煥新) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-415, dated 1993-1994, that names this person. Its catalogue entry reads: “G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 22 Lung Shing Road
+- In the City: named in a clearance file dated 1993-1994
+- Rooms in the model (building:floor:unit): 115:0:2 (G/F, Lai Woon Sun Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-415: "G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)"
+
+## Lam Hong-Tin
+
+<a id="lam-hong-tin"></a>**business claimant.** Lam Hong-Tin was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-468, dated 1989-1990, that names this person. Its catalogue entry reads: “8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin”. The catalogue gives no other facts about this person's life.
+
+- Work: 8/F, Rear Portion, 28 Lo Yan Street
+- In the City: named in a clearance file dated 1989-1990
+- Rooms in the model (building:floor:unit): 109:8:2 (8/F, 8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-468: "8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin"
+
+## Lam Hung (林洪)
+
+<a id="lam-hung-g142"></a>**business claimant.** Lam Hung (林洪) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-254, dated 1988-1989, that names this person. Its catalogue entry reads: “56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung”. The catalogue gives no other facts about this person's life.
+
+- Work: M/F, Block F (mezzanine), 56 Lung Chun Road
+- In the City: named in a clearance file dated 1988-1989
+- Rooms in the model (building:floor:unit): 214:0:1 (G/F, 林洪)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-254: "56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung"
+
+## Lam Hung
+
+<a id="lam-hung-g186"></a>**bonesetter.** Lam Hung was a bonesetter in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-546, dated 1989-1992, that names this person. Its catalogue entry reads: “2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)”. The catalogue gives no other facts about this person's life.
+
+- Work: 2/F, 39 Kwong Ming Street
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 28:2:0 (2/F, Lam Hung Bone Setter)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-546: "2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)"
+
 ## Lam Leung Po
 
 <a id="lam-leung-po"></a>**minced-fish factory partner.** Lam Leung Po became a partner in a minced-fish factory in 1983. The factory was in an alley off Tai Chang Street (大井街), close to the one Government standpipe in the City. Before that, the business was just outside the City, in the Sai Tau Tsuen (西頭村) squatter village, until the village came down. Lam joined the business after it moved into the City. The shop measured about 480 square feet. Rent in the City was cheaper, and the hygiene rules gave less trouble. Nobody asked for protection money, and no hygiene inspector ever came. The factory made minced fish, eel dumplings and squidballs. It made about 300 catties of minced fish a day. Five full-time workers worked with Lam and his partner, and a few neighbour ladies made dumplings part-time. Most customers came from outside the City. The factory sold minced fish to over 200 shops.
@@ -296,6 +555,25 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "The area’s only other postman, Mr. Lam’s mentor, recruited him for his “naughty boy” personality"
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Worked inside: 1979-1991"
 
+## Lam Sam Yuk
+
+<a id="lam-sam-yuk"></a>**dentist.** Lam Sam Yuk was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-157 (ledgers -158B to -159B, from 1987), dated 1987-1994, that names this person. Its catalogue entry reads: “Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 32 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1987-1994
+- Rooms in the model (building:floor:unit): 20:0:0 (G/F, Lam Sam Yuk Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-157 (ledgers -158B to -159B, from 1987): "Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry"
+
+## Lam Shu Chuen
+
+<a id="lam-shu-chuen"></a>**Kai Fong officer, manufacturer.** Lam Shu Chuen came to the Walled City from the mainland as a small boy, before the War, and lived there for more than 50 years. He said that he once owned land in the City, which he bought for $25. In the 1940s he made his money by renting out kerosene lamps, and later he sold electricity from generators. In 1953 he was the first person in the City to own a car. He was a senior member of the Kai Fong Association (九龍城寨街坊福利會) and for many years chairman of the Industrial Commercial Liaison Committee. His family factory made components for radio-controlled toys. He called the clearance compensation not at all fair. After the clearance he moved the factory to Tai Po.
+
+- Work: his family's factory of components for radio-controlled toys (no address in the book)
+- In the City: from early childhood, before the War, for more than 50 years, to the clearance
+- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "Lam Shu Chuen lived in the City for more than 50 years."
+- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "It was a good business and I was the first person in the Walled City to own a car."
+- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "I have lived here since childhood and have built this place with my own hands."
+
 ## Lam Tseng Yat
 
 <a id="lam-tseng-yat"></a>**grocer.** Lam Tseng Yat was born in China in 1916. At 10 he came to Hong Kong with his father and four brothers. The family first sold groceries near the old market in Kowloon City, then at the new market on Sha Bo Road. The Japanese demolished that market in the War. In 1947 the family bought a small property at 25 Tai Chang Street (大井街) and opened a store. The two-storey stone hut later became a seven-storey building, but the land stayed with the family. The shop sold rice, peanut oil, cigarettes, alcohol and fruit. At one time it was the largest grocery business in the City. He called it a father and son business, and it never paid protection money. He lived in the City with his wife, and all his children were born there. The family lived on the first and fourth floors. When the children moved out, the family sold those flats and he lived in the shop. He refused the clearance offer of $210,000 and asked for a shop for a shop.
@@ -318,6 +596,33 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“This is my home,” Mr. Lam said, trying to wiggle a finger through a small hole in the door of his two-room apartment"
 - Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“It was a good place to live.”"
 
+## Lau Fat Mau
+
+<a id="lau-fat-mau"></a>**business claimant.** Lau Fat Mau was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-60, dated 1992, that names this person. Its catalogue entry reads: “1/F, 3 Lo Yan Street Lau Fat Mau”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, 3 Lo Yan Street
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 205:1:1 (1/F, Lau Fat Mau)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-60: "1/F, 3 Lo Yan Street Lau Fat Mau"
+
+## Lau Moon Wah (劉滿華)
+
+<a id="lau-moon-wah"></a>**dentist.** Lau Moon Wah (劉滿華) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-298, dated 1989-1991, that names this person. Its catalogue entry reads: “Lau Moon Wah Dental Clinic 劉滿華牙科醫務所”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat A, 1/F, Rear, 20-22 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1991
+- Rooms in the model (building:floor:unit): 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-298: "Lau Moon Wah Dental Clinic 劉滿華牙科醫務所"
+
+## Lau Wing (羅宋榮)
+
+<a id="lau-wing"></a>**doctor.** Lau Wing (羅宋榮) was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-186, dated 1989-1991, that names this person. Its catalogue entry reads: “& Lau Wing Medical Climic(羅宋榮診所)”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F Front Block, 35 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1991
+- Rooms in the model (building:floor:unit): 14:1:1 (1/F, 張挺華診所)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "& Lau Wing Medical Climic(羅宋榮診所)"
+
 ## Lau Yeung Yin
 
 <a id="lau-yeung-yin"></a>**weaving factory owner.** Lau Yeung Yin was born in the Walled City, one of 12 children. His father ran a weaving factory on Lung Chun Back Road (龍津後街). The family lived in the factory. There were no beds, so they moved the yarn aside to make space to sleep. In the early 1960s his father was treasurer of the Kai Fong Association (九龍城砦街坊福利事業促進委員會). Lau left school before the Middle Three examinations. He worked as a tailor's apprentice, then in a rattan shop on Hong Kong Island. Later he worked in his father's factory, which made fabric for gloves. In 1982 he took over the family business in a small factory on Sai Shing (West City) Road (西城路). His sister lent him the money for it. Six people worked there, his wife among them. Business slowed in 1985 and 1986, because customers took their orders to mainland China. The family had a public housing unit in Tai Po but rarely slept there. He expected about $103,000 in compensation for the factory.
@@ -329,6 +634,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "Lau Yeung Yin took over the family weaving business from his father in 1982"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "We lived in the factory. There were no beds; we just moved the yarn and cleared a space when we wanted to sleep."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p50: "We have a public housing unit in Tai Po and we go there sometimes. We rarely sleep there though"
+
+## Law Hoi-cheung (羅開祥)
+
+<a id="law-hoi-cheung"></a>**service centre claimant.** Law Hoi-cheung (羅開祥) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-248, dated 1988-1991, that names this person. Its catalogue entry reads: “G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 21 Sai Shing Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 117:0:0 (G/F, LAW Hoi-cheung)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-248: "G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)"
 
 ## Law Kim Kwong
 
@@ -365,6 +679,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Four families, more than 20 people, lived there, in an area of around 300 square feet."
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p94: "a small living area at the back of the shop, where Lee slept with his wife and son."
 
+## Lee Wai Kwan (李偉群)
+
+<a id="lee-wai-kwan"></a>**dentist.** Lee Wai Kwan (李偉群) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-372A, dated 1990-1993, that names this person. Its catalogue entry reads: “G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F & Cockloft, 23 Lung Shing Road
+- In the City: named in a clearance file dated 1990-1993
+- Rooms in the model (building:floor:unit): 115:0:0 (G/F, 李偉群牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-372A: "G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科"
+
 ## Lee Yu Chun
 
 <a id="lee-yu-chun"></a>**candy maker.** Lee Yu Chun worked in her family's candy business from its start in 1964, when she was not yet 10. Her father started the business, called Chui Fung, in Sham Shui Po. The family later moved to Tsz Wan Shan. In 1967 her father found premises in the Walled City. The family rented two floors of a cottage there but still lived in Tsz Wan Shan. Lee later came to live in the City as well. In the early 1970s the factory moved to 12 Sai Shing (West City) Road (西城路). The family rented it at first and later bought it for $40,000. Lee, her two brothers and her 70-year-old grandmother shared the work. Neighbourhood teenagers wrapped the sweets for 40 cents a pound. Lee's own children helped in the alley after school. Work started at 7 a.m., and the wrapping went on until 9 p.m. About ten years before the interview, she also worked in an electronics factory. She hoped to set up the factory again outside the City after the clearance.
@@ -377,6 +700,108 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "We only worked in the Walled City then, and continued to live in Tsz Wan Shan, although I later came to live here as well."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "to its final location at 12 Sai Shing (West City) Road in the early 1970s."
 
+## Lee Yuk Ha
+
+<a id="lee-yuk-ha"></a>**newspaper vendor.** Lee Yuk Ha was a newspaper vendor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-384, dated 1992, that names this person. Its catalogue entry reads: “Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 66-68 (outside) Lung Chun Road
+- In the City: named in a clearance file dated 1992
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-384: "Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)"
+
+## Li Ching Wa (李靜華)
+
+<a id="li-ching-wa"></a>**commercial storage claimant.** Li Ching Wa (李靜華) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-103, dated 1992, that names this person. Its catalogue entry reads: “Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat A, 11/F, 146 Lung Chun Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 235:11:1 (11/F, 李靜華)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-103: "Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]"
+
+## Li Mau (李謀)
+
+<a id="li-mau"></a>**Western-medicine doctor.** Li Mau (李謀) was a Western-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-185, dated 1988-1995, that names this person. Its catalogue entry reads: “1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, Rear Portion, 35 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1995
+- Rooms in the model (building:floor:unit): 14:1:0 (1/F, Li Mau Clinic)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-185: "1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)"
+
+## Liu Kwan (廖坤)
+
+<a id="liu-kwan"></a>**acupuncture doctor.** Liu Kwan (廖坤) was a acupuncture doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-575, dated 1989-1992, that names this person. Its catalogue entry reads: “Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat 1, 1/F, 16 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 19:1:0 (1/F, Liu Kwan China New Medical Clinic)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-575: "Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所"
+
+## Liu Kwok Sum (廖廣森)
+
+<a id="liu-kwok-sum"></a>**bonesetter.** Liu Kwok Sum (廖廣森) was a bonesetter in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-20, dated 1990-1992, that names this person. Its catalogue entry reads: “Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons (1975-1992), “廖廣森”.
+
+- Work: Front Portion, 3/F, 1 Lung Chun Road
+- In the City: named in a clearance file dated 1990-1992
+- Rooms in the model (building:floor:unit): 262:3:0 (3/F, Liu Kwok Sum Bonesetter & Gymnasium); 249:0:1 (G/F, Liu Kwok Sum Bonesetter)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-20: "Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館"
+- Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg: "廖廣森"
+
+## Lo Ming Tak (羅明德)
+
+<a id="lo-ming-tak"></a>**Chinese herbalist.** Lo Ming Tak (羅明德) was a Chinese herbalist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-315, dated 1988-1992, that names this person. Its catalogue entry reads: “20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak”. The catalogue gives no other facts about this person's life.
+
+- Work: 4/F, Flat B, Sze Hing House 2, 20 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1992
+- Rooms in the model (building:floor:unit): 30:4:0 (4/F, 國醫羅明德)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-315: "20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak"
+
+## Lui Man Sang
+
+<a id="lui-man-sang"></a>**senior postman.** Lui Man Sang was the senior postman of the Walled City. The book says that few people knew the layout of the City as completely as he did. He knew its buildings, alleys, staircases and rooftops, also in the building boom of the late 1970s, when addresses changed often. His daily round began at a store on Lo Yan Street (老人街). From there he climbed dark stairwells and crossed the rooftops from building to building. His apprentice, the postman Lam Po Chun (林寶鎮), started with him at 19, when Mr Lui was 32. The two men were nicknamed 'the rooftop posties'. At the end of the 1980s, after about eight years together, Mr Lui moved to a different job.
+
+- Work: the City's post round, from a store on Lo Yan Street (老人街)
+- In the City: postman in the City from about 1979 to the end of the 1980s (Lam Po Chun's account); the book does not say where he lived
+- Rooms in the model (building:floor:unit): 45:0:2 (G/F, Store on Lo Yan Street (postman's base))
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p144: "Postman Lui Man Sang emerges from a building staircase and enters one of the Walled City's alleys while making his rounds."
+- City of Darkness Revisited (Girard and Lambot, 2014), interview with Lam Po Chun, p146: "At the end of the 1980s, after I had partnered Mr Lui for eight years or so, he was transferred to a different job."
+- City of Darkness Revisited (Girard and Lambot, 2014), caption, p146: "Mr Lui's daily round began at a store on Lo Yan Street"
+
+## Ma Chong Chung (馬創忠)
+
+<a id="ma-chong-chung"></a>**dentist.** Ma Chong Chung (馬創忠) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-278, dated 1992, that names this person. Its catalogue entry reads: “G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 20-22 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 30:0:3 (G/F, 馬創忠牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-278: "G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科"
+
+## Mak Chiu (麥釗)
+
+<a id="mak-chiu"></a>**dentist.** Mak Chiu (麥釗) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-553, dated 1991-1992, that names this person. Its catalogue entry reads: “4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: 4/F, Rear Block, 8 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1991-1992
+- Rooms in the model (building:floor:unit): 2:4:0 (4/F, Mak Chiu Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-553: "4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)"
+
+## Mak Yue Kong (麥汝剛)
+
+<a id="mak-yue-kong"></a>**dental technician.** Mak Yue Kong (麥汝剛) was a dental technician in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-27, dated 1992, that names this person. Its catalogue entry reads: “G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 88 Lung Chun Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 251:0:0 (G/F, Mak Yue Kong Dental Techician)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-27: "G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)"
+
+## Mak Yue Kwan (麥汝鋆)
+
+<a id="mak-yue-kwan"></a>**dentist.** Mak Yue Kwan (麥汝鋆) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-376, dated 1992, that names this person. Its catalogue entry reads: “G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons (Sept 1991), “牙科麥汝鋆”.
+
+- Work: G/F, 17 Lung Shing Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 168:0:0 (G/F, 麥汝鋆牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-376: "G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)"
+- Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "牙科麥汝鋆"
+
 ## Mr Lau (劉先生)
 
 <a id="mr-lau"></a>**resident from age six.** Mr Lau (劉先生) was 73 in 2016. He lived in the Walled City from the age of six. His first home there was a tin hut. In those years the City had mostly low stone houses and tin huts. A volunteer night watch patrolled and called out warnings about fire. Later the demand for homes grew. Businessmen bought land from residents and put up high-rises of ten or more storeys. The builders took his tin hut, and he got a flat in the new building. He had no land deed and paid no rates or land tax. A paper with the buyer, seller, date and price was the only record. The residents' welfare association witnessed it and stamped it. The Lau family lived on the sixth floor. A friend who visited saw rats, dirty water and leaking pipes. Lau stayed until the clearance, when he was 47. He said that the residents had hoped for the clearance for some time.
@@ -388,6 +813,16 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "鐵皮屋被收，劉先生獲分發一個單位"
 - HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我們期望清拆一段時間。"
 
+## Mr Shum
+
+<a id="mr-shum"></a>**won tun pastry maker.** Mr Shum worked with Chan Wai Shui in his noodle factory on Lo Yan Street (老人街). He made the pastry sheets that became the wrappers of won tun. He had made won tun pastry for years, and before that he made noodles. Every day he made more than 100 pounds of pastry. A machine stirred the flour, but he rubbed it by hand and flattened it with a long pole, on which he sat. He said that the work was hard and that he was often soaked to the skin.
+
+- Work: Chan Wai Shui's noodle factory, Lo Yan Street (老人街)
+- In the City: worked in the City at the time of the photographs (c.1990); the book gives no years
+- Rooms in the model (building:floor:unit): 78:0:0 (G/F, Chan Wai Shui's noodle factory)
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p226: "Chan Wai Shui (centre) with his coworkers, Mr Shum (left) and Kwan Tsin On (right)."
+- City of Darkness Revisited (Girard and Lambot, 2014), caption, p228: "I am responsible for making more than 100 pounds of pastry every day."
+
 ## Mrs Lau (劉太)
 
 <a id="mrs-lau"></a>**resident.** Mrs Lau (劉太) moved into the Walled City as an adult. At first she was not used to it and often got lost. In time she got used to the poor conditions. She said that nothing there scared her. She found the City stable and safe. The vice trades did not bother residents for no reason. She told how the Lau family escaped a fire. The family lived on the sixth floor, and a rattan shop below caught fire. The back stair was locked. The family went down to the third floor, which faced the corridor of the next building. They handed their newborn baby to a neighbour across the gap. Then they stepped across. She laughed that it was not frightening at all. On 14 January 1987 she came home from the market and saw crowds outside the City. By the clearance her children were grown, and she wanted a change of surroundings.
@@ -397,6 +832,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "劉太(左)坦言初遷入城寨，非常不習慣，經常迷路。"
 - HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "劉先生一家人居於六樓，後樓梯被鎖，而三樓則對正旁邊大樓的走廊"
 - HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "舊街坊劉太正好買完餸，正從寨外打道回府，卻見城外圍滿了人"
+
+## Mrs Law
+
+<a id="mrs-law"></a>**child-minding grandmother.** Mrs Law was a grandmother in the Walled City. Every day she collected her two grandchildren from school and took them back to her small apartment for the afternoon. The children often did their homework on her bed while they knelt on the floor. Their parents, who both worked full-time, picked them up on their way home from work. The book gives her only in a photo caption, and gives no address or dates.
+
+- Home: a small apartment in the City (no address in the book)
+- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p54: "Mrs Law (above) collected her two grandchildren from school every day and took them back to her small apartment for the afternoon"
 
 ## Ng Kam Mui
 
@@ -409,6 +851,33 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "the Chung Fat café on Tung Tau Tsuen Road for nearly 30 years, from the day it opened until its closure in 1991"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "Since graduating from primary school, I've lived and worked here in the City."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "We were given two storeys when this 11-storey building was completed; we were even put into another place while it was built."
+
+## Ng Mei Kin (吳美堅)
+
+<a id="ng-mei-kin"></a>**dentist.** Ng Mei Kin (吳美堅) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-69, dated 1991, that names this person. Its catalogue entry reads: “G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 122 Lung Chun Road
+- In the City: named in a clearance file dated 1991
+- Rooms in the model (building:floor:unit): 236:0:0 (G/F, Ng Mei Kin Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-69: "G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)"
+
+## Ng Ping Wai
+
+<a id="ng-ping-wai"></a>**doctor.** Ng Ping Wai was a doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-266, dated 1989-1991, that names this person. Its catalogue entry reads: “Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat 2, 6/F, 24A Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1991
+- Rooms in the model (building:floor:unit): 32:6:2 (6/F, Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen )
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-266: "Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic"
+
+## Ngai Heung Chuen (魏香泉)
+
+<a id="ngai-heung-chuen"></a>**dentist.** Ngai Heung Chuen (魏香泉) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-273, dated 1988-1991, that names this person. Its catalogue entry reads: “Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat A, 4/F, Stage 7, 24 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 32:4:2 (4/F, 魏香泉牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-273: "Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科"
 
 ## Paul Tang Kam-cheung (鄧金祥)
 
@@ -443,6 +912,24 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "the Salvation Army ran a well-attended kindergarten at its premises on Lung Chun Back Road for many years."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The Salvation Army first started working in the Walled City in 1968"
 
+## Siu Ping Lung (蕭秉隆)
+
+<a id="siu-ping-lung"></a>**dentist.** Siu Ping Lung (蕭秉隆) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-514, dated 1992-1993, that names this person. Its catalogue entry reads: “G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 3 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1992-1993
+- Rooms in the model (building:floor:unit): 2:0:4 (G/F, 蕭秉隆牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-514: "G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)"
+
+## Siu Ping Sing (蕭秉陞)
+
+<a id="siu-ping-sing"></a>**dentist.** Siu Ping Sing (蕭秉陞) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-547, dated 1991-1992, that names this person. Its catalogue entry reads: “G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 6 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1991-1992
+- Rooms in the model (building:floor:unit): 2:0:0 (G/F, 蕭秉陞牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-547: "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)"
+
 ## To Gui Bon
 
 <a id="to-gui-bon"></a>**rubber-plunger maker.** To Gui Bon was born in 1937. He worked in the rubber business before he moved to the City. He was also once a driver of private cars, and he moved to the City when that work became illegal. For about 25 years he made rubber plungers in a small factory on Lung Chun Back Road (龍津後街). At first the site was a two-storey stone house, and he lived on the floor above the factory. When the stone house came down for a new building, he moved next door for a while. At the time of the interview he lived nearby and went home to eat. He worked long hours, sometimes until 2 or 3 a.m. His press had no safety grill, so he worked with extra care. He also made shuttlecocks and sink stoppers. In the 1980s the business grew and made $20,000 to $30,000 a month. He once had a couple of employees, but only one assistant stayed. After the clearance announcement, his business dropped. He had two young children.
@@ -454,6 +941,50 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "For 25 years, To Gui Bon (below right) produced rubber plungers and other products in his small factory on Lung Chun Back Road."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "I used to live on the first floor above the factory."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "when we were expanding during the 1980s we were making $20,000 to $30,000 a month."
+
+## Tsang Chi Wai (曾志偉)
+
+<a id="tsang-chi-wai"></a>**dentist.** Tsang Chi Wai (曾志偉) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-352, dated 1990-1992, that names this person. Its catalogue entry reads: “G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 63 Lung Shing Road
+- In the City: named in a clearance file dated 1990-1992
+- Rooms in the model (building:floor:unit): 3:0:1 (G/F, Tsang Chi Wai Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-352: "G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)"
+
+## Tsang Keong
+
+<a id="tsang-keong"></a>**dentist.** Tsang Keong was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-280A (also -280D to -281), dated 1988-1992, that names this person. Its catalogue entry reads: “Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat F, 1/F, rear Hop Hing House, 20-22 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1992
+- Rooms in the model (building:floor:unit): 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-280A (also -280D to -281): "Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic"
+
+## Tse Choi Kwan
+
+<a id="tse-choi-kwan"></a>**fur worker.** Tse Choi Kwan was a fur worker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-167, dated 1988-1991, that names this person. Its catalogue entry reads: “31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)”. The catalogue gives no other facts about this person's life.
+
+- Work: 3/F, Flat 1, 31C Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 24:3:0 (3/F, Tse Choi Kwan Fur Workshop)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-167: "31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)"
+
+## Tse Hon Keung (謝漢強)
+
+<a id="tse-hon-keung"></a>**dentist.** Tse Hon Keung (謝漢強) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-549, dated 1992, that names this person. Its catalogue entry reads: “Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)”. The catalogue gives no other facts about this person's life.
+
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 18:0:0 (G/F, Tse Hon Keung Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-549: "Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)"
+
+## Tse Ma Ming
+
+<a id="tse-ma-ming"></a>**business claimant.** Tse Ma Ming was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-535, dated 1990-1992, that names this person. Its catalogue entry reads: “Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming”. The catalogue gives no other facts about this person's life.
+
+- Work: Rm. 2, 6/F, Block 3, 10A Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1990-1992
+- Rooms in the model (building:floor:unit): 4:6:4 (6/F, Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-535: "Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming"
 
 ## Tsin Mu Lam
 
@@ -486,6 +1017,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "We had to pay somebody to ‘steal’ electricity for us."
 - WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "–Wong Chan Pui-wah, former garment-factory worker"
 
+## Wong Chun Wah (黃振華)
+
+<a id="wong-chun-wah"></a>**dentist.** Wong Chun Wah (黃振華) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-323, dated 1992, that names this person. Its catalogue entry reads: “4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: 4/F, Front Portion, 27 Lo Yan Street
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 109:4:2 (4/F, Wong Chun Wah Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-323: "4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)"
+
 ## Wong Chun-ping (王鎮平)
 
 <a id="wong-chun-ping"></a>**fishball maker's son.** Wong Chun-ping (王鎮平) was the son of the fishball maker Wong Yum-fai (王欽輝). WSJ tells the story of father and son together as 'The Fishball Makers'. The family had eight people. They lived on 8/F, 33 Lo Yan Street (老人街), in a flat of 500 sq ft. The source gives their years inside as 1972-1983. His father supplied fishballs and fishcakes to wholesale markets, about 30 catties a day. Later his father opened a noodle shop on the ground floor of the same building. When the children were old enough, they helped in the family business. The source does not give his age or his tasks.
@@ -508,6 +1048,25 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "I've been in this apartment since I came to the Walled City. The rent here was originally just $150 per month"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "Most of my patients suffer from rheumatism, though I also treat people with fight injuries, back problems and numbness in the body."
 
+## Wong Mei Yue (黃美如)
+
+<a id="wong-mei-yue"></a>**dentist.** Wong Mei Yue (黃美如) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-374, dated 1991-1992, that names this person. Its catalogue entry reads: “G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)”. The catalogue gives no other facts about this person's life. A photo also shows this person's name: Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons (Sept 1991), “黃美如牙科”.
+
+- Work: G/F, 21 Lung Shing Road
+- In the City: named in a clearance file dated 1991-1992
+- Rooms in the model (building:floor:unit): 115:0:3 (G/F, 黃美如牙科)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-374: "G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)"
+- Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "黃美如牙科"
+
+## Wong Wai Kuen (王偉權)
+
+<a id="wong-wai-kuen"></a>**dentist.** Wong Wai Kuen (王偉權) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-154, dated 1992, that names this person. Its catalogue entry reads: “G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 30-31 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 40:0:0 (G/F, Wong Wai Kuen Dentistry)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-154: "G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)"
+
 ## Wong Yu Ming
 
 <a id="wong-yu-ming"></a>**dentist.** Wong Yu Ming was born in 1930. He studied medicine in China. He learnt dentistry and herbal medicine from his father, a dentist, and by his own study. The Communist Party said that he had bad thoughts. Thus he left Chiu Chow (潮州) for Hong Kong in the late 1950s. He came alone, and his wife and children followed. After a few months he rented premises on Lung Shing Road (龍城路) and opened a dental clinic. He bought the premises a year later. He extracted teeth, did fillings and made false teeth. He often made dentures under contract for registered dentists outside the City. Once he had three employees, but by the interview they had left. His wife, Cheung Mei, learnt the trade from him and was his dental assistant. He worked and lived in the clinic 24 hours a day. His seven children lived with their mother in her flat elsewhere. He felt lonely.
@@ -520,6 +1079,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "After a few months in Hong Kong, I moved to the Walled City and rented these premises, which I bought a year later."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "I work and live here 24 hours a day."
 
+## Wong Yuen Heung (黃源香)
+
+<a id="wong-yuen-heung"></a>**business claimant.** Wong Yuen Heung (黃源香) was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-190, dated 1988-1992, that names this person. Its catalogue entry reads: “37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 37 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1992
+- Rooms in the model (building:floor:unit): 38:0:2 (G/F, 黃源香)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-190: "37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )"
+
 ## Wong Yum-fai (王欽輝)
 
 <a id="wong-yum-fai"></a>**fishball maker.** Wong Yum-fai (王欽輝) made fishballs in the Walled City. Lore said that 80% of the fishballs of Hong Kong came from the City. He supplied fishballs and fishcakes to wholesale markets, and he sold 30 catties (40 pounds) of fishballs a day. Later he opened a noodle shop on the ground floor of his own building. A bowl of fishball noodles cost HK$0.30 to HK$0.80. His family of eight lived in the same building, on 8/F, 33 Lo Yan Street (老人街). The flat had 500 sq ft. When his children were old enough, they helped in the family business. His son Wong Chun-ping (王鎮平) was one of them. The WSJ fact box gives the years of the family inside as 1972-1983. The WSJ video says that he lived in the City for 30 years.
@@ -530,6 +1098,22 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Wong Yum-fai supplied fishballs and fishcakes to wholesale markets. He was eventually able to open a noodle shop below his apartment unit."
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "8/F, 33 Lo Yan St. (home); G/F, 33 Lo Yan St. (shop)"
 - WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Lore had it that 80% of Hong Kong’s fishballs — the territory’s ultimate gourmet delicacy — were produced inside the Walled City."
+
+## Yan Wing Tak (甄榮德)
+
+<a id="yan-wing-tak"></a>**dentist.** Yan Wing Tak (甄榮德) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-125, dated 1989-1992, that names this person. Its catalogue entry reads: “2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)”. The catalogue gives no other facts about this person's life.
+
+- In the City: named in a clearance file dated 1989-1992
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-125: "2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)"
+
+## Yau Ka Sut (邱家瑟)
+
+<a id="yau-ka-sut"></a>**Western-medicine doctor.** Yau Ka Sut (邱家瑟) was a Western-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-302, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 24A Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 32:0:3 (G/F, 西醫邱家瑟)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-302: "G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟"
 
 ## Yau Lap Cheong
 
@@ -561,7 +1145,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: one of his two flats in one building in the City, with his brother and uncle; earlier a 200 sq ft room in the City shared by eight single men
 - Work: a rented, unlicensed roast-meat workshop on Lo Yan Street (老人街); he sold the meat in Wong Tai Sin (黃大仙) market
 - In the City: from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance
-- Rooms in the model (building:floor:unit): 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop)
+- Rooms in the model (building:floor:unit): 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop); 181:0:0 (G/F, Kwok Kee Roasted Meat)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "Yim Kwok Yuen (above) opened his cooked meat factory on Lo Yan Street in 1981, a few years after his arrival in Hong Kong."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "After several months' apprenticeship, I went to work in my uncle's roasting shop in the Walled City."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p289: "My brother, my uncle and I live together in one flat. The other flat is rented out at $800 a month."
@@ -577,6 +1161,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "葉德偉正在中環辦公室工作，從收音機聽到消息，大吃一驚"
 - WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "Even though it seemed like the Walled City was an ungoverned place, it was actually a self-governing community."
 
+## Yip Wa Man (葉華民)
+
+<a id="yip-wa-man"></a>**dentist.** Yip Wa Man (葉華民) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-554, dated 1989-1992, that names this person. Its catalogue entry reads: “G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F of C/L (cockloft), 8 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1989-1992
+- Rooms in the model (building:floor:unit): 2:0:1 (G/F, King's Dental Lab + Yip Wa Man Dentist)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-554: "G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科"
+
 ## Yu Hing Wan
 
 <a id="yu-hing-wan"></a>**muslin maker.** Yu Hing Wan made muslin in the City. Muslin was once a major industry there, before synthetic materials came. At 86 he was still at work, and he was the last muslin maker in the City. Like most factory owners in the City, he chose his site on Lung Chun Road (龍津道) for its cheap rent. He needed space for large machinery and for stored cloth. He felt that outside the City the business was not viable, and that there he was not able to own a factory. He lived in the City for 18 years. He came from the Hakka community of Guangdong province. Thus he was in a minority among the mainly Chiu Chow (潮州) population of the City. His factory was neat and clean. But after long years of hard work, the noise of the old machines and the lack of ventilation hurt him most. The photographs show him at a large machine and with long rolls of white cloth.
@@ -588,6 +1181,67 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Still working at 86, Yu Hing Wan was the last of the City's muslin makers"
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Yu Hing Wan chose his location on Lung Chun Road for its cheap rent"
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "A long-term resident of 18 years, Yu was originally from the Hakka community of Guangdong province"
+
+## 姚正明
+
+<a id="grs-g128"></a>**fur coat maker.** 姚正明 was a fur coat maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-226, dated 1988-1991, that names this person. Its catalogue entry reads: “37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 37 Sai Shing Road
+- In the City: named in a clearance file dated 1988-1991
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-226: "37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)"
+
+## 廖理
+
+<a id="grs-g130"></a>**drilling subcontractor.** 廖理 was a drilling subcontractor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-94, dated 1988-1991, that names this person. Its catalogue entry reads: “19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]”. The catalogue gives no other facts about this person's life.
+
+- Work: 3/F, Flat A, 19 Sz Kung Street
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 192:3:2 (3/F, 廖理)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-94: "19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]"
+
+## 曾紀尉
+
+<a id="grs-g135"></a>**jewellery maker.** 曾紀尉 was a jewellery maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-229, dated 1988-1990, that names this person. Its catalogue entry reads: “27, Sai Shing Road, 8/F 曾紀尉 (首飾)”. The catalogue gives no other facts about this person's life.
+
+- Work: 8/F, 27 Sai Shing Road
+- In the City: named in a clearance file dated 1988-1990
+- Rooms in the model (building:floor:unit): 91:8:3 (8/F, 曾紀尉 (首飾)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-229: "27, Sai Shing Road, 8/F 曾紀尉 (首飾)"
+
+## 李就
+
+<a id="grs-g129"></a>**watch-case etcher.** 李就 was a watch-case etcher in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-140, dated 1988-1990, that names this person. Its catalogue entry reads: “2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就”. The catalogue gives no other facts about this person's life.
+
+- Work: G/F, 2B Sai Shing Road
+- In the City: named in a clearance file dated 1988-1990
+- Rooms in the model (building:floor:unit): 167:0:0 (G/F, 錶殼蝕刻)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-140: "2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就"
+
+## 李漢明
+
+<a id="grs-g131"></a>**lunch-box workshop claimant.** 李漢明 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-240, dated 1988-1990, that names this person. Its catalogue entry reads: “31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat 7, 1/F, 31B Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1990
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+
+## 李靜瑜
+
+<a id="grs-g179"></a>**Chinese-medicine doctor.** 李靜瑜 was a Chinese-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-160, dated 1988-1992, that names this person. Its catalogue entry reads: “26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))”. The catalogue gives no other facts about this person's life.
+
+- Work: 2/F, Flat A, Rear Portion, 26 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1992
+- Rooms in the model (building:floor:unit): 34:2:0 (2/F, 李靜瑜醫務所(中醫)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-160: "26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))"
+
+## 林惠珠
+
+<a id="grs-g127"></a>**Chiu Chow dim-sum maker.** 林惠珠 was a Chiu Chow dim-sum maker in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-194, dated 1988-1990, that names this person. Its catalogue entry reads: “39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, 39 Sai Shing Road
+- In the City: named in a clearance file dated 1988-1990
+- Rooms in the model (building:floor:unit): 13:1:1 (1/F, 潮州點心)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-194: "39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)"
 
 ## 林羅平
 
@@ -601,6 +1255,15 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」"
 - HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電"
 
+## 羅釗林
+
+<a id="grs-g136"></a>**business claimant.** 羅釗林 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-181, dated 1988-1991, that names this person. Its catalogue entry reads: “4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林”. The catalogue gives no other facts about this person's life.
+
+- Work: 4/F, Front Portion, 32 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 20:4:1 (4/F, 羅釗林)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-181: "4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林"
+
 ## 芬姐
 
 <a id="store-keepers-daughter-hk01"></a>**store keeper's daughter.** 芬姐 grew up in the Walled City. HK01 met her in 2016 with four other former residents. Her family had a small store (士多) in the City. When her mother went to carry water, 芬姐 minded the store alone. Many young men came to buy, and sales went up. She met her sweetheart in the City and settled there. She did not see the City as a 'city of sin'. She said that people born there were used to the vice. On 14 January 1987 she was in a hair salon inside the City. She was getting a perm before a festival. A customer told her that the government had sealed the City. Then the radio gave the news. At home, officials told the family to register, and they registered. She was proud to come from the City.
@@ -612,6 +1275,24 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "說媽媽要去擔水，自己獨個兒在城寨士多「看舖」，吸引不少年青人來光顧，生意額因而上升"
 - HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "芬姐當時則正準備過節，人在寨內髮廊電髮，從剛步入髮廊的客人口中得知被圍城"
 
+## 莊裕宏
+
+<a id="grs-g144"></a>**dog-room (狗房) keeper.** 莊裕宏 was a dog-room (狗房) keeper in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-66, dated 1988-1990, that names this person. Its catalogue entry reads: “114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)”. The catalogue gives no other facts about this person's life.
+
+- Work: 7/F, 114 Lung Chun Road
+- In the City: named in a clearance file dated 1988-1990
+- Rooms in the model (building:floor:unit): 244:7:2 (7/F, 莊裕宏狗房)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-66: "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)"
+
+## 鄭炎創
+
+<a id="grs-g143"></a>**garment workshop claimant.** 鄭炎創 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-307, dated 1988-1990, that names this person. Its catalogue entry reads: “24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創”. The catalogue gives no other facts about this person's life.
+
+- Work: 4/F, Flat E, 24 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1990
+- Rooms in the model (building:floor:unit): 32:4:3 (4/F, 鄭炎創)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-307: "24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創"
+
 ## 阿榮
 
 <a id="childhood-resident-hk01"></a>**childhood resident.** 阿榮 is a pseudonym that HK01 gave to a man in his sixties in 2016. His parents came from mainland China in the early 1950s. They were poor, and the Walled City had the lowest rents in Hong Kong. He lived in the City from his birth to the age of 20. HK01 gives his home as 西頭村第一街, and puts his door on 成龍街. The home had no proper water or power. Ten or more homes shared one wire, and fires broke out at night. The wells gave water only for a few hours each afternoon. Heroin sellers had stalls in the back lane at his door. His parents sent him to a primary school outside, in Kowloon City (九龍城). He did not play in the City. He did not join a triad and did not take drugs. For many years he did not tell his daughter about his childhood.
@@ -621,3 +1302,36 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "阿榮甫出生就住在西頭村第一街，廿歲才搬離城寨"
 - HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "貧困之下只能住在全港租金最便宜的九龍城寨中"
 - HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "就在他成龍街的家門前，整條後巷踎滿「道友」，有人光明正大地擺檔賣白粉"
+
+## 陳廷乾
+
+<a id="grs-g124"></a>**Lo Mei Workshop claimant.** 陳廷乾 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-340, dated 1992, that names this person. Its catalogue entry reads: “Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop”. The catalogue gives no other facts about this person's life.
+
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 263:5:0 (5/F, Lo Mei Workshop)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+
+## 陳鎮波
+
+<a id="grs-g125"></a>**Lo Mei Workshop claimant.** 陳鎮波 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-340, dated 1992, that names this person. Its catalogue entry reads: “Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop”. The catalogue gives no other facts about this person's life.
+
+- In the City: named in a clearance file dated 1992
+- Rooms in the model (building:floor:unit): 263:5:0 (5/F, Lo Mei Workshop)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+
+## 黃照垣
+
+<a id="grs-g180"></a>**Chinese-medicine doctor.** 黃照垣 was a Chinese-medicine doctor in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-164, dated 1988-1991, that names this person. Its catalogue entry reads: “30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)”. The catalogue gives no other facts about this person's life.
+
+- Work: 1/F, 30 Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1991
+- Rooms in the model (building:floor:unit): 43:1:0 (1/F, 黃照垣中醫)
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-164: "30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)"
+
+## 黃錫榮
+
+<a id="grs-g132"></a>**lunch-box workshop claimant.** 黃錫榮 was a business claimant at the clearance of the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-240, dated 1988-1990, that names this person. Its catalogue entry reads: “31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes”. The catalogue gives no other facts about this person's life.
+
+- Work: Flat 7, 1/F, 31B Tung Tau Tsuen Road
+- In the City: named in a clearance file dated 1988-1990
+- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
