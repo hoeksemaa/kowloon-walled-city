@@ -1,6 +1,6 @@
 # UPI wire reports, 1984 and 1987
 
-Two United Press International reports from Hong Kong, written at the time.
+Two United Press International reports from Hong Kong (香港), written at the time.
 
 - **Link:** https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5019472194000/
 - **Retrieved:** 2026-10-29. John saved the pages in a browser ("HTML only"),
@@ -77,5 +77,9 @@ https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-do
   dozens of dentist's offices".
 - Residents: an official, Lam Man Cheuk, says residents "seem to be quite
   satisfied". A shopkeeper says "Even God cannot help us now".
-- China's Foreign Ministry: "Like other parts of Hong Kong the Kowloon Walled
+- China's Foreign Ministry (中華人民共和國外交部): "Like other parts of Hong Kong the Kowloon Walled
   City is a question left over by history."
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Battenfeld, 18 Dec 1984: P22, P30. Jones, 15 Feb 1987: P14.

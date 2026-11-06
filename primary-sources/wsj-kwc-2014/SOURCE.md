@@ -2,7 +2,7 @@
 
 A web project by WSJ.com News Graphics, published in April 2014. It has a
 "People" chapter with six former residents and workers, and an "Explore"
-chapter with more quotes, a trade count and clips of Suenn Ho's footage. The
+chapter with more quotes, a trade count and clips of Suenn Ho's (何巽) footage. The
 live site is gone. The Wayback Machine keeps the page and its data files.
 
 - **Link:** https://web.archive.org/web/20161228012123/http://projects.wsj.com/kwc/
@@ -16,7 +16,7 @@ live site is gone. The Wayback Machine keeps the page and its data files.
 - **Retrieved:** 2026-10-29. I read the `people`, `life` and `history` data
   files and the video metadata in a browser. I did not save them (see below).
 - **Copyright:** © Dow Jones & Company. Photos and clips are credited to Suenn
-  Ho, Betty Ho, Calvin Yeung, Ko Tim Keung, Rod Mason and others.
+  Ho, Betty Ho, Calvin Yeung, Ko Tim Keung (高添強), Rod Mason and others.
 - **Stored in git:** no.
 
 ## Why this is primary (which parts)
@@ -65,12 +65,12 @@ Each video is short and in WSJ's archive. A transcript of each is still a task.
 
 | Video | Length | Link |
 |---|---|---|
-| "Child" (Albert Ng) | 52 s | https://www.wsj.com/video/kowloon-walled-city-characters-child/FD1945F1-D6A5-43B2-ACED-B3E60C235553 |
+| "Child" (Albert Ng 吳錦波) | 52 s | https://www.wsj.com/video/kowloon-walled-city-characters-child/FD1945F1-D6A5-43B2-ACED-B3E60C235553 |
 | "Dim Sum Hawker" (Yeung Lai-wan) | 63 s | https://www.wsj.com/video/kowloon-walled-city-characters-dim-sum-hawker/A683C456-D647-4868-8BB3-3494427A98F0 |
 | "Mapmaker" (Chan Cheung-chuen) | 73 s | https://www.wsj.com/video/kowloon-walled-city-characters-mapmaker/F884D3C1-1E9C-4EC1-9142-14B7DC1F3396 |
-| "Triad" (Paul Tang) | 70 s | https://www.wsj.com/video/kowloon-walled-city-characters-triad/50FB8014-2C19-433A-B907-4C29CF6509F0 |
-| "Fishball Makers" (Wong Yum-fai) | 92 s | https://www.wsj.com/video/kowloon-walled-city-characters-fishball-makers/19C2631C-36C2-4F5F-916A-271516DE6609 |
-| "Postman" (Lam Po-chun) | 86 s | https://www.wsj.com/video/kowloon-walled-city-characters-postman/4C437F64-E761-4D61-89AB-45D86580ABB5 |
+| "Triad" (Paul Tang 鄧金祥) | 70 s | https://www.wsj.com/video/kowloon-walled-city-characters-triad/50FB8014-2C19-433A-B907-4C29CF6509F0 |
+| "Fishball Makers" (Wong Yum-fai 王欽輝) | 92 s | https://www.wsj.com/video/kowloon-walled-city-characters-fishball-makers/19C2631C-36C2-4F5F-916A-271516DE6609 |
+| "Postman" (Lam Po-chun 林寶鎮) | 86 s | https://www.wsj.com/video/kowloon-walled-city-characters-postman/4C437F64-E761-4D61-89AB-45D86580ABB5 |
 
 ## Key facts
 
@@ -80,12 +80,12 @@ All items are retrospective (2014) unless a note says otherwise.
 
 | Person | Role | Years inside | Address | Household | Home |
 |---|---|---|---|---|---|
-| Albert Ng Kam-po | the boy; Chiu Chow family | 1975 – 1991 or 1992 | Room A, 7/F, 8 Sz Kung St. (社公街) | 5 people | more than 200 sq ft, bought 1975 for about HK$50,000 |
-| Yeung Lai-wan 杨丽云 | dim sum hawker, mother of nine | 1959–1981 | 2/F, Sai Shing Rd.; 3/F, 60 Lung Chun Rd.; 4/F, Lung Chun Rd. | income HK$6,000–7,000 a month | 200, 600, 500 sq ft; HK$10,000 (bought 1974) |
-| Chan Cheung-chuen | map maker, engineering student | 1985–1991 | 12/F, Room B, 31 Tung Tau Tsuen Rd.; 11/F, Room 2, 16 Tung Tau Tsuen Rd. | 3 people; about HK$15,000 a month | 200–300 sq ft; rent HK$800–900 (1985–88), HK$1,100 (1988–91) |
-| Tang Kam-cheung (Paul) 邓金祥 | former triad, later a pastor | 1948–1979 | G/F, Lung Chun Rd., 2nd Lane | 7 people; HK$8–10 a day | 400–500 sq ft |
-| Wong Yum-fai, father; Wong Chun-ping, son | fishball makers | 1972–1983 | home 8/F, 33 Lo Yan St. (老人街); shop G/F, same building | 8 people | 500 sq ft |
-| Lam Po-chun | postman | worked inside 1979–1991 | – | – | – |
+| Albert Ng Kam-po (吳錦波) | the boy; Chiu Chow (潮州) family | 1975 – 1991 or 1992 | Room A, 7/F, 8 Sz Kung St. (社公街) | 5 people | more than 200 sq ft, bought 1975 for about HK$50,000 |
+| Yeung Lai-wan 杨丽云 | dim sum hawker, mother of nine | 1959–1981 | 2/F, Sai Shing Rd. (西城路); 3/F, 60 Lung Chun Rd. (龍津道); 4/F, Lung Chun Rd. | income HK$6,000–7,000 a month | 200, 600, 500 sq ft; HK$10,000 (bought 1974) |
+| Chan Cheung-chuen | map maker, engineering student | 1985–1991 | 12/F, Room B, 31 Tung Tau Tsuen Rd. (東頭村道); 11/F, Room 2, 16 Tung Tau Tsuen Rd. | 3 people; about HK$15,000 a month | 200–300 sq ft; rent HK$800–900 (1985–88), HK$1,100 (1988–91) |
+| Tang Kam-cheung (Paul) 鄧金祥 | former triad, later a pastor | 1948–1979 | G/F, Lung Chun Rd., 2nd Lane (龍津二巷) | 7 people; HK$8–10 a day | 400–500 sq ft |
+| Wong Yum-fai (王欽輝), father; Wong Chun-ping (王鎮平), son | fishball makers | 1972–1983 | home 8/F, 33 Lo Yan St. (老人街); shop G/F, same building | 8 people | 500 sq ft |
+| Lam Po-chun (林寶鎮) | postman | worked inside 1979–1991 | – | – | – |
 
 - Chan Cheung-chuen finished his hand-drawn map in March 1987 (WSJ
   narration). It took four months.
@@ -100,14 +100,14 @@ All items are retrospective (2014) unless a note says otherwise.
   Kowloon Walled City for 30 years". His fact box says 1972–1983.
 
 **Water, power, refuse.**
-- Tam Sau-kuen 谭秀娟, housewife: "There was no 24-hour water supply in
+- Tam Sau-kuen 譚秀娟, housewife: "There was no 24-hour water supply in
   Kowloon Walled City… No matter what time it was, even while we were
   sleeping at night, when we heard the sound of water dripping, we would
   immediately wake up and do the housework such as laundry and washing the
   dishes."
-- Wong Chan Pui-wah 黄陈佩华, garment-factory worker: "We had to pay somebody
+- Wong Chan Pui-wah 黃陳佩華, garment-factory worker: "We had to pay somebody
   to 'steal' electricity for us."
-- Gordon Jones, former Kowloon City District Officer: "The water was largely
+- Gordon Jones, former Kowloon City (九龍城) District Officer: "The water was largely
   derived from about 70 or so wells, which the inhabitants of the Walled City
   had sunk… The actual quality of the water was pretty appalling."
 - Gordon Jones: "there were no significant fires or outbreaks of disease" in
@@ -117,15 +117,15 @@ All items are retrospective (2014) unless a note says otherwise.
   floors flooded often. Many people kept cats against the rats.
 
 **Building, entrances, self-government.**
-- Chan Hau-lin 陈厚练, building developer: "You didn't need any paperwork from
+- Chan Hau-lin 陳厚練, building developer: "You didn't need any paperwork from
   the government for construction, so you had to collaborate with your
   neighbors yourself. Oh, and also be aware of the building height limits."
 - WSJ narration: most buildings rose to "between 10 and 14 stories, though
   there were only two with elevators". There were "66 entry points".
-- Yip Tak-wai 叶德伟, head of the former residents' association: "Even though
+- Yip Tak-wai 葉德偉, head of the former residents' association: "Even though
   it seemed like the Walled City was an ungoverned place, it was actually a
   self-governing community."
-- WSJ narration: the Kai Fong Association, formed in 1963, put up posters such
+- WSJ narration: the Kai Fong Association (九龍城砦街坊福利事業促進委員會), formed in 1963, put up posters such
   as "Prevent Fire: Protect Your Life and Property" and "Let's Help Each
   Other: Clean Up the Street".
 
@@ -139,15 +139,15 @@ Association (1983)". I did not see the original count.
 
 The sum is 645.
 
-**Schools, temples, the Yamen (WSJ narration, secondary).**
-- A church ran an "Aged People Centre" in the Yamen from the 1970s.
-- The Salvation Army ran a primary school, then a kindergarten. Wong Chan
+**Schools, temples, the Yamen (衙門) (WSJ narration, secondary).**
+- A church ran an "Aged People Centre" (老人中心) in the Yamen from the 1970s.
+- The Salvation Army (救世軍) ran a primary school, then a kindergarten. Wong Chan
   Pui-wah: "Many children went to school there. We played together and sang
   songs. It was very happy."
-- The Hong Kong Federation of Youth Groups ran a youth centre.
+- The Hong Kong Federation of Youth Groups (香港青年協會) ran a youth centre.
 - Fuk Tak Temple was "popular with residents from the southern Chinese city
   of Chiu Chow".
-- The Tin Hau Temple "was often blocked from sunshine by the garbage residents
+- The Tin Hau Temple (天后廟) "was often blocked from sunshine by the garbage residents
   scattered on the tin grate above it".
 
 **Vice and police.** Most of this is about the 1950s–60s, not 1986.
@@ -160,7 +160,7 @@ The sum is 645.
   HK$0.30, red pill HK$0.20.
 - Tam Sau-kuen, as a child: "The area where they stayed was dark 24 hours a
   day." This is about the sex workers on Tai Chang Street (大井街).
-- Lau Kam-chiu 刘锦朝, electrician: "We lived in the Walled City, so we ignored
+- Lau Kam-chiu 劉錦朝, electrician: "We lived in the Walled City, so we ignored
   this kind of thing. We didn't like it. We looked down on it."
 - Yeung Lai-wan: "I saw a heroin addict dig out a cat's eye."
 - Rod A. L. Mason, police officer, in a report of 1985 (made at the time):
@@ -178,3 +178,10 @@ gives a WSJ video GUID for each clip.
   in the open."
 - Hamdani Milas, documentary filmmaker, about the entrances: "They were just
   narrow openings between the shops."
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- The six residents and their fact boxes: T1, T2, T4–T17.
+- Shared with other pages: T2 (SCMP 2013), T6 (HK01 (香港01) 2016, M+ audio guide),
+  T18 and T30 (HK01 2016).
+- The WSJ narration (secondary): T31–T34.

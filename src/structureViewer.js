@@ -1,8 +1,8 @@
 // The viewer of the definitive 3D structure (structure.html): the City (src/city/) on its
 // surroundings (src/surroundings/), a cut at any height, a vertical section, x-ray walls, the
 // facts of each building, and the cheapest route from one room to another. This is the one
-// place that puts the City and its surroundings together. The colours are placeholders: only
-// the structure is definitive. The simulation of main.js does not run here.
+// place that puts the City and its surroundings together. The structure has no colours: the
+// viewer gives its placeholder colours (src/structureColors.js). The simulation of main.js does not run here.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buildSite } from './site.js';
@@ -15,6 +15,7 @@ import { makeChoices } from './city/choices.js';
 import { buildMesh, buildProps, KIND } from './city/mesh.js';
 import { route } from './city/links.js';
 import { buildGround } from './surroundings/ground.js';
+import { cityColors, groundColors } from './structureColors.js';
 
 // The haze of main.js: things fade with distance from the centre, from 350 m to 600 m.
 THREE.ShaderChunk.fog_pars_vertex = '#ifdef USE_FOG\nvarying vec2 vFogXZ;\n#endif';
@@ -129,11 +130,11 @@ async function init() {
   // the kept random choices of the links (data/structure_choices.json, choices.js)
   S = buildStructure(L, T, { fixes, choices: makeChoices(kept) });
   const t1 = performance.now();
-  shell = meshOf(buildMesh(S, { triangulate, props: false }));
+  shell = meshOf(buildMesh(S, { triangulate, props: false, colorOf: cityColors() }));
   scene.add(shell);
-  props.ladder = propsOf(buildProps(S, 'ladder'), '#ff3d00');
-  props.stool = propsOf(buildProps(S, 'stool'), '#d400ff');
-  ground = buildGround(T, context, cityGround(S), sur);
+  props.ladder = propsOf(buildProps(S, 'ladder', { colorOf: cityColors() }), '#ff3d00');
+  props.stool = propsOf(buildProps(S, 'stool', { colorOf: cityColors() }), '#d400ff');
+  ground = buildGround(T, context, cityGround(S), sur, groundColors);
   // A section cuts the ground too, as in a section drawing.
   ground.terrain.material.clippingPlanes = [secPlane];
   ground.context.material.clippingPlanes = [secPlane];
@@ -172,7 +173,7 @@ function rebuildInside() {
     if (state.open && id === state.sel) return b.y[k] < state.cut;
     return state.cut < OFF && b.y[k] <= state.cut && b.y[k + 1] > state.cut - 0.01;
   };
-  inner = meshOf(buildMesh(S, { triangulate, shell: false, inside }));
+  inner = meshOf(buildMesh(S, { triangulate, shell: false, inside, colorOf: cityColors() }));
   scene.add(inner);
 }
 let insideDirty = false;

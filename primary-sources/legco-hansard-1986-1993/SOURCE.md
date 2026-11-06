@@ -1,7 +1,7 @@
-# Hong Kong Legislative Council, Official Record of Proceedings, 1986–1993
+# Hong Kong Legislative Council (香港立法局), Official Record of Proceedings, 1986–1993
 
 The English Hansard of every LegCo sitting from Oct 1986 to Jul 1993 that
-names the Walled City. That is 22 sittings out of 251.
+names the Walled City (九龍城寨). That is 22 sittings out of 251.
 
 - **Publisher:** Legislative Council of Hong Kong, www.legco.gov.hk
 - **URL pattern:** `https://www.legco.gov.hk/yr<SESSION>/english/lc_sitg/hansard/h<YYMMDD>.pdf`
@@ -51,9 +51,9 @@ Page numbers are PDF pages, not printed page numbers.
 | File | Date | PDF p. | Item | Key content |
 |---|---|---|---|---|
 | `h861203.pdf` | 1986-12-03 | 32 | Medical bills debate | A member says the Walled City "is no protection for criminals", about an illegal doctor who was prosecuted. |
-| `h870218.pdf` | 1987-02-18 | 23–24 | Written answer, Q9 (Dr Lam): "Clearance of Kowloon Walled City" | "about 10 000 families will be cleared from the walled city and they will need to be rehoused by 1990". The cost will include compensation and "the construction of a park on the site". |
+| `h870218.pdf` | 1987-02-18 | 23–24 | Written answer, Q9 (Dr Lam 林鉅成): "Clearance of Kowloon Walled City" | "about 10 000 families will be cleared from the walled city and they will need to be rehoused by 1990". The cost will include compensation and "the construction of a park on the site". |
 | `h871105.pdf` | 1987-11-05 | 62 | Chinese medicine debate | Passing comparison only. |
-| `h871202.pdf` | 1987-12-02 | 14–15 | Q8 (Dr Lam), Tate's Cairn Tunnel squatters | The KWC rehousing and compensation package goes to Finance Committee on 9 Dec 1987. The clearance is "a very special case … a problem left over from history". |
+| `h871202.pdf` | 1987-12-02 | 14–15 | Q8 (Dr Lam), Tate's Cairn Tunnel (大老山隧道) squatters | The KWC rehousing and compensation package goes to Finance Committee (財務委員會) on 9 Dec 1987. The clearance is "a very special case … a problem left over from history". |
 | `h880302.pdf` | 1988-03-02 | 19–20, 44, 54–55 | Budget speech 1988-89 | Spending growth peaks in 1988-89 because of KWC clearance payments. The project is "some 1.2 percentage points" of real growth. |
 | `h880316.pdf` | 1988-03-16 | 67 | Estimates | Budget line "Clearance of the Kowloon Walled City". |
 | `h880421.pdf` | 1988-04-21 | 61, 77 | Debate | The Government "intends to spend more than $2,000 million on the compensation package". |
@@ -65,13 +65,13 @@ Page numbers are PDF pages, not printed page numbers.
 | `h910123.pdf` | 1991-01-23 | 17–18 | Question on urban rehousing | Walled City residents get urban rehousing. A member speaks of people who "built illegal flats in Kowloon Walled City". |
 | `h910227.pdf` | 1991-02-27 | 52 | Debate on caged lodgers | Says the residents were resettled "expeditiously". |
 | `h910313.pdf` | 1991-03-13 | 46 | Estimates | Budget line only. |
-| `h911127.pdf` | 1991-11-27 | 111–112 | Debate on Home Ownership Scheme prices | "The Phase I of the Kowloon Walled City clearance exercise is going to be carried out today." Residents protest that rising flat prices make the offers too low. |
-| `h911204.pdf` | 1991-12-04 | 22–24 | Q6 (Eric Li): Assessment Review Board | The Board was set up in 1987 by the Housing Authority Special Committee on Clearance of KWC, to hear appeals on compensation. One appeal was heard by Dec 1991. |
-| `h920226.pdf` | 1992-02-26 | 15–18 | Question on Rennie's Mill clearance | The KWC clearance "was not a cottage area clearance but a unique case by any standards". Its ex gratia terms are not a precedent. |
+| `h911127.pdf` | 1991-11-27 | 111–112 | Debate on Home Ownership Scheme (居者有其屋計劃) prices | "The Phase I of the Kowloon Walled City clearance exercise is going to be carried out today." Residents protest that rising flat prices make the offers too low. |
+| `h911204.pdf` | 1991-12-04 | 22–24 | Q6 (Eric Li 李家祥): Assessment Review Board | The Board was set up in 1987 by the Housing Authority Special Committee on Clearance of KWC, to hear appeals on compensation. One appeal was heard by Dec 1991. |
+| `h920226.pdf` | 1992-02-26 | 15–18 | Question on Rennie's Mill (調景嶺) clearance | The KWC clearance "was not a cottage area clearance but a unique case by any standards". Its ex gratia terms are not a precedent. |
 | `h920311.pdf` | 1992-03-11 | 47 | Estimates | Budget line only. |
 | `h930303.pdf` | 1993-03-03 | 5 | Annex, allocation of rental flats | Flats allocated to the "Walled City" category: 900 (1989-90), 1 100 (1990-91), 1 200 (1991-92). |
 | `h930609.pdf` | 1993-06-09 | 87 | Housing debate | A member speaks of "some illegal landlords of Kowloon Walled City". |
-| `h930721.pdf` | 1993-07-21 | 7 | Public Accounts Committee report | The Director of Audit raised the ex gratia compensation for the clearance. PAC held two public hearings on it. |
+| `h930721.pdf` | 1993-07-21 | 7 | Public Accounts Committee (政府帳目委員會) report | The Director of Audit (核數署署長) raised the ex gratia compensation for the clearance. PAC held two public hearings on it. |
 
 ## Checksums (SHA-256)
 
@@ -114,3 +114,7 @@ text layer, so the search covered them. Chinese Hansard is not yet searched.
 - The Director of Audit's report (1993) and the PAC report on the ex gratia
   compensation.
 - Chinese-language Hansard for the same years.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- 3 Dec 1986, the Medicine and Dentistry by Unregistered Persons Bill: P20, P21.

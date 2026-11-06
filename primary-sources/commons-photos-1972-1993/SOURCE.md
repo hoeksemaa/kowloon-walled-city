@@ -1,6 +1,6 @@
 # Wikimedia Commons photographs, 1972–1993
 
-Original photographs of Kowloon Walled City, as uploaded to Wikimedia Commons.
+Original photographs of Kowloon Walled City (九龍城寨), as uploaded to Wikimedia Commons.
 Each file is a byte-identical copy of the Commons original. Its SHA-1 matches
 the `sha1` value that the Commons API gives.
 
@@ -20,7 +20,7 @@ photos record the city as it was. Commons is only the host.
 
 | File | Date | Author | License | What it shows |
 |---|---|---|---|---|
-| `KWC - 1972 Sing Tao.jpg` | 1972 | Ian Lambot (as credited) | CC BY 4.0 | Aerial view, city and Sai Tau Tsuen village. 800×392. |
+| `KWC - 1972 Sing Tao.jpg` | 1972 | Ian Lambot (as credited) | CC BY 4.0 | Aerial view, city and Sai Tau Tsuen (西頭村) village. 800×392. |
 | `KWC - 1973 Aerial.jpg` | 1973 | Ian Lambot (as credited) | CC BY 4.0 | Aerial view, city and Sai Tau Tsuen village. 800×800. |
 | `KWC - 1975.jpg` | 1975 | Ian Lambot (as credited) | CC BY 4.0 | South side of the city. 2896×1999. |
 | `Kowloon Walled City - 1989 Aerial.jpg` | 1989 | Ian Lambot | CC BY-SA 4.0 | Aerial view of the whole city, with the new park on the old Sai Tau Tsuen site to the south. 1942×1466. The best single image of the city at peak. |
@@ -30,7 +30,7 @@ photos record the city as it was. Commons is only the host.
 | `KWC - Alley.jpg` | "1993" | Ian Lambot | CC BY 4.0 | An alley inside the city. 800×1049. |
 | `KWC - Night.jpg` | "1993" | Ian Lambot | CC BY-SA 4.0 | A street at the edge of the city at night. 800×631. |
 | `KWC - Playground.jpg` | "1993" | Ian Lambot | CC BY 4.0 | A playground at the edge of the city. 800×632. |
-| `啓德,九龍城，黃大仙 - panoramio.jpg` | before 1994 | ken93110 | CC BY-SA 3.0 | Wide aerial view over Wong Tai Sin and Kowloon City to Kai Tak. The city is in the middle distance. 3072×2048. |
+| `啓德,九龍城，黃大仙 - panoramio.jpg` | before 1994 | ken93110 | CC BY-SA 3.0 | Wide aerial view over Wong Tai Sin (黃大仙) and Kowloon City (九龍城) to Kai Tak (啓德). The city is in the middle distance. 3072×2048. |
 
 Attribution text for reuse: "Photo: <Author>, <License>, via Wikimedia
 Commons". For CC BY-SA files, a derived image must use the same license.
@@ -42,11 +42,11 @@ Commons". For CC BY-SA files, a derived image must use the same license.
 - Commons dates three Lambot photos to "1993". That is the year that the book
   *City of Darkness* was published. The file pages give no shoot date. The
   photos are from before the demolition, which started in 1993.
-- The 1972 photo is titled "Sing Tao", and Sing Tao is a Hong Kong newspaper.
+- The 1972 photo is titled "Sing Tao", and Sing Tao (星島日報) is a Hong Kong (香港) newspaper.
   The photographer can be a Sing Tao photographer, not Lambot. The VRT
   ticket still covers the license.
 - The Jidanni caption says the city was "being dismanteled" in March 1989.
-  LegCo records show that Phase I clearance started on 27 Nov 1991 (see
+  LegCo (立法局) records show that Phase I clearance started on 27 Nov 1991 (see
   `../legco-hansard-1986-1993/`). Do not use that caption as a fact.
 - The panoramio date is only "before 1994", from the uploader.
 
@@ -75,3 +75,24 @@ vertical survey photo with no date. The city is only a few pixels in it. The
   photo (`Kowloon Walled City, Kowloon, China.tif`, 57.7 MB, "between 1960 and
   1980"). Its source, the Library of Congress, says "Publication may be
   restricted" (https://www.loc.gov/item/2010648314/). Thus I left it out for now.
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+An agent zoomed on the signs in four photos. The facts are P1–P13 and P31.
+
+- **Roger Price, Sept 1991, `九龍城寨 - Kowloon Walled City in 1991 (2350913856).jpg`**
+  (P1–P7). G/F shops on Lung Shing Road (龍城路): "黃美如牙科" (21 Lung Shing Rd in the
+  GRS 政府檔案處, HKRS1255-3-374); "牙科麥汝鋆" with a hanging sign "東正道11號" (17 Lung
+  Shing Rd in the GRS, HKRS1255-3-376); "世界牙科" with "陳發牙醫"; and a clinic
+  "…正診療所" (the first character is cut off). The last two are not in
+  `data/businesses.json`. In the photo, 17 is nearer the camera than 21. This
+  can show the direction of the Lung Shing Road numbers (a disagreement in
+  `data/room_research.json`).
+- **`KWC - 1975.jpg`** (P8–P11, P31). Window signs "廖廣森 … 跌打中醫診所" on an upper
+  floor at 1 Lung Chun Rd (龍津道) (P8, P9); two signs "麗光牙科" high on a new tower
+  under bamboo scaffolding (P10); "東成樓" painted on a facade (P11); and the
+  signs of iron works in one-storey sheds south of the City, outside it (P31).
+- **`KWC - Playground.jpg`** (P12). "東發樓" painted under the roof of a
+  tenement at 82–84 Lung Chun Rd, with laundry on nearly every upper floor.
+- **`KWC - Night.jpg`** (P13). At least four vertical dentist signs at
+  upper-floor level. The names are too small to read.

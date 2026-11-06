@@ -1,10 +1,10 @@
 # Gwulo: Andrew Suddaby's four photos of the city, 1 Nov 1987
 
 Four street photos by a visitor, at peak density: two of the north face on
-Tung Tau Tsuen Road, and two of the south side across open ground.
+Tung Tau Tsuen Road (東頭村道), and two of the south side across open ground.
 
 - **Link:** https://gwulo.com/photos/by-gallery?gallery=8687&page=1 (gallery
-  "1987 Andrew Suddaby's photos"; the four KWC photos are media 22835–22838).
+  "1987 Andrew Suddaby's photos"; the four KWC 九龍城寨 photos are media 22835–22838).
 - **Photographer:** Andrew Suddaby. He uploaded the photos to Gwulo on 14 Oct 2015.
 - **Date taken:** 1 Nov 1987 (as given on Gwulo).
 - **Retrieved:** 2026-10-29. I checked all gallery pages (0–2). These four
@@ -58,7 +58,7 @@ dentist part is a family memory. Use it as a lead for the street plan.
   street (literally big well street). My mom used to visit those illegal
   dentist once as she suffered from toothache at night."
 - Tai Tseng Street is 大井街. Check it against the street names on the
-  exhibit plan and the Suenn Ho base plan.
+  exhibit plan and the Suenn Ho (何巽) base plan.
 
 ## Captions (Suddaby's own words)
 
@@ -73,4 +73,8 @@ dentist part is a family memory. Use it as a lead for the street plan.
   area where the Walled City stood is now the Kowloon Fortress park."
 - 22838: "I think that the hill in the background might be Middle Hill, or
   possibly it's Diamond Hill. The fortune tellers had their stalls very close
-  to this spot." Gwulo also tags this photo with Tung Tau Estate.
+  to this spot." Gwulo also tags this photo with Tung Tau Estate (東頭邨).
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Gwulo 22835: T45. Gwulo 22836: T39 (with the M+ Girard photo). Gwulo 22837 and 22838: T46.

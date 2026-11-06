@@ -17,21 +17,20 @@ const MAP_PX = 2048;
 // the dirt paths, the courts, the pavements. NEAR: its box in the plan frame; NEAR_RES: metres
 // per pixel.
 const NEAR = { x0: -230, z0: -170, x1: 230, z1: 250 }, NEAR_RES = 0.15;
-const COL = {
-  ground: '#d9d6ce', open: '#d3cfc4', sports: '#cfd4c6', kerb: '#c7c3b9', road: '#a4a19a', dash: '#d8cfae',
-  city: '#77726a', yard: '#8a857b',
-  // the surroundings (data/surroundings.json), by surface; the cleared ground has the colour of
-  // the open ground of context.json, which goes on past the plate
-  dirt: '#cdb99b', path: '#c2ab88', cleared: '#d3cfc4', grass: '#bcc4a2', court: '#b7b3aa', courtLine: '#f6f4ee',
-  pavement: '#cdc9c0', kerbEdge: '#e9e6de', asphalt: '#8f8c86', fence: '#6f6b63', concrete: '#c6c2b8',
-};
-const SURFACE = { dirt: COL.dirt, path: COL.path, 'dirt-path': COL.path, cleared: COL.cleared, grass: COL.grass, court: COL.court,
-  pavement: COL.pavement, concrete: COL.concrete, asphalt: COL.asphalt };
+// The ground has no colours: the caller gives them (colors in buildGround), for example the
+// placeholder colours of the viewer (src/structureColors.js). colors.ground: a CSS colour for
+// each surface: ground, open, sports, kerb, road, city, yard, dirt, path, cleared, grass,
+// court, courtLine, pavement, kerbEdge, asphalt, fence, concrete. colors.building(id): the
+// colour (linear rgb) of the real building id of 1986.
+const surfaces = (COL) => ({ dirt: COL.dirt, path: COL.path, 'dirt-path': COL.path, cleared: COL.cleared, grass: COL.grass,
+  court: COL.court, pavement: COL.pavement, concrete: COL.concrete, asphalt: COL.asphalt });
 
 // Paints the ground into a 2D context g, for the box (x0, z0) of side w x h metres, px pixels
 // a metre: the open ground and the roads of data/context.json, then the surroundings of
-// data/surroundings.json (sur), then the lanes and yards of the City (city, from cityGround()).
-function paintGround(g, box, px, ctx, city, sur) {
+// data/surroundings.json (sur), then the lanes and yards of the City (city, from cityGround()),
+// in the colours COL (colors.ground).
+function paintGround(g, box, px, ctx, city, sur, COL) {
+  const SURFACE = surfaces(COL);
   const X = (x) => (x - box.x0) * px, Z = (z) => (z - box.z0) * px;
   g.fillStyle = COL.ground;
   g.fillRect(0, 0, g.canvas.width, g.canvas.height);
@@ -60,7 +59,7 @@ function paintGround(g, box, px, ctx, city, sur) {
   }
   // the court markings: each court a rectangle with its centre line, centre circle, the keys
   // and the three-point arcs left out (a structural model)
-  for (const f of feats) for (const c of f.courts || []) courtLines(g, X, Z, px, c);
+  for (const f of feats) for (const c of f.courts || []) courtLines(g, X, Z, px, c, COL.courtLine);
   for (const pass of ['kerb', 'road']) {
     g.strokeStyle = COL[pass];
     for (const r of ctx.roads) {
@@ -93,10 +92,10 @@ function paintGround(g, box, px, ctx, city, sur) {
 // The lines of one basketball court c = { centre: [x, z], axis: degrees in the plan frame (0:
 // along x), length, width } (28 x 15 m by default): the boundary, the centre line, the centre
 // circle and the two keys.
-function courtLines(g, X, Z, px, c) {
+function courtLines(g, X, Z, px, c, colour) {
   const L = c.length || 28, W = c.width || 15, a = ((c.axis || 0) * Math.PI) / 180, ca = Math.cos(a), sa = Math.sin(a);
   const P = (u, v) => [X(c.centre[0] + u * ca - v * sa), Z(c.centre[1] + u * sa + v * ca)];
-  g.strokeStyle = COL.courtLine; g.lineWidth = Math.max(0.12 * px, 0.8);
+  g.strokeStyle = colour; g.lineWidth = Math.max(0.12 * px, 0.8);
   const seg = (pts, close) => { g.beginPath(); pts.forEach((p, i) => (i ? g.lineTo(...P(...p)) : g.moveTo(...P(...p)))); if (close) g.closePath(); g.stroke(); };
   seg([[-L / 2, -W / 2], [L / 2, -W / 2], [L / 2, W / 2], [-L / 2, W / 2]], true);
   seg([[0, -W / 2], [0, W / 2]]);
@@ -107,10 +106,10 @@ function courtLines(g, X, Z, px, c) {
 }
 
 // A canvas texture of the ground over box (x0, z0, x1, z1) at res metres per pixel.
-function groundTexture(box, res, ctx, city, sur) {
+function groundTexture(box, res, ctx, city, sur, COL) {
   const cv = document.createElement('canvas');
   cv.width = Math.ceil((box.x1 - box.x0) / res); cv.height = Math.ceil((box.z1 - box.z0) / res);
-  paintGround(cv.getContext('2d'), box, 1 / res, ctx, city, sur);
+  paintGround(cv.getContext('2d'), box, 1 / res, ctx, city, sur, COL);
   const tex = new THREE.CanvasTexture(cv);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
@@ -140,7 +139,7 @@ function footMask(city) {
 
 // T: the terrain (src/terrain.js); ctx: data/context.json; city: cityGround() of the City model;
 // sur: data/surroundings.json. Returns { group, terrain, context } (three.js objects).
-export function buildGround(T, ctx, city, sur = null) {
+export function buildGround(T, ctx, city, sur, colors) {
   const group = new THREE.Group();
   // ---- the terrain ----
   const n = T.nx, pos = new Float32Array(n * n * 3), uv = new Float32Array(n * n * 2);
@@ -166,8 +165,8 @@ export function buildGround(T, ctx, city, sur = null) {
   geo.computeVertexNormals();
   const mask = footMask(city);
   const R = -T.x0;
-  const farTex = groundTexture({ x0: -R, z0: -R, x1: R, z1: R }, (2 * R) / MAP_PX, ctx, city, sur);
-  const near = groundTexture(NEAR, NEAR_RES, ctx, city, sur);
+  const farTex = groundTexture({ x0: -R, z0: -R, x1: R, z1: R }, (2 * R) / MAP_PX, ctx, city, sur, colors.ground);
+  const near = groundTexture(NEAR, NEAR_RES, ctx, city, sur, colors.ground);
   const mat = new THREE.MeshLambertMaterial({ map: farTex });
   mat.onBeforeCompile = (sh) => {
     sh.uniforms.uMask = { value: mask.tex };
@@ -190,12 +189,10 @@ export function buildGround(T, ctx, city, sur = null) {
 
   // ---- the real buildings of 1986, each standing on its lowest ground ----
   const P = [], N = [], Cl = [];
-  const base = new THREE.Color();
   for (const p of contextSolids(ctx, T)) {
     const { id, y0, y1 } = p;
-    const r = Math.sin(id * 12.9898) * 43758.5453;
-    base.setHSL(0.09 + (r - Math.floor(r)) * 0.03, 0.05, 0.8 + ((r * 7) % 1 + 1) % 1 * 0.07);
-    const put = (x, y, z, n, k) => { P.push(x, y, z); N.push(...n); Cl.push(base.r * k, base.g * k, base.b * k); };
+    const base = colors.building(id);
+    const put = (x, y, z, n, k) => { P.push(x, y, z); N.push(...n); Cl.push(base[0] * k, base[1] * k, base[2] * k); };
     for (let i = 0; i < p.ring.length; i++) {
       const [ax, az] = p.ring[i], [bx, bz] = p.ring[(i + 1) % p.ring.length];
       const l = Math.hypot(bx - ax, bz - az) || 1, n = [-(bz - az) / l, 0, (bx - ax) / l];

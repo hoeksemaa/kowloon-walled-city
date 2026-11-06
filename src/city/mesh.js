@@ -15,20 +15,12 @@ export const KIND = { WALL: 0, SLAB: 1, PART: 2, STAIR: 3, FLOOR: 4, ROOF: 5, LI
 const KIND_NAMES = Object.keys(KIND);
 export const kindName = (k) => KIND_NAMES[k] || '?';
 
-const lin = (v) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
-export function rgb(hex) {
-  const n = parseInt(hex.slice(1), 16);
-  return [lin(((n >> 16) & 255) / 255), lin(((n >> 8) & 255) / 255), lin((n & 255) / 255)];
-}
-const mul = (c, k) => [c[0] * k, c[1] * k, c[2] * k];
-const mix = (a, b, t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
-
-const C = {
-  inner: rgb('#d9d2c3'), slab: rgb('#9c968b'), slabEdge: rgb('#7d776d'), part: rgb('#e3dccd'),
-  stair: rgb('#8a8378'), landing: rgb('#a39c90'), hut: rgb('#b8b0a2'), parapet: rgb('#b3ab9d'),
-  corr: rgb('#8f877b'), roof: rgb('#a8a297'), tile: rgb('#5b5750'), link: rgb('#6f5d4b'), wood: rgb('#7b6347'),
-  unit: ['#c9b9a0', '#c2b49d', '#cdbfa8', '#bfae95', '#c6bba7', '#cab49a'].map(rgb),
-};
+// The parts of the mesh. The structure has no colours: the caller gives colorOf(part, b, k, u),
+// the colour (linear rgb) of each part, for example the placeholder colours of the viewer
+// (src/structureColors.js). u is the unit of a 'unit' floor, else -1. Without colorOf, the mesh
+// has no colour attribute.
+export const PARTS = ['wall', 'wallInside', 'slab', 'slabEdge', 'roof', 'parapet', 'tile', 'hut', 'partition',
+  'stair', 'landing', 'corridor', 'unit', 'link', 'wood'];
 
 class IntBuf {
   constructor(n = 1 << 16) { this.a = new Uint32Array(n); this.n = 0; }
@@ -38,16 +30,21 @@ class IntBuf {
   }
 }
 class Buf {
-  constructor() { this.p = new FloatBuf(); this.n = new FloatBuf(); this.c = new FloatBuf(); this.f = new FloatBuf(); this.idx = new IntBuf(); this.nv = 0; }
-  // A flat convex polygon of [x, y, z] corners, facing n.
-  face(P, n, c, info) {
+  constructor(colorOf = null) {
+    this.p = new FloatBuf(); this.n = new FloatBuf(); this.f = new FloatBuf(); this.idx = new IntBuf(); this.nv = 0;
+    this.colorOf = colorOf; this.c = colorOf ? new FloatBuf() : null;
+  }
+  // A flat convex polygon of [x, y, z] corners, facing n: a face of the part named part (PARTS);
+  // u is the unit of a 'unit' floor.
+  face(P, n, part, info, u = -1) {
+    const c = this.c && this.colorOf(part, info[0], info[1], u);
     let nx = 0, ny = 0, nz = 0;
     for (let i = 0; i < P.length; i++) {
       const a = P[i], b = P[(i + 1) % P.length];
       nx += (a[1] - b[1]) * (a[2] + b[2]); ny += (a[2] - b[2]) * (a[0] + b[0]); nz += (a[0] - b[0]) * (a[1] + b[1]);
     }
     const flip = nx * n[0] + ny * n[1] + nz * n[2] < 0, v = this.nv;
-    for (const q of P) { this.p.p3(q[0], q[1], q[2]); this.n.p3(n[0], n[1], n[2]); this.c.p3(c[0], c[1], c[2]); this.f.p3(info[0], info[1], info[2]); }
+    for (const q of P) { this.p.p3(q[0], q[1], q[2]); this.n.p3(n[0], n[1], n[2]); if (c) this.c.p3(c[0], c[1], c[2]); this.f.p3(info[0], info[1], info[2]); }
     for (let i = 1; i + 1 < P.length; i++) if (flip) this.idx.push(v, v + i + 1, v + i); else this.idx.push(v, v + i, v + i + 1);
     this.nv += P.length;
   }
@@ -85,7 +82,7 @@ class Buf {
   }
   arrays() {
     const idx = this.idx.a.subarray(0, this.idx.n);
-    return { position: this.p.view().slice(), normal: this.n.view().slice(), color: this.c.view().slice(), info: this.f.view().slice(),
+    return { position: this.p.view().slice(), normal: this.n.view().slice(), color: this.c ? this.c.view().slice() : null, info: this.f.view().slice(),
       index: this.nv > 65535 ? idx.slice() : Uint16Array.from(idx) };
   }
 }
@@ -128,17 +125,17 @@ function stairHoles(b) {
 }
 
 // shell: the walls, slabs, roofs, huts and links of each building. inside(b, k): the floors
-// whose inside (floor colours, partitions, stairs) to draw; the viewer asks for the floors that
+// whose inside (floors, partitions, stairs) to draw; the viewer asks for the floors that
 // its cut shows, thus the mesh stays small.
 // props: false leaves the ladders and stools out (buildProps draws them on their own).
-export function buildMesh(S, { triangulate, only = null, shell = true, inside = null, props = true } = {}) {
-  const out = new Buf();
+// colorOf(part, b, k, u): the colour of each part (see PARTS); without it, no colours.
+export function buildMesh(S, { triangulate, only = null, shell = true, inside = null, props = true, colorOf = null } = {}) {
+  const out = new Buf(colorOf);
   const openAt = new Map();
   for (const o of S.openings) { const key = `${o.b}:${o.k}`; if (!openAt.has(key)) openAt.set(key, []); openAt.get(key).push(o); }
 
   for (const b of S.list) {
     if (only && !only.has(b.id)) continue;
-    const face = rgb(b.color || '#a79f96');
     const holesUp = stairHoles(b);
     if (shell) {
 
@@ -150,14 +147,14 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const pts = tri.pts;
         for (let q = 0; q < tri.idx.length; q += 3) {
           const A = pts[tri.idx[q]], B = pts[tri.idx[q + 1]], D = pts[tri.idx[q + 2]];
-          out.face([[A[0], y, A[1]], [B[0], y, B[1]], [D[0], y, D[1]]], [0, 1, 0], kind === KIND.ROOF ? C.roof : C.slab, info);
-          out.face([[A[0], y - SLAB, A[1]], [B[0], y - SLAB, B[1]], [D[0], y - SLAB, D[1]]], [0, -1, 0], C.slab, info);
+          out.face([[A[0], y, A[1]], [B[0], y, B[1]], [D[0], y, D[1]]], [0, 1, 0], kind === KIND.ROOF ? 'roof' : 'slab', info);
+          out.face([[A[0], y - SLAB, A[1]], [B[0], y - SLAB, B[1]], [D[0], y - SLAB, D[1]]], [0, -1, 0], 'slab', info);
         }
         for (const ring of [P.outer, ...P.holes])
           for (let i = 0; i < ring.length; i++) {
             const A = ring[i], B = ring[(i + 1) % ring.length], dx = B[0] - A[0], dz = B[1] - A[1], l = Math.hypot(dx, dz);
             if (l < 1e-6) continue;
-            out.face([[A[0], y - SLAB, A[1]], [B[0], y - SLAB, B[1]], [B[0], y, B[1]], [A[0], y, A[1]]], [dz / l, 0, -dx / l], C.slabEdge, info);
+            out.face([[A[0], y - SLAB, A[1]], [B[0], y - SLAB, B[1]], [B[0], y, B[1]], [A[0], y, A[1]]], [dz / l, 0, -dx / l], 'slabEdge', info);
           }
       }
     };
@@ -198,7 +195,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
             const O0 = [A[0] + tx * t0, A[1] + tz * t0], O1 = [A[0] + tx * t1, A[1] + tz * t1];
             const I0 = t0 <= 1e-6 ? IA : [O0[0] - nx * WALL, O0[1] - nz * WALL];
             const I1 = t1 >= len - 1e-6 ? IB : [O1[0] - nx * WALL, O1[1] - nz * WALL];
-            out.prism([O0, O1, I1, I0], y0, y1, face, info, { sides: [1, t1 < len - 1e-6 ? 1 : 0, 1, t0 > 1e-6 ? 1 : 0], top, bottom, cIn: C.inner, inSide: 2 });
+            out.prism([O0, O1, I1, I0], y0, y1, 'wall', info, { sides: [1, t1 < len - 1e-6 ? 1 : 0, 1, t0 > 1e-6 ? 1 : 0], top, bottom, cIn: 'wallInside', inSide: 2 });
           }
         }
       });
@@ -215,7 +212,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const flush = (t1) => {
           if (t0 === null || t1 - t0 < 0.1) { t0 = null; return; }
           const O0 = [A[0] + tx * t0, A[1] + tz * t0], O1 = [A[0] + tx * t1, A[1] + tz * t1];
-          out.prism([O0, O1, [O1[0] - nx * PARAPET_T, O1[1] - nz * PARAPET_T], [O0[0] - nx * PARAPET_T, O0[1] - nz * PARAPET_T]], y, y + PARAPET, C.parapet, [b.id, b.n, KIND.ROOF], { top: true });
+          out.prism([O0, O1, [O1[0] - nx * PARAPET_T, O1[1] - nz * PARAPET_T], [O0[0] - nx * PARAPET_T, O0[1] - nz * PARAPET_T]], y, y + PARAPET, 'parapet', [b.id, b.n, KIND.ROOF], { top: true });
           t0 = null;
         };
         for (let t = 0; t < len; t += 0.25) {
@@ -242,23 +239,22 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const y = b.top, e = 0.35, ridge = y + Math.min(2.2, (F.w1 - F.w0) * 0.32), wm = (F.w0 + F.w1) / 2;
         const p = (a, w, yy) => { const [x, z] = toXZ(F, a, w); return [x, yy, z]; };
         const a0 = F.a0 - e, a1 = F.a1 + e, w0 = F.w0 - e, w1 = F.w1 + e, info = [b.id, b.n, KIND.ROOF];
-        out.face([p(a0, w0, y), p(a1, w0, y), p(a1, wm, ridge), p(a0, wm, ridge)], [0, 1, 0], C.tile, info);
-        out.face([p(a0, w1, y), p(a1, w1, y), p(a1, wm, ridge), p(a0, wm, ridge)], [0, 1, 0], C.tile, info);
+        out.face([p(a0, w0, y), p(a1, w0, y), p(a1, wm, ridge), p(a0, wm, ridge)], [0, 1, 0], 'tile', info);
+        out.face([p(a0, w1, y), p(a1, w1, y), p(a1, wm, ridge), p(a0, wm, ridge)], [0, 1, 0], 'tile', info);
         const [gx, gz] = [F.ux, F.uz];
-        out.face([p(a0 + e, w0 + e, y), p(a0 + e, w1 - e, y), p(a0 + e, wm, ridge - 0.1)], [-gx, 0, -gz], face, info);
-        out.face([p(a1 - e, w0 + e, y), p(a1 - e, w1 - e, y), p(a1 - e, wm, ridge - 0.1)], [gx, 0, gz], face, info);
+        out.face([p(a0 + e, w0 + e, y), p(a0 + e, w1 - e, y), p(a0 + e, wm, ridge - 0.1)], [-gx, 0, -gz], 'wall', info);
+        out.face([p(a1 - e, w0 + e, y), p(a1 - e, w1 - e, y), p(a1 - e, wm, ridge - 0.1)], [gx, 0, gz], 'wall', info);
       } else for (const r of b.phases[0].rings) parapet(r, b.top, null);
     }
 
     }
-    // ---- inside: floor colours, partitions, stairs ----
+    // ---- inside: floors, partitions, stairs ----
     for (let k = 0; k < b.n; k++) {
       if (!inside || !inside(b.id, k)) continue;
       const ph = b.phaseOf(k), plan = ph.plan, { R, code } = plan, y = b.y[k], yb = b.y[k + 1] - SLAB;
       const { ni, nj } = R;
-      // floor colours: rectangles of one code, grown greedily
+      // floors: rectangles of one code, grown greedily
       const used = new Uint8Array(code.length);
-      const colOf = (v) => (v === CORR || v === LANDING ? C.corr : C.unit[(v * 7 + b.id) % C.unit.length]);
       for (let j = 0; j < nj; j++)
         for (let i = 0; i < ni; i++) {
           const c0 = j * ni + i, v = code[c0];
@@ -276,7 +272,8 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
           for (let jj = j; jj <= j1; jj++) for (let q = i; q <= i1; q++) used[jj * ni + q] = 1;
           const a0 = R.A0 + i * G, a1 = R.A0 + (i1 + 1) * G, w0 = R.W0 + j * G, w1 = R.W0 + (j1 + 1) * G;
           const P = [toXZ(b.F, a0, w0), toXZ(b.F, a1, w0), toXZ(b.F, a1, w1), toXZ(b.F, a0, w1)].map(([x, z]) => [x, y + 0.006, z]);
-          out.face(P, [0, 1, 0], colOf(v), [b.id, k, KIND.FLOOR]);
+          if (v === CORR || v === LANDING) out.face(P, [0, 1, 0], 'corridor', [b.id, k, KIND.FLOOR]);
+          else out.face(P, [0, 1, 0], 'unit', [b.id, k, KIND.FLOOR], v - UNIT);
         }
       // partitions: on each boundary between two codes that need a wall, in straight runs
       const need = (p, q) => {
@@ -294,10 +291,10 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const yy1 = isDoor ? yb : yb;
         if (axis === 'a') {
           const a = R.A0 + line * G, w0 = R.W0 + p0 * G - ext0, w1 = R.W0 + p1 * G + ext1;
-          out.fbox(b.F, a - h, a + h, w0, w1, isDoor ? y + 2.0 : y, yy1, C.part, info, false, isDoor);
+          out.fbox(b.F, a - h, a + h, w0, w1, isDoor ? y + 2.0 : y, yy1, 'partition', info, false, isDoor);
         } else {
           const w = R.W0 + line * G, a0 = R.A0 + p0 * G - ext0, a1 = R.A0 + p1 * G + ext1;
-          out.fbox(b.F, a0, a1, w - h, w + h, isDoor ? y + 2.0 : y, yy1, C.part, info, false, isDoor);
+          out.fbox(b.F, a0, a1, w - h, w + h, isDoor ? y + 2.0 : y, yy1, 'partition', info, false, isDoor);
         }
       };
       // lines across a (between i - 1 and i)
@@ -333,12 +330,12 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
         const pa = stairParts(st), d = st.dir, h = b.h[k], T = st.tread;
         const nR = Math.ceil(h / st.rmax - 1e-9), r = h / nR;
         const sinfo = [b.id, k, KIND.STAIR];
-        const tread = (aFrom, aTo, w0, w1, top) => out.fbox(b.F, Math.min(aFrom, aTo), Math.max(aFrom, aTo), w0, w1, top - r - 0.12, top, C.stair, sinfo);
+        const tread = (aFrom, aTo, w0, w1, top) => out.fbox(b.F, Math.min(aFrom, aTo), Math.max(aFrom, aTo), w0, w1, top - r - 0.12, top, 'stair', sinfo);
         if (st.type === 'dogleg') {
           const n1 = Math.ceil(nR / 2), n2 = nR - n1, aL = pa.at(pa.LA), far = pa.at(pa.len);
           for (let j = 1; j < n1; j++) tread(aL + d * (j - 1) * T, aL + d * j * T, pa.lane1[0], pa.lane1[1], y + j * r);
           const yh = y + n1 * r;
-          const hl = (a0, w0, w1) => out.fbox(b.F, Math.min(a0, far), Math.max(a0, far), w0, w1, yh - 0.15, yh, C.landing, sinfo);
+          const hl = (a0, w0, w1) => out.fbox(b.F, Math.min(a0, far), Math.max(a0, far), w0, w1, yh - 0.15, yh, 'landing', sinfo);
           hl(aL + d * (n1 - 1) * T, pa.lane1[0], pa.lane1[1]);
           hl(aL + d * (n2 - 1) * T, pa.lane2[0], pa.lane2[1]);
           const wm0 = (st.w0 + st.w1) / 2;
@@ -346,7 +343,7 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
           for (let j = 1; j < n2; j++) tread(aL + d * (n2 - 1 - j) * T, aL + d * (n2 - j) * T, pa.lane2[0], pa.lane2[1], yh + j * r);
           // the wall between the two flights
           const wm = (st.w0 + st.w1) / 2, aEnd = aL + d * (Math.min(n1, n2) - 1) * T;
-          if (Math.abs(aEnd - aL) > 0.2) out.fbox(b.F, Math.min(aL, aEnd), Math.max(aL, aEnd), wm - 0.05, wm + 0.05, y, yb, C.part, info, true, false);
+          if (Math.abs(aEnd - aL) > 0.2) out.fbox(b.F, Math.min(aL, aEnd), Math.max(aL, aEnd), wm - 0.05, wm + 0.05, y, yb, 'partition', info, true, false);
         } else {
           // the flight ends at the top landing; a lower storey starts it later
           const aTop = pa.at(pa.len - pa.land);
@@ -369,26 +366,26 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
           [st.a0, st.a0 + t, st.w0, st.w1, false], [st.a1 - t, st.a1, st.w0, st.w1, false],
         ];
         for (const [a0, a1, w0, w1, door] of sides) {
-          if (!door) { out.fbox(F, a0, a1, w0, w1, y, y + HUT, C.hut, info, false, false); continue; }
-          out.fbox(F, a0, da - 0.4, w0, w1, y, y + HUT, C.hut, info, false, false);
-          out.fbox(F, da + 0.4, a1, w0, w1, y, y + HUT, C.hut, info, false, false);
-          out.fbox(F, da - 0.4, da + 0.4, w0, w1, y + 2.0, y + HUT, C.hut, info, false, true);
+          if (!door) { out.fbox(F, a0, a1, w0, w1, y, y + HUT, 'hut', info, false, false); continue; }
+          out.fbox(F, a0, da - 0.4, w0, w1, y, y + HUT, 'hut', info, false, false);
+          out.fbox(F, da + 0.4, a1, w0, w1, y, y + HUT, 'hut', info, false, false);
+          out.fbox(F, da - 0.4, da + 0.4, w0, w1, y + 2.0, y + HUT, 'hut', info, false, true);
         }
-        out.fbox(F, st.a0 - 0.1, st.a1 + 0.1, st.w0 - 0.1, st.w1 + 0.1, y + HUT, y + HUT + 0.12, C.roof, info);
+        out.fbox(F, st.a0 - 0.1, st.a1 + 0.1, st.w0 - 0.1, st.w1 + 0.1, y + HUT, y + HUT + 0.12, 'roof', info);
       }
     // ---- a roof room (model.js): four walls with a door toward the middle of the roof, a roof ----
     if (shell && b.roofRoom && b.roofOpen) {
       const R = b.roofRoom, y = b.top, F = b.F, t = 0.12, info = [b.id, b.n, KIND.HUT];
       const mid = (R.a0 + R.a1) / 2, ds = Math.abs(R.w1 - (F.w0 + F.w1) / 2) < Math.abs(R.w0 - (F.w0 + F.w1) / 2) ? 1 : -1;
       for (const [w0, w1, door] of [[R.w0, R.w0 + t, ds < 0], [R.w1 - t, R.w1, ds > 0]]) {
-        if (!door) { out.fbox(F, R.a0, R.a1, w0, w1, y, y + HUT, C.hut, info, false, false); continue; }
-        out.fbox(F, R.a0, mid - 0.4, w0, w1, y, y + HUT, C.hut, info, false, false);
-        out.fbox(F, mid + 0.4, R.a1, w0, w1, y, y + HUT, C.hut, info, false, false);
-        out.fbox(F, mid - 0.4, mid + 0.4, w0, w1, y + 2.0, y + HUT, C.hut, info, false, true);
+        if (!door) { out.fbox(F, R.a0, R.a1, w0, w1, y, y + HUT, 'hut', info, false, false); continue; }
+        out.fbox(F, R.a0, mid - 0.4, w0, w1, y, y + HUT, 'hut', info, false, false);
+        out.fbox(F, mid + 0.4, R.a1, w0, w1, y, y + HUT, 'hut', info, false, false);
+        out.fbox(F, mid - 0.4, mid + 0.4, w0, w1, y + 2.0, y + HUT, 'hut', info, false, true);
       }
-      out.fbox(F, R.a0, R.a0 + t, R.w0, R.w1, y, y + HUT, C.hut, info, false, false);
-      out.fbox(F, R.a1 - t, R.a1, R.w0, R.w1, y, y + HUT, C.hut, info, false, false);
-      out.fbox(F, R.a0 - 0.1, R.a1 + 0.1, R.w0 - 0.1, R.w1 + 0.1, y + HUT, y + HUT + 0.12, C.roof, info);
+      out.fbox(F, R.a0, R.a0 + t, R.w0, R.w1, y, y + HUT, 'hut', info, false, false);
+      out.fbox(F, R.a1 - t, R.a1, R.w0, R.w1, y, y + HUT, 'hut', info, false, false);
+      out.fbox(F, R.a0 - 0.1, R.a1 + 0.1, R.w0 - 0.1, R.w1 + 0.1, y + HUT, y + HUT + 0.12, 'roof', info);
     }
   }
 
@@ -401,15 +398,15 @@ export function buildMesh(S, { triangulate, only = null, shell = true, inside = 
       for (let s = 1; s <= n; s++) {
         const o0 = (n - s) * 0.28, o1 = o0 + 0.28, y1 = d.ground + ((d.y - d.ground) * s) / n;
         const P = (t, o) => [d.x + tx * t + d.n[0] * o, d.z + tz * t + d.n[1] * o];
-        out.prism([P(-d.w / 2, o0), P(d.w / 2, o0), P(d.w / 2, o1), P(-d.w / 2, o1)], d.ground - 0.3, y1, C.landing, info, { top: true });
+        out.prism([P(-d.w / 2, o0), P(d.w / 2, o0), P(d.w / 2, o1), P(-d.w / 2, o1)], d.ground - 0.3, y1, 'landing', info, { top: true });
       }
     }
     if (d.kind === 'bridge') {
-      out.deck([d.x, d.z], [d.x2, d.z2], d.y, d.yc, 0.9, 0.15, C.link, info);
+      out.deck([d.x, d.z], [d.x2, d.z2], d.y, d.yc, 0.9, 0.15, 'link', info);
       const dx = d.x2 - d.x, dz = d.z2 - d.z, l = Math.hypot(dx, dz) || 1, nx = -dz / l, nz = dx / l;
       for (const s of [-1, 1]) {
         const o = s * 0.42;
-        out.deck([d.x + nx * o, d.z + nz * o], [d.x2 + nx * o, d.z2 + nz * o], d.y + 1.0, d.yc + 1.0, 0.05, 1.0, C.link, info);
+        out.deck([d.x + nx * o, d.z + nz * o], [d.x2 + nx * o, d.z2 + nz * o], d.y + 1.0, d.yc + 1.0, 0.05, 1.0, 'link', info);
       }
     }
     if (props && d.stool) stool(out, d, info);
@@ -464,7 +461,7 @@ function hipRoof(out, b, rings, y, triangulate) {
           const l = Math.hypot(nx, ny, nz);
           if (l < 1e-9) continue;
           if (ny < 0) { nx = -nx; ny = -ny; nz = -nz; }
-          out.face([A, B, D], [nx / l, ny / l, nz / l], C.tile, info);
+          out.face([A, B, D], [nx / l, ny / l, nz / l], 'tile', info);
         }
       }
   }
@@ -473,7 +470,7 @@ function hipRoof(out, b, rings, y, triangulate) {
 // A stool under a corridor window (links.js): a plain box.
 function stool(out, d, info) {
   const { x, z, y, h } = d.stool;
-  out.prism([[x - 0.2, z - 0.2], [x + 0.2, z - 0.2], [x + 0.2, z + 0.2], [x - 0.2, z + 0.2]], y, y + h, C.wood, info, { top: true });
+  out.prism([[x - 0.2, z - 0.2], [x + 0.2, z - 0.2], [x + 0.2, z + 0.2], [x - 0.2, z + 0.2]], y, y + h, 'wood', info, { top: true });
 }
 // A ladder from roof to roof (links.js): a plain slab flat against the wall of the higher
 // building, on the lower roof, from the lower roof to 1 m over the higher roof: the top of its
@@ -484,14 +481,14 @@ function ladder(out, d, info, S) {
   const hi = Math.max(d.y, d.yc), lo = Math.min(d.y, d.yc), [nx, nz] = d.n, tx = -nz, tz = nx;
   const g = S.list[d.c]?.parapet ? PARAPET_T : 0;
   const at = (t, o) => [d.x + tx * t + nx * (g + o), d.z + tz * t + nz * (g + o)];
-  out.deck(at(0, 0.02), at(0, 0.42), lo + 0.02, lo + 0.02, 0.5, 0.02, C.wood, info);
-  out.prism([at(-0.25, 0.05), at(0.25, 0.05), at(0.25, 0.1), at(-0.25, 0.1)], lo, hi + PARAPET, C.wood, info, { top: true });
+  out.deck(at(0, 0.02), at(0, 0.42), lo + 0.02, lo + 0.02, 0.5, 0.02, 'wood', info);
+  out.prism([at(-0.25, 0.05), at(0.25, 0.05), at(0.25, 0.1), at(-0.25, 0.1)], lo, hi + PARAPET, 'wood', info, { top: true });
 }
 
 // The ladders (kind 'ladder') or the stools (kind 'stool') only, as one mesh, and the top of
 // each one (for a marker): { arrays, tops: [[x, y, z]] }.
-export function buildProps(S, kind) {
-  const out = new Buf(), tops = [];
+export function buildProps(S, kind, { colorOf = null } = {}) {
+  const out = new Buf(colorOf), tops = [];
   for (const d of S.doors) {
     const info = [d.b, d.k ?? 0, KIND.LINK];
     if (kind === 'stool' && d.stool) { stool(out, d, info); tops.push([d.stool.x, d.stool.y + d.stool.h, d.stool.z]); }

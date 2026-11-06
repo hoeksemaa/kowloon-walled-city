@@ -2,7 +2,7 @@
 
 Field research by the architect Suenn Ho (何巽), inside the city during the
 last years before the clearance. The archive has 12 VHS cassettes (11 are
-listed online) and 3 route maps. Suenn Ho gave it to M+, Hong Kong, in 2015.
+listed online) and 3 route maps. Suenn Ho gave it to M+, Hong Kong (香港), in 2015.
 
 - **Holder:** M+, Hong Kong. Object number CA17.
 - **Record:** https://www.mplus.org.hk/en/collection/archives/suenn-hos-kowloon-walled-city-research-archive-ca17/
@@ -45,6 +45,27 @@ This base plan has more detail than the exhibit plan that `data/plan.json`
 comes from. The maker and date of the base plan are not given. At 1000 px,
 many labels are hard to read. A scan at full size from M+ will make them clear.
 
+### The house numbers (2026-11-05)
+
+`data/address_anchors.json` has the labels read from the 1000 px images
+(numbers only, no image), each with its pixel on copy CA17/2/3 and its point
+on `data/plan.json`. `tools/route_map_fit.py` fits the plan to the map (median
+error 0.4 m), and `tools/addresses.mjs` gives the model building of an address.
+What the map shows:
+
+- Tung Tau Tsuen Road: 40 at the west end down to 2 at the east end, one side.
+- Lung Chun Road (龍津道), the south road: 160 at the west end down to 72 at the
+  south-east corner, even numbers only. Lung Chun Road 1-70 (odd and even, in
+  the GRS files) are not on this map.
+- Sai Shing Road (西城路): falling from north to south.
+- Kwong Ming Street (光明街): 1-3 at the south end up to 52 in the north, even
+  numbers on the east side and odd numbers on the west side.
+- Lung Shing Road (龍城路): 7 in the south up to 69 in the north, odd numbers on
+  the east side and even numbers on the west side.
+
+The inner streets of the south half (Lo Yan Street (老人街), Tai Chang Street
+(大井街), Sz Kung Street (社公街)) are faint at 1000 px and are only partly read.
+
 | Object | Date | Medium, size | Notes |
 |---|---|---|---|
 | CA17/2/1 | 20 Nov 1991 – 24 Feb 1992 | photocopy, ink, marker; 29.7 × 41.6 cm | "City route I, Nov. 20 91, shot #1 #2" and "Route #4,5,6 shot 24/2". Note on the back about *Family and Kinship in East London* (1957). |
@@ -57,14 +78,14 @@ many labels are hard to read. A scan at full size from M+ will make them clear.
 |---|---|---|---|
 | CA17/1/1 | 20–21 Nov 1991, 24 Feb 1992 | 90:22 | Routes 1–6 and a roof garden. |
 | CA17/1/2 | 24 Feb 1992 | 34:18 | Copy of the 24 Feb 1992 footage in cassette 1. Routes 2–5, roof garden. |
-| CA17/1/3 | 1988 | 27:39 | RTHK documentary "Kowloon Walled City Stories" (1988), and demolition videos labelled "Bristol" and "Sydney". |
+| CA17/1/3 | 1988 | 27:39 | RTHK (香港電台) documentary "Kowloon Walled City Stories" (九龍城寨的故事) (1988), and demolition videos labelled "Bristol" and "Sydney". |
 | CA17/1/4 | 19 Nov 1991 | 78:42 | Interview with K.K. Siu (蕭國健). |
 | CA17/1/6 | 15 and 17 Nov 1989; 22 Oct 1991 | 83:29 | Footage by Po-Chih Leong (梁普智) in 1989, and by Suenn Ho in 1991. |
 | CA17/1/7 | Oct 1991 | 81:48 | Interview in English with Michael Chang, a feng shui expert, "on the history and spatial formation of the city". Part 1. |
 | CA17/1/8 | 29 Oct 1991 | 35:08 | Interview with Liang Tao (梁濤). |
 | CA17/1/9 | 14 Nov 1991 | 17:26 | Interviews with residents. |
 | CA17/1/10 | [1991] | 38:28 | Michael Chang interview, part 2. |
-| CA17/1/11 | 23 Feb – 3 Mar 1992 | 68:55 | Alleys and shop interiors (24 Feb and 2 Mar 1992). Police and media at the edge of the city (3 Mar 1992). Also Tao Ho's office in Kowloon Tong. |
+| CA17/1/11 | 23 Feb – 3 Mar 1992 | 68:55 | Alleys and shop interiors (24 Feb and 2 Mar 1992). Police and media at the edge of the city (3 Mar 1992). Also Tao Ho's (何弢) office in Kowloon Tong (九龍塘). |
 | CA17/1/12 | 21 Nov 1991 | 52:17 | Phase one clearance: "remaining shops before clearance, and interviews with remaining shopkeepers and food manufacturers". |
 
 Cassette 5 is not listed online.

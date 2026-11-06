@@ -1,6 +1,6 @@
 # M+ photographs by Greg Girard and Ian Lambot, 1987–1991
 
-The eight Kowloon Walled City photos by Girard and Lambot that M+ shows
+The eight Kowloon Walled City (九龍城寨) photos by Girard and Lambot that M+ shows
 online. The two photographers worked in the city for about five years before
 the clearance, for the book *City of Darkness* (1993).
 
@@ -26,7 +26,7 @@ are from 2013–2015, but the negatives are from 1987–1991.
 | 2017.412 | Lambot | 1990 | South Elevation | The whole south face from the park. You can count the storeys of each building. |
 | 2017.410 | Lambot | 1990 | Caged Balconies | Facade detail: metal cages on balconies. |
 | 2017.411 | Lambot | 1991 | Shared staircase linking three buildings | Inside: how stairs join buildings. |
-| 2018.4 | Girard | 1987 | Tung Tau Tsuen Road facade | North edge: shop signs and flats on the main road. |
+| 2018.4 | Girard | 1987 | Tung Tau Tsuen Road facade (東頭村道建築外牆) | North edge: shop signs and flats on the main road. |
 | 2018.2 | Girard | 1989 | Children on Rooftop | The roofs. |
 | 2018.1 | Girard | 1990 | Alley View #2 | Inside an alley. |
 | 2018.3 | Girard | 1990 | Alley View #3 | Inside an alley. |
@@ -61,3 +61,7 @@ eda043f8968473ac0e50324382ee41bba8961a13a6744c99b9d683a7c8ea1f9e  mplus-20183_00
 f23bb2c768a9274f216efcb292f7541bfa19efe3d600212d0a5010250be4fefa  mplus-20184_008349_003.jpg
 03f980193f20f27e84bc8309fe7d895411da1fe139377f47f312fefbbd2d09f1  mplus-20184.html
 ```
+
+## Room facts in `data/room_research.json` (2026-11-05)
+
+- Greg Girard, "Tung Tau Tsuen Road facade" (1987), M+ 2018.4: the signs T39–T44.
