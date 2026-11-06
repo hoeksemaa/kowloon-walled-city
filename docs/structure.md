@@ -2,11 +2,10 @@
 
 **This is the definitive 3D structure of Kowloon Walled City (九龍城寨) and of the terrain and city round
 it (John, 2026-11-04).** It is the structural foundation of all later work: the art, the
-visuals and the simulation build on it. Each earlier 3D model of the City is superseded. The
-3D city of the main app (`index.html`: `src/cityMesh.js`, `src/floorplan.js`,
-`src/facades.js`, `src/roofs.js`, `src/interiors.js`, and the surroundings in `src/env.js`) is
-no longer the model of the City. Its code stays only so that the main app runs until it
-moves to this structure.
+visuals and the simulation build on it. Each earlier 3D model of the City is superseded.
+Since 2026-11-06 the main app (`index.html`) draws this structure too, as floor layers
+(`src/cityLayers.js`); its old 3D city (`src/cityMesh.js` and the files that it used) is
+deleted.
 
 It is a structural model only: walls, floors, stairs, rooms, the ways between them and the
 paving of the routes. It has no furniture, signs, window cages or TV masts. It has no
@@ -67,7 +66,7 @@ separate in the code:
 | The City | `src/city/` | `data/plan.json`, `data/plan_fine.json`, `data/book_overlay.json`, `data/structure_fixes.json`, `data/structure_choices.json` | every building of the City, its storeys, floors, stairs, rooms, roofs, the links between them, and the SW-NE route |
 | The surroundings | `src/surroundings/` (`shapes.js`: the shapes, no three.js; `ground.js`: draws them) | `data/context.json`, `data/surroundings.json` | context: the roads, the paths, the courts and the real buildings of 1986 round the City |
 | Shared input | `src/terrain.js`, `src/layout.js` (with `src/footprint.js`, `src/floorplan.js`, `src/residents.js`, `src/context.js`), `src/util.js` | `data/terrain.json`, `data/book.json`, `data/businesses.json` | the ground levels, and the reader of the plan (the main app uses them too) |
-| The viewer | `src/structureViewer.js`, `structure.html` | | the one place that puts the two parts together |
+| The viewer and the main app | `src/structureViewer.js` (`structure.html`); `src/main.js` with `src/cityLayers.js` (`index.html`) | | the two places that put the two parts together |
 
 `src/city/` does not import `src/surroundings/`, and `src/surroundings/` does not import
 `src/city/`. The City model does not read the data of the surroundings: with or without
@@ -167,7 +166,7 @@ The 1 m plan gives each cell to one plot, thus a plot line at an angle was a sta
   becomes a straight line, at the angle of the drawn walls round it or at a right angle to
   them.
 - `buildLayout()` takes the outlines of the buildings and of the lanes from the fine plan
-  when `plan.fine` is there (the structure only; the main app does not change). A building
+  when `plan.fine` is there (the structure, the viewer and the main app). A building
   has no part narrower than 0.75 m and is one piece; the outlines are simplified to 0.75 m.
 - The result: 56 % of the length of the walls lies on the axis of its building (46 % with
   the 1 m plan), and 18 % is oblique (26 %). The lanes have about 8 % less area (5326 m², 5759 m²
@@ -310,12 +309,17 @@ with John's approval.
   into the haze from 350 m to 600 m, as in the main app. There is no plate under the City.
 - `src/structureViewer.js`: the viewer. A cut at any height, a vertical section, x-ray
   walls, the floors of a building on a click (with its units by kind and its source), and
-  routes. `src/structureColors.js`: its placeholder colours.
+  routes. `src/structureColors.js`: its placeholder colours, which the main app uses too.
+- `src/cityLayers.js` (the main app): the same mesh, cut into one layer for each floor index
+  (the roof of a building of n storeys is layer n). The layers pull apart with a clear gap of
+  6 m between them, and a peel takes away all that is over one storey, with the walls of that
+  storey cut 1.2 m over each floor. It does not change the structure: it only moves and hides
+  the parts that `mesh.js` makes.
 
 ## Not done yet
 
-- The simulation (people, labels) still runs only on the old, superseded model of
-  the main app. It must move to this structure.
+- The simulation (people, labels, the game Find them) sat on the old model of the main app.
+  The main app does not load it now: it must move to this structure.
 - Mezzanines (p209), rooms inside a flat, and lanes with steps.
 - The rates of doors, bridges, holes, ladders and windows are guesses. More sources can set
   them.

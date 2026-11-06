@@ -14,12 +14,17 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
   - `src/surroundings/`: **the surroundings** of the structure. `ground.js` (the terrain,
     roads, paths, courts and the real buildings of 1986) and `shapes.js` (their solids).
   - `src/structureViewer.js` and `src/roomUses.js`: the viewer of `structure.html`, with the
-    room uses of December 1986. `src/structureColors.js`: the viewer's placeholder colours.
-  - The other files: the main app of `index.html` (`main.js`, `people.js`, `routes.js`,
-    `planes.js`, `labels.js`, `game.js`, `style.css` and others). `cityMesh.js`,
-    `floorplan.js`, `facades.js`, `roofs.js` and `interiors.js` are its superseded 3D city.
-    The structure and its viewer also use `layout.js`, `footprint.js`, `context.js`,
-    `terrain.js`, `site.js`, `env.js` (the light) and `util.js`.
+    room uses of December 1986. `src/structureColors.js`: the placeholder colours of the
+    viewer and the main app.
+  - The main app of `index.html`: `main.js`, `cityLayers.js` (the structure as floor layers),
+    `buildingPanel.js`, `notes.js`, `planes.js` with `approach.js`, `post.js` and
+    `style.css`. The structure, the viewer and the main app also use `layout.js`,
+    `footprint.js`, `floorplan.js`, `context.js`, `residents.js`, `terrain.js`, `site.js`,
+    `env.js` (the light) and `util.js`.
+  - Not loaded now: the people, the labels and the game of the main app (`people.js`,
+    `routes.js`, `crowd.js`, `figures.js`, `game.js`, `labels.js`, `occlude.js`, `useMap.js`,
+    `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app, and wait
+    to move onto the structure (see "Not yet on the structure" below).
 - `data/`: the data that the code reads, mostly JSON.
   - The plan: `plan.json` (the 1980s street plan, traced on 1 m cells: lanes and 474 plots)
     and `plan_fine.json` (the same plan on 0.25 m cells, for the outlines of the structure).
@@ -61,8 +66,9 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     (`data/businesses.json`), `book_overlay.py` (`data/book_overlay.json`), `context.py`
     with its input `context_input.json` (`data/context.json`), and `terrain.py`
     (`data/terrain.json`).
-  - The checks of the main app and its data: `check_layout.mjs`, `check_context.mjs`,
-    `check_game.mjs`, and `check_stack.js` (it runs in the browser).
+  - `check_stack.js` checks the floor layers of the main app (it runs in the browser).
+  - The checks of the layout, the surroundings data and the code that waits to move onto the
+    structure: `check_layout.mjs`, `check_context.mjs` and `check_game.mjs`.
 - `primary-sources/`: the evidence. One folder for each primary source: a record made at the
   time, or a first-hand account given later. Each folder has a `SOURCE.md` with the citation,
   link, licence, why the source is primary, and the key facts with their pages. If facts of
@@ -111,16 +117,17 @@ only for a large error that a new source shows, and only when John approves it. 
   from the SW corner to the NE corner.
 - `src/surroundings/`: **the surroundings**, context only: the terrain, the roads, paths and
   courts, and the real buildings of 1986 round the City.
-- `src/structureViewer.js` (`structure.html`): the viewer, the one place that puts the two
-  together. Its "Room uses" panel (`src/roomUses.js`, `data/room_uses.json`) shows one floor of
+- `src/structureViewer.js` (`structure.html`): the viewer, which puts the two together. The
+  main app (below) puts them together too. Its "Room uses" panel (`src/roomUses.js`, `data/room_uses.json`) shows one floor of
   each building at a time, colours each room by its use in December 1986 or by its certainty
   (verified, likely, guess), filters the rooms by category and certainty, and finds a
   documented place by name. A click on a room gives its use, its certainty and its sources.
   See [docs/rooms.md](docs/rooms.md).
 
-The two parts do not import each other. The structure has no colours: the viewer gives its
-placeholder colours (`src/structureColors.js`). Only the structure is definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
-app (below).
+The two parts do not import each other. The structure has no colours: the viewer and the
+main app give their placeholder colours (`src/structureColors.js`). Only the structure is
+definitive. Each earlier 3D model of the City is superseded. The old 3D city of the main app
+is deleted.
 
 ## Run
 
@@ -130,117 +137,75 @@ python3 serve.py 8173
 # open http://127.0.0.1:8173/                 the main app
 ```
 
-## The main app (on the superseded 3D city)
+## The main app
 
-The main app (`index.html`) runs the simulation of the week on an older 3D city
-(`src/cityMesh.js`, `src/floorplan.js`, `src/facades.js`, `src/roofs.js`,
-`src/interiors.js`). That 3D city is superseded by the definitive structure above. Its code
-stays only so that the main app runs until it moves to the definitive structure
-(`src/layout.js` also still calls two functions of `src/floorplan.js`). The rest of this
-section describes the main app.
+The main app (`index.html`, `src/main.js`) shows the definitive structure: the City
+(`src/city/`) on its surroundings (`src/surroundings/`), built as the viewer builds it. It
+was made new on 2026-11-06, when John chose to start fresh with the structure. The 3D city
+that it showed before (`cityMesh.js`, `facades.js`, `roofs.js`, `interiors.js`, `signs.js`) is
+deleted.
 
-### What is in the model
-
-- **Buildings.** 474 plots from the 1980s street plan, drawn as polygons with window
-  cages, signs, roof tanks and aerials. The 1987 figure-ground plan joins them into 286
-  towers (270 if the 17 Yamen (衙門) halls count as one). A check by eye against that plan
-  changed 27 of them. The heights on the south face come from Lambot's 1990 south elevation.
-- **Select a building.** Click a building to select it, and click it again to deselect it. A
-  building is one tower of the 1987 plan, and the 17 halls of the Yamen are one building: 270 in
-  all. A line marks its outline on each storey, and a faint line shows the outline through the
-  buildings in front. The building takes a light warm tint, and the rest of the city keeps its
-  light. In the layered view each storey has its own outline, and in a cut the line runs at the
-  section. Point at a building to see its name and storeys.
-- **Building panel.** The selected building has a panel at the foot of the screen, with facts
-  about the building only and no list of people. It gives the name, the storeys, the footprint,
-  the blocks with their addresses, and the use of each storey in the colours of the legend. It
-  also gives the premises of the clearance files and the book, the flats and the number of
-  simulated residents. It gives the stairs, the links to other buildings and the sources. Click a
-  storey in the panel to cut the city there, or click the x to deselect the building.
-- **Clicks.** A click on a label opens its card. Else a click tests a person first, then a
-  building. Only one thing at a time is selected: a click on a person deselects the building,
-  and a click on a building deselects the person. A click on the ground or the sky deselects
-  both. Only the left button clicks: the right button pans, and a right click selects nothing.
-  If the sources panel is open, the first Esc closes it. Else the first Esc deselects all that
-  is selected, and the next Esc clears the cut. In an open case of the game, a click on a
-  building only selects it and is not a guess.
-- **Floor plans.** Stairs, corridors and units on each storey, after Suenn Ho's stair
-  types. The model has 260 stairs, and its home floors hold 8,725 flats, against the book's
-  8,800. Cut a storey (the floor list on the right) to see the plan, and point at a unit to
-  see its name and size. The cut is a level section 1.1 m above the floor of that storey.
-  It removes all that rises higher, on every storey: also the signs, aerials, roof huts and
-  lines of the lower storeys. In the layered view (key E), each storey below the cut is
-  darker and greyer than the storey above it, thus the plan stands out. The normal view has
-  no such dim: only the sun, the sky and the lamps light it.
-- **Floor uses.** The legend lists the floor uses of the cut storey. Point at a use to light
-  it on the plan, and click it to keep it lit. The use stays lit when you step through the
-  storeys, until you press Esc. The rest of the cut storey goes grey, but the other storeys and
-  the light of the normal view do not change. A solid outline marks a recorded trade, and a
-  dashed outline marks a trade inferred from the 1983 Kai Fong (九龍城砦街坊福利事業促進委員會) count. Shop, workshop and
-  clinic floors have a light tint of their legend colour; the floors of flats keep their own
-  colours.
-- **Businesses.** 459 premises from the clearance files (GRS HKRS1255-3), with their real
-  names on the signs. Inferred floors fill the total to the 1983 Kai Fong count of 645.
-- **Routes.** People walk from their room to the door, along the corridor and up or down
-  the stair. They cross to other buildings through links and bridges and over the roofs,
-  or go down to the lanes, whichever is quicker. The network has 560 links between towers,
-  36 bridges over lanes and 216 roof crossings.
-- **Style.** Colours, cages, stains, signs and light come from about 110 patches measured in
-  the photos of City of Darkness Revisited. The lanes are dark, with pools of light under
-  the tubes; at night the windows are blue-white, and Kowloon (九龍) beyond is dark, with a faint
-  sodium glow.
-- **Surroundings.** The real buildings, roads and open ground of December 1986 stand round
-  the City, at one level with it. The buildings rise to their heights in light warm greys,
-  cast shadows, and show a few lit windows at night. The roads have their widths, kerbs, and
-  centre-line dashes near the City. The dark street under the City ends at the road kerbs.
-  A building that hides any part of the City fades in 0.25 s to a faint dotted ghost. It
-  comes back when it no longer hides the City. Its shadow does not change. A click through a
-  ghost reaches the City; a click on a solid building does not.
-  All of it is clear out to 350 m from the centre, fades slowly into the haze, and is gone
-  at 600 m. The sky and the haze follow the light of the city: pale grey by day, warm at
-  dusk, dark slate at night.
+- **Floor layers.** `src/cityLayers.js` draws the City as one layer for each floor index.
+  Layer k holds the slab at floor k of each building and all that stands on it up to the
+  next slab: the walls, rooms, partitions, stairs and links of that storey. The roof of a
+  building of n storeys, with all that is on it (parapets, stair huts, roof rooms, ladders),
+  is layer n.
+- **Pull the floors apart (E).** All the G/F floors go in one layer, all the 1/F floors in
+  the next, and so on. Each floor keeps its true place in its layer. The G/F floors range
+  over 15 m of the slope (7.9 to 23.2 mPD), thus the G/F of a building up the slope can
+  stand higher than the 1/F of a building lower down. Between the highest point of each
+  layer and the lowest point of the next there are at least 6 m of clear air (`GAP`). A
+  plate at the west end names each layer.
+- **Peel to a storey.** Click a storey on the rail at the right, or use the arrow keys. All
+  the floors over that storey go, with all the roofs over it and all that is on them. The
+  walls of that storey end 1.2 m over each building's own floor (`PEEL_H`). Thus every room
+  of that storey shows from above. A lower building shows its roof. The peel works also with
+  the floors apart. Esc takes it away.
+- **Select a building.** Point at a building to see its name and storeys. Click it to select
+  it: it takes a warm tint, and a panel gives its facts from the structure (where its storeys
+  come from, its heights in mPD, its footprint, its stairs and links). The panel lists each
+  storey with the uses of its rooms in December 1986 (`data/room_uses.json`), and the places
+  that the sources put in the building. Click a storey in the panel to peel the City to it.
+  Click the x, the building again, or the ground to deselect it.
+- **Rooms.** On a floor that shows from above (with the floors apart, or on the peeled
+  storey), point at a room to see its storey, its use and its basis. Click it to see its
+  documented place and its sources in the panel.
+- **Picking.** The pick draws the building, the layer and the kind of each piece into one
+  pixel under the pointer (`CityLayers.pick`). The real buildings and the ground round the
+  City stop it.
+- **Clock and light.** The week starts on Tuesday 16 December at 09:45, in real time. The
+  arrows set the speed: one arrow is real time (1×), two arrows are 60× and three arrows are
+  2400×, a day in 36 seconds. Space stops the clock and starts it again, and the keys 1, 2
+  and 3 choose the arrows. A click on the day bar sets the time. The sun follows the clock
+  (`Lighting` in `src/env.js`), and at night a glow comes round the bright things
+  (`src/post.js`).
 - **Planes.** Airliners land on Kai Tak (啓德) runway 13, about 89 a day, from 06:30 to 23:50. They
   turn right from the IGS beam on to the line of the runway. They pass the City on their
   left, about 430 m to the south-west, at about 70 m. Zoom out to see them. The end of the
   runway comes from the 1987 survey sheet; the turn and the glide are inferred
   (`src/approach.js`). At night the planes are dark like the buildings round the City, with
   their wing-tip lights and landing light.
-- **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
-  each day (City of Darkness Revisited, pp339–340). Point at one of the nine real people to
-  see their facts and one recorded quote, with the source of each. Sixteen people of the book
-  work at their places, in the hours that the book gives. Police, sweepers, refuse
-  collectors, meter readers and patients come in from outside. All the others are
-  composites. They wear the December clothes of the book's photos and carry sacks, buckets
-  and baskets; a small gold marker shows each real person. Each body has joints: people
-  walk, climb the stair flights, sit at tables and machines, work at stoves and benches, and
-  sleep in beds or on mats under a quilt.
-- **Labels.** The street names and the numbers of the places of the 1992 map lie on the
-  model, as dark plates with light pixel letters. A street name lies along its lane at the
-  height of the roofs, with thin lines down to the lane floor. In a cut, or in the layered
-  view, it lies on the cut storey, or on G/F with no cut. A number lies on the building of
-  its place. Each label moves and dims with its storey. Point at a number to see its card,
-  or at a street name to light its lane. The names of 23 real roads round the City lie on
-  those roads, as plates of the same kind. A road name lies on a straight part of its road
-  that the camera sees, as near the City as it can. Its words do not lie on the City or on a
-  building. It moves along the road when the view changes, and fades with the haze. It does
-  not dim in the layered view. Point at a road name to light its road. The key M turns all of
-  these off and on. The storey labels of the layered view and the cut tag are plates of the
-  same kind. No plate lies on the title at the top left: a street name moves along its lane to
-  find room, and a storey label with no room hides.
-- **Find them 尋人.** A game with three cases: the postman Lam Po Chun (林寶鎮), the pigeon breeder
-  Chan Kwan Leung and the noodle maker Hui Tung Choy. Open it with the magnifier tool or the
-  key G. Each case has five hints, each stronger than the one before: Who, How, Where, Which
-  and Show. The first hints quote the book with its page. A click on the right person closes
-  the case. If the person is outside the City, the hint gives the time of return.
-- **Clock.** The week starts on Tuesday 16 December at 09:45, in real time. The curve in the
-  clock panel shows the people away from home through the day. A click on the curve moves the
-  clock to that time, with the people already on their way. The arrows under the curve set the
-  speed. One arrow is real time (1×), two arrows are 60× and three arrows are 2400×, a day in
-  36 seconds. Space stops the clock and starts it again, also after a click on a button. The
-  keys 1, 2 and 3 choose the arrows. A button that has the keyboard focus (from the Tab key)
-  takes Space and Enter, and the clock does not change.
+- **Colours.** The structure has no colours. The main app uses the placeholder colours of
+  `src/structureColors.js`, as the viewer does.
 
-The "Sources + notes" panel in the app lists each source and each inference.
+The "Sources + notes" panel (`src/notes.js`) lists what the structure takes from each source,
+and what it infers.
+
+### Not yet on the structure
+
+These parts sat on the old 3D city of the main app. They come back when they move onto the
+structure. Until then the main app does not load them. Their code stays in `src/`, except
+the lit windows of the night, which must be made again:
+
+- the people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
+  `figures.js`), the pigeons (`figures.js`) and the game Find them 尋人 (`game.js`);
+- the street names, the numbers of the 1992 map and the road names (`labels.js`,
+  `occlude.js`, `roadRuns` in `context.js`);
+- the floor-use legend of a cut storey (`useMap.js`), and the ghosts of the real buildings
+  that hide the City (`Ghosts` in `env.js`).
+
+`node tools/check_layout.mjs`, `node tools/check_context.mjs` and
+`node tools/check_game.mjs` still check this code.
 
 ## Sources
 
@@ -275,7 +240,10 @@ download is in the repository. The City plate of the model covers 59% of Mei Tun
 the long slab north of the City. The data keeps the parts off the plate as buildings, and
 `plateClipped` keeps the whole outline.
 
-`src/context.js` picks the outlines that the app draws, and `src/env.js` draws them. For a
+The main app and the viewer draw this data with `src/surroundings/ground.js`. The old main
+app drew it with `src/context.js` and `src/env.js`; the next paragraphs tell how, for the code
+that waits to move onto the structure.
+`src/context.js` picks the outlines that the old app drew, and `src/env.js` draws them. For a
 building that the plate cuts, the app draws the whole outline from `plateClipped`. Thus
 Mei Tung House stands whole. Of the 1,263 drawn buildings, 612 have a sourced height and
 651 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
@@ -325,20 +293,20 @@ exact rays disagree on more than 5% of the points of the roads.
 `node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
 that each hint of the game points at the person, and that one view shows the person.
 
-`tools/check_stack.js` checks that the storeys stack. Each drawn piece is part of one storey
-and moves only with that storey. Thus the normal view is the layered view (key E) with its
-storeys put back together, and nothing stretches. The check runs in the browser, because the
-meshes need one. Serve the repository, open the page, and type this in the console of the
-page:
+`tools/check_stack.js` checks the floor layers of the main app (`src/cityLayers.js`). The
+check runs in the browser, because the meshes need one. Serve the repository, open the page,
+and type this in the console of the page:
 
 ```js
 (await import('./tools/check_stack.js')).checkStack(kwc)
 ```
 
-It returns `ok`, or a list of problems. It checks five things:
+It returns `ok`, or a list of problems. It checks four things:
 
-- Each vertex, sign and aerial is on its own storey.
-- Each segment of a line moves with one storey.
-- No line rises above the section of a cut.
-- Each person moves with one whole storey.
-- Each label is on its own storey, and no label rises above the section of a cut.
+- Each vertex of layer k has layer k, and lies in the storey k of its building: from its floor
+  to its next floor. A link (a bridge, the steps at a door) can reach down to the other end of
+  its doors, and a roof holds what stands on it.
+- Each building has its G/F in layer 0 and its roof in layer n.
+- With the floors apart, each layer is at least `GAP` m under the next one.
+- Peeled to a storey, the layers over it are hidden, and the walls of that storey end `PEEL_H`
+  m over each building's floor.
