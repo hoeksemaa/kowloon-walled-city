@@ -32,7 +32,7 @@ export function parseNum(t) {
   const m = s.match(/^(\d+)([A-Z]?)(?:-(\d+)([A-Z]?))?/i);
   if (!m) return null;
   const a = +m[1], b = m[3] ? +m[3] : a, lo = Math.min(a, b), hi = Math.max(a, b);
-  if (hi - lo > 12) return null;
+  if (hi - lo > 12 || (m[3] && a === b && !m[2] && !m[4])) return null; // "1-1": a misreading
   return { lo, hi, n: a, suffix: !m[3] && m[2] ? m[2].toUpperCase() : '', range: hi > lo };
 }
 
