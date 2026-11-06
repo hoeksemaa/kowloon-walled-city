@@ -2,134 +2,257 @@
 
 This file is made by `node tools/build_people.mjs` from `data/people.json`. Do not edit it by hand.
 
-Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. The people of the GRS clearance files (政府檔案處, HKRS1255-3) come from the catalogue entries of the files: their stories give only what the catalogue gives. A check on 2026-11-05 compared each of the 230 quotes with its source: each press quote with the saved text of its article, each book quote with an OCR of the cited page scan, and each GRS quote with the research facts. All match.
+Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. The people of the GRS clearance files (政府檔案處, HKRS1255-3) come from the catalogue entries of the files: their stories give only what the catalogue gives. A check on 2026-11-05 compared each of the 230 quotes with its source: each press quote with the saved text of its article, each book quote with an OCR of the cited page scan, and each GRS quote with the research facts. All match. People sweep 2 (2026-11-06) added people from the press, books, archives and the Chinese media: each quote was checked by machine against its web page or a saved copy, and each quote of the 2014 book against the OCR of the cited page. A source that failed the check was dropped. details gives one fact per item, with the index of its source in sources; inferred marks the researcher's inference. related links the people of one family or workplace. lived_or_worked tells if the person lived in the City, worked there, or both. leads lists the people that the sources name but do not yet prove.
 
-122 people. In the City in December 1986, as their sources show: 39; not then: 6; not known: 77.
+183 people. In the City in December 1986, as their sources show: 44; not then: 20; not known: 119. Life details from the sources: 351.
 
 | Person | Who | In the City | Dec 1986 | Rooms in the model |
 | --- | --- | --- | --- | --- |
+| [A worker of 林羅平's fishball shop](#ping-fishball-worker) | fishball worker | from 林羅平's years in the City (start year not given) to today | not known |  |
+| [Ah Keung](#ah-keung) | rice-shop delivery man | the 1970s (when Albert Ng was a boy) | not known |  |
+| [Ah Meng's parents](#ah-meng-parents) | rice-shop owners (two) | the 1970s | not known |  |
+| [Ah Xian](#ah-xian-wwc) | City-born drug user | grew up in the City; a drug user in the 1970s (inferred) | not known |  |
 | [Albert Ng Kam-po (吳錦波)](#albert-ng-kam-po) | boy, later pastor | 1975-1991 or 1992 | yes | 171:7:1 (7/F, Ng family flat, Room A, 7/F, 8 Sz Kung St); 171:1:0 (1/F, Hallway and roof of Albert Ng's building) |
 | [Chan Che Ming (陳子明)](#chan-che-ming) | dentist | named in a clearance file dated 1992 | not known | 265:1:0 (1/F, 陳子明牙科) |
 | [Chan Cheung-chuen (陳祥全)](#chan-cheung-chuen) | map maker, tenant | 1985-1991 (WSJ fact box); HK01 gives a move into the City in 1979 | yes | 43:12:0 (12/F, Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd) |
+| [Chan Fat (陳發)](#chan-fat-dentist) | dentist | September 1991 (a photo) | not known | 3:0:2 (G/F, World Dental (dentist Chan Fat)) |
 | [Chan Hay Sing (陳喜星)](#chan-hay-sing) | dentist | named in a clearance file dated 1989-1993 | not known | 247:0:0 (G/F, Chan Hay Sing Dentistry) |
-| [Chan Hip Ping](#chan-hip-ping) | Kai Fong Association vice-president | Helped the Kai Fong Association from its start in 1963; Vice-President from 1966; no longer a resident at the time of the interview | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
+| [Chan Hip Ping (陳協平)](#chan-hip-ping) | Kai Fong Association vice-president | Helped the Kai Fong Association from its start in 1963; Vice-President from 1966; no longer a resident at the time of the interview | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
 | [Chan Hon Fung (陳漢豐)](#chan-hon-fung) | fruit store keeper | named in a clearance file dated 1990-1992; ledgers 1987-1995 | not known | 0:0:3 (G/F, 陳漢豐鮮菓士多) |
-| [Chan Kwan Leung](#chan-kwan-leung) | pigeon breeder | From 1981 to the interview; the Housing Department registered him as a resident in January 1987 | yes | 75:0:0 (G/F, Chan Kwan Leung's pigeon lofts); 59:2:2 (2/F, Chan Kwan Leung's flat) |
+| [Chan Kwan Leung (陳昆亮)](#chan-kwan-leung) | pigeon breeder | From 1981 to the interview; the Housing Department registered him as a resident in January 1987 | yes | 75:0:0 (G/F, Chan Kwan Leung's pigeon lofts); 59:2:2 (2/F, Chan Kwan Leung's flat) |
 | [Chan Kwok Cheung (陳國祥)](#chan-kwok-cheung) | dentist | named in a clearance file dated 1989-1992 | not known | 261:0:0 (G/F, 牙醫陳國祥) |
 | [Chan Kwong](#chan-kwong) | golf-ball maker | factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming | yes | 111:0:0 (G/F, Tai Kwong Ho Metals & Plastic Mfy. [Manufactory]) |
-| [Chan Pui Yin](#chan-pui-yin) | herbal doctor | store on Lung Chun Road from 1955; still living and working in the City at the time of the interview | yes | 243:0:0 (G/F, Chan Pui Yin's herbal medicine store) |
+| [Chan Pui Yin (陳沛然)](#chan-pui-yin) | herbal doctor | store on Lung Chun Road from 1955; still living and working in the City at the time of the interview | yes | 243:0:0 (G/F, Chan Pui Yin's herbal medicine store) |
 | [Chan Shing](#chan-shing) | private water supplier |  | not known |  |
-| [Chan Wai Shui](#chan-wai-shui) | noodle maker | Worked in the City from 1979 for more than 10 years; did not live in the City | yes | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Chan So-hing (陳素卿)](#chan-so-hing) | fishball maker | 1969 to 1993 | yes |  |
+| [Chan Wai Shui (陳偉瑞)](#chan-wai-shui) | noodle maker | Worked in the City from 1979 for more than 10 years; did not live in the City | yes | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Chan Wing Kin](#chan-wing-kin) | business owner | a business file of 1989 | not known |  |
 | [Chan Wing Lan](#chan-wing-lan) | doctor | named in a clearance file dated 1989-1992 | not known | 21:1:0 (1/F, Dr. CHAN WING LAN) |
 | [Chan Yin Chor (陳燕初)](#chan-yin-chor) | dentist | named in a clearance file dated 1991 | not known | 254:0:2 (G/F, 陳燕初牙科) |
+| [Chang Kat Kong](#chang-kat-kong) | landlord, air-con repairer | built and owned flats in the City; ran a repair shop there until the clearance | not known |  |
 | [Chang Long Leung (張朗良)](#chang-long-leung) | business claimant | named in a clearance file dated 1990-1991 | not known | 98:0:0 (G/F, Chang Long Leung) |
+| [Charles](#charles-baker) | baker | born in the City in 1959; the family moved out in 1985 | no |  |
 | [Chau Kwan Hing (周坤興)](#chau-kwan-hing) | roast-meat stall keeper | named in a clearance file dated 1988-1992 | not known | 24:2:2 (2/F, also known as 6/F) |
 | [Chau Pak](#chau-pak) | storekeeper | worked in the City in the late 1980s (map of 1992) | not known | 196:0:0 (G/F, Chau Pak's store) |
+| [Cheng](#cheng-lookout-1963) | opium-den lookout | 1963 | no |  |
 | [Cheng Kim Shan (鄭劍山)](#cheng-kim-shan) | Chinese medicine practitioner | named in a clearance file dated 1989-1991 | not known |  |
-| [Cheng Koon Yiu](#cheng-koon-yiu) | dentist | school in the City from about age 8 or 9; dental apprentice from age 14; in the City again from 1963 until the clearance | yes | 249:0:0 (G/F, Cheng Koon Yiu's dental clinic) |
+| [Cheng Koon Yiu (鄭冠耀)](#cheng-koon-yiu) | dentist | school in the City from about age 8 or 9; dental apprentice from age 14; in the City again from 1963 until the clearance | yes | 249:0:0 (G/F, Cheng Koon Yiu's dental clinic) |
 | [Cheng Ling Sang (鄭凌生)](#cheng-ling-sang) | dentist | named in a clearance file dated 1992 | not known | 257:0:0 (G/F, Cheng Ling Sang Dentistry) |
-| [Cheng San](#cheng-san) | wooden-ruler maker | 1968-1990: factory on Tai Chang Street, where he also lived and slept | yes | 67:0:0 (G/F, Cheng San's ruler factory); 111:0:2 (G/F, Pak Hop Ruler Factory) |
+| [Cheng San (鄭山)](#cheng-san) | wooden-ruler maker | 1968-1990: factory on Tai Chang Street, where he also lived and slept | yes | 67:0:0 (G/F, Cheng San's ruler factory); 111:0:2 (G/F, Pak Hop Ruler Factory) |
+| [Cheung Mak Ching](#cheung-mak-ching) | shopkeeper | a shopkeeper in the City when the clearance was announced (January 1987) | yes |  |
 | [Cheung Ting Wan (張挺華)](#cheung-ting-wan) | doctor | named in a clearance file dated 1989-1991 | not known | 14:1:1 (1/F, 張挺華診所) |
 | [Chong Tin Lai (莊天麗)](#chong-tin-lai) | dentist | named in a clearance file dated 1988-1991 | not known | 14:0:0 (G/F, 莊天麗牙科) |
 | [Chu Yiu Shan (朱耀山)](#chu-yiu-shan) | property agent | born 1951; grew up in the City and spent much of his adult life there; moved to Junk Bay when the clearance was announced (January 1987) | yes | 111:0:1 (G/F, 恒暉地產) |
-| [Chung Lo Ying](#chung-lo-ying) | mother of 10 | from 1958 to at least the time of the interview (more than 30 years); more than 10 years in the 4/F flat | yes | 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road); 222:1:0 (1/F, Chung family's first-floor flat in the new building) |
+| [Chung Lo Ying (鍾太)](#chung-lo-ying) | mother of 10 | from 1958 to at least the time of the interview (more than 30 years); more than 10 years in the 4/F flat | yes | 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road); 222:1:0 (1/F, Chung family's first-floor flat in the new building) |
 | [Chung Yuk Yee](#chung-yuk-yee) | daughter, mother of two | 1961-1991: born in the City; moved out during the clearance in 1991 | yes | 263:12:0 (12/F, Chung Yuk Yee's flat); 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road) |
 | [Fong Yuk Shing (方玉成)](#fong-yuk-shing) | dentist | named in a clearance file dated 1992 | not known | 124:0:0 (G/F, Fong Yuk Shing Dentistry) |
-| [Ho Chi Kam](#ho-chi-kam) | barber | lived in a flat on Tung Tau Tsuen Road from 1974; ran the barber's shop at 10 Tai Chang Street from 1985 to 1991 | yes | 201:0:0 (G/F, Ho Chi Kam's barber's shop); 0:11:3 (11/F, Ho Chi Kam's flat on Tung Tau Tsuen Road); 186:0:2 (G/F, Ho Chi Kam's barber shop) |
+| [Goko](#goko) | triad gang leader | about 1970 (the leader of Winson's gang) | not known |  |
+| [Gordon Lam Ka-tung (林家棟)](#gordon-lam-ka-tung) | boy, later actor | four years in his primary-school years (he was born in 1967; thus the 1970s, inferred) | no |  |
+| [Ha Fan-ming (夏藩銘)](#ha-fan-ming) | fishball maker | 1969 to 1993 (the family left when the demolition began) | yes |  |
+| [Heung Yin-king](#heung-yin-king) | eldest daughter, water carrier | from the 1960s (end year not given) | not known |  |
+| [Ho Chi Kam (何智錦)](#ho-chi-kam) | barber | lived in a flat on Tung Tau Tsuen Road from 1974; ran the barber's shop at 10 Tai Chang Street from 1985 to 1991 | yes | 201:0:0 (G/F, Ho Chi Kam's barber's shop); 0:11:3 (11/F, Ho Chi Kam's flat on Tung Tau Tsuen Road); 186:0:2 (G/F, Ho Chi Kam's barber shop) |
 | [Ho Yin (何賢)](#ho-yin) | dentist | named in a clearance file dated 1990-1992 | not known | 230:0:0 (G/F, Ho Yin Dentistry) |
-| [Hui Kwong](#hui-kwong) | Chiu Chow music player | in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991 | yes | 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
-| [Hui Tung Choy](#hui-tung-choy) | noodle maker | From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City | yes | 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat) |
+| [Hui Kwong (許光)](#hui-kwong) | Chiu Chow music player | in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991 | yes | 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
+| [Hui Lun](#hui-lun) | resident (died 1948) | until February 1948 | no |  |
+| [Hui Tung Choy (許東財)](#hui-tung-choy) | noodle maker | From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City | yes | 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat) |
+| [Ida Shum](#ida-shum) | working mother | years not given (she was 62 in 2013) | not known |  |
 | [Jackie Pullinger (潘靈卓)](#jackie-pullinger) | missionary | worked in the City from 1973 ('The Well') until shortly after the clearance announcement; she did not live there | yes | 254:0:3 (G/F, Shuiyuan youth centre (Jackie Pullinger)); 237:0:0 (G/F, St Stephen's Society) |
-| [Jetly Chau Sau Yee](#chau-sau-yee) | Chiu Chow cake maker | worked in the City; bought the shop before he heard of the demolition plan (the clearance was announced in 1987); no start year given | yes | 11:2:0 (2/F, Jetly Chau's Chiu Chow cake shop) |
-| [Kwok Lau Hing](#kwok-lau-hing) | retired office cleaner | Never a resident of the City itself; lived at 5C Sai Tau New Street, a settlement on its outskirts, from her 30s until the settlement's clearance (decided for 1985); later a regular visitor to the Old People's Centre | no | 172:2:1 (2/F, Old People's Centre); 82:1:5 (1/F, Kwok Lau Hing's home) |
+| [Jetly Chau Sau Yee (周秀儀)](#chau-sau-yee) | Chiu Chow cake maker | worked in the City; bought the shop before he heard of the demolition plan (the clearance was announced in 1987); no start year given | yes | 11:2:0 (2/F, Jetly Chau's Chiu Chow cake shop) |
+| [Johnnie To Kei-fung (杜琪峯)](#johnnie-to) | boy, later film director | from his childhood (he was born in 1955; years not given) | not known |  |
+| [Kwan Tsin On](#kwan-tsin-on) | noodle-factory worker | the late years of the City (Chan Wai Shui's factory ran from 1979 for more than 10 years) | not known | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Kwok Lau Hing (郭柳馨)](#kwok-lau-hing) | retired office cleaner | Never a resident of the City itself; lived at 5C Sai Tau New Street, a settlement on its outskirts, from her 30s until the settlement's clearance (decided for 1985); later a regular visitor to the Old People's Centre | no | 172:2:1 (2/F, Old People's Centre); 82:1:5 (1/F, Kwok Lau Hing's home) |
 | [Kwok Tsan Ming](#kwok-tsan-ming) | fishball factory worker |  | not known | 80:0:0 (G/F, Fishball factory off Kwong Ming Street) |
+| [Lai](#lai-opium-1963) | opium smoker, pipe tender | 1963 (he had smoked opium for 15 years) | no |  |
 | [Lai Woon Sun (黎煥新)](#lai-woon-sun) | dentist | named in a clearance file dated 1993-1994 | not known | 115:0:2 (G/F, Lai Woon Sun Dentistry) |
 | [Lam Hong-Tin](#lam-hong-tin) | business claimant | named in a clearance file dated 1989-1990 | not known | 109:8:2 (8/F, 8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street) |
 | [Lam Hung (林洪)](#lam-hung-g142) | business claimant | named in a clearance file dated 1988-1989 | not known | 214:0:1 (G/F, 林洪) |
 | [Lam Hung](#lam-hung-g186) | bonesetter | named in a clearance file dated 1989-1992 | not known | 28:2:0 (2/F, Lam Hung Bone Setter) |
-| [Lam Leung Po](#lam-leung-po) | minced-fish factory partner | partner in the factory in the City from 1983 until the clearance | yes | 247:0:0 (G/F, Leun Hing Food Company) |
+| [Lam Leung Po (林良寶)](#lam-leung-po) | minced-fish factory partner | partner in the factory in the City from 1983 until the clearance | yes | 247:0:0 (G/F, Leun Hing Food Company) |
 | [Lam Mei Kwong](#lam-mei-kwong) | retired dentist | in the City from 1949 to the late 1980s; at 4A Lung Shing Road almost continuously | yes | 101:0:0 (G/F, Lam Mei Kwong dental clinic); 111:3:0 (3/F, Lam Mei Kwong's home / former dental surgery) |
 | [Lam Po-chun (林寶鎮)](#lam-po-chun) | postman | worked inside 1979-1991 | yes | 45:0:2 (G/F, Store on Lo Yan Street (postman's base)) |
 | [Lam Sam Yuk](#lam-sam-yuk) | dentist | named in a clearance file dated 1987-1994 | not known | 20:0:0 (G/F, Lam Sam Yuk Dentistry) |
-| [Lam Shu Chuen](#lam-shu-chuen) | Kai Fong officer, manufacturer | from early childhood, before the War, for more than 50 years, to the clearance | yes |  |
-| [Lam Tseng Yat](#lam-tseng-yat) | grocer | From 1947, when the family opened the store, to the interview; he said that the shop had existed for more than 40 years | yes | 84:0:2 (G/F, Lam family grocery); 111:1:0 (1/F, Lam family flat, first floor); 111:4:0 (4/F, Lam family flat, fourth floor) |
+| [Lam Shu Chuen (林樹全)](#lam-shu-chuen) | Kai Fong officer, manufacturer | from early childhood, before the War, for more than 50 years, to the clearance | yes |  |
+| [Lam Tseng Yat (林俊逸)](#lam-tseng-yat) | grocer | From 1947, when the family opened the store, to the interview; he said that the shop had existed for more than 40 years | yes | 84:0:2 (G/F, Lam family grocery); 111:1:0 (1/F, Lam family flat, first floor); 111:4:0 (4/F, Lam family flat, fourth floor) |
 | [Lam Yin Ming](#lam-yin-ming) | last holdout | until 1992 (years not given) | not known |  |
+| [Lau Chun-fat](#lau-chun-fat) | toy-factory worker | from the late 1980s, when he bought a flat, to the clearance | not known |  |
 | [Lau Fat Mau](#lau-fat-mau) | business claimant | named in a clearance file dated 1992 | not known | 205:1:1 (1/F, Lau Fat Mau) |
 | [Lau Moon Wah (劉滿華)](#lau-moon-wah) | dentist | named in a clearance file dated 1989-1991 | not known | 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun) |
+| [Lau Shek Yiu](#lau-shek-yiu) | dentist | a business file of 1992 | not known |  |
 | [Lau Wing (羅宋榮)](#lau-wing) | doctor | named in a clearance file dated 1989-1991 | not known | 14:1:1 (1/F, 張挺華診所) |
-| [Lau Yeung Yin](#lau-yeung-yin) | weaving factory owner | born in the City; ran his factory on Sai Shing (West City) Road from 1982 | yes | 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory) |
+| [Lau Yeung Yin (劉陽賢)](#lau-yeung-yin) | weaving factory owner | born in the City; ran his factory on Sai Shing (West City) Road from 1982 | yes | 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory) |
+| [Lau Yeung Yin's wife](#lau-yeung-yin-wife) | weaving-factory worker | about 1982 to about 1990 | not known | 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory) |
 | [Law Hoi-cheung (羅開祥)](#law-hoi-cheung) | service centre claimant | named in a clearance file dated 1988-1991 | not known | 117:0:0 (G/F, LAW Hoi-cheung) |
-| [Law Kim Kwong](#law-kim-kwong) | cake maker | Resident in the City for 20 years (at the time of the photograph; the book gives no year) | not known | 219:0:0 (G/F, Law Kim Kwong's bakery) |
-| [Law Yu Yi](#law-yu-yi) | retired maid | in the City for 28 years at the time of the caption, when she was 90; the years are not given | yes | 186:3:0 (3/F, Law Yu Yi's flat); 250:4:1 (4/F, Law Yu Yi's son's flat) |
-| [Lee Pui Yuen](#lee-pui-yuen) | shopkeeper | 1964-1991: about 15 years in the City before 1979, then 12 years at his store | yes | 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store) |
+| [Law Kim Kwong (羅儉光)](#law-kim-kwong) | cake maker | Resident in the City for 20 years (at the time of the photograph; the book gives no year) | not known | 219:0:0 (G/F, Law Kim Kwong's bakery) |
+| [Law Yu Yi (羅婉儀)](#law-yu-yi) | retired maid | in the City for 28 years at the time of the caption, when she was 90; the years are not given | yes | 186:3:0 (3/F, Law Yu Yi's flat); 250:4:1 (4/F, Law Yu Yi's son's flat) |
+| [Law Yu Yi's daughter-in-law](#law-yu-yi-daughter-in-law) | resident, aged 68 | about 1989 (aged 68) | not known | 186:3:0 (3/F, Law Yu Yi's flat) |
+| [Lee Pui Yuen (李培元)](#lee-pui-yuen) | shopkeeper | 1964-1991: about 15 years in the City before 1979, then 12 years at his store | yes | 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store) |
 | [Lee Wai Kwan (李偉群)](#lee-wai-kwan) | dentist | named in a clearance file dated 1990-1993 | not known | 115:0:0 (G/F, 李偉群牙科) |
-| [Lee Yu Chun](#lee-yu-chun) | candy maker | worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s | yes | 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory) |
+| [Lee Yu Chun (李玉珍)](#lee-yu-chun) | candy maker | worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s | yes | 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory) |
 | [Lee Yuk Ha](#lee-yuk-ha) | newspaper vendor | named in a clearance file dated 1992 | not known |  |
+| [Leung Yuen-to](#leung-yuen-to) | boy of the City | in his childhood (he was 55 in about 2005) | not known |  |
 | [Li Ching Wa (李靜華)](#li-ching-wa) | commercial storage claimant | named in a clearance file dated 1992 | not known | 235:11:1 (11/F, 李靜華) |
 | [Li Mau (李謀)](#li-mau) | Western-medicine doctor | named in a clearance file dated 1988-1995 | not known | 14:1:0 (1/F, Li Mau Clinic) |
 | [Liu Kwan (廖坤)](#liu-kwan) | acupuncture doctor | named in a clearance file dated 1989-1992 | not known | 19:1:0 (1/F, Liu Kwan China New Medical Clinic) |
 | [Liu Kwok Sum (廖廣森)](#liu-kwok-sum) | bonesetter | named in a clearance file dated 1990-1992 | not known | 262:3:0 (3/F, Liu Kwok Sum Bonesetter & Gymnasium); 249:0:1 (G/F, Liu Kwok Sum Bonesetter) |
+| [Liu Ziqun](#liu-ziqun) | residents' office secretary | 1983: the source shows him in his office in the City on 7 August 1983 | not known |  |
 | [Lo Ming Tak (羅明德)](#lo-ming-tak) | Chinese herbalist | named in a clearance file dated 1988-1992 | not known | 30:4:0 (4/F, 國醫羅明德) |
+| [Lok Kwok Fai](#lok-kwok-fai) | dentist | business records of 1988-1991 | not known |  |
+| [Louisa Wong](#louisa-wong) | refugee child | born in the City on 21 September 1957; the family left in her early childhood (about 1962, inferred) | no |  |
 | [Lui Man Sang](#lui-man-sang) | senior postman | postman in the City from about 1979 to the end of the 1980s (Lam Po Chun's account); the book does not say where he lived | yes | 45:0:2 (G/F, Store on Lo Yan Street (postman's base)) |
 | [Ma Chong Chung (馬創忠)](#ma-chong-chung) | dentist | named in a clearance file dated 1992 | not known | 30:0:3 (G/F, 馬創忠牙科) |
+| [Maggie](#maggie-baker) | baker's wife | three or four years after her marriage, before 1985 | no |  |
 | [Mak Chiu (麥釗)](#mak-chiu) | dentist | named in a clearance file dated 1991-1992 | not known | 2:4:0 (4/F, Mak Chiu Dentistry) |
 | [Mak Yue Kong (麥汝剛)](#mak-yue-kong) | dental technician | named in a clearance file dated 1992 | not known | 251:0:0 (G/F, Mak Yue Kong Dental Techician) |
 | [Mak Yue Kwan (麥汝鋆)](#mak-yue-kwan) | dentist | named in a clearance file dated 1992 | not known | 168:0:0 (G/F, 麥汝鋆牙科) |
+| [Maureen Clarke](#maureen-clarke) | missionary, child care | from 1959 (she set up the Child Care Centre); the end year is not given | not known | 78:2:0 (2/F, Child Care Centre (1968 lot 28)) |
+| [Mr Hui (許先生)](#mr-hui-flat-owner) | restaurant worker, flat owner | from the 1980s to the clearance (1993) | not known |  |
 | [Mr Lau (劉先生)](#mr-lau) | resident from age six | from age 6 (about 1949) to the clearance, at age 47 (HK01) | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
 | [Mr Shum](#mr-shum) | won tun pastry maker | worked in the City at the time of the photographs (c.1990); the book gives no years | not known | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Mr Shum](#mr-shum-noodles) | noodle-factory worker | the late years of the City (Chan Wai Shui's factory ran from 1979 for more than 10 years) | not known | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
+| [Mrs Donnithorne](#mrs-donnithorne) | missionary | the late 1950s and early 1960s (the end year is not given) | not known |  |
 | [Mrs Lau (劉太)](#mrs-lau) | resident | from adulthood (year not given) to the clearance (HK01) | yes |  |
 | [Mrs Law](#mrs-law) | child-minding grandmother |  | not known |  |
-| [Ng Kam Mui](#ng-kam-mui) | Chung Fat Café worker | lived or worked at the Chung Fat Café for nearly 30 years, from its opening in the 1960s to its closure in 1991 | yes | 31:0:0 (G/F, Chung Fat Café); 31:0:2 (G/F, Chung Fat Café cockloft); 12:2:0 (2/F, Ng family's two storeys in the 11-storey building) |
+| [Ng Kam Mui (吳錦妹)](#ng-kam-mui) | Chung Fat Café worker | lived or worked at the Chung Fat Café for nearly 30 years, from its opening in the 1960s to its closure in 1991 | yes | 31:0:0 (G/F, Chung Fat Café); 31:0:2 (G/F, Chung Fat Café cockloft); 12:2:0 (2/F, Ng family's two storeys in the 11-storey building) |
+| [Ng Kam Mui's brother](#ng-kam-mui-brother) | baker | photographed in the late years of the City (about 1987-1992) | not known | 16:1:0 (1/F, Bakery behind the Chung Fat Café) |
+| [Ng Kam Mui's mother](#ng-kam-mui-mother) | café owner | from the 1960s; the café was in the City until 1991 | not known | 31:0:0 (G/F, Chung Fat Café) |
 | [Ng Mei Kin (吳美堅)](#ng-mei-kin) | dentist | named in a clearance file dated 1991 | not known | 236:0:0 (G/F, Ng Mei Kin Dentistry) |
 | [Ng Ping Wai](#ng-ping-wai) | doctor | named in a clearance file dated 1989-1991 | not known | 32:6:2 (6/F, Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen ) |
 | [Ngai Heung Chuen (魏香泉)](#ngai-heung-chuen) | dentist | named in a clearance file dated 1988-1991 | not known | 32:4:2 (4/F, 魏香泉牙科) |
 | [Paul Tang Kam-cheung (鄧金祥)](#paul-tang-kam-cheung) | former triad, later pastor | 1948-1979 | no |  |
-| [Reverend Isaac Liu](#isaac-liu) | missionary | Worked in the City from his seminary years in the 1950s and visited it often from the mid-1950s; lived in the City from 1971; left the Yamen premises in 1991 | yes | 266:0:0 (G/F, Yamen (CNEC Living Word Church compound)); 172:2:1 (2/F, Old People's Centre); 269:0:0 (G/F, Rev. Isaac Liu's mission) |
-| [Simon Wong](#simon-wong) | Salvation Army officer | Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968 | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
+| [Reverend Isaac Liu (劉知三)](#isaac-liu) | missionary | Worked in the City from his seminary years in the 1950s and visited it often from the mid-1950s; lived in the City from 1971; left the Yamen premises in 1991 | yes | 266:0:0 (G/F, Yamen (CNEC Living Word Church compound)); 172:2:1 (2/F, Old People's Centre); 269:0:0 (G/F, Rev. Isaac Liu's mission) |
+| [Roger Ha](#roger-ha) | fishball family son | his childhood; the family left in 1993 | not known |  |
+| [Simon Wong (王國清)](#simon-wong) | Salvation Army officer | Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968 | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
+| [Sin Kwai](#sin-kwai) | heroin divan manager | worked in the City until his murder in 1959 | no |  |
 | [Siu Ping Lung (蕭秉隆)](#siu-ping-lung) | dentist | named in a clearance file dated 1992-1993 | not known | 2:0:4 (G/F, 蕭秉隆牙科) |
 | [Siu Ping Sing (蕭秉陞)](#siu-ping-sing) | dentist | named in a clearance file dated 1991-1992 | not known | 2:0:0 (G/F, 蕭秉陞牙科) |
-| [To Gui Bon](#to-gui-bon) | rubber-plunger maker | about 25 years of work in the City ('more than 20 years' at one spot), until the clearance | yes | 195:0:0 (G/F, To Gui Bon's rubber factory) |
+| [Tam Yiu Hung](#tam-yiu-hung) | dentist | business files of 1994 | not known |  |
+| [The dentist of 凌生牙科](#ling-dentist) | dentist | about 1987-1988 (a photo) | not known | 254:0:4 (G/F, Ling Sang Dentistry (probably Cheng Ling Sang Dentistry)) |
+| [The landlord of the Lung Tsun Back Street heroin factory](#heroin-factory-landlord-1982) | landlord, drug assistant | April 1982 (a police raid) | not known |  |
+| [The operator of the Lung Tsun Back Street heroin factory](#heroin-factory-operator-1982) | heroin-factory operator | April 1982 (a police raid) | not known |  |
+| [The original landowner of 19 Shung Yee Lane](#shung-yee-lane-landowner) | landowner, resident | 1975 (a police report) | not known |  |
+| [The owner of Sun Kee Plastic Factory](#sun-kee-owner) | plastic-factory owner | the 1960s to 1975 (a police report) | not known |  |
+| [The owner of 歡樂餅家](#foon-lok-bakery-owner) | bakery owner | the 1970s | not known |  |
+| [The three nuns of Lung Chun Road](#three-nuns-lung-chun-road) | nuns (three) | in the City to the end (1992) | yes | 246:0:0 (G/F, Home of three nuns) |
+| [To Gui Bon (杜古邦)](#to-gui-bon) | rubber-plunger maker | about 25 years of work in the City ('more than 20 years' at one spot), until the clearance | yes | 195:0:0 (G/F, To Gui Bon's rubber factory) |
 | [Tsang Chi Wai (曾志偉)](#tsang-chi-wai) | dentist | named in a clearance file dated 1990-1992 | not known | 3:0:1 (G/F, Tsang Chi Wai Dentistry) |
 | [Tsang Keong](#tsang-keong) | dentist | named in a clearance file dated 1988-1992 | not known | 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun) |
 | [Tse Choi Kwan](#tse-choi-kwan) | fur worker | named in a clearance file dated 1988-1991 | not known | 24:3:0 (3/F, Tse Choi Kwan Fur Workshop) |
 | [Tse Hon Keung (謝漢強)](#tse-hon-keung) | dentist | named in a clearance file dated 1992 | not known | 18:0:0 (G/F, Tse Hon Keung Dentistry) |
 | [Tse Ma Ming](#tse-ma-ming) | business claimant | named in a clearance file dated 1990-1992 | not known | 4:6:4 (6/F, Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau) |
-| [Tsin Mu Lam](#tsin-mu-lam) | doctor | 1973 to 1992 (clinic and home); his father practised in the City in the 1950s and 1960s | yes | 4:2:3 (2/F, Tsin Mu Lam's clinic) |
+| [Tsin Mu Lam (錢茂林)](#tsin-mu-lam) | doctor | 1973 to 1992 (clinic and home); his father practised in the City in the 1950s and 1960s | yes | 4:2:3 (2/F, Tsin Mu Lam's clinic) |
+| [Vivian Chan](#vivian-chan) | girl, later doctor | more than 10 years of her childhood and adolescence | not known |  |
 | [Wang Ching](#wang-ching) | plastic factory owner | until 1992 (years not given) | not known |  |
+| [Wilson](#wilson-wwc) | City-born drug user | grew up in the City; a drug user in the 1970s (inferred) | not known |  |
+| [Winson](#winson) | gang fighter, later helper | by about 1970 | not known |  |
 | [Wong Chan Pui-wah (黃陳佩華)](#wong-chan-pui-wah) | garment-factory worker |  | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
 | [Wong Chun Wah (黃振華)](#wong-chun-wah) | dentist | named in a clearance file dated 1992 | not known | 109:4:2 (4/F, Wong Chun Wah Dentistry) |
 | [Wong Chun-ping (王鎮平)](#wong-chun-ping) | fishball maker's son | 1972-1983 (WSJ fact box) | no |  |
-| [Wong Hoi Ming](#wong-hoi-ming) | herbal doctor | no years given: from his move from Hong Kong Island until the clearance | not known | 104:0:0 (G/F, Wong Hoi Ming Bonesetter) |
+| [Wong Hoi Ming (王海明)](#wong-hoi-ming) | herbal doctor | no years given: from his move from Hong Kong Island until the clearance | not known | 104:0:0 (G/F, Wong Hoi Ming Bonesetter) |
 | [Wong Mei Yue (黃美如)](#wong-mei-yue) | dentist | named in a clearance file dated 1991-1992 | not known | 115:0:3 (G/F, 黃美如牙科) |
+| [Wong Wai Chung's wife](#wong-wai-chung-wife) | resident, water carrier | she grew up in the City (years not given) | not known |  |
 | [Wong Wai Kuen (王偉權)](#wong-wai-kuen) | dentist | named in a clearance file dated 1992 | not known | 40:0:0 (G/F, Wong Wai Kuen Dentistry) |
-| [Wong Yu Ming](#wong-yu-ming) | dentist | lived and worked in his clinic on Lung Shing Road from the late 1950s; 'nearly 30 years' at the interview (about 1989) | yes | 140:0:0 (G/F, Wong Yu Ming's dental surgery (Cheung Mei in the shop)) |
+| [Wong Yu Ming (黃如明)](#wong-yu-ming) | dentist | lived and worked in his clinic on Lung Shing Road from the late 1950s; 'nearly 30 years' at the interview (about 1989) | yes | 140:0:0 (G/F, Wong Yu Ming's dental surgery (Cheung Mei in the shop)) |
 | [Wong Yuen Heung (黃源香)](#wong-yuen-heung) | business claimant | named in a clearance file dated 1988-1992 | not known | 38:0:2 (G/F, 黃源香) |
 | [Wong Yum-fai (王欽輝)](#wong-yum-fai) | fishball maker | 1972-1983 (WSJ fact box); the WSJ video says 30 years | no |  |
 | [Yan Wing Tak (甄榮德)](#yan-wing-tak) | dentist | named in a clearance file dated 1989-1992 | not known |  |
 | [Yau Ka Sut (邱家瑟)](#yau-ka-sut) | Western-medicine doctor | named in a clearance file dated 1989-1992 | not known | 32:0:3 (G/F, 西醫邱家瑟) |
-| [Yau Lap Cheong](#yau-lap-cheong) | retired shopkeeper | near and in the City from 1928 to 1990 | yes | 218:6:1 (6/F, Yau Lap Cheong's one-room flat) |
+| [Yau Lap Cheong (邱立昌)](#yau-lap-cheong) | retired shopkeeper | near and in the City from 1928 to 1990 | yes | 218:6:1 (6/F, Yau Lap Cheong's one-room flat) |
 | [Yeung Lai-wan (楊麗雲)](#yeung-lai-wan) | dim sum hawker | 1959-1981 | no |  |
-| [Yim Kwok Yuen](#yim-kwok-yuen) | roast-meat maker | from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance | yes | 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop); 181:0:0 (G/F, Kwok Kee Roasted Meat) |
+| [Yim Kwok Yuen (嚴國源)](#yim-kwok-yuen) | roast-meat maker | from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance | yes | 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop); 181:0:0 (G/F, Kwok Kee Roasted Meat) |
 | [Yip Tak-wai (葉德偉)](#yip-tak-wai) | residents' association head | from 1976 (flat bought; SCMP 2013) to the clearance (HK01) | yes |  |
 | [Yip Wa Man (葉華民)](#yip-wa-man) | dentist | named in a clearance file dated 1989-1992 | not known | 2:0:1 (G/F, King's Dental Lab + Yip Wa Man Dentist) |
-| [Yu Hing Wan](#yu-hing-wan) | muslin maker | 18 years, as "a long-term resident"; the caption gives no dates | not known | 174:0:0 (G/F, Yu Hing Wan's muslin factory) |
+| [Yu Hing Wan (余慶雲)](#yu-hing-wan) | muslin maker | 18 years, as "a long-term resident"; the caption gives no dates | not known | 174:0:0 (G/F, Yu Hing Wan's muslin factory) |
+| [Yu Kwok Fai](#yu-kwok-fai) | machine repairer | the late years of the City (the book's photos are of about 1987-1992) | not known |  |
+| [何生](#ho-sang-sai-tau) | boy of Sai Tau | his childhood in the 1960s; the family moved to Mei Tung Estate (美東邨) in 1972 | no |  |
 | [姚正明](#grs-g128) | fur coat maker | named in a clearance file dated 1988-1991 | not known |  |
 | [廖理](#grs-g130) | drilling subcontractor | named in a clearance file dated 1988-1991 | not known | 192:3:2 (3/F, 廖理) |
+| [張祖鷺](#cnec-pastor-2) | CNEC pastor | CNEC's early years in the City (years not given); his family lived in the City | not known |  |
 | [曾紀尉](#grs-g135) | jewellery maker | named in a clearance file dated 1988-1990 | not known | 91:8:3 (8/F, 曾紀尉 (首飾) |
 | [李就](#grs-g129) | watch-case etcher | named in a clearance file dated 1988-1990 | not known | 167:0:0 (G/F, 錶殼蝕刻) |
 | [李漢明](#grs-g131) | lunch-box workshop claimant | named in a clearance file dated 1988-1990 | not known |  |
 | [李靜瑜](#grs-g179) | Chinese-medicine doctor | named in a clearance file dated 1988-1992 | not known | 34:2:0 (2/F, 李靜瑜醫務所(中醫) |
 | [林惠珠](#grs-g127) | Chiu Chow dim-sum maker | named in a clearance file dated 1988-1990 | not known | 13:1:1 (1/F, 潮州點心) |
 | [林羅平](#fishball-wholesaler-hk01) | fishball maker | worked in the City from his Primary 3 years; own shop from 1983 to the clearance; lived outside in Lok Fu (HK01 2024) | yes | 66:0:0 (G/F, 林羅平's fishball workshop (德興魚蛋公司) on Kwong Ming Street) |
+| [林羅平's elder brother](#ping-brother-fishball) | fishball-workshop owner | from the late 1960s (inferred) to the clearance | yes |  |
+| [林羅平's mother](#ping-mother-fishball) | fishball-workshop co-founder | from the late 1960s (inferred) | not known |  |
 | [羅釗林](#grs-g136) | business claimant | named in a clearance file dated 1988-1991 | not known | 20:4:1 (4/F, 羅釗林) |
 | [芬姐](#store-keepers-daughter-hk01) | store keeper's daughter | from her childhood; inside on 14 Jan 1987; moved out at the clearance (HK01) | yes |  |
+| [莊澄](#chong-ching) | boy, later film producer | almost four years of his childhood, until he was 7 | no |  |
 | [莊裕宏](#grs-g144) | dog-room (狗房) keeper | named in a clearance file dated 1988-1990 | not known | 244:7:2 (7/F, 莊裕宏狗房) |
 | [鄭炎創](#grs-g143) | garment workshop claimant | named in a clearance file dated 1988-1990 | not known | 32:4:3 (4/F, 鄭炎創) |
+| [阿平](#toy-factory-summer-boy) | summer factory boy | four summers in the 1970s, from Primary 4 to the summer of Form 1; the factory left in 1979 | no |  |
+| [阿平's aunt (伯娘)](#toy-factory-aunt) | plastic-toy factory owner | the 1970s, until 1979 | no |  |
+| [阿平's elder brother](#kaifong-school-pupil) | kaifong-school pupil | one school year, before 1979 | no |  |
 | [阿榮](#childhood-resident-hk01) | childhood resident | from his birth (his parents came in the early 1950s) to the age of 20 | no |  |
+| [阿賢](#ah-yin-hk01) | boy lookout, gang member | from about age 10 (years not given) | not known |  |
+| [陳先生](#chan-sin-sang-high-rise) | high-rise resident | years not given (he was over 60 in 2024) | not known |  |
 | [陳廷乾](#grs-g124) | Lo Mei Workshop claimant | named in a clearance file dated 1992 | not known | 263:5:0 (5/F, Lo Mei Workshop) |
+| [陳慎芝](#chan-shan-chi) | drug-stall boss | 1972-1974 (his years as a patrolman) | no |  |
 | [陳鎮波](#grs-g125) | Lo Mei Workshop claimant | named in a clearance file dated 1992 | not known | 263:5:0 (5/F, Lo Mei Workshop) |
 | [黃照垣](#grs-g180) | Chinese-medicine doctor | named in a clearance file dated 1988-1991 | not known | 43:1:0 (1/F, 黃照垣中醫) |
 | [黃錫榮](#grs-g132) | lunch-box workshop claimant | named in a clearance file dated 1988-1990 | not known |  |
+
+## A worker of 林羅平's fishball shop
+
+<a id="ping-fishball-worker"></a>**fishball worker.** A worker of 林羅平's fishball shop worked in the Walled City. There were many refugees and illegal immigrants then, so 平哥 could hire workers at lower wages. This worker entered Hong Kong illegally from the mainland and has worked in 平哥's fishball shop ever since. 平哥 opened his own wholesale shop in the City in 1983, aged 24, with HK$6,000.
+
+- Work: 林羅平's fishball shop, in the City until the clearance, then on Fuk Lo Tsun Road (福佬村道)
+- In the City: from 林羅平's years in the City (start year not given) to today (worked)
+- Related: [林羅平](#fishball-wholesaler-hk01) (employer)
+- Life details:
+  - There were many refugees and illegal immigrants then, so 平哥 could hire workers at lower wages. [1]
+  - This worker entered Hong Kong illegally from the mainland and has worked in 平哥's fishball shop ever since. [2]
+  - 平哥 opened his own wholesale shop in the City in 1983, aged 24, with HK$6,000. [3]
+- Sources:
+  1. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "當時有不少難民，或內地人偷渡來港，所以平哥以較為相宜的薪金聘請工人。"
+  2. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "有一位伙記當年就是由內地非法入境香港，後來在平哥的魚蛋舖打工直至今天。"
+  3. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」，即批發生意，幸好那位業主與他是同鄉，願意便宜一點租出舖位。"
+
+## Ah Keung
+
+<a id="ah-keung"></a>**rice-shop delivery man.** Ah Keung worked in the Walled City. He was Ah Meng's older brother, about 10 years older than Ah Meng. He carried two big bags of rice and an LPG gas can up the stairs to customers' flats, for example to Albert Ng's 8th-floor flat in a building with no lift.
+
+- Work: his parents' grocery (a 'rice shop') in the City; he carried rice and gas up to the customers' flats
+- In the City: the 1970s (when Albert Ng was a boy) (worked)
+- Related: [Ah Meng's parents](#ah-meng-parents) (son); [Albert Ng Kam-po (吳錦波)](#albert-ng-kam-po) (delivered rice and gas to his family)
+- Life details:
+  - He was Ah Meng's older brother, about 10 years older than Ah Meng. [1]
+  - He carried two big bags of rice and an LPG gas can up the stairs to customers' flats, for example to Albert Ng's 8th-floor flat in a building with no lift. [2]
+- Sources:
+  1. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "Ah Meng has an older brother, Ah Keung, who was probably 10 years older than Ah Meng."
+  2. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "It would be close to impossibility if I were to go to Ah Meng’s store to buy that huge can of LPG gas."
+
+## Ah Meng's parents
+
+<a id="ah-meng-parents"></a>**rice-shop owners (two).** Ah Meng's parents (two people; the source does not name them) owned a grocery, a 'rice shop', inside the City. Their son Ah Meng was a friend of Albert Ng. The grocery sold rice, cooking oil, condiments and soft drinks; barrels of rice (mostly from Thailand and Mainland China) stood at the entrance. It paid a 20-cent refund for each empty soda bottle returned. It delivered rice and LPG gas to customers' flats (by their older son, Ah Keung).
+
+- Work: their grocery (a "rice shop") in the City (address not given)
+- In the City: the 1970s (worked)
+- Related: [Ah Keung](#ah-keung) (their elder son); [Albert Ng Kam-po (吳錦波)](#albert-ng-kam-po) (customer; friend of their son Ah Meng)
+- Life details:
+  - The grocery sold rice, cooking oil, condiments and soft drinks; barrels of rice (mostly from Thailand and Mainland China) stood at the entrance. [1]
+  - It paid a 20-cent refund for each empty soda bottle returned. [3]
+  - It delivered rice and LPG gas to customers' flats (by their older son, Ah Keung). [1]
+- Sources:
+  1. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "His parents owned a grocery store inside the Walled City."
+  2. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "He wasn’t my neighbor."
+  3. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "If you return an empty bottle, you got a 20 cents refund."
+
+## Ah Xian
+
+<a id="ah-xian-wwc"></a>**City-born drug user.** Ah Xian lived in the Walled City. He was a lifelong companion of Wong Wai Chung, who came into the City from Tsim Sha Tsui to take drugs from 1971 or 1972. Ah Xian, Wilson and Wong all left school early and were poor. Ah Xian's father took drugs. Wong later met Ah Xian again at the church where he gave up drugs.
+
+- Home: in the City (no address given)
+- In the City: grew up in the City; a drug user in the 1970s (inferred) (lived)
+- Related: [Wilson](#wilson-wwc) (lifelong companion)
+- Life details:
+  - (inferred) He is possibly the 阿賢 of HK01 (2024), a City gang boy whom Jackie Pullinger helped. No source joins the two. [2]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "He enjoyed the bustle and spent his time hanging out with his lifelong companions Wilson and Ah Xian. Their fates seemed intertwined: they all dropped out of school early, they were poor and their fathers were gamblers or drug addicts."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "The other guys, Ah Xian and Wilson, lived in the Walled City. Their fathers both took drugs"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p259: "At the church, I was also reunited with Wilson and Ah Xian."
+  4. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "my family did not live there but in the Tsim Sha Tsui area of Hong Kong"
+  5. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "I began going into the Walled City dens to take drugs around 1971 or 1972."
 
 ## Albert Ng Kam-po (吳錦波)
 
@@ -138,9 +261,46 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: Room A, 7/F, 8 Sz Kung St. (WSJ); he recalled 'the eighth floor' (Beijing Visitor)
 - In the City: 1975-1991 or 1992
 - Rooms in the model (building:floor:unit): 171:7:1 (7/F, Ng family flat, Room A, 7/F, 8 Sz Kung St); 171:1:0 (1/F, Hallway and roof of Albert Ng's building)
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Albert Ng Kam-po went to school outside the Walled City but remembers playing on its rooftop and in its corridors."
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Room A, 7/F, 8 Sz Kung St."
-- Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng', by Christopher KL Lau (undated), https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city: "I lived on the eighth floor and there was no elevator."
+- Life details:
+  - In 2013, aged 45, he was a pastor at the English-speaking Island Evangelical Community Church in Quarry Bay. [4]
+  - He said the family moved into the Walled City because it was relatively cheaper. [5]
+  - He speaks as a former resident who grew up there in Paul French's BBC Radio 3 documentary 'Return to the City of Darkness' (2026). [6]
+  - He was born in a farming village in Mainland China. [7]
+  - His mother took him and his sister to Hong Kong when he was a young child. [14]
+  - The family lived in the City until it was demolished. [15]
+  - His own blog says that his family moved into the City in the mid-1970s and lived there until the demolition in the early 1990s. [9]
+  - He lived on the 8th floor of a building with no lift. [10]
+  - The family bought rice and LPG gas from a grocery ('rice shop') inside the City owned by the parents of his friend Ah Meng; Ah Meng's older brother Ah Keung delivered them up the stairs. [11]
+  - As a boy he picked up empty soda bottles in the dark alleys and returned them to the grocery for a 20-cent refund each. [12]
+  - Ah Meng's parents, the grocery owners, introduced him to their son Ah Meng (who lived outside the City) so that the boys could play table tennis together. [18]
+  - Later he became a pastor; Island ECC says that he lived in the City for more than ten years and hopes to write a book about it. [8]
+  - He is married to Elisa; they have two sons. [17]
+  - His mother scolded him for collecting the bottles and forbade it. [13]
+  - He bought stamps from an old man outside Kowloon City Christians' Church on Lung Kong Road (outside the City) and resold them to Ah Meng. [19]
+  - He said that every day he walked through the dark alleys while water dripped all the time. [20]
+  - He ended his account of the hard life in the City with: 'But we had hope.' [21]
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Albert Ng Kam-po went to school outside the Walled City but remembers playing on its rooftop and in its corridors."
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Room A, 7/F, 8 Sz Kung St."
+  3. Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng', by Christopher KL Lau (undated), https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city: "I lived on the eighth floor and there was no elevator."
+  4. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "says Ng, 45, a pastor at the English-speaking Island Evangelical Community Church in Quarry Bay."
+  5. [Asia Society Hong Kong, 'Life in Kowloon Walled City' (2013 roundtable page)](https://asiasociety.org/node/17291): "The reason we moved into the Walled City was the relatively cheaper price."
+  6. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026](https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/): "former residents who grew up there, like Louisa Wong and Albert Ng"
+  7. [Albert Ng, personal site, About](https://psalbertng.wixsite.com/blog/about), About: "I was born in a farming village in Mainland China."
+  8. [Island Evangelical Community Church (Island ECC), 'Pastor Albert Ng'](https://www.islandecc.hk/ministry-leaders-and-elders/albert-ng/), bio: "is to write a book about the Kowloon Walled City where he lived for more than ten years."
+  9. [KowloonWalledCityBoy (Albert Ng), My Kowloon Walled City blog, About](https://mykowloonwalledcityblog.wordpress.com/about/), About: "My family moved into the Kowloon Walled City in mid-70s and lived there until it was demolished in the early 90s."
+  10. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "As I mentioned earlier, I lived on the 8th Floor, and there was no elevator."
+  11. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "His parents owned a grocery store inside the Walled City."
+  12. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "If you return an empty bottle, you got a 20 cents refund."
+  13. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "One day, my mom scolded me and forbade me from doing this again."
+  14. [Albert Ng, personal site, About](https://psalbertng.wixsite.com/blog/about), About: "My mom took me and my sister to HK when I was a young kid."
+  15. [Albert Ng, personal site, About](https://psalbertng.wixsite.com/blog/about), About: "We lived in the infamous Kowloon Walled City (blog) until it was demolished."
+  16. [Albert Ng, personal blog (pastoralbertng.wordpress.com), About](https://pastoralbertng.wordpress.com/about/), About: "Our family lived in the famous (infamous??) Kowloon Walled City"
+  17. [Island Evangelical Community Church (Island ECC), 'Pastor Albert Ng'](https://www.islandecc.hk/ministry-leaders-and-elders/albert-ng/), bio: "Albert is married to Elisa, together they have two boys."
+  18. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "We struck a friendship when his parents introduced us to meet so that we could play table tennis together."
+  19. [KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016](https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/), post: "Many years ago there was an old man setting up shop right outside of the Kowloon City Christians’ Church at Lung Kong Road."
+  20. [Asia Society Hong Kong, 'Life in Kowloon Walled City' (roundtable report, Nov 2013)](https://asiasociety.org/hong-kong/life-kowloon-walled-city), report: "Every day I walked through those dark alleys (while) water was dripping all the time."
+  21. [Asia Society Hong Kong, 'Life in Kowloon Walled City' (roundtable report, Nov 2013)](https://asiasociety.org/hong-kong/life-kowloon-walled-city), report: "But we had hope,"
 
 ## Chan Che Ming (陳子明)
 
@@ -149,7 +309,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, 74 Lung Chun Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 265:1:0 (1/F, 陳子明牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-3: "1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-3: "1/F, Nam Ming House, 74 Lung Chun Road, KWC. [Kowloon Walled City] Chan Che Ming Dentistry 陳子明牙科"
 
 ## Chan Cheung-chuen (陳祥全)
 
@@ -158,9 +319,49 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: 12/F, Room B, 31 Tung Tau Tsuen Rd.; later 11/F, Room 2, 16 Tung Tau Tsuen Rd. (WSJ)
 - In the City: 1985-1991 (WSJ fact box); HK01 gives a move into the City in 1979
 - Rooms in the model (building:floor:unit): 43:12:0 (12/F, Chan family flat, 12/F, Room B, 31 Tung Tau Tsuen Rd)
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Chan Cheung-chuen spent four months making a hand-drawn map of the Walled City while he was an engineering student."
-- HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "陳存全與妻子倆原居九龍城的板間房，與鄰居多磨擦，1979年遷入城寨，房租約莫800元"
-- HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我沒有用心理會清拆，因為我只是個租客"
+- Life details:
+  - As a child he lived in Tung Tau Estate, outside the City; he first went into the City with classmates to visit a friend who lived there, and played hide and seek in its dark corners. [4]
+  - He moved into the City after he got married, to start his family. [5]
+  - His work related to mechanical drawing; when the City was about to be demolished he drew his own map, of the streets and of the upper-level walkways between buildings. [7]
+  - He said that neighbours swapped ingredients through the windows when they cooked dinner (for example soy sauce), that a shout for help alerted everyone, and that the City was sometimes safer than outside. [6]
+  - He said that many couples in the Kaifong (Neighbourhood Welfare Association) met in the City. [9]
+  - The map is of the City shortly before the demolition (the source gives no date). [8]
+  - He said that he sometimes thought the City was safer than outside. [10]
+  - (Cantonese transcript) He grew up in Tung Tau Estate (東頭邨), not in the City. [11]
+  - (Cantonese transcript) He moved into the City when he married and needed a small home (蝸居). [12]
+  - (Cantonese transcript) Neighbours cooking dinner opened the window and asked each other for soy sauce; they swapped ingredients through the windows often. [13]
+  - (Cantonese transcript) In a fire, neighbours warned each other because they lived so close. [14]
+  - As a boy he went to the City with classmates to visit a friend and played hide-and-seek there. [15]
+  - He mapped the intertwined streets and the upper-level walkways that linked the buildings. [16]
+  - Neighbours borrowed ingredients through the windows ('Hey do you have some soy sauce?'). [17]
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Chan Cheung-chuen spent four months making a hand-drawn map of the Walled City while he was an engineering student."
+  2. HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "陳存全與妻子倆原居九龍城的板間房，與鄰居多磨擦，1979年遷入城寨，房租約莫800元"
+  3. HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我沒有用心理會清拆，因為我只是個租客"
+  4. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "When I was little I lived in Tung Tau Estate, which isn't part of the walled city."
+  5. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "I later moved to the walled city myself after getting married to start my family."
+  6. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "And when you were cooking dinner, you could just open the window and ask your neighbour, 'Hey do you have some soy sauce?'"
+  7. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "Chan's own work relates to mechanical drawing"
+  8. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "so when the walled city was about to be demolished, he drew his own map of the walled city."
+  9. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "There were many couples in the Kaifong—or Neighbourhood Welfare Association—who met in the walled city."
+  10. [M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)](https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/), audio guide transcript: "I sometimes thought it was safer in the walled city than outside."
+  11. [M+ (Hong Kong), audio guide 8038, Cantonese transcript](https://www.mplus.org.hk/tc/audio-guide/8038-cantonese/), transcript: "我細個嗰陣喺東頭邨住，起初唔係喺城寨裏面住。"
+  12. [M+ (Hong Kong), audio guide 8038, Cantonese transcript](https://www.mplus.org.hk/tc/audio-guide/8038-cantonese/), transcript: "第二次接觸城寨係我結婚，要搵一個蝸居，就搬咗入九龍城寨。"
+  13. [M+ (Hong Kong), audio guide 8038, Cantonese transcript](https://www.mplus.org.hk/tc/audio-guide/8038-cantonese/), transcript: "又例如隔離屋見到大家喺度煮飯，打開窗，同對方講：「喂，攞支豉油過嚟啊。」喺窗口交換食材，都係經常發生。"
+  14. [M+ (Hong Kong), audio guide 8038, Cantonese transcript](https://www.mplus.org.hk/tc/audio-guide/8038-cantonese/), transcript: "例如火警嗰陣，大家會互相提醒，因為鄰居嘅距離實在太接近，容易互相幫助。"
+  15. [M+ audio guide 8038 (English), Kowloon Walled City—Aerial View from the Southwest](https://www.mplus.org.hk/sc/audio-guide/8038-english/), transcript: "The dark corners and the intertwined streets were perfect for hide and seek."
+  16. [M+ audio guide 8038](https://www.mplus.org.hk/sc/audio-guide/8038-english/), transcript: "The main things to map were the intertwined streets, and the upper-level walkways connecting different buildings."
+  17. [M+ audio guide 8038](https://www.mplus.org.hk/sc/audio-guide/8038-english/), transcript: "Hey do you have some soy sauce?"
+
+## Chan Fat (陳發)
+
+<a id="chan-fat-dentist"></a>**dentist.** Chan Fat (陳發) was a dentist in the Walled City. A photo by Roger Price, taken in September 1991, shows his sign, 陳發牙醫 (Chan Fat, dentist), at World Dental, a ground-floor surgery on Lung Shing Road (龍城路).
+
+- Work: World Dental, a ground-floor dental surgery on Lung Shing Road (龍城路)
+- In the City: September 1991 (a photo) (worked)
+- Rooms in the model (building:floor:unit): 3:0:2 (G/F, World Dental (dentist Chan Fat))
+- Sources:
+  1. [Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg): "陳發牙醫"
 
 ## Chan Hay Sing (陳喜星)
 
@@ -169,18 +370,35 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 126 Lung Chun Road
 - In the City: named in a clearance file dated 1989-1993
 - Rooms in the model (building:floor:unit): 247:0:0 (G/F, Chan Hay Sing Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-72: "G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-72: "G/F, 126 LC [Lung Chun] Road - Chan Hay Sing Dentistry (陳喜星牙科)"
 
-## Chan Hip Ping
+## Chan Hip Ping (陳協平)
 
 <a id="chan-hip-ping"></a>**Kai Fong Association vice-president.** Chan Hip Ping worked for the Kowloon Walled City Kai Fong Association (九龍城寨街坊福利會). The Association started on 1 May 1963 to serve the residents. As a very young man, Chan boiled water and served at its receptions. From 1966 he was its Vice-President. The Association had its offices on the third floor of 16 Tung Tau Tsuen Road (東頭村道). It cleaned alleys and drains, removed garbage and worked against fires and burglaries. In the 1970s it started to put up road signs and public lights. Later it paid for more than 200 lights. It ran a school from 1968 to 1979. It also took elderly residents on tours, for example to Aberdeen in 1987. The demolition began on 14 January 1987. The Association then called emergency meetings and took the residents' demands to the Government. More than 3000 residents came to its office. At the peak it held nine meetings a day. At the time of the interview, Chan no longer lived in the City. But he still spoke for its community.
 
 - Work: Kai Fong Association offices, third floor of 16 Tung Tau Tsuen Road
 - In the City: Helped the Kai Fong Association from its start in 1963; Vice-President from 1966; no longer a resident at the time of the interview
 - Rooms in the model (building:floor:unit): 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p178: "Though no longer a resident of the Walled City, Chan Hip Ping continued to represent the concerns of the local community"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p178: "his work as Vice-President of the Kai Fong Association, a position he had held since 1966."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p180: "more than 3000 residents came to the KFA to express their concerns. At the peak, we were holding nine meetings a day."
+- Life details:
+  - In December 1989 Reuters gave his title as vice chairman of the Walled City residents' association, the Kaifong. [4]
+  - He said that he never expected the City to be demolished so soon. [5]
+  - He said that the residents were shocked in 1987 when the government announced the clearance. [6]
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 陳協平 beside the English name. [7]
+  - He said residents opposed every attempt at demolition, to defend the place. [8]
+  - The page gives his Chinese name 陳協平 and calls him a Walled City resident (街坊) and former vice-chairman of the 九龍城寨街坊福利會. [9]
+  - He said that every time the government tried to clear the City the residents opposed it, with much friction and dispute: for the residents, it was a place to defend. [10]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p178: "Though no longer a resident of the Walled City, Chan Hip Ping continued to represent the concerns of the local community"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p178: "his work as Vice-President of the Kai Fong Association, a position he had held since 1966."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p180: "more than 3000 residents came to the KFA to express their concerns. At the peak, we were holding nine meetings a day."
+  4. [Reuters (Emma Boyde), 'Drug addicts, rats and sewage to make way for urban park', dateline Hong Kong, printed in the Jordan Times, 20 Dec 1989, p5 (scan in archive.org item JordanTimes1989JordanEnglish)](https://archive.org/download/JordanTimes1989JordanEnglish/Dec%2020%201989%2C%20Jordan%20Times%2C%20%234270%2C%20Jordan%20%28en%29_djvu.txt), Jordan Times p5; OCR text, errors as in the scan: "vice chairman of the walled dty residents' assotiation, known in Cantonese as the Kaifong."
+  5. [Reuters (Emma Boyde), 'Drug addicts, rats and sewage to make way for urban park', dateline Hong Kong, printed in the Jordan Times, 20 Dec 1989, p5 (scan in archive.org item JordanTimes1989JordanEnglish)](https://archive.org/download/JordanTimes1989JordanEnglish/Dec%2020%201989%2C%20Jordan%20Times%2C%20%234270%2C%20Jordan%20%28en%29_djvu.txt), Jordan Times p5: "I never knew what they were deriding for the walled dty, in fact I never expected it would be demolished so soon,"
+  6. [Reuters (Emma Boyde), 'Drug addicts, rats and sewage to make way for urban park', dateline Hong Kong, printed in the Jordan Times, 20 Dec 1989, p5 (scan in archive.org item JordanTimes1989JordanEnglish)](https://archive.org/download/JordanTimes1989JordanEnglish/Dec%2020%201989%2C%20Jordan%20Times%2C%20%234270%2C%20Jordan%20%28en%29_djvu.txt), Jordan Times p5: "we were rather shocked in 1987 when the government announced it was going to clear the city,"
+  7. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "陳協平（Chan Hip Ping） | 街坊福利會副會長"
+  8. [Anue鉅亨 (from Phoenix TV 鳳凰衛視), 2024-05-26](https://hao.cnyes.com/post/86760), section quoting 陳協平: "來拆遷一次，居民就反對一次"
+  9. [鉅亨號 (Anue), 小星星, 26 May 2024, 轟動戛納，再現港片輝煌，還能帶你回到80年代的九龍城寨？](https://hao.cnyes.com/post/86760), quote block: "九龍城寨街坊、原九龍城寨街坊福利會副會長"
+  10. [鉅亨號 (Anue), 小星星, 26 May 2024, 轟動戛納，再現港片輝煌，還能帶你回到80年代的九龍城寨？](https://hao.cnyes.com/post/86760), quote block: "來拆遷一次，居民就反對一次，有很多摩擦、爭執、糾紛，對居民來說就是要保衛這裡。"
 
 ## Chan Hon Fung (陳漢豐)
 
@@ -189,9 +407,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 2B Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1990-1992; ledgers 1987-1995
 - Rooms in the model (building:floor:unit): 0:0:3 (G/F, 陳漢豐鮮菓士多)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-342A (ledgers -343 to -345): "G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-342A (ledgers -343 to -345): "G/F, 2B Tung Tau Tsuen Road, KWC [Kowloon Walled City] Chan Hon Fung Store (陳漢豐鮮菓士多)"
 
-## Chan Kwan Leung
+## Chan Kwan Leung (陳昆亮)
 
 <a id="chan-kwan-leung"></a>**pigeon breeder.** Chan Kwan Leung grew up in the first resettlement estates at Shek Kip Mei, and later in the New Territories. His parents were teachers. At 24 he worked for the Hong Kong Telephone Company and left his parents' house. In 1981 he moved into the Walled City, where he bought a flat for $68,000. He met his wife there. Her mother gave him a pigeon, and soon he kept many birds. In about 1981 or 1982 he built cages on the roof of his building. The owner of the flat below agreed, but other people complained. He quit his job to care for the birds, and at one stage he had more than 1000. He did not tell his wife or his parents. He bought and sold pigeons and started a pigeon-racing club with friends. The club raced birds from Shanghai and other places in China. In January 1987 the Housing Department registered him as a resident and announced the clearance. On that day he decided to close his pigeon business.
 
@@ -199,9 +418,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Hong Kong Telephone Company until he quit, soon after 1981; then his pigeon cages on the roof of his apartment building
 - In the City: From 1981 to the interview; the Housing Department registered him as a resident in January 1987
 - Rooms in the model (building:floor:unit): 75:0:0 (G/F, Chan Kwan Leung's pigeon lofts); 59:2:2 (2/F, Chan Kwan Leung's flat)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p318: "Chan Kwan Leung moved into the Walled City in 1981, while working for Hongkong Telecom."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p319: "I think it was around 1981 or '82 when I built my pigeon cages on the roof."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p320: "the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 陳昆亮 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p318: "Chan Kwan Leung moved into the Walled City in 1981, while working for Hongkong Telecom."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p319: "I think it was around 1981 or '82 when I built my pigeon cages on the roof."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p320: "the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "陳昆亮（Chan Kwan Leung） | 天台信鴿人"
 
 ## Chan Kwok Cheung (陳國祥)
 
@@ -210,7 +433,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 108 Lung Chun Road
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 261:0:0 (G/F, 牙醫陳國祥)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-52: "G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-52: "G/F, 108 Lung Chun Road K.W.C. [Kowloon Walled City] Canton Dentist Chan Kwok Cheung (牙醫陳國祥)"
 
 ## Chan Kwong
 
@@ -219,11 +443,12 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Tai Kwong Plastic Factory, Tai Chang Street (大井街), in the Walled City, from 1972; before that, rented premises on Shing Ngam Road, Kowloon City (1970-1972)
 - In the City: factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming
 - Rooms in the model (building:floor:unit): 111:0:0 (G/F, Tai Kwong Ho Metals & Plastic Mfy. [Manufactory])
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "Two years later, he moved to Tai Chang Street in the Walled City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "At times, I was operating 24 hours a day. At one stage, I also employed 30 or more female workers who worked from home."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "It is a lot easier to do business in the Walled City – fewer inspectors from the Labour Services Department and greater freedom."
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "Two years later, he moved to Tai Chang Street in the Walled City."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "At times, I was operating 24 hours a day. At one stage, I also employed 30 or more female workers who worked from home."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "It is a lot easier to do business in the Walled City – fewer inspectors from the Labour Services Department and greater freedom."
 
-## Chan Pui Yin
+## Chan Pui Yin (陳沛然)
 
 <a id="chan-pui-yin"></a>**herbal doctor.** Chan Pui Yin came to Hong Kong from Chiu Chow (潮州) county in 1947. He first worked for a pottery distributor on Hong Kong Island. In 1955, at the age of 29, he borrowed money and opened a herbal medicine store on Lung Chun Road (龍津道). Business was good, and he bought the place. Later the two-storey building became an 11-storey block. He got two units for the one that he gave up. He sold mainly herbs and also gave medical consultations. His father, a herbal doctor, taught him. His clients came from all over, some from Hong Kong Island. The shop had Chinese medicines on one side and Western toiletries on the other. It opened from 8am to 11pm, but people knocked on his door at night for medicine. He lived high up in the City, with a view of the sea and fresh air. His three sons and a daughter grew up in the City and kept away from drugs.
 
@@ -231,28 +456,74 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his own herbal medicine store on Lung Chun Road (龍津道), from 1955
 - In the City: store on Lung Chun Road from 1955; still living and working in the City at the time of the interview
 - Rooms in the model (building:floor:unit): 243:0:0 (G/F, Chan Pui Yin's herbal medicine store)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "Eight years later, at the age of 29, he opened his own store on Lung Chun Road."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I sold mainly herbs, but provided medical consultations as well."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I live high up where I can see the sea and the sights at night, and it has plenty of fresh air."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 陳沛然 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "Eight years later, at the age of 29, he opened his own store on Lung Chun Road."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I sold mainly herbs, but provided medical consultations as well."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p82: "I live high up where I can see the sea and the sights at night, and it has plenty of fresh air."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "陳沛然（Chan Pui Yin） | 中醫"
 
 ## Chan Shing
 
 <a id="chan-shing"></a>**private water supplier.** Chan Shing was one of the 70 or so private water suppliers of the Walled City. He collected the monthly charges from his customers himself. Sometimes he waived the charge for the elderly. He said: "we are all poor people here and we should help each other". His pump was usually hidden behind a floor panel. At various times he switched it on to fill a large storage tank on the roof. The book gives him only in a photo caption, with no address or dates.
 
 - Work: his water pump room (no address in the book)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "One of the City's 70 or so private water suppliers, Chan Shing collected monthly charges personally from his customers"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "we are all poor people here and we should help each other"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "One of the City's 70 or so private water suppliers, Chan Shing collected monthly charges personally from his customers"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p112: "we are all poor people here and we should help each other"
 
-## Chan Wai Shui
+## Chan So-hing (陳素卿)
+
+<a id="chan-so-hing"></a>**fishball maker.** Chan So-hing (陳素卿) lived and worked in the Walled City. She and her husband Ha Fan-ming founded Ha Ming Kee; it was a husband-and-wife business. In 1983 she took over a noodle shop on Victory Road, Ho Man Tin, and founded Ha Ming Kee. She made the fishballs at home while her husband delivered them by bicycle. Her son remembers her cleaning the fish at the pump in the street. She gutted and cleaned all the fish at the pump, in cold water, because the flat had no room for that work. The buildings had no running water; the street pump was the family's only water supply. The family lived on the eighth floor, with no lift.
+
+- Home: the 8th floor of a building with no lift (address not given)
+- Work: the home workshop; she cleaned the fish at the pump in the street. From 1983 also the Victory Road noodle shop
+- In the City: 1969 to 1993 (both)
+- Related: [Ha Fan-ming (夏藩銘)](#ha-fan-ming) (husband); [Roger Ha](#roger-ha) (son)
+- Life details:
+  - She and her husband Ha Fan-ming founded Ha Ming Kee; it was a husband-and-wife business. [1]
+  - In 1983 she took over a noodle shop on Victory Road, Ho Man Tin, and founded Ha Ming Kee. [2]
+  - She made the fishballs at home while her husband delivered them by bicycle. [3]
+  - Her son remembers her cleaning the fish at the pump in the street. [4]
+  - She gutted and cleaned all the fish at the pump, in cold water, because the flat had no room for that work. [5]
+  - The buildings had no running water; the street pump was the family's only water supply. [6]
+  - The family lived on the eighth floor, with no lift. [7]
+- Sources:
+  1. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), lead: "1983年由夏藩銘、陳素卿夫婦創辦，專營售賣自製人手魚蛋、魚片、魚皮雲吞、炸魚皮、腐皮卷，以及辣椒油。"
+  2. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "1983年，夏太太頂下一家位於何文田勝利道的麵店，成立「夏銘記麵家」。"
+  3. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "My father would make the deliveries on a bike while my mother made the fish balls at home;"
+  4. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "I have memories of my mother cleaning the fish by the pump on the street,"
+  5. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "My mother would gut and clean all the fish by the pump, and the water was cold."
+  6. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "There was no running water in the buildings, and the pump was our only water supply."
+  7. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "We lived on the eighth floor, and there was no lift."
+
+## Chan Wai Shui (陳偉瑞)
 
 <a id="chan-wai-shui"></a>**noodle maker.** Chan Wai Shui came to Hong Kong from China in 1947, at the age of 18. He learned the noodle business from his uncle. His old premises in Wang Tau Hom were demolished for the MTR. Thus in 1979 he bought a factory on Lo Yan Street (老人街) for $200,000. Prices outside the Walled City were too high for his small business. He registered the purchase with the Welfare Association and needed no licences. At first there was no electricity, so he arranged for cables. Four partners from before the move worked there about nine hours a day from 8am. His co-workers included Mr Shum and Kwan Tsin On. They made egg noodles and won tun pastry from about 10 bags of flour a day. They delivered by car every day to 40 or 50 regular customers. Chan did not live in the City and seldom slept in the factory. He came only to earn a living. He ran the factory for more than 10 years. He was not sure that the compensation was enough for a new factory.
 
 - Work: His noodle factory on Lo Yan Street
 - In the City: Worked in the City from 1979 for more than 10 years; did not live in the City
 - Rooms in the model (building:floor:unit): 78:0:0 (G/F, Chan Wai Shui's noodle factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p226: "Chan Wai Shui operated his own noodle factory on Lo Yan Street for more than 10 years."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p226: "I set up this factory in the Walled City in 1979, after my old premises in Wang Tau Hom were demolished"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p228: "I seldom sleep in the factory overnight and I have not thought of living here just for the convenience of coming to work."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 陳偉瑞 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p226: "Chan Wai Shui operated his own noodle factory on Lo Yan Street for more than 10 years."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p226: "I set up this factory in the Walled City in 1979, after my old premises in Wang Tau Hom were demolished"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p228: "I seldom sleep in the factory overnight and I have not thought of living here just for the convenience of coming to work."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "陳偉瑞（Chan Wai Chui） | 麵條及雲吞皮師傅"
+
+## Chan Wing Kin
+
+<a id="chan-wing-kin"></a>**business owner.** Chan Wing Kin worked in the Walled City. The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Chan Wing Kin - [Ledger]', dated 1989 - 1989. The files of this series (HKRS1255-3) are the compensation case files of the businesses of the Walled City at the clearance.
+
+- Work: a business (trade not given) in the City (the catalogue gives no address)
+- In the City: a business file of 1989 (worked)
+- Life details:
+  - The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Chan Wing Kin - [Ledger]', dated 1989 - 1989. [1]
+  - (inferred) The files in this series are compensation case files for businesses in the Walled City, thus the business was in the City. [1]
+- Sources:
+  1. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-39 (1989 - 1989)](https://search.grs.gov.hk/en/arcview.xhtml?eid=BctvBV91gDpjToo2GYeQDw%3D%3D), HKRS1255-3-39: "Chan Wing Kin - [Ledger]"
 
 ## Chan Wing Lan
 
@@ -261,7 +532,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, 19 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 21:1:0 (1/F, Dr. CHAN WING LAN)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-310: "1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-310: "1/F., 19, Tung Tau Tsuen Road Dr. CHAN WING LAN"
 
 ## Chan Yin Chor (陳燕初)
 
@@ -270,7 +542,19 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 150 Lung Chun Road
 - In the City: named in a clearance file dated 1991
 - Rooms in the model (building:floor:unit): 254:0:2 (G/F, 陳燕初牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-118: "G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-118: "G/F, 150 Lung Chun Rd. [Road] (K.W.C. [Kowloon Walled City]) - Chan Yin Chor Dentistry 陳燕初牙科"
+
+## Chang Kat Kong
+
+<a id="chang-kat-kong"></a>**landlord, air-con repairer.** Chang Kat Kong was a Chiu Chow landlord and an air-conditioner repairer. He persuaded his Chiu Chow friends to pool their money and built his first 12-storey block of flats in the City. At the clearance he was paid HK$34.6 million for about 100 flats; he said that his own share was only HK$5 million. In 1993 he told the South China Morning Post: 'I'd rather still be running my air-conditioner-repair business at my Walled City shop and leading a happy and stable life.'
+
+- Work: his air-conditioner-repair shop in the City; his 12-storey block of flats
+- In the City: built and owned flats in the City; ran a repair shop there until the clearance (worked)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014): Fionnuala McHugh, "The Walled City Clearances", p344: "One individual was paid HK$34.6 million as compensation for about 100 apartments."
+  2. City of Darkness Revisited (Girard and Lambot, 2014): Fionnuala McHugh, "The Walled City Clearances", p344: "He'd persuaded his Chiu Chow friends to pool their resources to construct his first 12-storey block of flats, and claimed his share of the compensation only boiled down to HK$5 million."
+  3. City of Darkness Revisited (Girard and Lambot, 2014): Fionnuala McHugh, "The Walled City Clearances", p344: "I'd rather still be running my air-conditioner-repair business at my Walled City shop and leading a happy and stable life."
 
 ## Chang Long Leung (張朗良)
 
@@ -279,7 +563,38 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F + M/F, 26 Kwong Ming Street
 - In the City: named in a clearance file dated 1990-1991
 - Rooms in the model (building:floor:unit): 98:0:0 (G/F, Chang Long Leung)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-528: "G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-528: "G/F, 26 Kwong Ming Street + M/F. 26 Kwong Ming Street. Chang Long Leung (張朗良)"
+
+## Charles
+
+<a id="charles-baker"></a>**baker.** Charles lived in the Walled City. Born in the City in 1959; his parents came from Hoiping (開平) after the Second World War and settled in the City. As a child he lived with his parents, grandmother and four siblings in a 400+ sq ft tin-roofed house, renting the second floor; the ceiling leaked every time it rained. His father worked in the bread trade, leaving early and coming back late, and alone supported a family of eight; his mother took casual work in the City. As children they watched adults throw dice in the City's big gambling dens (大檔) and peeped at strip shows from outside the cinema. He studied one year at Munsang College (民生書院), could not fit in, and left school. After leaving school at 12 he was an apprentice at a plumbing-and-electrical company; he soon quit to work with his father at a bakery on Nam Cheong Street, and later opened his own shop on Shanghai Street. After marriage he and his wife Maggie lived in a 5/F rear-block flat with no windows at all; his father bought a cheap second-hand flat in the City for the young couple. In 1985 the family had saved money and moved out before the clearance; he said the windowless, airless home made him determined to find a better place.
+
+- Home: as a child, the rented 2nd floor of a 400 sq ft tin-roofed house; after his marriage a windowless flat on the 5th floor of a rear block (後座)
+- Work: from age 12 an apprentice at a plumbing-and-electrical firm; then a bakery on Nam Cheong Street (南昌街) with his father; then his own shop on Shanghai Street (上海街), outside the City
+- In the City: born in the City in 1959; the family moved out in 1985 (lived)
+- Related: [Maggie](#maggie-baker) (wife)
+- Life details:
+  - Born in the City in 1959; his parents came from Hoiping (開平) after the Second World War and settled in the City. [1]
+  - As a child he lived with his parents, grandmother and four siblings in a 400+ sq ft tin-roofed house, renting the second floor; the ceiling leaked every time it rained. [2]
+  - His father worked in the bread trade, leaving early and coming back late, and alone supported a family of eight; his mother took casual work in the City. [3]
+  - As children they watched adults throw dice in the City's big gambling dens (大檔) and peeped at strip shows from outside the cinema. [4]
+  - He studied one year at Munsang College (民生書院), could not fit in, and left school. [5]
+  - After leaving school at 12 he was an apprentice at a plumbing-and-electrical company; he soon quit to work with his father at a bakery on Nam Cheong Street, and later opened his own shop on Shanghai Street. [7]
+  - After marriage he and his wife Maggie lived in a 5/F rear-block flat with no windows at all; his father bought a cheap second-hand flat in the City for the young couple. [8]
+  - In 1985 the family had saved money and moved out before the clearance; he said the windowless, airless home made him determined to find a better place. [10]
+- Sources:
+  1. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "Charles一九五九年在城寨出世，他的父母二戰後從開平來港，輾轉在城寨落腳安家。"
+  2. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "他與父母、嫲嫲以及其餘四兄弟姐妹擠在四百多呎的鐵皮屋裏，當時租住在二樓，每逢下雨，天花板總會漏水；"
+  3. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "父親當時在麵包行業打工，早出晚歸，獨力養活一家八口，母親也在城寨接散工幫補家計。"
+  4. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "他們去城寨「大檔」（地下賭場）看大人搖骰子，也躲在戲院外偷看艷舞表演，天不怕地不怕。"
+  5. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "感到難以融入的Charles，在民生書院讀了一年便決定輟學就業。"
+  6. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "他十二歲輟學後曾到一間水電工程公司當學徒，"
+  7. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "Charles很快辭去學徒工作，跟隨父親在南昌街的一間麵包店打工，之後白手起家，還在上海街開了屬於自己的店舖。"
+  8. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "他們婚後住的五樓「後座」單位全屋都沒有窗，內部裝潢也很陳舊。"
+  9. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "父親還在城寨購買一個二手平價單位給這對剛創業的夫婦住。"
+  10. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "直至一九八五年，他們存下一筆錢，在城寨清拆前已經搬出去住。"
+  11. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), Charles section: "但我們住的地方沒窗沒空氣，所以我才會立志轉換一個好一些的環境。"
 
 ## Chau Kwan Hing (周坤興)
 
@@ -288,7 +603,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat 5, 2/F (also known as 6/F), 31B Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1992
 - Rooms in the model (building:floor:unit): 24:2:2 (2/F, also known as 6/F)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-244 (ledger -245): "Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-244 (ledger -245): "Flat 5, 2/F (also known as 6/F), Shing Hung Bldg [Building], Stage 2, 31B, Tung Tau Tsuen Road, Kwan Hing Roast Meat Stall 周坤興燒腊"
 
 ## Chau Pak
 
@@ -297,17 +613,43 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: a store, map number 5 (the repo guesses Lung Chun Back Road)
 - In the City: worked in the City in the late 1980s (map of 1992)
 - Rooms in the model (building:floor:unit): 196:0:0 (G/F, Chau Pak's store)
-- City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), index, p353: "5 Chau Pak storekeeper"
-- City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), caption, p353: "a good represenation of the Walled City's layout in the late 1980s, at about the time that the City's clearance was announced"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), index, p353: "5 Chau Pak storekeeper"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), caption, p353: "a good represenation of the Walled City's layout in the late 1980s, at about the time that the City's clearance was announced"
+
+## Cheng
+
+<a id="cheng-lookout-1963"></a>**opium-den lookout.** Cheng (the journalist's name for him) was the lookout of a small opium den in the Walled City in 1963. He was a former Nationalist policeman and had worked 'in this business' since he came to Hong Kong 14 years before. The job paid 80 cents a day. He built a 6-by-7-foot house from discarded lumber for his family of five, down an alley lined with baskets of squid. The den was open around the clock and served 200 customers a day from five pipes.
+
+- Home: a 6-by-7-foot house that he built from discarded lumber, down an alley lined with baskets of squid (in the City, inferred)
+- Work: lookout of a small opium den in the City, open around the clock; 80 cents a day plus 16 cents for lunch
+- In the City: 1963 (worked)
+- The name is a pseudonym that the source gives.
+- Related: [Lai](#lai-opium-1963) (friend)
+- Life details:
+  - The journalist gave him the name Cheng; it is not his real name. [1]
+  - He was about 40. [2]
+  - He was a former Nationalist policeman. He came to Hong Kong 14 years before 1963. [4]
+  - He built his 6-by-7-foot house from discarded lumber for his family of five. His wife and two small sons appear in the article. [3]
+  - He was the lookout of a small opium den in the City. The job paid 80 cents a day. [4]
+  - The den was open around the clock and served 200 customers a day from five pipes. [6]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Our lookout - let's call him Cheng - came an hour late that evening."
+  2. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Cheng's smooth, boyish face belies 40 troubled years."
+  3. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Cheng's 6-by-7-foot house that he took us to was down an alley lined with baskets of bright orange squid. He built it from discarded lumber to house his family of five."
+  4. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "A former Nationalist policeman turned narcotics hustler, he has worked "in this business" since coming to Hong Kong 14 years ago. His job entails sizeable risk, but only pays 80 cents a day."
+  5. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "His plump, pretty wife arrived home with her two small sons."
+  6. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Cheng told us that the small opium den where he works, like others in the Walled City, is open around the clock. It services 200 customers a day from only five pipes"
 
 ## Cheng Kim Shan (鄭劍山)
 
 <a id="cheng-kim-shan"></a>**Chinese medicine practitioner.** Cheng Kim Shan (鄭劍山) was a Chinese medicine practitioner in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-71A, dated 1989-1991, that names this person. Its catalogue entry reads: “Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館”. The catalogue gives no other facts about this person's life.
 
 - In the City: named in a clearance file dated 1989-1991
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-71A: "Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-71A: "Flat A, 4/F, Nam Hing House, 6, Lung Chun Rd. [Road], 2nd Lane (Cheng Kim Shan) 鄭劍山醫館"
 
-## Cheng Koon Yiu
+## Cheng Koon Yiu (鄭冠耀)
 
 <a id="cheng-koon-yiu"></a>**dentist.** Cheng Koon Yiu came to Hong Kong with his family in 1948, at the age of five. The family lived near the Walled City. He went to Chung San, a private school on Lung Chun Road (龍津路) inside the City. At 14 he became an apprentice to a relative who was a dentist. He lived on the first floor above the clinic. After his apprenticeship he worked in a factory and then in a clinic in the New Territories. In 1963 he came back to the City to assist a friend. About four years later he set up his own clinic. Later he rented a room from his teacher, who still practised nearby. Many patients came from outside because prices in the City were lower. He earned about $10,000 a month, and his wife helped him. The rent rose step by step from $450 and reached $2000 in 1987. His family, with two girls and a boy, moved into the clinic and slept on the floor.
 
@@ -315,9 +657,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his own dental clinic, in a room rented from his teacher (the book gives no street)
 - In the City: school in the City from about age 8 or 9; dental apprentice from age 14; in the City again from 1963 until the clearance
 - Rooms in the model (building:floor:unit): 249:0:0 (G/F, Cheng Koon Yiu's dental clinic)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p242: "in 1963 I came back to the Walled City to work with a friend"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "after a while, building work started next door and we moved to the clinic here."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "it has gone up gradually over the years and, since 1987, it has been $2000."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 鄭冠耀 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p242: "in 1963 I came back to the Walled City to work with a friend"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "after a while, building work started next door and we moved to the clinic here."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p245: "it has gone up gradually over the years and, since 1987, it has been $2000."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "鄭冠耀（Cheng Koon Yiu） | 牙醫"
 
 ## Cheng Ling Sang (鄭凌生)
 
@@ -326,9 +672,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F with a cockloft, 94 Lung Chun Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 257:0:0 (G/F, Cheng Ling Sang Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-34: "G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-34: "G/F with a cockloft, 94 Lung Chun Road Cheng Ling Sang Dentistry (鄭凌生牙科)"
 
-## Cheng San
+## Cheng San (鄭山)
 
 <a id="cheng-san"></a>**wooden-ruler maker.** Cheng San was a seaman. At the end of 1967, at about 40, he came back to live in Hong Kong, on the Ngau Tau Kok housing estate. He had six children. He knew no trade, so on a relative's advice he started to make rulers. He first rented a factory on Ko Shan Road. In 1968 he moved to bigger, cheaper premises of about 600 square feet on Tai Chang Street (大井街) in the Walled City. He sawed wood from Borneo by machine and painted the rulers. His daughter printed the measurements upstairs. He once had seven or eight workers and sold to Singapore and Malaysia. Later he worked alone, mostly for local and Macau buyers. He often worked from about 10am until midnight or later. He slept in the factory every night to keep drug addicts from stealing. His wife delivered rulers, and his sons carried the wood. He joined a local association that objected to low compensation. He moved out in 1990.
 
@@ -336,9 +683,22 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his wooden-ruler factory, about 600 square feet, on Tai Chang Street (大井街), 1968-1990
 - In the City: 1968-1990: factory on Tai Chang Street, where he also lived and slept
 - Rooms in the model (building:floor:unit): 67:0:0 (G/F, Cheng San's ruler factory); 111:0:2 (G/F, Pak Hop Ruler Factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "Cheng San set up his small factory on Tai Chang Street, in the City, in 1968."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I saw the wood, which comes from Borneo, by machine and my daughter prints the measurements on upstairs."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I have to stay here at night otherwise the drug addicts would steal everything."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 鄭山 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "Cheng San set up his small factory on Tai Chang Street, in the City, in 1968."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I saw the wood, which comes from Borneo, by machine and my daughter prints the measurements on upstairs."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p169: "I have to stay here at night otherwise the drug addicts would steal everything."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "鄭山（Cheng San） | 木尺廠老闆"
+
+## Cheung Mak Ching
+
+<a id="cheung-mak-ching"></a>**shopkeeper.** Cheung Mak Ching was a shopkeeper in the Walled City. When the Government announced the clearance in January 1987, he said: 'We'll see what China says to this. We have been through many clearance plans. Let's see what will happen this time.' This time China's Foreign Ministry accepted the clearance.
+
+- Work: his shop in the City (not named)
+- In the City: a shopkeeper in the City when the clearance was announced (January 1987) (worked)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014): Fionnuala McHugh, "The Walled City Clearances", p340: "The response of one shopkeeper, Cheung Mak Ching, had a grimly confident ring about it: "We'll see what China says to this. We have been through many clearance plans. Let's see what will happen this time.""
 
 ## Cheung Ting Wan (張挺華)
 
@@ -347,7 +707,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F Front Block, 35 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1991
 - Rooms in the model (building:floor:unit): 14:1:1 (1/F, 張挺華診所)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "1/F Front BLK [Block], 35 ,TTT Rd [Tung Tau Tsuen Road] , Cheung Ting Wan Medical Climic(張挺華診所)"
 
 ## Chong Tin Lai (莊天麗)
 
@@ -356,7 +717,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 35 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 14:0:0 (G/F, 莊天麗牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-187: "G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-187: "G/F, 35, Tung Tau Tsuen Road (莊天麗牙科) Chong Tin Lai Dentistry"
 
 ## Chu Yiu Shan (朱耀山)
 
@@ -365,20 +727,28 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Hang Fai Property Co., G/F and cockloft, 17 Tai Chang Street (大井街) (GRS file)
 - In the City: born 1951; grew up in the City and spent much of his adult life there; moved to Junk Bay when the clearance was announced (January 1987)
 - Rooms in the model (building:floor:unit): 111:0:1 (G/F, 恒暉地產)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "Born in 1951, Chu Yiu Shan was brought up and spent much of his adult life in the Walled City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "I used to earn around $20,000 a month through my property business, which became the biggest in the Walled City."
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-256: "G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 朱耀山 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "Born in 1951, Chu Yiu Shan was brought up and spent much of his adult life in the Walled City."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p113: "I used to earn around $20,000 a month through my property business, which became the biggest in the Walled City."
+  3. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-256: "G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "朱耀山（Chu Yiu Shan） | 城寨地產經紀"
 
-## Chung Lo Ying
+## Chung Lo Ying (鍾太)
 
 <a id="chung-lo-ying"></a>**mother of 10.** Chung Lo Ying and her family first lived in Hung Hom. Robbers scared them there, and in 1958 they moved into the Walled City. They agreed with a Chiu Chow (潮州) family, whose wooden hut had burnt down, to build a house on that family's land. The Chungs paid for the building and took the first floor. That place soon became too small, so they rented another first-floor flat. After about 10 years they bought it. Then a construction company offered them a flat in its new building in exchange. She signed the deal at a tea house, without a lawyer. She bought an apartment on the fourth floor of 82 Lung Chun Road (龍津道), overlooking the park. She first rented it for $80 a month and later paid about $40,000 for it. She had 10 children, and six of them arrived after the move into the City. Her children often joined her for dinner. She rarely locked the door. She did not want the City demolished.
 
 - Home: 4/F, 82 Lung Chun Road (龍津道), overlooking the park, on the south side of the City; before that, first-floor flats in other buildings in the City
 - In the City: from 1958 to at least the time of the interview (more than 30 years); more than 10 years in the 4/F flat
 - Rooms in the model (building:floor:unit): 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road); 222:1:0 (1/F, Chung family's first-floor flat in the new building)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p157: "I have lived in the Walled City for more than 30 years, and in this flat for more than 10."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p157: "buying an apartment on the fourth floor of 82 Lung Chun Road, overlooking the park."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p158: "I have 10 children in all, six of whom have been born since we moved into the City."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 鍾太 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p157: "I have lived in the Walled City for more than 30 years, and in this flat for more than 10."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p157: "buying an apartment on the fourth floor of 82 Lung Chun Road, overlooking the park."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p158: "I have 10 children in all, six of whom have been born since we moved into the City."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "鍾太（Mrs. Chung Lo Ying） | 家庭主婦"
 
 ## Chung Yuk Yee
 
@@ -387,9 +757,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: a windowless flat of 230 square feet, facing north, in the same building as her mother's flat (82 Lung Chun Road (龍津道))
 - In the City: 1961-1991: born in the City; moved out during the clearance in 1991
 - Rooms in the model (building:floor:unit): 263:12:0 (12/F, Chung Yuk Yee's flat); 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "lived in the Walled City from her birth, in 1961, until moving out during part of the clearance in 1991."
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p159: "Chung Yuk Yee's windowless flat was in the bowels of the City. Just 230 square feet in area, it was divided into two rooms"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "Once, I actually saw a rat run over my baby daughter's bed."
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "lived in the Walled City from her birth, in 1961, until moving out during part of the clearance in 1991."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p159: "Chung Yuk Yee's windowless flat was in the bowels of the City. Just 230 square feet in area, it was divided into two rooms"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "Once, I actually saw a rat run over my baby daughter's bed."
 
 ## Fong Yuk Shing (方玉成)
 
@@ -398,9 +769,117 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 29B Lung Shing Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 124:0:0 (G/F, Fong Yuk Shing Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-370: "G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-370: "G/F, 29B Lung Shing Road, KWC. Fong Yuk Shing Dentistry (方玉成牙科)"
 
-## Ho Chi Kam
+## Goko
+
+<a id="goko"></a>**triad gang leader.** Goko worked in the Walled City. He led Winson's triad gang in the Walled City and sent Winson to guard Jackie Pullinger's youth club after vandals broke in. Years later he gave up crime and became a Christian.
+
+- Work: leader of Winson's triad gang
+- In the City: about 1970 (the leader of Winson's gang) (worked)
+- Related: [Winson](#winson) (member of his gang)
+- Life details:
+  - He led Winson's triad gang in the Walled City and sent Winson to guard Jackie Pullinger's youth club after vandals broke in. [1]
+  - Years later he gave up crime and became a Christian. [2]
+  - (inferred) That he was in the City every day is an inference: the source makes him the leader of Winson's gang, and Winson lived in the City and fought for its turf. [1]
+- Sources:
+  1. [is-there-a-god.info, Winson's story](https://www.is-there-a-god.info/life/winson/), youth club section: "Winson's gang leader, Goko, was impressed by Jackie's attempts to help the walled city residents, and the next night he sent Winson down to keep an eye on things and deter any further vandalism."
+  2. [is-there-a-god.info, Winson's story](https://www.is-there-a-god.info/life/winson/), youth club section: "Years later, Goko even gave up his life of crime and chose to follow Jesus."
+
+## Gordon Lam Ka-tung (林家棟)
+
+<a id="gordon-lam-ka-tung"></a>**boy, later actor.** Gordon Lam Ka-tung (林家棟), later a film actor, moved into the Walled City with his family before he was 10 and lived there for four years. He was born in 1967 on South Wall Road (城南道), next to the City; his father traded jade. The family lived on the 12th floor of a building with no lift. Every day after school he took a red plastic bucket to the street corner and queued for water. He often bought egg tarts at a cha chaan teng on Lung Chun Road (龍津道).
+
+- Home: the 12th floor of a building with no lift (address not given)
+- In the City: four years in his primary-school years (he was born in 1967; thus the 1970s, inferred) (lived)
+- Life details:
+  - He moved into the City before age 10 and lived there four years. [1]
+  - The family lived on the 12th floor; the building had no lift. [2]
+  - Every day after school he took a red-A brand plastic bucket to the street corner and queued for water. [3]
+  - He often went to a cha chaan teng on Lung Chun Road (龍津路) for egg tarts. [4]
+  - He found former neighbours from the City for the film crew of 九龍城寨之圍城. [5]
+  - Born 21 September 1967 on South Wall Road (城南道), Kowloon City, next to the Walled City. [6]
+  - When he was in primary school, he and his family moved into the Walled City, where they lived for four years. [8]
+  - Born and raised in Kowloon City; the family moved home several times after his father's jade business failed; his mother had a low-paying cleaning job. [9]
+  - He is the second youngest of eight children, most of them older sisters; his father traded jade. [10]
+  - He told the Hollywood Reporter a story of how he and his sister once needed to move a sofa in the City (text not read: the page redirects to a paywall). [11]
+- Sources:
+  1. [香港01 (HK01) 開罐, 6 May 2024, 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說](https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA), section on 林家棟: "曾自爆未到10歲便搬入九龍城寨住了４年"
+  2. [香港01 (HK01) 開罐, 6 May 2024, 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說](https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA), section on 林家棟: "他指當年住12樓，大廈沒有電梯"
+  3. [香港01 (HK01) 開罐, 6 May 2024, 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說](https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA), section on 林家棟: "最記得每天放學回家便拿着紅A膠水桶，到街口輪候取水"
+  4. [香港01 (HK01) 開罐, 6 May 2024, 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說](https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA), section on 林家棟: "還時常光顧龍津路茶餐廳食蛋撻"
+  5. [大公文匯網, 7 May 2024, 《九龍城寨之圍城》背後故事：清拆30年後 仍有人懷念城寨](https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html), body: "出身九龍城寨的演員林家棟，也熱心為劇組找來昔日街坊，提供第一手資料。"
+  6. [Wikipedia (en), Gordon Lam](https://en.wikipedia.org/wiki/Gordon_Lam), lead and early life: "Gordon Lam Ka-tung (林家棟; born 21 September 1967)"
+  7. [Wikipedia (en), Gordon Lam](https://en.wikipedia.org/wiki/Gordon_Lam), lead and early life: "Lam was born at South Wall Road in Kowloon City"
+  8. [SCMP, 'Who is Gordon Lam Ka-tung, Hong Kong actor and producer who took the long road to success?' (article 3296870, 2025)](https://www.scmp.com/lifestyle/entertainment/article/3296870/who-gordon-lam-ka-tung-hong-kong-actor-and-producer-who-took-long-road-success): "When Lam was in primary school, he and his family moved into the notorious Kowloon Walled City, where they lived for four years."
+  9. [SCMP, 'Who is Gordon Lam Ka-tung, Hong Kong actor and producer who took the long road to success?' (article 3296870, 2025)](https://www.scmp.com/lifestyle/entertainment/article/3296870/who-gordon-lam-ka-tung-hong-kong-actor-and-producer-who-took-long-road-success): "Born and raised in Kowloon City, Lam moved home several times growing up after his father's jade business failed; his mother had a low-paying cleaning job."
+  10. [SCMP, 'Who is Gordon Lam Ka-tung, Hong Kong actor and producer who took the long road to success?' (article 3296870, 2025)](https://www.scmp.com/lifestyle/entertainment/article/3296870/who-gordon-lam-ka-tung-hong-kong-actor-and-producer-who-took-long-road-success): "He is the second youngest of eight children, most of whom are older sisters; the family is so numerous, it has been reported, because of his father's desire to have sons who would inherit his jade trading business."
+  11. [The Hollywood Reporter, interview with Soi Cheang on 'Twilight of the Warriors: Walled In' (2024)](https://www.hollywoodreporter.com/movies/movie-features/twilight-of-the-warriors-walled-in-director-soi-cheang-prequel-sequel-1235972082/): "The actor, Gordon Lam, who grew up there, told me a story about how he and his sister once needed to move a sofa"
+
+## Ha Fan-ming (夏藩銘)
+
+<a id="ha-fan-ming"></a>**fishball maker.** Ha Fan-ming (夏藩銘) lived and worked in the Walled City. In 1968 he and his wife took over a noodle stall opposite Wong Tai Sin police station; they used their home as a workshop. The next year they moved into the City and went on making cuttlefish balls at home, mainly for wholesale to Chiu Chow restaurants. In the 1960s he and his wife lived in the City and used the home as a workshop for cuttlefish balls and pork balls. Later the noodle shop moved to Yau Ma Tei; the couple cut fish, beat the paste and piped fishballs every day for more than 40 years. His eldest son Roger reopened Ha Ming Kee in Sai Ying Pun in 2018. He and his wife Chan So-hing founded Ha Ming Kee in the narrow alleys of the City (SCMP). He and his wife came from Chiu Chow (潮州) to Hong Kong in the 1960s and started to sell fishballs out of necessity. The family did not leave the City until the demolition began in 1993. He made the deliveries by bicycle while his wife made the fishballs at home. The family lived on the eighth floor, with no lift. At its height Ha Ming Kee supplied 70 per cent of the restaurants in the Yau Tsim Mong district. All his children graduated from universities overseas. In 1983 his wife took over a noodle shop on Victory Road, Ho Man Tin (何文田勝利道), and founded Ha Ming Kee (夏銘記麵家).
+
+- Home: the 8th floor of a building with no lift (address not given)
+- Work: the home workshop (cuttlefish balls and pork balls, sold wholesale to Chiu Chow restaurants); he made the deliveries by bicycle. From 1983 also Ha Ming Kee (夏銘記) noodle shop, Victory Road (勝利道), Ho Man Tin, outside the City
+- In the City: 1969 to 1993 (the family left when the demolition began) (both)
+- Related: [Chan So-hing (陳素卿)](#chan-so-hing) (wife); [Roger Ha](#roger-ha) (eldest son)
+- Life details:
+  - In 1968 he and his wife took over a noodle stall opposite Wong Tai Sin police station; they used their home as a workshop. [1]
+  - The next year they moved into the City and went on making cuttlefish balls at home, mainly for wholesale to Chiu Chow restaurants. [2]
+  - In the 1960s he and his wife lived in the City and used the home as a workshop for cuttlefish balls and pork balls. [3]
+  - Later the noodle shop moved to Yau Ma Tei; the couple cut fish, beat the paste and piped fishballs every day for more than 40 years. [4]
+  - His eldest son Roger reopened Ha Ming Kee in Sai Ying Pun in 2018. [5]
+  - (inferred) In December 1986 the family probably still lived in the City: the wife made fish products at home and he delivered them by bicycle; from 1983 they also ran the Ho Man Tin noodle shop. [8]
+  - He and his wife Chan So-hing founded Ha Ming Kee in the narrow alleys of the City (SCMP). [6]
+  - He and his wife came from Chiu Chow (潮州) to Hong Kong in the 1960s and started to sell fishballs out of necessity. [7]
+  - The family did not leave the City until the demolition began in 1993. [8]
+  - He made the deliveries by bicycle while his wife made the fishballs at home. [9]
+  - The family lived on the eighth floor, with no lift. [10]
+  - At its height Ha Ming Kee supplied 70 per cent of the restaurants in the Yau Tsim Mong district. [11]
+  - All his children graduated from universities overseas. [12]
+  - In 1983 his wife took over a noodle shop on Victory Road, Ho Man Tin (何文田勝利道), and founded Ha Ming Kee (夏銘記麵家). [13]
+- Sources:
+  1. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "1968年，夏藩銘夫婦頂了位於黃大仙警署對面的「榕江號」麵檔，把家裏當成工場，打墨魚丸、豬肉丸，也做齋菜如素雞素鴨，然後把貨搬到麵檔。"
+  2. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "翌年，他們搬到九龍城寨，繼續在家做墨魚丸，主要批發賣予潮州酒家食肆。"
+  3. [Yahoo News HK / 好集慣 BetterMe, Janice Hui, 手打魚蛋老字號重生 二代延續蔡瀾至愛潮洲粉麵小店, 3 Nov 2023](https://hk.news.yahoo.com/%E6%89%8B%E6%89%93%E9%AD%9A%E8%9B%8B%E8%80%81%E5%AD%97%E8%99%9F%E9%87%8D%E7%94%9F-%E4%BA%8C%E4%BB%A3%E5%BB%B6%E7%BA%8C%E8%94%A1%E7%80%BE%E8%87%B3%E6%84%9B%E6%BD%AE%E6%B4%B2%E7%B2%89%E9%BA%B5%E5%B0%8F%E5%BA%97-094930914.html), para on the 1960s: "60年代，夏老師傅和太太居於九龍城寨，把家中當成工場，自己打墨魚丸、豬肉丸。"
+  4. [Yahoo News HK / 好集慣 BetterMe, Janice Hui, 3 Nov 2023](https://hk.news.yahoo.com/%E6%89%8B%E6%89%93%E9%AD%9A%E8%9B%8B%E8%80%81%E5%AD%97%E8%99%9F%E9%87%8D%E7%94%9F-%E4%BA%8C%E4%BB%A3%E5%BB%B6%E7%BA%8C%E8%94%A1%E7%80%BE%E8%87%B3%E6%84%9B%E6%BD%AE%E6%B4%B2%E7%B2%89%E9%BA%B5%E5%B0%8F%E5%BA%97-094930914.html), para on the noodle shop: "後來，麵店搬到油麻地，兩夫婦每天劏魚、打漿、唧魚蛋，一做就是四十多年。"
+  5. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "2018年1月17日，夏銘記麵家在西營盤德輔道西地舖復業，食店附設工場，由夏藩銘的長子Roger打理。"
+  6. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "was founded decades ago by Roger Ha's parents, Ha Fan-ming and Chan So-hing,"
+  7. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "Ha's parents migrated from Chiu Chow to Hong Kong in the 60s and started selling fish balls out of necessity."
+  8. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "did not move the family out of Kowloon Walled City until its demolition began in 1993."
+  9. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "My father would make the deliveries on a bike while my mother made the fish balls at home;"
+  10. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "We lived on the eighth floor, and there was no lift."
+  11. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "At its height, Ha Ming Kee was the supplier of 70 per cent of the restaurants in the Yau Tsim Mong district,"
+  12. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "My parents invested in my siblings and me; we all graduated from universities overseas."
+  13. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "1983年，夏太太頂下一家位於何文田勝利道的麵店，成立「夏銘記麵家」。"
+
+## Heung Yin-king
+
+<a id="heung-yin-king"></a>**eldest daughter, water carrier.** Heung Yin-king lived in the Walled City. In the 1960s the Heung family of six moved from a rooftop hut in Hung Hom to the Walled City. First home: a 70 sq ft room in a two-storey house near Tung Tau Chuen Road, shared with seven other families. The family ate from a board laid over the knitting machine and sat on the bed; there was no space for a dinner table. She says the family had the best times in the first house. Several years later they moved to a two-bedroom flat on the fourth floor of a high-rise on Tai Cheng Street. The second home had no taps; as the eldest daughter she hauled buckets of water from the public taps up four floors to the flat every day. 'Life was poor, but we were very happy.'
+
+- Home: first a 70 sq ft room in a two-storey house near Tung Tau Tsuen Road (東頭村道), shared with seven other families; later a two-bedroom flat on the 4th floor of a high-rise on "Tai Cheng Street" (probably Tai Chang Street, 大井街)
+- In the City: from the 1960s (end year not given) (lived)
+- Life details:
+  - In the 1960s the Heung family of six moved from a rooftop hut in Hung Hom to the Walled City. [1]
+  - First home: a 70 sq ft room in a two-storey house near Tung Tau Chuen Road, shared with seven other families. [2]
+  - The family ate from a board laid over the knitting machine and sat on the bed; there was no space for a dinner table. [3]
+  - She says the family had the best times in the first house. [4]
+  - Several years later they moved to a two-bedroom flat on the fourth floor of a high-rise on Tai Cheng Street. [5]
+  - The second home had no taps; as the eldest daughter she hauled buckets of water from the public taps up four floors to the flat every day. [6]
+  - 'Life was poor, but we were very happy.' [7]
+  - (inferred) 'Tai Cheng Street' is the article's spelling; the street is Tai Chang Street (大井街). [5]
+- Sources:
+  1. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "In the 1960s, the Heung family of six moved from a rooftop hut in Hung Hom to the Walled City."
+  2. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "At first they lived in a 70 sq ft room in a two-storey house near Tung Tau Chuen Road, which they shared with seven other families."
+  3. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness), Heung Yin-king's words: "We ate from a board laid over the knitting machine and sat on the bed."
+  4. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness), Heung Yin-king's words: "We had the best times in the first house, even though the rooms were so tiny there wasn't space for a dinner table."
+  5. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "Several years later they moved to a two-bedroom flat on the fourth floor of a high-rise on Tai Cheng Street."
+  6. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness), Heung Yin-king's words: "The second house was all right but had no taps, so as the eldest daughter I had the responsibility of hauling buckets of water from the public taps up four floors to the flat every day"
+  7. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): ""Life was poor, but we were very happy," said Heung Yin-king, the eldest daughter."
+
+## Ho Chi Kam (何智錦)
 
 <a id="ho-chi-kam"></a>**barber.** Ho Chi Kam was a barber. He read about a flat in the Sing Pao Daily News (成報) and bought it. He moved in at the start of 1974. The flat was on Tung Tau Tsuen Road (東頭村道), thus he had no reason to go inside the City. The book says that he lived in the City long before 1985. Before 1985 he worked as a barber for other people. Then a friend offered him the barber's shop at 10 Tai Chang Street (大井街). He borrowed money and took it over in 1985. After that he came into the City every day. The shop stood near the only Government standpipe inside the City. He and his wife both worked there. Most customers were local residents, and the shop was cheaper than barbers outside. When the City was to be demolished, he went back to work for others. He came to the shop only on Wednesdays, his day off. The shop closed in 1991.
 
@@ -408,9 +887,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his barber's shop at 10 Tai Chang Street, 1985-1991
 - In the City: lived in a flat on Tung Tau Tsuen Road from 1974; ran the barber's shop at 10 Tai Chang Street from 1985 to 1991
 - Rooms in the model (building:floor:unit): 201:0:0 (G/F, Ho Chi Kam's barber's shop); 0:11:3 (11/F, Ho Chi Kam's flat on Tung Tau Tsuen Road); 186:0:2 (G/F, Ho Chi Kam's barber shop)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p28: "Ho Chi Kam only took over the running of the barber's shop at 10 Tai Chang Street in 1985."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p28: "The flat is on the Tung Tau Tsuen Road, so I didn't really have to come inside the City"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p29: "The shop eventually closed in 1991, shortly before the start of phase two of the clearance."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 何智錦 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p28: "Ho Chi Kam only took over the running of the barber's shop at 10 Tai Chang Street in 1985."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p28: "The flat is on the Tung Tau Tsuen Road, so I didn't really have to come inside the City"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p29: "The shop eventually closed in 1991, shortly before the start of phase two of the clearance."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "何智錦（Ho Chi Kam） | 髮型師"
 
 ## Ho Yin (何賢)
 
@@ -419,20 +902,37 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F & Cockloft, 4 Lung Shing Road
 - In the City: named in a clearance file dated 1990-1992
 - Rooms in the model (building:floor:unit): 230:0:0 (G/F, Ho Yin Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-391: "G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-391: "G/F & Cockloft, 4 Lung Shing Road. Ho Yin Dentistry (何賢牙醫)"
 
-## Hui Kwong
+## Hui Kwong (許光)
 
 <a id="hui-kwong"></a>**Chiu Chow music player.** Hui Kwong came from Malaya. As a young man he went to China to support the war against Japan. A few years after 1945 he came to Hong Kong, but he had no valid passport. He then ran a travel agency in China and married at 30. When private businesses closed, he got out to Macau. In 1965 he brought his wife and daughter to Hong Kong. Life was hard, and the family found a cheaper place in the Walled City. The book's introduction says that he lived in the City from 1961. In the 1970s he worked a machine that made plastic goods. He spent 10 years with the Kai Fong Association (九龍城砦街坊福利事業促進委員會). He was a volunteer at first, then part-time staff and treasurer. He left a few months before the announcement of the demolition. In 1991, at 75, he still played in the Chiu Chow Music Club. Its members played Chiu Chow (潮州) music.
 
 - Work: Kai Fong Association, volunteer and then part-time staff and treasurer, for 10 years, until a few months before the demolition was announced; Chiu Chow Music Club, member, to 1991; a plastic-goods machine in the 1970s
 - In the City: in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991
 - Rooms in the model (building:floor:unit): 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p40: "He had lived in the City since 1961 and had served as the financial secretary of the Kai Fong Association there for many years."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "I spent 10 years with the Kai Fong. When I became treasurer, there was a balance of just $700 in the account"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "And then, just a few months later, it was announced that the Walled City was to be pulled down."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 許光 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p40: "He had lived in the City since 1961 and had served as the financial secretary of the Kai Fong Association there for many years."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "I spent 10 years with the Kai Fong. When I became treasurer, there was a balance of just $700 in the account"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "And then, just a few months later, it was announced that the Walled City was to be pulled down."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "許光（Hui Kwong） | 潮州音樂社成員"
 
-## Hui Tung Choy
+## Hui Lun
+
+<a id="hui-lun"></a>**resident (died 1948).** Hui Lun lived in the Walled City. The Colonial Secretariat opened a confidential file on the death of Hui Lun, whom the file title calls a resident of the Kowloon Walled City. The file covers 23-26 February 1948. The file is in the series of confidential general administration files of the Colonial / Government Secretariat; its original reference is 1/9/3361/46.
+
+- In the City: until February 1948 (lived)
+- Life details:
+  - The Colonial Secretariat opened a confidential file on the death of Hui Lun, whom the file title calls a resident of the Kowloon Walled City. The file covers 23-26 February 1948. [1]
+  - The file is in the series of confidential general administration files of the Colonial / Government Secretariat; its original reference is 1/9/3361/46. [1]
+  - (inferred) The date falls six weeks after the police clearance of squatter huts in the Walled City on 12 January 1948 (the 1948 'Walled City incident'). A link between the death and that clash is not stated in the catalogue. [1]
+- Sources:
+  1. [Government Records Service (政府檔案處), online catalogue, HKRS163-1-273 (23.2.1948 - 26.2.1948)](https://search.grs.gov.hk/en/arcview.xhtml?eid=yUfNmKAibnaOPkne0rIDmw%3D%3D), HKRS163-1-273: "HUI LUN - DEATH OF....RESIDENT OF KOWLOON WALLED CITY"
+
+## Hui Tung Choy (許東財)
 
 <a id="hui-tung-choy"></a>**noodle maker.** Hui Tung Choy came to Hong Kong in 1947 to live with his aunt. He was 16, and his parents had died. He grew up in Sun Hui, Guangdong, and had only primary schooling. He learned noodle making with his cousin. Then he opened his own noodle-making place with a friend. His noodle factory at the back of 2 Kwong Ming Street (光明街) opened in 1965. The room was barely 200 square feet and had no windows. Air came in only through the narrow door to the street. He chose the City because rents were low and he needed no licence. At its height in 1980, the business had five workers and made about 1000 noodle discs a day. Later his partner became ill and left, and Hui worked alone. The family owned a flat higher up in the same building. But they cooked and showered in the factory. His two daughters did their homework on the flour-covered work bench. In 1992 he was married with two young daughters. He saw more rats and cockroaches as neighbours moved away.
 
@@ -440,9 +940,40 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: His noodle factory at the back of 2 Kwong Ming Street, barely 200 square feet, with a door on to Kwong Ming Street
 - In the City: From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City
 - Rooms in the model (building:floor:unit): 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p172: "Hui Tung Choy opened his noodle factory at the back of 2 Kwong Ming Street in 1965."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We have a flat up above but we cook and take our showers here, and my kids do their homework here too."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We chose the Walled City because rents were low and you didn't need a licence."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 許東財 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p172: "Hui Tung Choy opened his noodle factory at the back of 2 Kwong Ming Street in 1965."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We have a flat up above but we cook and take our showers here, and my kids do their homework here too."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We chose the Walled City because rents were low and you didn't need a licence."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "許東財（Hui Tung Choy) | 家庭麵廠老闆"
+
+## Ida Shum
+
+<a id="ida-shum"></a>**working mother.** Ida Shum lived in the Walled City. A former resident, 62 in 2013, later living in Hung Hom. Her neighbour always helped her take care of her children, and they cooked for each other. The neighbour's help let her focus on her work and earn money to feed her family. 'We all had very good relationships in very bad conditions.' 'People who lived there were always loyal to each other.' Flood: water rose to people's knees with rubbish floating, and residents walked through it barefoot. She still kept in touch with old neighbours, some of whom were overseas. 'In the Walled City, the sunshine always followed the rain.' She said the City was a haven for triad groups such as the 14K and Sun Yee On, who jealously controlled their territory.
+
+- Work: not named; she worked to feed her family
+- In the City: years not given (she was 62 in 2013) (lived)
+- Life details:
+  - A former resident, 62 in 2013, later living in Hung Hom. [1]
+  - Her neighbour always helped her take care of her children, and they cooked for each other. [2]
+  - The neighbour's help let her focus on her work and earn money to feed her family. [3]
+  - 'We all had very good relationships in very bad conditions.' [4]
+  - 'People who lived there were always loyal to each other.' [5]
+  - Flood: water rose to people's knees with rubbish floating, and residents walked through it barefoot. [6]
+  - She still kept in touch with old neighbours, some of whom were overseas. [7]
+  - 'In the Walled City, the sunshine always followed the rain.' [8]
+  - She said the City was a haven for triad groups such as the 14K and Sun Yee On, who jealously controlled their territory. [9]
+- Sources:
+  1. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "Ida Shum a 62-year-old former resident now living in Hung Hom"
+  2. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "Shum described how her neighbour always helped her take care of her children and they cooked for each other."
+  3. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "This allowed her to focus on her work and earn money to feed her family."
+  4. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "We all had very good relationships in very bad conditions."
+  5. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "People who lived there were always loyal to each other."
+  6. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "Water would rise to people's knees with trash floating around"
+  7. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "Even now, many people stay in touch with each other even though some old friends are overseas,"
+  8. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "In the Walled City, the sunshine always followed the rain."
+  9. [The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015 (text taken from SCMP article 1191748, 2013)](https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness): "She said it was a haven for triad groups such as the 14K and Sun Yee On, who jealously controlled their territory."
 
 ## Jackie Pullinger (潘靈卓)
 
@@ -451,22 +982,74 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 'The Well', the St Stephen's Society meeting place in the City, and the Walled City youth centre
 - In the City: worked in the City from 1973 ('The Well') until shortly after the clearance announcement; she did not live there
 - Rooms in the model (building:floor:unit): 254:0:3 (G/F, Shuiyuan youth centre (Jackie Pullinger)); 237:0:0 (G/F, St Stephen's Society)
-- City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "'The Well', the religious meeting place established by Jackie Pullinger in 1973"
-- City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "The congregation at this evangelical mission of the St Stephen's Society was mainly made up of drug addicts trying to give up their debilitating habit."
-- City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "Shortly after the clearance was announced, Jackie Pullinger moved to Mongkok to set up a similar drug rehabilitation programme there."
+- Life details:
+  - She came to Hong Kong in 1966 and went alone into the Walled City. [4]
+  - She took a teaching job outside the Walled City. [5]
+  - She ran a youth club inside the City, to befriend young Triads. [6]
+  - (inferred) This Times profile gives 1966 as the year she first went into the City, earlier than the 1973 date of 'The Well' in the repo. [4]
+  - She started a youth club in a tiny room in the City, a place for ping pong and darts. [7]
+  - She ran outside camps and weekly excursions, because most young people of the City never saw the light of day. [8]
+  - The St Stephen's Society 'houses' (homes for addicts who came off drugs) started in the 1970s, when she invited an addict into her home. [9]
+  - She took groups of young people to stay on outlying islands, where those who had come off drugs helped the newcomers. [10]
+  - She and some young people took chicken soup every day to 陳太 (Mrs Chan), a sick widow whose son took drugs; Mrs Chan later cooked and cleaned in Pullinger's home (the source does not say that Mrs Chan lived in the City). [11]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "'The Well', the religious meeting place established by Jackie Pullinger in 1973"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "The congregation at this evangelical mission of the St Stephen's Society was mainly made up of drug addicts trying to give up their debilitating habit."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), text beside the photographs, p263: "Shortly after the clearance was announced, Jackie Pullinger moved to Mongkok to set up a similar drug rehabilitation programme there."
+  4. [The Times (London), Libby Purves, profile of Jackie Pullinger, 24 May 1989, p12 (archive.org item NewsUK1989UKEnglish)](https://archive.org/download/NewsUK1989UKEnglish/May%2024%201989%2C%20The%20Times%2C%20%2363402%2C%20UK%20%28en%29_djvu.txt), p12; OCR text: "In 1966 she came to Hong Kong and walked naivety alone into the Walled City."
+  5. [The Times (London), Libby Purves, profile of Jackie Pullinger, 24 May 1989, p12 (archive.org item NewsUK1989UKEnglish)](https://archive.org/download/NewsUK1989UKEnglish/May%2024%201989%2C%20The%20Times%2C%20%2363402%2C%20UK%20%28en%29_djvu.txt), p12: "Frustrated, she got a teaching job outride the Walled City"
+  6. [The Times (London), Libby Purves, profile of Jackie Pullinger, 24 May 1989, p12](https://archive.org/download/NewsUK1989UKEnglish/May%2024%201989%2C%20The%20Times%2C%20%2363402%2C%20UK%20%28en%29_djvu.txt), p12; OCR text: "running a youth club inside, to befriend young Triads."
+  7. [St Stephen's Society, 'About Us'](https://www.ststephenssociety.com/about-us), Jackie's story: "I started a Youth Club in a tiny room in Walled City to give a place for ping pong and darts."
+  8. [St Stephen's Society, 'About Us'](https://www.ststephenssociety.com/about-us), Jackie's story: "I ran outside camps and weekly excursions since most young people never saw the light of day"
+  9. [St Stephen's Society, 'About Us'](https://www.ststephenssociety.com/about-us), Jackie's story: "That’s how our ‘houses’ started in the seventies and have continued in the same way"
+  10. [號角月報 (Herald monthly), 曾福, 城寨「追龍」潘靈卓, Feb 2024](https://cchc-herald.org/all-articles/entry/2024/02/chasing-the-dragon-pan-lingzhuo-from-the-city-fortress), body: "潘靈卓會帶着一群年輕人到離島住宿，讓已戒除毒癮的，去幫助那些新來的年輕人。"
+  11. [號角月報 (Herald monthly), 曾福, 城寨「追龍」潘靈卓, Feb 2024](https://cchc-herald.org/all-articles/entry/2024/02/chasing-the-dragon-pan-lingzhuo-from-the-city-fortress), body: "潘小姐與一些年輕人，天天煲雞湯帶給陳太，開解鼓勵她，也為她禱告。"
 
-## Jetly Chau Sau Yee
+## Jetly Chau Sau Yee (周秀儀)
 
 <a id="chau-sau-yee"></a>**Chiu Chow cake maker.** Jetly Chau Sau Yee was born in Chiu Chow (潮州) and came to Hong Kong at six. In 1968, at 14, he left school to help his father in the family bakery. Their first shop, on Tung Tau Tsuen Road (東頭村道) in Wong Tai Sin (黃大仙), was demolished. A friend then told them about a new building in the Walled City. The Kai Fong Association (九龍城砦街坊福利事業促進委員會) prepared the purchase agreement for a fee of $200. The family bought the shop before they heard of any plan to demolish the City. The shop was on Sai Shing (West City) Road (西城路), and he called it the cleanest alley. He paid $100 a month for well-water. The shop made several hundred steamed and baked cakes a day for shops, temples, noodle shops and Chiu Chow families. At New Year they worked for several days without a stop. After the clearance was announced in 1987, foreign tour groups often stopped at the shop. He worried about the clearance because a new shop outside the City had to meet licence standards.
 
 - Work: his Chiu Chow cake shop in a new building on Sai Shing (West City) Road
 - In the City: worked in the City; bought the shop before he heard of the demolition plan (the clearance was announced in 1987); no start year given
 - Rooms in the model (building:floor:unit): 11:2:0 (2/F, Jetly Chau's Chiu Chow cake shop)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p44: "In 1968, at the age of 14, he left school to help his father in the family bakery business."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p44: "We had not heard anything about the demolition of the City, otherwise we might not have dared to buy the premises."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p45: "West City Road, which this shop is on, is the cleanest alley; the conditions in other alleys are awful."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 周秀儀 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p44: "In 1968, at the age of 14, he left school to help his father in the family bakery business."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p44: "We had not heard anything about the demolition of the City, otherwise we might not have dared to buy the premises."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p45: "West City Road, which this shop is on, is the cleanest alley; the conditions in other alleys are awful."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "周秀儀（Jetly Chau Sau Yee） | 潮州餅店第二代東主"
 
-## Kwok Lau Hing
+## Johnnie To Kei-fung (杜琪峯)
+
+<a id="johnnie-to"></a>**boy, later film director.** Johnnie To Kei-fung (杜琪峯) lived in the Walled City. Born in a stairwell (樓梯底) on Tung Chau Street (通州街) and grew up from childhood in the City; left school in Form 3 at 17 and went to TVB as an odd-job boy. In the City he saw poverty, gangs and all kinds of people at first hand. Many of his neighbours in the City were gang members; he recalled that if the police were after you, you ran into the City and were safe. Born 22 April 1955.
+
+- In the City: from his childhood (he was born in 1955; years not given) (lived)
+- Life details:
+  - Born in a stairwell (樓梯底) on Tung Chau Street (通州街) and grew up from childhood in the City; left school in Form 3 at 17 and went to TVB as an odd-job boy. [1]
+  - In the City he saw poverty, gangs and all kinds of people at first hand. [2]
+  - Many of his neighbours in the City were gang members; he recalled that if the police were after you, you ran into the City and were safe. [3]
+  - Born 22 April 1955. [4]
+- Sources:
+  1. [香港01 (HK01), 1 Aug 2016, 杜琪峯專訪1 以萬千肉身撐起港產片名聲 我們只是庸才](https://www.hk01.com/即時娛樂/34808/杜琪峯專訪1-以萬千肉身撐起港產片名聲-我們只是庸才), intro: "生於通州街樓梯底，從小在九龍城寨長大的杜琪峯，17歲中三肄業，進無綫電視打雜，19歲被鍾景輝免試塞進第四期演員訓練班。"
+  2. [報導者 The Reporter, 汪宜儒, 14 Jul 2016, profile of 杜琪峯](https://www.twreporter.org/a/director-johnnie-to), body: "在杜琪峯住過的九龍城寨裡，貧窮、黑幫集結，形色人種都有，屬於社會底層的生活樣貌與掙扎，他切身所見"
+  3. [大公文匯網, 7 May 2024, 《九龍城寨之圍城》背後故事：清拆30年後 仍有人懷念城寨](https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html), body: "香港導演杜琪峰從小在九龍城寨長大，很多鄰居都是幫派分子，他曾回憶說：「如果有警察抓你，你跑到九龍城寨裏就沒事了。他不會下去的。」"
+  4. [Wikipedia (en), Johnnie To](https://en.wikipedia.org/wiki/Johnnie_To), lead: "Johnnie To Kei-fung (born 22 April 1955) is a Hong Kong filmmaker."
+
+## Kwan Tsin On
+
+<a id="kwan-tsin-on"></a>**noodle-factory worker.** Kwan Tsin On worked with Chan Wai Shui, who ran his own noodle factory on Lo Yan Street (老人街) from 1979. A photo in the book shows Chan Wai Shui with his two co-workers, Mr Shum and Kwan Tsin On. The factory made egg noodles and won tun pastry: about 500 catties of noodles a day.
+
+- Work: Chan Wai Shui's noodle factory on Lo Yan Street (老人街) (inferred from the caption)
+- In the City: the late years of the City (Chan Wai Shui's factory ran from 1979 for more than 10 years) (worked)
+- Related: [Chan Wai Shui (陳偉瑞)](#chan-wai-shui) (co-worker (he owned the factory)); [Mr Shum](#mr-shum-noodles) (co-worker)
+- Rooms in the model (building:floor:unit): 78:0:0 (G/F, Chan Wai Shui's noodle factory)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p226: "Chan Wai Shui (centre) with his co-workers, Mr Shum (left) and Kwan Tsin On (right)."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview: Chan Wai Shui, p226: "I set up this factory in the Walled City in 1979"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview: Chan Wai Shui, p226: "On average our daily production is about 10 bags of flour, which makes 500 catties of noodles and 50 catties of won tun pastry."
+
+## Kwok Lau Hing (郭柳馨)
 
 <a id="kwok-lau-hing"></a>**retired office cleaner.** Kwok Lau Hing never lived in the City itself, but she was a regular visitor to its Old People's Centre (老人中心). In her 30s she and her elder sister left Shanghai Street in Yau Ma Tei. They bought a small flat on the second floor of 5C Sai Tau New Street, a settlement on the outskirts of the City. She owned a half share and rented one of her two rooms out. She worked half days as a cleaner and office woman for the Jardine Airline Company in Central. She earned about $100 a month and assembled toys for extra money. She never dared to go into the Walled City itself. Her husband died and left her with two sons and a daughter. The Government decided to clear the settlement in 1985, and the family moved to the Lok Wah estate. After she retired at 65, she joined the Old People's Centre. There she learnt to write and did handcraft and embroidery. She kept making the journey after she moved to Junk Bay. In 1989 she was 73.
 
@@ -474,9 +1057,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Jardine Airline Company offices, Alexander House, Central (cleaner and general office woman); retired at 65
 - In the City: Never a resident of the City itself; lived at 5C Sai Tau New Street, a settlement on its outskirts, from her 30s until the settlement's clearance (decided for 1985); later a regular visitor to the Old People's Centre
 - Rooms in the model (building:floor:unit): 172:2:1 (2/F, Old People's Centre); 82:1:5 (1/F, Kwok Lau Hing's home)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "Though never a resident of the City itself, Kwok Lau Hing was a regular visitor to the Old People's Centre there"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "So we bought a small flat on the second floor of 5C Sai Tau New Street, the settlement on the outskirts of the City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "I was working for the Jardine Airline Company as a cleaner and general office woman."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 郭柳馨 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "Though never a resident of the City itself, Kwok Lau Hing was a regular visitor to the Old People's Centre there"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "So we bought a small flat on the second floor of 5C Sai Tau New Street, the settlement on the outskirts of the City."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p308: "I was working for the Jardine Airline Company as a cleaner and general office woman."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "郭柳馨（Kwok Lau Hing） | 退休清潔工人"
 
 ## Kwok Tsan Ming
 
@@ -484,7 +1071,21 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: a small fishball factory off Kwong Ming Street (光明街)
 - Rooms in the model (building:floor:unit): 80:0:0 (G/F, Fishball factory off Kwong Ming Street)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p290: "Employee Kwok Tsan Ming (below) ladles a batch of fried fishballs into a basket in a small factory off Kwong Ming Street"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p290: "Employee Kwok Tsan Ming (below) ladles a batch of fried fishballs into a basket in a small factory off Kwong Ming Street"
+
+## Lai
+
+<a id="lai-opium-1963"></a>**opium smoker, pipe tender.** Lai was a friend of Cheng, the lookout of an opium den in the Walled City, in 1963. He was a former fruit peddler and had smoked opium for 15 years. He stopped once, but a stomach ailment made him start again. 'When I smoke,' he said, 'I feel no more pain and I can smile again.' He had no job: he tended the pipes of richer smokers and smoked their leftovers.
+
+- Work: he hired himself out to tend the pipes of richer smokers (in the City, inferred)
+- In the City: 1963 (he had smoked opium for 15 years) (worked)
+- Related: [Cheng](#cheng-lookout-1963) (friend)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Cheng returned with a friend, Lai, their arms loaded with newspaper-wrapped bundles"
+  2. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "An ex-fruit peddler, he has smoked for 15 years. He stopped once when he realised it was killing him, but a stomach ailment drove him to start again."
+  3. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: ""When I smoke," he says, "I feel no more pain and I can smile again.""
+  4. City of Darkness Revisited (Girard and Lambot, 2014): Cathie Breslin, "The World's Wickedest City", The Star Weekly (Toronto), November 1963, reprinted, p266: "Now unemployed, he hires himself out to tend the pipes of more affluent smokers and smokes up their leftovers."
 
 ## Lai Woon Sun (黎煥新)
 
@@ -493,7 +1094,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 22 Lung Shing Road
 - In the City: named in a clearance file dated 1993-1994
 - Rooms in the model (building:floor:unit): 115:0:2 (G/F, Lai Woon Sun Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-415: "G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-415: "G/F, 22 Lung Shing Road - Lai Woon Sun Dentistry (黎煥新牙科)"
 
 ## Lam Hong-Tin
 
@@ -502,7 +1104,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 8/F, Rear Portion, 28 Lo Yan Street
 - In the City: named in a clearance file dated 1989-1990
 - Rooms in the model (building:floor:unit): 109:8:2 (8/F, 8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-468: "8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-468: "8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street] - Lam Hong-Tin"
 
 ## Lam Hung (林洪)
 
@@ -511,7 +1114,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: M/F, Block F (mezzanine), 56 Lung Chun Road
 - In the City: named in a clearance file dated 1988-1989
 - Rooms in the model (building:floor:unit): 214:0:1 (G/F, 林洪)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-254: "56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-254: "56, Lung Chun Road, M/F, Blk F, Man Cheong House, 林洪 Lam Hung"
 
 ## Lam Hung
 
@@ -520,18 +1124,23 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 2/F, 39 Kwong Ming Street
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 28:2:0 (2/F, Lam Hung Bone Setter)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-546: "2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-546: "2/F. 39. Kwong Ming St. KWC [Kowloon Walled City]. (Lam Hung Bone Setter)"
 
-## Lam Leung Po
+## Lam Leung Po (林良寶)
 
 <a id="lam-leung-po"></a>**minced-fish factory partner.** Lam Leung Po became a partner in a minced-fish factory in 1983. The factory was in an alley off Tai Chang Street (大井街), close to the one Government standpipe in the City. Before that, the business was just outside the City, in the Sai Tau Tsuen (西頭村) squatter village, until the village came down. Lam joined the business after it moved into the City. The shop measured about 480 square feet. Rent in the City was cheaper, and the hygiene rules gave less trouble. Nobody asked for protection money, and no hygiene inspector ever came. The factory made minced fish, eel dumplings and squidballs. It made about 300 catties of minced fish a day. Five full-time workers worked with Lam and his partner, and a few neighbour ladies made dumplings part-time. Most customers came from outside the City. The factory sold minced fish to over 200 shops.
 
 - Work: the minced-fish factory, about 480 sq ft, in an alley off Tai Chang Street (大井街)
 - In the City: partner in the factory in the City from 1983 until the clearance
 - Rooms in the model (building:floor:unit): 247:0:0 (G/F, Leun Hing Food Company)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "Lam Leung Po (above) became a partner in his minced-fish factory in 1983. Located in an alley off Tai Chang Street"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "This business has been here, in the Walled City, for about eight or nine years."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "A few neighbours – ladies – help me with the fish dumplings. I have five full-time workers as well"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 林良寶 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "Lam Leung Po (above) became a partner in his minced-fish factory in 1983. Located in an alley off Tai Chang Street"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "This business has been here, in the Walled City, for about eight or nine years."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "A few neighbours – ladies – help me with the fish dumplings. I have five full-time workers as well"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "林良寶（Lam Leung Po） | 雲吞工場老闆"
 
 ## Lam Mei Kwong
 
@@ -540,9 +1149,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his dental clinic at 4A Lung Shing Road
 - In the City: in the City from 1949 to the late 1980s; at 4A Lung Shing Road almost continuously
 - Rooms in the model (building:floor:unit): 101:0:0 (G/F, Lam Mei Kwong dental clinic); 111:3:0 (3/F, Lam Mei Kwong's home / former dental surgery)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p11: "Lam Mei Kwong in his dental clinic – spacious by Walled City standards – at 4A Lung Shing Road"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p11: "an address he had occupied almost continuously since arriving in the City in 1949"
-- City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), index, p353: "19 Lam Mei Kwong retired dentist 11"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p11: "Lam Mei Kwong in his dental clinic – spacious by Walled City standards – at 4A Lung Shing Road"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p11: "an address he had occupied almost continuously since arriving in the City in 1949"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), The Map (Anna Dalgliesh, 1992), index, p353: "19 Lam Mei Kwong retired dentist 11"
 
 ## Lam Po-chun (林寶鎮)
 
@@ -551,9 +1161,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: the mail round of the whole Walled City
 - In the City: worked inside 1979-1991
 - Rooms in the model (building:floor:unit): 45:0:2 (G/F, Store on Lo Yan Street (postman's base))
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Lam Po-chun was 18 when he began delivering mail inside the Walled City."
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "The area’s only other postman, Mr. Lam’s mentor, recruited him for his “naughty boy” personality"
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Worked inside: 1979-1991"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 林寶鎮 beside the English name. [4]
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Lam Po-chun was 18 when he began delivering mail inside the Walled City."
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "The area’s only other postman, Mr. Lam’s mentor, recruited him for his “naughty boy” personality"
+  3. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Worked inside: 1979-1991"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "林寶鎮（Lam Po Chun） | 天台郵差"
 
 ## Lam Sam Yuk
 
@@ -562,19 +1176,29 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 32 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1987-1994
 - Rooms in the model (building:floor:unit): 20:0:0 (G/F, Lam Sam Yuk Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-157 (ledgers -158B to -159B, from 1987): "Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry"
+- Life details:
+  - Lam Sam Yuk's compensation case went to the Assessment Review Board: GRS holds 'ARB [Assessment Review Board] - Lam Sam Yuk', dated 13.6.1993 - 12.10.1993. [2]
+  - The Board was the clearance's appeal body on the fairness of compensation offers (LegCo, 4 Dec 1991). [3]
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-157 (ledgers -158B to -159B, from 1987): "Measurement of G/F, 32 Tung Tau Chuen [Tsuen] Road - Lam Sam Yuk Dentistry"
+  2. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-158A (13.6.1993 - 12.10.1993)](https://search.grs.gov.hk/en/arcview.xhtml?eid=%2Baf20dVgRFj%2B8qtceu45HA%3D%3D), HKRS1255-3-158A: "ARB [Assessment Review Board] - Lam Sam Yuk"
+  3. [Hong Kong Legislative Council, Official Record of Proceedings, 4 Dec 1991, Q6, p887](https://www.legco.gov.hk/yr91-92/english/lc_sitg/hansard/h911204.pdf), p887: "The Assessment Review Board was set up by the Special Committee on Clearance of Kowloon Walled City in 1987 as an administrative body to consider matters relating to compensation offers."
 
-## Lam Shu Chuen
+## Lam Shu Chuen (林樹全)
 
 <a id="lam-shu-chuen"></a>**Kai Fong officer, manufacturer.** Lam Shu Chuen came to the Walled City from the mainland as a small boy, before the War, and lived there for more than 50 years. He said that he once owned land in the City, which he bought for $25. In the 1940s he made his money by renting out kerosene lamps, and later he sold electricity from generators. In 1953 he was the first person in the City to own a car. He was a senior member of the Kai Fong Association (九龍城寨街坊福利會) and for many years chairman of the Industrial Commercial Liaison Committee. His family factory made components for radio-controlled toys. He called the clearance compensation not at all fair. After the clearance he moved the factory to Tai Po.
 
 - Work: his family's factory of components for radio-controlled toys (no address in the book)
 - In the City: from early childhood, before the War, for more than 50 years, to the clearance
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "Lam Shu Chuen lived in the City for more than 50 years."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "It was a good business and I was the first person in the Walled City to own a car."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "I have lived here since childhood and have built this place with my own hands."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 林樹全 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "Lam Shu Chuen lived in the City for more than 50 years."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "It was a good business and I was the first person in the Walled City to own a car."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p153: "I have lived here since childhood and have built this place with my own hands."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "林樹全（Lam Shu Chuen） | 街坊福利會資深委員"
 
-## Lam Tseng Yat
+## Lam Tseng Yat (林俊逸)
 
 <a id="lam-tseng-yat"></a>**grocer.** Lam Tseng Yat was born in China in 1916. At 10 he came to Hong Kong with his father and four brothers. The family first sold groceries near the old market in Kowloon City, then at the new market on Sha Bo Road. The Japanese demolished that market in the War. In 1947 the family bought a small property at 25 Tai Chang Street (大井街) and opened a store. The two-storey stone hut later became a seven-storey building, but the land stayed with the family. The shop sold rice, peanut oil, cigarettes, alcohol and fruit. At one time it was the largest grocery business in the City. He called it a father and son business, and it never paid protection money. He lived in the City with his wife, and all his children were born there. The family lived on the first and fourth floors. When the children moved out, the family sold those flats and he lived in the shop. He refused the clearance offer of $210,000 and asked for a shop for a shop.
 
@@ -582,9 +1206,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: The family grocery at 25 Tai Chang Street (大井街), ground floor
 - In the City: From 1947, when the family opened the store, to the interview; he said that the shop had existed for more than 40 years
 - Rooms in the model (building:floor:unit): 84:0:2 (G/F, Lam family grocery); 111:1:0 (1/F, Lam family flat, first floor); 111:4:0 (4/F, Lam family flat, fourth floor)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "In 1947, they bought a small property at 25 Tai Chang Street and opened their first store"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "when my children moved out we sold them and now I live in the shop."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "We shall stay on even if there is no business left, and I will never accept the offer of $210,000."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 林俊逸 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "In 1947, they bought a small property at 25 Tai Chang Street and opened their first store"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "when my children moved out we sold them and now I live in the shop."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p296: "We shall stay on even if there is no business left, and I will never accept the offer of $210,000."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "林俊逸（Lam Tseng Yat） | 雜貨舖老闆"
 
 ## Lam Yin Ming
 
@@ -592,9 +1220,33 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Home: a two-room flat up about six flights of stairs, off a long dark corridor (no address given)
 - In the City: until 1992 (years not given)
-- Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "Another resister, Lam Yin Ming, leads the way inside the city"
-- Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“This is my home,” Mr. Lam said, trying to wiggle a finger through a small hole in the door of his two-room apartment"
-- Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“It was a good place to live.”"
+- Sources:
+  1. Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "Another resister, Lam Yin Ming, leads the way inside the city"
+  2. Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“This is my home,” Mr. Lam said, trying to wiggle a finger through a small hole in the door of his two-room apartment"
+  3. Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“It was a good place to live.”"
+
+## Lau Chun-fat
+
+<a id="lau-chun-fat"></a>**toy-factory worker.** Lau Chun-fat lived in the Walled City. 83 in 2018 (born about 1935). He came to Hong Kong from Fujian in 1974. At a toy factory, his boss told him about cheap homes in the Walled City. He bought a flat for his family in the late 1980s for around HK$40,000. Water: the family drew buckets of drinking and cooking water from a nearby public tap. He felt safe: hooligans did not dare to come in because it was not their neighbourhood. He saw no building collapse and no fires. At the clearance he wanted to stay but accepted about HK$120,000 compensation, and bought another flat in a nearby tenement building, where he lived in 2018 with his wife, a son and a daughter.
+
+- Home: a flat that he bought for his family in the late 1980s for about HK$40,000 (address not given)
+- Work: a toy factory (place not given)
+- In the City: from the late 1980s, when he bought a flat, to the clearance (lived)
+- Life details:
+  - 83 in 2018 (born about 1935). He came to Hong Kong from Fujian in 1974. [1]
+  - At a toy factory, his boss told him about cheap homes in the Walled City. [1]
+  - He bought a flat for his family in the late 1980s for around HK$40,000. [2]
+  - Water: the family drew buckets of drinking and cooking water from a nearby public tap. [3]
+  - He felt safe: hooligans did not dare to come in because it was not their neighbourhood. [4]
+  - He saw no building collapse and no fires. [5]
+  - At the clearance he wanted to stay but accepted about HK$120,000 compensation, and bought another flat in a nearby tenement building, where he lived in 2018 with his wife, a son and a daughter. [6]
+- Sources:
+  1. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "Retiree Lau, who came to Hong Kong from Fujian in 1974, said that while he was working at a toy factory, his boss told him about cheap homes in the Walled City."
+  2. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "He bought a flat for his family in the late 1980s for around HK$40,000 (US$5,100)"
+  3. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Lau's words (as copied in the repo's primary-sources/retrospective-testimony-web/SOURCE.md): "We had to go to a nearby public tap to draw buckets of water for drinking and cooking"
+  4. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Lau's words (as in SOURCE.md): "Those hooligans didn't dare come in because it was not their neighbourhood"
+  5. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Lau's words (as in SOURCE.md): "Everyone stayed there for so long and no building collapsed"
+  6. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "While Lau wanted to stay there, he accepted compensation of about HK$120,000 and used it to buy another flat in a nearby tenement building, where he is now living with his wife, as well as a son and daughter."
 
 ## Lau Fat Mau
 
@@ -603,7 +1255,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, 3 Lo Yan Street
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 205:1:1 (1/F, Lau Fat Mau)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-60: "1/F, 3 Lo Yan Street Lau Fat Mau"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-60: "1/F, 3 Lo Yan Street Lau Fat Mau"
 
 ## Lau Moon Wah (劉滿華)
 
@@ -612,7 +1265,20 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat A, 1/F, Rear, 20-22 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1991
 - Rooms in the model (building:floor:unit): 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-298: "Lau Moon Wah Dental Clinic 劉滿華牙科醫務所"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-298: "Lau Moon Wah Dental Clinic 劉滿華牙科醫務所"
+
+## Lau Shek Yiu
+
+<a id="lau-shek-yiu"></a>**dentist.** Lau Shek Yiu worked in the Walled City. The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Lau Shek Yiu Dentistry - [Ledger]', dated 2.1.1992 - 28.8.1992. The files of this series (HKRS1255-3) are the compensation case files of the businesses of the Walled City at the clearance.
+
+- Work: a dental practice in the City (the catalogue gives no address)
+- In the City: a business file of 1992 (worked)
+- Life details:
+  - The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Lau Shek Yiu Dentistry - [Ledger]', dated 2.1.1992 - 28.8.1992. [1]
+  - (inferred) The files in this series are compensation case files for businesses in the Walled City, thus the business was in the City. [1]
+- Sources:
+  1. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-15 (2.1.1992 - 28.8.1992)](https://search.grs.gov.hk/en/arcview.xhtml?eid=bmdGv0J1rVIoI2xWsvhDog%3D%3D), HKRS1255-3-15: "Lau Shek Yiu Dentistry - [Ledger]"
 
 ## Lau Wing (羅宋榮)
 
@@ -621,9 +1287,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F Front Block, 35 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1991
 - Rooms in the model (building:floor:unit): 14:1:1 (1/F, 張挺華診所)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "& Lau Wing Medical Climic(羅宋榮診所)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-186: "& Lau Wing Medical Climic(羅宋榮診所)"
 
-## Lau Yeung Yin
+## Lau Yeung Yin (劉陽賢)
 
 <a id="lau-yeung-yin"></a>**weaving factory owner.** Lau Yeung Yin was born in the Walled City, one of 12 children. His father ran a weaving factory on Lung Chun Back Road (龍津後街). The family lived in the factory. There were no beds, so they moved the yarn aside to make space to sleep. In the early 1960s his father was treasurer of the Kai Fong Association (九龍城砦街坊福利事業促進委員會). Lau left school before the Middle Three examinations. He worked as a tailor's apprentice, then in a rattan shop on Hong Kong Island. Later he worked in his father's factory, which made fabric for gloves. In 1982 he took over the family business in a small factory on Sai Shing (West City) Road (西城路). His sister lent him the money for it. Six people worked there, his wife among them. Business slowed in 1985 and 1986, because customers took their orders to mainland China. The family had a public housing unit in Tai Po but rarely slept there. He expected about $103,000 in compensation for the factory.
 
@@ -631,9 +1298,24 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his weaving and threading factory on Sai Shing (West City) Road, from 1982
 - In the City: born in the City; ran his factory on Sai Shing (West City) Road from 1982
 - Rooms in the model (building:floor:unit): 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "Lau Yeung Yin took over the family weaving business from his father in 1982"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "We lived in the factory. There were no beds; we just moved the yarn and cleared a space when we wanted to sleep."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p50: "We have a public housing unit in Tai Po and we go there sometimes. We rarely sleep there though"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 劉陽賢 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "Lau Yeung Yin took over the family weaving business from his father in 1982"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p48: "We lived in the factory. There were no beds; we just moved the yarn and cleared a space when we wanted to sleep."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p50: "We have a public housing unit in Tai Po and we go there sometimes. We rarely sleep there though"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "劉陽賢（Lau Yeung Yin） | 輕紗工廠東主"
+
+## Lau Yeung Yin's wife
+
+<a id="lau-yeung-yin-wife"></a>**weaving-factory worker.** Lau Yeung Yin's wife worked with her husband in his weaving and threading factory in the Walled City. He took over this factory, his second, in about 1982. He said that six people used to work there, his wife and himself among them.
+
+- Work: her husband's weaving and threading factory
+- In the City: about 1982 to about 1990 (worked)
+- Related: [Lau Yeung Yin (劉陽賢)](#lau-yeung-yin) (husband)
+- Rooms in the model (building:floor:unit): 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory)
+- Sources:
+  1. City of Darkness Revisited (2014), interview c.1989-90, p48: "There used to be six of us working here, including myself and my wife"
 
 ## Law Hoi-cheung (羅開祥)
 
@@ -642,9 +1324,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 21 Sai Shing Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 117:0:0 (G/F, LAW Hoi-cheung)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-248: "G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-248: "G/F, 21 Sai Shing Road, Lung Yu House, 吉祥服務中心 (羅開祥), Kat Cheung Service Centre (LAW Hoi-cheung)"
 
-## Law Kim Kwong
+## Law Kim Kwong (羅儉光)
 
 <a id="law-kim-kwong"></a>**cake maker.** Law Kim Kwong was a baker in the Walled City. He made steamed sweet cakes. The book shows his workshop full of cakes in small bowls, beside sacks of flour. Another photograph shows him with crossed arms beside a lit stove. Once he worked through the night to finish cakes for a Chiu Chow (潮州) festival. He had lived in the City for 20 years. He came from the Chiu Chow area of eastern Guangdong. The Chiu Chow people had their own dialect and culture, different from the Cantonese. They made up more than 70 per cent of the City's population. Chiu Chow settlers squatted in and around the City in the late 1940s. Refugees from the same area followed in the early 1950s. The book gives no interview with Law, only photographs and a caption.
 
@@ -652,22 +1335,41 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: His bakery in the City (the book gives no address)
 - In the City: Resident in the City for 20 years (at the time of the photograph; the book gives no year)
 - Rooms in the model (building:floor:unit): 219:0:0 (G/F, Law Kim Kwong's bakery)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Baker Law Kim Kwong had worked overnight to finish these steamed sweet cakes for a Chiu Chow festival."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Resident in the City for 20 years, Law came originally from the Chiu Chow area of eastern Guangdong."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Chiu Chows comprised more than 70 per cent of the City's population"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 羅儉光 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Baker Law Kim Kwong had worked overnight to finish these steamed sweet cakes for a Chiu Chow festival."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Resident in the City for 20 years, Law came originally from the Chiu Chow area of eastern Guangdong."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p183: "Chiu Chows comprised more than 70 per cent of the City's population"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "羅儉光（Law Kim Kwong） | 潮州糕餅師傅"
 
-## Law Yu Yi
+## Law Yu Yi (羅婉儀)
 
 <a id="law-yu-yi"></a>**retired maid.** Law Yu Yi came from Guangdong. The photo caption calls her a former housewife, and the book's map key calls her a retired maid. At the age of 90 she had lived in the City for 28 years. She lived in a small third-floor flat off Lung Chun First Alley. The flat had no windows and was very humid. She shared it with her daughter-in-law, aged 68. The husbands of both women had died. A surviving son lived on a lower floor of the same building. Each day she went to the adjoining park. There she groomed her face carefully in the traditional Chinese way. She also went to the Old People's Centre (老人中心) to drink tea and meet friends.
 
 - Home: a small, windowless third-floor flat off Lung Chun First Alley, shared with her daughter-in-law
 - In the City: in the City for 28 years at the time of the caption, when she was 90; the years are not given
 - Rooms in the model (building:floor:unit): 186:3:0 (3/F, Law Yu Yi's flat); 250:4:1 (4/F, Law Yu Yi's son's flat)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p80: "Law Yu Yi, aged 90, lived in a small, windowless and exceptionally humid third-floor apartment off Lung Chun First Alley with her 68-year-old daughter-in-law"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p80: "Formerly a housewife and originally from Guangdong, Law Yu Yi had lived in the City for 28 years"
-- City of Darkness Revisited (Girard and Lambot, 2014), map key, pp352-353, no. 23: "23 Law Yu Yi retired maid 80"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 羅婉儀 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p80: "Law Yu Yi, aged 90, lived in a small, windowless and exceptionally humid third-floor apartment off Lung Chun First Alley with her 68-year-old daughter-in-law"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p80: "Formerly a housewife and originally from Guangdong, Law Yu Yi had lived in the City for 28 years"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), map key, pp352-353, no. 23: "23 Law Yu Yi retired maid 80"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "羅婉儀（Law Yu Yi）與媳婦 | 婆媳"
 
-## Lee Pui Yuen
+## Law Yu Yi's daughter-in-law
+
+<a id="law-yu-yi-daughter-in-law"></a>**resident, aged 68.** Law Yu Yi's daughter-in-law was 68. She lived with her mother-in-law, Law Yu Yi, aged 90, in a small, windowless and very humid third-floor flat off Lung Chun First Alley. Both their husbands had died. The book says that the arrangement almost certainly reflected the Chinese duty of a son's wife to serve his parents.
+
+- Home: a small, windowless third-floor flat off Lung Chun First Alley, with her mother-in-law
+- In the City: about 1989 (aged 68) (lived)
+- Related: [Law Yu Yi (羅婉儀)](#law-yu-yi) (mother-in-law)
+- Rooms in the model (building:floor:unit): 186:3:0 (3/F, Law Yu Yi's flat)
+- Sources:
+  1. City of Darkness Revisited (2014), photo caption, p80: "third-floor apartment off Lung Chun First Alley with her 68-year-old daughter-in-law"
+
+## Lee Pui Yuen (李培元)
 
 <a id="lee-pui-yuen"></a>**shopkeeper.** Lee Pui Yuen was a fisherman from Haifeng county. In 1964 he came to Hong Kong by boat with about 10 others. The police held them for three days, but a Christian organisation helped him get out. After a few months in Sham Shui Po, he moved into the Walled City to be with his sister and her family. Four families, more than 20 people, shared about 300 square feet. He had no proper bed space. He worked night shifts in a weaving factory and then had many other jobs. In 1979 he paid about $16,000 to take over a store at 12 Tai Chang Street (大井街). The store had about 700 square feet and sold rice, kerosene, cigarettes and other basic goods. He carried rice and kerosene up 10 or more storeys to customers. The store opened from 8am to midnight. His wife helped him every day. He, his wife and their young son slept behind a partition at the back. The family moved out in 1991.
 
@@ -675,9 +1377,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his own store at 12 Tai Chang Street (大井街), 1979-1991
 - In the City: 1964-1991: about 15 years in the City before 1979, then 12 years at his store
 - Rooms in the model (building:floor:unit): 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Lee Pui Yuen lived in the Walled City for 15 years, before opening his own store there at 12 Tai Chang Street, in 1979."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Four families, more than 20 people, lived there, in an area of around 300 square feet."
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p94: "a small living area at the back of the shop, where Lee slept with his wife and son."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 李培元 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Lee Pui Yuen lived in the Walled City for 15 years, before opening his own store there at 12 Tai Chang Street, in 1979."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Four families, more than 20 people, lived there, in an area of around 300 square feet."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p94: "a small living area at the back of the shop, where Lee slept with his wife and son."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "李培元（Lee Pui Yuen） | 士多老闆"
 
 ## Lee Wai Kwan (李偉群)
 
@@ -686,9 +1392,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F & Cockloft, 23 Lung Shing Road
 - In the City: named in a clearance file dated 1990-1993
 - Rooms in the model (building:floor:unit): 115:0:0 (G/F, 李偉群牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-372A: "G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-372A: "G/F & Cockloft, 23 Lung Shing Road. Lee Wai Kwan Dentistry 李偉群牙科"
 
-## Lee Yu Chun
+## Lee Yu Chun (李玉珍)
 
 <a id="lee-yu-chun"></a>**candy maker.** Lee Yu Chun worked in her family's candy business from its start in 1964, when she was not yet 10. Her father started the business, called Chui Fung, in Sham Shui Po. The family later moved to Tsz Wan Shan. In 1967 her father found premises in the Walled City. The family rented two floors of a cottage there but still lived in Tsz Wan Shan. Lee later came to live in the City as well. In the early 1970s the factory moved to 12 Sai Shing (West City) Road (西城路). The family rented it at first and later bought it for $40,000. Lee, her two brothers and her 70-year-old grandmother shared the work. Neighbourhood teenagers wrapped the sweets for 40 cents a pound. Lee's own children helped in the alley after school. Work started at 7 a.m., and the wrapping went on until 9 p.m. About ten years before the interview, she also worked in an electronics factory. She hoped to set up the factory again outside the City after the clearance.
 
@@ -696,9 +1403,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Chui Fung candy factory: two floors of a rented cottage in the City from 1967, then 12 Sai Shing (West City) Road from the early 1970s
 - In the City: worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s
 - Rooms in the model (building:floor:unit): 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "Lee Yu Chun worked in the family's candy business from its beginning in 1964, when she was not yet 10 years old."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "We only worked in the Walled City then, and continued to live in Tsz Wan Shan, although I later came to live here as well."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "to its final location at 12 Sai Shing (West City) Road in the early 1970s."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 李玉珍 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "Lee Yu Chun worked in the family's candy business from its beginning in 1964, when she was not yet 10 years old."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "We only worked in the Walled City then, and continued to live in Tsz Wan Shan, although I later came to live here as well."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "to its final location at 12 Sai Shing (West City) Road in the early 1970s."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "李玉珍（Lee Yu Chun） | 潮豐糖果廠第二代經營者"
 
 ## Lee Yuk Ha
 
@@ -706,7 +1417,19 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: G/F, 66-68 (outside) Lung Chun Road
 - In the City: named in a clearance file dated 1992
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-384: "Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-384: "Newspaper Stall Stands Outside 66-68 Lung Chun Road (Lee Yuk Ha Newspaper Stall)"
+
+## Leung Yuen-to
+
+<a id="leung-yuen-to"></a>**boy of the City.** Leung Yuen-to lived in the Walled City. Aged 55 at the time of the column; he has fond memories of the days he lived among the prostitutes and drug addicts of the Walled City.
+
+- In the City: in his childhood (he was 55 in about 2005) (lived)
+- Life details:
+  - Aged 55 at the time of the column; he has fond memories of the days he lived among the prostitutes and drug addicts of the Walled City. [1]
+  - (inferred) Search summaries add that he grew up there as a child and felt quite safe, though outsiders thought it a very dangerous place, and that he found it a friendly neighbourhood (not checked word for word). [1]
+- Sources:
+  1. [SCMP, 'Cab chat' column (article 521355, about 2005)](https://www.scmp.com/article/521355/cab-chat): "Leung Yuen-to, 55, has fond memories of the days he lived among the prostitutes and drug addicts"
 
 ## Li Ching Wa (李靜華)
 
@@ -715,7 +1438,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat A, 11/F, 146 Lung Chun Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 235:11:1 (11/F, 李靜華)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-103: "Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-103: "Flat A, 11/F, 146 Lung Chun Road, Cheung Hing House - Li Ching Wa 李靜華 [Commerical Storage]"
 
 ## Li Mau (李謀)
 
@@ -724,7 +1448,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, Rear Portion, 35 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1995
 - Rooms in the model (building:floor:unit): 14:1:0 (1/F, Li Mau Clinic)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-185: "1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-185: "1/F, R/P [Rear Portion], 35 Tung Tau Tsuen Road Li Mau Clinic (西醫李謀)"
 
 ## Liu Kwan (廖坤)
 
@@ -733,7 +1458,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat 1, 1/F, 16 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 19:1:0 (1/F, Liu Kwan China New Medical Clinic)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-575: "Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-575: "Flat 1, 1/F, Wing Fat House, 16, TTT RD. [Tung Tau Tsuen Road], (Liu Kwan China New Medical Clinic) 廖坤中國新医針灸診所"
 
 ## Liu Kwok Sum (廖廣森)
 
@@ -742,8 +1468,30 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Front Portion, 3/F, 1 Lung Chun Road
 - In the City: named in a clearance file dated 1990-1992
 - Rooms in the model (building:floor:unit): 262:3:0 (3/F, Liu Kwok Sum Bonesetter & Gymnasium); 249:0:1 (G/F, Liu Kwok Sum Bonesetter)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-20: "Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館"
-- Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg: "廖廣森"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-20: "Front Portion, 3/F, 1 Lung Chun Road (Liu Kwok Sum Bonesetter & Gymnasium) 廖廣森鐵打醫館"
+  2. Ian Lambot (as credited), photo 'KWC - 1975', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:KWC_-_1975.jpg: "廖廣森"
+
+## Liu Ziqun
+
+<a id="liu-ziqun"></a>**residents' office secretary.** Liu Ziqun worked in the Walled City. On 7 August 1983 Xu Jiatun, director of the Hong Kong branch of Xinhua, visited the Walled City and met him in the Self-Rule Organization Office, up a narrow staircase. His office was a room of slightly more than 10 square metres. Xu described him as young and capable; he greeted the visitors warmly. He said that the residents were fairly united, but their living conditions were poor; drinking water was a particular problem. He said that many residents who had fled from the mainland were afraid of punishment after 1997.
+
+- Work: the Self-Rule Organization Office, a room of slightly more than 10 square metres up a narrow staircase
+- In the City: 1983: the source shows him in his office in the City on 7 August 1983 (worked)
+- Life details:
+  - On 7 August 1983 Xu Jiatun, director of the Hong Kong branch of Xinhua, visited the Walled City and met him in the Self-Rule Organization Office, up a narrow staircase. [1]
+  - His office was a room of slightly more than 10 square metres. [2]
+  - Xu described him as young and capable; he greeted the visitors warmly. [3]
+  - He said that the residents were fairly united, but their living conditions were poor; drinking water was a particular problem. [4]
+  - He said that many residents who had fled from the mainland were afraid of punishment after 1997. [5]
+  - (inferred) The romanization 'Liu Ziqun' is the JPRS (Mandarin pinyin) spelling; the source gives no characters and no Cantonese spelling. The 'Self-Rule Organization Office' is probably the translator's name for a residents' body such as the Kaifong association, but the source does not say so. [1]
+  - (inferred) 'worked daily' is my inference from his post as secretary of an office inside the City; the source does not say how often he was there or whether he lived in the City. [1]
+- Sources:
+  1. [Xu Jiatun, memoirs serialized in the Hong Kong newspaper Lien Ho Pao, 11 May 1993, p2, section 'A Visit to the Kowloon Walled City'; English translation in JPRS Report China, JPRS-CAR-93-045, 1 Jul 1993 (archive.org item jprs-report_jprs-car-93-045)](https://archive.org/download/jprs-report_jprs-car-93-045/jprs-report_jprs-car-93-045_djvu.txt), JPRS-CAR-93-045, item 'A Visit to the Kowloon Walled City' [11 May 93 p 2]: "where we met the secretary of the Self-Rule Organization Office, Liu Ziqun"
+  2. [Xu Jiatun, memoirs serialized in the Hong Kong newspaper Lien Ho Pao, 11 May 1993, p2, section 'A Visit to the Kowloon Walled City'; English translation in JPRS Report China, JPRS-CAR-93-045, 1 Jul 1993 (archive.org item jprs-report_jprs-car-93-045)](https://archive.org/download/jprs-report_jprs-car-93-045/jprs-report_jprs-car-93-045_djvu.txt), same item: "a room measuring slightly more than 10 square meters"
+  3. [Xu Jiatun, memoirs serialized in the Hong Kong newspaper Lien Ho Pao, 11 May 1993, p2, section 'A Visit to the Kowloon Walled City'; English translation in JPRS Report China, JPRS-CAR-93-045, 1 Jul 1993 (archive.org item jprs-report_jprs-car-93-045)](https://archive.org/download/jprs-report_jprs-car-93-045/jprs-report_jprs-car-93-045_djvu.txt), same item: "Young and capable, he greeted us enthusiastically."
+  4. [Xu Jiatun, memoirs serialized in the Hong Kong newspaper Lien Ho Pao, 11 May 1993, p2, section 'A Visit to the Kowloon Walled City'; English translation in JPRS Report China, JPRS-CAR-93-045, 1 Jul 1993 (archive.org item jprs-report_jprs-car-93-045)](https://archive.org/download/jprs-report_jprs-car-93-045/jprs-report_jprs-car-93-045_djvu.txt), same item: "He said that the residents were pretty well united, but living conditions were poor."
+  5. [Xu Jiatun, memoirs serialized in the Hong Kong newspaper Lien Ho Pao, 11 May 1993, p2, section 'A Visit to the Kowloon Walled City'; English translation in JPRS Report China, JPRS-CAR-93-045, 1 Jul 1993 (archive.org item jprs-report_jprs-car-93-045)](https://archive.org/download/jprs-report_jprs-car-93-045/jprs-report_jprs-car-93-045_djvu.txt), same item: "Liu Ziqun also said that quite a few Hong Kong residents who had fled from the mainland were worried"
 
 ## Lo Ming Tak (羅明德)
 
@@ -752,7 +1500,59 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 4/F, Flat B, Sze Hing House 2, 20 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1992
 - Rooms in the model (building:floor:unit): 30:4:0 (4/F, 國醫羅明德)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-315: "20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-315: "20. TTT Rd [Tung Tau Tsuen Road], 4/F, Flat B, Sze Hing H-2. (國醫羅明德) Chinese Herbalist Lo Ming Tak"
+
+## Lok Kwok Fai
+
+<a id="lok-kwok-fai"></a>**dentist.** Lok Kwok Fai worked in the Walled City. The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Lok Kwok Fai Dentistry - 1. 1988-1991 Receipt Book 2. 1989-1990 Purchase Invoices 3. Photocopies of 1989-1991 Purchase Book 4. Not yet Completed PN [Practice Note] 11 5. 1989-1991 I/E [Income and Expenditure] Statements', dated 1.1.1988 - 31.12.1991. His practice kept receipt books for 1988-1991, purchase invoices for 1989-1990 and income and expenditure statements for 1989-1991; a second file (HKRS1255-3-139B, 1.1.1989-21.1.1991) holds ledgers, invoices and bill statements. The files of this series (HKRS1255-3) are the compensation case files of the businesses of the Walled City at the clearance.
+
+- Work: a dental practice in the City (the catalogue gives no address)
+- In the City: business records of 1988-1991 (worked)
+- Life details:
+  - The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Lok Kwok Fai Dentistry - 1. 1988-1991 Receipt Book 2. 1989-1990 Purchase Invoices 3. Photocopies of 1989-1991 Purchase Book 4. Not yet Completed PN [Practice Note] 11 5. 1989-1991 I/E [Income and Expenditure] Statements', dated 1.1.1988 - 31.12.1991. [1]
+  - (inferred) The files in this series are compensation case files for businesses in the Walled City, thus the business was in the City. [1]
+  - His practice kept receipt books for 1988-1991, purchase invoices for 1989-1990 and income and expenditure statements for 1989-1991; a second file (HKRS1255-3-139B, 1.1.1989-21.1.1991) holds ledgers, invoices and bill statements. [1]
+- Sources:
+  1. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-139A (1.1.1988 - 31.12.1991)](https://search.grs.gov.hk/en/arcview.xhtml?eid=2UhAntTGA8Iz4K66fIlt5A%3D%3D), HKRS1255-3-139A: "Lok Kwok Fai Dentistry - 1. 1988-1991 Receipt Book 2. 1989-1990 Purchase Invoices 3. Photocopies of 1989-1991 Purchase Book 4. Not yet Completed PN [Practice Note] 11 5. 1989-1991 I/E [Income and Expenditure] Statements"
+
+## Louisa Wong
+
+<a id="louisa-wong"></a>**refugee child.** Louisa Wong lived in the Walled City. Born on 21 September 1957. The family lived in one small room of about 100 sq ft. The monthly rent was HK$30. Prostitutes lived in the room on one side and heroin addicts on the other. Her parents fled Communist China in the 1940s. Her parents struggled to feed a family that grew to six children. Dinner was often steamed rice with melted pig fat and soy sauce. She remembers the place as very dark, very smelly, sweaty and chaotic. The family left when her parents won a lottery for subsidised public housing. She later founded the first home-grown headhunting firm in China (1996) and became executive chairman of Global Sage; she was 'born to a refugee family' in the Walled City. She speaks as a former resident in the BBC Radio 3 documentary 'Return to the City of Darkness' (2026), with Paul French. The rent in the new public housing estate was HK$90 a month. After the move to the public housing flat (rent HK$90), instead of going to nursery school she worked with her sister and aunt in a plastic-flower factory to help with the rent; the work made her fingers bleed. She was five.
+
+- Home: one room of about 100 sq ft, rent HK$30 a month (street not given)
+- In the City: born in the City on 21 September 1957; the family left in her early childhood (about 1962, inferred) (lived)
+- Life details:
+  - Born on 21 September 1957. [1]
+  - The family lived in one small room of about 100 sq ft. [2]
+  - The monthly rent was HK$30. [3]
+  - Prostitutes lived in the room on one side and heroin addicts on the other. [4]
+  - Her parents fled Communist China in the 1940s. [5]
+  - Her parents struggled to feed a family that grew to six children. [11]
+  - Dinner was often steamed rice with melted pig fat and soy sauce. [6]
+  - She remembers the place as very dark, very smelly, sweaty and chaotic. [7]
+  - The family left when her parents won a lottery for subsidised public housing. [8]
+  - She later founded the first home-grown headhunting firm in China (1996) and became executive chairman of Global Sage; she was 'born to a refugee family' in the Walled City. [9]
+  - She speaks as a former resident in the BBC Radio 3 documentary 'Return to the City of Darkness' (2026), with Paul French. [10]
+  - The rent in the new public housing estate was HK$90 a month. [12]
+  - After the move to the public housing flat (rent HK$90), instead of going to nursery school she worked with her sister and aunt in a plastic-flower factory to help with the rent; the work made her fingers bleed. She was five. [13]
+  - (inferred) She was only five years old when she did this factory work, thus the family had left the Walled City by about 1962. [15]
+- Sources:
+  1. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong): "she was born on September 21, 1957"
+  2. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), Wong's words (checked against a copy of the article text): "We lived in a small room, about 100 square feet [9 square metres], which is roughly the size of two mid-sized cars."
+  3. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "The monthly rent was HK$30."
+  4. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), Wong's words (checked against a copy of the article text): "Next to our room lived the ‘red ladies’ [prostitutes] and on the other side, the heroin addicts."
+  5. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "Wong's parents fled Communist China in the 1940s"
+  6. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "Dinners often consisted of hot steamed rice and melted pig’s fat with soy sauce,"
+  7. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), Wong's words (checked against a copy of the article text): "If I close my eyes, I can remember it being very dark and very smelly – sweaty and chaotic."
+  8. [SCMP, 'Growing up next to prostitutes and drug addicts in Hong Kong's Walled City, recruitment pioneer Louisa Wong' (article 3219200, 2023)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "A ticket out came when her parents won a lottery for subsidised public housing."
+  9. [Young Post (SCMP), author page 'Louisa Wong'](https://www.youngpostclub.com/author/louisa-wong), author bio: "Louisa Wong was born to a refugee family in the famed "Walled City" in Hong Kong."
+  10. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/), post text: "former residents who grew up there, like Louisa Wong and Albert Ng"
+  11. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "her parents struggled to feed the family, which had grown to six children."
+  12. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "Monthly rent in the new estate was HK$90"
+  13. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "worked alongside her sister and aunt in a factory that made plastic flowers."
+  14. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "The work was tedious and often made her tiny fingers bleed."
+  15. [China Rhyming (Paul French), 'Listen online: Return to the City of Darkness – Kowloon Walled City', 1 Mar 2026 (BBC Radio 3, Between the Ears)](https://www.scmp.com/lifestyle/family-relationships/article/3219200/growing-next-prostitutes-and-drug-addicts-hong-kongs-walled-city-recruitment-pioneer-louisa-wong), (checked against a copy of the article text): "She was only five years old."
 
 ## Lui Man Sang
 
@@ -761,9 +1561,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: the City's post round, from a store on Lo Yan Street (老人街)
 - In the City: postman in the City from about 1979 to the end of the 1980s (Lam Po Chun's account); the book does not say where he lived
 - Rooms in the model (building:floor:unit): 45:0:2 (G/F, Store on Lo Yan Street (postman's base))
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p144: "Postman Lui Man Sang emerges from a building staircase and enters one of the Walled City's alleys while making his rounds."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview with Lam Po Chun, p146: "At the end of the 1980s, after I had partnered Mr Lui for eight years or so, he was transferred to a different job."
-- City of Darkness Revisited (Girard and Lambot, 2014), caption, p146: "Mr Lui's daily round began at a store on Lo Yan Street"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p144: "Postman Lui Man Sang emerges from a building staircase and enters one of the Walled City's alleys while making his rounds."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview with Lam Po Chun, p146: "At the end of the 1980s, after I had partnered Mr Lui for eight years or so, he was transferred to a different job."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), caption, p146: "Mr Lui's daily round began at a store on Lo Yan Street"
 
 ## Ma Chong Chung (馬創忠)
 
@@ -772,7 +1573,23 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 20-22 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 30:0:3 (G/F, 馬創忠牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-278: "G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-278: "G/F, Hop Hing Buildling, 20-22 Tung Tau Tsuen Road, Ma Chong Chung Dentistry 馬創忠牙科"
+
+## Maggie
+
+<a id="maggie-baker"></a>**baker's wife.** Maggie lived in the Walled City. Married to Charles for over 40 years; when young the two worked hard together for the bakery. She lived in the City for three or four years after the marriage; before she moved in she had heard many stories of crime, but once she lived there she found it was not so.
+
+- Home: the windowless 5th-floor rear-block flat with Charles
+- Work: the bakery business with Charles (outside the City)
+- In the City: three or four years after her marriage, before 1985 (lived)
+- Related: [Charles](#charles-baker) (husband)
+- Life details:
+  - Married to Charles for over 40 years; when young the two worked hard together for the bakery. [1]
+  - She lived in the City for three or four years after the marriage; before she moved in she had heard many stories of crime, but once she lived there she found it was not so. [2]
+- Sources:
+  1. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), photo captions, Charles section: "城寨居民Charles跟太太Maggie結婚逾四十年，兩人年輕時一起為麵包店打拚。"
+  2. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), photo captions, Charles section: "Maggie婚後在城寨住過三、四年，搬入城寨前她曾聽說很多城寨罪惡頻發的傳聞，但「住進去發現並沒有這回事」。"
 
 ## Mak Chiu (麥釗)
 
@@ -781,7 +1598,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 4/F, Rear Block, 8 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1991-1992
 - Rooms in the model (building:floor:unit): 2:4:0 (4/F, Mak Chiu Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-553: "4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-553: "4/F, Rear Block, 8 TTT RD. [Tung Tau Tsuen Road] KWC [Kowloon Walled City]. Mak Chiu Dentistry (麥釗牙科)"
 
 ## Mak Yue Kong (麥汝剛)
 
@@ -790,7 +1608,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 88 Lung Chun Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 251:0:0 (G/F, Mak Yue Kong Dental Techician)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-27: "G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-27: "G/F, 88 Lung Chun Road Mak Yue Kong Dental Techician (麥汝剛牙科室)"
 
 ## Mak Yue Kwan (麥汝鋆)
 
@@ -799,8 +1618,44 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 17 Lung Shing Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 168:0:0 (G/F, 麥汝鋆牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-376: "G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)"
-- Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "牙科麥汝鋆"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-376: "G/F, 17 Lung Shing Road, KWC [Kowloon Walled City] - Mak Yue Kwan Dentistry (麥汝鋆牙科)"
+  2. Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "牙科麥汝鋆"
+
+## Maureen Clarke
+
+<a id="maureen-clarke"></a>**missionary, child care.** Maureen Clarke was a foreign missionary in the Walled City. She set up the Child Care Centre there in 1959. The book names her and Mrs Donnithorne as the women who pioneered missionary work in the City in the late 1950s and early 1960s.
+
+- Work: the Child Care Centre in the City
+- In the City: from 1959 (she set up the Child Care Centre); the end year is not given (worked)
+- Rooms in the model (building:floor:unit): 78:2:0 (2/F, Child Care Centre (1968 lot 28))
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), text, p263: "Missionary work had been pioneered in the City during the late 1950s and early '60s by indefatigable foreign women such as Maureen Clarke, who set up the Child Care Centre in 1959, and Mrs Donnithorne, the wife of Hong Kong's archdeacon and the person who first introduced Jackie Pullinger to the Walled City and her life's work."
+
+## Mr Hui (許先生)
+
+<a id="mr-hui-flat-owner"></a>**restaurant worker, flat owner.** Mr Hui (許先生) and a friend bought a flat of about 200 sq ft in the City in the 1980s, for more than HK$140,000. The friend lived with him. He worked in a restaurant (酒樓). At the clearance the two men took cash compensation, not a public flat, because the friend wanted the money and the restaurant gave Mr Hui a dormitory. They got HK$150,000 and divided it. Later he was a security guard and a gardener, then homeless. In 2023, aged 74, he applied for a judicial review: the Housing Authority had refused him public housing four times because of the Walled City compensation.
+
+- Home: a flat of about 200 sq ft (HK01) or 250 sq ft (SCMP), bought with a friend in the 1980s; the friend lived with him
+- Work: a restaurant (酒樓), which later gave him a dormitory
+- In the City: from the 1980s to the clearance (1993) (lived)
+- Life details:
+  - In the 1980s he and a friend jointly bought a ~200 sq ft flat in the City for over HK$140,000; the friend lived with him. [2]
+  - At the clearance the friend wanted the cash compensation, and his restaurant job gave him a dormitory, so the two chose compensation; together they got HK$150,000, so he got only HK$75,000 and lived in the restaurant dormitory. [3]
+  - He gave up public housing for the compensation, did not use the money to buy a Home Ownership flat, and rented a subdivided flat in Jordan (佐敦). [7]
+  - Later he was a security guard and then a gardener; after losing the gardener job he became homeless. In 2023, aged 74, he filed a judicial review because the Housing Authority refused his public-housing applications on the ground of the Walled City compensation. [1]
+  - He was a former Walled City resident, aged 74 in 2023, surnamed Hui. [8]
+  - In the 1980s he co-owned a 250 sq ft flat with a friend. In 1993 he accepted HK$70,000 compensation for its demolition; he and the friend split the HK$140,000 offer. [8]
+  - Because he took cash instead of a public flat, the Housing Authority rejected his public-housing applications four times. In 2023 he lived on CSSA in a transitional housing flat and applied for judicial review. [8]
+- Sources:
+  1. [香港01 (HK01), 鄧宇詩, 28 Aug 2023, 九龍城寨賠償方案不容兼申請公屋 74歲前業主提覆核挑戰「天條」](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/932266/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E8%B3%A0%E5%84%9F%E6%96%B9%E6%A1%88%E4%B8%8D%E5%AE%B9%E5%85%BC%E7%94%B3%E8%AB%8B%E5%85%AC%E5%B1%8B-74%E6%AD%B2%E5%89%8D%E6%A5%AD%E4%B8%BB%E6%8F%90%E8%A6%86%E6%A0%B8%E6%8C%91%E6%88%B0-%E5%A4%A9%E6%A2%9D), body: "74歲的許先生，就是九龍城寨前業主"
+  2. [香港01 (HK01), 鄧宇詩, 28 Aug 2023, 九龍城寨賠償方案不容兼申請公屋 74歲前業主提覆核挑戰「天條」](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/932266/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E8%B3%A0%E5%84%9F%E6%96%B9%E6%A1%88%E4%B8%8D%E5%AE%B9%E5%85%BC%E7%94%B3%E8%AB%8B%E5%85%AC%E5%B1%8B-74%E6%AD%B2%E5%89%8D%E6%A5%AD%E4%B8%BB%E6%8F%90%E8%A6%86%E6%A0%B8%E6%8C%91%E6%88%B0-%E5%A4%A9%E6%A2%9D), body: "許先生在80年代與朋友合資購買位於九龍城寨售價14多萬元約200呎的單位"
+  3. [香港01 (HK01), 鄧宇詩, 28 Aug 2023, 九龍城寨賠償方案不容兼申請公屋 74歲前業主提覆核挑戰「天條」](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/932266/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E8%B3%A0%E5%84%9F%E6%96%B9%E6%A1%88%E4%B8%8D%E5%AE%B9%E5%85%BC%E7%94%B3%E8%AB%8B%E5%85%AC%E5%B1%8B-74%E6%AD%B2%E5%89%8D%E6%A5%AD%E4%B8%BB%E6%8F%90%E8%A6%86%E6%A0%B8%E6%8C%91%E6%88%B0-%E5%A4%A9%E6%A2%9D), body: "當時與許生合住的朋友希望能獲取補償金，加上許生在酒樓的工作有宿舍提供，所以兩人達成共識選擇補償金。"
+  4. [香港01 (HK01), 鄧宇詩, 28 Aug 2023, 九龍城寨賠償方案不容兼申請公屋 74歲前業主提覆核挑戰「天條」](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/932266/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E8%B3%A0%E5%84%9F%E6%96%B9%E6%A1%88%E4%B8%8D%E5%AE%B9%E5%85%BC%E7%94%B3%E8%AB%8B%E5%85%AC%E5%B1%8B-74%E6%AD%B2%E5%89%8D%E6%A5%AD%E4%B8%BB%E6%8F%90%E8%A6%86%E6%A0%B8%E6%8C%91%E6%88%B0-%E5%A4%A9%E6%A2%9D), body: "但許生與朋友只獲得共15萬元的補償金"
+  5. [香港01 (HK01), 鄧宇詩, 28 Aug 2023, 九龍城寨賠償方案不容兼申請公屋 74歲前業主提覆核挑戰「天條」](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/932266/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E8%B3%A0%E5%84%9F%E6%96%B9%E6%A1%88%E4%B8%8D%E5%AE%B9%E5%85%BC%E7%94%B3%E8%AB%8B%E5%85%AC%E5%B1%8B-74%E6%AD%B2%E5%89%8D%E6%A5%AD%E4%B8%BB%E6%8F%90%E8%A6%86%E6%A0%B8%E6%8C%91%E6%88%B0-%E5%A4%A9%E6%A2%9D), body: "與朋友平分補償金後，僅獲7.5萬元的許先生，只能住在酒樓提供的宿舍，直至約10年前轉職為保安。"
+  6. [香港01 (HK01), 郭顥添, 10 Jul 2023, 城寨居民清拆時選擇收補償金 年邁欲申公屋被指不符資格 求覆核](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/917664/%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91%E6%B8%85%E6%8B%86%E6%99%82%E9%81%B8%E6%93%87%E6%94%B6%E8%A3%9C%E5%84%9F%E9%87%91-%E5%B9%B4%E9%82%81%E6%AC%B2%E7%94%B3%E5%85%AC%E5%B1%8B%E8%A2%AB%E6%8C%87%E4%B8%8D%E7%AC%A6%E8%B3%87%E6%A0%BC-%E6%B1%82%E8%A6%86%E6%A0%B8), body: "入稟狀指，許現年74歲，他於上世紀八十年代曾與人合資購買九龍城寨一個單位。"
+  7. [香港01 (HK01), 郭顥添, 10 Jul 2023, 城寨居民清拆時選擇收補償金 年邁欲申公屋被指不符資格 求覆核](https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/917664/%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91%E6%B8%85%E6%8B%86%E6%99%82%E9%81%B8%E6%93%87%E6%94%B6%E8%A3%9C%E5%84%9F%E9%87%91-%E5%B9%B4%E9%82%81%E6%AC%B2%E7%94%B3%E5%85%AC%E5%B1%8B%E8%A2%AB%E6%8C%87%E4%B8%8D%E7%AC%A6%E8%B3%87%E6%A0%BC-%E6%B1%82%E8%A6%86%E6%A0%B8), body: "許當時放棄入住公屋，取了補償金15萬元，他沒有用該款項買居屋，而在佐敦租劏房住。"
+  8. [South China Morning Post, 2023 (article 3232455), 'Former Kowloon Walled City resident takes Hong Kong government to court over 4-time rejection of public housing'](https://www.scmp.com/news/hong-kong/society/article/3232455/former-kowloon-walled-city-resident-takes-hong-kong-government-court-over-4-time-rejection-public), article text: "they still rejected me because I previously received compensation from the government"
 
 ## Mr Lau (劉先生)
 
@@ -809,9 +1664,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: a tin hut, then a flat in the high-rise built on its site; the Lau family lived on 六樓 (6/F) above a rattan shop (no street given)
 - In the City: from age 6 (about 1949) to the clearance, at age 47 (HK01)
 - Rooms in the model (building:floor:unit): 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices)
-- HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "73歲的劉先生，自6歲住在寨內的鐵皮屋，直到清拆時才遷出，當年他47歲"
-- HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "鐵皮屋被收，劉先生獲分發一個單位"
-- HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我們期望清拆一段時間。"
+- Sources:
+  1. HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "73歲的劉先生，自6歲住在寨內的鐵皮屋，直到清拆時才遷出，當年他47歲"
+  2. HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "鐵皮屋被收，劉先生獲分發一個單位"
+  3. HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "我們期望清拆一段時間。"
 
 ## Mr Shum
 
@@ -820,8 +1676,32 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Chan Wai Shui's noodle factory, Lo Yan Street (老人街)
 - In the City: worked in the City at the time of the photographs (c.1990); the book gives no years
 - Rooms in the model (building:floor:unit): 78:0:0 (G/F, Chan Wai Shui's noodle factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p226: "Chan Wai Shui (centre) with his coworkers, Mr Shum (left) and Kwan Tsin On (right)."
-- City of Darkness Revisited (Girard and Lambot, 2014), caption, p228: "I am responsible for making more than 100 pounds of pastry every day."
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p226: "Chan Wai Shui (centre) with his coworkers, Mr Shum (left) and Kwan Tsin On (right)."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), caption, p228: "I am responsible for making more than 100 pounds of pastry every day."
+
+## Mr Shum
+
+<a id="mr-shum-noodles"></a>**noodle-factory worker.** Mr Shum worked with Chan Wai Shui, who ran his own noodle factory on Lo Yan Street (老人街) from 1979. A photo in the book shows Chan Wai Shui with his two co-workers, Mr Shum and Kwan Tsin On. The factory made egg noodles and won tun pastry: about 500 catties of noodles a day.
+
+- Work: Chan Wai Shui's noodle factory on Lo Yan Street (老人街) (inferred from the caption)
+- In the City: the late years of the City (Chan Wai Shui's factory ran from 1979 for more than 10 years) (worked)
+- Related: [Chan Wai Shui (陳偉瑞)](#chan-wai-shui) (co-worker (he owned the factory)); [Kwan Tsin On](#kwan-tsin-on) (co-worker)
+- Rooms in the model (building:floor:unit): 78:0:0 (G/F, Chan Wai Shui's noodle factory)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p226: "Chan Wai Shui (centre) with his co-workers, Mr Shum (left) and Kwan Tsin On (right)."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview: Chan Wai Shui, p226: "I set up this factory in the Walled City in 1979"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview: Chan Wai Shui, p226: "On average our daily production is about 10 bags of flour, which makes 500 catties of noodles and 50 catties of won tun pastry."
+
+## Mrs Donnithorne
+
+<a id="mrs-donnithorne"></a>**missionary.** Mrs Donnithorne was a foreign missionary in the Walled City and the wife of Hong Kong's archdeacon. With Maureen Clarke she pioneered missionary work in the City in the late 1950s and early 1960s. She first introduced Jackie Pullinger to the Walled City and to her life's work.
+
+- Work: missionary work in the City
+- In the City: the late 1950s and early 1960s (the end year is not given) (worked)
+- Related: [Jackie Pullinger (潘靈卓)](#jackie-pullinger) (she introduced her to the Walled City)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), text, p263: "Missionary work had been pioneered in the City during the late 1950s and early '60s by indefatigable foreign women such as Maureen Clarke, who set up the Child Care Centre in 1959, and Mrs Donnithorne, the wife of Hong Kong's archdeacon and the person who first introduced Jackie Pullinger to the Walled City and her life's work."
 
 ## Mrs Lau (劉太)
 
@@ -829,18 +1709,20 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Home: the Lau family flat on 六樓 (6/F) above a rattan shop (no street given)
 - In the City: from adulthood (year not given) to the clearance (HK01)
-- HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "劉太(左)坦言初遷入城寨，非常不習慣，經常迷路。"
-- HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "劉先生一家人居於六樓，後樓梯被鎖，而三樓則對正旁邊大樓的走廊"
-- HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "舊街坊劉太正好買完餸，正從寨外打道回府，卻見城外圍滿了人"
+- Sources:
+  1. HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "劉太(左)坦言初遷入城寨，非常不習慣，經常迷路。"
+  2. HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016, https://www.hk01.com/article/39194: "劉先生一家人居於六樓，後樓梯被鎖，而三樓則對正旁邊大樓的走廊"
+  3. HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "舊街坊劉太正好買完餸，正從寨外打道回府，卻見城外圍滿了人"
 
 ## Mrs Law
 
 <a id="mrs-law"></a>**child-minding grandmother.** Mrs Law was a grandmother in the Walled City. Every day she collected her two grandchildren from school and took them back to her small apartment for the afternoon. The children often did their homework on her bed while they knelt on the floor. Their parents, who both worked full-time, picked them up on their way home from work. The book gives her only in a photo caption, and gives no address or dates.
 
 - Home: a small apartment in the City (no address in the book)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p54: "Mrs Law (above) collected her two grandchildren from school every day and took them back to her small apartment for the afternoon"
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p54: "Mrs Law (above) collected her two grandchildren from school every day and took them back to her small apartment for the afternoon"
 
-## Ng Kam Mui
+## Ng Kam Mui (吳錦妹)
 
 <a id="ng-kam-mui"></a>**Chung Fat Café worker.** Ng Kam Mui's parents moved from Hong Kong Island to the Walled City in the 1960s and opened a café. Her mother was Chiu Chow (潮州). Ng lived or worked at the Chung Fat Café on Tung Tau Tsuen Road (東頭村道) for nearly 30 years. As a child she fetched water from taps at each end of the street and bathed there. After primary school she lived and worked in the City. Her father died young, and her mother fought hard to keep the café. In the 1970s the old building came down, and an 11-storey building went up. The family got two storeys in it and about $7000 for nine months of closure. The café sold tea, coffee, congee and rice from 9 a.m. until late at night. Taxi drivers often came there. She rarely went into the inner City and stayed on its outer edge, where the café was. Later she worked elsewhere in Hong Kong. She asked the Government for $5 million in compensation to buy her mother a flat. The café closed in 1991.
 
@@ -848,9 +1730,36 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Chung Fat Café, Tung Tau Tsuen Road; later a job elsewhere in Hong Kong
 - In the City: lived or worked at the Chung Fat Café for nearly 30 years, from its opening in the 1960s to its closure in 1991
 - Rooms in the model (building:floor:unit): 31:0:0 (G/F, Chung Fat Café); 31:0:2 (G/F, Chung Fat Café cockloft); 12:2:0 (2/F, Ng family's two storeys in the 11-storey building)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "the Chung Fat café on Tung Tau Tsuen Road for nearly 30 years, from the day it opened until its closure in 1991"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "Since graduating from primary school, I've lived and worked here in the City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "We were given two storeys when this 11-storey building was completed; we were even put into another place while it was built."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 吳錦妹 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "the Chung Fat café on Tung Tau Tsuen Road for nearly 30 years, from the day it opened until its closure in 1991"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "Since graduating from primary school, I've lived and worked here in the City."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p57: "We were given two storeys when this 11-storey building was completed; we were even put into another place while it was built."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "吳錦妹（Ng Kam Mui） | 松發冰室第二代老闆"
+
+## Ng Kam Mui's brother
+
+<a id="ng-kam-mui-brother"></a>**baker.** Ng Kam Mui's brother was a baker in the Walled City. A photo in the book shows him at work in his bakery behind the Chung Fat Café, the café of his family. His sister Ng Kam Mui ran the café.
+
+- Work: his bakery behind the Chung Fat Café
+- In the City: photographed in the late years of the City (about 1987-1992) (worked)
+- Related: [Ng Kam Mui (吳錦妹)](#ng-kam-mui) (sister); [Ng Kam Mui's mother](#ng-kam-mui-mother) (mother)
+- Rooms in the model (building:floor:unit): 16:1:0 (1/F, Bakery behind the Chung Fat Café)
+- Sources:
+  1. City of Darkness Revisited (2014), caption p291, p291: "Ng Kam Mui's brother at work in his bakery behind the Chung Fat cafe"
+
+## Ng Kam Mui's mother
+
+<a id="ng-kam-mui-mother"></a>**café owner.** Ng Kam Mui's mother ran the family café in the Walled City. When her husband died, someone tried to take the café from the family. She resisted and struggled hard to keep it going. Her daughter Ng Kam Mui later ran the café as its second-generation owner.
+
+- Home: at times she slept in the cockloft of the café
+- Work: the family café (Chung Fat Café, 松發冰室), which she kept going after her husband died
+- In the City: from the 1960s; the café was in the City until 1991 (both)
+- Related: [Ng Kam Mui (吳錦妹)](#ng-kam-mui) (daughter); [Ng Kam Mui's brother](#ng-kam-mui-brother) (son)
+- Rooms in the model (building:floor:unit): 31:0:0 (G/F, Chung Fat Café)
+- Sources:
+  1. City of Darkness Revisited (2014), interview c.1989, pp56-57: "When Dad died someone tried to take the café away from us, but Mum resisted and struggled hard to keep it going."
 
 ## Ng Mei Kin (吳美堅)
 
@@ -859,7 +1768,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 122 Lung Chun Road
 - In the City: named in a clearance file dated 1991
 - Rooms in the model (building:floor:unit): 236:0:0 (G/F, Ng Mei Kin Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-69: "G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-69: "G/F, 122 Lung Chun Road Ng Mei Kin Dentistry (吳美堅牙科)"
 
 ## Ng Ping Wai
 
@@ -868,7 +1778,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat 2, 6/F, 24A Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1991
 - Rooms in the model (building:floor:unit): 32:6:2 (6/F, Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen )
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-266: "Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-266: "Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen Road]., Ng Ping Wai Clinic"
 
 ## Ngai Heung Chuen (魏香泉)
 
@@ -877,7 +1788,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat A, 4/F, Stage 7, 24 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 32:4:2 (4/F, 魏香泉牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-273: "Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-273: "Flat A, 4/F, Stage 7, Luen Hing Bldg [Building], 24 TTT Rd [Tung Tau Tsuen Road]., Ngai Heung Chuen Dentistry 魏香泉牙科"
 
 ## Paul Tang Kam-cheung (鄧金祥)
 
@@ -885,11 +1797,12 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Home: G/F, Lung Chun Rd., 2nd Lane
 - In the City: 1948-1979
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Paul Tang Kam-cheung was a teenager when he joined the Hong Fat Shan triad gang — later known as the 14K — in the 1950s."
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "He moved out of the Walled City after converting to Christianity and becoming a pastor."
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "The police would patrol at certain hours, but they didn’t stay in the Walled City for long."
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Paul Tang Kam-cheung was a teenager when he joined the Hong Fat Shan triad gang — later known as the 14K — in the 1950s."
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "He moved out of the Walled City after converting to Christianity and becoming a pastor."
+  3. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "The police would patrol at certain hours, but they didn’t stay in the Walled City for long."
 
-## Reverend Isaac Liu
+## Reverend Isaac Liu (劉知三)
 
 <a id="isaac-liu"></a>**missionary.** Isaac Liu was born in 1935. In 1950 he came to Hong Kong from his native village in China. He did not speak Cantonese, and he often felt lonely. A stranger gave him the gospel in Mandarin, and he became a Christian. He volunteered to preach and studied at a seminary for three years. In that time he began work in the Walled City, with a school in a few rented wooden shacks. In 1960 the mission opened a Gospel Centre in a four-storey building on Lung Shing Road (龍城路). It held a chapel, a clinic for drug addicts and the Tak Shing school, which had more than 420 pupils at its peak. In 1971 the mission moved to the old magistrate's buildings, the Yamen (衙門), at the centre of the City. He began to live in the City in the same year. The school closed in 1978, and in 1979 he started the Old People's Centre (老人中心). It grew to 184 members. The clearance forced him to leave the premises in 1991.
 
@@ -897,20 +1810,90 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: CNEC Living Word Church (the gate arch in the p304 photo reads 中華傳道會): Gospel Centre and Tak Shing school on Lung Shing Road (龍城路) from 1960; school, clinic, chapel and from 1979 the Old People's Centre (老人中心) in the Yamen (衙門), 1971-1991
 - In the City: Worked in the City from his seminary years in the 1950s and visited it often from the mid-1950s; lived in the City from 1971; left the Yamen premises in 1991
 - Rooms in the model (building:floor:unit): 266:0:0 (G/F, Yamen (CNEC Living Word Church compound)); 172:2:1 (2/F, Old People's Centre); 269:0:0 (G/F, Rev. Isaac Liu's mission)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p304: "I was born in 1935 and came to Hong Kong in 1950 from my native village in China."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p304: "he took over the old magistrate's buildings at the centre of the City in 1971"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p305: "I began living in the Walled City in 1971."
+- Life details:
+  - His Chinese name is 劉知三: the CNEC article quotes the Chinese edition of the book (黑暗之城：九龍城寨的日與夜, 中華書局 2015, p314) with his words that he lived in the City from 1971, the same words as Isaac Liu's in the English book. [4]
+  - He said: from the mid-1950s he went in and out of the City often; in the 1960s, from the school roof, he always saw drug addicts squatting in the lanes. [5]
+  - He said that nobody gave him trouble, because people knew that the mission worked for the residents. [6]
+  - In the early years a second CNEC pastor, 張祖鷺, also served in the City; the families of both pastors lived in the City. [7]
+  - The two pastors turned the school into the Old People's Centre because the City had more than 600 old people whose windows could not open and whose flats never saw daylight; the Yamen (恩光園) was the only place in the City with no high building. [8]
+  - At its peak the centre served 187 members (the English book says 184). [9]
+  - The centre opened in 1979 and ran until the clearance; 30 old people were baptised there in that time. [10]
+  - In 1991 the Old People's Centre moved to Fu Shin Estate (富善邨), Tai Po. [11]
+  - The CNEC article puts the 1960 Gospel Centre in a four-storey tenement on Lung Chun Road (龍津道), not on Lung Shing Road (the English book). [12]
+  - In 1956 CNEC opened the 慈光贈診所 (free clinic) on Lung Shing Road (龍城路), with drug-addiction treatment; classes for addicts' children were held upstairs. [13]
+  - The school (德成分校, later 恩光學校) taught kindergarten to Primary 6; most pupils came from the City. [14]
+  - He is one of five preachers whom Kowloon Walled City Park commemorates for their work for the residents (with 鄺日修, 潘靈卓 (Jackie Pullinger) and the Willans couple). [15]
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 劉知三 beside the English name. [16]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p304: "I was born in 1935 and came to Hong Kong in 1950 from my native village in China."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p304: "he took over the old magistrate's buildings at the centre of the City in 1971"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p305: "I began living in the Walled City in 1971."
+  4. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光 (quoting 黑暗之城：九龍城寨的日與夜, 中華書局 2015, p314)](https://www.cnec.org.hk/message_article/article/a4/), section on 劉知三: "我自1971年就在城寨居住，什麼也不怕。"
+  5. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 劉知三: "從五十年代中期起，我就經常出入；到了六十年代，城寨街巷有很多道友，從學校天台往下望，總見到他們蹲在道中。"
+  6. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 劉知三: "因為他們都知道我們是為城寨居民謀福利。"
+  7. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 恩光園: "早年除了劉知三牧師，中華傳道會還有張祖鷺牧師參與城寨的服侍，兩位牧師一家都在城寨居住。"
+  8. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 老人中心: "當年兩位牧師得知城寨住了六百多位長者，由於城寨樓宇非常密集，長者家中有窗也不能打開，室內長期不見天日，而恩光園是城寨唯一沒建高樓的地方，兩位牧師便決定將學校改為老人中心，為長者提供理想的休憩場所。"
+  9. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 老人中心: "最高峰時，中心共服務187名會員。"
+  10. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 老人中心: "老人中心於1979年正式開辦，一直營運至城寨清拆前，期間共有三十位長者受洗。"
+  11. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 老人中心: "1991年，老人中心遷至大埔富善邨現址，"
+  12. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 福音中心: "1960年，中華傳道會在龍津道一棟四層高唐樓成立「中華傳道會福音中心」"
+  13. [香港神學院, 鄞穎翹, 城寨中的恩光（上）, 2025-05-02](https://www.bshk.edu.hk/2025-05-02/), section on 慈光贈診所: "1956年，中華傳道會在城寨龍城路開辦「慈光贈診所」，不僅為貧病者贈醫施藥，也為吸毒者提供戒毒治療。"
+  14. [香港神學院, 鄞穎翹, 城寨中的恩光（上）, 2025-05-02](https://www.bshk.edu.hk/2025-05-02/), section on 學校: "學校提供幼稚園至小六教育，學生多數來自城寨。"
+  15. [香港神學院, 鄞穎翹, 城寨中的恩光（上）, 2025-05-02](https://www.bshk.edu.hk/2025-05-02/), intro: "紀念五位曾對城寨居民作出貢獻的傳道人：鄺日修、劉知三、潘靈卓，以及韋麟趾（Rick Willans）和韋真示東（Jean Stone Willans）夫婦。"
+  16. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "劉知三（Rev. Isaac Liu） | 牧師"
 
-## Simon Wong
+## Roger Ha
+
+<a id="roger-ha"></a>**fishball family son.** Roger Ha lived in the Walled City. He is the eldest son of Ha Fan-ming (夏藩銘); he reopened Ha Ming Kee in Sai Ying Pun in 2018. He came back to Hong Kong in 2012 to help his parents when his mother had heart disease. He grew up on the eighth floor of a building in the City with no lift. From the window he could touch the next building within arm's length. The neighbours could see right into the family's room. He recalls: 'It was a tough life.' He has siblings; they all graduated from universities overseas (he finished a master's degree at the University of Nottingham in 1993, per the same article).
+
+- Home: the family flat on the 8th floor, with no lift
+- In the City: his childhood; the family left in 1993 (lived)
+- Related: [Ha Fan-ming (夏藩銘)](#ha-fan-ming) (father); [Chan So-hing (陳素卿)](#chan-so-hing) (mother)
+- Life details:
+  - He is the eldest son of Ha Fan-ming (夏藩銘); he reopened Ha Ming Kee in Sai Ying Pun in 2018. [1]
+  - He came back to Hong Kong in 2012 to help his parents when his mother had heart disease. [2]
+  - He grew up on the eighth floor of a building in the City with no lift. [3]
+  - From the window he could touch the next building within arm's length. [4]
+  - The neighbours could see right into the family's room. [5]
+  - He recalls: 'It was a tough life.' [6]
+  - He has siblings; they all graduated from universities overseas (he finished a master's degree at the University of Nottingham in 1993, per the same article). [7]
+- Sources:
+  1. [Wikipedia (zh), 夏銘記麵家](https://zh.wikipedia.org/zh-hk/%E5%A4%8F%E9%8A%98%E8%A8%98%E9%BA%B5%E5%AE%B6), 歷史: "2018年1月17日，夏銘記麵家在西營盤德輔道西地舖復業，食店附設工場，由夏藩銘的長子Roger打理。"
+  2. [Yahoo News HK / 好集慣 BetterMe, Janice Hui, 3 Nov 2023](https://hk.news.yahoo.com/%E6%89%8B%E6%89%93%E9%AD%9A%E8%9B%8B%E8%80%81%E5%AD%97%E8%99%9F%E9%87%8D%E7%94%9F-%E4%BA%8C%E4%BB%A3%E5%BB%B6%E7%BA%8C%E8%94%A1%E7%80%BE%E8%87%B3%E6%84%9B%E6%BD%AE%E6%B4%B2%E7%B2%89%E9%BA%B5%E5%B0%8F%E5%BA%97-094930914.html), para on Roger: "2012年因媽媽患上心臟病，回港幫忙父母打理麵店。"
+  3. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "We lived on the eighth floor, and there was no lift."
+  4. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "If I opened the window, I could touch the building next to us within arm's length,"
+  5. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "Our neighbours could see right into our room."
+  6. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "It was a tough life,"
+  7. [SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business' (2026), as reproduced on Ha Ming Kee's own media page](https://www.hamingkee.com.hk/about/media?blog_id=19), body: "My parents invested in my siblings and me; we all graduated from universities overseas."
+
+## Simon Wong (王國清)
 
 <a id="simon-wong"></a>**Salvation Army officer.** Simon Wong was the officer of the Salvation Army (救世軍) responsible for the Walled City. The Salvation Army began work in the City in 1968. A girl of about seven had asked it for a primary school. It rented a flat for a school and a church. The landlord tore down pictures of Jesus, but later he sold the flat to the Army. The primary school closed because its pupils did not qualify for public examinations. The kindergarten on Lung Chun Back Road (龍津後街) continued for many years. Parents paid no formal fee, but they gave $100 a term if they had the money. It looked for sponsors among foreign groups, and one Austrian gentleman sent over $100,000 each year. At least twice a month, the school took the children to a park outside the City or to Kowloon Park. On Sundays the premises became a chapel for 10 to 20 people. Wong said that the City was a peaceful community in the 1960s and 1970s. After the clearance was announced, reports said that crime increased.
 
 - Work: Salvation Army (救世軍) kindergarten, Lung Chun Back Road (龍津後街)
 - In the City: Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968
 - Rooms in the model (building:floor:unit): 185:0:1 (G/F, Salvation Army kindergarten door)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The interview was given by Simon Wong, an officer in the Salvation Army responsible for the Walled City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "the Salvation Army ran a well-attended kindergarten at its premises on Lung Chun Back Road for many years."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The Salvation Army first started working in the Walled City in 1968"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 王國清 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The interview was given by Simon Wong, an officer in the Salvation Army responsible for the Walled City."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "the Salvation Army ran a well-attended kindergarten at its premises on Lung Chun Back Road for many years."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The Salvation Army first started working in the Walled City in 1968"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "王國清（Simon Wong） | 救世軍主任"
+
+## Sin Kwai
+
+<a id="sin-kwai"></a>**heroin divan manager.** Sin Kwai managed a heroin divan on the ground floor of 9 Lo Yan Street (老人街) in the Walled City. He was murdered in 1959. Three men, Le Kan, Szeto Pin-chun and Wong Hon, were tried for his murder in the Supreme Court in December 1959. The China Mail reported the trial under the heading "Kowloon Walled City".
+
+- Work: a heroin divan on the ground floor of 9 Lo Yan Street (老人街) (the OCR of the scan reads "9 bo Yan Street")
+- In the City: worked in the City until his murder in 1959 (worked)
+- Life details:
+  - He was the manager of a heroin divan on the ground floor of 9 Lo Yan Street (老人街) in the Walled City. [1]
+  - (inferred) The OCR of the newspaper scan reads 'Sin' Kwwad, mantyger of a herom divon at 9 bo Yan Street'; the reading 'Sin Kwai, manager of a heroin divan at 9 Lo Yan Street' is an inference. [1]
+  - Le Kan, Szeto Pin-chun and Wong Hon were tried for his murder in the Supreme Court in December 1959. [2]
+- Sources:
+  1. [China Mail, 3 Dec 1959, p10, under the heading 'KOWLOON WALLED CITY' (murder trial report; Internet Archive OCR text, uncorrected)](https://archive.org/stream/NPCM19591203/NPCM19591203_djvu.txt), p10: "Sin’ Kwwad, mantyger of a herom divon at 9 bo Yan Street, ground fleer,"
+  2. [China Mail, 3 Dec 1959, p10 (same report)](https://archive.org/stream/NPCM19591203/NPCM19591203_djvu.txt), p10: "They are Le Kan, Szeto Pin. chun, and Wong Hon,"
 
 ## Siu Ping Lung (蕭秉隆)
 
@@ -919,7 +1902,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 3 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1992-1993
 - Rooms in the model (building:floor:unit): 2:0:4 (G/F, 蕭秉隆牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-514: "G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-514: "G/F, 3 Tung Tau Tsuen Road, KWC [Kowloon Walled City] - Siu Ping Lung Dentistry (蕭秉隆牙科)"
 
 ## Siu Ping Sing (蕭秉陞)
 
@@ -928,9 +1912,118 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 6 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1991-1992
 - Rooms in the model (building:floor:unit): 2:0:0 (G/F, 蕭秉陞牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-547: "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-547: "G/F, 6 Tung Tau Tsuen Road. KWC [Kowloon Walled City]. [Kowloon Walled City] Siu Ping Sing Dentistry (蕭秉陞牙科)"
 
-## To Gui Bon
+## Tam Yiu Hung
+
+<a id="tam-yiu-hung"></a>**dentist.** Tam Yiu Hung worked in the Walled City. The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Tam Yiu Hung Dentistry - [Ledger]', dated 11.1.1994 - 26.2.1994. A second ledger file, HKRS1255-3-16B, covers 22.3.1994 - 4.12.1994. The files of this series (HKRS1255-3) are the compensation case files of the businesses of the Walled City at the clearance.
+
+- Work: a dental practice in the City (the catalogue gives no address)
+- In the City: business files of 1994 (worked)
+- Life details:
+  - The Lands Department (Acquisition) clearance case files for business claimants hold a file titled 'Tam Yiu Hung Dentistry - [Ledger]', dated 11.1.1994 - 26.2.1994. [1]
+  - (inferred) The files in this series are compensation case files for businesses in the Walled City, thus the business was in the City. [1]
+  - A second ledger file, HKRS1255-3-16B, covers 22.3.1994 - 4.12.1994. [1]
+- Sources:
+  1. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-16A (11.1.1994 - 26.2.1994)](https://search.grs.gov.hk/en/arcview.xhtml?eid=HtKy%2BCNnQoRlXS2NUlfPSg%3D%3D), HKRS1255-3-16A: "Tam Yiu Hung Dentistry - [Ledger]"
+
+## The dentist of 凌生牙科
+
+<a id="ling-dentist"></a>**dentist.** A photo on Gwulo, taken in about 1987 or 1988, shows a dentist of the Walled City seated behind the chair in his ground-floor surgery. The sign of the surgery reads 凌生牙科. The photo does not give his name.
+
+- Work: 凌生牙科, a ground-floor dental surgery
+- In the City: about 1987-1988 (a photo) (worked)
+- Rooms in the model (building:floor:unit): 254:0:4 (G/F, Ling Sang Dentistry (probably Cheng Ling Sang Dentistry))
+- Sources:
+  1. [Gwulo media 19655](https://gwulo.com/media/19655): "Dentist at Walled City"
+
+## The landlord of the Lung Tsun Back Street heroin factory
+
+<a id="heroin-factory-landlord-1982"></a>**landlord, drug assistant.** The landlord of the Lung Tsun Back Street heroin factory worked in the Walled City. Police of the Narcotics Bureau, headed by Superintendent Eric Leung, raided a heroin factory in the Walled City at about 5.30 pm on Tuesday (13 April 1982). She, aged 36, was believed to be the assistant of the factory operator. She said she was the landlord of the raided premises in Lung Tsun Back Street. She and the operator were to appear in the San Po Kong court on 15 April 1982. Police seized about 6 kg of No 3 heroin, 1.5 kg of heroin base and 3.5 kg of caffeine, worth $3 million; the equipment included a food mixer.
+
+- Work: the raided premises in "Lung Tsun Back Street" (Lung Chun Back Street), of which she said she was the landlord
+- In the City: April 1982 (a police raid) (worked)
+- Related: [The operator of the Lung Tsun Back Street heroin factory](#heroin-factory-operator-1982) (she was believed to be his assistant)
+- Life details:
+  - Police of the Narcotics Bureau, headed by Superintendent Eric Leung, raided a heroin factory in the Walled City at about 5.30 pm on Tuesday (13 April 1982). [1]
+  - She, aged 36, was believed to be the assistant of the factory operator. She said she was the landlord of the raided premises in Lung Tsun Back Street. [2]
+  - She and the operator were to appear in the San Po Kong court on 15 April 1982. [1]
+  - Police seized about 6 kg of No 3 heroin, 1.5 kg of heroin base and 3.5 kg of caffeine, worth $3 million; the equipment included a food mixer. [3]
+- Sources:
+  1. [South China Morning Post, 15 Apr 1982, p18, 'POLICE RAID DRUG FACTORY, SEIZE HEROIN, HEROIN BASE', reprinted in JPRS 10545 'Worldwide Report: Narcotics and Dangerous Drugs' (CIA Reading Room CIA-RDP82-00850R000500060058-7; Internet Archive OCR text)](https://archive.org/stream/cia-readingroom-document-cia-rdp82-00850r000500060058-7/cia-rdp82-00850r000500060058-7_djvu.txt), SCMP 15 Apr 1982 p18: "Police raided a: heroin factory in Kowloon Walled City on Tuesday and: seized $3 million worth of drugs,"
+  2. [South China Morning Post, 15 Apr 1982, p18, 'POLICE RAID DRUG FACTORY, SEIZE HEROIN, HEROIN BASE', reprinted in JPRS 10545 'Worldwide Report: Narcotics and Dangerous Drugs' (CIA Reading Room CIA-RDP82-00850R000500060058-7; Internet Archive OCR text)](https://archive.org/stream/cia-readingroom-document-cia-rdp82-00850r000500060058-7/cia-rdp82-00850r000500060058-7_djvu.txt), SCMP 15 Apr 1982 p18: "The woman, who said she was the landlord of the raided premises in Lung Tsun Back Street in the walled city, will"
+  3. [South China Morning Post, 15 Apr 1982, p18, 'POLICE RAID DRUG FACTORY, SEIZE HEROIN, HEROIN BASE', reprinted in JPRS 10545 'Worldwide Report: Narcotics and Dangerous Drugs' (CIA Reading Room CIA-RDP82-00850R000500060058-7; Internet Archive OCR text)](https://archive.org/stream/cia-readingroom-document-cia-rdp82-00850r000500060058-7/cia-rdp82-00850r000500060058-7_djvu.txt), SCMP 15 Apr 1982 p18: "About six kilograms of No 3 heroin, 1.5 kg of heroin base and 3.5 kg of caffeine were seized during the raid."
+
+## The operator of the Lung Tsun Back Street heroin factory
+
+<a id="heroin-factory-operator-1982"></a>**heroin-factory operator.** The operator of the Lung Tsun Back Street heroin factory worked in the Walled City. A 50-year-old man, believed to be the operator of a heroin factory in the Walled City, was arrested in a raid on Tuesday (13 April 1982) and was expected to be charged with manufacturing dangerous drugs for trafficking. The factory had equipment that turned heroin base into No 3 heroin in about 1.5 hours instead of four; police said the makers bought raw heroin before Easter and hoped police would be less alert during the holiday.
+
+- Work: a heroin factory in "Lung Tsun Back Street" (Lung Chun Back Street)
+- In the City: April 1982 (a police raid) (worked)
+- Related: [The landlord of the Lung Tsun Back Street heroin factory](#heroin-factory-landlord-1982) (his believed assistant)
+- Life details:
+  - A 50-year-old man, believed to be the operator of a heroin factory in the Walled City, was arrested in a raid on Tuesday (13 April 1982) and was expected to be charged with manufacturing dangerous drugs for trafficking. [1]
+  - The factory had equipment that turned heroin base into No 3 heroin in about 1.5 hours instead of four; police said the makers bought raw heroin before Easter and hoped police would be less alert during the holiday. [1]
+  - (inferred) That he worked there every day is an inference from his role as operator. [1]
+- Sources:
+  1. [South China Morning Post, 15 Apr 1982, p18, 'POLICE RAID DRUG FACTORY, SEIZE HEROIN, HEROIN BASE', reprinted in JPRS 10545 'Worldwide Report: Narcotics and Dangerous Drugs' (CIA Reading Room CIA-RDP82-00850R000500060058-7; Internet Archive OCR text)](https://archive.org/stream/cia-readingroom-document-cia-rdp82-00850r000500060058-7/cia-rdp82-00850r000500060058-7_djvu.txt), SCMP 15 Apr 1982 p18: "A 50-year-old man, believed to be the drug factory operator, and a 36-year-old woman believed to be his assistant"
+  2. [South China Morning Post, 15 Apr 1982, p18, 'POLICE RAID DRUG FACTORY, SEIZE HEROIN, HEROIN BASE', reprinted in JPRS 10545 'Worldwide Report: Narcotics and Dangerous Drugs' (CIA Reading Room CIA-RDP82-00850R000500060058-7; Internet Archive OCR text)](https://archive.org/stream/cia-readingroom-document-cia-rdp82-00850r000500060058-7/cia-rdp82-00850r000500060058-7_djvu.txt), SCMP 15 Apr 1982 p18: "The man is expected to be charged with manufacturing dangerous drugs for trafficking."
+
+## The original landowner of 19 Shung Yee Lane
+
+<a id="shung-yee-lane-landowner"></a>**landowner, resident.** The original landowner of 19 Shung Yee Lane lived in the Walled City. No. 19 Shung Yee Lane was a building west of the old Yamen, in the middle of the City. It exceeded the airport height limit by 11 feet 6 inches, and its developers volunteered to reduce its height. A police report of 12 Dec 1975 said that one of the occupied units was thought to be occupied by the original landowner, who had been given a flat in return for the land.
+
+- Home: a flat in the new building at 19 Shung Yee Lane, west of the old Yamen
+- In the City: 1975 (a police report) (lived)
+- Life details:
+  - No. 19 Shung Yee Lane was a building west of the old Yamen, in the middle of the City. It exceeded the airport height limit by 11 feet 6 inches, and its developers volunteered to reduce its height. [1]
+  - A police report of 12 Dec 1975 said that one of the occupied units was thought to be occupied by the original landowner, who had been given a flat in return for the land. [2]
+- Sources:
+  1. [Mark Hansley Chua and Yung Yau, "Early Experience of Land Readjustment in Hong Kong: Case Study of the Kowloon Walled City", Buildings 12(6):757, 2 June 2022 (open access; reports 1972 and 1975 Royal Hong Kong Police / City District Office reports in GRS files HKRS163-9-233 and HKRS396-1-4). HTML: https://www.mdpi.com/2075-5309/12/6/757](https://mdpi-res.com/d_attachment/buildings/buildings-12-00757/article_deploy/buildings-12-00757.pdf), p8-9, sec. 4.2 (citing 12 Dec 1975 report, HKRS 396-1-4 No. 179): "As shown in Figure 5, building No.19 on Shung Yee Lane is a building west of the old Yamen, right in the middle of the KWC."
+  2. [Mark Hansley Chua and Yung Yau, "Early Experience of Land Readjustment in Hong Kong: Case Study of the Kowloon Walled City", Buildings 12(6):757, 2 June 2022 (open access; reports 1972 and 1975 Royal Hong Kong Police / City District Office reports in GRS files HKRS163-9-233 and HKRS396-1-4). HTML: https://www.mdpi.com/2075-5309/12/6/757](https://mdpi-res.com/d_attachment/buildings/buildings-12-00757/article_deploy/buildings-12-00757.pdf), p8, sec. 4.2: "one of these is thought to be occupied by the original landowner who has been given a flat in return for the land."
+
+## The owner of Sun Kee Plastic Factory
+
+<a id="sun-kee-owner"></a>**plastic-factory owner.** The owner of Sun Kee Plastic Factory worked in the Walled City. In May 1975 the building at No. 24 Tung Tau Tsuen Road, at the northern edge of the City, was rebuilt; the site had been a smaller building in the 1960s and was joined with lot No. 14 into a site of about 3,000 sq ft in January 1975. The original owner, Sun Kee Plastic Factory, received HK$600,000 and was given the ground and first floors of the new building. The whole project cost HK$2 million; the land was 30% of the cost. The leaders of the 10-developer consortium were Chan Chun Kwong and Nga Sze Hing.
+
+- Work: Sun Kee Plastic Factory, on the site of 24 Tung Tau Tsuen Road (東頭村道); from 1975 the ground and first floors of the new building
+- In the City: the 1960s to 1975 (a police report) (worked)
+- Life details:
+  - In May 1975 the building at No. 24 Tung Tau Tsuen Road, at the northern edge of the City, was rebuilt; the site had been a smaller building in the 1960s and was joined with lot No. 14 into a site of about 3,000 sq ft in January 1975. [1]
+  - The original owner, Sun Kee Plastic Factory, received HK$600,000 and was given the ground and first floors of the new building. [1]
+  - The whole project cost HK$2 million; the land was 30% of the cost. The leaders of the 10-developer consortium were Chan Chun Kwong and Nga Sze Hing. [1]
+  - (inferred) That the factory owner worked at the site every day is an inference from a factory on the site. [1]
+- Sources:
+  1. [Mark Hansley Chua and Yung Yau, "Early Experience of Land Readjustment in Hong Kong: Case Study of the Kowloon Walled City", Buildings 12(6):757, 2 June 2022 (open access; reports 1972 and 1975 Royal Hong Kong Police / City District Office reports in GRS files HKRS163-9-233 and HKRS396-1-4). HTML: https://www.mdpi.com/2075-5309/12/6/757](https://mdpi-res.com/d_attachment/buildings/buildings-12-00757/article_deploy/buildings-12-00757.pdf), p9, sec. 4.2 (citing HKRS 396-1-4 No. 89): "The report indicates that the original owner, Sun Kee Plastic Factory, received an amount of HKD 600,000 and was given the ground and first floors of the new building"
+
+## The owner of 歡樂餅家
+
+<a id="foon-lok-bakery-owner"></a>**bakery owner.** The owner of 歡樂餅家 worked in the Walled City. The owner was a very fat man who sat half-lying in a canvas chair, sometimes in a vest, sometimes bare-chested. The bakery was not on Kwong Ming Street but at the City's 'cleanest' entrance; 阿平 often bought chicken biscuits there. The shop was 歡樂餅家; 阿平 still remembers its rich, sweet smell.
+
+- Work: 歡樂餅家, a bakery at one of the City's entrances (not on Kwong Ming Street); it sold chicken biscuits (雞仔餅)
+- In the City: the 1970s (worked)
+- Life details:
+  - The owner was a very fat man who sat half-lying in a canvas chair, sometimes in a vest, sometimes bare-chested. [1]
+  - The bakery was not on Kwong Ming Street but at the City's 'cleanest' entrance; 阿平 often bought chicken biscuits there. [2]
+  - The shop was 歡樂餅家; 阿平 still remembers its rich, sweet smell. [3]
+- Sources:
+  1. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "老闆是個大肥佬，有時穿背心，有時赤膊，半躺在帆布椅上。"
+  2. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "餅家並非座落光明街，而是阿平記憶中一個最「乾淨」的入口處，「經常在那裏買雞仔餅。」"
+  3. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "還有一些細碎的關於那個圍城的記憶，嗅到的聽到的和看到的，至今仍然烙印心裏，例如歡樂餅家那陣豐腴而甜膩的香氣"
+
+## The three nuns of Lung Chun Road
+
+<a id="three-nuns-lung-chun-road"></a>**nuns (three).** Three nuns, one Korean and two Italian, lived on Lung Chun Road (龍津道) and cared for many of the elderly of the area. Their work was less known than Jackie Pullinger's, but they remained in the City to the end. The book does not name them.
+
+- Home: Lung Chun Road (龍津道)
+- Work: the care of many of the elderly of the area
+- In the City: in the City to the end (1992) (both)
+- Rooms in the model (building:floor:unit): 246:0:0 (G/F, Home of three nuns)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), text, p263: "three nuns - one a Korean, the other two Italian - also remained in the City to the end, living on Lung Chun Road and caring for many of the elderly in the area."
+
+## To Gui Bon (杜古邦)
 
 <a id="to-gui-bon"></a>**rubber-plunger maker.** To Gui Bon was born in 1937. He worked in the rubber business before he moved to the City. He was also once a driver of private cars, and he moved to the City when that work became illegal. For about 25 years he made rubber plungers in a small factory on Lung Chun Back Road (龍津後街). At first the site was a two-storey stone house, and he lived on the floor above the factory. When the stone house came down for a new building, he moved next door for a while. At the time of the interview he lived nearby and went home to eat. He worked long hours, sometimes until 2 or 3 a.m. His press had no safety grill, so he worked with extra care. He also made shuttlecocks and sink stoppers. In the 1980s the business grew and made $20,000 to $30,000 a month. He once had a couple of employees, but only one assistant stayed. After the clearance announcement, his business dropped. He had two young children.
 
@@ -938,9 +2031,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his small rubber-plunger factory on Lung Chun Back Road (龍津後街)
 - In the City: about 25 years of work in the City ('more than 20 years' at one spot), until the clearance
 - Rooms in the model (building:floor:unit): 195:0:0 (G/F, To Gui Bon's rubber factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "For 25 years, To Gui Bon (below right) produced rubber plungers and other products in his small factory on Lung Chun Back Road."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "I used to live on the first floor above the factory."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "when we were expanding during the 1980s we were making $20,000 to $30,000 a month."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 杜古邦 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "For 25 years, To Gui Bon (below right) produced rubber plungers and other products in his small factory on Lung Chun Back Road."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "I used to live on the first floor above the factory."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p237: "when we were expanding during the 1980s we were making $20,000 to $30,000 a month."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "杜古邦（To Gui Bon） | 廁所泵大王"
 
 ## Tsang Chi Wai (曾志偉)
 
@@ -949,7 +2046,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 63 Lung Shing Road
 - In the City: named in a clearance file dated 1990-1992
 - Rooms in the model (building:floor:unit): 3:0:1 (G/F, Tsang Chi Wai Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-352: "G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-352: "G/F, 63 Lung Shing Road Tsang Chi Wai Dentistry (曾志偉牙科)"
 
 ## Tsang Keong
 
@@ -958,7 +2056,16 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Flat F, 1/F, rear Hop Hing House, 20-22 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1992
 - Rooms in the model (building:floor:unit): 30:1:0 (1/F, Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-280A (also -280D to -281): "Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic"
+- Life details:
+  - Tsang Keong took the compensation offer to the Assessment Review Board of the Housing Authority Special Committee on Clearance of Kowloon Walled City: GRS holds 'Tsang Keong - ARB [Assessment Review Board] Submission' (25.11.1991 - 25.2.1993) and 'Tsang Keong Dental Clinic - ARB [Assessment Review Board] Material' (3.6.1992 - 10.6.1993). [2]
+  - Another file spells the name 'Tsang Keung Dental Practice' (17.12.1992 - 12.5.1993). [4]
+  - (inferred) The Board was an administrative appeal body set up in 1987; a resident or the Government Land Agent could convene it, and it decided whether an offer was fair. By 4 Dec 1991 only one appeal had been heard, and two more had just been submitted by residents; the Tsang Keong submission file opens on 25 Nov 1991, thus it was probably one of those two. [5]
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-280A (also -280D to -281): "Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tung Tau Tsuen Road]., Tsang Keong Dental Clinic"
+  2. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-280E (25.11.1991 - 25.2.1993)](https://search.grs.gov.hk/en/arcview.xhtml?eid=OnjyjjxtfzF4oC0%2FqXOxlA%3D%3D), HKRS1255-3-280E: "Tsang Keong - ARB [Assessment Review Board] Submission"
+  3. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-280F (3.6.1992 - 10.6.1993)](https://search.grs.gov.hk/en/arcview.xhtml?eid=ZPH7MXyFR4yTxmccR8qg0Q%3D%3D), HKRS1255-3-280F: "Tsang Keong Dental Clinic - ARB [Assessment Review Board] Material"
+  4. [Government Records Service (政府檔案處), online catalogue, HKRS1255-3-280D (17.12.1992 - 12.5.1993)](https://search.grs.gov.hk/en/arcview.xhtml?eid=ySF7vhL6r3xJ5B4LD8UzBw%3D%3D), HKRS1255-3-280D: "Tsang Keung Dental Practice"
+  5. [Hong Kong Legislative Council, Official Record of Proceedings, 4 Dec 1991, Q6 (Eric Li), answer of the Secretary for Home Affairs, p887](https://www.legco.gov.hk/yr91-92/english/lc_sitg/hansard/h911204.pdf), p887: "Since the inception of the Assessment Review Board, one case of appeal against the adequacy of Government's compensation offer has been heard at the request of a Walled City resident."
 
 ## Tse Choi Kwan
 
@@ -967,7 +2074,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 3/F, Flat 1, 31C Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 24:3:0 (3/F, Tse Choi Kwan Fur Workshop)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-167: "31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-167: "31c , TTT Rd [Tung Tau Tsuen Road], 3/F, Flat 1 (Tse Choi Kwan Fur Workshop)"
 
 ## Tse Hon Keung (謝漢強)
 
@@ -975,7 +2083,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 18:0:0 (G/F, Tse Hon Keung Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-549: "Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-549: "Rear Portion, G/F, Tung Tau Tsuen Road. Tse Hon Keung Dentistry (謝漢強牙科)"
 
 ## Tse Ma Ming
 
@@ -984,9 +2093,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: Rm. 2, 6/F, Block 3, 10A Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1990-1992
 - Rooms in the model (building:floor:unit): 4:6:4 (6/F, Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-535: "Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-535: "Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau Tsuen Road]. Tse Ma Ming"
 
-## Tsin Mu Lam
+## Tsin Mu Lam (錢茂林)
 
 <a id="tsin-mu-lam"></a>**doctor.** Tsin Mu Lam was a China-trained doctor. His father was a traditional herbal doctor in the City in the 1950s and 1960s. Tsin graduated from the Zhongsan Medical School in Guangzhou in 1961 and practised in China. During the Cultural Revolution, in 1969, he was sent down to the countryside near Dongguan for three years. He came back to Hong Kong in 1973. That year he opened his clinic on the second floor of 10 Tung Tau Tsuen Road (東頭村道). He lived there with his wife and son. He had no Commonwealth qualification, so he was unable to practise outside the City. He used both Chinese and Western medicine. He treated about 30 patients a day, mostly from outside the City. He charged $30 to $40, about a third less than doctors on the housing estates. He bought the clinic outright. He was in his 50s at the interview. For the demolition, more than 80 doctors and dentists elected him to a Government sub-committee. After a hard fight, each clinic was to get $340,000. His clinic closed in 1992.
 
@@ -994,9 +2104,38 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: His clinic, second floor of 10 Tung Tau Tsuen Road; also company doctor for a factory on Tsing Yi
 - In the City: 1973 to 1992 (clinic and home); his father practised in the City in the 1950s and 1960s
 - Rooms in the model (building:floor:unit): 4:2:3 (2/F, Tsin Mu Lam's clinic)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p184: "and worked and lived there with his wife and son until it was closed in 1992, during the third phase of the clearance."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p184: "I had to return here simply because I hadn't qualified in a Commonwealth country and was therefore unable to practise anywhere else."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p187: "The group elected me as their representative to serve on a Government-appointed sub-committee dealing with the future of doctors and dentists in the City."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 錢茂林 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p184: "and worked and lived there with his wife and son until it was closed in 1992, during the third phase of the clearance."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p184: "I had to return here simply because I hadn't qualified in a Commonwealth country and was therefore unable to practise anywhere else."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p187: "The group elected me as their representative to serve on a Government-appointed sub-committee dealing with the future of doctors and dentists in the City."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "錢茂林（Tsin Mu Lam） | 西醫"
+
+## Vivian Chan
+
+<a id="vivian-chan"></a>**girl, later doctor.** Vivian Chan lived in the Walled City. A US-based family physician in her 40s (2018); she spent more than 10 years in the City in her childhood and adolescence. Home: a 600 sq ft flat on the 10th floor of a cramped building. In 2018 she lived in a two-storey house with a small garage in America. She often came across junkies who slept under the stairs. As a primary-school child she was held at knifepoint for money by a young junkie; she burst into tears and he ran. Neighbours told her stories of who was beaten up, who took drugs and who was assaulted. She does not miss the place ('unhygienic, dirty and seedy') but says it had a unique culture. She went back once and found the park 'really clean and rejuvenating'. For her the Walled City is 'a distant unwelcomed memory'.
+
+- Home: a 600 sq ft flat on the 10th floor of a cramped building (address not given)
+- In the City: more than 10 years of her childhood and adolescence (lived)
+- Life details:
+  - A US-based family physician in her 40s (2018); she spent more than 10 years in the City in her childhood and adolescence. [1]
+  - Home: a 600 sq ft flat on the 10th floor of a cramped building. In 2018 she lived in a two-storey house with a small garage in America. [2]
+  - She often came across junkies who slept under the stairs. [3]
+  - As a primary-school child she was held at knifepoint for money by a young junkie; she burst into tears and he ran. [4]
+  - Neighbours told her stories of who was beaten up, who took drugs and who was assaulted. [5]
+  - She does not miss the place ('unhygienic, dirty and seedy') but says it had a unique culture. [6]
+  - She went back once and found the park 'really clean and rejuvenating'. [7]
+  - For her the Walled City is 'a distant unwelcomed memory'. [8]
+- Sources:
+  1. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "in her 40s, spent more than 10 years there during her childhood and adolescence"
+  2. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "now lives in a two-storey house with a small garage in America – a vastly different life from her time in a 600 sq ft flat on the 10th floor of a cramped building in the Walled City"
+  3. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Chan's words (as in the repo's SOURCE.md): "I often came across junkies who slept under the stairs and would do anything just to get money to buy drugs."
+  4. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Chan's words (as in SOURCE.md): "when I was still a primary school kid, a young junkie held me at knife point asking for money"
+  5. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Chan's words (as in SOURCE.md): "My neighbours would tell me a lot of their stories and anecdotes, about who was being beaten up, who was taking drugs and who was being sexually assaulted or raped."
+  6. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled), Chan's words (as in SOURCE.md): "Do I miss this place? I don't think so because it was really unhygienic, dirty and seedy. But I do admit that it had a unique culture that you won't find outside."
+  7. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "I was back once and I found that the park was really clean and rejuvenating."
+  8. [SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, '25 years on, Hong Kong's Kowloon Walled City still evokes awe and revulsion', 23 Mar 2018 (Wayback copy)](https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled): "Yet, for US-based doctor Vivian Chan, the Walled City is but a distant unwelcomed memory."
 
 ## Wang Ching
 
@@ -1004,8 +2143,56 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: a plastic factory (the source does not say where)
 - In the City: until 1992 (years not given)
-- Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“This is China, not Hong Kong. The British government has no power to move us,” said the 41-year-old proprietress of a plastic factory, Wang Ching"
-- Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "a small group of residents who refuse to leave, insisting on more money and invoking Britain’s 1898 treaty with China."
+- Sources:
+  1. Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "“This is China, not Hong Kong. The British government has no power to move us,” said the 41-year-old proprietress of a plastic factory, Wang Ching"
+  2. Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992, https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html): "a small group of residents who refuse to leave, insisting on more money and invoking Britain’s 1898 treaty with China."
+
+## Wilson
+
+<a id="wilson-wwc"></a>**City-born drug user.** Wilson lived in the Walled City. He was a lifelong companion of Wong Wai Chung, who came into the City from Tsim Sha Tsui to take drugs from 1971 or 1972. Wilson, Ah Xian and Wong all left school early and were poor. Wilson's father took drugs. Wong later met Wilson again at the church where he gave up drugs.
+
+- Home: in the City (no address given)
+- In the City: grew up in the City; a drug user in the 1970s (inferred) (lived)
+- Related: [Ah Xian](#ah-xian-wwc) (lifelong companion)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "He enjoyed the bustle and spent his time hanging out with his lifelong companions Wilson and Ah Xian. Their fates seemed intertwined: they all dropped out of school early, they were poor and their fathers were gamblers or drug addicts."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "The other guys, Ah Xian and Wilson, lived in the Walled City. Their fathers both took drugs"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p259: "At the church, I was also reunited with Wilson and Ah Xian."
+  4. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "my family did not live there but in the Tsim Sha Tsui area of Hong Kong"
+  5. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p258: "I began going into the Walled City dens to take drugs around 1971 or 1972."
+
+## Winson
+
+<a id="winson"></a>**gang fighter, later helper.** By about 1970 Winson lived in the Walled City. He was an opium addict and a leader in one of its triad gangs, and he controlled its fights with other gangs over turf. His gang leader, Goko, sent him to guard Jackie Pullinger's youth club. She did not want gang protection, but he came every night. At first he waited outside; then he began to pray with the club. After half an hour of prayer he came off opium and never went back. He stayed beside Pullinger and went with her on her mission work in the City.
+
+- Home: in the City (no address given)
+- Work: his triad gang; on his gang leader's order he guarded Jackie Pullinger's youth club every night
+- In the City: by about 1970 (lived)
+- Related: [Goko](#goko) (gang leader); [Jackie Pullinger (潘靈卓)](#jackie-pullinger) (guarded her youth club; later went with her on her mission); [阿賢](#ah-yin-hk01) (member of a rival gang)
+- Life details:
+  - By about 1970 he lived in the Walled City, was an opium addict and had risen to a leadership position in one of its triad gangs. [1]
+  - He controlled the fights between his gang and other gangs over turf. [2]
+  - His gang leader Goko sent him to guard Jackie Pullinger's place against vandalism; he came every night although she did not want protection. [3]
+  - After prayer in tongues for half an hour he came off opium and never went back; he still helps in the work. [4]
+  - A young man with a triad background and a drug habit. [5]
+  - His 大佬 sent him to stand guard outside Pullinger's youth club in the City; he was a triad enforcer (打手). [6]
+  - After that he stayed by Pullinger's side and went with her on her mission work in the City. [7]
+  - At first he only waited outside the youth club, then began to pray with them, and with Pullinger's help he gave up opium. [8]
+  - He and 阿賢 said the commonest illegal business in the City was heroin stalls: four bosses each ran ten stalls, each stall with two pipes. [9]
+  - By about 1970 he lived in the Walled City, was an opium addict, and led one of its triad gangs. [10]
+  - His gang leader Goko sent him to guard Jackie Pullinger's youth club after vandals broke in. [11]
+- Sources:
+  1. [Is there a God? (is-there-a-god.info), '“I still keep to Jesus this night”' (Winson), updated 13 Jun 2016](https://www.is-there-a-god.info/life/winson/), para 1: "I only know that by about 1970, he lived in Hong Kong’s walled city, was an opium addict"
+  2. [Is there a God? (is-there-a-god.info), Winson page](https://www.is-there-a-god.info/life/winson/), body: "Winson controlled the fights between his gang and other gangs competing for turf."
+  3. [Is there a God? (is-there-a-god.info), Winson page](https://www.is-there-a-god.info/life/winson/), body: "Jackie said she didn’t need or want gang protection, but he turned up every night anyway."
+  4. [Is there a God? (is-there-a-god.info), Winson page](https://www.is-there-a-god.info/life/winson/), body: "It lasted half an hour, and at the end of that time, Winson came off opium and never went back."
+  5. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body: "在潘靈卓正為前路猶疑時，認識了有黑社會背景、染有毒癮的年輕人Winson。"
+  6. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body: "當時Winson站在門外，表明是「大佬」吩咐他來看守青年會，又向潘靈卓說如果有任何人找她麻煩，他們都會「搞掂」，因為他是黑社會打手。"
+  7. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body: "對於Winson提出的「幫助」，潘靈卓決定拒絕，不過之後的日子，Winson都跟在她身邊，陪她在城寨傳教。"
+  8. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body: "耳濡目染下，Winson由一開始抗拒參與青年會活動，只在門外守候，到開始一同祈禱，最後更在潘靈卓幫助下戒掉吸食鴉片惡習。"
+  9. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body (after: Winson（左）及阿賢（右）亦分享指城寨內有很多不分勾當): "其中當多的是白粉檔，由4個老闆每人各掌管10檔，每檔有兩支煙槍。"
+  10. [is-there-a-god.info, 'I still keep to Jesus this night' (Winson's story, from Pullinger's Chasing the Dragon)](https://www.is-there-a-god.info/life/winson/), para 2: "I only know that by about 1970, he lived in Hong Kong's walled city, was an opium addict, and had risen to a leadership position in one of the walled city's notorious Triad gangs."
+  11. [is-there-a-god.info, Winson's story](https://www.is-there-a-god.info/life/winson/), youth club section: "Winson's gang leader, Goko, was impressed by Jackie's attempts to help the walled city residents, and the next night he sent Winson down to keep an eye on things and deter any further vandalism."
 
 ## Wong Chan Pui-wah (黃陳佩華)
 
@@ -1013,9 +2200,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: a garment factory (the source does not say where)
 - Rooms in the model (building:floor:unit): 185:0:1 (G/F, Salvation Army kindergarten door)
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "Many children went to school there. We played together and sang songs. It was very happy. It’s very different from the ones today."
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "We had to pay somebody to ‘steal’ electricity for us."
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "–Wong Chan Pui-wah, former garment-factory worker"
+- Sources:
+  1. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "Many children went to school there. We played together and sang songs. It was very happy. It’s very different from the ones today."
+  2. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "We had to pay somebody to ‘steal’ electricity for us."
+  3. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "–Wong Chan Pui-wah, former garment-factory worker"
 
 ## Wong Chun Wah (黃振華)
 
@@ -1024,7 +2212,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 4/F, Front Portion, 27 Lo Yan Street
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 109:4:2 (4/F, Wong Chun Wah Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-323: "4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-323: "4/F, Front Portion, 27 Lo Yau Street Wong Chun Wah Dentistry (黃振華牙科)"
 
 ## Wong Chun-ping (王鎮平)
 
@@ -1033,10 +2222,11 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: 8/F, 33 Lo Yan St.
 - Work: the family fishball business and noodle shop, G/F, 33 Lo Yan St.
 - In the City: 1972-1983 (WSJ fact box)
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Wong Yum-fai, Father; Wong Chun-ping, Son: The Fishball Makers"
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "When his children were old enough, they helped out with the family business."
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Wong Yum-fai, Father; Wong Chun-ping, Son: The Fishball Makers"
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "When his children were old enough, they helped out with the family business."
 
-## Wong Hoi Ming
+## Wong Hoi Ming (王海明)
 
 <a id="wong-hoi-ming"></a>**herbal doctor.** Wong Hoi Ming was born in 1920 in the Chiu Chow (潮州) region of Guangdong Province. He learned medicine and kung fu in Thailand and later studied under masters in Chiu Chow. In 1949 he fled to Hong Kong alone and left his wife and family in China. He practised medicine on Hong Kong Island. When his building there was demolished, he moved to the Walled City. He knew the City already because he taught martial arts there. He lived and saw patients in one small apartment with no sunlight. The rent was first $150 a month; later he bought the place. He treated rheumatism, fight injuries and back problems with heated cups, herbal poultices, massage and hot herbal medicines. He had no fixed fees. For a time he let people play mahjong at two tables in the room. He shared a bathroom outside, cooked his own food, and ate with a friend from upstairs. At the clearance he expected about $140,000 for the flat.
 
@@ -1044,9 +2234,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: the same apartment, where he saw patients (the book gives no address; GRS HKRS1255-3-195 gives 'G/F, 48 Tai Chang Street 7th Lane (Wong Hoi Ming Bonesetter)')
 - In the City: no years given: from his move from Hong Kong Island until the clearance
 - Rooms in the model (building:floor:unit): 104:0:0 (G/F, Wong Hoi Ming Bonesetter)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "I began practising on Hong Kong Island, but when the building I was living in was demolished I moved to the Walled City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "I've been in this apartment since I came to the Walled City. The rent here was originally just $150 per month"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "Most of my patients suffer from rheumatism, though I also treat people with fight injuries, back problems and numbness in the body."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 王海明 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "I began practising on Hong Kong Island, but when the building I was living in was demolished I moved to the Walled City."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "I've been in this apartment since I came to the Walled City. The rent here was originally just $150 per month"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p233: "Most of my patients suffer from rheumatism, though I also treat people with fight injuries, back problems and numbness in the body."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "王海明（Wong Hoi Ming） | 城寨拳師╱中醫"
 
 ## Wong Mei Yue (黃美如)
 
@@ -1055,8 +2249,19 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 21 Lung Shing Road
 - In the City: named in a clearance file dated 1991-1992
 - Rooms in the model (building:floor:unit): 115:0:3 (G/F, 黃美如牙科)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-374: "G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)"
-- Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "黃美如牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-374: "G/F, 21 Lung Shing Road, KWC [Kowloon Walled City] - Wong Mei yue Dentistry (黃美如牙科)"
+  2. Roger Price, photo 'Kowloon Walled City in 1991 (2350913856)', Wikimedia Commons, https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8_-_Kowloon_Walled_City_in_1991_(2350913856).jpg: "黃美如牙科"
+
+## Wong Wai Chung's wife
+
+<a id="wong-wai-chung-wife"></a>**resident, water carrier.** Wong Wai Chung's wife grew up in the Walled City. She did not take drugs. She lived on the 10th floor of a building with no lift, and every day she carried water up the 10 storeys. She later married Wong Wai Chung, a former addict who later worked as a volunteer at Jackie Pullinger's St Stephen's Society.
+
+- Home: a flat on the 10th floor of a building with no lift
+- In the City: she grew up in the City (years not given) (lived)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview: Wong Wai Chung, p260: "My wife also grew up in the Walled City, but hers is a different story."
+  2. City of Darkness Revisited (2014), interview: Wong Wai Chung, p260: "She lived on the 10th floor of some building that had no elevator. Every day, she had to carry water up those 10 storeys."
 
 ## Wong Wai Kuen (王偉權)
 
@@ -1065,9 +2270,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 30-31 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 40:0:0 (G/F, Wong Wai Kuen Dentistry)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-154: "G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-154: "G/F, 30-31, Tung Tau Chuen [Tsuen] Road - Wong Wai Kuen Dentistry (王偉權牙科)"
 
-## Wong Yu Ming
+## Wong Yu Ming (黃如明)
 
 <a id="wong-yu-ming"></a>**dentist.** Wong Yu Ming was born in 1930. He studied medicine in China. He learnt dentistry and herbal medicine from his father, a dentist, and by his own study. The Communist Party said that he had bad thoughts. Thus he left Chiu Chow (潮州) for Hong Kong in the late 1950s. He came alone, and his wife and children followed. After a few months he rented premises on Lung Shing Road (龍城路) and opened a dental clinic. He bought the premises a year later. He extracted teeth, did fillings and made false teeth. He often made dentures under contract for registered dentists outside the City. Once he had three employees, but by the interview they had left. His wife, Cheung Mei, learnt the trade from him and was his dental assistant. He worked and lived in the clinic 24 hours a day. His seven children lived with their mother in her flat elsewhere. He felt lonely.
 
@@ -1075,9 +2281,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his dental clinic on Lung Shing Road, from the late 1950s
 - In the City: lived and worked in his clinic on Lung Shing Road from the late 1950s; 'nearly 30 years' at the interview (about 1989)
 - Rooms in the model (building:floor:unit): 140:0:0 (G/F, Wong Yu Ming's dental surgery (Cheung Mei in the shop))
-- City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p35: "opening his dental clinic on Lung Shing Road within a few months of his arrival."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "After a few months in Hong Kong, I moved to the Walled City and rented these premises, which I bought a year later."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "I work and live here 24 hours a day."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 黃如明 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p35: "opening his dental clinic on Lung Shing Road within a few months of his arrival."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "After a few months in Hong Kong, I moved to the Walled City and rented these premises, which I bought a year later."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p35: "I work and live here 24 hours a day."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "黃如明（ Wong Yu Ming） | 牙醫"
 
 ## Wong Yuen Heung (黃源香)
 
@@ -1086,7 +2296,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 37 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1992
 - Rooms in the model (building:floor:unit): 38:0:2 (G/F, 黃源香)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-190: "37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-190: "37, TTT Rd [Tung Tau Tsuen Road], G/F (黃源香 Wong Yuen Heung )"
 
 ## Wong Yum-fai (王欽輝)
 
@@ -1095,16 +2306,18 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: 8/F, 33 Lo Yan St.
 - Work: noodle shop, G/F, 33 Lo Yan St.; he also supplied fishballs and fishcakes to wholesale markets
 - In the City: 1972-1983 (WSJ fact box); the WSJ video says 30 years
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Wong Yum-fai supplied fishballs and fishcakes to wholesale markets. He was eventually able to open a noodle shop below his apartment unit."
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "8/F, 33 Lo Yan St. (home); G/F, 33 Lo Yan St. (shop)"
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Lore had it that 80% of Hong Kong’s fishballs — the territory’s ultimate gourmet delicacy — were produced inside the Walled City."
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Wong Yum-fai supplied fishballs and fishcakes to wholesale markets. He was eventually able to open a noodle shop below his apartment unit."
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "8/F, 33 Lo Yan St. (home); G/F, 33 Lo Yan St. (shop)"
+  3. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "Lore had it that 80% of Hong Kong’s fishballs — the territory’s ultimate gourmet delicacy — were produced inside the Walled City."
 
 ## Yan Wing Tak (甄榮德)
 
 <a id="yan-wing-tak"></a>**dentist.** Yan Wing Tak (甄榮德) was a dentist in the Walled City. The Government Records Service (政府檔案處) keeps a clearance file, HKRS1255-3-125, dated 1989-1992, that names this person. Its catalogue entry reads: “2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)”. The catalogue gives no other facts about this person's life.
 
 - In the City: named in a clearance file dated 1989-1992
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-125: "2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-125: "2/F, Lung Chun Building, 2 Last Lane, Lung Chun Road - Yan Wing Tak Dentistry (甄榮德牙科)"
 
 ## Yau Ka Sut (邱家瑟)
 
@@ -1113,9 +2326,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 24A Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 32:0:3 (G/F, 西醫邱家瑟)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-302: "G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-302: "G/F, Luen Hing Bldg, Stage 1, 24A, TTT Rd [Tung Tau Tsuen Road]., Yau Ka Sut Medical Clinic 西醫邱家瑟"
 
-## Yau Lap Cheong
+## Yau Lap Cheong (邱立昌)
 
 <a id="yau-lap-cheong"></a>**retired shopkeeper.** Yau Lap Cheong came from Chiu Yeung, in China, in 1928, at the age of 20. He lived near and in the Walled City from then until 1990. He first worked as a foreman in a clothing factory. Then a friend handed him a business that sold cigarettes to gamblers. He took over a store and rented its space of about 70 square feet for $6 a month. His brothers joined him. The street had a dance hall, gambling dens and opium dens. The store was open 24 hours a day and used gaslights. His younger brother gambled and sold heroin for a time. Yau quit the store five or six years before the interview of about 1990. He then lived alone in a one-room flat with no windows. He rarely went out and listened to Cantonese opera on the radio. He also owned a fifth-floor flat that paid him $1000 a month in rent. He moved out in 1990, in the first phase of the clearance.
 
@@ -1123,9 +2337,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: a rented store of about 70 sq ft in the City (street not named), until about 1984; earlier a foreman in a clothing factory
 - In the City: near and in the City from 1928 to 1990
 - Rooms in the model (building:floor:unit): 218:6:1 (6/F, Yau Lap Cheong's one-room flat)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p23: "Yau Lap Cheong lived near and in the Walled City continuously from 1928"
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p23: "I rented the space – which was about 70 square feet – for $6 a month."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p24: "I still own a flat on the fifth floor too, and that pays me $1000 in rent each month."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 邱立昌 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p23: "Yau Lap Cheong lived near and in the Walled City continuously from 1928"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p23: "I rented the space – which was about 70 square feet – for $6 a month."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p24: "I still own a flat on the fifth floor too, and that pays me $1000 in rent each month."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "邱立昌（Yau Lap Cheong） | 退休士多老闆"
 
 ## Yeung Lai-wan (楊麗雲)
 
@@ -1134,11 +2352,12 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: 2/F, Sai Shing Rd. (Chinese fact box: 西城路2号2楼); 3/F, 60 Lung Chun Rd.; 4/F, Lung Chun Rd. (Chinese fact box: 龙津路富兴楼4楼)
 - Work: a wooden dim sum cart outside the Walled City
 - In the City: 1959-1981
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "A mother of nine, Yeung Lai-wan became a hawker when her husband lost his job as a chef following the 1973 stock-market crash."
-- WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "The family moved away after their home’s poor air quality affected Mrs. Yeung’s health."
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "I saw a heroin addict dig out a cat’s eye. He ate it like a longan fruit and swallowed it."
+- Sources:
+  1. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "A mother of nine, Yeung Lai-wan became a hawker when her husband lost his job as a chef following the 1973 stock-market crash."
+  2. WSJ 2014, People chapter, https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people: "The family moved away after their home’s poor air quality affected Mrs. Yeung’s health."
+  3. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "I saw a heroin addict dig out a cat’s eye. He ate it like a longan fruit and swallowed it."
 
-## Yim Kwok Yuen
+## Yim Kwok Yuen (嚴國源)
 
 <a id="yim-kwok-yuen"></a>**roast-meat maker.** Yim Kwok Yuen was a farmer in Guangdong Province. From 1971 he tried almost every year to sneak into Hong Kong. He arrived in 1978, at the age of 35. He trained for some months in a roast-food shop. Then he worked in his uncle's roasting shop in the Walled City. When his younger brother arrived three years later, he started his own roast-meat business. The book dates his cooked-meat factory on Lo Yan Street (老人街) to 1981. In the interview he said that he rented the workshop three years earlier. He and his brother ran the rented, unlicensed workshop and roasted pork, chicken and goose. He started work at 4 a.m. every day. He sold the meat as an unlicensed hawker in Wong Tai Sin (黃大仙) market. At first he shared a 200-square-foot room in the City with seven other single men. Later he bought two flats in one building in the City. He lived in one with his brother and uncle and rented out the other.
 
@@ -1146,9 +2365,13 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: a rented, unlicensed roast-meat workshop on Lo Yan Street (老人街); he sold the meat in Wong Tai Sin (黃大仙) market
 - In the City: from 1978 or soon after (his uncle's roasting shop in the City); his own factory from 1981; until the clearance
 - Rooms in the model (building:floor:unit): 169:1:0 (1/F, Yim Kwok Yuen's cooked-meat workshop); 181:0:0 (G/F, Kwok Kee Roasted Meat)
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "Yim Kwok Yuen (above) opened his cooked meat factory on Lo Yan Street in 1981, a few years after his arrival in Hong Kong."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "After several months' apprenticeship, I went to work in my uncle's roasting shop in the Walled City."
-- City of Darkness Revisited (Girard and Lambot, 2014), interview, p289: "My brother, my uncle and I live together in one flat. The other flat is rented out at $800 a month."
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 嚴國源 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "Yim Kwok Yuen (above) opened his cooked meat factory on Lo Yan Street in 1981, a few years after his arrival in Hong Kong."
+  2. City of Darkness Revisited (Girard and Lambot, 2014), interview, p286: "After several months' apprenticeship, I went to work in my uncle's roasting shop in the Walled City."
+  3. City of Darkness Revisited (Girard and Lambot, 2014), interview, p289: "My brother, my uncle and I live together in one flat. The other flat is rented out at $800 a month."
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "嚴國源（Yim Kwok Yuen） | 燒臘工場老闆"
 
 ## Yip Tak-wai (葉德偉)
 
@@ -1157,9 +2380,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: a 400 sq ft flat inside the City (no address given)
 - Work: an office in Central (中環), outside the City, in 1987
 - In the City: from 1976 (flat bought; SCMP 2013) to the clearance (HK01)
-- SCMP, 'Kowloon City: from den of evil to lush gardens', 4 Jan 2013, https://web.archive.org/web/20200803125015id_/https://www.scmp.com/news/hong-kong/article/1119265/kowloon-city-den-evil-lush-gardens: "He bought a 400 sq ft flat inside the walled city in 1976 for HK$30,000"
-- HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "葉德偉正在中環辦公室工作，從收音機聽到消息，大吃一驚"
-- WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "Even though it seemed like the Walled City was an ungoverned place, it was actually a self-governing community."
+- Sources:
+  1. SCMP, 'Kowloon City: from den of evil to lush gardens', 4 Jan 2013, https://web.archive.org/web/20200803125015id_/https://www.scmp.com/news/hong-kong/article/1119265/kowloon-city-den-evil-lush-gardens: "He bought a 400 sq ft flat inside the walled city in 1976 for HK$30,000"
+  2. HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "葉德偉正在中環辦公室工作，從收音機聽到消息，大吃一驚"
+  3. WSJ 2014, Explore (life) chapter, https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life: "Even though it seemed like the Walled City was an ungoverned place, it was actually a self-governing community."
 
 ## Yip Wa Man (葉華民)
 
@@ -1168,9 +2392,10 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F of C/L (cockloft), 8 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1989-1992
 - Rooms in the model (building:floor:unit): 2:0:1 (G/F, King's Dental Lab + Yip Wa Man Dentist)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-554: "G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-554: "G/F of C/L, 8, TTT Rd. [Tung Tau Tsuen Road], (King's Dental Lab + Yip Wa Man Dentist) 健齒牙科+葉華民牙科"
 
-## Yu Hing Wan
+## Yu Hing Wan (余慶雲)
 
 <a id="yu-hing-wan"></a>**muslin maker.** Yu Hing Wan made muslin in the City. Muslin was once a major industry there, before synthetic materials came. At 86 he was still at work, and he was the last muslin maker in the City. Like most factory owners in the City, he chose his site on Lung Chun Road (龍津道) for its cheap rent. He needed space for large machinery and for stored cloth. He felt that outside the City the business was not viable, and that there he was not able to own a factory. He lived in the City for 18 years. He came from the Hakka community of Guangdong province. Thus he was in a minority among the mainly Chiu Chow (潮州) population of the City. His factory was neat and clean. But after long years of hard work, the noise of the old machines and the lack of ventilation hurt him most. The photographs show him at a large machine and with long rolls of white cloth.
 
@@ -1178,9 +2403,57 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: His muslin factory on Lung Chun Road (龍津道)
 - In the City: 18 years, as "a long-term resident"; the caption gives no dates
 - Rooms in the model (building:floor:unit): 174:0:0 (G/F, Yu Hing Wan's muslin factory)
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Still working at 86, Yu Hing Wan was the last of the City's muslin makers"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Yu Hing Wan chose his location on Lung Chun Road for its cheap rent"
-- City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "A long-term resident of 18 years, Yu was originally from the Hakka community of Guangdong province"
+- Life details:
+  - The table of contents of the Chinese edition of the book (黑暗之城──九龍城寨的日與夜, 中華書局) prints the Chinese name 余慶雲 beside the English name. [4]
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Still working at 86, Yu Hing Wan was the last of the City's muslin makers"
+  2. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "Yu Hing Wan chose his location on Lung Chun Road for its cheap rent"
+  3. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p311: "A long-term resident of 18 years, Yu was originally from the Hakka community of Guangdong province"
+  4. [中華書局 (Chung Hwa Book Co., Hong Kong), book page of 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)](https://www.chunghwabook.com.hk/book/detail/id/1239925267914383362/), 目錄: "余慶雲（Yu Hing Wan） | 布廠老闆"
+
+## Yu Kwok Fai
+
+<a id="yu-kwok-fai"></a>**machine repairer.** Yu Kwok Fai was a machine repairer in the Walled City. He worked in a small workshop. Like many of the City's workers, he kept a bird in his workshop. Metal-working factories were a large part of the City's 700 or so industrial premises.
+
+- Work: his small machine-repair workshop
+- In the City: the late years of the City (the book's photos are of about 1987-1992) (worked)
+- Sources:
+  1. City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p256: "Machine repairer Yu Kwok Fai (below) was one of the many workers who kept a bird in his small workshop."
+
+## 何生
+
+<a id="ho-sang-sai-tau"></a>**boy of Sai Tau.** 何生 lived in the Walled City. As a child he lived in Sai Tau Tsuen in the City, where tall buildings pressed tight against each other. In Sai Tau Tsuen you could still see the sky. Vice was far from him; the lanes crossed like a spider's web and you had to know the way. There was not enough water: residents sank their own wells ('scientific wells') and pumped groundwater. In the 1960s water rationing, everyone queued at the street tap in front of the village. In the evenings he and friends played badminton and football around today's Nga Tsin Long Road. He says firmly that the City was 'of course not a good place to live'. The first owner of 林記, 林生, was his elder sister's husband; the present owners call him 'uncle' (舅父). He started helping at 林記 in his teens: 'I am the first generation, I helped from start to end.' When 林記 was a street stall on Nga Tsin Long Road they slept on canvas cots by the goods for fear of heroin addicts stealing. In 1972 'the family' got public housing and moved to Mei Tung Estate. He was 75 in 2022 and still sat at the shop door greeting customers.
+
+- Home: Sai Tau Tsuen (西頭村)
+- Work: from his teens, 林記臘味家 (preserved meats), first a street stall on Nga Tsin Long Road (衙前塱道), outside the City
+- In the City: his childhood in the 1960s; the family moved to Mei Tung Estate (美東邨) in 1972 (lived)
+- Life details:
+  - As a child he lived in Sai Tau Tsuen in the City, where tall buildings pressed tight against each other. [1]
+  - In Sai Tau Tsuen you could still see the sky. [2]
+  - Vice was far from him; the lanes crossed like a spider's web and you had to know the way. [3]
+  - There was not enough water: residents sank their own wells ('scientific wells') and pumped groundwater. [4]
+  - In the 1960s water rationing, everyone queued at the street tap in front of the village. [5]
+  - In the evenings he and friends played badminton and football around today's Nga Tsin Long Road. [6]
+  - He says firmly that the City was 'of course not a good place to live'. [7]
+  - The first owner of 林記, 林生, was his elder sister's husband; the present owners call him 'uncle' (舅父). [8]
+  - He started helping at 林記 in his teens: 'I am the first generation, I helped from start to end.' [9]
+  - When 林記 was a street stall on Nga Tsin Long Road they slept on canvas cots by the goods for fear of heroin addicts stealing. [10]
+  - In 1972 'the family' got public housing and moved to Mei Tung Estate. [11]
+  - He was 75 in 2022 and still sat at the shop door greeting customers. [12]
+  - (inferred) Ming Pao Weekly places Sai Tau Tsuen in the City (城寨的西頭村). A 2023 Phoenix TV text puts it south of the City (see 陳慎芝). Thus his home was in the City or just outside it. [1]
+- Sources:
+  1. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "何生兒時就住在城寨的西頭村，一幢又一幢密匝匝的大樓互相緊貼。"
+  2. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "那裏並非如傳說中不見天日，住在西頭村還能看到天空。"
+  3. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "黃賭毒離他很遠，城寨就是他生活的一片天，「啲路左右交錯，要識行先得㗎，好似蜘蛛網。」"
+  4. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "城寨水源不足，居民只能靠自己，「城寨冇水，自己打科學井，探條喉落去打水，抽地下水。」"
+  5. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "他悠悠說起六十年代制水的日子，「嗰時條村前面有條街喉，制水那陣子，大家都在排隊。」"
+  6. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "地方狹窄，他和朋友晚上愛到如今的衙前塱道一帶耍樂，和三五知己打羽毛球，到球場踢波，一樂也。"
+  7. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "如今的城外人，或許對城寨的生活很好奇，不過何生堅決地指，那裏「當然唔好住」。"
+  8. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "第一代老闆林生是何生的姐夫，如今屬第二代的事頭和事頭婆都喚何生「舅父」。"
+  9. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "十多歲的何生就開始幫忙打點，「我是第一代，由頭幫到尾。」"
+  10. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "林記一家還在衙前塱道擺地攤時，他們總要格外留神，「那時城寨還在，會喺度（街上）瞓覺，怕白粉佬偷嘢」，「要用帆布蓋住啲貨，瞓帆布牀」。"
+  11. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "及至七二年，一家終於輪候到公屋，遂搬到美東邨。"
+  12. [明周文化 (Ming Pao Weekly), 盧乙彬 and 周耀恩, 23 Aug 2022, 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E4%B9%9D%E9%BE%8D%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E9%87%8D%E5%BB%BA-%E6%9E%97%E8%A8%98%E8%87%98%E5%91%B3%E5%AE%B6-210095), body: "林記七十五歲的老臣子何生卻總愛坐在門口，招呼客人。"
 
 ## 姚正明
 
@@ -1188,7 +2461,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: G/F, 37 Sai Shing Road
 - In the City: named in a clearance file dated 1988-1991
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-226: "37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-226: "37, SS [Sai Shing] Road,G/F d C/K (姚正明-皮草加工 Fur Coat Manufacturer)"
 
 ## 廖理
 
@@ -1197,7 +2471,23 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 3/F, Flat A, 19 Sz Kung Street
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 192:3:2 (3/F, 廖理)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-94: "19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-94: "19, SK [Sz Kung] Street, 3/F, Flat A (Proprietor: 廖理) [Subcontractor for Drilling]"
+
+## 張祖鷺
+
+<a id="cnec-pastor-2"></a>**CNEC pastor.** 張祖鷺 lived and worked in the Walled City. He served in the City for CNEC in the early years; his family and Liu's family both lived in the City. With 劉知三 he decided to turn the school into an Old People's Centre, because the City had more than 600 old people.
+
+- Home: in the City with his family (no address given)
+- Work: the CNEC (中華傳道會) work in the City: the Yamen (恩光園), the school and the Old People's Centre (opened 1979)
+- In the City: CNEC's early years in the City (years not given); his family lived in the City (both)
+- Related: [Reverend Isaac Liu (劉知三)](#isaac-liu) (fellow CNEC pastor)
+- Life details:
+  - He served in the City for CNEC in the early years; his family and Liu's family both lived in the City. [1]
+  - With 劉知三 he decided to turn the school into an Old People's Centre, because the City had more than 600 old people. [2]
+- Sources:
+  1. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 恩光園: "早年除了劉知三牧師，中華傳道會還有張祖鷺牧師參與城寨的服侍，兩位牧師一家都在城寨居住。"
+  2. [CNEC (中華傳道會), 鄞穎翹, 城寨中的恩光](https://www.cnec.org.hk/message_article/article/a4/), section on 老人中心: "當年兩位牧師得知城寨住了六百多位長者，由於城寨樓宇非常密集，長者家中有窗也不能打開，室內長期不見天日，而恩光園是城寨唯一沒建高樓的地方，兩位牧師便決定將學校改為老人中心，為長者提供理想的休憩場所。"
 
 ## 曾紀尉
 
@@ -1206,7 +2496,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 8/F, 27 Sai Shing Road
 - In the City: named in a clearance file dated 1988-1990
 - Rooms in the model (building:floor:unit): 91:8:3 (8/F, 曾紀尉 (首飾)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-229: "27, Sai Shing Road, 8/F 曾紀尉 (首飾)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-229: "27, Sai Shing Road, 8/F 曾紀尉 (首飾)"
 
 ## 李就
 
@@ -1215,7 +2506,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: G/F, 2B Sai Shing Road
 - In the City: named in a clearance file dated 1988-1990
 - Rooms in the model (building:floor:unit): 167:0:0 (G/F, 錶殼蝕刻)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-140: "2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-140: "2B, Sai Shing Road, G/F, Tai Hing House (錶殼蝕刻) - 李就"
 
 ## 李漢明
 
@@ -1223,7 +2515,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: Flat 7, 1/F, 31B Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1990
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
 
 ## 李靜瑜
 
@@ -1232,7 +2525,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 2/F, Flat A, Rear Portion, 26 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1992
 - Rooms in the model (building:floor:unit): 34:2:0 (2/F, 李靜瑜醫務所(中醫)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-160: "26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-160: "26, TTT Rd. [Tung Tau Tsuen Road], 2/F, Flat A, Rear Portion (李靜瑜醫務所(中醫))"
 
 ## 林惠珠
 
@@ -1241,7 +2535,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, 39 Sai Shing Road
 - In the City: named in a clearance file dated 1988-1990
 - Rooms in the model (building:floor:unit): 13:1:1 (1/F, 潮州點心)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-194: "39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-194: "39, SS Rd [Sai Shing Road], 1/F (林惠珠-潮州點心 Chiu Chow Dim Sum)"
 
 ## 林羅平
 
@@ -1251,9 +2546,85 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: his brother's rented ground-floor fishball workshop; from 1983 his own wholesale shop near the outer street (明周文化, 13 Jun 2024, places it on Kwong Ming Street (光明街))
 - In the City: worked in the City from his Primary 3 years; own shop from 1983 to the clearance; lived outside in Lok Fu (HK01 2024)
 - Rooms in the model (building:floor:unit): 66:0:0 (G/F, 林羅平's fishball workshop (德興魚蛋公司) on Kwong Ming Street)
-- HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "「平哥」林羅平早年並非住在九龍城寨，他年少時隨父母及哥哥由潮州來香港，定居在樂富。"
-- HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」"
-- HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電"
+- Life details:
+  - In June 2026 he was 67 and said that he had made fishballs from the age of 15, for more than half a century. [4]
+  - He works in the shop 364 days a year and rests only on the first day of the Lunar New Year (大年初一). [5]
+  - He uses eel (黃鱔) and 滑仔魚 for the fishballs, and a fish-paste machine (啤魚肉機) more than 50 years old. [6]
+  - The machine that he still uses to make fishballs is the one that he moved out of the City. [7]
+  - (inferred) If the machine is the same one, it was in his workshop in the City in December 1986. [7]
+  - (inferred) He was born in about 1959 (67 in June 2026); that fits HK01's age of 24 in 1983. [4]
+  - English-language sources call him Uncle Ping, Lam Lo-ping or Lam Law-ping, owner of Tak Hing (德興) fishballs; the business began as a wholesale factory deep inside the City. [8]
+  - He wakes at 5 a.m. every day to prepare fish glue (a mixture of ice and fish paste). [9]
+  - He told this source that he started as a teenager by helping at a street stall (HK01 says it was his brother's rented workshop in the City). [10]
+  - When the City was demolished many street vendors moved to the Mainland, but he stayed in Hong Kong. [11]
+  - (inferred) If he kept the same hours in 1986, he started work at about 5 a.m. [9]
+  - His wife (林太太) has complained about his long hours. [12]
+  - He came from Chiu Chow (潮州) in his teens with his parents and elder brother, lived around Lok Fu (樂富), and in the 1980s opened a fishball workshop in the City. [13]
+  - He was just over 20 when he opened, renting a shop with HK$6,000 of capital, thanks to the City's 'three no-cares' status. [14]
+  - His workshop was on Kwong Ming Street (光明街), which had several fishball workshops and also pig-blood, plastic-flower and garment workshops. [15]
+  - Shop rent plus water and electricity came to under HK$2,000 a month. [16]
+  - Many workshops were family workshops with no money for hired hands; all the staff were family members. [17]
+  - Police patrolled the City's main streets two or three times every day. [18]
+  - He felt the City was very peaceful and saw no triad bullying. [19]
+  - Neighbours greeted each other all day long. [20]
+  - After the clearance he joined his elder brother, also a fishball-workshop owner, and moved to Fuk Lo Tsun Road (福佬村道), Kowloon City. [21]
+  - Today he runs 德興魚蛋公司 with his wife May姐 on Fuk Lo Tsun Road. [22]
+- Sources:
+  1. HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "「平哥」林羅平早年並非住在九龍城寨，他年少時隨父母及哥哥由潮州來香港，定居在樂富。"
+  2. HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」"
+  3. HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024, https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html): "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電"
+  4. [weekendhk (新假期), 香港系列之細間始終你好｜67歲老闆一年開364日！阮兆祥體驗手打魚蛋嚇到大叫, 20 Jun 2026](https://www.weekendhk.com/entertainment/%e9%a6%99%e6%b8%af%e7%b3%bb%e5%88%97%e4%b9%8b%e7%b4%b0%e9%96%93%e5%a7%8b%e7%b5%82%e4%bd%a0%e5%a5%bd-%e9%98%ae%e5%85%86%e7%a5%a5-%e6%9e%97%e7%be%85%e5%b9%b3-3450482/), para 2: "節目中，現年67歲的老闆林羅平分享他由15歲起做魚蛋，至今超過半世紀。"
+  5. [weekendhk (新假期), 香港系列之細間始終你好, 20 Jun 2026](https://www.weekendhk.com/entertainment/%e9%a6%99%e6%b8%af%e7%b3%bb%e5%88%97%e4%b9%8b%e7%b4%b0%e9%96%93%e5%a7%8b%e7%b5%82%e4%bd%a0%e5%a5%bd-%e9%98%ae%e5%85%86%e7%a5%a5-%e6%9e%97%e7%be%85%e5%b9%b3-3450482/), para 3: "一年365日，他竟然有364日都在店內埋首工作，只有大年初一才肯休息一天。"
+  6. [weekendhk (新假期), 香港系列之細間始終你好, 20 Jun 2026](https://www.weekendhk.com/entertainment/%e9%a6%99%e6%b8%af%e7%b3%bb%e5%88%97%e4%b9%8b%e7%b4%b0%e9%96%93%e5%a7%8b%e7%b5%82%e4%bd%a0%e5%a5%bd-%e9%98%ae%e5%85%86%e7%a5%a5-%e6%9e%97%e7%be%85%e5%b9%b3-3450482/), para 2: "他堅持選用黃鱔及滑仔魚，並動用一部超過50年歷史的「啤魚肉機」。"
+  7. [大公報, 王亞毛, 深度遊九龍城 細嘗「寨城風味」, 15 Jan 2025](https://www.tkww.hk/epaper/view/newsDetail/1879240195543535616.html), 德興魚蛋 section: "老闆林師傅從小在寨城內摸爬滾打，就連當年從寨城內搬出來製作魚蛋的機器，都沿用至今"
+  8. [Pearl Club (formerly Tipsiti), 'Tak Hing Fish Ball Company'](https://www.pearlclub.com/cities/hong-kong/lunch/tak-hing-fish-ball-company), listing text: "What began as a wholesale factory deep inside the Kowloon Walled City"
+  9. [i-Discover Asia, Kowloon City walk, 'Tak Hing Fishballs'](https://walks.i-discoverasia.com/walks/kowloon-city/locations/tak-hing-fishballs), location text: "I wake up at 5am every day to prepare fish glue (a mixture of ice and fish paste),"
+  10. [i-Discover Asia, Kowloon City walk, 'Tak Hing Fishballs'](https://walks.i-discoverasia.com/walks/kowloon-city/locations/tak-hing-fishballs), location text: "I started helping out in a street stall when I was a teenager."
+  11. [i-Discover Asia, Kowloon City walk, 'Tak Hing Fishballs'](https://walks.i-discoverasia.com/walks/kowloon-city/locations/tak-hing-fishballs), location text: "When the walled city was demolished, many street vendors relocated to Mainland, but Uncle Ping decided to stay"
+  12. [weekendhk (新假期), 香港系列之細間始終你好, 20 Jun 2026](https://www.weekendhk.com/entertainment/%e9%a6%99%e6%b8%af%e7%b3%bb%e5%88%97%e4%b9%8b%e7%b4%b0%e9%96%93%e5%a7%8b%e7%b5%82%e4%bd%a0%e5%a5%bd-%e9%98%ae%e5%85%86%e7%a5%a5-%e6%9e%97%e7%be%85%e5%b9%b3-3450482/), para 3: "如此忘我的投入，連林太太也曾忍不住投訴。"
+  13. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "他十多歲跟隨父母和哥哥從潮州來港，住在樂富一帶，八十年代在九龍城寨開設魚蛋工場。"
+  14. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "剛開店時，平哥只有二十歲出頭，拿着六千元就夠膽出去租舖，這要多得城寨的「三不管」政策。"
+  15. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "店舖所在的「光明街」有好幾間魚蛋工場，除此之外還有豬紅、黐膠花和製衣工場等等。"
+  16. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "每月舖租和水電費合共不足二千元。"
+  17. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "很多工場都是家庭式作坊，沒錢請夥計，店員全是家庭成員。"
+  18. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "他們每天都會在城寨的主要街道巡邏兩、三次。"
+  19. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "我們當年在城寨好太平，進去後也不覺得有黑社會來『蝦蝦霸霸』。"
+  20. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "街坊街里還成天打招呼，好融洽的。"
+  21. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "決定與同樣做魚蛋工場的哥哥一起合作，在城寨清拆後搬到九龍城福佬村道。"
+  22. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "平哥與太太May姐一起經營「德興魚蛋公司」，店舖已在九龍城福佬村道屹立三十二年。"
+
+## 林羅平's elder brother
+
+<a id="ping-brother-fishball"></a>**fishball-workshop owner.** 林羅平's elder brother worked in the Walled City. He had learned to make fishballs from age 9; when his younger brother 平哥 was in Primary 3, he and their mother rented a small ground-floor shop in the City and opened a fishball workshop, selling to markets and restaurants in other districts. There were no machines: they scraped the flesh off each fish by hand; 平哥 helped after school every day. Other fishball factories in the City waited for 平哥 and his brother to raise prices before raising their own. After the clearance he and 平哥 joined forces and moved to Fuk Lo Tsun Road (福佬村道).
+
+- Work: a small rented ground-floor fishball workshop in the City; it sold to markets and restaurants in other districts
+- In the City: from the late 1960s (inferred) to the clearance (worked)
+- Related: [林羅平](#fishball-wholesaler-hk01) (younger brother); [林羅平's mother](#ping-mother-fishball) (mother)
+- Life details:
+  - He had learned to make fishballs from age 9; when his younger brother 平哥 was in Primary 3, he and their mother rented a small ground-floor shop in the City and opened a fishball workshop, selling to markets and restaurants in other districts. [1]
+  - There were no machines: they scraped the flesh off each fish by hand; 平哥 helped after school every day. [2]
+  - Other fishball factories in the City waited for 平哥 and his brother to raise prices before raising their own. [3]
+  - After the clearance he and 平哥 joined forces and moved to Fuk Lo Tsun Road (福佬村道). [4]
+- Sources:
+  1. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "平哥小學三年級時，因為自9歲起開始學打魚蛋的兄長與媽媽商量，在城寨租下一個小小的地舖，開設打魚蛋工場，再轉售到其他區的街市或食肆。"
+  2. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "當年平哥每天放學後會到舖內幫忙，那時候沒有機器輔助，他們要逐條逐條魚，用人手把魚肉刮下來備用。"
+  3. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "城寨內其他魚蛋工廠也會待平哥和其兄長加價後，才跟着加價。"
+  4. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "決定與同樣做魚蛋工場的哥哥一起合作，在城寨清拆後搬到九龍城福佬村道。"
+
+## 林羅平's mother
+
+<a id="ping-mother-fishball"></a>**fishball-workshop co-founder.** 林羅平's mother worked in the Walled City. With her elder son she rented a small ground-floor shop in the City and opened a fishball workshop. The family came from Chiu Chow (潮州) and lived around Lok Fu.
+
+- Home: Lok Fu (樂富), outside the City
+- Work: the family fishball workshop in the City
+- In the City: from the late 1960s (inferred) (worked)
+- Related: [林羅平's elder brother](#ping-brother-fishball) (elder son); [林羅平](#fishball-wholesaler-hk01) (younger son)
+- Life details:
+  - With her elder son she rented a small ground-floor shop in the City and opened a fishball workshop. [1]
+  - The family came from Chiu Chow (潮州) and lived around Lok Fu. [2]
+- Sources:
+  1. [香港01 (HK01), 20 Jul 2024, 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落](https://www.hk01.com/社區專題/1033066/九龍城寨-德興魚蛋老闆城寨起家躍升行業龍頭-見證山寨工場沒落), body: "平哥小學三年級時，因為自9歲起開始學打魚蛋的兄長與媽媽商量，在城寨租下一個小小的地舖，開設打魚蛋工場，再轉售到其他區的街市或食肆。"
+  2. [明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶](https://www.mpweekly.com/culture/%E7%A4%BE%E6%9C%83/%E9%BB%91%E6%9A%97%E4%B9%8B%E5%9F%8E-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E5%9F%8E%E5%AF%A8%E5%B1%85%E6%B0%91-239629), 平哥 section: "他十多歲跟隨父母和哥哥從潮州來港，住在樂富一帶，八十年代在九龍城寨開設魚蛋工場。"
 
 ## 羅釗林
 
@@ -1262,7 +2633,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 4/F, Front Portion, 32 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 20:4:1 (4/F, 羅釗林)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-181: "4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-181: "4/F, Front Portcon, 32, TTT Rd [Tung Tau Tsuen Road] 羅釗林"
 
 ## 芬姐
 
@@ -1271,9 +2643,30 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: inside the City (no location given)
 - Work: her family's store (士多) in the City (no location given)
 - In the City: from her childhood; inside on 14 Jan 1987; moved out at the clearance (HK01)
-- HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "芬姐自少居於城寨，這裡亦是她的情人邂逅之地，然後在城寨落地生根"
-- HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "說媽媽要去擔水，自己獨個兒在城寨士多「看舖」，吸引不少年青人來光顧，生意額因而上升"
-- HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "芬姐當時則正準備過節，人在寨內髮廊電髮，從剛步入髮廊的客人口中得知被圍城"
+- Sources:
+  1. HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "芬姐自少居於城寨，這裡亦是她的情人邂逅之地，然後在城寨落地生根"
+  2. HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016, https://www.hk01.com/article/39195: "說媽媽要去擔水，自己獨個兒在城寨士多「看舖」，吸引不少年青人來光顧，生意額因而上升"
+  3. HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016, https://www.hk01.com/article/39597: "芬姐當時則正準備過節，人在寨內髮廊電髮，從剛步入髮廊的客人口中得知被圍城"
+
+## 莊澄
+
+<a id="chong-ching"></a>**boy, later film producer.** 莊澄 lived in the Walled City. He lived in the City as a small child, with his family. He lived there almost four years and left at age 7. Grown-ups stopped him from going to many places because of the vice dens, so the family went mostly to the main street and the stores (士多). His strongest memory is the building structure: a roof could suddenly appear in front of you. If you knew the way you could cross from roof to roof and be very hard to catch. He lived there with his family as a child and later advised the film's set builders.
+
+- In the City: almost four years of his childhood, until he was 7 (lived)
+- Life details:
+  - He lived in the City as a small child, with his family. [1]
+  - He lived there almost four years and left at age 7. [2]
+  - Grown-ups stopped him from going to many places because of the vice dens, so the family went mostly to the main street and the stores (士多). [3]
+  - His strongest memory is the building structure: a roof could suddenly appear in front of you. [4]
+  - If you knew the way you could cross from roof to roof and be very hard to catch. [5]
+  - He lived there with his family as a child and later advised the film's set builders. [6]
+- Sources:
+  1. [明周娛樂 (Ming Pao Weekly), 文嘉龍, 24 Mar 2023, 電影翻生 莊澄3億開拍《九龍城寨》「古仔可以鎮得住個場」](https://www.mpweekly.com/entertainment/article/%E9%9B%BB%E5%BD%B1%E7%BF%BB%E7%94%9F-3%E5%84%84%E9%96%8B%E6%8B%8D%E3%80%8A%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8B%E8%8E%8A%E6%BE%84%E3%80%8C%E5%8F%A4%E4%BB%94%E5%8F%AF%E4%BB%A5%E9%8E%AE%E5%BE%97), interview: "「三不管」之地，莊澄最有親身體驗，他小時候正正就住在九龍城寨"
+  2. [明周娛樂 (Ming Pao Weekly), 文嘉龍, 24 Mar 2023, 電影翻生 莊澄3億開拍《九龍城寨》「古仔可以鎮得住個場」](https://www.mpweekly.com/entertainment/article/%E9%9B%BB%E5%BD%B1%E7%BF%BB%E7%94%9F-3%E5%84%84%E9%96%8B%E6%8B%8D%E3%80%8A%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8B%E8%8E%8A%E6%BE%84%E3%80%8C%E5%8F%A4%E4%BB%94%E5%8F%AF%E4%BB%A5%E9%8E%AE%E5%BE%97), interview: "我住到7歲先走，住咗差不多四年"
+  3. [明周娛樂 (Ming Pao Weekly), 文嘉龍, 24 Mar 2023, 電影翻生 莊澄3億開拍《九龍城寨》「古仔可以鎮得住個場」](https://www.mpweekly.com/entertainment/article/%E9%9B%BB%E5%BD%B1%E7%BF%BB%E7%94%9F-3%E5%84%84%E9%96%8B%E6%8B%8D%E3%80%8A%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8B%E8%8E%8A%E6%BE%84%E3%80%8C%E5%8F%A4%E4%BB%94%E5%8F%AF%E4%BB%A5%E9%8E%AE%E5%BE%97), interview: "去好多地方都俾人喝停，嗰啲黄賭毒竇口，所以我哋來來去去都係去大街、士多。"
+  4. [明周娛樂 (Ming Pao Weekly), 文嘉龍, 24 Mar 2023, 電影翻生 莊澄3億開拍《九龍城寨》「古仔可以鎮得住個場」](https://www.mpweekly.com/entertainment/article/%E9%9B%BB%E5%BD%B1%E7%BF%BB%E7%94%9F-3%E5%84%84%E9%96%8B%E6%8B%8D%E3%80%8A%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8B%E8%8E%8A%E6%BE%84%E3%80%8C%E5%8F%A4%E4%BB%94%E5%8F%AF%E4%BB%A5%E9%8E%AE%E5%BE%97), interview: "感覺最強烈係建築結構，突然之間可能有個天台"
+  5. [明周娛樂 (Ming Pao Weekly), 文嘉龍, 24 Mar 2023, 電影翻生 莊澄3億開拍《九龍城寨》「古仔可以鎮得住個場」](https://www.mpweekly.com/entertainment/article/%E9%9B%BB%E5%BD%B1%E7%BF%BB%E7%94%9F-3%E5%84%84%E9%96%8B%E6%8B%8D%E3%80%8A%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8B%E8%8E%8A%E6%BE%84%E3%80%8C%E5%8F%A4%E4%BB%94%E5%8F%AF%E4%BB%A5%E9%8E%AE%E5%BE%97), interview: "如果你識路，可以飛簷走壁捐來捐去，好難捉到你㗎！"
+  6. [大公文匯網, 7 May 2024, 《九龍城寨之圍城》背後故事：清拆30年後 仍有人懷念城寨](https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html), body: "監製之一莊澄童年跟家人曾住過城寨，為搭景提供不少寶貴意見。"
 
 ## 莊裕宏
 
@@ -1282,7 +2675,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 7/F, 114 Lung Chun Road
 - In the City: named in a clearance file dated 1988-1990
 - Rooms in the model (building:floor:unit): 244:7:2 (7/F, 莊裕宏狗房)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-66: "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-66: "114, LC Rd [Lung Chun Road], 7/F (莊裕宏狗房)"
 
 ## 鄭炎創
 
@@ -1291,7 +2685,74 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 4/F, Flat E, 24 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1990
 - Rooms in the model (building:floor:unit): 32:4:3 (4/F, 鄭炎創)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-307: "24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-307: "24, TTT Rd [Tung Tau Tsuen Road]., 4/F, Flat E, Luen Hing Bldg, Stage 1, Garment Workshop 鄭炎創"
+
+## 阿平
+
+<a id="toy-factory-summer-boy"></a>**summer factory boy.** 阿平 worked in the summers in the Walled City. Every summer from Primary 4 to the summer of Form 1 he went into the City to work for his aunt (伯娘), who ran a plastic factory moulding toys. He entered the City from Tung Tau Tsuen Road through a very narrow lane, Kwong Ming Street (光明街). He went in each time with his elder sister, winding through the City to the factory. The buildings were nearly all connected: the stair to the factory also led into the next building's lobby. His first impression was noise: the moulding machines never stopped and he had to cover his ears. The moulding was downstairs; he worked upstairs tearing gun cases and parts of plastic dolls and toy guns from the moulds (搣水口). Each summer there were four or five wire fires (燒電線); at the shout everyone ran out to the Tung Tau Tsuen Road entrance. He spent four summers in the factory. In 1979 the factory moved from the City to Huizhou (惠州), and he never went back.
+
+- Work: upstairs in his aunt's plastic-toy factory, tearing parts from the moulds (搣水口)
+- In the City: four summers in the 1970s, from Primary 4 to the summer of Form 1; the factory left in 1979 (worked (summers))
+- Related: [阿平's aunt (伯娘)](#toy-factory-aunt) (aunt (伯娘)); [阿平's elder brother](#kaifong-school-pupil) (elder brother)
+- Life details:
+  - Every summer from Primary 4 to the summer of Form 1 he went into the City to work for his aunt (伯娘), who ran a plastic factory moulding toys. [1]
+  - He entered the City from Tung Tau Tsuen Road through a very narrow lane, Kwong Ming Street (光明街). [2]
+  - He went in each time with his elder sister, winding through the City to the factory. [3]
+  - The buildings were nearly all connected: the stair to the factory also led into the next building's lobby. [4]
+  - His first impression was noise: the moulding machines never stopped and he had to cover his ears. [5]
+  - The moulding was downstairs; he worked upstairs tearing gun cases and parts of plastic dolls and toy guns from the moulds (搣水口). [6]
+  - Each summer there were four or five wire fires (燒電線); at the shout everyone ran out to the Tung Tau Tsuen Road entrance. [7]
+  - He spent four summers in the factory. [8]
+  - In 1979 the factory moved from the City to Huizhou (惠州), and he never went back. [9]
+- Sources:
+  1. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "我伯娘在城寨開塑膠廠啤玩具，我小學四年級開始，直到中一暑假，每年都入城寨幫伯娘做暑期工。"
+  2. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "在東頭村道的城寨入口，有一條很窄的巷子叫「光明街」，「光明街是我入寨的必經之路。」"
+  3. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "他每次都跟着家姐在城寨轉轉轉，變魔術一樣就去到伯娘的工廠。"
+  4. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "「好得意㗎，城寨的大廈幾乎全部互通。行樓梯去伯娘間廠，條樓梯又會通到去隔離大廈的 Lobby，瓹（音捐）來瓹去，四通八達。」"
+  5. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "阿平對此印象極深，「對城寨的第一感覺不是污糟，而是噪音，啤機聲好嘈好嘈，從不間斷，我一定要掩住耳仔。」"
+  6. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "伯娘的塑膠廠設在樓下專門啤玩具，他返暑期工則在樓上負責「搣水口」，「啤膠公仔、膠槍等，要把槍殻、零件自膠模中撕出來，就叫搣水口。」"
+  7. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "阿平最記得一個暑期工下來，總會發生四、五次「燒電線」事件，「一聽到有人大嗌燒電線呀，我們就立刻走火警，全部人跑去東頭村道那個入口位迴避。」"
+  8. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "阿平在城寨伯娘的啤膠廠裏，度過了四年的暑假。"
+  9. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "1979 年伯娘的工廠從城寨遷往惠州，他從此亦再沒踏足城寨，告別了那條最黑暗又最光明的街道回憶。"
+
+## 阿平's aunt (伯娘)
+
+<a id="toy-factory-aunt"></a>**plastic-toy factory owner.** 阿平's aunt (伯娘) worked in the Walled City. She ran a plastic factory in the City that moulded toys, and her nephew 阿平 worked there every summer. The moulding machines were downstairs; finishing (tearing parts from the moulds) was done upstairs; products included plastic dolls and toy guns. In 1979 she moved the factory from the City to Huizhou (惠州).
+
+- Work: a plastic-toy moulding factory (啤膠廠): the moulding machines downstairs, the finishing upstairs; reached from the Tung Tau Tsuen Road (東頭村道) entrance through Kwong Ming Street (光明街)
+- In the City: the 1970s, until 1979 (worked)
+- Related: [阿平](#toy-factory-summer-boy) (nephew)
+- Life details:
+  - She ran a plastic factory in the City that moulded toys, and her nephew 阿平 worked there every summer. [1]
+  - The moulding machines were downstairs; finishing (tearing parts from the moulds) was done upstairs; products included plastic dolls and toy guns. [2]
+  - In 1979 she moved the factory from the City to Huizhou (惠州). [3]
+- Sources:
+  1. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "我伯娘在城寨開塑膠廠啤玩具，我小學四年級開始，直到中一暑假，每年都入城寨幫伯娘做暑期工。"
+  2. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "伯娘的塑膠廠設在樓下專門啤玩具，他返暑期工則在樓上負責「搣水口」，「啤膠公仔、膠槍等，要把槍殻、零件自膠模中撕出來，就叫搣水口。」"
+  3. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "1979 年伯娘的工廠從城寨遷往惠州，他從此亦再沒踏足城寨，告別了那條最黑暗又最光明的街道回憶。"
+
+## 阿平's elder brother
+
+<a id="kaifong-school-pupil"></a>**kaifong-school pupil.** 阿平's elder brother went to school in the Walled City. Their father, a strong patriot, moved him from an outside school into a primary school in the City; he thought the City's schoolboys were better behaved, all with shaved heads. A group of pupils from Wang Tau Hom and Tung Tau Tsuen walked into the City for school; he studied there only one year before his mother took him out. The school was strongly patriotic but weak academically; with the secondary-entrance exam coming, his mother moved him. The school was 城寨坊眾學校; pupils wore white shirts and blue shorts. Patriots from the mainland founded it; the teachers had taught on the mainland and had no Hong Kong teaching licence. The school closed in 1979; some teachers tried for years to get severance pay.
+
+- Work: a pupil of the 城寨坊眾學校, a primary school in the City
+- In the City: one school year, before 1979 (studied)
+- Related: [阿平](#toy-factory-summer-boy) (younger brother)
+- Life details:
+  - Their father, a strong patriot, moved him from an outside school into a primary school in the City; he thought the City's schoolboys were better behaved, all with shaved heads. [1]
+  - A group of pupils from Wang Tau Hom and Tung Tau Tsuen walked into the City for school; he studied there only one year before his mother took him out. [2]
+  - The school was strongly patriotic but weak academically; with the secondary-entrance exam coming, his mother moved him. [3]
+  - The school was 城寨坊眾學校; pupils wore white shirts and blue shorts. [4]
+  - Patriots from the mainland founded it; the teachers had taught on the mainland and had no Hong Kong teaching licence. [5]
+  - The school closed in 1979; some teachers tried for years to get severance pay. [6]
+- Sources:
+  1. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "當年父親特別安排其兄長轉校，由外面「衝進去」城寨念小學。"
+  2. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "他說，當年有一批住橫頭磡、東頭村的學生，會走入城寨的學校念書；不過他哥哥只念了一年，就被媽媽橫手「拯救」出來。"
+  3. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "學校愛國思想一流，但學術水平不行，哥哥又要考升中試，媽媽怕他炒車，便把他救出來轉校。"
+  4. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "他記起了城寨裏有一家小學，叫做「城寨坊眾學校」，學生穿白恤衫藍短褲。"
+  5. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "那間學校是當年大陸來港的愛國份子成立，老師在大陸教書，來港後沒教師牌。"
+  6. [Yahoo新聞 (Yahoo News HK), 鄭美姿, 3 Jun 2024, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工](https://hk.news.yahoo.com/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%B0%8F%E5%AD%B8%E6%9C%89%E4%BA%BA%E6%9C%AA%E9%81%BA%E5%BF%98-%E5%9F%8E%E5%A4%96%E4%BA%BA%E5%88%86%E4%BA%AB%E8%A1%9D%E9%80%B2%E5%8E%BB%E5%9B%9E%E6%86%B6%EF%BC%9A%E7%B4%B0%E7%B4%B0%E5%80%8B%E5%85%A5%E5%8E%BB%E5%81%9A%E6%9A%91%E6%9C%9F%E5%B7%A5%EF%BD%9Cyahoo-044830368.html), body: "網上亦有資料顯示，該校於 1979 年結業，有老師幾年來追討遣散費未果。"
 
 ## 阿榮
 
@@ -1299,9 +2760,42 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Home: 西頭村第一街; the same article puts his door on 成龍街
 - In the City: from his birth (his parents came in the early 1950s) to the age of 20
-- HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "阿榮甫出生就住在西頭村第一街，廿歲才搬離城寨"
-- HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "貧困之下只能住在全港租金最便宜的九龍城寨中"
-- HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "就在他成龍街的家門前，整條後巷踎滿「道友」，有人光明正大地擺檔賣白粉"
+- Sources:
+  1. HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "阿榮甫出生就住在西頭村第一街，廿歲才搬離城寨"
+  2. HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "貧困之下只能住在全港租金最便宜的九龍城寨中"
+  3. HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016, https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html): "就在他成龍街的家門前，整條後巷踎滿「道友」，有人光明正大地擺檔賣白粉"
+
+## 阿賢
+
+<a id="ah-yin-hk01"></a>**boy lookout, gang member.** 阿賢 worked in the Walled City. At about age 10 he earned HK$10 a day setting out rows of glass bottles on the rooftops at the edge of the City and throwing them at any policeman who stepped in. He belonged to a gang that was the rival of Winson's. He joined a gang in the City; after he followed Pullinger's faith he went straight.
+
+- Work: at about age 10, HK$10 a day to set out glass bottles on the rooftops at the edge of the City and throw them at the police
+- In the City: from about age 10 (years not given) (worked)
+- Related: [Winson](#winson) (member of a rival gang); [Jackie Pullinger (潘靈卓)](#jackie-pullinger) (he followed her faith)
+- Life details:
+  - At about age 10 he earned HK$10 a day setting out rows of glass bottles on the rooftops at the edge of the City and throwing them at any policeman who stepped in. [1]
+  - He belonged to a gang that was the rival of Winson's. [2]
+  - He joined a gang in the City; after he followed Pullinger's faith he went straight. [3]
+  - (inferred) He is possibly the Ah Xian of City of Darkness Revisited (p258), a friend of Wong Wai Chung: both were City gang youths whom Jackie Pullinger helped. No source joins the two. [1]
+- Sources:
+  1. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body and photo caption: "只有10歲左右的阿賢，當年收取10元一日的報酬，在城寨外圍天台上放好一排又一排玻璃樽，每當看見警察一隻腳踏入城寨，便從高空朝他們投擲玻璃樽，後來嚇得「敢死隊」也不敢進入城寨。"
+  2. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body and photo caption: "與他有類似遭遇的阿賢，跟Winson是敵對幫派。"
+  3. [香港01 (HK01), 吳美松, 20 Jul 2024, 九龍城寨︱港「德蘭修女」潘靈卓憶孤身闖城寨救江湖中人戒毒信教](https://www.hk01.com/社區專題/1033063/九龍城寨-港-德蘭修女-潘靈卓憶孤身闖城寨救江湖中人戒毒信教), body and photo caption: "阿賢（左）當年在城寨加入黑幫，跟隨潘靈卓信教後，重回正軌。"
+
+## 陳先生
+
+<a id="chan-sin-sang-high-rise"></a>**high-rise resident.** 陳先生 lived in the Walled City. He and his parents lived in a high-rise on the outer edge of the City: more than ten storeys and no lift. Because there was no lift the rent was especially cheap, but water cost an extra HK$50 a month; the water meters in the City were said to be run by a private contractor. To save climbing the stairs, he phoned home before each trip back to ask what food or daily goods to buy.
+
+- Home: a high-rise of more than ten storeys, with no lift, on the outer edge of the City (城寨外圍), with his parents
+- In the City: years not given (he was over 60 in 2024) (lived)
+- Life details:
+  - He and his parents lived in a high-rise on the outer edge of the City: more than ten storeys and no lift. [1]
+  - Because there was no lift the rent was especially cheap, but water cost an extra HK$50 a month; the water meters in the City were said to be run by a private contractor. [2]
+  - To save climbing the stairs, he phoned home before each trip back to ask what food or daily goods to buy. [3]
+- Sources:
+  1. [香港文匯報 (Wen Wei Po), 朱慧怡, 7 Oct 2024, 市民旅客看城寨電影場景](https://www.wenweipo.com/a/202410/07/AP6703ee26e4b0379ce1054821.html), body: "年過花甲的市民陳先生表示，看到城寨電影中的場景令他不禁產生歷史回憶，因為他和父母都曾住在城寨外圍的高樓中，「樓有十多層高，但卻無電梯。"
+  2. [香港文匯報 (Wen Wei Po), 朱慧怡, 7 Oct 2024, 市民旅客看城寨電影場景](https://www.wenweipo.com/a/202410/07/AP6703ee26e4b0379ce1054821.html), body: "但就是因為沒有電梯，房租特別便宜，惟水費每月另外需要交50元，據說是城寨內的水錶是由私人承包。」"
+  3. [香港文匯報 (Wen Wei Po), 朱慧怡, 7 Oct 2024, 市民旅客看城寨電影場景](https://www.wenweipo.com/a/202410/07/AP6703ee26e4b0379ce1054821.html), body: "為了盡可能節省上下樓的力氣，「每次回家前都會打電話給家人，看看還有什麼食品或日用品東西需要購置。」"
 
 ## 陳廷乾
 
@@ -1309,7 +2803,31 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 263:5:0 (5/F, Lo Mei Workshop)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+
+## 陳慎芝
+
+<a id="chan-shan-chi"></a>**drug-stall boss.** 陳慎芝 worked in the Walled City. Inside the City there were hundreds of men divided among triad societies (字頭); each shed (棚) was a unit, and he ran the first row as its 棚主. A boss (話事人) then also paid him HK$30 a day to patrol and keep order; he did it in 1972, 1973 and 1974. He ran the drug side of the vice trade: selling, and letting people smoke on the spot; customers came from every class and place. Even the rats in the drug dens were addicted. The City was low-lying and flooded whenever it rained; the stalls should have moved up to the back lanes of Sa Po Road (沙埔道), but word could not spread fast enough, so they went on selling from a plastic tray floating on the water. He was later jailed for wounding someone and reformed through gospel drug rehabilitation. A 2023 Phoenix TV text says that he became addicted, then kept watch (巡場) at a drug stall in Sai Tau Tsuen (西頭村), south of the City.
+
+- Work: 棚主 (boss) of a 'first-row' drug stall (粉檔) in the City; also a paid patrolman (巡場) at HK$30 a day
+- In the City: 1972-1974 (his years as a patrolman) (worked)
+- Life details:
+  - Inside the City there were hundreds of men divided among triad societies (字頭); each shed (棚) was a unit, and he ran the first row as its 棚主. [1]
+  - A boss (話事人) then also paid him HK$30 a day to patrol and keep order; he did it in 1972, 1973 and 1974. [2]
+  - He ran the drug side of the vice trade: selling, and letting people smoke on the spot; customers came from every class and place. [3]
+  - Even the rats in the drug dens were addicted. [4]
+  - The City was low-lying and flooded whenever it rained; the stalls should have moved up to the back lanes of Sa Po Road (沙埔道), but word could not spread fast enough, so they went on selling from a plastic tray floating on the water. [5]
+  - He was later jailed for wounding someone and reformed through gospel drug rehabilitation. [6]
+  - A 2023 Phoenix TV text says that he became addicted, then kept watch (巡場) at a drug stall in Sai Tau Tsuen (西頭村), south of the City. [7]
+- Sources:
+  1. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "城寨是這樣的，你一進去有幾百人在入面，分開各個字頭，每個棚有個單位，我是第一排，代表那裡做棚主。"
+  2. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "後來有位話事人叫我兼任巡場維持秩序，30元一日，做了72、73、74三年。"
+  3. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "寨內生活充滿黃賭毒，而華哥當年主理毒一門，既作販賣，也開放讓人吸食，而幫襯的人也來自五湖四海各個階層都有。"
+  4. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "我見到一隻大老鼠，不怕人的周圍走，個鼻嗡嗡下，我說開機拍，牠癮起。"
+  5. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "九龍城寨是低窪地帶，一下雨便水浸，理應要搬上沙埔道的後巷賣，但通訊不發達未能及時通報，索性用個膠盤浮在水中繼續賣。"
+  6. [香港01 (HK01), 許育民, 19 Jan 2025, 陳慎芝專訪｜見證九龍城寨人間地獄 「狗同老鼠都有毒癮」](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1095152/%E9%99%B3%E6%85%8E%E8%8A%9D%E5%B0%88%E8%A8%AA-%E8%A6%8B%E8%AD%89%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%BA%BA%E9%96%93%E5%9C%B0%E7%8D%84-%E7%8B%97%E5%90%8C%E8%80%81%E9%BC%A0%E9%83%BD%E6%9C%89%E6%AF%92%E7%99%AE), interview: "後來因傷人入獄，透過福音戒毒痛改前非"
+  7. [Phoenix TV (鳳凰衛視), via ifeng.com, 1 Sep 2023, 《最后的城池——香港九龙城寨历史记忆》](https://news.ifeng.com/c/8SjFo883Qbp), section on 陈慎芝: "一次，他不小心染上了毒瘾，之后还在九龙城寨南边的西头村毒档做起了巡场。"
 
 ## 陳鎮波
 
@@ -1317,7 +2835,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - In the City: named in a clearance file dated 1992
 - Rooms in the model (building:floor:unit): 263:5:0 (5/F, Lo Mei Workshop)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-340: "Flat 2, 5/F, 5 Lung Chun 1st Lane (陳廷乾, 陳鎮波) Lo Mei Workshop"
 
 ## 黃照垣
 
@@ -1326,7 +2845,8 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Work: 1/F, 30 Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1991
 - Rooms in the model (building:floor:unit): 43:1:0 (1/F, 黃照垣中醫)
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-164: "30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-164: "30 , TTT Rd [Tung Tau Tsuen Road]. 1/F (黃照垣中醫)"
 
 ## 黃錫榮
 
@@ -1334,4 +2854,17 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: Flat 7, 1/F, 31B Tung Tau Tsuen Road
 - In the City: named in a clearance file dated 1988-1990
-- Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+- Sources:
+  1. Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files), HKRS1255-3-240: "31B Tung Tau Tsuen Road, 李漢明, 黃錫榮, Workshop - Student Lunch Boxes"
+
+## Leads
+
+The sources name these people, but they do not yet show that the people lived or worked in the City, or the quote did not pass the check.
+
+- Law Oi Chu, Tsang Kam Kwan, Cheung Mei, Mr Yung, Cheung Yat Fan, Chan Sup, Peter Chan: City of Darkness (1993) names them, but only an unofficial online copy was found; they are not in the 2014 edition. Check a library copy of the 1993 book.
+- Van Wing Tak (a boy of nine) and Can Hai Yuen (a grocer for 40 years): Open Library search snippets of a 1992 book name them, but the snippets did not pass the check and the OCR of the names is uncertain.
+- Dr James W. Turpin and Frank Hooper (Project Concern clinic, 1960s): Breslin (1963) shows the clinic manned two mornings a week: they visited, they did not work in the City every day.
+- Yim Chiu-tong, the plumber of the hand-painted plumbing adverts: China Daily (4 Dec 2024) says that he moved into the City in the early 1970s; the PDF did not load, thus the quote is not checked.
+- The prostitute Ming-yan and the boss of an order shop (Breslin, 1963): Their roles in the City are not clear from the text.
+- Chan Nam-fat, Lee Hung-kee and nine other developers named in a 1972 police report: They built in the City, but no source shows that they lived or worked there every day.
+- Doctor Hui, founder of the Chiu Chow music group (data/room_research.json A22): The source does not show where he lived or worked.

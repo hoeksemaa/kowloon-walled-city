@@ -16,6 +16,7 @@ const placeOf = new Map(uses.places.map((p) => [p.id, p]));
 const problems = [];
 const ids = new Set();
 const CJK = /[㐀-鿿]/;
+const LOW = ['lived', 'worked', 'both', 'studied', 'worked (summers)'];
 for (const p of data.people) {
   const at = `${p.id || '?'}`;
   if (!p.id || ids.has(p.id)) problems.push(`${at}: missing or repeated id`);
@@ -25,8 +26,19 @@ for (const p of data.people) {
   if (!p.short || p.short.split(/\s+/).length > 4) problems.push(`${at}: short must be 1-4 words`);
   if (!p.story || p.story.split(/\s+/).length < 30) problems.push(`${at}: story too short`);
   if (!p.sources?.length || p.sources.some((s) => !s.source || !s.quote)) problems.push(`${at}: each source needs source and quote`);
+  if (p.sources?.some((s) => s.url != null && !/^https?:\/\//.test(s.url))) problems.push(`${at}: a source url must start with http`);
   for (const f of p.linked_facts || []) if (!facts.has(f)) problems.push(`${at}: linked fact ${f} is not in data/room_research.json`);
+  if (p.lived_or_worked != null && !LOW.includes(p.lived_or_worked)) problems.push(`${at}: lived_or_worked must be one of ${LOW.join(', ')}`);
+  if (p.pseudonym != null && typeof p.pseudonym !== 'boolean') problems.push(`${at}: pseudonym must be true or false`);
+  for (const d of p.details || []) {
+    if (!d.text || !Number.isInteger(d.src) || d.src < 0 || d.src >= (p.sources?.length || 0)) problems.push(`${at}: a detail needs text and the index of one of its sources`);
+  }
 }
+const allIds = new Set(data.people.map((p) => p.id));
+for (const p of data.people) {
+  for (const r of p.related || []) if (!r.how || !allIds.has(r.id) || r.id === p.id) problems.push(`${p.id}: related ${r.id} is not another person`);
+}
+for (const l of data.leads || []) if (!l.who || !l.why) problems.push('each lead needs who and why');
 if (problems.length) {
   console.log(`${problems.length} problems:\n  ${problems.join('\n  ')}`);
   process.exit(1);
@@ -54,6 +66,8 @@ const named = (p) => `${p.name}${p.nameZh && !p.name.includes(p.nameZh) ? ` (${p
 const in86 = (v) => (v === true ? 'yes' : v === false ? 'no' : 'not known');
 
 const people = [...data.people].sort((a, b) => a.name.localeCompare(b.name));
+const byId = new Map(data.people.map((p) => [p.id, p]));
+const count = (f) => people.filter(f).length;
 const lines = [
   '# People of Kowloon Walled City',
   '',
@@ -61,8 +75,9 @@ const lines = [
   '',
   `${data.about}`,
   '',
-  `${people.length} people. In the City in December 1986, as their sources show: ${people.filter((p) => p.in_dec_1986 === true).length};`
-    + ` not then: ${people.filter((p) => p.in_dec_1986 === false).length}; not known: ${people.filter((p) => p.in_dec_1986 == null).length}.`,
+  `${people.length} people. In the City in December 1986, as their sources show: ${count((p) => p.in_dec_1986 === true)};`
+    + ` not then: ${count((p) => p.in_dec_1986 === false)}; not known: ${count((p) => p.in_dec_1986 == null)}.`
+    + ` Life details from the sources: ${people.reduce((n, p) => n + (p.details?.length || 0), 0)}.`,
   '',
   '| Person | Who | In the City | Dec 1986 | Rooms in the model |',
   '| --- | --- | --- | --- | --- |',
@@ -73,10 +88,22 @@ for (const p of people) {
   lines.push(`## ${named(p)}`, '', `<a id="${p.id}"></a>**${esc(p.short)}.** ${p.story}`, '');
   if (p.home) lines.push(`- Home: ${p.home}`);
   if (p.work) lines.push(`- Work: ${p.work}`);
-  if (p.lived) lines.push(`- In the City: ${p.lived}`);
+  if (p.lived) lines.push(`- In the City: ${p.lived}${p.lived_or_worked ? ` (${p.lived_or_worked})` : ''}`);
+  if (p.pseudonym) lines.push('- The name is a pseudonym that the source gives.');
+  if (p.related?.length) lines.push(`- Related: ${p.related.map((r) => `[${esc(named(byId.get(r.id)))}](#${r.id}) (${esc(r.how)})`).join('; ')}`);
   const rooms = roomsOf(p);
   if (rooms.length) lines.push(`- Rooms in the model (building:floor:unit): ${rooms.join('; ')}`);
-  for (const s of p.sources) lines.push(`- ${s.source}${s.cite ? `, ${s.cite}` : ''}: "${s.quote}"`);
+  if (p.details?.length) {
+    lines.push('- Life details:');
+    for (const d of p.details) lines.push(`  - ${d.inferred ? '(inferred) ' : ''}${d.text} [${d.src + 1}]`);
+  }
+  lines.push('- Sources:');
+  p.sources.forEach((s, i) => lines.push(`  ${i + 1}. ${s.url ? `[${s.source}](${s.url})` : s.source}${s.cite ? `, ${s.cite}` : ''}: "${s.quote}"`));
+  lines.push('');
+}
+if (data.leads?.length) {
+  lines.push('## Leads', '', 'The sources name these people, but they do not yet show that the people lived or worked in the City, or the quote did not pass the check.', '');
+  for (const l of data.leads) lines.push(`- ${l.who}: ${l.why}`);
   lines.push('');
 }
 writeFileSync(root + 'docs/people.md', lines.join('\n'));
