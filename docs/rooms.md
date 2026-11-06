@@ -127,33 +127,36 @@ these places can be from 1987-1992 and not from 1986.
 
 ## Counts
 
-- Units: 8926. Verified 476, likely 132, guess 8318.
-- Documented places in the period: 752 (458 GRS premises and 294 places from the other sources). 698 have a unit; 54 have none.
-- Placed documented places: verified 476, likely 132, guess 90.
-- 3 places share a unit with another place, because no free unit was near.
+- Units: 8928. Verified 389, likely 132, guess 8407.
+- Documented places in the period: 752 (458 GRS premises and 294 places from the other sources). 701 have a unit; 51 have none.
+- Placed documented places: verified 479, likely 132, guess 90.
+- Verified places by step: route map 357 (with "between" and "beyond"), the old house-number order 63 (Lung Chun Rd 1-70, Sz Kung St and others that the route map does not cover), street only 48 (mostly numbered lanes), clue 3, the 1992 map 1, a part of the Tai Hing flat 7.
+- 83 places share a unit with another place: their building has fewer units on that floor than the premises there, and no building on the same street within 12 m has a free unit.
 
 ## Distribution check
 
 | Measure | Sources | Labels |
 | --- | --- | --- |
-| Homes, share of all units | about 92% (8,800 households, LegCo Jan 1987) | 92% (8,172 of 8,926) |
-| Homes, number | 8,800 | 8,172 (the model has 277 buildings; the sources say about 350) |
-| Non-home units | 745 (Kai Fong 1983) to about 790 (Suenn Ho 1991-92) | 754 |
-| Factories | 332 (Kai Fong 1983) | 390 (322 documented, 68 guesses) |
-| Factories on G/F | about two thirds of the GRS factories | 245 of 390 (63%) |
-| Factories on a top floor or a roof | almost none | 2 on top floors, 0 on roofs |
+| Homes, share of all units | about 92% (8,800 households, LegCo Jan 1987) | 92% (8,218 of 8,928) |
+| Homes, number | 8,800 | 8,218 (the model has 277 buildings; the sources say about 350) |
+| Non-home units | 745 (Kai Fong 1983) to about 790 (Suenn Ho 1991-92) | 710 |
+| Factories | 332 (Kai Fong 1983) | 363 (280 documented, 83 guesses) |
+| Factories on G/F | about two thirds of the GRS factories; Suenn Ho's levels give about 54% of all non-home units on G/F | 199 of 363 (55%): 59% of the documented, 40% of the guesses |
+| Factories on a top floor or a roof | almost none | 4 on top floors, 0 on roofs |
 
 Non-home units by level, against Suenn Ho's drawing (p139, about ±20 %):
 
 | Level | G/F | 1/F | 2/F | 3/F | 4/F+ |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Suenn Ho (何巽) | 350-450 | 160 | 110 | 70 | (none drawn; 40 GRS) |
-| Labels | 471 | 104 | 78 | 43 | 58 |
-| Factories in the labels | 245 | 56 | 36 | 25 | 28 |
+| Labels | 397 | 132 | 80 | 47 | 54 |
+| Factories in the labels | 199 | 73 | 36 | 29 | 26 |
 
-G/F is a little above Suenn Ho's range, and 1/F-3/F are 28-39 % below her counts. The documented
-places cause most of this: the sources (the GRS files, the street photos, the signs) show more G/F
-rooms than rooms upstairs. The guesses are too few (about 100) to change the levels much.
+The documented places fill G/F more than the upper floors (the GRS files, the street photos and
+the signs show more G/F rooms), thus the guesses take each level in the share of its gap to Suenn
+Ho's count. 1/F is now within her range; 2/F and 3/F are 27-33 % below her counts. The guesses are
+too few (about 150, bounded by the trade totals) to close the gap. Non-home units are 710, below
+both sources, because 83 places share a unit.
 
 A check of the documented factories (2026-11-05) found 7 duplicates (one room counted twice), and a
 second agent confirmed them. It found no factory that a source dates outside December 1986.
@@ -174,9 +177,9 @@ second agent confirmed them. It found no factory that a source dates outside Dec
 
 The model stays frozen. These disagreements are for John to decide.
 
-## Unplaced places (54)
+## Unplaced places (51)
 
-- 7 are on lanes that the model does not know: Cheung On Lane (3 flats on 5/F, from the clearance sketch survey), Shun Yi Lane (3 factories), Co Lane (a candy factory).
+- 4 are on lanes that the model does not know: Shun Yi Lane (3 factories), Co Lane (a candy factory). The 3 flats on 5/F of 3 Cheung On Lane now go behind 31B Tung Tau Tsuen Rd (their sheet, B24/114, puts them next to its rear block).
 - 47 have no street, building or map number in any source. Examples: Jackie Pullinger's "The Well", the Hsin On Chapel of the Lutheran Church, the martial-arts school, several family flats on 5/F-13/F, and photos of clinic and workshop interiors.
 
 `docs/room_places.md` lists them all.
