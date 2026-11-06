@@ -154,13 +154,15 @@ deleted.
   the next, and so on. Each floor keeps its true place in its layer. The G/F floors range
   over 15 m of the slope (7.9 to 23.2 mPD), thus the G/F of a building up the slope can
   stand higher than the 1/F of a building lower down. Between the highest point of each
-  layer and the lowest point of the next there are at least 6 m of clear air (`GAP`). A
-  plate at the west end names each layer.
+  layer and the lowest point of the next there are at least 6 m of clear air (`GAP`). In the
+  middle of each gap lies a dark see-through plate with a light edge, as in the old app: each
+  layer shows through the plate over it. The name of each layer lies on the west edge of the
+  plate under it (G/F on the ground).
 - **Peel to a storey.** Click a storey on the rail at the right, or use the arrow keys. All
   the floors over that storey go, with all the roofs over it and all that is on them. The
   walls of that storey end 1.2 m over each building's own floor (`PEEL_H`). Thus every room
   of that storey shows from above. A lower building shows its roof. The peel works also with
-  the floors apart. Esc takes it away.
+  the floors apart. The RF row of the rail, or Esc, takes it away.
 - **Select a building.** Point at a building to see its name and storeys. Click it to select
   it: it takes a warm tint, and a panel gives its facts from the structure (where its storeys
   come from, its heights in mPD, its footprint, its stairs and links). The panel lists each

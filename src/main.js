@@ -234,7 +234,6 @@ function hideTooltip() {
 function buildUI() {
   $('src-body').innerHTML = notesHtml(S, uses);
   $('t-explode').onclick = () => setExplode(state.explodeTarget < 0.5);
-  $('rail-clear').onclick = () => setPeel(-1);
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
   // The panel of the selected building: the x deselects it, and a storey peels the City there.
@@ -322,18 +321,17 @@ function dayIn(s) {
   return t >= 3600 ? `${+(t / 3600).toFixed(1)} hours` : t >= 60 ? `${+(t / 60).toFixed(1)} minutes` : `${Math.round(t)} seconds`;
 }
 
-// The storey rail: the whole City (RF), then each storey. The bar of a storey: the share of the
-// buildings that have it.
+// The storey rail: the whole City (RF), then each storey.
 const railRows = [];
 function buildRail() {
   const ol = $('levels');
   const row = (label, k) => {
     const li = document.createElement('li'), b = document.createElement('button');
-    b.innerHTML = `<span>${label}</span><span class="occ"><i></i></span>`;
+    b.innerHTML = `<span>${label}</span>`;
     b.onclick = () => setPeel(k === -1 || k === state.peel ? -1 : k);
     li.appendChild(b);
     ol.appendChild(li);
-    railRows.push({ k, label, b, bar: b.querySelector('i') });
+    railRows.push({ k, label, b });
   };
   row('RF', -1);
   for (let k = maxStorey; k >= 0; k--) {
@@ -349,7 +347,6 @@ function renderRail() {
   for (const r of railRows) {
     const n = r.k === -1 ? S.list.length : storeyCount[r.k];
     r.b.className = ['has', (r.k === -1 ? state.peel < 0 : r.k === state.peel) ? 'sel' : '', state.peel >= 0 && r.k > state.peel ? 'above' : ''].join(' ');
-    r.bar.style.height = `${Math.round((n / S.list.length) * 100)}%`;
     r.b.title = r.k === -1 ? 'The whole City, to the roofs (Esc).' : `${r.label}: ${n} of ${S.list.length} buildings have this storey. Click to peel the City to it (arrow keys: up and down).`;
   }
 }
