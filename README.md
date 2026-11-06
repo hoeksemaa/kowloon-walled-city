@@ -31,6 +31,9 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
   - The room uses: `room_research.json` (771 research facts, each with its source and quote,
     and the disagreements and leads) and `room_uses.json` (the use of each of the 8,926
     units, with its basis: verified, likely or guess).
+  - The people: `people.json` (real residents and workers of the City, each with a short
+    description, their story and the quotes of their sources). It is separate from the rooms:
+    each person links to the research facts of the places where they lived or worked.
   - The ground and the surroundings: `terrain.json` (the height of the ground, out to 640 m),
     `context.json` (the real buildings, roads and open ground of December 1986, out to
     600 m), `surroundings.json` (streets, dirt paths, courts and fences round the City) and
@@ -40,6 +43,8 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
     kept choices and the model, with their sources and inferences.
   - `rooms.md`: how each room got its use: the sources, the method, the categories, the
     basis, the counts, the disagreements and the leads.
+  - `people.md`: a generated list of the people of `data/people.json`, with their stories
+    and the rooms of the model where they lived or worked.
   - `room_places.md`: a generated table of the 698 documented places and their units, and of
     the 54 places with no unit.
   - `plan-book-upgrade.md`: the plan of 2026-10-30 to upgrade the main app with *City of
@@ -49,6 +54,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
   - `check_structure.mjs` fails if the frozen structure changes (with
     `structure_fingerprint.mjs`).
   - `build_room_uses.mjs` writes `data/room_uses.json` and `docs/room_places.md`.
+  - `build_people.mjs` checks `data/people.json` and writes `docs/people.md`.
   - The builders of the data: `trace_plan.py` (the plan), `parse_grs.py`
     (`data/businesses.json`), `book_overlay.py` (`data/book_overlay.json`), `context.py`
     with its input `context_input.json` (`data/context.json`), and `terrain.py`
