@@ -12,17 +12,17 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- The link preview (og-image.jpg: this page, 1200 x 630). og:image must be a full URL. -->
-  <meta name="description" content="One ordinary week in Kowloon Walled City, 16-22 December 1986, in 3D: the traced street plan and the businesses of the clearance files.">
+  <meta name="description" content="Kowloon Walled City in December 1986, in 3D: every building, storey, stair and room of its definitive structure, floor by floor.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kowloon Walled City · 1986">
   <meta property="og:title" content="Kowloon Walled City (九龍城寨) · 1986">
-  <meta property="og:description" content="One ordinary week in Kowloon Walled City, 16-22 December 1986, in 3D: the traced street plan and the businesses of the clearance files.">
+  <meta property="og:description" content="Kowloon Walled City in December 1986, in 3D: every building, storey, stair and room of its definitive structure, floor by floor.">
   <meta property="og:url" content="https://kowloon-walled-city-gamma.vercel.app/">
   <meta property="og:image" content="https://kowloon-walled-city-gamma.vercel.app/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A 3D model of Kowloon Walled City in 1986, with its street names in English and Chinese">
+  <meta property="og:image:alt" content="A 3D model of Kowloon Walled City in 1986: its buildings on the sloped ground, among the real buildings round it">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,31 +43,19 @@
   <header id="title">
     <div class="t-cn">九龍城寨</div>
     <div class="t-en">KOWLOON WALLED CITY</div>
-    <div class="t-sub">ONE WEEK · 16–22 DEC 1986 · PLAN TRACED · BUSINESSES FROM THE CLEARANCE FILES</div>
+    <div class="t-sub">16–22 DEC 1986 · PLAN TRACED · STOREYS AND ROOMS FROM THE SOURCES</div>
   </header>
 
   <nav id="toolbar" class="panel" aria-label="Tools">
     <div class="tb-head"><i></i><i></i><i></i></div>
-    <button class="tool" id="t-explode" title="Pull the storeys apart (E)" aria-pressed="false">
+    <button class="tool" id="t-explode" title="Pull the floors apart: G/F, 1/F, 2/F… each in its own layer (E)" aria-pressed="false">
       <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
-      <span class="chev">›</span>
-    </button>
-    <button class="tool on" id="t-people" title="People (P)" aria-pressed="true">
-      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M6 1h4v4H6z M5 6h6v5H9v4H7v-4H5z" fill="currentColor"/></svg>
-      <span class="chev">›</span>
-    </button>
-    <button class="tool on" id="t-map" title="Street names, road names and places of the 1992 map (M)" aria-pressed="true">
-      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M1 2h14v8H1z M3 4v4h2V4z M6 4v4h1V4z M8 4v1h2V4z M8 7v1h3V7z M12 4v4h1V4z M7 10h2v5H7z" fill="currentColor" fill-rule="evenodd"/></svg>
-      <span class="chev">›</span>
-    </button>
-    <button class="tool" id="t-find" title="Find them 尋人: three people of the book (G)" aria-pressed="false">
-      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M5 1h4v1h1v1h1v1h1v4h-1v1h-1v1H9v1H5v-1H4V9H3V8H2V4h1V3h1V2h1z M5 3v1H4v4h1v1h4V8h1V4H9V3z M11 10h1v1h1v1h1v1h1v2h-2v-1h-1v-1h-1v-1h-1v-1h1z" fill="currentColor" fill-rule="evenodd"/></svg>
       <span class="chev">›</span>
     </button>
   </nav>
 
   <aside id="rail" class="panel" aria-label="Storeys">
-    <button class="rail-head" id="rail-clear" title="Show every storey (Esc)">«</button>
+    <button class="rail-head" id="rail-clear" title="The whole City, to the roofs (Esc)">«</button>
     <ol id="levels"></ol>
     <div class="rail-foot">═</div>
   </aside>
@@ -77,7 +65,7 @@
       <span id="clk-date">TUE 16 DEC 1986</span>
       <span id="clk-time"><span id="clk-h">09</span><span id="clk-colon">:</span><span id="clk-m">45</span></span>
     </div>
-    <div id="spark" title="People away from home, through the day. Click to jump.">
+    <div id="spark" title="The day: night shaded. Click to set the time.">
       <canvas id="spark-c" width="288" height="44"></canvas>
       <i id="playhead"></i>
     </div>
@@ -100,17 +88,8 @@
     <div id="bld-body"></div>
   </section>
 
-  <section id="legend" class="panel"></section>
-
-  <section id="game" class="panel" hidden aria-label="Find them" aria-live="polite">
-    <button id="game-close" title="Close (G)">×</button>
-    <h2>FIND THEM 尋人</h2>
-    <div id="game-body"></div>
-  </section>
-
   <div id="tooltip" role="status"></div>
-  <div id="tag"></div>
-  <div id="hint">DRAG ROTATE · RIGHT-DRAG PAN · SCROLL ZOOM · CLICK A BUILDING TO SELECT IT · A PERSON TO FOLLOW</div>
+  <div id="hint">DRAG ROTATE · RIGHT-DRAG PAN · SCROLL ZOOM · CLICK A BUILDING TO SELECT IT · E PULLS THE FLOORS APART · ↑↓ PEEL TO A STOREY</div>
 
   <button id="src-btn">SOURCES + NOTES</button>
   <section id="sources" class="panel" hidden>

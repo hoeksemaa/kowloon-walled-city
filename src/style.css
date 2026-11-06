@@ -123,36 +123,10 @@ button { font: inherit; color: inherit; }
 #bld .p { display: inline-flex; align-items: center; gap: 5px; }
 #bld .sq { flex: none; width: 10px; height: 10px; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.35); }
 #bld .sq.inf { border: 1px dashed var(--ink); }
-#bld .tt-book { font-family: var(--pixel); font-size: 7px; color: #6b4f12; }
+#bld details summary { cursor: pointer; }
+#bld details[open] summary { margin-bottom: 2px; }
 
-/* ---- legend ---- */
-#legend { right: 92px; bottom: 14px; padding: 8px 10px; font-size: 11px; min-width: 170px; }
-#legend:empty { display: none; }
-#legend h3 { margin: 0 0 5px; font-family: var(--pixel); font-size: 9px; font-weight: 400; letter-spacing: 0.04em; }
-#legend .row { display: flex; align-items: center; gap: 7px; line-height: 1.6; }
-#legend .sw { width: 14px; height: 3px; display: inline-block; }
-#legend .sq { width: 10px; height: 10px; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.35); }
-#legend .grp + .grp { margin-top: 8px; padding-top: 7px; border-top: 1px dashed var(--ink-3); }
-/* The rows of the floor uses: a point lights the use on the plan, a click keeps it lit. */
-#legend button.row { width: calc(100% + 8px); margin: 0 -4px; padding: 0 4px; border: 0; background: transparent; font: inherit; text-align: left; cursor: pointer; }
-#legend button.row:hover, #legend button.row.on { background: rgba(255, 255, 255, 0.6); }
-#legend button.row.lock { background: rgba(227, 154, 48, 0.2); box-shadow: inset 0 0 0 2px var(--accent); }
-#legend button.row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-#legend button.row .lb { flex: 1; }
-#legend button.row .lk { display: block; flex: none; visibility: hidden; color: var(--ink); }
-#legend button.row.lock .lk { visibility: visible; }
-#legend button.row.none { color: var(--ink-2); }
-#legend button.row.none .sq { filter: grayscale(1); opacity: 0.6; }
-/* The floor-use group is as wide as its widest count line, on each storey. */
-#legend .grp.use { min-width: 47ch; }
-#legend .use-n { width: 0; min-width: 100%; height: calc(3 * 1.45em + 5px); margin-top: 5px; padding-top: 4px; border-top: 1px dotted var(--ink-3); color: var(--ink-2); font-size: 10.5px; line-height: 1.45; }
-#legend .use-n div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 1.45em; }
-#legend .use-n b { color: var(--ink); font-weight: 600; }
-#legend .use-n .px { font-family: var(--pixel); font-size: 8px; letter-spacing: 0.03em; line-height: 15px; }
-#legend .use-n .ln { display: inline-block; width: 14px; margin: 0 4px 2px 0; border-top: 2px solid var(--ink); vertical-align: middle; }
-#legend .use-n .ln.d { margin-left: 6px; border-top-style: dashed; }
-
-/* ---- tooltip + tags ---- */
+/* ---- tooltip ---- */
 #tooltip {
   position: fixed; pointer-events: none; display: none; max-width: 300px;
   background: #f3efe2; border: 1px solid #3b372f; padding: 8px 11px; font-size: 12.5px; line-height: 1.45; color: var(--ink);
@@ -163,16 +137,6 @@ button { font: inherit; color: inherit; }
 #tooltip .tt-k { color: var(--ink-2); }
 #tooltip .tt-r { font-size: 11.5px; }
 #tooltip .tt-r i { color: var(--ink-2); font-style: normal; }
-#tooltip .tt-real { font-family: var(--pixel); font-size: 8px; background: #e8c14a; display: inline-block; padding: 1px 4px 0; border: 1px solid var(--panel-edge); margin-bottom: 3px; }
-#tooltip .tt-book { font-family: var(--pixel); font-size: 7px; color: #6b4f12; }
-#tooltip .tt-q { margin: 5px 0 3px; padding: 1px 0 1px 8px; border-left: 3px solid var(--accent); font-size: 11.5px; }
-#tooltip .tt-q .g, #tooltip .tt-q .w { color: var(--ink-2); }
-#tooltip .tt-q .w { font-size: 10.5px; margin-top: 2px; }
-#tag {
-  position: fixed; pointer-events: none; display: none; white-space: nowrap;
-  font-family: var(--mono); font-weight: 500; font-size: 12.5px; padding: 1px 6px;
-  background: var(--tag); color: var(--tag-ink); transform: translate(8px, -50%);
-}
 #hint { position: fixed; left: 100px; top: 84px; font-family: var(--pixel); font-size: 8px; color: var(--title-ink-2); pointer-events: none; }
 
 /* ---- sources ---- */
@@ -201,25 +165,6 @@ button { font: inherit; color: inherit; }
   #title { left: 96px; }
   #title .t-sub, #hint { display: none; }
   #clock { width: calc(100vw - 110px); }
-  #legend { display: none; }
   #sources { left: 14px; right: 14px; width: auto; }
 }
 
-/* Find them 尋人 (game.js) */
-#game { z-index: 6; left: 96px; top: 14px; width: 330px; max-height: calc(100vh - 260px); overflow: auto; padding: 12px 14px 10px; font-size: 12px; line-height: 1.5; }
-#game[hidden] { display: none; }
-#game h2 { font-family: var(--pixel); font-weight: 400; font-size: 11px; margin: 0 0 8px; }
-#game h3 { font-family: var(--pixel); font-weight: 400; font-size: 9px; margin: 10px 0 4px; }
-#game-close { position: absolute; right: 8px; top: 4px; border: 0; background: none; font-size: 18px; cursor: pointer; }
-#game .case { display: block; width: 100%; text-align: left; margin: 0 0 6px; padding: 6px 8px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; font: inherit; }
-#game .case b { font-family: var(--pixel); font-weight: 400; font-size: 9px; }
-#game .case.done { background: #d9e4cf; }
-#game .hint { margin: 4px 0; padding: 4px 6px; border-left: 3px solid #e7a43c; background: rgba(255, 255, 255, 0.35); }
-#game .hint i, #game .fact i { color: var(--ink-3); }
-#game .k { font-family: var(--pixel); font-size: 8px; margin-right: 4px; }
-#game .row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
-#game .row button { font-family: var(--pixel); font-size: 8px; padding: 4px 6px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; }
-#game .msg { margin-top: 6px; font-style: italic; }
-#game .found { background: #e8c14a; font-family: var(--pixel); font-size: 9px; display: inline-block; padding: 1px 5px; margin: 6px 0 2px; }
-#game .fact { margin: 3px 0; }
-@media (max-width: 720px) { #game { width: min(330px, calc(100vw - 110px)); } }

@@ -9,12 +9,14 @@
   in `docs/structure.md`.
 - The structure has no colours. `src/city/` and `src/surroundings/` name the parts of the
   structure; the code that draws them gives the colours (`colorOf` in `buildMesh`, `colors` in
-  `buildGround`). The structure viewer keeps its placeholder colours in
+  `buildGround`). The structure viewer and the main app keep their placeholder colours in
   `src/structureColors.js`. Do not put colours in the structure or in the data.
 - Build new work (art, visuals, simulation) on this structure. Keep the City and the
   surroundings separate: `src/city/` and `src/surroundings/` do not import each other.
-- The old 3D city of the main app (`src/cityMesh.js`, `src/floorplan.js`, `src/facades.js`,
-  `src/roofs.js`, `src/interiors.js`) is superseded. Do not build new work on it. Do not
+- The main app (`index.html`, `src/main.js`) draws this structure as floor layers
+  (`src/cityLayers.js`), since 2026-11-06; its old 3D city is deleted. The people, labels and
+  game code (`people.js`, `labels.js`, `game.js` and others) still sits on the old layout and
+  the main app does not load it: move it onto the structure before you use it again. Do not
   delete `src/floorplan.js`: `src/layout.js` still uses it.
 - See `docs/structure.md` for the sources and the inferences of the structure.
 - Chinese names (a permanent rule of John's, for the whole repo): English is the main language
