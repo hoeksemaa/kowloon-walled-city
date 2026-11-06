@@ -30,6 +30,7 @@ import { buildPopulation } from './life/population.js';
 import { Life } from './life/sim.js';
 import { Figures } from './life/figures.js';
 import { Furnish, ITEM_KIND, thingsHtml } from './life/furnish.js';
+import { Casebook } from './life/mysteries.js';
 import { personHtml, personTip } from './life/personPanel.js';
 
 const START_MINUTE = 9 * 60 + 45;
@@ -81,11 +82,11 @@ const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: S
 // The clock of the week: day 0 is Tuesday 16 December 1986.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
-let pop, life, figures, furnish;
+let pop, life, figures, furnish, cases;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings'];
+  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings', 'mysteries'];
   const D = Object.fromEntries(await Promise.all(names.map((n) => fetch(`./data/${n}.json`).then((r) => r.json()).then((j) => [n, j]))));
   // the structure, as the structure viewer builds it (structureViewer.js): the corrections of
   // data/structure_fixes.json on the fine plan, and the kept random choices
@@ -113,6 +114,8 @@ async function init() {
   pop = buildPopulation(S, uses, nav, D.routines, D.people);
   life = new Life(S, uses, pop, { nav });
   figures = new Figures(life, layers);
+  // the ten mysteries (data/mysteries.json)
+  cases = new Casebook(D.mysteries, D.people, uses, life);
   scene.add(figures.mesh);
   lighting = new Lighting(scene, new THREE.Vector3(0, 20, 0), site);
   planes = new Planes(scene);
@@ -125,7 +128,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding, selectPerson, life, figures, pop, furnish };
+  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding, selectPerson, life, figures, pop, furnish, cases };
   requestAnimationFrame(frame);
 }
 
@@ -168,6 +171,8 @@ function selectBuilding(b, room = null, thing = null) {
   state.sel = b;
   state.selRoom = b >= 0 ? room : null;
   state.thing = thing;
+  const c = room && !room.roof && cases.tryRoom(`${b}:${room.k}:${room.u}`);
+  if (c) found(c);
   layers.setSelected(b);
   if (b >= 0) selectPerson(-1, false);
   renderPanel();
@@ -179,6 +184,8 @@ function selectPerson(i, render = true) {
   state.follow = false;
   state.autoPeel = false;
   figures.select(i);
+  const c = i >= 0 && cases.tryPerson(i);
+  if (c) found(c);
   if (i >= 0 && state.sel >= 0) { state.sel = -1; state.selRoom = null; layers.setSelected(-1); }
   if (render) renderPanel();
 }
@@ -198,6 +205,43 @@ function renderPanel() {
   placePanel();
 }
 
+// ---- the mysteries ----------------------------------------------------------------------------
+// A case is solved: its circle is checked, a note says who was found, and the casebook opens at
+// the story of the case.
+function found(c) {
+  const t = $('found');
+  t.innerHTML = `<div class="f-h">FOUND · CASE ${c.n} OF ${cases.cases.length}</div><div>${cases.nameOf(c)}</div>`;
+  t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
+  clearTimeout(found.t);
+  found.t = setTimeout(() => t.classList.remove('show'), 5000);
+  cases.open = c.n;
+  $('cases').hidden = false;
+  $('sources').hidden = true;
+  renderCases();
+}
+
+function renderCases() {
+  $('case-dots').innerHTML = cases.dots();
+  $('case-btn').setAttribute('aria-pressed', String(!$('cases').hidden));
+  if (!$('cases').hidden) $('cases-body').innerHTML = cases.html();
+}
+
+// "Show me": follow the person of a solved case, or peel to the room of a case of a room.
+function showCase(c) {
+  if (c.answer.type === 'room') {
+    const [b, k, u] = c.answer.rooms[0].split(':').map(Number), B = S.list[b], unit = B.phaseOf(k).plan.units.find((x) => x.id === u);
+    selectBuilding(b, { k, u });
+    setPeel(k);
+    if (unit) state.flyTo = new THREE.Vector3(unit.x, B.y[k], unit.z);
+    return;
+  }
+  const i = cases.personOf(c);
+  if (i < 0) return;
+  selectPerson(i);
+  state.follow = true;
+  renderPanel();
+}
+
 // The things and the people of the selected room (or roof) for its panel.
 function roomExtra() {
   const R = state.selRoom;
@@ -209,7 +253,7 @@ function roomExtra() {
   for (let i = 0; i < life.N; i++) { const s = life.state[i]; if (!s.trip && s.cur && s.cur.key === key) here.push(i); }
   if (here.length) {
     html += `<h3>WHO IS HERE NOW (${here.length})</h3>`;
-    for (const i of here.slice(0, 8)) html += `<button class="who" data-person="${i}">${personTip(life, i)}</button>`;
+    for (const i of here.slice(0, 8)) html += `<button class="who" data-person="${i}">${personTip(life, i, cases.hidden(i))}</button>`;
     if (here.length > 8) html += `<div class="sub">and ${here.length - 8} more</div>`;
   }
   return html;
@@ -268,7 +312,7 @@ function updateHover() {
   layers.setHover(state.hover);
   if (!hit) { hideTooltip(); return; }
   if (hit.person !== undefined) {
-    showTooltip(`${personTip(life, hit.person)}<div class="tt-s">${hit.person === state.person ? 'click to let go of this person' : 'click to see their day'}</div>`);
+    showTooltip(`${personTip(life, hit.person, cases.hidden(hit.person))}<div class="tt-s">${hit.person === state.person ? 'click to let go of this person' : 'click to see their day'}</div>`);
     return;
   }
   const click = `<div class="tt-s">${hit.b === state.sel && !hit.room ? 'click to deselect the building' : hit.room ? 'click to see the room' : 'click to select the building and see its floors'}</div>`;
@@ -296,10 +340,23 @@ function hideTooltip() {
 function buildUI() {
   $('src-body').innerHTML = notesHtml(S, uses);
   $('t-explode').onclick = () => setExplode(state.explodeTarget < 0.5);
-  $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
+  $('src-btn').onclick = () => { $('sources').hidden = !$('sources').hidden; if (!$('sources').hidden) { $('cases').hidden = true; renderCases(); } };
   $('src-close').onclick = () => ($('sources').hidden = true);
   // The panel of the selected building: the x deselects it, and a storey peels the City there.
   $('bld-close').onclick = () => { selectBuilding(-1); selectPerson(-1); };
+  // The mysteries: the button opens the casebook; a case shows its clues one at a time.
+  $('case-btn').onclick = () => { $('cases').hidden = !$('cases').hidden; if (!$('cases').hidden) $('sources').hidden = true; renderCases(); };
+  $('cases-close').onclick = () => { $('cases').hidden = true; renderCases(); };
+  $('cases-body').addEventListener('click', (ev) => {
+    const el = ev.target.closest && ev.target.closest('[data-case], [data-more], [data-show]');
+    if (!el) return;
+    if (el.dataset.case !== undefined) cases.open = +el.dataset.case || null;
+    else if (el.dataset.more) cases.more(+el.dataset.more);
+    else if (el.dataset.show) showCase(cases.cases.find((x) => x.n === +el.dataset.show));
+    renderCases();
+    if (el.dataset.case !== undefined) $('cases-body').scrollTop = 0;
+  });
+  renderCases();
   $('bld-body').addEventListener('click', (ev) => {
     if (ev.target.closest && ev.target.closest('[data-follow]')) { state.follow = !state.follow; renderPanel(); return; }
     const who = ev.target.closest && ev.target.closest('[data-person]');
@@ -361,6 +418,7 @@ function buildUI() {
       // the first Esc closes the sources panel if it is open, or else lets go of the selected
       // building; the next one takes the peel away
       if (!$('sources').hidden) $('sources').hidden = true;
+      else if (!$('cases').hidden) { $('cases').hidden = true; renderCases(); }
       else if (state.person >= 0) selectPerson(-1);
       else if (state.sel >= 0) selectBuilding(-1);
       else setPeel(-1);
@@ -497,6 +555,11 @@ function frame(now) {
       if (inside && state.peel !== k) { state.autoPeel = true; setPeel(k); }
       else if (!inside && state.autoPeel && state.peel >= 0) { state.autoPeel = false; setPeel(-1); }
     }
+  }
+  if (state.flyTo) {
+    const d = state.flyTo.clone().sub(controls.target);
+    if (d.length() < 0.2) state.flyTo = null;
+    else { d.multiplyScalar(1 - Math.exp(-dt * 4)); controls.target.add(d); camera.position.add(d); }
   }
   personT += dt;
   if ((state.person >= 0 && personT > 0.5) || (state.selRoom && personT > 2)) { personT = 0; renderPanel(); }

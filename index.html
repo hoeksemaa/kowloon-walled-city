@@ -53,6 +53,15 @@
     </button>
   </nav>
 
+  <button id="case-btn" class="panel" aria-pressed="false" title="The ten mysteries: find real people of the City (a circle for each case, filled when it is solved)">
+    <span class="cb-l">MYSTERIES</span><span id="case-dots"></span>
+  </button>
+  <section id="cases" class="panel" hidden aria-label="Mysteries">
+    <button id="cases-close" title="Close the mysteries (Esc)" aria-label="Close the mysteries">×</button>
+    <div id="cases-body"></div>
+  </section>
+  <div id="found" role="status"></div>
+
   <aside id="rail" class="panel" aria-label="Storeys">
     <ol id="levels"></ol>
   </aside>

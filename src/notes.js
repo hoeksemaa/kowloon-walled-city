@@ -75,7 +75,9 @@ people with their days (data/routines.json), each hour marked sourced or inferre
 <p><span class="st prov">INFERRED</span>The roles, homes, workplaces and hours of the crowd, who have no names:
 no source names them. Where each thing stands in a room. The recipe of each kind of room comes from the
 photos and texts of the sources (data/furnishings.json).</p>
+<p><span class="st ok">SOURCED</span>The ten mysteries (data/mysteries.json): each clue and each story names its
+source; an hour or a room that only the model gives is marked inferred.</p>
 <h4>Not yet on this structure</h4>
-<p>The street names, the numbers of the 1992 map and the game Find them (尋人) sat on the old city of
-this app. They come back in later changes, on this structure.</p>`;
+<p>The street names and the numbers of the 1992 map sat on the old city of this app. They come back in
+later changes, on this structure.</p>`;
 }
