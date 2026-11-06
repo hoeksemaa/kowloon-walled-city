@@ -11,6 +11,7 @@ The structure does not change: the use is a label on the units of `src/city/`.
 | `data/room_uses.json` | The mask: one row per unit (`b`, `k`, `u`, `cat`, `basis`, `place`), the 18 categories, and the documented places with their sources. |
 | `docs/room_places.md` | A table of the documented places and their units (generated). |
 | `tools/build_room_uses.mjs` | The build. Run `node tools/build_room_uses.mjs`. |
+| `structure.html` (`src/roomUses.js`) | The viewer. The "Room uses" panel shows one floor of each building at a time, colours the rooms by use or by certainty (basis), filters them by category and basis, and finds a documented place by name. A click on a room gives its use, its basis and its sources. |
 
 A unit key is `b:k:u`: the building id, the floor (0 = G/F), and the unit id on that floor.
 A roof room is `b:n:0`, where `n` is the number of storeys of the building.
@@ -169,7 +170,7 @@ second agent confirmed them. It found no factory that a source dates outside Dec
 - **Kai Fong office.** The GRS gives 2/F and 3/F of Wing Fat House, 16 Tung Tau Tsuen Rd. The layout puts it in building 25, `locate` gives building 31, and map 15 is near building 8.
 - **Fuk Tak shrine (福德古廟).** The GRS gives the Fuk Tak Temple (福德土地廟) at 5 Tai Chang St 5th Lane. The book (p32) and map 12 put the later, simpler shrine on the east side.
 - **Old School and Old People's Centre (老人中心).** The 1992 map draws map 28 (Old School) as a small building at the south-west corner of the Yamen (衙門) court. Model building 172 there is an 11-storey tenement, and `docs/structure.md` gives the Free School (義學) at about full height (pp20-21). Model building 100 has the label of the Old People's Centre, but map 27 puts the centre in the Yamen.
-- **Building heights.** Chung Lo Ying's building and the Chung Fat Café building (11 storeys in the source, 12 in the model). The 12/F flat at 31 Tung Tau Tsuen Rd: the model now has 13 storeys there (`docs/structure.md`, 2026-11-05).
+- **Building heights.** Chung Lo Ying's building and the Chung Fat Café building (11 storeys in the source, 12 in the model). The 12/F flat at 31 Tung Tau Tsuen Rd: the model now has 13 storeys there (`docs/structure.md`, 2026-11-05). John's decision (2026-11-06): keep the model's heights. A height changes only when a verified room cannot fit in the model.
 - **Streets that the model does not have.** "Kwong Wah Street" (model building 37) comes from the firm name Kwong Wah Weaving Factory (廣華布廠). Tung Tsing Road premises are the City's east edge, and one title makes 25A Tung Tsing Rd the same as 25A Lung Shing Rd. Tin Hau Temple Street (天后廟街) and Tin Hau Temple Back Street are two streets, but the model has one.
 - **Lane numbers.** 33 GRS premises are in numbered lanes, but `data/businesses.json` files them as main-street numbers. The floor of one flat can also change with the entrance ("2/F, also known as 6/F").
 - **Missing premises.** 39 addressed GRS premises are missing from `data/businesses.json`, because the parser does not read their street forms.

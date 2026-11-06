@@ -1,6 +1,7 @@
 // The viewer of the definitive 3D structure (structure.html): the City (src/city/) on its
 // surroundings (src/surroundings/), a cut at any height, a vertical section, x-ray walls, the
-// facts of each building, and the cheapest route from one room to another. This is the one
+// facts of each building, the cheapest route from one room to another, and the use of each
+// room in December 1986 (src/roomUses.js, data/room_uses.json) floor by floor. This is the one
 // place that puts the City and its surroundings together. The structure has no colours: the
 // viewer gives its placeholder colours (src/structureColors.js). The simulation of main.js does not run here.
 import * as THREE from 'three';
@@ -14,6 +15,8 @@ import { applyFixes } from './city/fixes.js';
 import { makeChoices } from './city/choices.js';
 import { buildMesh, buildProps, KIND } from './city/mesh.js';
 import { route } from './city/links.js';
+import { UNIT } from './city/plan.js';
+import { RoomUses, GROUPS, BASIS, CAT_HEX, esc, swatch, tag } from './roomUses.js';
 import { buildGround } from './surroundings/ground.js';
 import { cityColors, groundColors } from './structureColors.js';
 
@@ -42,7 +45,12 @@ const VIEW_H = 260;
 const OFF = 1e5;
 const cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), OFF);
 const secPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), OFF);
-const U = { uXray: { value: 0 }, uSel: { value: -1 }, uCut: { value: new THREE.Color('#4a4540') } };
+const U = { uXray: { value: 0 }, uSel: { value: -1 }, uCut: { value: new THREE.Color('#4a4540') },
+  uFloorOn: { value: 0 }, uYcut: { value: null } };
+// The floor view: each building is cut a little above one floor (its own height, because the
+// ground slopes). ycut[b] is that height; a building with fewer floors stays whole.
+const FLOOR_CUT = 1.0;
+let ycut = null;
 
 const triangulate = (outer, holes) => {
   const v = (p) => new THREE.Vector2(p[0], p[1]);
@@ -51,22 +59,24 @@ const triangulate = (outer, holes) => {
 };
 
 // The City material: a cut shows the inside faces, drawn dark; x-ray takes most of the outer
-// walls away; the selected building is a little warmer.
+// walls away; the selected building is a little warmer (not its floors, which show the room uses).
 function cityMaterial() {
   const m = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, clippingPlanes: [cutPlane, secPlane] });
   m.onBeforeCompile = (sh) => {
     Object.assign(sh.uniforms, U);
     sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute vec3 aInfo; varying vec3 vInfo;')
-      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvInfo = aInfo;');
-    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; uniform float uXray; uniform float uSel; uniform vec3 uCut;')
+      .replace('#include <common>', '#include <common>\nvarying float vWy;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvInfo = aInfo; vWy = (modelMatrix * vec4(transformed, 1.0)).y;');
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; varying float vWy; uniform float uXray; uniform float uSel; uniform vec3 uCut; uniform float uFloorOn; uniform sampler2D uYcut;')
       .replace('void main() {', `void main() {
+  if (uFloorOn > 0.5 && vWy > texelFetch(uYcut, ivec2(int(vInfo.x + 0.5), 0), 0).r) discard;
   if (uXray > 0.5 && (vInfo.z < 0.5 || abs(vInfo.z - 5.0) < 0.5 || abs(vInfo.z - 1.0) < 0.5 && !gl_FrontFacing)) {
     vec2 q = floor(gl_FragCoord.xy);
     if (abs(vInfo.z - 1.0) > 0.5 && mod(q.x + q.y * 3.0, 4.0) > 0.5) discard;
   }`)
       .replace('#include <dithering_fragment>', `#include <dithering_fragment>
   if (!gl_FrontFacing) gl_FragColor.rgb = uCut;
-  if (abs(vInfo.x - uSel) < 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.98, 0.72, 0.36), 0.28);`);
+  if (abs(vInfo.x - uSel) < 0.5 && abs(vInfo.z - 4.0) > 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.98, 0.72, 0.36), 0.28); // not the floors: they show the room uses`);
   };
   m.customProgramCacheKey = () => 'kwc-structure';
   return m;
@@ -113,12 +123,13 @@ function highlight(kind, on) {
   p.marks.visible = on;
 }
 
-let S, shell, inner = null, ground, routeObj = null;
-const state = { cut: OFF, secAxis: 'off', sec: 0, secFlip: false, open: false, sel: -1, pick: null, routeMode: false, start: null };
+let S, shell, inner = null, ground, routeObj = null, uses = null, marker = null;
+const state = { cut: OFF, secAxis: 'off', sec: 0, secFlip: false, open: false, sel: -1, pick: null, routeMode: false, start: null, floor: -1 };
 
 async function init() {
-  const [plan0, biz, book, overlay0, context, terrain, fixes, fine, kept, sur] = await Promise.all(['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings']
+  const [plan0, biz, book, overlay0, context, terrain, fixes, fine, kept, sur, roomUses] = await Promise.all(['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses']
     .map((n) => fetch(`./data/${n}.json`).then((r) => r.json())));
+  uses = new RoomUses(roomUses);
   // the corrections of data/structure_fixes.json (src/city/fixes.js); the footprints come
   // from the fine plan (data/plan_fine.json)
   const { plan, overlay } = applyFixes(plan0, overlay0, fixes, fine);
@@ -130,6 +141,16 @@ async function init() {
   // the kept random choices of the links (data/structure_choices.json, choices.js)
   S = buildStructure(L, T, { fixes, choices: makeChoices(kept) });
   const t1 = performance.now();
+  ycut = new Float32Array(S.list.length).fill(OFF);
+  const tex = new THREE.DataTexture(ycut, S.list.length, 1, THREE.RedFormat, THREE.FloatType);
+  tex.minFilter = tex.magFilter = THREE.NearestFilter;
+  tex.needsUpdate = true;
+  U.uYcut.value = tex;
+  marker = new THREE.Points(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0], 3)),
+    new THREE.PointsMaterial({ color: '#ff3d00', size: 14, sizeAttenuation: false, depthTest: false, transparent: true }));
+  marker.renderOrder = 12;
+  marker.visible = false;
+  scene.add(marker);
   shell = meshOf(buildMesh(S, { triangulate, props: false, colorOf: cityColors() }));
   scene.add(shell);
   props.ladder = propsOf(buildProps(S, 'ladder', { colorOf: cityColors() }), '#ff3d00');
@@ -151,7 +172,7 @@ async function init() {
   $('loading').remove();
   bindUI();
   resize();
-  window.kwc = { S, camera, controls, state, scene, U, renderer, ground, routePick, showInfo, showNorthSouth, highlight }; // for the console
+  window.kwc = { S, camera, controls, state, scene, U, renderer, ground, routePick, showInfo, showNorthSouth, highlight, uses, setFloor, findPlace, pick }; // for the console
   requestAnimationFrame(frame);
 }
 
@@ -165,15 +186,18 @@ function rebuildInside() {
       for (const r of b.phases[0].rings) for (const [x, z] of r.pts) { const v = state.secAxis === 'x' ? x : z; lo = Math.min(lo, v); hi = Math.max(hi, v); }
       if (lo - 1 <= state.sec && hi + 1 >= state.sec) secB.add(b.id);
     }
-  const any = state.cut < OFF || secB.size || (state.open && state.sel >= 0);
+  const F = state.floor;
+  const any = state.cut < OFF || secB.size || (state.open && state.sel >= 0) || F >= 0;
   if (!any) return;
   const inside = (id, k) => {
     const b = S.list[id];
+    if (F >= 0 && b.n > F && k === F) return true;
     if (secB.has(id) && b.y[k] < state.cut) return true;
     if (state.open && id === state.sel) return b.y[k] < state.cut;
     return state.cut < OFF && b.y[k] <= state.cut && b.y[k + 1] > state.cut - 0.01;
   };
-  inner = meshOf(buildMesh(S, { triangulate, shell: false, inside, colorOf: cityColors() }));
+  inner = meshOf(buildMesh(S, { triangulate, shell: false, inside, colorOf: cityColors((b, k, u) => uses.color(b, k, u)) }));
+  inner.castShadow = state.floor < 0;
   scene.add(inner);
 }
 let insideDirty = false;
@@ -219,12 +243,96 @@ function bindUI() {
     if (!state.routeMode && routeObj) { scene.remove(routeObj); routeObj = null; }
   };
   setCut(); setSec();
+  bindUses();
   let down = null;
   canvas.addEventListener('pointerdown', (e) => { down = [e.clientX, e.clientY]; });
   canvas.addEventListener('pointerup', (e) => {
     if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 4) return;
     click(e);
   });
+}
+
+// ---- the room uses: floor by floor, a colour by use or by basis, a filter, a search ----
+function setFloor(F) {
+  state.floor = F;
+  const on = F >= 0;
+  if (on) {
+    for (const b of S.list) ycut[b.id] = b.n > F ? b.y[F] + FLOOR_CUT : OFF;
+    U.uYcut.value.needsUpdate = true;
+  }
+  U.uFloorOn.value = on ? 1 : 0;
+  for (const p of Object.values(props)) p.mesh.visible = !on; // the ladders and stools stand on the roofs
+  // the shadow pass does not see the floor cut: the hidden floors would still cast shadows
+  shell.castShadow = !on;
+  if (inner) inner.castShadow = !on;
+  $('floorSel').value = String(F);
+  markInside();
+}
+function bindUses() {
+  const maxN = Math.max(...S.list.map((b) => b.n));
+  const sel = $('floorSel');
+  sel.innerHTML = '<option value="-1">off: whole buildings</option>' +
+    Array.from({ length: maxN }, (_, k) => `<option value="${k}">${floorName(k)} of each building (${S.list.filter((b) => b.n > k).length} buildings)</option>`).join('');
+  sel.onchange = () => setFloor(+sel.value);
+  $('floorDown').onclick = () => setFloor(Math.max(-1, state.floor - 1));
+  $('floorUp').onclick = () => setFloor(Math.min(maxN - 1, state.floor + 1));
+  $('useMode').onchange = (e) => { uses.mode = e.target.value; drawLegend(); markInside(); };
+  drawLegend();
+  // the documented places, for the search
+  const list = [...uses.places.values()];
+  $('placeList').innerHTML = list.map((p) => `<option value="${esc(`${p.name}${p.address ? ' · ' + p.address : ''} · ${p.id}`)}"></option>`).join('');
+  $('findPlace').onchange = (e) => {
+    const id = e.target.value.split(' · ').at(-1);
+    if (uses.places.has(id)) findPlace(id);
+  };
+}
+function drawLegend() {
+  const d = uses.data, byCat = new Map(d.categories.map((c) => [c.id, c.units]));
+  const basisRow = BASIS.map((b) => `<label class="li" title="${esc(d.basis[b.id])}"><input type="checkbox" data-basis="${b.id}" ${uses.basisOn.has(b.id) ? 'checked' : ''}>
+    ${uses.mode === 'basis' ? swatch(b.hex) : ''}${tag(b.id)} <span class="dim">${d.counts.basis[b.id]}</span></label>`).join('');
+  const groups = GROUPS.map((g) => `<div class="grp">${g.label}</div>` + g.cats.map((c) => `<label class="li" title="${esc(uses.cats.get(c)?.note)}">
+    <input type="checkbox" data-cat="${c}" ${uses.catOn.has(c) ? 'checked' : ''}>${uses.mode === 'use' ? swatch(CAT_HEX[c]) : ''}${esc(uses.label(c))}
+    <span class="dim">${byCat.get(c) || 0}</span></label>`).join('')).join('');
+  $('legend').innerHTML = `<div class="grp">Certainty (basis)</div>${basisRow}${groups}
+    <button id="catAll">all uses</button> <button id="catNone">no uses</button>`;
+  for (const el of $('legend').querySelectorAll('input[data-basis]')) el.onchange = () => { el.checked ? uses.basisOn.add(el.dataset.basis) : uses.basisOn.delete(el.dataset.basis); markInside(); };
+  for (const el of $('legend').querySelectorAll('input[data-cat]')) el.onchange = () => { el.checked ? uses.catOn.add(el.dataset.cat) : uses.catOn.delete(el.dataset.cat); markInside(); };
+  $('catAll').onclick = () => { uses.catOn = new Set(uses.cats.keys()); drawLegend(); markInside(); };
+  $('catNone').onclick = () => { uses.catOn = new Set(); drawLegend(); markInside(); };
+}
+// the unit of floor k of building b at point p: the plan cell under it, else the nearest unit
+function unitAt(b, k, p) {
+  if (k >= b.n) return b.roofRoom ? 0 : null;
+  const plan = b.phaseOf(k).plan, c = plan.R.cellXZ(p.x, p.z), v = c >= 0 ? plan.code[c] : -1;
+  if (v >= UNIT) return v - UNIT;
+  let best = null, bd = 3;
+  for (const u of plan.units) { const d = Math.hypot(u.x - p.x, u.z - p.z); if (d < bd) { bd = d; best = u.id; } }
+  return best;
+}
+function unitCentre(b, k, u) {
+  if (k >= b.n) return new THREE.Vector3(b.cx, b.top + 1.4, b.cz);
+  const q = b.phaseOf(k).plan.units[u];
+  return new THREE.Vector3(q.x, b.y[k] + 0.9, q.z);
+}
+function showMarker(b, k, u) {
+  if (u === null || u === undefined) { marker.visible = false; return; }
+  marker.geometry.attributes.position.setXYZ(0, ...unitCentre(b, k, u).toArray());
+  marker.geometry.attributes.position.needsUpdate = true;
+  marker.visible = true;
+}
+// a documented place: its floor in the floor view, its building selected, the view on it
+function findPlace(id) {
+  const p = uses.places.get(id);
+  if (!p?.at) return;
+  const [bid, k, u] = p.at[0], b = S.list[bid];
+  setFloor(k < b.n ? k : -1);
+  state.sel = bid; U.uSel.value = bid;
+  showInfo(b, k, u);
+  showMarker(b, k, u);
+  const d = unitCentre(b, k, u).sub(controls.target);
+  controls.target.add(d); camera.position.add(d);
+  camera.zoom = Math.max(camera.zoom, 4); camera.updateProjectionMatrix();
+  if (state.open) markInside();
 }
 
 const ray = new THREE.Raycaster();
@@ -237,6 +345,7 @@ function pick(e) {
     if (state.secAxis !== 'off' && secPlane.distanceToPoint(h.point) < 0) continue;
     const f = h.object.geometry.attributes.aInfo, v = h.face.a;
     const kind = f.getZ(v);
+    if (U.uFloorOn.value && h.point.y > ycut[Math.round(f.getX(v))] + 0.01) continue;
     if (U.uXray.value && (kind === KIND.WALL || kind === KIND.ROOF)) continue;
     return { b: Math.round(f.getX(v)), k: Math.round(f.getY(v)), kind, p: h.point };
   }
@@ -245,19 +354,44 @@ function pick(e) {
 
 function click(e) {
   const p = pick(e);
-  if (!p) { state.sel = -1; U.uSel.value = -1; $('info').innerHTML = ''; markInside(); return; }
+  if (!p) { state.sel = -1; U.uSel.value = -1; $('info').innerHTML = ''; marker.visible = false; markInside(); return; }
   const b = S.list[p.b];
   // the level at the point: the floor under it
   let k = Math.max(0, Math.min(b.n, levelAt(b, p.p.y + 0.05)));
   if (p.kind === KIND.ROOF || p.kind === KIND.HUT) k = b.n;
   if (state.routeMode) return routePick(b, k, p.p);
   state.sel = b.id; U.uSel.value = b.id;
-  showInfo(b, k);
+  // a room: a click on a floor or a partition inside, or on a roof hut (the roof room)
+  const opened = state.floor >= 0 || state.cut < OFF; // a low wall of an opened floor: the room behind it
+  const u = p.kind === KIND.FLOOR || p.kind === KIND.PART || (p.kind === KIND.WALL && opened) || (p.kind === KIND.HUT && b.roofRoom) ? unitAt(b, k, p.p) : null;
+  showInfo(b, k, u);
+  showMarker(b, k, u);
   if (state.open) markInside();
 }
 
 const fmt = (v) => v.toFixed(2);
-function showInfo(b, k) {
+// the use of one room, its basis, and its documented place with the sources
+function roomInfo(b, k, u) {
+  const r = uses.get(b.id, k, u);
+  if (!r) return '';
+  const p = r.place ? uses.places.get(r.place) : null;
+  const where = `${b.label}, ${k >= b.n ? 'roof room' : floorName(k)}, room ${u}`;
+  let html = `<div class="room">${swatch(CAT_HEX[r.cat])}<b>${esc(uses.label(r.cat))}</b> ${tag(r.basis)} <span class="dim">${esc(where)} (${b.id}:${k}:${u})</span><br>`;
+  if (!p) return html + `<span class="dim">No source names this room. Its use is a guess from the counts of the sources (docs/rooms.md).</span></div>`;
+  const zh = p.nameZh && !String(p.name).includes(p.nameZh) ? ` ${esc(p.nameZh)}` : '';
+  const addr = [p.address, p.floor != null ? floorName(Math.max(0, p.floor)) : '', p.map_pin != null ? `1992 map no. ${p.map_pin}` : ''].filter(Boolean).join(', ');
+  html += `<b>${esc(p.name)}</b>${zh}<br>${esc(p.use)}<br>
+    <span class="dim">In the source: ${esc(addr || 'no address')} · placed by ${esc(p.how)}${p.note ? ` (${esc(p.note)})` : ''}</span>
+    <details><summary>${p.sources.length} source${p.sources.length > 1 ? 's' : ''}</summary><ul>${p.sources.map((x) => `<li>${esc(x.source)}${x.cite ? ', ' + esc(x.cite) : ''}${x.date ? ` <span class="dim">(${esc(x.date)})</span>` : ''}${x.quote ? `<br><i>${esc(String(x.quote).slice(0, 400))}</i>` : ''}</li>`).join('')}</ul></details>`;
+  return html + '</div>';
+}
+// the uses of the units of one floor, in words
+function floorUses(b, q) {
+  const c = {};
+  for (const u of b.phaseOf(q).plan.units) { const r = uses.get(b.id, q, u.id); if (r) c[r.cat] = (c[r.cat] || 0) + 1; }
+  return Object.entries(c).sort((x, y) => y[1] - x[1]).map(([cat, n]) => `${swatch(CAT_HEX[cat])}${n} ${esc(cat === 'home' ? (n === 1 ? 'flat' : 'flats') : uses.label(cat))}`).join(' ');
+}
+function showInfo(b, k, u = null) {
   const from = { south: 'south face, Lambot 1990 elevation (SOURCED)',
     p132: 'north face: the range of p132 is SOURCED, the count of this building INFERRED',
     p336: 'north face: the range of p336 is SOURCED, the count of this building INFERRED',
@@ -278,15 +412,18 @@ function showInfo(b, k) {
     const kinds = {};
     for (const u of ph.plan.units) kinds[u.kind] = (kinds[u.kind] || 0) + 1;
     const units = Object.entries(kinds).map(([q, n]) => `${n} ${n > 1 ? (q === 'factory' ? 'factories' : q + 's') : q}`).join(', ') || '0';
-    rows.push(`<tr${q === k ? ' class="cur"' : ''}><td>${floorName(q)}</td><td>${fmt(b.y[q])}</td><td>${fmt(b.h[q])}</td><td>${units}</td><td>${[...tags.filter(Boolean), ...lk].join(', ')}</td></tr>`);
+    rows.push(`<tr${q === k ? ' class="cur"' : ''}><td>${floorName(q)}</td><td>${fmt(b.y[q])}</td><td>${fmt(b.h[q])}</td><td>${units}</td><td>${floorUses(b, q)}</td><td>${[...tags.filter(Boolean), ...lk].join(', ')}</td></tr>`);
   }
-  if (b.roofRoom) rows.unshift(`<tr><td>roof</td><td>${fmt(b.top)}</td><td>2.40</td><td>1 roof room</td><td></td></tr>`);
-  $('info').innerHTML = `<b>${b.label}</b> <span class="dim">(no. ${b.id})</span><br>
+  if (b.roofRoom) {
+    const r = uses.get(b.id, b.n, 0);
+    rows.unshift(`<tr${k >= b.n ? ' class="cur"' : ''}><td>roof</td><td>${fmt(b.top)}</td><td>2.40</td><td>1 roof room</td><td>${r ? `${swatch(CAT_HEX[r.cat])}${esc(uses.label(r.cat))}` : ''}</td><td></td></tr>`);
+  }
+  $('info').innerHTML = `${u !== null && u !== undefined ? roomInfo(b, k, u) : ''}<b>${b.label}</b> <span class="dim">(no. ${b.id})</span><br>
     ${b.n} storeys · from ${from}<br>
     G/F floor ${fmt(b.g0)} mPD · roof ${fmt(b.top)} mPD · footprint ${b.area.toFixed(0)} m²<br>
     stairs: ${st}${b.over ? ` · building ${b.over.id} grows over its roof` : ''}${S.chain.includes(b.id) ? ' · on the SW-NE route' : ''}<br>
     links: ${Object.entries(lc).map(([q, n]) => `${n} ${q}`).join(', ') || 'none'}
-    <table><tr><th>floor</th><th>mPD</th><th>height</th><th>units</th><th>changes, links</th></tr>${rows.join('')}</table>`;
+    <table><tr><th>floor</th><th>mPD</th><th>height</th><th>units</th><th>uses (Dec 1986)</th><th>changes, links</th></tr>${rows.join('')}</table>`;
 }
 
 // ---- routes ----

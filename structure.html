@@ -15,7 +15,25 @@
     #stats, .dim { color: #77736a; }
     #info { bottom: 10px; left: 10px; max-width: 520px; max-height: 55vh; overflow: auto; }
     #info:empty, #route:empty { display: none; }
-    #route { top: 10px; right: 10px; max-width: 340px; }
+    #route { bottom: 10px; right: 10px; max-width: 340px; }
+    #uses { top: 10px; right: 10px; width: 268px; max-height: calc(100vh - 40px); overflow: auto; }
+    #uses h1 { font-size: 13px; margin: 0 0 2px; }
+    #uses label { display: block; margin-top: 6px; }
+    #uses select, #uses input[type=text], #uses input[list] { font: inherit; width: 100%; box-sizing: border-box; }
+    #legend { margin-top: 6px; }
+    #legend .grp { margin-top: 6px; font-weight: 600; color: #52514e; }
+    #legend .li { margin-top: 1px; display: flex; align-items: center; gap: 4px; }
+    #legend .li .dim { margin-left: auto; font-variant-numeric: tabular-nums; }
+    .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.18); }
+    .tag { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 11px; line-height: 15px; }
+    .tag.verified { background: #184f95; color: #fff; }
+    .tag.likely { background: #5598e7; color: #fff; }
+    .tag.guess { border: 1px solid #9c968b; color: #52514e; line-height: 13px; }
+    .room { margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #d9d4c9; }
+    .room details { margin-top: 3px; }
+    .room ul { margin: 3px 0 0 16px; padding: 0; }
+    .room li { margin-bottom: 3px; }
+    .floorBtns button { margin-top: 2px; padding: 1px 8px; }
     table { border-collapse: collapse; margin-top: 6px; }
     td, th { padding: 1px 6px; text-align: left; border-bottom: 1px solid #e1ddd3; font-variant-numeric: tabular-nums; }
     tr.cur td { background: #f3d9b4; }
@@ -50,6 +68,18 @@
     <button id="stoolBtn">Highlight the stools</button>
     <div class="dim" style="margin-top:6px">Click a building for its floors. Drag to turn, right-drag to move, scroll to zoom.
       The dark faces are cut faces. Heights are metres above Principal Datum (mPD).</div>
+  </div>
+  <div id="uses" class="panel">
+    <h1>Room uses · December 1986</h1>
+    <label>Floor view <select id="floorSel"><option value="-1">off: whole buildings</option></select></label>
+    <div class="floorBtns"><button id="floorDown">floor down</button> <button id="floorUp">floor up</button></div>
+    <label>Colour the rooms <select id="useMode"><option value="use">by use</option><option value="basis">by certainty</option><option value="off">placeholder colours</option></select></label>
+    <label>Find a documented place <input id="findPlace" list="placeList" placeholder="a name, an address or a GRS file"></label>
+    <datalist id="placeList"></datalist>
+    <div id="legend"></div>
+    <div class="dim" style="margin-top:6px">The colours show on the floors that the floor view, the cut or the section opens.
+      Click a room for its use, its certainty and its sources. A room that the filter hides is white.
+      Data: data/room_uses.json; method: docs/rooms.md.</div>
   </div>
   <div id="info" class="panel"></div>
   <div id="route" class="panel"></div>
