@@ -234,7 +234,6 @@ function hideTooltip() {
 function buildUI() {
   $('src-body').innerHTML = notesHtml(S, uses);
   $('t-explode').onclick = () => setExplode(state.explodeTarget < 0.5);
-  $('rail-clear').onclick = () => setPeel(-1);
   $('src-btn').onclick = () => ($('sources').hidden = !$('sources').hidden);
   $('src-close').onclick = () => ($('sources').hidden = true);
   // The panel of the selected building: the x deselects it, and a storey peels the City there.

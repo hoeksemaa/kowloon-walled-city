@@ -26,7 +26,7 @@ source gives is marked inferred.</p>
   <li><span class="st ok">E</span>Pull the floors apart: all the G/F floors in one layer, all the 1/F
     floors in the next, and so on. Each floor keeps its true place in its layer, thus the G/F of a
     building up the slope can stand higher than the 1/F of a building lower down. A roof goes with
-    the layer of the floor over it.</li>
+    the layer of the floor over it. A dark plate lies in the gap under each layer.</li>
   <li><span class="st ok">RAIL</span>Peel the City to one storey (arrow keys: up and down): all
     the floors and roofs over it go, with all that is on the roofs, and its walls end 1.2 m over
     its floor. Thus every room of that storey shows from above.</li>

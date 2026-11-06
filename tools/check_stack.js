@@ -15,7 +15,7 @@
 //   underside of its slab up to its huts, its hipped roof or the top of a ladder;
 // - each building has its G/F in layer 0 and its roof in layer n (n storeys);
 // - pulled apart, the highest point of each layer is at least GAP m under the lowest point of
-//   the next one;
+//   the next one, and the dark plate under each layer lies in that gap;
 // - peeled to storey c, the layers over c are hidden; the walls of storey c of each building
 //   that has it end PEEL_H m over its floor c, and the other buildings are whole; the inside of a
 //   floor shows only on the peeled storey, or with the layers apart.
@@ -64,6 +64,8 @@ export async function checkStack(kwc) {
   for (let k = 0; k + 1 < layers.n; k++) {
     const top = band[k][1] + layers.layers[k].group.position.y, next = band[k + 1][0] + layers.layers[k + 1].group.position.y;
     if (next - top < GAP - 0.01) say(`layers ${k} and ${k + 1} pulled apart: only ${(next - top).toFixed(2)} m between them`);
+    const { plate } = layers.plates[k + 1];
+    if (!plate.visible || plate.position.y <= top || plate.position.y >= next) say(`pulled apart: the dark plate under layer ${k + 1} is not in the gap over layer ${k}`);
   }
 
   // ---- the peel ----

@@ -130,6 +130,18 @@ export class CityLayers {
         lv.twins.push(t);
       });
     }
+    // ---- the dark plates between the layers pulled apart: each layer shows through the plate
+    // over it, with a light edge round the plate (the box of the City plan) ----
+    const plateGeo = new THREE.PlaneGeometry(L.W + 4, L.D + 4).rotateX(-Math.PI / 2).translate(cx, 0, cz);
+    const edgeGeo = new THREE.EdgesGeometry(plateGeo);
+    this.plates = [];
+    for (let k = 1; k < this.n; k++) {
+      const plate = new THREE.Mesh(plateGeo, new THREE.MeshBasicMaterial({ color: '#1c1b18', transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }));
+      plate.renderOrder = 1;
+      const edge = new THREE.LineSegments(edgeGeo, new THREE.LineBasicMaterial({ color: '#efe8d6', transparent: true, opacity: 0 }));
+      this.group.add(plate, edge);
+      this.plates[k] = { plate, edge };
+    }
     this.pickRT = new THREE.WebGLRenderTarget(1, 1);
     this.px = new Uint8Array(4);
     this.tags = [];
@@ -193,7 +205,9 @@ export class CityLayers {
     }
   }
 
-  // A plate with the name of each layer, beside it in the pulled-apart view. font: a CSS font.
+  // A plate with the name of each layer, in the pulled-apart view: at the west edge of the dark
+  // plate under the layer (G/F: on the ground), thus it names what stands over that plate.
+  // font: a CSS font.
   makeTags(font) {
     const L = this.S.L;
     for (const lv of this.layers) {
@@ -211,11 +225,11 @@ export class CityLayers {
       const tex = new THREE.CanvasTexture(c);
       tex.colorSpace = THREE.SRGBColorSpace;
       const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthTest: false, transparent: true, fog: false }));
-      sp.center.set(1, 0.5);
+      sp.center.set(1, 0);
       sp.renderOrder = 20;
-      sp.position.set(L.x0 - 4, (this.lo[lv.k] + this.hi[lv.k]) / 2, L.z0 + L.D / 2);
+      sp.position.set(L.x0 - 3, 0, L.z0 + L.D / 2);
       sp.userData.aspect = w / c.height;
-      lv.group.add(sp);
+      this.group.add(sp);
       lv.tag = sp;
       this.tags.push(sp);
     }
@@ -252,7 +266,23 @@ export class CityLayers {
       lv.group.visible = on;
       // The inside of a floor shows only from above: pulled apart, or the peeled storey.
       for (const m of lv.meshes) m.visible = !m.userData.inside || e > 0.01 || lv.k === c;
-      if (lv.tag) { lv.tag.visible = on && a > 0.01; lv.tag.material.opacity = a; }
+    }
+    // The plate under layer k lies in the middle of the clear air between layer k - 1 and layer
+    // k, thus it never cuts a building. It comes in as that gap opens.
+    for (let k = 1; k < this.n; k++) {
+      const { plate, edge } = this.plates[k];
+      const top = this.hi[k - 1] + this.lift[k - 1] * e, bot = this.lo[k] + this.lift[k] * e;
+      const p = smoothstep(1, GAP, bot - top);
+      plate.position.y = edge.position.y = (top + bot) / 2;
+      plate.visible = edge.visible = p > 0.01 && (c < 0 || k <= c);
+      plate.material.opacity = 0.26 * p;
+      edge.material.opacity = 0.55 * p;
+    }
+    for (const lv of this.layers) {
+      if (!lv.tag) continue;
+      lv.tag.position.y = lv.k ? this.plates[lv.k].plate.position.y + 0.3 : this.lo[0];
+      lv.tag.visible = (c < 0 || lv.k <= c) && a > 0.01;
+      lv.tag.material.opacity = a;
     }
   }
 
