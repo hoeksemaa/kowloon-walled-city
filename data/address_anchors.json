@@ -5780,6 +5780,132 @@
     219.13,
     135.7
    ]
+  },
+  {
+   "text": "23",
+   "kind": "number",
+   "px": [
+    667,
+    391.4
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    150.01,
+    101.44
+   ]
+  },
+  {
+   "text": "21",
+   "kind": "number",
+   "px": [
+    666.6,
+    401
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    150.0,
+    104.26
+   ]
+  },
+  {
+   "text": "19",
+   "kind": "number",
+   "px": [
+    663.6,
+    410.4
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    149.23,
+    107.05
+   ]
+  },
+  {
+   "text": "17",
+   "kind": "number",
+   "px": [
+    662,
+    419
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    148.86,
+    109.6
+   ]
+  },
+  {
+   "text": "15",
+   "kind": "number",
+   "px": [
+    661,
+    429
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    148.68,
+    112.55
+   ]
+  },
+  {
+   "text": "13",
+   "kind": "number",
+   "px": [
+    659,
+    439
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    148.21,
+    115.52
+   ]
+  },
+  {
+   "text": "5-11",
+   "kind": "number",
+   "px": [
+    645,
+    473
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:loyan",
+   "street": "lys",
+   "plan": [
+    144.5,
+    125.75
+   ]
   }
  ],
  "fit": {

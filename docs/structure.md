@@ -48,7 +48,7 @@ John approved changes "to correctly match the historical presence of verified ro
   31 on code 62. A 12/F needs 13 storeys. The book gives 12-13 storeys for this row (p132).
   Code 62 shares the stair of code 51 in the model, thus code 51 has 13 storeys too
   (INFERRED). No other building changed. The model has one door fewer (2,256).
-- 2026-11-05: the names of 93 buildings (`data/structure_choices.json`, layout names; not part of
+- 2026-11-05: the names of 96 buildings (`data/structure_choices.json`, layout names; not part of
   the geometry). The old names came from the layout's even spread of the GRS house numbers along
   each street, which the route map shows to be wrong on most streets. A building on which Suenn
   Ho's route map prints house numbers takes them ("30, 31 Tung Tau Tsuen Road"); a building whose
