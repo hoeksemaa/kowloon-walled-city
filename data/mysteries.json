@@ -1,0 +1,1222 @@
+{
+ "about": "Ten mysteries about real people of the Walled City in the week Tue 16 - Mon 22 Dec 1986, from easy (1) to hard (10). Each case names a real person (data/people.json); data/routines.json puts that person in the answer rooms at the times of \"when\". Each case has five clues, from weak to strong, and the story that the player gets when the case is solved. Each clue and each quote has its source.",
+ "notes": {
+  "rule_from_john": "The LAST clue of each case must be very helpful but must not give the answer outright.",
+  "tiers": "Cases 1-3 give the street and the hour early. Cases 4-6 give the street; the player works out the hour. Cases 7-8 give only the trade and a quote. Cases 9-10 need two sources together and the peel, or a chain of clues.",
+  "answer_types": "type \"person\": the player finds the person (the rooms are where the routine puts the person at the times of \"when\"). type \"room\": the player finds the room (case 10); the coordinator can also count a click on the person in it.",
+  "found_check": "Each answer is in its rooms on 3 or more days of the week, at the times that the clues give. I checked this against data/routines.json: cases 1 and 9 on 6 days, the others on 7 days.",
+  "for_the_game": [
+   "The building panel names the places, for example \"Cheng San's ruler factory\" or \"Ng family flat, Room A, 7/F, 8 Sz Kung St\". A player who clicks the right building thus sees the answer. Hide the names of the answer places until the case is solved, or keep them as a reward for a careful search.",
+   "Decoy, case 2: data/room_uses.json puts the pigeon lofts at 75:0:0 (G/F of the next building). The book and the routine put the man on roof:59.",
+   "Decoy, case 3: data/room_uses.json has a second place for the barber's shop, at 186:0:2 (from the map pin). The routine uses 201:0:0.",
+   "Decoy, case 7: the Pak Hop Ruler Factory (百合尺廠, 111:0:2) is also on Tai Chang Street. Its clearance file names no person.",
+   "Decoy, case 10: the building labelled 8 Sz Kung Street (173) does not hold the flat.",
+   "Case 10: Albert Ng also said \"The top floor was the thirteenth floor\" (Beijing Visitor). His building in the model (171) has 11 storeys. Building 189 (\"near 8 Sz Kung Street\") has 13. The clues do not use the thirteenth floor."
+  ]
+ },
+ "cases": [
+  {
+   "n": 1,
+   "id": "rooftop-postie",
+   "title": "The rooftop postie",
+   "titleZh": "天台郵差",
+   "person": "lam-po-chun",
+   "difficulty": 1,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "45:0:2"
+    ],
+    "when": "Tue-Sat and Mon: at the store 09:00-09:40, then on the round until 12:30 (Tue-Fri and Mon also 13:15-14:30). All hours are inferred."
+   },
+   "brief": "Two postmen carry the mail of the whole City. On each working morning, their round starts from a store on Lo Yan Street (老人街) at about 09:00 (an inferred hour). Find the younger postman, Lam Po-chun (林寶鎮).",
+   "clues": [
+    {
+     "text": "He started on the City round in 1979, when he was 19. In this week of December 1986 he is 26.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "kind": "who"
+    },
+    {
+     "text": "He does not use a map. He learned the pathways from his sifu (teacher), the senior postman Lui Man Sang, who is 12 years older.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "kind": "how"
+    },
+    {
+     "text": "First he sorts the City's mail by hand at the Lung Kong Road (龍崗道) Post Office, outside the City. Thus he is not in the City before about 09:00 (inferred).",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "kind": "when"
+    },
+    {
+     "text": "He wears a cap against the drips and carries the postbag on his back. The locals call him 'hu xu zi' (beardie) for his small moustache.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "pp145-146, p149",
+     "kind": "look"
+    },
+    {
+     "text": "The store is on the G/F, at the end of Lo Yan Street near Tung Tau Tsuen Road (東頭村道). Two postmen wait there with the mail: click each of them.",
+     "source": "the model (data/room_uses.json, data/routines.json)",
+     "cite": "place A78, Store on Lo Yan Street (basis likely)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Lam Po-chun (林寶鎮), 'postman Ah-Po'. He and Mr Lui were the only two postmen with the skills for this maze, and the locals called them 'the rooftop posties'. In a power cut he took out a torch and walked children and old people up to their homes. Once he took a mother and her little boy and girl up to the 12th floor: \"afterwards, every time they saw me, they waved to me from the distance and every year they gave me a Christmas card.\" The two children grew up and became social workers. In 2004 a box came to the Post Office, addressed to 'Postman Ah-Po', with a fabric doll of him inside. \"I vividly remember everything about that extraordinary place.\"",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "Mr Lui's daily round began at a store on Lo Yan Street"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "quote": "From 1979 to 1989 - that is, from my 19th to 29th year - I was a postman in the Walled City."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "Other postmen studied the place by drawing maps, but I didn't use pen and paper, I learnt the pathways with Mr Lui, my teacher."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "So I went off with my sifu, Lui Man Sang, who was 12 years my senior, to learn how to become a postman in the Walled City"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "At the time, we did not yet have computerised sorting, and so I had to go to the post office, do it manually myself and then go out and do the deliveries."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p149",
+     "quote": "a hat was standard issue against the constant dripping in the alleyways"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "quote": "Once through, I put the bag back on my back."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "I had a small moustache and was nicknamed by the locals 'hu xu zi' (beardie), or postman Ah-Po."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "quote": "Ultimately, there were only two of us, master and apprentice, who really had the skills you needed to operate in this environment."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "quote": "For this reason, Mr Lui, my sifu (the senior postman to whom I was a kind of apprentice) and I were nicknamed 'the rooftop posties'."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p145",
+     "quote": "I would take out a torch, and escort the children and elderly who did not dare to venture upstairs to their homes."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p149",
+     "quote": "I took them to their home on the 12th floor, and afterwards, every time they saw me, they waved to me from the distance and every year they gave me a Christmas card."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p149",
+     "quote": "After the children grew up, they both became social workers."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p149",
+     "quote": "In 2004 a box arrived at the Post Office, on which was written 'Postman Ah-Po'."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p149",
+     "quote": "I vividly remember everything about that extraordinary place."
+    }
+   ],
+   "skills": [
+    "read the clock",
+    "find a street from the building labels",
+    "click a person to read who it is"
+   ]
+  },
+  {
+   "n": 2,
+   "id": "pigeon-roof",
+   "title": "Birds over Lo Yan Street",
+   "titleZh": "天台賽鴿",
+   "person": "chan-kwan-leung",
+   "difficulty": 2,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "roof:59"
+    ],
+    "when": "every day 14:00-17:00 (the caption gives \"mid-afternoon\"; the exact hours are inferred); also 06:30-08:00 and 13:30-14:00 (inferred)"
+   },
+   "brief": "Somewhere on Lo Yan Street (老人街), a man keeps racing pigeons on the roof of his apartment building. At one time he had more than 1000 birds. Find him with his pigeons.",
+   "clues": [
+    {
+     "text": "He lets the birds fly \"usually in mid-afternoon when there was a lull in the number of landings at Kai Tak Airport\". The model gives 14:00 to 17:00 (inferred).",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p321",
+     "kind": "when"
+    },
+    {
+     "text": "He moved into the City in 1981, when he worked for Hongkong Telecom. He bought his flat for $68,000.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "pp318-319",
+     "kind": "who"
+    },
+    {
+     "text": "\"I always whistle before I feed them.\" The whistle calls the young birds back to the loft.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p320",
+     "kind": "how"
+    },
+    {
+     "text": "His cages are on the roof of the building where he lives. He asked the owner of the top flat for leave to build them.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319, p321",
+     "kind": "where"
+    },
+    {
+     "text": "Watch the roofs at the end of Lo Yan Street near Tung Tau Tsuen Road (東頭村道). His building has 12 storeys, and his own flat is on 2/F.",
+     "source": "the model (data/room_uses.json, data/routines.json)",
+     "cite": "place B72, Chan Kwan Leung's flat (basis likely)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Chan Kwan Leung (陳昆亮) on his roof, with his birds in the sky above the City. \"I enjoyed looking at them and they looked back at me - each of us having quite different thoughts.\" He quit his job to care for them, and he did not tell his parents or his wife. His birds race home from Xiamen and Shanghai, and often win most of the first ten places. In January 1987 one of his pigeons comes home from Shanghai. \"I was so happy, but the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance.\" On that day he decides to close his pigeon business.",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p321",
+     "quote": "with his racing pigeons which, weather permitting, he would exercise daily, usually in mid-afternoon when there was a lull in the number of landings at Kai Tak Airport."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p321",
+     "quote": "Chan Kwan Leung on the roof of his apartment building in the Walled City with his racing pigeons"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p318",
+     "quote": "Chan Kwan Leung moved into the Walled City in 1981, while working for Hongkong Telecom."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "I moved into the Walled City where I bought a flat for $68,000."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "I asked the owner of the flat below if I could build some cages there and he agreed."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "At one stage, I had more than 1000."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p320",
+     "quote": "I always whistle before I feed them."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p320",
+     "quote": "The young pigeons follow the older ones when they fly around and my whistle is a signal to them to come back for food."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "I enjoyed looking at them and they looked back at me - each of us having quite different thoughts."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "I became a fanatic and actually quit my job to take care of them."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "I didn't tell my parents or my wife that I had quit my job."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "Since the opening up of China we have raced from Shantou, Xiamen, Wenzhou, Fuzhou, Hangzhou, Shanghai and a few other places."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p319",
+     "quote": "We race quite a lot and my pigeons often win the majority of the first 10 places."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p320",
+     "quote": "I decided to close my pigeon business in January 1987, on the same day that one of my pigeons returned from Shanghai. I was so happy, but the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
+    }
+   ],
+   "skills": [
+    "watch the roofs",
+    "read the clock",
+    "find a street from the building labels"
+   ]
+  },
+  {
+   "n": 3,
+   "id": "barbers-pole",
+   "title": "The barber's pole",
+   "titleZh": "理髮店",
+   "person": "ho-chi-kam",
+   "difficulty": 3,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "201:0:0"
+    ],
+    "when": "every day from 09:00 (sourced) to about 20:00 (inferred); Mon to 17:30 (inferred)"
+   },
+   "brief": "Somewhere on Tai Chang Street (大井街), a barber opens his shop at 9am every day. Find him at work.",
+   "clues": [
+    {
+     "text": "He bought a flat on Tung Tau Tsuen Road (東頭村道) in 1974. He came into the City every day only after he took over the shop in 1985.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "kind": "who"
+    },
+    {
+     "text": "He and his wife cut hair together. His is the only hair parlour inside the City, and it is cheaper than the barbers outside.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "kind": "how"
+    },
+    {
+     "text": "\"We used to open at 9am and close when there were no more customers - it was very flexible.\" The model closes the shop at about 20:00 (inferred).",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "kind": "when"
+    },
+    {
+     "text": "A barber's pole marks his door, a little down Tai Chang Street from a busy corner store.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p91",
+     "kind": "look"
+    },
+    {
+     "text": "His entrance faces the darkness of Tai Chang Street, not far from the one Government standpipe inside the City. Find the standpipe, then look at the G/F shops near it.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p29; the standpipe in the model: data/utilities.json P1",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Ho Chi Kam (何智錦) at work, scissors in hand. \"Running the barber's shop here didn't make me wealthy, but I didn't have to worry about my next meal either.\" In January 1987 the Government announces the clearance. After it, he works for others again, for 30 per cent of what he earns, and comes here only on Wednesdays, his day off. On 14 January 1987 a resident, 芬姐, heard the news during a perm in a salon inside the City. Ho said that his shop was the only hair parlour inside the City. His shop closed in 1991, shortly before the second phase of the clearance.",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "We used to open at 9am and close when there were no more customers - it was very flexible."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "Though he had lived in the City for much longer, Ho Chi Kam only took over the running of the barber's shop at 10 Tai Chang Street in 1985."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "The flat is on the Tung Tau Tsuen Road, so I didn't really have to come inside the City until I started running my own barber's shop. Then I came every day."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "We are the only hair parlour inside the City and my customers are people living nearby."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "My wife and I both worked, and sometimes there was a lot of work."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p91",
+     "quote": "The barber's 'pole' a little further down Tai Chang Street advertises Ho Chi Kam's hairdressing salon (see page 28), while further down again someone can be seen waiting at the stand-pipe."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p29",
+     "quote": "With its entrance fronting the darkness of Tai Chang Street, not far from the sole Government stand-pipe within the confines of the Walled City, Ho Chi Kam's barber's shop was a small but prosperous business."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "Running the barber's shop here didn't make me wealthy, but I didn't have to worry about my next meal either."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "Now that the Walled City is to be demolished, I have started working for others again and only come here on Wednesdays, my day off."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p28",
+     "quote": "Now, working for someone else, I only receive 30 per cent of every $100 I earn."
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "芬姐當時則正準備過節，人在寨內髮廊電髮，從剛步入髮廊的客人口中得知被圍城"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p29",
+     "quote": "The shop eventually closed in 1991, shortly before the start of phase two of the clearance."
+    }
+   ],
+   "skills": [
+    "read the clock",
+    "use a landmark (the standpipe)",
+    "peel the City to G/F"
+   ]
+  },
+  {
+   "n": 4,
+   "id": "map-maker",
+   "title": "The map maker",
+   "titleZh": "手繪地圖",
+   "person": "chan-cheung-chuen",
+   "difficulty": 4,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "43:12:0"
+    ],
+    "when": "at home on every evening and night: Tue-Fri 18:15-19:30 and from 21:30; Sat from 17:30; Sun from 17:00; Mon from 18:15 (all inferred); in the lanes on weekday evenings and at the weekend (inferred)"
+   },
+   "brief": "In this week, an engineering student is drawing a map of the whole City by hand. He lives high up in a building on Tung Tau Tsuen Road (東頭村道), on the edge of the City. Find him.",
+   "clues": [
+    {
+     "text": "He moved into the City when he married, to start his family in a small home of his own.",
+     "source": "M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)",
+     "cite": "audio guide transcript",
+     "kind": "who"
+    },
+    {
+     "text": "His work relates to mechanical drawing. He maps \"the intertwined streets, and the upper-level walkways connecting different buildings\".",
+     "source": "M+ audio guide 8038 (English), Kowloon Walled City—Aerial View from the Southwest",
+     "cite": "transcript",
+     "kind": "how"
+    },
+    {
+     "text": "By day he studies outside the City. The map takes him four months, and he finishes it in March 1987: in this week it is about half done. He walks the lanes on weekday evenings and at the weekend (inferred hours).",
+     "source": "WSJ 2014, People chapter",
+     "cite": "People chapter (the four months); the finish in March 1987 is in the WSJ narration (primary-sources/wsj-kwc-2014/SOURCE.md)",
+     "kind": "when"
+    },
+    {
+     "text": "A newspaper fact box (WSJ, 2014) gives his home of 1985-88: Room B, on 12/F.",
+     "source": "WSJ 2014, People chapter",
+     "cite": "People chapter, fact box",
+     "kind": "where"
+    },
+    {
+     "text": "In the model, 12/F is the top floor of his building on Tung Tau Tsuen Road. Peel the City to 12/F late on a weekday evening, after 21:30 (inferred).",
+     "source": "the model (data/room_uses.json, data/routines.json)",
+     "cite": "place T4 (basis verified); routine of chan-cheung-chuen",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Chan Cheung-chuen (陳祥全) at his table, with half a map of the City in front of him. As a boy he came here with classmates: \"The dark corners and the intertwined streets were perfect for hide and seek.\" Here neighbours cook with their windows open and call across the gap: \"Hey do you have some soy sauce?\" He finishes his map in March 1987, two months after the Government announces the clearance. Later he said that he paid little attention to the clearance, because he was only a tenant (我沒有用心理會清拆，因為我只是個租客). Like you, he walked these lanes to hold the whole City on one sheet of paper.",
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Chan Cheung-chuen spent four months making a hand-drawn map of the Walled City while he was an engineering student."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "12/F, Room B, 31 Tung Tau Tsuen Rd."
+    },
+    {
+     "source": "M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)",
+     "cite": "https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/",
+     "quote": "I later moved to the walled city myself after getting married to start my family."
+    },
+    {
+     "source": "M+ (Hong Kong), audio guide, 'Kowloon Walled City—aerial view from the southwest' (Ian Lambot, 1989/2013)",
+     "cite": "https://audioguide.mplus.org.hk/en/locations/kowloon-walled-cityaerial-view-from-the-southwest-2013143/",
+     "quote": "Chan's own work relates to mechanical drawing"
+    },
+    {
+     "source": "M+ audio guide 8038 (English), Kowloon Walled City—Aerial View from the Southwest",
+     "cite": "https://www.mplus.org.hk/sc/audio-guide/8038-english/",
+     "quote": "The main things to map were the intertwined streets, and the upper-level walkways connecting different buildings."
+    },
+    {
+     "source": "M+ audio guide 8038 (English), Kowloon Walled City—Aerial View from the Southwest",
+     "cite": "https://www.mplus.org.hk/sc/audio-guide/8038-english/",
+     "quote": "The dark corners and the intertwined streets were perfect for hide and seek."
+    },
+    {
+     "source": "M+ audio guide 8038 (English), Kowloon Walled City—Aerial View from the Southwest",
+     "cite": "https://www.mplus.org.hk/sc/audio-guide/8038-english/",
+     "quote": "Hey do you have some soy sauce?"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "我沒有用心理會清拆，因為我只是個租客"
+    }
+   ],
+   "skills": [
+    "work out the hour from a person's life",
+    "peel the City to one storey",
+    "count the storeys"
+   ]
+  },
+  {
+   "n": 5,
+   "id": "patrol-book",
+   "title": "The patrol book",
+   "titleZh": "巡邏簽到簿",
+   "person": "fishball-wholesaler-hk01",
+   "difficulty": 5,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "66:0:0"
+    ],
+    "when": "every day 05:30-14:00 and 15:30-19:00 (Mon to 17:30); all hours are inferred"
+   },
+   "brief": "Police officers walk the main streets of the City two or three times a day. On Kwong Ming Street (光明街), they sign a patrol book outside a fishball shop. Find the young owner at work.",
+   "clues": [
+    {
+     "text": "As a boy he came from Chiu Chow (潮州) with his parents and his elder brother. The family settled in Lok Fu (樂富), outside the City.",
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/",
+     "kind": "who"
+    },
+    {
+     "text": "In 1983, at 24, he opened his own wholesale shop with HK$6,000. The landlord came from his home area and let the shop cheaply.",
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/",
+     "kind": "how"
+    },
+    {
+     "text": "Kwong Ming Street has several fishball workshops, and also pig-blood, plastic-flower and garment workshops.",
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "kind": "where"
+    },
+    {
+     "text": "Today he still wakes at 5am every day to make the fish paste, and he works 364 days a year. The model gives him the same habits in 1986 (inferred).",
+     "source": "i-Discover Asia, Kowloon City walk, 'Tak Hing Fishballs'",
+     "cite": "location text; weekendhk (新假期), 20 Jun 2026",
+     "kind": "when"
+    },
+    {
+     "text": "His shop is near the outer street, thus it has its own meter from the power company. In the model, that street is Lung Shing Road (龍城路), on the edge of the City. Look on the G/F.",
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/; the model, place Z3 (basis likely)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found 林羅平, whom everyone calls 平哥, at work in his shop. Many people call the City a place without law, but he disagrees: the police sign their patrol book outside his door. Here he needs no licence and pays no tax, and his landlord, a man from his home area, lets the shop cheaply. Of his neighbours he said: 「街坊街里還成天打招呼，好融洽的。」 (they greeted each other all day long). After the clearance he and his elder brother moved the business to Fuk Lo Tsun Road (福佬村道), in Kowloon City (九龍城). In June 2026, at 67, he still worked there 364 days a year, with his wife, May姐. He still uses the machine that he carried out of the City.",
+   "sources": [
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html)",
+     "quote": "眾所周知，城寨是「三不管」之地，平哥則認為並非完全正確"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "因為在他當時的舖位外，會有警察巡邏簽到簿，警察多數只會在城寨外圍巡邏，不會走入城寨內部範圍。"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "「平哥」林羅平早年並非住在九龍城寨，他年少時隨父母及哥哥由潮州來香港，定居在樂富。"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "幸好那位業主與他是同鄉，願意便宜一點租出舖位"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "開舖不用向政府申請牌照和繳交稅項"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy)",
+     "quote": "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電"
+    },
+    {
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "quote": "他們每天都會在城寨的主要街道巡邏兩、三次。"
+    },
+    {
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "quote": "店舖所在的「光明街」有好幾間魚蛋工場，除此之外還有豬紅、黐膠花和製衣工場等等。"
+    },
+    {
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "quote": "街坊街里還成天打招呼，好融洽的。"
+    },
+    {
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "quote": "決定與同樣做魚蛋工場的哥哥一起合作，在城寨清拆後搬到九龍城福佬村道。"
+    },
+    {
+     "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 13 Jun 2024, 【九龍城寨】黑暗之外 城寨人真實記憶",
+     "cite": "平哥 section",
+     "quote": "平哥與太太May姐一起經營「德興魚蛋公司」，店舖已在九龍城福佬村道屹立三十二年。"
+    },
+    {
+     "source": "i-Discover Asia, Kowloon City walk, 'Tak Hing Fishballs'",
+     "cite": "location text",
+     "quote": "I wake up at 5am every day to prepare fish glue (a mixture of ice and fish paste),"
+    },
+    {
+     "source": "weekendhk (新假期), 香港系列之細間始終你好, 20 Jun 2026",
+     "cite": "para 2",
+     "quote": "節目中，現年67歲的老闆林羅平分享他由15歲起做魚蛋，至今超過半世紀。"
+    },
+    {
+     "source": "weekendhk (新假期), 香港系列之細間始終你好, 20 Jun 2026",
+     "cite": "para 3",
+     "quote": "一年365日，他竟然有364日都在店內埋首工作，只有大年初一才肯休息一天。"
+    },
+    {
+     "source": "大公報, 王亞毛, 深度遊九龍城 細嘗「寨城風味」, 15 Jan 2025",
+     "cite": "德興魚蛋 section",
+     "quote": "老闆林師傅從小在寨城內摸爬滾打，就連當年從寨城內搬出來製作魚蛋的機器，都沿用至今"
+    }
+   ],
+   "skills": [
+    "work out the hour from a person's habits",
+    "find the edge of the City",
+    "read the building panels"
+   ]
+  },
+  {
+   "n": 6,
+   "id": "before-dawn",
+   "title": "Before dawn on Lo Yan Street",
+   "titleZh": "燒臘工場",
+   "person": "yim-kwok-yuen",
+   "difficulty": 6,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "169:1:0"
+    ],
+    "when": "every day 04:00-06:00, 08:15-10:00 and 12:30-14:45 (04:00, the market from 06:15 to 08:00, 09:00, 10:00 and 15:00 are sourced; the other times are inferred)"
+   },
+   "brief": "A roast-meat workshop on Lo Yan Street (老人街) is hot long before dawn. Its owner sells the meat in a market outside the City. Find him in his workshop.",
+   "clues": [
+    {
+     "text": "He came to Hong Kong in 1978, at 35, from Guangdong, where he was a farmer. From 1971 he tried almost every year to cross the border, and each time they caught him and put him in prison.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "kind": "who"
+    },
+    {
+     "text": "He is an unlicensed hawker in Wong Tai Sin (黃大仙) market. He has been arrested five times.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "kind": "how"
+    },
+    {
+     "text": "\"I start work every day at 4am. I do not need an alarm clock - my body wakes me up.\"",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "kind": "when"
+    },
+    {
+     "text": "He sells in the market from 6.15am to 8am. Then he comes back for breakfast, and at 9am he starts work again. At about 10am he goes home to cook lunch and rest.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "pp286, 289",
+     "kind": "when"
+    },
+    {
+     "text": "His workshop is not at street level. In the model it is on 1/F, on Lo Yan Street between the Yamen (衙門) and Lung Chun Road (龍津道). Peel the City to 1/F.",
+     "source": "the model (data/room_uses.json, data/routines.json)",
+     "cite": "place B41, Yim Kwok Yuen's cooked-meat workshop (basis likely)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Yim Kwok Yuen (嚴國源) at his ovens, in the heat and the smell of roast pork. Of his village he said: \"Life was not very different from death in China.\" Here the work is hard and the ovens are hot, but \"as the returns belong to us, it's worthwhile.\" He married in Canton, and his wife and son wait there for leave to join him. Later he said: \"I first applied eight years ago, but I'll be satisfied if they can come before the Walled City is demolished.\" And: \"Coming from such a poor place, I thought Hong Kong was heaven.\"",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "Yim Kwok Yuen (above) opened his cooked meat factory on Lo Yan Street in 1981, a few years after his arrival in Hong Kong."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "I came to Hong Kong in 1978, when I was 35 years old, from Guangdong Province where I was a farmer."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "From 1971 onwards, I tried almost every year to sneak into Hong Kong."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "each time I was caught I was imprisoned and starved."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "I am an unlicensed hawker and I sell in Wong Tai Sin market. I have been arrested five times since the computerisation of records."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "I start work every day at 4am. I do not need an alarm clock - my body wakes me up."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "I start to roast the meat then, and sell it in the market from 6.15am to 8am."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "I then come back for breakfast and at 9am start work again to prepare the meat to be roasted in the afternoon."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "At about 10am I return home to cook lunch and have a rest before coming back to the shop to roast. Then I go to the market again at 3pm, returning home at around 7 or 8pm."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p286",
+     "quote": "Life was not very different from death in China."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "Life is difficult but, as the returns belong to us, it's worthwhile."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "When I had earned enough, I went to Canton and got married. I now have a son and have applied for my wife and child to come to Hong Kong."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "I first applied eight years ago, but I'll be satisfied if they can come before the Walled City is demolished."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p289",
+     "quote": "Coming from such a poor place, I thought Hong Kong was heaven."
+    }
+   ],
+   "skills": [
+    "work out the hour from a quote",
+    "peel the City to 1/F",
+    "use a landmark (the Yamen)"
+   ]
+  },
+  {
+   "n": 7,
+   "id": "ruler-maker",
+   "title": "The ruler maker's night watch",
+   "titleZh": "木尺廠",
+   "person": "cheng-san",
+   "difficulty": 7,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "67:0:0"
+    ],
+    "when": "almost always: at work 10:00-24:00 and asleep in the factory at night; out for breakfast at about 08:00-09:30 (inferred)"
+   },
+   "brief": "Somewhere in the City, a man makes wooden rulers. He said: \"I have to stay here at night otherwise the drug addicts would steal everything.\" Find him.",
+   "clues": [
+    {
+     "text": "He was a seaman. At the end of 1967, after all six of his children were born, he came back to Hong Kong, at about 40.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "kind": "who"
+    },
+    {
+     "text": "He saws wood from Borneo by machine. His daughter prints the measurements on the rulers upstairs.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "kind": "how"
+    },
+    {
+     "text": "\"Normally I start after 10am and often work until midnight or later. I stop for dinner at 7pm and rest until 9, then start painting.\"",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "kind": "when"
+    },
+    {
+     "text": "In 1968 he moved his factory into the City, to Tai Chang Street (大井街), because the rent was cheaper and the premises were bigger.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "kind": "where"
+    },
+    {
+     "text": "The model holds two ruler factories on Tai Chang Street. The map in the book marks his factory (no. 8) near the end of the street at Tung Tau Tsuen Road (東頭村道). It is on the G/F.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), The Map, Anna Dalgliesh",
+     "cite": "pp352-353, no. 8; the model, place B1 (basis likely); the other factory is in the clearance file HKRS1255-3-262",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Cheng San (鄭山) among his saws and his paint. \"I live here all the time and seldom leave the City - except to go to a nearby restaurant in the morning.\" Once all his children had supper with him here; now his youngest daughter cooks for him before she goes home. A twelve-inch ruler sells for a little over $30 a dozen. When the clearance comes, he tells the Housing Department (房屋署) officer to get lost. \"I don't want the Walled City to be demolished because I could work for a few more years; once it's knocked down, I will have to retire.\" He made rulers here for 22 years and moved out in 1990.",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I have to stay here at night otherwise the drug addicts would steal everything."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "Cheng San set up his small factory on Tai Chang Street, in the City, in 1968. He made wooden rulers there for the next 22 years, moving out in 1990 during the first phase of the clearance."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I used to be a seaman, but at the end of 1967 - after all my six children had been born - I came back to live in Hong Kong, on the Ngau Tau Kok housing estate. I was about 40 years of age."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I rented a factory on Ko Shan Road, but then moved to these premises in the Walled City because the rent was cheaper and they were bigger"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I saw the wood, which comes from Borneo, by machine and my daughter prints the measurements on upstairs."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "Normally I start after 10am and often work until midnight or later. I stop for dinner at 7pm and rest until 9, then start painting."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I live here all the time and seldom leave the City - except to go to a nearby restaurant in the morning. There's nothing that special outside."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "In the past, all my children had supper here with me, but now the children go to work and my daughter does the cooking for me before she goes home."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "Twelve-inch rulers are sold at a little over $30 a dozen"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I told the Housing Department officer who came here to get lost."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p169",
+     "quote": "I don't want the Walled City to be demolished because I could work for a few more years; once it's knocked down, I will have to retire."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014), The Map, Anna Dalgliesh",
+     "cite": "pp352-353, no. 8",
+     "quote": "8 Cheng San ruler maker 168"
+    },
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-262",
+     "quote": "G/F, 22 Tai Chang St., Pak Hop Ruler Fty. [Factory] 百合尺廠"
+    }
+   ],
+   "skills": [
+    "read a quote for the hours",
+    "choose between two places",
+    "use the map of the book"
+   ]
+  },
+  {
+   "n": 8,
+   "id": "small-hours",
+   "title": "Knocks in the small hours",
+   "titleZh": "中藥店",
+   "person": "chan-pui-yin",
+   "difficulty": 8,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "243:0:0"
+    ],
+    "when": "every day 08:00-18:30 and 19:30-23:00 (the opening hours are sourced; the dinner break is inferred)"
+   },
+   "brief": "A herbal doctor said: \"Although officially we are open from 8am to 11pm, people always knock on your door in the small hours of the morning asking for this or that medicine.\" Find him.",
+   "clues": [
+    {
+     "text": "He came to Hong Kong from Chiu Chow (潮州) county in 1947. He opened his own store in 1955, at the age of 29.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "kind": "who"
+    },
+    {
+     "text": "His father was a herbal doctor and taught him. He sells mainly herbs and also gives consultations; some clients come across from the Island.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "kind": "how"
+    },
+    {
+     "text": "He lives high up, \"where I can see the sea and the sights at night\". The City faces south to the sea.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "kind": "where"
+    },
+    {
+     "text": "His store is on Lung Chun Road (龍津道). Chinese medicines fill one side of it, and Western toiletries the other.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82 and the caption on p82",
+     "kind": "where"
+    },
+    {
+     "text": "His building had two storeys, and it was rebuilt as a block of 11 storeys. In the model, that block has a plan number for a label, not a street address. His store is on its G/F.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82; the model, place A54 (basis likely)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found Chan Pui Yin (陳沛然), the herbal doctor of Lung Chun Road. \"It is a bit like back home in the villages in China - a harmonious state of anarchy.\" Here a child of five can carry a $500 note to a store for change, and \"no one would dream of robbing the kid\". He drinks well water and likes its taste. The City once had two big wells, \"known as the eyes of one of the nine dragons of Kowloon\". One is still in use; a building now stands on the other. His three sons and his daughter grew up here \"without using drugs\".",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "Although officially we are open from 8am to 11pm, people always knock on your door in the small hours of the morning asking for this or that medicine."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "Chan Pui Yin arrived in Hong Kong from Chiu Chow county in 1947. Eight years later, at the age of 29, he opened his own store on Lung Chun Road."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "I sold mainly herbs, but provided medical consultations as well. My clients came from all over the place - some from across on the Island"
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "My father was a herbal doctor and I learnt my medical knowledge from him."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "Originally, the building only had two storeys, but later it was redeveloped into an 11-storey block. We were given two units here for the one we gave up."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "I live high up where I can see the sea and the sights at night, and it has plenty of fresh air."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "the City sits on the lower slope of a hill and faces south to the sea."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "Like many traditional herbalists, Chan Pui Yin's shop was divided into two parts, with Chinese medicines on one side and Western toiletries on the other."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "It is a bit like back home in the villages in China - a harmonious state of anarchy."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "As an example, people outside wouldn't normally give a five year old a $500 note to take to a nearby store to get change, but here in the City no one would dream of robbing the kid."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "We use water from a well, which is good and has a pleasant flavour."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "There used to be two big wells in the City, but only one is still in use. The other has been covered over and a building has been erected on the site. The two big wells were known as the eyes of one of the nine dragons of Kowloon."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p82",
+     "quote": "My children - three sons and a daughter - were born and grew up here without using drugs."
+    }
+   ],
+   "skills": [
+    "find the edge of the City that faces the sea",
+    "count the storeys",
+    "read the building labels"
+   ]
+  },
+  {
+   "n": 9,
+   "id": "biggest-agent",
+   "title": "The biggest agent in the City",
+   "titleZh": "城寨地產經紀",
+   "person": "chu-yiu-shan",
+   "difficulty": 9,
+   "answer": {
+    "type": "person",
+    "rooms": [
+     "111:0:1"
+    ],
+    "when": "Tue-Sat and Mon 10:00-13:00 and 14:00-19:00 (Tue, Thu and Sat from 15:30; Mon to 17:30); Sun 11:00-16:00. All hours are inferred."
+   },
+   "brief": "A man said that his property business became the biggest in the Walled City. The book that quotes him gives no address. Find him at his desk.",
+   "clues": [
+    {
+     "text": "He was born in 1951 and grew up in the City. At about 13 he delivered drinks to the opium dens, the gambling dens and the sex shows.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "kind": "who"
+    },
+    {
+     "text": "He went between the sellers and the buyers of flats. He had seen people run off with deposits for flats that were not theirs.",
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "kind": "how"
+    },
+    {
+     "text": "The Chinese edition of the book prints his name as 朱耀山, and calls him a 城寨地產經紀 (Walled City property agent).",
+     "source": "中華書局 (Chung Hwa Book Co., Hong Kong), 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)",
+     "cite": "目錄",
+     "kind": "who"
+    },
+    {
+     "text": "The Government's clearance files give the name and the address of each claimant. One file holds the business-loss claim of 朱耀山 and his property company, 恒暉地產 (Hang Fai Property Co.).",
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-256",
+     "kind": "where"
+    },
+    {
+     "text": "The file puts the company on the G/F of a building on Tai Chang Street (大井街). The labels of the model do not show its number. Peel the City to G/F and read the shop names.",
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-256; the model, place grs:HKRS1255-3-256 (basis verified)",
+     "kind": "show"
+    }
+   ],
+   "solved": "You found Chu Yiu Shan (朱耀山) at the desk of his company, 恒暉地產. People leave their flats with him, and he sells them on their behalf when the price is fair. He said: \"As a resident who had lived in the City for many years, I was in a good position to find out who the real owners were.\" The water men helped him: \"I knew the people who 'released' the water, and they helped me identify who had built which properties.\" When the Government announces the clearance in January 1987, he moves to Junk Bay. Later he said: \"The demolition of the Walled City will be the end of everything. I only hope that I can get a hawker's licence.\"",
+   "sources": [
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "I used to earn around $20,000 a month through my property business, which became the biggest in the Walled City."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "Born in 1951, Chu Yiu Shan was brought up and spent much of his adult life in the Walled City. He operated as a property developer and estate agent for many years, only moving to Junk Bay when the clearance was announced."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "My parents ran a store and, when I was about 13 years old, I began delivering drinks to nearby establishments."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "These included some specialising in opium, 'red pills', gambling and sex shows."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "I got involved in the property business to serve as an intermediary between sellers and buyers."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "I had seen a lot of cheating, with people running off with deposits by 'selling' properties which did not belong to them."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "People entrusted their flats to me. They would ask for a certain price and, if I considered it to be reasonable, I would try and sell the property on their behalf."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "As a resident who had lived in the City for many years, I was in a good position to find out who the real owners were."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "I knew the people who 'released' the water, and they helped me identify who had built which properties."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p113",
+     "quote": "The demolition of the Walled City will be the end of everything. I only hope that I can get a hawker's licence."
+    },
+    {
+     "source": "中華書局 (Chung Hwa Book Co., Hong Kong), 黑暗之城──九龍城寨的日與夜 (Chinese edition of City of Darkness Revisited, 2015), 目錄 (table of contents)",
+     "cite": "目錄",
+     "quote": "朱耀山（Chu Yiu Shan） | 城寨地產經紀"
+    },
+    {
+     "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+     "cite": "HKRS1255-3-256",
+     "quote": "G/F & Cockloft, 17 Tai Chang Street, 朱耀山-恒暉地產 Hang Fai Property Co."
+    }
+   ],
+   "skills": [
+    "join two sources (the book and a Government file)",
+    "read a Chinese name",
+    "peel the City to G/F",
+    "read the shop names"
+   ]
+  },
+  {
+   "n": 10,
+   "id": "eighth-floor",
+   "title": "The eighth floor",
+   "titleZh": "城寨男孩",
+   "person": "albert-ng-kam-po",
+   "difficulty": 10,
+   "answer": {
+    "type": "room",
+    "rooms": [
+     "171:7:1"
+    ],
+    "when": "the room is there at any hour; Albert is at home on most evenings and every night (inferred)"
+   },
+   "brief": "A newspaper wrote of a boy who \"went to school outside the Walled City but remembers playing on its rooftop and in its corridors\". Find the room where his family lives.",
+   "clues": [
+    {
+     "text": "The boy is Albert Ng Kam-po (吳錦波), from a Chiu Chow (潮州) family. His family moved in in 1975, for \"the relatively cheaper price\".",
+     "source": "Asia Society Hong Kong, 'Life in Kowloon Walled City' (2013 roundtable page)",
+     "cite": "https://asiasociety.org/node/17291; WSJ 2014, People chapter (Chiu Chow, 1975)",
+     "kind": "who"
+    },
+    {
+     "text": "For him \"the roof top was the only place to play\". When a ball fell, \"we had to run from the eight floor all the way to the third floor and get the ball back.\"",
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "kind": "look"
+    },
+    {
+     "text": "\"I lived on the eighth floor and there was no elevator.\" In Hong Kong the ground floor is G/F, and the floor above it is 1/F. Thus his \"eighth floor\" is 7/F.",
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "kind": "how"
+    },
+    {
+     "text": "\"Every single day, we would have to go the public water stations so we could drink and shower.\" In the model he fetches water at the standpipe in the late afternoon (inferred). Follow him home.",
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "kind": "when"
+    },
+    {
+     "text": "A newspaper fact box gives the flat as Room A, 7/F, 8 Sz Kung St. (社公街). But the numbers in the City moved all the time. In the model, the flat is not in the building labelled 8 Sz Kung Street: peel the City to 7/F and try its neighbours.",
+     "source": "WSJ 2014, People chapter",
+     "cite": "People chapter, fact box; City of Darkness Revisited p146 (the numbers); the model, place T1 (basis verified)",
+     "kind": "where"
+    }
+   ],
+   "solved": "You found the home of Albert Ng Kam-po (吳錦波): Room A, 7/F, the eighth storey of its building. \"I used to live in a one bedroom flat and it used to be about 200 square feet.\" Five people live here, and the one bedroom is for his mother and his younger sister. \"The wall was always wet and mouldy and it used to smell really, really bad.\" In 1988 he leaves for the University of Hong Kong (香港大學), and later he becomes a pastor. Of the hard years here he said: \"But we had hope\".",
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Albert Ng Kam-po went to school outside the Walled City but remembers playing on its rooftop and in its corridors."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Room A, 7/F, 8 Sz Kung St."
+    },
+    {
+     "source": "Asia Society Hong Kong, 'Life in Kowloon Walled City' (2013 roundtable page)",
+     "cite": "https://asiasociety.org/node/17291",
+     "quote": "The reason we moved into the Walled City was the relatively cheaper price."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "I lived on the eighth floor and there was no elevator."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "we had to run from the eight floor all the way to the third floor and get the ball back."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "the roof top was the only place to play"
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "Every single day, we would have to go the public water stations so we could drink and shower."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "I used to live in a one bedroom flat and it used to be about 200 square feet."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng'",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "The wall was always wet and mouldy and it used to smell really, really bad."
+    },
+    {
+     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
+     "cite": "p146",
+     "quote": "Today, I still remember that the buildings in Kwong Ming Street in the Walled City were numbered 1 to 43, but after 43 it went something like 39, then 35, then 31, and 29 and so on, the numbering was all over the place."
+    },
+    {
+     "source": "Asia Society Hong Kong, 'Life in Kowloon Walled City' (roundtable report, Nov 2013)",
+     "cite": "https://asiasociety.org/hong-kong/life-kowloon-walled-city",
+     "quote": "But we had hope,"
+    }
+   ],
+   "skills": [
+    "join a chain of sources",
+    "know Hong Kong floor numbers",
+    "follow a person",
+    "peel the City to one storey",
+    "doubt a building label"
+   ]
+  }
+ ]
+}

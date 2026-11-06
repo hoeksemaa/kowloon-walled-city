@@ -42,7 +42,10 @@ export function placesByBuilding(uses) {
   return m;
 }
 
-const placeName = (p) => `${esc(p.name)}${p.nameZh && !String(p.name).includes(p.nameZh) ? ` (${esc(p.nameZh)})` : ''}`;
+// A place that would give away the answer of an open mystery (src/life/mysteries.js sets
+// p.mystery to the number of its case) shows no name until the case is solved.
+const placeName = (p) => (p.mystery ? `<i>a place of an open mystery (case ${p.mystery})</i>`
+  : `${esc(p.name)}${p.nameZh && !String(p.name).includes(p.nameZh) ? ` (${esc(p.nameZh)})` : ''}`);
 
 // The uses of the rooms of storey k of building b, as swatches with counts.
 function storeyUses(uses, B, k) {
@@ -60,6 +63,7 @@ function roomHtml(S, uses, B, { k, u }) {
   const p = r.place ? uses.places.get(r.place) : null;
   let html = `<h3>ROOM · ${where.toUpperCase()}</h3><div class="r"><span class="k">use</span><span>${sq(r.cat)} <b>${esc(uses.label(r.cat))}</b> · ${r.basis}</span></div>`;
   if (!p) return `${html}<div class="sub">${BASIS[r.basis] || ''}</div>`;
+  if (p.mystery) return `${html}<div class="r"><span class="k">place</span><span>${placeName(p)}: solve the case to see its name and its sources.</span></div>`;
   const addr = [p.address, p.floor != null ? floorName(Math.max(0, p.floor)) : '', p.map_pin != null ? `1992 map no. ${p.map_pin}` : ''].filter(Boolean).join(', ');
   html += `<div class="r"><span class="k">place</span><span><b>${placeName(p)}</b>: ${esc(p.use)}</span></div>
     <div class="r"><span class="k">source</span><span>${esc(addr || 'no address')} · placed by ${esc(p.how)}</span></div>`;
@@ -101,7 +105,7 @@ export function panelHtml(S, uses, places, b, peel, room, roomExtra = '') {
     html += `<h3>PLACES OF THE SOURCES IN THIS BUILDING (${ps.length})</h3>`;
     for (const p of ps.slice(0, 12)) {
       const floors = [...new Set(p.at.filter((a) => a[0] === B.id).map((a) => (a[1] >= B.n ? 'roof' : floorName(a[1]))))].join(', ');
-      html += `<div class="r w"><span class="k">${floors}</span><span>${sq(p.cat)}<b>${placeName(p)}</b> · ${esc(p.use)} · <i>${p.basis}</i></span></div>`;
+      html += `<div class="r w"><span class="k">${floors}</span><span>${sq(p.cat)}<b>${placeName(p)}</b>${p.mystery ? '' : ` · ${esc(p.use)} · <i>${p.basis}</i>`}</span></div>`;
     }
     if (ps.length > 12) html += `<div class="sub">and ${ps.length - 12} more</div>`;
   }

@@ -27,7 +27,8 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
     Government, and the real people of `data/routines.json`); `routines.js` plans the day of
     each person; `sim.js` moves them; `figures.js` draws them (instanced); `personPanel.js`
     gives the panel of a person. `furnish.js` puts the things of `data/furnishings.json` in
-    the rooms and on the roofs (instanced, one mesh for each kind).
+    the rooms and on the roofs (instanced, one mesh for each kind). `mysteries.js`: the ten
+    cases of `data/mysteries.json`.
   - Not loaded now: the old people, labels and game of the main app (`people.js`,
     `routes.js`, `crowd.js`, `figures.js`, `game.js`, `labels.js`, `occlude.js`, `useMap.js`,
     `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app (see "Not
@@ -217,6 +218,16 @@ documented room has its own list. Where each thing stands is INFERRED. The thing
 the floors show (pulled apart, or the peeled storey), and the small things show only near
 the camera. Click a thing to see what it is and its source; the panel of a room lists its
 things and the people in it now.
+
+### The mysteries
+
+The MYSTERIES button (top left, under the tools) opens ten cases of `data/mysteries.json`:
+ten real people of the week to find, from easy (1) to hard (10). Each case gives five clues,
+one at a time; the last clue helps a lot but does not give the answer. Click the person in
+the City (for case 10, the room) to solve the case: its circle is checked, and its story opens.
+Until a case is solved, its person is "SOMEONE" in the box under the pointer, and the places of
+the sources that would give the answer away show no name. The browser keeps the solved cases
+(`src/life/mysteries.js`).
 
 ### Not yet on the structure
 

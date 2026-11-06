@@ -61,8 +61,9 @@ export function personHtml(ctx, i) {
   return html;
 }
 
-// The box of person i under the pointer.
-export function personTip(life, i) {
+// The box of person i under the pointer. hide: the person is the answer of an open mystery
+// (src/life/mysteries.js): no name until they are found.
+export function personTip(life, i, hide = false) {
   const p = life.persons[i], now = life.now(i), P = p.person;
-  return `<div class="tt-h">${P ? nameOf(P) : article(roleOf(p)).toUpperCase()}</div><div>${esc(now.doing || '')}</div>`;
+  return `<div class="tt-h">${P && !hide ? nameOf(P) : P ? 'SOMEONE' : article(roleOf(p)).toUpperCase()}</div><div>${esc(now.doing || '')}</div>`;
 }
