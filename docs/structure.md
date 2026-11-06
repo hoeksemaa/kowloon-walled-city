@@ -40,7 +40,10 @@ only with `--refreeze`.
 ## Changes since the freeze
 
 John approved changes "to correctly match the historical presence of verified rooms" on
-2026-11-05. Each change and its source:
+2026-11-05. On 2026-11-06 John kept the other heights that one source disagrees with (the
+Chung Fat Café building, and the buildings of Chan Pui Yin and Lam Tseng Yat in
+`docs/rooms.md`): a height changes only when a verified room cannot fit in the model. Each
+change and its source:
 
 - 2026-11-05: codes 62 and 51 (31 and 28-29 Tung Tau Tsuen Road (東頭村道)) have 13 storeys,
   not 12. Chan Cheung-chuen (陳祥全) lived at "12/F, Room B, 31 Tung Tau Tsuen Rd." from

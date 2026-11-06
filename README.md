@@ -13,7 +13,8 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
     `fixes.js` and `choices.js` (they apply the two structure data files), `poly.js`.
   - `src/surroundings/`: **the surroundings** of the structure. `ground.js` (the terrain,
     roads, paths, courts and the real buildings of 1986) and `shapes.js` (their solids).
-  - `src/structureViewer.js`: the viewer of `structure.html`. `src/structureColors.js`: the viewer's placeholder colours.
+  - `src/structureViewer.js` and `src/roomUses.js`: the viewer of `structure.html`, with the
+    room uses of December 1986. `src/structureColors.js`: the viewer's placeholder colours.
   - The other files: the main app of `index.html` (`main.js`, `people.js`, `routes.js`,
     `planes.js`, `labels.js`, `sound.js`, `game.js`, `style.css` and others). `cityMesh.js`,
     `floorplan.js`, `facades.js`, `roofs.js` and `interiors.js` are its superseded 3D city.
@@ -110,7 +111,11 @@ only for a large error that a new source shows, and only when John approves it. 
 - `src/surroundings/`: **the surroundings**, context only: the terrain, the roads, paths and
   courts, and the real buildings of 1986 round the City.
 - `src/structureViewer.js` (`structure.html`): the viewer, the one place that puts the two
-  together.
+  together. Its "Room uses" panel (`src/roomUses.js`, `data/room_uses.json`) shows one floor of
+  each building at a time, colours each room by its use in December 1986 or by its certainty
+  (verified, likely, guess), filters the rooms by category and certainty, and finds a
+  documented place by name. A click on a room gives its use, its certainty and its sources.
+  See [docs/rooms.md](docs/rooms.md).
 
 The two parts do not import each other. The structure has no colours: the viewer gives its
 placeholder colours (`src/structureColors.js`). Only the structure is definitive. Each earlier 3D model of the City is superseded, also the 3D city of the main
