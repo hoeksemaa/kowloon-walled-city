@@ -10,31 +10,31 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 | --- | --- | --- | --- | --- |
 | [Chan Hip Ping](#chan-hip-ping) | Kai Fong Association vice-president | Helped the Kai Fong Association from its start in 1963; Vice-President from 1966; no longer a resident at the time of the interview | yes | 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
 | [Chan Kwan Leung](#chan-kwan-leung) | pigeon breeder | From 1981 to the interview; the Housing Department registered him as a resident in January 1987 | yes | 75:0:0 (G/F, Chan Kwan Leung's pigeon lofts); 59:2:2 (2/F, Chan Kwan Leung's flat) |
-| [Chan Kwong](#chan-kwong) | golf-ball maker | factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming | yes |  |
+| [Chan Kwong](#chan-kwong) | golf-ball maker | factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming | yes | 111:0:0 (G/F, Tai Kwong Ho Metals & Plastic Mfy. [Manufactory]) |
 | [Chan Pui Yin](#chan-pui-yin) | herbal doctor | store on Lung Chun Road from 1955; still living and working in the City at the time of the interview | yes | 243:0:0 (G/F, Chan Pui Yin's herbal medicine store) |
 | [Chan Wai Shui](#chan-wai-shui) | noodle maker | Worked in the City from 1979 for more than 10 years; did not live in the City | yes | 78:0:0 (G/F, Chan Wai Shui's noodle factory) |
 | [Chau Pak](#chau-pak) | storekeeper | worked in the City in the late 1980s (map of 1992) | not known | 196:0:0 (G/F, Chau Pak's store) |
 | [Cheng Koon Yiu](#cheng-koon-yiu) | dentist | school in the City from about age 8 or 9; dental apprentice from age 14; in the City again from 1963 until the clearance | yes | 249:0:0 (G/F, Cheng Koon Yiu's dental clinic) |
 | [Cheng San](#cheng-san) | wooden-ruler maker | 1968-1990: factory on Tai Chang Street, where he also lived and slept | yes | 67:0:0 (G/F, Cheng San's ruler factory) |
 | [Chung Lo Ying](#chung-lo-ying) | mother of 10 | from 1958 to at least the time of the interview (more than 30 years); more than 10 years in the 4/F flat | yes | 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road); 222:1:0 (1/F, Chung family's first-floor flat in the new building) |
-| [Chung Yuk Yee](#chung-yuk-yee) | daughter, mother of two | 1961-1991: born in the City; moved out during the clearance in 1991 | yes | 263:12:0 (12/F, Chung Yuk Yee's flat) |
+| [Chung Yuk Yee](#chung-yuk-yee) | daughter, mother of two | 1961-1991: born in the City; moved out during the clearance in 1991 | yes | 263:12:0 (12/F, Chung Yuk Yee's flat); 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road) |
 | [Ho Chi Kam](#ho-chi-kam) | barber | lived in a flat on Tung Tau Tsuen Road from 1974; ran the barber's shop at 10 Tai Chang Street from 1985 to 1991 | yes | 201:0:0 (G/F, Ho Chi Kam's barber's shop); 0:11:3 (11/F, Ho Chi Kam's flat on Tung Tau Tsuen Road); 186:0:2 (G/F, Ho Chi Kam's barber shop) |
-| [Hui Kwong](#hui-kwong) | Chiu Chow music player | in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991 | yes | 157:3:0 (3/F, Chiu Chow Music Club) |
-| [Hui Tung Choy](#hui-tung-choy) | noodle maker | From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City | yes | 198:9:0 (9/F, Hui family flat) |
+| [Hui Kwong](#hui-kwong) | Chiu Chow music player | in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991 | yes | 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices) |
+| [Hui Tung Choy](#hui-tung-choy) | noodle maker | From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City | yes | 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat) |
 | [Jackie Pullinger (潘靈卓)](#jackie-pullinger) | missionary | worked in the City from 1973 ('The Well') until shortly after the clearance announcement; she did not live there | yes | 254:0:3 (G/F, Shuiyuan youth centre (Jackie Pullinger)); 237:0:0 (G/F, St Stephen's Society) |
 | [Jetly Chau Sau Yee](#chau-sau-yee) | Chiu Chow cake maker | worked in the City; bought the shop before he heard of the demolition plan (the clearance was announced in 1987); no start year given | yes | 11:2:0 (2/F, Jetly Chau's Chiu Chow cake shop) |
 | [Kwok Lau Hing](#kwok-lau-hing) | retired office cleaner | Never a resident of the City itself; lived at 5C Sai Tau New Street, a settlement on its outskirts, from her 30s until the settlement's clearance (decided for 1985); later a regular visitor to the Old People's Centre | no | 172:2:1 (2/F, Old People's Centre); 82:1:5 (1/F, Kwok Lau Hing's home) |
-| [Lam Leung Po](#lam-leung-po) | minced-fish factory partner | partner in the factory in the City from 1983 until the clearance | yes |  |
+| [Lam Leung Po](#lam-leung-po) | minced-fish factory partner | partner in the factory in the City from 1983 until the clearance | yes | 247:0:0 (G/F, Leun Hing Food Company) |
 | [Lam Mei Kwong](#lam-mei-kwong) | retired dentist | in the City from 1949 to the late 1980s; at 4A Lung Shing Road almost continuously | yes | 101:0:0 (G/F, Lam Mei Kwong dental clinic); 111:3:0 (3/F, Lam Mei Kwong's home / former dental surgery) |
 | [Lam Tseng Yat](#lam-tseng-yat) | grocer | From 1947, when the family opened the store, to the interview; he said that the shop had existed for more than 40 years | yes | 84:0:2 (G/F, Lam family grocery); 111:1:0 (1/F, Lam family flat, first floor); 111:4:0 (4/F, Lam family flat, fourth floor) |
 | [Lau Yeung Yin](#lau-yeung-yin) | weaving factory owner | born in the City; ran his factory on Sai Shing (West City) Road from 1982 | yes | 232:2:1 (2/F, Lau Yeung Yin's weaving and threading factory) |
 | [Law Kim Kwong](#law-kim-kwong) | cake maker | Resident in the City for 20 years (at the time of the photograph; the book gives no year) | not known | 219:0:0 (G/F, Law Kim Kwong's bakery) |
 | [Law Yu Yi](#law-yu-yi) | retired maid | in the City for 28 years at the time of the caption, when she was 90; the years are not given | yes | 186:3:0 (3/F, Law Yu Yi's flat); 250:4:1 (4/F, Law Yu Yi's son's flat) |
-| [Lee Pui Yuen](#lee-pui-yuen) | shopkeeper | 1964-1991: about 15 years in the City before 1979, then 12 years at his store | yes | 152:0:0 (G/F, Living area behind Lee Pui Yuen's store) |
-| [Lee Yu Chun](#lee-yu-chun) | candy maker | worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s | yes | 271:0:0 (G/F, Lee Yu Chun's candy factory) |
+| [Lee Pui Yuen](#lee-pui-yuen) | shopkeeper | 1964-1991: about 15 years in the City before 1979, then 12 years at his store | yes | 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store) |
+| [Lee Yu Chun](#lee-yu-chun) | candy maker | worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s | yes | 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory) |
 | [Ng Kam Mui](#ng-kam-mui) | Chung Fat Café worker | lived or worked at the Chung Fat Café for nearly 30 years, from its opening in the 1960s to its closure in 1991 | yes | 31:0:0 (G/F, Chung Fat Café); 31:0:2 (G/F, Chung Fat Café cockloft); 12:2:0 (2/F, Ng family's two storeys in the 11-storey building) |
 | [Reverend Isaac Liu](#isaac-liu) | missionary | Worked in the City from his seminary years in the 1950s and visited it often from the mid-1950s; lived in the City from 1971; left the Yamen premises in 1991 | yes | 266:0:0 (G/F, Yamen (CNEC Living Word Church compound)); 172:2:1 (2/F, Old People's Centre); 269:0:0 (G/F, Rev. Isaac Liu's mission) |
-| [Simon Wong](#simon-wong) | Salvation Army officer | Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968 | not known |  |
+| [Simon Wong](#simon-wong) | Salvation Army officer | Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968 | not known | 185:0:1 (G/F, Salvation Army kindergarten door) |
 | [To Gui Bon](#to-gui-bon) | rubber-plunger maker | about 25 years of work in the City ('more than 20 years' at one spot), until the clearance | yes | 195:0:0 (G/F, To Gui Bon's rubber factory) |
 | [Tsin Mu Lam](#tsin-mu-lam) | doctor | 1973 to 1992 (clinic and home); his father practised in the City in the 1950s and 1960s | yes | 4:2:3 (2/F, Tsin Mu Lam's clinic) |
 | [Wong Hoi Ming](#wong-hoi-ming) | herbal doctor | no years given: from his move from Hong Kong Island until the clearance | not known | 104:0:0 (G/F, Wong Hoi Ming Bonesetter) |
@@ -72,6 +72,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: Tai Kwong Plastic Factory, Tai Chang Street (大井街), in the Walled City, from 1972; before that, rented premises on Shing Ngam Road, Kowloon City (1970-1972)
 - In the City: factory on Tai Chang Street in the City from 1972; still working there at the time of the interview, when the demolition was coming
+- Rooms in the model (building:floor:unit): 111:0:0 (G/F, Tai Kwong Ho Metals & Plastic Mfy. [Manufactory])
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "Two years later, he moved to Tai Chang Street in the Walled City."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "At times, I was operating 24 hours a day. At one stage, I also employed 30 or more female workers who worked from home."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p88: "It is a lot easier to do business in the Walled City – fewer inspectors from the Labour Services Department and greater freedom."
@@ -150,7 +151,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Home: a windowless flat of 230 square feet, facing north, in the same building as her mother's flat (82 Lung Chun Road (龍津道))
 - In the City: 1961-1991: born in the City; moved out during the clearance in 1991
-- Rooms in the model (building:floor:unit): 263:12:0 (12/F, Chung Yuk Yee's flat)
+- Rooms in the model (building:floor:unit): 263:12:0 (12/F, Chung Yuk Yee's flat); 263:4:2 (4/F, Chung Lo Ying's flat, 4/F, 82 Lung Chun Road)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "lived in the Walled City from her birth, in 1961, until moving out during part of the clearance in 1991."
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p159: "Chung Yuk Yee's windowless flat was in the bowels of the City. Just 230 square feet in area, it was divided into two rooms"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p161: "Once, I actually saw a rat run over my baby daughter's bed."
@@ -173,7 +174,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: Kai Fong Association, volunteer and then part-time staff and treasurer, for 10 years, until a few months before the demolition was announced; Chiu Chow Music Club, member, to 1991; a plastic-goods machine in the 1970s
 - In the City: in the City from 1961 (book's introduction; his own account brings his wife and daughter to Hong Kong in 1965) to at least 1991
-- Rooms in the model (building:floor:unit): 157:3:0 (3/F, Chiu Chow Music Club)
+- Rooms in the model (building:floor:unit): 157:3:0 (3/F, Chiu Chow Music Club); 8:3:2 (3/F, Kowloon Walled City Kai Fong Association offices)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview introduction, p40: "He had lived in the City since 1961 and had served as the financial secretary of the Kai Fong Association there for many years."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "I spent 10 years with the Kai Fong. When I became treasurer, there was a balance of just $700 in the account"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p41: "And then, just a few months later, it was announced that the Walled City was to be pulled down."
@@ -185,7 +186,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: A flat on a higher floor of the same building as the factory, 2 Kwong Ming Street; earlier Sai Tau village (pulled down in 1985)
 - Work: His noodle factory at the back of 2 Kwong Ming Street, barely 200 square feet, with a door on to Kwong Ming Street
 - In the City: From 1965, when the factory opened; at the interview he had been "around the City for the past 25 years"; the family earlier lived in Sai Tau village, beside the City
-- Rooms in the model (building:floor:unit): 198:9:0 (9/F, Hui family flat)
+- Rooms in the model (building:floor:unit): 2:0:3 (G/F, Wang Fat Noodles Factory); 198:9:0 (9/F, Hui family flat)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p172: "Hui Tung Choy opened his noodle factory at the back of 2 Kwong Ming Street in 1965."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We have a flat up above but we cook and take our showers here, and my kids do their homework here too."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p173: "We chose the Walled City because rents were low and you didn't need a licence."
@@ -230,6 +231,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: the minced-fish factory, about 480 sq ft, in an alley off Tai Chang Street (大井街)
 - In the City: partner in the factory in the City from 1983 until the clearance
+- Rooms in the model (building:floor:unit): 247:0:0 (G/F, Leun Hing Food Company)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "Lam Leung Po (above) became a partner in his minced-fish factory in 1983. Located in an alley off Tai Chang Street"
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "This business has been here, in the Walled City, for about eight or nine years."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p292: "A few neighbours – ladies – help me with the fish dumplings. I have five full-time workers as well"
@@ -299,7 +301,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: from 1979, a small living area behind a partition at the back of his store, 12 Tai Chang Street (大井街); before that, a very small shared place in the City (four families in about 300 square feet)
 - Work: his own store at 12 Tai Chang Street (大井街), 1979-1991
 - In the City: 1964-1991: about 15 years in the City before 1979, then 12 years at his store
-- Rooms in the model (building:floor:unit): 152:0:0 (G/F, Living area behind Lee Pui Yuen's store)
+- Rooms in the model (building:floor:unit): 137:0:1 (G/F, 順發士多); 152:0:0 (G/F, Living area behind Lee Pui Yuen's store)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Lee Pui Yuen lived in the Walled City for 15 years, before opening his own store there at 12 Tai Chang Street, in 1979."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p93: "Four families, more than 20 people, lived there, in an area of around 300 square feet."
 - City of Darkness Revisited (Girard and Lambot, 2014), photo caption, p94: "a small living area at the back of the shop, where Lee slept with his wife and son."
@@ -311,7 +313,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 - Home: Tsz Wan Shan, where the family lived; she later also lived in the City (no address given)
 - Work: Chui Fung candy factory: two floors of a rented cottage in the City from 1967, then 12 Sai Shing (West City) Road from the early 1970s
 - In the City: worked in the City from 1967 and later lived there too; the factory was at 12 Sai Shing (West City) Road from the early 1970s
-- Rooms in the model (building:floor:unit): 271:0:0 (G/F, Lee Yu Chun's candy factory)
+- Rooms in the model (building:floor:unit): 113:0:0 (G/F, Shui Tung Confectionery); 271:0:0 (G/F, Lee Yu Chun's candy factory)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "Lee Yu Chun worked in the family's candy business from its beginning in 1964, when she was not yet 10 years old."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "We only worked in the Walled City then, and continued to live in Tsz Wan Shan, although I later came to live here as well."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p76: "to its final location at 12 Sai Shing (West City) Road in the early 1970s."
@@ -346,6 +348,7 @@ Real people who lived or worked in Kowloon Walled City (九龍城寨), each from
 
 - Work: Salvation Army (救世軍) kindergarten, Lung Chun Back Road (龍津後街)
 - In the City: Officer responsible for the Walled City at the time of the interview, after the demolition was announced; the Salvation Army worked in the City from 1968
+- Rooms in the model (building:floor:unit): 185:0:1 (G/F, Salvation Army kindergarten door)
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The interview was given by Simon Wong, an officer in the Salvation Army responsible for the Walled City."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "the Salvation Army ran a well-attended kindergarten at its premises on Lung Chun Back Road for many years."
 - City of Darkness Revisited (Girard and Lambot, 2014), interview, p300: "The Salvation Army first started working in the Walled City in 1968"

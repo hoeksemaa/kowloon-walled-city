@@ -2,7 +2,7 @@
 // published source) and writes docs/people.md. The people are separate from the rooms
 // (data/room_uses.json): a person links to the research facts of the places where they lived or
 // worked (linked_facts, the ids of data/room_research.json), and through them to the rooms that
-// the room build gave those places.
+// the room build gave those places (directly, through same_as, or through linked_place).
 //
 //     node tools/build_people.mjs
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -34,10 +34,21 @@ if (problems.length) {
 
 const esc = (s) => String(s ?? '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
 const FL = (k) => (k === 0 ? 'G/F' : `${k}/F`);
-const roomsOf = (p) => (p.linked_facts || []).flatMap((f) => {
-  const pl = placeOf.get(f);
-  return pl?.at ? pl.at.map(([b, k, u]) => `${b}:${k}:${u} (${FL(k)}, ${esc(pl.name)})`) : [];
-});
+// the room place of a fact: its own, else the place of the same record (same_as, for example a
+// GRS file), else the place of the fact that it belongs to (linked_place, for a person)
+const placeFor = (id, depth = 0) => {
+  const f = facts.get(id);
+  return placeOf.get(id) || (f?.same_as && placeOf.get(f.same_as))
+    || (f?.linked_place && depth < 3 ? placeFor(f.linked_place, depth + 1) : null);
+};
+const roomsOf = (p) => {
+  const out = new Map();
+  for (const f of p.linked_facts || []) {
+    const pl = placeFor(f);
+    for (const [b, k, u] of pl?.at || []) out.set(`${b}:${k}:${u}`, `${b}:${k}:${u} (${FL(k)}, ${esc(pl.name)})`);
+  }
+  return [...out.values()];
+};
 const named = (p) => `${p.name}${p.nameZh && !p.name.includes(p.nameZh) ? ` (${p.nameZh})` : ''}`;
 const in86 = (v) => (v === true ? 'yes' : v === false ? 'no' : 'not known');
 
