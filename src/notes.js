@@ -68,7 +68,14 @@ source gives is marked inferred.</p>
     the roof rooms, and where each link is.</li>
 </ul>
 
+<h4>The people and the things</h4>
+<p><span class="st ok">SOURCED</span>28,200 residents in January 1987 (p340) and about 4,800 people who came in
+to work (p339); the sweepers, refuse collectors, meter readers and police of the Government; 120 real
+people with their days (data/routines.json), each hour marked sourced or inferred.</p>
+<p><span class="st prov">INFERRED</span>The roles, homes, workplaces and hours of the crowd, who have no names:
+no source names them. Where each thing stands in a room. The recipe of each kind of room comes from the
+photos and texts of the sources (data/furnishings.json).</p>
 <h4>Not yet on this structure</h4>
-<p>The people of the week, the street names, the numbers of the 1992 map and the game Find them
-(尋人) sat on the old city of this app. They come back in later changes, on this structure.</p>`;
+<p>The street names, the numbers of the 1992 map and the game Find them (尋人) sat on the old city of
+this app. They come back in later changes, on this structure.</p>`;
 }

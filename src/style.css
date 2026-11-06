@@ -117,7 +117,15 @@ button { font: inherit; color: inherit; }
 #bld .sq { flex: none; width: 10px; height: 10px; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.35); }
 #bld .sq.inf { border: 1px dashed var(--ink); }
 #bld details summary { cursor: pointer; }
+#bld .tag { display: inline-block; padding: 0 4px; font-family: var(--pixel); font-size: 7px; line-height: 12px; vertical-align: 1px; }
+#bld .tag.verified { background: #184f95; color: #fff; }
+#bld .tag.guess { border: 1px solid var(--ink-3); color: var(--ink-2); line-height: 10px; }
+#bld .follow { margin: 6px 0 2px; padding: 2px 8px; border: 2px solid var(--panel-edge); background: var(--panel); font-family: var(--pixel); font-size: 8px; cursor: pointer; color: var(--ink); }
+#bld .follow.on, #bld .follow:hover { background: var(--label-bg); color: var(--label-ink); }
 #bld details[open] summary { margin-bottom: 2px; }
+#bld .who { display: block; width: 100%; text-align: left; margin: 3px 0; padding: 3px 6px; border: 1px solid var(--panel-edge); background: var(--panel); cursor: pointer; font: inherit; font-size: 11.5px; color: var(--ink); }
+#bld .who:hover { background: #f3efe3; }
+#bld .who .tt-h { font-family: var(--pixel); font-size: 8px; }
 
 /* ---- tooltip ---- */
 #tooltip {
