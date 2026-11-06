@@ -312,9 +312,9 @@ with John's approval.
   routes. `src/structureColors.js`: its placeholder colours, which the main app uses too.
 - `src/cityLayers.js` (the main app): the same mesh, cut into one layer for each floor index
   (the roof of a building of n storeys is layer n). The layers pull apart with a clear gap of
-  6 m between them, and a peel takes away all that is over one storey, with the walls of that
-  storey cut 1.2 m over each floor. It does not change the structure: it only moves and hides
-  the parts that `mesh.js` makes.
+  6 m between them, and a peel takes away all that is over one storey. It cuts nothing: it
+  only moves and hides the parts that `mesh.js` makes, and the walls of the peeled storey stay
+  whole (since 2026-11-06).
 
 ## Not done yet
 

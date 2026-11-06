@@ -8,8 +8,8 @@
 //   the 1/F of another (the G/F floors range over 15 m of the slope), but a clear gap of GAP m
 //   lies between the highest point of each layer and the lowest point of the next;
 // - peeled to storey c (setPeel), the layers over c go, with all the roofs over storey c and
-//   all that is on them, and the walls of storey c end PEEL_H m over each building's own
-//   floor: all the rooms of that storey show from above.
+//   all that is on them: all the rooms of that storey show from above, with their walls whole.
+// Nothing is cut: the layers only move apart, or go.
 // The structure has no colours: the caller gives colorOf (src/structureColors.js).
 import * as THREE from 'three';
 import { buildMesh, buildProps, KIND } from './city/mesh.js';
@@ -17,9 +17,7 @@ import { levelAt, floorName } from './city/model.js';
 import { UNIT } from './city/plan.js';
 import { smoothstep } from './util.js';
 
-export const PEEL_H = 1.2; // the walls of a peeled storey end this high over its floor
 export const GAP = 6; // metres of clear air between two layers, pulled apart
-const OFF = 1e5; // no cut
 const NO_ID = -100;
 
 const triangulate = (outer, holes) => {
@@ -28,14 +26,8 @@ const triangulate = (outer, holes) => {
   return { pts: [...outer, ...holes.flat()], idx: tris.flat() };
 };
 
-// The peel in GLSL: a fragment of the peeled storey over the cut height of its building goes.
-const PEEL_GLSL = `varying vec3 vInfo; varying float vLy;
-uniform float uPeelK; uniform sampler2D uYcut;
-void peel() {
-  if (abs(vInfo.y - uPeelK) < 0.5 && vLy > texelFetch(uYcut, ivec2(int(vInfo.x + 0.5), 0), 0).r) discard;
-}`;
-const VERT_HEAD = 'attribute vec3 aInfo; varying vec3 vInfo; varying float vLy;';
-const VERT_BODY = 'vInfo = aInfo; vLy = position.y;';
+const VERT_HEAD = 'attribute vec3 aInfo; varying vec3 vInfo;';
+const VERT_BODY = 'vInfo = aInfo;';
 
 export class CityLayers {
   // S: the structure (buildStructure in src/city/model.js); colorOf: the colour of each part.
@@ -46,12 +38,8 @@ export class CityLayers {
     this.n = maxN + 1;
     this.spread = 0;
     this.peelK = -1;
-    this.ycut = new Float32Array(S.list.length).fill(OFF);
-    const tex = new THREE.DataTexture(this.ycut, S.list.length, 1, THREE.RedFormat, THREE.FloatType);
-    tex.minFilter = tex.magFilter = THREE.NearestFilter;
-    tex.needsUpdate = true;
     this.U = {
-      uPeelK: { value: -10 }, uYcut: { value: tex }, uSel: { value: NO_ID }, uHi: { value: NO_ID },
+      uSel: { value: NO_ID }, uHi: { value: NO_ID },
       uCutColor: { value: new THREE.Color('#3d3934') },
     };
 
@@ -156,8 +144,7 @@ export class CityLayers {
       Object.assign(sh.uniforms, this.U);
       sh.vertexShader = sh.vertexShader.replace('#include <common>', `#include <common>\n${VERT_HEAD}`)
         .replace('#include <begin_vertex>', `#include <begin_vertex>\n${VERT_BODY}`);
-      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', `#include <common>\n${PEEL_GLSL}\nuniform float uSel; uniform float uHi; uniform vec3 uCutColor;`)
-        .replace('void main() {', 'void main() {\n  peel();')
+      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; uniform float uSel; uniform float uHi; uniform vec3 uCutColor;')
         .replace('#include <dithering_fragment>', `#include <dithering_fragment>
   if (!gl_FrontFacing) gl_FragColor.rgb = uCutColor;
   if (abs(vInfo.x - uSel) < 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.98, 0.72, 0.36), 0.32);
@@ -167,18 +154,9 @@ export class CityLayers {
     return m;
   }
 
-  // The shadows see the peel too.
+  // The shadows: both faces of each part cast them.
   depthMaterial() {
-    const m = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking, side: THREE.DoubleSide });
-    m.onBeforeCompile = (sh) => {
-      Object.assign(sh.uniforms, this.U);
-      sh.vertexShader = sh.vertexShader.replace('#include <common>', `#include <common>\n${VERT_HEAD}`)
-        .replace('#include <begin_vertex>', `#include <begin_vertex>\n${VERT_BODY}`);
-      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', `#include <common>\n${PEEL_GLSL}`)
-        .replace('void main() {', 'void main() {\n  peel();');
-    };
-    m.customProgramCacheKey = () => 'kwc-layers-depth';
-    return m;
+    return new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking, side: THREE.DoubleSide });
   }
 
   // The pick: each fragment writes its building + 1 (red and green), and its layer and kind
@@ -188,7 +166,7 @@ export class CityLayers {
       uniforms: this.U,
       side: THREE.DoubleSide,
       vertexShader: `${VERT_HEAD}\nvoid main() { ${VERT_BODY} gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
-      fragmentShader: `${PEEL_GLSL}\nvoid main() { peel(); float id = vInfo.x + 1.0;
+      fragmentShader: `varying vec3 vInfo;\nvoid main() { float id = vInfo.x + 1.0;
   gl_FragColor = vec4(mod(id, 256.0) / 255.0, floor(id / 256.0) / 255.0, (vInfo.y + 16.0 * vInfo.z) / 255.0, 1.0); }`,
     });
   }
@@ -248,13 +226,9 @@ export class CityLayers {
     this.apply();
   }
 
-  // Peel the city to storey c: the layers over c go, and the walls of storey c end PEEL_H m
-  // over its floor. c = -1: no peel.
+  // Peel the city to storey c: the layers over c go; storey c stays whole. c = -1: no peel.
   setPeel(c) {
     this.peelK = c;
-    this.U.uPeelK.value = c >= 0 ? c : -10;
-    for (const b of this.S.list) this.ycut[b.id] = c >= 0 && b.n > c ? b.y[c] + PEEL_H : OFF;
-    this.U.uYcut.value.needsUpdate = true;
     this.apply();
   }
 
