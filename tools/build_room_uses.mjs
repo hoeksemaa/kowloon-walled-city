@@ -188,8 +188,23 @@ function pinBuilding(p, k) {
   const b = cands.length ? nearestTo(at, k, cands) : nearestTo(at, k);
   return b != null ? { b, how: 'map' } : null;
 }
+// lanes that the model does not know, but that a source puts next to an address
+// (B24/114: "Blk. C. 5/F. 3. Cheung On Lane" shares one 5/F with the rear block of Shing Hing
+// Bldg, 31B Tung Tau Tsuen Rd): the nearest building behind the address building, off the street
+const LANE_NEAR = { 'Cheung On Lane': { street: 'ttt', num: '31B', name: '31B Tung Tau Tsuen Rd' } };
+function laneNear(p, k) {
+  const at = LANE_NEAR[p.street];
+  const m = at && ADDR.resolve(at.street, at.num, 0);
+  if (!m) return null;
+  const b0 = S.list[m.b], front = new Set((L.frontage[at.street] || []).map((q) => S.ofPlot[q]));
+  const ids = S.list.filter((b) => !front.has(b.id) && usable(b.id, k) && Math.hypot(b.cx - b0.cx, b.cz - b0.cz) < 25).map((b) => b.id);
+  const b = nearestTo({ x: b0.cx, z: b0.cz }, k, ids);
+  return b != null ? { b, how: 'clue', note: `behind ${at.name} (building ${b0.id}, route map)` } : null;
+}
 // building of a place: { b, how } or null
 function findBuilding(p, k) {
+  const lane = laneNear(p, k);
+  if (lane) return lane;
   let key = streetKey(p.street), byClue = false;
   if (!key && !p.street) { key = textStreet(`${p.clue || ''} ${p.name || ''}`); byClue = !!key; }
   const n = num(p.num), along = byClue ? 'clue' : 'street';
@@ -365,6 +380,15 @@ for (const p of order) {
       .map((b) => [b.id, Math.hypot(b.cx - b0.cx, b.cz - b0.cz) - (street.has(b.id) ? 10 : 0)])
       .filter(([, d]) => d < 30).sort((x, y) => x[1] - y[1]);
     if (near.length) { bu = near[0][0]; moved = true; }
+  } else if (!freeAt(bu).length && p.basis === 'verified') {
+    // A model building often stands for several lots of the map, thus it has fewer rooms on a floor
+    // than the premises there: the next building on the same street frontage (centres within 12 m)
+    // that has a free unit, else the place shares a unit.
+    const b0 = S.list[found.b], key = streetKey(p.street);
+    const street = new Set(key && L.frontage[key] ? L.frontage[key].map((q) => S.ofPlot[q]) : []);
+    const near = S.list.filter((b) => b.id !== b0.id && street.has(b.id) && usable(b.id, k) && freeAt(b.id).length)
+      .map((b) => [b.id, Math.hypot(b.cx - b0.cx, b.cz - b0.cz)]).filter(([, d]) => d <= 12).sort((x, y) => x[1] - y[1]);
+    if (near.length) { bu = near[0][0]; moved = true; }
   }
   const free = freeAt(bu), all = onFloor.get(`${bu}:${k}`) || [];
   const pick = (list) => [...list].sort((a, c) => unitScore(c, p) - unitScore(a, p) || a.u - c.u)[0];
@@ -404,13 +428,18 @@ for (const r of units) if (r.place && r.cat !== 'home') {
 const need = {};
 for (const c of Object.keys(target)) need[c] = Math.max(0, target[c] - (documented[c] || 0));
 // the floors of the guesses: the floor spread of the GRS premises of the same category (all GRS
-// premises if the category has fewer than 10), rounded by largest remainder
+// premises if the category has fewer than 10), times the gap of each level to Suenn Ho's count,
+// rounded by largest remainder
 const grsAll = [0, 0, 0, 0, 0];
 for (const h of Object.values(grsFloors)) h.forEach((v, l) => (grsAll[l] += v));
 const quota = {}; // category -> [count per level band]
+// Each level takes guesses in the share of its gap to Suenn Ho's count (LEVEL): the documented
+// places fill G/F more than the upper floors (the sources show more G/F rooms).
+const gap = [0, 1, 2, 3, 4].map((l) => Math.max(0.05, (LEVEL[l] - docLevel[l]) / LEVEL[l]));
 for (const c of Object.keys(need)) {
   if (!need[c]) continue;
-  const h = grsFloors[c] && grsFloors[c].reduce((a, b) => a + b, 0) >= 10 ? grsFloors[c] : grsAll;
+  const h0 = grsFloors[c] && grsFloors[c].reduce((a, b) => a + b, 0) >= 10 ? grsFloors[c] : grsAll;
+  const h = h0.map((v, l) => v * gap[l]);
   const sum = h.reduce((a, b) => a + b, 0), row = h.map((v) => (v * need[c]) / sum), fl = row.map(Math.floor);
   const left = need[c] - fl.reduce((a, b) => a + b, 0);
   row.map((v, l) => [v - fl[l], l]).sort((a, b) => b[0] - a[0]).slice(0, left).forEach(([, l]) => fl[l]++);

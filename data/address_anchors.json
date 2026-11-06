@@ -1,5 +1,5 @@
 {
- "about": "House numbers and building names printed on the base plan of Suenn Ho's (何巽) route maps of 1991 (M+ CA17/2/1-3), read from the 1000 px online images. px: map pixels of copy CA17/2/3. plan: the same point in data/plan.json metres (tools/route_map_fit.py). readers: A and B are two readers of a tile, C is a later check of the street frontages.",
+ "about": "House numbers and building names printed on the base plan of Suenn Ho's (何巽) route maps of 1991 (M+ CA17/2/1-3), read from the 1000 px online images. px: map pixels of copy CA17/2/3. plan: the same point in data/plan.json metres (tools/route_map_fit.py). readers: A and B are two readers of a tile, C is a later check of the street frontages. street: the street of the number where the map makes it clear and the model has no lane there (the south part of Lung Shing Road).",
  "source": "M+, Hong Kong. CA17/2/1-3, Suenn Ho, route maps, 20-21 Nov 1991. See primary-sources/mplus-suenn-ho-ca17/SOURCE.md.",
  "labels": [
   {
@@ -5471,6 +5471,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     225.63,
     101.7
@@ -5488,6 +5489,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     226.4,
     105.98
@@ -5505,6 +5507,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     225.61,
     112.67
@@ -5522,26 +5525,10 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     228.8,
     109.04
-   ]
-  },
-  {
-   "text": "7",
-   "kind": "number",
-   "px": [
-    932,
-    487
-   ],
-   "confidence": "medium",
-   "readers": [
-    "C"
-   ],
-   "tile": "C:east",
-   "plan": [
-    226.8,
-    125.36
    ]
   },
   {
@@ -5556,6 +5543,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     219.47,
     102.0
@@ -5573,6 +5561,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     219.58,
     104.3
@@ -5590,6 +5579,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     219.94,
     111.81
@@ -5607,6 +5597,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "lsr",
    "plan": [
     220.15,
     116.14
@@ -5624,6 +5615,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "kms",
    "plan": [
     197.0,
     105.43
@@ -5641,6 +5633,7 @@
     "C"
    ],
    "tile": "C:east",
+   "street": "kms",
    "plan": [
     196.49,
     119.43
@@ -5678,6 +5671,114 @@
    "plan": [
     27.53,
     128.74
+   ]
+  },
+  {
+   "text": "7",
+   "kind": "number",
+   "px": [
+    933.5,
+    486
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    227.21,
+    125.05
+   ]
+  },
+  {
+   "text": "5",
+   "kind": "number",
+   "px": [
+    934,
+    500
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    227.55,
+    129.1
+   ]
+  },
+  {
+   "text": "3",
+   "kind": "number",
+   "px": [
+    933.5,
+    515
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    227.63,
+    133.46
+   ]
+  },
+  {
+   "text": "1",
+   "kind": "number",
+   "px": [
+    924,
+    535
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    225.24,
+    139.43
+   ]
+  },
+  {
+   "text": "4",
+   "kind": "number",
+   "px": [
+    918.5,
+    509
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    223.32,
+    131.96
+   ]
+  },
+  {
+   "text": "2",
+   "kind": "number",
+   "px": [
+    903,
+    521
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:southeast",
+   "street": "lsr",
+   "plan": [
+    219.13,
+    135.7
    ]
   }
  ],

@@ -5,7 +5,9 @@
 // A number is a label at a point of the plan. A label belongs to each street whose frontage
 // plots (L.frontage) are within FRONT_M of the point, and its plot is the nearest frontage plot
 // of that street (the map's lots reach the road edge; the model's plots can stop a few metres
-// short of it). Along each street, the
+// short of it). A label with a street (where the map makes the street clear and the model has
+// no lane there, as in the south part of Lung Shing Road) goes to that street and to the nearest
+// plot within 6 m. Along each street, the
 // numbers must run in order: the longest run in order is kept (on each side apart where the
 // odd and the even numbers face each other), and a label out of that order is dropped (a
 // misreading, or a corner plot of another street).
@@ -115,6 +117,11 @@ export function makeAddresses(L, S, anchors) {
     const pn = parseNum(a.text);
     if (!pn) continue;
     const [x, z] = a.plan;
+    if (a.street) { // the reader gives the street (the model has no lane there): the nearest plot
+      const q = plotNear(x, z, 6);
+      if (q >= 0 && axis[a.street]) (raw[a.street] ||= []).push({ ...pn, text: a.text, x, z, q, b: S.ofPlot[q], conf: a.confidence, t: along(a.street, x, z), side: side(a.street, x, z) });
+      continue;
+    }
     const cand = Object.keys(frontCells).map((s) => ({ s, f: nearestFront(s, x, z) })).filter((c) => c.f.d <= FRONT_M)
       .map((c) => ({ ...c, lane: laneCells[c.s] ? laneDist(c.s, x, z) : c.f.d }));
     const near = Math.min(...cand.map((c) => c.lane));
