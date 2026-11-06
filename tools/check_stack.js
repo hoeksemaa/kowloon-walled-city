@@ -16,11 +16,11 @@
 // - each building has its G/F in layer 0 and its roof in layer n (n storeys);
 // - pulled apart, the highest point of each layer is at least GAP m under the lowest point of
 //   the next one, and the dark plate under each layer lies in that gap;
-// - peeled to storey c, the layers over c are hidden; the walls of storey c of each building
-//   that has it end PEEL_H m over its floor c, and the other buildings are whole; the inside of a
-//   floor shows only on the peeled storey, or with the layers apart.
+// - peeled to storey c, the layers over c are hidden and the layers up to c show; nothing is
+//   cut (the layers have no cut); the inside of a floor shows only on the peeled storey, or
+//   with the layers apart.
 // The spread and the peel are put back at the end.
-import { GAP, PEEL_H } from '../src/cityLayers.js';
+import { GAP } from '../src/cityLayers.js';
 import { KIND } from '../src/city/mesh.js';
 
 export async function checkStack(kwc) {
@@ -77,10 +77,6 @@ export async function checkStack(kwc) {
       for (const lv of layers.layers) {
         if (lv.group.visible !== lv.k <= c) say(`peeled to ${c}: layer ${lv.k} ${lv.group.visible ? 'shows' : 'is hidden'}`);
         for (const m of lv.meshes) if (m.userData.inside && m.visible !== (e > 0.01 || lv.k === c)) say(`peeled to ${c}, spread ${e}: the inside of layer ${lv.k} ${m.visible ? 'shows' : 'is hidden'}`);
-      }
-      for (const B of S.list) {
-        const want = B.n > c ? B.y[c] + PEEL_H : null, got = layers.ycut[B.id];
-        if (want === null ? got < 1e4 : Math.abs(got - want) > 1e-3) say(`peeled to ${c}: building ${B.id} is cut at ${got}`);
       }
     }
   }

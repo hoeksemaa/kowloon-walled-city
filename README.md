@@ -160,8 +160,9 @@ deleted.
   plate under it (G/F on the ground).
 - **Peel to a storey.** Click a storey on the rail at the right, or use the arrow keys. All
   the floors over that storey go, with all the roofs over it and all that is on them. The
-  walls of that storey end 1.2 m over each building's own floor (`PEEL_H`). Thus every room
-  of that storey shows from above. A lower building shows its roof. The peel works also with
+  walls of that storey stay whole, to the slab of the next floor: the peel cuts nothing, it
+  only takes the layers over the storey away. Thus every room of that storey shows from
+  above, with all its mass. A lower building shows its roof. The peel works also with
   the floors apart. The RF row of the rail, or Esc, takes it away.
 - **Select a building.** Point at a building to see its name and storeys. Click it to select
   it: it takes a warm tint, and a panel gives its facts from the structure (where its storeys
@@ -310,5 +311,4 @@ It returns `ok`, or a list of problems. It checks four things:
   its doors, and a roof holds what stands on it.
 - Each building has its G/F in layer 0 and its roof in layer n.
 - With the floors apart, each layer is at least `GAP` m under the next one.
-- Peeled to a storey, the layers over it are hidden, and the walls of that storey end `PEEL_H`
-  m over each building's floor.
+- Peeled to a storey, the layers over it are hidden, and the layers up to it show.

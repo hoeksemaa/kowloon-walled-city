@@ -28,8 +28,8 @@ source gives is marked inferred.</p>
     building up the slope can stand higher than the 1/F of a building lower down. A roof goes with
     the layer of the floor over it. A dark plate lies in the gap under each layer.</li>
   <li><span class="st ok">RAIL</span>Peel the City to one storey (arrow keys: up and down): all
-    the floors and roofs over it go, with all that is on the roofs, and its walls end 1.2 m over
-    its floor. Thus every room of that storey shows from above.</li>
+    the floors and roofs over it go, with all that is on the roofs. Its walls stay whole: the
+    peel cuts nothing. Thus every room of that storey shows from above.</li>
   <li><span class="st ok">CLICK</span>A building: its storeys, heights, stairs and links, and the
     use of its rooms in December 1986. A room of an open floor: its use and its sources.</li>
 </ul>
