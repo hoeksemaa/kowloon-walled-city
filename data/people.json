@@ -1208,6 +1208,521 @@
      "quote": "the same day the Housing Department came to register me as a resident of the Walled City and announced the clearance."
     }
    ]
+  },
+  {
+   "id": "chan-cheung-chuen",
+   "name": "Chan Cheung-chuen",
+   "nameZh": "陳祥全",
+   "short": "map maker, tenant",
+   "story": "Chan Cheung-chuen (陳祥全) was a tenant in the Walled City with his wife. HK01 says that the couple left a partitioned room in Kowloon City (九龍城) in 1979. In the City, a rent of about HK$800 got them a whole flat. He said that it was at least a space of their own. WSJ gives his years inside as 1985-1991 and a household of three. His first home was Room B, 12/F, 31 Tung Tau Tsuen Road (東頭村道). Later the family rented Room 2, 11/F, 16 Tung Tau Tsuen Road. The rent went from HK$800-900 a month to HK$1,100. As an engineering student, he spent four months on a hand-drawn map of the City. He walked its dark, dripping alleys, none of them wider than three feet. He finished the map in March 1987, two months after the government announced the clearance. He paid little attention to the clearance because he was only a tenant.",
+   "lived": "1985-1991 (WSJ fact box); HK01 gives a move into the City in 1979",
+   "in_dec_1986": true,
+   "home": "12/F, Room B, 31 Tung Tau Tsuen Rd.; later 11/F, Room 2, 16 Tung Tau Tsuen Rd. (WSJ)",
+   "work": null,
+   "linked_facts": [
+    "T4",
+    "T5",
+    "T6"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Chan Cheung-chuen spent four months making a hand-drawn map of the Walled City while he was an engineering student."
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+     "cite": "https://www.hk01.com/article/39194",
+     "quote": "陳存全與妻子倆原居九龍城的板間房，與鄰居多磨擦，1979年遷入城寨，房租約莫800元"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "我沒有用心理會清拆，因為我只是個租客"
+    }
+   ]
+  },
+  {
+   "id": "albert-ng-kam-po",
+   "name": "Albert Ng Kam-po",
+   "nameZh": "吳錦波",
+   "short": "boy, later pastor",
+   "story": "Albert Ng Kam-po (吳錦波) was born in China during the Cultural Revolution. He and his family moved from Chiu Chow (潮州) in southern China to Hong Kong. There they joined his father, a Chinese man born in Thailand. The family lived in the Walled City from 1975 to 1991 or 1992. At once they belonged to the strong Chiu Chow community of the City. The family of five owned Room A, 7/F, 8 Sz Kung Street (社公街). The flat had more than 200 sq ft, and the family bought it in 1975 for about HK$50,000. Albert went to school outside the City. He remembered how he played on its roofs and in its corridors. Later he recalled that he lived on the eighth floor, in a building with no lift. As an adult he became a pastor.",
+   "lived": "1975-1991 or 1992",
+   "in_dec_1986": true,
+   "home": "Room A, 7/F, 8 Sz Kung St. (WSJ); he recalled 'the eighth floor' (Beijing Visitor)",
+   "work": null,
+   "linked_facts": [
+    "T1",
+    "T2",
+    "T3",
+    "W2",
+    "W3",
+    "W4",
+    "W5"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Albert Ng Kam-po went to school outside the Walled City but remembers playing on its rooftop and in its corridors."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Room A, 7/F, 8 Sz Kung St."
+    },
+    {
+     "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng', by Christopher KL Lau (undated)",
+     "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+     "quote": "I lived on the eighth floor and there was no elevator."
+    }
+   ]
+  },
+  {
+   "id": "wong-yum-fai",
+   "name": "Wong Yum-fai",
+   "nameZh": "王欽輝",
+   "short": "fishball maker",
+   "story": "Wong Yum-fai (王欽輝) made fishballs in the Walled City. Lore said that 80% of the fishballs of Hong Kong came from the City. He supplied fishballs and fishcakes to wholesale markets, and he sold 30 catties (40 pounds) of fishballs a day. Later he opened a noodle shop on the ground floor of his own building. A bowl of fishball noodles cost HK$0.30 to HK$0.80. His family of eight lived in the same building, on 8/F, 33 Lo Yan Street (老人街). The flat had 500 sq ft. When his children were old enough, they helped in the family business. His son Wong Chun-ping (王鎮平) was one of them. The WSJ fact box gives the years of the family inside as 1972-1983. The WSJ video says that he lived in the City for 30 years.",
+   "lived": "1972-1983 (WSJ fact box); the WSJ video says 30 years",
+   "in_dec_1986": false,
+   "home": "8/F, 33 Lo Yan St.",
+   "work": "noodle shop, G/F, 33 Lo Yan St.; he also supplied fishballs and fishcakes to wholesale markets",
+   "linked_facts": [
+    "T7",
+    "T9"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Wong Yum-fai supplied fishballs and fishcakes to wholesale markets. He was eventually able to open a noodle shop below his apartment unit."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "8/F, 33 Lo Yan St. (home); G/F, 33 Lo Yan St. (shop)"
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Lore had it that 80% of Hong Kong’s fishballs — the territory’s ultimate gourmet delicacy — were produced inside the Walled City."
+    }
+   ]
+  },
+  {
+   "id": "wong-chun-ping",
+   "name": "Wong Chun-ping",
+   "nameZh": "王鎮平",
+   "short": "fishball maker's son",
+   "story": "Wong Chun-ping (王鎮平) was the son of the fishball maker Wong Yum-fai (王欽輝). WSJ tells the story of father and son together as 'The Fishball Makers'. The family had eight people. They lived on 8/F, 33 Lo Yan Street (老人街), in a flat of 500 sq ft. The source gives their years inside as 1972-1983. His father supplied fishballs and fishcakes to wholesale markets, about 30 catties a day. Later his father opened a noodle shop on the ground floor of the same building. When the children were old enough, they helped in the family business. The source does not give his age or his tasks.",
+   "lived": "1972-1983 (WSJ fact box)",
+   "in_dec_1986": false,
+   "home": "8/F, 33 Lo Yan St.",
+   "work": "the family fishball business and noodle shop, G/F, 33 Lo Yan St.",
+   "linked_facts": [
+    "T7",
+    "T10"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Wong Yum-fai, Father; Wong Chun-ping, Son: The Fishball Makers"
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "When his children were old enough, they helped out with the family business."
+    }
+   ]
+  },
+  {
+   "id": "yeung-lai-wan",
+   "name": "Yeung Lai-wan",
+   "nameZh": "楊麗雲",
+   "short": "dim sum hawker",
+   "story": "Yeung Lai-wan (楊麗雲) was a mother of nine. She lived in the Walled City from 1959 to 1981. Her husband was a chef, but he lost his job after the stock-market crash of 1973. Then the couple became hawkers. They sold dim sum from a wooden street cart outside the City. In the 1970s, siu mai cost HK$0.10 and a bao HK$0.80. The family income was HK$6,000 to HK$7,000 a month. WSJ gives three homes in the City. They were 2/F, Sai Shing Road (西城路) and 3/F, 60 Lung Chun Road (龍津道). The third was 4/F, Fu Hing House (富興樓), Lung Chun Road. The flats had 200, 600 and 500 sq ft. In 1974 the family bought a flat for HK$10,000. She once saw a heroin addict dig out the eye of a cat and eat it. The poor air in the home harmed her health. Thus the family moved away.",
+   "lived": "1959-1981",
+   "in_dec_1986": false,
+   "home": "2/F, Sai Shing Rd. (Chinese fact box: 西城路2号2楼); 3/F, 60 Lung Chun Rd.; 4/F, Lung Chun Rd. (Chinese fact box: 龙津路富兴楼4楼)",
+   "work": "a wooden dim sum cart outside the Walled City",
+   "linked_facts": [
+    "T11",
+    "T12",
+    "T13",
+    "T14"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "A mother of nine, Yeung Lai-wan became a hawker when her husband lost his job as a chef following the 1973 stock-market crash."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "The family moved away after their home’s poor air quality affected Mrs. Yeung’s health."
+    },
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "I saw a heroin addict dig out a cat’s eye. He ate it like a longan fruit and swallowed it."
+    }
+   ]
+  },
+  {
+   "id": "paul-tang-kam-cheung",
+   "name": "Paul Tang Kam-cheung",
+   "nameZh": "鄧金祥",
+   "short": "former triad, later pastor",
+   "story": "Paul Tang Kam-cheung (鄧金祥) lived in the Walled City from 1948 to 1979. His family of seven lived on the ground floor in Lung Chun Road 2nd Lane (龍津二巷). The home had 400 to 500 sq ft, and the family earned HK$8 to HK$10 a day. In the 1950s, as a teenager, he joined the Hong Fat Shan (洪發山) triad, later called the 14K. The gang dealt in drugs and ran illegal gambling, strip clubs and brothels. He gave the protection money of 1959-1962 as HK$5 a day. Tang became a heroin addict. He went to jail for robbery and for drugs. He said that the police patrolled at set hours but did not stay long. Triad knife fights took place off the main streets. Later he became a Christian and a pastor. Then he moved out of the City.",
+   "lived": "1948-1979",
+   "in_dec_1986": false,
+   "home": "G/F, Lung Chun Rd., 2nd Lane",
+   "work": null,
+   "linked_facts": [
+    "T15",
+    "T16"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Paul Tang Kam-cheung was a teenager when he joined the Hong Fat Shan triad gang — later known as the 14K — in the 1950s."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "He moved out of the Walled City after converting to Christianity and becoming a pastor."
+    },
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "The police would patrol at certain hours, but they didn’t stay in the Walled City for long."
+    }
+   ]
+  },
+  {
+   "id": "lam-po-chun",
+   "name": "Lam Po-chun",
+   "nameZh": "林寶鎮",
+   "short": "postman",
+   "story": "Lam Po-chun (林寶鎮) was a postman in the Walled City. He started to deliver mail there at the age of 18. He worked inside from 1979 to 1991. Only one other postman served the area. This man was his mentor, and he recruited Lam. He chose Lam for his 'naughty boy' personality. This nature let Lam think flexibly. The chaotic house numbers of the City asked for this skill. His daily shift was eight hours. WSJ gave an estimate of 350 buildings in the City. Only two of them had lifts. The source does not say where he lived.",
+   "lived": "worked inside 1979-1991",
+   "in_dec_1986": true,
+   "home": null,
+   "work": "the mail round of the whole Walled City",
+   "linked_facts": [
+    "T17",
+    "A80"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Lam Po-chun was 18 when he began delivering mail inside the Walled City."
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "The area’s only other postman, Mr. Lam’s mentor, recruited him for his “naughty boy” personality"
+    },
+    {
+     "source": "WSJ 2014, People chapter",
+     "cite": "https://web.archive.org/web/20181011234454id_/http://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=people",
+     "quote": "Worked inside: 1979-1991"
+    }
+   ]
+  },
+  {
+   "id": "wong-chan-pui-wah",
+   "name": "Wong Chan Pui-wah",
+   "nameZh": "黃陳佩華",
+   "short": "garment-factory worker",
+   "story": "Wong Chan Pui-wah (黃陳佩華) was a garment-factory worker. WSJ quoted her in the Explore chapter of its 2014 interactive. She remembered the Salvation Army (救世軍) school inside the Walled City. The Salvation Army ran a primary school there, and later a kindergarten. She said that many children went to school there. The children played together and sang songs. She called it very happy and very different from the schools of today. WSJ credits her for a photo of the kindergarten. She spoke about electric power too. She said that they paid somebody to 'steal' electricity for them. WSJ also names her as the source of its dim sum prices of 1971. The source does not give her years in the City or her address.",
+   "lived": null,
+   "in_dec_1986": null,
+   "home": null,
+   "work": "a garment factory (the source does not say where)",
+   "linked_facts": [
+    "T32"
+   ],
+   "sources": [
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "Many children went to school there. We played together and sang songs. It was very happy. It’s very different from the ones today."
+    },
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "We had to pay somebody to ‘steal’ electricity for us."
+    },
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "–Wong Chan Pui-wah, former garment-factory worker"
+    }
+   ]
+  },
+  {
+   "id": "store-keepers-daughter-hk01",
+   "name": "芬姐",
+   "nameZh": "芬姐",
+   "short": "store keeper's daughter",
+   "story": "芬姐 grew up in the Walled City. HK01 met her in 2016 with four other former residents. Her family had a small store (士多) in the City. When her mother went to carry water, 芬姐 minded the store alone. Many young men came to buy, and sales went up. She met her sweetheart in the City and settled there. She did not see the City as a 'city of sin'. She said that people born there were used to the vice. On 14 January 1987 she was in a hair salon inside the City. She was getting a perm before a festival. A customer told her that the government had sealed the City. Then the radio gave the news. At home, officials told the family to register, and they registered. She was proud to come from the City.",
+   "lived": "from her childhood; inside on 14 Jan 1987; moved out at the clearance (HK01)",
+   "in_dec_1986": true,
+   "home": "inside the City (no location given)",
+   "work": "her family's store (士多) in the City (no location given)",
+   "linked_facts": [
+    "T19",
+    "T20",
+    "T21"
+   ],
+   "sources": [
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016",
+     "cite": "https://www.hk01.com/article/39195",
+     "quote": "芬姐自少居於城寨，這裡亦是她的情人邂逅之地，然後在城寨落地生根"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016",
+     "cite": "https://www.hk01.com/article/39195",
+     "quote": "說媽媽要去擔水，自己獨個兒在城寨士多「看舖」，吸引不少年青人來光顧，生意額因而上升"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "芬姐當時則正準備過節，人在寨內髮廊電髮，從剛步入髮廊的客人口中得知被圍城"
+    }
+   ]
+  },
+  {
+   "id": "mr-lau",
+   "name": "Mr Lau",
+   "nameZh": "劉先生",
+   "short": "resident from age six",
+   "story": "Mr Lau (劉先生) was 73 in 2016. He lived in the Walled City from the age of six. His first home there was a tin hut. In those years the City had mostly low stone houses and tin huts. A volunteer night watch patrolled and called out warnings about fire. Later the demand for homes grew. Businessmen bought land from residents and put up high-rises of ten or more storeys. The builders took his tin hut, and he got a flat in the new building. He had no land deed and paid no rates or land tax. A paper with the buyer, seller, date and price was the only record. The residents' welfare association witnessed it and stamped it. The Lau family lived on the sixth floor. A friend who visited saw rats, dirty water and leaking pipes. Lau stayed until the clearance, when he was 47. He said that the residents had hoped for the clearance for some time.",
+   "lived": "from age 6 (about 1949) to the clearance, at age 47 (HK01)",
+   "in_dec_1986": true,
+   "home": "a tin hut, then a flat in the high-rise built on its site; the Lau family lived on 六樓 (6/F) above a rattan shop (no street given)",
+   "work": null,
+   "linked_facts": [
+    "T18",
+    "T22",
+    "T24"
+   ],
+   "sources": [
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+     "cite": "https://www.hk01.com/article/39194",
+     "quote": "73歲的劉先生，自6歲住在寨內的鐵皮屋，直到清拆時才遷出，當年他47歲"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+     "cite": "https://www.hk01.com/article/39194",
+     "quote": "鐵皮屋被收，劉先生獲分發一個單位"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "我們期望清拆一段時間。"
+    }
+   ]
+  },
+  {
+   "id": "mrs-lau",
+   "name": "Mrs Lau",
+   "nameZh": "劉太",
+   "short": "resident",
+   "story": "Mrs Lau (劉太) moved into the Walled City as an adult. At first she was not used to it and often got lost. In time she got used to the poor conditions. She said that nothing there scared her. She found the City stable and safe. The vice trades did not bother residents for no reason. She told how the Lau family escaped a fire. The family lived on the sixth floor, and a rattan shop below caught fire. The back stair was locked. The family went down to the third floor, which faced the corridor of the next building. They handed their newborn baby to a neighbour across the gap. Then they stepped across. She laughed that it was not frightening at all. On 14 January 1987 she came home from the market and saw crowds outside the City. By the clearance her children were grown, and she wanted a change of surroundings.",
+   "lived": "from adulthood (year not given) to the clearance (HK01)",
+   "in_dec_1986": true,
+   "home": "the Lau family flat on 六樓 (6/F) above a rattan shop (no street given)",
+   "work": null,
+   "linked_facts": [
+    "T22",
+    "T25"
+   ],
+   "sources": [
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（一）】城寨飛仔多？　街坊會平反　讀書人仲多, 26 Aug 2016",
+     "cite": "https://www.hk01.com/article/39195",
+     "quote": "劉太(左)坦言初遷入城寨，非常不習慣，經常迷路。"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+     "cite": "https://www.hk01.com/article/39194",
+     "quote": "劉先生一家人居於六樓，後樓梯被鎖，而三樓則對正旁邊大樓的走廊"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "舊街坊劉太正好買完餸，正從寨外打道回府，卻見城外圍滿了人"
+    }
+   ]
+  },
+  {
+   "id": "fishball-wholesaler-hk01",
+   "name": "林羅平",
+   "nameZh": "林羅平",
+   "short": "fishball maker",
+   "story": "林羅平 (HK01 calls him 平哥) made fishballs in the Walled City, but he did not live there. As a boy he came from Chiu Chow (潮州) with his parents and his brother. The family settled in Lok Fu (樂富). His brother made fishballs from the age of nine. When 林羅平 was in Primary 3, his brother rented a small ground-floor shop in the City as a fishball workshop. After school 林羅平 helped there. They had no machines, so they scraped the fish by hand. He got home at about 9 or 10 p.m. In 1983, at 24, he opened his own wholesale shop in the City with HK$6,000. The landlord came from his home area and gave him a low rent. He needed no licence and paid no tax. His shop was near the outer street and had a meter from the power company. The police signed a patrol book outside his shop. He never paid protection money. After the clearance he kept the business. In 2024 he still ran 德興魚蛋 in Kowloon City (九龍城).",
+   "lived": "worked in the City from his Primary 3 years; own shop from 1983 to the clearance; lived outside in Lok Fu (HK01 2024)",
+   "in_dec_1986": true,
+   "home": "Lok Fu (樂富), outside the City",
+   "work": "his brother's rented ground-floor fishball workshop; from 1983 his own wholesale shop near the outer street (明周文化, 13 Jun 2024, places it on Kwong Ming Street (光明街))",
+   "linked_facts": [
+    "T26",
+    "T27",
+    "T28",
+    "Z3"
+   ],
+   "sources": [
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html)",
+     "quote": "「平哥」林羅平早年並非住在九龍城寨，他年少時隨父母及哥哥由潮州來香港，定居在樂富。"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html)",
+     "quote": "1983年，只有24歲的平哥拿着6000大元自立門戶，在城寨租下另一個舖位做「交貨」"
+    },
+    {
+     "source": "HK01 (香港01), 九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落, 20 Jul 2024",
+     "cite": "https://www.hk01.com/社區專題/1033066/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2024-07-20-1033066.html)",
+     "quote": "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電"
+    }
+   ]
+  },
+  {
+   "id": "childhood-resident-hk01",
+   "name": "阿榮",
+   "nameZh": "阿榮",
+   "short": "childhood resident",
+   "story": "阿榮 is a pseudonym that HK01 gave to a man in his sixties in 2016. His parents came from mainland China in the early 1950s. They were poor, and the Walled City had the lowest rents in Hong Kong. He lived in the City from his birth to the age of 20. HK01 gives his home as 西頭村第一街, and puts his door on 成龍街. The home had no proper water or power. Ten or more homes shared one wire, and fires broke out at night. The wells gave water only for a few hours each afternoon. Heroin sellers had stalls in the back lane at his door. His parents sent him to a primary school outside, in Kowloon City (九龍城). He did not play in the City. He did not join a triad and did not take drugs. For many years he did not tell his daughter about his childhood.",
+   "lived": "from his birth (his parents came in the early 1950s) to the age of 20",
+   "in_dec_1986": false,
+   "home": "西頭村第一街; the same article puts his door on 成龍街",
+   "work": null,
+   "linked_facts": [
+    "T58",
+    "T59"
+   ],
+   "sources": [
+    {
+     "source": "HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016",
+     "cite": "https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html)",
+     "quote": "阿榮甫出生就住在西頭村第一街，廿歲才搬離城寨"
+    },
+    {
+     "source": "HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016",
+     "cite": "https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html)",
+     "quote": "貧困之下只能住在全港租金最便宜的九龍城寨中"
+    },
+    {
+     "source": "HK01 (香港01), 【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒, 28 Aug 2016",
+     "cite": "https://www.hk01.com/社區專題/39889/ (local copy: primary-sources/retrospective-testimony-web/local/hk01-2016-08-28-39889.html)",
+     "quote": "就在他成龍街的家門前，整條後巷踎滿「道友」，有人光明正大地擺檔賣白粉"
+    }
+   ]
+  },
+  {
+   "id": "yip-tak-wai",
+   "name": "Yip Tak-wai",
+   "nameZh": "葉德偉",
+   "short": "residents' association head",
+   "story": "Yip Tak-wai (葉德偉) bought a 400 sq ft flat inside the Walled City in 1976. He paid HK$30,000. On 14 January 1987 he was at work in an office in Central (中環). He heard on the radio that the government had sealed the City, and he was shocked. He explained the surprise: the government did not want new people to move in for compensation. He said that vice was in Lung Shing Road (龍城路) and Kwong Ming Street (光明街). Sai Tau Tsuen (西頭村), outside the City, also had brothels and drugs. He remembered many scholars with fine calligraphy, several school bodies and only one martial-arts school. He and the four other HK01 residents agreed to move out at the clearance. Later they formed a residents' welfare association (九龍城寨街坊福利會), and Yip became its general secretary. He said that the City was a self-governing community.",
+   "lived": "from 1976 (flat bought; SCMP 2013) to the clearance (HK01)",
+   "in_dec_1986": true,
+   "home": "a 400 sq ft flat inside the City (no address given)",
+   "work": "an office in Central (中環), outside the City, in 1987",
+   "linked_facts": [
+    "T55",
+    "T56",
+    "T57"
+   ],
+   "sources": [
+    {
+     "source": "SCMP, 'Kowloon City: from den of evil to lush gardens', 4 Jan 2013",
+     "cite": "https://web.archive.org/web/20200803125015id_/https://www.scmp.com/news/hong-kong/article/1119265/kowloon-city-den-evil-lush-gardens",
+     "quote": "He bought a 400 sq ft flat inside the walled city in 1976 for HK$30,000"
+    },
+    {
+     "source": "HK01 (香港01), 【真．城寨英雄（三）】港英強攻拆寨　居民憶圍城一刻　他們今在何處？, 28 Aug 2016",
+     "cite": "https://www.hk01.com/article/39597",
+     "quote": "葉德偉正在中環辦公室工作，從收音機聽到消息，大吃一驚"
+    },
+    {
+     "source": "WSJ 2014, Explore (life) chapter",
+     "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+     "quote": "Even though it seemed like the Walled City was an ungoverned place, it was actually a self-governing community."
+    }
+   ]
+  },
+  {
+   "id": "lam-yin-ming",
+   "name": "Lam Yin Ming",
+   "nameZh": null,
+   "short": "last holdout",
+   "story": "Lam Yin Ming was one of the last residents of the Walled City. In June 1992 about 100 holdouts remained from more than 30,000 residents. Lam was one of the resisters. He led a reporter inside the City. They went down a long dark corridor and around several corners. Then they climbed about six flights of stairs. They passed big spider webs, strong smells, rats and a few one-man workshops. At the top was the door of his two-room flat. The authorities had locked it months before. Lam tried to push a finger through a small hole in the door. He said that the flat was his home and a good place to live. He and a few dozen others planned to fight the eviction on 1 July 1992.",
+   "lived": "until 1992 (years not given)",
+   "in_dec_1986": null,
+   "home": "a two-room flat up about six flights of stairs, off a long dark corridor (no address given)",
+   "work": null,
+   "linked_facts": [
+    "P17",
+    "P18",
+    "P19"
+   ],
+   "sources": [
+    {
+     "source": "Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992",
+     "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html)",
+     "quote": "Another resister, Lam Yin Ming, leads the way inside the city"
+    },
+    {
+     "source": "Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992",
+     "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html)",
+     "quote": "“This is my home,” Mr. Lam said, trying to wiggle a finger through a small hole in the door of his two-room apartment"
+    },
+    {
+     "source": "Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992",
+     "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html)",
+     "quote": "“It was a good place to live.”"
+    }
+   ]
+  },
+  {
+   "id": "wang-ching",
+   "name": "Wang Ching",
+   "nameZh": null,
+   "short": "plastic factory owner",
+   "story": "Wang Ching was the 41-year-old owner of a plastic factory. In June 1992 she was one of the last holdouts of the Walled City. About 100 of the more than 30,000 residents remained. The government had paid compensation and moved many people to public housing. A small group refused to leave. They camped in a roadside shelter by one of the few unlocked entrances. They wanted more money. They also cited the treaty of 1898 between Britain and China, which disallowed the expulsion of the residents. Wang Ching pointed to a large portrait of Mao on a nearby wall. She said that the place was China, not Hong Kong. She said that the British government had no power to move them. The police planned to come with eviction orders the next day.",
+   "lived": "until 1992 (years not given)",
+   "in_dec_1986": null,
+   "home": null,
+   "work": "a plastic factory (the source does not say where)",
+   "linked_facts": [
+    "P15",
+    "P16"
+   ],
+   "sources": [
+    {
+     "source": "Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992",
+     "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html)",
+     "quote": "“This is China, not Hong Kong. The British government has no power to move us,” said the 41-year-old proprietress of a plastic factory, Wang Ching"
+    },
+    {
+     "source": "Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', The Baltimore Sun, 30 Jun 1992",
+     "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/ (local copy: primary-sources/press-articles-1959-1992/local/baltsun-1992-06-30-denizens-of-noted-hellhole.html)",
+     "quote": "a small group of residents who refuse to leave, insisting on more money and invoking Britain’s 1898 treaty with China."
+    }
+   ]
   }
  ]
 }
