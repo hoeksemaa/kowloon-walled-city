@@ -16,7 +16,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
   - `src/structureViewer.js` and `src/roomUses.js`: the viewer of `structure.html`, with the
     room uses of December 1986. `src/structureColors.js`: the viewer's placeholder colours.
   - The other files: the main app of `index.html` (`main.js`, `people.js`, `routes.js`,
-    `planes.js`, `labels.js`, `sound.js`, `game.js`, `style.css` and others). `cityMesh.js`,
+    `planes.js`, `labels.js`, `game.js`, `style.css` and others). `cityMesh.js`,
     `floorplan.js`, `facades.js`, `roofs.js` and `interiors.js` are its superseded 3D city.
     The structure and its viewer also use `layout.js`, `footprint.js`, `context.js`,
     `terrain.js`, `site.js`, `env.js` (the light) and `util.js`.
@@ -205,8 +205,6 @@ section describes the main app.
   runway comes from the 1987 survey sheet; the turn and the glide are inferred
   (`src/approach.js`). At night the planes are dark like the buildings round the City, with
   their wing-tip lights and landing light.
-- **Utilities.** Power, water, phone and TV lines. Low floors get water only in the hours
-  that a resident recorded.
 - **People.** 28,200 residents in about 8,800 flats, and 4,800 workers who come in from outside
   each day (City of Darkness Revisited, pp339â€“340). Point at one of the nine real people to
   see their facts and one recorded quote, with the source of each. Sixteen people of the book
@@ -241,10 +239,6 @@ section describes the main app.
   36 seconds. Space stops the clock and starts it again, also after a click on a button. The
   keys 1, 2 and 3 choose the arrows. A button that has the keyboard focus (from the Tab key)
   takes Space and Enter, and the clock does not change.
-- **Sound.** It is off at first: turn it on with the speaker tool or the key S. A soft bed
-  follows the hour, with occasional clear sounds over it, for example drips, a plane and the
-  pigeon breeder's whistle. The sound fades out when the clock stops. At three arrows, you hear
-  only the soft bed. The browser makes each sound, and the repository has no audio files.
 
 The "Sources + notes" panel in the app lists each source and each inference.
 

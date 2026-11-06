@@ -7,7 +7,6 @@ import { buildLevels, buildPlan, makeBuildingMaterial, makeCutoutMaterial, makeB
 import { withSection } from './kinds.js';
 import { DIM, withDim, setDimCode, compileDim } from './dim.js';
 import { makeSignMaterial, makeSignDepth } from './signs.js';
-import { buildWires, WireLayer, WIRE_TYPES } from './wires.js';
 import { createPopulation, Sim } from './people.js';
 import { Flock } from './figures.js';
 import { Crowd } from './crowd.js';
@@ -25,7 +24,6 @@ import { roadRuns } from './context.js';
 import { clamp, smoothstep, fmtClock } from './util.js';
 import { sourcesHtml } from './sources.js';
 import { Planes } from './planes.js';
-import { Sound } from './sound.js';
 import { WEEK, DONGZHI } from './people.js';
 
 const NO_HI = -100; // highlight id meaning "nothing hovered"
@@ -33,8 +31,8 @@ const NO_CUT = 1e5; // uCutTop with no cut storey: above everything
 const GAP = 13; // extra metres between storeys when fully exploded
 const POPULATION = 28200; // occupants in January 1987 (p340); people from outside come on top (people.js)
 const START_MINUTE = 9 * 60 + 45;
-// The speeds of the clock: pause, then one, two and three arrows. Above two arrows the sound
-// plays only its bed (sound.js) and people take the plain way (people.js).
+// The speeds of the clock: pause, then one, two and three arrows. Above two arrows people take
+// the plain way (people.js).
 const SPEEDS = [0, 1, 60, 2400];
 const $ = (id) => document.getElementById(id);
 const levelName = (k) => (k === 0 ? 'G/F' : `${k}/F`);
@@ -101,7 +99,7 @@ const shared = {
 // open. uWalk and uIdle: the clocks of the steps and of the other moves (figures.js).
 const peopleU = { uOff: { value: offsets }, uPeopleScale: { value: 1.15 }, uMarkers: { value: 1 }, uWalk: { value: 0 }, uIdle: { value: 0 }, uNight: shared.uNight };
 
-let L, site, levels, wires, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap, outline;
+let L, site, levels, sim, people, lighting, labels, residents, cutRing, planes, flock, useMap, outline;
 let bookStreets = {}, mapStreets = {}; // the street notes of book.json, and the streets that the 1992 map names
 let toolbarBox = null; // the toolbar on the screen: the storey labels keep clear of it (labels.js)
 let panelBoxes = []; // the panels and the title on the screen: the road names keep clear of them (labels.js)
@@ -111,7 +109,6 @@ const lamps = new Lamps(shared.uNight, renderer);
 Object.assign(shared, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 Object.assign(peopleU, { uLampMap: lamps.uMap, uLampBox: lamps.uBox }, USE);
 const unitRes = new Map();
-const sound = new Sound(); // off until the user turns it on
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -212,10 +209,6 @@ async function init() {
     mapStreets, title: levelTitle, aniso: renderer.capabilities.getMaxAnisotropy(),
   });
 
-  // ---- wires ----
-  wires = new WireLayer(L, buildWires(L));
-  scene.add(wires.object);
-
   // ---- Kai Tak: the turn on to runway 13, SW of the city (planes.js, approach.js) ----
   planes = new Planes(scene);
 
@@ -239,7 +232,7 @@ async function init() {
   // the night (post.js): they compile now, thus the first layered view does not stall.
   compileDim(renderer, scene, camera, levels.flatMap((lv) => (lv.cutout ? [lv.mesh, lv.cutout] : [lv.mesh])), [null, post.target]);
   $('loading').classList.add('done');
-  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, wires, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline, occlusion, ghosts };
+  window.kwc = { L, sim, state, setCut, setSpeed, camera, controls, levels, planes, flock, people, peopleU, post, lamps, renderer, offsets, labels, dim: DIM, useMap, showUse, selectBuilding, outline, occlusion, ghosts };
   requestAnimationFrame(frame);
 }
 
@@ -276,7 +269,6 @@ function setOffsets(e) {
   state.posts.scale.y = Math.max(top, 0.01);
   state.posts.material.opacity = 0.5 * a;
   state.posts.material.dashSize = state.posts.material.gapSize = 0.8 / Math.max(top, 1);
-  wires.update(offsets, state.cut);
   // Keep the model framed as it grows: lift the view and zoom out, relative to the
   // user's own zoom.
   const lift = e * GAP * (MAX_FLOORS - 1) * 0.5;
@@ -335,7 +327,6 @@ function setCut(c) {
     cutRing.visible = true;
   }
   outline.show(state.selBld, c);
-  wires.update(offsets, c);
   renderRail();
   renderLegend();
   renderPanel();
@@ -408,11 +399,6 @@ const useColor = (key) => USE_COLORS[key] || PLAN_COLORS[key];
 function showUse() {
   const key = shownUse();
   useMap.show(key, key && useColor(key));
-  const fade = key ? 0.25 : 1;
-  if (fade !== wires.cutFade) {
-    wires.cutFade = fade;
-    wires.update(offsets, state.cut);
-  }
   const box = $('legend');
   for (const el of box.querySelectorAll('[data-key]')) {
     const k = el.dataset.key;
@@ -531,14 +517,8 @@ function buildUI() {
     el.classList.toggle('on', on);
   };
   tool('t-explode', false, () => { state.explodeTarget = state.explodeTarget > 0.5 ? 0 : 1; return state.explodeTarget > 0.5; });
-  tool('t-wires', true, () => {
-    wires.object.visible = !wires.object.visible;
-    renderLegend();
-    return wires.object.visible;
-  });
   tool('t-people', true, () => (people.group.visible = !people.group.visible));
   tool('t-map', true, () => labels.setOn(!labels.on));
-  tool('t-sound', false, () => sound.toggle());
   tool('t-find', false, () => {
     $('game').hidden = !$('game').hidden;
     if ($('game').hidden) closeCase();
@@ -636,10 +616,8 @@ function buildUI() {
     const k = ev.key.toLowerCase();
     if ((k === ' ' || k === 'enter') && ev.target.closest && ev.target.closest('button')) return;
     if (k === 'e') $('t-explode').click();
-    else if (k === 'w') $('t-wires').click();
     else if (k === 'p') $('t-people').click();
     else if (k === 'm') $('t-map').click();
-    else if (k === 's') $('t-sound').click();
     else if (k === 'g') $('t-find').click();
     else if (k === 'f' && sim.selected >= 0) state.follow = !state.follow;
     else if (k === 'escape') {
@@ -745,13 +723,6 @@ function renderLegend() {
     g.push(`<div class="grp use"><h3>${levelName(state.cut)} PLAN · FLOOR USE</h3>${gone}${uses.map((u) => row(u, USE_LABEL[u])).join('')}
       ${row('corridor', 'corridor, door to the next block')}${link}
       <div class="use-n"></div></div>`);
-  }
-  if (wires && wires.object.visible) {
-    const seen = new Set();
-    const rows = WIRE_TYPES.filter((t) => (seen.has(t.label) ? false : seen.add(t.label)))
-      .map((t) => `<div class="row"><span class="sw" style="background:${t.color}"></span>${t.label}</div>`)
-      .join('');
-    g.push(`<div class="grp"><h3>UTILITIES (SCHEMATIC)</h3>${rows}</div>`);
   }
   $('legend').innerHTML = g.join('');
   if (focusKey) { const el = $('legend').querySelector(`[data-key="${focusKey}"]`); if (el) el.focus(); }
@@ -988,7 +959,6 @@ function resize() {
   camera.left = (-VIEW_H * a) / 2; camera.right = (VIEW_H * a) / 2;
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
-  wires.setResolution(w, h);
   useMap.setResolution(w, h);
   toolbarBox = $('toolbar').getBoundingClientRect();
   findPanels();
@@ -1044,11 +1014,9 @@ function frame(now) {
     lighting.setFocus(controls.target.x, controls.target.z, clamp(0.5 * Math.max(vw, vh / 0.55) * 0.9 + 12, 28, 400));
   }
   shared.uNight.value = lighting.update(hour, state.lift);
-  wires.tick(hour, state.speed ? dt : 0);
   planes.update(sim.day % 7, sim.minute, dt, state.speed, state.explode > 0.3, shared.uNight.value);
   flock.update(now / 1000, offsets, state.cut);
   updateGameRings();
-  sound.update(sim.day % 7, sim.minute, state.speed, planes);
   glideCamera(dt);
   const dark = shared.uNight.value > 0.55;
   if (dark !== state.dark) {

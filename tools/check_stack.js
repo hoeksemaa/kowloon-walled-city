@@ -13,9 +13,6 @@
 //   air-conditioner can sit a little below it, on the floor line of its tower);
 // - each sign starts on its own storey, and each aerial and washing line of storey k stands
 //   on the roof of storey k (no more than 5 m over it);
-// - each segment of a cable or a pipe is in one storey: it lies inside that storey (or above
-//   the roof, for the top storey), and when the storeys are pulled apart, both of its ends
-//   move up by the lift of that storey; with a cut storey, no segment rises above the section;
 // - each person is drawn with the lift of one whole storey, at this time and for 40 minutes
 //   of the morning, in steps of 2 seconds (people on the stairs, ladders and roofs);
 // - each label (labels.js) is in the group of its storey, on that storey or on its roof, in
@@ -25,7 +22,7 @@ import { STOREY } from '../src/layout.js';
 import { CUT_H } from '../src/kinds.js';
 
 export async function checkStack(kwc) {
-  const { levels, wires, sim, people, state, setCut, offsets } = kwc;
+  const { levels, sim, people, state, setCut } = kwc;
   const problems = [];
   const say = (t) => { if (problems.length < 40) problems.push(t); };
   const cut0 = state.cut, minute0 = sim.minute;
@@ -65,39 +62,7 @@ export async function checkStack(kwc) {
     meshCheck('plan', lv.plan.mesh.geometry, lv.k);
   }
 
-  // ---- cables and pipes ----
-  const lift = Float32Array.from({ length: 16 }, (_, k) => k * 13);
-  const drawn = (off, cut) => {
-    wires.update(off, cut);
-    return wires.layers.map((l) => ({ P: l.pos.slice(0, l.geometry.instanceCount * 6), n: l.geometry.instanceCount }));
-  };
-  const rest = drawn(new Float32Array(16), -1), apart = drawn(lift, -1);
-  wires.layers.forEach((l, li) => {
-    const R = l.rest, K = l.k, A = rest[li].P, B = apart[li].P;
-    let outside = 0, moved = 0;
-    if (rest[li].n !== K.length || apart[li].n !== K.length) say(`${l.key}: ${K.length} segments, but ${rest[li].n} and ${apart[li].n} drawn`);
-    for (let i = 0; i < K.length; i++) {
-      const k = K[i], r = i * 6;
-      if (k !== Math.floor(k)) say(`${l.key}: segment ${i} has storey ${k}`);
-      for (const y of [R[r + 1], R[r + 4]]) if (y < k * STOREY - 0.01 || y > (k + 1) * STOREY + 0.81) outside++;
-      for (let j = 0; j < 6; j++) {
-        const d = B[r + j] - A[r + j], want = j === 1 || j === 4 ? lift[k] : 0;
-        if (Math.abs(d - want) > 1e-3) { moved++; break; }
-      }
-    }
-    if (outside) say(`${l.key}: ${outside} segment ends outside their storey`);
-    if (moved) say(`${l.key}: ${moved} segments do not move with their storey`);
-  });
-  for (const c of [0, 3, 6, 9]) {
-    const top = c * STOREY + CUT_H + 0.05;
-    drawn(new Float32Array(16), c).forEach(({ P, n }, li) => {
-      let over = 0;
-      for (let i = 0; i < n; i++) if (P[i * 6 + 1] > top + 1e-3 || P[i * 6 + 4] > top + 1e-3) over++;
-      if (over) say(`${wires.layers[li].key}: ${over} segments above the section of ${c}/F`);
-    });
-  }
   setCut(cut0);
-  wires.update(offsets, cut0);
 
   // ---- labels ----
   const { labels } = kwc;

@@ -314,7 +314,7 @@ with John's approval.
 
 ## Not done yet
 
-- The simulation (people, sounds, labels) still runs only on the old, superseded model of
+- The simulation (people, labels) still runs only on the old, superseded model of
   the main app. It must move to this structure.
 - Mezzanines (p209), rooms inside a flat, and lanes with steps.
 - The rates of doors, bridges, holes, ladders and windows are guesses. More sources can set

@@ -96,10 +96,8 @@ composite. A detail that no source records is marked inferred.</p>
   <li><span class="st ok">LIVES</span>Testimony of residents and workers: ${HK01}, ${WEB} and ${WSJ}, and the
     postman's own words (${BOOK}, p149, 2014 edition). Most of it was recorded long after 1986, thus each quote
     has the tag "retrospective" and its year.</li>
-  <li><span class="st ok">WATER</span>Two private suppliers, one for power and one for water; water to 2/F–3/F at
-    6–7 a.m. and to 3/F–4/F at 8–9 a.m. (林羅平, HK01 2024); about 70 wells (Gordon Jones, WSJ 2014);
-    eight Government standpipes in 1987, and "Only one of these was located within the City", on Tai Chang
-    Street (${BOOK}, pp28, 107; 葉德偉, HK01 2016).</li>
+  <li><span class="st ok">STANDPIPE</span>Eight Government standpipes in 1987, and "Only one of these was located
+    within the City", on Tai Chang Street (${BOOK}, pp28, 107; 葉德偉, HK01 2016).</li>
   <li><span class="st ok">FACES</span>Window cages, signs, roof tanks and TV aerials follow the photos of 1987–90
     (${MPLUS}).</li>
   <li><span class="st ok">COLOUR</span>About 110 colour patches measured in the photos of ${BOOK}: the render and
@@ -186,7 +184,6 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     the work, with a household of three, the mean of the city (p340).</li>
   <li><span class="st prov">冬至</span>Family dinners on Monday 22 Dec 1986. 冬至 is a Hong Kong-wide custom; the
     model infers that the city's families kept it too.</li>
-  <li><span class="st prov">LINES</span>The route of each cable and pipe is a diagram. No map of them survives.</li>
   <li><span class="st prov">WEAR</span>Who wears what, and who carries what when: the model picks it by role and by
     what each person does. A body has three sizes: child, adult, and old with a stoop.</li>
   <li><span class="st prov">POSE</span>How each person stands, sits, works or sleeps, by what they do. On the cut storey,
@@ -245,43 +242,6 @@ tool (key M) shows these numbers with the place only.` : ''}</p>
     drawing on p137 shows a building whose upper storeys grow over its neighbours; the model has no such
     building. The panel of a building gives the file addresses of its blocks as its name. If no file gives an
     address, the name is the house number of its place on the street, after "near", or else a number.</li>
-</ul>
-
-<h4>Sound, from primary sources</h4>
-<p>The sound is off at first. Turn it on with the speaker tool or the key S. It follows the clock:
-it fades out when the clock stops, and at three arrows, the fastest speed, you hear only the soft
-bed. The browser makes each sound, and the app has no recordings.</p>
-<ul>
-  <li><span class="st ok">HUM</span>A low hum of the wires, the same at night and by day: "Night and day within the
-    Walled City were the same, with buzzing electrical wires, dripping pipes" (a police officer, SCMP 2018).
-    The hum is at 50 Hz, the mains frequency of Hong Kong.</li>
-  <li><span class="st ok">DRIPS</span>One pipe drips a few times, at all hours: "the constant dripping" (${BOOK},
-    pp148–149); "when we heard the sound of water dripping" (Tam Sau-kuen, ${WSJ}).</li>
-  <li><span class="st ok">PLANE</span>An airliner swells and fades as it passes on the approach to Kai Tak, at the
-    landing times of the model. The real noise stopped all talk (林財銳, the tailor across the road, HK01 2022).
-    The model plays it soft. It plays at most about one landing each minute.</li>
-  <li><span class="st ok">PIGEONS</span>Chan Kwan Leung whistled before he fed his pigeons (${BOOK}, p320). He flew
-    them "usually in mid-afternoon when there was a lull in the number of landings at Kai Tak" (p321). Each day
-    the model plays his whistle and the wings in the longest gap between landings from 14:30 to 16:30. In those
-    hours the flock also circles, with a softer flutter. The tune of the whistle is inferred.</li>
-  <li><span class="st ok">COOKING</span>A cleaver on a block, or food in a hot wok, at lunch and at dinner:
-    "人們在煮食，聲音不斷傳出來" [people were cooking; sounds came out all the time] (Greg Girard, HK01 2024).
-    On the evening of 冬至 the model plays more cooking.</li>
-  <li><span class="st ok">MAHJONG</span>The tiles after work, until about 1 a.m.: 林羅平 played mahjong with other
-    bosses (HK01 2024, narration). The model plays more on Saturday and on the night of 冬至.</li>
-  <li><span class="st ok">PING PONG</span>A rally in a corridor from 7 to 10 p.m.: "We would just play ping pong in
-    the hallway" (Albert Ng, SCMP 2013). The model plays more on Saturday.</li>
-</ul>
-
-<h4>Sound, inferred and marked</h4>
-<ul>
-  <li><span class="st prov">CITY</span>The soft bed: a murmur of the dense city, and a low rumble from the roads
-    outside. It is quiet from 1 to 5 a.m., full by day, and a little lower on Sunday. No source records it.</li>
-  <li><span class="st prov">LOOM</span>A loom through a wall, from 8 a.m. to 7 p.m., but not on Sunday. On 冬至 it
-    stops at 5.30 p.m. The weaving workshops are in the sources (Lau Yeung Yin, ${BOOK}, p48; 織布廠, HK01 2016),
-    but their sound is not.</li>
-  <li><span class="st prov">SHAPE</span>The hour, the loudness and the shape of each sound. The sounds do not come
-    from a place in the model, and they do not follow the camera.</li>
 </ul>
 
 <h4>Secondary, for scale only</h4>
