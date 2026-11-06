@@ -1,4 +1,4 @@
-// Mesh building blocks shared by the storeys, the signs and the utilities: a vertex
+// Mesh building blocks shared by the storeys and the signs: a vertex
 // builder, flat polygons with holes, wall frames on polygon edges, and point tests.
 import * as THREE from 'three';
 import { FloatBuf, pointInPolygon } from './util.js';

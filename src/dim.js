@@ -3,8 +3,7 @@
 // apart. In the normal view there is none: only the sun, the sky and the lamps light the city.
 //
 // The values are uniforms, thus you can tune them from the console with no new shader, for
-// example kwc.dim.uDimKeep.value[0] = 0.35. The labels read them in each frame. The wires read
-// them at their next update, that is, at the next cut or change of the explode.
+// example kwc.dim.uDimKeep.value[0] = 0.35. The labels read them in each frame.
 export const DIM = {
   uDimCut: { value: -1 }, // the cut storey; -1 with no cut
   uDimOn: { value: 0 }, // 0 in the normal view, 1 with the storeys fully apart
@@ -84,22 +83,4 @@ export function compileDim(renderer, scene, camera, meshes, targets) {
   }
   renderer.setRenderTarget(was);
   setDimCode(false);
-}
-
-// The same on the CPU, for the wires: [light kept, grey] on storey k.
-export function dimOf(k) {
-  const cut = DIM.uDimCut.value, on = DIM.uDimOn.value, d = cut < 0 ? 0 : Math.round(cut - k);
-  if (d < 1 || on <= 0) return [1, 0];
-  const keep = DIM.uDimKeep.value[Math.min(d, 4) - 1];
-  return [1 + (keep - 1) * on, Math.min(DIM.uDimGrey.value[1], DIM.uDimGrey.value[0] * d) * on];
-}
-
-// Colour c ({ r, g, b } in linear light) as it is on storey k, written to out.
-export function dimColor(c, k, out) {
-  const [keep, grey] = dimOf(k);
-  const y = LUMA[0] * c.r + LUMA[1] * c.g + LUMA[2] * c.b;
-  out.r = (c.r + (y - c.r) * grey) * keep;
-  out.g = (c.g + (y - c.g) * grey) * keep;
-  out.b = (c.b + (y - c.b) * grey) * keep;
-  return out;
 }
