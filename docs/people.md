@@ -2,7 +2,7 @@
 
 This file is made by `node tools/build_people.mjs` from `data/people.json`. Do not edit it by hand.
 
-Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date.
+Real people who lived or worked in Kowloon Walled City (九龍城寨), each from a published source in the repo. This file is separate from the rooms (data/room_uses.json): linked_facts gives the ids of data/room_research.json for the places where each person lived or worked. nameZh is given only where a source prints the Chinese name. in_dec_1986 is true if the source shows the person in the City in December 1986, false if it shows that they were not, and null if the source gives no date. A check on 2026-11-05 compared each of the 147 quotes with its source: each press quote with the saved text of its article, and each book quote with an OCR of the cited page scan. All match.
 
 50 people. In the City in December 1986, as their sources show: 36; not then: 6; not known: 8.
 
