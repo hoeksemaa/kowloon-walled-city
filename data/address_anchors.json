@@ -1,0 +1,5846 @@
+{
+ "about": "House numbers and building names printed on the base plan of Suenn Ho's (何巽) route maps of 1991 (M+ CA17/2/1-3), read from the 1000 px online images. px: map pixels of copy CA17/2/3. plan: the same point in data/plan.json metres (tools/route_map_fit.py). readers: A and B are two readers of a tile, C is a later check of the street frontages.",
+ "source": "M+, Hong Kong. CA17/2/1-3, Suenn Ho, route maps, 20-21 Nov 1991. See primary-sources/mplus-suenn-ho-ca17/SOURCE.md.",
+ "labels": [
+  {
+   "text": "40",
+   "kind": "number",
+   "px": [
+    235.5,
+    83
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "North row on Tung Tau Tsuen Road. Reads 40 in all three copies. Fits the sequence 40, 39, 38-37, 36, 35 going east.",
+   "plan": [
+    19.64,
+    16.0
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    257.5,
+    87
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Second digit can be 3 (33), but the sequence 40-39-38 supports 39.",
+   "plan": [
+    26.32,
+    16.99
+   ]
+  },
+  {
+   "text": "38-37",
+   "kind": "number",
+   "px": [
+    279.5,
+    94
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "A black route line covers the hyphen at x 280. Second digit of the first number can be 6 (36-37), but 36 is the next lot east, so 38-37 is more probable.",
+   "plan": [
+    33.0,
+    18.85
+   ]
+  },
+  {
+   "text": "36",
+   "kind": "number",
+   "px": [
+    302,
+    97
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    39.79,
+    19.53
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    312,
+    99.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "In CA17/2/2 the second digit looks a little like 8.",
+   "plan": [
+    42.81,
+    20.18
+   ]
+  },
+  {
+   "text": "34",
+   "kind": "number",
+   "px": [
+    325,
+    103
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    46.73,
+    21.08
+   ]
+  },
+  {
+   "text": "33",
+   "kind": "number",
+   "px": [
+    338.5,
+    105.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    50.79,
+    21.7
+   ]
+  },
+  {
+   "text": "32",
+   "kind": "number",
+   "px": [
+    352.5,
+    108
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    54.99,
+    22.3
+   ]
+  },
+  {
+   "text": "32A",
+   "kind": "number",
+   "px": [
+    368,
+    110.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "The A is a small dark blob. The label sits just east of the black route dot at (365,115).",
+   "alt": [
+    "31A"
+   ],
+   "disputed": true,
+   "plan": [
+    59.63,
+    22.9
+   ]
+  },
+  {
+   "text": "31E",
+   "kind": "number",
+   "px": [
+    382.5,
+    114
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "31D (about 399,117) and 31C follow east, outside the tile.",
+   "plan": [
+    63.98,
+    23.79
+   ]
+  },
+  {
+   "text": "東興樓",
+   "kind": "name",
+   "px": [
+    395,
+    127
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Horizontal name. The tile edge cuts it: only 東 (384,125) is inside the tile. 興 is at (395,127) and 樓 at (406,129).",
+   "plan": [
+    67.78,
+    27.46
+   ]
+  },
+  {
+   "text": "42",
+   "kind": "number",
+   "px": [
+    231,
+    115
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Reads bottom to top, like 39 and 38-36 on the west side. Can also be 43 or 47. The west sequence 42, 41, 40, 39, 38-36, 35, 34 supports 42.",
+   "plan": [
+    18.42,
+    25.42
+   ]
+  },
+  {
+   "text": "41",
+   "kind": "number",
+   "px": [
+    249,
+    124
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "The 4 is a blob and the 1 is a short stroke. Same in all three copies.",
+   "plan": [
+    23.93,
+    27.91
+   ]
+  },
+  {
+   "text": "40",
+   "kind": "number",
+   "px": [
+    246.5,
+    131
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Just below 41. The second digit is a small loop, so it can be 48 or 46. This is a second 40, separate from the 40 at (235.5,83).",
+   "plan": [
+    23.21,
+    29.99
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    237,
+    149
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Reads bottom to top. Clear when rotated.",
+   "plan": [
+    20.41,
+    35.37
+   ]
+  },
+  {
+   "text": "38-36",
+   "kind": "number",
+   "px": [
+    218,
+    151
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Vertical, reading bottom to top, in a narrow lot. It runs from y 141 to y 161.",
+   "plan": [
+    14.64,
+    36.15
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    217,
+    171.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Vertical, bottom to top. The same narrow strip continues with 34 and then 33 at (217,192), below the tile edge.",
+   "plan": [
+    14.43,
+    42.22
+   ]
+  },
+  {
+   "text": "34",
+   "kind": "number",
+   "px": [
+    217,
+    181
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Vertical, bottom to top. Next is 33 at about y 192, outside the tile.",
+   "alt": [
+    "35 34 33",
+    "35 34 33"
+   ],
+   "disputed": true,
+   "plan": [
+    14.47,
+    45.03
+   ]
+  },
+  {
+   "text": "43-41",
+   "kind": "number",
+   "px": [
+    281,
+    147
+   ],
+   "confidence": "high",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Second digit can be 5 (45-41).",
+   "alt": [
+    "45-41",
+    "45-46",
+    "45-41"
+   ],
+   "disputed": true,
+   "plan": [
+    33.74,
+    34.36
+   ]
+  },
+  {
+   "text": "47X",
+   "kind": "number",
+   "px": [
+    322.5,
+    151.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "The second digit is a slanted stroke: it can be 7 or 1 (41X). The X can be K.",
+   "plan": [
+    46.28,
+    35.28
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    334,
+    147
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Two small glyphs stacked vertically. Rotated, they read 30 or 38 (bottom to top).",
+   "alt": [
+    "39",
+    "30"
+   ],
+   "disputed": true,
+   "plan": [
+    49.7,
+    33.86
+   ]
+  },
+  {
+   "text": "5",
+   "kind": "number",
+   "px": [
+    265.5,
+    165.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Can be 8 or 3. Fits the sequence 1, 3, 5.",
+   "alt": [
+    "8"
+   ],
+   "disputed": true,
+   "plan": [
+    29.15,
+    39.96
+   ]
+  },
+  {
+   "text": "1",
+   "kind": "number",
+   "px": [
+    239.5,
+    172
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    21.29,
+    42.14
+   ]
+  },
+  {
+   "text": "3",
+   "kind": "number",
+   "px": [
+    255,
+    173.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Looks like a curved ')' stroke, so it can be 1.",
+   "plan": [
+    26.01,
+    42.42
+   ]
+  },
+  {
+   "text": "10",
+   "kind": "number",
+   "px": [
+    289.5,
+    169
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Second digit can be 8 (18).",
+   "plan": [
+    36.44,
+    40.75
+   ]
+  },
+  {
+   "text": "15",
+   "kind": "number",
+   "px": [
+    310.5,
+    171
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "plan": [
+    42.78,
+    41.12
+   ]
+  },
+  {
+   "text": "14A",
+   "kind": "number",
+   "px": [
+    333,
+    171
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "alt": [
+    "16A"
+   ],
+   "disputed": true,
+   "plan": [
+    49.55,
+    40.9
+   ]
+  },
+  {
+   "text": "14",
+   "kind": "number",
+   "px": [
+    331.5,
+    179
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Directly below 14A.",
+   "alt": [
+    "16"
+   ],
+   "disputed": true,
+   "plan": [
+    49.15,
+    43.26
+   ]
+  },
+  {
+   "text": "N",
+   "kind": "other",
+   "px": [
+    210,
+    57
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "'N.' on the north side of the road-edge line, with a dot at (214,61). Can be 4.",
+   "plan": [
+    11.77,
+    8.59
+   ]
+  },
+  {
+   "text": "L",
+   "kind": "other",
+   "px": [
+    237.5,
+    68
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "Dot at (234,67) plus a short L or ( stroke, on the road-edge line. The same symbol repeats at (400,102), outside the tile. Probably a map symbol, not a lot labe",
+   "plan": [
+    20.17,
+    11.59
+   ]
+  },
+  {
+   "text": "2",
+   "kind": "other",
+   "px": [
+    297.5,
+    47.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "A small black mark in Tung Tau Tsuen Road, the same in all three copies, so it is not colour handwriting. Can be 2, a or a symbol.",
+   "plan": [
+    38.15,
+    5.15
+   ]
+  },
+  {
+   "text": "31C",
+   "kind": "number",
+   "px": [
+    393,
+    155
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "cut by the east tile edge, so only the 3 is inside the tile. Or 31G or 31B. A small mark follows at (402,156)",
+   "alt": [
+    "31E",
+    "31E"
+   ],
+   "disputed": true,
+   "plan": [
+    67.39,
+    35.63
+   ]
+  },
+  {
+   "text": "M",
+   "kind": "other",
+   "px": [
+    209,
+    57
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c0",
+   "note": "small printed M or N (or 4) beside a filled square on the street line, in all three copies. It can be a survey mark and not a lot label",
+   "plan": [
+    11.47,
+    8.6
+   ]
+  },
+  {
+   "text": "31D",
+   "kind": "number",
+   "px": [
+    397.4,
+    117.1
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Clear in CA17/2/3 and CA17/2/2.",
+   "plan": [
+    68.43,
+    24.56
+   ]
+  },
+  {
+   "text": "31C",
+   "kind": "number",
+   "px": [
+    408.6,
+    118.9
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "C is small; can be 31G.",
+   "plan": [
+    71.76,
+    24.98
+   ]
+  },
+  {
+   "text": "31B",
+   "kind": "number",
+   "px": [
+    421.6,
+    122.6
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can also read 318; B fits the row order.",
+   "plan": [
+    75.64,
+    25.94
+   ]
+  },
+  {
+   "text": "31A",
+   "kind": "number",
+   "px": [
+    435.3,
+    124.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Clearest in CA17/2/2; the pink route passes just west of it in CA17/2/3 and CA17/2/1.",
+   "plan": [
+    79.71,
+    26.37
+   ]
+  },
+  {
+   "text": "31",
+   "kind": "number",
+   "px": [
+    445.8,
+    126.4
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Narrow lot.",
+   "plan": [
+    82.83,
+    26.83
+   ]
+  },
+  {
+   "text": "30",
+   "kind": "number",
+   "px": [
+    452.1,
+    127.9
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "A 3 followed by a small low o. Can be 3c or 36. Narrow lot just under a black triangle marker.",
+   "plan": [
+    84.7,
+    27.2
+   ]
+  },
+  {
+   "text": "29",
+   "kind": "number",
+   "px": [
+    462.7,
+    127.6
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Clear in all three copies.",
+   "plan": [
+    87.82,
+    27.02
+   ]
+  },
+  {
+   "text": "28",
+   "kind": "number",
+   "px": [
+    476.6,
+    127.4
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Small. Can be 2B or 20. Narrow lot east of the marker post at x 471; CA17/2/2 is best.",
+   "plan": [
+    91.91,
+    26.84
+   ]
+  },
+  {
+   "text": "26",
+   "kind": "number",
+   "px": [
+    503.9,
+    129.9
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 25 or 2C. Another 26 is at (483,155) in the row below.",
+   "plan": [
+    99.94,
+    27.32
+   ]
+  },
+  {
+   "text": "24",
+   "kind": "number",
+   "px": [
+    536.6,
+    130
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 26. The second glyph looks like b or 4.",
+   "plan": [
+    109.49,
+    27.05
+   ]
+  },
+  {
+   "text": "31B",
+   "kind": "number",
+   "px": [
+    438.2,
+    157.8
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 318 or 31H. A small dark triangular mark follows it at (444.5,159); the mark can be a letter (31BA?) or a symbol. Duplicates the 31B text in the row abov",
+   "plan": [
+    80.82,
+    36.01
+   ]
+  },
+  {
+   "text": "31A",
+   "kind": "number",
+   "px": [
+    440,
+    166.4
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Faint. Can be 314 or 3iA. A small dark mark follows it at (445,168).",
+   "alt": [
+    "2-4"
+   ],
+   "disputed": true,
+   "plan": [
+    81.42,
+    38.5
+   ]
+  },
+  {
+   "text": "29",
+   "kind": "number",
+   "px": [
+    445.3,
+    174.3
+   ],
+   "confidence": "high",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 29 or 27. Next to the blue route; read in CA17/2/3 and CA17/2/2.",
+   "alt": [
+    "29",
+    "21"
+   ],
+   "disputed": true,
+   "plan": [
+    83.05,
+    40.74
+   ]
+  },
+  {
+   "text": "26",
+   "kind": "number",
+   "px": [
+    483.2,
+    155
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 25, because the second glyph looks like 5 in CA17/2/2 and like 6 in CA17/2/3. Above the Chinese characters at (486,162).",
+   "plan": [
+    94.08,
+    34.77
+   ]
+  },
+  {
+   "text": "24",
+   "kind": "number",
+   "px": [
+    468.9,
+    163.1
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Can be 26. Lot west of the boundary line at x ~476.",
+   "plan": [
+    89.93,
+    37.26
+   ]
+  },
+  {
+   "text": "27",
+   "kind": "number",
+   "px": [
+    501.1,
+    156
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "A 2 then a glyph like 7, f or 3. Can be 23 or 21.",
+   "alt": [
+    "25"
+   ],
+   "disputed": true,
+   "plan": [
+    99.34,
+    34.89
+   ]
+  },
+  {
+   "text": "21A",
+   "kind": "number",
+   "px": [
+    361.5,
+    167
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Three glyphs stacked down a diagonal in a narrow lot at the west edge: 2 at (357.5,157), 1 or i at (361,167), and a filled A or 4 at (365,177). They can be one ",
+   "plan": [
+    58.07,
+    39.44
+   ]
+  },
+  {
+   "text": "東",
+   "kind": "other",
+   "px": [
+    480.4,
+    75.6
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "First character of the road name 東頭村道 (Tung Tau Tsuen Road), printed in the road. The next character is outside the tile, east of x 545.",
+   "plan": [
+    92.6,
+    11.87
+   ]
+  },
+  {
+   "text": "TUNG",
+   "kind": "other",
+   "px": [
+    485,
+    89
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Road name TUNG TAU TSUEN ROAD. The letters are T ~464, U ~475, N ~491, G ~505.",
+   "plan": [
+    94.06,
+    15.69
+   ]
+  },
+  {
+   "text": "T",
+   "kind": "other",
+   "px": [
+    541.6,
+    88.8
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "First letter of TAU in the road name, cut by the tile's east edge.",
+   "plan": [
+    110.58,
+    15.17
+   ]
+  },
+  {
+   "text": "0",
+   "kind": "other",
+   "px": [
+    413,
+    73
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Small hollow rectangle in the road, in all three copies. It is probably a map symbol (for example a lamp post) and not text.",
+   "plan": [
+    72.73,
+    11.65
+   ]
+  },
+  {
+   "text": "0",
+   "kind": "other",
+   "px": [
+    527.7,
+    98.4
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Small hollow mark at the south kerb of the road, visible in CA17/2/3 and CA17/2/2. It is probably a symbol like the one at (413,73). It is next to the handwritt",
+   "plan": [
+    106.62,
+    18.04
+   ]
+  },
+  {
+   "text": "25",
+   "kind": "number",
+   "px": [
+    519,
+    130
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "A coloured route line (blue in 2/3, green in 2/2, orange in 2/1) covers it. Copy 2/3 shows a 2-like glyph at (518,130) and a stroke at (522,129). The second dig",
+   "plan": [
+    104.36,
+    27.21
+   ]
+  },
+  {
+   "text": "□",
+   "kind": "other",
+   "px": [
+    413,
+    73
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "Small rounded rectangle in the road, the same in all copies. It is probably a map symbol (post or lamp), not a label. It can be read as 0 or D.",
+   "plan": [
+    72.73,
+    11.65
+   ]
+  },
+  {
+   "text": "□",
+   "kind": "other",
+   "px": [
+    527,
+    97
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "The same small rectangle symbol as the one at (413,73), partly covered by a coloured circle. It is probably a symbol, not a label.",
+   "plan": [
+    106.4,
+    17.64
+   ]
+  },
+  {
+   "text": "L",
+   "kind": "other",
+   "px": [
+    400,
+    100
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c1",
+   "note": "A dot at (398,100) and a small L-like mark at (401,101) at the road edge. They are probably a symbol, not a label.",
+   "plan": [
+    69.08,
+    19.57
+   ]
+  },
+  {
+   "text": "22",
+   "kind": "number",
+   "px": [
+    573,
+    124.7
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "plan": [
+    120.03,
+    25.21
+   ]
+  },
+  {
+   "text": "21-20",
+   "kind": "number",
+   "px": [
+    586.5,
+    123
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "The second digit looks a little like 6 or 4, so 26-20 or 24-20 are possible. 21-20 fits the sequence. In CA17/2/3 a hand-drawn circle surrounds the 20.",
+   "plan": [
+    123.93,
+    24.6
+   ]
+  },
+  {
+   "text": "19A",
+   "kind": "number",
+   "px": [
+    612,
+    117.3
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Can also be 15A. 19A fits the sequence 21-20, 19A, 19B, 18, 17, 16.",
+   "plan": [
+    131.24,
+    22.75
+   ]
+  },
+  {
+   "text": "19A",
+   "kind": "number",
+   "px": [
+    615,
+    134.6
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "This label is in the lot south of the upper 19A. The first digit is faint. It is 19A or 13A or 15A.",
+   "plan": [
+    132.28,
+    27.68
+   ]
+  },
+  {
+   "text": "19B",
+   "kind": "number",
+   "px": [
+    643.5,
+    110.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Can be read as 198. 19B fits the 19A to the west.",
+   "plan": [
+    140.23,
+    20.54
+   ]
+  },
+  {
+   "text": "18",
+   "kind": "number",
+   "px": [
+    655.7,
+    107.7
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "plan": [
+    143.7,
+    19.64
+   ]
+  },
+  {
+   "text": "17",
+   "kind": "number",
+   "px": [
+    674.7,
+    108.3
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "plan": [
+    149.15,
+    19.65
+   ]
+  },
+  {
+   "text": "16",
+   "kind": "number",
+   "px": [
+    688.6,
+    104.4
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "plan": [
+    153.08,
+    18.43
+   ]
+  },
+  {
+   "text": "15",
+   "kind": "number",
+   "px": [
+    701.3,
+    101.7
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "This label is on the east edge, just past x 700. A 14 at x 712 is outside the tile.",
+   "plan": [
+    156.67,
+    17.55
+   ]
+  },
+  {
+   "text": "37",
+   "kind": "number",
+   "px": [
+    655.6,
+    131
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise, so it reads bottom to top.",
+   "plan": [
+    143.92,
+    26.29
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    663.8,
+    156.2
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise.",
+   "plan": [
+    146.54,
+    33.42
+   ]
+  },
+  {
+   "text": "46",
+   "kind": "number",
+   "px": [
+    684.7,
+    149.4
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise. Can also be 66.",
+   "plan": [
+    152.45,
+    31.28
+   ]
+  },
+  {
+   "text": "42",
+   "kind": "number",
+   "px": [
+    686.6,
+    163.8
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise. In some copies the first digit looks closed, like 6, so 62 is possible.",
+   "alt": [
+    "61",
+    "62"
+   ],
+   "disputed": true,
+   "plan": [
+    153.16,
+    35.38
+   ]
+  },
+  {
+   "text": "11",
+   "kind": "number",
+   "px": [
+    675.9,
+    173.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise.",
+   "plan": [
+    150.2,
+    38.26
+   ]
+  },
+  {
+   "text": "31",
+   "kind": "number",
+   "px": [
+    677.1,
+    186.6
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Rotated 90 degrees counter-clockwise. Can also be 71. This label is on the south edge, just past y 185.",
+   "plan": [
+    150.68,
+    42.0
+   ]
+  },
+  {
+   "text": "城寨福利會",
+   "kind": "name",
+   "px": [
+    655,
+    83.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Printed in a box on Tung Tau Tsuen Road, slanted along the road, with a leader line south-east to the lot of 18 and 17. Char 2 can be 寨 or 宮, and char 5 can be ",
+   "plan": [
+    143.25,
+    12.75
+   ]
+  },
+  {
+   "text": "(城寨福利會)",
+   "kind": "name",
+   "px": [
+    690,
+    114
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "In parentheses below 17 and 16, at a slight slant. It looks like the same text as the boxed label. The closing parenthesis is at x 704, past the edge.",
+   "plan": [
+    153.58,
+    21.15
+   ]
+  },
+  {
+   "text": "琴棧樓",
+   "kind": "name",
+   "px": [
+    696,
+    124.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "One line below (城寨福利會). Char 1 can be 琴 or 替, char 2 can be 棧 or 綫 or 錢, and char 3 can be 樓 or 館 or 號. It can include the 二-like glyph at x 680.",
+   "plan": [
+    155.41,
+    24.08
+   ]
+  },
+  {
+   "text": "二",
+   "kind": "other",
+   "px": [
+    680,
+    128
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Two curved strokes, one above the other, at the start of the 琴棧樓 line. It can be 二 or 六, or rotated parentheses.",
+   "plan": [
+    150.88,
+    25.22
+   ]
+  },
+  {
+   "text": "合興樓",
+   "kind": "name",
+   "px": [
+    583.8,
+    137
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Vertical text, characters upright, below 22 and 21-20. Char 1 has a 人 roof: 合, 金, 全 or 會. Char 2 can be 興 or 眾. Char 3 can be 樓.",
+   "plan": [
+    123.28,
+    28.65
+   ]
+  },
+  {
+   "text": "聯興一期",
+   "kind": "name",
+   "px": [
+    534.5,
+    173
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Vertical text in lot 24, from y 152 to 195; it runs past the south edge. There are 5 glyphs: 聯/親/觀, 興/舜/榮, 一/七/二, 期/號/巷, and a 5th like 化/14 at y 192. The repo'",
+   "plan": [
+    109.27,
+    39.49
+   ]
+  },
+  {
+   "text": "TAU",
+   "kind": "other",
+   "px": [
+    555.5,
+    87
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Part of the road name TUNG TAU TSUEN ROAD, slanted slightly.",
+   "plan": [
+    114.6,
+    14.54
+   ]
+  },
+  {
+   "text": "TSUEN",
+   "kind": "other",
+   "px": [
+    627.5,
+    73.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Part of the road name TUNG TAU TSUEN ROAD, slanted along the road.",
+   "plan": [
+    135.26,
+    10.12
+   ]
+  },
+  {
+   "text": "頭",
+   "kind": "other",
+   "px": [
+    561,
+    76
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Part of the road name 東頭村道.",
+   "plan": [
+    116.09,
+    11.35
+   ]
+  },
+  {
+   "text": "村",
+   "kind": "other",
+   "px": [
+    620,
+    65
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Part of the road name 東頭村道.",
+   "plan": [
+    133.02,
+    7.76
+   ]
+  },
+  {
+   "text": "道",
+   "kind": "other",
+   "px": [
+    692,
+    49
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "Part of the road name 東頭村道.",
+   "plan": [
+    153.44,
+    2.69
+   ]
+  },
+  {
+   "text": "RO",
+   "kind": "other",
+   "px": [
+    695,
+    58.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c2",
+   "note": "The start of ROAD in TUNG TAU TSUEN ROAD. The east edge cuts it.",
+   "plan": [
+    154.4,
+    5.36
+   ]
+  },
+  {
+   "text": "ROAD",
+   "kind": "other",
+   "px": [
+    706,
+    53
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "End of the printed road name TUNG TAU TSUEN ROAD. The letters run along the road at about 15-20 degrees, which is the same skew as the map grid.",
+   "plan": [
+    157.46,
+    3.72
+   ]
+  },
+  {
+   "text": "14",
+   "kind": "number",
+   "px": [
+    712,
+    99
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "In all three copies the second digit looks like 6 or b, so the label can be 16. 14 fits the sequence 17-16-15-?-13.",
+   "plan": [
+    159.68,
+    16.7
+   ]
+  },
+  {
+   "text": "13",
+   "kind": "number",
+   "px": [
+    732,
+    92
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "The second digit is a thin hooked stroke, so 12 or 11 is also possible.",
+   "plan": [
+    165.28,
+    14.56
+   ]
+  },
+  {
+   "text": "9",
+   "kind": "number",
+   "px": [
+    750,
+    86
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "One small glyph: a loop with a stem below it. It reads as 9 or 8, or as 10 if it is rotated and the 1 is faint. The next lot east is labelled 6-9, so a plain 9 ",
+   "plan": [
+    170.31,
+    12.72
+   ]
+  },
+  {
+   "text": "6-8",
+   "kind": "number",
+   "px": [
+    776,
+    82
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "6, dash, 9. Copy CA17/2/1 shows the 9 most clearly. 6-8 is also possible.",
+   "alt": [
+    "6-8",
+    "6-9"
+   ],
+   "disputed": true,
+   "plan": [
+    177.6,
+    11.39
+   ]
+  },
+  {
+   "text": "5",
+   "kind": "number",
+   "px": [
+    797,
+    77
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "plan": [
+    183.44,
+    9.82
+   ]
+  },
+  {
+   "text": "4",
+   "kind": "number",
+   "px": [
+    809,
+    75
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Small dark glyph. It looks most like 4 in copy CA17/2/1. It can also be 6, or a solid entrance triangle. It is in the same lot frame as the 3 at 819,71.",
+   "plan": [
+    186.78,
+    9.16
+   ]
+  },
+  {
+   "text": "3",
+   "kind": "number",
+   "px": [
+    819,
+    71
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Clear in copy CA17/2/1. It sits close to the east lot line.",
+   "plan": [
+    189.53,
+    7.96
+   ]
+  },
+  {
+   "text": "2",
+   "kind": "number",
+   "px": [
+    831,
+    69
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Two blobs, one above the other, at the west end of the curved NE building. It can be 2, 8 or a colon. 2 fits the sequence 5-4-3.",
+   "plan": [
+    192.87,
+    7.31
+   ]
+  },
+  {
+   "text": "(城砦福利社)",
+   "kind": "name",
+   "px": [
+    690,
+    114
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Five characters in brackets across lots 15-17, tilted with the grid. Only 福利 is fairly probable. Other readings: (城寨福利社), (城砦福利會), (楊江福利會). The first character ",
+   "plan": [
+    153.58,
+    21.15
+   ]
+  },
+  {
+   "text": "46",
+   "kind": "number",
+   "px": [
+    679,
+    129
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Printed vertically. Rotate it 90 degrees counter-clockwise to read 46. In the upright view it looks like 二 over a curve, at the start of the second Chinese line",
+   "plan": [
+    150.6,
+    25.51
+   ]
+  },
+  {
+   "text": "利民樓",
+   "kind": "name",
+   "px": [
+    694,
+    184
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Three characters in a vertical column, y 172-195, running past the tile edge. The last is probably 樓. The first can be 利, 机 or 祝, and the second 民, 氏 or 区.",
+   "plan": [
+    155.5,
+    41.09
+   ]
+  },
+  {
+   "text": "桂盛二樓",
+   "kind": "name",
+   "px": [
+    710,
+    187
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Vertical column, y 174-198, running past the tile edge. The second character 盛 is fairly clear. The first is unclear, and 桂 fits it. The third is small: 二, 大, o",
+   "plan": [
+    160.1,
+    41.79
+   ]
+  },
+  {
+   "text": "天后廟",
+   "kind": "name",
+   "px": [
+    727,
+    182
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Tin Hau Temple. Vertical column, y 168-196: 天, then 后, then 廟. 天 and 廟 are clearest in copies CA17/2/3 and CA17/2/2.",
+   "plan": [
+    164.89,
+    40.2
+   ]
+  },
+  {
+   "text": "51",
+   "kind": "number",
+   "px": [
+    802,
+    104
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees, inside a small box. 56 is also possible.",
+   "plan": [
+    185.18,
+    17.39
+   ]
+  },
+  {
+   "text": "47",
+   "kind": "number",
+   "px": [
+    800,
+    121
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees. The first digit is a heavy blob, so 67 is also possible.",
+   "plan": [
+    184.82,
+    22.2
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    800,
+    138
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees. 31 is also possible.",
+   "alt": [
+    "34"
+   ],
+   "disputed": true,
+   "plan": [
+    185.03,
+    27.01
+   ]
+  },
+  {
+   "text": "52",
+   "kind": "number",
+   "px": [
+    818,
+    121
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees. Rotate it counter-clockwise to read it.",
+   "plan": [
+    189.88,
+    22.05
+   ]
+  },
+  {
+   "text": "46",
+   "kind": "number",
+   "px": [
+    818,
+    137
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees. Clear in all copies.",
+   "plan": [
+    190.08,
+    26.57
+   ]
+  },
+  {
+   "text": "37",
+   "kind": "number",
+   "px": [
+    803,
+    175
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees.",
+   "plan": [
+    186.34,
+    37.47
+   ]
+  },
+  {
+   "text": "42",
+   "kind": "number",
+   "px": [
+    824,
+    182
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Rotated 90 degrees. Clear in all copies, at the south edge of the tile.",
+   "plan": [
+    192.34,
+    39.26
+   ]
+  },
+  {
+   "text": "0",
+   "kind": "other",
+   "px": [
+    676,
+    70
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Small oval in the road, clear in 2/3 and 2/2. It can be a map symbol (lamp post or manhole), not a label.",
+   "plan": [
+    149.11,
+    8.76
+   ]
+  },
+  {
+   "text": "48",
+   "kind": "number",
+   "px": [
+    826,
+    169
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r0_c3",
+   "note": "Slanted vertical: a heavy elongated first glyph (heavy-style 4?), then an 8-like glyph at (828,175). Other readings: 18, 49, 88.",
+   "alt": [
+    "44"
+   ],
+   "disputed": true,
+   "plan": [
+    192.73,
+    35.56
+   ]
+  },
+  {
+   "text": "69",
+   "kind": "number",
+   "px": [
+    884,
+    76
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Clear in all three copies. The text tilts slightly with the lot.",
+   "plan": [
+    207.72,
+    8.88
+   ]
+  },
+  {
+   "text": "67",
+   "kind": "number",
+   "px": [
+    887.5,
+    88.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Clear in CA17/2/3 and CA17/2/2. The text tilts slightly with the lot.",
+   "plan": [
+    208.86,
+    12.35
+   ]
+  },
+  {
+   "text": "63",
+   "kind": "number",
+   "px": [
+    879,
+    67
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Lot north of 69, with the text tilted about 20 degrees. The first digit has a bowl at the bottom (6, or possibly 5). The second digit is a stroke with a foot (1",
+   "alt": [
+    "63",
+    "61"
+   ],
+   "disputed": true,
+   "plan": [
+    206.21,
+    6.4
+   ]
+  },
+  {
+   "text": "65-59",
+   "kind": "number",
+   "px": [
+    888.5,
+    116.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Vertical text that reads top to bottom: rotate it 90 degrees anticlockwise to read it. 65- is clear. The last digit is 9, 5 or 3, so other readings are 65-55 an",
+   "alt": [
+    "65-55"
+   ],
+   "disputed": true,
+   "plan": [
+    209.51,
+    20.2
+   ]
+  },
+  {
+   "text": "57",
+   "kind": "number",
+   "px": [
+    896,
+    144.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Vertical text that reads top to bottom: rotate it 90 degrees anticlockwise. It reads 57 in all copies and fits between 59 and 55.",
+   "plan": [
+    211.97,
+    28.01
+   ]
+  },
+  {
+   "text": "55",
+   "kind": "number",
+   "px": [
+    895.7,
+    157
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Clear in all copies.",
+   "plan": [
+    212.06,
+    31.53
+   ]
+  },
+  {
+   "text": "53",
+   "kind": "number",
+   "px": [
+    897.8,
+    168.4
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "The second digit is narrow and cut by the x=900 grid line. The 3 is clear in CA17/2/3 (59 is a less likely reading).",
+   "plan": [
+    212.79,
+    34.72
+   ]
+  },
+  {
+   "text": "60",
+   "kind": "number",
+   "px": [
+    867,
+    89
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "West side of the route, in a diagonal lot, with the baseline rising to the right at about 40 degrees. The 6 is a solid blob and the 0 is an open ring. Other rea",
+   "plan": [
+    203.16,
+    12.65
+   ]
+  },
+  {
+   "text": "62",
+   "kind": "number",
+   "px": [
+    863,
+    80
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "West side, in the diagonal lot north-west of 60, at the same angle as 60. The first digit is a solid 6. The second digit has a ring above a solid dot, so it is ",
+   "alt": [
+    "62",
+    "68"
+   ],
+   "disputed": true,
+   "plan": [
+    201.93,
+    10.16
+   ]
+  },
+  {
+   "text": "T.",
+   "kind": "other",
+   "px": [
+    868,
+    115
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "A bold horizontal bar with a centre stem, and a dot to the right. It looks the same in all three copies. It sits in the same lot as the '91' mark above it.",
+   "plan": [
+    203.78,
+    19.95
+   ]
+  },
+  {
+   "text": "91",
+   "kind": "number",
+   "px": [
+    865,
+    104.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Two bold strokes that slant down to the right: a 9-like loop and a 1-like stroke. Other readings: M, or a Chinese character. It sits above the T. mark.",
+   "plan": [
+    202.81,
+    17.02
+   ]
+  },
+  {
+   "text": "T.",
+   "kind": "other",
+   "px": [
+    889,
+    51.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Near the top of the tile: a solid triangle-like bar with a stem going down-left, and a separate dot. It can be a rotated T. or only a printed triangle mark with",
+   "plan": [
+    208.78,
+    2.0
+   ]
+  },
+  {
+   "text": "36",
+   "kind": "number",
+   "px": [
+    873,
+    137
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "The 3 is fairly clear. The second digit is a bold blob with a thin stroke rising from it, so it is 6, 4 or 8. Other readings: 34, 38. A black triangle mark is j",
+   "alt": [
+    "54"
+   ],
+   "disputed": true,
+   "plan": [
+    205.47,
+    26.09
+   ]
+  },
+  {
+   "text": "48",
+   "kind": "number",
+   "px": [
+    873,
+    167.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Vertical label: a hooked glyph above a bold bar. Rotated 90 degrees clockwise it reads 17. Rotated anticlockwise it reads 21. It can also be a single 5.",
+   "alt": [
+    "48",
+    "17"
+   ],
+   "disputed": true,
+   "plan": [
+    205.87,
+    34.7
+   ]
+  },
+  {
+   "text": "B",
+   "kind": "other",
+   "px": [
+    823.5,
+    147.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "A bold B/8-shaped glyph on the thick boundary line at the left edge. A similar bold 8 is on the thick line at about (845,194) in the tile below. It can be a map",
+   "plan": [
+    191.76,
+    29.49
+   ]
+  },
+  {
+   "text": "Tung Tsing Road",
+   "kind": "other",
+   "px": [
+    930,
+    178
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "A printed street name in English, with the baseline rising slightly to the right. The full label is 'Tung Tsing Road / Sitting Out Area' (2 lines).",
+   "plan": [
+    221.87,
+    37.13
+   ]
+  },
+  {
+   "text": "Sitting Out Area",
+   "kind": "other",
+   "px": [
+    933,
+    187
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "The second line of 'Tung Tsing Road Sitting Out Area'. Only 'Area' (about x 945, y 184) is in this tile. I read the full line in tile r1_c4, so its centre is ju",
+   "plan": [
+    222.82,
+    39.63
+   ]
+  },
+  {
+   "text": "46",
+   "kind": "number",
+   "px": [
+    874.5,
+    182.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r0_c4",
+   "note": "Vertical, reads top to bottom, in the lot south of 48 near the tile's bottom edge. 45 or 48 possible.",
+   "plan": [
+    206.49,
+    38.92
+   ]
+  },
+  {
+   "text": "30",
+   "kind": "number",
+   "px": [
+    228,
+    208
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "clear in all copies",
+   "plan": [
+    17.96,
+    52.91
+   ]
+  },
+  {
+   "text": "27-26",
+   "kind": "number",
+   "px": [
+    226,
+    234
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "spans y 222-244",
+   "plan": [
+    17.47,
+    60.66
+   ]
+  },
+  {
+   "text": "24 23",
+   "kind": "number",
+   "px": [
+    225.5,
+    257
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "two short lines: 24 above 23. Top number can be 26 or 25 (a blurred 4 looks like 6 on this map); bottom can be 25",
+   "plan": [
+    17.43,
+    67.51
+   ]
+  },
+  {
+   "text": "22",
+   "kind": "number",
+   "px": [
+    227.5,
+    273.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "glyphs look like 11 or 33; the 2s match the 2 in 21-20 below, and 22 fits between 23 and 21-20",
+   "alt": [
+    "11",
+    "11"
+   ],
+   "disputed": true,
+   "plan": [
+    18.12,
+    72.41
+   ]
+  },
+  {
+   "text": "21-20",
+   "kind": "number",
+   "px": [
+    227.5,
+    295
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "spans y 289-301, at the bottom edge of the tile",
+   "alt": [
+    "31-30",
+    "31-36"
+   ],
+   "disputed": true,
+   "plan": [
+    18.23,
+    78.83
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    243,
+    226
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "first of three vertical labels in one column: 39, 38, 37",
+   "plan": [
+    22.62,
+    58.08
+   ]
+  },
+  {
+   "text": "38",
+   "kind": "number",
+   "px": [
+    243,
+    236.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "or 28",
+   "alt": [
+    "39 38 37"
+   ],
+   "disputed": true,
+   "plan": [
+    22.68,
+    61.2
+   ]
+  },
+  {
+   "text": "37",
+   "kind": "number",
+   "px": [
+    243,
+    247
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "or 39 or 35; 37 fits the sequence 39 38 37",
+   "plan": [
+    22.73,
+    64.32
+   ]
+  },
+  {
+   "text": "24A",
+   "kind": "number",
+   "px": [
+    247,
+    274.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "clear in all copies",
+   "alt": [
+    "34A"
+   ],
+   "disputed": true,
+   "plan": [
+    24.09,
+    72.46
+   ]
+  },
+  {
+   "text": "長安樓",
+   "kind": "name",
+   "px": [
+    310.5,
+    211
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "3 characters at x 302, 310, 319; first 長 or 辰, second 安 or 宇; third probably 樓",
+   "plan": [
+    43.02,
+    52.9
+   ]
+  },
+  {
+   "text": "1",
+   "kind": "number",
+   "px": [
+    267.5,
+    237
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "plan": [
+    30.14,
+    61.07
+   ]
+  },
+  {
+   "text": "2",
+   "kind": "number",
+   "px": [
+    282.5,
+    240
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "plan": [
+    34.72,
+    61.79
+   ]
+  },
+  {
+   "text": "5-7",
+   "kind": "number",
+   "px": [
+    263,
+    267
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "plan": [
+    28.93,
+    70.03
+   ]
+  },
+  {
+   "text": "3C",
+   "kind": "number",
+   "px": [
+    301.5,
+    278
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "or 2C",
+   "alt": [
+    "2C"
+   ],
+   "disputed": true,
+   "plan": [
+    40.7,
+    72.83
+   ]
+  },
+  {
+   "text": "40",
+   "kind": "number",
+   "px": [
+    335.5,
+    237.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "first digit is a small blob; can be 60 or 10",
+   "plan": [
+    50.73,
+    60.44
+   ]
+  },
+  {
+   "text": "19",
+   "kind": "number",
+   "px": [
+    321.5,
+    282.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "plan": [
+    46.78,
+    73.92
+   ]
+  },
+  {
+   "text": "加園",
+   "kind": "name",
+   "px": [
+    347,
+    275
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "or 如園",
+   "plan": [
+    54.43,
+    71.39
+   ]
+  },
+  {
+   "text": "21",
+   "kind": "number",
+   "px": [
+    361,
+    285.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "in the south-east corner of the lot that has 加園",
+   "plan": [
+    58.72,
+    74.32
+   ]
+  },
+  {
+   "text": "22-25A",
+   "kind": "number",
+   "px": [
+    394,
+    288
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "spans x 381-407, so it is mostly east of the tile edge; can be 22-25A",
+   "alt": [
+    "22-25A",
+    "22-25A",
+    "22-23A"
+   ],
+   "disputed": true,
+   "plan": [
+    68.64,
+    74.65
+   ]
+  },
+  {
+   "text": "14",
+   "kind": "number",
+   "px": [
+    347.5,
+    199.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "or 16",
+   "alt": [
+    "16"
+   ],
+   "disputed": true,
+   "plan": [
+    54.09,
+    49.12
+   ]
+  },
+  {
+   "text": "6",
+   "kind": "number",
+   "px": [
+    357.5,
+    222
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c0",
+   "note": "small glyph in a small lot beside a black route triangle; can be a hand mark",
+   "plan": [
+    57.24,
+    55.62
+   ]
+  },
+  {
+   "text": "28",
+   "kind": "number",
+   "px": [
+    484.5,
+    173.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "or 2B; sits in a narrow strip on a lot line; can be a symbol",
+   "plan": [
+    94.61,
+    40.12
+   ]
+  },
+  {
+   "text": "22",
+   "kind": "number",
+   "px": [
+    464.5,
+    187.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "plan": [
+    88.83,
+    44.39
+   ]
+  },
+  {
+   "text": "24A",
+   "kind": "number",
+   "px": [
+    445,
+    203.5
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "3 glyphs: 2, 4 (or 8), then a narrow glyph (A, E, L or 1); can be 24E or 241",
+   "plan": [
+    83.19,
+    49.26
+   ]
+  },
+  {
+   "text": "6A",
+   "kind": "number",
+   "px": [
+    445.5,
+    213
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "or 4A / bA",
+   "plan": [
+    83.42,
+    52.03
+   ]
+  },
+  {
+   "text": "聯興八期",
+   "kind": "name",
+   "px": [
+    460.5,
+    201.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "2x2 block: 聯興 over 八期. 八 and 期 clear; first char looks like 陶/聯",
+   "plan": [
+    87.76,
+    48.51
+   ]
+  },
+  {
+   "text": "14",
+   "kind": "number",
+   "px": [
+    532,
+    191
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "under 聯興一期; can be 1A",
+   "alt": [
+    "16"
+   ],
+   "disputed": true,
+   "plan": [
+    108.7,
+    44.72
+   ]
+  },
+  {
+   "text": "29",
+   "kind": "number",
+   "px": [
+    547,
+    227
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "cut by the east edge of the tile (2 at x 544, 9 at x 549)",
+   "plan": [
+    113.42,
+    55.01
+   ]
+  },
+  {
+   "text": "11-9",
+   "kind": "number",
+   "px": [
+    404.5,
+    211
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "or 11-7 or 21-9",
+   "plan": [
+    71.22,
+    51.88
+   ]
+  },
+  {
+   "text": "1816",
+   "kind": "number",
+   "px": [
+    405.5,
+    220
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "4 evenly spaced glyphs 1 8 1 6 with no hyphen visible; probably 18-16; 8 can be 3",
+   "plan": [
+    71.58,
+    54.51
+   ]
+  },
+  {
+   "text": "聯興二期",
+   "kind": "name",
+   "px": [
+    397.5,
+    232
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "興二期 clear; first char has a 皿-like base, so 益興二期 is also possible",
+   "plan": [
+    69.28,
+    58.12
+   ]
+  },
+  {
+   "text": "聯興二期",
+   "kind": "name",
+   "px": [
+    397,
+    259.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "same style as the one at y 232; first char can be 益",
+   "plan": [
+    69.33,
+    66.21
+   ]
+  },
+  {
+   "text": "27",
+   "kind": "number",
+   "px": [
+    416.5,
+    266
+   ],
+   "confidence": "high",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "plan": [
+    75.2,
+    67.89
+   ]
+  },
+  {
+   "text": "文興樓",
+   "kind": "name",
+   "px": [
+    395,
+    277.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "plan": [
+    68.86,
+    71.54
+   ]
+  },
+  {
+   "text": "2",
+   "kind": "number",
+   "px": [
+    450.5,
+    247
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "plan": [
+    85.17,
+    61.92
+   ]
+  },
+  {
+   "text": "19A",
+   "kind": "number",
+   "px": [
+    430,
+    286.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "printed at about 105 degrees along the lane, under the coloured route lines",
+   "plan": [
+    79.38,
+    73.77
+   ]
+  },
+  {
+   "text": "5",
+   "kind": "number",
+   "px": [
+    462.5,
+    291
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "or 6, S, or a Chinese char",
+   "plan": [
+    89.08,
+    74.69
+   ]
+  },
+  {
+   "text": "13",
+   "kind": "number",
+   "px": [
+    492,
+    289
+   ],
+   "confidence": "medium",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "turned 90 degrees, reads top to bottom; clear as 13 when the image is turned 90 degrees anticlockwise",
+   "plan": [
+    97.8,
+    73.74
+   ]
+  },
+  {
+   "text": "聯興二期",
+   "kind": "name",
+   "px": [
+    495.5,
+    253
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c1",
+   "note": "2x2 block: TL like 取/聯, TR a faint ring-like char, BL 二 (short over long stroke), BR 期; third char can be 三",
+   "plan": [
+    98.52,
+    63.16
+   ]
+  },
+  {
+   "text": "12",
+   "kind": "number",
+   "px": [
+    563,
+    195
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Clear in all three copies. At the foot of the Chinese name column of its lot.",
+   "plan": [
+    117.79,
+    45.57
+   ]
+  },
+  {
+   "text": "11A",
+   "kind": "number",
+   "px": [
+    588.5,
+    199
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Clear in all three copies.",
+   "plan": [
+    125.24,
+    46.46
+   ]
+  },
+  {
+   "text": "11-6",
+   "kind": "number",
+   "px": [
+    616,
+    187
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Printed vertically, reading top to bottom. It reads as 11-6 when the map is turned 90 deg counter-clockwise. Can also be 11-B or 11-9. In the lot east of 11A, l",
+   "plan": [
+    133.09,
+    42.72
+   ]
+  },
+  {
+   "text": "5",
+   "kind": "number",
+   "px": [
+    640.5,
+    207
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "The first of a row of three single digits (5, 6, 3) in small lots.",
+   "plan": [
+    140.37,
+    48.23
+   ]
+  },
+  {
+   "text": "6",
+   "kind": "number",
+   "px": [
+    651.5,
+    208.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Looks like a 6 (thin stem above, loop below) in all copies. The row 5-?-3 suggests 4, but the shape is a 6.",
+   "plan": [
+    143.56,
+    48.55
+   ]
+  },
+  {
+   "text": "3",
+   "kind": "number",
+   "px": [
+    660,
+    210
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "The third digit of the row 5, 6, 3.",
+   "plan": [
+    146.02,
+    48.9
+   ]
+  },
+  {
+   "text": "27",
+   "kind": "number",
+   "px": [
+    680,
+    207.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Clear in all copies.",
+   "plan": [
+    151.74,
+    47.97
+   ]
+  },
+  {
+   "text": "27A",
+   "kind": "number",
+   "px": [
+    680.7,
+    215.3
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Clear in all copies. It is in the lot directly below 27.",
+   "plan": [
+    152.03,
+    50.21
+   ]
+  },
+  {
+   "text": "27B",
+   "kind": "number",
+   "px": [
+    681.8,
+    231.3
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Below the lane with a triangle. The third glyph is like A or B. Because 27A is just above it, B is probable.",
+   "plan": [
+    152.52,
+    54.8
+   ]
+  },
+  {
+   "text": "36",
+   "kind": "number",
+   "px": [
+    703.5,
+    217
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Vertical, at the east edge of the tile and mostly east of x 700. Can also be 34. Read it in tile r1_c3.",
+   "plan": [
+    158.58,
+    50.46
+   ]
+  },
+  {
+   "text": "32",
+   "kind": "number",
+   "px": [
+    704.5,
+    231.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Vertical, east of x 700. Can also be 34. Read it in tile r1_c3.",
+   "plan": [
+    159.03,
+    54.61
+   ]
+  },
+  {
+   "text": "30",
+   "kind": "number",
+   "px": [
+    703,
+    251
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Vertical, east of x 700, with a dot after it. Can also be 36 or 38. Read it in tile r1_c3.",
+   "plan": [
+    158.82,
+    60.24
+   ]
+  },
+  {
+   "text": "老人中心",
+   "kind": "name",
+   "px": [
+    597,
+    296
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Vertical Chinese text from y 272 to about 320, so it continues below the tile. 中心 is clear. 老人 is probable: the first glyph is dense, the second is thin. It is ",
+   "plan": [
+    128.67,
+    74.51
+   ]
+  },
+  {
+   "text": "老人街",
+   "kind": "name",
+   "px": [
+    600,
+    210
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Street name printed along the lane at about 15 deg. A '<' mark at (586,206) comes before it. The glyphs are dense, then light, then wide and dense, which fits 老",
+   "plan": [
+    128.69,
+    49.52
+   ]
+  },
+  {
+   "text": "(大井街)",
+   "kind": "name",
+   "px": [
+    519,
+    262
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c2",
+   "note": "Vertical text in parentheses (︵ at the top, at 521,247) in a narrow lane that leans left. The glyphs are light, then dark, then dark, which fits 大井街. It can be ",
+   "plan": [
+    105.52,
+    65.52
+   ]
+  },
+  {
+   "text": "30B",
+   "kind": "number",
+   "px": [
+    700,
+    266
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "note": "the third character is a dark B/8 shape. Other readings: 30A or 308",
+   "plan": [
+    158.13,
+    64.59
+   ]
+  },
+  {
+   "text": "28",
+   "kind": "number",
+   "px": [
+    700,
+    293
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    158.43,
+    72.39
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    804,
+    203
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    186.97,
+    45.43
+   ]
+  },
+  {
+   "text": "33",
+   "kind": "number",
+   "px": [
+    807,
+    219
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "note": "inside the black hand-drawn loop. Reads 33 in copies 3 and 1; in copy 2 it looks more like 30. The odd sequence supports 33",
+   "plan": [
+    188.02,
+    49.95
+   ]
+  },
+  {
+   "text": "31-29",
+   "kind": "number",
+   "px": [
+    807,
+    238
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    188.25,
+    55.37
+   ]
+  },
+  {
+   "text": "27",
+   "kind": "number",
+   "px": [
+    808,
+    258
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    188.79,
+    61.08
+   ]
+  },
+  {
+   "text": "25",
+   "kind": "number",
+   "px": [
+    814,
+    283
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    190.8,
+    68.17
+   ]
+  },
+  {
+   "text": "40",
+   "kind": "number",
+   "px": [
+    830,
+    211
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "note": "east side of the lane. The even numbers run 42, 40, 38, 36, 34, 32, 30 going south",
+   "plan": [
+    194.39,
+    47.44
+   ]
+  },
+  {
+   "text": "38",
+   "kind": "number",
+   "px": [
+    827,
+    227
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    193.75,
+    52.03
+   ]
+  },
+  {
+   "text": "36",
+   "kind": "number",
+   "px": [
+    830,
+    250
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    194.89,
+    58.55
+   ]
+  },
+  {
+   "text": "34",
+   "kind": "number",
+   "px": [
+    832,
+    267
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    195.68,
+    63.39
+   ]
+  },
+  {
+   "text": "32",
+   "kind": "number",
+   "px": [
+    833,
+    279
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    196.11,
+    66.81
+   ]
+  },
+  {
+   "text": "30",
+   "kind": "number",
+   "px": [
+    836,
+    293
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    197.14,
+    70.78
+   ]
+  },
+  {
+   "text": "17A",
+   "kind": "number",
+   "px": [
+    790,
+    294
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "plan": [
+    184.14,
+    71.61
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    791,
+    277
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "note": "the first digit is a clear 3. The second is heavily inked and looks like 5; 36 or 38 are possible. It could also be 3 followed by a Chinese character",
+   "plan": [
+    184.21,
+    66.72
+   ]
+  },
+  {
+   "text": "光明樓",
+   "kind": "name",
+   "px": [
+    779,
+    222
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c3",
+   "note": "horizontal, 3 characters at x 770-790. The last is very probably 樓. The first can also be 九, 北 or 兆, and the second 暘 or 賜",
+   "plan": [
+    180.14,
+    51.1
+   ]
+  },
+  {
+   "text": "44",
+   "kind": "number",
+   "px": [
+    880.5,
+    201
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "The second digit is a stem with a blob (b-shape). The same glyph is the 4 in 34-30. Other reading: 46.",
+   "plan": [
+    208.41,
+    44.1
+   ]
+  },
+  {
+   "text": "42",
+   "kind": "number",
+   "px": [
+    883,
+    214
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "The first digit looks like 6 in all copies, so 62 is the other reading. The 4 in the 42 of the west column has the same shape, and the sequence 44-?2-40-38 supp",
+   "plan": [
+    209.28,
+    47.76
+   ]
+  },
+  {
+   "text": "40",
+   "kind": "number",
+   "px": [
+    885,
+    227
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    210.02,
+    51.42
+   ]
+  },
+  {
+   "text": "38",
+   "kind": "number",
+   "px": [
+    887.5,
+    238.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    210.87,
+    54.66
+   ]
+  },
+  {
+   "text": "36",
+   "kind": "number",
+   "px": [
+    890,
+    254.5
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "The first digit is X-shaped. Other reading: 26. The sequence 38-36-34-30 supports 36.",
+   "plan": [
+    211.79,
+    59.18
+   ]
+  },
+  {
+   "text": "34-30",
+   "kind": "number",
+   "px": [
+    893.5,
+    284.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Reads top to bottom. The second digit is a b-shaped 4. Other reading: 36-30.",
+   "plan": [
+    213.18,
+    67.68
+   ]
+  },
+  {
+   "text": "47",
+   "kind": "number",
+   "px": [
+    904,
+    213
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Other reading: 41. The first digit is a blob, like the 4s below it.",
+   "plan": [
+    215.13,
+    47.26
+   ]
+  },
+  {
+   "text": "45",
+   "kind": "number",
+   "px": [
+    906.5,
+    221
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    215.93,
+    49.5
+   ]
+  },
+  {
+   "text": "43",
+   "kind": "number",
+   "px": [
+    908,
+    230
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    216.47,
+    52.03
+   ]
+  },
+  {
+   "text": "41",
+   "kind": "number",
+   "px": [
+    909.5,
+    239
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Other reading: 47.",
+   "plan": [
+    217.02,
+    54.57
+   ]
+  },
+  {
+   "text": "39",
+   "kind": "number",
+   "px": [
+    911,
+    247
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Other readings: 38, 30. The sequence 41-39-37 supports 39.",
+   "plan": [
+    217.55,
+    56.82
+   ]
+  },
+  {
+   "text": "37",
+   "kind": "number",
+   "px": [
+    911.5,
+    256
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Other reading: 39.",
+   "plan": [
+    217.81,
+    59.37
+   ]
+  },
+  {
+   "text": "35",
+   "kind": "number",
+   "px": [
+    914,
+    265.5
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    218.64,
+    62.04
+   ]
+  },
+  {
+   "text": "33",
+   "kind": "number",
+   "px": [
+    914,
+    274
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "plan": [
+    218.76,
+    64.46
+   ]
+  },
+  {
+   "text": "31",
+   "kind": "number",
+   "px": [
+    915.5,
+    294
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Printed vertically (top to bottom), unlike the odd numbers above it. Other reading: 37.",
+   "plan": [
+    219.45,
+    70.14
+   ]
+  },
+  {
+   "text": "Tung Tsing Road Sitting Out Area",
+   "kind": "other",
+   "px": [
+    932,
+    184
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Printed in two lines, slanted about 10 degrees up to the right. 'Tung Tsing Road' has its centre at about (931,180). 'Sitting Out Area' has its centre at about ",
+   "plan": [
+    222.5,
+    38.8
+   ]
+  },
+  {
+   "text": "T.",
+   "kind": "other",
+   "px": [
+    956,
+    220
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "Faint small marks (a bar, a stroke and a dot) on a diagonal, just above a small square structure at about (954,232). Other readings: 2., S., 1.",
+   "plan": [
+    229.66,
+    48.71
+   ]
+  },
+  {
+   "text": "#",
+   "kind": "other",
+   "px": [
+    896,
+    229
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r1_c4",
+   "note": "hash- or ladder-like mark (# or a symbol like 井) in the lane between two black entrance triangles, in all three copies; can be a steps symbol or a hand mark, no",
+   "plan": [
+    213.12,
+    51.87
+   ]
+  },
+  {
+   "text": "15-16",
+   "kind": "number",
+   "px": [
+    260,
+    304
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "clear in all copies",
+   "plan": [
+    28.22,
+    81.1
+   ]
+  },
+  {
+   "text": "23",
+   "kind": "number",
+   "px": [
+    288,
+    304
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 13 / 73; in the same building as 12",
+   "alt": [
+    "13"
+   ],
+   "disputed": true,
+   "plan": [
+    36.75,
+    80.74
+   ]
+  },
+  {
+   "text": "12",
+   "kind": "number",
+   "px": [
+    302,
+    304
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 22",
+   "plan": [
+    41.0,
+    80.56
+   ]
+  },
+  {
+   "text": "文",
+   "kind": "name",
+   "px": [
+    382,
+    276
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "one character, 文 or 丈/大; the name can continue east past the tile edge x390",
+   "plan": [
+    64.96,
+    71.26
+   ]
+  },
+  {
+   "text": "22",
+   "kind": "number",
+   "px": [
+    383,
+    288
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 33 / 23",
+   "plan": [
+    65.34,
+    74.79
+   ]
+  },
+  {
+   "text": "18",
+   "kind": "number",
+   "px": [
+    332,
+    297
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "thin 1 plus a bold 8; it does not look like the 樓 shape; it can be the third character of the name to its left",
+   "plan": [
+    50.05,
+    78.09
+   ]
+  },
+  {
+   "text": "-A",
+   "kind": "number",
+   "px": [
+    322,
+    307
+   ],
+   "confidence": "low",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "a dot or dash, then A: -A, 1A or 4A",
+   "plan": [
+    47.09,
+    81.19
+   ]
+  },
+  {
+   "text": "4-2",
+   "kind": "number",
+   "px": [
+    379,
+    314
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 6-2 / 4-7",
+   "plan": [
+    64.32,
+    82.54
+   ]
+  },
+  {
+   "text": "6",
+   "kind": "number",
+   "px": [
+    352,
+    311
+   ],
+   "confidence": "high",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "single digit; or 8",
+   "plan": [
+    56.18,
+    82.0
+   ]
+  },
+  {
+   "text": "1-5",
+   "kind": "number",
+   "px": [
+    325,
+    324
+   ],
+   "confidence": "high",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "clearest in CA17/2/2",
+   "alt": [
+    "3-5"
+   ],
+   "disputed": true,
+   "plan": [
+    48.1,
+    86.21
+   ]
+  },
+  {
+   "text": "19-17",
+   "kind": "number",
+   "px": [
+    223,
+    331
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "vertical, read like 24A; '19' and '17' are probable; the middle glyph looks like b/6, so it can also be 19-6-17 or 18-17",
+   "alt": [
+    "19-21"
+   ],
+   "disputed": true,
+   "plan": [
+    17.02,
+    89.68
+   ]
+  },
+  {
+   "text": "57",
+   "kind": "number",
+   "px": [
+    274,
+    329
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 52 / 5J; in a diagonal lot",
+   "plan": [
+    32.63,
+    88.39
+   ]
+  },
+  {
+   "text": "CC",
+   "kind": "other",
+   "px": [
+    285,
+    356
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "looks like CC in all copies; can be 66 or ce. To its west, at y356 x258-276, is a dotted row '1- - - -1', probably a dashed line",
+   "plan": [
+    36.13,
+    96.32
+   ]
+  },
+  {
+   "text": "12A",
+   "kind": "number",
+   "px": [
+    262,
+    376
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "vertical in a narrow N-S strip lot, read like 24A; or 13A",
+   "plan": [
+    29.21,
+    102.65
+   ]
+  },
+  {
+   "text": "1-1",
+   "kind": "number",
+   "px": [
+    262,
+    391
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "same strip as 12A; a dot, then -1: 1-1, 2-1 or 4-1",
+   "plan": [
+    29.29,
+    107.17
+   ]
+  },
+  {
+   "text": "11",
+   "kind": "number",
+   "px": [
+    283,
+    371
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "two vertical strokes, clear in all copies",
+   "plan": [
+    35.61,
+    100.85
+   ]
+  },
+  {
+   "text": "11",
+   "kind": "number",
+   "px": [
+    296,
+    375
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "next to the route line; first glyph has a dark top: 11, 71 or 10",
+   "plan": [
+    39.6,
+    101.86
+   ]
+  },
+  {
+   "text": "13-14",
+   "kind": "number",
+   "px": [
+    235,
+    394
+   ],
+   "confidence": "medium",
+   "readers": [
+    "A",
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "last digit is a round blob: 13-14, 13-16 or 15-14",
+   "plan": [
+    21.02,
+    108.47
+   ]
+  },
+  {
+   "text": "13-12",
+   "kind": "number",
+   "px": [
+    238,
+    411
+   ],
+   "confidence": "low",
+   "readers": [
+    "A"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "or 13-17 / 15-12 / 15-17",
+   "alt": [
+    "13-17"
+   ],
+   "disputed": true,
+   "plan": [
+    22.03,
+    113.56
+   ]
+  },
+  {
+   "text": "66",
+   "kind": "number",
+   "px": [
+    284,
+    356
+   ],
+   "confidence": "low",
+   "readers": [
+    "B"
+   ],
+   "tile": "tile_r2_c0",
+   "note": "faint; or cc or 166 (a tall 1 at x 277)",
+   "plan": [
+    35.83,
+    96.33
+   ]
+  },
+  {
+   "text": "160",
+   "kind": "number",
+   "px": [
+    251,
+    508
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    26.54,
+    142.79
+   ]
+  },
+  {
+   "text": "158",
+   "kind": "number",
+   "px": [
+    264,
+    508
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    30.55,
+    142.57
+   ]
+  },
+  {
+   "text": "156",
+   "kind": "number",
+   "px": [
+    284,
+    515
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    36.74,
+    144.35
+   ]
+  },
+  {
+   "text": "154",
+   "kind": "number",
+   "px": [
+    300,
+    515
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    41.65,
+    144.07
+   ]
+  },
+  {
+   "text": "152-150",
+   "kind": "number",
+   "px": [
+    342,
+    522
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    54.54,
+    145.46
+   ]
+  },
+  {
+   "text": "146-140",
+   "kind": "number",
+   "px": [
+    418,
+    528
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    77.65,
+    145.94
+   ]
+  },
+  {
+   "text": "138",
+   "kind": "number",
+   "px": [
+    457,
+    532
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    89.42,
+    146.47
+   ]
+  },
+  {
+   "text": "136",
+   "kind": "number",
+   "px": [
+    473,
+    526
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    94.17,
+    144.38
+   ]
+  },
+  {
+   "text": "134",
+   "kind": "number",
+   "px": [
+    486,
+    523
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    98.03,
+    143.26
+   ]
+  },
+  {
+   "text": "132",
+   "kind": "number",
+   "px": [
+    514,
+    529
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    106.44,
+    144.57
+   ]
+  },
+  {
+   "text": "130",
+   "kind": "number",
+   "px": [
+    524,
+    528
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    109.4,
+    144.1
+   ]
+  },
+  {
+   "text": "128",
+   "kind": "number",
+   "px": [
+    537,
+    525
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    113.24,
+    142.98
+   ]
+  },
+  {
+   "text": "126",
+   "kind": "number",
+   "px": [
+    546,
+    528
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    115.94,
+    143.72
+   ]
+  },
+  {
+   "text": "124",
+   "kind": "number",
+   "px": [
+    557,
+    527
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    119.19,
+    143.24
+   ]
+  },
+  {
+   "text": "122",
+   "kind": "number",
+   "px": [
+    575,
+    522
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    124.46,
+    141.44
+   ]
+  },
+  {
+   "text": "120",
+   "kind": "number",
+   "px": [
+    582,
+    519
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    126.49,
+    140.42
+   ]
+  },
+  {
+   "text": "118",
+   "kind": "number",
+   "px": [
+    599,
+    522
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    131.53,
+    141.03
+   ]
+  },
+  {
+   "text": "116",
+   "kind": "number",
+   "px": [
+    610,
+    524
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    134.79,
+    141.44
+   ]
+  },
+  {
+   "text": "114",
+   "kind": "number",
+   "px": [
+    621,
+    524
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    138.02,
+    141.25
+   ]
+  },
+  {
+   "text": "112",
+   "kind": "number",
+   "px": [
+    627,
+    522
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    139.76,
+    140.56
+   ]
+  },
+  {
+   "text": "110",
+   "kind": "number",
+   "px": [
+    644,
+    526
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    144.78,
+    141.46
+   ]
+  },
+  {
+   "text": "108",
+   "kind": "number",
+   "px": [
+    656,
+    522
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    148.24,
+    140.07
+   ]
+  },
+  {
+   "text": "106",
+   "kind": "number",
+   "px": [
+    668,
+    522
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    151.74,
+    139.87
+   ]
+  },
+  {
+   "text": "104",
+   "kind": "number",
+   "px": [
+    680,
+    522
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    155.23,
+    139.67
+   ]
+  },
+  {
+   "text": "102A",
+   "kind": "number",
+   "px": [
+    698,
+    517
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    160.41,
+    137.89
+   ]
+  },
+  {
+   "text": "102",
+   "kind": "number",
+   "px": [
+    710,
+    521
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    163.93,
+    138.87
+   ]
+  },
+  {
+   "text": "100",
+   "kind": "number",
+   "px": [
+    725,
+    524
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    168.31,
+    139.51
+   ]
+  },
+  {
+   "text": "98",
+   "kind": "number",
+   "px": [
+    739,
+    528
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    172.4,
+    140.45
+   ]
+  },
+  {
+   "text": "96",
+   "kind": "number",
+   "px": [
+    750,
+    529
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    175.59,
+    140.56
+   ]
+  },
+  {
+   "text": "94",
+   "kind": "number",
+   "px": [
+    760,
+    532
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    178.51,
+    141.28
+   ]
+  },
+  {
+   "text": "92",
+   "kind": "number",
+   "px": [
+    766,
+    532
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    180.23,
+    141.18
+   ]
+  },
+  {
+   "text": "90",
+   "kind": "number",
+   "px": [
+    778,
+    539
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    183.77,
+    143.04
+   ]
+  },
+  {
+   "text": "88",
+   "kind": "number",
+   "px": [
+    789,
+    539
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    186.93,
+    142.85
+   ]
+  },
+  {
+   "text": "86",
+   "kind": "number",
+   "px": [
+    800,
+    540
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    190.09,
+    142.96
+   ]
+  },
+  {
+   "text": "84",
+   "kind": "number",
+   "px": [
+    815,
+    544
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    194.44,
+    143.88
+   ]
+  },
+  {
+   "text": "82",
+   "kind": "number",
+   "px": [
+    831,
+    545
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    199.02,
+    143.91
+   ]
+  },
+  {
+   "text": "80",
+   "kind": "number",
+   "px": [
+    846,
+    549
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    203.35,
+    144.83
+   ]
+  },
+  {
+   "text": "78",
+   "kind": "number",
+   "px": [
+    860,
+    551
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    207.36,
+    145.17
+   ]
+  },
+  {
+   "text": "76",
+   "kind": "number",
+   "px": [
+    875,
+    552
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    211.63,
+    145.21
+   ]
+  },
+  {
+   "text": "74",
+   "kind": "number",
+   "px": [
+    886,
+    552
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    214.75,
+    145.03
+   ]
+  },
+  {
+   "text": "72",
+   "kind": "number",
+   "px": [
+    899,
+    551
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    218.42,
+    144.52
+   ]
+  },
+  {
+   "text": "58",
+   "kind": "number",
+   "px": [
+    821,
+    498
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    195.55,
+    130.31
+   ]
+  },
+  {
+   "text": "38",
+   "kind": "number",
+   "px": [
+    852,
+    502
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    204.43,
+    130.98
+   ]
+  },
+  {
+   "text": "2C",
+   "kind": "number",
+   "px": [
+    889,
+    504
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    214.93,
+    130.97
+   ]
+  },
+  {
+   "text": "1-5",
+   "kind": "number",
+   "px": [
+    793,
+    477
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    187.29,
+    124.61
+   ]
+  },
+  {
+   "text": "6",
+   "kind": "number",
+   "px": [
+    866,
+    484
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "alt": [
+    "4"
+   ],
+   "disputed": true,
+   "plan": [
+    208.15,
+    125.52
+   ]
+  },
+  {
+   "text": "15-17",
+   "kind": "number",
+   "px": [
+    614,
+    486
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    135.57,
+    130.09
+   ]
+  },
+  {
+   "text": "1-5",
+   "kind": "number",
+   "px": [
+    650,
+    490
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    146.14,
+    130.69
+   ]
+  },
+  {
+   "text": "17",
+   "kind": "number",
+   "px": [
+    734,
+    493
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:south",
+   "plan": [
+    170.54,
+    130.23
+   ]
+  },
+  {
+   "text": "29",
+   "kind": "number",
+   "px": [
+    916,
+    310
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    219.82,
+    74.69
+   ]
+  },
+  {
+   "text": "27",
+   "kind": "number",
+   "px": [
+    918,
+    327
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    220.61,
+    79.52
+   ]
+  },
+  {
+   "text": "25",
+   "kind": "number",
+   "px": [
+    925,
+    347
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    222.85,
+    85.15
+   ]
+  },
+  {
+   "text": "28",
+   "kind": "number",
+   "px": [
+    899,
+    327
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    215.3,
+    79.76
+   ]
+  },
+  {
+   "text": "26",
+   "kind": "number",
+   "px": [
+    892,
+    327
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    213.34,
+    79.84
+   ]
+  },
+  {
+   "text": "24",
+   "kind": "number",
+   "px": [
+    903,
+    342
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    216.63,
+    84.0
+   ]
+  },
+  {
+   "text": "28",
+   "kind": "number",
+   "px": [
+    837,
+    306
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    197.59,
+    74.49
+   ]
+  },
+  {
+   "text": "26",
+   "kind": "number",
+   "px": [
+    840,
+    328
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    198.72,
+    80.77
+   ]
+  },
+  {
+   "text": "24",
+   "kind": "number",
+   "px": [
+    847,
+    328
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    200.7,
+    80.68
+   ]
+  },
+  {
+   "text": "17",
+   "kind": "number",
+   "px": [
+    932,
+    405
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    225.63,
+    101.7
+   ]
+  },
+  {
+   "text": "15",
+   "kind": "number",
+   "px": [
+    934,
+    420
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    226.4,
+    105.98
+   ]
+  },
+  {
+   "text": "13",
+   "kind": "number",
+   "px": [
+    930,
+    443
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    225.61,
+    112.67
+   ]
+  },
+  {
+   "text": "11A",
+   "kind": "number",
+   "px": [
+    942,
+    431
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    228.8,
+    109.04
+   ]
+  },
+  {
+   "text": "7",
+   "kind": "number",
+   "px": [
+    932,
+    487
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    226.8,
+    125.36
+   ]
+  },
+  {
+   "text": "20",
+   "kind": "number",
+   "px": [
+    910,
+    405
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    219.47,
+    102.0
+   ]
+  },
+  {
+   "text": "18",
+   "kind": "number",
+   "px": [
+    910,
+    413
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    219.58,
+    104.3
+   ]
+  },
+  {
+   "text": "16",
+   "kind": "number",
+   "px": [
+    910,
+    439
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    219.94,
+    111.81
+   ]
+  },
+  {
+   "text": "14",
+   "kind": "number",
+   "px": [
+    910,
+    454
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    220.15,
+    116.14
+   ]
+  },
+  {
+   "text": "3-1",
+   "kind": "number",
+   "px": [
+    830,
+    413
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    197.0,
+    105.43
+   ]
+  },
+  {
+   "text": "3A",
+   "kind": "number",
+   "px": [
+    826,
+    461
+   ],
+   "confidence": "medium",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:east",
+   "plan": [
+    196.49,
+    119.43
+   ]
+  },
+  {
+   "text": "10",
+   "kind": "number",
+   "px": [
+    242,
+    425
+   ],
+   "confidence": "low",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:west",
+   "plan": [
+    23.33,
+    117.73
+   ]
+  },
+  {
+   "text": "大興樓",
+   "kind": "name",
+   "px": [
+    255,
+    462
+   ],
+   "confidence": "high",
+   "readers": [
+    "C"
+   ],
+   "tile": "C:west",
+   "plan": [
+    27.53,
+    128.74
+   ]
+  }
+ ],
+ "fit": {
+  "planToMap": [
+   [
+    0.80943,
+    -0.003812,
+    171.76506
+   ],
+   [
+    0.018693,
+    0.855196,
+    26.663897
+   ],
+   [
+    -5.6e-05,
+    4.2e-05,
+    1.0
+   ]
+  ],
+  "pxPerCell": 4,
+  "mapPxPerMetre": 3.352,
+  "drift_m": [
+   [
+    30,
+    30,
+    0.0,
+    -0.24
+   ],
+   [
+    70,
+    30,
+    0.11,
+    -0.66
+   ],
+   [
+    110,
+    30,
+    -0.38,
+    -0.21
+   ],
+   [
+    150,
+    30,
+    -0.25,
+    0.06
+   ],
+   [
+    190,
+    30,
+    0.04,
+    0.34
+   ],
+   [
+    230,
+    30,
+    0.11,
+    1.31
+   ],
+   [
+    30,
+    70,
+    -0.4,
+    1.36
+   ],
+   [
+    70,
+    70,
+    0.39,
+    -0.25
+   ],
+   [
+    110,
+    70,
+    -0.33,
+    0.2
+   ],
+   [
+    150,
+    70,
+    -0.05,
+    -0.09
+   ],
+   [
+    230,
+    70,
+    -1.25,
+    -13.33
+   ],
+   [
+    30,
+    110,
+    0.44,
+    1.23
+   ],
+   [
+    70,
+    110,
+    -0.17,
+    -0.02
+   ],
+   [
+    110,
+    110,
+    -0.17,
+    -0.25
+   ],
+   [
+    150,
+    110,
+    0.05,
+    -0.07
+   ],
+   [
+    190,
+    110,
+    0.48,
+    -0.24
+   ],
+   [
+    230,
+    110,
+    0.38,
+    -0.83
+   ],
+   [
+    30,
+    150,
+    -7.75,
+    2.49
+   ],
+   [
+    70,
+    150,
+    0.3,
+    0.91
+   ],
+   [
+    110,
+    150,
+    -0.44,
+    0.27
+   ],
+   [
+    150,
+    150,
+    0.02,
+    0.23
+   ],
+   [
+    190,
+    150,
+    -0.01,
+    0.12
+   ],
+   [
+    230,
+    150,
+    -3.95,
+    -0.17
+   ]
+  ],
+  "medianDrift_m": 0.41
+ }
+}

@@ -65,19 +65,38 @@ Each unit has one basis:
 - **likely**: a source gives the use and part of the place: the street, a number on the 1992 map, or a building with no floor.
 - **guess**: the use comes from the counts of the sources, or the use or the place is uncertain.
 
-A verified address does not give a verified building. The model puts the buildings of a street in
-house-number order (`src/layout.js` `locate`), and this order is APPROXIMATE. Thus a verified place
-has the correct street, number and floor, in the model's building for that number. The unit on that
-floor is the best fit for the use (a front unit on G/F for a shop, a factory unit for a factory).
+A verified address gives a building through the house numbers of Suenn Ho's (何巽) route maps of
+1991 (M+ CA17/2/1-3, `data/address_anchors.json`, `tools/addresses.mjs`). The base plan of these
+maps prints the house number of most lots. The numbers were read from the 1000 px online images
+and fitted to the plan of the model (median error 0.4 m). On each street the numbers must run
+in order: a number out of order is dropped (a misreading, or a lot of the next street). Where the
+map gives no building, the place takes the old house-number order of the layout (`src/layout.js`
+`locate`), which is APPROXIMATE. The unit on that floor is the best fit for the use (a front unit
+on G/F for a shop, a factory unit for a factory).
+
+The route map and the 1992 map agree. For example, 82 Lung Chun Rd (龍津道) is 9 m from its number
+on the 1992 map (the old order put it 121 m away), and the Kai Fong office at 16 Tung Tau Tsuen Rd
+(東頭村道) is 1 m from it (17 m before).
 
 ## How the build places a documented place
 
-1. The building where the layout put the GRS premises, else the building at the address.
-2. Else the building nearest to the place's number on the 1992 map.
-3. Else a building that a clue names, or a building on the street that the source or its location clue names.
-4. If the building is lower than the floor, the nearest building that is tall enough.
-5. If the floor has no free unit, the nearest building within 30 m that has one (the same street first). 259 places moved like this, because the layout puts several premises in one plot.
-6. If a source gives no floor: a home gets a floor above G/F; another place gets a floor from the GRS premises of its category (most dentists on G/F, most clinics on 1/F-2/F).
+The `how` column of `docs/room_places.md` gives the step:
+
+1. **route map**: the building where the route map prints the house number on that street.
+   **route map, between**: the map does not print the number: the frontage point between the two
+   nearest numbers that it prints on that street (and on that side). **route map, beyond**: at
+   most 4 numbers past the last number that it prints there. A numbered lane is not on the map:
+   only its street is known.
+2. **map**: the building nearest to the place's number on the 1992 map (pp352-353). If the route
+   map's building is more than 25 m from that number, the 1992 map wins (with a note).
+3. **address**: the building where the layout put the GRS premises, else the building at the
+   address in the layout's house-number order (APPROXIMATE).
+4. **clue**, **street**: a building that a clue names, or a building on the street that the source
+   or its location clue names.
+5. If the building is lower than the floor, the nearest building that is tall enough.
+6. If the floor has no free unit: a verified place stays in its building and shares a unit; another
+   place goes to the nearest building within 30 m that has one (the same street first).
+7. If a source gives no floor: a home gets a floor above G/F; another place gets a floor from the GRS premises of its category (most dentists on G/F, most clinics on 1/F-2/F).
 
 ## The count model (guess units)
 
@@ -143,11 +162,11 @@ second agent confirmed them. It found no factory that a source dates outside Dec
 
 `data/room_research.json` lists 63 disagreements, and 195 facts have a `model_conflict` note. The large ones:
 
-- **House-number order.** Several streets do not follow the model's order. Kwong Ming Street numbers "went somewhere else" after 43 (p146). The 1992 map puts 82 Lung Chun Rd (map 10) on the east part of the road, 121 m east of model building 235. Map 14 (2 Kwong Ming St) is about 110 m south of model building 2.
+- **House-number order.** The layout's house-number order is wrong on most streets. Suenn Ho's route map now gives the building of most addresses (see above). Kwong Ming Street (光明街) numbers "went somewhere else" after 43 (p146). Lung Chun Rd 1-70 are not on the route map (it prints 160 down to 72 along the south road): these places keep the layout's order.
 - **Kai Fong office.** The GRS gives 2/F and 3/F of Wing Fat House, 16 Tung Tau Tsuen Rd. The layout puts it in building 25, `locate` gives building 31, and map 15 is near building 8.
 - **Fuk Tak shrine (福德古廟).** The GRS gives the Fuk Tak Temple (福德土地廟) at 5 Tai Chang St 5th Lane. The book (p32) and map 12 put the later, simpler shrine on the east side.
 - **Old School and Old People's Centre (老人中心).** The 1992 map draws map 28 (Old School) as a small building at the south-west corner of the Yamen (衙門) court. Model building 172 there is an 11-storey tenement, and `docs/structure.md` gives the Free School (義學) at about full height (pp20-21). Model building 100 has the label of the Old People's Centre, but map 27 puts the centre in the Yamen.
-- **Building heights.** Chung Lo Ying's building, the Chung Fat Café building (11 storeys in the source, 12 in the model), and the 12/F flat at 31 Tung Tau Tsuen Rd (the model has G/F-11/F there).
+- **Building heights.** Chung Lo Ying's building and the Chung Fat Café building (11 storeys in the source, 12 in the model). The 12/F flat at 31 Tung Tau Tsuen Rd: the model now has 13 storeys there (`docs/structure.md`, 2026-11-05).
 - **Streets that the model does not have.** "Kwong Wah Street" (model building 37) comes from the firm name Kwong Wah Weaving Factory (廣華布廠). Tung Tsing Road premises are the City's east edge, and one title makes 25A Tung Tsing Rd the same as 25A Lung Shing Rd. Tin Hau Temple Street (天后廟街) and Tin Hau Temple Back Street are two streets, but the model has one.
 - **Lane numbers.** 33 GRS premises are in numbered lanes, but `data/businesses.json` files them as main-street numbers. The floor of one flat can also change with the entrance ("2/F, also known as 6/F").
 - **Missing premises.** 39 addressed GRS premises are missing from `data/businesses.json`, because the parser does not read their street forms.

@@ -30,6 +30,7 @@ import { applyFixes } from '../src/city/fixes.js';
 import { makeChoices } from '../src/city/choices.js';
 import { mulberry32 } from '../src/util.js';
 import { cityFingerprint } from './structure_fingerprint.mjs';
+import { makeAddresses } from './addresses.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const json = (p) => JSON.parse(readFileSync(root + p, 'utf8'));
@@ -136,6 +137,9 @@ for (const r of units) {
   onFloor.get(key).push(r);
 }
 const storeys = (b) => S.list[b].n + (S.list[b].roofRoom ? 1 : 0); // floors with units
+// the house numbers of Suenn Ho's (何巽) route maps of 1991 (tools/addresses.mjs)
+const ADDR = makeAddresses(L, S, json('data/address_anchors.json'));
+const tooLow = []; // verified places whose address building is lower than their floor
 
 // ---- where an address is ----
 const pinAt = (m) => ({ x: L.x0 + MARGIN + m[0], z: L.z0 + MARGIN + m[1] });
@@ -176,6 +180,14 @@ const textStreet = (t) => {
 };
 const hasFree = (id, k) => (onFloor.get(`${id}:${k}`) || []).some((r) => !r.place);
 const pickOne = (ids, p, k) => { const free = ids.filter((id) => hasFree(id, k)), pool = free.length ? free : ids; return pool[hash(p.id) % pool.length]; };
+// the building nearest to the place's number on the 1992 map
+function pinBuilding(p, k) {
+  if (p.map_pin == null || !book.overlay.markers[p.map_pin]) return null;
+  const at = pinAt(book.overlay.markers[p.map_pin]);
+  const cands = (p.candidate_buildings || []).filter((id) => usable(id, k));
+  const b = cands.length ? nearestTo(at, k, cands) : nearestTo(at, k);
+  return b != null ? { b, how: 'map' } : null;
+}
 // building of a place: { b, how } or null
 function findBuilding(p, k) {
   let key = streetKey(p.street), byClue = false;
@@ -187,12 +199,8 @@ function findBuilding(p, k) {
     const b = P ? S.ofPlot[P.id] : null;
     if (usable(b, k)) return { b, how: lane ? 'street' : 'address' };
   }
-  if (p.map_pin != null && book.overlay.markers[p.map_pin]) {
-    const at = pinAt(book.overlay.markers[p.map_pin]);
-    const cands = (p.candidate_buildings || []).filter((id) => usable(id, k));
-    const b = cands.length ? nearestTo(at, k, cands) : nearestTo(at, k);
-    if (b != null) return { b, how: 'map' };
-  }
+  const pinned = pinBuilding(p, k);
+  if (pinned) return pinned;
   const cands = (p.candidate_buildings || []).filter((id) => usable(id, k));
   if (cands.length) return { b: cands[0], how: 'clue' };
   if (key === 'east') {
@@ -306,7 +314,29 @@ for (const p of order) {
   allowYamen = HALL.has(p.cat) || p.cat === 'clinic';
   const k0 = p.floor != null ? Math.max(0, p.floor) : defaultFloor(p); // a basement: G/F (the model has none)
   let k = k0 ?? 1, found = null;
-  if (p.grs) {
+  // the map first: the building that Suenn Ho's route maps give for the house number (a numbered
+  // lane is not on the map: only its street is known)
+  const key0 = streetKey(p.street);
+  if (key0 && key0 === p.street && p.num != null) {
+    const m = ADDR.resolve(key0, p.num, k);
+    if (m && !m.low && usable(m.b, k)) found = { b: m.b, how: m.how };
+    else if (m && m.low && k0 != null) {
+      if (p.basis === 'verified') tooLow.push({ id: p.id, b: m.b, floor: k, n: storeys(m.b) });
+      found = null; // the next steps find the nearest taller building
+      const b0 = S.list[m.b], ids = S.list.filter((b) => usable(b.id, k)).map((b) => b.id);
+      const b = nearestTo({ x: b0.cx, z: b0.cz }, k, ids);
+      if (b != null) found = { b, how: m.how + ', taller building', note: `the map's building for this address has ${b0.n} storeys in the model` };
+    }
+  }
+  // else its number on the 1992 map: nearer than the layout's house-number order. The 1992 map
+  // marks the place itself: if the route map's building is more than 25 m from it, the 1992 map wins.
+  const pinned = pinBuilding(p, k);
+  if (found && pinned && found.b !== pinned.b) {
+    const a = S.list[found.b], at = pinAt(book.overlay.markers[p.map_pin]), d = Math.hypot(a.cx - at.x, a.cz - at.z);
+    if (d > 25) found = { ...pinned, note: `the route map gives building ${a.id}, ${Math.round(d)} m from this place on the 1992 map` };
+  }
+  if (!found) found = pinned;
+  if (!found && p.grs) {
     const g = p.grs.map((r) => grsAt.get(r)).find(Boolean);
     if (g && usable(g.b, g.k)) { k = g.k; found = { b: g.b, how: 'address' }; }
   }
@@ -510,3 +540,7 @@ console.log('targets:', JSON.stringify(target), 'documented:', JSON.stringify(do
 const lv = (f) => [0, 1, 2, 3, 4].map((l) => units.filter((r) => band(r.k) === l && r.k < S.list[r.b].n && f(r)).length);
 console.log('non-home by level (G/F 1/F 2/F 3/F 4/F+):', lv((r) => r.cat !== 'home').join(' '), '| Suenn Ho:', Object.values(LEVEL).join(' '));
 console.log('factories by level:', lv((r) => FACTORY.has(r.cat)).join(' '));
+const howCount = {};
+for (const p of places) if (p.at && p.basis === 'verified') howCount[p.how] = (howCount[p.how] || 0) + 1;
+console.log('verified places by how:', JSON.stringify(howCount));
+console.log(`verified places whose map building is lower than their floor: ${tooLow.length}`, tooLow.map((t) => `${t.id} b${t.b} ${t.floor}/F (${t.n} storeys)`).join('; '));

@@ -973,10 +973,10 @@
   },
   {
    "code": 51,
-   "n": 12,
+   "n": 13,
    "from": "p132",
    "inferred": true,
-   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 9 rows (count [9], recount [9]), thus this building takes the low end of that range (INFERRED)."
+   "why": "28-29 Tung Tau Tsuen Road (Suenn Ho's route map of 1991): p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 9 rows (count [9], recount [9]). The model's 31 Tung Tau Tsuen Road (code 62), which has 13 storeys (a flat on 12/F, WSJ 2014), shares the stair of this building, thus this building takes the high end of that range (INFERRED; 2026-11-05, it was 12)."
   },
   {
    "code": 54,
@@ -987,10 +987,9 @@
   },
   {
    "code": 62,
-   "n": 12,
+   "n": 13,
    "from": "p132",
-   "inferred": true,
-   "why": "Tung Tau Tsuen Road: p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. The bronze model reads north: 9 rows (count [9], recount [9]), thus this building takes the low end of that range (INFERRED)."
+   "why": "31 Tung Tau Tsuen Road (東頭村道): p132 gives 12-13 storeys, and the 1987 and 1989 photos agree. Suenn Ho's (何巽) route map of 1991 (M+ CA17/2) prints 30 and 31 on this building, and Chan Cheung-chuen (陳祥全) lived at 12/F, Room B, 31 Tung Tau Tsuen Road from 1985 (WSJ 2014, People chapter): thus 13 storeys, G/F to 12/F (2026-11-05; it was 12, the low end of the range, from the bronze model's 9 rows)."
   },
   {
    "code": 74,

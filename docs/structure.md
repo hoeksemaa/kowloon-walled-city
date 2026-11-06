@@ -37,6 +37,18 @@ when John approves it. Then run `node tools/check_structure.mjs --refreeze`, and
 change, its source and the date in this file. `--record` (make the kept choices again) runs
 only with `--refreeze`.
 
+## Changes since the freeze
+
+John approved changes "to correctly match the historical presence of verified rooms" on
+2026-11-05. Each change and its source:
+
+- 2026-11-05: codes 62 and 51 (31 and 28-29 Tung Tau Tsuen Road (東頭村道)) have 13 storeys,
+  not 12. Chan Cheung-chuen (陳祥全) lived at "12/F, Room B, 31 Tung Tau Tsuen Rd." from
+  1985 (WSJ 2014, People chapter), and Suenn Ho's (何巽) route map of 1991 (M+ CA17/2) prints
+  31 on code 62. A 12/F needs 13 storeys. The book gives 12-13 storeys for this row (p132).
+  Code 62 shares the stair of code 51 in the model, thus code 51 has 13 storeys too
+  (INFERRED). No other building changed. The model has one door fewer (2,256).
+
 ## Two parts: the City and its surroundings
 
 The City is the focus of the work. The surroundings are context only. The two parts are

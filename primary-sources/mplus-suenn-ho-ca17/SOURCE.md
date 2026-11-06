@@ -45,6 +45,27 @@ This base plan has more detail than the exhibit plan that `data/plan.json`
 comes from. The maker and date of the base plan are not given. At 1000 px,
 many labels are hard to read. A scan at full size from M+ will make them clear.
 
+### The house numbers (2026-11-05)
+
+`data/address_anchors.json` has the labels read from the 1000 px images
+(numbers only, no image), each with its pixel on copy CA17/2/3 and its point
+on `data/plan.json`. `tools/route_map_fit.py` fits the plan to the map (median
+error 0.4 m), and `tools/addresses.mjs` gives the model building of an address.
+What the map shows:
+
+- Tung Tau Tsuen Road: 40 at the west end down to 2 at the east end, one side.
+- Lung Chun Road (龍津道), the south road: 160 at the west end down to 72 at the
+  south-east corner, even numbers only. Lung Chun Road 1-70 (odd and even, in
+  the GRS files) are not on this map.
+- Sai Shing Road (西城路): falling from north to south.
+- Kwong Ming Street (光明街): 1-3 at the south end up to 52 in the north, even
+  numbers on the east side and odd numbers on the west side.
+- Lung Shing Road (龍城路): 7 in the south up to 69 in the north, odd numbers on
+  the east side and even numbers on the west side.
+
+The inner streets of the south half (Lo Yan Street (老人街), Tai Chang Street
+(大井街), Sz Kung Street (社公街)) are faint at 1000 px and are only partly read.
+
 | Object | Date | Medium, size | Notes |
 |---|---|---|---|
 | CA17/2/1 | 20 Nov 1991 – 24 Feb 1992 | photocopy, ink, marker; 29.7 × 41.6 cm | "City route I, Nov. 20 91, shot #1 #2" and "Route #4,5,6 shot 24/2". Note on the back about *Family and Kinship in East London* (1957). |
