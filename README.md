@@ -32,8 +32,9 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on å†
   - The room uses: `room_research.json` (771 research facts, each with its source and quote,
     and the disagreements and leads) and `room_uses.json` (the use of each of the 8,926
     units, with its basis: verified, likely or guess).
-  - The people: `people.json` (real residents and workers of the City, each with a short
-    description, their story and the quotes of their sources). It is separate from the rooms:
+  - The people: `people.json` (183 real residents and workers of the City, each with a short
+    description, their story, the facts of their life and the quotes of their sources, and
+    the links between the people of one family or workplace). It is separate from the rooms:
     each person links to the research facts of the places where they lived or worked.
   - The ground and the surroundings: `terrain.json` (the height of the ground, out to 640 m),
     `context.json` (the real buildings, roads and open ground of December 1986, out to
