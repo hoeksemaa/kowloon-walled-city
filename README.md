@@ -214,7 +214,8 @@ their day says if it is sourced or inferred. Click a person to see their day, an
 them: the City peels to their storey when they go in.
 
 The crowd lives in households: families (parents, children and, in a big household, a
-grandparent), couples, old couples, workers who share a flat, and people alone. A household
+grandparent), couples, old couples, old women who share a flat (p178), workers who share a
+room (p289), and people alone. A household
 eats dinner together, goes out together on Sunday, and shares its water. The well water comes
 to each floor at set hours: in some blocks all day (p113), in many after the noon and the
 midnight pump runs (p107), in others by floors, low floors first (林羅平, HK01). Someone at home
@@ -230,6 +231,32 @@ the buildings (pp103, 209). The three refuse collectors clear the 23 refuse poin
 City fill the "700 businesses" (p110). The make-up of the households, the hours and the shares
 are INFERRED. The panel of a person shows their household and their water; the panel of a
 flat shows who lives there.
+
+Each trade keeps its own hours. The stores open from 6 or 8 am to midnight, seven days a week
+(pp91, 93), and a café stays open until very late (p57). A doctor sees patients from 9 am to
+1 pm and from 3.30 to 8 pm, and on Sunday mornings (p187). A dentist works from 10 am to 6 or
+7 pm, with a day off (p245). A roast-meat maker starts at 4 am (p286), and the Kai Fong office
+keeps office hours (p180). The other hours are INFERRED.
+
+On some nights a workshop has a rush order: its workers come back after dinner and work until
+2 or 3 am (p237). The food workshops work through the night before 冬至 (pp44, 289). Which
+night, and which workshop, is INFERRED. Members of a family often work in the family workshop
+or shop. After school, a child of such a family helps there until about 9 or 10 pm (林羅平,
+HK01). Some women do outwork at home for the workshops of the City (pp88, 176).
+
+The 184 members of the Old People's Centre (老人中心) go there for tea and television in the
+afternoon (pp305-306), and the Christians among them go to the Sunday worship (p305). Some old
+people seldom leave the room (p24). A grandmother minds the grandchildren, takes them home from
+school (p54) and watches them on the roof in the early evening (p322). Most parents keep the
+small children in the flat (p300), and the children play on the stairs and the landings (p54).
+The tea houses outside the City and the morning exercise on the roofs are INFERRED.
+
+After dinner, most people watch television (p160). Some play mahjong at a neighbour's flat
+(p15), and some have a quiet chat in the lane in the cool night air (p316). Children wrap the
+candies of the candy workshop after school, at tables in the alley (pp76-77). Patients come
+in from outside to the doctors and the dentists (pp187, 242), and factory workers come to the
+Sunday surgery (p187). Six constables walk the beats, two on each of three shifts, with at
+least one patrol in each shift (pp251, 283).
 
 At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
 most flats in the evening, a few after midnight when the water comes, many again before dawn.

@@ -13,6 +13,7 @@ import { mulberry32 } from '../util.js';
 // The node kinds of nav.js that are open to the sky (drawn always); the others are inside.
 const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofedge
 const H = (h, m = 0) => h * 60 + m;
+const RUSH = new Set(['plastics', 'metal', 'garment', 'works']);
 export const POSE = { stand: 0, sit: 1, lie: 2, walk: 3 };
 const SIT = /breakfast|lunch|dinner|supper|tea|TV|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|inking|accounts|drawing|map|music|playing cards|meeting|patients|cutting hair/i;
 const DOING = {
@@ -56,7 +57,7 @@ export class Life {
     const standpipe = P('216:0:1');
     if (standpipe) { standpipe.tree = 'standpipe'; this.standTree = nav.tree([standpipe.node]); }
     const places = {
-      standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'), tutor: P('262:2:0'),
+      standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'), tutor: P('262:2:0'), temple: P('74:0:0'),
       eating: units((r) => r.cat === 'eating'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
@@ -131,8 +132,50 @@ export class Life {
     };
     const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
     const houseMemo = new Map();
+    // the lanes of the named streets: the main streets of the police beats
+    const streetNodes = [];
+    for (const cells of Object.values(L.streetLanes || {})) for (const k of cells) if (S.laneNode[k] >= 0) streetNodes.push(S.laneNode[k]);
+    const streetSpot = (r) => (streetNodes.length ? { kind: 'lane', node: streetNodes[Math.floor(r() * streetNodes.length)] } : this.X.laneSpot(r));
+    // another home in the same building, for a game of mahjong
+    const homesOf = new Map();
+    for (const h of pop.homes || []) { if (!homesOf.has(h.b)) homesOf.set(h.b, []); homesOf.get(h.b).push(h); }
+    const neighbour = (home, r) => {
+      const list = homesOf.get(home.b);
+      if (!list || list.length < 2) return null;
+      for (let t = 0; t < 4; t++) { const h = list[Math.floor(r() * list.length)]; if (h !== home) return h; }
+      return null;
+    };
+    // the lane nearest a home (by the walk, down the stairs), for a chat after dinner: one search
+    // finds it from every node, as for the standpipes
+    this.trees.lanes = lanes.length ? nav.tree(lanes) : null;
+    const laneAt = new Map(), laneOf = new Map();
+    const laneBy = (home) => {
+      if (!this.trees.lanes || !home || home.node === undefined) return null;
+      let v = home.node, n = 0;
+      if (!laneOf.has(v)) {
+        const T = this.trees.lanes;
+        while (v >= 0 && T.next[v] >= 0 && n++ < 1e5) v = T.next[v];
+        if (T.next[v] !== -1) laneOf.set(home.node, null);
+        else {
+          if (!laneAt.has(v)) laneAt.set(v, { kind: 'lane', node: v, tree: 'lanes', label: 'in the lane by the building' });
+          laneOf.set(home.node, laneAt.get(v));
+        }
+      }
+      return laneOf.get(home.node);
+    };
     this.X = {
-      places, place: P, roofFor: findRoof, refuse,
+      places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy,
+      // A rush order: the workers come back after dinner and work until 2 or 3 am (p237); a
+      // workshop could run "24 hours a day" (p88). On about 1 day in 12 for each workshop
+      // (INFERRED). The food workshops work through the night before 冬至 (Sunday 21 December):
+      // bakers and roast-meat makers worked overnight at festivals (pp44, 289); 冬至 is not
+      // named (INFERRED).
+      rush: (w, dow) => {
+        if (!w || w.kind !== 'unit') return false;
+        if (w.cat === 'foodfac') return dow === 5;
+        if (!RUSH.has(w.cat)) return false;
+        return mulberry32(w.b * 7919 + w.k * 131 + (w.u || 0) * 17 + dow * 7717)() < 0.08;
+      },
       pipeFor: (pl) => nearest(this.pipeTree, pipeAt, pipeOf, pl),
       refuseFor: (pl) => nearest(this.trees.refuse, refuseAt, refuseOf, pl),
       // The household of person p on day dow (routines.js planHouse), kept for the day.

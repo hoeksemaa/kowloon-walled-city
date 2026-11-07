@@ -17,8 +17,9 @@ import { mainsTap } from './routines.js';
 export const RESIDENTS = 28200;
 export const DAY_WORKERS = 4800;
 
-// The roles of the residents. The shares are INFERRED (the old app's shares). Elders: "about a
-// third" of residents were over 60 in about 1990 (p178); the model gives fewer for 1986.
+// The roles of the residents. Their shares follow from the households (makeHousehold); the
+// shares here are only the old guesses, kept for the checks. "Most residents work in the urban
+// areas", outside the City (Chan Hip Ping (陳協平), p180).
 export const ROLES = {
   child: { label: 'young child', share: 0.08, ages: [1, 5] },
   student: { label: 'schoolchild', share: 0.2, ages: [6, 18] },
@@ -31,14 +32,17 @@ export const ROLES = {
 };
 
 // The people who come in from outside. n: how many. The day workers are 33,000 less 28,200
-// (pp339-340); the other numbers are INFERRED, except the 10 sweepers (p104).
+// (pp339-340). Six police, "two people on each of the three beats a day" (p251), and the 10 sweepers (p104).
+// The patients: "I treat around 30 patients a day, though when it's busy it can be as many as
+// 50", "mostly from outside" (p187), and there were "more than 80 of us - both doctors and
+// dentists" (p187): about 2,400 a day. The others are INFERRED.
 export const OUTSIDERS = {
   day_worker: { label: 'workshop hand who lives outside the City', n: DAY_WORKERS, ages: [16, 60] },
   police: { label: 'police constable on the beat (pp251, 283)', n: 6, ages: [22, 45] },
   sweeper: { label: 'street sweeper of the Urban Services Department (p104)', n: 10, ages: [30, 62] },
   refuse: { label: 'refuse collector of the Urban Services Department (p104)', n: 3, ages: [25, 60] },
   meter: { label: 'electricity meter reader (p98)', n: 2, ages: [25, 50] },
-  patient: { label: 'patient from outside the City (p242)', n: 300, ages: [6, 85] },
+  patient: { label: 'patient from outside the City (pp187, 242)', n: 2400, ages: [3, 85] },
 };
 
 // Workers in a workplace: one for each so many m² of floor (INFERRED). A workshop of 480 sq ft
@@ -58,31 +62,45 @@ const between = (r, a, b) => Math.round(a + r() * (b - a));
 // shop or a business of the City. More women than men worked in the factories.
 function workRole(r, sex) {
   const q = r();
-  if (sex === 'm') return q < 0.64 ? 'worker_out' : q < 0.86 ? 'worker_in' : 'shopkeeper';
-  return q < 0.58 ? 'worker_out' : q < 0.9 ? 'worker_in' : 'shopkeeper';
+  if (sex === 'm') return q < 0.68 ? 'worker_out' : q < 0.88 ? 'worker_in' : 'shopkeeper';
+  return q < 0.62 ? 'worker_out' : q < 0.9 ? 'worker_in' : 'shopkeeper';
 }
 
-// The members of a household of n people: [{ role, age, sex, rel }], with .kind. INFERRED: no
-// source gives the make-up of the households of the City in 1986. The kinds: one person alone
-// (an old person, or a worker), two old people, workers who share a flat, and families (a
-// couple, their children, and in a big household a grandparent).
+// The members of a household of n people: [{ role, age, sex, rel }], with .kind. The kinds come
+// from the sources; their shares are INFERRED (no source counts them):
+// - one person alone: an old woman or man (many lived alone, p309; a widower whose family is
+//   in China, p233), or a worker;
+// - an old couple;
+// - old women who share a flat: "many of these are unmarried amahs who got together and bought
+//   houses in the Walled City to use as communal residences" (Chan Hip Ping (陳協平), p178);
+// - workers who share a room: "eight single men lived in a room of 200 square feet" (p289);
+// - families: a couple and their children, often with a grandparent who minds the children,
+//   for "it was common for both Walled City parents to work full-time" (p54).
+// The elders: "About a third of the Walled City residents are over 60 years old" (p178), but the pastors
+// counted "more than 600" elders in about 1979 (CNEC): the sources do not agree. The model
+// gives about a fifth.
 export function makeHousehold(n, r) {
   const M = [];
   const add = (role, age, sex, rel) => M.push({ role, age, sex, rel });
   if (n === 1) {
-    if (r() < 0.62) add('elder', between(r, 62, 88), r() < 0.6 ? 'f' : 'm', 'lives alone');
-    else { const sex = r() < 0.8 ? 'm' : 'f'; add(workRole(r, sex), between(r, 19, 60), sex, 'lives alone'); }
+    if (r() < 0.72) add('elder', between(r, 62, 90), r() < 0.62 ? 'f' : 'm', 'lives alone');
+    else { const sex = r() < 0.82 ? 'm' : 'f'; add(workRole(r, sex), between(r, 19, 60), sex, 'lives alone'); }
     M.kind = 'alone';
     return M;
   }
   const q = r();
-  if (n === 2 && q < 0.42) {
-    add('elder', between(r, 64, 86), 'm', 'husband'); add('elder', between(r, 61, 83), 'f', 'wife');
+  if (n === 2 && q < 0.36) {
+    add('elder', between(r, 64, 88), 'm', 'husband'); add('elder', between(r, 61, 85), 'f', 'wife');
     M.kind = 'old couple';
     return M;
   }
-  if ((n === 2 && q < 0.52) || (n >= 3 && q < 0.06)) {
-    const sex = r() < 0.85 ? 'm' : 'f';
+  if ((n === 2 && q < 0.5) || (n === 3 && q < 0.08)) {
+    for (let i = 0; i < n; i++) add('elder', between(r, 60, 86), 'f', 'shares the flat');
+    M.kind = 'old women';
+    return M;
+  }
+  if ((n === 2 && q < 0.6) || (n >= 3 && q < 0.14)) {
+    const sex = r() < 0.88 ? 'm' : 'f';
     for (let i = 0; i < n; i++) add(workRole(r, sex), between(r, 18, 56), sex, 'shares the flat');
     M.kind = 'sharers';
     return M;
@@ -90,7 +108,7 @@ export function makeHousehold(n, r) {
   // a family
   const single = n === 2 && r() < 0.3;
   const fa = between(r, 26, 57), mo = Math.max(21, fa - between(r, 0, 8));
-  const grand = !single && ((n >= 5 && r() < 0.75) || (n === 4 && r() < 0.4) || (n === 3 && r() < 0.15));
+  const grand = !single && ((n >= 5 && r() < 0.8) || (n === 4 && r() < 0.5) || (n === 3 && r() < 0.3));
   let nk = n - (single ? 1 : 2) - (grand ? 1 : 0);
   if (n === 2 && !single) nk = 0;
   // the ages of the children: a gap of 1 to 3 years between them; the eldest at most 24 and
@@ -101,7 +119,8 @@ export function makeHousehold(n, r) {
   let a = Math.round(hi - (hi - lo) * r() ** 1.6);
   for (let i = 0; i < nk; i++) { kids.push(Math.max(0, a)); a -= gaps[i] || 0; }
   const small = kids.some((x) => x < 6);
-  const momRole = r() < (small ? 0.72 : 0.42) ? 'homemaker' : workRole(r, 'f');
+  // with a grandparent to mind the children, the mother works more often (p54)
+  const momRole = r() < (small ? (grand ? 0.3 : 0.6) : grand ? 0.15 : 0.35) ? 'homemaker' : workRole(r, 'f');
   if (!single || r() < 0.2) add(workRole(r, 'm'), fa, 'm', single ? 'father' : nk ? 'father' : 'husband');
   if (!single || M.length === 0) add(single ? (r() < 0.3 ? 'homemaker' : workRole(r, 'f')) : momRole, mo, 'f', nk ? 'mother' : 'wife');
   if (grand) { const sex = r() < 0.66 ? 'f' : 'm'; add('elder', Math.max(62, mo + between(r, 22, 32)), sex, sex === 'f' ? 'grandmother' : 'grandfather'); }
@@ -185,6 +204,15 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     if (best) { h.carrier = best.id; best.clients.push(h.id); }
   }
 
+  // ---- the Old People's Centre (172:2:1) ----
+  // "184 members" (p305), many of them old women who lived alone or in shared flats (p309);
+  // "most members come and go as they please", and some come every day (p305); "about 50" are
+  // Christians (p305). Which elders are members is INFERRED.
+  const olds = persons.filter((p) => p.role === 'elder');
+  for (let i = olds.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [olds[i], olds[j]] = [olds[j], olds[i]]; }
+  const members = [...olds.filter((p) => p.sex === 'f').slice(0, 138), ...olds.filter((p) => p.sex === 'm').slice(0, 46)];
+  members.forEach((p, q) => { p.centre = q % 5 < 2 ? 'daily' : 'some'; if (q % 4 === 0) p.worship = true; });
+
   // ---- the workplaces: owners and keepers, then the workers of the City, then the day workers ----
   // The jobs of the City: the residents who work in it, and the 4,800 who come in (pp339-340),
   // in "700 businesses" (p110). The seats of each workplace follow its floor area (M2_PER_WORKER),
@@ -197,16 +225,30 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     for (let i = 0; i < n; i++) seats.push(w);
   });
   for (let i = seats.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [seats[i], seats[j]] = [seats[j], seats[i]]; }
+  for (const w of works) w.free = w.cap;
   const keeperSeats = seats.filter((w) => KEEPER.has(w.cat)), handSeats = seats.filter((w) => !KEEPER.has(w.cat));
-  for (const p of persons) {
-    if (p.role === 'shopkeeper') p.work = keeperSeats.pop() || handSeats.pop() || null;
-    else if (p.role === 'worker_in') p.work = handSeats.pop() || keeperSeats.pop() || null;
-    if ((p.role === 'shopkeeper' || p.role === 'worker_in') && !p.work) p.role = 'worker_out';
+  const popSeat = (st) => { while (st.length) { const w = st.pop(); if (w.free > 0) { w.free--; return w; } } return null; };
+  // "Many workshops were family workshops: with no money for staff, all the workers were
+  // family members" (林羅平, Ming Pao Weekly 2024). A second member of a household who works in
+  // the City joins the family's workplace (7 in 10, INFERRED), as a keeper of a shop or a hand.
+  for (const h of households) {
+    let fam = null;
+    for (const i of h.members) {
+      const p = persons[i];
+      if (p.role !== 'shopkeeper' && p.role !== 'worker_in') continue;
+      if (fam && h.kind !== 'sharers' && rng() < 0.7) {
+        p.work = fam; fam.free--;
+        p.role = KEEPER.has(fam.cat) ? 'shopkeeper' : 'worker_in';
+        continue;
+      }
+      p.work = p.role === 'shopkeeper' ? popSeat(keeperSeats) || popSeat(handSeats) : popSeat(handSeats) || popSeat(keeperSeats);
+      if (!p.work) p.role = 'worker_out';
+      else if (!fam) fam = p.work;
+    }
   }
-  const left = [...handSeats, ...keeperSeats];
   const O = OUTSIDERS;
   for (let i = 0; i < O.day_worker.n; i++) {
-    const work = left.length ? left.pop() : pick(rng, works);
+    const work = popSeat(handSeats) || popSeat(keeperSeats) || pick(rng, works);
     persons.push({ id: persons.length, kind: 'outsider', role: 'day_worker', age: Math.round(16 + rng() * 44), sex: rng() < 0.5 ? 'f' : 'm', home: null, work, seed: rng() });
   }
   for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient'])

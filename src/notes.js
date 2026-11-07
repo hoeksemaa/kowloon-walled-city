@@ -76,6 +76,13 @@ people with their days (data/routines.json), each hour marked sourced or inferre
 noon and midnight (p107), water by floors (林羅平, HK01), washing at night at the sound of the water (Tam
 Sau-kuen (譚秀娟), WSJ), illegal mains taps for drinking water (p110), the eight standpipes (p249) and the paid
 water carriers (p108). 19,606 people of 5116 families registered on the first day of the survey (p339).</p>
+<p><span class="st ok">SOURCED</span>The hours of the trades: stores from 6 or 8 am to midnight (pp91, 93), a doctor
+from 9 to 1 and from 3.30 to 8 (p187), a dentist from 10 to 6 or 7 (p245), a roast-meat maker from 4 am (p286), rush
+orders until 2 or 3 am (p237). The Old People's Centre (老人中心) with 184 members (p305), mahjong (p15), television
+(p160), children kept in the flats (p300), grandmothers who mind the children (pp54, 322), outwork at home (p88),
+patients from outside (p187) and the police beats (pp251, 283).</p>
+<p><span class="st prov">INFERRED</span>The other hours, the nights of the rush orders, the tea houses, the morning
+exercise on the roofs, and the share of the people who do each thing.</p>
 <p><span class="st prov">INFERRED</span>The roles, households, homes, workplaces and hours of the crowd, who have
 no names: no source names them. Which block has which water. Where each thing stands in a room. The recipe of each kind of room comes from the
 photos and texts of the sources (data/furnishings.json).</p>
