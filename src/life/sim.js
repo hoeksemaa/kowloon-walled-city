@@ -193,7 +193,7 @@ export class Life {
       const list = (minders.get(home.b) || []).filter((h) => h.id !== hid);
       if (!list.length) return null;
       // the household of the same flat first (a lodger and its host), then one of the building
-      return (list.find((h) => h.home === home) || list[hid % list.length]).home;
+      return list.find((h) => h.home === home) || list[hid % list.length];
     };
     this.X = {
       places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
@@ -240,9 +240,10 @@ export class Life {
         const d = Math.hypot(nav.x[a.node] - nav.x[b.node], nav.z[a.node] - nav.z[b.node]) * 1.4;
         return Math.max(d / WALK, Math.abs(nav.y[a.node] - nav.y[b.node]) / CLIMB) / 60 + 0.5;
       },
-      // The kindergarten of a household: the Salvation Army kindergarten (p300) for some, one
-      // outside the City for the others (INFERRED).
-      kinderFor: (hid) => (places.kinder && hid % 12 === 0 ? places.kinder : OUT('at a kindergarten outside the City')),
+      // The kindergarten of a household: the Salvation Army kindergarten (p300) for some (it had
+      // "80 students", p300: 2 households in 25 give 80), one outside the City for the
+      // others (INFERRED).
+      kinderFor: (hid) => (places.kinder && hid % 25 < 2 ? places.kinder : OUT('at a kindergarten outside the City')),
       laneSpot: (r) => ({ kind: 'lane', node: lanes[Math.floor(r() * lanes.length)] }),
       anyRoof: (r) => P(`roof:${roofs[Math.floor(r() * roofs.length)]}`),
       anyHome: (r) => homes[Math.floor(r() * homes.length)],

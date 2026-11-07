@@ -809,7 +809,7 @@ export function planHouse(h, mem, dow, X) {
   const young = mem.filter((m) => m.role === 'child' || (m.role === 'student' && m.age < 12));
   if (!keeper && young.length && !sun) {
     const nb = X.minderFor?.(h.home, h.id), par = mem.find((m) => m.role === 'worker_out' || m.role === 'worker_in' || m.role === 'shopkeeper');
-    if (nb && par) { F.minder = nb; F.minded = new Set(young.map((m) => m.id)); F.dropT = J(H(6, 40), 8); F.pickT = F.dinner - J(25, 10); F.picker = par.id; }
+    if (nb && par) { F.minder = nb.home; F.minderHh = nb.id; F.minded = new Set(young.map((m) => m.id)); F.dropT = J(H(6, 40), 8); F.pickT = F.dinner - J(25, 10); F.picker = par.id; }
   }
   // "Early evening brought whole families up to the roof. A grandmother would keep her eye on her
   // own grandchildren as well as the children of her neighbours, while her daughter prepared
