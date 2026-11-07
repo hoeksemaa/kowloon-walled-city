@@ -310,6 +310,10 @@ few nights a teenager stays there until about 10 pm; now and then the mother goe
 "When they were out late at night, I might occasionally go out to fetch them and accompany them
 home" (Chung Lo Ying (鍾太), p158). How many, and the hours, are INFERRED.
 
+On a Sunday or a day off, some workers spend the afternoon at mahjong in a neighbour's flat
+("The alleys were alive with the clacking of mahjong tiles", p15), on a walk in the park next to
+the City (p80), or on the roof. The shares and the hours are INFERRED.
+
 "A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
 in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
 corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for

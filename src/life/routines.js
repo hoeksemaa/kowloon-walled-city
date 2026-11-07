@@ -137,6 +137,24 @@ export function planDay(p, dow, X) {
     block(t, t + len);
     return true;
   };
+  // An afternoon off (a day off, a Sunday): mahjong at a neighbour's flat ("The alleys were alive
+  // with the clacking of mahjong tiles", p15), a walk in the park next to the City (p80), or the
+  // roof. The shares and the hours are INFERRED.
+  const dayOff = (after) => {
+    if (dz || !p.home) return false;
+    const q = r();
+    let pl = null, what = '', t = J(H(14, 40), 40), len = 0;
+    if (q < 0.2) { pl = X.neighbour(p.home, r); what = 'playing mahjong at a neighbour’s flat (p15)'; len = J(170, 40); }
+    else if (q < 0.3) { pl = OUT('in the park next to the City'); what = 'a walk in the park next to the City (p80)'; len = J(70, 20); }
+    else if (q < 0.38) { pl = roof(); what = 'on the roof in the afternoon'; len = J(50, 15); }
+    if (!pl) return false;
+    t = slot(t, len + 10);
+    if (t < 0 || (F && t + len > F.dinner - 20)) return false;
+    at(t, pl, what);
+    at(t + len, home, after);
+    block(t, t + len);
+    return true;
+  };
   const dongzhi = (t = 18.25) => {
     const d = F ? F.dinner : J(H(Math.floor(t), (t % 1) * 60), 20);
     at(d, home, F && F.members === 1 ? '冬至 dinner' : DZ);
@@ -417,6 +435,7 @@ export function planDay(p, dow, X) {
         if (!outing() && r() < 0.4) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); block(H(9, 0), H(14, 30)); }
         haircut(J(H(11, 0), 150), 'Sunday at home');
         doctor(0.015, J(H(9, 30), 60), 'Sunday at home');
+        dayOff('Sunday at home');
         // "the rubbish-spattered temple where gamblers came to implore and bribe the gods to
         // improve their luck" (p15): the Tin Hau Temple (天后廟) off Lo Yan Street (p241)
         if (p.sex === 'm' && r() < 0.015 && X.places.tinHau) { const t1 = J(H(14, 0), 150); if (!busy(t1, t1 + 40)) { at(t1, X.places.tinHau, 'asking the gods for luck at the Tin Hau Temple (天后廟) (p15)'); at(t1 + J(20, 6), home, 'at home'); block(t1, t1 + 30); } }
@@ -453,6 +472,7 @@ export function planDay(p, dow, X) {
         fetch(J(H(16, 0), 60), 'at home');
         haircut(J(H(15, 0), 60), 'a day off at home');
         doctor(0.02, J(H(10, 0), 60), 'a day off at home');
+        dayOff('a day off at home');
         if (dz) { dongzhi(); break; }
         dinner(); evening();
         at(J(H(23, 0), 30), home, 'asleep');
