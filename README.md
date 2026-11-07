@@ -246,7 +246,10 @@ On some nights a workshop has a rush order: its workers come back after dinner a
 2 or 3 am (p237). The food workshops work through the night before 冬至 (pp44, 289). Which
 night, and which workshop, is INFERRED. Members of a family often work in the family workshop
 or shop. After school, a child of such a family helps there until about 9 or 10 pm (林羅平,
-HK01). Some women do outwork at home for the workshops of the City (pp88, 176).
+HK01). Some women do outwork at home for the workshops of the City (pp88, 176). Other women
+help a food workshop near their home in the afternoon, in coats against the cold of its air
+conditioning: "A few neighbours - ladies - help me with the fish dumplings" (Lam Leung Po
+(林良寶), pp292-293). Which women, and the hours, are INFERRED.
 
 The 184 members of the Old People's Centre (老人中心) go there for tea and television in the
 afternoon (pp305-306), and the Christians among them go to the Sunday worship (p305). On two
