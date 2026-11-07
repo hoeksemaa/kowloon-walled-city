@@ -1,8 +1,9 @@
 // The main app (index.html): Kowloon Walled City (九龍城寨) in December 1986, on the definitive
 // 3D structure (src/city/ for the City, src/surroundings/ for the ground and the buildings round
 // it; docs/structure.md). The City is drawn as floor layers (cityLayers.js): the tool E pulls
-// the floors apart, and the storey rail peels the City to one storey. A click on a building
-// gives its facts and the uses of its rooms in December 1986 (data/room_uses.json).
+// the floors apart, and a storey of the menu peels the City to it. A click on a building gives
+// its facts and the uses of its rooms in December 1986 (data/room_uses.json). One design for
+// every screen, mobile first (style.css).
 // The people of the week walk on the structure (src/life/): the real people of data/people.json
 // with their days (data/routines.json), and an anonymous crowd that follows the counts of the
 // sources. A click on a person gives their day; a real person also their story and sources.
@@ -39,10 +40,6 @@ const START_MINUTE = 9 * 60 + 45;
 // The speeds of the clock: pause, then one, two and three arrows.
 const SPEEDS = [0, 1, 60, 2400];
 const $ = (id) => document.getElementById(id);
-// A phone: a narrow screen, or a low one (a phone on its side); the same query as in style.css.
-// On a phone one button, MENU, opens the clock, the tool, the storeys, the mysteries and the
-// sources in a sheet, and each panel is a sheet at the foot of the screen.
-const phone = matchMedia('(max-width: 720px), (max-height: 520px)');
 
 // Haze: things fade into the sky with distance from the centre of the City, from fogNear to
 // fogFar (env.js), the same at every height. The world position comes from the view matrix,
@@ -84,7 +81,7 @@ const TARGET_Y = 28; // about the middle of the roofs, in mPD
 // City is peeled to, -1 for none; sel: the selected building, -1 for none, with its room
 // (selRoom: { k, u } or null); hover: the building under the pointer.
 // person: the selected person, -1 for none; follow: the view follows them.
-const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: SPEEDS[1], lastSpeed: SPEEDS[1], sel: -1, selRoom: null, hover: -1, dark: false, person: -1, follow: false };
+const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: SPEEDS[1], lastSpeed: SPEEDS[1], sel: -1, selRoom: null, hover: -1, person: -1, follow: false };
 // The clock of the week: day 0 is Monday 15 December 1986, day 6 Sunday 21 December.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
@@ -217,7 +214,6 @@ function renderPanel() {
     : panelHtml(S, uses, places, state.sel, state.peel, state.selRoom?.roof || state.selRoom?.out ? null : state.selRoom, roomExtra());
   body.scrollTop = same ? top : 0;
   el.dataset.id = id;
-  placePanel();
 }
 
 // ---- the mysteries ----------------------------------------------------------------------------
@@ -277,29 +273,6 @@ function roomExtra() {
     if (here.length > 8) html += `<div class="sub">and ${here.length - 8} more</div>`;
   }
   return html;
-}
-
-// The panel goes at the foot of the screen, right of the clock; on a narrow screen, above the
-// clock. It never covers the clock or the rail, and a long panel scrolls. On a phone it is a
-// sheet, and style.css places it.
-function placePanel() {
-  const el = $('bld');
-  if (el.hidden) return;
-  if (phone.matches) {
-    for (const k of ['left', 'width', 'bottom', 'maxHeight']) el.style[k] = '';
-    return;
-  }
-  const box = (id) => $(id).getBoundingClientRect();
-  const clk = box('clock'), rail = box('rail'), tools = box('toolbar'), s = el.style, gap = 14;
-  const from = clk.right + gap, right = rail.left - gap;
-  if (right - from >= 240) {
-    Object.assign(s, { left: `${from}px`, width: `${Math.min(440, right - from)}px`, bottom: `${gap}px` });
-    s.maxHeight = `${Math.min(innerHeight * 0.55, innerHeight - 120)}px`;
-  } else {
-    const bottom = innerHeight - clk.top + 8, left = clk.left, top = tools.bottom + 8;
-    Object.assign(s, { left: `${left}px`, width: `${Math.min(rail.left - 8, clk.right) - left}px`, bottom: `${bottom}px` });
-    s.maxHeight = `${Math.max(120, innerHeight - bottom - top)}px`;
-  }
 }
 
 // ---- picking ----------------------------------------------------------------------------------
@@ -362,8 +335,8 @@ function hideTooltip() {
 }
 
 // ---- UI -------------------------------------------------------------------------------------------
-// The menu of a phone: open or closed. Open, it closes the mysteries and the sources; the panel
-// of the selected building or person stays under it.
+// The menu: open or closed. Open, it closes the mysteries and the sources; the panel of the
+// selected building or person stays under it.
 const menuOpen = () => document.body.classList.contains('menu-open');
 function setMenu(open) {
   document.body.classList.toggle('menu-open', open);
@@ -376,7 +349,6 @@ function buildUI() {
   $('t-explode').onclick = () => setExplode(state.explodeTarget < 0.5);
   $('menu-btn').onclick = () => setMenu(!menuOpen());
   $('menu-close').onclick = () => setMenu(false);
-  phone.addEventListener('change', () => { if (!phone.matches) setMenu(false); placePanel(); });
   $('src-btn').onclick = () => { $('sources').hidden = !$('sources').hidden; if (!$('sources').hidden) { $('cases').hidden = true; setMenu(false); renderCases(); } };
   $('src-close').onclick = () => ($('sources').hidden = true);
   // The panel of the selected building: the x deselects it, and a storey peels the City there.
@@ -391,7 +363,7 @@ function buildUI() {
     else if (el.dataset.more) cases.more(+el.dataset.more);
     else if (el.dataset.show) {
       showCase(cases.cases.find((x) => x.n === +el.dataset.show));
-      if (phone.matches) $('cases').hidden = true; // on a phone the sheet goes, thus the City shows
+      $('cases').hidden = true; // the sheet goes, thus the City shows
     }
     renderCases();
     if (el.dataset.case !== undefined) $('cases-body').scrollTop = 0;
@@ -417,7 +389,7 @@ function buildUI() {
     clock.minute = clamp((ev.clientX - r.left) / r.width, 0, 0.999) * 1440;
   };
   drawDay();
-  $('clk-stats').innerHTML = $('src-stats').innerHTML = `<b>${S.list.length}</b> buildings · <b>${S.unitNode.size.toLocaleString()}</b> rooms and flats · <b>${S.doors.length.toLocaleString()}</b> doors and links`
+  $('src-stats').innerHTML = `<b>${S.list.length}</b> buildings · <b>${S.unitNode.size.toLocaleString()}</b> rooms and flats · <b>${S.doors.length.toLocaleString()}</b> doors and links`
     + `<br><b>${pop.persons.length.toLocaleString()}</b> people of the week: ${pop.persons.filter((p) => p.kind === 'real').length} of them real people of the sources`;
 
   buildRail();
@@ -442,7 +414,7 @@ function buildUI() {
   canvas.addEventListener('pointercancel', (ev) => downs.delete(ev.pointerId));
   // A click selects the building under the pointer (and the room, where the floor shows), and a
   // click on the ground or the sky lets go. Only the main button clicks: the right one pans. A
-  // finger can move a little more than a mouse in a tap. On a phone a tap also closes the menu.
+  // finger can move a little more than a mouse in a tap. A tap also closes the menu.
   canvas.addEventListener('pointerup', (ev) => {
     const down = downs.get(ev.pointerId);
     downs.delete(ev.pointerId);
@@ -468,6 +440,7 @@ function buildUI() {
     const k = ev.key.toLowerCase();
     if ((k === ' ' || k === 'enter') && ev.target.closest && ev.target.closest('button')) return;
     if (k === 'e') $('t-explode').click();
+    else if (k === 'm') setMenu(!menuOpen());
     else if (k === 'escape') {
       // the first Esc closes the menu, the sources or the mysteries if one is open, or else lets
       // go of the selected person or building; the next one takes the peel away
@@ -492,7 +465,7 @@ function setSpeed(s) {
     b.classList.toggle('on', SPEEDS[i] === s);
     b.setAttribute('aria-pressed', String(SPEEDS[i] === s));
   });
-  $('clock').classList.toggle('run', s > 0);
+  $('title').classList.toggle('run', s > 0);
 }
 
 // How long a day of the clock takes at speed s, in words.
@@ -531,10 +504,10 @@ function renderRail() {
   }
   railToSel();
 }
-// On a phone the storeys are one row that scrolls: the selected storey goes to its middle.
+// The storeys are one row that scrolls: the selected storey goes to its middle.
 function railToSel() {
   const ol = $('levels'), li = ol.querySelector('button.sel')?.parentElement;
-  if (!phone.matches || !menuOpen() || !li) return;
+  if (!menuOpen() || !li) return;
   ol.scrollTo({ left: li.offsetLeft - ol.offsetLeft - (ol.clientWidth - li.offsetWidth) / 2, behavior: 'smooth' });
 }
 
@@ -555,12 +528,11 @@ const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 function updateClock() {
   const [hh, mm] = fmtClock(clock.minute).split(':');
-  $('clk-h').textContent = hh;
-  $('clk-m').textContent = mm;
+  $('t-h').textContent = hh;
+  $('t-m').textContent = mm;
   const d = new Date(Date.UTC(1986, 11, 15 + (clock.day % 7)));
-  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
-  // the time under the title, on a phone
-  $('t-time').textContent = `${$('clk-date').textContent} · ${hh}:${mm}${state.speed ? '' : ' · PAUSED'}`;
+  $('t-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  $('t-paused').textContent = state.speed ? '' : ' · PAUSED';
   $('playhead').style.left = `${(clock.minute / 1440) * 100}%`;
 }
 
@@ -571,19 +543,18 @@ function resize() {
   camera.left = (-VIEW_H * a) / 2; camera.right = (VIEW_H * a) / 2;
   camera.top = VIEW_H / 2; camera.bottom = -VIEW_H / 2;
   camera.updateProjectionMatrix();
-  placePanel();
 }
 
-// On a phone the bar of the title covers the top of the screen, and the menu or the panel of the
-// selected building covers the foot of it (on a phone on its side, the right of it). The view
+// The bar of the title covers the top of the screen, and an open sheet (the menu, the selected
+// building or person, the mysteries or the sources) covers the foot of it (on a wide screen,
+// the right of it). The view
 // moves by half of the difference, thus the middle of the view is the middle of the part of the
 // screen that shows. [x, y] in pixels: the City moves left by x / 2 and up by y / 2.
 const shift = [0, 0];
 function sheetCover() {
   const c = [0, 0];
-  if (!phone.matches) return c;
   let foot = 0;
-  for (const el of [menuOpen() && $('menu'), !$('bld').hidden && $('bld')]) {
+  for (const el of [menuOpen() && $('menu'), ...['bld', 'cases', 'sources'].map((id) => !$(id).hidden && $(id))]) {
     if (!el) continue;
     const r = el.getBoundingClientRect();
     if (r.left > 1) c[0] = Math.max(c[0], innerWidth - r.left);
@@ -625,12 +596,6 @@ function frame(now) {
   }
   const night = lighting.update(hour, state.lift);
   planes.update(clock.day % 7, clock.minute, dt, state.speed, state.explode > 0.3, night);
-  const dark = night > 0.55;
-  if (dark !== state.dark) {
-    state.dark = dark;
-    document.documentElement.style.setProperty('--title-ink', dark ? '#e9e1cf' : '#1c1b19');
-    document.documentElement.style.setProperty('--title-ink-2', dark ? '#b9b2a2' : '#3f3b34');
-  }
 
   // the people: where each one is at this minute
   life.update(clock.day % 7, clock.minute, 4);

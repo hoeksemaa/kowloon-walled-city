@@ -163,12 +163,12 @@ deleted.
   middle of each gap lies a dark see-through plate with a light edge, as in the old app: each
   layer shows through the plate over it. The name of each layer lies on the west edge of the
   plate under it (G/F on the ground).
-- **Peel to a storey.** Click a storey on the rail at the right, or use the arrow keys. All
+- **Peel to a storey.** Click a storey in the menu, or use the arrow keys. All
   the floors over that storey go, with all the roofs over it and all that is on them. The
   walls of that storey stay whole, to the slab of the next floor: the peel cuts nothing, it
   only takes the layers over the storey away. Thus every room of that storey shows from
   above, with all its mass. A lower building shows its roof. The peel works also with
-  the floors apart. The RF row of the rail, or Esc, takes it away.
+  the floors apart. The RF button of the storeys, or Esc, takes it away.
 - **Select a building.** Point at a building to see its name and storeys. Click it to select
   it: it takes a warm tint, and a panel gives its facts from the structure (where its storeys
   come from, its heights in mPD, its footprint, its stairs and links). The panel lists each
@@ -199,14 +199,16 @@ deleted.
   the white bauhinia of the Hong Kong flag (as `favicon.svg`). Its five petals light one
   after the other, clockwise, as a spinner. Each petal is a box of its own, thus the
   browser can animate it while the script builds the City.
-- **Phone.** The phone layout starts on a narrow screen (720 px or less) or a low one (520 px
-  or less: a phone on its side). A bar at the top gives the title, the time and one button,
-  MENU. The menu is a sheet at the foot of the screen (on a phone on its side, at the right).
-  It holds the clock, the tool that pulls the floors apart, the storeys, the mysteries and
-  the sources. The selected building or person, the mysteries and the sources are sheets
-  too. When a sheet is open, the view moves, thus the City stays in the part of the screen
-  that shows. Drag to turn the City, pinch to zoom, and move two fingers to pan. A tap
-  selects, but a gesture of two fingers never selects.
+- **Layout, mobile first.** The app has one design, for the phone first (`src/style.css`). A
+  bar at the top gives the title, the date and time, and one button, MENU (key M). The menu
+  holds the clock, the tool that pulls the floors apart, the storeys, the mysteries and the
+  sources. The menu, the selected building or person, the mysteries and the sources are
+  sheets. On a phone, a sheet comes up from the foot of the screen. A wide screen (more than
+  720 px, or a phone on its side) gives the same design more room. The bar is on one row,
+  each sheet stands at the right under the bar, and the storeys need no scroll. When a sheet
+  is open, the view moves, thus the City stays in the part of the screen that shows.
+- **Touch.** Drag to turn the City, pinch to zoom, and move two fingers to pan. A tap
+  selects, but a gesture of two fingers never selects. A finger shows no tooltip.
 
 The "Sources + notes" panel (`src/notes.js`) lists what the structure takes from each source,
 and what it infers.
@@ -362,7 +364,7 @@ thing has a source; where each one stands is INFERRED. Click one to see what it 
 
 ### The mysteries
 
-The MYSTERIES button (top left, under the tools) opens ten cases of `data/mysteries.json`:
+The MYSTERIES button (in the menu) opens ten cases of `data/mysteries.json`:
 ten real people of the week to find, from easy (1) to hard (10). Each case gives five clues,
 one at a time; the last clue helps a lot but does not give the answer. Click the person in
 the City (for case 10, the room) to solve the case: its circle is checked, and its story opens.

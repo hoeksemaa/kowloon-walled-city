@@ -27,14 +27,14 @@ source gives is marked inferred.</p>
     floors in the next, and so on. Each floor keeps its true place in its layer, thus the G/F of a
     building up the slope can stand higher than the 1/F of a building lower down. A roof goes with
     the layer of the floor over it. A dark plate lies in the gap under each layer.</li>
-  <li><span class="st ok">RAIL</span>Peel the City to one storey (arrow keys: up and down): all
+  <li><span class="st ok">STOREY</span>Peel the City to one storey (arrow keys: up and down): all
     the floors and roofs over it go, with all that is on the roofs. Its walls stay whole: the
     peel cuts nothing. Thus every room of that storey shows from above.</li>
   <li><span class="st ok">CLICK</span>A building: its storeys, heights, stairs and links, and the
     use of its rooms in December 1986. A room of an open floor: its use and its sources.</li>
-  <li><span class="st ok">MENU</span>On a phone, the button MENU opens the clock, the floors, the
-    storeys, the mysteries and these notes. Drag to turn the City, pinch to zoom, and move two
-    fingers to pan. Tap a building or a person.</li>
+  <li><span class="st ok">MENU</span>The button MENU (key M) opens the clock, the floors, the
+    storeys, the mysteries and these notes. On a phone, drag to turn the City, pinch to zoom, and
+    move two fingers to pan. Tap a building or a person.</li>
 </ul>
 
 <h4>From primary sources</h4>

@@ -18,6 +18,10 @@
   game, floor plans and checks) was deleted on 2026-11-07; the git history keeps it.
   `src/layout.js` (with `src/footprint.js`) still reads the plan for the structure: a change to
   it must keep `node tools/check_structure.mjs` at ok.
+- The main app is mobile first (John, 2026-11-07): design each UI change for the phone first.
+  A wide screen is only a roomier horizontal expansion of the phone design (`src/style.css`:
+  the base rules are the phone; the wide-screen rules at the end only give more room). Test at
+  390x844 first, then 844x390 and 1440x900.
 - The life of the main app is in `src/life/` (since 2026-11-06): the people and their
   households and days, the things in the rooms, the utilities, the ten mysteries and the lit
   windows. `src/streetNames.js` gives the street names. John's aim for it: a rich and accurate
