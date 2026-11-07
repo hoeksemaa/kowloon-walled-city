@@ -281,6 +281,15 @@ drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Porters carry s
 from the road to the food workshops in the morning, and the packed goods of the workshops out
 on delivery trolleys in the afternoon (pp176, 249). Who goes, when, and the days are INFERRED.
 
+Ho Chi Kam (何智錦) and his wife cut hair at "the only hairparlour inside the City", from 9 am
+until "there were no more customers", and "my customers are people living nearby" (p28). The
+people who live within 20 m of the shop get a haircut about once in five weeks: about 12 to 19 a
+day, most on a free afternoon. Women wash the clothes in the well water of the pipes, which
+"could only be deployed for bathing and laundry" (p14), then hang them out in the corridor
+(p176) or on the roof. Some police beats cross the roofs, where the constables, "often new to
+the Walled City", ask the pigeon keeper the way (Chan Kwan Leung (陳昆亮), p319). Who is near, how
+often, and the hours are INFERRED.
+
 "A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
 in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
 corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for

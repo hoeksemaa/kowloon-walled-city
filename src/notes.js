@@ -86,7 +86,8 @@ families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); fam
 5 to 9 pm (p93), and the small stores of the upper floors (p175); the park (p80); the Yamen courtyard (p299); the
 Salvation Army (救世軍) chapel (p301); the Tin Hau Temple (天后廟) (p15); the orchestra (p15); the kindergarten outings
 (p300); the daily-rate helpers (p44); the taxi drivers at the cafés (p294); the porters with sacks of flour and delivery
-trolleys (pp176, 249); a few heroin addicts (pp258-260, 169, 187), the Shuiyuan youth centre and the daily prayer of the
+trolleys (pp176, 249); the haircuts at Ho Chi Kam's (何智錦) barber's shop (p28), the washing in the well water (p14), the police on the roofs (p319),
+a few heroin addicts (pp258-260, 169, 187), the Shuiyuan youth centre and the daily prayer of the
 St Stephen's Society with former addicts (pp259-263).</p>
 <p><span class="st prov">INFERRED</span>The other hours, the nights of the rush orders, the tea houses, the morning
 exercise on the roofs, and the share of the people who do each thing.</p>
