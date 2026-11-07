@@ -15,7 +15,7 @@ const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofe
 const H = (h, m = 0) => h * 60 + m;
 const RUSH = new Set(['plastics', 'metal', 'garment', 'works']);
 export const POSE = { stand: 0, sit: 1, lie: 2, walk: 3 };
-const SIT = /breakfast|lunch|dinner|supper|tea|TV|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|inking|accounts|drawing|map|music|playing cards|meeting|patients|cutting hair/i;
+const SIT = /breakfast|lunch|dinner|supper|tea|TV|television|radio|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|service|inking|accounts|drawing|map|music|orchestra|playing cards|meeting|patients|cutting hair|sitting|vegetables|calligraphy|outwork|packing/i;
 const DOING = {
   plastics: 'at the plastics workshop', metal: 'at the metal workshop', garment: 'at the garment workshop',
   foodfac: 'at the food workshop', works: 'at the workshop', shop: 'in the shop', eating: 'at the eating house',
@@ -395,7 +395,7 @@ export class Life {
     this.pos[o] = s.spot[0]; this.pos[o + 1] = s.spot[1]; this.pos[o + 2] = s.spot[2];
     this.misc[m] = (this.persons[i].seed * 6.283) % 6.283;
     this.misc[m + 1] = s.spot[3];
-    this.misc[m + 2] = /asleep/.test(s.doing || '') ? POSE.lie : SIT.test(s.doing || '') ? POSE.sit : POSE.stand;
+    this.misc[m + 2] = /asleep|a nap/.test(s.doing || '') ? POSE.lie : SIT.test(s.doing || '') ? POSE.sit : POSE.stand;
     this.misc[m + 3] = s.spot[4] ? 1 : 0;
   }
 

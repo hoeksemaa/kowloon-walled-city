@@ -249,7 +249,9 @@ or shop. After school, a child of such a family helps there until about 9 or 10 
 HK01). Some women do outwork at home for the workshops of the City (pp88, 176).
 
 The 184 members of the Old People's Centre (老人中心) go there for tea and television in the
-afternoon (pp305-306), and the Christians among them go to the Sunday worship (p305). Some old
+afternoon (pp305-306), and the Christians among them go to the Sunday worship (p305). On two
+afternoons, women who never learned to write go to a calligraphy class there (p306). When a
+member stays away, a friend from the Centre calls at the home (p306). Some old
 people seldom leave the room (p24). A grandmother minds the grandchildren, takes them home from
 school (p54) and watches them on the roof in the early evening (p322). Most parents keep the
 small children in the flat (p300), and the children play on the stairs and the landings (p54).
