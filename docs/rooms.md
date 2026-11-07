@@ -11,7 +11,7 @@ The structure does not change: the use is a label on the units of `src/city/`.
 | `data/room_uses.json` | The mask: one row per unit (`b`, `k`, `u`, `cat`, `basis`, `place`), the 18 categories, and the documented places with their sources. |
 | `docs/room_places.md` | A table of the documented places and their units (generated). |
 | `tools/build_room_uses.mjs` | The build. Run `node tools/build_room_uses.mjs`. |
-| `structure.html` (`src/roomUses.js`) | The viewer. The "Room uses" panel shows one floor of each building at a time, colours the rooms by use or by certainty (basis), filters them by category and basis, and finds a documented place by name. A click on a room gives its use, its basis and its sources. |
+| `structure.html` (`src/roomUses.js`) | The viewer. The "Room uses" panel shows one floor of each building at a time (all over that floor goes; the floor keeps its whole walls, thus the view cuts nothing), colours the rooms by use or by certainty (basis), filters them by category and basis, and finds a documented place by name. A click on a room gives its use, its basis and its sources. |
 
 A unit key is `b:k:u`: the building id, the floor (0 = G/F), and the unit id on that floor.
 A roof room is `b:n:0`, where `n` is the number of storeys of the building.
