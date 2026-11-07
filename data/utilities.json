@@ -1,5 +1,5 @@
 {
- "about": "Utilities of Kowloon Walled City (九龍城寨) for the model week, Tue 16 to Mon 22 December 1986. The systems are water, power, refuse, drains and toilets, fire, gas and fuel, post and others. The file gives facts with sources, counts and a daily schedule. It puts places on the units of the frozen structure ([b, k, u] as in data/room_uses.json). It also gives placement rules and visuals for the drawing code. It has no colours: the drawing code gives the colours. See docs/utilities.md.",
+ "about": "Utilities of Kowloon Walled City (九龍城寨) for the model week, Mon 15 to Sun 21 December 1986. The systems are water, power, refuse, drains and toilets, fire, gas and fuel, post and others. The file gives facts with sources, counts and a daily schedule. It puts places on the units of the frozen structure ([b, k, u] as in data/room_uses.json). It also gives placement rules and visuals for the drawing code. It has no colours: the drawing code gives the colours. See docs/utilities.md.",
  "period": "December 1986",
  "key": "A unit is [b, k, u]: building id (S.list), floor k (0 = G/F), unit id (phaseOf(k).plan.units); the key \"b:k:u\" of S.unitNode. Positions (xz) are in the scene frame (see placement.frame). basis of places: verified, likely, guess. basis of facts and schedule items: sourced or inferred.",
  "facts": [
@@ -3435,7 +3435,7 @@
     "U123",
     "U126"
    ],
-   "note": "Chinese New Year 1987 was on 29 Jan 1987. Thus the clean-up is not in the week of 16-22 Dec 1986 (inferred)."
+   "note": "Chinese New Year 1987 was on 29 Jan 1987. Thus the clean-up is not in the week of 15-21 Dec 1986 (inferred)."
   },
   {
    "system": "refuse",

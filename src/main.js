@@ -38,7 +38,6 @@ import { personHtml, personTip, homeHtml } from './life/personPanel.js';
 const START_MINUTE = 9 * 60 + 45;
 // The speeds of the clock: pause, then one, two and three arrows.
 const SPEEDS = [0, 1, 60, 2400];
-const DONGZHI = 6; // the day of 冬至 (the winter solstice), Monday 22 December 1986
 const $ = (id) => document.getElementById(id);
 
 // Haze: things fade into the sky with distance from the centre of the City, from fogNear to
@@ -81,7 +80,7 @@ const TARGET_Y = 28; // about the middle of the roofs, in mPD
 // (selRoom: { k, u } or null); hover: the building under the pointer.
 // person: the selected person, -1 for none; follow: the view follows them.
 const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: SPEEDS[1], lastSpeed: SPEEDS[1], sel: -1, selRoom: null, hover: -1, dark: false, person: -1, follow: false };
-// The clock of the week: day 0 is Tuesday 16 December 1986.
+// The clock of the week: day 0 is Monday 15 December 1986, day 6 Sunday 21 December.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
 let pop, life, figures, furnish, cases, streets, windows;
@@ -507,8 +506,8 @@ function updateClock() {
   const [hh, mm] = fmtClock(clock.minute).split(':');
   $('clk-h').textContent = hh;
   $('clk-m').textContent = mm;
-  const d = new Date(Date.UTC(1986, 11, 16 + (clock.day % 7)));
-  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}${clock.day % 7 === DONGZHI ? ' · 冬至' : ''}`;
+  const d = new Date(Date.UTC(1986, 11, 15 + (clock.day % 7)));
+  $('clk-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   $('playhead').style.left = `${(clock.minute / 1440) * 100}%`;
 }
 

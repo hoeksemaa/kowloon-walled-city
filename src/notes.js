@@ -14,7 +14,7 @@ const CSDI = A('https://portal.csdi.gov.hk', 'the CSDI Portal');
 export function notesHtml(S, uses) {
   const c = uses.data.counts;
   return `
-<p>Kowloon Walled City (九龍城寨) in the week of 16 to 22 December 1986, on its definitive 3D
+<p>Kowloon Walled City (九龍城寨) in the week of 15 to 21 December 1986, on its definitive 3D
 structure: ${S.list.length} buildings with every storey, floor, stair, room and link, on the ground
 and among the real buildings round the City. The structure was frozen on 4 November 2026
 (${A(`${REPO}docs/structure.md`, 'docs/structure.md')}). It is a structural model only: it has no

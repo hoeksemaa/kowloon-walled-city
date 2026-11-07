@@ -1,4 +1,4 @@
-// The people of the City in the week of 16 to 22 December 1986, on the definitive structure.
+// The people of the City in the week of 15 to 21 December 1986, on the definitive structure.
 //
 // SOURCED: "28,200 occupants residing in 8800 separate apartments" in January 1987 (City of
 // Darkness Revisited, p340), and "just over 33,000" with the people who worked in the City but

@@ -1,6 +1,6 @@
 {
- "about": "Daily routines of the real people of data/people.json who can be in the Walled City in the week Tue 16 - Mon 22 Dec 1986. Each slot gives a place (at) and an activity (doing). A gap in the week means home. For a person with home null, a gap means out (outside the City). basis \"sourced\" means that the source gives the activity and the hour. basis \"inferred\" means that the model chose the hour or the place. A unit key is \"b:k:u\" (building, floor, unit). \"roof:<b>\" is a roof, and \"route:A->B\" is a walk from A to B. \"round:post\" is the post round, and \"lanes\" is a walk in the alleys. \"to\" 24:00 is the end of the day. home_basis or work_basis \"inferred\" means that the model chose the unit. figure.sex is \"m\" or \"f\"; null means that no source shows it. Mon 22 Dec 1986 is 冬至 (Dongzhi).",
- "week": "Tue 16 - Mon 22 Dec 1986",
+ "about": "Daily routines of the real people of data/people.json who can be in the Walled City in the week Mon 15 - Sun 21 Dec 1986. Each slot gives a place (at) and an activity (doing). A gap in the week means home. For a person with home null, a gap means out (outside the City). basis \"sourced\" means that the source gives the activity and the hour. basis \"inferred\" means that the model chose the hour or the place. A unit key is \"b:k:u\" (building, floor, unit). \"roof:<b>\" is a roof, and \"route:A->B\" is a walk from A to B. \"round:post\" is the post round, and \"lanes\" is a walk in the alleys. \"to\" 24:00 is the end of the day. home_basis or work_basis \"inferred\" means that the model chose the unit. figure.sex is \"m\" or \"f\"; null means that no source shows it. Sun 21 Dec 1986 is the day before 冬至 (Dongzhi, Mon 22 Dec).",
+ "week": "Mon 15 - Sun 21 Dec 1986",
  "people": {
   "lam-mei-kwong": {
    "name": "Lam Mei Kwong",
@@ -128,7 +128,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "13:45",
      "to": "20:00",
      "at": "work",
@@ -139,33 +139,11 @@
      "note": "The source gives no closing hour. 20:00 is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "20:00",
      "to": "20:20",
      "at": "route:201:0:0->0:11:3",
      "doing": "walking home",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:45",
-     "to": "17:30",
-     "at": "work",
-     "doing": "cutting hair; an early close for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
-    },
-    {
-     "days": "Mon",
-     "from": "17:30",
-     "to": "17:50",
-     "at": "route:201:0:0->0:11:3",
-     "doing": "walking home for 冬至",
      "basis": "inferred",
      "source": "inference",
      "cite": "",
@@ -200,7 +178,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -211,7 +189,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:30",
      "to": "18:30",
      "at": "work",
@@ -344,7 +322,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "06:00",
      "to": "12:00",
      "at": "work",
@@ -355,7 +333,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "13:00",
      "at": "work",
@@ -366,7 +344,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "19:00",
      "at": "work",
@@ -386,17 +364,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p44",
      "note": "At festivals they often work overnight (p44). The book does not name 冬至; this night is inferred."
-    },
-    {
-     "days": "Mon",
-     "from": "00:00",
-     "to": "12:00",
-     "at": "work",
-     "doing": "festival cakes for 冬至",
-     "basis": "inferred",
-     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
-     "cite": "p44",
-     "note": ""
     }
    ],
    "facts_used": [
@@ -424,7 +391,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -435,7 +402,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "work",
@@ -446,7 +413,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "20:00",
      "at": "work",
@@ -455,17 +422,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:00",
-     "at": "work",
-     "doing": "an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -539,7 +495,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "15:00",
      "to": "23:30",
      "at": "work",
@@ -548,39 +504,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p57",
      "note": "The closing hour is inferred."
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "18:00",
-     "at": "work",
-     "doing": "at the café",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "18:00",
-     "to": "21:00",
-     "at": "home",
-     "doing": "the 冬至 family dinner",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
-    },
-    {
-     "days": "Mon",
-     "from": "21:00",
-     "to": "23:30",
-     "at": "work",
-     "doing": "at the café",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": ""
     }
    ],
    "facts_used": [
@@ -610,7 +533,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "07:00",
      "to": "12:00",
      "at": "work",
@@ -621,7 +544,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "13:00",
      "at": "work",
@@ -632,7 +555,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "18:00",
      "at": "work",
@@ -643,7 +566,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "18:00",
      "to": "21:00",
      "at": "work",
@@ -652,17 +575,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "pp76-77",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:00",
-     "to": "17:00",
-     "at": "work",
-     "doing": "making candy; an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -717,7 +629,7 @@
      "note": "Her daily routine (p80). The hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:30",
      "to": "17:00",
      "at": "centre",
@@ -868,7 +780,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -879,7 +791,7 @@
      "note": "At times the machines ran 24 hours a day (p88). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "work",
@@ -890,7 +802,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:00",
      "at": "work",
@@ -910,17 +822,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "08:00",
-     "to": "17:00",
-     "at": "work",
-     "doing": "at his golf-ball machines; an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -994,7 +895,7 @@
      "note": "The deliveries are sourced; the days and hours are inferred."
     },
     {
-     "days": "Wed,Fri,Sun,Mon",
+     "days": "Mon,Wed,Fri,Sun",
      "from": "10:00",
      "to": "10:45",
      "at": "work",
@@ -1150,17 +1051,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p158",
      "note": "The days and hours are inferred."
-    },
-    {
-     "days": "Mon",
-     "from": "17:00",
-     "to": "21:00",
-     "at": "mother",
-     "doing": "the 冬至 family dinner at her mother's flat",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -1282,7 +1172,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "06:30",
      "to": "12:30",
      "at": "work",
@@ -1293,7 +1183,7 @@
      "note": "The start hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:15",
      "at": "work",
@@ -1304,7 +1194,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:15",
      "to": "19:00",
      "at": "work",
@@ -1400,7 +1290,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "04:00",
      "to": "12:00",
      "at": "work",
@@ -1411,7 +1301,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "15:00",
      "at": "work",
@@ -1431,17 +1321,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p183",
      "note": "He once worked overnight for a Chiu Chow festival (p183). The model uses the night before 冬至 (inferred)."
-    },
-    {
-     "days": "Mon",
-     "from": "00:00",
-     "to": "10:00",
-     "at": "work",
-     "doing": "finishing the festival cakes",
-     "basis": "inferred",
-     "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
-     "cite": "p183",
-     "note": ""
     }
    ],
    "facts_used": [
@@ -1469,7 +1348,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "13:00",
      "at": "work",
@@ -1491,7 +1370,7 @@
      "note": "The book names the job, not the days. The days and hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:30",
      "to": "20:00",
      "at": "work",
@@ -1679,7 +1558,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -1690,7 +1569,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "home",
@@ -1701,7 +1580,7 @@
      "note": "He lives nearby and goes home to eat (p237). The hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:00",
      "at": "work",
@@ -1732,17 +1611,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p237",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:00",
-     "at": "work",
-     "doing": "an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -1771,7 +1639,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sun",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sun",
      "from": "10:00",
      "to": "18:30",
      "at": "work",
@@ -1791,17 +1659,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p245",
      "note": "\"now Saturday is my day off\" (p245, about 1990). The model uses it for 1986 (inferred)."
-    },
-    {
-     "days": "Mon",
-     "from": "10:00",
-     "to": "17:00",
-     "at": "work",
-     "doing": "at the dentist's chair; an early close for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -1833,7 +1690,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "18:00",
      "at": "work",
@@ -2110,7 +1967,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "09:00",
      "to": "17:00",
      "at": "work",
@@ -2160,7 +2017,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "12:00",
      "at": "yamen",
@@ -2171,7 +2028,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "17:30",
      "at": "work",
@@ -2224,7 +2081,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:00",
      "at": "work",
@@ -2235,7 +2092,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "13:30",
      "at": "home",
@@ -2246,7 +2103,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "17:30",
      "at": "work",
@@ -2377,7 +2234,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -2388,7 +2245,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -2421,7 +2278,7 @@
      "note": ""
     },
     {
-     "days": "Wed,Fri",
+     "days": "Mon,Wed,Fri",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -2430,17 +2287,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at his property agency; an early close for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -2480,7 +2326,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -2491,7 +2337,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "home",
@@ -2502,7 +2348,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "18:00",
      "at": "work",
@@ -2548,7 +2394,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "07:00",
      "to": "09:00",
      "at": "out",
@@ -2559,7 +2405,7 @@
      "note": "The sorting is sourced; the hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "09:40",
      "at": "store",
@@ -2570,7 +2416,7 @@
      "note": "The store is sourced (caption); the hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:40",
      "to": "12:30",
      "at": "round:post",
@@ -2581,7 +2427,7 @@
      "note": "Each man took the stairs or the alleys when the other was tired (p146). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "12:30",
      "to": "13:15",
      "at": "store",
@@ -2592,7 +2438,7 @@
      "note": "The break and its place are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "13:15",
      "to": "14:30",
      "at": "round:post",
@@ -2603,7 +2449,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "14:30",
      "to": "15:30",
      "at": "out",
@@ -2745,7 +2591,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:15",
      "to": "12:30",
      "at": "work",
@@ -2756,7 +2602,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -2767,7 +2613,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:15",
      "at": "work",
@@ -2776,17 +2622,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-340",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (Lo Mei Workshop); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -2822,7 +2657,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -2833,7 +2668,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -2844,7 +2679,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -2853,17 +2688,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-340",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (Lo Mei Workshop); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -2899,7 +2723,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "06:15",
      "to": "12:00",
      "at": "work",
@@ -2910,7 +2734,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "13:00",
      "at": "out",
@@ -2921,7 +2745,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "16:15",
      "at": "work",
@@ -2930,17 +2754,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-194",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:00",
-     "to": "16:15",
-     "at": "work",
-     "doing": "at the food workshop (潮州點心); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -2976,7 +2789,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -2987,7 +2800,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -2998,7 +2811,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:00",
      "at": "work",
@@ -3007,17 +2820,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-140",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the workshop (錶殼蝕刻); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -3042,7 +2844,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:45",
      "to": "12:30",
      "at": "work",
@@ -3053,7 +2855,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3064,7 +2866,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:15",
      "at": "work",
@@ -3073,17 +2875,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-94",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the workshop (廖理); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -3108,7 +2899,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -3119,7 +2910,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3130,7 +2921,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:00",
      "at": "work",
@@ -3139,17 +2930,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-248",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (LAW Hoi-cheung); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3218,7 +2998,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3229,7 +3009,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3240,7 +3020,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:00",
      "at": "work",
@@ -3249,17 +3029,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-229",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the workshop (曾紀尉 (首飾); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -3284,7 +3053,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:15",
      "to": "12:30",
      "at": "work",
@@ -3295,7 +3064,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3306,7 +3075,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:15",
      "at": "work",
@@ -3315,17 +3084,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-181",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (羅釗林); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3361,7 +3119,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -3372,7 +3130,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3383,7 +3141,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:00",
      "at": "work",
@@ -3392,17 +3150,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-190",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (黃源香); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3438,7 +3185,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -3449,7 +3196,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3460,7 +3207,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:00",
      "at": "work",
@@ -3469,17 +3216,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-535",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (Rm. 2, 6/F, Block 3, Hop Yick House, 10A T.T.T. RD [Tung Tau); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3515,7 +3251,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3526,7 +3262,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3537,7 +3273,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -3546,17 +3282,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-468",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (8/F, Rear Portion, Foon Lok Hse.[House] 28 Lo Yan St.[Street); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3592,7 +3317,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3603,7 +3328,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3614,7 +3339,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -3623,17 +3348,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-60",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (Lau Fat Mau); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3669,7 +3383,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:15",
      "to": "12:30",
      "at": "work",
@@ -3680,7 +3394,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3691,7 +3405,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:15",
      "at": "work",
@@ -3700,17 +3414,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-528",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (Chang Long Leung); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3746,7 +3449,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3757,7 +3460,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3768,7 +3471,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -3777,17 +3480,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-254",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (林洪); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3823,7 +3515,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3834,7 +3526,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3845,7 +3537,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -3854,17 +3546,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-307",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (鄭炎創); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -3944,7 +3625,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -3955,7 +3636,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -3966,7 +3647,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "19:00",
      "at": "work",
@@ -3975,17 +3656,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-167",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the workshop (Tse Choi Kwan Fur Workshop); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4010,7 +3680,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4021,7 +3691,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4032,7 +3702,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4041,17 +3711,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-72",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Chan Hay Sing Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4076,7 +3735,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4087,7 +3746,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4098,7 +3757,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4107,17 +3766,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-298",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4142,7 +3790,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4153,7 +3801,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4164,7 +3812,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4173,17 +3821,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-323",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Wong Chun Wah Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4208,7 +3845,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4219,7 +3856,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4230,7 +3867,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4239,17 +3876,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-549",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Tse Hon Keung Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4274,7 +3900,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4285,7 +3911,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4296,7 +3922,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4305,17 +3931,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-3",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (陳子明牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4340,7 +3955,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4351,7 +3966,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4362,7 +3977,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4371,17 +3986,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-52",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (牙醫陳國祥); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4406,7 +4010,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4417,7 +4021,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4428,7 +4032,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4437,17 +4041,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-118",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (陳燕初牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4472,7 +4065,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4483,7 +4076,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4494,7 +4087,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4503,17 +4096,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-69",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Ng Mei Kin Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4538,7 +4120,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4549,7 +4131,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4560,7 +4142,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4569,17 +4151,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-34",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Cheng Ling Sang Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4604,7 +4175,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -4615,7 +4186,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4626,7 +4197,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -4635,17 +4206,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-27",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "making dentures (Mak Yue Kong Dental Techician); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4670,7 +4230,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -4681,7 +4241,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4692,7 +4252,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -4701,17 +4261,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-391",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Ho Yin Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4736,7 +4285,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -4747,7 +4296,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4758,7 +4307,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -4767,17 +4316,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-376",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (麥汝鋆牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4803,7 +4341,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4814,7 +4352,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4825,7 +4363,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4834,17 +4372,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-374",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (黃美如牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4870,7 +4397,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -4881,7 +4408,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4892,7 +4419,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -4901,17 +4428,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-372A",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (李偉群牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -4936,7 +4452,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -4947,7 +4463,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -4958,7 +4474,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -4967,17 +4483,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-370",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Fong Yuk Shing Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5002,7 +4507,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -5013,7 +4518,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5024,7 +4529,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -5033,17 +4538,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-352",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Tsang Chi Wai Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5068,7 +4562,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -5079,7 +4573,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5090,7 +4584,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -5099,17 +4593,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-415",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Lai Woon Sun Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5134,7 +4617,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -5145,7 +4628,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5156,7 +4639,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -5165,17 +4648,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-514",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (蕭秉隆牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5200,7 +4672,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -5211,7 +4683,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5222,7 +4694,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -5231,17 +4703,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-547",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (蕭秉陞牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5266,7 +4727,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -5277,7 +4738,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5288,7 +4749,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -5297,17 +4758,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-554",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (King's Dental Lab + Yip Wa Man Dentist); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5332,7 +4782,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -5343,7 +4793,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5354,7 +4804,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -5363,17 +4813,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-553",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Mak Chiu Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5398,7 +4837,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:15",
      "to": "13:00",
      "at": "work",
@@ -5409,7 +4848,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5420,7 +4859,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -5429,17 +4868,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-278",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (馬創忠牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5464,7 +4892,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -5475,7 +4903,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5486,7 +4914,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -5495,17 +4923,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-280A (also -280D to -281)",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Flat F, 1/F, Hop Hing House at the Rear of 20-22 TTT Rd [Tun); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5530,7 +4947,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:30",
      "to": "13:00",
      "at": "work",
@@ -5541,7 +4958,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5552,7 +4969,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -5561,17 +4978,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-273",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (魏香泉牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5596,7 +5002,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -5607,7 +5013,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5618,7 +5024,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -5627,17 +5033,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-154",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Wong Wai Kuen Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5662,7 +5057,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -5673,7 +5068,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5684,7 +5079,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -5693,17 +5088,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-157 (ledgers -158B to -159B, from 1987)",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (Lam Sam Yuk Dentistry); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5728,7 +5112,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -5739,7 +5123,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -5750,7 +5134,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -5759,17 +5143,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-187",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the dentist's chair (莊天麗牙科); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -5794,7 +5167,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:15",
      "to": "13:00",
      "at": "work",
@@ -5805,7 +5178,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -5816,7 +5189,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "19:45",
      "at": "work",
@@ -5825,17 +5198,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-575",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "Chinese medicine: seeing patients (Liu Kwan China New Medical Clinic); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -5871,7 +5233,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:15",
      "to": "13:00",
      "at": "work",
@@ -5882,7 +5244,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -5893,7 +5255,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "19:45",
      "at": "work",
@@ -5902,17 +5264,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-310",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (Dr. CHAN WING LAN); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -5948,7 +5299,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -5959,7 +5310,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -5970,7 +5321,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "20:00",
      "at": "work",
@@ -5979,17 +5330,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-302",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (西醫邱家瑟); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6025,7 +5365,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -6036,7 +5376,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6047,7 +5387,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "20:00",
      "at": "work",
@@ -6056,17 +5396,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-266",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (Flat 2, 6/F, Wing Wah Building, 24A, TTT Rd [Tung Tau Tsuen ); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6102,7 +5431,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -6113,7 +5442,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6124,7 +5453,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "20:00",
      "at": "work",
@@ -6133,17 +5462,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-160",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "Chinese medicine: seeing patients (李靜瑜醫務所(中醫); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6179,7 +5497,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "13:00",
      "at": "work",
@@ -6190,7 +5508,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6201,7 +5519,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "19:30",
      "at": "work",
@@ -6210,17 +5528,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-164",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "Chinese medicine: seeing patients (黃照垣中醫); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6256,7 +5563,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -6267,7 +5574,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6278,7 +5585,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "20:00",
      "at": "work",
@@ -6287,17 +5594,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-185",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (Li Mau Clinic); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6333,7 +5629,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "13:00",
      "at": "work",
@@ -6344,7 +5640,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6355,7 +5651,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "19:30",
      "at": "work",
@@ -6364,17 +5660,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-186",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (張挺華診所); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6410,7 +5695,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -6421,7 +5706,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6432,7 +5717,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "20:00",
      "at": "work",
@@ -6441,17 +5726,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-186",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "seeing patients (張挺華診所); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6487,7 +5761,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "13:00",
      "at": "work",
@@ -6498,7 +5772,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "15:00",
      "at": "out",
@@ -6509,7 +5783,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "15:00",
      "to": "19:30",
      "at": "work",
@@ -6518,17 +5792,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-315",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "Chinese medicine: seeing patients (國醫羅明德); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6564,7 +5827,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:30",
      "to": "13:00",
      "at": "work",
@@ -6575,7 +5838,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -6586,7 +5849,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:30",
      "at": "work",
@@ -6595,17 +5858,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-20",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "setting bones and treating sprains (Liu Kwok Sum Bonesetter & Gymnasium); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -6631,7 +5883,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:15",
      "to": "13:00",
      "at": "work",
@@ -6642,7 +5894,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "14:00",
      "at": "out",
@@ -6653,7 +5905,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:15",
      "at": "work",
@@ -6662,17 +5914,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-546",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "14:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "setting bones and treating sprains (Lam Hung Bone Setter); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "note": "The clearance file dates from after 1986. Whether this person worked here in December 1986 is not known. All hours are inferred.",
@@ -6697,7 +5938,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:30",
      "to": "12:30",
      "at": "work",
@@ -6708,7 +5949,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "out",
@@ -6719,7 +5960,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:30",
      "to": "21:30",
      "at": "work",
@@ -6728,17 +5969,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-342A (ledgers -343 to -345)",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "minding the shop (陳漢豐鮮菓士多); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6774,7 +6004,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "06:00",
      "to": "12:00",
      "at": "work",
@@ -6785,7 +6015,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:00",
      "to": "13:00",
      "at": "out",
@@ -6796,7 +6026,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "13:00",
      "to": "16:00",
      "at": "work",
@@ -6805,17 +6035,6 @@
      "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
      "cite": "HKRS1255-3-244 (ledger -245)",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "13:00",
-     "to": "16:00",
-     "at": "work",
-     "doing": "at the food workshop (also known as 6/F); an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Sun",
@@ -6852,7 +6071,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "07:40",
      "to": "18:15",
      "at": "out",
@@ -6863,7 +6082,7 @@
      "note": "He was an engineering student (WSJ). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "19:30",
      "to": "21:30",
      "at": "lanes",
@@ -6874,7 +6093,7 @@
      "note": "In December 1986 the map is half done: it took four months and he finished it in March 1987. The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "21:30",
      "to": "23:30",
      "at": "home",
@@ -6938,17 +6157,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "18:15",
-     "to": "21:30",
-     "at": "home",
-     "doing": "the 冬至 family dinner",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -7130,7 +6338,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "07:00",
      "to": "09:00",
      "at": "out",
@@ -7141,7 +6349,7 @@
      "note": "The sorting is sourced; the hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:00",
      "to": "09:40",
      "at": "store",
@@ -7152,7 +6360,7 @@
      "note": "The store is sourced (caption); the hour is inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "09:40",
      "to": "12:30",
      "at": "round:post",
@@ -7163,7 +6371,7 @@
      "note": "Each man took the stairs or the alleys when the other was tired (p146). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "12:30",
      "to": "13:15",
      "at": "store",
@@ -7174,7 +6382,7 @@
      "note": "The break and its place are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "13:15",
      "to": "14:30",
      "at": "round:post",
@@ -7185,7 +6393,7 @@
      "note": "The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "14:30",
      "to": "15:30",
      "at": "out",
@@ -7219,7 +6427,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "07:30",
      "to": "19:00",
      "at": "out",
@@ -7298,7 +6506,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "07:30",
      "to": "19:00",
      "at": "out",
@@ -7422,7 +6630,7 @@
      "note": "The workshop sold to markets and eateries outside (HK01). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "15:30",
      "to": "19:00",
      "at": "work",
@@ -7431,17 +6639,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "orders; an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": [
@@ -7469,7 +6666,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri",
      "from": "07:30",
      "to": "19:00",
      "at": "out",
@@ -7667,7 +6864,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "15:30",
      "to": "18:30",
      "at": "work",
@@ -7676,17 +6873,6 @@
      "source": "inference",
      "cite": "",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:30",
-     "to": "17:30",
-     "at": "work",
-     "doing": "an early stop for 冬至",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     }
    ],
    "facts_used": []
@@ -7853,7 +7039,7 @@
      "note": "They cared for many of the elderly (p263). The hours are inferred."
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:30",
      "to": "17:00",
      "at": "lanes",
@@ -7887,7 +7073,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "08:00",
      "to": "12:30",
      "at": "work",
@@ -7898,7 +7084,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "12:30",
      "to": "13:30",
      "at": "work",
@@ -7977,7 +7163,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Sun",
+     "days": "all",
      "from": "15:00",
      "to": "23:00",
      "at": "work",
@@ -7986,28 +7172,6 @@
      "source": "City of Darkness Revisited (Girard and Lambot, 2014)",
      "cite": "p56",
      "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "15:00",
-     "to": "17:30",
-     "at": "work",
-     "doing": "at the café",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": ""
-    },
-    {
-     "days": "Mon",
-     "from": "17:30",
-     "to": "21:00",
-     "at": "home",
-     "doing": "cooking the 冬至 family dinner",
-     "basis": "inferred",
-     "source": "inference",
-     "cite": "",
-     "note": "Mon 22 Dec 1986 is 冬至 (Dongzhi). The early stop and the family dinner are inferred."
     },
     {
      "days": "Fri",
@@ -8122,7 +7286,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:30",
      "to": "17:00",
      "at": "centre",
@@ -8155,7 +7319,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -8166,7 +7330,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",
@@ -8199,7 +7363,7 @@
    },
    "week": [
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "10:00",
      "to": "13:00",
      "at": "work",
@@ -8210,7 +7374,7 @@
      "note": ""
     },
     {
-     "days": "Tue,Wed,Thu,Fri,Sat,Mon",
+     "days": "Mon,Tue,Wed,Thu,Fri,Sat",
      "from": "14:00",
      "to": "19:00",
      "at": "work",

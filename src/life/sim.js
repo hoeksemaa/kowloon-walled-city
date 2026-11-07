@@ -235,10 +235,9 @@ export class Life {
       places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
       daughterOf: (hid) => kinLinks().daughter.get(hid) || null,
       motherOf: (hid) => kinLinks().mother.get(hid) || null,
-      // the days the daughter comes to dinner: about 2 in 5, not on 冬至 (INFERRED), at a time of
-      // the mother's household
+      // the days the daughter comes to dinner: about 2 in 5 (INFERRED), at a time of the
+      // mother's household
       kinDay: (mumHid, dow) => {
-        if (dow === 6) return null;
         const q = mulberry32(mumHid * 7919 + dow * 31 + 11);
         if (q() >= 0.4) return null;
         const d = 18 * 60 + 25 + Math.floor(q() * 35);
@@ -246,12 +245,12 @@ export class Life {
       },
       // A rush order: the workers come back after dinner and work until 2 or 3 am (p237); a
       // workshop could run "24 hours a day" (p88). On about 1 day in 12 for each workshop
-      // (INFERRED). The food workshops work through the night before 冬至 (Sunday 21 December):
-      // bakers and roast-meat makers worked overnight at festivals (pp44, 289); 冬至 is not
-      // named (INFERRED).
+      // (INFERRED). The food workshops work through the night of Sunday 21 December, before
+      // 冬至 (Monday 22 December): bakers and roast-meat makers worked overnight at festivals
+      // (pp44, 289); 冬至 is not named (INFERRED).
       rush: (w, dow) => {
         if (!w || w.kind !== 'unit') return false;
-        if (w.cat === 'foodfac') return dow === 5;
+        if (w.cat === 'foodfac') return dow === 6; // Sunday
         if (!RUSH.has(w.cat)) return false;
         return mulberry32(w.b * 7919 + w.k * 131 + (w.u || 0) * 17 + dow * 7717)() < 0.08;
       },
