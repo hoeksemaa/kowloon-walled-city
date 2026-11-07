@@ -7,11 +7,12 @@
 // the corridors and the lanes, over the bridges and the roofs. A person who is out of the City
 // walks out at the edge of the plan and is not drawn.
 import { Nav, WALK, CLIMB } from './nav.js';
-import { planDay, OUT } from './routines.js';
+import { planDay, planHouse, OUT } from './routines.js';
 import { mulberry32 } from '../util.js';
 
 // The node kinds of nav.js that are open to the sky (drawn always); the others are inside.
 const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofedge
+const H = (h, m = 0) => h * 60 + m;
 export const POSE = { stand: 0, sit: 1, lie: 2, walk: 3 };
 const SIT = /breakfast|lunch|dinner|supper|tea|TV|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|inking|accounts|drawing|map|music|playing cards|meeting|patients|cutting hair/i;
 const DOING = {
@@ -55,7 +56,7 @@ export class Life {
     const standpipe = P('216:0:1');
     if (standpipe) { standpipe.tree = 'standpipe'; this.standTree = nav.tree([standpipe.node]); }
     const places = {
-      standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'),
+      standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'), tutor: P('262:2:0'),
       eating: units((r) => r.cat === 'eating'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
@@ -82,8 +83,71 @@ export class Life {
     }
     const lys = S.list.filter((b) => /Lo Yan Street/.test(b.label) && b.n > 1).map((b) => b.id);
     const side = S.list.filter((b) => /Kwong Ming|Tai Chang|Sai Shing|Lung Chun|Tung Tau Tsuen/.test(b.label) && b.n > 5).map((b) => b.id);
+    // ---- the households, the water and the eight standpipes ----
+    this.households = pop.households || [];
+    // The eight Government standpipes of drinking water (p249): the one in the City, on Tai Chang
+    // Street (大井街), and seven outside it (data/utilities.json, placement). Each home goes to
+    // the nearest one: one search finds the way from every node.
+    const UP = opts.utilities?.placement, pipes = [];
+    const spots = UP ? [UP.standpipe_inside?.xz, ...(UP.outside_standpipes?.list || []).map((o) => o.xz)].filter(Boolean) : [];
+    for (const [x, z] of spots) {
+      let best = -1, bd = 3;
+      for (let v = 0; v < nav.N; v++) {
+        if (nav.kind[v] !== 0 && nav.kind[v] !== 5) continue;
+        const d = Math.hypot(nav.x[v] - x, nav.z[v] - z);
+        if (d < bd) { bd = d; best = v; }
+      }
+      if (best >= 0) pipes.push({ kind: 'lane', node: best, tree: 'pipes', queue: true, key: `standpipe:${pipes.length}`, label: pipes.length ? 'at a Government standpipe outside the City' : 'at the Government standpipe of Tai Chang Street (大井街)' });
+    }
+    this.pipes = pipes;
+    this.pipeTree = pipes.length ? nav.tree(pipes.map((q) => q.node)) : null;
+    const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
+    const pipeFor = (pl) => {
+      if (!this.pipeTree || !pl || pl.node === undefined) return null;
+      let q = pipeOf.get(pl.node);
+      if (q === undefined) {
+        let v = pl.node, n = 0;
+        while (v >= 0 && this.pipeTree.next[v] >= 0 && n++ < 1e5) v = this.pipeTree.next[v];
+        q = this.pipeTree.next[v] === -1 ? pipeAt.get(v) || null : null;
+        pipeOf.set(pl.node, q);
+      }
+      return q;
+    };
+    const houseMemo = new Map();
     this.X = {
-      places, place: P, roofFor: findRoof,
+      places, place: P, roofFor: findRoof, pipeFor,
+      // The household of person p on day dow (routines.js planHouse), kept for the day.
+      house: (p, dow) => {
+        const key = dow * 1e6 + p.hh;
+        let F = houseMemo.get(key);
+        if (F === undefined) {
+          if (houseMemo.size > 30000) houseMemo.clear();
+          const h = this.households[p.hh];
+          F = h ? planHouse(h, h.members.map((i) => this.persons[i]), dow, this.X) : null;
+          houseMemo.set(key, F);
+        }
+        return F;
+      },
+      homeOf: (hid) => this.households[hid]?.home || null,
+      // The water of floor k of building b. INFERRED from the facts named: some blocks had water
+      // all day (p113); many pumps ran at noon and midnight, and the taps ran a few hours after
+      // (p107); elsewhere the water came by floors, low floors first (林羅平, HK01), and a top
+      // floor got it from 3 pm (袁家倫, Epoch Times).
+      water: (b, k) => {
+        const q = mulberry32(b * 7919 + 17), v = q();
+        if (v < 0.1) return { kind: 'all', day: null, night: null };
+        if (v < 0.55) return { kind: 'runs', day: [H(12, 15), H(15, 0)], night: [H(0, 15), H(3, 0)] };
+        const t0 = Math.round(H(6, 0) + q() * 50 + Math.max(0, k - 1) * 45);
+        return { kind: 'floors', day: [t0, t0 + 90], night: null };
+      },
+      // The walk between two places, in minutes (straight, with the climb; a guess for the plan).
+      walkMin: (a, b) => {
+        const d = Math.hypot(nav.x[a.node] - nav.x[b.node], nav.z[a.node] - nav.z[b.node]) * 1.4;
+        return Math.max(d / WALK, Math.abs(nav.y[a.node] - nav.y[b.node]) / CLIMB) / 60 + 0.5;
+      },
+      // The kindergarten of a household: the Salvation Army kindergarten (p300) for some, one
+      // outside the City for the others (INFERRED).
+      kinderFor: (hid) => (places.kinder && hid % 12 === 0 ? places.kinder : OUT('at a kindergarten outside the City')),
       laneSpot: (r) => ({ kind: 'lane', node: lanes[Math.floor(r() * lanes.length)] }),
       anyRoof: (r) => P(`roof:${roofs[Math.floor(r() * roofs.length)]}`),
       anyHome: (r) => homes[Math.floor(r() * homes.length)],
@@ -154,7 +218,8 @@ export class Life {
       }
       return [base[0], B.top, base[2], B.n, 0];
     }
-    return [base[0] + (r() - 0.5) * 0.6, base[1], base[2] + (r() - 0.5) * 0.6, base[3], 0];
+    const w = pl.queue ? 2.6 : 0.6; // a queue at a standpipe
+    return [base[0] + (r() - 0.5) * w, base[1], base[2] + (r() - 0.5) * w, base[3], 0];
   }
 
   // The route between two places, as node ids, or undefined (not yet found) or null (none).
@@ -163,6 +228,8 @@ export class Life {
     if (b.kind === 'out') return a.kind === 'out' ? null : nav.follow(this.outTree, a.node);
     if (a.kind === 'out') return nav.follow(this.outTree, b.node, true);
     if (a.node === b.node) return Int32Array.of(a.node);
+    if (b.tree === 'pipes') return nav.follow(this.pipeTree, a.node);
+    if (a.tree === 'pipes') return nav.follow(this.pipeTree, b.node, true);
     if (b.tree === 'standpipe') return nav.follow(this.standTree, a.node);
     if (a.tree === 'standpipe') return nav.follow(this.standTree, b.node, true);
     const key = `${a.node}>${b.node}`;
