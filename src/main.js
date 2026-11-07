@@ -29,6 +29,7 @@ import { Nav } from './life/nav.js';
 import { buildPopulation } from './life/population.js';
 import { Life } from './life/sim.js';
 import { Figures } from './life/figures.js';
+import { LitWindows } from './life/windows.js';
 import { Furnish, ITEM_KIND, thingsHtml } from './life/furnish.js';
 import { Casebook } from './life/mysteries.js';
 import { StreetNames } from './streetNames.js';
@@ -83,7 +84,7 @@ const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: S
 // The clock of the week: day 0 is Tuesday 16 December 1986.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
-let pop, life, figures, furnish, cases, streets;
+let pop, life, figures, furnish, cases, streets, windows;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -115,6 +116,9 @@ async function init() {
   pop = buildPopulation(S, uses, nav, D.routines, D.people);
   life = new Life(S, uses, pop, { nav, utilities: D.utilities });
   figures = new Figures(life, layers);
+  // the lit windows at night: a window glows where someone is awake in the room behind it
+  windows = new LitWindows(S, life);
+  scene.add(windows.mesh);
   // the ten mysteries (data/mysteries.json)
   cases = new Casebook(D.mysteries, D.people, uses, life);
   scene.add(figures.mesh);
@@ -132,7 +136,7 @@ async function init() {
   resize();
   setOffsets(0);
   $('loading').classList.add('done');
-  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding, selectPerson, life, figures, pop, furnish, cases };
+  window.kwc = { S, layers, uses, state, clock, camera, controls, renderer, setPeel, setExplode, selectBuilding, selectPerson, life, figures, pop, furnish, cases, windows };
   requestAnimationFrame(frame);
 }
 
@@ -547,6 +551,7 @@ function frame(now) {
   life.update(clock.day % 7, clock.minute, 4);
   figures.update(now / 1000);
   furnish.update((camera.top - camera.bottom) / camera.zoom / innerHeight);
+  windows.update(night, layers.spread < 0.01 && layers.peelK < 0);
   if (state.person >= 0 && state.follow) {
     const h = figures.head(state.person);
     if (h) {
