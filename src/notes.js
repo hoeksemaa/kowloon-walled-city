@@ -87,7 +87,7 @@ families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); fam
 Salvation Army (救世軍) chapel (p301); the Tin Hau Temple (天后廟) (p15); the orchestra (p15); the kindergarten outings
 (p300); the daily-rate helpers (p44); the taxi drivers at the cafés (p294); the porters with sacks of flour and delivery
 trolleys (pp176, 249); the haircuts at Ho Chi Kam's (何智錦) barber's shop (p28), the washing in the well water (p14), the police on the roofs (p319),
-residents at the doctors and dentists near home (pp186-187, 245), daughters who help their old mothers cook and eat with them (p158),
+residents at the doctors and dentists near home (pp186-187, 245), the Kai Fong Christmas party for the old people (p180; its day INFERRED), daughters who help their old mothers cook and eat with them (p158),
 soy sauce through the windows (陳祥全, M+), the bosses' mahjong (林羅平, HK01), the youth centre (香港青年協會; HK01, 2016) and the
 mothers who fetch their teenagers home late (p158),
 a few heroin addicts (pp258-260, 169, 187), the Shuiyuan youth centre and the daily prayer of the

@@ -69,6 +69,9 @@ export class Life {
       // the youth centre of the Hong Kong Federation of Youth Groups (香港青年協會), beside the
       // free-school centre: "有不少年青人流連" (HK01, 2016; room_uses T30)
       youth: P('99:3:4'),
+      // the Kai Fong Association (九龍城砦街坊福利事業促進委員會): its office and the large room
+      // off it, 3/F, 16 Tung Tau Tsuen Road (p180; room_uses B10)
+      kaifong: P('8:3:2'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
     const homes = pop.homes;
@@ -203,6 +206,11 @@ export class Life {
       // the household of the same flat first (a lodger and its host), then one of the building
       return list.find((h) => h.home === home) || list[hid % list.length];
     };
+    // The guests of the Kai Fong Christmas party (p180): about 90 old people who live in the City.
+    // How many, and who, is INFERRED.
+    let guests = null;
+    const partyGuests = () => (guests ||= new Set(this.persons.filter((q) => q.role === 'elder' && q.home)
+      .sort((a, b) => ((a.seed * 101) % 1) - ((b.seed * 101) % 1)).slice(0, 90).map((q) => q.id)));
     // An old mother and her grown daughter's family in the same building: "Chung Lo Ying's
     // daughter, Chung Yuk Yee, often joined her mother for dinner and helped with the cooking"
     // (p158). For about half of the households of old people with an old woman (INFERRED), a
@@ -235,6 +243,7 @@ export class Life {
       places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
       daughterOf: (hid) => kinLinks().daughter.get(hid) || null,
       motherOf: (hid) => kinLinks().mother.get(hid) || null,
+      partyGuest: (p) => partyGuests().has(p.id),
       // the days the daughter comes to dinner: about 2 in 5 (INFERRED), at a time of the
       // mother's household
       kinDay: (mumHid, dow) => {
