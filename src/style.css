@@ -164,9 +164,11 @@ button { font: inherit; color: inherit; }
 /* ---- the loading screen: the bauhinia of the Hong Kong flag on its red field (favicon.svg);
    its five petals light one after the other, clockwise, while the City is built ---- */
 #loading {
-  position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  position: fixed; inset: 0; z-index: 100; display: grid; grid-template-rows: 1fr auto 1fr; justify-items: center;
   gap: 36px; padding: 24px; background: #ee1c25; color: #fff; text-align: center; transition: opacity 0.6s;
 }
+/* the flower in the middle row, thus in the middle of the screen; the name over it */
+.ld-name { align-self: end; }
 #loading[hidden] { display: none; }
 #loading.done { opacity: 0; pointer-events: none; }
 .ld-cn { font-family: var(--mono); font-weight: 600; font-size: 34px; letter-spacing: 0.3em; margin-right: -0.3em; }
@@ -179,20 +181,11 @@ button { font: inherit; color: inherit; }
 .ld-flower svg:nth-child(4) { animation-delay: -0.6s; }
 .ld-flower svg:nth-child(5) { animation-delay: -0.3s; }
 @keyframes ld-petal { 0%, 20% { opacity: 1; } 55%, 100% { opacity: 0.3; } }
-.ld-msg { position: relative; font-family: var(--pixel); font-size: 14px; letter-spacing: 0.12em; }
-.ld-dots { position: absolute; left: 100%; top: 0; white-space: nowrap; }
-.ld-dots i { font-style: normal; display: inline-block; opacity: 0; animation: 1.6s steps(1, end) infinite; will-change: opacity; }
-.ld-dots i:nth-child(1) { animation-name: ld-dot1; }
-.ld-dots i:nth-child(2) { animation-name: ld-dot2; }
-.ld-dots i:nth-child(3) { animation-name: ld-dot3; }
-@keyframes ld-dot1 { 0% { opacity: 0; } 25%, 100% { opacity: 1; } }
-@keyframes ld-dot2 { 0% { opacity: 0; } 50%, 100% { opacity: 1; } }
-@keyframes ld-dot3 { 0% { opacity: 0; } 75%, 100% { opacity: 1; } }
+.ld-msg { display: none; }
 #loading.failed .ld-flower svg { animation: none; opacity: 1; }
-#loading.failed .ld-dots { display: none; }
-#loading.failed .ld-msg { font-size: 11px; letter-spacing: 0.04em; max-width: min(520px, 90vw); line-height: 1.6; }
+#loading.failed .ld-msg { display: block; align-self: start; font-family: var(--pixel); font-size: 11px; letter-spacing: 0.04em; max-width: min(520px, 90vw); line-height: 1.6; }
 @media (prefers-reduced-motion: reduce) {
-  .ld-flower svg, .ld-dots i { animation: none; opacity: 1; }
+  .ld-flower svg { animation: none; opacity: 1; }
 }
 
 

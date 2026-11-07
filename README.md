@@ -197,7 +197,7 @@ deleted.
   `src/structureColors.js`, as the viewer does.
 - **Loading screen.** While the City is built, a red screen shows the name of the City and
   the white bauhinia of the Hong Kong flag (as `favicon.svg`). Its five petals light one
-  after the other, clockwise, over the word LOADING. Each petal is a box of its own, thus the
+  after the other, clockwise, as a spinner. Each petal is a box of its own, thus the
   browser can animate it while the script builds the City.
 - **Phone.** The phone layout starts on a narrow screen (720 px or less) or a low one (520 px
   or less: a phone on its side). A bar at the top gives the title, the time and one button,
