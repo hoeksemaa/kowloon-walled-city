@@ -209,7 +209,11 @@ export function planDay(p, dow, X) {
   const workDay = (w, keeper, sh) => {
     const what = X.workDoing(w, keeper);
     // a rush order went on past midnight: still at work, then a short night (p237)
-    if (dow > 0 && X.rush(w, dow - 1)) { at(0, w, 'still at work on a rush order (p237)'); at(J(H(2, 40), 25), home, 'asleep'); sh.t0 = Math.max(sh.t0, J(H(9, 30), 20)); }
+    if (dow > 0 && X.rush(w, dow - 1)) {
+      // the food workshops: "We often have to work overnight during these occasions" (p44)
+      if (w.cat === 'foodfac') { at(0, w, 'working through the night before the festival (pp44, 289)'); at(J(H(5, 30), 30), home, 'asleep, after the night of work'); sh.t0 = Math.max(sh.t0, J(H(11, 30), 30)); }
+      else { at(0, w, 'still at work on a rush order (p237)'); at(J(H(2, 40), 25), home, 'asleep'); sh.t0 = Math.max(sh.t0, J(H(9, 30), 20)); }
+    }
     at(sh.t0 - J(35, 10), home, 'breakfast');
     at(rubbishOut(sh.t0), w, what);
     if (sh.split) { at(sh.split[0], home, 'lunch at home, between the two surgeries'); at(sh.split[0] + J(45, 10), home, 'resting, between the two surgeries'); at(sh.split[1], w, what); }
