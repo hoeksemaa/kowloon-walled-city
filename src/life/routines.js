@@ -365,6 +365,8 @@ export function planDay(p, dow, X) {
       if (sat && r() < 0.5) { at((back = J(H(13, 45), 30)), home, 'home after a half day'); afternoon(back + J(40, 10)); }
       else if (r() < 0.15) { at((back = (F ? F.dinner : H(19, 20)) + J(70, 30)), home, 'home late from work: a late dinner'); }
       else at((back = (F ? F.dinner : H(19, 20)) - J(22, 12)), home, 'home from work');
+      // shopping on the way home: a resident of a high floor "每次回家前都會打電話給家人，看看還有
+      // 什麼食品或日用品東西需要購置" (陳先生, Wen Wei Po (文匯報), 7 October 2024)
       if (r() < 0.12) store(back + J(12, 4), 'at home');
       fetch(back + 5, 'at home');
       if (F && back < F.dinner) dinner();
@@ -453,6 +455,12 @@ export function planDay(p, dow, X) {
       // home" (p88); plastic products packed in the corridors (p176). The share is INFERRED.
       const outwork = !!F?.outwork;
       at(J(H(13, 15), 10), home, outwork ? 'outwork at home: packing for a workshop of the City (pp88, 176)' : 'housework');
+      // part-time work at a food workshop near home: "A few neighbours - ladies - help me with the
+      // fish dumplings" (Lam Leung Po (林良寶), p292); "Bundled up against the chill of a Hong Kong
+      // winter and the workshop's air-conditioning, female part-time workers prepare minced fish
+      // dumplings" (p293). Which women, and the hours, are INFERRED.
+      const ff = F?.partTime && X.foodNear?.(p.home, p.hh);
+      if (ff && !dz) { const t1 = J(H(13, 25), 10), t2 = J(H(16, 25), 15); at(t1, ff, 'part-time work at a food workshop near home, in a coat against the winter chill (pp292-293)'); at(t2, home, 'housework'); block(t1, t2); }
       fill();
       if (fetchAt >= H(12, 0)) fetch(fetchAt, outwork ? 'outwork at home: packing for a workshop of the City (pp88, 176)' : 'housework');
       if (dz) {
@@ -490,6 +498,7 @@ export function planDay(p, dow, X) {
       else if (q < 0.12 && !takes && !minds) { const s0 = J(H(6, 15), 20); t = J(H(9, 15), 40); at(s0, OUT('at a tea house outside the City'), 'at a tea house outside the City'); at(t, home, 'resting'); block(s0, t); }
       // "Her daily routine would take her to the adjoining park" (Law Yu Yi, p80)
       else if (q < 0.25 && !takes && !minds) { const s0 = J(H(6, 45), 25); t = J(H(8, 30), 30); at(s0, OUT('in the park next to the City'), 'in the park next to the City (p80)'); at(t, home, 'resting'); block(s0, t); }
+      // a top-floor tenant: "可以上天臺做運動" (袁家倫, Epoch Times (大紀元時報), 5 May 2024); the hour is INFERRED
       else if (q < 0.33) { const s0 = J(H(6, 15), 20); t = J(H(7, 15), 20); at(s0, roof(), 'morning exercise on the roof'); at(t, home, care); block(s0, t); }
       else at((t = J(H(7, 15), 20)), home, minds ? care : 'at home');
       // "a small family shrine, which was regularly blessed with fresh offerings of food and
@@ -783,6 +792,8 @@ export function planHouse(h, mem, dow, X) {
   F.familyWork = (mem.find((m) => (m.role === 'worker_in' || m.role === 'shopkeeper') && m.work && (m.work.cat === 'foodfac' || m.work.cat === 'shop' || m.work.cat === 'eating')) || {}).work || null;
   // outwork at home (p88): about 3 homemakers in 10 (INFERRED)
   F.outwork = !!mum && r() < 0.3;
+  // part-time work at a food workshop (pp292-293): about 1 homemaker in 10 of the others (INFERRED)
+  F.partTime = !!mum && !F.outwork && r() < 0.1;
   // A family workshop: "A workplace during the day became a living room at night" (p173). Its
   // maker: "We have a flat up above but we cook and take our showers here, and my kids do their
   // homework here too" (Hui Tung Choy (許東財), p173). A maker of wooden rulers: "I have to stay

@@ -145,7 +145,7 @@ export class Life {
     const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
     // The stores of the City: each home goes to the nearest one (one search, as for the standpipes).
     this.trees.stores = places.shops.length ? nav.tree(places.shops.map((q) => q.node)) : null;
-    const storeAt = new Map(places.shops.map((q) => [q.node, q])), storeOf = new Map();
+    const storeAt = new Map(places.shops.map((q) => [q.node, q])), storeOf = new Map(), foodOf = new Map();
     const houseMemo = new Map();
     // the lanes of the named streets: the main streets of the police beats
     const streetNodes = [];
@@ -211,6 +211,16 @@ export class Life {
       pipeFor: (pl) => nearest(this.pipeTree, pipeAt, pipeOf, pl),
       refuseFor: (pl) => nearest(this.trees.refuse, refuseAt, refuseOf, pl),
       storeFor: (pl) => nearest(this.trees.stores, storeAt, storeOf, pl),
+      // one of the three food workshops nearest a home (straight, between the buildings); i picks one
+      foodNear: (pl, i = 0) => {
+        if (!pl || pl.b === undefined || !places.foodfacs.length) return null;
+        if (!foodOf.has(pl.b)) {
+          const B = S.list[pl.b], d = (q) => { const C = S.list[q.b]; return Math.hypot(C.cx - B.cx, C.cz - B.cz); };
+          foodOf.set(pl.b, places.foodfacs.map((q) => [d(q), q]).sort((a, b) => a[0] - b[0]).slice(0, 3).map((e) => e[1]));
+        }
+        const L = foodOf.get(pl.b);
+        return L[i % L.length];
+      },
       // The household of person p on day dow (routines.js planHouse), kept for the day.
       house: (p, dow) => {
         const key = dow * 1e6 + p.hh;
