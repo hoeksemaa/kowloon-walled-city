@@ -348,7 +348,7 @@ export function planDay(p, dow, X) {
         break;
       }
       const pm = !sat && p.age < 12 && p.seed >= 0.5; // the afternoon session
-      at(J(H(6, 50), 10), home, pm ? 'breakfast' : 'getting ready for school');
+      at(sat ? J(H(7, 5), 8) : J(H(6, 55), 8), home, pm ? 'breakfast' : 'getting ready for school');
       const school = OUT('at school');
       // Children wrap the candies of the candy workshop after school, at tables in the alley
       // (p77); teenagers "come and go", for half an hour or more, and the wrapping goes on until
@@ -496,7 +496,7 @@ export function planDay(p, dow, X) {
     case 'carrier': {
       // A water carrier: drinking water from the nearest standpipe up the stairs to the homes
       // that pay for it (pp108, 249). The clients, the rounds and the hours are INFERRED.
-      if (sun && r() < 0.5) { at(J(H(8, 0), 40), home, 'Sunday at home'); dinner(); at(J(H(22, 30), 30), home, 'asleep'); break; }
+      if (sun && r() < 0.5) { at(J(H(8, 0), 40), home, 'Sunday at home'); dinner(); evening(); at(J(H(22, 30), 30), home, 'asleep'); break; }
       at(J(H(6, 0), 15), home, 'breakfast');
       let t = J(H(6, 45), 10);
       const list = (p.clients || []).filter((c) => (c + dow) % 2 === 0);
@@ -918,6 +918,16 @@ export function planDay(p, dow, X) {
       // shuttered the shop and went to bed" (p94)
       if (p.work === home && F.lived !== 'dentist' && F.lived !== 'clinic') for (const e of ev) if (/^home(,| from work)/.test(e[2])) e[2] = 'the shop stays open: the family lives in it (p94)';
     }
+  }
+  // A breakfast or a lunch is not hours long: after it, the thing before it goes on (at work), or
+  // the person is at home.
+  for (let j = 0; p.role !== 'real' && j < ev.length; j++) {
+    const m = ev[j];
+    if (!/^(breakfast|lunch|lunch at work|lunch in the shop|lunch at the workbench|lunch at home)$/.test(m[2])) continue;
+    const end = j + 1 < ev.length ? ev[j + 1][0] : 1440, len = m[2] === 'breakfast' ? 35 : 45;
+    if (end - m[0] <= len + 60) continue;
+    const prev = j > 0 && ev[j - 1][1] === m[1] ? ev[j - 1][2] : null;
+    ev.splice(j + 1, 0, [m[0] + len, m[1], prev && !/^asleep|^up early/.test(prev) ? prev : m[1] === home ? 'at home' : 'at work', m[3]]);
   }
   // A dinner at home is not cut short: a later thing at home in its first 25 minutes waits
   // until after it.
