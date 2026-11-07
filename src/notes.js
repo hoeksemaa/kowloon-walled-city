@@ -85,7 +85,8 @@ families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); fam
 (pp94, 245) or spend the evening in their workshop (p173); a workshop guarded at night (p169). The stores, busiest from
 5 to 9 pm (p93), and the small stores of the upper floors (p175); the park (p80); the Yamen courtyard (p299); the
 Salvation Army (救世軍) chapel (p301); the Tin Hau Temple (天后廟) (p15); the orchestra (p15); the kindergarten outings
-(p300); the daily-rate helpers (p44); the taxi drivers at the cafés (p294).</p>
+(p300); the daily-rate helpers (p44); the taxi drivers at the cafés (p294); the porters with sacks of flour and delivery
+trolleys (pp176, 249).</p>
 <p><span class="st prov">INFERRED</span>The other hours, the nights of the rush orders, the tea houses, the morning
 exercise on the roofs, and the share of the people who do each thing.</p>
 <p><span class="st prov">INFERRED</span>The roles, households, homes, workplaces and hours of the crowd, who have

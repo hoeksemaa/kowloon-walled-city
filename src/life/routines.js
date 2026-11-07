@@ -630,6 +630,32 @@ export function planDay(p, dow, X) {
       if (r() < 0.5) { const t = J(H(22, 20), 60); at(t, c, 'a taxi driver at supper in a café, the cab at the kerb (p294)'); at(t + J(30, 10), road, road.what); }
       break;
     }
+    case 'porter': {
+      // "Business carried on regardless, and men carrying sacks of flour ... were an everyday
+      // sight" (p249); the alleys were "an obstacle course of delivery trolleys" (p249), and the
+      // products of a plastics factory were "packaged for delivery" in a corridor (p176). The
+      // loads, the hours and the days are INFERRED: flour in to the food workshops in the
+      // morning, goods out of the workshops in the afternoon, Monday to Saturday.
+      if (sun || !X.places.foodfacs.length) break;
+      const road = OUT('at the lorry on the road');
+      let t = J(H(7, 0), 30);
+      at(t - 5, road, road.what);
+      for (; t < H(11, 40); t += 20 + r() * 10) {
+        const w = X.places.foodfacs[Math.floor(r() * X.places.foodfacs.length)];
+        at(t, w, 'carrying a sack of flour in from the road to a food workshop (p249)');
+        at(t + 9 + r() * 4, road, 'back to the lorry for the next sack');
+      }
+      at(t, home, 'a meal and a rest, outside the City');
+      if (!sat && X.places.makers.length) {
+        for (t = J(H(14, 0), 30); t < H(17, 30); t += 22 + r() * 10) {
+          const w = X.places.makers[Math.floor(r() * X.places.makers.length)];
+          at(t, w, 'collecting the goods of a workshop, packed for delivery (p176)');
+          at(t + 9 + r() * 4, road, 'carrying the goods out to the road on a delivery trolley (p249)');
+        }
+        at(t, home, home.what);
+      }
+      break;
+    }
     case 'real': realDay(p, dow, X, at, r); break;
     default: at(J(H(7, 0), 30), home, 'at home');
   }

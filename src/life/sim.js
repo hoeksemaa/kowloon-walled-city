@@ -61,6 +61,7 @@ export class Life {
       eating: units((r) => r.cat === 'eating'),
       shops: units((r) => r.cat === 'shop').map((q) => ({ ...q, tree: 'stores' })),
       foodfacs: units((r) => r.cat === 'foodfac'),
+      makers: units((r) => r.cat === 'plastics' || r.cat === 'metal' || r.cat === 'garment' || r.cat === 'works'),
       tinHau: P('54:0:0'), music: P('157:3:0'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
