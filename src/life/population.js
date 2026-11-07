@@ -150,6 +150,7 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
   // The homes of the real people (data/routines.json) take no household of the crowd: the
   // sources say who lived there.
   const realHomes = new Set(Object.values(routines?.people || {}).map((R) => R.home).filter(Boolean));
+  const realKeys = new Set(Object.values(routines?.people || {}).flatMap((R) => [R.home, R.work, ...Object.values(R.places || {})]).filter(Boolean));
   const homes = [], works = [];
   for (const [key, r] of uses.at) {
     if (r.cat === 'home' && realHomes.has(key)) continue;
@@ -161,8 +162,22 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     else works.push(p);
   }
 
+  // ---- the families who live in their shop ----
+  // "Just a simple partition separated Lee Pui Yuen's store from a small living area at the back
+  // of the shop, where Lee slept with his wife and son" (Lee Pui Yuen (李培元), p94); a dentist,
+  // his wife and three children: "We have to sleep on the floor" of the clinic (Cheng Koon Yiu
+  // (鄭冠耀), p245). How many families did so is INFERRED: about 1 in 5 of the shops, eating
+  // houses and clinics of 8 m² or more, not those of the real people. The family is a family
+  // or a couple, and one of them keeps the shop.
+  const LIVED = new Set(['shop', 'eating', 'medicine', 'dentist', 'clinic']);
+  for (const w of works) {
+    if (!LIVED.has(w.cat) || realKeys.has(w.key) || w.k >= S.list[w.b].n || w.area < 8 || rng() >= 0.2) continue;
+    w.lived = true;
+    homes.push(w);
+  }
+
   // ---- the households: their sizes follow the floor area of the flat ----
-  let want = homes.map((h) => Math.min(9, Math.max(1, h.area / 6)));
+  let want = homes.map((h) => (h.lived ? Math.min(5, Math.max(2, h.area / 8)) : Math.min(9, Math.max(1, h.area / 6))));
   const scale = RESIDENTS / want.reduce((s, v) => s + v, 0);
   const sizes = want.map((v) => Math.max(1, Math.round(v * scale + (rng() - 0.5))));
   let total = sizes.reduce((s, v) => s + v, 0);
@@ -170,18 +185,39 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     const i = Math.floor(rng() * sizes.length);
     if (total > RESIDENTS && sizes[i] > 1) { sizes[i]--; total--; } else if (total < RESIDENTS && sizes[i] < 10) { sizes[i]++; total++; }
   }
+  // ---- the lodgers ----
+  // "about 10 000 families will be cleared from the walled city" (Legislative Council (立法局),
+  // 18 February 1987), from "8800 separate apartments" (p340): some flats held two households.
+  // A mother: "I rented one of the rooms, with a window, out for a while - for $35 a month"
+  // (Chung Lo Ying, p157). Which flats, and who the
+  // lodgers are, is INFERRED: a second household in about 1 flat in 7, in the flats of the larger
+  // households; the lodgers are 1, 2 or 3 people.
+  const flats = homes.filter((h) => !h.lived).length, extra = Math.round(flats * (10000 / 8800 - 1));
+  const cand = homes.map((h, i) => ({ i, key: sizes[i] + rng() * 3 })).filter((c) => !homes[c.i].lived && sizes[c.i] >= 4).sort((a, b) => b.key - a.key);
+  const lodge = new Map();
+  for (const { i } of cand.slice(0, extra)) {
+    const q = rng(), n = Math.min(sizes[i] - 2, q < 0.5 ? 1 : q < 0.85 ? 2 : 3);
+    lodge.set(i, n);
+    sizes[i] -= n;
+  }
   // The members of each household: a family, a couple, old people, workers who share a flat,
   // or one person alone (makeHousehold). The roles follow from the members.
   const households = [];
-  homes.forEach((home, h) => {
-    const hr = mulberry32(Math.floor(rng() * 4294967296));
-    const members = makeHousehold(sizes[h], hr);
-    const hh = { id: h, home, kind: members.kind, members: [], seed: hr() };
+  const addHousehold = (home, n) => {
+    const hr = mulberry32(Math.floor(rng() * 4294967296)), id = households.length;
+    let members = makeHousehold(n, hr);
+    for (let t = 0; home.lived && members.kind !== 'family' && members.kind !== 'couple' && t < 20; t++) members = makeHousehold(n, hr);
+    const hh = { id, home, kind: members.kind, members: [], seed: hr() };
     for (const M of members) {
       hh.members.push(persons.length);
-      persons.push({ id: persons.length, kind: 'resident', role: M.role, age: M.age, sex: M.sex, rel: M.rel, home, hh: h, seed: rng() });
+      persons.push({ id: persons.length, kind: 'resident', role: M.role, age: M.age, sex: M.sex, rel: M.rel, home, hh: id, seed: rng() });
     }
     households.push(hh);
+    return hh;
+  };
+  homes.forEach((home, i) => {
+    const main = addHousehold(home, sizes[i]);
+    if (lodge.has(i)) { const L = addHousehold(home, lodge.get(i)); L.host = main.id; main.lodger = L.id; }
   });
 
   // ---- the water carriers ----
@@ -233,9 +269,15 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
   // the City joins the family's workplace (7 in 10, INFERRED), as a keeper of a shop or a hand.
   for (const h of households) {
     let fam = null;
+    // a family that lives in its shop keeps it
+    if (h.home.lived) {
+      const mem = h.members.map((i) => persons[i]);
+      const k = mem.find((p) => p.role === 'shopkeeper' || p.role === 'worker_in') || mem.find((p) => p.role === 'worker_out' || p.role === 'homemaker') || mem.find((p) => p.role === 'elder');
+      if (k) { k.role = 'shopkeeper'; k.work = h.home; h.home.free--; h.home.owner = k.id; fam = h.home; }
+    }
     for (const i of h.members) {
       const p = persons[i];
-      if (p.role !== 'shopkeeper' && p.role !== 'worker_in') continue;
+      if (p.work || (p.role !== 'shopkeeper' && p.role !== 'worker_in')) continue;
       if (fam && h.kind !== 'sharers' && rng() < 0.7) {
         p.work = fam; fam.free--;
         p.role = KEEPER.has(fam.cat) ? 'shopkeeper' : 'worker_in';
@@ -243,6 +285,7 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
       }
       p.work = p.role === 'shopkeeper' ? popSeat(keeperSeats) || popSeat(handSeats) : popSeat(handSeats) || popSeat(keeperSeats);
       if (!p.work) p.role = 'worker_out';
+      else if (p.work.owner === undefined) p.work.owner = p.id; // the first resident in it owns it (INFERRED)
       else if (!fam) fam = p.work;
     }
   }

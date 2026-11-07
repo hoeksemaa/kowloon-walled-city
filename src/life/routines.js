@@ -17,6 +17,8 @@ import { mulberry32 } from '../util.js';
 
 export const DAYS = ['Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon'];
 export const SAT = 4, SUN = 5, DONGZHI = 6;
+// The trades of the workshops (not the shops)
+const HAND = new Set(['foodfac', 'plastics', 'metal', 'garment', 'works']);
 const H = (h, m = 0) => h * 60 + m;
 const clampM = (t) => Math.max(1, Math.min(1438, Math.round(t)));
 export const OUT = (what) => ({ kind: 'out', what });
@@ -78,7 +80,7 @@ export function planDay(p, dow, X) {
   const dinner = (old = false) => {
     if (!F) return;
     if (F.members > 1) {
-      at(F.dinner, home, F.kind === 'sharers' ? 'dinner with the others of the flat' : 'dinner with the family');
+      at(F.dinner, home, F.kind === 'sharers' || F.kind === 'old women' ? 'dinner with the others of the flat' : F.kind === 'family' ? 'dinner with the family' : 'dinner together');
       if (F.rubbish?.who === p.id && F.rubbish.how === 'throw') {
         const t = F.dinner + J(30, 5);
         at(t, home, 'throwing the rubbish out of the window, into the gap between the buildings (pp103, 209)');
@@ -483,6 +485,7 @@ export function planDay(p, dow, X) {
         const nb = X.neighbour(p.home, r);
         if (nb) visit(H(14, 30), H(17, 30), nb, 'playing mahjong at a neighbour’s flat (p15)', 'resting');
       } else if (!room && p.sex === 'f' && r() < 0.05 && X.places.temple) visit(H(10, 0), H(10, 25), X.places.temple, 'incense at the Fuk Tak shrine (福德古廟) (p32)', 'resting');
+      if (!takes && !busy(H(11, 45), H(13, 0))) { const t1 = J(H(12, 15), 15); at(t1, home, F?.small ? 'lunch with the grandchildren' : 'lunch'); at(t1 + J(40, 8), home, minds ? care : 'an afternoon nap'); if (!minds) at(t1 + J(130, 20), home, 'resting'); block(t1, t1 + 40); }
       fetch(r() < 0.6 ? J(H(10, 0), 70) : J(H(15, 45), 60), care);
       if (outing()) {}
       if (dz) { dongzhi(18); break; }
@@ -578,11 +581,40 @@ export function planDay(p, dow, X) {
     default: at(J(H(7, 0), 30), home, 'at home');
   }
   ev.sort((a, b) => a[0] - b[0]);
+  if (F && p.home && p.role !== 'real') {
+    // the evenings in the family workshop (p173): from the cooking of dinner until the family
+    // goes up to the flat for the night, the time at home is spent in the workshop
+    if (F.evenWork) {
+      const w = F.evenWork, a = F.dinner - 80, b = F.evenBack;
+      let slept = false;
+      for (const e of ev) {
+        if (e[1] !== home || e[0] < a || e[0] >= b) continue;
+        if (/^asleep/.test(e[2])) { slept = true; continue; }
+        e[1] = w;
+        if (/^homework/.test(e[2])) e[2] = 'homework on the workbench of the family workshop (p173)';
+        else if (/^dinner/.test(e[2])) e[2] = 'dinner in the family workshop: the family cooks there (p173)';
+        else if (/^cooking dinner/.test(e[2])) e[2] = 'cooking dinner in the family workshop (p173)';
+        else if (/^(home from work|the evening at home|at home$)/.test(e[2])) e[2] = 'the evening in the family workshop (p173)';
+      }
+      // the one at work there is already in it
+      const last = ev.filter((e) => e[0] < b).pop();
+      if (!slept && last && last[1] === w) { ev.push([clampM(b), home, 'up to the flat for the night (p173)']); ev.sort((x, y) => x[0] - y[0]); }
+    }
+    // the night in the workshop, to guard it (p169)
+    if (F.guard === p.id && p.work) for (const e of ev) if (e[2] === 'asleep' && e[1] === home) { e[1] = p.work; e[2] = 'asleep in the workshop, to guard it from the drug addicts (p169)'; }
+    // a family that lives in its shop (p94) or its clinic (p245)
+    if (F.lived) {
+      for (const e of ev) if (e[2] === 'asleep' && e[1] === home) e[2] = F.lived === 'dentist' || F.lived === 'clinic' ? 'asleep on the floor of the clinic (p245)' : 'asleep in the small living area at the back of the shop (p94)';
+      // "the business effectively remained open until Lee and his wife turned off the television,
+      // shuttered the shop and went to bed" (p94)
+      if (p.work === home && F.lived !== 'dentist' && F.lived !== 'clinic') for (const e of ev) if (/^home(,| from work)/.test(e[2])) e[2] = 'the shop stays open: the family lives in it (p94)';
+    }
+  }
   // The night's sleep comes after the last thing of the evening (a game of mahjong that runs
   // late, a chat in the lane).
   if (p.role !== 'real') {
     let k = -1;
-    for (let j = ev.length - 1; j >= 0; j--) if (ev[j][2] === 'asleep' && ev[j][0] >= H(19, 0)) { k = j; break; }
+    for (let j = ev.length - 1; j >= 0; j--) if (/^asleep/.test(ev[j][2]) && ev[j][0] >= H(19, 0)) { k = j; break; }
     if (k >= 0 && k < ev.length - 1) {
       const [sl] = ev.splice(k, 1);
       sl[0] = clampM(Math.max(sl[0], ev[ev.length - 1][0] + J(20, 5)));
@@ -631,6 +663,19 @@ export function planHouse(h, mem, dow, X) {
   F.familyWork = (mem.find((m) => (m.role === 'worker_in' || m.role === 'shopkeeper') && m.work && (m.work.cat === 'foodfac' || m.work.cat === 'shop' || m.work.cat === 'eating')) || {}).work || null;
   // outwork at home (p88): about 3 homemakers in 10 (INFERRED)
   F.outwork = !!mum && r() < 0.3;
+  // A family workshop: "A workplace during the day became a living room at night" (p173). Its
+  // maker: "We have a flat up above but we cook and take our showers here, and my kids do their
+  // homework here too" (Hui Tung Choy (許東財), p173). A maker of wooden rulers: "I have to stay
+  // here at night otherwise the drug addicts would steal everything" (Cheng San (鄭山), p169).
+  // Which families do so is INFERRED: 3 in 10 of the families with a workshop and children
+  // spend the evenings there, Monday to Saturday; 1 in 10 of the men who own a workshop sleeps
+  // there. The owner of a workshop is the first resident who works in it (population.js).
+  const hand = !h.home.lived && mem.find((m) => m.role === 'worker_in' && m.work && m.work.owner === m.id && HAND.has(m.work.cat));
+  const hs = (h.seed * 7919) % 1;
+  if (hand && hs < 0.3 && mem.some((m) => m.role === 'child' || (m.role === 'student' && m.age < 15))) {
+    if (!sun && !dz) { F.evenWork = hand.work; F.evenBack = J(H(21, 40), 20); }
+  } else if (hand && hand.sex === 'm' && hs >= 0.3 && hs < 0.4) F.guard = hand.id;
+  F.lived = h.home.lived ? h.home.cat : null;
   // a grandparent collects the young schoolchildren of the morning session (p54) when there is
   // no homemaker
   F.pickup = !mum && old && !sat && !sun && mem.some((m) => m.role === 'student' && m.age < 12 && m.seed < 0.5) ? J(H(12, 50), 8) : 0;

@@ -215,7 +215,11 @@ them: the City peels to their storey when they go in.
 
 The crowd lives in households: families (parents, children and, in a big household, a
 grandparent), couples, old couples, old women who share a flat (p178), workers who share a
-room (p289), and people alone. A household
+room (p289), and people alone. About 10,000 families lived in 8,800 flats (Legislative Council
+(立法局), 18 February 1987; p340): here about 1 flat in 7 holds a lodger household that rents a
+room (p157). A few families live in their shop (p94) or sleep on the floor of their clinic
+(p245). Some families spend the evening in their workshop and sleep in the flat (p173), and some
+owners sleep in the workshop to guard it (p169). The shares are INFERRED. A household
 eats dinner together, goes out together on Sunday, and shares its water. The well water comes
 to each floor at set hours: in some blocks all day (p113), in many after the noon and the
 midnight pump runs (p107), in others by floors, low floors first (林羅平, HK01). Someone at home
