@@ -290,6 +290,11 @@ day, most on a free afternoon. Women wash the clothes in the well water of the p
 the Walled City", ask the pigeon keeper the way (Chan Kwan Leung (陳昆亮), p319). Who is near, how
 often, and the hours are INFERRED.
 
+The patients of the City's doctors "come from both inside and outside the City, though mostly
+from outside", often on "a recommendation by their friends or relatives" (Tsin Mu Lam (錢茂林),
+pp186-187). About 300 residents a day, most of them old, see a doctor or a dentist near home, in
+the hours of the clinics (pp187, 245). How many and when is INFERRED.
+
 "A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
 in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
 corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for
