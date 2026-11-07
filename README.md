@@ -233,7 +233,11 @@ flat shows who lives there.
 
 At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
 most flats in the evening, a few after midnight when the water comes, many again before dawn.
-The corridors and the stairs stay dark (p98).
+The flats have tungsten bulbs and the corridors fluorescent tubes (Girard and Lambot to HK01);
+a corridor is lit here and there (INFERRED). "The Walled City was often hit by power cuts"
+(Lam Po Chun (林寶鎮), p145), and houses shared one cable (p44): on some evenings a few
+buildings near each other go dark for half an hour or more. When, and for how long, is
+INFERRED.
 
 The rooms and the roofs hold the things of `data/furnishings.json` (`docs/furnishings.md`):
 the recipe of each kind of room comes from the photos and the texts of the sources, and a

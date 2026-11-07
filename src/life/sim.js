@@ -203,6 +203,37 @@ export class Life {
     };
   }
 
+  // The power cuts of day `day`: "the Walled City was often hit by power cuts" (Lam Po Chun
+  // (林寶鎮), p145), and houses shared one cable (p44). The rate, the hours and the size are INFERRED: on about
+  // half the evenings one cut (some evenings two), each of 25 to 60 minutes, in a building and
+  // up to five more within 15 m of it. [{ bs: Set of buildings, t0, t1 }]
+  cutsOf(day) {
+    this.cutMemo = this.cutMemo || new Map();
+    let list = this.cutMemo.get(day);
+    if (!list) {
+      const r = mulberry32(9137 + day * 613), S = this.S;
+      list = [];
+      const n = r() < 0.5 ? 0 : r() < 0.7 ? 1 : 2;
+      for (let q = 0; q < n; q++) {
+        const B = S.list[Math.floor(r() * S.list.length)];
+        const near = S.list.filter((c) => c !== B && Math.hypot(c.cx - B.cx, c.cz - B.cz) < 15).sort(() => r() - 0.5).slice(0, 5);
+        const t0 = Math.round(18 * 60 + r() * 300);
+        list.push({ bs: new Set([B.id, ...near.map((c) => c.id)]), t0, t1: t0 + 25 + Math.round(r() * 35) });
+      }
+      this.cutMemo.set(day, list);
+    }
+    return list;
+  }
+
+  // The buildings without power now (a Set), or null.
+  cutsNow() {
+    if (this.day < 0) return null;
+    const m = this.lastW - this.day * 1440;
+    let out = null;
+    for (const c of this.cutsOf(this.day)) if (m >= c.t0 && m < c.t1) { out = out || new Set(); for (const b of c.bs) out.add(b); }
+    return out;
+  }
+
   // The unit object of a place, with its cells.
   unitOf(pl) {
     const key = pl.key;

@@ -117,7 +117,7 @@ async function init() {
   life = new Life(S, uses, pop, { nav, utilities: D.utilities });
   figures = new Figures(life, layers);
   // the lit windows at night: a window glows where someone is awake in the room behind it
-  windows = new LitWindows(S, life);
+  windows = new LitWindows(S, life, uses);
   scene.add(windows.mesh);
   // the ten mysteries (data/mysteries.json)
   cases = new Casebook(D.mysteries, D.people, uses, life);
@@ -253,11 +253,12 @@ function showCase(c) {
 // The things and the people of the selected room (or roof) for its panel.
 function roomExtra() {
   const R = state.selRoom;
-  if (!R) return '';
+  const cut = state.sel >= 0 && life.cutsNow()?.has(state.sel) ? '<div class="sub">A power cut: the lights of this building are out. "The Walled City was often hit by power cuts" (Lam Po Chun (林寶鎮), p145), and houses shared one cable (p44). When, and for how long, is INFERRED.</div>' : '';
+  if (!R) return cut;
   const B = S.list[state.sel], key = R.roof ? `roof:${B.id}` : R.out ? `out:${B.id}` : `${B.id}:${R.k}:${R.u}`;
   let html = R.roof ? `<h3>THE ROOF OF ${esc(B.label).toUpperCase()}</h3>` : '';
   html += thingsHtml(furnish, key, state.thing, esc);
-  html += homeHtml(life, pop, key, life.day);
+  html = cut + html + homeHtml(life, pop, key, life.day);
   // a standpipe by the building (out:b): the people at it now
   const pipes = R.out ? life.pipes.filter((q) => q.b === B.id).map((q) => q.key) : [];
   const here = [];
