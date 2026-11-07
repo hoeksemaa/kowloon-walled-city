@@ -23,7 +23,7 @@ source gives is marked inferred.</p>
 
 <h4>The tools</h4>
 <ul>
-  <li><span class="st ok">E</span>Pull the floors apart: all the G/F floors in one layer, all the 1/F
+  <li><span class="st ok">FLOORS</span>Pull the floors apart (key E): all the G/F floors in one layer, all the 1/F
     floors in the next, and so on. Each floor keeps its true place in its layer, thus the G/F of a
     building up the slope can stand higher than the 1/F of a building lower down. A roof goes with
     the layer of the floor over it. A dark plate lies in the gap under each layer.</li>
@@ -32,9 +32,10 @@ source gives is marked inferred.</p>
     peel cuts nothing. Thus every room of that storey shows from above.</li>
   <li><span class="st ok">CLICK</span>A building: its storeys, heights, stairs and links, and the
     use of its rooms in December 1986. A room of an open floor: its use and its sources.</li>
-  <li><span class="st ok">MENU</span>The button MENU (key M) opens the clock, the floors, the
-    storeys, the mysteries and these notes. On a phone, drag to turn the City, pinch to zoom, and
-    move two fingers to pan. Tap a building or a person.</li>
+  <li><span class="st ok">TOOLS</span>The menu button at the top right (key M) opens four tools,
+    as icons: the time (a clock), the floors (a stack of layers), the mysteries (a magnifying glass) and
+    these notes (a book). Each tool opens its own sheet. On a phone, drag to turn the City, pinch to
+    zoom, and move two fingers to pan. Tap a building or a person.</li>
 </ul>
 
 <h4>From primary sources</h4>
@@ -108,7 +109,7 @@ standpipe in the City (p106), a meter for each unit, and the 200 public lights l
 <p><span class="st ok">SOURCED</span>The weather of each day of the week (data/weather.json): the daily data of the
 Hong Kong Observatory (香港天文台) for 15 to 21 December 1986. A sunny Monday (9.3 hours of sun, 18.6 to 21.6 °C);
 grey from Tuesday to Thursday (no sun at all on Wednesday and Thursday, 1.3 mm of rain on Thursday); then a cold,
-dry, sunny spell: 10.1 °C on Friday morning, the coldest of the month. The menu gives the weather of the day.
+dry, sunny spell: 10.1 °C on Friday morning, the coldest of the month. The tool of the time gives the weather of the day.
 <span class="st prov">INFERRED</span>The cloud of the sky comes from the hours of sun, the same all day. Fewer
 people go up to the roofs on the wet day and on a day under 12 °C, and on the wet day the washing dries in the
 corridor.</p>

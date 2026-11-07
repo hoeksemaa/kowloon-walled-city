@@ -163,7 +163,7 @@ deleted.
   middle of each gap lies a dark see-through plate with a light edge, as in the old app: each
   layer shows through the plate over it. The name of each layer lies on the west edge of the
   plate under it (G/F on the ground).
-- **Peel to a storey.** Click a storey in the menu, or use the arrow keys. All
+- **Peel to a storey.** Click a storey in the tool of the floors, or use the arrow keys. All
   the floors over that storey go, with all the roofs over it and all that is on them. The
   walls of that storey stay whole, to the slab of the next floor: the peel cuts nothing, it
   only takes the layers over the storey away. Thus every room of that storey shows from
@@ -200,13 +200,17 @@ deleted.
   after the other, clockwise, as a spinner. Each petal is a box of its own, thus the
   browser can animate it while the script builds the City.
 - **Layout, mobile first.** The app has one design, for the phone first (`src/style.css`). A
-  bar at the top gives the title, the date and time, and one button, MENU (key M). The menu
-  holds the clock, the tool that pulls the floors apart, the storeys, the mysteries and the
-  sources. The menu, the selected building or person, the mysteries and the sources are
-  sheets. On a phone, a sheet comes up from the foot of the screen. A wide screen (more than
-  720 px, or a phone on its side) gives the same design more room. The bar is on one row,
-  each sheet stands at the right under the bar, and the storeys need no scroll. When a sheet
-  is open, the view moves, thus the City stays in the part of the screen that shows.
+  title box at the top left gives the name of the City, the date and the time. The menu
+  button at the top right is an icon only (key M). It opens the tools: a column of four icons,
+  with no words, that comes down from it. A tap off the icons closes the column. Each tool
+  opens its own sheet: the time (the weather, the day and the speeds), the floors (pull them
+  apart, and peel the City to one storey), the mysteries, and the sources and notes. The
+  title box is never wider than the space to the left of the menu button, thus the two never
+  meet. The selected building or person also has a sheet. On a phone, a sheet comes up from
+  the foot of the screen. A wide screen (more than 720 px, or a phone on its side) gives the
+  same design more room: larger text and buttons, each sheet a card at the right under the
+  menu button, and the storeys with no scroll. When a sheet is open, the view moves, thus the
+  City stays in the part of the screen that shows.
 - **Touch.** Drag to turn the City, pinch to zoom, and move two fingers to pan. A tap
   selects, but a gesture of two fingers never selects. A finger shows no tooltip.
 
@@ -378,7 +382,7 @@ Observatory headquarters, and the sunshine of King's Park (京士柏).
 | Sat 20 | 11.7–16.6 | 0 | 9.2 | 64% |
 | Sun 21 | 13.0–19.5 | 0 | 9.5 | 66% |
 
-The menu gives the weather of the day. The hours of sun set the cloud of the sky
+The tool of the time gives the weather of the day. The hours of sun set the cloud of the sky
 (`Lighting.setCloud` in `src/env.js`): on a grey day the sun is weak, the shadows are faint and
 the sky is grey. The same cloud all day is INFERRED, and the app draws no rain. The effects on
 life are INFERRED (`roofWeather` and `wet` in `src/life/sim.js`). On the wet Thursday, half of
@@ -387,7 +391,7 @@ Friday and Saturday (a minimum under 12 °C), 3 in 10 of them do not happen.
 
 ### The mysteries
 
-The MYSTERIES button (in the menu) opens ten cases of `data/mysteries.json`:
+The tool of the mysteries (the magnifying glass) opens ten cases of `data/mysteries.json`:
 ten real people of the week to find, from easy (1) to hard (10). Each case gives five clues,
 one at a time; the last clue helps a lot but does not give the answer. Click the person in
 the City (for case 10, the room) to solve the case: its circle is checked, and its story opens.

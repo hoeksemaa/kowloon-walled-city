@@ -1,6 +1,6 @@
 /* The main app (index.html). Mobile first: the base rules are the design for a phone. A wide
-   screen (the end of this file) only gives it more room: the bar on one row, and the sheets at
-   the right of the screen, under the bar. */
+   screen (the end of this file) only gives it more room: larger text and buttons, and the
+   sheets at the right of the screen. */
 :root {
   --fog: #c9c7c0;
   --panel: #e9e4d5;
@@ -18,6 +18,12 @@
   /* The one font of the app (John, 2026-11-07): Silkscreen, the blocky pixel font, and no other.
      sans-serif only gives the glyphs that Silkscreen does not have, such as the Chinese. */
   --pixel: 'Silkscreen', sans-serif;
+  /* the space from the edges of the screen, the size of an icon button, and the corners */
+  --edge: 10px;
+  --btn: 46px;
+  --top: calc(env(safe-area-inset-top) + var(--edge));
+  --left: max(var(--edge), env(safe-area-inset-left));
+  --right: max(var(--edge), env(safe-area-inset-right));
 }
 
 * { box-sizing: border-box; }
@@ -34,73 +40,78 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
   border: 2px solid var(--panel-edge);
 }
 
-/* ---- the bar at the top: the title, the date and the time, and the button MENU ---- */
+/* ---- the title box at the top left: the name of the City, the date and the time ----------
+   It is never wider than the space to the left of the menu button, thus the two never meet. */
 #title {
-  top: 0; left: 0; right: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; row-gap: 5px;
-  padding: calc(env(safe-area-inset-top) + 10px) 124px 10px max(14px, env(safe-area-inset-left)); border-width: 0 0 2px;
+  top: var(--top); left: var(--left); z-index: 5; padding: 7px 11px 8px;
+  max-width: calc(100vw - var(--left) - var(--right) - var(--btn) - 10px);
 }
+#title .t-name { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }
 #title .t-cn { font-weight: 700; font-size: 16px; letter-spacing: 0.16em; }
-#title .t-en { font-family: var(--pixel); font-size: 10px; letter-spacing: 0.06em; }
-#title .t-time { flex-basis: 100%; font-family: var(--pixel); font-size: 10px; letter-spacing: 0.04em; }
+#title .t-en { font-size: 10px; letter-spacing: 0.06em; }
+#title .t-time { margin-top: 2px; font-size: 10px; letter-spacing: 0.04em; }
 /* the colon blinks while the clock runs, thus real time does not look stopped */
 #title.run #t-colon { animation: clk-blink 1s steps(1, end) infinite; }
 @keyframes clk-blink { 50% { opacity: 0; } }
 
+/* ---- the menu button at the top right, and the column of the tools under it ----------------
+   The menu button and the tools are icons only. Closed, each tool sits under the menu button;
+   open, the tools come down from it one after the other. */
 #menu-btn {
-  display: flex; align-items: center; gap: 9px; top: calc(env(safe-area-inset-top) + 9px); right: max(10px, env(safe-area-inset-right));
-  height: 40px; padding: 0 13px; z-index: 6; cursor: pointer; font-family: var(--pixel); font-size: 11px; color: var(--ink);
+  top: var(--top); right: var(--right); width: var(--btn); height: var(--btn); padding: 0; z-index: 41; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; color: var(--ink);
 }
-#menu-btn[aria-expanded="true"] { background: var(--label-bg); color: var(--label-ink); }
+#menu-btn svg, .ti svg { display: block; }
+#tools {
+  position: fixed; top: calc(var(--top) + var(--btn) + 8px); right: var(--right); z-index: 40;
+  display: flex; flex-direction: column; gap: 8px; pointer-events: none;
+}
+.ti {
+  position: relative; width: var(--btn); height: var(--btn); padding: 0; cursor: pointer; color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateY(calc((var(--i) + 1) * (var(--btn) + 8px) * -1)) scale(0.6);
+  transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.16s, visibility 0s 0.22s;
+}
+body.tools-open .ti {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: none;
+  transition-delay: calc(var(--i) * 30ms), calc(var(--i) * 30ms), 0s;
+}
+#menu-btn[aria-expanded="true"], .ti[aria-expanded="true"] { background: var(--label-bg); color: var(--label-ink); }
 
-/* ---- the sheets: the menu, the selected building or person, the mysteries and the sources.
-   On a phone each one comes up from the foot of the screen. ---- */
-#menu, #bld, #cases, #sources {
+/* ---- the sheets: one for each tool, and the selected building or person. On a phone each one
+   comes up from the foot of the screen. ---- */
+.sheet, #bld {
   position: fixed; top: auto; left: 0; right: 0; bottom: 0; width: auto; border-width: 2px 0 0;
   box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.18); overscroll-behavior: contain; animation: sheet-in 0.18s ease-out;
 }
-#bld[hidden], #cases[hidden], #sources[hidden] { display: none; }
+.sheet[hidden], #bld[hidden] { display: none; }
 @keyframes sheet-in { from { transform: translateY(28px); opacity: 0; } }
+.sheet {
+  z-index: 20; max-height: 84vh; max-height: 84dvh; overflow-y: auto; scrollbar-width: thin;
+  padding: 0 14px calc(14px + env(safe-area-inset-bottom));
+}
 .x-btn, #bld-close {
   flex: none; width: 42px; height: 34px; padding: 0; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer;
   display: flex; align-items: center; justify-content: center; color: var(--ink);
 }
 .x-btn svg, #bld-close svg { width: 12px; height: 12px; display: block; }
 .x-btn:active, #bld-close:active { background: var(--label-bg); color: var(--label-ink); }
-/* the x of the mysteries and of the sources stays at the top while the sheet scrolls */
-#cases-close, #src-close {
-  position: sticky; top: 8px; float: right; z-index: 1; width: 42px; height: 34px; margin: 8px -6px 0 10px; padding: 0; cursor: pointer;
-  border: 2px solid var(--panel-edge); background: var(--panel); font-size: 20px; line-height: 1; color: var(--ink);
-}
-
-/* ---- the menu ---- */
-#menu {
-  display: none; z-index: 20; max-height: 84vh; max-height: 84dvh; overflow-y: auto; padding: 0 14px calc(14px + env(safe-area-inset-bottom));
-  grid-template-columns: 1fr 1fr; grid-template-areas: 'head head' 'clock clock' 'tool tool' 'rail rail' 'case src' 'hint hint'; gap: 14px 10px;
-}
-body.menu-open #menu { display: grid; }
+/* the head of a sheet: its name and its x, at the top while the sheet scrolls */
 .m-head {
-  grid-area: head; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1;
-  margin: 0 -14px; padding: 6px 8px 6px 14px; background: var(--panel); border-bottom: 2px solid var(--panel-edge);
-  font-family: var(--pixel); font-size: 11px;
+  display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1;
+  margin: 0 -14px 12px; padding: 6px 8px 6px 14px; background: var(--panel); border-bottom: 2px solid var(--panel-edge);
+  font-size: 11px; letter-spacing: 0.04em;
 }
-.m-h { margin-bottom: 7px; font-family: var(--pixel); font-size: 9px; letter-spacing: 0.04em; color: var(--ink-2); }
-.m-hint { grid-area: hint; margin: 0; font-family: var(--pixel); font-size: 8px; line-height: 1.7; color: var(--ink-2); text-align: center; text-wrap: balance; }
-/* the hint for a mouse, or for a finger */
-.m-hint .h-mouse { display: none; }
-@media (hover: hover) and (pointer: fine) {
-  .m-hint .h-mouse { display: inline; }
-  .m-hint .h-touch { display: none; }
-}
+.m-h { margin-bottom: 7px; font-size: 9px; letter-spacing: 0.04em; color: var(--ink-2); }
 
-/* the clock: the bar at the top gives the date and the time */
-#clock { grid-area: clock; padding-top: 4px; }
-.clk-row { display: flex; justify-content: space-between; align-items: baseline; }
+/* the time: the title box gives the date and the time */
 #wx { margin: 0 0 12px; font-size: 10px; line-height: 1.6; color: var(--ink-2); }
 #wx b { color: var(--ink); font-weight: 700; }
 #spark { position: relative; height: 44px; margin: 0 0 10px; cursor: pointer; border-bottom: 2px solid var(--panel-edge); }
 #spark canvas { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
 #playhead { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--tag); left: 0; }
-.speeds { gap: 6px; }
+.speeds { display: flex; gap: 6px; }
 .speeds button {
   flex: 1; height: 42px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; padding: 0;
   display: flex; align-items: center; justify-content: center; color: var(--ink);
@@ -108,18 +119,14 @@ body.menu-open #menu { display: grid; }
 .speeds button svg { display: block; }
 .speeds button.on { background: var(--label-bg); color: var(--label-ink); }
 
-/* the tool: pull the floors apart */
-#toolbar { grid-area: tool; border: 2px solid var(--panel-edge); background: var(--panel); }
+/* the floors: pull them apart, and the storeys in one row that scrolls */
 .tool {
-  width: 100%; height: 46px; border: 0; background: transparent; cursor: pointer; color: var(--ink);
+  width: 100%; height: 46px; margin: 0 0 14px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; color: var(--ink);
   display: flex; align-items: center; gap: 12px; padding: 0 14px;
 }
 .tool svg { width: 20px; height: 20px; flex: none; }
-.tool-l { font-family: var(--pixel); font-size: 10px; letter-spacing: 0.04em; }
+.tool-l { font-size: 10px; letter-spacing: 0.04em; }
 .tool.on { background: var(--label-bg); color: var(--label-ink); }
-
-/* the storeys: one row that scrolls */
-#rail { grid-area: rail; }
 #levels { list-style: none; margin: 0; display: flex; gap: 5px; overflow-x: auto; padding: 0 0 6px; scrollbar-width: thin; }
 #levels li { flex: none; position: relative; }
 #levels button {
@@ -129,18 +136,6 @@ body.menu-open #menu { display: grid; }
 #levels button.above { color: var(--ink-3); }
 #levels button.sel { background: var(--accent); color: var(--ink); }
 #levels .sep { border-left: 2px dashed var(--ink-3); margin: 6px 3px; }
-
-/* the mysteries and the sources */
-#case-btn, #src-btn {
-  height: 56px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer; color: var(--ink);
-  font-family: var(--pixel); font-size: 10px;
-}
-#case-btn { grid-area: case; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 12px; }
-#case-btn[aria-pressed="true"] { box-shadow: inset 0 -3px 0 var(--accent); }
-#case-dots { display: grid; grid-template-columns: repeat(5, 8px); gap: 3px; }
-#case-dots i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--panel-edge); }
-#case-dots i.on { background: var(--accent); }
-#src-btn { grid-area: src; padding: 0 8px; }
 
 /* ---- the selected building or person (buildingPanel.js, life/personPanel.js) ---- */
 #bld { z-index: 10; max-height: 52vh; max-height: 52dvh; padding-bottom: env(safe-area-inset-bottom); display: flex; flex-direction: column; font-size: 10px; line-height: 1.6; }
@@ -187,23 +182,27 @@ body.menu-open #menu { display: grid; }
 #tooltip .tt-r { font-size: 9px; }
 #tooltip .tt-r i { color: var(--ink-2); font-style: normal; }
 
-/* ---- the sources (notes.js) ---- */
-#sources, #cases { z-index: 25; overflow: auto; padding: 0 16px calc(18px + env(safe-area-inset-bottom)); font-size: 10px; line-height: 1.7; background-image: none; scrollbar-width: thin; }
+/* ---- the sources (notes.js), and the hint of the controls ---- */
+#sources, #cases { font-size: 10px; line-height: 1.7; background-image: none; }
 #sources { max-height: 86vh; max-height: 86dvh; }
-#sources h2 { margin-top: 20px; }
-#sources h2 { font-family: var(--pixel); font-weight: 400; font-size: 12px; margin: 0 0 12px; }
+.m-hint { margin: 0 0 12px; font-size: 8px; line-height: 1.7; color: var(--ink-2); }
+/* the hint for a mouse, or for a finger */
+.m-hint .h-mouse { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .m-hint .h-mouse { display: inline; }
+  .m-hint .h-touch { display: none; }
+}
 #sources h4 { margin: 16px 0 4px; font-size: 11px; }
 #sources ul { margin: 0; padding-left: 18px; }
 #sources a { color: #8a3d1a; }
 #sources .st { font-family: var(--pixel); font-size: 8px; padding: 1px 4px; margin-right: 4px; vertical-align: 1px; }
 #sources .st.ok { background: #cfe0c8; }
 #sources .st.prov { background: #f0d29a; }
-#src-stats { margin: 0 0 12px; color: var(--ink-2); font-size: 10px; }
+#src-stats { margin: 0 0 8px; color: var(--ink-2); font-size: 10px; }
 #src-stats b { color: var(--ink); font-weight: 700; }
 
 /* ---- the mysteries (life/mysteries.js) ---- */
 #cases { max-height: 78vh; max-height: 78dvh; line-height: 1.7; }
-#cases .cb-head { padding-top: 18px; }
 #cases .cb-head, #cases h3 { font-family: var(--pixel); font-size: 8px; font-weight: 400; letter-spacing: 0.04em; margin: 0 0 6px; }
 #cases h3 { margin: 10px 0 4px; padding-top: 6px; border-top: 1px dashed var(--ink-3); }
 #cases .sub, #cases .n { color: var(--ink-2); }
@@ -225,8 +224,9 @@ body.menu-open #menu { display: grid; }
 .cb-clue .k { flex: none; width: 14px; font-family: var(--pixel); font-size: 9px; color: var(--ink-2); padding-top: 2px; }
 .cb-story { margin-bottom: 4px; }
 #cases .follow { margin: 8px 0 2px; padding: 7px 12px; border: 2px solid var(--panel-edge); background: var(--panel); font-family: var(--pixel); font-size: 9px; cursor: pointer; color: var(--ink); }
+/* the note of a found person, under the title box */
 #found {
-  position: fixed; top: 18px; left: 50%; transform: translate(-50%, -12px); padding: 8px 16px; text-align: center; pointer-events: none;
+  position: fixed; top: calc(var(--top) + 84px); left: 50%; transform: translate(-50%, -12px); padding: 8px 16px; text-align: center; pointer-events: none;
   background: #f3efe2; border: 2px solid var(--panel-edge); box-shadow: 0 0 0 3px var(--accent); opacity: 0; transition: opacity 0.4s, transform 0.4s; z-index: 30;
 }
 #found.show { opacity: 1; transform: translate(-50%, 0); }
@@ -263,37 +263,41 @@ body.menu-open #menu { display: grid; }
 
 /* ---- hover, for a mouse ---- */
 @media (hover: hover) {
-  #menu-btn:hover:not([aria-expanded="true"]), .tool:hover:not(.on), #levels button:hover:not(.sel), .speeds button:hover:not(.on),
-  #case-btn:hover, #src-btn:hover, .cb-row:hover, #bld .who:hover { background: var(--hover); }
+  #menu-btn:hover:not([aria-expanded="true"]), .ti:hover:not([aria-expanded="true"]), .tool:hover:not(.on),
+  #levels button:hover:not(.sel), .speeds button:hover:not(.on), .cb-row:hover, #bld .who:hover { background: var(--hover); }
   #bld .st:hover { background: rgba(255, 255, 255, 0.6); }
-  .x-btn:hover, #bld-close:hover, #cases-close:hover, #src-close:hover, #bld .follow:hover, #cases .follow:hover,
+  .x-btn:hover, #bld-close:hover, #bld .follow:hover, #cases .follow:hover,
   .cb-back:hover, .cb-more:hover { background: var(--label-bg); color: var(--label-ink); }
 }
 
 /* ---- a wide screen: a tablet, a computer or a phone on its side ----------------------------
-   The same design with more room: the bar on one row, and each sheet at the right of the
-   screen, from the bar to the foot. */
+   The same design with more room: larger text and buttons, and each sheet a card at the right
+   of the screen, under the menu button. A card is as tall as what it holds, to the foot of
+   the screen at most. */
 @media (min-width: 721px), (min-width: 600px) and (max-height: 520px) {
-  :root { --bar-h: calc(env(safe-area-inset-top) + 58px); }
-  #title { height: var(--bar-h); flex-wrap: nowrap; align-items: center; column-gap: 14px; padding-top: env(safe-area-inset-top); padding-bottom: 0; padding-left: max(18px, env(safe-area-inset-left)); }
+  :root { --edge: 14px; --btn: 50px; }
+  #title { padding: 9px 14px 10px; }
+  #title .t-name { column-gap: 12px; }
   #title .t-cn { font-size: 19px; }
   #title .t-en { font-size: 12px; }
-  #title .t-time { flex-basis: auto; margin-left: auto; font-size: 11px; white-space: nowrap; }
-  #menu-btn { right: max(14px, env(safe-area-inset-right)); }
+  #title .t-time { margin-top: 3px; font-size: 11px; }
 
-  #menu, #bld, #cases, #sources {
-    top: var(--bar-h); left: auto; width: min(440px, 46vw); max-height: none; border-width: 0 0 0 2px;
-    box-shadow: -2px 0 0 rgba(0, 0, 0, 0.18); animation-name: sheet-in-side;
+  /* the ids, thus these rules win over the heights of the phone (#bld, #cases, #sources) */
+  #time, #floors, #cases, #sources, #bld {
+    --sheet-top: calc(var(--top) + var(--btn) + 10px);
+    top: var(--sheet-top); right: var(--right); bottom: auto; left: auto; width: min(420px, 46vw);
+    max-height: calc(100vh - var(--sheet-top) - max(var(--edge), env(safe-area-inset-bottom)));
+    max-height: calc(100dvh - var(--sheet-top) - max(var(--edge), env(safe-area-inset-bottom)));
+    border-width: 2px; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.18); animation-name: sheet-in-side;
   }
   @keyframes sheet-in-side { from { transform: translateX(28px); opacity: 0; } }
-  #menu { align-content: start; padding-right: calc(14px + env(safe-area-inset-right)); }
-  .m-head { margin-right: calc(-14px - env(safe-area-inset-right)); }
+  .sheet { padding-bottom: 14px; }
+  #bld { padding-bottom: 0; }
   #levels { flex-wrap: wrap; overflow: visible; padding: 0; } /* room for all the storeys: no scroll */
-  #bld { padding-right: env(safe-area-inset-right); }
-  #cases, #sources { padding-right: calc(16px + env(safe-area-inset-right)); }
-  #found { top: calc(var(--bar-h) + 14px); }
+  #found { top: calc(var(--top) + 86px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #menu, #bld, #cases, #sources, #title.run #t-colon { animation: none; }
+  .sheet, #bld, #title.run #t-colon { animation: none; }
+  .ti { transition: none; }
 }

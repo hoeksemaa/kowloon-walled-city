@@ -71,13 +71,10 @@ export class Casebook {
     return `${esc(P.name)}${P.nameZh && P.nameZh !== P.name ? ` (${esc(P.nameZh)})` : ''}`;
   }
 
-  // The ten circles of the button: one for each case, filled when it is solved.
-  dots() { return this.cases.map((c) => `<i class="${this.solved.has(c.n) ? 'on' : ''}" title="Case ${c.n}${this.solved.has(c.n) ? ': found' : ''}"></i>`).join(''); }
-
   // The panel: the list of the cases, or one case with its clues.
   html() {
     const n = this.solved.size;
-    let h = `<div class="cb-head">MYSTERIES · ${n} OF ${this.cases.length} FOUND</div>`;
+    let h = `<div class="cb-head">${n} OF ${this.cases.length} FOUND</div>`;
     const c = this.cases.find((x) => x.n === this.open);
     if (!c) {
       h += '<div class="sub">Ten real people of this week of December 1986. Each case gives its clues one at a time. Find the person in the City and click them: the circle of the case is then checked.</div>';

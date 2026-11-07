@@ -1,7 +1,7 @@
 // The main app (index.html): Kowloon Walled City (九龍城寨) in December 1986, on the definitive
 // 3D structure (src/city/ for the City, src/surroundings/ for the ground and the buildings round
-// it; docs/structure.md). The City is drawn as floor layers (cityLayers.js): the tool E pulls
-// the floors apart, and a storey of the menu peels the City to it. A click on a building gives
+// it; docs/structure.md). The City is drawn as floor layers (cityLayers.js): the tool of the
+// floors (key E) pulls the floors apart, and a storey of it peels the City to that storey. A click on a building gives
 // its facts and the uses of its rooms in December 1986 (data/room_uses.json). One design for
 // every screen, mobile first (style.css).
 // The people of the week walk on the structure (src/life/): the real people of data/people.json
@@ -227,15 +227,10 @@ function found(c) {
   clearTimeout(found.t);
   found.t = setTimeout(() => t.classList.remove('show'), 5000);
   cases.open = c.n;
-  $('cases').hidden = false;
-  $('sources').hidden = true;
-  setMenu(false);
-  renderCases();
+  setTool('cases');
 }
 
 function renderCases() {
-  $('case-dots').innerHTML = cases.dots();
-  $('case-btn').setAttribute('aria-pressed', String(!$('cases').hidden));
   if (!$('cases').hidden) $('cases-body').innerHTML = cases.html();
 }
 
@@ -336,27 +331,58 @@ function hideTooltip() {
 }
 
 // ---- UI -------------------------------------------------------------------------------------------
-// The menu: open or closed. Open, it closes the mysteries and the sources; the panel of the
-// selected building or person stays under it.
-const menuOpen = () => document.body.classList.contains('menu-open');
-function setMenu(open) {
-  document.body.classList.toggle('menu-open', open);
+// The menu button opens and closes the column of the tools (style.css: it comes down from the
+// button). Each tool opens its own sheet, and one sheet of a tool is open at a time. The panel
+// of the selected building or person stays under it.
+const TOOLS = ['time', 'floors', 'cases', 'sources']; // each tool: the id of its sheet
+const toolsOpen = () => document.body.classList.contains('tools-open');
+function setTools(open) {
+  document.body.classList.toggle('tools-open', open);
   $('menu-btn').setAttribute('aria-expanded', String(open));
-  if (open) { $('cases').hidden = true; $('sources').hidden = true; renderCases(); railToSel(); }
+}
+let tool = null; // the tool whose sheet is open, or null
+function setTool(name) {
+  tool = name;
+  for (const t of TOOLS) {
+    $(t).hidden = t !== name;
+    $(`ti-${t}`).setAttribute('aria-expanded', String(t === name));
+  }
+  setTools(false);
+  if (name === 'cases') { renderCases(); $('cases').scrollTop = 0; }
+  if (name === 'floors') railToSel();
 }
 
 function buildUI() {
   $('src-body').innerHTML = notesHtml(S, uses);
   $('t-explode').onclick = () => setExplode(state.explodeTarget < 0.5);
-  $('menu-btn').onclick = () => setMenu(!menuOpen());
-  $('menu-close').onclick = () => setMenu(false);
-  $('src-btn').onclick = () => { $('sources').hidden = !$('sources').hidden; if (!$('sources').hidden) { $('cases').hidden = true; setMenu(false); renderCases(); } };
-  $('src-close').onclick = () => ($('sources').hidden = true);
+  // The menu button: from the keyboard, the focus goes to the first tool.
+  $('menu-btn').onclick = (ev) => {
+    setTools(!toolsOpen());
+    if (toolsOpen() && ev.detail === 0) $(`ti-${TOOLS[0]}`).focus();
+  };
+  // A tool opens its sheet, or closes it if it is open; the column closes. From the keyboard,
+  // the focus goes to the x of the sheet.
+  for (const t of TOOLS) {
+    $(`ti-${t}`).onclick = (ev) => {
+      setTool(tool === t ? null : t);
+      if (ev.detail === 0) (tool ? $(tool).querySelector('[data-close]') : $('menu-btn')).focus();
+    };
+  }
+  document.querySelectorAll('.sheet [data-close]').forEach((b) => (b.onclick = (ev) => {
+    setTool(null);
+    if (ev.detail === 0) $('menu-btn').focus();
+  }));
+  // A touch or a click off the icons closes the column. The touch or the click then does its own
+  // work (a tap on the City still selects).
+  addEventListener('pointerdown', (ev) => {
+    if (toolsOpen() && !ev.target.closest?.('#tools, #menu-btn')) setTools(false);
+  }, true);
+  addEventListener('focusin', (ev) => {
+    if (toolsOpen() && !ev.target.closest?.('#tools, #menu-btn')) setTools(false);
+  });
   // The panel of the selected building: the x deselects it, and a storey peels the City there.
   $('bld-close').onclick = () => { selectBuilding(-1); selectPerson(-1); };
-  // The mysteries: the button opens the casebook; a case shows its clues one at a time.
-  $('case-btn').onclick = () => { $('cases').hidden = !$('cases').hidden; if (!$('cases').hidden) { $('sources').hidden = true; setMenu(false); } renderCases(); };
-  $('cases-close').onclick = () => { $('cases').hidden = true; renderCases(); };
+  // The mysteries: a case shows its clues one at a time.
   $('cases-body').addEventListener('click', (ev) => {
     const el = ev.target.closest && ev.target.closest('[data-case], [data-more], [data-show]');
     if (!el) return;
@@ -364,10 +390,10 @@ function buildUI() {
     else if (el.dataset.more) cases.more(+el.dataset.more);
     else if (el.dataset.show) {
       showCase(cases.cases.find((x) => x.n === +el.dataset.show));
-      $('cases').hidden = true; // the sheet goes, thus the City shows
+      setTool(null); // the sheet goes, thus the City shows
     }
     renderCases();
-    if (el.dataset.case !== undefined) $('cases-body').scrollTop = 0;
+    if (el.dataset.case !== undefined) $('cases').scrollTop = 0;
   });
   renderCases();
   $('bld-body').addEventListener('click', (ev) => {
@@ -415,15 +441,16 @@ function buildUI() {
   canvas.addEventListener('pointercancel', (ev) => downs.delete(ev.pointerId));
   // A click selects the building under the pointer (and the room, where the floor shows), and a
   // click on the ground or the sky lets go. Only the main button clicks: the right one pans. A
-  // finger can move a little more than a mouse in a tap. A tap also closes the menu.
+  // finger can move a little more than a mouse in a tap. A tap that selects a building or a
+  // person closes the sheet of the tool, thus the panel of the selection shows.
   canvas.addEventListener('pointerup', (ev) => {
     const down = downs.get(ev.pointerId);
     downs.delete(ev.pointerId);
     const slop = ev.pointerType === 'touch' ? 10 : 4;
     if (!down || multi || ev.button !== 0 || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > slop) return;
-    if (menuOpen()) setMenu(false);
     pointAt(ev); // a tap has no move before it
     const hit = pickAt();
+    if (hit && tool) setTool(null);
     if (hit && hit.person !== undefined) selectPerson(hit.person === state.person ? -1 : hit.person);
     else if (!hit) { selectBuilding(-1); selectPerson(-1); }
     else if (hit.b === state.sel && !hit.room) selectBuilding(-1);
@@ -441,13 +468,12 @@ function buildUI() {
     const k = ev.key.toLowerCase();
     if ((k === ' ' || k === 'enter') && ev.target.closest && ev.target.closest('button')) return;
     if (k === 'e') $('t-explode').click();
-    else if (k === 'm') setMenu(!menuOpen());
+    else if (k === 'm') setTools(!toolsOpen());
     else if (k === 'escape') {
-      // the first Esc closes the menu, the sources or the mysteries if one is open, or else lets
-      // go of the selected person or building; the next one takes the peel away
-      if (menuOpen()) setMenu(false);
-      else if (!$('sources').hidden) $('sources').hidden = true;
-      else if (!$('cases').hidden) { $('cases').hidden = true; renderCases(); }
+      // the first Esc closes the column of the tools or the sheet of a tool if one is open, or
+      // else lets go of the selected person or building; the next one takes the peel away
+      if (toolsOpen()) { setTools(false); $('menu-btn').focus(); }
+      else if (tool) setTool(null);
       else if (state.person >= 0) selectPerson(-1);
       else if (state.sel >= 0) selectBuilding(-1);
       else setPeel(-1);
@@ -508,7 +534,7 @@ function renderRail() {
 // The storeys are one row that scrolls: the selected storey goes to its middle.
 function railToSel() {
   const ol = $('levels'), li = ol.querySelector('button.sel')?.parentElement;
-  if (!menuOpen() || !li) return;
+  if (tool !== 'floors' || !li) return;
   ol.scrollTo({ left: li.offsetLeft - ol.offsetLeft - (ol.clientWidth - li.offsetWidth) / 2, behavior: 'smooth' });
 }
 
@@ -530,7 +556,7 @@ function drawDay() {
 // in this week, env.js). The same cloud all day is INFERRED.
 const DAY_H = 10.8;
 const cloudOf = (dow) => { const w = weather?.days?.[dow]; return w ? clamp(1 - w.sunH / DAY_H, 0, 1) : 0; };
-// The line of the menu: the sky, the temperatures, the rain and the humidity of the day.
+// The line of the tool of the time: the sky, the temperatures, the rain and the humidity of the day.
 function weatherLine(dow) {
   const w = weather?.days?.[dow];
   if (!w) return '';
@@ -562,22 +588,21 @@ function resize() {
   camera.updateProjectionMatrix();
 }
 
-// The bar of the title covers the top of the screen, and an open sheet (the menu, the selected
-// building or person, the mysteries or the sources) covers the foot of it (on a wide screen,
-// the right of it). The view
-// moves by half of the difference, thus the middle of the view is the middle of the part of the
-// screen that shows. [x, y] in pixels: the City moves left by x / 2 and up by y / 2.
+// An open sheet (of a tool, or of the selected building or person) covers the foot of the
+// screen (on a wide screen, the right of it). The view moves by half of it, thus the middle of
+// the view is the middle of the part of the screen that shows. [x, y] in pixels: the City moves
+// left by x / 2 and up by y / 2. The title box and the menu button are small: the City shows
+// round them.
 const shift = [0, 0];
 function sheetCover() {
   const c = [0, 0];
-  let foot = 0;
-  for (const el of [menuOpen() && $('menu'), ...['bld', 'cases', 'sources'].map((id) => !$(id).hidden && $(id))]) {
-    if (!el) continue;
+  for (const id of ['bld', ...TOOLS]) {
+    const el = $(id);
+    if (el.hidden) continue;
     const r = el.getBoundingClientRect();
     if (r.left > 1) c[0] = Math.max(c[0], innerWidth - r.left);
-    else foot = Math.max(foot, innerHeight - r.top);
+    else c[1] = Math.max(c[1], innerHeight - r.top);
   }
-  c[1] = foot - $('title').getBoundingClientRect().bottom;
   return c;
 }
 // The frustum of the camera, moved by shift. The middle of a frustum does not change with the
