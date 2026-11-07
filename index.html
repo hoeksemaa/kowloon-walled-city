@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- the red of the loading screen; main.js takes it away when the City is built -->
+  <meta name="theme-color" content="#ee1c25" id="theme-color">
   <title>Kowloon Walled City · 1986</title>
   <!-- Vercel Web Analytics: page views, no cookies (https://vercel.com/docs/analytics) -->
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -44,45 +46,68 @@
     <div class="t-cn">九龍城寨</div>
     <div class="t-en">KOWLOON WALLED CITY</div>
     <div class="t-sub">15–21 DEC 1986 · PLAN TRACED · STOREYS AND ROOMS FROM THE SOURCES</div>
+    <div class="t-time" id="t-time">MON 15 DEC 1986 · 09:45</div>
   </header>
 
-  <nav id="toolbar" class="panel" aria-label="Tools">
-    <button class="tool" id="t-explode" title="Pull the floors apart: G/F, 1/F, 2/F… each in its own layer (E)" aria-pressed="false">
-      <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
-      <span class="chev">›</span>
-    </button>
-  </nav>
-
-  <button id="case-btn" class="panel" aria-pressed="false" title="The ten mysteries: find real people of the City (a circle for each case, filled when it is solved)">
-    <span class="cb-l">MYSTERIES</span><span id="case-dots"></span>
+  <!-- On a phone (style.css, main.js: phone) this one button opens the menu: the tool, the
+       mysteries, the storeys, the clock and the sources in one sheet. On a large screen the menu
+       has no box of its own, and each part of it stands in its place on the screen. -->
+  <button id="menu-btn" class="panel" aria-expanded="false" aria-controls="menu" title="The menu: the time, the floors, the mysteries and the sources">
+    <svg viewBox="0 0 7 6" width="14" height="12" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h7v1H0z M0 2.5h7v1H0z M0 5h7v1H0z" fill="currentColor"/></svg>
+    <span>MENU</span>
   </button>
+
+  <div id="menu" class="panel">
+    <div class="m-head">
+      <span>MENU</span>
+      <button id="menu-close" class="x-btn" title="Close the menu" aria-label="Close the menu">
+        <svg viewBox="0 0 8 8" width="8" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h2v1H0z M6 0h2v1H6z M1 1h2v1H1z M5 1h2v1H5z M2 2h4v1H2z M3 3h2v2H3z M2 5h4v1H2z M1 6h2v1H1z M5 6h2v1H5z M0 7h2v1H0z M6 7h2v1H6z" fill="currentColor"/></svg>
+      </button>
+    </div>
+
+    <nav id="toolbar" class="panel" aria-label="Tools">
+      <button class="tool" id="t-explode" title="Pull the floors apart: G/F, 1/F, 2/F… each in its own layer (E)" aria-pressed="false">
+        <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
+        <span class="chev">›</span>
+        <span class="tool-l">PULL THE FLOORS APART</span>
+      </button>
+    </nav>
+
+    <button id="case-btn" class="panel" aria-pressed="false" title="The ten mysteries: find real people of the City (a circle for each case, filled when it is solved)">
+      <span class="cb-l">MYSTERIES</span><span id="case-dots"></span>
+    </button>
+    <aside id="rail" class="panel" aria-label="Storeys">
+      <div class="m-h">PEEL THE CITY TO ONE STOREY</div>
+      <ol id="levels"></ol>
+    </aside>
+
+    <section id="clock" class="panel" aria-label="Time">
+      <div class="clk-row">
+        <span id="clk-date">MON 15 DEC 1986</span>
+        <span id="clk-time"><span id="clk-h">09</span><span id="clk-colon">:</span><span id="clk-m">45</span></span>
+      </div>
+      <div id="spark" title="The day: night shaded. Click to set the time.">
+        <canvas id="spark-c" width="288" height="44"></canvas>
+        <i id="playhead"></i>
+      </div>
+      <div class="clk-row speeds" id="speeds">
+        <button aria-pressed="false"><svg viewBox="0 0 6 7" width="12" height="14" shape-rendering="crispEdges"><path d="M0 0h2v7H0z M4 0h2v7H4z" fill="currentColor"/></svg></button>
+        <button aria-pressed="true" class="on"><svg viewBox="0 0 4 7" width="8" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+        <button aria-pressed="false"><svg viewBox="0 0 9 7" width="18" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+        <button aria-pressed="false"><svg viewBox="0 0 14 7" width="28" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M10 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+      </div>
+      <div id="clk-stats"></div>
+    </section>
+
+    <button id="src-btn">SOURCES + NOTES</button>
+    <p class="m-hint">DRAG TO TURN · PINCH TO ZOOM · TWO FINGERS TO PAN · TAP A BUILDING OR A PERSON</p>
+  </div>
+
   <section id="cases" class="panel" hidden aria-label="Mysteries">
     <button id="cases-close" title="Close the mysteries (Esc)" aria-label="Close the mysteries">×</button>
     <div id="cases-body"></div>
   </section>
   <div id="found" role="status"></div>
-
-  <aside id="rail" class="panel" aria-label="Storeys">
-    <ol id="levels"></ol>
-  </aside>
-
-  <section id="clock" class="panel" aria-label="Time">
-    <div class="clk-row">
-      <span id="clk-date">MON 15 DEC 1986</span>
-      <span id="clk-time"><span id="clk-h">09</span><span id="clk-colon">:</span><span id="clk-m">45</span></span>
-    </div>
-    <div id="spark" title="The day: night shaded. Click to set the time.">
-      <canvas id="spark-c" width="288" height="44"></canvas>
-      <i id="playhead"></i>
-    </div>
-    <div class="clk-row speeds" id="speeds">
-      <button aria-pressed="false"><svg viewBox="0 0 6 7" width="12" height="14" shape-rendering="crispEdges"><path d="M0 0h2v7H0z M4 0h2v7H4z" fill="currentColor"/></svg></button>
-      <button aria-pressed="true" class="on"><svg viewBox="0 0 4 7" width="8" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-      <button aria-pressed="false"><svg viewBox="0 0 9 7" width="18" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-      <button aria-pressed="false"><svg viewBox="0 0 14 7" width="28" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M10 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-    </div>
-    <div id="clk-stats"></div>
-  </section>
 
   <section id="bld" class="panel" hidden aria-label="Selected building">
     <div class="bld-head">
@@ -97,14 +122,36 @@
   <div id="tooltip" role="status"></div>
   <div id="hint">DRAG ROTATE · RIGHT-DRAG PAN · SCROLL ZOOM · CLICK A BUILDING TO SELECT IT · E PULLS THE FLOORS APART · ↑↓ PEEL TO A STOREY</div>
 
-  <button id="src-btn">SOURCES + NOTES</button>
   <section id="sources" class="panel" hidden>
     <button id="src-close" title="Close">×</button>
     <h2>Sources and notes</h2>
+    <p id="src-stats"></p>
     <div id="src-body"></div>
   </section>
 
-  <div id="loading">BUILDING THE CITY…</div>
+  <!-- The loading screen: the bauhinia of the Hong Kong flag on its red field (favicon.svg), and
+       its five petals light one after the other while the City is built. Each petal is a box of
+       its own, thus the browser can animate it while the script builds the City. -->
+  <div id="loading" role="status">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <!-- the petal and its red star, from Flag_of_Hong_Kong.svg on Wikimedia Commons (public domain) -->
+        <g id="ld-petal"><path fill="#fff" d="M492.936022 125.19583a27.917245 27.917245 0 0 0-14.901582 41.791893 45.171052 45.171052 0 0 1-20.289932 66.204239 38.650583 38.650583 0 0 0-10.816469 64.313021 68.374981 68.374981 0 0 1-17.067835-93.913589 15.809868 15.809868 0 0 1-1.109109-1.047777 69.880683 69.880683 0 0 0 16.754434 95.793146 90.342104 90.342104 0 0 1 47.430493-173.140933"/><path fill="#ee1c25" d="M451.979333 181.099409l-27.564739 12.021638 29.366483 6.476437-19.951229-22.500734 2.915284 29.930515"/></g>
+      </defs>
+    </svg>
+    <div class="ld-name">
+      <div class="ld-cn">九龍城寨</div>
+      <div class="ld-en">KOWLOON WALLED CITY</div>
+    </div>
+    <div class="ld-flower" aria-hidden="true">
+      <svg viewBox="265 115 370 370"><use href="#ld-petal"/></svg>
+      <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(72 450 300)"/></svg>
+      <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(144 450 300)"/></svg>
+      <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(216 450 300)"/></svg>
+      <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(288 450 300)"/></svg>
+    </div>
+    <div class="ld-msg"><span id="ld-text">LOADING</span><span class="ld-dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span></div>
+  </div>
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
