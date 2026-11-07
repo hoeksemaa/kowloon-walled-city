@@ -11,6 +11,10 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- The one font of the app: Silkscreen (regular and bold), and no other (John, 2026-11-07) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   <meta name="description" content="The definitive 3D structure of Kowloon Walled City: its buildings, floors, stairs and rooms, and the use of each room in December 1986.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kowloon Walled City · 1986">
@@ -24,11 +28,12 @@
   <meta property="og:image:alt" content="A 3D model of Kowloon Walled City in 1986, with its street names in English and Chinese">
   <meta name="twitter:card" content="summary_large_image">
   <style>
-    html, body { margin: 0; height: 100%; overflow: hidden; background: #c9c7c0; font: 12px/1.45 -apple-system, "Helvetica Neue", Arial, sans-serif; color: #2b2925; }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #c9c7c0; font: 10px/1.6 'Silkscreen', sans-serif; color: #2b2925; }
+    select, input, button, textarea { font: inherit; } /* the one font in the controls too */
     #scene { display: block; width: 100vw; height: 100vh; }
     .panel { position: absolute; background: rgba(246, 244, 238, 0.93); border: 1px solid #b9b4aa; border-radius: 4px; padding: 8px 10px; }
     #ctl { top: 10px; left: 10px; width: 290px; }
-    #ctl h1 { font-size: 13px; margin: 0 0 2px; }
+    #ctl h1 { font-size: 12px; margin: 0 0 2px; }
     #ctl label { display: block; margin-top: 6px; }
     #ctl input[type=range] { width: 100%; }
     #stats, .dim { color: #77736a; }
@@ -36,15 +41,15 @@
     #info:empty, #route:empty { display: none; }
     #route { bottom: 10px; right: 10px; max-width: 340px; }
     #uses { top: 10px; right: 10px; width: 268px; max-height: calc(100vh - 40px); overflow: auto; }
-    #uses h1 { font-size: 13px; margin: 0 0 2px; }
+    #uses h1 { font-size: 12px; margin: 0 0 2px; }
     #uses label { display: block; margin-top: 6px; }
     #uses select, #uses input[type=text], #uses input[list] { font: inherit; width: 100%; box-sizing: border-box; }
     #legend { margin-top: 6px; }
-    #legend .grp { margin-top: 6px; font-weight: 600; color: #52514e; }
+    #legend .grp { margin-top: 6px; font-weight: 700; color: #52514e; }
     #legend .li { margin-top: 1px; display: flex; align-items: center; gap: 4px; }
     #legend .li .dim { margin-left: auto; font-variant-numeric: tabular-nums; }
     .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.18); }
-    .tag { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 11px; line-height: 15px; }
+    .tag { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 9px; line-height: 15px; }
     .tag.verified { background: #184f95; color: #fff; }
     .tag.likely { background: #5598e7; color: #fff; }
     .tag.guess { border: 1px solid #9c968b; color: #52514e; line-height: 13px; }

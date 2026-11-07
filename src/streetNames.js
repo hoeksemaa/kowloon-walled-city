@@ -9,11 +9,13 @@
 import * as THREE from 'three';
 
 const INK = '#ddd3b8', PLATE = 'rgba(28, 27, 25, 0.9)', ROAD_PLATE = 'rgba(28, 27, 25, 0.72)';
-const LATIN = (s) => `${8 * s}px Silkscreen, monospace`;
-const CJK = (s) => `600 ${9 * s}px "PingFang TC", "Heiti TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif`;
+// Silkscreen is the one font of the app (John, 2026-11-07). It has no Chinese: the Chinese comes
+// from the generic sans-serif of the browser, as in the panels.
+const LATIN = (s) => `${8 * s}px Silkscreen, sans-serif`;
+const CJK = (s) => `700 ${9 * s}px sans-serif`;
 const isCJK = (ch) => /[㐀-鿿]/.test(ch);
 
-// A plate with the text (Latin in the pixel font, Chinese in a CJK font), as a sprite.
+// A plate with the text (Latin in the pixel font, Chinese in the sans-serif of the browser), as a sprite.
 function plate(text, road) {
   const s = 4, c = document.createElement('canvas'), g = c.getContext('2d');
   // the runs of Latin and of Chinese
