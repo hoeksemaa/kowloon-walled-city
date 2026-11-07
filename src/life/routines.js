@@ -87,6 +87,22 @@ export function planDay(p, dow, X) {
     block(t, t + 2 * w + stay);
     return true;
   };
+  // A haircut at the barber's shop of Ho Chi Kam (何智錦) and his wife: "We are the only
+  // hairparlour inside the City and my customers are people living nearby"; "We used to open at
+  // 9am and close when there were no more customers" (p28). Who is near (20 m), one haircut in
+  // about five weeks, and the hours of the visits are INFERRED.
+  const haircut = (t, after) => {
+    const s = !dz && p.home && X.barberFor?.(p.home);
+    if (!s || r() > 1 / 35) return false;
+    const w = X.walkMin(p.home, s), stay = J(35, 10), len = 2 * w + stay;
+    t = freeAt(Math.max(t, H(9, 0)), len);
+    if (t + len > H(19, 50) || (t + len > H(13, 0) && t < H(13, 45))) return false;
+    if (F && t < F.dinner + 40 && t + len > F.dinner - 10) return false;
+    at(t, s, 'a haircut at the barber’s shop of Ho Chi Kam (何智錦), the only one in the City (p28)');
+    at(t + w + stay, home, after);
+    block(t, t + len);
+    return true;
+  };
   const dongzhi = (t = 18.25) => {
     const d = F ? F.dinner : J(H(Math.floor(t), (t % 1) * 60), 20);
     at(d, home, F && F.members === 1 ? '冬至 dinner' : DZ);
@@ -347,7 +363,8 @@ export function planDay(p, dow, X) {
     case 'worker_out': {
       if (sun && r() < 0.85) {
         at(J(H(8, 0), 40), home, 'Sunday at home');
-        if (!outing() && r() < 0.4) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); }
+        if (!outing() && r() < 0.4) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); block(H(9, 0), H(14, 30)); }
+        haircut(J(H(11, 0), 150), 'Sunday at home');
         // "the rubbish-spattered temple where gamblers came to implore and bribe the gods to
         // improve their luck" (p15): the Tin Hau Temple (天后廟) off Lo Yan Street (p241)
         if (p.sex === 'm' && r() < 0.015 && X.places.tinHau) { const t1 = J(H(14, 0), 150); if (!busy(t1, t1 + 40)) { at(t1, X.places.tinHau, 'asking the gods for luck at the Tin Hau Temple (天后廟) (p15)'); at(t1 + J(20, 6), home, 'at home'); block(t1, t1 + 30); } }
@@ -362,12 +379,13 @@ export function planDay(p, dow, X) {
       at(rubbishOut(go), OUT('at work outside the City'), 'at work outside the City');
       if (dz) { at(J(H(17, 40), 30), home, 'home early for 冬至'); dongzhi(); break; }
       let back;
-      if (sat && r() < 0.5) { at((back = J(H(13, 45), 30)), home, 'home after a half day'); afternoon(back + J(40, 10)); }
+      if (sat && r() < 0.5) { at((back = J(H(13, 45), 30)), home, 'home after a half day'); if (!haircut(back + J(40, 10), 'the afternoon at home')) afternoon(back + J(40, 10)); }
       else if (r() < 0.15) { at((back = (F ? F.dinner : H(19, 20)) + J(70, 30)), home, 'home late from work: a late dinner'); }
       else at((back = (F ? F.dinner : H(19, 20)) - J(22, 12)), home, 'home from work');
       // shopping on the way home: a resident of a high floor "每次回家前都會打電話給家人，看看還有
       // 什麼食品或日用品東西需要購置" (陳先生, Wen Wei Po (文匯報), 7 October 2024)
       if (r() < 0.12) store(back + J(12, 4), 'at home');
+      else if (!F || back < F.dinner - 60) haircut(back + J(15, 5), 'at home');
       fetch(back + 5, 'at home');
       if (F && back < F.dinner) dinner();
       evening(back);
@@ -379,8 +397,9 @@ export function planDay(p, dow, X) {
       const keeper = p.role === 'shopkeeper', w = p.work, sh = shift(w, keeper);
       if (!sh) {
         at(J(H(8, 0), 40), home, 'a day off at home');
-        if (!outing() && r() < 0.35) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); }
+        if (!outing() && r() < 0.35) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); block(H(9, 0), H(14, 30)); }
         fetch(J(H(16, 0), 60), 'at home');
+        haircut(J(H(15, 0), 60), 'a day off at home');
         if (dz) { dongzhi(); break; }
         dinner(); evening();
         at(J(H(23, 0), 30), home, 'asleep');
@@ -392,8 +411,8 @@ export function planDay(p, dow, X) {
       // a long day: dinner at work, brought from home or cooked there
       if (F && sh.t1 > F.dinner + 20) { at(F.dinner + J(5, 5), w, keeper ? 'dinner in the shop' : 'dinner at work'); at(F.dinner + J(35, 5), w, sh.what); }
       at(sh.t1, home, sh.t1 > H(22, 0) ? 'home, after the day in the shop' : 'home from work');
-      if (sh.t1 < H(16, 0)) afternoon(sh.t1 + J(40, 10));
-      else if (F && F.dinner - sh.t1 > 75) at(sh.t1 + J(30, 10), home, 'resting after work');
+      if (sh.t1 < H(16, 0)) { if (!haircut(sh.t1 + J(40, 10), 'the afternoon at home')) afternoon(sh.t1 + J(40, 10)); }
+      else if (F && F.dinner - sh.t1 > 75) { if (!haircut(sh.t1 + J(15, 5), 'resting after work')) at(sh.t1 + J(30, 10), home, 'resting after work'); }
       if (F && sh.t1 < F.dinner) dinner();
       else if (F && sh.t1 <= F.dinner + 20) at(sh.t1 + 3, home, 'a late dinner');
       if (sh.t1 < H(21, 0)) { fetch(sh.t1 + 5, 'at home'); evening(sh.t1); }
@@ -443,10 +462,16 @@ export function planDay(p, dow, X) {
       at(t + J(80, 15), home, 'cooking');
       const q = r(), fetchAt = q < 0.35 ? Math.max(t + 85, J(H(10, 15), 60)) : q < 0.8 ? J(H(15, 30), 60) : J(H(17, 0), 25);
       if (fetchAt < H(12, 0)) fetch(fetchAt, 'housework');
-      // the washing: in the corridor (p176), or on the roof (INFERRED shares)
-      const lq = r();
-      if (lq < 0.35) { const t = J(H(11, 0), 15); at(t, home, 'hanging the washing out to dry in the corridor (p176)'); at(t + 15, home, 'housework'); }
-      else if (lq < 0.5) { at(J(H(11, 0), 15), roof(), 'hanging the washing on the roof'); at(J(H(11, 30), 10), home, 'housework'); }
+      // the washing: in the well water of the pipes, which "could only be deployed for bathing and
+      // laundry" (p14); then out to dry in the corridor (p176), or on the roof (INFERRED shares)
+      const lq = r(), WASH = 'washing the clothes in the well water of the pipes, good only for bathing and laundry (p14)';
+      if (lq < 0.5) {
+        const t0 = freeAt(J(H(10, 25), 15), 55), t = t0 + J(35, 8);
+        at(t0, home, WASH);
+        if (lq < 0.35) { at(t, home, 'hanging the washing out to dry in the corridor (p176)'); at(t + 15, home, 'housework'); }
+        else { at(t, roof(), 'hanging the washing on the roof'); at(t + J(22, 5), home, 'housework'); }
+        block(t0, t + 22);
+      }
       // the temples: "women comprised the majority of visitors" of the Fuk Tak shrine (p32)
       if (r() < 0.05 && X.places.temple) { const t = J(H(9, 30), 30); at(t, X.places.temple, 'incense at the Fuk Tak shrine (福德古廟) (p32)'); at(t + J(25, 8), home, 'housework'); }
       if (kids) { const kin = [...F.kinder.values()][0]; at(F.kinderBack - 4, kin, 'fetching the children from the kindergarten'); at(F.kinderBack + 2, home, 'lunch'); }
@@ -473,6 +498,7 @@ export function planDay(p, dow, X) {
       if (hq < 0.15) { at(J(H(15, 30), 25), OUT('shopping'), 'shopping'); at(J(H(16, 30), 15), home, 'housework'); }
       else if (hq < 0.4) store(J(H(16, 40), 35), 'housework');
       else if (hq < 0.41 && X.places.yard) { const t1 = J(H(14, 50), 20); at(t1, X.places.yard, 'preparing the vegetables for dinner in the Yamen courtyard (p299)'); at(t1 + J(50, 10), home, 'housework'); block(t1, t1 + 50); }
+      haircut(J(H(14, 40), 30), 'housework');
       if (r() < 0.12) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 40), 10), home, 'housework'); }
       at((F ? F.dinner : H(19, 0)) - J(75, 15), home, 'cooking dinner');
       dinner();
@@ -552,6 +578,7 @@ export function planDay(p, dow, X) {
         if (h2 && t1 < H(18, 20)) { at(t1, h2, 'calling at the home of a friend from the Centre who has not come for two days (p306)'); at(t1 + J(25, 5), home, 'resting'); block(t1, t1 + 25); }
       }
       if (!room && !minds && r() < 0.1) store(J(H(16, 0), 60), 'resting');
+      else if (!minds) haircut(r() < 0.5 ? J(H(10, 0), 40) : J(H(15, 0), 50), care);
       if (outing()) {}
       if (dz) { dongzhi(18); break; }
       // "A grandmother would keep her eye on her own grandchildren as well as the children of
@@ -596,7 +623,10 @@ export function planDay(p, dow, X) {
       for (let k = 0; k < n; k++) {
         let s0 = t0 + 30 + (k * 480) / n + q() * 60;
         if (s0 < 0) s0 += 1440; // the night shift: its patrols after midnight are today's
-        for (let t = s0, e = s0 + 35 + q() * 20; t < e; t += 9 + q() * 6) at(t, q() < 0.15 ? X.anyRoof(q) : X.streetSpot(q), 'on the beat (pp251, 283)');
+        // on the roofs, the pigeon keeper meets "a few policemen. They are transferred to new beats
+        // every three months and are often new to the Walled City, so I have to show them the way"
+        // (Chan Kwan Leung (陳昆亮), p319)
+        for (let t = s0, e = s0 + 35 + q() * 20; t < e; t += 9 + q() * 6) { const up = q() < 0.15; at(t, up ? X.anyRoof(q) : X.streetSpot(q), up ? 'on the beat across the roofs, often new to the City (p319)' : 'on the beat (pp251, 283)'); }
         at(s0 + 60, post, post.what);
       }
       break;

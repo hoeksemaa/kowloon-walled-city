@@ -148,7 +148,8 @@ export class Life {
     const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
     // The stores of the City: each home goes to the nearest one (one search, as for the standpipes).
     this.trees.stores = places.shops.length ? nav.tree(places.shops.map((q) => q.node)) : null;
-    const storeAt = new Map(places.shops.map((q) => [q.node, q])), storeOf = new Map(), foodOf = new Map();
+    const storeAt = new Map(places.shops.map((q) => [q.node, q])), storeOf = new Map(), foodOf = new Map(), barberOf = new Map();
+    const barber = pop.persons.find((q) => q.real === 'ho-chi-kam')?.work || null;
     const houseMemo = new Map();
     // the lanes of the named streets: the main streets of the police beats
     const streetNodes = [];
@@ -214,6 +215,12 @@ export class Life {
       pipeFor: (pl) => nearest(this.pipeTree, pipeAt, pipeOf, pl),
       refuseFor: (pl) => nearest(this.trees.refuse, refuseAt, refuseOf, pl),
       storeFor: (pl) => nearest(this.trees.stores, storeAt, storeOf, pl),
+      // the barber's shop of Ho Chi Kam (何智錦), for the people who live within 20 m of it (p28; INFERRED distance)
+      barberFor: (pl) => {
+        if (!barber || !pl || pl.b === undefined) return null;
+        if (!barberOf.has(pl.b)) { const B = S.list[pl.b], C = S.list[barber.b]; barberOf.set(pl.b, Math.hypot(C.cx - B.cx, C.cz - B.cz) < 20); }
+        return barberOf.get(pl.b) ? barber : null;
+      },
       // one of the three food workshops nearest a home (straight, between the buildings); i picks one
       foodNear: (pl, i = 0) => {
         if (!pl || pl.b === undefined || !places.foodfacs.length) return null;
