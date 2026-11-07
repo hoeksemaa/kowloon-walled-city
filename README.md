@@ -272,7 +272,10 @@ Yamen courtyard to chat or to prepare vegetables (p299). On Sunday 10 to 20 peop
 service of the Salvation Army (救世軍) chapel (p301), and some men ask the gods for luck at the
 Tin Hau Temple (天后廟) (p15). The amateur Chinese orchestra plays on two evenings (p15). The
 children of the Salvation Army kindergarten go on an outing to Kowloon Park on Thursday (p300).
-On Sunday, the day before 冬至, some old women help at the food workshops on a daily rate (p44). Taxi
+On Sunday, the day before 冬至, some old women help at the food workshops on a daily rate (p44).
+On Sunday afternoon about 50 old people go to the annual Christmas party of the Kai Fong
+Association (九龍城砦街坊福利事業促進委員會), in the large room off its office (p180). The source
+gives no date: the day and the hours are INFERRED. Taxi
 drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Porters carry sacks of flour in
 from the road to the food workshops in the morning, and the packed goods of the workshops out
 on delivery trolleys in the afternoon (pp176, 249). Who goes, when, and the days are INFERRED.

@@ -9128,7 +9128,7 @@
    "kind": "table",
    "what": "The annual Christmas party for elderly residents in the large room next to the Kai Fong office: folding tables and chairs.",
    "where": "Kai Fong Association, 3/F, 16 Tung Tau Tsuen Road (B10)",
-   "when": "date of the party not given",
+   "when": "date of the party not given; the model holds it on Sun 21 Dec 1986, 14:30-17:00 (inferred)",
    "basis": "sourced",
    "facts": [
     "F46",

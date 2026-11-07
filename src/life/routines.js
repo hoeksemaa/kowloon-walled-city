@@ -624,6 +624,10 @@ export function planDay(p, dow, X) {
         block(F.pickup - 15, F.pickup + 20);
       }
       fill();
+      // The Kai Fong Association held "an annual Christmas party for elderly residents" in "a large
+      // room off the office" (p180). The day (Sunday 21 December, the last Sunday before Christmas),
+      // the hours and the guests are INFERRED; the source gives no date.
+      if (sun && !room && !minds && X.partyGuest?.(p)) visit(H(14, 30), H(17, 0), X.places.kaifong, 'at the annual Christmas party of the Kai Fong Association (九龍城砦街坊福利事業促進委員會) for the old people of the City (p180)', 'resting');
       // The Old People's Centre (172:2:1): 184 members (p305); afternoon tea and television
       // (p306), and later mornings too (p308); Sunday worship for the Christians (p305).
       const C = X.places.centre, goes = p.centre === 'daily' || (p.centre === 'some' && (p.id + dow) % 3 === 0);
