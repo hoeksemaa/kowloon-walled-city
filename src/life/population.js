@@ -45,6 +45,8 @@ export const OUTSIDERS = {
   patient: { label: 'patient from outside the City (pp187, 242)', n: 2400, ages: [3, 85] },
   // Taxi drivers at the cafés by Tung Tsing Road (東正道) (p294): how many is INFERRED.
   taxi: { label: 'taxi driver (p294)', n: 40, ages: [25, 60] },
+  // Porters: "men carrying sacks of flour" were "an everyday sight" (p249). How many is INFERRED.
+  porter: { label: 'porter (p249)', n: 24, ages: [20, 55] },
 };
 
 // Workers in a workplace: one for each so many m² of floor (INFERRED). A workshop of 480 sq ft
@@ -304,10 +306,10 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     const work = popSeat(handSeats) || popSeat(keeperSeats) || pick(rng, works);
     persons.push({ id: persons.length, kind: 'outsider', role: 'day_worker', age: Math.round(16 + rng() * 44), sex: rng() < 0.5 ? 'f' : 'm', home: null, work, seed: rng() });
   }
-  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient', 'taxi'])
+  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient', 'taxi', 'porter'])
     for (let i = 0; i < O[role].n; i++) {
       const [a0, a1] = O[role].ages;
-      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: role === 'police' || role === 'refuse' || role === 'taxi' ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
+      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: role === 'police' || role === 'refuse' || role === 'taxi' || role === 'porter' ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
     }
 
   // ---- the real people (data/routines.json, data/people.json) ----

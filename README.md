@@ -270,8 +270,9 @@ service of the Salvation Army (救世軍) chapel (p301), and some men ask the go
 Tin Hau Temple (天后廟) (p15). The amateur Chinese orchestra plays on two evenings (p15). The
 children of the Salvation Army kindergarten go on an outing to Kowloon Park on Thursday (p300).
 On the day before 冬至, some old women help at the food workshops on a daily rate (p44). Taxi
-drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Who goes, when, and the days are
-INFERRED.
+drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Porters carry sacks of flour in
+from the road to the food workshops in the morning, and the packed goods of the workshops out
+on delivery trolleys in the afternoon (pp176, 249). Who goes, when, and the days are INFERRED.
 
 At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
 most flats in the evening, a few after midnight when the water comes, many again before dawn.
