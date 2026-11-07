@@ -82,7 +82,10 @@ orders until 2 or 3 am (p237). The Old People's Centre (老人中心) with 184 m
 (p160), children kept in the flats (p300), grandmothers who mind the children (pp54, 322), outwork at home (p88),
 patients from outside (p187) and the police beats (pp251, 283). Lodgers who rent a room (p157), for about 10,000
 families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); families who live in their shop or clinic
-(pp94, 245) or spend the evening in their workshop (p173); a workshop guarded at night (p169).</p>
+(pp94, 245) or spend the evening in their workshop (p173); a workshop guarded at night (p169). The stores, busiest from
+5 to 9 pm (p93), and the small stores of the upper floors (p175); the park (p80); the Yamen courtyard (p299); the
+Salvation Army (救世軍) chapel (p301); the Tin Hau Temple (天后廟) (p15); the orchestra (p15); the kindergarten outings
+(p300); the daily-rate helpers (p44); the taxi drivers at the cafés (p294).</p>
 <p><span class="st prov">INFERRED</span>The other hours, the nights of the rush orders, the tea houses, the morning
 exercise on the roofs, and the share of the people who do each thing.</p>
 <p><span class="st prov">INFERRED</span>The roles, households, homes, workplaces and hours of the crowd, who have

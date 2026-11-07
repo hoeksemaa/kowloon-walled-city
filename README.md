@@ -262,6 +262,17 @@ in from outside to the doctors and the dentists (pp187, 242), and factory worker
 Sunday surgery (p187). Six constables walk the beats, two on each of three shifts, with at
 least one patrol in each shift (pp251, 283).
 
+The errands and the meeting places. People buy at the nearest store of the City, most from 5 to
+9 pm (p93), and the small stores on the upper floors are places to stop and chat (p175). Old
+people go to the park next to the City in the morning (p80). Some residents bring chairs to the
+Yamen courtyard to chat or to prepare vegetables (p299). On Sunday 10 to 20 people go to the
+service of the Salvation Army (救世軍) chapel (p301), and some men ask the gods for luck at the
+Tin Hau Temple (天后廟) (p15). The amateur Chinese orchestra plays on two evenings (p15). The
+children of the Salvation Army kindergarten go on an outing to Kowloon Park on Thursday (p300).
+On the day before 冬至, some old women help at the food workshops on a daily rate (p44). Taxi
+drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Who goes, when, and the days are
+INFERRED.
+
 At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
 most flats in the evening, a few after midnight when the water comes, many again before dawn.
 The flats have tungsten bulbs and the corridors fluorescent tubes (Girard and Lambot to HK01);
