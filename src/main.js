@@ -31,6 +31,7 @@ import { Life } from './life/sim.js';
 import { Figures } from './life/figures.js';
 import { Furnish, ITEM_KIND, thingsHtml } from './life/furnish.js';
 import { Casebook } from './life/mysteries.js';
+import { StreetNames } from './streetNames.js';
 import { personHtml, personTip } from './life/personPanel.js';
 
 const START_MINUTE = 9 * 60 + 45;
@@ -82,7 +83,7 @@ const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: S
 // The clock of the week: day 0 is Tuesday 16 December 1986.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
-let pop, life, figures, furnish, cases;
+let pop, life, figures, furnish, cases, streets;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
@@ -123,6 +124,9 @@ async function init() {
   // The plates of the floor layers use the pixel font: wait for it, but not for ever.
   await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
   layers.makeTags('Silkscreen, monospace');
+  // the names of the streets of the City and of the roads round it (after the font: the plates use it)
+  streets = new StreetNames(S, layers, D.context, (x, z) => T.h(x, z));
+  scene.add(streets.group);
 
   buildUI();
   resize();
@@ -567,6 +571,7 @@ function frame(now) {
   controls.update();
   camera.updateMatrixWorld();
   layers.sizeTags(camera, innerHeight);
+  streets.update(camera, innerHeight);
   if (frameN % 3 === 0 && mouse.moved) updateHover();
   clockT += dt;
   if (clockT > 0.25) { clockT = 0; updateClock(); }

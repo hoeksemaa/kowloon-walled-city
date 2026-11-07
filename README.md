@@ -241,6 +241,14 @@ Until a case is solved, its person is "SOMEONE" in the box under the pointer, an
 the sources that would give the answer away show no name. The browser keeps the solved cases
 (`src/life/mysteries.js`).
 
+### The street names
+
+A dark plate names each named lane of the plan, with its Chinese name, for example
+Lung Shing Road (龍城路), and each real road beside the City, for example Tung Tsing Road
+(東正道) (`src/streetNames.js`). A lane plate stands over its lane at the height of the roofs
+beside it. When the floors are pulled apart, it goes down to the lane; when a storey is peeled,
+it stands at that storey. The clues of the mysteries name these streets.
+
 ### Not yet on the structure
 
 These parts sat on the old 3D city of the main app. They come back when they move onto the
@@ -250,8 +258,8 @@ the lit windows of the night, which must be made again:
 - the old people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
   `figures.js`) and the game Find them 尋人 (`game.js`): the people of `src/life/` replace
   them;
-- the street names, the numbers of the 1992 map and the road names (`labels.js`,
-  `occlude.js`, `roadRuns` in `context.js`);
+- the numbers of the 1992 map (`labels.js`, `occlude.js`; `src/streetNames.js` now gives
+  the street names and the road names);
 - the floor-use legend of a cut storey (`useMap.js`), and the ghosts of the real buildings
   that hide the City (`Ghosts` in `env.js`).
 
