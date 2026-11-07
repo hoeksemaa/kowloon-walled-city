@@ -59,6 +59,9 @@ export class Life {
     const places = {
       standpipe, kinder: P('185:0:1'), candy: P('271:0:0'), centre: P('172:2:1'), tutor: P('262:2:0'), temple: P('74:0:0'),
       eating: units((r) => r.cat === 'eating'),
+      shops: units((r) => r.cat === 'shop').map((q) => ({ ...q, tree: 'stores' })),
+      foodfacs: units((r) => r.cat === 'foodfac'),
+      tinHau: P('54:0:0'), music: P('157:3:0'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
     const homes = pop.homes;
@@ -106,6 +109,14 @@ export class Life {
       if (best >= 0) pipes.push({ kind: 'lane', node: best, b, tree: 'pipes', queue: true, key: `standpipe:${pipes.length}`, label: pipes.length ? 'at a Government standpipe outside the City' : 'at the Government standpipe of Tai Chang Street (大井街)' });
     }
     this.pipes = pipes;
+    // The cafés of the east edge, by Tung Tsing Road (東正道), where the taxi drivers ate (p294).
+    places.cafes = places.eating.filter((q) => q.k === 0 && S.list[q.b].cx > 84);
+    // The Yamen courtyard (p299): the lane nearest the middle of the Yamen buildings.
+    {
+      const yam = S.list.filter((B) => /Yamen/.test(B.label));
+      const v = yam.length ? laneNear(yam.reduce((t, B) => t + B.cx, 0) / yam.length, yam.reduce((t, B) => t + B.cz, 0) / yam.length, 20) : -1;
+      if (v >= 0) places.yard = { kind: 'lane', node: v, key: 'yamen-yard', label: 'in the Yamen courtyard', spread: 12 };
+    }
     this.pipeTree = pipes.length ? nav.tree(pipes.map((q) => q.node)) : null;
     this.trees = { pipes: this.pipeTree };
     // The 23 refuse points of the named lanes (data/utilities.json, placement), where the
@@ -131,6 +142,9 @@ export class Life {
       return q;
     };
     const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
+    // The stores of the City: each home goes to the nearest one (one search, as for the standpipes).
+    this.trees.stores = places.shops.length ? nav.tree(places.shops.map((q) => q.node)) : null;
+    const storeAt = new Map(places.shops.map((q) => [q.node, q])), storeOf = new Map();
     const houseMemo = new Map();
     // the lanes of the named streets: the main streets of the police beats
     const streetNodes = [];
@@ -178,6 +192,7 @@ export class Life {
       },
       pipeFor: (pl) => nearest(this.pipeTree, pipeAt, pipeOf, pl),
       refuseFor: (pl) => nearest(this.trees.refuse, refuseAt, refuseOf, pl),
+      storeFor: (pl) => nearest(this.trees.stores, storeAt, storeOf, pl),
       // The household of person p on day dow (routines.js planHouse), kept for the day.
       house: (p, dow) => {
         const key = dow * 1e6 + p.hh;
@@ -310,6 +325,17 @@ export class Life {
         if (c >= 0 && R.inside[c]) return [x, B.top, z, B.n, 0];
       }
       return [base[0], B.top, base[2], B.n, 0];
+    }
+    // an open place (the Yamen courtyard): a spot on a lane cell within `spread` m of the node
+    if (pl.spread) {
+      const L = this.S.L;
+      for (let t = 0; t < 10; t++) {
+        const x = base[0] + (r() - 0.5) * pl.spread, z = base[2] + (r() - 0.5) * pl.spread;
+        const cx = Math.floor(x - L.x0), cz = Math.floor(z - L.z0), k = cz * L.W + cx;
+        if (cx < 0 || cz < 0 || cx >= L.W || cz >= L.D) continue;
+        const v = this.S.laneNode[k];
+        if (v >= 0) return [x, nav.y[v], z, base[3], 0];
+      }
     }
     const w = pl.queue ? 2.6 : 0.6; // a queue at a standpipe
     return [base[0] + (r() - 0.5) * w, base[1], base[2] + (r() - 0.5) * w, base[3], 0];

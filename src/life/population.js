@@ -43,6 +43,8 @@ export const OUTSIDERS = {
   refuse: { label: 'refuse collector of the Urban Services Department (p104)', n: 3, ages: [25, 60] },
   meter: { label: 'electricity meter reader (p98)', n: 2, ages: [25, 50] },
   patient: { label: 'patient from outside the City (pp187, 242)', n: 2400, ages: [3, 85] },
+  // Taxi drivers at the cafés by Tung Tsing Road (東正道) (p294): how many is INFERRED.
+  taxi: { label: 'taxi driver (p294)', n: 40, ages: [25, 60] },
 };
 
 // Workers in a workplace: one for each so many m² of floor (INFERRED). A workshop of 480 sq ft
@@ -248,6 +250,14 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
   for (let i = olds.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [olds[i], olds[j]] = [olds[j], olds[i]]; }
   const members = [...olds.filter((p) => p.sex === 'f').slice(0, 138), ...olds.filter((p) => p.sex === 'm').slice(0, 46)];
   members.forEach((p, q) => { p.centre = q % 5 < 2 ? 'daily' : 'some'; if (q % 4 === 0) p.worship = true; });
+  // The Sunday chapel of the Salvation Army (救世軍): "On Sundays, our premises become a chapel and
+  // we usually have 10 to 20 people attending our services" (p301). Which people is INFERRED:
+  // 15 old people who do not worship at the Centre.
+  olds.filter((p) => !p.worship).slice(-15).forEach((p) => { p.chapel = true; });
+  // The amateur Chinese orchestra: "twice a week their plangent, melancholy music echoed through
+  // the rancid alleys" (p15). INFERRED: it plays in the room of the Chiu Chow Music Club
+  // (157:3:0, data/room_uses.json A19), with 16 men of 35 or more.
+  persons.filter((p) => p.sex === 'm' && p.age >= 35 && p.home && (p.seed * 977) % 1 < 0.004).slice(0, 16).forEach((p) => { p.music = true; });
 
   // ---- the workplaces: owners and keepers, then the workers of the City, then the day workers ----
   // The jobs of the City: the residents who work in it, and the 4,800 who come in (pp339-340),
@@ -294,10 +304,10 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     const work = popSeat(handSeats) || popSeat(keeperSeats) || pick(rng, works);
     persons.push({ id: persons.length, kind: 'outsider', role: 'day_worker', age: Math.round(16 + rng() * 44), sex: rng() < 0.5 ? 'f' : 'm', home: null, work, seed: rng() });
   }
-  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient'])
+  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient', 'taxi'])
     for (let i = 0; i < O[role].n; i++) {
       const [a0, a1] = O[role].ages;
-      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: role === 'police' || role === 'refuse' ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
+      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: role === 'police' || role === 'refuse' || role === 'taxi' ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
     }
 
   // ---- the real people (data/routines.json, data/people.json) ----
