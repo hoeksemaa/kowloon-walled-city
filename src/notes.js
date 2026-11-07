@@ -81,6 +81,6 @@ source; an hour or a room that only the model gives is marked inferred.</p>
 the meter boards, the pipes over the lanes, the lamps, the refuse points. <span class="st ok">SOURCED</span>Their look, the one
 standpipe in the City (p106), a meter for each unit, and the 200 public lights lit 24 hours a day.</p>
 <h4>Not yet on this structure</h4>
-<p>The street names and the numbers of the 1992 map sat on the old city of this app. They come back in
-later changes, on this structure.</p>`;
+<p>The numbers of the 1992 map sat on the old city of this app. They come back in a later change, on
+this structure. The street names and the road names are back (src/streetNames.js).</p>`;
 }
