@@ -44,68 +44,82 @@
 <body>
   <canvas id="scene"></canvas>
 
-  <!-- The bar at the top (style.css: mobile first; a wide screen has the same design with more
-       room). The colon of the time blinks while the clock runs. -->
+  <!-- The title box at the top left: the name of the City, the date and the time. The colon of
+       the time blinks while the clock runs. The box never reaches the menu button at the top
+       right (style.css). -->
   <header id="title" class="panel">
-    <div class="t-cn">九龍城寨</div>
-    <div class="t-en">KOWLOON WALLED CITY</div>
+    <div class="t-name"><span class="t-cn">九龍城寨</span> <span class="t-en">KOWLOON WALLED CITY</span></div>
     <div class="t-time"><span id="t-date">MON 15 DEC 1986</span> · <span id="t-h">09</span><span id="t-colon">:</span><span id="t-m">45</span><span id="t-paused"></span></div>
   </header>
 
-  <!-- One button opens the menu: the clock, the tool, the storeys, the mysteries and the sources
-       in one sheet. -->
-  <button id="menu-btn" class="panel" aria-expanded="false" aria-controls="menu" title="The menu: the time, the floors, the mysteries and the sources (M)">
-    <svg viewBox="0 0 7 6" width="14" height="12" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h7v1H0z M0 2.5h7v1H0z M0 5h7v1H0z" fill="currentColor"/></svg>
-    <span>MENU</span>
+  <!-- The menu button at the top right: an icon only. It opens the tools, a column of icons that
+       comes down from it; a tap off the icons closes the column. Each tool opens its own sheet. -->
+  <button id="menu-btn" class="panel" aria-expanded="false" aria-controls="tools" aria-label="Tools" title="The tools: the time, the floors, the mysteries and the sources (M)">
+    <svg viewBox="0 0 9 7" width="18" height="14" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v1H0z M0 3h9v1H0z M0 6h9v1H0z" fill="currentColor"/></svg>
   </button>
+  <nav id="tools" aria-label="Tools">
+    <button class="ti panel" id="ti-time" data-tool="time" style="--i: 0" aria-expanded="false" aria-controls="time" aria-label="Time" title="The time: the weather of the day, the clock and its speed">
+      <svg viewBox="0 0 12 12" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true"><path d="M3 0h6v1H3z M1 1h2v1H1z M9 1h2v1H9z M1 2h1v1H1z M10 2h1v1h-1z M0 3h1v6H0z M11 3h1v6h-1z M1 9h1v1H1z M10 9h1v1h-1z M1 10h2v1H1z M9 10h2v1H9z M3 11h6v1H3z M5 3h1v4H5z M6 6h3v1H6z" fill="currentColor"/></svg>
+    </button>
+    <button class="ti panel" id="ti-floors" data-tool="floors" style="--i: 1" aria-expanded="false" aria-controls="floors" aria-label="Floors" title="The floors: pull them apart, or peel the City to one storey">
+      <svg viewBox="0 0 12 12" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true"><path d="M4 0h4v1H4z M2 1h8v1H2z M0 2h12v1H0z M2 3h8v1H2z M4 4h4v1H4z M0 5h2v1H0z M10 5h2v1h-2z M2 6h2v1H2z M8 6h2v1H8z M4 7h4v1H4z M0 8h2v1H0z M10 8h2v1h-2z M2 9h2v1H2z M8 9h2v1H8z M4 10h4v1H4z" fill="currentColor"/></svg>
+    </button>
+    <button class="ti panel" id="ti-cases" data-tool="cases" style="--i: 2" aria-expanded="false" aria-controls="cases" aria-label="Mysteries" title="The ten mysteries: find real people of the City">
+      <svg viewBox="0 0 12 12" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true"><path d="M2 0h4v1H2z M1 1h1v1H1z M6 1h1v1H6z M0 2h1v4H0z M7 2h1v4H7z M1 6h1v1H1z M6 6h1v1H6z M2 7h4v1H2z M7 7h2v2H7z M8 8h2v2H8z M9 9h2v2H9z M10 10h2v2h-2z" fill="currentColor"/></svg>
+    </button>
+    <button class="ti panel" id="ti-sources" data-tool="sources" style="--i: 3" aria-expanded="false" aria-controls="sources" aria-label="Sources and notes" title="The sources and the notes">
+      <svg viewBox="0 0 12 12" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true"><path d="M1 1h4v1H1z M7 1h4v1H7z M0 2h1v8H0z M11 2h1v8h-1z M5 2h2v9H5z M0 10h5v1H0z M7 10h5v1H7z M2 4h2v1H2z M2 6h2v1H2z M2 8h2v1H2z M8 4h2v1H8z M8 6h2v1H8z M8 8h2v1H8z" fill="currentColor"/></svg>
+    </button>
+  </nav>
 
-  <div id="menu" class="panel">
+  <!-- The sheet of the time: the weather of the day, the day and the speeds of the clock. -->
+  <section id="time" class="panel sheet" hidden aria-label="Time">
     <div class="m-head">
-      <span>MENU</span>
-      <button id="menu-close" class="x-btn" title="Close the menu" aria-label="Close the menu">
+      <span>TIME</span>
+      <button class="x-btn" data-close title="Close (Esc)" aria-label="Close the time">
         <svg viewBox="0 0 8 8" width="8" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h2v1H0z M6 0h2v1H6z M1 1h2v1H1z M5 1h2v1H5z M2 2h4v1H2z M3 3h2v2H3z M2 5h4v1H2z M1 6h2v1H1z M5 6h2v1H5z M0 7h2v1H0z M6 7h2v1H6z" fill="currentColor"/></svg>
       </button>
     </div>
+    <div class="m-h" title="The daily data of the Hong Kong Observatory (data/weather.json)">WEATHER · HONG KONG OBSERVATORY (香港天文台)</div>
+    <div id="wx"></div>
+    <div id="spark" title="The day: night shaded. Click to set the time.">
+      <canvas id="spark-c" width="288" height="44"></canvas>
+      <i id="playhead"></i>
+    </div>
+    <div class="speeds" id="speeds">
+      <button aria-pressed="false"><svg viewBox="0 0 6 7" width="12" height="14" shape-rendering="crispEdges"><path d="M0 0h2v7H0z M4 0h2v7H4z" fill="currentColor"/></svg></button>
+      <button aria-pressed="true" class="on"><svg viewBox="0 0 4 7" width="8" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+      <button aria-pressed="false"><svg viewBox="0 0 9 7" width="18" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+      <button aria-pressed="false"><svg viewBox="0 0 14 7" width="28" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M10 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
+    </div>
+  </section>
 
-    <nav id="toolbar" aria-label="Tools">
-      <button class="tool" id="t-explode" title="Pull the floors apart: G/F, 1/F, 2/F… each in its own layer (E)" aria-pressed="false">
-        <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
-        <span class="tool-l">PULL THE FLOORS APART</span>
+  <!-- The sheet of the floors: pull them apart, and peel the City to one storey. -->
+  <section id="floors" class="panel sheet" hidden aria-label="Floors">
+    <div class="m-head">
+      <span>FLOORS</span>
+      <button class="x-btn" data-close title="Close (Esc)" aria-label="Close the floors">
+        <svg viewBox="0 0 8 8" width="8" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h2v1H0z M6 0h2v1H6z M1 1h2v1H1z M5 1h2v1H5z M2 2h4v1H2z M3 3h2v2H3z M2 5h4v1H2z M1 6h2v1H1z M5 6h2v1H5z M0 7h2v1H0z M6 7h2v1H6z" fill="currentColor"/></svg>
       </button>
-    </nav>
-
-    <button id="case-btn" aria-pressed="false" title="The ten mysteries: find real people of the City (a circle for each case, filled when it is solved)">
-      <span class="cb-l">MYSTERIES</span><span id="case-dots"></span>
+    </div>
+    <button class="tool" id="t-explode" title="Pull the floors apart: G/F, 1/F, 2/F… each in its own layer (E)" aria-pressed="false">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path d="M2 3h9l3 2H5z M2 7h9l3 2H5z M2 11h9l3 2H5z" fill="currentColor"/></svg>
+      <span class="tool-l">PULL THE FLOORS APART</span>
     </button>
-    <aside id="rail" aria-label="Storeys">
+    <div id="rail" aria-label="Storeys">
       <div class="m-h">PEEL THE CITY TO ONE STOREY</div>
       <ol id="levels"></ol>
-    </aside>
+    </div>
+  </section>
 
-    <section id="clock" aria-label="Time">
-      <div class="m-h" title="The daily data of the Hong Kong Observatory (data/weather.json)">WEATHER · HONG KONG OBSERVATORY (香港天文台)</div>
-      <div id="wx"></div>
-      <div id="spark" title="The day: night shaded. Click to set the time.">
-        <canvas id="spark-c" width="288" height="44"></canvas>
-        <i id="playhead"></i>
-      </div>
-      <div class="clk-row speeds" id="speeds">
-        <button aria-pressed="false"><svg viewBox="0 0 6 7" width="12" height="14" shape-rendering="crispEdges"><path d="M0 0h2v7H0z M4 0h2v7H4z" fill="currentColor"/></svg></button>
-        <button aria-pressed="true" class="on"><svg viewBox="0 0 4 7" width="8" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-        <button aria-pressed="false"><svg viewBox="0 0 9 7" width="18" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-        <button aria-pressed="false"><svg viewBox="0 0 14 7" width="28" height="14" shape-rendering="crispEdges"><path d="M0 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M5 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z M10 0h1v1h1v1h1v1h1v1h-1v1h-1v1h-1v1h-1z" fill="currentColor"/></svg></button>
-      </div>
-    </section>
-
-    <button id="src-btn">SOURCES + NOTES</button>
-    <p class="m-hint">
-      <span class="h-touch">DRAG TO TURN · PINCH TO ZOOM · TWO FINGERS TO PAN · TAP A BUILDING OR A PERSON</span>
-      <span class="h-mouse">DRAG TO TURN · RIGHT-DRAG TO PAN · SCROLL TO ZOOM · CLICK A BUILDING OR A PERSON<br>KEYS: M MENU · E FLOORS APART · ↑↓ STOREYS · SPACE PAUSE · 1 2 3 SPEED · ESC BACK</span>
-    </p>
-  </div>
-
-  <section id="cases" class="panel" hidden aria-label="Mysteries">
-    <button id="cases-close" title="Close the mysteries (Esc)" aria-label="Close the mysteries">×</button>
+  <!-- The sheet of the mysteries (life/mysteries.js). -->
+  <section id="cases" class="panel sheet" hidden aria-label="Mysteries">
+    <div class="m-head">
+      <span>MYSTERIES</span>
+      <button class="x-btn" data-close title="Close (Esc)" aria-label="Close the mysteries">
+        <svg viewBox="0 0 8 8" width="8" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h2v1H0z M6 0h2v1H6z M1 1h2v1H1z M5 1h2v1H5z M2 2h4v1H2z M3 3h2v2H3z M2 5h4v1H2z M1 6h2v1H1z M5 6h2v1H5z M0 7h2v1H0z M6 7h2v1H6z" fill="currentColor"/></svg>
+      </button>
+    </div>
     <div id="cases-body"></div>
   </section>
   <div id="found" role="status"></div>
@@ -122,10 +136,19 @@
 
   <div id="tooltip" role="status"></div>
 
-  <section id="sources" class="panel" hidden>
-    <button id="src-close" title="Close">×</button>
-    <h2>Sources and notes</h2>
+  <!-- The sheet of the sources and the notes (notes.js), with the hint of the controls. -->
+  <section id="sources" class="panel sheet" hidden aria-label="Sources and notes">
+    <div class="m-head">
+      <span>SOURCES AND NOTES</span>
+      <button class="x-btn" data-close title="Close (Esc)" aria-label="Close the sources">
+        <svg viewBox="0 0 8 8" width="8" height="8" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h2v1H0z M6 0h2v1H6z M1 1h2v1H1z M5 1h2v1H5z M2 2h4v1H2z M3 3h2v2H3z M2 5h4v1H2z M1 6h2v1H1z M5 6h2v1H5z M0 7h2v1H0z M6 7h2v1H6z" fill="currentColor"/></svg>
+      </button>
+    </div>
     <p id="src-stats"></p>
+    <p class="m-hint">
+      <span class="h-touch">DRAG TO TURN · PINCH TO ZOOM · TWO FINGERS TO PAN · TAP A BUILDING OR A PERSON</span>
+      <span class="h-mouse">DRAG TO TURN · RIGHT-DRAG TO PAN · SCROLL TO ZOOM · CLICK A BUILDING OR A PERSON<br>KEYS: M TOOLS · E FLOORS APART · ↑↓ STOREYS · SPACE PAUSE · 1 2 3 SPEED · ESC BACK</span>
+    </p>
     <div id="src-body"></div>
   </section>
 
