@@ -303,6 +303,13 @@ for some soy sauce: "Swapping ingredients through windows like this happened reg
 Cheung-chuen (陳祥全), M+ audio guide 8038). Some owners of workshops and shops play mahjong with
 other bosses after work (林羅平, HK01, 20 July 2024). Which families, and how often, are INFERRED.
 
+Beside the free-school centre was the youth centre of the Hong Kong Federation of Youth Groups
+(香港青年協會), "有不少年青人流連" (many young people spent their time there; HK01, 2016). Some
+secondary-school students go there after school, and some young workers in the evening. On a
+few nights a teenager stays there until about 10 pm; now and then the mother goes to fetch them:
+"When they were out late at night, I might occasionally go out to fetch them and accompany them
+home" (Chung Lo Ying (鍾太), p158). How many, and the hours, are INFERRED.
+
 "A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
 in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
 corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for

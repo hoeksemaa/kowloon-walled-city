@@ -66,6 +66,9 @@ export class Life {
       // Jackie Pullinger (潘靈卓): the Shuiyuan youth centre on Tai Chang Street (pp258-260) and the
       // St Stephen's Society, where the daily prayer is (p263)
       shuiyuan: P('254:0:3'), society: P('237:0:0'),
+      // the youth centre of the Hong Kong Federation of Youth Groups (香港青年協會), beside the
+      // free-school centre: "有不少年青人流連" (HK01, 2016; room_uses T30)
+      youth: P('99:3:4'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
     const homes = pop.homes;
