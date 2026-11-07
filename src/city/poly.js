@@ -99,8 +99,8 @@ export function offsetRing(pts, off) {
   return out;
 }
 
-// A frame for a building: a along its long side, w across it (frameOf in floorplan.js gives the
-// box). toXZ and toAW turn points between the plan and the frame.
+// A frame for a building: a along its long side, w across it. toXZ and toAW turn points between
+// the plan and the frame.
 export const toXZ = (F, a, w) => [F.ux * a + F.px * w, F.uz * a + F.pz * w];
 export const toAW = (F, x, z) => [x * F.ux + z * F.uz, x * F.px + z * F.pz];
 
@@ -133,23 +133,4 @@ export class Raster {
     return i < 0 || j < 0 || i >= this.ni || j >= this.nj ? -1 : j * this.ni + i;
   }
   cellXZ(x, z) { const [a, w] = toAW(this.F, x, z); return this.cellAW(a, w); }
-}
-
-// The intervals of t where the line p + t * dir is inside the rings (even-odd).
-export function clipLine(rings, p, dir) {
-  const ts = [];
-  for (const r of rings)
-    for (let i = 0; i < r.length; i++) {
-      const a = r[i], b = r[(i + 1) % r.length];
-      const ex = b[0] - a[0], ez = b[1] - a[1];
-      const den = dir[0] * ez - dir[1] * ex;
-      if (Math.abs(den) < 1e-12) continue;
-      const wx = a[0] - p[0], wz = a[1] - p[1];
-      const t = (wx * ez - wz * ex) / den, u = (wx * dir[1] - wz * dir[0]) / den;
-      if (u >= 0 && u < 1) ts.push(t);
-    }
-  ts.sort((x, y) => x - y);
-  const out = [];
-  for (let q = 0; q + 1 < ts.length; q += 2) out.push([ts[q], ts[q + 1]]);
-  return out;
 }

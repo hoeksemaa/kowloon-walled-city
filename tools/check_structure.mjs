@@ -34,7 +34,7 @@ const fixes = json('data/structure_fixes.json');
 const fixed = applyFixes(json('data/plan.json'), json('data/book_overlay.json'), fixes, process.env.COARSE ? null : json('data/plan_fine.json'));
 book.overlay = fixed.overlay;
 // no data/context.json: the City model does not depend on its surroundings
-const L = buildLayout(null, fixed.plan, json('data/businesses.json'), book, null);
+const L = buildLayout(fixed.plan, json('data/businesses.json'), book);
 const T = new Terrain(json('data/terrain.json'));
 const t0 = Date.now();
 // the kept random choices (src/city/choices.js); --record makes them again from the old

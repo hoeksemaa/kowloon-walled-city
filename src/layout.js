@@ -5,15 +5,11 @@
 // wall bases, the factory sites and named buildings (traced from the 1980s exhibit plan);
 // 459 premises with street, house number, floor, name and trade (GRS HKRS1255-3 titles,
 // parsed by tools/parse_grs.py); the storeys along the south face (Lambot's 1990 south
-// elevation, M+ 2017.412); the street names and the 40 numbers of the 1992 map in City of
-// Darkness Revisited (data/book.json). APPROXIMATE: where on its street each premises sits
-// (the order follows the house numbers). INFERRED, and marked so: storeys away from the south face, and
-// the trade of a floor that no file records.
-import { mulberry32, vnoise, clamp, weighted } from './util.js';
-import { buildFootprints, mainAxis, LANE, YARD, ROAD } from './footprint.js';
-import { setupCores, makePlan, WORK_AREA } from './floorplan.js';
-import { BOOK_PEOPLE } from './residents.js';
-import { drawnBuildings, inRing } from './context.js';
+// elevation, M+ 2017.412); the street names of the 1992 map in City of Darkness Revisited
+// (data/book.json). APPROXIMATE: where on its street each premises sits (the order follows
+// the house numbers). INFERRED, and marked so: storeys away from the south face.
+import { mulberry32, vnoise, clamp } from './util.js';
+import { buildFootprints, LANE, YARD, ROAD } from './footprint.js';
 
 // No measured storey height is in hand. 3.05 m is a usual Hong Kong tenement storey.
 export const STOREY = 3.05;
@@ -22,49 +18,7 @@ export const STOREY = 3.05;
 export const MAX_FLOORS = 15;
 export const MARGIN = 18; // metres of street around the city, on the street plate
 
-// Render and paint, sRGB, measured in the photos of City of Darkness Revisited: cream render
-// (pp61, 87), warm beige (p13), ochre (p97), grey concrete (pp143, 327), duck-egg blue (p60),
-// mint green (pp86, 142) and old brick (p96), with their shades. The outer faces are paint
-// and render; mosaic tile is mostly inside. Each building gets one, and its value moves by up
-// to 20-40 levels from its neighbours' (p143), thus a building strip stands out.
-const FACADES = [
-  ['#a79f96', 10], ['#8e877f', 6], ['#c9c0b2', 5], ['#e6d6bb', 3], ['#ddd6c8', 3], ['#c1a994', 5],
-  ['#a08d7d', 3], ['#d3b894', 4], ['#b19a83', 3], ['#93a9b0', 4], ['#7a8d91', 2], ['#98a290', 4],
-  ['#b69482', 2], ['#8f7a6e', 2],
-];
-
-// Floor uses. Each GRS trade maps to one use; the labels say what the premises were.
-export const USE_LABEL = {
-  home: 'flats',
-  dentist: 'dentist',
-  clinic: 'doctor / bone-setter',
-  medicine: 'medicine shop',
-  plastics: 'plastics workshop',
-  metal: 'metal + machine shop',
-  garment: 'garment, textile + shoe workshop',
-  foodfac: 'food workshop',
-  eating: 'eating house / ice café',
-  shop: 'shop',
-  works: 'other workshop',
-  office: 'trading / property office',
-  school: 'school / tuition school',
-  kaifong: 'Kai Fong Welfare Association',
-  temple: 'temple / shrine',
-  youth: 'youth centre',
-  yamen: 'Yamen · old people’s centre',
-};
-const TRADE_USE = {
-  dentist: 'dentist', clinic: 'clinic', bonesetter: 'clinic', medicine: 'medicine',
-  plastics: 'plastics', metal: 'metal', electrical: 'metal', toys: 'works',
-  garment: 'garment', textile: 'garment', shoes: 'garment',
-  fishball: 'foodfac', noodles: 'foodfac', meat: 'foodfac', roastmeat: 'foodfac', cakes: 'foodfac',
-  food: 'foodfac', catering: 'foodfac',
-  eatinghouse: 'eating', cafe: 'eating',
-  store: 'shop', jewellery: 'shop', optical: 'shop', salon: 'shop', gas: 'shop', laundry: 'shop', furniture: 'shop',
-  factory: 'works', printing: 'works', plumbing: 'works', construction: 'works',
-  trading: 'office', property: 'office', transport: 'office', storage: 'office',
-  school: 'school', kaifong: 'kaifong', temple: 'temple',
-};
+// The trade of each GRS premises, as the room uses name it (tools/build_room_uses.mjs).
 export const TRADE_LABEL = {
   dentist: 'dentist', clinic: 'clinic', bonesetter: 'bone-setter', medicine: 'medicine shop',
   plastics: 'plastics factory', metal: 'metal works', electrical: 'electrical works', toys: 'toy maker',
@@ -76,16 +30,6 @@ export const TRADE_LABEL = {
   factory: 'factory', printing: 'printing or paper', plumbing: 'water + electrical works (水電)',
   construction: 'construction', trading: 'trading company', property: 'property agent', transport: 'transport company',
   storage: 'storage', school: 'tuition school', kaifong: 'kaifong association', temple: 'shrine',
-};
-export const USE_GROUP = {
-  plastics: 'work', metal: 'work', garment: 'work', foodfac: 'work', works: 'work',
-  dentist: 'shop', clinic: 'shop', medicine: 'shop', eating: 'shop', shop: 'shop', office: 'shop', school: 'shop',
-};
-export const USE_DOING = {
-  plastics: 'at the plastics workshop', metal: 'at the metal works', garment: 'at the sewing machines',
-  foodfac: 'at the food workshop', works: 'at the workshop', dentist: 'at the dentist’s', clinic: 'at the clinic',
-  medicine: 'minding the medicine shop', eating: 'working at the eating house', shop: 'minding the shop',
-  office: 'at the office', school: 'at the tuition school',
 };
 
 // Storeys along the south face, west to east, read off Lambot's 1990 south elevation
@@ -99,68 +43,6 @@ const PLAN_STREET = {
   'Kwong Ming St 光明街': 'kms', 'Lo Yan St 老人街': 'lys', 'Tai Chang St 大井街': 'tcs', 'Sz Kung St 社公街': 'skg',
   'Lung Shing Rd 龍城路': 'lsr', 'Lung Chun Rd 龍津道': 'lcr', 'Sai Shing Rd 西城路': 'ssr',
 };
-
-const NAMES = {
-  youthCentre: 'youth centre 青年中心',
-  freeSchool: 'Lung Chun Free School Bldg 龍津義學大樓',
-  tinHau: 'Tin Hau temple 天后廟',
-  kaifong: 'Kai Fong Welfare Assn 街坊福利會',
-};
-export function buildingName(b) {
-  if (b.kind === 'yamen') return 'the Yamen';
-  if (NAMES[b.name]) return NAMES[b.name];
-  const base = b.towerName || `Building ${b.tower}`;
-  return b.block ? `${b.block}, ${base}` : base;
-}
-
-// A building as the user selects it: one tower of the 1987 figure-ground plan (p134), and the
-// 17 halls of the Yamen as one compound, under the tower of its main hall (cityMesh.js draws
-// them with that id). This gives 270 buildings. bldgOf gives the building of plot p.
-export function bldgOf(L, p) {
-  const b = L.buildings[p];
-  return b.kind === 'yamen' ? L.buildings[L.yamenId].tower : b.tower;
-}
-
-// The plots of building id.
-export function blocksOf(L, id) {
-  const B = L.buildings;
-  return B[L.yamenId].tower === id ? B.filter((b) => b.kind === 'yamen').map((b) => b.id) : L.towers[id].blocks;
-}
-
-// The file addresses of the blocks of building id, one street at a time, in house-number
-// order: "6-8, 10A Tung Tau Tsuen Road". Empty if no file names a block.
-export function bldgAddresses(L, id) {
-  const by = new Map();
-  for (const p of blocksOf(L, id)) {
-    const a = L.buildings[p].addr;
-    if (a) by.set(a.street, [...(by.get(a.street) || []), a.num]);
-  }
-  const n = (t) => parseInt(t, 10) || 0;
-  return [...by].map(([s, nums]) => `${[...new Set(nums)].sort((x, y) => n(x) - n(y) || (x < y ? -1 : 1)).join(', ')} ${s}`).join(' · ');
-}
-
-// The name of building id: a named place, else the file addresses of its blocks, else the
-// place of its tower by house-number order ("near ..."), else its number.
-export function bldgName(L, id) {
-  const bs = blocksOf(L, id).map((p) => L.buildings[p]), named = bs.find((b) => NAMES[b.name]);
-  if (bs[0].kind === 'yamen') return 'the Yamen';
-  return named ? NAMES[named.name] : bldgAddresses(L, id) || L.towers[id].name || `Building ${id}`;
-}
-
-// The outline of building id on storey k: each edge { e, b } of a ring of its block b that
-// rises above k, where the other side is not a block of the same building on that storey. The
-// edges make closed loops. Today a building has the same plots on each storey; a building
-// that grows over its neighbours on upper storeys (Suenn Ho, p137) changes only this.
-export function footprintAt(L, id, k) {
-  const B = L.buildings, out = [];
-  for (const p of blocksOf(L, id)) {
-    const b = B[p];
-    if (b.floors <= k) continue;
-    for (const r of b.rings)
-      for (const e of r.edges) if (e.other < 0 || B[e.other].floors <= k || bldgOf(L, e.other) !== id) out.push({ e, b });
-  }
-  return out;
-}
 
 // Plan codes: 0 outside, 1 lane, 2 open yard, 3 road, 4+ plot.
 const ALPH = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_';
@@ -280,9 +162,9 @@ function fineFootprints(L, fine, idOf) {
   return buildFootprints({ W, D, owner, inside, alley, x0: L.x0, z0: L.z0 }, { scale: 1 / s, eps: fine.eps ?? 3, pocket: 4 * s * s, exact, regularise: true });
 }
 
-// context: data/context.json (the real buildings round the City), or null.
+// plan: data/plan.json; biz: data/businesses.json; book: data/book.json with its overlay.
 // plan.fine (optional, from src/city/fixes.js): the footprints come from the fine plan.
-export function buildLayout(site, plan, biz = null, book = null, context = null, seed = 1986) {
+export function buildLayout(plan, biz = null, book = null, seed = 1986) {
   const rng = mulberry32(seed);
   const pc = decodePlan(plan);
   const W = plan.W + 2 * MARGIN, D = plan.D + 2 * MARGIN, N = W * D;
@@ -365,7 +247,6 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
   }
   const L = {
     W, D, N, x0, z0, inside, alley, owner, buildings, towers,
-    bbox: { minx: -plan.W / 2, maxx: plan.W / 2, minz: -plan.D / 2, maxz: plan.D / 2 },
     cellX: (k) => x0 + (k % W) + 0.5,
     cellZ: (k) => z0 + ((k / W) | 0) + 0.5,
   };
@@ -385,12 +266,10 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
   for (const b of buildings) if (b.kind === 'yamen') yamenCells.push(...b.cells);
   const yc = yamenCells.reduce((s, k) => [s[0] + L.cellX(k), s[1] + L.cellZ(k)], [0, 0]).map((v) => v / Math.max(1, yamenCells.length));
   for (const b of buildings) {
-    let sx = 0, sz = 0, i0 = W, i1 = 0, j0 = D, j1 = 0, top = 0, road = 0;
+    let sx = 0, sz = 0, top = 0, road = 0;
     const alleyAdj = [];
     for (const k of b.cells) {
-      const i = k % W, j = (k / W) | 0;
-      sx += i; sz += j;
-      i0 = Math.min(i0, i); i1 = Math.max(i1, i + 1); j0 = Math.min(j0, j); j1 = Math.max(j1, j + 1);
+      sx += k % W; sz += (k / W) | 0;
       for (const n of nb4(k)) {
         if (!inside[n]) {
           if (n === k - W && clearAbove(n)) top++; // faces up the plan: Tung Tau Tsuen Road
@@ -400,34 +279,20 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
         }
       }
     }
-    Object.assign(b, { i0, i1, j0, j1 });
     b.cx = x0 + sx / b.cells.length + 0.5;
     b.cz = z0 + sz / b.cells.length + 0.5;
     b.rings = F.get(b.id) || [];
-    b.axis = mainAxis(b.rings);
     b.area = b.cells.length;
     b.front = top >= 2 && b.cz < 0 ? 'top' : road >= 2 ? 'road' : 'inner';
-    const ci = sx / b.cells.length, cj = sz / b.cells.length;
-    const near = (alleyAdj.length ? alleyAdj : b.cells).reduce((best, k) => {
-      const d = (k % W - ci) ** 2 + (((k / W) | 0) - cj) ** 2;
-      return d < best.d ? { k, d } : best;
-    }, { k: b.cells[0], d: Infinity });
-    b.stair = near.k;
-    b.edge = [...new Set(alleyAdj)];
-    b.color = weighted(rng, FACADES);
-    b.modW = 1.5 + rng() * 1.1;
-    b.cage = 0.25 + rng() * 0.6;
-    b.seed = rng();
+    b.edge = new Set(alleyAdj).size; // the cells on a lane
+    // Four draws of the old app for each building (its face and its cages): they stay, thus
+    // the storeys below keep their random sequence.
+    for (let q = 0; q < 4; q++) rng();
     b.prem = {}; // floor -> premises from the GRS files
   }
-  for (const t of towers) {
-    const b0 = buildings[t.blocks[0]];
-    for (const id of t.blocks) Object.assign(buildings[id], { color: b0.color, modW: b0.modW, cage: b0.cage });
-    // Blocks from the street inward: the one with the most frontage first.
-    t.blocks.sort((p, q) => buildings[q].edge.length - buildings[p].edge.length);
-    t.blocks.forEach((id, i) => (buildings[id].block = t.blocks.length < 2 ? null
-      : t.blocks.length === 2 ? ['Front Block', 'Rear Block'][i] : `Block ${'ABCDEFGHJK'[i] || i + 1}`));
-  }
+  // Blocks from the street inward: the one with the most frontage first. The first block of a
+  // tower gives the defaults of its building (src/city/model.js).
+  for (const t of towers) t.blocks.sort((p, q) => buildings[q].edge - buildings[p].edge);
 
   // ---- storeys ----------------------------------------------------------------------------
   // South face: from the 1990 elevation. Elsewhere: INFERRED from the 1989 aerial photos,
@@ -439,14 +304,14 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
     const t = clamp((x - sx0) / Math.max(1, sx1 - sx0), 0, 0.9999) * SOUTH_PROFILE.length;
     return SOUTH_PROFILE[Math.floor(t)];
   };
-  const bz1 = L.bbox.maxz;
+  const bz1 = plan.D / 2;
   for (const b of buildings) {
-    if (b.kind === 'yamen') { b.floors = 1; b.uses = ['yamen']; b.color = '#8f8a80'; continue; }
-    if (b.name === 'tinHau') { b.floors = 1; b.kind = 'low'; b.uses = ['temple']; b.color = '#a5826f'; continue; }
-    if (b.name === 'youthCentre') { b.floors = 2; b.kind = 'low'; b.uses = ['youth', 'youth']; continue; }
+    if (b.kind === 'yamen') { b.floors = 1; continue; }
+    if (b.name === 'tinHau') { b.floors = 1; b.kind = 'low'; continue; }
+    if (b.name === 'youthCentre') { b.floors = 2; b.kind = 'low'; continue; }
     // The free-school centre (義學中心) stood with the youth centre and the old people's
-    // home in the middle of the city (HK01, 2016). Its upper floors: INFERRED flats.
-    if (b.name === 'freeSchool') { b.floors = 6; b.uses = ['school', 'school', 'home', 'home', 'home', 'home']; continue; }
+    // home in the middle of the city (HK01, 2016).
+    if (b.name === 'freeSchool') { b.floors = 6; continue; }
   }
   // One height for each tower, at its centre. On Tung Tau Tsuen Road, buildings were
   // "rising 12 storeys and more – the maximum height possible for buildings on this, the
@@ -481,7 +346,6 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
     for (const b of bs) {
       b.floors = floors;
       b.kind = kind;
-      b.uses = new Array(floors).fill('home');
     }
   }
 
@@ -494,7 +358,7 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
   if (book) for (const [key, at] of Object.entries(book.overlay.streets)) streets.push(street(key, book.streets[key].name, at));
   L.streets = streets;
   L.frontage = streetFrontages(L, streets);
-  if (biz) placePremises(L, biz, rng);
+  if (biz) placePremises(L, biz);
 
   // Tower names: a file address of one of its blocks, or else a house number by the street
   // order (APPROXIMATE, "near").
@@ -510,113 +374,8 @@ export function buildLayout(site, plan, biz = null, book = null, context = null,
     const bs = t.blocks.map((id) => buildings[id]);
     const a = bs.find((b) => b.address), n = bs.find((b) => b.near);
     t.name = a ? a.address : n ? `near ${n.near}` : null;
-    for (const b of bs) b.towerName = t.name;
   }
-
-  // ---- stairs and floor plans ---------------------------------------------------------------
-  setupCores(L);
-  for (const b of buildings) if (b.kind !== 'yamen') b.plans = { work: makePlan(L, b, WORK_AREA, 'work') };
-
-  // The places of the people in City of Darkness Revisited go first, before the fill.
-  if (book) bookPlaces(L, book);
-
-  // Floors that no file records. INFERRED: the Kai Fong Association counted 645 shops,
-  // workshops and clinics in 1983 (charted by WSJ, 2014). The clearance files place fewer,
-  // thus more floors take a trade until the count is 645; each workshop unit of a floor
-  // counts as one. Ground floors go first, street fronts before lanes; some upper floors too
-  // ("shops and factories were on upper floors", Lambot, 2019). The trade comes from the
-  // 1983 count: dentists and clinics on the street fronts, factories in the lanes.
-  if (biz) {
-    let n = 0;
-    for (const b of buildings) if (b.plans) n += Object.keys(b.prem).length * b.plans.work.units.length;
-    const cand = [];
-    for (const b of buildings) {
-      if (b.kind !== 'tenement' && b.kind !== 'low') continue;
-      if (b.name === 'kaifong' && !b.prem[0]) b.uses[0] = 'kaifong';
-      for (let f = 0; f < Math.min(4, b.floors); f++) {
-        if (b.prem[f] || b.uses[f] !== 'home') continue;
-        const w = f > 0 ? 0.35 : b.factory ? 5 : b.front !== 'inner' ? 4 : 2;
-        cand.push({ b, f, key: -Math.log(rng()) / w });
-      }
-    }
-    cand.sort((a, c) => a.key - c.key);
-    for (const { b, f } of cand) {
-      if (n >= KAIFONG_1983_TOTAL) break;
-      const pool = b.factory ? MIX_FACTORY : b.front === 'inner' ? MIX_LANE : MIX_FRONT;
-      // Heavy metal shops stay on G/F (City of Darkness Revisited, p257).
-      do b.uses[f] = weighted(rng, pool); while (f > 0 && b.uses[f] === 'metal');
-      (b.inferred ||= {})[f] = true;
-      n += b.plans.work.units.length;
-    }
-  }
-  // Flats: "28,200 occupants residing in 8800 separate apartments" in January 1987 (p340).
-  // The flat size is set so that the home floors hold about 8,800 flats. A flat then comes
-  // out at about 15 m2 (160 sq ft), less than the 200-400 sq ft that residents give (WSJ,
-  // 2014; SCMP, 2013). The model keeps the book's count.
-  const homeFloors = (b) => b.uses.filter((u) => u === 'home').length;
-  let net = 0;
-  for (const b of buildings) {
-    if (!b.plans) continue;
-    let c = 0;
-    for (const v of b.plans.work.cell) if (v >= 0) c++;
-    net += c * homeFloors(b);
-  }
-  let T = net / APARTMENTS_1987;
-  for (let it = 0; it < 4; it++) {
-    let count = 0;
-    for (const b of buildings) if (b.plans) { b.plans.home = makePlan(L, b, T, 'home'); count += b.plans.home.units.length * homeFloors(b); }
-    L.flatCount = count;
-    if (Math.abs(count - APARTMENTS_1987) < 80) break;
-    T *= count / APARTMENTS_1987;
-  }
-  L.flatArea = T;
-  for (const b of buildings) b.flats = b.plans ? b.plans.home.units.length : 0;
-  if (book) realFloors(L, book);
-
-  // The main hall is the largest Yamen building; people "at the Yamen" use its yard.
-  const yamens = buildings.filter((b) => b.kind === 'yamen');
-  const yamenId = yamens.reduce((best, b) => (b.cells.length > best.cells.length ? b : best), yamens[0]).id;
-  const yard = [];
-  for (let k = 0; k < N; k++) if (alley[k] === 2) yard.push(k);
-
-  // ---- walking costs --------------------------------------------------------------------
-  // 1 = street, lane or yard, higher = cutting through a ground floor.
-  const cost = new Uint8Array(N);
-  for (let k = 0; k < N; k++) {
-    if (!inside[k] || alley[k]) cost[k] = 1;
-    else if (owner[k] >= 0) cost[k] = buildings[owner[k]].kind === 'yamen' ? 3 : 6;
-  }
-  // A real building of 1986 that stands on the street plate (Mei Tung House) closes its cells:
-  // no walk goes through it.
-  for (const b of context ? drawnBuildings(context) : []) {
-    const xs = b.ring.map((p) => p[0]), zs = b.ring.map((p) => p[1]);
-    for (let j = Math.max(0, Math.floor(Math.min(...zs) - z0)); j < Math.min(D, Math.ceil(Math.max(...zs) - z0)); j++)
-      for (let i = Math.max(0, Math.floor(Math.min(...xs) - x0)); i < Math.min(W, Math.ceil(Math.max(...xs) - x0)); i++)
-        if (!inside[j * W + i] && inRing(x0 + i + 0.5, z0 + j + 0.5, b.ring)) cost[j * W + i] = 0;
-  }
-
-  // People who leave the city walk to an exit, where they fade out (figures.js). On the north
-  // and east the exits are on the real roads of 1986 (data/context.json): three on the near
-  // carriageway of Tung Tau Tsuen Road, and two on Tung Tsing Road. On the open ground to the
-  // south and west, the exits are at the edge of the street plate. tools/check_context.mjs
-  // checks that each exit is on a road or on the street.
-  const cellAt = ([x, z]) => Math.floor(z - z0) * W + Math.floor(x - x0);
-  const north = [[-76.5, -63], [0.5, -60], [76.5, -78]], east = [[126.5, -32], [123.5, 30]];
-  const away = [];
-  [0.22, 0.5, 0.78].forEach((f, q) => { away.push(cellAt(north[q])); away.push((D - 1) * W + Math.round(f * (W - 1))); });
-  [0.33, 0.66].forEach((f, q) => { away.push(Math.round(f * (D - 1)) * W); away.push(cellAt(east[q])); });
-
-  // The 40 numbers of the 1992 map (City of Darkness Revisited, pp352-353), fitted to the plan
-  // by tools/book_overlay.py. APPROXIMATE: the map "cannot be considered entirely accurate"
-  // (p353). places: the 12 numbers that mark a place, each with its own number. mapPeople:
-  // the 33 numbers that name a person; for five of them the key also names a place.
-  const places = !book ? [] : book.places.filter((p) => p.place).map((p) => {
-    const [i, j] = book.overlay.markers[p.n];
-    return { ...p, k: (Math.floor(j) + MARGIN) * W + Math.floor(i) + MARGIN, x: x0 + MARGIN + i, z: z0 + MARGIN + j };
-  });
-  const mapPeople = !book ? [] : book.places.filter((p) => p.place !== p.name);
-
-  return Object.assign(L, { cost, away, yard, yamenId, yamenCentre: yc, places, mapPeople });
+  return L;
 }
 
 // The plots along each street, in order. Tung Tau Tsuen Road, Lung Chun Road and Sai
@@ -692,7 +451,7 @@ function streetFrontages(L, streets) {
 // Tung Tau Tsuen Road and Lung Chun Road falling from west to east, and on Sai Shing Road
 // from north to south. On the inner streets the direction is not known: they count from
 // the north or west end.
-function placePremises(L, biz, rng) {
+function placePremises(L, biz) {
   const { buildings, frontage } = L;
   const desc = { ttt: true, lcr: true, ssr: true };
   const byStreet = {};
@@ -722,28 +481,11 @@ function placePremises(L, biz, rng) {
       const fixed = p.trade === 'kaifong' && buildings.find((c) => c.name === 'kaifong' && c.floors > floor);
       if (fixed) b = fixed;
       (b.prem[floor] ||= []).push(p);
-      if (!b.prem[floor].use) {
-        b.prem[floor].use = TRADE_USE[p.trade] || 'works';
-        b.uses[floor] = b.prem[floor].use;
-      }
       // Some files write the number as "No. 12"; the address drops the "No.".
-      if (!b.address || fixed) {
-        b.addr = { num: p.numText.replace(/^No\.?\s*/i, ''), street: biz.streets[s].replace(/\s*[㐀-鿿]+$/, '') };
-        b.address = `${b.addr.num} ${b.addr.street}`;
-      }
+      if (!b.address || fixed) b.address = `${p.numText.replace(/^No\.?\s*/i, '')} ${biz.streets[s].replace(/\s*[㐀-鿿]+$/, '')}`;
     }
   }
 }
-
-// The Kai Fong Association's count of 1983, as WSJ (2014) charts it: 97 dentists, 93
-// plastics, 89 clinics, 77 shops, 56 metal, 44 garment, 41 other manufacturing, 35 meat,
-// 33 cake, 30 textile, 50 others (645). Split here between street fronts and lanes.
-const KAIFONG_1983_TOTAL = 645;
-const APARTMENTS_1987 = 8800;
-const MIX_FRONT = [['dentist', 80], ['clinic', 70], ['shop', 45], ['medicine', 10], ['eating', 12], ['office', 10]];
-const MIX_LANE = [['plastics', 93], ['metal', 56], ['garment', 74], ['works', 41], ['foodfac', 68], ['shop', 32],
-  ['dentist', 17], ['clinic', 19], ['eating', 10]];
-const MIX_FACTORY = [['plastics', 3], ['metal', 2], ['foodfac', 3], ['works', 2], ['garment', 1]];
 
 // The building at a recorded address (street key, house number), with at least `floor` + 1
 // storeys: the same house-number order that places the GRS premises. APPROXIMATE.
@@ -760,119 +502,4 @@ export function locate(L, street, num, floor = 0) {
       if (b && b.floors > floor && b.kind !== 'yamen') return b;
     }
   return null;
-}
-
-// The places of City of Darkness Revisited that the model uses (BOOK_PEOPLE in residents.js),
-// and the kindergarten and the standpipe. A place goes to its file address if a clearance
-// file matches it, else to its address in the text, else to its street, nearest its pin on
-// the 1992 map. Where the map and the text disagree, the text wins. L.book[n]: { b, f }.
-function bookPlaces(L, book) {
-  const B = L.buildings, W = L.W;
-  const pin = (n) => {
-    const m = book.overlay.markers[n];
-    return m ? { x: L.x0 + MARGIN + m[0], z: L.z0 + MARGIN + m[1] } : null;
-  };
-  // The building nearest a point (or the middle one), not used by another place, with a
-  // floor that no file names if it can.
-  const used = new Set();
-  const near = (ids, at, f = 0) => {
-    const list = ids.map((id) => B[id]).filter((b) => b.kind !== 'yamen' && b.floors > f + 1 && !used.has(b.id));
-    if (!list.length) return null;
-    const free = list.filter((b) => !b.prem[f]);
-    if (!at) return (free.length ? free : list)[(free.length ? free : list).length >> 1];
-    const cost = (b) => Math.hypot(b.cx - at.x, b.cz - at.z) + (b.prem[f] ? 12 : 0);
-    return list.reduce((p, q) => (cost(q) < cost(p) ? q : p));
-  };
-  const onStreet = (st) => {
-    if (L.addr[st]) return L.addr[st].F;
-    const s = new Set();
-    for (const k of L.streetLanes[st] || []) for (const n of [k - 1, k + 1, k - W, k + W]) if (L.owner[n] >= 0) s.add(L.owner[n]);
-    return [...s];
-  };
-  const find = (p) => {
-    const grs = p.grs || ((book.matches.list.find((m) => m.n === p.n) || {}).grs);
-    if (grs)
-      for (const b of B)
-        for (const [f, list] of Object.entries(b.prem)) if (list.some((q) => q.refs && q.refs.includes(grs))) return { b, f: +f, grs: true };
-    const f = p.floor ?? 0;
-    if (p.street && p.num != null) { const b = locate(L, p.street, p.num, f); if (b) return { b, f }; }
-    if (p.street) { const b = near(onStreet(p.street), p.conflict ? null : pin(p.n), f); if (b) return { b, f }; }
-    const at = pin(p.n), b = at && near(B.map((b) => b.id), at, f);
-    return b ? { b, f } : null;
-  };
-  L.book = {};
-  L.bookPlaces = Object.fromEntries(book.places.map((p) => [p.n, p]));
-  for (const P of BOOK_PEOPLE) {
-    const p = book.places.find((q) => q.n === P.n), hit = p && find(p);
-    if (!hit) continue;
-    const { b, f } = hit;
-    L.book[P.n] = { b: b.id, f };
-    used.add(b.id);
-    if (P.roof) continue;
-    const grs = hit.grs && b.prem[f].find((q) => q.refs && q.refs.includes(p.grs || book.matches.list.find((m) => m.n === p.n).grs));
-    if (grs) {
-      Object.assign(grs, { book: p.n, page: p.page });
-      // The file title can give a house name first; the note in book.json gives the trade name.
-      const name = p.grsNote && p.grsNote.split(',')[0];
-      if (name && /^[A-Za-z][^:]*$/.test(name)) grs.nameEn = name;
-    }
-    else (b.prem[f] ||= []).push({ nameEn: P.premises || '', trade: P.trade, book: p.n, page: p.page });
-    b.prem[f].use = b.uses[f] = TRADE_USE[P.trade];
-    if (b.inferred) delete b.inferred[f];
-  }
-  // The Salvation Army kindergarten on Lung Chun Back Road (p300). The book does not say
-  // when it opened, thus it is INFERRED for 1986.
-  const kg = near(onStreet('lcb'), pin(29));
-  if (kg) {
-    used.add(kg.id);
-    (kg.prem[0] ||= []).push({ nameEn: 'Salvation Army kindergarten', trade: 'school', book: 29, page: 300, inferred: true });
-    kg.prem[0].use ||= 'school';
-    kg.uses[0] = 'school';
-    L.book.kindergarten = { b: kg.id, f: 0 };
-  }
-  // The one Government standpipe inside the city, on Tai Chang Street (pp28, 107, 292).
-  const sp = pin(30);
-  if (sp) {
-    let best = -1, bd = Infinity;
-    for (const k of L.streetLanes.tcs || []) { const d = Math.hypot(L.cellX(k) - sp.x, L.cellZ(k) - sp.z); if (d < bd) { bd = d; best = k; } }
-    if (best >= 0) L.standpipe = { k: best, x: L.cellX(best), z: L.cellZ(best) };
-  }
-  L.bookHours = book.hours;
-}
-
-// The two floors that the clearance survey drew in 1987 (City of Darkness Revisited, p340).
-// The model places each by its house number (APPROXIMATE) and names its units.
-function realFloors(L, book) {
-  const B = L.buildings;
-  const flat = book.flats.taiHing4F;
-  const b = locate(L, 'ssr', 6, 4);
-  if (b && b.plans) {
-    if (b.uses[4] !== 'home' && !b.prem[4]) { b.uses[4] = 'home'; if (b.inferred) delete b.inferred[4]; }
-    const units = b.plans.home.units.filter((u) => u.door && u.door.axis === 'w');
-    const u = (units.length ? units : b.plans.home.units).reduce((p, q) => (Math.abs(q.area - 25) < Math.abs(p.area - 25) ? q : p));
-    (b.unitNotes ||= {})[`4:${u.id}`] = {
-      name: `${flat.address} (the survey's flat)`,
-      note: `Measured on 9 Nov 1987 (p340): living room 9.65 m², two cubicles of 3.54 m², kitchen 2.0 m², toilet, two bed spaces. Place by house number, approximate.`,
-    };
-    L.realFlat = { b: b.id, f: 4, u: u.id };
-  }
-  const shared = book.flats.cheungOn5F;
-  const c = locate(L, 'ttt', 31, 5);
-  if (c) {
-    // The units of the tower's 5/F nearest a stair, in the order of the survey sheet.
-    const list = [];
-    for (const id of L.towers[c.tower].blocks) {
-      const d = B[id];
-      if (!d.plans || d.floors <= 5 || d.uses[5] !== 'home') continue;
-      for (const u of d.plans.home.units) list.push({ d, u, near: d.cores.length ? 0 : 1 });
-    }
-    list.sort((p, q) => p.near - q.near || q.u.area - p.u.area);
-    shared.units.forEach((s, i) => {
-      if (!list[i]) return;
-      (list[i].d.unitNotes ||= {})[`5:${list[i].u.id}`] = {
-        name: s.address,
-        note: `${s.ref}. The 1987 survey (p340) drew a shared 5/F here: five units, and three stairs that share landings. The plan in the model is inferred.`,
-      };
-    });
-  }
 }

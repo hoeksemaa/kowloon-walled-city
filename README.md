@@ -18,9 +18,9 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     viewer and the main app.
   - The main app of `index.html`: `main.js`, `cityLayers.js` (the structure as floor layers),
     `buildingPanel.js`, `notes.js`, `planes.js` with `approach.js`, `post.js` and
-    `style.css`. The structure, the viewer and the main app also use `layout.js`,
-    `footprint.js`, `floorplan.js`, `context.js`, `residents.js`, `terrain.js`, `site.js`,
-    `env.js` (the light) and `util.js`.
+    `style.css`. The structure, the viewer and the main app also use `layout.js` and
+    `footprint.js` (the reader of the plan), `context.js` (the outlines round the City),
+    `terrain.js`, `site.js`, `env.js` (the light) and `util.js`.
   - The life of the main app, on the structure: `src/life/`. `nav.js` finds the ways through
     the route graph of the structure (A* with landmarks); `population.js` makes the people of
     the week (28,200 residents and about 4,800 day workers, pp339-340, the services of the
@@ -30,10 +30,6 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     the rooms and on the roofs (instanced, one mesh for each kind). `mysteries.js`: the ten
     cases of `data/mysteries.json`. `utilities.js`: the water, power, post and refuse of
     `data/utilities.json`.
-  - Not loaded now: the old people, labels and game of the main app (`people.js`,
-    `routes.js`, `crowd.js`, `figures.js`, `game.js`, `labels.js`, `occlude.js`, `useMap.js`,
-    `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app (see "Not
-    yet on the structure" below).
 - `data/`: the data that the code reads, mostly JSON.
   - The plan: `plan.json` (the 1980s street plan, traced on 1 m cells: lanes and 474 plots)
     and `plan_fine.json` (the same plan on 0.25 m cells, for the outlines of the structure).
@@ -76,8 +72,7 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     with its input `context_input.json` (`data/context.json`), and `terrain.py`
     (`data/terrain.json`).
   - `check_stack.js` checks the floor layers of the main app (it runs in the browser).
-  - The checks of the layout, the surroundings data and the code that waits to move onto the
-    structure: `check_layout.mjs`, `check_context.mjs` and `check_game.mjs`.
+  - `check_context.mjs` checks the surroundings data and the track of the planes.
 - `primary-sources/`: the evidence. One folder for each primary source: a record made at the
   time, or a first-hand account given later. Each folder has a `SOURCE.md` with the citation,
   link, licence, why the source is primary, and the key facts with their pages. If facts of
@@ -367,21 +362,14 @@ Lung Shing Road (龍城路), and each real road beside the City, for example Tun
 beside it. When the floors are pulled apart, it goes down to the lane; when a storey is peeled,
 it stands at that storey. The clues of the mysteries name these streets.
 
-### Not yet on the structure
+### Deleted with the old 3D city
 
-These parts sat on the old 3D city of the main app. They come back when they move onto the
-structure. Until then the main app does not load them. Their code stays in `src/`:
-
-- the old people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
-  `figures.js`) and the game Find them 尋人 (`game.js`): the people of `src/life/` replace
-  them;
-- the numbers of the 1992 map (`labels.js`, `occlude.js`; `src/streetNames.js` now gives
-  the street names and the road names);
-- the floor-use legend of a cut storey (`useMap.js`), and the ghosts of the real buildings
-  that hide the City (`Ghosts` in `env.js`).
-
-`node tools/check_layout.mjs`, `node tools/check_context.mjs` and
-`node tools/check_game.mjs` still check this code.
+On 2026-11-07 the code of the old 3D city of the main app was deleted (John: "delete all dead
+code"): the old people of the week and their routes, the game Find them 尋人, the numbers of the
+1992 map, the floor-use legend of a cut storey, the ghosts of the real buildings that hid the
+City, the old drawing of the surroundings, and their checks. The people of `src/life/`, the
+street names of `src/streetNames.js` and the surroundings of `src/surroundings/` replace them.
+The git history keeps the old code.
 
 ## Sources
 
@@ -416,38 +404,12 @@ download is in the repository. The City plate of the model covers 59% of Mei Tun
 the long slab north of the City. The data keeps the parts off the plate as buildings, and
 `plateClipped` keeps the whole outline.
 
-The main app and the viewer draw this data with `src/surroundings/ground.js`. The old main
-app drew it with `src/context.js` and `src/env.js`; the next paragraphs tell how, for the code
-that waits to move onto the structure.
-`src/context.js` picks the outlines that the old app drew, and `src/env.js` draws them. For a
-building that the plate cuts, the app draws the whole outline from `plateClipped`. Thus
-Mei Tung House stands whole. Of the 1,263 drawn buildings, 612 have a sourced height and
-651 an inferred height. The colours, the lit windows at night and the 7 m width of the 9 road
+The main app and the viewer draw this data with `src/surroundings/`. `src/context.js` picks
+the outlines to draw. For a building that the plate cuts, they draw the whole outline from
+`plateClipped`. Thus Mei Tung House stands whole. Of the 1,263 drawn buildings, 612 have a
+sourced height and 651 an inferred height. The colours and the 7 m width of the 9 road
 segments with no measured width are inferred. The fit of the City on the 1987 sheet turns the
 model 3.6°: plan +x points along the bearing 63.6° (`PLAN_BEARING`, `src/site.js`).
-
-`src/occlude.js` finds the buildings that hide the City. The camera is orthographic and
-always looks down. The test pushes the outline of each building away from the camera by its
-height / tan(view angle). The building hides a part of the City exactly when this outline
-touches the City outline. The zoom, the pan, the cut and the layered view do not change the
-result, thus the test runs only when the view direction changes. It takes about 0.03 ms.
-`src/env.js` keeps the fade of each building in a small texture, and the shader eases it.
-
-`roadRuns` in `src/context.js` gives the road names. It joins the segments of each named road
-into runs. A run of 100 m or more that comes within 430 m of the centre gets a name. The two
-carriageways of a road give one name. The English names of the data are those of today. I
-compared each of the 23 with the 1987-88 sheets, and the sheets print the same names. The
-Chinese names are those of the data of today (not compared). `Sight` in `src/occlude.js` keeps
-the real buildings on a grid of 2 m. A ray from a point of a road goes back to the camera
-across this grid and over the City. `src/labels.js` puts a name only where the camera sees
-nine tenths of the road under it. At places the road line of today runs under the edge of the
-City, thus the words of a name must also keep off the City and the drawn buildings. A ghost
-does not stop the ray. But the dither of a ghost blurs the small Chinese letters, thus a name
-goes behind a ghost only if no clear place fits.
-
-`node tools/check_layout.mjs` builds the layout and the route network without a browser. It
-prints the counts of towers, stairs, flats and links. It fails if a unit does not meet a
-corridor or a stair, if a storey has no way down, or if walks go through other rooms.
 
 `node tools/check_context.mjs` checks `data/context.json`. It fails if a building is on the
 City plate or beyond 600 m, if a building has no source, or if a survey sheet does not
@@ -456,18 +418,8 @@ reaches onto the City itself. It fails if the track of the planes (`src/approach
 than 30 m over a roof within 60 m of the track, or over the City. It prints the five
 buildings with the least clearance.
 
-Then `check_context.mjs` checks what the app draws. It fails if a drawn outline covers a
-cell of the City, or if the dark street reaches under a drawn building. It also fails if an
-exit of the people is not on the street or a road. It fails if a walk between an exit
-and the lanes of the City goes through a drawn building. Last, in 48 views, it casts rays from
-the City wall back to the camera. It fails if a building that a ray meets does not fade.
-It fails if Tung Tau Tsuen Road (東頭村道), Tung Tsing Road (東正道) or Carpenter Road
-(賈炳達道) has no name, or if a road
-name is not one of the 23 compared with the 1987 sheets. It also fails if `Sight` and the
-exact rays disagree on more than 5% of the points of the roads.
-
-`node tools/check_game.mjs` runs the week in steps of 10 minutes. At each step it checks
-that each hint of the game points at the person, and that one view shows the person.
+Last, `check_context.mjs` fails if an outline that `src/surroundings/` draws covers a cell
+of the City.
 
 `tools/check_stack.js` checks the floor layers of the main app (`src/cityLayers.js`). The
 check runs in the browser, because the meshes need one. Serve the repository, open the page,

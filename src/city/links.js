@@ -14,7 +14,7 @@
 // thus the model has none. Only two buildings had lifts (pp146, 179), and no source names
 // them, thus the model has none.
 import { LANE, YARD, ROAD, OUTSIDE } from '../footprint.js';
-import { G, OUT, FLIGHT, LANDING, CORR, UNIT, stairParts, risers } from './plan.js';
+import { G, OUT, FLIGHT, LANDING, CORR, UNIT, stairParts } from './plan.js';
 import { toXZ, toAW, segDist, inRings } from './poly.js';
 import { PARAPET, CHAIN_FLOORS, routeCorners } from './model.js';
 

@@ -95,7 +95,7 @@ async function init() {
   const { plan, overlay } = applyFixes(D.plan, D.book_overlay, D.structure_fixes, D.plan_fine);
   D.book.overlay = overlay;
   const site = buildSite(plan);
-  const L = buildLayout(site, plan, D.businesses, D.book, null); // the City does not depend on its surroundings
+  const L = buildLayout(plan, D.businesses, D.book); // the City does not depend on its surroundings
   const T = new Terrain(D.terrain);
   S = buildStructure(L, T, { fixes: D.structure_fixes, choices: makeChoices(D.structure_choices) });
   uses = new RoomUses(D.room_uses);
