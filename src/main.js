@@ -258,10 +258,12 @@ function roomExtra() {
   let html = R.roof ? `<h3>THE ROOF OF ${esc(B.label).toUpperCase()}</h3>` : '';
   html += thingsHtml(furnish, key, state.thing, esc);
   html += homeHtml(life, pop, key, life.day);
+  // a standpipe by the building (out:b): the people at it now
+  const pipes = R.out ? life.pipes.filter((q) => q.b === B.id).map((q) => q.key) : [];
   const here = [];
-  for (let i = 0; i < life.N; i++) { const s = life.state[i]; if (!s.trip && s.cur && s.cur.key === key) here.push(i); }
+  for (let i = 0; i < life.N; i++) { const s = life.state[i]; if (!s.trip && s.cur && (s.cur.key === key || pipes.includes(s.cur.key))) here.push(i); }
   if (here.length) {
-    html += `<h3>WHO IS HERE NOW (${here.length})</h3>`;
+    html += `<h3>${pipes.length ? 'AT THE STANDPIPE NOW' : 'WHO IS HERE NOW'} (${here.length})</h3>`;
     for (const i of here.slice(0, 8)) html += `<button class="who" data-person="${i}">${personTip(life, i, cases.hidden(i))}</button>`;
     if (here.length > 8) html += `<div class="sub">and ${here.length - 8} more</div>`;
   }

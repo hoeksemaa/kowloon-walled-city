@@ -222,7 +222,11 @@ fills the drums and the bath then; after the midnight run, some wake to do the w
 (Tam Sau-kuen (譚秀娟), WSJ). The well water was not fit to drink (p108): about half the blocks
 have an illegal tap of the mains (p110), and in the others someone carries the drinking water
 home each day from the nearest of the eight Government standpipes (p249), or the household pays
-a water carrier (p108). The jobs of the 4,800 who come in and of the residents who work in the
+a water carrier (p108). The rubbish: "the City's residents were not exactly model citizens in this regard" (p104). A
+few take it to a refuse point before work (p179), some leave it in the orange buckets of the
+Urban Services Department (p104), and the others throw it from the window into the gap between
+the buildings (pp103, 209). The three refuse collectors clear the 23 refuse points from about
+04:00 (p93), and the ten sweepers go round the lanes and the points (p104). The jobs of the 4,800 who come in and of the residents who work in the
 City fill the "700 businesses" (p110). The make-up of the households, the hours and the shares
 are INFERRED. The panel of a person shows their household and their water; the panel of a
 flat shows who lives there.

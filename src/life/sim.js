@@ -89,33 +89,52 @@ export class Life {
     // Street (大井街), and seven outside it (data/utilities.json, placement). Each home goes to
     // the nearest one: one search finds the way from every node.
     const UP = opts.utilities?.placement, pipes = [];
-    const spots = UP ? [UP.standpipe_inside?.xz, ...(UP.outside_standpipes?.list || []).map((o) => o.xz)].filter(Boolean) : [];
-    for (const [x, z] of spots) {
-      let best = -1, bd = 3;
+    const spots = UP ? [UP.standpipe_inside && [...UP.standpipe_inside.xz, UP.standpipe_inside.wall_of], ...(UP.outside_standpipes?.list || []).map((o) => [...o.xz, o.nearest_building])].filter(Boolean) : [];
+    // the lane node nearest (x, z), within maxD m, or -1
+    const laneNear = (x, z, maxD) => {
+      let best = -1, bd = maxD;
       for (let v = 0; v < nav.N; v++) {
         if (nav.kind[v] !== 0 && nav.kind[v] !== 5) continue;
         const d = Math.hypot(nav.x[v] - x, nav.z[v] - z);
         if (d < bd) { bd = d; best = v; }
       }
-      if (best >= 0) pipes.push({ kind: 'lane', node: best, tree: 'pipes', queue: true, key: `standpipe:${pipes.length}`, label: pipes.length ? 'at a Government standpipe outside the City' : 'at the Government standpipe of Tai Chang Street (大井街)' });
+      return best;
+    };
+    for (const [x, z, b] of spots) {
+      const best = laneNear(x, z, 3);
+      if (best >= 0) pipes.push({ kind: 'lane', node: best, b, tree: 'pipes', queue: true, key: `standpipe:${pipes.length}`, label: pipes.length ? 'at a Government standpipe outside the City' : 'at the Government standpipe of Tai Chang Street (大井街)' });
     }
     this.pipes = pipes;
     this.pipeTree = pipes.length ? nav.tree(pipes.map((q) => q.node)) : null;
-    const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
-    const pipeFor = (pl) => {
-      if (!this.pipeTree || !pl || pl.node === undefined) return null;
-      let q = pipeOf.get(pl.node);
+    this.trees = { pipes: this.pipeTree };
+    // The 23 refuse points of the named lanes (data/utilities.json, placement), where the
+    // refuse collectors come before dawn (p93), and the few who take their rubbish down go (p179).
+    const streetName = new Map((L.streets || []).map((st) => [st.key, st.name]));
+    const refuse = [];
+    for (const o of UP?.refuse_points?.list || []) {
+      const v = laneNear(o.xz[0], o.xz[1], 4);
+      if (v >= 0) refuse.push({ kind: 'lane', node: v, tree: 'refuse', key: `refuse:${refuse.length}`, label: `at the refuse point of ${streetName.get(o.street) || 'the lane'}` });
+    }
+    this.refuse = refuse;
+    this.trees.refuse = refuse.length ? nav.tree(refuse.map((q) => q.node)) : null;
+    const refuseAt = new Map(refuse.map((q) => [q.node, q])), refuseOf = new Map();
+    const nearest = (tree, at, memo, pl) => {
+      if (!tree || !pl || pl.node === undefined) return null;
+      let q = memo.get(pl.node);
       if (q === undefined) {
         let v = pl.node, n = 0;
-        while (v >= 0 && this.pipeTree.next[v] >= 0 && n++ < 1e5) v = this.pipeTree.next[v];
-        q = this.pipeTree.next[v] === -1 ? pipeAt.get(v) || null : null;
-        pipeOf.set(pl.node, q);
+        while (v >= 0 && tree.next[v] >= 0 && n++ < 1e5) v = tree.next[v];
+        q = tree.next[v] === -1 ? at.get(v) || null : null;
+        memo.set(pl.node, q);
       }
       return q;
     };
+    const pipeAt = new Map(pipes.map((q) => [q.node, q])), pipeOf = new Map();
     const houseMemo = new Map();
     this.X = {
-      places, place: P, roofFor: findRoof, pipeFor,
+      places, place: P, roofFor: findRoof, refuse,
+      pipeFor: (pl) => nearest(this.pipeTree, pipeAt, pipeOf, pl),
+      refuseFor: (pl) => nearest(this.trees.refuse, refuseAt, refuseOf, pl),
       // The household of person p on day dow (routines.js planHouse), kept for the day.
       house: (p, dow) => {
         const key = dow * 1e6 + p.hh;
@@ -228,8 +247,9 @@ export class Life {
     if (b.kind === 'out') return a.kind === 'out' ? null : nav.follow(this.outTree, a.node);
     if (a.kind === 'out') return nav.follow(this.outTree, b.node, true);
     if (a.node === b.node) return Int32Array.of(a.node);
-    if (b.tree === 'pipes') return nav.follow(this.pipeTree, a.node);
-    if (a.tree === 'pipes') return nav.follow(this.pipeTree, b.node, true);
+    // to or from a standpipe or a refuse point: the tree of the nearest one, if it is this one
+    if (b.tree && this.trees[b.tree] && !a.tree) { const p = nav.follow(this.trees[b.tree], a.node); if (p && p[p.length - 1] === b.node) return p; }
+    if (a.tree && this.trees[a.tree] && !b.tree) { const p = nav.follow(this.trees[a.tree], b.node, true); if (p && p[0] === a.node) return p; }
     if (b.tree === 'standpipe') return nav.follow(this.standTree, a.node);
     if (a.tree === 'standpipe') return nav.follow(this.standTree, b.node, true);
     const key = `${a.node}>${b.node}`;

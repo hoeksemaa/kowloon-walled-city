@@ -18,6 +18,11 @@
   game code (`people.js`, `labels.js`, `game.js` and others) still sits on the old layout and
   the main app does not load it: move it onto the structure before you use it again. Do not
   delete `src/floorplan.js`: `src/layout.js` still uses it.
+- The life of the main app is in `src/life/` (since 2026-11-06): the people and their
+  households and days, the things in the rooms, the utilities, the ten mysteries and the lit
+  windows. `src/streetNames.js` gives the street names. John's aim for it: a rich and accurate
+  simulation of how the people of the City lived. Give each fact its source, and mark each
+  guess INFERRED.
 - See `docs/structure.md` for the sources and the inferences of the structure.
 - Chinese names (a permanent rule of John's, for the whole repo): English is the main language
   of the repo. The Chinese names are flavour beside the English names, not a new label. Beside
