@@ -1,0 +1,25 @@
+{
+  "about": "The weather of the week of the model, Monday 15 to Sunday 21 December 1986, from the daily climate data of the Hong Kong Observatory (香港天文台), then the Royal Observatory, Hong Kong. The temperature, the rain and the relative humidity are those of the Observatory headquarters in Tsim Sha Tsui (尖沙咀). The sunshine is that of King's Park (京士柏), the sunshine station of the Observatory. Read from the CSV files below on 2026-11-07. Example row, as the file gives it: \"1986,12,19,10.1,C\" (the minimum of 19 December).",
+  "sources": [
+    { "what": "maximum air temperature, °C (HKO headquarters)", "url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_MAXT_ALL.csv" },
+    { "what": "minimum air temperature, °C (HKO headquarters)", "url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_MINT_ALL.csv" },
+    { "what": "total rainfall, mm; Trace is less than 0.05 mm (HKO headquarters)", "url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_RF_ALL.csv" },
+    { "what": "mean relative humidity, % (HKO headquarters)", "url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/HKO/ALL/daily_HKO_RH_ALL.csv" },
+    { "what": "total bright sunshine, hours (King's Park)", "url": "https://data.weather.gov.hk/weatherAPI/cis/csvfile/KP/ALL/daily_KP_SUN_ALL.csv" }
+  ],
+  "days": [
+    { "date": "1986-12-15", "day": "Mon", "maxC": 21.6, "minC": 18.6, "rain": "trace", "sunH": 9.3, "rh": 73 },
+    { "date": "1986-12-16", "day": "Tue", "maxC": 19.6, "minC": 18.1, "rain": "trace", "sunH": 1.4, "rh": 79 },
+    { "date": "1986-12-17", "day": "Wed", "maxC": 19.8, "minC": 18.3, "rain": "trace", "sunH": 0.0, "rh": 83 },
+    { "date": "1986-12-18", "day": "Thu", "maxC": 20.4, "minC": 12.9, "rain": 1.3, "sunH": 0.0, "rh": 84 },
+    { "date": "1986-12-19", "day": "Fri", "maxC": 16.6, "minC": 10.1, "rain": 0.0, "sunH": 9.4, "rh": 55 },
+    { "date": "1986-12-20", "day": "Sat", "maxC": 16.6, "minC": 11.7, "rain": 0.0, "sunH": 9.2, "rh": 64 },
+    { "date": "1986-12-21", "day": "Sun", "maxC": 19.5, "minC": 13.0, "rain": 0.0, "sunH": 9.5, "rh": 66 }
+  ],
+  "notes": [
+    "A cold, dry spell came on Thursday 18 December: the minimum fell from 18.3 °C to 12.9 °C, the humidity from 84% to 55%. The 10.1 °C of Friday 19 December was the lowest minimum of December 1986. This is read from the numbers; no written report of the spell was found.",
+    "The day is about 10.8 hours long in this week (sunrise about 06:57, sunset about 17:45: src/env.js). The share of the day without sun, 1 - sunH / 10.8, gives the cloud of the sky in the app: 0.14 on Monday, 0.87 on Tuesday, 1 on Wednesday and Thursday, 0.13 to 0.15 from Friday to Sunday. The same cloud all day is INFERRED: the data give the hours of sun, not when they came.",
+    "The time of the 1.3 mm of rain on Thursday is not known. The app draws no rain.",
+    "INFERRED rules of life (src/life/sim.js, roofWeather and wet): on a day with 0.1 mm of rain or more, half of the visits to the roofs for leisure do not happen, and the washing dries in the corridor, not on the roof. On a day with a minimum under 12 °C, 3 in 10 of the visits to the roofs for leisure do not happen."
+  ]
+}

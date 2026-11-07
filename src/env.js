@@ -16,6 +16,8 @@ const FADE_NEAR = 350, FADE_FAR = 600;
 // the curve of the night (the value that update returns).
 const SKY_DAY = [[-6, '#9c8174'], [4, '#b39b88'], [14, '#bfb8aa'], [30, '#c9c7c0'], [45, '#d0cfc9']];
 const SKY_NIGHT = [[-14, '#1e1f26'], [-5, '#28262c'], [3, '#3b3334']];
+// A grey day (an overcast sky, data/weather.json): the sky by day goes to a flat grey.
+const SKY_GREY = new THREE.Color('#b4b6b4').getRGB({}, THREE.SRGBColorSpace);
 const rgbOf = (t) => t.map(([a, c]) => [a, new THREE.Color(c).getRGB({}, THREE.SRGBColorSpace)]);
 const skyDay = rgbOf(SKY_DAY), skyNight = rgbOf(SKY_NIGHT);
 
@@ -51,7 +53,13 @@ export class Lighting {
     scene.background = this.sky;
     // fogNear and fogFar carry the radii of the haze (main.js).
     scene.fog = new THREE.Fog(this.sky, FADE_NEAR, FADE_FAR);
+    this.cloud = 0;
   }
+
+  // The cloud of the day, 0 (no cloud) to 1 (overcast all day): main.js takes it from the hours
+  // of sun of the Hong Kong Observatory (香港天文台) (data/weather.json). Under cloud the sun is
+  // weak, the shadows are faint, the whole sky gives more of the light, and the sky is grey.
+  setCloud(c) { this.cloud = clamp(c, 0, 1); }
 
   // Fit the shadow map to the part of the city in view (x, z, half size r): close up, the
   // shadows of furniture and people are sharp.
@@ -78,13 +86,16 @@ export class Lighting {
     const hx = E[0] * Math.sin(az) + N[0] * Math.cos(az), hz = E[1] * Math.sin(az) + N[1] * Math.cos(az);
     this.sun.position.set(c.x + hx * r * Math.cos(e), c.y + explodeLift * 0.5 + Math.sin(e) * r, c.z + hz * r * Math.cos(e));
     this.sun.target.position.set(c.x, c.y + explodeLift * 0.5, c.z);
-    this.sun.intensity = 0.15 + 1.5 * light;
+    const cl = this.cloud;
+    this.sun.intensity = 0.15 + 1.5 * light * (1 - 0.8 * cl);
+    this.sun.shadow.intensity = 1 - 0.75 * cl;
     this.sun.color.setHSL(0.09, 0.5 - 0.35 * elev, 0.82 + 0.1 * elev);
-    this.hemi.intensity = 0.62 + 0.7 * smoothstep(-0.05, 0.3, elev);
+    this.hemi.intensity = (0.62 + 0.7 * smoothstep(-0.05, 0.3, elev)) * (1 + 0.35 * cl);
     this.hemi.color.set(light > 0.05 ? '#dcd9cc' : '#8e96b0');
     const night = 1 - smoothstep(0.02, 0.35, elev);
-    // The sky and the haze: day and night mixed by the night.
-    const d = skyAt(skyDay, alt / D), n = skyAt(skyNight, alt / D);
+    // The sky and the haze: day and night mixed by the night; a grey day greys the day sky.
+    const d0 = skyAt(skyDay, alt / D), n = skyAt(skyNight, alt / D), g = 0.85 * cl;
+    const d = { r: d0.r + (SKY_GREY.r - d0.r) * g, g: d0.g + (SKY_GREY.g - d0.g) * g, b: d0.b + (SKY_GREY.b - d0.b) * g };
     this.sky.setRGB(d.r + (n.r - d.r) * night, d.g + (n.g - d.g) * night, d.b + (n.b - d.b) * night, THREE.SRGBColorSpace);
     this.scene.fog.color.copy(this.sky);
     return night;

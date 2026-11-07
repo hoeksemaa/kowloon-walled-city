@@ -30,7 +30,7 @@ next day, Monday 22 December.
     gives the panel of a person. `furnish.js` puts the things of `data/furnishings.json` in
     the rooms and on the roofs (instanced, one mesh for each kind). `mysteries.js`: the ten
     cases of `data/mysteries.json`. `utilities.js`: the water, power, post and refuse of
-    `data/utilities.json`.
+    `data/utilities.json`. The weather of each day comes from `data/weather.json`.
 - `data/`: the data that the code reads, mostly JSON.
   - The plan: `plan.json` (the 1980s street plan, traced on 1 m cells: lanes and 474 plots)
     and `plan_fine.json` (the same plan on 0.25 m cells, for the outlines of the structure).
@@ -361,6 +361,29 @@ meter board at each G/F stair door (a meter for each flat), the letterboxes of t
 pipes and cables over the lanes and down the walls, the public lights of the Kaifong
 Association (lit 24 hours a day), and the refuse points of the named lanes. The look of each
 thing has a source; where each one stands is INFERRED. Click one to see what it is.
+
+### The weather
+
+The weather of each day of the week comes from the daily data of the Hong Kong Observatory
+(香港天文台) (`data/weather.json`): the temperatures, the rain and the humidity of the
+Observatory headquarters, and the sunshine of King's Park (京士柏).
+
+| Day | Min–max °C | Rain | Sun (h) | Humidity |
+|---|---|---|---|---|
+| Mon 15 | 18.6–21.6 | trace | 9.3 | 73% |
+| Tue 16 | 18.1–19.6 | trace | 1.4 | 79% |
+| Wed 17 | 18.3–19.8 | trace | 0.0 | 83% |
+| Thu 18 | 12.9–20.4 | 1.3 mm | 0.0 | 84% |
+| Fri 19 | 10.1–16.6 | 0 | 9.4 | 55% |
+| Sat 20 | 11.7–16.6 | 0 | 9.2 | 64% |
+| Sun 21 | 13.0–19.5 | 0 | 9.5 | 66% |
+
+The menu gives the weather of the day. The hours of sun set the cloud of the sky
+(`Lighting.setCloud` in `src/env.js`): on a grey day the sun is weak, the shadows are faint and
+the sky is grey. The same cloud all day is INFERRED, and the app draws no rain. The effects on
+life are INFERRED (`roofWeather` and `wet` in `src/life/sim.js`). On the wet Thursday, half of
+the visits to the roofs for leisure do not happen, and the washing dries in the corridor. On
+Friday and Saturday (a minimum under 12 °C), 3 in 10 of them do not happen.
 
 ### The mysteries
 
