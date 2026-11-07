@@ -222,6 +222,7 @@ export function planDay(p, dow, X) {
       return;
     }
     if (q >= 0.2 && q < 0.26 && store(t, 'watching television (p160)')) return;
+    if (q >= 0.26 && q < 0.29 && p.age <= 20 && X.places.youth) { at(t, X.places.youth, 'in the evening at the youth centre, where many young people gather (HK01, 2016)'); at(J(H(22, 0), 20), home, 'the evening at home'); return; }
     if (q < 0.12 && p.home) {
       const nb = X.neighbour(p.home, r);
       // a boss: "他與幾位老闆收工後打麻將耍樂" (林羅平, HK01, 20 July 2024)
@@ -382,7 +383,7 @@ export function planDay(p, dow, X) {
       } else {
         at(rubbishOut(J(H(7, 30), 15)), school, 'at secondary school');
         at((back = J(H(16, 30), 10)), home, 'homework');
-        if (!fetch(back + J(20, 10), 'homework') && !family() && !tutor() && !candy() && !dz) { const q2 = r(); if (q2 < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); } else if (q2 < 0.42) store(J(H(17, 40), 30), 'homework'); }
+        if (!fetch(back + J(20, 10), 'homework') && !family() && !tutor() && !candy() && !dz) { const q2 = r(); if (q2 < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); } else if (q2 >= 0.42 && q2 < 0.46 && X.places.youth) { at(J(H(17, 0), 15), X.places.youth, 'after school at the youth centre, where many young people gather (HK01, 2016)'); at(J(H(18, 40), 15), home, 'homework'); } else if (q2 < 0.42) store(J(H(17, 40), 30), 'homework'); }
       }
       if (dz) { dongzhi(18.4); break; }
       if (helped && F) {
@@ -391,6 +392,12 @@ export function planDay(p, dow, X) {
         break;
       }
       dinner();
+      if (F?.late?.id === p.id) {
+        at(F.dinner + J(40, 8), X.places.youth, 'in the evening at the youth centre, where many young people gather (HK01, 2016)');
+        at(F.late.t1, home, F.late.fetch >= 0 ? 'home late, with the mother, who came to fetch them (p158)' : 'home late from the youth centre');
+        at(F.late.t1 + J(35, 10), home, 'asleep');
+        break;
+      }
       at(F ? F.dinner + J(50, 10) : J(H(20, 0), 20), home, r() < 0.3 ? 'homework, then television (p160)' : 'homework');
       at(J(H(21, 45), 30), home, 'asleep');
       break;
@@ -566,6 +573,7 @@ export function planDay(p, dow, X) {
       else evening((F ? F.dinner : H(19, 0)) + 25);
       }
       if (F?.small) at(Math.max(J(H(20, 0), 15), tm ? tm.t1 + 15 : 0), home, 'bathing the children (p160)');
+      if (F?.late?.fetch === p.id) { const w = X.walkMin(p.home, X.places.youth); at(F.late.t1 - w - J(10, 3), X.places.youth, 'going to fetch a teenager home from the youth centre, late at night (p158)'); at(F.late.t1, home, 'the evening at home'); }
       at(J(H(22, 30), 30), home, 'asleep');
       night();
       break;
@@ -955,6 +963,16 @@ export function planHouse(h, mem, dow, X) {
   F.pickup = !mum && old && !sat && !sun && mem.some((m) => m.role === 'student' && m.age < 12 && m.seed < 0.5) ? J(H(12, 50), 8) : 0;
   if (sun && h.kind === 'family' && r() < 0.45) F.outing = { t0: J(H(9, 40), 30), t1: J(H(14, 0), 50) };
   F.hasOld = !!old;
+  // A teenager at the youth centre in the evening (INFERRED: about 1 in 30 a night, not on
+  // Sunday, not in a family that works in its own workshop or shop), and the
+  // mother who goes to fetch them home on about 1 such night in 3: "When they were out late at
+  // night, I might occasionally go out to fetch them and accompany them home" (Chung Lo Ying
+  // (鍾太), p158).
+  const teens = mem.filter((m) => m.role === 'student' && m.age >= 14);
+  if (teens.length && !dz && !sun && !F.familyWork && !F.evenWork && X.places.youth && r() < 0.03 * teens.length) {
+    const k = teens[Math.floor(r() * teens.length)];
+    F.late = { id: k.id, t1: J(H(21, 50), 15), fetch: mum && r() < 0.33 ? mum.id : -1 };
+  }
   // an old mother's daughter comes to help cook and eat dinner (p158)
   const dk = X.daughterOf?.(h.id), kd = dk && X.kinDay(h.id, dow);
   if (kd) { F.daughter = { ...dk, ...kd }; F.dinner = kd.dinner; }
