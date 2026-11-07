@@ -80,7 +80,9 @@ water carriers (p108). 19,606 people of 5116 families registered on the first da
 from 9 to 1 and from 3.30 to 8 (p187), a dentist from 10 to 6 or 7 (p245), a roast-meat maker from 4 am (p286), rush
 orders until 2 or 3 am (p237). The Old People's Centre (老人中心) with 184 members (p305), mahjong (p15), television
 (p160), children kept in the flats (p300), grandmothers who mind the children (pp54, 322), outwork at home (p88),
-patients from outside (p187) and the police beats (pp251, 283).</p>
+patients from outside (p187) and the police beats (pp251, 283). Lodgers who rent a room (p157), for about 10,000
+families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); families who live in their shop or clinic
+(pp94, 245) or spend the evening in their workshop (p173); a workshop guarded at night (p169).</p>
 <p><span class="st prov">INFERRED</span>The other hours, the nights of the rush orders, the tea houses, the morning
 exercise on the roofs, and the share of the people who do each thing.</p>
 <p><span class="st prov">INFERRED</span>The roles, households, homes, workplaces and hours of the crowd, who have

@@ -53,12 +53,29 @@ function waterHtml(life, h, day) {
   return `${html}</div>`;
 }
 
-// The household that lives in home `key` (for the panel of the room).
+const KIND = { family: 'a family', couple: 'a couple', 'old couple': 'an old couple', 'old women': 'old women who share the flat', sharers: 'workers who share the flat', alone: 'one person, alone' };
+
+// The notes on household h: a lodger household, a home in the shop, the evenings in the
+// workshop, the night in the workshop. The flags do not change with the day (routines.js
+// planHouse): day 0 gives them.
+function houseNotes(life, h) {
+  const F = life.X.house({ hh: h.id }, 0), out = [];
+  if (h.host !== undefined) out.push('A lodger household: it rents a room of the flat from the household of the flat. A room "with a window" rented "for $35 a month" (p157); which flats had lodgers is INFERRED.');
+  if (h.lodger !== undefined) out.push('The household rents out a room of the flat to a lodger household (p157; INFERRED).');
+  if (h.home.lived) out.push(h.home.cat === 'dentist' || h.home.cat === 'clinic' ? 'The family lives in its clinic and sleeps on the floor, as a dentist\'s family did (p245; INFERRED for this one).' : 'The family lives in its shop: a partition, and a small living area at the back, as Lee Pui Yuen (李培元) did (p94; INFERRED for this one).');
+  if (F?.evenWork) out.push('Monday to Saturday the family spends the evening in its workshop: it cooks there, and the children do their homework on the workbench (p173; INFERRED for this one). It sleeps in the flat.');
+  if (F?.guard >= 0) out.push(`The ${life.persons[F.guard].rel} sleeps in the workshop, to guard it from the drug addicts (p169; INFERRED for this one).`);
+  return out.length ? `<div class="sub">${out.map(esc).join(' ')}</div>` : '';
+}
+
+// The households that live in home `key` (for the panel of the room): the household of the
+// flat, and a lodger household if there is one.
 export function homeHtml(life, pop, key, day) {
-  const h = pop.households?.find((x) => x.home.key === key);
-  if (!h) return '';
-  const what = { family: 'a family', couple: 'a couple', 'old couple': 'an old couple', sharers: 'workers who share the flat', alone: 'one person, alone' }[h.kind] || 'a household';
-  return `<h3>WHO LIVES HERE · ${esc(what).toUpperCase()} OF ${h.members.length}</h3>${membersHtml(life, h)}${waterHtml(life, h, day)}`;
+  if (!pop._byHome) {
+    pop._byHome = new Map();
+    for (const h of pop.households || []) { const k = h.home.key; if (!pop._byHome.has(k)) pop._byHome.set(k, []); pop._byHome.get(k).push(h); }
+  }
+  return (pop._byHome.get(key) || []).map((h) => `<h3>${h.host !== undefined ? 'ALSO HERE · A LODGER HOUSEHOLD' : 'WHO LIVES HERE'} · ${esc(KIND[h.kind] || 'a household').toUpperCase()} OF ${h.members.length}</h3>${houseNotes(life, h)}${membersHtml(life, h)}${waterHtml(life, h, day)}`).join('');
 }
 
 // The panel of person i. ctx: { life, S, uses, pop, follow }.
@@ -84,7 +101,7 @@ export function personHtml(ctx, i) {
   if (P && P.story) html += `<h3>THEIR STORY</h3><div>${esc(P.story)}</div>`;
   if (!P && p.hh !== undefined && pop.households?.[p.hh]) {
     const h = pop.households[p.hh];
-    if (h.members.length > 1) html += `<h3>THE HOUSEHOLD</h3>${membersHtml(life, h, i)}`;
+    if (h.members.length > 1 || h.host !== undefined || h.home.lived) html += `<h3>THE HOUSEHOLD</h3>${houseNotes(life, h)}${membersHtml(life, h, i)}`;
     html += waterHtml(life, h, life.day);
   }
   if (p.role === 'carrier' && p.clients) html += `<div class="sub">Carries drinking water for ${p.clients.length} households near home, each one every other day.</div>`;
