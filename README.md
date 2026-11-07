@@ -1,7 +1,8 @@
 # Kowloon Walled City (九龍城寨) · 1986
 
 An explorable, real-time 3D model of Kowloon Walled City (九龍城寨) at its height. It
-shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on 冬至.
+shows one ordinary week, Monday 15 to Sunday 21 December 1986. 冬至 (the winter solstice) is the
+next day, Monday 22 December.
 
 ## What the folders hold
 
@@ -180,7 +181,7 @@ deleted.
 - **Picking.** The pick draws the building, the layer and the kind of each piece into one
   pixel under the pointer (`CityLayers.pick`). The real buildings and the ground round the
   City stop it.
-- **Clock and light.** The week starts on Tuesday 16 December at 09:45, in real time. The
+- **Clock and light.** The week starts on Monday 15 December at 09:45, in real time. The
   arrows set the speed: one arrow is real time (1×), two arrows are 60× and three arrows are
   2400×, a day in 36 seconds. Space stops the clock and starts it again, and the keys 1, 2
   and 3 choose the arrows. A click on the day bar sets the time. The sun follows the clock
@@ -200,7 +201,7 @@ and what it infers.
 
 ### The people and the things
 
-The main app shows the people of the week of 16 to 22 December 1986 (`src/life/`). The crowd
+The main app shows the people of the week of 15 to 21 December 1986 (`src/life/`). The crowd
 follows the counts of the sources: 28,200 residents (City of Darkness Revisited, p340) and
 about 4,800 people who came in to work (p339). The crowd has no names, because no source
 names these people; their roles, homes, workplaces and hours are INFERRED. The 120 real
@@ -238,7 +239,7 @@ Each trade keeps its own hours. The stores open from 6 or 8 am to midnight, seve
 keeps office hours (p180). The other hours are INFERRED.
 
 On some nights a workshop has a rush order: its workers come back after dinner and work until
-2 or 3 am (p237). The food workshops work through the night before 冬至 (pp44, 289). Which
+2 or 3 am (p237). The food workshops work through Sunday night, the night before 冬至 (pp44, 289). Which
 night, and which workshop, is INFERRED. Members of a family often work in the family workshop
 or shop. After school, a child of such a family helps there until about 9 or 10 pm (林羅平,
 HK01). Some women do outwork at home for the workshops of the City (pp88, 176). Other women
@@ -271,7 +272,7 @@ Yamen courtyard to chat or to prepare vegetables (p299). On Sunday 10 to 20 peop
 service of the Salvation Army (救世軍) chapel (p301), and some men ask the gods for luck at the
 Tin Hau Temple (天后廟) (p15). The amateur Chinese orchestra plays on two evenings (p15). The
 children of the Salvation Army kindergarten go on an outing to Kowloon Park on Thursday (p300).
-On the day before 冬至, some old women help at the food workshops on a daily rate (p44). Taxi
+On Sunday, the day before 冬至, some old women help at the food workshops on a daily rate (p44). Taxi
 drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Porters carry sacks of flour in
 from the road to the food workshops in the morning, and the packed goods of the workshops out
 on delivery trolleys in the afternoon (pp176, 249). Who goes, when, and the days are INFERRED.

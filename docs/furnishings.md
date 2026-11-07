@@ -725,15 +725,15 @@ These units have a photo or a plan in a source. The key is `building:storey:unit
 
 ## December 1986
 
-16 December 1986 was a Tuesday. The Winter Solstice was Monday 22 December. Christmas Day was a Thursday.
+The model week is Monday 15 to Sunday 21 December 1986. The Winter Solstice was Monday 22 December, the next day. Christmas Day was a Thursday.
 
 | Kind | What | Where | When | Basis | Facts |
 |---|---|---|---|---|---|
-| lantern | Christmas decorations: tinsel garlands and a foil 'Merry Christmas' banner | The Well (M18) and the other missions and churches (religion units of Christian bodies) | 16-22 Dec 1986 | sourced for The Well (photo undated); inferred for the others | F88 |
+| lantern | Christmas decorations: tinsel garlands and a foil 'Merry Christmas' banner | The Well (M18) and the other missions and churches (religion units of Christian bodies) | 15-21 Dec 1986 | sourced for The Well (photo undated); inferred for the others | F88 |
 | lantern | Christmas decorations in the kindergarten: a tinsel 'MERRY CHRISTMAS' banner, a paper Santa, about 17 paper angels, balloons | Salvation Army kindergarten (A23) | December (photo year not given) | sourced | F129 |
 | table | The annual Christmas party for elderly residents in the large room next to the Kai Fong office: folding tables and chairs. | Kai Fong Association, 3/F, 16 Tung Tau Tsuen Road (B10) | date of the party not given | sourced | F46, F140 |
 | boxes | Christmas gifts of the Rotary Club | Old People's Centre (B56) | each year; date not given | sourced | F47 |
-| altar | Winter Solstice (冬至), Mon 22 Dec 1986: food offerings and incense at the household altar, and a family dinner (a round_table can come out) | homes with an altar | 22 Dec 1986 | inferred for the City (Hong Kong custom from an outside source) | F49, F9 |
+| altar | Winter Solstice (冬至), Mon 22 Dec 1986, the day after the model week: food offerings and incense at the household altar, and a family dinner (a round_table can come out) | homes with an altar | 22 Dec 1986 | inferred for the City (Hong Kong custom from an outside source) | F49, F9 |
 | couplet | New Year papers stay on the doors the whole year | flat doors | all year | sourced | F10, F91 |
 
 ## Kinds

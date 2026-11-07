@@ -1,7 +1,7 @@
 # Utilities of Kowloon Walled City (九龍城寨), December 1986
 
-This report gives the utilities of the City for the model week, Tue 16 to Mon
-22 December 1986. The systems are water, power, refuse, drains and toilets,
+This report gives the utilities of the City for the model week, Mon 15 to Sun
+21 December 1986. The systems are water, power, refuse, drains and toilets,
 fire, gas and fuel, and post.
 The data is in `data/utilities.json`. Each fact there has an id (U1, U2 ...),
 a source, a page or URL, and the exact words of the source.

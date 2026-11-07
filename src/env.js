@@ -61,7 +61,7 @@ export class Lighting {
     if (Math.abs(s.right - r) > 0.5) { s.left = -r; s.right = r; s.top = r; s.bottom = -r; s.updateProjectionMatrix(); }
   }
 
-  // The sun over Hong Kong in the week of 16-22 Dec 1986: latitude 22.33° N, declination
+  // The sun over Hong Kong in the week of 15-21 Dec 1986: latitude 22.33° N, declination
   // -23.4°, solar noon at about 12:22 HKT. Sunrise about 06:57, sunset about 17:45.
   update(hour, explodeLift) {
     const D = Math.PI / 180, phi = 22.33 * D, dec = -23.4 * D;
