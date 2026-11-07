@@ -295,6 +295,14 @@ from outside", often on "a recommendation by their friends or relatives" (Tsin M
 pp186-187). About 300 residents a day, most of them old, see a doctor or a dentist near home, in
 the hours of the clinics (pp187, 245). How many and when is INFERRED.
 
+"Chung Lo Ying's daughter, Chung Yuk Yee, often joined her mother for dinner and helped with the
+cooking" (p158). About half of the old women who live without a family have a daughter with a
+family in the same building: on about 2 days in 5 she cooks for her own family first, then helps
+her mother cook, and eats with her. At dinner time a woman asks her neighbour through the window
+for some soy sauce: "Swapping ingredients through windows like this happened regularly" (Chan
+Cheung-chuen (陳祥全), M+ audio guide 8038). Some owners of workshops and shops play mahjong with
+other bosses after work (林羅平, HK01, 20 July 2024). Which families, and how often, are INFERRED.
+
 "A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
 in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
 corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for
