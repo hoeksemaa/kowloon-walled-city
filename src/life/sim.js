@@ -239,11 +239,23 @@ export class Life {
       }
       return kin;
     };
+    const wetOf = (dow) => { const w = opts.weather?.days?.[dow]; return !!w && typeof w.rain === 'number' && w.rain >= 0.1; };
     this.X = {
       places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
       daughterOf: (hid) => kinLinks().daughter.get(hid) || null,
       motherOf: (hid) => kinLinks().mother.get(hid) || null,
       partyGuest: (p) => partyGuests().has(p.id),
+      // The weather of the day (data/weather.json, the Hong Kong Observatory (香港天文台)):
+      // wet is a day with 0.1 mm of rain or more (Thursday 18 December). roofWeather is the share
+      // of the visits to the roofs for leisure that still happen: a wet day halves them, a day
+      // with a minimum under 12 °C (Friday and Saturday) takes 3 in 10 away. The rules are
+      // INFERRED; the numbers are the Observatory's. Without the data, every day is fair.
+      wet: (dow) => wetOf(dow),
+      roofWeather: (dow) => {
+        const w = opts.weather?.days?.[dow];
+        if (!w) return 1;
+        return (wetOf(dow) ? 0.5 : 1) * (w.minC < 12 ? 0.7 : 1);
+      },
       // the days the daughter comes to dinner: about 2 in 5 (INFERRED), at a time of the
       // mother's household
       kinDay: (mumHid, dow) => {

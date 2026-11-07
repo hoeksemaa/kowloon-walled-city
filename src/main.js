@@ -85,11 +85,11 @@ const state = { explode: 0, explodeTarget: 0, lift: 0, zf: 1, peel: -1, speed: S
 // The clock of the week: day 0 is Monday 15 December 1986, day 6 Sunday 21 December.
 const clock = { minute: START_MINUTE, day: 0 };
 let S, layers, uses, places, lighting, planes, maxStorey = 0, storeyCount = [];
-let pop, life, figures, furnish, cases, streets, windows;
+let pop, life, figures, furnish, cases, streets, windows, weather;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings', 'mysteries', 'utilities'];
+  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings', 'mysteries', 'utilities', 'weather'];
   const D = Object.fromEntries(await Promise.all(names.map((n) => fetch(`./data/${n}.json`).then((r) => r.json()).then((j) => [n, j]))));
   // the structure, as the structure viewer builds it (structureViewer.js): the corrections of
   // data/structure_fixes.json on the fine plan, and the kept random choices
@@ -115,7 +115,8 @@ async function init() {
   // the people of the week
   const nav = new Nav(S);
   pop = buildPopulation(S, uses, nav, D.routines, D.people);
-  life = new Life(S, uses, pop, { nav, utilities: D.utilities });
+  weather = D.weather;
+  life = new Life(S, uses, pop, { nav, utilities: D.utilities, weather });
   figures = new Figures(life, layers);
   // the lit windows at night: a window glows where someone is awake in the room behind it
   windows = new LitWindows(S, life, uses);
@@ -524,6 +525,20 @@ function drawDay() {
   for (const h of [6, 12, 18]) g.fillText(String(h).padStart(2, '0'), (h / 24) * c.width + 2, 10);
 }
 
+// ---- the weather of the day (data/weather.json: the Hong Kong Observatory (香港天文台)) ----
+// The cloud: the share of the day without sun, 1 - hours of sun / 10.8 (the length of the day
+// in this week, env.js). The same cloud all day is INFERRED.
+const DAY_H = 10.8;
+const cloudOf = (dow) => { const w = weather?.days?.[dow]; return w ? clamp(1 - w.sunH / DAY_H, 0, 1) : 0; };
+// The line of the menu: the sky, the temperatures, the rain and the humidity of the day.
+function weatherLine(dow) {
+  const w = weather?.days?.[dow];
+  if (!w) return '';
+  const sky = w.sunH >= 7 ? `sunny, ${w.sunH} h of sun` : w.sunH > 0 ? `mostly grey, ${w.sunH} h of sun` : 'grey, no sun';
+  const rain = w.rain === 'trace' ? 'a trace of rain' : w.rain > 0 ? `${w.rain} mm of rain` : 'dry';
+  return `<b>${w.minC}–${w.maxC} °C</b> · ${sky} · ${rain} · humidity ${w.rh}%`;
+}
+
 const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 function updateClock() {
@@ -533,6 +548,8 @@ function updateClock() {
   const d = new Date(Date.UTC(1986, 11, 15 + (clock.day % 7)));
   $('t-date').textContent = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   $('t-paused').textContent = state.speed ? '' : ' · PAUSED';
+  const dow = clock.day % 7;
+  if (updateClock.dow !== dow) { updateClock.dow = dow; $('wx').innerHTML = weatherLine(dow); }
   $('playhead').style.left = `${(clock.minute / 1440) * 100}%`;
 }
 
@@ -594,6 +611,7 @@ function frame(now) {
     const vw = (camera.right - camera.left) / camera.zoom, vh = (camera.top - camera.bottom) / camera.zoom;
     lighting.setFocus(controls.target.x, controls.target.z, clamp(0.5 * Math.max(vw, vh / 0.55) * 0.9 + 12, 28, 400));
   }
+  lighting.setCloud(cloudOf(clock.day % 7));
   const night = lighting.update(hour, state.lift);
   planes.update(clock.day % 7, clock.minute, dt, state.speed, state.explode > 0.3, night);
 

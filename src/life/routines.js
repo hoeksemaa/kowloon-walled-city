@@ -8,8 +8,10 @@
 // evening (p322), children on the roofs (Albert Ng (吳錦波), SCMP, 4 January 2013), the one
 // standpipe (p107), police on the beat (pp251, 283), refuse (p104), meter readers (p98),
 // patients from outside (p242).
+// SOURCED (the Hong Kong Observatory (香港天文台), data/weather.json): the weather of the week.
 // INFERRED: all the hours of the crowd. A 1980s Hong Kong week: work and school six days,
-// Saturday school in the morning only, Sunday off for most.
+// Saturday school in the morning only, Sunday off for most. The effect of the weather on the
+// roofs and the washing (fair, X.wet).
 //
 // The real people (data/routines.json) follow their own weeks: each slot gives the days, the
 // hours, the place and what they do, with its basis (sourced or inferred).
@@ -47,6 +49,11 @@ export function planDay(p, dow, X) {
   const sat = dow === SAT, sun = dow === SUN;
   const home = p.home || OUT('home, outside the City');
   const roof = () => X.roofFor(p.home?.b) || home;
+  // The weather (data/weather.json; sim.js, roofWeather): on a wet or a cold day some visits to
+  // the roofs for leisure do not happen (INFERRED). A fair day draws no number, thus its plan
+  // stays as it was.
+  const WX = X.roofWeather ? X.roofWeather(dow) : 1;
+  const fair = () => WX >= 1 || r() < WX;
   // The household of the day (planHouse): its dinner, its water, who fetches the drinking water.
   const F = p.hh !== undefined && X.house ? X.house(p, dow) : null;
   // The fixed blocks of the day (away from home, or the water), so that the errands (the
@@ -79,7 +86,7 @@ export function planDay(p, dow, X) {
   const afternoon = (t) => {
     const q = r();
     if (q < 0.3) { const e = J(H(17, 30), 30); at(t, OUT('out'), 'out'); at(e, home, 'home'); block(t, e); }
-    else if (q < 0.42) { const e = t + J(60, 20); at(t, roof(), 'on the roof'); at(e, home, 'the afternoon at home'); block(t, e); }
+    else if (q < 0.42 && fair()) { const e = t + J(60, 20); at(t, roof(), 'on the roof'); at(e, home, 'the afternoon at home'); block(t, e); }
     else at(t, home, 'the afternoon at home');
   };
   // A visit to place pl from about t0 to t1, if the time is free; then `after` at home.
@@ -145,7 +152,7 @@ export function planDay(p, dow, X) {
     let pl = null, what = '', t = J(H(14, 40), 40), len = 0;
     if (q < 0.2) { pl = X.neighbour(p.home, r); what = 'playing mahjong at a neighbour’s flat (p15)'; len = J(170, 40); }
     else if (q < 0.3) { pl = OUT('in the park next to the City'); what = 'a walk in the park next to the City (p80)'; len = J(70, 20); }
-    else if (q < 0.38) { pl = roof(); what = 'on the roof in the afternoon'; len = J(50, 15); }
+    else if (q < 0.38 && fair()) { pl = roof(); what = 'on the roof in the afternoon'; len = J(50, 15); }
     if (!pl) return false;
     t = slot(t, len + 10);
     if (t < 0 || (F && t + len > F.dinner - 20)) return false;
@@ -315,7 +322,7 @@ export function planDay(p, dow, X) {
       // "Parents here usually lock them in their flats and don't allow them to play outside"
       // (p300); children played on the stairs and the landings (p54). The shares are INFERRED.
       const q = r();
-      if (!sun && q < 0.1) { at(J(H(15, 30), 40), roof(), 'playing on the roof'); at(J(H(17, 0), 20), home, 'at home'); }
+      if (!sun && q < 0.1 && fair()) { at(J(H(15, 30), 40), roof(), 'playing on the roof'); at(J(H(17, 0), 20), home, 'at home'); }
       else if (q < 0.3) { at(J(H(15, 30), 50), home, 'playing on the landing outside the flat (p54)'); at(J(H(17, 0), 20), home, 'at home'); }
       if (outing()) {}
       dinner();
@@ -330,8 +337,8 @@ export function planDay(p, dow, X) {
         at(J(H(8, 0), 40), home, 'Sunday at home');
         if (!outing()) {
           const q = r();
-          if (q < 0.35) { const s0 = J(H(10, 0), 60), e = J(H(12, 30), 30); at(s0, roof(), 'playing on the roofs'); at(e, home, 'lunch'); at(e + J(45, 10), home, 'at home'); block(s0, e); }
-          if (r() < 0.4) { const s0 = J(H(15, 0), 40), e = J(H(17, 30), 20); at(s0, roof(), 'flying a kite from the roof'); at(e, home, 'at home'); block(s0, e); }
+          if (q < 0.35 && fair()) { const s0 = J(H(10, 0), 60), e = J(H(12, 30), 30); at(s0, roof(), 'playing on the roofs'); at(e, home, 'lunch'); at(e + J(45, 10), home, 'at home'); block(s0, e); }
+          if (r() < 0.4 && fair()) { const s0 = J(H(15, 0), 40), e = J(H(17, 30), 20); at(s0, roof(), 'flying a kite from the roof'); at(e, home, 'at home'); block(s0, e); }
         }
         fetch(J(H(16, 30), 40), 'homework');
         dinner();
@@ -383,16 +390,16 @@ export function planDay(p, dow, X) {
         at(J(H(7, 35), 15), school, 'at school (Saturday morning)');
         at((back = J(H(12, 40), 15)), home, 'lunch at home');
         at(back + J(40, 10), home, 'Saturday afternoon at home');
-        if (r() < 0.55) { const s0 = J(H(14, 30), 30), e = J(H(17, 50), 20); at(s0, roof(), 'playing on the roofs'); at(e, home, 'at home'); block(s0, e); }
+        if (r() < 0.55 && fair()) { const s0 = J(H(14, 30), 30), e = J(H(17, 50), 20); at(s0, roof(), 'playing on the roofs'); at(e, home, 'at home'); block(s0, e); }
         fetch(back + J(50, 15), 'Saturday afternoon at home');
       } else if (p.age < 12 && p.seed < 0.5) {
         at(rubbishOut(J(H(7, 25), 15)), school, 'at school (morning session)');
         at((back = J(H(12, 50), 15)), home, 'lunch at home');
         at(back + J(40, 10), home, 'homework');
-        if (!fetch(J(H(14, 15), 20), 'homework') && !family() && !candy()) { const q2 = r(); if (q2 < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); } else if (q2 < 0.55) store(J(H(17, 40), 30), 'homework'); }
+        if (!fetch(J(H(14, 15), 20), 'homework') && !family() && !candy()) { const q2 = r(); if (q2 < 0.45) { if (fair()) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); } } else if (q2 < 0.55) store(J(H(17, 40), 30), 'homework'); }
       } else if (p.age < 12) {
         at(J(H(7, 30), 10), home, 'homework, before the afternoon session');
-        if (r() < 0.4) { at(J(H(9, 30), 30), roof(), 'playing on the roofs'); at(J(H(10, 50), 15), home, 'at home'); }
+        if (r() < 0.4 && fair()) { at(J(H(9, 30), 30), roof(), 'playing on the roofs'); at(J(H(10, 50), 15), home, 'at home'); }
         at(J(H(11, 40), 10), home, 'lunch');
         at(J(H(12, 30), 10), school, 'at school (afternoon session)');
         at((back = J(H(18, 25), 10)), home, 'home from school');
@@ -401,7 +408,7 @@ export function planDay(p, dow, X) {
       } else {
         at(rubbishOut(J(H(7, 30), 15)), school, 'at secondary school');
         at((back = J(H(16, 30), 10)), home, 'homework');
-        if (!fetch(back + J(20, 10), 'homework') && !family() && !tutor() && !candy()) { const q2 = r(); if (q2 < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); } else if (q2 >= 0.42 && q2 < 0.46 && X.places.youth) { at(J(H(17, 0), 15), X.places.youth, 'after school at the youth centre, where many young people gather (HK01, 2016)'); at(J(H(18, 40), 15), home, 'homework'); } else if (q2 < 0.42) store(J(H(17, 40), 30), 'homework'); }
+        if (!fetch(back + J(20, 10), 'homework') && !family() && !tutor() && !candy()) { const q2 = r(); if (q2 < 0.3) { if (fair()) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); } } else if (q2 >= 0.42 && q2 < 0.46 && X.places.youth) { at(J(H(17, 0), 15), X.places.youth, 'after school at the youth centre, where many young people gather (HK01, 2016)'); at(J(H(18, 40), 15), home, 'homework'); } else if (q2 < 0.42) store(J(H(17, 40), 30), 'homework'); }
       }
       if (helped && F) {
         at(F.dinner, helped.w, 'dinner at the workshop'); at(F.dinner + 30, helped.w, helped.what);
@@ -541,13 +548,15 @@ export function planDay(p, dow, X) {
       if (pt >= 0 && pt < H(14, 15)) { const t2 = pt + J(180, 15); at(pt, ff, 'part-time work at a food workshop near home, in a coat against the winter chill (pp292-293)'); at(t2, home, 'housework'); block(pt, t2); }
       else if (ff) at(J(H(13, 15), 10), home, outwork ? 'outwork at home: packing for a workshop of the City (pp88, 176)' : 'housework');
       // the washing: in the well water of the pipes, which "could only be deployed for bathing and
-      // laundry" (p14); then out to dry in the corridor (p176), or on the roof (INFERRED shares)
+      // laundry" (p14); then out to dry in the corridor (p176), or on the roof (INFERRED shares).
+      // On the wet day (1.3 mm of rain on Thursday 18 December: data/weather.json) all of it
+      // dries in the corridor (INFERRED).
       const lq = r(), WASH = 'washing the clothes in the well water of the pipes, good only for bathing and laundry (p14)';
       const t0 = lq < 0.5 ? slot(J(H(10, 25), 15), 60) : -1;
       if (t0 >= 0 && t0 < H(12, 0)) {
         const t = t0 + J(35, 8);
         at(t0, home, WASH);
-        if (lq < 0.35) { at(t, home, 'hanging the washing out to dry in the corridor (p176)'); at(t + 15, home, 'housework'); }
+        if (lq < 0.35 || X.wet?.(dow)) { at(t, home, 'hanging the washing out to dry in the corridor (p176)'); at(t + 15, home, 'housework'); }
         else { at(t, roof(), 'hanging the washing on the roof'); at(t + J(22, 5), home, 'housework'); }
         block(t0, t + 22);
       }
@@ -557,7 +566,7 @@ export function planDay(p, dow, X) {
       else if (hq < 0.4) store(J(H(16, 40), 35), 'housework');
       else if (hq < 0.41 && X.places.yard) { const t1 = J(H(14, 50), 20); at(t1, X.places.yard, 'preparing the vegetables for dinner in the Yamen courtyard (p299)'); at(t1 + J(50, 10), home, 'housework'); block(t1, t1 + 50); }
       const tm = F?.toMum?.who === p.id ? F.toMum : null;
-      if (r() < 0.12 && !tm) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 40), 10), home, 'housework'); }
+      if (r() < 0.12 && !tm && fair()) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 40), 10), home, 'housework'); }
       // "when you were cooking dinner, you could just open the window and ask your neighbour,
       // ‘Hey do you have some soy sauce?’ Swapping ingredients through windows like this happened
       // regularly" (Chan Cheung-chuen (陳祥全), M+ audio guide 8038). On 1 day in 10 (INFERRED).
@@ -602,7 +611,7 @@ export function planDay(p, dow, X) {
       // "Her daily routine would take her to the adjoining park" (Law Yu Yi, p80)
       else if (q < 0.25 && !takes && !minds) { const s0 = J(H(6, 45), 25); t = J(H(8, 30), 30); at(s0, OUT('in the park next to the City'), 'in the park next to the City (p80)'); at(t, home, 'resting'); block(s0, t); }
       // a top-floor tenant: "可以上天臺做運動" (袁家倫, Epoch Times (大紀元時報), 5 May 2024); the hour is INFERRED
-      else if (q < 0.33) { const s0 = J(H(6, 15), 20); t = J(H(7, 15), 20); at(s0, roof(), 'morning exercise on the roof'); at(t, home, care); block(s0, t); }
+      else if (q < 0.33 && fair()) { const s0 = J(H(6, 15), 20); t = J(H(7, 15), 20); at(s0, roof(), 'morning exercise on the roof'); at(t, home, care); block(s0, t); }
       else at((t = J(H(7, 15), 20)), home, minds ? care : 'at home');
       // "a small family shrine, which was regularly blessed with fresh offerings of food and
       // incense" (p154): by the old person when there is no homemaker
@@ -665,7 +674,7 @@ export function planDay(p, dow, X) {
       // "A grandmother would keep her eye on her own grandchildren as well as the children of
       // her neighbours, while her daughter prepared supper in an apartment below" (p322).
       if (F?.roofEve?.who === p.id) { at(F.roofEve.t0, roof(), 'on the roof in the early evening, minding the grandchildren and the neighbours’ children (p322)'); at(F.roofEve.t1, home, 'resting'); }
-      else if (!room && !F?.roofEve && !F?.daughter && r() < 0.2 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
+      else if (!room && !F?.roofEve && !F?.daughter && r() < 0.2 && !busy(H(16, 50), H(18, 0)) && fair()) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
       // a widower alone: "A friend lives upstairs and comes down to eat with me in the
       // evening" (Wong Hoi Ming (王海明), p233)
       if (F?.daughter?.mother === p.id) at(F.daughter.t0, home, 'cooking dinner with her daughter, who comes to help (p158)');
@@ -1025,8 +1034,9 @@ export function planHouse(h, mem, dow, X) {
   }
   // "Early evening brought whole families up to the roof. A grandmother would keep her eye on her
   // own grandchildren as well as the children of her neighbours, while her daughter prepared
-  // supper in an apartment below" (p322). On about 1 evening in 5 (INFERRED).
-  if (old && young.length && r() < 0.2) F.roofEve = { who: old.id, gp: old.sex === 'f' ? 'grandmother' : 'grandfather', kids: new Set(young.map((m) => m.id)), t0: J(H(17, 0), 15), t1: J(H(17, 55), 10) };
+  // supper in an apartment below" (p322). On about 1 evening in 5, fewer on a wet or a cold day
+  // (sim.js, roofWeather) (INFERRED).
+  if (old && young.length && r() < 0.2 * (X.roofWeather ? X.roofWeather(dow) : 1)) F.roofEve = { who: old.id, gp: old.sex === 'f' ? 'grandmother' : 'grandfather', kids: new Set(young.map((m) => m.id)), t0: J(H(17, 0), 15), t1: J(H(17, 55), 10) };
   // the kindergarten (ages 3 to 5), Monday to Friday; the homemaker or a grandparent takes them
   if (!sat && !sun) {
     const kin = X.kinderFor(h.id);

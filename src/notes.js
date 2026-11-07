@@ -105,6 +105,13 @@ source; an hour or a room that only the model gives is marked inferred.</p>
 <p><span class="st prov">INFERRED</span>Where each utility stands (data/utilities.json): the 67 roof tanks, the pumps,
 the meter boards, the pipes over the lanes, the lamps, the refuse points. <span class="st ok">SOURCED</span>Their look, the one
 standpipe in the City (p106), a meter for each unit, and the 200 public lights lit 24 hours a day.</p>
+<p><span class="st ok">SOURCED</span>The weather of each day of the week (data/weather.json): the daily data of the
+Hong Kong Observatory (香港天文台) for 15 to 21 December 1986. A sunny Monday (9.3 hours of sun, 18.6 to 21.6 °C);
+grey from Tuesday to Thursday (no sun at all on Wednesday and Thursday, 1.3 mm of rain on Thursday); then a cold,
+dry, sunny spell: 10.1 °C on Friday morning, the coldest of the month. The menu gives the weather of the day.
+<span class="st prov">INFERRED</span>The cloud of the sky comes from the hours of sun, the same all day. Fewer
+people go up to the roofs on the wet day and on a day under 12 °C, and on the wet day the washing dries in the
+corridor.</p>
 <h4>Not yet on this structure</h4>
 <p>The numbers of the 1992 map sat on the old city of this app. They come back in a later change, on
 this structure. The street names and the road names are back (src/streetNames.js).</p>`;
