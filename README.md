@@ -195,6 +195,18 @@ deleted.
   their wing-tip lights and landing light.
 - **Colours.** The structure has no colours. The main app uses the placeholder colours of
   `src/structureColors.js`, as the viewer does.
+- **Loading screen.** While the City is built, a red screen shows the name of the City and
+  the white bauhinia of the Hong Kong flag (as `favicon.svg`). Its five petals light one
+  after the other, clockwise, over the word LOADING. Each petal is a box of its own, thus the
+  browser can animate it while the script builds the City.
+- **Phone.** The phone layout starts on a narrow screen (720 px or less) or a low one (520 px
+  or less: a phone on its side). A bar at the top gives the title, the time and one button,
+  MENU. The menu is a sheet at the foot of the screen (on a phone on its side, at the right).
+  It holds the clock, the tool that pulls the floors apart, the storeys, the mysteries and
+  the sources. The selected building or person, the mysteries and the sources are sheets
+  too. When a sheet is open, the view moves, thus the City stays in the part of the screen
+  that shows. Drag to turn the City, pinch to zoom, and move two fingers to pan. A tap
+  selects, but a gesture of two fingers never selects.
 
 The "Sources + notes" panel (`src/notes.js`) lists what the structure takes from each source,
 and what it infers.

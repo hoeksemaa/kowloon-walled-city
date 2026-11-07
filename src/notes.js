@@ -32,6 +32,9 @@ source gives is marked inferred.</p>
     peel cuts nothing. Thus every room of that storey shows from above.</li>
   <li><span class="st ok">CLICK</span>A building: its storeys, heights, stairs and links, and the
     use of its rooms in December 1986. A room of an open floor: its use and its sources.</li>
+  <li><span class="st ok">MENU</span>On a phone, the button MENU opens the clock, the floors, the
+    storeys, the mysteries and these notes. Drag to turn the City, pinch to zoom, and move two
+    fingers to pan. Tap a building or a person.</li>
 </ul>
 
 <h4>From primary sources</h4>
