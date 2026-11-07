@@ -252,6 +252,11 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
   for (let i = olds.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [olds[i], olds[j]] = [olds[j], olds[i]]; }
   const members = [...olds.filter((p) => p.sex === 'f').slice(0, 138), ...olds.filter((p) => p.sex === 'm').slice(0, 46)];
   members.forEach((p, q) => { p.centre = q % 5 < 2 ? 'daily' : 'some'; if (q % 4 === 0) p.worship = true; });
+  // "anyone absent for a day or more would arouse concern among friends and staff, setting in
+  // motion a discreet check-up at their home" (p306): each member who comes on some days has a
+  // friend among the members who come each day (INFERRED).
+  const daily = members.filter((p) => p.centre === 'daily');
+  members.filter((p) => p.centre === 'some').forEach((p, q) => { const f = daily[q % daily.length]; if (f) (f.checks ||= []).push({ id: p.id, hh: p.hh }); });
   // The Sunday chapel of the Salvation Army (救世軍): "On Sundays, our premises become a chapel and
   // we usually have 10 to 20 people attending our services" (p301). Which people is INFERRED:
   // 15 old people who do not worship at the Centre.

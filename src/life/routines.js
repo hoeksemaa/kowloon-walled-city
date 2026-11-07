@@ -513,7 +513,10 @@ export function planDay(p, dow, X) {
       const C = X.places.centre, goes = p.centre === 'daily' || (p.centre === 'some' && (p.id + dow) % 3 === 0);
       if (C && !sun && goes && !minds) {
         if (r() < 0.3 && visit(H(9, 30), H(11, 30), C, 'the morning at the Old People’s Centre (老人中心) (p308)', 'lunch')) at(J(H(12, 15), 10), home, 'resting');
-        visit(H(14, 30), H(17, 15), C, 'tea and television at the Old People’s Centre (老人中心) (p306)', 'resting');
+        // "calligraphy classes for the many elderly women who had never been taught to write"
+        // (p306): on Wednesday and Friday afternoons for half the women (INFERRED)
+        const write = p.sex === 'f' && (dow === 1 || dow === 3) && (p.seed * 13) % 1 < 0.5;
+        visit(H(14, 30), H(17, 15), C, write ? 'a calligraphy class at the Old People’s Centre (老人中心) (p306)' : 'tea and television at the Old People’s Centre (老人中心) (p306)', 'resting');
       } else if (C && sun && p.worship) visit(H(10, 15), H(11, 40), C, 'Sunday worship at the Old People’s Centre (老人中心) (p305)', 'resting');
       else if (sun && p.chapel) visit(H(10, 0), H(11, 30), X.places.kinder, 'at the Sunday service in the Salvation Army (救世軍) chapel (p301)', 'resting');
       // the busy day before the festival: "we employ some elderly women of Chiu Chow origin on a
@@ -528,6 +531,13 @@ export function planDay(p, dow, X) {
       } else if (!room && p.sex === 'f' && r() < 0.05 && X.places.temple) visit(H(10, 0), H(10, 25), X.places.temple, 'incense at the Fuk Tak shrine (福德古廟) (p32)', 'resting');
       if (!takes && !busy(H(11, 45), H(13, 0))) { const t1 = J(H(12, 15), 15); at(t1, home, F?.small ? 'lunch with the grandchildren' : 'lunch'); at(t1 + J(40, 8), home, minds ? care : 'an afternoon nap'); if (!minds) at(t1 + J(130, 20), home, 'resting'); block(t1, t1 + 40); }
       fetch(r() < 0.6 ? J(H(10, 0), 70) : J(H(15, 45), 60), care);
+      // a friend from the Centre who has not come for two days: a call at the home, on about 1 day
+      // in 4 of such absences (p306; INFERRED)
+      if (p.checks && !sun && !dz) {
+        const c = p.checks.find((x) => (x.id + dow) % 3 !== 0 && (x.id + dow + 6) % 3 !== 0 && (x.id * 7 + dow) % 4 === 0);
+        const h2 = c && X.homeOf(c.hh), t1 = freeAt(J(H(17, 35), 10), 30);
+        if (h2 && t1 < H(18, 20)) { at(t1, h2, 'calling at the home of a friend from the Centre who has not come for two days (p306)'); at(t1 + J(25, 5), home, 'resting'); block(t1, t1 + 25); }
+      }
       if (!room && !minds && r() < 0.1) store(J(H(16, 0), 60), 'resting');
       if (outing()) {}
       if (dz) { dongzhi(18); break; }
