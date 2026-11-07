@@ -242,7 +242,7 @@ export function planDay(p, dow, X) {
         at(F.kinderBack + 2, home, 'lunch at home');
         at(F.kinderBack + 40, home, 'an afternoon nap');
         at(F.kinderBack + 140, home, 'at home');
-      } else at(J(H(7, 40), 20), home, p.age < 3 ? 'at home with the family' : F && !F.hasHomemaker && F.small ? 'at home with the grandparent (p54)' : 'playing at home');
+      } else at(J(H(7, 40), 20), home, p.age < 3 ? 'at home with the family' : F && !F.hasHomemaker && F.hasOld ? 'at home with the grandparent (p54)' : 'playing at home');
       // "Parents here usually lock them in their flats and don't allow them to play outside"
       // (p300); children played on the stairs and the landings (p54). The shares are INFERRED.
       const q = r();
@@ -543,7 +543,8 @@ export function planDay(p, dow, X) {
       if (dz) { dongzhi(18); break; }
       // "A grandmother would keep her eye on her own grandchildren as well as the children of
       // her neighbours, while her daughter prepared supper in an apartment below" (p322).
-      if (!room && r() < 0.25 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), F?.small || F?.pickup ? 'on the roof in the early evening, minding the children (p322)' : 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
+      if (F?.roofEve?.who === p.id) { at(F.roofEve.t0, roof(), 'on the roof in the early evening, minding the grandchildren and the neighbours’ children (p322)'); at(F.roofEve.t1, home, 'resting'); }
+      else if (!room && !F?.roofEve && r() < 0.2 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
       // a widower alone: "A friend lives upstairs and comes down to eat with me in the
       // evening" (Wong Hoi Ming (王海明), p233)
       if (F && F.members === 1 && p.sex === 'm' && r() < 0.35) at(F.dinner, home, 'dinner with a friend from upstairs (p233)');
@@ -689,6 +690,32 @@ export function planDay(p, dow, X) {
       const last = ev.filter((e) => e[0] < b).pop();
       if (!slept && last && last[1] === w) { ev.push([clampM(b), home, 'up to the flat for the night (p173)']); ev.sort((x, y) => x[0] - y[0]); }
     }
+    // the young children minded at a neighbour's flat (p54), and the parent who takes and fetches them
+    if (F.minder && F.minded.has(p.id)) {
+      const a = F.dropT, b = F.pickT, there = F.minder;
+      for (const e of ev) {
+        if (e[1] !== home || e[0] < a || e[0] >= b || /^asleep/.test(e[2])) continue;
+        e[1] = there;
+        if (/^lunch/.test(e[2])) e[2] = 'lunch at the neighbour’s flat (p54)';
+        else if (/^homework/.test(e[2])) e[2] = 'homework at the neighbour’s flat (p54)';
+        else if (/nap/.test(e[2])) e[2] = 'a nap at the neighbour’s flat (p54)';
+        else if (/^breakfast/.test(e[2])) e[2] = 'breakfast at the neighbour’s flat (p54)';
+        else if (/^(at home|playing at home|home)/.test(e[2])) e[2] = 'minded at a neighbour’s flat in the building, with her own children (p54)';
+      }
+      ev.push([clampM(a), there, 'taken to a neighbour’s flat in the building for the day (p54)'], [clampM(b), home, 'home with a parent (p54)']);
+      ev.sort((x, y) => x[0] - y[0]);
+    } else if (F.minder && F.picker === p.id) {
+      ev.push([clampM(F.dropT), F.minder, 'taking the children to a neighbour’s flat in the building (p54)'], [clampM(F.pickT - 8), F.minder, 'picking up the children from the neighbour’s flat on the way home (p54)'], [clampM(F.pickT), home, 'home with the children']);
+      ev.sort((x, y) => x[0] - y[0]);
+    }
+    // the children on the roof in the early evening, with the grandmother (p322)
+    if (F.roofEve?.kids.has(p.id)) {
+      const before = ev.filter((e) => e[0] <= F.roofEve.t0).pop();
+      if (before && before[1].kind !== 'out' && !/^asleep/.test(before[2])) {
+        ev.push([clampM(F.roofEve.t0 + 2), roof(), `playing on the roof in the early evening, the ${F.roofEve.gp} watching (p322)`], [clampM(F.roofEve.t1), home, 'at home']);
+        ev.sort((x, y) => x[0] - y[0]);
+      }
+    }
     // the night in the workshop, to guard it (p169)
     if (F.guard === p.id && p.work) for (const e of ev) if (e[2] === 'asleep' && e[1] === home) { e[1] = p.work; e[2] = 'asleep in the workshop, to guard it from the drug addicts (p169)'; }
     // a family that lives in its shop (p94) or its clinic (p245)
@@ -769,6 +796,21 @@ export function planHouse(h, mem, dow, X) {
   // no homemaker
   F.pickup = !mum && old && !sat && !sun && mem.some((m) => m.role === 'student' && m.age < 12 && m.seed < 0.5) ? J(H(12, 50), 8) : 0;
   if (sun && h.kind === 'family' && r() < 0.45) F.outing = { t0: J(H(9, 40), 30), t1: J(H(14, 0), 50) };
+  F.hasOld = !!old;
+  // Young children with no one of the household at home by day: "within any one building, a
+  // grandmother or housewife might take care of several of the neighbours' children as well as
+  // her own", and the parents "would stop by and pick them up on their way home from work"
+  // (p54). The neighbour is a household of the building with a homemaker or an old person; the
+  // hours are INFERRED.
+  const young = mem.filter((m) => m.role === 'child' || (m.role === 'student' && m.age < 12));
+  if (!keeper && young.length && !sun) {
+    const nb = X.minderFor?.(h.home, h.id), par = mem.find((m) => m.role === 'worker_out' || m.role === 'worker_in' || m.role === 'shopkeeper');
+    if (nb && par) { F.minder = nb; F.minded = new Set(young.map((m) => m.id)); F.dropT = J(H(6, 40), 8); F.pickT = F.dinner - J(25, 10); F.picker = par.id; }
+  }
+  // "Early evening brought whole families up to the roof. A grandmother would keep her eye on her
+  // own grandchildren as well as the children of her neighbours, while her daughter prepared
+  // supper in an apartment below" (p322). On about 1 evening in 5 (INFERRED).
+  if (old && young.length && !dz && r() < 0.2) F.roofEve = { who: old.id, gp: old.sex === 'f' ? 'grandmother' : 'grandfather', kids: new Set(young.map((m) => m.id)), t0: J(H(17, 0), 15), t1: J(H(17, 55), 10) };
   // the kindergarten (ages 3 to 5), Monday to Friday; the homemaker or a grandparent takes them
   if (!sat && !sun) {
     const kin = X.kinderFor(h.id);

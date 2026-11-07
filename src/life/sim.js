@@ -178,8 +178,25 @@ export class Life {
       }
       return laneOf.get(home.node);
     };
+    // the households of each building with someone at home by day (a homemaker, or an old person
+    // under 80): they mind the neighbours' young children (p54)
+    let minders = null;
+    const minderFor = (home, hid) => {
+      if (!minders) {
+        minders = new Map();
+        for (const h of this.households) {
+          if (!h.members.some((i) => this.persons[i].role === 'homemaker' || (this.persons[i].role === 'elder' && this.persons[i].age < 80))) continue;
+          if (!minders.has(h.home.b)) minders.set(h.home.b, []);
+          minders.get(h.home.b).push(h);
+        }
+      }
+      const list = (minders.get(home.b) || []).filter((h) => h.id !== hid);
+      if (!list.length) return null;
+      // the household of the same flat first (a lodger and its host), then one of the building
+      return (list.find((h) => h.home === home) || list[hid % list.length]).home;
+    };
     this.X = {
-      places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy,
+      places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
       // A rush order: the workers come back after dinner and work until 2 or 3 am (p237); a
       // workshop could run "24 hours a day" (p88). On about 1 day in 12 for each workshop
       // (INFERRED). The food workshops work through the night before 冬至 (Sunday 21 December):
