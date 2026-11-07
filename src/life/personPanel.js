@@ -79,6 +79,8 @@ export function personHtml(ctx, i) {
   html += `<div>${esc(now.doing || '')}${P ? ` ${basisTag(now.slot)}` : ''}</div>`;
   const where = now.walking ? `walking to ${placeWords(S, uses, now.to)}` : placeWords(S, uses, now.at);
   if (where !== esc(now.doing || '')) html += `<div class="sub">${where}</div>`;
+  const at = now.walking ? null : now.at;
+  if (at && at.b !== undefined && life.cutsNow()?.has(at.b)) html += '<div class="sub">A power cut: the lights of this building are out (p145).</div>';
   if (P && P.story) html += `<h3>THEIR STORY</h3><div>${esc(P.story)}</div>`;
   if (!P && p.hh !== undefined && pop.households?.[p.hh]) {
     const h = pop.households[p.hh];
