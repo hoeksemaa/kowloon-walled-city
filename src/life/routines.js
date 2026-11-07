@@ -680,6 +680,58 @@ export function planDay(p, dow, X) {
       }
       break;
     }
+    case 'addict': {
+      // "A few heroin addicts remained in the City until the end" (p260). Wong Wai Chung: "To beg
+      // for some of the white powder [pure heroin], I would get down and grasp the legs of the
+      // drug dealers on the street" (p258); in 1985, "because I did not have money, I had to go
+      // back home to eat" and "I slept on the streets every day" (p259).
+      // "The younger generation of addicts found in the City in the late '80s preferred to inject
+      // the drug" (p259). A workshop owner: "I get rid of them by giving them a few dollars"
+      // (Cheng San (鄭山), p169). A doctor: "Drug addicts have, on occasion, stopped by to see if
+      // they can obtain some of these [heroin substitutes or certain painkillers], but I've always
+      // just told them to go away" (Tsin Mu Lam (錢茂林), p187). Some try to give up at the
+      // Shuiyuan centre of Jackie Pullinger (潘靈卓) (pp259-260) and at the daily prayer of the
+      // St Stephen's Society (p263). The hours, the places in the lanes, who sleeps in the City
+      // and who tries to give up are INFERRED.
+      const L = X.places, quit = p.n % 3 === 0, inCity = p.n % 4 === 1;
+      const street = inCity ? X.laneSpot(mulberry32(7700 + p.n)) : OUT('on the streets outside the City');
+      const sleep = inCity ? 'asleep in the lane: he sleeps on the streets (p259)' : 'asleep on the streets, outside the City (p259)';
+      const BEG = 'begging the dealers in the lane for a little of the white powder (p258)', USE = 'injecting heroin in a quiet corner of the lanes (p259)';
+      ev.length = 0; // not the default night at home
+      at(0, street, sleep);
+      let t = J(H(10, 30), 60), uses = 0, ate = inCity;
+      const step = () => {
+        const q = r();
+        if (!ate && t > H(12, 30)) { ate = true; at(t, OUT('at his family’s home, outside the City'), 'back to his family’s home outside the City, to eat (p259)'); t += J(100, 20); return; }
+        if (q < 0.25 && t < H(19, 0) && L.makers.length) { at(t, L.makers[Math.floor(r() * L.makers.length)], 'asking at a workshop for a few dollars; the owner gives him some to go (p169)'); t += J(12, 4); }
+        else if (q < 0.32 && t < H(19, 0) && L.clinics.length) { at(t, L.clinics[Math.floor(r() * L.clinics.length)], 'asking a doctor for heroin substitutes or painkillers; the doctor tells him to go away (p187)'); t += J(10, 3); }
+        else if (q < 0.6 && uses < 3) { at(t, X.laneSpot(r), USE); t += J(60, 20); uses++; }
+        else { at(t, X.laneSpot(r), BEG); t += J(55, 20); }
+      };
+      at(t, X.laneSpot(r), BEG); t += J(40, 15);
+      at(t, X.laneSpot(r), USE); t += J(60, 20); uses++;
+      if (quit) {
+        while (t < H(sun ? 18 : 14, 0)) step();
+        if (!sun && L.shuiyuan) { at(t, L.shuiyuan, 'at the Shuiyuan youth centre of Jackie Pullinger, which helps addicts give up drugs (pp259-260)'); t = J(H(17, 45), 10); }
+        while (t < H(18, 50)) step();
+        if (L.society) { at(Math.max(t, H(19, 20)), L.society, 'at the daily prayer of the St Stephen\u2019s Society: healing hands, hymns and open confession to God (p263)'); t = J(H(22, 35), 10); }
+      } else while (t < H(22, 0)) step();
+      at(t, street, sleep);
+      break;
+    }
+    case 'former_addict': {
+      // "After I gave up taking drugs, I still went to the Walled City to pray for drug addicts,
+      // and pay them visits" (Wong Wai Chung, p261); the daily prayer of the St Stephen's Society
+      // at 'The Well' (p263). At the Shuiyuan centre "a dozen pairs of eyes" met him in a friendly
+      // way (p259). The hours and the days of the visits are INFERRED.
+      const L = X.places;
+      if (!L.society) break;
+      if (!sun && L.shuiyuan && r() < 0.4) { const t = J(H(14, 30), 30); at(t, L.shuiyuan, 'at the Shuiyuan youth centre, to welcome the addicts who come to give up (p259)'); at(t + J(150, 30), home, home.what); }
+      if (r() < 0.5) { let t = J(H(18, 0), 20); for (let k = 0; k < 2; k++, t += J(25, 8)) at(t, X.laneSpot(r), 'in the lanes, to pray for the drug addicts and pay them visits (p261)'); }
+      at(J(H(19, 25), 5), L.society, 'at the daily prayer of the St Stephen\u2019s Society: healing hands, hymns and open confession to God (p263)');
+      at(J(H(22, 35), 10), home, home.what);
+      break;
+    }
     case 'real': realDay(p, dow, X, at, r); break;
     default: at(J(H(7, 0), 30), home, 'at home');
   }

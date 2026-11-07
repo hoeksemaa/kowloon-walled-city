@@ -47,6 +47,13 @@ export const OUTSIDERS = {
   taxi: { label: 'taxi driver (p294)', n: 40, ages: [25, 60] },
   // Porters: "men carrying sacks of flour" were "an everyday sight" (p249). How many is INFERRED.
   porter: { label: 'porter (p249)', n: 24, ages: [20, 55] },
+  // "A few heroin addicts remained in the City until the end" (p260). How many, their ages and
+  // that they are men are INFERRED; Wong Wai Chung was "in my early twenties" (p259).
+  addict: { label: 'heroin addict (pp258-260)', n: 12, ages: [20, 45] },
+  // Former addicts who pray at the daily prayer of the St Stephen's Society (p263): "After I gave
+  // up taking drugs, I still went to the Walled City to pray for drug addicts, and pay them
+  // visits" (Wong Wai Chung, p261). How many is INFERRED ("a dozen pairs of eyes", p259).
+  former_addict: { label: 'former heroin addict of the St Stephen\u2019s Society (pp261, 263)', n: 10, ages: [20, 45] },
 };
 
 // Workers in a workplace: one for each so many m² of floor (INFERRED). A workshop of 480 sq ft
@@ -311,10 +318,11 @@ export function buildPopulation(S, uses, nav, routines, people, seed = 1986) {
     const work = popSeat(handSeats) || popSeat(keeperSeats) || pick(rng, works);
     persons.push({ id: persons.length, kind: 'outsider', role: 'day_worker', age: Math.round(16 + rng() * 44), sex: rng() < 0.5 ? 'f' : 'm', home: null, work, seed: rng() });
   }
-  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient', 'taxi', 'porter'])
+  const MEN = new Set(['police', 'refuse', 'taxi', 'porter', 'addict', 'former_addict']);
+  for (const role of ['police', 'sweeper', 'refuse', 'meter', 'patient', 'taxi', 'porter', 'addict', 'former_addict'])
     for (let i = 0; i < O[role].n; i++) {
       const [a0, a1] = O[role].ages;
-      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: role === 'police' || role === 'refuse' || role === 'taxi' || role === 'porter' ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
+      persons.push({ id: persons.length, kind: 'outsider', role, age: Math.round(a0 + rng() * (a1 - a0)), sex: MEN.has(role) ? 'm' : rng() < 0.5 ? 'f' : 'm', home: null, seed: rng(), shift: i % 3, n: i });
     }
 
   // ---- the real people (data/routines.json, data/people.json) ----

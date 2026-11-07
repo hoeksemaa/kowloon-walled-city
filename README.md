@@ -281,6 +281,15 @@ drivers eat at the cafés by Tung Tsing Road (東正道) (p294). Porters carry s
 from the road to the food workshops in the morning, and the packed goods of the workshops out
 on delivery trolleys in the afternoon (pp176, 249). Who goes, when, and the days are INFERRED.
 
+"A few heroin addicts remained in the City until the end" (p260). Twelve addicts beg the dealers
+in the lanes for "a little" of the white powder (Wong Wai Chung, pp258-259), inject in a quiet
+corner (p259), ask the workshops for a few dollars (Cheng San (鄭山), p169) and the doctors for
+heroin substitutes (Tsin Mu Lam (錢茂林), p187). Most of them sleep on the streets outside the
+City (p259). Some try to give up at the Shuiyuan youth centre of Jackie Pullinger (潘靈卓) on Tai
+Chang Street (pp259-260) and at the daily prayer of the St Stephen's Society, with ten former
+addicts who come back "to pray for drug addicts, and pay them visits" (pp261, 263). How many,
+the hours and the places in the lanes are INFERRED.
+
 At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
 most flats in the evening, a few after midnight when the water comes, many again before dawn.
 The flats have tungsten bulbs and the corridors fluorescent tubes (Girard and Lambot to HK01);
