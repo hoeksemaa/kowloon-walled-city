@@ -15,7 +15,7 @@ const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofe
 const H = (h, m = 0) => h * 60 + m;
 const RUSH = new Set(['plastics', 'metal', 'garment', 'works']);
 export const POSE = { stand: 0, sit: 1, lie: 2, walk: 3 };
-const SIT = /breakfast|lunch|dinner|supper|tea|TV|television|radio|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|service|inking|accounts|drawing|map|music|orchestra|playing cards|meeting|patients|cutting hair|sitting|vegetables|calligraphy|outwork|packing/i;
+const SIT = /breakfast|lunch|dinner|supper|tea|TV|television|radio|resting|mahjong|homework|studies|sewing|wrapping|clinic|dentist|doctor|school|kindergarten|worship|service|inking|accounts|drawing|map|music|orchestra|playing cards|meeting|patients|cutting hair|sitting|vegetables|calligraphy|outwork|packing|prayer/i;
 const DOING = {
   plastics: 'at the plastics workshop', metal: 'at the metal workshop', garment: 'at the garment workshop',
   foodfac: 'at the food workshop', works: 'at the workshop', shop: 'in the shop', eating: 'at the eating house',
@@ -63,6 +63,9 @@ export class Life {
       foodfacs: units((r) => r.cat === 'foodfac'),
       makers: units((r) => r.cat === 'plastics' || r.cat === 'metal' || r.cat === 'garment' || r.cat === 'works'),
       tinHau: P('54:0:0'), music: P('157:3:0'),
+      // Jackie Pullinger (潘靈卓): the Shuiyuan youth centre on Tai Chang Street (pp258-260) and the
+      // St Stephen's Society, where the daily prayer is (p263)
+      shuiyuan: P('254:0:3'), society: P('237:0:0'),
       clinics: units((r) => r.cat === 'dentist' || r.cat === 'clinic'),
     };
     const homes = pop.homes;
