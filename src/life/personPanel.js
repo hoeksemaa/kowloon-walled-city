@@ -65,6 +65,15 @@ function houseNotes(life, h) {
   if (h.home.lived) out.push(h.home.cat === 'dentist' || h.home.cat === 'clinic' ? 'The family lives in its clinic and sleeps on the floor, as a dentist\'s family did (p245; INFERRED for this one).' : 'The family lives in its shop: a partition, and a small living area at the back, as Lee Pui Yuen (李培元) did (p94; INFERRED for this one).');
   if (F?.evenWork) out.push('Monday to Saturday the family spends the evening in its workshop: it cooks there, and the children do their homework on the workbench (p173; INFERRED for this one). It sleeps in the flat.');
   if (F?.guard >= 0) out.push(`The ${life.persons[F.guard].rel} sleeps in the workshop, to guard it from the drug addicts (p169; INFERRED for this one).`);
+  if (F?.minder) out.push('No one of the household is at home by day: the young children stay at a neighbour’s flat in the building, and a parent fetches them after work (p54; INFERRED for this one).');
+  // the households whose young children this household minds (day 0)
+  if (!life._minds) {
+    life._minds = new Map();
+    for (const x of life.households) { const G = life.X.house({ hh: x.id }, 0); if (G?.minder) life._minds.set(G.minderHh, (life._minds.get(G.minderHh) || 0) + 1); }
+  }
+  const n = life._minds.get(h.id) || 0;
+  const own = h.members.some((i) => life.persons[i].role === 'child' || (life.persons[i].role === 'student' && life.persons[i].age < 12));
+  if (n) out.push(`By day someone here minds the young children of ${n === 1 ? 'a household' : `${n} households`} of the building${own ? ', with their own' : ''} (p54; INFERRED for this one).`);
   return out.length ? `<div class="sub">${out.map(esc).join(' ')}</div>` : '';
 }
 
