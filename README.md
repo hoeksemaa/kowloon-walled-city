@@ -253,7 +253,9 @@ afternoon (pp305-306), and the Christians among them go to the Sunday worship (p
 afternoons, women who never learned to write go to a calligraphy class there (p306). When a
 member stays away, a friend from the Centre calls at the home (p306). Some old
 people seldom leave the room (p24). A grandmother minds the grandchildren, takes them home from
-school (p54) and watches them on the roof in the early evening (p322). Most parents keep the
+school (p54) and watches them on the roof in the early evening (p322). When no one of a family
+is at home by day, its young children stay with a household of the same building that has a
+homemaker or an old person, and a parent picks them up on the way home from work (p54). Most parents keep the
 small children in the flat (p300), and the children play on the stairs and the landings (p54).
 The tea houses outside the City and the morning exercise on the roofs are INFERRED.
 

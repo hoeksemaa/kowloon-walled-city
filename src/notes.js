@@ -79,7 +79,7 @@ water carriers (p108). 19,606 people of 5116 families registered on the first da
 <p><span class="st ok">SOURCED</span>The hours of the trades: stores from 6 or 8 am to midnight (pp91, 93), a doctor
 from 9 to 1 and from 3.30 to 8 (p187), a dentist from 10 to 6 or 7 (p245), a roast-meat maker from 4 am (p286), rush
 orders until 2 or 3 am (p237). The Old People's Centre (老人中心) with 184 members (p305), its calligraphy classes and its calls on absent members (p306), mahjong (p15), television
-(p160), children kept in the flats (p300), grandmothers who mind the children (pp54, 322), outwork at home (p88),
+(p160), children kept in the flats (p300), grandmothers who mind the children and the neighbours' children (pp54, 322), outwork at home (p88),
 patients from outside (p187) and the police beats (pp251, 283). Lodgers who rent a room (p157), for about 10,000
 families lived in 8,800 flats (Legislative Council (立法局), 1987; p340); families who live in their shop or clinic
 (pp94, 245) or spend the evening in their workshop (p173); a workshop guarded at night (p169). The stores, busiest from
