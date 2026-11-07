@@ -115,7 +115,6 @@ button { font: inherit; color: inherit; }
 #bld .st .u { display: flex; flex-wrap: wrap; column-gap: 10px; }
 #bld .p { display: inline-flex; align-items: center; gap: 5px; }
 #bld .sq { flex: none; width: 10px; height: 10px; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.35); }
-#bld .sq.inf { border: 1px dashed var(--ink); }
 #bld details summary { cursor: pointer; }
 #bld .tag { display: inline-block; padding: 0 4px; font-family: var(--pixel); font-size: 7px; line-height: 12px; vertical-align: 1px; }
 #bld .tag.verified { background: #184f95; color: #fff; }

@@ -134,7 +134,7 @@ async function init() {
   const { plan, overlay } = applyFixes(plan0, overlay0, fixes, fine);
   book.overlay = overlay;
   const site = buildSite(plan);
-  const L = buildLayout(site, plan, biz, book, null); // the City does not depend on its surroundings
+  const L = buildLayout(plan, biz, book); // the City does not depend on its surroundings
   const T = new Terrain(terrain);
   const t0 = performance.now();
   // the kept random choices of the links (data/structure_choices.json, choices.js)

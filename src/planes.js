@@ -59,7 +59,7 @@ function model(stripe) {
   g.add(lamp);
   g.userData.lamp = lamp;
   g.traverse((o) => { if (o.isMesh) o.castShadow = true; });
-  // At night the body darkens like the buildings round the City (env.js), and its lights show
+  // At night the body darkens (night from Lighting.update in env.js), and its lights show
   // as dots of a fixed size: red on the left wing tip (+x), green on the right, the landing
   // light white.
   g.userData.paint = [white, grey, band].map((m) => [m, m.color.clone()]);

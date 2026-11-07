@@ -14,10 +14,10 @@
 - Build new work (art, visuals, simulation) on this structure. Keep the City and the
   surroundings separate: `src/city/` and `src/surroundings/` do not import each other.
 - The main app (`index.html`, `src/main.js`) draws this structure as floor layers
-  (`src/cityLayers.js`), since 2026-11-06; its old 3D city is deleted. The people, labels and
-  game code (`people.js`, `labels.js`, `game.js` and others) still sits on the old layout and
-  the main app does not load it: move it onto the structure before you use it again. Do not
-  delete `src/floorplan.js`: `src/layout.js` still uses it.
+  (`src/cityLayers.js`), since 2026-11-06. The code of the old 3D city (its people, labels,
+  game, floor plans and checks) was deleted on 2026-11-07; the git history keeps it.
+  `src/layout.js` (with `src/footprint.js`) still reads the plan for the structure: a change to
+  it must keep `node tools/check_structure.mjs` at ok.
 - The life of the main app is in `src/life/` (since 2026-11-06): the people and their
   households and days, the things in the rooms, the utilities, the ten mysteries and the lit
   windows. `src/streetNames.js` gives the street names. John's aim for it: a rich and accurate

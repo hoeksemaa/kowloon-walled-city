@@ -12,8 +12,6 @@ import { WALL, SLAB, PARAPET, HUT, OPEN } from './model.js';
 const PARAPET_T = 0.15; // the thickness of a roof parapet
 
 export const KIND = { WALL: 0, SLAB: 1, PART: 2, STAIR: 3, FLOOR: 4, ROOF: 5, LINK: 6, HUT: 7 };
-const KIND_NAMES = Object.keys(KIND);
-export const kindName = (k) => KIND_NAMES[k] || '?';
 
 // The parts of the mesh. The structure has no colours: the caller gives colorOf(part, b, k, u),
 // the colour (linear rgb) of each part, for example the placeholder colours of the viewer

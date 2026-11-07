@@ -19,8 +19,6 @@ const MIN_UNIT = 7.5; // m2: a smaller piece joins a neighbour unit, or is one r
 const WALL = 0.2;
 export const innerRings = (rings) => rings.map((r) => offsetRing(r.pts, r.pts.map(() => -WALL)));
 
-// Risers of a storey of height h, and the rise of each.
-export const risers = (h) => { const n = Math.ceil(h / RISER_MAX - 1e-9); return { n, r: h / n }; };
 
 // The stairs of building b, in its frame: [{ type, a0, a1, w0, w1, dir, side, spine }].
 // type 'dogleg': a floor landing of LA at the landing end, two flights side by side, a half

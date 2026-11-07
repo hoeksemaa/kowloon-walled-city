@@ -65,7 +65,7 @@ separate in the code:
 | --- | --- | --- | --- |
 | The City | `src/city/` | `data/plan.json`, `data/plan_fine.json`, `data/book_overlay.json`, `data/structure_fixes.json`, `data/structure_choices.json` | every building of the City, its storeys, floors, stairs, rooms, roofs, the links between them, and the SW-NE route |
 | The surroundings | `src/surroundings/` (`shapes.js`: the shapes, no three.js; `ground.js`: draws them) | `data/context.json`, `data/surroundings.json` | context: the roads, the paths, the courts and the real buildings of 1986 round the City |
-| Shared input | `src/terrain.js`, `src/layout.js` (with `src/footprint.js`, `src/floorplan.js`, `src/residents.js`, `src/context.js`), `src/util.js` | `data/terrain.json`, `data/book.json`, `data/businesses.json` | the ground levels, and the reader of the plan (the main app uses them too) |
+| Shared input | `src/terrain.js`, `src/layout.js` (with `src/footprint.js`), `src/util.js` | `data/terrain.json`, `data/book.json`, `data/businesses.json` | the ground levels, and the reader of the plan (the main app uses them too) |
 | The viewer and the main app | `src/structureViewer.js` (`structure.html`); `src/main.js` with `src/cityLayers.js` (`index.html`) | | the two places that put the two parts together |
 
 `src/city/` does not import `src/surroundings/`, and `src/surroundings/` does not import

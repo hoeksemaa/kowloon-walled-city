@@ -4,8 +4,8 @@
 // staircase. Here each boundary between two neighbours (two plots, or a plot and a lane) is
 // traced once, as a chain of cell corners between two junctions, and simplified once with
 // Douglas-Peucker. Both neighbours use the same simplified chain, so the polygons still
-// meet with no gap and no overlap. The grid stays the model of record for walking, picking
-// and placing people; the polygons are only for drawing.
+// meet with no gap and no overlap. The grid stays the record of the plots and the lanes; the
+// polygons give the outlines of the buildings.
 
 // Region labels: a plot is its building id (0 or more); the rest are negative.
 export const LANE = -1, YARD = -2, ROAD = -3, OUTSIDE = -4;
@@ -528,7 +528,7 @@ function dpKeep(P, eps) {
   return keep;
 }
 
-export function signedArea(P) {
+function signedArea(P) {
   let s = 0;
   for (let i = 0, j = P.length - 1; i < P.length; j = i++) s += P[j][0] * P[i][1] - P[i][0] * P[j][1];
   return s / 2;
@@ -539,41 +539,6 @@ function properCross(a, b, c, d) {
   const o = (p, q, r) => (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);
   const d1 = o(c, d, a), d2 = o(c, d, b), d3 = o(a, b, c), d4 = o(a, b, d);
   return ((d1 > 1e-9 && d2 < -1e-9) || (d1 < -1e-9 && d2 > 1e-9)) && ((d3 > 1e-9 && d4 < -1e-9) || (d3 < -1e-9 && d4 > 1e-9));
-}
-
-// Main axis of a polygon (unit vector), from its longest edges.
-export function mainAxis(rings) {
-  let sx = 0, sz = 0;
-  for (const ring of rings)
-    for (const e of ring.edges) {
-      const dx = e.b[0] - e.a[0], dz = e.b[1] - e.a[1];
-      const l = Math.hypot(dx, dz);
-      if (l < 1e-6) continue;
-      // Double the angle, so that opposite directions add up.
-      const a = Math.atan2(dz, dx) * 2;
-      sx += Math.cos(a) * l * l;
-      sz += Math.sin(a) * l * l;
-    }
-  const a = Math.atan2(sz, sx) / 2;
-  return [Math.cos(a), Math.sin(a)];
-}
-
-// Intervals where the line p + t*dir is inside the polygon (even-odd over all rings).
-export function clipLine(rings, p, dir) {
-  const ts = [];
-  for (const ring of rings)
-    for (const e of ring.edges) {
-      const ex = e.b[0] - e.a[0], ez = e.b[1] - e.a[1];
-      const den = dir[0] * ez - dir[1] * ex;
-      if (Math.abs(den) < 1e-9) continue;
-      const wx = e.a[0] - p[0], wz = e.a[1] - p[1];
-      const t = (wx * ez - wz * ex) / den, u = (wx * dir[1] - wz * dir[0]) / den;
-      if (u >= 0 && u < 1) ts.push(t);
-    }
-  ts.sort((a, b) => a - b);
-  const out = [];
-  for (let q = 0; q + 1 < ts.length; q += 2) out.push([ts[q], ts[q + 1]]);
-  return out;
 }
 
 // ---- Straight walls ----------------------------------------------------------------------------

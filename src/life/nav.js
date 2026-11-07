@@ -8,7 +8,7 @@
 // for every node, the way to the nearest of some sources (for example the ways out of the
 // City), in one search.
 // The speeds are INFERRED: 1.25 m/s on the level, and 0.28 m/s up or down a stair or a ladder
-// (the speeds of the old app, src/routes.js).
+// (the speeds of the old app, in src/routes.js until 2026-11-07).
 export const WALK = 1.25;
 export const CLIMB = 0.28;
 const HEUR = 1.0; // A* weight over the landmark bound: 1 gives the best route

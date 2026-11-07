@@ -38,7 +38,7 @@ const book = json('data/book.json'), biz = json('data/businesses.json'), researc
 const fixes = json('data/structure_fixes.json');
 const fixed = applyFixes(json('data/plan.json'), json('data/book_overlay.json'), fixes, json('data/plan_fine.json'));
 book.overlay = fixed.overlay;
-const L = buildLayout(null, fixed.plan, biz, book, null);
+const L = buildLayout(fixed.plan, biz, book);
 const T = new Terrain(json('data/terrain.json'));
 const S = buildStructure(L, T, { fixes, choices: makeChoices(json('data/structure_choices.json'), false) });
 
