@@ -227,6 +227,10 @@ City fill the "700 businesses" (p110). The make-up of the households, the hours 
 are INFERRED. The panel of a person shows their household and their water; the panel of a
 flat shows who lives there.
 
+At night a window glows where someone is awake in the room behind it (`src/life/windows.js`):
+most flats in the evening, a few after midnight when the water comes, many again before dawn.
+The corridors and the stairs stay dark (p98).
+
 The rooms and the roofs hold the things of `data/furnishings.json` (`docs/furnishings.md`):
 the recipe of each kind of room comes from the photos and the texts of the sources, and a
 documented room has its own list. Where each thing stands is INFERRED. The things show where
@@ -266,8 +270,7 @@ it stands at that storey. The clues of the mysteries name these streets.
 ### Not yet on the structure
 
 These parts sat on the old 3D city of the main app. They come back when they move onto the
-structure. Until then the main app does not load them. Their code stays in `src/`, except
-the lit windows of the night, which must be made again:
+structure. Until then the main app does not load them. Their code stays in `src/`:
 
 - the old people of the week (`people.js`, `routes.js`, `residents.js`, `crowd.js`,
   `figures.js`) and the game Find them 尋人 (`game.js`): the people of `src/life/` replace
