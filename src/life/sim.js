@@ -200,8 +200,47 @@ export class Life {
       // the household of the same flat first (a lodger and its host), then one of the building
       return list.find((h) => h.home === home) || list[hid % list.length];
     };
+    // An old mother and her grown daughter's family in the same building: "Chung Lo Ying's
+    // daughter, Chung Yuk Yee, often joined her mother for dinner and helped with the cooking"
+    // (p158). For about half of the households of old people with an old woman (INFERRED), a
+    // family of the building with a homemaker 18 to 45 years younger; each family has at most one
+    // such mother.
+    let kin = null;
+    const kinLinks = () => {
+      if (kin) return kin;
+      kin = { daughter: new Map(), mother: new Map() };
+      const byB = new Map(), pp = (h) => h.members.map((i) => this.persons[i]);
+      for (const h of this.households) {
+        if (h.kind !== 'family' || h.home.lived) continue;
+        const mum = pp(h).find((m) => m.role === 'homemaker' && m.sex === 'f');
+        if (!mum) continue;
+        if (!byB.has(h.home.b)) byB.set(h.home.b, []);
+        byB.get(h.home.b).push({ h, mum });
+      }
+      for (const h of this.households) {
+        if (h.kind !== 'alone' && h.kind !== 'old couple' && h.kind !== 'old women') continue;
+        const mother = pp(h).find((m) => m.role === 'elder' && m.sex === 'f');
+        if (!mother || mulberry32(h.id * 7 + 3)() >= 0.5) continue;
+        const c = (byB.get(h.home.b) || []).find((x) => !kin.mother.has(x.h.id) && x.h.home !== h.home && x.mum.age <= mother.age - 18 && x.mum.age >= mother.age - 45);
+        if (!c) continue;
+        kin.daughter.set(h.id, { hh: c.h.id, id: c.mum.id, home: c.h.home, mother: mother.id });
+        kin.mother.set(c.h.id, { hh: h.id, id: mother.id, home: h.home });
+      }
+      return kin;
+    };
     this.X = {
       places, place: P, roofFor: findRoof, refuse, streetSpot, neighbour, laneBy, minderFor,
+      daughterOf: (hid) => kinLinks().daughter.get(hid) || null,
+      motherOf: (hid) => kinLinks().mother.get(hid) || null,
+      // the days the daughter comes to dinner: about 2 in 5, not on 冬至 (INFERRED), at a time of
+      // the mother's household
+      kinDay: (mumHid, dow) => {
+        if (dow === 6) return null;
+        const q = mulberry32(mumHid * 7919 + dow * 31 + 11);
+        if (q() >= 0.4) return null;
+        const d = 18 * 60 + 25 + Math.floor(q() * 35);
+        return { t0: d - 65, dinner: d, t1: d + 50 };
+      },
       // A rush order: the workers come back after dinner and work until 2 or 3 am (p237); a
       // workshop could run "24 hours a day" (p88). On about 1 day in 12 for each workshop
       // (INFERRED). The food workshops work through the night before 冬至 (Sunday 21 December):

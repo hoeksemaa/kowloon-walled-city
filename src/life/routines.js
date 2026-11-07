@@ -98,6 +98,8 @@ export function planDay(p, dow, X) {
     block(t, t + 2 * w + stay);
     return true;
   };
+  // the start of the evening meal: the dinner, or the cooking with a daughter who comes (p158)
+  const supper = () => (F?.daughter?.mother === p.id ? F.daughter.t0 : F.dinner);
   // A haircut at the barber's shop of Ho Chi Kam (何智錦) and his wife: "We are the only
   // hairparlour inside the City and my customers are people living nearby"; "We used to open at
   // 9am and close when there were no more customers" (p28). Who is near (20 m), one haircut in
@@ -108,7 +110,7 @@ export function planDay(p, dow, X) {
     const w = X.walkMin(p.home, s), stay = J(35, 10), len = 2 * w + stay;
     t = slot(Math.max(t, H(9, 0)), len);
     if (t < 0 || t + len > H(19, 50) || (t + len > H(13, 0) && t < H(13, 45))) return false;
-    if (F && t < F.dinner + 40 && t + len > F.dinner - 10) return false;
+    if (F && t < F.dinner + 40 && t + len > supper() - 10) return false;
     at(t, s, 'a haircut at the barber’s shop of Ho Chi Kam (何智錦), the only one in the City (p28)');
     at(t + w + stay, home, after);
     block(t, t + len);
@@ -127,7 +129,7 @@ export function planDay(p, dow, X) {
     const w = X.walkMin(p.home, c), stay = J(den ? 40 : 30, 10), len = 2 * w + stay;
     t = slot(t, len);
     const ok = t >= 0 && (den ? t >= H(10, 0) && t + len < H(17, 45) : (t >= H(9, 0) && t + len < H(13, 0)) || (!sun && t >= H(15, 30) && t + len < H(19, 50)));
-    if (!ok || (F && t < F.dinner + 40 && t + len > F.dinner - 10)) return false;
+    if (!ok || (F && t < F.dinner + 40 && t + len > supper() - 10)) return false;
     at(t, c, den ? 'at a dentist of the City, near home (p245)' : sun ? 'at the Sunday morning surgery of a doctor of the City (p187)' : 'seeing a doctor of the City, one that friends or relatives recommend (pp186-187)');
     at(t + w + stay, home, after);
     block(t, t + len);
@@ -143,7 +145,7 @@ export function planDay(p, dow, X) {
   const dinner = (old = false) => {
     if (!F) return;
     if (F.members > 1) {
-      at(F.dinner, home, F.kind === 'sharers' || F.kind === 'old women' ? 'dinner with the others of the flat' : F.kind === 'family' ? 'dinner with the family' : 'dinner together');
+      at(F.dinner, home, F.daughter ? (p.id === F.daughter.mother ? 'dinner with her daughter, who comes over and helps with the cooking (p158)' : F.kind === 'old women' ? 'dinner with the others of the flat, and the daughter of one of them (p158)' : 'dinner with his wife and a daughter who comes over to help (p158)') : F.toMum ? 'dinner with the family; the mother eats at her own mother’s flat (p158)' : F.kind === 'sharers' || F.kind === 'old women' ? 'dinner with the others of the flat' : F.kind === 'family' ? 'dinner with the family' : 'dinner together');
       if (F.rubbish?.who === p.id && F.rubbish.how === 'throw') {
         const t = F.dinner + J(30, 5);
         at(t, home, 'throwing the rubbish out of the window, into the gap between the buildings (pp103, 209)');
@@ -154,7 +156,7 @@ export function planDay(p, dow, X) {
     if (!old && X.places.eating.length && r() < 0.35) {
       at(F.dinner - 10, X.places.eating[Math.floor(r() * X.places.eating.length)], 'dinner at an eating house');
       at(F.dinner + J(40, 10), home, 'at home');
-    } else at(F.dinner, home, old ? 'an early supper alone' : 'dinner alone');
+    } else at(F.dinner, home, F.daughter ? 'dinner with her daughter, who comes over and helps with the cooking (p158)' : old ? 'an early supper alone' : 'dinner alone');
   };
   // Sunday: the family goes out together; all its members leave at the same minute.
   const outing = () => {
@@ -222,7 +224,9 @@ export function planDay(p, dow, X) {
     if (q >= 0.2 && q < 0.26 && store(t, 'watching television (p160)')) return;
     if (q < 0.12 && p.home) {
       const nb = X.neighbour(p.home, r);
-      if (nb) { at(t, nb, 'playing mahjong at a neighbour’s flat (p15)'); at(t + J(old ? 100 : 150, 30), home, 'at home, after mahjong at a neighbour’s flat'); return; }
+      // a boss: "他與幾位老闆收工後打麻將耍樂" (林羅平, HK01, 20 July 2024)
+      const boss = p.work && p.work.owner === p.id && (p.role === 'worker_in' || p.role === 'shopkeeper');
+      if (nb) { at(t, nb, boss ? 'playing mahjong with other bosses after work (林羅平, HK01)' : 'playing mahjong at a neighbour’s flat (p15)'); at(t + J(old ? 100 : 150, 30), home, 'at home, after mahjong at a neighbour’s flat'); return; }
     }
     if (q < 0.2 && p.home && !old) {
       const lane = X.laneBy(p.home);
@@ -535,16 +539,33 @@ export function planDay(p, dow, X) {
       if (hq < 0.15) { const t1 = J(H(15, 30), 25), t2 = J(H(16, 30), 15); at(t1, OUT('shopping'), 'shopping'); at(t2, home, 'housework'); block(t1, t2); }
       else if (hq < 0.4) store(J(H(16, 40), 35), 'housework');
       else if (hq < 0.41 && X.places.yard) { const t1 = J(H(14, 50), 20); at(t1, X.places.yard, 'preparing the vegetables for dinner in the Yamen courtyard (p299)'); at(t1 + J(50, 10), home, 'housework'); block(t1, t1 + 50); }
-      if (r() < 0.12) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 40), 10), home, 'housework'); }
-      at((F ? F.dinner : H(19, 0)) - J(75, 15), home, 'cooking dinner');
+      const tm = F?.toMum?.who === p.id ? F.toMum : null;
+      if (r() < 0.12 && !tm) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 40), 10), home, 'housework'); }
+      // "when you were cooking dinner, you could just open the window and ask your neighbour,
+      // ‘Hey do you have some soy sauce?’ Swapping ingredients through windows like this happened
+      // regularly" (Chan Cheung-chuen (陳祥全), M+ audio guide 8038). On 1 day in 10 (INFERRED).
+      const cook = (t, what) => { at(t, home, what); if (r() < 0.1) { const s = t + J(25, 10); at(s, home, 'asking the neighbour through the window for some soy sauce (陳祥全, M+)'); at(s + 3, home, what); } };
+      if (tm) {
+        // a daughter who helps her mother cook, and eats with her (p158): she cooks for her own
+        // family first (INFERRED)
+        const c0 = Math.min(F.dinner, tm.t0) - J(55, 10);
+        cook(c0, 'cooking dinner for the family, before she goes to her mother’s flat');
+        at(tm.t0, tm.home, 'helping her mother cook dinner (p158)');
+        at(tm.dinner, tm.home, 'dinner with her mother (p158)');
+        at(tm.t1, home, 'the evening at home');
+        block(c0, tm.t1 + 5);
+      } else cook((F ? F.dinner : H(19, 0)) - J(75, 15), 'cooking dinner');
       haircut(J(H(14, 40), 30), 'housework');
       doctor(0.03, r() < 0.5 ? J(H(9, 45), 30) : J(H(15, 45), 30), 'housework');
+      if (tm) evening(tm.t1);
+      else {
       dinner();
       at((F ? F.dinner : H(19, 0)) + J(35, 8), home, 'washing up');
       // some evenings, women of the City wrap candies for the Lees' candy workshop (p79)
       if (X.places.candy && r() < 0.05) { at((F ? F.dinner : H(19, 0)) + J(55, 10), X.places.candy, 'wrapping candies at the candy workshop (p79)'); at(J(H(21, 0), 10), home, 'the evening at home'); }
       else evening((F ? F.dinner : H(19, 0)) + 25);
-      if (F?.small) at(J(H(20, 0), 15), home, 'bathing the children (p160)');
+      }
+      if (F?.small) at(Math.max(J(H(20, 0), 15), tm ? tm.t1 + 15 : 0), home, 'bathing the children (p160)');
       at(J(H(22, 30), 30), home, 'asleep');
       night();
       break;
@@ -623,9 +644,10 @@ export function planDay(p, dow, X) {
       // "A grandmother would keep her eye on her own grandchildren as well as the children of
       // her neighbours, while her daughter prepared supper in an apartment below" (p322).
       if (F?.roofEve?.who === p.id) { at(F.roofEve.t0, roof(), 'on the roof in the early evening, minding the grandchildren and the neighbours’ children (p322)'); at(F.roofEve.t1, home, 'resting'); }
-      else if (!room && !F?.roofEve && r() < 0.2 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
+      else if (!room && !F?.roofEve && !F?.daughter && r() < 0.2 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
       // a widower alone: "A friend lives upstairs and comes down to eat with me in the
       // evening" (Wong Hoi Ming (王海明), p233)
+      if (F?.daughter?.mother === p.id) at(F.daughter.t0, home, 'cooking dinner with her daughter, who comes to help (p158)');
       if (F && F.members === 1 && p.sex === 'm' && r() < 0.35) at(F.dinner, home, 'dinner with a friend from upstairs (p233)');
       else dinner(true);
       if (room) at(F ? F.dinner + J(50, 10) : J(H(19, 30), 20), home, 'in the room, with the television (p24)');
@@ -933,6 +955,11 @@ export function planHouse(h, mem, dow, X) {
   F.pickup = !mum && old && !sat && !sun && mem.some((m) => m.role === 'student' && m.age < 12 && m.seed < 0.5) ? J(H(12, 50), 8) : 0;
   if (sun && h.kind === 'family' && r() < 0.45) F.outing = { t0: J(H(9, 40), 30), t1: J(H(14, 0), 50) };
   F.hasOld = !!old;
+  // an old mother's daughter comes to help cook and eat dinner (p158)
+  const dk = X.daughterOf?.(h.id), kd = dk && X.kinDay(h.id, dow);
+  if (kd) { F.daughter = { ...dk, ...kd }; F.dinner = kd.dinner; }
+  const mk = X.motherOf?.(h.id), md = mk && X.kinDay(mk.hh, dow);
+  if (md && mum) F.toMum = { ...mk, ...md, who: mum.id };
   // Young children with no one of the household at home by day: "within any one building, a
   // grandmother or housewife might take care of several of the neighbours' children as well as
   // her own", and the parents "would stop by and pick them up on their way home from work"

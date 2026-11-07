@@ -65,6 +65,9 @@ function houseNotes(life, h) {
   if (h.home.lived) out.push(h.home.cat === 'dentist' || h.home.cat === 'clinic' ? 'The family lives in its clinic and sleeps on the floor, as a dentist\'s family did (p245; INFERRED for this one).' : 'The family lives in its shop: a partition, and a small living area at the back, as Lee Pui Yuen (李培元) did (p94; INFERRED for this one).');
   if (F?.evenWork) out.push('Monday to Saturday the family spends the evening in its workshop: it cooks there, and the children do their homework on the workbench (p173; INFERRED for this one). It sleeps in the flat.');
   if (F?.guard >= 0) out.push(`The ${life.persons[F.guard].rel} sleeps in the workshop, to guard it from the drug addicts (p169; INFERRED for this one).`);
+  const dk = life.X.daughterOf?.(h.id), mk = life.X.motherOf?.(h.id);
+  if (dk) out.push(`A daughter of ${h.kind === 'old women' ? 'one of the old women' : 'the old woman'} lives with her own family in the building. On some days she comes to help cook dinner, and eats here: "Chung Lo Ying's daughter, Chung Yuk Yee, often joined her mother for dinner and helped with the cooking" (p158; INFERRED for this one).`);
+  if (mk) out.push(`The mother's own mother lives in the building. On some days she goes there to help cook dinner and eats with her; she cooks for her family first (p158; INFERRED for this one).`);
   if (F?.minder) out.push('No one of the household is at home by day: the young children stay at a neighbour’s flat in the building, and a parent fetches them after work (p54; INFERRED for this one).');
   // the households whose young children this household minds (day 0)
   if (!life._minds) {
