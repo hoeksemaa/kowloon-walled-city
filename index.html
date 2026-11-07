@@ -143,14 +143,15 @@
       <div class="ld-cn">九龍城寨</div>
       <div class="ld-en">KOWLOON WALLED CITY</div>
     </div>
-    <div class="ld-flower" aria-hidden="true">
+    <div class="ld-flower" role="img" aria-label="Loading">
       <svg viewBox="265 115 370 370"><use href="#ld-petal"/></svg>
       <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(72 450 300)"/></svg>
       <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(144 450 300)"/></svg>
       <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(216 450 300)"/></svg>
       <svg viewBox="265 115 370 370"><use href="#ld-petal" transform="rotate(288 450 300)"/></svg>
     </div>
-    <div class="ld-msg"><span id="ld-text">LOADING</span><span class="ld-dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span></div>
+    <!-- empty while the City is built; main.js writes the error here if the build fails -->
+    <div class="ld-msg" id="ld-text"></div>
   </div>
   <script type="module" src="./src/main.js"></script>
 </body>
