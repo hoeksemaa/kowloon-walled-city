@@ -72,8 +72,12 @@ source gives is marked inferred.</p>
 <p><span class="st ok">SOURCED</span>28,200 residents in January 1987 (p340) and about 4,800 people who came in
 to work (p339); the sweepers, refuse collectors, meter readers and police of the Government; 120 real
 people with their days (data/routines.json), each hour marked sourced or inferred.</p>
-<p><span class="st prov">INFERRED</span>The roles, homes, workplaces and hours of the crowd, who have no names:
-no source names them. Where each thing stands in a room. The recipe of each kind of room comes from the
+<p><span class="st ok">SOURCED</span>The water of a household: some blocks with water all day (p113), pumps at
+noon and midnight (p107), water by floors (林羅平, HK01), washing at night at the sound of the water (Tam
+Sau-kuen (譚秀娟), WSJ), illegal mains taps for drinking water (p110), the eight standpipes (p249) and the paid
+water carriers (p108). 19,606 people of 5116 families registered on the first day of the survey (p339).</p>
+<p><span class="st prov">INFERRED</span>The roles, households, homes, workplaces and hours of the crowd, who have
+no names: no source names them. Which block has which water. Where each thing stands in a room. The recipe of each kind of room comes from the
 photos and texts of the sources (data/furnishings.json).</p>
 <p><span class="st ok">SOURCED</span>The ten mysteries (data/mysteries.json): each clue and each story names its
 source; an hour or a room that only the model gives is marked inferred.</p>

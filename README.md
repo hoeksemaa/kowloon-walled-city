@@ -213,6 +213,20 @@ people of `data/routines.json` have names, stories and days from the sources: ea
 their day says if it is sourced or inferred. Click a person to see their day, and FOLLOW
 them: the City peels to their storey when they go in.
 
+The crowd lives in households: families (parents, children and, in a big household, a
+grandparent), couples, old couples, workers who share a flat, and people alone. A household
+eats dinner together, goes out together on Sunday, and shares its water. The well water comes
+to each floor at set hours: in some blocks all day (p113), in many after the noon and the
+midnight pump runs (p107), in others by floors, low floors first (林羅平, HK01). Someone at home
+fills the drums and the bath then; after the midnight run, some wake to do the washing
+(Tam Sau-kuen (譚秀娟), WSJ). The well water was not fit to drink (p108): about half the blocks
+have an illegal tap of the mains (p110), and in the others someone carries the drinking water
+home each day from the nearest of the eight Government standpipes (p249), or the household pays
+a water carrier (p108). The jobs of the 4,800 who come in and of the residents who work in the
+City fill the "700 businesses" (p110). The make-up of the households, the hours and the shares
+are INFERRED. The panel of a person shows their household and their water; the panel of a
+flat shows who lives there.
+
 The rooms and the roofs hold the things of `data/furnishings.json` (`docs/furnishings.md`):
 the recipe of each kind of room comes from the photos and the texts of the sources, and a
 documented room has its own list. Where each thing stands is INFERRED. The things show where

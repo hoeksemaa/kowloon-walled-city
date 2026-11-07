@@ -32,7 +32,7 @@ import { Figures } from './life/figures.js';
 import { Furnish, ITEM_KIND, thingsHtml } from './life/furnish.js';
 import { Casebook } from './life/mysteries.js';
 import { StreetNames } from './streetNames.js';
-import { personHtml, personTip } from './life/personPanel.js';
+import { personHtml, personTip, homeHtml } from './life/personPanel.js';
 
 const START_MINUTE = 9 * 60 + 45;
 // The speeds of the clock: pause, then one, two and three arrows.
@@ -113,7 +113,7 @@ async function init() {
   // the people of the week
   const nav = new Nav(S);
   pop = buildPopulation(S, uses, nav, D.routines, D.people);
-  life = new Life(S, uses, pop, { nav });
+  life = new Life(S, uses, pop, { nav, utilities: D.utilities });
   figures = new Figures(life, layers);
   // the ten mysteries (data/mysteries.json)
   cases = new Casebook(D.mysteries, D.people, uses, life);
@@ -253,6 +253,7 @@ function roomExtra() {
   const B = S.list[state.sel], key = R.roof ? `roof:${B.id}` : R.out ? `out:${B.id}` : `${B.id}:${R.k}:${R.u}`;
   let html = R.roof ? `<h3>THE ROOF OF ${esc(B.label).toUpperCase()}</h3>` : '';
   html += thingsHtml(furnish, key, state.thing, esc);
+  html += homeHtml(life, pop, key, life.day);
   const here = [];
   for (let i = 0; i < life.N; i++) { const s = life.state[i]; if (!s.trip && s.cur && s.cur.key === key) here.push(i); }
   if (here.length) {
