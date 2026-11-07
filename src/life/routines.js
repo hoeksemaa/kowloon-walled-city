@@ -55,7 +55,15 @@ export function planDay(p, dow, X) {
   // Dinner: with the family, with the others of a shared flat, or alone (some at an eating house).
   const dinner = (old = false) => {
     if (!F) return;
-    if (F.members > 1) { at(F.dinner, home, F.kind === 'sharers' ? 'dinner with the others of the flat' : 'dinner with the family'); return; }
+    if (F.members > 1) {
+      at(F.dinner, home, F.kind === 'sharers' ? 'dinner with the others of the flat' : 'dinner with the family');
+      if (F.rubbish?.who === p.id && F.rubbish.how === 'throw') {
+        const t = F.dinner + J(30, 5);
+        at(t, home, 'throwing the rubbish out of the window, into the gap between the buildings (pp103, 209)');
+        at(t + 3, home, p.role === 'homemaker' ? 'washing up' : 'the evening at home');
+      }
+      return;
+    }
     if (!old && X.places.eating.length && r() < 0.35) {
       at(F.dinner - 10, X.places.eating[Math.floor(r() * X.places.eating.length)], 'dinner at an eating house');
       at(F.dinner + J(40, 10), home, 'at home');
@@ -94,6 +102,19 @@ export function planDay(p, dow, X) {
     const t = F.water.night[0] + J(15, 10);
     at(t, home, 'woken by the sound of the water: doing the washing (WSJ)');
     at(t + J(50, 10), home, 'asleep');
+  };
+  // The rubbish of the household (planHouse): "the City's residents were not exactly model
+  // citizens in this regard" (p104). A few take it to a refuse point before work (p179); some
+  // leave it in the orange buckets of the Urban Services Department (p104); the others throw it
+  // from the window into the gap between the buildings (pp103, 209).
+  const rubbishOut = (t) => {
+    if (!F || F.rubbish?.who !== p.id || !p.home) return t;
+    if (F.rubbish.how === 'point') {
+      const q = X.refuseFor(p.home);
+      if (q) { at(t, q, 'taking the rubbish down to the refuse point before work (p179)'); return t + X.walkMin(p.home, q) + 2; }
+    }
+    if (F.rubbish.how === 'bucket') at(t - 3, home, 'taking the rubbish down to the orange buckets (p104)');
+    return t;
   };
   // The evening after dinner.
   const evening = (back = 0) => {
@@ -155,7 +176,7 @@ export function planDay(p, dow, X) {
         fetch(back + J(40, 15), 'at home');
         if (r() < 0.55) { at(J(H(14, 30), 30), roof(), 'playing on the roofs'); at(J(H(17, 50), 20), home, 'at home'); }
       } else if (p.age < 12 && p.seed < 0.5) {
-        at(J(H(7, 25), 15), school, 'at school (morning session)');
+        at(rubbishOut(J(H(7, 25), 15)), school, 'at school (morning session)');
         at((back = J(H(12, 50), 15)), home, 'lunch at home');
         if (!fetch(J(H(14, 15), 20), 'homework') && !candy() && r() < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); }
       } else if (p.age < 12) {
@@ -164,7 +185,7 @@ export function planDay(p, dow, X) {
         at((back = J(H(dz ? 17 : 18, 25), 10)), home, dz ? 'home for 冬至' : 'home from school');
         if (!dz) fetch(back + 10, 'homework');
       } else {
-        at(J(H(7, 30), 15), school, 'at secondary school');
+        at(rubbishOut(J(H(7, 30), 15)), school, 'at secondary school');
         at((back = J(H(16, 30), 10)), home, 'homework');
         if (!fetch(back + J(20, 10), 'homework') && !tutor() && !candy() && !dz && r() < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); }
       }
@@ -185,7 +206,7 @@ export function planDay(p, dow, X) {
         break;
       }
       at(J(H(6, 15), 25), home, 'breakfast');
-      at(J(H(7, 20), 30), OUT('at work outside the City'), 'at work outside the City');
+      at(rubbishOut(J(H(7, 20), 30)), OUT('at work outside the City'), 'at work outside the City');
       if (dz) { at(J(H(17, 40), 30), home, 'home early for 冬至'); dongzhi(); break; }
       let back;
       if (sat && r() < 0.5) at((back = J(H(13, 45), 30)), home, 'home after a half day');
@@ -209,7 +230,7 @@ export function planDay(p, dow, X) {
       }
       const w = p.work, what = X.workDoing(w);
       at(J(H(6, 45), 20), home, 'breakfast');
-      at(J(H(7, 45), 20), w, what);
+      at(rubbishOut(J(H(7, 45), 20)), w, what);
       if (r() < 0.4) { at(J(H(12, 10), 8), home, 'lunch at home'); at(J(H(13, 0), 8), w, what); }
       else { at(J(H(12, 15), 10), w, 'lunch at the workbench'); at(J(H(12, 50), 5), w, what); }
       if (dz) { at(J(H(17, 50), 20), home, 'home early for 冬至'); dongzhi(); break; }
@@ -263,6 +284,7 @@ export function planDay(p, dow, X) {
         at(F.kinderT - 1, kin, 'taking the children to the kindergarten');
         t = F.kinderT + 15;
       }
+      t = rubbishOut(t);
       at(t, OUT('at the market'), 'at the market');
       at(t + J(80, 15), home, 'cooking');
       const q = r(), fetchAt = q < 0.35 ? Math.max(t + 85, J(H(10, 15), 60)) : q < 0.8 ? J(H(15, 30), 60) : J(H(17, 0), 25);
@@ -313,7 +335,8 @@ export function planDay(p, dow, X) {
       // her neighbours, while her daughter prepared supper" (p322).
       if (r() < 0.3) { at(J(H(17, 0), 10), roof(), F?.small ? 'on the roof in the early evening, minding the children (p322)' : 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
       dinner(true);
-      at(J(H(21, 0), 40), home, 'asleep');
+      evening();
+      at(J(H(21, 15), 30), home, 'asleep');
       night();
       break;
     }
@@ -338,17 +361,24 @@ export function planDay(p, dow, X) {
       break;
     }
     case 'refuse': {
-      // The Urban Services Department's collectors (p104). The hour is INFERRED: before dawn.
+      // The Urban Services Department's collectors (p104) "come round crashing and banging" from
+      // about 4 am (Lee Pui Yuen (李培元), p93). Each of the three clears a third of the refuse
+      // points of the named lanes, lane by lane; the order and the minutes are INFERRED.
       let t = J(H(4, 0), 5);
-      for (let k = 0; k < 8; k++, t += 9 + r() * 4) at(t, X.laneSpot(r), 'collecting the refuse (p104)');
-      at(t, home, 'gone with the refuse');
+      const per = Math.ceil(X.refuse.length / 3), pts = X.refuse.slice((p.n % 3) * per, (p.n % 3 + 1) * per);
+      if (!pts.length) for (let k = 0; k < 8; k++) pts.push(X.laneSpot(r));
+      for (const q of pts) { at(t, q, 'emptying the refuse point into the cart, crashing and banging (pp93, 104)'); t += 7 + r() * 4; }
+      at(t, OUT('taking the refuse out of the City'), 'taking the refuse out of the City');
       break;
     }
     case 'sweeper': {
       // The 10 sweepers of the USD, with their buckets (p104). The hours are INFERRED: 7 to 3,
       // Monday to Saturday.
       if (sun) break;
-      for (let t = J(H(7, 0), 10); t < H(dz ? 14 : 15, 0); t += 18 + r() * 12) at(t, X.laneSpot(r), 'sweeping the lane (p104)');
+      for (let t = J(H(7, 0), 10); t < H(dz ? 14 : 15, 0); t += 18 + r() * 12) {
+        if (X.refuse.length && r() < 0.35) at(t, X.refuse[Math.floor(r() * X.refuse.length)], 'sweeping round a refuse point (p104)');
+        else at(t, X.laneSpot(r), 'sweeping the lane (p104)');
+      }
       at(H(dz ? 14 : 15, 5), home, home.what);
       break;
     }
@@ -403,6 +433,13 @@ export function planHouse(h, mem, dow, X) {
     const kid = of('student').filter((m) => m.age >= 10).sort((a, b) => b.age - a.age)[0];
     const who = mum || (kid && r() < 0.7 ? kid : null) || (old && old.age < 78 ? old : null) || mem.find((m) => m.role !== 'child' && m.role !== 'elder') || kid || old;
     if (who) F.fetch = who.id;
+  }
+  // the rubbish (shares INFERRED): who takes it down in the morning, or throws it out at night
+  {
+    const q = r(), how = q < 0.15 ? 'point' : q < 0.6 ? 'bucket' : 'throw';
+    const leaver = of('worker_out')[0] || of('worker_in')[0] || of('student').find((m) => m.age >= 10) || mum;
+    const who = how === 'throw' ? keeper || mem.find((m) => m.role !== 'child') : leaver;
+    F.rubbish = who && !sun ? { who: who.id, how } : null;
   }
   if (sun && h.kind === 'family' && r() < 0.45) F.outing = { t0: J(H(9, 40), 30), t1: J(H(14, 0), 50) };
   // the kindergarten (ages 3 to 5), Monday to Friday; the homemaker or a grandparent takes them
