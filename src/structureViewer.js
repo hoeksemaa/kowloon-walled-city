@@ -46,11 +46,11 @@ const OFF = 1e5;
 const cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), OFF);
 const secPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), OFF);
 const U = { uXray: { value: 0 }, uSel: { value: -1 }, uCut: { value: new THREE.Color('#4a4540') },
-  uFloorOn: { value: 0 }, uYcut: { value: null } };
-// The floor view: each building is cut a little above one floor (its own height, because the
-// ground slopes). ycut[b] is that height; a building with fewer floors stays whole.
-const FLOOR_CUT = 1.0;
-let ycut = null;
+  uFloorOn: { value: 0 }, uFloor: { value: -1 } };
+// The floor view, as the peel of the main app (src/cityLayers.js): all over storey F of each
+// building goes (the floors over it, its roof and all on the roof). Storey F keeps its whole
+// walls, up to the slab of the next floor: the view cuts nothing. A building of F storeys or
+// fewer stays whole. The level of each face is aInfo.y (src/city/mesh.js).
 
 const triangulate = (outer, holes) => {
   const v = (p) => new THREE.Vector2(p[0], p[1]);
@@ -65,11 +65,10 @@ function cityMaterial() {
   m.onBeforeCompile = (sh) => {
     Object.assign(sh.uniforms, U);
     sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute vec3 aInfo; varying vec3 vInfo;')
-      .replace('#include <common>', '#include <common>\nvarying float vWy;')
-      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvInfo = aInfo; vWy = (modelMatrix * vec4(transformed, 1.0)).y;');
-    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; varying float vWy; uniform float uXray; uniform float uSel; uniform vec3 uCut; uniform float uFloorOn; uniform sampler2D uYcut;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvInfo = aInfo;');
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; uniform float uXray; uniform float uSel; uniform vec3 uCut; uniform float uFloorOn; uniform float uFloor;')
       .replace('void main() {', `void main() {
-  if (uFloorOn > 0.5 && vWy > texelFetch(uYcut, ivec2(int(vInfo.x + 0.5), 0), 0).r) discard;
+  if (uFloorOn > 0.5 && vInfo.y > uFloor + 0.5) discard;
   if (uXray > 0.5 && (vInfo.z < 0.5 || abs(vInfo.z - 5.0) < 0.5 || abs(vInfo.z - 1.0) < 0.5 && !gl_FrontFacing)) {
     vec2 q = floor(gl_FragCoord.xy);
     if (abs(vInfo.z - 1.0) > 0.5 && mod(q.x + q.y * 3.0, 4.0) > 0.5) discard;
@@ -141,17 +140,19 @@ async function init() {
   // the kept random choices of the links (data/structure_choices.json, choices.js)
   S = buildStructure(L, T, { fixes, choices: makeChoices(kept) });
   const t1 = performance.now();
-  ycut = new Float32Array(S.list.length).fill(OFF);
-  const tex = new THREE.DataTexture(ycut, S.list.length, 1, THREE.RedFormat, THREE.FloatType);
-  tex.minFilter = tex.magFilter = THREE.NearestFilter;
-  tex.needsUpdate = true;
-  U.uYcut.value = tex;
   marker = new THREE.Points(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0], 3)),
     new THREE.PointsMaterial({ color: '#ff3d00', size: 14, sizeAttenuation: false, depthTest: false, transparent: true }));
   marker.renderOrder = 12;
   marker.visible = false;
   scene.add(marker);
-  shell = meshOf(buildMesh(S, { triangulate, props: false, colorOf: cityColors() }));
+  const arr = buildMesh(S, { triangulate, props: false, colorOf: cityColors() });
+  // The parapet round the terrace of a setback stands on the floor under the top storey, not
+  // on the roof: it goes with that floor (as in src/cityLayers.js).
+  for (let v = 0; v < arr.info.length; v += 3) {
+    const b = S.list[arr.info[v]];
+    if (arr.info[v + 2] === KIND.ROOF && arr.info[v + 1] === b.n && arr.position[v + 1] < b.y[b.n] - 0.3) arr.info[v + 1] = b.n - 1;
+  }
+  shell = meshOf(arr);
   scene.add(shell);
   props.ladder = propsOf(buildProps(S, 'ladder', { colorOf: cityColors() }), '#ff3d00');
   props.stool = propsOf(buildProps(S, 'stool', { colorOf: cityColors() }), '#d400ff');
@@ -256,13 +257,10 @@ function bindUI() {
 function setFloor(F) {
   state.floor = F;
   const on = F >= 0;
-  if (on) {
-    for (const b of S.list) ycut[b.id] = b.n > F ? b.y[F] + FLOOR_CUT : OFF;
-    U.uYcut.value.needsUpdate = true;
-  }
+  U.uFloor.value = F;
   U.uFloorOn.value = on ? 1 : 0;
   for (const p of Object.values(props)) p.mesh.visible = !on; // the ladders and stools stand on the roofs
-  // the shadow pass does not see the floor cut: the hidden floors would still cast shadows
+  // the shadow pass does not see the floor view: the hidden floors would still cast shadows
   shell.castShadow = !on;
   if (inner) inner.castShadow = !on;
   $('floorSel').value = String(F);
@@ -345,7 +343,7 @@ function pick(e) {
     if (state.secAxis !== 'off' && secPlane.distanceToPoint(h.point) < 0) continue;
     const f = h.object.geometry.attributes.aInfo, v = h.face.a;
     const kind = f.getZ(v);
-    if (U.uFloorOn.value && h.point.y > ycut[Math.round(f.getX(v))] + 0.01) continue;
+    if (U.uFloorOn.value && f.getY(v) > state.floor + 0.5) continue;
     if (U.uXray.value && (kind === KIND.WALL || kind === KIND.ROOF)) continue;
     return { b: Math.round(f.getX(v)), k: Math.round(f.getY(v)), kind, p: h.point };
   }
