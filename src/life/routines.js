@@ -2,8 +2,8 @@
 // minute the person leaves for the place and does the thing there. Day 0 of the week is
 // Tuesday 16 December 1986; day 6 is Monday 22 December, 冬至 (the winter solstice).
 //
-// SOURCED (City of Darkness Revisited, 2014): the Salvation Army kindergarten (p300), candy
-// wrapping after school (p77), the Old People's Centre (pp305-306), the roofs in the early
+// SOURCED (City of Darkness Revisited, 2014): the Salvation Army (救世軍) kindergarten (p300), candy
+// wrapping after school (p77), the Old People's Centre (老人中心) (pp305-306), the roofs in the early
 // evening (p322), children on the roofs (Albert Ng (吳錦波), SCMP, 4 January 2013), the one
 // standpipe (p107), police on the beat (pp251, 283), refuse (p104), meter readers (p98),
 // patients from outside (p242).
@@ -48,8 +48,30 @@ export function planDay(p, dow, X) {
   const DZ = '冬至 dinner with the family (做冬)';
   // The household of the day (planHouse): its dinner, its water, who fetches the drinking water.
   const F = p.hh !== undefined && X.house ? X.house(p, dow) : null;
+  // The fixed blocks of the day (away from home, or the water), so that the errands (the
+  // drinking water) and the visits do not cut into them.
+  const away = [];
+  const block = (t0, t1) => { away.push([t0, t1]); };
+  const busy = (t0, t1) => away.some(([a, b]) => t0 < b + 5 && t1 > a - 5);
+  const freeAt = (t, len) => {
+    for (let k = 0; k < 8; k++) {
+      const hit = away.filter(([a, b]) => t < b + 5 && t + len > a - 5);
+      if (!hit.length) break;
+      t = Math.max(...hit.map((x) => x[1])) + 8;
+    }
+    return t;
+  };
+  // A free afternoon (a half day): out, on the roof or at home. The shares are INFERRED.
+  const afternoon = (t) => {
+    const q = r();
+    if (q < 0.3) { const e = J(H(17, 30), 30); at(t, OUT('out'), 'out'); at(e, home, 'home'); block(t, e); }
+    else if (q < 0.42) { const e = t + J(60, 20); at(t, roof(), 'on the roof'); at(e, home, 'the afternoon at home'); block(t, e); }
+    else at(t, home, 'the afternoon at home');
+  };
   const dongzhi = (t = 18.25) => {
-    at(F ? F.dinner : J(H(Math.floor(t), (t % 1) * 60), 20), home, F && F.members === 1 ? '冬至 dinner' : DZ);
+    const d = F ? F.dinner : J(H(Math.floor(t), (t % 1) * 60), 20);
+    at(d, home, F && F.members === 1 ? '冬至 dinner' : DZ);
+    at(d + J(110, 15), home, r() < 0.5 ? 'watching television (p160)' : 'the evening at home');
     at(J(H(22, 40), 30), home, 'asleep');
   };
   // Dinner: with the family, with the others of a shared flat, or alone (some at an eating house).
@@ -82,16 +104,20 @@ export function planDay(p, dow, X) {
     if (!F || F.fetch !== p.id || !p.home) return false;
     const pipe = X.pipeFor(p.home);
     if (!pipe) return false;
-    const w = X.walkMin(p.home, pipe), back = t + w + J(10, 6);
+    const w = X.walkMin(p.home, pipe);
+    t = freeAt(t, 2 * w + 20);
+    const back = t + w + J(10, 6);
     at(t, pipe, 'fetching drinking water at the standpipe (pp108, 249)');
     at(back, home, 'carrying the drinking water home, up the stairs (p249)');
     at(back + w + 3, home, after);
+    block(t, back + w + 3);
     return true;
   };
   // The well water of the day: when it comes to this floor, the drums and the bath are filled.
   const fill = () => {
     if (!F || F.filler !== p.id || !F.water.day) return;
     const t = F.water.day[0] + J(8, 6);
+    block(t, t + 40);
     at(t, home, F.water.kind === 'floors' ? 'filling the drums and the bath: the water has come to this floor (HK01)' : 'filling the drums and the bath while the taps run after the noon pump (p107)');
     at(t + J(40, 10), home, p.role === 'elder' ? 'resting' : 'housework');
   };
@@ -116,10 +142,65 @@ export function planDay(p, dow, X) {
     if (F.rubbish.how === 'bucket') at(t - 3, home, 'taking the rubbish down to the orange buckets (p104)');
     return t;
   };
-  // The evening after dinner.
-  const evening = (back = 0) => {
+  // The evening after dinner: television (p160), mahjong at a neighbour's flat ("the alleys were
+  // alive with the clacking of mahjong tiles", p15), or a short chat in the lane in the cool
+  // night air (p316). The shares and the hours are INFERRED.
+  const evening = (back = 0, old = false) => {
     if (!F) return;
-    at(Math.max(back, F.dinner) + J(45, 10), home, 'the evening at home');
+    const t = Math.max(back, F.dinner) + J(45, 10), q = r();
+    if (q < 0.12 && p.home) {
+      const nb = X.neighbour(p.home, r);
+      if (nb) { at(t, nb, 'playing mahjong at a neighbour’s flat (p15)'); at(t + J(old ? 100 : 150, 30), home, 'at home, after mahjong at a neighbour’s flat'); return; }
+    }
+    if (q < 0.2 && p.home && !old) {
+      const lane = X.laneBy(p.home);
+      if (lane) { at(t, lane, 'a quiet chat in the lane after dinner (p316)'); at(t + J(30, 10), home, 'the evening at home'); return; }
+    }
+    at(t, home, q < 0.62 ? 'watching television (p160)' : 'the evening at home');
+  };
+  // ---- work: the hours of each trade ----
+  // The shift of person p at workplace w today: { t0, t1, lunch, split, meals } or null (shut).
+  // SOURCED: stores open from 6 or 8 am to midnight, seven days a week (pp91, 93); a café from
+  // 9 am until very late (p57); a doctor 9 am-1 pm and 3.30-8 pm, Monday to Saturday, and
+  // Sunday mornings (p187); a dentist 10 am to 6 or 7 pm, with a day off (p245); the Kai Fong
+  // office in office hours, Monday to Friday (p180); a roast-meat maker from 4 am (p286); a
+  // fish workshop makes less on Tuesdays (p292); noodle workers about nine hours from 8 am, with
+  // an hour for a meal (p228). The other hours are INFERRED.
+  const shift = (w, keeper) => {
+    const cat = w?.cat || 'works', K = (h, m, sp) => J(H(h, m), sp);
+    switch (cat) {
+      case 'shop': return keeper ? { t0: K(7, 0, 50), t1: K(23, 40, 15), meals: true } : { t0: K(8, 0, 30), t1: K(20, 0, 40), meals: true };
+      case 'eating': return { t0: K(8, 30, 30), t1: keeper ? K(23, 15, 30) : K(21, 30, 40), meals: true };
+      case 'medicine': return { t0: K(9, 0, 30), t1: K(21, 0, 30), meals: true };
+      case 'office': case 'community': return sun ? null : sat ? { t0: K(9, 0, 10), t1: K(13, 0, 10) } : { t0: K(9, 0, 10), t1: K(18, 0, 15), lunch: true };
+      case 'dentist': return ((w.u ?? w.b) % 2 ? sat : sun) ? null : { t0: K(10, 0, 15), t1: K(18, 45, 30), lunch: true };
+      case 'clinic': return sun ? { t0: K(9, 0, 10), t1: K(13, 0, 10) } : { t0: K(9, 0, 10), t1: K(20, 0, 10), split: [H(13, 0), H(15, 30)] };
+      case 'foodfac': return sun && r() < 0.6 && !X.rush(w, dow) ? null : { t0: r() < 0.15 ? K(4, 0, 15) : K(6, 30, 50), t1: dow === 0 ? K(17, 30, 30) : K(19, 0, 50), meals: true };
+      case 'school': case 'religion': return sun ? null : { t0: K(9, 0, 15), t1: K(17, 0, 30), lunch: true };
+      default: return sun && r() < 0.75 ? null : sat && r() < 0.4 ? { t0: K(8, 0, 20), t1: K(13, 30, 30) } : { t0: K(8, 0, 20), t1: K(19, 0, 45), lunch: true };
+    }
+  };
+  // The day at work: the events from the start to the end of the shift. Returns the shift.
+  const workDay = (w, keeper, sh) => {
+    const what = X.workDoing(w, keeper);
+    // a rush order went on past midnight: still at work, then a short night (p237)
+    if (dow > 0 && X.rush(w, dow - 1)) { at(0, w, 'still at work on a rush order (p237)'); at(J(H(2, 40), 25), home, 'asleep'); sh.t0 = Math.max(sh.t0, J(H(9, 30), 20)); }
+    at(sh.t0 - J(35, 10), home, 'breakfast');
+    at(rubbishOut(sh.t0), w, what);
+    if (sh.split) { at(sh.split[0], home, 'lunch at home, between the two surgeries'); at(sh.split[0] + J(45, 10), home, 'resting, between the two surgeries'); at(sh.split[1], w, what); }
+    else if (sh.lunch) {
+      if (r() < 0.35 && p.home) { at(J(H(12, 10), 8), home, 'lunch at home'); at(J(H(13, 0), 8), w, what); }
+      else { at(J(H(12, 15), 10), w, 'lunch at the workbench'); at(J(H(12, 50), 5), w, what); }
+    } else if (sh.meals) { at(J(H(12, 30), 30), w, keeper ? 'lunch in the shop' : 'lunch at work'); at(J(H(13, 5), 10), w, what); }
+    sh.what = what;
+    return sh;
+  };
+  // After work on a rush day: back to the workshop after dinner, until 2 or 3 am (p237); in a
+  // food workshop before the festival, through the night (pp44, 289).
+  const rushEve = (w, t) => {
+    if (!w || !X.rush(w, dow)) return false;
+    at(t, w, w.cat === 'foodfac' ? 'working through the night before the festival (pp44, 289)' : 'back at the workshop after dinner: a rush order (p237)');
+    return true;
   };
   at(0, home, p.home ? 'asleep' : home.what);
 
@@ -128,16 +209,24 @@ export function planDay(p, dow, X) {
       const kin = F?.kinder.get(p.id);
       at(J(H(7, 0), 30), home, 'breakfast');
       if (kin) {
+        at(Math.min(F.kinderT - 5, J(H(7, 40), 10)), home, 'at home');
         at(F.kinderT, kin, kin.kind === 'out' ? kin.what : 'at the Salvation Army kindergarten (p300)');
         at(F.kinderBack + 2, home, 'lunch at home');
         at(F.kinderBack + 40, home, 'an afternoon nap');
         at(F.kinderBack + 140, home, 'at home');
-      } else at(J(H(7, 40), 20), home, p.age < 3 ? 'at home with the family' : 'playing at home');
-      if (!sun && r() < 0.25) { at(J(H(15, 30), 40), roof(), 'playing on the roof'); at(J(H(17, 0), 20), home, 'at home'); }
+      } else at(J(H(7, 40), 20), home, p.age < 3 ? 'at home with the family' : F && !F.hasHomemaker && F.small ? 'at home with the grandparent (p54)' : 'playing at home');
+      // "Parents here usually lock them in their flats and don't allow them to play outside"
+      // (p300); children played on the stairs and the landings (p54). The shares are INFERRED.
+      const q = r();
+      if (!sun && q < 0.1) { at(J(H(15, 30), 40), roof(), 'playing on the roof'); at(J(H(17, 0), 20), home, 'at home'); }
+      else if (q < 0.3) { at(J(H(15, 30), 50), home, 'playing on the landing outside the flat (p54)'); at(J(H(17, 0), 20), home, 'at home'); }
       if (outing()) {}
       if (dz) { dongzhi(); break; }
       dinner();
-      at(Math.max(F ? F.dinner + 50 : 0, J(H(20, 30), 20)), home, 'asleep');
+      const bed = Math.max(F ? F.dinner + 50 : 0, J(H(20, 30), 20));
+      at(bed - J(70, 10), home, 'watching television (p160)');
+      at(bed - 20, home, 'a bath before bed (p160)');
+      at(bed, home, 'asleep');
       break;
     }
     case 'student': {
@@ -145,23 +234,41 @@ export function planDay(p, dow, X) {
         at(J(H(8, 0), 40), home, 'Sunday at home');
         if (!outing()) {
           const q = r();
-          if (q < 0.35) { at(J(H(10, 0), 60), roof(), 'playing on the roofs'); at(J(H(12, 30), 30), home, 'lunch'); }
-          if (r() < 0.4) { at(J(H(15, 0), 40), roof(), 'flying a kite from the roof'); at(J(H(17, 30), 20), home, 'at home'); }
+          if (q < 0.35) { const s0 = J(H(10, 0), 60), e = J(H(12, 30), 30); at(s0, roof(), 'playing on the roofs'); at(e, home, 'lunch'); at(e + J(45, 10), home, 'at home'); block(s0, e); }
+          if (r() < 0.4) { const s0 = J(H(15, 0), 40), e = J(H(17, 30), 20); at(s0, roof(), 'flying a kite from the roof'); at(e, home, 'at home'); block(s0, e); }
         }
         fetch(J(H(16, 30), 40), 'homework');
         dinner();
+        if (F) at(F.dinner + J(50, 10), home, 'watching television (p160)');
         at(J(H(21, 45), 30), home, 'asleep');
         break;
       }
-      at(J(H(6, 40), 20), home, 'getting ready for school');
+      const pm = !sat && p.age < 12 && p.seed >= 0.5; // the afternoon session
+      at(J(H(6, 50), 10), home, pm ? 'breakfast' : 'getting ready for school');
       const school = OUT('at school');
-      // Children wrap the candy of the candy factory after school (p77).
+      // Children wrap the candies of the candy workshop after school, at tables in the alley
+      // (p77); teenagers "come and go", for half an hour or more, and the wrapping goes on until
+      // 9 pm (p76). Which children, and how long, is INFERRED.
       const candy = () => {
         if (p.seed > 0.12 || !X.places.candy || dz || (dow + p.id) % 3 === 0) return false;
-        at(J(H(16, 50), 10), X.places.candy, 'wrapping candy for the candy factory (p77)');
-        at(J(H(19, 10), 15), home, 'home from the candy factory');
+        const t = J(H(17, 30), 70);
+        at(t, X.places.candy, 'wrapping candies in the alley for the candy workshop (pp76–77)');
+        const e = Math.min(H(21, 0), t + J(60, 30));
+        at(e, home, 'home from the candy wrapping');
+        at(e + J(15, 5), home, 'homework');
         return true;
       };
+      // A child of a family workshop helps after school: "放學之後放低書包就去幫手刮魚肉 … 做到差唔多
+      // 9點幾10點返屋企" (林羅平, HK01). On about half the school days (INFERRED).
+      const family = () => {
+        const w = F?.familyWork;
+        if (!w || p.age < 10 || dz || r() < 0.5) return false;
+        const what = w.cat === 'foodfac' ? 'helping at the family workshop after school (林羅平, HK01)' : 'helping in the family shop after school';
+        at(J(H(17, 0), 15), w, what);
+        helped = { w, what, t: J(H(21, 20), 20) };
+        return true;
+      };
+      let helped = null;
       // A few go to the tutoring club 勤思補習社 after school (262:2:0).
       const tutor = () => {
         if (!X.places.tutor || p.age < 9 || p.seed < 0.985 || sat || dz) return false;
@@ -173,25 +280,35 @@ export function planDay(p, dow, X) {
       if (sat) {
         at(J(H(7, 35), 15), school, 'at school (Saturday morning)');
         at((back = J(H(12, 40), 15)), home, 'lunch at home');
-        fetch(back + J(40, 15), 'at home');
-        if (r() < 0.55) { at(J(H(14, 30), 30), roof(), 'playing on the roofs'); at(J(H(17, 50), 20), home, 'at home'); }
+        at(back + J(40, 10), home, 'Saturday afternoon at home');
+        if (r() < 0.55) { const s0 = J(H(14, 30), 30), e = J(H(17, 50), 20); at(s0, roof(), 'playing on the roofs'); at(e, home, 'at home'); block(s0, e); }
+        fetch(back + J(50, 15), 'Saturday afternoon at home');
       } else if (p.age < 12 && p.seed < 0.5) {
         at(rubbishOut(J(H(7, 25), 15)), school, 'at school (morning session)');
         at((back = J(H(12, 50), 15)), home, 'lunch at home');
-        if (!fetch(J(H(14, 15), 20), 'homework') && !candy() && r() < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); }
+        at(back + J(40, 10), home, 'homework');
+        if (!fetch(J(H(14, 15), 20), 'homework') && !family() && !candy() && r() < 0.45) { at(J(H(15, 45), 30), roof(), 'playing on the roofs'); at(J(H(17, 15), 20), home, 'homework'); }
       } else if (p.age < 12) {
-        if (r() < 0.4) { at(J(H(9, 30), 30), roof(), 'playing on the roofs'); at(J(H(11, 15), 15), home, 'lunch'); }
+        at(J(H(7, 30), 10), home, 'homework, before the afternoon session');
+        if (r() < 0.4) { at(J(H(9, 30), 30), roof(), 'playing on the roofs'); at(J(H(10, 50), 15), home, 'at home'); }
+        at(J(H(11, 40), 10), home, 'lunch');
         at(J(H(12, 30), 10), school, 'at school (afternoon session)');
         at((back = J(H(dz ? 17 : 18, 25), 10)), home, dz ? 'home for 冬至' : 'home from school');
-        if (!dz) fetch(back + 10, 'homework');
+        // dinner kept for a child back after the others have eaten (INFERRED)
+        if (!dz) { if (F && F.dinner < back + 10) at(back + 3, home, 'dinner, kept for after school'); else if (!fetch(back + 10, 'homework')) at(back + J(20, 5), home, 'homework'); }
       } else {
         at(rubbishOut(J(H(7, 30), 15)), school, 'at secondary school');
         at((back = J(H(16, 30), 10)), home, 'homework');
-        if (!fetch(back + J(20, 10), 'homework') && !tutor() && !candy() && !dz && r() < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); }
+        if (!fetch(back + J(20, 10), 'homework') && !family() && !tutor() && !candy() && !dz && r() < 0.3) { at(J(H(17, 0), 10), roof(), 'on the roofs'); at(J(H(18, 30), 15), home, 'homework'); }
       }
       if (dz) { dongzhi(18.4); break; }
+      if (helped && F) {
+        at(F.dinner, helped.w, 'dinner at the workshop'); at(F.dinner + 30, helped.w, helped.what);
+        at(helped.t, home, 'home: a bath, then homework'); at(Math.max(helped.t + 50, J(H(22, 30), 15)), home, 'asleep');
+        break;
+      }
       dinner();
-      at(F ? F.dinner + J(50, 10) : J(H(20, 0), 20), home, 'homework');
+      at(F ? F.dinner + J(50, 10) : J(H(20, 0), 20), home, r() < 0.3 ? 'homework, then television (p160)' : 'homework');
       at(J(H(21, 45), 30), home, 'asleep');
       break;
     }
@@ -205,11 +322,12 @@ export function planDay(p, dow, X) {
         at(J(H(23, 0), 30), home, 'asleep');
         break;
       }
-      at(J(H(6, 15), 25), home, 'breakfast');
-      at(rubbishOut(J(H(7, 20), 30)), OUT('at work outside the City'), 'at work outside the City');
+      const go = J(H(7, 20), 30);
+      at(go - J(55, 10), home, 'breakfast');
+      at(rubbishOut(go), OUT('at work outside the City'), 'at work outside the City');
       if (dz) { at(J(H(17, 40), 30), home, 'home early for 冬至'); dongzhi(); break; }
       let back;
-      if (sat && r() < 0.5) at((back = J(H(13, 45), 30)), home, 'home after a half day');
+      if (sat && r() < 0.5) { at((back = J(H(13, 45), 30)), home, 'home after a half day'); afternoon(back + J(40, 10)); }
       else if (r() < 0.15) { at((back = (F ? F.dinner : H(19, 20)) + J(70, 30)), home, 'home late from work: a late dinner'); }
       else at((back = (F ? F.dinner : H(19, 20)) - J(22, 12)), home, 'home from work');
       fetch(back + 5, 'at home');
@@ -218,37 +336,31 @@ export function planDay(p, dow, X) {
       at(J(H(23, 20), 15), home, 'asleep');
       break;
     }
-    case 'worker_in': {
-      if (sun && r() < 0.75) {
-        at(J(H(8, 0), 40), home, 'Sunday at home');
+    case 'worker_in':
+    case 'shopkeeper': {
+      const keeper = p.role === 'shopkeeper', w = p.work, sh = shift(w, keeper);
+      if (!sh) {
+        at(J(H(8, 0), 40), home, 'a day off at home');
         if (!outing() && r() < 0.35) { at(J(H(9, 30), 40), OUT('out'), 'out'); at(J(H(13, 30), 60), home, 'home'); }
         fetch(J(H(16, 0), 60), 'at home');
-        dinner();
-        evening();
+        if (dz) { dongzhi(); break; }
+        dinner(); evening();
         at(J(H(23, 0), 30), home, 'asleep');
         break;
       }
-      const w = p.work, what = X.workDoing(w);
-      at(J(H(6, 45), 20), home, 'breakfast');
-      at(rubbishOut(J(H(7, 45), 20)), w, what);
-      if (r() < 0.4) { at(J(H(12, 10), 8), home, 'lunch at home'); at(J(H(13, 0), 8), w, what); }
-      else { at(J(H(12, 15), 10), w, 'lunch at the workbench'); at(J(H(12, 50), 5), w, what); }
-      if (dz) { at(J(H(17, 50), 20), home, 'home early for 冬至'); dongzhi(); break; }
-      const end = J(H(19, 0), 30);
-      at(end, home, 'home from work');
-      fetch(end + 5, 'at home');
-      if (F && end < F.dinner) dinner(); else at(end + 3, home, 'dinner, kept warm');
-      evening(end);
-      at(J(H(23, 0), 30), home, 'asleep');
-      break;
-    }
-    case 'shopkeeper': {
-      at(J(H(6, 30), 20), home, 'breakfast');
-      at(J(H(sun ? 9 : 7, 45), 30), p.work, X.workDoing(p.work, true));
-      if (F && F.members > 1 && !dz) { at(F.dinner + J(5, 5), p.work, 'dinner, brought from home'); at(F.dinner + J(30, 5), p.work, X.workDoing(p.work, true)); }
-      if (dz) { at(J(H(18, 0), 20), home, 'shut early for 冬至'); dongzhi(18.5); break; }
-      at(J(H(sun ? 19 : 21, 30), 40), home, F && F.members > 1 ? 'home from the shop' : 'supper');
-      at(J(H(23, 30), 20), home, 'asleep');
+      workDay(w, keeper, sh);
+      // On 冬至 most shut early; the food trades work on (INFERRED from pp44, 289).
+      if (dz && w?.cat !== 'foodfac') { at(Math.min(sh.t1, J(H(17, 50), 20)), home, keeper ? 'shut early for 冬至' : 'home early for 冬至'); dongzhi(); break; }
+      // a long day: dinner at work, brought from home or cooked there
+      if (F && sh.t1 > F.dinner + 20) { at(F.dinner + J(5, 5), w, keeper ? 'dinner in the shop' : 'dinner at work'); at(F.dinner + J(35, 5), w, sh.what); }
+      at(sh.t1, home, sh.t1 > H(22, 0) ? 'home, after the day in the shop' : 'home from work');
+      if (sh.t1 < H(16, 0)) afternoon(sh.t1 + J(40, 10));
+      else if (F && F.dinner - sh.t1 > 75) at(sh.t1 + J(30, 10), home, 'resting after work');
+      if (F && sh.t1 < F.dinner) dinner();
+      else if (F && sh.t1 <= F.dinner + 20) at(sh.t1 + 3, home, 'a late dinner');
+      if (sh.t1 < H(21, 0)) { fetch(sh.t1 + 5, 'at home'); evening(sh.t1); }
+      else if (sh.t1 < H(22, 30)) at(sh.t1 + J(25, 5), home, 'the evening at home');
+      if (!rushEve(w, Math.max(F?.dinner ?? 0, sh.t1) + J(60, 15))) at(Math.max(sh.t1 + 30, J(H(23, 0), 30)), home, 'asleep');
       break;
     }
     case 'carrier': {
@@ -272,11 +384,15 @@ export function planDay(p, dow, X) {
       }
       at(t, home, 'home');
       dinner();
+      evening(t);
       at(J(H(22, 30), 30), home, 'asleep');
       break;
     }
     case 'homemaker': {
       at(J(H(5, 45), 20), home, 'cooking breakfast');
+      // "a small family shrine, which was regularly blessed with fresh offerings of food and
+      // incense" (p154)
+      if (r() < 0.6) { const t = J(H(7, 10), 15); at(t, home, 'fresh food and incense at the family shrine (p154)'); at(t + 6, home, 'housework'); }
       const kids = F?.taker === p.id && F.kinder.size;
       let t = J(H(8, 15), 20);
       if (kids) {
@@ -289,12 +405,20 @@ export function planDay(p, dow, X) {
       at(t + J(80, 15), home, 'cooking');
       const q = r(), fetchAt = q < 0.35 ? Math.max(t + 85, J(H(10, 15), 60)) : q < 0.8 ? J(H(15, 30), 60) : J(H(17, 0), 25);
       if (fetchAt < H(12, 0)) fetch(fetchAt, 'housework');
-      if (r() < 0.4) { at(J(H(11, 0), 15), roof(), 'hanging the laundry on the roof'); at(J(H(11, 30), 10), home, 'housework'); }
+      // the washing: in the corridor (p176), or on the roof (INFERRED shares)
+      const lq = r();
+      if (lq < 0.35) { const t = J(H(11, 0), 15); at(t, home, 'hanging the washing out to dry in the corridor (p176)'); at(t + 15, home, 'housework'); }
+      else if (lq < 0.5) { at(J(H(11, 0), 15), roof(), 'hanging the washing on the roof'); at(J(H(11, 30), 10), home, 'housework'); }
+      // the temples: "women comprised the majority of visitors" of the Fuk Tak shrine (p32)
+      if (r() < 0.05 && X.places.temple) { const t = J(H(9, 30), 30); at(t, X.places.temple, 'incense at the Fuk Tak shrine (福德古廟) (p32)'); at(t + J(25, 8), home, 'housework'); }
       if (kids) { const kin = [...F.kinder.values()][0]; at(F.kinderBack - 4, kin, 'fetching the children from the kindergarten'); at(F.kinderBack + 2, home, 'lunch'); }
       else at(J(H(12, 30), 15), home, 'lunch');
-      at(J(H(13, 15), 10), home, 'housework');
+      // outwork at home for a workshop of the City: "30 or more female workers who worked from
+      // home" (p88); plastic products packed in the corridors (p176). The share is INFERRED.
+      const outwork = !!F?.outwork;
+      at(J(H(13, 15), 10), home, outwork ? 'outwork at home: packing for a workshop of the City (pp88, 176)' : 'housework');
       fill();
-      if (fetchAt >= H(12, 0)) fetch(fetchAt, 'housework');
+      if (fetchAt >= H(12, 0)) fetch(fetchAt, outwork ? 'outwork at home: packing for a workshop of the City (pp88, 176)' : 'housework');
       if (dz) {
         at(J(H(14, 30), 30), OUT('buying food for the 冬至 dinner'), 'buying food for the 冬至 dinner');
         at(J(H(15, 45), 20), home, 'cooking the 冬至 dinner');
@@ -306,58 +430,106 @@ export function planDay(p, dow, X) {
       at((F ? F.dinner : H(19, 0)) - J(75, 15), home, 'cooking dinner');
       dinner();
       at((F ? F.dinner : H(19, 0)) + J(35, 8), home, 'washing up');
-      evening((F ? F.dinner : H(19, 0)) + 25);
+      // some evenings, women of the City wrap candies for the Lees' candy workshop (p79)
+      if (X.places.candy && r() < 0.05) { at((F ? F.dinner : H(19, 0)) + J(55, 10), X.places.candy, 'wrapping candies at the candy workshop (p79)'); at(J(H(21, 0), 10), home, 'the evening at home'); }
+      else evening((F ? F.dinner : H(19, 0)) + 25);
+      if (F?.small) at(J(H(20, 0), 15), home, 'bathing the children (p160)');
       at(J(H(22, 30), 30), home, 'asleep');
       night();
       break;
     }
     case 'elder': {
-      at(J(H(5, 15), 25), home, 'up early');
-      const q = r(), takes = F?.taker === p.id && F.kinder.size;
-      if (q < 0.5 && !takes) { at(J(H(6, 0), 20), OUT('at a tea house'), 'at a tea house'); at(J(H(9, 15), 40), home, 'resting'); }
-      else if (q < 0.78) { at(J(H(6, 0), 20), roof(), 'morning exercise on the roof'); at(J(H(7, 15), 20), home, 'resting'); }
-      else at(J(H(7, 30), 30), home, 'at home');
+      at(J(H(5, 30), 30), home, 'up early');
+      const q = r(), takes = F?.taker === p.id && F.kinder.size, minds = F && !F.hasHomemaker && (F.small || F.pickup);
+      const care = minds ? 'minding the grandchildren (p54)' : 'resting';
+      // Some old people hardly leave the room: "rarely venturing out and with only his radio and
+      // television for diversion" (p24).
+      const room = !minds && !takes && (p.seed * 7) % 1 < 0.15;
+      // The mornings. No source gives a tea house in the City, or exercise at dawn: INFERRED.
+      let t;
+      if (room) at((t = J(H(7, 0), 30)), home, 'in the room, with the radio');
+      else if (q < 0.25 && !takes && !minds) { const s0 = J(H(6, 15), 20); t = J(H(9, 15), 40); at(s0, OUT('at a tea house outside the City'), 'at a tea house outside the City'); at(t, home, 'resting'); block(s0, t); }
+      else if (q < 0.33) { const s0 = J(H(6, 15), 20); t = J(H(7, 15), 20); at(s0, roof(), 'morning exercise on the roof'); at(t, home, care); block(s0, t); }
+      else at((t = J(H(7, 15), 20)), home, minds ? care : 'at home');
+      // "a small family shrine, which was regularly blessed with fresh offerings of food and
+      // incense" (p154): by the old person when there is no homemaker
+      if (!room && !F?.hasHomemaker && r() < 0.6) { const s0 = t + J(15, 5); at(s0, home, 'fresh food and incense at the family shrine (p154)'); at(s0 + 6, home, care); }
       if (takes) {
         const kin = [...F.kinder.values()][0];
         at(F.kinderT - 1, kin, 'taking the grandchildren to the kindergarten');
         at(F.kinderT + 15, home, 'resting');
         at(F.kinderBack - 4, kin, 'fetching the grandchildren from the kindergarten');
-        at(F.kinderBack + 2, home, 'lunch');
-      } else if (F?.small && !F.hasHomemaker) at(J(H(8, 0), 20), home, 'minding the grandchildren');
-      fetch(r() < 0.6 ? J(H(10, 0), 70) : J(H(15, 45), 60), 'resting');
+        at(F.kinderBack + 2, home, 'lunch with the grandchildren');
+        at(F.kinderBack + J(45, 10), home, 'minding the grandchildren (p54)');
+        block(F.kinderT - 1, F.kinderT + 15); block(F.kinderBack - 4, F.kinderBack + 45);
+      }
+      // "Mrs Law collected her two grandchildren from school every day and took them back to her
+      // small apartment for the afternoon, where they often did their homework on her bed" (p54)
+      if (F?.pickup && !sat && !sun && !room) {
+        at(F.pickup - 15, OUT('collecting the grandchildren from school'), 'collecting the grandchildren from school (p54)');
+        at(F.pickup + 20, home, 'minding the grandchildren: homework on the bed (p54)');
+        block(F.pickup - 15, F.pickup + 20);
+      }
       fill();
-      // The Old People's Centre: afternoons Monday to Saturday, worship on Sunday (pp305-306).
-      if (X.places.centre && !sun && r() < 0.3) { at(J(H(14, 30), 30), X.places.centre, 'tea and TV at the Old People’s Centre (pp305–306)'); at(J(H(17, 15), 30), home, 'resting'); }
-      else if (X.places.centre && sun && r() < 0.15) { at(J(H(10, 15), 10), X.places.centre, 'Sunday worship at the Old People’s Centre (p305)'); at(J(H(11, 40), 15), home, 'resting'); }
+      // The Old People's Centre (172:2:1): 184 members (p305); afternoon tea and television
+      // (p306), and later mornings too (p308); Sunday worship for the Christians (p305).
+      const C = X.places.centre, goes = p.centre === 'daily' || (p.centre === 'some' && (p.id + dow) % 3 === 0);
+      const visit = (t0, t1, pl, doing, after) => { if (busy(t0 - 30, t1 + 30)) return false; const a0 = J(t0, 20), a1 = J(t1, 20); at(a0, pl, doing); at(a1, home, after); block(a0, a1); return true; };
+      if (C && !sun && goes && !minds) {
+        if (r() < 0.3 && visit(H(9, 30), H(11, 30), C, 'the morning at the Old People’s Centre (老人中心) (p308)', 'lunch')) at(J(H(12, 15), 10), home, 'resting');
+        visit(H(14, 30), H(17, 15), C, 'tea and television at the Old People’s Centre (老人中心) (p306)', 'resting');
+      } else if (C && sun && p.worship) visit(H(10, 15), H(11, 40), C, 'Sunday worship at the Old People’s Centre (老人中心) (p305)', 'resting');
+      else if (!room && !minds && r() < 0.18 && p.home) {
+        const nb = X.neighbour(p.home, r);
+        if (nb) visit(H(14, 30), H(17, 30), nb, 'playing mahjong at a neighbour’s flat (p15)', 'resting');
+      } else if (!room && p.sex === 'f' && r() < 0.05 && X.places.temple) visit(H(10, 0), H(10, 25), X.places.temple, 'incense at the Fuk Tak shrine (福德古廟) (p32)', 'resting');
+      fetch(r() < 0.6 ? J(H(10, 0), 70) : J(H(15, 45), 60), care);
       if (outing()) {}
       if (dz) { dongzhi(18); break; }
       // "A grandmother would keep her eye on her own grandchildren as well as the children of
-      // her neighbours, while her daughter prepared supper" (p322).
-      if (r() < 0.3) { at(J(H(17, 0), 10), roof(), F?.small ? 'on the roof in the early evening, minding the children (p322)' : 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
-      dinner(true);
-      evening();
+      // her neighbours, while her daughter prepared supper in an apartment below" (p322).
+      if (!room && r() < 0.25 && !busy(H(16, 50), H(18, 0))) { at(J(H(17, 0), 10), roof(), F?.small || F?.pickup ? 'on the roof in the early evening, minding the children (p322)' : 'on the roof in the early evening (p322)'); at(J(H(17, 50), 10), home, 'resting'); }
+      // a widower alone: "A friend lives upstairs and comes down to eat with me in the
+      // evening" (Wong Hoi Ming (王海明), p233)
+      if (F && F.members === 1 && p.sex === 'm' && r() < 0.35) at(F.dinner, home, 'dinner with a friend from upstairs (p233)');
+      else dinner(true);
+      if (room) at(F ? F.dinner + J(50, 10) : J(H(19, 30), 20), home, 'in the room, with the television (p24)');
+      else evening(0, true);
       at(J(H(21, 15), 30), home, 'asleep');
       night();
       break;
     }
     // ---- the people who come in from outside ----
     case 'day_worker': {
-      if (sun && r() < 0.85) break;
-      const w = p.work, what = X.workDoing(w);
-      at(J(H(7, 45), 25), w, what);
-      if (X.places.eating.length && r() < 0.25) { at(J(H(12, 15), 10), X.places.eating[Math.floor(r() * X.places.eating.length)], 'lunch at an eating house'); at(J(H(13, 0), 8), w, what); }
-      if (dz) { at(J(H(17, 15), 20), home, 'home for 冬至, outside the City'); break; }
-      at(sat && r() < 0.5 ? J(H(13, 30), 20) : J(H(19, 0), 35), home, home.what);
+      const w = p.work, sh = shift(w, false);
+      if (!sh) break;
+      const what = X.workDoing(w);
+      if (dow > 0 && X.rush(w, dow - 1)) sh.t0 = Math.max(sh.t0, J(H(9, 30), 20));
+      at(sh.t0, w, what);
+      if (sh.split) { at(sh.split[0], OUT('between the two surgeries, outside the City'), 'between the two surgeries, outside the City'); at(sh.split[1], w, what); }
+      else if (X.places.eating.length && r() < 0.25) { at(J(H(12, 15), 10), X.places.eating[Math.floor(r() * X.places.eating.length)], 'lunch at an eating house'); at(J(H(13, 0), 8), w, what); }
+      else if (sh.lunch || sh.meals) { at(J(H(12, 20), 10), w, 'lunch at work'); at(J(H(12, 55), 5), w, what); }
+      if (dz && w?.cat !== 'foodfac') { at(J(H(17, 15), 20), home, 'home for 冬至, outside the City'); break; }
+      if (X.rush(w, dow)) { at(sh.t1, w, w.cat === 'foodfac' ? 'working through the night before the festival (pp44, 289)' : 'on into the night: a rush order (p237)'); at(J(H(23, 40), 10), home, home.what); break; }
+      at(sh.t1, home, home.what);
       break;
     }
     case 'police': {
-      // Two constables to a beat and three 8-hour shifts a day (pp251, 283), part of the beat on
-      // the roofs. The hours of the shifts are INFERRED. The two of a pair walk the same beat.
+      // Six constables, "two people on each of the three beats a day" (p251), in shifts of 8
+      // hours: the City was patrolled "at least once during each eight-hour shift" (p283). They patrolled the main streets "two or
+      // three times a day" (林羅平, Ming Pao Weekly 2024); the 3-11 pm shift was the busiest
+      // (p253). The hours of the shifts and of the patrols are INFERRED. The two of a pair walk
+      // the same beat; between patrols they are at the post outside the City.
       const q = mulberry32(4100 + dow * 7 + p.shift);
-      const stop = () => (q() < 0.12 ? X.anyRoof(q) : X.laneSpot(q));
-      const beat = (t0, t1) => { for (let t = t0; t < t1; t += 14 + q() * 8) at(t, stop(), 'on the beat (pp251, 283)'); };
-      if (p.shift === 2) { beat(1, H(7, 0)); at(H(7, 0), home, 'off duty'); beat(H(23, 0), H(23, 50)); }
-      else { const t0 = H(p.shift ? 15 : 7, 0); beat(t0, t0 + 480); at(t0 + 480, home, 'off duty'); }
+      const t0 = p.shift === 0 ? H(7, 0) : p.shift === 1 ? H(15, 0) : H(23, 0) - 1440;
+      const n = p.shift === 1 ? 3 : 2;
+      const post = OUT('at the police post outside the City');
+      for (let k = 0; k < n; k++) {
+        let s0 = t0 + 30 + (k * 480) / n + q() * 60;
+        if (s0 < 0) s0 += 1440; // the night shift: its patrols after midnight are today's
+        for (let t = s0, e = s0 + 35 + q() * 20; t < e; t += 9 + q() * 6) at(t, q() < 0.15 ? X.anyRoof(q) : X.streetSpot(q), 'on the beat (pp251, 283)');
+        at(s0 + 60, post, post.what);
+      }
       break;
     }
     case 'refuse': {
@@ -390,12 +562,15 @@ export function planDay(p, dow, X) {
       break;
     }
     case 'patient': {
-      // Patients from outside go to the dentists and doctors on the outer roads (p242). How many,
-      // and when, is INFERRED.
-      if (!X.places.clinics.length || r() > (sun ? 0.15 : 0.5)) break;
-      const c = X.places.clinics[Math.floor(r() * X.places.clinics.length)];
-      const t = sun ? J(H(10, 30), 50) : Math.min(J(H(14, 0), 270), dz ? H(16, 30) : 1430);
-      at(t, c, c.cat === 'dentist' ? 'at the dentist (p242)' : 'seeing the doctor (p242)');
+      // Patients from outside ("My patients come from both inside and outside the City, though
+      // mostly from outside", p187), to the dentists and the doctors on the
+      // outer roads (p242), in the hours of the clinics (pp187, 245). On Sunday mornings the
+      // factory workers come, with colds and coughs (p187). How many on each day is INFERRED.
+      if (!X.places.clinics.length || r() > (sun ? 0.25 : sat ? 0.8 : 1)) break;
+      const c = X.places.clinics[Math.floor(r() * X.places.clinics.length)], den = c.cat === 'dentist';
+      if (sun && den) break;
+      const t = sun ? J(H(10, 45), 100) : den ? H(10, 0) + r() * 520 : r() < 0.45 ? H(9, 0) + r() * 220 : H(15, 30) + r() * 250;
+      at(t, c, den ? 'at the dentist (pp36, 242)' : sun ? 'at the Sunday morning surgery, with a cold (p187)' : 'seeing the doctor (p187)');
       at(t + 25 + r() * 35, home, home.what);
       break;
     }
@@ -403,6 +578,17 @@ export function planDay(p, dow, X) {
     default: at(J(H(7, 0), 30), home, 'at home');
   }
   ev.sort((a, b) => a[0] - b[0]);
+  // The night's sleep comes after the last thing of the evening (a game of mahjong that runs
+  // late, a chat in the lane).
+  if (p.role !== 'real') {
+    let k = -1;
+    for (let j = ev.length - 1; j >= 0; j--) if (ev[j][2] === 'asleep' && ev[j][0] >= H(19, 0)) { k = j; break; }
+    if (k >= 0 && k < ev.length - 1) {
+      const [sl] = ev.splice(k, 1);
+      sl[0] = clampM(Math.max(sl[0], ev[ev.length - 1][0] + J(20, 5)));
+      ev.push(sl);
+    }
+  }
   return ev;
 }
 
@@ -441,6 +627,13 @@ export function planHouse(h, mem, dow, X) {
     const who = how === 'throw' ? keeper || mem.find((m) => m.role !== 'child') : leaver;
     F.rubbish = who && !sun ? { who: who.id, how } : null;
   }
+  // the family's workplace in the City (a family workshop or shop), if any
+  F.familyWork = (mem.find((m) => (m.role === 'worker_in' || m.role === 'shopkeeper') && m.work && (m.work.cat === 'foodfac' || m.work.cat === 'shop' || m.work.cat === 'eating')) || {}).work || null;
+  // outwork at home (p88): about 3 homemakers in 10 (INFERRED)
+  F.outwork = !!mum && r() < 0.3;
+  // a grandparent collects the young schoolchildren of the morning session (p54) when there is
+  // no homemaker
+  F.pickup = !mum && old && !sat && !sun && mem.some((m) => m.role === 'student' && m.age < 12 && m.seed < 0.5) ? J(H(12, 50), 8) : 0;
   if (sun && h.kind === 'family' && r() < 0.45) F.outing = { t0: J(H(9, 40), 30), t1: J(H(14, 0), 50) };
   // the kindergarten (ages 3 to 5), Monday to Friday; the homemaker or a grandparent takes them
   if (!sat && !sun) {
