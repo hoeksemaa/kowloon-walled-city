@@ -77,6 +77,9 @@ no source names them. Where each thing stands in a room. The recipe of each kind
 photos and texts of the sources (data/furnishings.json).</p>
 <p><span class="st ok">SOURCED</span>The ten mysteries (data/mysteries.json): each clue and each story names its
 source; an hour or a room that only the model gives is marked inferred.</p>
+<p><span class="st prov">INFERRED</span>Where each utility stands (data/utilities.json): the 67 roof tanks, the pumps,
+the meter boards, the pipes over the lanes, the lamps, the refuse points. <span class="st ok">SOURCED</span>Their look, the one
+standpipe in the City (p106), a meter for each unit, and the 200 public lights lit 24 hours a day.</p>
 <h4>Not yet on this structure</h4>
 <p>The street names and the numbers of the 1992 map sat on the old city of this app. They come back in
 later changes, on this structure.</p>`;

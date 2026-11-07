@@ -1,0 +1,6244 @@
+{
+ "about": "Utilities of Kowloon Walled City (九龍城寨) for the model week, Tue 16 to Mon 22 December 1986. The systems are water, power, refuse, drains and toilets, fire, gas and fuel, post and others. The file gives facts with sources, counts and a daily schedule. It puts places on the units of the frozen structure ([b, k, u] as in data/room_uses.json). It also gives placement rules and visuals for the drawing code. It has no colours: the drawing code gives the colours. See docs/utilities.md.",
+ "period": "December 1986",
+ "key": "A unit is [b, k, u]: building id (S.list), floor k (0 = G/F), unit id (phaseOf(k).plan.units); the key \"b:k:u\" of S.unitNode. Positions (xz) are in the scene frame (see placement.frame). basis of places: verified, likely, guess. basis of facts and schedule items: sourced or inferred.",
+ "facts": [
+  {
+   "id": "U1",
+   "system": "water",
+   "text": "The Government gave safe drinking water from eight standpipes. Only one standpipe, on Tai Chang Street (大井街), was inside the City.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p106 (caption)",
+   "quote": "safe drinking water was available from just eight Government stand-pipes, of which only this one, on Tai Chang Street, was within the City.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U2",
+   "system": "water",
+   "text": "In 1987 eight standpipes supplied up to 35,000 residents and hundreds of factories. Seven of them stood outside the perimeter.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "By 1987, just eight stand-pipes were in place to supply up to 35,000 residents and hundreds of factories. Only one of these was located within the City",
+   "date": "1987",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U3",
+   "system": "water",
+   "text": "WSJ also gives one standpipe inside and seven on the perimeter.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "only one official government standpipe located inside the Walled City's boundaries, and seven on its perimeter",
+   "date": "not given",
+   "type": "secondary (2014 narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U4",
+   "system": "water",
+   "text": "The Government put the standpipes on the edge of the City, at Tung Tau Tsuen Road (東頭村道) and Tung Tsing Road (東正道). The source writes 東頭邨道.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "後來亦只在寨邊的東頭邨道、東正道等位置設街喉，解決食水問題。",
+   "date": "not given",
+   "type": "retrospective (2016, reporter's narration of Yip Tak-wai, 葉德偉)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U5",
+   "system": "water",
+   "text": "As a child in the 1960s, Ng Kam Mui (吳錦妹) fetched water from taps at either end of Tung Tau Tsuen Road and bathed there.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p57",
+   "quote": "I remember when we were small we had to fetch water from taps at either end of the street. We even had our baths there",
+   "date": "1960s",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U6",
+   "system": "water",
+   "text": "Albert Ng counts about seven public water stations.",
+   "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng' (Albert Ng Kam-po, 吳錦波)",
+   "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+   "quote": "the government had about seven public water stations so we could get some water from there",
+   "date": "mid-1970s to 1988",
+   "type": "retrospective (undated web interview)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U7",
+   "system": "water",
+   "text": "Albert Ng's family went to the public water stations every day to drink and shower.",
+   "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng' (Albert Ng Kam-po, 吳錦波)",
+   "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+   "quote": "Every single day, we would have to go the public water stations so we could drink and shower.",
+   "date": "mid-1970s to 1988",
+   "type": "retrospective (undated web interview)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U8",
+   "system": "water",
+   "text": "The first standpipe came in 1963.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "The first stand-pipe was installed in 1963",
+   "date": "1963",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U9",
+   "system": "water",
+   "text": "In 1964 residents paid labourers $12-15 a month to carry six buckets a day from the standpipes.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Residents were paying $12-15 a month for labourers to carry six buckets of water each day from the stand-pipes to their flats",
+   "date": "1964",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U10",
+   "system": "water",
+   "text": "Mains water went inside the City only to some recognised charities.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Mains water was supplied inside the City to various recognised charities, but this was very much the exception not the rule.",
+   "date": "to 1987",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U11",
+   "system": "water",
+   "text": "In 1987 the Government surveyors found 67 working wells of about 40 suppliers.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Government surveyors assessing compensation claims identified 67 working wells owned by some 40 suppliers.",
+   "date": "1987",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U12",
+   "system": "water",
+   "text": "Over the years, up to 300 'scientific wells' were sunk. Many ran dry.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "up to 300 'scientific wells' – as they were described by City-dwellers – were said to have been sunk beneath the area, though many had long run dry from overuse.",
+   "date": "1960s-1987",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U13",
+   "system": "water",
+   "text": "The recent wells went down as far as 100 m.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "The more recent drillings had to reach as far as 100 metres below the surface",
+   "date": "1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U14",
+   "system": "water",
+   "text": "The well diggers were mainly property owners. Some were former water carriers.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "The new well diggers were mainly property owners who were able to drill on their own land; some were reputedly former water-carriers themselves.",
+   "date": "late 1960s-1970s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U15",
+   "system": "water",
+   "text": "Pumps lifted the well water to tanks on the roofs. Pipes ran down from the tanks into the blocks and flats.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Water was first pumped up to rudimentary storage tanks on the City roofscape. From there, a twisted congestion of pipes ran downward again, branching into blocks and flats.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U16",
+   "system": "water",
+   "text": "Many pumps ran at set times, usually noon and midnight. Each run gave a few hours of supply.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "many pumps would only be turned on at set times – usually noon and midnight – to replenish the tanks. This would only give a few hours' supply",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U17",
+   "system": "water",
+   "text": "Residents stored water in baths and buckets. About 20 people controlled the supply for the well owners.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "residents still had to store water in baths and buckets. About 20 people were employed to control the supply at various locations according to the well-owner's schedule.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U18",
+   "system": "water",
+   "text": "A well-water link cost up to several thousand dollars.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Installation of a well-water link could cost as much as several thousand dollars, depending on the height above and the distance from the well.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U19",
+   "system": "water",
+   "text": "By the late 1980s a household paid $50 to $70 a month for well water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "By the late 1980s, monthly charges were anywhere between $50 and $70 per household.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U20",
+   "system": "water",
+   "text": "Most residents had a well-water link.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "the majority of City residents appear to have been linked up to receive well-water.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U21",
+   "system": "water",
+   "text": "The well water was not fit to drink or boil. People carried drinking water from the standpipes until the end.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108",
+   "quote": "it was not even fit to boil. Drinking and cooking water still had to be carried from the stand-pipes, and a small workforce was engaged in this activity till the end.",
+   "date": "to 1992",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U22",
+   "system": "water",
+   "text": "All through the day, residents and paid carriers filled containers at the Tai Chang Street standpipe and carried them up the stairs. Letters in [] are hidden in the binding.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108 (caption)",
+   "quote": "people – some ordinary residents and others paid wat[er] 'suppliers' – appeared throughout the day to [fill] plastic containers and buckets that then had [to] be carried home, often up many flights of sta[irs].",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U23",
+   "system": "water",
+   "text": "People also washed clothes and bathed at the standpipe. A food factory thawed frozen eels under a tap there.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108 (caption)",
+   "quote": "But people also came here with their washing [or] to bathe.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U24",
+   "system": "water",
+   "text": "Food-factory workers came from time to time to connect their hose to the standpipe and fill a tank in the factory.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110 (caption)",
+   "quote": "Every once in a while a worker would appear to attach his business's hosepipe and thereby replenish a storage tank back in the factory.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U25",
+   "system": "water",
+   "text": "A large bundle of hoses ran from the standpipe to the food factories round it.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110 (caption)",
+   "quote": "A man washes his hair beside a great cluster of hosepipes that led off to the many food factories which naturally congregated in the area.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U26",
+   "system": "water",
+   "text": "The photos show the standpipe. A galvanised pipe frame at about 0.9 m carries 3-4 brass taps. Beside it stands a rounded concrete cylinder (about 0.5-0.7 m wide, 0.9-1.1 m high) with one more tap. The floor is tiled, with a kerb. 30-60 hoses go up the wall.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp106, 109, 110, 111 (photos); p337 (Sing Pao 1987 photo, probably the same place)",
+   "quote": "The public stand-pipe on Tai Chang Street served all manner of residential and comme[rcial] needs.",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92); sizes are my estimates from the photo",
+   "basis": "sourced"
+  },
+  {
+   "id": "U27",
+   "system": "water",
+   "text": "A notice of the Urban Services Department (市政總署) is painted on the wall at the standpipe. It says that the water of this well is not fit to drink. Thus a well is at this corner, or the corner taps give well water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp106, 109, 111 (photos)",
+   "quote": "此井水不適宜飲用 市政總署",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U28",
+   "system": "water",
+   "text": "The wall at the standpipe also carries the large painted characters 興發 and a board of 和興傢俬公司.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p106 (photo)",
+   "quote": "興發 ... 和興傢俬公司",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U29",
+   "system": "water",
+   "text": "The corner store at Lung Chun Back Road (龍津後街) and Tai Chang Street was a few yards from the standpipe. A person waits at the standpipe in the photo.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p91 (caption)",
+   "quote": "just yards away from the one Government stand-pipe located within the City",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U30",
+   "system": "water",
+   "text": "Families carrying drinking water from the standpipes up to high floors were an everyday sight.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p249 (caption)",
+   "quote": "families hauling drinking water from one of the eight Government stand-pipes up to their apartments on distant upper floors were an everyday sight.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U31",
+   "system": "water",
+   "text": "Wong Wai Chung's wife carried water up 10 storeys every day, and paid gangsters who controlled the taps.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp260-261",
+   "quote": "Every day, she had to carry water up those 10 storeys. She also had to put up with gangsters controlling the taps, paying them money every time she collected water.",
+   "date": "years not given",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U32",
+   "system": "water",
+   "text": "Heung Yin-king carried buckets from the public taps up four floors every day.",
+   "source": "The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015",
+   "cite": "https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness",
+   "quote": "hauling buckets of water from the public taps up four floors to the flat every day",
+   "date": "from the 1960s; end not given",
+   "type": "retrospective (2013-15)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U33",
+   "system": "water",
+   "text": "Lau Chun-fat drew water at a public tap for drinking and cooking.",
+   "source": "SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, 'Rats were something else: 25 years on ...', 23 Mar 2018",
+   "cite": "https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled",
+   "quote": "We had to go to a nearby public tap to draw buckets of water for drinking and cooking",
+   "date": "late 1980s",
+   "type": "retrospective (2018)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U34",
+   "system": "water",
+   "text": "People tapped the mains illegally outside the City, at Sai Tau Tsuen (西頭村) and the Mei Tung Estate (美東邨). The Triads ran this at first.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108",
+   "quote": "there was some illegal tapping of mains water from outside the City, notably from the adjacent Sai Tau Tsuen and Mei Tung estates.",
+   "date": "1970s-1992",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U35",
+   "system": "water",
+   "text": "Illegal mains water stayed an important source of drinking water until the end.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110",
+   "quote": "the illegal tapping of mains water remained an important source of drinking water until the end.",
+   "date": "to 1992",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U36",
+   "system": "water",
+   "text": "The largest (stolen) main ran under the Lung Heung café (濃香冰室).",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan, 朱耀山)",
+   "quote": "The largest main ran beneath the Lung Heung café. There were some people 'releasing' water there",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U37",
+   "system": "water",
+   "text": "Some company offices took rent and water charges, so that the collectors did not go from flat to flat.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "they are just places where residents can pay their rent and water charges, so that the collectors don't have to chase all over the place.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U38",
+   "system": "water",
+   "text": "Well owners sometimes locked the main tap for days and then asked $300 from each unit for a 'repair'.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "lock the main tap and disappear for a few days, before confronting the residents of a block with the news that the pump had malfunctioned and that $300 would have to be collected from each unit to fix it.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U39",
+   "system": "water",
+   "text": "Some well owners stopped the water when they lost at the casinos of Macau.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "Many of these well owners were habitual gamblers – when they lost at the casinos in Macau, they would just stop the water.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U40",
+   "system": "water",
+   "text": "Drinking water was led to special wells and to tanks on the roof, then by pipes to the main flats.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "Arrangements were made to allow drinking water to be 'diverted' to special wells and tanks on the roof, and from there through pipes to all the main apartments.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U41",
+   "system": "water",
+   "text": "Some blocks had several connections and a 24-hour supply. Most blocks did not.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "Some builders made several connections to ensure a 24-hour supply, but this is not the case in most blocks.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U42",
+   "system": "water",
+   "text": "Well water often looked like drain water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "The water that comes from the wells often looks like drain-water and is usually undrinkable",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U43",
+   "system": "water",
+   "text": "Each well owner got $200,000 in compensation for the wells.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "The people who 'released' water are now receiving $200,000 in compensation for their wells",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U44",
+   "system": "water",
+   "text": "Chan Shing, one of about 70 private water suppliers, collected the monthly charges himself.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p112 (caption)",
+   "quote": "One of the City's 70 or so private water suppliers, Chan Shing collected monthly charges personally from his customers, occasionally waiving them for the elderly",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U45",
+   "system": "water",
+   "text": "The pump was usually under a floor panel. The supplier switched it on at various times to fill a large tank on the roof. The photo shows an open floor hatch of about 0.8 x 0.6 m in a tiled room. Under it are a pipe, a valve with a hand wheel and an elbow.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p112 (caption and photo)",
+   "quote": "Usually concealed behind a floor panel, the pump would be switched on at various times to replenish a large storage tank on the roof.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U46",
+   "system": "water",
+   "text": "Residents paid on time. They were afraid of a water cut or of damage to their pipes.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110",
+   "quote": "Residents would generally pay on time for fear their water would be cut off or their pipes damaged.",
+   "date": "late 1980s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U47",
+   "system": "water",
+   "text": "In 1980 a Triad leader forced a rise in the water price with a threat.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110",
+   "quote": "we'll chop him up in front of the crowd.",
+   "date": "1980",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U48",
+   "system": "water",
+   "text": "67 wells alone did not give enough water for 33,000 people and 700 businesses (feature text).",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p110",
+   "quote": "it is unrealistic to assume that 33,000 people and 700 businesses could have been supplied by 67 ground wells alone.",
+   "date": "1987",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U49",
+   "system": "water",
+   "text": "The last natural ground well (19th century) was in an alley off Tai Chang Street. The photo shows a round concrete well-head of about 1 m diameter and 0.5 m height, with buckets.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p120 (caption and photo)",
+   "quote": "the only remaining natural ground well in the Walled City by the late 1980s was located, appropriately enough, in an alley off Tai Chang (Big Well) Street.",
+   "date": "late 1980s",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U50",
+   "system": "water",
+   "text": "There were two big wells. One was still in use. A building covered the other.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p82 (Chan Pui Yin, 陳沛然)",
+   "quote": "There used to be two big wells in the City, but only one is still in use. The other has been covered over and a building has been erected on the site.",
+   "date": "c.1989",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U51",
+   "system": "water",
+   "text": "Chan Pui Yin liked his well water. A friend from outside came for a pailful every day.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p82 (Chan Pui Yin)",
+   "quote": "We use water from a well, which is good and has a pleasant flavour.",
+   "date": "c.1989",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U52",
+   "system": "water",
+   "text": "Folklore: the well on the east side was filled in.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p12 (caption)",
+   "quote": "this came about when a well on the east side of the City was filled in.",
+   "date": "not given",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U53",
+   "system": "water",
+   "text": "The big well is beside 興發樓, No. 8 Tai Chang Street. People reach it from Lung Chun Road (龍津道) through two buildings.",
+   "source": "lichokiu.blogspot.com, 你早, 24 Sep 2005, citing 魯金《九龍城寨史話》(1988) pp132-133",
+   "cite": "https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html",
+   "quote": "大水井在八號興發樓旁，從龍津道穿過祥興樓與兩合樓就可見到。",
+   "date": "1988",
+   "type": "secondary (2005 blog quoting a 1988 book)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U54",
+   "system": "water",
+   "text": "Jetly Chau (周秀儀) fitted a meter and connected her shop to one of several well-water tanks.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p44",
+   "quote": "There are several well-water tanks in the Walled City and we installed a meter and connected our premises to one of them.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U55",
+   "system": "water",
+   "text": "Some families carried standpipe water for tea. Her shop paid a flat $100 a month for water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p44",
+   "quote": "Some of the families who do not like the brackish taste of well-water carry water from the nearby stand-pipes to make tea. The water here costs $100 a month, no matter how much we use.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U56",
+   "system": "water",
+   "text": "Chung Yuk Yee bathed her children in water from a roof tank fed by ground wells.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p160 (caption)",
+   "quote": "bathing her son and daughter in the murky water piped from a rooftop storage tank fed by ground wells beneath the City.",
+   "date": "c.1990-91",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U57",
+   "system": "water",
+   "text": "Chung Yuk Yee: the supply became slower and dirtier.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p161",
+   "quote": "The water supply has definitely got worse; it's slow and there are black grains in the water that stain the clothes when they are washed.",
+   "date": "c.1990-91",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U58",
+   "system": "water",
+   "text": "林羅平: two owners held the power and the water supply as a monopoly.",
+   "source": "HK01 (香港01), 吳美松, 「九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落」, 20 Jul 2024 (reporter's narration of 林羅平)",
+   "cite": "https://www.hk01.com/社區專題/1033066/",
+   "quote": "平哥指當時城寨內有兩戶業主，一人專門供電，另一人專門供水，不論供電還是供水，都是他們的專利。",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U59",
+   "system": "water",
+   "text": "Staff of the Water Supplies Department (水務署; the source writes 水務局) came in from time to time and cut illegal pipes.",
+   "source": "HK01 (香港01), 吳美松, 「九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落」, 20 Jul 2024 (reporter's narration of 林羅平)",
+   "cite": "https://www.hk01.com/社區專題/1033066/",
+   "quote": "那段日子不時有水務局人員進入城寨，並剪去一些偷水用的違法水喉",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U60",
+   "system": "water",
+   "text": "Water came by time slots: 2/F-3/F at about 6-7 am, then 3/F-4/F at about 8-9 am.",
+   "source": "HK01 (香港01), 吳美松, 「九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落」, 20 Jul 2024 (reporter's narration of 林羅平)",
+   "cite": "https://www.hk01.com/社區專題/1033066/",
+   "quote": "城寨居民用水要分時段，譬如二、三樓可能於早上6、7點來水，然後8、9時就輪到三、四樓有水用。",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U61",
+   "system": "water",
+   "text": "A flat fee, not by meter: $100 a month for a home, $300 for a workshop.",
+   "source": "HK01 (香港01), 吳美松, 「九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落」, 20 Jul 2024 (reporter's narration of 林羅平)",
+   "cite": "https://www.hk01.com/社區專題/1033066/",
+   "quote": "不按水錶收費，譬如住宅用戶每月繳交100元，開工場則每個月支付300元水費。",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U62",
+   "system": "water",
+   "text": "袁家倫 (13/F, top floor): water came only from 3 pm each day.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "這裡每天下午三點鐘才有水供應",
+   "date": "years not given (she left Hong Kong in 1992)",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U63",
+   "system": "water",
+   "text": "袁家倫 took water from the roof tank with a small bucket.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "也可以用小水桶到水箱打水用，不受制水的限制。",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U64",
+   "system": "water",
+   "text": "Albert Ng: the well water came half an hour a week.",
+   "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng' (Albert Ng Kam-po, 吳錦波)",
+   "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+   "quote": "they dug into the ground and had underground water but the supply was half an hour per week",
+   "date": "mid-1970s to 1988",
+   "type": "retrospective (undated web interview)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U65",
+   "system": "water",
+   "text": "阿榮 (childhood, before 1986): the scientific wells gave water only a few hours each afternoon. Families filled large plastic buckets.",
+   "source": "HK01 (香港01), 麥佩雯, 「【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒」, 28 Aug 2016 (阿榮)",
+   "cite": "https://www.hk01.com/社區專題/39889/",
+   "quote": "但每天只有下午數小時有供水；家家戶戶就在這幾小時長開水喉，用大膠桶裝滿一桶又一桶的貯水備用。",
+   "date": "1950s-1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U66",
+   "system": "water",
+   "text": "阿榮: the wells had no pressure. Only low floors got water. High floors carried water up from the ground.",
+   "source": "HK01 (香港01), 麥佩雯, 「【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒」, 28 Aug 2016 (阿榮)",
+   "cite": "https://www.hk01.com/社區專題/39889/",
+   "quote": "「但科學井沒有水壓的，常常只有低層住戶才裝到水，高層的可能要去地面打水擔上樓。」",
+   "date": "1950s-1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U67",
+   "system": "water",
+   "text": "Tam Sau-kuen (譚秀娟): no 24-hour water. At the sound of dripping water, even at night, she woke up to do the washing.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), people and life chapters",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "There was no 24-hour water supply in Kowloon Walled City… No matter what time it was, even while we were sleeping at night, when we heard the sound of water dripping, we would immediately wake up",
+   "date": "not given",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U68",
+   "system": "water",
+   "text": "Gordon Jones, former District Officer: about 70 wells; the water was very poor.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "The water was largely derived from about 70 or so wells, which the inhabitants of the Walled City had sunk… The actual quality of the water was pretty appalling.",
+   "date": "not given",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U69",
+   "system": "water",
+   "text": "陳先生 (a tall building on the edge of the City, no lift) paid $50 a month extra for water. He heard that private contractors held the water meters.",
+   "source": "香港文匯報 (Wen Wei Po), 朱慧怡, 市民旅客看城寨電影場景, 7 Oct 2024 (陳先生)",
+   "cite": "https://www.wenweipo.com/a/202410/07/AP6703ee26e4b0379ce1054821.html",
+   "quote": "惟水費每月另外需要交50元，據說是城寨內的水錶是由私人承包。",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U70",
+   "system": "water",
+   "text": "Chan So-hing's mother gutted fish at the street pump. The water was cold.",
+   "source": "SCMP, 'How a Hong Kong fish ball maker from Kowloon Walled City became a thriving family business', as copied by the firm (Chan So-hing, 陳素卿)",
+   "cite": "https://www.hamingkee.com.hk/about/media?blog_id=19",
+   "quote": "My mother would gut and clean all the fish by the pump, and the water was cold.",
+   "date": "1969-1993",
+   "type": "retrospective (2026)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U71",
+   "system": "water",
+   "text": "1974: residents brought water from municipal standpipes outside the City.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c464",
+   "quote": "brought from municipal standpipes outside the Walled City",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U72",
+   "system": "water",
+   "text": "1974: illegal wells were dug under the houses.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c464",
+   "quote": "illegal wells dug directly under the houses",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U73",
+   "system": "water",
+   "text": "Early years: no supply. Young men carried water for weak old people at 50 cents a load.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "年輕人會以5毛一擔水作招徠，經營一盤小生意。",
+   "date": "early years (not dated)",
+   "type": "retrospective (2016, narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U74",
+   "system": "water",
+   "text": "Pipes broke and nobody repaired them: people added a new pipe. TV aerial cables, telephone lines and plastic water pipes filled the lanes.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "不過寨內街道上都是線，有電視天線、電話線等，亦有膠水喉，斷了不會修，只會再駁一條新的，互相交織",
+   "date": "not given",
+   "type": "retrospective (2016, narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U75",
+   "system": "water",
+   "text": "劉先生: rats, dirty water on the ground, leaking pipes, dripping in the humid spring.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄】 series (3 parts), 26-28 Aug 2016, as copied in primary-sources/hk01-kaifong-series-2016/SOURCE.md",
+   "cite": "https://www.hk01.com/article/39195 ; /39194 ; /39597",
+   "quote": "老鼠周圍走，滿地污水，水喉漏水，回南天又滴水",
+   "date": "not given",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U76",
+   "system": "water",
+   "text": "Girard: wires ran from building to building; water pipes overhead dripped.",
+   "source": "HK01 (香港01), 8 May 2024, interview with Greg Girard and Ian Lambot (2019), as copied in primary-sources/retrospective-testimony-web/SOURCE.md",
+   "cite": "primary-sources/retrospective-testimony-web/SOURCE.md",
+   "quote": "電線從一座大廈接到另一座大廈，頭上掛着水管，有水滴漏出",
+   "date": "1986-92",
+   "type": "retrospective (2019 interview, 2024 article)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U77",
+   "system": "water",
+   "text": "UPI 1987 writes that the tenements had no running water. Compare U20.",
+   "source": "UPI, David W. Jones, 'Kowloon's walled city to come tumbling down', 15 Feb 1987",
+   "cite": "https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-down/8464540363600/",
+   "quote": "10 to 15-story tenements, all without elevators, fire escapes or running water",
+   "date": "Feb 1987",
+   "type": "primary (1987)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U78",
+   "system": "water",
+   "text": "The City had more than 8000 households at its peak.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "最高峰時住了8000多戶",
+   "date": "peak (not dated)",
+   "type": "retrospective (2016, narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U79",
+   "system": "water",
+   "text": "Yim Kwok Yuen's workshop rent included electricity and water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p289",
+   "quote": "The rent for the workshop is $2000 a month, with electricity and water charges included.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U80",
+   "system": "power",
+   "text": "China Light and Power (中華電力有限公司) supplied the City in a major way from 1977.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p98 (Mok Chung Yuk)",
+   "quote": "China Electric [now China Light and Power] began supplying electricity to the Walled City in a major way in 1977.",
+   "date": "1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U81",
+   "system": "power",
+   "text": "Before 1977 only a few places on the edge had official supply: three supply points on Tung Tau Tsuen Road and 'United Road'.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p98 (Mok Chung Yuk)",
+   "quote": "there were three supply points on Tung Tau Village Road and United Road.",
+   "date": "1950s-1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U82",
+   "system": "power",
+   "text": "From 1977 CLP supplied legal buildings.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p99 (Mok Chung Yuk)",
+   "quote": "by 1977, China Electric had come round to the idea of supplying electricity as long as the buildings were legal.",
+   "date": "1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U83",
+   "system": "power",
+   "text": "1977 was the year of the big fire. It started the change.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p99 (Mok Chung Yuk)",
+   "quote": "That was the year of the big fire, when everyone realised things had to change.",
+   "date": "1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U84",
+   "system": "power",
+   "text": "1977-85: drastic change.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p99 (Mok Chung Yuk)",
+   "quote": "The years 1977 to '85 were years of drastic transformation.",
+   "date": "1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U85",
+   "system": "power",
+   "text": "Before the master plan, about 20% of households had some supply, often illegal.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p99 (Mok Chung Yuk)",
+   "quote": "before we drew up our master plan about 20 per cent of households already had some sort of supply – sometimes legal though often not.",
+   "date": "before c.1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U86",
+   "system": "power",
+   "text": "The City was a maze of pipes and wires.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "The City was just a maze of pipes and wires all over the place.",
+   "date": "c.1977",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U87",
+   "system": "power",
+   "text": "CLP brought the cable in from the outside, step by step.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "Eventually we decided that we'd just have to make a start from the outside and work in – take the cable and enter inch by inch.",
+   "date": "c.1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U88",
+   "system": "power",
+   "text": "Rock stopped the digging, thus CLP raised the pavement over the cable.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "we'd often strike rock or stone and have to stop. After several meetings in the City, we agreed to raise the level of the pavement instead!",
+   "date": "c.1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U89",
+   "system": "power",
+   "text": "Sometimes CLP supplied a lower floor and the owner connected the floor above.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "In a few instances, we just supplied electricity to the power points on a lower floor and let the owner connect it to the floor above.",
+   "date": "c.1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U90",
+   "system": "power",
+   "text": "CLP rented about 250 sq ft (about 23 m2) from the church in the City for a transformer.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "We finally managed to persuade the church in the City to rent us around 250 square feet on condition we renovated their school.",
+   "date": "c.1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U91",
+   "system": "power",
+   "text": "The transformer served two high-density cables.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "we had to find space for the transformer we needed to cope with two high-density cables we were planning to bring in.",
+   "date": "c.1977-85",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U92",
+   "system": "power",
+   "text": "CLP built 'a couple' more substations on sites cleared by fires.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "release space cleared because of fires so we could build a couple more sub-stations.",
+   "date": "1984-87",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U93",
+   "system": "power",
+   "text": "Permission came in 1984. The stations took three years.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "they eventually gave us permission in 1984. It took us three years to set up the stations",
+   "date": "1984-87",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U94",
+   "system": "power",
+   "text": "By then almost every flat had electricity, but not all factories.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "By this time almost every flat had electricity. But that didn't take care of all the factories.",
+   "date": "c.1987",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U95",
+   "system": "power",
+   "text": "Electricity thieves were only disconnected.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (Mok Chung Yuk)",
+   "quote": "They stole from China Electric but were rarely brought to account. If they were discovered, they'd just be disconnected.",
+   "date": "c.1987",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U96",
+   "system": "power",
+   "text": "Wiring spread from a bank of meters on G/F to the flats above, tacked to the walls.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p100 (caption of the p101 photo)",
+   "quote": "a tangle of wiring spreads out from a bank of meters on the ground floor towards individual apartments on the floors above, the wires tacked directly to the walls.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U97",
+   "system": "power",
+   "text": "Meter readers carried torches and dog repellent. They read 400 to 5.. meters a day. In the scan, a smear hides the last two digits of the upper number; '500' fits the shape.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p98 (caption)",
+   "quote": "the meter [read]ers – who were armed with torches [and] dog repellent – could cover 400 to 5[..] meters a day.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U98",
+   "system": "power",
+   "text": "The photos show three meter boards. On p98, a wall of meters and fuse boxes (about 3 x 1.5 m) is at a stair landing. Loops of flex and cables in conduit hang there. On p99, a board about 6 m long at 1.8-2.4 m in a G/F alley holds two rows of about 40 meters. On p101, a board about 1.2 x 1 m at a stair entrance holds about 20 meters.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp98, 99, 101 (photos)",
+   "quote": "The haphazard appearance of the [elec]tricity metering belied a certain [order].",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92); sizes are my estimates from the photo",
+   "basis": "sourced"
+  },
+  {
+   "id": "U99",
+   "system": "power",
+   "text": "A CLP bill went to a G/F flat at 31 Lo Yan Street (老人街).",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p89 (photo of the envelope)",
+   "quote": "CHINA LIGHT & POWER COMPANY, LIMITED 中華電力有限公司",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U100",
+   "system": "power",
+   "text": "Chan Kwong's factory cabling cost more than $30,000.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p88",
+   "quote": "Look at this electric cabling – the installation of that alone cost more than $30,000.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U101",
+   "system": "power",
+   "text": "Inside the City the wiring was a mess, and houses shared one cable.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p44 (Jetly Chau)",
+   "quote": "That is not always the situation further inside the City. There, the wiring is often a mess and the power supply is affected by houses sharing the same cable.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U102",
+   "system": "power",
+   "text": "'Poor electricity companies' stole power for factories at a low price.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (Chu Yiu Shan)",
+   "quote": "They used to steal electricity from the mains for people living in the City – factories and so on would pay a bill of only a few hundred dollars a month, when their consumption actually amounted to $1000 or more.",
+   "date": "to 1987",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U103",
+   "system": "power",
+   "text": "Lam Shu Chuen (林樹全) rented out kerosene lamps in the 1940s, then sold power from generators, by the number of lights.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p153",
+   "quote": "I made my money in the 1940s by renting out kerosene lamps. Later, I provided electricity using generators. I charged according to the number of lights.",
+   "date": "1940s-1950s",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U104",
+   "system": "power",
+   "text": "Ng Kam Mui: no electricity in the 1950s and 1960s; kerosene lamps; later supply from CLP.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p57",
+   "quote": "We eventually got electricity from China Electric; in the '50s and '60s there was none at all, so there were no fans or lights. We used kerosene lamps to study by",
+   "date": "1950s-1960s",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U105",
+   "system": "power",
+   "text": "Power cuts were frequent. The postman escorted people up the stairs with a torch.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun, 林寶鎮)",
+   "quote": "The Walled City was often hit by power cuts, when the whole place would be plunged into darkness. I would take out a torch, and escort the children and elderly",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U106",
+   "system": "power",
+   "text": "The Kai Fong Association (九龍城寨街坊福利會) paid for more than 200 public lights, on 24 hours a day.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p178 (Chan Hip Ping, 陳協平)",
+   "quote": "We are now responsible for more than 200 lights which are switched on 24 hours a day, all paid for by the Association.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U107",
+   "system": "power",
+   "text": "The District Boards relaid some streets and put in some public lights.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "they have relaid some streets and installed some public lights for us.",
+   "date": "1980s",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U108",
+   "system": "power",
+   "text": "Many small alleys in the middle had light only here and there.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p103 (caption)",
+   "quote": "many of the smaller alleys in the middle of the City were only intermittently lit.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U109",
+   "system": "power",
+   "text": "Tungsten bulbs in the flats; fluorescent tubes in the corridors.",
+   "source": "HK01 (香港01), 8 May 2024, interview with Greg Girard and Ian Lambot (2019), as copied in primary-sources/retrospective-testimony-web/SOURCE.md",
+   "cite": "primary-sources/retrospective-testimony-web/SOURCE.md",
+   "quote": "單位裏的鎢絲燈、走廊的光管",
+   "date": "1986-92",
+   "type": "retrospective (reporter's words from Lambot)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U110",
+   "system": "power",
+   "text": "1987: low ceilings of wires, cables, fuses and sockets at head height.",
+   "source": "Gerald Posner, blog post of 26 May 2016, quoting his book Warlords of Crime (1988), visit of 1987",
+   "cite": "https://www.posner.com/geraldposner/2016/05/tbt-reminder-of-my-1987-police-escort.html",
+   "quote": "a bewildering jumble of knotted wires, dangling electric cables, and exposed fuses and sockets, all hanging less than a foot from the tallest cop's head",
+   "date": "1987",
+   "type": "primary (1988 book)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U111",
+   "system": "power",
+   "text": "1987: an occasional bare bulb.",
+   "source": "Gerald Posner, blog post of 26 May 2016, quoting his book Warlords of Crime (1988), visit of 1987",
+   "cite": "https://www.posner.com/geraldposner/2016/05/tbt-reminder-of-my-1987-police-escort.html",
+   "quote": "an occasional naked bulb providing the barest light",
+   "date": "1987",
+   "type": "primary (1988 book)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U112",
+   "system": "power",
+   "text": "Albert Ng: the power company ran a wire in; the family had a meter and paid every month.",
+   "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng' (Albert Ng Kam-po, 吳錦波)",
+   "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+   "quote": "The electricity company would have a wire in and we would have a meter and we would pay every month.",
+   "date": "mid-1970s to 1988",
+   "type": "retrospective (undated web interview)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U113",
+   "system": "power",
+   "text": "Wong Chan Pui-wah (黃陳佩華) paid somebody to steal electricity.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "We had to pay somebody to 'steal' electricity for us.",
+   "date": "not given",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U114",
+   "system": "power",
+   "text": "The Kai Fong Association asked the power company to fit meters in each unit and helped run the cables.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "街坊福利會與電力公司聯繫，之後到每個單位安裝電錶，亦幫忙拉線",
+   "date": "c.1977-85",
+   "type": "retrospective (2016, narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U115",
+   "system": "power",
+   "text": "林羅平's shop had its own CLP meter because it was near the outer street.",
+   "source": "HK01 (香港01), 吳美松, 「九龍城寨︱德興魚蛋老闆城寨起家躍升行業龍頭　見證山寨工場沒落」, 20 Jul 2024 (reporter's narration of 林羅平)",
+   "cite": "https://www.hk01.com/社區專題/1033066/",
+   "quote": "由於平哥的舖位近外街，因此他有一個電力公司提供的電錶及供電。",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U116",
+   "system": "power",
+   "text": "Neighbours lent power: if the flat above lost power, it dropped a plug down.",
+   "source": "明周文化 (Ming Pao Weekly), 梁伊琪, 【九龍城寨】黑暗之外 城寨人真實記憶, 13 Jun 2024 (平哥, 林羅平)",
+   "cite": "https://www.mpweekly.com/culture/社會/黑暗之城-九龍城寨-城寨居民-239629",
+   "quote": "譬如樓上突然間沒有電，便扔個插頭下來，我們就借電給他用。",
+   "date": "1983-c.1992",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U117",
+   "system": "power",
+   "text": "阿榮 (before 1986): each family connected itself; one wire for more than ten households; fires every night.",
+   "source": "HK01 (香港01), 麥佩雯, 「【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒」, 28 Aug 2016 (阿榮)",
+   "cite": "https://www.hk01.com/社區專題/39889/",
+   "quote": "每家只能自行駁電，一條電線十多戶共用，晚晚失火",
+   "date": "1950s-1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U118",
+   "system": "power",
+   "text": "1974: power was stolen from the mains outside by illegal connections.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c464",
+   "quote": "stolen from the municipal mains supply outside the city by illegal connections",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U119",
+   "system": "power",
+   "text": "1987: buzzing electrical wires and dripping pipes, day and night.",
+   "source": "SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, 'Rats were something else: 25 years on ...', 23 Mar 2018",
+   "cite": "https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled",
+   "quote": "Night and day within the Walled City were the same, with buzzing electrical wires, dripping pipes",
+   "date": "1987",
+   "type": "retrospective (2018)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U120",
+   "system": "refuse",
+   "text": "The Urban Services Department (市政總署, USD) collected the refuse: two tons a day.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p104 (feature 'Refuse Collection')",
+   "quote": "One essential service, however, was provided by the Urban Services Department (USD) refuse collectors. Clearing away the two tons of rubbish that accumulated each day in the City was a priority",
+   "date": "c.1987-92",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U121",
+   "system": "refuse",
+   "text": "Refuse was also a fire hazard and fed the rats.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p104",
+   "quote": "control the large rat population – but equally to expunge the City of a potential fire hazard.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U122",
+   "system": "refuse",
+   "text": "USD buckets were everywhere. Many refuse collection points served 10 sweepers.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p104",
+   "quote": "Orange USD buckets were commonplace, and numerous refuse collection points rationalised the cleaning system for the 10 sweepers who patrolled the City.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U123",
+   "system": "refuse",
+   "text": "Every year the Kai Fong Association ran clean-ups of roofs, alleys, pipes and cables.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p104",
+   "quote": "communal clean-ups of the rooftops, alleys and overhead piping or electricity cables that were organised every year by the Kai Fong Association.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U124",
+   "system": "refuse",
+   "text": "Photo p104: a bay of about 2 x 1.2 m in a covered alley about 1 m wide. It holds a low wooden bin (about 0.6 m high) full of plastic bags, and a broom. Photo p105: a stack of 5-8 large round plastic refuse buckets by a stair at night. Each bucket is about 0.55-0.6 m wide and 0.6-0.7 m high.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp104-105 (photos)",
+   "quote": "Refuse Collection",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92); sizes are my estimates from the photo",
+   "basis": "sourced"
+  },
+  {
+   "id": "U125",
+   "system": "refuse",
+   "text": "The refuse collectors came at about 4 am on Tai Chang Street, with a lot of noise.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p93 (Lee Pui Yuen, 李培元, 12 Tai Chang Street)",
+   "quote": "the nights are pretty quiet until about 4am, but then the rubbish collectors come round crashing and banging.",
+   "date": "c.1991",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U126",
+   "system": "refuse",
+   "text": "The KFA and the USD worked together on cleaning at Chinese New Year and on garbage.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "We liaise over cleaning up during Chinese New Year and over the clearance of garbage.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U127",
+   "system": "refuse",
+   "text": "Only two buildings had lifts, thus garbage removal was hard.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "Only two buildings in the City have lifts, so you can imagine how difficult it is to remove all the garbage from every apartment and factory.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U128",
+   "system": "refuse",
+   "text": "The KFA asked residents to take their garbage to the refuse collection station before work. Few did.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "We have asked the residents to take their garbage to the refuse collection station before they go to work, but that is a bit unrealistic",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U129",
+   "system": "refuse",
+   "text": "The KFA put up notices and posters about garbage.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "Our publicity includes putting up notices and posters about garbage",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U130",
+   "system": "refuse",
+   "text": "The KFA cleaned alleys, cleared drains, removed garbage and kept the main streets.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p178 (Chan Hip Ping)",
+   "quote": "During the last 20 years we have focused more on cleaning the alleys, clearing the drains, removing garbage and maintaining the main streets.",
+   "date": "c.1967-87",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U131",
+   "system": "refuse",
+   "text": "A metal grill over the Tin Hau Temple (天后廟) caught the refuse thrown from the flats round it.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p241 (caption)",
+   "quote": "the metal grill protecting it from all manner of refuse dispatched from the surrounding apartments",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U132",
+   "system": "refuse",
+   "text": "The grill was cleared once a year. The photo shows a steel mesh (about 5 cm squares) over a light well about 6-8 m wide, at about 2/F. The refuse on it is 0.3-0.5 m deep.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p241 (caption and photo)",
+   "quote": "the protective mesh grill, which was cleared just once a year",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U133",
+   "system": "refuse",
+   "text": "WSJ: garbage on the grate kept the sun off the Tin Hau Temple.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "was often blocked from sunshine by the garbage residents scattered on the tin grate above it",
+   "date": "not given",
+   "type": "secondary (2014 narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U134",
+   "system": "refuse",
+   "text": "Rubbish and plastic bags often filled the gaps between buildings.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p103 (caption)",
+   "quote": "Natural light penetrated to street level only in those few places where narrow gaps had been left between buildings, though all too often these were obstructed by plastic bags and assorted rubbish.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U135",
+   "system": "refuse",
+   "text": "Suzuki (1993): the gap was a good place to dump rubbish.",
+   "source": "『大図解 九龍城』 (1997), survey of Jan 1993 (Takayuki Suzuki)",
+   "cite": "p209",
+   "quote": "「すきま」は格好のゴミ捨て場でもあった",
+   "date": "Jan 1993",
+   "type": "primary (1993 survey)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U136",
+   "system": "refuse",
+   "text": "Unwanted fittings and furniture lay on the roofs. The photo shows heaps 0.2-0.5 m deep.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p322 (caption and photo)",
+   "quote": "An exciting playground despite the detritus of people's unwanted fittings and furniture, the roof thronged with children out of school hours",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U137",
+   "system": "refuse",
+   "text": "USD rat-bait warning notice in an alley.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p144 (photo)",
+   "quote": "URBAN SERVICES DEPARTMENT WARNING POISONOUS RAT-BAIT IS BEING LAID IN THIS VICINITY 市政總署 警告 此地附近已放置有毒鼠餌",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U138",
+   "system": "refuse",
+   "text": "1974: a large USD team of sweepers worked in the City.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c472",
+   "quote": "the Urban Services Department has a large team of sweepers who operate in the city.",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U139",
+   "system": "refuse",
+   "text": "1974: several huge refuse bins and standpipes for street cleaning.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c472",
+   "quote": "There are several huge refuse bins, standpipes for street cleaning are now installed",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U140",
+   "system": "refuse",
+   "text": "Albert Ng: the Government sent people in to pick up the trash.",
+   "source": "Beijing Visitor, 'Journey into the Soul of the Kowloon Walled City with Pastor Albert Ng' (Albert Ng Kam-po, 吳錦波)",
+   "cite": "https://www.beijing-visitor.com/hong-kong-culture/kowloon-walled-city",
+   "quote": "the Hong Kong government would also send in people to pick up the trash.",
+   "date": "mid-1970s to 1988",
+   "type": "retrospective (undated web interview)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U141",
+   "system": "refuse",
+   "text": "袁家倫: there was a refuse station near her building.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "附近有一個垃圾站",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U142",
+   "system": "refuse",
+   "text": "Tung Tsing Road Refuse Collection Point stood outside the City by Nov 1984 (plan x 117, z 132). The Chinese name in the data is cut short (東正道).",
+   "source": "CSDI building data (Lands Department), as stored in data/context.json",
+   "cite": "CSDI Building 3780521398T20050430 (context.json id csdi:3780521398T20050430)",
+   "quote": "Tung Tsing Road Refuse Collection Point",
+   "date": "by 1984-11",
+   "type": "map data (1984-85 sheet)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U143",
+   "system": "refuse",
+   "text": "The alleys held trolleys, broken concrete and wet rubbish under dripping pipes.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p249 (caption)",
+   "quote": "Often fetid and dank, with water permanently dripping from the makeshift pipes overhead, they were an obstacle course of delivery trolleys, broken concrete and sodden rubbish.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U144",
+   "system": "refuse",
+   "text": "Ida Shum: floods rose to the knees with trash floating.",
+   "source": "The Travel Club, John Carney, 'Kowloon Walled City: life in the City of Darkness', 3 Jan 2015",
+   "cite": "https://www.thetravelclub.org/articles/travelogues/664-kowloon-walled-city-life-in-the-city-of-darkness",
+   "quote": "Water would rise to people's knees with trash floating around",
+   "date": "years not given",
+   "type": "retrospective (2013-15)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U150",
+   "system": "drain",
+   "text": "In the 1970s the Government and the Kai Fong put in a mains sewer. Before that, sewage ran in open drains.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108",
+   "quote": "Before the Government got together with the Kai Fong to install a mains sewage line in the 1970s, raw human waste exited the City via open drains driven down the side of the tiny streets.",
+   "date": "1970s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U151",
+   "system": "drain",
+   "text": "Newer buildings had some provision for water and waste.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p108",
+   "quote": "they were able to ensure that the newer buildings, at least, had some provision for water supply and waste",
+   "date": "1970s-80s",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U152",
+   "system": "drain",
+   "text": "Chung Yuk Yee (youth): no real drains; every morning the family used the public lavatories at Tung Tau village.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p161",
+   "quote": "there were no real drains, so we had to go to the public lavatories at Tung Tau village every morning to get rid of our waste.",
+   "date": "her youth (1960s-70s)",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U153",
+   "system": "drain",
+   "text": "1974: an open drain with sewage ran down the middle of each alley.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c463",
+   "quote": "Down the middle of each runs an open drain with the sewage running down it",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U154",
+   "system": "drain",
+   "text": "1974: pumphouses were being installed; the open ditches were cleared twice a day.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c472",
+   "quote": "Pumphouses are being installed and the open ditches have, since last year at least, been cleared twice daily.",
+   "date": "1973-74",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U155",
+   "system": "drain",
+   "text": "1974: pest control, daily chlorination of wells and public latrines.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c472",
+   "quote": "a service for pest control, the daily chlorination of wells and the maintenance of public latrines.",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U156",
+   "system": "drain",
+   "text": "GRS: toilets and a 'P.H.' (meaning not given) on G/F opposite 12 Lo Yan Back Street.",
+   "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+   "cite": "HKRS1255-3-316A, -316B",
+   "quote": "C36/48 - G/F, Opposite to 12, L.Y. [Lo Yan] Back St. [Street], (Toilets)",
+   "date": "1989-91 (file)",
+   "type": "catalogue",
+   "basis": "sourced"
+  },
+  {
+   "id": "U157",
+   "system": "drain",
+   "text": "The survey plan of Tai Hing Building 4/F (6 Sai Shing Road, 西城路) shows a toilet.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p340",
+   "quote": "(E) TOILET",
+   "date": "c.1987",
+   "type": "primary (survey plan)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U158",
+   "system": "drain",
+   "text": "bkshopr_IHB (childhood, 8/F): 20 families shared one toilet; a chamber pot was emptied twice a day.",
+   "source": "Talk Irvine forum, bkshopr_IHB, 'A glimpse of my life experience', 28 Aug 2009",
+   "cite": "https://www.talkirvine.com/threads/a-glimpse-of-my-life-experience.10174/",
+   "quote": "20 families shared one toilet and a communal kitchen. We had a chamber pot where we had to empty out twice a day.",
+   "date": "his childhood (year not given)",
+   "type": "retrospective (2009)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U159",
+   "system": "drain",
+   "text": "袁家倫: the whole flat shared one toilet; there was often a queue.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "全屋共用一個洗手間，經常有人在排隊。",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U160",
+   "system": "drain",
+   "text": "Dripping from above soaked the postman's hair and clothes every day.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun)",
+   "quote": "every day my hair and clothes would be rank from the dripping from above in the alleys.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U161",
+   "system": "drain",
+   "text": "The postman got a hat against the dripping.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p149 (caption)",
+   "quote": "a hat was standard issue against the constant dripping in the alleyways.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U162",
+   "system": "drain",
+   "text": "Plastic and metal sheets over the alleys gave a little protection from the water from above.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p249 (caption)",
+   "quote": "Crudely installed plastic and metal sheeting barely protected passers-by from the worst of the water coursing down from above",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U163",
+   "system": "drain",
+   "text": "People crossed the roofs to avoid the dripping and the dark alleys.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun)",
+   "quote": "people liked to take shortcuts across the roof to avoid the dripping water and the darkness of the alleyways.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U164",
+   "system": "drain",
+   "text": "1992: open sewers, illegal wires and dripping pipes along the paths.",
+   "source": "The Baltimore Sun, Robert Benjamin, 'Denizens of noted hellhole face Walled City eviction', 30 Jun 1992",
+   "cite": "https://www.baltimoresun.com/1992/06/30/denizens-of-noted-hellhole-face-walled-city-eviction/",
+   "quote": "byways bounded by open sewers, lined with frayed nests of illegal electrical lines and perpetually damp from dripping water pipes.",
+   "date": "Jun 1992",
+   "type": "primary (1992)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U165",
+   "system": "drain",
+   "text": "Lockeyear (police from 1963): only standpipe water, little legal power, no drainage.",
+   "source": "SCMP, Peace Chiu, Mary Ann Benitez and Cannix Yau, 'Rats were something else: 25 years on ...', 23 Mar 2018",
+   "cite": "https://web.archive.org/web/20191223043753id_/https://www.scmp.com/news/hong-kong/community/article/2138495/rats-were-something-else-25-years-hong-kongs-kowloon-walled",
+   "quote": "with only a standpipe water supply, little or no legal electricity and no drainage",
+   "date": "from 1963",
+   "type": "retrospective (2018)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U166",
+   "system": "drain",
+   "text": "阿榮: the City sat in a basin and always flooded in storms.",
+   "source": "HK01 (香港01), 麥佩雯, 「【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒」, 28 Aug 2016 (阿榮)",
+   "cite": "https://www.hk01.com/社區專題/39889/",
+   "quote": "這些樓宇面對狂風暴雨也不會被吹塌，但必定水浸。",
+   "date": "1950s-1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U167",
+   "system": "drain",
+   "text": "1968 survey map: latrines on Lung Chun Road.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp126-127 (1968 Survey and Mapping Office map)",
+   "quote": "LATRINE",
+   "date": "1968",
+   "type": "primary (1968 map)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U168",
+   "system": "drain",
+   "text": "Tung Tsing Road Public Toilet (東正道公廁) stood outside the City by Nov 1984 (plan x 116, z 126).",
+   "source": "CSDI building data (Lands Department), as stored in data/context.json",
+   "cite": "CSDI Building 3780021402T20050430 (context.json id csdi:3780021402T20050430)",
+   "quote": "Tung Tsing Road Public Toilet",
+   "date": "by 1984-11",
+   "type": "map data (1984-85 sheet)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U169",
+   "system": "drain",
+   "text": "Suzuki (1993): the top-floor toilet was probably also a shower room.",
+   "source": "『大図解 九龍城』 (1997), survey of Jan 1993 (Takayuki Suzuki)",
+   "cite": "p209",
+   "quote": "シャワールーム兼用と思われる。",
+   "date": "Jan 1993",
+   "type": "primary (1993 survey)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U170",
+   "system": "fire",
+   "text": "Residents in the stairways watched for fire.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p154 (caption)",
+   "quote": "the residents were more acutely aware of – and vigilant against – the ever-present threat of fire.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U171",
+   "system": "fire",
+   "text": "1953 or 1954: a fire burned more than 3000 huts. It started at a rice and charcoal shop.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p153 (Lam Shu Chuen)",
+   "quote": "Then there was a big fire around 1953 or '54, when more than 3000 huts were destroyed. It started at a shop that sold rice and charcoal.",
+   "date": "1953-54",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U172",
+   "system": "fire",
+   "text": "The KFA night patrol (11 pm to dawn) watched for fires. It stopped in the 1970s.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p178 (Chan Hip Ping)",
+   "quote": "It would patrol from 11pm until dawn as a deterrent to thieves and helped as a lookout for fires. Both the time-reporting and fire-prevention teams operated on a voluntary basis and were discontinued in the 1970s.",
+   "date": "1940s-1970s",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U173",
+   "system": "fire",
+   "text": "The KFA bought some fire-fighting equipment.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p178 (Chan Hip Ping)",
+   "quote": "We bought some fire-fighting equipment.",
+   "date": "early years",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U174",
+   "system": "fire",
+   "text": "The KFA put up notices on fire prevention.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "We do the same regarding fire prevention.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U175",
+   "system": "fire",
+   "text": "Chung Yuk Yee feared the alley wiring: people blamed it for fires.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p161",
+   "quote": "I worry about the electric wiring in the alleys too – there have been fires in the City before and the poor wiring is always blamed.",
+   "date": "c.1990-91",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U176",
+   "system": "fire",
+   "text": "Fire engines did not get in. Inside there was a fire trolley with sand and buckets of water, and there were patrol teams.",
+   "source": "The Funambulist, Sharon Lam and her father, 9 Mar 2018",
+   "cite": "https://thefunambulist.net/magazine/16-proletarian-fortresses/interview-far-from-the-western-fetish-the-kowloon-walled-city-between-extraordinary-space-and-normal-lives-by-sharon-lam-and-her-dad",
+   "quote": "inside, there's fire prevention stuff, such as a make-shift fire trolley with sand & buckets of water. There were self-organized patrol teams.",
+   "date": "year not given",
+   "type": "retrospective (2018)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U177",
+   "system": "fire",
+   "text": "A rattan shop fire: a family on 6/F went down to 3/F and stepped across to the next building.",
+   "source": "HK01 (香港01), 余秋婷, 【真．城寨英雄（二）】九龍城寨特產「握手樓」　跨一步即可逃生, 27 Aug 2016",
+   "cite": "https://www.hk01.com/article/39194",
+   "quote": "樓下籐器店火災，劉先生一家人居於六樓，後樓梯被鎖，而三樓則對正旁邊大樓的走廊",
+   "date": "not given",
+   "type": "retrospective (2016, narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U178",
+   "system": "fire",
+   "text": "阿榮 (before 1986): people beat gongs at midnight and shouted 'fire'.",
+   "source": "HK01 (香港01), 麥佩雯, 「【真城寨英雄】 福利會才是黃賭毒大佬！　居民：說起來嚇怕女兒」, 28 Aug 2016 (阿榮)",
+   "cite": "https://www.hk01.com/社區專題/39889/",
+   "quote": "經常睡到半夜就有人打鑼打鼓大叫「火燭呀」，要逃生。",
+   "date": "1950s-1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U179",
+   "system": "fire",
+   "text": "A toy factory had 4-5 wire fires each summer. Workers ran to the Tung Tau Tsuen Road entrance.",
+   "source": "Yahoo新聞 (Yahoo News HK), 鄭美姿, 九龍城寨小學有人未遺忘　城外人分享衝進去回憶：細細個入去做暑期工, 3 Jun 2024 (阿平)",
+   "cite": "https://hk.news.yahoo.com/ (article of 3 Jun 2024; full URL in data/people.json, id toy-factory-summer-boy)",
+   "quote": "阿平最記得一個暑期工下來，總會發生四、五次「燒電線」事件",
+   "date": "1970s",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U180",
+   "system": "fire",
+   "text": "Gordon Jones: no significant fires.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "there were no significant fires or outbreaks of disease",
+   "date": "high-rise era",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U181",
+   "system": "fire",
+   "text": "1974: fire risk was very high.",
+   "source": "UK House of Lords, HL Deb 11 June 1974, vol 352, 'Walled City of Kowloon'",
+   "cite": "https://api.parliament.uk/historic-hansard/lords/1974/jun/11/walled-city-of-kowloon c472",
+   "quote": "Fire risk, because of the maze-like layout of the Walled City is, of course, very high.",
+   "date": "1974",
+   "type": "primary (1974)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U182",
+   "system": "fire",
+   "text": "1964: four emergency hydrants were removed after the drought.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p107",
+   "quote": "Four emergency hydrants had been removed following the end of the drought that year, leaving just five stand-pipes.",
+   "date": "1964",
+   "type": "secondary (2014 feature text)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U183",
+   "system": "fire",
+   "text": "KFA poster: 'Prevent Fire: Protect Your Life and Property'.",
+   "source": "The Wall Street Journal, 'Kowloon Walled City' interactive (2014), life chapter",
+   "cite": "https://web.archive.org/web/20191005145747id_/https://projects.wsj.com/kwc/getData.php?f=grabChapter&chapter=life",
+   "quote": "Prevent Fire: Protect Your Life and Property",
+   "date": "not given",
+   "type": "secondary (2014 narration)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U190",
+   "system": "gas",
+   "text": "Every family used an LP gas cylinder. The KFA ran a safety campaign.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p179 (Chan Hip Ping)",
+   "quote": "Every family here uses an LP gas cylinder, which is a bit like keeping a bomb in your home. If it exploded, the effect would be catastrophic and we have a campaign to encourage families to be careful.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U191",
+   "system": "gas",
+   "text": "Lee Pui Yuen carried kerosene drums up 10 or more storeys.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p93 (Lee Pui Yuen)",
+   "quote": "I could carry around 40 catties [60 pounds] of rice and a drum of kerosene up 10 or more storeys.",
+   "date": "1979-91",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U192",
+   "system": "gas",
+   "text": "His store opened 8 am to midnight; busiest 5-9 pm. It sold mainly rice, fuel and cigarettes.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p93 (Lee Pui Yuen)",
+   "quote": "We're open from 8am to midnight and the store used to be crowded between 5 and 9pm every day.",
+   "date": "1979-91",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U193",
+   "system": "gas",
+   "text": "GRS: Tak Sang LP Gas Hong (德生行), 9 Tung Tau Tsuen Road, G/F.",
+   "source": "Government Records Service (政府檔案處), catalogue HKRS1255-3 (clearance files)",
+   "cite": "HKRS1255-3-562A",
+   "quote": "Flat B, G/F, 9, TTT RD. [Tung Tau Tsuen Road], 2. G/F, Side Lane. (Tak Sang LP Gas Hong) 德生行",
+   "date": "1989-97 (file)",
+   "type": "catalogue",
+   "basis": "sourced"
+  },
+  {
+   "id": "U194",
+   "system": "gas",
+   "text": "袁家倫: a shared kitchen, one kerosene stove per family; rice cookers in the rooms.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "全屋共用一個廚房，每家只能放一個火水爐用來炒菜，電飯鍋就放在各人的房間。",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U195",
+   "system": "gas",
+   "text": "1970s: a store sold LP gas in a 'huge can'.",
+   "source": "KowloonWalledCityBoy (Albert Ng), 'My Friend Ah Meng', 13 Oct 2016",
+   "cite": "https://mykowloonwalledcityblog.wordpress.com/2016/10/13/my-friend-ah-meng/",
+   "quote": "that huge can of LPG gas",
+   "date": "1970s",
+   "type": "retrospective (2016)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U200",
+   "system": "post",
+   "text": "The postmen worked from the Lung Kong Road Post Office in Kowloon City.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (Lam Po Chun)",
+   "quote": "I was working at the Lung Kong Road Post Office in Kowloon City.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U201",
+   "system": "post",
+   "text": "A sorting desk with 48 slots was too small for one day's mail of the City.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (Lam Po Chun)",
+   "quote": "A sorting desk with 48 slots was not enough to accommodate a day's mail for the Walled City.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U202",
+   "system": "post",
+   "text": "There were two postmen from 1982.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (Lam Po Chun)",
+   "quote": "The number increased to two in 1982",
+   "date": "1982",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U203",
+   "system": "post",
+   "text": "The round began at a store on Lo Yan Street, with deliveries to collective mail-banks.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (caption)",
+   "quote": "Mr Lui's daily round began at a store on Lo Yan Street, from where he would embark on several separate sorties which took him to simple deliveries at collective mail-banks",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U204",
+   "system": "post",
+   "text": "The postman crossed the roofs through skylights.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (caption)",
+   "quote": "On reaching a skylight, he would cross the rooftops",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U205",
+   "system": "post",
+   "text": "Photo p145: many small wooden letterboxes (about 0.25-0.3 m) are fixed on both walls of a narrow alley at about 1.6-2.2 m. The postman sorts letters there. He wears a cloth hat. Photos pp102 and 148: single metal letterboxes of about 0.25 x 0.4 m at about 1.8 m.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "pp102, 145, 148 (photos)",
+   "quote": "Postman Lui Man Sang emerges from a building staircase and enters one of the Walled City's alleys while making his rounds.",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92); sizes are my estimates from the photo",
+   "basis": "sourced"
+  },
+  {
+   "id": "U206",
+   "system": "post",
+   "text": "A postbox label: 94 Lung Chun Road, 5/F front.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p189 (photo)",
+   "quote": "龍津道94號 五樓前座",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U210",
+   "system": "other",
+   "text": "Only two buildings had lifts.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p146 (Lam Po Chun)",
+   "quote": "The Walled City only had two buildings with lifts.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U211",
+   "system": "other",
+   "text": "TV aerials on the roofs at the eye level of a child.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p324 (caption)",
+   "quote": "Children at play on the roof of the Walled City, among television antennae precariously positioned at the eye level of a six year old.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 caption)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U212",
+   "system": "other",
+   "text": "袁家倫's building had no lift and no telephone.",
+   "source": "大紀元時報（香港）, 袁家倫, 【紀載香港】九龍城寨飛出的「火鳳凰」, 5 May 2024",
+   "cite": "https://hk.epochtimes.com/news/2024-05-05/28556552",
+   "quote": "可是卻沒有電梯，沒有電話",
+   "date": "years not given",
+   "type": "retrospective (2024)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U213",
+   "system": "post",
+   "text": "Lam Po Chun was a postman in the City from 1979 to 1989.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun)",
+   "quote": "From 1979 to 1989 – that is, from my 19th to 29th year – I was a postman in the Walled City.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U214",
+   "system": "other",
+   "text": "Lam Po Chun says that the high-rise buildings had no lifts. On p146 he says that two buildings had lifts.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun)",
+   "quote": "there were no lifts in the high-rise buildings!",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U215",
+   "system": "post",
+   "text": "Where roofs differed by one floor, people put a ladder. Where they differed by two or three floors, people opened or broke a corridor window of the taller building and put a stool under it.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p145 (Lam Po Chun)",
+   "quote": "the residents would open or break a window in a lower corridor of the taller building, and put a stool under it so people could climb out on to the lower rooftop.",
+   "date": "1979-89",
+   "type": "retrospective (2014)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U216",
+   "system": "water",
+   "text": "Yim Kwok Yuen (嚴國源) thinks that half of his water is stolen from the mains and half comes from a well. He drinks mains water.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p289 (Yim Kwok Yuen)",
+   "quote": "I believe that half of the water is stolen from the mains, while the other half comes from the well. We all use well-water but we use water from the mains for drinking.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U217",
+   "system": "power",
+   "text": "Yim Kwok Yuen's workshop never had a power failure.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p289 (Yim Kwok Yuen)",
+   "quote": "We have never had a power failure.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U218",
+   "system": "power",
+   "text": "His workshop has fans, a noisy refrigerator and a hot oven. His flat has an air-conditioner, a television and a washing machine.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p289 (Yim Kwok Yuen)",
+   "quote": "We have an air-conditioner, though we only use it on the hottest days; we also have a television and a washing machine.",
+   "date": "c.1987-92",
+   "type": "primary (interview c.1987-92)",
+   "basis": "sourced"
+  },
+  {
+   "id": "U219",
+   "system": "gas",
+   "text": "Photo p288 shows Yim Kwok Yuen's workshop. A metal LP gas cylinder stands by the stove. It is about 0.3 m wide and 0.6 m high, with a ring guard on the valve. Plastic buckets and a large steel basin are near it.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p288 (photo); caption on p289",
+   "quote": "A wide variety of cooked food, like these pigs about to be barbecued, was prepared within the Walled City",
+   "date": "c.1987-92",
+   "type": "photo (c.1987-92); sizes are my estimates from the photo",
+   "basis": "sourced"
+  },
+  {
+   "id": "U220",
+   "system": "other",
+   "text": "Chu Yiu Shan (朱耀山): the standfirst of his interview calls him a property developer and estate agent.",
+   "source": "Greg Girard and Ian Lambot, City of Darkness Revisited (Watermark, 2014)",
+   "cite": "p113 (standfirst)",
+   "quote": "He operated as a property developer and estate agent for many years, only moving to Junk Bay when the clearance was announced.",
+   "date": "c.1987-92",
+   "type": "secondary (2014 standfirst)",
+   "basis": "sourced"
+  }
+ ],
+ "counts": {
+  "standpipes": {
+   "n": 8,
+   "of": "Government standpipes for the City (1 inside on Tai Chang Street, 7 outside the perimeter)",
+   "date": "1987",
+   "facts": [
+    "U1",
+    "U2",
+    "U3"
+   ],
+   "note": "Albert Ng says 'about seven' (U6)."
+  },
+  "standpipes_inside": {
+   "n": 1,
+   "of": "Government standpipe inside the City (Tai Chang Street)",
+   "date": "1987",
+   "facts": [
+    "U1",
+    "U2"
+   ]
+  },
+  "standpipes_1964": {
+   "n": 5,
+   "of": "standpipes after four emergency hydrants were removed",
+   "date": "1964",
+   "facts": [
+    "U182"
+   ]
+  },
+  "working_wells": {
+   "n": 67,
+   "of": "working wells found by the Government surveyors",
+   "date": "1987",
+   "facts": [
+    "U11",
+    "U48"
+   ]
+  },
+  "well_suppliers": {
+   "n": 40,
+   "approx": true,
+   "of": "suppliers who owned the 67 wells ('some 40')",
+   "date": "1987",
+   "facts": [
+    "U11"
+   ],
+   "note": "The p112 caption gives '70 or so private water suppliers' (U44). Gordon Jones gives 'about 70 or so wells' (U68)."
+  },
+  "scientific_wells_ever": {
+   "n": 300,
+   "approx": true,
+   "of": "wells sunk over the years ('up to 300'), many dry",
+   "date": "1960s-1987",
+   "facts": [
+    "U12"
+   ]
+  },
+  "well_depth_max_m": {
+   "n": 100,
+   "of": "depth of the recent wells, metres",
+   "date": "1980s",
+   "facts": [
+    "U13"
+   ]
+  },
+  "supply_controllers": {
+   "n": 20,
+   "approx": true,
+   "of": "people who controlled the water supply for the well owners",
+   "date": "late 1980s",
+   "facts": [
+    "U17"
+   ]
+  },
+  "water_charge_household_hkd_month": {
+   "n": null,
+   "range": [
+    50,
+    70
+   ],
+   "of": "monthly well-water charge per household (HK$)",
+   "date": "late 1980s",
+   "facts": [
+    "U19"
+   ],
+   "note": "Other sources: $100 for a shop (U55); $100 for a home and $300 for a workshop (U61); $50 (U69)."
+  },
+  "well_compensation_hkd": {
+   "n": 200000,
+   "of": "compensation for the wells of one well owner (HK$)",
+   "date": "c.1987-92",
+   "facts": [
+    "U43"
+   ]
+  },
+  "residents": {
+   "n": 35000,
+   "approx": true,
+   "of": "residents served by the 8 standpipes ('up to')",
+   "date": "1987",
+   "facts": [
+    "U2"
+   ],
+   "note": "p110 gives 33,000 people and 700 businesses (U48)."
+  },
+  "households": {
+   "n": 8000,
+   "approx": true,
+   "of": "households at the peak ('8000多戶')",
+   "date": "peak, not dated",
+   "facts": [
+    "U78"
+   ]
+  },
+  "sweepers": {
+   "n": 10,
+   "of": "USD sweepers who patrolled the City",
+   "date": "c.1987-92",
+   "facts": [
+    "U122"
+   ]
+  },
+  "refuse_tons_per_day": {
+   "n": 2,
+   "of": "tons of refuse collected each day",
+   "date": "c.1987-92",
+   "facts": [
+    "U120"
+   ]
+  },
+  "kfa_lights": {
+   "n": 200,
+   "approx": true,
+   "of": "public lights paid by the Kai Fong Association, lit 24 h ('more than 200')",
+   "date": "c.1987-92",
+   "facts": [
+    "U106"
+   ]
+  },
+  "clp_supply_points_before_1977": {
+   "n": 3,
+   "of": "CLP supply points on Tung Tau Tsuen Road and 'United Road' before 1977",
+   "date": "1950s-1977",
+   "facts": [
+    "U81"
+   ]
+  },
+  "households_with_power_before_plan_pct": {
+   "n": 20,
+   "of": "per cent of households with some supply before the CLP master plan",
+   "date": "c.1977",
+   "facts": [
+    "U85"
+   ]
+  },
+  "clp_transformer_rooms": {
+   "n": 1,
+   "of": "transformer room of about 250 sq ft (about 23 m2) in church premises",
+   "date": "c.1977-85",
+   "facts": [
+    "U90",
+    "U91"
+   ]
+  },
+  "clp_high_density_cables": {
+   "n": 2,
+   "of": "high-density cables brought in",
+   "date": "c.1977-85",
+   "facts": [
+    "U91"
+   ]
+  },
+  "clp_substations": {
+   "n": 2,
+   "approx": true,
+   "of": "substations on fire-cleared sites ('a couple'), built 1984-87",
+   "date": "1984-87",
+   "facts": [
+    "U92",
+    "U93"
+   ]
+  },
+  "meter_readings_per_reader_day": {
+   "n": 400,
+   "of": "meters read by one reader in one day. A smear in the scan hides the last two digits of the upper number; 500 fits.",
+   "date": "c.1987-92",
+   "facts": [
+    "U97"
+   ],
+   "range": [
+    400,
+    500
+   ]
+  },
+  "clp_customers_and_meters": {
+   "n": null,
+   "estimate": 8000,
+   "basis": "inferred",
+   "of": "CLP meters (no source gives the number)",
+   "date": "Dec 1986",
+   "facts": [
+    "U94",
+    "U78",
+    "U114"
+   ],
+   "note": "Almost every flat had electricity (U94) and the KFA had a meter fitted in each unit (U114). Thus I estimate about one meter for each household, about 8000 (U78)."
+  },
+  "buildings_with_lifts": {
+   "n": 2,
+   "of": "buildings with lifts",
+   "date": "c.1987-92",
+   "facts": [
+    "U127",
+    "U210"
+   ]
+  },
+  "postmen": {
+   "n": 2,
+   "of": "postmen for the City, from 1982",
+   "date": "1982-91",
+   "facts": [
+    "U202"
+   ]
+  },
+  "sorting_slots": {
+   "n": 48,
+   "of": "slots of the sorting desk at Lung Kong Road Post Office (too few)",
+   "date": "1979-91",
+   "facts": [
+    "U201"
+   ]
+  },
+  "lp_gas_cylinders": {
+   "n": null,
+   "estimate": 8000,
+   "basis": "inferred",
+   "of": "LP gas cylinders: one for every family",
+   "date": "c.1987-92",
+   "facts": [
+    "U190",
+    "U78"
+   ]
+  },
+  "kfa_cleanups_per_year": {
+   "n": 1,
+   "of": "KFA communal clean-ups of roofs, alleys, pipes and cables each year",
+   "date": "c.1987-92",
+   "facts": [
+    "U123"
+   ]
+  },
+  "tin_hau_grill_clearings_per_year": {
+   "n": 1,
+   "of": "clearings of the Tin Hau Temple grill each year",
+   "date": "c.1987-92",
+   "facts": [
+    "U132"
+   ]
+  }
+ },
+ "places": [
+  {
+   "id": "P1",
+   "system": "water",
+   "kind": "standpipe",
+   "name": "Government standpipe, Tai Chang Street (大井街)",
+   "at": [
+    [
+     216,
+     0,
+     1
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A71",
+   "facts": [
+    "U1",
+    "U22",
+    "U23",
+    "U26",
+    "U27",
+    "U29"
+   ],
+   "note": "Unit from data/room_uses.json A71 (1992 map no. 30). The fixture stands at S.L.standpipe (cell 40640, x -48.5, z 53), on a lane cell against the wall of building 235 (0.7 m away).",
+   "xz": [
+    -48.5,
+    53
+   ],
+   "cell": 40640,
+   "wall_of": 235
+  },
+  {
+   "id": "P2",
+   "system": "water",
+   "kind": "hose",
+   "name": "Bundle of hoses from the standpipe to the food factories",
+   "at": [
+    [
+     216,
+     0,
+     1
+    ],
+    [
+     216,
+     0,
+     4
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A72",
+   "facts": [
+    "U24",
+    "U25",
+    "U26"
+   ],
+   "note": "Hoses rise up the wall at P1, then run overhead along this lane path (19 cells, scene frame) to the factory unit 216:0:4.",
+   "path_xz": [
+    [
+     -48.5,
+     53
+    ],
+    [
+     -50.5,
+     53
+    ],
+    [
+     -50.5,
+     43
+    ],
+    [
+     -46.5,
+     43
+    ],
+    [
+     -46.5,
+     45
+    ]
+   ]
+  },
+  {
+   "id": "P3",
+   "system": "water",
+   "kind": "house_tank",
+   "name": "Storage tanks in the food factories near the standpipe",
+   "at": [
+    [
+     216,
+     0,
+     4
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A72",
+   "facts": [
+    "U24"
+   ],
+   "note": "The caption says each factory hose fills a tank in the factory. Size not given."
+  },
+  {
+   "id": "P4",
+   "system": "water",
+   "kind": "notice",
+   "name": "USD notice 此井水不適宜飲用 (this well water is not fit to drink) at the standpipe",
+   "at": [
+    [
+     216,
+     0,
+     1
+    ]
+   ],
+   "basis": "likely",
+   "facts": [
+    "U27",
+    "U28"
+   ],
+   "note": "Painted on the wall of the standpipe yard, with the 興發 characters and the 和興傢俬公司 board (room_uses A73 at [186,0,0])."
+  },
+  {
+   "id": "P5",
+   "system": "water",
+   "kind": "well",
+   "name": "Natural ground well off Tai Chang Street (the last natural well)",
+   "at": [
+    [
+     233,
+     0,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A76",
+   "facts": [
+    "U49",
+    "U50",
+    "U53"
+   ],
+   "note": "room_uses A76 (1992 map no. 34). Put the well-head on lane cell 40651 (x -37.5, z 53), against the wall of building 233. Keep at least 0.8 m of the lane free. INFERRED: this well, the big well of U50 and U53 and the well of the USD notice (U27) can be one well. See D7.",
+   "xz": [
+    -37.5,
+    53
+   ],
+   "cell": 40651
+  },
+  {
+   "id": "P6",
+   "system": "water",
+   "kind": "well",
+   "name": "The big well beside 興發樓, No. 8 Tai Chang Street",
+   "at": [],
+   "building_candidates": [
+    90,
+    216,
+    233
+   ],
+   "near": "beside 興發樓, No. 8 Tai Chang Street; reached from Lung Chun Road (龍津道) through two buildings",
+   "basis": "guess",
+   "room_research_id": "Z16",
+   "facts": [
+    "U53",
+    "U28"
+   ],
+   "note": "The model's building 90 has the label 8 Tai Chang Street, but it is about 70 m from Lung Chun Road. The house numbers of Tai Chang Street run the wrong way in the model (room_research). The 興發 characters at the standpipe (U28) favour the standpipe corner (216/233)."
+  },
+  {
+   "id": "P7",
+   "system": "water",
+   "kind": "well",
+   "name": "Site of the covered big well (east side)",
+   "at": [],
+   "near": "east side of the City (folklore, p12); a building stands on it",
+   "basis": "guess",
+   "room_uses_id": "A57",
+   "facts": [
+    "U50",
+    "U52"
+   ],
+   "note": "No source gives the street or the building. Nothing to draw: it is under a building."
+  },
+  {
+   "id": "P8",
+   "system": "water",
+   "kind": "pipe_bundle",
+   "name": "The largest (stolen) water main, under the Lung Heung café (濃香冰室)",
+   "at": [
+    [
+     252,
+     0,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "grs:HKRS1255-3-385",
+   "facts": [
+    "U36"
+   ],
+   "note": "The café unit is verified in room_uses (66-86 Lung Chun Road), but the model building label is 128 Lung Chun Road. The main is under the floor: draw only pipes that come up from the floor, if at all."
+  },
+  {
+   "id": "P9",
+   "system": "water",
+   "kind": "water_office",
+   "name": "Offices where residents paid rent and water charges",
+   "at": [],
+   "near": "no address given",
+   "basis": "guess",
+   "room_uses_id": "C47",
+   "facts": [
+    "U37"
+   ],
+   "note": "Chu Yiu Shan names no office. His own firm (Hang Fai Property Co., G/F, 17 Tai Chang Street) was a property agent, not one of these offices."
+  },
+  {
+   "id": "P10",
+   "system": "water",
+   "kind": "pump",
+   "name": "Chan Shing's pump under a floor panel",
+   "at": [],
+   "near": "no address given; probably a G/F room (photo)",
+   "basis": "guess",
+   "room_uses_id": "A74",
+   "facts": [
+    "U44",
+    "U45"
+   ],
+   "note": "Unplaced. Use the photo (U45) for the look of all 67 pumps."
+  },
+  {
+   "id": "P11",
+   "system": "water",
+   "kind": "roof_tank",
+   "name": "Roof tank that fed Chung Yuk Yee's flat",
+   "at": [],
+   "building": 263,
+   "near": "roof of 76-82 Lung Chun Road (building 263, 14 storeys; her flat is 263:12:0)",
+   "basis": "guess",
+   "facts": [
+    "U56"
+   ],
+   "note": "The caption says that a rooftop tank fed her flat, but not which roof. Building 263 is in the roof-tank list (placement.roof_tanks)."
+  },
+  {
+   "id": "P12",
+   "system": "water",
+   "kind": "other",
+   "name": "Well-water meter of Jetly Chau's cake shop",
+   "at": [
+    [
+     11,
+     2,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A25",
+   "facts": [
+    "U54",
+    "U55"
+   ],
+   "note": "A water meter on the link from a well-water tank. Unit from room_uses A25."
+  },
+  {
+   "id": "P13",
+   "system": "water",
+   "kind": "standpipe",
+   "name": "The 7 Government standpipes outside the perimeter",
+   "at": [],
+   "near": "on the City edge at Tung Tau Tsuen Road (東頭村道) and Tung Tsing Road (東正道) (U4); taps 'at either end' of Tung Tau Tsuen Road in the 1960s (U5)",
+   "basis": "guess",
+   "facts": [
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+   ],
+   "note": "Positions are in placement.outside_standpipes. INFERRED: 3 are on the City side of the Tung Tau Tsuen Road footway (both ends and the middle). 4 are on the City side of the Tung Tsing Road carriageway. No source gives the exact points.",
+   "xz_list": [
+    [
+     -112,
+     -65.5
+    ],
+    [
+     -20,
+     -52.3
+    ],
+    [
+     52,
+     -66.5
+    ],
+    [
+     119.5,
+     -30
+    ],
+    [
+     118.9,
+     0
+    ],
+    [
+     118.5,
+     30
+    ],
+    [
+     118.2,
+     60
+    ]
+   ]
+  },
+  {
+   "id": "P14",
+   "system": "water",
+   "kind": "pipe_bundle",
+   "name": "Illegal mains taps outside the City (Sai Tau Tsuen, 西頭村; Mei Tung Estate, 美東邨)",
+   "at": [],
+   "near": "outside; Mei Tung is on the north side of Tung Tau Tsuen Road ('Mei Tung side' footway in data/surroundings.json)",
+   "basis": "guess",
+   "facts": [
+    "U34",
+    "U35",
+    "U59"
+   ],
+   "note": "Draw only if the surroundings show pipes; no source gives where the pipes crossed into the City."
+  },
+  {
+   "id": "P15",
+   "system": "power",
+   "kind": "transformer",
+   "name": "CLP transformer room in church premises (about 250 sq ft)",
+   "at": [
+    [
+     129,
+     0,
+     2
+    ]
+   ],
+   "basis": "guess",
+   "room_uses_id": "C41",
+   "facts": [
+    "U90",
+    "U91"
+   ],
+   "note": "room_uses C41 (a guess: the church that had a school)."
+  },
+  {
+   "id": "P16",
+   "system": "power",
+   "kind": "substation",
+   "name": "CLP substations on sites cleared by fires ('a couple', 1984-87)",
+   "at": [],
+   "near": "on ground cleared by fires; no source gives where",
+   "basis": "guess",
+   "room_uses_id": "C42",
+   "facts": [
+    "U92",
+    "U93"
+   ],
+   "note": "Unplaced. They were new in Dec 1986 (built 1984-87)."
+  },
+  {
+   "id": "P17",
+   "system": "power",
+   "kind": "meter_board",
+   "name": "CLP meter of 林羅平's fishball shop (德興魚蛋), Kwong Ming Street (光明街)",
+   "at": [
+    [
+     66,
+     0,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "Z3",
+   "facts": [
+    "U115"
+   ],
+   "note": "A single meter of its own, because the shop was near the outer street."
+  },
+  {
+   "id": "P18",
+   "system": "other",
+   "kind": "office",
+   "name": "Kowloon Walled City Kai Fong Association (九龍城寨街坊福利會) office, 16 Tung Tau Tsuen Road",
+   "at": [
+    [
+     8,
+     3,
+     2
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "B10",
+   "facts": [
+    "U106",
+    "U123",
+    "U129",
+    "U173",
+    "U174",
+    "U190"
+   ],
+   "note": "The KFA paid for the lights, ran the yearly clean-ups and put up the garbage and fire notices. No source says where it kept its fire-fighting equipment.",
+   "nameZh": "九龍城寨街坊福利會"
+  },
+  {
+   "id": "P19",
+   "system": "refuse",
+   "kind": "refuse_grill",
+   "name": "Metal grill over the Tin Hau Temple (天后廟)",
+   "at": [
+    [
+     54,
+     0,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "B27",
+   "facts": [
+    "U131",
+    "U132",
+    "U133"
+   ],
+   "note": "The grill spans the light well above the temple at about 2/F of the buildings round it. Put it on the ring of building 54 at y 24.1. This is the median 2/F level of the 6 buildings within 18 m. The temple roof is at y 21.3.",
+   "grill_y": 24.1
+  },
+  {
+   "id": "P20",
+   "system": "refuse",
+   "kind": "refuse_gap",
+   "name": "Gap used as a rubbish dump (Suzuki survey)",
+   "at": [
+    [
+     13,
+     0,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "M93",
+   "facts": [
+    "U135",
+    "U134"
+   ],
+   "note": "Survey of Jan 1993, after the period. Use it as an example of the rule for gaps."
+  },
+  {
+   "id": "P21",
+   "system": "refuse",
+   "kind": "refuse_point",
+   "name": "Tung Tsing Road Refuse Collection Point (outside)",
+   "at": [],
+   "context_id": "csdi:3780521398T20050430",
+   "plan_xz": [
+    117,
+    132
+   ],
+   "near": "beside Tung Tsing Road (東正道), about 60 m south-east of the City's south-east corner",
+   "basis": "guess",
+   "facts": [
+    "U142",
+    "U128",
+    "U141"
+   ],
+   "note": "The building exists by Nov 1984 (verified). INFERRED: it is the refuse collection station of the KFA (U128). It is the nearest one in data/context.json. data/context.json gives only 東正道 as its Chinese name. Thus I give no nameZh."
+  },
+  {
+   "id": "P22",
+   "system": "drain",
+   "kind": "toilet",
+   "name": "Tung Tsing Road Public Toilet (東正道公廁) (outside)",
+   "nameZh": "東正道公廁",
+   "at": [],
+   "context_id": "csdi:3780021402T20050430",
+   "plan_xz": [
+    116,
+    126
+   ],
+   "near": "beside the refuse collection point of P21",
+   "basis": "guess",
+   "facts": [
+    "U168",
+    "U152"
+   ],
+   "note": "Exists by Nov 1984 (verified). No source says City residents used it in 1986 (inferred)."
+  },
+  {
+   "id": "P23",
+   "system": "drain",
+   "kind": "toilet",
+   "name": "Toilets and 'P.H.' opposite 12 Lo Yan Back Street",
+   "at": [
+    [
+     125,
+     0,
+     1
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "G57",
+   "facts": [
+    "U156"
+   ],
+   "note": "'P.H.' is not explained. A guess: a pump house (compare U154). Do not label it."
+  },
+  {
+   "id": "P24",
+   "system": "drain",
+   "kind": "toilet",
+   "name": "Toilet of the 4/F flat, Tai Hing Building, 6 Sai Shing Road (西城路)",
+   "at": [
+    [
+     138,
+     4,
+     0
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "M79",
+   "facts": [
+    "U157"
+   ],
+   "note": "An example of a toilet inside a flat."
+  },
+  {
+   "id": "P25",
+   "system": "drain",
+   "kind": "toilet",
+   "name": "Shared toilet, Suzuki gap building 1/F",
+   "at": [
+    [
+     52,
+     1,
+     0
+    ]
+   ],
+   "basis": "guess",
+   "room_uses_id": "M90",
+   "facts": [
+    "U169"
+   ],
+   "note": "Survey of Jan 1993. The top-floor shower room is room_uses M91 at [52,4,0] (guess)."
+  },
+  {
+   "id": "P26",
+   "system": "gas",
+   "kind": "fuel_shop",
+   "name": "順發士多, Lee Pui Yuen's (李培元) store, 12 Tai Chang Street",
+   "at": [
+    [
+     137,
+     0,
+     1
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "grs:HKRS1255-3-97",
+   "facts": [
+    "U191",
+    "U192",
+    "U125"
+   ],
+   "note": "Sold rice, fuel and cigarettes and delivered kerosene drums. The refuse collectors passed here at about 4 am. The p91 corner store (room_uses A63, 186:0:1) can be the same store; I did not check.",
+   "nameZh": "順發士多"
+  },
+  {
+   "id": "P27",
+   "system": "gas",
+   "kind": "fuel_shop",
+   "name": "Tak Sang LP Gas Hong (德生行), 9 Tung Tau Tsuen Road",
+   "nameZh": "德生行",
+   "at": [
+    [
+     2,
+     0,
+     3
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "grs:HKRS1255-3-562A",
+   "facts": [
+    "U193"
+   ],
+   "note": "LP gas dealer. Draw a few cylinders at the shop front (inferred)."
+  },
+  {
+   "id": "P28",
+   "system": "gas",
+   "kind": "lpg_cylinder",
+   "name": "LP gas cylinder in Yim Kwok Yuen's (嚴國源) cooked-meat workshop",
+   "at": [
+    [
+     169,
+     1,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "B41",
+   "facts": [
+    "U190",
+    "U219",
+    "U79"
+   ],
+   "note": "Photo p288 shows the cylinder by the stove (U219)."
+  },
+  {
+   "id": "P29",
+   "system": "other",
+   "kind": "trade_shop",
+   "name": "Lam Chai Water & Electrical Works (林仔水電裝修工程), 40 Lung Chun Road, 1/F",
+   "nameZh": "林仔水電裝修工程",
+   "at": [
+    [
+     261,
+     1,
+     0
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "grs:HKRS1255-3-331",
+   "facts": [],
+   "note": "Plumbing and electrical contractor (水電). GRS file; no utility fact beyond the trade."
+  },
+  {
+   "id": "P30",
+   "system": "other",
+   "kind": "trade_shop",
+   "name": "Hung Kwong Water Electric (鴻光水電工程), 30A Lung Shing Road",
+   "nameZh": "鴻光水電工程",
+   "at": [
+    [
+     98,
+     0,
+     1
+    ]
+   ],
+   "basis": "verified",
+   "room_uses_id": "grs:HKRS1255-3-479",
+   "facts": [],
+   "note": "Plumbing and electrical contractor (水電)."
+  },
+  {
+   "id": "P31",
+   "system": "other",
+   "kind": "trade_shop",
+   "name": "昌盛水電公司, 3 Tai Chang Street, G/F",
+   "nameZh": "昌盛水電公司",
+   "at": [
+    [
+     152,
+     0,
+     2
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "grs:HKRS1255-3-119",
+   "facts": [],
+   "note": "Plumbing and electrical contractor; the source gives only the Chinese name."
+  },
+  {
+   "id": "P32",
+   "system": "post",
+   "kind": "post_point",
+   "name": "Store on Lo Yan Street (老人街) where the postman's round began",
+   "at": [
+    [
+     45,
+     0,
+     2
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "A78",
+   "facts": [
+    "U203"
+   ],
+   "note": "The source does not name the store."
+  },
+  {
+   "id": "P33",
+   "system": "post",
+   "kind": "letterbox",
+   "name": "Postbox of the 5/F front flat, 94 Lung Chun Road",
+   "at": [
+    [
+     257,
+     5,
+     0
+    ]
+   ],
+   "basis": "likely",
+   "room_uses_id": "D4",
+   "facts": [
+    "U206"
+   ],
+   "note": "Label on a postbox in a photo; where the box hung is not given (inferred: at the stair entrance)."
+  },
+  {
+   "id": "P34",
+   "system": "post",
+   "kind": "post_point",
+   "name": "Lung Kong Road Post Office (outside), on Lung Kong Road (龍崗道)",
+   "at": [],
+   "context_id": "the 'Telephone Exchange And Post Office' (電話機房及郵政局, CSDI 3768021173T20050430, built 1959)",
+   "plan_xz": [
+    -94,
+    280
+   ],
+   "near": "about 210 m south-west of the City, by Lung Kong Road in data/context.json",
+   "basis": "likely",
+   "facts": [
+    "U200",
+    "U201"
+   ],
+   "note": "INFERRED: the context building with 'Post Office' beside Lung Kong Road is the post office of U200."
+  }
+ ],
+ "schedule": [
+  {
+   "system": "refuse",
+   "what": "USD refuse collectors take the refuse away, with noise, along Tai Chang Street",
+   "days": "every day",
+   "from": "04:00",
+   "to": "05:30",
+   "basis": "inferred",
+   "facts": [
+    "U125",
+    "U120"
+   ],
+   "note": "The start, about 4 am, is sourced. 'The nights' (plural) gives every day. The end time is inferred (old code src/people.js)."
+  },
+  {
+   "system": "refuse",
+   "what": "10 USD sweepers patrol the alleys and the refuse collection points",
+   "days": "Mon-Sat",
+   "from": "07:00",
+   "to": "15:00",
+   "basis": "inferred",
+   "facts": [
+    "U122",
+    "U138"
+   ],
+   "note": "No source gives the hours or days. The old code used these values."
+  },
+  {
+   "system": "refuse",
+   "what": "Some residents carry their garbage to the refuse collection station before work",
+   "days": "Mon-Sat",
+   "from": "06:30",
+   "to": "09:00",
+   "basis": "inferred",
+   "facts": [
+    "U128"
+   ],
+   "note": "The KFA request is sourced; the KFA says that few residents do it. The times are inferred from 'before they go to work'."
+  },
+  {
+   "system": "water",
+   "what": "Well owners' pumps run to fill the roof tanks (first run)",
+   "days": "every day",
+   "from": "12:00",
+   "to": "13:00",
+   "basis": "inferred",
+   "facts": [
+    "U16",
+    "U17",
+    "U45"
+   ],
+   "note": "'usually noon and midnight' is sourced (secondary). The run length is not given (inferred 1 h). Some owners switch on 'at various times'."
+  },
+  {
+   "system": "water",
+   "what": "Well owners' pumps run to fill the roof tanks (second run)",
+   "days": "every day",
+   "from": "00:00",
+   "to": "01:00",
+   "basis": "inferred",
+   "facts": [
+    "U16",
+    "U67"
+   ],
+   "note": "As above. People wake at night when they hear water and do the washing (U67)."
+  },
+  {
+   "system": "water",
+   "what": "Taps run from the roof tanks after each pump run; residents fill baths, buckets and plastic drums",
+   "days": "every day",
+   "from": "12:00",
+   "to": "15:00",
+   "basis": "inferred",
+   "facts": [
+    "U16",
+    "U17",
+    "U65"
+   ],
+   "note": "'a few hours' supply' is sourced; 3 h is inferred. A second period follows the midnight run (00:00-03:00)."
+  },
+  {
+   "system": "water",
+   "what": "Water by floors in one building: 2/F-3/F",
+   "days": "every day",
+   "from": "06:00",
+   "to": "07:00",
+   "basis": "sourced",
+   "facts": [
+    "U60"
+   ],
+   "note": "One example (林羅平, 1983 on). The source gives '6、7點' as an example, not a rule for all buildings."
+  },
+  {
+   "system": "water",
+   "what": "Water by floors in one building: 3/F-4/F",
+   "days": "every day",
+   "from": "08:00",
+   "to": "09:00",
+   "basis": "sourced",
+   "facts": [
+    "U60"
+   ],
+   "note": "As above. Rule: low floors get water first."
+  },
+  {
+   "system": "water",
+   "what": "Water reaches a 13/F top-floor flat",
+   "days": "every day",
+   "from": "15:00",
+   "to": "18:00",
+   "basis": "inferred",
+   "facts": [
+    "U62",
+    "U63"
+   ],
+   "note": "The start is sourced (袁家倫, year not given). The end is inferred. Top-floor residents can also dip water from the roof tank."
+  },
+  {
+   "system": "water",
+   "what": "Some blocks have water all day (several connections)",
+   "days": "every day",
+   "from": "00:00",
+   "to": "24:00",
+   "basis": "sourced",
+   "facts": [
+    "U41"
+   ],
+   "note": "Only a few blocks. Most blocks follow the pump runs."
+  },
+  {
+   "system": "water",
+   "what": "Residents and paid carriers fill containers at the Tai Chang Street standpipe; some wash clothes and bathe there",
+   "days": "every day",
+   "from": "06:00",
+   "to": "24:00",
+   "basis": "inferred",
+   "facts": [
+    "U22",
+    "U23",
+    "U29"
+   ],
+   "note": "'throughout the day' is sourced; a night photo (p106) shows use at night too. The busiest hours are not given."
+  },
+  {
+   "system": "water",
+   "what": "Water carrying: people carry drinking water from the standpipes up the stairs",
+   "days": "every day",
+   "from": "06:00",
+   "to": "22:00",
+   "basis": "inferred",
+   "facts": [
+    "U21",
+    "U30",
+    "U31",
+    "U7"
+   ],
+   "note": "'an everyday sight' is sourced. The hours are inferred."
+  },
+  {
+   "system": "water",
+   "what": "Food-factory workers connect their hose at the standpipe and fill the factory tank",
+   "days": "Mon-Sat",
+   "from": "06:00",
+   "to": "19:00",
+   "basis": "inferred",
+   "facts": [
+    "U24"
+   ],
+   "note": "'Every once in a while' is sourced. The hours are inferred from factory work."
+  },
+  {
+   "system": "water",
+   "what": "Water charges are collected (by the supplier, by collectors, or at offices)",
+   "days": "once a month",
+   "from": "10:00",
+   "to": "18:00",
+   "basis": "inferred",
+   "facts": [
+    "U19",
+    "U37",
+    "U44",
+    "U46"
+   ],
+   "note": "'monthly' is sourced. The day and hours are not given."
+  },
+  {
+   "system": "power",
+   "what": "KFA public lights are on",
+   "days": "every day",
+   "from": "00:00",
+   "to": "24:00",
+   "basis": "sourced",
+   "facts": [
+    "U106"
+   ],
+   "note": "More than 200 lights, on 24 hours a day."
+  },
+  {
+   "system": "power",
+   "what": "CLP meter readers go round the meter boards with torches",
+   "days": "Mon-Fri",
+   "from": "09:30",
+   "to": "16:30",
+   "basis": "inferred",
+   "facts": [
+    "U97",
+    "U112"
+   ],
+   "note": "400 to 5.. meters a day is sourced; bills are monthly. With about 8000 meters, readers can be in the City on most working days (inferred)."
+  },
+  {
+   "system": "power",
+   "what": "Power cuts (events, not a timetable)",
+   "days": "random",
+   "from": "",
+   "to": "",
+   "basis": "inferred",
+   "facts": [
+    "U105",
+    "U217"
+   ],
+   "note": "'often hit by power cuts' is sourced (U105, 1979-89). Yim Kwok Yuen's workshop never had a power failure (U217). No rate is given."
+  },
+  {
+   "system": "refuse",
+   "what": "KFA communal clean-up of roofs, alleys, pipes and cables; USD cleaning for Chinese New Year",
+   "days": "once a year",
+   "from": "",
+   "to": "",
+   "basis": "inferred",
+   "facts": [
+    "U123",
+    "U126"
+   ],
+   "note": "Chinese New Year 1987 was on 29 Jan 1987. Thus the clean-up is not in the week of 16-22 Dec 1986 (inferred)."
+  },
+  {
+   "system": "refuse",
+   "what": "Tin Hau Temple grill cleared",
+   "days": "once a year",
+   "from": "",
+   "to": "",
+   "basis": "inferred",
+   "facts": [
+    "U132"
+   ],
+   "note": "The date is not given; assume not in the week. The refuse lies on the grill."
+  },
+  {
+   "system": "post",
+   "what": "Postman's round from the store on Lo Yan Street, up stairwells and across roofs",
+   "days": "Mon-Sat",
+   "from": "08:20",
+   "to": "14:00",
+   "basis": "inferred",
+   "facts": [
+    "U203",
+    "U204",
+    "U202"
+   ],
+   "note": "The daily round is sourced. The hours are inferred (old code: Sat until 11:00, no round on Sunday)."
+  },
+  {
+   "system": "gas",
+   "what": "Lee Pui Yuen's store open; he delivers rice and kerosene up the stairs",
+   "days": "every day",
+   "from": "08:00",
+   "to": "24:00",
+   "basis": "sourced",
+   "facts": [
+    "U191",
+    "U192"
+   ],
+   "note": "Opening hours sourced; busiest 17:00-21:00 (sourced). The delivery times are inferred."
+  },
+  {
+   "system": "drain",
+   "what": "Chamber pots emptied (in flats without a toilet)",
+   "days": "every day",
+   "from": "07:00",
+   "to": "07:30",
+   "basis": "inferred",
+   "facts": [
+    "U158"
+   ],
+   "note": "'twice a day' is sourced (year not given); the second time is about 19:00 (inferred)."
+  },
+  {
+   "system": "fire",
+   "what": "No KFA night fire patrol in 1986",
+   "days": "none",
+   "from": "",
+   "to": "",
+   "basis": "sourced",
+   "facts": [
+    "U172"
+   ],
+   "note": "The 11 pm-to-dawn patrol stopped in the 1970s."
+  },
+  {
+   "system": "water",
+   "what": "Water Supplies Department staff come in and cut illegal pipes (events)",
+   "days": "random",
+   "from": "",
+   "to": "",
+   "basis": "inferred",
+   "facts": [
+    "U59"
+   ],
+   "note": "'from time to time' is sourced; no rate is given."
+  }
+ ],
+ "visuals": [
+  {
+   "kind": "standpipe",
+   "what": "Galvanised steel pipe frame about 1 m long at 0.9 m height, with 3-4 brass taps. A riser has one more tap at about 1.4 m. Beside it: a rounded concrete cylinder about 0.6 m wide and 1 m high, with one more tap. Tiled floor about 1 x 1 m with a low kerb (0.15 m).",
+   "size": [
+    1.6,
+    1.0,
+    1.4
+   ],
+   "where": "placement.standpipe_inside: x -48.5, z 53, against building 235",
+   "share": "1 inside the City",
+   "basis": "sourced",
+   "facts": [
+    "U26"
+   ]
+  },
+  {
+   "kind": "standpipe",
+   "what": "Short concrete post with a galvanised pipe and 2 brass taps (outside standpipes; no photo, thus a simple version of the inside one)",
+   "size": [
+    0.6,
+    0.4,
+    1.0
+   ],
+   "where": "placement.outside_standpipes.list",
+   "share": "7",
+   "basis": "inferred",
+   "facts": [
+    "U2",
+    "U4",
+    "U5"
+   ]
+  },
+  {
+   "kind": "hose",
+   "what": "Bundle of 40-60 rubber and plastic hoses, 1-3 cm thick. The hoses rise from the floor up the wall at the standpipe. Then they fan out overhead along the alley at 2.5-4 m.",
+   "size": [
+    0.4,
+    0.3,
+    4.0
+   ],
+   "where": "placement.hose_path",
+   "share": "1 bundle",
+   "basis": "sourced",
+   "facts": [
+    "U25",
+    "U26"
+   ]
+  },
+  {
+   "kind": "notice",
+   "what": "Large painted characters on the yard wall, 此井水不適宜飲用 and 市政總署; also the painted 興發 and a signboard 和興傢俬公司",
+   "size": [
+    1.5,
+    0.02,
+    0.4
+   ],
+   "where": "P4, on the wall above the standpipe",
+   "share": "1",
+   "basis": "sourced",
+   "facts": [
+    "U27",
+    "U28"
+   ]
+  },
+  {
+   "kind": "well",
+   "what": "Round concrete well-head with plastic buckets beside it",
+   "size": [
+    1.0,
+    1.0,
+    0.5
+   ],
+   "where": "P5",
+   "share": "1 visible well-head",
+   "basis": "sourced",
+   "facts": [
+    "U49"
+   ]
+  },
+  {
+   "kind": "pump",
+   "what": "Floor hatch of a steel frame and panel; under it a pipe with a valve with a hand wheel and an elbow",
+   "size": [
+    0.8,
+    0.6,
+    0.05
+   ],
+   "where": "placement.pumps.list: the largest G/F unit of each tank building",
+   "share": "67 (one per working well)",
+   "basis": "inferred",
+   "facts": [
+    "U45",
+    "U11"
+   ]
+  },
+  {
+   "kind": "roof_tank",
+   "what": "Box tank of concrete or steel on the roof slab, with pipes down the stair shaft. No source gives the material. Photo p324 shows a concrete box of this size on a roof (use not stated).",
+   "size": [
+    2.5,
+    2.5,
+    2.0
+   ],
+   "where": "placement.roof_tanks.list: one tank on each of 67 roofs",
+   "share": "about 67 (one per working well) plus some drinking-water tanks (U40)",
+   "basis": "inferred",
+   "facts": [
+    "U15",
+    "U40",
+    "U56",
+    "U11"
+   ]
+  },
+  {
+   "kind": "pipe_bundle",
+   "what": "Overhead layer of 20-40 pipes and cables on wall brackets and bars, sagging and wet. It has galvanised steel pipes (2.5-5 cm), plastic pipes, rubber hoses, electric cables and flex.",
+   "size": [
+    1.5,
+    0.4,
+    0.5
+   ],
+   "where": "Along every covered alley and lane, at 2.5-4 m (lower in narrow alleys); denser on main alleys",
+   "share": "all alleys",
+   "basis": "sourced",
+   "facts": [
+    "U86",
+    "U74",
+    "U76",
+    "U110",
+    "U143"
+   ]
+  },
+  {
+   "kind": "pipe_bundle",
+   "what": "Vertical pipes and cables down the facades and stairwells from the roof tanks, fixed to the walls",
+   "size": [
+    0.3,
+    0.2,
+    10.0
+   ],
+   "where": "Facades and stair shafts of buildings with a roof tank",
+   "share": "most buildings",
+   "basis": "inferred",
+   "facts": [
+    "U15",
+    "U96"
+   ]
+  },
+  {
+   "kind": "meter_board",
+   "what": "Wooden board with two rows of small electricity meters (each about 0.12 x 0.18 m, about 40 in a row). Fuse boxes are at one end. Cable bundles come from the ceiling, and loose flex hangs below.",
+   "size": [
+    6.0,
+    0.15,
+    0.6
+   ],
+   "where": "placement.meter_boards: on named lanes, for buildings with 40 or more units",
+   "share": "a few, on main alleys",
+   "basis": "sourced",
+   "facts": [
+    "U98",
+    "U96"
+   ]
+  },
+  {
+   "kind": "meter_board",
+   "what": "Wooden board with about 20 meters in 3 rows, a switch box and fuse boxes; flex tacked up the stairwell",
+   "size": [
+    1.2,
+    0.15,
+    1.0
+   ],
+   "where": "placement.meter_boards: beside each G/F stair door",
+   "share": "one per stair entrance",
+   "basis": "inferred",
+   "facts": [
+    "U98",
+    "U96",
+    "U114"
+   ]
+  },
+  {
+   "kind": "power_cable",
+   "what": "Flex and cables tacked to the walls from the meter boards up to the flats. Thick cables in metal conduit. Cables strung between roofs at 2-4 m.",
+   "size": [
+    0.05,
+    0.05,
+    3.0
+   ],
+   "where": "Stairwells, facades, roof edges",
+   "share": "all buildings",
+   "basis": "sourced",
+   "facts": [
+    "U96",
+    "U110",
+    "U76"
+   ]
+  },
+  {
+   "kind": "transformer",
+   "what": "Closed G/F room of about 23 m2 with a steel door (no photo)",
+   "size": [
+    5.0,
+    4.6,
+    3.0
+   ],
+   "where": "P15",
+   "share": "1",
+   "basis": "inferred",
+   "facts": [
+    "U90"
+   ]
+  },
+  {
+   "kind": "substation",
+   "what": "Small one-storey closed building with a steel door (no photo)",
+   "size": [
+    5.0,
+    4.0,
+    3.5
+   ],
+   "where": "P16 (unplaced; on cleared ground)",
+   "share": "2",
+   "basis": "inferred",
+   "facts": [
+    "U92",
+    "U93"
+   ]
+  },
+  {
+   "kind": "lamp",
+   "what": "Fluorescent tube about 1.2 m on a wall bracket or ceiling; in some places a bare tungsten bulb",
+   "size": [
+    1.2,
+    0.1,
+    0.1
+   ],
+   "where": "placement.lamps",
+   "share": "more than 200 public lights, on 24 h; plus landing lights",
+   "basis": "sourced",
+   "facts": [
+    "U106",
+    "U107",
+    "U108",
+    "U109",
+    "U111"
+   ]
+  },
+  {
+   "kind": "refuse_bucket",
+   "what": "Large round plastic refuse bucket of the USD (orange in the photos), stacked 5-8 high or standing alone",
+   "size": [
+    0.6,
+    0.6,
+    0.65
+   ],
+   "where": "By stairs and at the refuse collection points",
+   "share": "'commonplace'; about 5-10 at each point (inferred)",
+   "basis": "sourced",
+   "facts": [
+    "U122",
+    "U124"
+   ]
+  },
+  {
+   "kind": "refuse_point",
+   "what": "Recess in a covered alley wall with a low wooden bin, heaped with tied plastic bags. A broom and a bamboo pole lean on the wall. Boards lie on the wet floor.",
+   "size": [
+    2.0,
+    1.2,
+    0.6
+   ],
+   "where": "placement.refuse_points.list",
+   "share": "23 (inferred positions; the source says 'numerous')",
+   "basis": "inferred",
+   "facts": [
+    "U122",
+    "U124"
+   ]
+  },
+  {
+   "kind": "refuse_grill",
+   "what": "Steel mesh (about 5 cm squares on flat bars) across a light well, with refuse 0.3-0.5 m deep: plastic bags, paper, boards, a basin",
+   "size": [
+    7.0,
+    7.0,
+    0.4
+   ],
+   "where": "P19, over the Tin Hau Temple at about 2/F level",
+   "share": "1",
+   "basis": "sourced",
+   "facts": [
+    "U131",
+    "U132"
+   ]
+  },
+  {
+   "kind": "refuse_on_roof",
+   "what": "Heaps of boards, plastic sheet, cloth, broken furniture and fittings",
+   "size": [
+    2.0,
+    2.0,
+    0.4
+   ],
+   "where": "Roofs, beside parapets and roof huts",
+   "share": "many roofs",
+   "basis": "sourced",
+   "facts": [
+    "U136"
+   ]
+  },
+  {
+   "kind": "refuse_gap",
+   "what": "Plastic bags and mixed rubbish at the bottom of narrow gaps between buildings",
+   "size": [
+    0.6,
+    3.0,
+    0.5
+   ],
+   "where": "Gaps between buildings (P20 is one)",
+   "share": "most gaps",
+   "basis": "sourced",
+   "facts": [
+    "U134",
+    "U135"
+   ]
+  },
+  {
+   "kind": "drip_sheet",
+   "what": "Plastic or metal sheet fixed at a slant over an alley, under the dripping pipes",
+   "size": [
+    1.0,
+    2.0,
+    0.02
+   ],
+   "where": "Main alleys, at 2.2-3 m",
+   "share": "some, on main alleys",
+   "basis": "sourced",
+   "facts": [
+    "U162"
+   ]
+  },
+  {
+   "kind": "drain",
+   "what": "Vertical drain pipe about 0.1 m thick down an alley wall; wet floors with boards laid on them",
+   "size": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "where": "Alley walls",
+   "share": "common",
+   "basis": "sourced",
+   "facts": [
+    "U150",
+    "U143"
+   ]
+  },
+  {
+   "kind": "letterbox",
+   "what": "8-20 small wooden letterboxes (about 0.25-0.3 m each) on a wall",
+   "size": [
+    1.5,
+    0.25,
+    1.2
+   ],
+   "where": "placement.letterboxes",
+   "share": "one per larger building (inferred)",
+   "basis": "sourced",
+   "facts": [
+    "U203",
+    "U205"
+   ]
+  },
+  {
+   "kind": "letterbox",
+   "what": "Single painted metal letterbox on a wall",
+   "size": [
+    0.25,
+    0.1,
+    0.4
+   ],
+   "where": "Alley walls and stairs, at about 1.8 m",
+   "share": "many",
+   "basis": "sourced",
+   "facts": [
+    "U205",
+    "U206"
+   ]
+  },
+  {
+   "kind": "lpg_cylinder",
+   "what": "Steel LP gas cylinder",
+   "size": [
+    0.3,
+    0.3,
+    0.6
+   ],
+   "where": "Kitchens of flats and workshops; a few at the LP gas shop front (P27)",
+   "share": "one for every family",
+   "basis": "sourced",
+   "facts": [
+    "U190",
+    "U193",
+    "U219"
+   ]
+  },
+  {
+   "kind": "water_container",
+   "what": "Plastic jerry cans (about 20 l), plastic buckets (15-20 l), bottles (4-5 l) and large plastic drums (about 0.6 m wide, 0.9 m high)",
+   "size": [
+    0.3,
+    0.2,
+    0.4
+   ],
+   "where": "Carried by people between the standpipe and the stairs; in flats and kitchens; drums by stair entrances",
+   "share": "many",
+   "basis": "sourced",
+   "facts": [
+    "U22",
+    "U30",
+    "U65"
+   ]
+  },
+  {
+   "kind": "notice",
+   "what": "USD rat-bait warning board in English and Chinese",
+   "size": [
+    0.6,
+    0.02,
+    0.4
+   ],
+   "where": "Alley walls",
+   "share": "a few",
+   "basis": "sourced",
+   "facts": [
+    "U137"
+   ]
+  },
+  {
+   "kind": "tv_aerial",
+   "what": "TV aerial masts of bamboo or steel pole, 3-6 m, with guy wires",
+   "size": [
+    0.1,
+    0.1,
+    4.5
+   ],
+   "where": "Roofs",
+   "share": "many on each roof",
+   "basis": "sourced",
+   "facts": [
+    "U211",
+    "U74"
+   ]
+  },
+  {
+   "kind": "fire_point",
+   "what": "Hand trolley with sand and buckets of water (no photo)",
+   "size": [
+    1.0,
+    0.6,
+    0.9
+   ],
+   "where": "Not given",
+   "share": "not given",
+   "basis": "inferred",
+   "facts": [
+    "U176",
+    "U173"
+   ]
+  }
+ ],
+ "people": [
+  {
+   "who": "Lee Pui Yuen (李培元)",
+   "role": "store owner at 12 Tai Chang Street; sells and delivers kerosene; hears the refuse collectors at 4 am",
+   "people_id": "lee-pui-yuen",
+   "facts": [
+    "U125",
+    "U191",
+    "U192"
+   ],
+   "note": "Kerosene and rice deliveries up 10+ storeys."
+  },
+  {
+   "who": "Chan Shing",
+   "role": "private water supplier; collects the monthly charges himself; switches on his pump to fill a roof tank",
+   "people_id": "chan-shing",
+   "facts": [
+    "U44",
+    "U45"
+   ],
+   "note": "No address."
+  },
+  {
+   "who": "Chu Yiu Shan (朱耀山)",
+   "role": "source of the water facts on p113 (offices for water charges, the stolen main, roof tanks, well compensation)",
+   "people_id": "chu-yiu-shan",
+   "facts": [
+    "U36",
+    "U37",
+    "U38",
+    "U39",
+    "U40",
+    "U41",
+    "U43"
+   ],
+   "note": "His trade is open: see disagreements D6. The people agent decides."
+  },
+  {
+   "who": "Mok Chung Yuk",
+   "role": "China Light and Power engineer for the City supply (late 1970s and early 1980s)",
+   "people_id": "",
+   "facts": [
+    "U80",
+    "U81",
+    "U85",
+    "U87",
+    "U90",
+    "U92",
+    "U93",
+    "U94"
+   ],
+   "note": "NOT in people.json: add him. He 'declined to be photographed'. In the City for work only; whether he came in Dec 1986 is not known."
+  },
+  {
+   "who": "Lui Man Sang and Lam Po Chun (林寶鎮)",
+   "role": "the two postmen of the City from 1982",
+   "people_id": "lui-man-sang; lam-po-chun",
+   "facts": [
+    "U200",
+    "U201",
+    "U202",
+    "U203",
+    "U204",
+    "U160",
+    "U161"
+   ],
+   "note": "Hats against dripping; torches in power cuts."
+  },
+  {
+   "who": "Chan Hip Ping (陳協平)",
+   "role": "Kai Fong Association vice-president: lights, clean-ups, garbage and fire notices, LPG campaign",
+   "people_id": "chan-hip-ping",
+   "facts": [
+    "U106",
+    "U126",
+    "U128",
+    "U190"
+   ],
+   "note": ""
+  },
+  {
+   "who": "Yip Tak-wai (葉德偉)",
+   "role": "KFA; says the standpipes were on the edge only",
+   "people_id": "yip-tak-wai",
+   "facts": [
+    "U4"
+   ],
+   "note": "Reporter's narration."
+  },
+  {
+   "who": "Chung Yuk Yee",
+   "role": "resident; bathes her children in roof-tank water",
+   "people_id": "chung-yuk-yee",
+   "facts": [
+    "U56",
+    "U57",
+    "U175"
+   ],
+   "note": "Flat 263:12:0."
+  },
+  {
+   "who": "Jetly Chau Sau Yee (周秀儀)",
+   "role": "cake shop; well-water meter, $100 a month",
+   "people_id": "chau-sau-yee",
+   "facts": [
+    "U54",
+    "U55",
+    "U101"
+   ],
+   "note": ""
+  },
+  {
+   "who": "林羅平 (平哥)",
+   "role": "fishball wholesaler; water slots by floor; own CLP meter",
+   "people_id": "fishball-wholesaler-hk01",
+   "facts": [
+    "U58",
+    "U59",
+    "U60",
+    "U61",
+    "U115",
+    "U116"
+   ],
+   "note": "From 1983."
+  },
+  {
+   "who": "Wong Wai Chung's wife; Heung Yin-king; Lau Chun-fat",
+   "role": "carry drinking water from public taps up the stairs every day",
+   "people_id": "wong-wai-chung-wife; heung-yin-king; lau-chun-fat",
+   "facts": [
+    "U31",
+    "U32",
+    "U33"
+   ],
+   "note": "Years differ; see people.json."
+  },
+  {
+   "who": "Albert Ng Kam-po (吳錦波)",
+   "role": "resident (7/F, 8 Sz Kung Street); fetches water at the public water stations every day",
+   "people_id": "albert-ng-kam-po",
+   "facts": [
+    "U6",
+    "U7",
+    "U64",
+    "U112",
+    "U140"
+   ],
+   "note": ""
+  },
+  {
+   "who": "Chan So-hing (陳素卿)",
+   "role": "her mother gutted fish at the street pump",
+   "people_id": "chan-so-hing",
+   "facts": [
+    "U70"
+   ],
+   "note": ""
+  },
+  {
+   "who": "袁家倫",
+   "role": "13/F top-floor tenant: water from 3 pm, roof tank, shared kitchen with kerosene stoves, shared toilet",
+   "people_id": "",
+   "facts": [
+    "U62",
+    "U63",
+    "U159",
+    "U194",
+    "U212"
+   ],
+   "note": "NOT in people.json: add her (room_uses Z7; years not given; she left Hong Kong in 1992)."
+  },
+  {
+   "who": "Tam Sau-kuen (譚秀娟)",
+   "role": "housewife; wakes at night when the water drips to do the washing",
+   "people_id": "",
+   "facts": [
+    "U67"
+   ],
+   "note": "NOT in people.json: add her (WSJ 2014)."
+  },
+  {
+   "who": "USD refuse collectors",
+   "role": "collect the refuse from about 4 am",
+   "people_id": "",
+   "facts": [
+    "U120",
+    "U125"
+   ],
+   "note": "Count not given. The old code used 3 (inferred)."
+  },
+  {
+   "who": "USD sweepers",
+   "role": "10 sweepers patrol the City",
+   "people_id": "",
+   "facts": [
+    "U122",
+    "U138"
+   ],
+   "note": "Hours not given."
+  },
+  {
+   "who": "CLP meter readers",
+   "role": "read 400 to 5.. meters a day with torches and dog repellent",
+   "people_id": "",
+   "facts": [
+    "U97"
+   ],
+   "note": "Count not given. The old code used 2 (inferred)."
+  },
+  {
+   "who": "Water-supply controllers",
+   "role": "about 20 people open and close the supply for the well owners",
+   "people_id": "",
+   "facts": [
+    "U17",
+    "U38"
+   ],
+   "note": ""
+  },
+  {
+   "who": "Water carriers",
+   "role": "a 'small workforce' of paid carriers from the standpipes",
+   "people_id": "",
+   "facts": [
+    "U21",
+    "U22"
+   ],
+   "note": "Plus residents who carry their own water."
+  },
+  {
+   "who": "Food-factory workers",
+   "role": "connect the factory hose at the standpipe from time to time",
+   "people_id": "",
+   "facts": [
+    "U24"
+   ],
+   "note": ""
+  }
+ ],
+ "disagreements": [
+  {
+   "id": "D1",
+   "about": "Number of water suppliers",
+   "items": [
+    "some 40 suppliers of 67 wells (p107, U11)",
+    "'70 or so private water suppliers' (p112, U44)",
+    "'about 70 or so wells' (Gordon Jones, U68)"
+   ],
+   "choice": "counts use 67 wells and about 40 suppliers (the Government survey)."
+  },
+  {
+   "id": "D2",
+   "about": "Number of standpipes",
+   "items": [
+    "8: 1 inside and 7 outside (U1, U2, U3)",
+    "'about seven' (Albert Ng, U6)",
+    "5 in 1964 (U182)"
+   ],
+   "choice": "8."
+  },
+  {
+   "id": "D3",
+   "about": "When the water comes",
+   "items": [
+    "pumps usually at noon and midnight, a few hours of supply (U16)",
+    "2/F-3/F 6-7 am, 3/F-4/F 8-9 am (U60)",
+    "13/F from 3 pm (U62)",
+    "a few afternoon hours (U65, 1950s-70s)",
+    "half an hour a week (U64)",
+    "24 hours in some blocks (U41)"
+   ],
+   "choice": "Each block has its own times. Use pump runs at noon and midnight as the default, with low floors first."
+  },
+  {
+   "id": "D4",
+   "about": "Water charges",
+   "items": [
+    "$50-70 per household a month (U19)",
+    "$100 for a shop, flat rate (U55)",
+    "$100 for a home, $300 for a workshop, not by meter (U61)",
+    "$50 (U69)"
+   ],
+   "choice": "Not needed for drawing."
+  },
+  {
+   "id": "D5",
+   "about": "Meters for water",
+   "items": [
+    "Jetly Chau installed a meter (U54)",
+    "林羅平: charges not by meter (U61)",
+    "陳先生: private contractors held the water meters (U69)"
+   ],
+   "choice": "Some links have a meter; most pay a flat fee."
+  },
+  {
+   "id": "D6",
+   "about": "Chu Yiu Shan",
+   "items": [
+    "the task brief and the table in primary-sources/city-of-darkness-revisited/SOURCE.md (row p112) call him a private water supplier",
+    "p113 standfirst (U220): 'He operated as a property developer and estate agent for many years'",
+    "the p112 caption names Chan Shing as 'One of the City's 70 or so private water suppliers' (U44)"
+   ],
+   "choice": "Not settled here. The people agent reads p112 and decides."
+  },
+  {
+   "id": "D7",
+   "about": "The big wells",
+   "items": [
+    "two big wells, one in use, the other built over (U50)",
+    "the filled-in well was on the east side (U52)",
+    "the big well is beside 興發樓, No. 8 Tai Chang Street (U53); room_research Z16 calls it sealed",
+    "the standpipe corner has a USD 'this well water' notice and the 興發 characters (U27, U28)",
+    "the last natural well is off Tai Chang Street (U49), 11 m from the standpipe in the model (x -37.5 and x -48.5, z 53)"
+   ],
+   "choice": "INFERRED: the well in use, the natural well and the 興發樓 well can be one well at the standpipe corner. The covered well is on the east side."
+  },
+  {
+   "id": "D8",
+   "about": "Power before 1977",
+   "items": [
+    "about 20% of households had some supply (U85)",
+    "each family connected itself (U117)",
+    "none in the 1950s-60s at the café on Tung Tau Tsuen Road (U104)"
+   ],
+   "choice": "Not needed for Dec 1986."
+  },
+  {
+   "id": "D9",
+   "about": "Drains in the 1980s",
+   "items": [
+    "mains sewer from the 1970s (U150)",
+    "'open sewers' in 1992 (U164)",
+    "'no drainage' (U165)"
+   ],
+   "choice": "Sewer under the main streets; wet alleys and open gutters in places."
+  },
+  {
+   "id": "D10",
+   "about": "Lifts and running water",
+   "items": [
+    "two buildings with lifts (U127, U210)",
+    "UPI: all without elevators and running water (U77)",
+    "Lam Po Chun: 'no lifts in the high-rise buildings' (U214), but 'two buildings with lifts' (U210)"
+   ],
+   "choice": "Two lifts; well water in most flats."
+  },
+  {
+   "id": "D11",
+   "about": "Meter readings per day",
+   "items": [
+    "400 to 5[..]: a smear in the scan hides the last two digits; '500' fits (U97)"
+   ],
+   "choice": "Use 400-500 meters a day for one reader."
+  },
+  {
+   "id": "D12",
+   "about": "Refuse collection station",
+   "items": [
+    "'the refuse collection station' (one, U128)",
+    "'numerous refuse collection points' (U122)"
+   ],
+   "choice": "Many points inside; one station outside (P21, inferred)."
+  },
+  {
+   "id": "D13",
+   "about": "Power cuts",
+   "items": [
+    "'often hit by power cuts' (Lam Po Chun, U105)",
+    "'We have never had a power failure' (Yim Kwok Yuen, U217)"
+   ],
+   "choice": "Power cuts are rare random events, and some blocks never have them."
+  },
+  {
+   "id": "D14",
+   "about": "Drinking water",
+   "items": [
+    "drinking water came from the standpipes (U21)",
+    "Yim Kwok Yuen drinks stolen mains water (U216)",
+    "drinking water was led to roof tanks and the main flats (U40)"
+   ],
+   "choice": "Some flats drink mains water from taps; most carry it from the standpipes."
+  }
+ ],
+ "leads": [
+  "GRS HKRS1078-1-50 'Supply of water to the Kowloon Walled City' (1987-92) and HKRS1078-1-58 'Compensation - well-operaters' (1987-89): the list of the 67 wells and their places.",
+  "GRS HKRS163-1-3016 'Electricity supply Kowloon Walled City' (1963-64).",
+  "GRS HKRS1375-1, USD hygiene files 1974-87: refuse points, latrines, sweepers' rounds.",
+  "GRS HKRS1496-1-29, RTHK 鏗鏘集 'City' (2 Dec 1979): '經常停水電, 污水, 垃圾問題'.",
+  "HKU newspaper clippings: I saw the titles only. A login is necessary, thus I did not use them. Titles: 'No water' (1976-11-25); 'Water gang: Police acting' (1980-09-19); 'Water racket: Police silent' (1980-09-20). Also: 'No dice on Walled City water plan' (1980-09-23); 'Walled City gets clean-up' (1983-08-20); 'Cleaning Walled City a tough job' (1984-04-15). Also: 'Fire fears as Walled City empties' (1988-06-28); '$12m pay-out to water suppliers' (1989-01-18); 'LIGHT SHINES ON THE DARK CITY' (1989-12-03).",
+  "FCO 40/2253 'Future of Hong Kong: Kowloon Walled City 1987' on hkintexts.histsyn.com: the pages gave 403.",
+  "WSJ 2014 'Look at a well' clip (Suenn Ho, 何巽, M+ CA17): the look of a well.",
+  "魯金《九龍城寨史話》(1988) pp111-113 and pp132-133: the big well and 興發樓 (only seen through a 2005 blog).",
+  "1968 survey map (pp126-127): latrines on Lung Chun Road and tanks near the nunnery (history before 1986).",
+  "Hansard 1974 c472: 'Pumphouses are being installed' - where? Compare the 'P.H.' of GRS HKRS1255-3-316A.",
+  "HK01 2016 series (39195, 39194, 39597): local copies are not saved (primary-sources/hk01-kaifong-series-2016/local is empty)."
+ ],
+ "notes": "Work restarted on 2026-11-06 and finished. Added fields in facts: type (kind of source). Added fields in places: room_uses_id, room_research_id, building, building_candidates, context_id and plan_xz. Also: xz, xz_list, cell, wall_of, path_xz and grill_y. Added fields in counts: approx, range, estimate and basis. New top-level parts: placement (rules and lists for the drawing code, in the scene frame) and finds (details for a curious viewer, each with facts). Proposed new kinds: notice, refuse_gap, drip_sheet, water_container, lpg_cylinder, fuel_shop, trade_shop, office, post_point, tv_aerial. The structure rule 'structural model only' kept TV masts out of the structure. tv_aerial is for a later art layer only, if John wants it. I found no source for town gas, for night-soil collection in 1986, or for fire hydrants in 1986. I found no source for the material and size of the roof tanks. No source gives the hours of the sweepers and the meter readers. The placement lists come from my scratchpad scripts over the frozen structure (S.list, S.L, S.doors). The scripts are not in the repo. OPEN: (1) Lu Jin (魯金) 1988 on the big well: in use or sealed? (2) GRS HKRS1078-1-50 and -58 can give the real places of the 67 wells. (3) Is Lee Pui Yuen's store the p91 corner store? (4) Chu Yiu Shan's trade (D6), for the people agent. (5) Local copies of the HK01 2016 series are not saved.",
+ "placement": {
+  "frame": "Scene frame of src/layout.js, in metres. It is the frame of S.list[b].cx/cz, S.graph.nodes, S.doors, data/context.json and data/surroundings.json. Lane grid: 1 m cells, W 274, x0 -137, z0 -95.5. For cell c, x = S.L.cellX(c) and z = S.L.cellZ(c). y is the height of the structure (b.top, b.y[k]).",
+  "roof_tanks": {
+   "rule": "Put one tank on each roof in the list: 67 tanks, one for each working well (U11, U15). A greedy spread over all 277 buildings gives the list. A candidate has 8 or more storeys and no roof room. Its tank point is at least 1.6 m from the roof edge and 2.8 m from the roof stair node. Every building centroid is at most 17.1 m from a tank (mean 8.5 m).",
+   "size": [
+    2.5,
+    2.5,
+    2.0
+   ],
+   "what": "Box tank of concrete or steel on the roof slab, base at y = top. No source gives the material. Photo p324 shows a concrete box of this size on a roof.",
+   "basis": "inferred",
+   "facts": [
+    "U11",
+    "U15",
+    "U40",
+    "U56"
+   ],
+   "list": [
+    {
+     "b": 0,
+     "x": 81.78,
+     "z": -67.5,
+     "y": 51.5,
+     "label": "2 Tung Tau Tsuen Road",
+     "feeds": [
+      1,
+      3,
+      272
+     ]
+    },
+    {
+     "b": 7,
+     "x": 97.39,
+     "z": -50.05,
+     "y": 48.68,
+     "label": "65-59, 67 Lung Shing Road",
+     "feeds": [
+      29,
+      46
+     ]
+    },
+    {
+     "b": 13,
+     "x": -104.12,
+     "z": -50.02,
+     "y": 50.88,
+     "label": "39 Sai Shing Road",
+     "feeds": [
+      5,
+      11,
+      42,
+      50,
+      52
+     ]
+    },
+    {
+     "b": 17,
+     "x": 66.23,
+     "z": -56.49,
+     "y": 56.96,
+     "label": "47 Kwong Ming Street",
+     "feeds": [
+      2,
+      6,
+      9,
+      27,
+      28
+     ]
+    },
+    {
+     "b": 18,
+     "x": -80.3,
+     "z": -56.97,
+     "y": 56.58,
+     "label": "36 Tung Tau Tsuen Road",
+     "feeds": [
+      10,
+      12,
+      14,
+      15
+     ]
+    },
+    {
+     "b": 24,
+     "x": -49.35,
+     "z": -49.97,
+     "y": 58.4,
+     "label": "31C, 31D, 31E Tung Tau Tsuen Road",
+     "feeds": [
+      20,
+      36,
+      40,
+      49,
+      55
+     ]
+    },
+    {
+     "b": 25,
+     "x": 37.08,
+     "z": -53.68,
+     "y": 55.4,
+     "label": "46 Lo Yan Street",
+     "feeds": [
+      4,
+      8
+     ]
+    },
+    {
+     "b": 31,
+     "x": 23.65,
+     "z": -50.98,
+     "y": 53.59,
+     "label": "6 Lo Yan Street",
+     "feeds": [
+      16,
+      19,
+      21,
+      35
+     ]
+    },
+    {
+     "b": 32,
+     "x": -8.75,
+     "z": -37.76,
+     "y": 57.49,
+     "label": "24 Tung Tau Tsuen Road",
+     "feeds": []
+    },
+    {
+     "b": 34,
+     "x": -24.04,
+     "z": -49.55,
+     "y": 58.25,
+     "label": "26 Tung Tau Tsuen Road",
+     "feeds": [
+      33,
+      43,
+      53
+     ]
+    },
+    {
+     "b": 37,
+     "x": 49.8,
+     "z": -48.1,
+     "y": 56.14,
+     "label": "3 Kwong Wah Street",
+     "feeds": [
+      22,
+      26,
+      54
+     ]
+    },
+    {
+     "b": 39,
+     "x": 33.58,
+     "z": -46.9,
+     "y": 55.31,
+     "label": "42, 46 Lo Yan Street",
+     "feeds": []
+    },
+    {
+     "b": 41,
+     "x": -13.99,
+     "z": -26.8,
+     "y": 58.36,
+     "label": "25, 27, 28 Tung Tau Tsuen Road",
+     "feeds": [
+      93
+     ]
+    },
+    {
+     "b": 48,
+     "x": 75.31,
+     "z": -41.65,
+     "y": 52.38,
+     "label": "42 Kwong Ming Street",
+     "feeds": [
+      23,
+      44,
+      47,
+      66
+     ]
+    },
+    {
+     "b": 51,
+     "x": 58.07,
+     "z": -37.27,
+     "y": 52.96,
+     "label": "37 Kwong Ming Street",
+     "feeds": []
+    },
+    {
+     "b": 56,
+     "x": 5.96,
+     "z": -32.6,
+     "y": 56,
+     "label": "Building 56",
+     "feeds": []
+    },
+    {
+     "b": 57,
+     "x": -0.24,
+     "z": -40.75,
+     "y": 53.4,
+     "label": "Building 57",
+     "feeds": [
+      30
+     ]
+    },
+    {
+     "b": 58,
+     "x": 16.23,
+     "z": -31.98,
+     "y": 52.44,
+     "label": "Building 58",
+     "feeds": [
+      82
+     ]
+    },
+    {
+     "b": 59,
+     "x": 24.75,
+     "z": -36.56,
+     "y": 51.6,
+     "label": "11 Lo Yan Street",
+     "feeds": [
+      45,
+      75,
+      78
+     ]
+    },
+    {
+     "b": 60,
+     "x": -86.37,
+     "z": -36.5,
+     "y": 58.43,
+     "label": "Building 60",
+     "feeds": [
+      38,
+      62,
+      63,
+      70,
+      71
+     ]
+    },
+    {
+     "b": 65,
+     "x": -22.97,
+     "z": -32.5,
+     "y": 58.9,
+     "label": "Building 65",
+     "feeds": [
+      67,
+      74
+     ]
+    },
+    {
+     "b": 68,
+     "x": 60.73,
+     "z": -30.11,
+     "y": 52.54,
+     "label": "35 Kwong Ming Street",
+     "feeds": [
+      79,
+      87,
+      89
+     ]
+    },
+    {
+     "b": 72,
+     "x": 46.69,
+     "z": -21.4,
+     "y": 46.93,
+     "label": "30, 32, 36 Lo Yan Street",
+     "feeds": []
+    },
+    {
+     "b": 76,
+     "x": 89.42,
+     "z": -28.42,
+     "y": 47.75,
+     "label": "40, 42 Lung Shing Road",
+     "feeds": [
+      64,
+      69,
+      77,
+      80,
+      88,
+      273
+     ]
+    },
+    {
+     "b": 85,
+     "x": -61.97,
+     "z": -17.97,
+     "y": 53.47,
+     "label": "Building 85",
+     "feeds": [
+      61,
+      73,
+      83,
+      97
+     ]
+    },
+    {
+     "b": 96,
+     "x": -37.22,
+     "z": -15.11,
+     "y": 57.39,
+     "label": "near 8 Tai Chang Street",
+     "feeds": [
+      86,
+      90,
+      92,
+      101
+     ]
+    },
+    {
+     "b": 98,
+     "x": 91.91,
+     "z": -9.55,
+     "y": 50.17,
+     "label": "28, 30 Kwong Ming Street and 34-30 Lung Shing Road",
+     "feeds": [
+      106
+     ]
+    },
+    {
+     "b": 99,
+     "x": -4.97,
+     "z": -4.41,
+     "y": 43.99,
+     "label": "Free School Building",
+     "feeds": [
+      94,
+      100,
+      114
+     ]
+    },
+    {
+     "b": 102,
+     "x": -102.87,
+     "z": -9.28,
+     "y": 42.08,
+     "label": "18 Sai Shing Road",
+     "feeds": [
+      81,
+      84,
+      91,
+      107,
+      113,
+      121
+     ]
+    },
+    {
+     "b": 103,
+     "x": 32.98,
+     "z": 5.26,
+     "y": 43.81,
+     "label": "Wing Fat Building, Lo Yan Street",
+     "feeds": [
+      125,
+      267,
+      269,
+      270,
+      271
+     ]
+    },
+    {
+     "b": 108,
+     "x": -31.7,
+     "z": -2.13,
+     "y": 50.5,
+     "label": "12 Tai Chang Street",
+     "feeds": []
+    },
+    {
+     "b": 109,
+     "x": 51.92,
+     "z": -4.71,
+     "y": 43.04,
+     "label": "28 Lo Yan Street",
+     "feeds": []
+    },
+    {
+     "b": 112,
+     "x": -18.27,
+     "z": -0.2,
+     "y": 50.38,
+     "label": "Building 113",
+     "feeds": [
+      127
+     ]
+    },
+    {
+     "b": 116,
+     "x": 59.76,
+     "z": 1.06,
+     "y": 49.9,
+     "label": "25 Kwong Ming Street",
+     "feeds": []
+    },
+    {
+     "b": 118,
+     "x": -72.48,
+     "z": 0.99,
+     "y": 51.91,
+     "label": "Building 118",
+     "feeds": [
+      95,
+      104,
+      105,
+      110,
+      119,
+      133,
+      142
+     ]
+    },
+    {
+     "b": 122,
+     "x": 75.09,
+     "z": 6.93,
+     "y": 50.62,
+     "label": "26 Kwong Ming Street",
+     "feeds": [
+      135,
+      141
+     ]
+    },
+    {
+     "b": 123,
+     "x": -53.32,
+     "z": 1.54,
+     "y": 50.94,
+     "label": "Building 123",
+     "feeds": [
+      111,
+      120,
+      137
+     ]
+    },
+    {
+     "b": 128,
+     "x": 58.42,
+     "z": 6.75,
+     "y": 47.16,
+     "label": "Building 128",
+     "feeds": [
+      126
+     ]
+    },
+    {
+     "b": 129,
+     "x": 96.2,
+     "z": 7.84,
+     "y": 51.17,
+     "label": "Building 129",
+     "feeds": [
+      115,
+      124,
+      130,
+      140,
+      145,
+      274
+     ]
+    },
+    {
+     "b": 132,
+     "x": -88.1,
+     "z": 12.32,
+     "y": 49.77,
+     "label": "Building 132",
+     "feeds": [
+      117,
+      131,
+      134,
+      136,
+      138,
+      151,
+      163
+     ]
+    },
+    {
+     "b": 139,
+     "x": 65.75,
+     "z": 14.2,
+     "y": 55.67,
+     "label": "Building 139",
+     "feeds": [
+      143
+     ]
+    },
+    {
+     "b": 144,
+     "x": 30.75,
+     "z": 20.04,
+     "y": 44.86,
+     "label": "32 Lo Yan Street",
+     "feeds": [
+      266,
+      268
+     ]
+    },
+    {
+     "b": 147,
+     "x": -26.38,
+     "z": 19.48,
+     "y": 49.33,
+     "label": "Building 146",
+     "feeds": [
+      149,
+      158
+     ]
+    },
+    {
+     "b": 153,
+     "x": -33.98,
+     "z": 22.59,
+     "y": 49.24,
+     "label": "Building 152",
+     "feeds": [
+      152,
+      174
+     ]
+    },
+    {
+     "b": 160,
+     "x": 43.09,
+     "z": 24.5,
+     "y": 50.92,
+     "label": "46A Lo Yan Street",
+     "feeds": [
+      146
+     ]
+    },
+    {
+     "b": 164,
+     "x": 99.02,
+     "z": 24.71,
+     "y": 47.74,
+     "label": "18, 20 Lung Shing Road",
+     "feeds": [
+      148,
+      150,
+      159,
+      168,
+      176,
+      275
+     ]
+    },
+    {
+     "b": 166,
+     "x": 51.09,
+     "z": 25.77,
+     "y": 49.93,
+     "label": "Building 165",
+     "feeds": [
+      184,
+      185
+     ]
+    },
+    {
+     "b": 167,
+     "x": -97.84,
+     "z": 27.28,
+     "y": 52.27,
+     "label": "13-14 Sai Shing Road",
+     "feeds": [
+      162,
+      187,
+      197
+     ]
+    },
+    {
+     "b": 170,
+     "x": 76.82,
+     "z": 28.16,
+     "y": 53.17,
+     "label": "3-1 Kwong Ming Street",
+     "feeds": [
+      157,
+      178,
+      188,
+      200
+     ]
+    },
+    {
+     "b": 173,
+     "x": -67.99,
+     "z": 32.77,
+     "y": 48.56,
+     "label": "8 Sz Kung Street",
+     "feeds": [
+      154,
+      155,
+      156,
+      161,
+      165,
+      171,
+      189,
+      207,
+      208
+     ]
+    },
+    {
+     "b": 180,
+     "x": -18.03,
+     "z": 30.19,
+     "y": 42.79,
+     "label": "Building 179",
+     "feeds": [
+      172,
+      175,
+      179
+     ]
+    },
+    {
+     "b": 181,
+     "x": 29.09,
+     "z": 30.55,
+     "y": 42.44,
+     "label": "13-19 Lo Yan Street",
+     "feeds": [
+      169,
+      195
+     ]
+    },
+    {
+     "b": 186,
+     "x": -43,
+     "z": 33.6,
+     "y": 47.17,
+     "label": "28 Tai Chang Street",
+     "feeds": [
+      182,
+      192,
+      201,
+      216
+     ]
+    },
+    {
+     "b": 191,
+     "x": 110.73,
+     "z": 35.85,
+     "y": 43.02,
+     "label": "Building 190",
+     "feeds": [
+      177,
+      183,
+      190,
+      218,
+      276
+     ]
+    },
+    {
+     "b": 193,
+     "x": -16.42,
+     "z": 45.33,
+     "y": 48.33,
+     "label": "24 Sz Kung Street",
+     "feeds": [
+      194,
+      221
+     ]
+    },
+    {
+     "b": 205,
+     "x": 21.49,
+     "z": 47.73,
+     "y": 38.17,
+     "label": "5-11 Lo Yan Street",
+     "feeds": [
+      202
+     ]
+    },
+    {
+     "b": 212,
+     "x": 34.42,
+     "z": 48.66,
+     "y": 45.77,
+     "label": "Building 211",
+     "feeds": [
+      223,
+      231,
+      239
+     ]
+    },
+    {
+     "b": 213,
+     "x": 3,
+     "z": 46.03,
+     "y": 46.8,
+     "label": "Building 212",
+     "feeds": [
+      204,
+      214
+     ]
+    },
+    {
+     "b": 219,
+     "x": 95.46,
+     "z": 48.96,
+     "y": 41.04,
+     "label": "Building 218",
+     "feeds": [
+      198,
+      199,
+      210,
+      217,
+      226,
+      230,
+      238,
+      240
+     ]
+    },
+    {
+     "b": 224,
+     "x": 69.08,
+     "z": 53.4,
+     "y": 47.51,
+     "label": "84 Lung Chun Road",
+     "feeds": [
+      196,
+      203,
+      220,
+      222,
+      234,
+      251,
+      253,
+      257
+     ]
+    },
+    {
+     "b": 228,
+     "x": -57.89,
+     "z": 55.71,
+     "y": 47.87,
+     "label": "47 Tai Chang Street",
+     "feeds": [
+      211,
+      225,
+      227,
+      235,
+      254
+     ]
+    },
+    {
+     "b": 229,
+     "x": -29.58,
+     "z": 67.31,
+     "y": 48.38,
+     "label": "138 Lung Chun Road",
+     "feeds": [
+      233,
+      255,
+      258,
+      264
+     ]
+    },
+    {
+     "b": 243,
+     "x": 25.62,
+     "z": 63.88,
+     "y": 40.86,
+     "label": "Building 242",
+     "feeds": [
+      242,
+      244,
+      245,
+      261
+     ]
+    },
+    {
+     "b": 247,
+     "x": -0.5,
+     "z": 61,
+     "y": 40.06,
+     "label": "124, 126 Lung Chun Road",
+     "feeds": [
+      215,
+      236,
+      241,
+      252
+     ]
+    },
+    {
+     "b": 250,
+     "x": -92.18,
+     "z": 56.56,
+     "y": 36.84,
+     "label": "160 Lung Chun Road",
+     "feeds": [
+      206,
+      209,
+      246,
+      256
+     ]
+    },
+    {
+     "b": 262,
+     "x": 109.25,
+     "z": 70.22,
+     "y": 35.86,
+     "label": "1 Lung Chun Road",
+     "feeds": [
+      237,
+      248,
+      249,
+      265
+     ]
+    },
+    {
+     "b": 263,
+     "x": 83.39,
+     "z": 70.73,
+     "y": 48.54,
+     "label": "76-82 Lung Chun Road",
+     "feeds": [
+      232,
+      259,
+      260
+     ]
+    }
+   ],
+   "pipes": "From each tank, 2-4 pipes (galvanised steel 2.5-5 cm, and plastic) go down the stair shaft of the tank building. 1-2 pipes also run across the roofs to each building in the feeds list of the tank. They lie on the roof slab (photo p323) and go down the stair shaft of that building. Where two roofs differ by more than 3 m, the pipe goes down the facade (inferred)."
+  },
+  "pumps": {
+   "rule": "Put one pump hatch in the largest G/F unit of each tank building: 67 hatches (U45). Put the floor panel (0.8 x 0.6 m) at the unit centre point (u.x, u.z). Under it, put a pipe, a valve with a hand wheel and an elbow.",
+   "basis": "inferred",
+   "facts": [
+    "U45",
+    "U11"
+   ],
+   "list": [
+    {
+     "b": 0,
+     "unit": "0:0:3",
+     "x": 80.42,
+     "z": -64.24
+    },
+    {
+     "b": 7,
+     "unit": "7:0:2",
+     "x": 94.4,
+     "z": -58.59
+    },
+    {
+     "b": 13,
+     "unit": "13:0:1",
+     "x": -103.65,
+     "z": -54.69
+    },
+    {
+     "b": 17,
+     "unit": "17:0:0",
+     "x": 61.33,
+     "z": -55.18
+    },
+    {
+     "b": 18,
+     "unit": "18:0:0",
+     "x": -80.53,
+     "z": -53.6
+    },
+    {
+     "b": 24,
+     "unit": "24:0:1",
+     "x": -51.88,
+     "z": -52.32
+    },
+    {
+     "b": 25,
+     "unit": "25:0:1",
+     "x": 37.05,
+     "z": -55.19
+    },
+    {
+     "b": 31,
+     "unit": "31:0:1",
+     "x": 22.21,
+     "z": -52.16
+    },
+    {
+     "b": 32,
+     "unit": "32:0:1",
+     "x": -9.26,
+     "z": -42.1
+    },
+    {
+     "b": 34,
+     "unit": "34:0:0",
+     "x": -20.69,
+     "z": -48.51
+    },
+    {
+     "b": 37,
+     "unit": "37:0:1",
+     "x": 41.49,
+     "z": -47.01
+    },
+    {
+     "b": 39,
+     "unit": "39:0:0",
+     "x": 37.18,
+     "z": -39.83
+    },
+    {
+     "b": 41,
+     "unit": "41:0:2",
+     "x": -17.91,
+     "z": -39.45
+    },
+    {
+     "b": 48,
+     "unit": "48:0:0",
+     "x": 75.51,
+     "z": -41.96
+    },
+    {
+     "b": 51,
+     "unit": "51:0:2",
+     "x": 59.71,
+     "z": -38.56
+    },
+    {
+     "b": 56,
+     "unit": "56:0:2",
+     "x": 8.02,
+     "z": -33.27
+    },
+    {
+     "b": 57,
+     "unit": "57:0:2",
+     "x": -2.3,
+     "z": -37.83
+    },
+    {
+     "b": 58,
+     "unit": "58:0:0",
+     "x": 18.07,
+     "z": -33.55
+    },
+    {
+     "b": 59,
+     "unit": "59:0:1",
+     "x": 27.49,
+     "z": -38
+    },
+    {
+     "b": 60,
+     "unit": "60:0:2",
+     "x": -85.88,
+     "z": -38.63
+    },
+    {
+     "b": 65,
+     "unit": "65:0:0",
+     "x": -23.62,
+     "z": -34.03
+    },
+    {
+     "b": 68,
+     "unit": "68:0:1",
+     "x": 62.14,
+     "z": -29.54
+    },
+    {
+     "b": 72,
+     "unit": "72:0:8",
+     "x": 54.63,
+     "z": -21.97
+    },
+    {
+     "b": 76,
+     "unit": "76:0:1",
+     "x": 84.48,
+     "z": -26.14
+    },
+    {
+     "b": 85,
+     "unit": "85:0:0",
+     "x": -67.33,
+     "z": -23.87
+    },
+    {
+     "b": 96,
+     "unit": "96:0:0",
+     "x": -34.73,
+     "z": -13.38
+    },
+    {
+     "b": 98,
+     "unit": "98:0:3",
+     "x": 89.86,
+     "z": -10.61
+    },
+    {
+     "b": 99,
+     "unit": "99:0:16",
+     "x": -12.93,
+     "z": 23.64
+    },
+    {
+     "b": 102,
+     "unit": "102:0:0",
+     "x": -102.61,
+     "z": -9.8
+    },
+    {
+     "b": 103,
+     "unit": "103:0:0",
+     "x": 32.26,
+     "z": 7.42
+    },
+    {
+     "b": 108,
+     "unit": "108:0:6",
+     "x": -34.8,
+     "z": -5.41
+    },
+    {
+     "b": 109,
+     "unit": "109:0:2",
+     "x": 48.34,
+     "z": -1.82
+    },
+    {
+     "b": 112,
+     "unit": "112:0:1",
+     "x": -17.16,
+     "z": 1.64
+    },
+    {
+     "b": 116,
+     "unit": "116:0:4",
+     "x": 66.12,
+     "z": 3.32
+    },
+    {
+     "b": 118,
+     "unit": "118:0:0",
+     "x": -69.74,
+     "z": 0.89
+    },
+    {
+     "b": 122,
+     "unit": "122:0:0",
+     "x": 72.08,
+     "z": 5.27
+    },
+    {
+     "b": 123,
+     "unit": "123:0:0",
+     "x": -53.35,
+     "z": 3.05
+    },
+    {
+     "b": 128,
+     "unit": "128:0:1",
+     "x": 58.01,
+     "z": 8.4
+    },
+    {
+     "b": 129,
+     "unit": "129:0:1",
+     "x": 93.83,
+     "z": 6.63
+    },
+    {
+     "b": 132,
+     "unit": "132:0:0",
+     "x": -88.01,
+     "z": 9.54
+    },
+    {
+     "b": 139,
+     "unit": "139:0:1",
+     "x": 66.03,
+     "z": 14.32
+    },
+    {
+     "b": 144,
+     "unit": "144:0:0",
+     "x": 30.9,
+     "z": 17.64
+    },
+    {
+     "b": 147,
+     "unit": "147:0:2",
+     "x": -22.57,
+     "z": 22.41
+    },
+    {
+     "b": 153,
+     "unit": "153:0:2",
+     "x": -33.55,
+     "z": 21.04
+    },
+    {
+     "b": 160,
+     "unit": "160:0:0",
+     "x": 42.43,
+     "z": 21.73
+    },
+    {
+     "b": 164,
+     "unit": "164:0:2",
+     "x": 94.12,
+     "z": 23.47
+    },
+    {
+     "b": 166,
+     "unit": "166:0:0",
+     "x": 60.27,
+     "z": 27.91
+    },
+    {
+     "b": 167,
+     "unit": "167:0:1",
+     "x": -97.43,
+     "z": 27.35
+    },
+    {
+     "b": 170,
+     "unit": "170:0:2",
+     "x": 73.58,
+     "z": 31.98
+    },
+    {
+     "b": 173,
+     "unit": "173:0:2",
+     "x": -61.7,
+     "z": 30.24
+    },
+    {
+     "b": 180,
+     "unit": "180:0:0",
+     "x": -16.02,
+     "z": 28.66
+    },
+    {
+     "b": 181,
+     "unit": "181:0:0",
+     "x": 28.75,
+     "z": 31.4
+    },
+    {
+     "b": 186,
+     "unit": "186:0:3",
+     "x": -40.43,
+     "z": 35.34
+    },
+    {
+     "b": 191,
+     "unit": "191:0:1",
+     "x": 109.23,
+     "z": 38.6
+    },
+    {
+     "b": 193,
+     "unit": "193:0:5",
+     "x": 0.27,
+     "z": 38.31
+    },
+    {
+     "b": 205,
+     "unit": "205:0:3",
+     "x": 20.17,
+     "z": 44.74
+    },
+    {
+     "b": 212,
+     "unit": "212:0:2",
+     "x": 33.37,
+     "z": 48.7
+    },
+    {
+     "b": 213,
+     "unit": "213:0:1",
+     "x": 2.18,
+     "z": 46.06
+    },
+    {
+     "b": 219,
+     "unit": "219:0:0",
+     "x": 97.25,
+     "z": 51.34
+    },
+    {
+     "b": 224,
+     "unit": "224:0:2",
+     "x": 75.12,
+     "z": 60.89
+    },
+    {
+     "b": 228,
+     "unit": "228:0:1",
+     "x": -55.72,
+     "z": 52.91
+    },
+    {
+     "b": 229,
+     "unit": "229:0:0",
+     "x": -26.43,
+     "z": 58.6
+    },
+    {
+     "b": 243,
+     "unit": "243:0:0",
+     "x": 25.53,
+     "z": 63.64
+    },
+    {
+     "b": 247,
+     "unit": "247:0:0",
+     "x": -0.93,
+     "z": 63.56
+    },
+    {
+     "b": 250,
+     "unit": "250:0:1",
+     "x": -94.38,
+     "z": 59.27
+    },
+    {
+     "b": 262,
+     "unit": "262:0:0",
+     "x": 109.38,
+     "z": 70.95
+    },
+    {
+     "b": 263,
+     "unit": "263:0:0",
+     "x": 79.13,
+     "z": 70.75
+    }
+   ]
+  },
+  "standpipe_inside": {
+   "xz": [
+    -48.5,
+    53
+   ],
+   "cell": 40640,
+   "wall_of": 235,
+   "unit": "216:0:1",
+   "facts": [
+    "U1",
+    "U26"
+   ],
+   "basis": "likely",
+   "note": "S.L.standpipe of the layout."
+  },
+  "hose_path": {
+   "from": [
+    -48.5,
+    53
+   ],
+   "to_unit": "216:0:4",
+   "points": [
+    [
+     -48.5,
+     53
+    ],
+    [
+     -50.5,
+     53
+    ],
+    [
+     -50.5,
+     43
+    ],
+    [
+     -46.5,
+     43
+    ],
+    [
+     -46.5,
+     45
+    ]
+   ],
+   "height": "rise at the wall from 0 to 2.5 m, then 2.5-4 m along the lane",
+   "count": "40-60 hoses",
+   "facts": [
+    "U24",
+    "U25",
+    "U26"
+   ],
+   "basis": "sourced (look); inferred (path)"
+  },
+  "outside_standpipes": {
+   "basis": "inferred",
+   "facts": [
+    "U2",
+    "U3",
+    "U4",
+    "U5"
+   ],
+   "list": [
+    {
+     "xz": [
+      -112,
+      -65.5
+     ],
+     "road": "Tung Tau Tsuen Road (東頭村道), south footway, west end",
+     "nearest_building": 5,
+     "side": "north of building 5, about 8 m away"
+    },
+    {
+     "xz": [
+      -20,
+      -52.3
+     ],
+     "road": "Tung Tau Tsuen Road, south footway, middle",
+     "nearest_building": 34,
+     "side": "north of building 34, 0.6 m away, by its stair door"
+    },
+    {
+     "xz": [
+      52,
+      -66.5
+     ],
+     "road": "Tung Tau Tsuen Road, south footway, east end",
+     "nearest_building": 2,
+     "side": "north of building 2, 2.2 m away"
+    },
+    {
+     "xz": [
+      119.5,
+      -30
+     ],
+     "road": "Tung Tsing Road (東正道), west kerb",
+     "nearest_building": 273,
+     "side": "east of building 273 (temporary structure TS-E1), 12.7 m away"
+    },
+    {
+     "xz": [
+      118.9,
+      0
+     ],
+     "road": "Tung Tsing Road, west kerb",
+     "nearest_building": 274,
+     "side": "east of building 274 (temporary structure TS-E2), 6.9 m away"
+    },
+    {
+     "xz": [
+      118.5,
+      30
+     ],
+     "road": "Tung Tsing Road, west kerb",
+     "nearest_building": 183,
+     "side": "east of building 183, 3.5 m away"
+    },
+    {
+     "xz": [
+      118.2,
+      60
+     ],
+     "road": "Tung Tsing Road, west kerb",
+     "nearest_building": 249,
+     "side": "east of building 249, 0.6 m away"
+    }
+   ],
+   "note": "All 7 points are outside the City (S.L.inside 0). The 3 on Tung Tau Tsuen Road follow Ng Kam Mui's 'taps at either end of the street' (U5)."
+  },
+  "meter_boards": {
+   "rule": "Put one board at each building with a G/F stair door (S.doors kind 'street', k 0): 226 boards. Fix it on the entrance wall beside that door, with the bottom edge at b.y[0] + 1.8 m. The number of meters m is the number of units of the building (all floors). The reason: the KFA had a meter fitted in each unit (U114). Total: 8352 meters.",
+   "layout": "Put the meters in rows of up to 40, 0.15 m apart (p99). rows = ceil(m / 40), with at most 3 rows on one board. If m > 120, put a second board on the other side of the door. Board width = 0.15 x min(m, 40) + 0.3 m (fuse boxes). Height = 0.3 m for each row. Material: wooden board, small metal meters and fuse boxes.",
+   "cables": "From the board, a bundle of flex goes up the stair shaft, tacked to the wall: one wire for each meter. At each landing, wires split off to the units of that floor (p100 caption). On named lanes, put a board with m of 40 or more on the lane wall outside the door (p99).",
+   "stats": {
+    "median_meters": 27,
+    "max_meters": 233,
+    "buildings_over_40": 75,
+    "buildings_over_80": 16,
+    "buildings_without_street_door": 51
+   },
+   "no_door": "51 buildings have no street door (no_door_ids). They get no board. Their meters are on the board of the building that gives them access (inferred).",
+   "no_door_ids": [
+    1,
+    9,
+    14,
+    19,
+    22,
+    23,
+    40,
+    42,
+    43,
+    44,
+    46,
+    54,
+    77,
+    86,
+    100,
+    104,
+    113,
+    114,
+    120,
+    128,
+    140,
+    148,
+    149,
+    153,
+    156,
+    158,
+    161,
+    165,
+    179,
+    188,
+    190,
+    197,
+    217,
+    234,
+    242,
+    246,
+    251,
+    257,
+    259,
+    260,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276
+   ],
+   "basis": "inferred (rule); sourced (look)",
+   "facts": [
+    "U96",
+    "U98",
+    "U114",
+    "U94"
+   ]
+  },
+  "overhead": {
+   "named_lanes": "Named lanes are the cells of S.L.streetLanes, about 634 m in all. Keys: kms Kwong Ming St (光明街), lys Lo Yan St (老人街), tcs Tai Chang St (大井街), skg Sz Kung St (社公街) and lsr Lung Shing Rd (龍城路). Also: abs Almshouse Back St, tts Tin Hau Temple St (天后廟街), lcb Lung Chun Back Rd (龍津後街) and tcn (north part of Tai Chang St). Over them, put a layer of 30-40 pipes and cables, 2.6-3.5 m above the lane floor, on wall brackets every 1.5-2 m.",
+   "other_lanes": "Other lanes are the lane cells inside the City that are not named (S.L.alley 1, S.L.inside 1): about 4046 cells, about 2250 m. Over them, put 10-20 pipes and cables, 2.3-3 m above the lane floor. Where a building covers the lane, fix them to its ceiling.",
+   "vertical": "On every facade that faces a lane: 2-6 pipes and cables down the wall from the roof to the G/F (photo pp114-115).",
+   "roofs": "Between roofs: 1-4 cables strung at 2-4 m above the roof, and the tank pipes on the roof slab (pp322-323).",
+   "drips": "On named lanes, put a drip sheet of plastic or metal under the overhead layer about every 6 m. Put it at 2.2-2.6 m, slanted to one wall (p249).",
+   "basis": "inferred (density and heights from photos pp102, 105, 144, 322-323)",
+   "facts": [
+    "U74",
+    "U76",
+    "U86",
+    "U110",
+    "U143",
+    "U162"
+   ]
+  },
+  "lamps": {
+   "rule": "These are the KFA public lights: more than 200, lit 24 h. Put one fluorescent tube every 8 m on the named lanes, on alternating walls at 2.5 m (84 lamps). Then put one every 20 m on the other lanes (about 120 lamps). More than 30 m from the City edge, leave one in four of the small-lane lamps dark (p103). On each stair landing, put one bare bulb or one tube.",
+   "basis": "inferred (spacing); sourced (count, 24 h)",
+   "facts": [
+    "U106",
+    "U108",
+    "U109",
+    "U111"
+   ]
+  },
+  "refuse_points": {
+   "rule": "23 points, one about every 32 m along each named lane (list). At each point: a wall recess bay with a low wooden bin (2 x 1.2 x 0.6 m) and 2-6 USD buckets. At the 10 points nearest a stair door, also a stack of 5-8 buckets.",
+   "list": [
+    {
+     "street": "kms",
+     "xz": [
+      69.5,
+      -62
+     ],
+     "nearest_stair_door_of": 6
+    },
+    {
+     "street": "kms",
+     "xz": [
+      71.5,
+      -30
+     ],
+     "nearest_stair_door_of": 79
+    },
+    {
+     "street": "kms",
+     "xz": [
+      76.5,
+      2
+     ],
+     "nearest_stair_door_of": 122
+    },
+    {
+     "street": "kms",
+     "xz": [
+      80.5,
+      34
+     ],
+     "nearest_stair_door_of": 176
+    },
+    {
+     "street": "lys",
+     "xz": [
+      27.5,
+      -52
+     ],
+     "nearest_stair_door_of": 31
+    },
+    {
+     "street": "lys",
+     "xz": [
+      36.5,
+      -20
+     ],
+     "nearest_stair_door_of": 72
+    },
+    {
+     "street": "lys",
+     "xz": [
+      36.5,
+      12
+     ],
+     "nearest_stair_door_of": 103
+    },
+    {
+     "street": "tcs",
+     "xz": [
+      -32.5,
+      -39
+     ],
+     "nearest_stair_door_of": 55
+    },
+    {
+     "street": "tcs",
+     "xz": [
+      -42.5,
+      -7
+     ],
+     "nearest_stair_door_of": 111
+    },
+    {
+     "street": "tcs",
+     "xz": [
+      -49.5,
+      25
+     ],
+     "nearest_stair_door_of": 152
+    },
+    {
+     "street": "tcs",
+     "xz": [
+      -53.5,
+      57
+     ],
+     "nearest_stair_door_of": 235
+    },
+    {
+     "street": "skg",
+     "xz": [
+      -85.5,
+      39
+     ],
+     "nearest_stair_door_of": 206
+    },
+    {
+     "street": "skg",
+     "xz": [
+      -53.5,
+      42
+     ],
+     "nearest_stair_door_of": 182
+    },
+    {
+     "street": "skg",
+     "xz": [
+      -21.5,
+      47
+     ],
+     "nearest_stair_door_of": 193
+    },
+    {
+     "street": "lsr",
+     "xz": [
+      87.5,
+      -68
+     ],
+     "nearest_stair_door_of": 0
+    },
+    {
+     "street": "lsr",
+     "xz": [
+      92.5,
+      -36
+     ],
+     "nearest_stair_door_of": 64
+    },
+    {
+     "street": "lsr",
+     "xz": [
+      98.5,
+      -4
+     ],
+     "nearest_stair_door_of": 98
+    },
+    {
+     "street": "abs",
+     "xz": [
+      5.5,
+      -28
+     ],
+     "nearest_stair_door_of": 57
+    },
+    {
+     "street": "abs",
+     "xz": [
+      37.5,
+      -24
+     ],
+     "nearest_stair_door_of": 78
+    },
+    {
+     "street": "tts",
+     "xz": [
+      52.5,
+      -49
+     ],
+     "nearest_stair_door_of": 37
+    },
+    {
+     "street": "tts",
+     "xz": [
+      58.5,
+      -17
+     ],
+     "nearest_stair_door_of": 72
+    },
+    {
+     "street": "lcb",
+     "xz": [
+      12.5,
+      37
+     ],
+     "nearest_stair_door_of": 202
+    },
+    {
+     "street": "tcn",
+     "xz": [
+      -95.5,
+      -40
+     ],
+     "nearest_stair_door_of": 63
+    }
+   ],
+   "basis": "inferred (positions); sourced (look, 'numerous', 10 sweepers)",
+   "facts": [
+    "U122",
+    "U124"
+   ]
+  },
+  "letterboxes": {
+   "rule": "At each G/F stair door with m of 20 or more: 8-20 small wooden letterboxes on the entrance or alley wall at 1.6-2.2 m (p145). Elsewhere: 1-3 metal letterboxes beside the stair door at about 1.8 m (pp102, 148).",
+   "basis": "inferred (rule); sourced (look)",
+   "facts": [
+    "U203",
+    "U205"
+   ]
+  },
+  "roof_refuse": {
+   "rule": "On each roof, put 1-3 heaps (about 2 x 2 x 0.4 m) of boards, plastic sheet and broken furniture. Put them against the parapet or the roof edge, away from the stair node.",
+   "basis": "inferred (count); sourced (look)",
+   "facts": [
+    "U136"
+   ]
+  },
+  "gaps": {
+   "rule": "In each gap between buildings narrower than 1.5 m: rubbish 0.3-0.5 m deep at the bottom.",
+   "basis": "inferred (rule); sourced (look)",
+   "facts": [
+    "U134",
+    "U135"
+   ]
+  }
+ },
+ "finds": [
+  {
+   "what": "A floor panel in a G/F room. Under it: the pump pipe, a valve with a hand wheel and an elbow.",
+   "where": "placement.pumps (67 rooms)",
+   "when": "always; the pump runs at about 12:00 and 00:00",
+   "facts": [
+    "U45",
+    "U16"
+   ]
+  },
+  {
+   "what": "The standpipe: brass taps on a pipe frame, a concrete cylinder, a tiled floor, and 40-60 hoses that climb the wall to the food factories.",
+   "where": "x -48.5, z 53 (P1, P2)",
+   "when": "all day and night",
+   "facts": [
+    "U26",
+    "U25",
+    "U24"
+   ]
+  },
+  {
+   "what": "A worker comes now and then to connect his factory's hose to the standpipe.",
+   "where": "P1 and the factory 216:0:4",
+   "when": "in working hours",
+   "facts": [
+    "U24"
+   ]
+  },
+  {
+   "what": "A man washes his hair at the standpipe; water runs on a basket of frozen eels for fishballs.",
+   "where": "P1",
+   "when": "day",
+   "facts": [
+    "U23",
+    "U25"
+   ]
+  },
+  {
+   "what": "The painted notice 此井水不適宜飲用 (this well water is not fit to drink) over the taps.",
+   "where": "P4",
+   "when": "always",
+   "facts": [
+    "U27"
+   ]
+  },
+  {
+   "what": "The last natural well: a round concrete well-head with buckets.",
+   "where": "x -37.5, z 53 (P5)",
+   "when": "always",
+   "facts": [
+    "U49"
+   ]
+  },
+  {
+   "what": "A meter board with dozens of meters and a mass of flex that climbs the stair.",
+   "where": "placement.meter_boards (226 stair doors)",
+   "when": "always",
+   "facts": [
+    "U96",
+    "U98"
+   ]
+  },
+  {
+   "what": "Meter readers with torches (and dog repellent) going from board to board.",
+   "where": "meter boards",
+   "when": "working days (inferred)",
+   "facts": [
+    "U97"
+   ]
+  },
+  {
+   "what": "The USD refuse collectors, loud, on Tai Chang Street.",
+   "where": "Tai Chang Street, past 12 Tai Chang Street (P26)",
+   "when": "from about 04:00",
+   "facts": [
+    "U125"
+   ]
+  },
+  {
+   "what": "The grill over the Tin Hau Temple, under a year's refuse.",
+   "where": "P19, y 24.1",
+   "when": "always",
+   "facts": [
+    "U131",
+    "U132"
+   ]
+  },
+  {
+   "what": "A roof tank. A top-floor resident dips water from it with a small bucket.",
+   "where": "placement.roof_tanks",
+   "when": "when the taps are dry",
+   "facts": [
+    "U63",
+    "U15"
+   ]
+  },
+  {
+   "what": "Water comes at night: lights go on and people start the washing.",
+   "where": "flats",
+   "when": "after the midnight pump run",
+   "facts": [
+    "U67",
+    "U16"
+   ]
+  },
+  {
+   "what": "Two thin pipes across a roof slab, and cables strung between roofs.",
+   "where": "roofs (placement.roof_tanks.pipes)",
+   "when": "always",
+   "facts": [
+    "U74",
+    "U76"
+   ]
+  },
+  {
+   "what": "A ladder or a stool under a broken corridor window: the way from roof to roof.",
+   "where": "roofs",
+   "when": "always",
+   "facts": [
+    "U215"
+   ]
+  },
+  {
+   "what": "The postman in a cloth hat, sorting letters at a wall of small wooden letterboxes.",
+   "where": "placement.letterboxes; his round starts at P32",
+   "when": "Mon-Sat (inferred)",
+   "facts": [
+    "U205",
+    "U161",
+    "U203"
+   ]
+  },
+  {
+   "what": "A metal LP gas cylinder by the stove in a kitchen or workshop: 'a bit like keeping a bomb in your home'.",
+   "where": "kitchens; P28",
+   "when": "always",
+   "facts": [
+    "U190",
+    "U219"
+   ]
+  },
+  {
+   "what": "A drip sheet over the alley, and water dripping from the pipes above.",
+   "where": "named lanes (placement.overhead.drips)",
+   "when": "always",
+   "facts": [
+    "U162",
+    "U160"
+   ]
+  },
+  {
+   "what": "The USD rat-bait warning on an alley wall.",
+   "where": "alley walls",
+   "when": "always",
+   "facts": [
+    "U137"
+   ]
+  },
+  {
+   "what": "A dark small alley in the middle of the City, then a KFA lamp at the next corner.",
+   "where": "placement.lamps",
+   "when": "always",
+   "facts": [
+    "U108",
+    "U106"
+   ]
+  },
+  {
+   "what": "A plug on a wire, let down from the flat above to borrow power.",
+   "where": "G/F shops",
+   "when": "in a power cut (rare event)",
+   "facts": [
+    "U116"
+   ]
+  }
+ ]
+}

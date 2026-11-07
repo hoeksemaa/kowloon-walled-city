@@ -28,7 +28,8 @@ shows one ordinary week, Tuesday 16 to Monday 22 December 1986, which ends on �
     each person; `sim.js` moves them; `figures.js` draws them (instanced); `personPanel.js`
     gives the panel of a person. `furnish.js` puts the things of `data/furnishings.json` in
     the rooms and on the roofs (instanced, one mesh for each kind). `mysteries.js`: the ten
-    cases of `data/mysteries.json`.
+    cases of `data/mysteries.json`. `utilities.js`: the water, power, post and refuse of
+    `data/utilities.json`.
   - Not loaded now: the old people, labels and game of the main app (`people.js`,
     `routes.js`, `crowd.js`, `figures.js`, `game.js`, `labels.js`, `occlude.js`, `useMap.js`,
     `dim.js`, `kinds.js`, `geom.js`). They sat on the old 3D city of the main app (see "Not
@@ -218,6 +219,17 @@ documented room has its own list. Where each thing stands is INFERRED. The thing
 the floors show (pulled apart, or the peeled storey), and the small things show only near
 the camera. Click a thing to see what it is and its source; the panel of a room lists its
 things and the people in it now.
+
+### The utilities
+
+The water, the power, the post and the refuse of the City come from `data/utilities.json`
+(`docs/utilities.md`), drawn by `src/life/utilities.js` with the things: the 67 roof tanks of
+the wells and the floor hatches of their pumps, the one Government standpipe of Tai Chang
+Street (大井街) with the hoses of the food factories, the seven standpipes outside the City, a
+meter board at each G/F stair door (a meter for each flat), the letterboxes of the post, the
+pipes and cables over the lanes and down the walls, the public lights of the Kaifong
+Association (lit 24 hours a day), and the refuse points of the named lanes. The look of each
+thing has a source; where each one stands is INFERRED. Click one to see what it is.
 
 ### The mysteries
 

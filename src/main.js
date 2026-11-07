@@ -86,7 +86,7 @@ let pop, life, figures, furnish, cases;
 
 async function init() {
   await new Promise((r) => requestAnimationFrame(() => setTimeout(r, 20)));
-  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings', 'mysteries'];
+  const names = ['plan', 'businesses', 'book', 'book_overlay', 'context', 'terrain', 'structure_fixes', 'plan_fine', 'structure_choices', 'surroundings', 'room_uses', 'people', 'routines', 'furnishings', 'mysteries', 'utilities'];
   const D = Object.fromEntries(await Promise.all(names.map((n) => fetch(`./data/${n}.json`).then((r) => r.json()).then((j) => [n, j]))));
   // the structure, as the structure viewer builds it (structureViewer.js): the corrections of
   // data/structure_fixes.json on the fine plan, and the kept random choices
@@ -107,7 +107,7 @@ async function init() {
   scene.add(ground.group);
   layers.addOccluders([ground.terrain, ground.context]);
   // the things in the rooms and on the roofs (data/furnishings.json)
-  furnish = new Furnish(S, uses, D.furnishings, layers);
+  furnish = new Furnish(S, uses, D.furnishings, layers, D.utilities);
   scene.add(furnish.group);
   // the people of the week
   const nav = new Nav(S);
@@ -171,7 +171,7 @@ function selectBuilding(b, room = null, thing = null) {
   state.sel = b;
   state.selRoom = b >= 0 ? room : null;
   state.thing = thing;
-  const c = room && !room.roof && cases.tryRoom(`${b}:${room.k}:${room.u}`);
+  const c = room && !room.roof && !room.out && cases.tryRoom(`${b}:${room.k}:${room.u}`);
   if (c) found(c);
   layers.setSelected(b);
   if (b >= 0) selectPerson(-1, false);
@@ -199,7 +199,7 @@ function renderPanel() {
   const body = $('bld-body'), top = body.scrollTop, same = el.dataset.id === id;
   $('bld-head').textContent = person ? 'SELECTED PERSON' : 'SELECTED BUILDING';
   body.innerHTML = person ? personHtml({ life, S, uses, pop, follow: state.follow }, state.person)
-    : panelHtml(S, uses, places, state.sel, state.peel, state.selRoom?.roof ? null : state.selRoom, roomExtra());
+    : panelHtml(S, uses, places, state.sel, state.peel, state.selRoom?.roof || state.selRoom?.out ? null : state.selRoom, roomExtra());
   body.scrollTop = same ? top : 0;
   el.dataset.id = id;
   placePanel();
@@ -246,7 +246,7 @@ function showCase(c) {
 function roomExtra() {
   const R = state.selRoom;
   if (!R) return '';
-  const B = S.list[state.sel], key = R.roof ? `roof:${B.id}` : `${B.id}:${R.k}:${R.u}`;
+  const B = S.list[state.sel], key = R.roof ? `roof:${B.id}` : R.out ? `out:${B.id}` : `${B.id}:${R.k}:${R.u}`;
   let html = R.roof ? `<h3>THE ROOF OF ${esc(B.label).toUpperCase()}</h3>` : '';
   html += thingsHtml(furnish, key, state.thing, esc);
   const here = [];
@@ -400,7 +400,7 @@ function buildUI() {
     if (hit && hit.person !== undefined) selectPerson(hit.person === state.person ? -1 : hit.person);
     else if (!hit) { selectBuilding(-1); selectPerson(-1); }
     else if (hit.b === state.sel && !hit.room) selectBuilding(-1);
-    else selectBuilding(hit.b, hit.room || (hit.thingKey?.startsWith('roof:') ? { k: S.list[hit.b].n, roof: true } : null), hit.thing || null);
+    else selectBuilding(hit.b, hit.room || (hit.thingKey?.startsWith('roof:') ? { k: S.list[hit.b].n, roof: true } : hit.thingKey?.startsWith('out:') ? { k: 0, out: true } : null), hit.thing || null);
   });
   // A mouse click on a button does not keep the keyboard focus on it, thus Space then runs or
   // stops the clock and does not press the button again.
