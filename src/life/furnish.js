@@ -19,6 +19,7 @@ import { SLAB } from '../city/model.js';
 import { CORR, LANDING, FLIGHT } from '../city/plan.js';
 import { toAW } from '../city/poly.js';
 import { mulberry32 } from '../util.js';
+import { placeUtilities } from './utilities.js';
 
 const PIGEON_ROOF = 59;
 export const ITEM_KIND = 9; // the kind of a thing in aInfo (cityLayers.js: the pick gives layer + 16 kind)
@@ -161,7 +162,8 @@ function protoGeometry(parts, colourOf) {
   const P = [], N = [], C = [], A = [], idx = [];
   const put = (x, y, z, nx, ny, nz, col, acc) => { P.push(x, y, z); N.push(nx, ny, nz); C.push(col.r, col.g, col.b); A.push(acc); };
   for (const [x0, x1, y0, y1, z0, z1, m, shape] of parts) {
-    const acc = m === 2 ? 1 : 0, col = acc ? WHITE : colourOf(m);
+    // slot 2: the accent of each thing; slot 3: a light that glows (its colour is the accent)
+    const acc = m === 2 ? 1 : m === 3 ? 2 : 0, col = acc ? WHITE : colourOf(m);
     if (shape === 'c') {
       const cx = (x0 + x1) / 2, cz = (z0 + z1) / 2, rx = (x1 - x0) / 2, rz = (z1 - z0) / 2, n = 6;
       for (let q = 0; q < n; q++) {
@@ -199,23 +201,26 @@ function protoGeometry(parts, colourOf) {
 }
 
 // The vertex code of a thing: iPos (x, y, z, turn), iInfo (building, layer, kind, 1 in a room or
-// 0 on a roof), iCol (the accent colour, and the tint of the rest). A thing of a layer over the
+// 0 on a roof or outside), iCol (the accent colour, and the tint of the rest), iScl (its scale:
+// the length of a run of pipes, the width of a meter board). A thing of a layer over the
 // peeled storey, or of a room whose floor does not show, goes to one point far under the City.
 const THING_GLSL = `
-attribute vec4 iPos; attribute vec4 iInfo; attribute vec4 iCol; attribute float aAcc;
+attribute vec4 iPos; attribute vec4 iInfo; attribute vec4 iCol; attribute vec3 iScl; attribute float aAcc;
 uniform float uLift[16]; uniform float uShowIn[16]; uniform float uPeelK;
-varying vec3 vInfo;
+varying vec3 vInfo; varying float vGlow;
 bool thingHidden() { int L = int(iInfo.y + 0.5); return (uPeelK > -0.5 && iInfo.y > uPeelK + 0.5) || (iInfo.w > 0.5 && uShowIn[L] < 0.5); }
 vec3 thingTurn(vec3 p) { float c = cos(iPos.w), s = sin(iPos.w); return vec3(c * p.x + s * p.z, p.y, -s * p.x + c * p.z); }
-vec3 thingPos(vec3 p) { if (thingHidden()) return iPos.xyz - vec3(0.0, 2000.0, 0.0); int L = int(iInfo.y + 0.5); return thingTurn(p) + iPos.xyz + vec3(0.0, uLift[L], 0.0); }
+vec3 thingPos(vec3 p) { if (thingHidden()) return iPos.xyz - vec3(0.0, 2000.0, 0.0); int L = int(iInfo.y + 0.5); return thingTurn(p * iScl) + iPos.xyz + vec3(0.0, uLift[L], 0.0); }
 `;
 
 export class Furnish {
   // F: data/furnishings.json; uses: the room uses (src/roomUses.js); layers: CityLayers.
-  constructor(S, uses, F, layers) {
+  // U: data/utilities.json (the tanks, pumps, standpipes, meter boards, pipes, lamps, refuse).
+  constructor(S, uses, F, layers, U = null) {
     this.S = S; this.uses = uses; this.F = F; this.layers = layers;
     this.kinds = F?.kinds || {};
-    this.facts = new Map((F?.facts || []).map((f) => [f.id, f]));
+    this.facts = new Map([...(F?.facts || []), ...(U?.facts || [])].map((f) => [f.id, f]));
+    this.blocked = new Map(); // b -> [[x, z, r]]: the roof of b is taken there (a tank)
     this.cols = {};
     for (const [m, list] of Object.entries(MAT)) this.cols[m] = list.map(lin);
     this.items = new Map(); // "b:k:u" or "roof:b" -> [{ kind, x, z, r, facts, basis, why }]
@@ -236,28 +241,34 @@ export class Furnish {
     this.queue.sort((p, q) => p.k - q.k || p.b - q.b || p.u - q.u);
     this.qi = 0;
     this.doneTo = -1; // the layers up to this one are furnished
+    if (U) placeUtilities(this, U);
     this.buildRoofs();
     this.flush();
   }
+
+  // More colours of materials (sRGB), for the utilities.
+  addColours(o) { for (const [m, list] of Object.entries(o)) this.cols[m] = list.map(lin); }
 
   colour(name, r) {
     const list = this.cols[name] || this.cols[name?.replace(/s$/, '')] || this.cols[name?.split(' ')[0]] || this.cols.wood;
     return r ? list[Math.floor(r() * list.length)] : list[0];
   }
 
-  // The store of the things of one kind (and shape), on a roof or in the rooms.
-  proto(kind, roof, r) {
-    const v = RANDOM.has(kind) ? Math.floor(r() * 3) : 0, key = `${roof ? 'roof' : 'room'}:${kind}:${v}`;
+  // The store of the things of one kind (and shape): where is 'room' (the rooms: in the order of
+  // their layers), 'roof' or 'out' (the lanes, the walls outside).
+  proto(kind, where, r) {
+    const K0 = this.kinds[kind] || {}, nv = K0.variants || (RANDOM.has(kind) ? 3 : 1);
+    const v = nv > 1 ? Math.floor(r() * nv) : 0, key = `${where}:${kind}:${v}`, roof = where !== 'room';
     let P = this.protos.get(key);
     if (!P) {
       const K = this.kinds[kind] || {}, [w, d, h] = K.size || [0.5, 0.5, 0.5];
       const mats = String(K.material || 'wood').split(/,\s*/);
-      const parts = (SHAPE[kind] || ((ww, dd, hh) => [box(0, ww, 0, hh, 0, dd)]))(w, d, h, mulberry32(v * 977 + 13));
+      const parts = (K.parts || SHAPE[kind] || ((ww, dd, hh) => [box(0, ww, 0, hh, 0, dd)]))(w, d, h, mulberry32(v * 977 + 13));
       for (const q of parts) { q[0] -= w / 2; q[1] -= w / 2; }
       const geo = protoGeometry(parts, (m) => (m === 0 ? this.colour(mats[0]) : m === 1 ? this.colour(mats[1] || mats[0]) : this.colour(m)));
       // the accent: the quilt of a bed, the plastic of a stool or a drum, the washing on a line
       const accent = mats.includes('quilt') ? 'quilt' : mats.includes('plastic') ? 'plastic' : mats.includes('cloth') || kind === 'laundry_pole' || kind === 'clothes_rack' ? 'cloth' : mats[0];
-      P = { key, kind, roof, geo, accent, n: 0, sent: 0, pos: [], info: [], col: [], layerEnd: new Array(this.doneTo + 1).fill(0), mesh: null, twin: null };
+      P = { key, kind, roof, geo, accent: K.accent || accent, n: 0, sent: 0, pos: [], info: [], col: [], scl: [], layerEnd: new Array(this.doneTo + 1).fill(0), mesh: null, twin: null };
       this.protos.set(key, P);
     }
     return P;
@@ -265,9 +276,11 @@ export class Furnish {
 
   // A thing of kind `kind` at (x, y, z), turned by ang (its z axis, out of the wall, goes to
   // (sin ang, cos ang)), in layer k of building b.
-  put(kind, roof, x, y, z, ang, b, k, r) {
-    const P = this.proto(kind, roof, r), c = this.colour(P.accent, r), t = 0.86 + r() * 0.2;
-    P.pos.push(x, y, z, ang); P.info.push(b, k, ITEM_KIND, roof ? 0 : 1); P.col.push(c.r, c.g, c.b, t);
+  // where: 'room', 'roof' or 'out'; scl: the scale [x, y, z], or none.
+  put(kind, where, x, y, z, ang, b, k, r, scl = null) {
+    const P = this.proto(kind, where, r), c = this.colour(P.accent, r), t = 0.86 + r() * 0.2;
+    P.pos.push(x, y, z, ang); P.info.push(b, k, ITEM_KIND, where === 'room' ? 1 : 0); P.col.push(c.r, c.g, c.b, t);
+    if (scl) P.scl.push(scl[0], scl[1], scl[2]); else P.scl.push(1, 1, 1);
     P.n++;
   }
 
@@ -282,6 +295,7 @@ export class Furnish {
       g.setAttribute('iPos', new THREE.InstancedBufferAttribute(new Float32Array(P.pos), 4));
       g.setAttribute('iInfo', new THREE.InstancedBufferAttribute(new Float32Array(P.info), 4));
       g.setAttribute('iCol', new THREE.InstancedBufferAttribute(new Float32Array(P.col), 4));
+      g.setAttribute('iScl', new THREE.InstancedBufferAttribute(new Float32Array(P.scl), 3));
       g.instanceCount = P.n;
       P.sent = P.n;
       if (!P.mesh) {
@@ -289,7 +303,7 @@ export class Furnish {
         P.mesh.frustumCulled = false;
         P.mesh.receiveShadow = true;
         const [w, d] = this.kinds[P.kind]?.size || [0.5, 0.5];
-        P.mesh.userData.tier = P.roof && P.kind !== 'plant_pot' ? 0 : DECOR.has(P.kind) || Math.max(w, d) < 0.5 ? 2 : Math.max(w, d) < 1 ? 1 : 0;
+        P.mesh.userData.tier = this.kinds[P.kind]?.tier ?? (P.roof && P.kind !== 'plant_pot' ? 0 : DECOR.has(P.kind) || Math.max(w, d) < 0.5 ? 2 : Math.max(w, d) < 1 ? 1 : 0);
         this.group.add(P.mesh);
         P.twin = new THREE.Mesh(g, this.pickMat);
         P.twin.frustumCulled = false;
@@ -312,9 +326,10 @@ export class Furnish {
       sh.vertexShader = sh.vertexShader.replace('#include <common>', `#include <common>\n${THING_GLSL}`)
         .replace('#include <beginnormal_vertex>', 'vec3 objectNormal = thingTurn(normal);')
         .replace('#include <begin_vertex>', 'vec3 transformed = thingPos(position); vInfo = iInfo.xyz;')
-        .replace('#include <color_vertex>', 'vColor = color * mix(vec3(iCol.w), iCol.rgb, aAcc);');
-      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; uniform float uSel; uniform float uHi;')
+        .replace('#include <color_vertex>', 'vColor = color * mix(vec3(iCol.w), iCol.rgb, min(aAcc, 1.0)); vGlow = step(1.5, aAcc);');
+      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; varying float vGlow; uniform float uSel; uniform float uHi;')
         .replace('#include <dithering_fragment>', `#include <dithering_fragment>
+  gl_FragColor.rgb = mix(gl_FragColor.rgb, vColor * 1.1, vGlow);
   if (abs(vInfo.x - uSel) < 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.98, 0.72, 0.36), 0.32);
   else if (abs(vInfo.x - uHi) < 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(1.0, 0.95, 0.85), 0.25);`);
     };
@@ -378,7 +393,7 @@ export class Furnish {
     if (!rec) return;
     const R = plan.R, ni = R.ni, cells = new Set(unit.cells), occ = new Set();
     const y0 = B.y[U.k], ceil = B.y[U.k + 1] - SLAB - y0;
-    const list = [];
+    const list = this.items.get(U.key) || []; // a pump hatch can be there already
     const at = (i, j) => j * ni + i;
     const inU = (i, j) => i >= 0 && j >= 0 && i < ni && j < R.nj && cells.has(at(i, j));
     const codeAt = (i, j) => (i >= 0 && j >= 0 && i < ni && j < R.nj ? plan.code[at(i, j)] : 0);
@@ -471,7 +486,7 @@ export class Furnish {
           T = { x, y: y0, z, ang: Math.atan2(nx, nz) };
         }
         // the lights hang under the ceiling: from above they hide the room, thus they are not drawn
-        if (!CEILING.has(it.kind)) this.put(it.kind, false, T.x, T.y, T.z, T.ang, B.id, U.k, r);
+        if (!CEILING.has(it.kind)) this.put(it.kind, 'room', T.x, T.y, T.z, T.ang, B.id, U.k, r);
         // the middle of the thing: its origin is the middle of its back, against the wall
         list.push({ kind: it.kind, x: T.x + Math.sin(T.ang) * d / 2, z: T.z + Math.cos(T.ang) * d / 2, r: Math.max(w, d) / 2 + 0.1, facts: it.facts || [], basis: it.basis || (rec.id.startsWith('room') ? 'sourced' : 'inferred'), why: rec.id });
       }
@@ -502,10 +517,11 @@ export class Furnish {
         if (!R.inside[c]) continue;
         const [x, z] = R.xz(c % R.ni, Math.floor(c / R.ni)), [a, w] = toAW(B.F, x, z);
         if (huts.some(([a0, a1, w0, w1]) => a > a0 - 1.1 && a < a1 + 1.1 && w > w0 - 1.1 && w < w1 + 1.1)) continue;
+        if ((this.blocked.get(B.id) || []).some(([bx, bz, br]) => Math.hypot(x - bx, z - bz) < br)) continue;
         free.push([x, z]);
       }
       if (free.length < 8) continue;
-      const list = [];
+      const list = this.items.get(`roof:${B.id}`) || []; // a tank can be there already
       // the two lofts of Chan Kwan Leung (陳昆亮) stand on the roof of his own building, 59 (pp318-321;
       // data/routines.json); the map pin of the lofts (place B71) is on the next building, 75
       const rules = B.id === PIGEON_ROOF ? [{ kind: 'pigeon_loft', p: 1, n: [2, 2] }, ...RULES] : RULES;
@@ -516,7 +532,7 @@ export class Furnish {
           const [x, z] = free[Math.floor(r() * free.length)];
           // the lofts and the laundry stand square to the building; the rest at any turn
           const ang = rule.kind === 'pigeon_loft' || rule.kind === 'laundry_pole' ? Math.atan2(B.F.ux, B.F.uz) + (r() < 0.5 ? 0 : Math.PI) : r() * Math.PI * 2;
-          this.put(rule.kind, true, x, B.top, z, ang, B.id, k, r);
+          this.put(rule.kind, 'roof', x, B.top, z, ang, B.id, k, r);
           const dd = (this.kinds[rule.kind]?.size || [0, 0.5])[1] / 2;
           list.push({ kind: rule.kind, x: x + Math.sin(ang) * dd, z: z + Math.cos(ang) * dd, r: rule.kind === 'pigeon_loft' ? 1.7 : 0.6, facts: src.get(rule.kind)?.facts || [], basis: rule.kind === 'pigeon_loft' ? 'sourced' : 'sourced (where each stands: inferred)', why: 'roofs' });
         }
@@ -579,18 +595,22 @@ export class Furnish {
   pick(layers, ray, b, k) {
     const B = this.S.list[b], roof = k >= B.n;
     let best = null;
-    for (const h of [0.05, 0.4, 0.8, 1.3, 1.9, 2.6]) {
+    for (const h of [-0.3, 0.05, 0.4, 0.8, 1.3, 1.9, 2.6, 3.1, 3.6]) {
       const p = layers.floorPoint(ray, b, k, h);
       if (!p) continue;
       const u = roof ? null : layers.roomAt(b, k, p), key = roof ? `roof:${b}` : `${b}:${k}:${u}`;
-      const t = this.thingAt(key, p);
-      if (t) {
+      // the things of the room (or the roof), and the things outside the walls of b (out:b)
+      for (const kk of h >= 0 && h < 2.7 ? [key, `out:${b}`] : [`out:${b}`]) {
+        const t = this.thingAt(kk, p);
+        if (!t) continue;
         const d = Math.hypot(t.x - p.x, t.z - p.z);
-        if (!best || d < best.d) best = { d, key, room: roof ? null : { k, u }, thing: t };
-      } else if (!best && !roof && u !== null) best = { d: Infinity, key, room: { k, u }, thing: null };
+        if (!best || d < best.d) best = { d, key: kk, room: roof || kk.startsWith('out:') ? null : { k, u }, thing: t };
+      }
+      if (!best && !roof && u !== null && h >= 0) best = { d: Infinity, key, room: { k, u }, thing: null };
     }
     return best;
   }
+
 
   // The words of a thing, with its sources.
   describe(t) {
@@ -605,21 +625,24 @@ export class Furnish {
 export function thingsHtml(fu, key, thing, esc) {
   const list = fu.items.get(key);
   if (!list || !list.length) return '';
-  let html = '<h3>WHAT STANDS IN IT</h3>';
+  const out = key.startsWith('out:');
+  let html = `<h3>${out ? 'WHAT IS HERE' : 'WHAT STANDS IN IT'}</h3>`;
   if (thing) {
     const d = fu.describe(thing);
-    html += `<div class="r"><span class="k">this</span><span><b>${esc(d.label)}</b> <span class="tag ${d.basis === 'sourced' ? 'verified' : 'guess'}">${esc(d.basis)}</span></span></div>`;
+    html += `<div class="r"><span class="k">this</span><span><b>${esc(d.label)}</b> <span class="tag ${d.basis === 'sourced' ? 'verified' : 'guess'}">${esc(d.basis)}</span>${thing.note ? `<br>${esc(thing.note)}` : ''}</span></div>`;
     // a fact: its words (a summary of the source), then the source; the quote is verbatim
     for (const f of d.facts.slice(0, 2))
       html += `<div class="sub">${esc(f.text || '')} <span class="n">(${esc(f.source || '')}${f.cite ? `, ${esc(f.cite)}` : ''})</span>${f.quote ? `<br><i>“${esc(String(f.quote).slice(0, 200))}${String(f.quote).length > 200 ? '…' : ''}”</i>` : ''}</div>`;
   }
+  if (out) return `${html}<div class="sub">The water, the power, the post and the refuse of the City: data/utilities.json. The look of each thing has a source; where each one stands is INFERRED.</div>`;
   const n = new Map();
   for (const t of list) n.set(t.kind, (n.get(t.kind) || 0) + 1);
   const words = [...n].map(([k, c]) => `${c > 1 ? `${c} × ` : ''}${esc(fu.describe({ kind: k }).label.replace(/\s*\(.*$/, '').replace(/:.*$/, ''))}`);
-  const why = list[0].why;
+  const why = (list.find((t) => t.why !== 'utilities') || list[0]).why;
   html += `<div>${words.join(' · ')}</div>`;
-  html += `<div class="sub">${why.startsWith('room') ? 'The things of this documented room come from its sources; where each stands is INFERRED.'
-    : why === 'roofs' ? 'Roofs: the kinds and their shares come from the photos of the roofs (City of Darkness Revisited); where each stands is INFERRED.'
-      : `The things of a room of this kind (${esc(why.replace(/_/g, ' '))}) come from the sources of such rooms; which of them stand in this room, and where, is INFERRED.`}</div>`;
+  html += `<div class="sub">${why === 'utilities' ? 'The water, the power and the refuse of the City: data/utilities.json. Where each thing stands is INFERRED.'
+    : why.startsWith('room') ? 'The things of this documented room come from its sources; where each stands is INFERRED.'
+      : why === 'roofs' ? 'Roofs: the kinds and their shares come from the photos of the roofs (City of Darkness Revisited); where each stands is INFERRED.'
+        : `The things of a room of this kind (${esc(why.replace(/_/g, ' '))}) come from the sources of such rooms; which of them stand in this room, and where, is INFERRED.`}</div>`;
   return html;
 }
