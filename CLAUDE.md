@@ -22,6 +22,10 @@
   A wide screen is only a roomier horizontal expansion of the phone design (`src/style.css`:
   the base rules are the phone; the wide-screen rules at the end only give more room). Test at
   390x844 first, then 844x390 and 1440x900.
+- One font only (John, 2026-11-07): Silkscreen, the blocky pixel font, everywhere (`index.html`,
+  `structure.html`, the CSS and every canvas text). Do not add or name any other font. The
+  generic `sans-serif` stays after it only for the glyphs that Silkscreen does not have (the
+  Chinese).
 - The life of the main app is in `src/life/` (since 2026-11-06): the people and their
   households and days, the things in the rooms, the utilities, the ten mysteries and the lit
   windows. `src/streetNames.js` gives the street names. John's aim for it: a rich and accurate

@@ -15,12 +15,13 @@
   --label-bg: #1c1b19;
   --label-ink: #ede6d3;
   --hover: #f3efe3;
-  --pixel: 'Silkscreen', ui-monospace, monospace;
-  --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  /* The one font of the app (John, 2026-11-07): Silkscreen, the blocky pixel font, and no other.
+     sans-serif only gives the glyphs that Silkscreen does not have, such as the Chinese. */
+  --pixel: 'Silkscreen', sans-serif;
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; overflow: hidden; background: var(--fog); color: var(--ink); font-family: var(--mono); }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--fog); color: var(--ink); font-family: var(--pixel); font-size: 10px; line-height: 1.6; }
 button { font: inherit; color: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 #scene { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
@@ -38,7 +39,7 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
   top: 0; left: 0; right: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; row-gap: 5px;
   padding: calc(env(safe-area-inset-top) + 10px) 124px 10px max(14px, env(safe-area-inset-left)); border-width: 0 0 2px;
 }
-#title .t-cn { font-weight: 600; font-size: 16px; letter-spacing: 0.16em; }
+#title .t-cn { font-weight: 700; font-size: 16px; letter-spacing: 0.16em; }
 #title .t-en { font-family: var(--pixel); font-size: 10px; letter-spacing: 0.06em; }
 #title .t-time { flex-basis: 100%; font-family: var(--pixel); font-size: 10px; letter-spacing: 0.04em; }
 /* the colon blinks while the clock runs, thus real time does not look stopped */
@@ -94,8 +95,8 @@ body.menu-open #menu { display: grid; }
 /* the clock: the bar at the top gives the date and the time */
 #clock { grid-area: clock; padding-top: 4px; }
 .clk-row { display: flex; justify-content: space-between; align-items: baseline; }
-#wx { margin: 0 0 12px; font-size: 12.5px; line-height: 1.45; color: var(--ink-2); }
-#wx b { color: var(--ink); font-weight: 600; }
+#wx { margin: 0 0 12px; font-size: 10px; line-height: 1.6; color: var(--ink-2); }
+#wx b { color: var(--ink); font-weight: 700; }
 #spark { position: relative; height: 44px; margin: 0 0 10px; cursor: pointer; border-bottom: 2px solid var(--panel-edge); }
 #spark canvas { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
 #playhead { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--tag); left: 0; }
@@ -123,7 +124,7 @@ body.menu-open #menu { display: grid; }
 #levels li { flex: none; position: relative; }
 #levels button {
   height: 40px; min-width: 52px; padding: 0 8px; border: 2px solid var(--panel-edge); background: var(--panel); cursor: pointer;
-  display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 13px; color: var(--ink);
+  display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--ink);
 }
 #levels button.above { color: var(--ink-3); }
 #levels button.sel { background: var(--accent); color: var(--ink); }
@@ -142,15 +143,15 @@ body.menu-open #menu { display: grid; }
 #src-btn { grid-area: src; padding: 0 8px; }
 
 /* ---- the selected building or person (buildingPanel.js, life/personPanel.js) ---- */
-#bld { z-index: 10; max-height: 52vh; max-height: 52dvh; padding-bottom: env(safe-area-inset-bottom); display: flex; flex-direction: column; font-size: 12.5px; line-height: 1.45; }
+#bld { z-index: 10; max-height: 52vh; max-height: 52dvh; padding-bottom: env(safe-area-inset-bottom); display: flex; flex-direction: column; font-size: 10px; line-height: 1.6; }
 .bld-head { flex: none; display: flex; align-items: center; gap: 6px; border-bottom: 2px solid var(--panel-edge); background: var(--panel); padding: 5px 8px 5px 14px; }
 #bld-head { flex: 1; font-family: var(--pixel); font-size: 10px; letter-spacing: 0.04em; }
 #bld-body { overflow: auto; min-height: 0; padding: 10px 14px 16px; scrollbar-width: thin; scrollbar-color: var(--ink-2) transparent; }
-#bld .nm { font-weight: 600; font-size: 14.5px; }
+#bld .nm { font-weight: 700; font-size: 12px; }
 #bld .sub { color: var(--ink-2); margin-bottom: 2px; }
-#bld .n { color: var(--ink-2); font-size: 10.5px; }
+#bld .n { color: var(--ink-2); font-size: 9px; }
 #bld i { color: var(--ink-2); font-style: normal; }
-#bld b { font-weight: 600; }
+#bld b { font-weight: 700; }
 #bld h3 { margin: 9px 0 3px; padding-top: 6px; border-top: 1px dashed var(--ink-3); font-family: var(--pixel); font-size: 9px; font-weight: 400; letter-spacing: 0.04em; }
 #bld .r { display: flex; gap: 6px; }
 #bld .r .k, #bld .st .k { flex: none; width: 34px; color: var(--ink-2); }
@@ -170,46 +171,46 @@ body.menu-open #menu { display: grid; }
 #bld .follow { margin: 6px 0 2px; padding: 7px 12px; border: 2px solid var(--panel-edge); background: var(--panel); font-family: var(--pixel); font-size: 9px; cursor: pointer; color: var(--ink); }
 #bld .follow.on { background: var(--label-bg); color: var(--label-ink); }
 #bld details[open] summary { margin-bottom: 2px; }
-#bld .who { display: block; width: 100%; text-align: left; margin: 3px 0; padding: 7px 8px; border: 1px solid var(--panel-edge); background: var(--panel); cursor: pointer; font: inherit; font-size: 12.5px; color: var(--ink); }
+#bld .who { display: block; width: 100%; text-align: left; margin: 3px 0; padding: 7px 8px; border: 1px solid var(--panel-edge); background: var(--panel); cursor: pointer; font: inherit; font-size: 10px; color: var(--ink); }
 #bld .who .tt-h { font-family: var(--pixel); font-size: 8px; }
 
 
 /* ---- the tooltip, for a mouse ---- */
 #tooltip {
   position: fixed; pointer-events: none; display: none; max-width: 300px;
-  background: #f3efe2; border: 1px solid #3b372f; padding: 8px 11px; font-size: 12.5px; line-height: 1.45; color: var(--ink);
+  background: #f3efe2; border: 1px solid #3b372f; padding: 8px 11px; font-size: 10px; line-height: 1.6; color: var(--ink);
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.18);
 }
-#tooltip .tt-h { font-weight: 600; font-size: 13px; }
-#tooltip .tt-s { color: var(--ink-2); font-size: 11.5px; }
+#tooltip .tt-h { font-weight: 700; font-size: 11px; }
+#tooltip .tt-s { color: var(--ink-2); font-size: 9px; }
 #tooltip .tt-k { color: var(--ink-2); }
-#tooltip .tt-r { font-size: 11.5px; }
+#tooltip .tt-r { font-size: 9px; }
 #tooltip .tt-r i { color: var(--ink-2); font-style: normal; }
 
 /* ---- the sources (notes.js) ---- */
-#sources, #cases { z-index: 25; overflow: auto; padding: 0 16px calc(18px + env(safe-area-inset-bottom)); font-size: 13.5px; line-height: 1.55; background-image: none; scrollbar-width: thin; }
+#sources, #cases { z-index: 25; overflow: auto; padding: 0 16px calc(18px + env(safe-area-inset-bottom)); font-size: 10px; line-height: 1.7; background-image: none; scrollbar-width: thin; }
 #sources { max-height: 86vh; max-height: 86dvh; }
 #sources h2 { margin-top: 20px; }
 #sources h2 { font-family: var(--pixel); font-weight: 400; font-size: 12px; margin: 0 0 12px; }
-#sources h4 { margin: 14px 0 4px; font-size: 12px; }
+#sources h4 { margin: 16px 0 4px; font-size: 11px; }
 #sources ul { margin: 0; padding-left: 18px; }
 #sources a { color: #8a3d1a; }
 #sources .st { font-family: var(--pixel); font-size: 8px; padding: 1px 4px; margin-right: 4px; vertical-align: 1px; }
 #sources .st.ok { background: #cfe0c8; }
 #sources .st.prov { background: #f0d29a; }
-#src-stats { margin: 0 0 12px; color: var(--ink-2); font-size: 12px; }
-#src-stats b { color: var(--ink); font-weight: 600; }
+#src-stats { margin: 0 0 12px; color: var(--ink-2); font-size: 10px; }
+#src-stats b { color: var(--ink); font-weight: 700; }
 
 /* ---- the mysteries (life/mysteries.js) ---- */
-#cases { max-height: 78vh; max-height: 78dvh; line-height: 1.5; }
+#cases { max-height: 78vh; max-height: 78dvh; line-height: 1.7; }
 #cases .cb-head { padding-top: 18px; }
 #cases .cb-head, #cases h3 { font-family: var(--pixel); font-size: 8px; font-weight: 400; letter-spacing: 0.04em; margin: 0 0 6px; }
 #cases h3 { margin: 10px 0 4px; padding-top: 6px; border-top: 1px dashed var(--ink-3); }
 #cases .sub, #cases .n { color: var(--ink-2); }
 #cases .sub { margin-bottom: 4px; }
-#cases .n { font-size: 11px; }
+#cases .n { font-size: 9px; }
 #cases .zh { color: var(--ink-2); font-weight: 400; }
-#cases .nm { font-weight: 600; font-size: 13.5px; margin: 6px 0 4px; display: flex; align-items: center; gap: 7px; }
+#cases .nm { font-weight: 700; font-size: 11px; margin: 6px 0 4px; display: flex; align-items: center; gap: 7px; }
 .cb-row { display: flex; align-items: flex-start; gap: 8px; width: 100%; text-align: left; padding: 9px 4px; margin: 0; border: 0; border-bottom: 1px dotted var(--ink-3); background: transparent; cursor: pointer; font: inherit; color: var(--ink); }
 .cb-n { flex: none; width: 16px; text-align: right; color: var(--ink-2); font-family: var(--pixel); font-size: 9px; padding-top: 2px; }
 .cb-dot { flex: none; position: relative; display: inline-block; width: 13px; height: 13px; margin-top: 2px; border-radius: 50%; border: 2px solid var(--panel-edge); box-sizing: border-box; }
@@ -242,7 +243,7 @@ body.menu-open #menu { display: grid; }
 .ld-name { align-self: end; }
 #loading[hidden] { display: none; }
 #loading.done { opacity: 0; pointer-events: none; }
-.ld-cn { font-family: var(--mono); font-weight: 600; font-size: 34px; letter-spacing: 0.3em; margin-right: -0.3em; }
+.ld-cn { font-family: var(--pixel); font-weight: 700; font-size: 34px; letter-spacing: 0.3em; margin-right: -0.3em; }
 .ld-en { font-family: var(--pixel); font-size: 15px; letter-spacing: 0.08em; margin-top: 10px; }
 .ld-flower { position: relative; width: clamp(128px, 19vmin, 176px); height: clamp(128px, 19vmin, 176px); flex: none; }
 .ld-flower svg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.3; animation: ld-petal 1.5s linear infinite; will-change: opacity; }

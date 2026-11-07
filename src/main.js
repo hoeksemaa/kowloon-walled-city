@@ -129,7 +129,7 @@ async function init() {
 
   // The plates of the floor layers use the pixel font: wait for it, but not for ever.
   await Promise.race([document.fonts.load('32px Silkscreen'), new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
-  layers.makeTags('Silkscreen, monospace');
+  layers.makeTags('Silkscreen, sans-serif');
   // the names of the streets of the City and of the roads round it (after the font: the plates use it)
   streets = new StreetNames(S, layers, D.context, (x, z) => T.h(x, z));
   scene.add(streets.group);
@@ -520,7 +520,7 @@ function drawDay() {
   g.fillRect(0, 0, (6.95 / 24) * c.width, c.height); // sunrise about 06:57 (env.js)
   g.fillRect((17.75 / 24) * c.width, 0, c.width, c.height); // sunset about 17:45
   g.fillStyle = '#6b6457';
-  g.font = '9px "IBM Plex Mono", monospace';
+  g.font = '8px Silkscreen, sans-serif';
   for (let h = 0; h < 24; h++) g.fillRect((h / 24) * c.width, c.height - (h % 6 ? 4 : 9), 1, h % 6 ? 4 : 9);
   for (const h of [6, 12, 18]) g.fillText(String(h).padStart(2, '0'), (h / 24) * c.width + 2, 10);
 }
