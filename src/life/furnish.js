@@ -129,6 +129,14 @@ const SHAPE = {
   letterbox: (w, d, h) => [box(0, w, 1.0, 1.0 + h, 0, d)],
   roof_hut: (w, d, h) => [box(0, w, 0, h, 0, d), box(-0.1, w + 0.1, h, h + 0.05, -0.1, d + 0.1, 'galvanised')],
 };
+// The places to sleep on a thing, for its depth d: [the part of the depth from the wall, the top
+// of the bed over the floor (as in SHAPE), the rank (0 first)].
+const SLEEP = {
+  bed: (d) => (d >= 1 ? [[0.28, 0.5, 0], [0.72, 0.5, 0]] : [[0.5, 0.5, 0]]),
+  bunk: () => [[0.5, 0.5, 0], [0.5, 1.4, 2]],
+  cot: () => [[0.5, 0.6, 0]],
+  cockloft: () => [[0.3, 2.3, 1], [0.7, 2.3, 1]],
+};
 // The height over the floor where a thing of a 'wall' place hangs, when its shape does not say.
 const CEILING = new Set(['lamp']);
 // Things that stand by a wall, not in the open floor, whatever the recipe says.
@@ -254,6 +262,7 @@ export class Furnish {
     this.cols = {};
     for (const [m, list] of Object.entries(MAT)) this.cols[m] = list.map(lin);
     this.items = new Map(); // "b:k:u" or "roof:b" -> [{ kind, x, z, r, facts, basis, why }]
+    this.furnished = new Set(); // the rooms that furnishUnit has done
     this.protos = new Map(); // a kind (and a shape) -> { geo, n, pos, info, col, layerEnd, mesh, twin }
     this.U = {
       uLift: { value: new Float32Array(16) }, uShowIn: { value: new Float32Array(16) }, uPeelK: { value: -10 },
@@ -419,6 +428,7 @@ export class Furnish {
 
   // Furnish one room (unit) U.
   furnishUnit(U) {
+    this.furnished.add(U.key);
     const B = this.S.list[U.b], plan = B.phaseOf(U.k).plan, unit = plan.units.find((x) => x.id === U.u);
     if (!unit || !unit.cells.length) return;
     const r = mulberry32(((U.b * 73856093) ^ (U.k * 19349663) ^ (U.u * 83492791)) >>> 0);
@@ -521,7 +531,8 @@ export class Furnish {
         // the lights hang under the ceiling: from above they hide the room, thus they are not drawn
         if (!CEILING.has(it.kind)) this.put(it.kind, 'room', T.x, T.y, T.z, T.ang, B.id, U.k, r);
         // the middle of the thing: its origin is the middle of its back, against the wall
-        list.push({ kind: it.kind, x: T.x + Math.sin(T.ang) * d / 2, z: T.z + Math.cos(T.ang) * d / 2, r: Math.max(w, d) / 2 + 0.1, facts: it.facts || [], basis: it.basis || (rec.id.startsWith('room') ? 'sourced' : 'inferred'), why: rec.id });
+        // ox, oz, y, ang: the frame of the thing (the beds of bedSlots)
+        list.push({ kind: it.kind, x: T.x + Math.sin(T.ang) * d / 2, z: T.z + Math.cos(T.ang) * d / 2, r: Math.max(w, d) / 2 + 0.1, ox: T.x, oz: T.z, y: T.y, ang: T.ang, facts: it.facts || [], basis: it.basis || (rec.id.startsWith('room') ? 'sourced' : 'inferred'), why: rec.id });
       }
     }
     this.items.set(U.key, list);
@@ -651,6 +662,23 @@ export class Furnish {
     return best;
   }
 
+
+  // The places to sleep in room `key`, best first: { x, y, z, h } (the middle of the sleeper, on
+  // the top of the bed, and the heading along the bed), or null while the room is not furnished.
+  // A bed takes two side by side, a bunk one on each tier (the upper tier last: it "often holds
+  // bedding, bags and boxes, not a sleeper", data/furnishings.json), a bed space one, a cockloft
+  // two.
+  bedSlots(key) {
+    if (!this.furnished.has(key)) return null;
+    const out = [];
+    for (const t of this.items.get(key) || []) {
+      const slots = SLEEP[t.kind];
+      if (!slots || t.ang === undefined) continue;
+      const d = (this.kinds[t.kind]?.size || [1.9, 1])[1], sx = Math.sin(t.ang), sz = Math.cos(t.ang);
+      for (const [f, top, rank] of slots(d)) out.push({ x: t.ox + sx * f * d, y: t.y + top - 0.06, z: t.oz + sz * f * d, h: t.ang + Math.PI / 2, rank });
+    }
+    return out.sort((a, c) => a.rank - c.rank);
+  }
 
   // The thing outside the walls of b in layer k that the ray meets first, by its box (the things
   // of src/life/facades.js have one: c its middle, u along the wall, w out of it, h the half
