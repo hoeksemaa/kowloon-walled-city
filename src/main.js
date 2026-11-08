@@ -117,6 +117,7 @@ async function init() {
   pop = buildPopulation(S, uses, nav, D.routines, D.people);
   weather = D.weather;
   life = new Life(S, uses, pop, { nav, utilities: D.utilities, weather });
+  life.bedSlots = (key) => furnish.bedSlots(key); // the sleepers lie in the beds of their rooms
   figures = new Figures(life, layers);
   // the lit windows at night: a window glows where someone is awake in the room behind it
   windows = new LitWindows(S, life, uses);
@@ -644,7 +645,9 @@ function frame(now) {
   life.update(clock.day % 7, clock.minute, 4);
   figures.update(now / 1000);
   const mPerPx = (camera.top - camera.bottom) / camera.zoom / innerHeight;
+  const done = furnish.doneTo;
   furnish.update(mPerPx);
+  if (furnish.doneTo !== done) life.refreshBeds(); // more rooms have their beds
   layers.setTier(mPerPx);
   windows.update(night, layers.spread < 0.01 && layers.peelK < 0);
   if (state.person >= 0 && state.follow) {

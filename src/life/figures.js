@@ -75,31 +75,36 @@ export function lookOf(p) {
 }
 
 // The parts of a figure (metres, standing, facing +z): 0 left leg, 1 right leg, 2 body, 3 head,
-// 4 hat, 5 bag.
+// 4 hat, 5 bag, 6 left arm, 7 right arm. The faces that never show (the tops of the legs and the
+// undersides of the body, the head and the hat, inside the next part or toward the floor) are
+// left out: there are 35,000 figures.
 function figureGeometry() {
   const P = [], N = [], part = [], idx = [];
-  const box = (x0, x1, y0, y1, z0, z1, q) => {
+  const box = (x0, x1, y0, y1, z0, z1, q, skip = '') => {
     const faces = [
-      [[1, 0, 0], [[x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [x1, y0, z1]]],
-      [[-1, 0, 0], [[x0, y0, z1], [x0, y1, z1], [x0, y1, z0], [x0, y0, z0]]],
-      [[0, 1, 0], [[x0, y1, z0], [x0, y1, z1], [x1, y1, z1], [x1, y1, z0]]],
-      [[0, -1, 0], [[x0, y0, z1], [x0, y0, z0], [x1, y0, z0], [x1, y0, z1]]],
-      [[0, 0, 1], [[x1, y0, z1], [x1, y1, z1], [x0, y1, z1], [x0, y0, z1]]],
-      [[0, 0, -1], [[x0, y0, z0], [x0, y1, z0], [x1, y1, z0], [x1, y0, z0]]],
+      ['+x', [1, 0, 0], [[x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [x1, y0, z1]]],
+      ['-x', [-1, 0, 0], [[x0, y0, z1], [x0, y1, z1], [x0, y1, z0], [x0, y0, z0]]],
+      ['+y', [0, 1, 0], [[x0, y1, z0], [x0, y1, z1], [x1, y1, z1], [x1, y1, z0]]],
+      ['-y', [0, -1, 0], [[x0, y0, z1], [x0, y0, z0], [x1, y0, z0], [x1, y0, z1]]],
+      ['+z', [0, 0, 1], [[x1, y0, z1], [x1, y1, z1], [x0, y1, z1], [x0, y0, z1]]],
+      ['-z', [0, 0, -1], [[x0, y0, z0], [x0, y1, z0], [x1, y1, z0], [x1, y0, z0]]],
     ];
-    for (const [n, vs] of faces) {
+    for (const [name, n, vs] of faces) {
+      if (skip.includes(name)) continue;
       const o = P.length / 3;
       for (const v of vs) { P.push(...v); N.push(...n); part.push(q); }
       idx.push(o, o + 1, o + 2, o, o + 2, o + 3);
     }
   };
-  box(-0.15, -0.02, 0, 0.8, -0.09, 0.09, 0);
-  box(0.02, 0.15, 0, 0.8, -0.09, 0.09, 1);
-  box(-0.2, 0.2, 0.78, 1.4, -0.12, 0.12, 2);
+  box(-0.15, -0.02, 0, 0.8, -0.09, 0.09, 0, '+y');
+  box(0.02, 0.15, 0, 0.8, -0.09, 0.09, 1, '+y');
+  box(-0.2, 0.2, 0.78, 1.4, -0.12, 0.12, 2, '-y');
   box(-0.1, 0.1, 1.42, 1.66, -0.11, 0.11, 3);
-  box(-0.16, 0.16, 1.63, 1.67, -0.16, 0.18, 4);
-  box(-0.11, 0.11, 1.66, 1.74, -0.12, 0.12, 4);
-  box(0.2, 0.31, 0.86, 1.16, -0.13, 0.13, 5);
+  box(-0.16, 0.16, 1.63, 1.67, -0.16, 0.18, 4, '-y');
+  box(-0.11, 0.11, 1.66, 1.74, -0.12, 0.12, 4, '-y');
+  box(0.27, 0.37, 0.86, 1.12, -0.12, 0.12, 5, '-y');
+  box(-0.27, -0.2, 0.84, 1.38, -0.055, 0.055, 6);
+  box(0.2, 0.27, 0.84, 1.38, -0.055, 0.055, 7);
   const g = new THREE.InstancedBufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
   g.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
@@ -109,25 +114,79 @@ function figureGeometry() {
   return g;
 }
 
-// The figure in GLSL: the pose, the size, the heading, the layer, and what hides it.
+// The colours of the quilts over the sleepers (as the beds of src/life/furnish.js).
+const QUILT = ['#d88a8a', '#8aa8d0', '#e0c080', '#c0a0c8', '#e8d8c8'].map((h) => { const c = lin(h); return `vec3(${c.r.toFixed(4)}, ${c.g.toFixed(4)}, ${c.b.toFixed(4)})`; });
+
+// The figure in GLSL: the activity (acts.js ACT: the arms, the lean of the body, the nod and the
+// turn of the head), the pose, the size, the heading, the layer, and what hides it. Each figure
+// has its own phase, thus the people of a room do not move as one. A sleeper lies under a quilt
+// and breathes. How each activity moves is INFERRED.
 const FIG_GLSL = `
 attribute float part; attribute vec3 iPos; attribute vec4 iMisc; attribute vec3 iTop; attribute vec3 iBot;
-attribute vec4 iHat; attribute vec4 iBag; attribute float iSize;
+attribute vec4 iHat; attribute vec4 iBag; attribute float iSize; attribute float iAct;
 uniform float uLift[16]; uniform float uShowIn[16]; uniform float uPeelK; uniform float uTime; uniform float uSelId;
 vec3 rotX(vec3 v, float a, float y0) { float c = cos(a), s = sin(a); v.y -= y0; return vec3(v.x, c * v.y - s * v.z + y0, s * v.y + c * v.z); }
-void fig(out vec3 P, out vec3 Nn, out float hidden) {
+vec3 rotZ(vec3 v, float a, vec2 o) { float c = cos(a), s = sin(a); v.xy -= o; return vec3(c * v.x - s * v.y + o.x, s * v.x + c * v.y + o.y, v.z); }
+vec3 rotY(vec3 v, float a) { float c = cos(a), s = sin(a); return vec3(c * v.x + s * v.z, v.y, -s * v.x + c * v.z); }
+float pulse(float x, float k) { return pow(max(0.0, sin(x)), k); }
+void fig(out vec3 P, out vec3 Nn, out float hidden, out float quilt) {
   vec3 p = position, n = normal;
-  float pose = iMisc.z;
-  hidden = 0.0;
-  if ((part > 3.5 && part < 4.5 && iHat.a < 0.5) || (part > 4.5 && iBag.a < 0.5)) hidden = 1.0;
+  float pose = iMisc.z, t = uTime;
+  float ph = fract(sin(float(gl_InstanceID) * 12.9898) * 43758.5453) * 6.2832;
+  bool lie = pose > 1.5 && pose < 2.5, walk = pose > 2.5;
+  int A = int(iAct + 0.5);
+  hidden = 0.0; quilt = 0.0;
+  if ((part > 3.5 && part < 4.5 && (iHat.a < 0.5 || lie)) || (part > 4.5 && part < 5.5 && (iBag.a < 0.5 || lie))) hidden = 1.0;
+  // the arms: pitch (forward is less than 0) and spread (out is more than 0) at the shoulder;
+  // the lean of the body at the hip, the nod and the turn of the head, a bob of the whole
+  float aL = 0.0, aR = 0.0, sL = 0.05, sR = 0.05, lean = 0.0, nod = 0.0, yaw = 0.0, bob = 0.0, legA = 0.0;
+  float w = sin(t * 8.0 + iPos.x * 3.1 + iPos.z * 1.7);
+  if (walk) {
+    legA = w * 0.5; bob = abs(w) * 0.025;
+    if (A == 8) { aL = -1.1; aR = -1.1; sL = -0.1; sR = -0.1; lean = -0.05; }
+    else { aL = -w * 0.45; aR = w * 0.45; }
+  } else if (A == 0) { aL = 0.05 * sin(t * 0.9 + ph); aR = -aL; yaw = 0.4 * sin(t * 0.31 + ph); }
+  else if (A == 2) { sL = 0.02; sR = 0.02; }
+  else if (A == 3) { aL = -0.35; aR = -0.35; sL = -0.05; sR = -0.05; nod = 0.08 + 0.06 * sin(t * 0.5 + ph); yaw = 0.3 * sin(t * 0.23 + ph); }
+  else if (A == 4) { aL = -1.0; sL = -0.15; aR = -1.0 - 0.75 * pulse(t * 2.4 + ph, 2.0); sR = -0.2; nod = 0.15; }
+  else if (A == 5) { aL = -0.95 + 0.07 * sin(t * 9.0 + ph); aR = -0.95 + 0.07 * sin(t * 9.0 + ph + 1.7); sL = -0.15; sR = -0.15; lean = 0.15; nod = 0.3; }
+  else if (A == 6) { aL = -0.85; sL = -0.1; aR = -0.9 - 0.6 * abs(sin(t * 3.5 + ph)); sR = -0.05; lean = 0.18; nod = 0.25; }
+  else if (A == 7) { aL = -0.7; sL = -0.05; aR = -1.0 + 0.25 * sin(t * 4.5 + ph); sR = 0.12 * cos(t * 4.5 + ph) - 0.05; lean = 0.08; nod = 0.2; }
+  else if (A == 8) { aL = -1.15; aR = -1.15; sL = -0.12; sR = -0.12; }
+  else if (A == 9) { float sw = 0.35 * sin(t * 2.8 + ph); aL = -0.75; aR = -0.6; sL = -0.1 - sw; sR = -0.1 + sw; lean = 0.3; nod = 0.2; }
+  else if (A == 10) { aR = -0.25 - 0.6 * pulse(t * 1.6 + ph, 3.0); sR = 0.1; aL = -0.1; nod = 0.07 * sin(t * 3.1 + ph); yaw = 0.25 * sin(t * 0.4 + ph); }
+  else if (A == 11) { aL = -1.25; aR = -1.25; sL = -0.05 + 0.2 * pulse(t * 3.0 + ph, 1.0); sR = -0.05 + 0.2 * pulse(t * 3.0 + ph + 2.0, 1.0); lean = 0.2; nod = 0.25; }
+  else if (A == 12) { lean = 0.45; aL = -0.75 + 0.18 * sin(t * 6.0 + ph); aR = -0.75 - 0.18 * sin(t * 6.0 + ph); sL = -0.1; sR = -0.1; nod = 0.15; }
+  else if (A == 13) { float j = t * 5.0 + ph; bob = 0.13 * abs(sin(j)); aL = -2.5 + 0.4 * sin(j); aR = -2.5 - 0.4 * sin(j); sL = 0.3; sR = 0.3; legA = 0.25 * sin(j); }
+  else if (A == 14) { aL = -1.25; aR = -1.25; sL = -0.28; sR = -0.28; lean = 0.35 * pulse(t * 1.1 + ph, 2.0); nod = lean * 0.5; }
+  else if (A == 15) { float e = t * 0.8 + ph; aL = -1.2 - 0.5 * sin(e); aR = -1.2 - 0.5 * sin(e + 0.6); sL = 0.35 * (0.5 + 0.5 * cos(e)); sR = sL; bob = -0.05 * (0.5 + 0.5 * sin(e)); yaw = 0.3 * sin(e); }
+  else if (A == 16) { aL = -2.6 + 0.15 * sin(t * 2.0 + ph); aR = -2.7 - 0.15 * sin(t * 2.0 + ph); sL = 0.1; sR = 0.1; nod = -0.2; }
+  else if (A == 17) { aL = -0.8; sL = -0.12; aR = -0.95 + 0.04 * sin(t * 11.0 + ph); sR = -0.18 + 0.03 * sin(t * 7.0 + ph); lean = 0.18; nod = 0.32; }
   if (part < 1.5) {
-    float a = 0.0;
-    if (pose > 2.5) a = sin(uTime * 8.0 + iPos.x * 3.1 + iPos.z * 1.7) * 0.5 * (part < 0.5 ? 1.0 : -1.0);
-    else if (pose > 0.5 && pose < 1.5) a = -1.5;
+    float a = legA * (part < 0.5 ? 1.0 : -1.0);
+    if (pose > 0.5 && pose < 1.5) a = -1.5;
     p = rotX(p, a, 0.8); n = rotX(n, a, 0.0);
+  } else {
+    if (part > 5.5) {
+      float side = part > 6.5 ? 1.0 : -1.0, a = part > 6.5 ? aR : aL, sp = (part > 6.5 ? sR : sL) * side;
+      p = rotZ(p, sp, vec2(0.235 * side, 1.37)); n = rotZ(n, sp, vec2(0.0));
+      p = rotX(p, a, 1.37); n = rotX(n, a, 0.0);
+    }
+    if (part > 2.5 && part < 4.5) { p = rotY(p, yaw); n = rotY(n, yaw); p = rotX(p, nod, 1.42); n = rotX(n, nod, 0.0); }
+    p = rotX(p, lean, 0.8); n = rotX(n, lean, 0.0);
+  }
+  p.y += bob;
+  if (lie && A == 2) {
+    // under a quilt: the legs, the body and the arms one wide lump; the body breathes
+    if (part < 2.5 || part > 5.5) {
+      quilt = 1.0;
+      if (part < 1.5) p.x = p.x * 1.4 + (part < 0.5 ? 0.03 : -0.03);
+      p.z *= 1.15;
+      if (part > 1.5 && part < 2.5) p.z *= 1.0 + 0.08 * sin(t * 1.3 + ph);
+    }
   }
   if (pose > 0.5 && pose < 1.5) p.y -= 0.36;
-  if (pose > 1.5 && pose < 2.5) { p = vec3(p.x, p.z + 0.14, 0.82 - p.y); n = vec3(n.x, n.z, -n.y); }
+  if (lie) { p = vec3(p.x, p.z + 0.14, 0.82 - p.y); n = vec3(n.x, n.z, -n.y); }
   float sel = abs(float(gl_InstanceID) - uSelId) < 0.5 ? 1.35 : 1.0;
   p *= iSize * sel;
   float c = cos(iMisc.x), s = sin(iMisc.x);
@@ -138,6 +197,10 @@ void fig(out vec3 P, out vec3 Nn, out float hidden) {
   if (iMisc.w > 1.5 || (iMisc.w > 0.5 && uShowIn[L] < 0.5) || (uPeelK > -1.0 && iMisc.y > uPeelK + 0.5)) hidden = 1.0;
   if (hidden > 0.5) p = vec3(0.0, -1.0e5, 0.0);
   P = p; Nn = n;
+}
+vec3 quiltColour() {
+  float q = floor(fract(sin(float(gl_InstanceID) * 78.233) * 43758.5453) * 5.0);
+  return q < 0.5 ? ${QUILT[0]} : q < 1.5 ? ${QUILT[1]} : q < 2.5 ? ${QUILT[2]} : q < 3.5 ? ${QUILT[3]} : ${QUILT[4]};
 }`;
 
 export class Figures {
@@ -146,6 +209,7 @@ export class Figures {
     const N = life.N, geo = figureGeometry();
     this.posAttr = new THREE.InstancedBufferAttribute(life.pos, 3).setUsage(THREE.DynamicDrawUsage);
     this.miscAttr = new THREE.InstancedBufferAttribute(life.misc, 4).setUsage(THREE.DynamicDrawUsage);
+    this.actAttr = new THREE.InstancedBufferAttribute(life.act, 1).setUsage(THREE.DynamicDrawUsage);
     const top = new Float32Array(N * 3), bot = new Float32Array(N * 3), hat = new Float32Array(N * 4), bag = new Float32Array(N * 4), size = new Float32Array(N);
     this.looks = life.persons.map((p, i) => {
       const L = lookOf(p), t = lin(L.top), b = lin(L.bottom);
@@ -157,6 +221,7 @@ export class Figures {
     });
     geo.setAttribute('iPos', this.posAttr);
     geo.setAttribute('iMisc', this.miscAttr);
+    geo.setAttribute('iAct', this.actAttr);
     geo.setAttribute('iTop', new THREE.InstancedBufferAttribute(top, 3));
     geo.setAttribute('iBot', new THREE.InstancedBufferAttribute(bot, 3));
     geo.setAttribute('iHat', new THREE.InstancedBufferAttribute(hat, 4));
@@ -173,9 +238,11 @@ export class Figures {
       Object.assign(sh.uniforms, this.U);
       sh.vertexShader = sh.vertexShader
         .replace('#include <common>', `#include <common>\n${FIG_GLSL}`)
-        .replace('#include <beginnormal_vertex>', 'vec3 figP, figN; float figH; fig(figP, figN, figH);\nvec3 objectNormal = figN;')
+        .replace('#include <beginnormal_vertex>', 'vec3 objectNormal = figN;')
         .replace('#include <begin_vertex>', 'vec3 transformed = figP;')
-        .replace('#include <color_vertex>', `vColor = part < 1.5 ? iBot : part < 2.5 ? iTop : part < 3.5 ? vec3(${skin.r.toFixed(4)}, ${skin.g.toFixed(4)}, ${skin.b.toFixed(4)}) : part < 4.5 ? iHat.rgb : iBag.rgb;
+        .replace('#include <color_vertex>', `vec3 figP, figN; float figH, figQ; fig(figP, figN, figH, figQ); // before the colour: a sleeper's quilt
+  vColor = part < 1.5 ? iBot : part < 2.5 ? iTop : part < 3.5 ? vec3(${skin.r.toFixed(4)}, ${skin.g.toFixed(4)}, ${skin.b.toFixed(4)}) : part < 4.5 ? iHat.rgb : part < 5.5 ? iBag.rgb : iTop;
+  if (figQ > 0.5) vColor = quiltColour();
   if (abs(float(gl_InstanceID) - uSelId) < 0.5) vColor = mix(vColor, vec3(1.0, 0.55, 0.12), 0.35);`);
     };
     m.customProgramCacheKey = () => 'kwc-figures';
@@ -185,7 +252,7 @@ export class Figures {
     // the pick: the number of the figure + 1 in red and green, and layer + 16 kind in blue
     const pickMat = new THREE.ShaderMaterial({
       uniforms: this.U,
-      vertexShader: `${FIG_GLSL}\nflat out float vId; flat out float vL;\nvoid main() { vec3 P, Nn; float h; fig(P, Nn, h); vId = float(gl_InstanceID) + 1.0; vL = iMisc.y; gl_Position = projectionMatrix * modelViewMatrix * vec4(P, 1.0); }`,
+      vertexShader: `${FIG_GLSL}\nflat out float vId; flat out float vL;\nvoid main() { vec3 P, Nn; float h, q; fig(P, Nn, h, q); vId = float(gl_InstanceID) + 1.0; vL = iMisc.y; gl_Position = projectionMatrix * modelViewMatrix * vec4(P, 1.0); }`,
       fragmentShader: `flat in float vId; flat in float vL;\nvoid main() { gl_FragColor = vec4(mod(vId, 256.0) / 255.0, floor(vId / 256.0) / 255.0, (vL + 16.0 * ${PERSON_KIND}.0) / 255.0, 1.0); }`,
     });
     this.pick = new THREE.Mesh(geo, pickMat);
@@ -204,6 +271,7 @@ export class Figures {
     U.uTime.value = time;
     this.posAttr.needsUpdate = true;
     this.miscAttr.needsUpdate = true;
+    this.actAttr.needsUpdate = true;
   }
 
   select(i) { this.U.uSelId.value = i >= 0 ? i : -10; }

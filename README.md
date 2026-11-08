@@ -348,12 +348,25 @@ a corridor is lit here and there (INFERRED). "The Walled City was often hit by p
 buildings near each other go dark for half an hour or more. When, and for how long, is
 INFERRED.
 
+What each person does shows in the body (`src/life/acts.js`, `src/life/figures.js`). Each doing
+of a plan gives one activity: sleep, eat, sew or pack, work at a bench, cook, carry, sweep, talk,
+play mahjong, wash, play, pray, exercise, reach up, write or rest. A person "at the workshop"
+does the work of its trade: a garment worker sews, a metal worker works at a bench. The doings
+have their sources in the plans; the activity of each trade and how each activity moves are
+INFERRED. At night a sleeper lies under a quilt in a bed of the room: a bed, a bunk, a bed space
+or a cockloft (閣仔) of `data/furnishings.json`. The lower tier of a bunk fills first, because
+the upper tier often holds bedding, not a sleeper (F53). When a room has more sleepers than
+beds, the others sleep on the floor. Which sleeper takes which bed is INFERRED.
+
 The rooms and the roofs hold the things of `data/furnishings.json` (`docs/furnishings.md`):
 the recipe of each kind of room comes from the photos and the texts of the sources, and a
 documented room has its own list. Where each thing stands is INFERRED. The things show where
 the floors show (pulled apart, or the peeled storey), and the small things show only near
 the camera. Click a thing to see what it is and its source; the panel of a room lists its
-things and the people in it now.
+things and the people in it now. The outer walls of the flats have the caged balconies, one on
+each floor, with laundry, pot plants and songbirds, and the bamboo laundry poles, awnings and
+air-conditioners of the photos (`src/life/facades.js`). The shares come from the photos of the
+outer facades; the cages over the inner lanes are INFERRED.
 
 ### The utilities
 

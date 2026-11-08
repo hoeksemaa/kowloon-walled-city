@@ -9,6 +9,7 @@
 import { Nav, WALK, CLIMB } from './nav.js';
 import { planDay, planHouse, OUT } from './routines.js';
 import { mulberry32 } from '../util.js';
+import { ACT, SITS, STANDS, CARRY, actOf } from './acts.js';
 
 // The node kinds of nav.js that are open to the sky (drawn always); the others are inside.
 const OPEN_KIND = new Set([0, 5, 7, 8, 9]); // lane, street, bridge, roof, roofedge
@@ -37,6 +38,13 @@ export class Life {
     const N = (this.N = this.persons.length);
     this.pos = new Float32Array(N * 3);
     this.misc = new Float32Array(N * 4); // heading, layer, pose, flags (1 inside, 2 hidden)
+    this.act = new Float32Array(N); // what the body does (acts.js ACT)
+    // The beds: bedSlots(key) gives the places to sleep of a room, best first ({ x, y, z, h }:
+    // the middle of the sleeper, the top of the bed, the heading), or null while the room is
+    // not furnished (main.js sets it from src/life/furnish.js). bedUse: key -> the sleeper of
+    // each slot (-1: free).
+    this.bedSlots = null;
+    this.bedUse = new Map();
     this.state = this.persons.map(() => ({ ev: null, ei: -1, cur: null, spot: null, trip: null, wait: null, next: null }));
     this.outTree = nav.tree(nav.exits);
     this.cache = new Map();
@@ -488,6 +496,7 @@ export class Life {
   // Put person i at a place, still.
   settle(i, pl, doing, slot = null) {
     const s = this.state[i];
+    this.release(i);
     s.cur = pl; s.trip = null; s.wait = null;
     s.spot = this.spot(i, pl);
     s.doing = doing; s.slot = slot;
@@ -496,12 +505,46 @@ export class Life {
 
   draw(i) {
     const s = this.state[i], o = i * 3, m = i * 4;
-    if (!s.spot) { this.misc[m + 3] = 2; return; }
+    if (!s.spot) { this.misc[m + 3] = 2; this.act[i] = ACT.idle; return; }
+    const act = actOf(s.doing, s.cur?.cat);
+    this.act[i] = act;
     this.pos[o] = s.spot[0]; this.pos[o + 1] = s.spot[1]; this.pos[o + 2] = s.spot[2];
     this.misc[m] = (this.persons[i].seed * 6.283) % 6.283;
     this.misc[m + 1] = s.spot[3];
-    this.misc[m + 2] = /asleep|a nap/.test(s.doing || '') ? POSE.lie : SIT.test(s.doing || '') ? POSE.sit : POSE.stand;
+    this.misc[m + 2] = act === ACT.sleep ? POSE.lie : SITS.has(act) ? POSE.sit : STANDS.has(act) ? POSE.stand : SIT.test(s.doing || '') ? POSE.sit : POSE.stand;
     this.misc[m + 3] = s.spot[4] ? 1 : 0;
+    // asleep in a room: in a free bed of it, if it has one (else on the floor)
+    if (act === ACT.sleep && s.cur?.kind === 'unit' && this.bedSlots) {
+      const key = s.cur.key;
+      if (!s.bed || s.bed.key !== key) {
+        this.release(i);
+        const slots = this.bedSlots(key);
+        if (slots && slots.length) {
+          if (!this.bedUse.has(key)) this.bedUse.set(key, new Int32Array(slots.length).fill(-1));
+          const use = this.bedUse.get(key), j = use.indexOf(-1);
+          if (j >= 0) { use[j] = i; s.bed = { key, slot: slots[j], j }; }
+        }
+      }
+      if (s.bed) { const b = s.bed.slot; this.pos[o] = b.x; this.pos[o + 1] = b.y; this.pos[o + 2] = b.z; this.misc[m] = b.h; }
+    } else this.release(i);
+  }
+
+  // Person i leaves the bed (it is free for another).
+  release(i) {
+    const s = this.state[i];
+    if (!s.bed) return;
+    const use = this.bedUse.get(s.bed.key);
+    if (use && use[s.bed.j] === i) use[s.bed.j] = -1;
+    s.bed = null;
+  }
+
+  // The rooms of a layer are furnished: the sleepers on the floor of a room that has beds now
+  // go to them.
+  refreshBeds() {
+    for (let i = 0; i < this.N; i++) {
+      const s = this.state[i];
+      if (!s.trip && !s.bed && s.cur?.kind === 'unit' && this.act[i] === ACT.sleep) this.draw(i);
+    }
   }
 
   // The plans of a day for every person, and where each one is at minute 0 of it.
@@ -557,8 +600,10 @@ export class Life {
           if (path === null) this.settle(i, s.wait.pl, s.wait.doing, s.wait.x);
           else if (path !== undefined) {
             const sb = this.spot(i, s.wait.pl);
+            this.release(i);
             s.trip = this.trip(i, path, s.spot, sb, Math.max(s.wait.t, W - 0.5));
             s.trip.to = s.wait.pl; s.trip.doing = s.wait.doing; s.trip.sb = sb; s.trip.slot = s.wait.x;
+            s.trip.act = CARRY.test(s.wait.doing || '') ? ACT.carry : ACT.walk;
             s.wait = null;
           }
         }
@@ -598,6 +643,7 @@ export class Life {
     this.misc[m + 1] = f < 0.5 ? tr.lay[j] : tr.lay[j + 1];
     this.misc[m + 2] = POSE.walk;
     this.misc[m + 3] = tr.ins[j] && tr.ins[j + 1] ? 1 : 0;
+    this.act[i] = tr.act ?? ACT.walk;
   }
 
   // What person i does now, and where: for the panel.
