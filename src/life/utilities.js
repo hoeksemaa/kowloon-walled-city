@@ -289,5 +289,6 @@ export function placeUtilities(fu, U) {
   for (const [k, A] of pipes.thin.m) for (const a of parts(k, A)) fu.layers.addLayer(k, a, { shadow: false, tier: 1 }); // thin: near the camera only
   fu.layers.addSpan(pipes.spans.typed());
   for (const [key, t] of pipes.items) if (t.x !== undefined) add(key, t.kind, t.x, t.z, t.r, '', { k0: t.k0, k1: t.k1 });
+  fu.risers = pipes.risers; // src/life/facades.js keeps the cages off them
   fu.pipeVerts = pipes.thick.verts + pipes.thin.verts + pipes.spans.size;
 }

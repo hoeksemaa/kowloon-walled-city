@@ -68,10 +68,12 @@ const pieces = (sag) => (sag > 0.2 ? 6 : sag > 0.06 ? 4 : 2);
 
 // Build the pipes and cables. S: the structure; walls: a Walls (walls.js); opts.named: the
 // lane cells of the named lanes (a Set). Returns { thick, thin: Layered arrays (by layer),
-// spans: Arrays (the normal view only), items: [[key, item]] for the pick }.
+// spans: Arrays (the normal view only), items: [[key, item]] for the pick, risers: the groups of
+// pipes down the facades, { b, x, z } }.
 export function buildPipes(S, walls, { named = new Set(), tanks = new Set() } = {}) {
   const L = S.L;
   const thick = new Layered(), thin = new Layered(), spans = new Arrays(), items = [];
+  const risersAt = []; // the groups of pipes down the facades: { b, x, z } (for src/life/facades.js)
   // k0..k1: the floor layers where the pick finds it (pipes on a facade: all of them)
   const item = (b, kind, x, z, r, k0 = 0, k1 = k0) => items.push([`out:${b}`, { kind, x, z, r, k0, k1 }]);
   const isNamed = (x, z) => { const i = Math.floor(x - L.x0), j = Math.floor(z - L.z0); return named.has(j * L.W + i); };
@@ -312,6 +314,7 @@ export function buildPipes(S, walls, { named = new Set(), tanks = new Set() } = 
       groups.push(c);
     }
     const tank = tanks.has(b.id);
+    for (const G of groups) risersAt.push({ b: b.id, x: G.x, z: G.z });
     for (const G of groups) {
       const np = (tank ? 2 : 1) + Math.floor(r() * 2);
       for (let p = 0; p < np; p++) {
@@ -414,7 +417,7 @@ export function buildPipes(S, walls, { named = new Set(), tanks = new Set() } = 
     return o >= 0 && !!S.fills(o, y);
   }
 
-  return { thick, thin, spans, items };
+  return { thick, thin, spans, items, risers: risersAt };
 }
 
 // The nearest point to (x, z) on the walls of rings, with the outward normal and the direction

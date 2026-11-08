@@ -20,6 +20,7 @@ import { CORR, LANDING, FLIGHT } from '../city/plan.js';
 import { toAW } from '../city/poly.js';
 import { mulberry32 } from '../util.js';
 import { placeUtilities } from './utilities.js';
+import { placeFacades } from './facades.js';
 
 const PIGEON_ROOF = 59;
 export const ITEM_KIND = 9; // the kind of a thing in aInfo (cityLayers.js: the pick gives layer + 16 kind)
@@ -40,8 +41,9 @@ const lin = (hex) => new THREE.Color(hex);
 
 // The parts of each kind, in metres, in its own frame: x along the wall (width w), y up (height
 // h), z out of the wall into the room (depth d), from 0 at the wall. A part: [x0, x1, y0, y1,
-// z0, z1, material slot (0: first material, 1: second, 2: a picked accent, or a material
-// name), shape ('b' box, 'c' 8-sided cylinder)].
+// z0, z1, material slot (0: first material, 1: second, 2: a picked accent, 3: a light, 4: a
+// grille of bars in the colour of the accent, or a material name), shape ('b' box, 'c' 6-sided
+// cylinder, 's' a sheet that falls from y1 at z0 to y0 at z1)].
 const box = (x0, x1, y0, y1, z0, z1, m = 0, s = 'b') => [x0, x1, y0, y1, z0, z1, m, s];
 const legs = (w, d, h, t = 0.04, m = 0) => [box(0, t, 0, h, 0, t, m), box(w - t, w, 0, h, 0, t, m), box(0, t, 0, h, d - t, d, m), box(w - t, w, 0, h, d - t, d, m)];
 const SHAPE = {
@@ -121,9 +123,6 @@ const SHAPE = {
     ...[0.1, 0.45, 0.8, 1.2, 1.55].filter(() => r() < 0.8).map((x) => box(x * (w / 2), x * (w / 2) + 0.3, 1.25 + r() * 0.2, 1.85, 0, 0.02, 2))],
   tv_aerial: (w, d, h) => [box(0, 0.04, 0, h, 0, 0.04, 'aluminium'), box(-w / 2, w / 2, h - 0.05, h - 0.02, 0, 0.02, 'aluminium'), box(-w * 0.4, w * 0.4, h - 0.45, h - 0.42, 0, 0.02, 'aluminium'), box(-w * 0.3, w * 0.3, h - 0.85, h - 0.82, 0, 0.02, 'aluminium')],
   sign: (w, d, h) => [box(0, w, 0, h, 0, d)],
-  window_cage: (w, d, h) => [box(0, w, 0, 0.05, 0, d), box(0, w, h - 0.05, h, 0, d), box(0, 0.04, 0, h, d - 0.04, d), box(w - 0.04, w, 0, h, d - 0.04, d),
-    ...[0.25, 0.5, 0.75].map((t) => box(w * t - 0.015, w * t + 0.015, 0, h, d - 0.02, d)), box(0, w, h * 0.45, h * 0.45 + 0.03, d - 0.03, d)],
-  awning: (w, d) => [box(0, w, 0, 0.05, 0, d, 2)],
   washing_machine: (w, d, h) => [box(0, w, 0, h, 0, d)],
   freezer: (w, d, h) => [box(0, w, 0, h, 0, d)],
   ladder: (w, d, h) => [box(0, 0.05, 0, h, 0, 0.05), box(w - 0.05, w, 0, h, 0, 0.05), ...[0.3, 0.6, 0.9, 1.2, 1.5, 1.8].filter((y) => y < h).map((y) => box(0, w, y, y + 0.03, 0, 0.04))],
@@ -162,8 +161,20 @@ function protoGeometry(parts, colourOf) {
   const P = [], N = [], C = [], A = [], idx = [];
   const put = (x, y, z, nx, ny, nz, col, acc) => { P.push(x, y, z); N.push(nx, ny, nz); C.push(col.r, col.g, col.b); A.push(acc); };
   for (const [x0, x1, y0, y1, z0, z1, m, shape] of parts) {
-    // slot 2: the accent of each thing; slot 3: a light that glows (its colour is the accent)
-    const acc = m === 2 ? 1 : m === 3 ? 2 : 0, col = acc ? WHITE : colourOf(m);
+    // slot 2: the accent of each thing; slot 3: a light that glows (its colour is the accent);
+    // slot 4: a grille of bars (the shader cuts the holes), in the colour of the accent
+    const acc = m === 2 ? 1 : m === 3 ? 2 : m === 4 ? 3 : 0, col = acc ? WHITE : colourOf(m);
+    if (shape === 's') {
+      // a sheet: its upper face to the sky, its lower face to the ground
+      const dy = y1 - y0, dz = z1 - z0, l = Math.hypot(dy, dz) || 1, ny = dz / l, nz = dy / l;
+      let o = P.length / 3;
+      put(x0, y1, z0, 0, ny, nz, col, acc); put(x1, y1, z0, 0, ny, nz, col, acc); put(x1, y0, z1, 0, ny, nz, col, acc); put(x0, y0, z1, 0, ny, nz, col, acc);
+      idx.push(o, o + 2, o + 1, o, o + 3, o + 2);
+      o = P.length / 3;
+      put(x0, y1, z0, 0, -ny, -nz, col, acc); put(x1, y1, z0, 0, -ny, -nz, col, acc); put(x1, y0, z1, 0, -ny, -nz, col, acc); put(x0, y0, z1, 0, -ny, -nz, col, acc);
+      idx.push(o, o + 1, o + 2, o, o + 2, o + 3);
+      continue;
+    }
     if (shape === 'c') {
       const cx = (x0 + x1) / 2, cz = (z0 + z1) / 2, rx = (x1 - x0) / 2, rz = (z1 - z0) / 2, n = 6;
       for (let q = 0; q < n; q++) {
@@ -213,6 +224,25 @@ vec3 thingTurn(vec3 p) { float c = cos(iPos.w), s = sin(iPos.w); return vec3(c *
 vec3 thingPos(vec3 p) { if (thingHidden()) return iPos.xyz - vec3(0.0, 2000.0, 0.0); int L = int(iInfo.y + 0.5); return thingTurn(p * iScl) + iPos.xyz + vec3(0.0, uLift[L], 0.0); }
 `;
 
+// The grille of a cage (material slot 4): bars 0.1 m apart and rails 0.45 m apart, in metres of
+// the thing (its scale taken in), on the plane of each face. From far away, where a bar is less
+// than a pixel, the grille is a screen of dots that covers about a third of the face (an ordered
+// dither), thus it does not flicker.
+const GRILLE_GLSL = `
+varying vec3 vLoc; varying vec3 vNrm0; varying float vGrille;
+void grille() {
+  if (vGrille < 0.5) return;
+  vec3 an = abs(vNrm0);
+  vec2 g = an.x > 0.5 ? vLoc.zy : (an.y > 0.5 ? vLoc.xz : vLoc.xy);
+  vec2 q = g / vec2(0.1, 0.45), f = fract(q);
+  float on = max(step(f.x, 0.22), step(f.y, 0.08));
+  float cov = mix(on, 0.34, smoothstep(0.2, 0.45, fwidth(q.x)));
+  vec2 a = floor(gl_FragCoord.xy), h = mod(floor(a * 0.5), 2.0), m = mod(a, 2.0);
+  float d = fract(m.x * 0.5 + m.y * 0.75) + fract(h.x * 0.5 + h.y * 0.75) * 0.25;
+  if (cov <= d + 0.03) discard;
+}
+`;
+
 export class Furnish {
   // F: data/furnishings.json; uses: the room uses (src/roomUses.js); layers: CityLayers.
   // U: data/utilities.json (the tanks, pumps, standpipes, meter boards, pipes, lamps, refuse).
@@ -242,6 +272,7 @@ export class Furnish {
     this.qi = 0;
     this.doneTo = -1; // the layers up to this one are furnished
     if (U) placeUtilities(this, U);
+    placeFacades(this);
     this.buildRoofs();
     this.flush();
   }
@@ -325,9 +356,11 @@ export class Furnish {
       Object.assign(sh.uniforms, this.U);
       sh.vertexShader = sh.vertexShader.replace('#include <common>', `#include <common>\n${THING_GLSL}`)
         .replace('#include <beginnormal_vertex>', 'vec3 objectNormal = thingTurn(normal);')
-        .replace('#include <begin_vertex>', 'vec3 transformed = thingPos(position); vInfo = iInfo.xyz;')
-        .replace('#include <color_vertex>', 'vColor = color * mix(vec3(iCol.w), iCol.rgb, min(aAcc, 1.0)); vGlow = step(1.5, aAcc);');
-      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vInfo; varying float vGlow; uniform float uSel; uniform float uHi;')
+        .replace('#include <begin_vertex>', 'vec3 transformed = thingPos(position); vInfo = iInfo.xyz; vLoc = position * iScl; vNrm0 = normal;')
+        .replace('#include <color_vertex>', 'vColor = color * mix(vec3(iCol.w), iCol.rgb, step(0.5, aAcc)); vGlow = step(1.5, aAcc) - step(2.5, aAcc); vGrille = step(2.5, aAcc);');
+      sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec3 vLoc; varying vec3 vNrm0; varying float vGrille;');
+      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', `#include <common>\nvarying vec3 vInfo; varying float vGlow; uniform float uSel; uniform float uHi;\n${GRILLE_GLSL}`)
+        .replace('#include <clipping_planes_fragment>', '#include <clipping_planes_fragment>\n  grille();')
         .replace('#include <dithering_fragment>', `#include <dithering_fragment>
   gl_FragColor.rgb = mix(gl_FragColor.rgb, vColor * 1.1, vGlow);
   if (abs(vInfo.x - uSel) < 0.5) gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.98, 0.72, 0.36), 0.32);
@@ -599,6 +632,8 @@ export class Furnish {
   // room, thing }: room is { k, u }, or null on a roof.
   pick(layers, ray, b, k) {
     const B = this.S.list[b], roof = k >= B.n;
+    const outside = this.boxAt(layers, ray, b, k);
+    if (outside) return { d: 0, key: `out:${b}`, room: null, thing: outside };
     let best = null;
     for (const h of [-0.3, 0.05, 0.4, 0.8, 1.3, 1.9, 2.6, 3.1, 3.6]) {
       const p = layers.floorPoint(ray, b, k, h);
@@ -616,6 +651,32 @@ export class Furnish {
     return best;
   }
 
+
+  // The thing outside the walls of b in layer k that the ray meets first, by its box (the things
+  // of src/life/facades.js have one: c its middle, u along the wall, w out of it, h the half
+  // sizes along u, up and w), or null.
+  boxAt(layers, ray, b, k) {
+    const list = this.items.get(`out:${b}`);
+    if (!list) return null;
+    const lift = (layers.lift[k] || 0) * layers.spread, o = ray.origin, d = ray.direction;
+    let best = null, bt = Infinity;
+    for (const t of list) {
+      const X = t.box;
+      if (!X || k < t.k0 || k > t.k1) continue;
+      const ox = o.x - X.c[0], oy = o.y - X.c[1] - lift, oz = o.z - X.c[2];
+      const O = [ox * X.u[0] + oz * X.u[1], oy, ox * X.w[0] + oz * X.w[1]];
+      const D = [d.x * X.u[0] + d.z * X.u[1], d.y, d.x * X.w[0] + d.z * X.w[1]];
+      let t0 = -Infinity, t1 = Infinity;
+      for (let a = 0; a < 3 && t0 <= t1; a++) {
+        if (Math.abs(D[a]) < 1e-9) { if (Math.abs(O[a]) > X.h[a]) t0 = Infinity; continue; }
+        let p = (-X.h[a] - O[a]) / D[a], q = (X.h[a] - O[a]) / D[a];
+        if (p > q) [p, q] = [q, p];
+        t0 = Math.max(t0, p); t1 = Math.min(t1, q);
+      }
+      if (t0 <= t1 && t1 > 0 && t0 < bt) { bt = t0; best = t; }
+    }
+    return best;
+  }
 
   // The words of a thing, with its sources.
   describe(t) {
@@ -639,6 +700,7 @@ export function thingsHtml(fu, key, thing, esc) {
     for (const f of d.facts.slice(0, 2))
       html += `<div class="sub">${esc(f.text || '')} <span class="n">(${esc(f.source || '')}${f.cite ? `, ${esc(f.cite)}` : ''})</span>${f.quote ? `<br><i>“${esc(String(f.quote).slice(0, 200))}${String(f.quote).length > 200 ? '…' : ''}”</i>` : ''}</div>`;
   }
+  if (out && thing?.why === 'facade') return `${html}<div class="sub">The things outside the windows of the flats: data/furnishings.json, "outside". The look of each thing has a source; where each one stands is INFERRED.</div>`;
   if (out) return `${html}<div class="sub">The water, the power, the post and the refuse of the City: data/utilities.json. The look of each thing has a source; where each one stands is INFERRED.</div>`;
   const n = new Map();
   for (const t of list) n.set(t.kind, (n.get(t.kind) || 0) + 1);
