@@ -74,9 +74,7 @@ export class CityLayers {
         if (y > hi[k]) hi[k] = y;
       }
     this.lo = lo; this.hi = hi;
-    this.lift = [0];
-    for (let k = 1; k < this.n; k++) this.lift[k] = this.lift[k - 1] + Math.max(0, hi[k - 1] + GAP - lo[k]);
-    this.maxLift = this.lift[this.n - 1];
+    this.lifts();
 
     // ---- the materials: the view, the shadows, the pick ----
     this.material = this.viewMaterial();
@@ -133,6 +131,65 @@ export class CityLayers {
     this.pickRT = new THREE.WebGLRenderTarget(1, 1);
     this.px = new Uint8Array(4);
     this.tags = [];
+    this.spans = []; // the meshes of addSpan
+    this.tier = 0; // the detail that shows (setTier)
+    this.apply();
+  }
+
+  // The lift of each layer pulled apart, from the bands lo and hi: a clear gap of GAP m over
+  // the highest point of the layer under it.
+  lifts() {
+    this.lift = [0];
+    for (let k = 1; k < this.n; k++) this.lift[k] = this.lift[k - 1] + Math.max(0, this.hi[k - 1] + GAP - this.lo[k]);
+    this.maxLift = this.lift[this.n - 1];
+  }
+
+  // More geometry for layer k, drawn and picked as the structure of that layer: the pipes and
+  // cables of src/life/pipes.js. a: mesh arrays as buildMesh gives them (position, normal,
+  // colour, info, index), all of layer k. shadow: it casts shadows. tier: 0 always shows, 1 only
+  // near the camera (setTier), for the things thinner than a pixel from far away.
+  addLayer(k, a, { shadow = true, tier = 0 } = {}) {
+    const lv = this.layers[k];
+    if (!lv || !a.index.length) return;
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(a.position, 3));
+    g.setAttribute('normal', new THREE.BufferAttribute(a.normal, 3));
+    g.setAttribute('color', new THREE.BufferAttribute(a.color, 3));
+    g.setAttribute('aInfo', new THREE.BufferAttribute(a.info, 3));
+    g.setIndex(new THREE.BufferAttribute(a.index, 1));
+    g.computeBoundingSphere();
+    const m = new THREE.Mesh(g, this.material);
+    m.castShadow = shadow; m.receiveShadow = true;
+    m.customDepthMaterial = this.depth;
+    m.userData.inside = false;
+    m.userData.tier = tier;
+    const t = new THREE.Mesh(g, this.pickMat);
+    lv.group.add(m); lv.pick.add(t);
+    lv.meshes.push(m); lv.twins.push(t);
+    // the band of the layer takes in the new geometry (a pipe over the roof), thus the gap stays
+    for (let v = 1; v < a.position.length; v += 3) {
+      if (a.position[v] < this.lo[k]) this.lo[k] = a.position[v];
+      if (a.position[v] > this.hi[k]) this.hi[k] = a.position[v];
+    }
+    this.lifts();
+    this.apply();
+  }
+
+  // Geometry that joins two layers (a wire from one building to another): it shows only in the
+  // normal view, not pulled apart and not peeled. It is not picked.
+  addSpan(a) {
+    if (!a.index.length) return;
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(a.position, 3));
+    g.setAttribute('normal', new THREE.BufferAttribute(a.normal, 3));
+    g.setAttribute('color', new THREE.BufferAttribute(a.color, 3));
+    g.setAttribute('aInfo', new THREE.BufferAttribute(a.info, 3));
+    g.setIndex(new THREE.BufferAttribute(a.index, 1));
+    g.computeBoundingSphere();
+    const m = new THREE.Mesh(g, this.material);
+    m.receiveShadow = true;
+    this.group.add(m);
+    this.spans.push(m);
     this.apply();
   }
 
@@ -239,7 +296,7 @@ export class CityLayers {
       lv.group.position.y = this.lift[lv.k] * e;
       lv.group.visible = on;
       // The inside of a floor shows only from above: pulled apart, or the peeled storey.
-      for (const m of lv.meshes) m.visible = !m.userData.inside || e > 0.01 || lv.k === c;
+      for (const m of lv.meshes) m.visible = (!m.userData.inside || e > 0.01 || lv.k === c) && (m.userData.tier || 0) <= this.tier;
     }
     // The plate under layer k lies in the middle of the clear air between layer k - 1 and layer
     // k, thus it never cuts a building. It comes in as that gap opens.
@@ -252,12 +309,20 @@ export class CityLayers {
       plate.material.opacity = 0.26 * p;
       edge.material.opacity = 0.55 * p;
     }
+    for (const m of this.spans) m.visible = e < 0.01 && c < 0;
     for (const lv of this.layers) {
       if (!lv.tag) continue;
       lv.tag.position.y = lv.k ? this.plates[lv.k].plate.position.y + 0.3 : this.lo[0];
       lv.tag.visible = (c < 0 || lv.k <= c) && a > 0.01;
       lv.tag.material.opacity = a;
     }
+  }
+
+  // The detail that shows, from the metres of the view in one pixel: the thin things of tier 1
+  // show under 0.16 m (as the small things of src/life/furnish.js).
+  setTier(mPerPx) {
+    const t = mPerPx < 0.16 ? 1 : 0;
+    if (t !== this.tier) { this.tier = t; this.apply(); }
   }
 
   setSelected(b) { this.U.uSel.value = b >= 0 ? b : NO_ID; }
