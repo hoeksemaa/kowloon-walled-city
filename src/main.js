@@ -643,7 +643,9 @@ function frame(now) {
   // the people: where each one is at this minute
   life.update(clock.day % 7, clock.minute, 4);
   figures.update(now / 1000);
-  furnish.update((camera.top - camera.bottom) / camera.zoom / innerHeight);
+  const mPerPx = (camera.top - camera.bottom) / camera.zoom / innerHeight;
+  furnish.update(mPerPx);
+  layers.setTier(mPerPx);
   windows.update(night, layers.spread < 0.01 && layers.peelK < 0);
   if (state.person >= 0 && state.follow) {
     const h = figures.head(state.person);

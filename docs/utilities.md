@@ -406,6 +406,26 @@ City (`S.L.inside` 0).
 - On the named lanes, put a drip sheet about every 6 m, at 2.2-2.6 m, slanted to
   one wall (p249).
 
+How the main app draws them (`src/life/pipes.js`, since 2026-11-07, INFERRED):
+
+- The pipes are tubes along the lane walls of each building, not boxes on the 1 m
+  lane plan. `src/life/walls.js` casts rays at the walls themselves, thus no pipe
+  goes through a wall or over a room.
+- Each wall of a named lane has 14 slots, and each wall of a small lane has 6.
+  The two walls of a lane and the cables across it give about 30 and 12.
+- A slot keeps its height and its depth on each wall, thus a pipe goes on from
+  one building to the next. A pipe often runs only part of a wall, and turns into
+  the wall at its ends (U74: a new pipe beside a broken one).
+- The rigid pipes bend at round elbows. The hoses, the cables and the flex sag
+  between the brackets, and some flex hangs in loops.
+- The overhead layer stays under the 1/F slab of the building.
+- The risers are 1-4 groups on each building, between the windows: a drain to
+  the lane, and pipes and cables that turn into the wall. They go round the
+  setbacks, with a clamp on each second storey and a gooseneck over the roof.
+- The cables and the flex are thin: they show only near the camera
+  (`CityLayers.setTier`). The wires between buildings and the cables from roof
+  to roof show only in the normal view (`CityLayers.addSpan`).
+
 ### Lamps
 
 - These are the KFA public lights: more than 200, on 24 hours a day (U106).

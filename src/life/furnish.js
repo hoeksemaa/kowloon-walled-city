@@ -581,11 +581,16 @@ export class Furnish {
   }
 
   // The thing of room `key` at the point p (x, z), or null.
-  thingAt(key, p) {
+  // k: the floor layer of the pick; a thing with k0..k1 (a pipe outside) is found only there.
+  thingAt(key, p, k) {
     const list = this.items.get(key);
     if (!list) return null;
     let best = null, bd = Infinity;
-    for (const t of list) { const d = Math.hypot(t.x - p.x, t.z - p.z); if (d < t.r && d < bd) { bd = d; best = t; } }
+    for (const t of list) {
+      if (t.k0 !== undefined && k !== undefined && (k < t.k0 || k > t.k1)) continue;
+      const d = Math.hypot(t.x - p.x, t.z - p.z);
+      if (d < t.r && d < bd) { bd = d; best = t; }
+    }
     return best;
   }
 
@@ -601,7 +606,7 @@ export class Furnish {
       const u = roof ? null : layers.roomAt(b, k, p), key = roof ? `roof:${b}` : `${b}:${k}:${u}`;
       // the things of the room (or the roof), and the things outside the walls of b (out:b)
       for (const kk of h >= 0 && h < 2.7 ? [key, `out:${b}`] : [`out:${b}`]) {
-        const t = this.thingAt(kk, p);
+        const t = this.thingAt(kk, p, k);
         if (!t) continue;
         const d = Math.hypot(t.x - p.x, t.z - p.z);
         if (!best || d < best.d) best = { d, key: kk, room: roof || kk.startsWith('out:') ? null : { k, u }, thing: t };
