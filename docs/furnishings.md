@@ -726,10 +726,12 @@ These units have a photo or a plan in a source. The key is `building:storey:unit
 How the main app draws them (`src/life/facades.js`, since 2026-11-07, INFERRED):
 
 - It uses the windows of `src/city/mesh.js` (`findWindows` in `src/life/windows.js`), from 1/F up. Only the flats get cages, laundry and air-conditioners.
-- A cage covers one or two windows of a flat, with 0.3 m on each side. It goes from the floor to 0.15 m under the next floor. It is 0.6-0.8 m deep, and one in ten is 1.0-1.2 m deep (F20).
-- A cage stands only where the open air in front of it is at least 1 m deeper than the cage, thus a lane stays a lane. It does not stand over a lower roof, on the pipes down the facade, or on another cage. Thus fewer windows have a cage than the share says: about 3,000 cages.
+- One cage goes across all the windows of a flat on one wall, with 0.3 m on each side (F134: "across each flat"). A pipe down the facade between two windows splits it in two. It goes from the floor to 0.15 m under the next floor. It is 0.6-0.8 m deep, and one in ten is 1.0-1.2 m deep (F20).
+- The cages stand one on the other, a cage on each floor of a facade (F39, F134).
+- A cage stands only where the open air in front of it is at least 1 m deeper than the cage, thus a lane stays a lane. It does not stand over a lower roof, on the pipes down the facade, or beside another cage. There are about 4,600 cages.
+- The share 0.7 is from the photos of the outer facades. On the outer facades (open ground 30 m or more in front of the window), 1,622 of 2,565 windows of the flats have a cage: 0.63. The pipes down the facades and the depth rule take the rest. The photos show no inner lane, thus the cages over the inner lanes are INFERRED: on 0.53 of the windows over a lane 2-4 m wide, and on 0.11 of the windows over a lane less than 2 m wide.
 - The grille is a pattern of the shader: bars every 0.1 m and rails every 0.45 m. From far away it is an even screen of dots.
-- The pots, the laundry, the songbirds and the awnings are in and on the cages, by the shares of this table.
+- The pots, the laundry, the songbirds and the awnings are in and on the cages, by the shares of this table. An awning goes only on a cage with no cage on it (INFERRED: the cage above is the roof of the one under it).
 - A bamboo pole with laundry comes out of a window without a cage. Over a lane less than 3.4 m wide, the pole reaches the wall across the lane.
 - An air-conditioner fills the lower part of one window of a flat.
 - A projecting sign with four red characters stands beside one window of each dentist and clinic of 1/F-3/F. The signs of G/F and of the shops are not drawn yet.

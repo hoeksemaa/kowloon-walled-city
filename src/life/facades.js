@@ -2,18 +2,22 @@
 // - Window cages: steel grille boxes bolted to the wall outside the windows, "caged balconies,
 //   called 'buildings on buildings'" (F38). They are 0.6-0.8 m deep and go across the flat
 //   (F134), from the floor to the ceiling (F20: 4 ft deep, a few of them). Each floor of a
-//   facade has them (F39). They are on 0.7 of the outside windows of the flats.
+//   facade has them, one on the other (F39, F134). They are on 0.7 of the outside windows of
+//   the flats.
 // - In the cages: laundry on a rail (0.6 of the cages), 1-6 pot plants (0.4), a songbird in a
-//   bamboo cage (0.05) (F38, F94, F95, F134). Over the cage, a corrugated awning (0.3; F39, F95).
+//   bamboo cage (0.05) (F38, F94, F95, F134). Over the cage, a corrugated awning (0.3; F39, F95),
+//   only on a cage that has no cage on it (INFERRED).
 // - The windows without a cage: a bamboo pole with laundry out of 0.4 of them (F96). Over a
 //   narrow lane, the pole reaches the wall across the lane (INFERRED).
 // - Window air-conditioners in 0.25 of the flats with an outside wall (F40, F43, F93).
 // - A projecting sign at the windows of each dentist and clinic of 1/F-3/F (F98, F40).
 // The shares are those of data/furnishings.json. Where each thing stands, its size and its
 // colour are INFERRED:
+// - One cage goes across all the windows of a flat on one wall. A pipe down the facade
+//   (src/life/pipes.js) between two windows splits it in two.
 // - A cage stands only where the open air outside the wall is at least 1 m deeper than the cage,
-//   thus a lane stays a lane. It does not stand over a lower roof, nor on the pipes down the
-//   facade (src/life/pipes.js), nor on another cage.
+//   thus a lane stays a lane (INFERRED: the photos show the outer facades only). It does not
+//   stand over a lower roof, nor on the pipes down the facade, nor beside another cage.
 // - The laundry shows all day and all night (INFERRED: the photos show it by day only).
 // The things are those of src/life/furnish.js (put, with 'out'): they go with the floor layer of
 // their storey. The structure is frozen: this file only reads it.
@@ -171,21 +175,33 @@ export function placeFacades(fu) {
   }
 
   // ---- the cages ----
+  // One cage across the windows of a flat on one wall (F134: "across each flat"; F39: one on each
+  // floor), split where a pipe comes down the facade between two windows.
+  const placed = [];
   for (const list of groups.values()) {
     const W0 = list[0];
     if (W0.cat !== 'home' || W0.lab >= 0) continue; // not over a lower roof
     list.sort((a, c) => a.t - c.t);
     const B = S.list[W0.b], k = W0.k, r = mulberry32(((W0.b * 92821) ^ (k * 68917) ^ (W0.u * 1931) ^ (W0.i * 7)) >>> 0);
-    // a cage for one or two windows
-    for (let q = 0; q < list.length; q += 2) {
-      const ws = list.slice(q, q + 2);
+    // the pipes down this wall, at a along it
+    const pipesAt = [];
+    for (const G of risers.get(W0.b) || []) {
+      const a = (G.x - W0.ax) * W0.tx + (G.z - W0.az) * W0.tz, o = (G.x - W0.ax) * W0.nx + (G.z - W0.az) * W0.nz;
+      if (Math.abs(o) <= 1.2) pipesAt.push(a);
+    }
+    const runs = [[list[0]]];
+    for (let q = 1; q < list.length; q++) {
+      const e = list[q - 1].t + list[q - 1].w / 2, s0 = list[q].t - list[q].w / 2;
+      if (pipesAt.some((a) => a > e - 0.05 && a < s0 + 0.05)) runs.push([list[q]]);
+      else runs[runs.length - 1].push(list[q]);
+    }
+    for (const ws of runs) {
       if (r() >= P.cage) continue;
       const first = ws[0], last = ws[ws.length - 1];
       let t0 = Math.max(0.12, first.t - first.w / 2 - 0.3), t1 = Math.min(W0.len - 0.12, last.t + last.w / 2 + 0.3);
       // keep off the pipes down the facade
-      for (const G of risers.get(W0.b) || []) {
-        const a = (G.x - W0.ax) * W0.tx + (G.z - W0.az) * W0.tz, o = (G.x - W0.ax) * W0.nx + (G.z - W0.az) * W0.nz;
-        if (Math.abs(o) > 1.2 || a < t0 - 0.3 || a > t1 + 0.3) continue;
+      for (const a of pipesAt) {
+        if (a < t0 - 0.3 || a > t1 + 0.3) continue;
         if (a < (first.t + last.t) / 2) t0 = Math.max(t0, a + 0.3); else t1 = Math.min(t1, a - 0.3);
       }
       if (t0 > first.t - first.w / 2 - 0.05 || t1 < last.t + last.w / 2 + 0.05) continue;
@@ -194,14 +210,17 @@ export function placeFacades(fu) {
       const cx = W0.ax + W0.tx * tm, cz = W0.az + W0.tz * tm;
       // the open air: deep enough in front of the cage (a lane stays a lane), wide enough at its sides
       let ok = true;
-      for (const s of [t0 + 0.05, tm, t1 - 0.05]) {
-        const px = W0.ax + W0.tx * s + W0.nx * 0.01, pz = W0.az + W0.tz * s + W0.nz * 0.01;
+      const n = Math.max(3, Math.ceil(wid / 1.5) + 1);
+      for (let j = 0; j < n && ok; j++) {
+        const sv = t0 + 0.05 + (j / (n - 1)) * (wid - 0.1);
+        const px = W0.ax + W0.tx * sv + W0.nx * 0.01, pz = W0.az + W0.tz * sv + W0.nz * 0.01;
         for (const y of [y0 + 0.15, y0 + h - 0.3]) if (walls.hit(px, pz, W0.nx, W0.nz, y, 6).t < d + 1.0) ok = false;
       }
       if (!ok) continue;
       const mx = cx + W0.nx * d * 0.5, mz = cz + W0.nz * d * 0.5;
       if (walls.hit(mx, mz, W0.tx, W0.tz, y0 + h / 2, 6, 0).t < wid / 2 + 0.03 || walls.hit(mx, mz, -W0.tx, -W0.tz, y0 + h / 2, 6, 0).t < wid / 2 + 0.03) continue;
-      const R = taken.rect(cx, cz, W0.tx, W0.tz, W0.nx, W0.nz, wid / 2, d, y0, y0 + h + 0.3);
+      // the cage only, from its floor to under the next floor: the cage of the floor above stands on it
+      const R = taken.rect(cx, cz, W0.tx, W0.tz, W0.nx, W0.nz, wid / 2, d, y0, y0 + h);
       if (taken.hits(R)) continue;
       taken.add(R);
       for (const W of ws) W.cage = true;
@@ -211,13 +230,13 @@ export function placeFacades(fu) {
       const inIt = [];
       if (r() < P.wash) { fu.put('cage_wash', 'out', cx, y0, cz, ang, W0.b, k, r, [sx, h / 2.4, sz]); count.cage_wash++; inIt.push('laundry on a rail'); }
       if (r() < P.pots) {
-        const n = 1 + Math.floor(r() * 6);
-        for (let p = 0; p < n; p++) {
-          const a = -wid / 2 + 0.2 + ((p + 0.5) / n) * (wid - 0.4) + (r() - 0.5) * 0.1, o = d - 0.2 - r() * 0.15;
+        const np = 1 + Math.floor(r() * 6);
+        for (let q = 0; q < np; q++) {
+          const a = -wid / 2 + 0.2 + ((q + 0.5) / np) * (wid - 0.4) + (r() - 0.5) * 0.1, o = d - 0.2 - r() * 0.15;
           fu.put('plant_pot', 'out', cx + W0.tx * a + W0.nx * o, y0 + 0.05, cz + W0.tz * a + W0.nz * o, r() * 6.3, W0.b, k, r, [0.8 + r() * 0.5, 0.7 + r() * 0.6, 0.8 + r() * 0.5]);
           count.plant_pot++;
         }
-        inIt.push(n > 1 ? `${n} pot plants` : 'a pot plant');
+        inIt.push(np > 1 ? `${np} pot plants` : 'a pot plant');
       }
       if (r() < P.bird) {
         const a = (r() - 0.5) * (wid - 0.5);
@@ -225,13 +244,28 @@ export function placeFacades(fu) {
         count.birdcage++;
         inIt.push('a songbird in a bamboo cage');
       }
-      const aw = r() < P.awning;
-      if (aw) { fu.put('cage_awning', 'out', cx, y0 + h + 0.01, cz, ang, W0.b, k, r, [sx, 1, (d + 0.05) / 0.7]); count.cage_awning++; inIt.push('an awning over it'); }
-      const top = h + (aw ? 0.25 : 0);
-      const T = item(W0.b, k, 'window_cage', 'window_cage', W0, mx, y0 + top / 2, mz, wid / 2, top / 2, d / 2 + (aw ? 0.15 : 0), inIt.length ? `In it: ${inIt.join(', ')}.` : '');
-      T.inIt = inIt;
-      for (const W of ws) W.cageItem = T;
+      placed.push({ W0, ws, k, r, cx, cz, mx, mz, y0, h, d, wid, ang, sx, inIt, aw: r() < P.awning });
     }
+  }
+  // An awning over a cage that has no cage on it (INFERRED: the cage above is the roof of the
+  // one under it). Then the pick box of each cage.
+  for (const C of placed) {
+    const { W0, k, r, cx, cz, y0, h, d, wid, ang, sx, inIt } = C;
+    let aw = C.aw;
+    if (aw) {
+      const A = taken.rect(cx, cz, W0.tx, W0.tz, W0.nx, W0.nz, wid / 2 - 0.05, d, y0 + h + 0.05, y0 + h + 0.35);
+      if (taken.hits(A)) aw = false;
+      else {
+        taken.add(taken.rect(cx, cz, W0.tx, W0.tz, W0.nx, W0.nz, wid / 2, d + 0.05, y0 + h, y0 + h + 0.3));
+        fu.put('cage_awning', 'out', cx, y0 + h + 0.01, cz, ang, W0.b, k, r, [sx, 1, (d + 0.05) / 0.7]);
+        count.cage_awning++;
+        inIt.push('an awning over it');
+      }
+    }
+    const top = h + (aw ? 0.25 : 0);
+    const T = item(W0.b, k, 'window_cage', 'window_cage', W0, C.mx, y0 + top / 2, C.mz, wid / 2, top / 2, d / 2 + (aw ? 0.15 : 0), inIt.length ? `In it: ${inIt.join(', ')}.` : '');
+    T.inIt = inIt;
+    for (const W of C.ws) W.cageItem = T;
   }
 
   // ---- the air-conditioners, and the signs of the dentists and clinics ----
