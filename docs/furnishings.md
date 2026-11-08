@@ -723,6 +723,18 @@ These units have a photo or a plan in a source. The key is `building:storey:unit
 | letterbox | postboxes in rows, or single boxes on the wall | G/F entrances | one group for each entrance, 4-20 boxes | sourced | F102, F42 |
 | lamp | fluorescent tubes and bulbs in the corridors and alleys | corridors, alleys | one per 5-10 m of corridor | sourced (spacing inferred) | F18, F42 |
 
+How the main app draws them (`src/life/facades.js`, since 2026-11-07, INFERRED):
+
+- It uses the windows of `src/city/mesh.js` (`findWindows` in `src/life/windows.js`), from 1/F up. Only the flats get cages, laundry and air-conditioners.
+- A cage covers one or two windows of a flat, with 0.3 m on each side. It goes from the floor to 0.15 m under the next floor. It is 0.6-0.8 m deep, and one in ten is 1.0-1.2 m deep (F20).
+- A cage stands only where the open air in front of it is at least 1 m deeper than the cage, thus a lane stays a lane. It does not stand over a lower roof, on the pipes down the facade, or on another cage. Thus fewer windows have a cage than the share says: about 3,000 cages.
+- The grille is a pattern of the shader: bars every 0.1 m and rails every 0.45 m. From far away it is an even screen of dots.
+- The pots, the laundry, the songbirds and the awnings are in and on the cages, by the shares of this table.
+- A bamboo pole with laundry comes out of a window without a cage. Over a lane less than 3.4 m wide, the pole reaches the wall across the lane.
+- An air-conditioner fills the lower part of one window of a flat.
+- A projecting sign with four red characters stands beside one window of each dentist and clinic of 1/F-3/F. The signs of G/F and of the shops are not drawn yet.
+- The laundry shows all day and all night.
+
 ## December 1986
 
 The model week is Monday 15 to Sunday 21 December 1986. The Winter Solstice was Monday 22 December, the next day. Christmas Day was a Thursday.

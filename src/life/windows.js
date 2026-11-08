@@ -6,9 +6,9 @@
 // (sim.js cutAt) the windows of the building are dark.
 //
 // The windows are the openings of the outer walls of src/city/mesh.js: on a wall to the open
-// air, from 1/F up, one window for each 2.2 m of wall, away from the doors. This module finds
+// air, from 1/F up, one window for each 2.2 m of wall, away from the doors. findWindows finds
 // them with the same rule (it does not change the structure), and the room behind each one: the
-// unit of the plan just inside the wall.
+// unit of the plan just inside the wall. src/life/facades.js uses it too.
 //
 // The glow shows in the normal view only (not pulled apart, not peeled), and only at night.
 import * as THREE from 'three';
@@ -16,6 +16,54 @@ import { WALL, SLAB, PARAPET, OPEN } from '../city/model.js';
 import { UNIT, CORR, LANDING } from '../city/plan.js';
 
 const WARM = new THREE.Color('#ffc27a'), TUBE = new THREE.Color('#cfe0ff');
+
+// The windows of the outer walls (the rule of src/city/mesh.js): on a wall to the open air, from
+// 1/F up, one window for each 2.2 m of wall, away from the doors. Each one: b, k, the ring (ri,
+// r) and its edge i, t (the middle along the edge, from its first point A), len (of the edge),
+// the point A (ax, az), the tangent (tx, tz) and the normal out (nx, nz), x and z (the middle,
+// on the outer face of the wall), w (its width), y0 and y1 (sill and head), lab (the label
+// outside the wall), v (the plan code of the cell behind it), u (its unit, or -1) and rand (a
+// fixed random number of the window). It does not change the structure.
+export function findWindows(S) {
+  const out = [];
+  const openAt = new Map();
+  for (const o of S.openings) { const key = `${o.b}:${o.k}`; if (!openAt.has(key)) openAt.set(key, []); openAt.get(key).push(o); }
+  for (const b of S.list) {
+    for (let k = 1; k < b.n; k++) {
+      const ph = b.phaseOf(k), plan = ph.plan, y = b.y[k], yb = b.y[k + 1] - SLAB;
+      const ops = openAt.get(`${b.id}:${k}`) || [];
+      ph.rings.forEach((r, ri) => {
+        for (let i = 0; i < r.pts.length; i++) {
+          const A = r.pts[i], B = r.pts[(i + 1) % r.pts.length], dx = B[0] - A[0], dz = B[1] - A[1], len = Math.hypot(dx, dz);
+          if (len < 1.3) continue;
+          const tx = dx / len, tz = dz / len, nx = tz, nz = -tx;
+          const lab = r.other[i];
+          let open = OPEN.has(lab);
+          if (!open && lab >= 0 && !S.fills(lab, y + 0.3)) { const low = S.bOf(lab); open = low && low.top + (low.parapet ? PARAPET : 0) <= y + 0.9; }
+          if (!open) continue;
+          const holes = ops.filter((o) => o.r === r && o.i === i).map((o) => [o.t - o.w / 2, o.t + o.w / 2]);
+          const m = Math.max(1, Math.floor((len - 0.4) / 2.2)), w = Math.min(1.0, len - 0.5);
+          for (let q = 0; q < m; q++) {
+            const t = (len * (q + 0.5)) / m;
+            if (holes.some((h) => h[0] < t + w / 2 + 0.2 && h[1] > t - w / 2 - 0.2)) continue;
+            const head = Math.min(y + 2.1, yb - 0.15);
+            if (head - (y + 0.9) <= 0.5) continue;
+            holes.push([t - w / 2, t + w / 2]);
+            // the room behind the window
+            const px = A[0] + tx * t - nx * (WALL + 0.35), pz = A[1] + tz * t - nz * (WALL + 0.35);
+            const c = plan.R.cellXZ(px, pz), v = c >= 0 ? plan.code[c] : -1;
+            const h = Math.sin(b.id * 12.9898 + k * 78.233 + v * 37.719 + q * 3.1) * 43758.5453, rand = h - Math.floor(h);
+            out.push({
+              b: b.id, k, ri, r, i, t, len, ax: A[0], az: A[1], tx, tz, nx, nz, x: A[0] + tx * t, z: A[1] + tz * t,
+              w, y0: y + 0.9, y1: head, lab, v, u: v >= UNIT ? v - UNIT : -1, rand,
+            });
+          }
+        }
+      });
+    }
+  }
+  return out;
+}
 
 export class LitWindows {
   // S: the structure; life: the sim (src/life/sim.js); uses: the room uses (the kind of each room).
@@ -25,56 +73,26 @@ export class LitWindows {
     this.corr = []; // [window index, building] of the corridor windows that are lit at night
     this.bOf = [];
     this.byKey = new Map(); // "b:k:u" -> [window index]
-    const openAt = new Map();
-    for (const o of S.openings) { const key = `${o.b}:${o.k}`; if (!openAt.has(key)) openAt.set(key, []); openAt.get(key).push(o); }
     let n = 0;
-    for (const b of S.list) {
-      for (let k = 1; k < b.n; k++) {
-        const ph = b.phaseOf(k), plan = ph.plan, y = b.y[k], yb = b.y[k + 1] - SLAB;
-        const ops = openAt.get(`${b.id}:${k}`) || [];
-        ph.rings.forEach((r) => {
-          for (let i = 0; i < r.pts.length; i++) {
-            const A = r.pts[i], B = r.pts[(i + 1) % r.pts.length], dx = B[0] - A[0], dz = B[1] - A[1], len = Math.hypot(dx, dz);
-            if (len < 1.3) continue;
-            const tx = dx / len, tz = dz / len, nx = tz, nz = -tx;
-            const lab = r.other[i];
-            let open = OPEN.has(lab);
-            if (!open && lab >= 0 && !S.fills(lab, y + 0.3)) { const low = S.bOf(lab); open = low && low.top + (low.parapet ? PARAPET : 0) <= y + 0.9; }
-            if (!open) continue;
-            const holes = ops.filter((o) => o.r === r && o.i === i).map((o) => [o.t - o.w / 2, o.t + o.w / 2]);
-            const m = Math.max(1, Math.floor((len - 0.4) / 2.2)), w = Math.min(1.0, len - 0.5);
-            for (let q = 0; q < m; q++) {
-              const t = (len * (q + 0.5)) / m;
-              if (holes.some((h) => h[0] < t + w / 2 + 0.2 && h[1] > t - w / 2 - 0.2)) continue;
-              const head = Math.min(y + 2.1, yb - 0.15);
-              if (head - (y + 0.9) <= 0.5) continue;
-              holes.push([t - w / 2, t + w / 2]);
-              // the room behind the window
-              const px = A[0] + tx * t - nx * (WALL + 0.35), pz = A[1] + tz * t - nz * (WALL + 0.35);
-              const c = plan.R.cellXZ(px, pz), v = c >= 0 ? plan.code[c] : -1;
-              const h = Math.sin(b.id * 12.9898 + k * 78.233 + v * 37.719 + q * 3.1) * 43758.5453, rand = h - Math.floor(h);
-              let col = WARM;
-              if (v === CORR || v === LANDING) {
-                if (rand > 0.45) continue; // a corridor lit here and there
-                this.corr.push(n);
-                col = TUBE;
-              } else if (v >= UNIT) {
-                const key = `${b.id}:${k}:${v - UNIT}`;
-                if (!this.byKey.has(key)) this.byKey.set(key, []);
-                this.byKey.get(key).push(n);
-                if (uses && uses.get(b.id, k, v - UNIT)?.cat !== 'home') col = TUBE;
-              } else continue;
-              this.bOf.push(b.id);
-              // the glow stands in the middle of the wall, facing out
-              const cx = A[0] + tx * t - nx * WALL * 0.5, cz = A[1] + tz * t - nz * WALL * 0.5;
-              pos.push(cx, (y + 0.9 + head) / 2, cz, Math.atan2(nx, nz));
-              size.push(w, head - (y + 0.9));
-              tint.push(col.r, col.g, col.b);
-              n++;
-            }
-          }
-        });
-      }
+    for (const W of findWindows(S)) {
+      let col = WARM;
+      if (W.v === CORR || W.v === LANDING) {
+        if (W.rand > 0.45) continue; // a corridor lit here and there
+        this.corr.push(n);
+        col = TUBE;
+      } else if (W.v >= UNIT) {
+        const key = `${W.b}:${W.k}:${W.u}`;
+        if (!this.byKey.has(key)) this.byKey.set(key, []);
+        this.byKey.get(key).push(n);
+        if (uses && uses.get(W.b, W.k, W.u)?.cat !== 'home') col = TUBE;
+      } else continue;
+      this.bOf.push(W.b);
+      // the glow stands in the middle of the wall, facing out
+      const cx = W.x - W.nx * WALL * 0.5, cz = W.z - W.nz * WALL * 0.5;
+      pos.push(cx, (W.y0 + W.y1) / 2, cz, Math.atan2(W.nx, W.nz));
+      size.push(W.w, W.y1 - W.y0);
+      tint.push(col.r, col.g, col.b);
+      n++;
     }
     this.n = n;
     this.lit = new Float32Array(n);
