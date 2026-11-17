@@ -118,3 +118,44 @@ text layer, so the search covered them. Chinese Hansard is not yet searched.
 ## Room facts in `data/room_research.json` (2026-11-05)
 
 - 3 Dec 1986, the Medicine and Dentistry by Unregistered Persons Bill: P20, P21.
+
+## More items: the source search of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
+  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
+  Before you use a fact in the model, read it on the source and write it in this file with its
+  page and a short exact quote.
+
+2 items. Two sittings that the folder does not hold yet.
+
+### top-hkgov-1: Official Record of Proceedings, 1987.03.19. (會議過程正式紀錄, 1987.03.19.; Hong Kong Hansard)
+
+- **Creator:** Hong Kong. Legislative Council (香港. 立法局)
+- **Date:** 1987-03-19
+- **Kind:** document
+- **Class:** primary (The official record of a Legislative Council sitting, made at the time.)
+- **Value:** medium
+- **Language:** en
+- **Access:** cert-error
+- **Licence:** LegCo copyright
+- **Link:** https://legco.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000505056706976&vid=852LEGCO_INST:LEGCO&lang=en
+- **Other links:** https://legco.primo.exlibrisgroup.com/primaws/rest/pub/pnxs/L/alma991000505056706976?vid=852LEGCO_INST:LEGCO&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine
+- **Proof that it exists:** LegCo Library record: 'Official Record of Proceedings, 1987.03.19.' (also 'Hong Kong Hansard, 1987.03.19.', 香港議事錄), identifier H19870319, call number h000019870319.
+- **What it gives (finder's note, not checked):** A sitting of 19 Mar 1987, two months after the clearance announcement of 14 Jan 1987 and three months after the model week. The full-text index of the LegCo Library matches it for 城寨. The subject of the mention is not known.
+- **Notes:** NEW to the repo: legco-hansard-1986-1993 holds 22 sittings, but not 1987-03-19. I read only the catalogue record (the REST URL in alt_urls), not the text. The record gives no digital copy ('Not available'). It matched the Primo query any,contains,城寨 (155 hits) but not the English query "walled city" (278 hits), thus the mention can be in a Chinese edition or in a Chinese speech (INFERRED). The LegCo web copy probably follows the pattern of h870318.pdf (https://www.legco.gov.hk/yr86-87/english/lc_sitg/hansard/h870318.pdf, seen in a search result); the URL for 19 March is not checked. legco.gov.hk gives 'unable to verify the first certificate' to WebFetch, and web.archive.org is refused by the tool.
+
+### top-hkgov-2: Official Record of Proceedings, 1991.03.06. (會議過程正式紀錄, 1991.03.06.; Hong Kong Hansard)
+
+- **Creator:** Hong Kong. Legislative Council (香港. 立法局)
+- **Date:** 1991-03-06
+- **Kind:** document
+- **Class:** primary (The official record of a Legislative Council sitting, made at the time.)
+- **Value:** medium
+- **Language:** en
+- **Access:** cert-error
+- **Licence:** LegCo copyright
+- **Link:** https://legco.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000504962106976&vid=852LEGCO_INST:LEGCO&lang=en
+- **Other links:** https://legco.primo.exlibrisgroup.com/primaws/rest/pub/pnxs/L/alma991000504962106976?vid=852LEGCO_INST:LEGCO&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine
+- **Proof that it exists:** LegCo Library record: 'Official Record of Proceedings, 1991.03.06.' (also 'Hong Kong Hansard, 1991.03.06.'), identifier H19910306, call number h000019910306.
+- **What it gives (finder's note, not checked):** A sitting of 6 Mar 1991, while the clearance went on and before the first evictions of Nov 1991. The full-text index matches it for 城寨. The subject of the mention is not known.
+- **Notes:** NEW to the repo: legco-hansard-1986-1993 holds 1991-01-23, 1991-02-27 and 1991-03-13, but not 1991-03-06. Only the catalogue record was read. Like top-hkgov-1, it matched 城寨 but not "walled city". Text not read: legco.gov.hk certificate error; no Wayback route.

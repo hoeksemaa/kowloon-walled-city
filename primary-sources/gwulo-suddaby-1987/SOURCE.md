@@ -19,6 +19,11 @@ The photographer took the photos at the city and wrote the captions from his
 own visit. Gwulo is only the host. The comments are later, and are primary
 only where a writer describes their own time in the city.
 
+Suddaby wrote the captions later, on Gwulo: each page carries the date 14 Oct
+2015, and the captions look back ("In 1987, I had ..."; "is now the Kowloon
+Fortress park"). Thus the captions are retrospective (2015). The photos are of
+the time.
+
 ## Files in `local/`
 
 These are the uploaded originals
@@ -49,18 +54,11 @@ from the server.
 
 ### Comments
 
-Only 22836 has a comment. It is not primary: it is from 2020, and the
-dentist part is a family memory. Use it as a lead for the street plan.
-
-- 22836, "cornwell", 27 Dec 2020: "The location should be Tung Tau Tsuen
-  Road, and Junction Road should be just behind the photographer's back. Yes,
-  one of the entrance should be at the centre of the pic, and join Tai Tseng
-  street (literally big well street). My mom used to visit those illegal
-  dentist once as she suffered from toothache at night."
-- Tai Tseng Street is 大井街. Check it against the street names on the
-  exhibit plan and the Suenn Ho (何巽) base plan.
+Only 22836 has a comment (2020). It is secondary: see [`../../secondary-sources/gwulo-suddaby-1987/SOURCE.md`](../../secondary-sources/gwulo-suddaby-1987/SOURCE.md).
 
 ## Captions (Suddaby's own words)
+
+All four captions: retrospective (2015).
 
 - 22835: "I took this and the next photograph from the Tung Tau Tsuen Road.
   Several of the small shops on the right were operated by dentists."

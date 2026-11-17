@@ -59,22 +59,22 @@ shasum -a 256 local/*
 
 All quotes are retrospective (2016).
 
+The reporter's own text and the captions with no named speaker are secondary: see [`../../secondary-sources/hk01-kaifong-series-2016/SOURCE.md`](../../secondary-sources/hk01-kaifong-series-2016/SOURCE.md).
+
 **Daily life, home, neighbours.**
 - 劉太, on moving in: "初遷入城寨，非常不習慣，經常迷路" [at first in the city, very
   unused to it, often lost]. This is a photo caption, not her own words.
-- Narration: "手一伸，便可向鄰居借鼓油" [reach out a hand to borrow soy sauce from a
-  neighbour]. Two flats so close "兩戶人不能同時打開窗戶" [two households can not
-  open their windows at the same time].
 - 陳祥全 (narration): he and his wife left a 板間房 [partitioned room] in Kowloon
   City (九龍城) in 1979. In the city, "房租約莫800元" [rent about HK$800] gave a whole
   flat. He says: "都叫做有一個自己的空間。" [at least it was a space of our own].
 - Fire escape (narration, told by 劉太): a 籐器店 [rattan shop] downstairs caught
   fire. The 劉 family lived on 六樓 [6/F]. The back stair was locked. They went
   down to 三樓 [3/F], which faced the next building's corridor. They handed
-  their newborn to a neighbour across, then stepped over.
+  their newborn to a neighbour across, then stepped over. Part 2 names
+  "劉氏一家" [the 劉 family] and "她還笑說" [she laughed and said], but not 劉太.
+  INFERRED: "她" is 劉太.
 - 陳祥全: "不用懂武功，你跳下去都會被卡住。" [no kung fu needed; jump down and you
   get stuck] (the gap between buildings).
-- Narration: children ran across the roofs, "十分危險" [very dangerous] (caption).
 
 **Work and goods.**
 - 芬姐 (narration): her mother went to carry water, "自己獨個兒在城寨士多「看舖」"
@@ -90,27 +90,15 @@ All quotes are retrospective (2016).
 - Schools, 葉德偉: "城寨倒是多文膽，人人寫得一手好書法，寨內亦有幾個辦學團體" [many
   scholars, fine calligraphy, several school bodies]. "拳館僅得一間" [only one
   martial-arts school].
-- Narration: the 義學中心 [free-school centre], 青年中心 [youth centre] and
-  老人院 [old people's home] stood together in the middle of the city.
 
 **Water, power, drains, light.**
 - 劉先生, on a friend's visit: "老鼠周圍走，滿地污水，水喉漏水，回南天又滴水" [rats
   running everywhere, dirty water on the ground, leaking pipes, and drips in
   the humid spring].
-- Narration (part 2), about the early years: no water supply. People carried
-  water from 老虎岩 [now Wang Tau Hom (橫頭磡)]. Young men carried water for weak old
-  people at "5毛一擔水" [50 cents a load].
 - 葉德偉 (narration): "有水上樓" [water up to the floors] needed pipes dug under
   the ground. The ground was unstable, and the government "不敢處理" [did not dare
   to do it]. It put 街喉 [street standpipes] on the edge only, at 東頭邨道 and
   東正道.
-- Narration: the kaifong association asked the power company to fit "電錶"
-  [meters] in each flat, and helped run the cables.
-- Narration: TV aerial cables, phone lines and plastic water pipes filled the
-  lanes. A broken pipe was not repaired: "只會再駁一條新的" [they just connected a
-  new one].
-- Photo caption: "日光之下，城寨之內，仍然非常昏暗" [even in daylight, inside the
-  city it was still very dark].
 
 **Property and the kaifong association.**
 - 劉先生: "手上僅一張沙紙而已，大家講個『信』字" [only a sheet of paper in hand;
@@ -123,7 +111,8 @@ All quotes are retrospective (2016).
 - Narration: at first a volunteer 打更隊 [night watch] patrolled, shouting
   "小心火警" [beware of fire], and walked women home. Later
   "先有便衣探員入內巡視，再有軍裝警察孖咇巡邏" [first plain-clothes detectives,
-  then uniformed police in pairs].
+  then uniformed police in pairs]. Part 1 gives this to the residents
+  ("老街坊則認為"). The shout comes from part 2, in the paragraph on 劉先生.
 - 劉太: "他們不會無故打擾你，其實是很安穩、很安全。" [they did not bother you for no
   reason; it was very stable, very safe].
 - 葉德偉 (narration): vice was on 龍城路 and 光明街, and in 西頭村 outside.
@@ -152,12 +141,8 @@ All quotes are retrospective (2016).
   She says: "無人知什麼事，回到家，政府人員要我們登記，我們就登記。" [no one knew what
   was happening; at home, officials told us to register, and we registered].
 - 陳祥全: "我沒有用心理會清拆，因為我只是個租客" [I did not pay much attention to the
-  clearance, because I was only a tenant].
-
-**Numbers (narration, not checked).** "最高峰時住了8000多戶，人口竟高達4萬多" [at
-the peak, over 8,000 households, over 40,000 people], "多達20條街道" [as many
-as 20 streets]. These differ from the official 1987 figure of 33,000 residents
-(see `legco-hansard-1986-1993/`).
+  clearance, because I was only a tenant]. Part 3 prints "陳先生" here.
+  INFERRED: he is 陳祥全, the tenant.
 
 ## Room facts in `data/room_research.json` (2026-11-05)
 

@@ -13,6 +13,10 @@ Two United Press International reports from Hong Kong (香港), written at the t
 Each report is contemporaneous journalism, filed from Hong Kong with a
 byline. The reporters quote residents, social workers and officials at the time.
 
+Each reporter also told the history of the City, from 1843 to the height law
+of 1975. The reporters did not see these events, thus those lines are
+secondary. They are in [`../../secondary-sources/upi-reports-1984-1987/SOURCE.md`](../../secondary-sources/upi-reports-1984-1987/SOURCE.md).
+
 ## Files in `local/`
 
 | File | SHA-256 |
@@ -50,21 +54,36 @@ https://www.upi.com/Archives/1984/12/18/Walled-City-a-Place-of-Myths-and-Crime/5
 - Population: "from a semi-official 30,000 up to 70,000". A social worker
   says "perhaps 10 to 20 percent" are illegal immigrants. Others come for
   "cheap rents".
-- Heights: "In 1975, authorities began to enforce a law limiting building
-  heights … Two buildings lost their topmost floors in the interests of
-  aviation safety."
-- Building: after the war, builders "threw up tenements, often without proper foundations".
+- Area: "The 6 -acre enclave" (see the note on the lost "½" above). The 1987
+  report gives "the 6.5 acre precinct".
+- Status in 1984: it is "a commonly held belief -- disputed by British
+  officials -- that the Walled City is not a part of the colony engulfing it".
+  A social worker: "It's part of mainland China, you see" and "British law
+  doesn't apply here." A senior government official: "There are a number of
+  myths about the Walled City, and one is that it is outside the law" and
+  "That is a tradition established out of administrative convenience - there
+  is no doubt the Walled City is part of Hong Kong."
+- Taxes and services: "No real estate taxes are collected from Walled City
+  residents nor, for that matter, are many government services rendered."
+- History: the founding in 1843, the wall, the lease of 1898, the post-war
+  tenements and the height law of 1975 are secondary. They are in
+  [`../../secondary-sources/upi-reports-1984-1987/SOURCE.md`](../../secondary-sources/upi-reports-1984-1987/SOURCE.md).
 
 ## 2. "Kowloon's walled city to come tumbling down"
 
 By David W. Jones. UPI, 15 Feb 1987. Dateline Hong Kong.
 https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-down/8464540363600/
 
+- Plan: the colonial government "finally announced plans to level the
+  festering slum over the next three years and turn the area into a park."
 - Survey: "hundreds of Housing Department officials began poring through the
   slum's narrow alleys and hallways in groups of six -- each escorted by a
   policeman -- in the first effort ever to count and register its
   inhabitants and businesses".
 - Population: "The estimated 40,000 residents".
+- Area, taxes and rules: "the 6.5 acre precinct". The residents "pay no
+  property taxes, receive no public services and are subject to none of the
+  regulations that govern normal city life."
 - Buildings: "block upon block of 10 to 15-story tenements, all without
   elevators, fire escapes or running water, and most with steel bars over
   windows and balconies".
@@ -76,9 +95,25 @@ https://www.upi.com/Archives/1987/02/15/Kowloons-walled-city-to-come-tumbling-do
   restaurants and Chinese herbalists." Also "printing shops, machine shops and
   dozens of dentist's offices".
 - Residents: an official, Lam Man Cheuk, says residents "seem to be quite
-  satisfied". A shopkeeper says "Even God cannot help us now".
+  satisfied". A shopkeeper says "Even God cannot help us now". The same words
+  are in the title of an HKU (香港大學) clipping of 15 Jan 1987, "Shock, dismay -
+  'even God cannot help us now'" (record `h989z933f`, in
+  [`../hku-newspaper-clippings/`](../hku-newspaper-clippings/SOURCE.md)).
+  INFERRED: UPI repeats the words from a local report.
+- Inspectors: the housing inspectors "say they have met no hostility or
+  resistance from the residents". The residents "have been told they will be
+  moved into new housing projects or compensated for their property."
+- Shops and clinics: "the fate of its shopkeepers and maufacturers remains in
+  doubt". "A special commission will be established" to decide it, and also
+  "whether the unlicenced dentists and doctors will be allowed to continue to
+  practice."
+- Peking (北京): "it is the first time Peking has given its blessing" to a
+  plan to clear the City.
 - China's Foreign Ministry (中華人民共和國外交部): "Like other parts of Hong Kong the Kowloon Walled
   City is a question left over by history."
+- History: the walls, the lease of 1898, the two orders-in-council and the
+  standoff are secondary. They are in
+  [`../../secondary-sources/upi-reports-1984-1987/SOURCE.md`](../../secondary-sources/upi-reports-1984-1987/SOURCE.md).
 
 ## Room facts in `data/room_research.json` (2026-11-05)
 

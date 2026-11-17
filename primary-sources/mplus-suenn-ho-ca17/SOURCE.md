@@ -14,10 +14,16 @@ listed online) and 3 route maps. Suenn Ho gave it to M+, Hong Kong (香港), in 
 
 ## Why this is primary
 
-Suenn Ho made the videos and drew the routes on site, from 1989 to 1992.
+Suenn Ho made the videos and drew the routes on site. The catalogue dates
+her own footage and maps from Oct 1991 to 3 Mar 1992. Cassette CA17/1/6
+also has footage by Po-Chih Leong (梁普智) of Nov 1989.
 The cassettes have dated footage of the alleys, the shops and the roofs,
 and interviews with residents and shopkeepers. The M+ pages are only the
 catalogue.
+
+The M+ fonds description dates her research "between 1989 and 1992" (the old
+text of this file said "from 1989 to 1992"). That description is secondary:
+see [`../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md`](../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md).
 
 ## What is in `local/`
 
@@ -90,10 +96,10 @@ The inner streets of the south half (Lo Yan Street (老人街), Tai Chang Street
 
 Cassette 5 is not listed online.
 
-The fonds description says the footage shows "dripping water while walking
-through narrow, dingy alleys, the bustling activities of street-level shops
-and food manufacturers, rooftop views of aeroplanes landing at nearby Kai Tak
-Airport". It also says that part of the footage went to the Wall Street
+The M+ description of what the footage shows is secondary. The guess of the
+CA17/1/11 page about a phase of the clearance is also secondary. Both are in
+[`../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md`](../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md).
+The fonds description also says that part of the footage went to the Wall Street
 Journal Asia for its 2014 online exhibition.
 
 ## Next steps
@@ -102,3 +108,28 @@ Journal Asia for its 2014 online exhibition.
 - Book a viewing of the cassettes at the M+ Research Centre.
 - Find the WSJ 2014 clips of this footage in the Wayback Machine.
 - Find the source of the base plan. It can be the 1987 government survey.
+
+## More items: the source search of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
+  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
+  Before you use a fact in the model, read it on the source and write it in this file with its
+  page and a short exact quote.
+
+1 items. New parts of the Suenn Ho records.
+
+### top-gap-tv-news-archives-2: Exploring Kowloon Walled City In An Afternoon – Vlog ( 1991) By Suenn Ho
+
+- **Creator:** Suenn Ho (何巽) (footage); uploaded to YouTube by 'Johny Bobbles Archives', then copied to archive.org by two other users
+- **Date:** 1991
+- **Kind:** film
+- **Class:** primary (Footage that Suenn Ho shot inside the City in 1991 during her field research.)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** unknown: the uploader set the Public Domain Mark 1.0, but the footage is © Suenn Ho (M+ CA17), thus the mark is doubtful
+- **Link:** https://archive.org/details/exploring-kowloon-walled-city-in-an-afternoon-vlog-1991-by-suenn-ho_202511
+- **Other links:** https://archive.org/details/exploring-kowloon-walled-city-in-an-afternoon-vlog-1991-by-suenn-ho, https://archive.org/details/youtube-_reCv-ix-So, https://www.youtube.com/watch?v=_reCv-ix-So
+- **Proof that it exists:** archive.org metadata: title 'Exploring Kowloon Walled City In An Afternoon – Vlog ( 1991) By Suenn Ho', creator Suenn Ho, date 1991, added 2025-11-26
+- **What it gives (finder's note, not checked):** Moving images of the alleys and shops inside the City in 1991, from the researcher whose 12 cassettes M+ holds. The repo holds only the M+ catalogue of these cassettes, not the video.
+- **Notes:** Three copies: '_202511' (added 2025-11-26, description 'Exploring Kowloon Walled City in an Afternoon – Vlog (1991) by Suenn Ho'), the first archive.org copy (added 2025-08-27, description 'Video exploring Kowloon walled city in 1991 uploaded on youtube by Johny Bobbles Archives') and 'youtube-_reCv-ix-So' (creator Johny Bobbles Archives, date 1991). The word 'Vlog' is the uploader's, not Suenn Ho's. The YouTube oEmbed of _reCv-ix-So gives 403: the video can be removed or private. I did not watch the video, thus its runtime and which M+ cassette it comes from (CA17/1/1, 1/6 or 1/12 have footage of Oct-Nov 1991) are not known. Ask M+ before any use. A YouTube playlist found in a WebSearch says that a fisheye-lens video is 'only a snippet of hours of footage Suenn Ho took' (search extract only).
