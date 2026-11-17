@@ -26,8 +26,13 @@ Tag them "retrospective (2014)". The fact box for each person (years, address,
 floor, family size, rent or price) comes from the same interviews. Treat it as
 testimony, not as a record.
 
-The WSJ narration (the "dek" text and the history timeline) is secondary. Use
-it only to find leads. The clips under "Take a Walk" are Suenn Ho's own
+The WSJ narration is secondary. It is the "dek" text of each chapter and of
+each person, the text of each map marker, and the captions. It is also the
+video descriptions, the charts of old figures and the history timeline. The twin
+file [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md)
+holds it. In the data, mark each fact from it as secondary (see
+[`../../secondary-sources/README.md`](../../secondary-sources/README.md)).
+The clips under "Take a Walk" are Suenn Ho's own
 footage of 1988–1992 (see `mplus-suenn-ho-ca17/`). They are primary, but I
 did not watch them.
 
@@ -44,7 +49,7 @@ form of a Wayback URL gives the archived bytes without the Wayback toolbar.
 mkdir -p local
 B='https://web.archive.org/web/2016id_/http://projects.wsj.com/kwc'
 curl -sL -A 'Mozilla/5.0' -o local/wsj-kwc-index.html 'https://web.archive.org/web/20161228012123id_/http://projects.wsj.com/kwc/'
-for c in people life history; do
+for c in people life history pop; do
   curl -sL -A 'Mozilla/5.0' -o local/wsj-kwc-chapter-$c.json "$B/getData.php?f=grabChapter&chapter=$c"
 done
 curl -sL -A 'Mozilla/5.0' -o local/wsj-video-api-residents.json 'https://video-api.wsj.com/api-video/find_all_videos.asp?type=guid&query=FD1945F1-D6A5-43B2-ACED-B3E60C235553,A683C456-D647-4868-8BB3-3494427A98F0,F884D3C1-1E9C-4EC1-9142-14B7DC1F3396,50FB8014-2C19-433A-B907-4C29CF6509F0,19C2631C-36C2-4F5F-916A-271516DE6609,4C437F64-E761-4D61-89AB-45D86580ABB5&fields=name,description,linkURL,formattedCreationDate,duration'
@@ -57,6 +62,7 @@ shasum -a 256 local/*
 | `local/wsj-kwc-chapter-people.json` | "People": six residents and workers | not saved yet |
 | `local/wsj-kwc-chapter-life.json` | "Explore": quotes, trade count, clip list | not saved yet |
 | `local/wsj-kwc-chapter-history.json` | "Rise & Fall" timeline (secondary) | not saved yet |
+| `local/wsj-kwc-chapter-pop.json` | "Imagination": films, books and art (secondary) | not saved yet |
 | `local/wsj-video-api-residents.json` | Titles, lengths, dates of the six resident videos | not saved yet |
 
 ## The resident videos
@@ -81,14 +87,14 @@ All items are retrospective (2014) unless a note says otherwise.
 | Person | Role | Years inside | Address | Household | Home |
 |---|---|---|---|---|---|
 | Albert Ng Kam-po (吳錦波) | the boy; Chiu Chow (潮州) family | 1975 – 1991 or 1992 | Room A, 7/F, 8 Sz Kung St. (社公街) | 5 people | more than 200 sq ft, bought 1975 for about HK$50,000 |
-| Yeung Lai-wan 杨丽云 | dim sum hawker, mother of nine | 1959–1981 | 2/F, Sai Shing Rd. (西城路); 3/F, 60 Lung Chun Rd. (龍津道); 4/F, Lung Chun Rd. | income HK$6,000–7,000 a month | 200, 600, 500 sq ft; HK$10,000 (bought 1974) |
-| Chan Cheung-chuen | map maker, engineering student | 1985–1991 | 12/F, Room B, 31 Tung Tau Tsuen Rd. (東頭村道); 11/F, Room 2, 16 Tung Tau Tsuen Rd. | 3 people; about HK$15,000 a month | 200–300 sq ft; rent HK$800–900 (1985–88), HK$1,100 (1988–91) |
+| Yeung Lai-wan (楊麗雲; WSJ's Chinese: 杨丽云) | dim sum hawker, mother of nine | 1959–1981 | 2/F, Sai Shing Rd. (西城路); 3/F, 60 Lung Chun Rd. (龍津道); 4/F, Lung Chun Rd. | income HK$6,000–7,000 a month | 200, 600, 500 sq ft; HK$10,000 (bought 1974) |
+| Chan Cheung-chuen (陳祥全) | map maker, engineering student | 1985–1991 | 12/F, Room B, 31 Tung Tau Tsuen Rd. (東頭村道); 11/F, Room 2, 16 Tung Tau Tsuen Rd. | 3 people; about HK$15,000 a month | 200–300 sq ft; rent HK$800–900 (1985–88), HK$1,100 (1988–91) |
 | Tang Kam-cheung (Paul) 鄧金祥 | former triad, later a pastor | 1948–1979 | G/F, Lung Chun Rd., 2nd Lane (龍津二巷) | 7 people; HK$8–10 a day | 400–500 sq ft |
 | Wong Yum-fai (王欽輝), father; Wong Chun-ping (王鎮平), son | fishball makers | 1972–1983 | home 8/F, 33 Lo Yan St. (老人街); shop G/F, same building | 8 people | 500 sq ft |
 | Lam Po-chun (林寶鎮) | postman | worked inside 1979–1991 | – | – | – |
 
-- Chan Cheung-chuen finished his hand-drawn map in March 1987 (WSJ
-  narration). It took four months.
+- The WSJ narration on Chan Cheung-chuen's map (how long it took, and when he
+  finished it) is secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
 - Wong Yum-fai sold 30 catties of fishballs a day. A bowl of fishball noodles
   cost HK$0.30 to HK$0.80.
 - Lam Po-chun: daily shift 8 hours; "Buildings: 350 (estimate)"; "Buildings
@@ -96,8 +102,9 @@ All items are retrospective (2014) unless a note says otherwise.
 - Yeung Lai-wan's dim sum prices in the 1970s: siu mai HK$0.10, Chiu Chow
   dumplings HK$0.15, bao HK$0.80. WSJ gives the source as "Wong Chan Pui-wah
   (1971)".
-- Conflict: the fishball video says Wong Yum-fai "lived inside Hong Kong's
-  Kowloon Walled City for 30 years". His fact box says 1972–1983.
+- Conflict: the description of the fishball video (WSJ's text, secondary)
+  says Wong Yum-fai "lived inside Hong Kong's Kowloon Walled City for 30
+  years". His fact box says 1972–1983.
 
 **Water, power, refuse.**
 - Tam Sau-kuen 譚秀娟, housewife: "There was no 24-hour water supply in
@@ -112,43 +119,23 @@ All items are retrospective (2014) unless a note says otherwise.
   had sunk… The actual quality of the water was pretty appalling."
 - Gordon Jones: "there were no significant fires or outbreaks of disease" in
   "the 30 to 40 years the Walled City existed as a high-rise slum".
-- WSJ narration (secondary): "only one official government standpipe located
-  inside the Walled City's boundaries, and seven on its perimeter". Lower
-  floors flooded often. Many people kept cats against the rats.
+- The WSJ narration on the standpipes, the floods and the rats is secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
 
 **Building, entrances, self-government.**
 - Chan Hau-lin 陳厚練, building developer: "You didn't need any paperwork from
   the government for construction, so you had to collaborate with your
   neighbors yourself. Oh, and also be aware of the building height limits."
-- WSJ narration: most buildings rose to "between 10 and 14 stories, though
-  there were only two with elevators". There were "66 entry points".
+- The WSJ narration on the heights, the lifts and the entry points is secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
 - Yip Tak-wai 葉德偉, head of the former residents' association: "Even though
   it seemed like the Walled City was an ungoverned place, it was actually a
   self-governing community."
-- WSJ narration: the Kai Fong Association (九龍城砦街坊福利事業促進委員會), formed in 1963, put up posters such
-  as "Prevent Fire: Protect Your Life and Property" and "Let's Help Each
-  Other: Clean Up the Street".
+- The WSJ narration on the Kai Fong Association (九龍城砦街坊福利事業促進委員會) and its posters is secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
 
-**Trades: the Kai Fong Association count of 1983.** WSJ charts "Shops,
-Factories and Clinics", with the source "Kowloon Walled City Kai Fong
-Association (1983)". I did not see the original count.
+**Trades.** The WSJ chart of the Kai Fong Association count of 1983 is a later chart of old figures, thus secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
 
-| Dentist | Plastic | Clinic | Shop | Metal | Garment | Manufacturing | Meat production | Cake production | Textile | Others |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 97 | 93 | 89 | 77 | 56 | 44 | 41 | 35 | 33 | 30 | 50 |
-
-The sum is 645.
-
-**Schools, temples, the Yamen (衙門) (WSJ narration, secondary).**
-- A church ran an "Aged People Centre" (老人中心) in the Yamen from the 1970s.
-- The Salvation Army (救世軍) ran a primary school, then a kindergarten. Wong Chan
-  Pui-wah: "Many children went to school there. We played together and sang
+**Schools, temples, the Yamen (衙門).** The WSJ narration on them is secondary: see [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
+- Wong Chan Pui-wah, about the Salvation Army (救世軍) school: "Many children went to school there. We played together and sang
   songs. It was very happy."
-- The Hong Kong Federation of Youth Groups (香港青年協會) ran a youth centre.
-- Fuk Tak Temple was "popular with residents from the southern Chinese city
-  of Chiu Chow".
-- The Tin Hau Temple (天后廟) "was often blocked from sunshine by the garbage residents
-  scattered on the tin grate above it".
 
 **Vice and police.** Most of this is about the 1950s–60s, not 1986.
 - Paul Tang: "The police would patrol at certain hours, but they didn't stay
@@ -159,7 +146,8 @@ The sum is 645.
 - Paul Tang, about 1959–62: protection money HK$5 a day; opium HK$5, heroin
   HK$0.30, red pill HK$0.20.
 - Tam Sau-kuen, as a child: "The area where they stayed was dark 24 hours a
-  day." This is about the sex workers on Tai Chang Street (大井街).
+  day." This is about the sex workers. The WSJ narration puts them on Tai
+  Chang Street (大井街). That narration is secondary: see the twin file.
 - Lau Kam-chiu 劉錦朝, electrician: "We lived in the Walled City, so we ignored
   this kind of thing. We didn't like it. We looked down on it."
 - Yeung Lai-wan: "I saw a heroin addict dig out a cat's eye."
@@ -184,4 +172,4 @@ gives a WSJ video GUID for each clip.
 - The six residents and their fact boxes: T1, T2, T4–T17.
 - Shared with other pages: T2 (SCMP 2013), T6 (HK01 (香港01) 2016, M+ audio guide),
   T18 and T30 (HK01 2016).
-- The WSJ narration (secondary): T31–T34.
+- The WSJ narration (secondary): T31–T34 are in [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).

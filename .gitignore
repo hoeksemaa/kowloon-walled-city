@@ -11,3 +11,7 @@ trace-*.png
 
 # copyrighted originals: kept on this machine only (see primary-sources/README.md)
 primary-sources/**/local/
+secondary-sources/**/local/
+
+# work files of the source research (agent notes and candidate lists), kept on this machine only
+research/

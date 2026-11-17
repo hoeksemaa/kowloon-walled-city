@@ -12,6 +12,8 @@ Two free reports, written at the time, by reporters who went into the city.
 Each report is journalism from the time, filed by a reporter on the scene.
 The 1992 reporter went inside with a resident.
 
+The background lines of each report (the history of the City from 1843 to 1987, and its reputation) are secondary. They are in [`../../secondary-sources/press-articles-1959-1992/SOURCE.md`](../../secondary-sources/press-articles-1959-1992/SOURCE.md).
+
 ## Files in `local/`
 
 | File | SHA-256 |

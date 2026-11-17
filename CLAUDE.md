@@ -32,6 +32,15 @@
   simulation of how the people of the City lived. Give each fact its source, and mark each
   guess INFERRED.
 - See `docs/structure.md` for the sources and the inferences of the structure.
+- Sources, in two trees (John, 2026-11-09). `primary-sources/` holds only primary facts: a
+  record made at the time, or first-hand testimony (tag later testimony "retrospective
+  (year)"). `secondary-sources/` holds everything else that is at least plausibly credible:
+  histories, essays, captions written later, the background text of a reporter,
+  reconstructions, later films. It has no sub-classes. A source with the two kinds of part has
+  a folder of the same name in each tree; its files stay in the primary folder. Write down
+  each useful detail of a secondary source, with its page and a short exact quote. In the
+  data, mark each fact from a secondary source as secondary. The two `README.md` files give
+  the conventions, the indexes and the leads.
 - Chinese names (a permanent rule of John's, for the whole repo): English is the main language
   of the repo. The Chinese names are flavour beside the English names, not a new label. Beside
   the English name of each place, street, building, temple, school, organization, business,

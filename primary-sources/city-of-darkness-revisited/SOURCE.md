@@ -8,24 +8,25 @@ The 2014 new edition of *City of Darkness* (1993). Girard and Lambot photographe
 - **Copy used:** John's own copy. He photographed each spread on 2026-10-30 (190 photos). I flattened and cropped each page and corrected the colour. The photos were then deleted, as John asked; he keeps them in his Photos library.
 - **Copyright:** © Greg Girard and Ian Lambot. The other images belong to the owners on p356. The fold-out is © 2014 Hitomi Terasawa (寺澤一美); the book says that it "must not be copied or reproduced in any form".
 - **Stored in git:** no. All images are in `local/`, which git ignores. Only this file is in git.
-- **Checksums:** none. The files are not a download from a host. They are derived files, and they will change when pages 84–85 are added.
+- **Checksums:** none. The files are not a download from a host. They are derived files. Pages 84–85 were added on 2026-11-16, and every later file moved up by 2.
 
 ## Files in `local/`
 
 | Folder | Contents |
 |---|---|
-| `final/pages/` | 371 images, one for each surface, in book order: `NNN_label.png`. The label is the printed page number (`p001`–`p356`) or a part name (jacket, cover, endpapers, fold-out panels). |
-| `final/spreads/` | 180 images of two facing pages, plus `215_foldout-full.png` (the full fold-out, 8125 × 1746 px). |
+| `final/pages/` | 373 images, one for each surface, in book order: `NNN_label.png`. The label is the printed page number (`p001`–`p356`) or a part name (jacket, cover, endpapers, fold-out panels). |
+| `final/spreads/` | 181 images of two facing pages, plus `217_foldout-full.png` (the full fold-out, 8125 × 1746 px). |
 | `final/index.json` | Position, label and source photo of each page. `final/README.md` tells how the images were made and gives their limits. |
 | `extracts/` | 60 cut-outs of the reproduced documents, old photos, maps and plans, and the 1992 map. `extracts/index.json` gives the pages, the caption and the credit of each. The photos by Girard and Lambot are not cut out: the page images hold them. |
-| `pipeline/` | The code and the hand marks. Its `README.md` tells how to add pages 84–85 from a new photo. |
+| `pipeline/` | The code and the hand marks. Its `README.md` tells how to add a missing spread from a new photo. Pages 84–85 were added this way on 2026-11-16 (IMG_9638). |
+| `ocr/` | `ocr_book.txt`: the OCR text of every page of `final/pages/`, made on 2026-11-05 with macOS Vision. A line "== path" starts each page. Also the two Swift tools, `ocr.swift` (the text of whole images) and `ocrbox.swift` (the text of a crop at a scale, with positions), and their built programs `ocr-bin` and `ocrbox-bin`. `ocr_book_a.txt` holds the first 20 pages only; `ocr_pages.json` holds the text of 52 pages in lower case, with no spaces. |
 | `draft-v1/`, `sample/` | Old test outputs. You can delete them. |
 
-To find a printed page N in `final/pages/`: for N ≤ 83 the file is `NNN = N + 7`; for 86 ≤ N ≤ 209 it is `N + 5`; for 210 ≤ N ≤ 356 it is `N + 11`. A copy for reading is on John's Desktop (`City of Darkness Revisited/`).
+To find a printed page N in `final/pages/`: for N ≤ 209 the file is `NNN = N + 7`; for 210 ≤ N ≤ 356 it is `N + 13`. Before 2026-11-16, pages 84–85 were missing, and the rule was N + 7, N + 5 and N + 11. A copy for reading is on John's Desktop (`City of Darkness Revisited/`).
 
 ## Gaps
 
-- Pages 84–85 are missing: two leaves were turned together. Chan Pui Yin's interview (p82) continues on them. John will photograph them.
+- Pages 84–85 were missing in the first scan, because two leaves were turned together. John photographed them on 16 Nov 2026 (IMG_9638). They are now in `final/` (files 091–092), and Chan Pui Yin's interview (p85) is in the table of the original interviews.
 - Near the spine, a strip of some left pages is hidden in the binding. The images do not invent the hidden part.
 
 ## Which parts are primary
@@ -51,15 +52,9 @@ Tag these "retrospective (2014)".
 - **Wong Wai Chung, former heroin addict (pp258–261).** Probably a new 2014 interview: he looks back on the 1970s, and he is not in the 1992 map key. The book does not say.
 - **The authors' own memories** inside the 2014 essays: Ian Lambot (pp270–283), Peter Popham (pp6–19, who visited "not long before its demolition"), Jon Resnick (pp192–217, who visited in 1983).
 
-### Secondary: do not use as a source of facts
+### Secondary: in the secondary twin
 
-- **The 2014 essays:** Peter Popham, "Kowloon Walled City – the Reality" (p6); Julia Wilkinson, "A Chinese Magistrate's Fort" (p62, history to 1940); James Saywell, "The Architecture of a Mini City" (p116; he "was too young to visit the Walled City"); Jon Resnick, "Popular Culture and the Walled City" (p192); Lui Tai Lok (呂大樂), "A Triply Neglected City" (p220); Ian Lambot, "Myth and Reality" (p270); Fionnuala McHugh, "The Walled City Clearances" (p328). McHugh and Lambot quote Government files (CO, FCO, police reports) at length. Use their quotes as leads to the files, not as the files.
-- **Captions and standfirsts** (Goddard, Lambot, Girard). They were written in 1993 or 2014. Some tell what happened later ("moved out in 1990", "where it remains to this day", Kai Tak (啓德) closed "in 1998").
-- **The short features with no speaker** (Fuk Tak Shrine 福德古廟, Refuse Collection, The Water Supply, Life in the Alleys, Life on the Roof, Tin Hau Temple 天后廟). Their text is commentary; their photos are primary.
-- **The fold-out,** Hitomi Terasawa, "Grand Panorama of the Kowloon Walled City" (© 2014). An artist's cross-section based on the 1993 survey of the empty City. The book says that it "is far from accurate", "but it captures the full majesty of life in the City".
-- **Popular culture (pp192–217):** film stills, games, manga, art and models from 1984–2014.
-- **Later studies and modern views:** Urbanus (都市實踐) (p136), University of Waterloo (pp121, 140), Adolfo Arranz's *SCMP* drawing of March 2013 (p141), Shibam and Rio (p135), the park today (pp348–351).
-- **The jacket, the flaps and the acknowledgements.**
+The secondary parts of the book are the 2014 essays, the captions and standfirsts, the short features with no speaker (their photos are primary), the fold-out of Hitomi Terasawa, the popular-culture pages (pp192–217), the later studies and modern views, and the jacket with its flaps and the end pages. The secondary twin [`../../secondary-sources/city-of-darkness-revisited/SOURCE.md`](../../secondary-sources/city-of-darkness-revisited/SOURCE.md) holds them, with each checked detail, its page and its source. Use them as leads, not as facts of the time.
 
 ## Contents
 
@@ -80,7 +75,7 @@ Type: E = essay, I = interview, F = feature (photos with captions or commentary)
 | 62 | Julia Wilkinson, "A Chinese Magistrate's Fort" | E | unclear (captions 2014) | no; the maps and photos of 1845–1924 are |
 | 76 | Lee Yu Chun, candy factory | I | 1987–1992 | yes |
 | 80 | Law Yu Yi, retired maid | F | unclear | photos |
-| 82 | Chan Pui Yin, herbal doctor and pharmacist | I | probably original (pp84–85 missing) | yes |
+| 82 | Chan Pui Yin (陳沛然), herbal doctor and pharmacist | I | probably original | yes |
 | 88 | Chan Kwong, golf-ball maker | I | about 1989–1990 | yes |
 | 92 | Lee Pui Yuen, shopkeeper | I | about 1991 | yes |
 | 98 | The Electricity Supply: Mok Chung Yuk, China Light and Power engineer | I | 1987–1992 | yes |
@@ -200,6 +195,7 @@ In these interviews, "now" means the time of the interview, not 2014.
 | 48–50 | Lau Yeung Yin | family weaving business on Sai Shing (West City) Road from 1982; "I'll be paid about $103,000 in compensation" |
 | 57 | Ng Kam Mui | Chung Fat café on Tung Tau Tsuen Road "for nearly 30 years", closed in 1991 |
 | 76–78 | Lee Yu Chun | in the City from 1967; bought the place for $40,000; last site at 12 Sai Shing (West City) Road from the early 1970s; "our price is $5" (p78) |
+| 85 | Chan Pui Yin (陳沛然), herbal doctor (the interview starts on p82) | "There are more than 900 herbs", each with a proper name and other names; "I created a system to categorise them in drawers using the telephone directory"; "Each drawer is numbered and usually contains four herbs"; he learnt from his father, with "rhymes which helped me to memorise their properties"; an apprentice "would need at least three years to reach a stage where he could man the counter on his own"; he sells no forbidden drugs, and he puts the dangerous herbs away in special places; the Government offers him the same compensation as "people living above the ground floor", but "my shop could be sold for 20 times more than those rooftop units"; "a new clinic would probably cost $2 million"; "Doctors practising Western medicine are being offered $340,000, but not the Chinese herbal doctors" |
 | 88 | Chan Kwong | golf-ball factory from 1970, on Tai Chang Street from 1972; "12 dozen in a bucket and we sell at $30 per bucket"; "$300,000 compensation for my site and $30,000 for relocation" |
 | 93 | Lee Pui Yuen | store at 12 Tai Chang Street from 1979; "This place costs $3000 a month to rent nowadays"; "turnover of $4000 to $5000 every day"; moved out in 1991 |
 | 98–99 | Mok Chung Yuk, China Light and Power engineer | supply "in a major way in 1977" (p98); "before we drew up our master plan about 20 per cent of households already had some sort of supply" (p99); "The years 1977 to '85 were years of drastic transformation" (p99) |
@@ -216,25 +212,7 @@ In these interviews, "now" means the time of the interview, not 2014.
 
 **Retrospective.** Lam Po Chun (p145): "From 1979 to 1989 – that is, from my 19th to 29th year – I was a postman in the Walled City." The book says "while researching this new edition"; it does not print "2014".
 
-### Captions and essays (secondary: use as leads)
-
-The writers used records that the book does not show. Find the record before you use one of these numbers as a fact.
-
-| Page | Where | Fact |
-|---|---|---|
-| 36 | caption | "more than 150 illegal dentists were thought to be practising in the City", but "the figure had dropped to 86 by 1987" |
-| 104 | caption | "the two tons of rubbish that accumulated each day"; "the 10 sweepers who patrolled the City"; Urban Services Department (市政總署) (USD) refuse collectors |
-| 107 | The Water Supply | "By 1987, just eight stand-pipes were in place to supply up to 35,000 residents and hundreds of factories"; "Only one of these was located within the City"; "The first stand-pipe was installed in 1963"; in 1987, Government surveyors "identified 67 working wells owned by some 40 suppliers" |
-| 129 | Saywell | 1954: "about 800 in total, 648 of stone and 152 wood 'huts', according to a Government survey"; 1949: "some 2000 residents"; "The 1950s added 8000 people, the 1960s some 17,000 more"; 1980, at the peak: "an estimated total of 40,000" |
-| 134 | caption | "well over 650 individual buildings" in 1962; "around 300" by 1987 |
-| 249 | caption | "35,000 or so residents and factory workers"; "some 900 factories, restaurants and shops"; "around 30 main streets and alleys"; "one of the eight Government stand-pipes" |
-| 334 | caption (for the 1973 aerial view on p335) | buildings "rising to the maximum height of 12, 13 and 14 storeys"; population "from around 10,000 in 1960 to well over 30,000 in 1973" |
-| 336 | caption | "a 14-storey building appeared on Tung Tau Tsuen Road in 1975", over the height limit near the flight path into Kai Tak Airport (啓德機場) |
-| 339 | McHugh | Wednesday 14 January 1987: 360 staff of the Housing Department's (房屋署) Clearance and Squatter Control sections and "nearly an equal number of policemen"; "83 entrances were cordoned off"; "60 teams of six"; first day: "19,606 people from 5116 families", "22 families had refused"; after the second day, "just over 33,000", with the people who worked in the City but lived elsewhere |
-| 340 | McHugh | "28,200 occupants residing in 8800 separate apartments"; "some 300 individual buildings, each rising up to a possible 15 storeys" |
-| 346 | McHugh | "At 6am on 1 July 1992, 200 police"; "158 vacant flats were repossessed"; the clearance "from 14 January 1987 until 2 July 1992" took "1997 days" |
-| 347 | caption | "the whole demolition taking over a year from January 1993 to March 1994" |
-| 353 | Map caption | "Drawn specially for the original edition of City of Darkness in 1992"; the layout "in the late 1980s"; it "cannot be considered entirely accurate" |
+The facts of the captions and the essays (secondary) are in the secondary twin, [`../../secondary-sources/city-of-darkness-revisited/SOURCE.md`](../../secondary-sources/city-of-darkness-revisited/SOURCE.md) ("Facts and details").
 
 ### Agreements and conflicts
 
@@ -256,7 +234,7 @@ primary, retrospective or secondary (a caption, an intro or an essay).
 | Part of the book | Pages | Fact ids |
 |---|---|---|
 | The original interviews and the photos of Girard and Lambot | throughout | 156 facts with `source_type` "primary", and 14 "retrospective" (old memories inside the interviews) |
-| Captions, intros and the 2014 essays (secondary) | throughout | 83 facts, and the essays D8, D50–D52, D56, D57, C37–C39 |
+| Captions, intros and the 2014 essays (secondary) | throughout | 83 facts, and the essays D8, D50–D52, D56, D57, C37–C39. The secondary twin lists their ids: [`../../secondary-sources/city-of-darkness-revisited/SOURCE.md`](../../secondary-sources/city-of-darkness-revisited/SOURCE.md) |
 | Lam Po Chun (林寶鎮), postman (retrospective, 2014) | 144–149 | A77, A80–A83 |
 | A Policeman's Story | 250–257 | D7, D54 |
 | The Map, Anna Dalgliesh (1992) | 352–353 | M1–M73 |

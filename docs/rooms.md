@@ -207,7 +207,7 @@ These sources can give more rooms, but I could not read them:
 
 ## Coverage
 
-The agents read every page of *City of Darkness Revisited* that the scan has (pp84-85 are missing),
+The agents read every page of *City of Darkness Revisited* that the scan had then (pp84–85 were missing; they were added on 2026-11-16, after this research),
 all five GRS catalogue CSVs, all 22 LegCo Hansard PDFs with a Walled City passage, and the open web
 sources above. `data/room_research.json` (`coverage`) gives the pages of each part.
 
