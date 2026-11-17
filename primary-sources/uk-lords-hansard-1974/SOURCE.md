@@ -8,6 +8,7 @@
 - **License:** Open Parliament Licence v3.0. Git can store it.
   Attribution: "Contains Parliamentary information licensed under the Open
   Parliament Licence v3.0."
+- **Stored in git:** yes: the raw HTML, under the Open Parliament Licence v3.0.
 
 ## Why this is primary
 
