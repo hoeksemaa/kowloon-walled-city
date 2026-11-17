@@ -23,7 +23,9 @@ are not primary. Do not put them here.
 - Copies are byte-identical to what the host gives. Do not crop, convert or
   re-encode them. If a host gives only a derived file, say so in `SOURCE.md`.
 - Before a commit, run `git status --ignored primary-sources` and make sure
-  that no `local/` file is staged.
+  that no `local/` file is staged. Then run `node tools/check_source_files.mjs`: the repo is
+  public, and the check fails if a file in git has no open licence in its `SOURCE.md` (the
+  "Stored in git" line). A file under an NC, ND or NoAI licence stays in `local/`.
 - If facts in `data/room_research.json` come from a source, its `SOURCE.md`
   ends with their ids (section "Room facts").
 - A folder or a section marked "catalogued, not read" lists only the items that the
