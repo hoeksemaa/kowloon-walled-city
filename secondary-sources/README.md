@@ -98,6 +98,7 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`history-books-1988-2026/`](history-books-1988-2026/SOURCE.md) | History books on the City. Catalogued, not read: 5 items (value medium) | 1895-2026 | catalogue only | https://districtcouncils.gov.hk/kc/doc/2016_2019/en/dc_meetings_doc/15863/KCDC19_54cp_Annex.pdf |
 | [`yoshida-ichiro-testimony-1985/`](yoshida-ichiro-testimony-1985/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md |
 | [`hk-chinese-press-1985-1993/`](hk-chinese-press-1985-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1985-1993/SOURCE.md |
+| [`hk-chinese-press-1947-1984/`](hk-chinese-press-1947-1984/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1947-1984/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 

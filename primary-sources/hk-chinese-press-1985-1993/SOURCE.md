@@ -2,7 +2,7 @@
 
 Daily reports made at the time on the survey, the compensation, the protests, the fires and the demolition; page scans are open on archive.org.
 
-- **Status:** partly read: 83 of 106 items read by the reading of the source search of
+- **Status:** partly read: 95 of 106 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1985-1991.
@@ -43,27 +43,97 @@ testimony given later: tag its facts "retrospective (year)".
   - Fire Services Department record of the third-alarm fire at 8 Tai Chang Street (大井街), 7 Dec 1986, not held.
 ### zh-press-1: 港府動用逾億安置賠償 三年內分三期 清拆九龍城寨
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-01-15
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the clearance announcement, printed the day after it.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870115
-- **Other links:** https://archive.org/metadata/NPWK19870115/metadata/description, https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** Item title '華僑日報 1987-01-15'; description opens '港府動用逾億安置賠償 / 三年內分三期 / 清拆九龍城寨 / 政府發言人迴避土地業權問題 / 特別個案賠償料獲較彈性處理'.
-- **What it gives (finder's note, not checked):** The government's plan of 14 Jan 1987: over HK$100m for rehousing and compensation, clearance in three phases over three years. Its keyword list also names 九龍城寨街坊會, 城寨居民, 商戶, 店舖補償, 非法入境者, 公屋, 居屋 and 副政務司 呂孝端.
-- **Notes:** Archive.org item by a private uploader (collection 'china-mail', uploader 'acantonian'), no source or rights statement. It looks like a copy of the HKPL MMIS scans. Check the rights before any download; the official host, HKPL MMIS, is behind a queue-it waiting room. The description field holds OCR headlines and keywords; I read only that field and the details page.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 15 January 1987, front page (第一張第一頁, 本港新聞), lead story 「港府動用逾億安置賠償 三年內分三期 清拆九龍城寨」 and other City items; and 第三張第一頁 (本港新聞), City reactions and the photo page 「九龍城砦 內內外外今昔面貌」. archive.org item NPWK19870115, leaves n0 and n8, https://archive.org/details/NPWK19870115
+- **Class:** primary (Daily news reports made the day after the government announcement of 14 January 1987, with first-hand statements of officials, councillors, the kaifong association, unlicensed dentists and residents. Primary tree is correct. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
+- **Date of the record:** 1987-01-15
+- **Files:**
+  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0000.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0000.jp2&ext=jpg; 2563609 bytes; SHA-256 `f9066ad66f7531b8cfa254d27e303a9cbb9a1befeba5cf5c9073bf0a67b68578`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
+  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0008.jp2&ext=jpg; 2525604 bytes; SHA-256 `d4fdaf00fe48d1b73aa79159d76b908479490ff65dfe1426ab334ad38db15a85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870115, leaf n0 (front page), lead story, right columns | INFERRED: The government announced the full clearance of the City at 9 a.m. on 14 January 1987. The date comes from 'yesterday' in the paper of 15 January. | "政府於昨日上午九時宣佈全面清拆九龍城寨的計劃" (The government announced the plan for the full clearance of Kowloon Walled City at 9 a.m. yesterday.) |
+| NPWK19870115, leaf n0 (front page), lead story, first column | The government planned to clear the City in three phases over three years, and to rehouse and compensate its more than 40,000 residents. The cost was to be counted in hundreds of millions of dollars. | "政府將會在未來三年內分三期清拆歷史遺留下來的九龍城寨，預料動用的款項會以億元計算" (The government will clear the historic Kowloon Walled City in three phases within three years; the money used is expected to be counted in hundreds of millions.) |
+| NPWK19870115, leaf n0 (front page), lead story, first column | The paper gave the City as about 800 m from Kai Tak Airport, 2.7 hectares in area, with more than 40,000 people in 500 joined blocks of 10 to 14 storeys. | "人口超過四萬，他們居住在五百座樓高十層至十四層之結構相連大廈內" (The population is over 40,000; they live in 500 joined buildings of 10 to 14 storeys.) |
+| NPWK19870115, leaf n0 (front page), lead story | A government spokesman gave flooding, bad hygiene, fire danger and dangerous buildings as the problems that had to be solved soon. | "其中包括水浸、危險建築物、衛生情況惡劣及火警危險嚴重等是必須盡早解決" (These include flooding, dangerous buildings, bad hygiene and serious fire danger, which must be solved as early as possible.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The whole clearance was expected to finish in March 1990. The site was then to become a park with some community facilities. | "預料整個行動會在一九九零年三月完成，之後將此地改建一個公園及一些社區設施" (The whole operation is expected to finish in March 1990; then the site will become a park and some community facilities.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The spokesman said that the site was too close to Kai Tak and its flight path for buildings, but a park suited the town plan. | "為避免影响飛機升降之航道，此地不適合興建樓宇" (To avoid affecting the flight path of aircraft, the site is not suitable for buildings.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The spokesman avoided the question of the land title of the City again and again. He said only that the two sides solved the problem at a practical level. | "九龍城寨「土地業權」問題，政府發言人就再三迴避" (On the 'land title' question of Kowloon Walled City, the government spokesman avoided it again and again.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The government proposed a special committee under the Housing Authority (房委會) for all the clearance work, the rehousing and the compensation. | "政府建議房委會轄下成立一個特別委員會專責今次清拆一切工作，以及安置和賠償安排" (The government proposes a special committee under the Housing Authority in charge of all the clearance work and the rehousing and compensation arrangements.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The government was to pay all the compensation; a rough estimate was 'in the billion' (十億計). It was to give public rental, temporary and Home Ownership Scheme flats near the City to the people affected. The headline says 'over a hundred million'. | "粗略估計可能會動用十億計之欵項" (A rough estimate is that sums in the order of a billion can be used.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The government expected that no resident would want to stay in the City, and had no plan for people who refused to move. | "政府目前並無計劃去應付不肯搬遷的居民" (The government at present has no plan to deal with residents who refuse to move.) |
+| NPWK19870115, leaf n0 (front page), lead story, upper left block | The spokesman said that Hong Kong law already applied in the City, to its illegal doctors, unlicensed dentists and other illegal activities. | "現時存在城寨內的非法醫生、無牌牙醫及各種違法活動，港府之法律已經在城寨內施行" (For the illegal doctors, unlicensed dentists and other illegal activities in the City now, Hong Kong government law already applies in the City.) |
+| NPWK19870115, leaf n0 (front page), article 「區內人口稠密接近機場 清拆城寨建公園不建樓」 | The acting Governor, Sir David Akers-Jones (鍾逸傑), spoke after the Executive Council meeting of 14 January 1987. He said that illegal immigrants found during the clearance would be sent back. | "假若在清拆時候發現非法移民，會將他們遣返原地" (If illegal immigrants are found during the clearance, they will be sent back to where they came from.) |
+| NPWK19870115, leaf n0 (front page), article 「區內人口稠密接近機場」, lower tier | He said that a single clearance of more than 40,000 people would be too much for rehousing and for the budget, thus the three phases. | "如果進行一次過清拆行動，會令政府無法妥善安置這些居民" (If the clearance were done all at once, the government could not properly rehouse these residents.) |
+| NPWK19870115, leaf n0 (front page), article 「區內人口稠密接近機場」, lower tier | He said that the government would handle the unlicensed dentists of the City with care. | "政府會很審慎處理城寨內的無牌牙醫問題" (The government will handle the problem of the unlicensed dentists in the City very carefully.) |
+| NPWK19870115, leaf n0 (front page), article 「區內人口稠密接近機場」, lower tier | He gave the reasons for a park and not housing: the airport runway, and a lack of community and transport facilities in the dense Kowloon City district. | "若興建住宅會妨礙飛機升降，加上九龍城區人口稠密" (Housing would obstruct aircraft landing and take-off, and Kowloon City district is densely populated.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記 無發現趁機遷入者」, continuation | The Housing Department sent 360 survey staff into the City on the morning of 14 January 1987, in 60 teams of six, to register the residents. | "房屋署昨晨出動了三百六十個調查登記人員，分六十隊六人小隊替城砦居民登記" (The Housing Department yesterday morning sent out 360 survey and registration staff, in 60 teams of six, to register the City's residents.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記」 | Assistant Director of Housing 陳德平 said that 90 per cent of the first-day registration was done. Re-checks were to follow; residents missed after that week could go to the Housing Department office at Block 17, Lok Fu Estate (樂富邨十七座). | "昨日初步登記工作，已有百分之九十完成" (Yesterday's first registration work is already 90 per cent complete.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記」 | 陳德平 said that the survey found no illegal immigrants and no one who had moved in to take advantage. He did not know if the police had found any. | "房署在登記過程中，並無發現非法移民或趁機遷入的人" (During registration the Housing Department found no illegal immigrants or people who moved in to take advantage.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記」 | 陳德平 said that the survey was hard because the high blocks of the City were complex and the staff did not know the layout. | "由於城砦高樓大廈的形式複雜，由於未了解地理環境，所以較為困難" (Because the form of the City's high-rise blocks is complex and the layout is not yet known, it is rather difficult.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記」 | 陳德平 said that owners would get compensation and residents would get public housing or rehousing. Residents welcomed the plan because of fire and hygiene; most questions were about rehousing and compensation. | "城寨業主將獲得賠償，而居民會獲上樓或安置" (City owners will get compensation, and residents will get public housing or rehousing.) |
+| NPWK19870115, leaf n0 (front page), article 「房署首日調查登記」, headline and first tier | He said that 14 public rental, Home Ownership Scheme and private-sector HOS estates would be finished in the three years. | "未來三年有十四公屋居屋屋邨落成" (Fourteen public rental and HOS estates will be completed in the next three years.) |
+| NPWK19870115, leaf n0 (front page), table 「城寨人口調查初步統計 登記五千家庭近二萬人」 | The first count of the pre-clearance survey: 8,788 registered living units, 5,116 registered households and 19,606 registered persons. | "已登記的人數 一萬九千六百零六人" (Number of persons registered: 19,606.) |
+| NPWK19870115, leaf n0 (front page), table 「城寨人口調查初步統計」 | The same count: 3,650 living units locked with no one present, 22 households that refused to register, 760 business units surveyed, and 56 business units locked with no one present. | "已調查的商業單位 七百六十個" (Business units surveyed: 760.) |
+| NPWK19870115, leaf n0 (front page), article 「三年內每年安置三千戶 市區木屋區清拆受影響」 | Housing Authority member 梁煒彤 estimated about 3,000 households to rehouse each year, over 10,000 people a year. She said that this would affect the clearance of urban squatter areas, but not much. | "每年也要萬多人，大約每年安置三千戶左右" (Over 10,000 people each year, about 3,000 households rehoused each year.) |
+| NPWK19870115, leaf n0 (front page), article 「三年內每年安置三千戶」 | 梁煒彤 called the City the worst den of filth in Hong Kong, worse than some squatter areas; basic services such as the drinking water supply were not normal. | "很多基本設施，例如食水供應均不正常" (Many basic facilities, such as the drinking water supply, are not normal.) |
+| NPWK19870115, leaf n0 (front page), article 「三年內每年安置三千戶」, lower tier | 梁煒彤 said that residents usually asked to be rehoused nearby; the City's people were to be rehoused in the urban area, Sha Tin and Tsuen Wan. | "受影响的九龍城寨居民基本上應在市區、沙田及荃灣等覓地安置" (Affected City residents should basically be rehoused in the urban area, Sha Tin, Tsuen Wan and so on.) |
+| NPWK19870115, leaf n0 (front page), article 「三年內每年安置三千戶」 (sub-headline 「城寨商戶難獲店舖補償」), lower tier | Housing Authority member 張建忠 said that the Housing Department would rehouse people under the general clearance rules, but that the business premises of the City would hardly get compensation as shops. | "但最遺憾的是商業樓宇就難有店舖的補償了" (But the most regrettable thing is that commercial premises will hardly get compensation as shops.) |
+| NPWK19870115, leaf n0 (front page), article 「呂孝端履任副政務司 統籌拆九龍城寨計劃」 | 呂孝端 took office on 14 January 1987 as Deputy Secretary (Special Duties) (副政務司（專責事務）) of the City and New Territories Administration (政務總署) to run the clearance. | "呂孝端昨日正式履任為副政務司（專責事務）" (呂孝端 yesterday formally took office as Deputy Secretary (Special Duties).) |
+| NPWK19870115, leaf n0 (front page), article 「呂孝端履任副政務司」 | 呂孝端 said that the special committee would have four to six non-official members, people who knew the City and professionals such as people from property and law, with members from government departments. | "特別委員會將由四至六個非官方人士組成" (The special committee will be made up of four to six non-official people.) |
+| NPWK19870115, leaf n0 (front page), article 「呂孝端履任副政務司」 | The survey started at 10 a.m. on 14 January 1987, to learn the real population and the use of each unit. Residents cooperated and there was no unpleasant incident. | "房屋署昨晨十時開始在城寨內進行調查，目的是了解寨內人口實際有多少，以及各單位之用途" (The Housing Department began the survey in the City at 10 a.m. yesterday, to learn the real population and the use of each unit.) |
+| NPWK19870115, leaf n0 (front page), article 「呂孝端履任副政務司」 | 呂孝端 said that the special committee would decide who counted as a real resident, and that illegal immigrants found in the City would go to the police. | "城寨內的真正居民定義，將由特別委員會決定" (The definition of a real resident of the City will be decided by the special committee.) |
+| NPWK19870115, leaf n0 (front page), article 「呂孝端履任副政務司」, lower tier | The departments in the clearance included the City and New Territories Administration, the Registrar General's Department, the Buildings and Lands Department and the Housing Department. | "還有屋宇地政署、房屋署" (Also the Buildings and Lands Department and the Housing Department.) |
+| NPWK19870115, leaf n0 (front page), article 「城寨坊會定期搜集居民意見」 | The kaifong association (九龍城砦街坊福利促進事業委員會) began meetings on 14 January 1987 to collect residents' views, one meeting for each trade or street group. | "已展開一連串的登記搜集居民意見" (Has begun a series of registrations to collect residents' views.) |
+| NPWK19870115, leaf n0 (front page), article 「城寨坊會定期搜集居民意見」 | The kaifong schedule: 14 Jan (Wed) 2 p.m. medical trade, 4 p.m. dental trade; 15 Jan (Thu) 10 a.m. shops of all trades, 2 p.m. factories, 8 p.m. owner-occupiers of 東頭村道. | "下午二時，醫務行業，下午四時，牙醫行業" (2 p.m., the medical trade; 4 p.m., the dental trade.) |
+| NPWK19870115, leaf n0 (front page), article 「城寨坊會定期搜集居民意見」, continuation | 16 Jan (Fri): 10 a.m. the building trade, with the water-supply companies (供水公司); 2 p.m. non-resident owners east of 龍城路 and 老人街; 8 p.m. owner-occupiers of 龍津道. | "上午十時，建築行業（包括供水公司）" (10 a.m., the building trade (including the water-supply companies).) |
+| NPWK19870115, leaf n0 (front page), article 「城寨坊會定期搜集居民意見」, continuation | 17 Jan (Sat): 2 p.m. non-resident owners north of 老人街; 8 p.m. owner-occupiers of 龍城路. 18 Jan (Sun): 10 a.m. owner-occupiers of 光明街 and 老人街, 2 p.m. those of 大井街 and 龍津路, 8 p.m. non-resident owners of 西城路. | "下午二時，大井街龍津路（自置物業自住居民）" (2 p.m., 大井街 and 龍津路 (owner-occupiers).) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) 「中英展拓香港界址專條 訂明城砦保持特殊地位」 | The front-page feature said that drugs, vice and gambling had fallen, and that the narrow streets, once dark day and night, now had street lamps that lit up by themselves at dusk. | "每至黃昏，便因街燈自動放亮，光明一片" (Every evening at dusk the street lamps light up by themselves, and it is all bright.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | The feature gave the City as about 40,000 people on 6.4 hectares, bounded by 賈炳達道, 東頭邨道, 東正道 and 龍津路. (The lead story gives 2.7 hectares.) | "目前九龍城寨人口約有四萬，面積六點四公頃" (At present Kowloon Walled City has about 40,000 people and an area of 6.4 hectares.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | INFERRED: The feature also gave 'more than 50,000' residents, about half of them Chiu Chow (the first character is a hard reading, likely 潮), the others Hakka and people from other provinces; most were working people. | "現在寨內居民五萬多人" (Now there are more than 50,000 residents in the City.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | The feature counted more than 400 small factories and shops in the City. | "全寨現有小型工廠、商店達四百多間" (The whole City now has more than 400 small factories and shops.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | Doctors' signboards covered the whole of 東頭村道 on the north side of the City, at almost every shop door. Many doctors from the Mainland who could not get a Hong Kong licence practised there. | "醫生的招牌密密麻麻掛滿了城寨北面的整條東頭村道" (The doctors' signboards hang thickly along the whole of 東頭村道 on the north side of the City.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | The feature said that police had raided drugs, vice and wanted men in the City for seven or eight years, and that armed and plain-clothes police now patrolled 24 hours a day. | "現在每天二十四小時均有武裝警員和便衣出入巡邏" (Now armed police and plain-clothes officers patrol in and out 24 hours a day.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | The health department sent seven street sweepers into the City each day to clear the refuse. | "衛生部門每天也派定七個清道夫在寨內清理垃圾" (The health department also sends seven street sweepers each day to clear refuse in the City.) |
+| NPWK19870115, leaf n0 (front page), feature (特寫) | The feature said that the government still did not deal fully with the sanitation and the drinking water of the City. | "如寨內的環境衛生和食水問題，就不予徹底解決" (For example the sanitation and drinking-water problems in the City are not thoroughly solved.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「城寨無牌牙醫及中西醫要求政府給予職業安排」 | Several hundred unlicensed dentists and doctors of Chinese and Western medicine in the City asked for job arrangements as well as compensation and rehousing. | "城寨內數百名無牌牙醫和中西醫生" (Several hundred unlicensed dentists and Chinese- and Western-medicine doctors in the City.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「城寨無牌牙醫及中西醫」 | 陳德平 said that these doctors would get money compensation to help them change jobs, but no shop units. | "該等醫生將獲金錢賠償而不會分配舖位" (These doctors will get money compensation and will not be allocated shop units.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「城寨無牌牙醫及中西醫」 | INFERRED: The kaifong association's dental group met more than 50 unlicensed dentists (who did crowns, fillings and cleaning). Its deputy head (name read as 吳石彥) said the government had tolerated them for historical reasons. | "在與五十多位無牌牙醫會後" (After meeting more than 50 unlicensed dentists.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「招顯洸周梁淑怡均認為 無牌牙醫醫生應予取締」 | The unlicensed doctors of Chinese and Western medicine asked for compensation for medical equipment they had bought, and for a living allowance to change jobs. | "他們盼港府給予生活補助費，協助他們轉業" (They hope the government will give a living allowance to help them change jobs.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | Residents said that flats changed hands with a simple deed: the names of buyer and seller, the place and a notary. Flats cost from tens of thousands to over a hundred thousand dollars; shops cost more. | "價錢方面由數萬元至十數萬元不等，店舖則比較昂貴" (Prices range from tens of thousands to a hundred-odd thousand dollars; shops are more expensive.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | On 14 January 1987 nobody asked at the estate agents in the City any more. | "昨日，城寨內的地產公司再無人問津" (Yesterday nobody asked at the estate agencies in the City any more.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | Tenants welcomed the clearance: the water was not drinkable, and dirty water and refuse lay everywhere with no one to clear it. | "食水更不能飲用，而滿地的污水及垃圾，都沒有人處理" (The water cannot even be drunk, and the dirty water and refuse all over the ground are not dealt with by anyone.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | Owners lost their rent income. Shopkeepers said a new shop would need a new business registration and taxes, so they might not restart their trade. | "他們再不能靠收取租金維生" (They can no longer live on collecting rent.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | A shop owner had spent HK$800,000 to buy and fit out a shop that had opened ten-odd days before. | "一位最近耗費八十萬購買及裝修店舖的老闆表示，店舖剛開張十數天" (A boss who recently spent 800,000 buying and fitting out a shop said the shop had opened only ten-odd days ago.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | An owner, 廖太, had just paid off a debt of over HK$100,000 for her flat. She asked for a fair price, such as HK$80,000 or more. | "剛還清十多萬買樓債務的業主廖太" (Owner Mrs 廖, who had just paid off a debt of a hundred-odd thousand for buying the flat.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「住客額手稱慶 業主店東皺眉」 | Some residents had lived in the City for over 20 years and had joined two units into one; they were better off and did not want public housing. Poorer residents supported the clearance. | "有些居民在城寨住上廿多年，且有兩單位打通" (Some residents have lived in the City for over twenty years and have two units knocked through.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「馮檢基認為輪候公屋者將受到影響」 | 馮檢基 of the 居屋評議會 estimated that of about 10,000 households in the City, about 6,000 met the rules for public housing. | "估計目前城寨一萬個家庭中，大約有六千戶居民，符合上樓的資格" (He estimates that of the 10,000 households in the City now, about 6,000 qualify for public housing.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「九龍城寨街坊會認為恰當是好事」 | The kaifong association held two emergency meetings on the morning of 14 January 1987, and many residents came to its office to ask about the clearance. | "大批城寨居民昨晨到福利會查詢有關情況" (Many City residents came to the association yesterday morning to ask about the situation.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「九龍城寨街坊會認為恰當是好事」 | The kaifong association's statement accepted the plan as fair to the City and approved by China, and asked for fair compensation for residents, shops, factories, trades and owners. | "照顧到城寨的利益，並得中國政府的認可，是件好事" (It takes care of the City's interests and has the approval of the Chinese government; it is a good thing.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「賠償城寨居民傳言相當優厚」 | Sources near the Chinese side said that the City's compensation would be quite generous, not the same as the squatter terms. | "有關城寨的賠償不會與現行賠償予木屋的居民一樣，而是相當優厚的" (The compensation for the City will not be the same as the present compensation for squatters; it will be quite generous.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「區議員支持拆城寨」 | District Board member 吳少鵬 said that the City had no planning at all: some blocks were new and some old, thus compensation needed flexibility. | "九龍城寨是一個完全缺乏規劃的地區" (Kowloon Walled City is an area with no planning at all.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「區議員支持拆城寨 黃錫江說行動秘密未知會區會」 | Kowloon City District Board chairman 黃錫江 said that the government had kept the plan secret and had not told the District Board. He said the board had worked on the City's lighting and cleaning. | "港府對清拆九龍城寨一直保持高度秘密" (The government kept the clearance of Kowloon Walled City highly secret all along.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「鍾士元爵士強調 定採公平辦法 對待有關人士」 | Executive Council senior member Sir Chung Sze-yuen (鍾士元) called the City a stain on Hong Kong, and said that the 40,000 people were Hong Kong residents who needed housing. | "這四萬人是香港的居民，我們要記着這一點" (These 40,000 people are residents of Hong Kong; we must remember this.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), article 「清拆城寨事先未諮詢立法局議員不滿」 | Some LegCo members were unhappy that the government had not consulted them first; others debated if the public money was worth it. | "清拆城寨事先未諮詢立法局議員不滿" (LegCo members unhappy that the clearance was not discussed with them first.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page 「九龍城砦 內內外外今昔面貌」, caption 4 | Photo caption: up to then the City's residents still depended on street standpipes for water. | "城寨居民至目前為止，仍依賴街喉供水" (City residents up to now still depend on street standpipes for water.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page, caption 6 | Photo caption: the old people's centre in the City was once the yamen. | "城寨內老人中心的前身是一座衙門" (The old people's centre in the City was formerly a yamen.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page, caption 7 | Photo caption: the Tin Hau temple, more than 100 years old. | "有百多年歷史的天后古廟" (The old Tin Hau temple with more than a hundred years of history.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page, captions 3, 8 and 9 | INFERRED: Photo captions: Housing Department staff registered residents and marked the buildings at the same time; detectives watched the registration from high up (the character read as 深 is likely 探). | "房屋署人員同時在樓宇劃上記號" (Housing Department staff at the same time marked the buildings.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page, caption 10 | Photo caption: dentists crowded the outer edge of the City that faces 東頭村道. | "面對東頭村道的城寨外圍，牙醫林立" (On the outer edge of the City facing 東頭村道, dentists stand in rows.) |
+| NPWK19870115, leaf n8 (第三張第一頁, 本港新聞), photo page, caption 11 | Photo caption: electric wires and water pipes crossed everywhere inside the City and were very dangerous. | "城寨內電綫水喉縱橫交錯，非常危險" (Inside the City, electric wires and water pipes cross in all directions; very dangerous.) |
+
+- **Leads:**
+  - The government announcement of 14 January 1987 on the clearance of Kowloon Walled City, and the Executive Council decision of the same day (not held).
+  - The first count of the Housing Department pre-clearance survey of 14 January 1987 (8,788 registered living units, 5,116 households, 19,606 persons) (not held).
+  - The statement of the kaifong association (九龍城砦街坊福利促進事業委員會) of 14 January 1987 on the clearance (printed in part on leaf n8; the full text not held).
+  - The statement of the Ministry of Foreign Affairs of China on the clearance, January 1987 (printed on leaf n0; not held as a separate record).
 ### top-zh-press-1: 城砦住戶續調查已登記逾八千戶二萬八千多人商業單位則共有八百二十九個 / 房委會設特別委員會處理城寨清拆安置主席胡法光非官方及官方成員十名獲授權處理包括區內無牌牙醫等事
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
 - **Citation:** Ta Kung Pao (大公報), 「房委會設特別委會 處理城寨清拆安置 主席胡法光非官方及官方成員十名 獲授權處理包括區內無牌牙醫等事」 and 「城砦住戶續調查 已登記逾八千戶二萬八千多人 商業單位則共有八百二十九個」, with the short editorial 「清拆城砦決定受歡迎」, 16 January 1987, 港聞 page, archive.org item NPTKP19870116, leaf n3, https://archive.org/details/NPTKP19870116/page/n3
 - **Class:** primary (A news report of the time (1987), written one day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-01-16
-- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -96,6 +166,8 @@ testimony given later: tag its facts "retrospective (year)".
 | NPTKP19870116, leaf n3 (港聞 page), lower right (survey report) | The association met the shop owners, the factory operators and the owner-occupiers of the City in separate groups. | "福利會的負責人分批與區內的商戶、廠戶以及自置自住房屋的業主開會" (The association's leaders met the shops, factories and owner-occupiers of the area in separate groups.) |
 | NPTKP19870116, leaf n3 (港聞 page), lower right (survey report) | Most shops and factories wanted a later clearance and new shop space to go on earning their living, and compensation at market value. | "大部份商戶和廠戶希望能延期清拆及分配到新舖位繼續謀生" (Most shops and factories hope for a delay of the clearance and new shop space to keep earning a living.) |
 | NPTKP19870116, leaf n3 (港聞 page), lower right (survey report) | Some owners asked for a flat in exchange for their flat. Others wanted compensation at market value. | "業主方面則有人要求以屋換屋" (Among the owners, some asked for a flat in exchange for a flat.) |
+| NPTKP19870116, leaf n3 (港聞 page), left (短評) | INFERRED: The paper's short editorial said the government had announced the clearance and a park on 14 January 1987, and that the plan was widely welcomed. The date comes from 'the day before yesterday' (前天) in a paper of 16 January. This is the paper's view. | "港府前天宣佈清拆九龍城砦並改建為公園的計劃，受到普遍好評" (The government's plan, announced the day before yesterday, to clear the City and make it a park was widely praised.) |
+| NPTKP19870116, leaf n3 (港聞 page), left (短評) | The editorial said the residents would be moved and get better homes, and that the decision showed an understanding between the Chinese and British governments. This is the paper's view. | "拆遷決定的背後反映了中英兩國政府之間的諒解" (Behind the decision lies an understanding between the Chinese and British governments.) |
 
 - **Leads:**
   - Housing Department (房屋署) pre-clearance household survey of the City, 14-15 January 1987 (8,867 residential units, 8,034 households, 28,752 people, 829 shops): the survey records (cited in 大公報 16 Jan 1987, leaf n3; not held).
@@ -153,20 +225,31 @@ testimony given later: tag its facts "retrospective (year)".
   - Housing Department (房屋署) complaint files on rent rises and forced removals in the City, Jan-Feb 1987 (cited in 大公報 11 Feb 1987, leaf n3; not held).
 ### zh-press-2: 一月十四日後遷入城寨者 不獲賠償安置
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-02-11
-- **Kind:** press
-- **Class:** primary (Report of the time on the cut-off date of the clearance.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870211
-- **Other links:** https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** Item title '華僑日報 1987-02-11'; headline '一月十四日後遷入城寨者' / '不獲賠償安置'.
-- **What it gives (finder's note, not checked):** People who moved into the City after 14 Jan 1987 (the survey day) get no compensation or rehousing.
-- **Notes:** Same archive.org rights caveat as zh-press-1. Item size 211.8 MB, PDF 19.4 MB (not downloaded).
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「一月十四日後遷入城寨者 不獲賠償安置 / 覆核發現卅家庭在該日後遷入 / 部份業主迫遷欲重租收「佣金」 / 房署勸住客勿搬否則不獲安置」, 11 February 1987, 本港新聞 page, archive.org item NPWK19870211, leaf n8, https://archive.org/details/NPWK19870211
+- **Class:** primary (A news report of statements made after a meeting of the special committee on the clearance, with Housing Department survey figures of 2 February 1987, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-02-11
+- **Files:**
+  - `zh-press-2-NPWK19870211_jp2_NPWK19870211_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870211/NPWK19870211_jp2.zip/NPWK19870211_jp2%2FNPWK19870211_0008.jp2&ext=jpg; 2598926 bytes; SHA-256 `a10e0ec3067df33b7ab4c14638e65eece9ce253318b682aad10605ead82b94dd`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870211)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, first column | Assistant Director of Housing (Special Duties) 陳德平 said that anyone who moved into the City after 14 January 1987 would get no compensation and no rehousing. | "任何人士在一月十四日後遷入九龍城寨，絕不獲得賠償及安置" (Anyone who moved into Kowloon Walled City after 14 January will get no compensation or rehousing.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, first tier | He spoke after a meeting of the special committee on the clearance of the City (九龍城寨清拆事宜特別委員會). | "陳德平在九龍城寨清拆事宜特別委員會會議後指出" (陳德平 said after the meeting of the special committee on the clearance of Kowloon Walled City.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, first tier | The survey after the announcement of 14 January was to freeze the number of residents who could get rehousing, so that no one could move in to take advantage. | "是為凍結受影响地區合乎安置資格居民數目" (It is to freeze the number of residents in the affected area who qualify for rehousing.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, first tier | In a re-check of more than 300 households, the Housing Department found 30 that had moved in after the announcement. They were not to be rehoused. | "房屋署在覆核的三百多個家庭中，發現有卅個在宣佈清拆後才搬入" (Of the 300-odd households the Housing Department re-checked, it found 30 that moved in only after the clearance was announced.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, first tier, left part | In the past week the Housing Department had many complaints that owners were forcing tenants out, to get money from new tenants, with 'commissions' of up to HK$10,000. | "住客被業主迫遷，企圖從新遷入的住戶中獲得一筆款項，及取高達萬元佣金" (Tenants are being forced out by owners, who try to get a sum from newly moving-in households, taking commissions of up to 10,000 dollars.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | Households that moved out of the City would not be rehoused. Thus the Housing Department told residents to stay until it rehoused them. | "因此，居民必須繼續居留，直至獲房署安置為止" (Thus residents must stay on until the Housing Department rehouses them.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | 陳德平 said that the government would not deal with forced evictions; a tenant could sue the owner in a civil action. | "政府不會處理迫遷事宜，但住客若有不滿，可從法律途徑，以民事訴訟形式向業主提控" (The government will not deal with forced evictions, but an unhappy tenant can take the owner to court in a civil action.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | Committee member 簡福貽 said that residents should wait for the committee to publish the compensation method before they hired surveyors; whether the government would pay the surveyors' fees was not yet discussed. | "居民應等待委員會公佈賠償的計算方法，才聘請測計師" (Residents should wait for the committee to announce the method of calculating compensation before hiring surveyors.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | INFERRED: Another committee member, 鄧泰全, said that the committee would visit the City in February 1987. The second character of his name is not clear on this page; the issue of 8 April 1987 gives 鄧泰全. | "委員會將於二月份內到城寨視察，以作深入了解" (The committee will visit the City within February for a closer understanding.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | The detailed registration of the Housing Department began on 4 February 1987. By 10 February it had re-checked 483 households with 1,633 people. | "現已覆核的家庭共有四百八十三個，人數共達一千六百三十三人" (Households re-checked so far total 483, with 1,633 people.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | The Housing Department count of 2 February 1987: 8,880 domestic units (住戶), 10,046 households (家庭), 33,652 people and 158 residential buildings. One household refused to register. | "共有八千八百八十個住戶，一萬〇四十六個家庭，三萬三千六百五十二人，一百五十八座住宅樓宇" (In all 8,880 domestic units, 10,046 households, 33,652 people and 158 residential buildings.) |
+| NPWK19870211, leaf n8 (本港新聞), article 「一月十四日後遷入城寨者 不獲賠償安置」, left continuation | The same count gave 1,045 commercial units: 63 clinics, 87 dentists, 148 shops, 570 factories and 177 others. | "診所有六十三間，牙醫有八十七間，商店有一百四十八間，工廠有五百七十間，其他有一百七十七間" (63 clinics, 87 dentists, 148 shops, 570 factories, 177 others.) |
+
+- **Leads:**
+  - The Housing Department count of 2 February 1987 (8,880 domestic units, 10,046 households, 33,652 people, 1,045 commercial units) (not held).
+  - The record of the meeting of the special committee 九龍城寨清拆事宜特別委員會 of February 1987 (not held).
 ### top-zh-press-4: 樓宇擠迫無防盜措施城寨爆竊搶劫仍頻警方已加派人手巡邏防止罪案
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -213,20 +296,35 @@ testimony given later: tag its facts "retrospective (year)".
   - Letter of 城寨平民醫療所 (香港華人革新協會) to 九龍城寨清拆事宜特別委員會 with seven demands, early April 1987 (cited in 大公報 4 Apr 1987, leaf n6; not held).
 ### zh-press-4: 清拆城寨巨額撥款 / 註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-04-08
-- **Kind:** press
-- **Class:** primary (Report of the time on the registration of owners.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870408
-- **Other links:** https://archive.org/metadata/NPWK19870408/metadata/description
-- **Proof that it exists:** Description phrases '清拆城寨巨額撥款', '註冊總署將城寨分三區發信通知', '九龍城寨業主登記', '昨日開始分批進行'.
-- **What it gives (finder's note, not checked):** The Registrar General divided the City into three zones for letters to owners; owner registration started in batches on 7 Apr 1987. The three zones can help to map the clearance phases.
-- **Notes:** Read via the metadata API only. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」 and 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, 8 April 1987, 第二張第二頁 (本港新聞), archive.org item NPWK19870408, leaf n5, https://archive.org/details/NPWK19870408
+- **Class:** primary (News reports made at the time (1987), of what officials said and of a Finance Committee paper. Primary tree is correct.)
+- **Date of the record:** 1987-04-08
+- **Files:**
+  - `zh-press-4-NPWK19870408_jp2_NPWK19870408_0005.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870408/NPWK19870408_jp2.zip/NPWK19870408_jp2%2FNPWK19870408_0005.jp2&ext=jpg; 2407333 bytes; SHA-256 `b24f5e52f744f3f5269b8ab25e1f35de79ecd8ba1c2eb0b39c89f6fcc3a23260`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870408)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, first tier | The Registrar General's Department (註冊總署) began to register the owners of the City on 7 April 1987, at the ground floor of Block 17, Lok Fu Estate (樂富邨十七座). The paper said there were more than 10,000 owners. | "註冊總署從昨日開始，在樂富邨十七座地下，為萬多個九龍城寨業主進行登記" (From yesterday the Registrar General's Department, at the ground floor of Block 17 Lok Fu Estate, registers the 10,000-odd owners of Kowloon Walled City.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, first tier | The first batch of households was to move out in April 1988 ('April next year'). The compensation of shops was to be announced later. | "第一批住戶在明年四月搬出，至於商戶的賠償，日後會公佈" (The first batch of households will move out in April next year; the compensation of shops will be announced later.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, first tier | Deputy Principal Solicitor 馮自強 said the City was divided into three areas from west to east, and letters went to the owners of each area in turn. | "將城寨劃分為三個地域，分批發信，邀請業主到辦事處辦理登記手續" (The City is divided into three areas, with letters sent in batches, inviting owners to the office to register.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, first and second tiers | The first area ran from the boundary at 西頭村 to 大井街. More than 100 letters had gone out. It had 2,750 households and was to move out in April 1988. | "第一批由西頭村邊界到大井街，已發出百多封信" (The first batch runs from the 西頭村 boundary to 大井街; more than a hundred letters have gone out.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, second tier | The second area ran from 大井街 to 老人街 and was to move out in April 1989. The third area was to move out in 1990. | "第二批由大井街至老人街，預計八九年四月搬出，第三批則望於九〇年搬出" (The second batch from 大井街 to 老人街 is expected to move out in April 1989; the third batch hopes to move out in 1990.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, first tier | The registry office had 13 staff and expected to register about 200 titles a day. Owners had to bring all their proof, such as deeds, electricity bills and rent receipts. | "他提醒業主到來登記者帶同所有證明文件，例如屋契，電費單，及租單" (He reminded owners who come to register to bring all proof documents, such as house deeds, electricity bills and rent receipts.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, second tier | Owners who did not live in the City could register at the office in office hours. | "至於非自住業主，馮自強表示，可在辦公時間內，到辦事處登記" (As for non-resident owners, 馮自強 said they can register at the office during office hours.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, lower tier | 呂孝端 said that the Housing Department had registered 5,700 households in detail; 40 per cent were owner-occupiers, and most tenant households hoped to get public rental flats. Registration was to finish in June 1987. | "房屋署已詳細登記五千七百戶，其中四成是自住業主，而住戶大部份希望入住公屋" (The Housing Department has registered 5,700 households in detail; 40 per cent are owner-occupiers, and most households hope to move into public housing.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, lower tier | About 50 non-resident owners of the City were seen on 7 April 1987. Their land deeds and papers were to be photocopied and kept for a report. | "至於昨日接見的城寨非自住業主約有五十人" (As for the non-resident owners of the City seen yesterday, there were about fifty.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, lower tier | INFERRED: Four members of the special committee visited several households in the City on 6 April 1987: District Board members 陳子鈞 and 鄧泰全, 陳協平 (vice-chairman of the kaifong association), and 岑立誠 (Assistant Registrar General). | "該四位委員為九龍城區議員陳子鈞及鄧泰全、九龍城砦街坊福利事業促進會委員會副主席陳協平" (The four members were Kowloon City District Board members 陳子鈞 and 鄧泰全, and 陳協平, vice-chairman of the 九龍城砦街坊福利事業促進會.) |
+| NPWK19870408, leaf n5 (第二張第二頁, 本港新聞), article 「註冊總署將城寨分三區發信通知 九龍城寨業主登記昨日開始分批進行」, lower tier | The special committee had visited the City before, on 25 February 1987, to learn about the residents' lives and housing. | "該委員會曾於二月二十五日前往九龍城寨訪問，了解該處居民的生活情況及居住環境" (The committee visited Kowloon Walled City on 25 February to learn about the residents' living conditions and environment.) |
+| NPWK19870408, leaf n5 (第二張第二頁), article 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, first tier | The LegCo Finance Committee was to meet on 8 April 1987 about the money for a special clearance office (專責事務處): HK$148.4 million over the four years 1986-87 to 1989-90. | "款額在一九八六—八七至一九八九—九〇年四個財政年度內預算為一億四千八百四十萬元" (The sum over the four financial years 1986-87 to 1989-90 is budgeted at 148.4 million dollars.) |
+| NPWK19870408, leaf n5 (第二張第二頁), article 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, first tier | A Deputy Secretary was to head the office, with four sections from the City and New Territories Administration, the Housing Department, the Buildings and Lands Department and the Registrar General's Department. | "這專責事務處將由一名副政務司掌管" (This special office will be headed by a Deputy Secretary.) |
+| NPWK19870408, leaf n5 (第二張第二頁), article 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, first tier | The office was to survey who qualified for compensation and rehousing, settle land titles, rehouse residents, pay removal allowances, ex-gratia and land compensation, handle claims and complaints, and demolish all the buildings. | "及在城寨內執行所有建築物的實際拆卸工作" (And carry out the actual demolition of all the buildings in the City.) |
+| NPWK19870408, leaf n5 (第二張第二頁), article 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, second tier | The plan was to create 6 directorate posts and 233 non-directorate posts in the four departments. | "開設六個首長級職位和二百三十三個非首長級職位" (Create six directorate posts and 233 non-directorate posts.) |
+| NPWK19870408, leaf n5 (第二張第二頁), article 「預算動用一億四千八百多萬元 財務委會今日討論清拆城寨巨額撥欵」, second and third tiers | The paper also asked for a new sub-head 'Kowloon Walled City clearance' with HK$17,897,000 for running costs, and a new non-recurrent item of HK$7,859,000 to fit out the office. | "追加撥款一千七百八十九萬七千元，以支付九龍城寨清拆事務處的經常開支" (A supplementary provision of 17,897,000 dollars to pay the recurrent costs of the Kowloon Walled City clearance office.) |
+
+- **Leads:**
+  - The LegCo Finance Committee paper for 8 April 1987: HK$148.4 million over three years for the special clearance office, 6 directorate and 233 non-directorate posts, and the sub-head of HK$17,897,000 (not held).
+  - The letters of the Registrar General's Department (註冊總署) to the owners of each of the three areas of the City, April 1987, and its owner registers (not held).
 ### top-services-20: 城寨居民登記工作陳子鈞稱月底完成八成已登記其中三千戶資料有問題初步賠償方案亦可如期於七月完成 (大公報 1987-05-17)
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -254,36 +352,49 @@ testimony given later: tag its facts "retrospective (year)".
   - Housing Department detailed registration figures of the City at the end of May 1987: population, households, owners and tenants (promised in Ta Kung Pao (大公報) 17 May 1987, leaf n4).
 ### zh-press-6: 清拆城寨登記順利 二千業主完成登記 / 九龍城寨無牌醫生 善用才能勿加歧視
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-05-26
-- **Kind:** press
-- **Class:** primary (Report of the time on registration and on the City's unlicensed doctors.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870526
-- **Other links:** https://archive.org/metadata/NPWK19870526/metadata/description
-- **Proof that it exists:** Description phrases '清拆城寨登記順利', '二千業主完成登記', '兩局議員巡九龍城了解情況', '九龍城寨無牌醫生', '善用才能勿加歧視'.
-- **What it gives (finder's note, not checked):** About 2,000 owners had registered by late May 1987; members of the two councils toured the area. A separate item argues that the City's unlicensed doctors should be used, not shunned.
-- **Notes:** Read via the metadata API only. The doctors item can be an editorial or a reader's letter: check the page. Same rights caveat as zh-press-1.
+- **Status:** Partly read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19. I read the page scan as images (archive.org BookReader image service, full resolution, cropped and enlarged in the Playwright browser; no file saved to the repo). Both City items are on leaf n4. I read the whole news article except its last sentence: it breaks off after '另外，首席助理政務司苗華安表示：清拆', and I did not find where it continues. The doctors item is a short editorial column (小評), not a reader's letter; I read all of it, but the edge characters of some lines were cut by a rule.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「清拆城寨登記順利 二千業主完成登記 / 兩局議員巡九龍城了解情況」 and 小評 「九龍城寨無牌醫生 / 善用才能勿加歧視」, 26 May 1987, 本港新聞 page, archive.org item NPWK19870526, leaf n4, https://archive.org/details/NPWK19870526
+- **Class:** primary (A news report of an official's statement made at the time (1987), and a short editorial of the same day. The editorial is opinion of the time. Primary tree is correct. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
+- **Date of the record:** 1987-05-26
+- **Files:**
+  - `zh-press-6-NPWK19870526_jp2_NPWK19870526_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870526/NPWK19870526_jp2.zip/NPWK19870526_jp2%2FNPWK19870526_0004.jp2&ext=jpg; 2092915 bytes; SHA-256 `6be60ed1e46ea9a4aa057a069d330545ef3035131ac49b9a5e725504cfd17407`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870526)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, first tier | INFERRED: 呂孝端 said that by 25 May 1987 the response to owner registration was strong: 2,000 owners had registered, about half of whom lived in the City. The date comes from 'yesterday'. | "截至昨日止，他們已登記了二千名業主，其中約一半是在城寨居住" (As of yesterday they had registered 2,000 owners, about half of whom live in the City.) |
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, second tier | The 2,000 were a fifth of the estimated 10,000 owners. About 80 to 100 owners registered each day. | "佔他們估計有一萬個業主數目的五分一，而他們平均每日登記八十至一百人" (A fifth of the 10,000 owners they estimate; on average they register 80 to 100 a day.) |
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, second tier | The government estimated that about 45 per cent of the 10,000 owners lived in their own property. | "當局估計的一萬個業主中，約有百分之四十五是自住的" (Of the 10,000 owners the authorities estimate, about 45 per cent are owner-occupiers.) |
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, third tier | The government chose 500 households in the City and measured the average floor area of each unit. More than 400 were done; the rest was to finish by the end of May 1987, to help set the compensation. | "政府亦在城寨內揀了五百個住戶，量度每個單位的平均建築面積，目前已完成了四百多個" (The government also picked 500 households in the City and measured the average floor area of each unit; over 400 are done.) |
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, third tier | The compensation plan was to be set in July or August 1987. After the Executive Council and the Finance Committee, it could be published in October or November 1987. | "當局會如期在七、八月間定出賠償方案" (The authorities will set the compensation plan on schedule in July or August.) |
+| NPWK19870526, leaf n4 (本港新聞), article 「清拆城寨登記順利 二千業主完成登記 兩局議員巡九龍城了解情況」, first tier | INFERRED: Six members of the Executive and Legislative Councils (伍周美蓮, 鄭漢鈞, 黃宏發, 張有興, 潘志輝 and 廖烈科) toured Kowloon City on 25 May 1987. They viewed the district from the roof of Block 22, Tung Tau Estate (東頭村廿二座), and heard District Officer 方志偉 and then 呂孝端. | "他們曾先抵達東頭村廿二座天台俯瞰九龍城區的發展" (They first went to the roof of Block 22, Tung Tau Estate, to look down on the development of Kowloon City district.) |
+| NPWK19870526, leaf n4 (本港新聞), editorial column 小評 「九龍城寨無牌醫生 善用才能勿加歧視」, first paragraph | The editorial said that the City had more than 30,000 people and about 10,000 owners, and that every registered resident would get fair compensation and rehousing. | "九龍城寨共有人口三萬多人，業主約一萬戶" (Kowloon Walled City has more than 30,000 people, and about 10,000 owner households.) |
+| NPWK19870526, leaf n4 (本港新聞), editorial column 小評 「九龍城寨無牌醫生 善用才能勿加歧視」, first paragraph | INFERRED: The Governor, Sir David Wilson (衛奕信), went to Kowloon City in the week before but did not go into the City itself. | "港督衛奕信爵士上週曾到九龍城，雖然並未親自進入九龍城寨實地視察" (Governor Sir David Wilson went to Kowloon City last week, though he did not go into the Walled City himself to inspect it.) |
+| NPWK19870526, leaf n4 (本港新聞), editorial column 小評 「九龍城寨無牌醫生 善用才能勿加歧視」, first paragraph | INFERRED: Asked about the unlicensed doctors of the City, the Governor said that the government would help them in various ways to use their skills in lawful work. | "港督答稱港府計劃以各種方法，協助他們運用技能，善用其才能做一些合法的工作" (The Governor answered that the government plans in various ways to help them use their skills in lawful work.) |
+| NPWK19870526, leaf n4 (本港新聞), editorial column 小評 「九龍城寨無牌醫生 善用才能勿加歧視」, second part | The editorial said that the doctors and dentists of Chinese and Western medicine in the City were unlicensed, and that the clearance would hit them hardest. | "按照本港法例，無牌醫生不能正式執業，因此遷拆，這些無牌醫生所受的打擊最大" (Under Hong Kong law unlicensed doctors cannot practise formally, thus in the clearance these unlicensed doctors are hit hardest.) |
+| NPWK19870526, leaf n4 (本港新聞), editorial column 小評 「九龍城寨無牌醫生 善用才能勿加歧視」, second part | The editorial said that the unlicensed doctors had practised in the City for a long time and still made a living, thus there was a need for them. | "無牌醫生長期在城寨執業，仍能維持其生計，存在有其需要" (Unlicensed doctors have long practised in the City and still make a living; their existence answers a need.) |
+
+- **Leads:**
+  - The owner registration figures of the Registrar General's Department, May 1987 (not held).
+  - The government sample survey of the floor area of 500 households of the City, 1987 (not held).
 ### zh-press-7: 九龍城寨牙醫希望取得一視同仁地位
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-06-02
-- **Kind:** press
-- **Class:** primary (Report of the time on the City's dentists.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870602
-- **Other links:** https://archive.org/metadata/NPWK19870602/metadata/description
-- **Proof that it exists:** Description phrase '九龍城寨牙醫希望取得一視同仁地位', next to '牙醫學會慶獲議席'.
-- **What it gives (finder's note, not checked):** The dentists of the City ask for equal status with registered dentists (June 1987). The article can give their number and their association.
-- **Notes:** Read via the metadata API only. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「牙醫管理委會定九零年開始 牙醫註冊執業要參與評審考試」 with the sub-article 「九龍城寨牙醫希望取得一視同仁地位」, 2 June 1987, 第二張第二頁 (本港新聞), archive.org item NPWK19870602, leaf n5, https://archive.org/details/NPWK19870602
+- **Class:** primary (A news report of statements made the day before by the vice-chairman of the City's kaifong association and by dental officials, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-06-02
+- **Files:**
+  - `zh-press-7-NPWK19870602_jp2_NPWK19870602_0005.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870602/NPWK19870602_jp2.zip/NPWK19870602_jp2%2FNPWK19870602_0005.jp2&ext=jpg; 2536385 bytes; SHA-256 `26888ebc4ada34735924cdb31f022d249dc0c1fd7b1215463985e46db5a7cc59`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870602)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870602, leaf n5 (本港新聞), lead article 「牙醫管理委會定九零年開始 牙醫註冊執業要參與評審考試」, first tier | The Dental Council (牙醫管理委員會) had decided that from April 1990 all dental graduates, local, Mainland or overseas, had to pass a licensing examination before they could register to practise in Hong Kong. | "規定所有牙科畢業學生，不論是本地，國內及海外的，若要在本港註冊執業，一律都要參與一個執業評審考試" (It requires all dental graduates, whether local, Mainland or overseas, who want to register to practise in Hong Kong, to sit a licensing examination.) |
+| NPWK19870602, leaf n5 (本港新聞), sub-article 「九龍城寨牙醫希望取得一視同仁地位」, first part | 陳協平, vice-chairman of the City's kaifong welfare association (九龍城寨街坊福利會), welcomed the rule that all dental graduates must pass an examination. He saw it as equal treatment with Commonwealth graduates. | "九龍城寨街坊福利會副會長陳協平表示歡迎。他認為港府此項措施顯示今後對英聯邦牙科畢業生一視同仁" (Vice-chairman of the Kowloon Walled City kaifong welfare association 陳協平 welcomed it; he thinks this measure shows equal treatment of Commonwealth dental graduates from now on.) |
+| NPWK19870602, leaf n5 (本港新聞), sub-article 「九龍城寨牙醫希望取得一視同仁地位」, second part | 陳協平 said that the City's dental clinics helped with the shortage of dentists in Hong Kong. Each clinic treated three patients a day by a low count, thus they treated more than 200 patients a day in all. | "即使以每所診所每日服務三名病人計算。每日亦解決了二百多名牙科病人的問題" (Even counting each clinic as serving three patients a day, they still deal with over 200 dental patients a day.) |
+| NPWK19870602, leaf n5 (本港新聞), sub-article 「九龍城寨牙醫希望取得一視同仁地位」, second part | He asked for an outlet for the clinic owners who had learned as apprentices or from their families, as well as the examination for graduates, so that they could go on serving the public. | "對其他學徒出身或祖傳的牙科診所主持人應給予出路" (For other dental clinic operators who trained as apprentices or by family tradition, an outlet should be given.) |
+| NPWK19870602, leaf n5 (本港新聞), sub-article 「九龍城寨牙醫希望取得一視同仁地位」, last part | He said that most of these dentists had real skill and a fair professional standard, and kept to their limits: they usually did only fillings and dentures. For extractions they mostly sent patients to other dentists. | "一般只進行鑲牙、補牙手術，至於脫牙手術，則多會轉介與其他牙醫" (Generally they do only dentures and fillings; for extractions they mostly refer patients to other dentists.) |
+
+- **Leads:**
+  - The decision of the Dental Council (牙醫管理委員會) of 1987 that all dental graduates must pass a licensing examination from April 1990 (not held).
 ### top-zh-press-9: 昨與浦炳榮等特別委員座談城寨牙醫盼續營生以鑲牙補牙洗牙為主集體經營
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -364,20 +475,32 @@ testimony given later: tag its facts "retrospective (year)".
   - The plan notes that the Landowners Association files that the repo holds (HKRS1077-2-2, HKRS1078-1-82) can be of the same body; this article does not give an English name, so the match is not confirmed.
 ### zh-press-9: 城寨清拆賠償方案 現等待行政局通過 / 九龍城寨街坊會 祝廿五週年聯歡
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-09-26
-- **Kind:** press
-- **Class:** primary (Report of the time on the compensation plan and the kaifong association.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870926
-- **Other links:** https://archive.org/metadata/NPWK19870926/metadata/description
-- **Proof that it exists:** Description phrases '城寨清拆賠償方案', '現等待行政局通過', '料年底公布明年中第一批居民遷出', '九龍城寨街坊會', '祝廿五週年聯歡'.
-- **What it gives (finder's note, not checked):** The compensation plan waits for the Executive Council; the first residents to leave in mid-1988. The kaifong association held its 25th-anniversary party (thus founded about 1962), with 副政務司 呂孝端 as guest.
-- **Notes:** Read via the metadata API only. The OCR gives the official's name once as '嗌孝端', an OCR error for 呂孝端. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「城寨清拆賠償方案 現等待行政局通過 / 料年底公布明年中第一批居民遷出」 and 「九龍城寨街坊會 祝廿五週年聯歡 / 副政務司呂孝端主禮」, 26 September 1987, 第三張第七頁 (本港新聞), archive.org item NPWK19870926, leaf n26, https://archive.org/details/NPWK19870926
+- **Class:** primary (News reports made at the time (1987) of an official's report to the District Board and of the kaifong association's anniversary party, with speeches. Primary tree is correct.)
+- **Date of the record:** 1987-09-26
+- **Files:**
+  - `zh-press-9-NPWK19870926_jp2_NPWK19870926_0026.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870926/NPWK19870926_jp2.zip/NPWK19870926_jp2%2FNPWK19870926_0026.jp2&ext=jpg; 2548441 bytes; SHA-256 `16e26e18dcd9100a95d7dade1d3ce8ffb7eaf10d8731ecd8675fa323064a2493`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870926)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, first tier | INFERRED: 呂孝端 told the Kowloon City District Board on 24 September 1987 that the special committee had finished a recommended plan for the City. It waited for the Executive Council and the LegCo Finance Committee. The date comes from 'the day before yesterday'. | "呂孝端前日出席九龍城區議會時指出，九龍城寨清拆特別委員會已完成一項方案" (呂孝端, at the Kowloon City District Board the day before yesterday, said that the special committee on the clearance had finished a plan.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, first tier | The full plan was expected to be published at the end of 1987, and the first batch of City residents was to move out in mid-1988. | "料年底可公佈整個方案的內容。明年中將有第一批城寨居民遷出" (The whole plan is expected to be published at year end; in the middle of next year the first batch of City residents will move out.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, second tier | The committee was to set a deadline for owners who had not registered their title, before the plan was published. Later registration needed the committee's approval. | "特委會將定出限期辦理，會在推薦方案公佈之前截止" (The special committee will set a deadline, closing before the recommended plan is published.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, second and third tiers | 7,221 owners had registered, 87 per cent of the 8,300 owners of the City; 13 per cent had not. The Registrar General expected over 90 per cent by the end of September 1987. | "數目為七千二百二十一，而城寨的業主總數為八千三百" (The number is 7,221, and the total number of owners in the City is 8,300.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, third tier | INFERRED: The Housing Department's re-check was to focus on the residents of the first phase. The Buildings and Lands Department had measured the floor area of 900 households. | "屋宇地政處已為九百戶居民量度屋宇面積" (The Buildings and Lands Department has measured the floor area for 900 households.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, third tier | Resident owners could choose their compensation: money to buy a Home Ownership Scheme flat, or a public rental flat. Non-resident owners were to get cash only. | "即償款購買居屋或分配公屋：非自住業主則指有現金的補償" (That is, compensation money to buy an HOS flat or allocation of public housing; non-resident owners get only cash compensation.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, third tier, left | 苗華安 said that the clearance office had added staff to visit the City in the evening and explain the plan to residents. They were also making arrangements with the City's five service bodies. | "專責事務處已增加工作員在城寨作晚間的探訪，向居民解釋有關事宜" (The special office has added staff to make evening visits in the City and explain matters to residents.) |
+| NPWK19870926, leaf n26 (第三張第七頁, 本港新聞), article 「城寨清拆賠償方案 現等待行政局通過 料年底公布明年中第一批居民遷出」, third tier, left end | INFERRED: The Kowloon City district commander (九龍城區指揮官; the name reads as 梁錦珊, with one unclear character before it) said that 24 robberies had happened in the City up to the end of August 1987, slightly fewer than in the same period of 1986. | "截至上月止，城寨共發生二十四宗劫案，比去年同期略減" (Up to last month, 24 robberies in all took place in the City, slightly fewer than in the same period last year.) |
+| NPWK19870926, leaf n26 (第三張第七頁), article 「九龍城寨街坊會 祝廿五週年聯歡 副政務司呂孝端主禮」, first tier | INFERRED: The City's kaifong association (九龍城寨街坊福利事業促進委員會) held its 25th-anniversary party at 8 p.m. on 23 September 1987 at the restaurant 海洋皇宮酒樓. Thus it was founded about 1962. | "廿三日下午八時，假海洋皇宮酒樓慶祝廿五週年聯歡大會" (On the 23rd at 8 p.m., at 海洋皇宮酒樓, it celebrated its 25th-anniversary party.) |
+| NPWK19870926, leaf n26 (第三張第七頁), article 「九龍城寨街坊會 祝廿五週年聯歡 副政務司呂孝端主禮」, second tier | INFERRED: The chairman of the association (name read as 李偉霖; the last character is not clear) said that the special committee and officials had gone deep into the City that year, met residents and heard their views. | "深入城寨，接觸居民，聽取意見，使賠償安置等工作的研究得以順利進行" (They went deep into the City, met residents and heard views, so that the study of compensation and rehousing could go smoothly.) |
+| NPWK19870926, leaf n26 (第三張第七頁), article 「九龍城寨街坊會 祝廿五週年聯歡 副政務司呂孝端主禮」, first tier | Vice-chairman 陳協平 asked for flat-for-flat compensation for residential titles at no less than the value of an urban Home Ownership flat, and looser residence rules for public housing. | "應給予樓換樓，而賠償標準應不低於市區居屋的價值" (They should be given a flat for a flat, and the compensation standard should not be lower than the value of an urban HOS flat.) |
+| NPWK19870926, leaf n26 (第三張第七頁), article 「九龍城寨街坊會 祝廿五週年聯歡 副政務司呂孝端主禮」, first tier | He also asked that shops and factories get enough compensation to carry on their trades. 呂孝端 said that both points were reasonable. | "其所得的賠償應使其能夠繼續營生樂業" (Their compensation should let them carry on making a living in their trade.) |
+| NPWK19870926, leaf n26 (第三張第七頁), article 「九龍城寨街坊會 祝廿五週年聯歡 副政務司呂孝端主禮」, first tier, left | Guests included 呂孝端, 喬宗淮 (deputy secretary-general, Xinhua Hong Kong branch), 周德熙 (Director of City and New Territories Administration), 簡福貽, LegCo member 謝志偉 and Urban Councillor 陳子鈞. | "新華社香港分社副秘書長喬宗淮" (Deputy secretary-general of the Xinhua News Agency Hong Kong branch, 喬宗淮.) |
+
+- **Leads:**
+  - The minutes of the Kowloon City District Board meeting of 24 September 1987, with the report of 呂孝端 and the police figures of 24 robberies in the City up to August 1987 (not held).
+  - The owner registration figures of the Registrar General's Department, September 1987 (7,221 of 8,300 owners) (not held).
 ### top-services-21: 四年內執行分三期清拆當局撥款二十七億賠償安置城寨居民 (大公報 1987-12-11)
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -426,20 +549,52 @@ testimony given later: tag its facts "retrospective (year)".
   - Legislative Council Finance Committee approval of HK$2,760 million for the City, December 1987 (cited by Ta Kung Pao (大公報) 11 Dec 1987, leaf n4).
 ### zh-press-10: 清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償 批出補償總額二十七億餘元
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-12-11
-- **Kind:** press
-- **Class:** primary (Report of the time on the published compensation terms, with the kaifong statement.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19871211
-- **Other links:** https://archive.org/metadata/NPWK19871211/metadata/description
-- **Proof that it exists:** Description phrases '清拆九龍城寨補償細則公布', '三年分批清拆', '批出補償總額二十七億餘元', '發通知信首批居民明年遷出', '城寨坊會發表聲明', '城寨小業主多滿意'.
-- **What it gives (finder's note, not checked):** The compensation terms of Dec 1987: over HK$2.7bn, clearance in batches over three years, people who lived there before 14 Jan get permanent rehousing, and the case of the unregistered doctors and dentists to be studied. The kaifong association accepts the plan; tapes that read out the plan are played in the City; two groups hear complaints.
-- **Notes:** Read via the metadata API only. A search extract also linked '居民與警對峙 清拆行動暫緩' to this issue; I did not confirm that it is about the City. Same rights caveat as zh-press-1.
+- **Status:** Partly read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19. I read the page scans as images (archive.org BookReader image service, full resolution, cropped and enlarged in the Playwright browser; no file saved to the repo). On leaf n4 I read the lead article, the kaifong statement, the article on the appeal panels and the tape, and most of the short item on small owners (its end runs into a column that I did not read). Leaf n6 holds the full text of the special committee's statement and booklet (補償及安置資格, 上訴途徑, 工商業用途樓宇, 住戶及營商人士的補償, 可計算樓面面積的定義 and more), in three tiers across the page. I read only its heading and three short blocks; the rest is not read. Correction to the finder's note: the item '居民與警對峙 清拆行動暫緩' (leaf n5) is about the clearance of 竹園聯合村, not the City. The taped explanation was played at the clearance office in Block 17, Lok Fu Estate, not in the City.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償 / 批出補償總額二十七億餘元 發通知信首批居民明年遷出」 and related items, 11 December 1987, 第二張第一頁 (本港新聞), archive.org item NPWK19871211, leaf n4; with the statement 「清拆事宜特別委會公布 九龍城寨居民補償事宜」 on leaf n6. https://archive.org/details/NPWK19871211
+- **Class:** primary (News reports of the press conference of 10 December 1987 by the chairman of the special committee, with the kaifong association's statement and the official compensation text, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-12-11
+- **Files:**
+  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0004.jp2&ext=jpg; 2198224 bytes; SHA-256 `8f96134511d771904d899f02464ef5a26702744145d621b1ba2c41e0215641bc`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
+  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0006.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0006.jp2&ext=jpg; 2536919 bytes; SHA-256 `3c00c56c348886167b6f90ebf5fbe9be4b96d113db4273f39d90c7854fe37528`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier, right | 胡法光, chairman of the special committee on the City clearance, said that the LegCo Finance Committee had approved over HK$2.76 billion for the clearance, in three years. | "立法局財務委員會已就九龍城寨清拆事宜批出逾廿七億六千萬元，分三年清拆" (The LegCo Finance Committee has approved more than 2.76 billion dollars for the Kowloon Walled City clearance, to be cleared over three years.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier, right | INFERRED: He spoke at a press conference on 10 December 1987. The first notice letters were to go out at the end of December 1987. The date comes from 'yesterday'. | "胡法光昨日在記者招待會上指出" (胡法光 said at a press conference yesterday.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier, right | The first batch of residents was to move out from early to late 1988, the second from late 1988 to 1989, and the third from early to late 1990. | "九龍城寨第一批居民在八八年初至八八年底搬出，第二批在八八年底至八九年，第三批在九〇年初至九〇年底" (The first batch of City residents moves out from early to end 1988, the second from end 1988 to 1989, the third from early to end 1990.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier, right | More than 3,000 letters on compensation and rehousing were to go to the first-phase residents in batches, at the end of the month and over the Lunar New Year. | "因為發出的專函超過三千封，所以必須分批處理及發出" (Because more than 3,000 letters are sent, they must be handled and sent in batches.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier | Public rental flats for City owners and tenants were offered in Kowloon, Hong Kong Island, Sha Tin, Tseung Kwan O, Tsuen Wan and Tsing Yi. | "租住公屋地點包括九龍、港島、沙田、將軍澳、荃灣及青衣" (Public rental housing locations include Kowloon, Hong Kong Island, Sha Tin, Tseung Kwan O, Tsuen Wan and Tsing Yi.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, first tier | Home Ownership and private-sector scheme flats: in 1988-89 in Kowloon, Sha Tin and Ma On Shan, Tseung Kwan O, Tsuen Wan, Tuen Mun and Tai Po; later years added Siu Sai Wan, Chai Wan, Tsing Yi and Fanling. | "八八至八九年選擇地點包括九龍、沙田及馬鞍山、將軍澳、荃灣、屯門、大埔" (Locations to choose from in 1988-89 include Kowloon, Sha Tin and Ma On Shan, Tseung Kwan O, Tsuen Wan, Tuen Mun and Tai Po.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '一、自住業主方面' | The committee decided against flat-for-flat compensation for owner-occupiers: City property prices were low, and the committee thought flat-for-flat too generous. Compensation was based on the price of Home Ownership flats. | "鑑於城寨物業價格偏低，假如要資助業主購買私人樓宇，此舉會被認為過份慷慨" (Since City property prices are low, subsidising owners to buy private flats would be seen as too generous.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, second column block | The rate per square metre of countable floor area: HK$9,670 up to 23.44 m², HK$6,930 from 23.45 to 60 m², and HK$5,000 above 60 m². | "樓宇認可面積在廿三點四四平方米以下，每平方米為九千六百七十元" (For a flat with a recognised area below 23.44 square metres, it is 9,670 dollars per square metre.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, second column block | Thus compensation ran from HK$89,836 for the smallest unit, 100 sq ft, to HK$923,243 for the largest, 1,600 sq ft. Most units in the City were about 23.44 m², and that size was the basis of the scale. (The print has '一百平方呎米', a misprint for 一百平方呎.) | "由最小面積單位一百平方呎米，獲得八萬九千八百卅六元，至最大之單位面積一千六百平方呎，獲得九十二萬三千二百四十三元不等" (From 89,836 dollars for the smallest unit of 100 sq ft, to 923,243 dollars for the largest unit of 1,600 sq ft.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '二、業權方面' | Because owners lacked title deeds, the Registrar General set special rules, approved by the committee, to decide who held title. Owner-occupiers and non-resident owners got the same cash compensation. | "鑑於缺乏契約文件，在確定及核證城寨樓宇業權資格遇上困難" (Because contract documents are lacking, there are difficulties in confirming and verifying the title of City buildings.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '三、安置資格方面' | All residents who really lived in the City on and after 14 January 1987 could get permanent rehousing, if they had lived in Hong Kong for seven years in a row by the end of March 1990. | "所有在一九八七年一月十四日當日及其後真正居住在九龍城寨的居民均可獲永久安置資格" (All residents really living in Kowloon Walled City on and after 14 January 1987 can get permanent rehousing.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '三、安置資格方面' | Eligible tenants could choose a public rental flat, priority to buy a Home Ownership flat, or an interest-free loan under a future home purchase loan scheme. | "符合資格的租客，可選擇租住公屋單位，或自資優先購置居屋" (Eligible tenants can choose to rent a public housing unit, or buy an HOS flat with priority using their own money.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '四、營商人士方面' | The committee drew a line between trades: lawful trades such as food factories could get compensation, but illegal ones such as vice establishments and gambling stalls could not. | "例如食品工廠這些應可獲得補償資格的行業，便應有別於其他非法行業，如色情場所及賭檔" (Trades that qualify for compensation, such as food factories, must be kept apart from other illegal trades such as vice establishments and gambling stalls.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, top left, '四、營商人士方面' | No compensation for people who moved in after 14 January 1987, or who after that date split units, built new floors, enlarged buildings or started a business. Owners who bought after that date got only fair market value. | "或將原有樓宇面積分間，或興建新樓，或擴建原有樓宇面積，或新設營商業務，皆不會獲得任何補償" (Or who subdivided existing floor area, built new storeys, enlarged a building, or started a new business, will get no compensation at all.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier, '五、志願團體方面' | Five voluntary bodies worked in the City. The Social Welfare Department found new premises elsewhere for those it funded; those without government funding got no new premises but other help. | "城寨內共有五個志願團體" (There are five voluntary bodies in the City in all.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier, '六、商業性水供水商' | The City's water suppliers (城寨供水商) were to keep supplying water until all residents had moved out. | "城寨供水商會將繼續供水服務，直至所有居民遷出城寨為止" (The City's water suppliers will keep supplying water until all residents have moved out of the City.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier, '七、社會個案' | Staff of the City and New Territories Administration and the Social Welfare Department had visited old people and others in the City who needed help. | "政務總署及社會福利署職員已探訪城寨老人家及其他需要幫助的人士" (Staff of the City and New Territories Administration and the Social Welfare Department have visited old people and others in the City who need help.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier, right | A working group under the committee was studying the future of the City's unregistered doctors and dentists; the matter was complex and needed time. Committee member 浦炳榮 chaired it. | "特委會屬下工作小組現正就城寨註冊醫生及牙醫的日後安排，加緊研究可行辦法" (A working group under the committee is stepping up study of workable arrangements for the future of the City's (non-)registered doctors and dentists.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier, right | 胡法光 said that dentists and doctors who owned their shop units would get compensation, with business loss counted. | "經營牙科診所或醫療的人士，若擁有該座舖位，則可獲得賠償與及按照商業損失計算在內" (People who run dental clinics or medical practices, if they own the shop unit, can get compensation, with business loss counted in.) |
+| NPWK19871211, leaf n4 (第二張第一頁, 本港新聞), lead article 「清拆九龍城寨補償細則公布 三年分批清拆 業主均獲補償」, second tier | 錢茂林, liaison officer of the medical group of the kaifong association, asked for the arrangements to be published two months before each phase. He said that the doctors' working group was formed too late. | "希望在首期遷拆之前兩個月公佈安排細節" (Hopes the details of the arrangements are published two months before the first phase of clearance.) |
+| NPWK19871211, leaf n4, article 「城寨坊會發表聲明 補償方案符合意願可以接受」, first part | The kaifong association held an executive meeting on the morning of 10 December 1987. Its spokesman 陳協平 said that the plan met the wishes of most City residents and was acceptable. | "更認為此方案基本上符合城寨大多數居民意願，及可以接受" (It further considers that the plan basically meets the wishes of most City residents and is acceptable.) |
+| NPWK19871211, leaf n4, article 「城寨坊會發表聲明 補償方案符合意願可以接受」, second part | 陳協平 said that the association and other residents had gone among the residents to coordinate and collect their wishes, and that committee members and officials had visited the City many times and held forums. | "亦多次到城寨探訪居民，了解實情，並舉行座談" (They also came to the City many times to visit residents, learn the facts and hold discussions.) |
+| NPWK19871211, leaf n4, article 「設立兩個小組接受申訴 錄音帶講賠償方案不斷播放協助了解」, right part | The special clearance office in Block 17, Lok Fu Estate began to answer questions on the plan on 10 December 1987. Many residents came at noon, and staff gave out booklets. | "位於樂富邨十七座的專責辦事處，昨日中午已有大批城寨居民前往該處諮詢" (At the special office in Block 17 Lok Fu Estate, many City residents went to ask questions yesterday at noon.) |
+| NPWK19871211, leaf n4, article 「設立兩個小組接受申訴 錄音帶講賠償方案不斷播放協助了解」, middle | A tape that explained the plan in Cantonese and Chiu Chow (潮語) was played in office hours. | "一套以廣東話及潮語講解賠償方案的錄影帶，在辦公時間播放" (A tape explaining the compensation plan in Cantonese and Chiu Chow is played in office hours.) |
+| NPWK19871211, leaf n4, article 「設立兩個小組接受申訴 錄音帶講賠償方案不斷播放協助了解」, left part | Two appeal panels: an appeal tribunal chaired by committee member 梁煒彤 for all clearance complaints (not valuations or complaints against civil servants), and a valuation review panel chaired by 簡福貽. | "由特委會委員梁煒彤担任主席的上訴審裁小組" (The appeal tribunal panel chaired by committee member 梁煒彤.) |
+| NPWK19871211, leaf n4, article 「設立兩個小組接受申訴 錄音帶講賠償方案不斷播放協助了解」, left end | Countable floor area meant the floor area of a unit that the owner could use. It did not count iron cages, cocklofts, stairs, passages, lift shafts, pigeon lofts, dog houses, chicken coops, water tanks, pump rooms, transformer rooms, meter rooms, garages, open roofs, balconies, gardens or platforms. | "但不包括附屬的鐵籠、閣仔及公用地方如樓梯、通道、升降機槽、門廊，亦不包括鴿籠、狗屋、雞棚、水箱、泵房" (But not including attached iron cages, cocklofts and common areas such as stairs, passages, lift shafts and porches, nor pigeon lofts, dog houses, chicken coops, water tanks or pump rooms.) |
+| NPWK19871211, leaf n4, short item 「城寨小業主多滿意 歡迎賠償安置方法」, lower right, right part | Most owners and shop operators welcomed the terms. Some small owners were satisfied but would not buy Home Ownership flats in the New Territories, because they were used to living in Kowloon. | "但他們將不會接受安排購買新界的居屋，因為住慣了九龍" (But they will not accept buying HOS flats in the New Territories, because they are used to living in Kowloon.) |
+| NPWK19871211, leaf n6 (第二張第三頁), notice text 「清拆事宜特別委會公布 九龍城寨居民補償事宜」, first block 「補償及安置資格」 | To qualify for rehousing, a person had to be a lawful Hong Kong resident, registered in the pre-clearance survey of 14 January 1987 and really living in the City, and have lived in Hong Kong seven years by 31 March 1990. | "你必須於一九九〇年三月三十一日止在香港居住滿七年" (You must have lived in Hong Kong for seven years by 31 March 1990.) |
+| NPWK19871211, leaf n6 (第二張第三頁), notice text 「清拆事宜特別委會公布 九龍城寨居民補償事宜」, block 「住戶及營商人士的補償」 | Movers who paid surveyors or valuers could get their reasonable fees back. Eligible households and businesses could also claim reasonable removal costs, such as moving furniture, plant and machinery, and legal and stamp fees for a new flat. | "例如搬遷家具、廠房及機器的費用、購置新樓宇所需的律師費及印花稅等" (For example the cost of moving furniture, plant and machinery, and the legal fees and stamp duty to buy a new flat.) |
+| NPWK19871211, leaf n6 (第二張第三頁), notice text 「清拆事宜特別委會公布 九龍城寨居民補償事宜」, block 「工商業用途樓宇」 | The compensation rule for industrial and commercial buildings was the same as for residential ones, but their owners or tenants usually could not get rehousing. | "惟一分別是工商業樓宇擁有人或租用者一般皆不能獲得安置" (The only difference is that owners or tenants of industrial and commercial buildings generally cannot be rehoused.) |
+
+- **Leads:**
+  - The rest of the special committee's compensation statement on leaf n6 of this same issue (補償及安置資格, 上訴途徑, 住戶及營商人士的補償 and more): printed in full, but I read only its heading and three blocks.
+  - The compensation and rehousing booklet and the notice letters of December 1987 to the first-phase residents (not held).
+  - The LegCo Finance Committee approval of over HK$2.76 billion for the City clearance, 1987 (not held).
+  - The taped explanation of the plan in Cantonese and Chiu Chow (潮語) played at the clearance office in Block 17, Lok Fu Estate, December 1987 (not held).
 ### gap-clearance-from-below-11: 大公報 1988-02-13: 對補償及安置問題覆函顯示城寨業主多選擇居屋住客則最多選擇公屋三戶人家昨成為城寨首批遷出居民
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -1306,20 +1461,29 @@ testimony given later: tag its facts "retrospective (year)".
 | NPTKP19870226, leaf n5 (港聞 page), photo caption, middle right | INFERRED: The photo shows committee members on the visit, from left: 陳子鈞, 呂孝端, Chan Hip Ping (陳協平), 浦炳榮, 簡福飴 and 鄧□全; the caption says 鄧□全 is the one holding incense (持香者). The caption is in very small type; one character of the last name is unclear. | "九龍城寨清拆事宜特別委員會成員昨視察城寨" (Members of the Kowloon Walled City clearance special committee inspected the City yesterday.) |
 ### zh-press-3: 清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影響
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-03-06
-- **Kind:** press
-- **Class:** primary (Report of the time on the cost and scale of the clearance.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870306
-- **Other links:** https://archive.org/metadata/NPWK19870306/metadata/description
-- **Proof that it exists:** Description phrases '清拆九龍城寨' / '須增額外開支' / '下年清拆行動四萬多人受影響'; also '助呂孝端處理城寨清拆'.
-- **What it gives (finder's note, not checked):** More than 40,000 people affected by the clearance; extra spending; an official appointed to help 呂孝端 with the clearance (1987).
-- **Notes:** Read via the metadata API only. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「清拆九龍城寨 須增額外開支 / 房屋署長出席財務委會會議稱 / 下年清拆行動四萬多人受影响」, 6 March 1987, 第二張第一頁 (本港新聞), archive.org item NPWK19870306, leaf n4; and 「苗華安升任助理政務司 助呂孝端處理城寨清拆」, same issue, 第三張第一頁, leaf n8. https://archive.org/details/NPWK19870306
+- **Class:** primary (A news report of what the Director of Housing told the LegCo Finance Committee the day before, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-03-06
+- **Files:**
+  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0004.jp2&ext=jpg; 2057586 bytes; SHA-256 `f3b27be6024a2fe8d09bea314e7b14e51c6d0bd164853a526830a3058306d7d0`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
+  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0008.jp2&ext=jpg; 2548840 bytes; SHA-256 `26de4f6e8e550147dd684f29c9ab0d9c32fca5d40570d8936aacea78f37d41a4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, first tier | INFERRED: At the second special meeting of the LegCo Finance Committee (立法局財務委員會), on 5 March 1987, Director of Housing 彭玉陵 said that the Housing Department needed HK$23 million more for staff in 1987-88 to clear the City. The date comes from 'yesterday'. | "清拆九龍城寨，房屋署下年度要增加額外人手開支二千三百萬元" (To clear Kowloon Walled City, the Housing Department must add extra staff spending of 23 million dollars next year.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, first and second tiers | 242 staff from four government departments ran the City clearance plan: 104 from the Housing Department, 21 from the City and New Territories Administration (政務總署), 100 from the Buildings and Lands Department (printed 建築地政署) and 17 from the Registrar General's Department (註冊署). | "由來自四個不同政府部門的二百四十二名有關人員負責，其中包括來自房署的一百零四名職員，來自政務總署的有廿一名，來自建築地政署的一百名" (Run by 242 staff from four different government departments, among them 104 staff from the Housing Department, 21 from the City and New Territories Administration and 100 from the Buildings and Lands Department.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, second tier | The plan cost HK$2.6 million in the earlier financial year, and was estimated at HK$23.5 million in the current one. | "上個財政年度該計劃共用去二百六十萬，而估計今個財政年度，該項計劃將花費二千三百五十萬元" (Last financial year the plan used 2.6 million in all; this financial year it is estimated to cost 23.5 million.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, second tier | 彭玉陵 said that the clearance did not affect the normal work of the Housing Department. The extra staff were mainly for the screening before the clearance. | "額外的人手，主要是負責清拆九龍城寨前的審查工作" (The extra staff are mainly in charge of the screening work before the clearance of Kowloon Walled City.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, second tier | No money was reserved for this in the estimates of the next year. The Housing Department would first pay from the Housing Authority fund and repay it after extra funds were approved. | "故房署會先由房屋委員會基金取得款項支付，待政府批准申請額外撥款後，才歸還房委會" (Thus the Housing Department will first take money from the Housing Authority fund, and repay it after the government approves the extra funds.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, second tier | The funding paper was to go to the LegCo Finance Committee on 8 April 1987 ('the 8th of next month'). | "申請撥款文件，將於下月八日提交立法局財務委員會通過" (The funding application will go to the LegCo Finance Committee on the 8th of next month for approval.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, second tier | 彭玉陵 said that the Housing Department was still at the stage of checking the identity of the City's residents, thus it did not need many staff, and other squatter clearances would not suffer. | "房署目前仍在審查九龍城寨居民身份的階段" (The Housing Department is now still at the stage of checking the identity of Kowloon Walled City residents.) |
+| NPWK19870306, leaf n4 (第二張第一頁, 本港新聞), article 「清拆九龍城寨 須增額外開支 下年清拆行動四萬多人受影响」, lower box | The '40,000-odd people' of the sub-headline are not the City: 彭玉陵 said that 175 squatter clearances in 1987-88 would clear 619 hectares and affect about 45,000 people, and that 20 new temporary housing areas would hold 35,000 people. | "在一百七十五次行動中被清拆妥當，預計會有四萬五千人受清拆行動影响" (Cleared completely in 175 operations; about 45,000 people are expected to be affected by the clearance operations.) |
+| NPWK19870306, leaf n8 (第三張第一頁, 本港新聞), item 「苗華安升任助理政務司 助呂孝端處理城寨清拆」, first column | The City and New Territories Administration (政務總署) made 苗華安, the Tsuen Wan District Officer, an Assistant Secretary to help 呂孝端 with the clearance of the City. | "委任荃灣政務專員苗華安出任助理政務司，以便協助副政務司呂孝端處理九龍城寨的清拆工作" (Appointed Tsuen Wan District Officer 苗華安 as Assistant Secretary, to help Deputy Secretary 呂孝端 handle the clearance of Kowloon Walled City.) |
+
+- **Leads:**
+  - The minutes of the second special meeting of the LegCo Finance Committee (立法局財務委員會), 5 March 1987, with the answers of Director of Housing 彭玉陵 (not held).
+  - The funding paper on the City clearance for the LegCo Finance Committee meeting of 8 April 1987 (not held).
 ### top-zh-press-5: 城寨清拆委會設小組處理安置賠償等事宜居民將可用綠色表格購居屋廿三宗租務糾紛已相繼和解
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -1397,20 +1561,28 @@ testimony given later: tag its facts "retrospective (year)".
   - 政務署 report on clearance compensation and rehousing, to 九龍城寨清拆事宜特別委員會 on 11 April 1987 (not held).
 ### zh-press-5: 清拆九龍城寨費用 逾一億四千八百萬 每個家庭約一萬五千元
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-04-09
-- **Kind:** press
-- **Class:** primary (Report of the time on the Finance Committee vote.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870409
-- **Other links:** https://archive.org/metadata/NPWK19870409/metadata/description
-- **Proof that it exists:** Description phrases '清拆九龍城寨費用' / '逾一億四千八百萬' / '每個家庭約一萬五千元'.
-- **What it gives (finder's note, not checked):** The LegCo Finance Committee approved over HK$148m for the clearance, about HK$15,000 for each family (Apr 1987).
-- **Notes:** Read via the metadata API only. Compare with the LegCo Finance Committee papers (README lead). Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, 9 April 1987, 第二張第三頁 (本港新聞), archive.org item NPWK19870409, leaf n9, https://archive.org/details/NPWK19870409
+- **Class:** primary (A news report of the LegCo Finance Committee meeting of the day before, with officials' answers, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-04-09
+- **Files:**
+  - `zh-press-5-NPWK19870409_jp2_NPWK19870409_0009.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870409/NPWK19870409_jp2.zip/NPWK19870409_jp2%2FNPWK19870409_0009.jp2&ext=jpg; 2527329 bytes; SHA-256 `564ac60d721a67d26c0c718222086f1b7bad3e4729cd1c9889ce0f16487ec92c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870409)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, first tier | INFERRED: On 8 April 1987 the LegCo Finance Committee approved HK$148.4 million over three financial years for the special office for the City clearance. The date comes from 'yesterday'. | "昨日通過為清拆九龍城寨而設立專責事務處所涉及今後三個財政年度的一億四千八百四十萬元的款項" (Yesterday it approved 148.4 million dollars over the next three financial years for the special office set up to clear Kowloon Walled City.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, first tier | Officials said that the cost was higher than usual because senior professionals had to work out the land titles of the City. | "由於城寨地權計算需由高級專業人士處理，這方面開支因此較一般為高" (Because calculating land title in the City needs senior professionals, this spending is higher than usual.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, first tier | LegCo member 何錦輝 said that by his own count the removal cost for each household of the City was about HK$15,000, unlike other clearance plans. | "九龍城寨的重遷費用，每一個家庭約為一萬五千元" (The removal cost of Kowloon Walled City is about 15,000 dollars for each household.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, first tier | 呂孝端 said that there was no precedent for valuing land titles in the City, and that the residents had no formal registration of their property. | "九龍城寨地權的計算方法由於沒有先例可援，計算方法亦較為特別，居民亦無正式的登記" (There is no precedent for calculating land title in Kowloon Walled City, the method is special, and residents have no formal registration.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, first tier, left end | LegCo member 林鉅成 asked if it was right for the Hong Kong government to clear a place whose sovereignty it did not hold. The Chief Secretary, 霍德, said that the decision was for the good of all. | "布政司霍德表示：港府決定清拆九龍城寨，主要是從整體利益着想" (Chief Secretary 霍德 said: the government decided to clear Kowloon Walled City mainly for the overall good.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, second tier | 呂孝端 said that the staff were permanent posts taken from four departments. Staff for the City and New Territories Administration and the Housing Department were easy to find; the Buildings and Lands Department and the Registrar General's Department were harder. | "只是屋宇地政署和註冊總署，人手方面可能會較為困難" (Only the Buildings and Lands Department and the Registrar General's Department can have more difficulty with staff.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, second tier | 呂孝端 said that the plan was detailed enough to finish in three years without extra cost: three phases from 1987-88, to finish in 1989-90. | "由一九八七至八八年度起分三期執行清拆行動，以期在三個財政年度內，即至一九八九至九〇年度完成清拆工作" (Clearance in three phases from 1987-88, to finish within three financial years, that is by 1989-90.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, second tier, left | The first survey found about 10,200 households, 34,000 people in all, living in about 8,880 domestic units in the City. | "約有一萬〇二百個家庭合共三萬四千人在九龍城寨內約八千八百八十個住宅單位居住" (About 10,200 households, 34,000 people in all, live in about 8,880 domestic units in Kowloon Walled City.) |
+| NPWK19870409, leaf n9 (第二張第三頁, 本港新聞), article 「立法局財務委會會議通過 清拆九龍城寨費用逾一億四千八百萬 每個家庭約一萬五千元」, second tier, left | INFERRED: The survey also found 1,045 commercial units: 63 clinics, 87 dental clinics, 140 shops (as I read it; the total implies 148, the figure of the February count), 570 workshops and 177 units of other trades. | "六十三間診療所，八十七間牙科診所，一百四十間商店，五百七十間工場及一百七十七間各類行業單位" (63 clinics, 87 dental clinics, 140 shops, 570 workshops and 177 units of various trades.) |
+
+- **Leads:**
+  - The minutes of the LegCo Finance Committee meeting of 8 April 1987 that approved HK$148.4 million for the City clearance (not held).
+  - The first survey figures of the City: about 10,200 households, 34,000 people, 8,880 domestic units and 1,045 commercial units (Housing Department, 1987; not held).
 ### top-zh-press-8: 城寨清拆委會成員昨登門造訪聽意見發言人稱已覆核家庭六千多個
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -1485,20 +1657,27 @@ testimony given later: tag its facts "retrospective (year)".
 | NPTKP19870612, leaf n4 (printed p.5, 港聞), upper left | The members at the meeting were 陳子鈞, 浦炳榮, 呂孝端 and 鄧泰全. | "包括陳子鈞、浦炳榮、呂孝端、鄧泰全" (Including 陳子鈞, 浦炳榮, 呂孝端 and 鄧泰全.) |
 ### zh-press-8: 賠償城寨商戶 設立審核委員會 如有不滿可向審委會提上訴
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-06-21
-- **Kind:** press
-- **Class:** primary (Report of the time on the shop compensation.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19870621
-- **Other links:** https://archive.org/metadata/NPWK19870621/metadata/description
-- **Proof that it exists:** Description phrases '賠償城寨商戶' / '設立審核委員會' / '如有不滿可向審委會提上訴'.
-- **What it gives (finder's note, not checked):** A review committee for the compensation of the City's shops, with a right of appeal (June 1987).
-- **Notes:** Read via the metadata API only. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「賠償城寨商戶設立審核委員會 / 如有不滿可向審委會提上訴」, 21 June 1987, 第二張第一頁 (本港新聞), archive.org item NPWK19870621, leaf n4, https://archive.org/details/NPWK19870621
+- **Class:** primary (A news report of what the spokesman of the special committee and the Land Authority said, made at the time (1987). Primary tree is correct.)
+- **Date of the record:** 1987-06-21
+- **Files:**
+  - `zh-press-8-NPWK19870621_jp2_NPWK19870621_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870621/NPWK19870621_jp2.zip/NPWK19870621_jp2%2FNPWK19870621_0004.jp2&ext=jpg; 2326953 bytes; SHA-256 `501f8f7d692ae09baea6071f77e91aa9118ece2b4c0c4537a3746c2f1fca7d85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870621)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, first tier | A compensation review committee of accountants and surveyors (會計師及測計師) was to review the compensation of the City on fair, reasonable and simple principles. | "一個由會計師及測計師組成之賠償審核委員會，將按照公平合理及簡單之原則，審核九龍城寨之賠償問題" (A compensation review committee of accountants and surveyors will review the compensation of Kowloon Walled City on fair, reasonable and simple principles.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, first tier | INFERRED: 簡福貽, spokesman of the special committee on the City clearance, said that the committee had discussed the commercial side (large firms and factories) on 20 June 1987 and planned the review committee. The date comes from 'yesterday'. | "該會昨日主要就商業，如大商號及工廠作出討論，並擬定成立賠償審核委員會" (The committee yesterday mainly discussed commerce, such as large firms and factories, and planned to set up a compensation review committee.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, first tier | The chairman of the review committee was to come from the special committee, and its members were three professionals such as accountants and surveyors. | "審委會主席由特委會中選出，而成員則為會計師及測計師等專業人士，合共三人組成" (The review committee chairman will be chosen from the special committee, and its members will be professionals such as accountants and surveyors, three in all.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, first tier | 簡福貽 said that the review committee would work like the Lands Tribunal: owners who disputed their compensation could appeal to it, and a final appeal could go to the special committee. | "審委會工作，正如現時之土地審裁處一樣，當城寨業主對賠償金額有問題，可向審委會上訴" (The review committee will work like the present Lands Tribunal: when a City owner has a problem with the compensation amount, he can appeal to it.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, first tier, left | The special committee was to set the general principles of compensation within two months. Government departments were to carry them out and tell each owner the sum. | "整個賠償之大原則，將於兩個月內，由特委會定出，交政府有關部門執行，並通知業主補償金額" (The general principles of compensation will be set by the special committee within two months, carried out by the departments concerned, and owners told the sum.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, second tier | A meeting on 25 July 1987 was to decide if the review committee's decision was final, and to set its procedures. | "仍待七月廿五日會議商討" (It still waits for discussion at the meeting of 25 July.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, second tier | Professional bodies were asked to nominate members; for now the panel was to have no more than 20 people. 簡福貽 was to chair the review committee, with special committee members 浦炳榮, 陳子鈞 and 梁偉彤 as rotating chairmen. | "至於審委會主席由簡福貽担任，並設輪候主席包括特委會委員浦炳榮、陳子鈞、梁偉彤" (The review committee is chaired by 簡福貽, with rotating chairmen including special committee members 浦炳榮, 陳子鈞 and 梁偉彤.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, third tier | 簡福貽 told the owners and residents of the City not to hire professionals before the compensation principles were published, so as not to waste money. | "在賠償原則未公佈之前，無須過早聘請專業人士，以免浪費金錢" (Before the compensation principles are announced, there is no need to hire professionals too early, so as not to waste money.) |
+| NPWK19870621, leaf n4 (第二張第一頁, 本港新聞), boxed article 「賠償城寨商戶設立審核委員會 如有不滿可向審委會提上訴」, third tier | Land Authority (地政監督) 毛燦榮 said that the government had begun to contact people with special difficulties, such as seven property dealers (地產商) in the City, and would help them with their living problems. (The print reads 毛燦榮, not 毛燦棠. Other 1987 reports in the repo give 毛燦明 for an official of this department.) | "對於個別有困難的人士，如七名在城寨地產商，他們已展開接觸及了解之工作" (For individuals with difficulties, such as seven property dealers in the City, they have begun contact and inquiry work.) |
+
+- **Leads:**
+  - The record of the special committee meeting of 25 July 1987 on the compensation review committee and its procedures (not held).
 ### top-services-4: 城寨賠償安置準則特別委員會今討論包括商戶醫生牙醫水井商賠償預計部分方案將可以作出決定 (大公報 1987-07-25)
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -2077,20 +2256,25 @@ testimony given later: tag its facts "retrospective (year)".
   - Statement of the 九龍城寨街坊福利會, 16 May 1991 (not held).
 ### top-zh-press-25: 城寨一女業主昨被強行帶離原因是接受賠償卻拒交屋
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1991-08-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on an eviction.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19910817
-- **Other links:** https://archive.org/metadata/NPTKP19910817/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 女業主昨被強行 matches only NPTKP19910817.
-- **What it gives (finder's note, not checked):** A woman owner in the City is taken out by force because she took the compensation but did not give up the flat (Aug 1991).
-- **Notes:** Batch read, issue confirmed by exact phrase. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 大公報 (Ta Kung Pao), 「城寨一女業主昨被強行帶離 / 原因是接受賠償卻拒交屋」, 17 August 1991, 港聞 page, archive.org item NPTKP19910817, leaf n10, https://archive.org/details/NPTKP19910817
+- **Class:** primary (A news report made the day after the event (1991), with the statement of a government official. Primary tree is correct.)
+- **Date of the record:** 1991-08-17
+- **Files:**
+  - `top-zh-press-25-NPTKP19910817_jp2_NPTKP19910817_0010.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19910817/NPTKP19910817_jp2.zip/NPTKP19910817_jp2%2FNPTKP19910817_0010.jp2&ext=jpg; 1936148 bytes; SHA-256 `5179ccaa946a0285b544973e44c310f6304d3b7dbe14780884523658e9ad28b4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19910817)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, first column | INFERRED: The special office that ran the clearance of the City (專責事務辦事處) took a woman who lived in the City out of it by force on 16 August 1991. The date comes from 'yesterday'. | "負責執行九龍城寨清拆計劃的專責事務辦事處在昨日強行將一名住在城寨的婦人帶離城寨" (The special office in charge of the Kowloon Walled City clearance plan yesterday forcibly took a woman living in the City out of the City.) |
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, second paragraph | INFERRED: 政務司 曹廣榮 said that she had signed a compensation contract with the government and accepted HK$235,733 as full settlement of all her claims. (One digit of the sum is a hard reading.) | "接納港府建議的補償金額二十三萬五千七百三十三元" (Accepted the compensation sum of 235,733 dollars proposed by the government.) |
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, second paragraph | INFERRED: She later collected compensation of about HK$235,000; the last digits of this second sum are not clear in the scan. | "後來她還領取了二十三萬" (Later she also collected 230-odd thousand.) |
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, third paragraph | 曹廣榮 said that she had also bought a Home Ownership flat (居屋單位) in 大埔 and had moved in formally in March 1991 ('March this year'). | "該女士亦已購得一間位於大埔的居屋單位，並於今年三月辦妥入伙手續" (The woman has also bought an HOS flat in 大埔 and completed the move-in formalities in March this year.) |
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, third paragraph | She had promised in writing to hand her City unit to the government empty, but had always refused to keep the promise. | "雖然她曾以書面保證會將她的城寨單位交吉給政府，但是至今她一直拒絕履行該項保證" (Although she had promised in writing to hand her City unit back vacant to the government, so far she has always refused to keep that promise.) |
+| NPTKP19910817, leaf n10 (港聞 page), article 「城寨一女業主昨被強行帶離 原因是接受賠償卻拒交屋」, lower middle, last paragraph | When she was taken away she said that she had been beaten; the spokesman of the City and New Territories Administration (政務總署) denied it. | "該婦人昨日在被帶走時，曾聲稱遭人毆打，但專責此事的政務總署發言人則否認有此行為" (When taken away yesterday the woman claimed she had been beaten, but the spokesman of the City and New Territories Administration in charge denied it.) |
+
+- **Leads:**
+  - The statement of 政務司 曹廣榮 and of the spokesman of the City and New Territories Administration (政務總署) on the removal of a woman owner from the City on 16 August 1991 (a government statement; not held).
+  - The compensation contract and the written undertaking to hand over the unit empty that the report names (private records; not held).
 ### gap-named-persons-records-11: 大公報 1991-08-23: 城寨須清拆單位已有六成七收回政務署將設法勸離拒遷者
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -2176,20 +2360,28 @@ testimony given later: tag its facts "retrospective (year)".
   - 大公報 of the same day, archive.org NPTKP19911029, which also names the City in its headline list (not read; the plan notes it).
 ### top-zh-press-26: 城寨百餘商戶請願與警衝突僵持半天指賠償辦法欠妥一名老翁暈倒
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1991-10-29
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on a protest of the City's shopkeepers.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19911029
-- **Other links:** https://archive.org/metadata/NPTKP19911029/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 百餘商戶請願 matches only NPTKP19911029.
-- **What it gives (finder's note, not checked):** More than 100 shop operators of the City petition against the compensation terms and clash with the police in a half-day stand-off; an old man faints (Oct 1991).
-- **Notes:** Batch read, issue confirmed by exact phrase. top-china read this issue for a Xinhua item only (none). Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** 大公報 (Ta Kung Pao), 「城寨百餘商戶請願 與警衝突僵持半天 / 指賠償辦法欠妥 一名老翁暈倒」, 29 October 1991, 港聞 page, archive.org item NPTKP19911029, leaf n11, https://archive.org/details/NPTKP19911029
+- **Class:** primary (A news report made the day after the events (1991). The narration is the reporter's, but it reports events of the day before. Primary tree is correct.)
+- **Date of the record:** 1991-10-29
+- **Files:**
+  - `top-zh-press-26-NPTKP19911029_jp2_NPTKP19911029_0011.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19911029/NPTKP19911029_jp2.zip/NPTKP19911029_jp2%2FNPTKP19911029_0011.jp2&ext=jpg; 1839337 bytes; SHA-256 `fad1af63e73e8a0457f6d67306a89a7e3ff3afc3dc8401fc148a9018fdafb032`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19911029)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, first tier | INFERRED: More than 100 shop operators of the City, unhappy with the compensation method, met officials on 28 October 1991 with no result. They then surrounded the office in 尖沙咀 for five hours. The date comes from 'yesterday'. | "百多名九龍城寨的商戶，不滿當局的賠償辦法，昨日下午與有關官員開會後仍無進展" (More than a hundred Kowloon Walled City shop operators, unhappy with the compensation method, made no progress after meeting the officials yesterday afternoon.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, second tier, right | INFERRED: Lands Department (地政署) staff came to the City to post notices that ordered the shops to move out by 28 November 1991. The operators, unhappy with the Crown-land compensation method (官地賠償辦法), did not let them post the notices. The hour of this visit is under a watermark; it is before 2 p.m. | "限令商戶要在十一月二十八日前搬出" (Ordering the shop operators to move out before 28 November.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, second tier | At 2 p.m. a squad of 'blue cap' (藍帽子) police came back with the Lands Department staff and posted the move-out notices under police guard. | "一隊「藍帽子」警員與地政署人員重返現場，在警員保護下張貼限令遷出的告示" (A squad of 'blue cap' police and Lands Department staff returned to the scene and posted the move-out notices under police protection.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, second tier, left | The operators then marched to the Lands Department's City clearance unit (地政署城寨遷拆事宜小組) on the 14th floor of 柯士甸路十九至二十三號 in 尖沙咀. | "列隊操往尖沙咀柯士甸路十九至二十三號十四樓的地政署城寨遷拆事宜小組" (Marched in file to the Lands Department's Walled City clearance unit on the 14th floor of 19-23 柯士甸路, 尖沙咀.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, second and third tiers | Deputy Secretary (副政務司) 祝建勳 and 郭利高 of the Lands Department met them, but the meeting had no result by 5 p.m. | "會議至下午五時仍無結果" (The meeting still had no result at 5 p.m.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, third tier | The operators surrounded the office and did not let the two officials leave. Police could not escort them out, and a stand-off began. | "百多商戶不滿，於是包圍辦事處，不讓兩位官員離開" (The hundred-odd operators were unhappy, so they surrounded the office and did not let the two officials leave.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, fourth tier, right | At 10 p.m. the police drove the operators from the 14th floor to the ground floor. The operators said that the police used force; a 70-year-old operator surnamed 陳 fainted, and the two officials got out. | "商戶指警方採用暴力打人，一名七十歲姓陳商戶暈倒" (The operators said the police used violence and hit people; a 70-year-old operator surnamed 陳 fainted.) |
+| NPTKP19911029, leaf n11 (港聞 page), article 「城寨百餘商戶請願 與警衝突僵持半天 指賠償辦法欠妥 一名老翁暈倒」, middle of page, fourth tier, left | The operators marched to 尖沙咀 police station, shouting 'police beat people'. After ten-odd minutes of pushing at its gate, five representatives went in to complain of assault. The police passed the complaint to the Complaints Against Police Office (投訴警察課). The operators left at 11.30 p.m. | "警方接納投訴表示會轉交投訴警察課調查，商戶至十一時半才離去" (The police accepted the complaint and said it would go to the Complaints Against Police Office; the operators left only at 11.30.) |
+
+- **Leads:**
+  - The Lands Department (地政署) notices of 28 October 1991 that ordered the shops of the City to move out by 28 November 1991 (not held).
+  - The Crown-land compensation terms for shop operators (官地賠償辦法) of 1991 that the operators disputed (not held).
+  - The complaint of assault that five operators made at 尖沙咀 police station on 28 October 1991, passed to the Complaints Against Police Office (投訴警察課) (not held).
 ### gap-clearance-from-below-18: 華僑日報 1991-11-27: 城寨首期清拆明展開七十餘商住戶仍拒遷副政務司祝建勳下最後通牒呼籲居民如期遷出再談補償
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
@@ -2340,11 +2532,21 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-19.
 - **Citation:** Wah Kiu Yat Po (華僑日報), 「政府拆九龍城寨 無牌牙醫將絕跡」, 27 January 1987, local news page, archive.org item NPWK19870127, leaf n9, https://archive.org/details/NPWK19870127/page/n9
-- **Class:** primary (A comment piece in a newspaper of the time (January 1987), two weeks after the clearance was announced. It belongs in primary-sources/ as a record of the time, but each fact in it is the writer's own view or background (kind secondary).)
+- **Class:** primary (A comment piece in a newspaper of the time (January 1987), two weeks after the clearance was announced. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1987-01-27
 - **Files:**
   - `gap-campus-socialwork-press-14-BookReaderImages.php` (in `local/`, not in git): https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/NPWK19870127/NPWK19870127_jp2.zip&file=NPWK19870127_jp2/NPWK19870127_0009.jp2&id=NPWK19870127&scale=1&rotate=0; 5513272 bytes; SHA-256 `4f7cee0567063adfba339941fc9422dff9cb3f4a5e4aa565c9c8a3c011e51d9d`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870127)
-- **Note:** the reader classed the whole item as primary: its 8 facts are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The writer said that the government's decision to raze the City came with no warning and shook everyone. | "港府話一聲鏟平城寨，攪到地動山搖，風聲鶴唳，因為事前根本沒有跡象可尋" (The government said the word and razed the City, shaking the earth and spreading alarm, because there was no sign of it beforehand.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The writer said that compensation for demolition was fixed policy: the only questions were how much residents asked and how much the government would pay. | "拆樓賠償是不變政策，問題只是居民要求賠多少，政府又肯賠多少" (Compensation for demolition is fixed policy; the only questions are how much residents ask for and how much the government will pay.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | For the unlicensed dentists of the City, the writer said, the clearance was a disaster whatever the compensation. | "那些人就是區內無牌牙醫" (Those people are the unlicensed dentists of the district.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The government had always turned a blind eye to the unlicensed dentists of the City. | "政府一向對於那些無牌牙醫，都採隻眼開隻眼閉態度" (The government has always taken a one-eye-open, one-eye-shut attitude to those unlicensed dentists.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The dentists practised openly in the City because of that attitude. They stayed in the City because outside it they might not qualify to hang out a sign. | "因為一日要在城寨外謀生，就未必有資格掛牌" (Because once they must earn a living outside the City, they may not be qualified to hang out a sign.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | Earlier the dentists had asked the government to recognise their qualifications, at least as dental technicians (鑲牙師) if not as dentists, so that they could have a licence. The government said no. | "至少不做牙醫，也做鑲牙師" (If not dentists, then at least dental technicians.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The refusal did not hurt them much, because they could go on with their old trade in the City. | "因他們可再屈居城寨內操故業，進可攻，退可守" (Because they could again stay in the City and practise their old trade: able to advance, able to fall back.) |
+| NPWK19870127, leaf n9 (本港新聞 page), right edge, middle (short item in three tiers) | The writer said that the clearance killed two birds with one stone: a ban while the City stood would cause fierce resistance, but the clearance destroyed their base. They had to disperse unless they registered and practised in the urban area. | "現清拆城寨，直搗其根據地，他們想不散也不可以" (Now the clearance of the City strikes their base directly; even if they do not want to disperse, they must.) |
 
 - **Leads:**
   - The earlier request of the City's unlicensed dentists to be recognised at least as dental technicians (鑲牙師), and the government's refusal, mentioned without a date (not held).
