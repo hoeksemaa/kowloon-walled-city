@@ -99,6 +99,7 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`yoshida-ichiro-testimony-1985/`](yoshida-ichiro-testimony-1985/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md |
 | [`hk-chinese-press-1985-1993/`](hk-chinese-press-1985-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1985-1993/SOURCE.md |
 | [`hk-chinese-press-1947-1984/`](hk-chinese-press-1947-1984/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1947-1984/SOURCE.md |
+| [`maps-and-aerial-photos-1889-1994/`](maps-and-aerial-photos-1889-1994/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 
