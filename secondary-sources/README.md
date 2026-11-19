@@ -96,6 +96,9 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`documentaries-video-and-podcasts-1990-2026/`](documentaries-video-and-podcasts-1990-2026/SOURCE.md) | Later documentaries, video explainers and podcasts. Catalogued, not read: 19 items (value medium) | 2010-2026 | catalogue only | https://news.ifeng.com/c/8SjFo883Qbp |
 | [`reference-and-web-histories/`](reference-and-web-histories/SOURCE.md) | Reference pages, wikis and web histories. Catalogued, not read: 17 items (value medium) | 2005-2026 | catalogue only | https://lichokiu.blogspot.com/2005/09/blog-post_112754459002873396.html |
 | [`history-books-1988-2026/`](history-books-1988-2026/SOURCE.md) | History books on the City. Catalogued, not read: 5 items (value medium) | 1895-2026 | catalogue only | https://districtcouncils.gov.hk/kc/doc/2016_2019/en/dc_meetings_doc/15863/KCDC19_54cp_Annex.pdf |
+| [`yoshida-ichiro-testimony-1985/`](yoshida-ichiro-testimony-1985/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md |
+| [`hk-chinese-press-1985-1993/`](hk-chinese-press-1985-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1985-1993/SOURCE.md |
+| [`hk-chinese-press-1947-1984/`](hk-chinese-press-1947-1984/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hk-chinese-press-1947-1984/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 
