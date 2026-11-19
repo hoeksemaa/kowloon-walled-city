@@ -2,10 +2,9 @@
 
 Daily reports made at the time on the survey, the compensation, the protests, the fires and the demolition; page scans are open on archive.org.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 12 of 106 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1985-1991.
 - **Items:** 106, of which 106 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -372,20 +371,30 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-campus-socialwork-press-2: 城寨診所賠償公布永久停業 賠償四萬亦可選擇評估商業損失定賠額 醫生失望認為比預期少一半
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1988-09-04
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on the clearance compensation for the City's clinics.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19880904
-- **Other links:** https://archive.org/metadata/NPWK19880904/metadata
-- **Proof that it exists:** archive.org advancedsearch output for NPWK19880904 (華僑日報 1988-09-04): the description holds '城寨診所賠償公布永久停業' followed by '賠償四萬亦可選擇評估商業損失定賠額醫生失望認為比預期少一半'.
-- **What it gives (finder's note, not checked):** The compensation terms for the City's clinics, published in September 1988: a clinic that closes for good gets HK$40,000, or it can choose an assessment of its business loss. The doctors are disappointed and say that the sum is about half of what they expected.
-- **Notes:** Outside the lens (health, not youth), but new and of high weight. Not in zh-press. I read the keyword and headline field only; read the page scan for the full text, the date of the government's notice and the number of clinics.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「城寨診所賠償公布 永久停業賠卅四萬 亦可選擇評估商業損失定賠額 「醫生」失望認為比預期少一半」, 4 September 1988, archive.org NPWK19880904, leaf n2, https://archive.org/details/NPWK19880904/page/n2
+- **Class:** primary (A news report of a press conference, made at the time (1988). Primary tree.)
+- **Date of the record:** 1988-09-04
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19880904, leaf n2, lower middle | INFERRED: On 3 September 1988 the government announced the compensation scheme for the owners of clinics in the City. Its total was HK$52 million. | "港府昨日公佈九龍城寨診所東主賠償方案，總數達五千二百萬元" (The government yesterday announced the compensation scheme for clinic owners in Kowloon Walled City, totalling 52 million.) |
+| NPWK19880904, leaf n2, lower middle | A qualified owner could take a single cash payment of HK$342,000 for closing for good, or compensation by an assessment of business loss. An owner who was not satisfied could appeal. | "一筆過的永久停業現金補償額三十四萬二千元" (A lump-sum cash compensation of 342,000 dollars for permanent closure.) |
+| NPWK19880904, leaf n2, lower middle | 浦炳榮 chaired the working group on the City's unregistered doctors and dentists (九龍城寨非註冊醫生及牙醫工作小組). | "九龍城寨非註冊醫生及牙醫工作小組主席浦炳榮" (浦炳榮, chairman of the working group on unregistered doctors and dentists of Kowloon Walled City.) |
+| NPWK19880904, leaf n2, lower middle | Three conditions: the clinic was registered by the Housing Department on 14 January 1987; it met the normal assessment rules of the Buildings and Lands Department; and the owner was the doctor who worked in it. | "在八七年一月十四日經房署登記" (Registered by the Housing Department on 14 January 1987.) |
+| NPWK19880904, leaf n2, lower middle | The sum of HK$342,000 was fixed and was not to change later. | "這項金額日後將不會作任何調整" (This amount will not be adjusted in future.) |
+| NPWK19880904, leaf n2, lower middle | The other choice was the business-loss method that the Special Committee on the clearance had announced in December 1987. | "於去年十二月公佈的補償方法" (The compensation method announced last December.) |
+| NPWK19880904, leaf n2, lower middle | The working group asked the Labour Department to help the City's doctors and dentists find other kinds of work. | "促請勞工處協助受影響的城寨醫生及牙醫，尋求其他類型的職位" (Urged the Labour Department to help affected City doctors and dentists find other kinds of jobs.) |
+| NPWK19880904, leaf n2, lower middle | The group set the sum from the usual income of City doctors and dentists, the pay of similar work in Hong Kong, and the usual size of City clinics. | "城寨醫生及牙醫的一般收入" (The usual income of City doctors and dentists.) |
+| NPWK19880904, leaf n2, lower middle | Appeals went to the appeal panel or the assessment review panel at the clearance special-duties office in Block 17 of 樂富邨. | "設於樂富邨十七座九龍城寨清拆事宜專責事務辦事處" (At the Kowloon Walled City clearance special duties office in Block 17, 樂富邨.) |
+| NPWK19880904, leaf n2, lower middle | The working group met 13 times. The Special Committee approved its terms on 22 July 1988, and they went to the Executive Council and the Legislative Council Finance Committee. | "工作小組自成立迄今，共開會十三次" (Since its formation the working group has met 13 times.) |
+| NPWK19880904, leaf n2, lower middle | A City doctor said that he was disappointed. He thought that HK$500,000 to 600,000 was reasonable. | "他認為五十至六十萬的賠償會較為合理" (He thinks compensation of 500,000 to 600,000 would be more reasonable.) |
+| NPWK19880904, leaf n2, lower middle | The doctors and dentists met at once at the 城寨福利會. 64 unregistered City doctors attended; their representative 李德康 said that they were unhappy that they could not go on working, and that the sum was too small. | "與會六十四位城寨非註冊醫生普遍對不能繼續執業表示不滿" (The 64 unregistered City doctors at the meeting were generally unhappy that they could not continue to practise.) |
+| NPWK19880904, leaf n2, lower middle | By one count, the City had 66 Western-medicine clinics and 87 dental clinics in September 1988. About 100 to 200 people were affected. | "目前城寨有六十六間西醫診所，八十七間牙科診所" (At present the City has 66 Western-medicine clinics and 87 dental clinics.) |
+
+- **Leads:**
+  - Report of the 九龍城寨非註冊醫生及牙醫工作小組 (working group on the City's unregistered doctors and dentists), approved 22 July 1988 (not held).
+  - The Special Committee's compensation method for City businesses, announced December 1987 (not held).
 ### top-zh-press-19: 首期受影響居民明年全部遷出城寨清拆計劃進第二期九百多戶已收到有關安置及賠償信件供水商答允繼續供水至全部居民遷出
 
 - **Creator:** Ta Kung Pao (大公報)
@@ -420,68 +429,116 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-builders-demolition-park-7: 九龍城寨清拆工程棄用整體爆破方法改用機械人手和爆破結合藏以保留古蹟
 
-- **Creator:** Ta Kung Pao (大公報); scan on archive.org from a private uploader
-- **Date:** 1990-01-12
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the method chosen for the demolition.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPTKP19900112
-- **Other links:** https://archive.org/metadata/NPTKP19900112/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '九龍城寨清拆工程棄用整體爆破方法改用機械人手和爆破結合藏以保留古蹟'.
-- **What it gives (finder's note, not checked):** By its headline: in January 1990 the demolition plan dropped one total blast. It used machines, hand work and blasting together, to keep the historic remains.
-- **Notes:** OCR: '藏以' is probably '藉以' (INFERRED). Headline only.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Ta Kung Pao (大公報), 「九龍城寨清拆工程 棄用整體爆破方法 改用機械人手和爆破結合藉以保留古蹟」, 12 January 1990, local news page, archive.org item NPTKP19900112, leaf n6, https://archive.org/details/NPTKP19900112/page/n6
+- **Class:** primary (A news report made the day after a District Board meeting (1990). It belongs in primary-sources/.)
+- **Date of the record:** 1990-01-12
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The official in charge of the clearance, 呂孝端 (副政務司（專責事務）), said that the demolition would use machines, hand work and explosives together. | "九龍城寨的清拆工程將同時採用機械、人手和炸藥爆破等混合方式來進行" (The demolition of Kowloon Walled City will use machines, hand work and explosive blasting together.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The aim of the mixed method was to protect the historic remains in the City and the safety of the people who lived next to it. | "力求保護城寨內古蹟和鄰近居民的安全" (Striving to protect the historic remains in the City and the safety of nearby residents.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | Several Hong Kong and foreign companies were interested. The paper called it the largest clearance plan in Hong Kong, at a cost of HK$50 million. | "該項清拆工程將耗資五千萬元" (The demolition work will cost 50 million dollars.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | INFERRED: 呂孝端 spoke at a meeting of the Kowloon City District Board (九龍城區議會) on 11 January 1990. The date comes from 'yesterday' in a paper of 12 January. | "呂孝端昨日在九龍城區議會會議上說" (呂孝端 said yesterday at the Kowloon City District Board meeting.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The plaques, stone inscriptions and cannons in the City were to be taken away during the demolition. | "城寨內的牌匾，石刻和大砲等古蹟都會在清拆時搬走" (Relics in the City such as plaques, stone inscriptions and cannons will be moved away during demolition.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The Yamen (衙門), built in 1847, and three wells were to stay in place. For this reason the government dropped the plan of one single blast. | "那座一八四七年建造的衙門及三口井都需要在原處保留" (The Yamen built in 1847 and three wells must be kept in their original place.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The work was to have many separate blasts. Before each blast, scaffolding and nets were to separate the building from the street to stop flying debris. | "使用棚架圍網將進行爆破的樓宇和外街分隔，防止碎片外飛" (Use scaffolding and nets to separate the buildings to be blasted from the streets outside, to stop debris flying out.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | Blasting mixed with other methods cut the time of the work from 27 months to 18 months. | "可由原來需時二十七個月的工程，縮短為十八個月便可完成" (The work that first needed 27 months can be shortened to 18 months.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | By January 1990, 52 per cent of the City's residents had moved out since the clearance was announced in 1987. | "已有百分之五十二城寨居民遷出" (52 per cent of the City's residents have already moved out.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | The government expected to move all residents out by 1992, and then to start the demolition. | "當局預計到九二年可按計劃進度，把所有的城寨居民遷離" (The authorities expect, on schedule, to move all City residents out by 1992.) |
+| NPTKP19900112, leaf n6 (港聞 page), lower left, above the death notices | By January 1990 the government had paid HK$1.2 billion in compensation to residents who left. This was 52 per cent of the total budget, in proportion to the share of residents who had left. | "當局已支出了十二億元賠償金給予遷出城寨的居民，佔總預算開支的百分之五十二" (The authorities have paid 1.2 billion dollars of compensation to residents who moved out, 52 per cent of the total budget.) |
+
+- **Leads:**
+  - Kowloon City District Board (九龍城區議會) minutes of its meeting of 11 January 1990, where 呂孝端 reported on the clearance (not held).
 ### gap-builders-demolition-park-8: 明年初招標清拆城寨多國十二公司有興趣耗資五千萬可能是世界最大同類工程預料將以人手機械爆破混合方式清拆
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-02-01
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the demolition tender.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19900201
-- **Other links:** https://archive.org/metadata/NPWK19900201/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds the headline as given in the title.
-- **What it gives (finder's note, not checked):** By its headline: the demolition tender was set for early 1991; twelve companies from several countries were interested; the cost was 50 million (五千萬); it was perhaps the largest work of its type in the world; the method was to be hand work, machines and blasting together.
-- **Notes:** Headline only. The article can name some of the twelve companies. The currency (HK$) is INFERRED.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「明年初招標清拆城寨 多國十二公司有興趣 耗資五千萬可能是世界最大同類工程 預料將以人手機械爆破混合方式清拆」, 1 February 1990, archive.org item NPWK19900201, leaf n8, https://archive.org/details/NPWK19900201/page/n8
+- **Class:** primary (A news report of an official's statement, made at the time (1990). Primary tree.)
+- **Date of the record:** 1990-02-01
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19900201, leaf n8, lower left (本港新聞) | 呂孝端 (副政務司（專責事務）, 政務總署) said that the demolition, set for mid-1992, could be the largest work of its kind in the world. | "由於九二年中進行清拆九龍城寨可能是全世界最大的同類工程" (Because the demolition of Kowloon Walled City in mid-1992 may be the largest work of its kind in the world.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | He expected that experts from bodies in many countries would form one large company to do the demolition. | "清拆工作將由世界各地不同機構的專家，組成一個大企業公司進行" (The demolition will be done by one large company formed by experts from different bodies around the world.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | The first report on the demolition gave three methods: no explosives (traditional hand work), explosives only, and a mix. | "完全不用炸藥（傳統人工方式），爆破式（只用炸藥）及混合方式" (No explosives at all (traditional hand method), blasting (explosives only), and a mixed method.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | The final report was due in April or May 1990, to the special committee on the clearance. The committee was to decide in autumn 1990. | "清拆城寨的最後報告在今年四，五月間，呈交城寨清拆事宜特別委員會" (The final report on demolishing the City will go to the special committee on the clearance in April or May this year.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | He said that hand work, machines and blasting together was the best method, to keep the historic remains and for safety. | "為了保留古蹟及安全起見，以人手，機械及爆破等混合式為最佳方法" (To keep the historic remains and for safety, a mix of hand work, machines and blasting is the best method.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | The government was to invite tenders from around the world in early 1991 for the demolition, a work of HK$50 million. | "港府將在明年初向世界各國招標清拆城寨五千萬費用的工程" (Early next year the government will invite tenders from all countries for the 50-million demolition of the City.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | Twelve companies from Britain, the United States, the Netherlands, Japan, China and Hong Kong were interested. Four of them had come to Hong Kong to see the site. | "十二間來自英，美，荷蘭，日本，中國及本港的企業表示有興趣，其中有四家公司更實地來港考察" (Twelve firms from Britain, the US, the Netherlands, Japan, China and Hong Kong were interested; four came to inspect the site.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | Of the City's population of over 33,000, half had moved out by February 1990. The government had recovered over 3,400 units. | "現時城寨三萬三千多人口中，已有一半人口遷出，當局已收回三千四百多個單位" (Of the City's over 33,000 people, half have moved out; the authorities have recovered over 3,400 units.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | Departments were to report on the clearance to the Kowloon City and Wong Tai Sin District Boards in January and March 1990, because the work had to limit its effect on the neighbours. | "分別在今年一月及三月向九龍城及黃大仙區議會匯報清拆城寨事宜" (Reported on the City clearance to the Kowloon City and Wong Tai Sin District Boards in January and March this year.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | Another report had said that the demolition would make 500,000 tonnes of waste. The official had no details but did not expect a large problem. | "清拆後造成的五十萬噸廢物" (The 500,000 tonnes of waste made by the demolition.) |
+| NPWK19900201, leaf n8, lower left (本港新聞) | The government's budget for compensation to owners and occupants of the City's buildings was HK$3 billion. | "港府預算動用三十億元，作為城寨樓宇業主及住客的補償" (The government budgets 3 billion dollars as compensation for owners and occupants of the City's buildings.) |
+
+- **Leads:**
+  - The preliminary report on demolition methods for the City (methods: no explosives, explosives only, mixed), cited in WKYP 1 Feb 1990, leaf n8 (not held).
+  - The final report on demolition methods, due April-May 1990 to 城寨清拆事宜特別委員會 (not held).
 ### gap-builders-demolition-park-9: 清拆工程在世界各地展開招標研究清拆城寨方式預計三個月後定案
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-02-24
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the worldwide tender study for the demolition.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19900224
-- **Other links:** https://archive.org/details/NPTKP19900224, https://archive.org/metadata/NPWK19900224/metadata/description
-- **Proof that it exists:** The OCR text of the item holds '清拆工程在世界各地展開招標研究清拆城寨方式預計三個月後定案呢孝端指原地不合興建大球場'.
-- **What it gives (finder's note, not checked):** By its headline: a worldwide tender study of how to demolish the City, with a decision in about three months; an official ('呢孝端' in the OCR) said that the site did not suit a big stadium. 大公報 of the same day (alt URL) has '城寨清拆工程將招標中外財團均表示興趣最後一批補償協議信六月發出': Chinese and foreign consortia were interested, and the last compensation letters were due in June 1990.
-- **Notes:** Headlines only. The OCR name '呢孝端' is garbled; the zh-press lens read a similar OCR form as the official of the clearance. Do not use the name until a scan is read. The held SCMP clipping 'Demolition of Walled City studied' (26 Feb 1990) is the English report of the same study.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「最後一期安置工作訂六月展開 城寨補償額將檢討…」 and 「清拆工程在世界各地展開招標 研究清拆城寨方式預計三個月後定案 呂孝端指原地不合興建大球場」, 24 February 1990, archive.org NPWK19900224, leaf n4, https://archive.org/details/NPWK19900224/page/n4 ; and Ta Kung Pao (大公報), 「城寨清拆工程將招標 中外財團均表示興趣 最後一批補償協議信六月發出」, 24 February 1990, archive.org NPTKP19900224, leaf n6, https://archive.org/details/NPTKP19900224/page/n6
+- **Class:** primary (Two news reports of a press conference, made at the time (1990). Primary tree.)
+- **Date of the record:** 1990-02-24
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19900224, leaf n4, upper right (two articles) | The last (third) phase of resettlement was under way in February 1990. Affected residents were to get compensation letters from June 1990. | "受影響居民將會在六月份逐漸收到補償通知信件" (Affected residents will gradually receive compensation notice letters in June.) |
+| NPWK19900224, leaf n4, upper right (two articles) | The amount of compensation was linked to the sale price of Home Ownership Scheme (居屋) flats. If that price was higher, the compensation was higher, and it could also go down. | "補償金額的價格與居屋售價掛鈎" (The compensation amount is linked to the sale price of Home Ownership Scheme flats.) |
+| NPWK19900224, leaf n4, upper right (two articles) | In the first two phases, of over 6,600 residents and businesses, over 90 per cent (3,950 units) had accepted compensation or rehousing. The cost was HK$1.8 billion. | "首兩期六千六百多居民和商戶；已經有九成多（即三千九百五十個單位）接納政府的補償或安置" (In the first two phases, of over 6,600 residents and businesses, over 90% (3,950 units) accepted compensation or rehousing.) |
+| NPWK19900224, leaf n4, upper right (two articles) | 呂孝端 did not say if the remaining HK$500 million was enough for the rest of the compensation. He said that the office would go to the Finance Committee if it was not enough. | "至於剩餘的五億元是否足夠支付餘下的補償金額" (As to whether the remaining 500 million is enough to pay the rest of the compensation.) |
+| NPWK19900224, leaf n4, upper right (two articles) | Someone had proposed a large football stadium on the site. 呂孝端 said that the site was too small for it; only small pitches and a rest garden could go there. | "祇可能建築一些小型球場及休憩公園用途" (Only some small pitches and a sitting-out park can be built.) |
+| NPWK19900224, leaf n4 (printed page 5, 本港新聞), top middle: the paragraph '在同一場合中…雷振華指出' left of the headline 「研究清拆城寨方式」 | 雷振華 (首席助理政務司（專責事務）) said that the City had 164 unregistered Western doctors and dentists: 76 doctors and 88 dentists. | "在城寨內共有一百六十四間非註冊西醫及牙醫，西醫佔七十六名，而牙醫則有八十八名" (In the City there are 164 unregistered Western doctors and dentists (premises); the Western doctors number 76, and the dentists 88.) |
+| NPWK19900224, leaf n4 (printed page 5, 本港新聞), top middle: the paragraph '在同一場合中…雷振華指出' left of the headline 「研究清拆城寨方式」 | After checks, 112 of them qualified for compensation of HK$342,000. By February 1990, 84 doctors had received notice letters. | "有一百一十二名是符合資格接受補償費用三十四萬二千元，其中八十四名醫生均已發出通知信" (112 are eligible for compensation of 342,000 dollars; notice letters have been sent to 84 doctors.) |
+| NPWK19900224, leaf n4 (printed page 5, 本港新聞), top middle: the paragraph '在同一場合中…雷振華指出' left of the headline 「研究清拆城寨方式」 | Two appeal working groups had 15 cases: 13 decided, one withdrawn, one not yet heard. | "兩個上訴工作小組共接獲十五個申請個案" (The two appeal working groups received 15 applications in all.) |
+| NPWK19900224, leaf n4, upper right (two articles) | The study of how to demolish the City was to report in two to three months, then departments were to study it for six months, then tenders were to go out worldwide. 呂孝端 encouraged companies to bid jointly. | "有關於清拆城寨方法的研究報告，將於兩至三個月後會有結果" (The study report on how to demolish the City will have results in two to three months.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | The 大公報 report of the same day said that the government was to invite tenders at the end of 1990, and that consortia of 13 countries, including mainland China and Britain, were interested. (The 華僑日報 of 1 Feb 1990 had said 12 companies.) | "目前已有十三個國家的企業財團表示有興趣，其中包括中國大陸、英國等" (Business consortia of 13 countries, including mainland China and Britain, have shown interest.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | The Civil Engineering Department (土木工程署) was preparing the study report on demolition methods. | "土木工程署正在預備清拆方法的研究報告書" (The Civil Engineering Department is preparing the study report on demolition methods.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | The Buildings and Lands Department (屋宇地政署) was to adjust the phase 3 compensation rates in April or May 1990, by the HOS sale price. A cut was possible but less likely. | "屋宇地政署將於四、五月間，根據居屋售價，調整第三期清拆計劃的賠償率" (The Buildings and Lands Department will adjust the phase 3 compensation rate in April-May by the HOS sale price.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | The last batch of compensation agreement letters was due in June 1990. All residents were expected to leave their units by mid-1992. | "預期一九九二年中，所有城寨居民會遷離城寨內的單位" (It is expected that by mid-1992 all City residents will have left their units.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | The government had agreed compensation of HK$1.8 billion with residents and had paid HK$1.3 billion in cash. In 1988 the Governor in Council approved HK$2.3 billion for compensation. | "港府已與居民達致的賠償額，高達十八億元，並支付了十三億元現款" (Compensation agreed with residents reached 1.8 billion, and 1.3 billion in cash has been paid.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | Before phase 3 began, 5 per cent of its units (about 200 residents) had already accepted the offer and left early. | "已有百分之五的單位，約二百個居民提早接納補償及安置建議" (5% of the units, about 200 residents, have accepted the compensation and rehousing offer early.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | Many residents of phase 2B bought HOS flats, many of them in 將軍澳 and 大埔. | "其中不少均遷往將軍澳及大埔的居屋" (Many of them moved to HOS flats in 將軍澳 and 大埔.) |
+| NPTKP19900224, leaf n6 (港聞 page), middle right | Of the 112 qualified unlicensed doctors and dentists, 56 had accepted the payment and closed their practices by February 1990. | "其中已有五十六名接受港府賠償及停業" (56 of them have accepted government compensation and closed.) |
+
+- **Leads:**
+  - Civil Engineering Department (土木工程署) study report on demolition methods for the City, in preparation in Feb 1990 (not held).
+  - Governor in Council approval of the City compensation scheme, 1988, HK$2.3 billion (cited by 大公報 24 Feb 1990, leaf n6; not held).
 ### gap-builders-demolition-park-14: 九龍城寨公園設計保留原有特色建築費減為五千多萬 / 九龍城寨衙門定九六年重開建築完成發展 / 除衙門外尚標誌城砦疆界
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-09-11
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the park design of 1990.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19900911
-- **Other links:** https://archive.org/metadata/NPWK19900911/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '九龍城寨公園設計保留原有特色建築費減為五千多萬' and '九龍城寨衙門定九六年重開建築完成發展'.
-- **What it gives (finder's note, not checked):** By its headlines: the park design of September 1990 kept the original features of the site; its building cost was cut to a little over 50 million; the Yamen (衙門) was to reopen in 1996; besides the Yamen, the park was to mark the boundary of the City.
-- **Notes:** Headlines only. It is probably the report of the Urban Council memorandum of 7 Sep 1990 (citations-8, print only) (INFERRED from the dates). The held HKU clipping 'Walled City park ready by early 96' (19 Aug 1990) is close in date.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「九龍城寨衙門 定九六年重開」, with the sub-headlines 「建築署完成發展九龍城寨公園設計」「保留原有特色建築費減為五千多萬」「96年建成除衙門外尚標誌城牆疆界」, 本報專訊, reporter's mark （毅） (coarse on the scan; possibly （般）), 11 September 1990 (Tuesday), page (1) (front page), with a sketch of the planned park. Scan on archive.org, item NPWK19900911, leaf n0, https://archive.org/details/NPWK19900911/page/n0
+- **Class:** primary (A news report, made at the time (11 Sep 1990), of the design report of the Architectural Services Department (建築署) for the park. It is a record of the time, thus primary tree. It is about the park plan after the clearance, not about life in the City.)
+- **Date of the record:** 1990-09-11
+- **Files:**
+  - `gap-builders-demolition-park-14-wk19900911-p1.png` (in `local/`, not in git): https://archive.org/download/NPWK19900911/page/n0.jpg; 9327473 bytes; SHA-256 `5001c02df9bddb9bc511388db800988d6f1e166c3c57802a6037aaba7f7901aa`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
+  - `gap-builders-demolition-park-14-NPWK19900911.pdf` (in `local/`, not in git): https://archive.org/download/NPWK19900911/NPWK19900911.pdf; 22584009 bytes; SHA-256 `a04307cf2c9216b712b7c94812d21e54edd630ee57699d3fe6ade5cde6987c9b`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The Yamen (衙門) of the City was to appear again in 1996. It was not to work as an office; it was only for visitors to see. | "這座衙門不能運作，只會供遊人參觀" (This Yamen will not operate; it will only be for visitors to see.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The Architectural Services Department (建築署) finished the design report for the Kowloon Walled City Park in August 1990 ('last month' in a report of 11 Sep 1990). | "建築署上月已經完成發展九龍城寨公園的設計報告" (Last month the Architectural Services Department finished the design report for the development of the Kowloon Walled City Park.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | INFERRED: The building cost of the park fell from over HK$100 million in the first plan to a little over HK$50 million. The currency is not written; HK$ is INFERRED from a Hong Kong paper. | "較原先超過億元以上的建築費下降至五千多萬元" (The building cost fell from the original over 100 million to over 50 million.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The design report said that the City had deep historic value. The design kept the old look of the City in the main, so that people of Hong Kong could think of the past through the things they saw. The report said that this was quite unlike a modern design. | "為使香港市民能憑物思古" (So that Hong Kong citizens can recall the past through the objects.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The Architectural Services Department was to design and build the park. The government was to pay for it, and the Urban Council (市政局) was to manage it after completion. | "費用由政府支付，興建完成後交由市政局管理" (The cost is paid by the government; after completion it is handed to the Urban Council to manage.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | INFERRED: The cost of the park did not go over 'half a hundred million' (半億), thus it fitted the government's financial arrangements. Thus the detailed design was to go ahead as soon as the Urban Council agreed. The reading 半億 is INFERRED: a smudge covers the character before 半. | "故只要市政局同意，公園的落實設計便會進行" (Thus, as long as the Urban Council agrees, the detailed design of the park will go ahead.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | By the first plan, the building of the park was to start in 1995 and end in 1996. The park was to give the residents of Kowloon City (九龍城) and Wong Tai Sin (黃大仙) a good place to rest. | "屆時為九龍城及黃大仙居民提供一處理想休憩場所" (Then it will give the residents of Kowloon City and Wong Tai Sin an ideal place for leisure.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The government was to restore the Yamen building of the City specially, and to mark the line of the old city wall clearly. | "政府特別重修恢復城寨衙門建築物，並清楚標誌出城牆的疆界" (The government will specially restore the City's Yamen building and clearly mark the boundary of the city wall.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The parts of the park were: the Yamen, an earth city wall (土城牆), a Yamen square, a rock garden (石景公園), a bamboo grove, a lotus pond (蓮花池), a paper-burning pavilion (惜紙亭), a goldfish pond, a children's area, a bonsai garden (盤景園), a tai chi terrace, a spring garden (春園), a second lotus pond (荷花池) and rest areas. | "其中包括有衙門、土城牆、衙門廣場、石景公園、竹林、蓮花池、惜紙亭、金魚池、兒童園地" (Including the Yamen, earth city wall, Yamen square, rock garden, bamboo grove, lotus pond, paper-burning pavilion, goldfish pond, children's area.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The Yamen was to be the focus of the park. Inside it there was to be an exhibition room, a traditional tea room and an enquiry centre. | "在衙門內之設備包括一個陳列室，一個傳統茶房及一個諮詢中心" (The facilities in the Yamen include an exhibition room, a traditional tea room and an enquiry centre.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | INFERRED: The Yamen was possibly to come under the Antiquities and Monuments Office (古物古蹟辦事處) for its management. The scan has '文康科' before the office's name (probably its policy branch); that reading is INFERRED from a faint scan. | "同時可能歸文康科古物及古蹟辦事處負責管理" (At the same time it may come under the Antiquities and Monuments Office of the [Recreation and Culture] Branch for management.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The paper-burning pavilion (惜紙亭) was to have seats inside. Its details were still under study, but its design was to follow the old Chinese building methods fully. | "依足古代建築法" (Fully following the ancient building methods.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The children's area was to be east of the Yamen: a playground where small children could play safely. | "在衙門東，設兒童樂園" (East of the Yamen, a children's playground is set up.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The tai chi terrace was an open space for people to do tai chi, with flowers and trees nearby for shade. The paper expected it to be popular, because people liked to exercise in the parks in the morning and the evening in summer. | "公園內闢出空地供人耍太極拳" (An open space is cleared in the park for people to practise tai chi.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The Chinese-style rest gardens had different themes: a spring garden, a bonsai garden and a rock garden. The landscape architect advised mainly hardy plants, to cut the cost of upkeep. | "風景建築師建議園中植物以粗生為主，以減少維修成本" (The landscape architect advised mainly hardy plants, to cut maintenance cost.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | The park was to have flowing-water ponds: two lotus ponds (荷花池 and 蓮花池) and a goldfish pond. The design was to keep children from drowning and to keep the water moving, because still water is bad for hygiene. | "同時亦注意保持池水流動，否則一潭死水會影響衛生" (Also care is taken to keep the pond water flowing; otherwise a pool of stagnant water will affect hygiene.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), article at lower right | Building work was set to start in early 1995 and end in early 1996. Then the Urban Council was to manage the park, at a recurrent cost of HK$4.4 million a year. | "每年經常開支爲四百四十萬元" (Recurrent spending each year is 4.4 million dollars.) |
+| NPWK19900911, leaf n0 (printed page (1), front page), sketch at middle right, above the article | The front page has a perspective sketch of the planned park, above the article. Its labels are: 荷花池, 休憩處, 春園, 太極台階, 盤景園, 金魚池, 竹林, 石景公園, 衙門, 惜紙亭, 衙門廣場, 土城牆, 蓮花池 and 兒童園地. Two characters of its caption are hard to read. | "衙門廣場 … 土城牆 … 兒童園地" (Yamen square ... earth city wall ... children's area) |
+| NPWK19900911, leaf n0 (printed page (1), front page), sketch at middle right, above the article; and the article | INFERRED: In the sketch, the Yamen is right of the middle, with the children's area and the paper-burning pavilion to its right. The text puts the children's area east of the Yamen, thus the right of the sketch is probably east (INFERRED). | "在衙門東，設兒童樂園" (East of the Yamen, a children's playground is set up.) |
+
+- **Leads:**
+  - Architectural Services Department (建築署) design report for the Kowloon Walled City Park, completed August 1990 (cited by 華僑日報 11 Sep 1990, front page; not held).
+  - Urban Council (市政局) decision on the park design of the Architectural Services Department, autumn 1990 (the report says that the design goes ahead when the Urban Council agrees; not held).
 ### top-zh-press-24: 城寨荒廢炮樓被人用作賭檔警方昨晚掃蕩拘17男女
 
 - **Creator:** Ta Kung Pao (大公報)
@@ -500,20 +557,29 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-builders-demolition-park-11: 擬明年底清拆城寨將採分區爆破方式進行，由於多項限制不能一次過炸毀
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1991-08-31
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the planned demolition method.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19910831
-- **Other links:** https://archive.org/metadata/NPWK19910831/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '擬明年底清拆城寨將採分區爆破方式進行，由於多項限制不能一次過炸毀'.
-- **What it gives (finder's note, not checked):** By its headline: in August 1991 the plan was to demolish the City from the end of 1992 by blasting zone by zone, because many limits stopped one single blast.
-- **Notes:** Headline only. The held SCMP clipping of the same day is 'Demolition tender for Walled City' (Stella Lee). A search extract of an official yearbook (item 30) says that the work used conventional methods: thus the plan changed again before March 1993 (INFERRED).
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「擬明年底清拆城寨 將採分區爆破方式 礙於多項限制不能一次過炸毀」, 31 August 1991, front page, archive.org NPWK19910831, leaf n0, https://archive.org/details/NPWK19910831/page/n0
+- **Class:** primary (A news report of a gazette notice and an engineer's statement, made at the time (1991). Primary tree.)
+- **Date of the record:** 1991-08-31
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The Civil Engineering Department (土木工程署) invited applications to prequalify for the demolition contract of the City. The Gazette of 30 August 1991 invited experienced contractors to send preliminary proposals. | "憲報昨日邀請有經驗" (The Gazette yesterday invited experienced (contractors).) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The paper placed the City in Kowloon City district, south of 東頭村道 and next to 賈炳達道公園. Its area was about 2.8 hectares. | "東頭村道南面，毗連賈炳達道公園" (South of 東頭村道, adjoining 賈炳達道公園.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The site area was about 2.8 hectares. | "面積約為二點八公頃" (Area about 2.8 hectares.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The City's buildings and structures were from one storey to fourteen storeys high. | "城寨內的建築物及搭建物層數由單層至十四層不等" (The buildings and structures in the City vary from one storey to fourteen storeys.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | All buildings and structures were to be demolished and the debris taken away, except the Yamen (衙門) at the centre of the City. The site was then to become a park under a later contract. | "城寨中心的「衙門」建築物不須拆卸" (The Yamen building at the centre of the City need not be demolished.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The government planned to start at the end of 1992, with blasting zone by zone. | "政府計劃明年年底開始用分區爆破方" (The government plans from the end of next year to use zone-by-zone blasting.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | 嘉比, the chief engineer of the Civil Engineering Department, said that one blast for all buildings was rejected. Contractors were to blast in zones, first estimated at five to ten zones. | "建議承建商採用分區爆炸以拆卸有關樓宇，初步估計會分五至十個區" (Contractors are advised to blast by zones; preliminary estimate is five to ten zones.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The reasons: the City was near the airport, and the structure of the buildings was not known. | "除一方面城寨接近機場外，亦不知道樓宇的結構等" (Besides the City being near the airport, the structure of the buildings is not known.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | Forty companies were interested; three or four were from mainland China. Five or six were to be chosen to tender. | "現時已有四十間公司表示對工程有興趣，其中有三至四間是來自中國大陸" (Forty companies have shown interest, three or four of them from mainland China.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The demolition was to start at the end of 1992 and end in April 1994. Its cost was estimated at HK$70 million. | "拆卸工程會在明年年底動工，九四年四月完成，估計有關費用為七千萬元" (Demolition will start at the end of next year and end in April 1994, estimated to cost 70 million.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | By August 1991 the government had recovered 70 per cent of the City's units. | "到目前為止當局已收回七成城寨單位" (So far the authorities have recovered 70% of the City's units.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | The 拓展及機場工程部 of the Civil Engineering Department and the special duties office (專責事務辦事處) of the Buildings and Lands Department were to supervise the work. | "屋宇地政署的專責事務辦事處負責監督拆卸工程" (The special duties office of the Buildings and Lands Department will supervise the demolition.) |
+| NPWK19910831, leaf n0 (front page, printed page 1), upper left, boxed article | Prequalification documents were to be returned by noon on 1 November 1991. | "須於十一月一日正午前遞交" (Must be submitted before noon on 1 November.) |
+
+- **Leads:**
+  - Hong Kong Government Gazette notice of 30 August 1991 inviting prequalification for the demolition of Kowloon Walled City (Civil Engineering Department; deadline noon 1 Nov 1991) (not held).
 ### gap-clearance-from-below-14: 大公報 1991-10-24: 城寨商住戶請願要求提高收購價倘無答覆考慮行動升級
 
 - **Creator:** Ta Kung Pao (大公報)
@@ -708,20 +774,27 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-campus-socialwork-press-3: 城寨學校經費儀式 (keyword string in the headline list)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1986-06-10
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on a school in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19860610
-- **Other links:** https://archive.org/metadata/NPWK19860610/metadata, https://archive.org/download/NPWK19860610/NPWK19860610.pdf
-- **Proof that it exists:** Item title '華僑日報 1986-06-10'; the description holds '… 中西區行際運動大賽 竟技大賽 同濟會 城寨學校經費儀式 IML空中傳遞公司 …'.
-- **What it gives (finder's note, not checked):** A ceremony about funds for a school in the City, six months before the model week. The keyword before it is 同濟會 (a Kiwanis club), thus INFERRED: the club gave the money. The name of the school and the sum are not in the keyword list.
-- **Notes:** The OCR text file (NPWK19860610_djvu.txt) is garbled, and the first 100,000 characters do not hold 城寨 or 同濟會. Read the page scans (PDF, 25.6 MB) to get the school's name and address. It is the only report of a school inside the City at the peak that this lens found.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「同濟會捐三萬三 助城寨學校經費 儀式定週二舉行」, 10 June 1986, local news page, archive.org NPWK19860610, leaf n20, https://archive.org/details/NPWK19860610/page/n20
+- **Class:** primary (A news report made at the time (1986), six months before the model week. Primary tree.)
+- **Date of the record:** 1986-06-10
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19860610, leaf n20 (本港新聞), middle right | A cheque was to be handed over at 1 pm on Tuesday 10 June 1986, in the 廣廳 on the 4th floor of the 富麗華酒店. | "一項支票遞交儀式將於本月十日（星期二）下午一時正在富麗華酒店四樓廣廳舉行" (A cheque handover ceremony will be held at 1 pm on the 10th (Tuesday) in the 廣廳, 4/F, 富麗華酒店.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The cheque, of over HK$33,000, was from the 香港同濟會, for the funding gap of the Salvation Army's Kowloon Walled City school (救世軍九龍城寨學校). | "該筆共三萬三千多元的款項是由香港同濟會對支持救世軍九龍城寨學校經費不足的捐助" (The over 33,000 dollars is a donation from the 香港同濟會 for the funding shortfall of the Salvation Army Kowloon Walled City school.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The paper said that this school was the only school in the City in June 1986. | "該城寨學校乃現時城寨內唯一的學校" (This City school is at present the only school in the City.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The school gave free pre-school education to the children of poor residents of the City. | "免費為寨內貧苦居民的兒女提供學前教育" (Provides free pre-school education to the children of poor residents in the City.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | Its money came only from private people who sponsored single pupils. Because of the City's special status, it had no government subsidy. | "由於城寨地位特殊，故該校並無任何政府資助" (Because of the City's special status, the school has no government subsidy at all.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The school had 81 pupils in June 1986, all children from inside the City. | "現時該校共有學生八十一名，全是寨內兒童" (The school now has 81 pupils, all children from inside the City.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The Salvation Army commander, Colonel 林雅安, and representatives of the 香港同濟會 were to attend. Six pupils of the school were to perform. | "該校的六名代表亦會出席表演節目" (Six representatives of the school will also attend and perform.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | The 香港同濟會 had paid the whole funding gap of the school for over ten years. Its members also sponsored single pupils. | "香港同濟會對該校的不足經費全數資助的善舉，已持續超過十年" (The 香港同濟會's kind act of funding all of the school's shortfall has gone on for over ten years.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | Besides this cheque, its giving in 1985 was over HK$56,000. Its total over ten years was close to HK$1 million. | "而過去十年總數亦已接近一百萬元港幣" (And the total over the past ten years is close to one million Hong Kong dollars.) |
+| NPWK19860610, leaf n20 (本港新聞), middle right | INFERRED: 同濟會 is usually the Chinese name of Kiwanis clubs. The article gives only the Chinese name. | "同濟會" |
+
+- **Leads:**
+  - Salvation Army records of its Kowloon Walled City school (救世軍九龍城寨學校), 1964-1991, including pupil numbers and sponsors (not held).
+  - 香港同濟會 / 香港國際同濟會 records of grants to the Salvation Army City school (about HK$1 million over 1976-1986) (not held).
 ### top-services-11: 在城砦東頭村道一單位警方破毒品分銷處搜獲一碅海洛英並拘一男子 (大公報 1986-07-16)
 
 - **Creator:** Ta Kung Pao (大公報)
@@ -820,20 +893,24 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-builders-demolition-park-13: 城寨公園設文物館 / 存有價值古物古蹟 / 並計劃城寨公園發展為旅遊區
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1987-02-05
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the first plans for the park.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19870205
-- **Other links:** https://archive.org/details/NPWK19870318, https://archive.org/metadata/NPWK19870205/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '城寨公園設文物館', '存有價值古物古蹟' and '並計劃城寨公園發展為旅遊區'.
-- **What it gives (finder's note, not checked):** By its headlines: three weeks after the clearance decision of January 1987, the park plan had a museum for the valuable relics, and a plan to make the park a tourist area. The issue of 18 Mar 1987 (alt URL) has the keywords '九龍城砦公園 / 擬興建博物館 / 存放文物古炮' (a museum for relics and old cannons).
-- **Notes:** Headlines and keywords only. Compare the Urban Council (市政局) memorandum of 10 Apr 1987 (citations-7, print only).
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「九龍城區會形象推廣小組建議 城寨公園設文物館 存有價值古物古蹟 並計劃城寨公園發展為旅遊區」, 5 February 1987, archive.org NPWK19870205, leaf n20, https://archive.org/details/NPWK19870205/page/n20 ; and 華僑日報, 「九龍城砦公園 擬興建博物館 存放文物古炮」, 18 March 1987, archive.org NPWK19870318, leaf n24, https://archive.org/details/NPWK19870318/page/n24
+- **Class:** primary (News reports made at the time (1987). Primary tree.)
+- **Date of the record:** 1987-02-05; 1987-03-18
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19870205, leaf n20 (本港新聞), middle | The museum idea of February 1987 came from the image promotion group (形象推廣小組) of the Kowloon City District Board, not from the government. It asked for a relics hall in the park and for the park to become a tourist area. | "城寨公園設文物館 存有價值古物古蹟 並計劃城寨公園發展為旅遊區" (A relics hall in the Walled City park, to keep valuable relics and remains, and a plan to develop the park as a tourist area.) |
+| NPWK19870205, leaf n20 (本港新聞), middle | The same group wanted one landmark building for the district. It studied three sites: 宋王台公園, 賈炳達道公園 and the City, which was soon to be cleared. | "宋王台公園、賈炳達道公園及新近快要清拆" (宋王台公園, 賈炳達道公園 and the (City) soon to be cleared.) |
+| NPWK19870205, leaf n20 (本港新聞), middle | The landmark was limited to HK$250,000, about 300 square feet and 20 feet high, and was expected by 1989. | "僅能在廿五萬元之下可考慮，估計建築物之面積約三百平方呎左右高度限廿呎" (Can only be considered under 250,000 dollars; the building about 300 sq ft, height limited to 20 ft.) |
+| NPWK19870318, leaf n24 (本港新聞), lower middle | In March 1987 the Urban Services Department (市政總署) was to study a District Board member's proposal for a museum in the future park, like the one at 李鄭屋邨. | "將來在九龍城砦公園內興建一個類似李鄭屋邨的博物館" (Build in the future Kowloon Walled City park a museum like the one at 李鄭屋邨.) |
+| NPWK19870318, leaf n24 (本港新聞), lower middle | The museum was to hold the two old Chinese cannons that were then kept in the City. | "考慮在博物館內存放的物品包括現時保存在城砦內的兩尊中國古炮" (Items considered for the museum include the two old Chinese cannons now kept in the City.) |
+| NPWK19870318, leaf n24 (本港新聞), lower middle | INFERRED: The March 1987 item was a summary of a meeting of the 地區關係委員會 chaired by 張有興 (Urban Council), held two days before the paper (about 16 March 1987). | "這問題在前日舉行的地區關係委員會會議中" (This question at the meeting of the district relations committee held the day before yesterday.) |
+
+- **Leads:**
+  - Urban Council 地區關係委員會 papers of about 16 March 1987, on a museum for the City park (not held).
+  - 華僑日報 5 Feb 1987, story '匯報香港近况談及城砦發展' (鍾逸傑 on the City), page not found (not read).
 ### top-zh-press-3: 城寨坊會晤社團代表商有關清拆善後問題盼業主與租客協商解決糾紛
 
 - **Creator:** Ta Kung Pao (大公報)
@@ -1396,36 +1473,50 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-builders-demolition-park-12: 物業漲價收樓要提高負債清拆城寨超預算補償費用多四億遷拆行動拖慢要到九五才能完成搬屋留下大量雜物增加清理費用
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-07-06
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the cost and the timetable of the clearance and clean-up.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19900706
-- **Other links:** https://archive.org/metadata/NPWK19900706/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds the headline as given in the title.
-- **What it gives (finder's note, not checked):** By its headline: the compensation was 400 million over budget because property prices rose; the clearance was slow and was due to end only in 1995; residents left much rubbish when they moved, which added to the cost of the clean-up.
-- **Notes:** Headline only. The held HKU clipping 'Costs to demolish city rise by $37m' (11 Jul 1990) is close in date.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「物業漲價收樓要提高賠償 清拆城寨超預算 補償費用多四億 遷拆行動拖慢要到九五才能完成 搬屋留下大量雜物增加清理費用」, 6 July 1990, archive.org NPWK19900706, leaf n2, https://archive.org/details/NPWK19900706/page/n2
+- **Class:** primary (A news report made at the time (1990). Primary tree.)
+- **Date of the record:** 1990-07-06
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19900706, leaf n2, upper middle | The government had planned to spend HK$2.7 billion on the clearance. HOS flat prices rose, which added HK$400 million. The clearance went from three phases to four. | "清拆行動所需的費用增加多四億元，同時，清拆期亦會由三期而延長至四期" (The cost of the clearance rose by 400 million, and the clearance went from three phases to four.) |
+| NPWK19900706, leaf n2, upper middle | When the clearance was announced in January 1987, it had three phases, set by the lie of the land, and was to end in 1992. | "每期的清拆範圍根據地形質環境而劃分，並預計一九九二年完成工程" (The area of each phase was set by the terrain, and the work was expected to end in 1992.) |
+| NPWK19900706, leaf n2, upper middle | From the experience of phase 1, the clearance could be late until 1995. | "恐怕要延遲至九五年才能完成" (It may be delayed until 1995 to finish.) |
+| NPWK19900706, leaf n2, upper middle | Phase 1 owners numbered 2,300 people, more than expected. Phases 2 and 3 had 6,000 people. | "發覺人數達二千三百人，比預期為多，而第二、三期所牽涉人數更達六千人" (They found 2,300 people, more than expected; phases 2 and 3 involve 6,000 people.) |
+| NPWK19900706, leaf n2, upper middle | The government did not want City owners to cut the chances of others on the HOS waiting list. The Housing Authority said that all City owners would get HOS flats by mid-1992. | "在九二年中旬，所有城寨業主將得以分配到居屋單位" (By mid-1992 all City owners will be allocated HOS flats.) |
+| NPWK19900706, leaf n2, upper middle | In the review, the budget rose by 15 per cent, from HK$2,765 million to HK$3,187 million, mainly because HOS prices rose. | "由原來二十七億六千五百萬，增加至三十一億八千七百萬" (From the original 2,765 million to 3,187 million.) |
+| NPWK19900706, leaf n2, upper middle | Some tenants left large piles of things behind when they moved. This added to the contractor's cost of clearing. | "大堆雜物，因而增加負責商的清拆費用" (Large piles of miscellaneous things, which increased the contractor's clearing cost.) |
+| NPWK19900706, leaf n2, upper middle | Because the clearance became longer, the security guards of the City needed more time and more wages. | "負責看守城寨的保安人員，需要增加時間及工資" (The security staff guarding the City need more time and wages.) |
+| NPWK19900706, leaf n2, upper middle | The government gave HK$5 million to the clearance contractor to keep the Yamen building and avoid damage to the historic remains. | "政府撥出五百萬給所委託的清拆公司，保留城寨衙門建築物" (The government allotted 5 million to the commissioned clearance company to keep the City's Yamen building.) |
+
+- **Leads:**
+  - The reviewed budget of the City clearance (HK$3,187 million, July 1990), probably a Finance Committee paper (not held).
 ### gap-builders-demolition-park-10: 城砦樓多含石棉下月作拆卸試驗
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-08-24
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the asbestos in the buildings and a trial demolition.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19900824
-- **Other links:** https://archive.org/details/NPTKP19900824, https://archive.org/metadata/NPWK19900824/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '城砦樓多含石棉下月作拆卸試驗'.
-- **What it gives (finder's note, not checked):** By its headline: many buildings of the City contained asbestos, and a demolition trial was set for September 1990. 大公報 of the same day (alt URL): '清除石棉試驗計劃下月中在城寨進行若順利有助加速城寨清拆' (an asbestos-removal trial in mid-September; if it went well, it was to speed the clearance).
-- **Notes:** Headlines only. The held HKU clippings 'Demolition costs up in Walled City' (24 Aug 1990) and 'Survey to plan for asbestos removal' (19 Jan 1991) are the English reports. The asbestos survey is part of the record survey of the buildings before demolition.
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「城砦樓多含石棉 下月作拆卸試驗」, 24 August 1990, archive.org NPWK19900824, leaf n9, https://archive.org/details/NPWK19900824/page/n9 ; and Ta Kung Pao (大公報), 「清除石棉試驗計劃下月中在城寨進行 若順利有助加速城寨清拆」, 24 August 1990, archive.org NPTKP19900824, leaf n5, https://archive.org/details/NPTKP19900824/page/n5
+- **Class:** primary (News reports of a District Board meeting, made at the time (1990). Primary tree.)
+- **Date of the record:** 1990-08-24
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | INFERRED: 祝建勳, the deputy secretary (副政務司) for the City clearance, reported to the Kowloon City District Board on 23 August 1990. The date comes from 'yesterday'. | "祝建勳昨日在九龍城區議會會報清拆城寨進度表示" (祝建勳 said yesterday at the Kowloon City District Board, reporting on the progress of the clearance.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | Phase 3 letters had gone to 2,338 households. Over 90 per cent were willing to accept compensation. The people affected in phase 3 numbered 6,792. | "已向二千三百卅八個家庭發出收樓信，願意接受補償的家庭超過九成，實際受影響的人數為六千七百九十二人" (Resumption letters went to 2,338 households; over 90% accepted; 6,792 people are affected.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | Civil Engineering Department tests found asbestos in most of the City's buildings. | "城寨內的大部分樓宇都含有石棉" (Most buildings in the City contain asbestos.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | In September 1990 an asbestos-removal trial was to take place in four buildings recovered in phase 1. The Buildings and Lands Department was to run it, under the Environmental Protection Department. | "下月將在第一期收回的四幢樓宇進行為期兩周的拆卸石棉試驗" (Next month a two-week asbestos removal trial will be held in four buildings recovered in phase 1.) |
+| NPTKP19900824, leaf n5 (港聞 page), right column | The 大公報 gave the trial as two months from mid-September 1990, not two weeks. If it went well, the rest of the asbestos was to be removed in the same way. | "進行為期兩個月的清除石棉試驗計劃" (Carry out a two-month asbestos removal trial.) |
+| NPTKP19900824, leaf n5 (港聞 page), right column | Earlier, departments had sampled 20 units in the City. All 20 contained asbestos. | "早前有關部門曾抽查城寨內二十個單位，均發現含有石棉" (Earlier the departments sampled 20 units in the City and found asbestos in all.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | The removal of asbestos was estimated to cost an extra HK$20 million. | "估計清拆石棉需二千萬的額外支出" (Removing the asbestos is estimated to need 20 million of extra spending.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | The whole clearance covered 9,457 households. By August 1990, 4,794 households had left the City. | "整個清拆計劃共涉及九千四百五十七個家庭，已遷離城寨的有四千七百九十四個家庭" (The whole clearance involves 9,457 households; 4,794 have left the City.) |
+| NPWK19900824, leaf n9 (printed page 10, 本港新聞), middle right (headline 「城砦樓多含石棉」) | The City had 672 shops and factories (商戶及廠家). 335 of them had agreed to compensation. | "六百七十二個商戶及廠家，已有三百三十五戶願接受補償金" (Of 672 shops and factories, 335 have accepted compensation.) |
+| NPTKP19900824, leaf n5 (港聞 page), right column | The 大公報 gave the households moved out as over 4,000 of over 9,000, or 50.6 per cent. | "遷出城寨者則達四千多個，達總數百分之五十點六" (Those who moved out reached over 4,000, 50.6 per cent of the total.) |
+| NPTKP19900824, leaf n5 (港聞 page), right column | By 20 August 1990 compensation paid totalled HK$1.62 billion, 51 per cent of the HK$3.1-odd billion approved. | "至現時為止，補償的支出已達十六億二千萬元，佔當局批出的三十一億多萬元的百分之五十一" (So far compensation spending has reached 1.62 billion, 51% of the 3.1-odd billion approved.) |
+| NPTKP19900824, leaf n5 (港聞 page), right column | INFERRED: The moves were two years behind the first plan. The demolition and the new park were due to end in 1995. The year for the end of the moves is unclear on the scan (probably mid-1992). | "雖然搬遷計劃比預期遲了兩年" (Although the removal plan is two years later than expected.) |
+
+- **Leads:**
+  - Civil Engineering Department asbestos tests in the City, 1990, with a sample of 20 units (not held).
+  - Kowloon City District Board minutes, meeting of 23 August 1990 (clearance progress report by 祝建勳; not held).
 ### zh-press-13: 九龍城寨半數商戶仍拒接受搬遷賠償受清拆影響業主增補助費
 
 - **Creator:** Wah Kiu Yat Po (華僑日報)
@@ -1522,20 +1613,25 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-campus-socialwork-press-1: 遷居新環境充滿失落感 城寨老人需特別服務 救世軍敦促當局關注
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1991-09-24
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time, during the clearance, on a social-service body's work with the City's residents.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPWK19910924
-- **Other links:** https://archive.org/metadata/NPWK19910924/metadata, https://archive.org/details/NPWK19910925
-- **Proof that it exists:** Item title '華僑日報 1991-09-24'; the description holds the headline '遷居新環境充滿失落感城寨老人需特別服務救世軍敦促當局關注'.
-- **What it gives (finder's note, not checked):** The Salvation Army (救世軍) asks the government to give special services to the old people who moved out of the City in the clearance, because they feel lost in their new homes. It shows that the Salvation Army served the City's old people up to 1991.
-- **Notes:** I read the metadata only, not the page scan. The issue of 1991-09-25 (NPWK19910925) has the City in a keyword string next to '被迫遷居' and '救世軍為老人服務'; I did not confirm that it is the same story. Archive.org item by a private uploader (see zh-press-1 for the rights note).
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「遷居新環境充滿失落感 城寨老人需特別服務 救世軍敦促當局關注」, 24 September 1991, p. 19, archive.org NPWK19910924, leaf n18, https://archive.org/details/NPWK19910924/page/n18 ; and 華僑日報, 「城寨遷拆被迫遷居 救世軍為老人服務」, 25 September 1991, p. 3, archive.org NPWK19910925, leaf n2, https://archive.org/details/NPWK19910925/page/n2
+- **Class:** primary (News reports made at the time (1991). Primary tree.)
+- **Date of the record:** 1991-09-24; 1991-09-25
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | The Salvation Army (救世軍) closed all its services inside the City on 17 July 1991: its pre-school education centre, its kindergarten and its church. | "於本年七月十七日正式關閉其在九龍城寨內的所有服務，包括學前教育中心、幼稚園及教堂" (On 17 July this year formally closed all its services in Kowloon Walled City, including the pre-school centre, kindergarten and church.) |
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | In 竹園區, where many City residents moved, the Salvation Army had two day centres for old people and one youth centre. | "在許多城寨居民遷往的竹園區設立有兩所日間老人中心及一間青少年中心" (In 竹園區, where many City residents moved, it set up two day centres for the elderly and one youth centre.) |
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | The Army said that old people suffered most from the 'big move': they lost friends, familiar places, homes and even family members. | "他們失去朋友，熟悉的地方，家，甚至家庭成員" (They lost friends, familiar places, homes, even family members.) |
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | Social workers who knew the old people visited those still in the City, and those who had moved but still came back to the City every day by a long journey. | "長途跋涉每日回到城寨" (Travel a long way every day back to the City.) |
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | The commander of the Salvation Army, Colonel 班維廉, was to speak at the lunch of the 香港國際同濟會 at 1 pm on 24 September 1991 at the 富麗華酒店, 4/F, Central. | "九月廿四日）下午一時正在中環富麗華酒店四樓舉行的國際同濟會午餐例會" (At the regular lunch of the 國際同濟會 at 1 pm on 24 September at the 富麗華酒店 4/F, Central.) |
+| NPWK19910924, leaf n18 (printed page 19, 港聞 教育), top left | He was to give a plaque to the 香港國際同濟會 for 22 years of support to the Salvation Army's school in the City. The school had educated more than 2,200 children. | "其在過去廿二年間對救世軍城寨學校的支持，使超過二千二百名學童得以受教育" (Its support of the Salvation Army City school over the past 22 years, which let more than 2,200 pupils be educated.) |
+| NPWK19910925, leaf n2 (printed page 3, 本港新聞), bottom right | After the clearance was announced, most of the old people who had to move went to 竹園區. | "其中大部份便選往竹園區" (Most of them chose to move to 竹園區.) |
+| NPWK19910925, leaf n2 (printed page 3, 本港新聞), bottom right | The old people could not adapt. Each day they travelled a long way back to the City to sit there. 班維廉 expected this to get worse when the City was fully cleared in about two years. | "他們每日竟長途跋涉回到城寨閒坐" (Every day they even travel a long way back to the City to sit idle.) |
+| NPWK19910925, leaf n2 (printed page 3, 本港新聞), bottom right | The Salvation Army was to give these old people individual counselling, and to pass complex cases to government departments. | "亦會為這些老人家提供個別輔導服務" (It will also provide individual counselling services for these old people.) |
+
+- **Leads:**
+  - Salvation Army Hong Kong records of its services in Kowloon Walled City (pre-school centre, kindergarten, church; closed 17 July 1991) and of its City school (over 2,200 pupils in 22 years) (not held).
 ### gap-clearance-from-below-16: 華僑日報 1991-10-29: 城砦居民不滿限期遷離羣情洶湧理論擠在油尖警署深夜不去
 
 - **Creator:** Wah Kiu Yat Po (華僑日報)
@@ -1698,16 +1794,16 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gap-builders-demolition-park-15: 九龍城寨公園計劃昨過交區議會討論區議員希望增設婚姻注冊處
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); scan on archive.org from a private uploader
-- **Date:** 1990-10-19
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the District Board debate of the park plan.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (private upload of newspaper scans, no rights statement)
-- **Link:** https://archive.org/details/NPWK19901019
-- **Other links:** https://archive.org/metadata/NPWK19901019/metadata/description
-- **Proof that it exists:** The OCR headline list of the item holds '九龍城寨公園計劃昨過交區議會討論區議員希望增設婚姻注冊處'.
-- **What it gives (finder's note, not checked):** By its headline: on 18 Oct 1990 the park plan went to the District Board (區議會, as the headline writes it) for debate; members asked for a marriage registry in the park.
-- **Notes:** Headline only. OCR: '過交' is probably '提交' (INFERRED).
+- **Status:** Read on 2026-11-17; a checker checked a sample of the facts on 2026-11-17.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「九龍城寨公園計劃 昨遞交區議會討論 區議員希望增設婚姻註冊處」, 19 October 1990, p. 5, archive.org NPWK19901019, leaf n4, https://archive.org/details/NPWK19901019/page/n4
+- **Class:** primary (A news report of a District Board meeting, made at the time (1990). Primary tree.)
+- **Date of the record:** 1990-10-19
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19901019, leaf n4 (printed page 5, 本港新聞), lower right | The plan for the Kowloon Walled City Park went to the Kowloon City District Board for debate on 18 October 1990. The members welcomed it. | "興建計劃昨日正式遞交九龍城區議會討論，會上議員對計劃均表歡迎" (The building plan was formally submitted yesterday to the Kowloon City District Board; the members all welcomed it.) |
+| NPWK19901019, leaf n4 (printed page 5, 本港新聞), lower right | Members asked for a marriage registry in the park, so that couples could take photographs in its gardens after they married. | "方便市民在註冊後可以在園內拍照留念" (So that people can take souvenir photos in the park after registering.) |
+| NPWK19901019, leaf n4 (printed page 5, 本港新聞), lower right | INFERRED: An estate manager of the Architectural Services Department attended and said that he would pass on the view. His name reads 林社鈴 on the scan (INFERRED: the scan is coarse; '林社' ends one column and '鈴' starts the next). | "列席的建築署物業事務經理林社鈴表示會反映有關意見" (The Architectural Services Department property manager who attended, 林社鈴, said that he would pass on the views.) |
+
+- **Leads:**
+  - Kowloon City District Board minutes, meeting of 18 October 1990, on the Kowloon Walled City Park plan (not held).
