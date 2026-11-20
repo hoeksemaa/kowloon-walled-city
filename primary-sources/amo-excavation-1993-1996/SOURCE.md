@@ -2,10 +2,8 @@
 
 The report of the office that dug the site after the demolition.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1995-1995.
 - **Items:** 1, of which 0 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -20,15 +18,47 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### hkgov-9: Kowloon Walled City
 
-- **Creator:** Antiquities & Monuments Office, Recreation & Culture Branch, Hong Kong Government
-- **Date:** 1995
-- **Kind:** book
-- **Class:** primary (A booklet of 1995 by the office that dug the site; the dig parts are primary, the history parts secondary.)
-- **Value:** high
-- **Language:** en
-- **Access:** js-only
-- **Licence:** © Hong Kong Government
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/2514pr68q
-- **Proof that it exists:** HKU Digital Repository search for '"walled city" "Antiquities & Monuments Office"': 1 result, 'Kowloon Walled City', 1995, Publisher 'Antiquities & Monuments Office Recreation & Culture Branch', HKUL eBooks, Book
-- **What it gives (finder's note, not checked):** Probably the AMO's account of the City and of the dig of Nov 1993 - Jun 1994 (South Gate, wall footings, plaques). Contents not seen.
-- **Notes:** The record page gives only the title without JavaScript; the viewer did not load. Access is not stated (a Login link shows; HKUL eBooks can be HKU-only). The repository's facet lists it as the only item with this publisher.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Antiquities & Monuments Office, Recreation & Culture Branch, Hong Kong Government, 九龍寨城 Kowloon Walled City (folded bilingual leaflet), [1995], printed by the Government Printer, Hong Kong. HKU Libraries, Hong Kong Collection, HKP 951.25 K87 a (received 8 Feb 1996); HKU Digital Repository, images 1-13, https://digitalrepository.lib.hku.hk/catalog/2514pr68q
+- **Class:** primary (The office that dug the site and restored the Yamen reports its own work of 1993-1995 at the time (primary). The history section is a summary written in 1995 (kind secondary). Stays in primary-sources/.)
+- **Date of the record:** 1995 (after the park completion ceremony of 6 September 1995; HKU received it on 8 February 1996)
+- **Files:**
+  - not downloaded (curl exit 56): Leaflet image 1: cover (九龍寨城 Kowloon Walled City; photo of the South Gate); https://digitalrepository.lib.hku.hk/service/api/iiif/images/p2678417s/full/full/0/default.jpg; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-0f994683.jpg` (in `local/`, not in git): Leaflet image 2: HKU Libraries bookplate (gift of the AMO); https://digitalrepository.lib.hku.hk/service/api/iiif/images/1v53m627f/full/full/0/default.jpg; 117851 bytes; SHA-256 `ae84a6cf52632e04c8ba7997698af982112f052136911d542d6b8f1238718056`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-e2de6184.jpg` (in `local/`, not in git): Leaflet image 3: 歷史 (history, Chinese); https://digitalrepository.lib.hku.hk/service/api/iiif/images/k643c8656/full/full/0/default.jpg; 258439 bytes; SHA-256 `81049addf6813fb95270a94ac2109d8b9d2c62307e4b58dc2bb25b0958e56386`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-cc8b28d5.jpg` (in `local/`, not in git): Leaflet image 4: photos: South Gate c.1930s, the City c.1900, the City from the Longjin Bridge 1898; https://digitalrepository.lib.hku.hk/service/api/iiif/images/tx31rs48v/full/full/0/default.jpg; 226937 bytes; SHA-256 `67e899d309ae217900201afb0578ea10b9090b5bfecebd5f0ccec5af07003056`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-464bdb4b.jpg` (in `local/`, not in git): Leaflet image 5: History (English, part 1); https://digitalrepository.lib.hku.hk/service/api/iiif/images/k356bf12b/full/full/0/default.jpg; 258950 bytes; SHA-256 `ed8f96d75964bc07ed32e64d7e24bef8fdf47edaf9b01c7992b7400ea47ab3c9`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-a04492ee.jpg` (in `local/`, not in git): Leaflet image 6: History (English, part 2) and photos c.1924-1930s; https://digitalrepository.lib.hku.hk/service/api/iiif/images/bg258p79w/full/full/0/default.jpg; 252735 bytes; SHA-256 `7daded6c9562b5f187cd25c935302746cc9f9a279e3349008666c9edb06395fd`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-9e4fcc5e.jpg` (in `local/`, not in git): Leaflet image 7: 古物的保存 (preservation, Chinese) and Yamen photos; https://digitalrepository.lib.hku.hk/service/api/iiif/images/rx914z05j/full/full/0/default.jpg; 280440 bytes; SHA-256 `26f3c31f1306dc8bd2c2ca13d4c50fb0cec4dfac5dd90db0e96ebb2c05fceea8`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-84bebc1a.jpg` (in `local/`, not in git): Leaflet image 8: Preservation of Antiquities (English); https://digitalrepository.lib.hku.hk/service/api/iiif/images/nk323n634/full/full/0/default.jpg; 277996 bytes; SHA-256 `e2c792b3bd3eeb73b478b39bbf91e33ec32aec9ffa482ab6cfcafc587653949d`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-98f7ef70.jpg` (in `local/`, not in git): Leaflet image 9: 考古發現 (archaeological discoveries, Chinese) and dig photos; https://digitalrepository.lib.hku.hk/service/api/iiif/images/2r36w614s/full/full/0/default.jpg; 276473 bytes; SHA-256 `8eb75d577b0ecaef0edfd4ab31a77caffcfd52f3f6005db1516ad76d705b1d48`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-feababd3.jpg` (in `local/`, not in git): Leaflet image 10: Archaeological Discoveries (English) and dig photos; https://digitalrepository.lib.hku.hk/service/api/iiif/images/5q47sz55b/full/full/0/default.jpg; 254959 bytes; SHA-256 `b1a693c2d6ad769c13a7f0826360a41f1b220a1298396be828fb09a0ac2a5ab2`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-5587a38b.jpg` (in `local/`, not in git): Leaflet image 11: 公園設計 (park design, Chinese); aerial photo c.1970; demolition photo; https://digitalrepository.lib.hku.hk/service/api/iiif/images/0r968d34z/full/full/0/default.jpg; 299855 bytes; SHA-256 `01710051b45e59e74a1862f446496e10467856f36f924198f9b455e73015ac4c`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-b7fa7dec.jpg` (in `local/`, not in git): Leaflet image 12: park construction March 1995; completion ceremony 6 Sep 1995; location map; AMO address; https://digitalrepository.lib.hku.hk/service/api/iiif/images/3r076335b/full/full/0/default.jpg; 234812 bytes; SHA-256 `6303ec0b67fccfb418f636f6293722737002f8837472ac2b7cd6d70dac286d0c`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+  - `hkgov-9-default-afcbbc25.jpg` (in `local/`, not in git): Leaflet image 13: Park Design (English), partly covered by HKU library labels; https://digitalrepository.lib.hku.hk/service/api/iiif/images/ws85bp16r/full/full/0/default.jpg; 159431 bytes; SHA-256 `1d4453b98f54e1d2d15f4e9217ea9631b9fb07b33eae9f51a94137b4ed2959f2`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record) (https://digitalrepository.lib.hku.hk/catalog/2514pr68q)
+- **Note:** its 11 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/amo-excavation-1993-1996/SOURCE.md`](../../secondary-sources/amo-excavation-1993-1996/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 8 (Preservation of Antiquities) | The Antiquities Advisory Board recommended keeping the Yamen building in situ and the movable relics (cannon, stone tablets, column bases). | "recommended the preservation of the Yamen building in-situ" |
+| image 8 | Before the demolition, the surviving relics were surveyed and recorded; rubbings of stone tablets and cannon inscriptions were made with the Hong Kong Museum of History before the relics went into storage. | "Rubbings of historical stone tablets and inscriptions of the cannon were made with the assistance of the Hong Kong Museum of History" |
+| image 8; image 7 (約十四公尺闊及四十八公尺長) | The Yamen, once the office and home of the Commodore of Dapeng, is a three-hall building 14 metres wide and 48 metres long. | "is a three-hall building measuring 14 metres and 48 metres in width and length respectively" |
+| image 8 | The Yamen had been much altered over time for various uses; all structures added after the 1950s were taken down in the restoration, on the principle of minimal intervention. | "All post 1950s structures were carefully taken down without affecting the structure of the building." |
+| image 10 (Archaeological Discoveries) | During the demolition the Antiquities and Monuments Office dug the site to see if remains of the old walled city survived. | "the Antiquities and Monuments Office conducted archaeological investigations" |
+| image 10 | The dig found the foundations of the city wall, a drainage ditch along the foot of the inner wall, and a continuous flagstone path parallel to it. | "a drainage ditch running along the foot of the inner city wall as well as a continuous flagstone path parallel to it were uncovered" |
+| image 10; image 9 | The foundations of the South and East Gates were well preserved, and both flagstone gateways survived in good condition. | "Foundations of the original South and East Gates are particularly well preserved." |
+| image 10 | The most important finds were the two stone plaques of the South Gate, reading 'South Gate' (南門) and 'Kowloon Walled City' (九龍寨城). | "the two stone plaques bearing the characters "South Gate" and "Kowloon Walled City" of the original South Gate" |
+| image 10 | On the Board's advice, the Government kept the remains of the South Gate in situ for display. | "the Government decided to preserve the remnants of the South Gate in-situ for display to the public" |
+| image 11, caption | A photo caption says that huge hammers and bulldozers were used to demolish the buildings. | "Huge hammers and bulldozers were used to demolish the buildings." |
+| image 11 (公園設計) | The Architectural Services Department (建築署) designed and built the park. After study and visits to gardens in China, it chose the Jiangnan garden style of the early Qing dynasty. | "決定以清初江南園林作為寨城公園的設計模式" (decided to take the Jiangnan gardens of the early Qing as the design model for the Walled City park) |
+| image 11; image 13 | The park has eight zones around the Yamen; its pavilions and paths are named after the historic buildings and streets of the City. | "園內的亭榭及小徑均以寨城歷史建築及街道命名" (the pavilions and paths in the park are all named after the historic buildings and streets of the Walled City) |
+| image 13 | The park design won a Diploma at the IGA Stuttgart EXPO 93 (International Garden Exposition) in Germany. | "The design was awarded a Diploma given at the IGA Stuttgart EXPO 93 (International Garden Exposition) in Germany" |
+| image 11 | The clearance works finished in April 1994; building of the park began in May 1994 and finished in August 1995. | "寨城清拆工程於一九九四年四月完成，同年五月，公園的興建工程全面展開，於翌年八月竣工。" (The clearance works were completed in April 1994; in May of the same year building of the park began in full, and it was completed in August of the next year.) |
+| image 12, caption | A ceremony on 6 September 1995 marked the completion of the Kowloon Walled City Park (九龍寨城公園) works. | "A ceremony was held on 6 September 1995 to commemorate the works completion of the Kowloon Walled City Park." |
+| image 12, map | The location map shows the park bounded by Tung Tau Tsuen Road (東頭村道) on the north, Tung Tsing Road (東正道) on the east and Carpenter Road Park (賈炳達道公園) on the south, with Mei Tung Estate (美東邨), Hau Wong Temple (侯王廟), Kowloon City Plaza (九龍城廣場), Carpenter Road (賈炳達道), Junction Road (聯合道) and Lok Sin Road (樂善道) around it; the entrance is on the south side near the South Gate (南門). | "KOWLOON WALLED CITY PARK" |
+
+- **Leads:**
+  - Antiquities and Monuments Office: the report and records of its archaeological investigation of the City site during the demolition (1993-1994).
+  - Antiquities Advisory Board: its papers recommending the preservation of the Yamen in situ and of the South Gate remains (about 1987-1994).
+  - Hong Kong Museum of History: the rubbings of the City's stone tablets and cannon inscriptions made before the demolition.
+  - Architectural Services Department (建築署): the design and research files for the Kowloon Walled City Park (1990s).

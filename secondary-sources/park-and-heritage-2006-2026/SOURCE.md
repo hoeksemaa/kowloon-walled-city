@@ -2,10 +2,9 @@
 
 AMO and LCSD pages, park displays, the 2025 film-set exhibition.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 2 of 26 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 2006-2026.
 - **Items:** 26, of which 26 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -106,19 +105,27 @@ Not read yet.
 
 ### top-zh-testimony-7: 尋AR互動裝置 聆聽寨城故事
 
-- **Creator:** 胡茜, 香港仔 (香港大公文匯傳媒集團), p.19
-- **Date:** 2023-05-09
-- **Kind:** article
-- **Class:** secondary (A report on an oral-history sound project; it quotes no named resident.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 大公文匯傳媒集團
-- **Link:** https://www.tkww.hk/epaper/view/newsDetail/1655618707751309312.html
-- **Proof that it exists:** Title 「尋AR互動裝置 聆聽寨城故事」, 香港仔 p.19, 9 May 2023, 胡茜.
-- **What it gives (finder's note, not checked):** The Kowloon City theme walk 「躍變·龍城」 of 香港聖公會福利協會 (planned from 2018; 6.5 km in five sections) made 10 audio stories, 「聲音故事：回·眸寨城」, 「全部來自街坊的親身分享」: unlicensed doctors, small factories, buying and selling flats, childhood play, an unstable water supply, Chiuchow festivals. AR signs on 賈炳達道, 東正道 and 東頭村道 play them; an exhibition ran to 31 May 2023.
-- **Notes:** A lead to 10 first-hand stories of neighbours (retrospective, 2023). The audio and the names were not found: skhwc.org.hk (https://www.skhwc.org.hk/en/strategic_initiatives/kowloon-city-walking-trail/3) gave HTTP 403; the issuu newsletter 'kowloon.city.walking.trail' issue 18 gave 404. Ask 香港聖公會福利協會 for the recordings.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 胡茜, 「尋AR互動裝置 聆聽寨城故事」, 香港仔 (香港大公文匯傳媒集團), p.19, 9 May 2023, https://www.tkww.hk/epaper/view/newsDetail/1655618707751309312.html
+- **Class:** secondary (A 2023 feature about a walking trail and an audio-story project. The stories of the neighbours are retrospective testimony (2023), but the article only paraphrases them in the reporter's words. Secondary tree.)
+- **Date of the record:** 2023-05-09
+- **Files:**
+  - `top-zh-testimony-7-1655618707751309312-dd43b261.html` (in `local/`, not in git): The HTML of the e-paper article (short text page); https://www.tkww.hk/epaper/view/newsDetail/1655618707751309312.html; 18993 bytes; SHA-256 `77b5a39b963259e5622f0836b11394e90e02d0c18a46aba281f0f759d18414ba`; licence: 「香港大公文匯傳媒集團有限公司版權所有 © 1997-2021 WWW.TKWW.HK LIMITED」 (all rights reserved), as stated at the foot of the page (https://www.tkww.hk/epaper/view/newsDetail/1655618707751309312.html)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 香港仔 p.19 (TKWW e-paper page) | 香港聖公會福利協會 planned the Kowloon City theme trail 「躍變·龍城」 from 2018. The trail is 6.5 km long in five sections, from Kowloon Walled City Park (九龍寨城公園) in the north to 紅磡聖母堂 in the south. | "九龍城主題步行徑全長6.5公里、分為5個路段，北端以九龍寨城公園為起點" (The Kowloon City theme trail is 6.5 km long in 5 sections, starting at Kowloon Walled City Park in the north.) |
+| 香港仔 p.19 (TKWW e-paper page) | In the project 「聲音故事：回·眸寨城」, participants did site visits, interviews and text work. From real people and events they made 10 stories about the City and recorded them as audio stories. | "一同創作10個有關九龍寨城的故事，並錄製成聲音故事" (together created 10 stories about Kowloon Walled City and recorded them as audio stories.) |
+| 香港仔 p.19 (TKWW e-paper page) | The themes of the ten stories: unlicensed doctors, small backyard factories (山寨廠), buying and selling flats, childhood play, an unstable water supply and the festivals of the Chiuchow (潮州) people. | "主題涵蓋無牌醫生、山寨廠、買賣房屋、童年玩樂、供水不穩、潮州人過節等趣事" (The themes cover unlicensed doctors, backyard factories, buying and selling flats, childhood play, unstable water supply and how Chiuchow people kept festivals.) |
+| 香港仔 p.19 (TKWW e-paper page) | The article says that all the stories come from the first-hand accounts of neighbours (街坊). | "全部來自街坊的親身分享" (all come from the first-hand sharing of neighbours.) |
+| 香港仔 p.19 (TKWW e-paper page) | Examples: one person often went in and out of the City as a child to play with friends. One person met a "developer" (發展商) through work and bought a flat in the City. One person took outwork from a backyard factory for pocket money. | "有人因工作認識了「發展商」，遂在城寨置業；有人曾接下山寨廠的外發工作，賺取零用錢" (One person met a "developer" through work and so bought property in the City; one took outwork from a backyard factory to earn pocket money.) |
+| 香港仔 p.19 (TKWW e-paper page) | Ten AR signs on Carpenter Road (賈炳達道), Tung Tsing Road (東正道) and Tung Tau Tsuen Road (東頭村道) play the stories through the phone app of the trail. | "大家可於九龍城賈炳達道、東正道及東頭村道上尋找10個AR指示牌" (People can look for 10 AR signs on Carpenter Road, Tung Tsing Road and Tung Tau Tsuen Road in Kowloon City.) |
+| 香港仔 p.19 (TKWW e-paper page) | An exhibition of the same name was on at the 「躍變·龍城體驗館」 until 31 May 2023. | "展期至5月31日" (The exhibition runs until 31 May.) |
+| 香港仔 p.19 (TKWW e-paper page) | The article says that the City was cleared in 1993 and became Kowloon Walled City Park, which had its 30th anniversary in 2023. | "九龍寨城於1993年清拆後改建為九龍寨城公園，今年適逢公園建立30周年" (Kowloon Walled City was cleared in 1993 and rebuilt as Kowloon Walled City Park; this year is the 30th anniversary of the park.) |
+
+- **Leads:**
+  - The ten audio stories 「聲音故事：回·眸寨城」 of 香港聖公會福利協會, playable through the phone app of the trail 「躍變·龍城」 at ten AR signs (2023); the recordings and the names of the neighbours are not held.
+  - The exhibition 「聲音故事：回·眸寨城」 at the 「躍變·龍城體驗館」, to 31 May 2023 (not held).
 ### hkgov-11: Remnants of the South Gate of Kowloon Walled City (九龍寨城南門遺蹟)
 
 - **Creator:** Antiquities and Monuments Office (古物古蹟辦事處)
@@ -280,19 +287,22 @@ Not read yet.
 
 ### top-popular-20: 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (席上文件第 7 號: 香港旅遊發展局回覆)
 
-- **Creator:** Hong Kong Tourism Board reply, through the Kowloon City District Council Secretariat
-- **Date:** 2024-11
-- **Kind:** document
-- **Class:** secondary (A 2024 council paper on present-day exhibitions, not about the City at the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HKSAR Government / District Council
-- **Link:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/en/committee_meetings_doc/CICRC/27031/CICRC36_7.pdf
-- **Proof that it exists:** 席上文件第 7 號 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 香港旅遊發展局回覆如下
-- **What it gives (finder's note, not checked):** The tourism board's reply: the 「走進香港，走進香港電影」 film exhibition at Hong Kong International Airport, 7 Oct to 20 Nov 2024, and its move to the AIRSIDE mall at the old Kai Tak in December 2024. These came before the 2025 exhibition in the Yamen.
-- **Notes:** One page, received 19 Nov 2024. The same meeting folder (27031) holds the LCSD reply that other files cite.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Hong Kong Tourism Board (香港旅遊發展局), reply to the motion 「建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟」, tabled paper No. 7 (席上文件第 7 號), Kowloon City District Council Secretariat (九龍城區議會秘書處), November 2024 (received 19 November 2024), 1 p., https://www.districtcouncils.gov.hk/kc/doc/2024_2027/en/committee_meetings_doc/CICRC/27031/CICRC36_7.pdf
+- **Class:** primary (An official record of 2024 tourism events, made at the time. It is primary only for those 2024 events and holds no fact on the City before 1993. It can stay in secondary-sources/park-and-heritage-2006-2026 as heritage material.)
+- **Date of the record:** 2024-11 (received 2024-11-19)
+- **Files:**
+  - `top-popular-20-CICRC36_7-d632a685.pdf` (in `local/`, not in git): The one-page PDF of the tourism board reply (tabled paper No. 7); https://www.districtcouncils.gov.hk/kc/doc/2024_2027/en/committee_meetings_doc/CICRC/27031/CICRC36_7.pdf; 136743 bytes; SHA-256 `7e49c14151b092f3d8670a89d44d3ea889cf42852163d8899b8eae199abc110b`; licence: A paper of the Kowloon City District Council (HKSAR Government). The PDF states no licence; I did not find a reuse notice of the site (two notice URLs gave 404). (https://www.districtcouncils.gov.hk/kc/doc/2024_2027/en/committee_meetings_doc/CICRC/27031/CICRC36_7.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| CICRC36_7.pdf, p.1 | The Hong Kong Tourism Board, the Airport Authority, the 文創產業發展處 of the Culture, Sports and Tourism Bureau and the producers of the film 《九龍城寨之圍城》 held a film exhibition at Hong Kong International Airport from 7 October to 20 November 2024. | "由今年 10 月 7 日起至 11 月 20 日，於香港國際機場舉行「走進香港，走進香港電影」九龍城寨之圍城電影展" (From 7 October to 20 November this year, the exhibition 「走進香港，走進香港電影」 on the film 《九龍城寨之圍城》 is held at Hong Kong International Airport.) |
+| CICRC36_7.pdf, p.1 | The exhibition rebuilt many classic scenes of the film. | "重現多個電影經典場景" (recreating many classic scenes of the film.) |
+| CICRC36_7.pdf, p.1 | In December 2024 the exhibition was to move to the AIRSIDE mall on the site of the old Kai Tak airport in Kowloon City. | "展覽更會於 12 月走到該電影故事的「主舞台」— 九龍城，在位於舊啟德機場的 AIRSIDE 商場內展出" (In December the exhibition will go to the "main stage" of the film story, Kowloon City, in the AIRSIDE mall at the old Kai Tak airport.) |
+| CICRC36_7.pdf, p.1 | The reply answered a motion to improve the exhibition hall of the Kowloon City Yamen (九龍城衙門). The Secretariat received it on 19 November 2024. | "(秘書處於 11 月 19 日收到)" ((Received by the Secretariat on 19 November)) |
+
+- **Leads:**
+  - The motion 「建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟」 and the other replies in the same meeting folder (CICRC meeting 36, folder 27031), including the LCSD reply.
 ### gap-oral-history-archives-15: 建議在九龍寨城公園展廳增設展示廳以展示歷史文獻：康樂及文化事務署回覆（席上文件第1號）
 
 - **Creator:** Leisure and Cultural Services Department (康樂及文化事務署), via the secretariat of the Kowloon City District Council (九龍城區議會)

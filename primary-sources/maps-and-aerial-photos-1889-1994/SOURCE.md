@@ -2,13 +2,13 @@
 
 Survey sheets, old maps and aerial photos that show the City and its edge.
 
-- **Status:** partly read: 21 of 36 items read by the reading of the source search of
+- **Status:** partly read: 29 of 36 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1866-2026.
 - **Items:** 36, of which 23 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 1 files with an open licence (public domain (PD-old-70-expired; PD in the US; Creative Commons Public Domain Mark 1.0), as stated on Commons), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 1 files with an open licence (Public domain (Commons: PD-HK, PD-1996)), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -205,20 +205,25 @@ testimony given later: tag its facts "retrospective (year)".
   - The top margin has a label that perhaps reads CXXIV-SE-15 (the sheet to the north); I did not open it.
 ### top-commons-5: 1960 map of Kowloon & The New Territories by the British War Office.jpg
 
-- **Creator:** Geographical Section, War Office (UK)
-- **Date:** 1960
-- **Kind:** map
-- **Class:** primary (An official topographic map of the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (PD-UKGov)
-- **Link:** https://commons.wikimedia.org/wiki/File:1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/c/c0/1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg, https://www.raremaps.com/gallery/detail/64389/kowloon-the-new-territories-geographical-section-war-office-uk
-- **Proof that it exists:** ImageDescription: "1960 map of Kowloon & The New Territories by the British War Office"
-- **What it gives (finder's note, not checked):** Kowloon and the New Territories in 1960, with Kowloon City, Kai Tak and the squatter areas round the City, at a large scale (the scan is 17,650 px wide).
-- **Notes:** 17650x22581 px, 78,596,114 bytes, SHA-1 81c2f1d785da74caf7192fb4da1d4039c6b6b00d. Uploaded by Balkanique, 2020-04-03. The file page gives no scale, series or edition. The Raremaps page gave HTTP 403. Image not viewed (too large for this tool): check the scale and the outline of the City.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** War Office and Air Ministry (D. Survey), 'Kowloon & The New Territories', Hong Kong 1:100,000, Series L681, Sheet 1, Edition 1-GSGS, published 1960, printed by Ordnance Survey; Wikimedia Commons, File:1960 map of Kowloon & The New Territories by the British War Office.jpg (uploaded by Balkanique, 2020-04-03; source raremaps.com), 17650x22581 px; https://commons.wikimedia.org/wiki/File:1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg (read 2026-11-20).
+- **Class:** primary (A military survey map made from air photographs of 1954 and ground survey of 1956-57. The tree primary is correct.)
+- **Date of the record:** published 1960; detail from RAF photographs of Nov 1954, ground revision Feb-Apr 1956, additions to Aug 1957
+- **Files:**
+  - not downloaded (curl exit 56): The 3840x4913 px Commons thumbnail of the scan (about 6.2 MB). The full file is 78,596,114 bytes (SHA-1 81c2f1d785da74caf7192fb4da1d4039c6b6b00d), over the size limit.; https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg/3840px-1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg; licence: Public domain (Commons: UK Government artistic works, PD-UKGov) (https://commons.wikimedia.org/wiki/File:1960_map_of_Kowloon_%26_The_New_Territories_by_the_British_War_Office.jpg)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| top margin | The sheet is 'Kowloon & The New Territories', Hong Kong 1:100,000, Series L681, Sheet 1, Edition 1. | "Series L681 Sheet 1 Edition 1 — GSGS" |
+| bottom margin, left | D. Survey of the War Office and the Air Ministry published the map in 1960. | "Published by D. Survey, War Office and Air Ministry, 1960" |
+| bottom margin, right, note (i) | The detail comes from RAF air photographs of November 1954, revised on the ground by 84 Field Survey Squadron RE in February to April 1956, with additions up to August 1957. Thus the map shows the City area of 1954-57, not of 1960. | "RAF Air Survey photography dated November 1954 supplemented by ground survey revision" |
+| bottom margin, right, note (ii) | INFERRED: The other sources are a 1:80,000 map of 1946 and a 1:20,000 map, GSGS 3861, of 1951-52. The number '3691' is probably a misprint for GSGS 3961, the 1:80,000 map (INFERRED). | "GSGS 3691 1:80,000 (1946) , GSGS 3861 1:20,000 (1951-52)." |
+| Kowloon Bay area, grid square near easting 25, northing 70 | The label 'KOWLOON CITY' is beside hatched built-up blocks, west of Kai Tak. The map does not draw the outline of the Walled City. | "KOWLOON CITY" |
+| Kowloon Bay area | Kai Tak is named 'Kai Tak Airfield'. Its old runways are drawn in dashed lines. The new runway into Kowloon Bay is drawn as a box marked as under construction in August 1957. | "Under Construction Aug. 1957" |
+| bottom margin, scale bar | The scale is 1:100,000, about 0.63 inch to a mile. | "Scale 1:100,000 or ·63 inch to 1 mile" |
+
+- **Leads:**
+  - GSGS 3861, Hong Kong 1:20,000 (1951-52), a War Office map that the 1960 sheet names as a source. At 1:20,000 it can draw the block of the City: not in the repo.
 ### maps-11: Historical Map - Kowloon Peninsula (1963)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -354,20 +359,16 @@ testimony given later: tag its facts "retrospective (year)".
   - The ZIP is 106 MB, over the size limit: https://open.hkmapservice.gov.hk/OpenData/directDownload?productName=DOP5000-1982&sheetName=T11-NE-A&productFormat=TIFF. Use maps-5 (0.1 m) for the City; use this tile only for the setting.
 ### top-maps-1: Existing Noise Level: Kai Tak Airport (NEF) (figure in 'A Collection of Environmental Assessment Experience in Airport Core projects (ACP)')
 
-- **Creator:** Environmental Protection Department, Hong Kong (page); the maker of the contour map is not stated
-- **Date:** 2006-04-28
-- **Kind:** map
-- **Class:** primary (A government contour map of the airport before its closure, but the page does not give its date or maker.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © HKSAR Government (terms not stated)
-- **Link:** https://epd.gov.hk/epd/english/environmentinhk/eia_planning/guide_ref/acp2_6_2.html
-- **Other links:** https://epd.gov.hk/epd/sites/default/files/epd/english/environmentinhk/eia_planning/guide_ref/images/6-b1.gif
-- **Proof that it exists:** A Collection of Environmental Assessment Experience in Airport Core projects (ACP)
-- **What it gives (finder's note, not checked):** A small map of the 30 NEF and 40 NEF aircraft noise contours of Kai Tak, along the runway 13/31 line over Kowloon. The text says that about 350,000 people lived inside the 30 NEF contour of Kai Tak.
-- **Notes:** I saw the image: GIF, 428x240 px, SHA-256 d4254599d42f39f0534df3c3d2a2bf98560923f939a92a57066323db4f37eb85. The resolution is too low to find the edge of the contours at the City. The page gives no year for the contours. The Airport Core Programme assessments of the early 1990s can hold the full-size map (INFERRED).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Environmental Protection Department, Hong Kong, 'A Collection of Environmental Assessment Experience in Airport Core projects (ACP): Predicted & Existing Operational Noise', web page with the figure 'Existing Noise Level: Kai Tak Airport (NEF)' (6-b1.gif), 28 April 2006 (last review date); https://epd.gov.hk/epd/english/environmentinhk/eia_planning/guide_ref/acp2_6_2.html (read 2026-11-20).
+- **Class:** secondary (A government web page of 2006 that sums up the airport assessments of the early 1990s (INFERRED date of the assessments). The figure can be a copy of an assessment figure made while Kai Tak was open, but its maker and date are not given. Unless the original figure is found, the item belongs in secondary-sources/.)
+- **Date of the record:** page dated 28 April 2006; date of the contours not given
+- **Files:**
+  - `top-maps-1-6-b1-cdff37ab.gif` (in `local/`, not in git): The figure 'Existing Noise Level: Kai Tak Airport (NEF)', GIF 428x240 px, 43 KB, SHA-256 d4254599d42f39f0534df3c3d2a2bf98560923f939a92a57066323db4f37eb85.; https://www.epd.gov.hk/epd/sites/default/files/epd/english/environmentinhk/eia_planning/guide_ref/images/6-b1.gif; 43989 bytes; SHA-256 `d4254599d42f39f0534df3c3d2a2bf98560923f939a92a57066323db4f37eb85`; licence: Copyright of the HKSAR Government or other entities; the Important Notice permits download only for personal or non-commercial internal use and forbids making it available to the public without written authorization. (https://www.epd.gov.hk/epd/english/environmentinhk/notices/notices.html)
+- **Note:** the reader classed the whole item as secondary: its 4 facts are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+- **Leads:**
+  - The full-size noise contour map of Kai Tak (30 and 40 NEF) in the Airport Core Programme environmental assessments of the early 1990s (INFERRED location): not in the repo.
 ### maps-14: hkmaps.hk
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -397,20 +398,20 @@ testimony given later: tag its facts "retrospective (year)".
   - The News Lens article 172320 prints Survey and Mapping Office aerial photos of the City of 1984 and 1993 (lead of the finder, not opened).
 ### top-commons-18: A Map of Hong-Kong, with british Kowloon - btv1b530292768.jpg
 
-- **Creator:** Stanford's Geographical Establishment, for the Proprietor of the Hongkong Almanack; scan by the Bibliothèque nationale de France
-- **Date:** 1888
-- **Kind:** map
-- **Class:** primary (A map printed at the time for the Hong Kong almanac.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain
-- **Link:** https://commons.wikimedia.org/wiki/File:A_Map_of_Hong-Kong,_with_british_Kowloon_-_btv1b530292768.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/7/7c/A_Map_of_Hong-Kong%2C_with_british_Kowloon_-_btv1b530292768.jpg, https://commons.wikimedia.org/wiki/File:Map_of_Hong_Kong_with_British_Kowloon_1888_24727376.jpg
-- **Proof that it exists:** Title on the map (I viewed it): 'MAP OF HONGKONG WITH BRITISH KOWLOON. Lithographed at Stanford's Geographical Establishment, for the Proprietor of the Hongkong Almanack'. Commons record: DateTimeOriginal 1888, public domain, credit Bibliothèque nationale de France.
-- **What it gives (finder's note, not checked):** Hong Kong and British Kowloon in 1888. The label 'Kowloon City' sits at the north edge, just beyond the 'Boundary Line'. The map draws no detail of the City.
-- **Notes:** 8983x6881 px, 6,816,032 bytes, SHA-1 a02ec7d5a3ecfe8d56f25ad14c695c162cfdadcd. I viewed the 1280 px thumbnail only. The same map from Harvard (alt_url, artist 'Stanfords'): 10178x6754 px, 9,667,847 bytes, SHA-1 79685674c7e2e1034805ae29faf8a3f76f4c4397. Other old maps that the first top-up named, records read, not reported: 'Map in Treaty of Peking 1860.jpg' (600x416, 'From internet'), 'Map of Hong Kong in First Convention of Peking in 1860.jpg' (1680x1200, 'From internet'), 'Canton Kowloon Railway map, 1898.jpg' (Kelly and Walsh), 'HURLEY(1897) p172 Map of the KOWLOON ESTATE Property.jpg', 'Coastal defense map of Humen including Kowloon Battery in 1838.jpg' (《廣東海防彙覽》), 'Kowloon Tong Service Reservoir, 1947 HK Map.png' (Public Records Office, via hkmaps.hk). None was viewed.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Stanford's Geographical Establishment, 'Map of Hongkong with British Kowloon', lithographed for the Proprietor of the Hongkong Almanack, scale 2 inches to 1 statute mile, [1888]; Bibliothèque nationale de France copy (btv1b530292768), Wikimedia Commons, File:A Map of Hong-Kong, with british Kowloon - btv1b530292768.jpg (uploaded by Gzen92Bot, 2022-08-19), 8983x6881 px; https://commons.wikimedia.org/wiki/File:A_Map_of_Hong-Kong,_with_british_Kowloon_-_btv1b530292768.jpg (read 2026-11-20).
+- **Class:** primary (A map printed in about 1888, while the Qing garrison held the City. The tree primary is correct.)
+- **Date of the record:** 1888 (BnF and Harvard records; I saw no date on the map face)
+- **Files:**
+  - not downloaded (curl exit 56): The full BnF scan, JPEG 8983x6881 px, 6,816,032 bytes, SHA-1 a02ec7d5a3ecfe8d56f25ad14c695c162cfdadcd. The Harvard copy (File:Map of Hong Kong with British Kowloon 1888 24727376.jpg, 9,667,847 bytes) is the same map; keep one.; https://upload.wikimedia.org/wikipedia/commons/7/7c/A_Map_of_Hong-Kong%2C_with_british_Kowloon_-_btv1b530292768.jpg; licence: Public domain (Commons: PD US expired, PD France) (https://commons.wikimedia.org/wiki/File:A_Map_of_Hong-Kong,_with_british_Kowloon_-_btv1b530292768.jpg)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| title, upper left | The map is the 'Map of Hongkong with British Kowloon', lithographed by Stanford's Geographical Establishment for the proprietor of the Hongkong Almanack. | "Lithographed at Stanford's Geographical Establishment, for the Proprietor of the Hongkong Almanack." |
+| scale bar, bottom right | The scale is 2 inches to 1 statute mile. | "Scale, 2 Inches to 1 Statute Mile" |
+| top edge, centre | The label 'Kowloon City' is at the top edge of the map, just north of the dotted 'Boundary Line' of British Kowloon. A short dashed road runs north from the shore beside it. The map draws nothing of the City itself. | "Kowloon City" |
+| top edge, centre | Just south of the Boundary Line, inside British Kowloon, is the village 'Kaupuishek'. | "Kaupuishek" |
 ### china-16: 廣東海圖說 - 光緒十五年 (1889)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -509,36 +510,48 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-commons-7: 1936 map of Hong Kong and Kowloon by the British War Office (cropped).jpg
 
-- **Creator:** Geographical Section, War Office (UK); UCLA Library, Henry J. Bruman Map Collection
-- **Date:** 1936
-- **Kind:** map
-- **Class:** primary (An official topographic map of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain
-- **Link:** https://commons.wikimedia.org/wiki/File:1936_map_of_Hong_Kong_and_Kowloon_by_the_British_War_Office_(cropped).jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/d/d9/1936_map_of_Hong_Kong_and_Kowloon_by_the_British_War_Office_%28cropped%29.jpg, https://commons.wikimedia.org/wiki/File:1936_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg, https://digital.library.ucla.edu/catalog/ark:/21198/zz002hgkr5, https://upload.wikimedia.org/wikipedia/commons/f/f3/1936_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg
-- **Proof that it exists:** ImageDescription begins: "1936 map of Hong Kong and the New Territories by the British War Office."
-- **What it gives (finder's note, not checked):** Kowloon and Kowloon City in 1936, before the plan of 1933-36 to clear the City and before the Japanese occupation pulled down the walls.
-- **Notes:** This file is a crop: 2076x1556 px, 950,348 bytes, SHA-1 088ed780b619cb70167f52546e2130513df7c75b, uploaded by Ooligan, 2023-02-01. Keep the uncropped original ('1936 map of Hong Kong and the New Territories by the British War Office.jpg'); I did not read its record (limit). The UCLA record was not opened. Image not viewed. Second top-up (2026-11-17): I read the record of the uncropped original, 'File:1936 map of Hong Kong and the New Territories by the British War Office.jpg': 16815x12372 px, 38,657,634 bytes, SHA-1 3e14c733699de5f4a1c195fc9fbbfaa392b61450, '3rd edition' in the description, credit UCLA Henry J. Bruman Map Collection, public domain. The file is too large for WebFetch to view at full size, thus I did not check the City on it.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Geographical Section, General Staff, No. 3961, 'Hong Kong and the New Territories', 1:80,000, North Sheet, Third Edition (Grid Correction) 1946, first published by the War Office 1936, 'Reprinted from Kodalines by 71 Rep. Sec. R.E. Mar. 1946.'; UCLA Library, Henry J. Bruman Map Collection, G7940_80_GSGS_1936_ED3; Wikimedia Commons, File:1936 map of Hong Kong and the New Territories by the British War Office.jpg (16815x12372 px) and its crop File:1936 map of Hong Kong and Kowloon by the British War Office (cropped).jpg (2076x1556 px); https://commons.wikimedia.org/wiki/File:1936_map_of_Hong_Kong_and_Kowloon_by_the_British_War_Office_(cropped).jpg (read 2026-11-20).
+- **Class:** primary (A War Office map, in a 1946 military reprint of the 1936 map. The tree primary is correct.)
+- **Date of the record:** Third Edition (Grid Correction) 1946, reprinted March 1946; first published 1936
+- **Files:**
+  - not downloaded (curl exit 56): The 3840x2825 px Commons thumbnail of the uncropped map (about 3.5 MB); it shows Kowloon City. The full file is 38,657,634 bytes (SHA-1 3e14c733699de5f4a1c195fc9fbbfaa392b61450), over the size limit. Do not keep the crop: it does not show the City.; https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/1936_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg/3840px-1936_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg; licence: Public domain (Commons; UCLA rights statement 'public domain') (https://commons.wikimedia.org/wiki/File:1936_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| cropped file, top right | The cropped file shows Hong Kong Island and the south of the Kowloon peninsula only. Its north edge is at Ma Tau Kok and Kowloon Bay, so Kowloon City is outside it. | "Ma Tau Kok" |
+| uncropped file, bottom margin, left | The uncropped map is GSGS 3961, first published by the War Office in 1936, in its third edition with a grid correction of 1946. | "Published by the War Office, 1936. 3rd Edition (Grid Correction) 1946" |
+| uncropped file, bottom margin, right | This print was made from Kodalines by 71 Reproduction Section, Royal Engineers, in March 1946. The date is legible; a grid line crosses the word 'Sec.', not the date. | "Reprinted from Kodalines by 71 Rep. Sec. R.E. Mar. 1946." |
+| uncropped file, bottom margin, left | The reference box names the map HIND 1015, Hong Kong North Sheet, Third Edition. The 1949 print (top-commons-6) has the same edition. | "REFER TO THIS MAP AS:— HIND 1015 HONG KONG NORTH SHEET THIRD EDITION" |
+| uncropped file, Kowloon Bay area | On the uncropped map, the label 'KOWLOON CITY' is beside a cluster of built-up blocks west of 'Kai Tak Aerodrome', below Diamond Hill. The map does not draw the outline of the Walled City. | "KOWLOON CITY ... Kai Tak Aerodrome" |
+
+- **Leads:**
+  - A print of the first edition of GSGS 3961 (War Office, 1936), for the City area before the occupation: not in the repo.
 ### top-commons-3: 新九龍地界圖 New Kowloon Map, 1937.jpg
 
-- **Creator:** British Hong Kong Government (Commons); signed by the Governor and the Director of Public Works
-- **Date:** 1937-12-08 (plan); copy after 1950
-- **Kind:** map
-- **Class:** primary (A legal plan of the government, deposited in the Land Office.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (PD-HK, PD-1996)
-- **Link:** https://commons.wikimedia.org/wiki/File:%E6%96%B0%E4%B9%9D%E9%BE%8D%E5%9C%B0%E7%95%8C%E5%9C%96_New_Kowloon_Map,_1937.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/c/c0/%E6%96%B0%E4%B9%9D%E9%BE%8D%E5%9C%B0%E7%95%8C%E5%9C%96_New_Kowloon_Map%2C_1937.jpg
-- **Proof that it exists:** Header on the map: "COPY OF PLAN OF NEW KOWLOON DELINEATED IN RED dated 8th Dec., 1937 and deposited in the Land Office pursuant to Part I of Interpretation Ordinance Chapter I of the Laws of Hong Kong Revised Edition, 1950."
-- **What it gives (finder's note, not checked):** The legal boundary of New Kowloon, the area round the City, as fixed in 1937: the label 'KOWLOON CITY' sits on the north shore of Kowloon Bay, beside Tai Hom, Po Kong and Ngau Chi Wan. It is a contour map at about 1 inch to 1 mile, so it does not draw the walls.
-- **Notes:** 1200x1699 px, 812,400 bytes, SHA-1 bc11e9290c19dced63789e7bcbe39961aa146c94. Uploaded by Lord Jaraxxus, 2018-08-23. Source: eastkowloon.klnfas.hk (a 60th-anniversary article). I viewed the image: a photocopy, cut off on the west side, so most of the Kowloon City area is outside the frame. The red line shows only as a heavy black line. The signatures are illegible to me.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Hong Kong Government, 'Copy of plan of New Kowloon delineated in red dated 8th Dec., 1937 and deposited in the Land Office', photocopy made after 1950, signed by the Governor and the Director of Public Works; Wikimedia Commons, File:新九龍地界圖 New Kowloon Map, 1937.jpg (uploaded by Lord Jaraxxus, 2018-08-23; source given as eastkowloon.klnfas.hk), 1200x1699 px; https://commons.wikimedia.org/wiki/File:%E6%96%B0%E4%B9%9D%E9%BE%8D%E5%9C%B0%E7%95%8C%E5%9C%96_New_Kowloon_Map,_1937.jpg (read 2026-11-20).
+- **Class:** primary (A government plan of 1937, in a certified copy made in 1950 or later. The tree primary is correct.)
+- **Date of the record:** plan dated 8 Dec 1937; this copy made in 1950 or later (it cites the Revised Edition of 1950)
+- **Files:**
+  - `top-commons-3-__New_Kowloon_Map__1937-d2893150.jpg` (in git): The full scan, JPEG 1200x1699 px, 812,400 bytes, SHA-1 bc11e9290c19dced63789e7bcbe39961aa146c94.; https://upload.wikimedia.org/wikipedia/commons/c/c0/%E6%96%B0%E4%B9%9D%E9%BE%8D%E5%9C%B0%E7%95%8C%E5%9C%96_New_Kowloon_Map%2C_1937.jpg; 812400 bytes; SHA-256 `6b9d1a3c45ca59a661185c7ce3a17dc4bba752ea8c0069c52039c7234bd6f5a1`; licence: Public domain (Commons: PD-HK, PD-1996) (https://commons.wikimedia.org/wiki/File:%E6%96%B0%E4%B9%9D%E9%BE%8D%E5%9C%B0%E7%95%8C%E5%9C%96_New_Kowloon_Map,_1937.jpg)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| header, top right | The sheet is a copy of the plan of New Kowloon, dated 8 December 1937. The boundary was drawn in red on the plan, and the plan was deposited in the Land Office. | "COPY OF PLAN OF NEW KOWLOON DELINEATED IN RED dated 8th Dec.,1937 and deposited in the Land Office" |
+| header, top right | INFERRED: The header cites the Interpretation Ordinance, Chapter 1 of the Laws of Hong Kong, Revised Edition 1950. Thus this copy was made in 1950 or later (INFERRED from the citation). | "Ordinance Chapter I of the Laws of Hong Kong Revised Edition, 1950." |
+| bottom right, signatures | INFERRED: The Governor and the Director of Public Works signed the plan. My reading of the signatures is uncertain: the Governor's can be that of Geoffry Northcote (Commons files the image under 'Geoffry Northcote'), and the Director's reads like 'R. M. Henderson' (INFERRED readings). | "GOVERNOR ... DIRECTOR OF PUBLIC WORKS" |
+| left edge, about one third down | INFERRED: The label 'KOWLOON CITY' is on the north shore of Kowloon Bay, at the west edge of the copy. A double dashed line (a road, INFERRED) meets the shore there. | "KOWLOON CITY" |
+| whole sheet | The plan does not draw the walls or the outline of the Walled City. It is a small-scale contour plan of the New Kowloon boundary. | "PLAN OF NEW KOWLOON" |
+| bottom left, scale bar | INFERRED: The scale bar is cut off on the left. Only the end of its label remains, thus the scale is in inches to one mile (INFERRED). | "CHES — I MILE" |
+| left third of the sheet | The villages near the Kowloon City label are Tai Hom, Po Kong, Ngau Chi Wan, Sha Ti Uen and Shek Ku Lung; Kowloon Rock and Channel Rock are in the bay. | "Tai Hom ... Po Kong ... Ngau Chi Wan" |
+| whole sheet | In this photocopy the red boundary line shows only as a heavy black line along the hills. | "DELINEATED IN RED" |
+
+- **Leads:**
+  - The original plan of New Kowloon of 8 Dec 1937, deposited in the Land Office (now the Lands Department), with the boundary in red: not in the repo.
+  - The 60th-anniversary article on eastkowloon.klnfas.hk that is the source of the Commons copy (link in the Commons credit line).
 ### commons-24: KWC map1940s.jpg
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -639,36 +652,37 @@ testimony given later: tag its facts "retrospective (year)".
 | CSDI MapServer landsd_rcd_1637714816051_3690, export bbox E 837150-838150, N 820964-821964 | West of the City, about 400 m from the enclosure, the map marks the lot N.K.I.L. 2651. | "N.K.I.L. 2651" |
 ### top-commons-6: 1949 map of Hong Kong and the New Territories by the British War Office.jpg
 
-- **Creator:** Geographical Section, War Office (UK)
-- **Date:** 1949
-- **Kind:** map
-- **Class:** primary (An official topographic map of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (PD-UKGov)
-- **Link:** https://commons.wikimedia.org/wiki/File:1949_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/e/ea/1949_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg, https://www.raremaps.com/gallery/detail/51991/hong-kong-and-the-new-territories-geographical-section-war-office-uk
-- **Proof that it exists:** ImageDescription: "1949 map of Hong Kong and the New Territories by the British War Office"
-- **What it gives (finder's note, not checked):** The whole colony in 1949, the time of the crisis over the City (1948): Kowloon City and Kai Tak at a small scale.
-- **Notes:** 12100x8592 px, 21,093,212 bytes, SHA-1 fea3b0dfe77bad745279551ab823c4ee3d3e8cab. Uploaded by Balkanique, 2020-04-03, with the 1960 map. Same two Raremaps source links as top-commons-5 (403). Image not viewed.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Geographical Section, General Staff, No. 3961, 'Hong Kong and the New Territories', 1:80,000, North Sheet, Third Edition (Grid Correction) 1946, first published by the War Office 1936, reprinted from HIND 1015 (Mar. 1946 edition) by O.S. 1949; Wikimedia Commons, File:1949 map of Hong Kong and the New Territories by the British War Office.jpg (uploaded by Balkanique, 2020-04-03), 12100x8592 px; https://commons.wikimedia.org/wiki/File:1949_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg (read 2026-11-20).
+- **Class:** primary (A War Office map, printed in 1949 from the 1946 edition. The tree primary is correct.)
+- **Date of the record:** printed 1949 (O.S.); Third Edition (Grid Correction) 1946; first published 1936
+- **Files:**
+  - not downloaded (curl exit 56): The full scan, JPEG 12100x8592 px, 21,093,212 bytes, SHA-1 fea3b0dfe77bad745279551ab823c4ee3d3e8cab.; https://upload.wikimedia.org/wikipedia/commons/e/ea/1949_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg; licence: Public domain (Commons: UK Government artistic works, PD-UKGov) (https://commons.wikimedia.org/wiki/File:1949_map_of_Hong_Kong_and_the_New_Territories_by_the_British_War_Office.jpg)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| top margin | The sheet is GSGS 3961, 'Hong Kong and the New Territories', North Sheet, Third Edition, at 1:80,000. | "Refer to this map as G.S.G.S. 3961 HONG KONG, North Sheet Third Edition" |
+| bottom margin, left | The War Office first published the map in 1936. This is the third edition, with a grid correction of 1946. | "Published by the War Office, 1936. 3rd. Edition (Grid Correction) 1946." |
+| bottom margin, right | The Ordnance Survey reprinted this copy in 1949 from the March 1946 edition, HIND 1015. | "Reprinted from HIND 1015, Mar. 1946 Edition, by O.S. 1949." |
+| bottom margin, left, under the box | INFERRED: A print code under the reference box reads 4,000/5/49. It probably means 4,000 copies printed in May 1949 (INFERRED). | "4,000/5/49." |
+| bottom margin, right | The I.S.T.D. checked the communications and the main topographical details. | "Communications and main Topographical details checked by I.S.T.D." |
+| Kowloon Bay area | The label 'KOWLOON CITY' is beside a small cluster of built-up blocks west of 'Kai Tak Aerodrome'. A building marked 'MESS' is north of the aerodrome. The map does not draw the outline of the Walled City. | "KOWLOON CITY ... Kai Tak Aerodrome" |
 ### top-commons-4: Victoria and Kowloon Map 1954.jpg
 
-- **Creator:** US Army Corps of Engineers (Army Map Service)
-- **Date:** 1954
-- **Kind:** map
-- **Class:** primary (A topographic map made at the time from surveys and air photos.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (PD-USGov)
-- **Link:** https://commons.wikimedia.org/wiki/File:Victoria_and_Kowloon_Map_1954.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/f/f3/Victoria_and_Kowloon_Map_1954.jpg, http://www.lib.utexas.edu/maps/ams/china/
-- **Proof that it exists:** ImageDescription: "Victoria and Kowloon Map 1954."; author US Army Corps of Engineers; category 'Maps with a scale of 1:25,000'.
-- **What it gives (finder's note, not checked):** A street plan of Victoria and Kowloon in 1954, at about 1:25,000. I viewed it: it gives only the label 'Kowloon City 九龍城' near the east end of Prince Edward Road. It draws no outline of the City and no airfield.
-- **Notes:** 5000x4171 px, 12,312,060 bytes, SHA-1 08f91e978856c1b255853ca64d850b0766c75333. Uploaded by ClarkSui, 2015-10-27. The file page gives no series or sheet number. The source is the Perry-Castañeda Library (UT Austin), which gave maps.json an Anubis bot check. Image not viewed: I did not check the outline of the City on it. Second top-up (2026-11-17): I viewed the 1280 px thumbnail. The stamp reads 'G 7810 S250 U54 SHEET NF 50-5 PCL MAP'. Thus the plan is probably a city inset of the AMS sheet NF 50-5 (INFERRED). 'Map of Hong Kong, 1950s.jpg' (Army Map Service, 4100x3300, 2,946,563 bytes, SHA-1 ab730c8a88d2af51b4da905bb61757566706498f, credit University of Texas Libraries) is the same plan without the stamp. Keep one copy only.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** US Army Map Service, Corps of Engineers, 'Victoria and Kowloon and Vicinity', scale 1:25,000 (approx.), city plan on the reverse of AMS sheet NF 50-5 (PCL stamp 'G 7810 S250 U54 SHEET NF 50-5'); Wikimedia Commons, File:Victoria and Kowloon Map 1954.jpg (uploaded by ClarkSui, 2015-10-27; credit lib.utexas.edu/maps/ams/china/), 5000x4171 px; https://commons.wikimedia.org/wiki/File:Victoria_and_Kowloon_Map_1954.jpg (read 2026-11-20).
+- **Class:** primary (A US military city plan of the 1950s. The tree primary is correct.)
+- **Date of the record:** 1954 per the uploader; the parts of the map face that I saw give no date (Commons dates the same plan 'Map of Hong Kong, 1950s.jpg' to the 1950s)
+- **Files:**
+  - `top-commons-4-Victoria_and_Kowloon_Map_1954-242d6d5a.jpg` (in `local/`, not in git): The full scan, JPEG 5000x4171 px, 12,312,060 bytes, SHA-1 08f91e978856c1b255853ca64d850b0766c75333. Keep this copy only (the 1950s file is the same plan). (open licence, but kept in local/ because of its size: the host keeps the open copy); https://upload.wikimedia.org/wikipedia/commons/f/f3/Victoria_and_Kowloon_Map_1954.jpg; 12312060 bytes; SHA-256 `c21e6f0423aaf6d76c986e9f214ad7fce4302e2e995729e32471302d12b1db48`; licence: Public domain (Commons: PD US Government, CC-PD-Mark) (https://commons.wikimedia.org/wiki/File:Victoria_and_Kowloon_Map_1954.jpg)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| title box, left middle | The map is titled 'Victoria and Kowloon and Vicinity', at a scale of about 1:25,000. | "VICTORIA AND KOWLOON AND VICINITY Scale 1:25,000 (APPROX)" |
+| upper right, north end of Kowloon Bay | The label 'Kowloon City 九龍城' is just north-east of the junction of Prince Edward Road (太子道), Argyle Street (亞皆老街) and Tam Kung Road (譚公道). | "Kowloon City 九龍城" |
+| upper right, Kowloon City area | The map draws no outline of the Walled City and no buildings in it. It does not draw or name Kai Tak airfield. | "Kowloon City 九龍城" |
+| upper right, Kowloon City area | INFERRED: A double-lined channel runs south from Clearwater Bay Road (清水灣道), past the east side of the label, into Kowloon Bay. It is probably the Kai Tak nullah (INFERRED: the map does not name it). | "CLEARWATER BAY ROAD 清水灣道" |
 ### maps-16: China, Hong Kong, The Functional Land Use in the Urban Area of Hong Kong, 1968, 1:25 000
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -711,20 +725,28 @@ testimony given later: tag its facts "retrospective (year)".
 | CSDI MapServer landsd_rcd_1637904247958_86034 (layer HIST-HE08-1970), export bbox E 837150-838150, N 820964-821964 | INFERRED: North-east of the City, across Tung Tau Tsuen Road, the map shows rows of large blocks (the Tung Tau resettlement estate, INFERRED from the shapes and the position). North of the City, about 450 m away, the map names the Horse Park. | "HORSE PARK" |
 ### top-maps-10: 中英文 九龍全圖 附地名索引 [Street Map of Kowloon with Streets Index]
 
-- **Creator:** Sun Sun Co. (新新出版社)
-- **Date:** 1974
-- **Kind:** map
-- **Class:** primary (A street map printed in Hong Kong at the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; dealer images
-- **Link:** https://geographicus.com/P/AntiqueMap/kowloon-sunsun-1974
-- **Other links:** https://curtiswrightmaps.com/product/street-map-of-kowloon/
-- **Proof that it exists:** 1974 Sun Sun Co. Plan of Kowloon, Hong Kong
-- **What it gives (finder's note, not checked):** A bilingual 1:14,400 street map of Kowloon with a street index, 1974. The dealer says that the Walled City appears as 'Kowloon City' 九龍城, just northwest of Kai Tak Airport.
-- **Notes:** The Geographicus copy is sold. Its page gives a small image. Curtis Wright Maps lists the same 1974 map (30.5 x 20.75 in): 'Of particular interest is Kowloon City, near the airport.' Hong Kong libraries can hold later editions of such street maps: not checked.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Sun Sun Company (新新公司), 'Sun Sun's With Streets Index Street Map of Kowloon 中英文九龍全圖 附地名索引', 1974 new revised edition (一九七四年新訂版), 1:14,400, 20.75 x 30 in; dealer pages: Geographicus Rare Antique Maps, https://geographicus.com/P/AntiqueMap/kowloon-sunsun-1974 , and Curtis Wright Maps, https://curtiswrightmaps.com/product/street-map-of-kowloon/ (read 2026-11-20).
+- **Class:** primary (A street map published in 1974 (the map face). The dealer descriptions are later and secondary. The tree primary is correct for the map.)
+- **Date of the record:** 1974 (new revised edition)
+- **Files:**
+  - `top-maps-10-map_08-22-21_300dpi_21.11x30.85_inv2952c-ceee9ff7.jpg` (in `local/`, not in git): Dealer image of the map face, JPEG 2250x1539 px, about 1.4 MB.; https://curtiswrightmaps.com/wp-content/uploads/map_08-22-21_300dpi_21.11x30.85_inv2952c.jpg; 1431843 bytes; SHA-256 `4e44666a4b92f2101eb9279911dd27d5e4ccb46316fe3e85078282d929e73c4a`; licence: © Curtis Wright Maps, all rights reserved (page footer); the map itself says 版權所有 (all rights reserved) (https://curtiswrightmaps.com/product/street-map-of-kowloon/)
+  - `top-maps-10-Kowloon-sunsun-1974-e751611b.jpg` (in `local/`, not in git): Dealer image of the map face, JPEG 1000x687 px.; https://www.geographicus.com/mm5/graphics/00000001/L/Kowloon-sunsun-1974.jpg; 604016 bytes; SHA-256 `da698c1f6ae25e6531289c6b10d4a45e62db5bb24ae14b5c9169be29db9d020a`; licence: Geographicus: 'Our scans are unrestricted by copyright and may be used, modified, and published freely' (credit requested); the 1974 map itself says 版權所有. Doubt: not in git. (https://geographicus.com/P/AntiqueMap/kowloon-sunsun-1974)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| top margin | The map is Sun Sun's bilingual street map of Kowloon, with a street index. | "SUN SUN'S With Streets INDEX STREET MAP OF KOWLOON 中英文九龍全圖 附地名索引" |
+| bottom margin, left | The map is the new revised edition of 1974. | "一九七四年新訂版" (1974 new revised edition) |
+| bottom margin, right | The publisher names itself 新新公司 and claims copyright. Geographicus gives the name as 新新出版社; the map face does not. | "新新公司 版權所有 嚴禁翻印" (Sun Sun Company. All rights reserved. Reproduction strictly prohibited.) |
+| bottom margin, centre | The publisher's address was on Hennessy Road (軒尼詩道), Wan Chai. | "香港灣仔軒尼詩道" (Hennessy Road, Wan Chai, Hong Kong) |
+| map face, grid square about J3-J4 | INFERRED: The label 'KOWLOON CITY 九龍城' is between Tung Tau Tsuen Road to the north and Carpenter Road to the south, west of the airport. In the image that I saw, the map draws no outline or lanes of the Walled City itself. | "KOWLOON CITY 九龍城" |
+| map face, grid square about K4 | The airport is labelled 'Hong Kong Airport (Kai Tak)', east of Kowloon City. | "香港啟德機場 HONG KONG AIRPORT (KAI TAK)" |
+| map face, upper right | A note on the map face says that a detail map of Kwun Tong, Sau Mau Ping and other estates is printed on the back. | "DETAIL MAP OF KWUN TONG, SAU MAU PING AND OTHER ESTATES PRINTED ON THE BACK PAGE INSERT MAP" |
+
+- **Leads:**
+  - A library copy of the same map (Geographicus cites OCLC 62071920), with its verso index of streets: not in the repo.
+  - Later editions of Sun Sun's street map of Kowloon, for about 1985-1987: not checked.
 ### maps-10: Aerial Photo Flight Index
 
 - **Creator:** Lands Department (地政總署), Survey and Mapping Office (測繪處)
