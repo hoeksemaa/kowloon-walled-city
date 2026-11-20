@@ -56,7 +56,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court report of the time (1975), with the magistrate's judgment in quotation.)
 - **Date of the record:** 1975-07-03 (judgment 2 Jul 1975)
 - **Files:**
-  - `gap-builders-demolition-park-3-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19750703/page/n5.jpg; 5756223 bytes; SHA-256 `34c3c948c61695445f45df0d38a6860682c696215f6523122fe3cf1c9aa77c11`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19750703)
+  - `gap-builders-demolition-park-3-n5.jpg` (in `local/`, not in git): Page image of 工商晚報 3 Jul 1975, p.6 (leaf 5), with the closure-order judgment; https://archive.org/download/NPKSE19750703/page/n5.jpg; 5756223 bytes; SHA-256 `34c3c948c61695445f45df0d38a6860682c696215f6523122fe3cf1c9aa77c11`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19750703)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -78,7 +78,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1975), with the words of the developer and of a PWD spokesman.)
 - **Date of the record:** 1975-08-01
 - **Files:**
-  - `gap-builders-demolition-park-4-n1.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19750801/page/n1.jpg; 5193242 bytes; SHA-256 `2bb493a9ed17a352ecd2f390ea048a2d12588ad6a85ad6e5e84172e10a070af2`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19750801)
+  - `gap-builders-demolition-park-4-n1.jpg` (in `local/`, not in git): Page image of 工商晚報 1 Aug 1975, p.2 (leaf 1), with the builders' complaint; https://archive.org/download/NPKSE19750801/page/n1.jpg; 5193242 bytes; SHA-256 `2bb493a9ed17a352ecd2f390ea048a2d12588ad6a85ad6e5e84172e10a070af2`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19750801)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -117,7 +117,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (The item is a search list of newspaper issues; the issues are records made at the time (1958-1991) and belong in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1958-12-06 to 1991-04-16 (the issues); the query was run on 2026-11-18
 - **Files:**
-  - `gap-street-address-search-9-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19631230/page/n6.jpg; 5685384 bytes; SHA-256 `987e454ccced3aa76027b716d75bf3455e74e150b3dd7466016862883d2fbe8a`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19631230)
+  - `gap-street-address-search-9-n6.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 30 Dec 1963, leaf n6, with the report of the Lung Chun Road fire; https://archive.org/download/NPWK19631230/page/n6.jpg; 5685384 bytes; SHA-256 `987e454ccced3aa76027b716d75bf3455e74e150b3dd7466016862883d2fbe8a`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19631230)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -168,7 +168,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1960), with no named writer. 大公報 was the main pro-Beijing paper in Hong Kong, thus its view of the police and the health authority is not neutral. It is before the peak period (1985-1993): use it as background on government toilets and on the two-storey houses of 1960.)
 - **Date of the record:** 1960-07-13 (events of 4 to 12 July 1960)
 - **Files:**
-  - `china-8-index.php` (in `local/`, not in git): https://zh.wikisource.org/w/index.php?curid=157670&action=raw; 1900 bytes; SHA-256 `0f7c3d6e7aea8f3b84f6f3f1638ce7cc94884ade81d1de321b6540ad1a734033`; licence: The page carries {{PD-hk}} (public domain in Hong Kong, Copyright Ordinance Cap. 528 s.17, anonymous work published more than 50 years ago) and {{Not-PD-US-anon/1960}} (not public domain in the US). Wikisource text otherwise CC BY-SA 4.0. In git: no, because the page itself says that the text is not in the public domain in the US (a doubt for a repo on GitHub). (https://zh.wikisource.org/w/index.php?curid=157670)
+  - `china-8-index.php` (in `local/`, not in git): Wikitext of the Wikisource transcription (about 2 KB, text only, no scan); https://zh.wikisource.org/w/index.php?curid=157670&action=raw; 1900 bytes; SHA-256 `0f7c3d6e7aea8f3b84f6f3f1638ce7cc94884ade81d1de321b6540ad1a734033`; licence: The page carries {{PD-hk}} (public domain in Hong Kong, Copyright Ordinance Cap. 528 s.17, anonymous work published more than 50 years ago) and {{Not-PD-US-anon/1960}} (not public domain in the US). Wikisource text otherwise CC BY-SA 4.0. In git: no, because the page itself says that the text is not in the public domain in the US (a doubt for a repo on GitHub). (https://zh.wikisource.org/w/index.php?curid=157670)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -207,7 +207,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court and police report of 1961, made three days after the raid. It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1961-12-14
 - **Files:**
-  - `gap-street-address-search-2-n11.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19611214/page/n11.jpg; 6336296 bytes; SHA-256 `9ebc787b15c778678c2d62a52be2a7399643a7fb6adb7511ce28ab83023b31b3`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19611214)
+  - `gap-street-address-search-2-n11.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n11) with the article; https://archive.org/download/NPWK19611214/page/n11.jpg; 6336296 bytes; SHA-256 `9ebc787b15c778678c2d62a52be2a7399643a7fb6adb7511ce28ab83023b31b3`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19611214)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -233,7 +233,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper feature made at the time (1962). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1962-11-30
 - **Files:**
-  - `press-archives-15-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19621130/page/n4.jpg; 5088587 bytes; SHA-256 `71df5e3972e5db28d5795e826efa0967196437dd96897b46b4ba90b86f1e0738`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19621130)
+  - `press-archives-15-n4.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 30 Nov 1962, leaf n4, with the feature; https://archive.org/download/NPWK19621130/page/n4.jpg; 5088587 bytes; SHA-256 `71df5e3972e5db28d5795e826efa0967196437dd96897b46b4ba90b86f1e0738`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19621130)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -261,7 +261,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A wire report made at the time (1963). It belongs in primary-sources/. The words of the Chinese note that the report quotes are kind primary. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1963-01-18
 - **Files:**
-  - `press-archives-16-n0.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19630118/page/n0.jpg; 4721820 bytes; SHA-256 `df57343b5509092ff785cec0e19ca73517df62a1e8ea1325529611deb0ba0174`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630118)
+  - `press-archives-16-n0.jpg` (in `local/`, not in git): Front-page image of Wah Kiu Yat Po 18 Jan 1963, leaf n0, with the report; https://archive.org/download/NPWK19630118/page/n0.jpg; 4721820 bytes; SHA-256 `df57343b5509092ff785cec0e19ca73517df62a1e8ea1325529611deb0ba0174`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630118)
 - **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
 | Page | Fact | Words in the source |
@@ -284,7 +284,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A wire report made at the time (1963). It belongs in primary-sources/. The words of Xinhua that the report quotes are kind primary. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1963-01-18
 - **Files:**
-  - `press-archives-17-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19630118/page/n3.jpg; 6656027 bytes; SHA-256 `9a936f73820b1c46d35b519493155bcd1245a2dcad49e735b3fac93cf1c066d4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19630118)
+  - `press-archives-17-n3.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 18 Jan 1963, leaf n3 (第四頁), with the report; https://archive.org/download/NPKS19630118/page/n3.jpg; 6656027 bytes; SHA-256 `9a936f73820b1c46d35b519493155bcd1245a2dcad49e735b3fac93cf1c066d4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19630118)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -305,7 +305,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court report of the time (1967). The testimony of the police, the chemist and the defendant is reported speech. Before the peak period.)
 - **Date of the record:** 1967-10-19 (trial ended 18 Oct 1967; search on 29 Aug 1967)
 - **Files:**
-  - `commons-2-Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_w.jpg` (in `local/`, not in git): https://upload.wikimedia.org/wikipedia/commons/a/a2/Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_wk1967-10-19_p4.jpg; 776305 bytes; SHA-256 `810f1f56c4f9986aca5923cbc071371806c4b5feb2d8daa1ddfec9f43f4339b4`; licence: The Commons page carries PD-HK ('This work is in the public domain in Hong Kong because, according to Section 17 in Chapter 528') and Not-PD-US-URAA ('This work may not be in the public domain in the United States because its U.S. copyright was restored by the URAA'). In git: no, because of the US doubt that the page itself states. (https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_wk1967-10-19_p4.jpg)
+  - `commons-2-Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_w.jpg` (in `local/`, not in git): Scan of the clipping, Wah Kiu Yat Po 19 Oct 1967 p.4, 1116x1158 px, 776,305 bytes; https://upload.wikimedia.org/wikipedia/commons/a/a2/Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_wk1967-10-19_p4.jpg; 776305 bytes; SHA-256 `810f1f56c4f9986aca5923cbc071371806c4b5feb2d8daa1ddfec9f43f4339b4`; licence: The Commons page carries PD-HK ('This work is in the public domain in Hong Kong because, according to Section 17 in Chapter 528') and Not-PD-US-URAA ('This work may not be in the public domain in the United States because its U.S. copyright was restored by the URAA'). In git: no, because of the US doubt that the page itself states. (https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_discovered_terrorist_bombs_workshop_in_1967_Hong_Kong_riot_wk1967-10-19_p4.jpg)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -331,8 +331,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the time (1972-1973). The 1972 report rests on unnamed 'well-informed' sources. Before the peak period.)
 - **Date of the record:** 1972-12-28; 1973-01-15
 - **Files:**
-  - `gap-builders-demolition-park-1-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19721228/page/n6.jpg; 5623566 bytes; SHA-256 `788fb7097f289f3d0e51c2f15ee5983eb2a8cfbb007981fbb9204817eb1eb96e`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19721228)
-  - `gap-builders-demolition-park-1-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19730115/page/n8.jpg; 5378802 bytes; SHA-256 `261940605f09ce8e2337afd32ee04637740391b259e66b9fa8c88ab846c6cce9`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19730115)
+  - `gap-builders-demolition-park-1-n6.jpg` (in `local/`, not in git): Page image of 工商晚報 28 Dec 1972, leaf 6, with the article on building control in the City; https://archive.org/download/NPKSE19721228/page/n6.jpg; 5623566 bytes; SHA-256 `788fb7097f289f3d0e51c2f15ee5983eb2a8cfbb007981fbb9204817eb1eb96e`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19721228)
+  - `gap-builders-demolition-park-1-n8.jpg` (in `local/`, not in git): Page image of 華僑日報 15 Jan 1973, leaf 8 (第三張第一頁), with the Tai Chang Street explosion report; https://archive.org/download/NPWK19730115/page/n8.jpg; 5378802 bytes; SHA-256 `261940605f09ce8e2337afd32ee04637740391b259e66b9fa8c88ab846c6cce9`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19730115)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -357,7 +357,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1973), with a statement of a government spokesman. Before the peak period.)
 - **Date of the record:** 1973-01-26
 - **Files:**
-  - `gap-builders-demolition-park-2-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19730126/page/n6.jpg; 5299826 bytes; SHA-256 `675b8fe3e11815c5571eb6e7b1ecc3ceb002fa936aec48e23b5b04efca985019`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19730126)
+  - `gap-builders-demolition-park-2-n6.jpg` (in `local/`, not in git): Page image of 工商晚報 26 Jan 1973, leaf 6, with the demolition report; https://archive.org/download/NPKSE19730126/page/n6.jpg; 5299826 bytes; SHA-256 `675b8fe3e11815c5571eb6e7b1ecc3ceb002fa936aec48e23b5b04efca985019`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKSE19730126)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -377,7 +377,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1974). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1974-11-08
 - **Files:**
-  - `gap-crime-drugs-records-12-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19741108/page/n3.jpg; 4858617 bytes; SHA-256 `877f7a7f7888fdf59fb1e2cbb1a5a424bd23b4c749f650429bb0df45715c36d4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19741108)
+  - `gap-crime-drugs-records-12-n3.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n3) with the article and the photo; https://archive.org/download/NPWK19741108/page/n3.jpg; 4858617 bytes; SHA-256 `877f7a7f7888fdf59fb1e2cbb1a5a424bd23b4c749f650429bb0df45715c36d4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19741108)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -409,8 +409,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Court reports of the time (March 1975). They belong in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-03-04 and 1975-03-06
 - **Files:**
-  - `gap-crime-drugs-records-9-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750304/page/n4.jpg; 5886346 bytes; SHA-256 `93959632379fc6a1b8e829fe77fe426f48e4d3fd013243ddb719a193754adef3`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750304)
-  - `gap-crime-drugs-records-9-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750306/page/n3.jpg; 5464289 bytes; SHA-256 `046f434368372786ea24dc44335330864da2f736f25f8d48d58b65009c89068f`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750306)
+  - `gap-crime-drugs-records-9-n4.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 4 Mar 1975, 第二張第一頁 (leaf n4), with the High Court report; https://archive.org/download/NPWK19750304/page/n4.jpg; 5886346 bytes; SHA-256 `93959632379fc6a1b8e829fe77fe426f48e4d3fd013243ddb719a193754adef3`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750304)
+  - `gap-crime-drugs-records-9-n3.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 6 Mar 1975, 第二張第一頁 (leaf n3), with the report of the site visit; https://archive.org/download/NPWK19750306/page/n3.jpg; 5464289 bytes; SHA-256 `046f434368372786ea24dc44335330864da2f736f25f8d48d58b65009c89068f`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750306)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -437,12 +437,12 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News and court reports of the time (1975), with statements of a government spokesman, counsel, a magistrate and a builder.)
 - **Date of the record:** 1975-06-09 to 1975-12-24
 - **Files:**
-  - `gap-builders-demolition-park-5-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19750609/page/n7.jpg; 4500145 bytes; SHA-256 `1daa3b4dc8a73ba3060f2171e714a48f2d4bb36ba96984a72412dee7fe1eeb47`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19750609)
-  - `gap-builders-demolition-park-5-n9.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750609/page/n9.jpg; 5966067 bytes; SHA-256 `ab8b7e58049fd8e83a9b801a59dad83a8daa614eda62bae10bb2c027f08c1740`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750609)
-  - `gap-builders-demolition-park-5-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750612/page/n3.jpg; 4809513 bytes; SHA-256 `420cfe341af0ae79b89c532a09cbb3f6dad731c59381ef133bec906bf4f18d20`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750612)
-  - `gap-builders-demolition-park-5-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750617/page/n3.jpg; 4983850 bytes; SHA-256 `4c15fcdc4ec0aed220dc3c64608776c87dcf6d77fad7b294f69765a0d052ce25`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750617)
-  - `gap-builders-demolition-park-5-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19750701/page/n7.jpg; 4734623 bytes; SHA-256 `9b1e4e781db9eb6a61dbf0e43d974f2161dc6b0fe45614fb3c415f5f717377de`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19750701)
-  - `gap-builders-demolition-park-5-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19751224/page/n4.jpg; 3958158 bytes; SHA-256 `94c606fd70c0e662906e8ad03d352a9d8f91ea470fe43b859cf004282ac942e4`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19751224)
+  - `gap-builders-demolition-park-5-n7-0e896e82.jpg` (in `local/`, not in git): Page image of 香港工商日報 9 Jun 1975, p.8 (leaf 7), with the closure-notice report and a photo of No. 24 Tung Tau Tsuen Road; https://archive.org/download/NPKS19750609/page/n7.jpg; 4500145 bytes; SHA-256 `1daa3b4dc8a73ba3060f2171e714a48f2d4bb36ba96984a72412dee7fe1eeb47`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19750609)
+  - `gap-builders-demolition-park-5-n9.jpg` (in `local/`, not in git): Page image of 華僑日報 9 Jun 1975, 第三張第二頁 (leaf 9), with the same report and a photo of No. 40 Sai Shing Road; https://archive.org/download/NPWK19750609/page/n9.jpg; 5966067 bytes; SHA-256 `ab8b7e58049fd8e83a9b801a59dad83a8daa614eda62bae10bb2c027f08c1740`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750609)
+  - `gap-builders-demolition-park-5-n3-fb3c7855.jpg` (in `local/`, not in git): Page image of 華僑日報 12 Jun 1975, leaf 3, with the report on the building companies; https://archive.org/download/NPWK19750612/page/n3.jpg; 4809513 bytes; SHA-256 `420cfe341af0ae79b89c532a09cbb3f6dad731c59381ef133bec906bf4f18d20`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750612)
+  - `gap-builders-demolition-park-5-n3-2e1572fa.jpg` (in `local/`, not in git): Page image of 華僑日報 17 Jun 1975, 第一張第四頁 (leaf 3), with the first hearing and the heights; https://archive.org/download/NPWK19750617/page/n3.jpg; 4983850 bytes; SHA-256 `4c15fcdc4ec0aed220dc3c64608776c87dcf6d77fad7b294f69765a0d052ce25`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750617)
+  - `gap-builders-demolition-park-5-n7-9a1d46f8.jpg` (in `local/`, not in git): Page image of 香港工商日報 1 Jul 1975, p.8 (leaf 7), with the hearing of 30 June; https://archive.org/download/NPKS19750701/page/n7.jpg; 4734623 bytes; SHA-256 `9b1e4e781db9eb6a61dbf0e43d974f2161dc6b0fe45614fb3c415f5f717377de`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19750701)
+  - `gap-builders-demolition-park-5-n4.jpg` (in `local/`, not in git): Page image of 華僑日報 24 Dec 1975, 第二張第一頁 (leaf 4), with the third closure order; https://archive.org/download/NPWK19751224/page/n4.jpg; 3958158 bytes; SHA-256 `94c606fd70c0e662906e8ad03d352a9d8f91ea470fe43b859cf004282ac942e4`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19751224)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -520,7 +520,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made on the day of the fire (1983). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1983-03-25
 - **Files:**
-  - `top-services-14-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19830325/page/n7.jpg; 5179073 bytes; SHA-256 `72147d256b63221b2305d271afb03a26b652bfad848c1a76a338f76391907d3c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19830325)
+  - `top-services-14-n7.jpg` (in `local/`, not in git): Page image of Kung Sheung Evening News 25 Mar 1983, leaf n7, with the report, photo and inset portrait; https://archive.org/download/NPKSE19830325/page/n7.jpg; 5179073 bytes; SHA-256 `72147d256b63221b2305d271afb03a26b652bfad848c1a76a338f76391907d3c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19830325)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -550,7 +550,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (January 1977). It summarises a newsletter of the Hong Kong Federation of Youth Groups (青年協會). It belongs in primary-sources/. The date is 1977, not 1983. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1977-01-25
 - **Files:**
-  - `gap-crime-drugs-records-4-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19770125/page/n8.jpg; 4585447 bytes; SHA-256 `e4ff2cd8b90be25993865aa4fa80305735ead87f17bbf9a0792cdca8d6a4beab`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770125)
+  - `gap-crime-drugs-records-4-n8.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 25 Jan 1977, 第三張第一頁 (leaf n8), with the article; https://archive.org/download/NPWK19770125/page/n8.jpg; 4585447 bytes; SHA-256 `e4ff2cd8b90be25993865aa4fa80305735ead87f17bbf9a0792cdca8d6a4beab`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770125)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -607,8 +607,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Newspaper reports made at the time of the 1947 eviction dispute. They belong in primary-sources/. The words that the reports quote from Sir Ralph Stevenson are kind primary. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1947-12-12; 1947-12-25
 - **Files:**
-  - `top-press-en-13-n1.jpg` (in `local/`, not in git): https://archive.org/download/hbhyb-1947.12.25/page/n1.jpg; 4164429 bytes; SHA-256 `0e72c03eb275271350b7751a146f97cd74046553a77e5091d7afe5d806167719`; licence: No licence statement on the archive.org item (https://archive.org/details/hbhyb-1947.12.25)
-  - `top-press-en-13-n0.jpg` (in `local/`, not in git): https://archive.org/download/hbhyb-1947.12.12/page/n0.jpg; 4490741 bytes; SHA-256 `c2ec4d3ebc623ccd90a7cb20952b7ad01025247a4606b230d79c80c898ddd72e`; licence: No licence statement on the archive.org item (https://archive.org/details/hbhyb-1947.12.12)
+  - `top-press-en-13-n1.jpg` (in `local/`, not in git): Image of pages 2-3 of the 25 Dec 1947 issue (leaf n1) with the walled city article; https://archive.org/download/hbhyb-1947.12.25/page/n1.jpg; 4164429 bytes; SHA-256 `0e72c03eb275271350b7751a146f97cd74046553a77e5091d7afe5d806167719`; licence: No licence statement on the archive.org item (https://archive.org/details/hbhyb-1947.12.25)
+  - `top-press-en-13-n0.jpg` (in `local/`, not in git): Image of pages 4 and 1 of the 12 Dec 1947 issue (leaf n0) with the two Reuters items; https://archive.org/download/hbhyb-1947.12.12/page/n0.jpg; 4490741 bytes; SHA-256 `c2ec4d3ebc623ccd90a7cb20952b7ad01025247a4606b230d79c80c898ddd72e`; licence: No licence statement on the archive.org item (https://archive.org/details/hbhyb-1947.12.12)
 - **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
 | Page | Fact | Words in the source |
@@ -639,7 +639,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A wire report made on the day of the fire (1950). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1950-01-11
 - **Files:**
-  - `top-press-en-8-n0.jpg` (in `local/`, not in git): https://archive.org/download/victoriadailytimes1950-01-11/page/n0.jpg; 2849008 bytes; SHA-256 `e073fdc83ce7db6e1ef92e57f8f8063f3a21a8eefef45574953d92fa28344134`; licence: No licence statement on the archive.org item; Reuters copyright; scan by University of Victoria Libraries (https://archive.org/details/victoriadailytimes1950-01-11)
+  - `top-press-en-8-n0.jpg` (in `local/`, not in git): Front-page image of the Victoria Daily Times of 11 Jan 1950 with the Reuters item (leaf n0; the text begins the issue's full text); https://archive.org/download/victoriadailytimes1950-01-11/page/n0.jpg; 2849008 bytes; SHA-256 `e073fdc83ce7db6e1ef92e57f8f8063f3a21a8eefef45574953d92fa28344134`; licence: No licence statement on the archive.org item; Reuters copyright; scan by University of Victoria Libraries (https://archive.org/details/victoriadailytimes1950-01-11)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -663,9 +663,9 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Court reports made at the time of the hearings (February and May 1959) on a killing of November 1958. They belong in primary-sources/. Words that the reports quote in direct speech are kind primary. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1959-02-17; 1959-02-19; 1959-05-15
 - **Files:**
-  - `gap-street-address-search-8-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19590217/page/n5.jpg; 5177620 bytes; SHA-256 `790b5dfc7b4fd395e1765560b0133649c6f424c9b7f76047c492a0fa0dc8b192`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19590217)
-  - `gap-street-address-search-8-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19590515/page/n5.jpg; 5425815 bytes; SHA-256 `ac8d98f116ae7592971f4ce1fbc2e04f2ef8c90341a99bb6d3a91f15f27ac381`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19590515)
-  - `gap-street-address-search-8-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19590219/page/n5.jpg; 5203789 bytes; SHA-256 `c5cae67329700d42e330bf54336fad10c79d7bafae0d626c42ca53d14cbc83bf`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19590219)
+  - `gap-street-address-search-8-n5-80d4efb8.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 17 Feb 1959, leaf n5, with the court report; https://archive.org/download/NPWK19590217/page/n5.jpg; 5177620 bytes; SHA-256 `790b5dfc7b4fd395e1765560b0133649c6f424c9b7f76047c492a0fa0dc8b192`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19590217)
+  - `gap-street-address-search-8-n5-d911e43a.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 15 May 1959, leaf n5, with the court report; https://archive.org/download/NPWK19590515/page/n5.jpg; 5425815 bytes; SHA-256 `ac8d98f116ae7592971f4ce1fbc2e04f2ef8c90341a99bb6d3a91f15f27ac381`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19590515)
+  - `gap-street-address-search-8-n5-ad2f2d04.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 19 Feb 1959, leaf n5, with the committal report; https://archive.org/download/NPKS19590219/page/n5.jpg; 5203789 bytes; SHA-256 `c5cae67329700d42e330bf54336fad10c79d7bafae0d626c42ca53d14cbc83bf`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19590219)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -707,7 +707,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the fire (1959). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1959-11-06
 - **Files:**
-  - `gap-street-address-search-7-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19591106/page/n5.jpg; 5584470 bytes; SHA-256 `f5e4fb0a073dd307f72a712a08988351ac8bf7acef79cabba87dbba63e9423b4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19591106)
+  - `gap-street-address-search-7-n5.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n5) with the article; https://archive.org/download/NPWK19591106/page/n5.jpg; 5584470 bytes; SHA-256 `f5e4fb0a073dd307f72a712a08988351ac8bf7acef79cabba87dbba63e9423b4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19591106)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -746,8 +746,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the time (May 1963), with the principal's own written statement (his words are kind primary). They belong in primary-sources/. Earlier history: before the peak. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1963-05-27 and 1963-05-30
 - **Files:**
-  - `gap-campus-socialwork-press-11-n11.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19630527/page/n11.jpg; 5655030 bytes; SHA-256 `75b76eb9529698d29a37f1e5cc487c9913b22d41e25f3477500356b25cbce71a`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630527)
-  - `gap-campus-socialwork-press-11-n12.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19630530/page/n12.jpg; 6429780 bytes; SHA-256 `54d8cc927c3ae87c7a50e351ac511ee56355a380a150b6f6d3f66d3e86cf01e0`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630530)
+  - `gap-campus-socialwork-press-11-n11.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 27 May 1963, 本港新聞 page (leaf n11), with the first report; https://archive.org/download/NPWK19630527/page/n11.jpg; 5655030 bytes; SHA-256 `75b76eb9529698d29a37f1e5cc487c9913b22d41e25f3477500356b25cbce71a`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630527)
+  - `gap-campus-socialwork-press-11-n12.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 30 May 1963 (leaf n12), with the principal's statement and two photos of the wrecked school; https://archive.org/download/NPWK19630530/page/n12.jpg; 6429780 bytes; SHA-256 `54d8cc927c3ae87c7a50e351ac511ee56355a380a150b6f6d3f66d3e86cf01e0`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19630530)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -781,7 +781,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of 1963, made the day after the fire. It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1963-12-19
 - **Files:**
-  - `gap-street-address-search-6-n9.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19631219/page/n9.jpg; 6181262 bytes; SHA-256 `5ad7fdf49c0b47808c74b05d01a4e9e3c59307ec0135bdd062ef1bc0b2598937`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19631219)
+  - `gap-street-address-search-6-n9.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n9) with the article; https://archive.org/download/NPWK19631219/page/n9.jpg; 6181262 bytes; SHA-256 `5ad7fdf49c0b47808c74b05d01a4e9e3c59307ec0135bdd062ef1bc0b2598937`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19631219)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -807,8 +807,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the time (May to August 1967, the riots of 1967). They belong in primary-sources/. Earlier history: before the peak. The reports do not show if 新華學校 is the same school as 城寨坊眾學校 of the retrospective testimony. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1967-05-26 to 1967-08-10
 - **Files:**
-  - `gap-campus-socialwork-press-10-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19670526/page/n3.jpg; 4492051 bytes; SHA-256 `aef8cdd08a1549fdff8d4df03f3d0c4b85c988a1e385df6c3fade2b44c502f1d`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19670526)
-  - `gap-campus-socialwork-press-10-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19670810/page/n6.jpg; 6483897 bytes; SHA-256 `dede38943a4d5f8769d84a2080384254fe892d23e97a4b85d96d40731827a208`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670810)
+  - `gap-campus-socialwork-press-10-n3.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 26 May 1967 (leaf n3), with the court report and a photo; https://archive.org/download/NPKS19670526/page/n3.jpg; 4492051 bytes; SHA-256 `aef8cdd08a1549fdff8d4df03f3d0c4b85c988a1e385df6c3fade2b44c502f1d`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19670526)
+  - `gap-campus-socialwork-press-10-n6.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 10 Aug 1967, 本港新聞 page 3 (leaf n6), with the bomb report and the City search; https://archive.org/download/NPWK19670810/page/n6.jpg; 6483897 bytes; SHA-256 `dede38943a4d5f8769d84a2080384254fe892d23e97a4b85d96d40731827a208`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670810)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -839,7 +839,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court report of 1967, made the day after the hearing. It belongs in primary-sources/. The evidence of the police witnesses and the defence of the accused are reported speech of the witnesses (primary). Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1967-05-30
 - **Files:**
-  - `gap-named-persons-records-2-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19670530/page/n3.jpg; 4964906 bytes; SHA-256 `569c0ad699a711d8c0a5eeb83838ac5e8979c7682de00ec5208450ddfcd250b4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670530)
+  - `gap-named-persons-records-2-n3.jpg` (in `local/`, not in git): Page image of leaf n3 with the article (left edge burnt in the scan); https://archive.org/download/NPWK19670530/page/n3.jpg; 4964906 bytes; SHA-256 `569c0ad699a711d8c0a5eeb83838ac5e8979c7682de00ec5208450ddfcd250b4`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670530)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -876,10 +876,10 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Court reports of 1967, each made a day after the hearing. They belong in primary-sources/. The evidence of the police witness, of the wife and of 羅開祥 is reported speech (primary). 大公報 was a pro-Beijing paper and puts the government's words in quotation marks. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1967-09-22
 - **Files:**
-  - `gap-named-persons-records-3-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19670922/page/n5.jpg; 7134280 bytes; SHA-256 `2812ff3fe60bb17c2926def3b7d519800d5889bc1a223f85c4894f044279dd46`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670922)
-  - `gap-named-persons-records-3-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19670606/page/n3.jpg; 5143468 bytes; SHA-256 `e7088ff739f77ba26f5c1d1a43049b9cbcb5220aeebadddbb58d8b5a7956d8d5`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670606)
-  - `gap-named-persons-records-3-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19670812/page/n3.jpg; 5702715 bytes; SHA-256 `724d4a0ac6236d511b5ba3abf3f848dde4289f1c75e7cd5081f62f79433e24d7`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670812)
-  - `gap-named-persons-records-3-n2.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19670826/page/n2.jpg; 4429817 bytes; SHA-256 `b592d0249071e040cf3d2915b4b4bff616db6ccac170cf6a3f1b615b532a67a1`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19670826)
+  - `gap-named-persons-records-3-n5.jpg` (in `local/`, not in git): Page image of 第二張 第二頁 (leaf n5), 22 Sep 1967, with the article; https://archive.org/download/NPWK19670922/page/n5.jpg; 7134280 bytes; SHA-256 `2812ff3fe60bb17c2926def3b7d519800d5889bc1a223f85c4894f044279dd46`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670922)
+  - `gap-named-persons-records-3-n3-37eb4fcd.jpg` (in `local/`, not in git): Page image of leaf n3, 6 Jun 1967, with the review article; https://archive.org/download/NPWK19670606/page/n3.jpg; 5143468 bytes; SHA-256 `e7088ff739f77ba26f5c1d1a43049b9cbcb5220aeebadddbb58d8b5a7956d8d5`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670606)
+  - `gap-named-persons-records-3-n3-773c8756.jpg` (in `local/`, not in git): Page image of leaf n3, 12 Aug 1967, with the riot-charge article; https://archive.org/download/NPWK19670812/page/n3.jpg; 5702715 bytes; SHA-256 `724d4a0ac6236d511b5ba3abf3f848dde4289f1c75e7cd5081f62f79433e24d7`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19670812)
+  - `gap-named-persons-records-3-n2.jpg` (in `local/`, not in git): Page image of 大公報 leaf n2, 26 Aug 1967, with the article on the transfer to the District Court; https://archive.org/download/NPTKP19670826/page/n2.jpg; 4429817 bytes; SHA-256 `b592d0249071e040cf3d2915b4b4bff616db6ccac170cf6a3f1b615b532a67a1`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19670826)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -915,7 +915,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of 1968 that quotes a statement of the residents' meeting. It belongs in primary-sources/. The statement is the residents' own words (primary); Ta Kung Pao (大公報) was a pro-Beijing paper, thus the statement and the narration are partisan. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1968-01-19
 - **Files:**
-  - `gap-named-persons-records-4-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19680119/page/n4.jpg; 3451023 bytes; SHA-256 `9583f2705f274bb13ae38507004f39dea022437f06e975527980bf5ac12c48bd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19680119)
+  - `gap-named-persons-records-4-n4.jpg` (in `local/`, not in git): Page image of 第五版 (leaf n4) with the article; https://archive.org/download/NPTKP19680119/page/n4.jpg; 3451023 bytes; SHA-256 `9583f2705f274bb13ae38507004f39dea022437f06e975527980bf5ac12c48bd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19680119)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -947,7 +947,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court report of 1968, two days after the hearing. It belongs in primary-sources/. The plea of the first accused, given as indirect speech, is his own words (primary). Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1968-04-06
 - **Files:**
-  - `gap-street-address-search-4-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19680406/page/n3.jpg; 4030741 bytes; SHA-256 `49f577e39888679d46842513f4d8e37b8e99117d358137eb9f80366625204ccd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19680406)
+  - `gap-street-address-search-4-n3.jpg` (in `local/`, not in git): Page image of 第一張 第四頁 (leaf n3) with the article; https://archive.org/download/NPWK19680406/page/n3.jpg; 4030741 bytes; SHA-256 `49f577e39888679d46842513f4d8e37b8e99117d358137eb9f80366625204ccd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19680406)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -971,7 +971,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A short news report of 1969, the day after the event. It belongs in primary-sources/. Ta Kung Pao (大公報) was a pro-Beijing paper: the words 'glorious return' and 'fascist persecution' are its own. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1969-09-22
 - **Files:**
-  - `gap-named-persons-records-5-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19690922/page/n3.jpg; 3978553 bytes; SHA-256 `db632c52e75932fca28474123f8509cf86bc442508ea63d09f3521d12733bf17`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19690922)
+  - `gap-named-persons-records-5-n3.jpg` (in `local/`, not in git): Page image of 第一張 第四版 (leaf n3) with the item; https://archive.org/download/NPTKP19690922/page/n3.jpg; 3978553 bytes; SHA-256 `db632c52e75932fca28474123f8509cf86bc442508ea63d09f3521d12733bf17`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19690922)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -990,7 +990,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A court and police report of 1970, two days after the raid. It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1970-08-13
 - **Files:**
-  - `gap-street-address-search-3-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19700813/page/n6.jpg; 5281594 bytes; SHA-256 `0c32d3e0227a03766c8f9a7872082e6222986c17bad2c4bae9050f92033a2a65`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19700813)
+  - `gap-street-address-search-3-n6.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n6) with the article; https://archive.org/download/NPWK19700813/page/n6.jpg; 5281594 bytes; SHA-256 `0c32d3e0227a03766c8f9a7872082e6222986c17bad2c4bae9050f92033a2a65`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19700813)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1013,8 +1013,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Two news reports made at the time (1973): a raid reported the next day, and a court case reported on the day of judgment. They belong in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1973-01-24 (Kung Sheung); 1973-04-20 (Wah Kiu)
 - **Files:**
-  - `gap-crime-drugs-records-14-n10.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19730124/page/n10.jpg; 5139247 bytes; SHA-256 `236e21580f55523696603a1effd9bd4b2b7e9b6459e8f4bb0c0bc175a71f281f`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19730124)
-  - `gap-crime-drugs-records-14-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19730420/page/n8.jpg; 5604875 bytes; SHA-256 `8b9ee423a978d712f7ae49aadf43d02dca5a33ab5b233568c3688bbd57b543dd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19730420)
+  - `gap-crime-drugs-records-14-n10.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 24 Jan 1973, leaf n10, with the raid report; https://archive.org/download/NPKS19730124/page/n10.jpg; 5139247 bytes; SHA-256 `236e21580f55523696603a1effd9bd4b2b7e9b6459e8f4bb0c0bc175a71f281f`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKS19730124)
+  - `gap-crime-drugs-records-14-n8.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 20 Apr 1973, leaf n8, with the court report; https://archive.org/download/NPWK19730420/page/n8.jpg; 5604875 bytes; SHA-256 `8b9ee423a978d712f7ae49aadf43d02dca5a33ab5b233568c3688bbd57b543dd`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19730420)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1050,7 +1050,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1973). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1973-05-20
 - **Files:**
-  - `gap-crime-drugs-records-13-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19730520/page/n8.jpg; 6237506 bytes; SHA-256 `1ee7d01958ffc97a11b745e907cd502a239a611bed19a5865f36ba552a50af0b`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19730520)
+  - `gap-crime-drugs-records-13-n8.jpg` (in `local/`, not in git): Page image of 第三張第一頁 (本港新聞), leaf n8, with the article; https://archive.org/download/NPWK19730520/page/n8.jpg; 6237506 bytes; SHA-256 `1ee7d01958ffc97a11b745e907cd502a239a611bed19a5865f36ba552a50af0b`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19730520)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1076,8 +1076,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A report of the time (1973), probably written for the Community Chest (公益金) appeal: both papers print the same text. Before the peak period.)
 - **Date of the record:** 1973-12-21 (visit on 20 Dec 1973)
 - **Files:**
-  - `gap-campus-socialwork-press-6-n14.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19731221/page/n14.jpg; 5212933 bytes; SHA-256 `c84fb5139eb3a06cd3c3164c6b7c341981a2fa3bc9fefea061ccec0e51e0c723`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19731221)
-  - `gap-campus-socialwork-press-6-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPKS19731221/page/n5.jpg; 5071695 bytes; SHA-256 `d0845afb8f8d50f441bebfa1855b6c9e1468d7d024d7e80ed87739f97c601405`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19731221)
+  - `gap-campus-socialwork-press-6-n14.jpg` (in `local/`, not in git): Page image of 華僑日報 21 Dec 1973, Community Chest page (leaf 14), with the article and a photo; https://archive.org/download/NPWK19731221/page/n14.jpg; 5212933 bytes; SHA-256 `c84fb5139eb3a06cd3c3164c6b7c341981a2fa3bc9fefea061ccec0e51e0c723`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19731221)
+  - `gap-campus-socialwork-press-6-n5.jpg` (in `local/`, not in git): Page image of 香港工商日報 21 Dec 1973, leaf 5, with the same article (clearer print) and a photo; https://archive.org/download/NPKS19731221/page/n5.jpg; 5071695 bytes; SHA-256 `d0845afb8f8d50f441bebfa1855b6c9e1468d7d024d7e80ed87739f97c601405`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPKS19731221)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1103,7 +1103,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1975). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-01-10
 - **Files:**
-  - `gap-crime-drugs-records-11-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750110/page/n3.jpg; 4527555 bytes; SHA-256 `9c61d3081317f8acbd0096aa9759eed70c7e2c057a81b574cee12e9d24555463`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750110)
+  - `gap-crime-drugs-records-11-n3.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 10 Jan 1975, 本港新聞 page (leaf n3), with the report and a photo of the seized pipe bowls and moulds; https://archive.org/download/NPWK19750110/page/n3.jpg; 4527555 bytes; SHA-256 `9c61d3081317f8acbd0096aa9759eed70c7e2c057a81b574cee12e9d24555463`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750110)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1128,7 +1128,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the seizure (1975). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-01-24
 - **Files:**
-  - `gap-crime-drugs-records-10-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750124/page/n3.jpg; 4629957 bytes; SHA-256 `83e67e81cba1afa2370381bd2aa6a5ab1f3644dc75b149d90fb6c9e4c9d86b31`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750124)
+  - `gap-crime-drugs-records-10-n3.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 24 Jan 1975, 本港新聞 page (leaf n3), with the report and a photo of the seized drugs; https://archive.org/download/NPWK19750124/page/n3.jpg; 4629957 bytes; SHA-256 `83e67e81cba1afa2370381bd2aa6a5ab1f3644dc75b149d90fb6c9e4c9d86b31`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19750124)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1155,7 +1155,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1975). The finder's link to a youth activity is wrong: the keywords come from two stories.)
 - **Date of the record:** 1975-05-09 (fire on 8 May 1975)
 - **Files:**
-  - `gap-campus-socialwork-press-8-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19750509/page/n3.jpg; 4568162 bytes; SHA-256 `fd5038471eb2b9dd051ce3c54ccb84ceaa2ca675cb29ba60444cd6b08c9fb4e8`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750509)
+  - `gap-campus-socialwork-press-8-n3.jpg` (in `local/`, not in git): Page image of 華僑日報 9 May 1975, 第一張第四頁 (leaf 3), with the Lung Chun Road fire report; https://archive.org/download/NPWK19750509/page/n3.jpg; 4568162 bytes; SHA-256 `fd5038471eb2b9dd051ce3c54ccb84ceaa2ca675cb29ba60444cd6b08c9fb4e8`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19750509)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1173,7 +1173,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the morning after the fire (1975). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-05-15
 - **Files:**
-  - `top-services-16-n1.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19750515/page/n1.jpg; 5100124 bytes; SHA-256 `502f2a060ae10f74e20832ec712ffbbe53649f58289d8db03118acc2e842b16c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19750515)
+  - `top-services-16-n1.jpg` (in `local/`, not in git): Page image of Kung Sheung Evening News 15 May 1975, leaf n1, with the report and the night photo of the fire; https://archive.org/download/NPKSE19750515/page/n1.jpg; 5100124 bytes; SHA-256 `502f2a060ae10f74e20832ec712ffbbe53649f58289d8db03118acc2e842b16c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19750515)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1204,7 +1204,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1975). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-11-21
 - **Files:**
-  - `gap-crime-drugs-records-8-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19751121/page/n7.jpg; 5197802 bytes; SHA-256 `7ff765984bff770a6682a7370a3ac45ba2575c2bd1d166d8a9fae7f6ce08d633`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19751121)
+  - `gap-crime-drugs-records-8-n7.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 21 Nov 1975, 本港新聞 page (leaf n7), with the report; https://archive.org/download/NPWK19751121/page/n7.jpg; 5197802 bytes; SHA-256 `7ff765984bff770a6682a7370a3ac45ba2575c2bd1d166d8a9fae7f6ce08d633`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19751121)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1223,7 +1223,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raids (1975). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1975-12-19
 - **Files:**
-  - `gap-crime-drugs-records-7-n0.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19751219/page/n0.jpg; 5359975 bytes; SHA-256 `baf72281ff841433e92adf4f88836f94e43eec7bf4ccbdb286fad1ce0056e4ba`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19751219)
+  - `gap-crime-drugs-records-7-n0.jpg` (in `local/`, not in git): Page image of Kung Sheung Evening News 19 Dec 1975, page 1 (leaf n0), with the raid report; https://archive.org/download/NPKSE19751219/page/n0.jpg; 5359975 bytes; SHA-256 `baf72281ff841433e92adf4f88836f94e43eec7bf4ccbdb286fad1ce0056e4ba`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19751219)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1258,7 +1258,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1976). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1976-04-22
 - **Files:**
-  - `gap-crime-drugs-records-6-n1.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19760422/page/n1.jpg; 5828538 bytes; SHA-256 `72e0bf50451271c3229d32d40808f6f1f169169d636f4b35b6b1770e964ebe5c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19760422)
+  - `gap-crime-drugs-records-6-n1.jpg` (in `local/`, not in git): Page image of Kung Sheung Evening News 22 Apr 1976, page 2 (leaf n1), with the raid report; https://archive.org/download/NPKSE19760422/page/n1.jpg; 5828538 bytes; SHA-256 `72e0bf50451271c3229d32d40808f6f1f169169d636f4b35b6b1770e964ebe5c`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19760422)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1280,7 +1280,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of 1977, made a few hours after the event (it gives news to 1.30 a.m.). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1977-01-23
 - **Files:**
-  - `gap-street-address-search-5-n9.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19770123/page/n9.jpg; 5105676 bytes; SHA-256 `b37e381db5b3015fe56dc807d1d28399c62b956c9b6db9ba84e234e005280f90`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770123)
+  - `gap-street-address-search-5-n9.jpg` (in `local/`, not in git): Page image of the 本港新聞 page (leaf n9) with the article; https://archive.org/download/NPWK19770123/page/n9.jpg; 5105676 bytes; SHA-256 `b37e381db5b3015fe56dc807d1d28399c62b956c9b6db9ba84e234e005280f90`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770123)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1302,7 +1302,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the fire (1977). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1977-01-28
 - **Files:**
-  - `top-services-15-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19770128/page/n5.jpg; 4449080 bytes; SHA-256 `efeb0de3d3a2173c9ac28b1040491e8a248c68b30ee4d3adcf380b2f04c555c7`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770128)
+  - `top-services-15-n5.jpg` (in `local/`, not in git): Page image of the 本港新聞 page of Wah Kiu Yat Po 28 Jan 1977, leaf n5, with the report; https://archive.org/download/NPWK19770128/page/n5.jpg; 4449080 bytes; SHA-256 `efeb0de3d3a2173c9ac28b1040491e8a248c68b30ee4d3adcf380b2f04c555c7`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19770128)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1328,7 +1328,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1977), cut short in the print.)
 - **Date of the record:** 1977-02-25
 - **Files:**
-  - `gap-campus-socialwork-press-7-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19770225/page/n4.jpg; 5009286 bytes; SHA-256 `5673fec42cd823f5cd91fe95356098d0262b8c16bca43436329f0a160d2c87db`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19770225)
+  - `gap-campus-socialwork-press-7-n4.jpg` (in `local/`, not in git): Page image of 華僑日報 25 Feb 1977, 第二張第一頁 (leaf 4), with the headline of the fun-day story; https://archive.org/download/NPWK19770225/page/n4.jpg; 5009286 bytes; SHA-256 `5673fec42cd823f5cd91fe95356098d0262b8c16bca43436329f0a160d2c87db`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19770225)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1360,7 +1360,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the killing (1978). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1978-05-18
 - **Files:**
-  - `gap-campus-socialwork-press-13-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19780518/page/n3.jpg; 4027945 bytes; SHA-256 `b4ceaa40371b54c9d0a46d0058d5accd175927a6c6b0c7f26932a5141f5207da`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19780518)
+  - `gap-campus-socialwork-press-13-n3.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 18 May 1978, 本港新聞 page (leaf n3), with the report and a photo of the scene; https://archive.org/download/NPWK19780518/page/n3.jpg; 4027945 bytes; SHA-256 `b4ceaa40371b54c9d0a46d0058d5accd175927a6c6b0c7f26932a5141f5207da`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19780518)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1387,7 +1387,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the fire (1978), with a statement of the Government Information Services (港府新聞處). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1978-06-27
 - **Files:**
-  - `gap-campus-socialwork-press-12-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19780627/page/n4.jpg; 5087972 bytes; SHA-256 `cb6938e61d1b027e13828fd4a8c580d8b80b3ab48388135930ea0ec365f13d37`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19780627)
+  - `gap-campus-socialwork-press-12-n4.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 27 Jun 1978, 本港新聞 page (leaf n4), with the fire report; https://archive.org/download/NPWK19780627/page/n4.jpg; 5087972 bytes; SHA-256 `cb6938e61d1b027e13828fd4a8c580d8b80b3ab48388135930ea0ec365f13d37`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPWK19780627)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1414,7 +1414,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the same day (1980). It belongs in primary-sources/. The article names the City (九龍城寨) in its text, so the plan's INFERRED reading of 城寨 is now confirmed. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1980-05-24
 - **Files:**
-  - `gap-crime-drugs-records-5-n0.jpg` (in `local/`, not in git): https://archive.org/download/NPKSE19800524/page/n0.jpg; 5320545 bytes; SHA-256 `a801d839414f87c8c3cfc70330c403f8ea06c1073fb202144b0bc0afc8f2da58`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19800524)
+  - `gap-crime-drugs-records-5-n0.jpg` (in `local/`, not in git): Page image of Kung Sheung Evening News 24 May 1980, page 1 (leaf n0), with the report; https://archive.org/download/NPKSE19800524/page/n0.jpg; 5320545 bytes; SHA-256 `a801d839414f87c8c3cfc70330c403f8ea06c1073fb202144b0bc0afc8f2da58`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPKSE19800524)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1431,7 +1431,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the time (1981), with the demands of the petition. The finder's link to a health contest is wrong: the keywords come from two stories.)
 - **Date of the record:** 1981-05-21 (petition on 20 May 1981)
 - **Files:**
-  - `gap-campus-socialwork-press-9-n9.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19810521/page/n9.jpg; 6034451 bytes; SHA-256 `1765603d6cce8877eca6937471c90238a6c676b317640d11c512044380eabd1b`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19810521)
+  - `gap-campus-socialwork-press-9-n9.jpg` (in `local/`, not in git): Page image of 華僑日報 21 May 1981, 第三張第二頁 (leaf 9), with the petition report and photo; https://archive.org/download/NPWK19810521/page/n9.jpg; 6034451 bytes; SHA-256 `1765603d6cce8877eca6937471c90238a6c676b317640d11c512044380eabd1b`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19810521)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1476,7 +1476,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the event (1984). It belongs in primary-sources/. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1984-06-26
 - **Files:**
-  - `top-services-13-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19840626/page/n4.jpg; 3937297 bytes; SHA-256 `94da63bb851016d97a822e36b407cd183bdd44097209736bb77345f2d60b2f95`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19840626)
+  - `top-services-13-n4.jpg` (in `local/`, not in git): Page image of Ta Kung Pao 26 Jun 1984, leaf n4, with the report and photo; https://archive.org/download/NPTKP19840626/page/n4.jpg; 3937297 bytes; SHA-256 `94da63bb851016d97a822e36b407cd183bdd44097209736bb77345f2d60b2f95`; licence: No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper (https://archive.org/details/NPTKP19840626)
 
 | Page | Fact | Words in the source |
 |---|---|---|

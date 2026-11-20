@@ -48,6 +48,8 @@ draws it gives them. See [docs/structure.md](docs/structure.md).
 - [docs/rooms.md](docs/rooms.md), [docs/people.md](docs/people.md),
   [docs/furnishings.md](docs/furnishings.md), [docs/utilities.md](docs/utilities.md): the rooms,
   the people, the things and the utilities.
+- [docs/source-images.md](docs/source-images.md): an index of the images and scans of the sources, by
+  date (made by `tools/source_images.py`).
 
 ## Licences of the data
 

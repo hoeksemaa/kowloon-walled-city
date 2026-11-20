@@ -24,7 +24,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the fire (1986). It belongs in primary-sources/.)
 - **Date of the record:** 1986-12-08
 - **Files:**
-  - `top-services-2-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19861208/page/n8.jpg; 3777486 bytes; SHA-256 `389f2b4e22fa44c81af20c37d98847d10ce7be4cae8c5f1dc3184ebdf991f916`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19861208)
+  - `top-services-2-n8.jpg` (in `local/`, not in git): Page image of 大公報 8 Dec 1986, 港聞 page, with the Tai Chang Street fire; https://archive.org/download/NPTKP19861208/page/n8.jpg; 3777486 bytes; SHA-256 `389f2b4e22fa44c81af20c37d98847d10ce7be4cae8c5f1dc3184ebdf991f916`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19861208)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -48,8 +48,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Daily news reports made the day after the government announcement of 14 January 1987, with first-hand statements of officials, councillors, the kaifong association, unlicensed dentists and residents. Primary tree is correct. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1987-01-15
 - **Files:**
-  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0000.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0000.jp2&ext=jpg; 2563609 bytes; SHA-256 `f9066ad66f7531b8cfa254d27e303a9cbb9a1befeba5cf5c9073bf0a67b68578`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
-  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0008.jp2&ext=jpg; 2525604 bytes; SHA-256 `d4fdaf00fe48d1b73aa79159d76b908479490ff65dfe1426ab334ad38db15a85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
+  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0000.jpg` (in `local/`, not in git): Full-resolution page image of leaf n0, the front page (第一張第一頁), with the lead story, seven other City items, a map and a photo, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0000.jp2&ext=jpg; 2563609 bytes; SHA-256 `f9066ad66f7531b8cfa254d27e303a9cbb9a1befeba5cf5c9073bf0a67b68578`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
+  - `zh-press-1-NPWK19870115_jp2_NPWK19870115_0008.jpg` (in `local/`, not in git): Full-resolution page image of leaf n8 (第三張第一頁, 本港新聞), with the City reactions and the photo page of 11 captioned photos, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870115/NPWK19870115_jp2.zip/NPWK19870115_jp2%2FNPWK19870115_0008.jp2&ext=jpg; 2525604 bytes; SHA-256 `d4fdaf00fe48d1b73aa79159d76b908479490ff65dfe1426ab334ad38db15a85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870115)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -180,7 +180,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement of the time (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-02-01
 - **Files:**
-  - `top-services-6-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870201/page/n6.jpg; 3745685 bytes; SHA-256 `b16a656a3121657f4260ef625424c8500646822f229f6a44b86be54485cf6579`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870201)
+  - `top-services-6-n6.jpg` (in `local/`, not in git): Page image of 大公報 1 Feb 1987, 第二張 第七版 (港聞・文教), with the clearance staffing article; https://archive.org/download/NPTKP19870201/page/n6.jpg; 3745685 bytes; SHA-256 `b16a656a3121657f4260ef625424c8500646822f229f6a44b86be54485cf6579`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870201)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -230,7 +230,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of statements made after a meeting of the special committee on the clearance, with Housing Department survey figures of 2 February 1987, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-02-11
 - **Files:**
-  - `zh-press-2-NPWK19870211_jp2_NPWK19870211_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870211/NPWK19870211_jp2.zip/NPWK19870211_jp2%2FNPWK19870211_0008.jp2&ext=jpg; 2598926 bytes; SHA-256 `a10e0ec3067df33b7ab4c14638e65eece9ce253318b682aad10605ead82b94dd`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870211)
+  - `zh-press-2-NPWK19870211_jp2_NPWK19870211_0008.jpg` (in `local/`, not in git): Full-resolution page image of leaf n8 (本港新聞), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870211/NPWK19870211_jp2.zip/NPWK19870211_jp2%2FNPWK19870211_0008.jp2&ext=jpg; 2598926 bytes; SHA-256 `a10e0ec3067df33b7ab4c14638e65eece9ce253318b682aad10605ead82b94dd`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870211)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -301,7 +301,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports made at the time (1987), of what officials said and of a Finance Committee paper. Primary tree is correct.)
 - **Date of the record:** 1987-04-08
 - **Files:**
-  - `zh-press-4-NPWK19870408_jp2_NPWK19870408_0005.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870408/NPWK19870408_jp2.zip/NPWK19870408_jp2%2FNPWK19870408_0005.jp2&ext=jpg; 2407333 bytes; SHA-256 `b24f5e52f744f3f5269b8ab25e1f35de79ecd8ba1c2eb0b39c89f6fcc3a23260`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870408)
+  - `zh-press-4-NPWK19870408_jp2_NPWK19870408_0005.jpg` (in `local/`, not in git): Full-resolution page image of leaf n5 (第二張第二頁, 本港新聞), the page with both City articles, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870408/NPWK19870408_jp2.zip/NPWK19870408_jp2%2FNPWK19870408_0005.jp2&ext=jpg; 2407333 bytes; SHA-256 `b24f5e52f744f3f5269b8ab25e1f35de79ecd8ba1c2eb0b39c89f6fcc3a23260`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870408)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -332,7 +332,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-05-17
 - **Files:**
-  - `top-services-20-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870517/page/n4.jpg; 3755602 bytes; SHA-256 `b36268e529ac852694813efebdf72d59df2d75f86fd83dffcac877597051d585`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870517)
+  - `top-services-20-n4.jpg` (in `local/`, not in git): Full-resolution scan of leaf n4 of Ta Kung Pao (大公報), 17 May 1987, with the article (JPEG).; https://archive.org/download/NPTKP19870517/page/n4.jpg; 3755602 bytes; SHA-256 `b36268e529ac852694813efebdf72d59df2d75f86fd83dffcac877597051d585`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870517)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -357,7 +357,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement made at the time (1987), and a short editorial of the same day. The editorial is opinion of the time. Primary tree is correct. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1987-05-26
 - **Files:**
-  - `zh-press-6-NPWK19870526_jp2_NPWK19870526_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870526/NPWK19870526_jp2.zip/NPWK19870526_jp2%2FNPWK19870526_0004.jp2&ext=jpg; 2092915 bytes; SHA-256 `6be60ed1e46ea9a4aa057a069d330545ef3035131ac49b9a5e725504cfd17407`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870526)
+  - `zh-press-6-NPWK19870526_jp2_NPWK19870526_0004.jpg` (in `local/`, not in git): Full-resolution page image of leaf n4 (本港新聞), the page with the news article and the editorial column 小評, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870526/NPWK19870526_jp2.zip/NPWK19870526_jp2%2FNPWK19870526_0004.jp2&ext=jpg; 2092915 bytes; SHA-256 `6be60ed1e46ea9a4aa057a069d330545ef3035131ac49b9a5e725504cfd17407`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870526)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -383,7 +383,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of statements made the day before by the vice-chairman of the City's kaifong association and by dental officials, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-06-02
 - **Files:**
-  - `zh-press-7-NPWK19870602_jp2_NPWK19870602_0005.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870602/NPWK19870602_jp2.zip/NPWK19870602_jp2%2FNPWK19870602_0005.jp2&ext=jpg; 2536385 bytes; SHA-256 `26888ebc4ada34735924cdb31f022d249dc0c1fd7b1215463985e46db5a7cc59`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870602)
+  - `zh-press-7-NPWK19870602_jp2_NPWK19870602_0005.jpg` (in `local/`, not in git): Full-resolution page image of leaf n5 (第二張第二頁, 本港新聞), the page with the lead story and the City sub-article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870602/NPWK19870602_jp2.zip/NPWK19870602_jp2%2FNPWK19870602_0005.jp2&ext=jpg; 2536385 bytes; SHA-256 `26888ebc4ada34735924cdb31f022d249dc0c1fd7b1215463985e46db5a7cc59`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870602)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -425,7 +425,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the visit (1987), with a reporter's feature of the same day. The feature's history of the 1950s-60s is secondary, and the facts from it are marked so. The item belongs in primary-sources/.)
 - **Date of the record:** 1987-06-19
 - **Files:**
-  - `top-services-3-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870619/page/n6.jpg; 3974282 bytes; SHA-256 `0ebbc6dee639d6c1b8dfa235a700107ed9a20f68ae55ffa48a6465a3d75db3de`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870619)
+  - `top-services-3-n6.jpg` (in `local/`, not in git): Page image (two printed pages) of 大公報 19 Jun 1987: the wells article and the feature 「擔水婆與供水商」; https://archive.org/download/NPTKP19870619/page/n6.jpg; 3974282 bytes; SHA-256 `0ebbc6dee639d6c1b8dfa235a700107ed9a20f68ae55ffa48a6465a3d75db3de`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870619)
 - **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
 
 | Page | Fact | Words in the source |
@@ -455,7 +455,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on the words of the chairman of an owners' body of the City (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-09-13
 - **Files:**
-  - `gap-clearance-from-below-10-BookReaderImages.php` (in `local/`, not in git): https://ia800708.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPTKP19870913/NPTKP19870913_jp2.zip&file=NPTKP19870913_jp2/NPTKP19870913_0004.jp2&id=NPTKP19870913&scale=1&rotate=0; 4592833 bytes; SHA-256 `598c8b53435861afc6610165e0e151fbc6497a3f8f3bd84e2a09eee7d3fb294b`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19870913)
+  - `gap-clearance-from-below-10-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n4 of the archive.org scan of 大公報 13 Sep 1987 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPTKP19870913/page/n4; https://ia800708.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPTKP19870913/NPTKP19870913_jp2.zip&file=NPTKP19870913_jp2/NPTKP19870913_0004.jp2&id=NPTKP19870913&scale=1&rotate=0; 4592833 bytes; SHA-256 `598c8b53435861afc6610165e0e151fbc6497a3f8f3bd84e2a09eee7d3fb294b`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19870913)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -480,7 +480,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports made at the time (1987) of an official's report to the District Board and of the kaifong association's anniversary party, with speeches. Primary tree is correct.)
 - **Date of the record:** 1987-09-26
 - **Files:**
-  - `zh-press-9-NPWK19870926_jp2_NPWK19870926_0026.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870926/NPWK19870926_jp2.zip/NPWK19870926_jp2%2FNPWK19870926_0026.jp2&ext=jpg; 2548441 bytes; SHA-256 `16e26e18dcd9100a95d7dade1d3ce8ffb7eaf10d8731ecd8675fa323064a2493`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870926)
+  - `zh-press-9-NPWK19870926_jp2_NPWK19870926_0026.jpg` (in `local/`, not in git): Full-resolution page image of leaf n26 (第三張第七頁, 本港新聞), the page with both City articles, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870926/NPWK19870926_jp2.zip/NPWK19870926_jp2%2FNPWK19870926_0026.jp2&ext=jpg; 2548441 bytes; SHA-256 `16e26e18dcd9100a95d7dade1d3ce8ffb7eaf10d8731ecd8675fa323064a2493`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870926)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -508,7 +508,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-12-11
 - **Files:**
-  - `top-services-21-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19871211/page/n4.jpg; 3824345 bytes; SHA-256 `5065de26ff8b8b2bbef0ca302a0f5d3b694096d3ff5e37cb3c401333899bb7e5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19871211)
+  - `top-services-21-n4.jpg` (in `local/`, not in git): Full-resolution scan of leaf n4 (港聞 page) of Ta Kung Pao (大公報), 11 December 1987, with the four City articles, the three-phase map and two photos (JPEG).; https://archive.org/download/NPTKP19871211/page/n4.jpg; 3824345 bytes; SHA-256 `5065de26ff8b8b2bbef0ca302a0f5d3b694096d3ff5e37cb3c401333899bb7e5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19871211)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -554,8 +554,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the press conference of 10 December 1987 by the chairman of the special committee, with the kaifong association's statement and the official compensation text, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-12-11
 - **Files:**
-  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0004.jp2&ext=jpg; 2198224 bytes; SHA-256 `8f96134511d771904d899f02464ef5a26702744145d621b1ba2c41e0215641bc`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
-  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0006.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0006.jp2&ext=jpg; 2536919 bytes; SHA-256 `3c00c56c348886167b6f90ebf5fbe9be4b96d113db4273f39d90c7854fe37528`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
+  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0004.jpg` (in `local/`, not in git): Full-resolution page image of leaf n4 (第二張第一頁, 本港新聞), the page with the lead article and the related City items, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0004.jp2&ext=jpg; 2198224 bytes; SHA-256 `8f96134511d771904d899f02464ef5a26702744145d621b1ba2c41e0215641bc`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
+  - `zh-press-10-NPWK19871211_jp2_NPWK19871211_0006.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (第二張第三頁), the full text of the special committee's statement on compensation (only partly read), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19871211/NPWK19871211_jp2.zip/NPWK19871211_jp2%2FNPWK19871211_0006.jp2&ext=jpg; 2536919 bytes; SHA-256 `3c00c56c348886167b6f90ebf5fbe9be4b96d113db4273f39d90c7854fe37528`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19871211)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -602,7 +602,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on statements of the official in charge of the clearance (1988). It belongs in primary-sources/.)
 - **Date of the record:** 1988-02-13
 - **Files:**
-  - `gap-clearance-from-below-11-BookReaderImages.php` (in `local/`, not in git): https://ia600502.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/NPTKP19880213/NPTKP19880213_jp2.zip&file=NPTKP19880213_jp2/NPTKP19880213_0005.jp2&id=NPTKP19880213&scale=1&rotate=0; 4724767 bytes; SHA-256 `352c90e1eb82443ca4480d041d0f582711c647f90795c24e94006bf1901b5f14`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19880213)
+  - `gap-clearance-from-below-11-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n5 of the archive.org scan of 大公報 13 Feb 1988 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPTKP19880213/page/n5; https://ia600502.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/NPTKP19880213/NPTKP19880213_jp2.zip&file=NPTKP19880213_jp2/NPTKP19880213_0005.jp2&id=NPTKP19880213&scale=1&rotate=0; 4724767 bytes; SHA-256 `352c90e1eb82443ca4480d041d0f582711c647f90795c24e94006bf1901b5f14`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19880213)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -642,7 +642,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report and a press photo of a fire of the day before (1988). Primary tree.)
 - **Date of the record:** 1988-04-20 (the fire was on the morning of 19 April 1988)
 - **Files:**
-  - `top-zh-press-15-BookReaderImages.php` (in `local/`, not in git): https://ia800709.us.archive.org/BookReader/BookReaderImages.php?zip=/30/items/NPTKP19880420/NPTKP19880420_jp2.zip&file=NPTKP19880420_jp2/NPTKP19880420_0006.jp2&id=NPTKP19880420&scale=1&rotate=0; 4129580 bytes; SHA-256 `48d00be572b32f3bc5f2d8e267d4e90905ed38f2851e68fc3b24871419d69fef`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880420)
+  - `top-zh-press-15-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), with the article and the photo of the fire, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19880420/NPTKP19880420_jp2.zip/NPTKP19880420_jp2%2FNPTKP19880420_0006.jp2&ext=jpg .; https://ia800709.us.archive.org/BookReader/BookReaderImages.php?zip=/30/items/NPTKP19880420/NPTKP19880420_jp2.zip&file=NPTKP19880420_jp2/NPTKP19880420_0006.jp2&id=NPTKP19880420&scale=1&rotate=0; 4129580 bytes; SHA-256 `48d00be572b32f3bc5f2d8e267d4e90905ed38f2851e68fc3b24871419d69fef`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880420)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -667,7 +667,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an accident of the day before (1988). Primary tree.)
 - **Date of the record:** 1988-07-01 (the accident was at 3:30 pm on 30 June 1988)
 - **Files:**
-  - `top-zh-press-16-BookReaderImages.php` (in `local/`, not in git): https://ia801906.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/NPTKP19880701/NPTKP19880701_jp2.zip&file=NPTKP19880701_jp2/NPTKP19880701_0004.jp2&id=NPTKP19880701&scale=1&rotate=0; 3472986 bytes; SHA-256 `a8ebd003303a49aa83bf54ee0382a8e469ef10a113d5ce759f449d7e7512e823`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880701)
+  - `top-zh-press-16-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n4 (港聞 第五版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19880701/NPTKP19880701_jp2.zip/NPTKP19880701_jp2%2FNPTKP19880701_0004.jp2&ext=jpg .; https://ia801906.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/NPTKP19880701/NPTKP19880701_jp2.zip&file=NPTKP19880701_jp2/NPTKP19880701_0004.jp2&id=NPTKP19880701&scale=1&rotate=0; 3472986 bytes; SHA-256 `a8ebd003303a49aa83bf54ee0382a8e469ef10a113d5ce759f449d7e7512e823`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880701)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -711,7 +711,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement to the Kowloon City District Board the day before (1988). Primary tree.)
 - **Date of the record:** 1988-10-19 (the statement was on 18 October 1988)
 - **Files:**
-  - `top-zh-press-19-BookReaderImages.php` (in `local/`, not in git): https://ia800109.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19881019/NPTKP19881019_jp2.zip&file=NPTKP19881019_jp2/NPTKP19881019_0006.jp2&id=NPTKP19881019&scale=1&rotate=0; 4922372 bytes; SHA-256 `03130788cebe0b422fd84ac4ccf25a42a4c13079aae68a2d10f02eeae95cffd6`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881019)
+  - `top-zh-press-19-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞・生活圈 第七版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19881019/NPTKP19881019_jp2.zip/NPTKP19881019_jp2%2FNPTKP19881019_0006.jp2&ext=jpg .; https://ia800109.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19881019/NPTKP19881019_jp2.zip&file=NPTKP19881019_jp2/NPTKP19881019_0006.jp2&id=NPTKP19881019&scale=1&rotate=0; 4922372 bytes; SHA-256 `03130788cebe0b422fd84ac4ccf25a42a4c13079aae68a2d10f02eeae95cffd6`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881019)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -737,7 +737,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the time on figures of the Housing Department (1988). It belongs in primary-sources/.)
 - **Date of the record:** 1988-11-12
 - **Files:**
-  - `gap-clearance-from-below-12-BookReaderImages.php` (in `local/`, not in git): https://ia803108.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/NPTKP19881112/NPTKP19881112_jp2.zip&file=NPTKP19881112_jp2/NPTKP19881112_0006.jp2&id=NPTKP19881112&scale=1&rotate=0; 4792072 bytes; SHA-256 `e198d5474f3b0f839bd4bf2121d0281bcec4f87ada0a6322092bb8f4f0756efa`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19881112)
+  - `gap-clearance-from-below-12-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n6 of the archive.org scan of 大公報 12 Nov 1988 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPTKP19881112/page/n6; https://ia803108.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/NPTKP19881112/NPTKP19881112_jp2.zip&file=NPTKP19881112_jp2/NPTKP19881112_0006.jp2&id=NPTKP19881112&scale=1&rotate=0; 4792072 bytes; SHA-256 `e198d5474f3b0f839bd4bf2121d0281bcec4f87ada0a6322092bb8f4f0756efa`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19881112)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -835,8 +835,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report, made at the time (11 Sep 1990), of the design report of the Architectural Services Department (建築署) for the park. It is a record of the time, thus primary tree. It is about the park plan after the clearance, not about life in the City.)
 - **Date of the record:** 1990-09-11
 - **Files:**
-  - `gap-builders-demolition-park-14-wk19900911-p1.png` (in `local/`, not in git): https://archive.org/download/NPWK19900911/page/n0.jpg; 9327473 bytes; SHA-256 `5001c02df9bddb9bc511388db800988d6f1e166c3c57802a6037aaba7f7901aa`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
-  - `gap-builders-demolition-park-14-NPWK19900911.pdf` (in `local/`, not in git): https://archive.org/download/NPWK19900911/NPWK19900911.pdf; 22584009 bytes; SHA-256 `a04307cf2c9216b712b7c94812d21e54edd630ee57699d3fe6ade5cde6987c9b`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
+  - `gap-builders-demolition-park-14-wk19900911-p1.png` (in `local/`, not in git): Browser screenshot (PNG re-encode, 3512x4774) of the full-resolution page image of leaf n0 (front page) of 華僑日報 of 11 Sep 1990, served by the archive.org BookReader image service; the article and the park sketch are on it; https://archive.org/download/NPWK19900911/page/n0.jpg; 9327473 bytes; SHA-256 `5001c02df9bddb9bc511388db800988d6f1e166c3c57802a6037aaba7f7901aa`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
+  - `gap-builders-demolition-park-14-NPWK19900911.pdf` (in `local/`, not in git): PDF scan of the whole issue of 華僑日報 (Wah Kiu Yat Po) of 11 Sep 1990 (22.6 MB); the article and the park sketch are on PDF page 1 (front page) (not downloaded; URL only); https://archive.org/download/NPWK19900911/NPWK19900911.pdf; 22584009 bytes; SHA-256 `a04307cf2c9216b712b7c94812d21e54edd630ee57699d3fe6ade5cde6987c9b`; licence: no statement: the archive.org item has no rights or licence field (private upload; the newspaper is copyright of its publisher) (https://archive.org/details/NPWK19900911)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -912,7 +912,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on a protest of City residents (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-10-24
 - **Files:**
-  - `gap-clearance-from-below-14-BookReaderImages.php` (in `local/`, not in git): https://ia800503.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/NPTKP19911024/NPTKP19911024_jp2.zip&file=NPTKP19911024_jp2/NPTKP19911024_0009.jp2&id=NPTKP19911024&scale=1&rotate=0; 4286011 bytes; SHA-256 `e95b15f04b81c81bf249528eee2c44b3cacae0b1b800985a1fc44788a6a2ff1f`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19911024)
+  - `gap-clearance-from-below-14-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n9 of the archive.org scan of 大公報 24 Oct 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPTKP19911024/page/n9; https://ia800503.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/NPTKP19911024/NPTKP19911024_jp2.zip&file=NPTKP19911024_jp2/NPTKP19911024_0009.jp2&id=NPTKP19911024&scale=1&rotate=0; 4286011 bytes; SHA-256 `e95b15f04b81c81bf249528eee2c44b3cacae0b1b800985a1fc44788a6a2ff1f`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19911024)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -935,7 +935,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on a protest of City residents, with a news photo (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-10-24
 - **Files:**
-  - `gap-clearance-from-below-15-BookReaderImages.php` (in `local/`, not in git): https://ia801404.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/NPWK19911024/NPWK19911024_jp2.zip&file=NPWK19911024_jp2/NPWK19911024_0004.jp2&id=NPWK19911024&scale=1&rotate=0; 4994681 bytes; SHA-256 `249088c32931cfb896fcbdf309f8b7d0d21bc1232be29f65c9fecfab5e71c190`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911024)
+  - `gap-clearance-from-below-15-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n4 of the archive.org scan of 華僑日報 24 Oct 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19911024/page/n4; https://ia801404.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/NPWK19911024/NPWK19911024_jp2.zip&file=NPWK19911024_jp2/NPWK19911024_0004.jp2&id=NPWK19911024&scale=1&rotate=0; 4994681 bytes; SHA-256 `249088c32931cfb896fcbdf309f8b7d0d21bc1232be29f65c9fecfab5e71c190`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911024)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -961,7 +961,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-11-24
 - **Files:**
-  - `gap-clearance-from-below-17-BookReaderImages.php` (in `local/`, not in git): https://ia601502.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/NPWK19911124/NPWK19911124_jp2.zip&file=NPWK19911124_jp2/NPWK19911124_0002.jp2&id=NPWK19911124&scale=1&rotate=0; 5177105 bytes; SHA-256 `5bfa6b6d210bf8f5e0a9ab2972de9b18eea225bba9e3d91b76253e3dd6c025cf`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911124)
+  - `gap-clearance-from-below-17-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n2 of the archive.org scan of 華僑日報 24 Nov 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19911124/page/n2; https://ia601502.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/NPWK19911124/NPWK19911124_jp2.zip&file=NPWK19911124_jp2/NPWK19911124_0002.jp2&id=NPWK19911124&scale=1&rotate=0; 5177105 bytes; SHA-256 `5bfa6b6d210bf8f5e0a9ab2972de9b18eea225bba9e3d91b76253e3dd6c025cf`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911124)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -992,7 +992,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day, with a news photo (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-11-29
 - **Files:**
-  - `gap-clearance-from-below-19-BookReaderImages.php` (in `local/`, not in git): https://ia800807.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19911129/NPTKP19911129_jp2.zip&file=NPTKP19911129_jp2/NPTKP19911129_0010.jp2&id=NPTKP19911129&scale=1&rotate=0; 3432031 bytes; SHA-256 `a54ebeb8d112ba4c57d4ad51c40dd0fc1cc912e477536064b47c3c5f0f313f8d`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19911129)
+  - `gap-clearance-from-below-19-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n10 of the archive.org scan of 大公報 29 Nov 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPTKP19911129/page/n10; https://ia800807.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19911129/NPTKP19911129_jp2.zip&file=NPTKP19911129_jp2/NPTKP19911129_0010.jp2&id=NPTKP19911129&scale=1&rotate=0; 3432031 bytes; SHA-256 `a54ebeb8d112ba4c57d4ad51c40dd0fc1cc912e477536064b47c3c5f0f313f8d`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPTKP19911129)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1034,7 +1034,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made on the day after the events, partly by reporters inside the City during the clearance (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-11-30 (reports the events of 29 November 1991)
 - **Files:**
-  - `gap-clearance-from-below-20-BookReaderImages.php` (in `local/`, not in git): https://ia600508.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPWK19911130/NPWK19911130_jp2.zip&file=NPWK19911130_jp2/NPWK19911130_0002.jp2&id=NPWK19911130&scale=1&rotate=0; 6191778 bytes; SHA-256 `27ece5052f01f72fd0776dead7a8dd9401883346650ac3aad565adf97f98f63e`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911130)
+  - `gap-clearance-from-below-20-BookReaderImages.jpg` (in `local/`, not in git): Scan of the local news page (leaf n2) with both City articles, JPEG from the BookReader image service; https://ia600508.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPWK19911130/NPWK19911130_jp2.zip&file=NPWK19911130_jp2/NPWK19911130_0002.jp2&id=NPWK19911130&scale=1&rotate=0; 6191778 bytes; SHA-256 `27ece5052f01f72fd0776dead7a8dd9401883346650ac3aad565adf97f98f63e`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911130)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1068,8 +1068,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the next day (1991), with words of residents. Primary tree.)
 - **Date of the record:** 1991-12-01 (reports 30 November 1991)
 - **Files:**
-  - `gap-clearance-from-below-21-BookReaderImages.php` (in `local/`, not in git): https://ia800406.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/NPWK19911201/NPWK19911201_jp2.zip&file=NPWK19911201_jp2/NPWK19911201_0000.jp2&id=NPWK19911201&scale=1&rotate=0; 4102975 bytes; SHA-256 `fb7054571673fd772dc446f3e0dab1b0a2a1ed6d6836a6980ab1bbdb39afa117`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911201)
-  - `gap-clearance-from-below-21-BookReaderImages.php` (in `local/`, not in git): https://ia800406.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/NPWK19911201/NPWK19911201_jp2.zip&file=NPWK19911201_jp2/NPWK19911201_0002.jp2&id=NPWK19911201&scale=1&rotate=0; 3879857 bytes; SHA-256 `09ff5e8272c60ae67e4992a2136d6c2119bbd32b5abd461b1979e067ca64a580`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911201)
+  - `gap-clearance-from-below-21-BookReaderImages-c4b6fd92.jpg` (in `local/`, not in git): Scan of the front page (leaf n0) with the article and photo of the sit-in, JPEG from the BookReader image service; https://ia800406.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/NPWK19911201/NPWK19911201_jp2.zip&file=NPWK19911201_jp2/NPWK19911201_0000.jp2&id=NPWK19911201&scale=1&rotate=0; 4102975 bytes; SHA-256 `fb7054571673fd772dc446f3e0dab1b0a2a1ed6d6836a6980ab1bbdb39afa117`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911201)
+  - `gap-clearance-from-below-21-BookReaderImages-eaf73d66.jpg` (in `local/`, not in git): Scan of leaf n2 with the 「週大事」 box, JPEG from the BookReader image service; https://ia800406.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/NPWK19911201/NPWK19911201_jp2.zip&file=NPWK19911201_jp2/NPWK19911201_0002.jp2&id=NPWK19911201&scale=1&rotate=0; 3879857 bytes; SHA-256 `09ff5e8272c60ae67e4992a2136d6c2119bbd32b5abd461b1979e067ca64a580`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911201)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1111,7 +1111,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1985-08-27
 - **Files:**
-  - `top-services-12-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19850827/page/n4.jpg; 2754063 bytes; SHA-256 `63d938a8c5ba4856eb084fe1d7a478e769d8c8b8f990553605845f7384d6b50a`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19850827)
+  - `top-services-12-n4.jpg` (in `local/`, not in git): Full-resolution scan of leaf n4 (港聞 page) of Ta Kung Pao (大公報), 27 August 1985, with the flood article and the rainfall report (JPEG, about 2.8 MB).; https://archive.org/download/NPTKP19850827/page/n4.jpg; 2754063 bytes; SHA-256 `63d938a8c5ba4856eb084fe1d7a478e769d8c8b8f990553605845f7384d6b50a`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19850827)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1128,7 +1128,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news feature of December 1985 that reports the words of the police district commander, made at the time. Primary tree.)
 - **Date of the record:** 1985-12-22
 - **Files:**
-  - `gap-crime-drugs-records-3-BookReaderImages.php` (in `local/`, not in git): https://ia601804.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19851222/NPWK19851222_jp2.zip&file=NPWK19851222_jp2/NPWK19851222_0018.jp2&id=NPWK19851222&scale=1&rotate=0; 4545134 bytes; SHA-256 `11754f562e80fceab3d77a12e53f2914c64a950706058a91f35217cf5eb4f9dc`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19851222)
+  - `gap-crime-drugs-records-3-BookReaderImages.jpg` (in `local/`, not in git): Scan of the feature page (leaf n18) with the City section, JPEG from the BookReader image service; https://ia601804.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19851222/NPWK19851222_jp2.zip&file=NPWK19851222_jp2/NPWK19851222_0018.jp2&id=NPWK19851222&scale=1&rotate=0; 4545134 bytes; SHA-256 `11754f562e80fceab3d77a12e53f2914c64a950706058a91f35217cf5eb4f9dc`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19851222)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1151,7 +1151,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A paid legal notice printed on the day of the auction (1986). It belongs in primary-sources/.)
 - **Date of the record:** 1986-05-02
 - **Files:**
-  - `gap-street-address-search-1-n9.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19860502/page/n9.jpg; 5572690 bytes; SHA-256 `cc0c15476a1ce03114079f9a868e84d998874cef496332e486ece137de0c3183`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19860502)
+  - `gap-street-address-search-1-n9.jpg` (in `local/`, not in git): Page image of 華僑日報 2 May 1986, 第三張第二頁, with the auction notice for 98 Lung Chun Road; https://archive.org/download/NPWK19860502/page/n9.jpg; 5572690 bytes; SHA-256 `cc0c15476a1ce03114079f9a868e84d998874cef496332e486ece137de0c3183`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19860502)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1195,7 +1195,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the raid (1986). It belongs in primary-sources/.)
 - **Date of the record:** 1986-07-16
 - **Files:**
-  - `top-services-11-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19860716/page/n3.jpg; 4341722 bytes; SHA-256 `8b27fbd22dd59d2af0546b9dfb816784c37c30b175bf8b7580a889bf92ed8738`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19860716)
+  - `top-services-11-n3.jpg` (in `local/`, not in git): Page image of 大公報 16 Jul 1986, 第一張第四版, with the Tung Tau Tsuen Road raid; https://archive.org/download/NPTKP19860716/page/n3.jpg; 4341722 bytes; SHA-256 `8b27fbd22dd59d2af0546b9dfb816784c37c30b175bf8b7580a889bf92ed8738`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19860716)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1233,9 +1233,9 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Newspaper reports and headlines made at the time (1986-1991). Primary tree. The narration is the paper's; the quoted speeches are the speakers' own words.)
 - **Date of the record:** 1986-06-16 to 1991-07-29
 - **Files:**
-  - `gap-named-persons-records-8-BookReaderImages.php` (in `local/`, not in git): https://ia801909.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPWK19860616/NPWK19860616_jp2.zip&file=NPWK19860616_jp2/NPWK19860616_0010.jp2&id=NPWK19860616&scale=1&rotate=0; 6046595 bytes; SHA-256 `d929f939d60735393e2d993fde2be33f5005dc465db1fc91303ad5357f6c31bb`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19860616)
-  - `gap-named-persons-records-8-BookReaderImages.php` (in `local/`, not in git): https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19891130/NPWK19891130_jp2.zip&file=NPWK19891130_jp2/NPWK19891130_0009.jp2&id=NPWK19891130&scale=1&rotate=0; 4835016 bytes; SHA-256 `c26073627cf521b6d9d930acbe0daed1c00a39056a99793c3522c47c51b02cb9`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891130)
-  - `gap-named-persons-records-8-BookReaderImages.php` (in `local/`, not in git): https://ia803206.us.archive.org/BookReader/BookReaderImages.php?zip=/25/items/NPWK19910612/NPWK19910612_jp2.zip&file=NPWK19910612_jp2/NPWK19910612_0006.jp2&id=NPWK19910612&scale=1&rotate=0; 4640297 bytes; SHA-256 `f4db15690bf6b4462254103ca3dbcdccde74acfc9f0a45b4dc696a30e3795b7c`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19910612)
+  - `gap-named-persons-records-8-BookReaderImages-966e1b78.jpg` (in `local/`, not in git): Scan of leaf n10 (本港新聞) with the report and photo of 方志偉's visit to the 紅磡三約街坊會, 16 June 1986, JPEG from the BookReader image service; https://ia801909.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPWK19860616/NPWK19860616_jp2.zip&file=NPWK19860616_jp2/NPWK19860616_0010.jp2&id=NPWK19860616&scale=1&rotate=0; 6046595 bytes; SHA-256 `d929f939d60735393e2d993fde2be33f5005dc465db1fc91303ad5357f6c31bb`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19860616)
+  - `gap-named-persons-records-8-BookReaderImages-b5597887.jpg` (in `local/`, not in git): Scan of leaf n9 with the report of 栢志高's visit, 30 November 1989, JPEG from the BookReader image service; https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19891130/NPWK19891130_jp2.zip&file=NPWK19891130_jp2/NPWK19891130_0009.jp2&id=NPWK19891130&scale=1&rotate=0; 4835016 bytes; SHA-256 `c26073627cf521b6d9d930acbe0daed1c00a39056a99793c3522c47c51b02cb9`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891130)
+  - `gap-named-persons-records-8-BookReaderImages-54db6858.jpg` (in `local/`, not in git): Scan of leaf n6 with the report and photo of the Lok Sin Tong (樂善堂) farewell dinner for 柏志高 (left page, page 7), 12 June 1991, JPEG from the BookReader image service; https://ia803206.us.archive.org/BookReader/BookReaderImages.php?zip=/25/items/NPWK19910612/NPWK19910612_jp2.zip&file=NPWK19910612_jp2/NPWK19910612_0006.jp2&id=NPWK19910612&scale=1&rotate=0; 4640297 bytes; SHA-256 `f4db15690bf6b4462254103ca3dbcdccde74acfc9f0a45b4dc696a30e3795b7c`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19910612)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1264,7 +1264,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after an interview (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-01-19
 - **Files:**
-  - `top-services-10-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870119/page/n3.jpg; 3885972 bytes; SHA-256 `d128b9a9660b782921969fbc4003e4ed2d6c98ec1db8d6d70a319362546bf816`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870119)
+  - `top-services-10-n3.jpg` (in `local/`, not in git): Page image of 大公報 19 Jan 1987, 港聞 page, with the drugs article; https://archive.org/download/NPTKP19870119/page/n3.jpg; 3885972 bytes; SHA-256 `d128b9a9660b782921969fbc4003e4ed2d6c98ec1db8d6d70a319362546bf816`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870119)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1281,7 +1281,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-01-21
 - **Files:**
-  - `top-services-17-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870121/page/n3.jpg; 4626348 bytes; SHA-256 `556db6dd309566b3e679304bbccda09dd68b68e53e66823d9fe73e3b589e2441`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870121)
+  - `top-services-17-n3.jpg` (in `local/`, not in git): Full-resolution scan of leaf n3 (港聞 page) of Ta Kung Pao (大公報), 21 January 1987, with the registration item and the feature 「城砦屋契考起專家」 (JPEG).; https://archive.org/download/NPTKP19870121/page/n3.jpg; 4626348 bytes; SHA-256 `556db6dd309566b3e679304bbccda09dd68b68e53e66823d9fe73e3b589e2441`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870121)
 - **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
 
 | Page | Fact | Words in the source |
@@ -1365,7 +1365,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after a District Board briefing (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-02-13
 - **Files:**
-  - `top-services-7-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870213/page/n4.jpg; 3717342 bytes; SHA-256 `b8b5c45ca0637b1f36ec9af52a041ecf5b167120da7a9e7e58b90c809b548f9f`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870213)
+  - `top-services-7-n4.jpg` (in `local/`, not in git): Page image of 大公報 13 Feb 1987, 港聞 page, with the working groups article; https://archive.org/download/NPTKP19870213/page/n4.jpg; 3717342 bytes; SHA-256 `b8b5c45ca0637b1f36ec9af52a041ecf5b167120da7a9e7e58b90c809b548f9f`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870213)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1388,8 +1388,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on a statement of a residents' body of the City (1987), and a report of a LegCo question to be asked the next day. It belongs in primary-sources/. The committee's own words (reported) are primary.)
 - **Date of the record:** 1987-02-17
 - **Files:**
-  - `gap-campus-socialwork-press-5-BookReaderImages.php` (in `local/`, not in git): https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/NPWK19870217/NPWK19870217_jp2.zip&file=NPWK19870217_jp2/NPWK19870217_0008.jp2&id=NPWK19870217&scale=1&rotate=0; 4564897 bytes; SHA-256 `c668729bcb6fda48cf9f13e87d149101f66f415cec6a003bf37c5c09e7da1a82`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870217)
-  - `gap-campus-socialwork-press-5-BookReaderImages.php` (in `local/`, not in git): https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/NPWK19870217/NPWK19870217_jp2.zip&file=NPWK19870217_jp2/NPWK19870217_0004.jp2&id=NPWK19870217&scale=1&rotate=0; 4784706 bytes; SHA-256 `12a5ab7b7104884c1e04bb2229db8b7469f87c8bab8f38f46b6235a148cb1a83`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870217)
+  - `gap-campus-socialwork-press-5-BookReaderImages-403ea695.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n8 of the archive.org scan of 華僑日報 17 Feb 1987 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19870217/page/n8; https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/NPWK19870217/NPWK19870217_jp2.zip&file=NPWK19870217_jp2/NPWK19870217_0008.jp2&id=NPWK19870217&scale=1&rotate=0; 4564897 bytes; SHA-256 `c668729bcb6fda48cf9f13e87d149101f66f415cec6a003bf37c5c09e7da1a82`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870217)
+  - `gap-campus-socialwork-press-5-BookReaderImages-a36613e1.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n4 of the archive.org scan of 華僑日報 17 Feb 1987 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19870217/page/n4; https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/NPWK19870217/NPWK19870217_jp2.zip&file=NPWK19870217_jp2/NPWK19870217_0004.jp2&id=NPWK19870217&scale=1&rotate=0; 4784706 bytes; SHA-256 `12a5ab7b7104884c1e04bb2229db8b7469f87c8bab8f38f46b6235a148cb1a83`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870217)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1415,8 +1415,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports made the day after the speeches (1987). They belong in primary-sources/.)
 - **Date of the record:** 1987-02-17
 - **Files:**
-  - `top-services-8-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870217/page/n4.jpg; 3971979 bytes; SHA-256 `5023c8f8719061dade5fbeec9a65efeff2da95fc5658df9b0adb743bbefdd912`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870217)
-  - `top-services-8-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870217/page/n3.jpg; 4426690 bytes; SHA-256 `904d3e0dcf881d55452c4546f126cdae4eca34aa070c2991ceb3e096f1dfb4ce`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870217)
+  - `top-services-8-n4.jpg` (in `local/`, not in git): Page image of 大公報 17 Feb 1987, 第五版, with the police article; https://archive.org/download/NPTKP19870217/page/n4.jpg; 3971979 bytes; SHA-256 `5023c8f8719061dade5fbeec9a65efeff2da95fc5658df9b0adb743bbefdd912`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870217)
+  - `top-services-8-n3.jpg` (in `local/`, not in git): Page image of 大公報 17 Feb 1987, 第四版, with the kaifong association article; https://archive.org/download/NPTKP19870217/page/n3.jpg; 4426690 bytes; SHA-256 `904d3e0dcf881d55452c4546f126cdae4eca34aa070c2991ceb3e096f1dfb4ce`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870217)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1443,7 +1443,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-02-26
 - **Files:**
-  - `top-services-18-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870226/page/n5.jpg; 3828423 bytes; SHA-256 `82392537415f751c024b81da28e51ecfa009367a36e0dedd62dc9aa390306b51`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870226)
+  - `top-services-18-n5.jpg` (in `local/`, not in git): Full-resolution scan of leaf n5 (港聞 page) of Ta Kung Pao (大公報), 26 February 1987, with the article and its photo of the visit (JPEG).; https://archive.org/download/NPTKP19870226/page/n5.jpg; 3828423 bytes; SHA-256 `82392537415f751c024b81da28e51ecfa009367a36e0dedd62dc9aa390306b51`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870226)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1466,8 +1466,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of what the Director of Housing told the LegCo Finance Committee the day before, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-03-06
 - **Files:**
-  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0004.jp2&ext=jpg; 2057586 bytes; SHA-256 `f3b27be6024a2fe8d09bea314e7b14e51c6d0bd164853a526830a3058306d7d0`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
-  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0008.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0008.jp2&ext=jpg; 2548840 bytes; SHA-256 `26de4f6e8e550147dd684f29c9ab0d9c32fca5d40570d8936aacea78f37d41a4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
+  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0004.jpg` (in `local/`, not in git): Full-resolution page image of leaf n4 (第二張第一頁, 本港新聞), the page with the main article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0004.jp2&ext=jpg; 2057586 bytes; SHA-256 `f3b27be6024a2fe8d09bea314e7b14e51c6d0bd164853a526830a3058306d7d0`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
+  - `zh-press-3-NPWK19870306_jp2_NPWK19870306_0008.jpg` (in `local/`, not in git): Full-resolution page image of leaf n8 (第三張第一頁, 本港新聞), the page with the appointment item, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870306/NPWK19870306_jp2.zip/NPWK19870306_jp2%2FNPWK19870306_0008.jp2&ext=jpg; 2548840 bytes; SHA-256 `26de4f6e8e550147dd684f29c9ab0d9c32fca5d40570d8936aacea78f37d41a4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870306)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1515,7 +1515,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-04-06
 - **Files:**
-  - `top-services-25-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870406/page/n3.jpg; 5317860 bytes; SHA-256 `cded777e9b49651cda04cea5e353d49f27d0043246a7f1983c1c10e95f2d71fb`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870406)
+  - `top-services-25-n3.jpg` (in `local/`, not in git): Full-resolution scan of leaf n3 (港聞 page) of Ta Kung Pao (大公報), 6 April 1987, with the article (JPEG).; https://archive.org/download/NPTKP19870406/page/n3.jpg; 5317860 bytes; SHA-256 `cded777e9b49651cda04cea5e353d49f27d0043246a7f1983c1c10e95f2d71fb`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870406)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1566,7 +1566,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of the LegCo Finance Committee meeting of the day before, with officials' answers, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-04-09
 - **Files:**
-  - `zh-press-5-NPWK19870409_jp2_NPWK19870409_0009.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870409/NPWK19870409_jp2.zip/NPWK19870409_jp2%2FNPWK19870409_0009.jp2&ext=jpg; 2527329 bytes; SHA-256 `564ac60d721a67d26c0c718222086f1b7bad3e4729cd1c9889ce0f16487ec92c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870409)
+  - `zh-press-5-NPWK19870409_jp2_NPWK19870409_0009.jpg` (in `local/`, not in git): Full-resolution page image of leaf n9 (第二張第三頁, 本港新聞), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870409/NPWK19870409_jp2.zip/NPWK19870409_jp2%2FNPWK19870409_0009.jp2&ext=jpg; 2527329 bytes; SHA-256 `564ac60d721a67d26c0c718222086f1b7bad3e4729cd1c9889ce0f16487ec92c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870409)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1605,7 +1605,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-04-29
 - **Files:**
-  - `top-services-19-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870429/page/n7.jpg; 5014499 bytes; SHA-256 `4f22611bdfde1ff6aacc47af9529f930bcf64efbfe5fcc3ce595d36bbf7e822d`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870429)
+  - `top-services-19-n7.jpg` (in `local/`, not in git): Full-resolution scan of leaf n7 of Ta Kung Pao (大公報), 29 April 1987, with the article (JPEG).; https://archive.org/download/NPTKP19870429/page/n7.jpg; 5014499 bytes; SHA-256 `4f22611bdfde1ff6aacc47af9529f930bcf64efbfe5fcc3ce595d36bbf7e822d`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870429)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1622,7 +1622,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1987-06-05
 - **Files:**
-  - `top-services-26-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870605/page/n7.jpg; 4029126 bytes; SHA-256 `30e29bf4e3979e8e81d3cbc7206bf722f46ce9378e1e74d02b7065cd2b051666`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870605)
+  - `top-services-26-n7.jpg` (in `local/`, not in git): Full-resolution scan of leaf n7 (printed page 8) of Ta Kung Pao (大公報), 5 June 1987, with the article (JPEG).; https://archive.org/download/NPTKP19870605/page/n7.jpg; 4029126 bytes; SHA-256 `30e29bf4e3979e8e81d3cbc7206bf722f46ce9378e1e74d02b7065cd2b051666`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19870605)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1662,7 +1662,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of what the spokesman of the special committee and the Land Authority said, made at the time (1987). Primary tree is correct.)
 - **Date of the record:** 1987-06-21
 - **Files:**
-  - `zh-press-8-NPWK19870621_jp2_NPWK19870621_0004.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPWK19870621/NPWK19870621_jp2.zip/NPWK19870621_jp2%2FNPWK19870621_0004.jp2&ext=jpg; 2326953 bytes; SHA-256 `501f8f7d692ae09baea6071f77e91aa9118ece2b4c0c4537a3746c2f1fca7d85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870621)
+  - `zh-press-8-NPWK19870621_jp2_NPWK19870621_0004.jpg` (in `local/`, not in git): Full-resolution page image of leaf n4 (第二張第一頁, 本港新聞), the page with the boxed article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19870621/NPWK19870621_jp2.zip/NPWK19870621_jp2%2FNPWK19870621_0004.jp2&ext=jpg; 2326953 bytes; SHA-256 `501f8f7d692ae09baea6071f77e91aa9118ece2b4c0c4537a3746c2f1fca7d85`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 華僑日報 (Wah Kiu Yat Po). (https://archive.org/details/NPWK19870621)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1685,7 +1685,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made on the day of the meeting (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-07-25
 - **Files:**
-  - `top-services-4-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19870725/page/n3.jpg; 4544260 bytes; SHA-256 `c42a6828a6dced8de3f9f6f890dd30c20fb38b9f68b7c1ea2ad9094cff1e5de0`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870725)
+  - `top-services-4-n3.jpg` (in `local/`, not in git): Page image of 大公報 25 Jul 1987, 港聞 page, with the compensation article; https://archive.org/download/NPTKP19870725/page/n3.jpg; 4544260 bytes; SHA-256 `c42a6828a6dced8de3f9f6f890dd30c20fb38b9f68b7c1ea2ad9094cff1e5de0`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19870725)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1748,7 +1748,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a government announcement, printed the next day (1987). It stays in primary-sources/.)
 - **Date of the record:** 1987-10-31 (the announcement was made on 30 October 1987)
 - **Files:**
-  - `top-zh-press-13-BookReaderImages.php` (in `local/`, not in git): https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/NPTKP19871031/NPTKP19871031_jp2.zip&file=NPTKP19871031_jp2/NPTKP19871031_0003.jp2&id=NPTKP19871031&scale=1&rotate=0; 5923311 bytes; SHA-256 `971b044e793cdc8e171f019b3677ff7bd6a4780fbacd3c2c6d037c234c98029c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19871031)
+  - `top-zh-press-13-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n3 (港聞 第四版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19871031/NPTKP19871031_jp2.zip/NPTKP19871031_jp2%2FNPTKP19871031_0003.jp2&ext=jpg .; https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/NPTKP19871031/NPTKP19871031_jp2.zip&file=NPTKP19871031_jp2/NPTKP19871031_0003.jp2&id=NPTKP19871031&scale=1&rotate=0; 5923311 bytes; SHA-256 `971b044e793cdc8e171f019b3677ff7bd6a4780fbacd3c2c6d037c234c98029c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19871031)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1769,7 +1769,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a government statement of the time (1987). It belongs in primary-sources/.)
 - **Date of the record:** 1987-11-18
 - **Files:**
-  - `top-services-5-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19871118/page/n8.jpg; 6049368 bytes; SHA-256 `bf9cfbcab38eb51588daeecbacc139f1761b5660ebed41f4c1883064069876e6`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19871118)
+  - `top-services-5-n8.jpg` (in `local/`, not in git): Page image of 華僑日報 18 Nov 1987, 本港新聞 page, with the dentists and wells article; https://archive.org/download/NPWK19871118/page/n8.jpg; 6049368 bytes; SHA-256 `bf9cfbcab38eb51588daeecbacc139f1761b5660ebed41f4c1883064069876e6`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19871118)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1792,7 +1792,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the time (1987). They belong in primary-sources/.)
 - **Date of the record:** 1987-12-26
 - **Files:**
-  - `top-services-9-n3.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19871226/page/n3.jpg; 4442211 bytes; SHA-256 `481de2ed782ecddb8fef3dc38c5d5105a14b485dcfb9c70b7784394c9479073b`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19871226)
+  - `top-services-9-n3.jpg` (in `local/`, not in git): Page image of 大公報 26 Dec 1987, 第一張第四版, with the two City articles; https://archive.org/download/NPTKP19871226/page/n3.jpg; 4442211 bytes; SHA-256 `481de2ed782ecddb8fef3dc38c5d5105a14b485dcfb9c70b7784394c9479073b`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19871226)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1822,7 +1822,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a meeting held the day before (1988). Primary tree.)
 - **Date of the record:** 1988-03-17 (the meeting was on 16 March 1988)
 - **Files:**
-  - `top-zh-press-14-BookReaderImages.php` (in `local/`, not in git): https://ia601004.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPTKP19880317/NPTKP19880317_jp2.zip&file=NPTKP19880317_jp2/NPTKP19880317_0006.jp2&id=NPTKP19880317&scale=1&rotate=0; 3665408 bytes; SHA-256 `966914978478e010b2049043d89647c1832c3108f5c22651607e5662a0043f23`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880317)
+  - `top-zh-press-14-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19880317/NPTKP19880317_jp2.zip/NPTKP19880317_jp2%2FNPTKP19880317_0006.jp2&ext=jpg .; https://ia601004.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPTKP19880317/NPTKP19880317_jp2.zip&file=NPTKP19880317_jp2/NPTKP19880317_0006.jp2&id=NPTKP19880317&scale=1&rotate=0; 3665408 bytes; SHA-256 `966914978478e010b2049043d89647c1832c3108f5c22651607e5662a0043f23`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880317)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1843,7 +1843,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a committee meeting of the day before (1988). Primary tree.)
 - **Date of the record:** 1988-07-23 (reports 22 July 1988)
 - **Files:**
-  - `gap-named-persons-records-10-BookReaderImages.php` (in `local/`, not in git): https://ia600707.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/NPWK19880723/NPWK19880723_jp2.zip&file=NPWK19880723_jp2/NPWK19880723_0004.jp2&id=NPWK19880723&scale=1&rotate=0; 4576008 bytes; SHA-256 `ca1b9433b9f302a4449f4558f2a2eb8c7b1fe7f993e9078f7f33bcb69dfb803f`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19880723)
+  - `gap-named-persons-records-10-BookReaderImages.jpg` (in `local/`, not in git): Scan of the local news page (leaf n4) with the article, JPEG from the BookReader image service; https://ia600707.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/NPWK19880723/NPWK19880723_jp2.zip&file=NPWK19880723_jp2/NPWK19880723_0004.jp2&id=NPWK19880723&scale=1&rotate=0; 4576008 bytes; SHA-256 `ca1b9433b9f302a4449f4558f2a2eb8c7b1fe7f993e9078f7f33bcb69dfb803f`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19880723)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1868,7 +1868,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an announcement and a meeting of the day before (1988). Primary tree.)
 - **Date of the record:** 1988-09-04 (the announcement and the meeting were on 3 September 1988)
 - **Files:**
-  - `top-zh-press-17-BookReaderImages.php` (in `local/`, not in git): https://ia803201.us.archive.org/BookReader/BookReaderImages.php?zip=/24/items/NPTKP19880904/NPTKP19880904_jp2.zip&file=NPTKP19880904_jp2/NPTKP19880904_0005.jp2&id=NPTKP19880904&scale=1&rotate=0; 4269570 bytes; SHA-256 `09becb6e015c9cdacb85f87383e923b061ae1e5b461c55808686545cb06161ab`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880904)
+  - `top-zh-press-17-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n5 (港聞 第六版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19880904/NPTKP19880904_jp2.zip/NPTKP19880904_jp2%2FNPTKP19880904_0005.jp2&ext=jpg .; https://ia803201.us.archive.org/BookReader/BookReaderImages.php?zip=/24/items/NPTKP19880904/NPTKP19880904_jp2.zip&file=NPTKP19880904_jp2/NPTKP19880904_0005.jp2&id=NPTKP19880904&scale=1&rotate=0; 4269570 bytes; SHA-256 `09becb6e015c9cdacb85f87383e923b061ae1e5b461c55808686545cb06161ab`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19880904)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1890,7 +1890,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an event found the day before (1988). Primary tree.)
 - **Date of the record:** 1988-10-13 (the child was found on the morning of 12 October 1988)
 - **Files:**
-  - `top-zh-press-18-BookReaderImages.php` (in `local/`, not in git): https://ia600109.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPTKP19881013/NPTKP19881013_jp2.zip&file=NPTKP19881013_jp2/NPTKP19881013_0006.jp2&id=NPTKP19881013&scale=1&rotate=0; 4043519 bytes; SHA-256 `266454aa31887ad97c16717d066d9294868cd0a0fca40e0a44d81d92e82fa549`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881013)
+  - `top-zh-press-18-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), the page with the article and photo, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19881013/NPTKP19881013_jp2.zip/NPTKP19881013_jp2%2FNPTKP19881013_0006.jp2&ext=jpg . It names private persons.; https://ia600109.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPTKP19881013/NPTKP19881013_jp2.zip&file=NPTKP19881013_jp2/NPTKP19881013_0006.jp2&id=NPTKP19881013&scale=1&rotate=0; 4043519 bytes; SHA-256 `266454aa31887ad97c16717d066d9294868cd0a0fca40e0a44d81d92e82fa549`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881013)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1915,7 +1915,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an event of the day before (1988). Primary tree.)
 - **Date of the record:** 1988-11-08 (the event was on 7 November 1988)
 - **Files:**
-  - `top-zh-press-20-BookReaderImages.php` (in `local/`, not in git): https://ia800504.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/NPTKP19881108/NPTKP19881108_jp2.zip&file=NPTKP19881108_jp2/NPTKP19881108_0008.jp2&id=NPTKP19881108&scale=1&rotate=0; 4109084 bytes; SHA-256 `2308084f21b4ab9885767813193f17c2ab6cd52115aa53ad836b6089a1e610fb`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881108)
+  - `top-zh-press-20-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n8 (港聞 第九版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19881108/NPTKP19881108_jp2.zip/NPTKP19881108_jp2%2FNPTKP19881108_0008.jp2&ext=jpg .; https://ia800504.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/NPTKP19881108/NPTKP19881108_jp2.zip&file=NPTKP19881108_jp2/NPTKP19881108_0008.jp2&id=NPTKP19881108&scale=1&rotate=0; 4109084 bytes; SHA-256 `2308084f21b4ab9885767813193f17c2ab6cd52115aa53ad836b6089a1e610fb`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19881108)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1933,9 +1933,9 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (Daily news reports made the day after each event (1989, 1990). They belong in primary-sources/.)
 - **Date of the record:** 1989-01-14 (related items 1989-09-24 and 1990-02-15)
 - **Files:**
-  - `gap-named-persons-records-13-n4.jpg` (in `local/`, not in git): https://archive.org/download/NPWK19890114/page/n4.jpg; 5343444 bytes; SHA-256 `d293796a6ca8719412b87b76b2244bcb897778d13c8256f1004efc52df1d9849`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19890114)
-  - `gap-named-persons-records-13-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19890924/page/n6.jpg; 4191844 bytes; SHA-256 `04f1080ac8ee4bcae65668294469203ed264c1b0d6e87d04e1c9901f9f046bc8`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19890924)
-  - `gap-named-persons-records-13-n5.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19900215/page/n5.jpg; 3715144 bytes; SHA-256 `5f70eef95312d68263465375d37515526a153078706d808653a13dd0efdfa0b2`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19900215)
+  - `gap-named-persons-records-13-n4.jpg` (in `local/`, not in git): Page image of 華僑日報 14 Jan 1989, 本港新聞 page 5 (both City articles); https://archive.org/download/NPWK19890114/page/n4.jpg; 5343444 bytes; SHA-256 `d293796a6ca8719412b87b76b2244bcb897778d13c8256f1004efc52df1d9849`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19890114)
+  - `gap-named-persons-records-13-n6.jpg` (in `local/`, not in git): Page image of 大公報 24 Sep 1989, 港聞 第七版 (association anniversary and office-bearers); https://archive.org/download/NPTKP19890924/page/n6.jpg; 4191844 bytes; SHA-256 `04f1080ac8ee4bcae65668294469203ed264c1b0d6e87d04e1c9901f9f046bc8`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19890924)
+  - `gap-named-persons-records-13-n5.jpg` (in `local/`, not in git): Page image of 大公報 15 Feb 1990, 港聞 第六版 (Xinhua banquet for the association); https://archive.org/download/NPTKP19900215/page/n5.jpg; 3715144 bytes; SHA-256 `5f70eef95312d68263465375d37515526a153078706d808653a13dd0efdfa0b2`; licence: No rights statement on the archive.org item (uploaded scan in the collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19900215)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -1994,7 +1994,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement to the Kowloon City District Board the day before (1989). Primary tree.)
 - **Date of the record:** 1989-02-15 (the statement was on 14 February 1989)
 - **Files:**
-  - `top-zh-press-21-BookReaderImages.php` (in `local/`, not in git): https://ia600504.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPTKP19890215/NPTKP19890215_jp2.zip&file=NPTKP19890215_jp2/NPTKP19890215_0006.jp2&id=NPTKP19890215&scale=1&rotate=0; 4232724 bytes; SHA-256 `7e747d70b8c064f1371e462391b86da12b2f6295a7e6fb0c50b651d1c5604d54`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19890215)
+  - `top-zh-press-21-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19890215/NPTKP19890215_jp2.zip/NPTKP19890215_jp2%2FNPTKP19890215_0006.jp2&ext=jpg .; https://ia600504.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPTKP19890215/NPTKP19890215_jp2.zip&file=NPTKP19890215_jp2/NPTKP19890215_0006.jp2&id=NPTKP19890215&scale=1&rotate=0; 4232724 bytes; SHA-256 `7e747d70b8c064f1371e462391b86da12b2f6295a7e6fb0c50b651d1c5604d54`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19890215)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2022,8 +2022,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1989-04-05
 - **Files:**
-  - `top-services-22-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19890405/page/n6.jpg; 4018523 bytes; SHA-256 `6d767116fe18c0ce081449294a455b52247dab0cfef4782b0ce9a3db425bc55b`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19890405)
-  - `top-services-22-n8.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19890405/page/n8.jpg; 3452763 bytes; SHA-256 `db057fd490f43c0eb6d46fe595413133bc2dd20689c26f5ba43a91c30fa25bd5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19890405)
+  - `top-services-22-n6.jpg` (in `local/`, not in git): Full-resolution scan of leaf n6 of Ta Kung Pao (大公報), 5 April 1989, with the article and its photo (JPEG).; https://archive.org/download/NPTKP19890405/page/n6.jpg; 4018523 bytes; SHA-256 `6d767116fe18c0ce081449294a455b52247dab0cfef4782b0ce9a3db425bc55b`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19890405)
+  - `top-services-22-n8.jpg` (in `local/`, not in git): Full-resolution scan of leaf n8 of Ta Kung Pao (大公報), 5 April 1989, with the photo feature 「別了城寨」 (JPEG).; https://archive.org/download/NPTKP19890405/page/n8.jpg; 3452763 bytes; SHA-256 `db057fd490f43c0eb6d46fe595413133bc2dd20689c26f5ba43a91c30fa25bd5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19890405)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2042,8 +2042,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news notice of 1989 about a play. The play itself is a depiction of the City (1989), and the facts on its story are a depiction, not a record of the City.)
 - **Date of the record:** 1989-11-21 and 1989-11-30
 - **Files:**
-  - `gap-named-persons-records-7-BookReaderImages.php` (in `local/`, not in git): https://ia801900.us.archive.org/BookReader/BookReaderImages.php?zip=/26/items/NPWK19891121/NPWK19891121_jp2.zip&file=NPWK19891121_jp2/NPWK19891121_0003.jp2&id=NPWK19891121&scale=1&rotate=0; 5634571 bytes; SHA-256 `50c0c1780a52966274f1dd59c747e8c14915a7e3d77a9ef51c48aec624260452`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891121)
-  - `gap-named-persons-records-7-BookReaderImages.php` (in `local/`, not in git): https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19891130/NPWK19891130_jp2.zip&file=NPWK19891130_jp2/NPWK19891130_0010.jp2&id=NPWK19891130&scale=1&rotate=0; 4268750 bytes; SHA-256 `1756559b795250188dc6c5d5091c27f1aa4ba0e3b77049bc7777173a8dca0398`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891130)
+  - `gap-named-persons-records-7-BookReaderImages-3e1756d6.jpg` (in `local/`, not in git): Scan of the culture page (leaf n3) with the article, JPEG from the BookReader image service; https://ia801900.us.archive.org/BookReader/BookReaderImages.php?zip=/26/items/NPWK19891121/NPWK19891121_jp2.zip&file=NPWK19891121_jp2/NPWK19891121_0003.jp2&id=NPWK19891121&scale=1&rotate=0; 5634571 bytes; SHA-256 `50c0c1780a52966274f1dd59c747e8c14915a7e3d77a9ef51c48aec624260452`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891121)
+  - `gap-named-persons-records-7-BookReaderImages-8e4c539d.jpg` (in `local/`, not in git): Scan of the culture page (leaf n10) with the article, JPEG from the BookReader image service; https://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/NPWK19891130/NPWK19891130_jp2.zip&file=NPWK19891130_jp2/NPWK19891130_0010.jp2&id=NPWK19891130&scale=1&rotate=0; 4268750 bytes; SHA-256 `1756559b795250188dc6c5d5091c27f1aa4ba0e3b77049bc7777173a8dca0398`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19891130)
 - **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../secondary-sources/hk-chinese-press-1985-1993/SOURCE.md).
 
 | Page | Fact | Words in the source |
@@ -2063,7 +2063,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1989-12-31
 - **Files:**
-  - `top-services-23-n6.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19891231/page/n6.jpg; 4383180 bytes; SHA-256 `b3fbba9fe9799d2be712e337e33f662070624298c8f04f534708b244266657e5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19891231)
+  - `top-services-23-n6.jpg` (in `local/`, not in git): Full-resolution scan of leaf n6 (printed page 7, 港聞) of Ta Kung Pao (大公報), 31 December 1989, with the article (JPEG).; https://archive.org/download/NPTKP19891231/page/n6.jpg; 4383180 bytes; SHA-256 `b3fbba9fe9799d2be712e337e33f662070624298c8f04f534708b244266657e5`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19891231)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2085,7 +2085,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a police chase of the day before (1990). Primary tree.)
 - **Date of the record:** 1990-02-01 (the chase was at about 5 pm on 31 January 1990)
 - **Files:**
-  - `top-zh-press-22-BookReaderImages.php` (in `local/`, not in git): https://ia903206.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/NPTKP19900201/NPTKP19900201_jp2.zip&file=NPTKP19900201_jp2/NPTKP19900201_0006.jp2&id=NPTKP19900201&scale=1&rotate=0; 4369220 bytes; SHA-256 `48526826027f9b80759e3dbc73035039d57f3aa54317bb4642fa7609f07d0945`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19900201)
+  - `top-zh-press-22-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), with the chase article and the second article on the clearance, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19900201/NPTKP19900201_jp2.zip/NPTKP19900201_jp2%2FNPTKP19900201_0006.jp2&ext=jpg .; https://ia903206.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/NPTKP19900201/NPTKP19900201_jp2.zip&file=NPTKP19900201_jp2/NPTKP19900201_0006.jp2&id=NPTKP19900201&scale=1&rotate=0; 4369220 bytes; SHA-256 `48526826027f9b80759e3dbc73035039d57f3aa54317bb4642fa7609f07d0945`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19900201)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2108,7 +2108,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement of the day before (1990). Primary tree.)
 - **Date of the record:** 1990-03-20 (the statement was on 19 March 1990)
 - **Files:**
-  - `top-zh-press-23-BookReaderImages.php` (in `local/`, not in git): https://ia801007.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/NPTKP19900320/NPTKP19900320_jp2.zip&file=NPTKP19900320_jp2/NPTKP19900320_0006.jp2&id=NPTKP19900320&scale=1&rotate=0; 4404421 bytes; SHA-256 `2bdfb36028afeac05313c7fc3fe00feaad4a3c0a959d200c2b7d2229d08a020e`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19900320)
+  - `top-zh-press-23-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (港聞 第七版), the page with the article, JPEG from the archive.org BookReader image service at scale=1 (about 3500 x 4800 px). If the server name in the URL changes, the same leaf at half resolution is at https://archive.org/download/NPTKP19900320/NPTKP19900320_jp2.zip/NPTKP19900320_jp2%2FNPTKP19900320_0006.jp2&ext=jpg .; https://ia801007.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/NPTKP19900320/NPTKP19900320_jp2.zip&file=NPTKP19900320_jp2/NPTKP19900320_0006.jp2&id=NPTKP19900320&scale=1&rotate=0; 4404421 bytes; SHA-256 `2bdfb36028afeac05313c7fc3fe00feaad4a3c0a959d200c2b7d2229d08a020e`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19900320)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2127,7 +2127,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day on what the official in charge of the clearance told the Kowloon City District Board (1990). It belongs in primary-sources/.)
 - **Date of the record:** 1990-05-04
 - **Files:**
-  - `gap-clearance-from-below-13-BookReaderImages.php` (in `local/`, not in git): https://ia800102.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/NPWK19900504/NPWK19900504_jp2.zip&file=NPWK19900504_jp2/NPWK19900504_0002.jp2&id=NPWK19900504&scale=1&rotate=0; 4493876 bytes; SHA-256 `2bf853d22f83fd396780ff90ea7c0ddc700020affc99298bdd6d52feb14888ec`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19900504)
+  - `gap-clearance-from-below-13-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n2 of the archive.org scan of 華僑日報 4 May 1990 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19900504/page/n2; https://ia800102.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/NPWK19900504/NPWK19900504_jp2.zip&file=NPWK19900504_jp2/NPWK19900504_0002.jp2&id=NPWK19900504&scale=1&rotate=0; 4493876 bytes; SHA-256 `2bf853d22f83fd396780ff90ea7c0ddc700020affc99298bdd6d52feb14888ec`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19900504)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2217,7 +2217,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1991-04-12
 - **Files:**
-  - `top-services-24-n10.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19910412/page/n10.jpg; 4015525 bytes; SHA-256 `2ce4f0fcd1294ecc979a99c05d5c6ed909c51d973599ce69c3fb94101936a331`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19910412)
+  - `top-services-24-n10.jpg` (in `local/`, not in git): Full-resolution scan of leaf n10 (printed page 11, 港聞) of Ta Kung Pao (大公報), 12 April 1991, with the article (JPEG).; https://archive.org/download/NPTKP19910412/page/n10.jpg; 4015525 bytes; SHA-256 `2ce4f0fcd1294ecc979a99c05d5c6ed909c51d973599ce69c3fb94101936a331`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19910412)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2234,7 +2234,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of an official statement and of a residents' statement of the day before (1991). Primary tree.)
 - **Date of the record:** 1991-05-17 (reports 16 May 1991)
 - **Files:**
-  - `gap-named-persons-records-12-BookReaderImages.php` (in `local/`, not in git): https://ia801003.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPTKP19910517/NPTKP19910517_jp2.zip&file=NPTKP19910517_jp2/NPTKP19910517_0009.jp2&id=NPTKP19910517&scale=1&rotate=0; 4513136 bytes; SHA-256 `cff255ef4bc4fc75dc7b7055b6949dacbafd339c0e27772fd4c47aba0c972d78`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19910517)
+  - `gap-named-persons-records-12-BookReaderImages.jpg` (in `local/`, not in git): Scan of the TKP local news page (leaf n9) with both City articles, JPEG from the BookReader image service; https://ia801003.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/NPTKP19910517/NPTKP19910517_jp2.zip&file=NPTKP19910517_jp2/NPTKP19910517_0009.jp2&id=NPTKP19910517&scale=1&rotate=0; 4513136 bytes; SHA-256 `cff255ef4bc4fc75dc7b7055b6949dacbafd339c0e27772fd4c47aba0c972d78`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19910517)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2261,7 +2261,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the event (1991), with the statement of a government official. Primary tree is correct.)
 - **Date of the record:** 1991-08-17
 - **Files:**
-  - `top-zh-press-25-NPTKP19910817_jp2_NPTKP19910817_0010.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19910817/NPTKP19910817_jp2.zip/NPTKP19910817_jp2%2FNPTKP19910817_0010.jp2&ext=jpg; 1936148 bytes; SHA-256 `5179ccaa946a0285b544973e44c310f6304d3b7dbe14780884523658e9ad28b4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19910817)
+  - `top-zh-press-25-NPTKP19910817_jp2_NPTKP19910817_0010.jpg` (in `local/`, not in git): Full-resolution page image of leaf n10 (港聞), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPTKP19910817/NPTKP19910817_jp2.zip/NPTKP19910817_jp2%2FNPTKP19910817_0010.jp2&ext=jpg; 1936148 bytes; SHA-256 `5179ccaa946a0285b544973e44c310f6304d3b7dbe14780884523658e9ad28b4`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19910817)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2282,7 +2282,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's statement at the District Board the day before (1991). Primary tree.)
 - **Date of the record:** 1991-08-23 (reports 22 August 1991)
 - **Files:**
-  - `gap-named-persons-records-11-BookReaderImages.php` (in `local/`, not in git): https://ia800503.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/NPTKP19910823/NPTKP19910823_jp2.zip&file=NPTKP19910823_jp2/NPTKP19910823_0010.jp2&id=NPTKP19910823&scale=1&rotate=0; 3038392 bytes; SHA-256 `075faf100074278c91fc2200a573061f4e150f234507e0dacec3e96c0db5ef90`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19910823)
+  - `gap-named-persons-records-11-BookReaderImages.jpg` (in `local/`, not in git): Scan of the TKP local news page (leaf n10) with the article, JPEG from the BookReader image service; https://ia800503.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/NPTKP19910823/NPTKP19910823_jp2.zip&file=NPTKP19910823_jp2/NPTKP19910823_0010.jp2&id=NPTKP19910823&scale=1&rotate=0; 3038392 bytes; SHA-256 `075faf100074278c91fc2200a573061f4e150f234507e0dacec3e96c0db5ef90`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19910823)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2340,7 +2340,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the next day, with a news photo (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-10-29
 - **Files:**
-  - `gap-clearance-from-below-16-BookReaderImages.php` (in `local/`, not in git): https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/12/items/NPWK19911029/NPWK19911029_jp2.zip&file=NPWK19911029_jp2/NPWK19911029_0002.jp2&id=NPWK19911029&scale=1&rotate=0; 4445379 bytes; SHA-256 `fd80c0d2d87b69d49ec4c5f53ba9bf5cf4122df6ea57cf5a754ff9767d9a947e`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911029)
+  - `gap-clearance-from-below-16-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n2 of the archive.org scan of 華僑日報 29 Oct 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19911029/page/n2; https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/12/items/NPWK19911029/NPWK19911029_jp2.zip&file=NPWK19911029_jp2/NPWK19911029_0002.jp2&id=NPWK19911029&scale=1&rotate=0; 4445379 bytes; SHA-256 `fd80c0d2d87b69d49ec4c5f53ba9bf5cf4122df6ea57cf5a754ff9767d9a947e`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911029)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2365,7 +2365,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report made the day after the events (1991). The narration is the reporter's, but it reports events of the day before. Primary tree is correct.)
 - **Date of the record:** 1991-10-29
 - **Files:**
-  - `top-zh-press-26-NPTKP19911029_jp2_NPTKP19911029_0011.jp2_ext_jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19911029/NPTKP19911029_jp2.zip/NPTKP19911029_jp2%2FNPTKP19911029_0011.jp2&ext=jpg; 1839337 bytes; SHA-256 `fad1af63e73e8a0457f6d67306a89a7e3ff3afc3dc8401fc148a9018fdafb032`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19911029)
+  - `top-zh-press-26-NPTKP19911029_jp2_NPTKP19911029_0011.jpg` (in `local/`, not in git): Full-resolution page image of leaf n11 (港聞), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPTKP19911029/NPTKP19911029_jp2.zip/NPTKP19911029_jp2%2FNPTKP19911029_0011.jp2&ext=jpg; 1839337 bytes; SHA-256 `fad1af63e73e8a0457f6d67306a89a7e3ff3afc3dc8401fc148a9018fdafb032`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader, with no source named). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19911029)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2389,7 +2389,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A newspaper report of the day before the first clearance (1991). It belongs in primary-sources/.)
 - **Date of the record:** 1991-11-27
 - **Files:**
-  - `gap-clearance-from-below-18-BookReaderImages.php` (in `local/`, not in git): https://ia600501.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPWK19911127/NPWK19911127_jp2.zip&file=NPWK19911127_jp2/NPWK19911127_0004.jp2&id=NPWK19911127&scale=1&rotate=0; 6014625 bytes; SHA-256 `7d1e528be3d551e406925de28f5734731bb11325c281b07b544324d22f1785e2`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911127)
+  - `gap-clearance-from-below-18-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n4 of the archive.org scan of 華僑日報 27 Nov 1991 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19911127/page/n4; https://ia600501.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPWK19911127/NPWK19911127_jp2.zip&file=NPWK19911127_jp2/NPWK19911127_0004.jp2&id=NPWK19911127&scale=1&rotate=0; 6014625 bytes; SHA-256 `7d1e528be3d551e406925de28f5734731bb11325c281b07b544324d22f1785e2`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19911127)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2415,7 +2415,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of an official's words of the day before (1991). Primary tree.)
 - **Date of the record:** 1991-12-02 (reports 1 December 1991)
 - **Files:**
-  - `gap-named-persons-records-9-BookReaderImages.php` (in `local/`, not in git): https://ia801904.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19911202/NPTKP19911202_jp2.zip&file=NPTKP19911202_jp2/NPTKP19911202_0011.jp2&id=NPTKP19911202&scale=1&rotate=0; 4150505 bytes; SHA-256 `033db259685fd2cad03592957e752a17fee11a22a5482d6429e8b0be1bc60c94`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911202)
+  - `gap-named-persons-records-9-BookReaderImages.jpg` (in `local/`, not in git): Scan of the TKP local news page (leaf n11) with the article, JPEG from the BookReader image service; https://ia801904.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/NPTKP19911202/NPTKP19911202_jp2.zip&file=NPTKP19911202_jp2/NPTKP19911202_0011.jp2&id=NPTKP19911202&scale=1&rotate=0; 4150505 bytes; SHA-256 `033db259685fd2cad03592957e752a17fee11a22a5482d6429e8b0be1bc60c94`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911202)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2447,8 +2447,8 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (News reports of the next day (1991) on a petition and an official statement. Primary tree.)
 - **Date of the record:** 1991-12-04 (reports 2-3 December 1991)
 - **Files:**
-  - `gap-clearance-from-below-22-BookReaderImages.php` (in `local/`, not in git): https://ia801908.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPWK19911204/NPWK19911204_jp2.zip&file=NPWK19911204_jp2/NPWK19911204_0002.jp2&id=NPWK19911204&scale=1&rotate=0; 4290042 bytes; SHA-256 `79914eea62857e5e3ab02c46a1a45dbb1cb01c4dd53e067754b3d9ad65660958`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911204)
-  - `gap-clearance-from-below-22-BookReaderImages.php` (in `local/`, not in git): https://ia800804.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPTKP19911204/NPTKP19911204_jp2.zip&file=NPTKP19911204_jp2/NPTKP19911204_0010.jp2&id=NPTKP19911204&scale=1&rotate=0; 2519360 bytes; SHA-256 `aa21f55f26ab23d626291c429d77ab0d92e30f6c5bd5fd4214b6df4d100fcb05`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911204)
+  - `gap-clearance-from-below-22-BookReaderImages-1dba4847.jpg` (in `local/`, not in git): Scan of the WKYP local news page (leaf n2) with both City articles, JPEG from the BookReader image service; https://ia801908.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/NPWK19911204/NPWK19911204_jp2.zip&file=NPWK19911204_jp2/NPWK19911204_0002.jp2&id=NPWK19911204&scale=1&rotate=0; 4290042 bytes; SHA-256 `79914eea62857e5e3ab02c46a1a45dbb1cb01c4dd53e067754b3d9ad65660958`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911204)
+  - `gap-clearance-from-below-22-BookReaderImages-926ee156.jpg` (in `local/`, not in git): Scan of the TKP local news page (leaf n10) with the City article, JPEG from the BookReader image service; https://ia800804.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/NPTKP19911204/NPTKP19911204_jp2.zip&file=NPTKP19911204_jp2/NPTKP19911204_0010.jp2&id=NPTKP19911204&scale=1&rotate=0; 2519360 bytes; SHA-256 `aa21f55f26ab23d626291c429d77ab0d92e30f6c5bd5fd4214b6df4d100fcb05`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911204)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2479,7 +2479,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a written answer given in the Legislative Council the day before (1991). Primary tree.)
 - **Date of the record:** 1991-12-05 (reports 4 December 1991)
 - **Files:**
-  - `gap-clearance-from-below-23-BookReaderImages.php` (in `local/`, not in git): https://ia800502.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/NPTKP19911205/NPTKP19911205_jp2.zip&file=NPTKP19911205_jp2/NPTKP19911205_0010.jp2&id=NPTKP19911205&scale=1&rotate=0; 3650930 bytes; SHA-256 `d54216b9679e13228b78b2affb02330988d43bc0dc86db94c9434cde4215a83f`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911205)
+  - `gap-clearance-from-below-23-BookReaderImages.jpg` (in `local/`, not in git): Scan of the TKP local news page (leaf n10) with the article, JPEG from the BookReader image service; https://ia800502.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/NPTKP19911205/NPTKP19911205_jp2.zip&file=NPTKP19911205_jp2/NPTKP19911205_0010.jp2&id=NPTKP19911205&scale=1&rotate=0; 3650930 bytes; SHA-256 `d54216b9679e13228b78b2affb02330988d43bc0dc86db94c9434cde4215a83f`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPTKP19911205)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2499,7 +2499,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A news report of a residents' statement of the day before (1991). Primary tree.)
 - **Date of the record:** 1991-12-19 (reports a statement of 18 December 1991)
 - **Files:**
-  - `gap-clearance-from-below-24-BookReaderImages.php` (in `local/`, not in git): https://ia800805.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/NPWK19911219/NPWK19911219_jp2.zip&file=NPWK19911219_jp2/NPWK19911219_0004.jp2&id=NPWK19911219&scale=1&rotate=0; 3921236 bytes; SHA-256 `4643059916f37be08ed796988cd3c2f56d80fc8210af4b4d84b4e5701c4b5bed`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911219)
+  - `gap-clearance-from-below-24-BookReaderImages.jpg` (in `local/`, not in git): Scan of the local news page (leaf n4) with the article, JPEG from the BookReader image service; https://ia800805.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/NPWK19911219/NPWK19911219_jp2.zip&file=NPWK19911219_jp2/NPWK19911219_0004.jp2&id=NPWK19911219&scale=1&rotate=0; 3921236 bytes; SHA-256 `4643059916f37be08ed796988cd3c2f56d80fc8210af4b4d84b4e5701c4b5bed`; licence: No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher (https://archive.org/details/NPWK19911219)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2517,7 +2517,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A Hong Kong daily newspaper report printed the day after the events it reports. It belongs in primary-sources/.)
 - **Date of the record:** 1985-03-01
 - **Files:**
-  - `top-services-27-n7.jpg` (in `local/`, not in git): https://archive.org/download/NPTKP19850301/page/n7.jpg; 3757498 bytes; SHA-256 `0a17bbe978db2c48130c80301c4b56ae5d2f80d2e1620fb57cfeefa3490fc747`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19850301)
+  - `top-services-27-n7.jpg` (in `local/`, not in git): Full-resolution scan of leaf n7 (printed page 8) of Ta Kung Pao (大公報), 1 March 1985, with the court report (JPEG).; https://archive.org/download/NPTKP19850301/page/n7.jpg; 3757498 bytes; SHA-256 `0a17bbe978db2c48130c80301c4b56ae5d2f80d2e1620fb57cfeefa3490fc747`; licence: No licence or rights statement: the archive.org item metadata has no 'rights' and no 'licenseurl'. The newspaper is copyright of Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19850301)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -2535,7 +2535,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Class:** primary (A comment piece in a newspaper of the time (January 1987), two weeks after the clearance was announced. Kinds corrected on 2026-11-19: the narration of a report of the time is a record made at the time (primary); only background history is secondary.)
 - **Date of the record:** 1987-01-27
 - **Files:**
-  - `gap-campus-socialwork-press-14-BookReaderImages.php` (in `local/`, not in git): https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/NPWK19870127/NPWK19870127_jp2.zip&file=NPWK19870127_jp2/NPWK19870127_0009.jp2&id=NPWK19870127&scale=1&rotate=0; 5513272 bytes; SHA-256 `4f7cee0567063adfba339941fc9422dff9cb3f4a5e4aa565c9c8a3c011e51d9d`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870127)
+  - `gap-campus-socialwork-press-14-BookReaderImages.jpg` (in `local/`, not in git): Full-resolution JPEG of leaf n9 of the archive.org scan of 華僑日報 27 Jan 1987 (the page with the article), about 4-6 MB. Item page: https://archive.org/details/NPWK19870127/page/n9; https://ia601608.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/NPWK19870127/NPWK19870127_jp2.zip&file=NPWK19870127_jp2/NPWK19870127_0009.jp2&id=NPWK19870127&scale=1&rotate=0; 5513272 bytes; SHA-256 `4f7cee0567063adfba339941fc9422dff9cb3f4a5e4aa565c9c8a3c011e51d9d`; licence: No rights statement: the archive.org item has empty 'rights' and 'licenseurl' fields (uploaded by a private person, collections 'china-mail' and 'newspapers'). Copyright of the publisher. (https://archive.org/details/NPWK19870127)
 
 | Page | Fact | Words in the source |
 |---|---|---|
