@@ -111,25 +111,30 @@ Journal Asia for its 2014 online exhibition.
 
 ## More items: the source search of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 1 items. New parts of the Suenn Ho records.
 
 ### top-gap-tv-news-archives-2: Exploring Kowloon Walled City In An Afternoon – Vlog ( 1991) By Suenn Ho
 
-- **Creator:** Suenn Ho (何巽) (footage); uploaded to YouTube by 'Johny Bobbles Archives', then copied to archive.org by two other users
-- **Date:** 1991
-- **Kind:** film
-- **Class:** primary (Footage that Suenn Ho shot inside the City in 1991 during her field research.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown: the uploader set the Public Domain Mark 1.0, but the footage is © Suenn Ho (M+ CA17), thus the mark is doubtful
-- **Link:** https://archive.org/details/exploring-kowloon-walled-city-in-an-afternoon-vlog-1991-by-suenn-ho_202511
-- **Other links:** https://archive.org/details/exploring-kowloon-walled-city-in-an-afternoon-vlog-1991-by-suenn-ho, https://archive.org/details/youtube-_reCv-ix-So, https://www.youtube.com/watch?v=_reCv-ix-So
-- **Proof that it exists:** archive.org metadata: title 'Exploring Kowloon Walled City In An Afternoon – Vlog ( 1991) By Suenn Ho', creator Suenn Ho, date 1991, added 2025-11-26
-- **What it gives (finder's note, not checked):** Moving images of the alleys and shops inside the City in 1991, from the researcher whose 12 cassettes M+ holds. The repo holds only the M+ catalogue of these cassettes, not the video.
-- **Notes:** Three copies: '_202511' (added 2025-11-26, description 'Exploring Kowloon Walled City in an Afternoon – Vlog (1991) by Suenn Ho'), the first archive.org copy (added 2025-08-27, description 'Video exploring Kowloon walled city in 1991 uploaded on youtube by Johny Bobbles Archives') and 'youtube-_reCv-ix-So' (creator Johny Bobbles Archives, date 1991). The word 'Vlog' is the uploader's, not Suenn Ho's. The YouTube oEmbed of _reCv-ix-So gives 403: the video can be removed or private. I did not watch the video, thus its runtime and which M+ cassette it comes from (CA17/1/1, 1/6 or 1/12 have footage of Oct-Nov 1991) are not known. Ask M+ before any use. A YouTube playlist found in a WebSearch says that a fisheye-lens video is 'only a snippet of hours of footage Suenn Ho took' (search extract only).
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I did not watch the video (no video tool). I read the archive.org metadata of the three copies and the YouTube metadata file (_reCv-ix-So.info.json) that the third copy keeps, and I viewed the 13 still frames that archive.org made from the video. The frames show the camcorder date, burnt-in English subtitles and a WSJ Live logo. NEW: the clip is a re-upload of a Wall Street Journal (WSJ Live) edit with the hashtag #wsjkwc, which fits the M+ note that part of the footage went to the Wall Street Journal Asia for its 2014 online exhibition. The sound, the full subtitles and most scenes are not read.
+- **Citation:** Suenn Ho (何巽), footage of Kowloon Walled City, 20 Nov 1991, in a Wall Street Journal (WSJ Live) edit with English subtitles (#wsjkwc), re-uploaded as "Exploring Kowloon Walled City in an Afternoon – Vlog (1991) by Suenn Ho" by Johny Bobbles Archives on YouTube (_reCv-ix-So, 2 Jun 2023, 6:31) and copied to the Internet Archive, https://archive.org/details/youtube-_reCv-ix-So (and two other copies), read 2026-11-20.
+- **Class:** primary (The footage is primary: shot in the City on 20 Nov 1991 (camcorder date). The subtitles and at least one voice-over line are a later WSJ edit (2014, INFERRED from the M+ note); the voice-over is retrospective (about 2014). The tree primary is correct for the footage.)
+- **Date of the record:** 20 Nov 1991, 13:31 to 14:12 (camcorder timestamp); edited about 2014 (INFERRED); uploaded 2 Jun 2023
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md`](../../secondary-sources/mplus-suenn-ho-ca17/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000001.jpg) to _000387 | INFERRED: The camcorder timestamp in the frames reads 20.11.91, from 13:31 to 14:12: the footage is of the afternoon of 20 Nov 1991. M+ dates cassette CA17/1/1 (routes 1-6) and route map CA17/2/2 to 20 Nov 1991; I take the clip to come from that cassette. | "13:31 20.11.91" |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000001.jpg) | The camera has a fisheye lens. At 13:31 the filmmaker asks men in a small room if she can film them playing Chinese chess. | "Do you mind if I film you playing Chinese chess?" |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000057.jpg) | At 13:32 she asks people in a cluttered room with fluorescent lights whether water leaks in when it rains. | "Does water leak in when it rains?" |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000118.jpg) | INFERRED: At 13:35 a man working at a machine in a small workshop says that they will receive compensation (for the clearance). | "Yes, we will receive compensation." |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000208.jpg) and _000237 | INFERRED: At 13:43 a worker runs orange pieces through a small machine with a row of blades on a tray; at 13:52 there are trays of small green balls. The filmmaker asks "Were they from Osaka?" (I take it to be a question about the machines). These look like a small food or sweets workshop; the product is not clear. | "Were they from Osaka?" |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000267.jpg) | INFERRED: At 13:57 a voice-over says that an angry old man suddenly wanted to take her film. I take this line to be a later narration. | "suddenly this angry old man wanted to take my film." |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000329.jpg) and _000360 | At 14:05 a barber cuts a man's hair in a shop with a row of chairs; the filmmaker asks if they have been there long. At 14:06 a man in a shop says that he has no plans. | "I don't have any plans." |
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000089.jpg), _000180, _000297, _000387 | The other frames show a dark, narrow alley (13:36 and 14:12), a small room with hanging clothes (13:34), and a shop front with a lit sign (13:57). | "14:12 20.11.91" |
+
+- **Leads:**
+  - The Wall Street Journal (WSJ Asia) 2014 online exhibition on Kowloon Walled City and its WSJ Live clips of Suenn Ho's footage (hashtag #wsjkwc), with the full subtitles
+  - M+ CA17/1/1, Video footage, Kowloon Walled City research project, cassette 1, routes 1-6 and roof garden (20-21 Nov 1991): the likely source tape

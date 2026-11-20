@@ -115,6 +115,10 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`polyu-fong-slides-1988/`](polyu-fong-slides-1988/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/polyu-fong-slides-1988/SOURCE.md |
 | [`memoirs-1950-2025/`](memoirs-1950-2025/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/memoirs-1950-2025/SOURCE.md |
 | [`tna-files-kwc-1898-1991/`](tna-files-kwc-1898-1991/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/tna-files-kwc-1898-1991/SOURCE.md |
+| [`grs-catalogue-kwc/`](grs-catalogue-kwc/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/grs-catalogue-kwc/SOURCE.md |
+| [`miyamoto-ryuji-photos-1987-1993/`](miyamoto-ryuji-photos-1987-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md |
+| [`hku-image-database-kwc/`](hku-image-database-kwc/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hku-image-database-kwc/SOURCE.md |
+| [`dutch-press-delpher-1986-1993/`](dutch-press-delpher-1986-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/dutch-press-delpher-1986-1993/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 

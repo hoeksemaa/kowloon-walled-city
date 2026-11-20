@@ -1099,3 +1099,17 @@ corrected the 明周 line on 1987–1992, and I split the long sentences.
 | web page, section 「喧鬧的龍城」 | A plane passed over Kowloon City every few minutes. | "每數分鐘就有一架飛機劃越上空" (every few minutes a plane crossed overhead) |
 | web page, section 「喧鬧的龍城」 | British Airways photographed 林記 for the December page of its 1985 calendar. | "林記臘味就成為一九八五年月曆上十二月的一幀風景" (林記 became the December scene of the 1985 calendar) |
 | web page, section 「喧鬧的龍城」 | After the City's walls fell in 1993, the Chiu Chow (潮州) people slowly moved away. | "城寨的高牆終在一九九三年倒下，潮州人漸漸搬走" (the City's high walls finally fell in 1993, and the Chiu Chow people gradually moved away) |
+
+### zh-testimony-15: 「城寨」當年的警政
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 微塵, 「城寨」當年的警政, blog, HKGPAO.com, 23 May 2024, https://www.hkgpao.com/articles/1035604
+- **Class:** retrospective (Retrospective (2024): memories of a police officer born in the City in the late 1950s and of a member of the 巡城隊 of the 1970s-1980s, relayed by the blogger; the blogger's own history is secondary.)
+- **Date of the record:** 2024-05-23
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 7 | The blogger says that the colonial government gave the City water, power, post, social welfare and police. | "殖民地政府也正常地提供服務，例如：水、電、郵政、社福及警政" (the colonial government provided services normally, for example water, power, post, social welfare and police) |
+| para. 7 | The blogger says that the only rule was that no building could rise to a height that harmed the aircraft approach. | "唯一禁忌是所有建築物不能超越影響飛機安全進場的高度而已" (the only taboo was that no building could exceed the height that affected the safe approach of aircraft) |
+| para. 13 | The blogger says that after 許家屯 became head of the Xinhua News Agency in Hong Kong in 1983, he inspected the City. | "在1983年許家屯到任新華社社長後，就曾到城寨巡視" (after 許家屯 took office as director of Xinhua in 1983, he once inspected the City) |

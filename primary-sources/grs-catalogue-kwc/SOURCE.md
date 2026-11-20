@@ -111,10 +111,9 @@ include:
 
 ## More items: the source search of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 1 of 26 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 
 26 items. New HKRS files that the existing catalogue folder does not list.
 
@@ -296,19 +295,14 @@ include:
 
 ### blocked-c-27: Hsin On Centre of the Hong Kong and Macau Lutheran Church
 
-- **Creator:** Hong Kong Government (original reference CNTA/SD/CON/2/11); Government Records Service
-- **Date:** 1987-05-21 to 1992-10-02
-- **Kind:** catalogue
-- **Class:** primary (A government file of the clearance years.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** GRS catalogue (HK Government)
-- **Link:** https://search.grs.gov.hk/en/arcview.xhtml?eid=Kt4AVzZhTddf1jxuRF2XuQ%3D%3D
-- **Proof that it exists:** HKRS1078-1-53, Hsin On Centre of the Hong Kong and Macau Lutheran Church, 21.5.1987 - 2.10.1992
-- **What it gives (finder's note, not checked):** A file on the Lutheran Hsin On Centre, 1987-92; it can give the address of the chapel on CoDR p252.
-- **Notes:** The catalogue entry opens. The file is physical: access under the Public Records (Access) Rules 1996, with an 'Access Application'. The page does not say if it is digitised. Add it to the held catalogue source grs-catalogue-kwc/.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the GRS catalogue entry (it opens without a login). The file itself is on paper at the Public Records Office; the page offers only 'Reserve' and 'Access Application', with no digital copy. Thus I could not read the file. The repo already holds this entry as row HKRS1078-1-53 of primary-sources/grs-catalogue-kwc/grs-hkrs1078-1.csv.
+- **Citation:** Hong Kong Government, 'HSIN ON CENTRE OF THE HONG KONG AND MACAU LUTHERAN CHURCH', file, 21.5.1987 - 2.10.1992, original reference CNTA/SD/CON/2/11, Public Records Office, Government Records Service, HKRS1078-1-53 (series HKRS1078, Records relating to clearance of the Kowloon Walled City (confidential)). Catalogue entry: https://search.grs.gov.hk/en/arcview.xhtml?eid=Kt4AVzZhTddf1jxuRF2XuQ%3D%3D
+- **Class:** primary (A government file of the clearance years (1987-1992), not seen. The catalogue entry is a finding aid.)
+- **Date of the record:** 1987-05-21 to 1992-10-02 (dates of the file)
+- **Note:** the reader classed the whole item as primary: its 5 facts are in the secondary twin, [`../../secondary-sources/grs-catalogue-kwc/SOURCE.md`](../../secondary-sources/grs-catalogue-kwc/SOURCE.md).
 
+- **Leads:**
+  - The file HKRS1078-1-53 itself (21.5.1987 - 2.10.1992) at the Public Records Office, Hong Kong: needs an Access Application and a visit in person.
 ### top-blocked-b-9: FINANCE COMMITTEE - D (HKRS70-9-419)
 
 - **Creator:** Government Information Services, Press Library (HKRS70 Press Library Files)

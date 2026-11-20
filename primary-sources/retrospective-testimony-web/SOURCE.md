@@ -401,9 +401,8 @@ full pages before you use these facts.
 
 ## More items: the source search of 2026-11 (catalogued, not read)
 
-- **Status:** partly read: 36 of 41 items read by the reading of the source search of
-  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
-  read: its "What it gives" is the note of the finder, not a checked fact.
+- **Status:** read: 41 of 41 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 41 items. New first-hand memories of former residents, police, visitors and workers.
 
@@ -791,19 +790,25 @@ full pages before you use these facts.
   - SCMP article 'Kowloon Walled City: tales from Hong Kong's 'City of Darkness'', https://www.scmp.com/news/hong-kong/article/3262414/kowloon-walled-city-tales-hong-kongs-city-darkness (May 2024; HTTP 403 to the tool): it probably names the speakers of the video.
 ### zh-testimony-15: 「城寨」當年的警政
 
-- **Creator:** 微塵, blog on HKGPAO.com
-- **Date:** 2024-05-23
-- **Kind:** article
-- **Class:** retrospective (A blog relays the memories of a police officer born in the City and of a patrol member, without names.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HKGPAO.com and the writer
-- **Link:** https://www.hkgpao.com/articles/1035604
-- **Proof that it exists:** 「城寨」當年的警政 (微塵, 2024.05.23 23:00)
-- **What it gives (finder's note, not checked):** A police officer born in the City in the late 1950s, who left at 24: two wells where residents washed clothes; tap water and power were not lacking; opium stalls, live shows and blue films were usual but declined in the early 1970s; many unlicensed dentists and doctors, with almost no accidents. A former member of the 巡城隊 (1970s-1980s): vice cases from the City went to the 新蒲崗 magistracy.
-- **Notes:** The image is credited to 星島日報. The original Sing Tao interview was not found. The blogger asks retired officers to come forward. The 巡城隊 and police patrols are leads for the police role in 1985-1993.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 微塵, 「城寨」當年的警政, blog, HKGPAO.com, 23 May 2024, https://www.hkgpao.com/articles/1035604
+- **Class:** retrospective (Retrospective (2024): memories of a police officer born in the City in the late 1950s and of a member of the 巡城隊 of the 1970s-1980s, relayed by the blogger; the blogger's own history is secondary.)
+- **Date of the record:** 2024-05-23
+- **Files:**
+  - `zh-testimony-15-1035604-f8a2c304.html` (in `local/`, not in git): HTML of the blog post (short page); https://www.hkgpao.com/articles/1035604; 91620 bytes; SHA-256 `d7a8fcda28e06ebee73a682a12c53ee27362c795e0d1f7794a50ad2e5e861398`; licence: no licence stated; footer 'HKGPAO.COM LIMITED' (https://www.hkgpao.com/articles/1035604)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/retrospective-testimony-web/SOURCE.md`](../../secondary-sources/retrospective-testimony-web/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 6 | INFERRED: A police officer was born in the City in the late 1950s and lived there until he was 24 (INFERRED: to about the early 1980s). | "他在50年代末在城寨出生，直至24歲才搬離" (he was born in the City in the late 1950s and did not move out until he was 24) |
+| para. 6 | The City had two wells, where residents washed clothes. | "城寨內有兩口井，也是居民洗衣服的地方" (inside the City there were two wells, which were also where residents washed clothes) |
+| para. 6 | He says that tap water and electricity were not lacking. | "自來水及電力亦不缺" (tap water and electricity were not lacking either) |
+| para. 6 | Vice was common: opium stalls, live sex shows and blue films were the most usual, but they declined in the early 1970s. | "最普遍是「鴉片煙檔」、「真人騷」及「小電影」…但在70年代初已告式微" (most common were opium stalls, live shows and blue films ... but by the early 1970s they had declined) |
+| para. 6 | There were many unlicensed dentists and Western-style doctors, but accidents were almost unknown. | "也有不少沒有牌照的牙醫及西醫，但出事則絕無僅有" (there were also many unlicensed dentists and Western doctors, but incidents were extremely rare) |
+| para. 8 | A former member of the 巡城隊 (City patrol team, 1970s-1980s) says that vice arrests in the City were tried at the 新蒲崗 magistracy (新蒲崗裁判法院). | "在城寨內拘捕的「黃賭毒」案件，也會在新蒲崗裁判法院審理" (vice, gambling and drug cases arrested in the City were also tried at the 新蒲崗 magistrates' court) |
+
+- **Leads:**
+  - Sing Tao (星島日報) online article https://std.stheadline.com/realtime/article/1996881/ , credited as the source of the image ('原圖：星島日報'); not opened.
 ### missions-27: 九龍城廣場簡約「城寨展」 舊街坊駐足懷緬：起碼畀人知道吓
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -991,19 +996,22 @@ full pages before you use these facts.
   - The audio of the segment (13 min 35 s, ABC podcast file sra_20140413_0915.mp3, linked from https://www.abc.net.au/listen/programs/sundayextra/915-segment/5383124): Greg Girard's spoken account; not transcribed. Audio cannot go in the repo; a person must listen and take notes.
 ### zh-testimony-18: 【住在香港．二】從徙置區九龍城寨　聯想今天的共居與光房
 
-- **Creator:** 曹民偉, 香港01 HK01 (周報)
-- **Date:** 2018-07-06
-- **Kind:** testimony
-- **Class:** retrospective (The writer tells of his own school visit to a classmate's home in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HK01
-- **Link:** https://www.hk01.com/%E6%B7%B1%E5%BA%A6%E5%A0%B1%E9%81%93/207256/%E4%BD%8F%E5%9C%A8%E9%A6%99%E6%B8%AF-%E4%BA%8C-%E5%BE%9E%E5%BE%99%E7%BD%AE%E5%8D%80%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E8%81%AF%E6%83%B3%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%85%B1%E5%B1%85%E8%88%87%E5%85%89%E6%88%BF
-- **Proof that it exists:** 【住在香港．二】從徙置區九龍城寨　聯想今天的共居與光房 (2018-07-06 18:28)
-- **What it gives (finder's note, not checked):** Teachers took representatives of three classes to visit a classmate who lived in the City: lanes dark by day, waves of sewer smell, and from the roof the planes seemed close enough to touch.
-- **Notes:** Year of the visit is not given. Most of the article is an essay on housing.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 曹民偉, 【住在香港．二】從徙置區九龍城寨　聯想今天的共居與光房, HK01 (香港01), 6 Jul 2018 (from 香港01 周報 no. 118, 3 Jul 2018), https://www.hk01.com/%E6%B7%B1%E5%BA%A6%E5%A0%B1%E9%81%93/207256/%E4%BD%8F%E5%9C%A8%E9%A6%99%E6%B8%AF-%E4%BA%8C-%E5%BE%9E%E5%BE%99%E7%BD%AE%E5%8D%80%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E8%81%AF%E6%83%B3%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%85%B1%E5%B1%85%E8%88%87%E5%85%89%E6%88%BF
+- **Class:** retrospective (Retrospective (2018): the writer's own visit to a classmate's home in the City in his secondary-school years. The year is not given; the writer says he has lived half a century, thus probably the 1970s or early 1980s (INFERRED).)
+- **Date of the record:** 2018-07-06
+- **Files:**
+  - `zh-testimony-18-_-_-_-_-5cd58e60.html` (in `local/`, not in git): HTML of the article; https://www.hk01.com/%E6%B7%B1%E5%BA%A6%E5%A0%B1%E9%81%93/207256/%E4%BD%8F%E5%9C%A8%E9%A6%99%E6%B8%AF-%E4%BA%8C-%E5%BE%9E%E5%BE%99%E7%BD%AE%E5%8D%80%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E8%81%AF%E6%83%B3%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%85%B1%E5%B1%85%E8%88%87%E5%85%89%E6%88%BF; 521779 bytes; SHA-256 `9b30c58618e80a21de8448ffd652d9260008358b9035aa161ada2655d382c982`; licence: 香港01有限公司版權所有 © 2026 (page footer) (https://www.hk01.com/%E6%B7%B1%E5%BA%A6%E5%A0%B1%E9%81%93/207256/%E4%BD%8F%E5%9C%A8%E9%A6%99%E6%B8%AF-%E4%BA%8C-%E5%BE%9E%E5%BE%99%E7%BD%AE%E5%8D%80%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E8%81%AF%E6%83%B3%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%85%B1%E5%B1%85%E8%88%87%E5%85%89%E6%88%BF)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| section 居於永遠黑夜的暗角, para. 3 (not counting the heading line) | In the writer's school years the City had a name as a 'den of demons'; tales of kidnappers kept children away, with dog slaughtering, brothel strip dances and heroin selling. | "還有劏狗、妓寨豔舞、賣白粉等非法勾當" (also illegal trades such as dog slaughtering, brothel strip dances and selling heroin) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | When a classmate who lived in the City was ill for a long time, the teacher took representatives of three classes to visit the classmate. | "老師組織三個班代表一起去探望" (the teacher organized representatives of three classes to visit together) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | In broad daylight the lanes were as dark as night, with waves of drain smell and water dripping from overhead. | "大白天一走進這些小巷已經如同黑夜，一陣陣坑渠味、頭頂不知何處總有水滴下來" (in broad daylight, stepping into these lanes was like night; waves of drain smell; water always dripping from somewhere overhead) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | Bunches of electric wires ran to unknown places, and the dark lanes had dirty water all over the ground. | "串串的電線不曉得通往何處，穿過滿地污水的暗巷" (strings of wires leading who knows where, through dark lanes with dirty water all over the ground) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | The classmate's home was among illegal tin-sheet huts stacked in layers; in summer the small tin huts were like ovens. | "走進那些僭建的層層疊疊鐵皮屋中間，夏日的小鐵皮屋如同烤箱一般" (walked in among those illegally built, layer-upon-layer tin huts; in summer the small tin huts were like ovens) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | The classmate sat on a bunk bed and took toys from a plastic bag beside him. | "見同學仔精神奕奕坐在碌架床，隨手從身邊膠袋摸出玩具來" (saw the classmate sitting lively on a bunk bed, pulling toys out of a plastic bag beside him) |
+| section 居於永遠黑夜的暗角, para. 4 (not counting the heading line) | The classmate took them to the roof to watch aircraft; planes landing at Kai Tak seemed close enough to touch. | "同學仔帶我們上天台睇飛機，從啟德機場降落的飛機如此接近，幾乎可以用手觸摸得到" (the classmate took us up to the roof to watch planes; the planes landing at Kai Tak were so close we could almost touch them) |
 ### film-13: Witness History: Kowloon Walled City
 
 - **Status:** Partly read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19. Audio only. I read the show notes on playpodcasts.com with WebFetch. I cannot hear audio; there is no transcript. The fetch tool cannot open bbc.co.uk.
@@ -1030,19 +1038,26 @@ full pages before you use these facts.
 - **Note:** the reader classed the whole item as secondary: its 7 facts are in the secondary twin, [`../../secondary-sources/retrospective-testimony-web/SOURCE.md`](../../secondary-sources/retrospective-testimony-web/SOURCE.md).
 ### zh-testimony-17: 回憶，比燭光晚餐浪漫：九龍城和它「城寨」的流金故事，從潮州勢力說起
 
-- **Creator:** 李偉民, 灼見名家 (master-insight.com)
-- **Date:** 2022-02-05
-- **Kind:** testimony
-- **Class:** retrospective (A memoir essay of the writer's own visit as a student, with a friend's childhood memories.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 灼見名家 and the writer
-- **Link:** https://www.master-insight.com/article/25635
-- **Proof that it exists:** 回憶，比燭光晚餐浪漫：九龍城和它「城寨」的流金故事，從潮州勢力說起 (李偉民)
-- **What it gives (finder's note, not checked):** As a secondary student 李偉民 went in alone: dark maze-like lanes, signs of unlicensed clinics and dentists everywhere, men at doorways who sold drugs. His father had gold teeth made in the City. An unnamed friend's childhood there: only a bed in the home, a cloth curtain between the kerosene stove and the chamber pot, the mother fetched well water each day, kerosene lamps, a quilt shop and a herbal tea shop at the street corner.
-- **Notes:** Years are not given; probably the 1960s-1970s (INFERRED). The friend's words are second-hand.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 李偉民, 回憶，比燭光晚餐浪漫：九龍城和它「城寨」的流金故事，從潮州勢力說起, Master Insight (灼見名家), master-insight.com, 5 Feb 2022, https://www.master-insight.com/article/25635
+- **Class:** retrospective (Retrospective (2022): the writer's own visit as a secondary student at 英華書院 and a friend's quoted childhood in the City. Years not given; probably the 1960s-1970s (INFERRED: a black-and-white TV, his schooldays).)
+- **Date of the record:** 2022-02-05
+- **Files:**
+  - `zh-testimony-17-25635-7f103a4d.html` (in `local/`, not in git): HTML of the article; https://www.master-insight.com/article/25635; 148280 bytes; SHA-256 `1fcf72ccd549e3270f528ab3deaf422cc45abbaec7b044f6c788ca29b264bb52`; licence: © Master Insight Media Limited 2026 All rights reserved (page footer) (https://www.master-insight.com/article/25635)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| section 三不管與四類人 | As a secondary student the writer went into the City alone: dark lanes like a black maze with a strong smell of drains. | "那裏只有昏暗小巷，似黑色迷宮，地渠味道熏天" (there were only dim lanes, like a black maze, the stench of the drains filled the air) |
+| section 三不管與四類人 | Shady men stood at the doors of old low houses selling drugs, and a pimp asked him if he wanted to see a live sex show. | "許多邪邪歪歪的人站在灰舊平房門口，兜售毒品" (many shady people stood at the doors of grey old single-storey houses, peddling drugs) |
+| section 三不管與四類人 | Signs of unlicensed clinics and dentists were everywhere; the writer's father had his gold teeth made in the City. | "那裏舉目都是無牌診所和牙醫的招牌，我父親的金牙，是城裏的傑作" (everywhere you looked were signs of unlicensed clinics and dentists; my father's gold teeth were a work of the City) |
+| section 三不管與四類人 | On the side of the City toward Carpenter Road (賈炳達道) were several tin-roofed snack shops that sold non-Cantonese food such as pot-stickers, 麵線糊 and oyster omelette. | "城寨向賈炳達道方向…有多家鐵皮小吃店，賣「外江」可口風味" (toward Carpenter Road the City had several tin-sheet snack shops selling tasty 'outside-province' food) |
+| section 三不管與四類人 | A classmate remembers that the City sold pirated model kits, such as the Tiger I tank and the battleship Yamato, cheaper than outside. | "我記憶中的城寨，是賣『老翻』模型" (the City that I remember sold pirated models) |
+| section 三不管與四類人 | A friend who grew up in the City says her home had only a bed, and a cloth curtain separated the 'kitchen' (a kerosene stove) from the 'toilet' (a chamber pot). | "一張布簾，分隔廚房（即一個火水爐）和廁所（即一個痰罐）" (a cloth curtain separated the kitchen (that is, a kerosene stove) and the toilet (that is, a pot)) |
+| section 三不管與四類人 | They used hard 玉扣紙 paper, not soft toilet paper, and small children wore split trousers. | "用硬硬的玉扣紙。幼童多穿『開浪褲』" (used hard 玉扣 paper; small children mostly wore split-crotch trousers) |
+| section 三不管與四類人 | The friend was often bullied by local thugs but the children had their own games: popsicle-stick models, jacks, marbles, card football and rubber-band rope skipping. | "雖然經常被惡霸『蝦』，但我們有自己的創意遊戲" (although often bullied by thugs, we had our own creative games) |
+| section 三不管與四類人 | Each day her mother went out to draw well water for cooking and bathing; light came from kerosene lamps. | "每天媽媽外出打井水，用來煮飯、沖涼；而照明，便靠『火水燈』" (every day mother went out to draw well water for cooking and bathing; for light we relied on kerosene lamps) |
+| section 三不管與四類人 | At the corner of her street were a quilt shop and the 保叔涼茶 herbal tea shop; a bowl of tea cost 1 毫 (10 cents), and children stood in the shop all evening to watch a black-and-white TV. | "一毫子買碗涼茶，小朋友整晚站在店內看黑白電視" (ten cents bought a bowl of herbal tea; the children stood in the shop all evening watching black-and-white TV) |
+| section 三不管與四類人 | She went to 心如學校 on 獅子石道 in a rooftop class; when it rained there was no class on the roof. | "我們在獅子石道心如學校唸書，是『天台班』，下雨，大家便不用回天台上課" (we studied at 心如 School on 獅子石道 in a 'rooftop class'; when it rained nobody had to go up to the roof for class) |
 ### zh-testimony-9: 從寨城到龍城 林記臘味家第一代負責人靜看變幻半世紀 七十五歲仍每天開店：一日唔拆，一日都做落去
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1156,19 +1171,21 @@ full pages before you use these facts.
   - The 'life stories' oral-history exhibition in Sham Shui Po (深水埗), 2023 (INFERRED year), curated by 鄭美姿, with elders' memories of the City
 ### zh-testimony-16: 周笑華／我的九龍城寨故事
 
-- **Creator:** 周笑華, United Daily News (聯合報) 家庭副刊
-- **Date:** 2024-12-26
-- **Kind:** testimony
-- **Class:** retrospective (A memoir essay of the writer's own walks through the City as a schoolgirl.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 聯合報 and the writer
-- **Link:** https://reading.udn.com/read/story/7347/8443991
-- **Proof that it exists:** 周笑華／我的九龍城寨故事 (2024/12/26)
-- **What it gives (finder's note, not checked):** In the 1960s, at 13 or 14, she took a short cut through the City to school with a classmate, reading English words as they walked. The lanes were quiet in the early morning, with few people and shops not yet open. A man in his forties warned the girls not to come that way again.
-- **Notes:** 1960s. Neighbours told her (second-hand) that the City's dentists were skilled and cheap.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 周笑華, 周笑華／我的九龍城寨故事, United Daily News (聯合報), 家庭副刊, 26 Dec 2024, https://reading.udn.com/read/story/7347/8443991
+- **Class:** retrospective (Retrospective (2024) of the writer's walks through the City to school in the 1960s, at 13 or 14. The talk of dentists is second-hand (neighbours).)
+- **Date of the record:** 2024-12-26
+- **Files:**
+  - `zh-testimony-16-8443991-ea7f7555.html` (in `local/`, not in git): HTML of the essay (short page); https://reading.udn.com/read/story/7347/8443991; 159304 bytes; SHA-256 `762a7687fa7641f7e8795ad603faeaf8e1a1aa852a3194384c96ea5de95350b8`; licence: 聯合線上公司 著作權所有 ©2025 (page footer) (https://reading.udn.com/read/story/7347/8443991)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 2 | In the 1960s the writer, a secondary student, walked through the City with a classmate as a short cut to school, because full buses did not stop. | "抄捷徑穿越九龍城寨到學校" (took a short cut through Kowloon Walled City to school) |
+| para. 2 | Neighbours told her that the City had many dental clinics, where people had teeth pulled and dentures made, skilled and cheap (second-hand). | "那裡有多間牙醫診所，很多市民都在那裡拔牙、做假牙，技術好又便宜" (there are many dental clinics there; many people get teeth pulled and dentures made there, skilled and cheap) |
+| para. 3 | The girls were 13 or 14 and wore cheongsam school uniforms. | "十三、四歲的我和Ｃ…穿著旗袍校服" (C and I, aged 13 or 14 ... wearing cheongsam school uniforms) |
+| para. 3 | In the early morning the City's street was quiet, with few people and the shops not yet open. | "城寨街上很安靜，行人不多，商店未開門營業" (the City's street was very quiet, few pedestrians, the shops not yet open) |
+| para. 3 | On both sides were many deep stairways and dim side lanes. | "只見兩側有多條深層樓梯及光線昏暗的橫巷" (on both sides there were many deep stairways and dimly lit side lanes) |
+| para. 3 | A strong man of about forty stopped them and said quietly that the area was not safe and they must not come that way again; after that they did not. | "這區不安全，以後別走這兒" (this area is not safe; do not come this way again) |
 ### top-zh-testimony-6: 【留住龍城】EP.1 從城寨開始 陪伴九龍城走過半個世紀的崇麟鞋業
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1211,19 +1228,21 @@ full pages before you use these facts.
   - The SCMP Post Magazine original of the interview (URL and date not seen).
 ### zh-testimony-12: 【淑梅足跡】電影多面手林家棟
 
-- **Creator:** 車淑梅, Wen Wei Po (香港文匯報)
-- **Date:** 2026-04-21
-- **Kind:** testimony
-- **Class:** retrospective (The actor 林家棟 tells of his childhood in the City in an interview column.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 香港文匯報
-- **Link:** https://www.wenweipo.com/a/202604/21/AP69e68722e4b0b49ad1b7b54b.html
-- **Proof that it exists:** 【淑梅足跡】電影多面手林家棟 (車淑梅, 2026-04-21)
-- **What it gives (finder's note, not checked):** 林家棟 lived in the City as a child: the gaps between buildings were not wider than two feet ('大廈之間不會闊過兩呎'), the inside had no sky ('裏面是不見天的'), the real City was worse than the film with syringes on the ground, and addicts with bent backs and legs.
-- **Notes:** Years are not given here. zh-testimony-13 relays that he moved in before age 10 and lived four years on a 12th floor with no lift. He found former neighbours for the 2024 film (zh-testimony-14).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 車淑梅, 【淑梅足跡】電影多面手林家棟, Wen Wei Po (香港文匯報), 21 Apr 2026, https://www.wenweipo.com/a/202604/21/AP69e68722e4b0b49ad1b7b54b.html
+- **Class:** retrospective (Retrospective (2026): the actor 林家棟 speaks of his own childhood in the City. The years are not given here.)
+- **Date of the record:** 2026-04-21
+- **Files:**
+  - `zh-testimony-12-AP69e68722e4b0b49ad1b7b54b-f70ad2a4.html` (in `local/`, not in git): HTML of the column (short page); https://www.wenweipo.com/a/202604/21/AP69e68722e4b0b49ad1b7b54b.html; 120228 bytes; SHA-256 `ec2537f5f2cba2e53ea49bc992624fe3628cdf951b91300626f27706c5a99af5`; licence: 香港大公文匯傳媒集團香港文匯報版權所有 (page footer) (https://www.wenweipo.com/a/202604/21/AP69e68722e4b0b49ad1b7b54b.html)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 3 | 林家棟 lived in the City as a child. | "小時候住九龍城寨" (As a child I lived in Kowloon Walled City) |
+| para. 3 | The makers of the film 《九龍城寨之圍城》 asked some former neighbours of the City for advice. | "《九龍城寨之圍城》也找來當年一些街坊給予意見" (the film also brought in some neighbours of those years to give advice) |
+| para. 3 | He says the real City was worse than in the film: syringes all over the ground. | "真實中的城寨環境比電影更惡劣，滿地針筒" (the real City was worse than the film, with syringes all over the ground) |
+| para. 3 | Many people had bent backs and legs and waited to inject or take heroin (the quote does not say that the heroin caused the bent backs). | "好多人背脊和雙腳彎曲等打針食白粉" (many people with bent backs and legs, waiting to inject or take heroin) |
+| para. 3 | Inside the City one could not see the sky, and the gaps between buildings were not wider than two feet. | "裏面是不見天的，大廈之間不會闊過兩呎" (inside you could not see the sky; the gaps between the buildings were no wider than two feet) |
+| para. 3 | As a child he loved to watch the aircraft in the sky. | "最愛望着天上的飛機" (loved most to watch the aircraft in the sky) |
 ### top-en-testimony-2: A varied and interesting career
 
 - **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.

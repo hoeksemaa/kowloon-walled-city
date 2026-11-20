@@ -2,10 +2,8 @@
 
 Open Dutch newspaper reports of the time on the City and its clearance, with TV listings that point to documentaries.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 9 of 9 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1970-1993.
 - **Items:** 9, of which 9 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -20,144 +18,264 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### press-archives-21: WEEKEINDE In de Ommuurde Stad van Hongkong wonen 50.000 mensen en 500.000 ratten Dit is de hel op aarde
 
-- **Creator:** De Telegraaf (unnamed woman reporter, 'onze verslaggeefster'; photos Johnny Cheung)
-- **Date:** 1986-12-20
-- **Kind:** press
-- **Class:** primary (A reporter's own visit inside the City, printed on Saturday 20 Dec 1986, in the model week.)
-- **Value:** high
-- **Language:** other
-- **Access:** open
-- **Licence:** © De Telegraaf; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:011207383:mpeg21:a1024:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:011207383:mpeg21:a1024
-- **Proof that it exists:** Title as above, then 'Dit is de hel op aarde'; text: 'Twaalf, naar binnen toe zestien lagen hoog'
-- **What it gives (finder's note, not checked):** A visit of Dec 1986: workshops that make iron goods, plastic doll parts and toys in rooms that are also homes, with 15-16 hour days; a street of dentists with dentures in the open shop fronts; leaking pipes and open electric wires; rubbish taken only once a week, at the outer gates. A Salvation Army kindergarten for about 15-20 children of 2-6, paid in part by the Dutch Charity Fund (teacher Fanny, 22; meals, fruit and a vitamin pill each day). It also says the block is 12 storeys outside and 16 inside, alleys about 80 cm wide, an 8 x 8 m open space, and 50,000 people.
-- **Notes:** New in this run. Dutch. De Telegraaf, p. 13 (Delpher metadata). Some claims are sensational or doubtful (500,000 rats 'as big as rabbits', old people 'in cages to the ceiling', small children shut in a cupboard, 'four storeys underground', police do not enter): mark them as the reporter's claims. The caption gives about 30 cm for an alley, the text 80 cm. A reader's letter in De Telegraaf, 28 Apr 1990, 'Hel op aarde' (urn ddd:010646054:mpeg21:a1569), refers back to this article. The Delpher view URL was not opened (JavaScript); the resolver gives the OCR text.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Marianne Janssen (byline on the page; the text says 'onze verslaggeefster'); photos Johnny Cheung. 'In de Ommuurde Stad van Hongkong wonen 50.000 mensen en 500.000 ratten. Dit is de hel op aarde. „Ze zeggen dat dit een toevluchtsoord is voor illegalen. Maar in de gevangenis zijn ze beter af”'. De Telegraaf (Amsterdam), Weekeinde, Saturday 20 December 1986, p. 13. Delpher (KB) urn ddd:011207383:mpeg21:a1024 (page p097). https://resolver.kb.nl/resolve?urn=ddd:011207383:mpeg21:a1024:ocr
+- **Class:** primary (A reporter's own visit inside the City, printed on Saturday 20 December 1986, in the model week (15-21 Dec 1986). The visit was some days before (dateline 'HONGKONG, zaterdag'). The first paragraph (the 1898 convention) is background history, kind secondary. Many claims are sensational (rats, cages, cupboards, 'underground' storeys, no police): I mark them as the reporter's claims.)
+- **Date of the record:** printed 1986-12-20 (Saturday); the visit was in December 1986, before that date (INFERRED from the dateline 'HONGKONG, zaterdag' and the date of print)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the article (XML); https://resolver.kb.nl/resolve?urn=ddd:011207383:mpeg21:a1024:ocr; licence: (c) De Telegraaf; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:011207383:mpeg21:a1024)
+  - not downloaded (curl exit 22): Scan of the whole page (printed p. 13), JPEG 2000, about 3 MB; https://resolver.kb.nl/resolve?urn=ddd:011207383:mpeg21:p097:image; licence: (c) De Telegraaf; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:011207383:mpeg21:a1024)
+  - not downloaded (curl exit 22): JPEG of the whole page at half scale, from the KB imaging service (the photos and the byline); https://imageviewer.kb.nl/ImagingService/imagingService?id=ddd:011207383:mpeg21:p097:image&x=0&y=0&w=2415&h=3333&s=0.5; licence: (c) De Telegraaf; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:011207383:mpeg21:a1024)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 13, byline under the title (page image) | The byline on the printed page names the reporter: Marianne Janssen. The OCR text calls her only 'our reporter'. She also wrote press-archives-22 (1988). | "door MARIANNE JANSSEN" (by MARIANNE JANSSEN) |
+| p. 13, col. 1 | The first taxi driver refused to drive the reporter to the City. The second agreed but had trouble finding it. | "Het antwoord is kort en duidelijk. „No, probeer maar een ander te vinden." (The answer is short and clear. 'No, try to find another one.') |
+| p. 13, col. 1 | Fanny, the kindergarten teacher, met the reporter at an agreed place outside. The reporter says she could not go in without her, because the City is a pitch-dark maze where strangers are not wanted. | "Op de afgesproken plek wacht Fanny, de kleuterleidster van het schooltje." (At the agreed place Fanny, the kindergarten teacher of the little school, waits.) |
+| p. 13, col. 1 | Reporter's estimate: from outside the City looks like one huge fortress, but it is several blocks of flats. They are twelve storeys high, sixteen towards the inside, and the alleys between them are 80 cm wide. | "Twaalf, naar binnen toe zestien lagen hoog, de stegen ertussen tachtig centimeter breed." (Twelve, towards the inside sixteen layers high, the alleys between them eighty centimetres wide.) |
+| p. 13, col. 1 | The block has no back side; most of it gets no daylight and no air (reporter's description). | "het is een massief blok stenen holen, waarvan het grootste gedeelte geen sprankje licht ontvangt. Geen licht en geen lucht." (it is a massive block of stone caves, of which the greatest part receives no spark of light. No light and no air.) |
+| p. 13, col. 1 | In the very centre there is a small open place of about 8 x 8 m. A small collapsed clinic building stands in it, and a stinking well serves as a washing place. From there one sees a piece of sky past sixteen storeys. | "een kleine plaats van 8 bij 8 meter, waar een ingestort kliniekgebouwtje staat en een stinkende put als wasplaats dient" (a small place of 8 by 8 metres, where a collapsed little clinic building stands and a stinking well serves as a washing place) |
+| p. 13, col. 1 | The route in: through a decayed gate, a few metres, down a stair, and on down; after six or seven stairs a side alley, where the last daylight was gone. The reporter felt she went 'into the earth': this is her impression, not a measured depth. | "We gaan een vervallen poort door, lopen een paar meter, dalen een trap af" (We go through a decayed gate, walk a few metres, go down a stair) |
+| p. 13, col. 1 | Underfoot in the alleys: rotting food, wet cardboard, puddles of dirty water and trickling streams; where a stream ran hard, an old plank lay across it. Drops fell on their heads. | "rottend voedsel, nat karton, plassen smerig water, siepelende beekjes die soms zo hard stromen dat er toch maar een oude plank overheen gelegd is" (rotting food, wet cardboard, puddles of dirty water, trickling streams that sometimes flow so hard that an old plank has been laid over them) |
+| p. 13, col. 1-2 | All pipes and wires lie open. Fanny warned the reporter that she nearly touched the electric wires; the reporter notes the wires are among all the water. | "Alle leidingen liggen open en bloot. En dat met al dat water!" (All the pipes and wires lie open and bare. And that with all that water!) |
+| p. 13, col. 2 | INFERRED: The kindergarten is up a short stair, behind a door at the top that Fanny opened with a key and locked again behind them. It is for children aged 2 to 6 (the OCR reads 'fi'; INFERRED 6 from the boy 'nearly six' who must soon leave for school). | "We zijn in de „Kindergarden” een kleuterschooltje voor kinderen van 2 tot fi jaar." (We are in the 'Kindergarden', a little nursery school for children from 2 to 6 years.) |
+| p. 13, col. 1-2 | An older woman teaches the class. Fifteen to twenty small children sit at little tables; they stood up and greeted the visitor in chorus. The reporter calls the classroom strikingly bright. | "Vijftien, twintig tengere poppetjes, even nieuwsgierig als Hollandse kinderen." (Fifteen, twenty slender little dolls, as curious as Dutch children.) |
+| p. 13, col. 2 | In a corner of the classroom, an area of about 2 x 3 m, stand fifteen small stretchers (cots) for the children's nap. | "In een hoek van het lokaal, ongeveer twee bij drie meter blijken vijftien kleine stretchers te staan" (In a corner of the room, about two by three metres, there turn out to be fifteen small stretchers) |
+| p. 13, col. 2 | The reporter saw hardly any toys. | "Ik zie nauwelijks speelgoed" (I see hardly any toys) |
+| p. 13, col. 2 | The Salvation Army (Leger des Heils) founded the kindergarten. It takes children whose two parents both work and who have no care at home, no grandparents. | "Deze kleuterschool is gesticht door het Leger des Heils. Er komen kinderen waarvan beide ouders werken" (This nursery school was founded by the Salvation Army. Children come whose both parents work) |
+| p. 13, col. 2 | The Dutch Charity Fund (DCF) of Dutch women in Hong Kong has adopted the school financially. Ottoline Meurs of the DCF visits the class once a week to see what it needs. | "The Dutch Charitv Fund (DCF) van de Nederlandse vrouwen in Hongkong heeft het schooltje financieel geadopteerd." (The Dutch Charity Fund (DCF) of the Dutch women in Hong Kong has adopted the little school financially.) |
+| p. 13, col. 2 | Once a month the fund's women try to take the children outside the City, to a beach or a wood. Before that, most of the children had never left the City. The parents do not like these trips; they think them dangerous. | "Voor die tijd waren de meeste kinderen nog nooit in hun leven de vesting uitgeweest." (Before that time most children had never in their lives been out of the fortress.) |
+| p. 13, col. 2 | Annet Radelaar of the fund: on the beach, children of five and six found that water runs away into sand, and played for hours with a bucket; some had never seen grass. | "Sommmige kinderen hadden nog nooit gras gezien" (Some children had never seen grass) |
+| p. 13, col. 2 | The children now get a meal at school, a piece of fruit and a vitamin pill each day. The fund also wants to give them milk. | "Tegenwoordig krijgen de kinderen een maaltijd op school, een stuk fruit en een vitaminepil per 'dag." (Nowadays the children get a meal at school, a piece of fruit and a vitamin pill per day.) |
+| p. 13, col. 2 | Reporter's view: all the children are very small, and many are behind in motor skills; she blames the lack of sun, daylight and room to climb. | "De kinderen zijn allemaal bijzonder klein van stuk. Velen ook motorisch achter." (The children are all particularly small of stature. Many also behind in motor skills.) |
+| p. 13, col. 2 | Fanny is 22. The fund pays her small salary; the other teachers are Salvation Army staff. | "Fanny is 22 jaar. Haar kleine salaris wordt door het CDF betaald, de andere leidsters zijn van het Leger des Heils." (Fanny is 22. Her small salary is paid by the CDF [sic], the other teachers are from the Salvation Army.) |
+| p. 13, col. 3 | In a second small room there is a small slide, and a tiny trampoline 1 m across on which the children take turns. The reporter says this is the only exercise they get. | "Op een piepkleine trampoline, één meter middellijn, mogen anderen om de beurt een paar keer springen." (On a tiny trampoline, one metre across, others may take turns to jump a few times.) |
+| p. 13, col. 3 | A boy whom the reporter took for three was nearly six; Fanny said he must then go to (primary) school. | "„Hij is bijna zes”, zegt Fanny. „Dan moet hij naar school”." ('He is almost six,' says Fanny. 'Then he must go to school.') |
+| p. 13, col. 3 | Small businesses are everywhere, house beside house: smithing, cleaning vegetables, making toys. These rooms all have electricity; the machines roar, and the workshops are homes at the same time. | "De machines razen, de werkplaatsen zijn woning tegelijk." (The machines roar, the workshops are homes at the same time.) |
+| p. 13, col. 3 | In one alley, house after house makes parts of plastic dolls (cheap Barbie imitations): arms and legs in one, little boots in another, heads in another. | "In een steeg worden huis aan huis onderdelen voor plastic poppen gemaakt" (In one alley, house after house, parts for plastic dolls are made) |
+| p. 13, col. 3 | These workers work fifteen to sixteen hours a day for a starvation wage (reporter's statement). | "Deze mensen werken vijftien, zestien uur per dag voor een hongerloon." (These people work fifteen, sixteen hours a day for a starvation wage.) |
+| p. 13, col. 3 | The manufacturers bring the machines and the materials, but only up to the gates. The finished dolls go out in big plastic bags, two bags on each bamboo pole; a bent woman carried them back and forth and did not step aside in the narrow alley. | "Ze brengen ze tot voor de poorten. De kant en klare poppen worden in grote plastic zakken vervoerd: een bamboestok met steeds twee zakken." (They bring them up to the gates. The finished dolls are carried in big plastic bags: a bamboo pole with two bags each time.) |
+| p. 13, col. 3 | Reporter's claim (doubtful, not said to be seen): on the upper floors with bigger machines, the old people who live there are hoisted in cages to the ceiling in the daytime, to keep them out of the way. | "worden de inwonende bejaarden overdag in kooien naar de zoldering gehesen" (the elderly who live there are hoisted in cages to the ceiling during the day) |
+| p. 13, col. 3 | Reporter's claim (doubtful): small children who are not at the school are locked in a cupboard for fourteen or fifteen hours a day, because the machines are dangerous. | "De kindjes die niet op het schooltje zitten, worden opgesloten in een kast." (The little children who are not at the school are locked in a cupboard.) |
+| p. 13, col. 4 | Further on is a lane full of dentists. Their shop windows are full of teeth, molars and dentures, and their doors stand open for anyone who wants the chair. They occupy the 'expensive' rooms where some daylight comes in. | "Verderop is een straatje vol tandartsen. Ze hebben een soort etalages gemaakt die vol met tanden en kiezen en gebitten liggen." (Further on is a little street full of dentists. They have made a sort of shop windows that lie full of teeth and molars and dentures.) |
+| p. 13, col. 4 | The reporter says the dentists, like most residents, are refugees who stay illegally. | "Ze zijn vluchtelingen, verblijven hier illegaal." (They are refugees, staying here illegally.) |
+| p. 13, col. 4 | The reporter says the residents were once fiercely anti-English and now ask Hong Kong for financial support. | "Eerst waren de bewoners fanatiek niet-Engels. nu vragen ze Hongkong om financiële steun." (First the residents were fanatically non-English, now they ask Hong Kong for financial support.) |
+| p. 13, col. 4 | Reporter's claim (contradicted by other sources on police patrols): no police come, and the police may not come. | "Er komt geen politie, die mag hier niet komen." (No police come; they are not allowed to come here.) |
+| p. 13, col. 4 | To stop the inflow of escaped criminals and drug dealers, the residents have set up a kind of order service of their own. | "De bewoners hebben ... nu zelf een soort ordedienst opgericht." (The residents have now themselves set up a kind of order service.) |
+| p. 13, col. 4 | Refuse: the residents got the refuse collection to stop once a week outside the gates. Each household must carry its refuse all the way out, however deep inside it lives; the reporter says this is why refuse rots everywhere. | "Ook hebben ze bereikt dat eens per week de vuilophaaldienst voor de poorten buiten stopt." (They have also got the refuse collection to stop outside the gates once a week.) |
+| p. 13, headline and col. 4 | Reporter's claims: rats as big as rabbits; the headline gives 50,000 people and 500,000 rats. | "In de Ommuurde Stad van Hongkong wonen 50.000 mensen en 500.000 ratten" (In the Walled City of Hong Kong live 50,000 people and 500,000 rats) |
+| p. 13, col. 4 | Leaving, they walked stooped through the corridors to avoid the leaking water pipes and the electric wires. | "We lopen gebukt door de gangen om de lekkende waterleidingen en de elektriciteitsdraden te ontwijken." (We walk stooped through the corridors to avoid the leaking water pipes and the electricity wires.) |
+| p. 13, col. 4 | Fanny, giving the residents' view: people say the City is a refuge for illegal immigrants who should be in a closed camp, but they would be better off in prison; it is hell on earth. | "Maar geloof me, in de gevangenis zijn ze beter af. Dit is een hel op aarde" (But believe me, in prison they are better off. This is a hell on earth) |
+| p. 13, col. 4-5 | Photographer Johnny Cheung, two years a press photographer in the Vietnam war, did not dare to go in alone because he is Chinese. A friend in the police went with him in plain clothes; they did not go far, for fear of getting lost. | "Hij heeft een vriend gebeld die bij de politie werkt, gevraagd of die in burger wilde meegaan." (He phoned a friend who works for the police and asked if he would come along in plain clothes.) |
+| p. 13, col. 5 | Cheung hid his camera under his jacket and shot from the hip, so as not to draw attention. | "Johnny Cheung heeft zijn camera onder zijn jasje verborgen gehouden en de foto's zo onopgemerkt mogelijk gemaakt, vanuit de heup." (Johnny Cheung kept his camera hidden under his jacket and took the photos as unnoticed as possible, from the hip.) |
+| p. 13, col. 5 | Cheung's fear: if a fire breaks out, surely 40,000 people will die in the flames. | "Als er brand uitbreekt, komen er zeker 40.000 mensen in de vlammen om." (If a fire breaks out, surely 40,000 people will die in the flames.) |
+| p. 13, col. 5 | The DCF women want to give care and food to 100 more children, and to have a polyclinic held one afternoon a week. | "De vrouwen van DCF zouden graag nog 100 kinderen meer opvang en eten willen geven." (The women of DCF would like to give care and food to 100 more children.) |
+| p. 13, caption at right of the main photo | A caption gives other figures than the text: twelve storeys up and four storeys into the ground, with alleys barely 30 cm wide (the text says 80 cm). Both are the reporter's impressions. | "Een gigantische vesting van twaalf ver diepingen omhoog en vier verdiepingen de grond in Met steegjes van amper 30 cm breed" (A gigantic fortress twelve storeys up and four storeys into the ground, with alleys of barely 30 cm wide) |
+| p. 13, main photo (Johnny Cheung) | INFERRED: Main photo: the City's blocks seen across open, cleared ground with planks and rubble in front and a wire fence at the left; a man walks across with bags. The blocks are about 10-14 storeys, with balconies and window grilles (my count on the halftone). | "Foto's: Johnny Cheung" (Photos: Johnny Cheung) |
+| p. 13, photo right of centre | INFERRED: Photo: an old woman walks with two small children in a narrow alley under corrugated roofing, with pipes and a ladder. The children wear matching jackets with a round badge on the chest (INFERRED: a school or kindergarten uniform). | "Een oma met haar twee kleinkinderen. Kinderen van zes zijn hier net zo klein en licht als die van drie bij ons." (A grandmother with her two grandchildren. Children of six here are as small and light as those of three at home.) |
+| p. 13, photo bottom left | Photo: a dark alley with a hanging shop or clinic signboard, pipes and a railed balcony above; a man walks away from the camera. | "In dit duivelse oord kijkt iedereen strak, bijna levenloos." (In this devilish place everyone looks rigid, almost lifeless.) |
+
+- **Leads:**
+  - Reader's letter 'Hel op aarde', De Telegraaf, 28 April 1990, p. 2, Delpher urn ddd:010646054:mpeg21:a1569: it refers back to this article; the OCR gives only its first lines.
+  - The Dutch Charity Fund (DCF) of Dutch women in Hong Kong: its records of its support of the Salvation Army kindergarten in the City (1986-1988).
+  - Johnny Cheung's original photographs of the City, December 1986.
 ### press-archives-22: DE HEL VAN HONGKONG GAAT PLAT
 
-- **Creator:** Marianne Janssen, De Telegraaf
-- **Date:** 1988-04-16
-- **Kind:** press
-- **Class:** primary (A reporter's own walk through the City during the clearance survey, written at the time.)
-- **Value:** high
-- **Language:** other
-- **Access:** open
-- **Licence:** © De Telegraaf; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:110610744:mpeg21:a1301:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:110610744:mpeg21:a1301
-- **Proof that it exists:** 'Walled City, het naargeestig gezwel aan de rijke stad Hongkong gaat plat.'
-- **What it gives (finder's note, not checked):** A flat of 3 x 3 m rents for about ƒ500, and the inner flats have no daylight; flats with outside windows cost much more. Landlords control the water: a tenant who does not pay finds the pipe broken and the tap dry; water drips on the wiring. Refugee doctors and dentists work in the outer flats for the daylight; about 60 small children go to a Salvation Army nursery; officials spent nearly a year counting flats, businesses and residents, and about 10,000 people must move in April (1988), the rest within two years.
-- **Notes:** New in this run. Dutch. De Telegraaf, p. 9; dateline 'HONGKONG, zaterdag'. The full Delpher title goes on: 'Waar moeten wij in vredesnaam heen'. Population given as 40,000-50,000. It says the British wanted to hand the site back cleared, and that the owners did not yet know the compensation ('De overheid zal een regeling treffen.').
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Marianne Janssen, 'De hel van Hongkong gaat plat. Waar moeten wij in vredesnaam heen, vraagt bevolking zich af', De Telegraaf, Saturday 16 April 1988, p. 9 (Delpher page p037), dateline 'HONGKONG, zaterdag'. Delpher urn ddd:110610744:mpeg21:a1301. https://resolver.kb.nl/resolve?urn=ddd:110610744:mpeg21:a1301:ocr
+- **Class:** primary (A reporter's own walk through the City during the clearance survey, written at the time. The lines on the 1898 lease are background (kind secondary). The same reporter wrote press-archives-21 (1986).)
+- **Date of the record:** printed 1988-04-16; written some days before (dateline 'HONGKONG, zaterdag')
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the article (XML); https://resolver.kb.nl/resolve?urn=ddd:110610744:mpeg21:a1301:ocr; licence: (c) De Telegraaf; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:110610744:mpeg21:a1301)
+  - not downloaded (curl exit 22): Scan of the whole page (printed p. 9) with the article and its photo, JPEG 2000; https://resolver.kb.nl/resolve?urn=ddd:110610744:mpeg21:p037:image; licence: (c) De Telegraaf; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:110610744:mpeg21:a1301)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 9, lead | The City will be razed and turned into a park. The reporter gives 40,000-50,000 people and 500,000 rats. | "De schuilplaats van veertig-, vijftigduizend mensen en vijfhonderdduizend ratten wordt veranderd in een park." (The hiding place of forty to fifty thousand people and five hundred thousand rats is being turned into a park.) |
+| p. 9, lead | Reporter's statement of the plan: ten thousand people must move in April, and the rest within two years. | "Tienduizend mensen moeten in april verhuizen, de rest moet binnen twee jaar volgen." (Ten thousand people must move in April, the rest must follow within two years.) |
+| p. 9, lead | INFERRED: The government side calls it a project costing billions. | "„Een miljardenproject,” is het zorgelijke geluid van overheidswege." ('A project of billions' is the worried sound from the government side. (OCR 'overneiaswege' read as 'overheidswege'.)) |
+| p. 9, col. 1 | Inside: frighteningly narrow corridors; dripping water pipes wet the electric wires; pitch-dark corridors full of stinking, rotting refuse. | "druppelende waterleiding die de elektriciteitsdraden gevaarlijk bevochtigen, stikdonkere gangen vol stinkend, rottend afval" (dripping water pipes that dangerously wet the electricity wires, pitch-dark corridors full of stinking, rotting refuse) |
+| p. 9, col. 1 | Real 'mafia bosses' have bought flats by the dozen and rent them out at frightening prices. | "Ware mafia-bazen hebben 'flats' bij tientallen gekocht en verhuren ze nu voor schrikbarende prijzen." (Real mafia bosses have bought 'flats' by the dozen and now rent them out at frightening prices.) |
+| p. 9, col. 1 | INFERRED: For a flat of 3 x 3 m without any daylight, people readily pay 500 guilders. The article does not say if this is a month's rent or a price; it is in the passage on renting (INFERRED: rent). | "Voor een flat van 3 x 3 m wordt grif ƒ 500 betaald, ruimtes zonder een spoortje daglicht." (For a flat of 3 x 3 m, 500 guilders is readily paid, spaces without a trace of daylight.) |
+| p. 9, col. 1 | The flats on the outside of the complex, where daylight comes in, are much more expensive. Doctors and dentists, all refugees, have their small practices there. | "De flats aan de buitenzijde van het complex, waar het daglicht binnenkomt, zijn veel en veel duurder." (The flats on the outside of the complex, where the daylight comes in, are much, much more expensive.) |
+| p. 9, col. 1-2 | The police call the City a breeding ground of crime; escaped prisoners and drug dealers hide there. | "„Walled City is een broeinest van misdaad,” zegt de politie." ('Walled City is a breeding ground of crime,' say the police.) |
+| p. 9, col. 2 | The 'mafia' are members of the City itself: landlords of flats and of pieces of water pipe. A tenant who does not pay suddenly finds a big hole in the pipe just before his home, and the tap gives nothing. | "wie niet betaalt blijkt vlak voor zijn huis opeens een flink gat in de waterleiding te hebben zodat de kraan niets meer doet" (whoever does not pay suddenly turns out to have a big hole in the water pipe just in front of his house, so that the tap no longer works) |
+| p. 9, col. 2 | Reporter's claim: until now the Hong Kong police were not allowed in. She adds that the British want to hand the place back neatly: the City flat and the trees tall. | "En de Britten willen het netjes overdragen: de City plat, de bomen hoog" (And the British want to hand it over neatly: the City flat, the trees tall) |
+| p. 9, col. 2 | The residents work for miserable wages for manufacturers who themselves dare not enter. | "Ze werken voor miezerige loontjes voor fabrikanten die de Hel van Hongkong zelf niet binnendurven." (They work for miserable little wages for manufacturers who do not dare to enter the Hell of Hong Kong themselves.) |
+| p. 9, col. 2 | Hong Kong opinion said that a visitor would be robbed, raped and murdered. The reporter found the opposite: dozens of residents saw her shuffle through the corridors and looked straight past her. | "Tientallen bewoners zagen me door de gangen schuifelen, ze keken pal langs me heen." (Dozens of residents saw me shuffle through the corridors; they looked straight past me.) |
+| p. 9, col. 2 | The residents' worries as the reporter saw them: a bowl of rice, some wilted vegetables, the electricity bill, thin children and trembling parents packed together. | "Een kommetje rijst, wat verlepte groenten, de elektriciteitsrekening, hun magere kinderen en bevende ouders op elkaar gepakt" (A small bowl of rice, some wilted vegetables, the electricity bill, their thin children and trembling parents packed together) |
+| p. 9, col. 3 | Officials: residents will be given housing, but illegal immigrants will be treated like other illegal immigrants and sent home. | "Ze worden naar huis teruggestuurd." (They will be sent back home.) |
+| p. 9, col. 3 | Some young people moved into the City by choice, because they found no affordable home elsewhere in Hong Kong; they preferred their own roof to a bed at their parents' or in-laws'. They are among the registered population. | "Mensen die er vrijwillig zijn komen wonen omdat zij in Hongkong geen betaalbare woning hebben kunnen vinden." (People who came to live there voluntarily because they could not find an affordable home in Hong Kong.) |
+| p. 9, col. 3 | Thousands who bought one of the poor flats panicked at the news; some had put their last dollars into them. The usual complaint of business owners: to restart a small business elsewhere would cost hundreds of thousands of Hong Kong dollars. | "„Als ik mijn kleine bedrijfje op een andere plek in deze dure stad moet starten ben ik honderdduizenden Hongkong dollars kwijt,”" ('If I have to start my small business in another place in this expensive city, I will lose hundreds of thousands of Hong Kong dollars.') |
+| p. 9, col. 3 | Residents asked who would decide the value of compensation; the only answer was that the government would make an arrangement. | "„De overheid zal een regeling treffen.”" ('The government will make an arrangement.') |
+| p. 9, col. 3-4 | Officials have spent nearly a year counting the flats, the number and kinds of small businesses, and the residents. Everyone must be registered, to be moved later to large housing estates. | "Officiële ambtenaren zijn nu al bijna een jaar bezig met het vaststellen van het aantal flats, de hoeveelheid en de soorten bedrijfjes, de bewoners." (Officials have now been busy for almost a year establishing the number of flats, the number and kinds of small businesses, the residents.) |
+| p. 9, col. 4 | Not everyone cooperates with the count: illegal residents keep quiet or hide in the dark alleys. The officials get lost like any stranger, and no resident shows them the way. | "De ambtenaren verdwalen even hard als iedere andere vreemdeling, geen bewoner wijst ze de weg." (The officials get lost just as badly as every other stranger; no resident shows them the way.) |
+| p. 9, col. 4 | Meanwhile the children of school age go to a small school nearby, and sixty small children go to the day nursery of the Salvation Army and the women of the Dutch Charity Fund. | "zestig kleintjes naar het kinderdagverblijf van het Leger des Heils en de vrouwen van het Dutch Charity Fund" (sixty little ones to the day nursery of the Salvation Army and the women of the Dutch Charity Fund) |
+
+- **Leads:**
+  - The photo printed with this article (De Telegraaf, 16 Apr 1988, p. 9): its caption OCR is garbled; read it on the page scan.
 ### press-archives-24: Hak Nam valt door
 
-- **Creator:** Dirk Jan van den Bergh, Het Parool
-- **Date:** 1991-12-28
-- **Kind:** press
-- **Class:** primary (A report of the time that quotes a resident dentist on the first eviction phase.)
-- **Value:** high
-- **Language:** other
-- **Access:** open
-- **Licence:** © Het Parool; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ABCDDD:010845707:mpeg21:a0126:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ABCDDD:010845707:mpeg21:a0126
-- **Proof that it exists:** 'MIJNHEER Kwok is tandarts.'
-- **What it gives (finder's note, not checked):** Mr Kwok, one of dozens of unlicensed dentists in the City, had a Chinese diploma and practised there because the British asked for an English one. He was a member of the committee against the demolition, called the compensation too low, and after the first eviction phase of late Nov 1991 slept on the street with his family for four days with his dentures packed. The second phase was expected in March 1992.
-- **Notes:** New in this run. Dutch. Delpher page URL ends p002. The author first spoke to Kwok in March (1991). Compensation given as '65.000 gulden' (a conversion). It names the 'three-don't-care' zone (no hygiene, labour or building controls). OCR drops some digits of years. The same author wrote on the City again in Het Parool, 30 Sep 1992, 'Kosmos als handleiding voor architect' (not read).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Dirk Jan van den Bergh, 'Hak Nam valt', Het Parool (Amsterdam), Saturday 28 December 1991 (Delpher page p002). Delpher urn ABCDDD:010845707:mpeg21:a0126. https://resolver.kb.nl/resolve?urn=ABCDDD:010845707:mpeg21:a0126:ocr
+- **Class:** primary (A report of the time that quotes a resident dentist, Mr Kwok, on the first eviction phase of late November 1991. The paragraphs on 1897-1984 are background (kind secondary).)
+- **Date of the record:** 1991-12-28; the author first spoke to Kwok in March 1991
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the article (XML; drops the right edge of lines); https://resolver.kb.nl/resolve?urn=ABCDDD:010845707:mpeg21:a0126:ocr; licence: (c) Het Parool; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ABCDDD:010845707:mpeg21:a0126)
+  - not downloaded (curl exit 22): JPEG crop of the article column at full scale, from the KB imaging service; https://imageviewer.kb.nl/ImagingService/imagingService?id=ABCDDD:010845707:mpeg21:p002:image&x=4000&y=250&w=853&h=3300&s=1; licence: (c) Het Parool; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ABCDDD:010845707:mpeg21:a0126)
+  - not downloaded (curl exit 22): Scan of the whole page, JPEG 2000, about 2.9 MB; https://resolver.kb.nl/resolve?urn=ABCDDD:010845707:mpeg21:p002:image; licence: (c) Het Parool; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ABCDDD:010845707:mpeg21:a0126)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| col. 1, para. 1 (page image) | Mr Kwok is a dentist. This month (December 1991) he was put out of his home and had to pack the hundreds of dentures that he had set out in regular rows on glass plates. | "moest hij de honderden kunstgebitten die hij in regelmatige rijen op glazen platen had uitgestald, inpakken" (he had to pack the hundreds of dentures that he had displayed in regular rows on glass plates) |
+| col. 1, para. 1 | In protest Kwok slept on the street for four days with his family: his wife and two children. | "Vier dagen sliep hij uit protest op straat met zijn familie, zijn vrouw en twee kinderen." (For four days he slept on the street in protest with his family, his wife and two children.) |
+| col. 1, para. 2 | The place lies on the Kowloon peninsula near Kai Tak airport and must become a park. | "op het schiereiland Kowloon vlakbij de luchthaven Kai Tak in Hongkong, moet in een park veranderen" (on the Kowloon peninsula near Kai Tak airport in Hong Kong, must change into a park) |
+| col. 1, para. 3 | The reporter's picture of the City in 1991: still standing, a slowly sagging cake of flats leaning against each other, riddled with a disorderly system of alleys. | "een langzaam verzakkende taart van tegen elkaar aanleunende flats, doorwoekerd door een wanordelijk stegenstelsel" (a slowly sagging cake of flats leaning against each other, overgrown by a disorderly system of alleys) |
+| col. 1, para. 3 | Kwok calls the City the area of the 'Three Don't Cares': no hygiene control, no control of working conditions and no building regulations. | "Dit is het gebied van de 'Drie-Kan-Niet-Schelen': geen hygiënische controle, geen controle op arbeidsomstandigheden en geen bouwreglementen." (This is the area of the 'Three-Don't-Care': no hygienic control, no control on working conditions and no building regulations.) |
+| col. 1, para. 4 (year from the page image) | Kwok was one of dozens of illegal dentists in the City. He got his dental diploma in China, fled from the communists in 1951, and practised in the City to avoid the British law that asked for an English diploma. | "Hij behaalde zijn tandartsdiploma in China, vluchtte in 1951 voor de communisten" (He obtained his dental diploma in China, fled from the communists in 1951) |
+| col. 1, para. 7 | Kwok is a member of the Committee Against the Demolition of the City and claims connections with China's premier Li Peng. In March 1991 he boasted that they would not get him out. | “Mij krijgen ze hier niet weg,” pochte hij toen ik hem in maart voor het eerst sprak. ('They won't get me out of here,' he boasted when I first spoke to him in March.) |
+| col. 1, para. 7 | Kwok found the compensation of 65,000 guilders too low (the paper's conversion; the Hong Kong dollar amount is not given). | "Compensatie van 65.000 gulden vond hij te laag." (He found compensation of 65,000 guilders too low.) |
+| col. 1, para. 7 | The first phase of the clearance came at the end of November 1991, without protest from Peking. | "Maar eind november was het zover. De eerste fase van de ontruiming geschiedde zonder protest uit Peking." (But at the end of November it happened. The first phase of the clearance took place without protest from Peking.) |
+| col. 1, para. 7 | The second phase was due in March 1992; most people were expected to have left of their own free will by then. | "In maart volgend jaar is de tweede fase aan de beurt" (In March next year it is the second phase's turn) |
+| col. 1, last para. (page image) | The final demolition was planned for 1993, and the park was to be ready three years later. | "De definitieve sloop is gepland voor 1993, het park moet drie jaar later klaar zijn." (The final demolition is planned for 1993; the park must be ready three years later.) |
+
+- **Leads:**
+  - Dirk Jan van den Bergh, 'Kosmos als handleiding voor architect', Het Parool, 30 Sep 1992 (on the City; not read).
+  - The Committee Against the Demolition of the City (Kwok a member, 1991): its name in Chinese and its records.
 ### press-archives-26: Wildernis van de Ommuurde Stad wordt een park
 
-- **Creator:** Lolke van der Heide, NRC Handelsblad
-- **Date:** 1992-06-22
-- **Kind:** press
-- **Class:** primary (A reporter's own visit to the last inhabited corner of the City, ten days before the final eviction.)
-- **Value:** high
-- **Language:** other
-- **Access:** open
-- **Licence:** © NRC; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=KBNRC01:000035016:mpeg21:a0064:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=KBNRC01:000035016:mpeg21:a0064
-- **Proof that it exists:** 'Door onze redacteur LOLKE VAN DER HEIDE HONGKONG, 22 JUNI.' 'Madame Wong is een hoer op leeftijd.'
-- **What it gives (finder's note, not checked):** On a Saturday afternoon in June 1992 only one corner of the City was still lived in; the reporter met hostile residents in narrow, dim alleys. A hard core opposed the demolition: an old man asked for all his costs back, and Madame Wong, a woman of sixty, said she would wait to be dragged out. It gives a former population of about 35,000, a park for 1993, and repeated clashes with the clearance officials.
-- **Notes:** New in this run. Dutch. NRC Handelsblad p. 6 (page URL p006). The compensation is given as '10.000 gulden'. The history part (the wall pulled down by the Japanese in 1942, the 1984 agreement) is background. A Kowloon shopkeeper calls the City 'de rotzooi in onze achtertuin'.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Lolke van der Heide, 'Wildernis van de Ommuurde Stad wordt een park', NRC Handelsblad, Monday 22 June 1992, p. 6 (Delpher page p006); dateline 'HONGKONG, 22 juni'. Delpher urn KBNRC01:000035016:mpeg21:a0064. https://resolver.kb.nl/resolve?urn=KBNRC01:000035016:mpeg21:a0064:ocr
+- **Class:** primary (A reporter's own visit to the last inhabited corner of the City in June 1992. The history (1898, 1942, 1949, 1984) is background, kind secondary.)
+- **Date of the record:** printed 1992-06-22; the visit was on 'a gloomy Saturday afternoon' (INFERRED: Saturday 20 June 1992)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the article (XML); https://resolver.kb.nl/resolve?urn=KBNRC01:000035016:mpeg21:a0064:ocr; licence: (c) NRC Handelsblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=KBNRC01:000035016:mpeg21:a0064)
+  - not downloaded (curl exit 22): Scan of the whole page with the article and the reporter's photo of the City, JPEG 2000; https://resolver.kb.nl/resolve?urn=KBNRC01:000035016:mpeg21:p006:image; licence: (c) NRC Handelsblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=KBNRC01:000035016:mpeg21:a0064)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 6, para. 1 | Madame Wong, a woman of sixty, is an elderly prostitute with few clients left. In front of her dilapidated home she said that she knows no other trade. | "Madame Wong is een hoer op leeftijd. Veel klanten trekt de zestigjarige niet meer" (Madame Wong is a whore of advanced age. The sixty-year-old does not attract many clients any more) |
+| p. 6, para. 1 | The reporter glosses Hak Nam as 'Dark Heart'. | "Hak Nam, 'Duister Hart' wordt de Ommuurde Stad genoemd" (Hak Nam, 'Dark Heart', the Walled City is called) |
+| p. 6, para. 1 | The massive rectangular block of flats built chaotically beside and on top of each other will be pulled down in 1993 to make room for a park, despite fierce resistance. | "het massieve rechthoekige blok van chaotisch naast en bovenop elkaar gebouwde flats" (the massive rectangular block of flats built chaotically next to and on top of each other) |
+| p. 6, para. 2 | INFERRED: A gloomy Saturday afternoon (INFERRED: 20 June 1992, because 22 June 1992 was a Monday). Narrow openings in the continuous walls are the only entrances. Mole tunnels wind through the complex; pale light falls in only here and there, at strange angles. | "Smalle openingen in de aaneengesloten muren van de stad vormen de enige ingangen." (Narrow openings in the continuous walls of the city form the only entrances.) |
+| p. 6, para. 2 | Only one corner of the rectangle was still lived in. Most of the former 35,000 residents had accepted the British government's offer to live elsewhere with 10,000 guilders (the paper's conversion). | "Van de rechthoek die de Ommuurde Stad vormt is nog maar één puntje bewoond, de meeste van de voorheen 35.000 mensen" (Of the rectangle that forms the Walled City only one corner is still inhabited; most of the formerly 35,000 people) |
+| p. 6, para. 2 | The phased clearance was to be complete that summer. There were repeated skirmishes between clearance officials and residents. | "is het herhaaldelijk tot schermutselingen gekomen tussen 'opruim-ambtenaren' en bewoners" (there have repeatedly been skirmishes between 'clearance officials' and residents) |
+| p. 6, para. 3 | The last residents were unfriendly to outsiders. | "Vriendelijkheid ten opzichte van vreemdelingen is niet de sterkste kant van de laatste inwoners van de Ommuurde Stad." (Friendliness towards strangers is not the strong side of the last residents of the Walled City.) |
+| p. 6, para. 3 | An older man who would not give his name stood in a small vegetable stall hung with banners against the evictions. He demanded full repayment of all his costs and said the offer was far too little. | "Hij staat in een groentekraampje dat versierd is met spandoeken waarvan de teksten in niet mis te verstane bewoordingen de ontruimingen afkeuren." (He stands in a vegetable stall decorated with banners whose texts condemn the evictions in unmistakable words.) |
+| p. 6, para. 3-4 | One banner read (in the reporter's Dutch) 'Down with the colonial dogs'. | "„Weg met de koloniale honden”, staat op een ervan te lezen." ('Away with the colonial dogs', one of them reads.) |
+| p. 6, para. 4 | Madame Wong, one of the fanatics, said she would wait until she was dragged away. | "Madame Wong, ook zo'n fanatieke, zegt dat ze wacht tot ze wordt weggesleept." (Madame Wong, also such a fanatic, says she waits until she is dragged away.) |
+| p. 6, last para. | Most Hong Kong Chinese outside the City welcomed the end; a Kowloon shopkeeper called it 'the mess in our back yard'. | "„de rotzooi in onze achtertuin”" ('the mess in our back yard') |
+| p. 6, caption of the photo with article a0060 ('Hongkong wil vooral heel veel geld verdienen') | A photo by the reporter on the same page shows the walls of the City; the caption calls it a criminal paradise that is coming down despite the residents' fierce resistance. | "De muren van Hongkongs Ommuurde Stad — een crimineel walhalla dat ondanks het felle verzet van de bewoners tegen de vlakte gaat. (Foto Lolke van der Heide)" (The walls of Hong Kong's Walled City, a criminal Valhalla that is being razed despite the fierce resistance of the residents. (Photo Lolke van der Heide)) |
+
+- **Leads:**
+  - Lolke van der Heide's photo of the walls of the City, NRC Handelsblad 22 Jun 1992 p. 6 (with article urn KBNRC01:000035016:mpeg21:a0060): view it on the page scan.
 ### press-archives-29: Delpher (KB) newspaper search: articles that name the Ommuurde Stad, Walled City or Hak Nam with Hongkong or Kowloon, 1970-1995
 
-- **Creator:** Koninklijke Bibliotheek (KB), Delpher; SRU service jsru.kb.nl
-- **Date:** 1970-1995
-- **Kind:** catalogue
-- **Class:** primary (An index of newspaper articles of the time; the items are primary press or listings.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** catalogue metadata open; article texts © the publishers
-- **Link:** https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&maximumRecords=50&query=%28%22ommuurde%20stad%22%20OR%20%22walled%20city%22%20OR%20%22ommuurde%20stadje%22%29%20AND%20%28hongkong%20OR%20kowloon%20OR%20%22hong%20kong%22%29%20AND%20date%20within%20%2201-01-1970%2031-12-1995%22
-- **Other links:** https://www.delpher.nl/nl/kranten/results?query=kowloon+%22ommuurde+stad%22&coll=ddd
-- **Proof that it exists:** numberOfRecords 56; first hits 'Wildernis van de Ommuurde Stad wordt een park' (NRC 1992-06-22), 'DE HEL VAN HONGKONG GAAT PLAT' (De Telegraaf 1988-04-16)
-- **What it gives (finder's note, not checked):** 56 hits, 1970-1995: the reports in press-archives-21 to -28, TV listings of Nov-Dec 1990 (the EO Pullinger portrait) and 20 Mar 1993 (Voyager), and many false hits (advertisements of 1979-80 and 1987). 'kowloon' AND 'ommuurde' finds 54 articles of all years, with Dutch wire reports of the 1948 evictions (Nieuwe Courant 21 Jan 1948 'DE KOWLOON AFFAIRE'), the 1950 fire and the 1963 dispute (Trouw 23 Jan 1963 'Engeland wil praten met China over Kowloon').
-- **Notes:** New in this run. The SRU service answers this tool; http://resolver.kb.nl gives 403, but https://resolver.kb.nl gives the OCR text of each article. The Delpher web search needs JavaScript. Use date ranges: no Dutch article was found for the announcement of 14 Jan 1987 or for the evictions of 28 Nov 1991 and 2 Jul 1992 in the days after them.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I ran the finder's SRU query again (56 hits, 1970-1995) and the query 'kowloon AND ommuurde' (54 hits, 1931-1993) through Playwright, and read the OCR of each 1983-1993 hit that is about the City and not already an item (21-28). I did not read the 1931-1964 hits (the 1948 Kowloon affair, the January 1950 fire, the 1963 dispute) or the advertisements of 1979-1980.
+- **Citation:** Koninklijke Bibliotheek (KB), Delpher newspaper collection, SRU service jsru.kb.nl, query '("ommuurde stad" OR "walled city" OR "ommuurde stadje") AND (hongkong OR kowloon OR "hong kong")', 1970-1995, run 2026-11-20. https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&maximumRecords=50&query=%28%22ommuurde%20stad%22%20OR%20%22walled%20city%22%20OR%20%22ommuurde%20stadje%22%29%20AND%20%28hongkong%20OR%20kowloon%20OR%20%22hong%20kong%22%29%20AND%20date%20within%20%2201-01-1970%2031-12-1995%22
+- **Class:** primary (A search of a newspaper archive. The hits are Dutch reports and listings of the time (primary); their history passages are secondary. Adele Bloemendaal's account (1989) is retrospective testimony of an earlier visit, year of visit unknown.)
+- **Date of the record:** hits dated 1970-1995; search run 2026-11-20
+- **Files:**
+  - not downloaded (curl exit 22): SRU search result (XML): metadata of the 56 hits, with dates, papers, pages and resolver links; https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&maximumRecords=50&query=%28%22ommuurde%20stad%22%20OR%20%22walled%20city%22%20OR%20%22ommuurde%20stadje%22%29%20AND%20%28hongkong%20OR%20kowloon%20OR%20%22hong%20kong%22%29%20AND%20date%20within%20%2201-01-1970%2031-12-1995%22; licence: KB catalogue metadata; no licence statement on the response; article texts (c) the publishers (https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&maximumRecords=50&query=%28%22ommuurde%20stad%22%20OR%20%22walled%20city%22%20OR%20%22ommuurde%20stadje%22%29%20AND%20%28hongkong%20OR%20kowloon%20OR%20%22hong%20kong%22%29%20AND%20date%20within%20%2201-01-1970%2031-12-1995%22)
+- **Note:** its 5 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Het Parool, 8 Nov 1990, TV listing (ABCDDD:010833294:mpeg21:a0410); also Trouw 8 Nov 1990 (ABCDDD:010825025:mpeg21:a0413) | On Thursday 8 Nov 1990 the EO showed on Nederland 1 at 23.05-23.55 'Walled city: Hong Kong', a West German documentary about the walled part of Hong Kong where Jackie Pullinger (潘靈卓) helps drug addicts. | "EO 23.05 - 23.55 Walled city: Hong Kong, Westduitse documentaire over het ommuurde gedeelte van de stad Hong Kong, waar Jacky Pullinger hulp biedt aan drugsverslaafden" (EO 23.05-23.55 Walled city: Hong Kong, West German documentary about the walled part of the city of Hong Kong, where Jacky Pullinger helps drug addicts) |
+| Nederlands Dagblad, 29 Nov 1990, p. 4 (ddd:010559525:mpeg21:a0065) | On 29 Nov 1990 a paper notes that the EO had shown a documentary on the 'Walled City Kowloon' some weeks before, and now shows the two-part portrait of Pullinger, 'Recht op liefde', at 20.45. | "Enige weken geleden zond de EO een documentaire uit over de 'Walled City Kowloon', een sloppenwijk in Hong Kong waar de misdaad welig tiert." (Some weeks ago the EO broadcast a documentary about the 'Walled City Kowloon', a slum in Hong Kong where crime is rife.) |
+| NRC Handelsblad, 29 Nov 1990, 'Selectie televisie' (KBNRC01:000030082:mpeg21:a0170) | NRC Handelsblad calls 'Recht op liefde' an English documentary about Pullinger's work in the dark alleys of the Walled City, on Nederland 1, 20.45-21.30, on 29 Nov 1990. | "Recht op liefde • Engelse documentaire over de zendelinge Jacky Pullinger die in Hong Kong in de duistere steegjes van de Walled City" (Right to love: English documentary about the missionary Jacky Pullinger who in Hong Kong, in the dark alleys of the Walled City) |
+| Nederlands Dagblad, 23 Jun 1993, p. 4, 'Televisie buitenland' (ddd:010628618:mpeg21:a0094) | On Wednesday 23 Jun 1993 the German channel Nord 3 (listed as 'Duitsland 3 Nord') showed at 22.00 'Das Ende einer Lasterhöhle', a report on the demolition of the Walled City. | "22.00 Das Ende einer Lasterhöhle, reportage: Sloop van Walled City midden in Hongkong." (22.00 The end of a den of vice, report: demolition of the Walled City in the middle of Hong Kong.) |
+| NRC Handelsblad, 18 Aug 1983, Willem van Kemenade, 'Discussie over toekomst Hongkong laait op' (KBNRC01:000027565:mpeg21:a0048) | On Sunday 7 Aug 1983 Xu Jiatun, the newly appointed director of the New China News Agency (新華社) in Hong Kong, made his first public walk in the City. The report says the City is run, in the absence of British authority, by an elected kaifong (neighbourhood) welfare association, which Xu praised. | "De ommuurde stad wordt bij afwezigheid van formeel Brits gezag daar bestuurd door een gekozen „kaifong” (buurt)-welzijnsvereniging." (The walled city is governed, in the absence of formal British authority, by an elected 'kaifong' (neighbourhood) welfare association.) |
+| NRC Handelsblad, 18 Aug 1983 (KBNRC01:000027565:mpeg21:a0048) | A Hong Kong economic daily mocked Xu's praise, calling the result of residents' self-rule a dung heap; Ta Kung Pao (大公報) then called the writer a lackey of the British. | "terwijl het resultaat daarvan een mesthoop is" (while the result of it is a dung heap) |
+| NRC Handelsblad, 13 Aug 1988, Carolijn Visser, 'Hong Kong dreigt te zinken ...' (KBNRC01:000029196:mpeg21:a0166) | A 1988 feature: Joanna, a British woman in a group of British women who care for the children of the City, says the area will be demolished in three phases. Each cleared part will be sealed so it cannot be squatted, and the rats will move into the flats still lived in. | "'De bedoeling is dat het gebied in drie fasen wordt gesloopt,' vertelt Joanna." ('The intention is that the area will be demolished in three phases,' says Joanna.) |
+| NRC Handelsblad, 13 Aug 1988 (KBNRC01:000029196:mpeg21:a0166) | Joanna's fear: in the last phase there would be ten times as many rats as people, rats as big as cats. The writer adds that children born in the City often have defects because they never see daylight (her claim). | "Tijdens de laatste fase van de sloop heb je op die manier tien keer zoveel ratten als mensen" (During the last phase of the demolition you will thus have ten times as many rats as people) |
+| Het Vrije Volk, 2 Dec 1989, p. 21 and 7 Dec 1989, p. 13, 'Onheilspellend' (ddd:010963401:mpeg21:a0436; ddd:010963064:mpeg21:a0085) | Retrospective (1989): the actress Adele Bloemendaal says she went into the City with an Australian woman of the Salvation Army, in behind a stall through a gap in the wall, with a torch. She claims seven building levels below ground, rats, and that a policeman gets no more than four metres in. The year of her visit is not given. | "Achter een stalletje, via een spleet in de muur, zijn we naarbinnen gegaan." (Behind a little stall, through a crack in the wall, we went inside.) |
+| Nederlands Dagblad, 13 Jul 1987, p. 9, 'Hongkong' (ddd:010562509:mpeg21:a0066) | A 1987 feature claims that close to a hundred thousand people live in the 'walled city', and places it wrongly among the skyscrapers of Victoria on the island. Low reliability. | "Een kleine honderdduizend mensen wonen hier op een minuscuul plekje grond." (Nearly a hundred thousand people live here on a minuscule bit of ground.) |
+| De Telegraaf, 28 Apr 1990, p. 2, 'Hel op aarde' (ddd:010646054:mpeg21:a1569) | A reader's letter of 28 Apr 1990 refers back to the Telegraaf report of 20 Dec 1986 (press-archives-21) and to the 50,000 people 'packed like herrings in a barrel'; the OCR stops after its first lines. | "Op 20-12-1986 publiceerde u in Weekeinde het verhaal „Dit is de hel op aarde" (On 20-12-1986 you published in Weekeinde the story 'This is hell on earth') |
+
+- **Leads:**
+  - 'Walled city: Hong Kong', West German documentary on Jackie Pullinger's work in the City, shown by the EO on 8 Nov 1990 (Nederland 1, 23.05-23.55): find the German title and maker.
+  - 'Das Ende einer Lasterhöhle', report on the demolition of the City, Nord 3 (NDR), 23 Jun 1993, 22.00.
+  - Granta, issue of about late 1989 (reviewed in NRC Handelsblad 9 Jan 1990), with Patrick Zachmann's photos of the City.
+  - Kevin Rafferty's book on Hong Kong (reviewed in Het Parool 7 Apr 1990), with a description of the City.
+  - The full text of the reader's letter 'Hel op aarde', De Telegraaf 28 Apr 1990, p. 2 (ddd:010646054:mpeg21:a1569): read it on the page scan.
+  - Dutch wire reports outside 1970-1995 from the query 'kowloon AND ommuurde': Het Nieuws 16 Jan 1948 'Woelingen in Kowloon' (ddd:010480283:mpeg21:a0024); Nieuwe Courant 21 Jan 1948 'De Kowloon affaire' (MMNIOD04:000093534:mpeg21:a0053); De Locomotief 29 Jan 1948 'De Affaire in Kowloon. Over jurisdictie en squatters' (ddd:010862868:mpeg21:a0019); about 20 reports of the fire of 12 Jan 1950; Trouw 23 Jan 1963 'Engeland wil praten met China over Kowloon' (ABCDDD:010816921:mpeg21:a0108); Algemeen Dagblad 28 Mar 1964 'Hongkong - waar tegenstellingen te ruiken zijn' (KBPERS01:002822025:mpeg21:a00080).
 ### press-archives-25: Wachten op sloop
 
-- **Creator:** Limburgsch Dagblad (photo: Reuter)
-- **Date:** 1992-03-21
-- **Kind:** photo
-- **Class:** primary (A wire photo of the time, with its caption, from inside the City during the evictions.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** © Reuters / Limburgsch Dagblad; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010637264:mpeg21:a0211:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010637264:mpeg21:a0211
-- **Proof that it exists:** 'Een Chinees jongetje poseert achter een hek dat dienst doet als voordeur van zijn ouderlijk huis in de zogeheten Ommuurde Stad'
-- **What it gives (finder's note, not checked):** A Reuters photo of a boy behind a gate that is the front door of his parents' home in the City (Mar 1992). Thousands of residents had left; some refused to move and asked for more compensation.
-- **Notes:** New in this run. I read only the OCR caption, not the image. A barred gate as a front door: a detail for the model, if the image confirms it. Find the Reuters original (about 20 Mar 1992) in a photo archive.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'Wachten op sloop' (photo with caption; photo Reuter), Limburgsch Dagblad, Saturday 21 March 1992, p. 3. Delpher urn ddd:010637264:mpeg21:a0211. https://resolver.kb.nl/resolve?urn=ddd:010637264:mpeg21:a0211:ocr
+- **Class:** primary (A wire photo of the time with its caption, during the clearance.)
+- **Date of the record:** printed 1992-03-21; the photo was taken shortly before (exact date not given)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the caption (XML); https://resolver.kb.nl/resolve?urn=ddd:010637264:mpeg21:a0211:ocr; licence: (c) Reuters / Limburgsch Dagblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010637264:mpeg21:a0211)
+  - not downloaded (curl exit 22): JPEG crop of the page with the photo and caption, from the KB imaging service; https://imageviewer.kb.nl/ImagingService/imagingService?id=ddd:010637264:mpeg21:p003:image&x=1400&y=1750&w=2400&h=2550&s=0.5; licence: (c) Reuters / Limburgsch Dagblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010637264:mpeg21:a0211)
+  - not downloaded (curl exit 22): Scan of the whole page, JPEG 2000; https://resolver.kb.nl/resolve?urn=ddd:010637264:mpeg21:p003:image; licence: (c) Reuters / Limburgsch Dagblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010637264:mpeg21:a0211)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 3, caption | A Chinese boy poses behind a gate that serves as the front door of his parents' home in the City. | "Een Chinees jongetje poseert achter een hek dat dienst doet als voordeur van zijn ouderlijk huis" (A Chinese little boy poses behind a gate that serves as the front door of his parental home) |
+| p. 3, caption | Thousands of residents had already left for elsewhere. Some refused to move and demanded higher compensation from the government. | "Duizenden inwoners zijn inmiddels vertrokken naar elders. Een aantal weigert echter te verhuizen en eist een hogere schadeloosstelling van de regering." (Thousands of residents have meanwhile left for elsewhere. A number, however, refuse to move and demand higher compensation from the government.) |
+| p. 3, photo | INFERRED: My reading of the photo: the gate is a metal lattice gate of crossing flat bars and vertical bars (INFERRED: a folding or collapsible gate), next to a riveted steel door frame with a keyhole. Behind it is a dim room with a wooden chair and a second person in a striped sweater. The boy holds the bars and wears a knitted cardigan. | "Foto: REUTER" (Photo: Reuters) |
+
+- **Leads:**
+  - The Reuters original of this photo (Kowloon Walled City, boy behind a gate, about 20 March 1992) in a photo archive.
 ### press-archives-23: Portret Engelse zendelinge bij EO
 
-- **Creator:** GPD (press agency), in the Leeuwarder Courant
-- **Date:** 1990-11-29
-- **Kind:** press
-- **Class:** primary (A TV preview of the time about a documentary; the writer did not see the City.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © Leeuwarder Courant / GPD; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010567432:mpeg21:a0170:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010567432:mpeg21:a0170
-- **Proof that it exists:** 'HILVERSUM (GPD) - De EO zendt het eerste deel uit van een tweedelig portret van de Engelse zendelinge Jackie Pullinger'
-- **What it gives (finder's note, not checked):** The EO showed on Nederland 1, at 20.45, the first part of a two-part portrait of Jackie Pullinger, 'Recht op liefde', about her work in the Walled City and the drug rehabilitation work that came from it.
-- **Notes:** New in this run. A lead for the film: 'Recht op liefde' is probably the Dutch title of 'The Law of Love: The Jackie Pullinger Story' (Channel 4, 1989), a README lead; this is not sure. The second part was probably on 6 Dec 1990 (TV listings of that day match the same search). The date of the broadcast is not in the item: probably the day of the paper.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** GPD, 'Portret Engelse zendelinge bij EO', Leeuwarder Courant, Thursday 29 November 1990, p. 2. Delpher urn ddd:010567432:mpeg21:a0170. https://resolver.kb.nl/resolve?urn=ddd:010567432:mpeg21:a0170:ocr
+- **Class:** primary (A TV note of the day: a record of the broadcast. Its lines on Jackie Pullinger's past work are background (kind secondary).)
+- **Date of the record:** 1990-11-29
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the TV note (XML); https://resolver.kb.nl/resolve?urn=ddd:010567432:mpeg21:a0170:ocr; licence: (c) Leeuwarder Courant / GPD; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010567432:mpeg21:a0170)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md`](../../secondary-sources/dutch-press-delpher-1986-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 2 | INFERRED: The EO broadcast the first part of a two-part portrait of the English missionary Jackie Pullinger (潘靈卓), titled 'Recht op liefde', on Nederland 1 at 20.45. The note does not give the date of the broadcast; INFERRED: the day of the paper, 29 Nov 1990 (NRC Handelsblad of that day lists it at 20.45-21.30, see press-archives-29). | "De EO zendt het eerste deel uit van een tweedelig portret van de Engelse zendelinge Jackie Pullinger: 'Recht op liefde." (The EO broadcasts the first part of a two-part portrait of the English missionary Jackie Pullinger: 'Right to love'.) |
+| p. 2 | The note calls the City a slum and a refuge for criminals, drug dealers, prostitutes, refugees, unemployed people and gamblers. | "een toevluchtsoord voor criminelen, drugshandelaren, prostituees, vluchtelingen, werklozen en gokkers" (a refuge for criminals, drug dealers, prostitutes, refugees, unemployed and gamblers) |
+
+- **Leads:**
+  - 'Recht op liefde', EO, Nederland 1, 29 Nov 1990 (part 1) and a second part: NRC Handelsblad calls it an English documentary (press-archives-29). Probably the Dutch title of 'The Law of Love: The Jackie Pullinger Story' (Channel 4, 1989); not checked. Archive: Beeld en Geluid.
 ### press-archives-27: NEDERLAND 2 (TV listing: '23.20 Voyager, documentaire serie. Afl.: De ommuurde stad van Kowloon.')
 
-- **Creator:** Trouw (TV listings)
-- **Date:** 1993-03-20
-- **Kind:** press
-- **Class:** primary (A TV listing of the time; a lead to a documentary, not a report on the City.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © Trouw; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ABCDDD:010821793:mpeg21:a0820:ocr
-- **Other links:** https://resolver.kb.nl/resolve?urn=KBPERS01:003114018:mpeg21:a00133:ocr, https://resolver.kb.nl/resolve?urn=ddd:010637902:mpeg21:a0674:ocr
-- **Proof that it exists:** '23.20 Voyager, documentaire serie. Afl.: De ommuurde stad van Kowloon.'
-- **What it gives (finder's note, not checked):** The VOO showed on Nederland 2, 20 Mar 1993 at 23.20, an episode of the documentary series 'Voyager' named 'De ommuurde stad van Kowloon', three days before the demolition began.
-- **Notes:** New in this run. The alt URLs are the same listing in the Algemeen Dagblad and the Limburgsch Dagblad (not opened). The maker of 'Voyager' is not given: find the original series and episode.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'NEDERLAND 2' (TV listings), Trouw, Saturday 20 March 1993. Delpher urn ABCDDD:010821793:mpeg21:a0820. https://resolver.kb.nl/resolve?urn=ABCDDD:010821793:mpeg21:a0820:ocr ; also Algemeen Dagblad 20 Mar 1993 (KBPERS01:003114018:mpeg21:a00133), Limburgsch Dagblad 20 Mar 1993 p. 45 (ddd:010637902:mpeg21:a0674), Nederlands Dagblad 20 Mar 1993 p. 4 (ddd:010629156:mpeg21:a0116).
+- **Class:** primary (TV listings of the day: a record that a documentary on the City was broadcast. They say nothing of daily life.)
+- **Date of the record:** 1993-03-20
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the Trouw TV listing (XML); https://resolver.kb.nl/resolve?urn=ABCDDD:010821793:mpeg21:a0820:ocr; licence: (c) Trouw; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ABCDDD:010821793:mpeg21:a0820)
+  - not downloaded (curl exit 22): OCR text of the Algemeen Dagblad TV listing (XML); https://resolver.kb.nl/resolve?urn=KBPERS01:003114018:mpeg21:a00133:ocr; licence: (c) Algemeen Dagblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=KBPERS01:003114018:mpeg21:a00133)
+  - not downloaded (curl exit 22): OCR text of the Nederlands Dagblad TV selection (XML); https://resolver.kb.nl/resolve?urn=ddd:010629156:mpeg21:a0116:ocr; licence: (c) Nederlands Dagblad; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010629156:mpeg21:a0116)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Trouw, listing | Nederland 2 showed at 23.20 on Saturday 20 March 1993 an episode of the documentary series 'Voyager' named 'De ommuurde stad van Kowloon', before the NOS news at 00.10. | "23.20 Voyager, documentaire serie. Afl.: De ommuurde stad van Kowloon. NOS 00.10 (S) Journaal." (23.20 Voyager, documentary series. Episode: The walled city of Kowloon. NOS 00.10 News.) |
+| Trouw, listing; Nederlands Dagblad p. 4 | The broadcaster was the VOO (Veronica): the Trouw listing puts the evening under VOO, and the Nederlands Dagblad names Veronica. | "Nederland 2, Veronica ► Voyager (23 20-00.10 uur)" (Nederland 2, Veronica: Voyager (23.20-00.10)) |
+| Algemeen Dagblad, listing | The episode had two subjects: the Walled City and 'Rechercheurs van de rimboe'. | "Afl.: De ommuurde stad van Kowloon; Rechercheurs van de rimboe." (Episode: The walled city of Kowloon; Detectives of the jungle.) |
+| Nederlands Dagblad, 20 Mar 1993, p. 4 | The Nederlands Dagblad describes it as a documentary on the walled city and on the Environmental Investigation Agency, a London bureau that exposes environmental crimes. | "Documentaire over de ommuurde stad van Koloon in Hongkong en over de Environmental Investigation Agency" (Documentary about the walled city of Kowloon in Hong Kong and about the Environmental Investigation Agency) |
+
+- **Leads:**
+  - The 'Voyager' documentary series episode on the Walled City (with a second item on the Environmental Investigation Agency), shown by Veronica on 20 Mar 1993: find the original series, maker and year (Beeld en Geluid archive).
 ### press-archives-28: Klaar voor afbraak
 
-- **Creator:** Amigoe (Curaçao); photo AFP
-- **Date:** 1993-03-24
-- **Kind:** photo
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'Klaar voor afbraak' (photo with caption; AFP), Amigoe (Curacao), Wednesday 24 March 1993, p. 11. Delpher urn ddd:010645003:mpeg21:a0135. https://resolver.kb.nl/resolve?urn=ddd:010645003:mpeg21:a0135:ocr
 - **Class:** primary (A wire photo of the time with its caption, at the start of the demolition.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © AFP / Amigoe; free to read on Delpher
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010645003:mpeg21:a0135:ocr
-- **Other links:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010645003:mpeg21:a0135
-- **Proof that it exists:** 'Een reusachtige grijper staat startklaar bij een deel van Kowloons Walled City in Hongkong.'
-- **What it gives (finder's note, not checked):** An AFP photo: a giant grab stands ready at part of the Walled City (Mar 1993); the caption says the reports do not mention new housing for the people who lived there.
-- **Notes:** New in this run. Delpher title 'Klaarvoorafbraak' (OCR joined the words); type 'illustratie met onderschrift', p. 11. I read only the caption.
+- **Date of the record:** printed 1993-03-24; the photo was taken shortly before (exact date not given)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text of the caption (XML); https://resolver.kb.nl/resolve?urn=ddd:010645003:mpeg21:a0135:ocr; licence: (c) AFP / Amigoe; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010645003:mpeg21:a0135)
+  - not downloaded (curl exit 22): JPEG crop of the page with most of the photo and the caption, from the KB imaging service; https://imageviewer.kb.nl/ImagingService/imagingService?id=ddd:010645003:mpeg21:p011:image&x=500&y=2250&w=1900&h=1900&s=1; licence: (c) AFP / Amigoe; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010645003:mpeg21:a0135)
+  - not downloaded (curl exit 22): Scan of the whole page, JPEG 2000; https://resolver.kb.nl/resolve?urn=ddd:010645003:mpeg21:p011:image; licence: (c) AFP / Amigoe; Delpher (KB) shows it free to read under its terms of use (Gebruiksvoorwaarden tab); no open licence stated (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010645003:mpeg21:a0135)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 11, caption | A giant grab stood ready at part of the Walled City; the slum was being cleared. | "Een reusachtige grijper staat startklaar bij een deel van Kowloons Walled City in Hongkong. Deze armoebuurt wordt opgeruimd." (A gigantic grab stands ready at a part of Kowloon's Walled City in Hong Kong. This poor quarter is being cleared.) |
+| p. 11, caption | The caption says the reports mention nothing about new housing for the poor people who had lived there. | "In de berichten wordt niets gemeld over vervangende huisvesting voor de armoezaaiers die hier woonden." (The reports say nothing about replacement housing for the paupers who lived here.) |
+| p. 11, photo | INFERRED: My reading of the photo: a large tracked demolition machine with a long boom and a heavy grab or crusher head stands in front of the high blocks of the City. | "(AFP-satellietfoto)" ((AFP satellite photo, i.e. a wire photo sent by satellite)) |
+
+- **Leads:**
+  - The AFP original of this photo (demolition machine at the Walled City, about 22-23 March 1993) in a photo archive.

@@ -159,3 +159,28 @@ See the leads under each item in the primary folder.
 | description, sentence 4 | The description says few houses had power, fewer had running water, and some never saw sunlight. | "但当中很少房子有电力供应，更少有自来水" (but few of the houses had a power supply, and fewer had running water) |
 | description, sentence 5 | The description says the largest building was a former Chinese government office that became a poorhouse for old women with terminal illness. | "城寨里最大的建筑物是一所中国政府的前办公室，后来成为了患上绝症的老年妇女贫民所。" (The largest building in the Walled City was a former office of the Chinese government, later a poorhouse for old women with terminal illness.) |
 | description, sentence 6 | INFERRED: The description says that a courtyard that once belonged to a temple was crowded with children who did not go to school. The 25,000 figure fits the 1970s more than the 1980s (inferred). | "到处都挤满了不上学的孩子" (everywhere it was crowded with children who did not go to school) |
+
+### top-depictions-1: Philip Chan: I Wanted to Redefine the Crime Thriller Genre
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Philip Chan (陳欣健), 'Philip Chan: I Wanted to Redefine the Crime Thriller Genre', interviewed by Cecilia Wong and May Ng on 26 October 2017, collated by Eric Tsang, in May Ng (ed.), Oral History Series (7): When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s (Hong Kong: Hong Kong Film Archive, 2018), e-book, pp. 252-266, https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf ; with 'Movie Talk Series: Philip Chan', Hong Kong Film Archive Newsletter, Issue 83 (Feb 2018), p. 13, https://www.filmarchive.gov.hk/documents/OLD-6.-Research-and-Publication/06-03_newsletter/newsletter83_e.pdf
+- **Class:** retrospective (Retrospective (2017): Philip Chan's own memory of his police service and of the films Jumping Ash (1976) and Long Arm of the Law (1984). The newsletter text of 2018 is the archive's later report (secondary). The item stays in the primary tree as first-hand testimony.)
+- **Date of the record:** Interview 26 Oct 2017; book published 2018; newsletter Feb 2018
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Newsletter 83, p. 13 | The HKFA newsletter reports that part of Long Arm of the Law (省港旗兵, 1984) was shot in the Walled City, and that some of the cast had criminal pasts. | "Part of the film was shot in the notoriously dangerous Kowloon Walled City, still considered a major feat, even today." |
+| Newsletter 83, p. 13 | The Chinese text of the newsletter calls the City a place in a 'three-no-control' state (三不管) at the time of the shoot. | "影片拍攝時深入處於三不管狀態的九龍城寨" (During the shoot the film went deep into Kowloon Walled City, which was then in a 'three-no-control' state.) |
+
+### top-top-film-1: Kowloon Walled City 1980 English documentary (Subtitles)
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Christian Cascio and Marc Boulet (film), [documentary on Kowloon Walled City], English narration, undated; unofficial YouTube upload 'Kowloon Walled City 1980 English documentary (Subtitles)' by South Sider, 30 Sep 2016, 17:22, https://www.youtube.com/watch?v=ooQjAYJQ-xM
+- **Class:** primary (A TV documentary filmed inside the City with a hidden camera. The narration says that Jackie Pullinger came to the City 'twenty years ago'; she came to Hong Kong in 1966, thus the film is of about 1986-1988 (INFERRED), not of 1980.)
+- **Date of the record:** about 1986-1988 (INFERRED from 'Twenty years ago, Jesus called this woman to the Walled City'); the uploader writes 1980; filmed in a warm season (summer clothes, INFERRED)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 10:38 | The narration says that Pullinger came to the City twenty years before the film. | "Twenty years ago, Jesus called this woman to the Walled City." |

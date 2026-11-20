@@ -43,3 +43,18 @@ See the leads under each item in the primary folder.
 | p.440, right column | 1,075 households (11%) found housing by other means. | "1,075世帯(11%)はその他の手段により住宅を確保した" (1,075 households (11%) secured housing by other means) |
 | p.441, right column, (6) 住戸 | A survey at the time of the residents' departure split the 8,494 units by use: 6,999 dwellings (82%), 1,000 non-residential or mixed units (11%) and 495 others (6%). | "8,494戸のうち、住居は6,999戸（82%）、非住居及び併用住居は1,000戸（11%）、その他が495戸（6%）" (Of the 8,494 units, dwellings were 6,999 (82%), non-residential and mixed-use units 1,000 (11%), others 495 (6%).) |
 | p.441, right column, (6) 住戸 | The paper says that units were let or sold, that a unit had one or several rooms, and that not all units were homes. | "住戸は、1室ないし数室から成るが、必ずしも居住用だけではなかった" (A unit consisted of one or several rooms, but was not necessarily only for living in.) |
+
+### top-gwulo-7: Plane landing on Kai Tak runway 05 1992; TriStar Touch Down on Runway 13 Kai Tak
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** degahkg, 'Plane landing on Kai Tak runway 05 1992' (Gwulo media 53375, taken c. 30 Apr 1992, posted 10 Feb 2026), https://gwulo.com/media/53375; and 'TriStar Touch Down on Runway 13 Kai Tak' (Gwulo media 53441, taken c. 1 May 1992, posted 16 Feb 2026), https://gwulo.com/media/53441, read 2026-11-20.
+- **Class:** primary (Photos taken in 1992 by the uploader; the captions and comments were written in 2026. They show the airport side of the surroundings during the clearance years, not the City.)
+- **Date of the record:** c. 30 Apr 1992 and c. 1 May 1992 (days approximate, per Gwulo)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-government-records-1899-1996/SOURCE.md`](../../primary-sources/hk-government-records-1899-1996/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| media 53375, description | The photo shows an All Nippon Airways Boeing 767 landing at Kai Tak, taken from the Kowloon City Ferry Pier. The Royal Hong Kong Auxiliary Air Force hangar is behind it. | "Close-up view of an All Nippon Airways Boeing 767 landing taken from Kowloon City Ferry Pier." |
+| media 53375, image and comment by moddsey (10 Feb 2026) | A cyclist rides on the service road along the runway, below the landing aircraft. | "The photo also captures a cyclist on the runway promontory road." |
+| media 53375, title and comment | The title says runway 05 but the comment of moddsey is headed 'Landing Runway 13'. The second photo names runway 13. | "Landing Runway 13" |
+| media 53441, description | In May 1992 a Cathay Pacific TriStar (VR-HOG) landed on runway 13, seen from the Kowloon City Ferry Pier. | "Photo taken in May 1992 from Kowloon City Ferry Pier of Cathay Pacific Tristar VR-HOG landing on runway 13." |

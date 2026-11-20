@@ -135,3 +135,18 @@ views of aeroplanes landing at nearby Kai Tak Airport".
 ## Check (2026-11-16)
 
 A script compared the old primary file line by line with the two new files, and found no lost fact, quote, URL or number. The script found each long quote of this file exact in the saved pages, and the live Chinese fonds page gives 啟德機場, 香港演藝學院 and 《亞洲華爾街日報》. I moved the research dates "1989 to 1992" of the fonds text out of the twin's "Why this is primary". I also corrected the dates of Ho's footage, three details, one quote of the CA17/1/3 page and two long sentences.
+
+## Items of the reading of the source search of 2026-11
+
+### top-gap-tv-news-archives-2: Exploring Kowloon Walled City In An Afternoon – Vlog ( 1991) By Suenn Ho
+
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I did not watch the video (no video tool). I read the archive.org metadata of the three copies and the YouTube metadata file (_reCv-ix-So.info.json) that the third copy keeps, and I viewed the 13 still frames that archive.org made from the video. The frames show the camcorder date, burnt-in English subtitles and a WSJ Live logo. NEW: the clip is a re-upload of a Wall Street Journal (WSJ Live) edit with the hashtag #wsjkwc, which fits the M+ note that part of the footage went to the Wall Street Journal Asia for its 2014 online exhibition. The sound, the full subtitles and most scenes are not read.
+- **Citation:** Suenn Ho (何巽), footage of Kowloon Walled City, 20 Nov 1991, in a Wall Street Journal (WSJ Live) edit with English subtitles (#wsjkwc), re-uploaded as "Exploring Kowloon Walled City in an Afternoon – Vlog (1991) by Suenn Ho" by Johny Bobbles Archives on YouTube (_reCv-ix-So, 2 Jun 2023, 6:31) and copied to the Internet Archive, https://archive.org/details/youtube-_reCv-ix-So (and two other copies), read 2026-11-20.
+- **Class:** primary (The footage is primary: shot in the City on 20 Nov 1991 (camcorder date). The subtitles and at least one voice-over line are a later WSJ edit (2014, INFERRED from the M+ note); the voice-over is retrospective (about 2014). The tree primary is correct for the footage.)
+- **Date of the record:** 20 Nov 1991, 13:31 to 14:12 (camcorder timestamp); edited about 2014 (INFERRED); uploaded 2 Jun 2023
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-suenn-ho-ca17/SOURCE.md`](../../primary-sources/mplus-suenn-ho-ca17/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org still frame (youtube-_reCv-ix-So.thumbs/_reCv-ix-So_000001.jpg) | Every frame carries a WSJ Live logo and the hashtag #wsjkwc, and English subtitles are burnt in. Thus the upload is a copy of a Wall Street Journal video, not Suenn Ho's raw tape. | "#wsjkwc" |
+| YouTube metadata file _reCv-ix-So.info.json | The video is 6 min 31 s (391 s), 1920 x 1080. The YouTube channel Johny Bobbles Archives uploaded it on 2 Jun 2023 with no description; it had 354,860 views when the copy was made. | "duration_string": "6:31" |

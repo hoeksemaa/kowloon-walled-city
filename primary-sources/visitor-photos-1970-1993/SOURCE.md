@@ -2,7 +2,7 @@
 
 Photos made at the time by visitors (Ng Sai-kit and others).
 
-- **Status:** partly read: 11 of 15 items read by the reading of the source search of
+- **Status:** partly read: 14 of 15 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1970-2023.
@@ -65,20 +65,30 @@ testimony given later: tag its facts "retrospective (year)".
 | image 2402514643 (881104091723, 4 Nov 1988) | INFERRED: A shop window with a tiled base and aluminium frames shows flat boxes or books and a Chinese newspaper. The place is not certain (caption 'Kowloon city'). | "881104091723" |
 ### top-top-flickr-1: Kowloon Walled City (with '12 story walk-up', 'Dubious Dentists' and 'Teef')
 
-- **Creator:** allan56 (Flickr 9730593@N04). The profile says: 'I've posted many shots from my time in Hong Kong in the 1970s.' Scanned from slides
-- **Date:** 1977
-- **Kind:** photo
-- **Class:** primary (Four photos made in the City in 1977 by a person who lived in Hong Kong then.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/9730593@N04/2848827972/
-- **Other links:** https://www.flickr.com/photos/9730593@N04/2839177014/, https://www.flickr.com/photos/9730593@N04/2864951860/, https://www.flickr.com/photos/9730593@N04/2839174844/, https://www.flickr.com/photos/old-hk/3099687739/
-- **Proof that it exists:** Title 'Kowloon Walled City'; description 'Fascinating and notoriously lawless part of the city. No elevators in those walk-ups.' 'Hong Kong 1977'.
-- **What it gives (finder's note, not checked):** Four 1977 photos that the captions place in the City: a view of the walk-ups; '12 story walk-up' ('Kowloon Walled City - now razed'); 'Dubious Dentists' ('Presumably unlicensed dental offices in Kowloon Walled City'); and 'Teef' ('Dental office display window in Kowloon walled city'). They show the dentists' shopfronts and the high walk-ups eight years before the peak.
-- **Notes:** Ids 2848827972, 2839177014, 2864951860, 2839174844; uploaded Sep 2008. The Flickr 'taken' date is the scan date (Sep 2008), thus the date-taken filters of the first finder missed them. 2848827972: 3,513 views, 13 faves, 4 comments (the comments did not load). Same photostream, Kowloon City district 1977, not captioned as the City: 'Kowloon City resettlement blocks' (2848835778, 'Blocks of 1 room apts originally built for refugee families. Community facilities.'), 'Opera Stage' (2846646927, 'setting up the stage in Kowloon City. Hong Kong 1977'), 'Market Place' (2864949656). HK Man (香港在消失ing, Flickr old-hk) re-uploaded 2848827972 on 11 Dec 2008 as '九龍城 - 東頭村道、聯合道 交界 1977' with '[ old photo taken by allan56 ]'. That title places it at the junction of Tung Tau Tsuen Road (東頭村道) and 聯合道: the place is the re-uploader's reading, not checked. I did not view the images. A per-user search for 'walled' gives 12 hits; the others that I opened are family photos ('Sister on wall').
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** allan56 (Flickr user 9730593@N04), four photos of Kowloon Walled City, 1977, scanned from slides and uploaded 8-17 Sep 2008: 'Kowloon Walled City' (2848827972), '12 story walk-up' (2839177014), 'Dubious Dentists' (2864951860), 'Teef' (2839174844), album '1977 Hong Kong'. https://www.flickr.com/photos/9730593@N04/2848827972/ ; re-upload by HK Man (香港在消失ing), '九龍城 - 東頭村道、聯合道 交界 1977', 11 Dec 2008, https://www.flickr.com/photos/old-hk/3099687739/
+- **Class:** primary (Photos taken in 1977 by a foreign resident who lived near the City: records of the time, eight years before the model week. The captions and allan56's comments are retrospective (2008). Other commenters' statements are secondary.)
+- **Date of the record:** photos 1977 (caption); scanned and uploaded Sep 2008 (Flickr 'taken' = scan date, scanner 'Noritsu Koki QSS')
+- **Files:**
+  - `top-top-flickr-1-2848827972_7dea32733f_b-d14a277d.jpg` (in `local/`, not in git): 'Kowloon Walled City' 1977, view of the blocks from Junction Road (1024x668); https://live.staticflickr.com/3066/2848827972_7dea32733f_b.jpg; 203680 bytes; SHA-256 `0df1fa5204c2cf5ad936ccb3814b3e24f2dca5a2202a2bd346ad727a9f4a5d1e`; licence: All rights reserved (Flickr licence field) (https://www.flickr.com/photos/9730593@N04/2848827972/)
+  - `top-top-flickr-1-2839177014_26416ac22b_b-89226598.jpg` (in `local/`, not in git): '12 story walk-up' 1977 (668x1024); https://live.staticflickr.com/3168/2839177014_26416ac22b_b.jpg; 289737 bytes; SHA-256 `15c4e2bd00a4bf2a2d3e7092022e66785aa477684eba4a10ef5ef476d4d77ef3`; licence: All rights reserved (Flickr licence field) (https://www.flickr.com/photos/9730593@N04/2839177014/)
+  - `top-top-flickr-1-2864951860_fcf0150ae9_b-3c3c8eec.jpg` (in `local/`, not in git): 'Dubious Dentists' 1977, dentists' signs (683x1024); https://live.staticflickr.com/3287/2864951860_fcf0150ae9_b.jpg; 203683 bytes; SHA-256 `b9b19cf1ecde516ed53e5f184217f6883a26abdb6ca19f70a5d44922e52c0979`; licence: All rights reserved (Flickr licence field) (https://www.flickr.com/photos/9730593@N04/2864951860/)
+  - `top-top-flickr-1-2839174844_44cd0f7f40_b-8bbb307b.jpg` (in `local/`, not in git): 'Teef' 1977, dentist's display window (1024x478); https://live.staticflickr.com/3200/2839174844_44cd0f7f40_b.jpg; 170532 bytes; SHA-256 `ace2fe5ba871eee25d00aabf618178db94324e114bd0b4d9ebd448887644959e`; licence: All rights reserved (Flickr licence field) (https://www.flickr.com/photos/9730593@N04/2839174844/)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Flickr 2848827972, description | Caption of 2848827972: a lawless part of the city, and no lifts in its walk-up blocks. | "Fascinating and notoriously lawless part of the city. No elevators in those walk-ups. Hong Kong 1977" |
+| Flickr 2848827972, image | INFERRED: Photo 2848827972: a wide road leads towards the City's high blocks, about 10-14 storeys, still with gaps and uneven heights; at the right of the road is a yard of low sheds with a steel framework and a red lorry; at the left a sloped bank and low buildings (my reading). | "No elevators in those walk-ups." |
+| Flickr old-hk 3099687739, comment by allan56 (2008) | Retrospective (2008), allan56: he lived near the City for several months and walked past it every day. He was told criminals lived there and was a little scared to go in. | "I lived near the walled city for several months and walked past it every day." |
+| Flickr old-hk 3099687739, comment by allan56 (2008); also 2848827972 | Retrospective (2008), allan56: he walked through the City only once; he remembers how dark and narrow it felt inside, and he left quickly because he felt unwelcome. In 1998 he found it gone. | "I only walked through it one time, and all I remember is how dark and narrow it felt inside. I left quickly because I felt unwelcome." |
+| Flickr 2839177014, description and image | INFERRED: Caption of 2839177014: a 12-storey walk-up in the City. The photo shows a block of about 12 storeys with caged balconies, laundry and plants, and at street level many shop signs, a Coca-Cola sign, a vertical sign beginning 郭衛人醫, and lorries and vans parked in front (my reading). | "Kowloon Walled City - now razed. A fascinating and notoriously lawless area of the city. Hong Kong 1977" |
+| Flickr 2864951860, description | Caption of 2864951860: presumably unlicensed dental offices in the City. | "Presumably unlicensed dental offices in Kowloon Walled City. Hong Kong 1977" |
+| Flickr 2864951860, image | INFERRED: Photo 2864951860: a covered pavement with many signboards projecting overhead. They include 馬華牙科; a black dentist sign whose small red line reads 東頭村道 and '3' (INFERRED: an address, Tung Tau Tsuen Road (東頭村道) No. 3); a red sign with a denture picture; the clinic sign 志青診所 with 花柳 and 內科 services; and 謝漢強牙科. Pedestrians in winter jackets walk past; a lorry stands at the kerb (my reading). | "Presumably unlicensed dental offices" |
+| Flickr 2839174844, description and image | Photo 2839174844 ('Teef', caption: a dental office display window in the City): a window with four tiers of glass shelves in metal frames. Seven lidded glass jars full of dentures stand on the top shelf; loose full dentures and metal partial-denture frames lie in rows on the lower shelves. | "Dental office display window in Kowloon walled city. Hong Kong 1977" |
+
+- **Leads:**
+  - allan56's album '1977 Hong Kong' (121 items) on Flickr: other 1977 frames of Kowloon City near the City (e.g. 'Kowloon City resettlement blocks' 2848835778, 'Opera Stage' 2846646927, 'Market Place' 2864949656).
 ### flickr-5: Kowloon Walled City 九龍城寨 - Photos - 80年代-城寨內點心工場.jpg (and four other '80年代' photos)
 
 - **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
@@ -187,21 +197,23 @@ testimony given later: tag its facts "retrospective (year)".
 | image, upper half | INFERRED: Behind the junction stand the City's blocks, about 10 to 14 storeys high, with balconies closed by green-painted cages and with laundry. A white banner hangs near the corner at the left. | "九龍寨城 vs 九龍寨城公園" (Kowloon Walled City vs Kowloon Walled City Park) |
 ### top-press-en-19: Sign in the Walled City of Kowloon, Hong Kong
 
-- **Creator:** Brian Brake (photographer); Museum of New Zealand Te Papa Tongarewa
-- **Date:** 1970-1976
-- **Kind:** photo
-- **Class:** primary (A colour transparency made in the City by a photographer at the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All Rights Reserved (Te Papa)
-- **Link:** https://collections.tepapa.govt.nz/object/645201
-- **Other links:** https://api.digitalnz.org/records/30674709.json
-- **Proof that it exists:** Sign in the Walled City of Kowloon, Hong Kong; Brian Brake; 1970-1976; colour transparency; registration CT.053648
-- **What it gives (finder's note, not checked):** One colour transparency of a sign in the City, 1970-76. Credit: Gift of Mr Raymond Wai-Man Lau, 2001. The page gives no description.
-- **Notes:** Not press: found through the DigitalNZ API while I searched Papers Past. DigitalNZ lists only this one image for '"Walled City" Kowloon'. Te Papa can hold more Brake frames of the City under other titles.
-- **Same item in the finder files:** top-institutions-4
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Brian Brake (photographer), 'Sign in the Walled City of Kowloon, Hong Kong', 1970-1976, colour transparency, Museum of New Zealand Te Papa Tongarewa, registration number CT.053648, gift of Mr Raymond Wai-Man Lau, 2001. https://collections.tepapa.govt.nz/object/645201 ; DigitalNZ record 30674709.
+- **Class:** primary (A photo taken in the City in 1970-1976, about ten years before the peak. The title and dates are the museum's cataloguing (kind secondary).)
+- **Date of the record:** 1970-1976 (museum date range)
+- **Files:**
+  - `top-press-en-19-preview-e0e0af51.html` (in `local/`, not in git): Preview JPEG of the transparency (1000x667); https://media.tepapa.govt.nz/collection/208339/preview; 109693 bytes; SHA-256 `a9e2bee60c79dc6585708c8efe12464c5007df211d5c6b21664fd8d8b36832d1`; licence: All Rights Reserved (Te Papa) (https://collections.tepapa.govt.nz/object/645201)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Te Papa preview image (208339) | The photo shows a dentist's signboard: raised red characters 蕭秉陞牙科 on a white board, with the picture of a full denture in red in the middle. | "蕭秉陞牙科" ([name in Chinese only] Dental) |
+| Te Papa preview image, lower line | The lower line of the sign advertises dentures; it reads 鑲各國名廠磁托金鋼 and is cut off at the right edge of the frame. | "鑲各國名廠磁托金鋼" (fitting [dentures] of famous makers of all countries, porcelain bases, gold, steel ...) |
+| Te Papa preview image, top | Above it, part of a second signboard with blue characters and the steel bracket of another sign are visible; the blue text is too cut to read. | "Sign in the Walled City of Kowloon, Hong Kong" |
+| Te Papa image; Flickr 2864951860 | INFERRED: The same dentist's sign layout (the name with a red denture picture under it) hangs in allan56's 1977 photo of the dentists' signs of the City (item top-top-flickr-1, 'Dubious Dentists'); at that photo's low resolution the third character of the name is not sure (my comparison). | "Presumably unlicensed dental offices in Kowloon Walled City." |
+
+- **Leads:**
+  - Te Papa's other Brian Brake frames of Hong Kong, 1970s (DigitalNZ lists about 1,335 records for 'Brian Brake Hong Kong', most titled only 'Hong Kong'): some can show the City without saying so. Ask Te Papa for the Raymond Wai-Man Lau gift of 2001.
 ### flickr-13: Series of the Historial Change of Tung Tau Estate and the Walled City (photos titled 'Early 1970s ...', '1980s ...', '1986 ...', '1990s Walled City and Tung Tau City, Hong Kong')
 
 - **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
@@ -234,20 +246,30 @@ testimony given later: tag its facts "retrospective (year)".
 - **Note:** the reader classed the whole item as depiction: its 3 facts are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 ### ja-25: 取り壊される前に行ってみたかった！　解体前に潜入した「本物の九龍城砦」の写真が迫力満点
 
-- **Creator:** モトタキ (ねとらぼ, ITmedia); photos by PepperBox (@PepperAnnex)
-- **Date:** 2023-06-13
-- **Kind:** photo
-- **Class:** retrospective (Photos that a visitor made at the City before the demolition, with no year given.)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** © the photographer
-- **Link:** https://nlab.itmedia.co.jp/nl/articles/2306/12/news120.html
-- **Other links:** https://twitter.com/PepperAnnex/status/1663764188605607937
-- **Proof that it exists:** First sentence: 「これはまさに「今は撮れない写真」だ。」
-- **What it gives (finder's note, not checked):** Exteriors with ad hoc extensions, a lane and a stair inside a building. No date, no rooms, shops or people described.
-- **Notes:** Ask the photographer for the year. The X post was not opened (X needs JavaScript).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** モトタキ (Mototaki), '取り壊される前に行ってみたかった！　解体前に潜入した「本物の九龍城砦」の写真が迫力満点', ねとらぼ (ITmedia), 13 June 2023, https://nlab.itmedia.co.jp/nl/articles/2306/12/news120.html (now https://nlab.itmedia.co.jp/cont/articles/3358123/); photos by PepperBox (@PepperAnnex), X post of 31 May 2023, https://twitter.com/PepperAnnex/status/1663764188605607937
+- **Class:** primary (Four photos taken by a visitor inside and at the edge of the City before its demolition: records made at the time, date unknown. The caption is retrospective (2023). The article's narration is secondary. The protest banners in two photos suggest the clearance years, about 1987-1992 (INFERRED).)
+- **Date of the record:** photos: before the demolition of 1993, year not given (INFERRED from the banners: the clearance years, about 1987-1992); X post 2023-05-31; article 2023-06-13
+- **Files:**
+  - `ja-25-FxbgYrqaMAAYp0U-f2cfd766.jpg` (in `local/`, not in git): Photo 1, street frontage with clinic and dentist signs and banners (2988x2108); https://pbs.twimg.com/media/FxbgYrqaMAAYp0U.jpg?name=orig; 3117849 bytes; SHA-256 `fa3007bdf08aebde61ddd690a397e70fa6807805dc25b3dd2f90704458ac38e6`; licence: (c) the photographer PepperBox; no licence stated on the X post; the article credits '画像提供：PepperBox（@PepperAnnex）さん' (https://nlab.itmedia.co.jp/cont/articles/3358123/)
+  - `ja-25-FxbgdLOacAA_pfz-077c5546.jpg` (in `local/`, not in git): Photo 2, frontage with protest banners (2992x2096); https://pbs.twimg.com/media/FxbgdLOacAA_pfz.jpg?name=orig; 3001684 bytes; SHA-256 `42ae40984a0d49ddebbdc342aa2dba3264781ead6a2fe086f6ba49c3bddcf881`; licence: (c) the photographer PepperBox; no licence stated (https://nlab.itmedia.co.jp/cont/articles/3358123/)
+  - `ja-25-FxbgfbEaEAAvHYO-1cf195d1.jpg` (in `local/`, not in git): Photo 3, stairway inside a building (2962x2076); https://pbs.twimg.com/media/FxbgfbEaEAAvHYO.jpg?name=orig; 2816463 bytes; SHA-256 `197c1d1ef5e393489230b2430a36d984a56086d284a7f050d1a507d8058f551b`; licence: (c) the photographer PepperBox; no licence stated (https://nlab.itmedia.co.jp/cont/articles/3358123/)
+  - `ja-25-FxbghMHaQAAdttA-6b5c4ddb.jpg` (in `local/`, not in git): Photo 4, alley with boarded shopfront (2080x2975); https://pbs.twimg.com/media/FxbghMHaQAAdttA.jpg?name=orig; 2887892 bytes; SHA-256 `99bf5047ccb7b39c9a946e7b96ee0625491a035f57e60b08b708c876fae000a0`; licence: (c) the photographer PepperBox; no licence stated (https://nlab.itmedia.co.jp/cont/articles/3358123/)
+  - `ja-25-page-54ee3bcc.html` (in `local/`, not in git): HTML of the article, page 1; https://nlab.itmedia.co.jp/cont/articles/3358123/; 234455 bytes; SHA-256 `4069348f5fb80d7a80a305bd7e84cf0bf7d6a0be894bc816e735cf069bca7280`; licence: Copyright (c) ITmedia Inc. All Rights Reserved. (https://nlab.itmedia.co.jp/cont/articles/3358123/)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| X post, 31 May 2023, 04:27 UTC | Retrospective (2023): the photographer says that before the demolition they hired a local guide and went into the real Kowloon Walled City. | "解体前に現地ガイドさんを雇って潜入してきた九龍城砦（本物）。" (Before the demolition I hired a local guide and sneaked into Kowloon Walled City (the real one).) |
+| photo 1 (FxbgYrqaMAAYp0U) | INFERRED: Photo 1 (a street frontage): signboards on steel brackets project over the pavement in layers. A dentist's sign reads 梁兆炎牙科; a doctor's sign reads 錢茂林醫生 with '10號二樓' (No. 10, 2nd floor); a clinic sign reads 志青診所 and lists 兒科 內科 花柳 白濁 皮膚 (children, internal medicine, venereal disease, gonorrhoea, skin) with an arrow; another reads 皮膚性病 with an address on No. 8, 2nd floor. My reading of the photo; the first character of the doctor's name is drawn in a variant form. | "錢茂林醫生 10號二樓" (Doctor [name in Chinese only], No. 10, 2nd floor) |
+| photo 1 | INFERRED: Photo 1 also shows an English sign 'EASTERN COMPUTER PARTS CO.', a liquefied-gas dealer's sign with a 'CROWN' logo and 石油氣, a sign for 跌打 (bone-setting), and long white cloth banners with handwritten characters and a red flag hung on the frontage. | "EASTERN COMPUTER PARTS CO." |
+| photo 1; Flickr 2864951860 | INFERRED: Photo 1 shows the same row of signs as allan56's 1977 photo 'Dubious Dentists' (item top-top-flickr-1): the clinic sign 志青診所 with an address on No. 8, 2nd floor, and the dentist sign 謝漢強牙科 appear in both (my comparison of the two photos). | "志青診所" |
+| photo 2 (FxbgdLOacAA_pfz) | INFERRED: Photo 2 (the frontage seen from the road): the ground-floor shops are shuttered. Protest banners hang along the frontage and along the railing of the pavement; one says in English and Chinese that the Hong Kong government acts like triads or pirate bandits. Vertical signs read 東方診所 and 郭衛人. The blocks above have iron-grilled balconies with plants, about 10-14 storeys (my count). | "SHAMEFUL HK GOVERNMENT ACTS LIKE TRIADS BANDIT!" |
+| photo 3 (FxbgfbEaEAAvHYO); article caption 3 | INFERRED: Photo 3 (a stairway inside a building): worn concrete steps, a steel pipe handrail fixed to the right wall, loose bundles of electric wire along the walls and ceiling, a red paper on the wall, a fluorescent tube on the landing above, and red painted characters on the landing wall. The first character looks like 三 (INFERRED: perhaps a floor mark; too blurred to read). | "この奥にはどんな世界が広がるのか" (What kind of world spreads out beyond here? (the article's caption)) |
+| photo 4 (FxbghMHaQAAdttA); article caption 4 | INFERRED: Photo 4 (an alley): a narrow, wet lane under tangles of overhead wire and a wall lamp; on the right a shopfront closed with vertical wooden boards under a signboard with raised characters, with paper notices stuck on it; orange spray paint on the left wall. | "危険な空気が漂う" (A dangerous air hangs about (the article's caption)) |
+
+- **Leads:**
+  - Ask the photographer PepperBox (@PepperAnnex) on X for the year of the visit; the banners suggest the clearance years.
 ### flickr-9: The Walled City Kowloon
 
 - **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
