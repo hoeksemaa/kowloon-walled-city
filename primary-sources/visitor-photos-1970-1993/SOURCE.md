@@ -2,10 +2,9 @@
 
 Photos made at the time by visitors (Ng Sai-kit and others).
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 11 of 15 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1970-2023.
 - **Items:** 15, of which 15 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -20,20 +19,50 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### flickr-1: Kowloon Walled City (album)
 
-- **Creator:** Ng Saikit (Flickr nsai / threshxold)
-- **Date:** 1988-1992
-- **Kind:** photo
-- **Class:** primary (A local photographer's own film frames of the City, made in 1988, 1991 and 1992 and scanned in 2008.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved (© Ng Saikit)
-- **Link:** https://www.flickr.com/photos/threshxold/albums/72157604461344814
-- **Other links:** https://www.flickr.com/photos/threshxold/2430880495/, https://www.flickr.com/photos/threshxold/2431693966/, https://www.flickr.com/photos/threshxold/2400374309/, https://www.flickr.com/photos/threshxold/2436858568/
-- **Proof that it exists:** Album 'Kowloon Walled City' by nsai, 15 photos; photo 2430880495 has the caption 'Kowloon walled city, H.K. 1991'; photo 2400374309 has the caption 'Kowloon city , hong kong '88'.
-- **What it gives (finder's note, not checked):** 15 photos of the City in three visits: 2 frames of 4 Nov 1988, 10 frames of 1 Aug 1991 (before the clearance started in Nov 1991), 3 frames of 2 Apr 1992 (during the clearance). The pages give no description of the subjects; the images themselves must be looked at.
-- **Notes:** The best Flickr set found. Photo titles are film codes: 881104090123, 881104091723 (1988); 910801801067, 910801800667, 910801800467, 91080189101167, 91080190020367, 910801770767, 910801771167, 910801901067, 910801901167, 910801910167 (1991); 92040222020367, 92040222B0767, 92040222A0466 (1992). INFERRED: the first six digits are YYMMDD; the captions '1991' and ''88' agree. Flickr 'date taken' is the 2008 scan date. Photo ids: 2400381729, 2400381623, 2401212934, 2401210830, 2403334272, 2402504741, 2403335990, 2400374309, 2402514643, 2430880253, 2431693966, 2430880495, 2430880651, 2430880781, 2436858568. Ask the photographer for the right to keep copies.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Ng Saikit (Flickr user nsai, photostream threshxold), 'Kowloon Walled City' (album of 15 photos, film frames of 4 Nov 1988, 1 Aug 1991 and 2 Apr 1992, uploaded 9-23 Apr 2008), Flickr, https://www.flickr.com/photos/threshxold/albums/72157604461344814 (photo ids 2400381729, 2400381623, 2401212934, 2401210830, 2403334272, 2402504741, 2403335990, 2400374309, 2402514643, 2430880253, 2431693966, 2430880495, 2430880651, 2430880781, 2436858568), read 2026-11-19.
+- **Class:** primary (Photographs that a visitor made on three days in 1988-1992. The short captions ('91, '88) were written in 2008 by the photographer. The tree primary is correct.)
+- **Date of the record:** 4 Nov 1988 (2 frames), 1 Aug 1991 (10 frames), 2 Apr 1992 (3 frames); INFERRED from the film codes YYMMDD, which agree with the captions
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2357/2400381729_2fdd9f0eb4_b.jpg; Ng Saikit, photo 2400381729: 910801801067 (1 Aug 1991), street with a bus and a taxi, 800x630; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2400381729/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2168/2400381623_d88f7f3c06_b.jpg; Ng Saikit, photo 2400381623: 910801800667 (1 Aug 1991), City frontage with a landing jet, 800x623; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2400381623/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3138/2401212934_7443f50205_b.jpg; Ng Saikit, photo 2401212934: 910801800467 (1 Aug 1991), road and frontage from a raised deck, 800x625; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2401212934/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3262/2401210830_21442a9264_b.jpg; Ng Saikit, photo 2401210830: 92040222020367 (2 Apr 1992), low roofs and Lion Rock, 800x628; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2401210830/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2299/2403334272_74398b49de_b.jpg; Ng Saikit, photo 2403334272: 91080189101167 (1 Aug 1991), alley with a cannon under a LUNG CHUN ROAD sign, 800x625; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2403334272/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2285/2402504741_ca724e4353_b.jpg; Ng Saikit, photo 2402504741: 91080190020367 (1 Aug 1991), dark wet alley with wires, 800x625; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2402504741/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3241/2403335990_7b9a392f56_b.jpg; Ng Saikit, photo 2403335990: 910801770767 (1 Aug 1991), park with a rockery and a landing jet, 800x625; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2403335990/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2141/2400374309_661baf5364_b.jpg; Ng Saikit, photo 2400374309: 881104090123 (4 Nov 1988), alley with an animal carcass, 800x527; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2400374309/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3068/2402514643_bc17c7bc73_b.jpg; Ng Saikit, photo 2402514643: 881104091723 (4 Nov 1988), shop window, 800x532; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2402514643/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2231/2430880253_dba7d8a2cc_b.jpg; Ng Saikit, photo 2430880253: 92040222B0767 (print code TY920402220867, 2 Apr 1992), low roofs with aerials, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2430880253/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3004/2431693966_a3d6cdfdf6_b.jpg; Ng Saikit, photo 2431693966: TY910801771167 (1 Aug 1991), City blocks, park and a landing jet, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2431693966/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2360/2430880495_3eca3e9bbf_b.jpg; Ng Saikit, photo 2430880495: TY910801901067 (1 Aug 1991), a wall of City blocks with Lion Rock behind, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2430880495/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2410/2430880651_50848bdcce_b.jpg; Ng Saikit, photo 2430880651: TY910801901167 (1 Aug 1991), roofs, stairs and aerials, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2430880651/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3194/2430880781_5cf89e5377_b.jpg; Ng Saikit, photo 2430880781: TY910801910167 (1 Aug 1991), roof with a steel frame and plants, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2430880781/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3192/2436858568_a8d74b13ab_b.jpg; Ng Saikit, photo 2436858568: TY92040222A0466 (2 Apr 1992), roof aerials and a jet, 900x804; licence: All rights reserved (© Ng Saikit) (https://www.flickr.com/photos/threshxold/2436858568/)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 2403334272 (91080189101167, 1 Aug 1991) | A narrow alley ends at a wall with a street sign that reads LUNG CHUN ROAD. An old iron cannon lies on the ground at the foot of this wall, on a small block. | "LUNG CHUN ROAD" |
+| image 2403334272, street sign, small line | INFERRED: The small line at the foot of the Lung Chun Road sign says that a welfare association (福利會) made the sign. I read the line as 城寨福利會制; the first two characters are not clear. | "福利會制" (made by the welfare association) |
+| image 2403334272, left wall | INFERRED: A large painted number, which I read as 88, is on the left wall of the same alley. The gate on the left is a folding steel gate. | "91080189101167" |
+| image 2400381623 (910801800667, 1 Aug 1991) | INFERRED: A row of City buildings fronts a wide street. A four-engined jumbo jet flies low over the street; INFERRED: it is landing at Kai Tak. Cars park along the kerb, and a lorry and vans drive on the road. | "Kowloon City, Hong Kong '91" |
+| image 2400381623, vertical sign at centre left | INFERRED: In the same view, a vertical signboard reads 西醫陳漢… (a Western-medicine doctor whose name starts 陳漢). Other boards on the first floors are shop and clinic signs that I cannot read at this size. | "西醫陳漢" (Western-medicine doctor 陳漢…) |
+| image 2400381729 (910801801067, 1 Aug 1991) | INFERRED: A street view: a double-decker bus with a CHINON advertisement, a taxi at the kerb, a fire hydrant in the front, and public-housing blocks with laundry on poles at the left. INFERRED: Tung Tau Tsuen Road (東頭村道), with the City's frontage on the right. | "910801801067" |
+| image 2400381729, poster on the pillar at right | INFERRED: On a pillar at the right, a poster shows $500 beside the words for buying up (收購) stereo sets (音響) and video recorders (錄影機), with a phone number 5526186. INFERRED: a dealer who buys used electronics. | "$500 … 收購 … 音響 … 錄影機" ($500 … buy up … stereo … video recorders) |
+| image 2400381729, signboard behind the pillar | INFERRED: Beside the poster, a signboard reads 平民醫療所 (a people's clinic), with a small address line that I cannot read. The repo already has a '…平民醫療所' at 3-4 Tung Tau Tsuen Road from another photo; INFERRED: the same clinic. | "平民醫療所" (people's clinic) |
+| image 2401212934 (910801800467, 1 Aug 1991) | INFERRED: From a raised concrete deck with railings, a staircase runs down to a pavement beside a curving road. A row of buildings of nine or more storeys with many shop signs stands across the road. A painted sign on the deck building ends '…SE NO.5'. INFERRED: the City's frontage seen from the housing estate across the road. | "NO.5" |
+| image 2402504741 (91080190020367, 1 Aug 1991) | A dark covered alley: many wires and pipes hang under the ceiling, a fluorescent lamp burns, and the floor is wet with puddles. A large covered cart or bin stands at the left, and large round reels or drums stand at the right. Daylight shows at the far end. | "91080190020367" |
+| image 2403335990 (910801770767, 1 Aug 1991) | INFERRED: A high view over a park with a rockery, winding paths, lamp posts, palms and a pavilion, beside a fenced building site. A jumbo jet flies low over the district, with the harbour and hills behind. INFERRED: the landscaped ground beside the City, seen from a high roof. | "910801770767" |
+| image 2431693966 (TY910801771167, 1 Aug 1991) | INFERRED: From a flat roof, the City's tall blocks (about 10 to 13 storeys, with frames and aerials on their roofs) stand at the left. A park with a rockery and trees lies below them, and a jet descends over the harbour behind. | "TY910801771167" |
+| image 2430880495 (TY910801901067, 1 Aug 1991) | INFERRED: A wall of City blocks fills the frame, with Lion Rock above them. At least 12 storeys of windows show above a low roof in the front. INFERRED: the south face, because Lion Rock lies north of the City. | "Kowloon walled city, H.K. 1991" |
+| image 2430880651 (TY910801901167, 1 Aug 1991) | A view across the low roofs: steel stairs on the roofs, many TV aerials on poles, loose cables, a chimney or flue, corrugated sheet roofs and old three-storey houses with pitched roofs. | "TY910801901167" |
+| image 2430880781 (TY910801910167, 1 Aug 1991) | INFERRED: A roof with an open steel frame overhead (INFERRED: the frame of a cage or of an unfinished extra storey), cables, and potted plants by the parapet. Low houses and many aerials show beyond. | "TY910801910167" |
+| image 2401210830 (92040222020367, 2 Apr 1992) | INFERRED: Low buildings of three or four storeys stand below the camera, with Lion Rock behind. Their windows look empty, and a dead shrub and debris lie on a roof. INFERRED: emptied during the clearance. | "Kowloon city, Hong Kong '92" |
+| image 2430880253 (92040222B0767, print TY920402220867, 2 Apr 1992) | Low roofs with puddles, hoses, a short ladder and aerials on poles. Behind, under Lion Rock, tower cranes stand over new high-rise blocks under construction. | "TY920402220867" |
+| image 2436858568 (92040222A0466, 2 Apr 1992) | INFERRED: A high flat roof crowded with TV aerials on poles and with loose cables. A jumbo jet flies low overhead. A straight road, low buildings, trees and hills lie beyond. INFERRED: the roof of the City. | "Kowloon Wall City, hong Kong 1992" |
+| image 2400374309 (881104090123, 4 Nov 1988) | INFERRED: An alley of shopfronts with sheet-metal walls. An animal carcass, partly wrapped in paper, leans head down against a shop door beside carton boxes. A small child looks out of a doorway, and a pipe runs along the ground. The caption says only 'Kowloon city', thus the place can be outside the Walled City. | "Kowloon city , hong kong '88" |
+| image 2402514643 (881104091723, 4 Nov 1988) | INFERRED: A shop window with a tiled base and aluminium frames shows flat boxes or books and a Chinese newspaper. The place is not certain (caption 'Kowloon city'). | "881104091723" |
 ### top-top-flickr-1: Kowloon Walled City (with '12 story walk-up', 'Dubious Dentists' and 'Teef')
 
 - **Creator:** allan56 (Flickr 9730593@N04). The profile says: 'I've posted many shots from my time in Hong Kong in the 1970s.' Scanned from slides
@@ -52,20 +81,37 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### flickr-5: Kowloon Walled City 九龍城寨 - Photos - 80年代-城寨內點心工場.jpg (and four other '80年代' photos)
 
-- **Creator:** 準建築人手札網站 Forgemind ArchiMedia (Flickr eager), uploader; photographer unknown
-- **Date:** 1980s
-- **Kind:** photo
-- **Class:** primary (The photos are of the 1980s City, but the uploader copied them from a forum post and names no photographer.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** CC BY 2.0 as marked by the uploader; the uploader is not the photographer, thus the licence is not reliable
-- **Link:** https://www.flickr.com/photos/eager/7243376884/
-- **Other links:** https://www.flickr.com/photos/eager/7243382346/, https://www.flickr.com/photos/eager/7243377942/, https://www.flickr.com/photos/eager/7243379908/, https://www.flickr.com/photos/eager/7243372632/, http://www.forgemind.net/phpbb/viewtopic.php?t=7513
-- **Proof that it exists:** Title 'Kowloon Walled City 九龍城寨 - Photos - 80年代-城寨內點心工場.jpg'; source link 'Kowloon Walled City 香港九龍城寨 奇異的歷史 奇異的地點' (forgemind.net/phpbb/viewtopic.php?t=7513).
-- **What it gives (finder's note, not checked):** Five 1980s photos: a dim sum workshop (點心工場) inside the City, a view out from the City (城寨外望), a close aerial view (城寨鳥瞰(近)), a dusk view before the clearance (清拆前之黃昏景色) and one more ('80年代-02'). The workshop photo is evidence for food production inside.
-- **Notes:** Uploaded 21-22 May 2012. The source forum thread gave HTTP 503 on 2026-11-10; the Wayback Machine cannot be reached by this tool. Find the original photographer (some can be Lambot or Girard frames) before use. allthatsinteresting.com credits Forgemind on Flickr for some KWC photos.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Forgemind ArchiMedia (準建築人手札網站) (Flickr eager), 'Kowloon Walled City 九龍城寨 - Photos - 80年代-…' (five scans: 城寨內點心工場, 清拆前之黃昏景色, 城寨外望, 城寨鳥瞰(近), 02), uploaded 21 May 2012, Flickr, https://www.flickr.com/photos/eager/7243376884/, 7243382346/, 7243377942/, 7243379908/, 7243372632/, read 2026-11-19.
+- **Class:** primary (The images are photographs of the 1980s (primary), but they are scans from an unnamed printed book; the photographer is unknown and the labels '80年代-…' are later captions (secondary).)
+- **Date of the record:** 1980s according to the labels (not more exact)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/7082/7243376884_8f5f44c64c_o.jpg; scan: 1980s dim sum workshop inside the City (點心工場), 1024x690; licence: CC BY 2.0 as marked by the uploader (not the photographer; scan of a printed book) (https://www.flickr.com/photos/eager/7243376884/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/5442/7243382346_799c05ee5e_b.jpg; scan: dusk aerial view of the City before the clearance, 1024x723; licence: CC BY 2.0 as marked by the uploader (not the photographer; scan of a printed book) (https://www.flickr.com/photos/eager/7243382346/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/5450/7243377942_03139f33c4_o.jpg; scan: the City's façade across a cleared lot (城寨外望), 1024x701; licence: CC BY 2.0 as marked by the uploader (not the photographer; scan of a printed book) (https://www.flickr.com/photos/eager/7243377942/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/8148/7243379908_7c8fd096d4_o.jpg; scan: close aerial view with the yamen roofs (城寨鳥瞰(近)), 1024x691; licence: CC BY 2.0 as marked by the uploader (not the photographer; scan of a printed book) (https://www.flickr.com/photos/eager/7243379908/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/8155/7243372632_34faaf0c0b_o.jpg; scan: signboards of clinics and dentists in 合興樓 (80年代-02), 1024x700; licence: CC BY 2.0 as marked by the uploader (not the photographer; scan of a printed book) (https://www.flickr.com/photos/eager/7243372632/)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 7243376884 | In the workshop, women sit at a long table and wrap dim sum by hand from trays and bowls of filling. Sacks are piled against the wall, and men stand at the back of the room. | "城寨內點心工場" (dim sum workshop inside the Walled City) |
+| image 7243376884, left side | INFERRED: The workshop has a floor of small mosaic tiles, blue and red plastic basins and baskets on the floor, and tall steel cabinets at the left (INFERRED: refrigerators). | "城寨內點心工場" |
+| image 7243376884, upper right | INFERRED: Above the table, a wall board holds rows of switches and sockets and three round dials (INFERRED: switches or meters). Fluorescent tubes and a ceiling fan hang from the ceiling, and the walls have patterned tiles. | "城寨內點心工場" |
+| image 7243382346 | An aerial view of the whole City at dusk. Long slab blocks stand along one side, high-rise estate blocks on the other, and a bare cut hill beside them. Ball courts and a garden with winding paths and a round feature lie beside the City. | "80年代-清拆前之黃昏景色" (1980s - dusk view before the clearance) |
+| image 7243377942 | INFERRED: A view of a façade of about 12 to 14 storeys across a cleared lot with rubble. People walk across the lot; balconies have cages and laundry; there are shops at ground level. The label says 'looking out', but the photo shows the City from outside. | "80年代-城寨外望" (1980s - Walled City, view outward) |
+| image 7243379908 | INFERRED: A close aerial view: in the middle of the City, an open court holds long pitched roofs (INFERRED: the yamen). Flat roofs crowded with small structures surround it. A road with bare earth beyond runs along one side, and four basketball courts lie on another side. | "80年代-城寨鳥瞰(近)" (1980s - bird's-eye view of the Walled City (close)) |
+| image 7243372632 | INFERRED: Photo '80年代-02' shows a cluster of hanging signboards of doctors and dentists. Many give rooms in 合興樓. The repo's GRS data name a Hop Hing Building at 20-22 Tung Tau Tsuen Road (in English only), and the repo's plan reading puts 合興樓 beside Nos. 20-22. INFERRED: the same building, thus Hop Hing Building (合興樓). | "合興樓" (Hop Hing Building) |
+| image 7243372632, top centre | Sign: the 慈安診所 clinic is on the 3rd floor, room 4, of Hop Hing Building (合興樓). A board under it offers gynaecology, a pregnancy test with a quick result, and a remedy to bring on menstruation. | "慈安診所 合興樓三樓四室 … 附設婦科 驗孕即知 特效通經" (慈安 clinic, Hop Hing Building 3/F room 4 … gynaecology attached; pregnancy test, result at once; special remedy to restore menstruation) |
+| image 7243372632, top left | INFERRED: Sign: the 李佩華診所 clinic (board headed 廣州痔…皮膚…) lists piles, skin, rheumatism, bone-setting (跌打), venereal disease (花柳), internal and external medicine, acupuncture and electrotherapy. It is on the 3rd floor, room 3, of Hop Hing Building (合興樓). | "李佩華診所 … 風濕 跌打 花柳 … 針灸 電療 … 合興樓三樓三室" (李佩華 clinic … rheumatism, bone-setting, venereal disease … acupuncture, electrotherapy … Hop Hing Building 3/F room 3) |
+| image 7243372632, centre | Sign: the dentist 劉滿華 is in Hop Hing Building (合興樓), 'straight in', room A. | "劉滿華牙 … 合興樓直入A室" (劉滿華 dental … Hop Hing Building, straight in, room A) |
+| image 7243372632, bottom left and top centre | INFERRED: Sign: the 同安診所 clinic is on the 1st floor of Hop Hing Building (合興樓); the room letters are not clear. A sign higher up gives 合興樓一樓B座 (1st floor, flat B). | "同安診所 … 合興樓一樓 … 合興樓一樓B座" (同安 clinic … Hop Hing Building 1/F … Hop Hing Building 1/F flat B) |
+| image 7243372632, bottom centre | Sign: the 大華診所 clinic, with the name 尹煒 and an eye symbol, treats ear, nose and throat, skin and rheumatism, on the 2nd floor, room 4. | "大華診所 … 耳鼻喉 皮膚風濕 二樓4室" (大華 clinic … ear, nose, throat; skin, rheumatism; 2/F room 4) |
+| image 7243372632, bottom right | INFERRED: Sign: the doctors 陳錦生 and 李仲英 have a clinic on the 2nd floor, front block, room 5, of Hop Hing Building (合興樓). The sign reads from right to left. | "合興樓2樓前座五室 (written 室五座前樓2樓興合)" (Hop Hing Building 2/F front block room 5) |
+| image 7243372632 | Other boards in the cluster name 林天任診所, 陳鑫, the doctor 郭衛人, 尹煒診所, a dentist 李…, and 萬國…, which lists skin complaints (濕疹, 皮炎, 手汗, 狐臭, 各類頑癬). | "林天任診所 … 郭衛人 … 尹煒診所 … 濕疹 皮炎" (林天任 clinic … 郭衛人 … 尹煒 clinic … eczema, dermatitis) |
+
+- **Leads:**
+  - The printed book from which Forgemind scanned these photos (colour pages with a red ornament at the top edge); not named. The source thread http://www.forgemind.net/phpbb/viewtopic.php?t=7513 shows only a 'forum closed' notice on 2026-11-19.
 ### flickr-2: Kowloon Walled City Hong Kong 香港 Special Administrative Region of the People's Republic of China May 1984 001 Five Ladies (and 173 Five Ladies)
 
 - **Creator:** photographer695 (Flickr 41087279@N00)
@@ -81,67 +127,64 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Title 'Kowloon Walled City Hong Kong 香港 Special Administrative Region of the People's Republic of China May 1984 001 Five Ladies'; description 'Hong Kong 香港 Special Administrative Region of the People's Republic of China Walled City Ladies May 1984'.
 - **What it gives (finder's note, not checked):** Two photos of residents ('Five Ladies', 'Walled City Ladies') in the City in May 1984, just before the peak period.
 - **Notes:** A search of this user's photos for "Kowloon Walled City" gives exactly 2 results. The numbers 001 and 173 are frame numbers of a larger 1984 trip. Re-dated uploads (page says uploaded 14 Sep 2025). The image itself was not viewed: the subject 'Five Ladies' comes from the title only.
+- **Reading of 2026-11-19:** it is not about the City. I opened both photo pages and looked at both images (1024 px). They show five elderly women in wide hats with black cloth fringes in front of a grey brick wall with a plaque. The red heading of the plaque reads 吉慶圍 (my reading of a small, blurred scan), a walled village in Kam Tin. Thus 'Walled City' in the title INFERRED is a mistake for a walled village. The comments are greetings only.
 
 ### flickr-6: Kowloon Walled City (feature with Keeping Lee's photos 'Lion Rock seen from Kowloon Walled City's Rooftops' and 'Wet Alley in Kowloon Walled City', 1987)
 
-- **Creator:** Keeping Lee (photos); Victoria Mae Martyn (text); culture-hongkong.com; photos courtesy Blue Lotus Gallery
-- **Date:** 1987
-- **Kind:** photo
-- **Class:** primary (Black-and-white photos made in the City in 1987 by a local photographer who went in himself.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Keeping Lee / Blue Lotus Gallery
-- **Link:** https://culture-hongkong.com/kowloon-walled-city/
-- **Proof that it exists:** First words: 'Though decades have passed since its concrete walls stood tall and proud'.
-- **What it gives (finder's note, not checked):** Two dated 1987 photos: the rooftops with Lion Rock behind, and a wet alley. The text says Lee first went in in 1985, met Greg Girard by chance, translated for him with an unlicensed dentist, and followed children up to the roofs.
-- **Notes:** The article text is secondary; the photos are primary; Lee's memories in it are retrospective. The page gives no count of his photos and no link to his own site. Blue Lotus Gallery pages are blocked or need JavaScript (see README).
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Victoria Mae Martyn, 'Crammed Kowloon Walled City Famous Old City of Darkness', CULTURE (culture-hongkong.com), HK Presents, 2 Dec 2024, with photos by Keeping Lee ('Lion Rock seen from Kowoon Walled City's Rooftops', 1987; 'Wet Alley in Kowloon Walled City', 1987), courtesy of Blue Lotus Gallery, https://culture-hongkong.com/kowloon-walled-city/, read 2026-11-19.
+- **Class:** secondary (The article (2024) is secondary. It reports the memories of Keeping Lee and Ian Lambot, which are retrospective (2024), and it shows two photos by Lee dated 1987, which are primary. The text belongs in secondary-sources/; the photos can stay in primary-sources/ (a folder in each tree).)
+- **Date of the record:** article 2 Dec 2024; Lee's photos 1987
+- **Files:**
+  - not downloaded (curl exit 6): https://culture-hongkong.com/wp-content/uploads/2024/12/Keeping-Lee-Lion-Rock-seen-from-Kowoon-Walled-Citys-Rooftops-Hong-Kong-1987-Kowloon-Walled-City.jpg; Keeping Lee, 'Lion Rock seen from Kowoon Walled City's Rooftops', 1987, 1024x768; licence: © Keeping Lee; courtesy of Blue Lotus Gallery (no licence stated) (https://culture-hongkong.com/kowloon-walled-city/)
+  - not downloaded (curl exit 6): https://culture-hongkong.com/wp-content/uploads/2024/12/Keeping-Lee-Wet-Alley-in-Kowloon-Walled-City-Hong-Kong-1987-Kowloon-Walled-City.jpg; Keeping Lee, 'Wet Alley in Kowloon Walled City', 1987, 1024x768; licence: © Keeping Lee; courtesy of Blue Lotus Gallery (no licence stated) (https://culture-hongkong.com/kowloon-walled-city/)
+  - not downloaded (curl exit 6): https://culture-hongkong.com/kowloon-walled-city/; HTML of the article page (2 Dec 2024); licence: no licence stated (https://culture-hongkong.com/kowloon-walled-city/)
+- **Note:** the reader classed the whole item as secondary: its 20 facts are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+- **Leads:**
+  - Blue Lotus Gallery exhibition 'Voices of the Walls' (2024): photos by Keeping Lee, Greg Girard and Ian Lambot (source of the two Lee photos).
+  - Ian Lambot, 'Water Standpipe #2', Hong Kong 1991 (shown in the article, courtesy of Blue Lotus Gallery): a dated photo of a standpipe.
+  - Greg Girard, 'Kowloon Walled City Night View from SW Corner', 1987, and 'Children playing on Walled City rooftop', 1989 (shown in the article).
 ### flickr-4: Old Kowloon walled city
 
-- **Creator:** gypsyjacq (Flickr 25564004@N04)
-- **Date:** 1990
-- **Kind:** photo
-- **Class:** primary (The uploader's caption dates the photo to 1990 and speaks of it as her own view.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/25564004@N04/2909628012/
-- **Proof that it exists:** Title 'Old Kowloon walled city'; description 'The city in 1990 ...tenement housing that was torn down shortly after this photo'.
-- **What it gives (finder's note, not checked):** One view of the City's tenement blocks in 1990.
-- **Notes:** Flickr 'taken' date is the upload date, 3 Oct 2008. The image itself was not viewed: which face it shows is not known.
-
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** gypsyjacq (Flickr 25564004@N04), 'Old Kowloon walled city', uploaded 3 Oct 2008, Flickr, https://www.flickr.com/photos/25564004@N04/2909628012/, read 2026-11-19.
+- **Class:** depiction (The image is a photo of a framed picture, not a direct view; its date (1990) comes from a later caption (2008). It can belong in secondary-sources/.)
+- **Date of the record:** 1990 according to the caption (not checked)
+- **Note:** the reader classed the whole item as depiction: its 2 facts are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 ### flickr-3: 1991 - Entering Kowloon's Walled City
 
-- **Creator:** gttexas (Flickr)
-- **Date:** 1991
-- **Kind:** photo
-- **Class:** primary (The photographer's own photo at the entrance in 1991; the 2008 caption is a short first-hand account.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/gttexas/2231193567/
-- **Proof that it exists:** Title '1991 - Entering Kowloon's Walled City'.
-- **What it gives (finder's note, not checked):** One photo of an entrance to the City in 1991. The caption says the photographer and a friend, Ed, went in and turned back after about 20 feet.
-- **Notes:** Flickr 'taken' date is 30 Jan 2008 (the scan date). The caption is retrospective (2008). Also in the Flickr gallery of revoteekay (72157622894833978).
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** gttexas (Flickr), '1991 - Entering Kowloon's Walled City', photo with caption, uploaded 31 Jan 2008, Flickr, https://www.flickr.com/photos/gttexas/2231193567/, read 2026-11-19.
+- **Class:** primary (A photo made at the time (1991). The caption is the photographer's own memory, retrospective (2008).)
+- **Date of the record:** 17 Feb 1991 (INFERRED from the camera's date stamp '91 2 17)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2392/2231193567_9bfb172c98_b.jpg; gttexas, alley entry with hanging cables, 17 Feb 1991, 719x1024; licence: All rights reserved (https://www.flickr.com/photos/gttexas/2231193567/)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| photo page, caption (2008) | The photographer and a companion went to see the City before it was torn down. | "Ed and I decided to go investigate the famous Kowloon Walled City before they tore it down." |
+| photo page, caption (2008) | They went no more than 20 feet into this entry, then turned back. | "We didn't make it more than 20 feet inside this entry before we decided to let discretion be the better part of valor and retreated." |
+| image, orange date stamp at lower left | INFERRED: The camera's date stamp reads '91 2 17, thus 17 Feb 1991. I read the stamp on its side; a speck hides part of the day. | "'91 2 17" |
+| image | Inside the entry, a thick mass of red and grey cables hangs from the ceiling of the alley. The alley beyond is dark, and the floor is wet. | "1991 - Entering Kowloon's Walled City" |
+| image, doors at right | INFERRED: Metal doors line the alley. Painted marks on them read A12, 1-1-8 and W41. INFERRED: marks of a survey or of unit numbers; the photo does not say. | "A12" |
+| image, left edge | A door post at the left carries a vertical Chinese inscription that I cannot read. | "1991 - Entering Kowloon's Walled City" |
 ### flickr-7: 九龍城東頭村道與東正道交界1992年
 
-- **Creator:** Dennis WahChan (Flickr wahchan), uploader; photographer of the 1992 photo not stated
-- **Date:** 1992
-- **Kind:** photo
-- **Class:** primary (A then-and-now pair; the 1992 half shows the City but the page does not say who took it.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/wahchan/50729829236/
-- **Proof that it exists:** Title '九龍城東頭村道與東正道交界1992年'.
-- **What it gives (finder's note, not checked):** The junction of Tung Tau Tsuen Road (東頭村道) and Tung Ching Road (東正道) in 1992, with the City and Mei Tung Estate, a taxi and a KMB Leyland bus (D1099) on route 3. Shows the north face during the clearance year.
-- **Notes:** Uploaded 17 Dec 2020. The newer half shows the same place today. The page gives the road names in Chinese only. The English name 'Tung Ching Road' comes from the tool's reading of the description: check it.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Dennis WahChan (Flickr wahchan), '九龍城東頭村道與東正道交界1992年' (a 1992 photo above a 2015 photo of the same place), uploaded 17 Dec 2020, Flickr, https://www.flickr.com/photos/wahchan/50729829236/, read 2026-11-19.
+- **Class:** primary (The upper photo is a record of 1992 (primary). The description (2020) and the lower photo (2015) are later.)
+- **Date of the record:** 1992 (upper photo, year only); 2015 (lower photo)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/65535/50729829236_a329d1fdde_b.jpg; 1992 and 2015 views of the junction of 東頭村道 and 東正道, 761x1023; licence: All rights reserved (https://www.flickr.com/photos/wahchan/50729829236/)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image, bus front; description | A KMB double-decker with the fleet number D1099 and the registration BX 1714 shows route 3. The description names it a Leyland flat-front 'Jumbo' going to 鑽石山站. | "利蘭平頂珍寶(D1099)@九巴3號線往鑽石山站" (Leyland flat-front Jumbo (D1099) on KMB route 3 to 鑽石山 station) |
+| image; description | A red Toyota Crown Comfort taxi and a yellow lorry with a tarpaulin stand at the traffic lights. | "香港的士 - 豐田皇冠 Toyota Crown Comfort" (Hong Kong taxi - Toyota Crown Comfort) |
+| image, upper half | INFERRED: Behind the junction stand the City's blocks, about 10 to 14 storeys high, with balconies closed by green-painted cages and with laundry. A white banner hangs near the corner at the left. | "九龍寨城 vs 九龍寨城公園" (Kowloon Walled City vs Kowloon Walled City Park) |
 ### top-press-en-19: Sign in the Walled City of Kowloon, Hong Kong
 
 - **Creator:** Brian Brake (photographer); Museum of New Zealand Te Papa Tongarewa
@@ -161,36 +204,34 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### flickr-13: Series of the Historial Change of Tung Tau Estate and the Walled City (photos titled 'Early 1970s ...', '1980s ...', '1986 ...', '1990s Walled City and Tung Tau City, Hong Kong')
 
-- **Creator:** Richard Wong (Flickr richardwonghk), uploader; photographers not stated
-- **Date:** 1970s-1990s
-- **Kind:** photo
-- **Class:** primary (Copies made on 8 Jan 2010 of older photos; the uploader names no source.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/richardwonghk/4256832934/
-- **Other links:** https://www.flickr.com/photos/richardwonghk/4256832678/, https://www.flickr.com/photos/richardwonghk/4256072153/, https://www.flickr.com/photos/richardwonghk/4256832544/, https://www.flickr.com/photos/richardwonghk/4256833380/
-- **Proof that it exists:** Title '1990s Walled City and Tung Tau City, Hong Kong'; description 'Series of the Historial Change of Tung Tau Estate and the Walled City'.
-- **What it gives (finder's note, not checked):** A dated series that shows the City beside Tung Tau Estate in the early 1970s, the 1980s, 1986 and the 1990s. Can help to date changes of the north edge.
-- **Notes:** All five photos have 'taken' 8 Jan 2010, thus they are copies (INFERRED: of an exhibition board). Opened two of them (4256832934, 4256832678); the other three ids come from Flickr listings.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Richard Wong (Flickr richardwonghk), 'Series of the Historial Change of Tung Tau Estate and the Walled City' (five aerial photos labelled early 1970s, early 1970s, 1980s, 1986 and 1990s), uploaded 8 Jan 2010, Flickr, https://www.flickr.com/photos/richardwonghk/4256833380/, 4256832544/, 4256832678/, 4256072153/, 4256832934/, read 2026-11-19.
+- **Class:** primary (Aerial photographs of the time (primary images), but copies from prints and books with no photographer named; the date labels are the uploader's (secondary). They can also go with maps-and-aerial-photos.)
+- **Date of the record:** labelled early 1970s to 1990s by the uploader (not checked)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/4011/4256833380_8226ce4e4b_b.jpg; aerial labelled early 1970s (photo of a print on a board), 1024x778; licence: All rights reserved (https://www.flickr.com/photos/richardwonghk/4256833380/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/4010/4256832544_fb48cc2364_b.jpg; aerial labelled early 1970s (black and white), 1024x846; licence: All rights reserved (https://www.flickr.com/photos/richardwonghk/4256832544/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/4011/4256832678_0cfe3286be_b.jpg; aerial labelled 1980s (scan of a printed page), 1024x689; licence: All rights reserved (https://www.flickr.com/photos/richardwonghk/4256832678/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/4064/4256072153_f9456ce912_b.jpg; aerial labelled 1986 (dusk), 1024x723; licence: All rights reserved (https://www.flickr.com/photos/richardwonghk/4256072153/)
+  - not downloaded (curl exit 6): https://live.staticflickr.com/4067/4256832934_b4311b59ec_b.jpg; aerial labelled 1990s, 594x600; licence: All rights reserved (https://www.flickr.com/photos/richardwonghk/4256832934/)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 4256833380 | INFERRED: 'Early 1970s Walled City and Tung Tau Estate' is a photo of a sepia print on a board. It shows the City as a cluster of high blocks among low huts, with a cut bare hill beside it and the slab blocks of the estate behind. | "Early 1970s Walled City and Tung Tau Estate, Hong Kong" |
+| image 4256832544 | 'Early 1970s Tau Tau Estate and Walled City' (black and white) shows the City's high blocks in the middle of low huts, a large bare cut slope, and the estate's slab blocks in the front. | "Early 1970s Tau Tau Estate and Walled City, Hong Kong" |
+| image 4256832678 | INFERRED: '1980s Walled City and Tau Tau Estate' (colour) shows the City beside a long slab block along a road. A large area of bare earth with site works lies next to the City, with ball courts beyond. INFERRED: the Kai Tak terminal shows in the distance. | "1980s Walled City and Tau Tau Estate, Hong Kong" |
+| image 4256832934 | '1990s Walled City and Tung Tau City' shows the City complete, with the garden of winding paths and a round feature along two sides, and new high-rise blocks beyond. | "1990s Walled City and Tung Tau City, Hong Kong" |
+
+- **Leads:**
+  - The exhibition board or printed book from which these aerials were copied; not named on the pages.
 ### flickr-14: Kowloon walled City 1990
 
-- **Creator:** katerina koutsogianni (Flickr 52622119@N04, handle kowloon_walled_city)
-- **Date:** 1990
-- **Kind:** photo
-- **Class:** primary (Part of a 2010 collection that mixes copies of old images with new photos; the source is not given.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/52622119@N04/4853282850/
-- **Other links:** https://www.flickr.com/photos/52622119@N04/
-- **Proof that it exists:** Title 'Kowloon walled City 1990'.
-- **What it gives (finder's note, not checked):** One image titled as the City in 1990. The same account has 37 photos uploaded on 2 Aug 2010, among them 'Kowloon walled City 1920' and 'Electricity meters'.
-- **Notes:** INFERRED: a student research collection; the 1990 image is a copy. A second account (koutsogianni) has a 2010 'demolition' GIF.
-
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** katerina koutsogianni (Flickr 52622119@N04, handle kowloon_walled_city), 'Kowloon walled City 1990', uploaded 2 Aug 2010, Flickr, https://www.flickr.com/photos/52622119@N04/4853282850/, read 2026-11-19.
+- **Class:** depiction (A collage made about 2010 from older aerial photos; it belongs in secondary-sources/.)
+- **Date of the record:** collage about 2010 (uploaded 2 Aug 2010); its sources undated
+- **Note:** the reader classed the whole item as depiction: its 3 facts are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 ### ja-25: 取り壊される前に行ってみたかった！　解体前に潜入した「本物の九龍城砦」の写真が迫力満点
 
 - **Creator:** モトタキ (ねとらぼ, ITmedia); photos by PepperBox (@PepperAnnex)
@@ -209,45 +250,45 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### flickr-9: The Walled City Kowloon
 
-- **Creator:** Paul Bird (Flickr mrpaulb)
-- **Date:** before 1993
-- **Kind:** photo
-- **Class:** primary (A passenger's own view of the City from an aircraft landing at Kai Tak.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/mrpaulb/2396855100/
-- **Proof that it exists:** Description 'Landing at the old airport view of the The Walled City of Kowloon (demolished in 1993).'
-- **What it gives (finder's note, not checked):** One air view of the roofs on the approach to Kai Tak. No year is given.
-- **Notes:** Flickr 'taken' date 7 Apr 2008 is the upload date. Also in the revoteekay gallery.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Paul Bird (Flickr mrpaulb), 'The Walled City Kowloon', uploaded 7 Apr 2008, Flickr, https://www.flickr.com/photos/mrpaulb/2396855100/, read 2026-11-19.
+- **Class:** primary (A photo made from a landing aircraft before the clearance; the caption is later (2008).)
+- **Date of the record:** not given; INFERRED mid-1980s to 1992 (the City is complete; the aircraft has wing-tip fences)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/3044/2396855100_2e26365a76_b.jpg; Paul Bird, the City from a landing aircraft, 779x1024; licence: All rights reserved (https://www.flickr.com/photos/mrpaulb/2396855100/)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| photo page, description | The photographer took the photo while landing at the old airport (Kai Tak). | "Landing at the old airport view of the The Walled City of Kowloon (demolished in 1993)." |
+| image | The photo shows the City's blocks in low warm sun beyond the aircraft's wing, with high-rise estates and mountains behind. | "The Walled City Kowloon" |
+| image, wing tip | INFERRED: The wing has a wing-tip fence with red stripes. INFERRED: an Airbus A300-600, A310 or A320, types that flew from the mid-1980s; thus the photo is likely from the mid-1980s to 1992. | "The Walled City Kowloon" |
 ### flickr-10: Kowloon Walled City, Hong Kong
 
-- **Creator:** Rick Green (photo credit), uploaded by adventurocity (Flickr advcity)
-- **Date:** before 1993
-- **Kind:** photo
-- **Class:** primary (A photo of the standing City, credited to a named photographer.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved
-- **Link:** https://www.flickr.com/photos/advcity/4045462305/
-- **Proof that it exists:** Title 'Kowloon Walled City, Hong Kong'; the description credits the photo to Rick Green.
-- **What it gives (finder's note, not checked):** Children in a playground in front of the City. INFERRED: the playground at the south edge (compare Lambot's 'KWC - Playground').
-- **Notes:** Uploaded 26 Oct 2009. No date taken. The rest of the description is a general history.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Rick Green (photo), uploaded by adventurocity (Flickr advcity), 'Kowloon Walled City, Hong Kong', uploaded 26 Oct 2009, Flickr, https://www.flickr.com/photos/advcity/4045462305/, read 2026-11-19.
+- **Class:** primary (A photo made before the clearance (undated); the description is a later general history (secondary).)
+- **Date of the record:** not given (before 1993)
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/2709/4045462305_f6fea7b4df_b.jpg; Rick Green, sports ground in front of the City, 600x400; licence: All rights reserved (https://www.flickr.com/photos/advcity/4045462305/)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image | The photo shows a paved sports ground behind a chain-link fence, with a football goal. Children ride bicycles and walk on it, and a low building with a pitched roof stands at the left. | "Kowloon Walled City, Hong Kong" |
+| image | INFERRED: Behind the ground stands a wall of City blocks about 10 to 14 storeys high, with aerials on the roofs. INFERRED: the ball courts beside the City that show in the aerial views (flickr-5, 7243379908). | "Kowloon Walled City, Hong Kong" |
 ### flickr-8: Kowloon Walled City, Hong Kong
 
-- **Creator:** Julian Berry (Flickr julianjb)
-- **Date:** c.1985
-- **Kind:** photo
-- **Class:** primary (A scan of a photo that the uploader dates to about 1985.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** CC BY-NC-SA 2.0
-- **Link:** https://www.flickr.com/photos/julianjb/5308733355
-- **Proof that it exists:** Title 'Kowloon Walled City, Hong Kong'; text '~1985'.
-- **What it gives (finder's note, not checked):** One view of the City at about 1985.
-- **Notes:** Open licence (non-commercial), thus the file can go in git if the repo accepts NC. Flickr 'taken' date 22 Dec 2010 is the scan date. No Hong Kong album in his 23 albums; no other KWC photo seen.
+- **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
+- **Citation:** Julian Berry (Flickr julianjb), 'Kowloon Walled City, Hong Kong', caption '~1985.', uploaded 31 Dec 2010, Flickr, https://www.flickr.com/photos/julianjb/5308733355, read 2026-11-19.
+- **Class:** primary (A photo of about 1985 by a visitor (date approximate, from his caption).)
+- **Date of the record:** about 1985 (caption '~1985.')
+- **Files:**
+  - not downloaded (curl exit 6): https://live.staticflickr.com/5041/5308733355_c51c8428f2_b.jpg; Julian Berry, façade with balcony grilles, about 1985, 813x1024; licence: CC BY-NC-SA 2.0 (https://www.flickr.com/photos/julianjb/5308733355)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| image | The photo shows five floors of a façade. Each balcony is closed by a metal grille of its own pattern (arches, diamonds, bars), some painted green or orange. | "Kowloon Walled City, Hong Kong" |
+| image | Potted plants stand on the balcony ledges. Laundry hangs on lines and poles, and striped cloth and green canvas awnings shade some balconies. | "Kowloon Walled City, Hong Kong" |
+| image, top and left edge | The top balcony has a parapet of orange and blue tiles in a check pattern. A red lamp post stands at the left. | "Kowloon Walled City, Hong Kong" |
