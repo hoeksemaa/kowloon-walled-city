@@ -72,3 +72,28 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | Internet Archive advanced search, item metadata, description field | The item description of each issue says that the paper was the mouthpiece of the Nationalist party and its government, founded in Shanghai in 1928 and moved to Nanjing. | "The Zhongyang Ribao (Central Daily) newspaper was a mouthpiece of the Chinese nationalist party and its government." |
+
+### top-china-19: 王世杰施諦文商獲臨時方案解决九龍砦城事件 (華僑日報 1948-01-17)
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 17 Jan 1948, front page (leaf n0) and local news page (leaf n3); scan on the Internet Archive, item NPWK19480117, https://archive.org/details/NPWK19480117, read 2026-11-20.
+- **Class:** primary (A Hong Kong daily newspaper of the day, with reports on the events of 15-16 Jan 1948. The tree primary is correct.)
+- **Date of the record:** 17 Jan 1948 (reports of 15-16 Jan 1948)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件 | The article quotes the clause of the 1898 convention that lets the Chinese officials then in Kowloon City stay there, if they do not hinder the defence of Hong Kong. Britain reads it as the Qing officials of 1898 only; China reads it as the Chinese government. | "所有現在九龍城內駐紮之中國官員，仍可在城內各司其事" |
+
+### top-china-21: 九龍城沙面兩事件交涉癥結仍為主權問題 (華僑日報 1948-01-31)
+
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I looked at small images of all 8 leaves, then read leaves n0 and n3 at full size with enlarged crops. On n0 I read the opening of the lead (the three points of the deadlock); the rest of it is a general discussion of the treaty and the Kowloon lease, which I did not read. On n3 I read the delegates' petition, the 西鄉 relief item, and most of the long text of the British Foreign Office note that the Government Information Services released on 30 Jan 1948. CHECK of the finder: the note is the biggest City item on the page and is not in the finder's note. Some columns of the note are worn; I mark those facts inferred.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 31 Jan 1948, front page (leaf n0) and local news page (leaf n3); scan on the Internet Archive, item NPWK19480131, https://archive.org/details/NPWK19480131, read 2026-11-20.
+- **Class:** primary (A Hong Kong daily newspaper of the day. The British note that it prints is an official record of Jan 1948. The tree primary is correct.)
+- **Date of the record:** 31 Jan 1948 (reports of 28-30 Jan 1948)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480131 leaf n3 (local news page), British note, first columns | INFERRED: The note answers the Ambassador's note of 13 Jan 1948. It says that, except from 25 Dec 1941 to Aug 1945, the Hong Kong government had in fact governed the area for almost fifty years. | "除一九四一年十二月廿五日至一九四五年八月期間外" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note says that the earlier Chinese residents had moved by 1937, and that about 65 of them, all but three or four, had taken better houses in exchange. The dates and the group in this passage are worn; my reading is not sure. | "除三或四名外" |

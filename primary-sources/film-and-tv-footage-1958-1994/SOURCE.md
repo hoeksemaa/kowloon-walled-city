@@ -2,7 +2,7 @@
 
 Documentaries, TV news and amateur film made at the time.
 
-- **Status:** partly read: 9 of 21 items read by the reading of the source search of
+- **Status:** partly read: 15 of 21 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1958-2022.
@@ -191,21 +191,43 @@ testimony given later: tag its facts "retrospective (year)".
   - The 1.1K YouTube comments on TmqlxjTSc8w can hold testimony of former residents and visitors (not read).
 ### top-top-film-2: BBC Kowloon Walled City Documentary 1980 (Subtitles)
 
-- **Creator:** Alan Whicker (presenter), BBC (as the uploader writes); YouTube upload by South Sider
-- **Date:** 1990-03-09 (probable; the uploader writes 1980)
-- **Kind:** film
-- **Class:** primary (A TV report filmed inside the City and at Jackie Pullinger's centre at the time.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © BBC (unofficial upload)
-- **Link:** https://www.youtube.com/watch?v=JchVQMuxRVA
-- **Other links:** https://www.themoviedb.org/tv/16626-whicker-s-world/season/16/episode/4, https://www.youtube.com/feeds/videos.xml?channel_id=UCIRn5g0gtvwdnIh3Y_fAcmQ
-- **Proof that it exists:** Feed description: "Alan Wicker enters the Kowloon Walled City and is taken on a tour by Australian Ted Brown, and also visits the drug reha"
-- **What it gives (finder's note, not checked):** Whicker's tour of the City with an Australian, Ted Brown, and interviews with two women inside the City. One woman says about her food that "God provides" (a comment quoted in the description). Also a visit to Pullinger's drug rehabilitation centre and an interview with her.
-- **Notes:** Probably the watchable copy of the known item top-gwulo-1 ("Jesus Makes You Fat!", Whicker's World: Hong Kong, episode 4, BBC, 9 Mar 1990) and of gwulo-9. Those entries found no copy: merge this URL into them. TMDB gives the episode overview: "Alan Whicker looks at drugs, crime and capital punishment in Hong Kong" and "meets Christian missionary Jackie Pullinger who rescues drug addicts in the Walled City." TMDB season 16 'Hong Kong' (1990) has 8 episodes, 16 Feb to 6 Apr 1990; only episode 4 names the City. But the 'Further reading' of en.wikipedia (see popular.json) also lists a 'Whicker's World' of ITV Yorkshire (1980). Thus the upload can be that 1980 film: check the opening titles. Upload of 2016-09-30, 392,578 views.
-- **Same item in the finder files:** gwulo-9, top-gwulo-1
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Alan Whicker (presenter), Whicker's World: Hong Kong, episode 4 ('Jesus Makes You Fat!', INFERRED), BBC, probably broadcast 9 Mar 1990; unofficial YouTube upload 'BBC Kowloon Walled City Documentary 1980 (Subtitles)' by South Sider, 30 Sep 2016, 27:21, https://www.youtube.com/watch?v=JchVQMuxRVA
+- **Class:** primary (A TV report filmed in the City. It is the 1990 BBC episode, not a 1980 film: Ted Brown works on the 'vast rehousing project' (the clearance), Pullinger 'arrived in Hong Kong 23 years ago' (1966 + 23 = 1989), the City 'is coming down', and Pullinger says the words 'Jesus makes you fat' (19:12), the title of episode 4 in TMDB. Thus filmed about 1989 (INFERRED). It is the watchable copy of top-gwulo-1.)
+- **Date of the record:** filmed about 1989 (INFERRED); broadcast probably 9 Mar 1990
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 0:09-0:19 | Ted Brown, an Australian who works on the government's rehousing (clearance) project, guides Whicker along a lane that Whicker calls 'food street', with Chiu Chow delicacies. | "An Australian working on this vast rehousing project for the Hong Kong government, Ted Brown guided me along "food street"." |
+| video 0:31 | Many small factories in the City make food, usually dim sum; the frames show a food workshop with a large mixing bowl. | "Many of these squalid little factories in this festering slum do produce food, usually those tasty delicacies all Chinese love, dim sum." |
+| video 0:54-1:11 | Brown says that the main passage crosses the City and that the City is built on a slope; residents come in from Tung Tau Tsuen Road. | "this allowed the residents to come in off Tung Tau Tsuen road" |
+| video 1:20 | There are thirteen exits from one small square, and some passages go halfway across the City. | "And thirteen exits here, just in this one little square here" |
+| video 1:28-1:41 | Pickpockets from Tung Tau Tsuen Road ran into the City and could not be found, on any of fourteen levels. | "if they ran into here it's impossible to find them" |
+| video 1:48 | Brown says that the police began to patrol the City in the mid-1970s, and that since then the City has been like the rest of Hong Kong. | "a lot of that changed about mid-1970 when the Police started to patrol the Walled City" |
+| video 2:03 | Whicker says that in the early 1970s his crew was run out of the City after one afternoon, under threat of acid or slashing. | "after an afternoon, we were run out! No nonsense, you know, acid, or a slashing or something" |
+| video 2:17 | Brown says that, according to the Kowloon City district police, crime in the City is no higher than elsewhere in Hong Kong. | "the crime situation in the Walled City we're told, by the Kowloon seat district Police is no greater or no less anywhere else" |
+| video 2:45-3:02 | A courtyard in the centre has fresh air, light and is clean; people come to it from dark passages with dripping water. | "they've walked through the dark passageways with water dripping on them and all of a sudden, they come out into this little courtyard" |
+| video 3:09-3:25 | The buildings round the courtyard have the best places in the City; flats between the main road and the courtyard, with no air or light, are called the 'sandwich class'. | "are those that we call the 'sandwich class', where they've got no fresh air and no light." |
+| video 2:38-4:56 (frames) | INFERRED: The frames of the courtyard show a low old building with tall blocks on all sides (INFERRED: the old Yamen and the old people's centre). | "This is a sort of, oasis in this dreadful place." |
+| video 3:29-3:46 | The workshops make plastic handbags, dim sum, plastic and metal work, wood work and furniture. | "It's mainly low cost type of production plastic work, metal work, wood work furniture" |
+| video 3:59 | Health inspectors come to the City but the regulations are not enforced there. | "No they do, but they don't enforce regulations in the Walled City." |
+| video 4:08-4:22 | Much of the City's food goes into lunchboxes and restaurants, sold through a middleman outside to factories in San Po Kong and to schools in Kowloon. | "the people here sell to a middleman outside, who then supplies, for instance many of the factories in San Po Kong, and many of the schools" |
+| video 4:26-4:32 | Chiu Chow restaurants probably get many delicacies from the City. | "those serving chiu chow food probably the many bits of delicacies come from the Walled City." |
+| video 4:34-4:38 | A few old women have probably never been outside the City. | "There are probably but only very few." |
+| video 4:40-4:58 | Old people come down to a club in the courtyard for a meal and to watch television; for those on the 14th floor it takes one hour up and one hour down, with a stop at each landing. | "Well some of them tell us it takes one hour up and one hour down." |
+| video 5:48 | The narration says that each year 42,000 addicts in Hong Kong use a ton of No. 4 heroin, and 130 tons pass through Hong Kong. | "Each year 42,000 local addicts use a ton of number 4 heroin, while another 130 tons is smuggled out" |
+| video 6:12 | Twice a week the St Stephen's Society comes to the City to counsel addicts and pray; the meeting room is full and bright. | "Twice a week the charismatics of the Saint Stephen's society come to the Walled City to council, and to pray." |
+| video 6:23 | The meeting is led by Joanne Wilder, 23, from Amersham (name as in the subtitles). | "Tonight they're led by 23 year old Joanne Wilder" |
+| video 9:48 | The Society has 140 helpers who pray each day, 40 of them young westerners, among them Anne Daly from Liverpool. | "Among 140 charismatic brothers and sisters who daily pray ... are 40 young westerners, like Anne Daly from Liverpool." |
+| video 12:35-12:58 | At each meeting about six new addicts come; after they attend meetings for eight weeks they move to one of the Society's five stage houses. | "When they've shown willing by attending these meetings for 8 weeks, they're taken from this dank misery to one of the societies five stage houses" |
+| video 13:38 | Pullinger says that when she first came to the City, the bodies of people who died of overdoses in the night were piled up by the single toilet. | "they were actually piling bodies up, by the single loo, and those were people who OD'd in the night." |
+| video 13:49-13:58 | Pullinger says that on one street, now cleared and a playground, she saw a hundred people chasing the dragon. | "it's cleared now and there's a playground, and, see a hundred people 'chasing the dragon'" |
+| video 14:28-14:41 | Pullinger first approached the guards of the gambling dens at about 2 a.m. | "the people who guarded the gambling dens swinging round about 2AM" |
+| video 15:26-15:32 | Pullinger says that her addicts have been on heroin for an average of 15 years. | "the addicts we have probably have been on heroin an average of 15 years." |
+| video 18:57-19:00 | New addicts are told that Jesus is 'in the Walled City on Wednesdays and Saturdays': the Society's meetings in the City are on those days. | "he's in the Walled City on Wednesdays and Saturdays". |
+| video 21:09-21:31 | Heroin is cheap, strong and pure, and can be found anywhere in five minutes; most addicts get by on 100 Hong Kong dollars a day. | "most people can get by on, 100 Hong Kong dollars a day." |
+| video 22:30-23:15 | Pullinger says that some years before, the City's triad boss had a man whose job was to beat up his men to get them off drugs; the boss became a Christian about 15 years later. | "they actually have a man whose job is to beat up" |
+| video 24:03 | Whicker says that the City is coming down. | "So the Walled City's coming down and its worst times are over" |
 ### top-gap-tv-news-archives-1: HONG KONG : POLICE CONTEND WITH HOME MADE BOMBS AND ANGRY RESIDENTS EVICTED FROM WALLED CITY
 
 - **Creator:** Special Broadcasting Service (SBS), Australia: SBS News; held by the National Film and Sound Archive of Australia (NFSA)
@@ -224,20 +246,40 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-top-film-1: Kowloon Walled City 1980 English documentary (Subtitles)
 
-- **Creator:** Christian Cascio and Marc Boulet (film); YouTube upload by South Sider
-- **Date:** unknown (the uploader writes 1980; mid or late 1980s INFERRED)
-- **Kind:** film
-- **Class:** primary (A film crew shot this footage inside the City before the clearance.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film makers (unofficial upload)
-- **Link:** https://www.youtube.com/watch?v=ooQjAYJQ-xM
-- **Other links:** https://www.youtube.com/feeds/videos.xml?channel_id=UCIRn5g0gtvwdnIh3Y_fAcmQ
-- **Proof that it exists:** Feed description: "A film by Christian Cascio and Marc Boulet, quite a fascinating documentary, not many had the opportunity of entering th"
-- **What it gives (finder's note, not checked):** Footage from the narrow streets of the City: family homes, a brothel that a triad chief runs, a short visit to Jackie Pullinger's centre, and an estate agent who works in the City. A comment in the description notes the noise of factories and radio music. The film gives no year in its title or description.
-- **Notes:** Upload of 2016-09-30, 138,948 views (YouTube RSS feed of the channel South Sider). The watch page shows only the title, thus I read the description in the RSS feed. fr.wikipedia says that Marc Boulet was born in Paris in 1959 and posed as a Chinese man in China in 1985 and in 1986-1987. Thus the film is probably of the mid or late 1980s, not of 1980 (INFERRED). Two WebSearch calls (English and French) found no other record of the film, its broadcaster or its year. An older upload with the same title (KTtNEuLLORE) is gone: oEmbed gives 404. No other file of research/sources-2026-11/ holds this film.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Christian Cascio and Marc Boulet (film), [documentary on Kowloon Walled City], English narration, undated; unofficial YouTube upload 'Kowloon Walled City 1980 English documentary (Subtitles)' by South Sider, 30 Sep 2016, 17:22, https://www.youtube.com/watch?v=ooQjAYJQ-xM
+- **Class:** primary (A TV documentary filmed inside the City with a hidden camera. The narration says that Jackie Pullinger came to the City 'twenty years ago'; she came to Hong Kong in 1966, thus the film is of about 1986-1988 (INFERRED), not of 1980.)
+- **Date of the record:** about 1986-1988 (INFERRED from 'Twenty years ago, Jesus called this woman to the Walled City'); the uploader writes 1980; filmed in a warm season (summer clothes, INFERRED)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 0:28 | The narrator says that 50,000 people live in 2.5 hectares, two million people per square kilometre. | "Fifty thousand inhabitants live squeezed in 2 and a half hectares of land, Two million people per square kilometer" |
+| video 0:44 | The narrator says that the City has no water and no electricity (later in the film he says that gangs sell water and power bought outside). | "No water, no electricity." |
+| video 1:06 | The City throws out tons of refuse each day. | "Each day, this huge citadel throws out tons of rubbish." |
+| video 1:39 | The narrator says that no street of the City is wider than 1.5 metres and that people throw refuse from their windows. | "None of its narrow streets measure more than one and a half meters in breadth, and the inhabitants throw out their rubbish from their windows." |
+| video 1:59 | The film makers say that the camera had to stay hidden all the time. | "the camera this time had to remain constantly hidden." |
+| video 3:15 | In one flat, thirty boat people have lived together for four years. | "In this apartment, thirty boat people have been living together for four years." |
+| video 5:31 | Workers in the City make fake Swiss watches for very low pay; the frames show machine work in a small workshop. | "Here, for a pittance, the workers make false Swiss watches." |
+| video 7:33-8:11 | At eight o'clock on a Sunday morning the gambling dens open; the frames show mahjong tables with men and women playing beside sacks. | "It's eight o'clock one Sunday morning, the gambling dens are opening up." |
+| video 8:31 | INFERRED: The narrator says that a road in the City is the border between two triad territories: the 14K to the left and a gang that the subtitles call 'Ging Yu' to the right (the gang name is as heard; INFERRED that it is a mishearing). | "This road marks the frontier between two territories, to the left the 14K gang, to the right the Ging Yu." |
+| video 8:39 | The gangs sell water and electricity, bought outside, at high prices through a web of lines. | "The gangs have set up a complex spiderweb to sell at huge prices, water and electricity bought outside." |
+| video 8:47 | The gangs control prostitution, gambling, rackets and drugs. | "They rule over this monopoly and over prostitution, gaming, rackets, and drugs." |
+| video 9:13 | People take heroin in the streets; one dose costs two dollars. | "Heroin is consumed in the streets. One dose; Two dollars." |
+| video 9:17-9:49 | The heroin is melted over a flame and the vapour is inhaled through a matchbox in the mouth ('chasing the dragon'); the frames show a man doing this on a dark stair. | "It is melted over a flame, and the vapour chased with a matchbox stuck in the mouth." |
+| video 10:38-11:37 (frames) | A lit sign 'THE WELL' is shown before the Jackie Pullinger part; her meeting room is full of people who pray with raised hands, with a guitar player. | "Jackie Pullinger is a Pentecostal evangelist." |
+| video 12:03 | Brothel madams look for girls in the City under triad protection. | "In the Walled City the 'Bordeaux Madams' hunt for their girls. The Triads protect them" |
+| video 12:22 | The 14K triad has its headquarters in a bar in the City; the chiefs gamble at the back and refuse to be filmed. | "The 14K Triad has set its headquarters up in this bar, the chiefs are gambling in the back" |
+| video 12:39-13:17 | A 'big brother' controls prostitution, gambling dens, rackets, drugs and the settling of accounts; he gives the crew a visit to one of his brothels, where the madam and the girls panic. | "We are offered a guided visit in one of his brothels, the brothel madam panics; her girls too." |
+| video 14:19 | The narrator says that Hong Kong police patrol the City on routine patrols but make no arrests. | "Routine patrols; totally useless, there's no law, no crime, therefore no arrests." |
+| video 14:25-14:38 | Some streets are lit, swept and have street nameplates; a frame shows a white nameplate on a wall of a dark lane. | "The streets are it up, men sweep them, and they have nameplates." |
+| video 14:42 | An estate agency does good business in the City. | "An estate agency thrives prosperously, so there's some sense of property." |
+| video 14:54-15:00 | INFERRED: The Kaifong certifies property sales with notarial acts; the auto-captions have a speaker who says 'you pay twenty dollars' just before, perhaps the fee (INFERRED). | "The private organisation certifies property transactions by delivering notary acts." |
+| video 15:10 | The film names the Kaifong Social Welfare Organisation and says that it has the support of communist China; its office has a large red emblem on the wall. | "It's the Kai-fong Social Welfare Organisation, well known in Hong Kong particularly for its support from communist China." |
+| video 15:25-15:36 | Mr Lo, the secretary of the Kaifong, says that it draws up legal acts and looks after street cleaning, drainage and public lighting. | "Setting up legal acts, looking after street cleaning, drainage, and public lighting." |
+| video 15:55 | Asked about the Chinese communists, Mr Lo says the relation is friendly. | "Friendly of course." |
+| video 1:28 (frame) | INFERRED: A frame near the start shows a red-lettered shop sign that ends in 士多 (store); the first two characters are not clear in the small frame. | "士多" (store) |
+| video 1:38-4:35 (frames) | INFERRED: The frames show dark lanes lit by single bulbs, a lane shrine, families with children in front rooms open to the lane, and a man in a singlet; most people wear summer clothes (INFERRED: filmed in a warm month). | "Navigating through the dark narrow streets" |
 ### top-studies-1: Hollywood Senichiya", UTB World Travel with ANA, Hong Kong, Parts 1, 2 &3
 
 - **Creator:** UTB World Travel with ANA (TV travel programme; the maker is not named in the record); Hong Kong Tourism Board Collection, HKU Libraries
@@ -252,23 +294,22 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Record title 'Hollywood Senichiya", UTB World Travel with ANA, Hong Kong, Parts 1, 2 & 3'; duration 1 hr 7 min; the description names 'Kowloon Walled City'.
 - **What it gives (finder's note, not checked):** A 67-minute video tour of Hong Kong in short segments (Peak Tram, Stanley Market, Star Ferry, Wong Tai Sin Temple and others), with one segment on Kowloon Walled City, 1989. The length and the content of the City segment are not seen.
 - **Notes:** The date 1989 comes from the HKU search list; the record page shows no date. The record page shows no player, only a Login link: playback not tested. Language not stated. INFERRED: a Japanese TV travel programme (ANA = All Nippon Airways). Found with the HKU Digital Repository full-text search '"walled city" kowloon -"clearance operations"'. Not in any file of research/sources-2026-11 (grep 'Senichiya', 'UTB World').
+- **Reading of 2026-11-20:** could not open it. I opened the HKU Digital Repository record (WebFetch and the Playwright browser). The page shows only the metadata and a Login link. The page script tries to load the video mask file HKTBC-VT2074.js and gets a 404, thus no player loads; I did not log in. I did not see the video, thus the City segment is not read.
 
 ### top-top-film-3: Kowloon Walled City, Hong Kong
 
-- **Creator:** motonagajiro (YouTube uploader; the maker is not named)
-- **Date:** 1990-03-10 (the only text of the description; the date of filming is INFERRED)
-- **Kind:** film
-- **Class:** primary (Amateur video of the City; its description gives the date 10 March 1990, when the City was full.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** unknown (uploader's rights)
-- **Link:** https://www.youtube.com/watch?v=OSnvqBhWUOc
-- **Other links:** https://www.youtube.com/feeds/videos.xml?channel_id=UC9-BcglsIaHJE9U6NTTbhfQ
-- **Proof that it exists:** RSS feed entry: title "Kowloon Walled City, Hong Kong", description "1990-03-10"
-- **What it gives (finder's note, not checked):** An amateur video of the City, probably shot on 10 March 1990. The page gives no length, place or content notes, and I did not see the content.
-- **Notes:** Upload of 2007-07-13, 616,993 views. It is the only video of the channel. Language of any sound: unknown. The Matthew Tokarski playlist (top-top-film-6) lists it under 'primary source footage'. If the content confirms the date, the value is high: it is the week-level date nearest to the model week (Dec 1986) among the amateur videos found so far, after Rob Frost's undated 1990 video.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** motonagajiro (uploader; maker not named), 'Kowloon Walled City, Hong Kong', amateur video, description '1990-03-10', YouTube upload 13 Jul 2007, 9:07, https://www.youtube.com/watch?v=OSnvqBhWUOc
+- **Class:** primary (An amateur camcorder video of the City's edge and one inner lane, probably shot on 10 March 1990 (the description gives only that date; INFERRED as the day of filming).)
+- **Date of the record:** 1990-03-10 (description; INFERRED as the day of filming); camcorder clock AM 11:16-11:31
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 0:09-8:57 (frames; AM 11:30:57-11:31:15 at 0:09-0:44, AM 11:16-11:26:41 at 0:54-8:57) | The camcorder clock shows late morning: the walk runs from about 11:16 to 11:27 a.m., and the opening views of the blocks show about 11:31 a.m. (shot after the walk, but put first). | "AM 11:31:00" |
+| video 0:09-0:44 (frames, AM 11:30:57-11:31:15) | The video opens with views of the high blocks of the City from outside, across a car park full of cars. | "AM 11:31:15" |
+| video 0:54-6:00 (frames, AM 11:16-11:23) | The walker goes along the streets at the edge of the City past shopfronts, signs, metal shutters and walls of corrugated metal sheet; the sky is overcast and people wear jackets. | "AM 11:21:41" |
+| video 6:04-7:38 (frames, AM 11:23:46-11:25:21) | He walks for about one and a half minutes through a dark, narrow inner lane with lamps and pipes overhead, and comes out to daylight. | "AM 11:24:46" |
+| video 2:17-9:05 | The video has no speech; the auto-captions mark only music. | "[Music]" |
 ### film-5: 香港短片(7) : 清拆九龍城寨 - 動工儀式 (1993年)
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -291,20 +332,28 @@ testimony given later: tag its facts "retrospective (year)".
   - The original TV news of the ceremony (broadcaster and day not shown in this clip).
 ### top-depictions-1: Philip Chan: I Wanted to Redefine the Crime Thriller Genre
 
-- **Creator:** Philip Chan (陳欣健), interviewed by Cecilia Wong and May Ng, collated by Eric Tsang; in Oral History Series (7): When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s, ed. May Ng, Hong Kong Film Archive
-- **Date:** 2017-10-26
-- **Kind:** testimony
-- **Class:** retrospective (First-hand oral history (2017) of a police officer of Kowloon City district and the co-writer of Jumping Ash and Long Arm of the Law.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © 2018 Hong Kong Film Archive, 'Not for Sale', all rights reserved
-- **Link:** https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf
-- **Other links:** https://www.lcsd.gov.hk/CE/CulturalService/HKFA/documents/18995340/19057029/Oral%2bHistory%2bSeries_eng07_ebook.pdf, https://www.filmarchive.gov.hk/documents/OLD-6.-Research-and-Publication/06-03_newsletter/newsletter83_e.pdf
-- **Proof that it exists:** Philip Chan: I Wanted to Redefine the Crime Thriller Genre / Interviewers: Cecilia Wong and May Ng (26 October 2017) / Collated by Eric Tsang
-- **What it gives (finder's note, not checked):** Jumping Ash (1976): 'Kowloon City district belonged to my jurisdiction', but 'we didn't actually film inside the Walled City; we were out on the periphery.' Long Arm of the Law (1984): 'It was Johnny who insisted on filming inside Kowloon Walled City', 'a hotbed of gangsters, drug dealers and criminal activities', and the crew got in 'for those exquisitely designed gun battles and action sequences'.
-- **Notes:** The PDF is encrypted for the WebFetch reader; I extracted the text with pdftotext from the copy that WebFetch saved. Page numbers from the PDF text: chapter starts p. 252; the Jumping Ash passage is on about pp. 254-255, the Long Arm passage on about pp. 264-266 (each +/- 1). The book also cites a 1976 press item: Cheung Tin (collator), 'Jumping Ash's Writer Philip Chan is a Serving Police Officer', in Close Up (not opened). HKFA Newsletter 83 (Feb 2018), p. 13, reports the 'Movie Talk' of 27-28 Jan 2018 with Philip Chan and Johnny Mak: 'Part of the film was shot in the notoriously dangerous Kowloon Walled City'; Chinese text: '影片拍攝時深入處於三不管狀態的九龍城寨'. depictions-2 already notes that talk from the HKFA screening page, not this newsletter.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Philip Chan (陳欣健), 'Philip Chan: I Wanted to Redefine the Crime Thriller Genre', interviewed by Cecilia Wong and May Ng on 26 October 2017, collated by Eric Tsang, in May Ng (ed.), Oral History Series (7): When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s (Hong Kong: Hong Kong Film Archive, 2018), e-book, pp. 252-266, https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf ; with 'Movie Talk Series: Philip Chan', Hong Kong Film Archive Newsletter, Issue 83 (Feb 2018), p. 13, https://www.filmarchive.gov.hk/documents/OLD-6.-Research-and-Publication/06-03_newsletter/newsletter83_e.pdf
+- **Class:** retrospective (Retrospective (2017): Philip Chan's own memory of his police service and of the films Jumping Ash (1976) and Long Arm of the Law (1984). The newsletter text of 2018 is the archive's later report (secondary). The item stays in the primary tree as first-hand testimony.)
+- **Date of the record:** Interview 26 Oct 2017; book published 2018; newsletter Feb 2018
+- **Files:**
+  - `top-depictions-1-Oral_History_Series_eng07_ebook-8187f8c2.pdf` (in `local/`, not in git): HKFA Oral History Series (7) e-book, PDF, 290 pages, about 7 MB; the Philip Chan chapter is pp. 252-266; https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf; 7282268 bytes; SHA-256 `dbee67439cd203f8bfbd147cac568e39de3767ad1c403cef24827ab75998cc5a`; licence: © 2018 Hong Kong Film Archive, Not for Sale, All rights reserved (colophon of the e-book) (https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf)
+  - `top-depictions-1-newsletter83_e-435eb85b.pdf` (in `local/`, not in git): HKFA Newsletter 83 (Feb 2018), PDF, about 2.2 MB; p. 13 reports the Philip Chan and Johnny Mak talk; https://www.filmarchive.gov.hk/documents/OLD-6.-Research-and-Publication/06-03_newsletter/newsletter83_e.pdf; 2320600 bytes; SHA-256 `b689d6260bc21e1851a7d8c48fd2df51a0af9a4ea84dca802fd6ec2d391daad2`; licence: © 2018 HKFA All rights reserved; 非賣品 Not for Sale (newsletter masthead) (https://www.filmarchive.gov.hk/documents/OLD-6.-Research-and-Publication/06-03_newsletter/newsletter83_e.pdf)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 253-254 | Philip Chan was an inspector at the Kowloon City Police Station before about 1975; from there he often visited a film studio at Diamond Hill. | "When I was stationed at the Kowloon City Police Station as an inspector, I often went to Jiancheng Studio" |
+| p. 254 | By about 1975 Chan was a superintendent in the Criminal Investigation Department (CID). | "Around 1975, I was promoted to superintendent and I was serving in the Crime Investigation Department (CID)." |
+| p. 255 | Police slang of the time: 'jumping powder' meant selling heroin and 'getting ash' meant taking heroin; Chan joined the two into the title 'jumping ash'. | "‘Jumping powder’ meant selling heroin. ‘Getting ash’ meant taking heroin." |
+| p. 255 | For Jumping Ash (1976) the makers chose locations in the Netherlands and the Walled City, because the Kowloon City district was under Chan's jurisdiction as a police officer. | "Kowloon City district belonged to my jurisdiction. In my capacity as a police officer, if someone gave us any trouble there, I could easily deal with it." |
+| p. 255 | The Jumping Ash crew did not film inside the Walled City; they filmed at its edge. | "But we didn’t actually film inside the Walled City; we were out on the periphery." |
+| p. 266 | For Long Arm of the Law (1984) the director Johnny Mak insisted on filming inside the Walled City. | "It was Johnny who insisted on filming inside Kowloon Walled City." |
+| p. 266 | Chan describes the City of the early 1980s as a hotbed of gangsters, drug dealers and crime, which made the shoot hard for the crew. | "the area was a hotbed of gangsters, drug dealers and criminal activities. It was quite difficult for the production crew" |
+| p. 266 | The crew got into the City to film the gun battles and action scenes of Long Arm of the Law. | "got the production unit into the Walled City for those exquisitely designed gun battles and action sequences" |
+
+- **Leads:**
+  - Cheung Tin (collator), 'Jumping Ash's Writer Philip Chan is a Serving Police Officer', Close Up Magazine, No 19, 26 August 1976 (in Chinese); cited in the same HKFA book, p. 83, note 12.
 ### depictions-8: Baraka (Kowloon Walled City shots)
 
 - **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the blog post on the City shots and its three frame grabs, the two other Baraka posts of the same blog (Kowloon City, Tung Tau Estate) and the Wikipedia article. I did not watch the film (a commercial release; no open copy). The blog's 'Shot in 1992' conflicts with the reported shoot window; see date_made. The Kowloon City post shows planes over South Wall Road, not the City.
@@ -339,36 +388,87 @@ testimony given later: tag its facts "retrospective (year)".
   - The sources of the clips captioned '1938 破落九龍寨城' and '1963 開始建高樓九龍城寨' in the compilation (newsreels; makers not credited).
 ### top-top-film-4: General views of Kowloon Walled City
 
-- **Creator:** AP Archive (Associated Press)
-- **Date:** unknown (AP gives "(23 Apr 2009)"; original format BVU PAL)
-- **Kind:** film
-- **Class:** primary (News agency rushes of the City; the date 2009 does not fit the BVU PAL tape, thus the year of filming is not known.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** © AP (licensing through AP Archive)
-- **Link:** https://www.youtube.com/watch?v=g-1OjvQHNEU
-- **Other links:** http://www.aparchive.com/metadata/youtube/a1d81299d8825ea8d09d12800725fd24
-- **Proof that it exists:** RSS feed entry: description starts "(23 Apr 2009) STORY" and gives "Original format: BVU PAL"
-- **What it gives (finder's note, not checked):** Unedited general views (rushes) of the Walled City from the AP library. The feed gives no shot list or year of filming.
-- **Notes:** Upload of 2020-11-04, 10,793 views. BVU is a broadcast tape format of the 1970s to the 1990s. Thus the footage is probably older than 2009, and 2009 is probably a date of cataloguing (INFERRED). If it is older, it shows the City before the demolition and is primary. The AP metadata page gives 'unable to fetch' in this tool; WebSearch refuses aparchive.com. Open the AP link in a browser for the shot list and the true date. It is the first AP Archive clip of the City that the finders of this folder found.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the YouTube description and saw the whole 15:47 of rushes as storyboard frames, about one each 10 seconds (small frames, 160x90). The rushes have no speech or captions. The AP shot list and the true date are on the AP Archive page, which redirects to newsroom.ap.org and stops at a Cloudflare bot check (403); I did not get around it. Thus the date of filming is not known.
+- **Citation:** Associated Press, 'General views of Kowloon Walled City' (rushes, 'Hong Kong Walled City'), AP Archive, catalogued '(23 Apr 2009)', original format BVU PAL; YouTube upload by AP Archive, 4 Nov 2020, 15:47, https://www.youtube.com/watch?v=g-1OjvQHNEU ; licensing page http://www.aparchive.com/metadata/youtube/a1d81299d8825ea8d09d12800725fd24
+- **Class:** primary (Unedited news footage of the City in use. The BVU tape format and the busy City suggest that it is from before the clearance (INFERRED); 2009 is probably the date of cataloguing. Some shots of rubble may be of the clearance years (INFERRED).)
+- **Date of the record:** unknown (AP gives '(23 Apr 2009)'; probably older footage, INFERRED)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 0:00, 2:57, 3:17 (frames) | INFERRED: The rushes open with the dense signboards on the face of the City. One sign reads 'DR. CHENG YUEN YUNG' with the Chinese 鄭婉容醫師 (醫師: doctor; reading of a small frame, the third character can be 客). The small line under the name is not legible, thus the kind of practice is not known (INFERRED that it can be a dentist, from the denture shots that follow). | "DR. CHENG YUEN YUNG 鄭婉容醫師" |
+| video 0:09-1:09 (frames) | A street at the edge of the City has a red lorry, boxes and refuse on the pavement and a red fire hydrant, with the City's blocks rising behind. | "Rushes Hong Kong Walled City" |
+| video 1:48-1:58 (frames) | INFERRED: A man in a surgical mask works at a window counter with glass shelves (INFERRED: a dental workshop). | "Rushes Hong Kong Walled City" |
+| video 2:08 (frame) | INFERRED: A hanging sign names the 'ACADEMY OF CHINESE MEDICINE U.S.A.' (美國中醫研究院) (reading of a small frame). | "美國中醫研究院 ACADEMY OF CHINESE MEDICINE" |
+| video 4:26-8:13 (frames) | Shop windows show rows of dentures and tooth models on glass shelves; other shots show dentures in a glass of water. | "Rushes Hong Kong Walled City" |
+| video 9:22-12:00 (frames) | An old woman sorts refuse at a roadside railing next to a van, among passers-by. | "Rushes Hong Kong Walled City" |
+| video 12:09-12:29 (frames) | A woman pushes a hand cart with large woven baskets past a bus. | "Rushes Hong Kong Walled City" |
+| video 12:39-13:19 (frames) | INFERRED: Shots of rubble include a paper notice with English words that I cannot read (INFERRED: perhaps a warning notice of the clearance years). | "Rushes Hong Kong Walled City" |
+| video 13:58-15:07 (frames) | Close shots of the facades show balconies with plants, cages and laundry. | "Rushes Hong Kong Walled City" |
+
+- **Leads:**
+  - AP Archive story page http://www.aparchive.com/metadata/youtube/a1d81299d8825ea8d09d12800725fd24 (shot list and true date of the rushes; behind a Cloudflare check on 2026-11-20).
 ### top-top-film-5: Real Talk Hong Kong Kowloon Walled City Documentary (English Subtitles)
 
-- **Creator:** unknown maker; narrated in Cantonese by Lo Hoi-pang (as the uploader writes); English subtitles and upload by South Sider
-- **Date:** unknown (upload 2016-09-26)
-- **Kind:** film
-- **Class:** primary (A Cantonese documentary told from the viewpoint of a former resident; its maker and year are not given.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © the broadcaster (unofficial upload)
-- **Link:** https://www.youtube.com/watch?v=Saxf2H-4ro4
-- **Other links:** https://www.youtube.com/feeds/videos.xml?channel_id=UCIRn5g0gtvwdnIh3Y_fAcmQ
-- **Proof that it exists:** RSS feed entry: the description says that Lo Hoi-pang narrates it in Cantonese from the viewpoint of an original resident, Uncle Lei, a barber.
-- **What it gives (finder's note, not checked):** Life in the City told from the viewpoint of a former resident, the barber Uncle Lei. The description names a dog-meat shop called "three hundred sixty-nine": in Cantonese, 'nine' sounds like 'dog'. The uploader says that the film keeps old Cantonese words.
-- **Notes:** 78,164 views. The uploader says that Lo Hoi-pang came to Hong Kong from Guangzhou in 1969 and later acted for TVB, and that forum members helped with the translation, thus errors can remain. One WebSearch for the narrator and the City found no record of the film. If it uses film of the City before 1993 with a real resident, its parts are primary or retrospective; if it is a later reconstruction, it is secondary. A barber in the City is also in cityofdarkness.co.uk post ?p=1140 'Short back and sides' (Ho Chi Kam, 10 Tai Chang Street, from 1985; search extract only): check if Uncle Lei is a different person.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** RTHK (香港電台), Hong Kong Connection (鏗鏘集), episode on the Walled City, probably '城寨', episode 70, broadcast 2 Dec 1979 (INFERRED; GRS HKRS1496-1-29); unofficial YouTube upload 'Real Talk Hong Kong Kowloon Walled City Documentary (English Subtitles)' by South Sider, 26 Sep 2016, 23:51, with English subtitles by the uploader, https://www.youtube.com/watch?v=Saxf2H-4ro4
+- **Class:** primary (An RTHK TV documentary filmed in the City. The 鏗鏘集 card, the RTHK logo and the themes (water and power cuts, sewage, refuse) match GRS HKRS1496-1-29 (鏗鏘集 '城寨', ep. 70, 2 Dec 1979, scope note '經常停水電, 污水, 垃圾問題'); the barber says police patrols began in '76, 'a few years ago'. Thus the film is of 1979 (INFERRED). The narration speaks as the barber Uncle Lei (the uploader says the voice is Lo Hoi-pang), thus it is a voiced account, but the scenes and the interviews are of 1979.)
+- **Date of the record:** 1979 (INFERRED: probably the episode of 2 Dec 1979)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| video 1:00-1:09 | INFERRED: The film says that the City now covers 2.5 acres and is bounded by Lung Chun Road, Sai Shing Road, Tung Tau Tsuen Road and Lung Shin Road (street names as in the subtitles; INFERRED that '2.5 acres' is an error of translation, because the City was about 6.5 acres). | "It's bounded by Lung Chun road, Sai Shing road, Tung Tau Tsuen road and Lung Shin road." |
+| video 1:11 | Thirty to forty thousand people live in the City (1979). | "Thirty to forty thousand people reside here." |
+| video 1:40-1:59 | The narrator, the barber Uncle Lei, has lived in the City for 30 years; he now has few customers, mostly children, and his grandson. | "30 years, this is how long I've lived in the walled city. Everyone here calls me Uncle Lei." |
+| video 1:48-1:58 (frames) | The frames show the barber at work on a customer in a small room with a round mirror. | "Many used to visit me here to use my service as a barber." |
+| video 2:32-2:43 | Criminals from outside run into the City because its lanes twist like the eight trigrams and the police cannot catch them easily. | "inside the streets are a bit like the eight diagrams." |
+| video 2:48-2:56 | Uncle Lei says that the police began to patrol the City formally in about 1976. | "the year '76 it seems, did the police start formally policing the walled city." |
+| video 2:57-3:17 (frames) | The frames show two uniformed police officers on patrol in a lane, one writing in a notebook, beside a sign of a youth centre (…少年中心). | "Speaking of the police, they never used to patrol in the walled city." |
+| video 3:01-3:12 | Residents think the City is fairly safe: thefts and robberies are done by outsiders. | "It's the outsiders who come in to do this." |
+| video 3:31-3:40 | The dog-meat shop is still there; addicts chase the dragon in side alleys or public toilets, but heroin selling is much less. | "There's usually a fellow (addict) hiding down a side-alley or public toilet "chasing the dragon."" |
+| video 4:36-4:41 | Outsiders who come in are stared at, but not in a bad way. | "they get stared at by some of the local residents." |
+| video 5:08-5:10 | Uncle Lei also collects refuse from homes because rubbish piles up in the lanes. | "by vising homes of nearby residents to collect trash." |
+| video 5:13-5:19 | The lanes are narrower and darker than outside; with the refuse, the rats are big and fat. | "the rats appear to have grown very big and fat." |
+| video 5:27 | Water drips down in the lanes, perhaps sewage. | "Now and then, there are drops of water passing down" |
+| video 5:41-5:43 | The City has open channels, and people put urine and faeces into them. | "People simply dispose of their urine and faeces in the canal." |
+| video 6:54-6:57 | A family has carried water up the stairs to their home for ten years. | "we've been carrying water up here for 10 years now." |
+| video 7:23-7:29 | A family of seven lives in one small room with no windows. | "It's just a very small room, there aren't even any Windows." |
+| video 8:00-8:08 | Factory owners prefer the City: no government approval, cheap buildings and low wages; there are metal, plastic and weaving factories on every street. | "Metal factories, plastic factories, weaving factories and what not." |
+| video 8:34-8:56 | The small factories are mostly family businesses; most workers are older people or young teenagers, because young adults prefer factories outside. | "the majority of factory workers are older people, possibly even young teenagers." |
+| video 8:58-9:07; frames 8:43-9:02 | Much food is made in the City without hygiene control, for example pastries; the frames show noodle making and trays of small bowls. | "there's a lot of food being produced." |
+| video 9:35-9:46 | Builders want to buy the old low buildings to put up modern housing. | "I hear the construction business want to make use of the part of land these old buildings are on" |
+| video 10:23-10:27 | In the new buildings, staircases are joined to save space and many homes open beside the stairs. | "staircases are connected to save space." |
+| video 10:33-10:45 | No building has a lift, even those over ten storeys; old people find the stairs exhausting. | "Even the ones taller than 10 stories have no elevators." |
+| video 11:40-11:43 | In a new building the water costs 30 dollars a month and comes at times that no one knows. | "it's costs 30 a month for the water bill and when the water is up and running I never know." |
+| video 11:54-12:09 | A neighbour's power goes off while she wants to iron; each day there is either no water or no electricity. | "everyday either there's no water or he's run out of electricity." |
+| video 12:20-12:37 | In the last ten years many buildings of ten storeys and more were put up without government approval; the only limit is height, because of the aircraft. | "the only restriction is that they mustn't rise to high, this is because airplanes come close" |
+| video 12:39-12:49 | Government officers inspect now and then; the roofs of some buildings have sunk in the middle and their tops must be taken down. | "The roofs of these buildings here have sunk in the middle." |
+| video 12:56-13:07 | Property in the City is much cheaper than outside, with no rates: more than 300 square feet sells for 50,000 dollars, against at least 200,000 outside. | "It's seems more than 300ft of space in the walled city will sell for 50,000." |
+| video 13:10-13:14 | A City property has no title deed, thus the buyer has no guarantee. | "a walled city property comes with no deed" |
+| video 13:28-13:30 | Windows often cannot open because the next building is against them. | "there's probably a building opposite leaning on it, so it won't open." |
+| video 13:39-13:50 | There is no legal supply of drinking water; the water department said that installation was difficult because there is no underground drainage. | "there's still no legitimate supply of drinking water." |
+| video 13:56-14:00 | Residents pay 20 to 30 dollars a month to a group for stolen water from the pipes. | "Each month 20-30 dollars is to be payed to a group for stolen water." |
+| video 14:02-14:10 | INFERRED: The piped water runs only some hours a day at unknown times (the translation gives '8 hours' and '12 hours'; INFERRED that the numbers are garbled). | "8 hours is the maximum amount of water a day" |
+| video 14:24-14:35 | Well water is salty and used only for washing; water for cooking is carried upstairs, and laundry is done at the standpipes. | "the water from the well is salty. It's only really used to wash things." |
+| video 14:08-14:18 (frames) | The frames show a woman washing at a tap with a blue basin and a red valve on a pipe. | "all the laundry is done at the standpipes." |
+| video 14:59-15:02 | The Tin Hau Temple is over 100 years old but few people now come to burn incense. | "The Tin Hau temple's history goes back over 100 years, but these days people rarely pay a visit" |
+| video 15:06-15:15 | An old cannon, over 200 years old, was dug up in a street by old people in the 1970s and is now set in cement. | "I remember in the 70's, when some old people dug up and uncovered this in the street." |
+| video 15:27-15:47 | The former Qing yamen is now a nursery; no high-rise may be built there, thus it is the most open place in the City. | "These days however, it's a nursery." |
+| video 15:53-16:18 | Uncle Lei's grandson goes to the nursery; its fees are much lower than outside, but primary and secondary school must be outside the City. | "However, in the future for primary and secondary schooling, studies will have to be done in the outer city." |
+| video 15:57-16:26 (frames) | The frames show a classroom of small children at blue desks with a teacher at a blackboard. | "Little ones, look at the blackboard" |
+| video 16:48-16:56 | The film says that the City has many doctors, mostly from mainland China or Southeast Asia, and none has a licence. | "Not one of them have a license to practice medicine." |
+| video 17:10-17:34 | One street is known for its dentists; dentures there cost less than half the price outside and with little waiting. | "because it's more than half the price cheaper than on the outside" |
+| video 17:55-18:54 | Old people meet at the old people's centre, which has fresh air; the frames show them at a long table with bowls and watching a TV. | "Our old center is a nice environment with a lot of fresh air" |
+| video 18:31-18:50 | An old woman must move because her family wants to sell the home; she carries water up and down narrow stairs. | "No it's not good, I have to carry my water up and down" |
+| video 19:03-19:15 | Another old resident has lived 20 years in a narrow home and says she will stay until she dies. | "I'll live there until I die, this place is where I live" |
+| video 19:40-19:46 | The City has only two public toilets; at night people pour scented liquid into them. | "There are only two public toilets." |
+| video 20:04-20:06 | Uncle Lei sometimes finds a friend collapsed in a toilet in cold weather. | "Occasionally I'll see a friend of mine collapsed in there." |
+| video 20:27-20:36 | After school, children come in the evening to the City's only youth centre to play and eat supper. | "Many of them come to this youth center, here in the walled city, it's the only one." |
+| video 21:13-21:17 | Young staff of the centre say that rents in the City are usually 200 to 400 dollars, or just over 500 a month. | "Generally no more than 200-400 or just over 500 dollars" |
+| video 21:22-21:27 | INFERRED: One young person says his home of more than 400 square feet (the translation writes '4ft'; INFERRED) would cost from 70,000 dollars, with no rates. | "My home is more than 4ft and in the current market it would cost somewhere from 70,000." |
+| video 22:15-22:43 | A young resident lives on a fourth floor surrounded by tall buildings, always dark; the window hits the wall in front when opened. | "if there's a window, when opened it will hit the wall directly in front" |
+| video 22:49-23:02 | Residents asked for water pipes and their own meters; a few years before, they wrote to the authorities and the water company came, but nothing happened. | "A few years ago we wrote to the authorities, the water company was sent to investigate, But nothing ended up happening." |
+| video 23:28-23:39 | The open sewers are worse when it rains, because the City sits low. | "when rain falls, it's even worse, because we as a whole are sitting low." |
+| video 23:11-23:21 (frames) | INFERRED: The end credits name, among others, 編導 蔡繼光 and 監製 潘朝彥 (readings of small frames). | "編導：蔡繼光 … 監製：潘朝彥" (director: 蔡繼光; producer: 潘朝彥) |
 ### en-testimony-10: A rare look inside the Kowloon Walled City in 1990
 
 - **Creator:** South China Morning Post (YouTube channel)

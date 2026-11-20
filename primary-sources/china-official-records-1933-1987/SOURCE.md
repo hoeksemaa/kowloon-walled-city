@@ -2,9 +2,8 @@
 
 Statements of the ROC and the PRC on the City, printed at the time, and the 2007 selection of archive documents.
 
-- **Status:** partly read: 24 of 29 items read by the reading of the source search of
-  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
-  read: its "What it gives" is the note of the finder, not a checked fact.
+- **Status:** read: 29 of 29 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1928-1987.
 - **Items:** 29, of which 29 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -284,36 +283,83 @@ testimony given later: tag its facts "retrospective (year)".
 | Central Daily News (中央日報) 14 Jan 1948, page 2 (第二版; scan leaf n1), article "全國各地同聲憤慨 抗議港府侵權暴行 京滬學生醞釀示威遊行", 中央社廣州十三日電 | A 中央社 dispatch from Canton of 13 Jan repeated that the Hong Kong police went into the City again on 12 Jan and shot and wounded six residents, and that all circles in Canton were angry. | "香港警察十二日再度進入九龍城，槍傷居民六人" (the Hong Kong police on the 12th again entered Kowloon City and shot and wounded six residents) |
 ### top-china-19: 王世杰施諦文商獲臨時方案解决九龍砦城事件 (華僑日報 1948-01-17)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong; scan on the Internet Archive
-- **Date:** 1948-01-17
-- **Kind:** press
-- **Class:** primary (A newspaper of the time that reports the talks of the ROC Foreign Minister with the British Ambassador.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (paper closed 1995; no rights statement seen)
-- **Link:** https://archive.org/details/NPWK19480117
-- **Other links:** https://archive.org/metadata/NPWK19480117/metadata/description
-- **Proof that it exists:** 華僑日報 1948-01-17 (details page); headlines 王世杰施諦文商獲臨時方案解决九龍砦城事件; 英使抗議王世杰將發聲明葉公超表示遺憾
-- **What it gives (finder's note, not checked):** Foreign Minister 王世杰 and the British Ambassador (施諦文) agree on a temporary plan for the 九龍砦城事件; the Ambassador protests (after the Shameen riot) and 王世杰 will issue a statement, with regrets from Vice-Minister 葉公超. A third headline gives the Guangdong provincial relief for the City residents and a count of their losses.
-- **Notes:** Third headline: 省府代表向各界呼籲增强九龍城同胞救濟工作傳見龍城居民代表查詢戶口損失指示救濟金分配. Headlines from the OCR description.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 17 Jan 1948, front page (leaf n0) and local news page (leaf n3); scan on the Internet Archive, item NPWK19480117, https://archive.org/details/NPWK19480117, read 2026-11-20.
+- **Class:** primary (A Hong Kong daily newspaper of the day, with reports on the events of 15-16 Jan 1948. The tree primary is correct.)
+- **Date of the record:** 17 Jan 1948 (reports of 15-16 Jan 1948)
+- **Files:**
+  - `top-china-19-n0-e80d8264.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 17 Jan 1948, front page (leaf n0), with the report on the talks of 16 Jan; https://archive.org/download/NPWK19480117/page/n0.jpg; 4684255 bytes; SHA-256 `7b7d2cfdf172ae076e69383059bce36a6fe650a609f94206ff1fa37e2795a022`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480117)
+  - `top-china-19-n3-fb2a6b86.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 17 Jan 1948, local news (leaf n3), with five City items: relief visit, tents, accounts, no appeal, readers relief; https://archive.org/download/NPWK19480117/page/n3.jpg; 5803412 bytes; SHA-256 `14eda070315484616f435fb6f099702c2dda745c6b274b279c3c052456af1bb8`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480117)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件 | A Nanjing report says that the British Ambassador 施諦文 and Foreign Minister 王世杰 talked again on 16 Jan 1948 and that their views came closer. | "英大使施諦文與王外長十六日再度懇切磋商，雙方意見漸趨接近" |
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件, 合衆社上海十六日電 | A United Press dispatch says that the Ambassador agreed to refer the Chinese demands to London, and that the talks centred on the status of Kowloon City. | "雙方所討論焦點，集中于九龍城之中英地位問題" |
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件, 美聯社南京十六日電 | An Associated Press dispatch quotes a British Embassy spokesman: London will not give way on the question of jurisdiction over Kowloon City. | "倫敦對於九龍城治權問題，將不致有所讓步" |
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件 | The Ambassador and the Foreign Minister reached a "temporary plan" in a long meeting on 16 Jan 1948, but the Ambassador did not give its details. | "曾獲致一項「臨時方案」以解決九龍城問題" |
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件 | Twenty members of the Control Yuan (監察院) asked the government to take steps at once to recover Hong Kong and Kowloon. | "監察院有廿名委員" |
+| NPWK19480117 leaf n0 (front page), article 王世杰施諦文商獲臨時方案解决九龍砦城事件, 【本報特訊】南京息 | The director of the European Department of the Foreign Ministry, 尹葆宇, asked a counsellor of the British Embassy that Hong Kong release the arrested residents' representatives and not force the residents to move. | "不得迫令當地居民他遷" |
+| NPWK19480117 leaf n3 (local news page), article 省府代表向各界呼籲增强九龍城同胞救濟工作 | INFERRED: A provincial commissioner surnamed 鄺 came for the Guangdong governor (宋主席) to comfort the residents whose huts were pulled down. On 16 Jan 1948 he asked the residents association for its register of households, people and losses, to plan the share-out of relief money. The given name of 鄺 is not clear in the scan. | "特派員通知居民會，將登記冊及有關資料呈閱" |
+| NPWK19480117 leaf n3 (local news page), same article | INFERRED: The commissioner asked to see the representatives 曾生 and 陳振洲. They were busy, thus 羅叔烈 and 劉子良 crossed the harbour at 8 pm to see him. I read the surname 羅 in 羅叔烈; an earlier read of 10 Dec 1947 (top-china-8) gives 劉叔烈. | "故由羅叔烈與劉子良二人於夜八時渡海晉謁" |
+| NPWK19480117 leaf n3 (local news page), same article | The reporter had the household, population and loss figures of the whole City from the register, but the association asked the paper not to print them until it corrected them. Thus the figures are not in the paper. | "謂該登記冊數字仍欠詳晰，請於更正後始行發表" |
+| NPWK19480117 leaf n3 (local news page), same article | The commissioner and his staff visited the injured residents in Kowloon Hospital (九龍醫院). | "往九龍醫院慰問傷者" |
+| NPWK19480117 leaf n3 (local news page), same article, lower part | INFERRED: The commissioner then met leaders of Hong Kong and Kowloon associations. He said that his two tasks were to comfort the people of Kowloon City and to help with relief. The relief work was to be run with a Bao'an county magistrate surnamed 王 (the 20 Jan issue confirms 寶安王縣長). | "奉宋主席命來港慰問" |
+| NPWK19480117 leaf n3 (local news page), article 晚上張設帆幕十個 龍城居民集團住宿 | On 16 Jan 1948 the residents association bought ten canvas tents, because the evicted residents were scattered and hard to gather. Four large tents held 100 people each, two medium tents 50 each, and four small tents 20 each. They were put up on wooden poles at night as group sleeping places. | "大者四個，每個可容百人，中者兩個，每個可容五十人，細者四個，每個可容二十人" |
+| NPWK19480117 leaf n3 (local news page), same article | Donated cotton blankets and cotton vests went to people with no bedding: one blanket for each household, and one vest for each adult and child pair. | "棉毡每戶一張，棉背心則每一成人與一小孩共佔一件" |
+| NPWK19480117 leaf n3 (local news page), article 張忠武今日可出院 居民會公布收支 | INFERRED: Two residents injured in the demolition, 薛日 (the second character is not clear) and 劉三妹, were well again and left hospital on 16 Jan 1948. The others improved, except 梁創. 張忠武 was expected to leave hospital on 17 Jan. | "其餘傷者，除梁創外，均有進步" |
+| NPWK19480117 leaf n3 (local news page), same article | The residents association paid the injured from its relief money: 30 dollars to each seriously injured person and 15 dollars to each lightly injured person. | "重傷者每人三十元，輕傷者每人十五元" |
+| NPWK19480117 leaf n3 (local news page), same article | On 16 Jan 1948 the association gave each resident one catty of rice, half a pound of biscuits and 8 dollars in cash. | "發米每人一斤，餅干半磅，現款八元" |
+| NPWK19480117 leaf n3 (local news page), same article | INFERRED: The association published its accounts: from 8 to 15 Jan 1948 it received 10,973,500 yuan in national currency and about 7,700 Hong Kong dollars. The last digits of the Hong Kong dollar sum are not clear in the scan. | "共收國幣一千零九十七萬三千五百元" |
+| NPWK19480117 leaf n3 (local news page), same article, donor list | INFERRED: The donors included a school that gave four sacks of rice and cash (華南中學), a restaurant trade group that gave 400 cotton vests, and a group in 石硤尾 that gave 200 catties of rice and 11 pounds of biscuits. I read these names from a worn list. | "米四草包" |
+| NPWK19480117 leaf n3 (local news page), article 朱劉案 决不上訴 (昨日晚九龍城訊) | The representative 陳振洲 said that 朱沛唐 and 劉毅夫 had said they would appeal, but the association decided not to appeal. It held that the arrest of the two men was not a matter for a Hong Kong court and waited for the Chinese diplomats to win their release. | "故決定不進行上訴" |
+| NPWK19480117 leaf n3 (local news page), box 讀者振濟龍城同胞 | The paper ran its own readers' relief list for the people of the City; one donor was the machine department staff of the Hongkong Hotel (香港大酒店), 40 dollars. | "香港大酒店機器部全人肆拾元" |
+
+- **Leads:**
+  - Wah Kiu Yat Po (華僑日報) of about 15-16 Jan 1948: the first report of the visit of the provincial commissioner 鄺 ("詳情經誌前報")
+  - The register (登記冊) of households, people and losses of the City residents association, Jan 1948: the paper did not print the figures
 ### top-china-20: 九龍城事件及沙面事件循外交途徑解决施諦文訪王世杰在外部舉行談判 (華僑日報 1948-01-20)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong; scan on the Internet Archive
-- **Date:** 1948-01-20
-- **Kind:** press
-- **Class:** primary (A newspaper of the time that reports the Foreign Ministry talks and the Canton assembly's demands.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (paper closed 1995; no rights statement seen)
-- **Link:** https://archive.org/details/NPWK19480120
-- **Other links:** https://archive.org/details/NPWK19480121, https://archive.org/metadata/NPWK19480120/metadata/description
-- **Proof that it exists:** 華僑日報 1948-01-20 (details page); headlines 九龍城事件及沙面事件循外交途徑解决施諦文訪王世杰在外部舉行談判; 穗市參議會要求派兵入九龍城護僑罷免王世杰郭德華
-- **What it gives (finder's note, not checked):** The two governments take the Kowloon City and Shameen incidents to diplomatic talks at the Foreign Ministry; the Canton City Council asks for troops in the City and the removal of 王世杰 and 郭德華; the residents hold a meeting; the police deny any action. The issue of 1948-01-21 (alt_url) adds 九龍城事件談判好轉 ... 英使提出書面要求賠償.
-- **Notes:** Other headlines: 九龍城居民昨夜召開大會昨日入城慰問者仍踴躍; 昨日九龍城平安渡過莫警司否認有行動. I read the 1948-01-21 headline through the metadata API only.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 20 Jan 1948, front page (leaf n0) and local news (leaf n3), item NPWK19480120, https://archive.org/details/NPWK19480120; and 21 Jan 1948, leaves n0 and n3, item NPWK19480121, https://archive.org/details/NPWK19480121; scans on the Internet Archive, read 2026-11-20.
+- **Class:** primary (A Hong Kong daily newspaper of the day, with reports on 19-20 Jan 1948. The tree primary is correct.)
+- **Date of the record:** 20 and 21 Jan 1948 (reports of 19-20 Jan 1948)
+- **Files:**
+  - `top-china-20-n0-deeb5a69.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 20 Jan 1948, front page, with the talks and the Canton City Council article; https://archive.org/download/NPWK19480120/page/n0.jpg; 5188149 bytes; SHA-256 `cb27f48d1476f724ab1046f1ab1f365b9b66d735a679cc8d7cd52ed6e9729230`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480120)
+  - `top-china-20-n3-a46fc697.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 20 Jan 1948, local news, with the calm day at the City (19 Jan) and the residents' meeting; https://archive.org/download/NPWK19480120/page/n3.jpg; 5361097 bytes; SHA-256 `3c572d926d0732dd2c84e197ae116047aeb475df70edbcef0adfde1cc6f5a8cb`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480120)
+  - `top-china-20-n0-fb5cbeed.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 21 Jan 1948, front page, with the talks and the end of the removal order; https://archive.org/download/NPWK19480121/page/n0.jpg; 5216257 bytes; SHA-256 `bbbebd3506cb3bc01e49d7730ec5d6628724f8103e162261851c0592042db0c5`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480121)
+  - `top-china-20-n3-87f14ae4.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 21 Jan 1948, local news, with the tents of surplus military canvas and the government denial; https://archive.org/download/NPWK19480121/page/n3.jpg; 5224691 bytes; SHA-256 `3e1028a9026a78955414797d5cab9c9ef6d499c8a07cbfff435d794d97d38674`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480121)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480120 leaf n0 (front page), lead 九龍城事件及沙面事件循外交途徑解决 | On 19 Jan 1948 the government awarded the Foreign Ministry's commissioner for Guangdong and Guangxi, 郭德華, the Order of the Brilliant Star, third class (三等景星勳章). He was then in Hong Kong for the talks on Kowloon. | "十九日由國府授三等景星勳章" |
+| NPWK19480120 leaf n0 (front page), 美聯社南京十九日電 | An Associated Press dispatch reports a claim that the Shameen riot aimed to make Britain stop Chinese opposition groups in Hong Kong, in exchange for China not pressing on jurisdiction over Kowloon. The Foreign Ministry information director 時昭瀛 said that this was baseless. | "此種解釋，全無根據" |
+| NPWK19480120 leaf n0 (front page), article 穗市參議會要求派兵入九龍城護僑 | The Canton City Council opened its fourth session on 19 Jan 1948. A councillor said that 朱克勤 and others would move that the government send troops into Kowloon City to protect the Chinese there, and remove 王世杰 and 郭德華 from office. | "由政府派兵開入九龍城，武裝護僑" |
+| NPWK19480120 leaf n0 (front page), 合衆社上海十九日電 | INFERRED: A United Press dispatch from Shanghai repeats a Canton rumour that Hong Kong had warned the residents to leave, and that Canton seamen's and dock workers would boycott Hong Kong within 30 minutes of a forced removal. The Hong Kong government denied the warning on 20 Jan (see the 21 Jan items). | "即宣告「杯葛香港」" |
+| NPWK19480120 leaf n3 (local news page), article 昨日九龍城平安渡過 莫警司否認有行動 | A rumour had said that the police would force out the evicted hut dwellers on the morning of 19 Jan 1948. A reporter reached the City at about 6 am and saw no demolition. | "記者於昨晨六時許抵達九龍寨城後" |
+| NPWK19480120 leaf n3 (local news page), same article | INFERRED: On the cleared hut site the reporter saw four green canvas tents near the East Gate, and the national flag of the Republic of China flying. I read the second landmark as a paper-burning pavilion (字紙亭); the characters are worn. | "草綠色之帆布帳幕四幅" |
+| NPWK19480120 leaf n3 (local news page), same article | Women and children had all been sent elsewhere. The site of the huts held only broken tiles and stones. | "婦孺皆已全部疏散他處" |
+| NPWK19480120 leaf n3 (local news page), same article | After 8 am the officers of the residents association came back to their office, a space fenced with bamboo and wood. | "以竹木圍起之辦事處" |
+| NPWK19480120 leaf n3 (local news page), same article | INFERRED: Police were still posted on the hill nearby. A police superintendent surnamed 莫 told the paper that the police had made no decision to remove anyone; at the demolitions they had only kept order for the Public Works Department. | "僅為協助工務局執行職務時維持秩序而已" |
+| NPWK19480120 leaf n3 (local news page), same article, last part | The residents association met on the night of 18 Jan 1948 and gave each person a task for an emergency. Each resident got 7 dollars, and each person aged 16 or over could get a cotton vest. | "十六歲以上者可領棉背心一件" |
+| NPWK19480120 leaf n3 (local news page), same article, last part | INFERRED: Only 20 to 30 able-bodied men stayed on guard at the site; ten of them sat up all night. The last words are worn. | "僅留壯丁二三十人看守" |
+| NPWK19480120 leaf n3 (local news page), article 九龍城居民昨夜召開大會 | A delegate of the residents association was still in Canton. He wrote home to tell the residents to keep working; 劉子良 quoted two phrases of the letter to the reporter. | "開花結果，心堅石穿" |
+| NPWK19480120 leaf n3 (local news page), same article | INFERRED: On 19 Jan 1948 the residents association sent two men with the Bao'an county magistrate surnamed 王 to take the 320 million yuan of relief money left from the provincial gift to the 順興 rice shop. They were to buy 2?,089 catties 12 taels of rice (二萬?千零八十九斤十二兩), thus more than 20,000 catties; the thousands digit is not clear. The shop did not have enough rice, thus payment and delivery were set for 23 Jan. | "救濟金三億二千萬元，往順興米店購買白米" |
+| NPWK19480120 leaf n3 (local news page), same article | The residents association held a general meeting of the residents at 9 pm on 19 Jan 1948. | "居民會昨夜九時召開居民大會" |
+| NPWK19480120 leaf n3 (local news page), item 據港府發言人稱 | A government spokesman said that of the City residents taken to hospital with injuries on 12 Jan 1948, three had left hospital, two more would leave soon, and one was out of danger. | "有三人經已痊愈出院" |
+| NPWK19480120 leaf n3 (local news page), item 昨天氣稍覺寒冷 | On 19 Jan 1948 the weather was cold. Kowloon City had much open ground and blowing dust. Many visitors still came to comfort the evicted residents, among them children. | "曠地甚多，沙塵滾滾" |
+| NPWK19480121 leaf n0 (front page), lead 九龍城事件談判好轉 | 19 Jan 1948 was the last day of the Hong Kong government's order for the residents to move, and the government did not enforce it. | "十九日為香港政府下令九龍居民拆遷之最後一日，港府亦未強制執行" |
+| NPWK19480121 leaf n0 (front page), same lead | On 20 Jan 1948 the Foreign Ministry said the talks on Kowloon City were going better. The British Ambassador made a written claim for the loss of the British consulate in Canton. | "九龍城事件漸趨好轉" |
+| NPWK19480121 leaf n0 (front page), 華聯社南京廿日電 | The Foreign Ministry said that a report of a new protest on the treatment of the City residents was a translation error: it had only said the talks went on. | "由于翻譯上之錯誤" |
+| NPWK19480121 leaf n3 (local news page), article 港當局正式否認限龍城居民遷出 | On 20 Jan 1948 the evicted residents waited for the diplomats. The main work of the residents association was to give out relief goods. | "至該寨城之居民聯合會之大部工作，仍為將所收救濟品發給" |
+| NPWK19480121 leaf n3 (local news page), same article | INFERRED: Green canvas tents on the old hut site were the temporary home of residents who had found no other place. The tents were surplus military stores and kept out wind and rain. The number of tents is not clear in the scan. | "此帳幕原為剩餘軍品，可蔽風雨" |
+| NPWK19480121 leaf n3 (local news page), same article | The national flag flew over the rubble, and police still patrolled nearby from time to time. | "惟仍有警察不時在附近巡邏" |
+| NPWK19480121 leaf n3 (local news page), item 【特訊】政府新聞處稱 | The Government Information Services denied a rumour that the police had told the people in Kowloon City to leave by a set time. | "此等謠言，實非事實" |
+| NPWK19480121 leaf n3 (local news page), donor list | INFERRED: A list of gifts for the City residents on 19 Jan 1948 includes the women of a church in Kowloon City (三一堂婦女), 10 dollars. The first character after 九龍城 is worn. | "三一堂婦女十元" |
+
+- **Leads:**
+  - 華僑日報 21 Jan 1948: the item 澳門車夫義拉賑濟龍城同胞 (in the issue headline list; I did not find it on leaves n0 or n3)
+  - The motions on Kowloon City at the fourth session of the Canton City Council (廣州市參議會), opened 19 Jan 1948
 ### china-2: 外交部严重抗议英国政府侵犯我国主权
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-20.
@@ -393,20 +439,37 @@ testimony given later: tag its facts "retrospective (year)".
 | Peking Review, Vol. 6 No. 4, 25 Jan 1963, p. 20 (PDF page 20), section 'British Encroachment on China's Sovereignty' | The article said that the authorities had tried several times in past years to clear the City and that the residents had stopped them. | "made repeated attempts to put their decision into effect but these were frustrated by the local residents" |
 ### top-china-23: 香港工商日報 1936-11-01
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong; scan on the Internet Archive
-- **Date:** 1936-11-01
-- **Kind:** press
-- **Class:** primary (A newspaper of the time whose keywords join the residents of Kowloon City with the Foreign Ministry and Britain.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (paper closed 1984; no rights statement on the item)
-- **Link:** https://archive.org/details/NPKS19361101
-- **Other links:** https://archive.org/details/NPKS19361023, https://archive.org/details/NPKS19361026, https://archive.org/details/NPKS19361129
-- **Proof that it exists:** 香港工商日報 1936-11-01 : Free Download, Borrow, and Streaming : Internet Archive; keywords 港政府 九龍城居民 外交部 英國 凌士芬 居民 外部
-- **What it gives (finder's note, not checked):** OCR keywords of Oct-Nov 1936 that place the residents of Kowloon City (九龍城居民, 九龍城內居民) beside the Hong Kong government, the ROC Foreign Ministry (外交部, 外部) and Britain. It can be the reports of the residents' appeal against the evictions of 1936 and the ROC representations.
-- **Notes:** Keyword lists, not headlines; the full text (djvu.txt) is garbled. Other issues: 1936-10-23 (九龍城內鄉民 beside 外部), 1936-10-26 (九龍城內居民, then 外部), 1936-11-29 (刁作謙 九龍城居民). I did not identify 凌士芬 or the post of 刁作謙. 中央日報 for the same months is on archive.org (top-china-16).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Kung Sheung Daily News (香港工商日報), Hong Kong: 23 Oct 1936 (leaf n12), 26 Oct 1936 (leaf n8), 1 Nov 1936 (leaf n8) and 29 Nov 1936 (leaf n8), local news; scans on the Internet Archive, items NPKS19361023, NPKS19361026, NPKS19361101 and NPKS19361129, https://archive.org/details/NPKS19361101, read 2026-11-20.
+- **Class:** primary (Reports of the day in a Hong Kong newspaper, with the texts of official replies. The tree primary is correct.)
+- **Date of the record:** 23 Oct - 29 Nov 1936
+- **Files:**
+  - `top-china-23-n12-21bd03ce.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 23 Oct 1936, local news (leaf n12), with the report on the third removal notice; https://archive.org/download/NPKS19361023/page/n12.jpg; 5198033 bytes; SHA-256 `edbe4a947054a79278783eefc47a53b56c4ee53e1a981c132a5aa346c8bf7dbc`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPKS19361023)
+  - `top-china-23-n8-234f8c08.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 26 Oct 1936, leaf n8, with the report on the residents' petition; https://archive.org/download/NPKS19361026/page/n8.jpg; 4988715 bytes; SHA-256 `78e6d385a20793222a8a4d5266076b4ddd3b57d2517c981280345b6dca208c35`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPKS19361026)
+  - `top-china-23-n8-fffdba71.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 1 Nov 1936, local news (leaf n8), with the letter of 凌士芬 to the residents; https://archive.org/download/NPKS19361101/page/n8.jpg; 5439966 bytes; SHA-256 `4449dd84a5465d0ed3054a1d71bb78131e1782547a8d1fb88e92b0b20515c72d`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPKS19361101)
+  - `top-china-23-n8-36144922.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 29 Nov 1936, leaf n8, with the replies of 黃慕松 and 刁作謙 and the count of 64 households; https://archive.org/download/NPKS19361129/page/n8.jpg; 5418414 bytes; SHA-256 `d4bb8016a63ef4bfd8ee1fd6b5a64ffee4723f8bc13bf89913ad64356947f0d7`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPKS19361129)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19361023 leaf n12 (本埠新聞), article 九龍城內鄉民搬遷案 | The residents inside Kowloon City had had repeated orders to move. The latest, the third notice, told them to leave by the end of 1936. | "最近為第三次之通告，限令於本年底遷出" |
+| NPKS19361023 leaf n12 (本埠新聞), article 九龍城內鄉民搬遷案 | On 22 Oct 1936 a reporter went into the City and met the villagers' representative 楊偉雄. The New Territories South District Office (新界南約理民府) had put the deadline back to the end of the first lunar month of 1937, about two months more. | "展緩至來年舊曆正月底為止" |
+| NPKS19361023 leaf n12 (本埠新聞), article 九龍城內鄉民搬遷案 | The villagers drafted a petition and sent a man to Canton to post it to the Foreign Ministry, asking the Foreign Minister (張外長) to take up the case. | "請求張外長負責交涉" |
+| NPKS19361026 leaf n8, article 九龍城內居民搬遷案籲請外部澈底解決 | INFERRED: Several hundred residents petitioned the Foreign Ministry. On 25 Oct 1936 the reporter went into the City again; every household said it did not want to move. | "據各家戶之表示，皆不欲搬遷" |
+| NPKS19361026 leaf n8, article 九龍城內居民搬遷案籲請外部澈底解決 | The petition said that the walled area was Chinese land, and that earlier talks by Guangdong and Guangxi diplomats had each got a satisfactory British answer. | "認為城內地域乃我領土" |
+| NPKS19361101 leaf n8 (本埠新聞), article 港政府令九龍城居民遷徙 | The Foreign Ministry's commissioner for Guangdong and Guangxi, 刁作謙, had sent his secretary 凌士芬 to look into the matter. 凌士芬 first urged the residents to move, but they were attached to their old homes. | "凌氏始勸諭該處居民他遷，後以民情眷戀故土" |
+| NPKS19361101 leaf n8 (本埠新聞), article 港政府令九龍城居民遷徙 | INFERRED: The residents petitioned the Foreign Ministry again on the 27th, which I take as 27 Oct 1936 (the article says 昨廿七日). | "昨廿七日又復呈外交部" |
+| NPKS19361101 leaf n8 (本埠新聞), article 港政府令九龍城居民遷徙, text of the letter | 凌士芬 wrote to the residents that the case was now with the British Consul-General in Canton and the Foreign Ministry, and asked them to work in peace and wait. | "尚希望諸先生安心作業，靜候解決" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民 | The New Territories South District Office wanted to develop Kowloon City, ordered the residents to move, and chose a site at 沙田頭 for them. The paper gives the Chinese name only; I do not identify the place. | "擇定沙田頭地段，為該處居民搬遷之用" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民 | In Nov 1936 the City had 64 households and more than 430 residents. | "查該處現有住戶六十四家，居民四百卅餘人" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民 | The residents said they were born and raised there, and that their houses, though old and humble, were property left by their ancestors over centuries. | "屋宇雖殘陋，而為數百年來遺下之祖業" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民 | Representatives led by 楊偉雄 went to Canton to petition the Guangdong governor 黃慕松 and the commissioner 刁作謙. 刁作謙 took the case to the British Consul-General at Shameen and to the British Ambassador. | "晉謁廣東省府主席黃慕松" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民, text of 黃主席之批覆 | The governor's written reply, dated 20 Nov 1936, answered a petition of 16 Nov 1936 from the representatives. It said that the case was with the Foreign Ministry and the British, who were asked to make Hong Kong withdraw the order. | "廿五年十一月十六日請願書一件" |
+| NPKS19361129 leaf n8, article 黃慕松刁作謙昨批覆九龍城居民, text of 特派員之批覆 (批廣字第四八零號) | INFERRED: The commissioner's reply names the petitioners as 楊偉雄, 陳德潮, 盧章 and 曾杜生. The third name is worn. | "批楊偉雄、陳德潮" |
+
+- **Leads:**
+  - The petition of the City residents (representative 楊偉雄 and others) to the Guangdong provincial government, 16 Nov 1936, and its reply of 20 Nov 1936 (批文)
+  - The third removal notice of the New Territories South District Office (新界南約理民府) to the City residents, 1936, and the earlier two notices
+  - 香港工商日報 of Oct 1936 before 23 Oct ("各情已見前報"), and the continuation of the 29 Nov 1936 article
 ### top-china-11: 香港工商日報 1937-01-31
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -428,20 +491,24 @@ testimony given later: tag its facts "retrospective (year)".
   - Papers of the City residents sent to the Chinese Foreign Ministry in Nanjing in late January 1937 (the article refers to them); the Foreign Ministry files of the 1930s are in the Academia Historica (國史館) and the Institute of Modern History (近史所) archives.
 ### top-china-22: 香港工商日報 1937-03-27
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong; scan on the Internet Archive
-- **Date:** 1937-03-27
-- **Kind:** press
-- **Class:** primary (A newspaper of the time whose keywords join the 九龍城事件 with the British Ambassador and a diplomatic note.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (paper closed 1984; no rights statement seen)
-- **Link:** https://archive.org/details/NPKS19370327
-- **Other links:** https://archive.org/metadata/NPKS19370327/metadata/description
-- **Proof that it exists:** Description keywords (read through the metadata API): 英大使 許閣森 ... 領事裁判權 英國 牒文 九龍城事件 香港 我政府問題 海南島事件
-- **What it gives (finder's note, not checked):** OCR keywords that place the 九龍城事件 with the British Ambassador (許閣森), extraterritoriality, a British note (牒文) and 'our government' (我政府). It can be a report on the Sino-British questions open in March 1937, the City among them.
-- **Notes:** The description is a list of keywords; the article boundaries are not sure. I did not open the details page. Read the page images.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Kung Sheung Daily News (香港工商日報), Hong Kong, 27 Mar 1937, local news (leaf n7), "英大使許閣森定明午乘艦赴澳" (本報專訪); scan on the Internet Archive, item NPKS19370327, https://archive.org/details/NPKS19370327, read 2026-11-20.
+- **Class:** primary (An interview of the day in a Hong Kong newspaper. The tree primary is correct.)
+- **Date of the record:** 27 Mar 1937
+- **Files:**
+  - `top-china-22-n7-a17377fa.jpg` (in `local/`, not in git): Page image of Kung Sheung Daily News 27 Mar 1937, local news (leaf n7), with the interview of the British Ambassador's secretary; https://archive.org/download/NPKS19370327/page/n7.jpg; 4713131 bytes; SHA-256 `8826e69a00f8334584d7aa8a15d5b0e8783c379f018f8bde484f6cf351aff91b`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPKS19370327)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳 | INFERRED: The British Ambassador to China, 許閣森, had come to Hong Kong from Canton on a tour to see the British residents in China. He was to go to Macau by gunboat on the afternoon of 28 Mar 1937 to meet the Portuguese government there, and then go north by Swatow, Amoy and Foochow. The date is from 明日 (tomorrow) in the paper of 27 Mar. | "已定於明日下午乘座淺水軍艦赴澳門一行" (it is fixed that tomorrow afternoon he takes a shallow-water warship for a trip to Macau) |
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳 | The Ambassador sent his chief secretary (秘書長) 格拉漢 to receive the reporter for him and to answer the questions. | "業派秘書長格拉漢代表接見" (he sent the chief secretary 格拉漢 to receive [the reporter] for him) |
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳, subhead 九龍城事件屬香港與我政府問題 | The paper calls the Kowloon City affair a matter of negotiation that had been open for years with no known solution. | "交涉經年久懸未決之九龍城事件" |
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳 | The secretary said that the Chinese Foreign Ministry had protested to the British government, and that the British government had noted it. | "我外部曾行文英國政府提出抗議" |
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳 | He said that the affair was a matter between the Hong Kong government and the Chinese government; he could only pass the Chinese view to Hong Kong, which had given no view so far. | "惟此事件屬香港政府與我國政府間問題" |
+| NPKS19370327 leaf n7 (本埠新聞), article 英大使許閣森定明午乘艦赴澳, subhead 領事裁判權之撤廢英尚未接牒文 | On extraterritoriality he said that Britain had not yet received a formal Chinese note. | "英國迄今仍未接得中國正式之牒文" |
+
+- **Leads:**
+  - The protest note of the Chinese Foreign Ministry to the British government on the Kowloon City evictions (1936-1937)
 ### china-17: 郭德華聲明不放棄九龍行政權
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -735,20 +802,34 @@ testimony given later: tag its facts "retrospective (year)".
   - Residents' registration cards (居民登記證) of the Kowloon City residents' association, Jan 1948, and its relief accounts to 26 Jan 1948.
 ### top-china-21: 九龍城沙面兩事件交涉癥結仍為主權問題 (華僑日報 1948-01-31)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong; scan on the Internet Archive
-- **Date:** 1948-01-31
-- **Kind:** press
-- **Class:** primary (A newspaper of the time that reports the state of the Sino-British negotiation.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (paper closed 1995; no rights statement seen)
-- **Link:** https://archive.org/details/NPWK19480131
-- **Other links:** https://archive.org/metadata/NPWK19480131/metadata/description
-- **Proof that it exists:** 華僑日報 1948-01-31 (details page); headlines 九龍城沙面兩事件交涉癥結仍為主權問題; 龍城代表請答覆釋放朱劉兩要求; 西鄉慰問團散賑龍城
-- **What it gives (finder's note, not checked):** At the end of January 1948 sovereignty is still the crux of the talks on the two incidents. The City residents' delegates ask for an answer on the release of two arrested men (朱 and 劉), and a relief group from 西鄉 gives aid in the City.
-- **Notes:** Headlines from the OCR description. The full names of the two men are not in the headline.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I looked at small images of all 8 leaves, then read leaves n0 and n3 at full size with enlarged crops. On n0 I read the opening of the lead (the three points of the deadlock); the rest of it is a general discussion of the treaty and the Kowloon lease, which I did not read. On n3 I read the delegates' petition, the 西鄉 relief item, and most of the long text of the British Foreign Office note that the Government Information Services released on 30 Jan 1948. CHECK of the finder: the note is the biggest City item on the page and is not in the finder's note. Some columns of the note are worn; I mark those facts inferred.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 31 Jan 1948, front page (leaf n0) and local news page (leaf n3); scan on the Internet Archive, item NPWK19480131, https://archive.org/details/NPWK19480131, read 2026-11-20.
+- **Class:** primary (A Hong Kong daily newspaper of the day. The British note that it prints is an official record of Jan 1948. The tree primary is correct.)
+- **Date of the record:** 31 Jan 1948 (reports of 28-30 Jan 1948)
+- **Files:**
+  - `top-china-21-n0-a928c742.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 31 Jan 1948, front page, with the lead on the deadlock of the talks; https://archive.org/download/NPWK19480131/page/n0.jpg; 5274250 bytes; SHA-256 `aa4e272de547939288b3d65c80b8d1c391e766491fd484aa0c3e50924b806bf3`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480131)
+  - `top-china-21-n3-b3bbb21f.jpg` (in `local/`, not in git): Page image of Wah Kiu Yat Po 31 Jan 1948, local news, with the full Chinese text of the British Foreign Office note, the delegates' petition and the 西鄉 relief; https://archive.org/download/NPWK19480131/page/n3.jpg; 5415128 bytes; SHA-256 `98e8bc6d6ee6ed063562a7ff1e8ee4173d72e7f3f93db1ea3767fba883c80663`; licence: No licence statement; the archive.org item has no rights or licenseurl field; copyright of the newspaper is not stated (https://archive.org/details/NPWK19480131)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480131 leaf n0 (front page), lead 九龍城沙面兩事件交涉癥結仍為主權問題 | On 29 Jan 1948 the talks had not moved. A British Embassy spokesman said the deadlock was on three points: jurisdiction over Kowloon City, the release of the arrested residents, and compensation. | "(一)九龍城之管轄權問題，(二)被捕居民釋放問題，(三)賠償問題" |
+| NPWK19480131 leaf n3 (local news page), article 龍城代表請答覆釋放朱劉兩要求 | On 28 Jan 1948 the residents association sent delegates with a letter to the special commissioner 郭德華, asking him to press hard for the release of 朱沛唐 and 劉毅夫. If there was no answer in three days, the residents would all go to prison with them. | "三日內無答覆，則居民願全體入獄，共同受苦" |
+| NPWK19480131 leaf n3 (local news page), article 香港政府新聞處發表英外部致中國大使覆牒全文 | The Government Information Services released, on the night of 30 Jan 1948, the full text of the British Foreign Office reply to the Chinese Ambassador on the Kowloon City affair. | "英外部致中國大使覆牒全文" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note says that after the British reoccupation in 1945 people squatted on the site and built huts with no proper sanitation, a fire and disease risk. This was the government's reason for the clearance. | "預防火災及疾病之威脅也" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note gives the steps: a notice to leave on 27 Nov 1947, a court hearing in Dec 1947, and the eviction and demolition of the huts on 5 Jan 1948 without incident. | "執行驅逐" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note says that on 12 Jan 1948 the police met organised resistance with stones and bricks, fired warning shots, then used tear gas. Six people were injured: five lightly and one with a gunshot wound in the abdomen, now out of danger. | "五名傷勢輕微" |
+| NPWK19480131 leaf n3 (local news page), British note | The note says that the police were attacked outside the so-called Kowloon City, by people both inside and outside the walls. | "有在城內，亦有在城外" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note names the two men arrested for inciting resistance: 朱沛唐, chairman of the residents association, and 劉毅夫, said to be a partner in a factory. On 13 Jan 1948 the Kowloon magistrate gave each three months' prison with hard labour. They did not in fact appeal. | "苦工三月" |
+| NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note blames the activity of the Bao'an county magistrate (寶安縣長), who spoke to the residents under the Chinese flag, for stirring up the trouble. | "寶安縣長" |
+| NPWK19480131 leaf n3 (local news page), article 西鄉慰問團散賑龍城 | People of 西鄉 in Bao'an and its chamber of commerce collected more than 3,000 catties of rice from about 100 shops for the City residents. | "約有商店百餘間" |
+| NPWK19480131 leaf n3 (local news page), same article | A group of eight brought the rice on 30 Jan 1948, but Customs at Man Kam To (文錦渡) stopped it, because the law did not allow food to leave China. They sold the rice in Shenzhen, brought the cash and bought rice in Hong Kong for the residents association. | "海關以糧食出口為法令所不許，不准放行" |
+| NPWK19480131 leaf n3 (local news page), same article | The rice came to about 3,200 catties and was to be given out to the residents on 31 Jan 1948. | "查該批白米共三千二百餘斤" |
+
+- **Leads:**
+  - The English original of the Foreign Office reply to the Chinese Ambassador on Kowloon City (late Jan 1948), released in Hong Kong by the Government Information Services on 30 Jan 1948
+  - The note of the Chinese Ambassador to the Foreign Office of 13 Jan 1948 on the Kowloon City evictions
+  - Kowloon Magistracy case of 朱沛唐 and 劉毅夫, conviction of 13 Jan 1948
 ### china-3: 九龙城寨居民联合反对拆迁委员会发表声明 香港英当局应即撤销拆迁九龙城寨计划
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-20.

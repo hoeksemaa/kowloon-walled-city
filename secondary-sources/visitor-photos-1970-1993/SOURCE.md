@@ -184,3 +184,42 @@ See the leads under each item in the primary folder.
 | photo page | The image titled 'Kowloon walled City 1990' has no description. Flickr gives 'taken' 14 Feb 2008 and upload 2 Aug 2010. | "Kowloon walled City 1990" |
 | image | The image is a collage: at the left, the same aerial as flickr-13's '1990s' frame; at the right, a vertical aerial photo of the City in grey, cut along an irregular line. | "Kowloon walled City 1990" |
 | photostream https://www.flickr.com/photos/52622119@N04/ and photo 4853484237 | The same account holds 'section' drawings, photos titled 1970 and 1980, and an 'Electricity meters' collage of three printed photos of meter boards in corridors. None names a photographer. | "Electricity meters" |
+
+### ja-25: 取り壊される前に行ってみたかった！　解体前に潜入した「本物の九龍城砦」の写真が迫力満点
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** モトタキ (Mototaki), '取り壊される前に行ってみたかった！　解体前に潜入した「本物の九龍城砦」の写真が迫力満点', ねとらぼ (ITmedia), 13 June 2023, https://nlab.itmedia.co.jp/nl/articles/2306/12/news120.html (now https://nlab.itmedia.co.jp/cont/articles/3358123/); photos by PepperBox (@PepperAnnex), X post of 31 May 2023, https://twitter.com/PepperAnnex/status/1663764188605607937
+- **Class:** primary (Four photos taken by a visitor inside and at the edge of the City before its demolition: records made at the time, date unknown. The caption is retrospective (2023). The article's narration is secondary. The protest banners in two photos suggest the clearance years, about 1987-1992 (INFERRED).)
+- **Date of the record:** photos: before the demolition of 1993, year not given (INFERRED from the banners: the clearance years, about 1987-1992); X post 2023-05-31; article 2023-06-13
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/visitor-photos-1970-1993/SOURCE.md`](../../primary-sources/visitor-photos-1970-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| article p. 1 | The article says the photographer visited and took the photos in person; it gives no year. It describes the photos as the outside of buildings with piled-up extensions, alleys, and a stairway of a building. | "ごちゃごちゃと建て増しされた建造物の外観や路地、どこかの建物の階段などが映っています" (they show the exterior of buildings messily built up with additions, alleys, the stairs of some building, and so on) |
+
+### top-press-en-19: Sign in the Walled City of Kowloon, Hong Kong
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Brian Brake (photographer), 'Sign in the Walled City of Kowloon, Hong Kong', 1970-1976, colour transparency, Museum of New Zealand Te Papa Tongarewa, registration number CT.053648, gift of Mr Raymond Wai-Man Lau, 2001. https://collections.tepapa.govt.nz/object/645201 ; DigitalNZ record 30674709.
+- **Class:** primary (A photo taken in the City in 1970-1976, about ten years before the peak. The title and dates are the museum's cataloguing (kind secondary).)
+- **Date of the record:** 1970-1976 (museum date range)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/visitor-photos-1970-1993/SOURCE.md`](../../primary-sources/visitor-photos-1970-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Te Papa object page; DigitalNZ record 30674709 | Te Papa holds Brian Brake's colour transparency titled 'Sign in the Walled City of Kowloon, Hong Kong', dated 1970-1976, registration CT.053648, gift of Raymond Wai-Man Lau in 2001. | "Sign in the Walled City of Kowloon, Hong Kong, 1970-1976, Hong Kong, by Brian Brake. Gift of Mr Raymond Wai-Man Lau, 2001. Te Papa (CT.053648)" |
+| Te Papa object page | Rights: Te Papa states All Rights Reserved and offers a 'License Image' option. | "This image has a rights statement of All Rights Reserved." |
+
+### top-top-flickr-1: Kowloon Walled City (with '12 story walk-up', 'Dubious Dentists' and 'Teef')
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** allan56 (Flickr user 9730593@N04), four photos of Kowloon Walled City, 1977, scanned from slides and uploaded 8-17 Sep 2008: 'Kowloon Walled City' (2848827972), '12 story walk-up' (2839177014), 'Dubious Dentists' (2864951860), 'Teef' (2839174844), album '1977 Hong Kong'. https://www.flickr.com/photos/9730593@N04/2848827972/ ; re-upload by HK Man (香港在消失ing), '九龍城 - 東頭村道、聯合道 交界 1977', 11 Dec 2008, https://www.flickr.com/photos/old-hk/3099687739/
+- **Class:** primary (Photos taken in 1977 by a foreign resident who lived near the City: records of the time, eight years before the model week. The captions and allan56's comments are retrospective (2008). Other commenters' statements are secondary.)
+- **Date of the record:** photos 1977 (caption); scanned and uploaded Sep 2008 (Flickr 'taken' = scan date, scanner 'Noritsu Koki QSS')
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/visitor-photos-1970-1993/SOURCE.md`](../../primary-sources/visitor-photos-1970-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Flickr 2848827972, comment by keroseneian2003 (2008) | A commenter (2008) says allan56 stood in the middle of Junction Road (聯合道); the yard with the red lorry is now part of the Walled City Park, and the site of the Hau Wong Temple (侯王廟) is to the left, out of the picture. | "This picture was taken while the photographer was standing in the middle of Junction Road, the yard with a red colored lorry is now part of the walled city park." |
+| Flickr old-hk 3099687739, title | HK Man's re-upload (Dec 2008) titles the same photo as the junction of Tung Tau Tsuen Road (東頭村道) and Junction Road (聯合道), 1977; this is the re-uploader's reading. | "九龍城 - 東頭村道、聯合道 交界 1977" (Kowloon City - junction of Tung Tau Tsuen Road and Junction Road, 1977) |
+| Flickr 2839174844, comment by feirantedotcom (2008); Flickr 2864951860, comment by feirantedotcom and reply by allan56 (2009) | A commenter (2008) says the 'dental surgeons' washed their tools in bowls on the pavement and that one had an open-air night clinic off Temple Street; on another photo (2009) he says they rinsed their tools at street taps, and allan56 replied 'i never witnessed that'. The commenter does not say that he saw it, and it is not clear that he means the City's dentists. | "the 'dental surgeons' would wash their implements in bowls on the pavement, so much for sterilization.." |

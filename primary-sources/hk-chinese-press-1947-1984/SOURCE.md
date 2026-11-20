@@ -2,7 +2,7 @@
 
 Reports made at the time on the 1948 eviction, the 1962-63 dispute, crime, drugs, building collapses and the streets; open page scans.
 
-- **Status:** partly read: 47 of 59 items read by the reading of the source search of
+- **Status:** partly read: 58 of 59 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1947-1984.
@@ -19,36 +19,77 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### zh-press-21: 華僑日報 1947-1991: issues whose headline list names 城寨, 城砦 or 寨城 (archive.org metadata query)
 
-- **Creator:** Internet Archive item set 'NPWK' (private uploader); paper by 華僑日報
-- **Date:** 1947-1991
-- **Kind:** catalogue
-- **Class:** primary (A finding list of press reports of the time.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** metadata: unknown; papers © publisher
-- **Link:** https://archive.org/advancedsearch.php?q=identifier%3ANPWK*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&rows=500&sort%5B%5D=date+asc&output=json
-- **Other links:** https://archive.org/advancedsearch.php?q=identifier%3ANPWK*+AND+description%3A%22%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%22&fl%5B%5D=identifier&rows=500&sort%5B%5D=date+asc&output=json, https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** numFound 485 (城寨 OR 城砦 OR 寨城); numFound 112 for the exact phrase 九龍城寨; the run has 15,975 issues, NPWK19470501 to NPWK19911231.
-- **What it gives (finder's note, not checked):** A list of the 華僑日報 issues that mention the City, 1947-1991. In 1985-1986 there are 11; in 1987 there are many; the 1991 clearance issues are NPWK19911020, 1128, 1129, 1201, 1202, 1206, 1211.
-- **Notes:** The keyword lists are OCR output and miss some reports (for example 1987-06-21 is not in the 九龍城寨 list). 1985 hits are often only a keyword, e.g. 1985-07-05 '九龍城砦業權'. Other 1987 hits not read: 0127, 0212, 0216, 0414, 0425, 1031, 1231. 1988-1990 hits not read: 19880420, 0706, 1019, 1027, 1110, 1114; 19890922, 1225, 1228; 19900217, 0504, 0602, 0911, 0914, 1019. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Internet Archive, item set NPWK (華僑日報 Wah Kiu Yat Po, Hong Kong, scanned issues, private uploader), advanced-search query of the 'description' field for 城寨, 城砦 or 寨城, 1947-1991, run 2026-11-20. https://archive.org/advancedsearch.php?q=identifier%3ANPWK*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=500&sort%5B%5D=date+asc&output=json
+- **Class:** primary (A list of OCR keywords and headlines of the time (1948-1991). The list is a later finding aid; the headlines in it are primary.)
+- **Date of the record:** issues of 1948 to 1991-12-21; metadata uploaded later
+- **Files:**
+  - `zh-press-21-advancedsearch-cec4a476.php` (in `local/`, not in git): archive.org search result (JSON) of the 華僑日報 issues whose description names the City (485 issues), with identifiers, dates and OCR keyword or headline lists; https://archive.org/advancedsearch.php?q=identifier%3ANPWK*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=500&sort%5B%5D=date+asc&output=json; 12830749 bytes; SHA-256 `24c4d315b0320a622735c1413eebd3dd18b9d51e231dd479344b829d7a5ebaaa`; licence: no statement for the metadata on archive.org; papers © 華僑日報 (https://archive.org/details/NPWK19911130)
+- **Note:** its 5 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org item NPWK19860611 (issue of 1986-06-11), metadata 'description' (OCR headline list) | INFERRED: The keyword list of 11 June 1986 has '同濟會捐欵 城砦學校' (a donation of the 同濟會 to a City school); 10 June 1986 has '城寨學校經費儀式' (a ceremony about a City school's funds). This reading of keyword lists is a guess. | "同濟會捐欵 城砦學校" (同濟會 donation; City school) |
+| archive.org item NPWK19860729 (issue of 1986-07-29), metadata 'description' (OCR headline list) | INFERRED: The keyword list of 29 July 1986 has '城砦 青協會 義工 衛生': perhaps volunteers of a youth association worked on sanitation in the City. This reading of a keyword list is a guess. | "城砦 青協會 義工 衛生" (City; youth association; volunteers; sanitation) |
+| archive.org item NPWK19851222 (issue of 1985-12-22), metadata 'description' (OCR headline list) | INFERRED: The keyword list of 22 December 1985 has '城砦罪案 改善 吸毒': perhaps a report that crime in the City had improved, with drug taking. This reading is a guess. | "城砦罪案 改善 吸毒" (City crime; improvement; drug taking) |
+| archive.org item NPWK19870201 (issue of 1987-02-01), metadata 'description' (OCR headline list) | In the two-week clearance survey, 33,000 people registered. A special committee was to study the problem of the unlicensed dentists, doctors and prostitutes (reported 1 February 1987). | "城寨進行兩週調查 已登記三萬三千人 無牌牙醫醫生妓女問題由特別委會研究" (Two-week survey in the City: 33,000 registered; the problem of unlicensed dentists, doctors and prostitutes to be studied by a special committee) |
+| archive.org item NPWK19870330 (issue of 1987-03-30), metadata 'description' (OCR headline list) | A headline or caption of 30 March 1987 tells of cleaners who were dedicated to the refuse inside the City and swept its narrow lanes. | "專責打理城寨內垃圾 窄巷內清掃 清凈員勞苦" (Dedicated to the refuse inside the City, sweeping in the narrow lanes; the cleaners toil) |
+| archive.org item NPWK19870612 (issue of 1987-06-12), metadata 'description' (OCR headline list) | The City had more than 1,000 factory households or units (工廠逾一千戶); an industrial estate for them was not feasible (reported 12 June 1987). | "城寨工廠逾一千戶 賠償方案年底訂出 提出建城寨工業邨可行性不大" (Over 1,000 factories in the City; compensation plan by year-end; proposal of a City industrial estate not very feasible) |
+| archive.org item NPWK19870619 (issue of 1987-06-19), metadata 'description' (OCR headline list) | A City water supplier asked for HK$200,000 compensation for the cost of digging his well and for loss of business (reported 19 June 1987). | "九龍城砦供水商 要求賠償廿萬 彌補開井費及商業損失" (City water supplier asks $200,000 compensation for well-digging costs and business losses) |
+| archive.org item NPWK19871118 (issue of 1987-11-18), metadata 'description' (OCR headline list) | INFERRED: The registration of commercial water wells closed on 28 November 1987 (reported 18 November 1987). The headline does not name the City. It stands next to a City headline (房委會已成立小組 安排城砦牙醫出路), thus its link to the City is a guess. | "商用水井登記本月廿八日截止" (Registration of commercial wells closes on the 28th of this month) |
+| archive.org item NPWK19871226 (issue of 1987-12-26), metadata 'description' (OCR headline list) | Nearly 200 households of the first clearance phase had over-reported the number of their members; the Housing Department would use the real numbers (reported 26 December 1987). | "城寨首期遷拆住戶 近二百戶多報人口 房署將按照實際人數" (Nearly 200 first-phase households over-reported their numbers; the Housing Department will go by the actual numbers) |
+| archive.org item NPWK19880420 (issue of 1988-04-20), metadata 'description' (OCR headline list) | A fourth-alarm fire at a roast-meat shop in the early morning forced an emergency evacuation of the City; firemen brought about 100 residents to safety (reported 20 April 1988). | "燒臘店清晨四級火九龍城寨緊急疏散消防人員將百名居民救出險地" (Early-morning fourth-alarm fire at a roast-meat shop; City evacuated; firemen rescue a hundred residents) |
+| archive.org item NPWK19901027 (issue of 1990-10-27), metadata 'description' (OCR headline list) | A middle-aged man who burgled many units in the City was convicted of seven charges and jailed for three years and nine months (reported 27 October 1990). | "連番爆竊城寨多個單位中年漢七罪俱成判囚三年九個月" (Middle-aged man who burgled many City units convicted on all seven charges, jailed 3 years 9 months) |
+| archive.org item NPWK19911020 (issue of 1991-10-20), metadata 'description' (OCR headline list) | The City item of 20 October 1991 is not about the clearance: a girl returning to her home in the City was held at knifepoint in the stairwell, tied, raped and robbed. | "返回城寨寓所梯間遇刀賊少女遭脅持綑手脚慘被强姦兼掠財物" (Returning to her City home, a girl met a knife-wielding robber in the stairwell, was held, bound, raped and robbed) |
+| archive.org item NPWK19911024 (issue of 1991-10-24), metadata 'description' (OCR headline list) | About 200 shop owners and residents of the City who were not satisfied with the compensation marched to Government House and burned paper effigies outside the Legislative Council (reported 24 October 1991). | "不滿賠償金額拒絕搬遷城砦二百商戶居民遊行赴港督府請願再在立局門前焚燒紙紮公仔" (Dissatisfied with compensation, refusing to move, 200 City shop owners and residents marched to Government House, then burned paper effigies outside LegCo) |
+| archive.org item NPWK19911130 (issue of 1991-11-30), metadata 'description' (OCR headline list) | The first clearance phase ended; the police used minimum force and four households were carried out; residents sang 東方紅 and 血染的風采 (reported 30 November 1991). | "城砦清拆行動首期順利完成居民高唱東方紅及血染風采" (First phase of the City clearance completed smoothly; residents sang 'The East Is Red' and 'Bloodstained Glory') |
+
+- **Leads:**
+  - Wah Kiu Yat Po (華僑日報) 1986-06-11 and 1986-07-29 (archive.org NPWK19860611, NPWK19860729): a donation to a City school and youth volunteers on sanitation, the only 1986 City items of this paper besides 1986-06-10. Not in the repo.
+  - 華僑日報 1987-02-01, 1987-03-30, 1987-06-12, 1987-06-19 and 1987-12-26 (archive.org NPWK19870201, NPWK19870330, NPWK19870612, NPWK19870619, NPWK19871226): the 33,000 registered with unlicensed dentists, doctors and prostitutes; the cleaners of the lanes; over 1,000 factories; a water supplier's claim; over-reported households. Not in the repo.
+  - 華僑日報 1990-10-27 (NPWK19901027): a burglar of many City units. Not in the repo.
 ### top-zh-press-34: 大公報 1970-1991: issues whose headline list names 城寨, 城砦 or 寨城 (archive.org metadata query)
 
-- **Creator:** Internet Archive item set 'NPTKP' (private uploader, collection 'china-mail'); paper by 大公報
-- **Date:** 1970-1991
-- **Kind:** catalogue
-- **Class:** primary (A finding list of press reports of the time.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** metadata: unknown; papers © publisher
-- **Link:** https://archive.org/advancedsearch.php?q=identifier%3ANPTKP19*+AND+date%3A%5B1984-01-01+TO+1991-12-31%5D+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&rows=400&sort%5B%5D=identifier+asc&output=json
-- **Other links:** https://archive.org/advancedsearch.php?q=identifier%3ANPTKP19*+AND+date%3A%5B1970-01-01+TO+1983-12-31%5D+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&rows=400&sort%5B%5D=identifier+asc&output=json
-- **Proof that it exists:** numFound 143 for 1984-1991 and 69 for 1970-1983. In 1987 only 華僑日報 (NPWK) and 大公報 (NPTKP) exist in the set.
-- **What it gives (finder's note, not checked):** A list of the 212 大公報 issues of 1970-1991 that name the City. Unlike the 華僑日報 keyword lists, the 大公報 descriptions are full OCR headlines, so a headline can be found with an exact-phrase query. The 1986 issues are 0221, 0601, 0716 and 1208: no City item in the model week of 15-21 Dec 1986.
-- **Notes:** More headlines seen in batch reads, issue confirmed by exact phrase but not made candidates: NPTKP19840501 '城寨一死一危命案警方作兇殺案處理已扣留報案男子並找尋另一人'; NPTKP19860221 '城砦福利會敬老...聯歡晚宴'; NPTKP19860601 '城砦關注基本法諮詢處昨成立顧問團聯絡街坊逢星期日有顧問當值提供諮詢服務'; NPTKP19870228 '城寨五百業主通過設聯誼會'; NPTKP19870523 Governor Wilson on letting the City's doctors use their skills; NPTKP19870816 '城寨有血案店主被擊傷'; NPTKP19880115 '近八千人將搬走' by Jun 1988; NPTKP19881015 '城寨四千業主及住戶陸續接補償安置通知'; NPTKP19900731 '九龍城道友化整為零仍在騷擾住戶及商戶...美沙酮中心' (the district, not only the City); NPTKP19910205 elderly residents visit the elderly flats of 彩霞邨; NPTKP19820518 a body in a camphor chest after a quarrel over a television; NPTKP19830508 '窮家床板也有人偷竊'; NPTKP19740619 flood, '九龍城砦一度水深四五呎'. 1970-1975 batch reads also gave fires (1971-04-26, 1971-05-24, 1972-12-03, 1973-01-09, 1973-10-26 西成路, 1974-02-10), a balcony collapse (1972-08-22), drug laboratories on 老人街 (1975-04) and murders (1975); their issues were not confirmed by phrase. Warning: a batch read of several records through the search API can put a headline under the wrong identifier; confirm each one with an exact-phrase query or the item record. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Internet Archive, item set NPTKP (大公報 Ta Kung Pao, Hong Kong, scanned issues, uploaded by a private user, collection 'china-mail'), advanced-search query of the 'description' field for 城寨, 城砦 or 寨城, 1970-1991, run 2026-11-20. https://archive.org/advancedsearch.php?q=identifier%3ANPTKP19*+AND+date%3A%5B1984-01-01+TO+1991-12-31%5D+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=400&sort%5B%5D=identifier+asc&output=json
+- **Class:** primary (A list of headlines of the time (1970-1991), as OCR metadata of the scans. The list itself is a finding aid made in 2023 by the uploader; the headlines in it are primary. It belongs in the press folder as a lead list.)
+- **Date of the record:** headlines of 1970-03-26 to 1991-12-05; metadata uploaded 2023
+- **Files:**
+  - `top-zh-press-34-advancedsearch-0f12fd5e.php` (in `local/`, not in git): archive.org search result (JSON) of the 1984-1991 大公報 issues whose description names the City, with identifiers, dates and OCR headline lists (143 issues); https://archive.org/advancedsearch.php?q=identifier%3ANPTKP19*+AND+date%3A%5B1984-01-01+TO+1991-12-31%5D+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=400&sort%5B%5D=identifier+asc&output=json; 2435425 bytes; SHA-256 `8f8c8e4933afa5dc6c58c313f66b1255c02adb8f94ccddcf2edef03751b9c05a`; licence: no statement for the metadata on archive.org; papers © 大公報 (https://archive.org/details/NPTKP19861208)
+  - `top-zh-press-34-advancedsearch-d7d24bca.php` (in `local/`, not in git): the same search for 1970-1983 (69 issues); https://archive.org/advancedsearch.php?q=identifier%3ANPTKP19*+AND+date%3A%5B1970-01-01+TO+1983-12-31%5D+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=400&sort%5B%5D=identifier+asc&output=json; 871714 bytes; SHA-256 `26e7c88d7fd3bcfb6be40b920b489ee3986d6db2daf7526b21fee18c31a61f59`; licence: no statement for the metadata on archive.org; papers © 大公報 (https://archive.org/details/NPTKP19830820)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org item NPTKP19861208 (issue of 1986-12-08), metadata 'description' (OCR headline list) | The issue of 8 December 1986 reports a third-alarm fire (三級火) in a home in the City. The OCR line runs this headline together with a gas explosion at 藍田邨. | "城寨一住宅三級火" (A third-alarm fire at a residence in the City) |
+| archive.org item NPTKP19860716 (issue of 1986-07-16), metadata 'description' (OCR headline list) | Police broke up a drug distribution point in a unit on 東頭村道 (the repo writes Tung Tau Tsuen Road (東頭村道)) in the City, seized one pound of heroin and arrested a man (reported 16 July 1986). | "在城砦東頭村道一單位警方破毒品分銷處搜獲一磅海洛英並拘一男子" (At a unit on 東頭村道 in the City, police broke a drug distribution point, seized one pound of heroin and arrested a man.) |
+| archive.org item NPTKP19860601 (issue of 1986-06-01), metadata 'description' (OCR headline list) | A Basic Law consultation office for the City opened, with a panel of consultants. A consultant was on duty every Sunday to advise the kaifong (reported 1 June 1986). | "城砦關注基本法諮詢處昨成立顧問團聯絡街坊逢星期日有顧問當值提供諮詢服務" (The City Basic Law concern consultation office was set up yesterday; a panel of consultants liaises with residents, with a consultant on duty every Sunday.) |
+| archive.org item NPTKP19850827 (issue of 1985-08-27), metadata 'description' (OCR headline list) | After a day of heavy rain, the water inside the City was knee-deep (reported 27 August 1985). | "昨日連場大雨發生多宗意外城砦之內水深及膝" (Yesterday's continuous heavy rain caused many accidents; inside the City the water was knee-deep.) |
+| archive.org item NPTKP19851107 (issue of 1985-11-07), metadata 'description' (OCR headline list) | 廖本懷 said that the government would deal with the sanitation problem inside the City soon, and could first take it to the Sino-British Joint Liaison Group (reported 7 November 1985). | "廖本懷昨日表示城砦內衞生問題港府短期內處理並可能先交中英聯絡組討論" (廖本懷 said yesterday that the government will deal with the sanitation problem in the City shortly and may first refer it to the Sino-British Liaison Group.) |
+| archive.org item NPTKP19850301 (issue of 1985-03-01), metadata 'description' (OCR headline list) | INFERRED: Two men were jailed for one year for sexual acts (胡混) in a public toilet of the City; the judge said that consent did not make it legal (reported 1 March 1985). | "在城寨公廁胡混兩男子入獄一年法官說出於自願也犯法" (Two men who 'messed around' in a City public toilet jailed one year; judge says it is an offence even if voluntary.) |
+| archive.org item NPTKP19840626 (issue of 1984-06-26), metadata 'description' (OCR headline list) | The outer wall of a kitchen of a flat in the City suddenly fell, perhaps from long neglect; nobody was hurt (reported 26 June 1984). | "城寨一住宅單位昨突塌廚房外牆疑日久失修所致幸無傷人" (A kitchen outer wall of a residential unit in the City suddenly collapsed yesterday, probably from long disrepair; luckily no one was hurt.) |
+| archive.org item NPTKP19870116 (issue of 1987-01-16), metadata 'description' (OCR headline list) | After the clearance survey had begun, more than 8,000 households and more than 28,000 people had registered, and there were 829 commercial units (reported 16 January 1987). | "城砦住戶續調查已登記逾八千戶二萬八千多人商業單位則共有八百二十九個" (The survey of City households continues: over 8,000 households and 28,000-odd people registered; commercial units total 829.) |
+| archive.org item NPTKP19870211 (issue of 1987-02-11), metadata 'description' (OCR headline list) | The clearance committee repeated that people who moved in after the survey day were not re-housed: 30 cases moved in after 14 January 1987. Some owners raised rents to force out old tenants and take new ones (reported 11 February 1987). | "三十宗個案於上月十四日後遷進部份業主加租迫走舊住客招新客" (30 cases moved in after the 14th of last month; some owners raised rents to force out old tenants and take in new ones.) |
+| archive.org item NPTKP19870215 (issue of 1987-02-15), metadata 'description' (OCR headline list) | The buildings were crowded and had no anti-burglary measures; burglaries and robberies in the City were still frequent, and the police added patrols (reported 15 February 1987). | "樓宇擠迫無防盜措施城寨爆竊搶劫仍頻警方已加派人手巡邏防止罪案" (Buildings crowded with no burglary precautions; burglary and robbery in the City still frequent; police have added patrols.) |
+| archive.org item NPTKP19870610 (issue of 1987-06-10), metadata 'description' (OCR headline list) | The City's dentists asked to keep working after the clearance; their work was mainly fitting false teeth, fillings and cleaning, and they offered to work as a group (reported 10 June 1987). | "城寨牙醫盼續營生以鑲牙補牙洗牙為主集體經營" (City dentists hope to continue their living, mainly fitting, filling and cleaning teeth, operating collectively.) |
+| archive.org item NPTKP19870619 (issue of 1987-06-19), metadata 'description' (OCR headline list) | The City's water suppliers asked for HK$200,000 compensation for each well. They agreed to keep supplying water until all residents had left. The City had 60 wells (reported 19 June 1987). | "城寨供水商晤清拆委員要求每口井賠償廿萬元答應繼續供水直至城寨民民全部遷出為止目前區內有水井六十口" (City water suppliers met clearance committee members, asked $200,000 per well, agreed to keep supplying until all residents leave; there are now 60 wells.) |
+| archive.org item NPTKP19870615 (issue of 1987-06-15), metadata 'description' (OCR headline list) | One option of the government: owners could get full market value and, if they bought a flat, a special allowance for the gap between City prices and nearby prices (reported 15 June 1987). | "業主除得十足市值賠償外若想買樓還會有特別津貼彌補城寨樓價與附近樓價差距" (Besides full market-value compensation, owners wishing to buy a flat would get a special allowance to cover the gap between City and nearby property prices.) |
+| archive.org item NPTKP19870816 (issue of 1987-08-16), metadata 'description' (OCR headline list) | A violent attack in the City wounded a shop owner (reported 16 August 1987). | "城寨有血案店主被擊傷" (Bloody case in the City: shop owner wounded.) |
+| archive.org item NPTKP19870922 (issue of 1987-09-22), metadata 'description' (OCR headline list) | An eight-year-old boy, one of four siblings who took a short cut on a rainy night, fell into a water pit and drowned at the building site of the City's rest garden (休憩公園) (reported 22 September 1987). The headline does not say if the site was inside the City. | "四姊弟雨夜走捷徑八齡童墮水坑溺死城寨休憩公園建築地盤發生慘劇" (Four siblings take a short cut on a rainy night; boy, 8, falls into water pit and drowns; tragedy at the City rest-garden building site.) |
+| archive.org item NPTKP19871211 (issue of 1987-12-11), metadata 'description' (OCR headline list) | The clearance would be done in three phases over four years; the government set aside HK$2.7 billion for compensation and re-housing; owners would get cash and priority to buy Home Ownership flats (reported 11 December 1987). | "四年內執行分三期清拆當局撥款二十七億賠償安置城寨居民業主將可獲現金補償及優先購居屋" (Three-phase clearance within four years; $2.7 billion allocated for compensation and rehousing; owners get cash and priority for HOS flats.) |
+| archive.org item NPTKP19880420 (issue of 1988-04-20), metadata 'description' (OCR headline list) | A small fire in the City was raised to a fourth alarm because the buildings were dense and the passages narrow. Firemen rescued more than 100 people, and a roast-meat shop (燒臘店) burned badly (reported 20 April 1988). | "環境稠密通道狹窄灌救困難城寨小火列為四級消防員救出逾百人燒臘店嚴重焚毀" (Dense surroundings, narrow passages, hard to fight: small City fire raised to fourth alarm; firemen rescue over a hundred; roast-meat shop badly burned.) |
+| archive.org item NPTKP19880701 (issue of 1988-07-01), metadata 'description' (OCR headline list) | A boy fell from the 12th floor on 老人街 (the repo writes Lo Yan Street (老人街)) in the City and was saved by a flower rack (花架) at the 5th floor (reported 1 July 1988). | "男童十二樓墮下五樓花架救一命城寨老人街昨日出現驚險鏡頭" (Boy falls from 12th floor, 5th-floor flower rack saves his life: a thrilling scene on 老人街 in the City yesterday.) |
+| archive.org item NPTKP19880904 (issue of 1988-09-04), metadata 'description' (OCR headline list) | Owners of clinics that closed for the clearance could get HK$340,000; the City's dentists and doctors asked for HK$600,000 (reported 4 September 1988). | "城寨拆遷診所東主可獲三十四萬賠償城寨牙醫及醫生要求賠六十萬" (Owners of City clinics removed by the clearance can get $340,000; City dentists and doctors ask for $600,000.) |
+| archive.org item NPTKP19881108 (issue of 1988-11-08), metadata 'description' (OCR headline list) | The animal welfare society (防虐會) began to take in cats and dogs in the City; on the first day it got only four dogs and two cats (reported 8 November 1988). | "防虐會城寨接收貓狗首天僅收到四狗兩貓" (The SPCA collects cats and dogs in the City; on the first day it received only four dogs and two cats.) |
+| archive.org item NPTKP19901104 (issue of 1990-11-04), metadata 'description' (OCR headline list) | Police raided an abandoned 炮樓 in the City that was used as a gambling den and arrested 17 men and women (reported 4 November 1990). | "城寨荒廢炮樓被人用作賭檔警方昨晚掃蕩拘17男女" (An abandoned 炮樓 in the City used as a gambling den; police raided it last night and arrested 17 men and women.) |
+| archive.org item NPTKP19830508 (issue of 1983-05-08), metadata 'description' (OCR headline list) | Thieves stole bed boards (床板) from poor families in the City (reported 8 May 1983). | "九龍城寨發生怪事窮家床板也有人偷竊" (Strange happening in the City: even poor families' bed boards are stolen.) |
+| archive.org item NPTKP19820518 (issue of 1982-05-18), metadata 'description' (OCR headline list) | A man gave himself up and led police to a body hidden in a camphor-wood chest (樟木槓) in the City; the dead man and the suspect had fought over the use of a television (reported 18 May 1982). | "九龍城寨樟木槓藏屍刀傷卅餘處頸部幾斷據說死者與疑兇因爭用電視機曾起打鬥" (Body hidden in a camphor-wood chest in the City, over thirty knife wounds, neck nearly severed; the dead man and suspect reportedly fought over using the television.) |
+
+- **Leads:**
+  - Ta Kung Pao (大公報) 1985-11-07 (archive.org NPTKP19851107): 廖本懷 on sanitation in the City. Not in the repo.
+  - Ta Kung Pao (大公報) 1987-06-15 (NPTKP19870615): compensation options with a special allowance for the price gap. Not in the repo.
+  - Ta Kung Pao (大公報) 1987-09-22 (NPTKP19870922): boy drowned at the rest-garden building site. Not in the repo.
+  - Ta Kung Pao (大公報) 1984-05-22 (NPTKP19840522): drug history, the City as a selling black spot about 1974. Not in the repo.
 ### gap-builders-demolition-park-3: 城砦兩超高樓宇法官昨預封閉令 (OCR of the headline)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -96,20 +137,36 @@ testimony given later: tag its facts "retrospective (year)".
   - The developer's request to the PWD (July 1975) to review the demolition order on No. 40 Sai Shing Road, and the PWD reply.
 ### top-zh-press-27: 市署昨派出四十人清掃九龍城寨街巷許家屯本月七日訪城寨對衞生環境表示關注市署於九日與福利會商定清掃市署說過去每兩月掃除一次此次隔一個月
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1983-08-20
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on the cleaning of the City.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19830820
-- **Other links:** https://archive.org/metadata/NPTKP19830820/metadata/description
-- **Proof that it exists:** Item record NPTKP19830820; the phrase 市署昨派出四十人 matches only this issue.
-- **What it gives (finder's note, not checked):** The Urban Services Department sends 40 men to clean the lanes of the City, after 許家屯 visited on 7 Aug 1983 and the department agreed the cleaning with the welfare association on 9 Aug. The department says it cleaned the City once every two months before; this time after one month.
-- **Notes:** The item-record read gave 蠅生 for 衞生 (a misread); the batch read gave 衞生. A batch read of NPTKP19830808 gave '許家屯昨往訪九龍城詢問城寨管理及居民生活情况對居民生活上許多不便表關切' (not confirmed). gap-builders lists NPKS19830820 (工商日報, same day) in a dead end only. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈市署昨派出四十人 清掃九龍城寨街巷〉, subheads 〈許家屯本月七日訪城寨，對衞生環境表示關注。市署於九日與福利會商定清掃。市署說過去每兩月掃除一次，此次隔一個月。〉, 20 August 1983, p.4 (第一張 第四版), with photo. Internet Archive item NPTKP19830820, leaf n3, https://archive.org/details/NPTKP19830820
+- **Class:** primary (A news report of the time (1983) with no named writer. 大公報 was the main pro-Beijing paper in Hong Kong; it gives weight to the visit of 許家屯 of Xinhua. Before the peak period (1985-1993), but it gives the cleaning routine of the Urban Services Department and the water problem of the early 1980s.)
+- **Date of the record:** 1983-08-20 (events of 7 Aug, 9 Aug and 19 Aug 1983)
+- **Files:**
+  - `top-zh-press-27-n3-b0aac345.jpg` (in `local/`, not in git): Ta Kung Pao 20 Aug 1983, page 4 (leaf n3), full-size page image (3517x4768 px) with the City article and photo; https://archive.org/download/NPTKP19830820/page/n3.jpg; 4712775 bytes; SHA-256 `0e77ce7aca8f752cf9a8f91169f12b6d17b616547f214013fad3da8268ecc6ff`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19830820)
+  - `top-zh-press-27-NPTKP19830820-c2bdb14c.pdf` (in `local/`, not in git): the whole issue, page-image PDF (8,587,495 bytes); https://archive.org/download/NPTKP19830820/NPTKP19830820.pdf; 8587495 bytes; SHA-256 `190162ed411a49f41c3c433149f7aee5c096b65bcaa50a98cd80edab80461a39`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19830820)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 1 | INFERRED: On 19 August 1983 the Urban Services Department (市政署) cleaned in the City. Its workers cleared the refuse that was piled up in the streets and lanes. The work was to continue on 20 August. The date comes from 'yesterday' in the paper of 20 August. | "市政署昨日在九龍城寨進行清潔行動，清理街巷堆積的垃圾。清潔行動將於今日繼續進行。" (Yesterday the Urban Services Department carried out a cleaning operation in Kowloon Walled City, clearing refuse piled up in the streets and lanes. The operation will continue today.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 5 | The department sent 40 cleaning workers, with 3 refuse collection vehicles and 2 water wagons (水車). | "市政署昨晨派出四十名清潔工人，配備三輛垃圾收集車和兩部水車到九龍城寨進行清潔行動" (Yesterday morning the Urban Services Department sent forty cleaners, with three refuse collection vehicles and two water wagons, to clean Kowloon Walled City.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 5 | The work started at 9 am. The workers first cleaned the streets around the outside of the City: 東頭邨道 (the repo writes Tung Tau Tsuen Road (東頭村道)) and 東正道 (the repo writes Tung Tsing Road (東正道)). Then they cleared the refuse piled on 龍津道 (the repo writes Lung Chun Road (龍津道)) and 西城道 (the paper writes 西城道; the repo writes Sai Shing Road (西城路)). | "從上午九時開始，先行清理城寨外圍的東頭邨道和東正道，然後清理龍津道和西城道等處堆積的垃圾" (Starting at 9 am, they first cleaned 東頭邨道 and 東正道 on the outer edge of the City, then cleared the refuse piled at 龍津道, 西城道 and other places.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 5 | After the streets, the workers went into the back lanes (後巷) inside the City to clear refuse. | "後又進入城寨內的後巷清理垃圾" (Then they also went into the back lanes inside the City to clear refuse.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 5 | Heavy rain hindered the work. The workers stopped at 3 pm and were to start again at 9 am the next day. | "清潔行動受到大雨影響，至下午三時暫停，今日上午九時繼續" (The cleaning was affected by heavy rain, stopped at 3 pm, and resumes at 9 am today.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 2 | INFERRED: A vice-chairman (副會長) of the Kai Fong Association (九龍城寨街坊福利事業促進委員會) said that the cleaning was decided at a meeting on 9 August 1983 between the committee and an Urban Services Officer of the department's Kowloon City sub-office. The scan shows the vice-chairman's name as 李偉 plus a third character that looks like 羣 (other repo sources name 李偉羣 as a leader of this committee), and the officer as 黃□松 (middle character not readable). The officer's title is 副市政主任. | "昨日的清潔行動，是市政署九龍城分署副市政主任黃□松於本月九日與福利會商議後決定的" (Yesterday's cleaning was decided after Deputy Urban Services Officer 黃□松 of the department's Kowloon City sub-office met the welfare association on the 9th of this month.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 3 | 許家屯, director of the Hong Kong branch of the Xinhua News Agency (新華社香港分社), visited the City on 7 August 1983. He showed concern about the poor sanitation inside the City. | "新華社香港分社社長許家屯曾於本月七日訪問九龍城寨，對城寨內的衞生環境問題表示關注" (Xinhua Hong Kong branch director 許家屯 visited Kowloon Walled City on the 7th of this month and expressed concern about the sanitary conditions inside.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 4 | A department spokesman said that in 1983 the department had cleaned the City in February, April and July. The last cleaning before this one was on 22 July 1983, less than one month earlier. | "對九龍城寨的清潔行動，曾在今年二月、四月和七月進行，對上一次是七月二十二日" (Cleaning operations in Kowloon Walled City were carried out this year in February, April and July; the previous one was on 22 July.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 4 | The spokesman said that the department swept the City on average once every two months. | "掃除平均每兩月一次" (The sweeping is on average once every two months.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 6 | A resident surnamed 梁 said that sanitation in the City had always been poor. He said that the government did clean, but the sanitation did not get much better. | "城寨內的衞生環境一向很差，港府雖有進行清掃，但衞生環境沒有多大改善" (Sanitation inside the City has always been very poor; although the government does clean, there has not been much improvement.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 6 | The resident 梁 linked the poor sanitation to the lack of water taps. He said that taps could not be fitted directly into the homes, and that a pipe which a resident connected himself had too little water pressure. | "水喉不能直接裝入屋，即使自行接駁水管，也會出現水壓不足的問題" (Taps cannot be installed directly into homes; even if you connect a water pipe yourself, there is the problem of insufficient water pressure.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 6 | The resident 梁 proposed that the general cleaning be done at short intervals. | "他建議大掃除行動應每隔一段短時間便進行一次" (He suggested that the general clean-up be carried out at short intervals.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 7 | 劉子勤, secretary (秘書) of the Kai Fong Association, said that the streets outside the City had three street standpipes (街喉), and that only one main water pipe went into the City. | "城寨外街道有三條街喉，而進入城寨的主要水管只有一條" (The streets outside the City have three standpipes, and there is only one main water pipe entering the City.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 7 | 劉子勤 said that the standpipes which the Water Supplies Department (水務局, as the paper writes it) had put in many places in the area did not meet the needs of the residents. | "即使水務局早已在區內多處地方設有街喉，仍不能滿足居民的需要" (Even though the Water Supplies Department has long had standpipes in many places in the area, they still cannot meet the residents' needs.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4 (第四版), archive.org NPTKP19830820 leaf n3, para. 7 | INFERRED: In early July 1983 the Water Supplies Department told the welfare committee that piping water into the homes had technical difficulties, but that it could add two standpipes in the area. The month comes from 'early last month' in the paper of 20 August. | "謂裝喉入屋存在技術上困難，惟可在區內增設兩條街喉，以改善供水情況" (It said that installing pipes into homes had technical difficulties, but that it could add two standpipes in the area to improve the water supply.) |
+| Ta Kung Pao (大公報) 20 Aug 1983, p.4, photo and caption, top centre | The photo shows Urban Services staff in a street lifting refuse into the back of a lorry, with shop signs behind them. Its caption says that they cleared refuse in the City the day before. | "市署人員昨在九龍城寨清理垃圾" (Urban Services staff clearing refuse in Kowloon Walled City yesterday.) |
+
+- **Leads:**
+  - Kung Sheung Evening News (工商晚報) 1983-08-09, 1983-08-16, 1983-08-18 and 1983-08-19 (archive.org NPKSE19830809, NPKSE19830816, NPKSE19830818, NPKSE19830819): the City 'suddenly a hot topic'; police say its public order is no worse than other districts; Financial Secretary 夏鼎基 tours Kowloon City and looks at the City from a rooftop but does not go in. Not in the repo.
+  - The Urban Services Department record of its City cleanings of February, April and 22 July 1983 (Kowloon City sub-office): not located.
 ### gap-street-address-search-9: 華僑日報 and 工商日報 issues, 1947-1991, whose headline/keyword list names a street of the City (大井街, 老人街, 龍津後街, 社公街, 龍津道, 西城路) but not 城寨, 城砦 or 寨城 (archive.org query, 57 issues)
 
 - **Status:** Partly read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19. I ran the three archive.org queries again on 2026-11-18: the main query gives 57 issues, the 龍津道 query 20 and the 1984-1993 edge-road query 29, as the finder said. I got the headline list (metadata description) of each of the 86 hits and checked the lines with a street name. I read one hit in full from the page scan: Wah Kiu Yat Po of 30 Dec 1963 (leaf n6), a fire on Lung Chun Road and Sz Kung Street with house numbers. I read two more hits in full for gap-street-address-search-8 (NPWK19590217, NPKS19590219). The other hits are known only from their headline lists, which are the paper's headlines as the uploader typed or OCRed them, not article text. I confirm the finder's false positives: NPWK19710809 is 紅磡大井街 (Hung Hom); NPKS19800811, NPWK19800210, NPWK19681201, NPWK19720303, NPWK19730701 and NPWK19740810 have no street line in the list. Most hits of the 1984-1993 query are about Carpenter Road (賈炳達道) outside the City.
@@ -483,36 +540,51 @@ testimony given later: tag its facts "retrospective (year)".
   - The High Court certificate that the owner of Nos. 40-42 Sai Shing Road (東年置業有限公司) asked for in June 1975, on the height zone of the building.
 ### top-zh-press-31: 因超過機場條例高度限制九龍城寨一幢樓宇加建部分限期拆卸業主願拆住客稱要搭帳幕度宿
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1981-05-16
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on a building in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19810516
-- **Other links:** https://archive.org/metadata/NPTKP19810516/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 機場條例高度限制 matches only NPTKP19810516.
-- **What it gives (finder's note, not checked):** The added floors of a building in the City break the airport height limit and must come down by a set date; the owner agrees, and the tenants say they will have to sleep in tents (May 1981).
-- **Notes:** Batch read, issue confirmed by exact phrase. The article can name the building. The structure of the repo is frozen; this is context only. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈因超過機場條例高度限制 九龍城寨一幢樓宇加建部分限期拆卸〉, subhead 〈業主願拆住客稱要搭帳幕度宿〉, 16 May 1981, p.5 (第五版). Internet Archive item NPTKP19810516, leaf n4, https://archive.org/details/NPTKP19810516
+- **Class:** primary (A news report of the time (1981), with the words of a government spokesman. Before the peak period. The structure of the repo is frozen: use it as context on rooftop additions and the height limit.)
+- **Date of the record:** 1981-05-16 (notice posted on 14 May 1981)
+- **Files:**
+  - `top-zh-press-31-n4-87c203ab.jpg` (in `local/`, not in git): Ta Kung Pao 16 May 1981, page 5 (leaf n4), full-size page image with the City article; https://archive.org/download/NPTKP19810516/page/n4.jpg; 3637306 bytes; SHA-256 `c7993dd28375e74c01e124e63135a8653f6ea6cb4fb7b18ae8ec608366555a6b`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19810516)
+  - `top-zh-press-31-NPTKP19810516-24794c77.pdf` (in `local/`, not in git): the whole issue, page-image PDF (7,336,934 bytes); https://archive.org/download/NPTKP19810516/NPTKP19810516.pdf; 7336934 bytes; SHA-256 `b27e177afe2a1fee6da0748352db91edb13a25616c1d6e4562dd626952d2f679`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19810516)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 1 | INFERRED: On 14 May 1981 the government posted a notice on a finished building in the City. The notice said that the government would ask a court for a closure order (封閉令) because the building's added part broke the height limit of the airport ordinance. The paper names the ordinance only in Chinese (香港機場（管制障礙物）條例); the GRS file title HKRS924-1-5 in the repo gives its English name, Hong Kong Airport (Control of Obstructions) Ordinance. The date comes from 'the day before yesterday' in the paper of 16 May. | "由於超過香港機場（管制障礙物）條例實施的高度限制，港府於前日張貼告示，宣佈要向法庭申請發出封閉令" (because it exceeds the height limit enforced under the Hong Kong Airport (Control of Obstructions) Ordinance, the government posted a notice the day before yesterday announcing it would apply to the court for a closure order) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 2 | The part to be closed was the addition on the roof (天台) of No. 18 老人街 (the repo writes Lo Yan Street (老人街)). | "須予封閉的建築物位於老人街十八號天台的加建部分" (The structure to be closed is the added part on the roof of No. 18 老人街.) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 2 | The government gave the owner 10 days to pull down the addition. If not, after the court gave the closure order, the government could start work to lower the height of the building. | "當局限令業主於十日內將加建部分拆卸，否則法庭頒發封閉令後，當局可動工將該樓宇高度減低" (The authorities ordered the owner to demolish the addition within ten days; otherwise, after the court grants a closure order, the authorities may start work to reduce the building's height.) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 3 | The government was to apply for the closure order on 25 May 1981. | "港府將於本月二十五日辦理申請封閉令手續" (The government will apply for the closure order on the 25th of this month.) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 4 | A government spokesman said that the building was very near the air route of the aircraft that land at and take off from Kai Tak (啓德機場). | "該幢樓宇與在啓德機場升降的飛機所經過的空中路線距離甚近" (The building is very close to the air route of aircraft landing and taking off at Kai Tak Airport.) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 5 | The spokesman said that the height limits follow international standards, to keep aircraft and the people on the ground safe, thus they must be obeyed. | "須符合國際協議的標準，以保障飛機及地面居民安全，因此這些高度限制是必須遵守的" (must meet the standards of international agreements, to protect the safety of aircraft and residents on the ground; thus these height limits must be observed) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 6 | The spokesman said that the part of the building that was not above the permitted height would not be affected by the closure order. | "該樓宇沒有超出規定高度的部份，將不受封閉令影響" (The part of the building that does not exceed the permitted height will not be affected by the closure order.) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 7 | The owner said that he was willing to pull down the addition. | "他們願意將樓宇的加建部分拆卸" (they are willing to demolish the addition to the building) |
+| Ta Kung Pao (大公報) 16 May 1981, p.5 (第五版), archive.org NPTKP19810516 leaf n4, para. 7 | The tenants of the addition said that rents elsewhere were too high. After the demolition they would put up tents at the same address and sleep there. | "由於其他地方租金太貴，他們在加建樓宇拆卸後，將會在上址搭帳幕度宿" (Because rents elsewhere are too expensive, after the addition is demolished they will pitch tents at the same address to sleep.) |
+
+- **Leads:**
+  - Kung Sheung Evening News (工商晚報) 1981-05-16 (archive.org NPKSE19810516): the same notice, with a photo of the rooftop of a building on 老人街 compared with the heights of its neighbours ('圖爲城砦老人街一樓宇天台石墨圖右與鄰近樓宇高度比較'). Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1975-06-08 and 1975-07-03 (NPKSE19750608, NPKSE19750703): two City buildings above the standard height closed under the airport law, and the court's closure orders. NPKSE19750608 is not in the repo.
 ### top-zh-press-30: 微波焗爐用作製毒城砦製毒機關破獲搜出毒品值三百萬元捕兩男女
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1982-04-15
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on a drug laboratory in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19820415
-- **Other links:** https://archive.org/metadata/NPTKP19820415/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 微波焗爐用作製毒 matches only NPTKP19820415.
-- **What it gives (finder's note, not checked):** Police break a drug laboratory in the City that used a microwave oven; drugs worth HK$3 million seized; a man and a woman arrested (Apr 1982).
-- **Notes:** Batch read, issue confirmed by exact phrase. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈微波焗爐用作製毒 城砦製毒機關破獲〉, subhead 〈搜出毒品值三百萬元捕兩男女〉, 15 April 1982, p.6 (第二張 第六版). Internet Archive item NPTKP19820415, leaf n5, https://archive.org/details/NPTKP19820415
+- **Class:** primary (A news report of the time (1982), from a police press conference. Before the peak period.)
+- **Date of the record:** 1982-04-15 (raid on 13 Apr 1982; press conference on 14 Apr 1982)
+- **Files:**
+  - `top-zh-press-30-n5-7f0e88ce.jpg` (in `local/`, not in git): Ta Kung Pao 15 Apr 1982, page 6 (leaf n5), full-size page image with the City article (top centre); https://archive.org/download/NPTKP19820415/page/n5.jpg; 3494753 bytes; SHA-256 `116fecfa739793cc4bcfd33d6e8348500c618f199cfa10c4a913a90355fcfa4c`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19820415)
+  - `top-zh-press-30-NPTKP19820415-2a05b77c.pdf` (in `local/`, not in git): the whole issue, page-image PDF (9,947,701 bytes); https://archive.org/download/NPTKP19820415/NPTKP19820415.pdf; 9947701 bytes; SHA-256 `1da8f786aa7de9157c6783ab20f5fbedfadb2169b3512bb68c657410e51fb83a`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19820415)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 1 | INFERRED: On 13 April 1982 the police Narcotics Bureau (毒品調查科) broke up a drug-making laboratory in the City. They seized a set of new drug-making tools and drugs worth about HK$3 million, and arrested a man and a woman. The date comes from 'the day before yesterday' in the paper of 15 April. | "警方毒品調查科前日在九龍城砦破獲一個製毒機關，搜出一批新型製毒工具及價值約三百萬元的毒品" (The police Narcotics Bureau the day before yesterday broke a drug-manufacturing set-up in Kowloon Walled City, seizing a batch of new-type drug-making tools and drugs worth about $3 million.) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 2 | INFERRED: The police showed the drugs and tools at a press conference at Police Headquarters on 14 April 1982. | "警方昨日在香港警察總部舉行記者招待會，講述破案經過，並展示搜獲的毒品和製毒工具" (Yesterday the police held a press conference at Hong Kong Police Headquarters, described the case and displayed the seized drugs and tools.) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 3 | A Narcotics Bureau inspector, 梁志彬, said that the tools included a microwave oven. The makers used it to dry the drugs. He said this was more than twice as fast as the old method and gave off less sour smell: a new way to make drugs. | "比起傳統的方法，快了一倍有多，而且發出的酸味更少，可以說是新式的製毒方法" (Compared with the traditional method it is more than twice as fast, and it gives off less sour smell; it can be called a new drug-making method.) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 4 | INFERRED: The police had watched this drug-making group for two months. A reliable tip said that the group would use the Easter holidays to make drugs. Easter Sunday was 11 April 1982; the raid date that the article gives (13 April) is after the holidays, thus the report and the dates do not fully agree. | "獲悉他們將利用復活節假期製煉毒品" (learned that they would use the Easter holidays to refine drugs) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 4 | At 5:30 pm that day the police searched a unit on 龍津後街 (the repo writes Lung Chun Back Road (龍津後街)) in the City. The article does not give the house number or the floor. | "便在當日下午五時半開始採取行動，搜查九龍城砦龍津後街一單位" (and at 5:30 pm that day took action, searching a unit on 龍津後街 in Kowloon Walled City.) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 4 | In the unit the police found 1.5 kg of heroin base, 6.5 kg of No. 3 heroin and 80 pieces of drug-making equipment, among them the microwave oven and a mixer. | "一點五公斤海洛英鹼，六點五公斤三號海洛英及八十件製毒工具，其中包括微波焗爐及攪拌器" (1.5 kg of heroin base, 6.5 kg of No. 3 heroin and 80 drug-making tools, including a microwave oven and a mixer) |
+| Ta Kung Pao (大公報) 15 Apr 1982, p.6 (第六版), archive.org NPTKP19820415 leaf n5, para. 5 | The arrested man was about 50 years old; the police thought he was the drug-making master (製毒師傅). The arrested woman was 36; the police thought she was his assistant. | "被拘捕的男子約五十歲，疑是製毒師傅，被捕女子年三十六歲，疑是該男子的助手" (The arrested man, about 50, is suspected to be the drug-making master; the arrested woman, 36, is suspected to be his assistant.) |
+
+- **Leads:**
+  - Kung Sheung Daily News (工商日報) 1982-04-21 (archive.org NPKS19820421): keywords '城寨 毒品案'; perhaps a later report on this case (not checked).
 ### top-services-14: 九龍城寨西頭村今晨發生大火釀一死四傷 / 九龍城砦二級火警 (工商晚報 1983-03-25)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -586,20 +658,26 @@ testimony given later: tag its facts "retrospective (year)".
   - Kung Sheung Evening News (工商晚報) 24 April 1983, page 2 (archive.org NPKSE19830424, leaf n1): 「九龍城三級火 兩廠房遭焚燬」, with the caption 「九龍城砦西頭村兩個織染廠大火廠內棉紗及器材均付諸一炬」: a third-alarm fire at two weaving and dyeing factories in 西頭村 of the City (not read)
 ### top-zh-press-28: 城砦街坊福利促進委員會聯歡慶祝國慶及會慶張一帆致詞盼港府解決區內供水問題
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1983-09-29
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on the residents' association.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19830929
-- **Other links:** https://archive.org/metadata/NPTKP19830929/metadata/description
-- **Proof that it exists:** Item record NPTKP19830929; the phrases 解決區內供水問題 and 張一帆致詞 each match only this issue.
-- **What it gives (finder's note, not checked):** At the National Day and anniversary dinner of the City's Kaifong Welfare Promotion Committee, 張一帆 asks the government to solve the water supply problem of the area (Sep 1983).
-- **Notes:** The role of 張一帆 is not given in the headline. The batch read gave 委會 and 聯歡聚餐; the item record gave 委員會 and 聯歡; the title follows the item record. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈城砦街坊福利促進委會聯歡聚餐祝國慶及會慶〉, subhead 〈張一帆致詞盼港府解決區內供水問題〉, 29 September 1983, p.7 (第二張 第七版). Internet Archive item NPTKP19830929, leaf n6, https://archive.org/details/NPTKP19830929
+- **Class:** primary (A news report of the time (1983), in a pro-Beijing paper, about a pro-Beijing kaifong body. Before the peak period; it gives the committee's founding year (by calculation) and its chairman in 1983.)
+- **Date of the record:** 1983-09-29 (dinner on the evening of 28 Sep 1983)
+- **Files:**
+  - `top-zh-press-28-n6-1f7c53de.jpg` (in `local/`, not in git): Ta Kung Pao 29 Sep 1983, page 7 (leaf n6), full-size page image with the City article; https://archive.org/download/NPTKP19830929/page/n6.jpg; 3784497 bytes; SHA-256 `f16b480fa7e82c619fdd021d437393a8dfad99b4d77203e1b5f9b039e78ae304`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19830929)
+  - `top-zh-press-28-NPTKP19830929-ca2833d5.pdf` (in `local/`, not in git): the whole issue, page-image PDF (9,083,881 bytes); https://archive.org/download/NPTKP19830929/NPTKP19830929.pdf; 9083881 bytes; SHA-256 `6175cca360655decc5c4dcc0ee50bd3e455100d932239b77843b745d2ce2087b`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19830929)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 1 | INFERRED: On the evening of 28 September 1983 the Kai Fong Association (九龍城砦街坊福利事業促進委員會) held a dinner at the 富榮華酒樓 restaurant in Kowloon City (九龍城, the district outside the City). The date comes from 'last night' in the paper of 29 September. | "九龍城砦街坊福利事業促進委員會，昨晚在九龍城富榮華酒樓舉行聯歡聚餐" (The Kowloon Walled City Kaifong Welfare Promotion Committee held a celebration dinner last night at the 富榮華 restaurant in Kowloon City.) |
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 1 | INFERRED: The dinner celebrated the 34th anniversary of the People's Republic of China and the 20th anniversary of the association. By calculation the association was founded in 1963. This agrees with City of Darkness Revisited p.178, which gives 1 May 1963. | "慶祝中華人民共和國成立三十四周年暨該會成立二十周年" (to celebrate the 34th anniversary of the founding of the PRC and the 20th anniversary of the founding of the association) |
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 2 | 張一帆 was the chairman (主席) of the committee in September 1983. | "該會主席張一帆在會上致詞說" (The committee's chairman 張一帆 said in his speech) |
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 2 | INFERRED: In his speech 張一帆 praised the progress of China. He said that the kaifong of the City, like the people outside the City, supported the motherland taking back sovereignty over Hong Kong, including the right to govern (治權). A watermark covers some characters of this passage. | "城外人士一樣擁護祖國收回香港主權包括治權" (like the people outside the City, support the motherland recovering sovereignty over Hong Kong, including the right to govern) |
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 3 | 張一帆 asked the Hong Kong government to show sincerity and to solve quickly the shortage of drinking water (食水) of the City's residents. | "希望港府拿出誠意，盡快解決城砦居民食水缺乏的問題" (He hopes the Hong Kong government will show sincerity and quickly solve the problem of the shortage of drinking water for the residents of the City.) |
+| Ta Kung Pao (大公報) 29 Sep 1983, p.7 (第七版), archive.org NPTKP19830929 leaf n6, para. 4 | The dinner had 25 tables and about 300 people, with a lucky draw. | "昨晚筵開廿五席，約三百人參加，席間還設抽獎助興" (Last night there were 25 tables, about 300 people took part, and a lucky draw was held for fun.) |
+
+- **Leads:**
+  - Ta Kung Pao (大公報) 1984-02-16 (archive.org NPTKP19840216): headline '城砦福利促進委會本周末聚餐'. Not in the repo.
+  - Ta Kung Pao (大公報) 1981-02-22 (NPTKP19810222) '城砦福利會明晚有聯歡' and 1983-12-03 (NPTKP19831203) '城寨兒童今日聯歡'. Not in the repo.
 ### top-press-en-13: The Most Unforgettable Character - Life In Smallest Walled City
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -724,21 +802,23 @@ testimony given later: tag its facts "retrospective (year)".
   - Fire Services records of the fire of 5 November 1959 in Tai Chang Street (大井街), Kowloon Walled City
 ### zh-press-23: 港澳問題剪報索引, 卷六 1963, 乙 [2] 拆遷九龍城寨問題
 
-- **Creator:** Hong Kong Baptist University Library, Special Collections & Archives (Contemporary China Research Clippings Indexes)
-- **Date:** 1963
-- **Kind:** catalogue
-- **Class:** primary (An index of press clippings made at the time; the clippings are primary.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HKBU Library
-- **Link:** https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page55.html
-- **Other links:** https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page54.html, https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page56.html
-- **Proof that it exists:** Page header 'Page 55 - Contemporary China Research Clippings Indexes'; entry 1963-01-18 星島日報 〈港政府拆遷九龍城砦民房　中共提強硬抗議〉 p. 1.
-- **What it gives (finder's note, not checked):** About 40 clippings of Jan-May 1963 on the planned demolition in the City and the PRC protest, from 星島日報, 工商日報, 大公報, 文匯報, 香港時報, 人民日報, SCMP, Hong Kong Standard, China Mail and FEER. Examples: 大公報 1963-01-18 p4 〈世代家園 不能拆遷 九龍城砦老居民訴述處境〉; 星島日報 1963-05-27 p23 〈城砦一學校竟日被搗亂...〉.
-- **Notes:** The clippings themselves are at HKBU Special Collections, to read in person. The index covers Hong Kong and Macau affairs 1950-1973; the table of contents lists no other City section.
-- **Same item in the finder files:** china-5
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Hong Kong Baptist University Library, Special Collections & Archives, Contemporary China Research Clippings Indexes, 港澳問題剪報索引, 卷六 1963 (檔案編號 P1432; 膠卷編號 A151), 乙、對香港關係, [2] 拆遷九龍城寨問題, printed pp. 52-54 (online pp. 54-56). https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page55.html
+- **Class:** secondary (A finding aid made later by a library. It lists primary clippings of 1963 (their headlines are primary). It can stay in the press folder as a lead list or move to secondary-sources/.)
+- **Date of the record:** clippings of 1963-01-18 to 1963-05-31; index compiled later (date not stated)
+- **Files:**
+  - `zh-press-23-page54-8422eda0.html` (in `local/`, not in git): index page 54 (printed p.52), start of section 乙 [2], basic HTML; https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page54.html; 15012 bytes; SHA-256 `2af1ec9ddc87864d392b4861cdde3208c3b7343ad42ca8de566cd9d8e3a548e7`; licence: © HKBU Library; no licence stated on the page (https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page54.html)
+  - `zh-press-23-page55-f3217b47.html` (in `local/`, not in git): index page 55 (printed p.53), section 乙 [2], basic HTML; https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page55.html; 15927 bytes; SHA-256 `79ac2c9d8cc456bf14a572030ce3335527cb6a16e935f06df21eca45e1a054ab`; licence: © HKBU Library; no licence stated on the page (https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page55.html)
+  - `zh-press-23-page56-ec011f69.html` (in `local/`, not in git): index page 56 (printed p.54), end of section 乙 [2], basic HTML; https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page56.html; 15804 bytes; SHA-256 `d78fdf450481cbbb53970cb135ba32864a8d7e12c88bf5cd6eb04a2bfe037d31`; licence: © HKBU Library; no licence stated on the page (https://sys02.lib.hkbu.edu.hk/libsca/pdcc/book_pub/clippingindex1/files/basic-html/page56.html)
+- **Note:** the reader classed the whole item as secondary: its 12 facts are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
+- **Leads:**
+  - Derek Davies, 'The Walled City: Hope Deferred', Far Eastern Economic Review vol. 39 no. 5, 31 Jan 1963, pp. 226-229. Not in the repo.
+  - Far Eastern Economic Review vol. 39 no. 4, 24 Jan 1963, 'Kowloon City'. Not in the repo.
+  - Kung Sheung Daily News (工商日報) 19 Jan 1963 p.6 〈九龍城砦之歷史及歷年交涉之經過〉 (history and negotiations). Not in the repo.
+  - Sing Tao Daily (星島日報) 27 May 1963 p.23 (a City school harassed) and 31 May 1963 p.23 (a mysterious registration notice). The first is named in the repo only as a finder's example.
+  - 工商日報 14, 19, 20 and 25 May 1963 p.4-5: non-pro-Communist residents forced to move. Not in the repo.
+  - Hong Kong Standard 19 Jan 1963 pp. 8 and 11 and 23 Jan 1963 p.1; China Mail 18 Jan 1963 pp. 1 and 10; SCMP 18, 19 and 22 Jan 1963. Not in the repo.
 ### gap-campus-socialwork-press-11: 何始再考慮寨城一學校被人… (string in the headline list)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1237,20 +1317,19 @@ testimony given later: tag its facts "retrospective (year)".
   - Wah Kiu Yat Po (華僑日報) or Kung Sheung Daily News (工商日報) of 19 or 20 December 1975 on the same Preventive Service raids of 18 December 1975 (not checked)
 ### top-zh-press-32: 城寨坊眾學校今舉行運動會
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1975-12-25
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's notice of the time on a school of the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19751225
-- **Other links:** https://archive.org/metadata/NPTKP19751225/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 坊眾學校今舉行運動會 matches only NPTKP19751225.
-- **What it gives (finder's note, not checked):** The kaifong school of the City (城寨坊眾學校) holds its sports day (25 Dec 1975). A batch read of NPTKP19780409 gave '城寨坊眾學校今日舉行酒會' (not confirmed).
-- **Notes:** Batch read, issue confirmed by exact phrase. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈城寨坊眾學校今舉行運動會〉, 25 December 1975, p.8 (第二張 第八版, sports page). Internet Archive item NPTKP19751225, leaf n11, https://archive.org/details/NPTKP19751225
+- **Class:** primary (A short news report of the time (1975). Before the peak period.)
+- **Date of the record:** 1975-12-25
+- **Files:**
+  - `top-zh-press-32-n11-1ba7401c.jpg` (in `local/`, not in git): Ta Kung Pao 25 Dec 1975, page 8 (leaf n11), full-size page image with the City item (centre); https://archive.org/download/NPTKP19751225/page/n11.jpg; 4609575 bytes; SHA-256 `279b2b5b18c1562283c593e321945869fb91bb1ca62ad9737b9fcbf3cb55aa36`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19751225)
+  - `top-zh-press-32-NPTKP19751225-fbe8f30c.pdf` (in `local/`, not in git): the whole issue, page-image PDF (7,580,392 bytes); https://archive.org/download/NPTKP19751225/NPTKP19751225.pdf; 7580392 bytes; SHA-256 `f89caba26820e11c09a333180e1ffbabe837af3ab94aedfd1dd3931cfd0bad76`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19751225)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 25 Dec 1975, p.8 (第八版, sports), archive.org NPTKP19751225 leaf n11, short item | INFERRED: The kaifong school of the City (城寨坊眾學校) held its sports day on 25 and 26 December 1975, from 9 am to 5 pm each day. The dates come from 'today and tomorrow' in the paper of 25 December. | "城寨坊眾學校定今、明兩日上午九時至下午五時在九龍仔運動場舉行運動會" (The City kaifong school will hold its sports meet today and tomorrow, 9 am to 5 pm, at the Kowloon Tsai sports ground.) |
+| Ta Kung Pao (大公報) 25 Dec 1975, p.8 (第八版, sports), archive.org NPTKP19751225 leaf n11, short item | The sports day was not in the City: it was at the 九龍仔運動場 sports ground, outside the City. | "在九龍仔運動場舉行運動會" (holds its sports meet at the 九龍仔 sports ground) |
+| Ta Kung Pao (大公報) 25 Dec 1975, p.8 (第八版, sports), archive.org NPTKP19751225 leaf n11, short item | On the second day the school added amusement events (遊藝) between the races. | "明天在比賽中還加插遊藝賽項目" (Tomorrow, amusement events will also be added among the competitions.) |
 ### gap-crime-drugs-records-6: 搜查九龍城寨再破獲一毒窟 (工商晚報 1976-04-22)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1339,20 +1418,27 @@ testimony given later: tag its facts "retrospective (year)".
   - Kowloon City District Office (九龍城民政署) record of the fun day for Walled City children, 26 Feb 1977.
 ### top-zh-press-33: 華革兒童健康檢驗首天三百多人參加城寨及灣仔醫療所今同時舉行
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1977-04-04
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on a clinic in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19770404
-- **Other links:** https://archive.org/metadata/NPTKP19770404/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 華革兒童健康檢驗 matches nine 大公報 issues (1966-1977); of them only NPTKP19770404 names 城寨 or 城砦.
-- **What it gives (finder's note, not checked):** The 華革 children's health check: more than 300 children on the first day; the clinics in the City and in Wan Chai hold it on the same day (Apr 1977). With top-zh-press-6, it shows a 華革會 clinic in the City from the 1970s to 1987.
-- **Notes:** The other eight issues of the yearly check (1966-1976) can also name the City's clinic in their article text. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈華革兒童健康檢驗 首天三百多人參加〉, subhead 〈城寨及灣仔醫療所今同時舉行〉, 4 April 1977, p.5 (第二張 第五版). Internet Archive item NPTKP19770404, leaf n4, https://archive.org/details/NPTKP19770404
+- **Class:** primary (A news report of the time (1977), about a pro-Beijing association. Before the peak period; with top-zh-press-6 (1987) it shows the same people's clinic in the City across ten years.)
+- **Date of the record:** 1977-04-04 (first day of the check on 3 Apr 1977)
+- **Files:**
+  - `top-zh-press-33-n4-ee4e837f.jpg` (in `local/`, not in git): Ta Kung Pao 4 Apr 1977, page 5 (leaf n4), full-size page image with the City article (top left); https://archive.org/download/NPTKP19770404/page/n4.jpg; 2970898 bytes; SHA-256 `a9db7a09d33cd8bc7fc47db28dbd6f993e5684aa3bc1832c5cf981f6a29793ef`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19770404)
+  - `top-zh-press-33-NPTKP19770404-fe41ec93.pdf` (in `local/`, not in git): the whole issue, page-image PDF (5,478,457 bytes); https://archive.org/download/NPTKP19770404/NPTKP19770404.pdf; 5478457 bytes; SHA-256 `df00647559340e4e8eaeb8211128d1092195d805f3b0baf935394036b74732ea`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19770404)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 1 | INFERRED: The association 香港華人革新協會 (short form 華革會; the paper gives only the Chinese name) ran a free children's health check (兒童健康檢驗). The first day was 3 April 1977, at the people's clinic in the City (九龍城寨平民醫療所). The date comes from 'yesterday' in the paper of 4 April. | "香港華人革新協會主辦的免費「兒童健康檢驗」，昨首天在九龍城寨平民醫療所舉行" (The free 'children's health check' organized by the 香港華人革新協會 was held yesterday, its first day, at the Kowloon Walled City people's clinic.) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 1 and headline | Nearly 300 children came on the first day. The headline says 'more than 300'. | "近三百名兒童前往接受檢驗" (nearly three hundred children went to be examined) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 2 | On the first day the check ran from 9 am to 6:30 pm. Parents brought the children to the clinic. | "由早上九時開始至下午六時半止，接受檢驗的兒童由家長帶領來到醫療所" (ran from 9 am to 6:30 pm; the children examined were brought to the clinic by their parents) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 2 | The check covered the eyes, ears, nose, throat, teeth, parasites, the breathing system, the lymph glands and other systems, and the child's nutrition and growth. | "眼、耳、鼻、喉、牙齒、寄生蟲、呼吸系統、淋巴腺" (eyes, ears, nose, throat, teeth, parasites, respiratory system, lymph glands) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 3 | If a doctor thought that a child needed an X-ray or a laboratory test, the family paid nothing for it. | "如醫生認為需要進行X光檢驗、化驗等，均不需繳付任何費用" (if the doctor considers an X-ray or laboratory test necessary, no fee at all is payable) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 3 | Each child got a detailed written health report. | "所有接受「兒檢」的兒童將可獲得一份詳細的健康檢驗報告" (All children who take the check will receive a detailed health examination report.) |
+| Ta Kung Pao (大公報) 4 Apr 1977, p.5 (第五版), archive.org NPTKP19770404 leaf n4, para. 4 | INFERRED: On 4 April 1977 the check took place both at the City clinic and at the association's people's clinic in Wan Chai, 2/F, No. 149 莊士敦道 (the paper gives only the Chinese name). The hours were 9 am to 12 noon and 4 pm to 6 pm. | "除城寨平民醫療所外，還有灣仔華革會平民醫療檢驗所（灣仔莊士敦道一四九號二樓），時間由上午九時至十二時，下午四時至六時" (Besides the City people's clinic, there is also the 華革會 people's clinic in Wan Chai (2/F, 149 莊士敦道, Wan Chai); hours 9 am to 12 noon and 4 to 6 pm.) |
+
+- **Leads:**
+  - Ta Kung Pao (大公報) 1971-04-26 (archive.org NPTKP19710426): '華革醫療員到城砦免費檢查兒童健康連續進行數天受到街坊歡迎'. Not in the repo.
+  - Ta Kung Pao (大公報) 1978-06-10 (archive.org NPTKP19780610): '華革會兒檢受到歡迎醫療隊明起到九龍城寨及新界服務'. Not in the repo.
 ### gap-campus-socialwork-press-13: 九龍城寨長安里 (string in the headline list)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1455,20 +1541,20 @@ testimony given later: tag its facts "retrospective (year)".
   - The shopkeepers' letter of 1981 to the Xinhua News Agency (新華社) Hong Kong branch on the clearance.
 ### top-zh-press-29: 城砦梯間發現白粉
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1982-02-09
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily's report of the time on drugs in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; the archive.org copy has no rights statement
-- **Link:** https://archive.org/details/NPTKP19820209
-- **Other links:** https://archive.org/metadata/NPTKP19820209/metadata/description
-- **Proof that it exists:** Description read through the search API; the phrase 城砦梯間發現白粉 matches only NPTKP19820209.
-- **What it gives (finder's note, not checked):** Heroin (白粉) found in a stairwell of the City (Feb 1982).
-- **Notes:** A short item. Batch read, issue confirmed by exact phrase. Same rights caveat as top-zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, no named writer, 〈城砦梯間發現白粉〉, 9 February 1982, p.4 (第一張 第四版). Internet Archive item NPTKP19820209, leaf n3, https://archive.org/details/NPTKP19820209
+- **Class:** primary (A short news report of the time (1982). Before the peak period.)
+- **Date of the record:** 1982-02-09 (find on 8 Feb 1982)
+- **Files:**
+  - `top-zh-press-29-n3-e210f029.jpg` (in `local/`, not in git): Ta Kung Pao 9 Feb 1982, page 4 (leaf n3), full-size page image with the City item (bottom right); https://archive.org/download/NPTKP19820209/page/n3.jpg; 4704025 bytes; SHA-256 `72e6331b33a32a12a8e4f49ee08c8659caa882280072ab4e83620310b4c2d619`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19820209)
+  - `top-zh-press-29-NPTKP19820209.pdf-8b746b0d.html` (in `local/`, not in git): the whole issue, page-image PDF (11,177,346 bytes); https://archive.org/download/NPTKP19820209/NPTKP19820209.pdf; 11177346 bytes; SHA-256 `885c6385115a54ddda2d76be72ec5c8a84dce730b9c375c0788be12ae8b604e6`; licence: no rights statement on the item page (© 大公報) (https://archive.org/details/NPTKP19820209)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Ta Kung Pao (大公報) 9 Feb 1982, p.4 (第四版), archive.org NPTKP19820209 leaf n3, short item | INFERRED: At 2:50 pm on 8 February 1982 a police sergeant (警長) found 33 small packets of heroin (白粉) in the stairwell at 2/F (二樓) of No. 134 龍津道 (the repo writes Lung Chun Road (龍津道)) in the City. The date comes from 'yesterday' in the paper of 9 February. | "昨日下午二時五十分，一名警長在九龍城砦龍津道一三四號二樓梯間，發現三十三小包白粉" (At 2:50 pm yesterday a police sergeant found 33 small packets of heroin in the stairwell of 2/F, 134 Lung Chun Road, Kowloon Walled City.) |
+| Ta Kung Pao (大公報) 9 Feb 1982, p.4 (第四版), archive.org NPTKP19820209 leaf n3, short item | Each packet of heroin was wrapped in a betting slip of a Jockey Club betting station (馬會投注站). | "白粉全部用馬會投注站彩票包住" (All the heroin was wrapped in Jockey Club betting-station slips.) |
+| Ta Kung Pao (大公報) 9 Feb 1982, p.4 (第四版), archive.org NPTKP19820209 leaf n3, short item | The 33 packets weighed half an ounce in total and were worth HK$1,000. | "共重二分之一安士，總值一千元" (weighing half an ounce in total, worth $1,000 in all) |
+| Ta Kung Pao (大公報) 9 Feb 1982, p.4 (第四版), archive.org NPTKP19820209 leaf n3, short item | The police were still trying to find out where the drugs came from. | "目前，警方仍在追查毒品的來源" (At present the police are still tracing the source of the drugs.) |
 ### top-services-13: 城寨一住宅單位昨突塌廚房外牆疑日久失修所致幸無傷人 (大公報 1984-06-26)
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -1494,16 +1580,46 @@ testimony given later: tag its facts "retrospective (year)".
   - Kung Sheung Evening News (工商晚報), 26 Jun 1984 (archive.org NPKSE19840626): 城砦水淹千戶, burst water mains at Carpenter Road (賈炳達道) and South Wall Road (城南道) flood the City
 ### zh-press-22: 香港工商日報 to 1984: issues whose headline list names 城寨, 城砦 or 寨城 (archive.org metadata query)
 
-- **Creator:** Internet Archive item set 'NPKS' (private uploader); paper by Kung Sheung Daily News (香港工商日報)
-- **Date:** to 1984
-- **Kind:** catalogue
-- **Class:** primary (A finding list of press reports of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** metadata: unknown; papers © publisher
-- **Link:** https://archive.org/advancedsearch.php?q=identifier%3ANPKS*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&rows=500&sort%5B%5D=date+asc&output=json
-- **Other links:** https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** numFound 265; 41 of them from 1977-1984, e.g. NPKS19830808, NPKS19830820, NPKS19840501, NPKS19840919.
-- **What it gives (finder's note, not checked):** A list of 工商日報 issues that mention the City, mostly 1950s-1984. The 1977-1984 keyword lists are thin, e.g. 1984-05-01 '城寨天台' next to '警方'.
-- **Notes:** The same collection ('china-mail') also holds China Mail, Hong Kong Daily Press, Hong Kong Sunday Herald, 香港華字日報 and 廣州民國日報. Same rights caveat as zh-press-1.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Internet Archive, item sets NPKS (Kung Sheung Daily News (香港工商日報)) and NPKSE (Kung Sheung Evening News (工商晚報)) (Hong Kong, scanned issues, private uploader, collection 'china-mail'), advanced-search query of the 'description' field for 城寨, 城砦 or 寨城, run 2026-11-20. https://archive.org/advancedsearch.php?q=identifier%3ANPKS*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=500&sort%5B%5D=date+asc&output=json
+- **Class:** primary (A list of OCR keywords, headlines and captions of the time (1947-1984). The list is a later finding aid; the headlines in it are primary. The two papers closed in 1984, thus it does not cover the peak period; it gives the background of 1972-1984.)
+- **Date of the record:** issues of 1947-12-10 to 1984-09-19; metadata uploaded later
+- **Files:**
+  - `zh-press-22-advancedsearch-e1a5df68.php` (in `local/`, not in git): archive.org search result (JSON) of the 工商日報 (NPKS) and 工商晚報 (NPKSE) issues whose description names the City (265 issues), with identifiers, dates and OCR keyword, headline or caption lists; https://archive.org/advancedsearch.php?q=identifier%3ANPKS*+AND+description%3A%28%22%E5%9F%8E%E5%AF%A8%22+OR+%22%E5%9F%8E%E7%A0%A6%22+OR+%22%E5%AF%A8%E5%9F%8E%22%29&fl%5B%5D=identifier&fl%5B%5D=date&fl%5B%5D=description&rows=500&sort%5B%5D=date+asc&output=json; 2139930 bytes; SHA-256 `12c7d42ce0de0d132fb7493261e2160d72217022619328c3e7e62585ee348bf6`; licence: no statement for the metadata on archive.org; papers © 工商日報 and 工商晚報 (https://archive.org/details/NPKSE19811227)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org item NPKS19840501 (Kung Sheung Daily News (工商日報), issue of 1984-05-01), metadata 'description' (OCR headline list) | The keyword list of 1 May 1984 has '城寨天台' next to '警方' and '兇殺案'-type words, as the finder said: a police case on a City rooftop. The NPKSE list (工商晚報) of 30 April 1984 has a killing on 龍津道 (the repo writes Lung Chun Road (龍津道)) that left one dead and one wounded. | "城寨天台 警方" (City rooftop; police) |
+| archive.org item NPKSE19741002 (Kung Sheung Evening News (工商晚報), issue of 1974-10-02), metadata 'description' (OCR headline list) | In October 1974 the City's water supply was difficult: after the water restrictions the pressure at the street standpipes was weak, and residents feared fights over water. | "九龍城寨供水困難 制水後街喉水壓弱 當地居民希望改善 否則將會爭水流" (Water supply difficult in Kowloon Walled City; weak standpipe pressure after rationing; residents hope for improvement, or else there will be fighting over water) |
+| archive.org item NPKSE19750123 (Kung Sheung Evening News (工商晚報), issue of 1975-01-23), metadata 'description' (OCR headline list) | A third-alarm fire in January 1975 burned 50 wooden huts (木屋) in the City and made more than 800 people homeless. An environment expert of the University of Hong Kong said that most of them lived in conditions worse than pigs. | "九龍城砦三級大火 焚五十間木屋八百餘人毀家 多數人居住環境 比豬隻更惡劣" (Third-alarm fire in the City burns 50 wooden huts, 800-plus lose homes; most people's living conditions worse than pigs') |
+| archive.org item NPKSE19750515 (Kung Sheung Evening News (工商晚報), issue of 1975-05-15), metadata 'description' (OCR headline list) | A third-alarm fire at night in May 1975 in the squatter-hut area (木屋區) of the City made 800 people homeless; it was said to have started from a drug addict's fire. | "九龍城砦木屋區 深夜三級大火 八百人無家可歸 起因傳爲道友吸毒遺下火" (Late-night third-alarm fire in the City's hut area, 800 homeless; said to be caused by fire left by a drug addict) |
+| archive.org item NPKSE19750520 (Kung Sheung Evening News (工商晚報), issue of 1975-05-20), metadata 'description' (OCR headline list) | Heavy rain on 20 May 1975 flooded most of the City knee-deep; people waded through. | "九龍城砦大部份地區均成澤國水深及膝市民涉水而行" (Most areas of the City became a swamp, knee-deep; people waded through) |
+| archive.org item NPKSE19750608 (Kung Sheung Evening News (工商晚報), issue of 1975-06-08), metadata 'description' (OCR headline list) | In June 1975 two City buildings above the standard height were closed for breaking the airport law. | "城砦兩幢大厦超出標準高度 違反機塲法被封閉" (Two City buildings exceed the standard height, closed for breaching the airport law) |
+| archive.org item NPKSE19750703 (Kung Sheung Evening News (工商晚報), issue of 1975-07-03), metadata 'description' (OCR headline list) | In July 1975 a judge gave closure orders for the two over-height City buildings, because they were in the flight path. | "在機塲航線內影響升降 城砦兩超高樓宇法官昨頒封閉令" (In the airport flight path, affecting landings and take-offs: judge yesterday granted closure orders on two over-height City buildings) |
+| archive.org item NPKSE19750801 (Kung Sheung Evening News (工商晚報), issue of 1975-08-01), metadata 'description' (OCR headline list) | A City builder thought about suing the Public Works Department (工務局) for a wrong judgement of the permitted building height (reported 1 August 1975). | "九龍城寨建築商或將控告工務局 錯誤判斷樓宇應有高度" (City builder may sue the Public Works Department for misjudging the permitted building height) |
+| archive.org item NPKSE19750813 (Kung Sheung Evening News (工商晚報), issue of 1975-08-13), metadata 'description' (OCR headline list) | A cleaning campaign in the City was to start the next week; a youth cleaning team put up posters in the City (reported 13 August 1975). The two lines are separate headlines or captions of the same issue. | "九龍城寨下週展開淸潔運動 ... 少靑淸潔隊在九龍城寨貼上海報" (Clean-up campaign in the City next week; youth cleaning team posts posters in the City) |
+| archive.org item NPKSE19721227 (Kung Sheung Evening News (工商晚報), issue of 1972-12-27), metadata 'description' (OCR headline list) | In December 1972 the multi-storey buildings of the City had no approved plans, and some were said to have no piles. | "九龍城砦多層樓宇 圖則未經批准 據說有些樓宇並未打樁" (Multi-storey buildings in the City: plans not approved; some reportedly not piled) |
+| archive.org item NPKSE19721228 (Kung Sheung Evening News (工商晚報), issue of 1972-12-28), metadata 'description' (OCR headline list) | The government would not act for the time being on the uncontrolled building in the City, perhaps for reasons of political sensitivity (reported 28 December 1972). | "可能基於政治敏感因素 城砦建築未經管制政府將暫不採行動" (Possibly for politically sensitive reasons, the government will for now take no action on uncontrolled City building) |
+| archive.org item NPKSE19790521 (Kung Sheung Evening News (工商晚報), issue of 1979-05-21), metadata 'description' (OCR headline list) | In May 1979 rats overran the City: they came out in daylight, and many children were bitten in their sleep. Refuse had piled up inside for days. The Urban Services Department asked residents to help fight them. | "城砦鼠患猖獗 市政署促居民合作對付 白晝出動旁若無人不少孩子夢中被咬" (Rats rampant in the City; Urban Services asks residents to cooperate; they come out in daylight as if no one were there; many children bitten in their sleep) |
+| archive.org item NPKSE19810527 (Kung Sheung Evening News (工商晚報), issue of 1981-05-27), metadata 'description' (OCR headline list) | A Kowloon City district management committee was to be formed to discuss how to improve the City's environment; City residents could be candidates and voters for the District Board (reported 27 May 1981). | "九龍城地區管理委會明成立 商討改善城砦環境 居民可成區議員候選人及選民" (Kowloon City district management committee formed tomorrow to discuss improving the City environment; residents can be District Board candidates and voters) |
+| archive.org item NPKSE19810916 (Kung Sheung Evening News (工商晚報), issue of 1981-09-16), metadata 'description' (OCR headline list) | When the authorities banned illegal medical practice, unlicensed doctors were forced to move into the City to work (reported 16 September 1981). | "當局禁止非法行醫 無牌醫生被迫走入城砦經營" (Authorities ban illegal medical practice; unlicensed doctors forced to move into the City to operate) |
+| archive.org item NPKSE19811227 (Kung Sheung Evening News (工商晚報), issue of 1981-12-27), metadata 'description' (OCR headline list) | Two City buildings shared one staircase; the residents feared a fire and had complained many times without an answer (reported 27 December 1981). | "城砦兩幢大厦共用一條樓梯 居民担心發生火警多番投訴未獲理會" (Two City buildings share one staircase; residents fear fire; repeated complaints ignored) |
+| archive.org item NPKSE19820301 (Kung Sheung Evening News (工商晚報), issue of 1982-03-01), metadata 'description' (OCR headline list) | A third-alarm fire on the morning of 1 March 1982 burned more than ten wooden huts in the City. | "城寨今晨三級火燒毀木屋十餘間" (Third-alarm fire in the City this morning burns more than ten wooden huts) |
+| archive.org item NPKSE19830325 (Kung Sheung Evening News (工商晚報), issue of 1983-03-25), metadata 'description' (OCR headline list) | A second-alarm fire at 西頭村 (the repo writes Sai Tau Tsuen (西頭村)) in the City on 25 March 1983 killed one person and injured four. | "九龍城砦二級火警 釀成一死四傷" (Second-alarm fire in the City causes one death and four injuries) |
+| archive.org item NPKS19830410 (Kung Sheung Daily News (工商日報), issue of 1983-04-10), metadata 'description' (OCR headline list) | INFERRED: The keyword list of 10 April 1983 has '城砦渠道淤泥 下雨 澤國 居民 當局派人': perhaps silt in the City's drains flooded it in rain, and the authorities sent men. This reading of a keyword list is a guess. | "城砦渠道淤泥 下雨 澤國 居民 當局派人" (City drains silted; rain; flooded; residents; authorities send men) |
+| archive.org item NPKSE19830809 (Kung Sheung Evening News (工商晚報), issue of 1983-08-09), metadata 'description' (OCR headline list) | INFERRED: In August 1983 the City suddenly became a hot topic; the police said that public order in the City was no worse than in other districts. The OCR prints 不必; the sense is 'no worse'. | "九龍城砦突成熱門話題 警方指城寨治安不必其他地區差" (The City suddenly a hot topic; police say City public order no worse than other districts) |
+| archive.org item NPKSE19830816 (Kung Sheung Evening News (工商晚報), issue of 1983-08-16), metadata 'description' (OCR headline list) | Financial Secretary 夏鼎基 was to tour Kowloon City (arranged two and a half months before); he would go up to a rooftop to look down on the City but would not go into it (reported 16 August 1983). | "夏鼎基巡視龍城兩月半前已安排 將上天台鳥瞰但不會進城砦" (夏鼎基's Kowloon City tour arranged two and a half months ago; he will view from a rooftop but not enter the City) |
+| archive.org item NPKSE19840616 (Kung Sheung Evening News (工商晚報), issue of 1984-06-16), metadata 'description' (OCR headline list) | INFERRED: Heavy rain on the night of 15-16 June 1984 flooded the City and residents were evacuated. The OCR gives the depth as '一米百七', perhaps 1.7 m; the reading is not sure. | "城砦水深一米百七居民疏散" (Water in the City [1.7?] metres deep; residents evacuated) |
+| archive.org item NPKSE19840626 (Kung Sheung Evening News (工商晚報), issue of 1984-06-26), metadata 'description' (OCR headline list) | On 26 June 1984 water mains burst at 賈炳達道 (the repo writes Carpenter Road (賈炳達道)) and 城南道; the ground sank and the flood reached about a thousand households (千戶) of the City; low ground was waist-deep. | "城砦水淹千戶 ... 兩條水管爆裂低地水深及腰" (A thousand City households flooded ... two water mains burst, low ground waist-deep) |
+| archive.org item NPKSE19680625 (Kung Sheung Evening News (工商晚報), issue of 1968-06-25), metadata 'description' (OCR headline list) | Background: in five months of 1968 police broke up more than 300 gambling stalls in the City, and drug sellers there earned HK$600,000 a month. | "九龍城砦五個月以來 破獲賭檔三百餘個 毒販猖獗每月收入六十萬元" (In five months over 300 gambling stalls broken in the City; drug dealers rampant, earning $600,000 a month) |
+| archive.org item NPKSE19600313 (Kung Sheung Evening News (工商晚報), issue of 1960-03-13), metadata 'description' (OCR headline list) | Background: in March 1960 the dentists of the City were flourishing; most of them were refugees from the mainland. | "城砦牙醫蓬勃一時 多爲逃港難民" (City dentists flourishing; mostly refugees who fled to Hong Kong) |
+
+- **Leads:**
+  - Kung Sheung Evening News (工商晚報) 1981-12-27 (archive.org NPKSE19811227): two City buildings share one staircase. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1979-05-21 (NPKSE19790521): rats and refuse in the City, with photos. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1974-10-02 (NPKSE19741002): water pressure at the standpipes after the water restrictions. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1981-09-16 (NPKSE19810916): unlicensed doctors forced into the City. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1984-06-16 (NPKSE19840616): the City flooded, residents evacuated. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1983-08-09 and 1983-08-16 (NPKSE19830809, NPKSE19830816): police on public order; 夏鼎基 looks at the City from a rooftop. Not in the repo.
+  - Kung Sheung Evening News (工商晚報) 1972-12-27 and 1972-12-28 (NPKSE19721227, NPKSE19721228): building plans not approved, no piles; no government action.
