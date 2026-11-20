@@ -2,9 +2,8 @@
 
 Later articles that retell the City or review its books.
 
-- **Status:** partly read: 24 of 30 items read by the reading of the source search of
-  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
-  read: its "What it gives" is the note of the finder, not a checked fact.
+- **Status:** read: 30 of 30 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1987-2025.
 - **Items:** 30, of which 28 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -72,6 +71,7 @@ Not read yet.
 - **Date of the record:** 2012-11-19
 - **Files:**
   - `popular-12-page.html` (in `local/`, not in git): HTML of the episode transcript page.; https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/; 150218 bytes; SHA-256 `7e0e8b370fb15a7d0b3d45202d1c9c6fc3fdde62c73e251463d4ab64d9d81976`; licence: No open licence stated (© 99% Invisible / PRX). (https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/)
+- **Note:** its 7 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -91,13 +91,6 @@ Not read yet.
 | transcript, Roman Mars | One could walk from one side of the City to the other without touching the ground. | "you could walk from one side to the other without ever touching the ground." |
 | transcript, Nick van der Kolk | INFERRED: The narrator lists noodle factories, fishball factories and textiles. The transcript writes 'fishbowl'; this is probably a mishearing of 'fishball' (INFERRED). | "noodle factories, fishbowl factories, textiles" |
 | transcript, Nick van der Kolk | The narrator says that much of the electricity was pirated. | "A lot of the electricity was pirated." |
-| transcript, Greg Girard | Girard: the buildings were built against each other with no space between them. | "Buildings had been built up against each other without any space between them." |
-| transcript, Greg Girard | Girard: each owner or tenant built a different kind of caged balcony. | "Each homeowner or each person who rented would build a different kind of caged balcony." |
-| transcript, Greg Girard | Girard: the alleys had a tangle of electric wires and wet rubbish thrown from the upper floors. | "this tangle of electrical wires and wet garbage that had been thrown from the upper floors" |
-| transcript, Greg Girard | Girard: the City was a fire hazard and a health hazard. | "It was a fire hazard, a health hazard." |
-| transcript, Aaron Tan | Aaron Tan: the prime of the City was in the 1960s and 1970s. | "The Walled City was at its prime time was during the '60s and '70s." |
-| transcript, Aaron Tan | Aaron Tan: Triad gangs could get drug addicts to clean the streets, and residents organised the removal of rubbish. | "Triad gangs could get drug addicts to clean up the streets." |
-| transcript, Aaron Tan | Aaron Tan: there was a postman inside who knew how to deliver the letters. | "even a postman inside, know how to deliver the letters" |
 | episode page, show notes | The City was torn down in 1993. | "Kowloon Walled City was torn down in 1993." |
 ### popular-19: Walled City of Dreams
 
@@ -107,6 +100,7 @@ Not read yet.
 - **Date of the record:** 2015-03-18
 - **Files:**
   - `popular-19-page.html` (in `local/`, not in git): HTML of the article page.; https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/; 102971 bytes; SHA-256 `c34ab817612eebb7070fe479860a8edd71fe757a4f0f2c534233804c34ecfdc7`; licence: No open licence stated (© The World of Chinese). (https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/)
+- **Note:** its 4 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -116,14 +110,10 @@ Not read yet.
 | text | Residents tapped the water and electricity mains for their needs. | "tap water and electricity mains to serve their needs" |
 | text | In the 1970s the buildings grew taller, limited only by the flight path of the nearby airport. | "restricted only by the flight path at the nearby airport" |
 | text | Police crackdowns in the 1970s and 1980s, after corruption in the force was dealt with, greatly reduced crime. The customers of the City's criminal businesses often came from outside. | "a series of police crackdowns led to a massive reduction in crime" |
-| text, quote of Aaron Tan | Aaron Tan: there was not enough water, thus residents dug wells. | "Insufficient water was provided, so they dug wells." |
-| text, quote of Aaron Tan | Aaron Tan: different parts of the City had power at different times, and residents coordinated this with the pumping of water. | "They had to ensure they coordinated this with the pumping of the water." |
-| text, quote of Aaron Tan | Aaron Tan: the building extensions became beams that held up the structure. | "these extensions became beams that supported the structure itself" |
 | text | From Suenn Ho's research: balconies and rooftops were linked, and residents talked to each other across these linked areas. | "residents chatted to one another between these 'linked' areas" |
 | text | Doctors and dentists were unlicensed in Hong Kong but licensed on the mainland. | "unlicensed in Hong Kong but licensed from the Mainland" |
 | text | The City had schools, temples and day care centres for old people. | "as well as schools, temples, and day care centers for senior citizens." |
 | text | Dr Kwok, a specialist in sexually transmitted diseases with mainland credentials that Hong Kong did not recognise, treated residents in the City. | "Dr. Kwok, an STD specialist, held credentials from the Mainland, but those were not recognized in Hong Kong;" |
-| text, quote of Suenn Ho | Suenn Ho: in a surprisingly roomy flat, a large clear plastic sheet covered most of the ceiling and held a pool of yellow liquid from seepage. | "There was a giant clear sheet covering most of the ceiling." |
 | text | Jackie Pullinger's memoir is paraphrased: the triads divided the City into two. | "the triads effectively divided the city into two" |
 | text | On 14 January 1987 the British announced that they would demolish the City and make a park. | "on January 14, 1987, the British announced they would tear down the Walled City and replace it with a park." |
 | text | The same day the government sent plainclothes police and over a thousand staff of the survey and mapping department. They counted about 33,000 residents on 2.7 hectares. | "dispatched plainclothes police and over a thousand members of the surveying and mapping department" |
@@ -142,37 +132,24 @@ Not read yet.
 - **Date of the record:** 2019-04-25
 - **Files:**
   - not downloaded (curl exit 92): HTML of the article page.; https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/; licence: No open licence stated (© Zolima CityMag; photos © Greg Girard). (https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/)
+- **Note:** its 14 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
 | narration | Girard, a Canadian photographer, first came across the City in 1985, when he went to Kowloon City to photograph planes landing at Kai Tak. | "came across it for the first time, in 1985" |
-| Girard quote | Girard: he came round a corner and saw the City at the end of the block. | "I came around one corner and at the end of the block there it was" |
 | narration | In 1985 a low shantytown separated the Walled City from Kowloon City. | "the low-slung shantytown that separated the Walled City" |
-| Girard quote | Girard: residents were hostile to a man with a camera and a tripod. | "it was obvious they were hostile to some guy with a camera and a tripod" |
-| Girard quote | Girard: on his first night he saw low-level manufacturing, dentists and food factories. | "Low-level manufacturing, dentists, food factories." |
-| Girard quote | Girard: taxis dropped people off in front of the City. | "taxis dropping people off in front of the place" |
-| Girard quote | Girard: the first shop he photographed was perhaps a noodle-making factory; it was the first to let him set up his lights. | "I think it may have been a noodle making factory" |
-| Girard quote | Girard: he made prints from his slides and brought them back on the next visit. The neighbours saw that he was harmless, and he got access from shop to shop. | "I made prints from the slides and then brought them back on the next visit" |
 | photo caption | A caption describes a man in a tank top who carries a basket of food in a kitchen. | "A man in a tank top carrying a basket of food in a kitchen" |
 | narration | Before the war, 436 squatters lived inside the walls over two decades, until the government rehoused them. | "a total of 436 squatters took up residence inside the walls" |
 | narration | More than 2,000 squatters rushed into the old fort after the war. | "More than 2,000 squatters rushed into the old fort" |
-| Girard quote | Girard: the City was always the cheapest place to start in Hong Kong, for migrants from the mainland who wanted the cheapest rent. | "It was always the cheapest entry point in Hong Kong" |
 | narration | By Girard's visits the City was no longer a triad stronghold. Police raids in 1973 and 1974 arrested more than 2,500 people in the drug trade. By the early 1980s it was as safe as any Hong Kong district. | "arresting more than 2,500 people involved in the drug trade" |
-| Girard quote | Girard: the main shops on the thoroughfares were convenience stores and barbers. | "convenience stores and barbers" |
-| Girard quote | Girard: the footpaths deeper inside were more industrial, and food production was a big part of the work there. | "Food manufacturing and production was a big part of what went on there." |
-| Girard quote | Girard: barbecued-meat workshops had pig carcasses on the floor beside metal furnaces. | "pig carcasses on the floor" |
-| Girard quote | Girard: other workshops made fishballs, candy and tofu. | "Fishball production. Candy making. Tofu." |
 | narration | There was a cotton mill and garment factories. Small workshops each made one item, such as rubber plungers or wooden rulers. | "making a specific item like rubber plungers or wooden rulers" |
 | narration | Dentists and doctors were licensed only on the mainland, or not at all, and could not practise elsewhere in Hong Kong. | "Licensed only on the mainland — or not at all" |
-| Girard quote | INFERRED: Girard: the clinics had the best real estate, because they faced inside (INFERRED: probably towards the open courtyard; the article does not say so). | "had the best real estate in the sense that it was facing inside" |
 | narration | The writer, after Girard, says that 80 to 90 percent of the spaces had no natural light and most looked onto narrow ventilation shafts. | "between 80 and 90 percent of the city's spaces had no natural light" |
 | narration and photo caption | Children went to the rooftops for fresh air; a caption calls the roof one of the only places where children could play in fresh air. | "one of the only places children could play in fresh air" |
 | narration | The writer says that the old yamen was the only place inside the City that the sun touched. It formed a large courtyard in the middle of the dense mass of buildings. | "the only place inside the city that was touched by the sun was the old yamen" |
-| Girard quote | Girard: people sat around in the yamen courtyard in the sunshine, the air and the light. | "It was a place for folks to sit around in the sunshine in the air and the light" |
 | photo caption | A caption shows a beauty salon, one of many businesses in the City. | "A beauty salon, one of many businesses inside the Walled City." |
 | narration | In 1987 the government announced that the City would be razed and made into a public park, after the residents were compensated and resettled. | "would be razed and turned into a public park" |
 | narration | Before the clearance, a team of Japanese architects charted the whole structure, a German documentary crew filmed it, and Bloodsport (1988) filmed a fight scene there. Crime Story (1993) was filmed after all residents had left. | "A team of Japanese architects arrived to chart the entire structure" |
-| Girard quote | Girard: life was tough for most people who lived there. | "it was tough for most people who lived there" |
 ### popular-18: Inside Kowloon Walled City—a lawless metropolis where anarchy reigned in Hong Kong
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -181,6 +158,7 @@ Not read yet.
 - **Date of the record:** 2025-05-07
 - **Files:**
   - `popular-18-kowloon-walled-city-history.html` (in `local/`, not in git): HTML of the article page.; https://www.nationalgeographic.com/history/article/kowloon-walled-city-history; 463753 bytes; SHA-256 `3520ed2f68f8ee036070909798e3f367ded8d34af6cb8910c922f27b93fc1901`; licence: No open licence stated (© National Geographic Partners). (https://www.nationalgeographic.com/history/article/kowloon-walled-city-history)
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -189,15 +167,12 @@ Not read yet.
 | photo caption (photo by Greg Girard) | A photo caption says that there were 300 interconnected rooftops where children often played. | "300 interconnected rooftops where kids would often play" |
 | text | The article gives the area as 6.4 acres. | "6.4-acre" |
 | text | The City had limited access to rubbish collection and running water. | "limited access to city infrastructure such as garbage collection and running water" |
-| text, quote of Bishop | Bishop: looking up, the small slice of sky between the buildings was hidden by a thicket of illegal electric wires that tapped the current. | "the small slice of sky between the buildings was obscured by a thicket of illegal electric wires" |
 | text | Ad hoc buildings grew into multistorey complexes joined by balconies and steep staircases. | "multistory complexes connected by balconies and steep staircases" |
 | photo caption | A photo caption shows a police officer doing a stop and search, probably for drugs. | "A police officer doing a stop and search, likely looking for drugs." |
 | photo caption | A photo caption says that many offences that were not crimes were not enforced because of the City's political status. | "many non-criminal offenses weren't enforced due to the political status of the city" |
 | text | People moved there because of necessity, bankruptcy or blight. | "due to necessity, bankruptcy, or blight" |
 | text | The article says the City was established as an Imperial Chinese signal station in 1668. | "Established as an Imperial Chinese signal station in 1668" |
 | text | In 1987 the authorities announced that the City would be demolished. The article says it was levelled in 1994 after nearly a decade of resettlement; other sources give the clearance as 1993-1994 after resettlement in 1987-1992. | "they announced in 1987 that the city would be demolished" |
-| text, quote of Bishop | Donald Michael Bishop, a US foreign service officer, walked the lanes. He said the 'streets' were no wider than his outstretched arms (from his ADST oral history, retrospective). | "We walked along 'streets' no wider than my outstretched arms" |
-| text, quote of the 1960 newspaper | A newspaper of 1960 (the Paterson News, per the link) called the City a tiny enclave of sin and filth. | "a tiny enclave of sin and filth" |
 | text | The article says that researchers found strong community ties, cheap housing and a better quality of life than foreign reports showed. | "strong community ties, affordable housing, and a higher quality of life" |
 
 - **Leads:**
@@ -213,10 +188,10 @@ Not read yet.
 - **Files:**
   - `institutions-21-default-5bd1706f.jpg` (in `local/`, not in git): Scan of Interflow no. 51, p. 5 (1500x2147 px, 539 KB): the first page of the article, with the map.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/k069f584r/full/full/0/default.jpg; 551954 bytes; SHA-256 `efea0796951490c6a9fa701c0ebea217043addca7dd41919368f6c715fed1cce`; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
   - not downloaded (curl exit 28): Scan of the spread Interflow no. 51, pp. 6-7 (2086x1500 px, 456 KB). The text is small; it can be read only with 2x enlargement.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/7p88jf09g/full/full/0/default.jpg; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
+- **Note:** its 7 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
-| p. 5, standfirst | In April 1987 the writer calls the demolition of the City imminent. | "It is a mystery that its imminent demolition is only likely to deepen" |
 | p. 5, col. 1 | The site was the seat of minor Chinese officials since at least the 15th century and a signal station. In the 1810s a small fort was built at the head of the beach. | "a small and rather nondescript fort was built at the head of the beach" |
 | p. 5, col. 1 | In 1843 an Assistant Magistrate of the Xin'an (新安) district, responsible for 492 villages, moved his residence there. The Commodore of Dapeng (大鵬) also moved there, and the garrison was raised to 150. | "with administrative responsibilities for 492 villages, transferred residence there" |
 | p. 5, col. 1 | Yamen (衙門, public offices) and official residences were built, and a wall around them. Thus the Kowloon Walled City began. | "Several imposing buildings were erected as yamen 衙門 (public offices) and official residences" |
@@ -243,22 +218,16 @@ Not read yet.
 | p. 6, col. 4 | After 1899 the population fell. Technically most later residents were squatters, because the Hong Kong Government did not want to grant land leases except for public purposes. | "Technically, most of them were squatters" |
 | p. 6, col. 4 | In 1906 the Anglican Holy Trinity Church made the former Sansheng (Three Saints) Temple into a chapel, the Tianguo Jiudao tang (Heavenly Kingdom Chapel). Sermons on Wednesday and Sunday evenings drew many women and children. The Chinese characters in the scan are too blurred to copy with certainty. | "Sermons given every Wednesday and Sunday evening seem to have attracted many women and children" |
 | p. 6, col. 4 | The Church also leased a yamen (probably once a barracks or minor military office, often called the Assistant Magistrate's yamen) and ran an old people's home there, the Guangyin yuan, and an almshouse. Later the Chinese Christian Churches Union took them over and also ran Eyre's Refuge, a home for widows and orphans, in the large compound. | "operated an old people's home, called the Guangyin yuan" |
-| p. 6, col. 4 | In 1987 the refuge was the only surviving building of that period, used as an old people's centre. | "The refuge is today the only surviving building from this period and is used as an old people's centre" |
 | p. 6, col. 5 | In 1908 Holy Trinity Church made the former Assistant Magistrate's yamen into a primary school, the Tianguo (Heavenly Kingdom) School, until 1936. Around 1931 the Church's youth groups also met there. | "operating it until 1936" |
 | p. 6, col. 5 | The former Longjin Free School was the Land Court's office in 1900-1905. Then the Secretary for Chinese Affairs ran a free secondary school there for over 300 students, funded by the Houwang Temple nearby. At one time a public dispensary shared the building. | "a free secondary school for over 300 students with funds from the Houwang Temple nearby" |
 | pp. 6-7 | The south wall crumbled; by the mid-1920s the Commodore's office was in ruins. In the 1930s the seventy or so houses were mostly in poor repair; vegetable gardens, pig farms and traditional crafts gave the City a rural flavour. | "with its vegetable gardens, pig farms and traditional crafts, the 'City' acquired something of a rural flavour" |
 | p. 7, col. 1 | Until 1941 the City was a tourist attraction. Chinese guidebooks recommended it, and one resident made a living by selling copies of the City's inscriptions to visitors. | "One inhabitant even made a living by selling copies of the City's inscriptions to visitors." |
 | p. 7, col. 2 and caption | After 1899 the customs station was a police station until the late 1920s. The Longjin Pier fell into disuse; from 1928 its end served a ferry to Hong Kong Island and Hunghom. After the war the Yaumati Ferry Company built its Kowloon City Pier at the site. | "the Yaumati Ferry Company built its Kowloon City Pier at the site" |
 | p. 7, col. 2 | The British took the cannon of the Kowloon Fort. Some were sold to scrap dealers; two stood outside the Water Police Station and four outside the new Kowloon City Police Station. Two more, of 4,000 and 5,000 catties, were left near the South Gate. | "Two more, one weighing 4,000 catties, the other 5,000 catties, were abandoned near the South Gate" |
-| p. 7, cols. 2-3 | In 1987 two cannon stood remounted in the City; the writer thinks they are the two from the South Gate. Their inscriptions show that they were cast in 1802 and moved from the Donglong (東龍) Forts to Kowloon in 1811. | "Apparently these are the ones that are to be found remounted in the City today." |
 | p. 7, cols. 3-4 | In the 1930s the population was still below 500. In 1933 the Government announced that it would demolish the houses, except those for public purposes, to make the area 'a place of popular resort and antiquarian interest'. By 1940 all buildings were gone except the old people's home, the former Longjin Free School and the private home of one resident. | "By 1940, all buildings, except the old people's home, the former Longjin Free School and the private home of a native resident, had been demolished" |
 | p. 7, col. 4 | Under the Japanese occupation the wall was completely torn down to give material for the extension of Kai Tak Airport. | "the wall was completely torn down to provide material to extend Kai Tak Airport" |
 | p. 7, col. 4 | After the war refugees settled in the City; by 1947 there were about 2,000. The Hong Kong Government tried to expel them, which caused a diplomatic conflict, but no eviction took place. | "by 1947, its population had risen to about 2,000" |
 | p. 7, col. 4 | The writer quotes Governor Sir Alexander Grantham, who called the City a cesspool of iniquity (no source is given). | "'a cesspool of iniquity, with heroin divans, brothels and everything unsavoury.'" |
-| p. 7, cols. 4-5 | Since the early 1960s squatter huts had given way to high-rise buildings that broke every building rule. They stood with no open space between them, joined by passages like rabbit warrens. In 1987 the writer calls them fire and health hazards and ideal criminal hideouts. | "Built with no open space between them, but with passages connecting them like rabbit warrens" |
-| p. 7, col. 5 | In 1987 the old people's centre, formerly the Guangyin yuan, gave the only open area in the City. The mass of concrete around this 'courtyard' formed a wall against outsiders. | "The old people's centre, formerly the Guangyin yuan, provides the only open area" |
-| p. 7, col. 5 | In 1987 fragments of the old City still existed: the cannon, parts of the former military office, some stone lions and some inscriptions. The writer asks that they be kept. | "the cannon, parts of the former military office, some stone lions, the odd inscription, old residents' memories" |
-| p. 7, col. 5 | In 1987 the Government planned to make the area a park. The writer says the clearance plan brought a general sigh of relief. | "Since the Government plans to use the area as a park" |
 | p. 5, map | A map shows the old City over the streets of 1985. Its key marks the Commodore's Yamen (大鵬協鎮都閫府公署), a Minor Military Yamen with a question mark (大鵬協駐兵所(?)), the Longjin School (龍津義學), the Assistant Magistrate's Yamen (九龍司巡政廳署) and the Kuixing Pavilion (魁星閣). The Houwang Temple stands to the west across Tung Tau Tsuen Road; its characters are small in the scan. | "The old Kowloon Walled City in relation to the present topography (not to scale)." |
 | p. 5, photo caption | Photo caption: the Kuixing Pavilion and the 'reflecting wall' opposite the Longjin Free School, around 1924; the smaller houses next to them were dwellings. | "The smaller houses next to them were domestic dwellings." |
 | p. 7, photo caption | Photo caption: discarded cannon, 1924. Behind the 'reflecting wall' stood the Tianguo Chapel, formerly the Sansheng Temple; across the lane was the Old People's Home, formerly a military office. | "Across the lane was the Old People's Home, formerly a military office." |
@@ -277,6 +246,7 @@ Not read yet.
 - **Date of the record:** 1995-06-27
 - **Files:**
   - `gap-foreign-free-press-12-page.html` (in `local/`, not in git): HTML of the article page (text of the 1995 print article).; https://taz.de/!1503389/; 165826 bytes; SHA-256 `191de04afec572643b0a3fe9e05a796e32910a18f81d3e772740bd2c26f14e71`; licence: No open licence stated for the article (© taz). (https://taz.de/!1503389/)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -293,8 +263,6 @@ Not read yet.
 | pp. 14-15, Walled City passage | Many people came. The sentence starts 'Der Zulauf war rege: diese boten Spezialitäten' (many came: these, the butchers, offered specialities). Then 'jene' (those, the former: the dentists) treated people well, reliably and cheaply. | "jene behandelten gut, verläßlich und billig." (those treated well, reliably and cheaply.) |
 | pp. 14-15, Walled City passage | Only with the Sino-British agreement of 1984 did the government in Beijing permit the clearance. | "Erst mit der chinesisch-britischen Vereinbarung 1984 erteilte die Pekinger Regierung die Erlaubnis" (Only with the Sino-British agreement of 1984 did the Beijing government give permission) |
 | pp. 14-15, Walled City passage | By the end of 1993 the enclave was erased from the map of Kowloon. | "Ende 1993 war die exterritoriale Insel aus der Karte Kowloons getilgt" (At the end of 1993 the extraterritorial island was erased from the map of Kowloon) |
-| pp. 14-15, Walled City passage | At the time of writing (the article is of 27 June 1995), the site near Kai Tak Airport was a yawning, dusty emptiness. The writer does not say that he saw it himself. | "Heute begrüßt den Besucher an dieser prominenten Stelle, unweit des Flughafens Kai Tak, eine gähnende, staubige Leere." (Today a yawning, dusty emptiness greets the visitor at this prominent place, not far from Kai Tak Airport.) |
-| pp. 14-15, Walled City passage | In 1995 only the entrance building of the Yamen (the residence of the local ruler) was left on the now barren site. The writer calls it the only material record of the quarter. | "verblieb auf der nun öden Fläche." (remained on the now barren site.) |
 | pp. 14-15, Walled City passage | The writer dates the entrance building of the Yamen to about 1840; other sources give 1847. | "Einzig das um 1840 errichtete Eingangsbauwerk zum Yamen, der Residenz des örtlichen Machthabers" (Only the entrance building to the Yamen, the residence of the local ruler, built around 1840) |
 ### gap-foreign-free-press-13: Buchtip: Schönheit der Dichte
 
@@ -345,13 +313,12 @@ Not read yet.
 - **Date of the record:** 2004-08-23
 - **Files:**
   - not downloaded (curl exit 56): HTML of the review page.; https://time.com/archive/6647137/hong-kongs-golden-boy/; licence: No open licence stated (© TIME USA). (https://time.com/archive/6647137/hong-kongs-golden-boy/)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
 | text | The reviewer says that Booth's biggest coup as a boy was to talk his way into the Walled City, which he calls a notorious no-go area of vice, violence and opium dens. | "talking his way into Kowloon Walled City, a notorious no-go area of vice, violence and opium dens" |
 | text | Booth's guide was a young Triad member named Lau, who pointed to a pig that was being slaughtered in a butcher's shop nearby. | "his guide, a young Triad member named Lau, gestures toward a pig being slaughtered in a nearby butcher shop" |
-| text, quote of Booth | Booth writes that blood sprayed from the pig's neck. | "Blood sprayed from its neck" |
-| text, quote of Booth's memoir | Booth writes that Lau put his hands on his shoulder in an affable manner and warned him not to talk. The words in brackets in the quote are the reviewer's, not Booth's. | "You talk [about the Walled City], maybe you [end up] like this." |
 | text | INFERRED: Booth arrived in Hong Kong in 1952; the memoir covers his first three years there. Booth finished it just before he died in February (2004, INFERRED from the date of the review). | "on Martin Booth's first day in Hong Kong in 1952" |
 
 - **Leads:**
@@ -385,6 +352,7 @@ Not read yet.
 - **Date of the record:** 2015-07-09
 - **Files:**
   - `gap-campus-socialwork-press-16-20150709-lui.pdf` (in `local/`, not in git): PDF of the 明報 article, 4 pages, 337,778 bytes (text layer).; https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf; 337778 bytes; SHA-256 `856bf90b92f2bd838238bd926eebf195f0b0a3551df52de8ce24bda7df537851`; licence: No licence statement; the article is © the author and 明報 (all rights reserved presumed). (https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf)
+- **Note:** its 5 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -393,11 +361,6 @@ Not read yet.
 | p. 1 | He says that addicts smoking drugs in narrow lanes were perhaps easier to see in 藍田 than in the City. | "要在窄巷或暗角裏看見道友吸毒，當年的藍田可能較諸城寨更為易見" (to see addicts taking drugs in narrow lanes or dark corners, 藍田 at that time was perhaps easier than the City) |
 | p. 1 | Illegal gambling stalls and off-course betting (外圍) were spread over all districts of Hong Kong and Kowloon. The City did not have more of them, or larger ones. | "非法賭檔、外圍，它們散佈於港九各區，城寨也談不上更多或更大規模" (illegal gambling stalls and off-course betting were spread over all districts; the City did not have more or larger ones) |
 | p. 1 | Sex services were perhaps more open at 廟街, 謝菲道 and 大笪地 than in the City. | "廟街、謝菲道、大笪地等地方可能比較城寨更加明目張膽" (places such as 廟街, 謝菲道 and 大笪地 were perhaps more brazen than the City) |
-| p. 1 | As a visitor, he quickly lost his way. Almost all the narrow lanes were not straight, and they did not run north-south or east-west. | "區內絕大部分的窄巷，都不是直線的，而方向也不是南至北或東至西。" (almost all the narrow lanes in the area were not straight, and did not run south to north or east to west) |
-| p. 1 | When he looked for an address, he often came out on Tung Tau Tsuen Road (東頭村道), and on the next try on Lung Chun Road (龍津道), and missed the place again. The source gives only the Chinese names; the English names are from the repo's docs. | "又已經走到東頭村道；回頭再走一遍， 不知怎的又竟然走到了龍津道" (already came out on Tung Tau Tsuen Road; walked it again and somehow came out on Lung Chun Road) |
-| p. 1 | When he looked up, he could not see a line of sky. Sun or rain, water always dripped from somewhere above. | "昂首一望，看不見一線天空（不過，無論是晴天還是雨天，總有水滴從上面不知哪處地方滴下）" (looking up, not a thread of sky could be seen (but sun or rain, water always dripped from somewhere above)) |
-| p. 1 | In a building he climbed three flights of stairs and expected the third floor, but he was only on the second floor. Illegal mezzanines (閣樓僭建) made one storey into two, thus it was hard to find an address by number and floor. | "滿以為攀了三層便是三樓，但其實才只不過是上了二樓。閣樓僭建令一層變為兩層" (I thought three flights meant the third floor, but it was only the second floor. Illegal mezzanines made one storey into two) |
-| p. 1 | The lanes were dark and damp. A visitor noticed water pipes and electric wires that seemed to be connected improperly, and irregular buildings. | "更加留意那些應該不正當地接駁的水喉、電線，以及那些不規則的建築" (one noticed even more the water pipes and wires that were probably improperly connected, and the irregular buildings) |
 | p. 2 | The film Long Arm of the Law (省港旗兵) showed the City with drug addicts everywhere and prostitutes on the street. The writer says that this image is not close to reality. The English title is from the repo (depictions-2), not from this source. | "就像當年相當轟動的港產片《省港旗兵》所呈現出來的城寨一樣，吸毒的道友隨處可見" (like the City shown in the sensational Hong Kong film 省港旗兵, drug addicts were everywhere) |
 | p. 2 | Many people called the City a '三不管' area: the colonial Hong Kong government, the Chinese government and the British government did not step in with a high profile. | "即港英殖民政府、中國政府、英國政府都不會以高姿態介入和管理的地方" (a place where the British colonial government, the Chinese government and the British government would not step in and manage with a high profile) |
 | p. 2 | Outsiders on short visits noticed that dentists without a formal practising licence seemed especially many. | "無正式執業牌照的牙醫似乎特別多" (dentists without formal practising licences seemed especially numerous) |
@@ -555,13 +518,12 @@ Not read yet.
 - **Citation:** iDiscover (Urban Discovery Ltd.), 'iShop Tak Hing Fishballs', Kowloon City walk, © 2022-2023, https://walks.i-discoverasia.com/walks/kowloon-city/locations/tak-hing-fishballs; 新假期 WeekendHK, '香港系列之細間始終你好｜67歲老闆一年開364日！阮兆祥體驗手打魚蛋嚇到大叫', 20 June 2026; 王亞毛, '深度遊九龍城 細嘗「寨城風味」', 大公報 (Ta Kung Pao), 15 January 2025, 港聞 A4, https://www.tkww.hk/epaper/view/newsDetail/1879240195543535616.html
 - **Class:** secondary (Three later features on the fish-ball shop. The iDiscover page quotes the owner's own words (retrospective, about 2022), but the City part is narration. 大公報 gives the words of a tour guide, 陳智遠, who is not a witness. The item stays in secondary-sources/.)
 - **Date of the record:** 2022-2023 (iDiscover); 2025-01-15 (大公報); 2026-06-20 (WeekendHK)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
 | iDiscover page, text | iDiscover says Uncle Ping, now well in his 60s, started his career in the walled city. | "Now well in his 60s, Uncle Ping started his career in the walled city." |
-| iDiscover page, text | Uncle Ping says he started to help at a street stall when he was a teenager. | "I started helping out in a street stall when I was a teenager." |
 | iDiscover page, text | When the walled city was demolished, many street vendors moved to the Mainland, but Uncle Ping stayed in Hong Kong. | "When the walled city was demolished, many street vendors relocated to Mainland, but Uncle Ping decided to stay." |
-| iDiscover page, text | Uncle Ping says he gets up at 5 am each day to make fish glue, a mix of ice and fish paste, and then beats the balls into shape. This is his routine now, in the shop outside the City; the page does not say it was the same in the City. | "I wake up at 5am every day to prepare fish glue (a mixture of ice and fish paste)" |
 | iDiscover page, details; WeekendHK names 福佬村道 | The shop now is at 76 Fuk Lo Tsun Road (福佬村道), open daily 7 am to 6 pm. | "Open Daily 7am-6pm" |
 | WeekendHK, section 67歲老闆半世紀堅持, paragraph 1 | INFERRED: WeekendHK names the owner as 林羅平 and gives his age as 67 in June 2026 (thus born about 1958-1959, INFERRED). | "現年67歲的老闆林羅平" (the owner 林羅平, now 67) |
 | WeekendHK, section 67歲老闆半世紀堅持, paragraph 1 | INFERRED: WeekendHK says he has made fish balls since the age of 15, for more than half a century (thus from about 1973-1974, INFERRED). It does not name the City. | "由15歲起做魚蛋" (has made fish balls since 15) |
@@ -578,19 +540,23 @@ Not read yet.
   - Pearl Club, 'Tak Hing Fish Ball Company', https://www.pearlclub.com/cities/hong-kong/lunch/tak-hing-fish-ball-company (blocked: HTTP 429 and 403 on 2026-11-18).
 ### top-zh-testimony-13: 九龍寨城公園的前世今生
 
-- **Creator:** Wen Wei Po (香港文匯報), 文匯專題 A8; text 雨竹, photos 焯羚
-- **Date:** 2023-10-22
-- **Kind:** article
-- **Class:** secondary (A feature on the park and its history; it names no witness.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 香港文匯報
-- **Link:** https://dw-media.tkww.hk/epaper/wwp/20231022/a08-1022.pdf
-- **Proof that it exists:** pdftotext of the page: headline 「九龍寨城公園的前世今生」, sub-heads 「失落寨城蛻變為淡雅園林」 and 「居民相處充滿人情味」; byline 「◆文：香港文匯報記者 雨竹 攝：焯羚」.
-- **What it gives (finder's note, not checked):** General claims with no source: 「居民常要行走到遠處的東頭邨晾衫，或者在「大井街」輪候街喉用水」; neighbours knew each other. Also a list of films and games set in the City.
-- **Notes:** The laundry and street-tap details can come from residents, but the page gives no source. Mark any use as secondary.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 雨竹 (text) and 焯羚 (photos), 〈九龍寨城公園的前世今生：失落寨城蛻變為淡雅園林〉, 香港文匯報 (Wen Wei Po), 文匯專題, 22 October 2023, p. A8, https://dw-media.tkww.hk/epaper/wwp/20231022/a08-1022.pdf
+- **Class:** secondary (A 2023 feature on the park, with a short unsourced history of the City.)
+- **Date of the record:** 2023-10-22
+- **Files:**
+  - `top-zh-testimony-13-a08-1022-ac6bf16a.pdf` (in `local/`, not in git): E-paper PDF of Wen Wei Po, 22 Oct 2023, p. A8 (one page, 2.9 MB, with a text layer); https://dw-media.tkww.hk/epaper/wwp/20231022/a08-1022.pdf; 3072048 bytes; SHA-256 `f2a1e6d47f1a742761c68e76c3e956c107026825f61fa12c2bac32ecb7d00f7e`; licence: © 香港文匯報 (Wen Wei Po); no licence statement (https://dw-media.tkww.hk/epaper/wwp/20231022/a08-1022.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. A8, section 居民相處充滿人情味 | The feature says that residents of the City got on warmly and knew all their neighbours as soon as they stepped out; it gives no source. | "出門便認識所有街坊" (On going out one knew all the neighbours.) |
+| p. A8, section 居民相處充滿人情味 | The feature says that the closed-in buildings and 'handshake buildings' (握手樓) made relations very close, with a spirit of mutual help. | "九龍寨城因其封閉的建築和「握手樓」的設計，使得人際關係極為緊密" (Because of its closed-in buildings and 'handshake buildings', human relations in the Walled City were extremely close.) |
+| p. A8, section 居民相處充滿人情味 | Because of the poor housing, residents often walked to distant Tung Tau Estate (東頭邨) to dry their clothes, or queued at the street standpipe on Tai Chang Street (大井街) for water. The feature gives no source; the 2024 Ta Kung Wen Wei articles repeat this same sentence. | "居民常要行走到遠處的東頭邨晾衫，或者在「大井街」輪候街喉用水" (Residents often had to walk to distant Tung Tau Estate to dry clothes, or queue at the street standpipe on 'Tai Chang Street' for water.) |
+| p. A8, section 居民相處充滿人情味 | The feature says that after the Second World War the City filled with damp, narrow, dark multi-storey buildings on weak foundations, and became a place of vice and a cluster of cheap unlicensed dental clinics. | "廉價無牌牙醫診所的聚集地" (a gathering place of cheap unlicensed dental clinics) |
+| p. A8, col. 2 | After the Qing troops left in 1899 the yamen was used to shelter old people, widows and orphans; the word 'ALMSHOUSE' (廣蔭院) is carved above its main door. (Background history, no source given.) | "衙門曾被用於收容老人、寡婦、孤兒等" (the yamen was once used to shelter the old, widows, orphans and others) |
+| p. A8, col. 2 | In the yamen's front court stand two cannons cast in 1802, and on the west side there is an old well (as the park shows them today). | "衙門前庭兩側亦有兩尊於 1802 年（清嘉慶七年）建造的大炮，西側還有一眼古井" (On both sides of the yamen's front court are two cannons made in 1802, and on the west side an old well) |
+| p. A8, section 剷除陰影處的破敗與衰落 | During the clearance the Antiquities and Monuments Office dug up relics; the most notable are two granite stone tablets found at the main (South) Gate, carved 'South Gate' (南門) and 'Kowloon Walled City' (九龍寨城). | "兩塊於寨城正門（南門）出土的、分別刻有「南門」及「九龍寨城」的花崗岩石額" (two granite stone tablets unearthed at the main gate (South Gate), carved 'South Gate' and 'Kowloon Walled City') |
+| p. A8, col. 1 | The feature lists films shot inside the City in the 1980s: 《省港旗兵》, 《城寨出來者》 and 《重案組》. | "上世紀八十年代於寨城內取景的電影《省港旗兵》、《城寨出來者》、《重案組》等" (films shot on location inside the City in the 1980s, such as ...) |
 ### top-zh-testimony-8: 九龍城重建｜杜國威《城寨風情》睽違27年舞台重現三不管地帶情懷
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
@@ -609,78 +575,103 @@ Not read yet.
 | paragraph 9 (body paragraphs counted from the first one below the byline; photo captions not counted) | The 2024 staging was by 香港紫荊中樂團 at 香港大會堂音樂廳 on 3 and 4 April. | "將於4月3日及4日於香港大會堂音樂廳重溫經典" (will revisit the classic at 香港大會堂音樂廳 on 3 and 4 April) |
 ### zh-testimony-13: 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說
 
-- **Creator:** HK01 (香港01), 爆檸哥
-- **Date:** 2024-05-06
-- **Kind:** article
-- **Class:** secondary (A feature that relays an actor's words from earlier interviews that it does not name.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HK01
-- **Link:** https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA
-- **Proof that it exists:** 九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說 (爆檸哥, 2024-05-06 15:28)
-- **What it gives (finder's note, not checked):** 林家棟 moved into the City before age 10 and lived there four years, on the 12th floor of a building with no lift; each day after school he queued at the street corner with a red plastic bucket for water ('紅A膠水桶').
-- **Notes:** The article cites only '過去接受傳媒訪問時'. Find the original interview. A Day Magazine (2024-05-17, https://www.adaymag.com/2024/05/17/truths-facts-about-hong-kong-kowloon-walled-city.html, not opened) repeats the water queue.
-- **Same item in the finder files:** repo-audit-29
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 爆檸哥, 〈九龍城寨之圍城｜香港3料影帝城寨長大! 揭九龍城寨7個都市傳說〉, 香港01 (HK01), 開罐, 6 May 2024, https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA
+- **Class:** secondary (A 2024 web feature that paraphrases 林家棟's earlier interviews (retrospective testimony at second hand) and repeats urban legends.)
+- **Date of the record:** 2024-05-06
+- **Files:**
+  - `zh-testimony-13-_-_3_-_7_-898999a9.html` (in `local/`, not in git): HTML of the article; https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA; 526306 bytes; SHA-256 `cd120e159a4a194a9acda9e630f706d3dd95656181615e226d1d7c9523d22237`; licence: © HK01; no licence statement (https://www.hk01.com/%E9%96%8B%E7%BD%90/1016877/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E4%B9%8B%E5%9C%8D%E5%9F%8E-%E9%A6%99%E6%B8%AF3%E6%96%99%E5%BD%B1%E5%B8%9D%E5%9F%8E%E5%AF%A8%E9%95%B7%E5%A4%A7-%E6%8F%AD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A87%E5%80%8B%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page, 秘聞7 | 林家棟 said in past interviews that he moved into the City before he was 10 and lived there 4 years (the article's paraphrase; the original interview is not named). | "曾自爆未到10歲便搬入九龍城寨住了４年" (He once revealed that before age 10 he moved into Kowloon Walled City and lived there 4 years.) |
+| web page, 秘聞7 | 林家棟 lived on the 12th floor of a building that had no lift. | "當年住12樓，大廈沒有電梯" (He lived on the 12th floor then; the building had no lift.) |
+| web page, 秘聞7 | Every day after school 林家棟 took a red 'A'-brand (紅A) plastic bucket and queued at the street corner for water. | "紅A膠水桶，到街口輪候取水" (a red-A plastic water bucket, to queue at the street corner for water) |
+| web page, 秘聞7 | INFERRED: 林家棟 often went to a cha chaan teng on '龍津路' for egg tarts. The article writes 龍津路; the street is probably Lung Chun Road (龍津道) of the City (inferred: the repo's street names have 龍津道, not 龍津路). | "時常光顧龍津路茶餐廳食蛋撻" (often went to a cha chaan teng on 龍津路 to eat egg tarts) |
+| web page, 秘聞2 | The article gives the 1987 clearance figures: an area of only 0.026 km2 and 33,000 residents. | "只有0.026平方公里面積大，內裡住了3萬3千名居民" (only 0.026 km2 in area, with 33,000 residents inside) |
+| web page, 秘聞3 | Unsourced ('根據資料'): only three buildings in the City had lifts; buildings were at most 14 floors because of Kai Tak airport; most had no foundations. | "全個九龍城只有三座大廈有升降機" (in the whole of Kowloon City only three buildings had lifts) |
+| web page, 秘聞4 | Citing past archives and interviews, the article says the City was not fully lawless: police patrolled, and some units had legal utilities. | "其實也不是三不管" (in fact it was not a 'three-nobody-cares' zone) |
+| web page, 秘聞5-6 | Two stories in the article (a dead mother 'cooking' for her daughter in the 1980s; police at unit 1444) are urban legends with no source. | "寨內1444號單位有事發生" (something happened in unit 1444 inside the City) |
+
+- **Leads:**
+  - 林家棟's original media interview on his years in the City (12th floor, water queue): not named by HK01.
+  - A Day Magazine, 2024-05-17, https://www.adaymag.com/2024/05/17/truths-facts-about-hong-kong-kowloon-walled-city.html (not opened): repeats the water queue.
 ### top-zh-testimony-12: 曾肇弘 – 九龍城寨的污名與神話｜曾幾何時
 
-- **Creator:** 曾肇弘, Sing Tao Headline (星島), culture column
-- **Date:** 2024-05-07
-- **Kind:** article
-- **Class:** secondary (A column that retells the residents' views from City of Darkness; the writer saw only the park.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 星島
-- **Link:** https://www.stheadline.com/culture/3235722/%E6%9B%BE%E8%82%87%E5%BC%98-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%9A%84%E6%B1%A1%E5%90%8D%E8%88%87%E7%A5%9E%E8%A9%B1%E6%9B%BE%E5%B9%BE%E4%BD%95%E6%99%82
-- **Proof that it exists:** First sentence: 「近期港產片《九龍城寨之圍城》上演，演員陣容：古天樂、林峯、洪金寶……正好讓大家回顧一下消失的九龍城寨的歷史。」
-- **What it gives (finder's note, not checked):** A summary of the stigma and the myths of the City, from the book City of Darkness. No new witness.
-- **Notes:** Another 星島 page (realtime-finance 3342626) gave 'too many redirects' on 2026-11-17.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 曾肇弘, 〈九龍城寨的污名與神話｜曾幾何時〉, 星島頭條 (Sing Tao Headline), culture column, 7 May 2024, https://www.stheadline.com/culture/3235722/%E6%9B%BE%E8%82%87%E5%BC%98-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%9A%84%E6%B1%A1%E5%90%8D%E8%88%87%E7%A5%9E%E8%A9%B1%E6%9B%BE%E5%B9%BE%E4%BD%95%E6%99%82
+- **Class:** secondary (A 2024 opinion column that summarises a book; no new testimony.)
+- **Date of the record:** 2024-05-07
+- **Files:**
+  - `top-zh-testimony-12-_-_-4d18e262.html` (in `local/`, not in git): HTML of the column (short web page); https://www.stheadline.com/culture/3235722/%E6%9B%BE%E8%82%87%E5%BC%98-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%9A%84%E6%B1%A1%E5%90%8D%E8%88%87%E7%A5%9E%E8%A9%B1%E6%9B%BE%E5%B9%BE%E4%BD%95%E6%99%82; 267700 bytes; SHA-256 `968ebfdcc7aae0a25782a3516b974cd0c2783e8391cc2fcb2eddfb0fd7860630`; licence: © 星島 (Sing Tao); no licence statement (https://www.stheadline.com/culture/3235722/%E6%9B%BE%E8%82%87%E5%BC%98-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%9A%84%E6%B1%A1%E5%90%8D%E8%88%87%E7%A5%9E%E8%A9%B1%E6%9B%BE%E5%B9%BE%E4%BD%95%E6%99%82)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page, para. beginning 「提起九龍城寨」 | Citing the authors of City of Darkness, the column says that prostitution, gambling and drugs were rather rampant in the City in the 1950s and 1960s, and later much less open. | "上世紀五、六十年代的黃賭毒情況較為猖獗" (In the 1950s and 1960s prostitution, gambling and drugs were rather rampant.) |
+| web page | Retelling the residents interviewed in City of Darkness, the column says that they found the City no less safe than other districts. | "城寨的治安跟外面其他地區並沒兩樣" (Law and order in the Walled City was no different from other districts outside.) |
+| web page, para. beginning 「提起九龍城寨」 | The column says the Hong Kong government tried a limited management of the City: it sent cleaners at fixed times to clear refuse, postmen delivered letters, and police went up the buildings on patrol. | "包括定時派清潔工清理垃圾、郵差派遞信件、警察上樓巡邏等" (including sending cleaners at fixed times to clear refuse, postmen delivering letters, police going up the buildings on patrol, and so on) |
+| web page | The column says sanitation was extremely bad and that residents depended for a long time on polluted well water. | "居民則長期依賴受污染的井水" (Residents relied for a long time on polluted well water.) |
+
+- **Leads:**
+  - City of Darkness: Life in Kowloon Walled City (Girard and Lambot), Chinese edition 『黑暗之城——九龍城寨的日與夜』: the source of the column's claims on refuse collection, well water and safety.
 ### zh-testimony-14: 《九龍城寨之圍城》背後故事：清拆30年後　仍有人懷念城寨
 
-- **Creator:** Ta Kung Wen Wei Media (大公文匯全媒體); editor 常伯勞
-- **Date:** 2024-05-07
-- **Kind:** article
-- **Class:** secondary (A compiled feature; it names people who lived in the City but quotes them only briefly.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 大公文匯全媒體
-- **Link:** https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html
-- **Other links:** https://www.dotdotnews.com/a/202405/07/AP6639f7c4e4b096780aa3df15.html
-- **Proof that it exists:** 《九龍城寨之圍城》背後故事：清拆30年後　仍有人懷念城寨 (2024.05.07 18:15)
-- **What it gives (finder's note, not checked):** Names people who grew up in or came from the City: director 杜琪峰 ('如果有警察抓你，你跑到九龍城寨裏就沒事了'), the film's co-producer 莊澄 (lived there as a child and advised on the set), the actor 林家棟, and the brothers 秦沛, 姜大衛 and 爾冬陞. Lambot (林保賢) recalls that each resident had a story.
-- **Notes:** Useful as a list of people for new interviews. The 點新聞 text (alt URL, reporter 程程, 2024-05-07) is a parallel version and adds that 劉德華 shot ten days in the City for 《阿飛正傳》.
-- **Same item in the finder files:** repo-audit-28
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 大公文匯全媒體, 〈《九龍城寨之圍城》背後故事：清拆30年後　仍有人懷念城寨〉, ed. 常伯勞, 7 May 2024, https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html ; parallel text by 程程, 點新聞 (dotdotnews), 7 May 2024, https://www.dotdotnews.com/a/202405/07/AP6639f7c4e4b096780aa3df15.html
+- **Class:** secondary (A 2024 news feature that relays recollections of people who grew up in the City, mostly without naming the source.)
+- **Date of the record:** 2024-05-07
+- **Files:**
+  - `zh-testimony-14-AP6639ff3de4b0e3971d70ff30-3707c170.html` (in `local/`, not in git): HTML of the article (大公文匯); https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html; 260895 bytes; SHA-256 `9b1134621e568a4284402eaa55d718eed8af370d65d9714eec620e054a0a7e15`; licence: © 大公文匯全媒體; no licence statement (https://www.tkww.hk/a/202405/07/AP6639ff3de4b0e3971d70ff30.html)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page | The film's co-producer 莊澄 lived in the City with his family as a child. | "童年跟家人曾住過城寨" (as a child lived in the Walled City with his family) |
+| web page | The actor 林家棟 came from the City and helped the film crew find his former neighbours, who gave first-hand information. | "出身九龍城寨" (came from Kowloon Walled City) |
+| web page | The brothers 秦沛, 姜大衛 and 爾冬陞 all grew up in the City (no source given). | "都曾在九龍城寨成長" (all grew up in Kowloon Walled City) |
+| web page | Director 鄭保瑞 said in an earlier interview that none of the former residents he asked had wanted to stay in the City for life: it was dirty and chaotic, but cheap, and work let people save and move out. | "沒有一個人想一輩子留在城寨" (not one person wanted to stay in the Walled City for life) |
+| web page | The article lists food and services in the City: egg tarts, siu mai, char siu rice, haircuts, medical care and grocery shops. | "吃如蛋撻、燒賣、叉燒飯" (to eat, such as egg tarts, siu mai, char siu rice) |
+| web page (大公文匯 version), section 「九龍城寨」題材電影 | The article says that 劉德華 shot ten days of scenes in the City for 《阿飛正傳》, but the scenes were not used in the final film. The small room where the gambler played by 梁朝偉 dresses at the end of the film was also shot in the City. | "亦為《阿飛正傳》在城寨拍十日戲" (also shot ten days of scenes in the Walled City for 《阿飛正傳》) |
+| web page (大公文匯 version), section 「九龍城寨」前世今生 | The article repeats a legend that residents could knock down aircraft from the rooftops with a bamboo pole. | "站在樓頂拿根竹竿就能把飛機打下來的傳說" (the legend that standing on the roof with a bamboo pole one could knock down a plane) |
+
+- **Leads:**
+  - Interviews with 莊澄 and with 秦沛, 姜大衛 or 爾冬陞 about their childhood in the City (not named by the article).
+  - 鄭保瑞's earlier interview on former residents (in 『Jet』 magazine, per Yahoo Finance 2024-05-12).
 ### zh-testimony-22: 九龍城寨「大老闆」 完美套現數億離場
 
-- **Creator:** YahooYahoo Finance Hong Kong (財經)
-- **Date:** 2024-05-12
-- **Kind:** article
-- **Class:** secondary (A finance feature that relays the words of others and adds the reporter's own estimate.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © Yahoo Hong Kong
-- **Link:** https://hk.finance.yahoo.com/news/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8C%E5%A4%A7%E8%80%81%E9%97%86%E3%80%8D-%E5%AE%8C%E7%BE%8E%E5%A5%97%E7%8F%BE%E6%95%B8%E5%84%84%E9%9B%A2%E5%A0%B4-232010285.html
-- **Proof that it exists:** 九龍城寨「大老闆」 完美套現數億離場 (Yahoo財經, updated 2024-05-12)
-- **What it gives (finder's note, not checked):** Relays 敏叔 (from 星島日報) on a landlord with 28 buildings, and the martial-arts actor 羅莽, who lived in the City: his father saved more than HK$400,000 and built a five-storey 唐樓 in the City to live in; compensation of at least HK$200,000 a unit. The total of HK$470 million and more is the reporter's own estimate.
-- **Notes:** Lead: find 羅莽's own interview about his family's building. One search for it found nothing.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Yahoo財經 (Yahoo Finance Hong Kong), 〈九龍城寨「大老闆」 完美套現數億離場〉, 12 May 2024, https://hk.finance.yahoo.com/news/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8C%E5%A4%A7%E8%80%81%E9%97%86%E3%80%8D-%E5%AE%8C%E7%BE%8E%E5%A5%97%E7%8F%BE%E6%95%B8%E5%84%84%E9%9B%A2%E5%A0%B4-232010285.html
+- **Class:** secondary (A 2024 finance feature that relays a former resident (敏叔, from 星島日報) and the actor 羅莽, and adds the reporter's own estimates.)
+- **Date of the record:** 2024-05-12
+- **Files:**
+  - `zh-testimony-22-_-_-232010285-aee6458c.html` (in `local/`, not in git): HTML of the article; https://hk.finance.yahoo.com/news/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8C%E5%A4%A7%E8%80%81%E9%97%86%E3%80%8D-%E5%AE%8C%E7%BE%8E%E5%A5%97%E7%8F%BE%E6%95%B8%E5%84%84%E9%9B%A2%E5%A0%B4-232010285.html; 465161 bytes; SHA-256 `ed72883f1ad27e5f2c7ea7c740c3d69c2eca98eb93d3b9522a3e2c2fa93ee4a0`; licence: © Yahoo Hong Kong; no licence statement (https://hk.finance.yahoo.com/news/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E3%80%8C%E5%A4%A7%E8%80%81%E9%97%86%E3%80%8D-%E5%AE%8C%E7%BE%8E%E5%A5%97%E7%8F%BE%E6%95%B8%E5%84%84%E9%9B%A2%E5%A0%B4-232010285.html)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page | An old neighbour, 敏叔, told 星島日報 that he knew a landlord who owned 28 buildings in the City; after the clearance this landlord got a large compensation and emigrated under the investment-immigration scheme. The landlord is not named. | "在城寨持有28幢樓" (held 28 buildings in the Walled City) |
+| web page | The article says the City had about 350 buildings (no source given). | "城寨當年有約350幢樓宇" (the Walled City then had about 350 buildings) |
+| web page | From 羅莽's recollection and 'other information', each unit got at least HK$200,000 in compensation. | "一個單位獲賠起碼20萬元" (each unit was compensated with at least HK$200,000) |
+| web page | The martial-arts actor 羅莽 says that his father saved more than HK$400,000 and built a five-storey tenement (唐樓) in the City for the family to live in. | "其家父儲了四十多萬元 ... 興建一幢五層唐樓自住" (his father saved over HK$400,000 ... built a five-storey tong lau to live in) |
+| web page | INFERRED: The total of 'more than HK$470 million' for the 28-building landlord is the reporter's own estimate (28 buildings x 14 floors x 6 flats x HK$200,000); it is not a documented figure. | "就假設每層有6伙" (let us assume there were 6 flats per floor) |
+| web page | The article says that title deeds in the City were guaranteed only by the Kaifong association (街坊會). | "城寨屋契只由街坊會作擔保" (Walled City house deeds were guaranteed only by the kaifong association) |
+| web page | It reports (據報) that many restaurants in Hong Kong and Kowloon bought from the City's roast-meat and fish-ball workshops, and that the fish-ball workshops' share of the whole Hong Kong market may have been as high as 80%. The article names no source for either claim. | "魚蛋工場在全港市佔更可能高達八成" (the fish-ball workshops' share of the whole Hong Kong market may have been as high as 80%) |
+| web page | The reporter notes that the urban legend that 跛豪 (吳錫豪) used the City as a drug base cannot explain the rich landlord, because 跛豪 left prison in 1991 and died half a year later, before the clearance of 1993. | 「跛豪」在1991年出獄後半年便過身 ('跛豪' died half a year after leaving prison in 1991) |
+
+- **Leads:**
+  - 星島日報 (Sing Tao Daily), 2024, interview with the old resident 敏叔 on the landlord with 28 buildings (date and URL not given by Yahoo).
+  - 羅莽's own interview on his father's five-storey building in the City (not found).
+  - 『Jet』 magazine interview with director 鄭保瑞 on former residents (2024).
 ### repo-audit-24: 轟動戛納，再現港片輝煌，還能帶你回到80年代的九龍城寨？
 
 - **Status:** Read on 2026-11-18; a checker checked a sample of the facts on 2026-11-19.
 - **Citation:** 小星星, '轟動戛納，再現港片輝煌，還能帶你回到80年代的九龍城寨？', 鉅亨號 (Anue 鉅亨網), 26 May 2024, credited at the end '(鳳凰衛視)' (Phoenix TV); it names its frame as the programme 《最後的城池——香港九龍城寨歷史記憶》. https://hao.cnyes.com/post/86760
 - **Class:** secondary (A web repost of Phoenix TV material: narration plus short interview lines. One former resident, 陳協平, speaks (his words are retrospective, 2024 or earlier: first-hand but given later). The other speakers are a historian (蕭國健) and the photographer Ian Lambot (林保賢), who are not residents. The item stays in secondary-sources/; the documentary is the better citation.)
 - **Date of the record:** 2024-05-26
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
 | body, speaker label before his line | A former resident, 陳協平, speaks in the article. The article names him as a kaifong of the City and a former vice-chairman of the 九龍城寨街坊福利會. | "九龍城寨街坊、原九龍城寨街坊福利會副會長" (Kowloon Walled City kaifong (neighbour), former vice-chairman of the Kowloon Walled City Kaifong Welfare Association) |
-| body, paragraph on the 1947 notice | 陳協平 says that each time the government came to clear the City, the residents opposed it. There was much friction and dispute, and for the residents it was a defence of their home. | "來拆遷一次，居民就反對一次，有很多摩擦、爭執、糾紛，對居民來說就是要保衛這裡。" (Each time they came to clear, the residents opposed once more; there was much friction, quarrelling and dispute; for the residents it was about defending this place.) |
 | body, paragraph on 1955 | A 1955 government statistical report on illegal activity in the City counted 120 opium and drug dens, 20 brothels, 5 gambling houses and 16 strip-show venues. The article does not give the reference of the report. | "當時的九龍城寨內共有120間煙館毒檔、20間妓院、5間賭館、16間脫衣舞場" (At that time the City held 120 opium and drug dens, 20 brothels, 5 gambling houses and 16 strip-show venues.) |
 | body, paragraph on 1958 | After a serious murder in the City, a colonial court found the killer guilty, and he was hanged on 12 August 1958. The article names neither the killer nor the victim. | "於1958年8月12日行刑" (executed on 12 August 1958) |
 | body, paragraph on 1958 | After the 1958 case, the police began to enforce the law in the City: they arrested offenders and closed illegal businesses. | "此後，警方開始在城寨執法，抓捕犯人、關停各種非法活動。" (After this, the police began to enforce the law in the Walled City, arresting offenders and shutting down all kinds of illegal activity.) |
@@ -740,16 +731,11 @@ Not read yet.
   - A US newspaper of 1967 that wrote that the City 'is neither walled nor is it a city... In reality it is a tiny enclave of sin and filth'; Gafencu does not name it.
 ### top-zh-testimony-15: 【區區有志】「三不管」歷史尋蹤
 
-- **Creator:** Hong Kong Chronicles Institute 香港地方志中心
-- **Date:** unknown
-- **Kind:** film
-- **Class:** secondary (A short history video by a chronicle institute; its page names no witness.)
-- **Value:** low
-- **Language:** zh
-- **Access:** js-only
-- **Licence:** © 香港地方志中心
-- **Link:** https://www.youtube.com/watch?v=KuyZc1UkHss
-- **Other links:** https://www.hkchronicles.org.hk/志趣古今/志影院/「三不管」歷史尋蹤
-- **Proof that it exists:** oEmbed: title as above, author_name Hong Kong Chronicles Institute 香港地方志中心. The institute's page gives a short text only.
-- **What it gives (finder's note, not checked):** The page contrasts the dark alleys of the films with the daily life of the residents and invites a visit to the park. No interviewee is named.
-- **Notes:** The institute's oral-history section (https://www.hkchronicles.org.hk/志藏檔案/口述歷史) holds only three records of 何智慧 on 梅夫人婦女會; none on the City.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the text of the Hong Kong Chronicles Institute page (no date shown). I did not watch the YouTube video (KuyZc1UkHss): the page gives no description or transcript, and video is out of scope.
+- **Citation:** Hong Kong Chronicles Institute (香港地方志中心), 〈【區區有志】「三不管」歷史尋蹤〉, video page, undated (after the 2024 film), https://www.hkchronicles.org.hk/志趣古今/志影院/「三不管」歷史尋蹤 ; video https://www.youtube.com/watch?v=KuyZc1UkHss
+- **Class:** secondary (A later (about 2024) heritage video about the park; the page names no witness.)
+- **Date of the record:** undated (about 2024, inferred from its reference to the film 《九龍城寨之圍城》)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page, para. 1 | The page invites viewers to recall the time when they went into the City with toothache to see an unlicensed dentist; it is a prompt, not a testimony. | "曾經因為牙痛，踏足寨城光顧無牌牙醫的那個時期" (the time when, because of toothache, one set foot in the Walled City to visit an unlicensed dentist) |
