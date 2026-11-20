@@ -2,10 +2,9 @@
 
 CO, FO and FCO file records and copies of the time; most files need a visit or a copy order.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 3 of 17 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1898-1988.
 - **Items:** 17, of which 4 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -33,6 +32,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Total records: 36 — CO 1030/1415 Kowloon walled city 1959 ... FCO 40/2253/1 Closed extracts: 14 pages
 - **What it gives (finder's note, not checked):** Full list of 36 UK files with reference, title, dates and ids. New files beyond the README: FCO 40/1895 (1985, 'With plans', closed to 2049), FCO 40/2476 (1988), FCO 40/1349 (1981, registration of land instruments), FCO 40/254-255 (1970 incidents), FCO 21/1139 (1973-74) and FCO 21/1268 (1974, environmental and political considerations), CO 537 and CO 1030 files of 1947-1964, FO 371/170651-2 (1963, slum clearance).
 - **Notes:** Out of my image lens, but useful. FCO 40/1895 details: closure code 63 (international relations), opening date 1 Jan 2049, former ref HKK 040/45, note 'With plans'. FCO 40/2253 has 14 pages of closed extracts (FCO 40/2253/1). Another finder wrote tna.json in this folder: check for overlap.
+- **Reading of 2026-11-20:** it is a duplicate of another item. This search is the same as the second url of tna-1 ('"Kowloon Walled City"', 100 results). I ran it again (Discovery API in the browser) and got the same 36 records. All its facts are in tna-1, which also covers two wider searches. The finder's list of new files is correct.
 
 ### institutions-5: Future of Hong Kong: Kowloon Walled City (FCO 40/2476)
 
@@ -68,20 +68,18 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### tna-1: Discovery, the catalogue of The National Archives: records about the Kowloon Walled City (search "walled city" AND (Kowloon OR "Hong Kong"), and "Kowloon City")
 
-- **Creator:** The National Archives (UK), Kew
-- **Date:** records 1898-1988; catalogue read 2026-11-09
-- **Kind:** catalogue
-- **Class:** primary (It is the archive catalogue of files that UK departments made at the time.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** Crown copyright. TNA catalogue data usually has the Open Government Licence v3.0 (not checked on the page).
-- **Link:** https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=%22walled%20city%22%20AND%20(Kowloon%20OR%20%22Hong%20Kong%22)&sps.resultsPageSize=100
-- **Other links:** https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=%22Kowloon%20Walled%20City%22&sps.resultsPageSize=100, https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=%22Kowloon%20City%22&sps.resultsPageSize=100, https://beta.nationalarchives.gov.uk/catalogue/id/C16419194/, https://discovery.nationalarchives.gov.uk/API/records/v1/details/C16419194
-- **Proof that it exists:** API JSON: count 36 for the phrase "Kowloon Walled City", 43 for the wider query. Record FCO 40/2253, "Future of Hong Kong: Kowloon Walled City", 1987 Jan 01 - 1987 Dec 31. Beta page title: "Future of Hong Kong: Kowloon Walled City - The National Archives".
-- **What it gives (finder's note, not checked):** Reference, title, dates, former reference, opening date and closure status of about 60 pieces on the Walled City, 1898-1988. For the peak it shows three files: FCO 40/1895 (1985, closed until 2049), FCO 40/2253 (1987) and FCO 40/2476 (1988). No piece has a Walled City title for 1986 or for 1989-1993.
-- **Notes:** The API needs no key and gives JSON. Each record has closureStatus, openingDate, note and formerReferenceDep. The detail call /API/records/v1/details/<id> also gives a digitised flag. The flag was false for each record that I checked (FCO 40/1895, 2253, 2253/1, 2476; PREM 19/2230; DEFE 6/52/164). All originals are paper files at Kew. PIECE LIST (reference; dates; id; notes). FCO 40: 157 Kowloon walled city and adjoining areas (TNA dates it 1969, not 1970; C10768029; opened 2000; HKK 1/31). 254 and 255 Incidents in Kowloon Walled City (1970; C10907760, C10907761; HKK 1/13 and HKK 1/13 ANNEX). 790 and 980 Kowloon Walled City and aircraft safety in Hong Kong (1977, 1978; C11435190, C11490582; HKK 183/1). 1349 Kowloon Walled City: registration of instruments affecting land transactions (1981; C14462583; opened 2014-06-13; HKK 361/2). 1511 Compulsory acquisition of land in the Kowloon Walled City (1982; C14897329; opened 2015-08-21; HKK 361/1). 1895 Future of Hong Kong: Kowloon Walled City (1985; C16246953; CLOSED until 2049-01-01; note "With plans"; HKK 040/45). 2253 same title (1987; C16419194; opened 2019-12-05; HKB 040/1). 2253/1 Closed extracts: 14 pages (C17363610; closed until 2049; FOI exemption, criterion "International Relations - prejudice", signed 2020-05-01). 2476 same title (1988; C16478696; opened 2017-07-20; HKB 040/8). 2212, 2213, 2214 Minutes and Hansards of the Legislative Council of Hong Kong (1987, parts A-C; C16419329, C16419330, C16419331; opened 2017-04-25): this answers the README lead on FCO 40/2214. 2236 Relations between Hong Kong and China (1987; C16419396). 2245 Visits by Sir David Akers-Jones and Sir David Wilson (1987; C16419405). 2246 Visits by Hong Kong Government officials (1987; C16419406). FCO 21: 1139 Kowloon Walled City of China in Hong Kong (1973 - 25 Jan 1974; C11161805). 1268 Kowloon Walled City of China, Hong Kong: environmental and political considerations (1974; C11222821; note "With plans and photograph"). FO 371: 83484 Proposals regarding utilization of the walled city and adjacent area in the leased territory at Kowloon (1950; C2841063). 133332 British jurisdiction over Kowloon walled city (1958; C2890825). 141233 Jurisdiction in Kowloon Walled City (1959; C2898691). 170651 and 170652 Kowloon Walled City: Chinese claims under 1898 Treaty; slum clearance (1963; C2928109, C2928110; extract 170651/1 now open). CO 1030: 394 Question of jurisdiction within walled city of Kowloon (1955; C338357). 810 and 811 Kowloon Walled City in Hong Kong (1958-1959; C338773, C338774). 1415 Kowloon walled city (1959; C339378). 1338 Kowloon walled city, Hong Kong (1960-1962; C339301). 1698 and 1699 Kowloon walled city (1963, 1964; C339661, C339662). CO 537: 2190 Future policy: Kowloon walled city (1947; C1250716). 3705, 3706, 3707 Kowloon walled city, parts I-III (1948; C1252232, C1252233, C1252234). 3708 letter from Sir Stafford Cripps (1948; C1252235). 3709 Canton incident (1948; C1252236). 3710 briefs to Secretary of State at New York (1948; C1252237). 3711 reference to Law Officers (1948; C1252238). 4807 Kowloon walled city (1949; C1253336). 4808 Canton incident (1949; C1253337). 6049 reference to Law Officers (1950; C1254587). 7316 Hong Kong: future policy; Kowloon Walled City (1950-1951; C1255858; opened 2022-08-02). CO 129: 544/14 Proposed public park in Kowloon: question of Chinese jurisdiction in city area (1933; C2329775). 546/11, 552/8, 556/15 Kowloon city: expropriation of Chinese owned land / property (1934, 1935, 1936; C2329810, C2329888, C2329952). DEFE: 7/599 and 7/600 Hong Kong: Chinese request for jurisdiction of Walled City of Kowloon (1948-1950, 1959-1960; C658877, C658878). 4/115/6 Chiefs of Staff minutes, item 7 Walled City of Kowloon (16 Jan 1959; C13511087). 6/52/164 Walled City of Kowloon (13 Feb 1959; C13524119). 5/7/70 Kowloon City: copy of a Colonial Office letter (9 June 1948; C13512304). 4/12/54, 4/13/62, 4/13/80, 4/14/90, 4/15/110 Chiefs of Staff minutes with a Kowloon City item (Apr-Aug 1948). WO 203/6253 Chinese jurisdiction in Kowloon City (May 1947 - Dec 1948; C1246770). PREM 19: 1796 and 2230 Future of Hong Kong, parts 18 and 19 (1985-1987; C14568655, C16204963): no Walled City title. Maps and photos: MR 1/787/1 'S.D. No. 1 Kowloon City' map (1925; C9147358). CN 3/52 nine photographs of New Kowloon terrain (1926; C11486156). CO 1069/453 Hong Kong 10 photographs (1898; C11443699). British Library records in the same catalogue: Photo 850, Colonel R. A. Harris collection, 1930s-1940s, with old Kowloon walls; Photo 527/1(50) and 527/2(75), execution at Kowloon City, 11 May 1891; Photo 905, 20 postcards, 1890s-1900s. Not checked: CO 1030/934 (the README names it). No CAB piece has Kowloon City or Walled City in its title. Search extracts of the hkintexts copy of FCO 40/2253 (blocked, not checked): a letter of 12 Jan 1987 from the Hong Kong Government Secretariat on talks with Qiao Zonghuai of Xinhua between 13 Sep 1986 and 12 Jan 1987; clearance in three phases over three years; a one-day "freezing" survey; the rule of seven years of residence by 31 Mar 1990 (pp. 7, 12, 77).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** The National Archives (UK), Discovery catalogue, API searches '"walled city" AND (Kowloon OR "Hong Kong")' (43 records), '"Kowloon Walled City"' (36) and '"Kowloon City"' (17), and detail records, https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=%22walled%20city%22%20AND%20(Kowloon%20OR%20%22Hong%20Kong%22)&sps.resultsPageSize=100 (read 2026-11-20).
+- **Class:** secondary (A modern catalogue (a finding aid) of files that are primary. Keep it in tna-files-kwc-1898-1991 as the index of the files.)
+- **Date of the record:** catalogue read 2026-11-20; records of 1845-1988
+- **Note:** the reader classed the whole item as secondary: its 22 facts are in the secondary twin, [`../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md`](../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md).
 
+- **Leads:**
+  - FCO 40/2253 (1987, open since 2019, at Kew, not digitised): the only open file of the peak years with the City in its title, apart from FCO 40/2476.
+  - FCO 40/1895 (1985, 'With plans'): closed until 2049; a Freedom of Information request is the only way in.
+  - FCO 40/2476 (1988), FCO 40/1511 (1982), FCO 40/1349 (1981), FCO 21/1268 (1974, with plans and a photograph): open at Kew, not digitised.
+  - CO 1030/394 (1955): probably holds the Savingram of 11 March 1955 and the police reports of 1953-54 that Lambot cites (INFERRED).
+  - British Library Photo 905 (8) and (10): postcards of the Hau Wong Temple and of the inside of Kowloon City, about 1930.
 ### tna-6: FCO 40/254 and FCO 40/255: Incidents in Kowloon Walled City
 
 - **Creator:** Foreign and Commonwealth Office, Hong Kong Department (registered file HKK 1/13 and its annex)
@@ -164,36 +162,36 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### gwulo-12: Kowloon City proposed hospital (The National Archives, MR 1/787)
 
-- **Creator:** Hong Kong Government; sent with a despatch of Governor R E Stubbs
-- **Date:** 1925
-- **Kind:** map
-- **Class:** primary (A government plan of 1925, photographed at The National Archives.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Crown copyright (map); photo by Gwulo
-- **Link:** https://gwulo.com/media/41291
-- **Other links:** https://gwulo.com/node/56249, https://discovery.nationalarchives.gov.uk/details/r/C4559814
-- **Proof that it exists:** Kowloon City proposed hospital (The National Archives (UK), ref MR 1/787, date 1925, place: Kowloon Walled City (Pre-WW2) [1847-c.1943])
-- **What it gives (finder's note, not checked):** A plan at 1 inch to 75 feet with streets, numbered plots and the site for a hospital and dispensary at Kowloon City in 1925. A reader says that the site can be that of the almshouse in the Walled City.
-- **Notes:** The article is "The National Archives - Historic Hong Kong maps and plans" (David, 12 Oct 2021, node 56249). It files the plan under CO 34175. Same article: media 41297 "Kowloon City" (town planning map of 1923, MR 1/797, from CO 129/494) and media 41294 "Kowloon City (detail)"; these two were not opened. The article does not write about the Walled City.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Hong Kong Government, 'S.D. No. 1 Kowloon City': plan of streets, numbered plots and the proposed site of a new hospital and dispensary, signed R F [?]Jackman, 1925, 35 x 45 cm, The National Archives, MR 1/787/1 (from CO 129/488; first with despatch No. 275 of Governor R E Stubbs, then CO file 34175 of 1925); photo on Gwulo, 'Kowloon City proposed hospital', https://gwulo.com/media/41291 , posted 12 Oct 2021, in David, 'The National Archives - Historic Hong Kong maps and plans', https://gwulo.com/node/56249 (read 2026-11-20).
+- **Class:** primary (A government plan of 1925 (photographed in 2021). The tree primary is correct; the Gwulo and TNA texts about it are secondary.)
+- **Date of the record:** 1925 (the plan; signature dated 17.6.25, INFERRED reading)
+- **Files:**
+  - `gwulo-12-img_3686-kowloon-city.edits_-e24687d1.jpg` (in `local/`, not in git): Gwulo's 640x496 px photo of the plan MR 1/787/1 (the only size the page links).; https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/thumbnails/image/img_3686-kowloon-city.edits_.jpg?itok=6FQQXfMK; 43354 bytes; SHA-256 `f3bd44be3919a628c7e52bf2c0754627a479a4439e2f538814de8fbf6a2b47ad`; licence: No statement on the Gwulo page; TNA terms say images of its records can be copied for personal use, private study and education only, with Image Library permission for other uses. (https://www.nationalarchives.gov.uk/terms-and-conditions/discovery-for-developers-about-the-application-programming-interface-api/)
+- **Note:** its 8 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md`](../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| photo, upper left of the plan | INFERRED: The title on the plan reads 'S.D. No. 1, Kowloon City', with a scale of 64 inches to 1 mile (about 1:990). The catalogue says 1 inch to 75 feet (INFERRED reading of a 640 px photo). | "S. D. No 1 KOWLOON CITY. SCALE 64" = 1 MILE." |
+| photo, centre right of the plan | INFERRED: A pink rectangle marks the site, with its area: about 34,580 square feet, or about 3,200 square metres (INFERRED reading of a blurred 640 px photo; the second digit is not clear and can be 4 or 9). | "AREA 34580 Sq. Ft. (ABOUT)" |
+| photo, lower right of the plan | INFERRED: A signature at the lower right has the date 17.6.25 (17 June 1925) (INFERRED reading of a blurred photo). | "17.6.25" |
+| photo, whole plan | INFERRED: The plan draws dense small plots on and around a hill at the upper left, and larger rectangular lots south of it. I could not find the line of the City walls, thus I cannot say if the site is inside or outside the City (INFERRED from a 640 px photo). | "S. D. No 1 KOWLOON CITY" |
+
+- **Leads:**
+  - MR 1/787/1 at The National Archives, Kew (35 x 45 cm, not digitised): a full-size image can show if the hospital site is inside the walls.
+  - CN 3/52 at The National Archives (about 1926): two photographs of view 'A', Kowloon City and the tidal flats of Kowloon Bay.
+  - MR 1/797/17-18: the 1923 key map of Kowloon (1 inch to 220 yards), and MR 1/797/12-16, the detail plans (1 inch to 200 feet).
 ### gwulo-11: Proposed public park in Kowloon: question of Chinese jurisdiction in city area (CO 129/544/14), in "The National Archives - Historic Hong Kong documents"
 
-- **Creator:** Colonial Office (file of 1933); David, Gwulo (article of 2021)
-- **Date:** 1933
-- **Kind:** document
-- **Class:** primary (A Colonial Office file of 1933; the Gwulo article of 11 Oct 2021 quotes it and is secondary.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Crown copyright (file); © Gwulo (article)
-- **Link:** https://gwulo.com/node/56213
-- **Other links:** https://discovery.nationalarchives.gov.uk/details/r/C2329775
-- **Proof that it exists:** The National Archives - Historic Hong Kong documents (David, 11 Oct 2021), section "Arguing with China about Kowloon City"
-- **What it gives (finder's note, not checked):** The plan of 1933 to move the residents of the Walled City and make a public park. The Chinese government's note of 28 June 1933 that the City was still under Chinese control by the convention of 1898. Quotations from the agreement of 1898 and from a telegram of 1899.
-- **Notes:** The TNA Discovery record was not opened. The article shows David's photos of pages of the file. The full file is at Kew only.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** David (Gwulo), 'The National Archives - Historic Hong Kong documents', section 'Arguing with China about Kowloon City', Gwulo, 11 Oct 2021, https://gwulo.com/node/56213 ; on The National Archives, CO 129/544/14, 'Proposed public park in Kowloon: question of Chinese jurisdiction in city area', 1933 Aug. 9-Sept., https://discovery.nationalarchives.gov.uk/details/r/C2329775 (read 2026-11-20).
+- **Class:** secondary (A 2021 summary of the 1933 file by a visitor to Kew. It quotes two primary texts (the convention of 1898 and a telegram of 1899). The file (primary) is the reason to keep the item in tna-files-kwc-1898-1991; the article can also go to secondary-sources/.)
+- **Date of the record:** file of 1933 (TNA: 1933 Aug. 9-Sept.); article of 11 Oct 2021
+- **Note:** the reader classed the whole item as secondary: its 8 facts are in the secondary twin, [`../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md`](../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md).
 
+- **Leads:**
+  - CO 129/544/14 at The National Archives, Kew (correspondence of 1933, not digitised): the note of the Chinese government of 28 June 1933 and the British minutes.
+  - The telegram of 30 May 1899 from the British side to the Chinese side, quoted in CO 129/544/14.
 ### tna-13: CO 129/544/14, CO 129/546/11, CO 129/552/8 and CO 129/556/15: Kowloon city: expropriation of Chinese property
 
 - **Creator:** Colonial Office (Hong Kong original correspondence)

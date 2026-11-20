@@ -74,3 +74,19 @@ See the leads under each item in the primary folder.
 | NPTKP19870121, leaf n3 (港聞 page), right half, middle (特稿 by 蕭錦行) | In the rest of Hong Kong an owner registered a sale at the Land Office (田土廳) of the Registrar General's Department (註冊總署). The City had not been Crown land, so no sale of a building in the City was registered there. This is the reporter's background text in the feature; it gives no speaker. | "所有的樓宇交易均無需向田土廳登記" (No building transactions had to be registered with the Land Office.) |
 | NPTKP19870121, leaf n3 (港聞 page), right half, middle (特稿 by 蕭錦行) | The paper says that a red deed was a land deed that the Empress Dowager Cixi (慈禧太后) gave herself, and that Hong Kong had only a few. White deeds came from officials of the rank of the Viceroy of Liangguang (兩廣總督); some ancestral halls (祠堂) still held them. | "現時本港仍有一些祠堂的地契是「白契」" (Some ancestral halls in Hong Kong still hold 'white deeds' as land deeds.) |
 
+### zh-press-16: 百五十名機動部隊封鎖現場清拆和平進行僅有輕微衝突士多東主拒遷警員合力拋走 / 九龍城砦百年滄桑
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 華僑日報 (Wah Kiu Yat Po), 「劉千石帶隊轉移抗議陣地 數十名城砦居民督轅外通宵靜坐」; 「百五十名機動部隊封鎖現場 清拆和平進行 僅有輕微衝突 士多東主拒遷警員合力抬走 二百多名圍觀人群大喝倒采」; 「並無流血暴力衝突 清拆持續進行數月 已經收回四十一個單位」; 「九龍城砦百年滄桑」; 小評 「暴力反抗智者不為 保証住戶繼續磋商」, 29 November 1991, p.3, archive.org item NPWK19911129, leaf n2, https://archive.org/details/NPWK19911129/page/n2
+- **Class:** primary (News reports of the clearance day, 28 November 1991, made the next day. The history feature on the same page is secondary. Primary tree.)
+- **Date of the record:** 1991-11-29
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../primary-sources/hk-chinese-press-1985-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D 「九龍城砦百年滄桑」 | The history feature puts the City wall north of today's Carpenter Road (賈炳達道), between Tung Tau Tsuen and Sai Tau Tsuen (the paper writes 「東、西頭邨」). | "確定其位置即為現在賈炳達道以北，東、西頭邨之間" (Its position is fixed as today north of Carpenter Road, between the villages 東頭邨 and 西頭邨.) |
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that in 1941 the Japanese army took down the stone wall of the City to extend Kai Tak airport (啓德機場). | "拆了城寨大廠石城牆去拓建啓德機場" (tore down the big stone wall of the City to extend Kai Tak airport.) |
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that the vice, drug and gambling business of triads led by the 14K became active in the City after 1949. | "以十四K為首的黑社會的黃、毒、賭非法生意也開始在城寨內活躍" (The illegal vice, drug and gambling business of triads led by the 14K also began to be active in the City.) |
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that a big fire in 1952 burned half of the City. China sent ships with food, and each household got 100 dollars, enough to rebuild a wooden hut on the same place. | "一九五二年一場大火燒了半個城寨" (A big fire in 1952 burned half of the City.) |
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that in 1967 the government cleared some illegal houses near the City, which caused a riot. Later the authorities made two sweeps inside the City. | "其後當局在城寨內進行兩次掃蕩" (Later the authorities carried out two sweeps inside the City.) |
+| NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that in August 1983 許家屯, then the head of China's office in Hong Kong, and the Chief Secretary 夏鼎基爵士 each toured the City. | "一九八三年八月當時中國駐港最高負責人許家屯與前香港布政司夏鼎基爵士分別到城寨進行巡視" (In August 1983 許家屯, then the top Chinese official in Hong Kong, and former Chief Secretary Sir 夏鼎基 each toured the City.) |
