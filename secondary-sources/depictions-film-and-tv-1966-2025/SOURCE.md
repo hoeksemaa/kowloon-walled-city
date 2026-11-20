@@ -2,10 +2,8 @@
 
 Films shot in the City show it as it stood; later films only reconstruct it.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 23 of 23 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1966-2025.
 - **Items:** 23, of which 23 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -27,366 +25,548 @@ Not read yet.
 
 ### depictions-2: Long Arm of the Law (省港旗兵)
 
-- **Creator:** Johnny Mak (麥當雄), director and producer; Sammo Hung, producer
-- **Date:** 1984-07-11
-- **Kind:** film
-- **Class:** depiction (A fiction film; its last part is real footage shot in the lanes of the City in 1984.)
-- **Value:** high
-- **Language:** zh
-- **Access:** open
-- **Licence:** © the film's rights holders; HKFA page © LCSD; HK01 © HK01
-- **Link:** https://www.hk01.com/sns/article/1018365
-- **Other links:** https://www.filmarchive.gov.hk/zh_TW/web/hkfa/pe-event-2018-20-1-2.html, https://zh.wikipedia.org/wiki/省港旗兵, https://en.wikipedia.org/wiki/Long_Arm_of_the_Law_(film), https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
-- **Proof that it exists:** 省港旗兵 - 香港電影資料館 (HKFA page); HK01 title 九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍
-- **What it gives (finder's note, not checked):** HK01 (2024): the last 20 minutes, a gunfight in the side lanes and an unlicensed Western-medicine clinic inside the City, were shot in the City. HKFA: the ending is a lane battle in the City.
-- **Notes:** The Hong Kong Film Archive (香港電影資料館) screened it on 27 Jan 2018, with a talk by 陳欣健 and 麥當雄; the HKFA page quotes '當中以結局九龍城寨的巷戰最為震撼'. zh Wikipedia: '結尾在九龍城寨的一場警匪槍戰實境拍攝'. Le Petit Journal (2023) also says it was shot inside the walls. The HKFA holds a print. I did not check legal streaming.
-- **Same item in the finder files:** film-15
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the Long Arm of the Law part of HK01 (2024) with its stills, the Hong Kong Film Archive (香港電影資料館) programme page of the screening of 27 Jan 2018, the zh and en Wikipedia articles and Le Petit Journal (2023). I did not watch the film (no open copy).
+- **Citation:** Johnny Mak (麥當雄), director and producer, Long Arm of the Law (省港旗兵), 寶禾 and 麥當雄製作, 1984, colour, 106 min, released in Hong Kong 11 Jul 1984. Read through: 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024 (updated 13 May 2024), https://www.hk01.com/sns/article/1018365 ; Hong Kong Film Archive (香港電影資料館), programme page 「省港旗兵」 (screening 27 Jan 2018), https://www.filmarchive.gov.hk/zh_TW/web/hkfa/pe-event-2018-20-1-2.html ; Wikipedia 「省港旗兵」 (zh, last revised 20 Aug 2026), https://zh.wikipedia.org/wiki/省港旗兵 ; Wikipedia 'Long Arm of the Law (film)' (en) ; Laureen Duchesne, '6 films pour s'immerger dans la Kowloon Walled City de Hong Kong', Le Petit Journal Hong Kong, 13 Dec 2023, https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
+- **Class:** depiction (A fiction film. HK01 and Wikipedia say that its last part was shot on location in the City, so its frames are a record of the lanes and of a clinic room about 1983-84 (kind primary, my readings inferred). All the statements about the film are secondary.)
+- **Date of the record:** Released in Hong Kong 11 Jul 1984 (Wikipedia); the shoot dates are not given (inferred 1983-1984).
+- **Files:**
+  - `depictions-2-pvHDHzlLMOsq-KUZSynYi6c-BqCzR0_3NV04PjVdOD4-ff8b3096.jpg` (in `local/`, not in git): Long Arm of the Law still (640x360): gunfight in a dark City lane; https://cdn.hk01.com/di/media/images/dw/20240510/865688890667831296860234.jpeg/pvHDHzlLMOsq-KUZSynYi6c-BqCzR0_3NV04PjVdOD4?v=w640; 20397 bytes; SHA-256 `8f4499ce7c169147eea84bde4a7c533173317bf82a388df829210b107722295c`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-2-_ig3DJrlnfIjpae9_lkAyEUsv2RUweJiPos6Tj6LOk4-04a6b903.jpg` (in `local/`, not in git): Long Arm of the Law still (640x360): crowded City lane with notices, signs, a red-cross sign and a stair; https://cdn.hk01.com/di/media/images/dw/20240510/865688892559593472283415.jpeg/_ig3DJrlnfIjpae9_lkAyEUsv2RUweJiPos6Tj6LOk4?v=w640; 23911 bytes; SHA-256 `6c7786d36fa43772ffd5038a8770e666740b9b8d73f3f54c1a5be16f90455a35`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-2-2UgMGwpJzZlVTIkgmHvYO7K4a85OikMTl9rXVZfa11U-70c5abfc.jpg` (in `local/`, not in git): Long Arm of the Law still (640x360): the unlicensed clinic room, tiled walls, bed, cabinet; https://cdn.hk01.com/di/media/images/dw/20240510/865688894426189824803915.jpeg/2UgMGwpJzZlVTIkgmHvYO7K4a85OikMTl9rXVZfa11U?v=w640; 37936 bytes; SHA-256 `5836e5a4eb5247d8154f27d9dde0e39f93ae27722c5140548e14ba5608523bf3`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-2-lRLziRD8rxmtrgh7skzSNhK0t6ocNEIbPOZdpTzmXaU-bfe42841.jpg` (in `local/`, not in git): Long Arm of the Law still (640x360): patient on the clinic bed; plastic water cans on the floor; https://cdn.hk01.com/di/media/images/dw/20240510/865688896414420992021679.jpeg/lRLziRD8rxmtrgh7skzSNhK0t6ocNEIbPOZdpTzmXaU?v=w640; 27164 bytes; SHA-256 `f7b56c160b79129ef4d35ba7cb3eb3446de12592b0deca84ac68045da9e402ad`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-2-0Zmg2OVC8lmvq9W26d-weAy0ys2oMGQNlDfT2ZQ309k-c5c118ce.jpg` (in `local/`, not in git): Long Arm of the Law still (640x360): surgery in the clinic room, medicine cabinet, fan; https://cdn.hk01.com/di/media/images/dw/20240510/865688886473396224270318.jpeg/0Zmg2OVC8lmvq9W26d-weAy0ys2oMGQNlDfT2ZQ309k?v=w640; 25576 bytes; SHA-256 `d180376018e3ce00719c4e4a4e91d407ee273573700ecd8f942f62f37ffb32e3`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| HK01 2024, section 《省港旗兵》, para 1 | HK01 says that in the story the robbers flee to the City, seek treatment at an unlicensed Western-medicine clinic, and fight the police in the City's side lanes. | "逃至到九龍城寨，向無牌西醫診所求醫，最後更於城寨横街窄巷中發生槍戰" (fled to Kowloon Walled City, sought treatment at an unlicensed Western-medicine clinic, and finally fought a gun battle in the City's side lanes) |
+| HK01 2024, section 《省港旗兵》, para 1 | HK01 says that the last 20 minutes of the film, the clinic and the gunfight, were shot on location in the City. | "電影後段20分鐘拍攝城寨醫務所及槍戰戲份，麥當雄大膽於九龍城寨實地取景" (for the last 20 minutes, the City clinic and gunfight scenes, Johnny Mak boldly shot on location in the City) |
+| HK01 2024, captions of stills 4-6 of the section | A HK01 caption says that the film was shot in a clinic in the City and records the setting of an unlicensed Western doctor's clinic. | "電影亦於九龍城寨的診所中取景，紀錄無牌西醫診所的環境。" (The film also shot in a clinic in the City, recording the setting of an unlicensed Western-medicine clinic.) |
+| HKFA programme page, synopsis | The Hong Kong Film Archive calls the final lane battle in the City the most striking part of the film. | "當中以結局九龍城寨的巷戰最為震撼" (the most striking of them is the final lane battle in Kowloon Walled City) |
+| zh Wikipedia, lead para 2 | zh Wikipedia says that the final police gunfight in the City was shot on the real site. | "結尾在九龍城寨的一場警匪槍戰實境拍攝" (the police-and-robbers gunfight at the end in Kowloon Walled City was shot on the real site) |
+| zh Wikipedia, plot | In the story, the robbers break out with hand grenades and flee to the City, and the police close in on it. | 「大圈仔」以手榴彈突圍，在警方嚴加緝捕下逃到九龍城寨。 (The 'big circle boys' broke out with hand grenades and, hunted by the police, fled to Kowloon Walled City.) |
+| HKFA programme page, credits | The HKFA page gives the credits: script 陳欣健, camera 古國華, producers 麥當雄 and 洪金寶, made by 寶禾 and 麥當雄製作; 1984, colour, 106 minutes. | "導演：麥當雄 編劇：陳欣健 攝影：古國華" (Director: 麥當雄; script: 陳欣健; camera: 古國華) |
+| Le Petit Journal 2023, section Long Arm of the Law | Le Petit Journal says that, with Bloodsport, it is one of the very few films truly shot inside the City. | "c'est l'un des très rares films à avoir été véritablement tourné dans l'enceinte de la ville" (it is one of the very rare films truly shot within the city's walls) |
+
+- **Leads:**
+  - Hong Kong Film Archive (香港電影資料館) screening of 27 Jan 2018 with a post-screening talk by 陳欣健 and 麥當雄 (programme page pe-event-2018-20-1-2): a recording or report of the talk can say how they shot in the City.
+  - HK01 (香港01), 【省港旗兵】陳欣健爆電影內幕：除咗林威其他都係真．大圈仔！, 4 Oct 2017 (cited by zh Wikipedia): the scriptwriter's account of the shoot.
+  - The film itself (HKFA holds a print; commercial DVD and Blu-ray): the last 20 minutes for the lanes and the clinic room.
 ### depictions-1: Bloodsport (scenes in Kowloon Walled City: interior alleys, Tung Tau Tsuen Road north face, the Tin Hau Temple)
 
-- **Creator:** Newt Arnold (director), The Cannon Group
-- **Date:** 1986-10-17
-- **Kind:** film
-- **Class:** depiction (A fiction film, but its City scenes are real footage shot on location from October 1986.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders (Cannon); blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html
-- **Other links:** https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_17.html, https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_35.html, https://en.wikipedia.org/wiki/Bloodsport_(film), https://www.hk01.com/sns/article/1018365
-- **Proof that it exists:** Bloodsport - Jean Claude Van Damme (1987) - Kowloon Walled City, Kowloon
-- **What it gives (finder's note, not checked):** Footage of the City's dark interior alleys, the tall north face seen from Tung Tau Tsuen Road beside Mei Tung Estate, and the City's Tin Hau Temple in the title sequence. Shot from 17 Oct 1986, thus within weeks of the model week of 15-21 Dec 1986.
-- **Notes:** Wikipedia: shooting began 17 Oct 1986, all on location in Hong Kong; it calls the film 'one of the few films featuring scenes filmed inside Kowloon Walled City', but tags that claim as dubious. HK01 (2024): only a few minutes inside the City; the actor walks the outer lanes, with a street of dental clinic signs. The blog thinks that the Kumite fights were shot at Clearwater Bay Studios, not in the City. A reader comment places the temple in the far north-west corner, from the map in City of Darkness. Released 26 Feb 1988. Legal copies: commercial DVD and Blu-ray; I did not check streaming.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the three blog posts on the City scenes (Tung Tau Tsuen Road, the City, the Tin Hau Temple) with their frame grabs and comments, the English Wikipedia article (revision 1386789814), the Bloodsport part of HK01 (2024) and of Le Petit Journal (2023). I did not watch the film: it is a commercial release with no open copy. I read the shop signs in one frame grab myself (inferred readings, checked against repo records).
+- **Citation:** Newt Arnold (director), Bloodsport (The Cannon Group; shooting from 17 Oct 1986; released 26 Feb 1988). Frame grabs and notes: Phil, 'Bloodsport - Jean Claude Van Damme (1987) - Tung Tau Tsuen Road, Kowloon' (16 Jul 2013) https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_35.html ; '... - Kowloon Walled City, Kowloon' (17 Jul 2013) https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html ; '... - Tin Hau Temple, Kowloon Walled City, Kowloon' (18 Jul 2013) https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_17.html , Hong Kong and Macau Film & TV Locations (blog). Wikipedia, 'Bloodsport (film)', https://en.wikipedia.org/wiki/Bloodsport_(film) (read 2026-11-20). 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024, https://www.hk01.com/sns/article/1018365 . Laureen Duchesne, '6 films pour s'immerger dans la Kowloon Walled City de Hong Kong', Le Petit Journal Hong Kong, 13 Dec 2023, https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
+- **Class:** depiction (A fiction film. Its location footage of the City and of Tung Tau Tsuen Road (東頭村道) was shot from 17 Oct 1986, within weeks of the model week, so the frames are a record made at the time (kind primary, my readings inferred). The blog, Wikipedia, HK01 and Le Petit Journal notes are secondary. It stays in secondary-sources; if the repo wants the footage itself as evidence, it can go in primary-sources/film-and-tv-footage-1958-1994 like Baraka.)
+- **Date of the record:** Shooting began 17 Oct 1986 (Wikipedia, citing the AFI Catalog); the days of the City scenes are not given. Released 26 Feb 1988.
+- **Files:**
+  - `depictions-1-VTS_01_1.VOB_001347864-0163637f.jpg` (in `local/`, not in git): Bloodsport frame (720x480), 1986: Tung Tau Tsuen Road (東頭村道) and the north face of the City, with clinic and doctor signs (錢茂林醫生 10號二樓; 大衆福利診所 9號地下); https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzaUm33q7WuOWl-75ctySa8Shyx-a-e3xJtbSJw3GZU6r4VGoXJOPqiYQ-4Ke0nyyChyhM5SnV03Lr6Y9q3FS5d8PTa7AX3-nnHA7iBzX8AE3y_6RgzwOihCN4WXC2Hsn8JfUFh3Ze-jM/s1600/VTS_01_1.VOB_001347864.jpg; 321560 bytes; SHA-256 `c84539eb474d9ee3777015d7393069ab337bb99e23cb1bf099416a28c514a929`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_35.html)
+  - `depictions-1-VTS_01_1.VOB_001358040-42c4e0a8.jpg` (in `local/`, not in git): Bloodsport frame, 1986: a City face from below, caged balconies with plants and laundry; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixco42jjdZN_1ZgcqBPqBiZvKMfy59_IOrJKNNezCPFLduFh84Yp51VkjrH2GUJI6vLiAbjdvbnLEmiq2XUht4fhPyLTmmId0TgyR38zrhdAt_LyNqmO9z3e5XTsiucdfv4QX-hHB2E0o/s1600/VTS_01_1.VOB_001358040.jpg; 368389 bytes; SHA-256 `050befcf1442599eb5448bdefcf30e20cf0bc2da3aa7f7680a3a3e3b5e57e59d`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000007866-d1a178f9.jpg` (in `local/`, not in git): Bloodsport frame, 1986: actors in a lane; red painted direction sign for a handbag (手袋) works on the wall; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHe4SU3jRl5xr6WyDZVg4bhV9KZCoCGfefwXez6NSgLdpIL4rjtOlKJGvztQWuDhEWc8f7nLgLq2ODIvhnQwI85m-d1uFcNNaI2lAp2up0OyCzEHCboDsbxbTdm2iHZa7BakgfcoSgm8Q/s1600/VTS_01_2.VOB_000007866.jpg; 268931 bytes; SHA-256 `bf43b623279c24b13936e1e5cf289837bcb99ba514e3e68c1fa6f845c5f6fb65`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000018076-3b60ecb5.jpg` (in `local/`, not in git): Bloodsport frame, 1986: a long dark lane with lamps overhead and sacks along the walls; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9yNGKofstzI8g0kQ2XqNQwarHf4SMBOg2sQWRJcFDnJIHQSb4ippOF-w5m690mzaTOeALs23Y-hkb5BVOJWCBxa9ztonD2_rQfiQ83I1Mn2DYWlJapOfvBB2AbUUHFQoc32AcuZBKL00/s1600/VTS_01_2.VOB_000018076.jpg; 204215 bytes; SHA-256 `18ce1a6cb45d86544ac9963107684a99dc5ea353337d5df857de34d1316d4999`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000022464-95e13d8d.jpg` (in `local/`, not in git): Bloodsport frame, 1986: a dark lane with sacks and a lit end; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNbSgfUJeYu1GIY3nLpNgNKqFCi-K8lDPFsTbmCnBcu-2rSiU8PMSR-S074sMMSFpFVgbzFgEPpAwuxARMnf5iV55XWKZShS0Y9nfXFxMeKg0vDkUSiAzDFYYxaYB3vatsAUCcGu5WrI8/s1600/VTS_01_2.VOB_000022464.jpg; 218271 bytes; SHA-256 `f8280c23792c62f959e6448a5df78f837086e2d9d9b1e9739d77f3e6c703d997`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000036344-e8ca49eb.jpg` (in `local/`, not in git): Bloodsport frame, 1986: lane with a pink fluorescent tube, red paper strip on a door post and a bin; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF-IHB7olTPg-fQDGQS1EdvrEt_P9ijMrn95BG_2BEHtidZD2xURZloXi61u97DJIx2Kyo1M85xUgJAL5CM7ggdunJfd5EcpWedWgodQv-TNFrt02s-eVxMJOuQjYhMALQGqnZL8Ngi4o/s1600/VTS_01_2.VOB_000036344.jpg; 235154 bytes; SHA-256 `081fdace405343b41559165586e447adb2eb4057289c6d98aa96c15b8bfb440c`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000045737-50619fd4.jpg` (in `local/`, not in git): Bloodsport frame, 1986: a lane under overhead wires, red signs on the walls; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQe6Yj1sfkbBZvxmG0nLOiY306_003USBiq2VgGlhAU4TXHCWLEP2ggVSNsP2lJr8fp5cZjjlCk0DaFTl0ffB3Ux2cVwMSyDycpy0ojInm1dU-j5aNeHbBze1gvpXvRB6nl3GUZ3PvFe8/s1600/VTS_01_2.VOB_000045737.jpg; 241055 bytes; SHA-256 `998aa4cd312c561351dcc612e2104226c41e6d3aa6eb8633eafb598cc368cc8f`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_2.VOB_000067709-150f275e.jpg` (in `local/`, not in git): Bloodsport frame, 1986: a lane wall covered by a tangle of thin pipes or hoses; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnw6fzAVaicw_H75aXa14EZ6cylo8AkjIcHqpYG0cMbP9BgB58Y9hdHMtcEJaATXwXPOWt1WF0vEy31o13P6Y4Li6h4ftx2vsV6QykxuTSXX57dm88TR-iotGJ9vcz-hObu2mVlm0_fzg/s1600/VTS_01_2.VOB_000067709.jpg; 239583 bytes; SHA-256 `a7c8be80b058b13b19d3f15b91c007070c16aa2e9b5843be9023c0c03e24075d`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_16.html)
+  - `depictions-1-VTS_01_1.VOB_000030707-1c0a12c2.jpg` (in `local/`, not in git): Bloodsport frame (title sequence), 1986: the front of the City's Tin Hau Temple (天后廟) at night; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK75WYyQXJMogXNvp_BtchuqysW7U_dQJ6oQje7aU1lbtkyVhn6m8EUxN-CN82t8yGnyIlU8onTkTYcyX69PKyFu4os8VEqhbqWz8G3_mi5z3t18-uCIXvRUQpyMMtgRGPj8OqqjLZejI/s1600/VTS_01_1.VOB_000030707.jpg; 228418 bytes; SHA-256 `2e8f7b3494d414a8e0fbbd9a6215863ebb8767d387f23f1b65caede3db4779ba`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_17.html)
+  - `depictions-1-VTS_01_2.VOB_000112470-68d244ba.jpg` (in `local/`, not in git): Bloodsport frame, 1986: actors at the open doors of the Tin Hau Temple (天后廟); https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSaGGbq2cYSrrXi30DYEtH1joRiU3cJOsYPw7vqPVt7MCVQjN0YsM1PZwcYiuqGhWD-NBuMg_qpQtw8X0nTlzt6FZhFekFmnAYes_rvaeywPoyAA3Hu-PIKtfjzNtFE82DY_Y3XyefaZmp/s1600/VTS_01_2.VOB_000112470.jpg; 34012 bytes; SHA-256 `c7146fead71ff05ba21a2b2db01ef98d9725d9fba3fe38257d9f8c522c229aca`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_17.html)
+  - `depictions-1-1373_44244317266_6904_n-310df5a5.jpg` (in `local/`, not in git): Undated photo of the Tin Hau Temple (天后廟) front, board 天后古廟, from the Facebook group 'Kowloon Walled City 九龍城寨 (九龍城砦)'; photographer not named; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMxoNhCZUE8WQ8GuK3jHsT5FpgVjnSSnSzO7NoiXPlPjsRbfyF0qB_UNFqqhGXy95OPD4sxIxhKyGXlg87bfNcVzOpuqnhHhGClWUBgYu642MOVw6fKmTmh4-HQdKUoI4r1UmeS53oUSqO/s1600/1373_44244317266_6904_n.jpg; 61697 bytes; SHA-256 `ad8e62b64283daede40dcc9ddcb2d015e8e680759e708df189f60beda0cf9b08`; licence: No licence stated; a Facebook group photo reposted on the blog; photographer and rights unknown (https://hkmacaufilmtvlocations.blogspot.com/2013/07/bloodsport-jean-claude-van-damme-1987_17.html)
+- **Note:** its 12 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wikipedia, Production > Filming, para 1 | Wikipedia says that Bloodsport was filmed entirely on location in Hong Kong and that shooting began on 17 October 1986. | "Bloodsport was filmed entirely on location in Hong Kong. Shooting began on October 17, 1986." |
+| Wikipedia, Production > Filming, para 2 | Wikipedia calls it one of the few films with scenes shot inside the City, but an editor tagged this claim as dubious in January 2026. | "one of the few films featuring scenes filmed inside Kowloon Walled City before its demolition in 1993" |
+| Wikipedia, lead | Cannon Films released the film on 26 February 1988. | "Released by Cannon Films on February 26, 1988" |
+| HK01 2024, section 荷里活電影《拳霸天下》, para 1 | HK01 says that only a few minutes of the film were shot at the City, but the star himself went to shoot in its outer lanes and narrow alleys. | "雖然電影僅於城寨取景約數分鐘片段，然而尚格雲頓亦親自到九龍城寨外圍及窄巷拍攝" (Although the film shot only a few minutes at the City, Van Damme himself went to film at the City's outer edge and narrow lanes) |
+| HK01 2024, section 荷里活電影《拳霸天下》, para 1 | HK01 says that the star walks along a street on the outer edge of the City that is hung full of dentists' signs. | "走在城寨外圍掛滿牙醫診所招牌的街道上" (walking on the street at the City's outer edge, hung full of dental clinic signs) |
+| blog post 16 Jul 2013 (_35), para 3 | The blog says that the street shot is from Tung Tau Tsuen Road (東頭村道), which ran along the north face of the City. | "that is the same road (it runs along what was the north face of the walled city)" |
+| blog post 16 Jul 2013 (_35), para 2 | The blog identifies the place by Mei Tung Estate (美東邨), the block on the right of the frame, which still stands. | "our key reference to its modern day identification is actually the building on the right hand side of the grabs which is called Mei Tung Estate" |
+| blog post 16 Jul 2013 (_35), para 2 | The blog says that no other place in Hong Kong had so many improvised, skinny high-rise blocks. | "no other place in HK really had this style of 'improvised' skinny highrise in such great quantity" |
+| blog post 17 Jul 2013 (_16), para 1 | The blog says that the second set of frame grabs shows the City inside and out. | "they show what the 'Walled City' used to look like - both inside and out" |
+| blog post 17 Jul 2013 (_16), para 2 | The blog describes the alleys inside as very dark. | "Lots of dark alleyways that would intimidate even the hardiest explorer." |
+| blog post 18 Jul 2013 (_17), paras 1 and 3 | The blog says that the City's Tin Hau Temple (天后廟) is in the title sequence and again when the fighters enter the supposed Kumite venue. | "now here we have a picture of the city's Tin Hau Temple" |
+| blog post _17, para 2 | The blog author concluded that the temple was shot on location, because a photo in the Facebook group 'Kowloon Walled City 九龍城寨 (九龍城砦)' shows the same front. | "I found a picture of the temple front allowing me confirm its identity" |
+| blog post _17, para 3 | The blog author believes that the fight scenes were shot at Clearwater Bay Studios on Ying Yip Road, not in the City. | "I believe the actual fight scenes were filmed at Clearwater Bay Studios on Ying Yip Road." |
+| blog post _17, comment by epotterfield, 24 Feb 2015 | A reader wrote in 2015 that the map in City of Darkness puts the temple in the far north-west corner of the City. | "It was in the far northwest corner." |
+| blog post _17, reply by Phil, 24 Feb 2015 | The blog author replied that he went back and confirmed that the temple had been demolished. | "I did return to the area to confirm the temple was indeed demolished." |
+| Le Petit Journal 2023, section Bloodsport | Le Petit Journal says that the City is a brief setting, when the hero goes to the secret venue, and that the film is one of the few truly shot there. | "C'est l'un des rares films à avoir été tourné réellement dans la cité fortifiée." (It is one of the rare films truly shot in the walled city.) |
+
+- **Leads:**
+  - AFI Catalog of Feature Films, Bloodsport (1988), https://catalog.afi.com/Catalog/moviedetails/60095 : the source of the shoot start date 17 Oct 1986; it can give the end of the shoot and thus a narrower date for the City scenes.
+  - Daily Mail, 'A rare insight: Kowloon Walled City' (2012), http://www.dailymail.co.uk/news/article-2139914/A-rare-insight-Kowloon-Walled-City.html : a photo gallery of the inside, cited by the blog post of 17 Jul 2013.
+  - Facebook group 'Kowloon Walled City 九龍城寨 (九龍城砦)': the photo of the Tin Hau Temple front (file name 1373_44244317266_6904_n.jpg); its date and photographer are unknown.
+  - Martin Booth, memoir 'Gweilo' (US title 'Golden Boy'): the blog says it mentions the City's Tin Hau Temple (blog post of 18 Jul 2013).
+  - Bloodsport, commercial DVD or Blu-ray: the full City sequence (Tung Tau Tsuen Road, lanes, temple) for more signs and the route of the walk.
 ### top-depictions-4: Golgo 13: Assignment Kowloon (ゴルゴ13 九竜の首)
 
-- **Creator:** Yukio Noda (野田幸男), director; Shigeru Akatsuka (赤塚滋), cinematographer; Toei (東映) and 嘉倫電影; Sonny Chiba (千葉真一)
-- **Date:** 1977-09-15
-- **Kind:** film
-- **Class:** depiction (A Japanese fiction film; ja Wikipedia says its camera went into the City in 1977.)
-- **Value:** medium
-- **Language:** ja
-- **Access:** open
-- **Licence:** © Toei; Wikipedia text CC BY-SA 4.0
-- **Link:** https://ja.wikipedia.org/wiki/ゴルゴ13_九竜の首
-- **Other links:** https://watch.plex.tv/movie/golgo-13-assignment-kowloon, https://ciatr.jp/topics/157542, https://eiga.com/movie/36576/, https://hkmacaufilmtvlocations.blogspot.com/search/label/Golgo%2013%3A%20Assignment%20Kowloon
-- **Proof that it exists:** ja Wikipedia: '九龍城に映画史上初めて映画撮影のキャメラが持ち込まれている。' and '1977年6月末まで香港のロケーション撮影が行われ'
-- **What it gives (finder's note, not checked):** Hong Kong location shooting ran to the end of June 1977. ja Wikipedia (citing the 日本映画製作者連盟 record) says this was the first film camera ever taken into 九龍城. Which scenes show the City is not stated.
-- **Notes:** Released in Japan 15 Sep 1977, in Hong Kong 4 May 1978 (en Wikipedia). 93 min (eiga.com). ciatr (2017) repeats the 'first camera' claim. The claim conflicts with the 'only two films' line that a blog attributes to City of Darkness Revisited. hkmacaufilmtvlocations has 23 posts on this film; none of the 18 that I saw names the Walled City (one shows the squatter village of Carpenter Road Park, next to the City). Legal viewing: free on Plex (page 'Watch Free', 1h 32m); region not checked. The Letterboxd list (film-19) names this film but does not confirm it.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'ゴルゴ13 九竜の首', Wikipedia (Japanese), read 2026-11-20, https://ja.wikipedia.org/wiki/ゴルゴ13_九竜の首 ; 日本映画製作者連盟, 'ゴルゴ13　九竜の首' (database entry), http://db.eiren.org/contents/03000000935.html ; hkmacaufilmtvlocations.blogspot.com, label 'Golgo 13: Assignment Kowloon' (23 posts, 2017).
+- **Class:** depiction (A 1977 Japanese feature film (Toei and 嘉倫電影), with Hong Kong location shooting. Earlier than the period of the repo. No source names a scene that shows the City.)
+- **Date of the record:** film released in Japan 1977-09-15; Hong Kong 1978-05-04
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| ja Wikipedia ゴルゴ13 九竜の首 (read 2026-11-20), section 製作 | The Hong Kong location shooting went on until the end of June 1977 (ja Wikipedia, citing 週刊明星, 11 Sep 1977). | "1977年6月末まで香港のロケーション撮影が行われ" (Location shooting in Hong Kong went on until the end of June 1977) |
+| ja Wikipedia ゴルゴ13 九竜の首 (read 2026-11-20), section 製作, footnote to 日本映画製作者連盟 | INFERRED: ja Wikipedia says a film camera was taken into 九龍城 for the first time in film history. It writes 九龍城, which can mean the Kowloon City district or the Walled City; the database text that it cites points to the Walled City (INFERRED). | "九龍城に映画史上初めて映画撮影のキャメラが持ち込まれている" (A film camera was brought into 九龍城 for the first time in film history.) |
+| 日本映画製作者連盟 database, entry 03000000935, description | The source of the claim is a promotional sentence in the database of the 日本映画製作者連盟: the place is 'feared as the world's assassination zone'. It is a claim of the film's makers or distributor, not a checked fact. It conflicts with other films that are said to show the City earlier. | "世界の暗殺ゾーンと恐れられる、香港・九竜城に映画史上初めてカメラを持ち込んだ緊迫映像" (Tense footage from the first camera in film history taken into Kowloon City, Hong Kong, feared as the world's assassination zone) |
+| ja Wikipedia ゴルゴ13 九竜の首 (read 2026-11-20), section 概要, citing 週刊明星 1977-09-11 | In the story, the procurer 重宗千造 (played by 鶴田浩二) lives in 九龍城. | "九龍城に住む調達屋・重宗千造に鶴田浩二" (Koji Tsuruta as Shigemune Senzo, a procurer who lives in Kowloon City) |
+| 日本映画製作者連盟 database, entry 03000000935 | The database gives: release 15 Sep 1977, 93 minutes, colour, CinemaScope, Toei; director 野田幸男; cinematographer 赤塚滋. | "93分" (93 minutes) |
+| hkmacaufilmtvlocations.blogspot.com, post 'Golgo 13: Assignment Kowloon - View from Checkerboard Hill, Kowloon', 2017-08-17 | The location blog identifies the places of 23 posts on this film. None of them names the Walled City. One view from Checkerboard Hill shows a squatter village on the site of Carpenter Road Park, next to the City. | "The squatter village in the last picture is the same one occupying the Carpenter Road Park" |
+
+- **Leads:**
+  - 週刊明星 (Shūeisha), 11 Sep 1977, 「『ゴルゴ13』香港ロケ・千葉真一」: report of the Hong Kong shoot (cited by ja Wikipedia).
+  - ビッグコミック vol. 10 no. 20 (Shogakukan), 25 Sep 1977, 'SHINICHI as GOLGO13', p. 141 (cited by ja Wikipedia).
+  - 日本映画製作者連盟 database entry 03000000935: the full synopsis ('続きを読む') was not read.
+  - hkmacaufilmtvlocations, 'View from Checkerboard Hill, Kowloon' (2017-08-17): a 1977 frame of the squatter village at Carpenter Road, beside the City.
 ### depictions-5: Brothers from the Walled City (城寨出來者)
 
-- **Creator:** Lam Nai-choi (藍乃才), director; Shaw Brothers (邵氏兄弟)
-- **Date:** 1982-09-01
-- **Kind:** film
-- **Class:** depiction (A fiction film set in the 1960s; its City scenes were shot on location for 8 days in 1982.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © Shaw Brothers / current rights holder; Wikipedia CC BY-SA 4.0
-- **Link:** https://zh.wikipedia.org/wiki/城寨出來者
-- **Other links:** https://www.hk01.com/sns/article/1018365, https://www.hk01.com/%E5%A5%BD%E7%94%9F%E6%B4%BB/36080/cult%E7%89%87%E9%87%8D%E6%BA%AB-%E8%8B%B1%E9%9B%84%E4%BB%A5%E5%A4%96-%E5%9F%8E%E5%AF%A8%E5%87%BA%E4%BE%86%E8%80%85-%E7%9A%84%E9%9B%99%E9%9D%A2%E9%AD%85%E5%8A%9B, https://en.wikipedia.org/wiki/Brothers_from_the_Walled_City
-- **Proof that it exists:** 《城寨出來者》（英語：Brothers from Walled City），是香港一部1982年上映的時裝電影，由錢小豪，高飛等人主演，藍乃才執導，亦是其導演方面的成名作。
-- **What it gives (finder's note, not checked):** The City scenes were shot there over 8 days in 1982: a chase from the street into the City, a mahjong parlour, and a killing in a narrow lane. The first 20 minutes show back lanes, drug rolling and soliciting.
-- **Notes:** zh Wikipedia: '亦在該地實景拍攝共8天，事前獲得李修賢及王鍾協助，通過他們的人脈關係安排進入該地'. It cites three 1982 press items (see depictions-15 to depictions-17). HK01 (2024) guesses ('相信') that the crew got in because 李修賢 was once an inspector. Conflict: Le Petit Journal (2023) says it was 'tourné en grande partie en studio'. The story is set in the 1960s, thus the plot is not a picture of 1982 life; only the footage of the place is.
-- **Same item in the finder files:** film-16
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read zh Wikipedia 城寨出來者 (production, release and reception, with its list of 1982 press sources), the HK01 review of 11 Aug 2016, the Brothers part of HK01 (2024) with its two stills, the English Wikipedia article and Le Petit Journal (2023). I did not watch the film (no open copy).
+- **Citation:** Lam Nai-choi (藍乃才; en Wikipedia: Lam Ngai Kai), director, Brothers from the Walled City (城寨出來者), Shaw Brothers (邵氏兄弟), shot Feb-May 1982, released 1 Sep 1982. Read through: Wikipedia 「城寨出來者」 (zh), https://zh.wikipedia.org/wiki/城寨出來者 ; 王嘉政, 「【Cult片重溫】英雄以外 《城寨出來者》的雙面魅力」, HK01, 11 Aug 2016, https://www.hk01.com/%E5%A5%BD%E7%94%9F%E6%B4%BB/36080/cult%E7%89%87%E9%87%8D%E6%BA%AB-%E8%8B%B1%E9%9B%84%E4%BB%A5%E5%A4%96-%E5%9F%8E%E5%AF%A8%E5%87%BA%E4%BE%86%E8%80%85-%E7%9A%84%E9%9B%99%E9%9D%A2%E9%AD%85%E5%8A%9B ; 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024 (updated 13 May 2024), https://www.hk01.com/sns/article/1018365 ; Wikipedia 'Brothers from the Walled City' (en) ; Laureen Duchesne, '6 films pour s'immerger dans la Kowloon Walled City de Hong Kong', Le Petit Journal Hong Kong, 13 Dec 2023, https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
+- **Class:** depiction (A fiction film set in the 1960s, shot partly in the City over 8 days in 1982. Its City footage is a record of the place in 1982 (kind primary, my readings inferred); the plot is not a picture of 1982 life. The statements about it are secondary.)
+- **Date of the record:** Shot from mid-Feb to mid-May 1982 (zh Wikipedia, citing 華僑日報 26 Feb and 17 May 1982); the 8 City days are not dated. Released 1 Sep 1982.
+- **Files:**
+  - `depictions-5-EIuExmBnDETKQ_HKAfC77tv3gUKhocb3VOIv6VTiL-k-fcd1e90d.jpg` (in `local/`, not in git): Brothers from the Walled City still (640x314), 1982: a City lane with stone walls and a metal door; https://cdn.hk01.com/di/media/images/196349/org/e8a03983b45977dd88ce2439bd929219.jpg/EIuExmBnDETKQ_HKAfC77tv3gUKhocb3VOIv6VTiL-k?v=w640; 26805 bytes; SHA-256 `a0fdea025ac33ab4ab190162a48180d86b62bdeab1e4aa323babd8bcbf703081`; licence: No licence stated on the HK01 (香港01) article; the caption credits 網上圖片 (picture from the internet); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-5-mwEz36aq92kzTneZZttWcnMgZX_yuExnhCGG-oQhhvo-09dd9b67.jpg` (in `local/`, not in git): Brothers from the Walled City still (640x333), 1982: a room painted green and white, table and teapot (the mahjong parlour scene); https://cdn.hk01.com/di/media/images/196344/org/d96749c314aaf552f445cb25037f1334.jpg/mwEz36aq92kzTneZZttWcnMgZX_yuExnhCGG-oQhhvo?v=w640; 22098 bytes; SHA-256 `200fa7e863c84c00d98ad6149b5e8d45cfb6900f3211f707c137de50733d6529`; licence: No licence stated on the HK01 (香港01) article; the caption credits 網上圖片 (picture from the internet); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| zh Wikipedia, production section (citing 工商日報 1982-08-29) | zh Wikipedia says that the City scenes were shot on the site over 8 days. 李修賢 and 王鍾 used their contacts to arrange entry, and 李修賢 came to the set every day. | "有關九龍城寨的情節，亦在該地實景拍攝共8天，事前獲得李修賢及王鍾協助" (the City scenes were also shot on the real site, 8 days in all, with the help beforehand of 李修賢 and 王鍾) |
+| zh Wikipedia, production section | zh Wikipedia says that shooting ran from mid-February to mid-May 1982. | "開鏡拍攝則於1982年2月中旬至5月中旬進行。" (Shooting ran from mid-February to mid-May 1982.) |
+| zh Wikipedia, production section (citing 黃家禧 2024, pp156-157) | The Shaw producer 黃家禧 recalled (2024) a shoot from January to May with 34 working days and a cost of about HK$1.28 million. | "實際拍攝了34個工作天，製作費約港幣128萬元" (actually shot on 34 working days, at a cost of about HK$1.28 million) |
+| zh Wikipedia, reception section (citing 工商晚報 1982-09-08) | zh Wikipedia says that a Rediffusion (麗的電視) news programme of 1982 reported that the City's kaifong association (九龍城寨街坊會) objected: the City of the 1980s was very different from the 1960s of the film, and the film would harm its image. | "街坊會中人認為1980年代的城寨狀況跟60年代相差甚大，本片內容會影響城寨形象" (people of the kaifong association held that the City of the 1980s differed greatly from the 1960s, and the film would harm the City's image) |
+| zh Wikipedia, promotion section | The Hong Kong print advertisement had the slogan 'You don't dare to enter the City, so dare to watch it', which was thought sensitive. | "你無膽入城寨，要有膽睇城寨" (If you don't dare enter the walled city, have the nerve to watch it) |
+| zh Wikipedia 九龍寨城, film list | zh Wikipedia (九龍寨城) calls it the film that shows the real City most fully. | "被視爲最全面展現九龍城寨實地面貌的電影" (regarded as the film that most fully shows the real face of Kowloon Walled City) |
+| HK01 2016, para 3 | HK01 (2016) says that the first 20 minutes show the daily vice of the 'three no-control' zone while they set up the two brothers. | "電影頭20分鐘邊呈現這個「三不管」地帶的黃賭毒生活日常" (the first 20 minutes show the daily life of vice, gambling and drugs of this 'three no-control' zone) |
+| HK01 2016, para 4 | HK01 (2016) says that the chase in the City is shot with a hand-held camera, with short empty shots of addicts rolling heroin, prostitutes soliciting and dirty back lanes. | "展示城寨道友捲白粉、妓女拉客和後巷的髒亂風貌" (showing City addicts rolling heroin, prostitutes soliciting, and the filth of the back lanes) |
+| HK01 2016, para 4 | HK01 (2016) says that the City scenes end when the brothers grow up and move out to the city. | "隨着主角長大後「出來」市區，城寨的戲份亦告一段落" (as the heroes grow up and 'come out' to the city, the City scenes end) |
+| HK01 2024, section 《城寨出來者》, para 1 | HK01 (2024) says that the grown-up lead 錢小豪 shot no scenes in the City; the childhood part, where the father (關海山) runs a mahjong parlour in the City and is later killed, was shot there. | "於城寨內開麻雀館、以及後來被殺的橋段，則取景自九龍城寨" (the scenes of running a mahjong parlour in the City and later being killed were shot in the City) |
+| HK01 2024, section 《城寨出來者》, para 1 | HK01 (2024) guesses that the crew could enter the City because 李修賢 had been a police inspector. | "相信因他曾擔任探長，於是拍攝團隊才能進入城寨拍攝" (it is believed that because he had been an inspector, the crew could enter the City to shoot) |
+| HK01 2024, caption of still 2 of the section | A HK01 caption says that the father is killed in a narrow side lane of the City. | "關海山被人殺死，地點正是九龍城寨的橫街窄巷。" (關海山 is killed, and the place is a narrow side lane of the City.) |
+| Le Petit Journal 2023, section Brothers from the Walled City | Le Petit Journal says, against the other sources, that the film was shot mostly in a studio and not in the City. | "il a néanmoins été tourné en grande partie en studio" (it was nonetheless shot largely in a studio) |
+
+- **Leads:**
+  - 陸嘉儀, 「入城砦拍寫實片 藍乃才先打招呼」, 工商日報, 29 Aug 1982, p9: the account of the 8 days of shooting in the City (cited by zh Wikipedia).
+  - 陸嘉儀, 「三不管地帶拍戲 王龍威受到挑釁」, 工商日報, 14 Apr 1982: the shoot in the City (cited by zh Wikipedia).
+  - 「影片寫60年代實況 藍乃才解釋非歪曲」, 工商晚報, 8 Sep 1982, p4: the City kaifong association's objection reported by Rediffusion (麗的電視) news (cited by zh Wikipedia).
+  - 「藍乃才開城寨出來 錢小豪高飛結片緣」, 華僑日報, 26 Feb 1982, 第七張第二頁; 「藍乃材馬不停蹄趕拍 廖麗玲受得傷多心怯」, 華僑日報, 17 May 1982, 第七張第二頁 (cited by zh Wikipedia).
+  - 南國電影 no. 290 (May 1982) pp6-7 and no. 292 (Jul 1982) pp52-53 (伍色香, 「「城寨出來者」 拜正邪神」): Shaw's own magazine on the film (cited by zh Wikipedia).
+  - 白粉雙雄 (1978): zh Wikipedia (九龍寨城) calls it the first film shot on location in the City.
 ### depictions-7: Yellowthread Street (TV series), episode "Rummy's Cut"
 
-- **Creator:** Yorkshire Television for ITV; Ranald Graham, producer
-- **Date:** 1990
-- **Kind:** film
-- **Class:** depiction (A fiction TV drama; the episode has real exterior and interior shots of the City in about 1989-90.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © ITV / Yorkshire Television; blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html
-- **Other links:** https://en.wikipedia.org/wiki/Yellowthread_Street
-- **Proof that it exists:** Yellowthread Street (TV Series) - Bruce Payne (1990) - Kowloon Walled City, Kowloon
-- **What it gives (finder's note, not checked):** A pan across the outside of the tenements (the blog stitches it into a panorama) and several shots inside the City. Broadcast on ITV, Jan-Apr 1990.
-- **Notes:** The blog: 'One of the scenes from Rummy's Cut involves the gang heading over to the former Walled City in Kowloon'. The blog calls the interior shots 'nothing that we haven't seen before'. Wikipedia: 13 episodes, shot in Hong Kong, no word on the City. The shoot date is not given. I did not find a legal stream.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the blog post with its stitched panorama, four frame grabs and two comments, and the English Wikipedia article (episode table). I did not watch the episode (no open copy). The shoot date is not given anywhere I read.
+- **Citation:** Yorkshire Television for ITV, Yellowthread Street, episode 7 'Rummy's Cut', broadcast 24 Feb 1990. Frame grabs and notes: Phil, 'Yellowthread Street (TV Series) - Bruce Payne (1990) - Kowloon Walled City, Kowloon', Hong Kong and Macau Film & TV Locations (blog), 22 Nov 2014, https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html ; Wikipedia 'Yellowthread Street', https://en.wikipedia.org/wiki/Yellowthread_Street (read 2026-11-20)
+- **Class:** depiction (A fiction TV series; its location footage of the City (about 1989) is a record made at the time (kind primary, my readings inferred). The blog and Wikipedia are secondary.)
+- **Date of the record:** Broadcast 24 Feb 1990 (Wikipedia); the series ran on ITV 13 Jan to 7 Apr 1990. Shoot date not given (inferred 1989).
+- **Files:**
+  - `depictions-7-pano-71e344fd.jpg` (in `local/`, not in git): Panorama stitched by the blog from a pan in 'Rummy's Cut' (c.1989): a face of the City with caged balconies, laundry and air-conditioners; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjY8em1hcar1Lw76xhUnui-YrM9SeZg_uqYFMW_tJIaBRhaTdMDqjyT8SLg38D_Yn5mZZCjkhTNvYGV709hDLe7iCTAoq-5RAcnamEFXii3_POCaes_inPiBsfVEdAOQEQqZmvQlryeq8f/s1600/pano.jpg; 154583 bytes; SHA-256 `8a7444664566d251fb20aff493f130bb80c2a9010fbbe1e32c8799d6a2b76168`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html)
+  - `depictions-7-VTS_01_1.VOB_002506000-47e7cef2.jpg` (in `local/`, not in git): Frame (c.1989): a doorway with red paper strips and a red can on the wall; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ1OVOJJJjSlay4h0F3e8DCTJ9JZGx_hwIc-9NJTC9cxPcsTtK-55YxvnowBZR8pqsDTLTgtTQz0Qwla6cB2SB9RYeXbeg3OeWinC00RFwDX6ExLxyQ5pMtKomh5lT-sMWqJORWxDz79DB/s1600/VTS_01_1.VOB_002506000.jpg; 65526 bytes; SHA-256 `c760932c8b1bac595a6ef8191c1117fbb5de4b481c90c06e9af2a1a06d651b15`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html)
+  - `depictions-7-VTS_01_1.VOB_002548080-64f655b5.jpg` (in `local/`, not in git): Frame (c.1989): a narrow passage lined with stacked boards; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivivLPWasFYg2jpCrql-WWxFVjMZps1SmF8QeB857E03aFC1AoVVjNVw4AERiDy28zE5LlIduyj5S2l1xZO0d6DA4u8cWeac5A1-CW-urd1u_xCF09V6l9yvUokNnTUoKGqENjdG5jOSm0/s1600/VTS_01_1.VOB_002548080.jpg; 38880 bytes; SHA-256 `9ad1449af1c5c0d20186aa950d756a7fd6d9d4a2c33e8e8e69774d97e6da7deb`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html)
+  - `depictions-7-VTS_01_2.VOB_000000704-3f18324f.jpg` (in `local/`, not in git): Frame (c.1989): a dark lane with a bare bulb and notices on the walls; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg34saCXttJZz6Yr1-5fQKVlo20-8OVHov0rW1FJJZj1B0A4cvz3TFq6n74ZtpqJao8vgVpRIULCpcXwu-qzs0XFo3RLpql-8z8trLuZ-QX7x9sxC339v1odOzjOZsulE3XXMl3Vav-5v1J/s1600/VTS_01_2.VOB_000000704.jpg; 41174 bytes; SHA-256 `0f0e1adc4096da9cbe02eb1028f9a4231cfcf11638f02fe572d6988442bdbd33`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html)
+  - `depictions-7-VTS_01_2.VOB_000191384-700a5a7f.jpg` (in `local/`, not in git): Frame (c.1989): a lane with metal sheet walls, a bare bulb and a red floor patch; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjACR3r6Xe_BJIZodJtfsTWN6XFFpD39x4EtJQms55F01VMeuvV4ArP7YdU-jJIW1dlJzY8hYH12z4IvxZwYZSZyrkDm_94HEcW1QLsbrtNLTTQlzTC0pAN5F52LikkrGN-63I8zMuyHClM/s1600/VTS_01_2.VOB_000191384.jpg; 53519 bytes; SHA-256 `2ddee8b199633ce337d5bee5f4bd997f7d87d44351c5d87da3ff7d9aeebef5e3`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2014/11/yellowthread-street-tv-series-bruce_21.html)
+- **Note:** its 4 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post, para 1 | The blog says that in 'Rummy's Cut' the police team goes to the City to investigate the death of Rummy. | "involves the gang heading over to the former Walled City in Kowloon to investigate the death of poor old Rummy" |
+| blog post, para 2 | The blog says that the first City shot pans from left to right across the outside of the tenements and then down to the unmarked police car; the author stitched the frames into a panorama. | "a panning shot that tracks from left to right across the outside of the tenements before moving down to focus on the unmarked police car" |
+| blog post, para 3 | The blog calls the interior shots similar to those of Bloodsport. | "it's nothing that we haven't seen before such as in Bloodsport" |
+| Wikipedia, episode table, row 7 | Wikipedia gives 'Rummy's Cut' as episode 7, first shown on 24 February 1990; the series ran on ITV from 13 January to 7 April 1990 and was made in Hong Kong. | "24 February 1990" |
+| blog comment by Anonymous, 25 Dec 2015 | A reader comment (2015) says that the Japanese film 'We're an angel, too!' (1992) has a scene in the City at 00:47:40. | "Scene in a kowloon walled city→[00:47:40]" |
+
+- **Leads:**
+  - 'We're an angel, too!' (Japanese film, 1992): a City scene at 00:47:40, per a reader comment on the blog (25 Dec 2015); the Japanese title is not given.
+  - Yellowthread Street, episode 7 'Rummy's Cut' (ITV, 24 Feb 1990): the full City sequence, if a legal copy can be found.
 ### depictions-3: Days of Being Wild (阿飛正傳): final scene shot inside the City
 
-- **Creator:** Wong Kar-wai (王家衞)
-- **Date:** 1990-12-15
-- **Kind:** film
-- **Class:** depiction (A fiction film; one scene is real footage of a room inside the City, about 1990.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © the film's rights holders; HK01 © HK01
-- **Link:** https://www.hk01.com/sns/article/1018365
-- **Other links:** https://zh.wikipedia.org/wiki/阿飛正傳, https://en.wikipedia.org/wiki/Days_of_Being_Wild
-- **Proof that it exists:** 九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍
-- **What it gives (finder's note, not checked):** The last scene, where the gambler Chow Mo-wan leaves his home and combs his hair at a mirror, was shot inside the City. It shows a real flat interior of about 1990.
-- **Notes:** HK01 quote: '從住所出門，並在鏡前梳頭的經典片段，正正於九龍城寨內部取景'. HK01 also says that Andy Lau's police scenes were shot in the City for about 10 days, but were cut ('據指...亦曾於九龍城寨內拍攝長達10日，可惜該段戲份最後被刪剪'); thus the outtakes, if they exist, hold more footage. zh Wikipedia: '曾於九龍城寨實地取景'. The English Wikipedia page does not name the City.
-- **Same item in the finder files:** film-17
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the Days of Being Wild part of HK01 (2024) with its stills, the City sentence of zh Wikipedia and the English Wikipedia article. I did not watch the film (no open copy).
+- **Citation:** Wong Kar-wai (王家衞), director, Days of Being Wild (阿飛正傳), released 15 Dec 1990. Read through: 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024 (updated 13 May 2024), https://www.hk01.com/sns/article/1018365 ; Wikipedia 「阿飛正傳」 (zh, last revised 22 Sep 2026), https://zh.wikipedia.org/wiki/阿飛正傳 ; Wikipedia 'Days of Being Wild' (en), https://en.wikipedia.org/wiki/Days_of_Being_Wild
+- **Class:** depiction (A fiction film set in 1960. HK01 says that its last scene was shot inside the City, so that frame is a record of a real City room about 1990, dressed for the 1960s. The statements about the film are secondary.)
+- **Date of the record:** Released 15 Dec 1990 (Wikipedia); the City shoot is not dated (inferred 1989-1990).
+- **Files:**
+  - `depictions-3-KDzad3HFpCHbuL4An3uFFoyNscePkmgP2EvnH9hL5x8-887e7440.jpg` (in `local/`, not in git): Days of Being Wild frame (640x360): the last scene in a low room, said to be inside the City; https://cdn.hk01.com/di/media/images/dw/20240510/865686529811550208547286.jpeg/KDzad3HFpCHbuL4An3uFFoyNscePkmgP2EvnH9hL5x8?v=w640; 30189 bytes; SHA-256 `997420f6ecd9de5b90d5a36e9f6e56e8154048ac3062dc35f1d8442951b3e80d`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-3-lt-jFc723zSEXfqXyE1CpYrplZ7V3S1zbVBeU21QXlM-62ca3bd5.jpg` (in `local/`, not in git): Days of Being Wild frame (640x360): the same room, lamp over a table, clothes on the wall; https://cdn.hk01.com/di/media/images/dw/20240510/865686532219211776451079.jpeg/lt-jFc723zSEXfqXyE1CpYrplZ7V3S1zbVBeU21QXlM?v=w640; 29129 bytes; SHA-256 `69c10902886b42673fe743e185a8581bc41188a04518598e21b1ba93c10df926`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-3-3f11BhBpSo7_f1I1FRcWrW5dbRP7MEY3LxbEjC8WxIw-68b53237.jpg` (in `local/`, not in git): Days of Being Wild still (640x429) of 劉德華 as the policeman; HK01 says his City scenes were cut; https://cdn.hk01.com/di/media/images/dw/20240510/865686534522015744102849.jpeg/3f11BhBpSo7_f1I1FRcWrW5dbRP7MEY3LxbEjC8WxIw?v=w640; 36703 bytes; SHA-256 `212c6e3ddf3571358907e5d454443cd2bc3f3ee561ae1d4facd4e2e74b131a55`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| HK01 2024, section 《阿飛正傳》, para 1 | HK01 says that the last scene, in which the gambler 周慕雲 (played by 梁朝偉) leaves his home and combs his hair at a mirror, was shot inside the City. | "從住所出門，並在鏡前梳頭的經典片段，正正於九龍城寨內部取景" (the classic scene of leaving his home and combing his hair at the mirror was shot inside Kowloon Walled City) |
+| HK01 2024, section 《阿飛正傳》, para 1 | HK01 says that 劉德華, who plays the policeman, is reported to have shot ten days of scenes in the City, but they were cut, and the film of them is probably lost. | "據指亦曾於城寨內拍足10日戲份，可惜最後被刪剪" (is said to have shot a full 10 days of scenes in the City, but they were cut in the end) |
+| zh Wikipedia, 軼事 section | zh Wikipedia says instead that 張國榮, called back from Vancouver after nearly nine months, was filmed on location in the City. It cites the same HK01 article, which names 梁朝偉; thus the two do not agree on the actor. | "張國榮於溫哥華待了接近九個月後，終於被王家衛召回香港，曾於九龍城寨實地取景" (after almost nine months in Vancouver, 張國榮 was finally called back to Hong Kong by Wong Kar-wai and was filmed on location in the City) |
+| en Wikipedia, infobox and Reception | The English Wikipedia article gives the release date and the story's period (early 1960s), and does not name the City. | "15 December 1990" |
+
+- **Leads:**
+  - The cut City scenes of 劉德華 (about 10 days of shooting, per HK01 2024): any surviving outtakes or production stills from Jet Tone or In-Gear Films.
 ### depictions-4: Crime Story (重案組): climax shot in the empty City
 
-- **Creator:** Kirk Wong (黃志強), director; Chua Lam, producer; Jackie Chan, star
-- **Date:** 1992-07-09
-- **Kind:** film
-- **Class:** depiction (A fiction film; the climax is real footage of the City after the evictions, with real explosions.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders
-- **Link:** https://en.wikipedia.org/wiki/Crime_Story_(1993_film)
-- **Other links:** https://www.hk01.com/sns/article/1018365, https://zh.wikipedia.org/wiki/重案組_(電影), https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
-- **Proof that it exists:** Crime Story (Chinese: 重案組; also known as New Police Story ...) is a 1993 Hong Kong action film directed by Kirk Wong, and produced by Chua Lam.
-- **What it gives (finder's note, not checked):** The climax, with gunfights, fires and a building destroyed by explosions, was shot in the deserted City just before demolition. Shooting ran from 9 Jul to 20 Aug 1992.
-- **Notes:** Wikipedia: 'filmed in the deserted Kowloon Walled City, which was scheduled for demolition shortly thereafter'. HK01: the explosions were real, not computer effects ('打真軍'). zh Wikipedia (九龍寨城 list, uncited): '最後一部在九龍城寨實地拍攝的電影'. Released 24 Jun 1993. The exact days of the City shoot are not given. Useful for the state of the empty buildings in mid-1992.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the English Wikipedia article (Production), the Crime Story part of HK01 (2024) with its stills, the location sentence of zh Wikipedia 重案組 (電影), the film list of zh Wikipedia 九龍寨城 and Le Petit Journal (2023). I did not watch the film (no open copy).
+- **Citation:** Kirk Wong (黃志強), director; Chua Lam, producer; Jackie Chan (成龍), star; Crime Story (重案組), shot 9 Jul to 20 Aug 1992, released in Hong Kong 24 Jun 1993. Read through: Wikipedia 'Crime Story (1993 film)', https://en.wikipedia.org/wiki/Crime_Story_(1993_film) ; 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024 (updated 13 May 2024), https://www.hk01.com/sns/article/1018365 ; Wikipedia 「重案組 (電影)」 (zh, last revised 20 Aug 2026) ; Wikipedia 「九龍寨城」 (zh, last revised 15 Sep 2026) ; Laureen Duchesne, '6 films pour s'immerger dans la Kowloon Walled City de Hong Kong', Le Petit Journal Hong Kong, 13 Dec 2023, https://lepetitjournal.com/hong-kong/6-films-hong-kong-kowloon-walled-city-374657
+- **Class:** depiction (A fiction film shot in the empty City in mid-1992; its frames are a record of the empty buildings before demolition (kind primary, my readings inferred). The statements about it are secondary.)
+- **Date of the record:** Shot 9 Jul to 20 Aug 1992 (en Wikipedia); the City days are not given. Released 24 Jun 1993.
+- **Files:**
+  - `depictions-4-vlNSX2iXZWZQgFHrbTQw5NVJ9Wz7NQBzk6nNtJOpzbQ-ab0a95a4.jpg` (in `local/`, not in git): Crime Story still (640x346), 1992: interior with a steel mesh gate, fire on the floor; https://cdn.hk01.com/di/media/images/dw/20240510/865688017229189120457190.jpeg/vlNSX2iXZWZQgFHrbTQw5NVJ9Wz7NQBzk6nNtJOpzbQ?v=w640; 52051 bytes; SHA-256 `8455725c71462acd311cc93c72711c60501f471b782dc52a56bb4729159d15d9`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-4-DGJUsPgGYqvShtZ0RwXgJ7eWjwu8qhxy-AB5g_gAeYM-71a8c66c.jpg` (in `local/`, not in git): Crime Story still (640x360), 1992: City rooftop with chain-link fence, aerials and wires; https://cdn.hk01.com/di/media/images/dw/20240510/865688019452301312402783.jpeg/DGJUsPgGYqvShtZ0RwXgJ7eWjwu8qhxy-AB5g_gAeYM?v=w640; 53731 bytes; SHA-256 `78abe19488ad62d60b632e9059e1d00f3397330ec710539a073930a440e36a4c`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+  - `depictions-4-6LbhsjBAPNdjG6h9jDhx0rhzqf9GD64dsYv9NLGL_TQ-fadbe5c3.jpg` (in `local/`, not in git): Crime Story still (640x360), 1992: explosion between two facing City blocks, grilles, cages and laundry; https://cdn.hk01.com/di/media/images/dw/20240510/865688022006763520289406.jpeg/6LbhsjBAPNdjG6h9jDhx0rhzqf9GD64dsYv9NLGL_TQ?v=w640; 59928 bytes; SHA-256 `7833655d0455b3f05aede05dda3a94563b5d407cd804147cdbdfb7aa2626199a`; licence: No licence stated on the HK01 (香港01) article; the caption credits the film (電影劇照 or 電影截圖); a film still, copyright of the film's rights holders (https://www.hk01.com/sns/article/1018365)
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| en Wikipedia, Production, para 2 | Wikipedia says that the film was shot in Hong Kong and Taiwan in 42 days, from 9 July to 20 August 1992. | "filmed in Hong Kong and Taiwan in 42 days from 9 July to 20 August 1992" |
+| en Wikipedia, Production, para 2 | Wikipedia says that the climax, in which explosions wreck a building, was shot in the deserted City, which was to be demolished shortly after. | "was filmed in the deserted Kowloon Walled City, which was scheduled for demolition shortly thereafter" |
+| HK01 2024, section 《重案組》, para 1 | HK01 says that it was the last film that was given special permission to shoot on location in the City before the clearance, with many gunfights, fires and explosions. | "為九龍城寨清拆前夕，特許劇組實地取景的最後作品" (was the last work whose crew was specially permitted to shoot on location on the eve of the City's clearance) |
+| HK01 2024, section 《重案組》, para 1 | HK01 says that, because the City was about to be demolished, the explosions were real and not computer effects. | "由於城寨臨近清拆，爆破情節亦「打真軍」，而非電腦特技。" (As the City was near clearance, the explosion scenes were also done for real, not with computer effects.) |
+| zh Wikipedia 重案組 (電影), production section | zh Wikipedia lists the Hong Kong locations: 金鐘廊, the footbridge in 灣仔 and 告士打道, 畢打街 in 中環, 紅磡站, and the City, which was about to be cleared. | "以及正準備清拆的九龍城寨取景" (and Kowloon Walled City, which was being prepared for clearance) |
+| zh Wikipedia 九龍寨城, clearance section and film list | zh Wikipedia (九龍寨城) says that before the clearance began in 1991 the City let Jackie Chan (成龍) shoot Crime Story, and let a group of Japanese explorers map it in one week. It lists Crime Story as the last film shot on location in the City. | "寨城在1991年開始清拆前，曾經讓藝人成龍拍攝電影《重案組》" (Before the clearance began in 1991, the walled city let the performer Jackie Chan shoot the film Crime Story) |
+| en Wikipedia Production; zh Wikipedia 九龍寨城 | INFERRED: The two Wikipedia articles do not agree: the English one gives a 1992 shoot, but zh Wikipedia (九龍寨城) puts it before a clearance that began in 1991. Residents moved out in phases from 1991, so a 1992 shoot in the empty City fits both. | "42 days from 9 July to 20 August 1992" |
+| Le Petit Journal 2023, section Crime Story | Le Petit Journal says that a fight scene was shot in the deserted City just before its destruction, and that it includes real images of the City exploding and falling. Its claim that these are images of the demolition itself is not supported by the other sources. | "la scène de combat intègre de véritables images de la destruction de la ville" (the fight scene includes real images of the destruction of the city) |
+
+- **Leads:**
+  - Jackie Chan, 'I Am Jackie Chan: My Life in Action' (1998), cited by en Wikipedia for the shoot: it can describe the City shoot.
+  - The Dragon Dynasty DVD (2007) of Crime Story has deleted scenes (en Wikipedia): they can hold more City footage of mid-1992.
 ### depictions-13: Hong Kong & Macau Film & TV Locations: posts with label Kowloon Walled City
 
-- **Creator:** hkmacaufilmtvlocations.blogspot.com (blog author not named on the pages read)
-- **Date:** 2013-07-16/2025-08-15
-- **Kind:** reference
-- **Class:** secondary (A later blog that matches screen grabs to places; it has no first-hand knowledge of the shoots.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/search/label/Kowloon%20Walled%20City
-- **Other links:** https://hkmacaufilmtvlocations.blogspot.com/search?q=%22walled+city%22, https://hkmacaufilmtvlocations.blogspot.com/search/label/Kowloon%20City
-- **Proof that it exists:** Label page with 9 posts, newest 'Baraka - Ron Fricke (1992)' of 15 Aug 2025, oldest 'Bloodsport' of 16 Jul 2013.
-- **What it gives (finder's note, not checked):** Scene notes for 9 posts on the label (Baraka, Whicker's Orient, Asia-Pol Secret Service, Shadow of China, Shanghai Surprise, Yellowthread Street, three on Bloodsport). The search 'walled city' adds Roaring Fire (1982) and Cracker: White Ghost (1996, the empty site).
-- **Notes:** This is the README lead 'Scene notes: https://hkmacaufilmtvlocations.blogspot.com/search/label/Kowloon%20Walled%20City'. It opens (2026-11-16). The blog has no post on Long Arm of the Law, Brothers from the Walled City, Days of Being Wild, To Be Number One or Crime Story. Each film has its own candidate here.
-- **Same item in the finder files:** blocked-b-29
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Phil, Hong Kong and Macau Film & TV Locations (blog), posts with the label 'Kowloon Walled City', 16 Jul 2013 to 15 Aug 2025, https://hkmacaufilmtvlocations.blogspot.com/search/label/Kowloon%20Walled%20City ; blog search "walled city", https://hkmacaufilmtvlocations.blogspot.com/search?q=%22walled+city%22
+- **Class:** secondary (An index of scene notes written 2013-2025 about films and TV made 1966-1996.)
+- **Date of the record:** 16 Jul 2013 to 15 Aug 2025 (dates of the posts).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| label page | The label 'Kowloon Walled City' has 9 posts by 'Phil': Bloodsport (three posts, 16-18 Jul 2013), Yellowthread Street (22 Nov 2014), Shanghai Surprise (29 May 2016), Shadow of China (12 Jan 2017), Asia-Pol Secret Service (15 Apr 2022), Whicker's Orient (5 Jun 2023) and Baraka (15 Aug 2025). | "Showing posts with label Kowloon Walled City." |
+| search "walled city", pages 1-2 | The search 'walled city' adds Roaring Fire (City rooftops, 15 Jan 2015), two Bloodsport posts on the walk to the City (Peking Road, Mody Road), Baraka at Tung Tau Estate (東頭邨), Strangers (2018, Kowloon City Park, not the City) and Cracker: White Ghost (1996). | "Showing posts sorted by relevance for query "walled city"." |
+| post 'Cracker: White Ghost - ... Kai Tak', 3 Aug 2016 | The Cracker: White Ghost post says that the low shaved hill in its view is the hill behind the site of the City, which had gone a couple of years before the filming (1996). | "The low shaved hillside at the back is the hill behind where Kowloon Walled City was until just a couple of years before this was filmed." |
+| post 'Baraka - ... Tung Tau Estate', 16 Aug 2025 | The Baraka Tung Tau Estate post says that the estate was next to the City and that by the 1980s most of its first housing had been replaced, except Blocks 22 and 23. | "by the 1980s much of the original housing stock had been replaced by the buildings still standing today" |
+| post 'Bloodsport - ... Peking Road', 11 Jul 2013 | The Bloodsport Peking Road post says that the film makes the walk from Tsim Sha Tsui to the City look short, though it is a long walk. | "People more familiar with the layout of HK streets will know that it is quite a hefty walk to make" |
+| search 城寨 | The blog has no post on Long Arm of the Law, Brothers from the Walled City, Days of Being Wild, To Be Number One or Crime Story; a search for 城寨 finds only the Bloodsport temple post. | "Showing posts sorted by relevance for query 城寨." |
+| blog footer | The blog footer says that the film and TV images are used as fair use and that the author does not own their copyright. | "All Film/TV Images used "Fair Use". Copyright is not mine.." |
+
+- **Leads:**
+  - Cracker: White Ghost (1996) post, https://hkmacaufilmtvlocations.blogspot.com/2016/08/cracker-white-ghost-robbie-coltrane_3.html : a view of the cleared site area from the south; not in the plan as an item.
 ### depictions-14: 九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍
 
-- **Creator:** 莫匡堯, HK01 (香港01)
-- **Date:** 2024-05-11
-- **Kind:** article
-- **Class:** secondary (A later list of the six films shot on location in the City, by a journalist with no first-hand knowledge.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HK01
-- **Link:** https://www.hk01.com/sns/article/1018365
-- **Other links:** https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1018365/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8-%E7%9B%A4%E9%BB%9E%E5%85%AD%E9%83%A8%E5%AF%A6%E5%9C%B0%E5%8F%96%E6%99%AF%E9%9B%BB%E5%BD%B1-%E6%88%90%E9%BE%8D-%E9%87%8D%E6%A1%88%E7%B5%84-%E5%85%A5%E5%9F%8E%E7%88%86%E7%A0%B4%E6%89%93%E7%9C%9F%E8%BB%8D
-- **Proof that it exists:** 香港動作電影鉅製《九龍城寨之圍城》，由五一黃金檔期上映至今，屢破票房大關，昨日（9日）更宣布上映9日已衝破3000萬本地票房，大受觀眾歡迎！
-- **What it gives (finder's note, not checked):** Which scenes of six films were shot in the City: Brothers from the Walled City (1982), Long Arm of the Law (1984), Bloodsport (1988), Days of Being Wild (1990), To Be Number One (1991), Crime Story (1993).
-- **Notes:** zh Wikipedia cites it for 省港旗兵 and 城寨出來者. It gives the claim that Andy Lau's 10 days of scenes for Days of Being Wild were cut. Published 2024-05-11 09:00, updated 2024-05-13.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 莫匡堯, 〈九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍〉, HK01 (香港01), channel 電影, published 2024-05-11 09:00, updated 2024-05-13 14:50. https://www.hk01.com/%E9%9B%BB%E5%BD%B1/1018365/ (short URL https://www.hk01.com/sns/article/1018365)
+- **Class:** secondary (A 2024 feature article about films, written 30 to 40 years after the shoots. It gives no source for its claims ('據指' = 'it is said'). Correct tree: secondary.)
+- **Date of the record:** 2024-05-11 (updated 2024-05-13)
+- **Files:**
+  - `depictions-14-1018365-308b91c2.html` (in `local/`, not in git): HTML of the article page (six films shot in the City, 2024); https://www.hk01.com/sns/article/1018365; 503181 bytes; SHA-256 `8e29a14bd1f4194413014e5fe549121fb36265a91aa8675fe20958bb15125e60`; licence: © HK01; the page states no open licence (https://www.hk01.com/sns/article/1018365)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《省港旗兵》, para. 1 | The last 20 minutes of Long Arm of the Law (省港旗兵, 1984, director 麥當雄) were shot on location in the City: the scenes in a clinic and the gunfight. | "電影後段20分鐘拍攝城寨醫務所及槍戰戲份，麥當雄大膽於九龍城寨實地取景" (The film's last 20 minutes, the City clinic and the gunfight scenes: 麥當雄 boldly shot them on location in Kowloon Walled City.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《省港旗兵》, photo captions 4-6 | In the plot, the robbers flee into the City and go to an unlicensed Western-medicine clinic. The article says the film records the inside of an unlicensed clinic in the City. | "電影亦於九龍城寨的診所中取景，紀錄無牌西醫診所的環境。" (The film also shot in a clinic in Kowloon Walled City, recording the setting of an unlicensed Western-medicine clinic.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《省港旗兵》, photo caption 3 | Long Arm of the Law shows many street and lane scenes of the City. | "電影拍攝了不少九龍城寨的街巷畫面。" (The film shot many scenes of the streets and lanes of Kowloon Walled City.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《省港旗兵》, para. 1 | The article repeats a report that, except for the lead actor 林威, the 'actors' of the gang in Long Arm of the Law were real 大圈仔 (ex-soldiers from the Mainland). It gives no source. | "據指麥當雄拍攝《省港旗兵》期間，除了男主角林威以外，其他「演員」均為名符其實的「大圈仔」" (It is said that while 麥當雄 shot Long Arm of the Law, apart from the lead actor 林威, the other 'actors' were real 'Big Circle boys'.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《重案組》, para. 1 | Crime Story (重案組, 1993, Jackie Chan) was the last production that got special permission to shoot on location in the City, just before the clearance. | "為九龍城寨清拆前夕，特許劇組實地取景的最後作品" (It was the last work whose crew got special permission to shoot on location, on the eve of the clearance of Kowloon Walled City.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《重案組》, para. 1 and caption 4 | The explosions in Crime Story were real, not computer effects, because the City was soon to be cleared. The film has many gunfight, fire and explosion scenes in the City. | "由於城寨臨近清拆，爆破情節亦「打真軍」，而非電腦特技。" (Because the City was close to clearance, the explosion scenes were also done for real, not with computer effects.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《拳霸天下》, para. 1 | Bloodsport (拳霸天下, 1988) shot only a few minutes at the City. Jean-Claude Van Damme (尚格雲頓) filmed on the edge of the City and in its narrow lanes. He walks along a street outside the City that is hung full of dentists' signs. | "走在城寨外圍掛滿牙醫診所招牌的街道上" (walking on the street at the edge of the City that is hung full of dental-clinic signs) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《拳霸天下》, caption 4 | A caption calls the street outside the City in Bloodsport a street covered with clinic signs. | "尚格雲頓（左下黑外套）曾於九龍城寨外，診所招牌滿布的街道上拍攝。" (Van Damme (lower left, black jacket) filmed outside Kowloon Walled City, on a street covered with clinic signs.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《阿飛正傳》, para. 1 | In Days of Being Wild (阿飛正傳, 1990, Wong Kar-wai), the closing scene of Tony Leung (梁朝偉) as the gambler 周慕雲, who combs his hair at a mirror and leaves his home, was shot inside the City. | "在鏡前梳頭的經典片段，正正於九龍城寨內部取景" (the classic scene of combing his hair at the mirror was shot right inside Kowloon Walled City) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《阿飛正傳》, para. 1 | It is said that Andy Lau (劉德華), as a policeman, shot 10 days of scenes inside the City for Days of Being Wild. The scenes were cut, and the article guesses that the film of them is lost. | "據指亦曾於城寨內拍足10日戲份，可惜最後被刪剪" (It is said he also shot a full 10 days of scenes inside the City, but they were cut in the end.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《跛豪》, caption 2 | To Be Number One (跛豪, 1991, with 呂良偉 and 鄭則士) shot some scenes of its early part inside the City. | "電影《跛豪》的初段部分，有個別橋段於九龍城寨內實地拍攝。" (In the early part of To Be Number One, some scenes were shot on location inside Kowloon Walled City.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《城寨出來者》, para. 1 | Brothers from the Walled City (城寨出來者, 1982) was directed by 藍乃才 and produced by 李修賢. The writer believes that the crew could enter the City because 李修賢 had been a police inspector (探長). This is the writer's guess. | "相信因他曾擔任探長，於是拍攝團隊才能進入城寨拍攝" (It is believed that because he had been an inspector, the crew could enter the City to film.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, section 《城寨出來者》, para. 1 and captions 1-2 | In Brothers from the Walled City, the lead actors (錢小豪 and others) did not film inside the City. Only the childhood part was shot there: 關海山, as the father, runs a mahjong parlour (麻雀館) in the City and is later killed in a narrow lane. | "童年片段中飾演父親的關海山，在劇情中於城寨內開麻雀館、以及後來被殺的橋段，則取景自九龍城寨" (In the childhood part, 關海山 as the father opens a mahjong parlour in the City and is later killed; these scenes were shot in Kowloon Walled City.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, para. 2 | Background: the article says the clearance of the City was completed in April 1994. It also says that China and Britain signed the Joint Declaration in 1987 and then decided to clear the City; this date is wrong (the Joint Declaration was signed in 1984, and the clearance was announced on 14 January 1987). | "直至1987年中英兩國簽訂《中英聯合聲明》，共同決定拆除城寨，並於1994年4月完成清拆。" (Until 1987, when China and Britain signed the Sino-British Joint Declaration and jointly decided to demolish the City; the demolition was completed in April 1994.) |
+| HK01 (香港01), 莫匡堯, 2024-05-11, para. 2 | Background: photographers from Japan, Britain and Canada documented the City many times. | "吸引日本、英國及加拿大攝影師多次紀實攝影" (It attracted photographers from Japan, Britain and Canada to document it many times.) |
+
+- **Leads:**
+  - Long Arm of the Law (省港旗兵, 1984): the last 20 minutes (clinic and gunfight) were shot in the City; view it for the clinic and the lanes.
+  - Days of Being Wild (阿飛正傳, 1990): the closing scene of Tony Leung was shot inside the City.
+  - Brothers from the Walled City (城寨出來者, 1982): the childhood part (mahjong parlour, murder in a lane) was shot in the City.
+  - To Be Number One (跛豪, 1991): some early scenes were shot in the City.
 ### top-depictions-7: 記憶の中の香港映画17 本物の九龍城砦が映像に残る「省港旗兵（九龍の獅子 クーロンズ・ソルジャー）」
 
-- **Creator:** lienhua, blog lienhua's Dragon Inn Hatena (龍門客棧)
-- **Date:** 2025-10-25
-- **Kind:** article
-- **Class:** secondary (A later viewer's notes on what the 1984 film shows of the real City.)
-- **Value:** medium
-- **Language:** ja
-- **Access:** open
-- **Licence:** © the blogger
-- **Link:** https://lienhua.hatenadiary.com/entry/2025/10/25/012429
-- **Proof that it exists:** 「九龍城寨之圍城（邦題：トワイライト・ウォリアーズ 決戦！九龍城砦）」の大ヒットのお陰でちょっとした九龍城砦ブームだ。
-- **What it gives (finder's note, not checked):** Lists what the City footage of Long Arm of the Law shows: maze passages, wires and pipes on ceilings and floors, signs of dentists and of a roast pork shop, a sweet shop and a goldfish shop, and a foreign nun who visits door to door.
-- **Notes:** Quotes: 「歯科医や焼き豚屋の看板もある。」「駄菓子屋や金魚屋もあるし、」「外国人のシスターが一戸一戸訪問している様子も描かれる。」 It cites an HK01 interview of 4 Oct 2017 with the screenwriter 陳欣健 (most gang roles were played by real 大圈仔); that interview is not found yet. A guide for a viewing of the film, not a source for facts.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** lienhua, 〈記憶の中の香港映画17 本物の九龍城砦が映像に残る「省港旗兵（九龍の獅子 クーロンズ・ソルジャー）」〉, lienhua's Dragon Inn 龍門客棧 (Hatena blog), 25 Oct 2025, https://lienhua.hatenadiary.com/entry/2025/10/25/012429
+- **Class:** secondary (A 2025 blog post that describes the 1984 film Long Arm of the Law (省港旗兵). A viewing guide: the footage is the evidence, not the blog.)
+- **Date of the record:** 2025-10-25
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | The blogger says the gunfight scenes of Long Arm of the Law were shot inside the real City. | "本物の九龍城砦内で撮影されたという銃撃シーンは迫力満点" (The gunfight scenes, said to be shot inside the real Kowloon Walled City, are full of power) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | In the footage, electric wires and pipes run along the ceilings and floors, and the passages look like a maze. | "天井と床を這いまわる電線や配管、迷路にしか見えない通路。" (Wires and pipes crawling over ceilings and floors, passages that look like nothing but a maze.) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | Behind the gunfight one can see signs of a dentist and of a roast pork shop. | "基本銃撃戦の最中なんでよくは見えないけど歯科医や焼き豚屋の看板もある。" (It is mostly mid-gunfight so you cannot see well, but there are also signs of a dentist and a roast pork shop.) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | The footage also shows a sweet shop (駄菓子屋) and a goldfish shop, and a foreign nun who visits door to door. | "駄菓子屋や金魚屋もあるし、外国人のシスターが一戸一戸訪問している様子も描かれる。" (There are a sweet shop and a goldfish shop, and a foreign nun is shown visiting house to house.) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | The blogger thought Crime Story (重案組) was the first film shot in the City, then learned that Long Arm of the Law was first. This conflicts with HK01 (depictions-14), which names Brothers from the Walled City (1982) as shot in part in the City. | 「省港旗兵」が最初。 (Long Arm of the Law was the first.) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | INFERRED: The blogger remembers almost no film shot in the City other than these two (INFERRED: Long Arm of the Law and Crime Story, from the sentences before). | "九龍城砦でロケした映画ってこの二つ以外殆ど記憶にない" (I hardly remember any film shot on location in Kowloon Walled City other than these two) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | The blogger says the City was a place that even the police were said not to enter, so a crew could not just film there. | "そもそも警察も入れない、と言われた場所だけに気軽に「撮影しま～す」というわけにも行かない。" (Since it was said to be a place even the police could not enter, you could not just casually say 'we are filming'.) |
+| lienhua's Dragon Inn 龍門客棧 (Hatena), 2025-10-25 | The blogger cites an HK01 interview of 4 Oct 2017 with the writer 陳欣健: except the lead 林威, most actors of the gang were real members of the 大圈仔. The blogger doubts it. | "主演の林威以外のギャング役の殆どは実際の大圈仔の構成員だった" (Apart from the lead 林威, most of the gang roles were real members of the Big Circle.) |
+
+- **Leads:**
+  - HK01, interview with 陳欣健 (writer of 省港旗兵), 4 Oct 2017: on the cast and the shoot in the City (cited by the blog; not found yet).
+  - Long Arm of the Law (1984), last part: view it for the dentist and roast pork signs, the sweet shop, the goldfish shop and the foreign nun on door-to-door visits.
+  - HKFA Oral History Series 7 (2018), interview of Philip Chan (陳欣健), printed p.266: the writer's own account that Johnny Mak (麥當雄) took the crew inside the City (facts under top-depictions-6).
 ### film-19: Kowloon Walled City (Letterboxd list by bc555)
 
-- **Creator:** Letterboxd user bc555
-- **Date:** unknown
-- **Kind:** reference
-- **Class:** secondary (A user's list of films shot at the City or set there.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Letterboxd user
-- **Link:** https://letterboxd.com/bc555/list/kowloon-walled-city/
-- **Proof that it exists:** Section '1-16: On location. Filmed at the real Kowloon Walled City or shortly after.'
-- **What it gives (finder's note, not checked):** 16 films 'filmed at the real Kowloon Walled City or shortly after': And the Walls Came Tumbling Down, Back Street, Jumping Ash, Golgo 13: Assignment Kowloon, The Rascal Billionaire, Man on the Brink, Brothers from the Walled City, Long Arm of the Law, Bloodsport, Police Story 2, Hong Kong's Secret City, To Be Number One, Under the Rose, Baraka, Crime Story, In Search of the Dragon's Tale.
-- **Notes:** A finding aid, not a source. Back Street, Jumping Ash, Golgo 13, The Rascal Billionaire, Man on the Brink, Police Story 2 and Under the Rose are not yet checked for City scenes.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the list page with WebFetch: title, description, dates and the 34 titles. The 'detail' view with the owner's notes on each film returned HTTP 403, thus I did not read the notes on each film.
+- **Citation:** BC555 (Letterboxd user), 'Kowloon Walled City' (film list), Letterboxd, published 2024-08-10, updated 2025-05-14, https://letterboxd.com/bc555/list/kowloon-walled-city/
+- **Class:** secondary (A user's finding aid of 2024-2025, not a source of facts. It does not say how each film was checked.)
+- **Date of the record:** 2024-08-10 (updated 2025-05-14)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Letterboxd list 'Kowloon Walled City' by BC555, list description | The list owner splits the list in three: films 1-16 were shot at the real City or soon after; 17-28 use the City as a setting of historical fiction; 29-34 take inspiration from it. | "1-16: on location - filmed at the real KWC or shortly thereafter" |
+| Letterboxd list 'Kowloon Walled City' by BC555, items 1-16 | Films 1-16, in the owner's order: And the Walls Came Tumbling Down, Back Street, Jumping Ash, Golgo 13: Assignment Kowloon, The Rascal Billionaire, Man on the Brink, Brothers from the Walled City, Long Arm of the Law, Bloodsport, Police Story 2, Hong Kong's Secret City, To Be Number One, Under the Rose, Baraka, Crime Story, In Search of the Dragon's Tale. This agrees with the finder's note. (The quote gives the first four titles as the list writes them; the semicolons are mine.) | "And the Walls Came Tumbling Down; Back Street; Jumping Ash; Golgo 13: Assignment Kowloon" |
+| Letterboxd list 'Kowloon Walled City' by BC555, list description | The owner lists, as 'not on Letterboxd', a film 'The Kowloon Walled City (1980)' on YouTube (video ooQjAYJQ-xM). | "The Kowloon Walled City (1980) - www.youtube.com/watch?v=ooQjAYJQ-xM" |
+| Letterboxd list 'Kowloon Walled City' by BC555, list description | The owner lists three episodes of Hong Kong Connection (RTHK) about the City, of 1975, 1992 (the story of Jackie Pullinger) and 1993, on YouTube. | "1992 - www.youtube.com/watch?v=3FsdF3nfS_g (Story of Jackie Pullinger)" |
+
+- **Leads:**
+  - 'The Kowloon Walled City (1980)', YouTube https://www.youtube.com/watch?v=ooQjAYJQ-xM (the list gives no maker); check if the repo holds it.
+  - Hong Kong Connection (鏗鏘集), RTHK, 1975 episode: https://www.youtube.com/watch?v=x29vVQiV4_o
+  - Hong Kong Connection, 1992 episode (Jackie Pullinger): https://www.youtube.com/watch?v=3FsdF3nfS_g
+  - Hong Kong Connection, 1993 episode: https://www.youtube.com/watch?v=sQfsfhT33Rg
+  - Not yet checked for City scenes: Back Street, The Rascal Billionaire, Police Story 2, Under the Rose, And the Walls Came Tumbling Down.
 ### depictions-12: Asia-Pol Secret Service (aerial view of Kowloon City and the Walled City)
 
-- **Creator:** Jimmy Wang Yu (star); director not checked
-- **Date:** 1966
-- **Kind:** film
-- **Class:** depiction (A fiction film; its last aerial shots show the City and the squatter village in 1966.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders; blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2022/04/asia-pol-secret-service-wang-yu-1966_14.html
-- **Proof that it exists:** The final aerial shots are taken over the Kowloon City area just in front of the airport runway.
-- **What it gives (finder's note, not checked):** Aerial shots of 1966 with the City on the left, the squatter village between it and Kowloon City, and the old Tung Tau Estate above.
-- **Notes:** Early history (before the high blocks). The blog does not describe the buildings of the City. Only for the setting of the 1960s.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Asia-Pol Secret Service (亞洲秘密警察, per search listings), star Jimmy Wang Yu, Shaw Brothers (邵氏兄弟) and Nikkatsu, 1966; director not settled. Frame grabs and notes: Phil, 'Asia-Pol Secret Service - Wang Yu (1966) - Kowloon City Aerial View', Hong Kong and Macau Film & TV Locations (blog), 15 Apr 2022, https://hkmacaufilmtvlocations.blogspot.com/2022/04/asia-pol-secret-service-wang-yu-1966_14.html
+- **Class:** depiction (A fiction film; its aerial shots of 1966 are a record made at the time (kind primary, inferred), long before the peak years. The blog is secondary.)
+- **Date of the record:** 1966 (the blog's date for the film).
+- **Files:**
+  - `depictions-12-vlcsnap-00028-5675f2f7.png` (in `local/`, not in git): Asia-Pol Secret Service aerial frame (834x358), 1966: the City at left, Tung Tau Estate (東頭邨) above, squatter huts; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihT6lM-cBrwi7DjsBpZgeMfOyYSSWgs0ViFcCZ4qXDBqDbwpK-YPtj2WgqfQc5fk8XBB9aMKob4Vpi1TVZBBpfvHXJoCVP1bp3T2_daykmXhcs6a_i4jmGEwm3zHpWiutx9NYpIqB-zq_tKtYQlsTEEZDDLYFP4XnB7Hoyemc_KjONVmNCUXkG4hhOJQ/s834/vlcsnap-00028.png; 531928 bytes; SHA-256 `eac8d6b5f8b81512f931bddf03f9796c7402d7ccd8b9511b4b54a99d14f70af8`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2022/04/asia-pol-secret-service-wang-yu-1966_14.html)
+  - `depictions-12-vlcsnap-00029-1b44f9ae.png` (in `local/`, not in git): Asia-Pol Secret Service aerial frame (834x358), 1966: a second view of the same area; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ5cgFnizV2iAvUsP4Kx1lsRoGQJIT1tWmZWdKrERupncdg5DHO21rMGHge-yvjCkkow1b0N-RlL-GkHw3rXTWsDbKzJrEYatrrWuxx_eKVQRLN-UMuA6cYzYxcx9acwJukUVAQDEoz2uIxZPxaouWIb25SV8_7yoq1nxFHdU-kxp6HmKvgDCk7l3iXQ/s834/vlcsnap-00029.png; 502343 bytes; SHA-256 `50f5077e883c54bba8e5f83ae31309a51a18302037c6172c5235937865792267`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2022/04/asia-pol-secret-service-wang-yu-1966_14.html)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post, para 1 | The blog says that the final aerial shots are over the Kowloon City area just in front of the airport runway. | "The final aerial shots are taken over the Kowloon City area just in front of the airport runway." |
+| blog post, para 2 | The blog says that the government estate in the upper part of the images is the old Tung Tau Estate (東頭邨) before it was rebuilt with taller blocks. | "the old Tung Tau Estate before it was redeveloped into taller/higher capacity blocks" |
+| blog post, para 2 | The blog says that the last structure of that estate in the image, Block 22, stood until 2014 and was replaced by Wui Chi House; a smaller building in front still holds the Po Yan Oblate Primary School. | "The sole remaining structure from this image was, until 2014, Block 22" |
+| blog post, para 3 | The blog says that below the estate was a squatter village between the City (on the left) and the Kowloon City area (on the right); all of it is now park. | "a squatter village that sat in between the notorious Kowloon Walled City (on the left) and Kowloon City area" |
 ### top-depictions-6: Jumping Ash (跳灰)
 
-- **Creator:** Leong Po-chih (梁普智) and Josephine Siao Fong-fong (蕭芳芳), directors; Philip Chan (陳欣健), co-writer
-- **Date:** 1976-08-26
-- **Kind:** film
-- **Class:** depiction (A fiction crime film with scenes at the edge of the City in about 1976.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders; HKFA page © LCSD
-- **Link:** https://www.filmarchive.gov.hk/en/web/hkfa/pe-event-2017-16-1-1.html
-- **Other links:** https://zh.wikipedia.org/wiki/跳灰, https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf
-- **Proof that it exists:** Jumping Ash - Hong Kong Film Archive: 'from the international glamour of Amsterdam to the local exoticism of Kowloon Walled City'
-- **What it gives (finder's note, not checked):** The HKFA says the film moves to 'the local exoticism of Kowloon Walled City'. Its co-writer says the crew filmed only 'on the periphery', not inside (top-depictions-1).
-- **Notes:** HKFA screening 9 Apr 2017, 2 pm, with a talk by Leong Po-chih and Siu Heng. Release date from zh Wikipedia, which does not name the City. Earlier than the weight period. Legal viewing not checked.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Hong Kong Film Archive, 'Jumping Ash' (screening page, 9 Apr 2017), https://www.filmarchive.gov.hk/en/web/hkfa/pe-event-2017-16-1-1.html ; zh Wikipedia 跳灰 ; HKFA, 'When the Wind was Blowing Wild: Hong Kong Cinema of the 1970s' (Oral History Series 7), 2018, https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf
+- **Class:** depiction (A 1976 feature film (跳灰). The HKFA note is a 2017 programme text (secondary). The HKFA book holds first-hand testimony of its co-writer Philip Chan (陳欣健), given in 2017: retrospective (2017). Earlier than the period of the repo.)
+- **Date of the record:** film released 1976-08-26; HKFA note 2017
+- **Files:**
+  - `top-depictions-6-Oral_History_Series_eng07_ebook-8187f8c2.pdf` (in `local/`, not in git): HKFA Oral History Series 7, 'When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s' (e-book, 290 pages, 7,282,268 bytes); the interview of Philip Chan on pp.251-266 names the City; https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf; 7282268 bytes; SHA-256 `dbee67439cd203f8bfbd147cac568e39de3767ad1c403cef24827ab75998cc5a`; licence: © 2018 Hong Kong Film Archive, Not for Sale, all rights reserved (colophon of the PDF) (https://www.filmarchive.gov.hk/documents/18995340/19057029/Oral+History+Series_eng07_ebook.pdf)
+- **Note:** its 9 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| HKFA event page pe-event-2017-16-1-1 | The HKFA says the story of Jumping Ash moves from Amsterdam to the 'local exoticism' of the City. It does not say whether the crew filmed inside the City. | "taking the story from the international glamour of Amsterdam to the local exoticism of Kowloon Walled City" |
+| HKFA event page pe-event-2017-16-1-1 | The HKFA screened the film on Sunday 9 Apr 2017 at 2 pm in its cinema, with a talk by Leong Po-chih (梁普智) and Siu Heng. The film: 1976, colour, Cantonese, 85 minutes. | "1976 / Colour / D Beta / Cantonese / Chi & Eng subtitles / 85min" |
+| zh Wikipedia 跳灰, infobox | zh Wikipedia: the film opened in Hong Kong on 26 Aug 1976; directors 梁普智 and 蕭芳芳; writer 陳欣健. It names no filming place. | "英屬香港：1976年8月26日" (British Hong Kong: 26 August 1976) |
+
+- **Leads:**
+  - The film Jumping Ash (1976): its City scenes are on the edge of the City only, says its co-writer (HKFA Oral History Series 7, p.255).
+  - HKFA Oral History Series 7 (2018), interview of Philip Chan, p.266: Long Arm of the Law (1984) was shot inside the City (see top-depictions-7).
 ### depictions-9: Roaring Fire (吼えろ鉄拳): rooftop shots from inside the City
 
-- **Creator:** Norifumi Suzuki, director; Toei
-- **Date:** 1981
-- **Kind:** film
-- **Class:** depiction (A Japanese fiction film; the blog finds shots taken from the City's roofs.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © Toei; blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html
-- **Other links:** https://en.wikipedia.org/wiki/Roaring_Fire
-- **Proof that it exists:** I hadn't realised until I saw this film, but it seems as though the large area in front of the infamous Kowloon Walled City - now known as the Carpenter Road Park - was a small cottage area.
-- **What it gives (finder's note, not checked):** Views from the City's rooftops toward Nga Tsin Long Road (red shop awnings, a dispensary in trees), Chi Kam Court (built 1981) and Victory Building, and the squatter huts in front of the City, about 1981.
-- **Notes:** The blog says the crew 'appear to have filmed from inside' the City, on its roofs: an inference from the views. Wikipedia: a 1981 film, US release 1 May 1982; it does not name the City. Useful for the view from the roofs and for the squatter area south of the City.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the blog post and its five frame grabs, and the English Wikipedia article. I did not watch the film (no open copy). The blog's claim that the camera was on the City's roofs is its own inference from the views.
+- **Citation:** Norifumi Suzuki, director, Roaring Fire (吼えろ鉄拳), Toei, c.1981; US release 1 May 1982 (New Line Cinema). Frame grabs and notes: Phil, 'Roaring Fire - Hiroyuki Sanada (1982) - Kowloon City, Kowloon', Hong Kong and Macau Film & TV Locations (blog), 15 Jan 2015, https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html ; Wikipedia 'Roaring Fire', https://en.wikipedia.org/wiki/Roaring_Fire
+- **Class:** depiction (A fiction film; its views over the squatter area south of the City (about 1981) are a record made at the time (kind primary, my readings inferred). The blog is secondary.)
+- **Date of the record:** c.1981 (inferred: the blog says that Chi Kam Court, built 1981, was nearly new; Wikipedia gives a US release of 1 May 1982).
+- **Files:**
+  - `depictions-9-vlcsnap-2015-01-13-12h09m20s18-53fa6438.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): view over the squatter huts toward Nga Tsin Long Road (衙前塱道); https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYE6qh8LDs-NEoS3pW5g9HQdFdJWW1rocmHyjpF6i-Itl1LiU1GjAwRtWorUqVR3LzDUn55sHjYtFoy-vsQFhTbwSqiHsWjQ_DvDBP5UQtU1vn72tDfh3kpCN26mbjqA123VIXl154egDC/s1600/vlcsnap-2015-01-13-12h09m20s18.jpg; 65881 bytes; SHA-256 `570964d56d769aebf62a67754ac7d2710eb52ab52af6a4d360b826874b3c9db6`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html)
+  - `depictions-9-vlcsnap-2015-01-13-12h09m54s118-4e111689.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): closer view of the huts and the road with red awnings; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihUYD7papPYvWkFwRGfR18V7mMK8lERjCOxF6xx6RSDLl9-VAritGUgqix8wpR7p-B19UJTr0Tz9hx-jK5OGxqvTtKR5uubolTU5apQQvYGElhE3kaRAkddAXmll4QCFoNonDL5NpqwryR/s1600/vlcsnap-2015-01-13-12h09m54s118.jpg; 58149 bytes; SHA-256 `d1d9f778bc59375e07587dbc2ac1a559af8818300ec42120353795e24d85a09d`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html)
+  - `depictions-9-vlcsnap-2015-01-13-12h55m15s193-c5d93ad1.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): huts, the dispensary trees and the white Chi Kam Court, red steel railing in the foreground; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvLx6KHNd27D7zpQdmVDEaUun9G26m74xXroFxR0m6oCQGxkGIu4CFrwKzjoHK3-RlXuxmwX0NVHTIYnFrjfe5jDRkXQSBHx2Wti8EQHJAjKMaMp-OXVkNtwsEWzThBVh4WrO1UyDbHNid/s1600/vlcsnap-2015-01-13-12h55m15s193.jpg; 60883 bytes; SHA-256 `2ae5a695c9cf063fcc96f66dfd3f5f7d56a091b76b5f84a4e5b303e72dcf2ad5`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html)
+  - `depictions-9-vlcsnap-2015-01-13-12h55m25s43-662b9460.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): huts and blocks across Hau Wong Road; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRnschl6u9b39gehkWJFWBZ3Odvgie38000QuCe29-jcl6gUxdeOfTVCxSqFjsOoEJievfaq-pX6guyg9ttt01gRk34dZuuWlinKmtvsolk6BC1KqBkPrtWQXnd03C8AQ7WfioDevuGy7F/s1600/vlcsnap-2015-01-13-12h55m25s43.jpg; 60048 bytes; SHA-256 `2dcc9bea5ade0c3a68d413be975ddfe377962965db6836d252bc7efdc6544aed`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html)
+  - `depictions-9-vlcsnap-2015-01-13-12h55m31s98-47b87ef6.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): huts in front of the Victory Building; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyne2q8gMXnpnK994HW4mmaGZPO6dZLR9GXURLEMmnmujtu8u8SVoPs88kHH-Q7Vp9vu06Cyyk76S5yGWO1B7z15QnN4yIGjys7AtST1IPDkvPguSfP1q86gQXUILgqfVDP1Dzgwi6L5VU/s1600/vlcsnap-2015-01-13-12h55m31s98.jpg; 56390 bytes; SHA-256 `8217767569da73548827eb8bedac39caaf0ba3fa0343d1f3c68f5f96a9e17b30`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982_14.html)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post, para 1 | The blog says that the large area in front of the City, now Carpenter Road Park (賈炳達道公園), was a cottage area of small squatter huts. | "the large area in front of the infamous Kowloon Walled City - now known as the Carpenter Road Park - was a small cottage area" |
+| blog post, para 2 | The blog thinks that the crew took the camera into the City and up onto its rooftops for these views. | "the film makers seem to have taken their camera into the Walled City itself and put them up on the rooftops" |
+| blog post, para 3 | The blog says that the first two shots look from the top of the City toward Nga Tsin Long Road (衙前塱道), the road with the red shop awnings, and that the tree-covered area is a dispensary. | "it's the road with the red shop awnings. The tree covered area is the previously mentioned dispensary." |
+| blog post, para 5 | The blog says that a later shot shows Chi Kam Court, white and nearly new (built 1981), across Hau Wong Road. | "Chi Kam Court (built 1981 - virtually brand new when this film was made!) on the opposite side of Hau Wong Road" |
+| blog post, para 6 | The blog says that the next building is the end of the Victory Building, which fronts Lion Rock Road. | "the end of the Victory Building that fronts Lion Rock Road" |
+| blog post, para 7 | The blog says that the shanty town and the City are gone, and Kowloon City Plaza (九龍城廣場) now stands on Carpenter Road (賈炳達道) in front of Chi Kam Court and the Victory Building. | "the Kowloon City Plaza has also been built on Carpenter Road right in that space in front of Chi Kam Coiurt" |
+| Wikipedia, infobox and release section | Wikipedia gives a US release by New Line Cinema in May 1982; it does not name the City. | "New Line Cinema released the film in May 1982" |
+
+- **Leads:**
+  - The blog's previous post on Roaring Fire (Nga Tsin Long Road and the dispensary): it names the dispensary that the City post mentions.
 ### institutions-17: Man on the Brink (screening in 'Film Archive to screen selected cops-and-gangsters films of "100 Must-See Hong Kong Movies"')
 
-- **Creator:** Hong Kong Film Archive (press release, Leisure and Cultural Services Department)
-- **Date:** 1981
-- **Kind:** film
-- **Class:** depiction (A feature film with scenes shot at the City in about 1981.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © HKSAR Government (press release)
-- **Link:** https://www.info.gov.hk/gia/general/201811/07/P2018110100375.htm
-- **Proof that it exists:** Film Archive to screen selected cops-and-gangsters films of "100 Must-See Hong Kong Movies" at North District Town Hall — 7 Nov 2018 — 'The film also brings back scenes of the Kowloon Walled City...'
-- **What it gives (finder's note, not checked):** The Film Archive says Man on the Brink (1981) shows scenes of the Walled City, the Yau Ma Tei fruit market and a public estate of the early 1980s.
-- **Notes:** The press release does not give the director or the Chinese title. Not in the README film list (Bloodsport, Shadow of China, etc.).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Leisure and Cultural Services Department, Hong Kong Film Archive, 'Film Archive to screen selected cops-and-gangsters films of "100 Must-See Hong Kong Movies" at North District Town Hall', press release, 7 Nov 2018, HKT 15:00, https://www.info.gov.hk/gia/general/201811/07/P2018110100375.htm ; Chinese version 〈電影資料館「百部不可不看的香港電影」精選警匪片於北區大會堂放映〉, https://www.info.gov.hk/gia/general/201811/07/P2018110100374.htm
+- **Class:** secondary (A 2018 programme note about films of 1981 and 1984. The films themselves are depictions with real location footage.)
+- **Date of the record:** 2018-11-07
+- **Files:**
+  - `institutions-17-P2018110100375.htm-e6ea2016.html` (in `local/`, not in git): HTML of the press release (short page); https://www.info.gov.hk/gia/general/201811/07/P2018110100375.htm; 15798 bytes; SHA-256 `aafbdff6d83ecbd4dff297ee958727798008401471ca1e8d1db3a2ae985e1772`; licence: © HKSAR Government; the page states no open licence (the site's copyright notice was not checked) (https://www.info.gov.hk/gia/general/201811/07/P2018110100375.htm)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| info.gov.hk press release, 7 Nov 2018, HKT 15:00, para. 2 | The Hong Kong Film Archive says that Man on the Brink (1981) shows scenes of the City, of the Yau Ma Tei Wholesale Fruit Market and of a public housing estate of the early 1980s. | "The film also brings back scenes of the Kowloon Walled City, the Yau Ma Tei Wholesale Fruit Market and a public housing estate" |
+| info.gov.hk press release, 7 Nov 2018, HKT 15:00, para. 2 | The press release says Long Arm of the Law (1984) also shows the City. | "Also featuring the Kowloon Walled City, "Long Arm of the Law" is equally exciting." |
+| info.gov.hk press release, 7 Nov 2018, HKT 15:00, para. 2 | Man on the Brink is an undercover-cop film; its lead character is Ah Chiu. It won four Golden Horse Awards (Best Film, Director, Screenplay, Actor). | "Man on the Brink" won four Golden Horse Awards for Best Film, Best Director, Best Screenplay and Best Actor. |
+| info.gov.hk press release, 7 Nov 2018, HKT 15:00, para. 1 | The Film Archive screened Man on the Brink on 7 Dec 2018 and Long Arm of the Law on 8 Dec 2018 at North District Town Hall, in Cantonese with Chinese and English subtitles. | "Man on the Brink" (1981) December 7 "Long Arm of the Law" (1984), "Police Story" (1985) December 8 |
+| YouTube, related-video list on https://www.youtube.com/watch?v=aJ-7SttfE_Q, seen 2026-11-20 | The press release does not give the director or the Chinese title of Man on the Brink. A YouTube video title of the channel 美亞影院 Cinema Mei Ah (seen as a related video on 2026-11-20) gives the Chinese title 邊緣人 for Man On The Brink, with the cast 嘉倫, 金興賢 and 艾迪. | "邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah" (Man on the Brink / Ka Lun, Kam Hing-yin, Eddy / Cantonese, Chinese subtitles / Cinema Mei Ah) |
+| info.gov.hk press release (Chinese), 〈電影資料館「百部不可不看的香港電影」精選警匪片於北區大會堂放映〉, 7 Nov 2018, para. 2 | The Chinese version of the press release gives the Chinese title 《邊緣人》 (1981). It says the viewer follows the hero 阿潮 into undercover life and revisits the City, the Yau Ma Tei fruit market (油麻地果欄) and a low-rent estate (廉租屋邨) of the early 1980s. | "並重遊八十年代初的九龍城寨、油麻地果欄及廉租屋邨" (and revisits Kowloon Walled City, the Yau Ma Tei fruit market and the low-rent housing estates of the early 1980s) |
+| info.gov.hk press release (Chinese), 7 Nov 2018, para. 2 | The Chinese press release says Long Arm of the Law (省港旗兵) was also shot in the City: the robber 大東 from Guangzhou kills a policeman and fights the police in a chase and a gunfight in the City. | "與追捕他的警察在九龍城寨追逐駁火，場面震撼" (chases and exchanges fire with the police pursuing him in Kowloon Walled City; the scenes are stunning) |
+
+- **Leads:**
+  - Man on the Brink (邊緣人, 1981): view its City scenes. The YouTube channel 美亞影院 Cinema Mei Ah (a rights holder) seems to carry the film with Chinese subtitles; not checked.
 ### depictions-10: Shanghai Surprise (western edge of the City in the background)
 
-- **Creator:** Jim Goddard, director (HandMade Films); stars Madonna and Sean Penn
-- **Date:** 1986
-- **Kind:** film
-- **Class:** depiction (A fiction film that uses the City's outer tenements as a background for 1930s Shanghai.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders; blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2016/05/shanghai-surprise-madonna-1986-kowloon.html
-- **Proof that it exists:** Shanghai Surprise - Madonna (1986) - Kowloon Walled City, Kowloon
-- **What it gives (finder's note, not checked):** The tenements on the western edge of the City and the shaved hillside behind Tung Tau Tsuen Road, in the background of a scene, in 1985-86. It does not show the inside.
-- **Notes:** Blog: 'We don't get to see inside the city'. The director's name comes from my own knowledge, not from a page that I opened: check it. A reader says the City did not look like this in 1937, the year of the story.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the blog post, its two frame grabs and its one comment, and the Production section of the English Wikipedia article (which confirms the director, Jim Goddard). I did not watch the film (no open copy).
+- **Citation:** Jim Goddard, director, Shanghai Surprise (HandMade Films; distributed by MGM), US release 29 Aug 1986. Frame grabs and notes: Phil, 'Shanghai Surprise - Madonna (1986) - Kowloon Walled City, Kowloon', Hong Kong and Macau Film & TV Locations (blog), 29 May 2016, https://hkmacaufilmtvlocations.blogspot.com/2016/05/shanghai-surprise-madonna-1986-kowloon.html ; Wikipedia 'Shanghai Surprise', https://en.wikipedia.org/wiki/Shanghai_Surprise
+- **Class:** depiction (A fiction film set in 1937; the City is only a background, about early 1986. The frames are a record of the west face made at the time (kind primary, inferred); the blog and Wikipedia are secondary.)
+- **Date of the record:** Early 1986 (inferred: Wikipedia says principal photography in Macau and Hong Kong was set to begin by January 1986); released 29 Aug 1986.
+- **Files:**
+  - `depictions-10-vlcsnap-2016-05-25-13h14m20s41-03c364ec.jpg` (in `local/`, not in git): Shanghai Surprise frame (c.1986): crowd of extras; the west face of the City and the cut hillside behind; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRVRkLsK4dHl2Ra7O8LDXSQSw9TaFQl0gFgodLM4Gna1Y4jwGYOfKsJ2Kbtcpv7eq_JSwLqHEGPQFx2Ew4pRXJr305uHsoUOy5hc4cStbvraqL9oN6OqIiM2wn85FOC_PKEm376VmJkFN1/s1600/vlcsnap-2016-05-25-13h14m20s41.jpg; 132682 bytes; SHA-256 `308ee25bb95498df1fcbb39e9471675910b73694f89f7a6efc20fdd835543454`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2016/05/shanghai-surprise-madonna-1986-kowloon.html)
+  - `depictions-10-vlcsnap-2016-05-25-13h15m38s64-9bdcbbb2.jpg` (in `local/`, not in git): Shanghai Surprise frame (c.1986): actor with rickshaws; the west face of the City behind; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_SBamcxs15SIG7AoBc4y7GRelVZ13Y4_Pwofl6PQ5WqfF5Jiaud2lF69PVHeAgpMT7SR-nIEa8QY-u-M5yyahht08MPgW8IfcOJ7WVR5BYqckq_yKxJJDX39XVtSDa469r1naRcEWkIZ-/s1600/vlcsnap-2016-05-25-13h15m38s64.jpg; 125227 bytes; SHA-256 `dfb1fff26162ad79e57c39399229a73250cd7e7b7b8c3da1b9d54f6ec4ff9052`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2016/05/shanghai-surprise-madonna-1986-kowloon.html)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post, para 1 | The blog says that the City stood in for old Shanghai; the film does not go inside, but the tenements of its outer edge and the shaved hillside behind Tung Tau Tsuen Road (東頭村道) are in the background. | "We don't get to see inside the "city", but the ramshackle illegal tenements that formed the outer walls of the place can be seen in the background" |
+| blog post, para 2 | The blog says that these buildings were part of the western edge of the City, so the scene was shot in what is now the centre of Carpenter Road Park (賈炳達道公園), near Kowloon City Plaza (九龍城廣場), built 1993. | "The buildings at the back used to form part of the western edge of the slum" |
+| Wikipedia, Production, para 1 | Wikipedia says that in November 1985 the film was announced with principal photography in Macau and Hong Kong by January 1986. | "principal photography set to begin in Macau and Hong Kong by January 1986" |
+| blog comment by Guest, 20 Jan 2018 | A reader (2018) says that the City did not look like this in 1937 and took this look only in the 1970s; this is the reader's opinion. | "I don't think the KWC assumed that appearance until the 1970s." |
 ### depictions-11: Shadow of China (western edge of the City)
 
-- **Creator:** Mitsuo Yanagimachi, director
-- **Date:** 1989
-- **Kind:** film
-- **Class:** depiction (A fiction film with one walk along the western edge of the City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders; blog screen grabs © blog author
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2017/01/shadow-of-china-john-lone-1989-kowloon.html
-- **Other links:** https://en.wikipedia.org/wiki/Shadow_of_China
-- **Proof that it exists:** Shadow of China - John Lone (1989) - Kowloon Walled City, Kowloon City
-- **What it gives (finder's note, not checked):** A character walks down the western edge of the City toward the airport, in the area that is now Carpenter Road Park, about 1988-89.
-- **Notes:** Premiere at the Tokyo International Film Festival, Oct 1989. Wikipedia does not name the City.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the blog post and its two frame grabs, and the lead and infobox of the English Wikipedia article. I did not watch the film (no open copy).
+- **Citation:** Mitsuo Yanagimachi, director, Shadow of China, premiered at the Tokyo International Film Festival, Oct 1989. Frame grabs and notes: Phil, 'Shadow of China - John Lone (1989) - Kowloon Walled City, Kowloon City', Hong Kong and Macau Film & TV Locations (blog), 12 Jan 2017, https://hkmacaufilmtvlocations.blogspot.com/2017/01/shadow-of-china-john-lone-1989-kowloon.html ; Wikipedia 'Shadow of China', https://en.wikipedia.org/wiki/Shadow_of_China
+- **Class:** depiction (A fiction film; the City is a background, about 1988-89. The frames are a record of the west face made at the time (kind primary, inferred); the blog and Wikipedia are secondary.)
+- **Date of the record:** c.1988-1989 (inferred from the premiere in Oct 1989).
+- **Files:**
+  - `depictions-11-vlcsnap-00014-bdb676f3.jpg` (in `local/`, not in git): Shadow of China frame (c.1989): the west face of the City over an open hard ground, a man with a suitcase; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOoMibXb3ubEvYXav0905KHyucULstpUQkvkQvuTv8LOppS44f2KtgDnTob6reqRNM29gRIjBWimP8UZuf68sVUatSUXPjGWlmLbS40Ngury7ip20QXBF-m4vtK3YTasTTDf60mz-VqgSc/s1600/vlcsnap-00014.jpg; 36352 bytes; SHA-256 `b9cc22b954a9bae006fab03028ce50a737d867064d54f850ddaf16383fef0662`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2017/01/shadow-of-china-john-lone-1989-kowloon.html)
+  - `depictions-11-vlcsnap-00015-dc213863.jpg` (in `local/`, not in git): Shadow of China frame (c.1989): the west face of the City with a football goal in front; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF2babuKYY3YA3vXNJbpQ_u24O-nLQzrzo1pAneRJaCTApmfr3ImbEiKYRFAIKeytgw535Gwqq99wYUht9AsjHp6PGrtMzkO7i8oof-X9g8W7lQYv3jfZIzQpivVbLomiWXmXuqou9vfd3/s1600/vlcsnap-00015.jpg; 41801 bytes; SHA-256 `b3a72f696c00778a5c1d6cf63d61feb3846fec936b62c4e6aa5fa699cd39d59f`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grabs of a copyrighted film or TV programme; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2017/01/shadow-of-china-john-lone-1989-kowloon.html)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post, para 1 | The blog says that the character walks down the western edge of the City back toward the airport, in the area that is now Carpenter Road Park (賈炳達道公園). | "he can be seen walking down the western edge of the "walled city" back in the direction of the airport" |
+| blog post, para 2 | The blog says that this is the same area as the Shanghai Surprise scene of a few years earlier. | "the same one where Madonna was with Sean Penn a few years earlier" |
+| Wikipedia, lead and infobox | Wikipedia gives the director (Mitsuo Yanagimachi), the premiere at the Tokyo International Film Festival in October 1989, and the source novel, 'Snake Head' by Masaaki Nishiki. It does not name the City. | "a 1989 drama film directed and co-written by Mitsuo Yanagimachi" |
 ### depictions-6: To Be Number One (跛豪)
 
-- **Creator:** Poon Man-kit, director; Stephen Shiu, producer
-- **Date:** 1991-04-05
-- **Kind:** film
-- **Class:** depiction (A fiction film set in the 1960s-70s; some scenes were shot in the City about 1990.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © the film's rights holders
-- **Link:** https://www.hk01.com/sns/article/1018365
-- **Other links:** https://en.wikipedia.org/wiki/To_Be_Number_One_(film), https://www.atlantis-press.com/article/125916071.pdf
-- **Proof that it exists:** To Be Number One (Chinese: 跛豪) is a 1991 Hong Kong gangster film directed by Poon Man-kit, and produced by Stephen Shiu.
-- **What it gives (finder's note, not checked):** HK01: in the early part, where the hero comes to Hong Kong and lives near the City, some shots were taken in the City ('個別片段亦實地取景自九龍城寨'). It does not say which shots.
-- **Notes:** The English Wikipedia page says nothing about the City. The shots must be found by a viewing. Ge Zheng (2019) also lists it among films shot at the City.
-- **Same item in the finder files:** film-18
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the To Be Number One part of HK01 (2024) with its still, the English Wikipedia article, the film list of zh Wikipedia 九龍寨城 and the film paragraph of Ge Zheng (2019). zh Wikipedia has no article on the film (跛豪 (電影) and 跛豪 (1991年電影) give 404). I did not watch the film (no open copy); the City shots must be found by a viewing.
+- **Citation:** Poon Man-kit, director, To Be Number One (跛豪), Golden Harvest and Johnny Mak Production, released 5 Apr 1991. Read through: 莫匡堯, 「九龍城寨︱盤點六部實地取景電影　成龍《重案組》入城爆破打真軍」, HK01 (香港01), 11 May 2024 (updated 13 May 2024), https://www.hk01.com/sns/article/1018365 ; Wikipedia 'To Be Number One (film)' (en) ; Wikipedia 「九龍寨城」 (zh), film list ; Ge Zheng, 'The Spatial Production of Films Illustrated by the Case of Hong Kong Kowloon Walled City', ICADCE 2019, Advances in Social Science, Education and Humanities Research vol. 341, https://www.atlantis-press.com/article/125916071.pdf
+- **Class:** depiction (A fiction film set in the 1960s-70s; HK01 says some shots of its early part were taken in the City (about 1990). All statements are secondary.)
+- **Date of the record:** Released 5 Apr 1991 (en Wikipedia); the shoot is not dated (inferred 1990).
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| HK01 2024, section 《跛豪》, para 1 | HK01 says that in the early part the hero, newly arrived from the mainland, lives around the City, and that some shots were taken on location in the City. | "電影中，個別片段亦實地取景自九龍城寨" (in the film, individual shots were also taken on location in the City) |
+| HK01 2024, caption of still 2 of the section | A HK01 caption says that some scenes of the early part were shot inside the City. | "電影《跛豪》的初段部分，有個別橋段於九龍城寨內實地拍攝。" (In the early part of To Be Number One, some scenes were shot on location inside the City.) |
+| Ge 2019, p. 140 (section II, para 1) | Ge Zheng (2019) lists the film with other crime films about the City and says that most of them were shot at the City. | "Most of these movies were shot on former location of the Walled City." |
+| zh Wikipedia 九龍寨城, film list | zh Wikipedia (九龍寨城) lists 跛豪 (1991) among the films shot in the City. | "《跛豪》（1991年）" |
+| en Wikipedia, infobox | The English Wikipedia article gives the director, the studios and the release date, and does not name the City. | "5 April 1991" |
+
+- **Leads:**
+  - The film itself (commercial DVD): the early scenes said to be shot in the City (HK01 2024) are not identified; a viewing must find them.
 ### top-gap-tv-news-archives-6: 獅子山下 1994年 - 九七同學會
 
-- **Creator:** Radio Television Hong Kong (香港電台), Below the Lion Rock (獅子山下); director 陳曼娟, producer 嚴維 (as the upload's description gives them); uploaded to archive.org by a third party
-- **Date:** 1994
-- **Kind:** film
-- **Class:** depiction (A TV drama episode whose story passes through the clearance of the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © RTHK (third-party upload; rights not stated)
-- **Link:** https://archive.org/details/below-the-lion-rock
-- **Proof that it exists:** archive.org metadata: title '獅子山下 1994年 - 九七同學會'; description: 「他們一同經歷社會變遷，看見越南船民湧港，中英談判香港前途，股市的起起落落，中英聯合聲明，八九六四事件，基本法頒佈，九龍寨城拆遷。」
-- **What it gives (finder's note, not checked):** A 1994 RTHK drama of classmates from 1980 to 1997; the clearance of the City (九龍寨城拆遷) is one of the events they see. How much of it shows the City is not known.
-- **Notes:** Cast (from the description): 邵美琪, 潘源良, 邵仲衡, 蔡嘉莉, 楊瑞麟. Language Cantonese; added 2021-08-20 to 'opensource_movies'. I did not watch it. RTHK holds the original; use the RTHK copy if one is found.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I read the item's metadata (archive.org metadata API, with WebFetch, and the exact description text in the Playwright browser). I did not watch the 52-minute video (no tool for video, and no video download). I looked at all 53 thumbnails that archive.org made from the video (one about every 60 seconds), in one contact sheet and then four of them at full size. Thus I can say only what the description and the thumbnails show.
+- **Citation:** Radio Television Hong Kong (香港電台), Below the Lion Rock (獅子山下), 〈九七同學會〉, 1994, director 陳曼儀, producer 嚴維 (as the upload's description gives them); the upload is a later RTHK re-run ('獅子山下 經典重溫 II') with a studio talk. Third-party upload to the Internet Archive, item 'below-the-lion-rock', added 2021-08-20, file 獅子山下 - 九七同學會 (1994).mp4, 3,121.92 s, https://archive.org/details/below-the-lion-rock
+- **Class:** depiction (A 1994 TV drama made during the clearance (1993-1994). It is fiction, but a thumbnail shows an archive still of the real City. Correct tree: secondary (a depiction).)
+- **Date of the record:** 1994 (drama); upload 2021-08-20
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org item below-the-lion-rock, description (metadata, read 2026-11-20) | The drama follows a group of journalism classmates from 1980 to 1997. The description lists the clearance of the City (九龍寨城拆遷) among the events they see, after the Basic Law. | "八九六四事件，基本法頒佈，九龍寨城拆遷。" (the June Fourth incident of 1989, the promulgation of the Basic Law, the demolition and relocation of Kowloon Walled City.) |
+| archive.org item below-the-lion-rock, description (metadata, read 2026-11-20) | The description gives the director as 陳曼儀 and the producer as 嚴維. The plan record wrote the director as 陳曼娟; the description writes 陳曼儀. | "導演：陳曼儀" (Director: 陳曼儀) |
+| archive.org item below-the-lion-rock, description (metadata, read 2026-11-20) | The upload is a later RTHK re-run with a studio talk. The guests are 吳俊雄 (University of Hong Kong), 舒琪 (Hong Kong Academy for Performing Arts) and 張少強 (Hong Kong Shue Yan University). Thumbnails from about 47 to 51 minutes show this talk, and a title card at about 26 minutes reads 獅子山下 經典重溫 II. | "對談嘉賓：香港大學社會學系副教授吳俊雄博士" (Guests: Dr 吳俊雄, Associate Professor, Department of Sociology, University of Hong Kong) |
+| archive.org item below-the-lion-rock, thumbnail strip (53 frames), frame _001739.jpg | INFERRED: The thumbnail at 1,739 s (about 29 minutes) shows a black-and-white aerial view of a dense block of buildings with the caption '1991'. By its shape it is the City (INFERRED, from a small frame). It is part of a run of captioned year frames: 1988 (a protest banner) at 1,442 s and 1993 (a crowd) at 2,216 s. Thus the drama seems to use an archive image of the City only as a marker of the year; I saw no other frame of the City. | "1991" ((caption on the frame)) |
+| archive.org metadata API, file list | The video runs 3,121.92 seconds (about 52 minutes), Cantonese, 768x432. | "3121.92" ((length in seconds, file metadata)) |
+
+- **Leads:**
+  - RTHK's own copy of 獅子山下〈九七同學會〉 (1994): watch the part near 29 minutes (the '1991' aerial frame) to see if the drama shows any other footage of the City or of its clearance.
 ### depictions-21: A Fist Within Four Walls (城寨英雄)
 
-- **Creator:** Jazz Boon, producer; TVB
-- **Date:** 2016-08-01
-- **Kind:** film
-- **Class:** depiction (A later TV drama on a studio set; fiction.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © TVB
-- **Link:** https://en.wikipedia.org/wiki/A_Fist_Within_Four_Walls
-- **Proof that it exists:** A Fist Within Four Walls (Chinese: 城寨英雄; Cantonese Yale: Sìngjaaih Yīnghùng) ... is a 2016 Hong Kong martial arts action television drama produced by Jazz Boon and TVB.
-- **What it gives (finder's note, not checked):** 28 episodes, 1-28 Aug 2016, set in the triad-run City of the early 1960s, with a prologue of 1945.
-- **Notes:** The page does not say where the set was built or what research was done. Legal viewing: TVB's own services; not checked.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'A Fist Within Four Walls' (城寨英雄), Wikipedia (English), read 2026-11-20, https://en.wikipedia.org/wiki/A_Fist_Within_Four_Walls ; TVB drama, producer Jazz Boon, 28 episodes, TVB Jade 1-28 Aug 2016.
+- **Class:** depiction (A 2016 TV drama set in the City of the early 1960s, 25 years before the period of the repo. Not evidence for the real City.)
+- **Date of the record:** broadcast 2016-08-01 to 2016-08-28
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| en Wikipedia 'A Fist Within Four Walls' (read 2026-11-20), lead | A Fist Within Four Walls (城寨英雄) is a 2016 TVB martial-arts drama, produced by Jazz Boon, set in the triad-run City of the early 1960s. | "takes place in the triad-ridden Kowloon Walled City in the early 1960s." |
+| en Wikipedia 'A Fist Within Four Walls' (read 2026-11-20), lead | It has 28 episodes. It started on TVB Jade on 1 Aug 2016 and ended on 28 Aug 2016. | "The final episode aired on 28 August 2016, totalling 28 episodes." |
+| en Wikipedia 'A Fist Within Four Walls' (read 2026-11-20), Plot | The plot opens in 1945, when two Bajiquan masters make a short alliance to protect the City. | "In 1945, Bajiquan masters Duen Tung-tin and Chiu Mang-san form a brief alliance to protect the once-peaceful" |
+| en Wikipedia 'A Fist Within Four Walls' (read 2026-11-20), Development and filming | INFERRED: TVB announced the series on 15 Apr 2015. Shooting started about a week before a blessing ceremony on 28 Aug and lasted to the third week of November. The year 2015 for the shoot is from the context (the announcement and the cited reports of August 2015). | "A blessing ceremony for the drama was held on 28 August, a week after shooting began." |
+| en Wikipedia 'A Fist Within Four Walls' (read 2026-11-20), Development and filming | INFERRED: The page gives no site for the set and no research for the series. | "Principal photography lasted until the third week of November." |
+
+- **Leads:**
+  - TVB 周刊 #950, 〈新劇解構〉, 7 Sep 2015 (cited by en Wikipedia): can describe the set of the series.
+  - Stand News, 27 Jul 2016: the writer of City of Darkness (九龍城寨) says the series copies it (cited by en Wikipedia).
 ### top-depictions-11: Chasing the Dragon (追龍)
 
-- **Creator:** Wong Jing (王晶) and Jason Kwan (關智耀), directors; 星王朝, 博納影業 and others
-- **Date:** 2017-09-28
-- **Kind:** film
-- **Class:** depiction (A later fiction film set partly in the City of the 1960s-70s, shot on a copy.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © the film's rights holders
-- **Link:** https://zh.wikipedia.org/zh-hk/追龍_(電影)
-- **Other links:** https://en.wikipedia.org/wiki/Chasing_the_Dragon_(film), https://www.ourchinastory.com/zh/11750, https://www.thepaper.cn/newsDetail_forward_1829774
-- **Proof that it exists:** zh Wikipedia filming locations list: '廣東佛山西樵山國藝影視城九龍城寨'
-- **What it gives (finder's note, not checked):** The City scenes were shot on a copy of the City at a film studio on Xiqiao Mountain, Foshan (zh Wikipedia, no footnote). The Paper describes a long take through the crowded City with a jet passing low to Kai Tak. Set in the 1960s-70s, not the peak years.
-- **Notes:** Neither Wikipedia page gives a source for the set or its research. ourchinastory (2024) quotes Andy Lau: the copy is about 90% like the real City. Legal viewing not checked.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** '追龍 (電影)', Wikipedia (Chinese), https://zh.wikipedia.org/zh-hk/追龍_(電影) ; 熊雄, 〈“我宁可他们拆掉的是金字塔”：影像和真实历史中的九龙寨城〉, 澎湃新闻 (The Paper), column 翻书党, 2017-10-19, https://www.thepaper.cn/newsDetail_forward_1829774 ; 黃皓頤, 〈《九龍城寨之圍城》掀熱潮 盤點寨城取景經典港產片〉, 當代中國, 2024-05-30, https://www.ourchinastory.com/zh/11750
+- **Class:** depiction (A 2017 feature film set in the 1960s-70s, shot on a copy of the City in the Mainland. The articles about it are secondary.)
+- **Date of the record:** film released in Hong Kong 2017-09-28
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| zh Wikipedia 追龍 (電影), infobox 拍攝場地 | INFERRED: zh Wikipedia lists the filming places: 香港鯉魚門公園, 廣東佛山西樵山國藝影視城 and '九龍城寨' (the last can only be the copy, since the real City was gone; INFERRED). It gives no footnote. | "廣東佛山西樵山國藝影視城" (the 國藝影視城 film and TV city, 西樵山, Foshan, Guangdong) |
+| zh Wikipedia 追龍 (電影), plot | The story begins when the hero comes to Hong Kong in the famine of the 1960s; it runs to 1974, when the ICAC was set up. en Wikipedia: he enters Hong Kong in 1963. | "1960年代三年大饑荒時偷渡逃難來香港" (came to Hong Kong illegally as a refugee in the three-year famine of the 1960s) |
+| 當代中國 (ourchinastory.com), 黃皓頤, 2024-05-30 | Andy Lau (劉德華) said the copy of the City built for the film is about 90% like the real City, with the maze of crossing lanes. | "曾指差不多有九成相似，他形容場景也能夠做到寨城猶如迷宮的縱橫交錯" (He said it was about ninety percent similar, and that the set could show the maze-like crossing lanes of the City.) |
+| 當代中國 (ourchinastory.com), 黃皓頤, 2024-05-30 | The film rebuilt the City in the Mainland in 2017, after the real City was cleared in 1994. | "1994年九龍寨城完成清拆，但2017年的港產片《追龍》，不惜在內地重建寨城面貌。" (The clearance of the City ended in 1994, but the 2017 Hong Kong film Chasing the Dragon went as far as rebuilding the City in the Mainland.) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | The Paper describes a long take in which Donnie Yen walks through the crowded City, and an airliner that passes low over the City to Kai Tak. | "从寨城低矮的天空中呼啸而过驶向启德机场的客机" (airliners roaring through the low sky of the City on their way to Kai Tak Airport) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | The Paper says Brothers from the Walled City (城寨出來者, 1982) was shot entirely on location in the City. This conflicts with HK01 (depictions-14), which says only the childhood part was shot inside. | "全片在寨城内实景拍摄，展现了一对孤儿兄弟在毒品肆虐、娼妓泛滥的城寨里的孤独成长。" (The whole film was shot on location in the City, showing two orphan brothers growing up alone in a City full of drugs and prostitution.) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): owners in the City could rent rooms one third to one half below the market of the area around. | "低于周围地区房屋市场三分之一到一半的房价出租房屋" (rent out housing at one third to one half below the housing market of the surrounding area) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, after the writer 也斯): there were very many dentists in the City. | "这儿也特别多牙医" (There were also especially many dentists here.) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): from 1980 the government sent police to patrol inside the City. | "到1980年，港英政府开始在寨城内派遣警察巡逻" (By 1980 the British Hong Kong government began to send police to patrol inside the City.) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): the kaifong welfare association was first formed in 1963 to protest against the government's clearance plan. | "街坊福利会最初是于1963年为了抗议殖民政府" (The kaifong welfare association was first formed in 1963 to protest against the colonial government) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): in the 1980s the population grew to 50,000. | "人口膨胀至5万人" (the population swelled to 50,000) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): with the clearance announcement of January 1987, the government sent 1,200 survey staff into the City, under the guard of plain-clothes police, to record every property: its ownership, its owner and its size. | "香港政府测绘部门派出了1200名测绘人员，在便衣警察的保护下进入寨城" (The Hong Kong government survey department sent 1,200 survey staff into the City under the protection of plain-clothes police) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): after the clearance was announced, guards were put at the 83 entrances of the City. | "在寨城的83个出入口都设置了警卫" (guards were posted at the 83 entrances of the City) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | Background (The Paper, no source): the goods that people moved into the City to claim compensation were later valued at up to HK$2.3 billion. | "总数可达23亿港元" (the total could reach HK$2.3 billion) |
+| 澎湃新闻 (The Paper), 熊雄, 2017-10-19 | INFERRED: Background (The Paper, no source): the clearance took about a year and used nearly 5,000 police; it says nearly 10,000 people were 'detained' (扣押). That word is doubtful, and the count can be a mistake for the people moved out (INFERRED). | "出动了近5000警力、扣押近万人、历时一年" (sent out nearly 5,000 police, detained nearly ten thousand people, and took a year) |
+
+- **Leads:**
+  - 《九龙寨城史话》: cited by The Paper for life in the City in the 1950s (opium dens, gambling houses, dog-meat stalls).
+  - 也斯 (Leung Ping-kwan): an essay or memoir on the City's dentists, unlicensed doctors and hawkers, cited by The Paper (title not given).
+  - 陈可唯, 《异度空间记忆》, 《电影文学》 2017 no. 13 (cited by The Paper).
+  - 赛思·哈特 (Seth Harter), 'Hong Kong's Dirty Little Secret', Journal of Urban History (cited by The Paper).
+  - 郭家宏, 《九龙城寨与中英关系》, 《民国档案》 (cited by The Paper).
 ### depictions-19: Twilight of the Warriors: Walled In (九龍城寨之圍城), and its set
 
-- **Creator:** Soi Cheang (鄭保瑞), director; John Chong and Wilson Yip, producers; Mak Kwok-keung (麥國強), art director
-- **Date:** 2024-05-01
-- **Kind:** film
-- **Class:** depiction (A later fiction film on a reconstructed set; its makers did not see the City as filmmakers.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © the film's rights holders; Tatler © Tatler Asia
-- **Link:** https://www.tatlerasia.com/lifestyle/entertainment/kowloon-walled-city-hong-kong-film-director-interview
-- **Other links:** https://en.wikipedia.org/wiki/Twilight_of_the_Warriors:_Walled_In, https://zh.wikipedia.org/wiki/九龍城寨之圍城, https://www.kai-fong.com/movies/twilight-of-the-warriors-walled-in, https://www.discoverhongkong.com/tc/what-s-new/events/kowloon-walled-city-cinematic-journey-exhibition.html
-- **Proof that it exists:** ‘Twilight of the Warriors: Walled In’ wins big at Hong Kong Film Awards: Best Director Soi Cheang on recreating Kowloon Walled City
-- **What it gives (finder's note, not checked):** How the set was made: interviews with former residents, no official records of the full size, a street at the Sai Kung studio, a temple in an empty school in Yuen Long, ground and underground levels near the real site, CGI for the rest. Set in the City of the 1980s.
-- **Notes:** Tatler (Zabrina Lo, updated 28 Apr 2025): former residents 'recalled to us vividly what life was like within the walls'; 'there were no official records of this'. zh Wikipedia: sets at 西貢蠔涌成豐片場, 邵氏片場 and 元朗屏山公立達德學校; real 1980s magazines and TVs as props; the theme exhibition moved to 九龍寨城公園 in May 2025 for three years ('「九龍城寨光影之旅」電影場景展'). Discover Hong Kong exhibition page: 403. Ming Pao 2024-04-19, HKET topick 3120202, Time Out HK: 403; RTHK 1792801: error page. en Wikipedia: the sequel invited former residents to donate objects. A reconstruction: never use it as evidence.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Zabrina Lo, "'Twilight of the Warriors: Walled In' wins big at Hong Kong Film Awards: Best Director Soi Cheang on recreating Kowloon Walled City", Tatler Asia, updated 28 Apr 2025, https://www.tatlerasia.com/lifestyle/entertainment/kowloon-walled-city-hong-kong-film-director-interview ; with en and zh Wikipedia articles on the film (九龍城寨之圍城, dir. Soi Cheang (鄭保瑞), 2024).
+- **Class:** depiction (A 2024 feature film set in the City of the 1980s, and later interviews about its set. A reconstruction: never use it as evidence for the real City. The director says he never went to the City.)
+- **Date of the record:** film released 2024-05-01; Tatler interview updated 2025-04-28
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | Soi Cheang (鄭保瑞) says the crew did a lot of research and interviewed many former residents to get the atmosphere. | "We relied on a lot of research and interviewed many former residents to get a sense of the atmosphere." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | Soi Cheang says the former residents told them vividly about life inside the walls. | "They recalled to us vividly what life was like within the walls." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | Soi Cheang says they could not rebuild the City at its real size because there were no official records of it. | "We couldn't recreate the city in its original size because there were no official records of this." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | Soi Cheang describes the units as illegal structures put together at random, with no authority to control building. | "All the units were illegal structures put together randomly, which formed a unique landscape." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | The crew built a street of the City in the outdoor area of a film studio in Sai Kung. | "The first was the outdoor area of Sai Kung's film studio, where we built a street of Kowloon Walled City." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | A second set was in an abandoned school in Yuen Long. | "Another was an abandoned school in Yuen Long." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | The crew built the ground and underground levels of the City, and then made the whole City with CGI. | "We also created the ground and underground levels of Kowloon Walled City ... Later we used CGI to put together the whole city." |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | The source novel is set in 1988. Soi Cheang moved the film a little earlier, to about 1984. | "I adjusted the historical period of the movie to a little earlier to around 1984" |
+| Tatler Asia, Zabrina Lo, updated 2025-04-28 | Soi Cheang says he heard of the City as a child but never went there; people said it was dirty. | "I had heard of it when I was a child, but I had never been to the city." |
+| zh Wikipedia 九龍城寨之圍城 (read 2026-11-20), section 製作 | zh Wikipedia names the set sites: the 成豐片場 studio at 蠔涌, Sai Kung; the Shaw studio (邵氏片場); and the 公立達德學校 school at 屏山, Yuen Long. It gives no footnote for this list. | "計有西貢蠔涌成豐片場、邵氏片場、元朗屏山公立達德學校等等" (including the 成豐片場 studio at 蠔涌, Sai Kung, the Shaw studio (邵氏片場), and the 公立達德學校 school at 屏山, Yuen Long) |
+| zh Wikipedia 九龍城寨之圍城 (read 2026-11-20), section 製作, citing 明報 2024-04-19 | The crew first planned to build the set in the Mainland, but the pandemic made them build it in Hong Kong (zh Wikipedia, citing Ming Pao, 2024-04-19). | "本來打算在內地搭景拍攝，但因疫情所限，才決定在香港搭建城寨佈景" (They first planned to build the set and shoot in the Mainland, but because of pandemic limits they decided to build the City set in Hong Kong.) |
+| zh Wikipedia 九龍城寨之圍城 (read 2026-11-20), section 製作, citing JET Magazine Instagram 2024-04-29 | At the school (達德學校) the art department built the story's temple, opera stage (戲棚) and cha chaan teng (茶餐廳) (zh Wikipedia, citing JET Magazine, 2024-04-29). | "其中美術組將達德學校場景改建成故事內的廟宇、戲棚及茶餐廳等" (The art department converted the 達德學校 site into the story's temple, opera stage, cha chaan teng and others.) |
+| zh Wikipedia 九龍城寨之圍城 (read 2026-11-20), section 製作, citing 香港經濟日報 2021-11-30 | Real 1980s magazines and TV sets were used as props (zh Wikipedia, citing 香港經濟日報, 2021-11-30). | "以及80年代的雜誌及電視等道具" (and props such as 1980s magazines and televisions) |
+| en Wikipedia 'Twilight of the Warriors: Walled In' (read 2026-11-20), section Production | en Wikipedia says that two replica sets of the City were built for the film (citing TOPick 3120202 and 8days.sg, 2 Dec 2021). | "Koo revealed that two replica sets of the Kowloon Walled City were built for filming" |
+| en Wikipedia 'Twilight of the Warriors: Walled In' (read 2026-11-20), section Production | en Wikipedia says real magazines, record albums, TVs and commercials of the 1980s were to be used as props. | "actual magazines, record albums, televisions and commercials from the 1980s will be used as props" |
+| en Wikipedia 'Twilight of the Warriors: Walled In' (read 2026-11-20), section Production | Principal photography began on 22 Nov 2021 and ended on 3 Apr 2022 (en Wikipedia: 'On 3 April 2022, filming was officially wrapped'). | "Principal photography for the film officially began on 22 November 2021" |
+| en Wikipedia 'Twilight of the Warriors: Walled In' (read 2026-11-20), section Future | For the sequel, the film company asked former residents of the City to give objects and memorabilia (en Wikipedia, citing HK01, 許育民, 2025-10-21). | "invited former residents of Kowloon Walled City to contribute objects and memorabilia" |
+| zh Wikipedia 九龍城寨之圍城 (read 2026-11-20), lead section, citing Discover Hong Kong and Time Out HK, 2025-09-13 | A three-year exhibition of the film's sets was built in Kowloon Walled City Park (九龍寨城公園). The finder's note says it moved there in May 2025. | "為期三年的實體特展於九龍寨城公園打造，成為觀光景點之一" (A three-year physical exhibition was built in Kowloon Walled City Park and became a tourist sight.) |
+
+- **Leads:**
+  - 明報 (Ming Pao), 〈鄭保瑞重塑寨城日常 三不管以外老香港故事〉, 2024-04-19: the director on the set and its research (the finder got 403).
+  - HK01, 許育民, 〈九龍城寨之終章｜正式籌備 電影公司呼籲「寨民」伸出援手有獎賞〉, 2025-10-21: the call to former residents for objects; the objects given can be a lead to real 1980s things of the City.
+  - HK01, 〈曾搭建《九龍城寨之圍城》場景 區議員倡屏山達德學校變電影景點〉, 2024-06-08.
+  - JET Magazine (Instagram), 〈《九龍城寨》原著作者余兒專訪：小說是原點，漫畫發揚光大〉, 2024-04-29.
+  - 香港經濟日報, 〈【九龍城寨】古天樂回味80年代香港 洪金寶高興可繼續拍香港電影〉, 2021-11-30.
+  - 香港電台 (RTHK), 〈九龍城寨之圍城電影展覽吸引旅客參觀 旅發局設義工導賞團〉, 2025-02-23.
 ### top-depictions-18: 香港・伝説のスラム街「九龍城砦」を完全再現！舞台裏に迫る／映画『トワイライト・ウォリアーズ 決戦！九龍城砦』メイキング映像・美術編
 
-- **Creator:** YouTube channel moviecollectionjp (Movie Collection)
-- **Date:** unknown
-- **Kind:** film
-- **Class:** secondary (A later making-of video about the set of a 2024 fiction film.)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** © the film's rights holders
-- **Link:** https://www.youtube.com/watch?v=aJ-7SttfE_Q
-- **Other links:** https://www.youtube.com/watch?v=PtHDg3rWzn8
-- **Proof that it exists:** oEmbed title: 香港・伝説のスラム街「九龍城砦」を完全再現！舞台裏に迫る／映画『トワイライト・ウォリアーズ 決戦！九龍城砦』メイキング映像・美術編; author_name: moviecollectionjp
-- **What it gives (finder's note, not checked):** The art department's making-of footage of the set of Twilight of the Warriors: Walled In (held as depictions-19). Content not watched.
-- **Notes:** Upload date, length and description not read: the page gives only navigation text to WebFetch. Alt URL: a set tour video by the WEEKEND CINEMA channel. Japanese release of the film: 17 Jan 2025 (search extract).
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I opened the video page in the Playwright browser and read the full description, the upload date and the length from the page's player data (ytInitialPlayerResponse). I did not watch the video (no tool for video). For the alt URL I read the title, the length and the full description in the same way.
+- **Citation:** moviecollectionjp (MOVIE Collection), 〈香港・伝説のスラム街「九龍城砦」を完全再現！舞台裏に迫る／映画『トワイライト・ウォリアーズ 決戦！九龍城砦』メイキング映像・美術編〉, YouTube, 3 Jan 2025, 4:52, https://www.youtube.com/watch?v=aJ-7SttfE_Q
+- **Class:** depiction (A 2025 promotional making-of of the set of Twilight of the Warriors: Walled In (depictions-19). The makers say they enlarged the real features. A reconstruction: never use it as evidence.)
+- **Date of the record:** 2025-01-03 (upload)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | The video was uploaded on 3 Jan 2025 (US Pacific time) and runs 292 seconds (4 minutes 52 seconds), from the page's player data. The film opened in Japan on 17 Jan 2025. | 『トワイライト・ウォリアーズ 決戦！九龍城砦』は2025年1月17日公開 (Twilight of the Warriors: Walled In opens on 17 January 2025) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | The description says the set of the City cost HK$50 million (about ¥900 million), which is said to be one sixth of the cost of the film. | "製作費の1/6とも言われる5,000万香港ドル（日本円＝約9億円）をかけて制作された九龍城砦のセット" (the Kowloon Walled City set, made for HK$50 million (about 900 million yen), said to be one sixth of the production cost) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | The art director Mak Kwok-keung (マック・コッキョン) says the team first collected many materials and met many former residents. They wanted to show life with human warmth, not crime. | "我々はまず、たくさんの資料を集め、大勢のかつての住人たちに会った。" (We first collected a lot of material and met many former residents.) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | The description says the director and art director did not only copy the real City but enlarged its features, for example the water pipes and the electric wires. | "ソイ・チェンとマック・コッキョンはリアルに再現するだけでなく、要素を拡大したという。" (Soi Cheang and Mak Kwok-keung did not only recreate it realistically but enlarged its elements.) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | INFERRED: A maker of the film (INFERRED to be Soi Cheang: the description does not name him, but the next quote is introduced as Mak Kwok-keung 'also' speaking) claims that only one water pipe came into the City, so all the pipes on the 2nd and 3rd floors took water illegally. He gives no source, and Soi Cheang says he never went to the City (depictions-19). Check it against the water sources of the repo. | "実際城砦に通っていた水道管は1本。つまり、2階や3階の水道管は全部“盗水”なんだ。" (In fact only one water pipe ran into the City. So the pipes on the 2nd and 3rd floors are all 'stolen water'.) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | INFERRED: The same speaker (INFERRED to be Soi Cheang, as above) claims that the many wires on the upper floors took power illegally, one wire to each household. He gives no source. | "上階を走る大量の電線は“盗電”で1戸に1本繋がる。" (The many wires running on the upper floors are 'stolen power', one connected to each household.) |
+| YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | Mak Kwok-keung says the City was not a chaos: each building was properly built, and the narrow passages came from the dense building. | "城砦はめちゃくちゃなわけじゃない、それぞれの建物はきちんと整ってる。" (The City is not a mess; each building is properly ordered.) |
+| YouTube PtHDg3rWzn8, WEEKEND CINEMA, description | The alt URL is a 5 minute 21 second promotional tour of the set, guided by the film character 信一 (Terence Lau), by the channel WEEKEND CINEMA. | "本作の人気キャラクター・信一（テレンス・ラウ）が九龍城砦の内部をガイドするツアー動画が解禁された。" (A tour video in which the popular character 信一 (Terence Lau) guides you through the inside of Kowloon Walled City was released.) |
+| YouTube PtHDg3rWzn8, WEEKEND CINEMA, 2025-01-28, description | The set tour (alt URL) shows, as the film's makers imagine the City: one wire that carries stolen power through the City, a shop where children buy snacks after school, a shoe repairer, a char siu (叉焼) oven workshop, an injection-moulding toy factory, and a public water tap with a queue of residents. These are features of the film set, not evidence. | "生活に欠かせない公共の水道も登場し、大勢の住人が列を作り順番を待つ様子が描かれる。" (The public water tap, essential to life, also appears, with many residents queuing and waiting their turn.) |

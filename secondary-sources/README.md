@@ -119,6 +119,8 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`miyamoto-ryuji-photos-1987-1993/`](miyamoto-ryuji-photos-1987-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md |
 | [`hku-image-database-kwc/`](hku-image-database-kwc/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hku-image-database-kwc/SOURCE.md |
 | [`dutch-press-delpher-1986-1993/`](dutch-press-delpher-1986-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/dutch-press-delpher-1986-1993/SOURCE.md |
+| [`norwegian-press-1984-1993/`](norwegian-press-1984-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/norwegian-press-1984-1993/SOURCE.md |
+| [`kaifong-association-1963-1994/`](kaifong-association-1963-1994/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/kaifong-association-1963-1994/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 

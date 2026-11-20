@@ -2,7 +2,7 @@
 
 Later histories of the churches, missions and temples of the area.
 
-- **Status:** partly read: 11 of 14 items read by the reading of the source search of
+- **Status:** partly read: 13 of 14 items read by the reading of the source search of
   2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
   read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 2013-2025.
@@ -30,6 +30,7 @@ Not read yet.
 - **Citation:** 鄞穎翹 (香港神學院神學及歷史科副教授), 〈城寨中的恩光〉, 香港神學院 (Bible Seminary of Hong Kong), 2 May 2025 (part 1 at https://www.bshk.edu.hk/2025-05-02/), full text reprinted by 基督教中華傳道會 (CNEC), https://www.cnec.org.hk/message_article/article/a4/
 - **Class:** secondary (A history essay of 2025 with notes to CNEC papers of 1958-1993. It quotes Isaac Liu (劉知三): his words are retrospective testimony, probably from his text of 1993 (notes 12-14), and I mark them primary. Keep in secondary-sources/.)
 - **Date of the record:** 2025-05-02
+- **Note:** its 6 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -71,12 +72,6 @@ Not read yet.
 | CNEC web page, part on the old people's centre, note 13 | The old people's centre opened formally in 1979. It worked until the clearance of the City. In that time 30 old people were baptised. | "老人中心於1979年正式開辦，一直營運至城寨清拆前" |
 | CNEC web page, part on the old people's centre, note 13 | At its peak the centre served 187 members. | "最高峰時，中心共服務187名會員。" |
 | CNEC web page, part on the old people's centre, note 15 | In 1991 the centre moved to Fu Shin Estate (富善邨), Tai Po. Its new name was 中華傳道會恩光老人中心. A church, 中華傳道會恩光堂, started at the same address; its first Sunday worship was in April 1992. | "1991年，老人中心遷至大埔富善邨現址" |
-| CNEC web page, quote of 劉知三 (notes 12-14: his text of 1993) | Isaac Liu (劉知三) said that he lived in the City from 1971, and that he was afraid of nothing. | "我自1971年就在城寨居住，什麼也不怕。" (I lived in the Walled City from 1971, and I was afraid of nothing.) |
-| CNEC web page, quote of 劉知三 | Isaac Liu said that he went in and out of the City often from the middle of the 1950s. | "從五十年代中期起，我就經常出入" (From the mid-1950s I often went in and out.) |
-| CNEC web page, quote of 劉知三 | Isaac Liu said that in the 1960s the lanes had many addicts. From the roof of the school he always saw them squatting in the lanes. | "從學校天台往下望，總見到他們蹲在道中" (Looking down from the school roof, I always saw them squatting in the lanes.) |
-| CNEC web page, quote of 劉知三 | Isaac Liu said that there were also gambling dens, places of sex trade and live sex shows. | "還有賭檔、色情場所和真人表演" (There were also gambling dens, sex venues and live shows.) |
-| CNEC web page, quote of 劉知三 | Isaac Liu said that these slowly went away in the middle of the 1970s. | "但這些都在七十年代中，慢慢銷聲匿跡" (But in the mid-1970s these slowly disappeared.) |
-| CNEC web page, quote of 劉知三 | Isaac Liu said that no one gave him trouble, because the people knew that CNEC worked for the good of the residents. | "沒有人來找過我麻煩" (No one ever came to give me trouble.) |
 
 - **Leads:**
   - 'Drug Victims Rescued from Living Hell', Crusade (July-August 1958), p. 3; 'Further Work', Crusade (July-August 1958), p. 10: first-hand reports of the CNEC drug work in the City.
@@ -95,6 +90,7 @@ Not read yet.
 - **Date of the record:** 2024-01
 - **Files:**
   - `missions-16-Book-_-web.pdf` (in `local/`, not in git): The whole book as a PDF (372 pages, 4.6 MB): 《默默無聞的服務：香港天主教診所歷史》 (2024); https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf; 4803866 bytes; SHA-256 `78dbf8843373b902594ac1713113c9a8fd30114afc475754bbcc6ee738783963`; licence: No licence statement found in the PDF or on the URL; copyright of the authors and the Centre for Catholic Studies, CUHK (https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf)
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -103,21 +99,18 @@ Not read yet.
 | PDF, printed p. 153 | 福德岡 was a small hill on Tung Tau Tsuen Road (東頭邨道), with the school 福德學校 at its end. The side street at the foot of the hill was already the City. | "山下的橫街已是九龍城寨" |
 | PDF, printed p. 153 | In 1952 Fr. 涂挽靈 came there and rented a small shack. At night it was his bedroom. By day it was a chapel, community centre, dispensary, reading room and relief depot. | "1952 年，涂挽靈神父到那裡時，租住一個小棚屋" |
 | PDF, printed p. 153 | In the 1950s 福德岡 was all wooden huts. The pupils of 福德學校 were very poor; most of them were children from the City. | "學生很窮，多是來自九龍城寨的孩子" |
-| PDF, printed p. 153 (oral history of 2021 and 2023) | Sr. 蘇衍慧 taught at 福德學校 in the late 1950s. Another teacher told her that the pupils wore shoes to school only from that year; before, they wore slippers. | "他們是今年才能穿鞋上學的啊！之前幾年還穿著拖鞋" (Only this year can they wear shoes to school! In the years before they still wore slippers.) |
 | PDF, printed p. 153 (oral history of 2021 and 2023, told by the authors) | On home visits in the hut area on the hill (not inside the City), Sr. 蘇衍慧 saw one big bed for a family of seven or eight. Pigs lived under the bed. | "只有一張大床供一家七八口一起睡，床下邊則用來養豬" |
 | PDF, printed p. 153 | At first Fr. 涂挽靈 directed the clinic. Its chief doctor was 林肇真. One nurse and one social worker helped. | "主任醫生是林肇真醫生，有一位護士及一位社工協助" |
 | PDF, printed p. 154 and note 269 | INFERRED: When the Maryknoll Sisters came in 1952, a gambling den stood opposite their house, with an opium den behind it. The authors place this house at Tung Tau, near the City, because only the studies on Tung Tau name gambling and opium dens nearby (note 269). | "修女們 1952 年遷來時，住處對面是賭檔，賭檔後面是鴉片館" |
 | PDF, printed p. 154 | The waiting room of the clinic held five people. White squares were painted along the long waiting lane. When all the squares were full, people knew to go to another clinic. | "候診室可容納五人" |
 | PDF, printed p. 154 | Many patients of the clinic had eye disease, malnutrition, drug addiction or tuberculosis. | "當時的人很多患有眼疾、營養不良、染上毒癮和肺癆" |
 | PDF, printed p. 154 | In 1965 the clinic moved to the ground floor of Block K of the new Tung Tau estate. In 1966 Caritas took it over. It closed in June 1975. | "最終於 1975 年 6 月停辦" |
-| PDF, printed pp. 225-226 (place and years) and p. 228 (oral history) | INFERRED: 謝修明 worked from 1957 to 1963 at 聖家施藥所, the dispensary of the sisters. It was at first in Ngau Chi Wan Village (牛池灣村), and in the early 1960s it moved to 西二巷, Diamond Hill (鑽石山). She remembers that she went with Sr. 趙蘊玉 on visits, also to the City, where the whole street was heroin. The visits were thus probably between 1957 and 1963. | "九龍城寨也去，成條街都是白粉那些，但修女不害怕" (We also went to Kowloon Walled City; the whole street was all heroin, but the Sister was not afraid.) |
 | PDF, printed p. 323 | In the late 1950s a private dentist charged at least ten dollars to pull one tooth. Many people used unlicensed dentists; those of the City were the most common. | "其中又以九龍城寨的無牌牙醫最普遍" |
 | PDF, printed p. 323 | After the Dentists Registration Ordinance of 1940, some unregistered 'dentists' kept their work without a licence. The City was the centre of the unlicensed dentists. | "九龍城寨就是無牌牙醫的集中地" |
 | PDF, printed p. 323 (quote of the LCSD park web page) | The book quotes the web page of the park: after the war many buildings went up with no control and no sound foundations; the City, dense and with damp narrow passages, became a place of vice and cheap unlicensed dentists. | "樓宇密集、通道濕窄的寨城逐漸成為罪惡的溫床" |
 | PDF, printed p. 323 | INFERRED: The book says that the City had two main parts. The west part had ordinary homes and small factories. All the illegal business was in the east part. The note for this cites 陳惠芬 (2008), pp. 204-205. | "西區是一般民居、小型工廠，而一切不法勾當都集中在東區" |
 | PDF, printed p. 323 | Some unlicensed dentists of the City had practised in Hong Kong before. Others were trained people from the mainland who could not register. Their fees were low. | "有些是原先在香港執業的、有些是從大陸來的專業人士" |
 | PDF, printed p. 323 | The 《城寨福利會訊》 of February 1987 says that, since the 1970s, there were hundreds of thousands of visits to the clinics of the City (general and dental). | "曾到城寨診所（普通科和牙科）就診的有數十萬人次" |
-| PDF, printed p. 323 (oral history of 19 Oct 2022) | INFERRED: 林桂明, who lived in 橫頭磡, went once or twice to an unlicensed dentist of the City. One extraction cost fifteen dollars; a private dentist cost much more. The book does not give the year; the paragraph is about the 1970s. | "剝一隻牙收費十五元。如果去私人牙醫求診，費用就高很多" (Pulling one tooth cost fifteen dollars. If you went to a private dentist, the cost was much higher.) |
 | PDF, printed p. 324 | In 1982, when the dental school of the University of Hong Kong opened, there were still more than 2,000 illegal dentists in Hong Kong. | "市面仍有逾二千名非法牙醫" |
 | PDF, printed p. 324 | A survey of 10 August 1983 counted 97 dental clinics in the City. The note for this cites 陳惠芬 (2008), p. 205. | "據 1983 年 8 月 10 日的調查，九龍城寨內共有 97 間牙科診所" |
 | PDF, printed p. 324 | After the agreement of 1987 to clear the City, the government offered compensation. With more local dental graduates, the many illegal dentists slowly went out of business. | "成行成市的非法牙醫才被逐漸淘汰" |
@@ -138,15 +131,13 @@ Not read yet.
 - **Citation:** 〈電影掀起「城寨熱」 潘靈卓事蹟觸動人心〉, 《時代論壇》 (Christian Times), reporter not named, 23 May 2024, https://christiantimes.org.hk/Common/Reader/News/ShowNews.jsp?Nid=174510&Pid=1028&Version=0&Cid=2141&Charset=big5_hkscs
 - **Class:** secondary (A news feature of 2024. It quotes Jackie Pullinger (潘靈卓) (no year) and 蘇恩佩 (from her chapter 〈他們也有靈魂〉, early 1970s). Those quotes are first-hand testimony and I mark them primary; the rest is narration. Keep in secondary-sources/.)
 - **Date of the record:** 2024-05-23
+- **Note:** its 5 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
 | web page, part on Pullinger | In 1966 Jackie Pullinger (潘靈卓), 22 years old, came from England. | "一九六六年，當時廿二歲、來自英國的潘靈卓" |
 | web page, part on Pullinger | In the City she helped a preacher to teach children music and English. | "幫助一位傳道人教導小孩子音樂、英文" |
-| web page, quote of Pullinger (year not given) | Pullinger said that almost as soon as she came in, she felt that it was the best place. | "差唔多一入嚟，我有個感覺，呢個係一個最好嘅地方。" (Almost as soon as I came in, I had a feeling: this is the best place.) |
-| web page, quote of Pullinger | Pullinger said that if Jesus came to Hong Kong at that time, he would surely come to the City. | "當時若耶穌來（香港），祂一定會來九龍城寨。" (If Jesus came (to Hong Kong) then, he would certainly come to Kowloon Walled City.) |
 | web page, part on Pullinger | She saw that almost all the young people there joined triad societies. | "她目睹那裡幾乎所有青少年都加入黑社會" |
-| web page, quote of Pullinger | She visited their families. She said that she was not afraid: if she did not welcome them, who would? | "我唔怕，我唔歡迎佢地，邊個歡迎？" (I am not afraid. If I don't welcome them, who will?) |
 | web page, part on Pullinger | She opened a youth centre and her own home, and helped addicts to stop drugs through the gospel. | "開設青年中心、開放自己的家" |
 | web page, part on 蘇恩佩 and 蔡元雲 | The doctor 蔡元雲 helped to lead the gospel drug-withdrawal meetings in the City in the early 1970s. There he met 蘇恩佩, who was in Hong Kong to get well from an illness. | "七十年代初在城寨幫忙主講福音戒毒聚會" |
 | web page, part on 蘇恩佩 and 蔡元雲 | One year later, 蘇恩佩 asked 蔡元雲 to start the magazine 《突破》 with her. | "一年後，她便邀請蔡元雲一起創辦《突破》雜誌" |
@@ -154,10 +145,8 @@ Not read yet.
 | web page, part on 蘇恩佩 (her account, retold) | INFERRED: 蘇恩佩 said that the lanes were very damp and most houses were crowded together. The article does not date her visit; the early 1970s is my reading of the context (蔡元雲 met her there then). | "那裡的小巷非常潮濕，而且多數房子都擠在一起" |
 | web page, part on 蘇恩佩 (her account, retold) | 蘇恩佩 said that there was no piped water, and that a sickening smell came up from the drains. | "又沒有自來水供應，一陣令人噁心的臭味會從渠道散發出來" |
 | web page, part on 蘇恩佩 (retold) | The place was less frightening than people thought, because an underground organisation controlled it and kept order. | "城寨由一個地下組織控制及維持治安" |
-| web page, quote of 蘇恩佩 | At the youth centre, 蘇恩佩 saw that no boy looked healthy. Each face, and the whites of the eyes, were grey-yellow. | "每張臉都蒙上一層灰黃色，眼球也是灰黃色的" (Every face was covered with a layer of grey-yellow; the eyeballs were grey-yellow too.) |
 | web page, part on 蘇恩佩 (retold) | The meeting sang short songs with a lively beat. Then a doctor talked about basic medicine and some Bible lessons. | "唱著短歌，節奏叫人精神抖擻" |
 | web page, part on 蘇恩佩 (retold) | In the short talk some could not pay attention. Others were too eager and added a 'footnote' to each sentence of the speaker. | "對講員每句話都加上『註腳』" |
-| web page, words of the youth workers (retold) | The youth workers said that boys who decided to stop drugs often had the craving again. One boy prayed, 'Big brother Jesus, help!' | "耶穌大佬啊！救命啊！" (Big brother Jesus! Save me!) |
 
 - **Leads:**
   - 蘇恩佩, 〈他們也有靈魂〉, in 《這一代先知在哪裡？》 (year and publisher not given in the article): her first-hand account of a visit to the City and the youth centre in the early 1970s.
@@ -213,6 +202,7 @@ Not read yet.
 - **Date of the record:** 2015-03-01 (date of the web post; the date of 《教聲》 issue 1639 is not given)
 - **Files:**
   - `missions-8-bible_school.jpg` (in `local/`, not in git): Old photo (undated, about 500x355 px) of the pupils of 天國義學 with 李求恩 and 曾紀岳, labelled 九龍城; it shows the steps and gateway of the school building; https://dek.hkskh.org/uploads/23/%E4%BA%8B%E5%B7%A5/history/bible_school.jpg; 44917 bytes; SHA-256 `7d089fdde7b1e31064ab474cc363f3fd5db1aec69a9823a467a737ccd6bbc998`; licence: No licence statement for the photo; the site is of 香港聖公會 / 聖三一座堂 (https://dek.hkskh.org/holytrinity/ministry_article.aspx?id=170&lang=2)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -232,8 +222,6 @@ Not read yet.
 | web page, paragraph on the shoemaker | For many years, at each Christmas, that former pupil gave a pair of leather shoes to 李求恩. | "便送一雙皮鞋予李求恩會吏長" |
 | web page, paragraph on the shoemaker | 李求恩 (title 會吏長) was the second and last head of the school. The article does not name the first head, and gives no date for the end of the school. | "作為該校第二任，亦是最後一任校長" |
 | web page, last paragraph | No trace of the site of the school remains today. | "隨著社會的變遷，天國學校的原址已不復留一絲痕跡" |
-| web page, image bible_school.jpg | INFERRED: An undated old photo on the page shows two men in jackets and about 14 boys on wide stone steps with low side walls, in front of a gateway with a tiled roof. The count of boys is my count. | "天國義學" |
-| web page, image bible_school.jpg, labels on the mount | The mount of the photo gives the place as 九龍城 (Kowloon City), and names two men: 李求恩會長 and 曾紀岳會長. The photo has no date. | "李求恩會長 / 曾紀岳會長 / 九龍城" |
 
 - **Leads:**
   - 《教聲》 issue 1639: the first print of this article (date not given on the web page).
@@ -243,6 +231,7 @@ Not read yet.
 - **Citation:** 'I still keep to Jesus this night' (Winson), Is there a God? (is-there-a-god.info), author not named, last updated 13 June 2016, https://www.is-there-a-god.info/life/winson/
 - **Class:** secondary (A web retelling of 2016 from Jackie Pullinger's book Chasing the Dragon (1980) and the video The Law of Love. One short quote of Winson from the video is retrospective testimony (year not given). The book is the better citation. Keep in secondary-sources/.)
 - **Date of the record:** 2016-06-13 (last update)
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -262,7 +251,6 @@ Not read yet.
 | web page, part on Winson | Winson went into a spare room and prayed for about half an hour. After that he stopped opium and never went back to it. | "came off opium and never went back" |
 | web page, last part | Winson was one of the first of hundreds of triad members who stopped drugs after prayer. | "one of the first of hundreds of Triad members who came off drugs after prayer" |
 | web page, last part | Later Goko also left crime and became a Christian. | "Goko even gave up his life of crime and chose to follow Jesus." |
-| web page, last part (quote from the video) | In the video The Law of Love, Winson says that he still keeps to Jesus. | "I still keep to Jesus this night" |
 
 - **Leads:**
   - Jackie Pullinger with Andrew Quicke, Chasing the Dragon (1980): the first-hand source of the Winson and Goko story (print only).
@@ -315,36 +303,50 @@ Not read yet.
 | web page, later part | The article says that the government started to clear the City in 1987. This is wrong: 1987 was the year of the announcement, and the clearance was in 1991-1993. | "自1987年起，香港政府開始遷拆城寨，改建成為公園。" |
 ### top-zh-testimony-4: 城寨清拆30年留影：程文輝折服黑幫 潘靈卓救癮君子的傳奇
 
-- **Creator:** Gospel Herald, Hong Kong (基督日報), 編輯室
-- **Date:** 2024-07-12
-- **Kind:** article
-- **Class:** secondary (An editor retells the work of two women in the City from their books and other works.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 基督日報
-- **Link:** https://www.gospelherald.com/news/min_5068.htm
-- **Other links:** https://www.gospelherald.com.hk/news/min_5068.htm
-- **Proof that it exists:** First sentence: 「九龍城寨清拆30周年，電影《九龍城寨之圍城》掀起一波熱話，然而城寨奇觀不限於此，查究史蹟上世紀兩位女性將九龍城寨打造成福音之城，讓我們一起古今探源……。」
-- **What it gives (finder's note, not checked):** 程文輝, the first blind social worker of the Social Welfare Department (from 1960), went into the City with her helper 和姐 to persuade prostitutes to leave the trade; a gang boss tested her with 'poison porridge' and later became a Christian. Her words: 「槍和亂棍死得太快，飲毒粥可以爭取時間跟和姐道別。」 1960s-1970s.
-- **Notes:** The .com.hk URL redirects (301) to gospelherald.com. The article refers to an autobiography of 程文輝: its title is not recorded here. Find it; it is a first-hand memoir. Earlier history only.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 基督日報 (Gospel Herald, Hong Kong), 編輯室, 「城寨清拆30年留影：程文輝折服黑幫 潘靈卓救癮君子的傳奇」, 12 July 2024 (22:13), https://www.gospelherald.com/news/min_5068.htm (share address https://www.gospelherald.com/news/jaaex0j6j6ed)
+- **Class:** secondary (A later article (2024) that retells the work of two Christian women in the 1960s-70s from their books. The only direct words of a witness are those of 程文輝, taken from her autobiography (retrospective, year not given). The item stays in secondary-sources/.)
+- **Date of the record:** 2024-07-12
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| paragraph 4 | The article puts the work of the two Christian women 程文輝 and Jackie Pullinger (潘靈卓) in the City in the 1960s and 1970s. | "然而上世紀60、70年代，兩位女基督徒（程文輝、潘靈卓）勇闖城寨展開福音工作。" (But in the 1960s and 1970s two Christian women (程文輝 and 潘靈卓) boldly went into the City to start gospel work.) |
+| section 程文輝, paragraph 2 | 程文輝 was born in Guangzhou in 1936. A medical error made her blind at six months. Her servant 和姐, then 33 years old, looked after her. | "程文輝於1936年廣州出生，六個月大因醫療失誤終身失明，由當年33歲的傭人和姐照顧" (程文輝 was born in Guangzhou in 1936; a medical error at six months made her blind for life; the 33-year-old servant 和姐 looked after her.) |
+| section 程文輝, paragraph 2 | 程文輝 studied at 拔萃女書院, then in Boston and Texas on scholarships. In 1960 she came back to Hong Kong as the first blind social worker of the Social Welfare Department (社署). | "後來獲取獎學金赴波士頓、得州升學，1960年返回香港成為社署首位失明社工" (Later she won scholarships to study in Boston and Texas; in 1960 she returned to Hong Kong as the department's first blind social worker.) |
+| section 程文輝, paragraph 3 | 程文輝 and 和姐 went into the 'three-no-control' place of Kowloon City to persuade prostitutes to leave the trade. The article gives no year. | "與傭人和姐深入九龍城三不管的地方勸妓女改行從良" (With her servant 和姐 she went deep into the no-man's-land of Kowloon City to persuade prostitutes to give up the trade.) |
+| section 程文輝, paragraph 3 | A gang boss of the time accused her of taking his people. He told her to choose one of three deaths: shooting, a beating with clubs, or poisoned porridge. | "被當時的黑幫頭目斥責搶人，要她選擇三種殘忍的死法：槍斃、亂棍、飲毒粥" (The gang boss of the time accused her of stealing people and made her choose one of three cruel deaths: shooting, clubbing, or drinking poisoned porridge.) |
+| section 程文輝, paragraph 4 | The two women drank the porridge, and it was not poison. The boss admired her and gave her money for a taxi home. Years later he brought a group of his gang members to Christianity and sent her US$100. | "這位黑幫頭目深感佩服給錢程文輝坐的士回家，多年後更帶同一班黑幫小弟信耶穌，還寄了100元美金給程文輝" (The gang boss, deeply impressed, gave 程文輝 money to take a taxi home; years later he led a group of his gang juniors to believe in Jesus and sent her US$100.) |
+| section 程文輝, paragraph 5 | 程文輝 wrote her story in the autobiography 《失明給我的挑戰》 (One of the Lucky Ones). In the 1990s it became the stage play 〈伴我同行〉, and later the books 《伴我同行》 and a youth edition. | "這位傳奇人物將經歷寫成自傳《失明給我的挑戰》（One of the Lucky Ones），90年代搬上舞台名為〈伴我同行〉" (This legendary figure wrote her experiences as the autobiography 'One of the Lucky Ones'; in the 1990s it went on stage as 〈伴我同行〉.) |
+| section 潘靈卓, paragraph 1 | Jackie Pullinger (潘靈卓) came to Hong Kong by ship in 1966, aged 22, with HK$100: enough to live for three months. She then went into the City. | "身上帶了100港元，只能夠生活三個月的生活，就此走進九龍城寨展開福音工作" (She carried HK$100, enough to live on for three months, and so walked into Kowloon Walled City to start gospel work.) |
+| section 潘靈卓, paragraph 2 | At that time (from 1966) the City had more than 30,000 people. Gambling houses, brothels, opium dens and heroin stalls (白粉檔) were everywhere, and gangs fought for the ground. | "當時城寨人口超過30,000人是社會被遺忘的底下階層，到處充斥著賭場、妓寨、鴉片煙館、白粉檔，是黑幫勢力爭霸的地盤" (At that time the City had over 30,000 people, the forgotten bottom of society; it was full of gambling dens, brothels, opium dens and heroin stalls, and was turf fought over by gangs.) |
+| section 潘靈卓, paragraph 3 | Pullinger preached to addicts through her youth centre. In 1973 she opened her own home to people coming off drugs; they read the Bible and lived together each day. 黎振滿 (Sam叔), later called the Temple Street pastor, was one of them. | "1973年開放自己的家接待戒毒的人，大家每天一起讀聖經和生活，有廟街牧師之稱的黎振滿（Sam叔）就是其中一位" (In 1973 she opened her home to people giving up drugs; every day they read the Bible and lived together; 黎振滿 (Uncle Sam), known as the Temple Street pastor, was one of them.) |
+| section 潘靈卓, paragraph 3 | Once gang members wrecked the youth centre. A gang boss, moved by Pullinger's care, then protected the centre and punished the troublemakers. No date is given. | "有黑幫分子搗亂青年中心，黑幫頭目因著潘靈卓的真誠對待和服侍，受感動，竟然保護青年中心懲戒滋事分子" (Gang members made trouble at the youth centre; the gang boss, moved by her sincerity and service, actually protected the centre and punished the troublemakers.) |
+| section 潘靈卓, paragraph 4 | In 1981 Pullinger founded 聖士提芬會 to help drug users, prostitutes and triad members off drugs through the gospel. | "1981年潘靈卓創辦「聖士提芬會」協助吸毒者、妓女、幫派人士戒毒" (In 1981 潘靈卓 founded 聖士提芬會 to help drug users, prostitutes and gang members give up drugs.) |
+| paragraph 3 | Background of the article: in 1987 the PRC and British governments agreed to clear the City, and the clearance work was finished in 1994. | "1987年，中華人民共和國政府與英國政府達成協議，決定清拆九龍城寨。1994年清拆工作正式完成" (In 1987 the PRC and British governments agreed to clear Kowloon Walled City; the clearance was formally completed in 1994.) |
+
+- **Leads:**
+  - 程文輝, autobiography 《失明給我的挑戰》 (One of the Lucky Ones): first-hand memoir of her work in Kowloon City from 1960 (year and publisher not given by the article; section 程文輝, paragraph 5).
+  - Stage play 〈伴我同行〉 (1990s; photo credit 中英劇團) and the books 《伴我同行》 and its youth edition, from the same autobiography (section 程文輝, paragraph 5).
+  - Jackie Pullinger (潘靈卓), 《追龍》 (Chasing the Dragon): her account of her early years in the City (section 潘靈卓, last paragraph).
 ### top-zh-testimony-5: 「港版德蘭修女」潘靈卓城寨傳道20年 獲樹仁大學頒榮譽社會科學博士
 
-- **Creator:** Gospel Herald, Hong Kong (基督日報), 編輯室
-- **Date:** 2024-11-21
-- **Kind:** press
-- **Class:** secondary (A news item on an honorary degree that repeats earlier quotes of Pullinger.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © 基督日報
-- **Link:** https://www.gospelherald.com/news/xkiwsn29ndvn
-- **Other links:** https://www.gospelherald.com.hk/news/xkiwsn29ndvn
-- **Proof that it exists:** First sentence: 「香港樹仁大學宣布，將於本月29日第50屆畢業典禮中，向傳教士潘靈卓（Jacqueline Pullinger）頒授榮譽社會科學博士學位……」
-- **What it gives (finder's note, not checked):** Pullinger served in the City for more than 20 years from 1966; her words 「我當時曾經目睹城寨內有一百人同時追龍，真的好慘。」 Unnamed former addicts and gang members called her 「大佬」.
-- **Notes:** No new witness. The quote is the same as in the 2008 item (top-zh-testimony-2).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 基督日報 (Gospel Herald, Hong Kong), 編輯室, 「「港版德蘭修女」潘靈卓城寨傳道20年 獲樹仁大學頒榮譽社會科學博士」, 21 November 2024 (16:25), https://www.gospelherald.com/news/xkiwsn29ndvn
+- **Class:** secondary (A 2024 news article about an honorary degree. It gives Pullinger's own words from a 2008 meeting (retrospective, 2008); the rest is the reporter's narration. It stays in secondary-sources/.)
+- **Date of the record:** 2024-11-21
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/church-and-mission-histories/SOURCE.md`](../../primary-sources/church-and-mission-histories/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| paragraph 1 | 香港樹仁大學 announced that it would give Jackie Pullinger (潘靈卓, given as Jacqueline Pullinger) an honorary doctorate of social science at its 50th graduation ceremony on 29 November 2024. | "將於本月29日第50屆畢業典禮中，向傳教士潘靈卓（Jacqueline Pullinger）頒授榮譽社會科學博士學位" (At its 50th graduation ceremony on the 29th of this month it will award the missionary 潘靈卓 an honorary doctorate of social science.) |
+| section 港版德蘭修女城寨傳道20年, paragraph 1 | Pullinger came from Britain in 1966, aged 22. A missionary introduced her to the City, and she preached and served there for more than 20 years. | "在一名傳教士的引介下走進了「三不管」的九龍城寨傳道，並在此服務超過20年" (Introduced by a missionary, she went into the 'three-no-control' Kowloon Walled City to preach, and served there for more than 20 years.) |
+| section 港版德蘭修女城寨傳道20年, paragraph 3 | The article says that after the clearance a feature called 潘靈卓峯 was put up in the park (九龍寨城公園) to honour her work with drug users, prostitutes and street sleepers. | "在改建而成的九龍寨城公園豎起了潘靈卓峯" (In the Kowloon Walled City Park built on the site, 潘靈卓峯 was erected.) |
+| section 傳記《追龍》搬上舞台, paragraph 1 | In 2008 《追龍》 went on stage, with a testimony meeting. There Pullinger explained the term 追龍 (chasing the dragon): drug users smoke heroin (白粉) with a matchbox. | "潘靈卓在會上解釋「追龍」一詞的含義，即吸毒者以火柴盒吸食白粉的吸毒方式" (At the meeting Pullinger explained the meaning of 'chasing the dragon': the way drug users smoke heroin with a matchbox.) |
+| section 城寨清拆30周年 電影借鑑《追龍》 | The director 鄭保瑞 said that reading 《追龍》 moved him and changed his view of making the film 《九龍城寨之圍城》 (released July 2024). The article adds that one former gang member (過來人), who left gangs and drugs because of Pullinger, even calls her 「大佬」 (big brother), and that the two still keep in touch. | "甚至稱呼潘靈卓做「大佬」，兩人至今仍有聯絡" (He even calls 潘靈卓 'big brother', and the two of them are still in touch today.) |
+
+- **Leads:**
+  - The 2008 stage version of 《追龍》 and its testimony meeting, where Pullinger gave the quote on 100 people chasing the dragon (section 傳記《追龍》搬上舞台); the repo item top-zh-testimony-2 holds the same quote.
 ### missions-25: Fook Tak Temple (iDiscover, Kowloon City walk 'iSurprise')
 
 - **Status:** Read on 2026-11-19; a checker checked a sample of the facts on 2026-11-19.
