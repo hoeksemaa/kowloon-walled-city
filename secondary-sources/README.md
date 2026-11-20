@@ -104,6 +104,9 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`hko-weather-1986-1992/`](hko-weather-1986-1992/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/hko-weather-1986-1992/SOURCE.md |
 | [`legco-and-urban-council-1919-1997/`](legco-and-urban-council-1919-1997/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/legco-and-urban-council-1919-1997/SOURCE.md |
 | [`visitor-photos-1970-1993/`](visitor-photos-1970-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/visitor-photos-1970-1993/SOURCE.md |
+| [`china-official-records-1933-1987/`](china-official-records-1933-1987/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/china-official-records-1933-1987/SOURCE.md |
+| [`film-and-tv-footage-1958-1994/`](film-and-tv-footage-1958-1994/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md |
+| [`us-government-records-1948-1994/`](us-government-records-1948-1994/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/us-government-records-1948-1994/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 

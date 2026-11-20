@@ -10,6 +10,9 @@ term. First-hand accounts given later (oral history, memoirs) also count, but
 tag them "retrospective (year)". Books and articles that tell the story later
 are not primary. Do not put them here.
 
+The images and scans of both source trees are listed by date in
+[`../docs/source-images.md`](../docs/source-images.md).
+
 ## Conventions
 
 - One folder for each source.

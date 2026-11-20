@@ -94,7 +94,7 @@ Not read yet.
 - **Class:** secondary (A history of 2024. It has short parts of oral history (interviews of 2021-2022 about the 1950s-1970s): those quotes are retrospective testimony, and I mark them primary. Keep the book in secondary-sources/.)
 - **Date of the record:** 2024-01
 - **Files:**
-  - `missions-16-Book-_-web.pdf` (in `local/`, not in git): https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf; 4803866 bytes; SHA-256 `78dbf8843373b902594ac1713113c9a8fd30114afc475754bbcc6ee738783963`; licence: No licence statement found in the PDF or on the URL; copyright of the authors and the Centre for Catholic Studies, CUHK (https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf)
+  - `missions-16-Book-_-web.pdf` (in `local/`, not in git): The whole book as a PDF (372 pages, 4.6 MB): 《默默無聞的服務：香港天主教診所歷史》 (2024); https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf; 4803866 bytes; SHA-256 `78dbf8843373b902594ac1713113c9a8fd30114afc475754bbcc6ee738783963`; licence: No licence statement found in the PDF or on the URL; copyright of the authors and the Centre for Catholic Studies, CUHK (https://catholic.crs.cuhk.edu.hk/Main/wp-content/uploads/2024/01/Book-%E5%A4%A9%E4%B8%BB%E6%95%99%E8%A8%BA%E6%89%80-web.pdf)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -212,7 +212,7 @@ Not read yet.
 - **Class:** secondary (A later short history of the church (reprint of 2015 or earlier). The old photo on the page is a record of the time, but it has no date. Keep in secondary-sources/.)
 - **Date of the record:** 2015-03-01 (date of the web post; the date of 《教聲》 issue 1639 is not given)
 - **Files:**
-  - `missions-8-bible_school.jpg` (in `local/`, not in git): https://dek.hkskh.org/uploads/23/%E4%BA%8B%E5%B7%A5/history/bible_school.jpg; 44917 bytes; SHA-256 `7d089fdde7b1e31064ab474cc363f3fd5db1aec69a9823a467a737ccd6bbc998`; licence: No licence statement for the photo; the site is of 香港聖公會 / 聖三一座堂 (https://dek.hkskh.org/holytrinity/ministry_article.aspx?id=170&lang=2)
+  - `missions-8-bible_school.jpg` (in `local/`, not in git): Old photo (undated, about 500x355 px) of the pupils of 天國義學 with 李求恩 and 曾紀岳, labelled 九龍城; it shows the steps and gateway of the school building; https://dek.hkskh.org/uploads/23/%E4%BA%8B%E5%B7%A5/history/bible_school.jpg; 44917 bytes; SHA-256 `7d089fdde7b1e31064ab474cc363f3fd5db1aec69a9823a467a737ccd6bbc998`; licence: No licence statement for the photo; the site is of 香港聖公會 / 聖三一座堂 (https://dek.hkskh.org/holytrinity/ministry_article.aspx?id=170&lang=2)
 
 | Page | Fact | Words in the source |
 |---|---|---|

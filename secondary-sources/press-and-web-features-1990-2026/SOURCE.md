@@ -31,8 +31,8 @@ Not read yet.
 - **Class:** secondary (A 2013 newspaper infographic: a drawn reconstruction with captions from later books. Several of its counts disagree with primary sources (50,000 residents against about 33,000 in the 1987 survey; 500 buildings against the usual 300-350). Use it for ideas, not for counts or sizes.)
 - **Date of the record:** 2013-03-16
 - **Files:**
-  - `popular-1-City-of-anarchy.pdf` (in `local/`, not in git): https://2014.sopawards.com/wp-content/uploads/2014/06/City-of-anarchy.pdf; 1446577 bytes; SHA-256 `4bfa84e620a346a4e40b8af3493aff19b0c66aa393268ec5034d1ccddc1a1078`; licence: No licence statement; the page is © South China Morning Post Publishers Ltd (printed imprint). (https://2014.sopawards.com/wp-content/uploads/2014/06/City-of-anarchy.pdf)
-  - `popular-1-scm_news_1.1.nws_backart1_1_0.jpg` (in `local/`, not in git): https://images.adsttc.com/media/images/516e/df02/b3fc/4b8f/6900/0136/large_jpg/scm_news_1.1.nws_backart1_1_0.jpg?1366220526; 2090226 bytes; SHA-256 `61c1e0c624d5ae4f09f70ad76162bca355ff3d5badab5f158ba7f870a1f1cbc1`; licence: Credited 'via South China Morning Post'; no open licence. (https://www.archdaily.com/361831/infographic-life-inside-the-kowloon-walled-city)
+  - `popular-1-City-of-anarchy.pdf` (in `local/`, not in git): PDF of the printed page A18 of 16 Mar 2013 (1 page, 1,446,577 bytes, text layer).; https://2014.sopawards.com/wp-content/uploads/2014/06/City-of-anarchy.pdf; 1446577 bytes; SHA-256 `4bfa84e620a346a4e40b8af3493aff19b0c66aa393268ec5034d1ccddc1a1078`; licence: No licence statement; the page is © South China Morning Post Publishers Ltd (printed imprint). (https://2014.sopawards.com/wp-content/uploads/2014/06/City-of-anarchy.pdf)
+  - `popular-1-scm_news_1.1.nws_backart1_1_0.jpg` (in `local/`, not in git): ArchDaily's JPG copy of the infographic (2000x3260 px).; https://images.adsttc.com/media/images/516e/df02/b3fc/4b8f/6900/0136/large_jpg/scm_news_1.1.nws_backart1_1_0.jpg?1366220526; 2090226 bytes; SHA-256 `61c1e0c624d5ae4f09f70ad76162bca355ff3d5badab5f158ba7f870a1f1cbc1`; licence: Credited 'via South China Morning Post'; no open licence. (https://www.archdaily.com/361831/infographic-life-inside-the-kowloon-walled-city)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -71,7 +71,7 @@ Not read yet.
 - **Class:** secondary (A podcast with narration (secondary). The spoken parts of the photographer Greg Girard and the architect Aaron Tan are retrospective (2012) testimony; those facts have kind 'primary'.)
 - **Date of the record:** 2012-11-19
 - **Files:**
-  - `popular-12-page.html` (in `local/`, not in git): https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/; 150218 bytes; SHA-256 `7e0e8b370fb15a7d0b3d45202d1c9c6fc3fdde62c73e251463d4ab64d9d81976`; licence: No open licence stated (© 99% Invisible / PRX). (https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/)
+  - `popular-12-page.html` (in `local/`, not in git): HTML of the episode transcript page.; https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/; 150218 bytes; SHA-256 `7e0e8b370fb15a7d0b3d45202d1c9c6fc3fdde62c73e251463d4ab64d9d81976`; licence: No open licence stated (© 99% Invisible / PRX). (https://99percentinvisible.org/episode/episode-66-kowloon-walled-city/transcript/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -106,7 +106,7 @@ Not read yet.
 - **Class:** secondary (A magazine feature (narration, secondary). The quoted words of Suenn Ho and Aaron Tan are retrospective (2015) and have kind 'primary'. The 1984 Ethiopia fund drive and the shared power schedule need a primary source.)
 - **Date of the record:** 2015-03-18
 - **Files:**
-  - `popular-19-page.html` (in `local/`, not in git): https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/; 102971 bytes; SHA-256 `c34ab817612eebb7070fe479860a8edd71fe757a4f0f2c534233804c34ecfdc7`; licence: No open licence stated (© The World of Chinese). (https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/)
+  - `popular-19-page.html` (in `local/`, not in git): HTML of the article page.; https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/; 102971 bytes; SHA-256 `c34ab817612eebb7070fe479860a8edd71fe757a4f0f2c534233804c34ecfdc7`; licence: No open licence stated (© The World of Chinese). (https://www.theworldofchinese.com/2015/03/walled-city-of-dreams/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -141,7 +141,7 @@ Not read yet.
 - **Class:** secondary (A magazine feature (narration, secondary). Girard's quoted words are retrospective (2019) testimony of his visits of 1985 onwards; those facts have kind 'primary'.)
 - **Date of the record:** 2019-04-25
 - **Files:**
-  - not downloaded (curl exit 92): https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/; HTML of the article page.; licence: No open licence stated (© Zolima CityMag; photos © Greg Girard). (https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/)
+  - not downloaded (curl exit 92): HTML of the article page.; https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/; licence: No open licence stated (© Zolima CityMag; photos © Greg Girard). (https://zolimacitymag.com/one-of-a-kind-the-kowloon-walled-city-through-the-eyes-of-photographer-greg-girard/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -180,7 +180,7 @@ Not read yet.
 - **Class:** secondary (A popular history from later sources. It quotes one witness (Donald Michael Bishop, retrospective, from an oral history) and one 1960 newspaper; those facts have kind 'primary'. Its counts disagree with each other (60,000 and 30,000).)
 - **Date of the record:** 2025-05-07
 - **Files:**
-  - `popular-18-kowloon-walled-city-history.html` (in `local/`, not in git): https://www.nationalgeographic.com/history/article/kowloon-walled-city-history; 463753 bytes; SHA-256 `3520ed2f68f8ee036070909798e3f367ded8d34af6cb8910c922f27b93fc1901`; licence: No open licence stated (© National Geographic Partners). (https://www.nationalgeographic.com/history/article/kowloon-walled-city-history)
+  - `popular-18-kowloon-walled-city-history.html` (in `local/`, not in git): HTML of the article page.; https://www.nationalgeographic.com/history/article/kowloon-walled-city-history; 463753 bytes; SHA-256 `3520ed2f68f8ee036070909798e3f367ded8d34af6cb8910c922f27b93fc1901`; licence: No open licence stated (© National Geographic Partners). (https://www.nationalgeographic.com/history/article/kowloon-walled-city-history)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -211,8 +211,8 @@ Not read yet.
 - **Class:** secondary (A historian's article (the writer was Resources Officer in the Department of History). Most of it is history before 1945. A few sentences describe the City at the time of writing, early 1987, just after the clearance announcement; those facts have kind 'primary' as a record of the time. The item stays in secondary-sources/.)
 - **Date of the record:** 1987-04 (Interflow no. 51)
 - **Files:**
-  - `institutions-21-default.jpg` (in `local/`, not in git): https://digitalrepository.lib.hku.hk/service/api/iiif/images/k069f584r/full/full/0/default.jpg; 551954 bytes; SHA-256 `efea0796951490c6a9fa701c0ebea217043addca7dd41919368f6c715fed1cce`; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
-  - `institutions-21-default.jpg` (in `local/`, not in git): https://digitalrepository.lib.hku.hk/service/api/iiif/images/7p88jf09g/full/full/0/default.jpg; 466993 bytes; SHA-256 `76fcc4e9bcac5a1ee83e82adb82d5e1b56d1c48d27972ffc619ff13bfcd9999a`; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
+  - `institutions-21-default-5bd1706f.jpg` (in `local/`, not in git): Scan of Interflow no. 51, p. 5 (1500x2147 px, 539 KB): the first page of the article, with the map.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/k069f584r/full/full/0/default.jpg; 551954 bytes; SHA-256 `efea0796951490c6a9fa701c0ebea217043addca7dd41919368f6c715fed1cce`; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
+  - not downloaded (curl exit 28): Scan of the spread Interflow no. 51, pp. 6-7 (2086x1500 px, 456 KB). The text is small; it can be read only with 2x enlargement.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/7p88jf09g/full/full/0/default.jpg; licence: License: All rights reserved; Rights Statement: In Copyright (https://digitalrepository.lib.hku.hk/catalog/z603wt449)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -276,7 +276,7 @@ Not read yet.
 - **Class:** secondary (A German journalist's essay on Hong Kong, with one passage on the Walled City. Its statements on the City before the clearance are narration from later sources (kind secondary). Its statements on the state of the site at the time of writing (1995) are a record of the time (kind primary); the writer does not say that he visited the site.)
 - **Date of the record:** 1995-06-27
 - **Files:**
-  - `gap-foreign-free-press-12-page.html` (in `local/`, not in git): https://taz.de/!1503389/; 165826 bytes; SHA-256 `191de04afec572643b0a3fe9e05a796e32910a18f81d3e772740bd2c26f14e71`; licence: No open licence stated for the article (© taz). (https://taz.de/!1503389/)
+  - `gap-foreign-free-press-12-page.html` (in `local/`, not in git): HTML of the article page (text of the 1995 print article).; https://taz.de/!1503389/; 165826 bytes; SHA-256 `191de04afec572643b0a3fe9e05a796e32910a18f81d3e772740bd2c26f14e71`; licence: No open licence stated for the article (© taz). (https://taz.de/!1503389/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -303,7 +303,7 @@ Not read yet.
 - **Class:** secondary (A book review. It gives no first-hand facts about the City; its use is bibliographic.)
 - **Date of the record:** 1995-06-27
 - **Files:**
-  - `gap-foreign-free-press-13-page.html` (in `local/`, not in git): https://taz.de/!1503390/; 147124 bytes; SHA-256 `2120e65b7864dae3e8dc9fe7dbe59da774904147c12a813be46d648b6f9a16f4`; licence: No open licence stated for the article (© taz). (https://taz.de/!1503390/)
+  - `gap-foreign-free-press-13-page.html` (in `local/`, not in git): HTML of the review page.; https://taz.de/!1503390/; 147124 bytes; SHA-256 `2120e65b7864dae3e8dc9fe7dbe59da774904147c12a813be46d648b6f9a16f4`; licence: No open licence stated for the article (© taz). (https://taz.de/!1503390/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -323,7 +323,7 @@ Not read yet.
 - **Class:** depiction (Fiction: a first-person scene with a photographer, O., set just after the clearance. It is a depiction, not testimony. It belongs with the depictions in secondary-sources/.)
 - **Date of the record:** 1995-06-27 (German translation); the Chinese original is earlier, date not given
 - **Files:**
-  - `gap-foreign-free-press-14-page.html` (in `local/`, not in git): https://taz.de/!1503392/; 154661 bytes; SHA-256 `4c54a2dbc13404a3a6f36d629bea39924b28bdccabf5db8baf865cf0b570378a`; licence: No open licence stated (© taz and the author). (https://taz.de/!1503392/)
+  - `gap-foreign-free-press-14-page.html` (in `local/`, not in git): HTML of the fiction excerpt page.; https://taz.de/!1503392/; 154661 bytes; SHA-256 `4c54a2dbc13404a3a6f36d629bea39924b28bdccabf5db8baf865cf0b570378a`; licence: No open licence stated (© taz and the author). (https://taz.de/!1503392/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -344,7 +344,7 @@ Not read yet.
 - **Class:** secondary (A 2004 book review (secondary). The lines it quotes from Booth's memoir are retrospective (2004) testimony of about 1952-1955; those facts have kind 'primary'. The visit is outside the period of 1985-1993.)
 - **Date of the record:** 2004-08-23
 - **Files:**
-  - not downloaded (curl exit 56): https://time.com/archive/6647137/hong-kongs-golden-boy/; HTML of the review page.; licence: No open licence stated (© TIME USA). (https://time.com/archive/6647137/hong-kongs-golden-boy/)
+  - not downloaded (curl exit 56): HTML of the review page.; https://time.com/archive/6647137/hong-kongs-golden-boy/; licence: No open licence stated (© TIME USA). (https://time.com/archive/6647137/hong-kongs-golden-boy/)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -363,7 +363,7 @@ Not read yet.
 - **Class:** secondary (A short essay by an architect, part 11 of a series. The photo is a government aerial view with no date.)
 - **Date of the record:** 2014-12-23
 - **Files:**
-  - `top-popular-10-011KowloonWalledCity141222.jpg` (in `local/`, not in git): https://img.etnet.com.hk/diva/images/stories/228/2014/12/011KowloonWalledCity141222.jpg; 158954 bytes; SHA-256 `bf4e7f6534945c6fbbce57060100c642072ec0206ac2545802d451a1c2f6b6ed`; licence: No open licence; the page footer says 'Copyright 2026 ET Net Limited' and the photo is credited to the Lands Department (https://www.etnet.com.hk/www/tc/diva/art/feature/29137)
+  - `top-popular-10-011KowloonWalledCity141222.jpg` (in `local/`, not in git): Aerial photograph of the whole City, credited 'PHOTO:地政總署提供' (Lands Department), no date, about 600 x 480 px; https://img.etnet.com.hk/diva/images/stories/228/2014/12/011KowloonWalledCity141222.jpg; 158954 bytes; SHA-256 `bf4e7f6534945c6fbbce57060100c642072ec0206ac2545802d451a1c2f6b6ed`; licence: No open licence; the page footer says 'Copyright 2026 ET Net Limited' and the photo is credited to the Lands Department (https://www.etnet.com.hk/www/tc/diva/art/feature/29137)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -384,7 +384,7 @@ Not read yet.
 - **Class:** secondary (A sociologist's essay, an excerpt of his preface to the 2015 Chinese edition of City of Darkness. The passages on his own walks in the City are first-hand but undated and given in 2015: retrospective (2015). Those facts have kind 'primary'. The item stays in secondary-sources/.)
 - **Date of the record:** 2015-07-09
 - **Files:**
-  - `gap-campus-socialwork-press-16-20150709-lui.pdf` (in `local/`, not in git): https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf; 337778 bytes; SHA-256 `856bf90b92f2bd838238bd926eebf195f0b0a3551df52de8ce24bda7df537851`; licence: No licence statement; the article is © the author and 明報 (all rights reserved presumed). (https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf)
+  - `gap-campus-socialwork-press-16-20150709-lui.pdf` (in `local/`, not in git): PDF of the 明報 article, 4 pages, 337,778 bytes (text layer).; https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf; 337778 bytes; SHA-256 `856bf90b92f2bd838238bd926eebf195f0b0a3551df52de8ce24bda7df537851`; licence: No licence statement; the article is © the author and 明報 (all rights reserved presumed). (https://eduhk.hk/ssps/sites/default/files/2023-04/20150709-lui.pdf)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -414,7 +414,7 @@ Not read yet.
 - **Class:** secondary (A scholarly essay on photography and memory. Its facts on the City come mostly from City of Darkness Revisited (2014), which the repo holds (Wilkinson, Saywell, Popham chapters).)
 - **Date of the record:** 2016
 - **Files:**
-  - `top-blocked-c-9-7977573.0006.202` (in `local/`, not in git): https://arquivo.pt/wayback/20230807175053id_/https://quod.lib.umich.edu/t/tap/7977573.0006.202?view=text;rgn=main; 60736 bytes; SHA-256 `bebe83da8c3021a4efdb70444526c4ede309a76e23a9d01accafba02b1936860`; licence: Creative Commons Attribution-NonCommercial-NoDerivatives 3.0 License (stated on the article page) (https://quod.lib.umich.edu/t/tap/7977573.0006.202)
+  - `top-blocked-c-9-7977573.0006.202` (in `local/`, not in git): HTML text view of the essay (archived copy of 2023-08-07); the figures are © Girard and © Lambot; https://arquivo.pt/wayback/20230807175053id_/https://quod.lib.umich.edu/t/tap/7977573.0006.202?view=text;rgn=main; 60736 bytes; SHA-256 `bebe83da8c3021a4efdb70444526c4ede309a76e23a9d01accafba02b1936860`; licence: Creative Commons Attribution-NonCommercial-NoDerivatives 3.0 License (stated on the article page) (https://quod.lib.umich.edu/t/tap/7977573.0006.202)
 
 | Page | Fact | Words in the source |
 |---|---|---|
@@ -484,7 +484,7 @@ Not read yet.
 - **Class:** secondary (An essay. Its useful part is the writer's report of her father's memories of the City in the 1970s: second-hand and retrospective (2015-2016), paraphrased, not his own words. All facts have kind 'secondary'.)
 - **Date of the record:** 2016-12-02
 - **Files:**
-  - `popular-20-heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you.html` (in `local/`, not in git): https://www.archdaily.com/800698/heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you; 738448 bytes; SHA-256 `2419652c260581ab6574671f025e63dfe7049bcc8265d186420f9a86f8a4aa6a`; licence: No open licence stated for the text (© ArchDaily); some images are CC BY / CC BY-SA from Wikimedia Commons (already in the repo). (https://www.archdaily.com/800698/heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you)
+  - `popular-20-heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you.html` (in `local/`, not in git): HTML of the article page.; https://www.archdaily.com/800698/heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you; 738448 bytes; SHA-256 `2419652c260581ab6574671f025e63dfe7049bcc8265d186420f9a86f8a4aa6a`; licence: No open licence stated for the text (© ArchDaily); some images are CC BY / CC BY-SA from Wikimedia Commons (already in the repo). (https://www.archdaily.com/800698/heres-what-western-accounts-of-the-kowloon-walled-city-dont-tell-you)
 
 | Page | Fact | Words in the source |
 |---|---|---|
