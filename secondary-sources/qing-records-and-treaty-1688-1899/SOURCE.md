@@ -45,3 +45,52 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | p. 158 | Old Kowloon (about 2.75 square miles) had been British since 1861. New Kowloon was leased in 1898 as part of the New Territories. | "New Kowloon was leased to the Government as recently as 1898, as part of what is known as the New Territories." |
+
+### commons-13: 展拓香港界址專條
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** 中英展拓香港界址專條 (Convention for the Extension of Hong Kong Territory), Chinese text, Peking, 9 June 1898; transcription on Chinese Wikisource, https://zh.wikisource.org/wiki/%E5%B1%95%E6%8B%93%E9%A6%99%E6%B8%AF%E7%95%8C%E5%9D%80%E5%B0%88%E6%A2%9D, retrieved 2026-11-21.
+- **Class:** primary (Treaty text of 1898. The note on the date of the exchange of ratifications is a later editor's note (and conflicts with the certificate in commons-12).)
+- **Date of the record:** 1898-06-09 (光緒二十四年四月二十一日)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wikisource page, note 附注 | A note on the page dates the exchange of ratifications in London 6 August 1898. The certificate of exchange in the NPM scans (commons-12) gives 8 August 1898. | "本專條於一八九八年八月六日在倫敦交換批准" (This Convention's ratifications were exchanged in London on 6 August 1898.) |
+
+### commons-15: CO 1069-453-09.jpg
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** The National Archives (UK), Colonial Office photographic collection, CO 1069/453, print 9, 'Kowloon City.', 1898 (TNA date); Flickr Commons https://www.flickr.com/photos/nationalarchives/7838673050/ ; Wikimedia Commons https://commons.wikimedia.org/wiki/File:CO_1069-453-09.jpg , retrieved 2026-11-21.
+- **Class:** primary (A photograph of the time with its album caption. The date 1898 comes from the TNA description.)
+- **Date of the record:** 1898 (TNA description)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Commons/Flickr description | The TNA description gives the place as Kowloon, Hong Kong, and the date as 1898. | "Location: Kowloon, Hong Kong Date: 1898" |
+
+### commons-16: CO 1069-453-10.jpg
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** The National Archives (UK), Colonial Office photographic collection, CO 1069/453, print 10, 'Kowloon City - Gambling House.' (album caption: 'OUTSIDE Kowloon City - Gambling House.'), 1898 (TNA date); Flickr Commons https://www.flickr.com/photos/nationalarchives/7838672816/ ; Wikimedia Commons https://commons.wikimedia.org/wiki/File:CO_1069-453-10.jpg , retrieved 2026-11-21.
+- **Class:** primary (A photograph of the time with its album caption.)
+- **Date of the record:** 1898 (TNA description)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Commons/Flickr description | The TNA description dates the photograph 1898. | "Kowloon City - Gambling House. Location: Kowloon, Hong Kong Date: 1898" |
+
+### top-commons-1: （康熙）新安縣志 - 1962.pdf
+
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. The main PDF is 107 MB, so I did not open it whole. I read its first 8 pages as Commons page images (preface, 凡例, table of contents, 卷一 maps). Then I read two volumes of the National Library of China set in the same Commons category, page by page as images: 卷之八 兵刑志 (11 pages, all) and 卷之三 地理志 (25 pages, all). These NLC files show a clean, newly typeset text with small correction marks; the Commons record gives them the same 1962 source. I did not read 卷一-二 and 卷四-七, 卷九-十三. Note: the scan shows the compiler as 靳文謨, not 勒文謨 as the Commons record writes. Commons gives 鄧文蔚 (not 鍾文炤) as the co-compiler, and the scan agrees. The gazetteer is from 1688, long before the walls of 1847: it names the Kowloon village, fort-tower and post only.
+- **Citation:** 靳文謨 (magistrate of 新安縣, chief compiler), with 黃家襄, 許光岳 and 鄧文蔚, 新安縣志, 13 卷, 康熙二十七年 (1688); 1962 mimeograph (廣東省中山圖書館), scan of the National Library of China on Wikimedia Commons: https://commons.wikimedia.org/wiki/File:%EF%BC%88%E5%BA%B7%E7%86%99%EF%BC%89%E6%96%B0%E5%AE%89%E7%B8%A3%E5%BF%97_-_1962.pdf ; NLC volume PDFs 卷之三 (https://commons.wikimedia.org/wiki/File:NLC403-312001086093-157564_%E6%96%B0%E5%AE%89%E7%B8%A3%E8%AA%8C_1962_%E5%8D%B7%E4%B8%89.pdf) and 卷之八 (https://commons.wikimedia.org/wiki/File:NLC403-312001086093-157629_%E6%96%B0%E5%AE%89%E7%B8%A3%E8%AA%8C_1962_%E5%8D%B7%E5%85%AB.pdf), retrieved 2026-11-21.
+- **Class:** primary (A county gazetteer compiled in 1688 by the magistrate: a record of the time for the posts, forts and villages of 1668-1688. Its narration of Song and Ming events is history (kind secondary).)
+- **Date of the record:** 康熙二十七年 (1688): 凡例 dated 仲冬 (11th month), preface dated 康熙戊辰季冬 (12th month); 1962 copy
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 新安縣志 (1688), 卷之八 兵刑志, NLC Commons PDF 157629, page 8 (folio 八), right half, 寨船 | Ming history in the gazetteer: from Wanli 19 (1591) the 南頭寨 war junks grew to 112. They were sent to guard sea posts, among them 九龍, 屯門 and 急水門. | "鵝公澳九龍屯門急水門" (... 鵝公澳, Kowloon, Tuen Mun, Kap Shui Mun ...) |
+| 新安縣志 (1688), 卷之三 地理志, NLC Commons PDF 157564, page 14 (folio 十四), right half, 山 | 卷三 says of 官富山: it is inside 佛堂門 and east of 急水門. A Song emperor's boat stopped there in the 景炎 era (1276-1278), and the site of his palace was still there in 1688. The 官富 sub-district office (司) was once set there and had moved to 赤尾村. The copy prints 宗 for 宋 and 常 for 嘗, and leaves a blank before 司. | "帝舟常幸于此殿址猶在" (The emperor's boat once came here; the site of the palace is still there.) |
