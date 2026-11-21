@@ -120,3 +120,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - The Hong Kong Council of Social Service directories of member agencies, 1970-1977: they can give the operator and the address of the 'Child Care Centre—Walled City'.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0724: Hong Kong $ directory, 1988 edition
+
+- **Creator:** Local Printing Press (Hong Kong)
+- **Date:** 1988
+- **Kind:** reference
+- **Class:** primary (A yearly commercial directory made at the time; its entries are records of 1988.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No rights statement in the archive.org metadata; scan by the University of Toronto
+- **Link:** https://archive.org/details/31761120250261
+- **Other links:** https://archive.org/metadata/31761120250261
+- **Proof that it exists:** archive.org metadata: title 'Hong Kong $ directory', date 1988, publisher '[Hong Kong : Local Printing Press]', contributor 'RCL Canada-Hong Kong Library - University of Toronto', 1170 images, no access restriction.
+- **What it gives (resolver's note, not checked):** The edition after 1987: whether the Salvation Army still listed its Walled City unit (14 Loong Chun Road) and its clinic and kindergarten in 1988. The search hits on pages 945, 1028 and 1032 are the places to check by eye.
+- **Lead:** L0724 (cited by top-missions-1, hk-dollar-directory-1968-1987); also L0726
+- **Notes:** Page numbers are BookReader page indexes from inside.php, not printed pages. The 1987 edition had the entries on printed pp. 884-885 and 967-968.

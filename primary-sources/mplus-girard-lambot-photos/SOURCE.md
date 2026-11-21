@@ -174,23 +174,23 @@ f23bb2c768a9274f216efcb292f7541bfa19efe3d600212d0a5010250be4fefa  mplus-20184_00
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
-  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1194: Ian Lambot 'Water Standpipe #2' Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City
 
-- **Creator:** Ian Lambot
-- **Date:** 1991
-- **Kind:** photo
-- **Class:** primary (A photograph made in the City in 1991.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Ian Lambot; courtesy of Blue Lotus Gallery (no licence stated)
-- **Link:** https://culture-hongkong.com/wp-content/uploads/2024/12/Ian-Lambot-Water-Standpipe-2-Hong-Kong-1991_Courtesy-of-Blue-Lotus-Gallery-Kowllon-Walled-City-2.jpg
-- **Other links:** https://culture-hongkong.com/kowloon-walled-city/
-- **Proof that it exists:** img alt 'Ian Lambot 'Water Standpipe #2' Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City'; image 1024 x 768
-- **What it gives (resolver's note, not checked):** A dated photo (1991) of a public standpipe in an open space of the City: a woman fills a red plastic can at a concrete post with several taps, under a mass of hoses and pipes. INFERRED (my reading, to check): a sign reads 和興傢俬裝飾公司 and red painted characters on the wall read 飲用 and 市政總署.
-- **Lead:** L1194 (cited by flickr-6, visitor-photos-1970-1993); also L1007
-- **Notes:** Copyrighted: keep the file in local/. The page is the held item visitor-photos-1970-1993/flickr-6.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ian Lambot, 'Water Standpipe #2', Hong Kong 1991, courtesy of Blue Lotus Gallery, reproduced in Victoria Mae Martyn, 'Kowloon Walled City', Culture Hong Kong, https://culture-hongkong.com/kowloon-walled-city/ ; image https://culture-hongkong.com/wp-content/uploads/2024/12/Ian-Lambot-Water-Standpipe-2-Hong-Kong-1991_Courtesy-of-Blue-Lotus-Gallery-Kowllon-Walled-City-2.jpg
+- **Class:** primary (A photograph made in the City in 1991 (the caption gives the year). The photo is primary; the host page is a later feature.)
+- **Date of the record:** 1991 (per caption)
+- **Files:**
+  - not downloaded (curl exit 92): Ian Lambot, 'Water Standpipe #2' (1991), web copy 1024 x 768 px. Keep in local/ only.; https://culture-hongkong.com/wp-content/uploads/2024/12/Ian-Lambot-Water-Standpipe-2-Hong-Kong-1991_Courtesy-of-Blue-Lotus-Gallery-Kowllon-Walled-City-2.jpg; licence: © Ian Lambot; courtesy of Blue Lotus Gallery (no licence stated on the page). (https://culture-hongkong.com/kowloon-walled-city/)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../secondary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Photo 'Water Standpipe #2' (1024 x 768 px web copy) | A person fills a red plastic jerrycan at a public standpipe. The standpipe is a concrete post with a horizontal metal pipe and at least four brass taps. A second red can stands on the floor. | "Water Standpipe #2" |
+| Photo 'Water Standpipe #2' (1024 x 768 px web copy) | INFERRED: Dozens of rubber hoses and plastic pipes rise from around the standpipe up the wall and across the ceiling. They are probably private lines that take water from the standpipe to homes (INFERRED; the HKU study of 1986 describes this). | "Water Standpipe #2" |
+| Photo 'Water Standpipe #2' (1024 x 768 px web copy) | The standpipe is in a covered space at street level, in front of a shop closed by a folding metal gate. Red plastic crates and a blue bucket stand at the left, and the floor is of small mosaic tiles. | "Water Standpipe #2" |
+| Photo 'Water Standpipe #2' (1024 x 768 px web copy), sign upper right | INFERRED: A vertical sign on the right names a furniture and decoration company, 和興. Below 和興 the words 裝飾 and 傢俬 stand side by side, then 公司, so the order of the full name is not certain (INFERRED). | "和興 / 裝飾 · 傢俬 / 公司" (和興 / decoration · furniture / company) |
+| Photo 'Water Standpipe #2' (1024 x 768 px web copy), wall at right | INFERRED: Red painted characters on the wall make a notice signed by the Urban Services Department (市政總署). The visible words include 不適 and 飲用, so it probably warns that the water is not fit to drink (INFERRED; part of the notice is hidden). | "市政總署示" (Notice of the Urban Services Department) |

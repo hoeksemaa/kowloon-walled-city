@@ -374,3 +374,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Hong Kong Housing Authority, Special Committee on Clearance of Kowloon Walled City: minutes and papers 1987-2001 (not online; the 2001 release says full membership lists were sent by multi-fax).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0313: Laws of Hong Kong, Medical Clinics Ordinance, Chapter 343, Revised Edition 1987
+
+- **Creator:** Hong Kong Government (printed and published by the Government Printer)
+- **Date:** 1987 (Revised Edition; originally Ordinance 27 of 1963, in force 1 January 1964)
+- **Kind:** document
+- **Class:** primary (The official text of the law as in force in 1987, printed by the Government Printer at the time.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** No statement in the PDF. The home page of Historical Laws of Hong Kong Online says only 'Warning : Licences prohibit excessive downloading'. Hong Kong Government publication.
+- **Link:** https://oelawhk.lib.hku.hk/archive/files/5aff302ebdda5e98fde15365bccb20d4.pdf
+- **Other links:** https://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=%22Medical+Clinics%22&sfield=ZZ&edition=1964&no_result=50
+- **Proof that it exists:** Cover: 'LAWS OF HONG KONG / MEDICAL CLINICS ORDINANCE / CHAPTER 343 / REVISED EDITION 1987'; p. 2: 'Originally 27 of 1963', '[1 January 1964.]'; p. 6: s. 8 'Exemption from section 7'.
+- **What it gives (resolver's note, not checked):** Section 8: the Registrar can exempt from s. 7 (a registered medical practitioner in charge) any clinic in existence on 5 Sep 1963; after 31 Dec 1967 no exemption for a clinic 'carried on in a vehicle, whether mobile or not'; yearly renewal, conditions on the pay of unregistered practitioners, and a Code of Practice (1966 amendment). It is the legal frame of the 'exempted clinics' (豁免註冊診所) that the City's doctors asked for in 1987.
+- **Lead:** L0313 (cited by top-services-26, hk-chinese-press-1985-1993)
+- **Notes:** Scanned PDF, 11 pages, no text layer. The HKU search lists it under the edition '1964' (the loose-leaf edition), but the cover says Revised Edition 1987. A search of the edition 1963 gave 0 results, thus the text as enacted in 1963 was not found. The related 'minor amendment' PDF (1 p.) is https://oelawhk.lib.hku.hk/archive/files/9ba62558cda98d87539db100cf43f7b3.pdf (not opened).

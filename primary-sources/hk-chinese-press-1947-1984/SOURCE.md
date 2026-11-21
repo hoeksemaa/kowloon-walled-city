@@ -1626,38 +1626,111 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
-  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1983-08-08
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ta Kung Pao (大公報), 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」, 8 August 1983, archive.org item NPTKP19830808, leaf n3, https://archive.org/details/NPTKP19830808/page/n3
+- **Class:** primary (A news report of the day after the visit (7 August 1983) in a Hong Kong Chinese paper. The primary tree is right.)
+- **Date of the record:** 1983-08-08 (reports the visit of 1983-08-07)
+- **Files:**
+  - `lead-l0536-2-NPTKP19830808_jp2_NPTKP19830808_0003.jp2_ext_jpg-c4478f28.jpg` (in `local/`, not in git): Full-resolution page image of leaf n3 (港聞), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPTKP19830808/NPTKP19830808_jp2.zip/NPTKP19830808_jp2%2FNPTKP19830808_0003.jp2&ext=jpg; 1794783 bytes; SHA-256 `4f07da9a82ca617fcdb87e39ba3ebeda769c6e320bae7f7fea5717f41316c7c6`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, 大公報 (Ta Kung Pao). (https://archive.org/details/NPTKP19830808)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | Xu Jiatun (許家屯), head of the Hong Kong branch of the Xinhua News Agency (新華社香港分社), visited Kowloon City on 7 August 1983. He greeted the people who lived there. | "新華社香港分社社長許家屯，昨日走訪了位於九龍半島界限街以北的九龍城，對居住在這裏的同胞表示親切慰問" (Xu Jiatun, head of the Hong Kong branch of Xinhua, yesterday visited Kowloon City, north of Boundary Street on the Kowloon peninsula, and warmly greeted the compatriots who live there.) |
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | During the visit he asked in detail about the management of the Walled City and the life of its residents. | "許家屯詳細詢問了九龍城寨的管理情況和居民的生活情況" (Xu Jiatun asked in detail about the management of Kowloon Walled City and the living conditions of the residents.) |
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | The paper says that the City was managed by a kaifong welfare association (街坊福利事業促進會) that the local residents elected. Xu Jiatun praised this. | "當談到九龍城寨是由當地居民選舉出來的街坊福利事業促進會管理時，許家屯表示讚賞" (When it was said that the Walled City is managed by the kaifong welfare association elected by the local residents, Xu Jiatun expressed praise.) |
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | He showed concern about the many inconveniences that the residents met in their daily life. | "許家屯還對當地居民在生活上遇到的許多不便表示關切" (Xu Jiatun also showed concern about the many inconveniences that the local residents meet in their lives.) |
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | A doctor told him that many people from the Mainland lived in the City. The doctor said that they cared much about the return of Chinese sovereignty over Hong Kong. | "一位醫生對許家屯說，這裏居住着許多從大陸來的人士，他們對祖國恢復對香港行使主權的問題都很關心" (A doctor told Xu Jiatun that many people from the Mainland live here, and that they all care much about the motherland resuming sovereignty over Hong Kong.) |
+| NPTKP19830808, leaf n3 (港聞 page), upper middle | Xu Jiatun answered that Hong Kong people must unite with the people from the Mainland. He said that anyone who had come, for any reason, was a patriot if he supported reunification. | "來了就來了，不管是甚麼原因，只要贊成祖國統一的，就是愛國者" (Whoever has come has come; whatever the reason, anyone who supports the reunification of the motherland is a patriot.) |
+
+- **Leads:**
+  - People's Daily (人民日報), 8 August 1983: the report of the same visit that the original lead L0536 named (not held).
+  - The Xinhua (新華社) dispatch of 7 August 1983 on the visit, which the Kung Sheung Daily News (香港工商日報) of 8 August 1983 cites (not held).
+### lead-l0536-3: 香港工商日報 1983-08-08 (headline list: 許家屯 九龍城砦)
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 「許家屯出現九龍城砦」, 8 August 1983, archive.org item NPKS19830808, leaf n5, https://archive.org/details/NPKS19830808/page/n5
+- **Class:** primary (A news brief of the day after the visit, from a Hong Kong Chinese paper. The primary tree is right.)
+- **Date of the record:** 1983-08-08 (reports the visit of the afternoon of 1983-08-07)
+- **Files:**
+  - `lead-l0536-3-NPKS19830808_jp2_NPKS19830808_0005.jp2_ext_jpg-c9f1f626.jpg` (in `local/`, not in git): Full-resolution page image of leaf n5, the page with the brief, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKS19830808/NPKS19830808_jp2.zip/NPKS19830808_jp2%2FNPKS19830808_0005.jp2&ext=jpg; 2025716 bytes; SHA-256 `172d1703d0d4d92a375cacc2114522072a795de172889237a16474a0665f271c`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, 香港工商日報 (Kung Sheung Daily News). (https://archive.org/details/NPKS19830808)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19830808, leaf n5, lower right (short brief) | Citing Xinhua, the paper reported that Xu Jiatun (許家屯) toured the Walled City on the afternoon of 7 August 1983. The paper puts the name 新華社 in quotation marks. | 「新華社」駐港分社社長許家屯昨午參觀九龍城砦 (Xu Jiatun, head of the Hong Kong branch of "Xinhua", yesterday afternoon toured Kowloon Walled City.) |
+| NPKS19830808, leaf n5, lower right (short brief) | He showed concern for the daily life of the residents. | "對當地居民的起居表示關注" (He showed concern for the daily life of the local residents.) |
+| NPKS19830808, leaf n5, lower right (short brief) | He praised the kaifong welfare association that the residents formed, because it could run its own affairs. | "他讚揚由居民組織的街坊福利會，能夠自己打理自己的事務" (He praised the kaifong welfare association organized by the residents for being able to manage its own affairs.) |
+
+- **Leads:**
+  - The Xinhua (新華社) dispatch of 7 August 1983 on the visit, which the brief cites (not held).
+### lead-l0213: 城砦水淹千戶
+
+- **Creator:** Kung Sheung Evening News (工商晚報)
+- **Date:** 1984-06-26
 - **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Class:** primary (An evening paper report of the same day (26 Jun 1984), made at the time.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
-- **Link:** https://archive.org/details/NPTKP19830808
-- **Proof that it exists:** archive.org item NPTKP19830808 ('大公報 1983-08-08'); its headline list has the words of the title
-- **What it gives (resolver's note, not checked):** Xu Jiatun (許家屯) of Xinhua visited the City on 7 Aug 1983 and asked about its management and the residents' life; he showed concern about their hardships. Same-day substitute for the 人民日報 report of 8 Aug 1983.
-- **Lead:** L0536 (cited by top-studies-12, scholarship-history-law-society-1973-2026)
-- **Notes:** Not the record of the lead: a same-day report of the same event. The repo already has 大公報 20 Aug 1983 (top-zh-press-27) on the cleaning after this visit. Leaf not found.
+- **Licence:** No rights statement or licence on the archive.org item (collections 'china-mail', 'newspapers'); copyright of the publisher
+- **Link:** https://archive.org/details/NPKSE19840626/page/n0
+- **Other links:** https://archive.org/download/NPKSE19840626/page/n0.jpg
+- **Proof that it exists:** Leaf n0 is page 1 (第一頁) of 工商晚報 of Tuesday 26 June 1984 (item title '工商晚報 1984-06-26'). Its lead headline is 「城砦水淹千戶」 with 「兩條水管爆裂 低地水深及腰」 and two photos of the scene.
+- **What it gives (resolver's note, not checked):** The flood of 26 June 1984: two water mains burst at Carpenter Road (賈炳達道) and South Wall Road (城南道), the ground sank, and about 1,000 households of the City were flooded, waist-deep on low ground. Two photos show the burst and the flooded lanes. It gives the water mains and the drainage at the edge of the City, two years before the model week.
+- **Lead:** L0213 (cited by gap-street-address-search-9, hk-chinese-press-1947-1984); also L0230
+- **Notes:** Not read; headline checked on the page image. The right edge of leaf n0 shows a strip of page 8. The repo writes the street names Carpenter Road (賈炳達道) and South Wall Road (城南道).
 
-### lead-l0536-3: 香港工商日報 1983-08-08 (headline list: 許家屯 九龍城砦)
+### lead-l0622: 三院總理與職員數百人昨日團拜 黃大仙政務處有新春酒會 城砦福利促進委會本周末聚餐
 
-- **Creator:** Kung Sheung Daily News (香港工商日報)
-- **Date:** 1983-08-08
+- **Creator:** Ta Kung Pao (大公報), Hong Kong
+- **Date:** 1984-02-16
 - **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Class:** primary (A daily newspaper report printed at the time (1984-02-16).)
 - **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
-- **Link:** https://archive.org/details/NPKS19830808
-- **Proof that it exists:** archive.org item NPKS19830808 ('香港工商日報 1983-08-08'); its keyword list has '許家屯 九龍城砦'
-- **What it gives (resolver's note, not checked):** INFERRED from the keywords: a report of Xu Jiatun's visit to the City on 7 Aug 1983, from a paper that was not pro-Beijing.
-- **Lead:** L0536 (cited by top-studies-12, scholarship-history-law-society-1973-2026)
-- **Notes:** Not the record of the lead: a same-day substitute. Leaf not found.
+- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the newspaper is copyright of 大公報 (Ta Kung Pao).
+- **Link:** https://archive.org/details/NPTKP19840216/page/n6
+- **Other links:** https://archive.org/download/NPTKP19840216/page/n6.jpg
+- **Proof that it exists:** Leaf n6 is 大公報, 1984年2月16日 星期四, 第二張 第七版; under the article 「三院總理與職員數百人昨日團拜」, the item '▲九龍城砦街坊福利事業促進委員會，定本月十八日在九龍城獅子石道富榮華酒樓舉行新春聯歡聚餐。'
+- **What it gives (resolver's note, not checked):** A short note: the City kaifong welfare committee (九龍城砦街坊福利事業促進委員會) held its New Year dinner on 18 Feb 1984 at 富榮華酒樓 on 獅子石道 in Kowloon City.
+- **Lead:** L0622 (cited by top-zh-press-28, hk-chinese-press-1947-1984)
+- **Notes:** Leaf n6 = 第二張 第七版. Leaf found by the place of the headline in the item's 'description' (OCR headline list) and checked on the page image. The OCR text layer is unusable (vertical text).
+
+### lead-l0632: 毒品調查科警司梁志彬昨講古仔 毒販四大家族瓦解後 出現夫妻父子檔集團
+
+- **Creator:** Ta Kung Pao (大公報), Hong Kong
+- **Date:** 1984-05-22
+- **Kind:** press
+- **Class:** retrospective (A report of the time (1984) of a police officer's talk; the City facts are his first-hand account of about 1974, thus retrospective (1984).)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the newspaper is copyright of 大公報 (Ta Kung Pao).
+- **Link:** https://archive.org/details/NPTKP19840522/page/n4
+- **Other links:** https://archive.org/download/NPTKP19840522/page/n4.jpg
+- **Proof that it exists:** Leaf n4 is 大公報, 1984年5月22日 星期二, 第二張 第五版; top right 「毒品調查科警司梁志彬昨講古仔」「毒販四大家族瓦解後」「出現夫妻父子檔集團」, with 「五十年代有兩個特點」「製毒師傅多上海人」「潮州人雄霸毒品市」「十年前城砦油蔴地果欄馬山是售毒黑點」; a photo of the talk with a ROTARY CLUB sign.
+- **What it gives (resolver's note, not checked):** A police drug-squad superintendent's talk of May 1984 on the history of the drug trade: the four big families, the family gangs after them, the 1950s, and the City as a drug-selling black spot about 1974.
+- **Lead:** L0632 (cited by top-zh-press-34, hk-chinese-press-1947-1984)
+- **Notes:** Leaf n4 = 第二張 第五版. Leaf found by the place of the headline in the item's 'description' (OCR headline list) and checked on the page image. The OCR text layer is unusable (vertical text).
+
+### lead-l0640: 工商晚報 (Kung Sheung Evening News), 16 June 1984: headline 「城砦水深一米百七居民疏散」 (as the repo reads the OCR headline list)
+
+- **Creator:** Kung Sheung Evening News (工商晚報)
+- **Date:** 1984-06-16
+- **Kind:** press
+- **Class:** primary (A Hong Kong evening paper's report of the time on a flood in the City.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights field in the archive.org metadata; private upload in the 'china-mail' collection; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19840616
+- **Other links:** https://archive.org/metadata/NPKSE19840616, https://archive.org/download/NPKSE19840616/NPKSE19840616.pdf
+- **Proof that it exists:** archive.org metadata: title '工商晚報 1984-06-16', date 19840616, collection china-mail, 8 images; the description (OCR headline list) has the line '城?水深一米百七居民疏散' (WebFetch read the first pair as 城破; the repo reads 城砦).
+- **What it gives (resolver's note, not checked):** A flood in the City after heavy rain about 15-16 June 1984: the depth of the water (OCR '一米百七', perhaps 1.7 m) and the evacuation of residents. Ten days before the burst water mains of 26 June 1984 (NPKSE19840626).
+- **Lead:** L0640 (cited by zh-press-22, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: look at the local-news pages of the 8 leaves.

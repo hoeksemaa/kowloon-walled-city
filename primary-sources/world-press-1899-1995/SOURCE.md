@@ -292,3 +292,43 @@ testimony given later: tag its facts "retrospective (year)".
 | East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Mayor Alioto of San Francisco proclaimed 'Project Concern Week' for 12-19 October 1969. | “Project Concern Week” has been proclaimed by Mayor Alioto for the week of October 12-19. |
 | East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Project Concern was an international, non-profit medical relief organisation that worked in Hong Kong, Vietnam, Tijuana (Mexico) and Appalachia (USA). | "Project Concern is an international, non-profit, medical relief organization serving in Hong Kong, Viet Nam, Tijuana, Mexico and Appalachia, U.S.A." |
 | East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | In 1969 two floating clinics of Project Concern worked in Kowloon Bay for the boat people: the 'Yauh Oi' (Brotherly Love), a rebuilt lighter, and the 'Ming Ling' (Love One Another), a Chinese junk. | "Two floating clinics now operate in Kowloon Bay, to serve the boat people." |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
+
+- **Creator:** Barbara Basler (The New York Times)
+- **Date:** 1992-06-16
+- **Kind:** press
+- **Class:** primary (A report of the time by a reporter in the City in June 1992, with the words of residents and of Suenn Ho; its history paragraphs are background (secondary).)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** © The New York Times; Wayback Machine capture of 2013-04-16 (nytimes.com itself is metered)
+- **Link:** https://web.archive.org/web/20130416022751/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html
+- **Other links:** https://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html
+- **Proof that it exists:** Page title 'Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls - New York Times'; byline 'By BARBARA BASLER Published: June 16, 1992'; first paragraph 'The two square city blocks, just beyond the glittering hotels and fashionable boutiques of Kowloon, have been contested territory since 1899'.
+- **What it gives (resolver's note, not checked):** June 1992, during the clearance: $384 million compensation for 900 businesses and 10,700 households; about 2,000 people still inside, demolition to start the next January. Some families still fetched water in buckets and paid workers to collect chamber-pot waste each morning. A 58-year-old herbalist, seven years in the City, lived and worked with his family of four in 290 sq ft and earned $2,000 a month.
+- **Lead:** L0714 (cited by ja-1, surveys-and-studies-1960-1995)
+- **Notes:** Suenn Ho's figure of 'about seven square feet' a person at the peak of 40,000 is her own estimate. Read the 'Single-Page' view of the same capture.
+
+### lead-l0714-2: HONG KONG'S WORST SLUM SEEMS PLEASED TO FACE ITS DOOM
+
+- **Creator:** Nicholas D. Kristof, Special to the New York Times
+- **Date:** 1987-01-25
+- **Kind:** press
+- **Class:** primary (A report of the time from inside the City, ten days after the clearance announcement, with the words of named residents; its history paragraphs are background (secondary).)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** © The New York Times; Wayback Machine capture of 2015-05-24
+- **Link:** https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
+- **Other links:** https://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
+- **Proof that it exists:** Page title 'HONG KONG'S WORST SLUM SEEMS PLEASED TO FACE ITS DOOM - NYTimes.com'; 'By NICHOLAS D. KRISTOF, Special to the New York Times'; 'Published: January 25, 1987'; 'The Kowloon Walled City, as the slum is known, is a seven-acre pocket of crime and filth'.
+- **What it gives (resolver's note, not checked):** January 1987, five weeks after the week of the simulation: named residents (Lam Chung, an electrical worker on a 13th floor with no lift and no running water, who fetched water from taps outside; Chan Yeekam, 63, a former waste-paper collector, five people in a 4th-floor flat; Chu Yuehshan, a real-estate broker of the City who earned about $30,000 a year). One-chair dentists' offices with dentures in the window; no fire escapes; about 40,000 people.
+- **Lead:** L0714 (cited by ja-1, surveys-and-studies-1960-1995)
+- **Notes:** Not cited by any item of the repo: found through the 'More Like This' box of the 1992 article. The romanized names have no Chinese characters in the source: do not guess them.

@@ -236,3 +236,41 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - Table 6.7 (public transport passenger journeys) and 6.10 (traffic accidents) of this issue have December 1986 rows; not read.
   - The February 1987 issue (B10100021987MM02E0100.pdf by the same pattern) can give the quarterly figures for October-December 1986.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0523-1: Hong Kong Monthly Digest of Statistics, August 1987
+
+- **Creator:** Census and Statistics Department, Hong Kong
+- **Date:** 1987-08
+- **Kind:** data
+- **Class:** primary (Official monthly statistics published at the time (1987).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held January 1987 issue).
+- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM08E0100.pdf
+- **Proof that it exists:** PDF title 'Hong Kong Monthly Digest of Statistics (August 1987)', 117 pages; cover 'Monthly Digest of Statistics / August 1987 / Census and Statistics Department, Hong Kong'.
+- **What it gives (resolver's note, not checked):** Hong Kong-wide tables of 1986-1987: labour force and unemployment, wage indexes and average daily wages, consumer price indexes (A, B, Hang Seng) and retail prices; the source of the wage and CPI tables that the IDE review of 1987 reprints.
+- **Lead:** L0523 (cited by top-china-26, scholarship-history-law-society-1973-2026)
+- **Notes:** 13,670,836 bytes, over 10 MB. Hong Kong-wide figures only; no City figures (INFERRED from the contents).
+
+### lead-l0523-2: Hong Kong Monthly Digest of Statistics, September 1987
+
+- **Creator:** Census and Statistics Department, Hong Kong
+- **Date:** 1987-09
+- **Kind:** data
+- **Class:** primary (Official monthly statistics published at the time (1987).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held January 1987 issue).
+- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM09E0100.pdf
+- **Proof that it exists:** PDF title 'Hong Kong Monthly Digest of Statistics (September 1987)', 119 pages; cover 'Monthly Digest of Statistics / September 1987'.
+- **What it gives (resolver's note, not checked):** As the August issue, one month later; the IDE review cites this issue for the monthly pay of non-production workers by industry in March 1987 (its table 13).
+- **Lead:** L0523 (cited by top-china-26, scholarship-history-law-society-1973-2026)
+- **Notes:** 15,880,642 bytes, over 10 MB. Hong Kong-wide figures only.

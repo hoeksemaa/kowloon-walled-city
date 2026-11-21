@@ -148,23 +148,137 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
-  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1085: Redevelopment of Kowloon Walled City a feasibility study
 
-- **Creator:** Betty Ho Siu-fong (HKU, MSc Urban Planning workshop report)
-- **Date:** 1986-08
-- **Kind:** thesis
-- **Class:** primary (A planning study written in August 1986 from the conditions of the time (the target year); its history chapters are secondary.)
-- **Value:** high
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ho Siu-fong, Betty, Redevelopment of Kowloon Walled City: A Feasibility Study, workshop report for the MSc in Urban Planning, University of Hong Kong, August 1986, 121 pp.; HKU Libraries Digital Repository, https://digitalrepository.lib.hku.hk/catalog/rr172s11z
+- **Class:** primary (A study made in 1986 from the author's site visits and interviews with officials, a District Board member, a social worker, the kaifong association's secretary and residents. Its history chapters (3, 4) are secondary background.)
+- **Date of the record:** 1986-08
+- **Files:**
+  - `lead-l1085-rr172s11z-203cdfae.json` (in `local/`, not in git): IIIF manifest of the 131 page images of the study (each image at /service/api/iiif/images/<id>/full/full/0/default.jpg, 1500 px wide).; https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/rr172s11z; 92728 bytes; SHA-256 `1a4707aa551661083e1fe7cc0d4f0d371d334d5c8dc6cd143a6ff0880cea4f15`; licence: HKU Libraries: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (no open licence on the record page) (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+  - `lead-l1085-default-a94111b4.jpg` (in `local/`, not in git): Page 59 (image 68): Fig. 5.17, table of 645 business establishments by street and type, 1983.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/x920gs70m/full/full/0/default.jpg; 257012 bytes; SHA-256 `77da604f5275c31988b554897de22e0d77c9f4558959b3f76e2fbc8230759c5f`; licence: HKU Libraries: All Rights Reserved (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+  - `lead-l1085-default-5eefae49.jpg` (in `local/`, not in git): Page 43 (image 52): Fig. 5.8, map of the 8 standpipes on the 1:1000 survey sheet 11-NE-11A.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/qr46rw62n/full/full/0/default.jpg; 406048 bytes; SHA-256 `4f5b2cc527583e9e0f883e738e7fb083365bbfef02414d448ef05e82b6774526`; licence: HKU Libraries: All Rights Reserved (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+  - `lead-l1085-default-590a06c1.jpg` (in `local/`, not in git): Page 36 (image 45): Fig. 5.5, boundary and layout of the City on survey sheet 11-NE-11A.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/st74dm05w/full/full/0/default.jpg; 444510 bytes; SHA-256 `9fb4fe58ee3e0d7fc1f09d648054143f633d0fd486f7e50756caffbfdc53f81c`; licence: HKU Libraries: All Rights Reserved (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+  - `lead-l1085-default-852cc2bf.jpg` (in `local/`, not in git): Page 45 (image 54): text on wells, water companies and their charges.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/dn39xx23t/full/full/0/default.jpg; 171248 bytes; SHA-256 `b9ba5b6804ca486d14777989440d913fbe6fe7be5479a59cbb56939f933943d0`; licence: HKU Libraries: All Rights Reserved (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+  - `lead-l1085-default-84048de7.jpg` (in `local/`, not in git): Page 65 (image 74): text on rents, flat prices and flat sizes.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/j38613316/full/full/0/default.jpg; 201174 bytes; SHA-256 `cc67cd5f7788d232fc5136658a3c2112c37bb38e98e665330126390895ff0d00`; licence: HKU Libraries: All Rights Reserved (https://digitalrepository.lib.hku.hk/catalog/rr172s11z)
+- **Note:** its 5 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md`](../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (image 10) | The study gives the population of the City as about 40,000 in 1986. | "a dingy slum which accomodates about 40,000 population" |
+| p. 3 (image 12) | The author got her data mainly from interviews with government staff, a District Board member, a social worker, the secretary of the Kai Fong Welfare Advancement Association and residents. | "mainly collected from interviews with staffs of various Government departments, District Board member, social worker, secretary of the Kai Fong Welfare Advancement Association" |
+| p. 29 (image 38) | The City is less than a mile north-west of the airport. Mei Tung Estate is to the north, Tung Tau Estate to the east, and the Sai Tau Tsuen squatter area was to the south and west. | "surrounded by Mei Tung Estate in the North, Tung Tau Estate in the East and Sai Tau Tsuen Squatter Area in the South and the West" |
+| p. 29 (image 38) | By August 1986 Sai Tau Tsuen had been demolished to build Carpenter Road Park. | "Sai Tau Tsuen Squatter Area has now been demolished for the construction of Carpenter Road Park." |
+| p. 29 (image 38) | Airport height restrictions over the City range from 45.72 m PD to 51.82 m PD. | "strict Airport Height Restrictions ranging from 45.72m P.D. to 51.82m P.D. are imposed" |
+| pp. 29 and 35 (images 38, 44) | The government takes the City to be the area bounded by Tung Tau Tsuen Road (north), Lung Shing Road (east), Lung Chun Road (south) and West City Road (west). Houses on the east side of Lung Shing Road and the west side of West City Road are included. | "the area surrounded by Tung Tau Tsuen Road in the North, Lung Shing Road in the East, Lung Chun Road in the South" |
+| p. 35 (image 44) | The total area of the City is 6.5 hectares. | "The total area of the Walled City is 6.5 ha." |
+| p. 35 (image 44) | The District Lands Office keeps no land or building records of the City. | "the District Lands Office does not keep land and building records of the area." |
+| p. 35 (image 44) | Landholding rests on custom: land belongs to the first person who built on it, and a sale rests on trust. | "a piece of land is belonged to the first person who built on it. Transaction of landholding is based on trust." |
+| p. 35 (image 44) | In a property sale, the parties usually get a witness to the signing of the contract. The most common witness is the Kai Fong Welfare Advancement Association. | "the most common of which is the Kai Fong Welfare Advancement Association." |
+| pp. 35, 37 (images 44, 46) | There are about 300 buildings in the City, with an average height of 11 storeys. | "about 300 buildings altogether within Kowloon Walled City, with average height of 11 storeys." |
+| p. 37 (image 46) | Except the former Yamen and the Tin Hau Temple, all buildings were built or rebuilt after the Second World War. | "With the exception of the former Yamen and Tin Hau Temple, all of these buildings were built/rebuilt after the Second World War." |
+| p. 37 (image 46) | A building surveyor found the steel under strength and the cement mix too weak (citing Chiang 1980). No building stands on proper piles or caissons; the developers say the whole area sits on a large rock. | "all building structures are not rested on proper foundations (piles or caisson)." |
+| p. 38 (image 47) | On a site visit the author saw that one building had started to tilt. | "the author has noticed during a site visit that one of the buildings has already started to tilt." |
+| p. 38 (image 47) | Only one building in the City has a lift. | "there is only one building installed with lift despite the average height of the buildings is 11 storeys." |
+| p. 38 (image 47) | Because of the height limit, developers cut the floor-to-floor height to get more storeys. The result is low headrooms and poor ventilation. | "developers turned to minimizing floor to floor height to achieve maximum number of saleable storeys." |
+| p. 38 (image 47) | Buildings abut each other and are built over the narrow streets, so windows are blocked and the streets become internal corridors. | "the streets are virtually turned into internal corridors." |
+| pp. 39-40 (images 48-49), Fig. 5.6 captions | Photos show structures that cover the streets, cubicles built above a corridor, cages, and roof huts. | "Cubicles are built above a corridor to make its headroom even lower" |
+| p. 41 (image 50) | Stairways of different blocks often merge into one narrow lane, and corridors are full of electricity cables and water pipes. There are no proper fire escapes. | "Exit-ways and stairways from the different building blocks are often seen merging into one narrow lane" |
+| p. 41 (image 50) | The City has 8 public standpipes within its boundary. | "The Walled City is provided with 8 standpipes within the boundary." |
+| p. 43 (image 52), Fig. 5.8 | INFERRED: The map of the standpipes shows 8 dots: two at the north-east tip, one on the east edge, one on the west edge by West City Road, one at the central School, one on the south-east edge, one near the south-east corner and one in the south centre. This is my reading of the map. | "Figure 5.8: Location of Standpipes" |
+| pp. 41, 45 (images 50, 54) | A District Board member, Mr. Steve Ng, told the author that the City also has about 300 wells dug by the residents. | "it is also served by about 300 scientific wells dug by the residents." |
+| p. 45 (image 54) | Residents complain that the well water is getting worse, probably because more sewage flows underground. | "the quality of well water is deteriorating probably because of the increase of sewage flow underground." |
+| p. 45 (image 54) | Several water supply companies take water from the standpipes and pipe it to homes. They charge from $30 to more than $100 a month, by the number of hours of supply a day. | "at a rate ranging from $30 to more than $100 per month, depending on the number of hours of water supply a day." |
+| p. 45 (image 54) | The piped standpipe water is sometimes mixed with well water. | "Sometimes the tapped water is mixed with well water, and so the quality is not guaranteed." |
+| p. 45 (image 54) | The District Officer explains that piped water to the homes is technically hard: the buildings are too weak for the water pressure and the lanes too narrow to dig for pipes. The author judges the chance of piped water very dim. | "the building structures are too weak to take the water pressure and the lanes are too narrow to be dug up" |
+| p. 44 (image 53), Fig. 5.9 captions | Photos show people taking buckets to the standpipe, washing clothes and rice there, and bathing at it. Polythene pipes wait to take water to homes. | "wash the clothes and rice at the standpipe or even take a bath there!" |
+| p. 46 (image 55) | Open drains run along the sides of the narrow streets and slope down to the drains at Sai Tau Tsuen. | "Open drains are aligned at the sides of the narrow streets sloping down to the drains at Sai Tau Tsuen." |
+| p. 46 (image 55) | Most buildings have an aqua privy, but the sewage usually goes underground or into the open drains. | "most buildings are provided with aqua privy. However, sewage are usually led underground or linked to the open drain." |
+| p. 46 (image 55) | The City has electricity and telephone service. An electricity transformer stands on Lung Chun Road. | "A electricity transformer is located on Lung Chun Road." |
+| p. 46 (image 55) | Electricity cables hang over the narrow lanes, and water often drips from the pipes run along them. | "Very often, water are found dripping from the pipes illegally lined along these cables." |
+| pp. 47-48 (images 56-57), Fig. 5.10-5.11 captions | Photos show refuse in the lanes, a rat at a hole in the ground, and places where people must bend under low cables and leaking pipes. | "one have to bent down and cover his head when walking under the low-hanging cables and the leaking pipes." |
+| p. 49 (image 58) | The City is in the Kowloon City and Sai Tau constituency of the Kowloon City District Board. | "lies within constituency of Kowloon City and Sai Tau of Kowloon City District Board." |
+| p. 49 (image 58) | The Urban Services Department collects refuse. No rates on land are collected in the City. | "the Urban Services Department collects garbage." |
+| p. 64 (image 73), Fig. 5.20 captions | A photo shows that the Urban Services Department collects refuse every day, and that the police patrol the area 24 hours a day. | "USD collects refuse everyday and the Police maintains 24 hour patrol in the area" |
+| pp. 49, 52 (images 58, 61) | The 1981 Census counted 33,917 people in TPU 2.8.5, street block 02 (the City and Sai Tau Tsuen). Sai Tau Tsuen had 19,300, which leaves 14,617 for the City. | "there was a total population of 33,917 in TPU 2.8.5 Street Block 02" |
+| p. 52 (image 61) | The District Officer of Kowloon City says the census figure is unrealistic and estimates about 40,000 people. At 40,000 the density is 6,154 people per hectare, the highest in Hong Kong. | "the District Officer/Kowloon City estimates that there are approximately 40,000 inhabitants." |
+| p. 52 (image 61) | In the 1981 street block, 61.07% of the people were under 30. There were 18,584 males and 15,333 females, probably because of many young male immigrants from China. | "61.07% of the residents are below the age of 30." |
+| p. 54 (image 63) | In the street block, 55.63% of households had 3 or fewer people (18.99% single, 36.64% of 2-3 people), against 46% for the territory. | "55.63% of the households have 3 or less persons" |
+| p. 54 (image 63) | 74% of living quarters were in private housing blocks; about 22% were simple stone structures and temporary housing. | "74% of living quarters are private housing blocks with self-contained facilities." |
+| p. 54 (image 63) | 20% of living quarters were shared by 2 or more households, and about half of these by 3 or more households. | "20% of living quarters shared between 2 or more households" |
+| pp. 54-55 (images 63-64) | The government lent the buildings of the former Yamen to the Chinese National Evangelic Church (CNEC). The CNEC ran a centre for the elderly there with more than 100 members, most of them residents. | "The CNEC runs a centre for the elderly which has more than 100 members" |
+| p. 55 (image 64) | The Hong Kong Federation of Youth Groups ran a children and youth centre in the former Yamen, rented from the CNEC at a nominal rate. | "rented at a nominal rate from CNEC." |
+| p. 56 (image 65), Fig. 5.15 photo, sign | The sign of the youth centre gives its hours: Monday to Saturday, 2-6 pm and 7-10 pm. It closed on Sundays and public holidays. | "星期一至六 2PM - 6PM 7PM - 10PM" (Monday to Saturday, 2 pm to 6 pm, 7 pm to 10 pm) |
+| p. 56 (image 65), Fig. 5.15 | A photo of the centre for the elderly shows a hall with rows of chairs, a cross on the wall and a television set. | "Centre for the Elderly (both are operated in the premises of the former 'Yamen')" |
+| p. 55 (image 64) | A missionary, Miss Pullinger, ran an informal rehabilitation centre for drug addicts. | "informal rehabilitation centre for the drug addicts run by a missionary under a lady known as Miss Pullinger." |
+| p. 55 (image 64) | The Kai Fong Welfare Advancement Association links residents with government departments, witnesses property sales and put up the street name plaques. | "It also witnesses property transaction for the local residents and has installed the street name plagues." |
+| p. 57 (image 66), Fig. 5.16 captions | Photos of the association's work show modern street lamps and hand-written posters that ask people to keep the place clean. | "Posters pleading promotion of hygiene" |
+| p. 58 (image 67) | Mr. Tommy Hor of the youth centre said that residents have little sense of belonging. They stay out late and come back only to sleep, and neighbours seldom talk. | "they tend to stay late outside so that when they come back they will go to bed." |
+| p. 58 (image 67) | Most people move out when they can afford to. | "Most people will move out when they are financially better off." |
+| p. 58 (image 67) | A 1983 survey by the Kai Fong Welfare Advancement Association counted 645 business and factory establishments. | "there was a total of 645 business and factory establishments operating within the Walled City." |
+| p. 58 (image 67) | The 1983 counts were: 89 clinics, 97 dental clinics, 77 shops, 28 restaurants, 12 electrical appliance shops, 10 real estate agencies, 30 textile, 44 garment, 56 metal, 93 plastics and 41 other factories, 35 meat and 33 cake makers. | "89 clinics, 97 dental clinics, 77 shops, 28 restaurants, 12 electrical appliances shops" |
+| p. 59 (image 68), Fig. 5.17 | The table of 1983 by street: Tung Tau Tsuen Road had 71 clinics, 49 dentists, 16 shops, 10 restaurants, 1 electrical, 3 real estate, 10 textile, 16 garment, 6 metal, 6 plastic, 6 manufacturing, 3 meat and 7 cake. | "Tung Tau Tsuen Road 71 49 16 10 1 3 10 16 6 6 6 3 7" |
+| p. 59 (image 68), Fig. 5.17 | Lung Shing Road (1983): 5 clinics, 26 dentists, 14 shops, 6 restaurants, 4 electrical, 1 real estate, 3 textile, 3 garment, 7 metal, 4 plastic, 5 manufacturing, 4 meat, 4 cake. | "Lung Shing Road 5 26 14 6 4 1 3 3 7 4 5 4 4" |
+| p. 59 (image 68), Fig. 5.17 | Kwong Ming Street (1983): no clinics or dentists, 6 shops, 3 restaurants, 2 electrical, 2 textile, 4 garment, 6 metal, 13 plastic, 2 manufacturing, 5 meat, 4 cake. | "Kwong Ming Street - - 6 3 2 - 2 4 6 13 2 5 4" |
+| p. 59 (image 68), Fig. 5.17 | Lo Yan Street (1983): 5 clinics, 4 shops, 2 electrical, 2 real estate, 2 textile, 3 garment, 7 metal, 4 plastic, 4 manufacturing, 6 meat, 6 cake. | "Lo Yan Street 5 - 4 - 2 2 2 3 7 4 4 6 6" |
+| p. 59 (image 68), Fig. 5.17 | Tai Chang Street (1983): 5 shops, 1 real estate, 4 textile, 3 garment, 6 metal, 28 plastic, 6 manufacturing, 2 meat, 1 cake. It had the most plastics works. | "Tai Chang Street - - 5 - - 1 4 3 6 28 6 2 1" |
+| p. 59 (image 68), Fig. 5.17 | West City Road (1983): 2 clinics, 9 shops, 1 restaurant, 1 electrical, 1 real estate, 2 textile, 6 garment, 11 metal, 4 plastic, 6 manufacturing, 5 meat, 2 cake. | "West City Road 2 - 9 1 1 1 2 6 11 4 6 5 2" |
+| p. 59 (image 68), Fig. 5.17 | Lung Chun Road (1983): 4 clinics, 18 dentists, 11 shops, 5 restaurants, 2 electrical, 1 real estate, 3 textile, 5 garment, 6 metal, 4 plastic, 5 manufacturing, 3 meat, 3 cake. | "Lung Chun Road 4 18 11 5 2 1 3 5 6 4 5 3 3" |
+| p. 59 (image 68), Fig. 5.17 | Lung Chun Street (1983): 2 clinics, 4 dentists, 7 shops, 2 restaurants, 1 real estate, 2 textile, 1 garment, 3 metal, 5 plastic, 1 manufacturing, 2 meat, 2 cake. Lung Chun Lane: 3 shops, 2 textile, 1 garment, 2 metal, 3 plastic, 4 manufacturing, 3 meat, 3 cake. | "Lung Chun Street 2 4 7 2 - 1 2 1 3 5 1 2 2" |
+| p. 59 (image 68), Fig. 5.17 | Sz Kung Street (1983): 2 shops, 1 restaurant, 2 garment, 2 metal, 2 plastic, 2 manufacturing, 2 meat, 1 cake. | "Sz Kung Street - - 2 1 - - - 2 2 2 2 2 1" |
+| p. 59 (image 68), Fig. 5.17, my check | INFERRED: The plastics column of the 1983 table adds up to 73 by street, but its total row (and the text) gives 93. The other columns add up to their totals. | "TOTAL 89 97 77 28 12 10 30 44 56 93 41 35 33" |
+| p. 59 (image 68), Fig. 5.17 | The source of the table is the 20th anniversary special publication (1983) of the City's kaifong committee. | "Source: Kowloon Walled City Kai Fong Welfare Advancement Committee (1983), 20th Anniversary Special Publication" |
+| p. 58 (image 67) | The association's secretary said that dental clinics and meat-ball and fish-ball making had grown notably in recent years. | "there are notable increase in dental clinic and meat/fish-ball manufacturing in recent years." |
+| p. 60 (image 69), Fig. 5.18 captions | Photos of businesses show a plastics factory with a machine under a stair, a grocery shop with rice bins, and a home kitchen of a domestic caterer. | "Plastic Factory Grocery Shop Domestic Caterer" |
+| p. 62 (image 71) | Almost all businesses in the City run without government licences. | "almost all business operations there are run without licences from the Government" |
+| p. 62 (image 71) | Fish-ball and meat-ball makers were found to use salicylic acid, a banned additive. The department relied only on persuasion. | "The fish/meat-ball manufacturers are found using salicylic acid in their products." |
+| pp. 62-63 (images 71-72) | A special Walled City police patrol unit was set up in 1980 for round-the-clock patrols. | "Starting from 1980, a special Walled City Police Patrolling Unit was set up to provide round the clock patrolling." |
+| p. 63 (image 72) | Prostitutes still waited for customers, especially on Lung Shing Road. | "prostitutes are still found waiting for customers especially on Lung Shing Road." |
+| p. 63 (image 72) | In the first seven months of 1986 the police made 81 arrests for burglary, 35 for robbery, 27 for dangerous drugs, 10 for one-woman brothels and 3 for gambling, and arrested 26 illegal immigrants (citing Grindrod and Yu, SCMP, 1986). | "Burgaries top the list with 81 arrests, followed by 35 for robbery, 27 for dangerous drugs" |
+| p. 65 (image 74) | Housing in the City costs about a half to a third of the rent or price in nearby districts. | "Accommodation in the Walled City costs about 1/2 to 1/3 of that in nearby districts." |
+| p. 65 (image 74) | A 100 sq ft room rents for $400-500 a month, and a 300 sq ft flat for about $900. | "A 100 sq. ft. room rents at $400 - 500 a month and a 300 sq. ft. flat rents at only about $900." |
+| p. 65 (image 74) | A 400 sq ft flat sells for about $80,000 and an 800 sq ft flat for about $100,000. Prices vary much with natural light and ventilation. | "The selling price of a 400 sq. ft. is around $80,000 while that of a 800 sq. ft. is about $100,000." |
+| p. 65 (image 74) | Older buildings have flats of 600-800 sq ft; new ones have flats of 300-400 sq ft. | "old buildngs are built with larger flat size of 600 - 800 sq. ft. but new ones are only 300 - 400 sq. ft." |
+| p. 65 (image 74) | Banks give no mortgages for flats in the City, so buyers pay cash and prefer small flats. | "the banks will not provide any mortgage for the flat buying." |
+| p. 67 (image 76) | A developer got the right to rebuild by giving the land owner a few units in the new building. | "negotiate with land-owner for the right of development by compensating a few units in the new building." |
+| p. 66 (image 75), Fig. 5.21 | A photo of an estate agent's window shows hand-written cards of flats for sale on Lung Chun Road (龍津道) and Kwong Ming Street (光明街). | "Cheap accommodation is undoubtedly an attraction to the lower income group" |
+| p. 68 (image 77), Fig. 5.22 captions | Photos show exhaust fumes from industry entering homes and dirty waste water running into the open drains. | "Contaminated waste water runs into open drains" |
+| p. 85 (image 94) | The District Officer estimates about 10,000 household units in the City. | "some 10,000 household units (as estimated by District Officer/Kowloon City)" |
+| pp. 77-78 (images 86-87) | Many residents are recent immigrants from China and care more about their environment than about Chinese jurisdiction. | "a high percentage of the residents are recent immigrants from China" |
+| p. 78 (image 87) | Law Hio-Cheung, a founder of the kaifong association and a leader of the 1963 anti-demolition committee, said that residents no longer speak of defending Chinese territory with their lives (quoted from Grindrod and Yu 1986). | "We don't say things like 'we have to defend Chinese territory with our lives' any more" |
+| p. 75 (image 84) | Xu Jiatun (許家屯) of Xinhua visited the City in August 1983. The Attorney General, Mr. M. Thomas, and Mr. A. C. Golsworthy (so printed), head of the Hong Kong Department of the Foreign and Commonwealth Office, visited it in November 1985. | "paid a visit to the Kowloon Walled City in November, 1985." |
+| p. 100 (image 109) | The former Yamen, of the Qing dynasty, stands at the centre of the City. | "The former Yamen, built in the Ching dynasty and located at the centre of the Kowloon Walled City" |
+| p. 102 (image 111), Fig. 9.4 caption | Two Qing cannons lay unattended outside the Yamen. | "Two Ching cannons are presently left unattended outside the Yamen." |
+| p. 103 (image 112), Fig. 9.5 | A photo shows the Tin Hau Temple with the tablet 天后古廟 over its door, and a separate open shrine at the roadside. | "The Tin Hau Temple will be retained and renovated upon the proposed redevelopment but not the shrine" |
+
+- **Leads:**
+  - Kowloon Walled City Kai Fong Welfare Advancement Committee (九龍城砦街坊福利事業促進委員會), 成立廿周年紀念特刊 (20th Anniversary Special Publication), 1983: the source of the 1983 business survey (Ho 1986, p. 59 and bibliography p. 119).
+  - Chiang H.M. (1980), Redevelopment of Kowloon Walled City, unpublished B.A. thesis, School of Architecture, University of Hong Kong (Ho 1986, p. 37 and bibliography).
+  - Grindrod and Yu (1986), 'Walled City's Grim Limbo', South China Morning Post, 16 August 1986 (Ho 1986, pp. 41, 63, 78): crime statistics and the fire officer's words.
+  - Wah Kiu Yat Po (華僑日報), 'Crime Rate in Walled City is improving, drug addicting still high', 22 November 1985 (Ho 1986, bibliography p. 121).
+  - Sing Tao Jih Pao, 'Special Issue on the Walled City', 3 November 1985, by Hung, So, Tsang, Lam and Lo (Ho 1986, bibliography p. 120).
+  - Sunday Standard, 3 November 1985, p. 3: 'Special Status of Walled City breeds Vices' and 'Enormous Budget to Provide Even the Basic Needs' (Ho 1986, bibliography p. 121).
+  - Hong Kong Standard, 'Poison tracked to Walled City', 4 November 1985, and South China Morning Post, 'Tackling Poison meatballs', 4 November 1985 (Ho 1986, bibliography).
+  - Lulu Yu, 'Police Concern as Walled City Crime Pockets', South China Morning Post, 25 November 1985 (Ho 1986, bibliography p. 121).
+  - Oriental Daily News, 1982: 'Noise Pollution in Walled City' (2 May), 'Environmental Problems in Walled City' (13 December); and 1985, a visit of Miss Hong Kong to the City (21 November) (Ho 1986, bibliography p. 121).
+  - Ming Pao, 'Illegal Residents in Walled City', 5 November 1983; Wen Wei Po, Chung Yuet, 'Residents in Walled City do not have sense of belongings', 17 October 1985 (Ho 1986, bibliography p. 120).
+  - Urban Area Development Office, Ma Tau Kok & Kowloon City Outline Development Plan, plan No. D/K10/1B (reproduced as Fig. 5.3 with the airport height limits over the City; Ho 1986, p. 33).
+### lead-l0562: Bracing Up 牙科研究 改善服務
+
+- **Creator:** Interflow (University of Hong Kong); no byline
+- **Date:** 1987-04
+- **Kind:** article
+- **Class:** primary (A university magazine report of April 1987 on its dental students' study of 1986, written at the time.)
+- **Value:** medium
 - **Language:** en
 - **Access:** open
-- **Licence:** HKU Libraries: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the lead gives the record licence 'All rights reserved')
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/rr172s11z
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/rr172s11z, https://digitalrepository.lib.hku.hk/service/api/iiif/images/ww72c723b/full/full/0/default.jpg, http://ebook.lib.hku.hk/HKG/B36228527.pdf
-- **Proof that it exists:** Catalogue title 'Redevelopment of Kowloon Walled City a feasibility study'; IIIF manifest with canvases '1' to '131'; image n583zr688 info.json open (1500 x 2118).
-- **What it gives (resolver's note, not checked):** A 1986 feasibility study of the redevelopment of the City, with the conditions of 1986 (people, buildings, services) and the 1898 convention extracts (p. 20, per Esposito). Its date is the target year of the simulation.
-- **Lead:** L1085 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
-- **Notes:** Page images only (no text layer was checked). The old eBook PDF URL is dead; a Wayback copy is cited in reference-and-web-histories/popular-2 (not opened).
+- **Licence:** HKU Digital Repository, as for the held article z603wt449 of the same issue: 'License: All rights reserved; Rights Statement: In Copyright'.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/5425r8276
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/images/hq381j68h/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/tb09q367c/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/5425r8276
+- **Proof that it exists:** Image 8 is 'Interflow 4 - 1987 - Page 8', heading 'Bracing Up' / 「牙科研究 改善服務」; p. 9: 'Unregistered dentists are rife in certain, more densely populated parts of the territory' and 'At present, unregistered dentists can be fined up to HK$1,000 and be liable for six months' imprisonment.'
+- **What it gives (resolver's note, not checked):** A 1986 study by HKU dental students of unregistered dentists: their services (dentures, fillings, crown and bridge), their large signboards, the penalty of April 1987, a questionnaire in four residential areas (three with many unregistered practices), the views of the public, and the proposal to train them as dental technicians or assistants. It does not name the City in what I read.
+- **Lead:** L0562 (cited by citations-14, building-and-demolition-records-1968-1997)
+- **Notes:** Bilingual (English and Chinese texts). The Chinese text names the 1980 start of the Faculty's surveys and an estimate of 15,000 people reached. The held HKDA newsletters (building-and-demolition-records-1968-1997/citations-13) can go beside it.

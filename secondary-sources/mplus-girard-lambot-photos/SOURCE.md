@@ -320,3 +320,15 @@ Chinese names, and noted the secondary part of fact T6.
 | objects.csv, CA44/2/25; constituents.csv, id 4191 | M+ holds a sketch of the Walled City by Arthur Hacker (許敬雅, 1932-2013) for a 'Hong Kong Sites and Legends' poster, dated [1970s-1980s], marker ink on paper, 54.9 x 39.4 cm (CA44/2/25, 香港景點與傳奇海報：九龍城寨速寫). | "Sketch, Kowloon Walled City, Hong Kong Sites and Legends poster / [1970s–1980s]" |
 | objects.csv, constituent 358 | The data has no Walled City work by Ozawa Tsuyoshi (小澤剛, id 358). His M+ works are others (for example 'Canton Tokyo-1', 2005, and 'The Return of Dr. N', 2013). | "358 / Ozawa Tsuyoshi / 小澤剛 / Japanese, born 1965" |
 | README.md | The dataset has no images; the README says that the creators have rights over the images. | "Images are therefore not included in this dataset." |
+
+### lead-l1194: Ian Lambot 'Water Standpipe #2' Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ian Lambot, 'Water Standpipe #2', Hong Kong 1991, courtesy of Blue Lotus Gallery, reproduced in Victoria Mae Martyn, 'Kowloon Walled City', Culture Hong Kong, https://culture-hongkong.com/kowloon-walled-city/ ; image https://culture-hongkong.com/wp-content/uploads/2024/12/Ian-Lambot-Water-Standpipe-2-Hong-Kong-1991_Courtesy-of-Blue-Lotus-Gallery-Kowllon-Walled-City-2.jpg
+- **Class:** primary (A photograph made in the City in 1991 (the caption gives the year). The photo is primary; the host page is a later feature.)
+- **Date of the record:** 1991 (per caption)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../primary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Host page, image caption | The caption dates the photo to 1991 and names it 'Water Standpipe #2'. | "Ian Lambot ‘Water Standpipe #2’ Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City" |

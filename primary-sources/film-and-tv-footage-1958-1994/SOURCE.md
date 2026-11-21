@@ -600,3 +600,25 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - TV news of 28 Nov 1991 on the forced recovery of flats in the City (TVB or ATV archive); the government press release of that day.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0744: 新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary
+
+- **Creator:** TV news programme (probably TVB 新聞掏寶, INFERRED); YouTube upload by the channel 'Yan Fook Jeffrey "Pastor"'
+- **Date:** footage c. 1992 per the Letterboxd list (not checked); uploaded about 2021-2022 ('4y ago')
+- **Kind:** film
+- **Class:** primary (TV news footage of Jackie Pullinger's work in the City, probably of the clearance years (INFERRED); any narration made later is secondary.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** Unofficial re-upload on YouTube; copyright of the broadcaster (not stated)
+- **Link:** https://www.youtube.com/watch?v=3FsdF3nfS_g
+- **Proof that it exists:** Page title '新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary - YouTube'; '91K views 4y ago'; 'No description has been added to this video.'
+- **What it gives (resolver's note, not checked):** Jackie Pullinger and her work with drug addicts in the City (from the title and the comments). The length and the date of the footage were not seen.
+- **Lead:** L0744 (cited by film-19, depictions-film-and-tv-1966-2025)
+- **Notes:** Watch it to date the footage and to name the programme. Compare pullinger-circle-1966-2026.
