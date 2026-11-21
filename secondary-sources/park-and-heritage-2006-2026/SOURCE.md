@@ -2,13 +2,12 @@
 
 AMO and LCSD pages, park displays, the 2025 film-set exhibition.
 
-- **Status:** partly read: 14 of 26 items read by the reading of the source search of
-  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
-  read: its "What it gives" is the note of the finder, not a checked fact.
+- **Status:** read: 26 of 26 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 2006-2026.
 - **Items:** 26, of which 26 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 5 files with an open licence (CC BY-SA 2.5 (also 2.0, 1.0); CC BY-SA 3.0; CC BY-SA 3.0 (also GFDL; CC BY-SA 2.5, 2.0, 1.0); CC BY-SA 4.0), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 2 files with an open licence (CC BY-SA 4.0; CC BY-SA 4.0 (page footer of the revision: 'Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply.')), named under their items. The other files stay in `local/`.
 
 ## What it rests on
 
@@ -26,51 +25,103 @@ Not read yet.
 
 ### repo-audit-3: Streets in Kowloon Walled City.jpg
 
-- **Creator:** Lord Jaraxxus (Wikimedia Commons user), photo of the plan on display in Kowloon Walled City Park (九龍寨城公園)
-- **Date:** 2018-04-04
-- **Kind:** map
-- **Class:** secondary (A 2018 photo of a plan of the 1980s City whose maker and date are unknown, thus its claim to be primary is not yet shown.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** CC BY-SA 4.0
-- **Link:** https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg
-- **Proof that it exists:** Commons description: 'A detailed map of buildings and street names of the Kowloon Walled City in 1980s.' Own work, CC BY-SA 4.0
-- **What it gives (finder's note, not checked):** The plots, lanes, yards, street names and the Yamen (衙門) of the 1980s City, as the park's display plan draws them. The whole traced plan of the repo comes from this photo.
-- **Notes:** data/plan.json and data/plan_fine.json name it as their source; docs/structure.md lists 'the park's plan of the City' as SOURCED; thus the frozen structure rests on it. No folder in primary-sources/ or secondary-sources/ holds it (the Commons folder does not list it). Camera date 4 Apr 2018 (iPhone 6s), uploaded 17 Jul 2018, 2,337 x 1,525 px. The Commons page does not say who made the display plan or when. The README lead asks to check City of Darkness Revisited for its origin.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Lord Jaraxxus (Wikimedia Commons user), 'Streets in Kowloon Walled City.jpg', photo taken 4 April 2018 16:56:21 of the plan of the City on display in Kowloon Walled City Park (九龍寨城公園), uploaded 17 July 2018, own work, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg
+- **Class:** secondary (A 2018 photo of a park display. The display reproduces a hand-lettered plan of the City in the 1980s with later notes. Its maker and date are not given. If the base plan is an original plan of the 1980s, it is a primary record; that is not shown here. The tree secondary is correct for the photo.)
+- **Date of the record:** 2018-04-04 16:56:21 (photo, EXIF); the plan it shows: 1980s (uploader's description)
+- **Files:**
+  - `repo-audit-3-Streets_in_Kowloon_Walled_City-ec5e3868.jpg` (in git): The original photo, 2,337 x 1,525 px, 1.27 MB (the source of data/plan.json); https://upload.wikimedia.org/wikipedia/commons/6/61/Streets_in_Kowloon_Walled_City.jpg; 1268775 bytes; SHA-256 `516f56d19df5a71b0b64475b9f27cb6f9cbc36919e7b0cdd629a65efaccee83e`; licence: CC BY-SA 4.0 (https://commons.wikimedia.org/wiki/File:Streets_in_Kowloon_Walled_City.jpg)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| file page, description | The uploader describes the photo as a detailed map of the buildings and street names of the City in the 1980s. | "A detailed map of buildings and street names of the Kowloon Walled City in 1980s" |
+| file page, Information and Location templates | The photo was taken on 4 April 2018 at 16:56:21, at 22.332297 N, 114.1904 E, with the camera heading about 75 degrees. It was uploaded on 17 July 2018. The file is 2,337 x 1,525 px, 1,268,775 bytes. | "{{Location/22.332297/114.1904/heading:75.44973544973546}}" |
+| image, whole | The display plan is hand lettered. The lanes are coloured magenta. The plan sits on a red panel that repeats the same plan at a larger scale in white lines. | "A detailed map of buildings and street names of the Kowloon Walled City in 1980s" |
+| image, top centre panel | A panel names the Kowloon Walled City Kai Fong Welfare Promotion Association (九龍寨城街坊福利事業促進委員會) in Chinese and English. | "Kowloon Walled City Kai Fong Welfare Promotion Association" |
+| image, top centre panel and north edge, plot 16 | INFERRED: The panel shows a photo of a signboard: 城砦福利會, with the address 榮發樓 十六號 on 東頭村道. A line goes from the panel to plot 16 on the north edge, which the plan labels (城砦福利會) and 榮發樓. Thus the association's office was in 榮發樓, 16 Tung Tau Tsuen Road (東頭村道). INFERRED: the small characters 東頭村道 and 十六號 are blurred; other repo sources name 16 Tung Tau Tsuen Road 'Wing Fat House'. | "城砦福利會 … 東頭村道 榮發樓 十六號" (城砦福利會 … 榮發樓, No. 16, Tung Tau Tsuen Road) |
+| image, bottom left panel | A panel says that the Lung Chun Free School Building (義學大樓) stands on the site of the original Longjin Free School (龍津義學). A line goes to a long block, shaded green, on the west side of the large central block. | "The Lung Chun Free School Building was built above the original Longjin Free School" |
+| image, right panel | A panel on Kwong Ming Street (光明街) says that the street was the darkest side of the City. Its name, 'bright and clear', came from the lights late at night, when addicts gathered there to take drugs. | "the street was brightly lit late at night as addicts congregated to consume drugs." |
+| image, right panel | The same panel says that later the drug factory moved out of the City and many factories took its place. Green spots on the plan mark some of the factory sites. | "Green spots on the map indicate some of the sites." |
+| image, east third | INFERRED: I count about 39 green spots. All are in the east part of the City, along Kwong Ming Street and between it and Lung Shing Road (龍城路). INFERRED: the count is from a colour mask of the photo. | "Green spots on the map indicate some of the sites." |
+| image, centre | The large central block (the Yamen site) is labelled 青年中心 (youth centre) at its north end and 老人中心 (old people's centre) inside. The plan draws steps on its south side, by number 28. | "青年中心" (youth centre) |
+| image, north centre-right | The plan labels the Tin Hau Temple (天后廟) in the north part, on the east side of Lo Yan Street (老人街). | "天后廟" (Tin Hau Temple) |
+| image, lane labels | The plan names these streets: Lo Yan Street (老人街), Kwong Ming Street (光明街), Tai Chang Street (大井街), Sz Kung Street (社公街), Sai Shing Road (西城路) on the west edge and Lung Chun Road (龍津道) on the south edge. | "龍 津 道" (Lung Chun Road) |
+| image, lane labels | INFERRED: The plan also names lanes: 西城七巷 and 大井七巷 in the north-west, 西城三巷 and 西城二巷 in the west, 龍津二巷 in the south-east, and 龍津后街 in the south. INFERRED: 西城三巷, 西城二巷 and 龍津后街 are hard to read in the photo. | "大 井 七 巷" (大井七巷 (a lane name; the plan gives no English)) |
+| image, outer edges | The plan gives the house numbers of the outer roads. On Lung Chun Road the numbers run from 160 at the west end down to about 72 at the east end. On Tung Tau Tsuen Road they run from 40 at the west end down to the east. On Lung Shing Road they run from 69 at the north end down to the south. | "160 … 156 154 … 152-150 … 146-140" |
+| image, south-east, by numbers 17 and 5B | INFERRED: Two small boxes marked 'Lat' stand by Lung Chun Second Lane (龍津二巷) in the south-east. INFERRED: 'Lat' means latrine. | "Lat" |
+| image, south-west, Tai Chang Street | INFERRED: A red X and a dashed red arc mark the corner of Tai Chang Street and Sz Kung Street, by 興發一期 and 興發二期. A few dark-blue dots (about seven) and two light-blue dots stand near it and in the south-west. The photo shows no key for them. INFERRED: the X can mark the old well that gave Tai Chang (大井, 'big well') Street its name. | "大 井 街" (Tai Chang Street) |
+| image, whole | Thin red lines with round dots run from the outer roads and the lanes into many plots, and small pink triangles stand along the edges and the lanes. The photo shows no key for them. | "A detailed map of buildings and street names of the Kowloon Walled City in 1980s" |
+| image, north-east | The only English on the base plan is 'Tung Tsing Road Sitting Out Area', outside the City line at the north-east corner. | "Tung Tsing Road Sitting Out Area" |
+| image, plot labels | INFERRED: The plan gives the names of many buildings. Readings that I am fairly sure of: 東興樓 (31E-31B, north edge), 長安樓, 香發樓, 盛興二期, 盛興三期, 盛興四期, 文興樓 (22-25A), 龍光樓 (13-12), 龍鳳樓 (6A), 天成樓, 富興樓, 如意樓 (58), 吉祥樓 (57), 和興樓, 萬安樓, 萬成樓, 新興樓, 歡樂樓, 萬興樓 (15-18), 光明樓, 樹記樓 (6-8), 桂成樓, 萬好樓 (31-29), 明光樓 (34-32), 洋興樓 (146-140), 西合樓 (152-150), 大興樓, 美興樓, 金益樓, 萬里樓 (43-41), 居安樓 (78), 松柏 (80-ish), 東發 (5B), 東正. INFERRED: hand lettering in a phone photo; compare with data/address_anchors.json before use. | "東興樓" |
+
+- **Leads:**
+  - The display plan in Kowloon Walled City Park itself: its maker, date and key (the red lines, triangles, blue dots and the red X). The LCSD exhibition guide or the park staff can say. The README lead asks to check City of Darkness Revisited for its origin.
 ### repo-audit-4: A metal model of Kowloon Walled City, Hong Kong (Alamy 49828257); A scale model of the old Kowloon Walled City before it was demolised in 1994, Hong Kong (Alamy 53451363)
 
-- **Creator:** ColsTravel (49828257) and VisualHongKong (53451363), contributors to Alamy; the model itself is by an unknown maker
-- **Date:** 2010-02-06
-- **Kind:** photo
-- **Class:** depiction (Stock photos of a scale model of the City made after the clearance, a sculpture and not a record of the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © the contributors (Alamy stock licence)
-- **Link:** https://www.alamy.com/stock-photo-49828257.html
-- **Other links:** https://www.alamy.com/stock-photo-53451363.html
-- **Proof that it exists:** A metal model of Kowloon Walled City, Hong Kong Stock Photo - Alamy
-- **What it gives (finder's note, not checked):** The heights and roof shapes of the buildings as the 1:200 model in the park shows them. John made it the main source for the storeys that no photo of the City shows (docs/structure.md, 2026-11-03).
-- **Notes:** data/structure_fixes.json names Alamy 34 times and the bronze model 97 times; docs/structure.md lists it in the table of inputs. Screenshots are on John's Mac only, not in git, and no folder holds the citation. 49828257 was taken 6 Feb 2010; 53451363 was taken 27 Jan 2013. Alamy calls the model 'metal' and 'scale model', not 'bronze', and does not give its maker or date. Memory rule: shapes only, and ask John before opening new photos of the model.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** ColsTravel (Alamy contributor), 'A metal model of Kowloon Walled City, Hong Kong', Alamy stock photo CW1TCH (49828257), taken 6 February 2010, https://www.alamy.com/stock-photo-49828257.html; VisualHongKong (Alamy contributor), 'A scale model of the old Kowloon Walled City before it was demolised in 1994, Hong Kong', Alamy stock photo D2XWN7 (53451363), taken 27 January 2013, https://www.alamy.com/stock-photo-53451363.html
+- **Class:** depiction (Stock photos of 2010 and 2013 of a model of the City that was made after the clearance. The model is a later reconstruction by an unknown maker. The tree secondary is correct.)
+- **Date of the record:** 2010-02-06 (49828257); 2013-01-27 (53451363)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Alamy page 49828257 | Alamy 49828257 (image ID CW1TCH) is titled 'A metal model of Kowloon Walled City, Hong Kong'. The contributor is ColsTravel; the photo was taken on 6 February 2010; it is 4,088 x 2,704 px. The page gives no caption and no rights class. | "A metal model of Kowloon Walled City, Hong Kong" |
+| Alamy page 53451363 | Alamy 53451363 (image ID D2XWN7) is titled 'A scale model of the old Kowloon Walled City before it was demolised in 1994'. The contributor is VisualHongKong; the photo was taken on 27 January 2013; it is 5,500 x 3,671 px. It is for editorial use only. | "A scale model of the old Kowloon Walled City before it was demolised in 1994, Hong Kong" |
+| both pages | Neither page gives the maker, the date, the material or the scale of the model. The words 'bronze' and '1:200' in the repo do not come from these pages. | "Captions are provided by our contributors." |
+| John's screenshot shot1 of 53451363 (top view) | The top view of 53451363 (John's shot1) shows the Yamen compound as a low, open, sunken court in the middle of the model. In it stand a square building round an inner court, two long low blocks to its south and one long low block on its east side. Tall blocks close the court on all sides. | "A scale model of the old Kowloon Walled City before it was demolised in 1994, Hong Kong" |
+| John's screenshot shot2 of 53451363 (NE corner) | The view of the north-east corner (John's shot2) shows the road names cut into the base of the model: 東頭村道 and 'TUN…' (Tung Tau Tsuen Road) along one side, and '…SING ROAD' (Tung Tsing Road, 東正道) along the other side. | "東頭村道" |
+| John's screenshot shot2 of 53451363 (NE corner) | In shot2 the corner block at Tung Tau Tsuen Road and Tung Tsing Road has a rounded corner. Grilles cover the windows on all its floors. A row of low huts with ridged roofs stands outside the tall blocks along the Tung Tsing Road side. One thin tower stands far above the rest behind them. | "A scale model of the old Kowloon Walled City before it was demolised in 1994, Hong Kong" |
+
+- **Leads:**
+  - The maker, date and scale of the model in the park (the repo says 'bronze' and '1:200' with no source on these pages). The LCSD page 'A City of Thousand Faces' or the park staff can say.
 ### missions-6: A Research on Lung Tsun Stone Bridge and its surrounding area 「龍津橋及其鄰近區域」歷史研究, Final Report
 
-- **Creator:** Chung Po Yin and Ko Tim Keung (高添強), for the Antiquities and Monuments Office
-- **Date:** 2012-12
-- **Kind:** document
-- **Class:** secondary (A later history study written from older sources.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HKSAR Government (AMO)
-- **Link:** https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf
-- **Other links:** https://web.archive.org/web/20220704192938/https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf
-- **Proof that it exists:** Cover text: "A Research on Lung Tsun Stone Bridge and its surrounding area 「龍津橋及其鄰近區域」歷史研究 Final Report (December 2012) Submitted to the AMO, HKSAR, by Chung Po Yin & Ko Tim Keung".
-- **What it gives (finder's note, not checked):** Appendix 2: the Lung Tsun Free School (龍津義學) of 1847, burnt in a fire in the 1950s and rebuilt in the 1970s by developers as the 「義學大樓」; the Anglican 天國救道堂, the almshouse 廣蔭院 and the 「天國學校」 from 1906. Appendix 1: a chronology of the City, 1847-2009 (with 14 Jan 1987).
-- **Notes:** Read with pdftotext from the PDF (8.3 MB) on 2026-11-16. For the free-school facts it cites 九龍城區議會《追憶龍城蛻變》(2011), pp. 41 and 78: a lead for the 'Free School' building of the structure. Most of the report is about the period before 1900.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Chung Po Yin and Ko Tim Keung (高添強), 'A Research on Lung Tsun Stone Bridge and its surrounding area 「龍津橋及其鄰近區域」歷史研究, Final Report (December 2012)', submitted to the Antiquities and Monuments Office (AMO), HKSAR, 80 pp., https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf
+- **Class:** secondary (A historians' report of 2012 that compiles books and records. It quotes some records of the time in translation (the Lockhart report of 1898). The tree secondary is correct. The cover gives the English names only ('Chung Po Yin & Ko Tim Keung'); the photo captions credit 高添強.)
+- **Date of the record:** 2012-12 (Final Report, December 2012)
+- **Files:**
+  - `missions-6-research_ltsb_surrounding_final-43c6e13c.pdf` (in `local/`, not in git): The whole report, 80 pages, 8.3 MB (Chinese, with an English abstract); https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf; 8665651 bytes; SHA-256 `429d0470ab2409be65b4a3b6ac3bfc2d5885970dda1ca83d92195213c7b919e1`; licence: © HKSAR Government (AMO); the PDF states no licence (https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf)
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../primary-sources/park-and-heritage-2006-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 13 (section 3.2) | Before the lease of the New Territories in 1898, the City had no trade and no shops inside it. All trade was in Kowloon Street (九龍街) outside the walls. | "租借新界(1898)以前，寨城內並沒有任何商業活動及店舖" (Before the lease of the New Territories (1898), there was no commercial activity and no shop inside the walled city.) |
+| p. 24 | When the City was finished in 1847, a garrison of 150 soldiers held it. Thirty-two cannon stood on the east, south and west walls. The north wall had no cannon because it stood against the hill. | "率兵一百五十名駐防城內。城東、南、西三面牆上置炮三十二門" (led 150 soldiers garrisoned in the city. Thirty-two cannon were placed on the east, south and west walls.) |
+| pp. 31-32 (the quote is on p. 32, with note 23) | In the late 19th century, gambling houses moved into the City when the colony stopped gambling. In summer 1892, free boats carried about 728 gamblers in one day from Victoria to Kowloon City (a police report of 1893). | "九龍城賭博之免費船隻運載乘客數量在分別約為 2,616 和 728 人次" (the free boats for gambling carried about 2,616 and 728 passengers [to Sham Shui Po and to Kowloon City]) |
+| p. 36 | On 16 May 1899 British troops entered the City with no resistance and drove out the Chinese officials. After that no Chinese officials or soldiers held the yamen, and the City became a place of dwellings. | "自此，寨城內的衙署便沒有中國官兵駐守，城內也成為民居" (From then on no Chinese officials or soldiers were stationed in the yamen, and the city became dwellings.) |
+| p. 42 | From 1875 the Lung Tsun Stone Bridge (龍津石橋) was the necessary way from the east gate of the City to the sea. | "是九龍寨城東門通往海面的必經之路" (it was the necessary route from the east gate of the Kowloon Walled City to the sea) |
+| p. 54 (Appendix 1, 1940) | In 1940 the Hong Kong Government cleared the houses of the City on grounds of hygiene, because the walls had fallen. Only the almshouse 廣蔭院 and the Lung Tsun Free School (龍津義學) were left standing. | "當時只有廣蔭院和龍津義學沒有被清拆" (At that time only the 廣蔭院 and the Lung Tsun Free School were not demolished.) |
+| p. 54 (Appendix 1, 1943) | In 1943 the stone walls of the City were taken down and used as fill for the extension of the airport. | "拆除九龍寨城石牆作填海擴建機場" (The stone walls of the Kowloon Walled City were demolished for reclamation to extend the airport.) |
+| p. 54 (Appendix 1, 1945) | After the Japanese surrender in 1945, people who slept rough began to settle in the City. | "日本投降後，露宿者開始在九龍寨城築聚居" (After Japan surrendered, street sleepers began to build and settle in the Kowloon Walled City.) |
+| p. 54 (Appendix 1, 1947) | At the end of 1947 the 寶安縣九龍城居民福利會 (a residents' welfare association backed by the 寶安縣 county government) resisted the Hong Kong Government when it came in to clear the City. The affair led to an anti-British protest in Guangzhou, and the British consulate at Shamian (沙面) was burnt. | 「寶安縣九龍城居民福利會」成功抵抗香港政府入城整頓 (the 「寶安縣九龍城居民福利會」 successfully resisted the Hong Kong government's entry to the city to clear it) |
+| p. 54 (Appendix 1, 1948-01-07) | On 7 January 1948 the head of 寶安縣, 王啟俊, visited the City with the chairman of the county council to assert sovereignty. The report says that the Hong Kong police and government had no power to enter, and that the City became a slum of vice, called 'three no-controls' (三不管). | "九龍寨城頓成罪惡溫床的貧民區，更有以「三不管」形容當地的管轄問題" (the Kowloon Walled City at once became a slum and hotbed of crime, and its jurisdiction was described as 'three no-controls') |
+| p. 54 (Appendix 1, 1949) | From 1949 many refugees from South China settled in the City. The report lists brothels, gambling stalls, opium dens, heroin dens and dog-meat eating houses as everywhere in the City. | "色情場所、賭檔、鴉片煙館、海洛英館、狗肉食堂等四處林立" (brothels, gambling stalls, opium dens, heroin dens, dog-meat eating houses and so on stood everywhere) |
+| p. 55 (Appendix 1, 1970s) | In the 1970s developers began to build in the City. Thus the Lung Tsun Free School was rebuilt as the Free School Building (「義學大樓」). | "開始有地產商在城寨發展，龍津義學因而被改建成「義學大樓」" (property developers began to develop in the City, and thus the Lung Tsun Free School was rebuilt as the 'Free School Building') |
+| p. 55 (Appendix 1, late 1970s) | From the late 1970s the police actively stopped unlawful activities in the City. | "警方積極干預九龍寨城內的不法活動" (The police actively intervened in the unlawful activities in the Kowloon Walled City.) |
+| p. 55 (Appendix 1, 1987-01-14) | On 14 January 1987 the Hong Kong and Chinese governments agreed to clear the City and to build a park on the site. The park was to keep some of the original buildings and features of the City. | "香港政府與中國政府達成清拆九龍城寨的協議，並於原址興建公園" (The Hong Kong government and the Chinese government reached an agreement to clear the Kowloon Walled City and to build a park on the site.) |
+| p. 55 (Appendix 1, 1989) | The chronology gives 1989 as the second phase of the moving out of the residents. | "九龍寨城第二期調遷" (Kowloon Walled City, second phase of relocation) |
+| p. 55 (Appendix 1, 1993 to 1995-08) | The City was completely demolished in 1993. The clearance works were finished in April 1994, and the park on the site was finished in August 1995. | "1994 年 4 月 九龍寨城清拆工程完成" (April 1994: the clearance works of the Kowloon Walled City were completed.) |
+| p. 55 (Appendix 1, 1995-12-22) | The Governor Chris Patten (彭定康) opened the Kowloon Walled City Park on 22 December 1995. | "九龍寨城公園由港督彭定康主持開幕儀式" (The Governor 彭定康 officiated at the opening ceremony of the Kowloon Walled City Park.) |
+| p. 55 (Appendix 1, 2009-04-19) | On 19 April 2009 the park added the exhibition A City of Thousand Faces (千面小城; the English name is the LCSD's, cited in popular-6), with one outdoor area and six halls in the Yamen. | "公園新增了千面小城展覽，設有一個戶外展區和六個設於衙門內的展覽館" (The park added the 'City of Thousand Faces' exhibition, with one outdoor display area and six exhibition halls in the Yamen.) |
+| p. 55 (Appendix 1) | The chronology has editorial errors: the rows for 1996 and 1997 give the same text, and the closure of Kai Tak in 1998 is given twice. Thus check its later dates against other sources. | "1996 年 九龍寨城公園正式開放" (1996: Kowloon Walled City Park formally opened.) |
+| p. 56 (Appendix 2, no. 1, citing 《追憶龍城蛻變》 2011, p. 41) | After the officials left, the Lung Tsun Free School was used as the office of the Land Court from 1900 to 1905. | "在 1900 至 1905 年被用作土地法院辦公室" (from 1900 to 1905 it was used as the office of the land court) |
+| p. 56 (Appendix 2, no. 1) | After the founding of the Republic of China (1912), the old site of the Free School was rebuilt as the 九龍城公立高初兩等義學, a public free school with higher and lower primary classes. | "舊址又改建為九龍城公立高初兩等義學" (the old site was again rebuilt as the 九龍城公立高初兩等義學) |
+| p. 56 (Appendix 2, no. 1, notes 48-49) | A big fire in the City in the 1950s burnt the Lung Tsun Free School. In the 1970s it was rebuilt as the Free School Building (「義學大樓」). The report cites 《追憶龍城蛻變》 (2011), pp. 41 and 78. | "直到五十年，代寨城大火，龍津義學被燒毁" (Then in the [nineteen-]fifties a big fire in the walled city burnt the Lung Tsun Free School.) |
+| p. 57 (Appendix 2, no. 4, citing 《追憶龍城蛻變》 2011, p. 41) | In 1906 the church 聖三一堂 got leave to use the 三聖廟 temple beside the yamen as a preaching hall, named 天國救道堂. The church also asked to use two former yamen buildings as an almshouse (廣蔭院) for poor old people and as a free school (天國學校). | "聖三一堂獲批准以衙門旁邊的三聖廟作為佈道所，名為「天國救道堂」" (聖三一堂 was permitted to use the 三聖廟 beside the yamen as a preaching station, named 「天國救道堂」) |
+| p. 57 (Appendix 2, no. 4) | The free school 天國學校 gave free education to the people nearby and ran until 1936. | 「天國學校」則為附近居民提供免費教育，並一直營運至 1936 年 (the 「天國學校」 gave free education to nearby residents and ran until 1936) |
+| p. 56 (Appendix 2, no. 3); English name from the abstract, p. 4 | Lok Sin Tong (樂善堂), the charity of Kowloon City, was formally set up in 1880. By the account of its 1939 journal, in 1880 Qing officials reorganised it and rebuilt it as an old-style ancestral hall (祠堂) on its original site at 32 打鐵街, Kowloon City. After the war it acted as the centre of local affairs (鄉事中心) of the Kowloon City district. The English abstract (p. 4) says that it was founded in the early 1880s. | 「樂善堂」在 1880 年正式成立 … 於九龍城打鐵街三十二號原址重建古式祠堂形式之樂善堂，戰後樂善堂如九龍城區的鄉事中心 (Lok Sin Tong was formally set up in 1880 … [they] rebuilt the Lok Sin Tong in the form of an old-style ancestral hall on its original site at 32 打鐵街, Kowloon City; after the war Lok Sin Tong was like the centre of local affairs of the Kowloon City district) |
+| p. 57 (Appendix 2, no. 7) | 陳祖澤, a merchant of Kowloon City, lived at 30 長安街 from 1929 and kept a department store, 陳更煥百貨商行. He was a director (總理) of Lok Sin Tong for almost 80 years. | "1929 年搬入九龍城長安街 30 號" (in 1929 he moved to 30 長安街, Kowloon City) |
+| p. 4 (Abstract) | The stone bridge was built in 1873-1875, extended in timber in 1892 and in concrete in 1910, renamed Kowloon City Pier in the early 1920s, and buried in 1942 when the Japanese extended Kai Tak. | "In 1942, the southern section of the Bridge and the Pier were buried during the extension of Kai Tak Airport" |
+
+- **Leads:**
+  - 九龍城區議會《追憶龍城蛻變》(九龍城區議會第四屆區節宣傳活動小組, 2011), pp. 41 and 78: the source of the Free School facts (1900-05 Land Court, 1950s fire, 1970s 義學大樓) and of the 1906 church, almshouse and school.
+  - 趙雨樂、鍾寶賢《龍城樂善：早期九龍城與樂善堂研究》(衛奕信勳爵文物信託, 2003), pp. 23, 32, 40, 47, 53, 62, 84: early Kowloon City and Lok Sin Tong.
+  - 劉潤和等《九龍城區風物志》(九龍城區議會, 2005), p. 28.
+  - Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (Oct 1898): the English original of the description of the City (700 x 400 ft, 744 people), quoted on pp. 26-27 in translation.
+  - Phillip Bruce, Second to None: The Story of the Hong Kong Volunteers (Oxford University Press, 1991), pp. 89-91: the occupation of the City on 16 May 1899.
+  - 'Report of the Director of Public Works for the year 1936', Hong Kong Administrative Reports 1936, Appendix Q, p. 54 (repair of Kowloon City Pier by Lam Woo & Co., $5,487.60).
+  - Photos credited to 高添強 (Ko Tim Keung) in the report: the yamen in the 1910s (p. 25), the South Gate in the 1920s (p. 27), the City in the late 19th century (p. 27).
 ### commons-9: The Model Of Kowloon Walled City.jpg
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -294,49 +345,72 @@ Not read yet.
   - The route of the Japanese survey team of 『大図解 九龍城』 through the City, to compare with the polished band of the bronze model (see daizukai-kowloon-1997/).
 ### top-hkgov-18: Lung Tsun Stone Bridge Remnants (龍津石橋): Full Excavation Report, September 2013
 
-- **Creator:** Antiquities and Monuments Office (古物古蹟辦事處) (publisher of the PDF); author not seen
-- **Date:** 2013-09
-- **Kind:** document
-- **Class:** secondary (A later excavation report on the pier bridge that led to the City; secondary for the City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Hong Kong Government copyright
-- **Link:** https://www.amo.gov.hk/filemanager/amo/common/form/Lung_Tsun_Stone_Bridge_Remnants.pdf
-- **Other links:** https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf
-- **What it gives (finder's note, not checked):** The excavation of the 1870s stone bridge at Kowloon City, the landing road to the City. It can give old maps and photos of the approach to the City (INFERRED). Content not seen.
-- **Notes:** Title from a search result ('Full Excavation Report September 2013'). WebFetch: 'maxContentLength size of 10485760 exceeded', thus not read. alt_urls: the Heritage Impact Assessment for the Lung Tsun Stone Bridge Preservation Corridor (search result, not opened). The missions file holds a different AMO report on the bridge area (research_ltsb_surrounding_final.pdf). The AMO list of Sites of Archaeological Interest (Nov 2012) names 'Kowloon Walled City Site 九龍寨城遺址' and 'Lung Tsun Stone Bridge 龍津石橋', both in Kowloon City (九龍城).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** AECOM Asia Co. Ltd. for the Kowloon Development Office, Civil Engineering and Development Department, 'Full Excavation for Defining the Preservation Approach of Lung Tsun Stone Bridge Remnants: Full Excavation Report' (Agreement No. KDO002/2011), final version, 17 September 2013, published by the Antiquities and Monuments Office (古物古蹟辦事處), https://www.amo.gov.hk/filemanager/amo/common/form/Lung_Tsun_Stone_Bridge_Remnants.pdf
+- **Class:** secondary (A consultants' excavation report of 2013. Its history section compiles later books. The tree secondary is correct. The author is AECOM (prepared by Steven Ng, approved by Josh Lam), not the AMO.)
+- **Date of the record:** 2013-09-17
+- **Files:**
+  - not downloaded (skipped: application/pdf, 54146351 bytes): The full excavation report, 304 pages with figures and photos; over 10 MB (exact size not seen, check that it is under 30 MB); https://www.amo.gov.hk/filemanager/amo/common/form/Lung_Tsun_Stone_Bridge_Remnants.pdf; licence: HKSAR Government / AECOM; no licence stated, and the report's disclaimer says it 'may not be disclosed to, quoted to or relied upon by any person other than CEDD without our prior written consent' (https://www.amo.gov.hk/filemanager/amo/common/form/Lung_Tsun_Stone_Bridge_Remnants.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| PDF p. 13 (report p. 8), para. 4.2.14 | The Chinese names are from missions-6. The walled city lay north-west of the Kowloon Market Town (九龍街). It was built in 1847 and finished in 1848, with a garrison, a temple and barracks inside. The office of the Kowloon Deputy Magistrate (九龍司巡檢) and the command centre of the Dapeng Xie (大鵬協) were set up in it in 1848. | "It was built in 1847 and completed in 1848." |
+| PDF p. 13 (report p. 8), para. 4.2.15 | The walls of the City were taken down in 1943, and the stone was used as fill for the extension of the airfield. | "The walls of the Kowloon Walled City were demolished in 1943" |
+| PDF p. 13, para. 4.2.16; PDF p. 21, para. 6.2.1 | The Lung Tsun Pavilion (龍津亭) at the land end of the bridge was where local elders greeted new officials going to the Yamen of the City. The excavation found it 8 m by 7 m. | "The Pavilion was used by the local elders to greet new officials to the Yamen in Kowloon Walled City" |
+| PDF p. 13 (report p. 8), para. 4.2.12 | The donors on the Hau Wong Temple (侯王廟) restoration inscription of 1822 include about 90 shops, four ferry boats, 29 fishing boats and 31 stone quarries of the Kowloon market town. | "some 90 shops, along with four ferry-boats, 29 fishing vessels, and 31" |
+| PDF p. 15 (report p. 10), para. 4.2.28 | On the morning of 16 May 1899 British troops landed at the bridge, went through the main street of the Kowloon market and took the City. The Chinese officials and soldiers left the same day. | "Then Chinese government officials, officers, army and navy left the Kowloon Walled City on the same day." |
+| PDF p. 17 (report p. 12), para. 4.3.3 | An archaeological investigation of 1993-1994, after the clearance, found two stone tablets with the words 'South Gate' and 'Kowloon Walled City'. Most finds were blue-and-white porcelain sherds, with storage wares and glazed wares. | "Blue and white porcelain sherds were the majority of the archaeological findings." |
+| PDF p. 17 (report p. 12), para. 4.3.3 | The site of the South Gate became a statutory archaeological site in 1996 and was made part of the park. | "The site of South Gate was later declared as a statutory archaeological site in 1996" |
+| PDF p. 31, para. 6.3.10 | The granite of the land end of the bridge is laid like the walls of the City: dressed blocks set across, between five layers of dressed blocks laid lengthwise. | "The granite slabs arrangement strike resemblance to the walls of the Kowloon Walled City." |
+| Appendix C, PDF p. 197, Figure 4.9 | Figure 4.9 in Appendix C, a view of 1925, labels the Kowloon Walled City, the Kowloon Market Town and the Lung Tsun Stone Bridge. | "Figure 4.9 Kowloon Market and Lung Tsun Stone Bridge, 1925" |
+
+- **Leads:**
+  - AMO (古物古蹟辦事處), excavation brief report on the site of the Kowloon Walled City (title begins 香港九龍寨城; the rest is in a broken font), 《考古》 2007, no. 6, pp. 30-35, cited in note 25 (PDF p. 17). INFERRED: the journal is 考古 (Kaogu), from the broken-font text.
+  - Kowloon City Survey, Sheet No. 5, 1:1,000, 1903 (Figure 4.5/4.6); Public Works Department 1932 1:2,400 Map of Hong Kong: Kowloon City Sheet (Figure 4.12, Lands Department collection).
+  - Hase, P., 1999, 'Beside the Yamen: Nga Tsin Wai Village', Journal of the Hong Kong Branch of the Royal Asiatic Society, vol. 39.
+  - Heritage Impact Assessment for the Lung Tsun Stone Bridge Preservation Corridor, https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf (over 10 MB, not read).
 ### top-hkgov-14: Kowloon Planning Area No. 10, Draft Ma Tau Kok Outline Zoning Plan No. S/K10/23A: Notes and Explanatory Statement (Annex II of TPB Paper No. 10491)
 
-- **Creator:** Town Planning Board, Hong Kong
-- **Date:** 2018-11
-- **Kind:** document
-- **Class:** secondary (A later planning document; it tells the history of the plans and lists the heritage of the site.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Hong Kong Government copyright
-- **Link:** https://www.tpb.gov.hk/en/papers/TPB/K/S_K10_23A/K10_23A_Notes%20ES_Appendix.pdf
-- **Proof that it exists:** 'Annex II of TPB Paper No. 10491 / KOWLOON PLANNING AREA NO. 10 / DRAFT MA TAU KOK OUTLINE ZONING PLAN NO. S/K10/23A'
-- **What it gives (finder's note, not checked):** The dates and numbers of the statutory plans for the area: LK 10/18/4 (1957), LK 8/21 (1973), S/K10/3 (18 Dec 1987), S/K10/6 (4 Jul 1989), referral for amendment (6 Jul 1993). Section 11.1 lists 'Kowloon Walled City (Site of Archaeological Interest)', the South Gate remnants and the former Yamen (declared monuments); 8.7.2 lists Kowloon Walled City Park as open space.
-- **Notes:** 45-page PDF, PDF metadata dated 2018-11-01. Read with pdftotext (Explanatory Statement section 2, lines quoted in top-hkgov-13). Useful as the key to find the 1987-1989 plans.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Town Planning Board, Hong Kong, 'Draft Ma Tau Kok Outline Zoning Plan No. S/K10/23A: Notes and Explanatory Statement' (Annex II of TPB Paper No. 10491), November 2018, 45 pp., https://www.tpb.gov.hk/en/papers/TPB/K/S_K10_23A/K10_23A_Notes%20ES_Appendix.pdf
+- **Class:** secondary (An official planning document of 2018. It records the plan history of the area (1957-1993) as background, written later than those events. The tree secondary is correct.)
+- **Date of the record:** 2018-11 (PDF metadata 2018-11-01)
+- **Files:**
+  - `top-hkgov-14-K10_23A_Notes_ES_Appendix-b303879f.pdf` (in `local/`, not in git): Notes and Explanatory Statement of draft OZP S/K10/23A, 45 pages, 167 KB; https://www.tpb.gov.hk/en/papers/TPB/K/S_K10_23A/K10_23A_Notes%20ES_Appendix.pdf; 171180 bytes; SHA-256 `7172b8b99fe5a81498bd16cfc82e6e00c9f4c8cd6a99ce7be97fd5b84b719fc1`; licence: HKSAR Government (Town Planning Board); the PDF states no licence (https://www.tpb.gov.hk/en/papers/TPB/K/S_K10_23A/K10_23A_Notes%20ES_Appendix.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Explanatory Statement p. 1, para. 2.1 | The first statutory plan of the Ma Tau Kok area, the draft Ma Tau Kok Outline Development Plan No. LK 10/18/4, was gazetted on 9 April 1957. | "On 9 April 1957, the draft Ma Tau Kok Outline Development Plan No. LK 10/18/4" |
+| Explanatory Statement p. 1, para. 2.1 | The first statutory plan of the Kowloon City area, the draft Wang Tau Hom and Tung Tau Outline Zoning Plan No. LK 8/21, was gazetted on 27 April 1973. | "being the first statutory plan covering the Kowloon City area, was gazetted" |
+| Explanatory Statement p. 1, para. 2.1 | On 18 December 1987, eleven months after the decision to clear the City, the draft Ma Tau Kok OZP No. S/K10/3 was gazetted. It was the first statutory plan of both Ma Tau Kok and Kowloon City. | "On 18 December 1987, the draft Ma Tau Kok OZP No. S/K10/3" |
+| Explanatory Statement p. 1, para. 2.2 | On 4 July 1989 the Governor in Council approved the draft plan, renumbered S/K10/6. On 6 July 1993 it went back to the Board for amendment. | "On 6 July 1993, the then G in C referred the approved OZP No. S/K10/6 to the Board" |
+| Explanatory Statement p. 12, para. 8.7.2 | The plan lists Kowloon Walled City Park as an existing open space (zone 'O'). | "Existing open spaces include the Kowloon Walled City Park, Carpenter Road Park" |
+| Explanatory Statement p. 14, para. 11.1 (a)-(c) | The heritage list of the plan gives Kowloon Walled City as a Site of Archaeological Interest, and the remnants of the South Gate and the former Yamen Building as declared monuments. | "Former Yamen Building of Kowloon Walled City (Declared Monument)" |
+| Explanatory Statement p. 14, para. 11.1 (h)-(i) | The same list names graded buildings near the City: Nos. 1 and 3 Hau Wong Road (Grade 3) and the Tin Hau Temple (天后廟) at 49 Ha Heung Road (Grade 3). | "Nos. 1 & 3 Hau Wong Road (Grade 3)" |
+
+- **Leads:**
+  - Draft Ma Tau Kok Outline Zoning Plan No. S/K10/3, gazetted 18 December 1987: the first statutory plan to cover the City site, with its zoning after the clearance decision.
+  - Approved Ma Tau Kok OZP No. S/K10/6 (4 July 1989), and the draft Wang Tau Hom and Tung Tau OZP No. LK 8/21 (27 April 1973).
 ### popular-17: The Kowloon Walled City Comes to Life in A Surprise Action Hit
 
-- **Creator:** Elizabeth Kerr, Zolima CityMag
-- **Date:** 2024-05-14
-- **Kind:** article
-- **Class:** secondary (A later review and interview about a fiction film's reconstruction of the City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © Zolima CityMag
-- **Link:** https://zolimacitymag.com/kowloon-twilight-of-the-warriors-walled-in-action-movie/
-- **Proof that it exists:** Title 'The Kowloon Walled City Comes to Life in A Surprise Action Hit' (14 May 2024).
-- **What it gives (finder's note, not checked):** How 'Twilight of the Warriors: Walled In' (2024) built its City: director Cheang Pou-soi says about 80 percent of what is on screen is a set; the sets were on wheels and rebuilt nightly as rooftops or corridors; production designer Mak Kwok-keung drew a floor plan from research; sets were built in Yuen Long and Sai Kung; CGI only in wide shots.
-- **Notes:** Background for the film-set exhibition (popular-8). The film's world is fiction: use nothing from it as fact. The article names Yu Yi's novel and Andy Seto's manhua as the film's basis.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Elizabeth Kerr, 'The Kowloon Walled City Comes to Life in A Surprise Action Hit', Zolima CityMag, 14 May 2024, https://zolimacitymag.com/kowloon-twilight-of-the-warriors-walled-in-action-movie/
+- **Class:** secondary (A film feature of 2024 about a fiction film. The director did not say that he saw the City. Use it only as the background of the film-set exhibition. The tree secondary is correct.)
+- **Date of the record:** 2024-05-14
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. on production | The director Cheang Pou-soi (鄭保瑞) says that about 80 percent of what is on screen in Twilight of the Warriors: Walled In is a set. | "I think 80 percent of what's on screen is a set," |
+| para. on production | The sets were built in Yuen Long and Sai Kung as modular units on wheels ('Lego set'). One day a unit was a rooftop, the next day a corridor. | "One day it was a rooftop, one day it was a corridor" |
+| para. on production | Cheang says that the crew used CGI only in the wide shots. | "We only used CGI in the wide shots because I just couldn't do those." |
+| para. on production | The production designer was Mak Kwok-keung. Cheang calls the plan of the sets a floor plan from research that he did with Mak. | "creating what Cheang calls a floorplan from research he did with Mak" |
+| para. on the source | The film is based on the novel Kowloon Walled City by Yu Yi (余兒) and on the manhua City of Darkness by Andy Seto (司徒劍僑). Its budget was HK$300 million. (The Chinese names are from the repo's other sources.) | "Based on Yu Yi's novel Kowloon Walled City and the manhua that followed, City of Darkness by Andy Seto … The ambitious HK$300 million action-drama opened on May 1" |
+| para. on the setting | INFERRED: The film is set in 1984. The article says that the government then announced the demolition. INFERRED: this is a simplification, because the other sources of this chunk give 14 January 1987 for the announcement. | "the Hong Kong government announced that the Walled City would be demolished." |
+| interview | Cheang says that the City was so small that a person was able to walk through its corridors and touch the walls. | "The Walled City was so tiny you could walk through the corridors and touch the walls." |
+| interview | Cheang says that films show the drugs and the gangsters of the City, but that it also had a community that no one talks about. | "There was a community no one talks about." |
+
+- **Leads:**
+  - Yu Yi (余兒), novel Kowloon Walled City, and Andy Seto (司徒劍僑), manhua City of Darkness (九龍城寨): the fiction on which the film and the 2025 exhibition rest (depictions only).
 ### top-popular-20: 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (席上文件第 7 號: 香港旅遊發展局回覆)
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -375,19 +449,17 @@ Not read yet.
   - The old property use certificates (屋契) and sale contracts of the City that paper 9/2025 names: where they are held is not stated.
 ### top-popular-19: HKFP Lens: Hong Kong landmarks and customs showcased through 24 miniature art pieces
 
-- **Creator:** HKFP Lens, Hong Kong Free Press
-- **Date:** 2025-04-18
-- **Kind:** article
-- **Class:** secondary (A photo feature on a 2025 miniature exhibition; the model is a later work of art.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © HKFP
-- **Link:** https://hongkongfp.com/2025/04/18/hkfp-lens-hong-kong-landmarks-and-customs-showcased-through-24-miniature-art-pieces/
-- **Proof that it exists:** The Peak Tower is showcasing 24 miniature art pieces at a new exhibition 'showcasing Hong Kong to the world through exquisite craftsmanship.'
-- **What it gives (finder's note, not checked):** A photo of a 'never-seen-before' miniature of the Walled City at the Peak Tower exhibition (25 Apr to 23 Jun 2025), made by a team of over 100 artisans. No maker, scale or source given.
-- **Notes:** Caption: 'Kowloon Walled City. Photo: The Peak Tower.' A search hit also shows an HKFP Lens feature of 11 Oct 2024 on the 'Voices of the Walls' photo exhibition, which other files hold as an exhibition; not reported again.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** HKFP Lens, 'HKFP Lens: Hong Kong landmarks and customs showcased through 24 miniature art pieces', Hong Kong Free Press, 18 April 2025, https://hongkongfp.com/2025/04/18/hkfp-lens-hong-kong-landmarks-and-customs-showcased-through-24-miniature-art-pieces/
+- **Class:** depiction (A 2025 photo feature on a modern miniature of the City, made by an unnamed team, with no sources. It holds no facts on the real City. The tree secondary is correct.)
+- **Date of the record:** 2025-04-18 (published 2025-04-18T03:30:00Z)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| photo caption 1 | The Peak Tower shows 24 miniature art pieces of Hong Kong. One photo shows a miniature of Kowloon Walled City, credited to The Peak Tower. | "Kowloon Walled City. Photo: The Peak Tower." |
+| para. 3 | The press release calls the Walled City miniature new ('never-seen-before'), with the Kai Tak Sports Park, the Temple Street market, Ngong Ping 360 and the Goldfish market. | "Never-seen-before miniatures include the new Kai Tak Sports Park, Kowloon Walled City" |
+| para. 4 (Peak Tower press release) | A team of more than 100 artisans made the works. The article names no maker, no scale and no source for the Walled City piece. | "These works, created by a team of over 100 artisans" |
+| visitor information | The show ran from 25 April to 23 June 2025, 10 a.m. to 9 p.m., at Shop 101, 1/F, The Peak Tower, free. | "Venue: Shop 101, 1/F, The Peak Tower" |
 ### hkgov-15: Kowloon Walled City: A Cinematic Journey - Movie Set Exhibition (exhibition guide)
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -412,80 +484,103 @@ Not read yet.
 | GIA press release, paras 1-2 | The press release says that the exhibition opened in May 2025, is free, and had its 100,000th visitor on 18 August 2025. The team of the film rebuilt the sets on the site of the City. | "The Exhibition received its 100 000th visitor today (August 18)." |
 ### top-popular-6: Hong Kong's iconic Walled City lives again in new film exhibition
 
-- **Creator:** Marco Lam, The Standard (Hong Kong)
-- **Date:** 2025-05-23
-- **Kind:** article
-- **Class:** secondary (A news feature on the exhibition that quotes no witness.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © The Standard
-- **Link:** https://www.thestandard.com.hk/arts-and-culture/article/303143/Hong-Kongs-iconic-Walled-City-lives-again-in-new-film-exhibition
-- **Proof that it exists:** Hong Kong's iconic Walled City lives again in new film exhibition (Marco Lam, 23 May 2025): a three-year immersive exhibition based on Twilight of the Warriors: Walled In opens free on Saturday 24 May at Kowloon Walled City Park.
-- **What it gives (finder's note, not checked):** Names the organisers (Cultural and Creative Industries Development Agency, Film Production Financing Scheme) and the eight zones. It says an iron archway copies 1980s building gates and some floor tiles came from demolished heritage buildings. No facts on the real City.
-- **Notes:** The opening date of the exhibition is 24 May 2025, for three years.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Marco Lam, 'Hong Kong's iconic Walled City lives again in new film exhibition', The Standard (Hong Kong), 23 May 2025, https://www.thestandard.com.hk/arts-and-culture/article/303143/Hong-Kongs-iconic-Walled-City-lives-again-in-new-film-exhibition
+- **Class:** secondary (A 2025 news feature on a film-set exhibition. No facts on the real City. The tree secondary is correct.)
+- **Date of the record:** 2025-05-23
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 1 | A three-year film-set exhibition opens free to the public on Saturday 24 May 2025. | "will open to the public for free starting Saturday (May 24)" |
+| para. 2 | The Cultural and Creative Industries Development Agency (文創產業發展處) and the Film Production Financing Scheme organised and paid for it. | "Organized and funded by the Cultural and Creative Industries Development Agency and Film Production Financing Scheme" |
+| para. 2 | It has eight zones, among them a dentist's clinic, a bone-setting clinic, a fishball factory and a street market. | "including a dentist's clinic, a bone-setting clinic, a fishball factory, and a bustling street market." |
+| para. on details | An iron archway with the district's name copies the iron gates of Hong Kong buildings of the 1980s. Some floor tiles came from demolished heritage buildings. | "an iron archway bearing the district's name, its design inspired by 1980s Hong Kong building gates" |
+| para. on the rooftop | A rooftop zone has a large screen with day and night scenes of the City and the sound of aircraft overhead. A hand-painted floral archway like those of the Hungry Ghost Festival stands at the entrance. | "complete with sound effects—such as the roar of airplanes flying overhead" |
 ### top-popular-4: 九龍城寨展再升級！電影團隊1:1神還原　編輯帶路直擊8大打卡場景
 
-- **Creator:** 梁嘉欣, HK01 (香港01)
-- **Date:** 2025-05-28
-- **Kind:** article
-- **Class:** secondary (A feature on the 2025 film-set exhibition with no testimony; it quotes no former resident.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © HK01
-- **Link:** https://www.hk01.com/藝文/60242646/九龍城寨展再升級-電影團隊1-1神還原-編輯帶路直擊8大打卡場景
-- **Proof that it exists:** 各位城寨迷注意！繼早前在機場及AIRSIDE舉辦的兩次《九龍城寨之圍城》主題展後，一個規模更宏大、體驗更豐富的「九龍城寨光影之旅」電影場景展，現已正式「空降」九龍城寨原址，亦即是九龍寨城公園衙門內。
-- **What it gives (finder's note, not checked):** Describes the eight sets of the exhibition in the Yamen (store, fishball factory, dentist, barber, 冰室, alley with plastic factory, well and workshops, rooftop with Kai Tak aircraft sound). It states, with no source, that about 150 unlicensed dental clinics worked in the City at its peak and that fishball factories ran day and night in the 1980s.
-- **Notes:** The figures on dentists and fishball factories are the exhibition's text, not checked against primary sources.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 梁嘉欣, 「九龍城寨展再升級！電影團隊1:1神還原　編輯帶路直擊8大打卡場景」, HK01 (香港01), 28 May 2025 18:48 (updated 18:51), https://www.hk01.com/藝文/60242646/九龍城寨展再升級-電影團隊1-1神還原-編輯帶路直擊8大打卡場景
+- **Class:** secondary (A 2025 press feature on a film-set exhibition. Its statements on the real City are background, with no source. The film is fiction. The tree secondary is correct.)
+- **Date of the record:** 2025-05-28
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 1 | The exhibition 九龍城寨光影之旅 is in the Yamen of Kowloon Walled City Park. It follows two earlier exhibitions of the film at the airport and at AIRSIDE. | "現已正式「空降」九龍城寨原址，亦即是九龍寨城公園衙門內" (has now 'landed' on the original site of the City, that is, inside the Yamen of Kowloon Walled City Park) |
+| para. 3 and caption | The film's own crew built eight halls at a scale of 1:1. The exhibition runs for three years. | "以1:1逼真比例打造出八個展覽場館" (built eight exhibition halls at a lifelike 1:1 scale) |
+| section headings | The halls are: a Yu Lan festival flower board at the entrance, a store (士多), a fishball factory (魚蛋工場), a dentist's clinic (牙醫診所), the barber's shop 龍城髮廊, the cafe 七記冰室, a narrow alley with a plastic-moulding factory (啤膠廠), a well and workshops, and a rooftop (城寨光影天台). | 「城寨光影天台」 (the 'rooftop of light and shadow of the walled city') |
+| section 盂蘭節花牌 | The article says that at each Yu Lan festival the residents of the City burned paper clothes in the street to pray for safety. No source is given. | "每逢此節，居民會在街頭焚燒街衣，祈求平安" (at each such festival, residents burned street clothes [paper offerings] in the street to pray for safety) |
+| section 魚蛋工場 | The article says that most fishball factories were unlicensed, ran day and night, and made fishballs from cheap mixed fish. It calls this the underground economy of the City in the 1980s. No source is given. | "大部分魚蛋工場均屬無牌經營、日夜運作，大多以廉價雜魚製成彈牙魚蛋" (most fishball factories were unlicensed and ran day and night, mostly making springy fishballs from cheap mixed fish) |
+| section 牙醫診所 | The article says that at its peak the City had up to 150 unlicensed dental clinics. They were simple, but poor people relied on them, and people from outside the City came for treatment. No source is given. | "全盛時期城寨內無牌牙醫診所多達150間" (at its peak the City had as many as 150 unlicensed dental clinics) |
+| section 牙醫診所 | The article says that the dentist's hall did not appear in the film; the exhibition added it because the clinics were among the best-known places of the City. | "雖未在電影中出現，卻是當年城寨最具標誌性設施之一" (although it did not appear in the film, it was one of the most iconic facilities of the City) |
+| section 窄巷內街 | The article calls the tangled electric wires, like a spider's web, the most typical sight of the City, and says the plastic-moulding hall shows the busy family industry of the time. | "錯綜複雜、如蜘蛛網般電線" (intricate, spider-web-like electric wires) |
+| section 城寨光影天台 | The article says that by day residents dried clothes, cooled off and chatted on the roofs while children ran and played; at night neon lights flashed. It names the roar of Kai Tak aircraft low overhead as a shared memory. | "白天，居民在天台晾衣、納涼、閒談，小孩奔跑玩耍" (by day, residents hung clothes, cooled off and chatted on the rooftop, and children ran and played) |
+| last para. and caption | Entry is free with timed tickets: three sessions each hour, 15 minutes and 30 people each. A photo caption says the exhibition opened on the 24th, although the article is dated 28 May 2025. | "每小時設三節，每節15分鐘，每節30人" (three sessions each hour, 15 minutes per session, 30 people per session) |
 ### top-popular-5: 九龍城寨光影之旅八大打卡場景︰新增魚蛋工場，啤膠廠及沉浸式城寨光影天台，參觀須知詳情
 
-- **Creator:** Eunice Chow, etnet (經濟通); photos Nelson and the Cultural and Creative Industries Development Office
-- **Date:** 2025-05-28
-- **Kind:** article
-- **Class:** secondary (A lifestyle feature on the film-set exhibition, with no testimony.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © etnet
-- **Link:** https://www.etnet.com.hk/www/tc/lifestyle/331798/九龍城寨光影之旅八大打卡場景︰新增魚蛋工場，啤膠廠及沉浸式城寨光影天台，參觀須知詳情
-- **Other links:** https://www.etnet.com.hk/www/tc/attraction/1221/九龍寨城公園衙門｜「九龍城寨光影之旅」電影場景展
-- **Proof that it exists:** 九龍城寨熱潮停不了！
-- **What it gives (finder's note, not checked):** Lists the eight halls (七記冰室, 龍城髮廊, 牙醫診所, 士多, 跌打館, 魚蛋工場, 啤膠廠, 城寨光影天台). It repeats the exhibition's claims: more than 150 unlicensed dentists at the peak, water rationing, low aircraft, Yu Lan altars and opera stages.
-- **Notes:** The alt URL (etnet attraction page) was seen only as a search hit, not opened.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Eunice Chow (text), Nelson and 文創產業發展處 (photos), 「九龍城寨光影之旅八大打卡場景︰新增魚蛋工場，啤膠廠及沉浸式城寨光影天台，參觀須知詳情」, etnet 經濟通, 28 May 2025, https://www.etnet.com.hk/www/tc/lifestyle/331798/
+- **Class:** secondary (A 2025 lifestyle feature on a film-set exhibition. Its statements on the real City repeat the exhibition's text with no source. The tree secondary is correct.)
+- **Date of the record:** 2025-05-28
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| intro | The Cultural and Creative Industries Development Agency (文創產業發展處) organised the exhibition, with money from the 電影發展基金. It runs for three years. | "由文創產業發展處策劃、電影發展基金資助" (planned by the Cultural and Creative Industries Development Agency and funded by the 電影發展基金) |
+| visitor information box | The opening hours are 9 a.m. to 7 p.m. from May to August 2025, and 9 a.m. to 6 p.m. from September. Each visit is limited to 15 minutes. | "開放時間： 2025年5月至8月 每天上午9時至下午7時" (Opening hours: May to August 2025, daily 9 a.m. to 7 p.m.) |
+| section 牙醫診所 | The article says that unlicensed dental clinics were everywhere in the City, more than 150 at the peak. They were simple, but for many poor people they were the only choice, and people from outside came too. No source is given. | "在九龍城寨內無牌牙醫診所隨處可見，全盛時期更高達一百五十多家" (unlicensed dental clinics could be seen everywhere in the City; at the peak there were more than 150) |
+| section 全新窄巷內街啤膠廠 | The article says that the water rationing of Hong Kong also happened in the City, and that the well of the exhibition brings back memories. | "當年香港制水同於城寨發生，迫真水井勾起不少人當年回憶" (the water rationing of Hong Kong also happened in the City then; the lifelike well brings back many people's memories) |
+| section 跌打館 | The article says that the bone-setting clinic (跌打館) served many factory workers and coolies, who were often hurt because their work was hard. | "同場還有跌打館，是不少工廠工人及苦力" (also there is a bone-setting clinic, [visited by] many factory workers and coolies) |
+| section on the entrance | The article says that at each Yu Lan festival the residents built a god shed (神棚), an altar to the Ghost King (大士台) and an opera stage (戲棚). | "每逢盂蘭勝會期間會搭建神棚、大士台與戲棚" (during each Yu Lan festival they built a god shed, a Tai Si altar and an opera stage) |
+| section 士多 | The article calls the City a self-sufficient community, and the old store (士多) the residents' 'treasure shop', with daily goods piled in a few square feet. | "九龍城寨是自給自足的社區生態" (the Kowloon Walled City was a self-sufficient community ecology) |
+| section 城寨光影天台 | The article says that aircraft bodies almost skimmed the heads of people on the roofs. | "巨大的機身幾乎掠過頭頂" (the huge aircraft body almost skimmed overhead) |
+| photo caption; section 啤膠廠 | The iron archway 九龍城寨鐵牌坊 over the entrance follows the iron gates of Hong Kong buildings of the 1980s. The plastic-moulding factory hall (啤膠廠) was made for this exhibition. | "入口上方「九龍城寨鐵牌坊」的設計，參考了八十年代香港大廈鐵閘" (the design of the 'Kowloon Walled City iron archway' over the entrance refers to the iron gates of Hong Kong buildings of the 1980s) |
+| section 魚蛋工場 | The fishball hall is named 大井好姐魚蛋工場 after the film; it is new in this exhibition. | "大井好姐魚蛋工場是全新展覽館" (the 大井好姐 fishball factory is an all-new exhibition hall) |
 ### top-popular-7: 【香港】香港映画『トワイライト・ウォリアーズ』の世界観を再現した展覧会が九龍城砦の跡地である九龍寨城公園で開催中
 
-- **Creator:** Hong Kong correspondent (武田信晃), Arukikata (地球の歩き方) tokuhain
-- **Date:** 2025-06-04
-- **Kind:** article
-- **Class:** secondary (A Japanese travel feature on the park and the exhibition, with no testimony.)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** © Arukikata
-- **Link:** https://www.arukikata.co.jp/tokuhain/307770/
-- **Proof that it exists:** すでに何度か紹介してきた、日本でヒット中の香港映画『九龍城寨之圍城（Twilight of the Warriors：Walled in／トワイライト・ウォリアーズ 決戦！九龍城砦）』。
-- **What it gives (finder's note, not checked):** Japanese description of the exhibition in the Yamen, its eight rooms and its hours; it says the exhibition is planned to run until May 2028. Short history of the Yamen.
-- **Notes:** Useful only as the Japanese name of the film and the exhibition dates.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 武田信晃 (Hong Kong correspondent), 「【香港】香港映画『トワイライト・ウォリアーズ』の世界観を再現した展覧会が九龍城砦の跡地である九龍寨城公園で開催中」, 地球の歩き方 (Arukikata) tokuhain, 4 June 2025, https://www.arukikata.co.jp/tokuhain/307770/
+- **Class:** secondary (A 2025 travel feature on a film-set exhibition. Its short history of the City and the Yamen is background. The tree secondary is correct.)
+- **Date of the record:** 2025-06-04
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| para. 1 | The Japanese title of the film is 『トワイライト・ウォリアーズ 決戦！九龍城砦』; its Hong Kong title is 『九龍城寨之圍城』. | 『九龍城寨之圍城（Twilight of the Warriors：Walled in／トワイライト・ウォリアーズ 決戦！九龍城砦）』 (Twilight of the Warriors: Walled In / Twilight Warriors: Decisive Battle! Kowloon Walled City) |
+| visitor information | The exhibition is planned to run until May 2028. The hours are 9:00 to 19:00 to August, and 9:00 to 18:00 from September. | "展示会の開催期間は2028年5月まであるので" (because the exhibition runs until May 2028) |
+| hall 1 | The first hall of the exhibition is named for the Walled City Kaifong Association (城寨街坊會), after the film. | "城寨街坊會（The Walled City Kaifong Association）" |
+| para. on the sets | Some sets used in the film were first shown in the arrivals hall of Hong Kong International Airport and at the mall AIRSIDE. | "実際に使われたセットが香港国際空港の到着ロビー" (the sets actually used were [shown] in the arrivals hall of Hong Kong International Airport) |
+| para. on the Yamen | The article says that the City was one of the military bases that the Qing made in 1847, and that the Yamen was its office. | "九龍城砦は1847年に清朝が作った軍事基地の1つで" (the Kowloon Walled City was one of the military bases built by the Qing dynasty in 1847) |
+| para. on the Yamen | The article says that the Yamen building was later used as an old people's home, a school and a hospital (clinic). It calls the building a declared monument, with a typing error (法定古墳 for 法定古蹟). | "老人ホーム、学校、病院などとして使われてきました" (it has been used as an old people's home, a school, a hospital and so on) |
 ### popular-6: Kowloon Walled City Park
 
-- **Creator:** Wikipedia contributors (English Wikipedia)
-- **Date:** 2026-11-16
-- **Kind:** reference
-- **Class:** secondary (An encyclopedia article on the park, from LCSD pages and the Hong Kong Yearbook.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** CC BY-SA 4.0
-- **Link:** https://en.wikipedia.org/wiki/Kowloon_Walled_City_Park
-- **Proof that it exists:** First sentence: 'The Kowloon Walled City Park is a park in Kowloon City, Kowloon, Hong Kong.'
-- **What it gives (finder's note, not checked):** Describes the bronze model of the former City near the South Gate, the wall with a cross-section of the City before demolition, the permanent exhibition in the Yamen from April 2009 (one outdoor area and six rooms), the relics of the South Gate, and the opening of 22 Dec 1995.
-- **Notes:** It does not mention the film-set exhibition of 2025 (see popular-15). It cites Hong Kong Yearbook 1996, p331.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Wikipedia contributors, 'Kowloon Walled City Park', English Wikipedia, revision 1381205137 (2026-10-20T17:40:30Z), https://en.wikipedia.org/w/index.php?title=Kowloon_Walled_City_Park&oldid=1381205137
+- **Class:** secondary (An encyclopedia article written after the events. It cites LCSD pages, Lu Jin (1988), the SCMP of 24 Mar 1993 and the Hong Kong Yearbook 1996. Several claims have no reference. The tree secondary is correct.)
+- **Date of the record:** 2026-10-20 (revision used)
+- **Files:**
+  - `popular-6-index-8948b7ea.html` (in git): HTML of the article, revision 1381205137 (a short page); https://en.wikipedia.org/w/index.php?title=Kowloon_Walled_City_Park&oldid=1381205137; 177068 bytes; SHA-256 `4186dc7de1ab5ff8d220d5a9f15cbeff35ad186c55bd6f9c4d81bbcbdaa4062b`; licence: CC BY-SA 4.0 (page footer of the revision: 'Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply.') (https://en.wikipedia.org/w/index.php?title=Kowloon_Walled_City_Park&oldid=1381205137)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| section History, para. 1; ref 1 (LCSD 'Home') | The park covers 31,000 square metres in eight theme zones (cited to the LCSD home page). | "The park, 31,000 square metres (7.66 acres) in total, is divided into eight theme zones" |
+| History; ref 3 | The article gives the population of the City in the 1970s as 41,000. It cites Lu Jin (魯金), 九龍寨城史話 (1988), p. 24. | "By the 1970s, the population of the city had risen to 41,000." |
+| History (no ref) | The article says that the City had 503 buildings in 1994. It gives no reference for this count. | "The number of buildings was 503 in 1994." |
+| History | The article names the serious crime of the City as drugs, illegal gambling, prostitution and quackery. | "in the area related to drugs, illegal gambling, prostitution and quackery." |
+| History | The article names the domestic factories of the City as textile, candy-making and jook-sing noodle factories. | "Domestic factories, including textile, candy-making and production of jook-sing noodles, were situated in the area." |
+| History; ref 4 | The governments announced the demolition on 14 January 1987. The residents were resettled from 1987 to 1989, and the demolition began in 1993 (cited to SCMP, 24 March 1993, p. 1). | "Between 1987 and 1989 residents were resettled, and demolition began in 1993." |
+| infobox, row 'Opened' (no ref) | The infobox gives 22 December 1995 as the opening date of the park, with no reference. The AMO chronology of missions-6 (p. 55) gives the same date. | "Opened 22 December 1995" |
+| History; ref 1 (LCSD) | The Imperial Japanese Army took down the stone walls in World War II. Parts of the walls stayed buried and well kept under the soil. | "Part of them were buried and well preserved under the soil." |
+| Featured facilities, Yamen; ref 7 (LCSD 'The Kowloon Walled City Park') | The Yamen (衙府 in the article) is in the centre of the park and is the only old Qing building left. It was built in 1847. | "The Yamen (衙府) is located in the centre of the Park and is the only remaining old Qing building. It was built in 1847" |
+| Featured facilities, Yamen; ref 7 (LCSD 'The Kowloon Walled City Park') | The offices of the Commodore of the Dapeng Brigade (大鵬協府) and of the Kowloon Assistant Military Inspectorate (九龍巡檢司衙署) filled the Yamen. It has three rows and four wings of houses. | "the offices of the Commodore of the Dapeng Brigade (大鵬協府) and the Kowloon Assistant Military Inspectorate (九龍巡檢司衙署). It was designed with three rows and four wings of houses." |
+| Featured facilities, Yamen; ref 7 (LCSD 'The Kowloon Walled City Park') | After 1899 the Yamen was used for charity, for example as a home for old people. | "After 1899 the Yamen was used for charitable purposes, like housing elderly." |
+| Featured facilities, South Gate; ref 8 (LCSD 'The Old South Gate') | When the City was torn down in 1994, two granite plaques with the characters for 'South Gate' and 'Kowloon Walled City' were dug up at the site of the old gate. | "two granite plaques with Chinese characters for "South Gate" and "Kowloon Walled City"" |
+| Featured facilities, exhibition; ref 10 (LCSD 'A City of Thousand Faces') | An outdoor display near the South Gate shows a bronze model of the former City in front of a wall. The other side of the wall shows a cross-section of the City before the demolition, with the daily lives of its people. | "The outdoor display area near the South Gate shows a bronze miniature model of the former Walled City in front of a wall." |
+| Featured facilities, exhibition; ref 10 | Since April 2009 the park has a permanent exhibition on the history of the site: one outdoor area and six rooms in the Yamen. | "It consists of one outdoor display area and six exhibition rooms, which are located inside the Yamen." |
+| History, end (tagged 'citation needed') | The article says that the height of buildings was strictly controlled because of Kai Tak Airport and to give the park a more open view. It gives no reference: the sentence has a 'citation needed' tag. | "Due to its proximity to the Kai Tak Airport, and so that the park could have a more open view, regulation of the height of buildings was strictly enforced." |
+| whole article | The article does not mention the film-set exhibition of May 2025 in the Yamen. | "Six exhibition rooms are housed inside." |
+
+- **Leads:**
+  - Lu Jin (魯金), 九龍寨城史話 (Joint Publishing, 1988), p. 24: the population of 41,000 in the 1970s.
+  - Hong Kong Yearbook 1996 (Government Printer), p. 331: the park.
+  - LCSD, Kowloon Walled City Park Exhibition Guide (brochure, 2015).
 ### hkgov-13: Kowloon Walled City Park - Historical (with sub-pages The Old South Gate, The Yamen, Design of the Park)
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.

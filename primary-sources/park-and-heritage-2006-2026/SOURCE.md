@@ -57,3 +57,17 @@ shows is the reader's reading of it.
 | Page | Fact | Words in the source |
 |---|---|---|
 | photo DM062_4, alt text and image | A photo on the page shows the dig at the South Gate in 1994. Trenches hold standing water. Granite blocks of the gate stand in the trenches, and workers with a surveying staff and a tripod stand by. Plastic barriers ring the site. | "Archaeological excavation at the Remnants of the South Gate of Kowloon Walled City in 1994" |
+
+### missions-6: A Research on Lung Tsun Stone Bridge and its surrounding area 「龍津橋及其鄰近區域」歷史研究, Final Report
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Chung Po Yin and Ko Tim Keung (高添強), 'A Research on Lung Tsun Stone Bridge and its surrounding area 「龍津橋及其鄰近區域」歷史研究, Final Report (December 2012)', submitted to the Antiquities and Monuments Office (AMO), HKSAR, 80 pp., https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf
+- **Class:** secondary (A historians' report of 2012 that compiles books and records. It quotes some records of the time in translation (the Lockhart report of 1898). The tree secondary is correct. The cover gives the English names only ('Chung Po Yin & Ko Tim Keung'); the photo captions credit 高添強.)
+- **Date of the record:** 2012-12 (Final Report, December 2012)
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 26 (quoting the Lockhart report, Oct 1898, in translation) | The report quotes the Lockhart report of 1898 in Chinese translation. The walled city was almost a parallelogram, 700 by 400 feet, 6.5 acres. The granite wall was 15 feet wide at the top and 13 feet high on average. | "長闊為七百英呎及四百英呎，面積六點五英畝" (its length and breadth are 700 feet and 400 feet, its area 6.5 acres) |
+| p. 26 (quoting the Lockhart report, 1898, in translation) | The Lockhart report says that the six watchtowers on the wall were then used as dwellings, and that the two wooden gates had iron plates. | "牆上有六個哨樓，目前被佔用為民居；兩個木製城門鑲有鐵板" (On the wall are six watchtowers, at present occupied as dwellings; two wooden gates faced with iron plates) |
+| pp. 26-27 (quoting the Lockhart report, 1898, in translation) | In 1898 the City had 744 people: 544 soldiers and 200 civilians, by the figures of the Deputy Magistrate (巡檢). The civilians depended on the soldiers, did no trade, and the City had no shops. | "城內人口為七百四十四人，其中駐軍佔五百四十四，平民二百人" (The population of the city is 744, of whom the garrison is 544 and the civilians 200.) |
