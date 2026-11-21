@@ -2,14 +2,12 @@
 
 UPI, AP and Reuters reports and foreign papers made at the time (LoC, archive.org, Papers Past, NewspaperSG and others).
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 12 of 12 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1899-1977.
 - **Items:** 12, of which 12 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** this file only.
+- **Stored in git:** yes: 1 files with an open licence (Public domain (Wikimedia Commons: LicenseShortName 'Public domain'; Wikidata Q120112406 copyright status: public domain). The HKBU page of the same print says '© 2022. All Rights Reserved' in its footer, thus use the Commons copy.), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -20,190 +18,277 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-press-en-7: Kowloon Faces Destruction
 
-- **Creator:** Geoffrey Ho (byline), printed in the Lincoln Star (Lincoln, Nebraska)
-- **Date:** 1962-11-27
-- **Kind:** press
-- **Class:** primary (A report of the time from Hong Kong on the clearance plan of 1962.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © publisher (newspaper scan from the NewspaperArchive collection on archive.org)
-- **Link:** https://archive.org/details/lincoln-star-1962-11-27
-- **Other links:** https://ia601408.us.archive.org/fulltext/inside.php?item_id=lincoln-star-1962-11-27&doc=lincoln-star-1962-11-27&path=/21/items/lincoln-star-1962-11-27&q=%22walled%20city%22, https://archive.org/details/stroudsburg-daily-record-1962-11-27
-- **Proof that it exists:** Page 7: headline "Kowloon Face s De s truction"; "By GEOFFREY HO Hong Kong"; "clea r the slum encla ve known as the Kowloon walled city and to move its occupants"
-- **What it gives (finder's note, not checked):** The Hong Kong government's plan of late 1962 to clear the City and move its people. Refugees from China flocked into the City; it was 'a haven for' crime. A photo caption: 'general view of main street of vice-ridden area'.
-- **Notes:** Page 7. No wire tag seen (perhaps a syndicated feature). The Stroudsburg Daily Record of the same day carries the same words in a full-text search extract ('plans to clear the slum enclave known as the Kowloon Walled City'); I did not open that issue. The 1962-63 clearance attempt led to the Chinese protest of January 1963.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Geoffrey Ho (AP), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', The Lincoln Star (Lincoln, Nebraska), 27 November 1962, p. 8, archive.org item lincoln-star-1962-11-27, https://archive.org/details/lincoln-star-1962-11-27/page/n7
+- **Class:** primary (An AP report of 1962 on the government's clearance plan. Its lines on the 1898 treaty, the 1959 ruling and the 1948 fire are background (kind secondary). Primary tree is correct.)
+- **Date of the record:** 1962-11-27
+- **Files:**
+  - `top-press-en-7-n7_w1600-1eabde40.jpg` (in `local/`, not in git): Page image of p. 8 (leaf n7), Lincoln Star, 27 Nov 1962, with the AP story and photograph; https://archive.org/download/lincoln-star-1962-11-27/page/n7_w1600.jpg; 893948 bytes; SHA-256 `399699586a3ce3595489009e303545584807c5f9f4945705705242273f8b470b`; licence: No rights statement in the archive.org item metadata; newspaper and wire-service copyright not cleared (NewspaperArchive collection scan) (https://archive.org/metadata/lincoln-star-1962-11-27)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 1 | The Hong Kong government decided in late 1962 to end the semi-independent status of the walled city, which it had had for more than half a century. | "has enjoyed semi-independence for more than half a century. The Hong Kong government has now decided to end its unique status." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 1 | The government planned to clear the walled city and to move its people to low-rent resettlement areas around Hong Kong, as part of an over-all development plan. | "The government plans to clear the slum enclave known as the Kowloon walled city and to move its occupants to low-rent resettlement areas" |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 1-2 | For the landlords, the plan would stop their regular income. | "For landlords the plan would cut off their regular income." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 2 | Unlicensed doctors and dentists worked in the walled city; the plan would end their practices. | "For the unlicensed doctors and dentists who operate there, it would end their operations." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 2 | For store owners, the move would mean a sharp drop in business, because business in the resettlement areas was generally poor. | "For store owners, it would mean a sharp drop in business. Business in resettlement areas is generally poor." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 2 | A committee of residents said it would fight the government order to the end, and said that the walled city was Chinese territory. | "A committee has expressed its determination “to fight the government order to the end.”" |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The government said it now considered the walled city inconsistent with the military requirements for the defence of the colony. | "The government says it now considers the existence of the walled city inconsistent with these military requirements." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Government staff usually did not enter the walled city except in an emergency. | "Government personnel usually refrain from entering the city except in an emergency." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The residents ran the walled city through an association and paid no tax to the Hong Kong government. | "The residents run the walled city through an association and pay no tax to the Hong Kong government." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Residents needed no licence to open a store, set up a factory or practise a profession. | "Nor do they need a license to open a store, set up a factory or practice a profession." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Refugees from Communist China came into the walled city because of its privileged status. | "Refugees from Communist China have flocked into the walled city as a result of its privileged status." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The report gives the walled city 11 acres, more than 30,000 people, 22 schools and 62 medical and dental clinics (1962). | "The 11-acre area boasts a population of more than 30,000. It has 22 schools, 62 medical and dental clinics." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The walled city was made of blocks of highly flammable squatter huts with narrow alleys between them. | "The walled city is made up of blocks of highly inflammable squatter huts separated by narrow alleys." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Crowding and a lack of water made it one of the worst fire hazards in Hong Kong. | "The congested conditions and a lack of water constitute oneof the worst fire hazards in Hong Kong." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The same conditions and poor sewage made the area a centre of disease. | "The same factors plus inadequate sewage have made the area a hotbed for disease." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Hong Kong police went in from time to time to clear the area of vice. | "Hong Kong police have moved in from time to time in an attempt to clear the area of vice." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | Most of the residents appeared to be real refugees who were trying to make a living. | "The majority of the residents, however, appear to be genuine refugees trying to make a living." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), col. 3 | The government set no deadline; a spokesman said it would proceed gradually. | "A spokesman said it plans to proceed gradually." |
+| The Lincoln Star (Lincoln, Nebraska), 27 Nov 1962, p. 8 (archive.org leaf n7), 'Kowloon Faces Destruction . . . Vice-Ridden Hong Kong Area To Go', by Geoffrey Ho, Hong Kong (AP), photograph above the headline | INFERRED: The AP photograph shows a fairly wide paved street with shop signs, people on bicycles and a large motor vehicle. A street this wide with motor traffic can be outside the walled city proper; the caption does not say where it is. | "KOWLOON . . . general view of main street of vice-ridden area." |
+
+- **Leads:**
+  - The same AP story by Geoffrey Ho in the Stroudsburg Daily Record, 27 Nov 1962 (archive.org stroudsburg-daily-record-1962-11-27): not opened.
 ### press-archives-18: British Police Flout Reds
 
-- **Creator:** Associated Press, in the Evening Star (Washington, D.C.)
-- **Date:** 1963-01-18
-- **Kind:** press
-- **Class:** primary (A wire report of the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (Chronicling America; rights not checked for this title)
-- **Link:** https://www.loc.gov/resource/sn83045462/1963-01-18/ed-1/?sp=3
-- **Other links:** https://tile.loc.gov/text-services/word-coordinates-service?segment=/service/ndnp/dlc/batch_dlc_jarmusch_ver01/data/sn83045462/00280609389/1963011801/0139.xml&format=alto_xml&full_text=1
-- **Proof that it exists:** 'Armed British police and plainclothesmen moved into the walled city of Kowloon today, following a claim by Red China of'
-- **What it gives (finder's note, not checked):** Armed and plain-clothes police went into the walled city after China claimed it. The plan was to raze about 200 substandard buildings the next month and to resettle more than 20,000 people; the report gives the area as 11 acres.
-- **Notes:** Seq. 3. Read again in this session. The AP report of 22 Jan 1963 ('British Reaffirm Kowloon Rule', seq. 9) gives about 2,000 residents to resettle: the figures differ.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Associated Press, 'British Police Flout Reds', Evening Star (Washington, D.C.), 18 January 1963, seq. 3, Chronicling America sn83045462, https://www.loc.gov/resource/sn83045462/1963-01-18/ed-1/?sp=3
+- **Class:** primary (A wire report of the day (1963). Its lines on the past of the City are background (kind secondary). Primary tree is correct.)
+- **Date of the record:** 1963-01-18
+- **Files:**
+  - not downloaded (curl exit 56): PDF of the page (seq. 3), Evening Star, 18 Jan 1963; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_jarmusch_ver01/data/sn83045462/00280609389/1963011801/0139.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (this page carries a wire story) (https://www.loc.gov/resource/sn83045462/1963-01-18/ed-1/?sp=3&fo=json)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | On 18 January 1963, armed British police and plainclothesmen went into the walled city, after China claimed sovereignty over it. No incidents were reported. | "Armed British police and plainclothesmen moved into the walled city of Kowloon today" |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | The British authorities planned to raze part of the city and to resettle more than 20,000 residents, many of them refugees from China. | "plans to raze part of the city and resettle more than 20,000 residents-many of them refugees from Red China" |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | The report gives the area of the walled city as 11 acres. | "The walled city is an 11-acre district within the Kowloon area of the Chinese mainland." |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | China protested against the resettlement plan on 17 January 1963. Peking said that the plan was a gross violation of China's sovereignty. | "the plan "is a gross violation of China’s sovereignty and is intolerable."" |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | The Chinese protest said that the city of Kowloon is Chinese territory and was always under Chinese jurisdiction. | "the city of Kowloon is China's territory and within China's jurisdiction and this has been so all through history." |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | INFERRED: The British planned to raze about 200 substandard buildings in the city in February 1963 and to resettle their occupants. The month comes from 'next month' in a report of January 1963. | "raze some 200 substandard buildings in the city next month" |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | The resettlement plan was part of a large project that cleared slum areas and moved the occupants to low-rent government housing around the colony. | "occupants moved to low-rent government housing projects scattered around the colony" |
+| Evening Star (Washington, D.C.), 18 Jan 1963, seq. 3 (tile file 0139.xml), AP story 'British Police Flout Reds' | The residents of the walled city opposed the resettlement plans, unlike refugees in other parts of Hong Kong. | "Residents of Kowloon, in contrast to refugees in other parts of Hong Kong, have opposed resettlement plans." |
+
+- **Leads:**
+  - Chinese Foreign Ministry protest note of 17 Jan 1963 on the resettlement plan for the walled city (quoted from a Chinese broadcast in the report).
 ### press-archives-19: Doctor Tells of Clinic On Hong Kong Barge
 
-- **Creator:** John Sherwood, Star Staff Writer, Evening Star (Washington, D.C.)
-- **Date:** 1963-02-14
-- **Kind:** press
-- **Class:** primary (An interview of the time with a doctor who worked in the City.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (Chronicling America; rights not checked for this title)
-- **Link:** https://www.loc.gov/resource/sn83045462/1963-02-14/ed-1/?sp=20
-- **Other links:** https://tile.loc.gov/text-services/word-coordinates-service?segment=/service/ndnp/dlc/batch_dlc_jarmusch_ver01/data/sn83045462/00280609390/1963021401/1054.xml&format=alto_xml&full_text=1
-- **Proof that it exists:** 'A former city councilman and physician in California stopped off in Washington yesterday'
-- **What it gives (finder's note, not checked):** Dr James Turpin of Project Concern set up a one-room clinic in the walled city of Kowloon in 1962, under an opium den. His later clinic, 20 by 30 feet, stood next to a pig pen and across from a brothel, with six families (about 30 people) in the room above.
-- **Notes:** Seq. 20 (section B, p. 4). Read again in this session. The text is not clear whether the second clinic is inside the City. Evening Star 30 Dec 1962, seq. 33, also names Dr Turpin 'of the Walled City of Kowloon'.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** John Sherwood, 'Doctor Tells of Clinic On Hong Kong Barge', Evening Star (Washington, D.C.), 14 February 1963, p. B-4, Chronicling America sn83045462, https://www.loc.gov/resource/sn83045462/1963-02-14/ed-1/?sp=20
+- **Class:** primary (A news report of 1963 from an interview with Dr Turpin, about events of 1962. Primary tree is correct.)
+- **Date of the record:** 1963-02-14
+- **Files:**
+  - not downloaded (curl exit 56): PDF of page B-4 (seq. 20), Evening Star, 14 Feb 1963; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_jarmusch_ver01/data/sn83045462/00280609390/1963021401/1054.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (https://www.loc.gov/resource/sn83045462/1963-02-14/ed-1/?sp=20&fo=json)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | Dr James Turpin, a 35-year-old physician and former city councilman from California, lived with his family on a 60-foot barge in Hong Kong harbour. | "his home, a 60-foot barge in the crowded harbor of Hong Kong." |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | He was in the United States to receive one of the 10 'Outstanding Young Men' awards of 1962 of the United States Junior Chamber of Commerce. | "to receive one of the 10 “Outstanding Young Men" awards of 1962" |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | INFERRED: He gave up his practice in California in 1962 and sailed to the Far East with his wife and four children to found 'Project Concern'. The year comes from 'last year' in a report of February 1963. | "gave up his successful practice in California last year and sailed for the Far East" |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | Turpin, an ordained Methodist minister, set up a clinic in the walled city of Kowloon. | "set up a “clinic" in the grim walled city of Kowloon." |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | INFERRED: His first clinic was one room, under an opium den. The text says 'in Kowloon'; from the sentence before it, this is the walled city. | "opened his first one-room clinic in Kowloon under an opium den" |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | INFERRED: The first clinic was next to a pig pen and across the street from a brothel. The OCR breaks the sentence at a column jump; I join 'under an opium den' to 'next to a pig pen', thus these details describe the first clinic, not the later one. | "next to a pig pen, and across the street from a brothel." |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | By February 1963 he had a clinic of 20 by 30 feet in a different place, with six families (about 30 people) living in the small room above it. The report does not say whether it is inside the walled city. | "a 20 by 30-foot clinic in a different location, with six families (about 30 people) living in the small room above." |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | He had two medical clinics open to the refugees of the colony. | "his two medical clinics that are open to the teeming refugee population" |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | The Project Concern barge was a floating clinic for the people who lived on sampans in the harbour, and the home of the Turpin family. | "a floating clinic for the masses living in sampans in Hong Kong's harbor" |
+| Evening Star (Washington, D.C.), 14 Feb 1963, p. B-4 (seq. 20, tile file 1054.xml), 'Doctor Tells of Clinic On Hong Kong Barge' | Project Concern was an independent agency, without religious or political affiliation. | "Project Concern is an independent agency without religious or political affiliation." |
 ### top-press-en-1: Who runs 'Walled City' / Hong Kong's crime strip?
 
-- **Creator:** UPI (no author name seen), printed in the Stroudsburg Pocono Record
-- **Date:** 1975-10-02
-- **Kind:** press
-- **Class:** primary (A UPI wire report of the time from Hong Kong, with a quote from a resident.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © UPI (newspaper scan from the NewspaperArchive collection on archive.org)
-- **Link:** https://archive.org/details/stroudsburg-pocono-record-1975-10-02
-- **Other links:** https://archive.org/stream/stroudsburg-pocono-record-1975-10-02/stroudsburg-pocono-record-1975-10-02_djvu.txt, https://ia601603.us.archive.org/fulltext/inside.php?item_id=stroudsburg-pocono-record-1975-10-02&doc=stroudsburg-pocono-record-1975-10-02&path=/6/items/stroudsburg-pocono-record-1975-10-02&q=%22walled%20city%22
-- **Proof that it exists:** Page 20: "Wfio runs 'Walled City'/ Hong Kong's crime strip?"; dateline "HONG KONG (UPI) - Dark..."
-- **What it gives (finder's note, not checked):** The City in 1975: 'a seven-acre crime-ridden slum'; 'more than 50 vice dens' (one source); casinos, brothels and drug dens; foodstuff and textile factories that pipe effluents through open drains. A resident says the rents are about 20 percent lower than in the rest of Hong Kong, near the places of work. It quotes Peking's claim of jurisdiction and a Hong Kong government spokesman.
-- **Notes:** Page 20 of the issue. Read through the archive.org search-inside API (13 matches on page 20). The OCR text of the whole issue is 564,000 characters. The repo holds UPI reports of 1984 and 1987 only. Other US papers that took UPI can carry the same text.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** UPI, 'Who runs 'Walled City,' Hong Kong's crime strip?', The Pocono Record (The Stroudsburgs, Pa.), 2 October 1975, p. 21, archive.org item stroudsburg-pocono-record-1975-10-02, https://archive.org/details/stroudsburg-pocono-record-1975-10-02
+- **Class:** primary (A wire report of 1975, with the words of a district officer, a government spokesman and a resident. Its lines on the past (1898, 1945, 1963) are background (kind secondary). Primary tree is correct.)
+- **Date of the record:** 1975-10-02
+- **Files:**
+  - `top-press-en-1-n20_w1600-b9192e61.jpg` (in `local/`, not in git): Page image of p. 21 (leaf n20, from the search-inside index and the OCR page header; not viewed), Pocono Record, 2 Oct 1975; https://archive.org/download/stroudsburg-pocono-record-1975-10-02/page/n20_w1600.jpg; 4804809 bytes; SHA-256 `6a05891dc72f913bed73895be810ac356dfb905755660a4f0d9944d8c5b03195`; licence: No rights statement in the archive.org item metadata; newspaper and wire-service copyright not cleared (NewspaperArchive collection scan) (https://archive.org/metadata/stroudsburg-pocono-record-1975-10-02)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | UPI described the Walled City as a seven-acre slum on the north-eastern tip of the Kowloon Peninsula, with dark alleys and open drains among tightly packed, weathered buildings. | "a seven-acre crime-ridden slum on the northeastern tip of Hong Kong's Kowloon Peninsula." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | About 30,000 people lived in the district in 1975. | "Some 30,000 people jam the district." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The district smelled of garbage and sewage, and it had no direct water supply. | "It reeks of garbage and sewage. There is no direct water supply." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | On average, eight persons lived in each apartment. | "An average of eight persons live in each apartment." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | Billy Lam, the City District Officer for Kowloon City, said that some local people wrongly believed that the enclave was still part of China. | "there is a continual misunderstanding among some sectors of the local population that the enclave is still a part of China." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | Lam said that the people of the Walled City believed they could act as they wanted as long as the Chinese government did not intervene. | "He said the Walled City populace believes it can act any way it wants as long as the Chinese government does not intervene." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | A Hong Kong government spokesman said that the area comes under the Crown, but that local political factors are considered in its administration. | "a Hong Kong government spokesman stressed that the area comes under the crown." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | For most Hong Kong residents, the Walled City meant crime, illegal casinos, brothels and drug dens. | "the Walled City is synonymous with crime, illegal casinos, brothels and drug dens." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | Police raids had increased in recent years and found large amounts of drugs. One source estimated that the City still had more than 50 vice dens. | "One source estimated the Walled City still contains more than 50 vice dens." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | A resident said that people lived there because of the low rent and because it was near their places of work. | "We prefer to live in this crowded and filthy environment compared to other areas because of the low rent and the proximity to our places of work," |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The resident said that rents in the City were 20 percent lower than in other parts of Hong Kong. | "He said rents were 20 per cent lower than in other parts of Hong kong." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The resident said the vice was bad for the children, but people had to get used to it. | "Although the vice must have ill effects on our children, we have to get used to it," he said. |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The resident said most people, especially the young, did not care who had sovereignty as long as they could make a living. | "don't care who exercises sovereignty over them as long as they can make a living." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | Garbage clearance was poor, and foodstuff and textile factories piped their waste water into open drains. | "a number of foodstuff and textiles factories piping effluents through open drains make the Walled City a filthy place in which to live." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The narrow streets stopped trucks and water tankers, so the government's regular cleaning was difficult. | "narrow streets pose physical obstacles to trucks and water tankers." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The government supplied electricity, but water came mainly from street standpipes and wells. | "The government supplies electricity, but water comes mainly from street stand pipes and wells." |
+| Pocono Record (Stroudsburg, Pa.), 2 Oct 1975, p. 21 (archive.org leaf n20), UPI story 'Who runs 'Walled City,' Hong Kong's crime strip?' | The City had no underground sewers. | "There are no underground sewers." |
 ### top-missions-22: Crime serious problem in Walled City
 
-- **Creator:** UPI, in The Daily Colonist (Victoria, B.C.)
-- **Date:** 1977-11-03
-- **Kind:** press
-- **Class:** primary (A wire report of 1977 from Hong Kong, with Jackie Pullinger's view of the City.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © publisher (Daily Colonist) and UPI; University of Victoria Libraries scan
-- **Link:** https://archive.org/details/dailycolonist19771103
-- **Other links:** https://ia600709.us.archive.org/fulltext/inside.php?item_id=dailycolonist19771103&doc=1977_11_03&path=/19/items/dailycolonist19771103&q=%22Walled%20City%22
-- **What it gives (finder's note, not checked):** In-item search extracts: 'HONG KONG (UPI) - Kowloon's Walled City [-] six acres of squalor containing anywhere from 50,000 to 80[,000]'; 'Eleven years ago, 22 year old Briton Jackie Pullinger, fresh from the Royal College of Music, came to the Walled City'; she 'has long since moved out of the Walled City to an apartment on Hong Kong Island' but still visits daily; police say crime there is no worse than elsewhere, but she says drug abuse and related crime remain serious.
-- **Notes:** Found with the archive.org full-text API (query 'Pullinger "Walled City"'). The in-item search says 'page 26', but leaf n25 (printed p. 26) and leaf n63 (printed p. 13 of section two) do not hold the story: the page is not found yet. The same UPI story can be in other papers of early November 1977 (the repo holds UPI 1984 and 1987 only). Not in any file of research/sources-2026-11.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Suzanne F. Green (UPI), 'Crime serious problem in Walled City' (kicker: 'Intruders not welcome in Kowloon area'), The Daily Colonist (Victoria, B.C.), 3 November 1977, p. 27, archive.org item dailycolonist19771103, https://archive.org/details/dailycolonist19771103/page/n26
+- **Class:** primary (A wire report of 1977 with the words of Jackie Pullinger and other witnesses. Primary tree is correct.)
+- **Date of the record:** 1977-11-03 (UPI, Hong Kong)
+- **Files:**
+  - `top-missions-22-n26_w1600-b79f7c6f.jpg` (in `local/`, not in git): Page image of p. 27 (leaf n26), Daily Colonist, 3 Nov 1977 (the full issue PDF is 141 MB, too large); https://archive.org/download/dailycolonist19771103/page/n26_w1600.jpg; 895679 bytes; SHA-256 `94781871e3824e515211b15e809e19d089002bdb6e856578773c5e9b18c0f50e`; licence: No rights statement in the archive.org item metadata; © the publisher (Daily Colonist) and UPI; University of Victoria Libraries scan (https://archive.org/metadata/dailycolonist19771103)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 1 | UPI reporter Suzanne F. Green wrote the story from Hong Kong. She gives the Walled City as six acres with 50,000 to 80,000 people. | "Kowloon's Walled City is six acres of squalor containing anywhere from 50,000 to 80,000 people" |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 1 | The report says the rats in the City were as big as cats and that intruders were not welcome. | "a place of misery and neglect where rats are as big as cats and where intruders are not welcome." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 1 | Jet airliners landing at Kai Tak passed directly above the City. | "Jetliners pass directly above it landing at Kaitak airport." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 1 | Dark passages in the City were laced with open sewage channels, and thin heroin users squatted in the shadows. | "rats scamper along dark passageways laced by open sewage canals" |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 2 | By 1977 Pullinger lived in an apartment on Hong Kong Island, but she still went to the City and to nearby resettlement estates every day. | "She has long since moved out of the Walled City to an apartment on Hong Kong Island" |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 3 | INFERRED: On a walk with the reporter, the alleys had windows shuttered behind glowing joss sticks and people eating at dirty street stalls. The text does not say that the alleys were inside the City, but the context suggests it. | "alleyways where windows are shuttered behind glowing joss sticks and diners cluster in filthy street stalls." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 3 | Pullinger touched the heads of several old women who squatted in a doorway and said 'Jesus loves you' in Cantonese. She told the reporter that these women sold girls into prostitution. | "Those women sell girls into prostitution." she said. |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 3-4 | INFERRED: For the past two years Pullinger and the American missionaries Rick and Jean Williams ran two flats in the Mid-Levels called 'Houses of Stephen'. Each flat had two live-in volunteers and room for 20 drug addicts in rehabilitation, paid for by donations to the Society of Stephen. The start year (about 1975) comes from 'for the past two years' in a report of November 1977. | "Each flat is manned by two live-in volunteers and is equipped to handle 20 drug addicts in the rehabilitation process." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 4 | Jean Williams said the cure rate was probably less than 50 percent. An official of the Society for the Aid and Rehabilitation of Drug Addicts said that this was a good average. | "Mrs. Williams said the cure rate was probably less than 50 percent" |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 4-5 | Tony Yip, then in his 30s, had been an addict, thief and drug pusher at 17 and a member of the Triads. Two years after he met Pullinger he considered himself totally rehabilitated and was pursuing a new career as a hair stylist. | "an addict, thief and drug pusher at 17 and a member of the Triads" |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 5 | The police said officially that crime in the Walled City was no more common than elsewhere in the colony. Pullinger and others did not agree. | "The police say officially that crime in the Walled City is no more prevalent than elsewhere in the colony." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 5-6 | Pullinger said that the drug divans were closed and that drug trafficking had decreased greatly all over Hong Kong in the two years before 1977. | "Yes, the drug divans are closed and drug trafficking has decreased substantially all over Hong Kong in the last two years." |
+| The Daily Colonist (Victoria, B.C.), 3 Nov 1977, p. 27 (archive.org leaf n26), UPI story 'Crime serious problem in Walled City', kicker 'Intruders not welcome in Kowloon area', col. 6 | Pullinger said that drug abuse and related crime were still a serious problem in the Walled City. | "she insists drug abuse and related crimes remain a serious problem in the Walled City." |
 ### press-archives-3: BRITISH OCCUPATION OF KOWLOON.
 
-- **Creator:** Nelson Evening Mail (cable from Hong Kong)
-- **Date:** 1899-05-17
-- **Kind:** press
-- **Class:** primary (A cable report printed the day after the British troops took Kowloon City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No known copyright restrictions (DigitalNZ rights field)
-- **Link:** https://paperspast.natlib.govt.nz/newspapers/NEM18990517.2.14.3
-- **Other links:** https://api.digitalnz.org/records/12956978.json
-- **Proof that it exists:** DigitalNZ record 12956978: 'BRITISH OCCUPATION OF KOWLOON. (Nelson Evening Mail, 17 May 1899)'; text: 'the welsh fusileers and a detachment of volunteers with two cannons have occupied the city of kowloon'
-- **What it gives (finder's note, not checked):** The Welsh Fusiliers and a detachment of volunteers with two cannons occupied the city of Kowloon on 16 May 1899.
-- **Notes:** The Papers Past site gave ECONNREFUSED and empty pages to this tool in the first run; the DigitalNZ API works. A second cable of the same day: Daily Telegraph (Napier?) 'CHINA AND BRITAIN.' https://paperspast.natlib.govt.nz/newspapers/DTN18990517.2.11 (DigitalNZ 29195055): the city was occupied 'without opposition'. DigitalNZ lists 76 Papers Past items for 'kowloon' in 1899, and none after 1945.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Cable from Hong Kong, 'British Occupation of Kowloon.', Nelson Evening Mail (Nelson, New Zealand), 17 May 1899, Papers Past NEM18990517.2.14.3, https://paperspast.natlib.govt.nz/newspapers/NEM18990517.2.14.3 (OCR text: https://api.digitalnz.org/records/12956978.json)
+- **Class:** primary (A press cable sent from Hong Kong on the day of the event (1899). Primary tree is correct.)
+- **Date of the record:** 1899-05-17 (cable dated Hong Kong, 16 May 1899)
+- **Files:**
+  - not downloaded (the host served a bot-check page (Incapsula), not the article): Papers Past article page (HTML) with the OCR text and the page image link of the cable; https://paperspast.natlib.govt.nz/newspapers/NEM18990517.2.14.3; licence: No known copyright restrictions (DigitalNZ rights field; usage: Share, Modify, Use commercially). Not one of the listed licence words, thus in_git false; the main agent can decide, because the text is of 1899. (https://api.digitalnz.org/records/12956978.json)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Nelson Evening Mail, 17 May 1899, cable 'BRITISH OCCUPATION OF KOWLOON.' (Papers Past NEM18990517.2.14.3; OCR text from DigitalNZ record 12956978) | A press cable from Hong Kong said that the Welsh Fusiliers and a detachment of volunteers, with two cannons, had occupied the city of Kowloon. | "the welsh fusileers and a detachment of volunteers with two cannons have occupied the city of kowloon" |
+| Nelson Evening Mail, 17 May 1899, cable 'BRITISH OCCUPATION OF KOWLOON.' (Papers Past NEM18990517.2.14.3; OCR text from DigitalNZ record 12956978) | INFERRED: The cable is dated Hong Kong, 16 May 1899. The OCR gives 'may hi'; I read it as 16 because the other cable of the same day (Daily Telegraph, Napier) is dated Hong Kong, May 16. | "hongkont may hi" |
+| Nelson Evening Mail, 17 May 1899, cable 'BRITISH OCCUPATION OF KOWLOON.' (Papers Past NEM18990517.2.14.3; OCR text from DigitalNZ record 12956978) | The cable places the city of Kowloon in the British concession on the Chinese mainland opposite Hong Kong. | "british concession on tbe chinese mainland opposite hong kong" |
+
+- **Leads:**
+  - Daily Telegraph (Napier, NZ), 17 May 1899, 'CHINA AND BRITAIN.', Papers Past DTN18990517.2.11 (DigitalNZ 29195055): a fuller cable of the same day. It says the city was 'occupied by the welsh fusiliers and a detachment of the hong kong volunteers with two guns' and that 'it waa believed that a large body of chinese troops had determined to offer resistance' (OCR). Not yet read in full.
 ### top-maps-11: Scenes in Kowloon city.
 
-- **Creator:** The Illustrated London News
-- **Date:** 1899-07-01
-- **Kind:** press
-- **Class:** primary (A press illustration published at the time of the British occupation of 1899.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (1899)
-- **Link:** https://bcc.lib.hkbu.edu.hk/artcollection/?p=27398
-- **Proof that it exists:** Scenes in Kowloon city. (Illustrated London News, 1 July 1899)
-- **What it gives (finder's note, not checked):** Seven views of 1899: streets, British troops and guns at the customs house and the gates, the view from the pier, the flag on the walls. One view is inside the walled city, with the mandarin pole, the yamen and a guard-house.
-- **Notes:** Not a map, thus outside this lens, but not in the other files. HKBU Library art collection. Gwulo media 13550 '1899 Scenes in British Kowloon' (in gwulo.json) can be the same print: not checked.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'Scenes in Kowloon City', photographs by C. W. May, The Illustrated London News, 1 July 1899, p. 946 (as printed in the page header); print held by Hong Kong Baptist University Library, Illustrations from British historical newspapers, iln-sphere-047, https://bcc.lib.hkbu.edu.hk/artcollection/?p=27398 ; scan on Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Scenes_in_Kowloon_city._(1899).jpg
+- **Class:** primary (Photographs and text published at the time of the British occupation (1899). Primary tree is correct. It is not a map.)
+- **Date of the record:** 1899-07-01 (photographs taken shortly before; the text calls them 'recent photographs')
+- **Files:**
+  - `top-maps-11-Scenes_in_Kowloon_city.__1899_-4d8705e4.jpg` (in git): Scan of the full page 'Scenes in Kowloon City', ILN 1 July 1899 (JPEG, 1382 x 2000 px, 564 KB); https://upload.wikimedia.org/wikipedia/commons/d/da/Scenes_in_Kowloon_city._%281899%29.jpg; 564414 bytes; SHA-256 `a4815d7964b4d62810f2271e0434d538fd9f4c6805d45777199fe8deca6a0a69`; licence: Public domain (Wikimedia Commons: LicenseShortName 'Public domain'; Wikidata Q120112406 copyright status: public domain). The HKBU page of the same print says '© 2022. All Rights Reserved' in its footer, thus use the Commons copy. (https://commons.wikimedia.org/wiki/File:Scenes_in_Kowloon_city._(1899).jpg)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', under the title | The page prints seven photographs of Kowloon City by C. W. May, with a short text. | "Photographs by C. W. May." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', text, column 1 | By July 1899 the British flag flew over the walls of Kowloon City. | "The British flag now waves over the walls of Kowloon city" |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph top left | INFERRED: Photograph 'One of the city streets': a row of low, one-storey houses with tiled roofs stands against the inside of the city wall, with a walk on top of the wall. Behind them stand a building with a curved gable, two tall poles and a tower on the wall. This is my reading of the image. | "ONE OF THE CITY STREETS." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph top right | INFERRED: Photograph 'Maxim guns of Royal Welsh Fusiliers outside Customs House': soldiers with machine guns in front of a building with an upper storey and a veranda (my reading of the image). | "MAXIM GUNS OF ROYAL WELSH FUSILIERS OUTSIDE CUSTOMS HOUSE." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph middle left | INFERRED: Photograph 'The eastern gate': a round-arched stone gateway through a thick wall, with two British sentries in sun helmets and an old Chinese gun (my reading of the image). | "THE EASTERN GATE: WELSH FUSILIER SENTRIES AND OLD CHINESE GUN." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph centre | INFERRED: Photograph 'Kowloon city from the pier': a long pier with a small roofed shelter at its end, boats beside it and hills behind (my reading of the image). | "KOWLOON CITY FROM THE PIER." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph middle right | INFERRED: Photograph 'The British flag hoisted on the walls': a Union flag on a tall pole on the wall, with a small building with a tiled roof on the wall and old cannons along it (my reading of the image). | "THE BRITISH FLAG HOISTED ON THE WALLS." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph bottom left | INFERRED: Photograph 'View from the walls of the citadel': a square, two-storey tower of brick with a tiled hipped roof stands on a stone platform with steps. Near it are a building with a curved gable, a screen wall with a round window and old cannons on the ground (my reading of the image). | "VIEW FROM THE WALLS OF THE CITADEL." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', photograph bottom right | INFERRED: Photograph 'Inside the walled city of Kowloon': the caption names the mandarin poles and the yamen on the left and the guard-house on the right. The image shows two tall poles with basket-shaped tops, a screen wall with a round window, an old cannon on the ground and a square two-storey guard-house on a stepped base (description of the image is my reading). | "INSIDE THE WALLED CITY OF KOWLOON; MANDARIN POLES AND YAMEN TO THE LEFT, GUARD-HOUSE TO THE RIGHT." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', text, column 3 (lower) | The text says that the old Chinese guns of the citadel contrast with the Maxim guns of the Welsh Fusiliers. | "The old Chinese ordnance of the citadel, for example, contrasts significantly with the smart and deadly Maxim guns of the Welsh Fusiliers." |
+| The Illustrated London News, 1 July 1899, page headed 'THE ILLUSTRATED LONDON NEWS, JULY 1, 1899.—946', 'Scenes in Kowloon City', text, narrow centre column (lower) | The text explains 'yamen' as an official building, such as a court-house, where government business is done. | "The word merely indicates an official building, such as a court-house, or structure where Government business is conducted." |
+
+- **Leads:**
+  - The original photographs by C. W. May of Kowloon City, 1899, from which the ILN engravings were made (holder unknown).
 ### press-archives-8: Hong Kong Consulate Of British Burned By Chinese Rioters
 
-- **Creator:** Associated Press, in the Evening Star (Washington, D.C.)
-- **Date:** 1948-01-16
-- **Kind:** press
-- **Class:** primary (A wire report of the time on the Canton riot.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (Chronicling America; rights not checked for this title)
-- **Link:** https://www.loc.gov/resource/sn83045462/1948-01-16/ed-1/?sp=1
-- **Other links:** https://tile.loc.gov/text-services/word-coordinates-service?segment=/service/ndnp/dlc/batch_dlc_2escher_ver01/data/sn83045462/00280604379/1948011601/0007.xml&format=alto_xml&full_text=1
-- **Proof that it exists:** Headline 'Hong Kong Consulate Of British Burned By Chinese Rioters'; 'The American Consul General at Canton reported by telephone today that rioting Chinese mobs had injured six Britons,'
-- **What it gives (finder's note, not checked):** Mobs in Canton burned the British consulate and injured six Britons, in anger at the eviction of Chinese residents from the walled city of Kowloon.
-- **Notes:** Page 1 (seq. 1). Read again in this session through the tile.loc.gov OCR text service; the loc.gov resource page gives 403 to this tool. Other Evening Star wire reports of the riot (first run): 18 Jan 1948 seq. 8 'Anti-British Disorders Spread From Canton To Other China Cities' (3,000 squatters), 20 Jan 1948 seq. 1 'Slogans Are Plastered On British Amoy Office' (two weeks' notice and an alternate site).
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Associated Press, 'Hong Kong Consulate Of British Burned By Chinese Rioters: U.S. Property Threatened In 3-Hour Demonstration; English Warship Sent', Evening Star (Washington, D.C.), 16 January 1948, p. A-1, continued p. A-5, Chronicling America sn83045462, https://www.loc.gov/resource/sn83045462/1948-01-16/ed-1/?sp=1
+- **Class:** primary (A wire report of the day of the Canton riot (1948). Primary tree is correct.)
+- **Date of the record:** 1948-01-16
+- **Files:**
+  - not downloaded (curl exit 56): PDF of the front page (A-1), Evening Star, 16 Jan 1948; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2escher_ver01/data/sn83045462/00280604379/1948011601/0007.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (this page carries a wire story) (https://www.loc.gov/resource/sn83045462/1948-01-16/ed-1/?sp=1&fo=json)
+  - not downloaded (curl exit 56): PDF of page A-5 (continuation), Evening Star, 16 Jan 1948; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2escher_ver01/data/sn83045462/00280604379/1948011601/0011.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (this page carries a wire story) (https://www.loc.gov/resource/sn83045462/1948-01-16/ed-1/?sp=5&fo=json)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star (Washington, D.C.), 16 Jan 1948, p. A-1 (seq. 1, tile file 0007.xml), AP story 'Hong Kong Consulate Of British Burned By Chinese Rioters' | The American Consul General at Canton, H. A. Boucher, reported by telephone on 16 January 1948 that rioting Chinese mobs had injured six Britons and burned the British Consulate in a three-hour demonstration. | "rioting Chinese mobs had injured six Britons, burned the British Consulate and threatened American property during a three-hour demonstration" |
+| Evening Star (Washington, D.C.), 16 Jan 1948, p. A-1 (seq. 1, tile file 0007.xml), AP story 'Hong Kong Consulate Of British Burned By Chinese Rioters' | The report said that the Chinese were angry at the British eviction of Chinese from the walled city of Kowloon. (The OCR reads 'Oie' for 'the'.) | "incensed over the eviction by the British of Chinese from the walled city of Kowloon, on the mainland of this crown colony" |
+| Evening Star (Washington, D.C.), 16 Jan 1948, p. A-1 (seq. 1, tile file 0007.xml), AP story 'Hong Kong Consulate Of British Burned By Chinese Rioters' | The British sent a warship to Canton to evacuate Britons if necessary. | "The British dispatched a warship to Canton to evacuate Britons, if necessary." |
+| Evening Star (Washington, D.C.), 16 Jan 1948, p. A-1 (seq. 1, tile file 0007.xml), AP story 'Hong Kong Consulate Of British Burned By Chinese Rioters' | Some of the demonstrators in Canton wore the uniform of the Chinese Youth Corps. The rioting started soon after noon near the British consulate. | "Some demonstrators wore the uniform of the Chinese Youth Corps." |
+| Evening Star (Washington, D.C.), 16 Jan 1948, p. A-1 (seq. 1, tile file 0007.xml), AP story 'Hong Kong Consulate Of British Burned By Chinese Rioters' | The British compound on Shameen Island in Canton was burned out, with the residence of the British Consul General, Ronald Hall. | "the British compound on Shameen Island, former international settlement, was burned out by incendiarists" |
+| Evening Star, 16 Jan 1948, p. A-5 (tile file 0011.xml; the front page says 'See HONG KONG, Page A-5'), continuation 'Hong Kong (Continued From First Page.)' | The Hong Kong newspaper Kung Sheung Daily News reported 10 casualties among the demonstrators in Canton, when unidentified persons fired shots. | "Kung Sheung Daily News, reported 10 casualties among demonstrators as shots were fired by unidentified persons." |
+| Evening Star, 16 Jan 1948, p. A-5 (tile file 0011.xml; the front page says 'See HONG KONG, Page A-5'), continuation 'Hong Kong (Continued From First Page.)' | In Shanghai, students of two universities began a two-day strike against the evictions. The evictions had begun several days before 16 January 1948. | "students of two universities began a two-day strike in protest against the evictions, which began several days ago." |
+| Evening Star, 16 Jan 1948, p. A-5 (tile file 0011.xml; the front page says 'See HONG KONG, Page A-5'), continuation 'Hong Kong (Continued From First Page.)' | The report says that the British ordered the destruction of shacks in Kowloon for health purposes. | "The British ordered destruction of shacks on Kowloon, on the mainland of the crown colony, for health purposes." |
+
+- **Leads:**
+  - Kung Sheung Daily News, Hong Kong, c. 16 Jan 1948: report of 10 casualties among the Canton demonstrators (cited on p. A-5).
 ### press-archives-9: British Women, Children Are Being Evacuated
 
-- **Creator:** United Press, in the Evening Star (Washington, D.C.)
-- **Date:** 1948-01-17
-- **Kind:** press
-- **Class:** primary (A wire report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (Chronicling America; rights not checked for this title)
-- **Link:** https://www.loc.gov/resource/sn83045462/1948-01-17/ed-1/?sp=2
-- **Other links:** https://tile.loc.gov/text-services/word-coordinates-service?segment=/service/ndnp/dlc/batch_dlc_2escher_ver01/data/sn83045462/00280604379/1948011701/0057.xml&format=alto_xml&full_text=1
-- **Proof that it exists:** 'The old city covers seven acres on the slopes of Kowloon peak.'
-- **What it gives (finder's note, not checked):** The riot grew out of the eviction of 300 of the 2,000 Chinese in the old walled city, where the British ordered shacks destroyed for sanitary reasons. The city covers seven acres.
-- **Notes:** Seq. 2, continued from page 1. Read again in this session. The AP figure of 18 Jan 1948 (3,000 squatters) differs.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** United Press, 'British Women, Children Are Being Evacuated' (Hong Kong, 17 Jan) and 'British Officials Doubt Reds Inspired Rioting' (Nanking, 17 Jan), Evening Star (Washington, D.C.), 17 January 1948, seq. 2, Chronicling America sn83045462, https://www.loc.gov/resource/sn83045462/1948-01-17/ed-1/?sp=2
+- **Class:** primary (Wire reports of the day (1948). Primary tree is correct.)
+- **Date of the record:** 1948-01-17
+- **Files:**
+  - not downloaded (curl exit 56): PDF of the page (seq. 2), Evening Star, 17 Jan 1948; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2escher_ver01/data/sn83045462/00280604379/1948011701/0057.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (this page carries a wire story) (https://www.loc.gov/resource/sn83045462/1948-01-17/ed-1/?sp=2&fo=json)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | The demonstration at Canton on 16 January 1948 protested the eviction of 300 of the 2,000 Chinese who lived in the old walled city of Kowloon. (The OCR reads 'df' for 'of'.) | "protested the eviction of 300 of the 2,000 Chinese living in the old walled city of Kowloon" |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | The report gives the area of the old city as seven acres, on the slopes of Kowloon peak. | "The old city covers seven acres on the slopes of Kowloon peak." |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | The British ordered the destruction of shacks in the old city for sanitary reasons. | "The British ordered the destruction of shacks in ancient Kowloon for sanitary reasons." |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | Eleven British women and six children from Canton arrived in Hong Kong by plane on 17 January 1948. The British planned to evacuate 100 persons. | "Eleven women and six children arrived in Hong Kong by plane today." |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | Dr T. V. Soong, governor of Kwangtung, said that 'Communist agitators' had instigated the riots. | "Soong declared the riots had been instigated by “Communist agitators.”" |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story 'British Women, Children Are Being Evacuated', under 'China (Continued From First Page.)' | When the demonstration became violent, the British sent a small naval vessel from Hong Kong up the Pearl River to Canton and alerted the sloop Hart. | "British authorities rushed a small naval vessel from Hong Kong up the Pearl River to Canton" |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story from Nanking 'British Officials Doubt Reds Inspired Rioting' (not the Hong Kong story above it) | British Embassy sources in Nanking said the riot came when the British and Chinese governments seemed close to settling the question of the evictions from shacks in Kowloon. | "seemed on the verge of settling the question of evicting Chinese from shacks in Kowloon" |
+| Evening Star (Washington, D.C.), 17 Jan 1948, seq. 2 (tile file 0057.xml), UP story from Nanking 'British Officials Doubt Reds Inspired Rioting' (not the Hong Kong story above it) | The Mayor of Canton, Au Yang Chu, offered to compensate the British for the fire damage to the consulate and other buildings. | "In Canton, Mayor Au Yang Chu offered to compensate the British for fire damage to the consulate" |
 ### top-institutions-5: Murder Stirs Up Issue Over Hong Kong Area
 
-- **Creator:** NANA (North American Newspaper Alliance); Evening Star (Washington, D.C.), p. 3
-- **Date:** 1959-12-26
-- **Kind:** press
-- **Class:** primary (A wire report of the time on a court ruling about the City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (Library of Congress, Chronicling America)
-- **Link:** https://www.loc.gov/resource/sn83045462/1959-12-26/ed-1/?sp=3&q=%22walled+city%22+kowloon
-- **Other links:** https://www.loc.gov/item/sn83045462/1959-12-26/ed-1/, https://www.loc.gov/collections/chronicling-america/?q=%22walled+city%22+kowloon&fo=json
-- **Proof that it exists:** Headline 'Murder Stirs Up Issue Over Hong Kong Area', dateline 'HONG KONG Dec 26', byline NANA (read in the LoC JSON page text)
-- **What it gives (finder's note, not checked):** Reports that the Hong Kong supreme court ruled that Britain has jurisdiction over 'the Kowloon Walled City', about six acres; recalls the 1898 lease that left the City under Chinese control. December 1959.
-- **Notes:** The text that I read is cut off before the murder itself. The case is likely the one in 'In re Wong Hon' (held in services.json and studies.json) and the China Mail reports of Nov-Dec 1959 (press-archives.json); not checked. The st=text view of the page gave 403; the fo=json view worked. The LoC search also gives Evening Star hits of 16-20 Jan 1948 (the eviction riots), which press-archives.json covers.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** North American Newspaper Alliance (NANA), 'Murder Stirs Up Issue Over Hong Kong Area', Evening Star (Washington, D.C.), 26 December 1959, p. A-3, Chronicling America sn83045462, https://www.loc.gov/resource/sn83045462/1959-12-26/ed-1/?sp=3
+- **Class:** primary (A news report of the time (1959). Its history of the 1898 lease and of the years after is background (kind secondary). Primary tree is correct.)
+- **Date of the record:** 1959-12-26
+- **Files:**
+  - not downloaded (curl exit 56): PDF of page A-3, Evening Star, 26 Dec 1959; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_altman_ver01/data/sn83045462/00280608282/1959122601/0731.pdf; licence: Library of Congress rights field for Chronicling America: 'the newspapers in Chronicling America are in the public domain or have no known copyright restrictions' but 'may contain some copyrighted third party materials' (this page carries a wire story) (https://www.loc.gov/resource/sn83045462/1959-12-26/ed-1/?sp=3&fo=json)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | The Hong Kong supreme court had just ruled that the British have jurisdiction over the Kowloon Walled City (December 1959). (The OCR reads 'lurisdiction'.) | "the Hong Kong supreme court has just ruled that the British have jurisdiction over six acres of disputed territory" |
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | The report gives the area of the Kowloon Walled City as six acres. | "six acres of disputed territory known as the Kowloon Walled City." |
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | When a murder occurred in the Walled City recently (1959), the British arrested a man and put him on trial. | "When a murder occurred within the area recently, they arrested a man and put him on trial." |
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | The lawyer of the accused challenged British jurisdiction, and this challenge led to the court's decision. | "It was the lawyer of the accused who challenged the jurisdiction of the British" |
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | The report expected the British to go into the Walled City in full force and clean out its brothels, opium dens and criminals. | "clean out its brothels, opium dens and criminals." |
+| Evening Star (Washington, D.C.), 26 Dec 1959, p. A-3 (seq. 3, tile file 0731.xml), NANA story 'Murder Stirs Up Issue Over Hong Kong Area' | The fear in Hong Kong was that Peking (Peiping) would not sit idly by. | "the fear here is that Peiping may not sit idly by in this "invasion" of its territory." |
 ### top-press-en-14: (local report of a talk or letter on Hong Kong refugees; headline not seen) Warren Times Mirror and Observer, page 14
 
-- **Creator:** Warren Times Mirror and Observer (Warren, Pennsylvania)
-- **Date:** 1967-03-16
-- **Kind:** press
-- **Class:** primary (A report of the time by a visitor to Hong Kong.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © publisher (newspaper scan from the NewspaperArchive collection on archive.org)
-- **Link:** https://archive.org/details/warren-times-mirror-and-observer-1967-03-16
-- **Other links:** https://ia601405.us.archive.org/fulltext/inside.php?item_id=warren-times-mirror-and-observer-1967-03-16&doc=warren-times-mirror-and-observer-1967-03-16&path=/10/items/warren-times-mirror-and-observer-1967-03-16&q=%22walled%20city%22
-- **Proof that it exists:** Page 14: "A group of British nurses who worked in the walled city of"
-- **What it gives (finder's note, not checked):** A visitor's account of 1967: British nurses who worked in the City; people 'squeezed into six square blocks in the old walled city of Kowloon, a place of indescribable poverty, filth' (search extract); 150,000 people on junks and sampans.
-- **Notes:** Page 14. The 'six square blocks' quote is from the full-text search extract, not from my read. The nurses can be the Project Concern or another mission clinic: compare missions.json.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** James Wesley Turpin, 'The Only Way to Belong to Life' (series 'Lenten Guideposts'), Warren Times Mirror and Observer (Warren, Pa.), 16 March 1967, section B p. 8, archive.org item warren-times-mirror-and-observer-1967-03-16, https://archive.org/details/warren-times-mirror-and-observer-1967-03-16/page/n14
+- **Class:** retrospective (Retrospective (1967): first-hand testimony by Dr Turpin of his visit to the walled city in 1962 and of the clinic of 1962-63. Primary tree is correct, with the tag retrospective (1967).)
+- **Date of the record:** 1967-03-16
+- **Files:**
+  - `top-press-en-14-n14_w1600-f6564d49.jpg` (in `local/`, not in git): Page image of section B p. 8 (leaf n14), Warren Times Mirror and Observer, 16 Mar 1967, with the essay; https://archive.org/download/warren-times-mirror-and-observer-1967-03-16/page/n14_w1600.jpg; 3161131 bytes; SHA-256 `49c5cb84e89a0b0f4c0bc003aa5735e406f81cf67cc892f9a7cec73e00e6f53f`; licence: No rights statement in the archive.org item metadata; newspaper and wire-service copyright not cleared (NewspaperArchive collection scan) (https://archive.org/metadata/warren-times-mirror-and-observer-1967-03-16)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | INFERRED: Before he moved, Turpin heard about the refugees from China in Hong Kong from the mother of a patient, and went to Hong Kong to see for himself. The visit was before August 1962 (he moved there on 10 August 1962). | "I went to Hong Kong and saw 150,000 people living on junks and sampans" |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | Turpin saw about 50,000 people crowded into six square blocks in the old walled city of Kowloon. | "another 50,000 squeezed into six square blocks in the old walled city of Kowloon" |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | He described the walled city as a place of great poverty and dirt, with opium houses and brothels. | "a place of indescribable poverty, filth, opium houses and brothels." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | Turpin, his wife and their four children set out for Hong Kong on 10 August 1962, with his former assistant and her husband. | "on August 10, 1962, we all set out to a new, yet ancient world." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | While they studied basic Chinese, they bought an old ship and made it into a floating clinic, which they named 'Project Concern'. | "we bought an old ship and converted it into a floating clinic which we christened "Project Concern."" |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | A group of British nurses who worked in the walled city came to see him. | "A group of British nurses who worked in the walled city of Kowloon heard about it and came to see us." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | The British nurses had a small clinic for children in the walled city but no doctor; Turpin had no clinic in Kowloon, so they joined forces. | "They had a little clinic for children but no doctor. I was a doctor but had no clinic in Kowloon." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | Two Chinese refugee doctors and a Canadian laboratory technician also joined them. | "Two Chinese refugee doctors and a Canadian lab technician also joined us." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | Within a year they had a second floating hospital and a second clinic in a Hong Kong valley where 25,000 squatters lived in very small houses. | "a second clinic in a Hong Kong valley which is peopled by 25,000 squatters living in matchbox houses." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | By 1967 the staff of Project Concern in Hong Kong numbered 98 people from 21 countries. | "The total staff in Hong Kong now numbers 98. They come from 21 countries." |
+| Warren Times Mirror and Observer (Warren, Pa.), 16 Mar 1967, section B, p. 8 (header 'Page 8-B', a hard reading; archive.org leaf n14), 'Lenten Guideposts: The Only Way to Belong to Life', by Dr. James Wesley Turpin | By 1967 Project Concern treated about 15,000 patients a month in Hong Kong (and 10,000 a month in Vietnam). | "We are now treating 10,000 patients a month in Vietnam and another 15,000 a month in Hong Kong." |
+
+- **Leads:**
+  - Guideposts magazine (c. 1966-1967): the 'Lenten Guideposts' essay by James Wesley Turpin, 'The Only Way to Belong to Life', in its first form; the newspaper series reprints it.
+  - The British nurses' children's clinic in the walled city before 1962 (names not given): compare the mission clinics in missions.json.
 ### top-press-en-16: (report on Project Concern and Dr. Turpin; headline not seen) East/West, no. 41
 
-- **Creator:** East/West Pub. Co. (San Francisco Chinese-American weekly)
-- **Date:** 1969-10-15
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on a clinic in the City.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** In Copyright (rightsstatements.org InC 1.0), San Francisco Public Library scan
-- **Link:** https://archive.org/details/eastwest03east_39
-- **Other links:** https://ia801501.us.archive.org/fulltext/inside.php?item_id=eastwest03east_39&doc=eastwest03east_39&path=/12/items/eastwest03east_39&q=%22walled%20city%22
-- **Proof that it exists:** Page 5: "Dr. Turpin_ established the first Project Concerna outpatient clinic in Hong 玫ongs Walled City of Kowloon."
-- **What it gives (finder's note, not checked):** Dr. James Turpin's first Project Concern outpatient clinic was in the City; a second clinic followed for refugees in Jordan Valley.
-- **Notes:** Page 5. missions.json and the books lens hold Project Concern books (Vietnam Doctor, 1966): this is a press item on the same clinic.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** 'Project Concern Week proclaimed', East/West (東西報), San Francisco, East/West Pub. Co., vol. 3 no. 41, 15 October 1969, p. 5, San Francisco Public Library scan, archive.org item eastwest03east_39, https://archive.org/details/eastwest03east_39
+- **Class:** primary (A news item of 1969 on Project Concern; its sentence on the first clinic in the walled city is background (kind secondary). Primary tree is correct.)
+- **Date of the record:** 1969-10-15
+- **Files:**
+  - `top-press-en-16-eastwest03east_39-0187905c.pdf` (in `local/`, not in git): PDF of the whole issue (9.4 MB), East/West (東西報), 15 Oct 1969; the item is on p. 5 (archive.org leaf n4); https://archive.org/download/eastwest03east_39/eastwest03east_39.pdf; 9434443 bytes; SHA-256 `c6cdac0567c6e554c4a2a481d9582cddbf340002b87543d62b5f5696828a5059`; licence: In Copyright (rightsstatements.org InC 1.0, in the archive.org item metadata) (http://rightsstatements.org/vocab/InC/1.0/)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Mayor Alioto of San Francisco proclaimed 'Project Concern Week' for 12-19 October 1969. | “Project Concern Week” has been proclaimed by Mayor Alioto for the week of October 12-19. |
+| East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Project Concern was an international, non-profit medical relief organisation that worked in Hong Kong, Vietnam, Tijuana (Mexico) and Appalachia (USA). | "Project Concern is an international, non-profit, medical relief organization serving in Hong Kong, Viet Nam, Tijuana, Mexico and Appalachia, U.S.A." |
+| East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | In 1969 two floating clinics of Project Concern worked in Kowloon Bay for the boat people: the 'Yauh Oi' (Brotherly Love), a rebuilt lighter, and the 'Ming Ling' (Love One Another), a Chinese junk. | "Two floating clinics now operate in Kowloon Bay, to serve the boat people." |
