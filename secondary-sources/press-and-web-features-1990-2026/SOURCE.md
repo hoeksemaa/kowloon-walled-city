@@ -742,23 +742,32 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
-  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0456: The News Lens (關鍵評論網), article 172320 (title not seen)
 
-- **Creator:** not confirmed (梁啟智 per a search extract)
-- **Date:** before 2025-11-01
-- **Kind:** article
-- **Class:** secondary (A later web article; the aerial photos of 1984 and 1993 that it reprints are primary records of the Survey and Mapping Office.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** not seen
-- **Link:** http://web.archive.org/web/20251101194820/https://www.thenewslens.com/article/172320
-- **Other links:** https://www.thenewslens.com/article/172320
-- **Proof that it exists:** Wayback availability API: archived true, status 200, timestamp 20251101194820; a search result lists thenewslens.com/article/172320 for the query on 九龍城寨, 航空照片, 1984, 1993, 測繪處
-- **What it gives (resolver's note, not checked):** INFERRED from the lead and a search extract: Survey and Mapping Office aerial photos of the City and its surroundings of 1984 and 1993, at web resolution, with the writer's comments.
-- **Lead:** L0456 (cited by maps-9, maps-and-aerial-photos-1889-1994)
-- **Notes:** Open the Wayback copy in a browser to confirm the title, date and photo credits. The photos' frame numbers can lead to the SMO originals (see L0457, L0461).
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** 梁啟智, 「消失中的香港：尋找九龍城寨」, The News Lens (關鍵評論網), article 172320, 26 August 2022 (reprint, modified 16 October 2025), https://www.thenewslens.com/article/172320 (Wayback copy http://web.archive.org/web/20251101194820/https://www.thenewslens.com/article/172320)
+- **Class:** secondary (A 2022 essay with reproduced maps and aerial photos. The aerial photos are records of their time from the Survey and Mapping Office; the text is the writer's later reading of them.)
+- **Date of the record:** 2022-08-26
+- **Files:**
+  - `lead-l0456-eb51f570-028e-4167-8ac9-4f902a0f2dc1.png-4414a12d.jpg` (in `local/`, not in git): Aerial photo of 1963 (web resolution), credited to 地政總署測繪處.; http://web.archive.org/web/20251101194820im_/https://bucket-image.inkmaginecms.com/version/list/1/image/2024/07/eb51f570-028e-4167-8ac9-4f902a0f2dc1.png; 18829 bytes; SHA-256 `ceaf92b7b12fe54528dd60821b888dff6b19157dda22ab11de15aca98196f103`; licence: No licence stated; credited to the Survey and Mapping Office, Lands Department (government copyright). (https://www.thenewslens.com/article/172320)
+  - `lead-l0456-487516f7-b959-49ef-92a6-b6b0857dd89b.png-fe75be07.jpg` (in `local/`, not in git): Aerial photo of 20 November 1974 (web resolution), City outlined in red, credited to 地政總署測繪處.; http://web.archive.org/web/20251101194820im_/https://bucket-image.inkmaginecms.com/version/list/1/image/2024/07/487516f7-b959-49ef-92a6-b6b0857dd89b.png; 28319 bytes; SHA-256 `b11e59899850e52c16e991b1217ecf1c312fc11b641206cef0bade627bc24c8d`; licence: No licence stated; credited to the Survey and Mapping Office, Lands Department (government copyright). (https://www.thenewslens.com/article/172320)
+  - `lead-l0456-54381fbe-ef21-4168-a9ab-bf98cc91060d.png-44596f4e.jpg` (in `local/`, not in git): Aerial photo of 1984 (web resolution), City outlined in red, credited to 地政總署測繪處.; http://web.archive.org/web/20251101194820im_/https://bucket-image.inkmaginecms.com/version/list/1/image/2024/07/54381fbe-ef21-4168-a9ab-bf98cc91060d.png; 30405 bytes; SHA-256 `c3c8146d02a3e2a7619f6150084af41e4841e77be09e2216a20858edc2cc52f8`; licence: No licence stated; credited to the Survey and Mapping Office, Lands Department (government copyright). (https://www.thenewslens.com/article/172320)
+  - `lead-l0456-4b366753-142d-4aa9-a0fa-fd467728b1f0.png-915b391c.jpg` (in `local/`, not in git): Aerial photo of 1993 (web resolution), cleared City site outlined in red, credited to 地政總署測繪處.; http://web.archive.org/web/20251101194820im_/https://bucket-image.inkmaginecms.com/version/list/1/image/2024/07/4b366753-142d-4aa9-a0fa-fd467728b1f0.png; 28713 bytes; SHA-256 `892bfeea0cef1116021d08b6860e8660324528ade42fe150590277bc66f69d02`; licence: No licence stated; credited to the Survey and Mapping Office, Lands Department (government copyright). (https://www.thenewslens.com/article/172320)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback copy of 1 Nov 2025, byline | The writer is 梁啟智. The News Lens reprinted the article on 26 August 2022 with the author's permission. | "文：梁啟智" (Text: 梁啟智) |
+| Wayback copy of 1 Nov 2025, image captions | The article shows aerial photos of the City of 1963, 1974, 1984, 1993 and 2020, each credited to the Survey and Mapping Office of the Lands Department (地政總署測繪處). | "圖片來源：地政總署測繪處" (Image source: Survey and Mapping Office, Lands Department) |
+| Wayback copy of 1 Nov 2025, text under the 1963 photo | The writer says that in the 1963 photo the area of the City is already completely filled with buildings. | "九龍城寨的範圍已完全被建築物填滿" (The area of Kowloon Walled City is already completely filled with buildings.) |
+| Wayback copy of 1 Nov 2025, text under the 1963 photo | In 1963 the first Tung Tau Estate (東頭邨) was newly built. Between it, the City and Kowloon City lay the bungalows of 西頭村, now Carpenter Road Park (賈炳達道公園). | "在東頭邨、九龍城寨和九龍城之間的一大片平房則是消失的西頭村，今天的賈炳達道公園" (The large area of bungalows between Tung Tau Estate, the Walled City and Kowloon City was the vanished 西頭村, today's Carpenter Road Park.) |
+| Wayback copy of 1 Nov 2025, text before the 1974 photo | The writer says the buildings of the City in the 1974 photo are a little higher than in 1963, and 美東樓 of 美東邨 is complete. | "九龍城寨當中的建築比上一張的又高了一點" (the buildings in Kowloon Walled City are a little higher again than in the previous one) |
+| Wayback copy of 1 Nov 2025, text before the 1984 photo | The writer says that by 1984 half of the east end of the Carpenter Road Park site had been cleared, and the site at the far west, across from 侯王古廟, had been built up. | "賈炳達道公園東端的位置已清空了一半，最西端侯王古廟對面的位置則已建成" (The east end of the Carpenter Road Park site had been half cleared, and the westernmost site opposite 侯王古廟 had been built on.) |
+| Wayback copy of 1 Nov 2025, text before the 1993 photo | The writer says that by 1993 the City had been mostly levelled, and only the 寨城衙門 at the centre was left. | "九龍城寨這片土地已基本移平，只留下中央的寨城衙門為歷史見證" (The land of Kowloon Walled City had been basically levelled, leaving only the Yamen at the centre as a witness of history.) |
+
+- **Leads:**
+  - Survey and Mapping Office (地政總署測繪處) aerial photo of 20 November 1974, film label 'HK 20.11.74 1500'' and frame number read as 9604 (uncertain), used in 梁啟智's article of 2022.
+  - Survey and Mapping Office aerial photos of 1963, 1984 and 1993 of the City used in the same article; the article gives no frame numbers.

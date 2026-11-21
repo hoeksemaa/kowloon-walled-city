@@ -764,3 +764,43 @@ Not read yet.
   - Davies and Lai, 'A commentary on Feistauer and Wisbey's (2024) research ...', Land Use Policy 157 (2025): 107686.
   - Belcher's 1843 chart of Hong Kong, editions of 1857 and 1864 (show the fort before the Pak Hok Shan extension).
   - 1906 photo of the City, Information Services Department photo library (base of Fig. 1).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0516: Kowloon Walled City: Its Origin and Early History
+
+- **Creator:** Elizabeth Sinn
+- **Date:** 1987
+- **Kind:** article
+- **Class:** secondary (A history article of 1987 by a historian (Resources Officer, History Department, HKU); its first page also describes the City at the time of the clearance announcement of January 1987.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence on the issue page that I read; the site footer says 'Copyright © 2026 The University of Hong Kong. All Rights Reserved'; other HKJO records state 'In Copyright'. The article is copyright of the author and the society.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/rx919b522
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/rx919b522, https://digitalrepository.lib.hku.hk/service/api/iiif/images/8049ns15k/full/full/0/default.jpg, https://www.jstor.org/stable/23886841
+- **Proof that it exists:** Issue record 'Journal of the Hong Kong Branch of the Royal Asiatic Society, Vol.27 (1987)'; image 55 is printed p. 30: 'KOWLOON WALLED CITY: ITS ORIGIN AND EARLY HISTORY', 'ELIZABETH SINN', first sentence 'The Kowloon Walled City in Hong Kong is one of history's great anomalies.'
+- **What it gives (resolver's note, not checked):** The origin and early history of the City: the fort of 1668, the battery of about 1810, the walled city and its pre-war development. Its opening describes the City of the mid-1980s (open drains, high-rises outside the building ordinances, food factories, no water supply for many years, unregistered dentists and doctors) and the visitors after the announcement of January 1987.
+- **Lead:** L0516 (cited by tna-21, scholarship-history-law-society-1973-2026)
+- **Notes:** Pages: printed pp. 30-45 = IIIF canvases 55-70 (index 54-69) of the manifest. Not read beyond p. 30. JSTOR 23886841 needs a login. The same record also gives (lead L0773, President's Report 1987-88 (signed James Hayes, President, 11 March 1988), in Journal of the Hong Kong Branch of the Royal Asiatic Society, Vol. 27 (1987), pp. vii-xii): A check of the WKYP date: the full list of the Society's lectures and local visits of 1987-88 has no visit to the City (the February 1988 tour led by Hayes was on 10 Feb, to Sam Tung Uk Museum and Tin Hau Temple, Tsuen Wan). It gives two public lectures on the City by Elizabeth Sinn, 12 May 1987 and 29 Sep 1987, and the Society's 711 members on 1 Mar 1988.
+
+### lead-l0524: 移行への準備進む：1986年の香港
+
+- **Creator:** Sanada Iwasuke (真田岩助)
+- **Date:** 1987
+- **Kind:** article
+- **Class:** secondary (A yearly review written early in 1987; its chronology is a digest of the press of 1986, compiled after the events.)
+- **Value:** medium
+- **Language:** ja
+- **Access:** open
+- **Licence:** Rights field: 'Copyrights 日本貿易振興機構（ジェトロ）アジア経済研究所 / IDE-JETRO'; no open licence.
+- **Link:** https://ir.ide.go.jp/records/39051
+- **Other links:** https://ir.ide.go.jp/record/39051/files/ZAD198700_008.pdf, https://doi.org/10.20561/00039046
+- **Proof that it exists:** Record title '移行への準備進む : 1986年の香港', アジア・中東動向年報 1987年版, pp. [175]-194; PDF p. 11 header '1986年 重要日誌 185', section '12月' with '14日 政庁は労働人口統計で就業状況改善と発表'.
+- **What it gives (resolver's note, not checked):** A review of Hong Kong politics and economy in 1986, a day-by-day chronology of 1986 with the entries of December 1986 (the model month), reference documents and the main statistics of 1986.
+- **Lead:** L0524 (cited by top-china-26, scholarship-history-law-society-1973-2026)
+- **Notes:** The same series as the held top-china-26 (1987). Image-only PDF (1,437,948 bytes): read on the page images.

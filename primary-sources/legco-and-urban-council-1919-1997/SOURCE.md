@@ -256,40 +256,45 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
-  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0409: Legislative Council Brief : Land Acquisition (Possessory Title) Ordinance (Chapter 130) Acquisition of Land Within Kowloon Walled City (BLD/SDOC/LAP 1 VI), Word original with Annex A (plan of the land edged black)
 
-- **Creator:** Hong Kong Buildings and Lands Department (屋宇地政署)
-- **Date:** 1991-12-09
-- **Kind:** document
-- **Class:** primary (A government brief and plan of Dec 1991, made during the clearance.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the LegCo Library (Primo) record; the LegCo copyright notice allows only personal or internal use (https://www.legco.gov.hk/en/general/disclaimer.html). Not an open licence.
-- **Link:** https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321460280006976
-- **Other links:** https://legco.primo.exlibrisgroup.com/discovery/delivery/852LEGCO_INST:LEGCO/1221474880006976, https://legco.primo.exlibrisgroup.com/primaws/rest/pub/pnxs/L/alma991000498179606976?vid=852LEGCO_INST:LEGCO&lang=en
-- **Proof that it exists:** Delivery page: file '146029.doc', label 'BLD/SDOC/LAP 1 VI (English Version Only)', signed S3 download link (expires after 1 hour; reload the delivery URL for a new one)
-- **What it gives (resolver's note, not checked):** INFERRED: the Annex A plan of the land within the City that the Crown resumed in Dec 1991 (the City boundary, edged black). The text of the brief is already in the repo.
-- **Lead:** L0409 (cited by gap-district-board-housing-authority-14, legco-and-urban-council-1919-1997)
-- **Notes:** Not confirmed that the plan is in the Word file. The structure is frozen; the plan is for checking only. Catalogue record 991000498179606976 (type LEGCO_BRIEF). A second brief, BLD/SDOC/LAP 1 VII (1992, record 991000498061106976), is also in the LegCo Library.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Buildings and Lands Department (屋宇地政署), Legislative Council Brief: Land Acquisition (Possessory Title) Ordinance (Chapter 130), Acquisition of Land within Kowloon Walled City, file ref. BLD/SDOC/LAP 1 VI, 9 December 1991, with Annex A plan No. KM 4736-X; LegCo Library, https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321460280006976
+- **Class:** primary (A government record of 1991 with its plan.)
+- **Date of the record:** 1991-12-09 (brief); plan KM 4736-X undated, made for the ExCo decision of 3 December 1991
+- **Files:**
+  - `lead-l0409-1321460280006976-12b26d83.html` (in `local/`, not in git): LegCo Library delivery page for the Word original 146029.doc (234,496 bytes) of brief BLD/SDOC/LAP 1 VI, with the Annex A plan KM 4736-X embedded. The page gives a signed, short-lived download link; the main agent must request the page again to get the file. The saved file is the HTML rendering of the brief that the delivery page links to (146029.html, 8,412 bytes, text only, without the Annex A plan), fetched on 2026-11-21.; https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321460280006976; 2934 bytes; SHA-256 `c9aa39f2b2131503d026d1e4ea35304f6ed35d6afab7b4db162d9d0f814150d8`; licence: No licence statement on the LegCo Library (Primo) record; the LegCo copyright notice allows only personal or internal use. Not an open licence. (https://www.legco.gov.hk/en/general/disclaimer.html)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc), title block | Annex A is plan No. KM 4736-X, for Phase I of the clearance of the Walled City under the Land Acquisition (Possessory Title) Ordinance. | "KOWLOON WALLED CITY (PHASE I)" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc), title block | The plan was made by the District Survey Office, Kowloon, of the Survey and Mapping Office, Buildings and Lands Department, at 1:1,000 on survey sheet 11-NE-11A. | "Survey Sheet No. 11-NE-11A" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc), lower left | The area edged black on the plan is about 0.79 hectares. | "EDGED BLACK AREA 0.79 HECTARES (ABOUT)" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc) | INFERRED: The edged-black area is the western part of the City. It runs from the Tung Tau Tsuen Road frontage (nos. 40 to about 21) south, near the line of Tai Chang Street, to Lung Chun Road (nos. 160 to 150 and 3-1). It includes West City Road and Sz Kung Street. This is my reading of the line on the plan. | "EDGED BLACK AREA 0.79 HECTARES (ABOUT)" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc) | The plan names these streets in the City: Tai Chang St, West City Rd, Sz Kung St, Alms House Back Street, Lo Yan St, Tin Hau Temple St, Kwong Ming Street, Lung Shing Rd and Lung Chun Road. | "ALMS HOUSE BACK STREET" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc) | The plan marks a large School in the centre of the City, a Clinic just east of it, a Temple off Tin Hau Temple St and a Garden in the north-east corner. | "TIN HAU TEMPLE ST" |
+| Annex A, plan No. KM 4736-X (embedded image in 146029.doc) | INFERRED: The plan marks shrines (Shr), latrines (Lat) in the south-east part and outside the west edge, and a mark ET on the south side of Lung Chun Road. ET is probably an electricity transformer: the HKU study of 1986 puts a transformer on Lung Chun Road. | "ET" |
+| Brief, paragraph 1 | The brief says the area edged black on the Annex A plan was to be acquired to demolish the structures and to make a public park. | "the acquisition of the area of land within Kowloon Walled City (shown edged black on the plan at Annex A), is required for a public purpose" |
+
+- **Leads:**
+  - Legislative Council Brief BLD/SDOC/LAP 1 VII (1992), LegCo Library catalogue record 991000498061106976: a second brief under the same Ordinance (named in the plan record of this item).
 ### lead-l0415: Legislative Council Brief : Hong Kong Airport (Control of Obstructions) Ordinance (Chapter 301) Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) Order 1986 (LW(CR) 11/06), Word original with plans
 
-- **Creator:** Hong Kong Lands and Works Branch (地政工務科)
-- **Date:** 1986-11
-- **Kind:** document
-- **Class:** primary (A government brief with its plans, made in Nov 1986.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the LegCo Library (Primo) record; the LegCo copyright notice allows only personal or internal use (https://www.legco.gov.hk/en/general/disclaimer.html). Not an open licence.
-- **Link:** https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321472210006976
-- **Other links:** https://legco.primo.exlibrisgroup.com/discovery/delivery/852LEGCO_INST:LEGCO/1221473040006976
-- **Proof that it exists:** Delivery page: file '151401.doc', label 'LW (CR) 11/06 (English Version)', size shown as (32485376), signed S3 download link
-- **What it gives (resolver's note, not checked):** The plan images of the 1986 airport height order (COO/11, COO/111 to COO/114). INFERRED: COO/11 can show the height-limit zones over Kowloon City in Dec 1986; COO/111-114 are for the Phase 1 area south-east of the airport, not the City.
-- **Lead:** L0415 (cited by gap-district-board-housing-authority-16, legco-and-urban-council-1919-1997)
-- **Notes:** The text of the brief is already in the repo (gap-district-board-housing-authority-16). Only the plans are new. 31 MB: crop the plans, do not keep the whole file.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Lands and Works Branch (地政工務科), Legislative Council Brief: Hong Kong Airport (Control of Obstructions) Ordinance (Chapter 301), Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) Order 1986, file ref. LW(CR) 11/06, November 1986, Word original with plan SKM 2277; LegCo Library, https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321472210006976
+- **Class:** primary (A government record of November 1986.)
+- **Date of the record:** 1986-11 (ExCo decision of 18 November 1986; Order effective 1 December 1986)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Brief, section Exemptions | The brief says that the Third Schedule of the existing height-control order (the Consolidation Order of 1982) listed the exempted buildings and structures in the Walled City, by points on an overlay plan and by photographs. | "The Third Schedule lists exempted buildings and structures in Kowloon Walled City, by reference to points on an overlay plan and photographs." |
+| Brief, paragraph 8 (Timing) | The Amendment Order of 1986 took effect on 1 December 1986, two weeks before the week of the simulation. | "The Order takes effect from 1 December 1986." |
+| Brief, paragraph 3 (Background) and paragraph 8 (Timing) | INFERRED: The 1986 revision covered only the Phase 1 area, south-east of the airport. The rest of the territory was to follow in a second phase at about the end of 1987. Thus the height limits over the City were probably unchanged in December 1986 (INFERRED: the City is north-west of the airport). | "first priority has been given to an area to the southeast of the airport. (Phase 1)" |
+| Embedded image (only one) in 151401.doc | The only plan image in the Word file is plan No. SKM 2277, Junk Bay Town Lot No. 3 (portion), from the Survey and Mapping Office. It does not show the City. | "PLAN OF JUNK BAY TOWN LOT No. 3 (PORTION)" |
+
+- **Leads:**
+  - Plans COO/11 and COO/111 to COO/114 of the Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) Order 1986, signed by the Clerk of Councils and deposited at the Land Office (named in the Order; not in the LegCo Word file).
+  - The overlay plan and photographs of the Third Schedule of the Hong Kong Airport (Control of Obstructions) (Consolidation) Order 1982, which list the exempted buildings and structures in Kowloon Walled City (named in the brief LW(CR) 11/06).

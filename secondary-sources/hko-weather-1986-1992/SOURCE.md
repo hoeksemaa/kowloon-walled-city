@@ -185,3 +185,26 @@ See the leads under each item in the primary folder.
 | dailyExtract.htm, inline script ($.ajax url) | The page script asks for a monthly file (dailyExtract_YYYYMM.xml) only for months of daily update, and for the yearly file (dailyExtract_YYYY.xml) for other years. This is why dailyExtract_198612.xml gives 404 and the yearly file works. | "url: "../../cis/dailyExtract/dailyExtract_" + y_val + ".xml"" |
 | dailyExtract.htm, last_revision_date | The Daily Extract page was last revised on 29 December 2023. | "var last_revision_date = '29 December 2023';" |
 | December rows 15-21 against the CSV files of repo-audit-2 and services-1 to services-8 | I matched each column of the December rows with the labelled CSV files of this folder: all eleven values of each day of 15-21 December 1986 agree. The sunshine column equals the King's Park file and the wind columns equal the Waglan Island files. | "["15","1018.5","21.6","19.8","18.6","14.7","73","24","Trace","9.3","080","34.9"]" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0405: Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin year of the Tiger)
+
+- **Creator:** Hong Kong Observatory (香港天文台)
+- **Date:** no date on the page (present-day table)
+- **Kind:** reference
+- **Class:** secondary (A present-day reference table computed by the Observatory, not a record made in 1986.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKO website Intellectual Property Rights Notice, Disclaimer and Conditions of Use (no named open licence; commercial use needs written authorisation), https://www.hko.gov.hk/en/readme/readme.htm
+- **Link:** https://www.hko.gov.hk/en/gts/time/calendar/text/files/T1986e.txt
+- **Other links:** https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T1986c.txt, https://data.gov.hk/en-data/dataset/hk-hko-rss-gregorian-lunar-calendar-conversion-table
+- **Proof that it exists:** Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin ... year of the Tiger) Gregorian date Lunar date Day-of-week Solar terms
+- **What it gives (resolver's note, not checked):** The lunar date and solar term of each day of 1986. The 11th lunar month began on 2 Dec 1986; Monday 15 Dec was its 14th day and Sunday 21 Dec its 20th; Monday 22 Dec (21st day) was the Winter Solstice (冬至); the 12th lunar month began on 31 Dec 1986.
+- **Lead:** L0405 (cited by services-9, hko-weather-1986-1992)
+- **Notes:** The Chinese table (alt URL) was not opened. The data.gov.hk dataset does not reach 1986.

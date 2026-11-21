@@ -310,3 +310,25 @@ testimony given later: tag its facts "retrospective (year)".
 | daily_HKO_GMT_ALL.csv, row 1986,12,20,7.6,C | The grass minimum temperature at the Hong Kong Observatory on Saturday 20 December 1986 was 7.6 °C (flag C). | "1986,12,20,7.6,C" |
 | daily_HKO_GMT_ALL.csv, row 1986,12,21,8.9,C | The grass minimum temperature at the Hong Kong Observatory on Sunday 21 December 1986 was 8.9 °C (flag C). | "1986,12,21,8.9,C" |
 | daily_HKO_GMT_ALL.csv and daily_HKO_MINT_ALL.csv, rows 1986,12,19-21 | INFERRED: The values are a night minimum, not a daily mean: on 19-21 December 1986 they (7.7, 7.6, 8.9 °C) are below the minimum air temperature (10.1, 11.7, 13.0 °C). 7.6 °C on Saturday 20 December was the lowest of December 1986. | "1986,12,20,7.6,C" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0402: Prevailing Wind Direction (°) - King's Park (盛行風向 (度) - 京士柏), CSV file
+
+- **Creator:** Hong Kong Observatory (香港天文台), then the Royal Observatory, Hong Kong
+- **Date:** daily from 1992-07-01 (file as served on 2026-11-21)
+- **Kind:** data
+- **Class:** primary (Daily observations made at the time, served now as one CSV (the same kind as services-3).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** DATA.GOV.HK Terms and Conditions (free use with acknowledgement of the source), as recorded for services-3; not read again
+- **Link:** https://data.weather.gov.hk/cis/csvfile/KP/ALL/daily_KP_PDIR_ALL.csv
+- **Proof that it exists:** Header '盛行風向 (度) - 京士柏' / 'Prevailing Wind Direction (°) - King's Park'; first row '1992,7,1,180,#'
+- **What it gives (resolver's note, not checked):** The daily prevailing wind direction at King's Park, Kowloon, from 1 Jul 1992, with a completeness flag. It gives the wind of the Phase III clearance (1992) and of the demolition (1993-1994); it has no values for 1986.
+- **Lead:** L0402 (cited by services-3, hko-weather-1986-1992)
+- **Notes:** Bilingual header. The first rows carry '#' (incomplete) flags.

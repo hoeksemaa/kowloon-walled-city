@@ -55,3 +55,19 @@ See the leads under each item in the primary folder.
 | p.440, right column | The compulsory resumption ended on 2 July 1992: 8,494 units, 9,420 households and 28,198 persons moved out (about 10,845 per ha). 4,804 households (51%) went to public rental housing, 3,541 (38%) bought Home Ownership flats and 1,075 (11%) found homes by other means. (Also in blocked-b-1.) | "退去者は 8,494戸、9,420世帯、28,198人であった" (those moved out were 8,494 units, 9,420 households, 28,198 persons) |
 | p.441, right column | Buildings were divided into units (one or several rooms) that were let or sold. The clearance survey split the 8,494 units into 6,999 dwellings (82%), 1,000 non-residential or mixed units (11%) and 495 others (6%). | "住居は6,999戸（82%）、非住居及び併用住居は1,000戸（11%）" (6,999 dwellings (82%), 1,000 non-residential or mixed units (11%)) |
 | p.444, left column | The authors call the corridor network a 'second ground level' that worked like a road network. | 「第2のグランドレベル」 ('a second ground level') |
+
+### lead-l1085: Redevelopment of Kowloon Walled City a feasibility study
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ho Siu-fong, Betty, Redevelopment of Kowloon Walled City: A Feasibility Study, workshop report for the MSc in Urban Planning, University of Hong Kong, August 1986, 121 pp.; HKU Libraries Digital Repository, https://digitalrepository.lib.hku.hk/catalog/rr172s11z
+- **Class:** primary (A study made in 1986 from the author's site visits and interviews with officials, a District Board member, a social worker, the kaifong association's secretary and residents. Its history chapters (3, 4) are secondary background.)
+- **Date of the record:** 1986-08
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/surveys-and-studies-1960-1995/SOURCE.md`](../../primary-sources/surveys-and-studies-1960-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 65 (image 74) | In the property boom of the 1970s about 10 buildings were redeveloped each year. | "During the boom years, an average of 10 buildings were redeveloped each year." |
+| p. 100 (image 109) | The Tin Hau Temple was built about a century ago and moved to its present place after the Second World War. | "The Tin Hau Temple, built a century ago and relocated to the present location after the Second World War" |
+| p. 25 (image 34) | In 1933 the government counted 436 people in 64 houses inside the walls. | "there were 436 people living in 64 houses inside the walls." |
+| p. 26 (image 35) | By 1940 all buildings in the City were demolished except the old Yamen, the Lung Chun Yee Hok building and one private house. The walls were taken down in 1943 for the airport. | "By 1940, all buildings inside the Walled City except the old Yamen, Lung Chun Yee Hok building and one private dwelling were demolished." |
+| pp. 26-27 (images 35-36) | At the end of 1947 about 2,000 people lived in the City. In January 1948 the Public Works Department and police evicted them and pulled down their huts. | "At the end of 1947, there were about 2000 inhabitants in the Walled City." |

@@ -185,3 +185,16 @@ shows is the reader's reading of it.
 |---|---|---|
 | web page (大公文匯 version), para. on 杜琪峰 | The Hong Kong director 杜琪峰 (so written in this article; 杜琪峯 in HK01 and Wen Wei Po) grew up in the City, where many neighbours were gang members. The article quotes his recollection: if the police caught you, you were safe once you ran into the City, because the police would not go down there. | "如果有警察抓你，你跑到九龍城寨裏就沒事了。他不會下去的。" (If the police catch you, you are fine once you run into Kowloon Walled City. He won't go down there.) |
 | web page | Ian Lambot (林保賢) visited the City dozens of times between 1987 and 1992 and talked to herbal doctors, dentists, dim-sum cooks, barbers and fish-ball makers; he said each resident had his own story. | "各有各的故事" (each had his own story) |
+
+### lead-l0456: The News Lens (關鍵評論網), article 172320 (title not seen)
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** 梁啟智, 「消失中的香港：尋找九龍城寨」, The News Lens (關鍵評論網), article 172320, 26 August 2022 (reprint, modified 16 October 2025), https://www.thenewslens.com/article/172320 (Wayback copy http://web.archive.org/web/20251101194820/https://www.thenewslens.com/article/172320)
+- **Class:** secondary (A 2022 essay with reproduced maps and aerial photos. The aerial photos are records of their time from the Survey and Mapping Office; the text is the writer's later reading of them.)
+- **Date of the record:** 2022-08-26
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback copy of 1 Nov 2025, 1974 photo, film edge | INFERRED: The film label on the 1974 photo reads 'HK 20.11.74 1500' and a frame number, which I read as 9604. The label is small and the number can be wrong. | "HK 20.11.74 1500' 9604" |
+| Wayback copy of 1 Nov 2025, 1984 photo | INFERRED: In the 1984 photo, which the writer outlines in red, the City is a single dense block with a large building near its centre; open cleared ground lies to its south-east. This is my reading of the photo. | "1984年；圖片來源：地政總署測繪處" (1984; image source: Survey and Mapping Office, Lands Department) |
