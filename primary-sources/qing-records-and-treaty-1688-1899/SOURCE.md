@@ -2,14 +2,13 @@
 
 Records of the fort, the yamen and the treaty, made at the time.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 4 of 28 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1688-1971.
 - **Items:** 28, of which 28 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** this file only.
+- **Stored in git:** yes: 4 files with an open licence (Page tagged {{PD-old}} (public domain, author dead more than 100 years); Wikisource text under CC BY-SA 4.0; Public domain in the United States ('published before January 1, 1931'; 'The longest-living author of this work died in 1953'), as the main work page states; Wikisource text under the Creative Commons Attribution-ShareAlike License (page footer)), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -83,20 +82,34 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-commons-17: Treaties and conventions with or concerning China and Korea, 1894-1904 - together with various state papers and documents affecting foreign interests (IA cu31924023464286).pdf
 
-- **Creator:** William Woodville Rockhill (compiler); Washington: G.P.O.
-- **Date:** 1904
-- **Kind:** document
-- **Class:** primary (It prints the official English text of the 1898 Convention, six years after the signing.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain
-- **Link:** https://commons.wikimedia.org/wiki/File:Treaties_and_conventions_with_or_concerning_China_and_Korea,_1894-1904_-_together_with_various_state_papers_and_documents_affecting_foreign_interests_(IA_cu31924023464286).pdf
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/8/81/Treaties_and_conventions_with_or_concerning_China_and_Korea%2C_1894-1904_-_together_with_various_state_papers_and_documents_affecting_foreign_interests_%28IA_cu31924023464286%29.pdf, https://archive.org/details/cu31924023464286
-- **Proof that it exists:** Commons record: Artist 'Rockhill, William Woodville, 1854-1914; China. Treaties, etc ...'; 586 pages. Internet Archive search inside the book for 'Kowloon', page 77: 'within the city of Kowloon', 'the existing landing-place near Kowloon city'.
-- **What it gives (finder's note, not checked):** The English text of the Convention for the Extension of Hong Kong Territory (9 June 1898), on scan page 77: the clause on the Chinese officials 'within the city of Kowloon', the road from Kowloon to Hsinan, and the landing-place near Kowloon city. English Wikisource has no text of the Convention.
-- **Notes:** 912x1387 px pages, 17,559,293 bytes, SHA-1 e91e6d86fca0f4801d5e856f8004472195af03b1. The page numbers are the scan pages that the Internet Archive search gives; the printed page numbers can differ. Other matches: p.14 (contents: 'Extension of Hong Kong territory around Kowloon'), p.521 and p.526 (index), p.561 ('Of China at Kowloon City, to have'). Commons also holds MacMurray, 'Treaties and agreements with and concerning China, 1894-1919' (IA cu31924017545231), not opened. The 1899 Order in Council is in the 1964 Appendix IV that services.json holds.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** William Woodville Rockhill (comp.), Treaties and Conventions with or concerning China and Korea, 1894-1904, together with various State Papers and Documents affecting Foreign Interests (Washington: Government Printing Office, 1904), No. 12, 'Convention between the United Kingdom and China respecting an Extension of Hong Kong Territory', signed at Peking, 9 June 1898, pp. 58-59, with the map 'Hong Kong Extension' (I.D.W.O. No. 1376) after p. 58; index pp. 503 and 538. Wikimedia Commons PDF (from Internet Archive cu31924023464286), https://commons.wikimedia.org/wiki/File:Treaties_and_conventions_with_or_concerning_China_and_Korea,_1894-1904_-_together_with_various_state_papers_and_documents_affecting_foreign_interests_(IA_cu31924023464286).pdf
+- **Class:** primary (The text of the treaty of 1898 and the map attached to it, printed in an official compilation of 1904. The index entries are the compiler's summaries (secondary). The primary tree is correct.)
+- **Date of the record:** 1898-06-09 (Convention); printed 1904
+- **Files:**
+  - `top-commons-17-Treaties_and_conventions_with_or_concerning_China_and_Korea_-a8e61421.pdf` (in `local/`, not in git): Whole book (PDF, 17,559,293 bytes): the Convention of 9 June 1898 is on printed pp. 58-59 (PDF p. 78, INFERRED) and the map 'Hong Kong Extension' follows (PDF p. 80, INFERRED) (open licence, but kept in local/ because of its size: the host keeps the open copy); https://upload.wikimedia.org/wikipedia/commons/8/81/Treaties_and_conventions_with_or_concerning_China_and_Korea%2C_1894-1904_-_together_with_various_state_papers_and_documents_affecting_foreign_interests_%28IA_cu31924023464286%29.pdf; 17559293 bytes; SHA-256 `d384d9b938037c0bbce569464e2f157417be23db05f7a04e5f63d5a87a747fe6`; licence: Public domain in the United States (Commons licence tag PD-1923: 'This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931.'); a 1904 U.S. Government Printing Office publication (https://commons.wikimedia.org/wiki/File:Treaties_and_conventions_with_or_concerning_China_and_Korea,_1894-1904_-_together_with_various_state_papers_and_documents_affecting_foreign_interests_(IA_cu31924023464286).pdf)
+  - `top-commons-17-n79-367f2063.jpg` (in `local/`, not in git): Page image of the map 'Hong Kong Extension: Reproduction of the Map attached to the Convention... 9th of June 1898' (I.D.W.O. No. 1376), colour, 1584 x 2061 px; https://archive.org/download/cu31924023464286/page/n79.jpg; 772936 bytes; SHA-256 `0df5b0b527f14d0ad038ecb6417b0b62f3990192d1057ad0706148655d7f4571`; licence: No rights statement on the archive.org item (Cornell University Library scan); the same page is in the public-domain Commons PDF above (https://archive.org/details/cu31924023464286)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../secondary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 58 (leaf n77) | The Convention for the extension of Hong Kong was signed at Peking on 9 June 1898. Ratifications were exchanged in London on 6 August 1898. | "Signed at Peking, June 9, 1898. Ratifications Exchanged at London, August 6, 1898." |
+| p. 58 | Britain leased the new territory for 99 years. | "The term of this lease shall be ninety-nine years." |
+| p. 58 | Within the city of Kowloon, the Chinese officials then stationed there were to keep their jurisdiction. | "within the city of Kowloon the Chinese officials now stationed there shall continue to exercise jurisdiction" |
+| p. 58 | Their jurisdiction stopped where it conflicted with the military needs for the defence of Hong Kong. | "except so far as may be inconsistent with the military requirements for the defence of Hong Kong." |
+| p. 58 | In the rest of the leased territory Britain alone had jurisdiction. | "Within the remainder of the newly-leased territory Great Britain shall have sole jurisdiction." |
+| p. 58 | Chinese officials and people could still use the road from Kowloon to Hsinan (Xin'an county). | "Chinese officials and people shall be allowed as heretofore to use the road from Kowloon to Hsinan." |
+| p. 58 | The existing landing-place near Kowloon City was reserved for Chinese warships, merchant ships and passenger boats, which could come, go and lie there freely. | "the existing landing-place near Kowloon city shall be reserved for the convenience of Chinese men-of-war, merchant and passenger vessels" |
+| p. 58 | The landing-place was also for the movement of the officials and the people of the walled city. | "and for the convenience of movement of the officials and people within the city." |
+| p. 58 | The inhabitants of the extension were not to be expropriated or expelled. Land needed for public offices or forts was to be bought at a fair price. | "there will be no expropriation or expulsion of the inhabitants of the district included within the extension" |
+| p. 58 | If China built a railway to the boundary of the British Kowloon territory, the arrangements were to be discussed. | "When hereafter China constructs a railway to the boundary of the Kowloon territory under British control" |
+| p. 59 | Extradition of criminals was to follow the existing treaties between Britain and China and the Hong Kong Regulations. | "they shall be dealt with in accordance with the existing Treaties between Great Britain and China and the Hong Kong Regulations." |
+| p. 59 | The Convention came into force on 1 July 1898 (the 13th day of the 5th moon of the 24th year of Kuang Hsü). | "This Convention shall come into force on the first day of July, eighteen hundred and ninety-eight" |
+| p. 58, footnote a | Rockhill took his text from British Treaty Series No. 16, 1898. | "British Treaty Series. No. 16, 1898." |
+| map after p. 58 (scan leaf n79), title block | INFERRED: The map after p. 58 is a reproduction of the map attached to the Convention. Its scale is 1 inch to 4.96 miles. It shows the old colony in red and marks 九龍 at the tip of the peninsula. At this scale I see no mark for the walled city of Kowloon itself. | "Reproduction of the Map attached to the Convention between Great Britain and China signed at Peking on the 9th of June 1898" |
+
+- **Leads:**
+  - British Treaty Series No. 16, 1898 (the official text of the Convention of 9 June 1898 and its map), cited by Rockhill on p. 58, footnote a.
 ### top-commons-1: （康熙）新安縣志 - 1962.pdf
 
 - **Creator:** (清)勒文謨修;(清)鍾文炤纂 (as the Commons record writes it); scan from the National Library of China
@@ -334,19 +347,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-commons-16: 申報/1899/05/03 (section 九龍近事)
 
-- **Creator:** Shanghai (申報), from a correspondent in Guangzhou
-- **Date:** 1899-05-03
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** public domain (the page: author dead more than 100 years, published before 1931); Wikisource text CC BY-SA 4.0
-- **Link:** https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/05/03
-- **Proof that it exists:** Section heading 九龍近事: '昨得廣州采訪友人來書云自九龍劃歸英人管轄大憲委王觀察存善及祺大令沈叅戎往香港會同英官辦理一切'.
-- **What it gives (finder's note, not checked):** A letter from Guangzhou on the handover of the leased land in April 1899: the Chinese commissioners came back, Chinese troops left, and rumours of fighting were not confirmed. The search extract quotes '九龍寨城內外地方仍屬中國官員自治'.
-- **Notes:** Found with the zh.wikisource search '"九龍寨"' (27 hits; the other 26 are other places named 九龍寨, and 清史稿/卷72).
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** 申報 (Shanghai), 1899年5月3日（光緒二十五年三月廿四日）, section 九龍近事 (letter from a correspondent in Guangzhou, with the British order on the extension of Hong Kong). OCR text on zh.wikisource (source: moss-on-stone/shenbao-txt, file txt/1899-117-4909355.txt), https://zh.wikisource.org/wiki/申報/1899/05/03
+- **Class:** primary (Newspaper report of the time (May 1899), with a Chinese text of the British order. The primary tree is correct.)
+- **Date of the record:** 1899-05-03
+- **Files:**
+  - `top-commons-16-index-e6c316b8.txt` (in git): Wikitext (OCR transcription) of the whole 申報 issue of 3 May 1899, with the section 九龍近事 and the Chinese text of the British order; https://zh.wikisource.org/w/index.php?title=%E7%94%B3%E5%A0%B1/1899/05/03&action=raw; 46276 bytes; SHA-256 `34d44348233ab30033ef5d38d1cd03a0272883256e6a3bae85e481a458abf74d`; licence: Page tagged {{PD-old}} (public domain, author dead more than 100 years); Wikisource text under CC BY-SA 4.0 (https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/05/03)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 1899/05/03, section 九龍近事 | A correspondent in Guangzhou wrote this letter after Kowloon was put under British rule. | "昨得廣州采訪友人來書云自九龍劃歸英人管轄" (Yesterday we received a letter from our correspondent in Guangzhou, saying: since Kowloon was put under British administration...) |
+| 1899/05/03, section 九龍近事 | The provincial authorities sent 王存善 (a daotai), a magistrate 祺 and a colonel 沈 to Hong Kong to settle all matters with the British officials. They had come back to the provincial capital to report. | "大憲委王觀察存善及祺大令沈叅戎往香港會同英官辦理一切刻已回省禀覆" (The high officials sent Daotai Wang Cunshan, Magistrate Qi and Colonel Shen to Hong Kong to handle everything with the British officials; they have now returned to the provincial capital to report.) |
+| 1899/05/03, section 九龍近事 | The Chinese troops sent to keep order (the 建字營 and the 廣榖軍) were taken back on the gunboats 伏波 and 廣庚. | "其調往彈壓之建字營及廣榖軍亦由伏波廣庚兩兵輪船載回" (The Jianzi battalion and the Guanggu army sent there to keep order were also carried back by the two gunboats Fubo and Guanggeng.) |
+| 1899/05/03, section 九龍近事 | For days there were rumours that British troops had fought the local people and that many locals had died. The writer thinks the rumours were false. | "連日謠傳英兵與土人交戰土人死亡甚衆云云傳聞異詞諒係子虚烏有" (For days it was rumoured that British troops fought the local people and many locals died; the reports differ, and they are probably groundless.) |
+| 1899/05/03, section 九龍近事 | The locals asked the Chinese officers whether they came to help the British or the locals. The officers said they helped neither, and came to persuade the people, because the land was given to Britain by imperial order. The locals took this as help for the British, joined with the other villages and did not let the officers land. | "土人以其言似有助英之意聨合各鄉人阻不許登岸" (The locals took their words as siding with the British, joined the people of the villages and stopped them from landing.) |
+| 1899/05/03, section 九龍近事 (garbled passage) | After raising their flag, the British posted three articles of rules in the streets. The first said that 22 Hong Kong ordinances were not suitable for the New Territory (on livestock, slaughterhouses, markets, licences, opium, cleanliness, houses and registers of births and deaths). | "本港則例内有二十二條以之治理新界未能合宜" (Of the ordinances of this colony, twenty-two are not suitable for governing the New Territory.) |
+| 1899/05/03, section 九龍近事, appended order, clauses 1 and 3 | The paper appends the British order on the convention of 9 June 1898 that extended Hong Kong. It says that Hong Kong's laws apply to the extension from the date of the Governor's proclamation. | "西歴一千八百九十八年六月初九日中國與英國訂立約章允將香港附近之英國屬土展拓界址" (On 9 June 1898 of the Western calendar, China and Britain signed a convention agreeing to extend the boundary of the British territory near Hong Kong.) |
+| 1899/05/03, section 九龍近事, appended order, clause 4 | Clause 4 of the order, in this Chinese text: the area inside and outside the Kowloon walled city (九龍寨城) stays under the self-government of Chinese officials, except where it affects the military defence of Hong Kong. The Chinese text says 'inside and outside' (内外); the English Convention text (top-commons-17) says only 'within the city of Kowloon'. | "惟九龍寨城内外地方仍屬中國官員自治倘有關礙保護香港兵事不在此議" (Only the places inside and outside the Kowloon walled city remain under the self-government of Chinese officials; matters that affect the military protection of Hong Kong are not covered by this.) |
+
+- **Leads:**
+  - The original page image of 申報 1899/05/03 (to check the garbled passage of the regulations and the clause on 九龍寨城内外).
 ### top-commons-13: 申報/1899/05/13 (section 九龍英示)
 
 - **Creator:** Shanghai (申報); the notice is by 香港輔政使司駱君
@@ -395,36 +415,50 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### top-commons-15: 申報/1899/05/25 (section 英據深圳)
 
-- **Creator:** Shanghai (申報), quoting a Hong Kong daily (name lost in the OCR)
-- **Date:** 1899-05-25
-- **Kind:** press
-- **Class:** primary (A newspaper report of the time on the British troops at Kowloon City and beyond.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** public domain (age); Wikisource text CC BY-SA 4.0
-- **Link:** https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/05/25
-- **Other links:** https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/06/07
-- **Proof that it exists:** Section heading 英據深圳: '以本月某日□兵赴九龍城後初七日復分出三隊'.
-- **What it gives (finder's note, not checked):** British troops went to Kowloon City. On the 7th day, three columns went on (to Shenzhen, by the heading) and took the camps of the Chinese troops, who were not ready. Residents fled inland by boat.
-- **Notes:** The OCR text has many gaps (□), thus the reading is not sure. The 申報 of 1899/06/07 (section 英踞深圳, quoting 廣州中西報; the alt_url) says '英人旣踞九龍城復派兵三隊直抵深圳埠', and gives a British notice that residents no longer pay tax to China.
-- **Same item in the finder files:** top-china-25
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** 申報 (Shanghai), 1899年5月25日（光緒二十五年四月十六日）, section 英據深圳 (quoting a Hong Kong daily, name lost in the OCR); and 申報, 1899年6月7日（光緒二十五年四月廿九日）, sections 英踞深圳 (quoting 廣州中西報) and 助守虎門 (quoting 廣州博聞報). OCR text on zh.wikisource (source: moss-on-stone/shenbao-txt, files txt/1899-139-4909377.txt and txt/1899-152-4909390.txt), https://zh.wikisource.org/wiki/申報/1899/05/25 and https://zh.wikisource.org/wiki/申報/1899/06/07
+- **Class:** primary (Newspaper reports of the time (May-June 1899), reprinted from Hong Kong and Canton papers. The primary tree is correct.)
+- **Date of the record:** 1899-05-25; 1899-06-07
+- **Files:**
+  - `top-commons-15-index-48877f59.txt` (in git): Wikitext (OCR transcription) of the whole 申報 issue of 25 May 1899, with the section 英據深圳; https://zh.wikisource.org/w/index.php?title=%E7%94%B3%E5%A0%B1/1899/05/25&action=raw; 44228 bytes; SHA-256 `93fc4b2b037b0cfea339d978c59320d9f0371d6bc9a7aada2a7b6ce31ba0a2b6`; licence: Page tagged {{PD-old}} (public domain, author dead more than 100 years); Wikisource text under CC BY-SA 4.0 (https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/05/25)
+  - `top-commons-15-index-c075fea2.txt` (in git): Wikitext (OCR transcription) of the whole 申報 issue of 7 June 1899, with the sections 英踞深圳 and 助守虎門; https://zh.wikisource.org/w/index.php?title=%E7%94%B3%E5%A0%B1/1899/06/07&action=raw; 40182 bytes; SHA-256 `a9c72a92a2b4ca6a424f5715defff6f304ba8d77c199fb56cc315d4200669a8a`; licence: Page tagged {{PD-old}} (public domain, author dead more than 100 years); Wikisource text under CC BY-SA 4.0 (https://zh.wikisource.org/wiki/%E7%94%B3%E5%A0%B1/1899/06/07)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 1899/05/25, section 英據深圳 | 申報 of 25 May 1899 reprints a report from a Hong Kong daily paper (its name is lost in the OCR). | "香□□□日報云" (A Hong Kong ... daily paper says) |
+| 1899/05/25, section 英據深圳 | INFERRED: On a day of 'this month' (the 4th month of 光緒二十五年) British troops went to Kowloon City (九龍城). Afterwards, on the 7th, they split into three columns and went on (to 深圳, by the heading). The Chinese troops were not ready, and the British took their camps and posts. INFERRED: the 7th day of the 4th month of 光緒二十五年 is 16 May 1899, because the issue date 25 May 1899 is the 16th day of that month. | "以本月某日□兵赴九龍城後初七日復分出三隊□至□□□華軍無備據其營訊" (On a certain day this month [they sent] troops to Kowloon City; afterwards, on the 7th, they again split into three columns [and went] to [...]; the Chinese troops were unprepared, [and the British] took their camps and posts.) |
+| 1899/05/25, section 英據深圳 | When the residents saw the troops arrive suddenly, they did not know what to do. Many hired boats and fled inland to avoid the fighting. The OCR does not make clear which place's residents fled. | "居民一見□□猝至□無頭緒多有買舟逃赴内地以避干戈者" (When the residents saw [the troops] arrive suddenly, they were at a loss; many hired boats to flee inland to avoid the fighting.) |
+| 1899/05/25, section 英據深圳 | The British said that they held the place only to stop bandits gathering to resist and hurting people, and not to start a quarrel. | "然英人則謂今之撫有其地者實欲免土匪聚衆抗拒以致傷人並非有心向□人啓釁也" (But the British say that they hold the place now only to prevent bandits from gathering to resist and hurting people, and that they do not intend to start a quarrel with the [Chinese].) |
+| 1899/06/07, section 英踞深圳 | 申報 of 7 June 1899, quoting 廣州中西報: after the British occupied Kowloon City (九龍城), they sent three columns straight to Shenzhen market (深圳埠) and put up the British emblem there. | "英人旣踞九龍城復派兵三隊直抵深圳埠改樹英國徽章" (The British, having occupied Kowloon City, sent three columns of troops straight to Shenzhen market and put up the British emblem.) |
+| 1899/06/07, section 英踞深圳 | The British planned to build a wall around the rear of Kowloon and Shenzhen, to stop bandits making trouble again. | "并擬在九龍深圳之後築墻圍繞以防匪人再生事端" (and plan to build a wall around the rear of Kowloon and Shenzhen to prevent bandits from making trouble again) |
+| 1899/06/07, section 英踞深圳 | A British general's notice said that the place was now British territory; the residents no longer had to pay tax to China; and they could report any extortion by Chinese officials to the British officials. | "嗣後居民不必復納稅於中國如有華官勒索可往英官處報知" (from now on the residents need not pay tax to China again; if Chinese officials extort money, they can report it to the British officials) |
+| 1899/06/07, section 英踞深圳 | The Canton paper comments that Kowloon is a leased territory in name, but the British have in fact taken it as their own. | "若是則九龍雖名爲租界其實英人已據爲已有矣" (Thus, although Kowloon is called a leased territory, in fact the British have taken it as their own.) |
+| 1899/06/07, section 助守虎門 | 申報 of 7 June 1899, quoting 廣州博聞報: because the people of Kowloon (九龍士人) disobeyed, British officers sent troops to 南頭; the Governor-General sent troops to help guard 虎門. | "英官以九龍士人抗命之故揮兵至南安之南頭地方" (Because the Kowloon gentry and people disobeyed orders, the British officials sent troops to Nantou in 'Nan'an' [sic].) |
+
+- **Leads:**
+  - The Hong Kong daily paper (name lost in the OCR, '香□□□日報') whose report of the British occupation of Kowloon City and the march to 深圳 申報 reprinted on 25 May 1899.
+  - 廣州中西報, about early June 1899: the report 英踞深圳 (British general's notice on taxes; plan of a wall behind Kowloon and Shenzhen), reprinted in 申報 7 June 1899.
+  - The original page images of 申報 1899/05/25 and 1899/06/07 (to check the OCR gaps).
 ### top-commons-21: Twentieth Century Impressions of Hongkong, Shanghai, and other Treaty Ports of China/The Sanitary Board
 
-- **Creator:** Arnold Wright (editor); transcribed on English Wikisource
-- **Date:** 1908
-- **Kind:** book
-- **Class:** primary (A description of the work of the Sanitary Board, printed at the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** public domain (1908 book); Wikisource transcription CC BY-SA 4.0
-- **Link:** https://en.wikisource.org/wiki/Twentieth_Century_Impressions_of_Hongkong,_Shanghai,_and_other_Treaty_Ports_of_China/The_Sanitary_Board
-- **Proof that it exists:** 'the only portions of which territory assessed are Kowloon City, Sam Shui Po, Nga In Tau, and Little Kowloon'.
-- **What it gives (finder's note, not checked):** In 1908, the only parts of New Kowloon that were assessed (for rates) were Kowloon City, Sam Shui Po, Nga In Tau and Little Kowloon. It says that New Kowloon was leased in 1898.
-- **Notes:** commons.json holds the chapter 'Hongkong (Descriptive)' of the same book (commons-28). I opened it in this top-up: its paragraph begins 'Beyond the small villages of Hok-ün and Tukwawan, Matauchung and Hgatsinlong, is Kowloon City, once a thriving town but now'. The chapters 'Public Works' ('one past Kowloon City, leading in the direction of Customs Pass') and 'Harbour and Shipping' ('Kowloon City Pier') were not opened.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** A. Shelton Hooper, 'The Sanitary Board', in Arnold Wright (ed.), Twentieth Century Impressions of Hongkong, Shanghai, and other Treaty Ports of China (London: Lloyd's Greater Britain Publishing Co., 1908), pp. 157-159 (the passage on New Kowloon on p. 158). English Wikisource transcription, https://en.wikisource.org/wiki/Twentieth_Century_Impressions_of_Hongkong,_Shanghai,_and_other_Treaty_Ports_of_China/The_Sanitary_Board
+- **Class:** primary (Written in about 1907-1908 by a member of the Sanitary Board, with figures of the time (1906-1907). The one-line history of the lease of 1898 is background. The primary tree is correct.)
+- **Date of the record:** 1908 (figures of 1906-1907)
+- **Files:**
+  - `top-commons-21-index-879eb6ae.txt` (in git): Wikitext of the proofread transcription of p. 158 (djvu page 166), with the Sanitary Board's area and the rates of New Kowloon; https://en.wikisource.org/w/index.php?title=Page:Twentieth_Century_Impressions_of_Hongkong,_Shanghai,_and_other_Treaty_Ports_of_China.djvu/166&action=raw; 10822 bytes; SHA-256 `314ee013a5bac9392f224efa1792b4e28acab9fdce681eb6373128152bf89233`; licence: Public domain in the United States ('published before January 1, 1931'; 'The longest-living author of this work died in 1953'), as the main work page states; Wikisource text under the Creative Commons Attribution-ShareAlike License (page footer) (https://en.wikisource.org/wiki/Twentieth_Century_Impressions_of_Hongkong,_Shanghai,_and_other_Treaty_Ports_of_China)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/qing-records-and-treaty-1688-1899/SOURCE.md`](../../secondary-sources/qing-records-and-treaty-1688-1899/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 157 | The chapter is by A. Shelton Hooper, a member of the Sanitary Board and of the Sanitary Commission. | "Member of the Board and of the Sanitary Commission." |
+| p. 158 | The Sanitary Board's area covered Hong Kong Island (29 square miles) and the mainland between the shore and the first range of the Kowloon Hills. | "that portion of the British territory on the mainland between the shore and the first range of the Kowloon Hills" |
+| p. 158 | The mainland part ran from the village of Tseung Kwan O (將軍澳) in Junk Bay on the east to the village of Kau Pa Hang on the west. It had about 13 miles of sea front and about 16 square miles. | "with a sea-frontage of about 13 miles and an area of about 16 square miles." |
+| p. 158 | The rest of the New Territories was outside the Sanitary Board's jurisdiction. | "The remaining part of the New Territories—a considerable area—is not under the jurisdiction of the Sanitary Board." |
+| p. 158 | The rateable value of the whole colony was $10,654,338. | "The present rateable value of the whole Colony is $10,654,338" |
+| p. 158 | INFERRED: In New Kowloon only Kowloon City (九龍城), Sam Shui Po, Nga In Tau and Little Kowloon were assessed for rates. Their rateable value was $61,835. The text does not say if the walled city itself (the Chinese-held 'city of Kowloon' of 1898) was part of the assessed 'Kowloon City'; it can mean the town around it (INFERRED doubt). | "the only portions of which territory assessed are Kowloon City, Sam Shui Po, Nga In Tau, and Little Kowloon—$61,835." |
+| p. 158 | Rates were 7 per cent in the outlying Chinese villages and 13 per cent in the city of Victoria. | "The rates levied vary from 7 per cent. in the outlying Chinese villages lo 13 per cent, in the city of Victoria." |
+| p. 158 | In 1906 the rates collected were $1,400,641; of this, $2,800 came from the New Territory. | "The amount collected in 1906 was $1,400,641, of which $2,800 was derived from the New Territory." |
 ### top-commons-9: 九龍及荃灣暴動報告書/第2章
 
 - **Creator:** Hong Kong Government (unsure)

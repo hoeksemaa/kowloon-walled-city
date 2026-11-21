@@ -133,6 +133,8 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`guidebooks-and-travel-writing-1920-1993/`](guidebooks-and-travel-writing-1920-1993/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/guidebooks-and-travel-writing-1920-1993/SOURCE.md |
 | [`press-and-agency-photos-1948-1995/`](press-and-agency-photos-1948-1995/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/press-and-agency-photos-1948-1995/SOURCE.md |
 | [`world-press-1899-1995/`](world-press-1899-1995/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/world-press-1899-1995/SOURCE.md |
+| [`missions-1953-1977/`](missions-1953-1977/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/missions-1953-1977/SOURCE.md |
+| [`qing-records-and-treaty-1688-1899/`](qing-records-and-treaty-1688-1899/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 
