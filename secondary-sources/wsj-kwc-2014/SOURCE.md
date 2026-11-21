@@ -398,25 +398,28 @@ Chinese names from WSJ's text, two limits and two data notes.
 
 ## More items: the source search of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 1 items. New parts of the WSJ interactive.
 
 ### popular-23: City of Imagination: Kowloon Walled City 20 Years Later
 
-- **Creator:** The Wall Street Journal
-- **Date:** 2014-04-02
-- **Kind:** film
-- **Class:** secondary (A later short documentary that tells the story with archive footage and interviews.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Dow Jones
-- **Link:** https://www.youtube.com/watch?v=dj_8ucS3lMY
-- **Other links:** https://www.archdaily.com/502742/city-of-imagination-kowloon-walled-city-20-years-later, https://www.vice.com/en/article/a-new-look-at-kowloon-walled-city-the-internets-favorite-cyberpunk-slum
-- **Proof that it exists:** YouTube oEmbed: title 'City of Imagination: Kowloon Walled City 20 Years Later', author_name 'The Wall Street Journal'; ArchDaily post by Connor Walker, 2 May 2014.
-- **What it gives (finder's note, not checked):** Not watched. Vice (Derek Mead, 3 Apr 2014) says it features Ian Lambot and Greg Girard. A search extract says it uses Suenn Ho's footage; a search summary gives 18 minutes (not checked).
-- **Notes:** Check against the held folders primary-sources/wsj-kwc-2014 and secondary-sources/wsj-kwc-2014 before collecting: the film can be part of that WSJ project. en Wikipedia lists it under documentary films; a ghostarchive copy exists (https://ghostarchive.org/varchive/youtube/20211117/dj_8ucS3lMY, not opened). The words of Girard and Lambot in it are retrospective.
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I did not watch the film (video). I read its YouTube metadata in a browser (title, date, length 1045 s, description, tags), the oEmbed record, the ghostarchive page, and the posts of Vice (3 Apr 2014), ArchDaily (2 May 2014) and Metalocus (4 May 2014). The only caption track is auto-generated, and it returned empty. IMDb (tt10283468, '18m' per a search summary) gave 403. The film is a companion of the WSJ interactive (tag 'wsjkwc'), not the same item; INFERRED that it reuses its interviews and Suenn Ho's footage.
+- **Citation:** The Wall Street Journal, 'City of Imagination: Kowloon Walled City 20 Years Later', documentary video, 17 min 25 s, YouTube channel The Wall Street Journal, published 2 April 2014, https://www.youtube.com/watch?v=dj_8ucS3lMY (metadata read 2026-11-20); Derek Mead, Vice, 3 April 2014, https://www.vice.com/en/article/a-new-look-at-kowloon-walled-city-the-internets-favorite-cyberpunk-slum ; Connor Walker, ArchDaily, 2 May 2014, https://www.archdaily.com/502742/city-of-imagination-kowloon-walled-city-20-years-later.
+- **Class:** secondary (A documentary of 2014. The words of witnesses in it (Girard, Lambot, former residents) are retrospective (2014). The tree secondary is correct.)
+- **Date of the record:** 2014-04-02
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/wsj-kwc-2014/SOURCE.md`](../../primary-sources/wsj-kwc-2014/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube page metadata (publishDate, lengthSeconds) | WSJ published the film on YouTube on 2 April 2014. It is 1045 seconds long (17 min 25 s). | "City of Imagination: Kowloon Walled City 20 Years Later" |
+| YouTube description | The description calls the City once the densest place on earth, and a lawless labyrinth of crime, grime, commerce and hope. | "The Kowloon Walled City in Hong Kong was once the densest place on earth, a virtually lawless labyrinth of crime, grime, commerce and hope." |
+| YouTube page metadata (keywords) | INFERRED: The tags of the video name greg girard, ian lambot, suenn ho, diana jou, lara day, deborah kan, adam najberg, elizabeth sinn and hong kong university. INFERRED: these people appear in the film or made it; tags are not credits. | "greg girard, ian lambot, ... suenn ho, diana jou, lara day, deborah kan, adam najberg ... elizabeth sinn" |
+| Vice, 3 Apr 2014 | Vice says that the film features the photographers Ian Lambot and Greg Girard. | "features Ian Lambot and Greg Girard, who combined to produce the text and photographs" |
+| Vice, 3 Apr 2014 | Vice says that at its height, in the late 1980s, some 33,000 people lived on about 2.6 hectares. | "some 33,000 people were packed into roughly 2.6 hectares" |
+| Vice, 3 Apr 2014 | Vice quotes John Flint, a South China Morning Post reporter, writing in 1995: the City was known for prostitutes, opium dens and unlicensed dentists. | "prostitutes, opium dens and unlicensed dentists" |
+
+- **Leads:**
+  - South China Morning Post, 1995, John Flint (reporter), the phrase 'prostitutes, opium dens and unlicensed dentists' (quoted by Vice, 3 Apr 2014; title and exact date not given).
+  - Watch the film (17 min 25 s) and transcribe the words of the former residents, of Girard and Lambot, and of Elizabeth Sinn (all retrospective, 2014).

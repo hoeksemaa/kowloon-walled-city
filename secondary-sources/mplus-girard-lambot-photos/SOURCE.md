@@ -263,3 +263,60 @@ exact in the saved pages or the cited repo files, and a live check agreed. I add
 image descriptions of the eight objects, and put the other words of Chan Cheung Chuen (陳祥全)
 in 8038 into the primary twin. I also fixed the storeys limit, the razing row and some
 Chinese names, and noted the secondary part of fact T6.
+
+## Items of the reading of the source search of 2026-11
+
+### blocked-c-15: City of Darkness / Kowloon Walled City
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Blue Lotus Gallery, 'City of Darkness / Kowloon Walled City', gallery page with photos by Ian Lambot and Greg Girard and an excerpt of Cathie Breslin, https://bluelotus-gallery.com/kowloon-walled-city ; artist page https://bluelotus-gallery.com/greg-girard-1/city-of-darkness (read 2026-11-20).
+- **Class:** primary (The photos (1987-1990) are primary. The page text is secondary (written after 1993; date not given). The Breslin excerpt is a reporter's text of Nov 1963 (primary, but of 1963). The tree primary is correct for the photos.)
+- **Date of the record:** photos: Panorama South #1, Cafe and Children 1989; the others not dated on the page; page text undated (after 1993)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../primary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| page text | The gallery says that the City had 33,000 people in 300 interconnected high-rise buildings. | "33,000 people living in 300 interconnected high-rise buildings" |
+| artist page /greg-girard-1/city-of-darkness | The artist page dates Girard's project 1986-1993. | "City of Darkness, Kowloon's Walled City, 1986-1993" |
+
+### top-blocked-c-8: Voices of the Walls. Kowloon's Walled City Explored
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Blue Lotus Gallery, 'Exhibition: Voices of the walls.' (photographs by Ian Lambot, Greg Girard, Keeping Lee and Bianca Tse), 28 Pound Lane, Sheung Wan, Hong Kong, 17 Oct - 30 Nov 2024, https://bluelotus-gallery.com/new-events/exhibition-kowloon-walled-city ; and ''City of Darkness' by Greg Girard & Ian Lambot', 8 Nov - 8 Dec 2019, https://bluelotus-gallery.com/new-events/2019/11/8/city-of-darkness-by-greg-girard-amp-ian-lambot (read 2026-11-20).
+- **Class:** primary (The photos of 1987-1990 are primary. The gallery text of 2019 and 2024 is secondary, and it has errors (for example '4 to 6 stories'). The tree primary is correct for the photos.)
+- **Date of the record:** photos 1987 (Keeping Lee; Girard night view), 1989 (Girard store; Lambot Dentist's Chair), 1990 (Caged Balconies #1); Aerial View #2 year cut off; page text 2019 and 2024
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../primary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 2024 page, text | The 2024 gallery text says that the City had about 30,000 to 50,000 people on 6.4 acres at its peak. | "At its peak, Kowloon Walled City housed approximately 30,000 to 50,000 residents in just 6.4 acres." |
+| 2024 page, text | The 2024 gallery text says that the buildings were typically 4 to 6 storeys high, with some up to 12. This is too low for the 1980s: the photos on the same page show many blocks of more than ten storeys. | "These structures typically ranged from 4 to 6 stories high, with some reaching up to 12 stories." |
+| 2024 page, text | The 2024 gallery text says that the residents had shops, small factories, restaurants, services, schools, dentists and medical facilities, but little water and sewerage. | "including schools and dentists and medical facilities" |
+| image file, IPTC caption (2:120) | Greg Girard, 'Convenience Store with Living Quarters', 1989. The caption embedded in the image file says that Lee Pui Yuen's store had a shop-and-living area at the front and a small bedroom at the back, where mother, father and son slept together. | "a rudimentary bedroom at the back – where mother, father and son slept together" |
+| image file, IPTC caption (2:120) | The same caption says that the store stayed open until Lee Pui Yuen and his wife turned off the television and went to bed. The repo's City of Darkness Revisited notes put his store at 12 Tai Chang Street from 1979. | "the business effectively remained open until Pui Yuen and his wife turned off the television and went to bed." |
+| 2024 page, text | The 2024 page calls Keeping Lee's prints unseen silver gelatine prints. It gives no dates of his life. | "So far unseen silver gelatine prints by Keeping Lee." |
+| 2019 page, caption | The 2019 show page dates one Girard photo: 'Kowloon Walled City Night View from SW Corner', 1987. Its other 24 photos have no captions. | "'Kowloon Walled City Night View from SW Corner'. Hong Kong 1987 © Greg Girard" |
+
+### top-blocked-c-11: M+ Collection Data (collection-data)
+
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** M+ Museum, Hong Kong, 'collection-data' (GitHub mplusmuseum/collection-data, branch master, objects.csv and constituents.csv, commit a8d7f65 'Update CSV files', 2026-08-05), CC0 1.0; https://github.com/mplusmuseum/collection-data (read 2026-11-20).
+- **Class:** secondary (A museum catalogue of 2026 about objects made in 1987-1993. The data is secondary; it is an index to primary photos and to Suenn Ho's archive. It can stay in this folder as an index, or go to secondary-sources/.)
+- **Date of the record:** data of 2026-08-05 (commit a8d7f65)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../primary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| constituents.csv, rows 259, 2756, 2896, 1134 | The constituents file names the makers: Ian Lambot (林保賢), id 259, British, born 1953; Greg Girard (格雷格．吉拉德), id 2756, Canadian, born 1955; Ryuji Miyamoto (宮本隆司), id 2896, Japanese, born 1947; Suenn Ho (何巽), id 1134, American, born 1961. | "259 / Ian Lambot / 林保賢 / British, born 1953" |
+| objects.csv, 2013.143, 2017.410-412 | M+ holds four Walled City prints by Lambot: 2013.143 Aerial View from the Southwest (1989), 2017.412 South Elevation (1990), 2017.410 Caged Balconies (1990) and 2017.411 Shared staircase linking three buildings (1991). They were printed in 2013-2015. | "Kowloon Walled City—Aerial View from the Southwest / 1989, printed 2013" |
+| objects.csv, 2018.1-2018.4 | M+ holds four Walled City prints by Girard: 2018.4 Tung Tau Tsuen Road facade (東頭村道建築外牆) (1987), 2018.2 Children on Rooftop (1989), 2018.1 Alley View #2 (1990) and 2018.3 Alley View #3 (1990), printed 2015. | "Kowloon Walled City—Tung Tau Tsuen Road facade / 1987, printed 2015" |
+| objects.csv, 2018.213-2018.221 | M+ holds nine Walled City prints by Miyamoto, objects 2018.213-2018.221, titled 九龍寨城 #015, #036, #054, #056, #061, #075, #078, #103 (photographed 1987) and #125 (photographed 1993), printed 1997-2016. | "Kowloon Walled City, #125 / photographed 1993, printed 1998" |
+| objects.csv and objects_JSON/9000/09404.json | INFERRED: Object 2018.214 is 'Kowloon Walled City, #036' (九龍寨城, #036), photographed 1987, printed 2004, gelatin silver print, image 40.4 x 51 cm. It has no image description. Its internal id is 9404. The internal ids 9403-9411 follow the objects 2018.213-2018.221, thus the M+ image file 009404 is #036 (INFERRED; this confirms the repo's guess that file 009404 is object 2018.214). | "id": 9404 ... "objectNumber": "2018.214" ... "Kowloon Walled City, #036" |
+| objects.csv, 2018.216, images (alt text) | The M+ image description of Miyamoto's #056 (1987): a narrow stepped passage, dimly lit, with beams and wires above, and display cabinets and gas canisters at the doors of shops. | "Display cabinets and gas canisters appear by the entrance of shops in the middle ground." |
+| objects.csv, 2018.217, images (alt text) | The M+ image description of Miyamoto's #061 (1987): a dim passage with a brightly lit shop; display cabinets with bottles, a freezer, sacks, containers and boxes at its door, and packs of toilet rolls hung above. | "Display cabinets with bottles, a freezer, sacks, containers, and boxes fill the shop entrance." |
+| objects.csv, 2018.219 and 2018.220, images (alt text) | The M+ image description of Miyamoto's #078 (1987): a view up at a grille ceiling strewn with litter, between buildings. Of #103 (1987): antennas on the roofs, and a roof full of laundry on lines and on the ground. | "a low-angle view of a grilled ceiling ... Strewn with litter" |
+| objects.csv, CA17 and CA17/1 (ids 11810-11828) | INFERRED: Suenn Ho's archive CA17 has 16 items (1988-1992); the video series CA17/1 has 13 items, but the public data lists only 11 cassettes (1-4 and 6-12). The internal ids 11817 and 11825 are missing from the run 11810-11828. INFERRED: they are cassette 5 and cassette 13, which are not public. | "Video footage, Kowloon Walled City research project / 1988–1992 / ... / 13 items" |
+| objects.csv, CA17/2/1-3, images (alt text) | The image descriptions of Suenn Ho's three route maps (CA17/2/1-3, 20-21 Nov 1991) say that each shows tightly packed numbered units with routes in coloured marker, and that Tung Tau Tsuen Road runs along the top. | "showing an area with tightly packed numbered units ... Tung Tau Tsuen road runs along the top of the area." |
+| objects.csv, CA44/2/25; constituents.csv, id 4191 | M+ holds a sketch of the Walled City by Arthur Hacker (許敬雅, 1932-2013) for a 'Hong Kong Sites and Legends' poster, dated [1970s-1980s], marker ink on paper, 54.9 x 39.4 cm (CA44/2/25, 香港景點與傳奇海報：九龍城寨速寫). | "Sketch, Kowloon Walled City, Hong Kong Sites and Legends poster / [1970s–1980s]" |
+| objects.csv, constituent 358 | The data has no Walled City work by Ozawa Tsuyoshi (小澤剛, id 358). His M+ works are others (for example 'Canton Tokyo-1', 2005, and 'The Return of Dr. N', 2013). | "358 / Ozawa Tsuyoshi / 小澤剛 / Japanese, born 1965" |
+| README.md | The dataset has no images; the README says that the creators have rights over the images. | "Images are therefore not included in this dataset." |

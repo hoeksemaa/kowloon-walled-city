@@ -100,6 +100,7 @@ The images and scans of both source trees are listed by date in
 | [`park-and-heritage-2006-2026/`](park-and-heritage-2006-2026/SOURCE.md) | The primary parts of the items of the secondary folder of the same name: records of the time that they quote or show, and the words of witnesses | see the items | no (notes only) | ../secondary-sources/park-and-heritage-2006-2026/SOURCE.md |
 | [`depictions-film-and-tv-1966-2025/`](depictions-film-and-tv-1966-2025/SOURCE.md) | The primary parts of the items of the secondary folder of the same name: records of the time that they quote or show, and the words of witnesses | see the items | no (notes only) | ../secondary-sources/depictions-film-and-tv-1966-2025/SOURCE.md |
 | [`scholarship-land-and-planning-1992-2026/`](scholarship-land-and-planning-1992-2026/SOURCE.md) | The primary parts of the items of the secondary folder of the same name: records of the time that they quote or show, and the words of witnesses | see the items | no (notes only) | ../secondary-sources/scholarship-land-and-planning-1992-2026/SOURCE.md |
+| [`history-books-1988-2026/`](history-books-1988-2026/SOURCE.md) | The primary parts of the items of the secondary folder of the same name: records of the time that they quote or show, and the words of witnesses | see the items | no (notes only) | ../secondary-sources/history-books-1988-2026/SOURCE.md |
 
 ## Blocked: links for John to look at
 

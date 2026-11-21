@@ -173,3 +173,17 @@ gives a WSJ video GUID for each clip.
 - Shared with other pages: T2 (SCMP 2013), T6 (HK01 (香港01) 2016, M+ audio guide),
   T18 and T30 (HK01 2016).
 - The WSJ narration (secondary): T31–T34 are in [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md).
+
+## Items of the reading of the source search of 2026-11
+
+### popular-23: City of Imagination: Kowloon Walled City 20 Years Later
+
+- **Status:** Partly read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20. I did not watch the film (video). I read its YouTube metadata in a browser (title, date, length 1045 s, description, tags), the oEmbed record, the ghostarchive page, and the posts of Vice (3 Apr 2014), ArchDaily (2 May 2014) and Metalocus (4 May 2014). The only caption track is auto-generated, and it returned empty. IMDb (tt10283468, '18m' per a search summary) gave 403. The film is a companion of the WSJ interactive (tag 'wsjkwc'), not the same item; INFERRED that it reuses its interviews and Suenn Ho's footage.
+- **Citation:** The Wall Street Journal, 'City of Imagination: Kowloon Walled City 20 Years Later', documentary video, 17 min 25 s, YouTube channel The Wall Street Journal, published 2 April 2014, https://www.youtube.com/watch?v=dj_8ucS3lMY (metadata read 2026-11-20); Derek Mead, Vice, 3 April 2014, https://www.vice.com/en/article/a-new-look-at-kowloon-walled-city-the-internets-favorite-cyberpunk-slum ; Connor Walker, ArchDaily, 2 May 2014, https://www.archdaily.com/502742/city-of-imagination-kowloon-walled-city-20-years-later.
+- **Class:** secondary (A documentary of 2014. The words of witnesses in it (Girard, Lambot, former residents) are retrospective (2014). The tree secondary is correct.)
+- **Date of the record:** 2014-04-02
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/wsj-kwc-2014/SOURCE.md`](../../secondary-sources/wsj-kwc-2014/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Vice, 3 Apr 2014 | INFERRED: Retrospective (2014): a former resident, not named, says that people who could not afford heroin died, and that families moved the bodies to the bedrooms. INFERRED: the words are from the film (Vice quotes them in its post on the film). | "When people couldn't afford heroin, they would die ... just moved their dead bodies to the bedrooms." |

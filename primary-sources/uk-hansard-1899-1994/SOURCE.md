@@ -2,10 +2,9 @@
 
 Debates and answers of the time that name the City; open on api.parliament.uk.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 3 of 16 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 1899-2020.
 - **Items:** 16, of which 16 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -83,19 +82,21 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### ukhansard-12: Welfare Reform and Work Bill: Second Reading (maiden speech of Baroness Stroud, col. 98)
 
-- **Creator:** House of Lords; Baroness Stroud (Philippa Stroud)
-- **Date:** 2015-11-17
-- **Kind:** testimony
-- **Class:** retrospective (A former resident's own account, given in 2015.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** Open Parliament Licence
-- **Link:** https://www.theyworkforyou.com/lords/?id=2015-11-17a.28.4#g98.0
-- **Proof that it exists:** Welfare Reform and Work Bill: Second Reading, HL Deb 17 November 2015, c98: 'I lived in a place called the Walled City, a slum area rife with drug trading and prostitution.'
-- **What it gives (finder's note, not checked):** After university she went to Hong Kong and lived in the Walled City; she worked with drug addicts to help them stop and recover, and says the larger task was rebuilding work, family ties, money and mental health.
-- **Notes:** retrospective (2015). The speech gives no year. INFERRED: late 1980s, with Jackie Pullinger's work (not stated in the speech; check a biography). The page is 388k characters; the speech is in characters 200k-300k.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Baroness Stroud (Philippa Stroud), maiden speech, Welfare Reform and Work Bill, Second Reading, House of Lords, 17 November 2015, HL Deb col. 98; TheyWorkForYou, https://www.theyworkforyou.com/lords/?id=2015-11-17a.28.4#g98.0 (read 2026-11-20).
+- **Class:** retrospective (retrospective (2015): her own memory, in 2015, of her life and work in the Walled City (in 1987-89 per en.wikipedia). The tree primary is correct.)
+- **Date of the record:** 2015-11-17
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/uk-hansard-1899-1994/SOURCE.md`](../../secondary-sources/uk-hansard-1899-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| col. 98 | Retrospective (2015): Philippa Stroud went to live in Hong Kong after she left university. She does not give the year. | "when I left university—a few more years ago than I care to admit to ... I went to live in Hong Kong." |
+| col. 98 | Retrospective (2015): She lived in the Walled City. She calls it a slum area full of drug trading and prostitution. | "I lived in a place called the Walled City, a slum area rife with drug trading and prostitution." |
+| col. 98 | Retrospective (2015): In the City she worked with drug addicts to take them off drugs and to see them fully rehabilitated. | "I worked with drug addicts to take them off drugs and see them completely rehabilitated." |
+| col. 98 | Retrospective (2015): She says that the hard part for the addicts came after the withdrawal: learning to work again, family relationships, managing money and mental health. | "the rebuilding of learning to work again, of family relationships, of learning how to manage one's finances and deal with one's mental health problems." |
+
+- **Leads:**
+  - Robert Colvile, 'Philippa Stroud on family breakdown, welfare reform and Brexit', CapX, 5 July 2017 (cited by en.wikipedia for her years in Hong Kong and Macau, 1987-89). Not opened.
 ### ukhansard-6: The Kowloon Rising.
 
 - **Creator:** House of Commons; questions by Lord Charles Beresford, General Russell, Sir E. Ashmead-Bartlett, Mr Gibson Bowles; answer by Mr Joseph Chamberlain
@@ -157,6 +158,7 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Squatters' Huts (Removal), HC Deb 27 July 1949 vol 467 cc133-4W
 - **What it gives (finder's note, not checked):** Hong Kong police removed squatter huts in Kowloon on 3 July 1949, near the touchdown point of Kai Tak airport, for public health, fire risk and aircraft safety; about 3,000 squatters (the question says 6,000 people, 2,000 homes).
 - **Notes:** Does NOT name the Walled City or Kowloon City. Kept for the surroundings near Kai Tak; drop it if the lens must name the City.
+- **Reading of 2026-11-20:** it is not about the City. I read the whole written answer on api.parliament.uk with WebFetch. It names only Kowloon, Kai Tak Airport, Hong Kong and China. It does not name Kowloon City or the Walled City. I give the facts for the surroundings near Kai Tak; drop them if the lens must name the City.
 
 ### ukhansard-8: British and Western Union Defence
 
@@ -176,20 +178,24 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### ukhansard-9: Hong Kong (Tung Tao Fire)
 
-- **Creator:** House of Commons; question by Mr Dugdale, answer by Mr Oliver Lyttelton (Colonial Secretary)
-- **Date:** 1952-03-12
-- **Kind:** document
-- **Class:** primary (Colonial Office answer of the time on relief it organised.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Open Parliament Licence
-- **Link:** https://api.parliament.uk/historic-hansard/commons/1952/mar/12/hong-kong-tung-tao-fire
-- **Other links:** https://www.theyworkforyou.com/debates/?id=1952-03-12a.1375.7
-- **Proof that it exists:** Hong Kong (Tung Tao Fire), HC Deb 12 March 1952, vol 497, cc1375-6
-- **What it gives (finder's note, not checked):** Relief after the November 1951 fire at Tung Tao village: relief run by the Social Welfare Office and the Kowloon City Kaifong Welfare Association; 74,000 free meals, 320,000 garments; 2,996 registered families; Fuk Wa Village settlement; sites at Kings Park, Laichikok and Tung Tao.
-- **Notes:** Names 'Kowloon City' only as the name of the kaifong association; does not name the Walled City. Useful for the surroundings: Tung Tao (Tung Tau) village is next to the City. INFERRED that this Tung Tao is the Tung Tau beside the City.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** House of Commons, 'Hong Kong (Tung Tao Fire)', question 36 by Mr Dugdale, answer by Mr Oliver Lyttelton (Secretary of State for the Colonies), circulated in the Official Report, HC Deb 12 March 1952 vol 497 cc1375-6; https://api.parliament.uk/historic-hansard/commons/1952/mar/12/hong-kong-tung-tao-fire (read 2026-11-20).
+- **Class:** primary (A ministerial answer of the time on relief work of Nov-Dec 1951. The tree primary is correct.)
+- **Date of the record:** 1952-03-12 (answer); the events are of November-December 1951
+- **Files:**
+  - `ukhansard-9-hong-kong-tung-tao-fire-d66c767d.html` (in `local/`, not in git): HTML of the Hansard page (short page, one question and answer); https://api.parliament.uk/historic-hansard/commons/1952/mar/12/hong-kong-tung-tao-fire; 9563 bytes; SHA-256 `2788999889af10670b290f95bbc1340b3351276ab93b5f139553b4262684b563`; licence: Page footer: '© UK Parliament'. The plan records the Open Parliament Licence, but the parliament.uk copyright page gave HTTP 403 to me, thus I could not confirm it for this file. (https://www.parliament.uk/site-information/copyright/)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| c1375, question 36 | INFERRED: Mr Dugdale asked what the Hong Kong Government did to relieve the people of the fire at Tung Tao village. The fire was in the November before the question, thus November 1951 (INFERRED from 'last November' in a question of March 1952). | "the fire at Tung Tao village last November" |
+| c1375-6, written answer | The Social Welfare Office and the Kowloon City Kaifong Welfare Association coordinated the relief after the fire. | "the Kowloon City Kaifong Welfare Association" |
+| c1376, written answer | At the scene, the relief served 74,000 free meals. The public gave 320,000 garments. | "Seventy-four thousand free meals were served on the scene and 320,000 garments provided generously by the public." |
+| c1376, written answer | Most of the people who lost their homes found shelter for themselves. Few used the temporary shelter in nearby schools. | "few needed the temporary shelter offered them in nearby schools, etc." |
+| c1376, written answer | About 80 people still lived at the fire site, in a mat shed. The Social Welfare Department put up the mat shed on 24 November 1951. | "Only some 80 persons remained on the scene of the fire, living in a mat shed erected by the Social Welfare Department on 24th November." |
+| c1376, written answer | On 26 November 1951, about 100 squatters who had no other home got sites in a new settlement, Fuk Wa Village. By the end of December the village had 550 people. | "About 100 squatters who could find no other homes were given sites in a new settlement—Fuk Wa Village—on 26th November." |
+| c1376, written answer | The government registered 2,996 families after the fire. Of these, 848 (28 per cent) said that they could raise $1,200 to build an approved type of bungalow. | "Of 2,996 families registered ... 848, or 28 per cent., stated that they could raised $1,200 to build approved type bungalows" |
+| c1376, written answer | By late December 1951 these families got offers of sites at Kings Park, at Laichikok and at Tung Tao. | "these families were being offered sites in Kings Park and Laichikok as well as in Tung Tao" |
+| c1376, written answer | The Relief Fund closed just before Christmas 1951 with nearly $227,000 (over £14,000). The answer gives no count of huts burnt or of people made homeless. | "the Relief Fund was closed just before Christmas, totalled nearly $227,000 (over£14,000)" |
 ### ukhansard-7: Hong Kong (Disturbances)
 
 - **Creator:** House of Commons; Mr Jeremy Thorpe (col. 270)
@@ -256,16 +262,11 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### ukhansard-13: Defence, Diplomacy and Development Policy: Motion to Take Note (speech of Baroness Stroud, col. 1591)
 
-- **Creator:** House of Lords; Baroness Stroud
-- **Date:** 2020-01-30
-- **Kind:** testimony
-- **Class:** retrospective (A former resident's brief later statement.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Open Parliament Licence
-- **Link:** https://www.theyworkforyou.com/lords/?id=2020-01-30b.1569.0#g1591.0
-- **Other links:** https://hansard.parliament.uk/Lords/2020-01-30/debates/F5BAD536-C010-437B-AAF7-14F8D6DA64C7/DefenceDiplomacyAndDevelopmentPolicy
-- **Proof that it exists:** Defence, Diplomacy and Development Policy, 30 January 2020, c1591: 'From my time spent living in the Walled City in Hong Kong...'
-- **What it gives (finder's note, not checked):** One sentence: she lived in the Walled City in Hong Kong, and it started her interest in how nations move from poverty to prosperity.
-- **Notes:** retrospective (2020). hansard.parliament.uk and parallelparliament.co.uk copies: 403.
+- **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
+- **Citation:** Baroness Stroud, speech in 'Defence, Diplomacy and Development Policy: Motion to Take Note', House of Lords, 30 January 2020, HL Deb col. 1591; TheyWorkForYou, https://www.theyworkforyou.com/lords/?id=2020-01-30b.1569.0#g1591.0 (read 2026-11-20).
+- **Class:** retrospective (retrospective (2020): one sentence of her own memory. The tree primary is correct.)
+- **Date of the record:** 2020-01-30
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| col. 1591 | Retrospective (2020): Baroness Stroud says that she lived in the Walled City in Hong Kong, and that from then on the question of how a nation becomes safer and more prosperous challenged her. She gives no year and no length of stay. | "From my time spent living in the Walled City in Hong Kong" |
