@@ -171,3 +171,26 @@ f23bb2c768a9274f216efcb292f7541bfa19efe3d600212d0a5010250be4fefa  mplus-20184_00
   - M+ CA44/2/25: Arthur Hacker (許敬雅), 'Sketch, Kowloon Walled City, Hong Kong Sites and Legends poster', [1970s-1980s] (object page not opened).
   - M+ CA13/4/28: 'Photograph, cityscape with neon signs in Kowloon City, Hong Kong', [1960s-1970s], Nam Wah Neonlight & Electrical Manufactory (南華霓虹燈電器廠有限公司) gift; Kowloon City district, not stated to be the Walled City.
   - M+ CA17/1/5 and CA17/1/13 (INFERRED internal ids 11817 and 11825): two cassettes of Suenn Ho's archive that are not in the public data.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1194: Ian Lambot 'Water Standpipe #2' Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City
+
+- **Creator:** Ian Lambot
+- **Date:** 1991
+- **Kind:** photo
+- **Class:** primary (A photograph made in the City in 1991.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** © Ian Lambot; courtesy of Blue Lotus Gallery (no licence stated)
+- **Link:** https://culture-hongkong.com/wp-content/uploads/2024/12/Ian-Lambot-Water-Standpipe-2-Hong-Kong-1991_Courtesy-of-Blue-Lotus-Gallery-Kowllon-Walled-City-2.jpg
+- **Other links:** https://culture-hongkong.com/kowloon-walled-city/
+- **Proof that it exists:** img alt 'Ian Lambot 'Water Standpipe #2' Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City'; image 1024 x 768
+- **What it gives (resolver's note, not checked):** A dated photo (1991) of a public standpipe in an open space of the City: a woman fills a red plastic can at a concrete post with several taps, under a mass of hoses and pipes. INFERRED (my reading, to check): a sign reads 和興傢俬裝飾公司 and red painted characters on the wall read 飲用 and 市政總署.
+- **Lead:** L1194 (cited by flickr-6, visitor-photos-1970-1993); also L1007
+- **Notes:** Copyrighted: keep the file in local/. The page is the held item visitor-photos-1970-1993/flickr-6.

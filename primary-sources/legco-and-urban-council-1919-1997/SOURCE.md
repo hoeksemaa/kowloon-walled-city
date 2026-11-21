@@ -253,3 +253,43 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - Antiquities and Monuments (Declaration of Historical Building) (No. 3) Notice 1996, L.N. 406 of 1996 (Government Gazette, 4 Oct 1996): the declaration of the former Yamen Building, with its plan number.
   - Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996, L.N. 405 of 1996 (Government Gazette, 4 Oct 1996): the gazette text and plan of the South Gate site.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0409: Legislative Council Brief : Land Acquisition (Possessory Title) Ordinance (Chapter 130) Acquisition of Land Within Kowloon Walled City (BLD/SDOC/LAP 1 VI), Word original with Annex A (plan of the land edged black)
+
+- **Creator:** Hong Kong Buildings and Lands Department (屋宇地政署)
+- **Date:** 1991-12-09
+- **Kind:** document
+- **Class:** primary (A government brief and plan of Dec 1991, made during the clearance.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the LegCo Library (Primo) record; the LegCo copyright notice allows only personal or internal use (https://www.legco.gov.hk/en/general/disclaimer.html). Not an open licence.
+- **Link:** https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321460280006976
+- **Other links:** https://legco.primo.exlibrisgroup.com/discovery/delivery/852LEGCO_INST:LEGCO/1221474880006976, https://legco.primo.exlibrisgroup.com/primaws/rest/pub/pnxs/L/alma991000498179606976?vid=852LEGCO_INST:LEGCO&lang=en
+- **Proof that it exists:** Delivery page: file '146029.doc', label 'BLD/SDOC/LAP 1 VI (English Version Only)', signed S3 download link (expires after 1 hour; reload the delivery URL for a new one)
+- **What it gives (resolver's note, not checked):** INFERRED: the Annex A plan of the land within the City that the Crown resumed in Dec 1991 (the City boundary, edged black). The text of the brief is already in the repo.
+- **Lead:** L0409 (cited by gap-district-board-housing-authority-14, legco-and-urban-council-1919-1997)
+- **Notes:** Not confirmed that the plan is in the Word file. The structure is frozen; the plan is for checking only. Catalogue record 991000498179606976 (type LEGCO_BRIEF). A second brief, BLD/SDOC/LAP 1 VII (1992, record 991000498061106976), is also in the LegCo Library.
+
+### lead-l0415: Legislative Council Brief : Hong Kong Airport (Control of Obstructions) Ordinance (Chapter 301) Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) Order 1986 (LW(CR) 11/06), Word original with plans
+
+- **Creator:** Hong Kong Lands and Works Branch (地政工務科)
+- **Date:** 1986-11
+- **Kind:** document
+- **Class:** primary (A government brief with its plans, made in Nov 1986.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the LegCo Library (Primo) record; the LegCo copyright notice allows only personal or internal use (https://www.legco.gov.hk/en/general/disclaimer.html). Not an open licence.
+- **Link:** https://legco.primo.exlibrisgroup.com/view/delivery/852LEGCO_INST/1321472210006976
+- **Other links:** https://legco.primo.exlibrisgroup.com/discovery/delivery/852LEGCO_INST:LEGCO/1221473040006976
+- **Proof that it exists:** Delivery page: file '151401.doc', label 'LW (CR) 11/06 (English Version)', size shown as (32485376), signed S3 download link
+- **What it gives (resolver's note, not checked):** The plan images of the 1986 airport height order (COO/11, COO/111 to COO/114). INFERRED: COO/11 can show the height-limit zones over Kowloon City in Dec 1986; COO/111-114 are for the Phase 1 area south-east of the airport, not the City.
+- **Lead:** L0415 (cited by gap-district-board-housing-authority-16, legco-and-urban-council-1919-1997)
+- **Notes:** The text of the brief is already in the repo (gap-district-board-housing-authority-16). Only the plans are new. 31 MB: crop the plans, do not keep the whole file.
