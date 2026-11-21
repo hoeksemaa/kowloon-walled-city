@@ -1,0 +1,134 @@
+{{distinguish|九龍仔公園|九龍公園}}
+{{Other uses
+|subject = 九龙寨城清拆后改建的公园
+|other = 位于香港九龙尖沙咀并有游泳池的公园
+|九龍公園
+}}
+{{Refimprove|time=2026-10-06T18:22:33+00:00}}
+{{Cleanup|reason=|time=2026-10-06T18:22:33+00:00}}
+{{Infobox park
+| name = 九龍寨城公園<br />{{lang|en|Kowloon Walled City Park}}
+| image = Kowloon Walled City Park Overview 201807.jpg
+| image_size = 
+| caption = 九龍寨城公園航拍，攝於2018年7月
+| type = 公共公園
+| location = [[香港]][[九龍]][[九龍城]][[東頭村道]]和[[東正道]]交界
+| coordinates = {{coord|22.332075|N|114.190210|E|display=inline,title}}
+| area = 3.1公頃
+| opened = 1995年12月22日
+| operator = [[康樂及文化事務署]]
+| visitors =
+| open = 每日
+| status = 已開放
+| website = 
+}}
+[[File:Kowloon Walled City Park Enterance 2012.jpg|right|300px|thumb|九龍寨城公園正門]]
+
+'''九龍寨城公園'''（{{langx|en|Kowloon Walled City Park}}）是位於[[香港]][[九龍城區]][[東頭村道]]和[[東正道]]交界的一個公園，以[[中國園林|中式]][[江南園林]]形式設計，其前身為已清拆之[[九龍寨城]]。公園於1995年12月啟用，佔地面積約3.1公頃，為九龍城區第三大公園（僅次於擴建後之[[海心公園]]）。<ref>[https://ycdi.hkspc.org/park-size/ 2015年按區議會分區劃分的康樂及文化事務署轄下的公園面積] {{Wayback|url=https://ycdi.hkspc.org/park-size/ |date=20230409233055 }} 香港保護兒童會 2016年</ref>
+
+本公園與1989年建成的[[賈炳達道公園]]互相連接，內部設有通往[[賈炳達道公園]]的出入口。
+
+== 概要 ==
+公園共分為9個景區，包括：「衙府緬昔」、「南門懷古」、「獅子窺園－邀山樓」、「棋壇比弈遊弈園」、「生肖倩影－童樂苑」、「八徑異趣」、「歸璧半亭」以及「四季同馨－廣蔭庭」。2025年5月23日，公園新增的「九龍城寨光影之旅」的主題展覽開放，展出了電影《[[九龍城寨之圍城]]》內多幕經典場景，包括理髮店、大排檔、閣樓、士多及後巷等，以1:1比例在公園重現，展示九龍寨城昔日風貌（前身是2009年4月19日開放的「千面小城展覽」，設有一個戶外展區和六個衙門內的展覽館）。另外，園內的小徑亦參考寨城內貧民區時期的街道取名<ref>{{Cite web |last=Crawford |first=James |date=2020-01-06 |title=The Strange Saga of Kowloon Walled City |url=https://www.atlasobscura.com/articles/kowloon-walled-city |website=Atlas Obscura |access-date=2022-07-07 |language=en |archive-date=2022-08-01 |archive-url=https://web.archive.org/web/20220801150703/https://www.atlasobscura.com/articles/kowloon-walled-city |dead-url=no }}</ref>。
+
+== 歷史 ==
+1987年1月15日，港英政府宣佈拆除[[九龍寨城]]，原址將興建公園<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=312f2d5a0b114709b84b2214e3b6b2a7&catalogueId=27043b219cb711ef9c2&mainKeyword=1987-01-15&isHKMP=|title=外交部發言人談話 對興建公園表理解|publisher=大公報|date=1987-01-15}}</ref>。[[九龍寨城]]分別於1987年和1989年1月分2期遷拆，並在1990年和1992年3月完成，受影響居民主要遷入觀塘[[彩霞邨]]。拆除工程於1994年4月完成後，[[英屬香港|港英政府]]將原址改建為公園。當時建設計畫負責人[[鍾逸傑]]表示，將寨城改建成公園，是因為原本該處太接近[[啟德機場]]跑道（1998年停用），若在原址興建住宅會妨礙飛機升降，加上[[九龍城]]人口稠密，區內的休憩設施不足，才決定在原址興建公園<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=2&searchId=417d2ffa00b148fea8b13ec0e4f46c35&catalogueId=1b2912d49cb711ef9c2&mainKeyword=1987-01-15&isHKMP=|title=羅理港督說因安置及財政負担分期清拆 區內人口稠密接近機塲 清拆城寨建公園不建樓 若捕獲非法入境者將遣返大陸|publisher=華僑日報|date=1987-01-15}}</ref>。
+
+該處原本計劃名為「'''九龍城寨公園'''」，因為其原稱「九龍寨城」早已完全失傳，但拆除期間得到老居民的指引，[[古物古蹟辦事處]]將一些遺跡發掘了出來，並揉合在公園的設計中或予以保存為展品，以供遊人欣賞。公園於1994年5月動工興建，為確保傳統的設計和構思能再次在公園中展現，當局就聘請了一群來自[[中华人民共和国|中國大陸]]的資深技工負責是項工程。工程於1995年8月竣工，同年12月22日由時任[[香港總督]][[彭定康]]主持開幕儀式。
+
+整個發掘工作的最大收穫是兩塊於城寨南門（此乃城寨的正門）出土的[[花崗岩]]石額，分別刻有「南門」及「九龍寨城」字樣。其他的遺跡還包括城寨城牆殘存的牆基、東南兩門的牆基、一條沿城寨內牆建築的排水溝及旁邊的石板街。其餘的文物就有三座炮、石樑、[[對聯]]及柱礎等亦一一保留下來。[[第二次世界大戰]]期間，民眾為免石額被日軍破壞，所以將此拆下埋於城寨內地下，保存下來。
+
+最後政府遂將公園改名為「'''九龍寨城公園'''」，這些文物都安放於「南門懷古」景區。昔日三進四廂的衙門，則在修復和重建後成為展館，陳列了與寨城歷史有關的石碑（包括[[張玉堂 (清朝)|張玉堂]]拳書「墨緣」、「壽」字及載有衙門士兵出差配餉開支紀錄的[[光緒]]12年《刊刻會議》）、寨城的歷史圖片等。
+
+== 對聯置換事件 ==
+[[File:Former Yamen Building of Kowloon Walled City, front entrance, Kowloon Walled City Park (Hong Kong).jpg|right|thumb|300px|懸掛於寨城公園內衙門正門前的對聯，由[[何文匯]]於2004年所題、後由書法家[[翟仕堯]]所書。上聯為「西母不能臣，域外龍兒，幽恨敢隨孤夢去」，下聯為「離人應已老，村中燕子，多情還覓故城來」]]
+2002年10月，香港[[康樂及文化事務署]]邀請每年由[[香港公共圖書館]]舉辦的「全港詩詞創作比賽」的四位評判──[[何文匯]]、[[黃坤堯]]、[[韋金滿]]、[[劉衛林]]組成「中文評審顧問委員會」，為康文署轄下18個公園中的[[對聯]]、匾額、橫額及其他文學作品進行評審建議。委員會成員在2003年先後3次造訪這些公園，發現其中的9個公園內，共有22副對聯的格律出了問題；一個匾額及7項其他文學作品也有平仄問題。其中九龍寨城公園是重災區。因此，委員會建議署方分兩階段進行改善工程：第一階段是為九龍寨城公園的對聯進行改善工作。第二階段是為其餘康樂場地內的文學作品進行改善工作。
+
+寨城公園中，被置換的詩詞聯語共有15件，都是1990年代建設初期所撰，並非清代留下的文物。整體而言，委員會對作品的審議只以是否合乎格律為標準，如果文字平庸而格律無誤者，依然保留。委員會同仁認為，九龍寨城公園是著名的園林，如果因為園內詩聯格律有誤而貽笑大方甚至國際，香港所承受的損害就很大了。康文署表示，那些出現瑕疵的對聯懸掛日久，已經頗有損耗，所以最簡單穩妥的辦法就是直接置換。於是評委會邀請港、台名家，每人提供一副對聯，以供選用。
+
+據最後統計，寨城公園建築初期之詩詞聯語，需要移除者共有14件／處（不計題匾及古人作品），其中同一篇公園碑記分別鐫刻於兩處。而新聯共計10副，是由評委會邀請名家，每人提供一副對聯，以供委員會選用（若不適用，將不會採納）。撰聯者包括台港著名大學教授、詩人[[汪中 (香港)|汪中]]、[[羅慷烈]]、[[文幸福]]、[[洪肇平]]、[[何乃文]]及4位顧問委員。最新配置情況於2004年5月4日確定。此外又補入碑記一篇，由黃坤堯撰稿。
+
+據統計，全港18個公園共22副有問題之對聯，置換工程使用了公帑約港幣29萬。學者認為，這次對聯置換事件屬於亡羊補牢，而前此畢竟對香港的形象造成一定的傷害，又額外花費了近30萬港元公帑。若早在建園之初便妥善把關、溝通、避免行政誤差，當不至於此。理論上，這30萬的花費不應只是補過，而更應昭示來者，懲前毖後，方有所值。<ref>{{cite web |author1=[[陳煒舜]] |title=陳煒舜：寨城公園新鐫詩詞聯語 慘遭四大專家評為失格？ ──「詩聯不厭改」講座錄 |url=https://www.master-insight.com/%E5%AF%A8%E5%9F%8E%E5%85%AC%E5%9C%92%E6%96%B0%E9%90%AB%E8%A9%A9%E8%A9%9E%E8%81%AF%E8%AA%9E-%E6%85%98%E9%81%AD%E5%9B%9B%E5%A4%A7%E5%B0%88%E5%AE%B6%E8%A9%95%E7%82%BA%E5%A4%B1%E6%A0%BC%EF%BC%9F/ |publisher=[[灼見名家]] |accessdate=2024-04-21 |date=2023-04-20 |archive-date=2023-09-21 |archive-url=https://web.archive.org/web/20230921224635/https://www.master-insight.com/%E5%AF%A8%E5%9F%8E%E5%85%AC%E5%9C%92%E6%96%B0%E9%90%AB%E8%A9%A9%E8%A9%9E%E8%81%AF%E8%AA%9E-%E6%85%98%E9%81%AD%E5%9B%9B%E5%A4%A7%E5%B0%88%E5%AE%B6%E8%A9%95%E7%82%BA%E5%A4%B1%E6%A0%BC%EF%BC%9F/ |dead-url=no }}</ref><ref>{{cite web |author1=[[陳煒舜]] |title=寨城公園複句聯、詩詞指瑕 陳煒舜：詩詞聯格律推廣工作依然任重道遠 ──「詩聯不厭改」講座錄 |url=https://www.master-insight.com/%E5%AF%A8%E5%9F%8E%E5%85%AC%E5%9C%92%E8%A4%87%E5%8F%A5%E8%81%AF%E3%80%81%E8%A9%A9%E8%A9%9E%E6%8C%87%E7%91%95-%E9%99%B3%E7%85%92%E8%88%9C%EF%BC%9A%E8%A9%A9%E8%A9%9E%E8%81%AF%E6%A0%BC%E5%BE%8B%E6%8E%A8/ |publisher=[[灼見名家]] |accessdate=2024-04-21 |date=2023-04-27 |archive-date=2024-04-21 |archive-url=https://web.archive.org/web/20240421191146/https://www.master-insight.com/%E5%AF%A8%E5%9F%8E%E5%85%AC%E5%9C%92%E8%A4%87%E5%8F%A5%E8%81%AF%E3%80%81%E8%A9%A9%E8%A9%9E%E6%8C%87%E7%91%95-%E9%99%B3%E7%85%92%E8%88%9C%EF%BC%9A%E8%A9%A9%E8%A9%9E%E8%81%AF%E6%A0%BC%E5%BE%8B%E6%8E%A8/ |dead-url=no }}</ref><ref>陳煒舜︰〈詩聯不厭改—九龍寨城公園落成初期新鐫詩詞聯語指瑕〉，收入《聲律之舞︰詩詞聯創作八講》（香港︰中和出版有限公司，2025年），頁181-217。</ref>
+
+==開放時間==
+* 每日06:30-23:00，展覽館开放时间为每日09:00-19:00
+
+==圖集==
+<gallery mode="packed" heights="140px" style="text-align:left">
+Kowloon Walled City Park in October 2025.jpg|九龍寨城衙門前陳列清[[嘉慶]]七年（1802年）鑄成的大炮
+Former Yamen Building Interior 2010.JPG|九龍寨城衙門，從一進望向二進的公堂
+Kowloon Walled City Park Old South Gate 2010.JPG|「南門懷古」古蹟
+Kowloon Walled City Park 九龍寨城 02.jpg|園內瀑布、小橋、水榭
+Fui Sing Pavilion, Kowloon Walled City Park (Hong Kong).jpg|魁星半亭
+Image-Kowloon Walled City southgate.jpg|殘存遺蹟
+Kowloon Walled City Park The Chess Garden 2010.JPG|棋壇比弈遊弈園
+Kowloon Walled City Park Playground 2010.jpg|生肖倩影－童樂苑
+KowloonWalledCityPark02.jpg|廣蔭庭中的五蝠壽鶴圖
+Lung Tsun Bridge in Kowloon Walled City Park.jpeg|龍津石橋
+Mountain View Pavilion in Kowloon Walled City Park.jpg|獅子窺園－邀山樓
+File:Walled City Park Kowloon City Gate movie exbition.jpg|九龍寨城衙門內的電影《[[九龍城寨之圍城]]》主題展覽
+</gallery>
+
+==植物徑==
+*紅葉徑<ref>{{cite web |language=zh-hk |url=http://hk.ulifestyle.com.hk/tour/detail.html?id=ABBGD1ozBwpZEANs |title=庭園賞紅夠詩意 |publisher=HK.ULifestyle.com.hk |accessdate=2014-12-01 |archive-date=2014-12-06 |archive-url=https://web.archive.org/web/20141206204654/http://hk.ulifestyle.com.hk/tour/detail.html?id=ABBGD1ozBwpZEANs |dead-url=no }}</ref>
+
+==伸延閱讀==
+*[[龍津石橋]]
+*[[東涌炮台]]
+
+== 鄰近 ==
+*[[九龍城廣場]]
+*[[九龍城侯王廟]]
+*[[香港華人基督教聯會九龍墳場]]
+*[[美東邨]]
+*[[東頭邨]]
+*[[御．豪門]]
+*[[民生書院]]
+*[[嘉諾撒聖家學校]]
+
+==途徑之公共交通服務==
+{| class="mw-collapsible mw-collapsed wikitable" style="background:white; margin: 0 auto; width: auto;" 
+! 交通路線列表
+|-
+|
+;[[港鐵]]
+*{{rail color box|港鐵|KTL|square}}：[[樂富站]]B出口（步行10分鐘）
+*{{rail color box|港鐵|TML|square}}：[[宋皇臺站]]B2、B3出口（步行10分鐘）
+;[[東頭村道]]
+{{九龍新界巴士簡單列表|1|2D|10|11K}}
+{{過海隧道巴士簡單列表|113}}
+;[[聯合道]]/[[嘉林邊道]]
+{{九龍新界巴士簡單列表|7B|11D|75X|85|85A|85B}}
+{{九龍專線小巴簡單列表|39M}}
+;途經[[賈炳達道]]
+{{九龍專線小巴簡單列表|88}}
+|}
+
+==参考文献==
+===引用===
+{{Reflist}}
+
+===書籍===
+*《從啟德出發》，吳詹仕，經濟日報出版社，ISBN 978-962-678-456-3。
+
+==外部連結==
+{{stack begin}}
+{{Commons category|Kowloon Walled City}}
+{{stack end}}
+*[https://web.archive.org/web/20090303234146/http://discoverhongkong.com/tc/attractions/kln-walled-city-park.html 香港旅遊局發展局的介紹網頁]
+*[http://www.amo.gov.hk/b5/monuments_63.php 古物古蹟辦事處-前九龍寨城衙門] {{Wayback|url=http://www.amo.gov.hk/b5/monuments_63.php |date=20201022180027 }}
+*[https://www.lcsd.gov.hk/tc/parks/kwcp/index.html 康樂及文化事務署 - 九龍寨城公園 - 歷史/背景] {{Wayback|url=https://www.lcsd.gov.hk/tc/parks/kwcp/index.html |date=20200809111849 }}
+
+{{-}}
+{{香港公園}}
+{{香港法定古蹟}}
+
+[[Category:九龍城]]
+[[Category:九龍城區公園]]
+[[Category:香港主題公園]]
+[[Category:九龍城區的法定古蹟]]
+[[Category:香港中式園林]]
+[[Category:婚禮場地]]
+[[Category:九龍城寨]]
+[[Category:1995年香港建立]]
+[[Category:1995年完工公園]]

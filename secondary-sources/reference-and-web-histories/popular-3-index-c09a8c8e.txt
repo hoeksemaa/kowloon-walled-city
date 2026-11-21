@@ -1,0 +1,533 @@
+{{NoteTA
+|G1=Games
+|G2=PoliticiansUK
+|G3=Unit
+|1=zh-cn:威尔士;zh-hk:威爾斯;zh-tw:威爾斯;
+|2=zh-cn:赛博;zh-tw:賽博;zh-hk:數碼
+|3=zh-cn:数码宝贝宇宙 应用怪兽; zh-hk:數碼暴龍App世代; zh-tw:數碼寶貝-APP獸; zh-mo:數碼暴龍App世代;
+|4=zh-cn:数码宝贝; zh-hk:數碼暴龍; zh-tw:數碼寶貝;
+|5=zh-cn:数码九龙城; zh-hk:網絡九龍; zh-tw:賽博九龍;
+|6=zh-cn:格雷格‧吉拉德; zh-hk:格歷‧朱華德; zh-tw:格雷格‧吉納德;
+}}
+{{redirect|九龍城寨|以此地區為題材創作的小說、漫畫和電影|九龍城寨系列}}
+{{stack begin}}
+{{Infobox former country
+|name = '''九龍寨城'''<br><small>{{lang|en|Kowloon Walled City}}</small>
+|continent = 亞洲
+|status = {{QING}}[[廣東省 (清朝)|廣東省]][[廣州府]][[寶安縣|新安縣]]轄境（－1899年）<br>{{HKG-1941}}（1941年－1945年）<br>[[無政府狀態]]，主權爭議（1899年－1941年；1945年－1994年）：
+* {{QING}}（－1912年）
+* {{UK}}
+* {{ROC}} （理论上）
+* {{PRC}}
+|empire = 
+|p1 = 寶安縣{{!}}新安縣
+|flag_p1 = Flag of the Qing Dynasty (1889-1912).svg
+|p2 = 香港日佔時期
+|flag_p2 = Flag of Japan (1870–1999).svg
+|s1 = 香港日佔時期
+|flag_s1 = Flag of Japan (1870–1999).svg
+|s2 = 英屬香港
+|flag_s2 = Flag of Hong Kong (1959–1997).svg
+|image_flag = 
+|image_coat = 
+|national_motto = 
+|national_anthem = 
+|image_map = KWC - 1989 Aerial.jpg
+|image_map_caption = 1989年的九龍寨城
+|map_width = 300px
+|image_map2 = Victoria City and Kowloon 1915.jpg
+|image_map2_caption = 1915年的香港地圖，<br>右上方“Chinese Town”為九龍寨城和九龍城
+|map2_width = 300px
+<!--
+|latd=22 
+|latm=3282 
+|latNS=N 
+|longd=114 
+|longm=1916 
+|longEW=E
+-->
+|common_languages = [[粵语]]
+|religion = [[中國民間信仰]]
+|title_leader = 
+|leader1 = 
+|year_leader1 = 
+|leader2 = 
+|year_leader2 = 
+|title_deputy = 
+|deputy1 = 
+|year_deputy1 = 
+|deputy2 = 
+|year_deputy2 = 
+|legislature = 
+|era = 
+|event_start = 清朝擴建九龍寨城
+|year_start = 1847年
+|event1     = [[展拓香港界址專條]]
+|date_event1 = 1898年6月9日
+|event2      = 英軍驅趕清朝官員軍隊
+|date_event2 = 1899年
+|event3      = 日佔時期
+|date_event3 = 1941年12月－<br>1945年8月
+|event4      = 中英達成清拆協議
+|date_event4 = 1987年
+|event_end = 香港政府接管
+|year_end = 1994年
+|life_span  = 1847年－1994年
+|stat_year1 = 1898年
+|stat_area1 = 0.047
+|stat_pop1 = 約700人<ref>{{Cite news|url=https://www.scmp.com/news/hong-kong/article/1191748/kowloon-walled-city-life-city-darkness|title=Kowloon Walled City: Life in the City of Darkness|author=John Carney|date=2013-03-16|work=South China Morning Post|accessdate=2018-10-29|archive-date=2021-01-12|archive-url=https://web.archive.org/web/20210112075255/https://www.scmp.com/news/hong-kong/article/1191748/kowloon-walled-city-life-city-darkness|dead-url=no}}</ref><ref name="CNN"/>
+|stat_year2 = 1940年代
+|stat_pop2 = 約2,000人
+|stat_year3 = 1950年代
+|stat_pop3 = 約5,000人
+|stat_year4 = 1973年
+|stat_pop4 = 約10,000人
+|stat_year5 = 1987年
+|stat_area5 = 0.026
+|stat_pop5 = 約33,000人
+<!--
+|stat_year6 = 1990年代
+|stat_pop6 = 約50000人
+-->
+|currency = [[港元]]<br><small>[[日本军用手票]]（1941－1945年）</small>
+|today = {{HKG}}[[九龍城]]
+}}
+{{stack end}}
+{{Infobox Chinese
+|c = [[wikt:九|九]][[wikt:龍|龍]][[wikt:寨|寨]][[wikt:城|城]]
+|j = Gau<sup>2</sup>lung<sup>4</sup>zaai<sup>6</sup>sing<sup>4</sup>
+|p = Jiǔlóng zhài chéng
+|showflag = j
+|altname = 九龍城砦
+|t2 = 九龍城砦
+|j2 = Gau<sup>2</sup>lung<sup>4</sup>sing<sup>4</sup>zaai<sup>6</sup>
+|p2 = Jiǔlóng chéng zhài
+}}
+'''九龍寨城'''（俗稱：'''九龍城'''、'''九龍城寨'''、'''九龍砦城'''{{NoteTag|「砦」即「寨」的異體字。}}、'''九龍城砦'''，簡稱：'''寨城'''、'''城寨'''；{{langx|en|Kowloon Walled City}}）是一個位於[[香港]][[九龍城]]的已拆卸社區<ref name="九龍城寨簡史">{{cite book |last= |first= |date=2018 |title=九龍城寨簡史 |url= |location= |publisher=三聯書店 |page=229 |isbn=978-962-04-4282-7 |author=魯金 }}</ref>。
+
+九龍寨城由[[清朝政府]]於1847年擴建而成，是[[寶安縣|新安縣]]政府一個軍事駐地。自1899年5月起，成為香港境內一座[[無政府狀態]]的[[飛地]]。1941年12月至1945年8月間曾短暫被[[香港日佔時期|日軍佔領]]，[[香港光復|光復]]後又重回無政府狀態，之後成為世界上人口密度最高的地區。1987年，[[中华人民共和国政府]]與[[英國政府]]達成清拆寨城的協議。九龍寨城於1987年和1989年分兩期進行調遷，寨城內的居民除少數接受特惠賠償或選擇購買[[居者有其屋計劃|居屋]]外，絕大多數均遷入[[觀塘區]][[佐敦谷]]的[[彩霞邨]]。1991年起，九龍寨城正式清拆，直至1994年清拆結束。遺址改建成[[九龍寨城公園]]，並於1995年12月啟用。<ref name="CNN">{{Cite |title=Kowloon Walled City: In Hong Kong, it was the densest place on Earth |url=http://edition.cnn.com/travel/article/kowloon-walled-city/index.html |publisher=[[CNN]] |date=2015-01-02 |author=Wilfred Chan |archiveurl=https://archive.today/20170819055719/http://edition.cnn.com/travel/article/kowloon-walled-city/index.html |archivedate=2017-08-19 |deadurl=yes |accessdate=2017-08-19 }}</ref>
+
+== 地理 ==
+九龍寨城原來的面積達70畝地（約47,000平方公尺）<ref>{{Cite web |url=http://www.liberalstudies.tv/hkconnection/ls_hkconnection_03.html |title=香港電台-鏗鏘集-城寨何存 |accessdate=2013-01-14 |archive-date=2020-08-06 |archive-url=https://web.archive.org/web/20200806121221/https://www.liberalstudies.tv/hkconnection/ls_hkconnection_03.html/ |dead-url=yes }}</ref>，而其東南部本是[[九龍灣]]西北海岸，即今天的[[太子道東]]一帶。但隨著其後[[啟德機場]]的興建而變成一個內陸地區。在[[香港日佔時期]]，因為城牆的拆除，周邊一帶后來都被劃作英屬香港的九龍城發展區，而令寨城的範圍進一步收窄至[[賈炳達道]]以北，<ref name="CNN" />在衙門一帶約只有2畝半地大的地方，使當地的居民在後期建樓房也只能在該範圍興建。
+
+== 歷史 ==
+=== 建立初期 ===
+
+==== 宋朝至清初 ====
+[[宋朝]]時期，當時朝廷在[[尖沙咀]]與[[茶果嶺]]之間一帶設立名叫[[官富場]]的鹽場，其旁設「'''官富寨'''」，並派遣鹽官管理及駐軍保護<ref>{{Cite book|title=香港戰後風雲錄|last=謝|first=永光|publisher=明報|year=2016|isbn=9789888337736|location=香港|pages=272}}</ref>。至1370年（洪武三年），[[明朝]]政府把[[官富巡檢司]]衙署設於九龍寨城的位置<ref name="AMO1">[https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf 「龍津橋及其鄰近區域」歷史研究] {{Wayback|url=https://www.amo.gov.hk/filemanager/amo/common/form/research_ltsb_surrounding_final.pdf |date=20220704192938 }}，古物諮詢委員會委員最終報告，2012年12月</ref>。
+
+1661年至1664年（順治十八年至康熙三年）間，九龍村沿海村民[[遷界令|被強逼遷入內地]]。1669年（康熙八年）康熙皇帝親政後，允許沿海居民進行展界擴邊，當時為加強海防而“因界設守”，即在重要的地點駐紮守兵，設置21座[[墩台]]，其中獅子嶺上設九龍墩台。當時九龍村駐兵七十三名，由把總領導。1682年（康熙廿一年）裁兵時，九龍墩台改為九龍[[汛]]。<ref name="AMO1"/>
+
+==== 九龍寨城的建立 ====
+嘉慶年間，為了對抗海盜的威脅，兩廣總督百齡與提督錢夢虎建議把康熙年間設在[[佛堂門]]的炮台，移至九龍城（時稱九龍寨），並以勸捐形式在九龍寨附近興建。至1810年（嘉慶十五年），海盜[[張保仔]]已經投降，新安縣屬各地區的海盜均已平清，而九龍炮台在翌年才完工。炮台原址位於九龍灣旁的海濱處（約今天沙浦道近太子道交界）。<ref name="AMO1"/>
+
+1839年（道光十九年），[[鴉片戰爭]]醞釀爆發，因九龍寨炮台的軍事地位十分重要，當時的[[兩廣總督]][[林則徐]]和[[水師提督]][[關天培]]商議，將駐守大鵬灣的[[大鵬所城]]內的參將，連同大鵬營內的軍隊和水師船隻都調到九龍寨駐守，守衛附近一帶海域。同年9月4日（農曆七月廿七日），大鵬營參將[[賴恩爵]]調來九龍兩個月就與[[義律]]開戰，在旬日之內接仗大小六次，俱係全勝。[[道光皇帝]]論功行賞，升賴恩爵為副將，而九龍寨（大鵬營）的守將亦升格為大鵬協副將。<ref name="九龍城寨簡史"/><ref name="AMO1"/>
+
+==== 九龍寨城的修築及運作 ====
+英人在鴉片戰爭後正式佔領香港島，在英人的壓力下，於鴉片戰爭期間建成的尖沙嘴懲膺炮台及官涌臨衝炮台，被迫拆卸和炸毀。至1843年（道光二十三年）6月，[[耆英]]以欽差大臣身份到香港與港督[[砵甸乍]]商議通商章程時，發現必須制止當時中國帆船運送物資到香港時乘機走私洋貨入內地，以及處理附近海面的海盜。耆英回到廣州與文武官員商討對策後，奏請將原設南頭附近的官富巡檢司遷至九龍寨，名字也相應改為「九龍巡檢司」，以便官員在九龍一帶檢查所有進出香港的帆船，於是九龍寨就有大鵬協副將及九龍巡檢司駐守。耆英在翌年3月接任兩廣總督後，於1845年（道光二十五年）11月再次訪港，以解決英國歸還舟山問題，並於次年再次上奏請道光帝在九龍寨築城駐守。得到北京批准後，耆英便自行在粵地酬集捐獻築城，並於1847年（道光二十七年）建成寨城。同年，寨城內營辦龍津義學。<ref name="九龍城寨簡史"/><ref name="AMO1"/>
+
+九龍寨城擴建完成後，初期駐兵二百五十人<ref name="LCSD2">{{cite web |url=https://www.lcsd.gov.hk/tc/parks/kwcp/historical.html |title=九龍寨城公園：歷史 |date=2016-12-20 |website=康樂及文化事務署 九龍寨城公園 |publisher=康樂及文化事務署 |accessdate=2025-01-23 |archive-date=2026-02-05 |archive-url=https://web.archive.org/web/20260205013859/https://www.lcsd.gov.hk/tc/parks/kwcp/historical.html |dead-url=no }}</ref>，主要維持附近海域的治安及確保航運的安全。清政府派駐寨城的官員，除與港英政府保持聯絡及交換有關海盜活動的情報外，也派遣人員長駐港島，打聽港府的內情。<ref name="AMO1"/>
+
+[[太平天國]]運動期間，惠州[[天地會]][[羅亞添]]乘勢率領客籍群眾起事，於1854年（咸豐四年）8月19日攻佔九龍寨城，駐寨清兵紛紛逃匿。後這群客籍人士逃離九龍，轉移目標攻打大鵬城。大鵬協副將[[張玉堂 (清朝)|張玉堂]]聘請[[英屬香港]]的僱傭兵協助，與[[新安縣]]知縣[[黃光周]]等率兵於8月31日攻入九龍寨城並斬30多人，最終在翌月正式收復寨城。<ref name="AMO1"/>
+
+1856年（咸豐六年），英國以「[[亞羅號事件]]」為藉口，發動了[[第二次鴉片戰爭]]。其後因發生舉人陳芝亭率鄉勇往九龍進行抗英活動，[[港督]][[寶靈]]遂於次年4月21日派遣英軍二百人，渡海襲擊九龍寨城，並劫持張玉堂到香港談判，其後放回。<ref name="AMO1"/>
+
+==== 九龍城稅關的設立 ====
+1868年（同治七年），兩廣總督[[瑞麟]]宣佈在九龍邊界東西兩面以及澳門設立六處厘卡，向運送鴉片的木船徵收[[厘金]]，同時派出緝私船到港澳附近海面巡邏緝私。清政府為免海關總稅務司[[赫德]]干預，命瑞麟於1871年（同治十年）6月，在廣東海面設常關稅卡並與厘卡合併。1872年（同治十二年），清廷[[九龍汛]]衙門在寨城外的龍津渡碼頭設立海關稅廠。同一年，香港政府宣布再次禁賭，不少賭場因而遷移到九龍寨城繼續經營，導致由香港前往城內的賭客及洋人日多。為加強海關緝私及應付訪客，1873年（同治十三年）於九龍炮台東側增築[[龍津石橋]]，並在兩年後完成。<ref name="AMO1"/>
+
+之後，中方官員將龍津渡碼頭海關的責任與營運，轉移予經營碼頭公秤及慈善事業的九龍各鄉殷商；至1880年（光緒六年）正式成立慈善機構[[九龍樂善堂]]。<ref>{{cite web|url=https://hk.history.museum/documents/54401/7711852/6thSA3.pdf|title=從義學到義務教育 — 探討九龍樂善堂教育服務如何回應香港社會變遷|publisher=黃柳青、李煜銘、曹小蕾|date=2017年5月|archiveurl=https://web.archive.org/web/20210712014500/https://hk.history.museum/documents/54401/7711852/6thSA3.pdf|archivedate=2021-07-12|deadurl=no}} {{Wayback|url=https://hk.history.museum/documents/54401/7711852/6thSA3.pdf |date=20210712014500 }}</ref><ref>{{cite web|url=https://pdfhost.io/v/g4ID7n0ND_.pdf|title=樂善堂義學教育研究（1925-1941）|author=Hui Wai Ki|date=2013年8月|archiveurl=https://web.archive.org/web/20210712021723/https://pdfhost.io/pdf/3114c361-666d-4614-9ed9-f0d53746c5d0/c6559859-0e76-4807-b2fc-26f5b84fda0a.pdf|archivedate=2021-07-12|deadurl=no}} {{Wayback|url=https://pdfhost.io/v/g4ID7n0ND_.pdf |date=20210712021723 }}</ref>1887年（光緒十三年），九龍城的海關連同香港外圍另外三處稅廠由中國海關轄下新設的[[九龍關]]接管。<ref name="AMO1"/>
+
+==== 英佔新界後成為[[飛地]] ====
+1898年（光緒二十四年），[[九龍]]以北的[[新界]]按《[[展拓香港界址專條]]》成為英國向中國租借的殖民地，九龍巡檢司被裁撤<ref name="AMO1"/>。但在清朝[[外交官]]力爭下，九龍寨城仍歸清廷管轄，由[[广州府]][[寶安縣|新安縣]][[大鹏半岛|大鵬協]]左營駐防<ref name=":0">廣東海圖說·九龍寨 張之洞 廣雅書局 1889</ref>，作为清朝官員辦公場所，而龍津石橋則留與中國官民使用，並議定「中國兵商各船、渡艇任便往來停泊，且便城內官民任便行走」。當時，九龍寨城內有人口744人，其中駐軍佔544人，其他居民為軍人的從屬人員。<ref name="AMO1"/>
+
+{{Gallery
+|width = 250
+|File:Map of Hong Kong in First Convention of Peking in 1860.jpg|《[[中英北京條約]]》附圖，於「Proposed Boundary」（即[[界限街]]位置）西端標有「九龍炮台」，九龍寨城位於「Kowloon Fort」標記右方雙圈處
+|File:Kowloon Walled City Early Stage Model in History Museum.jpg|展示19世紀中期九龍寨城狀況的模型
+|File:Map of The Convention for the Extension of Hong Kong Territory in 1898 - 1.jpg|《展拓香港界址專條》附圖，九龍寨城位於圖中「九龍」下之方形標記
+|File:Kowloon City Main Gate.jpg|九龍寨城城門
+|File:Kowloon-Walled-City-1898.jpg|1898年的九龍寨城，圖中央為接官亭，亭前通道連接[[龍津石橋]]延伸出海
+}}
+
+=== 成為三不管地带 ===
+{{main|新界六日戰}}
+[[File:CO 1069-453-09 (cropped).jpg|thumb|250px|自寨城南門外回望城寨，可見延至[[白鶴山]]的石圍牆（1898年）]]
+[[File:Kowloon Walled City2.jpg|thumb|250px|20世紀初寨城狀況，可見兒童在廢棄炮台上玩耍]]
+
+根據《[[展拓香港界址專條]]》，由1898年7月1日起英國將租借九龍[[界限街]]以北、[[深圳河]]以南地方及附近逾200個離島，為期99年。在港英政府調查情況以準備接管新界期間，新界部分原居民担心各大氏族的风水及土地权益受损，在前景不明之下，部分鄉民以屏山鄧氏為首反抗英國接收新界，並於1899年4月與英軍发生冲突。香港政府接收新界後，与新界各大氏族達成和解；政府亦尽量维持现状，尊重新界居民的风俗习惯和权益，以新界當地的士紳管理新界。<ref name="CNN" />
+
+事件平息後，[[英國政府]]認為冲突是由駐守寨城內的[[寶安縣|新安縣]]官員策劃，違反《專條》中的「不得與保衛香港之武備有所妨礙」，港督[[卜力]]遂指示駐港英軍司令[[加士居]]少將<ref name="AMO1"/>，在同年5月16日派遣{{link-en|皇家威爾斯火槍隊|Royal Welch Fusiliers}}和100名炮兵義勇軍<ref>{{cite web |url=https://www.info.gov.hk/gia/general/200411/11/1111132.htm |title=海防博物館舉辦展覽 介紹義勇軍百年發展 |date=2004-11-11 |publisher=香港政府 |access-date=2018-12-02 |quote=一八九九年更曾被徵召進佔新界及九龍寨城。 |archive-date=2020-08-06 |archive-url=https://web.archive.org/web/20200806121338/https://www.info.gov.hk/gia/general/200411/11/1111132.htm |dead-url=no }}</ref>攻入寨城，將城內官員及軍隊全數驅趕<ref>{{cite book |author=劉蜀永 |title=簡明香港史（第三版） |publisher=[[三聯書店（香港）]] |pages=38-39 |date=2016-07-11 |isbn=9789620440168 }}</ref><ref name="KC1">{{Cite web |url=http://www.districtcouncils.gov.hk/kc/tc_chi/links/files/KCD_Heritage_Txt.pdf |title= 《九龍城區風物-{志}-》 |access-date=2025-04-29 |archive-date=2015-12-08 |archive-url=https://web.archive.org/web/20151208163057/http://www.districtcouncils.gov.hk/kc/tc_chi/links/files/KCD_Heritage_Txt.pdf |dead-url=no }}</ref>，設於此地的中國稅關因此同告關閉<ref name="AMO1"/>。清廷[[總理各國事務衙門]]於5月22日發緊急電報予英國外交部，抗議英國出兵攻擊九龍寨城，要求對方立刻撤軍。英國政府仍舊派軍駐守於九龍寨城<ref name="香港歷史之謎">{{cite book |author=爾東 |editor=周海燕 |title=《香港歷史之謎》 |year=2007 |publisher=明報出版社 |location=香港 |isbn=978-962-973-634-7 |page=頁63-65 }}</ref>。
+
+12月27日，英國通過《九龍城樞密院令》（KOWLOON CITY ORDER IN COUNCIL）<ref>{{cite book |author=劉智鵬 |title=展拓界址:英治新界早期歷史探索 |publisher=[[中華書局（香港）]] |pages=178-179 |date=2010-05-01 |isbn=9789628931187 }}</ref><ref name=law1>{{Cite web |url=http://oelawhk.lib.hku.hk/archive/files/7e14c64329f16461a2a4312f053c3720.pdf |title=KOWLOON CITY ORDER IN COUNCIL |author=[[英國政府]] |date=1899-12-27 |publisher=香港大學圖書館 |accessdate=2018-12-01 |archive-date=2021-11-02 |archive-url=https://web.archive.org/web/20211102114531/https://oelawhk.lib.hku.hk/archive/files/7e14c64329f16461a2a4312f053c3720.pdf |dead-url=no }}</ref>，藉「中國官員在九龍城行使管轄權已被發現抵觸了保衛香港的軍事要求」為由{{quote|...the exercise of jurisdiction by the Chinese officials in the City of Kowloon having been found to be inconsistent with the military requirements for the defence of Hongkong...<ref name=law1/>}}
+下達三條《樞密院令》，其中第二條提到「特此宣佈，對於《專條》所述的租期內，九龍城為香港的重要組成部分，與原來殖民地的組成部分實際上同樣。」
+{{quote|The City of Kowloon shall be, and the same is hereby declared to be, for the term of the lease in the said Convention mentioned, part and parcel of Her Majesty's Colony of Hongkong, in like manner and for all intents and purposes as if it had originally formed part of the said Colony.<ref name=law1/>}}
+
+1900年，[[李鴻章]]前往[[廣州]]就任[[兩廣總督]]時途經香港，與[[港督]][[卜力]]就此問題進行交涉，其表示清政府絕不會放棄對九龍城的主權和治權，並指英國應遵守簽訂了的條約。鑑於清政府不斷向英國施壓和抗議，明確重申擁有九龍城的主權，英方覺得再佔據九龍寨城意义不大，在英官員權衡後，終決定下令英軍撤出九龍城，即使英方仍堅持該土地屬「殖民地的重要組成部分」，但卻未有把英國法律延伸至九龍城，直接管治；清廷則堅持對九龍城的合法管轄權，但直到[[宣統退位]]都沒有足夠國力可恢復統治九龍城。九龍城遂成為非常特殊的三不管地帶<ref name=香港歷史之謎/>。
+
+九龍城寨到1904年之時，寨內無人居住。港英政府在1900年代初便允許教會（聖公會聖三一堂）租用城寨內的建築物設立濟貧院（「廣蔭院」）及義學。<ref name="AMO1"/>
+
+===1920年代至二戰前===
+1920年代，港府開始在[[九龍灣]]進行大規模填海，又興建連接九龍城與旺角及油麻地的公路。至1930年，[[九龍塘]]城市花園的計劃宣告完成，在吸收與城市化部分九龍城的村落的同時，亦吸引了從其他地區遷移到九龍城的寮屋居民。1933年6月，港府為了改善城寨的衞生情況，宣佈以換地賠屋的辦法，以1934年12月末為限，要求九龍城寨的原居民遷往狗虱嶺（今[[慈雲山]]山腳一帶），並計劃之後把寨城原址改建為公園。由於狗虱嶺離九龍城頗遠，居民不願遷往。港府在1936年讓步，允許原居民遷往[[隔坑]]以及九龍城、[[九龍城侯王廟|侯王廟]]附近和[[竹園]]等地；又提供距城寨西北約四分一哩的土地，讓城寨非原居民興建居所，並給予搬遷費。但最後有二十餘戶拒絕遷出，並直接向[[國民政府]]投訴。<ref name="KC1"/><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=f77b67f838f24123baa13c35da11f536&catalogueId=27aca7c19cb711ef9c2&mainKeyword=%E8%8A%B1%E5%A2%9F&isHKMP=|title=九龍城居民遷徙寨 輔政司談絕無强迫拆卸房屋 中英交涉對條約所載尚需研究|publisher=天光報|date=1937-01-07}}</ref>
+
+國民政府新任駐兩廣外交特派專員[[刁作謙]]對港英政府態度強硬，而且在未通報港府下派遣秘書[[凌士芬]]到九龍城寨實地調查，又自行發表對城寨的看法和計劃，引起港督[[郝德傑]]不滿，在雙方對立之下更多居民拒絕遷出。至1937年7月，英國[[殖民地部]]決定授權港督以武力驅趕城寨的拒遷居民，港府遂於1940年再次以衞生為理由拆遷城寨，夷平寨內民居，只保留龍津義校、一間安老院和一間曾姓的古老大屋。由於當時國民政府正進行全面[[抗戰]]，因此再無暇顧及城寨事宜。<ref name="AMO1"/><ref name="KC1"/>
+
+=== 日軍佔領 ===
+1941年[[日軍]]攻佔香港。在1942至1945年間，日軍為了擴建[[啟德機場]]及修築[[啟德明渠]]，拆毀了全部城牆並填埋了龍津石橋及九龍城碼頭。日本投降後，露宿者開始在九龍寨城聚居。<ref name="AMO1"/><ref>[https://www.dsd.gov.hk/uploads/page/thematic/kaitakriverwts/kaitaknullah_stonewalls_report.pdf 啟德明渠使用九龍城寨石塊研究報告] {{Wayback|url=https://www.dsd.gov.hk/uploads/page/thematic/kaitakriverwts/kaitaknullah_stonewalls_report.pdf |date=20240715113759 }}，香港大學中文學院，2018年7月15日</ref>
+
+=== 二戰後至中華人民共和國成立前 ===
+二戰[[香港重光]]後英國恢復香港殖民管治，1946年9月，香港警察執勤時踢死了一名九龍城的華人小販，引起居民抗議示威，港府施以武力鎮壓。寨城居民向南京國民政府投訴，國民政府向英國提出抗議，並聲明新界雖有租約存在，中國卻仍擁有寨城的主權。港府於9月中回應說九龍城已成為香港的一部分，主權隸屬於英國。<ref name="KC1"/>
+
+1947年，時任寶安縣長[[林子俠]]向[[中華民國外交部]]駐兩廣特派員[[郭德華 (中華民國)|郭德華]]建議恢復九龍城設治，並設民選鎮長，同時為承認港九為永久割讓地以向英國示好，在城內設「中華民國駐香港總領事館」，但均遭港府拒絕。11月17日，港府限令寨城居民於兩星期內拆去所有屋宇，自行遷出，並重申在寨城內享有管治權。<ref name="AMO1"/><ref name="KC1"/>12月2日，郭德華與港督[[葛量洪]]會談，重申中華民國擁有九龍寨城主權<ref name=民>{{cite book |editors=李新總主編，[[中國社會科學院]]近代史研究所[[中華民國史]]研究室編，韓信夫、姜克夫主編 |title=《中華民國史大事記》 |location=[[北京]] |publisher=[[中华书局有限公司|中華書局]] |year=2011 }}</ref>{{rp|8465}}。12月5日，[[中華民國外交部]]重申未放棄九龍城立場<ref name=民/>{{rp|8466}}。
+
+==== 九龍事件 ====
+1948年1月5日，[[港英政府|香港政府]]派大批軍警武裝進入九龍城，拆除民房70餘間，並拘捕二人<ref name=民/>{{rp|8483}}。時任[[國民政府主席]]（同年5月就任[[中華民國總統]]）[[蔣中正]]令外交部提出抗議，嚴正交涉<ref name=表>{{cite book |authors=[[陳布雷|陳-{布}-雷]]等編著 |title=《蔣介石先生年表》 |location=台北 |publisher=傳記文學出版社 |date=1978-06-01 }}</ref>{{rp|53}}。1月6日，[[中華民國外交部]]就九龍城中國居民2,000餘人遭香港軍警驅逐事向英國駐華大使[[施諦文]]提出抗議，並表示中國政府已經要求英國大使通知香港政府，停止現正採用之舉動<ref name=民/>{{rp|8484}}。而[[寶安縣]]縣長[[王啟俊]]在1948年1月7日更與縣參議會議長等人親臨寨城巡視，宣示主權<ref name="AMO1"/><ref>[[鄭義]]編著：《國共香江諜戰》，香港文化藝術出版社，2009年</ref>。1月8日，中華民國外交部再為九龍事件向施諦文提出抗議，強調中國政府對九龍寨城擁有轄權；[[監察院]]監察委員開談話會，決定致函中國外交部敦促立即查明真相，切實與港英當局交涉<ref name=民/>{{rp|8486}}。
+
+1月10日，[[港英政府|香港政府]]就九龍事件發表聲明，稱「九龍城之整個拆遷問題，完全為有關殖民地內部之行政事宜」。1月12日，廣州學生放火焚燒沙面的英國駐廣州總領事館。廣東省政府主席[[宋子文]]亦與英方交涉，拒絕英人在寨城權利。中華民國外交部次長[[葉公超]]經香港到廣州處理九龍事件，在逗留香港期間親自與葛量洪交涉。<ref name="AMO1"/><ref name="KC1"/><ref name=民/>{{rp|8487}}<ref name=民/>{{rp|8488}}在寶安縣政府支持下，「寶安縣九龍城居民福利會」成功抵抗香港政府入城整頓，寨城居民見港府再無後續行動，紛紛回去重建房屋。<ref name="AMO1"/><ref name="KC1"/>
+
+中英兩國在外交上進行重重角力，但此時[[國共內戰]]已進入決戰階段，雙方均希望盡快穩定局面，在幾經磋商後互作讓步。最後兩國同意把寨城改建為紀念公園，由雙方各派一人管理。未幾國民黨在內戰中失利，寨城問題再度擱置。<ref name="KC1"/>
+
+=== 無政府狀態 ===
+[[File:KWC - 1972 Sing Tao.jpg|thumb|250px|1972年九龍寨城及旁邊西頭村]]
+[[File:Kowloon Walled City 1991.jpg|thumb|left|220px|九龍寨城的牙醫診所（1991年）]]
+[[File:KWC - Playground.jpg|thumb|250px|從遠處看九龍寨城南面（1993年）]]
+由於[[皇家香港警察]]以至港英政府都無權進入，在當時高速發展成国际化大都会的香港，九龍寨城漸漸成了收納[[罪行|罪惡]]溫床的[[貧民窟]]，更有以「三不管地帶」，即：
+*[[港英政府|香港政府]]{{zh-em|不敢管}}、
+*[[英國政府]]{{zh-em|不想管}}、
+*[[中國政府]]{{zh-em|不能管}}。
+<ref>《九龍城寨史話》，[[三聯書店]]（香港），ISBN 9620406826</ref>來形容當地複雜的管轄問題。
+
+1949年[[中華人民共和國成立]]後，以為香港包括九龍城寨和澳門是歷史遺留下來的問題，將在適當的時機給予解決，目前只能維持現狀。<ref name="KC1"/>與此同時，大批難民自內戰開始就從華南地區湧入香港並聚居於寨城。港英政府不管制此處，寨城為[[三合會]]活躍地帶，成為[[賣淫|黃]]、[[賭博|賭]]、[[毒品|毒]]的溫床。[[妓院]]、[[賭場|賭檔]]、[[鴉片]]煙館、[[海洛因]]館、[[狗肉]]餐廳等四處林立。
+
+1959年，寨城發生了一宗命案，中英兩國政府互相推卸處理刑事案件的責任。此外，由於香港政府並不承認寨城醫生的資格，寨城成為了無牌西醫、無牌[[牙醫]]及[[中醫]]診所和[[仿冒品]]販賣點的集中地。
+
+1961年，香港政府不堪其擾，[[徙置事務處]]擬收回九龍寨城、[[西頭村]]及東頭平房區以興建徙置區（即今日的[[美東邨]]），但因中國政府反對而作罷；及後，幾經轉折下，美東邨延至1974年才在附近落成，但僅建成第6座。
+
+1963年1月17日，港英政府再次試圖清拆寨城，但[[中华人民共和国外交部]]约见[[英國駐華大使列表|英国驻华外交代办]]嘉雅，对港英当局拆除九龙寨城内居民住房一事提交[[外交照會|抗议照会]]。郑重提出，九龙寨城是中国领土，管辖权属于中国，历史上一向如此，请英国政府责成港英当局立即撤销拆迁九龙寨城的决定，并停止任何有关拆迁的行动<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=1a85ce6c55fd4b2dbda13e4c8279ede6&catalogueId=25da56c19cb711ef9c2&mainKeyword=1963-01-18&isHKMP=|title=港府拆遷九龍城寨 中國向英嚴重抗議 該地歷來屬中國 拆遷嚴重侵犯中國主權 要求英國責成港府立即停止任何拆遷行動|publisher=大公報|date=1963-01-18|page=1}}</ref><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=2&searchId=1b9fdbc75dbe4f7ab77a46a73fb86adb&catalogueId=2d3422f89cb711ef9c2&mainKeyword=%E5%9F%8E%E5%AF%A8&isHKMP=|title=英代辦嘉維接獲中共照會 拆除九龍城砦房屋 中共表示不能同意 英外交部發言人拒作任何評論|publisher=華僑日報|date=1963-01-18|page=1}}</ref><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=4&searchId=fdde03f36edc4b04b70a78413fb3e707&catalogueId=16dad75a9cb711ef9c2&mainKeyword=%E5%9F%8E%E7%A0%A6&isHKMP=|title=徙置城砦居民 中共提出抗議|publisher=香港工商日報|date=1963-01-18|page=4}}</ref>。1月21日，英国政府复照中国政府，不接受中國大陸對九龍城寨的主權，但暂停拆迁行动<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=905279d411114f1e8eaaf60a02c83a5f&catalogueId=25da60a79cb711ef9c2&mainKeyword=1963-01-22&isHKMP=|title=關於九龍城寨問題 英國拒絕中國建議 宣佈城寨暫停拆遷|publisher=大公報|date=1963-01-22|page=1}}</ref><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=2&searchId=af8cee15020244028d05b91c22bcbd1e&catalogueId=2d342d209cb711ef9c2&mainKeyword=%E4%B9%9D%E9%BE%8D&isHKMP=|title=英拒絕中共要求 九龍寨城主管權 建議討論因寨城行政而起的歧見|publisher=華僑日報|date=1963-01-22|page=5}}</ref><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=4&searchId=d9db904fa43643d6b936bf2449bd4c90&catalogueId=16dae0c39cb711ef9c2&mainKeyword=%E4%B9%9D%E9%BE%8D&isHKMP=|title=對九龍城砦遷拆事件 英拒絕中共抗議 謂香港政府已延緩採行動|publisher=香港工商日報|date=1963-01-22|page=1}}</ref>。
+
+1973至1974年，香港政府派出逾3,000名警察強行進入寨城，意圖剷除寨城內的黑社會勢力，但寨城依然「絕地再生」，[[鋼筋]][[水泥]]房屋如雨後春筍般建成，非法擴建、违建嚴重，立體的[[貧民窟]]在一塊地上突出，街道狹窄如走廊，各種奇怪店家皆有，成為都市奇景。居民由自己挖的井取水，搭配上八條公家[[水管]]的自來水。
+
+至1980年代初期，寨城的建築由於完全未經都市計畫，導致環境衞生惡劣，光線昏暗，[[犯罪率]]也遠比香港平均數字高得多。
+
+由於九龍寨城從理論上說，屬於[[中國]]的[[飛地#外飛地|外飛地]]，因此寨城貧民設立了一個沒有實際權力的「九龍城代表大會」，意圖跟中國靠攏。雖然名義上好像有中國背景，不過實際上是[[貧民]]自發的自治組織，沒被中共承認，也不受中共控制，只是用以強調九龍寨城不是英國殖民地。
+
+=== 改建公園 ===
+{{main|九龍寨城公園}}
+隨著時間流逝，寨城内的罪案率有所下降。然而，無論是英國和中國政府，都發現寨城的現狀越來越難以忍受。1984年12月，中英兩國簽訂《[[中英聯合聲明]]》處理香港問題，1987年兩國共同決定拆掉寨城，遷徙居民。1987年1月14日，英國政府與中國政府達成拆除寨城的協議<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=08118910fe264fcf8d1b6dcf910ca2a2&catalogueId=1b2912d49cb711ef9c2&mainKeyword=%E5%9F%8E%E5%AF%A8&isHKMP=|title=署理港督說因安置及財政負担分期清拆 區內人口稠密接近機塲 清拆城寨建公園不建樓 若捕獲非法入境者將遣返大陸|publisher=華僑日報|date=1987-01-15|page=1}}</ref><ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=5&searchId=50175e4588be445eb7515f99ca3ebe02&catalogueId=27043b219cb711ef9c2&mainKeyword=%E5%9F%8E%E5%AF%A8&isHKMP=|title=港府宣佈清拆九龍城寨 北京表示符合港人利益 指出聯合聲明為改善城寨居民生活創造條件|publisher=大公報|date=1987-01-15}}</ref>，由於過於接近[[啟德機場]]而決定興建公園而非興建大樓，[[中華人民共和國外交部|中國外交部]]新聞發言人對此表示理解<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=5&searchId=50175e4588be445eb7515f99ca3ebe02&catalogueId=27043b219cb711ef9c2&mainKeyword=%E5%9F%8E%E5%AF%A8&isHKMP=|title=外交部發言人談話 對興建公園表理解|publisher=大公報|date=1987-01-15|page=1}}</ref>。而公園亦盡量保留寨城一些原有的建築物及特色<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=08118910fe264fcf8d1b6dcf910ca2a2&catalogueId=1b2912d49cb711ef9c2&mainKeyword=%E5%9F%8E%E5%AF%A8&isHKMP=|title=港府動用逾億安置賠償 三年內分三期 清拆九龍城寨 政府發言人迴避土地業權問題 特別個案賠償料獲較彈性處理 預測無人願意留居未計劃應付拒遷者|publisher=華僑日報|date=1987-01-15|page=1}}</ref>。
+
+寨城在1991年開始清拆前，曾經讓藝人[[成龍]]拍攝電影《[[重案組 (電影)|重案組]]》，並容許一群[[日本]]探索家以一星期時間描繪寨城地圖。1991年11月，寨城第一期清拆到期，但仍有80戶拒絕搬遷<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=1&searchId=1686d58af43e4bf49cc391d29128e622&catalogueId=28186e089cb711ef9c2&mainKeyword=%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8&isHKMP=|title=城寨八十戶拒遷 政官斷言用武力|publisher=華僑日報|date=1991-11-28|page=5}}</ref>，清拆時一度有抵抗<ref>{{cite news|url=https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?currentPosition=2&searchId=5471759806994cf4b4aaf21e5cbe012d&catalogueId=281870c19cb711ef9c2&mainKeyword=%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8&isHKMP=|title=百五十名機動部隊封鎖現場 清拆和平進行 僅有輕微衝突 士多東主拒遷警員合力抬走 二百多名圍觀人群大喝倒采|publisher=華僑日報|date=1991-11-29|page=3}}</ref>。寨城清拆工程於1994年4月完成，香港政府將原址改建為[[九龍寨城公園|公園]]。原本計劃名為「九龍城寨公園」，因為其原稱「九龍寨城」早已完全失傳，但拆除期間得到老居民的指引，[[古物古蹟辦事處]]將一些遺跡發掘了出來，並糅合在公園的設計中或予以保存為展品，以供遊人觀賞。公園其後正式定名為「九龍寨城公園」，並於1995年12月啟用。
+
+整個發掘工作的最大收穫是兩塊於寨城南門（寨城正門）出土的[[花崗岩]]石額，分別刻有「南門」及「九龍寨城」字樣。其他的遺跡還包括寨城城牆殘存的牆基、東南兩門的牆基、一條沿寨城內牆建築的排水溝及旁邊的石板街。其餘的文物就有三座炮、石樑、對聯及柱礎等亦被一一保留下來。[[第二次世界大戰]]期間，民眾為免石額被[[日軍]]破壞，將之拆下埋於寨城內泥土中。政府將公園改名為[[九龍寨城公園]]。
+{{Gallery
+|width = 250
+|File:Kowloon Walled City Park 九龍寨城 01.jpg|改建後的九龍寨城公園
+|File:Remnants of the South Gate of Kowloon Walled City, stone plaques and foundations of post-war buildings, Kowloon City (Hong Kong).jpg|九龍寨城公園內的「南門懷古」遺跡，包括寨城城牆殘存的牆基、排水溝、城門石板街道、戰後樓宇地基，還有刻有「南門」和「九龍寨城」字樣的花崗岩石額
+|File:The Model Of Kowloon Walled City.jpg|公園南門放有拆除前的九龍寨城立體模型和日本探索家[[可兒弘明]]及其團隊繪製的橫切面圖
+|File:Kowloon Walled City Statue.jpg|展示九龍寨城拆除前樣貌的模型
+}}
+
+=== 發放補償金 ===
+1987年，政府宣布清拆九龍城寨後，表示有3.3萬居民受到影響。合資格者可獲公屋安置，或獲得比公平市值高三倍的補償金等。一名在2023年已74歲的居民曾經獲政府發放補償金，不過30多年後因失業和病痛，積蓄耗盡。他其後透過社工申請公屋，但房委會以他曾接受補償金為由，拒絕他的申請。居民在2023年7月10日入稟提司法覆核，要求法庭頒令相關政策違憲，要求房委會重新考慮其申請。<ref>{{cite news |title=領補償後失申請公屋資格　九龍城寨居民質疑違憲申司法覆核 |url=https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20230710/s00001/1688986130351/%e9%a0%98%e8%a3%9c%e5%84%9f%e5%be%8c%e5%a4%b1%e7%94%b3%e8%ab%8b%e5%85%ac%e5%b1%8b%e8%b3%87%e6%a0%bc-%e4%b9%9d%e9%be%8d%e5%9f%8e%e5%af%a8%e5%b1%85%e6%b0%91%e8%b3%aa%e7%96%91%e9%81%95%e6%86%b2%e7%94%b3%e5%8f%b8%e6%b3%95%e8%a6%86%e6%a0%b8 |accessdate=2023-07-10 |work=明報 |date=2023-07-10 |archive-date=2023-07-13 |archive-url=https://web.archive.org/web/20230713091402/https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20230710/s00001/1688986130351/%e9%a0%98%e8%a3%9c%e5%84%9f%e5%be%8c%e5%a4%b1%e7%94%b3%e8%ab%8b%e5%85%ac%e5%b1%8b%e8%b3%87%e6%a0%bc-%e4%b9%9d%e9%be%8d%e5%9f%8e%e5%af%a8%e5%b1%85%e6%b0%91%e8%b3%aa%e7%96%91%e9%81%95%e6%86%b2%e7%94%b3%e5%8f%b8%e6%b3%95%e8%a6%86%e6%a0%b8 |dead-url=no }}</ref>
+
+== 政治 ==
+由於英國在1898年提出租借[[新界]]地區時並沒有把九龍寨城劃入租借範圍，而雖然其後[[英國]]曾經對寨城進行過多次進攻，但多次都無功而返。[[滿清政府]]以及其後的[[中華民國政府]]都沒有表示要放棄寨城主權，因此法律上寨城一直都是中國的[[外飛地]]。而香港政府又多次無法取得寨城管治權，使寨城成為一個無政府狀態的[[無主地]]地帶。
+
+1945年，在寨城重光後，曾設「寶安縣九龍城居民福利會」，隸屬廣東[[寶安縣]]；中華人民共和國成立後，所有的事務都是由「城寨福利會」管理，而該組織聲稱寨城屬於中國，但中國政府所推行的政策幾乎不會對寨城有任何影響。
+
+寨城的政制大致上沿用《[[大清律例]]》，而香港於1971年廢除大清律例後雖然也有跟隨，但也不完全跟隨外面香港的法例，例如寨城內并不受香港《猫狗条例》中对于食[[狗肉]]的管制；買賣房屋沒有地契，只靠「福利會」作見證<ref>{{cite news |author=余秋婷 |date=2016-08-27 |title=【真．城寨英雄（二）】九龍城寨特產「握手樓」 跨一步即可逃生 |url=https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/39194/%E7%9C%9F-%E5%9F%8E%E5%AF%A8%E8%8B%B1%E9%9B%84-%E4%BA%8C-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%89%B9%E7%94%A2-%E6%8F%A1%E6%89%8B%E6%A8%93-%E8%B7%A8%E4%B8%80%E6%AD%A5%E5%8D%B3%E5%8F%AF%E9%80%83%E7%94%9F |newspaper=香港01 |access-date=2019-01-15 |archive-date=2020-11-23 |archive-url=https://web.archive.org/web/20201123200927/https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/39194/%E7%9C%9F-%E5%9F%8E%E5%AF%A8%E8%8B%B1%E9%9B%84-%E4%BA%8C-%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%89%B9%E7%94%A2-%E6%8F%A1%E6%89%8B%E6%A8%93-%E8%B7%A8%E4%B8%80%E6%AD%A5%E5%8D%B3%E5%8F%AF%E9%80%83%E7%94%9F |dead-url=no }}</ref>。
+
+隨著1987年中英雙方同意拆除寨城，寨城的「政權」於1993年隨著拆除工程的完成而結束，並劃入[[香港]]，屬[[九龍城區]]。
+
+「九龍皇帝」[[曾灶財]]整理祖先遺物時，發現[[九龍]]部份土地（九龍城）被[[北京條約|割讓給英國]]之前，曾獲御賜為他祖先的[[食邑]]（封地）。香港成為英國屬地後，他們卻不再是九龍的地主。曾氏不滿政府「霸佔」其土地，故開始四處稟狀，經常在家附近塗鴉「宣示主權」<ref name="mingpao20070726part2">{{〈}}自封「國皇」 到處揮毫逾40年{{〉}}，載香港《明報》，2007年7月26日。</ref>。
+
+== 人口 ==
+九龍寨城早期人口只在零和幾百之間波動，[[第二次世界大戰]]完結後不久，人口卻穩步增長。然而，此後大部分的寨城人口信息並沒有被準確地記錄。港英政府人口普查估計寨城的人口為1971年的10,004人，及1981年的14,617人，但這些數字被普遍認為是太低。在另一方面，非正式的估計，經常誤將鄰近的西頭村木屋村計入寨城人口中。但許多報導稱，寨城擁有高達50,000人。
+
+政府在1987年做的一個徹底的調查得出更清晰的數據：估計有33,000人在寨城居住。以寨城面積0.026平方公里推算，人口密度為每平方公里1,269,230人，屬於全世界[[人口密度]]最高的地方，澳門[[黑沙環]]（2017年每平方公里170,953人）的7倍多，全港人口密度最高的地方[[旺角]]（每平方公里130,000人）的9倍多。
+
+== 寨城内外建筑 ==
+另參見本條目「[[#拆除後保留的建築|拆除後保留的建築]]」部分。
+
+{{multiple image
+|align = right
+|direction = vertical
+|width = 290
+|image1 = Kowloon City, Mainland, opposite Hong Kong.jpg
+|caption1 = 19世紀的九龍城，照片中央可見九龍寨城以及延伸至後方[[白鶴山]]的石砌圍牆
+|image2 = KWC 1920s.jpg
+|caption2 = 1920年代的九龍寨城城牆及西門
+}}
+
+=== 二戰前建築 ===
+==== 官署及軍事設施 ====
+包括大鵬協副將及九龍巡檢司的官署各一所，俗稱衙門。另有士兵營房、火葯倉、軍械庫等建築物十多座。<ref name="LCSD2"/>
+
+==== 城牆 ====
+始建於1846年（道光二十六年）11月25日，起初建議修建「石城一座，周圍一百八十丈，高連垛牆一丈八尺，內東、西、南三面城牆厚一丈四尺，北面城牆厚七尺。後山（即[[白鶴山]]）建粗石圍牆一道，長一百七十丈，高八尺，厚三尺。......城樓四座，堆房六間......。另拆修原九龍炮台一座。」在興建過程中，部分城牆的高度及厚度因應地勢略有增加。<ref name="AMO1"/><ref name="LCSD2"/>
+
+整項工程於1847年（道光二十七年）5月31日完成<ref name="LCSD2"/>，城牆用花崗石條構築，有六座瞭望台和四道城門，以南門為正門。<ref>{{cite web |url=https://www.amo.gov.hk/tc/historic-buildings/monuments/kowloon/monuments_62/index.html |title=九龍寨城公園九龍寨城南門遺蹟 |date=2023-05-23 |website=文物地點 |publisher=古物古蹟辦事處 |accessdate=2025-01-23 |archive-date=2025-01-15 |archive-url=https://web.archive.org/web/20250115093447/https://www.amo.gov.hk/tc/historic-buildings/monuments/kowloon/monuments_62/index.html |dead-url=no }}</ref>城東、南、西三面牆上置炮三十二門，北牆因依山而建，故沒有安放大炮的需要。<ref name="AMO1"/>正門嵌有石刻，上書直排四行，上款記年份為「道光二十七年季春月穀旦」{{Notetag|「季春月」即農曆三月；「穀旦」僅指「吉日」，並非特定日期。}}；下款記有立匾時的兩廣總督[[耆英]]、廣東巡撫[[黃恩彤]]和廣東水師提督[[賴恩爵]]（獲封「呼爾察圖[[巴圖魯]]」）{{Notetag|三人中以總督耆英官職最高，故置於正中；巡撫黃恩彤為正二品官，論官階比從一品的提督賴恩爵低，但因朝廷以文官為重，以文管武，因此排在第一行。}}：<ref name="KC1"/><ref>{{cite web|url=https://hong-kong-heritage.com/klnwalledcity3/|title=【「九龍寨城」？「九龍城寨」？】|date=2020-06-29|publisher=尋蹤覓蹟|access-date=2025-04-29|archive-date=2025-07-08|archive-url=https://web.archive.org/web/20250708133833/https://hong-kong-heritage.com/klnwalledcity3/|dead-url=no}}</ref>
+{{quote|廣東巡撫部院黃<br/>太子少保兩廣閣督部堂宗室耆　　　　　　立<br/>廣東全省水師提督軍門呼爾察圖巴圖魯賴}}
+
+至1898年港英政府準備接管新界前夕，由輔政司[[駱克]]全面考察新租借地。駱克於8月初率調查團前往包括九龍城在內的「新界」，並於同年10月將調查結果寫成《香港殖民地展拓地報告書》送呈英國政府，當中對寨城建築有以下描述：
+{{quote|九龍（寨城）位於離海岸四分之一英哩處，由一座建於一八四七年的城牆包圍，幾乎就像一個平行四邊形，長闊為七百英呎及四百英呎，面積六點五英畝。花崗岩建成的城牆頂寬十五英呎，平均高度為十三英呎。牆上有六個哨樓，目前被佔用為民居；兩個木製城門鑲有鐵板……。<ref name="AMO1"/>}}
+
+英軍驅逐寨城內的清朝官兵後，城牆日久失修，至1940年已經崩塌。殘餘的石牆最終在1943年被日軍完全拆除，用作填海擴建啟德機場。<ref name="AMO1"/>
+
+{{multiple image
+|align = right
+|image1 = Kai Tak Bridge 1875.jpg
+|width1 = 290
+|caption1 =1875年的龍津石橋
+|image2 = Lung_Tsun_Stone_Bridge_01.JPG
+|width2 = 250
+|caption2 =龍津石橋在2010年出土的遺蹟
+}}
+
+==== 龍津石橋 ====
+{{Main|龍津石橋}}
+龍津石橋建於1873年，1875年完工落成，全長200米，寬2.6米，分為南、北兩段，以[[花崗石]]建成，是當時全港最長和最堅固的石碼頭<ref name="chinareviewnews">{{cite news |author=吴偉鴻 |url=http://www.chinareviewnews.com/crn-webapp/cbspub/secDetail.jsp?bookid=34601&secid=34649 |title=九龍龍津橋考古發現 |accessdate=2012-11-12 |archive-date=2020-08-06 |archive-url=https://web.archive.org/web/20200806121339/http://www.chinareviewnews.com/crn-webapp/cbspub/secDetail.jsp?bookid=34601&secid=34649 |dead-url=no }}</ref>。橋柱共21條。其後因海泥淤積，1892年以木材加建至300米，橋頭作丁字形，成為九龍寨城東門與海岸連接的登岸碼頭，龍津橋在靠岸一端築有接官亭，以迎接派駐九龍寨城衙門的官員。龍津石橋經歷多次改建，在[[香港日佔時期]]因擴建[[啟德機場]]而被埋。2008年，經考古專家發掘，終找到1875年龍津橋、上下船平台、碼頭石墩、接官亭墻基基石、上下船平台、1930年代九龍城碼頭水泥墩、木質防撞柱及梯級。政府在2021年開始建造龍津石橋保育長廊進行保育，預計將於2025-2026年落成<ref>{{Cite web|url=https://www.archsd.gov.hk/tc/projects/capital-projects-under-detail/470RO.html |title=建築署-啟德龍津石橋保育長廊 |access-date=2024-01-11 |archive-date=2024-05-12 |archive-url=https://web.archive.org/web/20240512082015/https://www.archsd.gov.hk/tc/projects/capital-projects-under-detail/470ro.html |dead-url=no }}</ref>。
+
+[[File:Kowloon Walled City Park 九龍寨城 03.jpg|thumb|270px|保存公園內的「龍津義學」石刻]]
+
+==== 龍津義學 ====
+龍津[[義學 (學校)|義學]]是九龍寨城最古老以及最有名的[[建築]]之一。義學由九龍司[[巡檢]]許文深、副將鵬年、通判顧炳章、大令喬應庚等官員合捐，於清[[道光]]廿七年（1847年）開辦，<ref name="AMO1"/>跟九龍寨城同期建成。其[[建築結構]]一如古時的[[貢院]]，門前有[[廊|走廊]]，兩邊有大[[石柱]]，門前有石刻，上面刻有當時[[新安縣 (明朝)|新安縣]]知縣[[王銘鼎]]所題的「龍津義學」四字，[http://images1.fotop.net/albums/henrymcy/klnwalled/05_G.jpg 大門兩旁有門聯]{{Wayback|url=http://images1.fotop.net/albums/henrymcy/klnwalled/05_G.jpg |date=20200510182736 }}，上下兩聯第三字嵌有「龍津」二字：
+{{quote|
+其猶'''龍'''乎{{NoteTag|指高深莫測，語出《[[史記]]》，原本是[[孔丘]]對[[老聃]]的讚歎。}}，卜他年鯉化蛟騰，盡洗[[南蠻|蠻]]煙[[蜑家|疍]]雨{{NoteTag|「蛋」這裡通「蜑家」的「蜑」；「蠻煙蛋雨」，這裡泛指當時文化水平較低的南方人。前人興學義舉，總是抱著普及教化的善良夙愿，希望傳統的典籍學問，能夠培養出一些德才兼備、思學俱擅的精進後學，登入人文堂奧，光于前而裕於後。}}；<br />
+是知'''津'''也{{NoteTag|語出《[[論語]]》，是讚許[[孔子]]既為[[聖人]]，知道行事門徑。}}！愿從此源尋流溯，平分[[蘇軾|蘇]]海[[韓愈|韓]]潮{{NoteTag|「蘇海韓潮」：古人讚嘆韓愈和蘇軾的文章氣勢磅礴、文采出眾；另兩人皆曾貶謫廣東。下聯是希冀學子學有所成，媲美古時聖賢。}}。
+}}
+
+義學最初兼作鄉公所使用，作商討所有九龍司事務的場地。及後城寨官員撤走，該處義學一度廢棄，在1900至1905年被用作土地法院辦公室。[[中華民國|民國]]之後，義學由附近居民改成[[小學]]，名為「九龍城公立高初兩等義學」。1940年，由於寨城[[城牆]]已塌，[[香港殖民地時期#政治|香港政府]]以[[衛生]]為理由清拆寨城[[房屋]]，當時只有[[廣蔭院]]和龍津義學沒被清拆。直到1950年代寨城大火，龍津義學被燒毁。到了1970年代，開始有[[地產]]商在寨城發展，龍津義學因而改建成「義學大樓」。<ref name="AMO1"/>
+
+==== 龍津賭坊 ====
+龍津賭坊是九龍寨城裡最大以及最有名的賭坊。
+
+==== 惜字亭 ====
+於咸豐九年（1859年）由當時的大鵬協副將張玉堂在九龍寨城內建立，教人敬惜字紙。<ref name="AMO1"/>
+
+==== 二聖廟、武帝廟 ====
+位於寨城衙門旁邊。<ref name="AMO1"/>[[香港聖公會]]第一位華人牧師鄺日修主理聖三一堂後，於寨城衙門正院開設貧窮院，收容女性老人和兒童。為方便男性信眾聽道，在1907年向港英政府租得「二聖廟」和「武帝廟」開設講堂，稱為「天國救道堂」。<ref name="CW1">{{web reference|URL=http://www.christianweekly.net/2013/ta2020309.htm|title=香港聖公會第一位華人牧師鄺日修—造福貧病老死（十三）|work=《基督教週報》第2552期|year=2013年|date=7月21日|accessdate=2017-12-15|archive-date=2020-11-28|archive-url=https://web.archive.org/web/20201128222745/http://christianweekly.net/2013/ta2020309.htm|dead-url=no}}</ref>
+天國救道堂可容納百多人聚會，每星期三晚有祈禱會，採佈道形式，歡迎坊眾參加，並於每年農曆正月初一至初八日，舉行連續性的佈道會。<ref>{{web reference|URL=https://dek.hkskh.org/holytrinity/ministry_article.aspx?id=170&lang=2|title=香港聖公會掌故-天國學校|work=香港聖公會聖三一座堂|year=2015年|date=3月1日|accessdate=2025-01-22|archive-date=2026-01-16|archive-url=https://web.archive.org/web/20260116160415/https://dek.hkskh.org/holytrinity/ministry_article.aspx?id=170&lang=2|dead-url=no}}</ref>
+
+==== 聖保羅小學（天國學校） ====
+聖公會聖三一堂在開辦「天國救道堂」的同時，亦於1906年將九龍寨城內的九龍司衙門改為平民義學，並命名為「聖保羅小學」。學校主要以教育貧苦兒童為主。其規模雖小，但吸引了來自香港島和新界的學生前來就讀。1922年起改名為「天國學校」（又稱「天國義學」），並一直營運至1936年。這所學校位處於老人街附近。<ref name="AMO1"/><ref name="CW1"/>
+
+=== 二戰後建築 ===
+==== 天后廟 ====
+九龍城的天后廟，據說原位於臨海的打鼓嶺道岸邊，後來因填海工程而遷至今日九龍城街巿的位置。二戰時天后廟被毀，天后像遂被坊眾搬入九龍城寨，並在城寨內重建天后廟。<ref>{{web reference|URL=https://kowlooncitywalkingtrail.hk/zh-hant/story/details/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%A4%A9%E5%90%8E%E8%AA%95/|title=九龍城天后誕|work=香港聖公會福利協會有限公司|accessdate=2025-01-22|archive-date=2024-11-07|archive-url=https://web.archive.org/web/20241107074519/https://kowlooncitywalkingtrail.hk/zh-hant/story/details/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%A4%A9%E5%90%8E%E8%AA%95/|dead-url=no}}</ref>至1994年天后廟與城寨一同被清拆，天后像被存放於打鼓嶺道的九龍城天后會內供奉。<ref>{{web reference|URL=https://had18.huluhk.org/article-detail.php?id=648&lang=tc|title=港文化·港創意：九龍城天后誕|work=Hulu Culture文化葫蘆|accessdate=2025-01-22|archive-date=2025-01-25|archive-url=https://web.archive.org/web/20250125114649/http://had18.huluhk.org/article-detail.php?id=648&lang=tc|dead-url=no}}</ref>
+
+城寨被清拆前的天后廟街和天后廟後街因位於天后廟附近而得名。
+
+== 拆除前城内街道 ==
+[[File:Streets in Kowloon Walled City.jpg|thumb|right|300px|城寨福利會於1980年代所製的街道圖，顯示寨城內的大廈和街道名稱，現複印在寨城公園展館內]]
+九龍寨城雖然只有6.5[[英畝]]（26,000[[平方米]]）的面積，卻有多達20至30條街巷，可以算得上世界上同面積小城中最多街巷者。寨城主要街道分南北同東西兩邊方向的大街大路，在這些大街大路再分很多小路出來。
+=== 東西向大路 ===
+[[File:KWC - 1975.jpg|thumb|left|270px|1975年寨城南面，包括龍津道的入口，當時建築已接近14層高的限制（左為西頭村）]]
+
+==== 龍津路 ====
+龍津路 (Lung Chun Avenue) 分別有6條街：龍津後街、龍津一巷、龍津二巷、龍津三巷、龍津尾巷、龍津橫巷，而在廣東省有很多城市都有龍津路。
+
+所有龍津路都有一個特點，就是它一定對凖城門口的津樑，因為龍津意思是「聚龍通津」，就是指城門同城門津樑。
+
+以前在九龍寨城確實有一個津樑，而且是由[[風水師]]看準，找出最好的所謂龍氣位而定。龍津路亦是九龍寨城内，最古老的街道。
+
+==== 龍津道 ====
+[[File:Kowloon Walled City - 1991.jpg|thumb|250px|賈炳達道公園望寨城南面（1991年）]]
+[[File:KWC - Alley.jpg|thumb|250px|寨城大路以外樓宇之間的小路]]
+[[龍津道]]是寨城城牆被拆之後，城内居民在原來南面的城基的兩旁建樓，樓與樓的中間就變成一條路，稱作龍津道。
+
+它在1951年形成，以前最盛行的色情場所、賭場、毒品分銷中心都聚集在這裡，經營的人希望這條路能聚龍通津，因此命名。
+
+這裡以前還有[[麻雀館]]、[[牌九]]檔、[[番攤]]館、狗肉食堂和煙館。
+
+=== 南北向大路 ===
+[[File:KWC_-_Night.jpg|thumb|left|300px|寨城北面外東頭村道夜景]]
+==== 龍城路 ====
+龍城路（Lung Shing Road）分支出來有三條街巷：龍城一巷、龍城二巷、龍城三巷。它是和九龍寨城外的[[東正道]]平行的一條路，它北面的路口就是對正[[東頭村道]]南邊的人行道上，而南面的入口卻十分隱蔽，因為它正好在龍津道和龍津路之間，又夾著益華樓和東南樓，正好在三岔路口上，如果自寨城外望進去，龍城路就正好被龍津路同龍津道隔著。
+
+寨城居民就將這條路稱作龍城路，作為九龍寨城的代表，龍城就是九龍寨城的簡稱。
+
+==== 光明街 ====
+光明街（Kwong Ming Street）分支出來的街巷有三條：光明一巷、光明二巷、光明三巷。它以前兩旁都是石屋以及寮屋，由於這裡有很多毒品店鋪，這些店鋪都點很多蠟燭，給吸毒者認路，所以滿街都是點燃的蠟燭，人們就稱這條街為光明街。此外因為吸毒者稱吸毒為「充電」，所以這些毒品店鋪就稱爲「電台」。
+
+不過後來這裡已經完全沒有毒品店鋪，全部改為食品生產，其中最大的有好幾間製造[[鱼丸|魚蛋]]的工場，另外還有一些做[[豬紅]]、[[砵仔糕]]、[[燒豬]]和[[燒鴨]]的工場等。但其食物的衛生情況，不容樂觀。
+
+==== 老人街 ====
+老人街（Lo Yan Street）分支出來的街巷有六條：老人街一巷、老人街二巷、老人三巷、老人後街、老人橫巷、老人後巷。它的南面進口處在龍津道112號和114號之間，這條街大約在1950年代初期形成，因爲20年代有基督教團體把前九龍巡檢司衙門那裏作爲[[老人院]]，然後居民圍繞[[老人院]]建造很多[[村屋]]，所以居民稱這條街為老人街，不過後來[[老人院]]改為青少年活動中心。<ref name="CNN" />
+
+由於老人院是由[[衙門]]改建，所以老人街有很多古蹟，其中兩尊嘉慶七年的古炮最具有代表性，老人院建築風格亦可以看得出有[[衙門]]的特色。這條老人街亦是寨城内唯一能看到太陽的地方。那間老人院是在1993年政府拆除寨城時唯一保留的建築，由於以前曾用作「九龍巡檢司衙門」，因而被列為法定古蹟。
+
+==== 大井街 ====
+大井街（Tai Chang Street）分支出來的街巷有五條：大井三巷、大井四巷、大井五巷、大井六巷、大井七巷。它算得上寨城内其中一條最老的街，還沒有寨城的時候就已經有這條街。大井街因為有一個大井而得名，而這個井在以前是整個寨城最主要的食水來源。不過到了1920-30年代，因為[[霍亂]]肆虐，而井又是有最多霍亂菌的地方之一，因此全港很多的井都要封掉，不過大井街的那個井到了1950年代才被封閉，然後開始改為用城外的八條水管供水。
+
+==== 西城路 ====
+西城路（West City Road）分支出來的街巷有七條：西城橫巷、西城二巷、西城三巷、西城四巷、西城五巷、西城六巷、西城七巷。它是寨城内唯一一條意譯為英文名稱的道路。顧名思義，西城路之所以稱爲西城，是因為這裡位於舊日城寨西邊城基的邊綫。這裡有很多[[僭建]]的[[寮屋]]，很多人去到九龍寨城，第一眼看到的就是這些建築。
+
+===其他街道===
+
+====社公街====
+社公街（Si Kung Street）社公街的命名，是因為街上有一座社壇之故。社壇是供奉社稷之神的神壇，俗稱“社公”。在建屋列居之後，居民因街上有社公神位，因而命名為社公街。
+
+====長安里和長興里====
+長興里和長安里都是西城路的兩條獨立命名的小巷。
+
+長安里位於西城二巷和西城三巷之間，它本是大井四巷的一部分，由於這裡後來興建了一幢高樓，發展商命名為長安大廈，因此這一段原屬大井四巷的小巷，便名為長安里，是一條進入長安大廈去的小巷。
+
+長興里位於西城路的西段，它原是從前西頭村長興里的一段。西頭村拆遷後，便剩下這一段長興里，它的位置在西城路、長樂樓與龍如樓之間。
+
+====天后廟街和天后廟後街====
+天后廟街位於城寨北區，因天后廟位於此街的正中地帶而得名。
+
+由於移居城寨的人口日益增加，於是在天后廟旁邊不斷建成屋宇，形成一條狹窄的街巷通往光明巷。因它是天后廟街的橫街，而名為天后廟後街。
+
+====義學巷====
+義學巷的命名是因為它從前位於龍津義學後面，龍津義學是城寨內一所社區性質的學校。
+
+== 拆除後保留的建築 ==
+[[File:Kowloon Walled City Park 02.JPG|thumb|220像素|1847年建成的衙門]]
+=== 衙府 ===
+衙府現存留在九龍寨城公園的中央，<ref name="CNN" />是唯一得以保留的清朝建築。建於1847年，作大鵬協府及九龍巡檢司衙署所在地。建築風格為三進四廂的南方建築物，牆身及柱礎用青磚及麻石建造，而屋頂樑架則為傳統木材結構，上鋪素燒的筒瓦和布瓦。
+
+自1899年駐軍撤離寨城後，衙門曾被用作多種慈善用途，其中包括用作安立間教會（聖公會聖三一堂）開辦的窮人院（「廣蔭院」，用作收容貧苦無依的長者）、老人院、寡婦和孤兒收容所、義學、診所及在最後於寨城（除衙門）清拆前作為老人中心。<ref name="AMO1"/><ref name="LCSD1">{{Cite web|url=https://www.lcsd.gov.hk/tc/parks/kwcp/yamen.html|title=衙府緬昔|accessdate=2018-07-23|author=九龍寨城公園|date=康樂及文化事務署|publisher=|archive-date=2020-05-10|archive-url=https://web.archive.org/web/20200510182746/https://www.lcsd.gov.hk/tc/parks/kwcp/yamen.html|dead-url=no}}</ref>，也是寨城中心少數沒有向上擴建的所在地。衙門門前上方刻有「ALMSHOUSE」（即「廣蔭院」）字樣，經修葺後成為寨城公園八景之一。<ref name="LCSD1"/>現被列為香港法定古蹟。
+
+[[File:Image-Kowloon Walled City southgate.jpg|thumb|220像素|南門遺址的花崗岩石額及鋼筋]]
+
+=== 南門遺址 ===
+香港政府在1994年四月清拆寨城內樓宇時，在南門原址發掘了分別刻有「南門」及「九龍寨城」的花崗岩石額，相信是居民二戰時知道日軍入侵而埋藏於泥土下。此外，城牆殘存的牆基、一條沿內牆建造的排水溝及旁邊的石板街亦先後出土<ref>{{Cite web|url=https://www.lcsd.gov.hk/tc/parks/kwcp/gate.html|title=南門懷古|accessdate=2018-07-23|author=九龍寨城公園|date=|publisher=康樂及文化事務署|archive-date=2020-05-10|archive-url=https://web.archive.org/web/20200510182748/https://www.lcsd.gov.hk/tc/parks/kwcp/gate.html|dead-url=no}}</ref>。當年樓宇的鋼筋水泥亦留於遺址中。整個南門遺址已列為法定古蹟。
+
+== 影響和文化描寫 ==
+
+「[[九龍城]]」的地名即源於九龍寨城。九龍寨城在建成後，一度爲[[九龍半島]]上唯一的城鎮，後來「九龍城」演變成寨城所在地一帶的地名。
+
+由於驚人的超高住宅密度，漫無目的的都市發展，各式不法店家的興起，九龍寨城的影像與人物故事太多，加上香港在西方的影響力，使得這個人造奇觀廣為世界所知，從有關建築、文化和社會現象中，散見於世界各地的作品和記述，知名文化人類學家[[可兒弘明]]曾對此進行深入研究，其他例子有日本[[Warehouse 遊樂場]]、《[[師父·明白了]]》、《[[銀河鐵道物語]]》、《[[攻殼機動隊]]》、《[[銀翼殺手]]》、《[[閃靈奪還屋]]》、《[[莎木II]]》、《{{illm|九龍風水傳|ja|クーロンズゲート}}》/《九龍風水傳VR》、《[[City of Darkness]]》、《[[功夫 (電影)|功夫]]》、《[[城寨英雄]]》、《[[追龍 (電影)|追龍]]》、《[[九龍城寨之圍城]]》及「Vertical City」建築概念。
+
+=== 黑暗之城：九龍城寨的日與夜 ===
+加拿大攝影師{{link-en|格雷格‧吉拉德|Greg Girard}}（Greg Girard）和英國建築師林保賢（Ian Lambot）於1993年合著出版之書籍，2015年翻譯成中文版《[[黑暗之城：九龍城寨的日與夜]]》<ref>{{cite web|url=https://www.hkreadingcity.net/book/details/5774f35b6a0b62c8098b65c3|title=黑暗之城──九龍城寨的日與夜|last=|first=|date=|website=香港閱讀城|publisher=香港教育城|access-date=2019-11-27|quote=|archive-date=2020-08-06|archive-url=https://web.archive.org/web/20200806121508/https://www.hkreadingcity.net/book/details/5774f35b6a0b62c8098b65c3|dead-url=no}}</ref>。
+
+=== Warehouse ===
+[[File:Cyber Kowloon Walled City - 01. 2nd floor - Warehouse Kawasaki, 2014-06-02 (by Ken OHYAMA).jpg|thumb|[[:c:Category:Cyber Kowloon Walled City - Warehouse Kawasaki|Cyber Kowloon Walled City]]]]
+位於[[日本]][[神奈川縣]][[川崎市]][[日進町]]一座名為 Warehouse 的室內遊樂場的設計布局仿照了九龍寨城<ref>[https://www.warehousenet.jp/store/storeinfo.php?id=210] {{Wayback|url=https://www.warehousenet.jp/store/storeinfo.php?id=210|date=20201112011118}}アミューズメントパークウェアハウス川崎店</ref>，樓宇外圍標示「城寨Style」的骯髒甩色牆紙，入口大門標示「歡迎光臨」的[[正體字]]，旁邊則有幾個塊[[海報]]的展示牌。內裡則重新建造殘舊不堪的街道與密密麻麻的建築物，設於一及二樓，不但設有破爛的舊式招牌，還有[[生鏽]]的捲閘和電梯門，廁所牆壁亦有剝落，加上配以[[粵語|廣東話]]的[[街市]]喧鬧[[背景音樂]]。場內設有1990年代的舊式[[遊戲機]]及[[扭蛋]]等不同遊樂設施。三樓至五樓的環境則恢復「正常」，設有[[現代化]][[網吧]]、[[漫畫店]]及按摩椅等<ref>[http://hk.news.yahoo.com/日人情意結-複製九龍城寨25元有得睇-225657177.html 日人情意結 複製九龍城寨25元有得睇] {{Wayback|url=http://hk.news.yahoo.com/%E6%97%A5%E4%BA%BA%E6%83%85%E6%84%8F%E7%B5%90-%E8%A4%87%E8%A3%BD%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A825%E5%85%83%E6%9C%89%E5%BE%97%E7%9D%87-225657177.html |date=20191015141914 }} 《晴報》 2013年3月25日</ref>。該家Warehouse于2005年12月开业，營運者是曾經僑居香港的{{link-ja|埼玉市議會議員|さいたま市議会}}[[吉田一郎]]；已於2019年11月17日結束營業<ref>[https://hk.on.cc/hk/bkn/cnt/lifestyle/20191017/bkn-20191017180023011-1017_00982_001.html 本日日本：香港回憶消失？川崎市「九龍城寨」11月結業] {{Wayback|url=https://hk.on.cc/hk/bkn/cnt/lifestyle/20191017/bkn-20191017180023011-1017_00982_001.html |date=20200510182813 }}《東網》 2019年10月17日</ref>。
+
+=== 九龙寨城题材作品 ===
+
+==== 電影 ====
+* 《[[白粉雙雄]]》（1978年，第一部在九龍城寨實地拍攝的電影）
+* 《[[城寨出來者]]》（1982年，被視爲最全面展現九龍城寨實地面貌的電影）
+* 《[[A計劃]]》（1983年）
+* 《[[省港旗兵]]》（1984年）
+* 《[[阿飛正傳]]》（1990年）
+* 《[[跛豪]]》（1991年）
+* 《[[重案組 (電影)|重案組]]》（1993年，最後一部在九龍城寨實地拍攝的電影）
+* 《[[O記三合會檔案]]》（1999年）
+* 《[[功夫 (2004年電影)|功夫]]》（2004年，電影中的主要場景－豬籠城寨影射九龍城寨）
+* 《[[鬼域]]》（2006年）
+* 《[[大嫂]]》（2007年）
+* 《[[三不管]]》（2008年）
+* 《[[葉問：終極一戰]]》（2013年）
+* 《[[陀地驅魔人]]》（2015年）
+* 《[[毒。誡]]》（2017年）
+* 《[[追龍 (電影)|追龍]]》（2017年）
+* 《[[葉問之九龍城寨]]》（2019年）
+* 《[[九龍城寨之圍城]]》（2024年）
+* 《[[九龍大眾浪漫]]》（2025年）
+
+==== 電視劇 ====
+* 《[[香城浪子]]》（1982年）
+* 《[[情逆三世緣]]》（2013年）
+* 《[[城寨英雄]]》（2016年）
+
+==== 小說 ====
+* 《[[九龍城寨 (小說)|九龍城寨]]》（2008年）
+* 《[[誤宮大廈]]》（2008年）
+
+==== 漫畫 ====
+* 《[[九龍城寨 (漫畫)|九龍城寨]]》、《九龍城寨2》（[[余詠良]]原作的[[香港漫畫]]）
+* 《[[金田一少年之事件簿 (電視劇)|金田一少年之事件簿]]》之「香港九龍財寶殺人事件」（2012年）
+* 《[[九龍大眾浪漫]]》（2019年）
+
+==== 輕小說 ====
+* 《[[間諜教室]]》（2021年，輕小說系列第5卷《「愚人」愛爾娜》的主要地點「龍衝」參照[[英屬香港|英國治下的香港]]，其中場景「龍魂城寨」參照九龍城寨）
+
+==== 遊戲 ====
+* 《[[莎木II]]》（2001年，[[Dreamcast]]遊戲）
+* 《[[數碼寶貝-APP獸]]》（2016年，[[数码宝贝系列#動畫|數碼寶貝動畫系列]]第七作，當中的「賽博九龍」參照九龍城）
+* 《CAGE 籠》（一款[[个人电脑|PC]]平台的[[3D]][[电子角色扮演游戏]]劇情解謎[[探險]]遊戲，暫時未有預定推出日期）
+* 《[[決勝時刻：黑色行動]]》（2010年，由[[Treyarch]]製作的[[第一人稱射擊遊戲]]，梅森的同僚哈得遜和威弗爾在香港九龍城寨找到了克拉克博士並開始拷問他）
+* 《南瓜先生2 九龍城寨》（2019年，[[Steam]]平台[[橫向捲軸遊戲|橫向捲軸]][[獨立遊戲]]，系列中第二作）
+* 《[[港詭實錄]]》（2020年，Steam平台[[第一人稱]][[恐怖]][[冒險]]獨立遊戲）
+* 《[[Kowloon Walled City]]》（2022年，由香港元宇宙遊戲工作室INDEX GAME製作的[[The Sandbox]]元宇宙[[第三人稱]][[動作冒險遊戲|動作冒險]]獨立遊戲）
+* 《[[浪貓]]》（2022年，BlueTwelve工作室開發的一款第三人稱冒險遊戲，遊戲情景部分參考九龍城寨）
+
+==== 音樂 ====
+* 《[[龍鎮II]]》（2018年，[[YoungQueenz]]的作品）
+* 《[[龍寨EP]]》（2018年，YoungQueenz發佈的專輯）
+* 《[[九龍レトロ]]》（2012年，由トーマ作詞作曲並編曲、虛擬歌手GUMI演唱的Vocaloid音樂）
+* 《[[Labyrinth in Kowloon: Walled World]]》（2021年，かめりあ的作品）
+
+== 参見 ==
+* [[握手樓]]
+* [[潘靈卓]]
+* [[宋王臺]]
+* [[劉細良]]
+* [[西柏林]]
+* [[九龍街]]
+* [[龍津石橋]]
+* [[重慶大廈]]
+* [[九龍樂善堂]]
+* [[城寨英雄]]
+* [[情逆三世緣]]
+* [[九龍城寨 (漫畫)]]
+* [[九龍城寨之圍城]]
+* [[恩斯特·台爾曼島]]
+* [[嘉法安斯金融中心]]
+
+== 註釋 ==
+{{NoteFoot}}
+
+== 参考文獻 ==
+{{Reflist|30em}}
+
+=== 書籍文獻 ===
+* 吳詹仕：《從啟德出發》，經濟日報出版社，ISBN 978-962-678-456-3
+* 林保贤、格雷格·吉拉德：《[[黑暗之城：九龍城寨的日與夜]]》，[[中华书局（香港）|中華書局]]、[[圓桌精英]]，ISBN 978-988-834-089-7
+
+== 外部連結 ==
+{{external media
+|width=238px
+|image1=[http://www.deconcrete.org/wp-content/uploads/2010/03/Kowloon-Cross-section-low.jpg 九龍寨城的橫切面]（[https://web.archive.org/web/20190723101805/http://www.deconcrete.org/wp-content/uploads/2010/03/Kowloon-Cross-section-low.jpg 页面存档备份]，存于[[互联网档案馆]]）
+|image5=[https://www.scmp.com/sites/default/files/2013/03/16/scm_news_1.1.nws_backart1_1_0.jpg "City of Anarchy", Infographic of Kowloon Walled City]（南華早報）
+|video1=[https://www.youtube.com/watch?v=No_vQ8FiQiw Video clip of the City] {{jp icon}}}}
+{{Commons category|Kowloon Walled City}}
+* [http://hkscene.blogspot.com/2008/11/139.html 九龍城寨圖片集]{{Wayback|url=http://hkscene.blogspot.com/2008/11/139.html |date=20200806121550 }}
+* [https://web.archive.org/web/20120614220734/http://funyeah.com/fun/photos/kowloon_city/ 九龍城寨圖片集2]
+* [http://life.mingpao.com/cfm/reports3.cfm?File=20080523/rptaa06b/gom2.txt 啟德掘出疑似清朝石橋]{{Wayback|url=http://life.mingpao.com/cfm/reports3.cfm?File=20080523%2Frptaa06b%2Fgom2.txt |date=20160304193510 }}
+* [https://web.archive.org/web/20070823043025/http://keropero888.hp.infoseek.co.jp/map/kowloon05.jpeg 九龍城寨地理沿革略圖]
+* [https://web.archive.org/web/20091128101135/http://keropero888.hp.infoseek.co.jp/city/hongkong02.html 1933年發行的香港地圖]
+* [https://web.archive.org/web/20090303234146/http://discoverhongkong.com/tc/attractions/kln-walled-city-park.html 香港旅遊局發展局的介紹網頁]
+* [https://web.archive.org/web/20060410144414/http://www4.ocn.ne.jp/~keropero/kyuryu00.html 「{{lang|ja|東洋の魔窟}}」{{lang|ja|九龍城砦探検記}}]{{Ja icon}}
+* [http://www.amo.gov.hk/b5/monuments_63.php 康樂及文化事務署-古物古蹟辦事處-前九龍寨城衙門]{{Wayback|url=http://www.amo.gov.hk/b5/monuments_63.php |date=20201022180027 }}
+* 香港康樂及文化事務署：九龍寨城公園（[https://web.archive.org/web/20140819033726/http://www.lcsd.gov.hk/parks/kwcp/b5/index.php 繁體]）
+* {{cite web|url=http://itv.org.hk/phab/databank/data-2008-monuments-10.pdf|title=古蹟無障礙旅遊指南2008：九龍寨城公園|last=|first=|coauthors=|date=2008|publisher=香港傷健協會|accessdate=2012-02-11}}
+* [https://www.hkchronicles.org.hk/%E9%A6%99%E6%B8%AF%E5%BF%97/%E5%9C%B0%E5%90%8D/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%9C%B0%E5%90%8D%E5%88%9D%E6%8E%A2 蔡兆浚，〈九龍城地名初探〉，香港地方志。] {{Wayback|url=https://www.hkchronicles.org.hk/%E9%A6%99%E6%B8%AF%E5%BF%97/%E5%9C%B0%E5%90%8D/%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%9C%B0%E5%90%8D%E5%88%9D%E6%8E%A2 |date=20240520030431 }}
+
+{{香港法定古蹟}}
+{{Portal bar|香港|历史|国际关系|中国建筑|中国文化遗产}}
+{{Authority control}}
+
+{{Coord|22|19|56.21|N|114|11|25|E|type:landmark|display=title}}
+
+[[Category:九龍城]]
+[[Category:香港軍事設施]]
+[[Category:广东军事设施]]
+[[Category:广东城池]]
+[[Category:大清外飞地]]
+[[Category:清朝衙门]]
+[[Category:亚洲贫民窟]]
+[[Category:中国城池遗址]]
+[[Category:香港已不存在的建築物]]
+[[Category:九龍城寨| ]]
+[[Category:中華民國爭議地區]]
+[[Category:香港清朝歷史]]
+[[Category:1847年中國建立]]
+[[Category:1994年香港廢除]]
+[[Category:清朝—英屬香港關係]]
+[[Category:中華民國大陸時期與香港關係]]
+[[Category:中華人民共和國—英屬香港關係]]

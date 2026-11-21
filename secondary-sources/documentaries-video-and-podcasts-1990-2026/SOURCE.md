@@ -2,10 +2,9 @@
 
 Later films and talks that retell the City.
 
-- **Status:** catalogued on 2026-11-17 by the source search of 2026-11. Nobody has read these items for the repo yet.
-  "What it gives" is the short note of the agent that found the item. It is not a checked fact.
-  Before you use a fact in the model, read it on the source and write it in this file with its
-  page and a short exact quote.
+- **Status:** partly read: 18 of 19 items read by the reading of the source search of
+  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
+  read: its "What it gives" is the note of the finder, not a checked fact.
 - **Dates:** 2010-2026.
 - **Items:** 19, of which 17 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -27,98 +26,160 @@ Not read yet.
 
 ### repo-audit-23: 最后的城池——香港九龙城寨历史记忆
 
-- **Creator:** Phoenix TV (凤凰卫视), programme 《皇牌大放送》; page on ifeng.com
-- **Date:** 2023-09-01
-- **Kind:** film
-- **Class:** secondary (A later documentary that mixes historians with interviews of former residents.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © Phoenix TV
-- **Link:** https://news.ifeng.com/c/8SjFo883Qbp
-- **Proof that it exists:** First sentence: 「这里，是世界上人居密度最大的地方，约四个足球场大小，曾同时容纳几万人居住。」
-- **What it gives (finder's note, not checked):** Interviews with 陈协平 of the residents' association (drugs of the 1940s-50s, the strip clubs of the early 1960s, the protest against the 1962 clearance), 陈慎芝 (drug den, 1965-1974), a Legislative Council member who grew up on a 12th floor and carried water up the stairs, and 林保贤 (Ian Lambot).
-- **Notes:** data/people.json: 1 source entry (chan-shan-chi); docs/people.md 2 lines. The page uses simplified characters. The resident interviews in it are retrospective: a transcript or the video can give more facts on water and homes. The cnyes article (repo-audit-24) draws on it.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the whole ifeng.com article (a preview of the documentary, with long quotations from its interviews) in a browser on 2026-11-21. I did not watch the documentary: a YouTube search in the browser found no copy, and the page has no playable video. Thus the interviews are read only as far as the article quotes them. Section names below are the article's own headings.
+- **Citation:** 凤凰卫视 (Phoenix TV), 《皇牌大放送》, 《最后的城池——香港九龙城寨历史记忆》 (documentary). Preview article: 凤凰卫视, 「最后的城池——香港九龙城寨历史记忆」, 凤凰网 (ifeng.com), 1 Sep 2023 17:52 (article:published_time 2023-09-01T17:52:01+08:00), https://news.ifeng.com/c/8SjFo883Qbp
+- **Class:** secondary (A later documentary (2023) that mixes historians, Ian Lambot and AI-made images with interviews of former residents. The narration is secondary. The quoted words of Chan Hip Ping (陳協平), 陳慎芝, 陳凱欣 and her mother are retrospective testimony (2023); I marked them kind primary. The item stays in secondary-sources; if the full video is found, its interviews can also go in primary-sources/retrospective-testimony-web.)
+- **Date of the record:** Article 2023-09-01. The article says the film airs 'this Saturday 22:00', thus first broadcast probably Sat 2 Sep 2023 (inferred from the article date).
+- **Files:**
+  - `repo-audit-23-8SjFo883Qbp-a75af751.html` (in `local/`, not in git): HTML of the ifeng.com preview article (short page) with the interview quotations; https://news.ifeng.com/c/8SjFo883Qbp; 269894 bytes; SHA-256 `fa3d8aa3f00783f2a218c817484bc51a12a43f67e17d442f478e8c01f8ef6fc3`; licence: no licence statement on the page; © 凤凰网 / Phoenix TV assumed (https://news.ifeng.com/c/8SjFo883Qbp)
+- **Note:** its 13 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md`](../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| ifeng article, section 「“九龙寨城”之历史」, para 1 | The article says the City was once salt fields, and later the seat of the 官富巡檢司, where a ninth-rank inspector managed the nearby villages. | "这片南国的土地曾是一片盐田，后来因产盐量减少，这里就变成了“官富巡检司”" (This southern land was once a salt field; later, as salt output fell, it became the 官富巡检司.) |
+| ifeng article, section 「“九龙寨城”之历史」, para 2 | The article says that the Qing built a beacon here, the 九龍礅台, which later became the 九龍汛 with a garrison of about 100 men. | “九龙礅台”更是升格成了“九龙汛”，驻军约百人。 (The 九龙礅台 was later raised to the 九龙汛, with about a hundred soldiers.) |
+| ifeng article, section 「“九龙寨城”之历史」, para 4 | The article says that the Liangguang viceroy 耆英 asked the court to build a walled town at Kowloon, and that the walled town was finished in 1847. | "时任两广总督的耆英上奏朝廷建议在九龙寨修筑城池。1847年，“九龙寨城”正式落成。" (耆英, then Viceroy of Liangguang, memorialised the court to build a walled town at Kowloon. In 1847 the 'Kowloon Walled City' was completed.) |
+| ifeng article, section 「“九龙寨城”之历史」, para 8 | The article says that after the British drove out the Qing officials in 1899, they leased the City's land to a British welfare body; the yamen became an old people's home, and the City's school became the New Territories land court. | "他们将寨城的土地批租给了一个英国福利机构，衙门被改建成老人院，原来九龙寨城内的学校也被改建成新界田土法庭。" (They leased the City's land to a British welfare institution; the yamen was converted into an old people's home, and the school inside the City into the New Territories land court.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, para 1 | The article says that gambling came to the City after a Hong Kong governor (麥當奴) legalised gambling in the late 1860s and his successor banned it five years later. | "五年后，港督更换，港府突然宣布禁赌，大批香港赌商，便将目光投向了九龙寨城。" (Five years later the governor changed, the government suddenly banned gambling, and many Hong Kong gambling operators turned to the Walled City.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, para after the 陈协平 quotation | The article says that 陳慎芝, who grew up in Kowloon, was 16 in 1965 and led a gang that called itself 慈雲山十三太保. | "1965年，九龙长大的陈慎芝刚满16岁，他常常带着一帮古惑仔兄弟参与黑帮打斗，他们自称“慈云山十三太保”" (In 1965 Chan, who grew up in Kowloon, had just turned 16; he often led a band of young toughs in gang fights; they called themselves the 「慈云山十三太保」.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, same para | The article says that 陳慎芝 became addicted and then worked as a patrolman (巡場) at a drug stall in Sai Tau Tsuen (西頭村), south of the City. | "之后还在九龙城寨南边的西头村毒档做起了巡场。" (Afterwards he even worked as a patrolman at a drug stall in Sai Tau Tsuen, south of the Walled City.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, speaker caption | The caption names 陳慎芝 as one of Hong Kong's Ten Outstanding Young Persons of 1987 and as a former worker at a drug stall of the City. | "1987年香港十大杰出青年、曾于九龙城寨毒档工作 陈慎芝" (1987 Hong Kong Ten Outstanding Young Persons, formerly worked at a Walled City drug stall: 陈慎芝.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, para on the 1955 report | The article says that a Hong Kong government report of 1955 counted in the City 120 opium and drug dens, 20 brothels, 5 gambling houses and 16 strip clubs, and that triads collected protection money there. | "共有120间烟馆毒档、20间妓院、5间赌馆、16间脱衣舞场，三合会也在九龙城寨内收保护费" (There were 120 opium and drug dens, 20 brothels, 5 gambling houses and 16 strip clubs; triads also collected protection money inside the City.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, quotation of 林保贤 | Ian Lambot (林保賢) says that the police knew what went on and reported the amounts of drugs and opium to the Colonial Office, but could not really arrest anyone, because a person arrested on Chinese territory would have to go to a Chinese court. | "如果你要起诉罪犯，你应该要把他送到中国法院，因为他是在中国领土上被逮捕的。" (If you wanted to prosecute a criminal you would have to send him to a Chinese court, because he was arrested on Chinese territory.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, para on the 1958 murder | The article says that in 1958, on the tenth day of the first lunar month, 柯錦誠, called the 'Tiger of the Walled City', was found dead outside a public latrine of the City; the killer was 陳興, a 40-year-old resident. | "有“砦城之虎”之称的柯锦诚被发现伏尸城寨公厕外，凶手正是居住在城寨的40岁华人陈兴。" (柯锦诚, known as the 「砦城之虎」 ('Tiger of the Walled City'), was found dead outside the City's public latrine; the killer was 陈兴, a 40-year-old Chinese resident of the City.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, same para | The article says that a Hong Kong court found the killer guilty of murder and that he was hanged on 12 August 1958. (Other items of this chunk put the trial in 1959; the date is not checked here.) | "港英法庭裁定凶手谋杀罪名成立，并判处缳首死刑，于1958年8月12日行刑。" (The Hong Kong court found the killer guilty of murder and sentenced him to hang; he was executed on 12 August 1958.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, quotation of 林保贤 | Ian Lambot says that, to everyone's surprise, China made no objection, and that afterwards the police began to enforce the law in the City. | "令人惊讶的是，中国完全没有提出任何反对意见。此后，警方开始在城寨执法" (Surprisingly, China raised no objection at all. After that the police began to enforce the law in the City.) |
+| ifeng article, section 「九龙城寨“三不管”时期」, para after the Lambot quotation | The article says that the government then raided several large drug factories in the City and seized much opium-smoking equipment and heroin. | "港府接连扫荡了九龙城寨内多个大型制毒工场，并没收了大量烟管和海洛因" (The government raided one after another several large drug-making workshops in the City and seized large amounts of opium pipes and heroin.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 2 | The article says that on 10 June 1933 the government posted notices in the City that it would develop the site, and told residents to leave before September. | "1933年6月10日，港府突然在九龙寨城内张贴告示，说要发展此地，限居民9月前搬出。" (On 10 June 1933 the government suddenly posted notices in the City saying it would develop the place and residents must move out before September.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 2 | The article says that in December 1936 the government demolished house No. 25 in the City by force. | "1936年12月，港府更是强拆了九龙寨城里第25号民居。" (In December 1936 the government even forcibly demolished house No. 25 in the City.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 3 | The article says that the government notice of 1947 said 48 wooden huts in the City occupied Crown land and must be removed within two weeks. | "九龙城寨48间木屋霸占了所谓的“皇家土地”，限两周内拆除" (48 wooden huts in the City occupied so-called 'Crown land' and were to be demolished within two weeks.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 5 | The article says that on 5 January 1948 police and workers demolished more than 40 houses in the City; on 12 January police in steel helmets used force; on 16 January protests broke out in Guangzhou and other cities, and the British consulate at Shamian was burned. | "1948年1月5日，大批港府警员和工人再次冲进九龙城寨，强拆了40多间房屋。" (On 5 January 1948 large numbers of police and workers again rushed into the City and demolished more than 40 houses.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, image caption | A caption shows that the film uses an AI-made image for the police entry of 12 January 1948; thus some images in the film are not records of the time. | "AI模拟1948年1月12日，大批头戴钢盔的警员冲进九龙城寨" (AI simulation: 12 January 1948, many police in steel helmets rush into the City.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 6 | The article says that in March 1962 the government announced a third clearance of the City, when the City had more than 20,000 residents. | "1962年3月，港府第三次宣布清拆九龙城寨，并再次逼迫居民迁出。此时，城寨的居民人数已经超过两万。" (In March 1962 the government announced the clearance of the City for the third time and again pressed residents to move out. By then the City had over 20,000 residents.) |
+| ifeng article, section 「关于九龙城寨的几次中英博弈」, para 8 | The article says that the anti-demolition committee asked Xinhua News Agency (新華社) in Hong Kong for help, that the Chinese Foreign Ministry protested, and that the government then stopped. | "反拆迁委员会联络了国内当时设在香港的机构新华社，向中央求援。" (The anti-demolition committee contacted the mainland's office in Hong Kong at the time, Xinhua, to seek help from the central government.) |
+| ifeng article, section 「九龙城寨内的居民生活」, speaker caption | A caption names 陳凱欣 as a Legislative Council member who was born and grew up in the City. | "香港立法会议员、曾于九龙城寨出生长大 陈凯欣" (Hong Kong Legislative Council member, born and raised in Kowloon Walled City: 陳凱欣.) |
+| ifeng article, section 「九龙城寨内的居民生活」, para 2 | The article says that the mother of 陳凱欣 was born in the City in 1953, and her father moved into the City at the age of 10; they were near neighbours, married in the City and raised their family there. | "陈凯欣的妈妈，1953年出生在九龙城寨" (Chan's mother was born in Kowloon Walled City in 1953.) |
+| ifeng article, section 「九龙城寨内的居民生活」, para 3 | The article says that the father of 陳凱欣 was a seaman, often away at sea for more than a year at a time. | "陈凯欣的爸爸是海员，经常出海工作，一走就是一年多。" (Chan's father was a seaman who often worked at sea; once gone, he was away for over a year.) |
+| ifeng article, section 「九龙城寨内的居民生活」, last para | The article says that the City held dozens of cheap unlicensed dental clinics and many kinds of processing factories. | "城寨里，还分布着几十间平价的无牌牙医诊所以及各式各样的加工工厂" (In the City there were also dozens of cheap unlicensed dental clinics and all kinds of processing factories.) |
+| ifeng article, last section 「创新制作手段呈现消失的九龙城寨」, para 1 | The article says that the documentary uses animation, AI-made images and staged filming to show the vanished City. | "主创团队精心制作，采用了动画、AI制图、模拟拍摄等多种方式" (The production team used many methods, including animation, AI image-making and simulated filming.) |
+| ifeng article, last section 「创新制作手段呈现消失的九龙城寨」, para 2 | The article says that in 1987 the government announced the clearance of the City. | "然而，1987年港府宣布正式清拆九龙城寨。" (However, in 1987 the government formally announced the clearance of the City.) |
+
+- **Leads:**
+  - The Hong Kong government statistical report of 1955 on illegal activities in the City (120 opium and drug dens, 20 brothels, 5 gambling houses, 16 strip clubs), cited in the ifeng article, section 「九龙城寨“三不管”时期」; the report itself is not named (probably in the Colonial Office files, inferred).
+  - The 1958 murder trial of 陳興 for the killing of 柯錦誠 (executed 12 Aug 1958 per the article): court records or the Hong Kong press of 1958.
+  - The full documentary 《最后的城池——香港九龙城寨历史记忆》 (Phoenix TV, 《皇牌大放送》, Sep 2023): the complete interviews of Chan Hip Ping (陳協平), 陳慎芝, 陳凱欣 and her mother can give more facts on water carrying and home life. No copy found online.
+  - The government notice of 10 Jun 1933 and the demolition of house No. 25 in Dec 1936 (cited in the ifeng article, section 「关于九龙城寨的几次中英博弈」).
 ### popular-24: アナザーストーリーズ 運命の分岐点「香港の“魔窟” 九龍城砦（じょうさい）が消えた日」
 
-- **Creator:** NHK BS
-- **Date:** 2025-07-02
-- **Kind:** film
-- **Class:** secondary (A later television documentary; it can hold interviews, but the listing does not name them.)
-- **Value:** medium
-- **Language:** ja
-- **Access:** open
-- **Licence:** © NHK
-- **Link:** https://thetv.jp/program/0000848471/279/
-- **Other links:** https://thetvdb.com/series/httpswww4nhkorjpanotherstories/episodes/11235637
-- **Proof that it exists:** thetv.jp listing: アナザーストーリーズ　運命の分岐点「香港の“魔窟”　九龍城砦（じょうさい）が消えた日」, NHK BS, 2025年7月2日; 松嶋菜々子（司会）, 濱田岳（ナレーター）.
-- **What it gives (finder's note, not checked):** A TV listing only: a documentary on the day the City disappeared (the clearance). A search extract says 45 minutes and that it covers the City's self-government as well as gambling, drugs and prostitution.
-- **Notes:** The 'film' and 'ja' lenses also list this programme. No copy of the programme was found; the NHK page itself was not opened. If it interviews former residents, police or the Japanese survey team, those parts are retrospective.
-- **Same item in the finder files:** film-14, ja-21
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the thetv.jp listing (date, channel, host, narrator, keywords) and the TheTVDB episode page, which gives the NHK synopsis, the air date and the run time. I did not watch the programme: no copy was found. www.nhk.jp failed in the browser (HTTP/2 protocol error), so the NHK page was not read. One WebSearch found no names of the witnesses.
+- **Citation:** NHK BS, アナザーストーリーズ 運命の分岐点「香港の“魔窟” 九龍城砦（じょうさい）が消えた日」, broadcast 2 Jul 2025, 45 min; 松嶋菜々子 (host), 濱田岳 (narrator). Listings: ザテレビジョン (thetv.jp), https://thetv.jp/program/0000848471/279/ ; TheTVDB, season 2025, episode 15, https://thetvdb.com/series/httpswww4nhkorjpanotherstories/episodes/11235637
+- **Class:** secondary (A later TV documentary (2025). thetv.jp tags the series with the keyword 証言 (testimony); the parts with former residents, police or others who saw the City, if any, are retrospective (2025). The synopsis does not name them.)
+- **Date of the record:** 2025-07-02 (first broadcast)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| TheTVDB episode page (NHK synopsis), para 1 | The NHK synopsis says that the City was feared as the 'demon den of the East' in British Hong Kong, and that people said one who went in did not come out alive. | "イギリス統治下の香港で“東洋の魔窟”と恐れられた場所があった。入ったら命はないと言われた九龍城砦（じょうさい）だ。" (In British-ruled Hong Kong there was a place feared as the 'demon den of the East'. It was Kowloon Walled City, which people said you would not leave alive.) |
+| TheTVDB episode page (NHK synopsis), para 1 | The synopsis calls the City a giant slum of illegal buildings packed on a small plot, with tens of thousands of residents. | "狭い土地に違法建築が密集し、数万人が住み着いた巨大スラム。" (A giant slum where illegal buildings crowded a narrow plot and tens of thousands of people settled.) |
+| TheTVDB episode page (NHK synopsis), para 1 | The synopsis says that the City had gambling, drugs and prostitution, and was a base of the mafia. | "賭博、麻薬、売春…マフィアの根城でもあった。" (Gambling, drugs, prostitution... it was also a stronghold of the mafia.) |
+| TheTVDB episode page (NHK synopsis), para 1 | The synopsis says that inside the City self-government was kept, medical care and welfare were good, and people were warm-hearted (as reported). | "一方、内部では自治が保たれ、医療や福祉も充実。人情あふれる場所でもあったという。" (On the other hand, self-government was kept inside, and medical care and welfare were ample. It is said to have been a place full of human warmth.) |
+
+- **Leads:**
+  - The programme itself (NHK BS, 2 Jul 2025, 45 min): its witnesses are not named in any listing that I could read. If NHK On Demand or a rebroadcast gives the credits, check them for former residents or police (retrospective testimony, 2025).
 ### repo-audit-35: Listen Online – Return to the City of Darkness: Kowloon Walled City (China Rhyming), on the BBC Radio 3 'Between the Ears' documentary
 
-- **Creator:** Paul French (writer of the documentary); producer Mark Burman, a Storyscape Production for BBC Radio 3
-- **Date:** 2026-03-01
-- **Kind:** article
-- **Class:** secondary (A blog post that announces a radio documentary; the programme itself holds the testimony.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Paul French; programme © BBC
-- **Link:** https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/
-- **Other links:** https://www.bbc.co.uk/sounds/play/m002r3zc
-- **Proof that it exists:** Listen Online – Return to the City of Darkness: Kowloon Walled City (1 Mar 2026)
-- **What it gives (finder's note, not checked):** The programme has former residents Louisa Wong and Albert Ng, and Greg Girard, Fiona Hawthorne, Suenn Ho, Guy Shirra and Chan Woonie.
-- **Notes:** data/people.json: 2 true entries (albert-ng-kam-po, louisa-wong), and 5 more entries that wrongly carry this name with the SCMP 3219200 URL (see repo-audit-14). The BBC programme (link from the post) is a lead for retrospective testimony (2026): WebFetch refuses bbc.co.uk, thus not checked.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the whole China Rhyming post and the BBC programme page (https://www.bbc.co.uk/programmes/m002r3zc) in a browser on 2026-11-21. I did not hear the 30-minute radio programme: I cannot listen to audio, and BBC gives no transcript.
+- **Citation:** Paul French, 'Listen Online – Return to the City of Darkness: Kowloon Walled City', China Rhyming (blog), 1 Mar 2026, https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/ . Programme: Paul French (writer), 'Return to the City of Darkness', Between the Ears, BBC Radio 3, broadcast Sun 15 Feb 2026 19:15, 30 min; sound engineer Duncan Thornley; producer Mark Burman; a Storyscape Production for Radio 3; https://www.bbc.co.uk/programmes/m002r3zc ; BBC Sounds https://www.bbc.co.uk/sounds/play/m002r3zc
+- **Class:** secondary (A blog post that announces a radio documentary of 2026. The programme holds retrospective testimony (2026) of former residents Louisa Wong and Albert Ng, and first-hand accounts of the last months by Greg Girard, Fiona Hawthorne and Suenn Ho; those parts would be retrospective (2026). Not heard.)
+- **Date of the record:** Blog post 2026-03-01; programme first broadcast 2026-02-15
+- **Files:**
+  - `repo-audit-35-page-09e2afc1.html` (in `local/`, not in git): HTML of the blog post (short page): programme description and credits; https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/; 142871 bytes; SHA-256 `eb5f1ce86e3abe0dc36b4eee96e6e78516d52bc88e524b2ae9ba8d72f6728112`; licence: © Copyright 2026 China Rhyming, All Rights Reserved (https://chinarhyming.com/2026/03/01/listen-online-return-to-the-city-of-darkness-kowloon-walled-city/)
+  - `repo-audit-35-m002r3zc-c606eb7d.html` (in `local/`, not in git): HTML of the BBC programme page (broadcast date, length, synopsis); https://www.bbc.co.uk/programmes/m002r3zc; 159963 bytes; SHA-256 `4da025e10c374fc49bf7ab71fd9387382d11af7a8256ddb5a9e0529302695ce6`; licence: Copyright © 2026 BBC (https://www.bbc.co.uk/programmes/m002r3zc)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| BBC programme page m002r3zc, 'Broadcast' | The BBC programme page gives the first broadcast as Sunday 15 February 2026 at 19:15 on BBC Radio 3, with a length of 30 minutes. | "Sun 15 Feb 2026 19:15 BBC RADIO 3" |
+| China Rhyming post, 1 Mar 2026, para 2 | Paul French explains the name 'City of Darkness': sunlight rarely got through its dense layers. | "so called because the sunlight rarely penetrated its dense layers of industry and life." |
+| China Rhyming post, 1 Mar 2026, para 2 | Paul French describes the passageways as no wider than the spread of a person's arms. | "passageways punched through corridors no wider than the spread of one’s arms." |
+| China Rhyming post, 1 Mar 2026, para 4 | Paul French describes the City as hung with cables and pipes and dripping with water. | "A rookery, festooned with cables, pipes and dripping water" |
+| China Rhyming post, 1 Mar 2026, para 3 | The post says that the programme talks to former residents who grew up in the City, Louisa Wong and Albert Ng. | "Writer Paul French talks to former residents who grew up there, like Louisa Wong and Albert Ng" |
+| China Rhyming post, 1 Mar 2026, para 3 and the list of voices | The post says that the programme also talks to people who recorded the City's last months: the artist Fiona Hawthorne and Suenn Ho, then an architecture student. It mentions Greg Girard and Ian Lambot too, but Lambot is not in the list of voices. | "those who meticulously chronicled its last months, like artist Fiona Hawthorne, then architectural student Suenn Ho" |
+| China Rhyming post, 1 Mar 2026, credits | The list of voices in the programme is Greg Girard, Fiona Hawthorne, Suenn Ho, Pastor Albert Ng, Guy Shirra, Louisa Wong and Chan Woonie. The post does not say who Guy Shirra and Chan Woonie are. | "With the voices of: Greg Girard, Fiona Hawthorne Suenn Ho, Pastor Albert Ng, Guy Shirra, Louisa Wong and Chan Woonie." |
+| China Rhyming post, 1 Mar 2026, credits | The programme uses readers (John Chan, Jon Chew, Betty Lo, David Tse, Kevin Ung, Charlie Wong), thus some voices read texts and are not witnesses. | "Readers: John Chan, Jon Chew, Betty Lo, David Tse, Kevin Ung, Charlie Wong" |
+
+- **Leads:**
+  - The audio of 'Return to the City of Darkness' (BBC Radio 3, Between the Ears, 15 Feb 2026, 30 min, BBC Sounds m002r3zc): retrospective testimony (2026) of Louisa Wong and Pastor Albert Ng, and of Chan Woonie and Guy Shirra (roles not stated). A transcript is needed.
 ### top-gap-tv-news-archives-5: TBS映像倉庫を大捜索！伝説の香港スラム街「九龍城」
 
-- **Creator:** TBS (TBSテレビ), programme クレイジージャーニー; listing on datazoo.jp
-- **Date:** 2026-04-06
-- **Kind:** film
-- **Class:** secondary (A later programme that searches the TBS film store for its old footage of the City.)
-- **Value:** medium
-- **Language:** ja
-- **Access:** unknown
-- **Licence:** © TBS
-- **Link:** https://datazoo.jp/n/TBS%E6%98%A0%E5%83%8F%E5%80%89%E5%BA%AB%E3%82%92%E5%A4%A7%E6%8D%9C%E7%B4%A2%EF%BC%81%E4%BC%9D%E8%AA%AC%E3%81%AE%E9%A6%99%E6%B8%AF%E3%82%B9%E3%83%A9%E3%83%A0%E8%A1%97%E3%80%8C%E4%B9%9D%E9%BE%8D%E5%9F%8E%E3%80%8D/24845911
-- **Proof that it exists:** 「香港のスラム街「九龍城」が東洋の魔窟と恐れられたが、1994年に取り壊された。」「このあと、九龍城の映像を検索する。」
-- **What it gives (finder's note, not checked):** Shows that the TBS archive holds film of the Walled City from before its demolition. The listing gives no year, programme or reporter of that footage.
-- **Notes:** The datazoo listing gives 'TBS 2026年4月6日放送 0:00 - 0:03', thus perhaps only a preview segment. It names 丸山ゴンザレス as the programme's journalist, not as the maker of the old footage. A lead: ask TBS (or its archive sales) for the dates and programmes of its Walled City footage of the 1980s-1990s.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the TVでた蔵 (datazoo.jp) segment page and the programme page of the same broadcast, which lists every segment with a short summary and keywords. I did not watch the programme (no open copy). The summaries are by the listing site, not by TBS.
+- **Citation:** TBS, クレイジージャーニー (hosts 設楽統 and 小池栄子; journalist 丸山ゴンザレス), broadcast 6 Apr 2026, 23:56-0:55; segments 「TBS映像倉庫を大捜索！伝説の香港スラム街「九龍城」」. Listings: TVでた蔵 (WireAction, Inc.), segment page https://datazoo.jp/n/TBS%E6%98%A0%E5%83%8F%E5%80%89%E5%BA%AB%E3%82%92%E5%A4%A7%E6%8D%9C%E7%B4%A2%EF%BC%81%E4%BC%9D%E8%AA%AC%E3%81%AE%E9%A6%99%E6%B8%AF%E3%82%B9%E3%83%A9%E3%83%A0%E8%A1%97%E3%80%8C%E4%B9%9D%E9%BE%8D%E5%9F%8E%E3%80%8D/24845911 ; programme page https://datazoo.jp/tv/%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC/1859001
+- **Class:** secondary (A later variety programme (2026) that searches the TBS film library. The old TBS footage it shows (from 筑紫哲也 NEWS23, from ギミア・ぶれいく episode 128, and of the 1992 eviction) is a record made at the time, but I know it only from the listing's summaries, so I marked those facts secondary.)
+- **Date of the record:** 2026-04-06 (broadcast; the City segments start at about 0:00 on 7 Apr)
+- **Files:**
+  - `top-gap-tv-news-archives-5-1859001-37132ebc.html` (in `local/`, not in git): HTML of the TVでた蔵 programme page for the broadcast of 6 Apr 2026 (all segment summaries); https://datazoo.jp/tv/%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC/1859001; 97947 bytes; SHA-256 `80b1a53803dcae27bfc96295c836fd8577f58d28a10bd3278ce32ca92dd78f22`; licence: © 2009-2026 WireAction, Inc. All Rights Reserved. (https://datazoo.jp/tv/%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC/1859001)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| TVでた蔵 segment page, 0:00-0:03 | The listing says the City was feared as the 'demon den of the East' and was demolished in 1994. | "香港のスラム街「九龍城」が東洋の魔窟と恐れられたが、1994年に取り壊された。" (Hong Kong's slum 'Kowloon City' was feared as the demon den of the East, but was demolished in 1994.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「TBS映像倉庫に眠るクレイジーな貴重映像を大捜索！」 | The programme searched the material of the TBS general archive room (TBS総合資料室) for old footage. | "TBS総合資料室のコンテンツから、過去の貴重な映像を捜索する。" (It searches the content of the TBS general archive room for precious past footage.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城」放送局を検索」, keywords | INFERRED: The keywords of the library-search segment name the TBS news programme 筑紫哲也 NEWS23, so some of the footage probably comes from that programme (inferred from the keywords; the year is not given). | "TBSテレビ九龍城砦東京ドーム筑紫哲也 NEWS23香港（中国）" |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城」放送局を検索」 | The listing says that the City was said to belong to neither China nor Britain, and that neither government's law or police reached it. | "九龍城は中国とイギリスのどちらにも属さず、両国の政府・法律・警察は及ばないとされていた。" (Kowloon City belonged to neither China nor Britain, and it was said that the governments, laws and police of both did not reach it.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城」放送局を検索」 | The listing says the City had an unwritten rule that buildings must not go higher than 15 floors. (Other sources of this chunk give 14 storeys.) | "九龍城には、建物を15階から高くしてはならないという暗黙のルールがあった。" (Kowloon City had an unwritten rule that buildings must not be built higher than 15 floors.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城」の内部へ潜入！」 | The listing says the interior footage shows temples and small workshops inside the City. | "九龍城の内部には、お寺や町工場などがあった。" (Inside Kowloon City there were temples, small town factories and the like.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城」の内部へ潜入！」 | The listing says there was a hospital in the City, but all its doctors were unlicensed. | "病院はあるが、医師は全員無免許。" (There is a hospital, but all the doctors are unlicensed.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城の住民とは？」」 | The programme showed footage of residents from episode 128 of the TBS programme ギミア・ぶれいく, including children playing on a Famicom (Nintendo home video game console). | "ギミア・ぶれいく128話から、九龍城の住民の映像を紹介。子供がファミコンで遊んでいた。" (From episode 128 of ギミア・ぶれいく, footage of the residents of Kowloon City was shown. Children were playing on a Famicom.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「…「九龍城の住民とは？」」 | The same old footage includes an interview with a man whose family had lived in the City for generations. | "代々九龍城で暮らしている男性にインタビュー。" (An interview with a man whose family has lived in Kowloon City for generations.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), last City segment | The programme showed TBS footage of the forced eviction of residents in 1992. | "九龍城で、1992年に住民の強制立ち退きが行われた映像を紹介した。" (It showed footage of the forced eviction of residents carried out in Kowloon City in 1992.) |
+| TVでた蔵 programme page (datazoo.jp/tv/…/1859001), segment 「スタジオトーク」 | In the studio talk the hosts said that Hong Kong gangs used the City as a base; the keywords name 14K, 和安樂 and 新義安. | "香港のマフィアは、九龍城を拠点に活動していた。" (Hong Kong's mafia operated with Kowloon City as its base.) |
+
+- **Leads:**
+  - TBS, ギミア・ぶれいく, episode 128 (a TBS programme of about 1989-1992, inferred from general knowledge of the series; date of the episode not given): footage of City residents, children with a Famicom, and an interview with a man whose family had lived in the City for generations. Ask TBS (TBS総合資料室 or its archive sales) for the date.
+  - TBS, 筑紫哲也 NEWS23 (TBS news programme): footage of the City (date not given).
+  - TBS footage of the forced eviction of residents in 1992 (programme and date not given).
 ### top-top-flickr-8: ドイツが撮影した巨大スラム街、九龍城砦（香港）解体直前1989年のドキュメント映像
 
-- **Creator:** karapaia (blog)
-- **Date:** 2010-11-12
-- **Kind:** article
-- **Class:** secondary (A later blog post that presented a 1989 German TV film of the City.)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** © karapaia
-- **Link:** https://karapaia.com/archives/51784704.html
-- **Proof that it exists:** Title 'ドイツが撮影した巨大スラム街、九龍城砦（香港）解体直前1989年のドキュメント映像'; posted 2010-11-12.
-- **What it gives (finder's note, not checked):** Says that a German film crew shot documentary footage of the City in 1989, just before the demolition: 'この映像は取り壊し直前の1989年の九龍城砦を、ドイツの取材班がドキュメント撮影したものなんだ。' The embedded video is gone; a comment names a 'パート１' (part 1).
-- **Notes:** Probably the four-part German TV documentary of the README leads (https://www.youtube.com/watch?v=Lby9P3ms11w), but the page gives no link now, thus not confirmed. It shows how the film reached Japanese readers in 2010.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** パルモ (writer), 'ドイツが撮影した巨大スラム街、九龍城砦（香港）解体直前1989年のドキュメント映像', カラパイア (karapaia), 12 Nov 2010, with 37 reader comments (12 Nov 2010 to 8 Nov 2013), https://karapaia.com/archives/51784704.html
+- **Class:** secondary (A Japanese blog post of 2010 that embeds the four-part copy of the ORF film. Its background text has errors (it dates the announcement of the clearance to 1984 and the film to 1989). The comments are anonymous; some claim to have been in the City, which cannot be checked. The secondary tree is correct.)
+- **Date of the record:** 2010-11-12
+- **Note:** its 3 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md`](../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| post, para. 6 | INFERRED: The post says that a German film crew filmed the City in 1989, just before its demolition. The film that it embeds is the one that the repo dates to a shoot in summer 1987 by an Austrian (ORF) production, thus the post's year and crew are probably wrong. | "この映像は取り壊し直前の1989年の九龍城砦を、ドイツの取材班がドキュメント撮影したものなんだ。" (This footage is a documentary that a German crew shot of the Kowloon Walled City in 1989, just before its demolition.) |
+| post, para. 5 | The post says that around 1990, 50,000 people lived on 0.026 square kilometres (about 200 m by 120 to 150 m), a density of about 1.9 million per square kilometre. | "0.026km2（約200m×120～150m）の僅かな土地に5万人もの人々がひしめき合って人口密度は約190万人/km2" (On a small plot of 0.026 km2 (about 200 m x 120-150 m), as many as 50,000 people were crowded together, a density of about 1.9 million per km2.) |
+| post, para. 5 | The post says that this density equals three people to one tatami mat. | "これは畳1枚に対して3人分の計算である。" (This works out to three people per tatami mat.) |
+| post, para. 4 | The post says that the Hong Kong government announced in 1984 that it would demolish the City and move the residents. This is wrong: the repo's press sources give the announcement of 14 January 1987. | "1984年、香港政庁が九龍城砦を取り壊し、住民を強制移住させる方針を発表。" (In 1984 the Hong Kong government announced a policy to demolish the Kowloon Walled City and forcibly move its residents.) |
+| comment 22 ('a', 13 Nov 2010) | A commenter who watched Part 1 (German narration) says that the film shows noodles, spring-roll wrappers and fish cut for fish balls made in the City and sold to high-class Hong Kong restaurants. | "ここで作られた麺や春巻きの皮、団子にする為にさばいた魚などは香港の高級料理店に卸されていたんだって。" (The noodles, spring-roll wrappers and fish filleted for balls made here were supplied to high-class restaurants in Hong Kong, they say.) |
+| comment 22 ('a', 13 Nov 2010) | The same commenter says that the film describes cockroaches, rats, flies and maggots, and 12-hour working days at wages lower than the cost of machines. | "機械で作る金額よりも安い賃金で一日１２時間労働" (Twelve-hour days of work, at wages cheaper than the cost of making it by machine.) |
+| comment 22 ('a', 13 Nov 2010) | The same commenter says that a workshop making plastic bags in the film was smaller than his own living room. | "ビニールの袋などを作る場所は俺の居間よりも狭いんだぜ" (The place where they make plastic bags and such is smaller than my living room.) |
+| comment 22 ('a', 13 Nov 2010) | The same commenter says that the film describes electricity and water stolen through illegally run wires and pipes. | "電気や水道などは不当に引っ張ってきた配線、配管での盗電、盗水" (Electricity and water were stolen through wiring and piping run in illegally.) |
+| comment 6 (12 Nov 2010) | INFERRED: An anonymous commenter says that the City had barbers, butchers and general stores and was a real town, where neighbours greeted each other. The comment cannot be checked; it may be first-hand. | "中では散髪屋、肉屋、雑貨屋等あって本当の街が形成されていたよ。" (Inside there were barbers, butchers, general stores and so on; a real town had formed.) |
 ### top-blocked-a-7: Asia Society panel: Revisiting the Kowloon Walled City (AIA Hong Kong event listing)
 
-- **Creator:** AIA Hong Kong (American Institute of Architects, Hong Kong chapter); event by Asia Society Hong Kong Center
-- **Date:** 2013-11-07
-- **Kind:** other
-- **Class:** secondary (An event notice; it gives no testimony itself, but it names the panel where a former resident spoke.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © AIA Hong Kong
-- **Link:** https://www.aiahk.org/events/revisiting-the-kowloon-walled-city/
-- **Other links:** https://www.aiahk.org/?p=3038, https://web.archive.org/web/20250320072350/https://asiasociety.org/hong-kong/events/revisiting-kowloon-walled-city, https://web.archive.org/web/20240523083719/https://asiasociety.org/hong-kong/life-kowloon-walled-city
-- **Proof that it exists:** Title 'Revisiting the Kowloon Walled City'; Thursday, November 7, 2013, 6:30-8:00 pm, Asia Society, 9 Justice Drive, Admiralty; description opens: "Twenty years after its demolition, the Kowloon Walled City remains a fascinating architectural and urban phenomenon".
-- **What it gives (finder's note, not checked):** The date and place of the panel behind the Asia Society page 'Life in Kowloon Walled City', and its speakers: Greg Girard, Suenn Ho, Ian Lambot, Laurence Liauw, Reverend Dr. Albert Ng ('former Walled City resident'), Aaron Tan, moderator Cole Roskam. Thus the panel video holds first-hand words of Ng, of Girard and Lambot (1987-1992) and of Suenn Ho (1988-1992).
-- **Notes:** README row 'Asia Society, Life in Kowloon Walled City' (blocked-a-7: HTTP 402 on every asiasociety.org URL). This page is an open mirror of the event details only; it has no video link. It settles the date: the event was on 7 Nov 2013; the '11/12/13' of the video label on asiasociety.org is a later date (posting or editing). NEW: the archive.org availability API gives a Wayback copy of the Asia Society event page at the path asiasociety.org/hong-kong/events/revisiting-kowloon-walled-city (2025-03-20, status 200; I guessed the path from the event title, and the API confirmed it); node/10649 has no snapshot. Not read: WebFetch refuses web.archive.org. Two WebSearches found no copy of the panel video ('Inside Kowloon Walled City') on YouTube.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** AIA Hong Kong, 'Revisiting The Kowloon Walled City' (event listing), https://www.aiahk.org/events/revisiting-the-kowloon-walled-city/ ; Asia Society Hong Kong Center, 'Revisiting the Kowloon Walled City' (event page), https://web.archive.org/web/20250320072350/https://asiasociety.org/hong-kong/events/revisiting-kowloon-walled-city ; Asia Society Hong Kong Center, 'Life in Kowloon Walled City' (event report), Hong Kong, 12 Nov 2013, https://web.archive.org/web/20240523083719/https://asiasociety.org/hong-kong/life-kowloon-walled-city . Panel of Thu 7 Nov 2013, 18:30-20:00, Asia Society, 9 Justice Drive, Admiralty; moderator Cole Roskam.
+- **Class:** secondary (The event pages are notices (secondary). The report of 12 Nov 2013 quotes the panel: the words of Rev Dr Albert Ng, a former resident, are retrospective testimony (2013); the words of Ian Lambot, Suenn Ho and Aaron Tan about their own work in the City (1987-1994) are also retrospective (2013). I marked those quotes kind primary. The item stays in secondary-sources; Ng's quotes can also be indexed in primary-sources/retrospective-testimony-web.)
+- **Date of the record:** Panel 2013-11-07; report dated 2013-11-12
+- **Files:**
+  - `top-blocked-a-7-page-b4b1c28b.html` (in `local/`, not in git): HTML of the AIA Hong Kong event listing (short page); https://www.aiahk.org/events/revisiting-the-kowloon-walled-city/; 243541 bytes; SHA-256 `d5ab93b2217f799d490b3ce94fd7fd826545cd98698797fbf0b8d6d393eaad82`; licence: no licence statement for the content (https://www.aiahk.org/events/revisiting-the-kowloon-walled-city/)
+  - `top-blocked-a-7-life-kowloon-walled-city-c1b4c4d3.html` (in `local/`, not in git): HTML of the Wayback copy of the Asia Society report 'Life in Kowloon Walled City' (12 Nov 2013), with the panel quotations; https://web.archive.org/web/20240523083719/https://asiasociety.org/hong-kong/life-kowloon-walled-city; 120846 bytes; SHA-256 `2ccacde37e85e9a08ef6e661ba5e270a469a4999ffcb3d79527aea8a17e5e482`; licence: ©2024 Asia Society (Terms & Conditions); no open licence (https://web.archive.org/web/20240523083719/https://asiasociety.org/hong-kong/life-kowloon-walled-city)
+  - `top-blocked-a-7-revisiting-kowloon-walled-city-42697376.html` (in `local/`, not in git): HTML of the Wayback copy of the Asia Society event page (speakers, date, place); https://web.archive.org/web/20250320072350/https://asiasociety.org/hong-kong/events/revisiting-kowloon-walled-city; 125231 bytes; SHA-256 `237534ae9fe642ac26f4a397a56a717448d615efe4f2fdc01e10d489c9ce2088`; licence: © Asia Society; no open licence (https://web.archive.org/web/20250320072350/https://asiasociety.org/hong-kong/events/revisiting-kowloon-walled-city)
+- **Note:** its 8 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md`](../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Asia Society event page (Wayback 20250320072350), 'Event Details' | The panel took place on Thursday 7 November 2013, 18:30-20:00, at Asia Society, 9 Justice Drive, Admiralty. Tickets cost HK$180 for members and HK$230 for others. | "Thu 07 Nov 2013 6:30 - 8 p.m. 9 Justice Drive, Admiralty, Hong Kong" |
+| AIA Hong Kong event page, 'Speakers' | The speakers were Greg Girard, Suenn Ho, Ian Lambot, Laurence Liauw, Rev Dr Albert Ng (a former resident), Aaron Tan, and the moderator Cole Roskam. | "Reverend Dr. Albert Ng, former resident, Kowloon Walled City" |
+| AIA Hong Kong event page, para 1 | The event notice says the City came to hold manufacturing, food and textile production, illicit activities and homes, and that its destruction began in 1993. | "a complex array of manufacturing operations, food and textile production, illicit activities, and residential units before its eventual destruction began in 1993." |
+| Asia Society, 'Life in Kowloon Walled City' (12 Nov 2013), Wayback 20240523083719, para 2 | The report says that Albert Ng missed the close relationships of the community in hard living conditions. | "he missed the close relationship in the community under the tough living condition." |
+| Asia Society, 'Life in Kowloon Walled City' (12 Nov 2013), Wayback 20240523083719, para 3 | The report says that Ian Lambot began his photographs as a formal architectural project when he heard of the clearance. | "Ian started his photograph project as a formal architectural one when he heard of the clearance" |
+| Asia Society, 'Life in Kowloon Walled City' (12 Nov 2013), Wayback 20240523083719, para 5 | The report says that Suenn Ho slowly built up connections with the residents during her research. | "gradually built up connections with the residents." |
+| Asia Society, 'Life in Kowloon Walled City' (12 Nov 2013), Wayback 20240523083719, para 6 (Liauw) | Laurence Liauw says that people in the City had an average of four square metres each, about half a US jail cell. | "People there got an average of four square meters per person, about half the size of a U.S. jail cell." |
+| Asia Society, 'Life in Kowloon Walled City' (12 Nov 2013), Wayback 20240523083719, video label and player iframe | The video on the report page is labelled 'Inside Kowloon Walled City' panel, 11/12/13; its player file name starts with 131107, the date of the panel (7 Nov 2013). | "Video: Asia Society Hong Kong's "Inside Kowloon Walled City" panel, 11/12/13" |
+
+- **Leads:**
+  - The full panel video 'Inside Kowloon Walled City' (Asia Society Hong Kong, 7 Nov 2013; player link /video/countries/inside-kowloon-walled-city-complete, file video/131107_kowloon_walled_city.mp4): the full account of Rev Dr Albert Ng, a former resident (retrospective, 2013).
+  - Asia Society, 'Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City' (related link on the report page; not opened).
 ### popular-21: 城寨文化符號學 - 04/03/17 「三不館」 長版本
 
 - **Creator:** 劉細良 (channel 城寨 Singjai)
@@ -133,192 +194,323 @@ Not read yet.
 - **Proof that it exists:** YouTube title '城寨文化符號學 - 04/03/17 「三不館」 長版本', author_name '城寨 Singjai' (oEmbed).
 - **What it gives (finder's note, not checked):** Not watched: I read only the title and channel. The Cantonese Wikipedia cites it for the City's history.
 - **Notes:** The date in the title can be the date of the talk. The length and the description were not visible to WebFetch. A transcript is needed before any use.
+- **Reading of 2026-11-21:** could not open it. The YouTube page opens (read in a browser on 2026-11-21). The item is 64 min 21 s of Cantonese talk-show audio. It has no caption track (the player lists none) and no transcript, and I cannot listen to audio. Thus I read only the title and the description. No fact about the City was readable.
 
 ### top-popular-17: 香港風雲系列 (三)【城寨大時代】(2019)
 
-- **Creator:** D100 (online radio); hosts 吳文正, 阿通
-- **Date:** 2019-07-06/2019-10-05
-- **Kind:** other
-- **Class:** secondary (A later radio history and nostalgia series; whether a host speaks from first-hand memory of the City is not known.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** unknown (© D100 presumed); uploaded by a private user to opensource_audio
-- **Link:** https://archive.org/details/2019.07.06_202106
-- **Other links:** https://archive.org/metadata/2019.07.06_202106/metadata
-- **Proof that it exists:** archive.org metadata: title 香港風雲系列 (三)【城寨大時代】(2019); creator D100; description 「主持：吳文正，阿通」; episode 1 「2019.07.06 第一集 城寨歷史」.
-- **What it gives (finder's note, not checked):** Thirteen Cantonese radio episodes. Only episode 1 (6 Jul 2019) is on the history of the City; the others are on Hong Kong life of the 1950s to 1980s (shops, festivals, housing, fashion).
-- **Notes:** Not listened to. The upload is by a private user, thus its authorisation is unclear: find the item on D100's own site before use. If 阿通 grew up in the City, his parts are retrospective testimony (not checked). The 'Ah Tung' of top-popular-11 is a different lead; do not assume they are the same person.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. The item is audio only (13 MP3 files; episode 1 '城寨歷史', 6 Jul 2019, 49:40). I cannot listen to audio, thus I read only the archive.org metadata and the full description, which gives the hosts and a short note for each episode. One web search did not find the series on D100's own site, thus its authorisation on archive.org is still unclear (uploaded by a private user to opensource_audio on 2021-06-16).
+- **Citation:** D100 (online radio), 香港風雲系列 (三)《城寨大時代》, hosts 吳文正 and 阿通, 13 episodes, 6 Jul 2019 to 5 Oct 2019; archive.org item 2019.07.06_202106, https://archive.org/details/2019.07.06_202106 (episode 1: '2019.07.06 第一集 城寨歷史.mp3', 49:40).
+- **Class:** secondary (A radio talk show of 2019. Only episode 1 is on the City. The description says that the guest host 吳文正 was not born in the City but that his childhood had a bond with it; if he speaks of his own visits, those parts are retrospective testimony (2019), not checked. 吳文正 is described as born in Hong Kong, a press photographer for many years and founder of 「文化葫蘆」. The secondary tree is correct for now.)
+- **Date of the record:** 2019-07-06 (episode 1); series to 2019-10-05
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| archive.org description, para. 2 | The description divides the history of the City into two stages: the walled city built by the Qing court in 1847, and the City of the 'three no-cares' (三不管) years of the 20th century. | "城寨歷史大概可分為兩個階段：1847年清廷建造的九龍寨城及二十世紀 “三不管” 年代的九龍城寨" (The history of the City can roughly be divided into two stages: the Kowloon Walled City built by the Qing court in 1847, and the Kowloon Walled City of the 'three no-cares' years of the 20th century.) |
+| archive.org description, para. 2 | The description says that the guest host 吳文正 was not born in the City, but that his childhood had a lasting bond with the place. It does not say how. | "吳文正先生雖然並非生於城寨，但他的童年可以話與此地有不解之緣" (Although Mr 吳文正 was not born in the City, his childhood can be said to have an unbreakable bond with this place.) |
+
+- **Leads:**
+  - Episode 1 '城寨歷史' (D100, 6 Jul 2019, 49:40), https://archive.org/download/2019.07.06_202106/2019.07.06%20%E7%AC%AC%E4%B8%80%E9%9B%86%20%E5%9F%8E%E5%AF%A8%E6%AD%B7%E5%8F%B2.mp3 : listen to it for 吳文正's own childhood memories of the City (possible retrospective testimony).
 ### top-popular-15: What if You Lived in the Most Crowded Place on Earth?
 
-- **Creator:** RealLifeLore (YouTube)
-- **Date:** 2019-08-13
-- **Kind:** film
-- **Class:** secondary (A popular video explainer made long after the clearance.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © RealLifeLore
-- **Link:** https://www.youtube.com/watch?v=t6IOd7CXLho
-- **Other links:** https://archive.org/details/youtube-t6IOd7CXLho
-- **Proof that it exists:** YouTube oEmbed: title 'What if You Lived in the Most Crowded Place on Earth?', author 'RealLifeLore'.
-- **What it gives (finder's note, not checked):** A popular explainer on life in the City at its peak density (topic inferred from the archive.org search match on 'kowloon walled city').
-- **Notes:** Not watched; the subject is INFERRED from the search match, not checked.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** RealLifeLore, 'What if You Lived in the Most Crowded Place on Earth?', YouTube, 13 Aug 2019, 9:24 (564 s), animations by Josh Sherrington (Heliosphere), https://www.youtube.com/watch?v=t6IOd7CXLho ; archive.org copy https://archive.org/details/youtube-t6IOd7CXLho (uploaded 2023-10-04) with English auto-captions.
+- **Class:** secondary (A popular explainer of 2019 by a channel with no first-hand link to the City. It names no sources, and some claims are doubtful (dog meat as a routine dish, a rent of HK$35 a month). The secondary tree is correct.)
+- **Date of the record:** 2019-08-13
+- **Files:**
+  - `top-popular-15-RealLifeLore-What_if_You_Lived_in_the_Most_Crowded_Place_on_-c1dd5e46.txt` (in `local/`, not in git): English auto-captions (SubRip text, 63 KB) of the video, from the archive.org copy; https://archive.org/download/youtube-t6IOd7CXLho/RealLifeLore-What_if_You_Lived_in_the_Most_Crowded_Place_on_Earth-t6IOd7CXLho.en-orig.asr.srt; 63624 bytes; SHA-256 `09f3d9d22b4ff5ec48ed09999aa10c31c18680e0645b0f37ef998026e5f661ba`; licence: no licence stated on the archive.org item; (C) RealLifeLore presumed (https://archive.org/details/youtube-t6IOd7CXLho)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| captions 1:44-1:54 | The video says that the City had about 1.9 million people per square kilometre, 182 times the density of New York. | "Kowloon walled city on the other hand was more like 1.9 million people per square kilometer" |
+| captions 1:55-2:05 | The video says that the City covered six and a half acres, about four football fields, and held as many as 50,000 people. | "the city occupied a space of only six and a half acres or roughly the same as four football fields" |
+| captions 2:53-2:58 | The video says that the street level was full of dentists' and doctors' offices with no official licences. | "the street level of the walled city was full of dentist and doctor offices without any official operating licenses" |
+| captions 3:12-3:21 | The video says that restaurants routinely offered dog meat, with no sanitation rules. No source or date is given. | "restaurants routinely offered dog meat as a tempting alternative to normal food" |
+| captions 3:21-3:30 | The video says that dozens of ground-level alleys crossed the City and reached the windowless living units of the dark interior. | "the living units deep in the dark interior that lacked any windows" |
+| captions 3:31-3:35 | The video says that the alleys were three to six feet wide. | "these alleys were only between three and six feet wide" |
+| captions 3:36-3:42 | The video says that people in the alleys carried umbrellas against dripping water pipes and refuse thrown from above. | "carry an umbrella with you to shield yourself from the drippy water pipes and people throwing garbage out above you" |
+| captions 3:43-3:51 | The video says that the alleys were almost always dark because the buildings above blocked most of the sunlight. | "the alleys were almost permanently dark since the unbelievably dense slums above blocked out most of the sunlight" |
+| captions 4:24-4:29 | The video says that residents threw refuse out of their windows or carried it up to the roof and left it there. | "they either threw it out of their windows or hauled it up to the roof to be abandoned forever" |
+| captions 4:50-4:59 | The video says that opium dens, heroin stands and brothels operated openly in the City. It gives no period for this. | "you could easily find opium dens heroin stands that operated as freely as convenient stores" |
+| captions 5:00-5:08 | The video says that the police entered the City only in large groups, never alone. | "they only ever intervened with large groups and never alone" |
+| captions 5:15-5:23 | The video says that each person paid on average HK$35 (about US$5) a month for a room of 40 square feet. It gives no source and no year; treat the figure as unconfirmed. | "on average each person paid 35 Hong Kong dollars for about five US dollars per month for their rent for a 40 square foot room" |
+| captions 5:29-5:35 | The video says that thousands of such small rooms stood side by side, up to 14 storeys high. | "thousands of these little rooms existed side-by-side of each other stretching up to 14 stories high" |
+| captions 5:35-5:43 | The video says that about 500 buildings were put up in the City with no licensed architect or engineer. | "around 500 buildings were constructed inside of the city without a single licensed architect or engineer" |
+| captions 5:44-5:46 | The video says that plumbing and sewers were almost non-existent. | "plumbing and sewage was almost non-existent" |
+| captions 5:47-6:00 | The video says that small metal-working shops filled a good share of the units from the ground floor to the fifth floor, and added to the pollution. | "tiny metal fabrication shops made up a good percentage of the units between the ground and the fifth floors" |
+| captions 6:06-6:13 | The video says that a network of stairs and ramps let people cross the City without going down to street level. | "a network of stairs and ramps that would enable you to traverse the city without ever having to set foot on the dark surface" |
+| captions 6:17-6:23 | The video says that a courtyard in the centre was the main social gathering place and the only street-level area that the sun reached. | "a courtyard in the center which was the prime social gathering place and the only area on the street where the Sun could reach" |
+| captions 6:25-6:34 | The video says that the roof was covered in refuse and was the main dumping place, and also a place to watch the aircraft. | "the roof on the city was always covered in garbage and was the prime dumping spot for residents" |
+| captions 6:37-6:50 | The video says that the City was half a mile from Kai Tak Airport, and landing aircraft flew just over it, with great noise. | "the walled city was located only half a mile away from Kai Tak Airport" |
+| captions 7:05-7:18 | The video says that nobody built above 14 storeys because of the landing aircraft. It names no rule; it gives the residents' own caution as the reason. | "building higher than 14 stories could result in the airplanes that were landing over at Kai Tak to collide" |
+| captions 7:45-7:56 | The video says that the Hong Kong government demolished the City in 1994, and a park stands on the site. | "the city was finally demolished by the Hong Kong government in 1994" |
+| captions 8:07-8:17 | The video says that the Anata no Warehouse arcade in Kawasaki, Japan, made a multi-level copy of part of the City. | "anata no warehouse in Kawasaki has created a faithful multi-level recreation of part of the walled city" |
 ### top-popular-11: Ep. 229 | The Walled City of Kowloon
 
-- **Creator:** Laszlo Montgomery, The China History Podcast (Teacup Media)
-- **Date:** 2019-08-26
-- **Kind:** other
-- **Class:** secondary (A history podcast that tells the story later from books.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © Teacup Media
-- **Link:** https://teacup.media/chinahistorypodcastepisodes/ep-229-the-walled-city-of-kowloon
-- **Other links:** https://podcasts.apple.com/us/podcast/the-walled-city-of-kowloon/id489369498?i=1000447783922
-- **Proof that it exists:** Ep. 229 | The Walled City of Kowloon: Laszlo covers one of the show's most-requested topics, from the Southern Song origins to the demolition in the early 1990s.
-- **What it gives (finder's note, not checked):** A 37-minute audio history of the City from the Song dynasty to the clearance. The notes name a friend of the host, 'Ah Tung' (Li Mingdong), who grew up in the City and was known at Save the Children.
-- **Notes:** Not listened to. The notes link two books only by ASIN (0800797035, 1873200889; the second is the ISBN of City of Darkness Revisited). 'Ah Tung' is a possible lead for an oral account; the Chinese name is not given. The duration (36.7 min) comes from the iTunes Search API.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the episode page on teacup.media (summary, terms table, book links) and the 2-page 'Terms' PDF. I did not hear the 37-minute audio; no transcript was found (page, PDF, one WebSearch).
+- **Citation:** Laszlo Montgomery, 'Ep. 229 | The Walled City of Kowloon', The China History Podcast (Teacup Media), 26 Aug 2019, about 37 min, https://teacup.media/chinahistorypodcastepisodes/ep-229-the-walled-city-of-kowloon ; 'Terms Referenced in Episode: The Walled City of Kowloon, Ep. 229' (PDF, 2 pages), https://teacup.media/s/CHP-229-Terms-PDF.pdf
+- **Class:** secondary (A history podcast told from books in 2019. The host knew a man who grew up in the City, but what the episode says of him is not heard; it would be second-hand.)
+- **Date of the record:** 2019-08-26
+- **Files:**
+  - `top-popular-11-CHP-229_Terms_-_PDF-7a011e88.pdf` (in `local/`, not in git): The 2-page terms PDF of the episode (redirect target of https://teacup.media/s/CHP-229-Terms-PDF.pdf); https://static1.squarespace.com/static/5fe269ae0da18965edaec1f9/t/602319f7658d7f26946df86c/1612913144088/CHP-229+Terms+-+PDF.pdf; 143721 bytes; SHA-256 `9a85175979d135ca06906c67f662eace91238da44294e1d665bb7666a436e080`; licence: no licence statement; © Teacup Media assumed (https://teacup.media/chinahistorypodcastepisodes/ep-229-the-walled-city-of-kowloon)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| teacup.media episode page, summary | The episode page says the episode covers the City from its beginnings in the Southern Song to its demolition in the early 1990s. | "from its humble beginnings starting in the Southern Song to its later demolition during the early 1990s." |
+| Terms PDF p. 1, row 'Lǐ Míngdōng' | The terms table names Lǐ Míngdōng (李明東), a man the host knew in Hong Kong who grew up in the City and was known at Save the Children as Ah Tung. | "The guy I used to know in HK who grew up in the Walled City, known affectionately at Save the Children as Ah Tung" |
+| Terms PDF p. 1, row 'Xiāng ròu' | INFERRED: The terms table lists 香肉 ('fragrant meat', dog meat), thus the episode speaks of dog meat (inferred: the table lists the terms used in the episode). | "Literally "fragrant meat" but means dog meat." |
+| Terms PDF p. 1, row 'Sun Yee On' | INFERRED: The terms table lists the triad Sun Yee On (新義安), thus the episode speaks of it (inferred). | "One of the most famous of all Hong Kong Triads." |
+| Terms PDF p. 2, row 'Zhài' | The terms table explains 寨 as an administrative term for a fort where an official lived. | "An administrative term meaning a fort where an official resided" |
+| teacup.media episode page, 'Resources > Books' | INFERRED: The episode page links two books only by Amazon number: 0800797035 and 1873200889. The page does not give their titles. The second number has the publisher prefix 1-873200 of Watermark, the publisher of City of Darkness (inferred). | "creativeASIN=1873200889" |
+
+- **Leads:**
+  - Lǐ Míngdōng (李明東), called Ah Tung, who grew up in the City and worked with or was known at Save the Children (Hong Kong): a possible oral account. The terms table gives no dates. Do not assume he is the 阿通 of the D100 radio series (top-popular-17).
+  - The episode audio (about 37 min): a transcript is needed to learn what the host says of Ah Tung.
 ### top-top-flickr-6: Recent Activities. Lecture: City of Darkness: The Walled City of Kowloon (RAS Newsletter, January 2020, pp16-17)
 
-- **Creator:** Helen Tinsley (report), Royal Asiatic Society Hong Kong
-- **Date:** 2020-01
-- **Kind:** article
-- **Class:** secondary (A member's short summary of a 2019 talk by Ian Lambot; second-hand.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © Royal Asiatic Society Hong Kong Branch
-- **Link:** https://www.royalasiaticsociety.org.hk/s/January_2020newsletter.pdf
-- **Other links:** https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/5e128eb5dbd43712f427cdb9/1578274524166/January_2020newsletter.pdf, https://www.royalasiaticsociety.org.hk/s/fixed-Nov-2019-Newsletter-final.pdf
-- **Proof that it exists:** 'Demolished in 1994, the Walled City of Kowloon continues to fascinate many years later.'
-- **What it gives (finder's note, not checked):** A summary of Lambot's talk of Sat 16 Nov 2019 at the Blue Lotus Gallery: 'At its peak there were 35,000 residents'; 'residences for living, small factories for work, health /dental services, and religious support'; the children 'migrated to the roof tops to play'; only the postman knew all the passages; the 1993 book 'has sold > 25,000 copies'.
-- **Notes:** The PDF has no text for the fetch tool; I read it with pdftotext. The Nov 2019 newsletter (p6) announces the talk ('Lecture/ Local Visit', Sat 16 Nov 2019) and says the City was 'home to 35,000 people at its peak'. The RAS events page URL has the path 2019/10/16; the newsletters give 16 Nov 2019.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Helen Tinsley (prepared by), 'Recent Activities. Lecture: City of Darkness: The Walled City of Kowloon' (speaker Ian Lambot, Sat 16 Nov 2019, Blue Lotus Gallery, Pound Lane, Sai Ying Pun), Royal Asiatic Society Hong Kong Newsletter, January 2020, p. 17, https://www.royalasiaticsociety.org.hk/s/January_2020newsletter.pdf ; with the announcement 'City of Darkness: The Walled City of Kowloon' (Lecture/Local Visit), RAS Hong Kong Newsletter, November 2019, pp. 6-7, https://www.royalasiaticsociety.org.hk/s/fixed-Nov-2019-Newsletter-final.pdf
+- **Class:** secondary (A society report (November 2019) that paraphrases a talk by the photographer Ian Lambot; it is not his own words. The announcement quotes the 1993 book. The secondary tree is correct.)
+- **Date of the record:** 2019-11 (report prepared November 2019; newsletter January 2020)
+- **Files:**
+  - `top-top-flickr-6-January_2020newsletter-749d9817.pdf` (in `local/`, not in git): Royal Asiatic Society Hong Kong Newsletter, January 2020 (31 pages, 2.9 MB); the report is on p. 17; https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/5e128eb5dbd43712f427cdb9/1578274524166/January_2020newsletter.pdf; 2995394 bytes; SHA-256 `8e3a814607e61f34617b35eb45563672102335066e1aeb9db5461f9d6cb3afbd`; licence: no licence stated in the PDF; (C) Royal Asiatic Society Hong Kong presumed (https://www.royalasiaticsociety.org.hk/s/January_2020newsletter.pdf)
+  - `top-top-flickr-6-_fixed_Nov_2019_Newsletter_final_-41bd31c5.pdf` (in `local/`, not in git): Royal Asiatic Society Hong Kong Newsletter, November 2019 (1.4 MB); the announcement is on pp. 6-7; https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/5dc2ce1572a5cb0a5d32512a/1573047925709/%28fixed%29+Nov+2019+Newsletter+%28final%29.pdf; 1436966 bytes; SHA-256 `9e0e90ad6fa09e4467f90a79cb9cb54a176bff04f1a98e2d3af847953cce9351`; licence: no licence stated in the PDF; (C) Royal Asiatic Society Hong Kong presumed (https://www.royalasiaticsociety.org.hk/s/fixed-Nov-2019-Newsletter-final.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Jan 2020 newsletter, p. 17, para. 2 | Ian Lambot and Greg Girard photographed and documented life in the City and published a book in 1993 that had sold more than 25,000 copies by 2019. | "producing in 1993 a book which up until now has sold > 25,000 copies" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that the City had little regard for basic services such as water, electricity and waste disposal, or for planning and building standards. | "there was little regard for basic services such as water, electricity and waste disposal, planning or regulation of building standards" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that over 50 years the buildings and the community grew organically and thrived. | "over 50 years building and community growth continued to develop organically and thrived" |
+| Jan 2020 newsletter, p. 17, para. 3; Nov 2019 newsletter, p. 7 | The report gives 35,000 residents at the City's peak. The November 2019 announcement gives the same number. | "At its peak there were 35,000 residents" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that the City held homes, small factories, health and dental services, and religious support, reached by often labyrinthine access. | "there were residences for living, small factories for work, health /dental services, and religious support" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that the City was dark with very little natural light, and the children went up to the roofs to play. | "it was dark with very little natural light and the children living there migrated to the roof tops to play" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that, as people said, only the City's postman fully knew the way through all the passages and linking staircases. | "the only person who fully understood access through all the passageways and linking staircases was the city's postman" |
+| Jan 2020 newsletter, p. 17, para. 3 | The report says that, as people said, no building collapse in the City was documented. | "it was also said that there was no building collapse documented" |
+| Nov 2019 newsletter, p. 7, 'The Speaker' | The announcement says that Ian Lambot, an architect from Britain, arrived in Hong Kong in 1979 and lived there for 18 years. | "He arrived in Hong Kong in 1979, where he lived for the next 18 years" |
+| Nov 2019 newsletter, p. 6 | The announcement quotes the 1993 book: the builders and residents made an 'organic megastructure' that met every need from water supply to religion. | "fulfilling every need from water supply to religion, yet providing also the warmth and intimacy of a single huge household" |
+
+- **Leads:**
+  - RAS Hong Kong lecture 'On the Verge of Metropolis: Squatters in Hong Kong', Sun 19 Jan 2020, by Patrick Hase and Ko Tim-keung: Hase's part is on the Hau Wong San Tsuen squatter area 'outside Kowloon City' (Jan 2020 newsletter, p. 6). A source for the surroundings; not in the repo as far as I know.
 ### top-popular-14: The Truth and Nostalgia of the Kowloon Walled City
 
-- **Creator:** Asianometry (YouTube)
-- **Date:** 2020-06-30
-- **Kind:** film
-- **Class:** secondary (A video explainer that the channel researched itself, made long after the clearance.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © Asianometry
-- **Link:** https://www.youtube.com/watch?v=r7ohR6JQ2BI
-- **Other links:** https://archive.org/details/youtube-r7ohR6JQ2BI
-- **Proof that it exists:** YouTube oEmbed: title 'The Truth and Nostalgia of the Kowloon Walled City', author 'Asianometry'; archive.org description: 'Today's video is about the old Kowloon Walled City.'
-- **What it gives (finder's note, not checked):** A video essay that argues the City was less exotic than its legend. The description says: 'The reality is not as exotic, but still interesting.' No source list in the description.
-- **Notes:** Not watched. The archive.org item is a third-party mirror of the YouTube video; cite the YouTube URL.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Asianometry, 'The Truth and Nostalgia of the Kowloon Walled City', YouTube, 30 Jun 2020, 12:15, https://www.youtube.com/watch?v=r7ohR6JQ2BI ; third-party mirror https://archive.org/details/youtube-r7ohR6JQ2BI
+- **Class:** secondary (A video essay made in 2020 from reading; it names no sources in the description and gives none on screen that the captions show. Some claims are vague ('something like') and some conflict with other sources (for example that most residents lived outside the City).)
+- **Date of the record:** 2020-06-30
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 0:56 | The video says the site began in 1668 as a small signal station in the north-east of the Kowloon peninsula. | "began in 1668 with a small signal station in the northeastern corner of the Kowloon Peninsula" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 1:18 | The video says that after 1841 the Qing moved here an assistant magistrate responsible for about 491 villages. | "the guy responsible for the administrative duties of about 491 villages in the local area" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 2:13-2:20 | The video says British visitors described the wall as enclosing about 6.5 acres, about 700 by 400 feet, of granite and about 13 feet high, with six watchtowers and four gates. | "the wall enclosed about 6.5 acres of space and was about 700 feet by 400 feet it was made of granite and averaged about 13 feet high" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 3:00 | The video says about 500 people lived in the City by the 1890s. | "by the time the 1890s rolled around there lived about 500 people in the Kowloon walled city" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 3:55-4:03 | The video says a British force of 300 men emptied the City of its soldiers on 16 May (1899) at 3 p.m. | "sent a 300 man force on May 16th at 3:00 p.m. to empty out the walled city" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 4:50-5:05 | The video says that in 1933 the government proposed not to renew the leases of several pig farms in the City and to tear the place down for a park. | "in 1933 the Hong Kong government proposed not renewing the leases of several pig farms within the walled city" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 7:07-7:15 | The video claims that most of the City's 30,000 so-called residents lived in the neighbourhoods around it and came in to work, and that goods sold there were made outside. Other sources contradict this. | "most of its 30,000 coulomb quote residents lived in neighborhoods around the walled city and commuted there to work" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 7:15-7:24 | The video says the City was well served by buses, and that Hong Kong government staff came in several times a day to treat the water with chlorine. | "Hong Kong municipal employees entered the city several times a day to treat the water with chlorine" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 7:33-7:49 | The video says that in the early 1950s gangs ran gambling halls and brothels in the City, and one gang hired drivers to bring customers in from across Hong Kong. | "one gang hired drivers to prowl the cities of Hong Kong to bring people in" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 8:04-8:10 | INFERRED: The video says a landmark court case extended Hong Kong's jurisdiction to the City; the auto-caption reads '1859', which from the context of the 1950s is probably 1959 (inferred). | "intended its legal jurisdiction to the walled city and its residents in 1859 with a landmark law case" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 8:36 | The video says that in the 1970s the fire department made fire inspections and the post office delivered mail regularly. | "the fire department made fire inspections and post office delivered mail regularly" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 8:43-9:00 | The video says that until the 1960s the City looked like any other slum of low squatter houses, and took its final form only in the 1970s. | "up until the 1960s the walled city looked like just any other slum town" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 9:09-9:16 | The video says landowners in the City built upward to get more rent as Hong Kong property costs rose. | "walled city landowners realized that they could maximize their rental income by building up" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 9:23-9:31 | The video says the only limit on building height was a 150-foot limit set by the civil aviation authority because of Kai Tak. | "a hundred and fifty foot height limit imposed by the Civil Aviation Authority due to the nearby Kai Tak Airport" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 9:31-9:39 | The narrator half-remembers reading that the property tax of a single landowner was 'something like six bucks'. | "I remember reading something that said like the property tax for a single landowner was something like six bucks" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 9:39-9:55 | INFERRED: The video says that the head of the Xinhua News Agency in Hong Kong (the auto-caption reads 'sujin tun'; probably Xu Jiatun, inferred) visited the City in the 1980s and called it a good example of 'Hong Kong people ruling Hong Kong'. | "famously declared that the walled city was quote unquote a good example of a Hong Kong people ruling Hong Kong" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 10:26-10:41 | The video says the clearance was negotiated in secret over two years and announced on 14 January 1987, with the PRC announcing its agreement at the same time. | "on January 14 1987 it was suddenly announced that the walled city would be torn down and turned into a park before 1997" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 10:41-10:58 | The narrator says the rent was cheap, 'something like 100 Hong Kong dollars or something', and that transport was good (a vague figure with no year). | "the rent was great something like 100 Hong Kong dollars or something at the time" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 10:58-11:22 | The video says the police went through the City on the same day (14 Jan 1987) to record who lived in and owned each flat, to stop fraud against the compensation fund. | "to take records of who lived and owned exactly which flat" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 11:16-11:22 | The video says the compensation fund was HK$2.3 billion (about US$350 million). | "2.3 billion Hong Kong dollar equivalent to 350 million u.s. dollars fund to compensate the current landowners" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 11:22-11:30 | The video says the last residents were evicted in 1992 and the City was knocked down in April 1993. | "the final residents were evicted in 1992 and it was knocked down in April 1993" |
+| YouTube r7ohR6JQ2BI, English auto-generated captions, 11:30-11:47 | The video says park work began in 1994 and the park was opened on 22 December by Chris Patten; the auto-caption gives the year as '1996' and is garbled here. | "it opened just in the nick of time December 22nd by 19 1996 but the last governor of Hong Kong Chris Patten" |
+
+- **Leads:**
+  - Time magazine, an article that called the City 'a universe apart' (quoted at 6:44; date and title not given).
 ### top-popular-16: Plongée dans la dangereuse cité interdite de Hong Kong - Storytime
 
-- **Creator:** HugoDécrypte - Actus du jour (YouTube)
-- **Date:** 2021-02-21
-- **Kind:** film
-- **Class:** secondary (A French popular video explainer made long after the clearance.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © HugoDécrypte
-- **Link:** https://www.youtube.com/watch?v=61btZbqIai0
-- **Other links:** https://archive.org/details/youtube-61btZbqIai0
-- **Proof that it exists:** YouTube oEmbed: title 'Plongée dans la dangereuse cité interdite de Hong Kong - Storytime', author 'HugoDécrypte - Actus du jour'.
-- **What it gives (finder's note, not checked):** A French 'storytime' explainer on the City. Contents not checked.
-- **Notes:** Language: French. Not watched.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the archive.org metadata and the description file of the copy youtube-61btZbqIai0. That copy has no subtitle file, and I did not watch the video (French, about 12 minutes: the last thumbnail is at 719 s). Thus the content of the video is not read. The description names four web articles as its sources and the writer and editor.
+- **Citation:** HugoDécrypte - Actus du jour, 'Plongée dans la dangereuse cité interdite de Hong Kong - Storytime', YouTube, 21 Feb 2021, written by Benjamin Aleberteau, edited by Leo Henry, https://www.youtube.com/watch?v=61btZbqIai0 ; archive.org copy https://archive.org/details/youtube-61btZbqIai0 (uploaded 2022-05-16).
+- **Class:** secondary (A French popular explainer of 2021. Its description says that it rests on four web articles (Le Petit Journal Hong Kong, France Culture, Business Insider 2015, Visual Capitalist). The secondary tree is correct.)
+- **Date of the record:** 2021-02-21
 
+- **Leads:**
+  - France Culture, 'Kowloon, la citadelle de l'ombre' (a talk in the series Babel Oueb), https://www.franceculture.fr/conferences/factory/babel-oueb/kowloon-la-citadelle-de-l-ombre ; named as a source in the video description; not checked against the repo.
+  - Le Petit Journal Hong Kong, 'La cité des ténèbres: Kowloon Walled City, histoire', https://lepetitjournal.com/hong-kong/la-cite-des-tenebres-kowloon-walled-city-histoire-242531 ; named as a source in the video description; not checked against the repo.
 ### top-gap-tv-news-archives-9: Crazy Borders - Kowloon: Dichtester Ort der Welt
 
-- **Creator:** ARTE (ARTEde), series Crazy Borders
-- **Date:** 2022-05-25
-- **Kind:** film
-- **Class:** secondary (A later TV documentary episode that tells the City's story.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © ARTE
-- **Link:** https://archive.org/details/ArteTV-101463-007-A
-- **Other links:** https://www.arte.tv/de/videos/101463-007-A/crazy-borders/, https://archive.org/details/youtube-v30bD3soZIk
-- **Proof that it exists:** archive.org metadata: 'Crazy Borders - Kowloon: Dichtester Ort der Welt', creator ARTEde, 2022-05-25; description begins 'Ein Viertel wie eine riesige Sardinenbüchse, im Herzen Honkongs'
-- **What it gives (finder's note, not checked):** A German-language episode on the City up to 1993: the claims of China and Britain, opium dens, brothels, gambling halls and many dentists. It can reuse archive footage.
-- **Notes:** The archive.org copy is a mirror ('mirrortube'); the YouTube copy on the ARTEde channel is dated 2022-07-03. I did not open the arte.tv page, and the video can be expired there. Check its credits for the sources of its archive footage.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Olivier Marchon (director), Crazy Borders, 'Kowloon: Dichtester Ort der Welt' (German title), ARTE, France 2021, 11 min (627 s), programme 101463-007-A, on arte.tv from 25 May 2022 (available to 25 May 2027), https://www.arte.tv/de/videos/101463-007-A/crazy-borders/ ; mirror with subtitle files: https://archive.org/details/ArteTV-101463-007-A ; YouTube copy (ARTEde): https://www.youtube.com/watch?v=v30bD3soZIk
+- **Class:** secondary (A short explainer episode made in 2021 from published history, with no interviews. It names no sources. Some figures differ from other sources (for example 1947 and 1963 for the clearance attempts, 1959 for the murder trial, 8 water points).)
+- **Date of the record:** Production year 2021; online from 2022-05-25
+- **Files:**
+  - `top-gap-tv-news-archives-9-101463-007-A.en.vtt-fbe3ec43.txt` (in `local/`, not in git): ARTE's English subtitle file of the episode (19.7 KB), a full text of the narration; https://archive.org/download/ArteTV-101463-007-A/101463-007-A.en.vtt; 19731 bytes; SHA-256 `c751e3160487845be3ed62ff8799eeb1731b8d02f52f4838d2c0c2e67bd05c1a`; licence: no licence statement on the archive.org item; programme © ARTE (https://archive.org/details/ArteTV-101463-007-A)
+  - `top-gap-tv-news-archives-9-101463-007-A.de.details-5324d7ac.json` (in `local/`, not in git): ARTE programme record (title, description, director Olivier Marchon, France 2021, duration 627 s, availability 2022-05-25 to 2027-05-25); https://archive.org/download/ArteTV-101463-007-A/101463-007-A.de.details.json; 2804 bytes; SHA-256 `68795d8c5d046b371e5f491f24f265447deec9f147c5273912dadc3b221cce3a`; licence: no licence statement on the archive.org item; © ARTE (https://archive.org/details/ArteTV-101463-007-A)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| ARTE English subtitle track (101463-007-A.en.vtt), 00:36-00:52 | The episode says that the City, until 1993, had 359 buildings on 2.5 hectares, with up to 33,000 people. | "Kowloon Walled City was 359 buildings built on top of each other and on an area of 2.5 hectares, in which up to 33,000 people lived." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 01:28 | The episode says the City was nicknamed the cancer of Hong Kong. | "that was nicknamed the cancer of Hong Kong." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 02:57-03:05 | The episode says the old fortress had walls 4 metres high, shops, housing, a school and a yamen, and that 700 people lived there, 500 of them soldiers. | "700 people including 500 soldiers lived there." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 03:34-03:37 | The episode says that after the British takeover of 1899 an old people's home was put in the yamen. | "a retirement home was installed in the yamen." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 05:01-05:04 | The episode says the fortress was demolished during the war and its walls were used for the runway of the nearby airport. | "Its walls were used to build the runway of the nearby airport." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 05:16-05:26 | The episode says the Hong Kong authorities tried to empty the City in 1947 and again in 1963, and backed down because of riots and protests from Beijing. | "In 1947 and again in 1963, they tried to empty Kowloon Walled City." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 05:50-05:53 | The episode says the only rule was not to build above 14 floors, because of the nearby airport. | "There was only one rule: not to exceed 14 floors because the city was close to the airport." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 05:56-06:09 | The episode says the City drew anyone who liked the lack of rules and taxes, and held opium dens, brothels and gambling dens beside poor families and cheap businesses, in a maze of dirty stairs and corridors. | "a whole life of poor families and cheap businesses set up there in this maze of filthy staircases and corridors." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 06:14-06:22 | The episode says that in the 1970s the City had dozens of dentists, who came from China with diplomas not recognised in Hong Kong and needed no licence in the City. | "In the 1970s, the Kowloon Walled City counted dozens of them." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 06:25-06:29 | The episode says that the old yamen in the centre of the City was used as a home for the elderly, as before the war. | "As before the war, it was built as a home for the elderly." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 06:43-06:47 | The episode says that people came from outside for the cheap pleasures, goods and services of the City. | "people came to enjoy the pleasures, products and cheap services provided." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 06:52-06:54 | The episode says people came to the City to eat dog, which was forbidden everywhere else in Hong Kong. | "People even came to eat dog because, everywhere in Hong Kong, eating dog was forbidden." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 06:58-07:03 | The episode says that the colony's electricity company put in the power supply to prevent fires, and that people tapped the installations a lot. | "to avoid fires, the colony's electricity company came to install the power. These installations were obviously hacked into a lot." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 07:06-07:11 | The episode says there were only 8 free water points, so residents organised other networks: 300 wells were dug and tanks were put on the roofs. | "Free water points were also installed, but as there were only 8 of them, alternative networks were organised. 300 wells were dug and tanks installed on the roofs." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 07:15-07:19 | The episode says the police still patrolled the City, but discreetly, so as not to offend China. | "the police were still on patrol, but discreetly, so as not to offend the Chinese." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 07:20-07:29 | The episode says that in 1959 a murder in the City led to a public trial of the suspect in Hong Kong, and that Beijing repeated its claims. | "in 1959, a murder committed in the city forced the Hong Kong justice system to hold a public trial for the suspect." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 08:09-08:15 | The episode says that in 1973, with Chinese approval, the police made 3,500 raids in the City and arrested 2,500 people. | "3500 raids were carried out and 2500 people arrested." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 08:24-08:34 | The episode says that in 1991 the residents and companies, all compensated, began to leave, that demolition began in 1993, and that the park opened at the end of 1995. | "In 1991, the inhabitants and companies, all of whom had been compensated, began to clear the area." |
+| ARTE English subtitle track (101463-007-A.en.vtt), 09:56-10:03 | The episode says the park keeps a model of the City, some remains of the old fortress, and the restored part of the yamen. | "besides a model of the former slum, some remains of the old fortress have been preserved." |
+
+- **Leads:**
+  - The raid figures for 1973 (3,500 raids, 2,500 arrests) have no source in the episode; check them against the Royal Hong Kong Police annual reports or the press of 1973-1974.
 ### popular-22: The rise and fall of Kowloon Walled City, Hong Kong's infamous urban monolith
 
-- **Creator:** neo (video), published by Aeon
-- **Date:** 2023-08-23
-- **Kind:** film
-- **Class:** secondary (A later video essay with no first-hand knowledge.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © neo / Aeon
-- **Link:** https://aeon.co/videos/the-rise-and-fall-of-kowloon-walled-city-hong-kongs-infamous-urban-monolith
-- **Proof that it exists:** Title 'The rise and fall of Kowloon Walled City, Hong Kong's infamous urban monolith' (Aeon, 23 Aug 2023, 18 min).
-- **What it gives (finder's note, not checked):** An 18-minute history from the 17th-century outpost to the demolition by 1994 and the City's afterlife in films and games.
-- **Notes:** The page names no sources; it credits a 1989 aerial photo to Ian Lambot. The maker's YouTube channel is @neoexplains. Not watched.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** neo (YouTube channel @neoexplains), 'The Densest City on Earth', YouTube, 24 Jul 2023, 17:49, https://www.youtube.com/watch?v=4YuNvIfM-YA ; republished as 'The rise and fall of Kowloon Walled City, Hong Kong's infamous urban monolith', Aeon Videos (Aeon Media Group Ltd.), 23 Aug 2023, 18 min, https://aeon.co/videos/the-rise-and-fall-of-kowloon-walled-city-hong-kongs-infamous-urban-monolith . The YouTube description credits 'Images via Getty, AP Newsroom'.
+- **Class:** secondary (A video essay made 30 years after the clearance. It names no written sources; it has no interviews and no first-hand testimony. The last two minutes (15:40-17:49) are an advertisement for Nebula.)
+- **Date of the record:** 2023-07-24 (YouTube); 2023-08-23 (Aeon)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube 4YuNvIfM-YA, creator's English caption track, 0:05 | The video gives the area of the City as 6.5 acres, or four football fields, with dozens of buildings merged into one block. | "On an area of just 6.5 acres, or four football fields, dozens of individual buildings have merged into one solid organism" |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 0:22 | The video says that the flats on the outside got sunlight, but most flats were inside the block, along dark pathways. | "While the outside facing apartments get to enjoy sunlight, a vast majority are located within this block, full of dark pathways." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 1:33 | The video says that a survey of 1987 estimated 33,000 people in the City. | "In 1987, a survey estimated that 33,000 people live here." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 1:43 | The video says that some estimates went up to 50,000 people. | "in reality, the number might have been even bigger, with some estimates going up to 50,000 people." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 2:04 | The video says that the dense block ended abruptly: outside it stood more spaced-out buildings and a park with sports fields. | "behind the sharp walls of the city there are relatively spaced out buildings, and even a park with sports fields." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 2:32 | The video says that the City began as a small Chinese military outpost with about 10 guards. | "The Walled City began as nothing more than a small Chinese military outpost, stationing about 10 guards." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 5:28-5:33 | The video says that a Protestant church set up a home for old people in the yamen, after the barracks became squatter homes. | "a Protestant church seized the opportunity to establish a senior home within the historic yamen." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 6:18-6:25 | The video says that the Japanese tore down the walls of the City for building material to expand Kai Tak airport. | "Therefore, they tore down the walls of Kowloon Walled City, which was located right near the airport." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 7:14 | The video says that single houses became multi-storey buildings and then 14-storey towers. | "Single houses became multi-story buildings, became 14 story skyscrapers." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 7:21-7:31 | The video says that the streets became shaded paths and at last got no sunlight at all. | "The sunlit streets turned into shaded paths, until they were, eventually, completely blocked from sunlight." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 7:41-7:50 | The video says that building in the City followed no building code, except a strict height limit of 14 storeys because of Kai Tak airport. | "Due to the city's close proximity to Kai Tak Airport, a strict height limit of 14 stories was enforced." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 8:17 | The video says that the flats facing the outside had the highest prices, and the flats near the inner courtyard came next. | "The highest priced apartments were those facing the outside, followed by those near the internal courtyard." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 8:28 | The video says that a household could add a caged balcony to its flat for more space, but most flats were inside the block. | "You could add a caged balcony to your apartment, cleverly expanding your living space" |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 8:40-8:45 | The video shows a plan of a typical building and says that its flats had no windows, so people depended on electric light. | "With no windows, people here were completely dependent on electric light." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 8:52-8:58 | The video says that the City had no waste management: people put rubbish on the rooftops or threw it into the shafts between buildings. | "Frequently, rubbish was simply disposed on one of the city's rooftops, or thrown into one of the shafts between buildings." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 9:07 | The video says that the air was stuffy and polluted by the many factories inside the City. | "The air is said to have been constantly stuffy, and polluted by the many factories that operated inside the city." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 9:14 | The video says that only six official water stations served the City, so residents often carried water over long distances. | "a mere six official water stations served the entire city, which means residents often had to carry the water over long distances." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 9:24-9:28 | The video says that few residents paid for electricity; most tapped external cables illegally and ran them through the passageways. | "Instead, most residents opted to illegally tap into external cables, routing them through the city's intricate maze of narrow passageways." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 9:58-10:02 | The video says that the City was a hub for dentists whose mainland Chinese qualifications Hong Kong did not recognise. | "Many of those had obtained their qualifications in mainland China, but found their licenses unrecognized in British governed Hong Kong." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 10:17 | The video says that workshops, for example for metal fabrication, flourished in the City. | "various workshops, such as those specialing in metal fabrication, to flourish within the city." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 10:26 | The video says that kitchens in the City sold dog meat, which was outlawed in the rest of Hong Kong. | "kitchens were selling popular food items that were outlawed in the rest of Hong Kong, such as dog meat." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 10:34-10:42 | The video says that food production was a common business, and repeats a hearsay claim that food made there reached expensive restaurants the same night. | "It is even said that many of the delicacies processed here over the day, ended up on the plates of expensive restaurants" |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 11:19 | The video says that businesses paid no taxes, but many paid protection money to the triads. | "While businesses did not pay taxes, many of them were forced to pay protection money to these groups." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 11:26 | The video says that the triads ran prostitution and opium dens, and in later years heroin trafficking. | "soliciting prostitution, opium dens, and in the later years, venturing into heroin trafficking." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 11:54-12:03 | The video says that from the mid-1970s the police made many short raids into the City and then left again. | "in the mid 1970s, the authorities decided to carry out many isolated raids with police officers storming the city for short periods of time" |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 12:12 | The video says that private aid groups ran a kindergarten and a Christian missionary youth centre that helped with addiction. | "operating a kindergarten, as well as a Christian missionary youth center that offers help with addiction." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 12:22 | The video says that the yamen in the middle of the City became a social spot with public events for residents. | "The historic yamen, in the middle of the city, became a popular social spot, hosting public events for the city's residents." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 13:18-13:25 | The video gives the reasons for the clearance as the social situation, the risk of fire and the fear that buildings would collapse, and says that residents resisted strongly. | "the risk of fire breaking out, as well as the fear of any of the buildings collapsing, would justify the complete evacuation and demolition" |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 13:37 | The video says that the demolition started in 1993. | "With the start of the demolition in 1993, Kowloon Walled City came to an end." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 14:32 | The video says that a letter sent to someone inside the City was delivered without trouble. | "You could send a letter to someone living inside the city, and despite the apparent chaos, it would get delivered just fine." |
+| YouTube 4YuNvIfM-YA, creator's English caption track, 15:13 | The video says that the park on the site keeps the yamen building and a small model of the City. | "such as the historic yamen building still standing, as well as a small model remembering the urban monolith" |
+| Aeon page, description paragraph | The Aeon description says the City was built 14 storeys high with almost no space between buildings, with 33,000 to 50,000 residents on 6.5 acres. | "Built 14 storeys high and with little to no space between buildings, an estimated 33,000 to 50,000 residents packed into its high-rises across just 6.5 acres." |
+| Aeon page, photo credit | The Aeon page credits its title photograph, an aerial view of the City in 1989, to Ian Lambot. | "Aerial view of Kowloon Walled City, 1989. Photo by Ian Lambot" |
+
+- **Leads:**
+  - The plan of a 'typical building' shown at 8:40 of the video has no source credit; the YouTube description credits only 'Images via Getty, AP Newsroom'. The original drawing is not identified.
 ### top-popular-13: GAG507: Gefangen zwischen zwei Reichen – die Kowloon Walled City
 
-- **Creator:** Daniel Meßner and Richard Hemmer, Geschichten aus der Geschichte
-- **Date:** 2025-06-11
-- **Kind:** other
-- **Class:** secondary (A history podcast built on published books and articles.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** © Geschichten aus der Geschichte
-- **Link:** https://www.geschichte.fm/archiv/gag507/
-- **Other links:** https://podcasts.apple.com/us/podcast/gag507-gefangen-zwischen-zwei-reichen-die-kowloon-walled/id1817123600?i=1000712399557
-- **Proof that it exists:** GAG507: Gefangen zwischen zwei Reichen – die Kowloon Walled City (11 June 2025).
-- **What it gives (finder's note, not checked):** A 60-minute German history of the City from the 17th century to its clearance for a park. Its literature list: Akers-Jones (2004), Girard, Lambot and Goddard (1993), Gordon Jones in JRASHKB 51 (2011), Sinn in JRASHKB 27 (1987), Wong Kin Yuen in Science Fiction Studies 27:1 (2000).
-- **Notes:** Language: German. The repo files already hold every item in its literature list except Wong Kin Yuen (2000), which is about films and cityscape. Not listened to.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the episode page (summary, literature list, image credit, listener comments), the Podigee player panel (no transcript tab), and the episode's timeline and map on atlas.geschichte.fm. I did not hear the German audio (about 60 min); no transcript is offered.
+- **Citation:** Daniel Meßner and Richard Hemmer, 'GAG507: Gefangen zwischen zwei Reichen – die Kowloon Walled City', Geschichten aus der Geschichte (GeschichteFM), 11 Jun 2025, https://www.geschichte.fm/archiv/gag507/ ; timeline https://atlas.geschichte.fm/timeline?episode_slug=gag507 ; map https://atlas.geschichte.fm/map?episode_slug=gag507
+- **Class:** secondary (A German history podcast (2025) built on published works, which it lists. No first-hand testimony.)
+- **Date of the record:** 2025-06-11
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| geschichte.fm episode page, summary para 2 | The episode page says the City was no bigger than one city block and finally gave way to a public park. | "wie es in dieser Stadt, die nicht größer als ein Häuserblock war, aussah und weshalb sie schließlich einem öffentlichen Park weichen musste." (what this city, which was no bigger than a city block, looked like, and why it finally had to make way for a public park.) |
+| geschichte.fm episode page, 'Literatur' | The episode's literature list has five works: Akers-Jones (2004), Girard, Lambot and Goddard (1993), Gordon Jones in JRASHKB 51 (2011), Elizabeth Sinn in JRASHKB 27 (1987), and Wong Kin Yuen in Science Fiction Studies 27:1 (2000). | "Jones, Gordon. „The Kowloon City District and the Clearance of the Kowloon Walled City: Personal Recollections“." |
+| atlas.geschichte.fm timeline, gag507 | The episode timeline gives four steps: in 1847 Qing China strengthens the post against the British; in 1898-99 the lease clause freezes the City's legal status; from the 1940s to the 1970s the settlement grows extremely high and dense; from 1987 to 1994 the British and Chinese clear it. | "1987 bis 1994 räumen Briten und Chinesen die Stadt ab." (From 1987 to 1994 the British and the Chinese clear the city.) |
+| geschichte.fm episode page, image credit | The episode image is a crop of Ian Lambot's aerial photograph of the City of 1989, under CC BY-SA 4.0. | "Das Episodenbild zeigt die Kowloon Walled City im Jahr 1989." (The episode image shows Kowloon Walled City in 1989.) |
+
+- **Leads:**
+  - Wong Kin Yuen, 'On the Edge of Spaces: Blade Runner, Ghost in the Shell, and Hong Kong's Cityscape', Science Fiction Studies 27, no. 1 (2000): 1-21 (on films; not in the repo).
+  - A listener comment on the episode page (Gunnar Wilhelmi, 12 Jun 2025) links 'Kowloon Walled City - ORF (1989) with English subs' (YouTube uploader Harold Smith), https://www.youtube.com/watch?v=iFvUMaHrRI0 : probably a third copy of the ORF / Portisch-Riff film already in primary-sources/film-and-tv-footage-1958-1994 (inferred from the title; not opened).
 ### top-popular-12: How the Kowloon Walled City Worked
 
-- **Creator:** Stuff You Should Know (iHeartPodcasts)
-- **Date:** 2026-03-12
-- **Kind:** other
-- **Class:** secondary (A popular podcast that retells the history from secondary works.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** © iHeartMedia
-- **Link:** https://podcasts.apple.com/us/podcast/how-the-kowloon-walled-city-worked/id278981407?i=1000754820995
-- **Other links:** https://pocketcasts.com/podcast/stuff-you-should-know/12012c20-0423-012e-f9a0-00163e1b201c/how-the-kowloon-walled-city-worked/2df38c88-1f37-4b64-bc23-aad7c7e78d99, https://podcastrex.com/shows/stuff-you-should-know/how-the-kowloon-walled-city-worked
-- **Proof that it exists:** iTunes Search API record: collectionName 'Stuff You Should Know', trackName 'How the Kowloon Walled City Worked', releaseDate 2026-03-12, 41.5 min.
-- **What it gives (finder's note, not checked):** A 41-minute popular account of the City, from the Opium Wars and the 1898 lease to its close community and its demolition.
-- **Notes:** Read through the iTunes Search API (https://itunes.apple.com/search?term=kowloon+walled+city&entity=podcastEpisode&limit=50); Pocket Casts and Podcast Rex gave 403. Not listened to.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Josh Clark and Chuck Bryant, 'How the Kowloon Walled City Worked', Stuff You Should Know (iHeartPodcasts), 12 Mar 2026, about 41.5 min; episode and AI transcript: https://omny.fm/shows/stuff-you-should-know-1/how-the-kowloon-walled-city-worked ; Apple Podcasts: https://podcasts.apple.com/us/podcast/how-the-kowloon-walled-city-worked/id278981407?i=1000754820995
+- **Class:** secondary (A popular podcast (2026) whose hosts retell what they read and watched; they name the 99% Invisible episode of 2012 and an unnamed 15-20 minute YouTube documentary as sources. No first-hand testimony. Many figures are approximate or wrong (for example the hosts' figures for the 1898 lease and the size).)
+- **Date of the record:** 2026-03-12
+- **Files:**
+  - `top-popular-12-how-the-kowloon-walled-city-worked-132bed96.html` (in `local/`, not in git): HTML of the Omny episode page with the full AI transcript; https://omny.fm/shows/stuff-you-should-know-1/how-the-kowloon-walled-city-worked; 75796 bytes; SHA-256 `9b003f33979f72218b07537e85dc1095ded0015710050761386b5a2db0f84d85`; licence: no licence statement; © iHeartMedia assumed (https://omny.fm/shows/stuff-you-should-know-1/how-the-kowloon-walled-city-worked)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Omny AI transcript, 02:21 (Speaker 2) | A host says the City really had about 33,000 people. | "there were really only thirty three thousand people." |
+| Omny AI transcript, 03:51 (Speaker 1) | A host says the City was a little more than six and a half acres with 500 buildings. | "this is a little more than six and a half acres and there were five hundred buildings packed in there." |
+| Omny AI transcript, 02:59 (Speaker 2) | A host says the buildings stood against each other and rose up to 14 storeys, and that the City was at its peak from about 1970 to about 1990. | "held buildings right up against each other that went all the way up to fourteen stories tall." |
+| Omny AI transcript, 03:58 (Speaker 2) | A host says people built makeshift bridges between buildings so as not to go down 14 floors and up again. | "people just built haphazard bridges between one building and another so they didn't have to go down fourteen stories and then back up" |
+| Omny AI transcript, 08:35 (Speaker 1) | A host says the Qing wall was 15 feet thick and 13 feet high, and the fort held about 150 soldiers. | "they built a wall fifteen feet thick, thirteen feet high. It housed about one hundred and fifty soldiers" |
+| Omny AI transcript, 13:38-14:25 (Speakers 2 and 1) | A host says the British evicted the squatters in 1948, that they came back the next week, and that a second attempt caused a riot. | "they evicted all the squatters in nineteen forty eight." |
+| Omny AI transcript, 17:16 (Speaker 1) | A host says the only building rule was the height limit of 14 storeys, because of the airport next door. | "you can't build anything over fourteen stories tall because it's right there next to the airport" |
+| Omny AI transcript, 17:16 (Speaker 1) | A host says that buildings sank on their foundations and leaned onto each other, and were called 'lovers buildings'. | "So they ended up calling like lovers buildings because at the top they were all kind of angled in and touching one another" |
+| Omny AI transcript, 18:14 (Speaker 2) | A host says that flats facing outward or onto the inner courtyard cost more because they had sun, and that most flats, shops and alleys never got sunlight. | "one of the premiums for a flat in the Kowloon Walld City was one that was outward facing or faced on the internal courtyard because they had sun exposure." |
+| Omny AI transcript, 19:23-20:00 (Speakers 1 and 2) | A host reads prices from a YouTube video: a 280-square-foot flat cost US$28,000 and an outward-facing 450-square-foot flat US$60,000. The hosts do not know the year; one thinks the figures were from the 1960s or 1970s. | "a two hundred and eighty square foot flat cost twenty eight thousand American dollars." |
+| Omny AI transcript, 20:00 (Speaker 2) | A host says a flat in the City was about double the floor area of a public-housing flat and had a kitchen and a bathroom, which public flats did not always have. | "You could get a flat that was about double the square footage of a like a government flat" |
+| Omny AI transcript, 20:57 (Speaker 1) | A host says residents almost certainly paid no electricity bill, and that the buildings were wrapped in water pipes, sewage pipes and electric conduit. | "these buildings were wrapped in water pipes and sewage lines and conduit running electricity." |
+| Omny AI transcript, 20:57 (Speaker 1) | A host says businesses paid no business taxes, but there was no rubbish collection. | "If you were a business, you weren't paying any kind of business taxes, so that was a big plus. But you didn't have stuff like trash pickup" |
+| Omny AI transcript, 21:44 (Speaker 2), start of the turn | A host says people at street level carried umbrellas because the exposed pipes, some of them sewage pipes, dripped. | "you would carry an umbrella because of those exposed pipes, it would be leaking on you." |
+| Omny AI transcript, 21:44 (Speaker 2), later in the turn | A host says mesh nets were strung between buildings to catch rubbish thrown from windows, which made the ground-level alleys into tunnels. | "overhead there was a mesh net that had been laid between buildings to catch the trash that people just threw out of their windows." |
+| Omny AI transcript, 23:13 (Speaker 1) | A host says hundreds of legal businesses worked in the City, with many machine shops and metal workshops, and many food factories. | "There were hundreds of legit businesses that operated there." |
+| Omny AI transcript, 23:54 (Speaker 2) | A host says unregulated fishballs made in the City went out to the rest of Hong Kong. | "the fishballs, so they were unregulated fishballs made in highly unsanitary conditions that just made it out of the Kowlouon Walled City." |
+| Omny AI transcript, 23:54 (Speaker 2) | A host says people came from outside for the unlicensed dentists and doctors, who had trained in China. | "People were coming from outside of the city into the city for things like dentists and doctors who were all unlicensed" |
+| Omny AI transcript, 24:55 (Speaker 1) | A host says the City had kindergartens and schools, often run by the Salvation Army or similar bodies. | "There were kindergartens, there were schools. A lot of times it was like the Salvation Army or somebody kind of running these things." |
+| Omny AI transcript, 24:55 (Speaker 1) | A host says some rooftops had playground equipment, and that pigeon racing was popular, with gardens and racing pigeons on the roofs. | "Pigeon racing was a big thing, so there were gardens on the roofs" |
+| Omny AI transcript, 25:25 (Speaker 1) | A host says the City had volunteer fire brigades, volunteer rubbish-collection teams and night-watch teams. | "They had volunteer fire brigades." |
+| Omny AI transcript, 25:25 (Speaker 1) | A host says one postman delivered mail to the whole City. | "There was a single mail delivery person delivering to the entire city." |
+| Omny AI transcript, 25:55 (Speaker 2) | A host says the neighbourhood Welfare Association witnessed the purchase and sale of flats. | "If you bought or sold a flat, the neighborhood Welfare Association would witness it" |
+| Omny AI transcript, 25:55 (Speaker 2) | A host says triads made and sold heroin in the City and ran protection rackets and brothels, and also kept a form of order. | "they were manufacturing and selling heroin out of the city. They were running protection rackets and brothels" |
+| Omny AI transcript, 27:33 (Speaker 2) | A host says that old people looking for a cheap place to live also found room in the City. | "if you were just some elderly person looking for a cheap place to stay" |
+| Omny AI transcript, 31:08-31:31 (Speaker 1) | A host says that in 1962 the British completed the Tung Tau public housing estate (transcribed 'Tung Tao Estate') and told City residents to move there, and that a residents' anti-demolition committee refused. | "they completed construction on a high rise public housing complex called the Tung Tao Estate" |
+| Omny AI transcript, 33:26 (Speaker 2) | A host says the compensation was about $300,000 for a flat bought for about $30,000 twenty years earlier (currency not stated). | "I think about three hundred thousand dollars for a flat that again they'd spent maybe thirty thousand dollars on twenty years before" |
+| Omny AI transcript, 34:09 (Speaker 1) | A host says that on 14 January 1987, 360 staff (transcribed 'from the Clearance in squatter Control') cordoned off all 83 entrances and exits of the City and made a door-to-door census. | "they cordoned off all eighty three entrances and exits to the city, went door to door and did a census" |
+| Omny AI transcript, 36:02 (Speaker 1) | A host says the last residents were evicted in 1992, with Union Jacks burned, homemade firecrackers and a few fights with police, and that the last person left in July 1992. | "In nineteen ninety two, there were people burning Union Jack's setting off homemade firecrackers" |
+| Omny AI transcript, 35:17 (Speaker 2) | A host says the City was fully demolished by 1994. | "It wasn't until ninety four that Kowloon Walled City was finally fully demolished" |
+| Omny AI transcript, 37:44-38:06 (Speakers 2 and 1) | The hosts say the park keeps the yamen, has ponds, and has a table-sized scale model of the City. | "They do have a table sized scale model of what was there." |
+| Omny AI transcript, 29:03 (Speaker 2) | A host names the 99% Invisible episode of 2012 on the City as a better account. | "ninety nine percent Invisible of course did an amazing episode. Oh of course they did on this back in twenty twelve." |
+
+- **Leads:**
+  - The flat prices quoted at 19:23 (280 sq ft for US$28,000; 450 sq ft for US$60,000) come from an unnamed YouTube video and 'a paper'; the original record is not identified.
 ### top-popular-18: 《香江尋源》第十八課 九龍寨城
 
-- **Creator:** RTHK (香港電台)
-- **Date:** c.2019
-- **Kind:** article
-- **Class:** secondary (A short history lesson written later for a teaching series.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © RTHK
-- **Link:** https://rthk.hk/oldassets/files/extra_file/20190626082432_1603566607.pdf
-- **Proof that it exists:** 《香江尋源》 第十八課 九龍寨城: 「明清時期，沿海海盜猖獗，為禍極深。清廷於嘉慶十五年(1810)興建九龍炮台加強防禦。」
-- **What it gives (finder's note, not checked):** One page (p. 49): the fort of 1810, the walls after 1841, the 1898 status, the 「三不管」 period and the clearance in the 1990s for a park. No facts on daily life.
-- **Notes:** The date comes from the upload stamp in the file name (20190626). The programme that uses this lesson text is not identified.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** RTHK (香港電台), 《香江尋源》, 第十八課 九龍寨城, one-page PDF, p. 49, c.2019, https://rthk.hk/oldassets/files/extra_file/20190626082432_1603566607.pdf
+- **Class:** secondary (A short lesson text of about 2019 on the history of the City, with no facts on daily life. The secondary tree is correct.)
+- **Date of the record:** c.2019 (PDF modified 2019-02-24; file name stamp 2019-06-26)
+- **Files:**
+  - `top-popular-18-20190626082432_1603566607-83a3b743.pdf` (in `local/`, not in git): One-page PDF lesson text with one photograph (1.2 MB); https://rthk.hk/oldassets/files/extra_file/20190626082432_1603566607.pdf; 1278173 bytes; SHA-256 `166c1eb14907176bd9c3ad071ff7c9303bad1c1bc58ebb5e0d4e4f3506e3805d`; licence: no licence stated in the PDF; (C) RTHK presumed (https://rthk.hk/oldassets/files/extra_file/20190626082432_1603566607.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 49, para. 1 | The text says that the Qing court built the Kowloon fort (九龍炮台) in 1810 against the pirates of the coast. | "清廷於嘉慶十五年(1810)興建九龍炮台加強防禦" (In the 15th year of Jiaqing (1810) the Qing court built the Kowloon fort to strengthen the defence.) |
+| p. 49, para. 1 | The text says that the British landed on Hong Kong Island in January 1841 and then pulled down the Kowloon fort across the harbour. | "到 1841 年 1 月，英軍登陸港島，繼而擅自拆毀對岸的九龍炮台" (In January 1841 the British landed on Hong Kong Island and then, without authority, pulled down the Kowloon fort on the opposite shore.) |
+| p. 49, para. 1 | The text says that the Qing court then added city walls to 九龍寨, called the whole 九龍寨城, and stationed a naval unit and a sub-district magistrate (巡檢司) there. | "遂於九龍寨增築城牆，總稱為「九龍寨城」，先後設置水師及巡檢司駐守" (Thus it added city walls to 九龍寨 (the Kowloon stockade), called the whole 'Kowloon Walled City', and in turn stationed a naval force and a sub-district magistrate there.) |
+| p. 49, para. 2 | The text says that in 1898 the New Territories came under British rule, but the Qing court kept sovereignty over the walled city. | "1898 年，新界歸入英治，但清廷保留九龍寨城主權，形成特殊地位" (In 1898 the New Territories came under British rule, but the Qing court kept sovereignty over the Kowloon Walled City, which gave it a special status.) |
+| p. 49, para. 2 | The text says that the Hong Kong government tried to clear the City several times, and each attempt became a diplomatic dispute; it then left the City alone, which made it a 'three no-cares' (三不管) zone. | "改而採取放任與孤立政策，不再干涉城內事務" (It changed to a policy of laissez-faire and isolation, and no longer interfered in the affairs inside the City.) |
+| p. 49, para. 2 | The text says that the City drew poor settlers and became a hotbed of crime, and that the public mockingly called it 九龍城寨. | "既吸引貧民聚居，也淪為罪惡溫床，市民更謔稱為「九龍城寨」" (It drew the poor to settle, and also sank into a hotbed of crime; the public mockingly called it 「九龍城寨」 (the 寨 of a bandits' stockade, against the formal 九龍寨城).) |
+| p. 49, para. 3 | The text says that in the 1990s, with the handover near, China and Britain agreed to clear the City and make the site a park; Qing relics were dug up during the works, and the site is now a declared monument. | "九十年代，以香港主權即將移交，中英兩國同意清拆九龍寨城，原址改為公園" (In the 1990s, as the sovereignty of Hong Kong was about to be handed over, China and Britain agreed to clear the Kowloon Walled City and turn the site into a park.) |
+| p. 49, photo caption | INFERRED: The page has one photograph, captioned as the walled city at the end of the 19th century: low tiled buildings and a wall below a rocky hill. | "十九世紀末的九龍寨城" (The Kowloon Walled City at the end of the 19th century) |
 ### top-zh-testimony-14: 《九龍城寨之圍城》製作特輯 - 城寨情懷篇
 
-- **Creator:** Media Asia Film YouTube @Mediaasiafilm (寰亞電影)
-- **Date:** c.2024
-- **Kind:** film
-- **Class:** depiction (A making-of film of the 2024 feature film.)
-- **Value:** low
-- **Language:** zh
-- **Access:** js-only
-- **Licence:** © Media Asia Film
-- **Link:** https://www.youtube.com/watch?v=c-xZHa1SINw
-- **Proof that it exists:** oEmbed: title as above, author_name Media Asia Film 寰亞電影.
-- **What it gives (finder's note, not checked):** Search extract only: the film team says that it did research and interviewed old neighbours, and that most people in the City in the 1980s worked hard to live (「經過我哋做研究同訪問舊街坊……」).
-- **Notes:** Whether a former resident appears on screen is not known. The art department also interviewed former residents (search extract of the 美術細節篇, https://www.youtube.com/watch?v=dAajqrzEXEk, not opened).
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. The video (3:06) has no caption track. I read its full description from the page's player data. I sampled frames at 0:05, 0:15, 0:25 and 0:35, and read the burned-in Chinese subtitles every 2 s from 0:01 to 1:03. The rest (1:04 to 3:06) is not read: the shared browser tab was navigated away by another session twice, and I stopped after the one attempt. In the part that I read, the speakers are not named on screen, thus whether a former resident appears is still not known.
+- **Citation:** Media Asia Film 寰亞電影, '《九龍城寨之圍城》製作特輯 - 城寨情懷篇' (making-of featurette for the film Twilight of the Warriors: Walled In (九龍城寨之圍城), director 鄭保瑞), YouTube, 17 Apr 2024, 3:06, https://www.youtube.com/watch?v=c-xZHa1SINw
+- **Class:** depiction (A promotional featurette of 2024 for a feature film set in the City. The film team's statements about their research are secondary. The secondary tree is correct.)
+- **Date of the record:** 2024-04-17
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube description, line 2 | The description says that the film's art department spent three months rebuilding the City as a set. | "美術組用咗三個月時間，重整咗個城寨出嚟" (The art department spent three months rebuilding the Walled City.) |
+| YouTube description, line 3 | The description quotes the director: outsiders understand the City only on the surface, and think only of the 'three no-cares', vice, gambling and drugs. | "城寨以外嘅人對城寨嘅理解只係好表面，一提起都只會諗起「三不管」黃賭毒" (People outside the City understand it only superficially; when it is mentioned they think only of 'three no-cares' and prostitution, gambling and drugs.) |
+| YouTube description, line 3 | The description quotes the director: after research and interviews with old neighbours (舊街坊), the team found that in the 1980s most people in the City worked hard for a stable living and enough to eat. | "經過我哋做研究同訪問舊街坊，八十年代嘅城寨裡面，大部分人都為生活努力拼搏，求安穩溫飽" (After our research and interviews with old neighbours: in the City of the 1980s, most people struggled hard to make a living, seeking stability, warmth and enough food.) |
+| subtitles 0:25-0:35 | INFERRED: A speaker in the featurette says that the City gave people who could not live outside, or who were poorer, a chance to survive in Hong Kong. The speaker is not named on screen. | "城寨反而給他們一個契機 可以在香港這個地方生存下去" (The City instead gave them an opportunity to survive in this place, Hong Kong.) |
+| subtitles 0:37-0:39 | A speaker says that what everyone in the City sought was the most basic thing: a living. | "大家求的其實都是最基本的東西 就是生活" (What everyone sought was in fact the most basic thing, that is, a living.) |
+| subtitles 0:47-1:01 | A speaker says that the team wanted to change people's image of the City, and that the City of the 1980s was not about vice, gambling and drugs. | "其實八十年代的城寨不是這樣" (In fact, the City of the 1980s was not like this.) |
+
+- **Leads:**
+  - The rest of this featurette (1:04 to 3:06) is not read: read its burned-in subtitles to see whether a former resident speaks.
+  - Media Asia Film, '《九龍城寨之圍城》製作特輯 - 美術細節篇', https://www.youtube.com/watch?v=dAajqrzEXEk : a search extract (plan notes) says the art department interviewed former residents; not opened.

@@ -2,9 +2,8 @@
 
 China Mail, SCMP, FEER and other reports made at the time, with street addresses and events.
 
-- **Status:** partly read: 10 of 22 items read by the reading of the source search of
-  2026-11, and a checker checked a sample of the facts. Each other item is still catalogued, not
-  read: its "What it gives" is the note of the finder, not a checked fact.
+- **Status:** read: 22 of 22 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 - **Dates:** 1899-1992.
 - **Items:** 22, of which 21 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
@@ -19,68 +18,123 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### press-archives-1: KOWLOON WALLED CITY TAKEN.
 
-- **Creator:** Hong Kong Telegraph
-- **Date:** 1899-05-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily that reported the British move into the Walled City on the next day.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown: a private re-upload to archive.org (collection 'china-mail'), probably of the HK Public Libraries scans; the text of 1899 is out of copyright
-- **Link:** https://archive.org/details/NPTG18990517
-- **Other links:** https://archive.org/stream/NPTG18990517/NPTG18990517_djvu.txt, https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** Item description headlines: 'KOWLOON WALLED CITY TAKEN.' 'ANOTHER LARGE FIRE.'
-- **What it gives (finder's note, not checked):** About 300 troops (two companies of Fusiliers under Col. Mainwaring, two seven-pounders, two machine-gun detachments, a medical party) went by launch and junk and landed at the police pier. Col. Mainwaring and the Captain Superintendent of Police made a demand at the gates of the walled city, while a crowd of Chinese watched from the hillsides.
-- **Notes:** I rechecked the headline in the item record in this session. The facts in 'gives' come from the OCR text, which the first run of this lens read on 2026-11-16; the OCR is poor and stops before the result. Other headlines of the issue: 'SAM CHUN TAKEN.', 'OFFICIALS IN HOT WATER.'. The official copy is in the HKPL old newspapers (queue-it to this tool).
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I read the article from the page image of leaf n1 (cropped and enlarged), because the OCR is broken. The last part (the search for arms and the rest) is lost: the bottom of the column and the top of the next one are solid black on the scan, and the OCR stops there too. The official HKPL copy (MMIS) can hold a better scan.
+- **Citation:** Hong Kong Telegraph, 'Kowloon Walled City Taken. Volunteers At Work.', Wednesday 17 May 1899, leaf n1, Internet Archive item NPTG18990517, https://archive.org/details/NPTG18990517
+- **Class:** primary (A news report of the next day, by a paper whose men saw the event (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-17
+- **Files:**
+  - `press-archives-1-n1-0941ee7b.jpg` (in `local/`, not in git): Page image of leaf n1 of the Hong Kong Telegraph, 17 May 1899, with the report (the end is black on the scan) (JPEG, 3535 x 4743 px); https://archive.org/download/NPTG18990517/page/n1.jpg; 5897170 bytes; SHA-256 `3844af02227578ebfa10ff1ed3acf94915ec7bcca51c3937a234c4571ad574c3`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPTG18990517)
+  - `press-archives-1-NPTG18990517-002d8a72.pdf` (in `local/`, not in git): Hong Kong Telegraph, 17 May 1899, whole issue (3,946,985 bytes, page-image PDF); https://archive.org/download/NPTG18990517/NPTG18990517.pdf; 3946985 bytes; SHA-256 `c627796199ce962a3e3e715b43e88e7344fa65857f38c199dde5f361de0bb35d`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPTG18990517)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | The Telegraph called the Walled City 'that plague spot' and said the military acted on instructions from home. | "it was decided that that "plague spot" the walled city of Kowloon should be taken possession of" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | INFERRED: The Volunteers were told on Monday 15 May 1899 to be ready, and on 16 May at 11 a.m. to assemble at 1 p.m. Over a hundred men came. The dates come from 'last Monday' and 'yesterday' in a paper of 17 May. | "yesterday, at 11 a.m., a further order was circulated for the Corps to assemble at Headquarters at 1 p.m." |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | Two seven-pounders and two machine-gun detachments went; the other Volunteers acted as infantry. Twenty rounds of ammunition were served out. | "two seven pounders and two machine gun detatchments were told off, and the remainder were ordered to act as infantry" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | At the Commissariat pier were two companies of the Royal Welsh Fusiliers under Col. Mainwaring, and Royal Engineers under Lt Painter with European sappers and six Chinese, a flagstaff and digging tools. | "a party of Royal Engineers, under Lt. Painter R.E., composed of European sappers and six Natives, armed with a flagstaff and tools for digging holes." |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | Nearly 300 troops went across on steam launches and junks, with an ambulance party and medical officers. | "The whole number of troops, amounting to nearly three hundred, were embarked on steam launches and junks" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | Only a crowd of Chinese civilians watched from the hillsides and the shore. Each launch had a machine gun ready in the bow. | "only a crowd of Chinese civilians was seen on the hillsides and along the shore" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | The troops landed at the police pier, once used by the customs, and formed up in front of the police station. | "A landing was effected at the police pier, which used to be used for the customs" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | Col. Mainwaring, Major Prendergast (spelled 'Pendergast') and Captain Superintendent May went to the walled city and demanded its surrender. The mandarin refused, as he had no instructions from Peking, but let it be known he could be forced. | "The mandarin refused as he had had no instructions from Pekin, but made it known that he could be forced to do so." |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | INFERRED: The troops came up by several routes. The guns had trouble in the narrow, filthy streets, and the open sewers down the middle of the streets caused many halts. These were the streets outside the walls (my reading). | "the open sewers running down their centre, caused many halts to be made." |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | The Chinese people stood at their doorways and watched with almost perfect indifference. | "The Chinese population stood at their doorways looking on with almost perfect indifference" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | The gates of the City were open and the place was empty except for old men and women. The paper thought the soldiers had left or changed into civilian clothes. | "the gates were found open and the place deserted, except by old men and women" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | A seven-pounder was set to command the gate, and sentries were posted along the walls. The mandarin was told to bring out his able-bodied men, but there were none. | "A seven pounder was put in such a position as to command the gate and sentries were posted along the walls" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | For the ceremony the troops formed up in front of the yamen, facing the flagstaff on the wall of the City. | "the troops were formed up in front of the yamen facing the flag staff, which had been erected on the wall of the city." |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | Major Prendergast hoisted the flag at 5.15 (p.m.). The seven-pounders fired 21 rounds at 20-second intervals; gun No. 2 choked after the fifth round. | "The flag was hoisted at 5.15 by Major Prendergast, R.E., the troops giving a royal salute and firing 21 rounds" |
+| NPTG18990517, leaf n1, column under the headline (right half of the page) | INFERRED: After the ceremony search parties went through all the houses for arms and ammunition. The rest of the report is lost in the black part of the scan. | "the men were told off into search parties and a thorough search was made through all the houses for arms" |
+
+- **Leads:**
+  - A better scan of the Hong Kong Telegraph of 17 May 1899 (HKPL Multimedia Information System, old newspapers), for the end of the report that is black on the archive.org scan.
+  - The Hong Kong Telegraph of 18 May 1899, for the clearance of the inhabitants: not held.
 ### press-archives-2: THE OCCUPATION OF KOWLOON CITY.
 
-- **Creator:** China Mail
-- **Date:** 1899-05-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong report written the day after the troops entered the City, with what the reporter saw inside.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown: private re-upload, probably of HKPL scans; the text of 1899 is out of copyright
-- **Link:** https://archive.org/details/NPCM18990517
-- **Other links:** https://archive.org/stream/NPCM18990517/NPCM18990517_djvu.txt, https://archive.org/details/NPCM18990516
-- **Proof that it exists:** Item description headlines: 'THE KOWLOON EXTENSION.' 'THE OCCUPATION OF KOWLOON CITY.'; OCR: 'The walled. city is laid_out in 6ne wide atreots.'
-- **What it gives (finder's note, not checked):** The gate was open and the troops under Lt-Col. Mainwaring marched in without opposition; the streets were almost deserted, and about 150 men (many of them soldiers in plain clothes) were found and let go. The military mandarin was found, told through an interpreter that the city was occupied for the Queen, said he had no instructions, and went back to his yamen. The walls were very thick (OCR 'nina' feet), the embrasures held old cannon, and the Union Jack was to go up on the walls.
-- **Notes:** The OCR is badly broken into column fragments: read the page images for numbers and names. The day before, China Mail 16 May 1899 (NPCM18990516) had the headlines 'OCCUPATION OF KOWLOON AND SEAM CHUEN OFTIES.' 'DESPATCH OF TROOPS.' 'REGULARS AND VOLUNTEERS OCCUPY KOWLOON CITY.', but its OCR text (94,078 characters) does not hold a legible copy of that report.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'The Kowloon Extension. The Whole Question Reconsidered. The Occupation Of Kowloon City. The Volunteers Called Out.', dateline Hongkong 17 May, Wednesday 17 May 1899, leaf n2, Internet Archive item NPCM18990517, https://archive.org/details/NPCM18990517
+- **Class:** primary (A news report of the next day (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-17
+- **Files:**
+  - `press-archives-2-n2-ac15b0d3.jpg` (in `local/`, not in git): Page image of leaf n2 of the China Mail, 17 May 1899, with the report (JPEG, 3581 x 4683 px); https://archive.org/download/NPCM18990517/page/n2.jpg; 6787813 bytes; SHA-256 `644ef18b925cd4d0e40c28dde12097dec2c923416e216e43366aecbbd7ab3f21`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM18990517)
+  - `press-archives-2-NPCM18990517-cfb125a3.pdf` (in `local/`, not in git): China Mail, 17 May 1899, whole issue (6,107,616 bytes, page-image PDF); https://archive.org/download/NPCM18990517/NPCM18990517.pdf; 6107616 bytes; SHA-256 `e3334f97fc47e9ca70169368186789e750185a2dac93cefee2b14bdd6c7f33e5`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM18990517)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | At about 11 a.m. on 16 May 1899 the Volunteers were called by telephone to parade at 1 p.m. Over a hundred came; it was widely known that Kowloon city was the aim. | "an urgent summons was issued by telephone to the members of the Hongkong Volunteer Corps to parade at Headquarters at 1 p.m." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The Field Battery manned two 7-pounder guns and the Machine Gun Company two Maxim guns. Officers: Captains Chapman, Sanders and Ordish; Lieutenants Macdonald, Slade, Maitland, Fullerton and Underwood. | "The Field Battery manned two 7-lb. guns, the Machine Gun Co. manned two Maxim guns" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | At about 2 p.m. the Volunteers joined two companies of the Royal Welch Fusiliers under Lieutenant-Colonel Mainwaring at Commissariat Pier. Royal Engineers with six Chinese sappers, under Major Prendergast, carried the flagpost. | "joined two companies of the Royal Welch Fusiliers, in command of Lieutenant-Colonel Mainwaring, at Commissariat Pier." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Captain Superintendent F. H. May went with the force as Political Officer. | "Captain Superintendent F. H. May accompanied the expedition as Political Officer." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The troops landed at the long stone pier at Kowloon and formed up in front of the Police Station. A Maxim gun under Lieutenant Fullerton stayed to guard the pier. | "Arriving at the long stone pier at Kowloon, the troops disembarked and formed up in front of the Police Station." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The way to the walled city was through dark, evil-smelling streets, so narrow that the Maxim guns had trouble; the force split up and used different routes. | "The troops then marched into the dark, evil-smelling streets leading up to the walled city." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Mainwaring and May arrived first. The principal gate was open, the troops marched in unopposed, and the streets were almost empty. | "the principal gate was found to be open. The troops marched into the city without any opposition" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Inside, the walled city had fine wide streets, unlike the dirty lanes outside. | "The walled city is laid out in fine wide streets in striking contrast to the dirty lanes traversed by the troops." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The walls were about nine feet thick, and the embrasures held many old cannon. | "The walls are about nine feet thick, and in the embrasures were many old cannon." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | A Fusilier brought down a long-coated man, who protested loudly: he was the military mandarin. Mainwaring shook his hand and told him, through an interpreter, that the city was occupied for the Queen. | "a long-coated gentleman who was brought down in the custody of a Fusilier, remonstrating wildly at the indignity" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The mandarin said he was powerless against such a force and had no information from his Government. He then went back to his yamen. | "stated he had received no information from his Government on the matter. He then retired to his Yamen." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Sentries on the walls stopped anyone from leaving. The troops broke open the magazines and piled the arms in an open space in the centre of the city; there were arms in several houses too. | "the contents were piled up in heaps in an open space in the centre of the city." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The arms were a few modern repeating rifles, gingals, old flintlocks, fighting irons, bows and arrows, cases of old ammunition, and boxes of uniforms and soldiers' caps. The paper believed they would go to Canton. | "There were a few modern repeating rifles, but the remainder of the arms comprised gingals, ancient flintlocks, fighting irons" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | INFERRED: At about five o'clock the troops formed up facing the south wall, where the Engineers had set up a flagstaff on the ramparts (a hard part of the scan). | "About five o'clock the troops were formed up facing the south wall of the city" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Major Prendergast hoisted the Union Jack, the troops presented arms, and the Volunteers' seven-pounders fired a salute of 21 guns. | "A salute of twenty-one guns was fired from the Volunteers' seven-pounders." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | Soldiers then gathered the able-bodied men of the city: about 150 men stood in front of the yamen. Some officials, angry to be mixed with the crowd, were let into the yamen; the crowd then dispersed. | "About a hundred and fifty men were congregated in front of the yamen." |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | No uniformed soldiers were found. The paper said most had changed to civilian dress and left, but some of the men found were soldiers. | "There were no uniformed soldiers found in the city" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | The City was in the charge of a mandarin and two captains. | "The City was in charge of a mandarin and two captains" |
+| NPCM18990517, leaf n2 (the page under the masthead), columns 4-5 | About a hundred Royal Welch Fusiliers stayed in charge of the City; the others reached Hongkong at about seven o'clock. | "About a hundred men of the Royal Welch Fusiliers were left in charge of the City" |
+
+- **Leads:**
+  - China Mail, 16 May 1899 (archive.org NPCM18990516): headlines 'Regulars And Volunteers Occupy Kowloon City'; the page images are not read.
+  - China Mail, 18 May 1899, for the clearance of the inhabitants of the City: not held.
 ### press-archives-4: KOWLOON WALLED CITY CLEARED OUT.
 
-- **Creator:** Hong Kong Daily Press
-- **Date:** 1899-05-18
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time on the expulsion of the Chinese garrison and officials.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown: private re-upload, probably of HKPL scans; the text of 1899 is out of copyright
-- **Link:** https://archive.org/details/NPDP18990518
-- **Other links:** https://archive.org/stream/NPDP18990518/NPDP18990518_djvu.txt, https://mmis.hkpl.gov.hk/old-hk-collection
-- **Proof that it exists:** Item description headline: 'KOWLOON WALLED CITY CLEARED OUT.'
-- **What it gives (finder's note, not checked):** The headline reports the clearing of the Walled City. The OCR read in the first run says that Major-General Gascoigne and Major Prendergast went to 'the city' on 17 May, and that a British gunboat lay in Kowloon Bay.
-- **Notes:** Headline rechecked in this session. The main article was not found in the OCR text; read the page images.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Daily Press, 'Affairs In The New Territory. Shamchun And Namtau Occupied. Kowloon Walled City Cleared Out.', Thursday 18 May 1899, leaf n1, Internet Archive item NPDP18990518, https://archive.org/details/NPDP18990518
+- **Class:** primary (A news report of the next day (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-18
+- **Files:**
+  - `press-archives-4-n1-12dd1a77.jpg` (in `local/`, not in git): Page image of leaf n1 of the Hong Kong Daily Press, 18 May 1899, with the report (JPEG, 3546 x 4728 px); https://archive.org/download/NPDP18990518/page/n1.jpg; 6658522 bytes; SHA-256 `9b101df5551c042870c5b6e2878c2362d6cea46f31b917790c4b7ca5961f3432`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPDP18990518)
+  - `press-archives-4-NPDP18990518-27e29138.pdf` (in `local/`, not in git): Hong Kong Daily Press, 18 May 1899, whole issue (3,259,463 bytes, page-image PDF); https://archive.org/download/NPDP18990518/NPDP18990518.pdf; 3259463 bytes; SHA-256 `e353237528f0a7dcbf12bb0ddd00401c189f0f460b5a2db7943151fe9a1ac783`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPDP18990518)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPDP18990518, leaf n1, column 3 | The paper was officially told that the aim of the expedition was quietly met and most troops would soon return. It guessed the aim was to take Shamchun, Namtau and Kowloon walled city, all taken without opposition. | "we presume it was to take possession of Shamchun and Namtau, in addition to Kowloon walled city" |
+| NPDP18990518, leaf n1, column 3 | As a precaution, the inhabitants of the walled city were cleared out. | "As a precautionary measure the inhabitants of Kowloon walled city have been cleared out." |
+| NPDP18990518, leaf n1, column 3 | INFERRED: They left in junks at about one o'clock on 17 May 1899, for a place near Swatow. The date comes from 'yesterday' in a paper of 18 May. | "They left in junks at about one o'clock yesterday, making for a place in the neighbourhood of Swatow." |
+| NPDP18990518, leaf n1, column 3 | They took as many household goods as they could carry, with squealing pigs and crying children. | "They took with them as many of their household goods as they could carry, and what with squealing pigs and bawling children" |
+| NPDP18990518, leaf n1, column 3 | Major-General Gascoigne and Major Prendergast went over to the city on the afternoon of 17 May. | "Major-General Gascoigne and Major Prendergast went over to the city yesterday afternoon." |
+| NPDP18990518, leaf n1, column 3 | A British gunboat lay at anchor in Kowloon Bay. | "We notice that a British gunboat is anchored in Kowloon Bay." |
 ### press-archives-5: KOWLOON CITY TAKEN POSSESSION OF. / KOWLOON WALLED CITY CLEARED OUT. / OFFICIAL VERSION OF THE OPERATIONS.
 
-- **Creator:** Hong Kong Weekly Press
-- **Date:** 1899-05-20
-- **Kind:** press
-- **Class:** primary (The weekly digest of the Daily Press, made at the time, with the official account of the operation.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown: private re-upload, probably of HKPL scans; the text of 1899 is out of copyright
-- **Link:** https://archive.org/details/NPWP18990520
-- **Other links:** https://archive.org/stream/NPWP18990520/NPWP18990520_djvu.txt
-- **Proof that it exists:** Item description headlines: 'THE KOWLOON MISTAKES AND THEIR CONSEQUENCES.' 'KOWLOON CITY TAKEN POSSESSION OF.' 'KOWLOON WALLED CITY CLEARED OUT.'
-- **What it gives (finder's note, not checked):** A week of reports on the taking of Kowloon City, 16-20 May 1899, with the official version of the operations.
-- **Notes:** Headline list only (rechecked in this session); the article text was not read.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Weekly Press and China Overland Trade Report, 'Affairs In The New Territory. Shamchun And Kowloon City Occupied.' (with 'Kowloon City Taken Possession Of', 'Kowloon Walled City Cleared Out' and 'Official Version Of The Operations'), Saturday 20 May 1899, pp. 413-414, leaves n4-n5, Internet Archive item NPWP18990520, https://archive.org/details/NPWP18990520
+- **Class:** primary (A weekly reprint of the daily reports of the same week (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-20
+- **Files:**
+  - `press-archives-5-n4-7a87269c.jpg` (in `local/`, not in git): Page 413 image (leaf n4) of the Hong Kong Weekly Press, 20 May 1899, with the start of the report (JPEG, 3498 x 4794 px); https://archive.org/download/NPWP18990520/page/n4.jpg; 3650068 bytes; SHA-256 `7d2fe6b2877b840b3a35ed6b0eda172b7fa65ee9ca217842f489d75f3f40267e`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPWP18990520)
+  - `press-archives-5-n5-0cc62570.jpg` (in `local/`, not in git): Page 414 image (leaf n5) of the Hong Kong Weekly Press, 20 May 1899, with the march, the flag and the official version (JPEG, 3498 x 4794 px); https://archive.org/download/NPWP18990520/page/n5.jpg; 4096827 bytes; SHA-256 `8fd7c0dc238d40edb104c5c06694a6570a56c49728cc65b7434a230affaa83d5`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPWP18990520)
+  - `press-archives-5-NPWP18990520-d3a7e134.pdf` (in `local/`, not in git): Hong Kong Weekly Press, 20 May 1899, whole issue (8,952,598 bytes, page-image PDF); https://archive.org/download/NPWP18990520/NPWP18990520.pdf; 8952598 bytes; SHA-256 `f02ac6a75dd6d2a722bdd1d56d7b9c6f28efd6976ea26b04552335d792bfcfd7`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPWP18990520)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWP18990520, p. 413 (leaf n4), columns 2-3 | The paper said that the colony had been 'in a fever of excitement' all week, and that Shamchun and Kowloon City were now British. | "Shamchun and Kowloon City are now British and the bad faith of the Chinese authorities" |
+| NPWP18990520, p. 413 (leaf n4), columns 2-3 | A report of 16 May said troops would occupy Kowloon City because of two armed robberies nearby, which showed that the Chinese officials there could not keep order. | "the Chinese authorities there cannot cope with any lawless characters who may find their way there." |
+| NPWP18990520, p. 413 (leaf n4), columns 2-3 | INFERRED: At about 1 a.m. on Saturday (13 May 1899, from the context) ten men robbed a farmer's house at Tseung Lau Shu, about three miles east of Kowloon city. They took $107, clothing worth about $400 and two land receipts. | "ten men entered a house at a village named Tseung Lau Shu, about three miles to the eastward of Kowloon city" |
+| NPWP18990520, p. 413 (leaf n4), columns 2-3 | INFERRED: On Sunday (14 May 1899, from the context) six men, one with a revolver and the others with Japanese swords, tied up the keeper of a temple inside Kowloon city and took $22. They tied his hands, feet and queue; one man was arrested. | "tied up the keeper of a temple inside Kowloon city and stole $22 in money." |
+| NPWP18990520, p. 413 (leaf n4), columns 2-3 | The paper said the colony had seen the old clause that left Kowloon City under Chinese rule as an act of imbecility. | "the provision in the convention allowing Kowloon City to remain under Chinese jurisdiction was generally looked upon in the colony as an act of imbecility" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | When the launches came near the landing place opposite the Police Station (later the Customs House), the beach was crowded and people stood on the hills. | "the landing place opposite the Police Station (latterly Customs House) it was seen that the beach was crowded" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | INFERRED: On the march the troops passed narrow stinking lanes, where the people stayed indoors. Then they reached the paddy fields, so fields lay between the lanes and the walled city (my reading). | "The latter were not sorry when they reached the paddy fields" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | Open sewers ran down the centre of those streets, full of stagnant, dirty water; the smell made soldiers hold handkerchiefs to their noses. | "the open sewers which ran down the centre of the streets were filled with stagnant dirty filthy water" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | At the walled city the gates were open, 'as usual', and hardly anyone was to be seen. | "On reaching the walled city the troops found the gates open as usual and hardly a soul was to be seen." |
+| NPWP18990520, p. 414 (leaf n5), column 1 | Mainwaring found the Mandarin, who said he was powerless. He asked to be left alone and seen as little as possible, and the troops did so. | "He seemed anxious, however to be left alone and to be seen as little as possible during the proceedings" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | The City had a couple of magazines, each kept by a lone old man. The troops broke the doors down and piled the contents in an open space. | "A couple of magazines, each in charge of a solitary old man, were visited." |
+| NPWP18990520, p. 414 (leaf n5), column 1 | Most of the arms were old and thickly rusted: gingals, cannon, old pistols, boxes of ammunition, spears, swords, bows and arrows, war flags and soldiers' uniforms. All was to go to Canton. | "Several gingals were unearthed and some cannon similar to those captured beyond Taipohu recently" |
+| NPWP18990520, p. 414 (leaf n5), column 1 | At about five o'clock the troops formed up behind the wall that overlooks Kowloon Bay. The flagstaff stood near one of the embrasures, and Major Prendergast hoisted the Union Jack after a royal salute. | "the troops formed up behind the wall overlooking Kowloon Bay preparatory to the flag hoisting ceremony." |
+| NPWP18990520, p. 414 (leaf n5), column 1 | Soldiers then rounded up the inhabitants. Some came willingly; others came in fear, which some soldiers made worse by drawing their hands across their throats. | "some of the troops mischievously shaking their heads ominously and drawing their hands across their throats." |
+| NPWP18990520, p. 414 (leaf n5), column 1 | No Chinese soldiers were seen; the paper thought many were in civilian dress among the crowd. | "There were no signs, however, of any Chinese soldiers." |
+| NPWP18990520, p. 414 (leaf n5), column 1 | At about six o'clock the Volunteers and some Fusiliers left, about 100 Fusiliers stayed to garrison the city, and the others reached the Commissariat Pier at about seven. | "about 100 Fusiliers being left to garrison the city" |
+| NPWP18990520, p. 414 (leaf n5), columns 2-3 | The official version of 19 May said the home Government ordered the seizure of the walled city and Shamchun because Chinese officials had a hand in the disturbances of the hand-over. | "orders were accordingly issued to the military authorities here to seize Kowloon walled city and Shamchun." |
+| NPWP18990520, p. 414 (leaf n5), columns 2-3 | By the official version, the force sent on Tuesday 16 May under Colonel Mainwaring was about 350 Welch Fusiliers and Volunteers. It met no opposition, and 50 or 60 men stayed to garrison the place; the 17 May report said about 100. | "It met with no opposition whatever, and most of the men returned in the evening, some 50 or 60 being left to garrison the place." |
+| NPWP18990520, p. 414 (leaf n5), columns 2-3 | By the official version, the inhabitants were cleared out on the next day (17 May) and sailed in junks for a place near Swatow. | "The following day the inhabitants were cleared out and set sail in junks for a place in the neighbourhood of Swatow." |
+
+- **Leads:**
+  - The Government's own 'official version' of the operations of 16-19 May 1899, which the paper of 19 May summarises: its original text is not held.
 ### press-archives-6: Old Kowloon City Residents Refuse To Evacuate Properties. / AMBIGUOUS TEXT OF AGREEMENT CREATES IMPASSE. / No Compulsory Eviction.
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -189,20 +243,49 @@ testimony given later: tag its facts "retrospective (year)".
   - Kung Sheung Daily News and other Chinese papers of 18-20 Jan 1948 on the visit of the Po On magistrate (the repo already holds Kung Sheung of 10 and 16 Jan 1948).
 ### gap-street-address-search-11: [Trial reports: the murder of Or Kam-shing in an opium divan in Lung Chun Road, 27 February 1958], China Mail 1958-05-28, 1958-05-30, 1958-06-18, 1958-06-23
 
-- **Creator:** China Mail
-- **Date:** 1958-05-28/1958-06-23
-- **Kind:** press
-- **Class:** primary (Court reports in a daily paper of the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19580530
-- **Other links:** https://archive.org/details/NPCM19580528, https://archive.org/details/NPCM19580618, https://archive.org/details/NPCM19580623
-- **Proof that it exists:** NPCM19580530, page index 9: "Keeper by Tam Shui, master of oan oplum = divan situated at'an address In Lung Chun Road." ... "His daily wages was $4, accused added." NPCM19580618: "unemployed, of Lung Chun Road, first | floar, Walled City, Kowloon, 'appeared before Mr A. L. Leathlean"
-- **What it gives (finder's note, not checked):** An opium divan on Lung Chun Road in 1958, kept by Tam Shui, with a paid keeper ($4 a day) and bunks; a man was killed in a bunk there on 27 Feb 1958. A co-accused, Leung Cho, 20, lived on the first floor of a house on Lung Chun Road, Walled City.
-- **Notes:** Opened: NPCM19580530 and NPCM19580618 (in-item search). NPCM19580528 and NPCM19580623 are full-text search hits only: 'the divan, as he lay in a bunk at an address in Lung Chun Road, near Kowloon City'. Name spellings are OCR: 'Or Kameshing', 'laung Cho'.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong): 'Alleged Murder In Opium Den', Wednesday 28 May 1958, leaf n9 (NPCM19580528); 'Man Allegedly Murdered In Opium Den Was Called "The Tiger Of Kowloon City"', Friday 30 May 1958, p. 10, leaf n9 (NPCM19580530); 'Actor On Charge', Wednesday 18 June 1958, leaf n9 (NPCM19580618); 'Opium Den Door Keeper Before Full Court', Monday 23 June 1958, leaf n9 (NPCM19580623). Internet Archive, https://archive.org/details/NPCM19580530 and the other three item ids
+- **Class:** primary (Court reports of the days of the trial and the appeal (1958). They belong in primary-sources/.)
+- **Date of the record:** 1958-05-28/1958-06-23
+- **Files:**
+  - `gap-street-address-search-11-n9-6fc052e3.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 28 May 1958, with 'Alleged Murder In Opium Den' (JPEG, 3647 x 4598 px); https://archive.org/download/NPCM19580528/page/n9.jpg; 3041171 bytes; SHA-256 `5f49b581bf1278e670179caa6dc8a8673e90e2a3ffb6df4931629e3afc42b3f0`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580528)
+  - `gap-street-address-search-11-n9-82d346d9.jpg` (in `local/`, not in git): Page 10 image (leaf n9) of the China Mail, 30 May 1958, with 'The Tiger Of Kowloon City' (JPEG, 3654 x 4589 px); https://archive.org/download/NPCM19580530/page/n9.jpg; 2801331 bytes; SHA-256 `d61bd727fc98937a0942ab299622d9a4c7fb993043c76631b733969dd3fd20b0`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580530)
+  - `gap-street-address-search-11-n9-b3fec4f2.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 18 June 1958, with 'Actor On Charge' (JPEG, 3656 x 4587 px); https://archive.org/download/NPCM19580618/page/n9.jpg; 3026539 bytes; SHA-256 `dbe152faea6c01455b7a691e99f9a1022bd9285505c667945710f18c99eb51df`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580618)
+  - `gap-street-address-search-11-n9-62e07877.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 23 June 1958, with the appeal report (JPEG, 3662 x 4579 px); https://archive.org/download/NPCM19580623/page/n9.jpg; 3257666 bytes; SHA-256 `59cedc894a420196a637aed9eca7d486fa3deac03d3fd136ff798070bdd00408`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580623)
+  - `gap-street-address-search-11-NPCM19580530-ada54344.pdf` (in `local/`, not in git): China Mail, 30 May 1958, whole issue (page-image PDF); https://archive.org/download/NPCM19580530/NPCM19580530.pdf; 2953448 bytes; SHA-256 `849314022a023dd449e0d0821f87859acc90fa2641d82c8092451ed761baf702`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580530)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19580528, leaf n9, left columns | Chan Hing, 40, the watchman of an opium divan, was tried for the murder of a regular customer, Or Kam-shing. The Crown said he killed him in a bunk at an address in Lung Chun Road (龍津道; characters from the repo's docs, not from this report), near Kowloon City. | "murdered the deceased, Or Kam-shing, a frequent visitor to the divan, as he lay in a bunk at an address in Lung Chun Road" |
+| NPCM19580528, leaf n9, left columns | Two sanitary coolies found the body, with over 60 wounds on the head, face and arms, outside a public lavatory in Sai Tau village (西頭村; characters from the repo's docs, not from this report) on the morning of 27 February 1958. | "was found lying outside a public lavatory in Sai Tau village by two sanitary coolies" |
+| NPCM19580528, leaf n9, left columns | The Crown said that the man was killed in the divan and then dragged to the side of the latrine. | "the man was killed in an opium divan in Lung Chun Road and then dragged to the side of the latrine" |
+| NPCM19580528, leaf n9, left columns | The master of the divan employed the accused as watchman. A second employee, Lo Chak, attended to the needs of the customers. The 28 May report spells the master 'Tang Shui'; the 30 May report spells him 'Tam Shui'. | "The master of the divan, Tang Shui employed the accused as watchman, and another employee, Lo Chak attended to the needs of the customers." |
+| NPCM19580528, leaf n9, left columns | Lo Chak started work at the divan at about 11 p.m. on 26 February. | "On the night of February 26, about 11 p.m. Lo Chak started work at the divan." |
+| NPCM19580528, leaf n9, left columns | INFERRED: At about midnight the dead man arrived, gave an order to Lo and went to a lower bunk, as he usually did. The divan thus had upper and lower bunks (a reading of 'lower bunk'). | "About midnight the deceased arrived, gave an order to Lo and went to a lower bunk in the divan, which was his normal practice." |
+| NPCM19580528, leaf n9, left columns | The accused finished work at about midnight and lay down on a bunk in the divan himself. A number of other customers were there. | "There were a number of other customers present at that time." |
+| NPCM19580528, leaf n9, left columns | At about 4.30 a.m. the accused left his bunk and went to the verandah for about half an hour. He then went into the rear part of the premises and came back with a hammer wrapped in cloth. | "he saw accused leave his bunk and go to the verandah where he remained for about half an hour." |
+| NPCM19580528, leaf n9, left columns | Two men shared one bunk: Chow Yu shared the bunk of the dead man, under a blanket, and jumped up when the alarm was raised. | "a man, Chow Yu, who was sharing the same bunk with the deceased jumped up and pushed aside his blanket." |
+| NPCM19580528, leaf n9, left columns | After the attack all the customers left. Lo saw the accused roll the body in a mat taken from a bunk, tie it with a rope and drag it out of the room. | "saw accused roll up deceased in a mat taken from a bunk and then tied him up with a rope." |
+| NPCM19580528, leaf n9, left columns | About ten minutes later the accused came back and cleaned the bunk 'to clear away bloodstains'. | "proceeded to clean up the bunk on which deceased was lying "to clear away bloodstains."" |
+| NPCM19580528, leaf n9, left columns | The police arrested the accused at his home, an unnumbered hut. They later found a hammer in the divan. | "Accused was later arrested at his home in an unnumbered hut." |
+| NPCM19580528, leaf n9, left columns | The forensic pathologist found 27 wounds on the scalp, 21 on the face and 12 on the upper arms. | "no less than 27 wounds on the scalp, 21 on the face and 12 on the upper arms." |
+| NPCM19580528, leaf n9, left columns | The trial was before Mr Justice A. D. Scholes and a jury of four men and three women. Crown Counsel D. N. E. Rea and D. G. Willis prosecuted; Terence Shurlock, instructed by Lau, Chan and Ko, defended. | "The trial is before the Puisne Judge, Mr Justice A.D. Scholes and a Jury of four men and three women." |
+| NPCM19580530, p. 10 (leaf n9), centre columns | Chan Hing told the court that the dead man was a money-lender known as 'The Tiger of Kowloon City', and that everyone was afraid of him. | "the dead man was a money-lender and was known as "The Tiger of Kowloon City"." |
+| NPCM19580530, p. 10 (leaf n9), centre columns | Chan Hing came to Hong Kong from Kwangtung Province about 20 years before (about 1938). He was married with two sons, and had worked as a coolie or a hawker. | "he came to Hongkong from Kwangtung Province about 20 years ago. He said he was married and had two sons." |
+| NPCM19580530, p. 10 (leaf n9), centre columns | From the year before last (about 1956) Chan Hing was door keeper of the opium divan of Tam Shui in Lung Chun Road, for a wage of $4 a day. | "a door keeper by Tam Shui, master of an opium divan situated at an address in Lung Chun Road. His daily wages was $4" |
+| NPCM19580530, p. 10 (leaf n9), centre columns | The dead man slept in the divan all day and went out at night to lend money at a high rate of interest. | "Deceased slept there all day long, accused continued, and he (deceased) was out at night to make money by lending it" |
+| NPCM19580530, p. 10 (leaf n9), centre columns | In February 1958 Chan Hing borrowed $30 from the dead man at 30 cents a dollar a day, and came to owe him $200. | "The rate, accused continued, was 30c a dollar a day." |
+| NPCM19580530, p. 10 (leaf n9), centre columns | Chan Hing said the dead man claimed to be the informer of a chief detective, Lai Man-yiu, and was a member of the Yee On Triad Society. He had beaten four people in the divan, Chan included. | "a member of an unlawful Triad society, and also a member of the Yee On Triad Society." |
+| NPCM19580530, p. 10 (leaf n9), centre columns | INFERRED: Chan Hing said he was an opium addict who used opium, opium dross and heroin pills. He said he smoked $2 of opium at midnight and $2 of opium dross at 2-3 a.m. (the amounts are from the OCR). | "he was an opium addict, and he consumed opium, opium dross, and heroine pills." |
+| NPCM19580618, leaf n9, left column | Leung Cho, 20, with no job, lived on the first floor of a house in Lung Chun Road, Walled City, in June 1958. He and an actor, Leung Shu-fan, 30, of 68 Ta Ku Ling Road, first floor, were charged with demanding money with menaces and simple theft. | "Leung Cho, 20, unemployed, of Lung Chun Road, first floor, Walled City, Kowloon" |
+| NPCM19580618, leaf n9, left column | INFERRED: They were alleged to have demanded $40 from Cheng Yin-fong at 3 King's Road, ground floor, on the Monday before (16 June 1958, a date from the context). They were remanded for three days (from the OCR). | "both defendants demanded $40 from Cheng Yin-fong with menaces and with intent to steal last Monday" |
+| NPCM19580623, leaf n9, upper left | Chan Hing was found guilty of the murder and sentenced to death. On 23 June 1958 he appealed to the Full Court (Acting Chief Justice T. J. Gould and Mr Justice C. W. Reece). | "found guilty of the murder of Or Kam-shing, a customer of the divan and sentenced to death appealed against his conviction" |
+| NPCM19580623, leaf n9, upper left | The Crown case at the trial: he killed Or in a bunk in the divan in Lung Chun Road, Kowloon City, early on 27 February, with over 60 hammer wounds. | "he murdered Or as he lay in a bunk in the divan in Lung Chun Road, Kowloon City, in the early hours of February 27" |
+| NPCM19580623, leaf n9, upper left | The defence on appeal was intoxication: Chan had taken opium before the killing and his mind was confused. | "Chan had consumed a quantity of opium before the alleged murder and as a result his mind became confused" |
+
+- **Leads:**
+  - The verdict of the trial of Chan Hing (end of May or early June 1958) and the Full Court decision on his appeal (after 23 June 1958): China Mail reports, not held.
+  - The end of the menaces case of Leung Shu-fan and Leung Cho: a China Mail court report after 18 June 1958, not held.
 ### press-archives-12: HONGKONG CONTROLS WALLED CITY.
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -337,51 +420,93 @@ testimony given later: tag its facts "retrospective (year)".
 | leaf n6, news notes | A London colonial journal reported in April 1950 that a fire had destroyed the walled city of Kowloon and made 8,000 squatters homeless for the second time. | "A fire has destroyed the walled city of Kowloon, rendering 8,000 squatters homeless for a second time." |
 ### gap-street-address-search-10: [Court report: "The woman, Wong Ping, 35 and unemployed, living in the cockloft of 52 Lung Chun Road, Kowloon Walled City, was remanded"], China Mail 1958-09-05
 
-- **Creator:** China Mail
-- **Date:** 1958-09-05
-- **Kind:** press
-- **Class:** primary (A court report in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19580905
-- **Other links:** https://archive.org/stream/NPCM19580905/NPCM19580905_djvu.txt
-- **Proof that it exists:** In-item OCR search, page index 9: "The Woman, Wong Ping, 35 and unomployod, living in tho cockloft' of 52 Lung Chun Road, Kowloon Walled"
-- **What it gives (finder's note, not checked):** A woman of 35 who lived in the cockloft of 52 Lung Chun Road in 1958: an address with its level (cockloft).
-- **Notes:** The charge is not in the matched lines. The GRS catalogue has no file at 52 Lung Chun Road (it lists 72-110 and others).
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Woman Charged With Theft Of Expensive Watch', Friday 5 September 1958, leaf n9, Internet Archive item NPCM19580905, https://archive.org/details/NPCM19580905
+- **Class:** primary (A court report of the day it was made (1958). It belongs in primary-sources/.)
+- **Date of the record:** 1958-09-05
+- **Files:**
+  - `gap-street-address-search-10-n9-e24618e1.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 5 Sep 1958, with the report (JPEG, 3666 x 4575 px); https://archive.org/download/NPCM19580905/page/n9.jpg; 2733090 bytes; SHA-256 `46a9b51b9feaeabc9e836d5aa0c3fce89b9d2a12c240c644415a67f7a9fdeddf`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580905)
+  - `gap-street-address-search-10-NPCM19580905-e18701b0.pdf` (in `local/`, not in git): China Mail, 5 Sep 1958, whole issue (page-image PDF); https://archive.org/download/NPCM19580905/NPCM19580905.pdf; 2882329 bytes; SHA-256 `51332fa3938de314786c9c62d5a9ec362157e5d3af1312339af9a1032dc437ad`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19580905)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19580905, leaf n9, centre-right column | Wong Ping, a woman of 35 with no job, lived in the cockloft of 52 Lung Chun Road (龍津道; characters from the repo's docs, not from this report), Kowloon Walled City, in September 1958. | "The woman, Wong Ping, 35 and unemployed, living in the cockloft of 52 Lung Chun Road, Kowloon Walled City" |
+| NPCM19580905, leaf n9, centre-right column | She was charged with the theft of a watch worth $585 from a big store in the city (Victoria). | "A woman was charged today with stealing a watch valued at $585 from a big city store." |
+| NPCM19580905, leaf n9, centre-right column | INFERRED: The watch was a Rolex, and the store was Lane, Crawford's Limited. The theft was alleged on the Wednesday before the report (3 September 1958, a date from the context). | "She was alleged to have stolen a Rolex watch from Lane, Crawford's Limited last Wednesday." |
+| NPCM19580905, leaf n9, centre-right column | She appeared before Mr Hin-shing Lo at Central Magistracy on 5 September 1958. He remanded her in police custody until 2 October, with the option of $500 bail. | "was remanded in police custody until October 2. She was also given the option of a $500 bail." |
+| NPCM19580905, leaf n9, centre-right column | INFERRED: Detective Sub-Inspector Tam Chung-shing had the case. Her lawyer was Mr Lawrence Loong, instructed by Mr Alfred Y. Hon of Messrs Hon and Company (the firm name is read from poor OCR, 'Hori'). | "Detective Sub-Inspector Tam Chung-shing is in charge of the case." |
+
+- **Leads:**
+  - The end of the case of Wong Ping (theft of a Rolex watch from Lane, Crawford's): a China Mail court report on or after 2 October 1958, not held.
 ### gap-street-address-search-16: [Court report: "About 2.30 pm, on December 10, he welt [went] to 24 Lo Yan Street, to explain something to Wud"], China Mail 1959-04-24
 
-- **Creator:** China Mail
-- **Date:** 1959-04-24
-- **Kind:** press
-- **Class:** primary (A court report in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19590424
-- **Proof that it exists:** In-item OCR search, page index 9: "About 2.30 pm, on December 10, he welt to 24 Lo Yan Street, to explain something to Wud,"
-- **What it gives (finder's note, not checked):** A house at 24 Lo Yan Street (老人街) that was the scene of an incident on 10 December 1958.
-- **Notes:** The charge and names are not clear in the OCR line ('Wud'). Read the page for the full case.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Man On Stabbing Charge: Friend Refused To Lend Him Money, Court Is Told', Friday 24 April 1959, p. 10 (leaf n9), Internet Archive item NPCM19590424, https://archive.org/details/NPCM19590424
+- **Class:** primary (A court report of the day (1959). It belongs in primary-sources/.)
+- **Date of the record:** 1959-04-24
+- **Files:**
+  - `gap-street-address-search-16-n9-30d45028.jpg` (in `local/`, not in git): Page 10 image (leaf n9) of the China Mail, 24 Apr 1959, with the stabbing report and the aircraft-hazards notice (JPEG, 3664 x 4576 px); https://archive.org/download/NPCM19590424/page/n9.jpg; 2913720 bytes; SHA-256 `9ad80d7811e04478f8cf533c3a11eddbd1223a11ee4d0d71702822b17e3cd81e`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19590424)
+  - `gap-street-address-search-16-NPCM19590424-4a6462f2.pdf` (in `local/`, not in git): China Mail, 24 Apr 1959, whole issue (page-image PDF); https://archive.org/download/NPCM19590424/NPCM19590424.pdf; 2735083 bytes; SHA-256 `a5d170de2e743642383debf0ace51ca8f8d8c23d41ec64d7ff20f76c37e21cd5`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19590424)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19590424, p. 10 (leaf n9), upper left | Hui Muk-kwan, 31, with no job, was tried at the Criminal Sessions for wounding his friend Tsui Hak-leung with intent. The stabbing took place outside No. 24 Lo Yan Street (老人街; characters from the repo's docs, not from this report), Kowloon City, on 10 December 1958. | "The alleged offence took place outside No. 24 Lo Yan Street, Kowloon City, on December 10 last year." |
+| NPCM19590424, p. 10 (leaf n9), upper left | INFERRED: At about 2.30 p.m. on 10 December, Tsui went to 24 Lo Yan Street to explain something to Hui. In the house he saw Hui on an upper bunk. So the house had bunks in tiers (my reading of 'upper bunk'). | "As he entered the house, he saw Hui on an upper bunk." |
+| NPCM19590424, p. 10 (leaf n9), upper left | Hui jumped from the bunk, abused him, and pushed him out of the house, across the street and against a wall. | "He pushed me out of the house, across the street and against a wall." |
+| NPCM19590424, p. 10 (leaf n9), upper left | Two other people tried to separate them, but Hui warned them that he would beat them up too. | "There were two other persons at the scene. They tried to separate him and the accused" |
+| NPCM19590424, p. 10 (leaf n9), upper left | Hui pulled a knife from the back of his trousers and stabbed Tsui in the chest, the face, the right hand and the forearm. Tsui ran, was chased, and collapsed. | "Tsui was stabbed in the chest, the face, the right hand and forearm." |
+| NPCM19590424, p. 10 (leaf n9), upper left | Tsui woke in Kowloon Hospital and was kept there for three or four days. | "When I regained consciousness I was at Kowloon Hospital. I was detained for treatment for three or four days." |
+| NPCM19590424, p. 10 (leaf n9), upper left | The quarrel was about money: Hui had asked Tsui for a loan the night before, and Tsui refused. Tsui then heard that Hui was sending someone to beat him up. | "He had refused Hui the loan. Subsequently he heard that Hui was sending someone to beat him up." |
+| NPCM19590424, p. 10 (leaf n9), upper left | The two men had first met about three years before (about 1955). The judge was Mr Justice C. W. Reece; Crown Counsel Simon Li prosecuted. | "he had met the accused the first time about three years before the incident." |
+| NPCM19590424, p. 10 (leaf n9), centre column | INFERRED: In April 1959 the Director of Civil Aviation sent notices to owners of buildings in Kowloon City near the airport, to remove aerials, poles and other things above the set height. The streets named are around the Walled City, not in it (my reading from the street names; the report does not say). | "requesting certain landlords and owners of properties situated in Kowloon City near the airport to remove height obstructions." |
+| NPCM19590424, p. 10 (leaf n9), centre column | The streets were Junction Road, Hau Wong Road, Fuk Lo Tsun Road, Grampian Road, Nga Tsin Wai Road, Nam Kok Road, South Wall Road, Lion Rock Road, Prince Edward Road and Carpenter Road, near the approach of the new runway. | "The premises concerned are situated in Junction Road, Hau Wong Road, Fuk Lo Tsun Road, Grampian Road" |
+
+- **Leads:**
+  - The verdict in the trial of Hui Muk-kwan (Criminal Sessions, April 1959): a China Mail report, not held.
+  - The notices of the Director of Civil Aviation under the Hongkong Airport (Control of Obstructions) Ordinance, April 1959, for buildings in Kowloon City: not held.
 ### gap-street-address-search-17: [Trial reports: the murder of Sin Kwai, keeper of a heroin divan at 9 Lo Yan Street, ground floor, on 24 July 1959], China Mail 1959-07-31, 1959-12-04, 1959-12-07, 1959-12-08, 1959-12-09, 1959-12-16, 1960-01-25
 
-- **Creator:** China Mail
-- **Date:** 1959-07-31/1960-01-25
-- **Kind:** press
-- **Class:** primary (Court reports in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19590731
-- **Other links:** https://archive.org/details/NPCM19591204, https://archive.org/details/NPCM19591207, https://archive.org/details/NPCM19591208, https://archive.org/details/NPCM19591209, https://archive.org/details/NPCM19591216, https://archive.org/details/NPCM19600125
-- **Proof that it exists:** NPCM19590731, page index 9: "leged that on July 24, at No. 9 Lo Yan Street, ground floor, Kowloon City, they to- gether murdered Sin Kwal,"
-- **What it gives (finder's note, not checked):** A heroin divan on the ground floor of 9 Lo Yan Street (老人街) in 1959, its manager killed on 24 July 1959; the trial (Dec 1959) and the sentence (Jan 1960). NPCM19591209 also names a house at No. 4 Lo Yan Street.
-- **Notes:** Same case as the first-round items NPCM19591203 and NPCM19600210 (press-archives.json, repo-audit.json): these are the other days of the trial, not held. Opened: NPCM19590731 and NPCM19591209; the others are full-text search hits. Compare GRS HKRS1255-3-62: 'G/F, 9, Lo Yan ST. (World Electrical Works) 世界電業', 1989-1991: the same ground floor 30 years later, if the number did not change.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong): 'Three Remanded On Charge Of Murder', Friday 31 July 1959, leaf n9 (NPCM19590731); 'Constable Ordered Out Of Court In Murder Trial', Friday 4 December 1959, front page, leaf n0 (NPCM19591204); 'Walled City Stabbing: Former Heroin Divan Foki Describes Scene', Monday 7 December 1959, leaf n9 (NPCM19591207); 'Walled City ...: Foki Identified Man At Parade', Tuesday 8 December 1959, leaf n9 (NPCM19591208); 'Witness Refused To Continue Evidence But Changed Mind', Wednesday 9 December 1959, leaf n9 (NPCM19591209); 'Walled City Trial ... Verdict', Wednesday 16 December 1959, leaf n9 (NPCM19591216); 'Barrister ...: Reprimanded by judges in appeal case', Monday 25 January 1960, leaf n9 (NPCM19600125). Internet Archive, https://archive.org/details/NPCM19590731 and the other item ids
+- **Class:** primary (Court reports of the days of the trial and the appeal (1959-1960). They belong in primary-sources/.)
+- **Date of the record:** 1959-07-31/1960-01-25
+- **Files:**
+  - `gap-street-address-search-17-n9-6ff456e8.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 31 Jul 1959, with 'Three Remanded On Charge Of Murder' (JPEG, 3654 x 4589 px); https://archive.org/download/NPCM19590731/page/n9.jpg; 2946914 bytes; SHA-256 `8cf3141f5dd62d1414d1724405761ddb9bd6e4996fd479b7e0a45be7758035f0`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19590731)
+  - `gap-street-address-search-17-n0-345a7aca.jpg` (in `local/`, not in git): Front-page image (leaf n0) of the China Mail, 4 Dec 1959, with 'Constable Ordered Out Of Court' (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19591204/page/n0.jpg; 3162208 bytes; SHA-256 `fab43c91a6205579e82bb05426ed96f3bab9eb37f7ac3671ad33f376f177d41d`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19591204)
+  - `gap-street-address-search-17-n9-78d14259.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 7 Dec 1959, with the evidence of the foki Tse Hung (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19591207/page/n9.jpg; 3079970 bytes; SHA-256 `d5b409dba1cf256d8fe1bfacf43e2cb98d0a416092d11a3ca0c1e2786db32b68`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19591207)
+  - `gap-street-address-search-17-n9-3fea7c9b.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 8 Dec 1959, with 'Foki Identified Man At Parade' (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19591208/page/n9.jpg; 3257487 bytes; SHA-256 `953160738fd19701361da028a4656a43dbde3a3a7027ca2297f223d0d82bd763`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19591208)
+  - `gap-street-address-search-17-n9-28dd47ee.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 9 Dec 1959, with the evidence of Lau Ping-kuen (No. 4 Lo Yan Street) (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19591209/page/n9.jpg; 2870451 bytes; SHA-256 `b9dbddb7d16489a34c2b799207f38316a0df779d5c7423584dbee17aee70048f`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19591209)
+  - `gap-street-address-search-17-n9-f74e042f.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 16 Dec 1959, with the summing-up (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19591216/page/n9.jpg; 3064115 bytes; SHA-256 `d4b9ec753b3d35a08c7d87910bdb4224b313be3303c3a45fcf325325022a96fb`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19591216)
+  - `gap-street-address-search-17-n9-614c9938.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 25 Jan 1960, with the appeal report (JPEG, 3698 x 4534 px); https://archive.org/download/NPCM19600125/page/n9.jpg; 3027089 bytes; SHA-256 `dcd4ad19d2ccdf3994bc44c381e706bd05d16e53d8e44bbb174960854a68902a`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19600125)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19590731, leaf n9, centre | On 31 July 1959 three men were remanded for seven days at Kowloon Magistracy, charged with the murder of Sin Kwai at No. 9 Lo Yan Street (老人街; characters from the repo's docs, not from this report), ground floor, Kowloon City, on 24 July. | "It is alleged that on July 24, at No. 9 Lo Yan Street, ground floor, Kowloon City, they together murdered Sin Kwai" |
+| NPCM19590731, leaf n9, centre | The three were Lo Kan, 40, of no fixed abode; Sze-To Hin-chiu, 29, with no job, of 48 Chik Kiang Street, ground floor; and Wong Hon, with no job, of no fixed abode. | "Lo Kan, 40, of no fixed abode, Sze-To Hin-chiu, 29, unemployed, of 48 Chik Kiang Street, ground floor" |
+| NPCM19591204, front page (leaf n0), right | A witness, Chang Ming, said he was asleep in Lo Yan Street on the morning of 24 July, and the sound of coins falling woke him. | "said he had been asleep in Lo Yan Street on the morning in question." |
+| NPCM19591204, front page (leaf n0), right | Chang went to the ground floor of No. 9. He did not go inside, but saw three men whom he thought were playing about. | "He went to the ground floor of No 9, and although he did not go inside, he saw three men" |
+| NPCM19591204, front page (leaf n0), right | INFERRED: Chang said the two men he picked at the identification parades had been thin from heavy smoking, but later grew fat. He had grown fat too, since he stopped smoking (the last part from the OCR). | "the two men he identified had been thin because they had been smoking heavily, but they had afterwards grown fat." |
+| NPCM19591204, front page (leaf n0), right | Mr Justice A. D. Scholes sent a police constable out of court because he mumbled behind the witness. | "Mr Justice A. D. Scholes ordered the removal of a police constable from Court" |
+| NPCM19591207, leaf n9, left | Tse Hung, a former foki (shop hand) of the heroin divan, was by December 1959 a builder living in To Kwa Wan. | "The foki, Tse Hung, who is now a builder living in To-kwawan," |
+| NPCM19591207, leaf n9, left | Early on 24 July a shout of 'Don't move' woke Tse in the divan. He slipped out into the street, but found no one outside the house. | "He then slipped out of the divan into the street but found no one outside the house." |
+| NPCM19591207, leaf n9, left | Looking back in, Tse saw Lo Kan stab the keeper as he backed towards the inner wall. The third accused stood six feet behind with a knife; the second accused was emptying the drawers at the counter. | "The keeper was retreating towards the inner wall and Lo Kan (the first accused) stabbed him in the chest," Tse said. |
+| NPCM19591207, leaf n9, left | Lo Kan then shouted 'Let's go' and the three men left. | "Later he heard Lo Kan shouting, "Let's go," and the three men left." |
+| NPCM19591208, leaf n9, upper left | INFERRED: Li Hong-yum, the foki of a heroin divan in the Walled City, heard a cry of 'Wah' and went next door to No. 9 Lo Yan Street. So his divan was next to No. 9 (my reading of 'next door'). | "as a result of the shout, he went next door to No. 9 Lo Yan Street, where he saw four or five people standing outside." |
+| NPCM19591208, leaf n9, upper left | Li looked into the room of No. 9 and saw a man bleeding at the shoulder, pushed against the wall by a man of about 30. Another man with a knife stood outside; at a shout of 'run' both ran off up the street. | "saw a man, bleeding at the shoulder, being pushed against the wall by another man" |
+| NPCM19591208, leaf n9, upper left | The 8 December report gives the ages and work of the accused: Lo Kan, 40, foki; Szeto Hin-chui, 29, no job; Wong Hon, 34, no job. | "Lo Kan, 40, foki, Szeto Hin-chui, 29, unemployed, and Wong Hon, 34, unemployed." |
+| NPCM19591209, leaf n9, right | A witness then in prison, Lau Ping-kuen, at first refused to testify. He said he had six more months to serve and could be beaten to death by other prisoners. | "I still have six more months in the prison . . . I might be beaten to death." |
+| NPCM19591209, leaf n9, right | Lau lived at No. 4 Lo Yan Street, Kowloon Walled City. Early on 24 July voices woke him, and he saw Lo Kan and two others come into his house. | "what had allegedly happened in his house in No. 4 Lo Yan Street, Kowloon Walled City, early on the morning of July 24." |
+| NPCM19591209, leaf n9, right | In Lau's house Lo washed away some blood, the two others counted coins, and then they handled some heroin powder. | "Lo was washing away some blood. The other two were counting coins. They then handled some heroin powder" |
+| NPCM19591216, leaf n9, centre | The jury of seven retired at 11.40 a.m. on 16 December 1959, after a summing-up of 100 minutes. The report places the divan at 9 Lo Yan Street, Kowloon Walled City. | "jointly accused of the murder of Sin Kwai, a heroin divan keeper, at 9 Lo Yan Street, Kowloon Walled City on July 24." |
+| NPCM19591216, leaf n9, centre | The judge told the jury that if the killing happened during a robbery by the three, all three were guilty of murder, even if only one stabbed the keeper. | "all three were liable to be found guilty as charged, even though only one of them may have stabbed the deceased." |
+| NPCM19600125, leaf n9, upper left | The three were convicted on 17 December 1959 and sentenced to death by Mr Justice A. D. Scholes. | "The three men were convicted on December 17, of having entered a heroin divan at 9 Lo Yan Street" |
+| NPCM19600125, leaf n9, upper left | On appeal the barrister of Wong Hon, A. H. Suffiad, said the Hong Kong court had no jurisdiction over the Walled City, and that the Full Court ruling of 30 November 1959 was bad in law. | "Mr Suffiad said that the Court has no jurisdiction over the Walled City" |
+| NPCM19600125, leaf n9, upper left | Suffiad had applied for habeas corpus for Wong Hon: as a Chinese national, he questioned the Order-in-Council that gave the court jurisdiction over the Walled City. Two judges reprimanded him for his remarks against the Crown. | "he was able to question the validity of an Order-in-Council giving the Court's jurisdiction over the Kowloon Walled City" |
+| NPCM19600125, leaf n9, upper left | For the second appellant, Szeto Hin-chiu, Patrick Yu said Szeto was not inside the divan: his job was to stand at the entrance and pick up the coins. | "His job was to stand at the entrance and pick up the coins." |
+
+- **Leads:**
+  - The report of the verdict of 17 December 1959 (China Mail, 17 or 18 December 1959): not held.
+  - The Order-in-Council that gave the Hong Kong courts jurisdiction over the Walled City, which the appeal of 25 January 1960 questions: not held in this folder.
 ### press-archives-14: Walled City heroin den killing sequel.
 
 - **Status:** Read on 2026-11-20; a checker checked a sample of the facts on 2026-11-20.
@@ -404,61 +529,79 @@ testimony given later: tag its facts "retrospective (year)".
   - The Full Court judgment on the appeals of Lo Kan, Szeto Hin-chun and Wong Hon, 10 Feb 1960 (Hong Kong Law Reports).
 ### gap-street-address-search-12: [Court report naming "Ng Fuk-on, 41, of 35 Lung Chun-road, ground floor"], China Mail 1960-09-16
 
-- **Creator:** China Mail
-- **Date:** 1960-09-16
-- **Kind:** press
-- **Class:** primary (A court report in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19600916
-- **Proof that it exists:** In-item OCR search, page index 9: "Ng-'Fuk-on 41 of 35 Lung Chun-road, ground. floor,"
-- **What it gives (finder's note, not checked):** A man of 41 who lived on the ground floor of 35 Lung Chun Road in 1960.
-- **Notes:** The charge is not in the OCR line. Compare GRS HKRS1255-3-366: 'G/F & M/F, 35 Lung Chun Road. Sang Kee Restaurant (生記飯店)', 1991-1992. The house numbers can have changed between 1960 and 1991.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Joined Triad When He Was A Nationalist Soldier', Friday 16 September 1960, p. 10 (leaf n9), Internet Archive item NPCM19600916, https://archive.org/details/NPCM19600916
+- **Class:** primary (A court report of the day (1960). It belongs in primary-sources/.)
+- **Date of the record:** 1960-09-16
+- **Files:**
+  - `gap-street-address-search-12-n9-5d34c4be.jpg` (in `local/`, not in git): Page 10 image (leaf n9) of the China Mail, 16 Sep 1960, with the report (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19600916/page/n9.jpg; 3892650 bytes; SHA-256 `1b84f7e2cb8b0f0924464936ba5929a80b16871dd996bbb74a075b491dcc6147`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19600916)
+  - `gap-street-address-search-12-NPCM19600916-42826be2.pdf` (in `local/`, not in git): China Mail, 16 Sep 1960, whole issue (page-image PDF); https://archive.org/download/NPCM19600916/NPCM19600916.pdf; 3397594 bytes; SHA-256 `a85d7e3e6b34d30dc05ee19588229aec26fee75d6babe77dd97f6a0fdc2fd25a`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19600916)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19600916, p. 10 (leaf n9), centre | Ng Fuk-on, 41, lived on the ground floor of 35 Lung Chun Road (龍津道; characters from the repo's docs, not from this report) in September 1960. | "Ng Fuk-on 41 of 35 Lung Chun-road, ground floor," |
+| NPCM19600916, p. 10 (leaf n9), centre | He was charged with being a member of a triad society, before Mr E. S. Haydon at Kowloon Court on 16 September 1960. | "charged with being a member of a triad society, appeared before Mr E. S. Haydon at Kowloon Court this morning." |
+| NPCM19600916, p. 10 (leaf n9), centre | Police said he joined the 14K triad society in 1949, with 100 other soldiers, while he served in the Nationalist Army in Canton. He said his superior officer told him to do so. | "joined the 14K triad society in 1949 with 100 other soldiers when he was serving in the Nationalist Army in Canton." |
+| NPCM19600916, p. 10 (leaf n9), centre | He came to Hong Kong in 1951, and police did not know him as an active member. | "Ng came to Hongkong in 1951 and was not known to be an active member." |
+| NPCM19600916, p. 10 (leaf n9), centre | The magistrate did not send him to prison, because he believed Ng joined without choice. He bound him over in $500 for three years. | "Mr Haydon bound him over in $500 for three years." |
 ### gap-street-address-search-15: [Court report: "Cheng Hing (50) of 20 Chung Lok-street, and Cheung Chung (51) of 43 Lung Shing-road, both unemployed, were charged ... with possession of dangerous" drugs], China Mail 1960-10-06
 
-- **Creator:** China Mail
-- **Date:** 1960-10-06
-- **Kind:** press
-- **Class:** primary (A court report in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19601006
-- **Proof that it exists:** In-item OCR search, page index 9: "Cheng .Hing (50) of 20, Chung Lok-street, and Cheung Chung (51) of 43, Lung Shing-road, both unemployed,"
-- **What it gives (finder's note, not checked):** An unemployed man of 51 at 43 Lung Shing Road (龍城路) charged with possession of dangerous drugs in 1960.
-- **Notes:** No floor given. Lung Shing Road was the eastern street of the City (Leeming, Street studies, 1977).
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Dangerous drugs allegation', Thursday 6 October 1960, leaf n9, Internet Archive item NPCM19601006, https://archive.org/details/NPCM19601006
+- **Class:** primary (A court report of the day (1960). It belongs in primary-sources/.)
+- **Date of the record:** 1960-10-06
+- **Files:**
+  - `gap-street-address-search-15-n9-a93d3d1b.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 6 Oct 1960, with the report (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19601006/page/n9.jpg; 3608410 bytes; SHA-256 `21da4117406cc04efe0c5c350cce957113c97352678d6775d7dd5fd1e8da4bd5`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19601006)
+  - `gap-street-address-search-15-NPCM19601006-76301607.pdf` (in `local/`, not in git): China Mail, 6 Oct 1960, whole issue (page-image PDF); https://archive.org/download/NPCM19601006/NPCM19601006.pdf; 3422078 bytes; SHA-256 `6ebdfd2161bf08de53eea7d82b3dc04e1d5bd9d4d0197291b3dff57f055de0f2`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19601006)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19601006, leaf n9, lower centre-left column | Cheung Chung, 51, with no job, lived at 43 Lung Shing Road (龍城路; characters from the repo's docs, not from this report) in 1960. | "Cheung Chung (51) of 43, Lung Shing-road, both unemployed," |
+| NPCM19601006, leaf n9, lower centre-left column | He and Cheng Hing, 50, of 20 Chung Lok Street, were charged at Victoria District Court with possession of dangerous drugs and dealing in them. | "were charged at Victoria District Court this morning with possession of dangerous drugs and dealing in them." |
+| NPCM19601006, leaf n9, lower centre-left column | Police raided 32 Ngan Hon Street, Hung Hom, on 10 August 1960 and found the two men there. | "a police party had raided No 32, Ngan Hon-street, Hung Hom on August 10 and found the two accused." |
+| NPCM19601006, leaf n9, lower centre-left column | Sub-Inspector Ip Chi-chiu saw the first accused (Cheng Hing) come out of a cubicle with part of a machine for making pills. He also found heroin pill-making apparatus and about 2,500 pills. | "He had also found heroin pill-making apparatus and about 2,500 pills." |
+| NPCM19601006, leaf n9, lower centre-left column | In the second cubicle, Sub-Inspector Ip found Cheung Chung with his hands covered with moistened red powder. The paper prints 'Cheung Chun' in this line. | "In the second cubicle Ip said he had found Cheung Chun, with his hands covered with moistened red powder." |
+
+- **Leads:**
+  - The verdict in the heroin-pill case of Cheng Hing and Cheung Chung (Victoria District Court, October 1960): a China Mail report, not held.
 ### gap-street-address-search-13: [Court report: "Choi Yuk of 16 Lung Chun-road, ground floor, testified that she was attacked by accused on December 3 and as a result lost $13.40 and a ring"], China Mail 1961-02-07
 
-- **Creator:** China Mail
-- **Date:** 1961-02-07
-- **Kind:** press
-- **Class:** primary (A court report in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19610207
-- **Proof that it exists:** In-item OCR search, page index 9: "Chol Yuk of 16 Lung Chun- road, groutid floor, testified that she was attacked by uccused on December 3"
-- **What it gives (finder's note, not checked):** A woman who lived on the ground floor of 16 Lung Chun Road was robbed of $13.40 and a ring on 3 December 1960.
-- **Notes:** Name is OCR ('Chol Yuk'). No GRS file at 16 Lung Chun Road.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Women allegedly stunned with brick, then robbed', Tuesday 7 February 1961, p. 10 (leaf n9), Internet Archive item NPCM19610207, https://archive.org/details/NPCM19610207
+- **Class:** primary (A court report of the day (1961). It belongs in primary-sources/.)
+- **Date of the record:** 1961-02-07
+- **Files:**
+  - `gap-street-address-search-13-n9-047bb530.jpg` (in `local/`, not in git): Page 10 image (leaf n9) of the China Mail, 7 Feb 1961, with the report (JPEG, 3748 x 4474 px); https://archive.org/download/NPCM19610207/page/n9.jpg; 3813395 bytes; SHA-256 `a62a1e07f390ddae4993c4fcbeb1bbca03dc76e1baac2fd376a570e263b2e286`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19610207)
+  - `gap-street-address-search-13-NPCM19610207-879f7498.pdf` (in `local/`, not in git): China Mail, 7 Feb 1961, whole issue (page-image PDF); https://archive.org/download/NPCM19610207/NPCM19610207.pdf; 3503068 bytes; SHA-256 `0ce968ba59e05221ec2f1cfeeac3dd70a0d140d7c5cca04a7fb5026a45fb82f2`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19610207)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19610207, p. 10 (leaf n9), left-centre column | INFERRED: Choi Yuk lived on the ground floor of 16 Lung Chun Road (龍津道; characters from the repo's docs, not from this report). She said a man attacked her on 3 December 1960 and she lost $13.40 and a ring. The paper prints 'Chol'; 'Choi' is my reading. | "Chol Yuk of 16 Lung Chun-road, ground floor, testified that she was attacked by accused on December 3" |
+| NPCM19610207, p. 10 (leaf n9), left-centre column | Three women said a man accosted them as they went into the staircase to their homes, snatched at their handbags and knocked them unconscious with a brick. | "as they entered the staircase leading to their premises, they were accosted by a man who snatched at their handbags." |
+| NPCM19610207, p. 10 (leaf n9), left-centre column | When they woke, their handbags and rings were gone. They identified the accused at an identification parade. | "When they regained consciousness they found that their handbags and their rings were gone." |
+| NPCM19610207, p. 10 (leaf n9), left-centre column | INFERRED: The accused was Tsui Kam, 29, with no job, of 5 Tin Hau Temple Street, third floor. He pleaded not guilty to three charges of robbery with aggravation, at Victoria District Court before Judge B. J. Jennings. Tin Hau Temple Street (天后廟街; characters from the repo's docs, not from this report) is a street of the City in the repo's model; the report does not say where the street is. | "Tsui Kam of 5 Tin Hau Temple-street, third floor, who pleaded not guilty to three charges of robbery with aggravation." |
+| NPCM19610207, p. 10 (leaf n9), left-centre column | The two other women were Law Ching-yip of 32 Wing Kwong Street ($117 and a ring, 15 November 1960) and Fung Lin of 2 San Lau Street ($7.30 and a ring, 30 November 1960). | "Law Ching-yip, of 32 Wing Kwong-street, testified that she lost $117 and a ring on November 15" |
+
+- **Leads:**
+  - The verdict in the trial of Tsui Kam (robbery with aggravation, Victoria District Court, February 1961): a China Mail report, not held.
 ### gap-street-address-search-14: [Court reports: "Chung Moon-yuk of 30 Lung Shing-road, 2nd floor was arrested at 3.30 pm on October 21" with dangerous drugs], China Mail 1961-10-24 and 1961-11-27
 
-- **Creator:** China Mail
-- **Date:** 1961-10-24/1961-11-27
-- **Kind:** press
-- **Class:** primary (Court reports in a daily paper of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** unknown (© China Mail, defunct; free scan on the Internet Archive)
-- **Link:** https://archive.org/details/NPCM19611024
-- **Other links:** https://archive.org/details/NPCM19611127
-- **Proof that it exists:** NPCM19611024, page index 9: "Ckung Moon-yuk of 30 Lung Shing-road, 2nd floor was arrested at 3.30 pm on October 21."
-- **What it gives (finder's note, not checked):** A woman of the second floor of 30 Lung Shing Road (龍城路) was arrested in 1961 with 14 grams of dangerous drugs and barbitone; she was convicted (1961-11-27).
-- **Notes:** The arrest was in the Kun Tong resettlement area (per the matched text), not at the address. NPCM19611127 is a full-text search hit only ('She is Chung Moon-yuk of 30 Lung Shing-road, second floor, Kowloon. She was convicted'). A second floor on Lung Shing Road in 1961 shows 3-storey houses there.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** China Mail (Hong Kong), 'Woman Aged 70 Jailed 3 Years', Tuesday 24 October 1961, leaf n9 (NPCM19611024); 'Allowed Lighter Sentence: Old woman feared she would die in prison', Monday 27 November 1961, leaf n9 (NPCM19611127). Internet Archive, https://archive.org/details/NPCM19611024
+- **Class:** primary (Court reports of the days (1961). They belong in primary-sources/.)
+- **Date of the record:** 1961-10-24/1961-11-27
+- **Files:**
+  - `gap-street-address-search-14-n9-e6128d65.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 24 Oct 1961, with 'Woman Aged 70 Jailed 3 Years' (JPEG, 3714 x 4516 px); https://archive.org/download/NPCM19611024/page/n9.jpg; 3239773 bytes; SHA-256 `13e2b38f0a7a1fe9f944c2ada3ebaaf43ec75f297f31c8965b471f85fbe8bbb2`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19611024)
+  - `gap-street-address-search-14-n9-65fc71fd.jpg` (in `local/`, not in git): Page image of leaf n9 of the China Mail, 27 Nov 1961, with the appeal report (JPEG, 3590 x 4671 px); https://archive.org/download/NPCM19611127/page/n9.jpg; 3941373 bytes; SHA-256 `dbf5bcb48a0a98c1ebd169d9b652bf1b882dd93e9c3aa3c64d8f1328da84b386`; licence: no rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); private re-upload (collection 'china-mail'), probably of HKPL scans (https://archive.org/details/NPCM19611127)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPCM19611024, leaf n9, centre-right box | Chung Moon-yuk, a woman of 70, lived on the second floor of 30 Lung Shing Road (龍城路; characters from the repo's docs, not from this report) in 1961. | "Chung Moon-yuk of 30 Lung Shing-road, 2nd floor" |
+| NPCM19611024, leaf n9, centre-right box | Police arrested her at 3.30 p.m. on 21 October 1961 in the Kun Tong resettlement area, not at her home. She carried 14 grams of dangerous drugs and 2½ ounces of barbitone. | "was arrested at 3.30 pm on October 21 in Kun Tong resettlement area." |
+| NPCM19611024, leaf n9, centre-right box | She pleaded guilty, but said she did not know what the packages held: someone asked her to carry them for a few dollars. | "she did not know what the packages contained when she was asked to carry them for a few dollars." |
+| NPCM19611024, leaf n9, centre-right box | Mr J. F. Dargan at North Kowloon Court sentenced her to three years in jail on 24 October 1961. | "A 70-year-old woman was sentenced to three years jail by Mr J. F. Dargan at North Kowloon Court" |
+| NPCM19611127, leaf n9, upper right | The drug was 14 grammes of heroin. She had three years on each of two charges, to run together. | "possession of 14 grammes of heroin and 2½ ounces of barbitone and sentenced to three years' jail on each charge" |
+| NPCM19611127, leaf n9, upper right | On appeal she said it was her first offence, that she was 70, and that someone paid her $5 to carry the drugs. | "She said she had been paid $5 by someone to carry the drugs." |
+| NPCM19611127, leaf n9, upper right | Crown Counsel M. Morley-John said drug traffickers used 'old ignorant people', and that the sentence was too heavy. | "Unscrupulous drug traffickers used "old ignorant people," and he felt the sentence on the woman was excessive." |
+| NPCM19611127, leaf n9, upper right | On 27 November 1961 Mr Justice W. A. Blair-Kerr cut the sentence to nine months from the date of conviction. | "The sentence would be reduced to nine months, to date from the time of conviction." |
+| NPCM19611127, leaf n9, upper right | INFERRED: A home on the second floor of 30 Lung Shing Road in 1961 shows a building of at least three storeys there (my reading of the address). | "She is Chung Moon-yuk of 30 Lung Shing-road, second floor, Kowloon." |
