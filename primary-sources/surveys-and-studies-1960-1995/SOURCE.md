@@ -146,3 +146,25 @@ testimony given later: tag its facts "retrospective (year)".
 - **Notes:** Tag 'retrospective (1980)'. The other articles of the issue are on policy commissions, the civil service, post-Mao reforms and representative bureaucracy. Crossref gave the author and pages.
 - **Reading of 2026-11-20:** it is not about the City. The HKU issue record needs JavaScript; I opened it in the browser and used its IIIF full-text search. 'walled' has 2 hits, both in one footnote on journal p.68 (IIIF canvas 68, image sq87hs81k), which I read as an image. The article (canvases 60-70) is about District Office work in the New Territories c.1960 (rice farming, registration, emigration); its other 'Kowloon' hits are New Kowloon and Kowloon in general. It has nothing on the City.
 
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1085: Redevelopment of Kowloon Walled City a feasibility study
+
+- **Creator:** Betty Ho Siu-fong (HKU, MSc Urban Planning workshop report)
+- **Date:** 1986-08
+- **Kind:** thesis
+- **Class:** primary (A planning study written in August 1986 from the conditions of the time (the target year); its history chapters are secondary.)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Libraries: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the lead gives the record licence 'All rights reserved')
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/rr172s11z
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/rr172s11z, https://digitalrepository.lib.hku.hk/service/api/iiif/images/ww72c723b/full/full/0/default.jpg, http://ebook.lib.hku.hk/HKG/B36228527.pdf
+- **Proof that it exists:** Catalogue title 'Redevelopment of Kowloon Walled City a feasibility study'; IIIF manifest with canvases '1' to '131'; image n583zr688 info.json open (1500 x 2118).
+- **What it gives (resolver's note, not checked):** A 1986 feasibility study of the redevelopment of the City, with the conditions of 1986 (people, buildings, services) and the 1898 convention extracts (p. 20, per Esposito). Its date is the target year of the simulation.
+- **Lead:** L1085 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
+- **Notes:** Page images only (no text layer was checked). The old eBook PDF URL is dead; a Wayback copy is cited in reference-and-web-histories/popular-2 (not opened).

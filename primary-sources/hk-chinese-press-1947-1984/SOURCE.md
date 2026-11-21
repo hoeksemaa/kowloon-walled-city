@@ -1623,3 +1623,41 @@ testimony given later: tag its facts "retrospective (year)".
   - Kung Sheung Evening News (工商晚報) 1984-06-16 (NPKSE19840616): the City flooded, residents evacuated. Not in the repo.
   - Kung Sheung Evening News (工商晚報) 1983-08-09 and 1983-08-16 (NPKSE19830809, NPKSE19830816): police on public order; 夏鼎基 looks at the City from a rooftop. Not in the repo.
   - Kung Sheung Evening News (工商晚報) 1972-12-27 and 1972-12-28 (NPKSE19721227, NPKSE19721228): building plans not approved, no piles; no government action.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
+
+- **Creator:** Ta Kung Pao (大公報), Hong Kong
+- **Date:** 1983-08-08
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPTKP19830808
+- **Proof that it exists:** archive.org item NPTKP19830808 ('大公報 1983-08-08'); its headline list has the words of the title
+- **What it gives (resolver's note, not checked):** Xu Jiatun (許家屯) of Xinhua visited the City on 7 Aug 1983 and asked about its management and the residents' life; he showed concern about their hardships. Same-day substitute for the 人民日報 report of 8 Aug 1983.
+- **Lead:** L0536 (cited by top-studies-12, scholarship-history-law-society-1973-2026)
+- **Notes:** Not the record of the lead: a same-day report of the same event. The repo already has 大公報 20 Aug 1983 (top-zh-press-27) on the cleaning after this visit. Leaf not found.
+
+### lead-l0536-3: 香港工商日報 1983-08-08 (headline list: 許家屯 九龍城砦)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報)
+- **Date:** 1983-08-08
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPKS19830808
+- **Proof that it exists:** archive.org item NPKS19830808 ('香港工商日報 1983-08-08'); its keyword list has '許家屯 九龍城砦'
+- **What it gives (resolver's note, not checked):** INFERRED from the keywords: a report of Xu Jiatun's visit to the City on 7 Aug 1983, from a paper that was not pro-Beijing.
+- **Lead:** L0536 (cited by top-studies-12, scholarship-history-law-society-1973-2026)
+- **Notes:** Not the record of the lead: a same-day substitute. Leaf not found.

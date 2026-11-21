@@ -2665,3 +2665,264 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Kowloon City District Board minutes, meeting of 18 October 1990, on the Kowloon Walled City Park plan (not held).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0280-1: 城寨清拆賠償起爭議 商戶不提供營業單據 地政署官員指為問題癥結
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1991-12-18
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report made at the time, during the clearance (Dec 1991).)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher
+- **Link:** https://archive.org/details/NPWK19911218/page/n4
+- **Other links:** https://ia600402.us.archive.org/BookReader/BookReaderImages.php?id=NPWK19911218&itemPath=%2F26%2Fitems%2FNPWK19911218&server=ia600402.us.archive.org&page=n4_w1600.jpg
+- **Proof that it exists:** Leaf n4 of the scan shows the headline 「城寨清拆賠償起爭議」 with 「商戶不提供營業單據」 and 「地政署官員指為問題癥結」; item title '華僑日報 1991-12-18'.
+- **What it gives (resolver's note, not checked):** By its headline: the dispute over the clearance compensation of the shops in Dec 1991; the shops did not give business records, and Lands Department officials called this the crux of the problem. It can give the evidence that businesses had to show and the state of the shop claims after phase 1.
+- **Lead:** L0280 (cited by gap-clearance-from-below-23, hk-chinese-press-1985-1993)
+- **Notes:** Not read; headline checked on the page image. The OCR text layer is poor (simplified-character noise), so search inside the item does not find it.
+
+### lead-l0280-2: 城寨賠償評估審核小組 居民懷疑變為抽稅用途
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1991-12-21
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report made at the time, during the clearance (Dec 1991).)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement or licence on the archive.org item (collection 'china-mail'); copyright of the publisher
+- **Link:** https://archive.org/details/NPWK19911221/page/n4
+- **Other links:** https://ia803202.us.archive.org/BookReader/BookReaderImages.php?id=NPWK19911221&itemPath=%2F2%2Fitems%2FNPWK19911221&server=ia803202.us.archive.org&page=n4_w1600.jpg
+- **Proof that it exists:** Leaf n4 of the scan shows the headline 「城寨賠償評估審核小組」 with 「居民懷疑變為抽稅用途」, below 「港九酒樓總工會反對設立禁煙區」; item title '華僑日報 1991-12-21'.
+- **What it gives (resolver's note, not checked):** By its headline: the compensation assessment review group of the clearance, and the residents' fear (Dec 1991) that the business figures they gave it would be used for tax. It goes with the 18 Dec report on the shops' missing business records.
+- **Lead:** L0280 (cited by gap-clearance-from-below-23, hk-chinese-press-1985-1993)
+- **Notes:** Not read; headline checked on the page image. The print reads 賠償; the archive.org description (headline index) has 賞償, as the lead copied it.
+
+### lead-l0331: 燒臘店清晨四級火 九龍城寨緊急疏散 消防人員將百名居民救出險地
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1988-04-20
+- **Kind:** press
+- **Class:** primary (A daily newspaper report printed the day after the fire of 19 April 1988.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the scans carry a HONG KONG PUBLIC LIBRARIES watermark. The newspaper is copyright of 華僑日報 (Wah Kiu Yat Po).
+- **Link:** https://archive.org/details/NPWK19880420/page/n5
+- **Other links:** https://archive.org/download/NPWK19880420/page/n5.jpg
+- **Proof that it exists:** Leaf n5 is 第二張第二頁 (本港新聞) of 華僑日報, 20 April 1988 (星期三); upper left, the headline 「燒臘店清晨四級火」 「九龍城寨緊急疏散」「消防人員將百名居民救出險地」. archive.org title '華僑日報 1988-04-20'.
+- **What it gives (resolver's note, not checked):** The 華僑日報 report of the No. 4 alarm fire at a roast-meat (燒臘) shop in the City on the morning of 19 April 1988 (the fire of 大公報 top-zh-press-15, 10A Lung Chun Back Road (龍津後街)): the emergency evacuation and the rescue of about 100 residents by firemen. Not read yet; it can add details on the fire-fighting in the City's lanes.
+- **Lead:** L0331 (cited by top-zh-press-15, hk-chinese-press-1985-1993)
+- **Notes:** Leaf found by the order of the headline list in the item's 'description' and checked on the page images n4, n5, n6 and n8. The repo has only this headline, as a fact of zh-press-21 (hk-chinese-press-1947-1984).
+
+### lead-l0336: 九龍城寨清拆 林少霞可獲償
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1988-10-19
+- **Kind:** press
+- **Class:** primary (A daily newspaper report (特訊) of a statement to the Kowloon City District Board the day before.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the scans carry a HONG KONG PUBLIC LIBRARIES watermark. The newspaper is copyright of 華僑日報 (Wah Kiu Yat Po).
+- **Link:** https://archive.org/details/NPWK19881019/page/n3
+- **Other links:** https://archive.org/download/NPWK19881019/page/n3.jpg
+- **Proof that it exists:** Leaf n3 is page (4), 本港新聞, of 華僑日報, 19 October 1988 (星期三); middle, under the article 「舞女遭六大漢輪姦」, the small item 「九龍城寨清拆 林少霞可獲償」 (特訊): "政務署準備為城寨小居民林少霞設一個「信托基金」" ... "副政務司（專責事務）呂孝端昨日在九龍城區議會上，報告城寨清...".
+- **What it gives (resolver's note, not checked):** The 華僑日報 report of the statement of 呂孝端 (副政務司（專責事務）) to the Kowloon City District Board (九龍城區議會) on 18 October 1988, the same statement as 大公報 top-zh-press-19. It opens with a trust fund (信托基金) that the administration planned for a young City resident, 林少霞, to receive the clearance compensation when grown up. Not read in full.
+- **Lead:** L0336 (cited by top-zh-press-19, hk-chinese-press-1985-1993)
+- **Notes:** Leaf found by the headline order and checked on page images n0, n2, n3 and a full-size crop of n3; the text runs on in the columns to the left. INFERRED: the child can be the three-year-old girl found with her dead mother in the City on 12 Oct 1988 (大公報 1988-10-13, top-zh-press-18). A minor private person: use only what the article prints. Lead L0337 (the Board minutes) stays closed.
+
+### lead-l0343: 當局檢討居屋樓價後作出調整 城寨第三期清拆補償 金額較第二期乙提高 二千三百多戶將於日內接到有關通知
+
+- **Creator:** Ta Kung Pao (大公報)
+- **Date:** 1990-06-02
+- **Kind:** press
+- **Class:** primary (A daily newspaper report of a government decision, printed at the time (1990).)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail; private uploader). The newspaper is copyright of 大公報 (Ta Kung Pao).
+- **Link:** https://archive.org/details/NPTKP19900602/page/n7
+- **Other links:** https://archive.org/download/NPTKP19900602/page/n7.jpg
+- **Proof that it exists:** Leaf n7 is 港聞, 第八版, of 大公報, 2 June 1990 (星期六); middle, the headline 「當局檢討居屋樓價後作出調整」 「城寨第三期清拆補償 金額較第二期乙提高」「二千三百多戶將於日內接到有關通知」.
+- **What it gives (resolver's note, not checked):** The report that the compensation of phase 3 of the clearance was set higher than that of phase 2B, after a review of Home Ownership Scheme (居屋) prices, and that more than 2,300 households were to get their notices in a few days (June 1990). Not read yet.
+- **Lead:** L0343 (cited by top-zh-press-23, hk-chinese-press-1985-1993)
+- **Notes:** Found with an archive.org search of the 'description' field ('二千三百' with 城寨/城砦) and the repo's local 大公報 headline index; the finder's March 1990 date was wrong. Related, not opened: 大公報 1990-12-18 (NPTKP19901218) '城寨第三期自住業主可增獲補償購買居屋每方米補償率較原來增加一成多...'.
+
+### lead-l0536-1: 華僑日報 1988-05-06: 「拆九龍城砦九成五住戶同意補償安排 多願入住公屋購買居屋 迄昨已有百二居民遷出」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1988-05-06
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19880506
+- **Other links:** https://archive.org/metadata/NPWK19880506
+- **Proof that it exists:** archive.org item NPWK19880506, title '華僑日報 1988-05-06' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** In May 1988, 95% of the households of the City had accepted the compensation terms; many chose public rental housing or Home Ownership flats; 120 residents had moved out by 5 May 1988.
+- **Lead:** L0536 (cited by top-studies-12, scholarship-history-law-society-1973-2026)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0633-1: 華僑日報 1986-06-11 (headline list: 「同濟會捐欵 城砦學校」)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1986-06-11
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19860611
+- **Other links:** https://archive.org/metadata/NPWK19860611
+- **Proof that it exists:** archive.org item NPWK19860611, title '華僑日報 1986-06-11' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** INFERRED from the headline list: a donation by 同濟會 to a school in the City in June 1986 (the school and the sum are in the story).
+- **Lead:** L0633 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0633-2: 華僑日報 1986-07-29 (headline list: 「城砦 青協會 義工 衛生」)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1986-07-29
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19860729
+- **Other links:** https://archive.org/metadata/NPWK19860729
+- **Proof that it exists:** archive.org item NPWK19860729, title '華僑日報 1986-07-29' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** INFERRED from the headline list: youth volunteers of 青協會 working on sanitation in the City in July 1986, half a year before the week of the simulation.
+- **Lead:** L0633 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0634-1: 華僑日報 1987-02-01: 「城寨進行兩週調查 已登記三萬三千人 無牌牙醫醫生妓女問題由特別委會研究」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1987-02-01
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19870201
+- **Other links:** https://archive.org/metadata/NPWK19870201
+- **Proof that it exists:** archive.org item NPWK19870201, title '華僑日報 1987-02-01' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** The two-week survey of the City from 14 Jan 1987: 33,000 people registered; no illegal immigrants caught; the Special Committee to study the unlicensed dentists, doctors and prostitutes; the clearance cost awaited approval.
+- **Lead:** L0634 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0634-2: 華僑日報 1987-03-30: 「專責打理城寨內垃圾 窄巷內清掃 清凈員勞苦」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1987-03-30
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19870330
+- **Other links:** https://archive.org/metadata/NPWK19870330
+- **Proof that it exists:** archive.org item NPWK19870330, title '華僑日報 1987-03-30' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** INFERRED from the headline: the workers who cleared the refuse of the City and swept its narrow lanes in March 1987: their work and hardship.
+- **Lead:** L0634 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0634-3: 華僑日報 1987-06-12: 「城寨工廠逾一千戶 賠償方案年底訂出 提出建城寨工業邨可行性不大」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1987-06-12
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19870612
+- **Other links:** https://archive.org/metadata/NPWK19870612
+- **Proof that it exists:** archive.org item NPWK19870612, title '華僑日報 1987-06-12' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** Over 1,000 factory units in the City in June 1987; the compensation plan due by the end of 1987; an industrial estate for the City's factories judged hardly feasible.
+- **Lead:** L0634 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0634-4: 華僑日報 1987-06-19: 「九龍城砦供水商 要求賠償廿萬 彌補開井費及商業損失」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1987-06-19
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19870619
+- **Other links:** https://archive.org/metadata/NPWK19870619
+- **Proof that it exists:** archive.org item NPWK19870619, title '華僑日報 1987-06-19' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** A water supplier of the City asked for HK$200,000 compensation for the cost of digging his well and his loss of business (June 1987).
+- **Lead:** L0634 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l0634-5: 華僑日報 1987-12-26: 「城寨首期遷拆住戶 近二百戶多報人口 房署將按照實際人數安排居所」; and 「城寨罪案已受控制」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1987-12-26
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** high
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19871226
+- **Other links:** https://archive.org/metadata/NPWK19871226
+- **Proof that it exists:** archive.org item NPWK19871226, title '華僑日報 1987-12-26' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** Phase 1 clearance: nearly 200 households over-reported their members; the Housing Department to allocate flats by actual numbers; appeals of ineligible households under review. A second item says that crime in the City was under control (Dec 1987).
+- **Lead:** L0634 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words. Two separate City items in this issue.
+
+### lead-l0635: 華僑日報 1990-10-27: 「連番爆竊城寨多個單位 中年漢七罪俱成 判囚三年九個月」
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer seen
+- **Date:** 1990-10-27
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (scan uploaded by a private person to the collection 'china-mail'; metadata fields rights and licenseurl empty)
+- **Link:** https://archive.org/details/NPWK19901027
+- **Other links:** https://archive.org/metadata/NPWK19901027
+- **Proof that it exists:** archive.org item NPWK19901027, title '華僑日報 1990-10-27' (advancedsearch and metadata API, 2026-11-21); its headline list (description) has the words quoted in the title
+- **What it gives (resolver's note, not checked):** A middle-aged man burgled many units of the City in a row; convicted on seven charges and sentenced to three years and nine months (Oct 1990).
+- **Lead:** L0635 (cited by zh-press-21, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the archive.org search-inside OCR is poor for Chinese. Find the story by the headline words.
+
+### lead-l1186-1: 大公報 1985-12-22 (report of the press conference of 姬鵬飛, 21 Dec 1985)
+
+- **Creator:** Ta Kung Pao (大公報)
+- **Date:** 1985-12-22
+- **Kind:** press
+- **Class:** primary (A newspaper report of the next day.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement in the archive.org metadata.
+- **Link:** https://archive.org/details/NPTKP19851222
+- **Other links:** https://archive.org/details/NPTKP19851223, https://archive.org/details/NPTKP19851224
+- **Proof that it exists:** archive.org title '大公報 1985-12-22'; headline list: '姬鵬飛昨在記者招待會上指出', '姬鵬飛或再訪港昨答記者稱看情況吧'
+- **What it gives (resolver's note, not checked):** The report of Ji Pengfei's press conference of 21 Dec 1985 at the end of his Hong Kong visit. The SCMP (usgov-20) says that he did not answer the written question on the Walled City; this report can show what he said and if the City was named.
+- **Lead:** L1186 (cited by usgov-20, us-government-records-1948-1994)
+- **Notes:** The leaf of the report is not found yet; the OCR text is garbled. Look at the front page and the 港聞 pages.

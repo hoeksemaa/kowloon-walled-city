@@ -739,3 +739,26 @@ Not read yet.
 | Page | Fact | Words in the source |
 |---|---|---|
 | web page, para. 1 | The page invites viewers to recall the time when they went into the City with toothache to see an unlicensed dentist; it is a prompt, not a testimony. | "曾經因為牙痛，踏足寨城光顧無牌牙醫的那個時期" (the time when, because of toothache, one set foot in the Walled City to visit an unlicensed dentist) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). Nobody has
+  read these items for the repo yet. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0456: The News Lens (關鍵評論網), article 172320 (title not seen)
+
+- **Creator:** not confirmed (梁啟智 per a search extract)
+- **Date:** before 2025-11-01
+- **Kind:** article
+- **Class:** secondary (A later web article; the aerial photos of 1984 and 1993 that it reprints are primary records of the Survey and Mapping Office.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** not seen
+- **Link:** http://web.archive.org/web/20251101194820/https://www.thenewslens.com/article/172320
+- **Other links:** https://www.thenewslens.com/article/172320
+- **Proof that it exists:** Wayback availability API: archived true, status 200, timestamp 20251101194820; a search result lists thenewslens.com/article/172320 for the query on 九龍城寨, 航空照片, 1984, 1993, 測繪處
+- **What it gives (resolver's note, not checked):** INFERRED from the lead and a search extract: Survey and Mapping Office aerial photos of the City and its surroundings of 1984 and 1993, at web resolution, with the writer's comments.
+- **Lead:** L0456 (cited by maps-9, maps-and-aerial-photos-1889-1994)
+- **Notes:** Open the Wayback copy in a browser to confirm the title, date and photo credits. The photos' frame numbers can lead to the SMO originals (see L0457, L0461).
