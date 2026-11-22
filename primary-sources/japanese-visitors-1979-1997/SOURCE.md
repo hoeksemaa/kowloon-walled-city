@@ -152,3 +152,26 @@ testimony given later: tag its facts "retrospective (year)".
 | post of @seed3993, 2025-04-05 | Another poster (@seed3993, no year) said the sewers were a mess, so a strange rain-like water kept falling inside. | "下水道がメチャクチャだから謎の雨らしきものがずっと降ってた" (because the drains were a total mess, a mysterious rain-like something kept falling) |
 | post of @kikuchiyo_0518, 2025-04-04 | A poster (@kikuchiyo_0518, no year) slipped in behind a resident primary-school child; the aircraft noise was very loud. | "飛行機の爆音がすごかったです。" (The roar of the aircraft was tremendous.) |
 | post of @HRYfxaf1meVbPyf, 2025-04-05 | A poster (@HRYfxaf1meVbPyf, no year) says the tour guide rushed over when the group looked into an alley, warning they would not come back, then took them to a souvenir shop near the City. | "入ったら帰れないよ！" (If you go in, you won't come back!) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0951: 鷹野隆大 写真展 「香港・深圳 1988」 (Ryudai Takano, photo exhibition 'Hong Kong–Shenzhen 1988'), Zeit-Foto Salon, Tokyo
+
+- **Creator:** Ryudai Takano (鷹野隆大), statement dated September 2013; Zeit-Foto Salon (ツァイト・フォト・サロン)
+- **Date:** photographs summer 1988; exhibition 21 November - 21 December 2013
+- **Kind:** photo
+- **Class:** primary (Photographs made in the City in summer 1988 by a visitor (primary). The artist's statement of 2013 is retrospective testimony ('retrospective (2013)').)
+- **Value:** low
+- **Language:** ja
+- **Access:** open
+- **Licence:** '©Ryudai Takano Courtesy: Yumiko Chiba Associates / ZEIT-FOTO SALON'; page footer 'Copyright (C) 2002-2007 ZEIT-FOTO SALON Corporation. All Rights Reserved.'
+- **Link:** http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm
+- **Other links:** http://www.gaden.jp/zeit-foto/2013/1121/index.htm, http://www.gaden.jp/zeit-foto/2013/1121/01.jpg, http://www.zeit-foto.com/artist/takano_ryudai/index.html
+- **Proof that it exists:** Page title '鷹野隆大 写真展 「香港・深? 1988」'; dates '2013年11月21日 (木) - 12月21日(土)'; first sentence '25年前の夏、二十五歳だった僕は香港と深圳（しんせん）を旅した。'; image caption 「九龍城、香港」.
+- **What it gives (resolver's note, not checked):** Takano went to the City (九龍城, 'in Hong Kong 九龍城砦') in summer 1988, because he knew that it was soon to be demolished. A Japanese-speaking Hong Konger let him talk with people who lived in the City. The show had about 25 monochrome prints; the page shows one of the City, 「九龍城、香港」 (01.jpg).
+- **Lead:** L0951 (cited by top-top-flickr-5, press-and-web-features-1990-2026)
+- **Notes:** The other City frames of 1988 are not on the page. A photobook or the gallery (Yumiko Chiba Associates) can have more (not checked). The Japanese text uses 九龍城 for the Walled City.

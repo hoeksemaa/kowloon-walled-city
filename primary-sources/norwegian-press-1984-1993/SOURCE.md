@@ -240,3 +240,162 @@ testimony given later: tag its facts "retrospective (year)".
   - Telen 1984-07-13, pp. 5 and 8 (d57ef3e12faa0ade2487b3fdd7ae42a9) and Telen 1984-12-24, p. 2 (4fca7371cd96cf817e52e39b7a289c2a): Espegrens' letters on Hsin On (Troens Fred) School; read only around the hits.
   - Open 1980-1981 items not read: Lofotposten 1980-12-17, Agder 1981-12-14, Gjengangeren 1981-06-20, Østlands-Posten 1980-07-19, Øvre Smaalenene 1981-12-30, Folkets Framtid 1980-05-23, Telen 1980-05-24, Telen 1981-09-12, Haugesunds Avis 1980-11-08.
   - Restricted in-period items (NB library access only): Dagen 1986-09-29, 1987-03-23, 1988-04-21; Vårt Land 1988-08-20, 1989-01-04; Søndag-Søndag 1987-08-02; Sørlandet 1987-04-13; Aftenposten 1986-09-04, 1987-01-21, 1987-09-01; VG 1986-09-27, 1987-02-23; Fædrelandsvennen 1986-10-04, 1988-05-14, 1988-08-17; Dagningen 1986-10-08; Stavanger Aftenblad 1990-09-25; Klassekampen 1989-06-26; Morgenbladet 1989-04-18; Ny Tid 1989-03-04; Romsdals Budstikke 1993-06-19, 1993-11-06; Western Viking 1994-04-08.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0669-1: Lofotposten 1980-12-17, p. 14
+
+- **Creator:** Lofotposten
+- **Date:** 1980-12-17
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/2ea28f0fe0a1b823317811657278d036/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_014_null/full/full/0/default.jpg, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_015_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 2ea28f0fe0a1b823317811657278d036 ('Lofotposten', 1980-12-17), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City-kapel ...' (p. 14); '... Walled City, ...' and '... Walled City ...' (p. 15).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-2: Agder (Flekkefjord) 1981-12-14, p. 5
+
+- **Creator:** Agder (Flekkefjord)
+- **Date:** 1981-12-14
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/3f6c879aa8985d936cceeaeda4e56101/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1_005_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 3f6c879aa8985d936cceeaeda4e56101 ('Agder (Flekkefjord)', 1981-12-14), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled ' City ...' (p. 5).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-3: Gjengangeren 1981-06-20, p. 3
+
+- **Creator:** Gjengangeren
+- **Date:** 1981-06-20
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/606bc411ef83f78765445f9e164b44df/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1_003_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 606bc411ef83f78765445f9e164b44df ('Gjengangeren', 1981-06-20), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled-City ...' (p. 3).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-4: Østlands-Posten 1980-07-19, p. 11
+
+- **Creator:** Østlands-Posten
+- **Date:** 1980-07-19
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/44bdb16f84757bfae57721b5602db3a4/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1_011_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 44bdb16f84757bfae57721b5602db3a4 ('Østlands-Posten', 1980-07-19), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City, ...' (p. 11).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-5: Øvre Smaalenene 1981-12-30, p. 6
+
+- **Creator:** Øvre Smaalenene
+- **Date:** 1981-12-30
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/09df17a359316be25e768094d8a83298/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1_006_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 09df17a359316be25e768094d8a83298 ('Øvre Smaalenene', 1981-12-30), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City ...' (p. 6).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-6: Folkets Framtid 1980-05-23, p. 3
+
+- **Creator:** Folkets Framtid
+- **Date:** 1980-05-23
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/2c1970300af18bc8372c0ae55b32e1f7/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1_003_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 2c1970300af18bc8372c0ae55b32e1f7 ('Folkets Framtid', 1980-05-23), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City. ...' (p. 3).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-7: Telen 1980-05-24, p. 4
+
+- **Creator:** Telen
+- **Date:** 1980-05-24
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/fd72fdf4b00585178b53fe3b112bbd4c/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1_004_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item fd72fdf4b00585178b53fe3b112bbd4c ('Telen', 1980-05-24), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City. ...' and '... Hong Kong ...' (p. 4).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-8: Telen 1981-09-12, p. 4
+
+- **Creator:** Telen
+- **Date:** 1981-09-12
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/18a707c8a83a5fe2dae9e282e965457e/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1_004_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 18a707c8a83a5fe2dae9e282e965457e ('Telen', 1981-09-12), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City, ...' (p. 4).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+
+### lead-l0669-9: Haugesunds Avis 1980-11-08, p. 11
+
+- **Creator:** Haugesunds Avis
+- **Date:** 1980-11-08
+- **Kind:** press
+- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
+- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1
+- **Other links:** https://api.nb.no/catalog/v1/iiif/5f587762742349481b9cfaac656fb2bc/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1_011_null/full/full/0/default.jpg
+- **Proof that it exists:** NB API: item 5f587762742349481b9cfaac656fb2bc ('Haugesunds Avis', 1980-11-08), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City ...' (p. 11).
+- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
+- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
+- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).

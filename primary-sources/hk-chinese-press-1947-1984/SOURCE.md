@@ -1626,7 +1626,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 6 of 6 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
@@ -1669,68 +1669,348 @@ testimony given later: tag its facts "retrospective (year)".
   - The Xinhua (新華社) dispatch of 7 August 1983 on the visit, which the brief cites (not held).
 ### lead-l0213: 城砦水淹千戶
 
-- **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1984-06-26
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Kung Sheung Evening News (工商晚報), 「城砦水淹千戶」「兩條水管爆裂 低地水深及腰」, 26 June 1984, front page, archive.org item NPKSE19840626, leaf n0, https://archive.org/details/NPKSE19840626/page/n0
+- **Class:** primary (An evening paper's report of events of the same morning (26 June 1984), with two photos of the scene.)
+- **Date of the record:** 1984-06-26 (the events of the same morning)
+- **Files:**
+  - `lead-l0213-n0-1977573c.jpg` (in `local/`, not in git): Page image of the front page (leaf n0) with the article and the two photos, JPEG from archive.org; https://archive.org/download/NPKSE19840626/page/n0.jpg; 5658277 bytes; SHA-256 `4fa8b88b9381f950e20a3df6b47fb35444603985f1c9e0c9fb42e9f8b3a0f5c1`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; collections china-mail and newspapers, private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19840626)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKSE19840626, leaf n0 (front page), lead article, paras 2-3 | At 6:38 am on 26 June 1984, two water mains burst under the ground at the junction of Carpenter Road (賈炳達道) and South Wall Road (城南道): an 18-inch salt-water main and a 6-inch fresh-water main. | "今晨六時三十八分，地面下兩條水管（十八吋直徑鹹水管及六吋直徑淡水管）突然爆裂" (At 6:38 this morning two water pipes under the ground (an 18-inch salt-water pipe and a 6-inch fresh-water pipe) suddenly burst.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 3 | The road surface sank up to 6 feet deep, over an area of about 180 square feet. | "路面下陷達六呎深，受影響面積達一百八十平方呎" (The road surface sank as much as six feet deep; the area affected reached 180 square feet.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 1 | The water flowed into the lower-lying Walled City. It was waist-deep there, and 1,500 households were affected. The headline says a thousand households (千戶). | "流落地勢較低的九龍城寨內，水深及腰，受影響達千五戶居民" (It flowed down into the lower-lying Kowloon Walled City; the water was waist-deep and 1,500 households of residents were affected.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 3 | The police closed a section of Lung Kong Road (龍崗道) and of South Wall Road to traffic. | "立即將龍崗道及城南道的一段路面封鎖，禁止車輛行駛" (They at once closed a section of Lung Kong Road and South Wall Road and banned vehicles.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 4 | The flooded lanes of the City were 西頭村第一街, 城龍街, 長樂街 and 安樂街. | "受水浸影響的地區包括城寨西頭村第一街、城龍街、長樂街及安樂街" (The flooded area included 西頭村第一街, 城龍街, 長樂街 and 安樂街 in the City.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 4 | The salt and fresh water poured into the homes of the residents on the ground floor. The residents woke up, took their valuables and identity papers, and ran up to the floor above (二樓). | "鹹淡水突然瀉入地下居民的居所內" (The salt and fresh water suddenly poured into the homes of the ground-floor residents.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 5 | Firemen tied ropes round the waists of the rescuers before they went in. By 7 am they had brought out about 40 residents. Some residents who lived higher up refused to leave. | "消防員用繩綁着拯救人員的腰部，然後入內搶救，至早上七時，消防員從水浸現場救出約四十名居民" (The firemen tied ropes round the rescuers' waists and then went in; by 7 am they had rescued about forty residents from the flood.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 6 | The rescued residents rested for a time at the nearby Lok Sin Tong (樂善堂) school. | "其後暫在附近的樂善堂學校休息" (Then they rested for a time at the nearby Lok Sin Tong school.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 6 (continues lower right) | A woman surnamed 周, aged 40, said that the area had flooded before in heavy rain, at worst chest-deep, but that time they were ready for it. | "以前大雨，該區亦發生水浸事件，最嚴重時，水深達至胸口" (In heavy rain before, the area also flooded; at the worst the water reached the chest.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 6 (lower right) | This time the water came suddenly and was at her waist at once. She woke up and carried her four children to the floor above. | "將四子女救出，帶上二樓避水" (She got her four children out and took them up to the floor above, away from the water.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 7 (lower right) | A student, 楊永德, took only his identity card and an umbrella. The water was waist-deep and he could not get out, so he went back up to the floor above. | "祇拿了身份證及一把雨傘逃離" (He took only his identity card and an umbrella and fled.) |
+| NPKSE19840626, leaf n0 (front page), lead article, para 8 (lower right) | A sewer near 西頭村第一街 had filled with silt and refuse in the heavy rain of the days before, so the water could not drain away. | "原有一條污水渠，但日前大雨，渠道遭淤泥與垃圾堆積，引致不能去水" (There was a sewer, but in the heavy rain of recent days it was blocked by silt and refuse, so the water could not drain.) |
+| NPKSE19840626, leaf n0 (front page), lead article, lower right | The firemen pumped the water out of the four lanes with powerful pumps. The water had gone completely by 9:30 am. | "將水從四條街內抽出。至九時三十分，積水始完全退卻" (They pumped the water out of the four streets; only at 9:30 did the standing water go down completely.) |
+| NPKSE19840626, leaf n0 (front page), lead article, lower right | The residents went back home, helping the old and the young, and cleared the remaining water and silt. | "他們忙於清理餘下的積水及淤泥" (They were busy clearing the remaining water and silt.) |
+| NPKSE19840626, leaf n0 (front page), lead article, lower right | Engineers of the Water Supplies Department (水務署) shut the main valves of the two burst pipes. The department sent seven workers to dig up the road and repair them. | "將兩條爆裂的喉管總掣關掉，並派出七名工人，到場掘開路面搶修" (They shut the main valves of the two burst pipes and sent seven workers to dig up the road for urgent repair.) |
+| NPKSE19840626, leaf n0 (front page), lead article, lower right | A Water Supplies Department spokesman said that Carpenter Road, Nga Tsin Long Road (衙前塱道), Nga Tsin Wai Road (衙前圍道) and 啟德道 had no fresh water for the time. | "目前賈炳達道、衙前塱道、衙前圍道及啟德道則沒有食水供應" (At present Carpenter Road, Nga Tsin Long Road, Nga Tsin Wai Road and 啟德道 have no drinking-water supply.) |
+| NPKSE19840626, leaf n0 (front page), lead article, lower right | The cut in salt (flushing) water was wider: it reached 慈雲山, 紅磡, 土瓜灣, Kowloon City (九龍城), Lok Fu (樂富), 鳳凰新邨 and 九龍塘. | "鹹水供應受影響的範圍較大，包括慈雲山、紅磡、土瓜灣、九龍城、樂富、鳳凰新邨、九龍塘" (The area where the salt-water supply was affected is larger, including 慈雲山, 紅磡, 土瓜灣, Kowloon City, Lok Fu, 鳳凰新邨 and 九龍塘.) |
+| NPKSE19840626, leaf n0, photo captions | Two photos show the burst: the collapsed road with broken pipes and timber at the junction, and the flooded scene in the City. | "圖爲賈炳達道與城南道爆水管引致城砦受水浸之現場情形" (The photo shows the scene of the City flooded by the burst water pipes at Carpenter Road and South Wall Road.) |
+### lead-l0622: 三院總理與職員數百人昨日團拜 黃大仙政務處有新春酒會 城砦福利促進委會本周末聚餐
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ta Kung Pao (大公報), 「三院總理與職員數百人昨日團拜」「黃大仙政務處有新春酒會」「城砦福利促進委會本周末聚餐」, 16 February 1984, 第二張 第七版, archive.org item NPTKP19840216, leaf n6, https://archive.org/details/NPTKP19840216/page/n6
+- **Class:** primary (A news note of the time about a dinner two days later.)
+- **Date of the record:** 1984-02-16
+- **Files:**
+  - `lead-l0622-n6-b03e9236.jpg` (in `local/`, not in git): Page image of leaf n6 (第二張 第七版) with the round-up of New Year gatherings, JPEG from archive.org; https://archive.org/download/NPTKP19840216/page/n6.jpg; 4341450 bytes; SHA-256 `bc7fb94b5a42a697ce7366ddc8148834bcde74c1760e0ba748132c889af9b815`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; collections china-mail and newspapers, private uploader). The newspaper is copyright of its publisher, Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19840216)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19840216, leaf n6 (第二張 第七版), lower part of the round-up, paragraph marked ▲ | The City's Kai Fong Association (九龍城砦街坊福利事業促進委員會) set its Lunar New Year dinner for 18 February 1984, at 富榮華酒樓 on 獅子石道 in Kowloon City. | "九龍城砦街坊福利事業促進委員會，定本月十八日在九龍城獅子石道富榮華酒樓舉行新春聯歡聚餐" (The Kowloon Walled City Kaifong Welfare Advancement Committee will hold a New Year get-together dinner on the 18th of this month at 富榮華酒樓, 獅子石道, Kowloon City.) |
+| NPTKP19840216, leaf n6, headline (third line) | The headline calls the association the City welfare committee and says the dinner was at the weekend. | "城砦福利促進委會本周末聚餐" (The City welfare advancement committee holds a dinner this weekend.) |
+### lead-l0632: 毒品調查科警司梁志彬昨講古仔 毒販四大家族瓦解後 出現夫妻父子檔集團
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ta Kung Pao (大公報), 「毒品調查科警司梁志彬昨講古仔」「毒販四大家族瓦解後 出現夫妻父子檔集團」「自己負責搓毒 妻女推銷 兒子兄弟販運」, with the sub-headline 「十年前城砦油蔴地果欄馬山是售毒黑點」, 22 May 1984, 第二張, archive.org item NPTKP19840522, leaf n4, https://archive.org/details/NPTKP19840522/page/n4
+- **Class:** primary (A news report of a talk of 21 May 1984 by a police drug-squad officer. His statements about the 1950s-1970s are his account of the past; the paper's own note on the 'four families' is background (secondary).)
+- **Date of the record:** 1984-05-22 (reports a talk of 21 May 1984)
+- **Files:**
+  - `lead-l0632-n4-f0ec6f78.jpg` (in `local/`, not in git): Page image of leaf n4 (第二張) with the article and the photo of 梁志彬, JPEG from archive.org; https://archive.org/download/NPTKP19840522/page/n4.jpg; 3543621 bytes; SHA-256 `d2ea5ef53f1629e57b3c2bae3c6b1992434bcef8ee3541d617500b966ab9ab3b`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; collections china-mail and newspapers, private uploader). The newspaper is copyright of its publisher, Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19840522)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19840522, leaf n4 (第二張), para 2 | On 21 May 1984 superintendent 梁志彬 of the police Narcotics Bureau (毒品調查科) gave a talk at the Tsuen Wan Rotary Club (荃灣扶輪社), titled 《香港白粉之今昔》 (in English: heroin in Hong Kong, then and now). | "警方毒品調查科警司梁志彬昨日在荃灣扶輪社例會上，以《香港白粉之今昔》爲題" (Superintendent 梁志彬 of the police Narcotics Bureau, at the Tsuen Wan Rotary Club meeting yesterday, on the subject 'Heroin in Hong Kong, then and now'.) |
+| NPTKP19840522, leaf n4 (第二張), lower tier right of centre, paragraph that starts 「他說，十年前」 (after the family-gang paragraph; the sub-headline 「十年前城砦油蔴地果欄馬山是售毒黑點」 repeats it) | He said that ten years before (thus about 1974), the Walled City, the Yau Ma Tei fruit market (油蔴地果欄) and 馬山 were the black spots for drug selling. | "十年前，九龍城砦、油蔴地果欄和馬山是毒品銷售黑點" (Ten years ago, Kowloon Walled City, the Yau Ma Tei fruit market and 馬山 were black spots for drug selling.) |
+| NPTKP19840522, leaf n4 (第二張), second part | At that time the dealers wrapped the drugs in red, orange or yellow wax paper, to show the different kinds of drug. | "毒販用獨特包裝方法，例如用紅、橙、黃色蠟紙包裝，以表示不同種類的毒品" (The dealers used a special packaging, for example red, orange and yellow wax paper, to show the different kinds of drug.) |
+| NPTKP19840522, leaf n4 (第二張), second part, last paragraph | In 1984 the dealers usually put the heroin powder into a short piece of drinking straw and sealed it with a heat-sealing machine (啤膠機). | "現在毒販通常將白粉放入一小截飲筒內，再以啤膠機封口" (Now dealers usually put the heroin into a short piece of drinking straw and seal the end with a plastic-sealing machine.) |
+| NPTKP19840522, leaf n4 (第二張), second part, last paragraph | The addict can keep the straw in his mouth and swallow it if the police stop him. | "其好處是吸毒者可放在口中，遇到截查，即吞入肚內" (The advantage is that the addict can keep it in his mouth and swallow it when stopped and searched.) |
+| NPTKP19840522, leaf n4 (第二張), para 1 | Since the 'four big families' (四大家族) syndicates broke up, no syndicate could smuggle more than 300 kg of drugs alone. Family gangs of husband and wife or father and son had risen instead. | "近年興起的是一種以夫妻、父子的「家庭式」經營販毒集團" (What has risen in recent years is a 'family-style' drug syndicate run by husband and wife or father and son.) |
+| NPTKP19840522, leaf n4 (第二張), second part | In such a family gang one person mixed the drug ('搓毒'), the wife and daughters sold it, and the sons and brothers carried it. | "有人自己負責「搓毒」，妻子、女兒負責銷售，兒子、兄弟負責販運" (Someone mixes the drug himself, the wife and daughters sell, the sons and brothers transport.) |
+| NPTKP19840522, leaf n4 (第二張), second part, para 2 | He said that after acetic anhydride was controlled in 1975, dealers smuggled in heroin base. They only added caffeine and hydrochloric acid, bought in the market, to make No. 3 heroin. | "自七五年無水醋酸受管制後，毒販轉而偷運海洛英鹼來港" (After acetic anhydride came under control in 1975, dealers turned to smuggling heroin base into Hong Kong.) |
+| NPTKP19840522, leaf n4 (第二張), second part | He said that the drugs still came from the Golden Triangle (金三角), so Chiu Chow people still controlled the smuggling. | "因此偷運毒品方面，仍由潮籍人控制" (Thus the smuggling of drugs is still controlled by Chiu Chow people.) |
+
+- **Leads:**
+  - 梁志彬, talk 《香港白粉之今昔》 to the Tsuen Wan Rotary Club (荃灣扶輪社), 21 May 1984: a text or notes of the talk, if the club or the police kept one (cited by Ta Kung Pao, 22 May 1984, leaf n4).
+### lead-l0640: 工商晚報 (Kung Sheung Evening News), 16 June 1984: headline 「城砦水深一米百七居民疏散」 (as the repo reads the OCR headline list)
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Kung Sheung Evening News (工商晚報), 「昨晚至今晨連場大雨」「多處地方水浸塌坭」「城砦水深一米．百七居民疏散」, 16 June 1984, local news page, archive.org item NPKSE19840616, leaf n7, https://archive.org/details/NPKSE19840616/page/n7
+- **Class:** primary (An evening paper's report of the rain of the night before and the same morning.)
+- **Date of the record:** 1984-06-16 (the night of 15-16 June 1984)
+- **Files:**
+  - `lead-l0640-n7-02e45191.jpg` (in `local/`, not in git): Page image of leaf n7 (local news) with the rain report, JPEG from archive.org; https://archive.org/download/NPKSE19840616/page/n7.jpg; 5028453 bytes; SHA-256 `91d94b51912cddee2b6225dc6869edb97ca583ec088173f6ef9565f5eb4c4a58`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; collections china-mail and newspapers, private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19840616)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKSE19840616, leaf n7 (local news page), top centre, para 1 | Heavy rain from late on 15 June to the morning of 16 June 1984 flooded many places. The worst was 西頭村第一街 in the Walled City, where the water was 1 metre deep. | "最嚴重者爲九龍城砦西頭村第一街，水深一米" (The most serious was 西頭村第一街 in Kowloon Walled City, with water one metre deep.) |
+| NPKSE19840616, leaf n7 (local news page), top centre, para 1 | At about 5 am, 170 residents were moved to the nearby Lok Sin Tong (樂善堂) secondary school. | "一百七十名居民於五時許疏散到附近的樂善堂中學" (170 residents were evacuated at about five o'clock to the nearby Lok Sin Tong secondary school.) |
+| NPKSE19840616, leaf n7 (local news page), top centre, headline | The headline gives the same two numbers: water 1 metre deep and 170 residents moved. | "城砦水深一米．百七居民疏散" (In the City the water was one metre deep; 170 residents were evacuated.) |
+| NPKSE19840616, leaf n7 (local news page), top centre, para 2 | Elsewhere in Kowloon, Mong Kok and Sham Shui Po had the worst floods. | "其中以旺角及深水埗的情況較爲嚴重" (Among them, the situation in Mong Kok and Sham Shui Po was the more serious.) |
+| NPKSE19840616, leaf n7 (local news page), top centre, lower tier | The Royal Observatory recorded 160.1 mm of rain from midnight to 8 am, and forecast more squalls, thunderstorms and heavy showers. | "一百六十點一毫米" (160.1 millimetres.) |
+| NPKSE19840616, leaf n7 (local news page), top centre, para 1; compare NPKSE19840626 leaf n0 | INFERRED: Ten days later, on 26 June 1984, the same lane flooded again from burst water mains (Kung Sheung Evening News, 26 June 1984, lead-l0213); both times the residents went to the Lok Sin Tong school. | "疏散到附近的樂善堂中學" (Evacuated to the nearby Lok Sin Tong secondary school.) |
+### lead-l0096: 入城砦拍寫實片 藍乃才先打招呼
+
+- **Creator:** Kung Sheung Daily News (香港工商日報); the lead gives the writer as 陸嘉儀; no byline seen in the headline area
+- **Date:** 1982-08-29
 - **Kind:** press
-- **Class:** primary (An evening paper report of the same day (26 Jun 1984), made at the time.)
+- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights statement or licence on the archive.org item (collections 'china-mail', 'newspapers'); copyright of the publisher
-- **Link:** https://archive.org/details/NPKSE19840626/page/n0
-- **Other links:** https://archive.org/download/NPKSE19840626/page/n0.jpg
-- **Proof that it exists:** Leaf n0 is page 1 (第一頁) of 工商晚報 of Tuesday 26 June 1984 (item title '工商晚報 1984-06-26'). Its lead headline is 「城砦水淹千戶」 with 「兩條水管爆裂 低地水深及腰」 and two photos of the scene.
-- **What it gives (resolver's note, not checked):** The flood of 26 June 1984: two water mains burst at Carpenter Road (賈炳達道) and South Wall Road (城南道), the ground sank, and about 1,000 households of the City were flooded, waist-deep on low ground. Two photos show the burst and the flooded lanes. It gives the water mains and the drainage at the edge of the City, two years before the model week.
-- **Lead:** L0213 (cited by gap-street-address-search-9, hk-chinese-press-1947-1984); also L0230
-- **Notes:** Not read; headline checked on the page image. The right edge of leaf n0 shows a strip of page 8. The repo writes the street names Carpenter Road (賈炳達道) and South Wall Road (城南道).
+- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
+- **Link:** https://archive.org/details/NPKS19820829/page/n8
+- **Other links:** https://archive.org/download/NPKS19820829/page/n8.jpg, https://archive.org/details/NPKS19820829
+- **Proof that it exists:** Page header '工商日報 ... 第九頁', date line '中華民國七十一年(一九八二)八月廿九日 星期日'; headline 「入城砦拍寫實片」「藍乃才先打招呼」 in the column 「圈中人語」 on the entertainment page.
+- **What it gives (resolver's note, not checked):** A report of August 1982 on how the director Lam Nai-choi (藍乃才) prepared and made the location shoot inside the City for Brothers from the Walled City (城寨出來者); per the lead, the account of the 8 days of shooting there.
+- **Lead:** L0096 (cited by depictions-5, depictions-film-and-tv-1966-2025)
+- **Notes:** Page 9 = archive.org leaf n8. I saw only the page image at screen size and checked the headline; I did not read the text.
 
-### lead-l0622: 三院總理與職員數百人昨日團拜 黃大仙政務處有新春酒會 城砦福利促進委會本周末聚餐
+### lead-l0097: 三不管地帶拍戲 王龍威被人挑戰
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1984-02-16
+- **Creator:** Kung Sheung Daily News (香港工商日報); the lead gives the writer as 陸嘉儀; no byline seen in the headline area
+- **Date:** 1982-04-14
 - **Kind:** press
-- **Class:** primary (A daily newspaper report printed at the time (1984-02-16).)
+- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
 - **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the newspaper is copyright of 大公報 (Ta Kung Pao).
-- **Link:** https://archive.org/details/NPTKP19840216/page/n6
-- **Other links:** https://archive.org/download/NPTKP19840216/page/n6.jpg
-- **Proof that it exists:** Leaf n6 is 大公報, 1984年2月16日 星期四, 第二張 第七版; under the article 「三院總理與職員數百人昨日團拜」, the item '▲九龍城砦街坊福利事業促進委員會，定本月十八日在九龍城獅子石道富榮華酒樓舉行新春聯歡聚餐。'
-- **What it gives (resolver's note, not checked):** A short note: the City kaifong welfare committee (九龍城砦街坊福利事業促進委員會) held its New Year dinner on 18 Feb 1984 at 富榮華酒樓 on 獅子石道 in Kowloon City.
-- **Lead:** L0622 (cited by top-zh-press-28, hk-chinese-press-1947-1984)
-- **Notes:** Leaf n6 = 第二張 第七版. Leaf found by the place of the headline in the item's 'description' (OCR headline list) and checked on the page image. The OCR text layer is unusable (vertical text).
+- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
+- **Link:** https://archive.org/details/NPKS19820414/page/n8
+- **Other links:** https://archive.org/download/NPKS19820414/page/n8.jpg, https://archive.org/details/NPKS19820414
+- **Proof that it exists:** Page header '工商日報 ... 第九頁', date line '中華民國七十一年(一九八二)四月十四日 星期三'; headline 「三不管地帶拍戲」「王龍威被人挑戰」 in the column 「圈中人語」.
+- **What it gives (resolver's note, not checked):** A report of April 1982 on the film shoot in the 'three-no-man's land' (三不管地帶), the City, where the actor 王龍威 was challenged by someone during the shoot.
+- **Lead:** L0097 (cited by depictions-5, depictions-film-and-tv-1966-2025)
+- **Notes:** Page 9 = archive.org leaf n8. I saw only the page image at screen size and checked the headline; I did not read the text.
 
-### lead-l0632: 毒品調查科警司梁志彬昨講古仔 毒販四大家族瓦解後 出現夫妻父子檔集團
+### lead-l0098: 影片寫60年代實況 藍乃才解釋非歪曲
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1984-05-22
+- **Creator:** Kung Sheung Evening News (工商晚報); no byline seen in the headline area
+- **Date:** 1982-09-08
 - **Kind:** press
-- **Class:** retrospective (A report of the time (1984) of a police officer's talk; the City facts are his first-hand account of about 1974, thus retrospective (1984).)
+- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights or licence statement in the archive.org item metadata (collection china-mail, newspapers; private uploader); the newspaper is copyright of 大公報 (Ta Kung Pao).
-- **Link:** https://archive.org/details/NPTKP19840522/page/n4
-- **Other links:** https://archive.org/download/NPTKP19840522/page/n4.jpg
-- **Proof that it exists:** Leaf n4 is 大公報, 1984年5月22日 星期二, 第二張 第五版; top right 「毒品調查科警司梁志彬昨講古仔」「毒販四大家族瓦解後」「出現夫妻父子檔集團」, with 「五十年代有兩個特點」「製毒師傅多上海人」「潮州人雄霸毒品市」「十年前城砦油蔴地果欄馬山是售毒黑點」; a photo of the talk with a ROTARY CLUB sign.
-- **What it gives (resolver's note, not checked):** A police drug-squad superintendent's talk of May 1984 on the history of the drug trade: the four big families, the family gangs after them, the 1950s, and the City as a drug-selling black spot about 1974.
-- **Lead:** L0632 (cited by top-zh-press-34, hk-chinese-press-1947-1984)
-- **Notes:** Leaf n4 = 第二張 第五版. Leaf found by the place of the headline in the item's 'description' (OCR headline list) and checked on the page image. The OCR text layer is unusable (vertical text).
+- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
+- **Link:** https://archive.org/details/NPKSE19820908/page/n3
+- **Other links:** https://archive.org/download/NPKSE19820908/page/n3.jpg, https://archive.org/details/NPKSE19820908
+- **Proof that it exists:** Page header '工商晚報 第四頁', date line '中華民國七十一年(一九八二)九月八日 星期三'; headline 「影片寫60年代實況」「藍乃才解釋非歪曲」 on the entertainment page.
+- **What it gives (resolver's note, not checked):** Lam Nai-choi (藍乃才) answers the objection to his film: he says it shows the City as it was in the 1960s and does not distort it; per the lead, the objection of the City's kaifong association, as reported by Rediffusion (麗的電視) news, September 1982.
+- **Lead:** L0098 (cited by depictions-5, depictions-film-and-tv-1966-2025)
+- **Notes:** Page 4 = archive.org leaf n3. I saw only the page image at screen size and checked the headline; I did not read the text.
 
-### lead-l0640: 工商晚報 (Kung Sheung Evening News), 16 June 1984: headline 「城砦水深一米百七居民疏散」 (as the repo reads the OCR headline list)
+### lead-l0099-1: 藍乃才開城寨出來 錢小豪高飛結片緣
+
+- **Creator:** Wah Kiu Yat Po (華僑日報); no byline seen in the headline area
+- **Date:** 1982-02-26
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
+- **Link:** https://archive.org/details/NPWK19820226/page/n25
+- **Other links:** https://archive.org/download/NPWK19820226/page/n25.jpg, https://archive.org/details/NPWK19820226
+- **Proof that it exists:** Page header '華僑日報 WAH KIU YAT PO ... 第七張第二頁', date line '中華民國七十一年 公曆一九八二年二月廿六日 星期五'; headline 「藍乃才開城寨出來」「錢小豪高飛結片緣」 at the lower left of the 「娛樂圈」 page.
+- **What it gives (resolver's note, not checked):** The start of the film Brothers from the Walled City (城寨出來者) in February 1982, with the actors 錢小豪 and 高飛.
+- **Lead:** L0099 (cited by depictions-5, depictions-film-and-tv-1966-2025)
+- **Notes:** Page 第七張第二頁 = archive.org leaf n25. I saw only the page image at screen size and checked the headline; I did not read the text.
+
+### lead-l0099-2: 藍乃材馬不停蹄趕拍 廖麗玲受得傷多心怯 (title as the lead gives it)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報); no byline seen in the headline area
+- **Date:** 1982-05-17
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
+- **Link:** https://archive.org/details/NPWK19820517/page/n25
+- **Other links:** https://archive.org/download/NPWK19820517/page/n25.jpg, https://archive.org/details/NPWK19820517
+- **Proof that it exists:** Page header '華僑日報 WAH KIU YAT PO ... 第七張第二頁', date line '公曆一九八二年五月十七日 星期一'; headline 「藍乃□馬不停蹄趕拍」「廖麗玲受得傷多心怯」 at the lower left of the 「娛樂圈」 page.
+- **What it gives (resolver's note, not checked):** The last weeks of the shoot (May 1982): the director's hurried schedule and the injuries of the actress 廖麗玲. Whether it names the City is not checked.
+- **Lead:** L0099 (cited by depictions-5, depictions-film-and-tv-1966-2025)
+- **Notes:** Page 第七張第二頁 = archive.org leaf n25. I saw only the page image at screen size and checked the headline; I did not read the text. The third character of the director's name in the headline is not clear at screen size (the lead writes 藍乃材); check it at full size.
+
+### lead-l0162-1: 華僑日報 1963-04-30: 九龍城砦 成立街坊會 委員定五月一日就職 (OCR of the headline list)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1963-04-30
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19630430
+- **Other links:** https://archive.org/metadata/NPWK19630430
+- **Proof that it exists:** archive.org item NPWK19630430, title '華僑日報 1963-04-30'; its description (OCR headline list) has '九龍城砦 成立街坊會 委員定五月一日就職' (phrase search '成立街坊會' finds this item).
+- **What it gives (resolver's note, not checked):** The founding of the City's kaifong association (街坊會) in April 1963: its committee was to take office on 1 May 1963. It can give the first officers and the aims of the body that spoke for the residents up to the clearance.
+- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
+- **Notes:** Leaf not found: the OCR full-text search of these scans is poor; look at the 本港新聞 leaves.
+
+### lead-l0162-2: 香港工商日報 1963-04-28: 赤色魔掌伸到九龍城砦！ 有人組「福利會」募款 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (工商日報)
+- **Date:** 1963-04-28
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19630428
+- **Other links:** https://archive.org/metadata/NPKS19630428
+- **Proof that it exists:** archive.org item NPKS19630428, title '香港工商日報 1963-04-28'; its description has '赤色魔掌伸到九龍城砦！ 有人組「福利會」募款'.
+- **What it gives (resolver's note, not checked):** A report of April 1963 that someone was forming a 'welfare association' (福利會) in the City and raising money, which the paper frames as a leftist ('red') move. It shows the politics around the founding of the association.
+- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
+- **Notes:** 工商日報 was a pro-Kuomintang paper; its framing is partisan.
+
+### lead-l0162-3: 香港工商日報 1963-04-30: 九龍城砦街坊會 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (工商日報)
+- **Date:** 1963-04-30
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19630430
+- **Other links:** https://archive.org/metadata/NPKS19630430
+- **Proof that it exists:** archive.org item NPKS19630430, title '香港工商日報 1963-04-30'; its description has '九龍城砦街坊會' (phrase search finds it).
+- **What it gives (resolver's note, not checked):** A second report of the founding of the City's kaifong association, the day before its committee took office (1 May 1963).
+- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
+
+### lead-l0162-4: 大公報 1963-09-03: 在九龍城砦街坊會爭取下城砦內將有街喉 水務局已答應儘速安裝 (OCR of the headline list)
+
+- **Creator:** Ta Kung Pao (大公報)
+- **Date:** 1963-09-03
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPTKP19630903
+- **Other links:** https://archive.org/metadata/NPTKP19630903
+- **Proof that it exists:** archive.org item NPTKP19630903, title '大公報 1963-09-03'; its description has '在九龍城砦街坊會爭取下城砦內將有街喉水務局已答應儘速安裝'.
+- **What it gives (resolver's note, not checked):** In September 1963 the kaifong association got the Water Supplies Department to agree to install street water taps (街喉) in the City. It gives an early date for the public standpipes and the association's work just after August 1963.
+- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
+- **Notes:** NPWK19630903 (華僑日報 of the same day) also matched the search (not opened).
+
+### lead-l0169: 工商晚報 1978-05-19: 九龍城砦老翁被殺案 一男子趕警署自首 (OCR of the headline list)
 
 - **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1984-06-16
+- **Date:** 1978-05-19
 - **Kind:** press
-- **Class:** primary (A Hong Kong evening paper's report of the time on a flood in the City.)
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19780519
+- **Other links:** https://archive.org/metadata/NPKSE19780519
+- **Proof that it exists:** archive.org item NPKSE19780519, title '工商晚報 1978-05-19'; its description has '九龍城砦老翁被殺案 一男子趕警署自首'.
+- **What it gives (resolver's note, not checked):** The day after the Cheung On Lane (長安里) killing of May 1978, a man gave himself up at a police station over the killing of the old man in the City. It is the next step of the case of gap-campus-socialwork-press-13.
+- **Lead:** L0169 (cited by gap-campus-socialwork-press-13, hk-chinese-press-1947-1984)
+
+### lead-l0231-1: 香港工商日報 1983-03-26 (OCR headline list with 城砦 and 火警)
+
+- **Creator:** Kung Sheung Daily News (工商日報)
+- **Date:** 1983-03-26
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights field in the archive.org metadata; private upload in the 'china-mail' collection; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19840616
-- **Other links:** https://archive.org/metadata/NPKSE19840616, https://archive.org/download/NPKSE19840616/NPKSE19840616.pdf
-- **Proof that it exists:** archive.org metadata: title '工商晚報 1984-06-16', date 19840616, collection china-mail, 8 images; the description (OCR headline list) has the line '城?水深一米百七居民疏散' (WebFetch read the first pair as 城破; the repo reads 城砦).
-- **What it gives (resolver's note, not checked):** A flood in the City after heavy rain about 15-16 June 1984: the depth of the water (OCR '一米百七', perhaps 1.7 m) and the evacuation of residents. Ten days before the burst water mains of 26 June 1984 (NPKSE19840626).
-- **Lead:** L0640 (cited by zh-press-22, hk-chinese-press-1947-1984)
-- **Notes:** Leaf not found: look at the local-news pages of the 8 leaves.
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19830326
+- **Other links:** https://archive.org/metadata/NPKS19830326
+- **Proof that it exists:** archive.org item NPKS19830326, title '香港工商日報 1983-03-26'; phrase search identifier:NPKS19830326 AND description:'火警' AND '城砦' finds it.
+- **What it gives (resolver's note, not checked):** The next-day report of the second-alarm fire of 25 Mar 1983 in 西頭村 (West Village) of the City that killed one person and hurt four: INFERRED the cause, the victim and the damage.
+- **Lead:** L0231 (cited by top-services-14, hk-chinese-press-1947-1984)
+
+### lead-l0231-2: 華僑日報 1983-03-26 (OCR headline list with 西頭)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1983-03-26
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19830326
+- **Other links:** https://archive.org/metadata/NPWK19830326
+- **Proof that it exists:** archive.org item NPWK19830326, title '華僑日報 1983-03-26'; phrase search for '西頭' (and the wider search for 西頭村 OR 西頭新村 OR 蕭慕瑤) finds it.
+- **What it gives (resolver's note, not checked):** INFERRED: 華僑日報's next-day report of the same 西頭村 fire of 25 Mar 1983 (one dead, four hurt).
+- **Lead:** L0231 (cited by top-services-14, hk-chinese-press-1947-1984)
+- **Notes:** Not checked on the page that the 西頭 headline is the fire.
+
+### lead-l0624: 香港工商日報 1982-04-21 (OCR keyword list: 城寨 毒品案)
+
+- **Creator:** Kung Sheung Daily News (工商日報)
+- **Date:** 1982-04-21
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19820421
+- **Other links:** https://archive.org/metadata/NPKS19820421
+- **Proof that it exists:** archive.org item NPKS19820421, title '香港工商日報 1982-04-21'; its description has '... 車輛 城寨 毒品案 小巴 探員 ...'.
+- **What it gives (resolver's note, not checked):** A City drug case reported on 21 April 1982: INFERRED the court hearing of the two people arrested in the microwave drug-factory raid of 14 April 1982 (top-zh-press-30).
+- **Lead:** L0624 (cited by top-zh-press-30, hk-chinese-press-1947-1984)
+
+### lead-l0625: 工商晚報 1981-05-16: 城砦天台加建過高當局下令限期拆卸 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Evening News (工商晚報)
+- **Date:** 1981-05-16
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19810516
+- **Other links:** https://archive.org/metadata/NPKSE19810516
+- **Proof that it exists:** archive.org item NPKSE19810516, title '工商晚報 1981-05-16'; description '城砦天台加建過高當局下令限期拆卸' and '圖爲城砦老人街一樓宇天台石墨圖右與鄰近樓宇高度比較'.
+- **What it gives (resolver's note, not checked):** The order of May 1981 to demolish an over-height rooftop addition on a building in Lo Yan Street (老人街) by a deadline, with a photo of the roof beside the heights of its neighbours. It gives the airport height control in the City in 1981.
+- **Lead:** L0625 (cited by top-zh-press-31, hk-chinese-press-1947-1984)
+
+### lead-l0626: 工商晚報 1975-06-08: 城砦兩幢大厦超出標準高度 違反機塲法被封閉 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Evening News (工商晚報)
+- **Date:** 1975-06-08
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19750608
+- **Other links:** https://archive.org/metadata/NPKSE19750608
+- **Proof that it exists:** archive.org item NPKSE19750608, title '工商晚報 1975-06-08'; its description has the headline of two City buildings above the standard height, closed under the airport law.
+- **What it gives (resolver's note, not checked):** June 1975: two buildings of the City above the airport height standard were closed under the airport law. It is the first report of the case that ended in the closure orders of 2 July 1975 (held).
+- **Lead:** L0626 (cited by top-zh-press-31, hk-chinese-press-1947-1984)
+
+### lead-l0637: 工商晚報 1979-05-21: 城砦鼠患猖獗 市政署促居民合作對付 白晝出動旁若無人不少孩子夢中被咬 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Evening News (工商晚報)
+- **Date:** 1979-05-21
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19790521
+- **Other links:** https://archive.org/metadata/NPKSE19790521
+- **Proof that it exists:** archive.org item NPKSE19790521, title '工商晚報 1979-05-21'; its description has '城砦鼠患猖獗' and '下九龍城砦之老鼠'.
+- **What it gives (resolver's note, not checked):** May 1979: rats overran the City, came out by day and bit children in their sleep; refuse had piled up for days; the Urban Services Department asked residents to help. The report has photos.
+- **Lead:** L0637 (cited by zh-press-22, hk-chinese-press-1947-1984)

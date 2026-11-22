@@ -377,23 +377,76 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0313: Laws of Hong Kong, Medical Clinics Ordinance, Chapter 343, Revised Edition 1987
 
-- **Creator:** Hong Kong Government (printed and published by the Government Printer)
-- **Date:** 1987 (Revised Edition; originally Ordinance 27 of 1963, in force 1 January 1964)
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Government, Laws of Hong Kong, Medical Clinics Ordinance, Chapter 343, Revised Edition 1987 (Hong Kong: Government Printer), pp. 1-10, Historical Laws of Hong Kong Online (HKU Libraries), https://oelawhk.lib.hku.hk/archive/files/5aff302ebdda5e98fde15365bccb20d4.pdf; with Minor Amendments 1989 Ed., p. 354, https://oelawhk.lib.hku.hk/archive/files/9ba62558cda98d87539db100cf43f7b3.pdf
+- **Class:** primary (The text of the law in force at the time (1987 edition). Primary tree.)
+- **Date of the record:** 1987 (Revised Edition; ordinance of 1963 in force 1 January 1964; amendments up to 68 of 1986)
+- **Files:**
+  - `lead-l0313-5aff302ebdda5e98fde15365bccb20d4-760147be.pdf` (in `local/`, not in git): Scanned PDF, Medical Clinics Ordinance, Cap. 343, Revised Edition 1987, 11 pages, 423,450 bytes; https://oelawhk.lib.hku.hk/archive/files/5aff302ebdda5e98fde15365bccb20d4.pdf; 423450 bytes; SHA-256 `6d711bb569cb4c1facf8ab8ef5aa2e2495f25122726ff57ab70c2f8a90bdffc2`; licence: No statement in the PDF; the home page of Historical Laws of Hong Kong Online says only 'Licences prohibit excessive downloading'. Hong Kong Government publication. (https://oelawhk.lib.hku.hk/)
+  - `lead-l0313-9ba62558cda98d87539db100cf43f7b3-f849ede1.pdf` (in `local/`, not in git): Scanned PDF, Cap. 343 Minor Amendments 1989 Ed., 1 page, 9,194 bytes; https://oelawhk.lib.hku.hk/archive/files/9ba62558cda98d87539db100cf43f7b3.pdf; 9194 bytes; SHA-256 `6c926a5cf9a586f1120edf99627249d68f99250ce89910fbcf76a6c8b55a546a`; licence: No statement in the PDF; Hong Kong Government publication. (https://oelawhk.lib.hku.hk/)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Cap. 343, 1987 Ed., p. 2, margin and heading | The Medical Clinics Ordinance was first Ordinance 27 of 1963 and came into force on 1 January 1964. The 1987 edition includes amendments up to Ordinance 68 of 1986. | "[1 January 1964.]" |
+| Cap. 343, 1987 Ed., s. 2, pp. 2-3 | A 'clinic' is any premises for the medical diagnosis or treatment of persons. It does not include, among others, premises used only for treatment by purely Chinese methods, the premises of registered dentists, or private consulting rooms of registered doctors not called a 'clinic'. | "premises used exclusively for treatment given according to purely Chinese methods" |
+| Cap. 343, 1987 Ed., s. 2, p. 4 | 'Premises' includes any place, a building or not, and any vehicle or vessel, mobile or not. | "whether consisting of a building or not, and any vehicle or vessel, whether mobile or not" |
+| Cap. 343, 1987 Ed., s. 3, p. 4 | The Registrar of Clinics is the Director of Medical and Health Services. (On the scan, 'Medical and' and 'Services' are struck out by hand with the note L.N. 76/89; the 1989 minor amendment changed the title to 'Director of Health'.) | "a Registrar of Clinics who shall be the Director of Medical and Health Services" |
+| Cap. 343, 1987 Ed., s. 4(3)(a), p. 4 | Each year, soon after 1 January, the Registrar must publish in the Gazette a list of the registered clinics and of the exempted clinics. | "a list of clinics registered under section 5 and of clinics exempted under section 8" |
+| Cap. 343, 1987 Ed., s. 5(2)(b), p. 5 | The Registrar can refuse to register a clinic if the premises are unfit because of situation, construction, accommodation, staffing or equipment. | "for reasons connected with situation, construction, accommodation, staffing or equipment" |
+| Cap. 343, 1987 Ed., s. 5(2)(c), p. 5 | He can also refuse if the clinic will not be under the continuous personal supervision of a registered medical practitioner. | "the clinic will not be under the continuous personal supervision of a registered medical practitioner" |
+| Cap. 343, 1987 Ed., s. 6(1)(a), p. 5 | A registration lasts to the end of the year. A clinic must apply to register again in the first week of November. | "during the first week of the month of November" |
+| Cap. 343, 1987 Ed., s. 7, p. 6 | Every registered clinic must appoint a registered medical practitioner who is responsible for its medical management. | "shall appoint and maintain a registered medical practitioner" |
+| Cap. 343, 1987 Ed., s. 8(1), p. 6 | The Registrar can exempt from section 7 only a clinic that existed on 5 September 1963. | "exempt from the provisions of section 7 any clinic in existence on 5 September 1963" |
+| Cap. 343, 1987 Ed., s. 8(2), p. 6 | After 31 December 1967 no exemption can be given to a clinic in a vehicle, mobile or not, or in premises that were ever a vehicle. | "in respect of a clinic carried on in a vehicle, whether mobile or not" |
+| Cap. 343, 1987 Ed., s. 8(4), pp. 6-7 | An exemption is renewed for one year at a time, on an application in the first week of November. The Registrar can refuse if someone in the clinic broke the Code of Practice in the past 12 months. | "renew any such exemption for a period of one year at a time" |
+| Cap. 343, 1987 Ed., s. 8(5), p. 7 | With each exemption the Registrar sets conditions on the pay of the persons who practise medicine in the clinic but are not registered medical practitioners. | "conditions relating to the remuneration to be paid to any persons practising medicine in the clinic other than registered medical practitioners" |
+| Cap. 343, 1987 Ed., s. 8(7), p. 7 | The Registrar can publish a Code of Practice for such unregistered persons, and it can forbid them some functions. | "may prohibit the discharge by such persons of specified functions" |
+| Cap. 343, 1987 Ed., s. 8(8), p. 7 | An unregistered person who practises in an exempted clinic under its conditions does not commit an offence under section 28 of the Medical Registration Ordinance only because of that practice. | "shall not by reason solely of such practice be guilty of an offence under that section" |
+| Cap. 343, 1987 Ed., s. 13, p. 8 | The Registrar or an authorized officer can enter and inspect at any time premises that are used, or that he believes are used, as a clinic. | "at any time enter and inspect any premises" |
+| Cap. 343, 1987 Ed., s. 14(1), pp. 8-9 | To run an unregistered clinic, or to diagnose or treat in one, is an offence: on summary conviction a fine of 50,000 dollars and two years in prison; on indictment three years (as amended in 1986). | "on summary conviction to a fine of $50,000 and to imprisonment for 2 years" |
+| Cap. 343, 1987 Ed., s. 14(1A), p. 9 | If the treatment in such a clinic injures the patient, the penalty is a fine of 100,000 dollars and three years on summary conviction, or seven years on indictment (added by Ordinance 68 of 1986). | "on summary conviction to a fine of $100,000 and to imprisonment for 3 years" |
+| Cap. 343, 1987 Ed., s. 15(1)(e), p. 10 | Regulations can set the requirements for clinic premises: ventilation, light, fire precautions, storage of dangerous drugs, latrines, water supply, sterilization and cleanliness. | "latrine accommodation and other matters of sanitation" |
+| Cap. 343, 1987 Ed., s. 8(1), p. 6 | INFERRED: INFERRED: under s. 8(1), only clinics that existed on 5 September 1963 can be exempt from having a registered doctor in charge. Thus the City's unregistered doctors of 1987 could get 'exempted clinic' status only if their clinics dated from before that day, or if the law changed. | "any clinic in existence on 5 September 1963" |
+| Minor Amendments, 1989 Ed., Cap. 343, p. 354 | Legal Notice 76 of 1989 replaced 'Medical and Health Services' by 'Health' in sections 2 and 3. | "by repealing “Medical and Health Services” and substituting “Health”" |
+
+- **Leads:**
+  - Government Gazette, yearly list of registered clinics and of clinics exempted under s. 8 (s. 4(3)(a)), for example the list published early in 1987: it can show whether any clinic in the City was registered or exempted (not held).
+  - The Code of Practice for unregistered persons practising medicine in exempted clinics, published under s. 8(7) of Cap. 343 (not held).
+### lead-l1149-1: The Central Registry of Drug Abuse - A Summary of its Background, Operation & Findings
+
+- **Creator:** Hong Kong Government, Central Registry of Drug Abuse (藥物濫用資料中央檔案室), Narcotics Division, Government Secretariat (布政司署禁毒處); preface by the Commissioner for Narcotics
+- **Date:** 1982-11
 - **Kind:** document
-- **Class:** primary (The official text of the law as in force in 1987, printed by the Government Printer at the time.)
+- **Class:** primary (A government report written at the time (preface dated November 1982) by the registry itself.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Printed: 'CROWN COPYRIGHT RESERVED' and 'Recipients are reminded that this is a RESTRICTED DOCUMENT and are requested not to reproduce or transmit any material contained in this report without the permission of the Commissioner for Narcotics, Hong Kong.' (1982); HKU site footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved'. HKU shows it open (HKUL eBooks).
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/rv043w82d
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/rv043w82d, https://digitalrepository.lib.hku.hk/service/api/iiif/images/h989s436c/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/j3861801h/full/full/0/default.jpg
+- **Proof that it exists:** Image 1 (cover): 'Hong Kong Government 香港政府 / CENTRAL REGISTRY OF DRUG ABUSE / Narcotics Division, Government Secretariat / 藥物濫用資料中央檔案室 / 布政司署禁毒處 / Special Study Reports 特別研究報告 / THE CENTRAL REGISTRY OF DRUG ABUSE - A SUMMARY OF ITS BACKGROUND, OPERATION & FINDINGS'; image 4 (preface, November 1982): 'The first computer print-outs were received in September 1978 from the new Central Registry of Drug Abuse, which began operations on the 1st of September 1976.'
+- **What it gives (resolver's note, not checked):** How the registry worked from September 1976 (the reporting agencies and the records) and its findings to about 1982: the registry behind the figures that the Narcotics Commissioner gave to the US delegation in January 1984. Hong Kong as a whole; I did not see the City named.
+- **Lead:** L1149 (cited by gap-crime-drugs-records-21, us-government-records-1948-1994)
+- **Notes:** 27 page images. The 'restricted' mark is of 1982; the HKU repository now shows it without login. Its figures end before June 1983, thus it is not the exact source of the 43,835 registrants of Sept 1976 - June 1983.
+
+### lead-l1149-2: Hong Kong Drug Abuse Trends 1981 - 1990
+
+- **Creator:** Central Registry of Drug Abuse, Narcotics Division, Government Secretariat, Hong Kong
+- **Date:** 1991
+- **Kind:** data
+- **Class:** primary (Government statistics of the registry, published in 1991 from its records of 1981-1990.)
 - **Value:** medium
 - **Language:** en
 - **Access:** open
-- **Licence:** No statement in the PDF. The home page of Historical Laws of Hong Kong Online says only 'Warning : Licences prohibit excessive downloading'. Hong Kong Government publication.
-- **Link:** https://oelawhk.lib.hku.hk/archive/files/5aff302ebdda5e98fde15365bccb20d4.pdf
-- **Other links:** https://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=%22Medical+Clinics%22&sfield=ZZ&edition=1964&no_result=50
-- **Proof that it exists:** Cover: 'LAWS OF HONG KONG / MEDICAL CLINICS ORDINANCE / CHAPTER 343 / REVISED EDITION 1987'; p. 2: 'Originally 27 of 1963', '[1 January 1964.]'; p. 6: s. 8 'Exemption from section 7'.
-- **What it gives (resolver's note, not checked):** Section 8: the Registrar can exempt from s. 7 (a registered medical practitioner in charge) any clinic in existence on 5 Sep 1963; after 31 Dec 1967 no exemption for a clinic 'carried on in a vehicle, whether mobile or not'; yearly renewal, conditions on the pay of unregistered practitioners, and a Code of Practice (1966 amendment). It is the legal frame of the 'exempted clinics' (豁免註冊診所) that the City's doctors asked for in 1987.
-- **Lead:** L0313 (cited by top-services-26, hk-chinese-press-1985-1993)
-- **Notes:** Scanned PDF, 11 pages, no text layer. The HKU search lists it under the edition '1964' (the loose-leaf edition), but the cover says Revised Edition 1987. A search of the edition 1963 gave 0 results, thus the text as enacted in 1963 was not found. The related 'minor amendment' PDF (1 p.) is https://oelawhk.lib.hku.hk/archive/files/9ba62558cda98d87539db100cf43f7b3.pdf (not opened).
+- **Licence:** Printed: 'Material in this publication may be freely quoted or reprinted, but acknowledgement is requested, together with a copy of the publication containing the quotation or reprint.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/3f463676b
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/3f463676b, https://digitalrepository.lib.hku.hk/service/api/iiif/images/5712n933q/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/th83n121b/full/full/0/default.jpg
+- **Proof that it exists:** Image 3: 'HONG KONG DRUG ABUSE TRENDS 1981 - 1990'; image 5 (contents) lists '3.18 - 3.19 . District of residence 21'; image 27 (p. 22): 'Table 3 : Percentage distribution of newly reported drug abusers by district of residence, 1990', with the row 'Kowloon City 4.6 / 7.1'.
+- **What it gives (resolver's note, not checked):** Ten years (1981-1990) of the registry's figures for Hong Kong: persons reported, active abusers, common drugs, age, age at first use, sex, marital status, schooling, employment, previous convictions, and the district of residence of new cases in 1990 (Kowloon City District 4.6% of new cases, 7.1% of the population). The City is not named.
+- **Lead:** L1149 (cited by gap-crime-drugs-records-21, us-government-records-1948-1994)
+- **Notes:** 31 page images. It gives the territory-wide drug figures of the year 1986 that the simulation needs for its drug users (INFERRED that the tables have yearly columns; I saw only the 1990 district table).

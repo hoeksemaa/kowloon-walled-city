@@ -319,3 +319,26 @@ Not read yet.
 
 - **Leads:**
   - Buildings Department occupation permit data and Transport Department road network dataset on DATA.GOV.HK / CSDI: the plan record names them but gives no URL (the repo's data/context.json uses them).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0825: 20th Annual Conference of the Hong Kong Sociological Association, 'Identity Politics in a Globalized World', abstract booklet (1 December 2018): HU Jun, 'Missing Transitions: A Case Study of the Clearance of Kowloon Walled City 1987-1995', abstract, p. 61
+
+- **Creator:** Hong Kong Sociological Association; Department of Sociology, The Chinese University of Hong Kong (abstract by HU Jun, Lingnan University)
+- **Date:** 2018-12-01
+- **Kind:** catalogue
+- **Class:** secondary (A conference abstract of 2018 on the clearance, built on later reading of Hansard and newspapers.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence stated; copyright of the association and the authors.
+- **Link:** http://www.cuhk.edu.hk/soc/hksa2018/booklet.pdf
+- **Other links:** http://www.cuhk.edu.hk/soc/hksa2018/, http://www.cuhk.edu.hk/soc/hksa2018/HKSA2018_Programme.pdf
+- **Proof that it exists:** Booklet contents 'Table of Content ... Abstracts of Panel 5 ... 61'; p. 61: 'HU Jun / Lingnan University / Missing Transitions: A Case Study of the Clearance of Kowloon Walled City 1987-1995 / Abstract / Kowloon Walled City hereafter KWC was built as the military fort established by the Qing government ...'.
+- **What it gives (resolver's note, not checked):** The abstract only: a discourse analysis of the clearance, from LegCo Hansard and the South China Morning Post, Ta Kung Pao, Wen Wei Pao, Ming Pao and Sing Tao Daily; it asks how the public saw the clearance and how the government answered, and reads it as a sign of the rise of civil society in the 1980s.
+- **Lead:** L0825 (cited by top-scholarship-1, scholarship-land-and-planning-1992-2026)
+- **Notes:** 1.1 MB PDF. Add the abstract to the held item top-scholarship-1 rather than make a new item, if the catalogue allows.

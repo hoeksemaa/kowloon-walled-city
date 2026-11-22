@@ -603,22 +603,13 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0744: 新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary
 
-- **Creator:** TV news programme (probably TVB 新聞掏寶, INFERRED); YouTube upload by the channel 'Yan Fook Jeffrey "Pastor"'
-- **Date:** footage c. 1992 per the Letterboxd list (not checked); uploaded about 2021-2022 ('4y ago')
-- **Kind:** film
-- **Class:** primary (TV news footage of Jackie Pullinger's work in the City, probably of the clearance years (INFERRED); any narration made later is secondary.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** Unofficial re-upload on YouTube; copyright of the broadcaster (not stated)
-- **Link:** https://www.youtube.com/watch?v=3FsdF3nfS_g
-- **Proof that it exists:** Page title '新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary - YouTube'; '91K views 4y ago'; 'No description has been added to this video.'
-- **What it gives (resolver's note, not checked):** Jackie Pullinger and her work with drug addicts in the City (from the title and the comments). The length and the date of the footage were not seen.
-- **Lead:** L0744 (cited by film-19, depictions-film-and-tv-1966-2025)
-- **Notes:** Watch it to date the footage and to name the programme. Compare pullinger-circle-1966-2026.
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. The YouTube page opens: 20:15 (1,215 s), uploaded 3 Nov 2022 by the channel 'Yan Fook Jeffrey "Pastor"', category Entertainment, empty description, no caption track, 91,062 views on 2026-11-21. I could not play it: the stream returned 403 to yt-dlp and ffmpeg, the embed gave error 153, and the watch page in the Playwright browser played an advert and then lost the video element. Thus I saw the video only as YouTube storyboard frames (160x90 pixels, one every 10 s, all 122 frames). I heard no sound and read no narration. The on-screen captions (a dated caption top left at 0:40 and 10:10, and the end credits at 19:50-20:10) are too small to read at this size, so I could not date the footage or name the programme. The frames do show that much of the footage is of Jackie Pullinger interviewed in several places and years, with ministry scenes.
+- **Citation:** 「新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary」, YouTube upload by the channel 'Yan Fook Jeffrey "Pastor"', 3 November 2022, 20:15, https://www.youtube.com/watch?v=3FsdF3nfS_g (broadcaster and date of the footage not seen)
+- **Class:** secondary (INFERRED: a later television programme (新聞淘寶, a title for a programme that re-shows old news footage) with dated captions over old footage; the footage inside can be a record of about 1990-1992 (the finder's Letterboxd note, not checked). If a later reader dates the footage, it can stay in the primary tree as footage.)
+- **Date of the record:** unknown; uploaded 2022-11-03
+- **Note:** the reader classed the whole item as secondary: its 3 facts are in the secondary twin, [`../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../secondary-sources/film-and-tv-footage-1958-1994/SOURCE.md).

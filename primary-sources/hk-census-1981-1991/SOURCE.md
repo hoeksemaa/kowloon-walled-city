@@ -239,38 +239,136 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0523-1: Hong Kong Monthly Digest of Statistics, August 1987
 
-- **Creator:** Census and Statistics Department, Hong Kong
-- **Date:** 1987-08
-- **Kind:** data
-- **Class:** primary (Official monthly statistics published at the time (1987).)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held January 1987 issue).
-- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM08E0100.pdf
-- **Proof that it exists:** PDF title 'Hong Kong Monthly Digest of Statistics (August 1987)', 117 pages; cover 'Monthly Digest of Statistics / August 1987 / Census and Statistics Department, Hong Kong'.
-- **What it gives (resolver's note, not checked):** Hong Kong-wide tables of 1986-1987: labour force and unemployment, wage indexes and average daily wages, consumer price indexes (A, B, Hang Seng) and retail prices; the source of the wage and CPI tables that the IDE review of 1987 reprints.
-- **Lead:** L0523 (cited by top-china-26, scholarship-history-law-society-1973-2026)
-- **Notes:** 13,670,836 bytes, over 10 MB. Hong Kong-wide figures only; no City figures (INFERRED from the contents).
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I opened the PDF from the C&SD website (117 pages, 13,670,836 bytes, scanned with an OCR text layer) and read its text layer with pdftotext; I checked the tables that I use on page images at 100-130 dpi. I read the contents and the tables useful for daily life in late 1986: labour force, wage indexes and wages, daily wages on government building sites, property price and rent indexes, wholesale prices, the CPI, the population by age, and the explanatory notes on wages and the CPI. I did not read the trade, production, money and transport tables. Hong Kong-wide figures only; nothing on the City.
+- **Citation:** Census and Statistics Department, Hong Kong. Hong Kong Monthly Digest of Statistics, August 1987. Hong Kong: Government Printer, 1987. PDF B10100021987MM08E0100.pdf, https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM08E0100.pdf
+- **Class:** primary (Official monthly statistics published at the time; many tables have rows for December 1986, the month of the model week.)
+- **Date of the record:** 1987-08
+- **Files:**
+  - `lead-l0523-1-B10100021987MM08E0100-594cf387.pdf` (in `local/`, not in git): Hong Kong Monthly Digest of Statistics, August 1987 (PDF, OCR scan, 117 pages, 13,670,836 bytes); https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM08E0100.pdf; 13670836 bytes; SHA-256 `2bcd6cedf08534d91f285d98a246fd8152764b35e34332410d6c0858884a3e2c`; licence: © Hong Kong Government (Census and Statistics Department); free download from the C&SD website under its terms of use; no open licence found
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Monthly Digest, Aug 1987, Table 2.10, p.16 (PDF p.24), Dec. 1986 column | Average daily wages of workers on government building and construction projects in December 1986: male labourer HK$145.7, female labourer HK$118.6. | "Male labourer 134.5 136.0 137.1 137.4 139.6 140.6 145.7" |
+| Monthly Digest, Aug 1987, Table 2.10, p.16 (PDF p.24), Dec. 1986 column | The same table, December 1986: concretor/bricklayer/drainlayer HK$207.1, carpenter and joiner 208.9, plumber 197.9, plasterer 216.1, painter 200.7, electrician 180.4, coolie 181.7, bamboo worker and scaffolder 241.7, steel bender 271.6 a day. | "Bamboo worker and scaffolder 227.0 229.1 231.5 230.1 235.6 234.5 241.7" |
+| Monthly Digest, Aug 1987, Explanatory notes, Section 2 (PDF p.111) | In that table the daily wage includes the basic wage, meal and transport allowances, and pay for 10 statutory holidays and 7 public holidays for daily-rated workers. | "The wage rate is defined to include basic wage, meal allowance, transportation allowance, 10-days Statutory holidays and 7-days public holidays" |
+| Monthly Digest, Aug 1987, Table 2.9 Wage indexes, p.13 (PDF p.21), 'Daily wages in Mar. 1987' | Average daily wages of craftsmen and other operatives in March 1987 (all industries in the survey): men HK$139, women HK$105, all HK$117. In manufacturing: men 135, women 105, all 114. | "Overall 124.1 126.0 127.0 127.7 130.4 132.6 134.3 135.9 140.8 139 105 117" |
+| Monthly Digest, Aug 1987, Table 2.9, p.13 (PDF p.21) | Daily wages of craftsmen and operatives in March 1987, men/women/all (HK$): garments 132/112/115; knitting 125/110/114; plastic products 132/85/99; metal products 124/82/107; electronics 131/100/106; printing 140/108/137; paper boxes 151/123/148. | "Plastic products 121.7 123.9 123.1 123.5 127.4 128.8 130.4 131.4 139.9 132 85 99" |
+| Monthly Digest, Aug 1987, Table 2.9, p.13 (PDF p.21), Dec. 1986 column | The nominal wage index of craftsmen and operatives (March 1982 = 100) was 135.9 in December 1986 and 140.8 in March 1987. The real wage index was 103.2 in December 1986. | "Real wage index Overall 98.7 99.8 98.8 100.5 101.7 101.9 102.4 103.2 105.0" |
+| Monthly Digest, Aug 1987, Table 2.9 contd., p.14 (PDF p.22), 'Monthly salaries in Mar. 1987' | Monthly salaries of supervisory, technical, clerical and other non-production workers in March 1987: all industries men HK$4,023, women 3,053, all 3,623. | "Overall 125.6 127.4 128.5 129.5 132.8 135.4 138.1 139.5 145.1 4,023 3,053 3,623" |
+| Monthly Digest, Aug 1987, Table 2.9 contd., p.14 (PDF p.22) | Monthly salaries of non-production workers in March 1987, men/women/all (HK$): Chinese restaurants 3,978/2,684/3,501; retail 5,017/3,487/4,064; personal services 2,293/1,534/1,911; sanitary and similar services 1,894/1,427/1,646. | "Sanitary and similar services 122.1 123.5 124.5 124.9 126.0 129.4 128.2 131.7 134.2 1,894 1,427 1,646" |
+| Monthly Digest, Aug 1987, Table 2.1, p.2 (PDF p.10), row Oct. 1986-Dec. 1986 | Labour force in October-December 1986: 2,723,500 (men 1,724,700, women 998,800). Participation rate: men 80.4 %, women 48.8 %. Unemployment rate 2.2 %; underemployment rate 1.2 %. | "Oct. 1986-Dec. 1986 1 724.7 998.8 2 723.5 80.4 48.8 65.0 59.0 59.4 2.2 2.2 31.8 1.2" |
+| Monthly Digest, Aug 1987, Table 8.3, p.83 (PDF p.91), 1986 Dec. row | Consumer Price Index (A) (October 1984-September 1985 = 100) in December 1986: all items 105.1, foodstuffs 101.1, housing 108.2, fuel and light 88.4, services 113.7. | "Dec. 105.1 101.1 108.2 88.4 110.4 111.5 108.2 110.8 107.2 113.7" |
+| Monthly Digest, Aug 1987, Table 8.3, p.83 (PDF p.91) | Weights of CPI (A): foodstuffs 45.48 %, housing 15.31 %, fuel and light 3.41 %, alcoholic drinks and tobacco 2.57 %, clothing and footwear 5.24 %, durable goods 5.72 %, miscellaneous goods 5.84 %, transport and vehicles 6.79 %, services 9.64 %. | "Weights attached 100.00 45.48 15.31 3.41 2.57 5.24 5.72 5.84 6.79 9.64" |
+| Monthly Digest, Aug 1987, Explanatory notes, Section 8 (PDF p.112) | CPI (A) covers about 50 % of households: those with a monthly expenditure of HK$2,000-6,499 in 1984/85. | "CPI (A) 50 $ 2,000-$ 6,499" |
+| Monthly Digest, Aug 1987, Table 8.2, p.83 (PDF p.91), 1986 Dec. row | Average wholesale prices in December 1986: Thai 100 % whole rice HK$3,008 a tonne; live pigs HK$8,560 a tonne; golden thread fish 6.39, flowering cabbage 2.38, white cabbage 0.93 and tomato 2.46 a kilogram. | "Dec. 2,959 4,701 3,008 8,560 13,250 6.39 10.41 25.05 2.38 0.93 2.46" |
+| Monthly Digest, Aug 1987, Table 5.10, p.38 (PDF p.46), 1986 4th qtr. row | Rental index of private flats under 40 m2 (4th quarter 1979 = 100): 168 in the 4th quarter of 1986; flats of 40-69.9 m2: 157. Flatted factories in the urban area: 155. | "4th qtr. 168 157 153 166 180" |
+| Monthly Digest, Aug 1987, Table 5.9, p.38 (PDF p.46), 1986 rows | Price index of private flats under 40 m2 (4th quarter 1979 = 100): 136 in the 4th quarter of 1986, up from 123 a year before. | "4th qtr. 136 131 122" |
+| Monthly Digest, Aug 1987, Table 12.1, p.99 (PDF p.107) | Estimated population of Hong Kong at mid-1987: 5,613,400 (men 2,886,600, women 2,726,800). | "Total 2 886 600 51.4 2 726 800 48.6 5 613 400 100.0" |
+
+- **Leads:**
+  - Census and Statistics Department, Quarterly Report of Wages, Salaries and Employee Benefits Statistics (the survey behind Table 2.9; cited in the explanatory notes of the August 1987 Digest): the issue for December 1986 can give wages by occupation.
+  - Census and Statistics Department, Household Expenditure Survey 1984/85 (the base of the CPI weights and household groups; cited in the explanatory notes of the August 1987 Digest).
 ### lead-l0523-2: Hong Kong Monthly Digest of Statistics, September 1987
 
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. I opened the PDF from the C&SD website (119 pages, 15,880,642 bytes, scanned with an OCR text layer) and read its text layer with pdftotext; I checked the crime table on a page image. Table 2.9 (the March 1987 wages that the IDE review cites) is the same as in the August issue (lead-l0523-1), so I give its facts there. Here I read the tables that the August issue does not give or that add a month: daily wages for July 1987, living quarters and public housing, crime, public assistance. The special review is on the Harmonized System of trade codes, not on daily life. Hong Kong-wide figures only; nothing on the City.
+- **Citation:** Census and Statistics Department, Hong Kong. Hong Kong Monthly Digest of Statistics, September 1987. Hong Kong: Government Printer, 1987. PDF B10100021987MM09E0100.pdf, https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM09E0100.pdf
+- **Class:** primary (Official monthly statistics published at the time.)
+- **Date of the record:** 1987-09
+- **Files:**
+  - `lead-l0523-2-B10100021987MM09E0100-ca98522c.pdf` (in `local/`, not in git): Hong Kong Monthly Digest of Statistics, September 1987 (PDF, OCR scan, 119 pages, 15,880,642 bytes); https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM09E0100.pdf; 15880642 bytes; SHA-256 `059494260f9dd6ebd40a45a0e223ff8598917bf6995660a1047339740f08c602`; licence: © Hong Kong Government (Census and Statistics Department); free download from the C&SD website under its terms of use; no open licence found
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Monthly Digest, Sept 1987, Table 5.2, p.33 (PDF p.41), 1986 row | Public rental flats in Kowloon and New Kowloon at the end of 1986: 283,790 flats with an authorized population of 1,130,500 (all Hong Kong: 573,708 flats, 2,430,600 persons). | "1986 60 808 291 800 283 790 1 130 500" |
+| Monthly Digest, Sept 1987, Table 5.1, p.33 (PDF p.41) | Permanent living quarters in Kowloon (Kowloon and New Kowloon) in the 3rd quarter of 1986: 594,700. | "3rd qtr. 332.0 594.7 158.1 101.3 74.3 37.3 22.6 112.6 1 432.9" |
+| Monthly Digest, Sept 1987, Table 9.1 Crime contd., p.90 (PDF p.98) | Serious narcotic offences, trafficking, 4th quarter 1986: 1,262 cases reported and 1,534 persons prosecuted. In the year 1986: 4,598 cases and 5,729 persons. | "1 262 1 534 20 274 9 609" |
+| Monthly Digest, Sept 1987, Table 9.1 Crime contd., p.90 (PDF p.98) | All police cases in the 4th quarter of 1986: 20,274 reported, 9,609 persons prosecuted. | "1 262 1 534 20 274 9 609" |
+| Monthly Digest, Sept 1987, Table 9.4, p.92 (PDF p.100), 1986 Dec. rows | Public assistance at the end of December 1986: 62,991 cases in all, of them 40,654 old age, 2,233 unemployed and 1,505 low earning. Payments in December 1986: HK$57,775,000. New applications that month: 1,367. | "Dec. 3 705 1 505 2 233 2262 62 991 57,775 1 367" |
+| Monthly Digest, Sept 1987, Table 2.10, p.16 (PDF p.24), July 1987 column | Average daily wages of workers on government building and construction projects in July 1987: male labourer HK$161.8, female labourer HK$131.5 (December 1986: 145.7 and 118.6). | "Male labourer 136.0 137.1 137.4 139.6 140.6 145.7 148.5 151.2 151.5 154.5 155.8 157.6 161.8" |
+### lead-l0855: Hong Kong Annual Digest of Statistics, 1988 Edition
+
 - **Creator:** Census and Statistics Department, Hong Kong
-- **Date:** 1987-09
+- **Date:** 1988
 - **Kind:** data
-- **Class:** primary (Official monthly statistics published at the time (1987).)
+- **Class:** primary (Official statistics compiled and published at the time; figures to the end of 1987.)
 - **Value:** medium
 - **Language:** en
 - **Access:** open
-- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held January 1987 issue).
-- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM09E0100.pdf
-- **Proof that it exists:** PDF title 'Hong Kong Monthly Digest of Statistics (September 1987)', 119 pages; cover 'Monthly Digest of Statistics / September 1987'.
-- **What it gives (resolver's note, not checked):** As the August issue, one month later; the IDE review cites this issue for the monthly pay of non-production workers by industry in March 1987 (its table 13).
-- **Lead:** L0523 (cited by top-china-26, scholarship-history-law-society-1973-2026)
-- **Notes:** 15,880,642 bytes, over 10 MB. Hong Kong-wide figures only.
+- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held 1987 issues).
+- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010003/att/B10100031988AN88E0100.pdf
+- **Proof that it exists:** PDF Info: Title 'Hong Kong Annual Digest of Statistics (1988 Edition)', Author 'Census and Statistics Department Hong Kong', scan made 2014-07-24; Linearized /N 313 (313 pages); 27,665,628 bytes (HTTP 206, application/pdf).
+- **What it gives (resolver's note, not checked):** Hong Kong-wide yearly tables to 1987 (population, households, prices, wages, rents, transport, crime, fire, utilities), with the 1986 figures again for comparison; no City figures (INFERRED, as in the 1987 edition).
+- **Lead:** L0855 (cited by services-12, hk-census-1981-1991)
+- **Notes:** Over 10 MB (27.7 MB): open it in a browser with pdf.js, as for services-12.
+
+### lead-l0858: Hong Kong Monthly Digest of Statistics, February 1987
+
+- **Creator:** Census and Statistics Department, Hong Kong
+- **Date:** 1987-02
+- **Kind:** data
+- **Class:** primary (Official monthly statistics published at the time; this issue carries the quarterly figures for October-December 1986, the quarter of the model week.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** © Hong Kong Government (Census and Statistics Department); free download under the C&SD terms of use; no open licence found (as for the held 1987 issues).
+- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1010002/att/B10100021987MM02E0100.pdf
+- **Proof that it exists:** PDF Info: Title 'Hong Kong Monthly Digest of Statistics (February 1987)', Author 'Census and Statistics Department Hong Kong', scan made 2014-07-28; Linearized /N 117 (117 pages); 14,970,342 bytes (HTTP 206, application/pdf).
+- **What it gives (resolver's note, not checked):** Hong Kong-wide monthly and quarterly tables to the end of 1986 and January 1987: labour force, wages, prices, retail prices of foods, transport, utilities and weather (contents INFERRED from the January issue); no City figures.
+- **Lead:** L0858 (cited by services-13, hk-census-1981-1991)
+- **Notes:** Over 10 MB (15.0 MB): open it in a browser with pdf.js, as for services-13. I did not see its contents page.
+
+### lead-l0863: Hong Kong 1991 population census tabulations for tertiary planning units : living quarters, households and population by type of living quarters
+
+- **Creator:** Census and Statistics Department, Hong Kong (香港政府統計處)
+- **Date:** c.1991-1992 (census of March 1991; the record gives no date)
+- **Kind:** data
+- **Class:** primary (Government census tables of the count of March 1991.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: no licence on the record or in the IIIF manifest; site footer 'Copyright (c) 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government copyright
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/4j03f1666
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/4j03f1666, https://digitalrepository.lib.hku.hk/service/api/iiif/images/j9603306k/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/jd474067t/full/full/0/default.jpg
+- **Proof that it exists:** Canvas 35 (image j9603306k) is printed p.33, '九龍及新九龍（續）', columns TPU 2.8.5, 2.8.6, 2.8.7, 2.8.8, 2.8.9; column 2.8.5: occupied quarters total '6 907', households '8 666', enumerated residents '27 130'. Canvas 30 is p.28, 'Kowloon and New Kowloon (Cont'd)', TPU 2.3.1-2.3.7.
+- **What it gives (resolver's note, not checked):** March 1991 counts for TPU 2.8.5, the planning unit of the Walled City on the 1991 TPU map: 6,907 occupied living quarters, 8,666 domestic households and 27,130 enumerated residents, by type of quarters (private self-contained 26,532 residents; roof-top structures 117; other temporary housing 33). These are the same figures as constituency R-01 Lung Shing in 1991, and the 1981 figure for TPU 285 was 62,366.
+- **Lead:** L0863 (cited by top-hkgov-15, hk-census-1981-1991); also L0864
+- **Notes:** The tables are bilingual: the English page (left) and the Chinese page (right) of each spread. The English page for TPU 2.8.5 is canvas 34 (printed p.32, not opened). Printed page = canvas - 2.
+
+### lead-l0866: Hong Kong 1991 Population Census: Tabulations for District Board Districts and Constituency Areas: Population by Age and Sex (一九九一年人口普查 有關各區議會分區及選區的統計表 按年齡及性別劃分的人口數目)
+
+- **Creator:** Census and Statistics Department, Hong Kong (香港政府統計處)
+- **Date:** c.1991-1992 (census of March 1991)
+- **Kind:** data
+- **Class:** primary (Government census tables of the count of March 1991.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: no licence on the record or in the IIIF manifest; site footer 'Copyright (c) 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government copyright
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/ff366827k
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/ff366827k, https://digitalrepository.lib.hku.hk/service/api/iiif/images/00001281s/full/full/0/default.jpg
+- **Proof that it exists:** Record title 'Hong Kong 1991 population census tabulations for district board districts and constituency areas : population by age and sex'; image 1 (00001281s) is the cover with the same title in English and Chinese and 'Census and Statistics Department, Hong Kong'.
+- **What it gives (resolver's note, not checked):** The population of each constituency by age and sex in March 1991, thus of R-01 Lung Shing (龍城), the constituency of the Walled City. It can give the age and sex structure of the area just before the clearance; compare the 1986 volume by age (top-blocked-b-3).
+- **Lead:** L0866 (cited by top-hkgov-16, hk-census-1981-1991)
+- **Notes:** The Kowloon City page was not located. In the sister volume rn3024490, the Kowloon City page is printed p.44 (image 46).
+
+### lead-l0487: Hong Kong 1981 census District Board constituency area population by age.
+
+- **Creator:** Census and Statistics Department, Hong Kong (香港政府統計處)
+- **Date:** 1982 (the lead: April 1982)
+- **Kind:** data
+- **Class:** primary (Government census tables of the count of March 1981.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: no licence on the record or in the IIIF manifest; site footer 'Copyright (c) 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government copyright
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/j38618317
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/j38618317, https://digitalrepository.lib.hku.hk/service/api/iiif/images/w3764771r/full/full/0/default.jpg
+- **Proof that it exists:** Canvas 1 (image w3764771r): cover 'HONG KONG 1981 CENSUS / District Board Constituency Area / Population by Age / Census and Statistics Department, Hong Kong'; the IIIF manifest has 53 canvases.
+- **What it gives (resolver's note, not checked):** The 1981 census population by age group for each District Board constituency area, among them the Kowloon City District constituency that held the City (the source of the table on p. 2-2 of the Facilities Study Group report). It gives the age structure five years before the 1986 by-census.
+- **Lead:** L0487 (cited by gap-district-board-housing-authority-1, kowloon-city-district-board-1981-1994)
+- **Notes:** The constituency of the City in 1981 is to be found in the tables (not read).

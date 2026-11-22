@@ -188,23 +188,29 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0405: Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin year of the Tiger)
 
-- **Creator:** Hong Kong Observatory (香港天文台)
-- **Date:** no date on the page (present-day table)
-- **Kind:** reference
-- **Class:** secondary (A present-day reference table computed by the Observatory, not a record made in 1986.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** HKO website Intellectual Property Rights Notice, Disclaimer and Conditions of Use (no named open licence; commercial use needs written authorisation), https://www.hko.gov.hk/en/readme/readme.htm
-- **Link:** https://www.hko.gov.hk/en/gts/time/calendar/text/files/T1986e.txt
-- **Other links:** https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T1986c.txt, https://data.gov.hk/en-data/dataset/hk-hko-rss-gregorian-lunar-calendar-conversion-table
-- **Proof that it exists:** Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin ... year of the Tiger) Gregorian date Lunar date Day-of-week Solar terms
-- **What it gives (resolver's note, not checked):** The lunar date and solar term of each day of 1986. The 11th lunar month began on 2 Dec 1986; Monday 15 Dec was its 14th day and Sunday 21 Dec its 20th; Monday 22 Dec (21st day) was the Winter Solstice (冬至); the 12th lunar month began on 31 Dec 1986.
-- **Lead:** L0405 (cited by services-9, hko-weather-1986-1992)
-- **Notes:** The Chinese table (alt URL) was not opened. The data.gov.hk dataset does not reach 1986.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Observatory (香港天文台), 'Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin year of the Tiger)' / 「1986(丙寅-肖虎)年公曆與農曆日期對照表」, text files T1986e.txt and T1986c.txt, no date on the files, https://www.hko.gov.hk/en/gts/time/calendar/text/files/T1986e.txt and https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T1986c.txt
+- **Class:** secondary (A present-day computed reference table, not a record of 1986. The secondary tree is right.)
+- **Date of the record:** no date on the files (present-day table)
+- **Files:**
+  - `lead-l0405-T1986e-08fdc49a.txt` (in `local/`, not in git): English text table of the Gregorian and lunar dates and the solar terms of 1986 (small text file); https://www.hko.gov.hk/en/gts/time/calendar/text/files/T1986e.txt; 26123 bytes; SHA-256 `05dad4f0081a640e077852124ff657f3ad1bbeb2c23166c01d368473829b1cbb`; licence: HKO website, 'Intellectual Property Rights Notice': the materials are subject to intellectual property rights of the Government; non-commercial use under the Observatory's conditions; commercial use needs prior written authorisation. No open licence. (https://www.hko.gov.hk/en/readme/readme.htm)
+  - `lead-l0405-T1986c-cef5cda0.txt` (in `local/`, not in git): Chinese text table of the Gregorian and lunar dates and the solar terms of 1986 (small text file); https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T1986c.txt; 32514 bytes; SHA-256 `e43c929eb607dba5caf3c4b8f3187b53a27999bcfffbbaf604d901cc0286bb0d`; licence: HKO website, 'Intellectual Property Rights Notice': the materials are subject to intellectual property rights of the Government; non-commercial use under the Observatory's conditions; commercial use needs prior written authorisation. No open licence. (https://www.hko.gov.hk/en/readme/readme.htm)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| T1986c.txt, line 1 | The Chinese year of 1986 was 丙寅 (Bing-yin), the year of the Tiger. | "1986(丙寅-肖虎)年公曆與農曆日期對照表" (1986 (Bing-yin, Tiger) year Gregorian and lunar date conversion table) |
+| T1986c.txt, line of 1986-11-02 | The 10th lunar month (十月) began on Sunday 2 November 1986. | "1986年11月02日 十月 星期日" (2 Nov 1986, 10th month, Sunday) |
+| T1986e.txt, lines of 1986/11/08 and 1986/11/22 | The solar term Winter Commences fell on 8 November 1986, and Light Snow on Saturday 22 November 1986. | "1986/11/22 21 Saturday Light Snow" |
+| T1986c.txt, line of 1986-12-01 | Monday 1 December 1986 was the 30th (last) day of the 10th lunar month. | "1986年12月01日 三十 星期一" (1 Dec 1986, 30th, Monday) |
+| T1986c.txt and T1986e.txt, line of 1986-12-02 | The 11th lunar month (十一月) began on Tuesday 2 December 1986. | "1986/12/02 11th Lunar month Tuesday" |
+| T1986c.txt, line of 1986-12-07 | The solar term Heavy Snow (大雪) fell on Sunday 7 December 1986, the 6th day (初六) of the 11th lunar month. | "1986年12月07日 初六 星期日 大雪" (7 Dec 1986, 6th day, Sunday, Heavy Snow) |
+| T1986c.txt, line of 1986-12-15 | Monday 15 December 1986, the first day of the week of the simulation, was the 14th day (十四) of the 11th lunar month. | "1986年12月15日 十四 星期一" (15 Dec 1986, 14th day, Monday) |
+| T1986e.txt, line of 1986/12/16 | INFERRED: Tuesday 16 December 1986 was the 15th day of the 11th lunar month. In the Chinese lunar calendar the 15th day is about the day of the full moon (INFERRED from the calendar rule; the table does not say it). | "1986/12/16 15 Tuesday" |
+| T1986c.txt, line of 1986-12-21 | Sunday 21 December 1986, the last day of the week of the simulation, was the 20th day (二十) of the 11th lunar month. | "1986年12月21日 二十 星期日" (21 Dec 1986, 20th day, Sunday) |
+| T1986c.txt, line of 1986-12-22 | Monday 22 December 1986 was the Winter Solstice (冬至), the 21st day (廿一) of the 11th lunar month. | "1986年12月22日 廿一 星期一 冬至" (22 Dec 1986, 21st day, Monday, Winter Solstice) |
+| T1986c.txt, line of 1986-12-31 | The 12th lunar month (十二月) began on Wednesday 31 December 1986. | "1986年12月31日 十二月 星期三" (31 Dec 1986, 12th month, Wednesday) |

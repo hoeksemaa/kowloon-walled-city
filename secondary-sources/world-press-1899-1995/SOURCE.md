@@ -113,3 +113,32 @@ See the leads under each item in the primary folder.
 |---|---|---|
 | East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Background: Dr Turpin set up the first Project Concern outpatient clinic in the Walled City of Kowloon. (The OCR garbles the words; my reading of the sentence.) | "Dr. Turpin established the first Project Concern outpatient clinic in Hong Kong's Walled City of Kowloon." |
 | East/West (東西報), San Francisco, vol. 3 no. 41, 15 Oct 1969, p. 5 ('East/West — 5'), item 'Project Concern Week proclaimed' | Background: a second clinic followed, for refugees in Jordan Valley, Hong Kong. | "A second clinic was then begun for refugees in Hong Kong's Jordan Valley." |
+
+### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Barbara Basler, 'Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls', The New York Times, 16 June 1992; Wayback Machine capture of 19 May 2013 (single-page view), https://web.archive.org/web/20130519025125/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html?pagewanted=all&src=pm
+- **Class:** primary (A news report of the time (June 1992, during the clearance), with the words of residents and of an official. Its background history and the estimates of Suenn Ho are secondary. The primary tree is right.)
+- **Date of the record:** 1992-06-16
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/world-press-1899-1995/SOURCE.md`](../../primary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback capture 2013-05-19, single-page view, para. 15 | Suenn Ho estimated that at the recent peak of 40,000 people, each person had about seven square feet of living space. She said that whole families often lived and worked in one tiny room. These are her estimates. | "each person had about seven square feet of living space, and it was common for whole families to live and work in one tiny room." |
+| Wayback capture 2013-05-19, single-page view, para. 18 | Suenn Ho said that brothels, peep shows and drug dens filled the City in the 1950s and 1960s, when criminal gangs ran it. After the police became more active in the 1970s, more businesses came to avoid regulations and taxes. | "riddled with brothels, peep shows and drug dens in the 1950's and 60's when criminal gangs virtually ran the area" |
+| Wayback capture 2013-05-19, single-page view, para. 23 | The article's history says that after the agreement of 1984 to return Hong Kong to China in 1997, Britain and China began negotiations on the City, and that a plan to raze it was announced in 1987. | "In 1987 a plan to raze it was announced." |
+| Wayback capture 2013-05-19, single-page view, para. 4 | The article says that the walls were torn down by the Japanese forces in the Second World War. | "The enclave has no walls now because occupying Japanese forces tore them down in World War II." |
+
+### lead-l0714-2: HONG KONG'S WORST SLUM SEEMS PLEASED TO FACE ITS DOOM
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Nicholas D. Kristof, Special to the New York Times, 'Hong Kong's Worst Slum Seems Pleased to Face Its Doom', The New York Times, 25 January 1987, dateline Hong Kong, 24 January; Wayback Machine capture of 24 May 2015, https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
+- **Class:** primary (A news report of January 1987 (dateline 24 January 1987), with the words of named residents. Its background history is secondary. The primary tree is right.)
+- **Date of the record:** 1987-01-24 (dateline); published 1987-01-25
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/world-press-1899-1995/SOURCE.md`](../../primary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback capture 2015-05-24, paras. 10-11 | The article says that a similar plan about 25 years earlier (about 1962) caused protests from residents and from Beijing, and that the government withdrew it. | "Twenty-five years ago a proposal similar to the present one led to sharp protests from both residents and from Beijing." |
+| Wayback capture 2015-05-24, para. 11 | The article says that 'three years ago' the Chinese official Xu Jiatun visited the City and that British officials protested. (The repo dates the visit to 7 August 1983 from another source.) | "just three years ago a Chinese official, Xu Jiatun, caused a stir by visiting the Walled City." |
+| Wayback capture 2015-05-24, para. 5 | The article's history says that the City began about 100 years earlier as a village, and that its granite walls were torn down four decades earlier. | "the granite walls that gave it its name were torn down four decades ago." |

@@ -184,3 +184,17 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | video 10:38 | The narration says that Pullinger came to the City twenty years before the film. | "Twenty years ago, Jesus called this woman to the Walled City." |
+
+### lead-l0744: 新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary
+
+- **Status:** Partly read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21. The YouTube page opens: 20:15 (1,215 s), uploaded 3 Nov 2022 by the channel 'Yan Fook Jeffrey "Pastor"', category Entertainment, empty description, no caption track, 91,062 views on 2026-11-21. I could not play it: the stream returned 403 to yt-dlp and ffmpeg, the embed gave error 153, and the watch page in the Playwright browser played an advert and then lost the video element. Thus I saw the video only as YouTube storyboard frames (160x90 pixels, one every 10 s, all 122 frames). I heard no sound and read no narration. The on-screen captions (a dated caption top left at 0:40 and 10:10, and the end credits at 19:50-20:10) are too small to read at this size, so I could not date the footage or name the programme. The frames do show that much of the footage is of Jackie Pullinger interviewed in several places and years, with ministry scenes.
+- **Citation:** 「新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary」, YouTube upload by the channel 'Yan Fook Jeffrey "Pastor"', 3 November 2022, 20:15, https://www.youtube.com/watch?v=3FsdF3nfS_g (broadcaster and date of the footage not seen)
+- **Class:** secondary (INFERRED: a later television programme (新聞淘寶, a title for a programme that re-shows old news footage) with dated captions over old footage; the footage inside can be a record of about 1990-1992 (the finder's Letterboxd note, not checked). If a later reader dates the footage, it can stay in the primary tree as footage.)
+- **Date of the record:** unknown; uploaded 2022-11-03
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md`](../../primary-sources/film-and-tv-footage-1958-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube title | The programme's title presents Jackie Pullinger as 'the remarkable woman of the Walled City' (城寨奇女子). | "新聞淘寶 - 城寨奇女子 The Story of Jackie Pullinger - documentary" (News treasure: the remarkable woman of the Walled City.) |
+| storyboard frames 1:00-1:10, 10:10-11:40 (no text readable in these frames; the quote is from the video title) | INFERRED: The storyboard frames at about 1:00-1:10 and 10:10-11:40 show Pullinger walking with others in very dark, narrow passages with wet, dirty walls and a low ceiling; these are probably alleys of the City (inferred from the title; the place is not named in any text I could read). | "城寨奇女子" (The remarkable woman of the Walled City.) |
+| storyboard frames 5:50-6:20 (no text readable in these frames; the quote is from the video title) | INFERRED: The frames at about 6:00-6:20 show Pullinger talking in a narrow alley beside wooden doors with red paper notices; the place is probably in or near the City (inferred). | "城寨奇女子" (The remarkable woman of the Walled City.) |
