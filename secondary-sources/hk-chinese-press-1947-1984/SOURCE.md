@@ -112,3 +112,18 @@ See the leads under each item in the primary folder.
 | HKBU 港澳問題剪報索引, 卷六 1963, 乙 [2], online p.56 (printed p.54) | 工商日報 of 14 May 1963, p.4: City residents who were not pro-Communist were forced to move; their shop signs were torn down and their furniture carried out. | "〈非親共者皆被迫遷 強拆招牌搬走傢俬〉，《工商日報》，1963 年 5 月 14 日，頁 4" ('All non-pro-Communists forced to move: signboards forcibly removed, furniture carried away', Kung Sheung Daily News, 14 May 1963, p.4) |
 | HKBU 港澳問題剪報索引, 卷六 1963, 乙 [2], online p.56 (printed p.54) | 星島日報 of 27 May 1963, p.23: a school in the City was disturbed all day; more than 20 strong men came several times and threatened the principal to move out the school's things. | "〈城砦一學校竟日被搗亂 廿餘壯漢幾番臨門 威嚇校長搬走用具〉，《星島日報》，1963 年 5 月 27 日，頁 23" ('A school in the City harassed all day: twenty-odd strong men came several times and threatened the principal to remove its equipment', Sing Tao Daily, 27 May 1963, p.23) |
 | HKBU 港澳問題剪報索引, 卷六 1963, 乙 [2], online p.56 (printed p.54) | 星島日報 of 31 May 1963, p.23: a mysterious notice appeared in the City, telling residents to register without authority. | "〈擅通知居民登記 城砦出現神秘佈告〉，《星島日報》，1963 年 5 月 31 日，頁 23" ('Unauthorized notice tells residents to register: mysterious notice appears in the City', Sing Tao Daily, 31 May 1963, p.23) |
+
+### lead-l0632: 毒品調查科警司梁志彬昨講古仔 毒販四大家族瓦解後 出現夫妻父子檔集團
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Ta Kung Pao (大公報), 「毒品調查科警司梁志彬昨講古仔」「毒販四大家族瓦解後 出現夫妻父子檔集團」「自己負責搓毒 妻女推銷 兒子兄弟販運」, with the sub-headline 「十年前城砦油蔴地果欄馬山是售毒黑點」, 22 May 1984, 第二張, archive.org item NPTKP19840522, leaf n4, https://archive.org/details/NPTKP19840522/page/n4
+- **Class:** primary (A news report of a talk of 21 May 1984 by a police drug-squad officer. His statements about the 1950s-1970s are his account of the past; the paper's own note on the 'four families' is background (secondary).)
+- **Date of the record:** 1984-05-22 (reports a talk of 21 May 1984)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../primary-sources/hk-chinese-press-1947-1984/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19840522, leaf n4 (第二張), para 1, editor's note (按) | The paper's note: two of the 'four big families' were 吳錫豪 (跛豪) and the brothers 馬惜如. | 「四大家族」其中兩大家族是吳錫豪（跛豪）和馬惜如兄弟 (Two of the 'four big families' were 吳錫豪 (跛豪) and the 馬惜如 brothers.) |
+| NPTKP19840522, leaf n4 (第二張), first part, para 4 | He said that the 'four big families' formed in the 1950s and 1960s. They smuggled tons of drugs from Thailand by fishing boat and cargo ship, and their members were mostly Chiu Chow (潮籍) people. | "毒販用漁船、貨船從泰國偷運數以噸計毒品來港" (The dealers smuggled drugs by the ton from Thailand to Hong Kong in fishing boats and cargo ships.) |
+| NPTKP19840522, leaf n4 (第二張), second part, para 1 | He said that in the 1950s the drug cooks were mainly Shanghainese, who hired Chiu Chow assistants from the mainland. Chiu Chow cooks later took over. | "五十年代的製毒師傅主要是上海人" (The drug-making masters of the 1950s were mainly Shanghainese.) |
+| NPTKP19840522, leaf n4 (第二張), first part, para 3 | He said that red pills (紅丸) made from heroin were first found in 1927, the first red-pill workshop in 1928, and the first heroin workshop in 1938. | "一九三八年，警方破獲第一間海洛英工場" (In 1938 the police raided the first heroin workshop.) |

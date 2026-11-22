@@ -295,40 +295,74 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
 
-- **Creator:** Barbara Basler (The New York Times)
-- **Date:** 1992-06-16
-- **Kind:** press
-- **Class:** primary (A report of the time by a reporter in the City in June 1992, with the words of residents and of Suenn Ho; its history paragraphs are background (secondary).)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © The New York Times; Wayback Machine capture of 2013-04-16 (nytimes.com itself is metered)
-- **Link:** https://web.archive.org/web/20130416022751/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html
-- **Other links:** https://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html
-- **Proof that it exists:** Page title 'Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls - New York Times'; byline 'By BARBARA BASLER Published: June 16, 1992'; first paragraph 'The two square city blocks, just beyond the glittering hotels and fashionable boutiques of Kowloon, have been contested territory since 1899'.
-- **What it gives (resolver's note, not checked):** June 1992, during the clearance: $384 million compensation for 900 businesses and 10,700 households; about 2,000 people still inside, demolition to start the next January. Some families still fetched water in buckets and paid workers to collect chamber-pot waste each morning. A 58-year-old herbalist, seven years in the City, lived and worked with his family of four in 290 sq ft and earned $2,000 a month.
-- **Lead:** L0714 (cited by ja-1, surveys-and-studies-1960-1995)
-- **Notes:** Suenn Ho's figure of 'about seven square feet' a person at the peak of 40,000 is her own estimate. Read the 'Single-Page' view of the same capture.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Barbara Basler, 'Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls', The New York Times, 16 June 1992; Wayback Machine capture of 19 May 2013 (single-page view), https://web.archive.org/web/20130519025125/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html?pagewanted=all&src=pm
+- **Class:** primary (A news report of the time (June 1992, during the clearance), with the words of residents and of an official. Its background history and the estimates of Suenn Ho are secondary. The primary tree is right.)
+- **Date of the record:** 1992-06-16
+- **Files:**
+  - `lead-l0714-hong-kong-journal-the-walled-city-home-to-huddled-masses-fal-7dd44cc5.html` (in `local/`, not in git): HTML of the single-page view of the article (Wayback capture of 2013-05-19); https://web.archive.org/web/20130519025125/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html?pagewanted=all&src=pm; 46171 bytes; SHA-256 `408ce31d76b24b15f1adb14e9c55f6d563e48403f435ab16ab70e565f6eb0ba2`; licence: Copyright The New York Times Company (the page footer: 'Copyright 2013 The New York Times Company'); no open licence (https://web.archive.org/web/20130519025125/http://www.nytimes.com/1992/06/16/world/hong-kong-journal-the-walled-city-home-to-huddled-masses-falls.html?pagewanted=all&src=pm)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback capture 2013-05-19, single-page view, para. 2 | The reporter describes the City as two square city blocks just beyond the hotels and boutiques of Kowloon. | "The two square city blocks, just beyond the glittering hotels and fashionable boutiques of Kowloon" |
+| Wayback capture 2013-05-19, single-page view, para. 5 | In 1992 no one in the City paid taxes. The buildings broke all safety and building ordinances, and the restaurants obeyed no health codes. | "no one pays taxes and everyone lives and works in strange contorted buildings that defy all safety and building ordinances. Restaurants obey no health codes." |
+| Wayback capture 2013-05-19, single-page view, para. 6 | In 1992 some families still fetched their water in buckets. They paid workers to collect the waste of their chamber pots each morning. | "some families still fetch their water in buckets, and pay workers to collect the waste from their chamber pots each morning." |
+| Wayback capture 2013-05-19, single-page view, para. 7 | Suenn Ho, an American architect, was studying the City on a Fulbright grant in 1992. She said that the City showed what people give up for money: sunlight, fresh air and space. | "The Walled City shows what people will give up for the sake of money -- sunlight, fresh air, space" |
+| Wayback capture 2013-05-19, single-page view, paras. 8-9 | A senior colonial official called the City a health and environmental hazard. He said that Britain and China had put aside their dispute over it. | "is a health and environmental hazard." |
+| Wayback capture 2013-05-19, single-page view, para. 11 | INFERRED: The Hong Kong Government was paying $384 million to compensate the 900 businesses and 10,700 households that had to move. The article does not say which dollar; The New York Times usually gives US dollars (INFERRED). | "paying out $384 million to compensate the 900 businesses and 10,700 households that must be relocated." |
+| Wayback capture 2013-05-19, single-page view, para. 12 | Many people were forced out in eviction operations that were rowdy and sometimes violent. In June 1992 only about 2,000 people remained. Demolition was to start in January 1993. | "Only about 2,000 people remain and they will be gone soon, with demolition to start next January." |
+| Wayback capture 2013-05-19, single-page view, para. 13 | The streets were so narrow that a person with arms stretched out could touch the buildings on both sides. | "The streets are so narrow that when you stretch your arms you can touch buildings on either side." |
+| Wayback capture 2013-05-19, single-page view, para. 14 | The reporter says that the buildings were 10 to 14 storeys tall, had little foundation, and grew wider as they went up, so that they blocked the sunlight. She calls them wooden: this is her word. | "The wooden buildings, 10 to 14 stories tall, have little foundation, and grow wider as they go up, blocking the sunlight." |
+| Wayback capture 2013-05-19, single-page view, para. 16 | A Chinese herbalist, recently evicted, had lived with his family of four in a 290-square-foot flat. In the same flat he ran a medicine shop and operated on patients, all without a licence. | "he and his family of four lived in a 290-square-foot apartment where he also ran a medicine shop and even operated on patients, all without a license." |
+| Wayback capture 2013-05-19, single-page view, para. 16 | INFERRED: The herbalist said that he earned $2,000 a month, paid no taxes and paid only a little rent. The article does not say which dollar; The New York Times usually gives US dollars (INFERRED). | "I made $2,000 a month and paid no taxes, only a little rent." |
+| Wayback capture 2013-05-19, single-page view, para. 17 | The herbalist was 58 years old. He had come from China and had lived in the City for seven years (thus from about 1985). He said that the City was peaceful. | "If you live here you know that it is peaceful." |
+| Wayback capture 2013-05-19, single-page view, para. 19 | A recent government survey found scores of small bakeries, butcher shops, clothing, toy and noodle makers, and medical and dental clinics in the City. Their customers lived outside the City and came for the lower prices. | "scores of small bakeries, butcher shops, clothing, toy and noodle manufacturers, and medical and dental clinics thriving here" |
+| Wayback capture 2013-05-19, single-page view, para. 24 | INFERRED: The eviction operations began a year and a half before June 1992, thus about the end of 1990 (INFERRED from the date of the article). | "Eviction operations began a year and a half ago." |
+| Wayback capture 2013-05-19, single-page view, para. 25 | Cheng Siu-tsing, a housewife, spoke to the reporter under a huge tangle of wires on 'Kung Street' (the name as the article writes it; it gives no Chinese characters). She said that the City was a good place to raise a family. | "standing beneath a huge tangle of wires on Kung Street" |
+| Wayback capture 2013-05-19, single-page view, para. 25 | Cheng Siu-tsing said that her family saved money by living in the City, and that her husband worked in a factory close by. | "We save money by living here, and my husband is close to the factory where he works." |
+
+- **Leads:**
+  - The 'recent government survey' of the businesses of the City that the article cites (scores of bakeries, butcher shops, clothing, toy and noodle makers, clinics), about 1991-1992: not named (not held).
+  - Suenn Ho's Fulbright study of the Walled City (about 1991-1992): the article names it but gives no title.
 ### lead-l0714-2: HONG KONG'S WORST SLUM SEEMS PLEASED TO FACE ITS DOOM
 
-- **Creator:** Nicholas D. Kristof, Special to the New York Times
-- **Date:** 1987-01-25
-- **Kind:** press
-- **Class:** primary (A report of the time from inside the City, ten days after the clearance announcement, with the words of named residents; its history paragraphs are background (secondary).)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © The New York Times; Wayback Machine capture of 2015-05-24
-- **Link:** https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
-- **Other links:** https://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
-- **Proof that it exists:** Page title 'HONG KONG'S WORST SLUM SEEMS PLEASED TO FACE ITS DOOM - NYTimes.com'; 'By NICHOLAS D. KRISTOF, Special to the New York Times'; 'Published: January 25, 1987'; 'The Kowloon Walled City, as the slum is known, is a seven-acre pocket of crime and filth'.
-- **What it gives (resolver's note, not checked):** January 1987, five weeks after the week of the simulation: named residents (Lam Chung, an electrical worker on a 13th floor with no lift and no running water, who fetched water from taps outside; Chan Yeekam, 63, a former waste-paper collector, five people in a 4th-floor flat; Chu Yuehshan, a real-estate broker of the City who earned about $30,000 a year). One-chair dentists' offices with dentures in the window; no fire escapes; about 40,000 people.
-- **Lead:** L0714 (cited by ja-1, surveys-and-studies-1960-1995)
-- **Notes:** Not cited by any item of the repo: found through the 'More Like This' box of the 1992 article. The romanized names have no Chinese characters in the source: do not guess them.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Nicholas D. Kristof, Special to the New York Times, 'Hong Kong's Worst Slum Seems Pleased to Face Its Doom', The New York Times, 25 January 1987, dateline Hong Kong, 24 January; Wayback Machine capture of 24 May 2015, https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html
+- **Class:** primary (A news report of January 1987 (dateline 24 January 1987), with the words of named residents. Its background history is secondary. The primary tree is right.)
+- **Date of the record:** 1987-01-24 (dateline); published 1987-01-25
+- **Files:**
+  - `lead-l0714-2-hong-kong-s-worst-slum-seems-pleased-to-face-its-doom-af82a7b1.html` (in `local/`, not in git): HTML of the article page (Wayback capture of 2015-05-24); https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html; 50068 bytes; SHA-256 `cd49c2a211c1a9165f9701329f26c559ae967f22f174b995e69fbf3134fd1673`; licence: Copyright The New York Times Company (the page footer: '© 2015 The New York Times Company'); no open licence (https://web.archive.org/web/20150524213624/http://www.nytimes.com/1987/01/25/world/hong-kong-s-worst-slum-seems-pleased-to-face-its-doom.html)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback capture 2015-05-24, dateline | The article was written in Hong Kong on 24 January 1987, five weeks after the week of the simulation, and published on 25 January 1987. | "HONG KONG, Jan. 24" |
+| Wayback capture 2015-05-24, para. 1 | In the depths of the City people walked on paths like tunnels. The buildings were so close that the sky was a thin crack, 15 storeys above the alleys and dripping pipes. | "the sky is just a thin crack in the blackness, 15 stories above a jumble of contorted alleys and dripping pipes." |
+| Wayback capture 2015-05-24, para. 2 | The article gives the City as seven acres with some 40,000 people. | "a seven-acre pocket of crime and filth ... Some 40,000 people live within its boundaries" |
+| Wayback capture 2015-05-24, para. 3 | In the week before 24 January 1987 the Hong Kong Government announced that the City would be torn down and made into a park, and that the residents would be compensated and moved. | "the Hong Kong Government announced that the slum would be torn down and turned into a park." |
+| Wayback capture 2015-05-24, para. 4 | Lam Chung, an electrical worker, lived on the 13th floor of a building with no lift and no running water. He had to fetch water from taps outside. | "an electrical worker who lives on the 13th floor of a building without an elevator and running water. He must collect water from taps outside." |
+| Wayback capture 2015-05-24, para. 4 | Lam Chung said that the place was terrible and that its demolition was a good thing. | "This place is terrible, and demolishing it is a good thing" |
+| Wayback capture 2015-05-24, para. 6 | New buildings were built against old ones and shared a single wall with them. The reporter says that there were no streets, only dark, cramped alleys. | "Buildings were built against old ones, sharing a single wall. There are no streets, only dark, cramped alleys." |
+| Wayback capture 2015-05-24, para. 7 | Chan Yeekam, a 63-year-old woman who used to collect waste paper for a living, said that the City was filthy and that water dripped everywhere. | "It's so filthy here, and water drips everywhere" |
+| Wayback capture 2015-05-24, para. 7 | Chan Yeekam led the reporter up a dark staircase to her small flat on the fourth floor. Five people lived in it. | "She led a visitor up a dark staircase to her small fourth-floor apartment, in which five people live." |
+| Wayback capture 2015-05-24, para. 7 | No flat in the City had a fire escape. Officials called the whole City a fire trap. | "Like all the other apartments, it has no fire escape. Officials describe the entire slum as a fire trap." |
+| Wayback capture 2015-05-24, para. 8 | Chan Yeekam welcomed a move to a new building, but she was concerned about the amount of the compensation. | "welcomes the prospect of relocation into a new building but is concerned that she be adequately compensated." |
+| Wayback capture 2015-05-24, para. 9 | The Hong Kong branch of the New China News Agency said that the plan was good for the residents and for the stability and prosperity of Hong Kong. | "This plan will not only be for the benefit of the residents, it will also be advantageous for the stability and prosperity of Hong Kong" |
+| Wayback capture 2015-05-24, para. 12 | At the news conference of the announcement, Hong Kong officials would not say who had jurisdiction in the City. | "Hong Kong Government officials declined to discuss who now has jurisdiction in the Walled City." |
+| Wayback capture 2015-05-24, para. 13 | Most residents accepted the demolition if they got enough money for their flats and were not moved too far away. | "so long as they are adequately paid for their apartments and are not moved too far from the city" |
+| Wayback capture 2015-05-24, para. 14 | Doctors and dentists with licences from China but not from Hong Kong had tiny practices in the City. | "Doctors and dentists who have licenses from China but not from Hong Kong, for example, now have tiny practices in the Walled City." |
+| Wayback capture 2015-05-24, para. 14 | A dentist's office had one chair, a few tools and a set of dentures in the window. Patients waited to have teeth pulled in the same small room where another patient was being treated. | "A dentist's office consists of a chair, a few tools and a set of dentures in the window." |
+| Wayback capture 2015-05-24, para. 15 | The Chinese-language Ming Pao Daily News warned in an editorial that the unlicensed doctors and dentists, faced with unemployment, would probably not cooperate. | "Faced with pending unemployment, the chance that they will not cooperate is rather high" |
+| Wayback capture 2015-05-24, para. 17 | INFERRED: Chu Yuehshan was a real-estate broker for the City. He said that he earned about $30,000 a year. The article does not say which dollar; The New York Times usually gives US dollars (INFERRED). | "said he earned about $30,000 a year as a real-estate broker for the Walled City." |
+| Wayback capture 2015-05-24, para. 17 | Chu Yuehshan was furious about the plan. He said that in the City he knew everything, but elsewhere he would have no connections. | "This is my livelihood. Here I know everything, but elsewhere I would have no connections." |
+| Wayback capture 2015-05-24, paras. 18-19 | Chu's wife sewed at home. She said that their young son would do better in a modern housing estate, but Chu said that he would be unemployed. | "Mr. Chu's wife looked up from her sewing and suggested that their young boy would do better growing up in a modern housing project." |
+
+- **Leads:**
+  - Ming Pao Daily News, editorial on the clearance plan and the unlicensed doctors and dentists of the City, about 15-24 January 1987 (cited by the article; not held).
+  - Hong Kong branch of the New China News Agency, statement on the clearance plan, about 14-24 January 1987 (cited by the article; not held).

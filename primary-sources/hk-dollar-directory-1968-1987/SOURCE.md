@@ -123,23 +123,24 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0724: Hong Kong $ directory, 1988 edition
 
-- **Creator:** Local Printing Press (Hong Kong)
-- **Date:** 1988
-- **Kind:** reference
-- **Class:** primary (A yearly commercial directory made at the time; its entries are records of 1988.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement in the archive.org metadata; scan by the University of Toronto
-- **Link:** https://archive.org/details/31761120250261
-- **Other links:** https://archive.org/metadata/31761120250261
-- **Proof that it exists:** archive.org metadata: title 'Hong Kong $ directory', date 1988, publisher '[Hong Kong : Local Printing Press]', contributor 'RCL Canada-Hong Kong Library - University of Toronto', 1170 images, no access restriction.
-- **What it gives (resolver's note, not checked):** The edition after 1987: whether the Salvation Army still listed its Walled City unit (14 Loong Chun Road) and its clinic and kindergarten in 1988. The search hits on pages 945, 1028 and 1032 are the places to check by eye.
-- **Lead:** L0724 (cited by top-missions-1, hk-dollar-directory-1968-1987); also L0726
-- **Notes:** Page numbers are BookReader page indexes from inside.php, not printed pages. The 1987 edition had the entries on printed pp. 884-885 and 967-968.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong $ directory, 1988 edition (Hong Kong: Local Printing Press), The Salvation Army: Educational Department, p. 897 (BookReader leaf 945); Command Headquarters and services, p. 984 (leaf 1032); clinics, p. 985 (leaf 1033); scan by RCL Canada-Hong Kong Library, University of Toronto, https://archive.org/details/31761120250261
+- **Class:** primary (A directory of the time (1988). Primary tree.)
+- **Date of the record:** 1988 (edition)
+- **Files:**
+  - `lead-l0724-n944-1e72570c.jpg` (in `local/`, not in git): Page image of p. 897 (archive.org page n944; jp2 leaf 945): Salvation Army schools and kindergartens, 1988; https://archive.org/download/31761120250261/page/n944.jpg; 820130 bytes; SHA-256 `c607b2728fe6a2d72eab43cf546c5476c25d9ab8d160815ed73b94d83764d386`; licence: No rights statement in the archive.org metadata; scan by the University of Toronto; copyright of the publisher not stated (https://archive.org/metadata/31761120250261)
+  - `lead-l0724-n1032-5de77ee5.jpg` (in `local/`, not in git): Page image of p. 985 (archive.org page n1032; jp2 leaf 1033): Salvation Army services and clinics, 1988; https://archive.org/download/31761120250261/page/n1032.jpg; 896896 bytes; SHA-256 `b60b14fdbe066d0b36e2c819806a056fe27fc57efb315ceaa5a56da9c8e839e2`; licence: No rights statement in the archive.org metadata; scan by the University of Toronto; copyright of the publisher not stated (https://archive.org/metadata/31761120250261)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 897 (leaf 945), left column | In the 1988 edition, the Salvation Army Educational Department is at 11 Wing Sing Lane, Yaumati. Its list of government subsidized schools (William Booth, Anne Wyllie, Lai King, Kwong Yu, Lau Ng Ying, Tin Ka Ping) has no school in the City. | "Hong Kong Command. (Educational Department). 11 Wing Sing Lane, Yaumati, Kowloon." |
+| p. 897 (leaf 945), right column | The 1988 kindergarten list of the Salvation Army (Ap Lei Chau, Chan Kwan Tung, Sau Mau Ping, Jat Min Chuen, Fu Keung, Wanchai, Tai Hang Tung) has no Walled City kindergarten, as in 1987. | "Kindergartens: Supervisor—Major Basil B. Saunders, B.Sc., Dip.Ed." |
+| p. 985 (leaf 1033), right column | The 1988 Salvation Army clinic list has only three clinics: Tai Hang Tung, Tai Woh Hau and Yau Tong. The Walled City Clinic (28 Lung Chung Road, G/F, in the editions of 1983 to 1987) and the North Point Clinic are not in it. | "CLINICS Tai Hang Tung Clinic: 1 Lung Chu Street, Tai Hang Tung, Kowloon." |
+| whole item (OCR full-text search) | A search of the OCR text of the whole 1988 edition finds no 'Walled City', no 'Loong Chun', no 'Lung Chung' and no telephone 3-820644 (the quote is the search term). | "Walled City" |
+| p. 985 (leaf 1033), compared with the 1987 edition p. 968 | INFERRED: INFERRED: the Salvation Army Walled City Clinic closed, or left the directory, between the 1987 and 1988 editions. The directory gives no reason or date. | "Yau Tong Clinic: Block 26, Yau Tong R/E, Yau Tong, Kowloon." |
+| p. 984 (leaf 1032), OCR text | In 1988 the Salvation Army Command Headquarters was at 11 Wing Sing Lane, Yaumatei; the Officer Commanding was Colonel A. A. Lim. | "Command Headquarters, 11 Wing Sing Lane, Yaumatei, Kowloon." |

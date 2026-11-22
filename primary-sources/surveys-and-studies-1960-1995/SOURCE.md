@@ -148,7 +148,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1085: Redevelopment of Kowloon Walled City a feasibility study
@@ -268,17 +268,39 @@ testimony given later: tag its facts "retrospective (year)".
   - Urban Area Development Office, Ma Tau Kok & Kowloon City Outline Development Plan, plan No. D/K10/1B (reproduced as Fig. 5.3 with the airport height limits over the City; Ho 1986, p. 33).
 ### lead-l0562: Bracing Up 牙科研究 改善服務
 
-- **Creator:** Interflow (University of Hong Kong); no byline
-- **Date:** 1987-04
-- **Kind:** article
-- **Class:** primary (A university magazine report of April 1987 on its dental students' study of 1986, written at the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** HKU Digital Repository, as for the held article z603wt449 of the same issue: 'License: All rights reserved; Rights Statement: In Copyright'.
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/5425r8276
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/images/hq381j68h/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/tb09q367c/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/5425r8276
-- **Proof that it exists:** Image 8 is 'Interflow 4 - 1987 - Page 8', heading 'Bracing Up' / 「牙科研究 改善服務」; p. 9: 'Unregistered dentists are rife in certain, more densely populated parts of the territory' and 'At present, unregistered dentists can be fined up to HK$1,000 and be liable for six months' imprisonment.'
-- **What it gives (resolver's note, not checked):** A 1986 study by HKU dental students of unregistered dentists: their services (dentures, fillings, crown and bridge), their large signboards, the penalty of April 1987, a questionnaire in four residential areas (three with many unregistered practices), the views of the public, and the proposal to train them as dental technicians or assistants. It does not name the City in what I read.
-- **Lead:** L0562 (cited by citations-14, building-and-demolition-records-1968-1997)
-- **Notes:** Bilingual (English and Chinese texts). The Chinese text names the 1980 start of the Faculty's surveys and an estimate of 15,000 people reached. The held HKDA newsletters (building-and-demolition-records-1968-1997/citations-13) can go beside it.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Interflow (交流), University of Hong Kong, no. 51, April 1987, 'Bracing Up' (牙科研究 改善服務), no byline, pp. 8-9 (continued p. 8 to p. 9). HKU Digital Repository, Hong Kong Journals Online, record 5425r8276, canvases 7-8, https://digitalrepository.lib.hku.hk/catalog/5425r8276
+- **Class:** primary (A university newsletter report of April 1987 on student projects of 1985-1986 (a record made at the time). The primary tree is right. It does not name the City.)
+- **Date of the record:** 1987-04 (reports projects of 1985 and 1986)
+- **Files:**
+  - `lead-l0562-default-43609e52.jpg` (in `local/`, not in git): Page image of Interflow no. 51 (April 1987), p. 8: the first page of 'Bracing Up' (English and Chinese text, two photos of Tai O), 1500 x 2147 px; https://digitalrepository.lib.hku.hk/service/api/iiif/images/hq381j68h/full/full/0/default.jpg; 477342 bytes; SHA-256 `880272f6799009ef2e8a8b664a818ecf1bf804e11215c94b11ad487412f7065f`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record of the issue) (https://digitalrepository.lib.hku.hk/catalog/5425r8276)
+  - `lead-l0562-default-4df99763.jpg` (in `local/`, not in git): Page image of Interflow no. 51 (April 1987), p. 9: the end of 'Bracing Up' (the survey of unregistered dentists), 1500 x 2147 px; https://digitalrepository.lib.hku.hk/service/api/iiif/images/tb09q367c/full/full/0/default.jpg; 605075 bytes; SHA-256 `866b027029345f4073ce3fbddb3bd1e15d90f70cdf0ff2c808805a6db1f58049`; licence: All rights reserved; Rights Statement: In Copyright (HKU Digital Repository record of the issue) (https://digitalrepository.lib.hku.hk/catalog/5425r8276)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md`](../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 8, introduction (italic) | In 1987 Hong Kong had no comprehensive subsidised dental service for the general public. Only a basic 'conservation service' for children was available in schools. | "There are no comprehensive subsidised dental services for the general public and only a basic 'conservation service' for children is available in schools." |
+| p. 8, introduction (italic) | Thus an ordinary person got dental treatment mostly from private dentists, registered or unregistered, unless he belonged to a subvented scheme at his place of work. | "largely limited to the services provided by private dentists, both registered and unregistered, unless he is lucky enough to belong to a subvented 'scheme'" |
+| p. 8, col. 1; Chinese text col. 1 | The article says that many people went to a dentist only when they were in pain. The Chinese text says that most people went to the dentist only when a tooth hurt. | "many only go for a check-up when they are in pain" |
+| p. 8, col. 2 | Each student project had a budget of only HK$1,000. | "sufficient funds only for a budget of HK$1,000 per project" |
+| p. 8, col. 2 | In 1986 the dental students did eleven projects. One kind was surveys on how common unregistered dental practices were. | "Eleven projects in 1986 covered topics ranging from ... conducting surveys on the prevalence of unregistered dental practices." |
+| p. 8, col. 3 | In the fishing village of Tai O (大澳) on Lantau, surveys of 1985 found an extraction clinic open on two afternoons a month and an unregistered denturist. Few people used either. | "low utilisation of the extraction clinic provided on two afternoons a month, and of the unregistered denturist there." |
+| p. 8, col. 3 | In 1987 over 10% of the population of Hong Kong was aged 60 or over. | "over 10% of the population in Hong Kong is aged 60 years and above" |
+| p. 9, lower col. 1 | Unregistered dentists were common in the more densely populated parts of Hong Kong, and their trade did well. | "Unregistered dentists are rife in certain, more densely populated parts of the territory, and it seems they do a flourishing trade." |
+| p. 9, lower col. 1; Chinese text col. 1 | Their services were limited: mainly dentures, fillings, and crown and bridge work. The Chinese text lists false teeth, fillings, crowns and dental plates. | "非法牙醫所提供的服務有限，主要是造假牙、補牙、鑲牙及造牙托等" (The services that illegal dentists provide are limited, mainly making false teeth, fillings, crowns and dental plates.) |
+| p. 9, lower col. 1 | Their hygiene and the comfort of treatment were worse than those of registered dentists, but their prices were lower. | "the prices they charge evidently do." |
+| p. 9, lower col. 1 | In 1987 an unregistered dentist could be fined up to HK$1,000 and sent to prison for six months. | "unregistered dentists can be fined up to HK$1,000 and be liable for six months' imprisonment." |
+| p. 9, lower col. 1 | In practice the authorities turned a blind eye. An unregistered dentist was often prosecuted only when a patient complained. | "a blind eye is turned and the dentists are often prosecuted only on complaint by a patient." |
+| p. 9, lower cols. 1-2 | In 1986 a group of students studied the role of unregistered dentists. They asked the public who used them, the Hong Kong Dental Association, members of the Faculty, the Medical and Health Department and the Royal Hong Kong Police Force. | "the Medical and Health Department and the Royal Hong Kong Police Force" |
+| p. 9, Chinese text col. 1 | INFERRED: The Chinese text gives the year of this study as 1980 (一九八〇年), but the English text gives 1986. The Chinese text of p. 8 also puts the survey of unregistered dentists among the activities of 1986. Thus 1980 is probably a misprint (INFERRED). | "故此，在一九八〇年，一羣同學決定深入調查香港無牌牙醫的工作" (Thus, in 1980, a group of students decided to investigate in depth the work of unlicensed dentists in Hong Kong.) |
+| p. 9, lower col. 2 | The unregistered dentists whom the students approached would not give interviews and would not fill in a questionnaire. The government agencies also would not give their views, because they thought the subject sensitive. | "those approached were not willing to be interviewed, and refused to complete a questionnaire." |
+| p. 9, lower col. 2; Chinese text col. 1 | The students gave questionnaires in four residential areas. Three of them were known for many unregistered practices. The article does not name the areas. | "是次進行問卷調查的四個住宅區，有三個是著名的無牌牙醫聚集地" (Of the four residential areas where the questionnaire was done, three are well-known gathering places of unlicensed dentists.) |
+| p. 9, lower col. 2 | Many unregistered dentists advertised on large signboards. Registered dentists were not permitted to use such signboards. | "proclaiming their illegal activities on large signboards of the kind that those on the professional side of the fence are prohibited from using." |
+| p. 9, lower col. 2 | Many people were not sure how to tell a registered dentist from an unregistered one. Few of the people asked had been to an unregistered dentist. | "Relatively few of those questioned had actually visited illegal practitioners" |
+| p. 9, lower col. 3 | The people who went to unregistered dentists said that these dentists were cheaper and easier to reach, that the service was adequate, and that there was no wait. | "they were cheaper, more accessible, providing what they regarded as an adequate service, and more to the point, they did not have to wait to be 'done'." |
+| p. 9, lower col. 3 | Most of the people asked wanted training for the unregistered dentists, so that they could give a limited range of treatments, or work as dental technicians or assistants. | "prepare them as dental technicians or assistants." |
+| p. 9, lower col. 3 | The students recommended that the public learn to tell legal from illegal practices, and that an examination body test the skills of unregistered practitioners. | "some kind of examination body be instituted to vet the skills of unregistered practitioners." |
+| p. 9, lower cols. 4-5 | The article estimates that the Faculty's projects had reached about 15,000 people. One earlier project reached about 300,000 homes through a Chinese television channel. | "some 15,000 people have been the target of the projects" |
+
+- **Leads:**
+  - The report of the 1986 HKU dental students' project on unregistered dentists (Faculty of Dentistry, Department of Periodontology and Public Health, University of Hong Kong): the article reports it but does not give a title (not held).

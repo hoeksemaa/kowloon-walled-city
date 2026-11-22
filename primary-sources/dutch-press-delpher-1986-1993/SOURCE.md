@@ -279,3 +279,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - The AFP original of this photo (demolition machine at the Walled City, about 22-23 March 1993) in a photo archive.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0835: Hel op aarde (reader's letter), De Telegraaf, 28 April 1990, p. 2 (Weekeinde letters)
+
+- **Creator:** Anja Ybema-Lepoutre (signed 'HONGKONG'); De Telegraaf
+- **Date:** 1990-04-28
+- **Kind:** press
+- **Class:** primary (A letter of the time by a Dutch woman in Hong Kong who supported the Salvation Army kindergarten in the City.)
+- **Value:** medium
+- **Language:** other
+- **Access:** open
+- **Licence:** Rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; Delpher (KB) shows it free to read under its terms of use; no open licence.
+- **Link:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010646054:mpeg21:a1569
+- **Other links:** https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:a1569:ocr, https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:alto, https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:image
+- **Proof that it exists:** Delpher SRU record: title 'Hel op aarde', De Telegraaf, 1990/04/28, page 2, pageurl ddd:010646054:mpeg21:p118; OCR: 'Op 20-12-1986 publiceerde u in Weekeinde het verhaal „Dit is de hel op aarde", over De Ommuurde Stad in Hongkong, waar 50.000 mensen als haringen in een ton wonen.'
+- **What it gives (resolver's note, not checked):** April 1990: the City will soon be demolished; the Dutch Charity Fund still supports the Salvation Army kindergarten in the City: it pays one teacher's salary, gives milk and vitamin pills, and gives the children an English lesson one morning each week. Each month all 60 pupils have a day out; some see little daylight; there are fewer pupils each month, and after the summer holidays all is uncertain.
+- **Lead:** L0835 (cited by press-archives-21, dutch-press-delpher-1986-1993); also L0850
+- **Notes:** Dutch. Read the text in the ALTO of scan page p118 (the article OCR is cut after the first lines). Also answers part of lead L0836 (the Dutch Charity Fund).

@@ -71,3 +71,15 @@ See the leads under each item in the primary folder.
 | p. 25 (image 34) | In 1933 the government counted 436 people in 64 houses inside the walls. | "there were 436 people living in 64 houses inside the walls." |
 | p. 26 (image 35) | By 1940 all buildings in the City were demolished except the old Yamen, the Lung Chun Yee Hok building and one private house. The walls were taken down in 1943 for the airport. | "By 1940, all buildings inside the Walled City except the old Yamen, Lung Chun Yee Hok building and one private dwelling were demolished." |
 | pp. 26-27 (images 35-36) | At the end of 1947 about 2,000 people lived in the City. In January 1948 the Public Works Department and police evicted them and pulled down their huts. | "At the end of 1947, there were about 2000 inhabitants in the Walled City." |
+
+### lead-l0562: Bracing Up 牙科研究 改善服務
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Interflow (交流), University of Hong Kong, no. 51, April 1987, 'Bracing Up' (牙科研究 改善服務), no byline, pp. 8-9 (continued p. 8 to p. 9). HKU Digital Repository, Hong Kong Journals Online, record 5425r8276, canvases 7-8, https://digitalrepository.lib.hku.hk/catalog/5425r8276
+- **Class:** primary (A university newsletter report of April 1987 on student projects of 1985-1986 (a record made at the time). The primary tree is right. It does not name the City.)
+- **Date of the record:** 1987-04 (reports projects of 1985 and 1986)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/surveys-and-studies-1960-1995/SOURCE.md`](../../primary-sources/surveys-and-studies-1960-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 8, col. 1 | The Prince Philip Dental Hospital opened in 1980. The Faculty of Dentistry of HKU was established after it. | "when the Prince Philip Dental Hospital opened in 1980, and the Faculty of Dentistry was subsequently established" |

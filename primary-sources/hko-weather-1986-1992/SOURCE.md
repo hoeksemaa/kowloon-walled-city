@@ -313,22 +313,22 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0402: Prevailing Wind Direction (°) - King's Park (盛行風向 (度) - 京士柏), CSV file
 
-- **Creator:** Hong Kong Observatory (香港天文台), then the Royal Observatory, Hong Kong
-- **Date:** daily from 1992-07-01 (file as served on 2026-11-21)
-- **Kind:** data
-- **Class:** primary (Daily observations made at the time, served now as one CSV (the same kind as services-3).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** DATA.GOV.HK Terms and Conditions (free use with acknowledgement of the source), as recorded for services-3; not read again
-- **Link:** https://data.weather.gov.hk/cis/csvfile/KP/ALL/daily_KP_PDIR_ALL.csv
-- **Proof that it exists:** Header '盛行風向 (度) - 京士柏' / 'Prevailing Wind Direction (°) - King's Park'; first row '1992,7,1,180,#'
-- **What it gives (resolver's note, not checked):** The daily prevailing wind direction at King's Park, Kowloon, from 1 Jul 1992, with a completeness flag. It gives the wind of the Phase III clearance (1992) and of the demolition (1993-1994); it has no values for 1986.
-- **Lead:** L0402 (cited by services-3, hko-weather-1986-1992)
-- **Notes:** Bilingual header. The first rows carry '#' (incomplete) flags.
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Hong Kong Observatory (香港天文台), then the Royal Observatory, Hong Kong, 'Prevailing Wind Direction (°) - King's Park' (盛行風向 (度) - 京士柏), CSV file, daily series 1992-07-01 to 2026-10-31, DATA.GOV.HK, https://data.weather.gov.hk/cis/csvfile/KP/ALL/daily_KP_PDIR_ALL.csv, retrieved 2026-11-21
+- **Class:** primary (Daily observations made at the time by the Royal Observatory; the CSV is a present-day compilation of the record. Primary tree.)
+- **Date of the record:** daily observations from 1992-07-01 (file as served on 2026-11-21)
+- **Files:**
+  - `lead-l0402-daily_KP_PDIR_ALL-44255ea6.csv` (in `local/`, not in git): CSV, daily prevailing wind direction at King's Park, 1992-07-01 to 2026-10-31, 200,291 bytes as read on 2026-11-21 (the file grows each month); https://data.weather.gov.hk/cis/csvfile/KP/ALL/daily_KP_PDIR_ALL.csv; 200291 bytes; SHA-256 `8ed91824c186f18c26a17ab9fc3cd0c9e46b0c3929e8626c02b005496bf3bf5f`; licence: DATA.GOV.HK Terms and Conditions, Version 1.2 (last updated 26 May 2025): free use 'for both commercial and non-commercial purposes' with acknowledgement of the source; not an open licence of the listed kinds (https://data.gov.hk/en/terms-and-conditions)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| daily_KP_PDIR_ALL.csv, row 1992,7,1 | The King's Park (京士柏) series of daily prevailing wind direction starts on 1 July 1992. Its first row has the flag # (data incomplete). It has no value for 1986. | "1992,7,1,180,#" |
+| daily_KP_PDIR_ALL.csv, footer | The file marks each day: C = data complete, # = data incomplete, *** = no data. | "# 數據不完整/data incomplete" (# data incomplete) |
+| daily_KP_PDIR_ALL.csv, rows 1992,12,1-31 | In December 1992, the prevailing wind at King's Park was 120 degrees (east-south-east) on 20 of 31 days, and 110 degrees on 5 more days. | "1992,12,1,110,C" |
+| daily_KP_PDIR_ALL.csv, rows 1994,1,1-31 | In January 1994, the prevailing wind at King's Park was 120 degrees on 19 of 31 days, with days of 130 degrees and some days of north wind (010-020 degrees), all flagged C. | "1994,1,15,120,C" |
+| daily_KP_PDIR_ALL.csv, rows 1992,7 to 1993,8 | In the summers of 1992 and 1993 the wind at King's Park changed more often; westerly days (270-280 degrees) were common, for example 7 days of 270 degrees in July 1993. | "1993,7,2,270,C" |

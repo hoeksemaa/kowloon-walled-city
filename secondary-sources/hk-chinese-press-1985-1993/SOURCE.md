@@ -90,3 +90,15 @@ See the leads under each item in the primary folder.
 | NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that a big fire in 1952 burned half of the City. China sent ships with food, and each household got 100 dollars, enough to rebuild a wooden hut on the same place. | "一九五二年一場大火燒了半個城寨" (A big fire in 1952 burned half of the City.) |
 | NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that in 1967 the government cleared some illegal houses near the City, which caused a riot. Later the authorities made two sweeps inside the City. | "其後當局在城寨內進行兩次掃蕩" (Later the authorities carried out two sweeps inside the City.) |
 | NPWK19911129, leaf n2 (printed p.3, 本港新聞), feature D | The feature says that in August 1983 許家屯, then the head of China's office in Hong Kong, and the Chief Secretary 夏鼎基爵士 each toured the City. | "一九八三年八月當時中國駐港最高負責人許家屯與前香港布政司夏鼎基爵士分別到城寨進行巡視" (In August 1983 許家屯, then the top Chinese official in Hong Kong, and former Chief Secretary Sir 夏鼎基 each toured the City.) |
+
+### lead-l0215-2: 訂出補償方法料星期三財委會通過 清拆補償逾27億元 城寨坊會暫不評論
+
+- **Status:** Read on 2026-11-21; a checker checked a sample of the facts on 2026-11-21.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「訂出補償方法料星期三財委會通過」「清拆補償逾27億元」「城寨坊會暫不評論」 (特訊, initial 慕), 6 December 1987, 第五張第二頁 (本港新聞), archive.org item NPWK19871206, leaf n17, https://archive.org/details/NPWK19871206/page/n17
+- **Class:** primary (A news report of the time on the compensation plan before the Finance Committee meeting.)
+- **Date of the record:** 1987-12-06
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-chinese-press-1985-1993/SOURCE.md`](../../primary-sources/hk-chinese-press-1985-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19871206, leaf n17 (第五張第二頁, 本港新聞), top right, para 3 | The government announced the clearance in January 1987, then checked the status of the households, measured the buildings and confirmed ownership. | "政府在今年一月宣佈清拆城寨計劃" (The government announced the plan to clear the City in January this year.) |

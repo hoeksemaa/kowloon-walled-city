@@ -106,3 +106,26 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Page: "Elsie Tu Personal Papers" (HKBU Library Special and Archival Collections), last updated 07 November 2024.
 - **What it gives (finder's note, not checked):** Not confirmed for the City. The page names the Star Ferry riots of 1966, anti-corruption work, Patten's reforms and the MacLennan case. She sat on the Urban Council (1963-95) and LegCo (1988-95), thus her committee papers can cover the clearance years.
 - **Notes:** No online finding aid. Access by request to HKBU Special Collections and Archives. Wikipedia (from HK Magazine, 2 Mar 2006) says that she lived for a time in a kitchen in a Walled City tenement (books-17 has this). Ask the archive for files on the Walled City or Kowloon City.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0816: The Kowloon City District and the Clearance of the Kowloon Walled City: Personal Recollections
+
+- **Creator:** Gordon Jones
+- **Date:** 2011
+- **Kind:** article
+- **Class:** retrospective (First-hand recollections, written in 2011, of the District Officer, Kowloon City (DO(KC)), November 1983 - May 1986; he calls the article 'oral history' and wrote it without government files or his diaries.)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** '©RASHKB and author' (printed on p. 257); the HKU site footer says 'Copyright © 2026 The University of Hong Kong. All Rights Reserved'; no open licence.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/s752cj54k
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/s752cj54k, https://digitalrepository.lib.hku.hk/service/api/iiif/images/tm70t1667/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/qr46x492p/full/full/0/default.jpg, https://www.jstor.org/stable/23891943
+- **Proof that it exists:** Issue record 'Journal of the Royal Asiatic Society Hong Kong Branch, Vol.51 (2011)'; canvas 258 is printed p. 257: 'THE KOWLOON CITY DISTRICT AND THE CLEARANCE OF THE KOWLOON WALLED CITY: PERSONAL RECOLLECTIONS / GORDON JONES', first sentence 'This article concerns aspects of my work as the District Officer for the Kowloon City District (DO(KC)) between November 1983 and May 1986, ...'; footer 'Journal of the Royal Asiatic Society Hong Kong Branch Vol. 51, 2011 ©RASHKB and author'.
+- **What it gives (resolver's note, not checked):** The City and the district in 1983-1986 as the District Officer saw it: the only KCDO file on the City was graded 'Secret'; he visited the City unannounced only a few times, with the liaison officer of the Kowloon City Sub-Office, the link with the unregistered Kaifong Association; street level with open drains, sewers, rats and illegal electricity connections (p. 270); and his part in the first planning of the clearance, March-May 1986.
+- **Lead:** L0816 (cited by repo-audit-36, scholarship-land-and-planning-1992-2026)
+- **Notes:** Pages: printed pp. 257-278 = IIIF canvases 258-279 (index 257-278). p. 270 also quotes a 1960s official statement on improving services around the City (with footnote 35). JSTOR copy needs a login. The same record also gives (lead L1119, The Kowloon City District and the Clearance of the Kowloon Walled City: Personal Recollections): The City and Kowloon City District in 1983-1986 as the District Officer saw it: the only KCDO file on the City was graded 'Secret' and kept in his safe; his few visits; street-level conditions; and his part in the first planning of the clearance, March-May 1986.
