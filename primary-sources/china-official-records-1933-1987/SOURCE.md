@@ -851,23 +851,189 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1158: 许家屯走访九龙城
 
-- **Creator:** Xinhua News Agency (新華社), Hong Kong; printed in People's Daily (人民日報)
-- **Date:** 1983-08-08
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Xinhua News Agency (新華社), dispatch from Hong Kong of 7 Aug 1983, 「许家屯走访九龙城」, People's Daily (人民日報), 8 Aug 1983, page 4; transcription on laoziliao.net, https://www.laoziliao.net/rmrb/1983-08-08-4#633432
+- **Class:** primary (A Xinhua news dispatch of the day of the event (7 Aug 1983), printed the next day. It is an official Mainland record of the time; the primary tree is right.)
+- **Date of the record:** 1983-08-07 (Xinhua dispatch); printed 1983-08-08
+- **Files:**
+  - `lead-l1158-1983-08-08-4-fbbf0e50.html` (in `local/`, not in git): HTML transcription of page 4 of the People's Daily of 8 Aug 1983 (the City article is the card with id 633432).; https://www.laoziliao.net/rmrb/1983-08-08-4; 31342 bytes; SHA-256 `90796e2ee032620e43ecdab3a3f2d2436768d2cc853e8b07b40cc4984ca9fea5`; licence: Page footer 'CopyRight © 2000 老資料网 Inc.All Rights Reserved.'; text of Xinhua / People's Daily; no reuse licence (https://www.laoziliao.net/rmrb/1983-08-08-4)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | Xinhua dated its dispatch Hong Kong, 7 August 1983. It says that Xu Jiatun (許家屯), head of the Hong Kong branch of Xinhua, visited Kowloon City (九龍城) that day and greeted the people who lived there. | "新华社香港8月7日电 新华社香港分社社长许家屯，今天走访了位于九龙半岛界限街以北的九龙城" (Xinhua, Hong Kong, 7 Aug: Xu Jiatun, head of the Hong Kong branch of Xinhua, today visited Kowloon City, north of Boundary Street on the Kowloon peninsula.) |
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | During the visit he asked in detail about how the Walled City was managed and how its residents lived. | "许家屯详细询问了九龙城寨的管理情况和居民的生活情况" (Xu Jiatun asked in detail about the management of Kowloon Walled City and the living conditions of the residents.) |
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | The dispatch says that the Walled City was managed by a kaifong welfare association (街坊福利事業促進會) that the local residents elected. Xu Jiatun praised this. | "九龙城寨是由当地居民选举出来的街坊福利事业促进会管理时，许家屯表示赞赏" (...that the Walled City is managed by the kaifong welfare association elected by the local residents, Xu Jiatun expressed praise.) |
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | He showed concern about the many inconveniences of the residents' daily life. | "许家屯还对当地居民在生活上遇到的许多不便表示关切" (Xu Jiatun also expressed concern about the many inconveniences that the local residents meet in their lives.) |
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | A doctor told him that many people from the Mainland lived in the City, and that they cared about the return of Chinese sovereignty over Hong Kong. | "一位医生对许家屯说，这里居住着许多从大陆来的人士" (A doctor told Xu Jiatun that many people who came from the Mainland live here.) |
+| People's Daily (人民日報), 8 Aug 1983, page 4, article 633432 (laoziliao.net transcription) | Xu answered that Hong Kong people must unite with the people who came from the Mainland, and that whoever supports reunification is a patriot. The Xinhua text is shorter here than the Ta Kung Pao text: it leaves out the words 'whoever has come has come, whatever the reason'. | "香港同胞要同大陆来港的人士团结起来。赞成祖国统一的，就是爱国者" (Hong Kong compatriots must unite with the people who came to Hong Kong from the Mainland. Those who support the reunification of the motherland are patriots.) |
+
+- **Leads:**
+  - A scan of the printed People's Daily (人民日報) of 8 Aug 1983, page 4 (the repo holds only the transcription).
+### lead-l0037: 華僑日報 1947-12-30
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「[九]龍城七十一間民房 四十八家必須遷拆 昨日又接通告 居民表示不理」 (特訊), 30 December 1947, local news page (archive.org leaf n3), https://archive.org/details/NPWK19471230/page/n3
+- **Class:** primary (A Hong Kong newspaper report of the time (30 Dec 1947) on the events of the day before. It is a Hong Kong Chinese newspaper, thus it fits hk-chinese-press-1947-1984 better than china-official-records-1933-1987 (both are in primary-sources/). Earlier history (the 1947-48 demolitions), long before the peak period.)
+- **Date of the record:** 1947-12-30 (events of 29 Dec 1947; eviction order of 22 Dec 1947)
+- **Files:**
+  - `lead-l0037-n3-013d4caa.jpg` (in `local/`, not in git): Page image of 華僑日報 30 Dec 1947, leaf n3 (local news), with the article on the 48 demolition notices (about 5.4 MB); https://archive.org/download/NPWK19471230/page/n3.jpg; 5446183 bytes; SHA-256 `ad1180b8e792f0e3ba89eb59abbe5a7b290e0eba184225ce5dd499425630c761`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19471230)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房 | INFERRED: INFERRED: At about 11 a.m. on 29 December 1947, the residents of the wooden huts in the City again got demolition notices from the Public Works Department (工務局). The date comes from 'yesterday morning' in the paper of 30 December. | "昨晨十一時許，該城內木屋居民復收到本港工務局拆屋通告" (At about 11 a.m. yesterday, the hut residents in the City again received demolition notices from the Public Works Department of this colony.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房 | The paper says that the demolition affair had gone on for some weeks, but the Hong Kong side had not yet carried it out. | "九龍城拆屋事件，迄今數週，港方仍未付諸實行" (The Kowloon City demolition affair has gone on for some weeks; the Hong Kong side has still not carried it out.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房 | The notice was the same as the eviction order that the Kowloon magistrate 百里渠 issued on 22 December 1947. | "該通告與本月廿二日九龍裁判署法官百里渠所發驅逐令相同" (The notice is the same as the eviction order issued on the 22nd of this month by magistrate 百里渠 of the Kowloon Magistracy.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房 | A Chinese official, a British officer of the Public Works Department and a Chinese interpreter took the notices from door to door. | "係由華籍官一名及工務局英籍職員偕同華人譯員一名執行，按戶派送" (It was done by one Chinese official and a British officer of the Public Works Department with one Chinese interpreter, delivering from door to door.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房 | The paper names 朱沛唐 as the representative of the residents' joint assembly 寶安縣九龍城居民聯合大會 (the name places the City in 寶安縣). | "據該寶安縣九龍城居民聯合大會代表朱沛唐稱" (According to 朱沛唐, representative of the 寶安縣九龍城居民聯合大會.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 口頭通告 | Subhead 'oral notice' (口頭通告): the officials told each household that got a notice to come in person to the Public Works Department the next day (30 Dec) to apply for a new lot in exchange. | "親到工務局申請新地宗交換地點" (come in person to the Public Works Department to apply for a new lot as an exchange site) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 口頭通告 | INFERRED: The officials said that otherwise the huts where the residents lived would be pulled down. INFERRED: a stain hides one character before 'pulled down'. | "否則現住之木屋" (otherwise the wooden huts now lived in [would be pulled down]) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 口頭通告 | After they got the notices, the residents decided to hold a meeting to discuss what to do. | "已決定開會商討應付辦法" (they have decided to hold a meeting to discuss how to deal with it) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 口頭通告 | INFERRED: At about 2 p.m. on 29 Dec the residents' association sent a representative with all the notices to the office of the Special Commissioner for Foreign Affairs for Guangdong and Guangxi (兩廣外交特派員公署) for instructions. INFERRED: a stain hides the representative's name; the visible characters fit 劉毅夫. | "送交至兩廣外交特派員公署辦事處，請示一切" (took them to the office of the Special Commissioner for Foreign Affairs for the Two Guangs, to ask for instructions on everything) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 口頭通告 | The residents got 48 notices in all. | "收得之通告共四十八張" (the notices received were 48 in all) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, end of the main text | The representatives of the residents said that the households with notices would ignore the order to go to the Public Works Department. | "將置之不理" (they will ignore it) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, end of the main text | The residents' association 九龍城居民聯合會 issued a statement on the matter on 29 Dec 1947 and asked the Hong Kong Government to reconsider. | "並盼港政府予以考慮云" (and hopes the Hong Kong Government will reconsider) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 廿三無恙 | Subhead '23 unharmed' (廿三無恙): there were 71 households (民居) in the City. Only 48 got notices from the Public Works Department; the other 23 got none. | "計城內民居七十一家，昨日接獲工務局之通告者，只四十八家" (Of 71 dwellings in the City, only 48 received Public Works Department notices yesterday.) |
+| NPWK19471230, leaf n3 (local news page), lower centre, article 龍城七十一間民房, subhead 廿三無恙 | INFERRED: The paper heard that the Hong Kong Government had found that the 23 households had a sound basis (probably of ownership), thus only 48 households had to move out and have their houses pulled down. INFERRED: the character before 權 (rights) is hard to read; I read 業權 (ownership). | "故須遷出及將房拆卸者，實四十八家" (thus those who must move out and have their houses pulled down are in fact 48 households) |
+
+- **Leads:**
+  - Eviction order of 22 Dec 1947 by magistrate 百里渠, Kowloon Magistracy (九龍裁判署), against the hut residents of the City
+  - Public Works Department (工務局) demolition notices of 29 Dec 1947 to 48 households of the City (and its list of the 71 households)
+  - Statement of 九龍城居民聯合會 of 29 Dec 1947 on the notices
+### lead-l0038: 華僑日報 1947-12-09
+
+- **Status:** Partly read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23. The OCR of this issue is useless, so I found the article by eye on the page images (leaf n3; the same strip shows at the right edge of leaf n4). The article is at the left edge of the page, beside the binding. I read the headline, the subhead and the first two columns in enlarged crops of the full-size scan. The next columns are lost in the black binding gutter of the scan, thus the rest of the article (the results of the survey) is not legible.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「工務局向九龍城新建木屋 調查建築費用 居民忖測當局採補回建築費辦法」 (特訊), 9 December 1947, local news page (archive.org leaf n3), https://archive.org/details/NPWK19471209/page/n3
+- **Class:** primary (A Hong Kong newspaper report of the time (9 Dec 1947). It fits hk-chinese-press-1947-1984 better than china-official-records-1933-1987 (both primary). Earlier history (the 1947-48 huts).)
+- **Date of the record:** 1947-12-09 (event of 8 Dec 1947)
+- **Files:**
+  - `lead-l0038-n3-3a177f7b.jpg` (in `local/`, not in git): Page image of 華僑日報 9 Dec 1947, leaf n3 (local news); the article is at the left edge, partly lost in the binding gutter (about 4.9 MB); https://archive.org/download/NPWK19471209/page/n3.jpg; 4945953 bytes; SHA-256 `409af2b3bfbe6c08198dae35dbbfbaf503b6f47ee66b886fba579ef03e23aba5`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/details/NPWK19471209)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19471209, leaf n3 (local news page), left edge at the binding, article 工務局向九龍城新建木屋, headline and subhead | Headline: the Public Works Department (工務局) surveyed the building costs of the newly built wooden huts in Kowloon City (the walled City). The residents guessed that the government would pay back the building costs. | "工務局向九龍城新建木屋 調查建築費用" (Public Works Department surveys the building costs of the new wooden huts in Kowloon City) |
+| NPWK19471209, leaf n3 (local news page), left edge at the binding, article 工務局向九龍城新建木屋, subhead | Subhead: the residents guessed that the government would use a method of paying back the building costs. | "居民忖測當局採補回建築費辦法" (Residents guess that the authorities will adopt a method of repaying building costs) |
+| NPWK19471209, leaf n3 (local news page), left edge at the binding, article 工務局向九龍城新建木屋, column 1 | The paper says that there was no special change in the demolition affair in the days before 9 Dec 1947. | "九龍城拆屋事件，日來未有特殊變化" (The Kowloon City demolition affair has had no special change in recent days.) |
+| NPWK19471209, leaf n3 (local news page), left edge at the binding, article 工務局向九龍城新建木屋, columns 1-2 | INFERRED: INFERRED: On the morning of 8 December 1947 the Public Works Department sent staff to find out how many newly built wooden huts were registered with the department, and the building cost of each hut. The date comes from 'yesterday morning'; the end of the sentence is lost in the binding gutter. | "新建木屋共有若干宗向工務局登記者，每屋建築費" (how many of the newly built wooden huts were registered with the Public Works Department, and each hut's building cost) |
+
+- **Leads:**
+  - Public Works Department (工務局) survey of the building costs of the new huts in the City, 8 Dec 1947 (its register of the huts)
+  - Another scan of 華僑日報 9 Dec 1947 (for example HK Public Libraries MMIS) that shows the columns lost in the binding of the archive.org scan
+### lead-l0042: 中央日報 1948.01.08
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Central Daily News (中央日報), Nanjing, 「九龍舊城居民露宿 我國抗議港方尚未接獲 寶安縣籌款救濟居民」 (中央社 dispatches from Hong Kong 6 and 7 Jan and Guangzhou 7 Jan 1948), 8 January 1948, page 2 (archive.org leaf n1), https://archive.org/details/zhongyang-ribao-1948.01.08/page/n1
+- **Class:** primary (A Nanjing newspaper of the time (the 國民黨 paper), printing the 中央社 news dispatches of the days of the events. Its view is the view of the Chinese government.)
+- **Date of the record:** 1948-01-08 (dispatches of 6 and 7 Jan 1948)
+- **Files:**
+  - `lead-l0042-n1-fd8db892.jpg` (in `local/`, not in git): Page image of 中央日報 8 Jan 1948, page 2 (leaf n1), with the article on the evicted City residents (about 7.6 MB); https://archive.org/download/zhongyang-ribao-1948.01.08/page/n1.jpg; 7635045 bytes; SHA-256 `e86d238edf1718af80c5e65eb0c47c88ebfca788e149a748606d6dc682a8bb6f`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field (collection zhongyang-ribao-archive); copyright of the newspaper not stated (https://archive.org/details/zhongyang-ribao-1948.01.08)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, headline | Headline: the residents of the old City (九龍舊城) slept in the open; the Hong Kong side had not yet received China's protest; 寶安縣 raised money for relief of the residents. | "九龍舊城居民露宿" (Residents of the old Kowloon City sleep in the open) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港六日專電 | CNA Hong Kong, 6 Jan 1948: forty evicted residents of the old City, many of them women and children, went to the Foreign Ministry's Special Commissioner for Guangdong and Guangxi, 郭德華, and asked for help. | "被迫拆遷之九龍舊城居民四十人、包括婦孺多人" (forty residents of the old Kowloon City forced to move, including many women and children) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港六日專電 | The petitioners stayed three hours in 郭德華's office. They left at 7 p.m., after he told them that the Chinese and British governments were still negotiating. | "請願者羈留郭氏辦公處三小時" (the petitioners stayed in Mr Kuo's office for three hours) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港六日專電 | By 1 p.m. on 6 Jan 1948 the workers of the Hong Kong public works had pulled down 54 'illegal' wooden huts in the old City. | "共已拆除九龍舊城內「非法」建築木屋五十四間" (they had pulled down in all 54 'illegal' wooden huts in the old Kowloon City) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港六日專電 | The homeless had slept in the open since the night of 5 Jan 1948. | "無家可歸者自昨夜後即行露宿" (the homeless have slept in the open since last night) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港六日專電 | A source close to the Governor told CNA that by 10 p.m. on 6 Jan the Hong Kong Government had not received a cable from the British ambassador about China's protest, which asked it to stop the forcible expulsion of the residents. | "要求停止以強力驅逐九龍城內居民一節" (the request to stop expelling the residents of Kowloon City by force) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社廣州七日電 | CNA Guangzhou, 7 Jan 1948: after the forced demolition, more than 2,000 residents were homeless and slept in the wind and rain. | "二千餘居民無家可歸、露宿風雨中" (more than 2,000 residents are homeless, sleeping in the wind and rain) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社廣州七日電 | The evicted residents sent representatives to petition the government of 寶安縣. | "彼等已派代表赴寶安縣政府請願" (they have sent representatives to petition the Bao'an County government) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社廣州七日電 | Students in Guangzhou planned a large protest march in the next days. | "日內擬舉行示威大遊行" (plan to hold a large demonstration march within days) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港七日電 | CNA Hong Kong, 7 Jan 1948: the old City, once busy, was now heaps of broken beams and boards. | "刻已化爲斷樑破板" (has now become broken beams and boards) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港七日電 | Some former residents found shelter with relatives in Hong Kong, which was already overcrowded. | "在人口本已過多之香港親友處覓得棲身之地" (found a place to stay with relatives and friends in Hong Kong, already over-populated) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港七日電 | About 200 men, women, old and young still lingered and slept in the open on the ruins. | "約仍有二百男女老幼" (about two hundred men, women, old and young still) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港七日電 | INFERRED: The head of 寶安縣 came to Kowloon to investigate and gave 5 million yuan (法幣) as the first relief payment for the evicted. INFERRED: his name reads 王?厚 in the scan; the middle character is not clear. | "並以法幣五百萬元" (and with 5 million yuan in national currency) |
+| zhongyang-ribao-1948.01.08, leaf n1 (第二版), centre, article 九龍舊城居民露宿, 中央社香港七日電, end | INFERRED: INFERRED: The Hong Kong Government told CNA that the two arrested Chinese were charged with inciting disorder and with obstructing the police. The scan of this part is hard to read. | "並阻止警察執行職務" (and obstructing the police in the execution of their duty) |
+
+- **Leads:**
+  - 寶安縣 government records of the relief to the evicted City residents, Jan 1948 (first payment of 5 million yuan)
+  - Guangzhou press of Jan 1948 on the student protest march about the City demolitions
+  - Hong Kong court record of the charges against the two arrested residents (Jan 1948: inciting disorder, obstructing the police)
+### lead-l0042-2: 中央日報 1948.01.09
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Central Daily News (中央日報), Nanjing, 「對港府拆遷九龍民房 我再向英提嚴重交涉 監院談話會譴責英違反國際公法 並請外部詳細函復辦理交涉經過」 (本報南京八日專電; 中央社 Nanjing and Hong Kong 8 Jan 1948), 9 January 1948, page 2 (archive.org leaf n1), https://archive.org/details/zhongyang-ribao-1948.01.09/page/n1
+- **Class:** primary (A Nanjing newspaper of the time (the 國民黨 paper), printing the dispatches of the day. The loss figures are the residents' own claims, reported by CNA.)
+- **Date of the record:** 1948-01-09 (dispatches of 8 Jan 1948)
+- **Files:**
+  - `lead-l0042-2-n1-e08865a5.jpg` (in `local/`, not in git): Page image of 中央日報 9 Jan 1948, page 2 (leaf n1), with the article on the protests and the loss figures (about 7.9 MB); https://archive.org/download/zhongyang-ribao-1948.01.09/page/n1.jpg; 7926807 bytes; SHA-256 `f8eba87cee1f368da0efb1d041d921c2f44bb2b9d849d7a80f427b3deab415dc`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field (collection zhongyang-ribao-archive); copyright of the newspaper not stated (https://archive.org/details/zhongyang-ribao-1948.01.09)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, headline | Headline: China again made a serious representation to Britain about the Hong Kong Government's demolition of homes in Kowloon (the City). | "對港府拆遷九龍民房 我再向英提嚴重交涉" (On the Hong Kong Government's demolition of Kowloon homes, we again make a serious representation to Britain) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 本報南京八日專電 | Nanjing, 8 Jan 1948: a meeting of the Control Yuan (監察院) on 7 Jan condemned the British for breaking international law, and thought that the Foreign Ministry was not firm enough. | "並認外部態度不夠強硬" (and considered the Foreign Ministry's attitude not firm enough) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 本報南京八日專電 | The Control Yuan meeting decided that the Control Yuan should set up a foreign affairs committee. | "監院應設立外交委員會" (the Control Yuan should set up a foreign affairs committee) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 本報南京八日專電 | An unnamed 'authoritative person' said that, if the British avoided responsibility and could not stop the forcible demolition, the Foreign Ministry must state its position clearly. | "如英方推諉責任、不能阻止港府武力拆屋" (if the British side shirks responsibility and cannot stop the Hong Kong Government demolishing houses by force) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社南京八日電 | CNA Nanjing, 8 Jan 1948: the Foreign Ministry again told its Special Commissioner 郭德華 to negotiate firmly with the Hong Kong Government. The same afternoon the political Vice-Minister 劉師舜 made a serious representation to the British ambassador (施諦文) on grounds of law and humanity. | "向英大使施諦文根據法理及人道立場嚴重交涉" (made a serious representation to British Ambassador 施諦文 on grounds of law and humanity) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社南京八日電 (second) | CNA Nanjing, 8 Jan 1948: a meeting of the Control Yuan members on 8 Jan dealt with a motion that the Hong Kong Government's demolition of the houses and expulsion of the residents was improper. It decided to ask the Foreign Ministry by letter for a full report. | "港政府拆毀九龍房屋、並驅逐居民、殊屬不合" (the Hong Kong Government's demolition of Kowloon houses and expulsion of residents is most improper) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社香港八日電 | CNA Hong Kong, 8 Jan 1948: the residents said that the loss of houses and property from the forced demolition of the morning of 5 Jan 1948 was HK$204,800 in all. | "總數達港幣二十萬四千八百元" (a total of HK$204,800) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社香港八日電 | INFERRED: A resident told CNA that the demolition of the houses alone cost HK$67,720. INFERRED: the count of houses is printed 七十川椽; 川 is not a digit, thus the count is 'seventy-odd' (perhaps 74). 椽 is a counter for houses. | "僅拆毀房屋七十川椽、已使彼蒙受價值港幣六萬七七二〇元之損失" (the demolition of seventy-? houses alone caused them a loss worth HK$67,720) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社香港八日電 | INFERRED: The losses from the move, and of looms (紡織機) and household goods, were HK$137,150. INFERRED: the two parts (HK$67,720 and HK$137,150) add up to HK$204,870, not exactly the printed total of HK$204,800. | "紡織機及家用器物之損失、共爲港幣十三萬七千一五〇元" (the losses of looms and household goods came to HK$137,150 in all) |
+| zhongyang-ribao-1948.01.09, leaf n1 (第二版), upper left, article 對港府拆遷九龍民房, 中央社香港八日電 | INFERRED: INFERRED: Some of the evicted residents of 1948 owned looms, thus weaving was one of their trades. The report names looms in the losses but does not say who wove. | "紡織機" (looms) |
+
+- **Leads:**
+  - Control Yuan (監察院) letter of Jan 1948 to the Foreign Ministry asking for a full report on the Kowloon City affair, and the ministry's reply
+  - Foreign Ministry representation of 劉師舜 to the British ambassador, 8 Jan 1948 (Chinese and British diplomatic files)
+  - The residents' list of losses of the demolition of 5 Jan 1948 (HK$204,800), given to CNA in Hong Kong
+### lead-l0048: 中央日報 1948.01.06
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Central Daily News (中央日報), Nanjing, 「港府拆除九龍木屋 我居民二人昨晨被捕 政府以外交方式磋商無結果」 (中央社香港五日專電, 中央社香港四日電), and 「我外部闢謠 王外長未發表談話」 (中央社南京五日電), 6 January 1948, page 2 (archive.org leaf n1), https://archive.org/details/zhongyang-ribao-1948.01.06/page/n1
+- **Class:** primary (A Nanjing newspaper of the time, printing the CNA dispatches of the day of the demolition (5 Jan 1948).)
+- **Date of the record:** 1948-01-06 (dispatches of 4 and 5 Jan 1948)
+- **Files:**
+  - `lead-l0048-n1-c5493fd9.jpg` (in `local/`, not in git): Page image of 中央日報 6 Jan 1948, page 2 (leaf n1), with the report of the demolition of 5 Jan 1948 (about 7.4 MB); https://archive.org/download/zhongyang-ribao-1948.01.06/page/n1.jpg; 7391327 bytes; SHA-256 `f40665c6b2e3180f96e5896e777993a8afbe76177cd4e265fc5a3629027085f2`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field (collection zhongyang-ribao-archive); copyright of the newspaper not stated (https://archive.org/details/zhongyang-ribao-1948.01.06)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港五日專電 | CNA Hong Kong, 5 Jan 1948: that morning the Hong Kong police arrested two Chinese residents of the old City, 朱沛唐 and 劉毅夫. The charge was that they tried to obstruct the coolies hired by the Hong Kong Government to pull down the wooden huts. | "企圖對香港政府僱用之苦力拆除該等木屋之工作加以阻撓" (attempting to obstruct the work of the coolies hired by the Hong Kong Government in demolishing these wooden huts) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港五日專電 | 朱沛唐 was the chairman of the 九龍中國居民協會 (an association of the Chinese residents of Kowloon City). | "九龍中國居民協會主席朱沛唐" (朱沛唐, chairman of the 九龍中國居民協會) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港五日專電 | Right after the arrests the government pulled down a number of grass huts and wooden huts in the old City. | "立即拆除九龍舊城內之若干草房木屋" (at once demolished a number of grass huts and wooden huts in the old Kowloon City) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港五日專電 | The workers of the Public Works Department pulled down the first thatched hut at 7:55 a.m. on 5 Jan 1948. | "工務局工人於今晨七時五十五分拆毀第一所茅屋" (Public Works Department workers pulled down the first thatched hut at 7:55 this morning) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港五日專電 | 250 police were used, each with tear-gas grenades and other equipment against trouble. | "共動員警察二百五十名之多、渠等各携有催淚彈" (as many as 250 police were mobilised, each carrying tear-gas grenades) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港四日電 | CNA Hong Kong, 4 Jan 1948: the police special unit (別動隊), about 250 men, was ordered to gather at 6 a.m. the next morning for a secret task. | "香港警察別動隊、全隊約二百五十人" (the Hong Kong police special unit, about 250 men in all) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港四日電 | The secret task was to help pull down the wooden huts of 2,000 Chinese residents in the old City, under the recent eviction order. The paper names the 'Kowloon city government' (九龍市政府) and its public works office (九龍市工務局) as it printed them. | "該區內華籍居民二千人之木屋" (the wooden huts of the 2,000 Chinese residents in that area) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港四日電 | The Public Works Department and the police kept the date of the demolition a close secret, because they feared trouble. | "均以木屋之拆除日期爲最機密之事" (both treated the date of the demolition of the huts as a top secret) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港四日電 | The residents' association (printed 九龍市居民聯合會) had said many times that, if forced to move, the residents would resist, even with bloodshed. | "如被迫遷讓、定將起而反抗、並不惜流血" (if forced to move, they will certainly rise and resist, even at the cost of bloodshed) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, 中央社香港四日電 | The Chinese government had discussed the question with the Hong Kong Government by diplomatic means, without a concrete result. | "曾由我政府以外交方式與香港政府磋商、但未獲具體解決辦法" (our government has discussed it with the Hong Kong Government by diplomatic means, but without a concrete solution) |
+| zhongyang-ribao-1948.01.06, leaf n1 (第二版), lower centre, article 港府拆除九龍木屋, beside: 我外部闢謠 (中央社南京五日電) | CNA Nanjing, 5 Jan 1948: the Foreign Ministry denied a report that Foreign Minister 王世杰 called the eviction an internal question of Hong Kong. It said that the ministry had made representations to the British many times. | "外部曾向英國當局一再交涉" (the Foreign Ministry has made representations to the British authorities again and again) |
+
+- **Leads:**
+  - Hong Kong Police records of the operation of 5 Jan 1948 in the City (the special unit of about 250 men)
+  - Kowloon Magistracy charge against 朱沛唐 and 劉毅夫, Jan 1948 (obstructing the demolition)
+### lead-l0048-2: 中央日報 1948.01.07
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Central Daily News (中央日報), Nanjing, 「九龍居民被迫拆遷事 我外部提出抗議 請港府停止強制措施」 (中央社南京六日電), 7 January 1948, page 2 (archive.org leaf n1), https://archive.org/details/zhongyang-ribao-1948.01.07/page/n1
+- **Class:** primary (A Nanjing newspaper of the time, printing a CNA dispatch of the day before.)
+- **Date of the record:** 1948-01-07 (dispatch of 6 Jan 1948)
+- **Files:**
+  - `lead-l0048-2-n1-ef4e3b8f.jpg` (in `local/`, not in git): Page image of 中央日報 7 Jan 1948, page 2 (leaf n1), with the short item on the Chinese protest (about 7.5 MB); https://archive.org/download/zhongyang-ribao-1948.01.07/page/n1.jpg; 7493396 bytes; SHA-256 `e539bd845f637d9c079d25b2088458362cae146aaef3da8e7da5c9f1d84c668d`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field (collection zhongyang-ribao-archive); copyright of the newspaper not stated (https://archive.org/details/zhongyang-ribao-1948.01.07)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| zhongyang-ribao-1948.01.07, leaf n1 (第二版), centre, short item 九龍居民被迫拆遷事 | On the evening of 6 Jan 1948, the acting head of the Information Department of the Foreign Ministry, 時昭瀛, said that the ministry had protested that day to the British Embassy about the forced removal of the residents of Kowloon City. | "外交部本日曾向英駐華大使館提出抗議" (the Foreign Ministry today protested to the British Embassy in China) |
+| zhongyang-ribao-1948.01.07, leaf n1 (第二版), centre, short item 九龍居民被迫拆遷事 | The ministry asked the British ambassador to cable the Hong Kong Government at once and to stop all forcible measures. | "要求英大使即電告港政府停止一切強制措施" (asked the British ambassador to cable the Hong Kong Government at once to stop all forcible measures) |
+
+- **Leads:**
+  - Foreign Ministry (外交部) protest note to the British Embassy of 6 Jan 1948 on the Kowloon City demolitions
+### lead-l0676: 華僑日報 (Wah Kiu Yat Po), 16 January 1948: 「救濟龍城居民省府代表抵港振欵五億擬組會發放今日往醫院慰問傷者」 (OCR headline list)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1948-01-16
 - **Kind:** press
-- **Class:** primary (A Xinhua news dispatch of the day of the visit (7 Aug 1983), printed the next day.)
-- **Value:** medium
+- **Class:** primary (A Hong Kong newspaper report of the time (1948).)
+- **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** Page footer 'CopyRight © 2000 老資料网 Inc.All Rights Reserved.'; no reuse licence; text of Xinhua / People's Daily
-- **Link:** https://www.laoziliao.net/rmrb/1983-08-08-4#633432
-- **Other links:** https://www.laoziliao.net/rmrb/1983-08-08
-- **Proof that it exists:** Page 4 of 人民日报 1983-08-08 on laoziliao.net lists '许家屯走访九龙城'; dateline '新华社香港8月7日电'; first sentence '新华社香港分社社长许家屯，今天走访了位于九龙半岛界限街以北的九龙城，对居住在这里的同胞表示亲切慰问。'
-- **What it gives (resolver's note, not checked):** The official Xinhua text of Xu Jiatun's (許家屯) visit to the City on 7 Aug 1983: he asked about the management of the City and the life of its residents, praised the kaifong welfare association elected by the residents, and answered a doctor about the many residents from the Mainland. It is the source text of the Hong Kong reports of 8 Aug 1983.
-- **Lead:** L1158 (cited by usgov-1, us-government-records-1948-1994); also L1168
-- **Notes:** Simplified characters as printed. A WebFetch summary gave the content; I did not read the whole article.
+- **Licence:** No rights field in the archive.org metadata; private upload in the 'china-mail' collection; copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19480116
+- **Other links:** https://archive.org/metadata/NPWK19480116, https://archive.org/download/NPWK19480116/NPWK19480116.pdf
+- **Proof that it exists:** archive.org details page of NPWK19480116 (title '華僑日報 1948-01-16', 8 leaves): OCR headline segments '救濟龍城居民省府代表抵港振欵五億擬組會發放今日往醫院慰問傷者', '澳各界慰問團到港慰問龍城同胞', '龍城居民會進行編查戶口派代表赴省提供有力歷史證件'.
+- **What it gives (resolver's note, not checked):** The first report of the arrival of the Guangdong provincial representative with relief money (500 million, in the currency of the time) for the City residents whose huts were pulled down in January 1948, and his plan for a committee to pay it out; also the Macau delegation and the residents' association's household count.
+- **Lead:** L0676 (cited by top-china-19, china-official-records-1933-1987)
+- **Notes:** Leaf not known (the repo's item for 17 Jan read leaves n0 and n3; look at n3 first). The 15 Jan issue (NPWK19480115) has other City items: '龍城慰問者更多居民會今日盡發存粮避免意外損失'.

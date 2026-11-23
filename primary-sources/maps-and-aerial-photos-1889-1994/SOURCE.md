@@ -822,3 +822,37 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) (No. 3) Order 1988: the height limits round Kai Tak in force in 1988 (cited on PADS p. 4-6/4-7); the limits over the City itself can be in its drawings.
+
+### lead-l0430: Kai Tak Aerial view of Runways (Gwulo media 47370); Kai Tak Airfield Aerial Photo (Gwulo media 47371)
+
+- **Creator:** Unknown photographer; source given as HKPL (Hong Kong Public Libraries); posted on Gwulo by Herostratus, 7 Nov 2023
+- **Date:** c.1946
+- **Kind:** photo
+- **Class:** primary (Air photos taken at the time (c.1946); the Gwulo date is approximate.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** not stated on the pages (Gwulo; source HKPL)
+- **Link:** https://gwulo.com/media/47370
+- **Other links:** https://gwulo.com/media/47371
+- **Proof that it exists:** Page titles 'Kai Tak Aerial view of Runways / Gwulo' and 'Kai Tak Airfield Aerial Photo / Gwulo'; 'Source: HKPL Date picture taken 1 Jan 1946 (day and month are approximate)'
+- **What it gives (resolver's note, not checked):** Two oblique air views of Kai Tak and the edge of Kowloon City about 1946, just after the war: the airfield, the runways and the ruined, partly cleared area around it. The City itself is not identified in the previews.
+- **Lead:** L0430 (cited by gwulo-13, maps-and-aerial-photos-1889-1994)
+- **Notes:** Earlier history (1940s). A comment on 47370 (moddsey, 14 Nov 2023) says the view shows the western end of Kai Tak and the shorter Runway 07/25. Check a larger scan before use.
+
+### lead-l0808-1: 1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)
+
+- **Creator:** War Office, U.K. (map); layer by hkmaps.hk from the National Library of Australia copy
+- **Date:** 1952
+- **Kind:** map
+- **Class:** primary (A topographic map made at the time (1:20,000), with the block of the City and its surroundings in 1952.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** Not stated in the catalogue (copyright field empty); War Office map of 1952 (Crown copyright, expired after 50 years for UK Crown copyright of published works: my own knowledge, not checked)
+- **Link:** https://hkmaps.hk/
+- **Other links:** https://hkmaps.hk/data/map-metadata.json?v=20260910-meta
+- **Proof that it exists:** hkmaps.hk catalogue entry map:88018a6c-daec-44d2-a21c-c63348655fbb: 'audience public; 1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009); G.S.G.S. No. 3868; 1:20000; National Library of Australia (MAP G7940 s20)'
+- **What it gives (resolver's note, not checked):** The outline of the City block, the roads round it (Tung Tau Tsuen Road, Carpenter Road) and the squatter areas in 1952, at 1:20,000.
+- **Lead:** L0808 (cited by citations-19, scholarship-land-and-planning-1992-2026)
+- **Notes:** Layer id map:88018a6c-daec-44d2-a21c-c63348655fbb in the hkmaps.hk viewer (JavaScript map viewer). I opened the catalogue entry, not the map tiles. The same record also gives (lead L0808, 1957 - Hong Kong and the New Territories (L8811)): The City and Kowloon City in 1957 at 1:25,000: roads, built-up areas, boundaries.

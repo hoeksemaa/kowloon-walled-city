@@ -70,3 +70,25 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | p. 1, para. 1 | The report says the use of opiates had been a major social problem in Hong Kong for over a century. Full legal prohibition of opium came only after the Second World War. | "It was only after World War II that complete statutory prohibition was enacted" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0543: Lands Resumption Ordinance, Chapter 124 (consolidated text with history notes)
+
+- **Creator:** Hong Kong Government (consolidated text served by FAO, FAOLEX)
+- **Date:** 1900; amended 1984 (No. 5 of 1984) and 1987 (No. 71 of 1987 s. 20); consolidated after 2001
+- **Kind:** document
+- **Class:** secondary (A later consolidated version (after the adaptations of 1998-2001); its notes date the 1984 and 1987 amendments, but its wording is not the wording of 1987.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** not stated (FAOLEX copy of Hong Kong legislation)
+- **Link:** https://faolex.fao.org/docs/pdf/hk82101.pdf
+- **Proof that it exists:** 'LANDS RESUMPTION ORDINANCE - CHAPTER 124 ... To facilitate the resumption of Government lands required for public purposes ... [14 November 1900]'; s. 5: '... shall absolutely cease. (Replaced 71 of 1987 s. 20)'
+- **What it gives (resolver's note, not checked):** The text of the resumption law under which the City was cleared, with the dates of its 1980s amendments: No. 5 of 1984 (compensation and purchase by agreement) and No. 71 of 1987 s. 20 (on resumption, the rights of the owner and of any other person in the land cease). It also gives the definition of 'owner' (the person registered or entitled to be registered in the Land Registry).
+- **Lead:** L0543 (cited by top-tna-3, scholarship-history-law-society-1973-2026)
+- **Notes:** Next step: the Land Development Corporation Ordinance (No. 71 of 1987) and the LegCo Hansard of its bill (1987-88), to check what the government said about s. 20. The 1987 wording must come from the ordinance of 1987, not from this consolidation.

@@ -528,3 +528,20 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Central Registry of Drug Abuse, half-yearly reports (the 27th was published April 1991): the reports of 1986-1987 can give finer figures for 1986 than this decade summary (cited on p. 1, footnote).
+
+### lead-l0704: Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies
+
+- **Creator:** Colonial Secretariat, Hong Kong (author of the note not named on page 1)
+- **Date:** 1964-01-13
+- **Kind:** document
+- **Class:** primary (A confidential government note of the meeting, written at the time; reproduced as an image by Lambot and Girard in 2015.)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement; a Hong Kong Government record of 1964, posted by Ian Lambot and Greg Girard on cityofdarkness.co.uk (14 Aug 2015)
+- **Link:** https://arquivo.pt/wayback/20180717051006id_/http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg
+- **Other links:** https://arquivo.pt/noFrame/replay/20180717051006/http://cityofdarkness.co.uk/feed/, http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg
+- **Proof that it exists:** Image text: 'CONFIDENTIAL / INDEXED ... Colonial Secretariat, Hong Kong ... Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies.'
+- **What it gives (resolver's note, not checked):** In January 1963 the plan to redevelop the area between Carpenter Road and Tung Tau Tsuen Road (with the City) was suspended. CLP's Mr Wood says that the City had many unauthorised extensions of the company's supply, mostly through meters, with cables 'very seriously overloaded', a high fire risk and the company's emergency vehicle out 'every night'; taller buildings raised demand. The meeting agreed that CLP would study supply by routes that did not pass through the City.
+- **Lead:** L0704 (cited by top-blocked-c-2, cityofdarkness-website-2014-2015)
+- **Notes:** Page 1 only; the rest of the note (para. 4(2) onward) is not in the image. The page does not give its file reference. INFERRED: the original is in the Colonial Secretariat confidential file HKRS163-1-3016 'ELECTRICITY SUPPLY KOWLOON WALLED CITY' (original reference 5/64, 11.6.1963 - 17.1.1964; GRS, open for reading, not digitised; listed in grs-catalogue-kwc 'Other single files to ask for'), because the meeting was on 13 Jan 1964 and the file closes on 17 Jan 1964. The post 'POWER FOR ALL' (top-blocked-c-2) shows the image.
