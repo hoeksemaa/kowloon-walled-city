@@ -243,159 +243,170 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 9 of 9 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0669-1: Lofotposten 1980-12-17, p. 14
 
-- **Creator:** Lofotposten
-- **Date:** 1980-12-17
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/2ea28f0fe0a1b823317811657278d036/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_014_null/full/full/0/default.jpg, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_015_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 2ea28f0fe0a1b823317811657278d036 ('Lofotposten', 1980-12-17), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City-kapel ...' (p. 14); '... Walled City, ...' and '... Walled City ...' (p. 15).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Johs. Seland, 'Tålmodighetens og troens frukter i Hong Kong' [The fruits of patience and faith in Hong Kong], Lofotposten (Svolvær), Wednesday 17 December 1980, pp. 14-15, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1
+- **Class:** primary (A report of the time by a representative of Pastor Strømmes Minnestiftelse (the photo caption on p. 15 names Johs Seland as one of its two representatives), who was at the openings in Hong Kong on 24-26 October 1980. The story of the purchase of the floors in 1972 and the first opening of the school is background history (kind secondary).)
+- **Date of the record:** 1980-12-17 (printed); events of 24-26 October 1980
+- **Files:**
+  - `lead-l0669-1-default-e993162e.jpg` (in `local/`, not in git): Page image, Lofotposten 1980-12-17, p. 14: start of the article, with the photo of the opening of the Walled City chapel; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_014_null/full/full/0/default.jpg; 4202725 bytes; SHA-256 `393a2e0ace236621c37cc348a730254b22bcfe3762063f25daef6de666dc4010`; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/2ea28f0fe0a1b823317811657278d036/manifest)
+  - not downloaded (curl exit 28): Page image, Lofotposten 1980-12-17, p. 15: the Walled City part of the article, with the photo of Agnar and Olav Espegren at an entrance to the City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_lofotposten_null_null_19801217_85_293_1-1_015_null/full/full/0/default.jpg; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/2ea28f0fe0a1b823317811657278d036/manifest)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/norwegian-press-1984-1993/SOURCE.md`](../../secondary-sources/norwegian-press-1984-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Lofotposten 1980-12-17, p. 14, col. 1 | Representatives of Pastor Strømmes Minnestiftelse (the Strømme Memorial Foundation) saw three openings in Hong Kong from Friday 24 to Sunday 26 October 1980: a home for old people, a school and a chapel. The Foundation had paid for all three. The chapel was the one in the Walled City. | "Tre offisielle åpninger og innvielser i løpet av tre dager opplevde vi i Hong Kong fredag 24. til søndag 26. oktober." (Three official openings and dedications in the course of three days we experienced in Hong Kong, Friday 24th to Sunday 26th October.) |
+| Lofotposten 1980-12-17, p. 15, col. 1 | In the Walled City, which the writer calls Hong Kong's darkest slum, stood a building whose third, fourth, fifth and sixth floors rose above a dark mass of old, frail houses that leaned on each other. | "I Walled City, Hong Kongs mørkeste slum, står en bygning hvis tredje, fjerde, femte og sjette etasje strekker seg over en mørk masse av gamle skrøpelige hus" (In the Walled City, Hong Kong's darkest slum, stands a building whose third, fourth, fifth and sixth floor rise above a dark mass of old frail houses) |
+| Lofotposten 1980-12-17, p. 15, cols. 2-3 | The writer says that there was no compulsory schooling in the Walled City, and that the children came to the mission school because they liked to be there. | "Det er ingen tvungen skolegang i Walled City, barna er her fordi de liker å være her." (There is no compulsory schooling in the Walled City; the children are here because they like being here.) |
+| Lofotposten 1980-12-17, p. 15, col. 3 | The leader of the school, Mrs Wong Siu Mui, and her daughter Lau Chung Ling used much of their free time to visit the mothers in the City and to invite them to social evenings and meetings. A very small congregation had grown from this. | "Mye av sin fritid har lederen fru Wong Siu Mui og hennes datter Lau Chung Ling brukt til å besøke mødrene i Walled City" (Much of their free time the leader Mrs Wong Siu Mui and her daughter Lau Chung Ling have used to visit the mothers in the Walled City) |
+| Lofotposten 1980-12-17, p. 15, col. 3 | Because the number of children in the Walled City had fallen in recent years, one of the floors of the 'Strømme school' was refitted as a combined church and chapel. The Foundation paid for this too. | "siden barnetallet i Walled City har vist synkende tendens i de senere år, fant man anledning til å ominnrede en av etasjene i Strømme-skolen til kombinert kirke og kapell." (since the number of children in the Walled City has shown a falling tendency in recent years, it was possible to refit one of the floors of the Strømme school as a combined church and chapel.) |
+| Lofotposten 1980-12-17, p. 15, col. 3 | Agnar Espegren said that the aim was to lift the people of the district out of the slum, and that it would not happen in his time. | "«Målet er å løfte menneskene i denne bydelen ut av slummen», sier Agnar Espegren." ('The aim is to lift the people in this district out of the slum,' says Agnar Espegren.) |
+| Lofotposten 1980-12-17, p. 15, col. 3 | Espegren said that rarely more than 30 people came to the Sunday meetings that he held in the Walled City; the meetings were on Sunday evenings. | "Det er sjelden flere enn 30 er til stede når jeg holder søndagsmøtene mine her i Walled City." (There are rarely more than 30 present when I hold my Sunday meetings here in the Walled City.) |
+| Lofotposten 1980-12-17, p. 15, col. 3 | INFERRED: The chapel in the City was probably opened on the Sunday evening, 26 October 1980: the writer says that 'this Sunday evening' they saw the truth of Espegren's words (inferred from the three-day sequence and this sentence). | "Og denne søndagskvelden fikk vi anledning til å oppleve både styrken og sannheten i hans ord." (And this Sunday evening we had the chance to experience both the strength and the truth of his words.) |
+| Lofotposten 1980-12-17, p. 14, photo caption | Espegren's opening speech in the Walled City chapel was given in Norwegian, English, Cantonese and Mandarin versions. | "Agnar Espegrens åpningstale i Walled City-kapellet ble gitt både i norsk, engelsk og Kanton-kinesisk" (Agnar Espegren's opening speech in the Walled City chapel was given in Norwegian, English and Cantonese) |
+| Lofotposten 1980-12-17, p. 14, photo | INFERRED: The photo of the opening shows Espegren at a pulpit with a cross, between a Chinese woman and a Chinese man, under a banner whose large characters I read as 信安堂獻堂 (the dedication of the 信安 church; the end of the banner is cut off). The Lutheran chapel in the City is Hsin On (信安) in other sources of the repo. My reading of the photo (inferred). | "信安堂獻堂" (dedication of the 信安 church) |
+| Lofotposten 1980-12-17, p. 15, photo caption | A photo shows Agnar Espegren and his son and successor, the mission doctor Olav Espegren, in front of 'the dark entrance to the Walled City': a dark doorway under a broken concrete canopy. | "Agnar Espegren og hans sønn og etterfølger, misjonslege Olav Espegren foran den mørke inngangen til Walled City." (Agnar Espegren and his son and successor, mission doctor Olav Espegren, in front of the dark entrance to the Walled City.) |
+| Lofotposten 1980-12-17, p. 15, photo | INFERRED: On the wall beside that entrance, a vertical sign reads 陳大信醫 (the lower part is hidden by the men): probably the sign of a doctor (醫). My reading of the photo; the caption does not name the sign or the entrance (inferred). | "陳大信醫" ((a sign: 陳大信, doctor)) |
 ### lead-l0669-2: Agder (Flekkefjord) 1981-12-14, p. 5
 
-- **Creator:** Agder (Flekkefjord)
-- **Date:** 1981-12-14
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/3f6c879aa8985d936cceeaeda4e56101/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1_005_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 3f6c879aa8985d936cceeaeda4e56101 ('Agder (Flekkefjord)', 1981-12-14), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled ' City ...' (p. 5).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Sevald K. Jakobsen, 'Blant flekkefjæringer i Hong Kong og Taiwan' [Among people from Flekkefjord in Hong Kong and Taiwan], Agder (Flekkefjord), Monday 14 December 1981, p. 5, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1
+- **Class:** primary (A visitor's own account, printed in December 1981, of a trip that ended with four days in Hong Kong.)
+- **Date of the record:** 1981-12-14 (printed); visit in late 1981 (not dated in the text)
+- **Files:**
+  - `lead-l0669-2-default-1055f10b.jpg` (in `local/`, not in git): Page image, Agder 1981-12-14, p. 5: travel letter from Taiwan and Hong Kong, with a short paragraph on the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_agder_null_null_19811214_104_145_1-1_005_null/full/full/0/default.jpg; 6523618 bytes; SHA-256 `523c4f8de94f383249c8a937979d7299aa64675518b1d8cf2b1f804338c8c8a0`; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/3f6c879aa8985d936cceeaeda4e56101/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Agder 1981-12-14, p. 5, col. 2 | INFERRED: In late 1981 the Norwegian visitor Sevald K. Jakobsen spent four days in Hong Kong on his way home from Taiwan. Missionary Agnar Espegren of the Norwegian Lutheran Mission (Misjonssambandet) showed him the mission's work, and also took him into the Walled City, which he called the worst slum area that he had seen. The date of the visit is inferred from the print date. | "Likeså et besøk i Walled City som er det værste slumstrøk jeg har sett." (Likewise a visit to the Walled City, which is the worst slum area I have seen.) |
+| Agder 1981-12-14, p. 5, col. 2 | INFERRED: Jakobsen wrote that the City was a small area that no authority would acknowledge, and that the police did not go in unless there was a special suspicion of a serious crime. He probably repeated what his guide told him (inferred). | "Et lite strøk som ikke noen myndighet vil kjennes ved. Politi går ikke inn her uten at der er spesiell mistanke om alvorlig forbrytelse." (A small area that no authority will acknowledge. Police do not go in here unless there is special suspicion of serious crime.) |
 ### lead-l0669-3: Gjengangeren 1981-06-20, p. 3
 
-- **Creator:** Gjengangeren
-- **Date:** 1981-06-20
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/606bc411ef83f78765445f9e164b44df/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1_003_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 606bc411ef83f78765445f9e164b44df ('Gjengangeren', 1981-06-20), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled-City ...' (p. 3).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Paul Einar Vatne (handwritten signature), 'Notater på 3.' [Notes on page 3], weekly column, Gjengangeren, Saturday 20 June 1981, p. 3, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1
+- **Class:** primary (A column of 1981 in which the writer recalls his own visit to a school in the City with Agnar Espegren. The visit is not dated: it was before June 1981.)
+- **Date of the record:** 1981-06-20 (printed); the visit is undated (before June 1981)
+- **Files:**
+  - not downloaded (curl exit 28): Page image, Gjengangeren 1981-06-20, p. 3: column 'Notater på 3.' with the memory of a school in the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_gjengangeren_null_null_19810620_130_139_1-1_003_null/full/full/0/default.jpg; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/606bc411ef83f78765445f9e164b44df/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Gjengangeren 1981-06-20, p. 3, 'Notater på 3.', col. 3 | INFERRED: The columnist recalls that he once went with missionary Agnar Espegren to a school for children in 'the notorious district' Walled-City in Hong Kong. The visit is not dated. The school was probably the mission's school in the City, which other Norwegian papers of 1980 call 'Agnar Espegren's school in the Walled City' (inferred). | "Jeg glemmer aldri en gang jeg fikk være med misjonær Agnar Espégren til en skole for barn i den beryktede bydelen Walled-City i Hong Kong." (I never forget a time I got to go with missionary Agnar Espegren to a school for children in the notorious district Walled City in Hong Kong.) |
+| Gjengangeren 1981-06-20, p. 3, 'Notater på 3.', col. 3 | He remembers that the children sat 'like lights' at their desks, glad to have the chance to learn, and that they did not want to miss a single word of the teacher. | "Barna satt som lys på pultene sine. De var så glade for å ha fått muligheten til å lære noe." (The children sat like lights at their desks. They were so glad to have got the opportunity to learn something.) |
 ### lead-l0669-4: Østlands-Posten 1980-07-19, p. 11
 
-- **Creator:** Østlands-Posten
-- **Date:** 1980-07-19
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/44bdb16f84757bfae57721b5602db3a4/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1_011_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 44bdb16f84757bfae57721b5602db3a4 ('Østlands-Posten', 1980-07-19), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City, ...' (p. 11).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Gerd and Andreas Sandvand, '«Synd på kineserne som må leve under så kummerlige kår»' ['Pity the Chinese who must live in such miserable conditions'], 'Østen-brev' [letter from the East], Østlands-Posten, Saturday 19 July 1980, p. 11, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1
+- **Class:** primary (A letter of 1980 from two Norwegian missionaries in Taiwan about their own trip to Hong Kong, Macau and China in June 1980.)
+- **Date of the record:** 1980-07-19 (printed); visit in June 1980
+- **Files:**
+  - `lead-l0669-4-default-de8e1891.jpg` (in `local/`, not in git): Page image, Østlands-Posten 1980-07-19, p. 11: letter from the East by Gerd and Andreas Sandvand, with a sentence on the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_ostlandsposten_null_null_19800719_99_163_1-1_011_null/full/full/0/default.jpg; 8100183 bytes; SHA-256 `4cd5ee1ecca63f983d7d84a4854358a4280f71a2bb97f5bdaa475e2dcf67c8a9`; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/44bdb16f84757bfae57721b5602db3a4/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Østlands-Posten 1980-07-19, p. 11, col. 4 | INFERRED: In June 1980 the missionaries Gerd and Andreas Sandvand, on holiday from Taiwan, walked down the narrow alleys of the Walled City soon after they saw the shopping areas of Ocean Centre and Ocean Terminal. The visit was probably in the last week of June 1980: they were nearly a week in Hong Kong after St Hans eve (23 June) (inferred). | "Når en så like etter tråkker ned de trange smugene i Walled City, gir det selvsagt litt å tenke på." (When one then, just after, treads down the narrow alleys in the Walled City, it of course gives something to think about.) |
+| Østlands-Posten 1980-07-19, p. 11, col. 4 | The letter says that three people lived on each square metre in the Walled City. This is the writers' figure, not a measurement. | "Her bor det tre mennesker pr. kvm." (Here three people live per square metre.) |
+| Østlands-Posten 1980-07-19, p. 11, col. 5 | In June 1980 Olav Espegren worked as a doctor among Vietnamese refugees and was also the supervisor of the Norwegian Lutheran Mission's work in Hong Kong and Macau. The Sandvands stayed with him and Turid Espegren. | "samtidig som han er tilsynsmann for Misjonssambandets omfattende virksomhet i Hong Kong og Macao." (at the same time as he is supervisor of the Mission Society's extensive activity in Hong Kong and Macao.) |
 ### lead-l0669-5: Øvre Smaalenene 1981-12-30, p. 6
 
-- **Creator:** Øvre Smaalenene
-- **Date:** 1981-12-30
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/09df17a359316be25e768094d8a83298/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1_006_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 09df17a359316be25e768094d8a83298 ('Øvre Smaalenene', 1981-12-30), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City ...' (p. 6).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Reidun Marie and Magne Vistnes and their children, Christmas letter 'Julen 1981. Kjære venner', under the headline 'Enebakkmisjonærer feirer 10. jul ved Kinas porter' [Enebakk missionaries celebrate their 10th Christmas at China's gates], Øvre Smaalenene, Wednesday 30 December 1981, p. 6, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1
+- **Class:** primary (A missionary family's own Christmas letter of 1981 about their work in Hong Kong. The surname is in the photo caption ('Reidun og Magne Vistnes sammen med sine fem barn').)
+- **Date of the record:** Christmas 1981 (printed 1981-12-30)
+- **Files:**
+  - not downloaded (curl exit 28): Page image, Øvre Smaalenene 1981-12-30, p. 6: Christmas letter of the missionaries Reidun and Magne Vistnes; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_oevresmaalenene_null_null_19811230_80_202_1-1_006_null/full/full/0/default.jpg; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/09df17a359316be25e768094d8a83298/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Øvre Smaalenene 1981-12-30, p. 6, col. 1 | From August 1981 the Norwegian Lutheran Mission couple Reidun and Magne Vistnes had the congregation in the Walled City as their main responsibility. They had come back to Hong Kong on 15 August 1981 after 16 months in Norway. | "Vi har menigheten i Walled City som vårt hovedansvar, likeså har vi besøkstjeneste i et par andre menigheter." (We have the congregation in the Walled City as our main responsibility; likewise we have a visiting ministry in a couple of other congregations.) |
+| Øvre Smaalenene 1981-12-30, p. 6, col. 1 | Besides the Walled City congregation, the couple did much office work, visited other churches, sat on committees and boards, did school administration, had tasks at the mission's home for drug addicts (run day to day by Chinese staff) and worked on radio programmes sent into China. | "Så har vi også fått oppgaver ved narkomanhjemmet, men den daglige ledelse der er det et par kinesiske medarbeidere som tar seg av." (Then we have also got tasks at the drug addicts' home, but the daily management there a couple of Chinese co-workers take care of.) |
+| Øvre Smaalenene 1981-12-30, p. 6, col. 1 | Christmas 1981 was the family's tenth Christmas in Hong Kong. | "For 10. gang skal vi få feire jul ved Kinas porter." (For the 10th time we will celebrate Christmas at China's gates.) |
 ### lead-l0669-6: Folkets Framtid 1980-05-23, p. 3
 
-- **Creator:** Folkets Framtid
-- **Date:** 1980-05-23
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/2c1970300af18bc8372c0ae55b32e1f7/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1_003_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 2c1970300af18bc8372c0ae55b32e1f7 ('Folkets Framtid', 1980-05-23), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City. ...' (p. 3).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** 'Ny innsamlingsrekord for Strømmes Minnestiftelse' [New fund-raising record for the Strømme Memorial Foundation] (no byline), Folkets Framtid, Friday 23 May 1980, p. 3, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1
+- **Class:** primary (A news report of May 1980 on the Foundation's spending in 1979.)
+- **Date of the record:** 1980-05-23
+- **Files:**
+  - not downloaded (curl exit 28): Page image, Folkets Framtid 1980-05-23, p. 3: report on the Strømme Memorial Foundation, naming its support of the school in the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_folketsframtid_null_null_19800523_34_37_1-1_003_null/full/full/0/default.jpg; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/2c1970300af18bc8372c0ae55b32e1f7/manifest)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/norwegian-press-1984-1993/SOURCE.md`](../../secondary-sources/norwegian-press-1984-1993/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Folkets Framtid 1980-05-23, p. 3, col. 1 | In 1979, as in earlier years, Pastor Strømmes Minnestiftelse (the Strømme Memorial Foundation, Kristiansand) paid the yearly running costs of 'Agnar Espegren's school in the Walled City'. (The paper prints 'han' for 'har'.) | "Som ved tidligere år han Minnestiftelsen dekket de årlige driftsomkostninger ved Agnar Espegrens skole i Walled City." (As in earlier years the Memorial Foundation has [printed 'han'] covered the annual running costs of Agnar Espegren's school in the Walled City.) |
+| Folkets Framtid 1980-05-23, p. 3, lead and col. 1 | The Foundation collected over 11 million kroner in 1979. It did not do its own field work: it worked through Norwegian mission societies and Norwegian Church Aid (Kirkens Nødhjelp). | "Minnestifelsen driver ikke eget feltarbeide i den tredje verden, men samarbeider med norske misjonsselskaper og Kirkens Nødhjelp." (The Memorial Foundation does not run its own field work in the third world, but cooperates with Norwegian mission societies and Norwegian Church Aid.) |
+
+- **Leads:**
+  - Asbjørn Aavik and Harald Stene Dehlin, 'Presten med de røde annonsene' (book, autumn 1979), on the fund-raising of Olav Kr. Strømme: it can tell how the mission floors in the Walled City were bought (cited in Folkets Framtid 1980-05-23, p. 3, and Telen 1980-05-24, p. 4).
 ### lead-l0669-7: Telen 1980-05-24, p. 4
 
-- **Creator:** Telen
-- **Date:** 1980-05-24
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/fd72fdf4b00585178b53fe3b112bbd4c/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1_004_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item fd72fdf4b00585178b53fe3b112bbd4c ('Telen', 1980-05-24), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City. ...' and '... Hong Kong ...' (p. 4).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** 'Ny rekord for Pastor Strømmes Minnestiftelse' [New record for the Pastor Strømme Memorial Foundation] (no byline), Telen (Notodden), Saturday 24 May 1980, p. 4, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1
+- **Class:** primary (A news report of May 1980 (the same press text as Folkets Framtid of the day before).)
+- **Date of the record:** 1980-05-24
+- **Files:**
+  - `lead-l0669-7-default-32ee18e4.jpg` (in `local/`, not in git): Page image, Telen 1980-05-24, p. 4: report on the Strømme Memorial Foundation, naming its support of the school in the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19800524_53_117_1-1_004_null/full/full/0/default.jpg; 6890837 bytes; SHA-256 `87432b23d1adf79886f71d8920085c9990d66530df88b276500ba62e52b2d3c8`; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/fd72fdf4b00585178b53fe3b112bbd4c/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Telen 1980-05-24, p. 4, col. 1 | Telen printed the same report: in 1979, as in earlier years, the Strømme Memorial Foundation paid the yearly running costs of Agnar Espegren's school in the Walled City. | "Som ved tidligere år har Minnestiftelsen dekket de årlige driftsomkostninger ved Agnar Espegrens skole i Walled City." (As in earlier years the Memorial Foundation has covered the annual running costs of Agnar Espegren's school in the Walled City.) |
 ### lead-l0669-8: Telen 1981-09-12, p. 4
 
-- **Creator:** Telen
-- **Date:** 1981-09-12
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/18a707c8a83a5fe2dae9e282e965457e/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1_004_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 18a707c8a83a5fe2dae9e282e965457e ('Telen', 1981-09-12), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City, ...' (p. 4).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Misjonssambandet, 'Film- og misjonskveld på Tinnesmoen Bedehus' [Film and mission evening at Tinnesmoen prayer house], notice, Telen (Notodden), Saturday 12 September 1981, p. 4, National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1
+- **Class:** primary (A notice of the time. It records a Norwegian mission film of 1981 that showed the City; the film itself is not in the repo.)
+- **Date of the record:** 1981-09-12
+- **Files:**
+  - not downloaded (curl exit 28): Page image, Telen 1981-09-12, p. 4: notice of a mission film that shows the Walled City; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_telen_null_null_19810912_54_211_1-1_004_null/full/full/0/default.jpg; licence: CC BY-NC-ND (licence field of the IIIF manifest: https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser) (https://api.nb.no/catalog/v1/iiif/18a707c8a83a5fe2dae9e282e965457e/manifest)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Telen 1981-09-12, p. 4, notice 'Film- og misjonskveld på Tinnesmoen Bedehus' | On the evening of Saturday 12 September 1981 the Norwegian Lutheran Mission showed its new film 'Hong Kong - storbyskygger og evangelisering' (Hong Kong: shadows of the big city, and evangelisation) at Tinnesmoen prayer house. The notice says that the film visits 'the lawless district Walled City', the drug scene and idol worship. | "Vi besøker den lovløse bydelen Walled City, narkotikamiljøet og avgudstilbedelsen." (We visit the lawless district Walled City, the drug scene and the idol worship.) |
+
+- **Leads:**
+  - Norsk Luthersk Misjonssamband, film 'Hong Kong - storbyskygger og evangelisering' (new in 1981): it shows the Walled City and the drug scene (Telen 1981-09-12, p. 4). Not located; the NLM archive or the National Library of Norway can hold a copy.
 ### lead-l0669-9: Haugesunds Avis 1980-11-08, p. 11
 
-- **Creator:** Haugesunds Avis
-- **Date:** 1980-11-08
-- **Kind:** press
-- **Class:** primary (A Norwegian local newspaper of the time (INFERRED: a mission letter or report from the City).)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** CC BY-NC-ND (NB accessInfo 'ccbyncnd', accessAllowedFrom EVERYWHERE)
-- **Link:** https://www.nb.no/items/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1
-- **Other links:** https://api.nb.no/catalog/v1/iiif/5f587762742349481b9cfaac656fb2bc/manifest, https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1_011_null/full/full/0/default.jpg
-- **Proof that it exists:** NB API: item 5f587762742349481b9cfaac656fb2bc ('Haugesunds Avis', 1980-11-08), accessInfo ccbyncnd / EVERYWHERE; contentfragments for 'walled city': '... Walled City ...' (p. 11).
-- **What it gives (resolver's note, not checked):** A 'Walled City' hit in a Norwegian paper of 1980-81, before the peak: INFERRED a missionary's letter or a report on the Norwegian Lutheran Mission's work in the City (chapel, school, Tro-Fred congregation). Not read; the snippets give only the words 'Walled City'.
-- **Lead:** L0669 (cited by gap-foreign-free-press-11, norwegian-press-1984-1993)
-- **Notes:** Norwegian. Same search as gap-foreign-free-press-11 (which read the 1984-1988 hits).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kjetil Rydland and Bjørn Haaland, 'Brev III frå fitjarbuane på veg til Sør-Amerika: Vietnamesarar som ventar på å få reisa til Noreg: 12-15 personar i eitt rom på like mange kvm' [Letter III from the Fitjar men on the way to South America: Vietnamese waiting to travel to Norway: 12-15 persons in one room of as many square metres], Lørdagsavisen, Haugesunds Avis (Haugesund), Saturday 8 November 1980, p. 11 (NB image 11), sections '«Farlege» Wall City' and 'Handel utan lisens' (nynorsk), National Library of Norway, https://www.nb.no/items/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1 (NB id 5f587762742349481b9cfaac656fb2bc)
+- **Class:** primary (A first-hand travel letter printed in a local newspaper in November 1980; the writers walked into the City themselves in 1980. What they were told (police rights, tax addresses) is a record of 1980 hearsay; the diplomatic-quarter history and the former opium production are background (secondary). The visit is before the peak period (1985-1993).)
+- **Date of the record:** 1980-11-08 (printed); visit to the City in 1980, about August-September (INFERRED from the first letter of 1980-09-29)
+- **Files:**
+  - `lead-l0669-9-default-8cdca3bc.jpg` (in `local/`, not in git): Page image of Haugesunds Avis, 8 November 1980, p. 11 (IIIF, 6677 x 8803 px), with the letter, the City section and the 'Kathing Walled City' photo; https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1_011_null/full/full/0/default.jpg; 4898684 bytes; SHA-256 `56388029c2f532f93edfa7ca71e4a74e0d856a89f9b011b7523e5fbea45782c6`; licence: CC BY-NC-ND (manifest licence 'https://www.nb.no/lisens/#cc-by-nc-ndikke-kommersiell-ingen-bearbeidelser'; accessInfo license 'ccbyncnd', accessAllowedFrom EVERYWHERE) (https://api.nb.no/catalog/v1/iiif/5f587762742349481b9cfaac656fb2bc/manifest)
+  - `lead-l0669-9-URN_NBN_no-nb_digavis_haugesundsavis_null_null_19801108_86_2-2167e0a6.html` (in `local/`, not in git): ALTO XML (OCR text) of the same page; https://api.nb.no/catalog/v1/metadata/5f587762742349481b9cfaac656fb2bc/altos/URN:NBN:no-nb_digavis_haugesundsavis_null_null_19801108_86_260_1-1_011_null; 456127 bytes; SHA-256 `d12a7a7ddfd619827b0b1258999dc41efa10502e94de92d84a5ff902a5b4b60b`; licence: CC BY-NC-ND (as the page) (https://api.nb.no/catalog/v1/iiif/5f587762742349481b9cfaac656fb2bc/manifest)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/norwegian-press-1984-1993/SOURCE.md`](../../secondary-sources/norwegian-press-1984-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 11 (NB image 11), intro box, cols. 1-3 | The page is the third travel letter of two young men from Fitjar, Kjetil Rydland and Bjørn Haaland, on their way to South America. The letter tells of their days in Hong Kong. The intro says that they had reached San Pedro, California, when they wrote it. | "Dei to fitjarbuane Kjetil Rydland og Bjørn Haaland som er undervegs til Sør-Amerika har no nådd fram til San Pedro i California" (The two men from Fitjar, Kjetil Rydland and Bjørn Haaland, who are on the way to South America, have now reached San Pedro in California) |
+| p. 11 (NB image 11), col. 1; and Haugesunds Avis 1980-09-29, p. 8 | INFERRED: The writers were in Hong Kong in 1980, about August-September. INFERRED: their first letter, printed in Haugesunds Avis on 29 September 1980, says they were then probably crossing the Pacific; this letter names 32 degrees, damp air and a typhoon heading north to Japan. | "Sjølv om me ikkje var der på den varmaste årstida, var det heitt nok med 32 grader og fuktig luft." (Even though we were not there in the hottest season, it was hot enough with 32 degrees and damp air.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | One day the writers went to 'Wall City', which they call a small Chinese district. The subhead calls it 'dangerous' in quotation marks. | "Ein dag tok me turen ut til «Wall City» - ein liten kinesisk bydel." (One day we took the trip out to 'Wall City' - a small Chinese district.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | The writers state that the Hong Kong authorities did not rule in the City in 1980. | "I dette området rådde ikkje styresmaktene i Hong Kong." (In this area the authorities of Hong Kong did not rule.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | The writers state that the police had no right to go into the City unless they suspected murder or the making of narcotics. The writers do not say where they got this, and they quote no law. | "Politiet hadde ikkje rett til å gå inn her utan at det var mistanke om mord eller narkotikaproduksjon." (The police had no right to go in here unless there was suspicion of murder or narcotics production.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | The writers state that, because of this status, companies in Hong Kong set up addresses inside the City, which gave them large tax advantages. The writers give no source and no example. | "selskap i Hong Kong oppretta adresser inne i denne bydelen - noko som gav dei store skattemessige fordeler." (companies in Hong Kong set up addresses inside this district - which gave them large tax advantages.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | People warned the writers not to go in, because it was easy to get lost there. The writers give the area as one square kilometre; that figure is far too large for the City, which they visited themselves. | "Me var blitt åtvara mot å gå inn der, då det var lett å koma seg bort, sjølv om området berre var på ein kvadratkilometer." (We had been warned against going in there, as it was easy to get lost, even though the area was only one square kilometre.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | The City had a great number of old blocks that stood almost wall to wall. | "I Wall City var det eit utal gamle blokker som sto nesten vegg i vegg" (In Wall City there were countless old blocks that stood almost wall to wall) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | The writers give the population of the City as 80,000 people in all. They do not give a source for the figure. | "det budde totalt 80.000 menneske i dette bu-kaoset." (in total 80,000 people lived in this housing chaos.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | Narrow, dark passages wound between the blocks and under them. | "Trange, mørke ganger bukta seg fram mellom og under blokkene." (Narrow, dark passages wound their way between and under the blocks.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | Many kinds of 'businesses' (the writers put the word in quotation marks) and small workshops stood in rows along the passages. | "Mange slag «forretningar» og små verkstader låg på rad og rekkje langs gangane." (Many kinds of 'businesses' and small workshops lay in rows along the passages.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | Open sewers ran along the passages. | "Langs gangvegane gjekk der opne kloakkar" (Along the passageways there ran open sewers) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | Hens and dogs went about freely in the passages. | "høns og hundar gjekk fritt omkring." (hens and dogs went freely about.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | INFERRED: The writers tried to take a few photographs without provoking people too much. INFERRED reading: the first letter of 'litt' is faded at the column edge of the scan. | "Me prøvde å fotografera [l]itt, utan å provosera for mykje." (We tried to photograph a little, without provoking too much.) |
+| p. 11 (NB image 11), col. 6, section '«Farlege» Wall City' | Inside the City some men in plain clothes suddenly stopped the writers and showed police cards. Thus plain-clothes police were inside the City in 1980. | "Brått vart me stoppa av nokre karar i sivil som viste fram politikort." (Suddenly we were stopped by some men in plain clothes who showed police cards.) |
+| p. 11 (NB image 11), cols. 6-7, section '«Farlege» Wall City' | The plain-clothes policemen warned the writers not to take pictures inside the area, because the residents could easily assault them. | "Dei åtvara oss mot å ta bilete inne på området, då me lett kunne verta antasta av innbyggjarane." (They warned us against taking pictures inside the area, as we could easily be assaulted by the residents.) |
+| p. 11 (NB image 11), col. 7, top | The writers took several more pictures all the same, and nothing dramatic happened. They found their way back out into the daylight unharmed. | "Me tok likevel fleire bilete utan at noko dramatisk skjedde. Og me fann vegen ut att i lyset utan å ha fått noko mein." (We took several pictures all the same without anything dramatic happening. And we found the way back out into the light without coming to harm.) |
+| p. 11 (NB image 11), col. 7, section 'Handel utan lisens' | Close to the City the writers visited a large street market that sold everything from live frogs to shaving cream. The article does not name the street. | "Like ved dette strøket var me innom eit stort gatemarked der det vart seld alt frå levande froskar til barber-krem." (Close by this district we dropped in at a big street market where everything was sold, from live frogs to shaving cream.) |
+| p. 11 (NB image 11), col. 7, section 'Handel utan lisens' | In that market the vegetable sellers shouted their goods and prices very loudly. | "Grønsakhandlarane gaulte ut vareutval og prisar så høgt at det skulle ha vore påbode med høyrselsvern." (The vegetable sellers yelled out goods and prices so loudly that ear protection should have been compulsory.) |
+| p. 11 (NB image 11), col. 7, section 'Handel utan lisens' | The mood in the market was oddly tense, and most of the traders kept watch on the end of the street. | "dei fleste kjøpmennene heldt godt auga med kva som gjekk føre seg ved enden av gata." (most of the traders kept a close eye on what was going on at the end of the street.) |
+| p. 11 (NB image 11), col. 7 (above and below the photo), section 'Handel utan lisens' | Suddenly many traders packed up all their gear fast and vanished into the small side streets. A while later they strolled back out and went on selling. | "Brått var det mange som pakka saman alt utstyret i ein fart og forsvann inn i dei små sidegatene." (Suddenly there were many who packed up all their gear in a hurry and disappeared into the small side streets.) |
+| p. 11 (NB image 11), col. 7, below the photo | The street traders had no licence for their trade, and they were watching for the police all the time. | "desse torghandlarane ikkje hadde lisens til å driva slik handel - og at det var politiet dei vakta slik på heile tida." (these market traders had no licence to carry on such trade - and it was the police they watched for all the time.) |
+| p. 11 (NB image 11), col. 7, below the photo | The police told the writers that they did not follow the traders into the small streets; they arrested only people caught in the act. | "Politiet fortalde oss at dei ikkje fylgde etter torghandlarane inn i smågatene. Dei tok berre folk på fersk gjerning." (The police told us that they did not follow the market traders into the small streets. They only took people in the act.) |
+| p. 11 (NB image 11), col. 7, below the photo | The authorities partly turned a blind eye to the illegal trade, because it was a way for poor people to get work. | "Styresmaktene såg litt gjennom fingrane med denne ulovlege handelen, då det var ein måte for fattigfolk å skaffa seg eit arbeid på." (The authorities looked a little through their fingers at this illegal trade, as it was a way for poor folk to get themselves work.) |
+| p. 11 (NB image 11), photo and caption, cols. 6-8 (above the City section) | INFERRED: The only photo near the City passage shows two old women in wide, fringed hats who smoke long pipes. Its caption names 'Kathing Walled City'. This is probably Kat Hing Wai (吉慶圍), a walled village at Kam Tin (the characters are from the repo's sources: primary-sources/visitor-photos-1970-1993/SOURCE.md and the M+ object data) in the New Territories, not Kowloon Walled City. INFERRED from the name and the Hakka hats; the photo is not of the City. The NB search hit 'Walled City' comes from this caption only. | "Landsbykvinner utanfor Kathing Walled City." (Village women outside Kathing Walled City.) |
+
+- **Leads:**
+  - Sunnhordland (Stord), 1980 (NB library access only; full-text hits for 'fitjarbuane' on 1980-11-07 and for 'Rydland Haaland Hong Kong' on 1980-09-26 and 1980-12-17): the local paper of Fitjar can carry the same travel letters, possibly with more of their photos of the City.

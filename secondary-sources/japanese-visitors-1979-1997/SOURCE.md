@@ -52,3 +52,15 @@ See the leads under each item in the primary folder.
 | page 2 of 2 | Witness A, a Hong Kong man in his 60s, was born and raised right next to the City. | "九龍城砦のすぐそばで生まれ育った60代の香港人男性Aさん" (Mr A, a Hong Kong man in his 60s born and raised right beside the Walled City) |
 | page 2 of 2 | The reporter says ordinary people went to the City's unlicensed dentists for minor cavities, cleaning and dentures. | "軽度の虫歯や口内クリーニング、入れ歯作成程度なら" (for minor cavities, cleaning of the mouth or making dentures) |
 | page 2 of 2, captions of film stills | Captions say all factories inside were unlicensed, and that there were post boxes, served by a postman from outside who knew the inside well. | "実際に郵便ポストはあり、内部を知り尽くした配達員が外から訪れていた" (There really were post boxes, and a postman who knew the inside thoroughly came from outside) |
+
+### lead-l0951: 鷹野隆大 写真展 「香港・深圳 1988」 (Ryudai Takano, photo exhibition 'Hong Kong–Shenzhen 1988'), Zeit-Foto Salon, Tokyo
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Ryudai Takano (鷹野隆大), statement dated September 2013, and exhibition page 鷹野隆大 写真展 「香港・深圳 1988」 (photo exhibition 'Hong Kong-Shenzhen 1988'), Zeit-Foto Salon (ツァイト・フォト・サロン), Tokyo, 21 November - 21 December 2013, with the photo 「九龍城、香港」; Wayback Machine copy of 9 November 2014, http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm
+- **Class:** primary (The photograph is a record made at the time (summer 1988). The statement is the photographer's own account, given later: retrospective (2013). Its sentence on the history of the City is background (kind secondary).)
+- **Date of the record:** photographs summer 1988; statement September 2013; exhibition 21 November - 21 December 2013
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/japanese-visitors-1979-1997/SOURCE.md`](../../primary-sources/japanese-visitors-1979-1997/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| statement, para. 1 | His background note: the area became a lawless zone because China did not give up its ownership after Britain occupied the surrounding area at the end of the 19th century. | "中国が所有権を譲らなかったために無法地帯と化して生まれたのが九龍城だった。" (Kowloon Walled City was born as a lawless zone because China did not cede ownership.) |

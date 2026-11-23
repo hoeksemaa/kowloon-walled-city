@@ -322,23 +322,30 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0825: 20th Annual Conference of the Hong Kong Sociological Association, 'Identity Politics in a Globalized World', abstract booklet (1 December 2018): HU Jun, 'Missing Transitions: A Case Study of the Clearance of Kowloon Walled City 1987-1995', abstract, p. 61
 
-- **Creator:** Hong Kong Sociological Association; Department of Sociology, The Chinese University of Hong Kong (abstract by HU Jun, Lingnan University)
-- **Date:** 2018-12-01
-- **Kind:** catalogue
-- **Class:** secondary (A conference abstract of 2018 on the clearance, built on later reading of Hansard and newspapers.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence stated; copyright of the association and the authors.
-- **Link:** http://www.cuhk.edu.hk/soc/hksa2018/booklet.pdf
-- **Other links:** http://www.cuhk.edu.hk/soc/hksa2018/, http://www.cuhk.edu.hk/soc/hksa2018/HKSA2018_Programme.pdf
-- **Proof that it exists:** Booklet contents 'Table of Content ... Abstracts of Panel 5 ... 61'; p. 61: 'HU Jun / Lingnan University / Missing Transitions: A Case Study of the Clearance of Kowloon Walled City 1987-1995 / Abstract / Kowloon Walled City hereafter KWC was built as the military fort established by the Qing government ...'.
-- **What it gives (resolver's note, not checked):** The abstract only: a discourse analysis of the clearance, from LegCo Hansard and the South China Morning Post, Ta Kung Pao, Wen Wei Pao, Ming Pao and Sing Tao Daily; it asks how the public saw the clearance and how the government answered, and reads it as a sign of the rise of civil society in the 1980s.
-- **Lead:** L0825 (cited by top-scholarship-1, scholarship-land-and-planning-1992-2026)
-- **Notes:** 1.1 MB PDF. Add the abstract to the held item top-scholarship-1 rather than make a new item, if the catalogue allows.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** HU Jun (Lingnan University), 'Missing Transitions: A Case Study of the Clearance of Kowloon Walled City (1987-1995)', abstract, in Hong Kong Sociological Association, 20th Annual Conference, 'Identity Politics in a Globalized World', abstract booklet (Department of Sociology, The Chinese University of Hong Kong, 1 December 2018), Panel 5.1 'Development and Urbanization', p. 61, https://www.cuhk.edu.hk/soc/hksa2018/booklet.pdf ; programme: https://www.cuhk.edu.hk/soc/hksa2018/HKSA2018_Programme.pdf
+- **Class:** secondary (A later scholarly abstract (2018) about the clearance and its public discourse; no first-hand testimony.)
+- **Date of the record:** 2018-12-01 (conference day; the booklet PDF was made on 2018-11-29)
+- **Files:**
+  - `lead-l0825-booklet-7aaab2d0.pdf` (in `local/`, not in git): Abstract booklet of the HKSA 20th Annual Conference (73 pages, 1.1 MB); HU Jun's abstract on p. 61; https://www.cuhk.edu.hk/soc/hksa2018/booklet.pdf; 1175543 bytes; SHA-256 `0acd3e1793b70ff316b3f91a985de1876ddff17a11f2ff429d4850285d03a823`; licence: No licence statement on the conference page or in the PDF (https://www.cuhk.edu.hk/soc/hksa2018/)
+  - `lead-l0825-HKSA2018_Programme-5700b87c.pdf` (in `local/`, not in git): Programme of the conference (156 KB): Panel 5.1, 17:15-18:30, SB 422, chair Hua Zhong; https://www.cuhk.edu.hk/soc/hksa2018/HKSA2018_Programme.pdf; 155996 bytes; SHA-256 `a3ce9f0c0b77fe0c73851e7ad99a8427b65fe4e80ad1d286005f1a82231fb7c7`; licence: No licence statement on the conference page or in the PDF (https://www.cuhk.edu.hk/soc/hksa2018/)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract; programme p. 2 and panel list | HU Jun of Lingnan University gave a paper, 'Missing Transitions: A Case Study of the Clearance of Kowloon Walled City (1987-1995)', at the 20th Annual Conference of the Hong Kong Sociological Association. The paper was in Panel 5.1, 'Development and Urbanization', on 1 December 2018 at The Chinese University of Hong Kong. | "Missing Transitions: A Case Study of the Clearance of Kowloon Walled City (1987-1995)" |
+| programme (HKSA2018_Programme.pdf), p. 1 (room key), p. 2 (schedule) and p. 9 (panel list, chair) | Panel 5.1 met from 17:15 to 18:30 in room SB 422 (Room 422, 4/F, Sino Building), with Hua Zhong as chair. | "17:15-18:30 Panel 5.1 SB 422 Development and Urbanization" |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The abstract states that the City was built as a military fort of the Qing government, to declare China's sovereignty over Hong Kong and to watch the activities of the colonial government. | "was built as the military fort established by the Qing government to declare China's sovereignty over Hong Kong and monitor activities of Hong Kong colonial government" |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The abstract states that the British and Chinese governments had many diplomatic conflicts about the right to administer the City. It puts them 'throughout the 19th century'; the abstract gives no dates. | "Concerning the administration rights of Walled City, British government and Chinese government had multiple diplomatic conflicts throughout the 19th century." |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The abstract argues that by nature the City should have been regarded as a Chinese nationalist symbol of sovereignty in Hong Kong and of the humiliating colonial history, but that after the clearance it gradually became a significant symbol of Hong Kong local culture and history. | "after the clearance of KWC, it gradually became a significant symbol of Hong Kong local culture and history." |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The study is a discourse analysis of the government and the public about the City. Its sources are the Hong Kong Hansard and the South China Morning Post (南華早報), Ta Kung Pao (大公報), Wen Wei Po (文匯報; the abstract spells it 'Wen Wei Pao'), Ming Pao (明報) and Sing Tao Daily (星島日報). The Chinese names are from the repo's sources; the abstract gives only the English names. | "draws evidence from Hong Kong Hansard and the local popular newspaper including the South China Morning Post, Ta Kung Pao, Wen Wei Pao, Ming Pao and the Sing Tao Daily" |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The study asks how the public saw the clearance and made claims about it, how the government answered the public's demands, and how the public's claims affected the social movement about the clearance. | "How did the public perceive and make claims about the clearance project? How did the government respond to the public demand?" |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract | The author reads the clearance as a sign of the rise of Hong Kong civil society in the 1980s. | "My case study aims to reveal the rising of Hong Kong civil society in 1980's." |
+| booklet p. 61 (PDF p. 61), Panel 5.1, HU Jun abstract, title | The study covers the clearance from 1987 to 1995. | "Clearance of Kowloon Walled City (1987-1995)" |
+
+- **Leads:**
+  - HU Jun's full conference paper (2018): not online; the Lingnan Scholars record (held as top-scholarship-1, https://scholars.ln.edu.hk/en/publications/missing-transitions-a-case-study-of-the-clearance-of-kowloon-wall) has no file.

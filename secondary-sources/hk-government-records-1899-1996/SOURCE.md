@@ -58,3 +58,15 @@ See the leads under each item in the primary folder.
 | media 53375, image and comment by moddsey (10 Feb 2026) | A cyclist rides on the service road along the runway, below the landing aircraft. | "The photo also captures a cyclist on the runway promontory road." |
 | media 53375, title and comment | The title says runway 05 but the comment of moddsey is headed 'Landing Runway 13'. The second photo names runway 13. | "Landing Runway 13" |
 | media 53441, description | In May 1992 a Cathay Pacific TriStar (VR-HOG) landed on runway 13, seen from the Kowloon City Ferry Pier. | "Photo taken in May 1992 from Kowloon City Ferry Pier of Cathay Pacific Tristar VR-HOG landing on runway 13." |
+
+### lead-l1149-1: The Central Registry of Drug Abuse - A Summary of its Background, Operation & Findings
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Hong Kong Government, Central Registry of Drug Abuse (藥物濫用資料中央檔案室), Narcotics Division, Government Secretariat (布政司署禁毒處), The Central Registry of Drug Abuse - A Summary of its Background, Operation and Findings, Special Study Reports (特別研究報告), November 1982, preface by the Commissioner for Narcotics, 19 pp. + Appendix I. HKU Libraries copy P 354.200765 H7 (HKUL eBooks, catalogue date 1983), HKU Digital Repository record rv043w82d, https://digitalrepository.lib.hku.hk/catalog/rv043w82d
+- **Class:** primary (A government report of the time (November 1982), made by the registry itself. Its short history of opium in Hong Kong (para. 1) is secondary. The primary tree is right. It gives Hong Kong-wide figures only; it does not name the City.)
+- **Date of the record:** 1982-11
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-government-records-1899-1996/SOURCE.md`](../../primary-sources/hk-government-records-1899-1996/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1, para. 1 | The report says the use of opiates had been a major social problem in Hong Kong for over a century. Full legal prohibition of opium came only after the Second World War. | "It was only after World War II that complete statutory prohibition was enacted" |
