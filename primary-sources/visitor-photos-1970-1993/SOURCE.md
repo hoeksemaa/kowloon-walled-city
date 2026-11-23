@@ -314,3 +314,26 @@ testimony given later: tag its facts "retrospective (year)".
 | image | The photo shows five floors of a façade. Each balcony is closed by a metal grille of its own pattern (arches, diamonds, bars), some painted green or orange. | "Kowloon Walled City, Hong Kong" |
 | image | Potted plants stand on the balcony ledges. Laundry hangs on lines and poles, and striped cloth and green canvas awnings shade some balconies. | "Kowloon Walled City, Hong Kong" |
 | image, top and left edge | The top balcony has a parapet of orange and blue tiles in a check pattern. A red lamp post stands at the left. | "Kowloon Walled City, Hong Kong" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0854: 1977 Hong Kong (Flickr album of allan56): 'Kowloon City resettlement blocks', 'Opera Stage', 'Market Place', 'Tung Tau Estate Block 23', 'checkerboard'
+
+- **Creator:** allan56 (Flickr user 9730593@N04)
+- **Date:** 1977
+- **Kind:** photo
+- **Class:** primary (Photos taken in 1977 by a foreign resident who lived near the City (scanned slides); the captions were written in 2008 and are retrospective.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** All rights reserved (Flickr, checked on 2848835778)
+- **Link:** https://www.flickr.com/photos/9730593@N04/albums/72157607166569985
+- **Other links:** https://www.flickr.com/photos/9730593@N04/2848835778/, https://www.flickr.com/photos/9730593@N04/2846646927/, https://www.flickr.com/photos/9730593@N04/2864949656/, https://www.flickr.com/photos/9730593@N04/2864957428/, https://www.flickr.com/photos/9730593@N04/2869439900/
+- **Proof that it exists:** Album page title '1977 Hong Kong / Flickr'; albums list '1977 Hong Kong 121 photos · 5,151 views'; photo 2848835778 og:title 'Kowloon City resettlement blocks'.
+- **What it gives (resolver's note, not checked):** Views of the surroundings of the City in 1977: the Tung Tau resettlement blocks (Block 23), a Chinese opera stage being set up in Kowloon City, a Kowloon City market and the Kai Tak checkerboard marker. They show the district round the City, not its inside.
+- **Lead:** L0854 (cited by top-top-flickr-1, visitor-photos-1970-1993)
+- **Notes:** Add to top-top-flickr-1 (same photographer, same year) rather than as a new item. Read the comments of each photo (counts shown, text not loaded by WebFetch).

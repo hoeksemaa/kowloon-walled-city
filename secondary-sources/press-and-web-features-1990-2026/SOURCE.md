@@ -771,3 +771,20 @@ Not read yet.
 - **Leads:**
   - Survey and Mapping Office (地政總署測繪處) aerial photo of 20 November 1974, film label 'HK 20.11.74 1500'' and frame number read as 9604 (uncertain), used in 梁啟智's article of 2022.
   - Survey and Mapping Office aerial photos of 1963, 1984 and 1993 of the City used in the same article; the article gives no frame numbers.
+
+### lead-l0506: 九龍城寨：我們的空間 (in 越界書簡 / Letters Across Borders)
+
+- **Creator:** Leung Ping-kwan, 1949-2013 (也斯)
+- **Date:** 1996
+- **Kind:** book
+- **Class:** secondary (A literary essay written after the demolition (1993-1996), with a second-hand memory of a woman who grew up in the City.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; the book's copyright page says 'All rights reserved' (青文書屋, 1996)
+- **Link:** https://archive.org/details/31761076895051/page/n127
+- **Other links:** https://archive.org/details/31761076895051, https://archive.org/download/31761076895051/31761076895051.pdf
+- **Proof that it exists:** archive.org item title '越界書簡 / 也斯.' (publisher 'Xianggang : Qing wen shu wu', 1996); OCR of leaf 127 (p. 115): '九龙城案:我们的空间 巨大的钱锤重重敲碎了糙壁，九龙城寨终於还拆了。'
+- **What it gives (resolver's note, not checked):** An essay of the mid-1990s on the City as lived space after its demolition: the memory of a friend who grew up there and played in its streets; when she gave a City address at primary school, teachers and pupils looked at her strangely, and she soon moved to another school and gave another address (pp. 115-118).
+- **Lead:** L0506 (cited by repo-audit-39, reference-and-web-histories)
+- **Notes:** The second work of the lead, 〈城寨風情〉 in 也斯《遊離的詩》 (牛津大學出版社, 1995), is not online: print only. OCR is poor; read the page images.

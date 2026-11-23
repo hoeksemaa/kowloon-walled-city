@@ -304,3 +304,20 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - The report of the 1986 HKU dental students' project on unregistered dentists (Faculty of Dentistry, Department of Periodontology and Public Health, University of Hong Kong): the article reports it but does not give a title (not held).
+
+### lead-l0560: The Patterns and Causes of Police Corruption in Hong Kong (Hong Kong Journal of Public Administration, Vol. 1 No. 1, June 1979)
+
+- **Creator:** author not seen; Hong Kong Journal of Public Administration
+- **Date:** 1979-06
+- **Kind:** article
+- **Class:** primary (A study written in 1979 of police corruption in the 1960s and 1970s, at the time of the ICAC syndicate cases; a study made at the time.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/fx71gj77h
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/fx71gj77h, https://digitalrepository.lib.hku.hk/service/api/iiif/images/gm80ps410/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/fx71gj77h?q=Walled
+- **Proof that it exists:** IIIF manifest range 'The Patterns and Causes of Police Corruption in Hong Kong' (canvases 5-21); search hit on canvas gm80ps410: 'Ms. Patricia Penn's investigation concerned one retail syndicate in the Walled City (Kowloon City) area.'
+- **What it gives (resolver's note, not checked):** An account of police corruption syndicates of the 1960s-1970s, with retail (drug and vice) syndicates 'organized on a territorial basis' and one such syndicate in the Walled City (Kowloon City) area that an investigator studied. It gives the pattern of police bribes in the City before the ICAC.
+- **Lead:** L0560 (cited by citations-14, building-and-demolition-records-1968-1997)
+- **Notes:** Read the article pages 5-21, mostly canvas gm80ps40q and gm80ps410 (labels 14-15). The kind of retail syndicate (drugs, gambling or vice) is to be read.

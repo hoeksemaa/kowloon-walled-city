@@ -295,7 +295,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
@@ -369,85 +369,106 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0851-1: WOELINGEN IN KOWLOON
 
-- **Creator:** Het nieuws: algemeen dagblad (Paramaribo), AP report
-- **Date:** 1948-01-16
-- **Kind:** press
-- **Class:** primary (A wire report printed by a newspaper of the time.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** KB Delpher: no licence statement in the OCR XML; Delpher terms of use apply; article text (c) the publisher or its heirs where still in copyright
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010480283:mpeg21:a0024
-- **Other links:** https://resolver.kb.nl/resolve?urn=ddd:010480283:mpeg21:a0024:ocr, https://www.delpher.nl/nl/kranten/view?identifier=ddd:010480283:mpeg21:a0024, https://resolver.kb.nl/resolve?urn=ddd:010987503:mpeg21:a0002:ocr
-- **Proof that it exists:** OCR title 'WOELINGEN IN KOWLOON'; first sentence: 'HONKONG 16- 1 (AP) — Amerikaanse reizigers berichten dat er woelingen zijn uitgebroken in de oude ommuurde stad Kowloon in de Britse Kroonkolonie Hongkong'
-- **What it gives (resolver's note, not checked):** An AP report of 16 Jan 1948: riots in 'the old walled city Kowloon' after the British authorities ordered some slums pulled down for health reasons, and the burning of the British consulate (at Canton). A short wire report of the 1948 eviction crisis.
-- **Lead:** L0851 (cited by press-archives-29, dutch-press-delpher-1986-1993)
-- **Notes:** Dutch. I opened the OCR XML through the KB resolver in a browser (Playwright); WebFetch gets HTTP 403 from the resolver. The SRU record gives accessible=1. The delpher.nl view URL is the usual pattern; I did not open it. Alt: Amigoe di Curacao, 16 Jan 1948, 'BRITSE CONSULAAT IN BRAND.' (ddd:010987503:mpeg21:a0002), the same news: the Chinese protested against the British order that all old slums must be pulled down for health reasons.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** AP report, Hong Kong 16 Jan 1948, 'WOELINGEN IN KOWLOON', Het nieuws: algemeen dagblad (Paramaribo), 16 January 1948, page 2; Delpher, https://resolver.kb.nl/resolve?urn=ddd:010480283:mpeg21:a0024
+- **Class:** primary (A wire report of the day. It mixes two events: the trouble at the Walled City and the burning of the British consulate at Canton (Shamian), which it puts in Kowloon. The primary tree is right, but the place of the fire is wrong.)
+- **Date of the record:** 1948-01-16
+- **Files:**
+  - not downloaded (curl exit 22): OCR text (XML) of the article, from the KB resolver.; https://resolver.kb.nl/resolve?urn=ddd:010480283:mpeg21:a0024:ocr; licence: Delpher article page: 'Auteursrecht onbekend. Het zou kunnen dat nog auteursrecht rust op (delen van) dit object.' (copyright unknown; parts can still be in copyright). (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010480283:mpeg21:a0024)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| page 2, article a0024 | An AP report of 16 January 1948 said that American travellers reported unrest in 'the old walled city of Kowloon' in the British colony of Hong Kong. | "woelingen zijn uitgebroken in de oude ommuurde stad Kowloon" (unrest has broken out in the old walled city of Kowloon) |
+| page 2, article a0024 | The report said that the unrest came because the British authorities had ordered some weeks before that a number of slums be destroyed for reasons of hygiene. | "last had gegeven om een aantal krotten om hygiënische redenen te vernietigen" (had ordered a number of slums to be destroyed for hygienic reasons) |
+| page 2, article a0024 | INFERRED: The report put the burning of the British consulate in Kowloon. INFERRED: from the alt report (Amigoe di Curacao, 16 Jan 1948, which says 'te Kanton') the consulate was the one at Canton; the wire report is wrong on the place. | "waarbij het Britse consulaat in brand werd gestoken" (in which the British consulate was set on fire) |
+| Amigoe di Curacao, 16 Jan 1948, article a0002 | The alt report says that Chinese protested against the British order that all old slums be pulled down for reasons of health. | "De Chinezen protesteerden tegen het Britse bevel, dat alle oude krotten moesten gesloopt worden om gezondheidsredenen" (The Chinese protested against the British order that all old slums must be demolished for health reasons.) |
 ### lead-l0851-2: DE KOWLOON AFFAIRE
 
-- **Creator:** Nieuwe courant (Soerabaia), Reuter report
-- **Date:** 1948-01-21
-- **Kind:** press
-- **Class:** primary (A wire report printed by a newspaper of the time.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** KB Delpher: no licence statement in the OCR XML; Delpher terms of use apply; article text (c) the publisher or its heirs where still in copyright
-- **Link:** https://resolver.kb.nl/resolve?urn=MMNIOD04:000093534:mpeg21:a0053
-- **Other links:** https://resolver.kb.nl/resolve?urn=MMNIOD04:000093534:mpeg21:a0053:ocr, https://www.delpher.nl/nl/kranten/view?identifier=MMNIOD04:000093534:mpeg21:a0053, https://resolver.kb.nl/resolve?urn=ddd:010862863:mpeg21:a0037:ocr
-- **Proof that it exists:** OCR title 'DE KOWLOON AFFAIRE'; first sentence: 'De Chinese minister van buitenlandse zaken, Wang Sjieh Tsjieh, heeft verklaard dat de spanning om de Kowloon-affaire verminderd is'
-- **What it gives (resolver's note, not checked):** A Reuter report of Jan 1948: the Chinese foreign minister Wang Shijie said that the tension over the Kowloon affair had eased; a compromise in which the British use no more force and the Chinese government removes the remaining 'squatters'; China keeps its claim to sovereignty over the walled city.
-- **Lead:** L0851 (cited by press-archives-29, dutch-press-delpher-1986-1993)
-- **Notes:** Dutch. I opened the OCR XML through the KB resolver in a browser (Playwright); WebFetch gets HTTP 403 from the resolver. The SRU record gives accessible=1. The delpher.nl view URL is the usual pattern; I did not open it. Alt: De Locomotief (Semarang), 22 Jan 1948, 'De Incidenten te Kowloon' (ddd:010862863:mpeg21:a0037), a shorter form of the same Reuter report (it names the minister of the interior by mistake).
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Reuter report, 'DE KOWLOON AFFAIRE', Nieuwe courant (Soerabaia), 21 January 1948, page 2; Delpher, https://resolver.kb.nl/resolve?urn=MMNIOD04:000093534:mpeg21:a0053
+- **Class:** primary (A wire report of the time. The primary tree is right.)
+- **Date of the record:** 1948-01-21
+- **Files:**
+  - not downloaded (curl exit 22): OCR text (XML) of the article, from the KB resolver.; https://resolver.kb.nl/resolve?urn=MMNIOD04:000093534:mpeg21:a0053:ocr; licence: Delpher article page: 'Auteursrecht onbekend. Het zou kunnen dat nog auteursrecht rust op (delen van) dit object.' (copyright unknown; parts can still be in copyright). (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=MMNIOD04:000093534:mpeg21:a0053)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| page 2, article a0053 | The Chinese foreign minister Wang Shijie said that the tension over the Kowloon affair had eased and that a quick solution was being sought. The British authorities were still waiting for instructions from London. | "de spanning om de Kowloon-affaire verminderd is" (the tension over the Kowloon affair has eased) |
+| page 2, article a0053 | Reuter said there were signs of a compromise: the British authorities in Hong Kong would use no more force, and the Chinese government would get the remaining 'squatters' to leave. | "doch de Chinese regering de overgebleven „squatters" zal zien weg te krijgen" (but the Chinese government will see to getting the remaining 'squatters' away) |
+| page 2, article a0053 | The Chinese government would not give up its claim to sovereignty over the walled city of Kowloon. | "haar eisen voor souvereiniteit in de ommuurde stad van Kowloon echter niet opgeven" (will not, however, give up its claims to sovereignty in the walled city of Kowloon) |
 ### lead-l0851-3: De Affaire in Kowloon Over Jurisdictie en „Squatters”
 
-- **Creator:** De locomotief: Samarangsch handels- en advertentie-blad (Semarang), Reuter report, London 27 Jan
-- **Date:** 1948-01-29
-- **Kind:** press
-- **Class:** primary (A wire report printed by a newspaper of the time.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** KB Delpher: no licence statement in the OCR XML; Delpher terms of use apply; article text (c) the publisher or its heirs where still in copyright
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010862868:mpeg21:a0019
-- **Other links:** https://resolver.kb.nl/resolve?urn=ddd:010862868:mpeg21:a0019:ocr, https://www.delpher.nl/nl/kranten/view?identifier=ddd:010862868:mpeg21:a0019
-- **Proof that it exists:** OCR title 'De Affaire in Kowloon Over Jurisdictie en „Squatters”'; first sentence: 'Londen, 27 Jan. (Reuter). De Britse regering heeft China doen weten dat zij de kwestie der jurisdictie over Kowloon en de gedwongen evacuatie van een aanfal [sic, OCR] Chinezen uit deze ommuurde plaats ... als twee afzonderlijke zaken beschouwt.'
-- **What it gives (resolver's note, not checked):** A Reuter summary (London, 27 Jan 1948) of the British note to China: the British government treats the jurisdiction over Kowloon City and the forced evacuation of the Chinese from 'this walled place' as two separate matters. The note says the eviction concerned 54 wooden houses by the old wall, defends the health measures and blames the Chinese press for anti-British agitation.
-- **Lead:** L0851 (cited by press-archives-29, dutch-press-delpher-1986-1993); also L0028
-- **Notes:** Dutch. I opened the OCR XML through the KB resolver in a browser (Playwright); WebFetch gets HTTP 403 from the resolver. The SRU record gives accessible=1. The delpher.nl view URL is the usual pattern; I did not open it. This is the open summary of the British Foreign Office note of 26 Jan 1948 (lead L0028), whose text is at TNA only.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Reuter report, London 27 Jan 1948, 'De Affaire in Kowloon Over Jurisdictie en „Squatters”', De locomotief: Samarangsch handels- en advertentie-blad (Semarang), 29 January 1948, page 1; Delpher, https://resolver.kb.nl/resolve?urn=ddd:010862868:mpeg21:a0019
+- **Class:** primary (A wire summary of the time of the British note to China of Jan 1948. The primary tree is right.)
+- **Date of the record:** 1948-01-29 (Reuter, London, 1948-01-27)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text (XML) of the article, from the KB resolver.; https://resolver.kb.nl/resolve?urn=ddd:010862868:mpeg21:a0019:ocr; licence: Delpher article page: 'Auteursrecht onbekend. Het zou kunnen dat nog auteursrecht rust op (delen van) dit object.' (copyright unknown; parts can still be in copyright). (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010862868:mpeg21:a0019)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| page 1, article a0019, para 1 | The British government told China that it treated the jurisdiction over Kowloon (City) and the forced removal of Chinese from 'this walled place' in Hong Kong territory as two separate matters. | "als twee afzonderlijke zaken beschouwt" (regards as two separate matters) |
+| page 1, article a0019, para 3 | The British note says that the forced clearance concerned 54 wooden houses by the old wall. | "welke 54 houten huizen bij de oude muur betrof" (which concerned 54 wooden houses by the old wall) |
+| page 1, article a0019, para 2 | The note said that it would have been wrong for the Hong Kong Government not to take public-health measures in Kowloon because the question of jurisdiction was under discussion. | "geen maatregelen voor de volksgezondheid van Kowloon zou hebben genomen" (had taken no measures for the public health of Kowloon) |
+| page 1, article a0019, para 3 | The note blamed the Chinese press for anti-British agitation, and named the Kuomintang-funded 'National Times'. It also accused the head of Bao'an (Pao On), who had spoken to the evicted people under the Chinese flag, of provocation. | "Ook de burgemeester van Pao On, die de verdrevenen onder de Chinese vlag had toegesproken, wordt van provocatie beschuldigd" (The mayor of Pao On, who had addressed the evicted under the Chinese flag, is also accused of provocation.) |
+| page 1, article a0019, para 4 | The British government held that the administration had acted rightly in deciding to clear the squatters' area, and had shown these people every consideration. The wire says 'het bestuur van Kowloon' (the administration of Kowloon); it means the Hong Kong Government. | "het gebied der „squatters" (onrechtmatige bewoners van huizen) te zuiveren" (to clear the area of the 'squatters' (unlawful occupants of houses)) |
+| page 1, article a0019, para 5 | China's reply note did not mention the British claim for damages at Canton, but itself claimed damages for the Kowloon incident. | "Wel werd schadevergoeding voor het incident in Kowloon geëist" (Compensation was, however, demanded for the incident in Kowloon.) |
+
+- **Leads:**
+  - The British note to the Chinese government on Kowloon City, about 26 Jan 1948 (Foreign Office; text at TNA, lead L0028; not held).
+  - The Chinese reply note of Jan 1948 claiming damages for the Kowloon City incident (not held).
 ### lead-l0851-4: Kowloon door brand verwoest
 
-- **Creator:** Leeuwarder courant (Leeuwarden), wire report
-- **Date:** 1950-01-12
-- **Kind:** press
-- **Class:** primary (A wire report printed by a newspaper of the time.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** KB Delpher: no licence statement in the OCR XML; Delpher terms of use apply; article text (c) the publisher or its heirs where still in copyright
-- **Link:** https://resolver.kb.nl/resolve?urn=ddd:010612556:mpeg21:a0016
-- **Other links:** https://resolver.kb.nl/resolve?urn=ddd:010612556:mpeg21:a0016:ocr, https://www.delpher.nl/nl/kranten/view?identifier=ddd:010612556:mpeg21:a0016
-- **Proof that it exists:** OCR title 'Kowloon door brand verwoest'; first sentence: 'De historische ommuurde stad Kowloon in de Britse kolonie Hongkong is gisteren bijna geheel door brand verwoest.'
-- **What it gives (resolver's note, not checked):** A wire report of the fire of 11 Jan 1950: 'the historic walled city Kowloon' almost wholly burnt; 10,000 to 25,000 people homeless, 6,000 huts destroyed, firemen hindered by low water pressure. About 20 Dutch papers of 12-23 Jan 1950 carry the same news (the SRU query lists them).
-- **Lead:** L0851 (cited by press-archives-29, dutch-press-delpher-1986-1993)
-- **Notes:** Dutch. I opened the OCR XML through the KB resolver in a browser (Playwright); WebFetch gets HTTP 403 from the resolver. The SRU record gives accessible=1. The delpher.nl view URL is the usual pattern; I did not open it. INFERRED: the fire was in the squatter huts round Kowloon City; the wire reports call the whole area the walled city. Check this against a Hong Kong source before a fact uses it. Other reports of the same fire: Nieuwe Haarlemsche courant (MMNHA03:179242010:mpeg21:a00108), De Tijd (ddd:011199675:mpeg21:a0099), Java-bode (ddd:010865665:mpeg21:a0036) and others.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Wire report (Reuter), 'Kowloon door brand verwoest', Leeuwarder courant (Leeuwarden), 12 January 1950, page 1; Delpher, https://resolver.kb.nl/resolve?urn=ddd:010612556:mpeg21:a0016
+- **Class:** primary (A wire report of the day after the fire. The primary tree is right, but the report calls the burnt area 'the historic walled city', which is not exact.)
+- **Date of the record:** 1950-01-12 (reports the fire of 1950-01-11)
+- **Files:**
+  - not downloaded (curl exit 22): OCR text (XML) of the article, from the KB resolver.; https://resolver.kb.nl/resolve?urn=ddd:010612556:mpeg21:a0016:ocr; licence: Delpher article page: 'Auteursrecht onbekend. Het zou kunnen dat nog auteursrecht rust op (delen van) dit object.' (copyright unknown; parts can still be in copyright). (https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010612556:mpeg21:a0016)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| page 1, article a0016 | INFERRED: A wire report said that on 11 January 1950 'the historic walled city of Kowloon' was almost wholly destroyed by fire. INFERRED: the fire was the squatter-hut fire round Kowloon City (the Tung Tau Tsuen (東頭村) area); the wire calls the whole area the walled city. Check against a Hong Kong source. | "De historische ommuurde stad Kowloon in de Britse kolonie Hongkong is gisteren bijna geheel door brand verwoest" (The historic walled city of Kowloon in the British colony of Hong Kong was yesterday almost entirely destroyed by fire.) |
+| page 1, article a0016 | No one died, but 10,000 to 25,000 people lost their homes. | "10 tot 25 duizend bewoners zijn dakloos" (10 to 25 thousand residents are homeless) |
+| page 1, article a0016 | A strong wind fanned the fire, which swept away 6,000 huts. | "vaagde 6000 hutwoningen weg" (swept away 6,000 hut dwellings) |
+| page 1, article a0016 | Low water pressure hindered the fire brigade, but by evening it had the fire under control. Many people were hurt. The cause was not known. | "De brandweer werd gehinderd door lage waterdruk" (The fire brigade was hindered by low water pressure.) |
+
+- **Leads:**
+  - A Hong Kong report (for example 華僑日報 or the South China Morning Post of 12 Jan 1950) of the fire of 11 Jan 1950 near Kowloon City, to fix its place and its count (not held).
 ### lead-l0851-5: Engeland wil praten met China over Kowloon
 
-- **Creator:** Trouw (Meppel), wire report
-- **Date:** 1963-01-23
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Unsigned news report (no dateline, no agency named), 'Engeland wil praten met China over Kowloon' [England wants to talk with China about Kowloon], Trouw (Meppel; national daily, edition 'Dag'; publisher Organisatie Trouw), vol. 22, no. 5429, Wednesday 23 January 1963, p. 4 (Delpher page p004, article a0108). KB Delpher, https://resolver.kb.nl/resolve?urn=ABCDDD:010816921:mpeg21:a0108 ; view: https://www.delpher.nl/nl/kranten/view?identifier=ABCDDD:010816921:mpeg21:a0108&coll=ddd
+- **Class:** primary (A short news report printed in a Dutch national daily on 23 January 1963, about events of the day before and of the week before. It is a record made at the time; it belongs in primary-sources/. It is about the 1963 dispute, long before the peak period (1985-1993).)
+- **Date of the record:** 1963-01-23 (printed); it reports a British statement of 'gisteren', thus 22 January 1963 (INFERRED from the issue date)
+- **Files:**
+  - not downloaded (curl exit 22): Article OCR text (XML, under 1 kB): the headline and the two paragraphs, complete. The OCR reads 'behoort-' for 'behoort.' at the end.; https://resolver.kb.nl/resolve?urn=ABCDDD:010816921:mpeg21:a0108:ocr; licence: Delpher terms of use panel (Gebruiksvoorwaarden) for this article: 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.' (Copyright protected. This object is in copyright.) Free to read on Delpher (KB); no open licence. (https://www.delpher.nl/nl/kranten/view?identifier=ABCDDD:010816921:mpeg21:a0108&coll=ddd)
+  - not downloaded (curl exit 22): JPEG crop of the whole article at full scale (820 x 980 px) from the scan of p. 4, from the KB imaging service.; https://imageviewer.kb.nl/ImagingService/imagingService?id=ABCDDD:010816921:mpeg21:p004:image&x=740&y=1800&w=820&h=980&s=1; licence: Delpher terms of use panel (Gebruiksvoorwaarden) for this article: 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.' (Copyright protected. This object is in copyright.) Free to read on Delpher (KB); no open licence. (https://www.delpher.nl/nl/kranten/view?identifier=ABCDDD:010816921:mpeg21:a0108&coll=ddd)
+  - not downloaded (curl exit 22): JPEG of the whole page 4 at half scale (about 2507 x 3320 px; full scan about 5013 x 6640 px), with the page header 'TROUW, WOENSDAG 23 JANUARI 1963' and page number 4.; https://imageviewer.kb.nl/ImagingService/imagingService?id=ABCDDD:010816921:mpeg21:p004:image&x=0&y=0&w=2507&h=3320&s=0.5; licence: Delpher terms of use panel (Gebruiksvoorwaarden) for this article: 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.' (Copyright protected. This object is in copyright.) Free to read on Delpher (KB); no open licence. (https://www.delpher.nl/nl/kranten/view?identifier=ABCDDD:010816921:mpeg21:a0108&coll=ddd)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 4, article a0108, para. 1, sentence 1 | INFERRED: Britain rejected the claims of Communist China to the walled city of Kowloon near Hong Kong. The report says it did so 'yesterday'. INFERRED: the issue is dated Wednesday 23 January 1963, thus the rejection was on Tuesday 22 January 1963; a wire item can lag by a day. | "Engeland heeft gisteren de aanspraken van communistisch China op de ommuurde stad Kowloon bij Hong Kong van de hand gewezen." (England yesterday rejected the claims of Communist China to the walled city Kowloon near Hong Kong.) |
+| p. 4, article a0108, para. 1, sentence 2 | In the same statement, Britain offered to talk about the differences of opinion that had come up over the administration of the walled city. | "Wel heeft Engeland aangeboden te spreken over de meningsverschillen die zijn gerezen over het bestuur van de stad." (England did offer to talk about the differences of opinion that have arisen over the administration of the city.) |
+| p. 4, article a0108, para. 2 | INFERRED: The week before, the government of Communist China had declared that Kowloon, by tradition, belongs to the Chinese mainland. INFERRED: 'last week' (14-20 January 1963) fits the PRC Foreign Ministry protest of 17 January 1963, which the repo holds (People's Daily (人民日報), 18 January 1963); the report does not give the date. | "Vorige week heeft de regering van communistisch China verklaard dat Kowloon volgens de traditie tot het Chinese vasteland behoort." (Last week the government of Communist China declared that Kowloon by tradition belongs to the Chinese mainland.) |
+| p. 4, article a0108, headline and paras. 1-2 | The report names the City 'the walled city Kowloon' only once. The headline and the last sentence say only 'Kowloon'. A reader can take this for the whole Kowloon peninsula, but the report means the walled city. | "de ommuurde stad Kowloon bij Hong Kong" (the walled city Kowloon near Hong Kong) |
+| p. 4, article a0108, para. 1 | The report does not give the cause of the dispute. It does not name the clearance plan, the residents, the houses or any numbers. It frames the dispute as one over the administration of the city. | "over het bestuur van de stad" (over the administration of the city) |
+
+- **Leads:**
+  - The British statement or note of about 22 January 1963 that rejects the Chinese claim to the walled city and offers talks on its administration. The report gives it, but the repo holds no text of it. The catalogued Foreign Office file FO 371/170651-170652 (File 1822, 1963; not read) can hold it.
+### lead-l0476: 15,000 Chinese Lose Homes in Kowloon Fire
+
+- **Creator:** Associated Press, in the Evening Star (Washington, D.C.)
+- **Date:** 1950-01-11
 - **Kind:** press
-- **Class:** primary (A wire report printed by a newspaper of the time.)
+- **Class:** primary (A wire report of the day of the fire (1950).)
 - **Value:** low
-- **Language:** other
+- **Language:** en
 - **Access:** open
-- **Licence:** KB Delpher: no licence statement in the OCR XML; Delpher terms of use apply; article text (c) the publisher or its heirs where still in copyright
-- **Link:** https://resolver.kb.nl/resolve?urn=ABCDDD:010816921:mpeg21:a0108
-- **Other links:** https://resolver.kb.nl/resolve?urn=ABCDDD:010816921:mpeg21:a0108:ocr, https://www.delpher.nl/nl/kranten/view?identifier=ABCDDD:010816921:mpeg21:a0108
-- **Proof that it exists:** OCR title 'Engeland wil praten met China over Kowloon'; first sentence: 'Engeland heeft gisteren de aanspraken van communistisch China op de ommuurde stad Kowloon bij Hong Kong van de hand gewezen.'
-- **What it gives (resolver's note, not checked):** A wire report of Jan 1963: Britain rejects the claim of Communist China to the walled city Kowloon but offers talks on the differences over its administration. The 1963 clearance dispute.
-- **Lead:** L0851 (cited by press-archives-29, dutch-press-delpher-1986-1993)
-- **Notes:** Dutch. I opened the OCR XML through the KB resolver in a browser (Playwright); WebFetch gets HTTP 403 from the resolver. The SRU record gives accessible=1. The delpher.nl view URL is the usual pattern; I did not open it.
+- **Licence:** Library of Congress, Chronicling America: no known copyright restrictions are stated for the collection; check the rights field of the item
+- **Link:** https://www.loc.gov/resource/sn83045462/1950-01-11/ed-1/?sp=4
+- **Other links:** https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.pdf, https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.xml
+- **Proof that it exists:** loc.gov item title 'Evening star (Washington, D.C.), January 11, 1950'; OCR: '15,000 Chinese Lose Homes in Kowloon Fire By the Associated Press HONG KONG, Jan. 11.—Fifteen thousand Chinese in the Kowlood [sic] district ... were left homeless today'
+- **What it gives (resolver's note, not checked):** AP report of 11 Jan 1950: about 15,000 Chinese homeless after the worst fire in the area's history; a half-mile sector of mostly squatter huts and the grounds of two film studios burned; no casualties reported; the Army helped the firemen.
+- **Lead:** L0476 (cited by press-archives-11, hk-english-press-1899-1994)
+- **Notes:** Earlier history (the Kowloon City fire of January 1950, next to the City). A short wire item: the China Mail of 12 Jan 1950 (held, press-archives-11) gives far more.

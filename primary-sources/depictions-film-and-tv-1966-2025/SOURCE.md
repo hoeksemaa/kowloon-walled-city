@@ -185,3 +185,26 @@ shows is the reader's reading of it.
 | HKFA, When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s (Oral History Series 7, 2018), interview of Philip Chan (26 Oct 2017), printed p.266 | Retrospective (2017): Philip Chan, a writer of Long Arm of the Law (省港旗兵, 1984), says the director Johnny Mak (麥當雄) insisted on filming inside the City. | "It was Johnny who insisted on filming inside Kowloon Walled City." |
 | HKFA, When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s (Oral History Series 7, 2018), interview of Philip Chan (26 Oct 2017), printed p.266 | Retrospective (2017): Philip Chan describes the City of the early 1980s as a hotbed of gangsters, drug dealers and crime, which made the shoot hard. Johnny Mak still got the crew into the City for the gun battles and action scenes. | "the area was a hotbed of gangsters, drug dealers and criminal activities." |
 | HKFA, When the Wind Was Blowing Wild: Hong Kong Cinema of the 1970s (Oral History Series 7, 2018), interview of Philip Chan (26 Oct 2017), printed p.266 | Retrospective (2017): Philip Chan says Johnny Mak interviewed hundreds of Mainland immigrants for Long Arm of the Law and put their traits into the characters. | "Johnny personally interviewed hundreds of mainland immigrants, taking note of specific characteristics and mannerisms." |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0747: 邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah (YouTube title begins '1982金馬獎最佳導演＋影帝＋劇本三冠王！...')
+
+- **Creator:** Alex Cheung Kwok-ming, director; the English name is my own knowledge, not on the page (章國明); 張鍵 (writer); 楊群 (producer); upload by 美亞影院 Cinema Mei Ah
+- **Date:** 1981
+- **Kind:** film
+- **Class:** depiction (A feature film of 1981 (fiction) with location scenes of the City of the early 1980s, according to the Hong Kong Film Archive; the location footage is a visual record of the time, the plot is not.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** Standard YouTube licence; official upload of the rights holder Mei Ah (美亞); view only
+- **Link:** https://www.youtube.com/watch?v=hosWS24AA0k
+- **Other links:** https://www.youtube.com/watch?v=Uk1CwWJU0z4, https://www.youtube.com/watch?v=YHcQAe2amqo, https://www.youtube.com/watch?v=dyJqr11HQME
+- **Proof that it exists:** Watch page title: '1982金馬獎最佳導演＋影帝＋劇本三冠王！女友被搶、慘遭革職！最殘酷寫實的臥底史詩！｜邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah'; channel '美亞影院 Cinema Mei Ah - 香港電影 (HK Movie)'; status OK; length 6061 s.
+- **What it gives (resolver's note, not checked):** Location footage of the City (lanes, buildings, people) of about 1980-1981, in an undercover-police drama; the Film Archive (2018) says it 'brings back scenes of the Kowloon Walled City'. The exact City scenes and their times in the film are not yet known.
+- **Lead:** L0747 (cited by institutions-17, depictions-film-and-tv-1966-2025)
+- **Notes:** Cantonese with Chinese subtitles. A reader must find the City scenes and give their time codes; mark each detail of the plot as fiction.

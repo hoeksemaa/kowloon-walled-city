@@ -605,3 +605,43 @@ testimony given later: tag its facts "retrospective (year)".
 | NPCM19611127, leaf n9, upper right | Crown Counsel M. Morley-John said drug traffickers used 'old ignorant people', and that the sentence was too heavy. | "Unscrupulous drug traffickers used "old ignorant people," and he felt the sentence on the woman was excessive." |
 | NPCM19611127, leaf n9, upper right | On 27 November 1961 Mr Justice W. A. Blair-Kerr cut the sentence to nine months from the date of conviction. | "The sentence would be reduced to nine months, to date from the time of conviction." |
 | NPCM19611127, leaf n9, upper right | INFERRED: A home on the second floor of 30 Lung Shing Road in 1961 shows a building of at least three storeys there (my reading of the address). | "She is Chung Moon-yuk of 30 Lung Shing-road, second floor, Kowloon." |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0474: China Mail 1948-01-14 (p. 2: 'Frivolous Legal Submission' / 'Kowloon City Men Sentenced', continued p. 12; front page: Walled City visit and relief)
+
+- **Creator:** China Mail (Hong Kong)
+- **Date:** 1948-01-14
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily newspaper report of the day after the hearing (1948).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item (collection china-mail)
+- **Link:** https://archive.org/details/NPCM19480114
+- **Other links:** https://archive.org/download/NPCM19480114/page/n1.jpg, https://archive.org/download/NPCM19480114/page/n11.jpg, https://archive.org/download/NPCM19480114/page/n0.jpg, https://archive.org/download/NPCM19480114/NPCM19480114.pdf
+- **Proof that it exists:** archive.org item title 'China Mail 1948-01-14'; OCR p. 2: 'THE CHINA MAIL, WEDNESDAY, JANUARY 14, 1948. FRIVOLOUS LEGAL SUBMISSION Kowloon City Men Sentenced Chu Pui-tong (32), farmer, and Lau ...'
+- **What it gives (resolver's note, not checked):** The sentence of 13 Jan 1948 on the two Kowloon City men for incitement during the hut demolitions of January 1948, with the defence's argument on the jurisdiction (Order-in-Council of 1898, the Peking Convention) and the magistrate's reply. The front page reports a visit of Kwangtung Provincial Assembly members to the City and relief by the Residents' Association, 13 Jan 1948.
+- **Lead:** L0474 (cited by press-archives-10, hk-english-press-1899-1994)
+- **Notes:** Earlier history (the 1948 evictions). OCR is fair; read the page images.
+
+### lead-l0559: Journal of Hong Kong Library Association, No. 3 (1975)
+
+- **Creator:** Hong Kong Library Association
+- **Date:** 1975
+- **Kind:** article
+- **Class:** primary (A note in a professional journal of the time on a visit made in November (1974 or 1975) to the youth centre in the City.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/v118x9247
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/v118x9247, https://digitalrepository.lib.hku.hk/service/api/iiif/images/31983k28x/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/v118x9247?q=Walled
+- **Proof that it exists:** HKU record title 'Journal of Hong Kong Library Association, No. 3 (1975)'; IIIF search hit on canvas 31983k28x (label 51): 'At the request of their Programme Organi- ser, Miss Au Yeung and Mr. Quinn visited the Hong Kong Federation' ... 'Walled'.
+- **What it gives (resolver's note, not checked):** A short note that two librarians, at the request of the Programme Organiser, visited the Hong Kong Federation of Youth Groups' Centre in the Walled City in November and gave advice on its reading room and library (mid-1970s). It shows a youth centre with a reading room and a library in the City.
+- **Lead:** L0559 (cited by citations-14, building-and-demolition-records-1968-1997)
+- **Notes:** Read only page image 51 (canvas 31983k28x). The year of the visit (November 1974 or 1975) is to be checked on the page.
