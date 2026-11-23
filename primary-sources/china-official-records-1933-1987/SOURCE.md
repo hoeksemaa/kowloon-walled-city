@@ -848,3 +848,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Written statement of the Anti-Demolition and Anti-Resettlement Committee of the Residents of Kowloon (九龍城寨居民聯合反對拆遷委員會; English name as in Peking Review, china-4), read at the press conference of 18 Jan 1963 (quoted in part).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1158: 许家屯走访九龙城
+
+- **Creator:** Xinhua News Agency (新華社), Hong Kong; printed in People's Daily (人民日報)
+- **Date:** 1983-08-08
+- **Kind:** press
+- **Class:** primary (A Xinhua news dispatch of the day of the visit (7 Aug 1983), printed the next day.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** Page footer 'CopyRight © 2000 老資料网 Inc.All Rights Reserved.'; no reuse licence; text of Xinhua / People's Daily
+- **Link:** https://www.laoziliao.net/rmrb/1983-08-08-4#633432
+- **Other links:** https://www.laoziliao.net/rmrb/1983-08-08
+- **Proof that it exists:** Page 4 of 人民日报 1983-08-08 on laoziliao.net lists '许家屯走访九龙城'; dateline '新华社香港8月7日电'; first sentence '新华社香港分社社长许家屯，今天走访了位于九龙半岛界限街以北的九龙城，对居住在这里的同胞表示亲切慰问。'
+- **What it gives (resolver's note, not checked):** The official Xinhua text of Xu Jiatun's (許家屯) visit to the City on 7 Aug 1983: he asked about the management of the City and the life of its residents, praised the kaifong welfare association elected by the residents, and answered a doctor about the many residents from the Mainland. It is the source text of the Hong Kong reports of 8 Aug 1983.
+- **Lead:** L1158 (cited by usgov-1, us-government-records-1948-1994); also L1168
+- **Notes:** Simplified characters as printed. A WebFetch summary gave the content; I did not read the whole article.

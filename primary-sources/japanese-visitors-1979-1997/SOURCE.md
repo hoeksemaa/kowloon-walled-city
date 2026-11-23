@@ -155,23 +155,27 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0951: 鷹野隆大 写真展 「香港・深圳 1988」 (Ryudai Takano, photo exhibition 'Hong Kong–Shenzhen 1988'), Zeit-Foto Salon, Tokyo
 
-- **Creator:** Ryudai Takano (鷹野隆大), statement dated September 2013; Zeit-Foto Salon (ツァイト・フォト・サロン)
-- **Date:** photographs summer 1988; exhibition 21 November - 21 December 2013
-- **Kind:** photo
-- **Class:** primary (Photographs made in the City in summer 1988 by a visitor (primary). The artist's statement of 2013 is retrospective testimony ('retrospective (2013)').)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** '©Ryudai Takano Courtesy: Yumiko Chiba Associates / ZEIT-FOTO SALON'; page footer 'Copyright (C) 2002-2007 ZEIT-FOTO SALON Corporation. All Rights Reserved.'
-- **Link:** http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm
-- **Other links:** http://www.gaden.jp/zeit-foto/2013/1121/index.htm, http://www.gaden.jp/zeit-foto/2013/1121/01.jpg, http://www.zeit-foto.com/artist/takano_ryudai/index.html
-- **Proof that it exists:** Page title '鷹野隆大 写真展 「香港・深? 1988」'; dates '2013年11月21日 (木) - 12月21日(土)'; first sentence '25年前の夏、二十五歳だった僕は香港と深圳（しんせん）を旅した。'; image caption 「九龍城、香港」.
-- **What it gives (resolver's note, not checked):** Takano went to the City (九龍城, 'in Hong Kong 九龍城砦') in summer 1988, because he knew that it was soon to be demolished. A Japanese-speaking Hong Konger let him talk with people who lived in the City. The show had about 25 monochrome prints; the page shows one of the City, 「九龍城、香港」 (01.jpg).
-- **Lead:** L0951 (cited by top-top-flickr-5, press-and-web-features-1990-2026)
-- **Notes:** The other City frames of 1988 are not on the page. A photobook or the gallery (Yumiko Chiba Associates) can have more (not checked). The Japanese text uses 九龍城 for the Walled City.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Ryudai Takano (鷹野隆大), statement dated September 2013, and exhibition page 鷹野隆大 写真展 「香港・深圳 1988」 (photo exhibition 'Hong Kong-Shenzhen 1988'), Zeit-Foto Salon (ツァイト・フォト・サロン), Tokyo, 21 November - 21 December 2013, with the photo 「九龍城、香港」; Wayback Machine copy of 9 November 2014, http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm
+- **Class:** primary (The photograph is a record made at the time (summer 1988). The statement is the photographer's own account, given later: retrospective (2013). Its sentence on the history of the City is background (kind secondary).)
+- **Date of the record:** photographs summer 1988; statement September 2013; exhibition 21 November - 21 December 2013
+- **Files:**
+  - `lead-l0951-01-a33856e5.jpg` (in `local/`, not in git): Photo 「九龍城、香港」 by Ryudai Takano, summer 1988: children and a woman on a rooftop among TV aerials (600 x 400 px, Wayback copy); http://web.archive.org/web/20141109115513im_/http://www.gaden.jp/zeit-foto/2013/1121/01.jpg; 51659 bytes; SHA-256 `5e2520e6cb6a5c5e508c17dedfe8136b5e8841f72905b8cbcbf6e6a399bc0ba1`; licence: '©Ryudai Takano Courtesy: Yumiko Chiba Associates / ZEIT-FOTO SALON'; page footer 'Copyright (C) 2002-2007 ZEIT-FOTO SALON Corporation. All Rights Reserved.' (http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm)
+  - `lead-l0951-index.htm-19537841.html` (in `local/`, not in git): HTML of the exhibition page (Wayback copy of 2014-11-09): Takano's statement of September 2013 and the captions; http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm; 11361 bytes; SHA-256 `662ba436f6f0010bd6c38fc6165da355bf5b62f39bdb8019c34f294edaf5033c`; licence: '©Ryudai Takano Courtesy: Yumiko Chiba Associates / ZEIT-FOTO SALON'; page footer 'Copyright (C) 2002-2007 ZEIT-FOTO SALON Corporation. All Rights Reserved.' (http://web.archive.org/web/20141109115513/http://www.gaden.jp/zeit-foto/2013/1121/index.htm)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/japanese-visitors-1979-1997/SOURCE.md`](../../secondary-sources/japanese-visitors-1979-1997/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| statement, para. 1 | The Japanese photographer Ryudai Takano (鷹野隆大, born 1963) went to Hong Kong and Shenzhen in the summer of 1988, aged 25. Retrospective (2013). | "25年前の夏、二十五歳だった僕は香港と深圳（しんせん）を旅した。" (In the summer 25 years ago, I, then 25 years old, travelled to Hong Kong and Shenzhen.) |
+| statement, para. 1 | He went to the City because he had learned that 九龍城 (in Hong Kong called 九龍城砦), feared as a den of vice, was soon to be demolished; he went out of morbid curiosity. Retrospective (2013). | "魔窟と恐れられた九龍城（香港では九龍城砦）が間もなく取り壊されると知り、怖いもの見たさで訪れてみただけのことだった。" (I learned that Kowloon Walled City, feared as a den of iniquity (in Hong Kong 九龍城砦), would soon be torn down, and simply visited out of a wish to see something frightening.) |
+| statement, para. 2 | A Hong Konger whom he met by chance introduced him to a person who spoke Japanese; thanks to that person he could talk with people who lived in the City. Retrospective (2013). | "その人のおかげで、九龍城に暮らす人と話ができたうえに、予定外の深圳へも行くことができた。" (Thanks to that person, I could talk with people living in the Walled City, and could also go to Shenzhen, which I had not planned.) |
+| exhibition page, below the statement | The exhibition (21 November - 21 December 2013) showed about 25 monochrome prints of the 1988 trip; the page shows one of the City, captioned 「九龍城、香港」. | "今回はモノクロ写真作品約２５点を展示致します。" (This time about 25 monochrome photographic works are shown.) |
+| photo 01.jpg | INFERRED: The photo 「九龍城、香港」 (summer 1988) shows a flat concrete rooftop. A woman sits on a low seat with a toddler on her knee; four more small children sit or stand near her, two of them on a small stool, and an empty small plastic chair stands in front. Behind them stand many TV aerials on poles, wire mesh and low huts on the roofs; a man stands at the left edge. My description; that the roof is in the City is inferred from the caption. | 「九龍城、香港」 ('Kowloon Walled City, Hong Kong') |
+
+- **Leads:**
+  - Ryudai Takano, the other City photographs of summer 1988 (the 2013 show had about 25 prints of Hong Kong and Shenzhen; only one City frame is on the web page): Yumiko Chiba Associates (the gallery that represents him) or a later photobook can hold them.

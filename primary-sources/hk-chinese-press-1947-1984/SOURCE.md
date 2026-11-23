@@ -1626,7 +1626,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 6 of 6 items read by the reading of the source search of 2026-11.
+- **Status:** read: 22 of 22 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
@@ -1752,265 +1752,491 @@ testimony given later: tag its facts "retrospective (year)".
 | NPKSE19840616, leaf n7 (local news page), top centre, para 1; compare NPKSE19840626 leaf n0 | INFERRED: Ten days later, on 26 June 1984, the same lane flooded again from burst water mains (Kung Sheung Evening News, 26 June 1984, lead-l0213); both times the residents went to the Lok Sin Tong school. | "疏散到附近的樂善堂中學" (Evacuated to the nearby Lok Sin Tong secondary school.) |
 ### lead-l0096: 入城砦拍寫實片 藍乃才先打招呼
 
-- **Creator:** Kung Sheung Daily News (香港工商日報); the lead gives the writer as 陸嘉儀; no byline seen in the headline area
-- **Date:** 1982-08-29
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
-- **Link:** https://archive.org/details/NPKS19820829/page/n8
-- **Other links:** https://archive.org/download/NPKS19820829/page/n8.jpg, https://archive.org/details/NPKS19820829
-- **Proof that it exists:** Page header '工商日報 ... 第九頁', date line '中華民國七十一年(一九八二)八月廿九日 星期日'; headline 「入城砦拍寫實片」「藍乃才先打招呼」 in the column 「圈中人語」 on the entertainment page.
-- **What it gives (resolver's note, not checked):** A report of August 1982 on how the director Lam Nai-choi (藍乃才) prepared and made the location shoot inside the City for Brothers from the Walled City (城寨出來者); per the lead, the account of the 8 days of shooting there.
-- **Lead:** L0096 (cited by depictions-5, depictions-film-and-tv-1966-2025)
-- **Notes:** Page 9 = archive.org leaf n8. I saw only the page image at screen size and checked the headline; I did not read the text.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** 陸嘉儀, '入城砦拍寫實片 藍乃才先打招呼', column 圈中人語, 香港工商日報 (Kung Sheung Daily News), 29 August 1982, p.9. archive.org item NPKS19820829, leaf n8. https://archive.org/details/NPKS19820829/page/n8
+- **Class:** primary (A news report of the time (August 1982) on the making of the film, with the words of the director, Lam Nai-choi (藍乃才).)
+- **Date of the record:** 1982-08-29
+- **Files:**
+  - `lead-l0096-NPKS19820829_jp2_NPKS19820829_0008-4be76ffa.jp2` (in `local/`, not in git): Page image of 香港工商日報, 29 August 1982, p.9 (leaf n8, file NPKS19820829_0008.jp2, JPEG 2000, 3611 x 4644 px), with the article. The /page/n8.jpg address of this item answers 404 (checked 2026-11-22).; https://archive.org/download/NPKS19820829/NPKS19820829_jp2.zip/NPKS19820829_jp2%2FNPKS19820829_0008.jp2; 3889638 bytes; SHA-256 `3e528200c1fbc3c8fa8289a3e16b8c68380ed4b060b277064a7fe010cfb5e65c`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPKS19820829)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p.9 (archive.org leaf n8), column 圈中人語 | Lam Nai-choi (藍乃才) had co-directed the film 「單程路」 with 李修賢 the year before. In 1982 Shaw (邵氏) pressed him to direct Brothers from the Walled City (城寨出來者; the paper writes 城砦出來者) alone. | "今年，在邵氏力促下，獨挑大樑，執導了「城砦出來者」一片" (this year, urged by Shaw, he took the lead alone and directed the film 'Brothers from the Walled City') |
+| p.9 (archive.org leaf n8), column 圈中人語 | The film had its midnight show on the night of 29 August 1982. | "執導了「城砦出來者」一片，今晚午夜場" (directed the film 'Brothers from the Walled City'; tonight is the midnight show) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Lam got the idea for the film one day when he passed the Walled City in a car; he planned it as a realistic film. | "是藍乃才有日坐車經過九龍城砦時，靈感觸發而" (came to Lam Nai-choi one day as he passed Kowloon Walled City in a car, when inspiration struck) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Lam's view: people think that the City does not belong to Hong Kong, but in fact the City is Hong Kong. | "以為它是一個不屬於香港的地方，其實，城砦便是香港" (they think it is a place that does not belong to Hong Kong; in fact the Walled City is Hong Kong) |
+| p.9 (archive.org leaf n8), column 圈中人語 | INFERRED: Lam: if the City is a place that holds crime, it is a small vat and Hong Kong is the big one, which holds more dirt. INFERRED: the character before 缸 is hard to read; it is probably 染 (a dye vat). | "如果說城砦是個包含罪惡的地方" (if one says the Walled City is a place that holds crime) |
+| p.9 (archive.org leaf n8), column 圈中人語 | In the film, two brothers (played by 高飛 and 錢小豪) leave the City to make a living, but they never really break free of it. | "高飛與錢小豪兩兄弟從城砦出來找生活" (the two brothers, 高飛 and 錢小豪, come out of the Walled City to find a living) |
+| p.9 (archive.org leaf n8), column 圈中人語 | All the location scenes were shot in real places; eight days of scenes were shot in the centre of Kowloon Walled City. | "有八天戲要在九龍城砦中心拍攝" (eight days of scenes had to be shot in the centre of Kowloon Walled City) |
+| p.9 (archive.org leaf n8), column 圈中人語 | The paper describes the people inside the City as hidden talent and people of every kind. | "城砦內藏龍臥虎，三教九流" (inside the Walled City, hidden dragons and crouching tigers, the three religions and nine schools (people of every kind)) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Before the shoot, 王鐘 and 李修賢 used their personal connections to clear the way for Lam with the people around (打招呼). | "藍乃才事先得王鐘、李修賢憑着他們的交情四週代打招呼" (beforehand Lam had 王鐘 and 李修賢 use their friendships to say hello all around on his behalf) |
+| p.9 (archive.org leaf n8), column 圈中人語, right part | 李修賢 came to the set every day to help. | "李修賢更天天到場協助" (李修賢 even came to the set every day to help) |
+| p.9 (archive.org leaf n8), column 圈中人語, right part | During the shoot, people of all sorts turned up every day and had to be handled with care so that all were content. | "每日有各路人馬出現，要費神應付面面俱圓" (every day people from all quarters appeared, and one had to take pains to deal with them and keep everyone satisfied) |
+| p.9 (archive.org leaf n8), column 圈中人語, right part | INFERRED: One day the assistant director objected to the many people who stood on his new car to watch the filming. This brought more than twenty local toughs (地頭蛇) with weapons in their hands to surround the location crew. INFERRED: this was during the shoot in the City; the text puts it 'during the shoot' right after the sentence on the eight days in the City. | "導致廿餘眾手執傢伙的地頭蛇，包圍外景隊" (which led to more than twenty local bullies, weapons in hand, surrounding the location crew) |
+| p.9 (archive.org leaf n8), column 圈中人語, right part | The two sides squared up; at last a go-between friend came forward and made peace. Lam, 高飛 and 王龍威 were relieved. | "幸而最後有中間朋友出面，才化戾氣為祥和" (luckily in the end a friend in the middle stepped forward and turned hostility into peace) |
+| p.9 (archive.org leaf n8), column 圈中人語, right part | Lam worked eight months on the film from start to end, shooting by day and working on the script at night. | "頭尾八個月內，日間拍戲" (within eight months from start to end, shooting by day) |
 ### lead-l0097: 三不管地帶拍戲 王龍威被人挑戰
 
-- **Creator:** Kung Sheung Daily News (香港工商日報); the lead gives the writer as 陸嘉儀; no byline seen in the headline area
-- **Date:** 1982-04-14
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
-- **Link:** https://archive.org/details/NPKS19820414/page/n8
-- **Other links:** https://archive.org/download/NPKS19820414/page/n8.jpg, https://archive.org/details/NPKS19820414
-- **Proof that it exists:** Page header '工商日報 ... 第九頁', date line '中華民國七十一年(一九八二)四月十四日 星期三'; headline 「三不管地帶拍戲」「王龍威被人挑戰」 in the column 「圈中人語」.
-- **What it gives (resolver's note, not checked):** A report of April 1982 on the film shoot in the 'three-no-man's land' (三不管地帶), the City, where the actor 王龍威 was challenged by someone during the shoot.
-- **Lead:** L0097 (cited by depictions-5, depictions-film-and-tv-1966-2025)
-- **Notes:** Page 9 = archive.org leaf n8. I saw only the page image at screen size and checked the headline; I did not read the text.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** 陸嘉儀, '三不管地帶拍戲 王龍威被人挑戰', column 圈中人語, 香港工商日報 (Kung Sheung Daily News), 14 April 1982, p.9. archive.org item NPKS19820414, leaf n8. https://archive.org/details/NPKS19820414/page/n8
+- **Class:** primary (A news report of the time (April 1982), with the words of the actor 王龍威 about the location shoot of Brothers from the Walled City (城寨出來者).)
+- **Date of the record:** 1982-04-14
+- **Files:**
+  - `lead-l0097-n8-3f9e681a.jpg` (in `local/`, not in git): Page image of 香港工商日報, 14 April 1982, p.9 (leaf n8), with the article; https://archive.org/download/NPKS19820414/page/n8.jpg; 3613212 bytes; SHA-256 `76f229ccbdbcbaaf022f4111abbed67f9b541d2f261a3c384ee9e6055200c742`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPKS19820414)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p.9 (archive.org leaf n8), column 圈中人語 | The actor 王龍威 took a part in Brothers from the Walled City (城寨出來者; the paper writes 城砦出來者), a modern-dress film directed by Lam Nai-choi (藍乃才). | "又接了一部時裝片：「城砦出來者」" (and he also took a modern-dress film: 'Brothers from the Walled City') |
+| p.9 (archive.org leaf n8), column 圈中人語 | The film had many real locations; the crew often had to snatch shots in the urban streets and race against time. | "實景多，經常在市區搶景，搶時間" (many real locations; they often snatched scenes in the urban area and raced against time) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Because the film is about the City, the crew often had to shoot in 'this three-no-man's land' (三不管), and work there brought more trouble. | "所以很多時都要在這個三不管的地方拍攝，工作時，麻煩更多" (so they often had to shoot in this 'three-no-man's land', and at work there was more trouble) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Wang said that local toughs came out to collect money from the crew, and that as soon as one had been paid another came. | "有地頭虫出來收錢不在話下，最頭痛的，是一個來完又一個" (local toughs coming out to collect money goes without saying; the worst headache was that when one was done, another came) |
+| p.9 (archive.org leaf n8), column 圈中人語, and headline | A few days before, on a location shoot, a man asked by name to fight Wang. The headline places the shoot in the 'three-no-man's land', the City. | "被人指名要找他打架" (someone named him and wanted to fight him) |
+| p.9 (archive.org leaf n8), column 圈中人語 | The man was in his forties, thin and dry; Wang saw at once that he was a drug addict (道友). He pointed at Wang, said he knew him as a fighter, and wanted to fight him. | "是個四十多歲的男人，又瘦又乾，一看便知是個道友" (a man in his forties, thin and dried up; one look and you knew he was a drug addict) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Wang feared that one punch might kill the man and cause trouble that would hurt the work of the whole crew on later days; he held back, but meant to teach the man a lesson if he struck first. | "我怕一拳會打瓜他，更擔心惹下禍端" (I was afraid one punch would kill him, and more worried about stirring up trouble) |
+| p.9 (archive.org leaf n8), column 圈中人語 | 李修賢 and others stepped in, talked the man round, pulled him away and calmed the scene. | "幸而在李修賢等出面做好做夕下，把那人拉開，平息局面" (luckily 李修賢 and others came forward and talked him round, pulled the man away and calmed things) |
+| p.9 (archive.org leaf n8), column 圈中人語 | Wang: the crew were hot-blooded young men; shooting outside, they had to hold their tempers or there would be serious trouble. | "在外面拍片，必須操住脾氣，否則會很麻煩" (shooting outside, we must control our tempers, or it will be very troublesome) |
 ### lead-l0098: 影片寫60年代實況 藍乃才解釋非歪曲
 
-- **Creator:** Kung Sheung Evening News (工商晚報); no byline seen in the headline area
-- **Date:** 1982-09-08
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
-- **Link:** https://archive.org/details/NPKSE19820908/page/n3
-- **Other links:** https://archive.org/download/NPKSE19820908/page/n3.jpg, https://archive.org/details/NPKSE19820908
-- **Proof that it exists:** Page header '工商晚報 第四頁', date line '中華民國七十一年(一九八二)九月八日 星期三'; headline 「影片寫60年代實況」「藍乃才解釋非歪曲」 on the entertainment page.
-- **What it gives (resolver's note, not checked):** Lam Nai-choi (藍乃才) answers the objection to his film: he says it shows the City as it was in the 1960s and does not distort it; per the lead, the objection of the City's kaifong association, as reported by Rediffusion (麗的電視) news, September 1982.
-- **Lead:** L0098 (cited by depictions-5, depictions-film-and-tv-1966-2025)
-- **Notes:** Page 4 = archive.org leaf n3. I saw only the page image at screen size and checked the headline; I did not read the text.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** '影片寫60年代實況 藍乃才解釋非歪曲', 工商晚報 (Kung Sheung Evening News), 8 September 1982, p.4. archive.org item NPKSE19820908, leaf n3. https://archive.org/details/NPKSE19820908/page/n3
+- **Class:** primary (A news report of the time (September 1982) on the objection of the City's kaifong association to the film, with the director's reply.)
+- **Date of the record:** 1982-09-08
+- **Files:**
+  - `lead-l0098-n3-03989a61.jpg` (in `local/`, not in git): Page image of 工商晚報, 8 September 1982, p.4 (leaf n3), with the article; https://archive.org/download/NPKSE19820908/page/n3.jpg; 5199053 bytes; SHA-256 `9f5a727a8d25b4e4879441c5c963798d5578b5cbdad7789fa3884eeda39a3a74`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPKSE19820908)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p.4 (archive.org leaf n3) | INFERRED: On 7 September 1982 a television news item said that the kaifong association of the City (九龍城砦街坊會) was unhappy with a recent film about the City. INFERRED: the film is Brothers from the Walled City (城寨出來者), shown from 29 August 1982 (lead-l0096). | "九龍城砦街坊會，對最近一部內容有關城砦的影片，有所不滿" (the Kowloon Walled City kaifong association is unhappy with a recent film whose content concerns the Walled City) |
+| p.4 (archive.org leaf n3) | The reason given: the City in the film is the City of the 1960s, which is far from the facts of 1982; thus the film was said to distort the City. | "片中的城砦乃六十年代的城砦，與今天事實有距離" (the Walled City in the film is the Walled City of the 1960s, at a distance from today's facts) |
+| p.4 (archive.org leaf n3) | Lam Nai-choi (藍乃才) said that the film was set from the start in the City of the 1950s and 1960s, and that the film says so; to say that it distorts the City of today is a misunderstanding. | "本來便是以五、六十年代的城砦為背景，片中早有交待" (was from the start set against the Walled City of the fifties and sixties, and the film makes this clear) |
+| p.4 (archive.org leaf n3) | Lam thought that the misunderstanding came from the advertising slogan of the film, whose words were sensitive. | 「你無膽入城砦，要有膽歸城砦」 ('If you have no guts to enter the Walled City, you need guts to return to the Walled City') |
+| p.4 (archive.org leaf n3) | Up to noon of 7 September 1982 the Shaw (邵氏) production department had had no protest from the City's kaifong association. | "邵氏製片部至昨天中午為止，仍未接到任何城砦街坊會的抗議" (up to noon yesterday the Shaw production department had still not received any protest from the Walled City kaifong association) |
+| p.4 (archive.org leaf n3) | Rediffusion (麗的) explained that it knew in advance that City representatives would take the matter up with Shaw, because its newsman had been in contact with representatives of the kaifong association. | "乃因該台新聞員曾與城砦街坊會代表接觸，從而得悉" (because the station's newsman had been in contact with representatives of the Walled City kaifong association, and so learned of it) |
+| p.4 (archive.org leaf n3), left column | INFERRED: A reporter of the paper telephoned the office of the City's kaifong association on 7 September 1982. INFERRED: the rest of the sentence (the answer) is not legible in the scan. | "記者致電" (the reporter telephoned) |
+
+- **Leads:**
+  - Rediffusion (麗的) television news, about 7 September 1982: the report that the City's kaifong association objected to the film Brothers from the Walled City (cited in 工商晚報, 8 September 1982, p.4).
 ### lead-l0099-1: 藍乃才開城寨出來 錢小豪高飛結片緣
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); no byline seen in the headline area
-- **Date:** 1982-02-26
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
-- **Link:** https://archive.org/details/NPWK19820226/page/n25
-- **Other links:** https://archive.org/download/NPWK19820226/page/n25.jpg, https://archive.org/details/NPWK19820226
-- **Proof that it exists:** Page header '華僑日報 WAH KIU YAT PO ... 第七張第二頁', date line '中華民國七十一年 公曆一九八二年二月廿六日 星期五'; headline 「藍乃才開城寨出來」「錢小豪高飛結片緣」 at the lower left of the 「娛樂圈」 page.
-- **What it gives (resolver's note, not checked):** The start of the film Brothers from the Walled City (城寨出來者) in February 1982, with the actors 錢小豪 and 高飛.
-- **Lead:** L0099 (cited by depictions-5, depictions-film-and-tv-1966-2025)
-- **Notes:** Page 第七張第二頁 = archive.org leaf n25. I saw only the page image at screen size and checked the headline; I did not read the text.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** '藍乃才開城寨出來 錢小豪高飛結片緣', 華僑日報 (Wah Kiu Yat Po), 26 February 1982, 第七張第二頁 (sheet 7, p.2), entertainment page 娛樂圈. archive.org item NPWK19820226, leaf n25. https://archive.org/details/NPWK19820226/page/n25
+- **Class:** primary (A news report of the time (February 1982) on the start of the film; it describes the film, a depiction of the City, not the City itself.)
+- **Date of the record:** 1982-02-26
+- **Files:**
+  - `lead-l0099-1-n25-3fd54cdd.jpg` (in `local/`, not in git): Page image of 華僑日報, 26 February 1982, sheet 7 p.2 (leaf n25), with the article; https://archive.org/download/NPWK19820226/page/n25.jpg; 6053976 bytes; SHA-256 `046dca9f97d4b2b3a1aca27aecebdae5997e46065b0b75d715ba763290d3de89`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPWK19820226)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 第七張第二頁 (archive.org leaf n25) | With the encouragement of Shaw (邵氏), Lam Nai-choi (藍乃才) was directing Brothers from the Walled City (城寨出來者) alone; the cast was 高飛, brought into Shaw for it, 錢小豪 and the leading actress 廖麗玲. | "獨自担正開拍「城寨出來者」" (alone took charge of shooting 'Brothers from the Walled City') |
+| 第七張第二頁 (archive.org leaf n25) | INFERRED: By 26 February 1982 the film had been shooting for ten working days, and the work went smoothly. INFERRED: shooting began in about mid-February 1982. | 「城寨出來者」開鏡至今，已拍了十個工作日 (since the first take, 'Brothers from the Walled City' has shot ten working days) |
+| 第七張第二頁 (archive.org leaf n25) | Lam was also the cameraman, because the film follows a realistic line with many location scenes, and the timing had to be exact. | "由於此片走寫實路線" (because this film follows a realistic line) |
+| 第七張第二頁 (archive.org leaf n25) | The crew often had to race against time, and a new cameraman could not keep up; so Lam did both jobs. | "對時間控制必須很準確，往往要搶時間" (the control of time must be very exact; often they had to race against time) |
+| 第七張第二頁 (archive.org leaf n25) | For the part of 高飛 Lam wanted a rough type, like 'a man who crawled out of a sewer'. | "像個「從坑渠鑽出來的人」" (like 'a man who crawled out of a sewer') |
 ### lead-l0099-2: 藍乃材馬不停蹄趕拍 廖麗玲受得傷多心怯 (title as the lead gives it)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報); no byline seen in the headline area
-- **Date:** 1982-05-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of 1982, written at the time of the film shoot in the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence or rights statement seen in the archive.org item metadata (title, date and OCR fields only); the newspaper is the copyright of its publisher.
-- **Link:** https://archive.org/details/NPWK19820517/page/n25
-- **Other links:** https://archive.org/download/NPWK19820517/page/n25.jpg, https://archive.org/details/NPWK19820517
-- **Proof that it exists:** Page header '華僑日報 WAH KIU YAT PO ... 第七張第二頁', date line '公曆一九八二年五月十七日 星期一'; headline 「藍乃□馬不停蹄趕拍」「廖麗玲受得傷多心怯」 at the lower left of the 「娛樂圈」 page.
-- **What it gives (resolver's note, not checked):** The last weeks of the shoot (May 1982): the director's hurried schedule and the injuries of the actress 廖麗玲. Whether it names the City is not checked.
-- **Lead:** L0099 (cited by depictions-5, depictions-film-and-tv-1966-2025)
-- **Notes:** Page 第七張第二頁 = archive.org leaf n25. I saw only the page image at screen size and checked the headline; I did not read the text. The third character of the director's name in the headline is not clear at screen size (the lead writes 藍乃材); check it at full size.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** '藍乃材馬不停蹄趕拍 廖麗玲受得傷多心怯', 華僑日報 (Wah Kiu Yat Po), 17 May 1982, 第七張第二頁 (sheet 7, p.2), entertainment page 娛樂圈. archive.org item NPWK19820517, leaf n25. https://archive.org/details/NPWK19820517/page/n25
+- **Class:** primary (A news report of the time (May 1982) on the end of the shoot of the film, with the words of the actress 廖麗玲; it describes the film, not the City.)
+- **Date of the record:** 1982-05-17
+- **Files:**
+  - `lead-l0099-2-n25-e6eb7f10.jpg` (in `local/`, not in git): Page image of 華僑日報, 17 May 1982, sheet 7 p.2 (leaf n25), with the article; https://archive.org/download/NPWK19820517/page/n25.jpg; 4621267 bytes; SHA-256 `407780901726ada646b8915729d7918ac90047bf79f0a99d6acdd237f1767211`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPWK19820517)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 第七張第二頁 (archive.org leaf n25) | The paper writes the director's name as 藍乃材, both in the headline and in the text. | "藍乃材執導之「城砦出來者」" ('Brothers from the Walled City', directed by Lam Nai-choi) |
+| 第七張第二頁 (archive.org leaf n25) | INFERRED: By 17 May 1982 the shoot of Brothers from the Walled City (城寨出來者) needed only one more working day. INFERRED: with lead-l0099-1, the film was shot from about mid-February to late May 1982. | "祗欠一個工作天便大功告成" (only one working day short of completion) |
+| 第七張第二頁 (archive.org leaf n25) | The film had many location scenes and the crew raced against time, so the shoot was hard for the actors. | "因為此片外景多，搶時間，拍來相當辛苦" (because this film has many location scenes and races against time, it was quite hard to shoot) |
+| 第七張第二頁 (archive.org leaf n25) | In April 1982 the leading actress 廖麗玲 fell and cut her forehead while shooting a scene of a chase on a rooftop; she was in hospital and had stitches twice. | "在拍一場天台被追殺的戲時，不慎跌傷額頭" (while shooting a scene of being chased to kill on a rooftop, she fell and hurt her forehead) |
+| 第七張第二頁 (archive.org leaf n25) | In one scene she falls from a rooftop and 錢小豪 holds her; her hands were scraped on the wall. She said the scene was not a real fall, but it was dangerous to shoot. | "是拍我從天台掉下，錢小豪拉住我時，在牆上擦破的" (they were scraped on the wall when we shot me falling from the rooftop and 錢小豪 holding me) |
 ### lead-l0162-1: 華僑日報 1963-04-30: 九龍城砦 成立街坊會 委員定五月一日就職 (OCR of the headline list)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1963-04-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19630430
-- **Other links:** https://archive.org/metadata/NPWK19630430
-- **Proof that it exists:** archive.org item NPWK19630430, title '華僑日報 1963-04-30'; its description (OCR headline list) has '九龍城砦 成立街坊會 委員定五月一日就職' (phrase search '成立街坊會' finds this item).
-- **What it gives (resolver's note, not checked):** The founding of the City's kaifong association (街坊會) in April 1963: its committee was to take office on 1 May 1963. It can give the first officers and the aims of the body that spoke for the residents up to the clearance.
-- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
-- **Notes:** Leaf not found: the OCR full-text search of these scans is poor; look at the 本港新聞 leaves.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** '九龍城砦 成立街坊會 委員定五月一日就職', 華僑日報 (Wah Kiu Yat Po), 30 April 1963, 第三張第二頁 (sheet 3, p.2), 本港新聞. archive.org item NPWK19630430, leaf n9. https://archive.org/details/NPWK19630430/page/n9
+- **Class:** primary (A news report of the time (April 1963) on the founding of the City's kaifong association.)
+- **Date of the record:** 1963-04-30
+- **Files:**
+  - `lead-l0162-1-n9-af3a1a08.jpg` (in `local/`, not in git): Page image of 華僑日報, 30 April 1963, sheet 3 p.2 (leaf n9), with the article; https://archive.org/download/NPWK19630430/page/n9.jpg; 5399882 bytes; SHA-256 `d18b776b84697208378ffdf662ed8f5291c08ed1f456f1af3aede9211079f8bf`; licence: No licence or rights statement in the archive.org item metadata (no rights or licenseurl field); the newspaper is the copyright of its publisher (https://archive.org/details/NPWK19630430)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | The kaifong (街坊, neighbours) of the City formed the Kowloon Walled City Kaifong Association (九龍城砦街坊會) to run welfare work inside the City, after half a year of preparation. | "為了要辦好城砦內的福利事業，經半年來的籌備，已組成「九龍城砦街坊會」" (to run well the welfare work inside the Walled City, after half a year of preparation, they have formed the 'Kowloon Walled City Kaifong Association') |
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | The association had departments of general affairs, organisation, finance, fire prevention, public security, welfare, public relations, publicity, audit, investigation, hygiene and mediation. | "內分設總務、組織、財政、消防、公安、福利、交際、宣傳、稽核、調查、衛生、調解等部" (inside it are departments of general affairs, organisation, finance, fire fighting, public security, welfare, liaison, publicity, audit, investigation, hygiene, mediation and so on) |
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | INFERRED: More than fifty persons were elected to its committee, among them (in the order of the paper) 張一帆, 黃中平, 梁雄, 李偉棠, 劉茂泉, 陳基, 黃有, 林玉, 陳有娣, 羅開祥, 陳德明, 黃兆壽 and 龐英南. INFERRED readings: the first name of the list (ending in 治) is not legible, and the name read 黃中平 can also be 賀中平. | "龐英南等五十餘人為委員" (龐英南 and others, more than fifty persons, as committee members) |
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | The founding meeting and the swearing-in of the first committee were set for 1 p.m. on 1 May 1963, at the 龍城學校. | "並定於五月一日下午一時，假座龍城學校舉行成立大會暨第一屆委員宣誓就職典禮" (and it is set for 1 p.m. on 1 May, at the 龍城學校, to hold the founding meeting and the oath-taking of the first committee) |
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | The association invited community notables to attend the ceremony. | "已柬請社會名流到參觀禮云" (has sent invitations to public figures to attend the ceremony) |
+| 第三張第二頁 (archive.org leaf n9), 本港新聞 | INFERRED: INFERRED: this dates the founding meeting of the kaifong association to 1 May 1963, the date that the principal of the City school gives for the welfare association (福利會); the 1977 Wah Kiu Yat Po report gives August 1963 (hk-chinese-press-1947-1984 SOURCE.md). | "委員定五月一日就職" (the committee to take office on 1 May) |
 ### lead-l0162-2: 香港工商日報 1963-04-28: 赤色魔掌伸到九龍城砦！ 有人組「福利會」募款 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (工商日報)
-- **Date:** 1963-04-28
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19630428
-- **Other links:** https://archive.org/metadata/NPKS19630428
-- **Proof that it exists:** archive.org item NPKS19630428, title '香港工商日報 1963-04-28'; its description has '赤色魔掌伸到九龍城砦！ 有人組「福利會」募款'.
-- **What it gives (resolver's note, not checked):** A report of April 1963 that someone was forming a 'welfare association' (福利會) in the City and raising money, which the paper frames as a leftist ('red') move. It shows the politics around the founding of the association.
-- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
-- **Notes:** 工商日報 was a pro-Kuomintang paper; its framing is partisan.
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 28 April 1963 (中華民國五十二年四月二十八日, Sunday), 「赤色魔掌伸到九龍城砦！ 有人組「福利會」募欵 購買肥田料献贈中共」, subheads 「據說月前抗議拆屋餘欵五千元」「該會下月成立時意欲撥充會費」, (本報特稿), leaf n3 (top right). Internet Archive item NPKS19630428, https://archive.org/details/NPKS19630428/page/n3
+- **Class:** primary (A newspaper feature of the time (28 April 1963) by the paper's own staff. Its picture of the City of 1963 is primary; its short notes on the City's past (the "full flower" of brothels and gambling) are secondary. The paper was pro-Kuomintang, and the article is anti-communist in tone: it calls the association "red". The primary tree is right.)
+- **Date of the record:** 1963-04-28
+- **Files:**
+  - `lead-l0162-2-NPKS19630428_jp2_NPKS19630428_0003.jp2_ext_jpg-efe9b0d2.jpg` (in `local/`, not in git): Full-resolution page image of leaf n3, the page with the article (top right), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKS19630428/NPKS19630428_jp2.zip/NPKS19630428_jp2%2FNPKS19630428_0003.jp2&ext=jpg; 2184924 bytes; SHA-256 `f6ee68f974179925b15054dadf07671daa8e1e9cf452f0fbda684e58535fce55`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Daily News (香港工商日報). (https://archive.org/details/NPKS19630428)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n3, headline | Kung Sheung Daily News ran the article as its own special feature (本報特稿). Its headline says the "red devil's hand" had reached Kowloon Walled City (九龍城砦), and that someone was forming a "welfare association" (福利會) to raise money. | "赤色魔掌伸到九龍城砦！有人組「福利會」募欵" (The red devil's hand reaches Kowloon Walled City! Someone forms a "welfare association" to raise money) |
+| leaf n3, top right, (本報特稿), col. 1 | The paper said that, compared with ten years earlier, the City, long called a "three no-control" (三不管) place, had changed its face a little. | "如果與十年前比較，素有「三不管」之稱的九龍城砦，面目確已稍為改觀" (Compared with ten years ago, Kowloon Walled City, long known as "three no-control", has indeed changed its face a little) |
+| leaf n3, top right, (本報特稿), cols. 1-2 | The paper said a "red" influence was now growing in the City, which it called worse than the old "chicken, opium, dog" vices: prostitutes, opium and dog meat. | "比以前的雞（妓女）、鴉（鴉片）、狗（狗肉）更可怕的「赤魔」" (a "red devil" more fearful than the former chicken (prostitutes), opium and dog (dog meat)) |
+| leaf n3, top right, (本報特稿), col. 5 | The paper said that some people, in the name of a "welfare association", were collecting money from residents to buy chemical fertiliser as a gift to the Chinese "People's Government". | "這些人以「福利會」的名義，向居民募欵購買肥田料，向中共「人民政府」獻媚" (In the name of a "welfare association" these people collect money from residents to buy fertiliser and curry favour with the Chinese Communist "People's Government") |
+| leaf n3, top right, (本報特稿), col. 7 | Informed people said a body called "九龍城 ××福利××會" ran these activities. The paper printed crosses in place of part of the name. | "由一個名叫「九龍城 ××福利××會」的機構主持" (run by a body named "Kowloon City xx Welfare xx Association") |
+| leaf n3, top right, (本報特稿), col. 8 | INFERRED: The chairman (主委) of the body was an old resident of the area. Two people who ran schools were its vice-chairmen. INFERRED: the character 辦 ("ran schools") is hard to read on the scan. | "這個機構的主委是該區的一名年老居民，並由兩名辦學校的任副主委" (The chairman of this body is an old resident of the district, and two people who run schools are vice-chairmen) |
+| leaf n3, top right, (本報特稿), col. 9 | The sources of the paper said the association would be founded on the first day of the next month, that is 1 May 1963. | "這個會將於下月一日成立" (this association will be founded on the first of next month) |
+| leaf n3, top right, (本報特稿), col. 9; subhead | The association planned to take in HK$5,000 left over from the money collected earlier for the protest against demolition (抗議拆屋). | "並將以前餘下的抗議拆屋捐欵五千元撥入該會" (and will put into the association the five thousand dollars left over from the earlier donations for the protest against demolition) |
+| leaf n3, top right, (本報特稿), col. 10 | Each household of the City was to pay an entry fee of $10 and a monthly fee of $1 to the association. | "城砦內的住戶每戶入會費十元，每月會費一元" (Each household in the City pays an entry fee of ten dollars and a monthly fee of one dollar) |
+| leaf n3, top right, (本報特稿), col. 10 | Some days before, the association had issued an open letter to the "compatriots of the City" (告城砦同胞書) that asked the residents to "unite and love the country". | "該會並於日前發出告城砦同胞書，要求居民「團結愛國」" (Some days ago the association also issued a letter to the compatriots of the City, asking residents to "unite and love the country") |
+| leaf n3, top right, (本報特稿), col. 11 | INFERRED: The paper gave the bounds of the City as 龍城道 on the east, 龍津道 on the south, 西城道 on the west and 東頭村道 on the north. INFERRED: the name of the east road (龍城道) is hard to read on the scan. | "東起龍城道，南至龍津道，西至西城道，北至東頭村道" (from 龍城道 in the east to 龍津道 in the south, 西城道 in the west and 東頭村道 in the north) |
+| leaf n3, top right, (本報特稿), cols. 11-12 | The paper gave the area of the City as over 200,000 square feet and its population as over 10,000 (1963). | "共廿餘萬平方尺，人口萬餘" (in all over 200,000 square feet; population over ten thousand) |
+| leaf n3, top right, (本報特稿), col. 12 | INFERRED: The City had about thirty streets and lanes and over 1,600 shops and households (舖戶). INFERRED: the character 卅 (thirty) is hard to read on the scan. | "大街小巷卅多條，舖戶一千六百餘間" (thirty-odd streets and lanes, over 1,600 shops and households) |
+| leaf n3, top right, (本報特稿), cols. 12-13 | The paper said the City had been seen as a den of vice, but in recent years it had slowly become an ordinary residential area. Its old taint was not yet fully gone. | "近數年來，已逐漸蛻變為一個普通住宅區域" (in recent years it has slowly changed into an ordinary residential area) |
+| leaf n3, top right, (本報特稿), col. 14 | The police could reach into the City. Several narcotics patrol teams swept it often, but the drug sellers came back as soon as the pressure eased. | "數隊緝毒巡邏隊，經常進行掃蕩工作，但是稍一鬆懈，毒販又再恢復活動" (several narcotics patrol teams often carry out sweeps, but at the least slackening the drug sellers resume) |
+| leaf n3, top right, (本報特稿), col. 15 | Visitors still met drug addicts (道友) who begged, and touts of vice dens (架步) still pulled people in. | 「架步」嚮導，仍是拉人上前兜搭 (touts of the "vice dens" still pull people over to solicit them) |
+| leaf n3, top right, (本報特稿), cols. 17-18 | In the recent anti-drug drive the police raided the City hard. Few men now came up to visitors with the old sales call for drugs. | "試睇口嘅，包你快活似神仙啊！" (Have a taste, you will be as happy as an immortal!) |
+| leaf n3, top right, (本報特稿), cols. 19-20 | INFERRED: One street was known as "老舉街" (prostitutes' street). By 1963 most of its brothels had closed. INFERRED: the character 舉 is hard to read on the scan. | "有一條街素有「老舉街」之稱，這些妓窟大多數已關門" (One street was long called "prostitutes' street"; most of these brothels have closed) |
+| leaf n3, top right, (本報特稿), col. 20 | In a short lane at a street corner, one or two old, ugly prostitutes still came out to pull in clients. | "隨時突然殺出一兩個又老又醜的娼婦，大有「拉人」之勢" (at any time one or two old, ugly prostitutes rush out, as if to "pull people in") |
+| leaf n3, top right, (本報特稿), cols. 21-22 | The gambling houses of the City had never needed a licence. In 1963 three or so were open, with no time limit, through the night. | "城砦的賭館，向來不必領牌，現在經營的有三數家，他們不限時間" (The gambling houses of the City never needed licences; now three or so operate, without limits of time) |
+| leaf n3, top right, (本報特稿), col. 22 | Most gamblers were working people and men of the underworld ("三山五嶽" men). People with proper jobs did not dare to go in. | "以勞苦大衆和「三山五嶽」人馬居多，一般務正業的人都不敢涉足其間" (mostly toiling masses and men "of the three mountains and five peaks"; people with proper jobs do not dare to set foot there) |
+| leaf n3, top right, (本報特稿), cols. 23-24 | That year new customers stayed away from the gambling dens and many closed. A few still worked "guerrilla style", coming back when the police left. | "賭窟本年因生客裹足不前，多告收檔" (This year, because new customers hold back, many gambling dens have closed) |
+| leaf n3, top right, (本報特稿), col. 25 | Small weaving shops and small handicraft workshops were the basic industry of the City. | "小型織布、小型手工業工場，是城砦內的基本工業" (small weaving and small handicraft workshops are the basic industry of the City) |
+| leaf n3, top right, (本報特稿), cols. 25-26 | The City had many dentists' clinics (牙醫館). Their dentists could not put up a sign in the urban area, but some were well known and skilled, and patients came from far away to be treated. | "還有牙醫館不少，也是這地方的特色" (there are also many dental clinics, which is a feature of this place) |
+| leaf n3, top right, (本報特稿), cols. 27-28 | The paper ended by asking the residents of the City, in their "special position", to be on guard against the "red" elements. | "處於特殊地位的九龍城砦居民，應該提高警惕！" (the residents of Kowloon Walled City, in their special position, must be on guard!) |
+
+- **Leads:**
+  - The open letter of the association to the residents, 告城砦同胞書 (April 1963), named in 工商日報 of 28 April 1963, leaf n3: not held.
+  - The fund-raising of early 1963 for the protest against the demolitions (抗議拆屋), from which HK$5,000 was left over: the reports of that collection (工商日報 28 April 1963, leaf n3).
 ### lead-l0162-3: 香港工商日報 1963-04-30: 九龍城砦街坊會 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (工商日報)
-- **Date:** 1963-04-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19630430
-- **Other links:** https://archive.org/metadata/NPKS19630430
-- **Proof that it exists:** archive.org item NPKS19630430, title '香港工商日報 1963-04-30'; its description has '九龍城砦街坊會' (phrase search finds it).
-- **What it gives (resolver's note, not checked):** A second report of the founding of the City's kaifong association, the day before its committee took office (1 May 1963).
-- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 30 April 1963 (中華民國五十二年四月三十日, Tuesday), 第六頁, 「九龍城砦街坊會 明日成立就職禮」, 【本報訊】. Internet Archive item NPKS19630430, leaf n5, https://archive.org/details/NPKS19630430/page/n5
+- **Class:** primary (A short news report of the time (30 April 1963). The primary tree is right.)
+- **Date of the record:** 1963-04-30
+- **Files:**
+  - `lead-l0162-3-NPKS19630430_jp2_NPKS19630430_0005.jp2_ext_jpg-d4f8d2ec.jpg` (in `local/`, not in git): Full-resolution page image of leaf n5 (第六頁), the page with the article, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKS19630430/NPKS19630430_jp2.zip/NPKS19630430_jp2%2FNPKS19630430_0005.jp2&ext=jpg; 2175339 bytes; SHA-256 `66f7b88148f850a94350ca6cb82d0ffd25ba66b753f4488a049a28fd51c0a3f7`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Daily News (香港工商日報). (https://archive.org/details/NPKS19630430)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n5 (第六頁), lower right of the upper half, col. 1-2 | The full name of the new body was the Kowloon Walled City Kaifong Welfare Association (九龍城砦街坊福利會). The headline calls it the City's kaifong association (街坊會). | "新近成立的九龍城砦街坊福利會" (the newly formed Kowloon Walled City Kaifong Welfare Association) |
+| leaf n5 (第六頁), lower right of the upper half, cols. 2-5 | The association planned to hold its founding meeting and the installation of its first committee on 1 May 1963 (the paper's "tomorrow"), at the 龍城學校 school. | "定明日在龍城學校舉行成立大會及第一屆委員就職典禮" (will hold its founding meeting and the installation ceremony of its first committee tomorrow at 龍城學校) |
+| leaf n5 (第六頁), lower right of the upper half, col. 6 | The association had been in preparation for more than half a year, that is from about October 1962. | "籌備逾半年的城砦福利會" (the City welfare association, which has been in preparation for over half a year) |
+| leaf n5 (第六頁), lower right of the upper half, cols. 7-12 | The association had twelve departments: general affairs, organisation, finance, fire prevention, public security, welfare, public relations, propaganda and education, audit, investigation, health and mediation. | "共分設總務、組織、財政、消防、公安、福利、交際、宣教、稽核、調查、衛生、調解各部門" (in all it has departments of general affairs, organisation, finance, fire prevention, public security, welfare, liaison, propaganda, audit, investigation, health and mediation) |
+| leaf n5 (第六頁), lower right of the upper half, lower block, last cols. | More than fifty people were elected to its committee. | "等五十餘人為委員" (and others, over fifty people, as committee members) |
+| leaf n5 (第六頁), lower right of the upper half, lower block | INFERRED: The committee members named include 張一帆, 黃中平, 梁雄, 李信森, 劉茂泉, 陳基, 黃有, 林玉, 陳有娣, 陳德明, 黃兆存 and 陳英南. INFERRED: the scan is coarse, and several of these characters are hard to read; the first name of the list is cut by a rule line. | "張一帆、黃中平、梁雄、李信森、劉茂泉" |
+
+- **Leads:**
+  - The founding meeting of the Kowloon Walled City Kaifong Welfare Association (九龍城砦街坊福利會) on 1 May 1963 at 龍城學校: the reports of 2 May 1963 in 工商日報, 華僑日報 and 大公報 (archive.org items NPKS19630502, NPWK19630502, NPTKP19630502), not checked.
 ### lead-l0162-4: 大公報 1963-09-03: 在九龍城砦街坊會爭取下城砦內將有街喉 水務局已答應儘速安裝 (OCR of the headline list)
 
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 3 September 1963, 「在九龍城砦街坊會爭取下 城砦內將有街喉 水務局已答應儘速安裝」, 【本報訊】. Internet Archive item NPTKP19630903, leaf n7 (lower right), https://archive.org/details/NPTKP19630903/page/n7
+- **Class:** primary (A short news report of the time (3 September 1963) in the left-wing 大公報. The primary tree is right.)
+- **Date of the record:** 1963-09-03
+- **Files:**
+  - `lead-l0162-4-NPTKP19630903_jp2_NPTKP19630903_0007.jp2_ext_jpg-6a22580f.jpg` (in `local/`, not in git): Full-resolution page image of leaf n7, the page with the article (lower right), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPTKP19630903/NPTKP19630903_jp2.zip/NPTKP19630903_jp2%2FNPTKP19630903_0007.jp2&ext=jpg; 2124977 bytes; SHA-256 `df902338b8026c63a86e3e51ec39c312c517c8afc65be000d96aeffe6deb7a7a`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Ta Kung Pao (大公報). (https://archive.org/details/NPTKP19630903)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n7, lower right, col. 1 | The body that asked for the water taps is named in the text as the 九龍城砦街坊福利事業促進委員會 (the source gives no English name; in words, a committee to promote kaifong welfare in the City); the headline calls it the City's kaifong association (街坊會), and the text later calls it the welfare association (福利會). | "九龍城砦街坊福利事業促進委員會" |
+| leaf n7, lower right, cols. 1-2 | In 1963 the City had never had mains water (自來水). Its residents, put at "several tens of thousands", depended on only three wells for drinking, cooking and other uses. | "以城內歷來並無自來水設備，數萬居民僅靠水井三口飲食及使用" (because there has never been a mains water supply in the City, and tens of thousands of residents rely on only three wells for food and use) |
+| leaf n7, lower right, cols. 2-3 | The water of the wells was not disinfected, and the association feared it was dangerous. The lack of water also badly hurt the cleanliness and hygiene of the City. | "且水井未經消毒，恐有危險" (and the wells are not disinfected, which may be dangerous) |
+| leaf n7, lower right, col. 3 | Before 1963 some private persons had written to the Waterworks Office (水務局) to ask for a water meter, but none had got one. | "過去雖有私人去函香港水務局申請水錶，但迄未能如願" (in the past private persons wrote to the Hong Kong Waterworks Office to apply for water meters, but none has yet succeeded) |
+| leaf n7, lower right, col. 4 | On 18 August 1963 the association wrote to the Secretariat for Chinese Affairs (華民政務司署), the Public Works Department (工務司署) and the Waterworks Office to ask for street taps (街喉) in the City. | "該會為此已於上月十八日去函華民政務司署、工務司署及水務局等機構，希望在城砦內安裝街喉" (for this the association wrote on the 18th of last month to the Secretariat for Chinese Affairs, the Public Works Department and the Waterworks Office, hoping to install street taps in the City) |
+| leaf n7, lower right, cols. 4-6 | On 27 August 1963 the Waterworks Office sent a senior officer to inspect the City and to discuss the sites of the taps with the representatives of the association. | "水務局於上月廿七日派出高級職員到城砦調查" (on the 27th of last month the Waterworks Office sent a senior officer to the City to investigate) |
+| leaf n7, lower right, cols. 6-7 | The officer said that because the City was different from the area outside it, the residents of the City must pay the cost of installing the taps and of the materials. | "由於城砦地區與城外有別，安裝費、材料費須由城內居民支付" (because the City area differs from outside, the installation and material costs must be paid by the residents) |
+| leaf n7, lower right, cols. 8-9 | The association drew a sketch map of the planned sites. It asked for one tap each on 龍津路, 龍城路, 光明街, 大井街 and 西城路, and two on 老人街: seven taps in all. | "擬在龍津路、龍城路、光明街、大井街、西城路各安裝一個，老人街安裝兩個" (plans to install one each on 龍津路, 龍城路, 光明街, 大井街 and 西城路, and two on 老人街) |
+| leaf n7, lower right, cols. 9-10 | On the 27th four representatives of the association took the sketch map to the Waterworks Office and met its officers. After the talks the office agreed to install the taps as soon as possible. | "水務局負責人答允盡快進行安裝" (the officer in charge of the Waterworks Office agreed to install them as soon as possible) |
+
+- **Leads:**
+  - The letter of the City kaifong association of 18 August 1963 to the Secretariat for Chinese Affairs, the Public Works Department and the Waterworks Office asking for street taps, and the Waterworks Office file on the City standpipes (1963): not held; possibly in the Public Records Office (PRO) of Hong Kong.
+  - Wah Kiu Yat Po (華僑日報) of 3 September 1963 (archive.org NPWK19630903), the same report: not opened.
+  - The report of the actual installation of the first street taps in the City (late 1963 or 1964): not found.
+### lead-l0169: 工商晚報 1978-05-19: 九龍城砦老翁被殺案 一男子趕警署自首 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Evening News (工商晚報), 19 May 1978 (Friday), 第二頁, 「九龍城砦老翁被殺案 一男子赴警署自首 辦認人手續尚未落案」, 【本報訊】. Internet Archive item NPKSE19780519, leaf n2 (top right), https://archive.org/details/NPKSE19780519/page/n2
+- **Class:** primary (A news report of the time (19 May 1978). The primary tree is right.)
+- **Date of the record:** 1978-05-19
+- **Files:**
+  - `lead-l0169-NPKSE19780519_jp2_NPKSE19780519_0002.jp2_ext_jpg-cc1a0db8.jpg` (in `local/`, not in git): Full-resolution page image of leaf n2 (第二頁), the page with the article (top right), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKSE19780519/NPKSE19780519_jp2.zip/NPKSE19780519_jp2%2FNPKSE19780519_0002.jp2&ext=jpg; 2465058 bytes; SHA-256 `79d24f39496e4b75fdbab46dd2c372df50dc8600f9c62f9a0e4122da52eafee6`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19780519)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n2 (第二頁), top right, col. 1-2 | A man who admitted a link with the killing in Kowloon Walled City of 17 May 1978 (the paper's "the day before yesterday") gave himself up on the morning of 18 May at a police station in the Western district of Hong Kong Island. | "一名承認與九龍城砦前日發生兇殺有關的男子，昨晨到港島西區自首" (a man who admitted a link with the killing in Kowloon Walled City the day before yesterday gave himself up yesterday morning in the Western district of Hong Kong Island) |
+| leaf n2 (第二頁), top right, second block | The man who gave himself up was 68 years old. After he gave himself up at Western police station, the police took him back to Kowloon City police station for questioning. | "該自首男子，是一名六十八歲老翁，昨在西區警署自首後，被帶返九龍城警署查訊" (the man who gave himself up is a 68-year-old; after giving himself up at Western police station yesterday he was taken back to Kowloon City police station for questioning) |
+| leaf n2 (第二頁), top right, col. 3-4 | On the morning of 19 May the police held an identification parade. At the deadline of the paper, at noon, no one had yet been charged. | "今晨警方正辦理認人手續，至午間截稿時仍未有人被落案" (this morning the police were holding an identification parade; at the noon deadline no one had yet been charged) |
+| leaf n2 (第二頁), top right, cols. 5-8 | The police asked a taxi driver to come forward. The driver had picked up a 68-year-old man on Tung Tau Tsuen Road (東頭村道) at 2:30 p.m. on 17 May and taken him to near Mong Kok railway station. The police asked the driver to call the Kowloon City detective unit. | "曾於前日下午二時三十分在東頭村道接載一名六十八歲男子往旺角火車站附近者" (who at 2:30 p.m. the day before yesterday picked up a 68-year-old man on 東頭村道 and took him to near Mong Kok railway station) |
+| leaf n2 (第二頁), top right, second block | The dead man was 蔡白虹, a man of 70 who lived alone on the 2/F (二樓) of No. 5, 長安里, in the City. | "死者是個七十歲老翁蔡白虹，獨住在城砦內長安里五號二樓" (the dead man is a 70-year-old, 蔡白虹, who lived alone at No. 5, 2nd floor, 長安里 in the City) |
+| leaf n2 (第二頁), top right, second block | He made his living by making a folded and cut paper handicraft, "eight immortals" coloured lanterns (八仙彩色燈籠). | "生前靠製造一些剪摺手工藝「八仙彩色燈籠」維持生計" (in life he made a living by making some cut-and-folded handicrafts, "eight immortals coloured lanterns") |
+| leaf n2 (第二頁), top right, second block | At 2 p.m. on 17 May neighbours (街坊) heard him quarrel with someone in his home. Later he was found dead in a pool of blood. | "前日下午二時街坊聽聞死者在家中與人爭吵，稍後被人發現倒斃在血泊中" (at 2 p.m. the day before yesterday neighbours heard the dead man quarrel with someone at home; later he was found dead in a pool of blood) |
+| leaf n2 (第二頁), top right, second block | The police pathologist found many knife wounds on the body. The fatal wound was a stab to the abdomen. | "死者身上有多處刀痕，致命的是腹部中刀" (the dead man had many knife wounds; the fatal one was a stab to the abdomen) |
+
+- **Leads:**
+  - The charge and the trial of the 68-year-old man for the killing of 蔡白虹 at No. 5, 長安里 (May 1978): the later reports in 工商日報, 工商晚報 and 華僑日報 of late May 1978 and the court reports, not found.
+### lead-l0231-1: 香港工商日報 1983-03-26 (OCR headline list with 城砦 and 火警)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 26 March 1983, 「城砦火警 一死四傷」, 【本報訊】. Internet Archive item NPKS19830326, leaf n6 (upper half), https://archive.org/details/NPKS19830326/page/n6
+- **Class:** primary (A news report of the time (26 March 1983) on a fire of the day before. The primary tree is right.)
+- **Date of the record:** 1983-03-26
+- **Files:**
+  - `lead-l0231-1-NPKS19830326_jp2_NPKS19830326_0006.jp2_ext_jpg-f2438fde.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6, the page with the article (upper half), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKS19830326/NPKS19830326_jp2.zip/NPKS19830326_jp2%2FNPKS19830326_0006.jp2&ext=jpg; 2102038 bytes; SHA-256 `ac2d3bcf670659e483263d5611392169d8d7ce6bbede3e52e70a126add1f3953`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Daily News (香港工商日報). (https://archive.org/details/NPKS19830326)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6, upper half, first block | A second-alarm fire (二級火警) in Kowloon Walled City killed one person and hurt four. The police were looking into its cause. | "警方現正調查九龍城砦，一場造成一死四傷慘劇之二級火警起因" (the police are investigating the cause of a second-alarm fire in Kowloon Walled City that caused one death and four injuries) |
+| leaf n6, upper half, first block | The fire was put out after about an hour, but the whole three-storey old building burned down. | "於個多小時被撲滅，惟整幢三層高舊樓則已被焚毀" (was put out after a little over an hour, but the whole three-storey old building was burned down) |
+| leaf n6, upper half, first block | The fire started just after 3:30 a.m. on 25 March 1983, at 2/F (二樓), No. 14, 西頭新村, in the City. | "火警發生於昨日凌晨三時三十分過後，九龍城砦西頭新村十四號二樓" (the fire broke out just after 3:30 a.m. yesterday at No. 14, 2/F, 西頭新村, Kowloon Walled City) |
+| leaf n6, upper half, first block | The building was a three-storey structure of brick and timber (磚堆木砌). | "現場是一間磚堆木砌的三層高建築物" (the scene is a three-storey building of piled brick and timber) |
+| leaf n6, upper half, first block and right block | INFERRED: On the ground floor were the shoe shop 南記鞋店 and another shoe stall. Their owners were two men, one of them surnamed 劉. INFERRED: the name of the other owner is hard to read on the scan. | "地下開設南記鞋店及另一鞋檔" (on the ground floor are 南記鞋店 and another shoe stall) |
+| leaf n6, upper half, right block | Two households lived on 2/F. | "二樓住有兩伙人家" (two households lived on the second floor) |
+| leaf n6, upper half, right block | INFERRED: The dead man, 蕭焱瑞, aged 65, lived in the middle room (中間房) of 2/F. He was a single man who lived on public assistance from the Social Welfare Department. INFERRED: the second character of his given name is hard to read. | "住上址二樓中間房。是個靠社會福利署救濟渡日的獨身漢" (lived in the middle room of the second floor at that address; a single man living on Social Welfare Department relief) |
+| leaf n6, upper half, right block | The fire started in the middle room. A couple surnamed 鍾 in the front room (頭房) helped their three children out and then tried to save their own parents. In the end both were burned and jumped from 2/F down to the street. | "頭房姓鍾夫婦盡力協助三子女離開火場，又搶救父母，最後，兩人均被灼傷，并從二樓跳下街上" (the couple surnamed 鍾 in the front room did their best to help their three children out, and saved their parents; at last both were burned and jumped from the second floor to the street) |
+| leaf n6, upper half, right block | Two men on the third floor (三樓) also jumped from the building and were hurt. The two shoe-shop owners on the ground floor had already escaped. | "三樓兩男子亦冒險從樓上跳下，因此同告受傷" (two men on the third floor also risked jumping down from the building, and so were also hurt) |
+| leaf n6, upper half, right block | The firemen put the fire out quickly, but the whole house had burned. | "消防員到場後，迅速將火撲熄，可是，整棟房子已全被焚燬" (after the firemen arrived they quickly put out the fire, but the whole house had been burned) |
+| leaf n6, upper half, right block | INFERRED: After the four injured were taken to hospital, the firemen found 蕭焱瑞 in the building, badly hurt and unconscious. He was dead on arrival at hospital. | "發現蕭焱瑞傷重昏迷。他於抵達醫院時，已告不治" (found 蕭焱瑞 badly hurt and unconscious; he was dead on arrival at hospital) |
+| leaf n6, upper half, right block and last block | Neighbours (坊衆) said the dead man did not cook with coal, but every morning he carried a kerosene stove (煤油爐) into his room to boil water. Thus he was thought to have started the fire by accident while boiling water. The Fire Services Department was investigating the true cause. | "他每早必把煤油爐扛進房中燒水；因此，懷疑他燒水時失火所致" (every morning he carried a kerosene stove into the room to boil water; so it is suspected the fire started while he was boiling water) |
+
+- **Leads:**
+  - The Fire Services Department investigation and the death inquest of the fire of 25 March 1983 at No. 14, 西頭新村, Kowloon Walled City: not held.
+### lead-l0231-2: 華僑日報 1983-03-26 (OCR headline list with 西頭)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 26 March 1983, 第五張第四頁 (港聞馬經), 「西頭新村石屋凌晨失火 老翁葬身火海 四名男女受傷」, (特訊). Internet Archive item NPWK19830326, leaf n19 (top), https://archive.org/details/NPWK19830326/page/n19
+- **Class:** primary (A news report of the time (26 March 1983) on a fire of the day before. The primary tree is right. It names all the residents of the building who were hurt, unlike the report of 工商日報 of the same day (lead-l0231-1).)
+- **Date of the record:** 1983-03-26
+- **Files:**
+  - `lead-l0231-2-NPWK19830326_jp2_NPWK19830326_0019.jp2_ext_jpg-18f6f976.jpg` (in `local/`, not in git): Full-resolution page image of leaf n19 (第五張第四頁, 港聞馬經), the page with the article (top), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPWK19830326/NPWK19830326_jp2.zip/NPWK19830326_jp2%2FNPWK19830326_0019.jp2&ext=jpg; 2240399 bytes; SHA-256 `ecf4163d5ba30aa7db4e0acbf78e618f3ed0b716eb412c82d165c2b53908df47`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Wah Kiu Yat Po (華僑日報). (https://archive.org/details/NPWK19830326)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 1 | Early on 25 March 1983 a big fire broke out in a three-storey stone house (石屋) in 西頭新村, Kowloon Walled City (九龍城寨). One man died and four were hurt. | "九龍城寨西頭新村一間三層高石屋昨日凌晨發生大火" (a three-storey stone house in 西頭新村, Kowloon Walled City, caught fire in the early morning yesterday) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 1 | The paper said an old man thought to be mentally ill was believed to have knocked over a kerosene stove (火水爐) and died in the fire. Three men and a woman were hurt as they escaped from 2/F. | "一名疑爲神經失常的老翁疑因打翻火水爐，葬身火海，另有三男一女從二樓跳落逃生時受傷" (an old man suspected to be mentally ill is thought to have knocked over a kerosene stove and died in the fire; three men and a woman were hurt jumping from the second floor to escape) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 2 | The fire started at 3:43 a.m. in the middle room (中間房) of 2/F, No. 14, 西頭新村. It was fierce. | "火警發生在凌晨三時四十三分，西頭新村十四號石屋二樓中間房首先起火" (the fire broke out at 3:43 a.m.; the middle room on the second floor of the stone house at No. 14, 西頭新村, caught fire first) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 2 | The firemen used three hose lines and one breathing-apparatus team (煙帽隊). They put the fire out at 5:27 a.m. | "消防員動用三條滅火喉及一隊煙帽隊進行灌救，至凌晨五時二十七分將火救熄" (firemen used three hoses and a breathing-apparatus team, and put out the fire at 5:27 a.m.) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 2 | INFERRED: The stone house was badly burned. In the rubble the firemen found a man's body: 蕭焱瑞, aged 65, who lived on 2/F. INFERRED: the second character of his given name is small and hard to read. | "消防員在瓦礫間發現一具男性屍體，後被證實爲二樓一名六十五歲的住客蕭焱瑞" (in the rubble the firemen found a man's body, later identified as a 65-year-old resident of the second floor, 蕭焱瑞) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 3 | The ground floor of the house held two shoe shops (鞋舖). | "火警現場地下是兩間鞋舖" (the ground floor of the fire scene was two shoe shops) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 3 | Eight people lived on 2/F. The dead man lived alone in the middle room. The front room (頭房) held a couple surnamed 鍾 with two daughters and a son. The tail room (尾房) held the wife's parents. | "二樓住有八人，死者獨居於中間房，頭房爲一對鍾姓夫婦及兩女一子，尾房爲鍾妻的父母居住" (eight people lived on the second floor: the dead man alone in the middle room, a couple surnamed 鍾 with two daughters and a son in the front room, and the wife's parents in the tail room) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 3 | Two older men lived on the third floor (三樓). | "三樓還住有兩名年老男子" (two elderly men also lived on the third floor) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 4 | Neighbours said the dead man was not quite mentally normal. He lived on Social Welfare Department relief, and the department's staff even brought his two meals a day to his door. | "死者精神不大正常，需依靠社會福利署的救濟過活，一日兩餐亦要社署人員送上門來解決" (the dead man was not quite mentally normal and relied on SWD relief; even his two meals a day were brought to his door by SWD staff) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 4 | He had an odd habit of boiling water on a kerosene stove in the hall (廳). Late at night, while everyone was asleep, he boiled water and knocked the stove over, and this started the fire. | "死者有一怪癖，喜在廳中以火水爐煲滾水。昨日凌晨死者又在夜闌人靜之際煲水，却不慎打翻火水爐，釀成火警" (the dead man had an odd habit of boiling water on a kerosene stove in the hall; in the small hours yesterday he did so again, knocked the stove over, and caused the fire) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 5 | INFERRED: The head of the front-room household was 鍾滿勝 (47). His wife was 陳劍萍 (36), and their children were 鍾麗瓊 (14), 鍾麗芬 (13) and 鍾國輝 (10). The wife's parents in the tail room were 陳慶雲 (70) and 彭麗珍 (70). INFERRED: a few characters of these names are small on the scan. | "二樓頭房的戶主鍾滿勝（四十七歲）及其妻陳劍萍（三十六歲）" (the householder of the front room on the second floor, 鍾滿勝 (47), and his wife 陳劍萍 (36)) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 5 | After the fire started, 鍾滿勝 and his wife got their three children out and helped her parents out of the tail room. When the family was safe, the couple were trapped by the fire. The wife was burned. In desperation both jumped from a window and were hurt in the fall. | "兩夫婦反身陷火海，鍾妻並被灼傷情急之下，雙雙從窗口跳出，跌落地上受傷" (the couple themselves were caught in the fire; 鍾's wife was burned, and in desperation both jumped out of the window and were hurt in the fall) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 6 | INFERRED: At the same time two tenants (住客) of the third floor, 劉瑞方 (59) and 鄺英雄 (50), came down the stairs. At 2/F they met flames and thick smoke, and they also jumped from the building and were hurt. INFERRED: the surname 鄺 is hard to read. | "三樓的兩名住客劉瑞方（五十九歲）及鄺英雄（五十歲）亦從樓上衝落，甫至二樓即見火光熊熊，濃煙瀰漫，於是亦急忙跳樓逃生" (the two third-floor tenants 劉瑞方 (59) and 鄺英雄 (50) also rushed down, but at the second floor met roaring flames and thick smoke, so they too jumped to escape) |
+| leaf n19 (第五張第四頁, 港聞馬經), top, para. 7 | The four injured were taken to Queen Elizabeth Hospital (伊利沙伯醫院). 鍾滿勝 had to stay in hospital; the other three were treated and discharged. | "四名傷者同被送往伊利沙伯醫院救治，除鍾滿勝仍須留醫外，其餘三人敷藥後出院" (the four injured were all taken to Queen Elizabeth Hospital; except 鍾滿勝, who had to stay, the other three left after treatment) |
+### lead-l0624: 香港工商日報 1982-04-21 (OCR keyword list: 城寨 毒品案)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 21 April 1982 (Wednesday), 第七頁, 「城寨三百萬毒品案 兩男女不准保釋押候訊」, 【新亞社訊】. Internet Archive item NPKS19820421, leaf n6, https://archive.org/details/NPKS19820421/page/n6
+- **Class:** primary (A court report of the time (21 April 1982), from the news agency 新亞社. The primary tree is right.)
+- **Date of the record:** 1982-04-21 (the hearing of 20 April 1982)
+- **Files:**
+  - `lead-l0624-NPKS19820421_jp2_NPKS19820421_0006.jp2_ext_jpg-cdf70c53.jpg` (in `local/`, not in git): Full-resolution page image of leaf n6 (第七頁), the page with the article (right edge), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKS19820421/NPKS19820421_jp2.zip/NPKS19820421_jp2%2FNPKS19820421_0006.jp2&ext=jpg; 1975322 bytes; SHA-256 `d65c43bfca2a166171f61d34f031aa5087505a419ec9be0a7cad8fdab6083498`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Daily News (香港工商日報). (https://archive.org/details/NPKS19820421)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6 (第七頁), right edge, lower middle, first block | On the morning of 13 April 1982, acting on intelligence, officers of the police Narcotics Bureau (毒品調查科) raided a flat on 龍津後街 in Kowloon Walled City (九龍城寨). (The plan of the repo dates the raid to 14 April from another report; this report says the 13th.) | "警方毒品調查科人員，於本月十三日上午，根據調查所掌握的資料，突擊搜查九龍城寨龍津後街一住宅單位" (officers of the police Narcotics Bureau, on the morning of the 13th of this month, acting on information gathered, raided a residential flat on 龍津後街 in Kowloon Walled City) |
+| leaf n6 (第七頁), right edge, lower middle, first block | The police seized 6 kg of No. 3 heroin (三號海洛英), 1.5 kg of heroin base (海洛英鹼) and 3.5 kg of caffeine (咖啡因). The paper gave the retail value as about HK$3 million. | "檢獲毒品包括六千克三號海洛英，一點五千克海洛英鹼，及三點五千克咖啡因，零售價約值三百萬港元" (the drugs seized included 6 kg of No. 3 heroin, 1.5 kg of heroin base and 3.5 kg of caffeine, retail value about HK$3 million) |
+| leaf n6 (第七頁), right edge, lower middle, first block | The paper called it the largest drug seizure by the police in the City in recent years. | "為近年來警方在城寨內搜獲毒品最大一次" (the largest seizure of drugs by the police inside the City in recent years) |
+| leaf n6 (第七頁), right edge, lower middle, first block | The police also seized drug-making equipment, including a microwave oven (微波焗爐) and an electric mixer (電動攪拌機). | "警方同時檢獲一批製毒工具，包括有微波焗爐，電動攪拌機等" (the police also seized a batch of drug-making tools, including a microwave oven and an electric mixer) |
+| leaf n6 (第七頁), right edge, lower middle, first block | A man and a woman were arrested on the spot. They were charged with three counts: making drugs, and possessing drugs for sale. | "一男一女當場被捕，稍後被警方控以製毒及藏有毒品，可作非法販賣用途等三項罪名" (a man and a woman were arrested on the spot, and later charged with three counts including making drugs and possessing drugs for illegal sale) |
+| leaf n6 (第七頁), right edge, lower middle, second block | The defendants were 劉樹華, a man of 50, and 鐘潤美, a woman of 36. | "（一）男子劉樹華，五十歲，（二）女子鐘潤美，卅六歲" ((1) man 劉樹華, 50; (2) woman 鐘潤美, 36) |
+| leaf n6 (第七頁), right edge, lower middle, second block | INFERRED: The charges placed the drug-making at a flat on an upper floor of No. 1x, 龍津後街, block C. The paper masked the floor with "×". INFERRED: the second digit of the house number is hard to read. | "在九龍城寨龍津後街十□號C×樓，非法製毒" (at No. 1x C, x/F, 龍津後街, Kowloon Walled City, illegally made drugs) |
+| leaf n6 (第七頁), right edge, lower middle, second block | The third charge was against the woman only: that, as the occupier (屋主) of the flat, she let it be used to store drugs. | "單指第二被告，身為上址屋主，容許上址儲存毒品" (against the second defendant alone: as occupier of the premises, she allowed them to be used to store drugs) |
+| leaf n6 (第七頁), right edge, lower middle, first and second blocks | On 20 April 1982 the two were brought again before the San Po Kong Magistracy (新蒲崗裁判署). They did not have to plead yet. At the request of the prosecution the case was adjourned to 27 April to wait for the instructions of the Attorney General (律政司). | "昨再解新蒲崗裁判署提訊，兩被告暫時仍毋須答辯" (yesterday they were again brought before the San Po Kong Magistracy; the two defendants for now need not plead) |
+| leaf n6 (第七頁), right edge, lower middle, second block | The man was refused bail and held by the police. The woman was given bail of $10,000, half as a personal surety and half in cash, and had to give all her travel documents to the court. The headline says neither got bail; the text says the woman did. | "被告男子不准保釋，交警方扣押，女被告女子則准予一萬元保釋，人事現金各半" (the male defendant was refused bail and held by police; the female defendant was granted $10,000 bail, half surety and half cash) |
+
+- **Leads:**
+  - The next hearing of the case of 劉樹華 and 鐘潤美 at the San Po Kong Magistracy on 27 April 1982, and the later trial: reports of 28 April 1982 in 工商日報 and 華僑日報 (archive.org NPKS19820428, NPWK19820428), not checked.
+### lead-l0625: 工商晚報 1981-05-16: 城砦天台加建過高當局下令限期拆卸 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Evening News (工商晚報), 16 May 1981 (Saturday), 「違反機場管制障礙物條例 城砦天台加建過高 當局下令限期拆卸」, 【本報訊】, with a photo, leaf n1. Internet Archive item NPKSE19810516, https://archive.org/details/NPKSE19810516/page/n1
+- **Class:** primary (A news report of the time (16 May 1981), with the words of the owner's son, a rooftop tenant and a government spokesman, and a photo. The primary tree is right.)
+- **Date of the record:** 1981-05-16
+- **Files:**
+  - `lead-l0625-NPKSE19810516_jp2_NPKSE19810516_0001.jp2_ext_jpg-3fe53270.jpg` (in `local/`, not in git): Full-resolution page image of leaf n1, the page with the article and its photo of the rooftop stone house on 老人街, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKSE19810516/NPKSE19810516_jp2.zip/NPKSE19810516_jp2%2FNPKSE19810516_0001.jp2&ext=jpg; 2508150 bytes; SHA-256 `2ca5ac19d13d51e427bcc325a50fb21c8d33d8f8441d48895ea61382e1219075`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19810516)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n1, right half, middle, block 1 | Because the City was next to the airport, the heights of its buildings were controlled by the Hong Kong Airport (Control of Obstructions) Ordinance (香港機場（管制障礙物）條例). | "九龍城砦的樓宇，因毗鄰機場，故樓宇高度是受機場（管制障礙物）條例" (the buildings of Kowloon Walled City, being next to the airport, are subject in height to the Airport (Control of Obstructions) Ordinance) |
+| leaf n1, right half, middle, block 1 | The building was No. 16, Lo Yan Street (老人街), and it was 13 storeys high. A stone house (石屋) had been added on part of its roof. | "該樓宇位於老人街十六號，樓高十三層，天台部份加建一石屋" (the building is at No. 16 老人街, thirteen storeys high, with a stone house added on part of the roof) |
+| leaf n1, right half, middle, block 1 | On 14 May 1981 (the paper's "the day before yesterday") the government posted notices at the address that it would apply to the court for a closure order under the ordinance of 1957. It would make the application on 25 May. | "政府已於前日在上址加建部份張貼告示，宣佈要向法庭申請根據一九五七年香港機場（管制障礙物）條例發出封閉令" (the government on the day before yesterday posted notices on the addition, announcing it would apply to the court for a closure order under the 1957 Hong Kong Airport (Control of Obstructions) Ordinance) |
+| leaf n1, right half, middle, block 1 | After the court gave the closure order, the authorities could start work to lower the building. | "法庭頒發封閉令後，當局可動工將該樓宇高度減低" (after the court issues the closure order, the authorities can start work to lower the building) |
+| leaf n1, right half, middle, block 1 | A government spokesman said the building was very close to the flight path of planes landing at and leaving Kai Tak airport (啓德機場). | "該樓宇與在啓德機場升降之飛機所經過的空中路線距離甚近" (the building is very close to the air route of planes taking off and landing at Kai Tak) |
+| leaf n1, right half, middle, block 1 | The spokesman said the height limits met international standards, to protect planes and the people on the ground, and must be obeyed. The parts of the building that were not over the limit would not be affected by the order. | "因此這些高度限制是必須遵守的" (so these height limits must be obeyed) |
+| leaf n1, right half, middle, block 2 | The rooftop addition belonged to a woman surnamed 黃, aged 60, who owned the 13th floor (十三樓) of the building. Her son worked in the building trade. | "業權屬於上址十三樓一名姓黃六十歲的婦人所有，其子經營建築業" (ownership belongs to a 60-year-old woman surnamed 黃 of the 13th floor of the address; her son is in the building trade) |
+| leaf n1, right half, middle, block 2 | About six months before (late 1980), the family found that rain leaked through the ceiling, and on sunny days the flat was very hot. They planned a stone house on the roof, to house people and to stop these problems. | "因發覺每逢下雨天，天花板有水滲下，而烈日當空時，則室內酷熱難受" (because they found water seeped through the ceiling whenever it rained, and the rooms were unbearably hot under the blazing sun) |
+| leaf n1, right half, middle, block 2 | The rooftop stone house was begun about six months before (late 1980). The son let one of his building workers, 孔昭鴻, live in it. 孔 and 黃 paid for it together, about $20,000 each. | "並答允供其子之一名建築工人孔昭鴻居住，屋由孔黃二人合資興建，石屋築成後，每人約花去二萬元" (and agreed to let one of the son's building workers, 孔昭鴻, live there; the house was built with money from both 孔 and 黃, each spending about $20,000) |
+| leaf n1, right half, middle, block 2 | INFERRED: The rooftop stone house was about 600 square feet, in a front part and a back part. The 孔 family of three lived in one room; a family surnamed 葉 lived in the rest. INFERRED: the surname 葉 is small on the scan. | "該天台石屋約六百呎，分成前後兩座，孔一家三口居其中一室，另外則爲姓葉之一家人" (the rooftop stone house is about 600 sq ft, in front and back parts; the 孔 family of three live in one room, and the rest is a family surnamed 葉) |
+| leaf n1, right half, middle, block 2 | In March 1981 they got notices from the City District Office (民政署) and the Public Works Department (工務司署) that the addition affected aircraft landing and must be pulled down. | "至本年三月，他們分別接獲民政署及工務司署的通知，謂加建部份影響民航機降落，需要拆去" (in March this year they received notices from the City District Office and the PWD that the addition affected the landing of airliners and had to be removed) |
+| leaf n1, right half, middle, block 2 | The owner's son, 黃一鳴, said the notice told them to remove 2 metres. The whole house was only 3 metres high, so the 1 metre left was of no use for living. | "該屋高度超過限制，須拆去兩米，而屋全部高度僅三米，剩餘的一米高度，根本無法居住" (the house is over the limit and two metres must be removed, but the whole house is only three metres high; the remaining one metre cannot be lived in) |
+| leaf n1, right half, middle, block 2 | 黃一鳴 said this was unfair: many additions on nearby buildings were higher than theirs. The government spokesman said they acted on a complaint and had confirmed this addition was over the limit; they had no complaints about the other buildings. | "因附近樓宇，不少加建部份比他們更高，爲何單獨拆其居所" (because on nearby buildings many additions are higher than theirs; why demolish only their home?) |
+| leaf n1, right half, middle, block 2 (last columns) | The rooftop tenant 孔 said that if the government took the house down for safety, they would accept it, but the government must rehouse them in public housing (公共屋邨). Otherwise they would lose all their money and have nowhere to live. | "但港府必須安置他們入住公共屋邨，否則在血本無歸後，更要爲居住而担心" (but the government must rehouse them in a public housing estate; otherwise, after losing all their capital, they will also have to worry about housing) |
+| leaf n1, right half, middle, photo caption | The photo shows the rooftop stone house on the building in Lo Yan Street (right of the photo), compared with the heights of the nearby buildings. | "圖爲城砦老人街一樓宇天台石屋（圖右）與鄰近樓宇高度比較" (the photo shows the rooftop stone house of a building on 老人街 in the City (right), compared with the heights of nearby buildings) |
+
+- **Leads:**
+  - The application for a closure order on the rooftop addition of No. 16, 老人街 under the Hong Kong Airport (Control of Obstructions) Ordinance, to be made on 25 May 1981, and the court result: reports of late May 1981 in 工商日報, 工商晚報 and 華僑日報, not checked.
+### lead-l0626: 工商晚報 1975-06-08: 城砦兩幢大厦超出標準高度 違反機塲法被封閉 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Evening News (工商晚報), 8 June 1975 (Sunday), front page, 「城砦兩幢大廈超出標準高度 違反機場法被封閉」, 【本報訊】. Internet Archive item NPKSE19750608, leaf n0, https://archive.org/details/NPKSE19750608/page/n0
+- **Class:** primary (A news report of the time (8 June 1975), with the words of a government spokesman. The primary tree is right.)
+- **Date of the record:** 1975-06-08
+- **Files:**
+  - `lead-l0626-NPKSE19750608_jp2_NPKSE19750608_0000.jp2_ext_jpg-6741c0af.jpg` (in `local/`, not in git): Full-resolution page image of leaf n0 (the front page), with the article at lower right, as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKSE19750608/NPKSE19750608_jp2.zip/NPKSE19750608_jp2%2FNPKSE19750608_0000.jp2&ext=jpg; 2279509 bytes; SHA-256 `3e04a5e0409925a1fd01bf29dbe097d86e6341f08a1391e55eb90313e100efc2`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19750608)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n0 (front page), lower right, block 1 | Two new buildings in Kowloon Walled City were more than 40 feet over the height limit. | "九龍城砦兩幢興建中的大廈，因建築高度較限制中的標準超出逾四十呎" (two buildings under construction in Kowloon Walled City exceed the height limit by over forty feet) |
+| leaf n0 (front page), lower right, block 1 | INFERRED: On Friday 6 June 1975 (the paper's "last Friday") the government posted closure orders on them under the Hong Kong Airport (Obstructions) law of 1957. INFERRED: the date 6 June comes from "上週五" and the date of the paper (Sunday 8 June 1975). | "上週五經已被港府根據一九五七年香港機場（防止障礙）法例貼出封閉令" (last Friday the government posted closure orders under the 1957 Hong Kong Airport (Obstructions) law) |
+| leaf n0 (front page), lower right, block 1 | Public Works Department staff were to go into the buildings and take down their top floors, to bring them down to the level of the aircraft approach path. | "工務局人員，亦將會進入大廈動工將大廈頂層拆卸，以予降低" (PWD staff will also enter the buildings and start work to remove the top floors to lower them) |
+| leaf n0 (front page), lower right, block 2 | A government spokesman said on the morning of 8 June that the two buildings were not finished. They were only at the edge of the airport control zone, but in an extreme case they could endanger aircraft and people on the ground, so they must be cut down to the standard. | "雖然僅在機場管制區的邊沿，但在極端情形之下，足以構成飛機及地面人士的安全受到影響" (although only at the edge of the airport control zone, in extreme circumstances they could affect the safety of aircraft and people on the ground) |
+| leaf n0 (front page), lower right, block 3 | One building was No. 24, Tung Tau Tsuen Road (東頭村道), in the City. It was 16 storeys high, on the site of the 鄭明園酒店, a well-known restaurant of the City more than ten years before. | "其一位於九龍城砦東頭村道廿四號，高十六層，即十餘年前城砦內著名之鄭明園酒店舊址" (one is at No. 24 東頭村道 in the City, 16 storeys high, the former site of 鄭明園酒店, famous in the City over ten years ago) |
+| leaf n0 (front page), lower right, block 3 | INFERRED: The other was Nos. 40-42 Sai Shing Road (the paper prints 城西道), inside the City. It was 14 storeys high, on the site of the 合興毛巾廠 towel factory. INFERRED: 城西道 is a misprint of 西城道 (Sai Shing Road), because other reports of the same closure, Kung Sheung Evening News (工商晚報) of 3 July 1975 and Wah Kiu Yat Po (華僑日報) of 17 June 1975, give 西城道 for Nos. 40-42. | "另一幢位於城砦內之城西道四十至四十二號，高十四層，爲合興毛巾廠之舊址" (the other, at Nos. 40-42 城西道 in the City, 14 storeys high, is the former site of 合興毛巾廠) |
+| leaf n0 (front page), lower right, block 3 | The paper also said the two buildings had recently been completed one after the other, and their flats had already been sold floor by floor. This is not the same as the words of the spokesman, who said they were not finished. | "該兩幢大廈最近先後落成，並已分層售出" (the two buildings were recently completed one after the other, and have been sold floor by floor) |
+
+- **Leads:**
+  - The closure orders of 6 June 1975 on No. 24 東頭村道 and Nos. 40-42 城西道 under the Hong Kong Airport (Control of Obstructions) Ordinance 1957, and the reports of 7 June 1975 (工商日報 NPKS19750607, 華僑日報 NPWK19750607): not checked.
+### lead-l0637: 工商晚報 1979-05-21: 城砦鼠患猖獗 市政署促居民合作對付 白晝出動旁若無人不少孩子夢中被咬 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Evening News (工商晚報), 21 May 1979, 「城砦鼠患猖獗 市政署促居民合作對付 白晝出動旁若無人不少孩子夢中被咬」, 【本報訊】, with two photos by 莫錦強 (本報記者), leaf n1. Internet Archive item NPKSE19790521, https://archive.org/details/NPKSE19790521/page/n1
+- **Class:** primary (A news report of the time (21 May 1979), with the words of residents, a kaifong officer and Urban Services Department staff, and two news photos. The primary tree is right.)
+- **Date of the record:** 1979-05-21
+- **Files:**
+  - `lead-l0637-NPKSE19790521_jp2_NPKSE19790521_0001.jp2_ext_jpg-3e6a29db.jpg` (in `local/`, not in git): Full-resolution page image of leaf n1, the page with the article and its two photos (a refuse heap and a rat in a drain in the City), as archive.org serves it in JPEG from the JP2 scan.; https://archive.org/download/NPKSE19790521/NPKSE19790521_jp2.zip/NPKSE19790521_jp2%2FNPKSE19790521_0001.jp2&ext=jpg; 2346210 bytes; SHA-256 `a8bdfae93d0fa6067bfe2f79a538aeb1dfc36a02dd8865de7551de1dbb33b2a8`; licence: No rights statement on the archive.org item (its metadata fields rights and licenseurl are empty; it is in the collection china-mail, from a private uploader). The newspaper is copyright of its publisher, Kung Sheung Evening News (工商晚報). (https://archive.org/details/NPKSE19790521)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n1, right half, middle, block 1 | Rats were a serious problem in Kowloon Walled City in 1979 and a threat to the health of residents. Packs of rats came out even by day to look for food, and many residents had been bitten. | "九龍城砦鼠患嚴重，居民健康大受威脅，鼠群在日間亦膽敢聯群而出覓食，不少居民且曾被老鼠咬傷" (rats are a serious problem in Kowloon Walled City and residents' health is badly threatened; packs of rats dare to come out by day for food, and many residents have been bitten) |
+| leaf n1, right half, middle, block 1 | The Urban Services Department (市政事務署) sent staff into the City two or three times a week to inspect. They handed out rat poison and rat traps for residents to use. | "每週都有二至三次派員到區內視察，並派發鼠藥及捕鼠工具讓居民使用" (two or three times a week it sends staff to inspect the area, and hands out rat poison and traps for residents to use) |
+| leaf n1, right half, middle, block 1 | The department said the work had little effect because residents did not cooperate. | "但該署指出因得不到居民之合作，故收效不大" (but the department says that because it does not get residents' cooperation, the results are small) |
+| leaf n1, right half, middle, block 1 | Old residents (老街坊) of the City said its rats numbered in the tens of thousands, and many children had been bitten while asleep. | "城砦之老鼠數以萬計，有不少孩子在熟睡中被咬傷" (the City's rats number in the tens of thousands, and many children have been bitten while sound asleep) |
+| leaf n1, right half, middle, blocks 1-2 | When a household's money improved, it moved out to get away from the rats. Poor families could not, and had to go on living with them. | "居民一旦經濟環境獲到改善，紛紛搬離上址，以免再受鼠輩騷擾，但貧苦人家無法不繼續與鼠輩爲伍" (once residents' finances improve they move away, to escape the rats; but poor families cannot avoid living on with them) |
+| leaf n1, right half, middle, block 2 | The secretary of the Kowloon Walled City Kaifong Welfare Association (九龍城砦街坊福利會), surnamed 劉, said the association had set aside a budget of $23,000 to clean the City and kill rats. It had also written to the authorities to ask for improvement. | "街坊會現已撥出二萬三千元之預算，用來作爲清潔城砦及滅鼠之費用" (the kaifong association has now set aside a budget of $23,000 for cleaning the City and killing rats) |
+| leaf n1, right half, middle, block 2 | 劉 asked residents to stop "sweeping only the snow before their own door", to kill rats actively and to clear the many refuse heaps in the area. | "掃除區內多個垃圾堆積處" (clear away the many places in the area where refuse piles up) |
+| leaf n1, right half, middle, block 2 | The owner of a store (士多店) in Sai Tau Tsuen (西頭村), which the paper places in the City, surnamed 魏, said rats elsewhere came out only in the dark, but the City's rats pushed over glass jars full of food in broad daylight to get at it. | "今日之「鼠輩」竟公然在大白天，推倒盛滿食物之玻璃瓶" (today's "rats" openly push over glass jars full of food in broad daylight) |
+| leaf n1, right half, middle, block 2 | A resident, 何山, said that by day the rats kept mostly to the drains. After dark, above all in unlit places, they went about in packs, and people walking by stepped aside for them. | "惟當入夜之後，尤以燈光照明不到之暗處，簡直成爲牠們的世界" (but after nightfall, especially in dark places the lights do not reach, it becomes simply their world) |
+| leaf n1, right half, middle, block 2 | The rats chewed many household goods and furniture, and they bit people in their sleep. | "除了很多日用品及傢具被咬壞外，牠們甚至會趁人睡着時，噬人一口" (besides chewing up many daily goods and furniture, they even bite people while they sleep) |
+| leaf n1, right half, middle, block 2 | Residents said a young woman surnamed 李 on 鶴老街 had been bitten by rats many times, and her whole family had to move out of the area. Moving house because of rat bites was common in the City. | "鶴老街不久前有一位李姓少女，曾多次爲老鼠咬傷，被迫全家遷出該區" (not long ago a young woman surnamed 李 on 鶴老街 was bitten by rats many times, and the whole family was forced to move out) |
+| leaf n1, right half, middle, block 2 | A spokesman of the Kowloon City office of the Urban Services Department said the office seldom had complaints about rats from residents of the City. | "該處很少接到城砦區內之居民主動投訴鼠患之案件" (the office seldom receives complaints about rats from residents of the City on their own initiative) |
+| leaf n1, right half, middle, block 2 | A member of the pest control team (蟲鼠組), surnamed 黃, said he had found a rats' nest inside a home in 西頭村, but the owner refused to let him in to destroy it. | "日前還在西頭村發現一個老鼠巢穴，築在一個住戶屋內，但由於屋主拒絕他入內進行搗巢工作" (recently he found a rats' nest in 西頭村, built inside a home, but the owner refused to let him in to destroy it) |
+| leaf n1, right half, middle, block 2 | He said that because the City was a special area, the staff could only persuade residents to kill rats, not use force. | "由於城砦是一個特殊區域，工作人員只能用勸諭方式" (because the City is a special area, staff can only use persuasion) |
+| leaf n1, right half, middle, block 2 | The City was low-lying, and after heavy rain it often flooded, which helped pests to breed. The spokesman asked residents to clean up quickly after a flood. | "由於該區爲一低窪地區，很多時候在豪雨後便成澤國" (because the area is low-lying, it often becomes a swamp after heavy rain) |
+| leaf n1, right half, middle, photo caption | The upper photo shows refuse that had piled up for days in the City. The lower photo shows a rat (arrow) in a drain at midday. | "九龍城砦內垃圾堆積多日，滋生蟲鼠" (refuse has piled up for days in Kowloon Walled City, breeding pests and rats) |
+
+- **Leads:**
+  - The letter of the Kowloon Walled City Kaifong Welfare Association (九龍城砦街坊福利會) to the authorities on rats and its budget of $23,000 for cleaning and rat control (1979): not held.
+
+### lead-l0006: 大公報 1963-01-19: 擁護外交部向英抗議 城砦居民昨發表聲明 要求港府即撤銷拆遷城砦計劃 (OCR of the headline list)
+
 - **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1963-09-03
+- **Date:** 1963-01-19
 - **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Class:** primary (A Hong Kong newspaper report of the time (pro-Beijing paper).)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPTKP19630903
-- **Other links:** https://archive.org/metadata/NPTKP19630903
-- **Proof that it exists:** archive.org item NPTKP19630903, title '大公報 1963-09-03'; its description has '在九龍城砦街坊會爭取下城砦內將有街喉水務局已答應儘速安裝'.
-- **What it gives (resolver's note, not checked):** In September 1963 the kaifong association got the Water Supplies Department to agree to install street water taps (街喉) in the City. It gives an early date for the public standpipes and the association's work just after August 1963.
-- **Lead:** L0162 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
-- **Notes:** NPWK19630903 (華僑日報 of the same day) also matched the search (not opened).
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPTKP19630119
+- **Other links:** https://archive.org/metadata/NPTKP19630119
+- **Proof that it exists:** archive.org item NPTKP19630119, title '大公報 1963-01-19'; phrase search description:'城砦居民昨發表聲明' OR '談述城砦傳統地位' finds only this item.
+- **What it gives (resolver's note, not checked):** The report of the press conference of 18 Jan 1963 at which the residents' committee against the clearance read its written statement; a second headline says that they told the reporters about the traditional status of the City. INFERRED: the text of the statement, with the residents' demands of 1963.
+- **Lead:** L0006 (cited by china-3, china-official-records-1933-1987)
 
-### lead-l0169: 工商晚報 1978-05-19: 九龍城砦老翁被殺案 一男子趕警署自首 (OCR of the headline list)
+### lead-l0023: 工商晚報 1948-01-14: 九龍裁判暫開審朱沛唐劉毅夫 (OCR of the headline list)
 
 - **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1978-05-19
+- **Date:** 1948-01-14
 - **Kind:** press
 - **Class:** primary (A Hong Kong newspaper report of the time.)
 - **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19780519
-- **Other links:** https://archive.org/metadata/NPKSE19780519
-- **Proof that it exists:** archive.org item NPKSE19780519, title '工商晚報 1978-05-19'; its description has '九龍城砦老翁被殺案 一男子趕警署自首'.
-- **What it gives (resolver's note, not checked):** The day after the Cheung On Lane (長安里) killing of May 1978, a man gave himself up at a police station over the killing of the old man in the City. It is the next step of the case of gap-campus-socialwork-press-13.
-- **Lead:** L0169 (cited by gap-campus-socialwork-press-13, hk-chinese-press-1947-1984)
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19480114
+- **Other links:** https://archive.org/metadata/NPKSE19480114
+- **Proof that it exists:** archive.org item NPKSE19480114, title '工商晚報 1948-01-14'; phrase search description:'開審朱沛唐' OR '支持朱劉上訴' finds it.
+- **What it gives (resolver's note, not checked):** The evening report of the hearing of the two residents' representatives 朱沛唐 and 劉毅夫 at the Kowloon Magistracy (九龍裁判署) in January 1948, with a crowd waiting at the gate; another headline supports their appeal.
+- **Lead:** L0023 (cited by top-china-5, china-official-records-1933-1987)
 
-### lead-l0231-1: 香港工商日報 1983-03-26 (OCR headline list with 城砦 and 火警)
-
-- **Creator:** Kung Sheung Daily News (工商日報)
-- **Date:** 1983-03-26
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19830326
-- **Other links:** https://archive.org/metadata/NPKS19830326
-- **Proof that it exists:** archive.org item NPKS19830326, title '香港工商日報 1983-03-26'; phrase search identifier:NPKS19830326 AND description:'火警' AND '城砦' finds it.
-- **What it gives (resolver's note, not checked):** The next-day report of the second-alarm fire of 25 Mar 1983 in 西頭村 (West Village) of the City that killed one person and hurt four: INFERRED the cause, the victim and the damage.
-- **Lead:** L0231 (cited by top-services-14, hk-chinese-press-1947-1984)
-
-### lead-l0231-2: 華僑日報 1983-03-26 (OCR headline list with 西頭)
+### lead-l0024: 華僑日報 1948-01-09: 九龍城事件昨日我再向英使提嚴重交涉 監察院函外交部詳復 葉公超次長今日到港 (OCR of the headline list)
 
 - **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1983-03-26
+- **Date:** 1948-01-09
 - **Kind:** press
 - **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
+- **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19830326
-- **Other links:** https://archive.org/metadata/NPWK19830326
-- **Proof that it exists:** archive.org item NPWK19830326, title '華僑日報 1983-03-26'; phrase search for '西頭' (and the wider search for 西頭村 OR 西頭新村 OR 蕭慕瑤) finds it.
-- **What it gives (resolver's note, not checked):** INFERRED: 華僑日報's next-day report of the same 西頭村 fire of 25 Mar 1983 (one dead, four hurt).
-- **Lead:** L0231 (cited by top-services-14, hk-chinese-press-1947-1984)
-- **Notes:** Not checked on the page that the 西頭 headline is the fire.
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19480109
+- **Other links:** https://archive.org/metadata/NPWK19480109
+- **Proof that it exists:** archive.org item NPWK19480109, title '華僑日報 1948-01-09'; phrase search identifier:NPWK19480109 AND description:'九龍城事件昨日' finds it.
+- **What it gives (resolver's note, not checked):** Reports of 9 Jan 1948 on the eviction crisis: the Chinese Government's second protest to the British ambassador, the visit of the vice-minister 葉公超, gifts to the homeless residents, and the state of the site after the old houses were pulled down ('老屋拆後種種'; '聯會新蓋搭國旗高飄').
+- **Lead:** L0024 (cited by top-china-6, china-official-records-1933-1987)
 
-### lead-l0624: 香港工商日報 1982-04-21 (OCR keyword list: 城寨 毒品案)
+### lead-l0027: 華僑日報 1947-12-31: 龍城拆屋通告一束交特派員辦事處 (OCR of the headline list)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1947-12-31
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19471231
+- **Other links:** https://archive.org/metadata/NPWK19471231
+- **Proof that it exists:** archive.org item NPWK19471231, title '華僑日報 1947-12-31'; phrase search identifier:NPWK19471231 AND description:'龍城拆屋通告' finds it.
+- **What it gives (resolver's note, not checked):** The residents of Kowloon City handed a bundle of the government's demolition notices to the office of the Chinese Foreign Ministry's Special Commissioner (31 Dec 1947); the same day as the residents' meeting that 工商日報 reports (top-china-6).
+- **Lead:** L0027 (cited by top-china-6, china-official-records-1933-1987)
+
+### lead-l0034: 香港工商日報 1948-01-19: 九龍城救濟慰問調查報告書 (OCR of the headline list)
 
 - **Creator:** Kung Sheung Daily News (工商日報)
-- **Date:** 1982-04-21
+- **Date:** 1948-01-19
 - **Kind:** press
 - **Class:** primary (A Hong Kong newspaper report of the time.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19820421
-- **Other links:** https://archive.org/metadata/NPKS19820421
-- **Proof that it exists:** archive.org item NPKS19820421, title '香港工商日報 1982-04-21'; its description has '... 車輛 城寨 毒品案 小巴 探員 ...'.
-- **What it gives (resolver's note, not checked):** A City drug case reported on 21 April 1982: INFERRED the court hearing of the two people arrested in the microwave drug-factory raid of 14 April 1982 (top-zh-press-30).
-- **Lead:** L0624 (cited by top-zh-press-30, hk-chinese-press-1947-1984)
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19480119
+- **Other links:** https://archive.org/metadata/NPKS19480119
+- **Proof that it exists:** archive.org item NPKS19480119, title '香港工商日報 1948-01-19'; phrase search identifier:NPKS19480119 AND description:'救濟慰問調查報告書' finds it.
+- **What it gives (resolver's note, not checked):** The report of the relief and inquiry visit to Kowloon City of Jan 1948: the course of events and the living conditions of the residents ('事件 經過 居民生活狀况' in the headline list).
+- **Lead:** L0034 (cited by top-china-9, china-official-records-1933-1987)
 
-### lead-l0625: 工商晚報 1981-05-16: 城砦天台加建過高當局下令限期拆卸 (OCR of the headline list)
+### lead-l0035: 華僑日報 1948-01-18: 龍城一三五戶已拆一一五戶已登記七九七人未登記約四百人 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1981-05-16
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1948-01-18
 - **Kind:** press
 - **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
+- **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19810516
-- **Other links:** https://archive.org/metadata/NPKSE19810516
-- **Proof that it exists:** archive.org item NPKSE19810516, title '工商晚報 1981-05-16'; description '城砦天台加建過高當局下令限期拆卸' and '圖爲城砦老人街一樓宇天台石墨圖右與鄰近樓宇高度比較'.
-- **What it gives (resolver's note, not checked):** The order of May 1981 to demolish an over-height rooftop addition on a building in Lo Yan Street (老人街) by a deadline, with a photo of the roof beside the heights of its neighbours. It gives the airport height control in the City in 1981.
-- **Lead:** L0625 (cited by top-zh-press-31, hk-chinese-press-1947-1984)
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19480118
+- **Other links:** https://archive.org/metadata/NPWK19480118
+- **Proof that it exists:** archive.org item NPWK19480118, title '華僑日報 1948-01-18'; phrase search identifier:NPWK19480118 AND description:'七九七人' finds it.
+- **What it gives (resolver's note, not checked):** A count of 18 Jan 1948 of the households and people of Kowloon City: 135 households, 115 pulled down, 797 people registered and about 400 not registered.
+- **Lead:** L0035 (cited by top-china-9, china-official-records-1933-1987)
 
-### lead-l0626: 工商晚報 1975-06-08: 城砦兩幢大厦超出標準高度 違反機塲法被封閉 (OCR of the headline list)
+### lead-l0036: 華僑日報 1948-01-14: 港府計劃九龍寨城建成公園 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1975-06-08
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1948-01-14
 - **Kind:** press
 - **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
+- **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19750608
-- **Other links:** https://archive.org/metadata/NPKSE19750608
-- **Proof that it exists:** archive.org item NPKSE19750608, title '工商晚報 1975-06-08'; its description has the headline of two City buildings above the standard height, closed under the airport law.
-- **What it gives (resolver's note, not checked):** June 1975: two buildings of the City above the airport height standard were closed under the airport law. It is the first report of the case that ended in the closure orders of 2 July 1975 (held).
-- **Lead:** L0626 (cited by top-zh-press-31, hk-chinese-press-1947-1984)
-
-### lead-l0637: 工商晚報 1979-05-21: 城砦鼠患猖獗 市政署促居民合作對付 白晝出動旁若無人不少孩子夢中被咬 (OCR of the headline list)
-
-- **Creator:** Kung Sheung Evening News (工商晚報)
-- **Date:** 1979-05-21
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19790521
-- **Other links:** https://archive.org/metadata/NPKSE19790521
-- **Proof that it exists:** archive.org item NPKSE19790521, title '工商晚報 1979-05-21'; its description has '城砦鼠患猖獗' and '下九龍城砦之老鼠'.
-- **What it gives (resolver's note, not checked):** May 1979: rats overran the City, came out by day and bit children in their sleep; refuse had piled up for days; the Urban Services Department asked residents to help. The report has photos.
-- **Lead:** L0637 (cited by zh-press-22, hk-chinese-press-1947-1984)
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19480114
+- **Other links:** https://archive.org/metadata/NPWK19480114
+- **Proof that it exists:** archive.org item NPWK19480114, title '華僑日報 1948-01-14'; its description has '港府計劃九龍寨城建成公園'.
+- **What it gives (resolver's note, not checked):** A Hong Kong Government plan of Jan 1948 to make the walled City into a park; in the same issue the sentence of the two residents' representatives 朱沛唐 and 劉毅夫 to three months each, and the evicted residents sleeping on the ground.
+- **Lead:** L0036 (cited by top-china-9, china-official-records-1933-1987); also L0023

@@ -282,23 +282,34 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0835: Hel op aarde (reader's letter), De Telegraaf, 28 April 1990, p. 2 (Weekeinde letters)
 
-- **Creator:** Anja Ybema-Lepoutre (signed 'HONGKONG'); De Telegraaf
-- **Date:** 1990-04-28
-- **Kind:** press
-- **Class:** primary (A letter of the time by a Dutch woman in Hong Kong who supported the Salvation Army kindergarten in the City.)
-- **Value:** medium
-- **Language:** other
-- **Access:** open
-- **Licence:** Rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; Delpher (KB) shows it free to read under its terms of use; no open licence.
-- **Link:** https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010646054:mpeg21:a1569
-- **Other links:** https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:a1569:ocr, https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:alto, https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:image
-- **Proof that it exists:** Delpher SRU record: title 'Hel op aarde', De Telegraaf, 1990/04/28, page 2, pageurl ddd:010646054:mpeg21:p118; OCR: 'Op 20-12-1986 publiceerde u in Weekeinde het verhaal „Dit is de hel op aarde", over De Ommuurde Stad in Hongkong, waar 50.000 mensen als haringen in een ton wonen.'
-- **What it gives (resolver's note, not checked):** April 1990: the City will soon be demolished; the Dutch Charity Fund still supports the Salvation Army kindergarten in the City: it pays one teacher's salary, gives milk and vitamin pills, and gives the children an English lesson one morning each week. Each month all 60 pupils have a day out; some see little daylight; there are fewer pupils each month, and after the summer holidays all is uncertain.
-- **Lead:** L0835 (cited by press-archives-21, dutch-press-delpher-1986-1993); also L0850
-- **Notes:** Dutch. Read the text in the ALTO of scan page p118 (the article OCR is cut after the first lines). Also answers part of lead L0836 (the Dutch Charity Fund).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Anja Ybema-Lepoutre (signed 'HONGKONG'), 'Hel op aarde' (reader's letter), De Telegraaf (Amsterdam), 28 April 1990, p. 2, letters to Weekeinde ('Korte reacties op verhalen in Weekeinde'). Delpher urn ddd:010646054:mpeg21:a1569 (continued in a1570), scan page ddd:010646054:mpeg21:p118. https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010646054:mpeg21:a1569
+- **Class:** primary (A letter written at the time (April 1990) by a person who worked with the kindergarten in the City ('we betalen', 'heb ik'), printed in a daily newspaper.)
+- **Date of the record:** 1990-04-28
+- **Files:**
+  - not downloaded (curl exit 22): ALTO XML (OCR with word positions) of De Telegraaf, 28 April 1990, scan page p118 (printed p. 2), with the whole letter (533,339 bytes); https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:alto; licence: Delpher record rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; free to read on Delpher (KB) under its terms of use; no open licence (https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&query=Ybema-Lepoutre)
+  - not downloaded (curl exit 22): Scan of the whole page (printed p. 2), JPEG 2000, 4871 x 6630 px (3,170,883 bytes); https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:p118:image; licence: Delpher record rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; free to read on Delpher (KB) under its terms of use; no open licence (https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&query=Ybema-Lepoutre)
+  - not downloaded (curl exit 22): Article OCR of a1569 'Hel op aarde' (first lines of the letter only); https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:a1569:ocr; licence: Delpher record rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; free to read on Delpher (KB) under its terms of use; no open licence (https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&query=Ybema-Lepoutre)
+  - not downloaded (curl exit 22): Article OCR of a1570 'Postbus 3 7 6' (the rest of the letter, with the letters-column footer); https://resolver.kb.nl/resolve?urn=ddd:010646054:mpeg21:a1570:ocr; licence: Delpher record rights field 'Uitgeversmaatschappij De Telegraaf B.V.'; free to read on Delpher (KB) under its terms of use; no open licence (https://jsru.kb.nl/sru/sru?version=1.2&operation=searchRetrieve&x-collection=DDD_artikel&recordSchema=ddd&query=Ybema-Lepoutre)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00022) | In April 1990 the writer recalls that the Weekeinde section of De Telegraaf printed, on 20 December 1986, a story about the Walled City (De Ommuurde Stad) of Hong Kong. That story is held as press-archives-21. | "Op 20-12-1986 publiceerde u in Weekeinde het verhaal" (On 20-12-1986 you published in Weekeinde the story) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00022) | The writer repeats the figure of that 1986 story: 50,000 people lived in the City, packed like herrings in a barrel. | "waar 50.000 mensen als haringen in een ton wonen" (where 50,000 people live like herrings in a barrel) |
+| p. 2, letter 'Hel op aarde' (scan p118, blocks TB00022 and TB00024) | In April 1990 the City was often in the news, because it was soon to be demolished. | "Deze stad is de laatste tijd veel in het nieuws omdat zij binnenkort wordt afgebroken" (This city has been much in the news lately because it will soon be demolished) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | In April 1990 the Dutch Charity Fund still supported the small kindergarten of the Salvation Army (Leger des Heils) in the City. | "steunt nog steeds het kleuterschooltje van het Leger des Heils" (still supports the little kindergarten of the Salvation Army) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The Fund paid the salary of one teacher of the kindergarten. | "we betalen het salaris van een leerkracht" (we pay the salary of a teacher) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The Fund gave the children milk and vitamin pills. | "verstrekken melk en vitaminepillen" (provide milk and vitamin pills) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The Fund gave the children an English lesson one morning each week. | "geven de kinderen iedere week een ochtend Engelse les" (give the children an English lesson one morning every week) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The aim of the English lesson: the children are not to be far behind when they go on to the official primary school. | "als ze naar de officiële lagere school gaan niet al te veel achterstand hebben" (so that when they go to the official primary school they are not too far behind) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The high point for the children was a day out each month, with all 60 pupils of the school. | "het maandelijks dagje uit, met alle 60 leerlingetjes van de school" (the monthly day out, with all 60 little pupils of the school) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | Some of the children saw little daylight. | "sommigen zien maar weinig daglicht" (some see only little daylight) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | INFERRED: Each month the school had a few pupils fewer. INFERRED: because families were leaving the City before the clearance; the letter does not give the reason. | "weer een paar leerlingen minder" (again a few pupils fewer) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | After the summer holidays of 1990 the future of the kindergarten was uncertain. | "Na de zomervakantie is alles onzeker." (After the summer holidays everything is uncertain.) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | The writer says that the letter is not a request for money; it only gives the readers news. | "deze brief is niet bedoeld als bedelactie" (this letter is not meant as an appeal for money) |
+| p. 2, letter 'Hel op aarde' (scan p118, block TB00024) | INFERRED: INFERRED: The writer lived in Hong Kong and worked for the Fund at the kindergarten: she writes 'we pay' and 'I have fewer pupils', and signs from Hong Kong. | "HONGKONG, Anja Ybema-Lepoutre" |

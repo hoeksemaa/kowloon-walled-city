@@ -801,23 +801,24 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0876: Port & Airport Development Strategy final report (Figure 4.4, 'Airport Noise Constraints - Kai Tak Airport', p.4-5)
 
-- **Creator:** Hong Kong Government, Port and Airport Development Strategy (PADS) study
-- **Date:** 1989 (the HKU record gives '1991, 1989'; the Foreword names the Beijing protests of 1989)
-- **Kind:** document
-- **Class:** primary (A government planning study of 1989 that maps the noise of Kai Tak while the airport was in use.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** HKU Digital Repository: no licence on the record or in the IIIF manifest; site footer 'Copyright (c) 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government copyright
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/70796498f
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/70796498f, https://digitalrepository.lib.hku.hk/service/api/iiif/images/dj52x245q/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/tx31rf734/full/full/0/default.jpg
-- **Proof that it exists:** Canvas 73 (image dj52x245q) is printed p.4-5: '4.1.4 Airport Noise Contours', 'The 30 NEF contour for the "worst case" is shown in Figure 4.4', and 'Figure 4.4 Airport Noise Constraints - Kai Tak Airport' with the legend 'Urban area', '30 NEF for worst case', '25 NEF for worst case'. Canvas 9 is the list of figures.
-- **What it gives (resolver's note, not checked):** A map of the 25 and 30 NEF 'worst case' noise contours of Kai Tak over Kowloon (busy-day maximum operations with the night restrictions), and the rule of the Hong Kong Planning Standards and Guidelines: no new residential development inside the 30 NEF contour of Kai Tak (1989). Where the City lies on the band was not checked.
-- **Lead:** L0876 (cited by top-maps-1, maps-and-aerial-photos-1889-1994)
-- **Notes:** Not the existing contours of the 1980s. Other open PADS records on the same site: 'Port and airport development strategy (PADS) background notes' (1988, g158cd74b) and the executive summary (1990, kw52k9883), not opened. The EPD figure 6-b1.gif can come from this study (INFERRED).
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Government Secretariat, Lands & Works Branch, Port & Airport Development Strategy: Final Report (study consultants Mott MacDonald Hong Kong Ltd, Wilbur Smith Associates, Coopers & Lybrand Associates Ltd), December 1989, section 4.1.4 'Airport Noise Contours' and Figure 4.4 'Airport Noise Constraints - Kai Tak Airport', p. 4-5 (IIIF image 73); HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/70796498f
+- **Class:** primary (A government planning report of December 1989 (the title page gives the date).)
+- **Date of the record:** December 1989
+- **Files:**
+  - not downloaded (curl exit 28): Page image, PADS Final Report (December 1989), p. 4-5: section 4.1.4 and Figure 4.4, the 'worst case' noise contours of Kai Tak; https://digitalrepository.lib.hku.hk/service/api/iiif/images/dj52x245q/full/full/0/default.jpg; licence: No licence on the HKU record or in the IIIF manifest; HKU footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government report (Crown copyright at the time) (https://digitalrepository.lib.hku.hk/catalog/70796498f)
+  - not downloaded (curl exit 28): Page image, PADS Final Report, cover (date December 1989); https://digitalrepository.lib.hku.hk/service/api/iiif/images/9880wn42m/full/full/0/default.jpg; licence: No licence on the HKU record or in the IIIF manifest; HKU footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; Hong Kong Government report (Crown copyright at the time) (https://digitalrepository.lib.hku.hk/catalog/70796498f)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 4-5, section 4.1.4 (IIIF image 73) | In 1989 the Hong Kong Planning Standards and Guidelines said that no new residential development was to be allowed inside the 30 NEF (Noise Exposure Forecast) contour of Kai Tak Airport. | "no new residential development should be allowed within the 30 NEF (Noise Exposure Forecast) contour for Kai Tak." |
+| p. 4-5, section 4.1.4 and Figure 4.4 (IIIF image 73) | Figure 4.4 shows the 'worst case' 30 NEF and 25 NEF contours of Kai Tak: the maximum sustainable number of flights on a busy day in a future year, with the night restrictions still in force and noisy aircraft banned. They are not the contours of the 1980s. | "The worst case is based on the maximum sustainable number of operations considered feasible and represents busy day conditions" |
+| p. 4-5, Figure 4.4 (IIIF image 73) | INFERRED: On Figure 4.4 the noise contours run as a band from northwest to southeast along the line of the runway over Kowloon. The map does not mark the Walled City, and the scan is too coarse for me to place the City inside or outside the 30 NEF band (my reading of the map; inferred). | "Figure 4.4 Airport Noise Constraints - Kai Tak Airport" |
+
+- **Leads:**
+  - Hong Kong Airport (Control of Obstructions) (Consolidation) (Amendment) (No. 3) Order 1988: the height limits round Kai Tak in force in 1988 (cited on PADS p. 4-6/4-7); the limits over the City itself can be in its drawings.

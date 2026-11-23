@@ -127,3 +127,15 @@ See the leads under each item in the primary folder.
 | NPTKP19840522, leaf n4 (第二張), first part, para 4 | He said that the 'four big families' formed in the 1950s and 1960s. They smuggled tons of drugs from Thailand by fishing boat and cargo ship, and their members were mostly Chiu Chow (潮籍) people. | "毒販用漁船、貨船從泰國偷運數以噸計毒品來港" (The dealers smuggled drugs by the ton from Thailand to Hong Kong in fishing boats and cargo ships.) |
 | NPTKP19840522, leaf n4 (第二張), second part, para 1 | He said that in the 1950s the drug cooks were mainly Shanghainese, who hired Chiu Chow assistants from the mainland. Chiu Chow cooks later took over. | "五十年代的製毒師傅主要是上海人" (The drug-making masters of the 1950s were mainly Shanghainese.) |
 | NPTKP19840522, leaf n4 (第二張), first part, para 3 | He said that red pills (紅丸) made from heroin were first found in 1927, the first red-pill workshop in 1928, and the first heroin workshop in 1938. | "一九三八年，警方破獲第一間海洛英工場" (In 1938 the police raided the first heroin workshop.) |
+
+### lead-l0162-2: 香港工商日報 1963-04-28: 赤色魔掌伸到九龍城砦！ 有人組「福利會」募款 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-22; a checker checked a sample of the facts on 2026-11-22.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 28 April 1963 (中華民國五十二年四月二十八日, Sunday), 「赤色魔掌伸到九龍城砦！ 有人組「福利會」募欵 購買肥田料献贈中共」, subheads 「據說月前抗議拆屋餘欵五千元」「該會下月成立時意欲撥充會費」, (本報特稿), leaf n3 (top right). Internet Archive item NPKS19630428, https://archive.org/details/NPKS19630428/page/n3
+- **Class:** primary (A newspaper feature of the time (28 April 1963) by the paper's own staff. Its picture of the City of 1963 is primary; its short notes on the City's past (the "full flower" of brothels and gambling) are secondary. The paper was pro-Kuomintang, and the article is anti-communist in tone: it calls the association "red". The primary tree is right.)
+- **Date of the record:** 1963-04-28
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../primary-sources/hk-chinese-press-1947-1984/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n3, top right, (本報特稿), col. 19 | The paper said that at its height there was a brothel every five steps and a gambling stall every ten steps in the City. | "在全盛時期，城砦內是五步一妓寨，十步一賭檔" (In its heyday, inside the City there was a brothel every five steps and a gambling stall every ten) |
