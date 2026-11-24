@@ -851,7 +851,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+- **Status:** read: 8 of 8 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1158: 许家屯走访九龙城
@@ -1023,17 +1023,168 @@ testimony given later: tag its facts "retrospective (year)".
   - Foreign Ministry (外交部) protest note to the British Embassy of 6 Jan 1948 on the Kowloon City demolitions
 ### lead-l0676: 華僑日報 (Wah Kiu Yat Po), 16 January 1948: 「救濟龍城居民省府代表抵港振欵五億擬組會發放今日往醫院慰問傷者」 (OCR headline list)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1948-01-16
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「救濟龍城居民 省府代表抵港 振欵五億擬組會發放 今日往醫院慰問傷者」 (特訊), 16 January 1948, local news page (archive.org leaf n3), with the related items 「澳各界慰問團到港慰問龍城同胞」 and 「龍城居民會進行編查戶口 派代表赴省提供有力歷史證件」 on the same page, https://archive.org/details/NPWK19480116/page/n3
+- **Class:** primary (A Hong Kong newspaper report of the time (16 Jan 1948) on the events of 15 Jan 1948. It is a Hong Kong Chinese newspaper, thus it fits hk-chinese-press-1947-1984 better than china-official-records-1933-1987 (both are in primary-sources/). Earlier history (the January 1948 demolitions and the shooting of 12 Jan 1948), long before the peak period.)
+- **Date of the record:** 1948-01-16 (events of 15 Jan 1948)
+- **Files:**
+  - `lead-l0676-n3-bb3083dc.jpg` (in `local/`, not in git): Full-size scan of leaf n3 of Wah Kiu Yat Po, 16 Jan 1948 (local news page with the relief, Macau delegation and residents' association items); https://archive.org/download/NPWK19480116/page/n3.jpg; 5298303 bytes; SHA-256 `2313fbbc2c19af25f73cf96d33255524bd2f3f9dbb53db012fa294f98b121fa8`; licence: No licence or rights statement in the archive.org metadata (collection 'china-mail', newspapers); the newspaper keeps its copyright (https://archive.org/details/NPWK19480116)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | INFERRED: The Guangdong provincial representative 蕭次尹 (a 委員) arrived in Hong Kong on the Kowloon-Canton train on 15 January 1948, to give relief to the residents of Kowloon City and to comfort them. The date comes from 'yesterday' in the paper of 16 January. | "救濟及慰問九龍城居民代表蕭委員次尹，昨日乘廣九車抵港" (Committee member 蕭次尹, representative for the relief and comfort of the Kowloon City residents, arrived in Hong Kong yesterday by the Kowloon-Canton train.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | INFERRED: Staff came with him, among them 侯本珍, and men of the provincial information office (省新聞處) and the social affairs office (社會處). The print of the other names is blurred. | "偕行者有隨員侯本珍" (Those who came with him included the attendant 侯本珍.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | At Tsim Sha Tsui station he told the paper that the people of all Guangdong knew of the Kowloon City affair and were angry about it. | "九龍城事件，百粵人民多已群悉" (The Kowloon City affair is already known to most people of Guangdong.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | He said that on the order of the provincial government he brought relief money of 500 million in national currency (國幣) for the residents of Kowloon City. The headline gives the same sum as 振欵五億. | "係奉省政府命令，攜備賑款國幣五萬萬元，來港賑濟及慰問九龍城居民" (On the order of the provincial government, I bring relief money of 500 million national currency, to come to Hong Kong to relieve and comfort the Kowloon City residents.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | He said that, if possible, he would also look into the facts on the spot and report the truth of the affair to the government. | "倘有可能，並作實地調查與將事件真相向政府報告" (If possible, I will also investigate on the spot and report the truth of the affair to the government.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | The delegation took the ferry from Tsim Sha Tsui to the office of the Special Commissioner of the Ministry of Foreign Affairs for Guangdong and Guangxi (外交部兩廣特派員公署). The Special Commissioner 郭 (郭德華 in the photo caption) met them himself. | "代表團即乘尖沙咀輪渡往訪外交部兩廣特派員公署辦事處，郭特派員親自出迎" (The delegation at once took the Tsim Sha Tsui ferry to visit the office of the Special Commissioner of the Ministry of Foreign Affairs for the two Guangs; Special Commissioner 郭 met them in person.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | The paper says that the talks were only about how to pay out the relief money, not about diplomatic negotiation. | "所協議者，係關於發放賑款問題，並未涉及外交交涉方面" (What was agreed concerned the distribution of the relief money, and did not touch on diplomatic negotiation.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | A temporary committee of the delegation, the Bao'an county government (寶安縣政府), the Special Commissioner's office and the residents' representatives could be set up to pay out the money. | "可能由代表團會同寶安縣政府，外特處及居民代表，組織一臨時委員會，負責發放賑款工作" (Possibly the delegation, with the Bao'an county government, the Special Commissioner's office and residents' representatives, will form a temporary committee to distribute the relief money.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | A count of the people was to start on 16 January 1948. Each resident unit (居民) was to be the unit for the payment of relief. | "今日開始人口登記，以每一居民作單位，爲發放賑款標準" (Today population registration begins, with each resident as a unit, as the standard for paying relief.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | The families of the two representatives 朱 and 劉 were to get special treatment. The article does not say why. | "惟朱劉兩代表家屬，將享有特殊待遇" (But the families of the two representatives 朱 and 劉 will receive special treatment.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | INFERRED: The relief money of 500 million was in the Guangdong Provincial Bank (廣東省銀行) and could be paid at any time. The character before the quote is blurred (probably 已, 'already'). | "存廣東省銀行，臨時可以支付" (It is kept in the Guangdong Provincial Bank and can be paid out at any time.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港 | The delegation was to stay three days in Hong Kong. On 16 January the representatives were to visit the injured residents in Kowloon Hospital (九龍醫院). | "慰問代表將留港三日" (The comfort delegation will stay in Hong Kong three days.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港, hospital paragraph | INFERRED: The paper says that six people went into hospital after the events of 12 January 1948. One had a gunshot wound, and the bullet was taken out on 12 January. | "共六人，診斷結果爲槍傷者一人，子彈已于十二日取出" (Six people in all; the diagnosis found one with a gunshot wound; the bullet was removed on the 12th.) |
+| NPWK19480116, leaf n3 (local news page), top left of centre, article 救濟龍城居民省府代表抵港, hospital paragraph | INFERRED: On 15 January four of them were still in hospital. The next column says that two (二人) went home on 15 January; the two characters before 二人 are blurred (perhaps their names). | "留醫者尚有四人" (Four are still in hospital.) |
+| NPWK19480116, leaf n3, photo caption below the article | INFERRED: The photo caption names 蕭次尹, 郭德華 and 王啓後 and says that they discussed the relief of the Kowloon City compatriots. The body text names the Bao'an county head once as 寶安縣長黃啓後 and later as 王縣長; the caption gives 王啓後. | "蕭次尹郭德華及王啓後商談救濟龍城同胞辦法" (蕭次尹, 郭德華 and 王啓後 discuss ways to relieve the Kowloon City compatriots.) |
+| NPWK19480116, leaf n3, centre, article 龍城居民會進行編查戶口 | INFERRED: The residents' association (龍城居民會) met to make its organisation stronger, because its officers had been hurt or scattered when the huts were pulled down. | "辦事人或傷或散" (Its staff were either injured or scattered.) |
+| NPWK19480116, leaf n3, centre, article 龍城居民會進行編查戶口 | The association decided to divide the residents into squads: one large squad (中隊) has three small squads (小隊), and the residents choose their own squad leaders. | "將居民分爲中小隊，一中隊轄三小隊" (The residents will be divided into large and small squads, one large squad governing three small squads.) |
+| NPWK19480116, leaf n3, centre, article 龍城居民會進行編查戶口 | The paper says that all the residents had decided to keep to their first aim and not to leave. | "居民均決意一本初衷，誓不離去" (The residents are all determined to keep to their original intention and swear not to leave.) |
+| NPWK19480116, leaf n3, centre, article 龍城居民會進行編查戶口, section with the subhead 陳潮輝 有証件 | For the negotiation, the association looked for historical documents. An old City representative, 陳潮輝 (named in the subhead 陳潮輝有証件 and in the body), now living in Guangzhou (廣州), keeps documents of an earlier successful negotiation; the association sent his son to see him. | "自不能缺少充分資料及有力之歷史證件" (One cannot do without sufficient material and strong historical documents.) |
+| NPWK19480116, leaf n3, upper centre, article 澳各界慰問團到港慰問龍城同胞 | INFERRED: A comfort delegation of the Macau community came to Hong Kong to comfort the Kowloon City compatriots. The text says that the Macau side formed a support association (聲援會) on 11 January 1948. | "經於本月十一日組織聲援會" (On the 11th of this month a support association was formed.) |
+
+- **Leads:**
+  - Wah Kiu Yat Po, 15 Jan 1948 (archive.org NPWK19480115): '龍城慰問者更多 居民會今日盡發存粮避免意外損失' (named in the plan note; not read here).
+  - Reports of 17 Jan 1948 on the visit of 蕭次尹 to the injured residents in Kowloon Hospital (九龍醫院), announced for 16 Jan in this article.
+### lead-l0011-2: 香港工商日報 1946-09-15: 九龍城 治權問題 聲明 (keywords of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1946-09-15
 - **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time (1948).)
+- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
 - **Value:** low
 - **Language:** zh
 - **Access:** open
-- **Licence:** No rights field in the archive.org metadata; private upload in the 'china-mail' collection; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19480116
-- **Other links:** https://archive.org/metadata/NPWK19480116, https://archive.org/download/NPWK19480116/NPWK19480116.pdf
-- **Proof that it exists:** archive.org details page of NPWK19480116 (title '華僑日報 1948-01-16', 8 leaves): OCR headline segments '救濟龍城居民省府代表抵港振欵五億擬組會發放今日往醫院慰問傷者', '澳各界慰問團到港慰問龍城同胞', '龍城居民會進行編查戶口派代表赴省提供有力歷史證件'.
-- **What it gives (resolver's note, not checked):** The first report of the arrival of the Guangdong provincial representative with relief money (500 million, in the currency of the time) for the City residents whose huts were pulled down in January 1948, and his plan for a committee to pay it out; also the Macau delegation and the residents' association's household count.
-- **Lead:** L0676 (cited by top-china-19, china-official-records-1933-1987)
-- **Notes:** Leaf not known (the repo's item for 17 Jan read leaves n0 and n3; look at n3 first). The 15 Jan issue (NPWK19480115) has other City items: '龍城慰問者更多居民會今日盡發存粮避免意外損失'.
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 工商日報
+- **Link:** https://archive.org/details/NPKS19460915
+- **Other links:** https://archive.org/download/NPKS19460915/NPKS19460915.pdf
+- **Proof that it exists:** archive.org item NPKS19460915 (香港工商日報 1946-09-15); its description has '九龍城 治權問題 聲明'.
+- **What it gives (resolver's note, not checked):** The Chinese text of the Hong Kong Government statement of September 1946 on jurisdiction over Kowloon City, as the Chinese press printed it (INFERRED from the keywords).
+- **Lead:** L0011 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** Keyword list only; leaf not found.
+
+### lead-l0012-2: 香港工商日報 1946-09-18: 我在九龍城設治問題 外交部發言人 (keywords of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1946-09-18
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 工商日報
+- **Link:** https://archive.org/details/NPKS19460918
+- **Other links:** https://archive.org/download/NPKS19460918/NPKS19460918.pdf
+- **Proof that it exists:** archive.org item NPKS19460918 (香港工商日報 1946-09-18); its description has '我在九龍城設治問題 外交部發言人'.
+- **What it gives (resolver's note, not checked):** The Chinese text of the Foreign Ministry spokesman's statement of 17 Sep 1946 on Chinese administration in Kowloon City (INFERRED from the keywords).
+- **Lead:** L0012 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** Keyword list only; leaf not found.
+
+### lead-l0013-1: 廣州掀起排英怒潮 - 援助九龍城難胞 (Toronto 醒華日報 clipping, 香港英合眾社 dispatch)
+
+- **Creator:** Shing Wah Daily (醒華日報), Toronto (clipping)
+- **Date:** 1948-01-16
+- **Kind:** press
+- **Class:** primary (A news report of the time (January 1948), printed in an overseas Chinese paper in Toronto; it reprints Hong Kong dispatches, like china-17 of the same collection.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** 'Digital reproduction of this material has been granted to the University of Toronto Libraries by the copyright holder. These images may be used for personal and educational/research purposes.' (Rights Information on the item page)
+- **Link:** https://collections.library.utoronto.ca/view/rclc-hkl:xhrb_article0138_B11_1948-01-16
+- **Other links:** https://iiif.library.utoronto.ca/image/v2/rclc-hkl:xhrb_article0138_B11_1948-01-16/full/1560,/0/default.jpg
+- **Proof that it exists:** Item page title '廣州掀起排英怒潮 - 援助九龍城難胞 / Collections U of T'; DATE 1948-01-16; CREATOR OR CONTRIBUTOR 香港英合眾社.
+- **What it gives (resolver's note, not checked):** A United Press dispatch from Hong Kong on the anti-British protests in Canton of January 1948 in support of the evicted Kowloon City residents (the riot that burned the British consulate on 16 Jan 1948).
+- **Lead:** L0013 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** The IIIF image URL follows the pattern of china-17 (INFERRED, not opened).
+
+### lead-l0013-2: 九龍城流血慘案詳情 - 再度拆屋居民擲石反抗 (Toronto 醒華日報 clipping; printer 香港航訊)
+
+- **Creator:** Shing Wah Daily (醒華日報), Toronto (clipping)
+- **Date:** 1948-01-26
+- **Kind:** press
+- **Class:** primary (A news report of the time (January 1948), printed in an overseas Chinese paper in Toronto; it reprints Hong Kong dispatches, like china-17 of the same collection.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** 'Digital reproduction of this material has been granted to the University of Toronto Libraries by the copyright holder. These images may be used for personal and educational/research purposes.' (Rights Information on the item page)
+- **Link:** https://collections.library.utoronto.ca/view/rclc-hkl:xhrb_article0893
+- **Proof that it exists:** Item page title '九龍城流血慘案詳情 - 再度拆屋居民擲石反抗 / Collections U of T'; PRINTER 香港航訊; DATE 1948-01-26.
+- **What it gives (resolver's note, not checked):** A Hong Kong air-mail report (香港航訊) with the details of the clash of 12 Jan 1948 in Kowloon City: the second demolition, the residents who threw stones, and the people shot.
+- **Lead:** L0013 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** The repo's lead text cuts the id after 'xhrb_article0893'; that is the full id.
+
+### lead-l0013-3: 九龍城事件 (Toronto 醒華日報 clipping)
+
+- **Creator:** Shing Wah Daily (醒華日報), Toronto (clipping)
+- **Date:** 1948-01-15
+- **Kind:** press
+- **Class:** primary (A news report of the time (January 1948), printed in an overseas Chinese paper in Toronto; it reprints Hong Kong dispatches, like china-17 of the same collection.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** 'Digital reproduction of this material has been granted to the University of Toronto Libraries by the copyright holder. These images may be used for personal and educational/research purposes.' (Rights Information on the item page)
+- **Link:** https://collections.library.utoronto.ca/view/rclc-hkl:xhrb_article0892
+- **Proof that it exists:** Item page title '九龍城事件 / Collections U of T'; DATE 1948-01-15; CREATOR OR CONTRIBUTOR unknown.
+- **What it gives (resolver's note, not checked):** A report or comment on the Kowloon City incident of January 1948 (title only seen).
+- **Lead:** L0013 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** Not named in the lead: found with the collection search for 九龍城.
+
+### lead-l0475-1: 九龍城平靜無事 寶安縣長出現 (headline as OCR'd in the archive.org headline list; the last characters are uncertain)
+
+- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
+- **Date:** 1948-01-20
+- **Kind:** press
+- **Class:** primary (A Hong Kong Chinese evening paper of the day.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPKSE19480120
+- **Other links:** https://archive.org/download/NPKSE19480120/NPKSE19480120.pdf
+- **Proof that it exists:** archive.org title '工商晚報 1948-01-20'; description has '九龍城平靜無事' and '九龍城居民聯會健全組織'
+- **What it gives (resolver's note, not checked):** A report that Kowloon City was calm on 19-20 Jan 1948 and that the Bao'an (Po On) county magistrate (寶安縣長) appeared there; also a report on the organisation of the residents' association (九龍城居民聯會).
+- **Lead:** L0475 (cited by press-archives-10, hk-english-press-1899-1994)
+- **Notes:** Leaf not found (Chinese OCR unusable): read the page images. Alternative folder: hk-chinese-press-1947-1984.
+
+### lead-l0475-2: 九龍城事件談判已告中輟 / 曾接警官口頭通知今日遷出昨夜龍城空氣緊張 (headlines as OCR'd in the archive.org headline list)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
+- **Date:** 1948-01-19
+- **Kind:** press
+- **Class:** primary (A Hong Kong Chinese daily paper of the day.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPWK19480119
+- **Other links:** https://archive.org/download/NPWK19480119/NPWK19480119.pdf
+- **Proof that it exists:** archive.org title '華僑日報 1948-01-19'; description has '九龍城事件談判已告中輟'
+- **What it gives (resolver's note, not checked):** Reports of 18-19 Jan 1948: talks on the City broken off, police word to the residents to move out that day, a tense night in the City, and the Canton support committee's threat to act if the residents were forced out.
+- **Lead:** L0475 (cited by press-archives-10, hk-english-press-1899-1994)
+- **Notes:** The repo has only the headline list (top-china-9). Leaf not found.
+
+### lead-l0475-3: 香港工商日報 1948-01-20 (headline list names 九龍城)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1948-01-20
+- **Kind:** press
+- **Class:** primary (A Hong Kong Chinese daily paper of the day.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPKS19480120
+- **Proof that it exists:** archive.org title '香港工商日報 1948-01-20'; description has '九龍城'
+- **What it gives (resolver's note, not checked):** A Kung Sheung report on Kowloon City of 19-20 Jan 1948, the days of the Po On magistrate's visit (headline not known).
+- **Lead:** L0475 (cited by press-archives-10, hk-english-press-1899-1994)
+- **Notes:** Headline and leaf not known; check the page images.

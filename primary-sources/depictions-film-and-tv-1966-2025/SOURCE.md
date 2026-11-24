@@ -188,23 +188,16 @@ shows is the reader's reading of it.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0747: 邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah (YouTube title begins '1982金馬獎最佳導演＋影帝＋劇本三冠王！...')
 
-- **Creator:** Alex Cheung Kwok-ming, director; the English name is my own knowledge, not on the page (章國明); 張鍵 (writer); 楊群 (producer); upload by 美亞影院 Cinema Mei Ah
-- **Date:** 1981
-- **Kind:** film
-- **Class:** depiction (A feature film of 1981 (fiction) with location scenes of the City of the early 1980s, according to the Hong Kong Film Archive; the location footage is a visual record of the time, the plot is not.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** Standard YouTube licence; official upload of the rights holder Mei Ah (美亞); view only
-- **Link:** https://www.youtube.com/watch?v=hosWS24AA0k
-- **Other links:** https://www.youtube.com/watch?v=Uk1CwWJU0z4, https://www.youtube.com/watch?v=YHcQAe2amqo, https://www.youtube.com/watch?v=dyJqr11HQME
-- **Proof that it exists:** Watch page title: '1982金馬獎最佳導演＋影帝＋劇本三冠王！女友被搶、慘遭革職！最殘酷寫實的臥底史詩！｜邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah'; channel '美亞影院 Cinema Mei Ah - 香港電影 (HK Movie)'; status OK; length 6061 s.
-- **What it gives (resolver's note, not checked):** Location footage of the City (lanes, buildings, people) of about 1980-1981, in an undercover-police drama; the Film Archive (2018) says it 'brings back scenes of the Kowloon Walled City'. The exact City scenes and their times in the film are not yet known.
-- **Lead:** L0747 (cited by institutions-17, depictions-film-and-tv-1966-2025)
-- **Notes:** Cantonese with Chinese subtitles. A reader must find the City scenes and give their time codes; mark each detail of the plot as fiction.
+- **Status:** Partly read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23. I read the YouTube metadata of the Mei Ah upload with yt-dlp (title, channel, upload date 15 Nov 2026, length 1:41:01, description, tags). It has no chapters and no uploader caption track. I did not play the film or hear the sound (no video tool). I saw the whole film as YouTube storyboard frames, one each 10 seconds (160x90 for the whole film; 320x180 for 0:01-0:04, 0:35-0:51, 0:54-0:56, 0:59-1:02, 1:08-1:09, 1:14-1:16 and 1:25-1:35). In these frames I did not find a scene that I can identify as the Walled City. The opening is a hawker raid in a market street; the robbery is at a fruit and vegetable wholesale market; the final mob scene (1:25-1:38) is in a public housing estate with high blocks, stairwells with metal gates and a banner of a Mutual Aid Committee ('MUTUAL AID COMMITTEE'). A short City shot (under 10 seconds) can fall between the frames, thus the Film Archive's statement stays unconfirmed. I also listed the three alt URLs: Uk1CwWJU0z4 (a 1:40:01 copy by another uploader), YHcQAe2amqo (Kani Releasing trailer, 1:11) and dyJqr11HQME (original trailer, 4:30); I did not look at them.
+- **Citation:** Alex Cheung Kwok-ming (章國明, director), Man on the Brink (邊緣人), Hong Kong, 1981, Century Motion Picture & Dist. Co. Ltd. (世紀影業有限公司, title card at 0:00:29), producer Peter K. Yang (楊群), with Eddie Chan (艾迪), Kam Hing-yin (金興賢), Callan Leung (嘉倫), Ada Fung (馮愛慈); Cantonese with burnt-in Chinese and English subtitles; YouTube upload by the channel '美亞影院 Cinema Mei Ah - 香港電影', 15 Nov 2026, 1:41:01, https://www.youtube.com/watch?v=hosWS24AA0k
+- **Class:** depiction (A fiction feature film of 1981 (the tags give '1981電影'). Location shots of the time can show real places, but the plot is fiction. In the frames that I saw, its locations are other parts of Hong Kong, not the City.)
+- **Date of the record:** 1981 (release year from the tags of the upload; not checked on the film)
+
+- **Leads:**
+  - The Hong Kong Film Archive text of 2018 that says the film 'brings back scenes of the Kowloon Walled City' (cited in the plan record; the repo does not hold it): it can name the scene.
+  - Original trailer, YouTube dyJqr11HQME ('Man on the Brink / 邊緣人 (1981) ORIGINAL TRAILER', Unseen Trailers, 4:30), not looked at.

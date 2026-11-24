@@ -295,7 +295,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+- **Status:** read: 8 of 8 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
@@ -458,17 +458,17 @@ testimony given later: tag its facts "retrospective (year)".
   - The British statement or note of about 22 January 1963 that rejects the Chinese claim to the walled city and offers talks on its administration. The report gives it, but the repo holds no text of it. The catalogued Foreign Office file FO 371/170651-170652 (File 1822, 1963; not read) can hold it.
 ### lead-l0476: 15,000 Chinese Lose Homes in Kowloon Fire
 
-- **Creator:** Associated Press, in the Evening Star (Washington, D.C.)
-- **Date:** 1950-01-11
-- **Kind:** press
-- **Class:** primary (A wire report of the day of the fire (1950).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Library of Congress, Chronicling America: no known copyright restrictions are stated for the collection; check the rights field of the item
-- **Link:** https://www.loc.gov/resource/sn83045462/1950-01-11/ed-1/?sp=4
-- **Other links:** https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.pdf, https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.xml
-- **Proof that it exists:** loc.gov item title 'Evening star (Washington, D.C.), January 11, 1950'; OCR: '15,000 Chinese Lose Homes in Kowloon Fire By the Associated Press HONG KONG, Jan. 11.—Fifteen thousand Chinese in the Kowlood [sic] district ... were left homeless today'
-- **What it gives (resolver's note, not checked):** AP report of 11 Jan 1950: about 15,000 Chinese homeless after the worst fire in the area's history; a half-mile sector of mostly squatter huts and the grounds of two film studios burned; no casualties reported; the Army helped the firemen.
-- **Lead:** L0476 (cited by press-archives-11, hk-english-press-1899-1994)
-- **Notes:** Earlier history (the Kowloon City fire of January 1950, next to the City). A short wire item: the China Mail of 12 Jan 1950 (held, press-archives-11) gives far more.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Associated Press, '15,000 Chinese Lose Homes in Kowloon Fire' (Hong Kong, 11 Jan 1950), Evening Star (Washington, D.C.), 11 January 1950, p. A-4 (image seq. 4). Library of Congress, Chronicling America, https://www.loc.gov/resource/sn83045462/1950-01-11/ed-1/?sp=4 (OCR: https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.xml)
+- **Class:** primary (A wire report of the day of the fire (11 Jan 1950). Earlier history: the Kowloon City fire of January 1950 next to the City. It stays in primary-sources/world-press-1899-1995. The China Mail report of 12 Jan 1950 (press-archives-11) gives far more.)
+- **Date of the record:** 1950-01-11
+- **Files:**
+  - not downloaded (curl exit 56): Evening Star, 11 Jan 1950, page PDF (image seq. 4) with the AP report; https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_2jones_ver02/data/sn83045462/00280606479/1950011101/0613.pdf; licence: Library of Congress, Chronicling America: the Library believes the newspapers are in the public domain or have no known copyright restrictions, but they can contain copyrighted third-party material (an AP wire report is such material). The loc.gov page was behind a bot check, thus I took the statement from plan.json, not checked. (https://www.loc.gov/resource/sn83045462/1950-01-11/ed-1/?sp=4)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | An Associated Press report dated Hong Kong, 11 January 1950, says that 15,000 Chinese in the Kowloon district were left homeless that day by the worst fire in the area's history. | "were left homeless today by the worst fire in the area's history." |
+| Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | No casualties had been reported. | "No casualties had been reported" |
+| Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | The fire swept through a half-mile sector of the mainland strip. The sector was mostly squatters' huts and the grounds of two local motion picture studios. | "The section was the site of mostly squatters' huts and the grounds of two local motion picture studios." |
+| Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | Firemen, helped by the British Army garrison, brought the fire under control. Steps were taken to keep it from spreading to other parts of the heavily populated residential Kowloon sector. | "Firefighters, assisted by the British Army garrison, brought the flames under control." |
+| Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | INFERRED: The report does not name Kowloon City or the Walled City. The China Mail of 12 Jan 1950 (press-archives-11 in the repo) places the fire in the squatter villages round the City. INFERRED: the link to the City comes from that other report, not from this one. | "15,000 Chinese Lose Homes in Kowloon Fire" |

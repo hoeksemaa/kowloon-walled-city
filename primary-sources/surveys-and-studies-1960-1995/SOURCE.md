@@ -148,7 +148,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1085: Redevelopment of Kowloon Walled City a feasibility study
@@ -307,17 +307,14 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0560: The Patterns and Causes of Police Corruption in Hong Kong (Hong Kong Journal of Public Administration, Vol. 1 No. 1, June 1979)
 
-- **Creator:** author not seen; Hong Kong Journal of Public Administration
-- **Date:** 1979-06
-- **Kind:** article
-- **Class:** primary (A study written in 1979 of police corruption in the 1960s and 1970s, at the time of the ICAC syndicate cases; a study made at the time.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/fx71gj77h
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/fx71gj77h, https://digitalrepository.lib.hku.hk/service/api/iiif/images/gm80ps410/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/fx71gj77h?q=Walled
-- **Proof that it exists:** IIIF manifest range 'The Patterns and Causes of Police Corruption in Hong Kong' (canvases 5-21); search hit on canvas gm80ps410: 'Ms. Patricia Penn's investigation concerned one retail syndicate in the Walled City (Kowloon City) area.'
-- **What it gives (resolver's note, not checked):** An account of police corruption syndicates of the 1960s-1970s, with retail (drug and vice) syndicates 'organized on a territorial basis' and one such syndicate in the Walled City (Kowloon City) area that an investigator studied. It gives the pattern of police bribes in the City before the ICAC.
-- **Lead:** L0560 (cited by citations-14, building-and-demolition-records-1968-1997)
-- **Notes:** Read the article pages 5-21, mostly canvas gm80ps40q and gm80ps410 (labels 14-15). The kind of retail syndicate (drugs, gambling or vice) is to be read.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Peter Nan-shong Lee, 'The Pattern and Causes of Police Corruption in Hong Kong', Hong Kong Journal of Public Administration, Vol. 1 No. 1 (June 1979), pp. 2-18 (the City passage on p. 12, canvas gm80ps410; note 39 on p. 18). HKU Libraries Digital Repository, https://digitalrepository.lib.hku.hk/catalog/fx71gj77h
+- **Class:** secondary (A scholarly article of 1979 that rebuilds the pattern of corruption from press reports (note 39: SCMP, 20 Aug 1971) and court cases. It belongs in secondary-sources (e.g. scholarship-history-law-society-1973-2026), not in primary-sources/surveys-and-studies-1960-1995.)
+- **Date of the record:** 1979-06 (article; the Walled City syndicate is of about 1971, INFERRED from the date of the SCMP report in note 39)
+- **Files:**
+  - `lead-l0560-default-78d5080a.jpg` (in `local/`, not in git): Page image of p. 12 of the article, with the Walled City syndicate passage; https://digitalrepository.lib.hku.hk/service/api/iiif/images/gm80ps410/full/full/0/default.jpg; 657828 bytes; SHA-256 `30e612c894adbe0d2123378c23f2e662a4bf80b265cc8012748ff4ef7fd5c0a2`; licence: HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest (https://digitalrepository.lib.hku.hk/catalog/fx71gj77h)
+- **Note:** the reader classed the whole item as secondary: its 14 facts are in the secondary twin, [`../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md`](../../secondary-sources/surveys-and-studies-1960-1995/SOURCE.md).
+
+- **Leads:**
+  - South China Morning Post, 20 August 1971: the report of Ms Patricia Penn's investigation of a drug retail syndicate ('Ah Fuk') in the Walled City (note 39 of the article)
+  - Chang Sheng, Shiang Kang Tu Ping Fan-lan Cheng-Hsiang (Hong Kong: Ch'i Shih Nien tai tze-chi ch'u pang she), pp. 134-138, and The Standard, 9 Aug 1971 (note 38, on the drug syndicates; romanised title only)

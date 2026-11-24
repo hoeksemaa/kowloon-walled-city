@@ -742,7 +742,7 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0456: The News Lens (關鍵評論網), article 172320 (title not seen)
@@ -774,17 +774,31 @@ Not read yet.
 
 ### lead-l0506: 九龍城寨：我們的空間 (in 越界書簡 / Letters Across Borders)
 
-- **Creator:** Leung Ping-kwan, 1949-2013 (也斯)
-- **Date:** 1996
-- **Kind:** book
-- **Class:** secondary (A literary essay written after the demolition (1993-1996), with a second-hand memory of a woman who grew up in the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights statement on the archive.org item; the book's copyright page says 'All rights reserved' (青文書屋, 1996)
-- **Link:** https://archive.org/details/31761076895051/page/n127
-- **Other links:** https://archive.org/details/31761076895051, https://archive.org/download/31761076895051/31761076895051.pdf
-- **Proof that it exists:** archive.org item title '越界書簡 / 也斯.' (publisher 'Xianggang : Qing wen shu wu', 1996); OCR of leaf 127 (p. 115): '九龙城案:我们的空间 巨大的钱锤重重敲碎了糙壁，九龙城寨终於还拆了。'
-- **What it gives (resolver's note, not checked):** An essay of the mid-1990s on the City as lived space after its demolition: the memory of a friend who grew up there and played in its streets; when she gave a City address at primary school, teachers and pupils looked at her strangely, and she soon moved to another school and gave another address (pp. 115-118).
-- **Lead:** L0506 (cited by repo-audit-39, reference-and-web-histories)
-- **Notes:** The second work of the lead, 〈城寨風情〉 in 也斯《遊離的詩》 (牛津大學出版社, 1995), is not online: print only. OCR is poor; read the page images.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** 也斯, 〈九龍城寨：我們的空間〉, in 也斯, 《越界書簡》 (Hong Kong: 青文書屋, 1996), pp. 115-118; first published in Wah Kiu Yat Po (《華僑日報》), 「文廊」 column, 1993. archive.org (University of Toronto, Canada-Hong Kong Library copy), https://archive.org/details/31761076895051/page/n126
+- **Class:** retrospective (An essay of 1993 by a writer who went into the City in 1987, after the clearance was announced: his own visit (the rooftops, the homes, the old men's words) is first-hand testimony, retrospective (1993). His friend's memories, the history and the general picture of the City are second-hand. The item can stay in secondary-sources/press-and-web-features-1990-2026, with a primary folder for the first-hand parts if the main agent wishes (retrospective-testimony).)
+- **Date of the record:** 1993 (first printing; book 1996); the visit described was in or soon after 1987
+- **Note:** its 14 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../primary-sources/press-and-web-features-1990-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 115, para. 3 | When she gave the City as her home address at primary school, her teachers and classmates looked at her strangely. Soon after she changed schools and gave another address. | "她小學報住城寨，引來老師和同學訝異的目光。" (When at primary school she reported that she lived in the City, it drew surprised looks from teachers and classmates.) |
+| p. 115, para. 3 | When she began dating after secondary school, she had her boyfriend stop the car in front of a building in a street far outside, pretended to live there, and walked a long way home after he left. | "她叫男朋友把車停在遠遠的外面街道的大廈前，假裝住在那兒" (she had her boyfriend stop the car in front of a building on a street far outside, pretending to live there) |
+| p. 115, para. 6 | Old people told the visitors of earlier clearance attempts: in 1936 there were protests and nothing was pulled down; in 1948 the riot police came out and the villagers threw stones at them. | "一九三六年，抗議了，結果沒拆；一九四八年，防暴隊也出動了，村民向他們擲石頭。" (1936: they protested and in the end nothing was demolished; 1948: the riot squad came out too, and villagers threw stones at them.) |
+| p. 116, para. 1 | The essay says that in 1962 the Hong Kong Government again announced a clearance, and China protested strongly and asked that all removals stop. | "一九六二年香港政府再宣布要清拆，中國向英方作出嚴重抗議" (In 1962 the Hong Kong Government again announced a clearance; China made a serious protest to Britain) |
+| p. 116, para. 2 | In 1987 China did not protest; its Foreign Ministry expressed 'full understanding'. The author guesses that this was one of the tacit agreements of both sides as 1997 came near. | "這次中方沒有再抗議，外交部表示「充分的理解」" (This time the Chinese side did not protest again; the Foreign Ministry expressed 'full understanding'.) |
+| p. 116, para. 4 | The author says that ordinary people worried most about survival: was the compensation enough to rent the same space outside and keep earning a living? Most residents seemed to want to keep their home. | "賠償的錢，夠在外面租回同樣的空間來繼續謀生嗎？" (Is the compensation money enough to rent the same space outside and go on making a living?) |
+| p. 116, para. 5 | An old cannon left by the roadside told visitors that in the last century the place was a trading pier and a defence post. The wall's foundation stones were later used to build the airport. | "城牆的基石，用了來建機場" (the foundation stones of the city wall were used to build the airport) |
+| p. 116, para. 6 | The author notes street names: Lo Yan Street (老人街) leads to an old people's home, and Tai Chang Street (大井街) really has a big well (大井, 'big well'). Kwong Ming Street (光明街), with brightly lit shops, was once the main source of heroin. | "老人街連着老人院，大井街真是有大井……燈火通明的店鋪，過去是白粉的主要供應地" (老人街 (Lo Yan Street) joins the old people's home, 大井街 (Tai Chang Street) really has a big well... brightly lit shops, once the main supply place of heroin) |
+| p. 116, para. 6 | The author lists the mixed life of the City: vice, gambling and drugs had their turf; prostitutes on one side, a priest preaching and handing out milk powder to the poor on the other; social workers counselling; addicts squatting on stairs smoking. | "妓女在一邊出沒，另一邊有神父講道、給貧民派奶粉。社工正在進行輔導工作；吸毒的人蹲在梯間吞雲吐霧。" (Prostitutes about on one side; on the other a priest preaching and giving out milk powder to the poor. Social workers counselling; drug users squatting in the stairwells, puffing smoke.) |
+| p. 116, para. 6 | A cinema that showed family films became a strip-show venue at night. | "放映老幼咸宜電影的戲院，晚上變成表演脫衣舞的場所。" (The cinema that showed films for all ages became a place for striptease at night.) |
+| p. 116, para. 7 | The author says that in recent years (before 1993) the shady trades were less rampant, and most people made an honest living. Fish-ball and pig's-blood businesses did well: dirty-looking work whose products were favourite snacks across Hong Kong. | "魚蛋和豬血的生意總那麼好，看來那麼骯髒的工作，最後做出來的產品卻是全港大街小巷特別受歡迎的美味小吃。" (The fish-ball and pig's-blood trade was always so good; work that looked so dirty, yet its products were delicious snacks especially popular in streets and lanes all over Hong Kong.) |
+| pp. 116-117 | There were many dentists: doctors from the mainland without a formal licence could hang out a sign here. | "這兒也特別多牙醫……從國內出來沒有正式執照的醫生可以在這裏掛牌" (There were especially many dentists here... doctors from the mainland without a formal licence could hang out a shingle here) |
+| p. 117, para. 3 | The author did not go back to the City for several years after the visit. His friend later left Hong Kong and said that she would never come back. | "我的朋友已經離開了香港，說再也不要回來。" (My friend has left Hong Kong and said she never wants to come back.) |
+| p. 117, para. 5 | He says that in the years of the removal the disputes were not settled and the protests had not died down (1993). | "這幾年城寨遷拆引起的糾紛還未解決、抗議的聲音還未平伏下來。" (These years the disputes caused by the City's removal are still unresolved; the voices of protest have not yet died down.) |
+| p. 118, end note | The essay was first published in Wah Kiu Yat Po (華僑日報), in its 「文廊」 column, in 1993. | "原刊《華僑日報》「文廊」，一九九三年" (First published in 華僑日報, 'Wen Lang' column, 1993) |
+
+- **Leads:**
+  - Wah Kiu Yat Po (華僑日報), 「文廊」 column, 1993: the first printing of 也斯's essay 〈九龍城寨：我們的空間〉
+  - The installation exhibition 「城寨城債」 in the theatre of the City Contemporary Dance Company (城市當代舞蹈團), with objects taken from the sealed City (about 1992-1993; date not given)
+  - 也斯, 〈城寨風情〉, in 《遊離的詩》 (Oxford University Press (牛津大學出版社), 1995): print only (named in plan.json)

@@ -608,40 +608,348 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0474: China Mail 1948-01-14 (p. 2: 'Frivolous Legal Submission' / 'Kowloon City Men Sentenced', continued p. 12; front page: Walled City visit and relief)
 
-- **Creator:** China Mail (Hong Kong)
-- **Date:** 1948-01-14
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** China Mail (Hong Kong), 14 January 1948: 'Chinese Protests: Kowloon City Incident Taken Up Here And In Nanking' / 'Issue Is Referred To London' (p. 1); 'Frivolous Legal Submission': 'Kowloon City Men Sentenced' and 'Counsel Retire From Case' (p. 2, continued p. 12); Readers' Letters, 'Kowloon City' (p. 12). https://archive.org/details/NPCM19480114
+- **Class:** primary (A Hong Kong English daily of the time (14 Jan 1948), reporting the events of 12-13 Jan 1948 and the court hearing of 13 Jan 1948. Earlier history (the 1948 evictions), not the 1980s. It stays in primary-sources/hk-english-press-1899-1994.)
+- **Date of the record:** 1948-01-14
+- **Files:**
+  - `lead-l0474-n0-c2b32218.jpg` (in `local/`, not in git): China Mail, 14 Jan 1948, p. 1 page image (Kowloon City protests, relief, PWD notice); https://archive.org/download/NPCM19480114/page/n0.jpg; 3976050 bytes; SHA-256 `68bc9271390e176540dffa6feb5d646c237923236698c2dbc4de5d41beb712cb`; licence: No rights statement on the archive.org item (collection china-mail) (https://archive.org/details/NPCM19480114)
+  - `lead-l0474-n1-aa5dc937.jpg` (in `local/`, not in git): China Mail, 14 Jan 1948, p. 2 page image (court report on the two Kowloon City men); https://archive.org/download/NPCM19480114/page/n1.jpg; 4601132 bytes; SHA-256 `3bc420ad30050dff53f5f69ed5fd0a213ce195c502739212134ef1a58c15f35f`; licence: No rights statement on the archive.org item (collection china-mail) (https://archive.org/details/NPCM19480114)
+  - `lead-l0474-n11-df16d62d.jpg` (in `local/`, not in git): China Mail, 14 Jan 1948, p. 12 page image (continuation of the court report; reader's letter); https://archive.org/download/NPCM19480114/page/n11.jpg; 4578416 bytes; SHA-256 `9fe90f570096efc871e32c03678f1cd0e2376cec6a635e62d4eb3459b841d75c`; licence: No rights statement on the archive.org item (collection china-mail) (https://archive.org/details/NPCM19480114)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-english-press-1899-1994/SOURCE.md`](../../secondary-sources/hk-english-press-1899-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | On Monday 12 January 1948 one man was seriously injured and five others went to hospital. The police fired warning shots and used tear gas to break up a crowd that threw stones at them. | "On Monday, one man was seriously injured and five others admitted to hospital when the Police were forced to fire warning shots and use tear gas" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | On 13 January 1948 Mr T. W. Kwok, Special Commissioner of the Chinese Ministry of Foreign Affairs for Kwangtung and Kwangsi, protested to the Governor, Sir Alexander Grantham, 'over the wounding of several Chinese residents in the old, walled Kowloon City'. | "In his protest "over the wounding of several Chinese residents in the old, walled Kowloon City,"" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 (from Central News) | Mr Kwok asked that no police parties be sent to Kowloon City during the negotiations. | "no Police parties be sent to Kowloon City, "so as to avoid any further unfortunate incident."" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | Three members of the Provincial Assembly of Kwangtung (Cheng Chung-chor, Li Lun-hong and Chan Hei-ching) visited the Walled City just before noon on 13 January 1948. They made a ten-minute tour of the 'affected area'. | "visited Kowloon Walled City just before noon yesterday and made a 10-minutes tour of the "affected area."" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | Relief work went on all day on 13 January 1948. The Kowloon Walled City Residents' Association gave out bread and rice to its members who stayed on the sites of their former homes. | "Bread and rice were distributed by the Kowloon Walled City Residents' Association to those members who remained on the sites of their former homes." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | The Health Authorities sprinkled lime over all the ditches and pools of stagnant water in the area. | "The Health Authorities have sprinkled lime over all ditches and pools of stagnant water." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2 | A police squad of 20 Chinese constables under a European Sub-Inspector guarded the area all the time, so that the squatters did not build their sheds again. | "A Police squad of 20 Chinese under a European Sub-Inspector was constantly on guard over the area" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 2, 'No Anxiety' | The man who had an operation on Monday was 'progressing favourably'. A Government spokesman said there was 'no anxiety' about the persons in hospital. | "The man on whom an operation was carried out on Monday "progressing favourably,"" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', cols. 2-3 | Squatters whose structures were pulled down in Kowloon City on 12 January could ask for their building materials on 15 and 16 January, 9 a.m. to 1 p.m., from a PWD representative at the Kowloon Disinfecting Station, Kwong Wah Street. | "Squatters whose structures were dismantled in Kowloon City on Jan. 12, may apply for the materials on Jan. 15 and 16" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3 | The people could take away the materials that were there and that they could show had belonged to them (a PWD announcement of 13 January 1948). | "The people will be allowed to carry away such materials as are there and can be identified as having previously belonged to them." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3, 'Imperialism' | In Shanghai on 13 January 1948 the student associations of 15 universities and colleges decided to demonstrate at the British Consulate and to collect signatures for a petition to the United Nations against British 'imperialism' in Kowloon City (United Press). | "Student associations of 15 universities and colleges resolved today to demonstrate in front of the British Consulate in Shanghai" |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3 | The students also asked the Chinese government to take 'all drastic measures, even military' to recover Hong Kong and Kowloon. | "petition the government to take "all drastic measures, even military" to recover Hong Kong and Kowloon." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3, 'More Of The Same' | Six members of the Control Yuan in Nanking asked the National Government to protect the residents of the old walled Kowloon City and to protest strongly to the British Government (Central News, 13 January 1948). | "urged the National Government to adopt adequate measures to protect the residents of the old walled Kowloon City." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3, 'Nanking's Warning' | On 13 January 1948 the Chinese Foreign Minister, Dr Wang Shih-chieh, demanded that Britain or the Hong Kong authorities stop at once all police action to evict the Chinese residents from the Walled City. He warned of 'grave consequences'. He gave a note to the British Ambassador, Sir Ralph Stevenson. | "cease immediately all further police action in evicting the Chinese residents from the Kowloon Walled City." |
+| p. 1 (leaf n0), 'Chinese Protests' / 'Issue Is Referred To London', col. 3 | The Chinese Foreign Office said that China would not recognise any British measures against the Sino-British accord of 1898. It waited for a reply to three demands: an end to police action in Kowloon, the release of the arrested residents and a place for the displaced residents (Reuter-AAP). | "the release of the Chinese residents arrested and a satisfactory arrangement to accommodate the displaced residents." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', lede | On 13 January 1948 the magistrate Mr W. A. Blair-Kerr at Kowloon sentenced Chu Pui-tong (32), a farmer, and Lau Ngai-fu (27), a partner of the Hop Hing Knitting Factory, to three months' hard labour each for incitement. | "Chu Pui-tong (32), farmer, and Lau Ngai-fu, 27-year-old partner of the Hop Hing Knitting Factory, were sentenced to three months' hard labour" |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', lede | After their defence counsel withdrew, neither man had a lawyer. The magistrate refused a remand. Both men said that they wished to appeal. | "When informed that they were found guilty both defendants declared that they wished to appeal against the verdict." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 1 | The court was full and a large crowd waited outside. Men of the Kowloon Emergency Unit patrolled the grounds, and many police stood in the corridors and in the Second Court. | "The grounds of the Kowloon Courts were patrolled by members of the Kowloon Emergency Unit" |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 1 | The Crown Counsel, Mr A. Lonsdale, said that the case arose from a magistrate's order to evict persons squatting in the area. He said the two accused, by words and actions, incited the rest to resist the police. | "This case arose when the Magistrate made an order for the eviction of certain persons who were squatting in the area concerned." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 1 | Mr Lonsdale argued that the law of the Colony runs in Kowloon City as on Hong Kong Island, because an Order-in-Council of 1899 made Kowloon City part of the Colony for all purposes. | "the law of this Colony runs in Kowloon City just as in the Island of Hong Kong." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 1 | Mr Lonsdale quoted the clause of the 1898 agreement: the Chinese officials then in the City of Kowloon would keep jurisdiction, except where it was not consistent with the defence of Hong Kong. | "It is at the same time agreed that within the City of Kowloon the Chinese officials now stationed there shall continue to exercise jurisdiction" |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2 | Mr S. A. Fowler, Land Bailiff, said that when he served copies of the magistrate's eviction order on 22 December 1947, the first accused collected the notices as fast as he gave them out. | "when he served copies of the Magistrate's eviction order on Dec. 22 last he saw first accused, who collected the notices as fast as witness distributed them." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2 | Mr H. W. E. Heath, Commanding Officer Kowloon and New Territories, said that when the police arrived at 7 a.m. on 5 January 1948, a crowd stood in the south-east corner with personal belongings and household goods. | "on arrival of the Police party at 7 a.m. on Jan. 5 there was a crowd of people standing in the south-east corner" |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2, 'Shouting' | Mr Heath said that Chu shouted to the people to move their baggage back home, picked up a stone and told the people to resist the police. | "shouting instructions to the people to move their baggage back home." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2 | Mr Heath said that the police aimed to keep order and to protect the squatters' belongings while they were taken out of the sheds. | "to protect the belongings of the squatters as they were being removed from the sheds." |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2, 'Resist' | Detective Inspector Kenneth C. Y. Siu said that he heard Chu shout to the occupants not to let the police pull the structures down, and to resist to the last. | "You occupants need not be afraid! Don't let them pull the structures down. Resist to the last!" |
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2 | Inspector Siu said that Chu shouted to the Chinese policemen not to let the foreigners use them, and said that he did not mind dying for his own land and property. | "I do not mind dying for my own land and property" |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 1 | When Mr Heath tried to arrest Chu, Chu tried to grab the officer's revolver from its holster. The witness struck Chu's hand with his truncheon. | "Chu made an attempt to grab the Police officer's revolver from the holster." |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 1 | Sub-Inspector MacDonald said that while he helped Inspector F. W. Simpson take Lau, the second defendant, to the van, Lau kept shouting: 'I am resisting on behalf of China! Kill me, never mind!' Lau also called to passers-by: 'You are Chinese! Assist me!' | "I am resisting on behalf of China! Kill me, never mind!" |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 1, 'Ta!' | Inspector F. W. Simpson said that Lau picked up a brick a few yards in front of him and shouted 'Ta' (strike). | "picked up a brick and shouted "Ta" ("Strike)!"" |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 1 | Mr Yu Kau-yu, interpreter of Kowloon C.I.D., said that Chu made a statement when charged on 6 January 1948. Chu would not sign it until Tsui Fai, a reporter of the Kwok Man Daily News, had read it over. | "refused to sign it until "it had been read over by Tsui Fai, a reporter of the "Kwok Man Daily News."" |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 1 | Lau's signed statement said that the demolition of Kowloon City must wait until China and Britain had finished their negotiations. If China gave the Walled City to Britain, the residents would not oppose the Hong Kong Government. | "If our China is willing to give the Kowloon Walled City to Great Britain, the whole of our residents will not oppose the Hong Kong Government." |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 2 | Lau said in court that this was the fourth demolition in the Walled City. He said that on the three earlier occasions the British Government had paid compensation. | "this was the fourth occasion on which a demolition of Kowloon Walled City had taken place" |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 2 | Lau said that the police had pulled down the sheds and 'illegally arrested us' while Britain and China were still negotiating. | "Lau said that the Police demolished the sheds and "illegally arrested us" while negotiations between Great Britain and China were still in progress." |
+| p. 12 (leaf n11), 'Kowloon City Men Sentenced (Continued from Page 2)', col. 2, last lines | INFERRED: In reply to Mr Lonsdale, Lau admitted that he had served in the Chinese Army, 156th Division, in the Political Section. INFERRED: the end of the column is a dark, blurred print, thus the words are partly my reading. | "he was in the Chinese Army, 156th Division" |
+| p. 2 (leaf n1), 'Counsel Retire From Case', lede | The magistrate called the defence submission on jurisdiction 'frivolous' and refused a further adjournment. | "I think the submission made on jurisdiction is frivolous and I am not prepared to grant a further adjournment on this score." |
+| p. 2 (leaf n1), 'Counsel Retire From Case', cols. 3-4 | Mr Percy Chen, Mr Peter H. Sin and Mr Alfred Y. Hon asked for an adjournment. Mr Sin said that the question was whether the Walled City was Chinese or British territory, and that it needed a close study of the Treaty and the Protocols. | "whether Kowloon Walled City was Chinese or British territory." |
+| p. 2 (leaf n1), 'Counsel Retire From Case', col. 4 | Mr Sin based his case on the Peking Convention: its reservation gave jurisdiction to the Chinese officials 'now stationed in the City of Kowloon'. The magistrate asked: 'What happened when they died?' | "Mr. Blair-Kerr: "Now stationed? What happened when they died?"" |
+| p. 2 (leaf n1), 'Counsel Retire From Case', col. 4 | Mr Lonsdale opposed the adjournment because of the recent disturbance with injuries: more delay would probably prolong the disorders and the resistance to the police. | "Further delay in hearing the case would have the probable effect of continuing the disorders and resistance to lawful actions of the Police." |
+| p. 2 (leaf n1), 'Counsel Retire From Case', col. 4 | When the court resumed at 3.15 p.m., Mr Sin said that he and Mr Chen would retire from the case. Mr Hon also withdrew. | "When the Court resumed at 3.15 p.m., Mr. Sin informed the Court that both Mr. Chen and himself were retiring from the Court." |
+| p. 12 (leaf n11), Readers' Letters, 'Kowloon City' | A reader's letter on page 12, signed Shiu Yeut-cheng, says that professional agitators had exploited the issue of Kowloon City. | "The issue of Kowloon City as you have pointed out has apparently been exploited by professional agitators." |
+
+- **Leads:**
+  - Kwok Man Daily News, January 1948: its reporter Tsui Fai read over Chu Pui-tong's statement of 6 Jan 1948 (named in the p. 12 report; Chinese title not given, thus not confirmed)
+  - Magistrate's eviction order served on 22 Dec 1947 by the Land Bailiff S. A. Fowler (named in the p. 2 report)
+### lead-l0559: Journal of Hong Kong Library Association, No. 3 (1975)
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Hong Kong Library Association, 'Hong Kong Library Association Annual Report for 1974', Journal of the Hong Kong Library Association, No. 3 (1975), p. 47 ('Advisory Committee to Small Libraries'). HKU Libraries Digital Repository, https://digitalrepository.lib.hku.hk/catalog/v118x9247 (page image https://digitalrepository.lib.hku.hk/service/api/iiif/images/31983k28x/full/full/0/default.jpg)
+- **Class:** primary (An association's annual report for 1974, printed in 1975: a record made at the time by the body whose members made the visit. It is not press: it belongs in primary-sources, but in a folder for reports and surveys (e.g. surveys-and-studies-1960-1995) rather than hk-english-press-1899-1994.)
+- **Date of the record:** 1975 (report for the year 1974; the visit was in November 1974)
+- **Files:**
+  - `lead-l0559-default-82e56a8d.jpg` (in `local/`, not in git): Page image of p. 47 of the Journal of the HKLA No. 3 (1975), with the note on the Walled City youth centre; https://digitalrepository.lib.hku.hk/service/api/iiif/images/31983k28x/full/full/0/default.jpg; 666345 bytes; SHA-256 `fd06a05e323463d68fe20b62a958891c3e843765d1c6e3b86cc49cd827bfc738`; licence: HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest (https://digitalrepository.lib.hku.hk/catalog/v118x9247)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 47 (canvas label 51, image 31983k28x), HKLA Annual Report for 1974, 'Advisory Committee to Small Libraries', right col. | In November 1974, at the request of their Programme Organiser, two librarians of the Hong Kong Library Association (Miss Au Yeung Shuk-chun and Mr M. Quinn) visited the Hong Kong Federation of Youth Groups' Centre in the Walled City. The year is 1974 because the page is in the Association's annual report for 1974. | "Miss Au Yeung and Mr. Quinn visited the Hong Kong Federation of Youth Groups' Centre in the Walled City in November" |
+| p. 47 (canvas label 51, image 31983k28x), HKLA Annual Report for 1974, 'Advisory Committee to Small Libraries', right col. | The centre of the Hong Kong Federation of Youth Groups in the Walled City had a reading room and a library in 1974. The two librarians gave advice on how to run them. | "offered advice on the running of the reading room and library there." |
+| p. 47 (canvas label 51, image 31983k28x), HKLA Annual Report for 1974, 'Advisory Committee to Small Libraries', right col. | The visit was part of the work of the Association's Advisory Committee to Small Libraries (chairman Mr M. Quinn; members Miss Au Yeung Shuk-chun and Mr Peter Yeung Kwok-hung), which gave advice to small libraries on request. | "Advisory Committee to Small Libraries Chairman, Mr. M. Quinn. Members, Miss Au Yeung Shuk-chun and Mr. Peter Yeung Kwok-hung." |
+### lead-l0007: The China Mail, 4 December 1947, front page: report on the eviction notices to the Kowloon City dwellers (headline not read)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-04
 - **Kind:** press
-- **Class:** primary (A Hong Kong daily newspaper report of the day after the hearing (1948).)
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
 - **Value:** medium
 - **Language:** en
 - **Access:** open
-- **Licence:** no rights statement on the archive.org item (collection china-mail)
-- **Link:** https://archive.org/details/NPCM19480114
-- **Other links:** https://archive.org/download/NPCM19480114/page/n1.jpg, https://archive.org/download/NPCM19480114/page/n11.jpg, https://archive.org/download/NPCM19480114/page/n0.jpg, https://archive.org/download/NPCM19480114/NPCM19480114.pdf
-- **Proof that it exists:** archive.org item title 'China Mail 1948-01-14'; OCR p. 2: 'THE CHINA MAIL, WEDNESDAY, JANUARY 14, 1948. FRIVOLOUS LEGAL SUBMISSION Kowloon City Men Sentenced Chu Pui-tong (32), farmer, and Lau ...'
-- **What it gives (resolver's note, not checked):** The sentence of 13 Jan 1948 on the two Kowloon City men for incitement during the hut demolitions of January 1948, with the defence's argument on the jurisdiction (Order-in-Council of 1898, the Peking Convention) and the magistrate's reply. The front page reports a visit of Kwangtung Provincial Assembly members to the City and relief by the Residents' Association, 13 Jan 1948.
-- **Lead:** L0474 (cited by press-archives-10, hk-english-press-1899-1994)
-- **Notes:** Earlier history (the 1948 evictions). OCR is fair; read the page images.
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471204/page/n0
+- **Other links:** https://archive.org/details/NPCM19471204, https://archive.org/download/NPCM19471204/NPCM19471204.pdf
+- **Proof that it exists:** archive.org item NPCM19471204 (China Mail 1947-12-04); full-text search 'Kowloon City' gives leaf n0: 'Kowloon’ City dwellers from the ... Contending that Kowloon ... as they were occupying Crown ... Director of Public Works'.
+- **What it gives (resolver's note, not checked):** The Public Works Department notice of 27 Nov 1947 that told the residents of the City to leave, as the English press reported it a week later: the claim that they occupied Crown land, and the City residents' answer.
+- **Lead:** L0007 (cited by china-9, china-official-records-1933-1987); also L0032
+- **Notes:** Poor OCR; read the page image. The wording of the notice can be quoted in the report (INFERRED).
 
-### lead-l0559: Journal of Hong Kong Library Association, No. 3 (1975)
+### lead-l0008-1: The China Mail, 12 December 1947, front page: the serving of the summonses on the Kowloon City residents (headline 'Summonses', not read in full)
 
-- **Creator:** Hong Kong Library Association
-- **Date:** 1975
-- **Kind:** article
-- **Class:** primary (A note in a professional journal of the time on a visit made in November (1974 or 1975) to the youth centre in the City.)
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-12
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
 - **Value:** low
 - **Language:** en
 - **Access:** open
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no licence in the IIIF manifest
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/v118x9247
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/v118x9247, https://digitalrepository.lib.hku.hk/service/api/iiif/images/31983k28x/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/v118x9247?q=Walled
-- **Proof that it exists:** HKU record title 'Journal of Hong Kong Library Association, No. 3 (1975)'; IIIF search hit on canvas 31983k28x (label 51): 'At the request of their Programme Organi- ser, Miss Au Yeung and Mr. Quinn visited the Hong Kong Federation' ... 'Walled'.
-- **What it gives (resolver's note, not checked):** A short note that two librarians, at the request of the Programme Organiser, visited the Hong Kong Federation of Youth Groups' Centre in the Walled City in November and gave advice on its reading room and library (mid-1970s). It shows a youth centre with a reading room and a library in the City.
-- **Lead:** L0559 (cited by citations-14, building-and-demolition-records-1968-1997)
-- **Notes:** Read only page image 51 (canvas 31983k28x). The year of the visit (November 1974 or 1975) is to be checked on the page.
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471212/page/n0
+- **Other links:** https://archive.org/details/NPCM19471212, https://archive.org/download/NPCM19471212/NPCM19471212.pdf
+- **Proof that it exists:** archive.org item NPCM19471212; full-text search gives leaf n0: 'Summonses' and 'The summonses were. ‘served by da:'.
+- **What it gives (resolver's note, not checked):** How and by whom the Kowloon Magistracy summonses were served on the City residents on 10-11 Dec 1947.
+- **Lead:** L0008 (cited by china-9, china-official-records-1933-1987)
+
+### lead-l0008-2: The China Mail, 13 December 1947, front page: 'Disregard summonses' (Kowloon City residents)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-13
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471213/page/n0
+- **Other links:** https://archive.org/details/NPCM19471213, https://archive.org/download/NPCM19471213/NPCM19471213.pdf
+- **Proof that it exists:** archive.org item NPCM19471213; full-text search gives leaf n0: 'have decided to disre-. gard summonses order- ing them to appear at the Kowloon Magistracy: at 11.30 a.m. on Dec. 16, to answer charges of oc- cupying . Crown'.
+- **What it gives (resolver's note, not checked):** The charge in the summonses (occupying Crown land), the hearing date (16 Dec 1947, 11.30 a.m., Kowloon Magistracy) and the residents' decision not to appear.
+- **Lead:** L0008 (cited by china-9, china-official-records-1933-1987)
+
+### lead-l0008-3: The China Mail, 17 December 1947, front page and p. 2: the hearing of the 'Kowloon Evictions' summonses (16 Dec 1947)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-17
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471217/page/n0
+- **Other links:** https://archive.org/details/NPCM19471217, https://archive.org/download/NPCM19471217/NPCM19471217.pdf
+- **Proof that it exists:** archive.org item NPCM19471217; full-text search gives leaf n0: 'there was not a single specta*~ , tor when the summonses' and '24 summonses', and leaf n1: 'Fewler, only between 700 ond: Quo are bona fide residents of the Walled City'.
+- **What it gives (resolver's note, not checked):** The court hearing of 16 Dec 1947: 24 summonses, no spectators; the Crown's figure that only 700-800 of about 2,000 people were bona fide residents of the City; the promise of 'a reasonable time' to leave.
+- **Lead:** L0008 (cited by china-9, china-official-records-1933-1987)
+- **Notes:** Poor OCR ('Fewler' for Fowler); read the page images.
+
+### lead-l0011-1: The China Mail, 17 September 1946, front page: the Hong Kong Government communiqué on the status of Kowloon City and the interview of Mr Kwok with the Governor (headline not read)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1946-09-17
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19460917/page/n0
+- **Other links:** https://archive.org/details/NPCM19460917, https://archive.org/download/NPCM19460917/NPCM19460917.pdf
+- **Proof that it exists:** archive.org item NPCM19460917; full-text search 'Kowloon City' gives leaf n0: 'Despite an official press com- munication by Government over the week-end on this subject-- maintaining that no such special treaty right existed any longer in the case of Kowloon City-- Mr. Kwok told His Excellency tha[t]'.
+- **What it gives (resolver's note, not checked):** The Hong Kong Government statement of September 1946 that the City came under British sovereignty by the Convention of 1898 and that Chinese jurisdiction there ended in 1899, quoted at length; the counter-claim that the ROC commissioner 郭德華 (Mr T. W. Kwok) put to the Governor. Background (1898-1946), not the peak period.
+- **Lead:** L0011 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page image.
+
+### lead-l0012-1: The China Mail, 18 September 1946, front page: 'Nanking On Kowloon City' (Shanghai, 17 Sept.), with an editorial or column on the 'Kowloon bubble'; p. 2: 'Kowloon City'
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1946-09-18
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19460918/page/n0
+- **Other links:** https://archive.org/details/NPCM19460918, https://archive.org/download/NPCM19460918/NPCM19460918.pdf
+- **Proof that it exists:** archive.org item NPCM19460918; full-text search gives leaf n0: 'Nanking On Kowloon — City Shanghai, Sept. 17. At a Nanking press conference today, a spokesman of the Chin-' and '“Chink has not waived her jurisdiction over Kowloon City,”'.
+- **What it gives (resolver's note, not checked):** The statement of the ROC Foreign Ministry spokesman at Nanking on 17 Sep 1946 that China had not given up its jurisdiction over Kowloon City, and the Hong Kong view of the dispute. Background (1946).
+- **Lead:** L0012 (cited by china-17, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page images (n0, n1).
+
+### lead-l0044-1: The China Mail, 11 December 1947: Government spokesman on the eviction order for the old walled Kowloon City (headline not readable in the OCR)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-11
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471211
+- **Other links:** https://archive.org/download/NPCM19471211/NPCM19471211.pdf, https://archive.org/stream/NPCM19471211/NPCM19471211_djvu.txt
+- **Proof that it exists:** archive.org item 'China Mail 1947-12-11'; OCR: the eviction notices were 'served two weeks ago on a number of residents in the old walled' city; the order 'was purely administrative and was made in the interests of public health and safety'.
+- **What it gives (resolver's note, not checked):** The Government's grounds for the eviction order of late Nov 1947: an administrative order for public health and safety, because the huts were a menace to health and a grave fire danger; and that action was deferred pending a settlement.
+- **Lead:** L0044 (cited by top-china-13, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page images.
+
+### lead-l0044-2: Hong Kong Sunday Herald, 7 December 1947: press conference of the Kowloon City Chinese Residents Association on the eviction order (headline not readable in the OCR)
+
+- **Creator:** Hong Kong Sunday Herald
+- **Date:** 1947-12-07
+- **Kind:** press
+- **Class:** primary (A Hong Kong English weekly paper of the time; a news report of the day, with the residents' own statement.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail, newspapers)
+- **Link:** https://archive.org/details/NPSH19471207
+- **Other links:** https://archive.org/stream/NPSH19471207/NPSH19471207_djvu.txt
+- **Proof that it exists:** archive.org item 'Hong Kong Sunday Herald 1947-12-07'; OCR: 'We are living within the confines of Chinese territory and the eviction order of the Hong Kong authorities is ultra vires'.
+- **What it gives (resolver's note, not checked):** The residents' answer to the eviction order of Nov 1947: the residents of '50-odd huts', the deadline of 11 Dec for 'some 2,000 Chinese residents', the claim that the order was ultra vires, and that the authorities would not act at once.
+- **Lead:** L0044 (cited by top-china-13, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page images.
+
+### lead-l0050-1: The China Mail, 24 December 1947: Magistrate Blair-Kerr's eviction order conveyed to some 70 Kowloon City residents; Po On County census of the old walled Kowloon City (headline not readable in the OCR)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-24
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471224
+- **Other links:** https://archive.org/download/NPCM19471224/NPCM19471224.pdf, https://archive.org/stream/NPCM19471224/NPCM19471224_djvu.txt
+- **Proof that it exists:** archive.org item 'China Mail 1947-12-24'; OCR: 'Magistrate W. A. Blair-Kerr's eviction order against some 70 Kowloon City residents, summoned for unlawfully occupying Crown Land, was officially conveyed to the people concerned on Monday'.
+- **What it gives (resolver's note, not checked):** The Kowloon Magistracy eviction order of Dec 1947: the magistrate (W. A. Blair-Kerr), about 70 residents summoned for occupying Crown land, the order served on Monday 22 Dec 1947. Also: Po On County sent a man to take a census of the people of the old walled Kowloon City.
+- **Lead:** L0050 (cited by top-china-18, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page images.
+
+### lead-l0050-2: The China Mail, 20 December 1947: the City residents will resist the Kowloon eviction (headline fragments '... Will Resist', '... Kowloon — Eviction')
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1947-12-20
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day, with the residents' statement.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19471220
+- **Other links:** https://archive.org/stream/NPCM19471220/NPCM19471220_djvu.txt
+- **Proof that it exists:** archive.org item 'China Mail 1947-12-20'; OCR fragments 'Will Resist' and 'Kowloon — Eviction'; 'Any attempts to remove them from their present site will be strongly resisted, said a statement.'
+- **What it gives (resolver's note, not checked):** The statement of the Kowloon Walled City Residents Association of Dec 1947 that the Kowloon Magistrate had no right to make the eviction order and that the residents would resist removal; the report that enforcement would be deferred.
+- **Lead:** L0050 (cited by top-china-18, china-official-records-1933-1987)
+- **Notes:** Poor OCR; read the page images.
+
+### lead-l0051: The China Mail, 6 January 1948: 'Kowloon Eviction Succeeds / Only Two Attempts At Interference' (headline as read from poor OCR)
+
+- **Creator:** The China Mail, Hong Kong
+- **Date:** 1948-01-06
+- **Kind:** press
+- **Class:** primary (An English daily of Hong Kong of the time; a news report of the day after the operation.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © The China Mail
+- **Link:** https://archive.org/details/NPCM19480106
+- **Other links:** https://archive.org/download/NPCM19480106/NPCM19480106.pdf, https://archive.org/stream/NPCM19480106/NPCM19480106_djvu.txt
+- **Proof that it exists:** archive.org item 'China Mail 1948-01-06'; OCR: 'the eviction order against more than 1,000 unauthorised occupiers' ... 'under the supervision of 250 Police' ... 'by some 40 PWD coolies'; full-text hit 'was the South Gate of Kowloon City. The Police, led by a Kowloon City contingent, marched single'.
+- **What it gives (resolver's note, not checked):** The demolition of the huts in the City on 5 Jan 1948: the police and PWD force, the named officers, the route through the South Gate, the two attempts at interference, the sheds with four weaving factories, and the one injured worker taken to hospital.
+- **Lead:** L0051 (cited by top-china-18, china-official-records-1933-1987); also L0053
+- **Notes:** Poor OCR; read the page images. The repo holds the Chinese report of the same day (華僑日報 6 Jan 1948, top-china-18).
+
+### lead-l0471: KOWLOON WALLED CITY.
+
+- **Creator:** China Mail (Hong Kong)
+- **Date:** 1947-12-25
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily paper of the day, on the dispute of December 1947 before the evictions of January 1948.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPCM19471225
+- **Other links:** https://archive.org/download/NPCM19471225/page/n0.jpg, https://archive.org/download/NPCM19471225/NPCM19471225.pdf
+- **Proof that it exists:** archive.org metadata title 'China Mail 1947-12-25'; inside-search hit on page 0: 'the old walled Kowloon'
+- **What it gives (resolver's note, not checked):** A front-page report of 25 Dec 1947 on the status of the residents of the Walled City and a Chinese statement on 'a basic solution of the Kowloon City question', between the eviction order and the clearance of January 1948.
+- **Lead:** L0471 (cited by press-archives-7, hk-english-press-1899-1994); also L0483
+- **Notes:** Leaf n0. The OCR is very poor: read the page image.
+
+### lead-l0472-1: Issue Of Walled City Jurisdiction.
+
+- **Creator:** China Mail (Hong Kong)
+- **Date:** 1948-01-29
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily paper of the day, on the dispute after the clearance of January 1948.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPCM19480129
+- **Other links:** https://archive.org/download/NPCM19480129/page/n8.jpg
+- **Proof that it exists:** archive.org metadata title 'China Mail 1948-01-29'; inside-search hit on page 8: 'Issue Of Walled. City Jurisdiction'
+- **What it gives (resolver's note, not checked):** A report of 29 Jan 1948 that treats the jurisdiction of the Walled City as a separate issue from the evictions of January 1948.
+- **Lead:** L0472 (cited by press-archives-7, hk-english-press-1899-1994); also L0483
+- **Notes:** Leaf n8. The same day's paper also has 'BRITISH NOTE ON KOWLOON.' in its headline list.
+
+### lead-l0472-2: China Reiterates Claim To Walled City.
+
+- **Creator:** China Mail (Hong Kong)
+- **Date:** 1948-02-07
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily paper of the day, on the Chinese claim of February 1948.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPCM19480207
+- **Other links:** https://archive.org/download/NPCM19480207/page/n0.jpg
+- **Proof that it exists:** archive.org metadata title 'China Mail 1948-02-07'; inside-search hit on page 0: 'China Reiterates Claim To. Walled'
+- **What it gives (resolver's note, not checked):** A front-page report of 7 Feb 1948 that China again claimed sovereignty over the Kowloon Walled City; it also names a visit to the City.
+- **Lead:** L0472 (cited by press-archives-7, hk-english-press-1899-1994); also L0483
+- **Notes:** Leaf n0.
+
+### lead-l0477: JUDICIAL STATE OF KOWLOON WALLED CITY QUESTIONED. / Walled City Judicial State.
+
+- **Creator:** China Mail (Hong Kong)
+- **Date:** 1959-11-26
+- **Kind:** press
+- **Class:** primary (A court report of the day of the hearing (1959).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPCM19591126
+- **Other links:** https://archive.org/download/NPCM19591126/page/n0.jpg, https://archive.org/download/NPCM19591126/page/n9.jpg
+- **Proof that it exists:** archive.org metadata title 'China Mail 1959-11-26'; inside-search hits on page 0: 'JUDICIAL STATE OF KOWLOON WALLED CITY QUESTIONED'
+- **What it gives (resolver's note, not checked):** The defence argument of Nov 1959 in the Sin Kwai murder trial that the Hong Kong courts had no jurisdiction over the Walled City under the 1898 Convention, and the answer that the City was 'part and parcel of the Colony'. The OCR also shows a passage on bunk beds in the City.
+- **Lead:** L0477 (cited by press-archives-12, hk-english-press-1899-1994); also L0483
+- **Notes:** Leaves n0 and n9. Goes with press-archives-12 (30 Nov 1959) and gap-street-address-search-17 (the trial).
+
+### lead-l0483: Kowloon Walled City Issue. (with 'Squatters' Huts In Kowloon Destroyed.')
+
+- **Creator:** Hong Kong Telegraph
+- **Date:** 1948-07-02
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily paper of the day (1948).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no rights statement on the archive.org item; private upload in collection 'china-mail', probably of HKPL scans
+- **Link:** https://archive.org/details/NPTG19480702
+- **Other links:** https://archive.org/download/NPTG19480702/page/n0.jpg
+- **Proof that it exists:** archive.org metadata title 'Hong Kong Telegraph 1948-07-02'; inside-search hits on page 0: 'the Walled Clty issue was again'
+- **What it gives (resolver's note, not checked):** A front-page report of 2 Jul 1948 that the Walled City issue was raised again, and a report that squatters' huts in Kowloon were destroyed (the place of the huts is not yet checked).
+- **Lead:** L0483 (cited by press-archives-30, hk-english-press-1899-1994)
+- **Notes:** Leaf n0. Check if the destroyed huts were in the City.

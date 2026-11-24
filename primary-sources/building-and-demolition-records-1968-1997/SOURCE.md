@@ -152,3 +152,25 @@ testimony given later: tag its facts "retrospective (year)".
 - **Notes:** The other three matching issues of this journal are in gap-daily-services-departments.json.
 - **Reading of 2026-11-20:** it is not about the City. I used the HKU IIIF APIs (manifest mg74wm86n, 72 page images; IIIF search). 'walled' has hits only on canvas 3 (the cover note) and canvas 11 (printed p. 9): the Bulletin Today newspaper office in Intramuros, Manila, designed to 'blend into the surrounding old walled city'. I read both page images. 'kowloon city' and 'squatter' have 0 hits. The finder's guess (the towers that broke the airport height limits) is not confirmed.
 
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1090: Another big estate (News Review: Hong Kong)
+
+- **Creator:** Asian Building & Construction (news note, no byline)
+- **Date:** 1974-09
+- **Kind:** article
+- **Class:** primary (A trade-journal news note written at the time (September 1974) on an estate then about to open.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (page footer); no open licence stated
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/dj5322031
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/dj5322031, https://digitalrepository.lib.hku.hk/service/api/iiif/images/c534mn75p/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/dj5322031?q=Walled
+- **Proof that it exists:** Asian Building & Construction, September 1974, p. 8, NEWS REVIEW, HONG KONG: 'Another big estate. - Mei Tung Estate at Tung Tau Cheun Rd, Kowloon, will be ready for occupation by mid-October.'
+- **What it gives (resolver's note, not checked):** Mei Tung Estate (美東邨), on a five-acre site 'directly opposite the Kowloon Walled City' on Tung Tau Tsuen Road, begun November 1972 and ready by mid-October 1974: one block of 10 and 11 storeys, 27 shops, a 3,000 ft2 restaurant, about 500 flats for about 3,400 people, flat sizes 262-498 ft2 and monthly rents of US$34.58-64.23 for families of 5 to 10, with a photo of the blocks.
+- **Lead:** L1090 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
+- **Notes:** Surroundings, not the City: the public estate across Tung Tau Tsuen Road from the north edge. The rents are given in US dollars in the journal. maps-3 notes the estate as 'CIP Dec 74' on the 1:1000 sheet.

@@ -361,3 +361,30 @@ See the leads under each item in the primary folder.
 | Geographicus page, section 'Kowloon Walled City' | Geographicus says that the Walled City appears as 'Kowloon City' just north-west of Kai Tak. | "The Kowloon Walled City, here as 'Kowloon City' 九龍城, appears just northwest of Kai Tak Airport." |
 | Geographicus page, 'A closer look' | Geographicus says that the map marks the runway extension of Kai Tak as under construction. | "it was completing an extension of the runway (marked here as under construction)" |
 | Curtis Wright Maps page, description | Curtis Wright Maps says that Kowloon City, near the airport, is of particular interest on the map. | "Of particular interest is Kowloon City, near the airport." |
+
+### lead-l0430: Kai Tak Aerial view of Runways (Gwulo media 47370); Kai Tak Airfield Aerial Photo (Gwulo media 47371)
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Unknown photographer, 'Kai Tak Aerial view of Runways' (Gwulo media 47370) and 'Kai Tak Airfield Aerial Photo' (Gwulo media 47371), c. 1946, source given as HKPL; posted on Gwulo by Herostratus, 7 Nov 2023. https://gwulo.com/media/47370 ; https://gwulo.com/media/47371
+- **Class:** primary (Air photos taken about 1946 (a record of the time); the Gwulo date, title and comment are later (secondary). Earlier history (just after the war), of the surroundings, not the City itself. It stays in primary-sources/maps-and-aerial-photos-1889-1994; it overlaps gwulo-22, which lists the same two ids.)
+- **Date of the record:** c. 1946 (Gwulo: 1 Jan 1946, day and month approximate)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| gwulo.com/media/47370, page fields | Gwulo media 47370, 'Kai Tak Aerial view of Runways', is dated 1 Jan 1946 with the day and month approximate. Its source is given as HKPL; Herostratus uploaded it on 7 Nov 2023. | "Kai Tak Aerial view of Runways" |
+| gwulo.com/media/47370, comment 'Nice View of Kai Tak', 14 Nov 2023 | A comment on 47370 (moddsey, 14 Nov 2023) says that the photo shows the western end of Kai Tak and the shorter Runway 07/25 along the coast. | "Nice view showing the western end of Kai Tak and the shorter Runway 07/25 paralleling the coastline." |
+| gwulo.com/media/47371, page fields and file name | INFERRED: Gwulo media 47371, 'Kai Tak Airfield Aerial Photo', is dated 1 Jan 1946 with the day and month approximate; source given as HKPL, uploaded by Herostratus on 7 Nov 2023. The file name ends in 'uwants', which suggests an earlier copy on a web forum. | "kat-airfield-c1940s-uwants.jpg" |
+
+### lead-l0808-1: 1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** War Office, U.K., Hong Kong and the New Territories, 1:20,000, G.S.G.S. No. 3868 (HIND 1009), 1952 (some sheets 1949), National Library of Australia MAP G7940 s20; layer '1952.1' in the hkmaps.hk viewer, https://hkmaps.hk/ (record map:88018a6c-daec-44d2-a21c-c63348655fbb)
+- **Class:** primary (A military map made at the time (1952, with some 1949 sheets). Earlier history (1950s), not the 1980s. It stays in primary-sources/maps-and-aerial-photos-1889-1994.)
+- **Date of the record:** 1952 (some sheets 1949 edition)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk catalogue (data/map-metadata.json), record map:88018a6c-daec-44d2-a21c-c63348655fbb | The layer '1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)' is a War Office (U.K.) map of 1952 at 1:20,000, series G.S.G.S. No. 3868, with a US Yard Grid. The hkmaps.hk catalogue gives its source as the National Library of Australia (MAP G7940 s20); the copyright field is empty. | "1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)" |
+| hkmaps.hk catalogue (data/map-metadata.json), record map:88018a6c-daec-44d2-a21c-c63348655fbb, notes | The catalogue note says that for sheets 8, 12, 13, 18, 21 and 24 the missing 1952 sheet is replaced with the 1949 edition. I did not find which sheet covers Kowloon City, thus the date of the Kowloon City part (1952 or 1949) is not certain. | "note missing 1952 sheet replaced with earlier 1949 edition for sheets 8, 12, 13, 18, 21 and 24" |

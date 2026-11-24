@@ -570,3 +570,26 @@ Not read yet.
 | YouTube aJ-7SttfE_Q, moviecollectionjp, 2025-01-03, description | Mak Kwok-keung says the City was not a chaos: each building was properly built, and the narrow passages came from the dense building. | "城砦はめちゃくちゃなわけじゃない、それぞれの建物はきちんと整ってる。" (The City is not a mess; each building is properly ordered.) |
 | YouTube PtHDg3rWzn8, WEEKEND CINEMA, description | The alt URL is a 5 minute 21 second promotional tour of the set, guided by the film character 信一 (Terence Lau), by the channel WEEKEND CINEMA. | "本作の人気キャラクター・信一（テレンス・ラウ）が九龍城砦の内部をガイドするツアー動画が解禁された。" (A tour video in which the popular character 信一 (Terence Lau) guides you through the inside of Kowloon Walled City was released.) |
 | YouTube PtHDg3rWzn8, WEEKEND CINEMA, 2025-01-28, description | The set tour (alt URL) shows, as the film's makers imagine the City: one wire that carries stolen power through the City, a shop where children buy snacks after school, a shoe repairer, a char siu (叉焼) oven workshop, an injection-moulding toy factory, and a public water tap with a queue of residents. These are features of the film set, not evidence. | "生活に欠かせない公共の水道も登場し、大勢の住人が列を作り順番を待つ様子が描かれる。" (The public water tap, essential to life, also appears, with many residents queuing and waiting their turn.) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0105: Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City
+
+- **Creator:** Phil (Hong Kong and Macau Film & TV Locations blog)
+- **Date:** 2015-01-14
+- **Kind:** film
+- **Class:** depiction (Frame grabs of a fiction film shot about 1981 (a record of the street at that time, read by inference); the blog text is secondary.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (no licence named)
+- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html
+- **Other links:** http://hongkongandmacaufilmstuff.blogspot.hk/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html
+- **Proof that it exists:** Page title 'Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City'; 'By Phil at January 14, 2015'; 'The dispensary was built in 1951 and opened for business in 1952.'
+- **What it gives (resolver's note, not checked):** Two film frames of Nga Tsin Long Road (衙前塱道) beside the City, about 1981, with a road sign and the Lee Kee Memorial Dispensary; the dispensary's dates (built 1951, opened 1952).
+- **Lead:** L0105 (cited by depictions-9, depictions-film-and-tv-1966-2025)
+- **Notes:** Companion of the held post depictions-9 (15 Jan 2015).

@@ -179,3 +179,43 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - Leadership Conversations with Nicky Gumbel podcast: an extended version of the HTB interview (named in the video description, https://www.alpha.org/nickygumbelpodcast/).
   - Facing the Canon with Jackie Pullinger: a DVD sold by the Philo Trust (named in the video description).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0567: Jackie Pullinger: This formidable and fiery evangelist explains why she isn't 'driven' and does not have a 'ministry'
+
+- **Creator:** Premier Christianity magazine, The Profile podcast (interviewer Sam Hailes, from the article)
+- **Date:** 2019-01-19
+- **Kind:** testimony
+- **Class:** retrospective (First-hand testimony of Jackie Pullinger, given in 2019 about her work since 1966: retrospective (2019).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** free podcast; no licence stated
+- **Link:** https://www.premier.plus/the-profile/podcasts/episodes/jackie-pullinger-this-formidable-and-fiery-evangelist-explains-why-she-isnt-driven-and-does-not-have-a-ministry
+- **Other links:** https://pcr-od.streamguys1.com/the-profile/20230302130500-the_profile_jackie_pullinger_podcast_153851.mp3, https://pcr-rss.streamguys1.com/the-profile/the-profile.xml, https://podcasts.apple.com/us/podcast/the-profile/id1188653078
+- **Proof that it exists:** RSS item title 'Jackie Pullinger: This formidable and fiery evangelist explains why she isn't 'driven' and does not have a 'ministry'', pubDate Sat, 19 Jan 2019, duration 47:20
+- **What it gives (resolver's note, not checked):** A 47-minute interview of 2019 in which Pullinger looks back on her life since she came to Hong Kong in 1966, with the drug addicts freed through prayer; the Walled City years are likely part of it (not checked).
+- **Lead:** L0567 (cited by missions-18, pullinger-circle-1966-2026)
+- **Notes:** Audio only; a transcript must be made. The printed interview (missions-18) is likely an edit of the same recording.
+
+### lead-l0568: Nicky & Pippa Interview Jackie Pullinger on Over 55 Years of Missionary Work in Hong Kong
+
+- **Creator:** Leadership Conversations with Nicky Gumbel (Alpha; Nicky and Pippa Gumbel)
+- **Date:** 2021-02-12
+- **Kind:** testimony
+- **Class:** retrospective (First-hand testimony of Jackie Pullinger, given in 2021 about her work in the City from 1966: retrospective (2021).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** free podcast; no licence stated
+- **Link:** https://podcasters.spotify.com/pod/show/thethreadfromalpha/episodes/Nicky--Pippa-Interview-Jackie-Pullinger-on-Over-55-Years-of-Missionary-Work-in-Hong-Kong-eqb0uv
+- **Other links:** https://anchor.fm/s/3a53aaa4/podcast/play/26624415/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-1-12%2F2c2273a0-c3d2-f226-4a96-55352ef7e641.mp3, https://anchor.fm/s/3a53aaa4/podcast/rss, https://www.alpha.org/blog/leadership-conversations-with-nicky-gumbel-podcast-jackie-pullinger/
+- **Proof that it exists:** RSS item title 'Nicky & Pippa Interview Jackie Pullinger on Over 55 Years of Missionary Work in Hong Kong', pubDate Fri, 12 Feb 2021, itunes:duration 01:06:09
+- **What it gives (resolver's note, not checked):** The full 66-minute recording of which the HTB video (37:30) is a cut: Pullinger on her ministry in the Kowloon Walled City from the late 1960s, the addicts and gangs, and prayer.
+- **Lead:** L0568 (cited by missions-21, pullinger-circle-1966-2026)
+- **Notes:** Audio only. Compare with missions-21 to find the parts that the video leaves out.

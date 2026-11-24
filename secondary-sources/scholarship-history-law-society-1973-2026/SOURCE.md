@@ -907,3 +907,20 @@ Not read yet.
 | p. 182 (PDF p. 8), chronology, May, 14日 | On 14 May 1986 the government said that private housing would be in short supply for the next 15 years, with a shortage of 12,000 flats in 2001. | "個人住宅は今後15年間供給不足で，2001年には1万2000戸が不足する。" (Private housing will be in short supply for the next 15 years; in 2001 there will be a shortage of 12,000 units.) |
 | p. 182 (PDF p. 8), chronology, May, 23日 | On 23 May 1986 the MTR section from Admiralty (金鐘) to Sheung Wan (上環) opened, four months early. | "23日 地下鉄の金鐘～上環間，予定より4ヵ月早く開通。" (23rd: The MTR section between Admiralty and Sheung Wan opened four months ahead of schedule.) |
 | p. 194 (PDF p. 20), table 17 | In 1986 Hong Kong had 3,788,000 foreign tourists, and 1,147 new buildings were completed. The Hang Seng index stood at 1,960.06. | "1986 3,788 4,558* 1,147 1,960.06 123,128 9,691,488" (1986: tourists 3,788 thousand; spending per head HK$4,558 (Jan-Jun); new buildings 1,147; Hang Seng index 1,960.06; stock turnover HK$123,128 million; cheques cleared HK$9,691,488 million) |
+
+### lead-l1121: The Kowloon Walled City
+
+- **Creator:** Anthony K. K. Siu (蕭國健)
+- **Date:** 1980
+- **Kind:** article
+- **Class:** secondary (A historian's short note of 1980 on the Qing military history of the City (1668-1847), built on Qing gazetteers; not a record of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (page footer); no open licence stated
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/kh04md207
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/kh04md207, https://digitalrepository.lib.hku.hk/service/api/iiif/images/2514v7391/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/sx61m764h/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/5999tr582/full/full/0/default.jpg, https://www.jstor.org/stable/23889556
+- **Proof that it exists:** p. 139, running head 'NOTES AND QUERIES': 'THE KOWLOON WALLED CITY. The Kowloon Walled City was situated to the north of the present Kai Tak Airport. It had been the most important military base in Hong Kong during the later Ch'ing Dynasty (1644-1911).'
+- **What it gives (resolver's note, not checked):** The Qing garrison history before the walls: a watchpost 九龍墪台 of 30 guards in 1668, the Kowloon guard-station 九龍汛 of 10 men from 1682 to 1811, the Kowloon Fort 九龍砲台 of 1810 with 48 men, and the building of the Walled City 九龍寨城 in 1847, with notes to Qing sources.
+- **Lead:** L1121 (cited by studies-20, scholarship-history-law-society-1973-2026)
+- **Notes:** Printed pp. 139-141 = canvases 171-173 of the volume (Notes and Queries). Siu's two later notes, 'More about the Kowloon Walled City' (JHKBRAS 26: 265-266) and 'The cannon in the Kowloon Walled City' (JHKBRAS 27: 279-280), are probably in the same HKU series (vol. 27 is record rx919b522, which the repo already uses for lead-l0516) (INFERRED, not opened).
