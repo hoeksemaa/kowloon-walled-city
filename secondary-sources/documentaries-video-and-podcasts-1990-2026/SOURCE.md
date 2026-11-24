@@ -514,3 +514,25 @@ Not read yet.
 - **Leads:**
   - The rest of this featurette (1:04 to 3:06) is not read: read its burned-in subtitles to see whether a former resident speaks.
   - Media Asia Film, '《九龍城寨之圍城》製作特輯 - 美術細節篇', https://www.youtube.com/watch?v=dAajqrzEXEk : a search extract (plan notes) says the art department interviewed former residents; not opened.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0502: 《九龍城寨之圍城》製作特輯．美術細節篇
+
+- **Creator:** One Cool Film (YouTube channel @OneCoolFilmProduction)
+- **Date:** 2024
+- **Kind:** film
+- **Class:** depiction (A making-of featurette of the 2024 feature film Twilight of the Warriors: Walled In (九龍城寨之圍城), about its art department and sets.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** standard YouTube licence (not stated on the fetched page)
+- **Link:** https://www.youtube.com/watch?v=dAajqrzEXEk
+- **Proof that it exists:** oEmbed title '《九龍城寨之圍城》製作特輯．美術細節篇', author_name 'One Cool Film'
+- **What it gives (resolver's note, not checked):** How the film's art department rebuilt the City's lanes, shops and rooms for the 2024 film; by a search extract, it says that the team interviewed former residents (not checked). A later reconstruction, not a record of the 1980s.
+- **Lead:** L0502 (cited by top-zh-testimony-14, documentaries-video-and-podcasts-1990-2026)
+- **Notes:** Watch for the names of the former residents and the reference photos the team used. Date of upload not seen (the companion featurette top-zh-testimony-14 is of 17 Apr 2024).

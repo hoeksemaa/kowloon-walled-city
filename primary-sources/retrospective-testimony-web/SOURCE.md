@@ -1270,3 +1270,26 @@ full pages before you use these facts.
 
 - **Leads:**
   - Albert Ng's planned book about the Kowloon Walled City (Island ECC page; no title or date).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0116: Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City
+
+- **Creator:** Wilfred Chan (Asia Blog, Asia Society); interviewees Greg Girard and Ian Lambot
+- **Date:** 2014-02-07
+- **Kind:** testimony
+- **Class:** retrospective (First-hand testimony of the two photographers about their own work in the City (1986-1992), given in 2014: retrospective (2014).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** '©2025 Asia Society' on the archived page; no open licence; no noai mark seen
+- **Link:** https://web.archive.org/web/20250214104319/https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city
+- **Other links:** https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city
+- **Proof that it exists:** Wayback snapshot page title 'Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City / Asia Society'; date 'February 7th, 2014'; 'For five years starting in 1987, Canadian photojournalist Greg Girard and British architectural photographer Ian Lambot teamed up to photograph Kowloon Walled City'.
+- **What it gives (resolver's note, not checked):** Retrospective (2014) memories of the two photographers, 1986-1992: Girard's first sight of the City at night in 1986; Lambot's way of working; the hostility before Jan 1987 and the easier access after; doors open to shops, clinics, schools and factories; the alleys busy but never crowded; flats without windows; a Cathay Pacific stewardess walking in with a suitcase. Six photo captions credit Greg Girard.
+- **Lead:** L0116 (cited by top-blocked-a-7, documentaries-video-and-podcasts-1990-2026)
+- **Notes:** The live page has a Cloudflare check; fetch the Wayback snapshot. The repo already holds the photos (mplus-girard-lambot-photos) and the panel report (top-blocked-a-7).

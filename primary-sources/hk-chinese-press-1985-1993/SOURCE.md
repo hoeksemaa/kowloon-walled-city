@@ -3341,3 +3341,20 @@ testimony given later: tag its facts "retrospective (year)".
   - The Housing Department notice to City residents on compensation and rehousing, to be issued about 21 January 1987: not held.
   - The Housing Department report on the pre-clearance registration survey of the City given to the special committee on 19 January 1987: not held.
   - The second meeting of the special committee on 10 February 1987: reports of 11 February 1987 in 華僑日報 (archive.org NPWK19870211), not checked.
+
+### lead-l0263: 華僑日報 1988-11-12 (headline list: 房屋署完成五千五戶審核工作 調查城寨居民安置資格 超逾一成住戶混水摸魚)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1988-11-12
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily report of the time on the clearance.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPWK19881112
+- **Other links:** https://archive.org/metadata/NPWK19881112/metadata/description
+- **Proof that it exists:** archive.org metadata of NPWK19881112; description headline '房屋署完成五千五戶審核工作調查城寨居民安置資格超逾一成住戶混水摸魚'.
+- **What it gives (resolver's note, not checked):** The Housing Department's (房屋署) check of the rehousing eligibility of the City's households, November 1988: about 5,500 households checked, and more than one tenth found to have given false data. It gives a second account to compare with the held 大公報 report.
+- **Lead:** L0263 (cited by gap-clearance-from-below-12, hk-chinese-press-1985-1993)
+- **Notes:** Leaf not found; look at the 本港新聞 leaves. The OCR headline list has no spaces; the breaks in the title are mine.

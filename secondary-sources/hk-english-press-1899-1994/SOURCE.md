@@ -44,3 +44,15 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | p. 6, editorial | The editorial said that one of the Colony's worst cholera epidemics, just before the war, started in this district. | "one of the Colony's most serious cholera epidemics emanated from this district just before the war." |
+
+### lead-l0474: China Mail 1948-01-14 (p. 2: 'Frivolous Legal Submission' / 'Kowloon City Men Sentenced', continued p. 12; front page: Walled City visit and relief)
+
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** China Mail (Hong Kong), 14 January 1948: 'Chinese Protests: Kowloon City Incident Taken Up Here And In Nanking' / 'Issue Is Referred To London' (p. 1); 'Frivolous Legal Submission': 'Kowloon City Men Sentenced' and 'Counsel Retire From Case' (p. 2, continued p. 12); Readers' Letters, 'Kowloon City' (p. 12). https://archive.org/details/NPCM19480114
+- **Class:** primary (A Hong Kong English daily of the time (14 Jan 1948), reporting the events of 12-13 Jan 1948 and the court hearing of 13 Jan 1948. Earlier history (the 1948 evictions), not the 1980s. It stays in primary-sources/hk-english-press-1899-1994.)
+- **Date of the record:** 1948-01-14
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-english-press-1899-1994/SOURCE.md`](../../primary-sources/hk-english-press-1899-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 2 (leaf n1), 'Frivolous Legal Submission': 'Kowloon City Men Sentenced', col. 2 | Mr Lonsdale said that for the past 50 years no Chinese official had exercised jurisdiction over any matter in the New Territories or in this area. This is the Crown's statement of the history, in court. | "for the past 50 years there has been no jurisdiction exercised by any Chinese official over any matter in the New Territories or in this area." |

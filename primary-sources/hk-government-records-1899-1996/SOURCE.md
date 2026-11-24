@@ -377,7 +377,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
+- **Status:** read: 4 of 4 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0313: Laws of Hong Kong, Medical Clinics Ordinance, Chapter 343, Revised Edition 1987
@@ -531,17 +531,198 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0704: Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies
 
-- **Creator:** Colonial Secretariat, Hong Kong (author of the note not named on page 1)
-- **Date:** 1964-01-13
+- **Status:** Partly read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23. I opened Electrics-01.jpg on arquivo.pt (512 x 731 px, readable when enlarged) and read all of it. It is page 1 only: the note breaks off after para. 4(1); the rest of para. 4 and any later page are not online. The cityofdarkness.co.uk post 'POWER FOR ALL' (14 Aug 2015, in the arquivo.pt copy of the site feed) captions it 'The 1964 memo discussing the City's electrical supply'. The other images of the post (Electrics-02 to -04) are later photos of meters, not part of this note. The page does not give its file reference.
+- **Citation:** Colonial Secretariat, Hong Kong, 'Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies' (confidential), p. 1; image 'Electrics-01.jpg' in the post 'POWER FOR ALL', cityofdarkness.co.uk, 14 Aug 2015, archived by arquivo.pt: https://arquivo.pt/wayback/20180717051006id_/http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg
+- **Class:** primary (A government record made at the time (the note of a meeting of 13 Jan 1964). It stays in primary-sources/hk-government-records-1899-1996. The original is probably in GRS file HKRS163-1-3016 (INFERRED in plan.json; not checked).)
+- **Date of the record:** 1964-01-13 (meeting; the note is undated on p. 1)
+- **Files:**
+  - `lead-l0704-Electrics-01-aba95a93.jpg` (in `local/`, not in git): Image of p. 1 of the 1964 note on Kowloon City electricity supplies, as posted on cityofdarkness.co.uk (512 x 731 px); https://arquivo.pt/wayback/20180717051006id_/http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg; 237400 bytes; SHA-256 `8e5df75ab719b666912a149fe9967f0901b5b8889182a53397f622b688c448aa`; licence: No licence statement on the post or the image; a Hong Kong Government record of 1964, posted by the City of Darkness authors (https://arquivo.pt/noFrame/replay/20180717051006/http://cityofdarkness.co.uk/feed/)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (the only page online, image Electrics-01.jpg), heading | The note is a confidential record of the Colonial Secretariat, Hong Kong, of a meeting at 10 a.m. on 13 January 1964 in the Colonial Secretary's Office on the electricity supply of Kowloon City. It is stamped 'CONFIDENTIAL' and 'INDEXED'. | "Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies." |
+| p. 1 (the only page online, image Electrics-01.jpg), 'Present' | Present were the C.S., the P.A., Mr C. F. Wood, the D.P.W. and the D.S. (the note gives only these short forms). | "Present: C.S. Mr. C.F. Wood D.S. P.A. D.P.W." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 2 (unnumbered on the image) | The Colonial Secretary recalled that the plan to redevelop the area between Carpenter Road and Tung Tau Chuen Road, with the Walled City, was suspended in January 1963. | "the plan for the redevelopment of the area between Carpenter Road and Tung Tau Chuen Road (including Kowloon Walled City) was suspended in January 1963." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 2 | The plan was in abeyance but not abandoned; the time for new action had not yet come. | "It was in abeyance; it had not been abandoned; but the time for renewed action had not yet come." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 2 | The Peking Government challenged Hong Kong's jurisdiction over the Walled City. | "the Peking Government challenged our jurisdiction over the Kowloon Walled City." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 2 | The Police and others kept law and order inside the Walled City as elsewhere. But some municipal law, for example on buildings, was not enforced there. | "certain municipal law, for example in connection with buildings, was not being enforced." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 2 | The Colonial Secretary said that nothing must suggest that the government accepted the situation for ever. Large improvements to the electricity supply inside the City could carry that meaning. | "To make substantial improvements to the electricity supply within Kowloon Walled City might carry such an implication." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | Mr Wood said that inside the Walled City there were many unauthorised extensions of the Company's electricity supply. The supply went mostly through the meters, but the extensions were not authorised. | "inside the Kowloon Walled City there were many unauthorised extensions of the Company's electricity supply." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | Mr Wood said that the cables were very seriously overloaded and the fire risk was high. | "The cables were very seriously overloaded. The fire risk was high;" |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | Mr Wood said that the Company's emergency vehicle was out every night in the area to patch up the system. | "the Company's emergency vehicle was out every night in the area patching up the system." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | The Company had refused additional supplies for many months, but it could be criticised for this at any time. | "The Company had been refusing additional supplies for many months" |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | Mr Wood said that it was hard to refuse supply to the Walled City while the Diamond Hill area, with much illegal building, got more and more electricity. | "the Diamond Hill area, where there was much illegal building, was receiving increasing supplies of electricity." |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 3 | Part of the new demand for electricity in the Walled City came from the rebuilding of old buildings: taller buildings were going up, and this was expected to continue (January 1964). | "Part of the increased demand for electricity from within the Kowloon Walled City arose from the redevelopment of existing buildings there; taller buildings were going up;" |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 4(1) | The meeting agreed that China Light and Power Co. Ltd. would study how to supply the areas round the Walled City by routes that did not pass through it. | "China Light and Power Co. Ltd. would study the possibilities of supplying the areas surrounding Kowloon Walled City by alternative routes" |
+| p. 1 (the only page online, image Electrics-01.jpg), para. 4(1) | If this was possible, the cables into the Walled City would carry electricity mainly for its own residents, and the load and the fire danger would fall. This shows that in 1964 the cables to the surrounding areas passed through the City. | "cables entering Kowloon Walled City would carry electricity primarily for residents of Kowloon Walled City, and the load and fire danger would be reduced." |
+| p. 1 (the only page online, image Electrics-01.jpg), paras. 3-4 | INFERRED: Mr C. F. Wood spoke for 'the Company', which para. 4(1) names as China Light and Power Co. Ltd. INFERRED: the note does not give his post; I take him to be a CLP officer because he speaks of 'the Company's' supply and vehicle. | "Mr. Wood said that inside the Kowloon Walled City there were many unauthorised extensions of the Company's electricity supply." |
+
+- **Leads:**
+  - The rest of the note of 13 Jan 1964 (para. 4(2) onward): the original, probably in GRS HKRS163-1-3016 'Electricity supply Kowloon Walled City' (already listed in the repo's GRS catalogue notes)
+### lead-l0197: Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, pp. 268-275 (regulation 25 'Slaughter of dog or cat for food prohibited. Onus of proof.'; regulation 26 'Penalty')
+
+- **Creator:** Hong Kong Government (Governor in Council, under the Dogs and Cats Ordinance, Ordinance No. 1 of 1950); scan by HKU Libraries, Historical Laws of Hong Kong Online
+- **Date:** 1950 (revised edition; regulation 26 as amended by G.N.A. 79/51)
 - **Kind:** document
-- **Class:** primary (A confidential government note of the meeting, written at the time; reproduced as an image by Lambot and Girard in 2015.)
-- **Value:** high
+- **Class:** primary (The text of the law in force at the time of the 1961 case, printed by the government.)
+- **Value:** low
 - **Language:** en
 - **Access:** open
-- **Licence:** No licence statement; a Hong Kong Government record of 1964, posted by Ian Lambot and Greg Girard on cityofdarkness.co.uk (14 Aug 2015)
-- **Link:** https://arquivo.pt/wayback/20180717051006id_/http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg
-- **Other links:** https://arquivo.pt/noFrame/replay/20180717051006/http://cityofdarkness.co.uk/feed/, http://cityofdarkness.co.uk/wp-content/uploads/2015/08/Electrics-01.jpg
-- **Proof that it exists:** Image text: 'CONFIDENTIAL / INDEXED ... Colonial Secretariat, Hong Kong ... Note on a meeting held in the Colonial Secretary's Office at 10 a.m. on 13th January, 1964 concerning Kowloon City electricity supplies.'
-- **What it gives (resolver's note, not checked):** In January 1963 the plan to redevelop the area between Carpenter Road and Tung Tau Tsuen Road (with the City) was suspended. CLP's Mr Wood says that the City had many unauthorised extensions of the company's supply, mostly through meters, with cables 'very seriously overloaded', a high fire risk and the company's emergency vehicle out 'every night'; taller buildings raised demand. The meeting agreed that CLP would study supply by routes that did not pass through the City.
-- **Lead:** L0704 (cited by top-blocked-c-2, cityofdarkness-website-2014-2015)
-- **Notes:** Page 1 only; the rest of the note (para. 4(2) onward) is not in the image. The page does not give its file reference. INFERRED: the original is in the Colonial Secretariat confidential file HKRS163-1-3016 'ELECTRICITY SUPPLY KOWLOON WALLED CITY' (original reference 5/64, 11.6.1963 - 17.1.1964; GRS, open for reading, not digitised; listed in grs-catalogue-kwc 'Other single files to ask for'), because the meeting was on 13 Jan 1964 and the file closes on 17 Jan 1964. The post 'POWER FOR ALL' (top-blocked-c-2) shows the image.
+- **Licence:** Historical Laws of Hong Kong Online, HKU Libraries: free to read; the site's download notice limits use (not checked in detail)
+- **Link:** https://oelawhk.lib.hku.hk/archive/files/75963e1fc70e2eea794748fae4f581b4.pdf
+- **Other links:** https://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=%22Dogs+and+Cats%22&sfield=ZZ&edition=1950&no_result=50, https://oelawhk.lib.hku.hk/archive/files/d0c4becad2fd3a5b1b07ddd2c5ada2b4.pdf, https://oelawhk.lib.hku.hk/archive/files/c48c778cdfbd2f5d075c053b5ecfb2da.pdf
+- **Proof that it exists:** Scanned p. 274: '25. (1) No person shall slaughter any dog or cat for use as food whether for mankind or otherwise. (2) No person shall sell or use or permit the sale or use of the flesh of dogs and cats for food.'; p. 275: '26. ... shall be liable to a fine of one thousand dollars and to imprisonment for six months.'
+- **What it gives (resolver's note, not checked):** The law that made the 1961 dog-meat den on Tai Chang Street (大井街) an offence: no slaughter of dogs or cats for food, no sale or use of their flesh, the onus of proof on a person found with a carcass, and a maximum of $1,000 and six months. The 1964 revised edition (alt URL, not opened) carries the same regulations as in force in the 1980s (INFERRED).
+- **Lead:** L0197 (cited by gap-street-address-search-2, hk-chinese-press-1947-1984)
+- **Notes:** The PDF is a scan with no text layer (7 pages). The 1950 Ordinance itself is the second alt URL (3 pages); the 1964 edition of the Regulations is the third alt URL.
+
+### lead-l0393: Extracts from Papers relating to the Extension of the Colony of Hongkong (No. 9/99), with the report of J. H. Stewart Lockhart on the New Territory (1898)
+
+- **Creator:** Hong Kong Government (laid before the Legislative Council); J. H. Stewart Lockhart, Colonial Secretary; Colonial Office
+- **Date:** 1898-1899
+- **Kind:** document
+- **Class:** primary (Official papers and a survey report of 1898-99, made at the time of the take-over.)
+- **Value:** medium
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (other records of this series state 'In Copyright', rights reserved)
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/s752d4174
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/s752d4174, https://digitalrepository.lib.hku.hk/catalog/x059jx34v, https://digitalrepository.lib.hku.hk/service/api/iiif/images/7940fk486/full/full/0/default.jpg
+- **Proof that it exists:** Canvas 1 (p. 177): 'HONGKONG. EXTRACTS FROM PAPERS RELATING TO THE EXTENSION OF THE COLONY OF HONGKONG.' No. 9/99; Downing Street, 6th January, 1899: 'The questions of the civil administration of Kowloon city and of the extension of the northern frontier ...'
+- **What it gives (resolver's note, not checked):** Lockhart's survey of the leased territory before the take-over (1898), with, by the heritage report's quotes, the Walled City: its wall, gates and watchtowers, its 544 soldiers and 200 civilians; and the despatches of 1899 on the civil administration of Kowloon City.
+- **Lead:** L0393 (cited by hkgov-19, hk-government-records-1899-1996)
+- **Notes:** The catalogue page needs JavaScript; the IIIF manifest and the page images open without it (use full/1000,/0/default.jpg). Find the Kowloon City section of the report (about canvases 7-30) before reading. Earlier history (1898).
+
+### lead-l0395-1: Hong Kong. Public Works Department. Annual departmental report, 1936
+
+- **Creator:** Hong Kong Public Works Department
+- **Date:** 1937 (report for 1936)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/pk02kc078
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/pk02kc078
+- **Proof that it exists:** HKU search result for "walled city" "Public Works": 'Hong Kong. Public Works Department. Annual departmental report, 1936' (catalog/pk02kc078).
+- **What it gives (resolver's note, not checked):** The works of 1936 in New Kowloon; INFERRED from the 1934 report (hkgov-20): the resettlement of the Walled City's inhabitants at Chuk Un and the clearance of the City in the 1930s.
+- **Lead:** L0395 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1936). Look first at the Director's report (pp. 1-10) and the Crown Lands and Survey report (about pp. 80-95), as in hkgov-20.
+
+### lead-l0395-2: Hong Kong. Public Works Department. Annual departmental report, 1937
+
+- **Creator:** Hong Kong Public Works Department
+- **Date:** 1938 (report for 1937)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/js95dk281
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/js95dk281
+- **Proof that it exists:** HKU search result for "walled city" "Public Works": 'Hong Kong. Public Works Department. Annual departmental report, 1937' (catalog/js95dk281), first of 71 results.
+- **What it gives (resolver's note, not checked):** The works of 1937 in New Kowloon, with a mention of the walled city (INFERRED from the full-text hit: the clearance and the park plans of the late 1930s).
+- **Lead:** L0395 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1937). Page not located.
+
+### lead-l0396-1: Administrative Reports for the Year 1919
+
+- **Creator:** Hong Kong Government (departmental reports)
+- **Date:** 1920 (reports for 1919)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/3f467d12q
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/js95cv06g, https://digitalrepository.lib.hku.hk/catalog/0c488v391, https://digitalrepository.lib.hku.hk/catalog/69704967g
+- **Proof that it exists:** HKU record 'Administrative Reports for the Year 1919', 31 parts (Appendix J. New Territories; Appendix Q. Public Works; ...); it is in the search result for "walled city" "Administrative Reports".
+- **What it gives (resolver's note, not checked):** The departmental reports of 1919; one of them names a walled city (not located; INFERRED: the New Territories, Police or Public Works report).
+- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1919).
+
+### lead-l0396-2: Administrative Reports for the Year 1920
+
+- **Creator:** Hong Kong Government (departmental reports)
+- **Date:** 1921 (reports for 1920)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/1n79pd520
+- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1920' (catalog/1n79pd520), first of 7.
+- **What it gives (resolver's note, not checked):** The departmental reports of 1920 with a mention of a walled city (not located).
+- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1920). Not opened beyond the search list.
+
+### lead-l0396-3: Administrative Reports for the Year 1929
+
+- **Creator:** Hong Kong Government (departmental reports)
+- **Date:** 1930 (reports for 1929)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/sj13g930d
+- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1929' (catalog/sj13g930d).
+- **What it gives (resolver's note, not checked):** The departmental reports of 1929 with a mention of a walled city (not located); not in the lead, found by the same search.
+- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1929). Not opened beyond the search list.
+
+### lead-l0396-4: Administrative Reports for the Years 1934, 1935, 1936 and 1937
+
+- **Creator:** Hong Kong Government (departmental reports)
+- **Date:** 1935-1938
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/pk02jm424
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/2f75xj50j, https://digitalrepository.lib.hku.hk/catalog/3j338d38q, https://digitalrepository.lib.hku.hk/catalog/js95ct94w
+- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1934' (pk02jm424), 1935 (2f75xj50j), 1936 (3j338d38q), 1937 (js95ct94w).
+- **What it gives (resolver's note, not checked):** The departmental reports of 1934-1937 (Police, New Territories, Public Works and others); INFERRED: the walled-city hits can be the Public Works text of lead-l0395 and hkgov-20, or the Police or Secretariat for Chinese Affairs reports on the clearance of the 1930s.
+- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
+- **Notes:** Earlier history (1934-37). Four volumes in one candidate; not opened beyond the search list.
+
+### lead-l0399: Hong Kong. Fire Services Department. Annual departmental report, 1960-1961, 1961-1962, 1963-1964, 1964-1965, 1965-1966 and 1966-1967 (and one undated record)
+
+- **Creator:** Hong Kong Fire Services Department (Director of Fire Services)
+- **Date:** 1961-1967
+- **Kind:** document
+- **Class:** primary (Annual government reports of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on hkgov-23; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/js95d8374
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/3r07bm931, https://digitalrepository.lib.hku.hk/catalog/cr56tt45p, https://digitalrepository.lib.hku.hk/catalog/g732kx60h, https://digitalrepository.lib.hku.hk/catalog/8336pq372, https://digitalrepository.lib.hku.hk/catalog/sn00hn85x, https://digitalrepository.lib.hku.hk/catalog/7d27gh88w
+- **Proof that it exists:** HKU search result list: 'Hong Kong. Fire Services Department. Annual departmental report. 1963-1964' (catalog/js95d8374) and the other years, for the query "Fire Services Department" "Annual departmental report" "Kowloon City".
+- **What it gives (resolver's note, not checked):** The yearly fire lists and fire-cover notes of the 1960s; they name Kowloon City but not the walled city (full-text search), so any fire in the City is under a street or village name. Low value for 1986.
+- **Lead:** L0399 (cited by hkgov-23, hk-government-records-1899-1996)
+- **Notes:** Use the IIIF manifests (service/api/iiif/manifest/<id>) for the pages. Look for street names of the City (Lung Chun Road (龍津道), Tung Tau Tsuen Road (東頭村道), Sai Shing Road (西城路)) in the lists of large fires.
+
+### lead-l0465: Public Works Report for 1903 (Report of the Director of Public Works for the year 1903), Sessional Papers for the Year 1904
+
+- **Creator:** Hong Kong Public Works Department (Director of Public Works)
+- **Date:** 1904 (report for 1903)
+- **Kind:** document
+- **Class:** primary (An annual government report of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (records of this series state 'In Copyright')
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/d7920769g
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/d7920769g, https://digitalrepository.lib.hku.hk/catalog/x920pk72z
+- **Proof that it exists:** HKU record title 'Public Works Report for 1903'; breadcrumb 'Hong Kong Government Reports Online / Sessional Papers (1884-1940) / Sessional Papers for the Year 1904'; IIIF manifest with 46 canvases.
+- **What it gives (resolver's note, not checked):** Item 48 'Survey of the New Territory': the survey staff of 1903 (1 inspector, 24 surveyors, 32 Indian chain-men, about 45 Chinese coolies, per Gwulo) and the 557 sheets at 32 inches to the mile of the survey that drew the Walled City in 1903; it can say where the sheets were kept.
+- **Lead:** L0465 (cited by maps-15, maps-and-aerial-photos-1889-1994)
+- **Notes:** Find item 48 in the 46 images (use the IIIF image API, full/1000,/0/default.jpg). Earlier history (1903).

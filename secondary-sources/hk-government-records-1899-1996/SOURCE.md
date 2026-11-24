@@ -73,22 +73,42 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0543: Lands Resumption Ordinance, Chapter 124 (consolidated text with history notes)
 
-- **Creator:** Hong Kong Government (consolidated text served by FAO, FAOLEX)
-- **Date:** 1900; amended 1984 (No. 5 of 1984) and 1987 (No. 71 of 1987 s. 20); consolidated after 2001
-- **Kind:** document
-- **Class:** secondary (A later consolidated version (after the adaptations of 1998-2001); its notes date the 1984 and 1987 amendments, but its wording is not the wording of 1987.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** not stated (FAOLEX copy of Hong Kong legislation)
-- **Link:** https://faolex.fao.org/docs/pdf/hk82101.pdf
-- **Proof that it exists:** 'LANDS RESUMPTION ORDINANCE - CHAPTER 124 ... To facilitate the resumption of Government lands required for public purposes ... [14 November 1900]'; s. 5: '... shall absolutely cease. (Replaced 71 of 1987 s. 20)'
-- **What it gives (resolver's note, not checked):** The text of the resumption law under which the City was cleared, with the dates of its 1980s amendments: No. 5 of 1984 (compensation and purchase by agreement) and No. 71 of 1987 s. 20 (on resumption, the rights of the owner and of any other person in the land cease). It also gives the definition of 'owner' (the person registered or entitled to be registered in the Land Registry).
-- **Lead:** L0543 (cited by top-tna-3, scholarship-history-law-society-1973-2026)
-- **Notes:** Next step: the Land Development Corporation Ordinance (No. 71 of 1987) and the LegCo Hansard of its bill (1987-88), to check what the government said about s. 20. The 1987 wording must come from the ordinance of 1987, not from this consolidation.
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** Hong Kong, Lands Resumption Ordinance, Cap. 124 (originally No. 32 of 1900, 14 Nov 1900), consolidated text with history notes (after 2001), FAOLEX record hk82101, https://faolex.fao.org/docs/pdf/hk82101.pdf, pp. 1-12
+- **Class:** secondary (A later consolidated text of the law (after 2001, with the adaptation amendments of 1998-2000), not the record of 1984-1987. It stays in secondary-sources/hk-government-records-1899-1996. The history notes give the dates of the 1980s amendments.)
+- **Date of the record:** after 2001 (consolidation; PDF metadata 2008-10-02); the law dates from 1900, amended 1984, 1985 and 1987
+- **Files:**
+  - `lead-l0543-hk82101-661263e0.pdf` (in `local/`, not in git): FAOLEX PDF of the consolidated Lands Resumption Ordinance, Cap. 124 (12 pages, 217 KB); https://faolex.fao.org/docs/pdf/hk82101.pdf; 222316 bytes; SHA-256 `cfa677660178961f6aabe7865fbae9099529403ab6168a15a78f8a4c62e04b59`; licence: Not stated on the PDF or the FAOLEX link (https://faolex.fao.org/docs/pdf/hk82101.pdf)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| PDF p. 1, long title | The Lands Resumption Ordinance, Chapter 124, was first No. 32 of 1900, of 14 November 1900. Its long title: to facilitate the resumption of Government lands required for public purposes. | "To facilitate the resumption of Government lands required for public purposes." |
+| PDF pp. 1-12, history notes | The text is a consolidation made after 2001: it uses 'Chief Executive' and cites amendments up to No. 6 of 2001. Each section is marked with a 'Past version on 30/06/1997'. The wording of the 1980s, when the ordinance was the Crown Lands Resumption Ordinance, differs (e.g. 'Governor'). | "(Past version on 30/06/1997)." |
+| PDF p. 2, s. 2 'owner' | Section 2 defines 'owner' as the person registered or entitled to be registered in the Land Registry for the land. If that person is absent from Hong Kong, cannot be found, is bankrupt or dead, it is his agent or representative in Hong Kong. | "owner" (業主) means the person registered or entitled to be registered in the Land Registry in respect of any land sought to be resumed |
+| PDF p. 2, s. 2 'resumption for a public purpose' (a)-(b) | Section 2 says that 'resumption for a public purpose' includes taking insanitary property to build better dwellings, and taking land whose buildings, being too close to others, spoil their ventilation and make them unfit to live in. | "seriously interferes with ventilation or otherwise makes or conduces to make such other buildings to be in a condition unfit for human habitation" |
+| PDF p. 2, s. 2 (d) | INFERRED: It also includes any purpose that the Chief Executive in Council decides to be a public purpose (the Governor in Council before 1997, INFERRED from the adaptation note 3 of 2000). | "which the Chief Executive in Council may decide to be a public purpose" |
+| PDF p. 3, s. 4(1)-(2) | Section 4: a notice of resumption is published in the Gazette in English and Chinese. A copy is served on the owner if he can be found, and another notice is fixed on a conspicuous part of the land, or on each lot if practicable. | "a further notice shall be affixed upon a conspicuous part of the land to be resumed" |
+| PDF p. 3, s. 4(3) | The notice fixed to the land states its date. The land is resumed one month from that date, unless a longer period is authorised and stated. | "the land will be resumed on the expiration of 1 month from such date" |
+| PDF p. 3, s. 4A | Section 4A (added 1974, amended by No. 5 of 1984): before the land reverts, the Authority can agree with the owner to buy the land. For orders made after the Crown Lands Resumption (Amendment) Ordinance 1984 (5 of 1984), it can pay the owner's professional costs. | "the Crown Lands Resumption (Amendment) Ordinance 1984 (5 of 1984) may provide for the payment by the Authority to the owner" |
+| PDF pp. 3-4, s. 5(b) | Section 5 (replaced by No. 71 of 1987, s. 20): at the end of the month, land not bought by agreement reverts to the Government, and all the rights of the owner and of any other person in the land absolutely cease. | "all the rights of the owner, his assigns or representatives and of any other person in or over the land or any part thereof shall absolutely cease. (Replaced 71 of 1987 s. 20)" |
+| PDF pp. 4-5, s. 6(1), (3) | Section 6: within 28 days after the land reverts, the Authority writes an offer of compensation to the former owner and to registered holders of interests, or asks them to claim. A person has 28 days to accept; if there is no agreement, either side can go to the Lands Tribunal. | "Within a period of 28 days from the date on which land reverts to the Government under section 5" |
+| PDF p. 5, s. 8(3) | Section 8(3): a person who was not offered compensation must claim in writing within one year after the land reverts, or within a longer period that is allowed. | "within a period of 1 year from the date on which the land reverted to the Government" |
+| PDF p. 6, s. 10(2)(a)-(d) | Section 10(2): the Lands Tribunal sets compensation from the value of the land and buildings at the date of resumption, the value of easements, loss from severance, and loss to a business that must move from the land. | "the amount of loss or damage to a business conducted by a claimant at the date of resumption on the land resumed" |
+| PDF pp. 6-7, s. 10(2)(e) (added 5 of 1984 s. 5) | For orders made after No. 5 of 1984, compensation also covers the costs of moving from the premises and of getting other land or buildings, and professional costs. | "the amount of any expenses reasonably incurred by him in moving from any premises owned or occupied by him on the land resumed" |
+| PDF p. 7-8, s. 11(2)(a), (3)(a) | Section 11(2)-(3): if the rent was higher because the premises were used as a brothel, a gaming house or for any illegal purpose, compensation is based on the rent without that use. This rule is older than the 1980s (amended 1911-1912). | "the rental of the buildings or premises was enhanced by reason of the same being used as a brothel, or as a gaming house, or for any illegal purpose" |
+| PDF p. 8, s. 11(3)(b)-(c) | If the premises are a nuisance under the building or health laws, or in bad repair, the cost of putting them right is taken off. If they are unfit for human habitation and cannot be made fit, compensation is only the value of the land and of the building materials. | "shall, in the third case, be the value of the land and of the materials of the buildings thereon." |
+| PDF p. 8, s. 12(b), (d) | Section 12(b): no compensation is given for any use of the land that does not agree with the terms of the Government lease. Section 12(d): the value of the land is what a willing seller could expect in the open market. | "no compensation shall be given in respect of any use of the land which is not in accordance with the terms of the Government lease" |
+| PDF pp. 9-10, s. 16A(1) | Section 16A (added by No. 5 of 1984, amended by No. 62 of 1985): if an offer is not accepted, the Authority can make a provisional payment with interest while the Lands Tribunal decides. | "an amount as a provisional payment of the amount payable by virtue of such determination" |
+| PDF p. 6, s. 9 | Section 9: no action lies against the Government for loss or damage caused by a resumption under the Ordinance, except as the Ordinance provides. | "no action or suit shall lie against the Government or against any other person for any loss or damage suffered by any person as the result of the resumption" |
+| PDF p. 12, s. 20 | Section 20: when buildings are insanitary as to light and air, the Chief Executive can let the owner rebuild them instead of resuming, on conditions and with security. | "Whenever the buildings or dwellings on any land are of insanitary construction as regards conditions of light and air" |
+| PDF pp. 1-12 | INFERRED: The text does not name Kowloon Walled City. INFERRED: its link to the City (the resumption of 1987) comes from other sources in the repo, not from this text. | "LANDS RESUMPTION ORDINANCE - CHAPTER 124" |
+
+- **Leads:**
+  - Crown Lands Resumption (Amendment) Ordinance 1984 (No. 5 of 1984): the 1984 text on compensation, purchase by agreement and provisional payment
+  - Ordinance No. 62 of 1985 (amendments to s. 16A and s. 18 of the Crown Lands Resumption Ordinance)
+  - Ordinance No. 71 of 1987, s. 20 (it replaced s. 5 of the Crown Lands Resumption Ordinance: the rights of the owner and of any other person cease on resumption); plan.json names it as the Land Development Corporation Ordinance, not checked

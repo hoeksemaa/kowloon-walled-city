@@ -586,3 +586,26 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - South China Morning Post, 24 December 1985, p. 10, 'Paper Notes Questions Ji Did Not Answer' (the original).
   - Press reports of Ji Pengfei's press session in Hong Kong, 21-23 December 1985.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1160: Xu Jiatun's Memoirs on Brainstorming Session (installments No. 64-66, Hong Kong LIEN HO PAO 7-9 Jul 1993), in JPRS Report: China, JPRS-CAR-94-017
+
+- **Creator:** Xu Jiatun (許家屯); translated by the Joint Publications Research Service (JPRS)
+- **Date:** 1994-03-17
+- **Kind:** testimony
+- **Class:** retrospective (Retrospective (1993): Xu Jiatun's own memoir of the criticism made of him in the 1980s; the JPRS English translation was published in 1994.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); the JPRS translation is a US government work; the memoir text is © Xu Jiatun and Lien Ho Pao
+- **Link:** https://archive.org/details/jprs-report_jprs-car-94-017
+- **Other links:** https://archive.org/download/jprs-report_jprs-car-94-017/jprs-report_jprs-car-94-017.pdf, https://archive.org/download/jprs-report_jprs-car-94-017/jprs-report_jprs-car-94-017_djvu.txt
+- **Proof that it exists:** JPRS-CAR-94-017, 17 March 1994, contents: 'Xu Jiatun's Memoirs on Brainstorming Session /Hong Kong LIEN HO PAO 7-9 Jul]' p. 4; full-text hit on scan page 7: 'Only then did I realize the errors they cited, including such concrete examples as the Kowloon Walled City incident'.
+- **What it gives (resolver's note, not checked):** Xu's account that Ji Pengfei and others counted 'the Kowloon Walled City incident' (his visit to the City in August 1983 and his praise of its self-rule) among his 'leftist' errors: how Beijing judged the visit, about 1983-1984. One mention only.
+- **Lead:** L1160 (cited by usgov-2, us-government-records-1948-1994)
+- **Notes:** Scan pages 6-9 (printed pp. 4-7) hold the section; the City sentence is on scan page 7. Read the paragraph around it for the date and the names of those who cited the error.

@@ -317,23 +317,29 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0854: 1977 Hong Kong (Flickr album of allan56): 'Kowloon City resettlement blocks', 'Opera Stage', 'Market Place', 'Tung Tau Estate Block 23', 'checkerboard'
 
-- **Creator:** allan56 (Flickr user 9730593@N04)
-- **Date:** 1977
-- **Kind:** photo
-- **Class:** primary (Photos taken in 1977 by a foreign resident who lived near the City (scanned slides); the captions were written in 2008 and are retrospective.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** All rights reserved (Flickr, checked on 2848835778)
-- **Link:** https://www.flickr.com/photos/9730593@N04/albums/72157607166569985
-- **Other links:** https://www.flickr.com/photos/9730593@N04/2848835778/, https://www.flickr.com/photos/9730593@N04/2846646927/, https://www.flickr.com/photos/9730593@N04/2864949656/, https://www.flickr.com/photos/9730593@N04/2864957428/, https://www.flickr.com/photos/9730593@N04/2869439900/
-- **Proof that it exists:** Album page title '1977 Hong Kong / Flickr'; albums list '1977 Hong Kong 121 photos · 5,151 views'; photo 2848835778 og:title 'Kowloon City resettlement blocks'.
-- **What it gives (resolver's note, not checked):** Views of the surroundings of the City in 1977: the Tung Tau resettlement blocks (Block 23), a Chinese opera stage being set up in Kowloon City, a Kowloon City market and the Kai Tak checkerboard marker. They show the district round the City, not its inside.
-- **Lead:** L0854 (cited by top-top-flickr-1, visitor-photos-1970-1993)
-- **Notes:** Add to top-top-flickr-1 (same photographer, same year) rather than as a new item. Read the comments of each photo (counts shown, text not loaded by WebFetch).
+- **Status:** Read on 2026-11-23; a checker checked a sample of the facts on 2026-11-23.
+- **Citation:** allan56 (Flickr user 9730593@N04), album '1977 Hong Kong': 'Kowloon City resettlement blocks' (2848835778), 'Opera Stage' (2846646927), 'Market Place' (2864949656), 'Tung Tau Estate Block 23' (2864957428), 'checkerboard' (2869439900); photos of 1977, scanned and uploaded Sep 2008, with comments of 2008-2010. https://www.flickr.com/photos/9730593@N04/albums/72157607166569985
+- **Class:** primary (Photos taken in 1977 by a visitor who lived in Kowloon City (a record of the time). The captions and the photographer's comments are retrospective (2008); the comments of others are secondary. They show the district round the City (Tung Tau, Lion Rock Road, Kai Tak), not its inside. As plan.json says, add them to top-top-flickr-1 (same photographer, same album) rather than as a new item.)
+- **Date of the record:** 1977 (photos); captions and comments 2008-2010
+- **Files:**
+  - `lead-l0854-2848835778_3bea5fb823-fa66193f.jpg` (in `local/`, not in git): 'Kowloon City resettlement blocks', 1977 (500 px); https://live.staticflickr.com/3130/2848835778_3bea5fb823.jpg; 80805 bytes; SHA-256 `38b942547aac417f6d4ae2eb8762d4d0adc6604948d3681c82f9154f3b4c915e`; licence: All rights reserved (Flickr) (https://www.flickr.com/photos/9730593@N04/2848835778/)
+  - `lead-l0854-2846646927_a09777f4d9-cbe1a1d6.jpg` (in `local/`, not in git): 'Opera Stage', Tung Tau, 1977 (500 px); https://live.staticflickr.com/3135/2846646927_a09777f4d9.jpg; 83831 bytes; SHA-256 `9399ddbca446423e59462a0f96a2e81ff7f6f10bf90f1a8df1af6854196bc4bb`; licence: All rights reserved (Flickr) (https://www.flickr.com/photos/9730593@N04/2846646927/)
+  - `lead-l0854-2864949656_8d20fa3502-2184de5a.jpg` (in `local/`, not in git): 'Market Place', Kowloon City, 1977 (500 px); https://live.staticflickr.com/3264/2864949656_8d20fa3502.jpg; 87288 bytes; SHA-256 `cd297e7eb3c79cebe29356b0ee3987f7f01b42cd4d30b6c32b32487d80370dee`; licence: All rights reserved (Flickr) (https://www.flickr.com/photos/9730593@N04/2864949656/)
+  - `lead-l0854-2864957428_3fc7f84f89-c22ef1d8.jpg` (in `local/`, not in git): 'Tung Tau Estate Block 23', 1977 (500 px); https://live.staticflickr.com/3095/2864957428_3fc7f84f89.jpg; 84384 bytes; SHA-256 `d7e07b49da08ddd980436a620230b41bec691929333d5f41c7221c5c02bb2345`; licence: All rights reserved (Flickr) (https://www.flickr.com/photos/9730593@N04/2864957428/)
+  - `lead-l0854-2869439900_23c7cd8793-65099efe.jpg` (in `local/`, not in git): 'checkerboard' (Kai Tak marker), 1977 (500 px); https://live.staticflickr.com/3223/2869439900_23c7cd8793.jpg; 86990 bytes; SHA-256 `dee7e45ea9fe7f8dd9d56a853ca6bc40229329ab3350bdb5234ffd380edf88c1`; licence: All rights reserved (Flickr) (https://www.flickr.com/photos/9730593@N04/2869439900/)
+- **Note:** its 5 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/visitor-photos-1970-1993/SOURCE.md`](../../secondary-sources/visitor-photos-1970-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| album page, description | The album '1977 Hong Kong' of allan56 has 121 photos, taken with a Nikkormat FT2 on slide film. The photographer lived in Hong Kong in 1976-77, mostly in Yuen Long, Sha Tin and Kowloon City (album description, written about 2008). | "These were all taken by me with my Nikkormat FT2 on a variety of slide film" |
+| photo 2848835778, image and caption | 'Kowloon City resettlement blocks' (1977) shows long blocks with open corridors along each floor and laundry hung out over them, beside a street. The caption (2008) calls them blocks of one-room flats first built for refugee families, with community facilities, since razed. | "Blocks of 1 room apts originally built for refugee families. Community facilities." |
+| photo 2848835778, comment 2 (allan56, about 2008) | INFERRED: The photographer replied that he would not want one of the rooms next to the lavatory: 'Very stinky'. INFERRED: this suggests shared lavatories on each floor of the block. | "I wouldn't want one of the rooms next to the lavatory. Very stinky." |
+| photo 2846646927, image and caption | 'Opera Stage' (1977) shows men putting up a tall bamboo frame for a stage in Kowloon City, beside a decorated building and a resettlement block numbered 23. Caption: 'setting up the stage in Kowloon City. Hong Kong 1977'. | "setting up the stage in Kowloon City. Hong Kong 1977" |
+| photo 2846646927, comment 4 (allan56, about 2008) | The photographer says that he went back several nights later and watched a few minutes of Cantonese opera on the stage. It was a very popular event. | "I returned here several nights later to watch a few minutes of Cantonese opera on the stage. It was a very popular event." |
+| photo 2864949656, image and caption | 'Market Place' (1977) shows a crowded street market in Kowloon City, with stalls under awnings that sell sweaters and small goods, and shop signs above. Caption: 'Kowloon City. Hong Kong 1977'. | "Kowloon City. Hong Kong 1977" |
+| photo 2869439900, image, caption and comment 2 (allan56, about 2008) | 'checkerboard' (1977) shows the red-and-white checkerboard marker for Kai Tak airport on a hillside. The photographer says that he took it from his flat's balcony on Inverness Road, from where he watched old men and women do their morning exercises in the park. | "I believe I took this photo from my apartment balcony on Inverness Road." |
