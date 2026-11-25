@@ -623,3 +623,74 @@ testimony given later: tag its facts "retrospective (year)".
 - **Notes:** Found with the zh.wikisource search API for "九龍城" (22 hits). I made the URL from the title that the API gave. Not opened: the 5-hour limit stopped my call to list all pages with the prefix 香港政府新聞公報. The first finder's searches for 九龍城寨, 九龍寨城 and 九龍城砦 found no release, so the series can hold only a few years. Second top-up (2026-11-17): opened. zh.wikisource holds only this one day of the series (list=allpages with the prefix 香港政府新聞公報 gives 2 pages: the index and this day). Thus the series has no release of 1985-1993.
 - **Reading of 2026-11-21:** it is not about the City. I read the raw wikitext of the whole page (revision 5978409; 12 short releases of 28 October 1971, a stub). Only the release 九龍城停水時間 names 九龍城, and only as a district. It does not name the Walled City. I give its facts as context for the district. The transcription uses Kangxi-radical code points for some characters (⽉ ⽇ ⿓ ⽔ ⼩ ⼦); I give the quotes in the normal characters (Unicode NFKC).
 
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0494-1: 申報 1899.05 - 139 - 09377 (Shenbao, 25 May 1899 (光緒二十五年四月十六日), issue 9377)
+
+- **Creator:** Shenbao (申報), Shanghai
+- **Date:** 1899-05-25
+- **Kind:** press
+- **Class:** primary (Page images of a newspaper of the time (May 1899), which reprints a Hong Kong daily on the British occupation of 深圳 and the City area.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
+- **Link:** https://archive.org/details/shenbao-1899.05-139
+- **Proof that it exists:** archive.org advanced search: identifier shenbao-1899.05-139, title '申報 1899.05 - 139 - 09377', collection shenbao-archive
+- **What it gives (resolver's note, not checked):** The page images of the issue with the section 英據深圳, to check the gaps of the OCR text that the repo holds (top-commons-15), for May 1899.
+- **Lead:** L0494 (cited by top-commons-15, qing-records-and-treaty-1688-1899)
+- **Notes:** Use with the repo's OCR (top-commons-15-index-48877f59.txt). Earlier history (1899): less weight. Do not copy the uploader's contact details from the item metadata.
+
+### lead-l0494-2: 申報 1899.06 - 152 - 09390 (Shenbao, 7 June 1899 (光緒二十五年四月廿九日), issue 9390)
+
+- **Creator:** Shenbao (申報), Shanghai
+- **Date:** 1899-06-07
+- **Kind:** press
+- **Class:** primary (Page images of a newspaper of the time (June 1899), which reprints the Canton papers 廣州中西報 and 廣州博聞報.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
+- **Link:** https://archive.org/details/shenbao-1899.06-152
+- **Proof that it exists:** archive.org advanced search: identifier shenbao-1899.06-152, title '申報 1899.06 - 152 - 09390', collection shenbao-archive
+- **What it gives (resolver's note, not checked):** The page images of the issue with the sections 英踞深圳 and 助守虎門, to check the gaps of the OCR text that the repo holds (top-commons-15), for June 1899.
+- **Lead:** L0494 (cited by top-commons-15, qing-records-and-treaty-1688-1899)
+- **Notes:** Use with the repo's OCR (top-commons-15-index-c075fea2.txt). Earlier history (1899): less weight.
+
+### lead-l0495: 申報 1899.05 - 117 - 09355 (Shenbao, 3 May 1899 (光緒二十五年三月廿四日), issue 9355)
+
+- **Creator:** Shenbao (申報), Shanghai
+- **Date:** 1899-05-03
+- **Kind:** press
+- **Class:** primary (Page images of a newspaper of the time (May 1899): a letter from a correspondent in Guangzhou with the British order on the extension of Hong Kong.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
+- **Link:** https://archive.org/details/shenbao-1899.05-117
+- **Other links:** https://archive.org/download/shenbao-1899.05-117
+- **Proof that it exists:** archive.org metadata: title '申報 1899.05 - 117 - 09355', 14 page images in the JP2 ZIP, an image PDF and OCR files; collection shenbao-archive
+- **What it gives (resolver's note, not checked):** The page images of the issue with the section 九龍近事, to check the garbled passage of the British regulations and the clause on 九龍寨城内外 in the OCR that the repo holds (top-commons-16).
+- **Lead:** L0495 (cited by top-commons-16, qing-records-and-treaty-1688-1899)
+- **Notes:** Earlier history (1899): less weight, but the clause on 九龍寨城内外 bears on the status of the City. Do not copy the uploader's contact details from the item metadata.
+
+### lead-l0496: Convention between the United Kingdom and China, respecting an extension of Hong Kong territory, with a map; signed at Peking, June, 9, 1898 (Treaty Series, 1898 [No. 16])
+
+- **Creator:** Great Britain (Foreign Office); London: HMSO (Harrison and Sons), 1898
+- **Date:** 1898-12 (presented to Parliament December 1898; convention signed 9 June 1898)
+- **Kind:** document
+- **Class:** primary (The official British print of the treaty and its map, of 1898.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** HKU Digital Repository: License 'All rights reserved', Rights Statement 'In Copyright' (for the scan; the text of 1898 is Crown copyright, expired).
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/1831dr158
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/1831dr158, https://digitalrepository.lib.hku.hk/service/api/iiif/images/qn59rb16j/full/full/0/default.jpg
+- **Proof that it exists:** Title page (image 3): 'TREATY SERI[ES] 1898. CONVENTION between the UNITED KINGDOM AND CHINA, respecting an EXTENSION OF HONG KONG TERRITORY. [WITH A MAP.] Signed at Peking, June 9, 1898.'
+- **What it gives (resolver's note, not checked):** The official text of the Convention of 9 June 1898 with its map, in the British print of December 1898: the clause that kept Chinese jurisdiction in the City and the map that marks it. It confirms the text that the repo has from Rockhill (1904).
+- **Lead:** L0496 (cited by top-commons-17, qing-records-and-treaty-1688-1899)
+- **Notes:** The IIIF images open without JavaScript (10 images, about 2000 x 1500 px; INFERRED: image 5 (portrait, 1500 x 2061) is the map). Earlier history (1898): less weight; the repo already has the text and the map from Rockhill (top-commons-17).

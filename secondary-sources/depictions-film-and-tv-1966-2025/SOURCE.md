@@ -573,23 +573,39 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0105: Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City
 
-- **Creator:** Phil (Hong Kong and Macau Film & TV Locations blog)
-- **Date:** 2015-01-14
-- **Kind:** film
-- **Class:** depiction (Frame grabs of a fiction film shot about 1981 (a record of the street at that time, read by inference); the blog text is secondary.)
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Phil, 'Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City', Hong Kong and Macau Film & TV Locations (blog), 14 January 2015, https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html ; frames from Roaring Fire (Toei, c.1981; US release 1982)
+- **Class:** depiction (Frame grabs of a fiction film shot about 1981, which record the street at that time (read by inference); the blog text of 2015 is secondary. It fits the secondary tree, as filed.)
+- **Date of the record:** film frames c.1981 (the film's US release was 1982); blog post 2015-01-14
+- **Files:**
+  - `lead-l0105-vlcsnap-2015-01-13-12h10m51s178-b6ddae97.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): the chase on Nga Tsin Long Road, onlookers, the road sign at right; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJnORu2D0d-DSsWyI9Gb6_RtEZ-eqJ-WVTu9i12p-RkDy3OM632iFdRk68dpoDyYuNjzv6BCdyHTyKOOclZUiV00ZR5hrd2q4SDAM3lsb4dMGigO-b2TfJzObMeYmTcqtY3PE2IvzBLD0-/s1600/vlcsnap-2015-01-13-12h10m51s178.jpg; 55857 bytes; SHA-256 `e9f78af215b6edca159858fa8221fd4fb39ab6318153e2f3f642cc5bbf9b8161`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grab of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html)
+  - `lead-l0105-vlcsnap-2015-01-13-12h10m58s231-909bc680.jpg` (in `local/`, not in git): Roaring Fire frame (c.1981): the sign 'Nga Tsin Long Rd' 衙前塱道, a fruit stall, a car and the low dispensary building; https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLcpZ3c8rDNIqnM_TtTneFZUwsixWTB9-B1_Drf8AsLHtF2-bWeEsA8XDdysCH3aIVnTmc7zwFYDqJml1QtYcFKLm-xUD4ywbZ_WII3egwO2dAjqEu3elV9gmJOuzIsKMcJPJ58oi-ysn/s1600/vlcsnap-2015-01-13-12h10m58s231.jpg; 54346 bytes; SHA-256 `4cde958fcf7b886f1c7c7cd662db6aac7f78a7713a02bdd86a9d77867155a00a`; licence: Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (frame grab of a copyrighted film; no open licence) (https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| blog post of 14 Jan 2015, text | The blog says that two frames from the chase at the start of Roaring Fire show Nga Tsin Long Road in Kowloon City. The blogger found the place from a road sign in the frame and from Street View. | "a road sign that looks as though it says Nga Tsin Long Road" |
+| frames 1 and 2, background; blog post of 14 Jan 2015, text | Behind the street in both frames stands a low, flat-roofed, pale building with dark trim and rows of windows, among trees. The blog identifies it as the Lee Kee Memorial Dispensary, and says that it looks almost unchanged after 30 years. | "The low rise grey building with black trim at the back is the Lee Kee Memorial Dispensary." |
+| blog post of 14 Jan 2015, text | The blog places the Lee Kee Memorial Dispensary at the northern end of Nga Tsin Long Road, where it joins Carpenter Road. | "This is at the northern end of the road where it joins onto Carpenter Road." |
+| blog post of 14 Jan 2015, text | The blog says that the dispensary was built in 1951 and opened in 1952. | "The dispensary was built in 1951 and opened for business in 1952." |
+### lead-l0737: 《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大
+
+- **Creator:** Nic Wong, JET Magazine; interview with Yu Yi (余兒)
+- **Date:** 2024-04-27
+- **Kind:** article
+- **Class:** secondary (A 2024 magazine interview with the author of the novel behind the film, about fiction and the film set; the one childhood memory (walking past the City's edge) is retrospective and slight.)
 - **Value:** low
-- **Language:** en
+- **Language:** zh
 - **Access:** open
-- **Licence:** Blog footer: 'All Film/TV Images used "Fair Use". Copyright is not mine..' (no licence named)
-- **Link:** https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html
-- **Other links:** http://hongkongandmacaufilmstuff.blogspot.hk/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html
-- **Proof that it exists:** Page title 'Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City'; 'By Phil at January 14, 2015'; 'The dispensary was built in 1951 and opened for business in 1952.'
-- **What it gives (resolver's note, not checked):** Two film frames of Nga Tsin Long Road (衙前塱道) beside the City, about 1981, with a road sign and the Lee Kee Memorial Dispensary; the dispensary's dates (built 1951, opened 1952).
-- **Lead:** L0105 (cited by depictions-9, depictions-film-and-tv-1966-2025)
-- **Notes:** Companion of the held post depictions-9 (15 Jan 2015).
+- **Licence:** Not stated in the text I fetched (JET Magazine web site).
+- **Link:** https://jetmagazine.com.hk/walled-in-yuyi-interview-2024/
+- **Other links:** https://www.instagram.com/p/C6VU9JNrfCT/
+- **Proof that it exists:** Headline '《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大', 2024-04-27, byline Nic Wong; first sentence '《九龍城寨》終於搬上大銀幕！'
+- **What it gives (resolver's note, not checked):** The novelist's account of how he wrote the novel and how the manhua and the film followed; he only walked past the edge of the City as a child; the film's set at 達德學校 (temple, opera stage, cha chaan teng). Nothing on daily life in the real City.
+- **Lead:** L0737 (cited by depictions-19, depictions-film-and-tv-1966-2025)
+- **Notes:** Use only for the depiction file (the set at 達德學校), never as evidence of the real City.

@@ -589,27 +589,29 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1160: Xu Jiatun's Memoirs on Brainstorming Session (installments No. 64-66, Hong Kong LIEN HO PAO 7-9 Jul 1993), in JPRS Report: China, JPRS-CAR-94-017
 
-- **Creator:** Xu Jiatun (許家屯); translated by the Joint Publications Research Service (JPRS)
-- **Date:** 1994-03-17
-- **Kind:** testimony
-- **Class:** retrospective (Retrospective (1993): Xu Jiatun's own memoir of the criticism made of him in the 1980s; the JPRS English translation was published in 1994.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); the JPRS translation is a US government work; the memoir text is © Xu Jiatun and Lien Ho Pao
-- **Link:** https://archive.org/details/jprs-report_jprs-car-94-017
-- **Other links:** https://archive.org/download/jprs-report_jprs-car-94-017/jprs-report_jprs-car-94-017.pdf, https://archive.org/download/jprs-report_jprs-car-94-017/jprs-report_jprs-car-94-017_djvu.txt
-- **Proof that it exists:** JPRS-CAR-94-017, 17 March 1994, contents: 'Xu Jiatun's Memoirs on Brainstorming Session /Hong Kong LIEN HO PAO 7-9 Jul]' p. 4; full-text hit on scan page 7: 'Only then did I realize the errors they cited, including such concrete examples as the Kowloon Walled City incident'.
-- **What it gives (resolver's note, not checked):** Xu's account that Ji Pengfei and others counted 'the Kowloon Walled City incident' (his visit to the City in August 1983 and his praise of its self-rule) among his 'leftist' errors: how Beijing judged the visit, about 1983-1984. One mention only.
-- **Lead:** L1160 (cited by usgov-2, us-government-records-1948-1994)
-- **Notes:** Scan pages 6-9 (printed pp. 4-7) hold the section; the City sentence is on scan page 7. Read the paragraph around it for the date and the names of those who cited the error.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Xu Jiatun (許家屯), 'Xu Jiatun's Memoirs on Brainstorming Session' (installments No. 64-66 of 'Xu Jiatun's Hong Kong Memoirs', Hong Kong LIEN HO PAO, 7-9 Jul 1993, p. 2; JPRS ref. 94CM0133A), translated in JPRS Report: China, JPRS-CAR-94-017, 17 March 1994, pp. 4-7 (the City on p. 5), https://archive.org/details/jprs-report_jprs-car-94-017
+- **Class:** retrospective (Xu's own memoir of events in which he took part, written about 1993: retrospective (1993). The JPRS translation is a US government record of 1994.)
+- **Date of the record:** memoir printed 7-9 July 1993 (the City sentence in the part of 8 July 1993); JPRS translation 17 March 1994
+- **Files:**
+  - `lead-l1160-n7-6580bc07.jpg` (in `local/`, not in git): Scan of printed p. 5 of JPRS-CAR-94-017, with the Kowloon Walled City sentence; https://archive.org/download/jprs-report_jprs-car-94-017/page/n7.jpg; 2424886 bytes; SHA-256 `25f6be9963404f3a2103f68c56f3cea4277cd0e0041e17d87c8b0ed45f86e0fb`; licence: No licence statement on the archive.org item (no licenseurl or rights field); JPRS translation by a US government agency; the memoir text is © Xu Jiatun and Lien Ho Pao (https://archive.org/details/jprs-report_jprs-car-94-017)
+  - `lead-l1160-n6-4aa5ff46.jpg` (in `local/`, not in git): Scan of printed p. 4 of JPRS-CAR-94-017: the start of the memoir section (the session at Zhongnanhai); https://archive.org/download/jprs-report_jprs-car-94-017/page/n6.jpg; 2264730 bytes; SHA-256 `c3ca8b557cc0db78d184f6a91645bd61c996f25b7ab6c864b6c179902e067e98`; licence: No licence statement on the archive.org item (no licenseurl or rights field); JPRS translation by a US government agency; the memoir text is © Xu Jiatun and Lien Ho Pao (https://archive.org/details/jprs-report_jprs-car-94-017)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| JPRS-CAR-94-017, printed p. 5, right column (part of 8 Jul 93 p 2, 'Brainstorming Session (Part Two of Two)') | Xu writes that at the 'brainstorming session' he was criticized for 'leftist' errors in his Hong Kong work, and that the errors cited included 'the Kowloon Walled City incident'. The memoir does not say what the incident was. | "Only then did I realize the errors they cited, including such concrete examples as the Kowloon Walled City incident" |
+| JPRS-CAR-94-017, printed p. 5, right column | Xu says that Ji Pengfei, who presided, spoke for a dozen minutes at the end of the second day (after Li Zhuwen, Zheng Hua, Li Hou and Lu Ping had spoken and time had run out) and criticized him for 'leftist' errors in Hong Kong. Xu had expected a charge of rightism. | "At that point Ji Pengfei opened his mouth and spoke for a dozen minutes," |
+| JPRS-CAR-94-017, printed p. 4, right column (part of 7 Jul 93 p 2) | The session took place at Zhongnanhai, presided over by Ji Pengfei, for the leaders of four units: the Ministry of Foreign Affairs, the Hong Kong and Macao Affairs Office, the foreign affairs department of Xinhua and the working committee of the Xinhua Hong Kong office. | "The brainstorming session took place at Zhongnanhai and was presided over by Ji Pengfei" |
+| JPRS-CAR-94-017, printed p. 4, right column | Xu dates the session only as 'over two months' after the Beidahe conference; this part of the memoir gives no year. | "Over two months later, the Hong Kong and Macao Affairs Office notified me a brainstorming session would be held" |
+| JPRS-CAR-94-017, printed pp. 4-5 | The other critics were Li Hou, Lu Ping and Zhou Nan on the first day, and Li Zhuwen and Zheng Hua (from Xu's own Xinhua Hong Kong office) on the second day. | "Li Zhuwen and Zheng Hua were asked to speak the next day" |
+
+- **Leads:**
+  - Xu Jiatun, 'Xu Jiatun's Hong Kong Memoirs' (serialized in LIEN HO PAO, Hong Kong, 1993): the earlier installment or chapter that tells the 'Kowloon Walled City incident' itself (not in JPRS-CAR-94-017).
 ### lead-l1162: Current Intelligence Weekly Summary, 15 February 1963 (CIA-RDP79-00927A003900080001-3), Weekly Review: 'Chinese Communist Diplomatic Pressure on Hong Kong'
 
 - **Creator:** Central Intelligence Agency, Office of Current Intelligence
@@ -643,3 +645,198 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** The week after the Canton riot of January 1948: the Chinese press used the 'Kowloon incident' (the eviction of the squatters in the City); Britain demanded compensation for Canton, and China claimed compensation for the eviction of the Kowloon squatters. Early history (1948).
 - **Lead:** L1164 (cited by usgov-5, us-government-records-1948-1994)
 - **Notes:** The second copy (RDP79-01082A000100010036-0) has the same title; compare the two scans for legibility. The OCR is poor; read the PDF.
+
+### lead-l1165: Office of Reports and Estimates, CIA Far East/Pacific Branch [Intelligence Highlights, week to about 10 May 1948] (CIA-RDP79-01090A000400060003-9)
+
+- **Creator:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch
+- **Date:** 1948-05 (week of about 4-10 May 1948; the OCR has 'This week (7 May 48)')
+- **Kind:** document
+- **Class:** primary (A CIA weekly intelligence summary written in the week of the events.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
+- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp79-01090a000400060003-9
+- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp79-01090a000400060003-9/cia-rdp79-01090a000400060003-9.pdf, https://www.cia.gov/readingroom/document/cia-rdp79-01090a000400060003-9
+- **Proof that it exists:** archive.org metadata: 'CIA Reading Room cia-rdp79-01090a000400060003-9: OFFICE OF REPORTS AND ESTIMATES, CIA FAR EAST/PACIFIC BRANCH'; OCR: 'Approved For Release 2000/05/23 : CIA-RDP79-01090A000400060003-9'
+- **What it gives (resolver's note, not checked):** One sentence, May 1948: Britain demands 300,000 pounds for the Shameen incident of 16 Jan 1948, while China presses for the settlement of the Kowloon 'squatters incident' (the eviction from the Walled City). Shows the dispute still open in May 1948.
+- **Lead:** L1165 (cited by usgov-5, us-government-records-1948-1994)
+- **Notes:** The PDF file name on archive.org is assumed from the pattern of the held usgov-5 item; check it when collecting. OCR is poor.
+
+### lead-l1166-1: The Consul General at Canton (Boucher) to the Secretary of State, telegram 12, Canton, 16 January 1948 (from Lewis Clark), file 893.00/1-1648 (FRUS 1948, vol. VII, doc. 28)
+
+- **Creator:** US Consulate General, Canton (Lewis Clark, Minister-Counselor)
+- **Date:** 1948-01-16
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram written on the day of the Canton riot.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; the HistoryAtState/frus repository states public domain in the US and CC0 1.0 (LICENSE.md).
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d28
+- **Other links:** https://raw.githubusercontent.com/HistoryAtState/frus/master/volumes/frus1948v07.xml
+- **Proof that it exists:** TEI text (held file): '12. From Lewis Clark. Minister-Counselor of Embassy in China. At previously arranged press conference today which took place while British Consulate General was burning'
+- **What it gives (resolver's note, not checked):** Clark's press conference in Canton on 16 Jan 1948 while the British Consulate General burned; he took no position 'in respect of the Kowloon incident'. Context of the 1948 eviction only.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Notes:** Same TEI volume file as usgov-6.
+
+### lead-l1166-2: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 127, Shanghai, 19 January 1948, 6 p.m., file 893.00/1-1948 (FRUS 1948, vol. VII, doc. 30)
+
+- **Creator:** US Consulate General, Shanghai (John M. Cabot)
+- **Date:** 1948-01-19
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time on the Shanghai demonstration of 17 Jan 1948.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d30
+- **Proof that it exists:** TEI text (held file): 'Number students demonstrating in front British ConGen Saturday afternoon variously reported by press as between 10 and 30,000.'
+- **What it gives (resolver's note, not checked):** The Shanghai student demonstration of 17 Jan 1948 over the Kowloon eviction: size (press 10,000-30,000; Consulate estimate under 5,000 active), slogans demanding 'the return of Hong Kong and Kowloon'.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+
+### lead-l1166-3: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 128, Shanghai, 19 January 1948, 7 p.m., file 893.00/1-1948 (FRUS 1948, vol. VII, doc. 31)
+
+- **Creator:** US Consulate General, Shanghai (John M. Cabot)
+- **Date:** 1948-01-19
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d31
+- **Proof that it exists:** TEI text (held file): 'Rightist (CC) elements in Government were first to seize opportunity presented by Kowloon issue and to organize press campaign and student demonstrations'
+- **What it gives (resolver's note, not checked):** US analysis (Jan 1948) of how the CC clique of the Kuomintang used the 'Kowloon issue' to organize the press campaign and the student demonstrations.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+
+### lead-l1166-4: The Secretary of State to the Ambassador in China (Stuart), telegram 99, Washington, 21 January 1948, 7 p.m., file 893.00/1-1648 (FRUS 1948, vol. VII, doc. 36)
+
+- **Creator:** US Department of State (Secretary of State George C. Marshall)
+- **Date:** 1948-01-21
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time (this is 'Deptel 99' that doc. 49 cites).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d36
+- **Proof that it exists:** history.state.gov: 'The Secretary of State to the Ambassador in China (Stuart)', 'Washington, January 21, 1948—7 p. m.', '99. Telegrams summarizing press reaction recent events Kowloon as well as those reporting Canton affair'
+- **What it gives (resolver's note, not checked):** The State Department's view (21 Jan 1948) that Kuomintang elements built up public indignation over 'recent events Kowloon' and touched off the Canton riots; fear of anti-foreign and anti-American turns.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994); also L1167
+- **Notes:** Resolves L1167 (Deptel 99 of 21 Jan 1948 to Nanking).
+
+### lead-l1166-5: The Ambassador in China (Stuart) to the Secretary of State, telegram 144, Nanking, 22 January 1948, 6 p.m., file 893.00/1-2248 (FRUS 1948, vol. VII, doc. 37)
+
+- **Creator:** US Embassy Nanking (Ambassador J. Leighton Stuart)
+- **Date:** 1948-01-22
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d37
+- **Proof that it exists:** history.state.gov: 'The Ambassador in China (Stuart) to the Secretary of State', 'Nanking, January 22, 1948—6 p. m.', '144. Study of this and other data on current anti-British demonstrations and violence convinces Embassy'
+- **What it gives (resolver's note, not checked):** The Embassy's analysis (22 Jan 1948): the Nanking Government gave 'artificial emphasis on a foreign issue, namely Kowloon' to distract from internal troubles; the press campaign over 'national prestige involved in Kowloon issue'.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+
+### lead-l1166-6: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 209, Shanghai, 30 January 1948, 6 p.m., file 893.00/1-3048 (FRUS 1948, vol. VII, doc. 50)
+
+- **Creator:** US Consulate General, Shanghai (John M. Cabot)
+- **Date:** 1948-01-30
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d50
+- **Proof that it exists:** TEI text (held file): '209. Re Contel 154 dated January 30.' ... 'recently repeated in connection with Kowloon eviction case, of fanning popular Chauvinism'
+- **What it gives (resolver's note, not checked):** One passing mention: Nanking fanned popular chauvinism in the 'Kowloon eviction case' (Jan 1948). Little on the City.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Notes:** Passing mention only; catalogue with doc. 56 or skip.
+
+### lead-l1166-7: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 248, Shanghai, 4 February 1948, 11 a.m., file 893.00/2-448 (FRUS 1948, vol. VII, doc. 56)
+
+- **Creator:** US Consulate General, Shanghai (John M. Cabot)
+- **Date:** 1948-02-04
+- **Kind:** document
+- **Class:** primary (A diplomatic telegram of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
+- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d56
+- **Proof that it exists:** TEI text (held file): '248. Events past 2 weeks and information reaching us from various quarters point to accelerating deterioration situation'
+- **What it gives (resolver's note, not checked):** Two passing mentions of the Shanghai 'student demonstration re Kowloon' (students courted the police; anti-American feeling). Nothing on the City itself.
+- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Notes:** Passing mention only.
+
+### lead-l1175: Congressional Record, 88th Congress, 1st session, vol. 109, part 2 (1963): insertion 'James Wesley Turpin, M.D.' (scan page 903 of congressional-record-1963-pt2)
+
+- **Creator:** US Congress (member who inserted it not yet seen)
+- **Date:** 1963 (part 2 of vol. 109, about February 1963)
+- **Kind:** document
+- **Class:** primary (A record of the time (1963) on the Project Concern clinic that opened in the Walled City in 1962-1963.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Public Domain Mark 1.0 is stated on the sister item us_congress_89 (see usgov-14); check the us_congress_88 item page when collecting.
+- **Link:** https://archive.org/details/us_congress_88/congressional-record-1963-pt2/page/n903/mode/1up
+- **Other links:** https://archive.org/download/us_congress_88/congressional-record-1963-pt2.pdf, https://archive.org/download/us_congress_88/congressional-record-1963-pt2_djvu.txt
+- **Proof that it exists:** archive.org full-text search, congressional-record-1963-pt2, page 903: 'JAMES WESLEY Turpin, M.D.'; 'He opened his clinic in the notorious walled city of Kowloon in Hong Kong,'
+- **What it gives (resolver's note, not checked):** A short biography of Dr. James W. Turpin (1963): he left his practice in California in 1962, founded Project Concern and opened his clinic in the Walled City; it claims 'more than 250,000' people in 10 square blocks (a press figure, much higher than the 25,000 of the 1965 Q&A).
+- **Lead:** L1175 (cited by usgov-14, us-government-records-1948-1994)
+- **Notes:** Check the printed page number, date and member on the page image; the BookReader URL with /page/n903 is assumed from the scan page index (the held usgov-14 uses the same pattern).
+
+### lead-l1176: Congressional Record, 87th Congress, 2nd session, vol. 108, part 27 (Appendix), p. A6506: extension of remarks of Hon. Bob Wilson (California), with 'Project Concern' by Alice Sue Hardin (San Diego magazine, July 1962)
+
+- **Creator:** US Congress; Bob Wilson (Representative, California); Alice Sue Hardin (article)
+- **Date:** 1962 (Appendix p. A6506, about August-September 1962; the reprinted article is of July 1962)
+- **Kind:** document
+- **Class:** primary (A record of the time (1962) that reprints a magazine article of July 1962, before the Walled City clinic opened.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_87).
+- **Link:** https://archive.org/details/us_congress_87/congressional-record-1962-pt27/page/n627/mode/1up
+- **Other links:** https://archive.org/download/us_congress_87/congressional-record-1962-pt27.pdf, https://archive.org/download/us_congress_87/congressional-record-1962-pt27_djvu.txt
+- **Proof that it exists:** archive.org full-text search, congressional-record-1962-pt27, leaf 627: 'The second clinic under the Turpin program will be located within the walled city of Kowloon on the mainland'; 'PROJECT CONCERN (By Alice Sue Hardin)'
+- **What it gives (resolver's note, not checked):** Plans of Project Concern in mid-1962: the second Turpin clinic to be in the Walled City; it says the City lay outside the British lease, lacked police and urban services until recently, and had about 250,000 people in 10 square blocks (a press figure). Also names the board (Dr. E. M. Hayes, Imperial Beach).
+- **Lead:** L1176 (cited by usgov-14, us-government-records-1948-1994)
+- **Notes:** The BookReader URL with /page/n627 follows the pattern of the held usgov-14; check the date of the extension and the leaf on the page image when collecting. Twin with project-concern-1962-1970 if that folder fits better.
+
+### lead-l1177-1: Congressional Record, 88th Congress, 1st session, vol. 109, part 24 (Appendix), p. A1788: Mr. Bob Wilson, 'Report From Project Concern: A Sense of Deep Satisfaction' (from the San Diego Union)
+
+- **Creator:** US Congress; Bob Wilson (Representative, California); San Diego Union (article, author not seen)
+- **Date:** 1963 (Appendix p. A1788, about March-April 1963)
+- **Kind:** document
+- **Class:** primary (A record of the time (1963) that reprints a press report from Hong Kong on the first months of Project Concern.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_88).
+- **Link:** https://archive.org/details/us_congress_88/congressional-record-1963-pt24/page/n705/mode/1up
+- **Other links:** https://archive.org/download/us_congress_88/congressional-record-1963-pt24.pdf, https://archive.org/download/us_congress_88/congressional-record-1963-pt24_djvu.txt
+- **Proof that it exists:** archive.org full-text search, congressional-record-1963-pt24, leaf 705: 'Report From Project Concern: A Sense of Deep Satisfaction'; 'Turpin treats almost 60 children such as Liu Lum each day in his Project Concern clinic in the walled city of Kowloon'
+- **What it gives (resolver's note, not checked):** A press report of early 1963: Turpin treats almost 60 children a day at the Project Concern clinic in the Walled City (a named child patient, Liu Lum, with an infected ear); the floating clinic being built; the staff (Turpin, Paul Fleener, nine adult workers and two Chinese doctors).
+- **Lead:** L1177 (cited by usgov-14, us-government-records-1948-1994)
+- **Notes:** Check the date of the extension and the original date of the San Diego Union article on the page image. Twin with project-concern-1962-1970 if that folder fits better.
+
+### lead-l1177-2: Congressional Record, 90th Congress, 1st session, vol. 113, part 31 (Appendix), p. A497: Mr. Brademas, item on Dr. James Turpin and Project Concern
+
+- **Creator:** US Congress; John Brademas (Representative, Indiana)
+- **Date:** 1967 (Appendix p. A497, about February 1967)
+- **Kind:** document
+- **Class:** primary (A record of the time (1967) that reprints a press column on Turpin.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_90).
+- **Link:** https://archive.org/details/us_congress_90/congressional-record-1967-pt31/page/n114/mode/1up
+- **Other links:** https://archive.org/download/us_congress_90/congressional-record-1967-pt31.pdf, https://archive.org/download/us_congress_90/congressional-record-1967-pt31_djvu.txt
+- **Proof that it exists:** archive.org full-text search, congressional-record-1967-pt31, leaf 114: 'has clinics elsewhere in the Crown Colony, including the notorious walled city of Kowloon'; 'as a friend and admirer of Dr. James Turpin, founder and president of Project Concern'
+- **What it gives (resolver's note, not checked):** One mention of the City (1967): Project Concern has clinics in Hong Kong 'including the notorious walled city of Kowloon'; the rest is about Turpin and his funding (Agua Caliente race track).
+- **Lead:** L1177 (cited by usgov-14, us-government-records-1948-1994)
+- **Notes:** The source of the reprinted column was not seen in the snippets.

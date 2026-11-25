@@ -1626,7 +1626,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 101 of 101 items read by the reading of the source search of 2026-11.
+- **Status:** read: 104 of 104 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
@@ -3239,55 +3239,72 @@ testimony given later: tag its facts "retrospective (year)".
   - Kung Sheung Daily News (香港工商日報), 20 May 1963: the report of the press reception of 19 May 1963 by the 九龍城砦街坊福利事業促進委員會 (named in the article)
 ### lead-l1157: 許家屯訪九龍城砦 讚揚居民街坊工作 (華僑日報 1983-08-08)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), no named writer
-- **Date:** 1983-08-08
-- **Kind:** press
-- **Class:** primary (A Hong Kong news report of the day after the visit of 7 Aug 1983.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19830808/page/n5
-- **Other links:** https://archive.org/download/NPWK19830808/page/n5.jpg, https://archive.org/download/NPWK19830808/NPWK19830808.pdf
-- **Proof that it exists:** Leaf n5, running head '本港新聞 ... 第二張第二頁', WAH KIU YAT PO, 8 Aug 1983: headline in two columns '許家屯訪九龍城砦 / 讚揚居民街坊工作' beside the article '官民齊植樹 美化灣仔區', with a photo of the visit below.
-- **What it gives (resolver's note, not checked):** The Wah Kiu Yat Po account of Xu Jiatun's (許家屯) visit to the City on 7 Aug 1983, with his praise of the residents' kaifong work (the kaifong association), and a photo; a Hong Kong paper's view beside the Ta Kung Pao and Xinhua accounts the repo holds.
-- **Lead:** L1157 (cited by usgov-1, us-government-records-1948-1994)
-- **Notes:** The headline was read from a 900-px page image: the OCR keyword list writes 九龍城岩; the third character of 城砦 is INFERRED from the usual spelling of the paper and must be checked on the full-size image. Read the article at full resolution (https://archive.org/download/NPWK19830808/page/n5.jpg).
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 〈許家屯訪九龍城岩 贊揚居民街坊工作〉 (港訊), 8 Aug 1983, archive.org leaf n5, https://archive.org/details/NPWK19830808/page/n5
+- **Class:** primary (A Hong Kong daily's report of the time (event of 7 Aug 1983), with a photo. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1983-08-08
+- **Files:**
+  - `lead-l1157-NPWK19830808-56194aa1.pdf` (in `local/`, not in git): Whole issue, image PDF (25.0 MB); https://archive.org/download/NPWK19830808/NPWK19830808.pdf; 24976183 bytes; SHA-256 `5d4e8ed84d930c92927862997aa851d84529a4702a14158e37a66fe2f409a601`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPWK19830808)
+  - `lead-l1157-n5-009dcab4.jpg` (in `local/`, not in git): Full-size page image of leaf n5, with the article and photo; https://archive.org/download/NPWK19830808/page/n5.jpg; 4134712 bytes; SHA-256 `7f53734822b967034ee2ebe635c405b80bc32d8e3f2b37ecff1eb4e14e54a300`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPWK19830808)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, headline | INFERRED: The headline says that 許家屯 visited the City and praised the residents' kaifong work. It prints the City's name as 九龍城岩; the caption has 九龍城砦, thus 岩 is a misprint for 砦 (INFERRED). | "許家屯訪九龍城岩 贊揚居民街坊工作" (許家屯 visits Kowloon City [岩, sic]; praises the residents' kaifong work) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 1-2 | 許家屯, director of the Hong Kong branch of the New China News Agency (新華社香港分社), visited Kowloon City on 7 Aug 1983 and greeted the people who live there. | "新華社香港分社社長許家屯昨七日走訪了九龍城，對居住在當地的同胞表示親切慰問" (the director of the Hong Kong branch of the New China News Agency, 許家屯, visited Kowloon City yesterday, the 7th, and warmly greeted the compatriots living there) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 2-3 | He asked in detail how the City is managed and how the residents live. | "許家屯詳細詢問了九龍城寨的管理情況和居民的生活情況" (許家屯 asked in detail about the management of the walled city and the living conditions of the residents) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 3-5 | When told that the City is managed by the kaifong welfare promotion association (街坊福利事業促進會) that the residents elect, he praised it. | "當談到九龍城寨是由當地居民選舉出來的街坊福利事業促進會管理時，許社長表示贊賞" (when it was said that the walled city is managed by the kaifong welfare promotion association elected by the local residents, director 許 expressed approval) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 5-6 | He showed concern for the many inconveniences that the residents meet in daily life. | "許社長還對當地居民在生活上遇到許多不便表示關切" (director 許 also showed concern for the many inconveniences the local residents meet in their lives) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 6-8 | A doctor told him that many people from the mainland live in the City, and that they care about China's resumption of sovereignty over Hong Kong. | "一位醫生對許氏說，這裏居住着許多從大陸來的人士" (a doctor said to 許: many people from the mainland live here) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, col. 8-10 | 許家屯 said that Hong Kong people and people from the mainland must unite. Whatever their reason for coming, anyone who supports the reunification of China is a patriot. | "來了就來了，不管是什麼原因，只要贊成祖國統一的，就是愛國者" (if they have come, they have come; whatever the reason, anyone who supports the reunification of the motherland is a patriot) |
+| NPWK19830808, leaf n5, article 許家屯訪九龍城岩 贊揚居民街坊工作, photo caption | The photo below the article shows the visit in the City. | "圖示：許家屯訪九龍城砦。" (Photo: 許家屯 visits the Kowloon walled city.) |
 ### lead-l1198-1: 工商晚報 1948-01-16: 廣州學生巡行當中 沙面英領事舘被人混入縱火 軍警維持秩序傳傷多人 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
-- **Date:** 1948-01-16
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 工商晚報
-- **Link:** https://archive.org/details/NPKSE19480116
-- **Other links:** https://archive.org/download/NPKSE19480116/NPKSE19480116.pdf
-- **Proof that it exists:** archive.org item NPKSE19480116 (title '工商晚報 1948-01-16'); its description has '廣州學生巡行當中 沙面英領事舘被人混入縱火 軍警維持秩序傳傷多人'.
-- **What it gives (resolver's note, not checked):** The first Hong Kong report of the students' march in Canton on 16 Jan 1948 against the Kowloon City evictions, the burning of the British consulate on Shameen and the reports of many injured (INFERRED: the source of the AP figure of 10 casualties). The same page has the visit of the provincial envoy to the wounded City residents.
-- **Lead:** L1198 (cited by press-archives-8, world-press-1899-1995)
-- **Notes:** Leaf not found. Check the casualty figure on the page image.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Kung Sheung Evening News (工商晚報), 16 Jan 1948: 〈廣州學生巡行當中 沙面英領事舘被人混入縱火 軍警維持秩序傳傷多人〉 (本報即午廣州長途電話, with 合衆社 and 美聯社 dispatches), archive.org leaf n4; 〈蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費〉 (專訊), with a photo by 林季廉, leaf n7; https://archive.org/details/NPKSE19480116
+- **Class:** primary (A Hong Kong evening paper's reports of the same day (16 Jan 1948). It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1948-01-16
+- **Files:**
+  - `lead-l1198-1-n4-546a3d77.jpg` (in `local/`, not in git): Full-size page image of leaf n4, with the Canton report; https://archive.org/download/NPKSE19480116/page/n4.jpg; 5556675 bytes; SHA-256 `2b845ad44750ab9efb4b8246548340dfe03d67a3de3162061eefdeed4f556f50`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPKSE19480116)
+  - `lead-l1198-1-n7-93caeb22.jpg` (in `local/`, not in git): Full-size page image of leaf n7, with the visit report and photo; https://archive.org/download/NPKSE19480116/page/n7.jpg; 6347852 bytes; SHA-256 `6c24d487684ad918c5e5bc7e043b1f0ff4c0d4849663a2c61c83794f13977df8`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPKSE19480116)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, headline | The headline says that during a students' march in Canton someone got into the British consulate on 沙面 and set it on fire; troops and police kept order, and many were reported hurt. | "廣州學生巡行當中 沙面英領事舘被人混入縱火 軍警維持秩序傳傷多人" (During the Canton students' march, someone got into the British consulate on 沙面 and set fire; troops and police keep order; many reported hurt) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, first dispatch (本報即午廣州長途電話) | By telephone from Canton: at 10 am on 16 Jan the people of Canton held a big march against Hong Kong's forced demolition of Kowloon City homes and the shooting of Chinese. Tens of thousands marched. | "抗議香港政府強拆九龍城民居及開槍傷我同胞，巡行者數萬人" (protesting the Hong Kong Government's forced demolition of Kowloon City homes and the shooting and wounding of our compatriots; tens of thousands marched) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, first dispatch | Near 沙面 there was sudden chaos and the consulate was set on fire. Troops and police held back the crowd, and reportedly more than ten people were hurt. | "傳因此有十餘人受傷" (it is reported that ten-odd people were injured as a result) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, first dispatch | Officials believed that agitators had mixed into the march to cause the trouble. | "官方相信有奸黨混雜巡行隊伍中" (officials believe that traitorous elements mixed into the march) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, 廣州十六日合衆社電 | United Press, Canton, 16 Jan: about 5,000 students and workers attacked the British consulate at noon to protest the Kowloon City demolitions. They broke windows, pulled down the British flag and threw the consulate's papers into the road. | "學生及工人約五千人為抗議九龍城拆屋事件，今午襲擊此間英領事舘" (about 5,000 students and workers, to protest the Kowloon City demolitions, attacked the British consulate here at noon today) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, 廣州十六日合衆社電 | The marchers set out from 中山大學. The students of five universities and of other middle schools took the day off on their own, to march. | "巡行者由中山大學出發" (the marchers set out from 中山大學) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, 本報廣州三時四十分長途電話 | By telephone at 3.40 pm: the consulate was still burning. The consul got out safely under the guard of military police (憲兵), and martial law was declared nearby. | "英領事已在憲兵保護下，安全退出，刻附近宣佈戒嚴" (the British consul has got out safely under military police protection; martial law has now been declared nearby) |
+| NPKSE19480116, leaf n4, article 廣州學生巡行當中 沙面英領事舘被人混入縱火, 美聯社消息 | AP: the nearby 太古洋行 was also set on fire, but both fires were later put out. | "鄰近之太古洋行亦被縱火" (the nearby 太古洋行 was also set on fire) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, col. 1-2 | On the morning of 16 Jan nothing changed in Kowloon City, but the cold wind of the night before made things worse for those sleeping in the open. | "由於昨晚寒風侵襲，使露宿者更為悽慘而已" (because of last night's cold wind, those sleeping in the open were made even more miserable) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, col. 2-4 | With help from all sides the residents' food problem was solved, but on cold nights their clothes were thin and they had no walls to keep out the wind. | "目前居民食的問題，在各方資助下，已告解決，惟寒夜衣單，又無牆壁以蔽風" (the residents' food problem has now been solved with help from all sides, but on cold nights their clothes are thin and they have no walls against the wind) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, col. 4-6 | On 15 Jan the residents had their first official visit at provincial level, and a relief group from Macau came the same day. | "昨日居民首次接受省級之官方慰問，同時澳門各界慰問團亦同日抵步" (yesterday the residents for the first time received an official provincial-level visit; a Macau relief group also arrived the same day) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, col. 6-8 | The provincial mission led by 蕭次尹 was to visit the wounded at Kowloon Hospital (九龍醫院) at noon on 16 Jan. Each badly wounded person would get CN$5,000,000 for medical costs and each lightly wounded one CN$2,000,000. | "重傷發給醫藥費五百萬元，輕傷者二百萬元" (the badly injured to receive five million dollars for medical costs, the lightly injured two million) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, col. 8-9 | At 4 pm the mission would hold a reception for the public at the 大華飯店 to report. | "下午四時，該團將假大華飯店招待各界" (at 4 pm the mission will hold a reception for all circles at the 大華飯店) |
+| NPKSE19480116, leaf n7, article 蕭次尹今午慰問 龍城受傷居民 并分別發給醫藥費, photo caption | The photo shows, from left: the Bao'an County magistrate 王啟後, the Special Commissioner 郭德華, 蕭次尹, and the Bao'an County police chief 黃瀚源. The photographer was 林季廉. | "由左至右(一)寶安縣長王啟後(二)郭特派員德華(三)蕭委員次尹(四)寶安縣警察局長黃瀚源" (from left to right: (1) Bao'an County magistrate 王啟後, (2) Special Commissioner 郭德華, (3) Commissioner 蕭次尹, (4) Bao'an County police chief 黃瀚源) |
 ### lead-l1198-2: 香港工商日報 1948-01-17: 昨日廣州沙面發生不幸事件詳情 為九龍城事件巡行當中 英領署被焚燬 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1948-01-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 工商日報
-- **Link:** https://archive.org/details/NPKS19480117
-- **Other links:** https://archive.org/download/NPKS19480117/NPKS19480117.pdf
-- **Proof that it exists:** archive.org item NPKS19480117 (title '香港工商日報 1948-01-17'); its description has '昨日廣州沙面發生不幸事件詳情 為九龍城事件巡行當中 英領署被焚燬'.
-- **What it gives (resolver's note, not checked):** The full report of the Canton riot of 16 Jan 1948 that followed the Kowloon City evictions: the students of 中大 who led it, the burning of the consulate, the people beaten or hurt.
-- **Lead:** L1198 (cited by press-archives-8, world-press-1899-1995)
-- **Notes:** Leaf not found.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 17 Jan 1948, front page: 〈昨日廣州沙面發生不幸事件詳情 為九龍城事件巡行當中 英領署被焚燬 新聞處長穆磊幾被毆打 洋行三間同時亦遭騷擾〉 (本報廣州專訊, with 路透社 and 美聯社 dispatches); 〈解決九龍城事件 獲致初步方案〉; archive.org leaf n0, https://archive.org/details/NPKS19480117/page/n0
+- **Class:** primary (A Hong Kong daily's reports of the time (events of 16 Jan 1948). It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1948-01-17
+- **Files:**
+  - `lead-l1198-2-NPKS19480117-23c4b94c.pdf` (in `local/`, not in git): Whole issue, image PDF (4.8 MB); https://archive.org/download/NPKS19480117/NPKS19480117.pdf; 4784228 bytes; SHA-256 `55b60f37d4620fb1f0769f4e995e82d28c66a42ad484664cc51a8d275f57c112`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPKS19480117)
+  - `lead-l1198-2-n0-593ee046.jpg` (in `local/`, not in git): Full-size page image of leaf n0 (front page); https://archive.org/download/NPKS19480117/page/n0.jpg; 5330626 bytes; SHA-256 `734f776dcde668adecab92fe99b91ea0beaf65d7bbff644ddbdbd5ec0024b513`; licence: No rights or licence field in the archive.org metadata (private upload in collection china-mail, probably of HKPL scans); the newspaper text is the copyright of its publisher (https://archive.org/details/NPKS19480117)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19480117, leaf n0 (front page), headline | The front-page headline says that the British consulate in 沙面 was burned during a march for the Kowloon City affair; the British information officer was nearly beaten, and three firms were also attacked. | "為九龍城事件巡行當中 英領署被焚燬 新聞處長穆磊幾被毆打 洋行三間同時亦遭騷擾" (during a march over the Kowloon City affair, the British consulate burned; information officer 穆磊 nearly beaten; three firms also attacked) |
+| NPKS19480117, leaf n0 (front page), 南京十六日路透社電 | Reuters, Nanking, 16 Jan: the British embassy protested to the Foreign Ministry about the Canton riot and asked for more police guards at the embassy. | "今晚英大使館向外交部提出關於廣州騷動事件之抗議" (tonight the British embassy protested to the Foreign Ministry about the Canton disturbance) |
+| NPKS19480117, leaf n0 (front page), 本報廣州專訊, col. 1-3 | The Canton support committee for the Kowloon City affair led the march on 16 Jan. The set route went from the Sun Yat-sen Memorial Hall (中山紀念堂) to 西瓜園, but part of the crowd left it and went via 沙基 into 沙面. | "原定由中山紀念堂起，經吉祥路、惠愛中路、漢民路、一德路、豐寧路、至西瓜園散隊" (the set route was from the Sun Yat-sen Memorial Hall, via 吉祥路, 惠愛中路, 漢民路, 一德路 and 豐寧路, to disperse at 西瓜園) |
+| NPKS19480117, leaf n0 (front page), 本報廣州專訊, col. 5-6 | The rally began at noon in front of the Memorial Hall; more than 50,000 people came with banners and small flags. | "人數超過五萬人，均手持標語小旗" (more than 50,000 people, all holding banners and small flags) |
+| NPKS19480117, leaf n0 (front page), 本報廣州專訊, col. 6-8 | The chairman was 林翼中, Speaker of the Provincial Assembly. A representative of the Kowloon residents reported on the City affair: Hong Kong had ignored China's sovereignty and pulled down the residents' homes without reason. | "指陳港方不顧我國領土主權之尊嚴，拆卸我民居之無理" (pointing out that Hong Kong disregarded the dignity of our territorial sovereignty, and the unreasonableness of pulling down our people's homes) |
+| NPKS19480117, leaf n0 (front page), 本報廣州專訊, col. 8-9 | The march leader was the provincial assemblyman 李偉光, and the marchers sang the March of the Volunteers (義勇軍進行曲). | "省參議員李偉光為總領隊" (provincial assemblyman 李偉光 was the chief leader of the march) |
+| NPKS19480117, leaf n0 (front page), section 「到沙面示威去」中大學生首先倡導 | The sub-head says that 中山大學 students first called for the march to 沙面. At the crossing of 一德路 and 太平南路 the students of 文理學院 left the set route. Some 500 students went toward 沙面 first. More than a thousand students of 國民大學, 法商學院, 文理學院, 藝術專科學校, 海珠大學 and 嶺南大學 followed, and surrounded the consulate and the British information office. At the second entry more than 5,000 people went into 沙面. Boys and girls threw stones at the consulate windows, and the crowd shouted slogans there for more than twenty minutes. | "有男女小童以石擲擊英領事館之窗" (boys and girls threw stones at the windows of the British consulate) |
+| NPKS19480117, leaf n0 (front page), item 九龍城代表晉謁宋子文 | A Kowloon City representative went to Canton and met 宋子文's office (received by the head of the third section, 馮玉權). He asked the government to press Britain and Hong Kong to withdraw the police from the City at once, to pay for the losses, to free the two arrested City representatives, and to promise no repeat. | "立即令港警察退出九龍城" (at once order the Hong Kong police to withdraw from Kowloon City) |
+| NPKS19480117, leaf n0 (front page), item 九龍城代表晉謁宋子文, end | INFERRED: The item ends that the provincial government allotted 500 million (CN$) for the relief of Kowloon City. (省府 can be read; the character 億 is blurred: INFERRED.) | "撥五億救濟九龍城" (allotted 500 million for the relief of Kowloon City) |
+| NPKS19480117, leaf n0 (front page), item 解決九龍城事件 獲致初步方案 (南京十六日美聯社電) | AP, Nanking, 16 Jan: the Foreign Ministry said that Minister 王世杰 and the British embassy had reached a "preliminary plan to settle the Kowloon City affair", but would not publish it. Students in Nanking planned to raise money for the walled city residents. | "救濟砦城居民" (for the relief of the walled city residents) |
 ### lead-l0002: 大公報 1963-01-14: 對港府拆遷屋宇事 城砦居民紛紛反對 他們說辛勤建家園 一旦被拆生活無着 (OCR of the headline list)
 
 - **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.

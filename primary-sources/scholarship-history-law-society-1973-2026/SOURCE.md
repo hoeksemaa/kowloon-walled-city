@@ -194,3 +194,16 @@ shows is the reader's reading of it.
 | p. 40 (IIIF canvas 65) and p. 41 | In 1987-1988 the old people's centre, formerly the Kuang-yin yuan, gave the only open area in the City. The mass of concrete round this 'courtyard' formed a wall against outsiders. | "The old people's centre, formerly the Kuang-yin yuan, provides the only open area" |
 | p. 41 (IIIF canvas 66) | The author lists fragments of the old City that deserved preservation in her time: the cannon, parts of the former military office, some stone lions, the odd inscription and the memories of old residents. | "the cannon, parts of the former military office, some stone lions, the odd inscription, old residents' memories" |
 | Plates (rear of vol. 27), canvas 332 | The caption of Plate 5 (cannon, about 1924) says that the former military office was used, in 1987, as an old people's centre. It calls it the only surviving building from the imperial days. | "formerly a military office, is now used as an old people's centre, the only surviving building from the Imperial days." |
+
+### lead-l1121: The Kowloon Walled City
+
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Anthony K. K. Siu (蕭國健), 'The Kowloon Walled City', Notes and Queries, Journal of the Hong Kong Branch of the Royal Asiatic Society, vol. 20 (1980), pp. 139-141 (signed 'Hong Kong, November 1980'); HKU Digital Repository, record kh04md207, canvases 171-173, https://digitalrepository.lib.hku.hk/catalog/kh04md207
+- **Class:** secondary (A historian's short note of 1980 on the Qing garrison history, from Qing gazetteers. Its last paragraph and note 9 record what remained in 1980 (the author's own observation at the time). It is in the right tree.)
+- **Date of the record:** November 1980
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/scholarship-history-law-society-1973-2026/SOURCE.md`](../../secondary-sources/scholarship-history-law-society-1973-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| JHKBRAS 20 (1980), p. 140 | In 1980, Siu says, nothing of the old Walled City remained except two old cannons of the Jiaqing period and the old yamen, which stood in Lung Chun Road inside the old City. | "Nowadays, nothing of the Walled City remains, except two old cannons of the Chia Ch'ing Period and the old yamen" |
+| JHKBRAS 20 (1980), p. 141, note 9 | Note 9: in 1980 the CNEC Grace Light School occupied the old yamen. | "The Old Yamen is now occupied by the CNEC Grace Light School." |

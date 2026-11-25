@@ -3360,3 +3360,36 @@ testimony given later: tag its facts "retrospective (year)".
 | NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 1 | The Assistant Director of Housing, 劉寶志, said the department suspected that some residents had another home. If a check found that a household had somewhere to live, it would not get public housing. | "房署懷疑居民可能有另外居所，故要仔細調查" (The Housing Department suspects residents may have other homes, so it must investigate carefully) |
 | NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 2 | 劉寶志 said that of the more than 13,000 households of the City, about 10 per cent did not qualify. He did not think this high, because other clearances had the same. (The 大公報 report of the same day gives more than 11,000 households.) | "在一萬三千多戶九龍城寨居民中，大概有百分之十是不符合資格" (Among the more than 13,000 households of Kowloon Walled City, about 10 per cent do not qualify) |
 | NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 2 | 劉寶志 said the shortage of labour would not delay the moving of the City residents into new flats, because the department had reserved the flats early; almost all the rehousing was ready. | "房署一早預留所需單位作為安居的行動，目前所有安居差不多做妥" (The Housing Department reserved the needed flats early for the rehousing; at present nearly all the rehousing is done) |
+
+### lead-l0257: 大公報 (Ta Kung Pao), 8 Nov 1986: 「社會牙科服務促進會主席認為無牌牙醫有益於社會 港府不應將刑罰提高 並建議以考試訓練途徑使他們轉為鑲牙師」 (headline as the OCR list gives it), with 「立局下周提出質詢 並設小組研究未註冊牙醫罰則例」
+
+- **Creator:** Ta Kung Pao (大公報)
+- **Date:** 1986-11-08
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily of Nov 1986 that reports a proposal and a Legislative Council question made at the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The newspaper is copyright of its publisher, 大公報.
+- **Link:** https://archive.org/details/NPTKP19861108
+- **Other links:** https://archive.org/details/NPTKP19861108/page/n6, https://archive.org/details/NPTKP19861108/page/n4
+- **Proof that it exists:** archive.org metadata title '大公報 1986-11-08'; headline list: '社會牙科服務促進會主席認為無牌牙醫有益於社會港府不應將刑罰提高並建議以考試訓練途徑使他們轉為鑲牙師'
+- **What it gives (resolver's note, not checked):** Nov 1986, two months before the clearance announcement: a dental-service group says the unlicensed dentists help society, asks the government not to raise the penalties, and proposes that exams and training make them dental technicians (鑲牙師); the Legislative Council is to study the penalties for unregistered dentists. INFERRED: the City's dentists were the main unlicensed dentists of Hong Kong; the headline does not name the City.
+- **Lead:** L0257 (cited by gap-campus-socialwork-press-14, hk-chinese-press-1985-1993)
+- **Notes:** Find the article on the page images (leaf n6 likely, not confirmed) and check whether it names the City and the government's answer. The Dentists Registration (Amendment) Bill of 1986 is the context (INFERRED; check Hansard 1986-87 in legco-hansard-1986-1993).
+
+### lead-l0257-2: 華僑日報 (Wah Kiu Yat Po), 10 Jun 1987: 「清拆特別委員會聽取意見 城砦牙醫要求政府 予鑲牙師合法地位 安排聚集營生‧接受官方監管」 (headline as the OCR list gives it, with 鈿 for 鑲)
+
+- **Creator:** Wah Kiu Yat Po (華僑日報)
+- **Date:** 1987-06-10
+- **Kind:** press
+- **Class:** primary (A Hong Kong daily of June 1987 that reports the meeting of the City dentists with the clearance special committee the day before.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The newspaper is copyright of its publisher, 華僑日報.
+- **Link:** https://archive.org/details/NPWK19870610
+- **Proof that it exists:** archive.org metadata title '華僑日報 1987-06-10'; headline list: '清拆特別委員會聽取意見 城砦牙醫要求政府 予鈿牙師合法地位 安排聚集營生‧接受官方監管'
+- **What it gives (resolver's note, not checked):** June 1987: the City's dentists ask the clearance special committee for legal status as dental technicians (鑲牙師), to work together in one place under official supervision after the clearance. A second report of the meeting that the repo holds from 大公報 (top-zh-press-9).
+- **Lead:** L0257 (cited by gap-campus-socialwork-press-14, hk-chinese-press-1985-1993)
+- **Notes:** Leaf not identified (the 本港新聞 pages; the zh-press-7 report of 2 Jun 1987 was on leaf n5). It can say what the government had answered before.

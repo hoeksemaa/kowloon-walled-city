@@ -177,3 +177,26 @@ Not read yet.
 
 - **Leads:**
   - The book itself: 곽한영, 『구룡성채, 검은 성의 비밀』, 흐름출판, 2026, 384 pp.; its notes can cite Korean press of 1987-1993 on the City.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0597: Europe in China: The History of Hongkong from the Beginning to the Year 1882, chapters IX, X, XIX and XX
+
+- **Creator:** Ernst Johann Eitel
+- **Date:** 1895
+- **Kind:** book
+- **Class:** secondary (A history written in 1895 from records and memory; Eitel lived in Hong Kong from 1862, but the book is a narrative history, not a record of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Public domain (published 1895; Wikisource transcription).
+- **Link:** https://en.wikisource.org/wiki/Europe_in_China/Chapter_19
+- **Other links:** https://en.wikisource.org/wiki/Europe_in_China/Chapter_9, https://en.wikisource.org/wiki/Europe_in_China/Chapter_10, https://en.wikisource.org/wiki/Europe_in_China/Chapter_20, https://en.wikisource.org/w/api.php?action=query&list=search&srsearch=%22Kowloon+city%22+prefix:Europe_in_China&format=json
+- **Proof that it exists:** Chapter 19 title: 'XIX. The Interregnum of the Hon. W. T. Mercer and the Administration of Sir Richard Graves MacDonnell'; search snippet: 'collected outside the harbour of Hongkong, at Kapshuimoon in the west, at Kowloon city in the north'
+- **What it gives (resolver's note, not checked):** Short mentions of Kowloon city in 1839 (provisions for the British fleet), as part of San On District, as one of the Chinese li-kin tax stations round Hong Kong in the 1860s (the 'blockade'), and in the steam-ferry attempt of July 1873.
+- **Lead:** L0597 (cited by top-commons-22, history-books-1988-2026)
+- **Notes:** Add the passages to the existing item top-commons-22 (same book) rather than as a new item. Chapter 9 (1839) is before the walled city was built (1847): it is about the older Kowloon fort and villages.

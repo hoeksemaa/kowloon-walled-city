@@ -767,7 +767,7 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0516: Kowloon Walled City: Its Origin and Early History
@@ -910,21 +910,41 @@ Not read yet.
 
 ### lead-l1121: The Kowloon Walled City
 
-- **Creator:** Anthony K. K. Siu (蕭國健)
-- **Date:** 1980
-- **Kind:** article
-- **Class:** secondary (A historian's short note of 1980 on the Qing military history of the City (1668-1847), built on Qing gazetteers; not a record of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (page footer); no open licence stated
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/kh04md207
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/kh04md207, https://digitalrepository.lib.hku.hk/service/api/iiif/images/2514v7391/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/sx61m764h/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/images/5999tr582/full/full/0/default.jpg, https://www.jstor.org/stable/23889556
-- **Proof that it exists:** p. 139, running head 'NOTES AND QUERIES': 'THE KOWLOON WALLED CITY. The Kowloon Walled City was situated to the north of the present Kai Tak Airport. It had been the most important military base in Hong Kong during the later Ch'ing Dynasty (1644-1911).'
-- **What it gives (resolver's note, not checked):** The Qing garrison history before the walls: a watchpost 九龍墪台 of 30 guards in 1668, the Kowloon guard-station 九龍汛 of 10 men from 1682 to 1811, the Kowloon Fort 九龍砲台 of 1810 with 48 men, and the building of the Walled City 九龍寨城 in 1847, with notes to Qing sources.
-- **Lead:** L1121 (cited by studies-20, scholarship-history-law-society-1973-2026)
-- **Notes:** Printed pp. 139-141 = canvases 171-173 of the volume (Notes and Queries). Siu's two later notes, 'More about the Kowloon Walled City' (JHKBRAS 26: 265-266) and 'The cannon in the Kowloon Walled City' (JHKBRAS 27: 279-280), are probably in the same HKU series (vol. 27 is record rx919b522, which the repo already uses for lead-l0516) (INFERRED, not opened).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Anthony K. K. Siu (蕭國健), 'The Kowloon Walled City', Notes and Queries, Journal of the Hong Kong Branch of the Royal Asiatic Society, vol. 20 (1980), pp. 139-141 (signed 'Hong Kong, November 1980'); HKU Digital Repository, record kh04md207, canvases 171-173, https://digitalrepository.lib.hku.hk/catalog/kh04md207
+- **Class:** secondary (A historian's short note of 1980 on the Qing garrison history, from Qing gazetteers. Its last paragraph and note 9 record what remained in 1980 (the author's own observation at the time). It is in the right tree.)
+- **Date of the record:** November 1980
+- **Files:**
+  - `lead-l1121-default-98f3bb6f.jpg` (in `local/`, not in git): Page image of JHKBRAS 20 (1980), p. 139: start of Siu's note 'The Kowloon Walled City'; https://digitalrepository.lib.hku.hk/service/api/iiif/images/2514v7391/full/full/0/default.jpg; 181320 bytes; SHA-256 `af7c45df6462d4504eee4336fd9d7bf75b72ebd10842ae7e97c7331d864f572c`; licence: HKU Digital Repository record kh04md207: 'License: All rights reserved', 'Rights Statement: In Copyright'; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no open licence (https://digitalrepository.lib.hku.hk/catalog/kh04md207)
+  - `lead-l1121-default-e4fa0c4b.jpg` (in `local/`, not in git): Page image of JHKBRAS 20 (1980), p. 140: walls, gates, garrison, 1899, the remains in 1980, notes 1-3; https://digitalrepository.lib.hku.hk/service/api/iiif/images/sx61m764h/full/full/0/default.jpg; 223015 bytes; SHA-256 `1d87a314f00239c3aca752d140f1fb1362ba0721f5a26d3251033110bbdae598`; licence: HKU Digital Repository record kh04md207: 'License: All rights reserved', 'Rights Statement: In Copyright'; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no open licence (https://digitalrepository.lib.hku.hk/catalog/kh04md207)
+  - `lead-l1121-default-bfe8ebe8.jpg` (in `local/`, not in git): Page image of JHKBRAS 20 (1980), p. 141: notes 3-9 (Qing sources; the yamen and the CNEC Grace Light School); https://digitalrepository.lib.hku.hk/service/api/iiif/images/5999tr582/full/full/0/default.jpg; 257121 bytes; SHA-256 `f77b1d2a852a6d606a55f8b149cc0823c4ce4de44e2fcbdaeb5ecb84af6eecb8`; licence: HKU Digital Repository record kh04md207: 'License: All rights reserved', 'Rights Statement: In Copyright'; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; no open licence (https://digitalrepository.lib.hku.hk/catalog/kh04md207)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/scholarship-history-law-society-1973-2026/SOURCE.md`](../../primary-sources/scholarship-history-law-society-1973-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| JHKBRAS 20 (1980), p. 139 | Siu says that the City stood north of Kai Tak Airport and was the most important military base in Hong Kong in the later Qing dynasty. | "It had been the most important military base in Hong Kong during the later Ch'ing Dynasty (1644-1911)." |
+| JHKBRAS 20 (1980), p. 139 | At the start of the Qing there was no walled city. In 1668 (Kangxi 7) there was only a watchpost, the 九龍墪台, recorded with thirty guards. | "there was only a watchpost, called the 九龍墪台, recorded as having thirty guards." |
+| JHKBRAS 20 (1980), p. 140, note 1 | Note 1 quotes chapter 8 of the San On Yuen Chi, K'ang Hsi edition (康熙新安縣志 卷八) for the watchpost, but gives Kangxi 7 as 1667, not 1668 as in the text. | "During the 7th year of the K'ang Hsi Reign (1667), the Kowloon watch-post" |
+| JHKBRAS 20 (1980), p. 139 | In 1682 (Kangxi 21) the guards were reduced to ten, and the post became the Kowloon guard-station 九龍汛. It still existed, with ten soldiers, in 1811 (Jiaqing 16). | "the number of guards was reduced to only ten, and the post was turned into the Kowloon guard-station 九龍汛." |
+| JHKBRAS 20 (1980), p. 139 | In 1810 (Jiaqing 15) the Fat Tong Mun Fort 佛堂門砲台 was abandoned and the Kowloon Fort 九龍砲台 was built on the Kowloon coast. Its garrison was 48 men under one pa-tsung 把總 and one ngai-wai 外委. | "Its garrison was forty-eight men, under one pa-tsung 把總 and one ngai-wai 外委." |
+| JHKBRAS 20 (1980), p. 139 | To strengthen Kowloon after Hong Kong Island came under British rule, the walled city was built in 1847 (Daoguang 27): the Kowloon Walled City 九龍寨城. | "a walled city was built in the 27th year of Tao Kuang (1847) This was the Kowloon Walled City 九龍寨城." |
+| JHKBRAS 20 (1980), p. 141, note 5 | INFERRED: Note 5: in 1843 Ke Ying 耆英, Viceroy of Kwangtung and Kwangsi, and Wong Yan-tung 黃恩彤, Governor, proposed the Walled City; the work was completed in 1847. The print of the two names in characters is poor. | "They proposed building the Kowloon Walled City. The work was completed in the 27th year of the Tao Kuang Reign (1847)." |
+| JHKBRAS 20 (1980), p. 140 | The Walled City had an area of about 70 mou 畝; Siu gives its length as about 130 yards and its breadth as about 240 yards (as printed). | "about 70 mou 畝. It had a length of about 130 yards and its breadth was about 240 yards." |
+| JHKBRAS 20 (1980), p. 140 | The walls were about 20 feet high and five to ten feet thick, and there were four main gates. | "The walls were about 20 feet high and five to ten feet thick. There were four main gates." |
+| JHKBRAS 20 (1980), p. 140 | The gateways were about ten feet high and eight feet wide, and iron gates could shut them. | "The gateways were about ten feet high and eight feet wide, and they could be shut with iron gates." |
+| JHKBRAS 20 (1980), p. 140 | The main entrance was the South Gate 南門. Outside it ran the Lung Chun River 龍津河. | "The main entrance was the South Gate 南門. Outside the main gate, there was the Lung Chun River 龍津河." |
+| JHKBRAS 20 (1980), p. 140 | A stone bridge, the Lung Chun Bridge 龍津橋, crossed the river, and soldiers could land at a pier and march straight into the City. | "A stone bridge called the Lung Chun Bridge 龍津橋 crossed the river." |
+| JHKBRAS 20 (1980), p. 140 | The City's garrison was 150 soldiers under one fu-cheung 副將 (brigadier). | "The Walled City's garrison was 150 soldiers under one fu-cheung 副將 or brigadier." |
+| JHKBRAS 20 (1980), p. 140 | Fifteen soldiers under one ngai-wai-tsin-tsung 外委千總 guarded the Kowloon Coastal Guard Station 九龍海口汛, and one tsin-tsung 千總 with 75 men guarded the Kowloon Fort 九龍砲台. These numbers stayed the same until the early Guangxu reign. | "fifteen soldiers and one ngai-wai-tsin-tsung 外委千總 or sub-lieutenant guarded the Kowloon Coastal Guard Station 九龍海口汛" |
+| JHKBRAS 20 (1980), p. 141, note 6 | Note 6 quotes the Kwangtung Tao Shuet (毛鴻賓廣東圖說 卷十三): the City was under a fu-cheung of the naval forces of the Tai Pang Battalion 大鵬協, and under him an extra ngai-wai 額外外委 guarded the City with 150 men. | "Under him was an extra ngai-wai 額外外委 who guarded the Walled City with 150 men." |
+| JHKBRAS 20 (1980), p. 140 | After the lease of the New Territories in 1898 the City at first stayed under Qing rule, but in 1899 the garrisons were withdrawn and the City was abandoned. | "However in 1899 the garrisons in that area were evacuated, and the Walled City was abandoned." |
+
+- **Leads:**
+  - Anthony K. K. Siu, 'The Old Cannons found in Hong Kong' (香港之前代古砲), Kwangtung Man Hin (廣東文獻) vol. 8, no. 2 (cited in note 8, p. 141): the two Jiaqing cannons of the City.
+  - 嘉慶《新安縣志》卷十一 (San On Yuen Chi, Jiaqing edition, ch. 11), cited in note 2, p. 140: the Kowloon guard-station up to 1811 (the repo holds only the Kangxi edition of 1688).
+  - 阮元《廣東通志》卷一百二十五 and 卷一百七十五 (Kwangtung Tung Chi, Daoguang edition, ch. 125 and 175), cited in notes 3 and 4, pp. 140-141: the move of the fort to Kowloon in 1810 and its garrison of 48.
+  - 毛鴻賓《廣東圖說》卷十三 (Kwangtung Tao Shuet, Tongzhi edition, ch. 13), cited in note 6, p. 141: the garrison of the City (150 men) under the Tai Pang Battalion.
+  - 史澄《廣州府志》卷七十三 (Kwangchow Fu Chi, Guangxu edition, ch. 73), cited in note 7, p. 141: the garrison numbers to the early Guangxu reign.
 ### lead-l1064: What Was the Plan for the Original Qing Kowloon Walled City? Some Thoughts Provoked by Original Data and Traditional Measurements
 
 - **Creator:** Stephen N. G. Davies
@@ -941,3 +961,37 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** The planned and the as-built size of the Qing walled city (1846-47) in metric units, the orientation of the walls and gates, a reconstruction of the planned walls on Pak Hok Shan, and the layout of the buildings inside the walls about 1870-1903 in three groups with different orientations (from Thomson's 1870 photo and the 1905 SD Sheet 4). Early history only.
 - **Lead:** L1064 (cited by china-27, scholarship-history-law-society-1973-2026)
 - **Notes:** The live HKIS URL gave HTTP 403 to my tool (no login seen; INFERRED a block of scripts), thus use the Wayback copy. The PDF is the whole issue (306 pp.); the paper is on pp. 8-26. The first page prints the author's e-mail address: do not copy it. Fig. 12 (p. 24) is the only open view of the 1905 SD Sheet 4 (lead L1063).
+
+### lead-l0520: 《九龍城區風物志》
+
+- **Creator:** 劉潤和、馮錦榮、高添強、周家建 (編撰小組); 單周堯、馮錦榮、楊永安、劉潤和 (編撰委員會, Department of Chinese, The University of Hong Kong); Kowloon City District Council (九龍城區議會)
+- **Date:** 2005 (November 2005 per the citing article; PDF made 23 January 2006)
+- **Kind:** book
+- **Class:** secondary (A district history and heritage guide of 2005, written from British and Hong Kong archive files and books; it is not a record of the time.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence or copyright line in the extracted text; a Hong Kong government (District Council) publication, © the Government of the HKSAR by default.
+- **Link:** https://www.districtcouncils.gov.hk/kc/tc_chi/links/files/KCD_Heritage_Txt.pdf
+- **Other links:** http://www.districtcouncils.gov.hk/kc/tc_chi/links/files/KCD_Heritage_Txt.pdf, https://web.archive.org/web/20151208163057/http://www.districtcouncils.gov.hk/kc/tc_chi/links/files/KCD_Heritage_Txt.pdf
+- **Proof that it exists:** PDF p. 1: '《九龍城區風物志》 編撰委員會： 香港大學中文系主任單周堯教授 ...'; contents: '第二章 九龍城寨在中英港現代史上的意義'
+- **What it gives (resolver's note, not checked):** The history of the walled city from its building in 1846-47 to the clearance decision of 14 January 1987, with the removals of 1933-34 (households and the move to 隔坑), the demolitions of January 1948 and the 1962-63 clearance plan (about 100 houses, 2,500 people). Little on daily life in the 1980s.
+- **Lead:** L0520 (cited by tna-21, scholarship-history-law-society-1973-2026)
+- **Notes:** The 2005 oral histories of the District Council (尹才榜, 林耀洪, 陳偉波, 陳盧堅, 趙麗禎, 劉建海; file numbers such as KC/CWB-01) are a lead for retrospective testimony of the district; the text does not say whether any speaker lived in the City. The archive list of ch. 2 (FO 371 nos. 6646, 16196, 17133, 20990, 53637-53638, 69578, 69580, 75931, 83484, 170651; HKRS 163 nos. 158, 271-273, 1573, 2536-2539, 2977) is a finding aid for the TNA and GRS folders.
+
+### lead-l0561: The Great Difference, The Great Rift, and The Great Need: The New Territories of Hong Kong and its People, Past and Present
+
+- **Creator:** James Hayes
+- **Date:** December 2008
+- **Kind:** article
+- **Class:** secondary (A 2008 essay by a retired administrative officer on the New Territories; it names the 1963 clearance at the City only as an example, from memory and history, not as a record of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository page: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; the article is in copyright (no open licence stated).
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/db7909768
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/w9509z809, https://digitalrepository.lib.hku.hk/service/api/iiif/search/w9509z809?q=Walled+City, https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/w9509z809
+- **Proof that it exists:** Issue record: 'The Asia Pacific Journal of Public Administration, Vol. 30 No. 2 (2008 Dec)'; IIIF hit on canvas tt44vn29n: 'There had been remarkably little confrontation, largely because there had been, on each side, a willingness to negotiate'
+- **What it gives (resolver's note, not checked):** One passage (canvas labelled 50) that uses the clearance of 1963 next to the Kowloon Walled City as an example of the confrontation that the Hong Kong government avoided, for fear of Chinese intervention. It gives no detail of the City itself.
+- **Lead:** L0561 (cited by citations-14, building-and-demolition-records-1968-1997)
+- **Notes:** Journal: The Asia Pacific Journal of Public Administration, Vol. 30 No. 2 (December 2008), HKU Hong Kong Journals Online. Read the canvas image (https://digitalrepository.lib.hku.hk/service/api/iiif/images/tt44vn29n/full/full/0/default.jpg) for the exact words; the OCR hit ends at 'albeit'.

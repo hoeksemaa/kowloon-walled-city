@@ -214,3 +214,19 @@ See the leads under each item in the primary folder.
 | T1986c.txt, line of 1986-12-21 | Sunday 21 December 1986, the last day of the week of the simulation, was the 20th day (二十) of the 11th lunar month. | "1986年12月21日 二十 星期日" (21 Dec 1986, 20th day, Sunday) |
 | T1986c.txt, line of 1986-12-22 | Monday 22 December 1986 was the Winter Solstice (冬至), the 21st day (廿一) of the 11th lunar month. | "1986年12月22日 廿一 星期一 冬至" (22 Dec 1986, 21st day, Monday, Winter Solstice) |
 | T1986c.txt, line of 1986-12-31 | The 12th lunar month (十二月) began on Wednesday 31 December 1986. | "1986年12月31日 十二月 星期三" (31 Dec 1986, 12th month, Wednesday) |
+
+### lead-l0404: Hong Kong Observatory Open Data API Documentation, Version 1.13, Sep 2025
+
+- **Creator:** Hong Kong Observatory (香港天文台)
+- **Date:** Sep 2025 (version 1.13; first released Jun 2019)
+- **Kind:** reference
+- **Class:** secondary (Present-day technical documentation of the HKO data API; it records nothing of 1986, but it says which stations have daily data for 1986.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** '©The Government of the Hong Kong Special Administrative Region. The contents of this document remain the property of and may not be reproduced in whole or in part without the express permission of the Hong Kong Observatory' (cover page).
+- **Link:** https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf
+- **Proof that it exists:** Cover: 'Hong Kong Observatory Open Data API Documentation, Version : 1.13, Date : Sep, 2025'
+- **What it gives (resolver's note, not checked):** The list of dataTypes and stations of the HKO API, with the year range of each station: for December 1986 the daily mean, maximum and minimum temperatures exist only for HKO headquarters, Sha Tin (from 1984) and Lau Fau Shan (from 1985); the Kowloon City station (KLT) starts in 2008.
+- **Lead:** L0404 (cited by services-5, hko-weather-1986-1992)
+- **Notes:** Use it as a key to the data of the hko-weather folder; the Sha Tin series (station SHA) is a second 1986 temperature series near Kowloon if one is wanted.

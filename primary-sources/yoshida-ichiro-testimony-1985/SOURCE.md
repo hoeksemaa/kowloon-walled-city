@@ -140,3 +140,20 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** 17 photos of the City with short captions: a broken sewer pipe dripping waste water, the maze of the interior, tangled electric wiring, residents walking barefoot on a wet lane, food factories (sweets, dim sum), illegal clinics and eateries. Undated and uncredited.
 - **Lead:** L0717 (cited by ja-3, yoshida-ichiro-testimony-1985)
 - **Notes:** Check each image before use: some can be agency or stock photos, not Yoshida's. If none is Yoshida's, the item belongs with the press photos instead.
+
+### lead-l0719: 「東洋の魔窟」九龍城砦探検記 (その１：地底の迷路を歩く; その２：屋上から啓徳空港を見下ろす; その３：再び地底の迷路へ; その４：取り壊し反対住民集会へ; その５：城砦落城の日へ; 九龍城砦★秘宝館)
+
+- **Creator:** Yoshida Ichiro, 'Kero' (吉田一郎), 野次馬的アジア研究中心 (personal web site)
+- **Date:** web pages of before 2006-04-10 (Wayback captures 2006-2011); visits from autumn 1985 to the demolition (1993)
+- **Kind:** testimony
+- **Class:** retrospective (A former resident's own account, with his own photos of 1985-1993, written later (about 2000-2006) for his web site.)
+- **Value:** high
+- **Language:** ja
+- **Access:** open
+- **Licence:** No licence seen; personal web site of 吉田一郎, kept by the Internet Archive Wayback Machine.
+- **Link:** https://web.archive.org/web/20060410144414/http://www4.ocn.ne.jp/~keropero/kyuryu00.html
+- **Other links:** https://web.archive.org/web/20090221213233/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu1.html, https://web.archive.org/web/2010/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu2.html, https://web.archive.org/web/2010/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu3.html, https://web.archive.org/web/2010/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu4.html, https://web.archive.org/web/2010/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu5.html, https://web.archive.org/web/2010/http://www.geocities.co.jp/SilkRoad/9613/kyuryu/hohou.html
+- **Proof that it exists:** Index title '九龍城砦探検記'; first lines: '「東洋の魔窟」九龍城砦探検記 … そんな九龍城砦に私が初めて足を踏み入れたのは、１９８５年の秋でした。' Part 1 title '九龍城砦探検記・地底の街を歩く'.
+- **What it gives (resolver's note, not checked):** Yoshida's photos and captions of the City from autumn 1985 to 1993: the south side before and after the clearance of the wooden squatter area in 1986, the dentists' signs on Lung Chun Road (龍津道), the street entrances, Kwong Ming Street (光明街) and the kaifong association sign, hoses, wires and dripping sewage over the alleys, the residents' vigilante notices, the Lung Tsun Free School, the roof over Kai Tak, a residents' meeting against the demolition, and the last days; also a page of City maps (秘宝館).
+- **Lead:** L0719 (cited by ja-4, yoshida-ichiro-testimony-1985)
+- **Notes:** Open each part in a browser (WebFetch refuses web.archive.org); the geocities pages are Shift_JIS. Part 1 has the 1985/86 photos; compare his figures (5万人, 約３ヘクタール) with other sources. The index also links the 'extra' page 幻の九龍城砦へタイムスリップ (sanyuanli, a later trip to a look-alike place; not about the City, INFERRED from the title) and a BBS thread.

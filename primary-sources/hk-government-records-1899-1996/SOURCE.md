@@ -377,7 +377,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 4 of 4 items read by the reading of the source search of 2026-11.
+- **Status:** read: 14 of 14 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0313: Laws of Hong Kong, Medical Clinics Ordinance, Chapter 343, Revised Edition 1987
@@ -561,172 +561,250 @@ testimony given later: tag its facts "retrospective (year)".
   - The rest of the note of 13 Jan 1964 (para. 4(2) onward): the original, probably in GRS HKRS163-1-3016 'Electricity supply Kowloon Walled City' (already listed in the repo's GRS catalogue notes)
 ### lead-l0197: Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, pp. 268-275 (regulation 25 'Slaughter of dog or cat for food prohibited. Onus of proof.'; regulation 26 'Penalty')
 
-- **Creator:** Hong Kong Government (Governor in Council, under the Dogs and Cats Ordinance, Ordinance No. 1 of 1950); scan by HKU Libraries, Historical Laws of Hong Kong Online
-- **Date:** 1950 (revised edition; regulation 26 as amended by G.N.A. 79/51)
-- **Kind:** document
-- **Class:** primary (The text of the law in force at the time of the 1961 case, printed by the government.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Historical Laws of Hong Kong Online, HKU Libraries: free to read; the site's download notice limits use (not checked in detail)
-- **Link:** https://oelawhk.lib.hku.hk/archive/files/75963e1fc70e2eea794748fae4f581b4.pdf
-- **Other links:** https://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=%22Dogs+and+Cats%22&sfield=ZZ&edition=1950&no_result=50, https://oelawhk.lib.hku.hk/archive/files/d0c4becad2fd3a5b1b07ddd2c5ada2b4.pdf, https://oelawhk.lib.hku.hk/archive/files/c48c778cdfbd2f5d075c053b5ecfb2da.pdf
-- **Proof that it exists:** Scanned p. 274: '25. (1) No person shall slaughter any dog or cat for use as food whether for mankind or otherwise. (2) No person shall sell or use or permit the sale or use of the flesh of dogs and cats for food.'; p. 275: '26. ... shall be liable to a fine of one thousand dollars and to imprisonment for six months.'
-- **What it gives (resolver's note, not checked):** The law that made the 1961 dog-meat den on Tai Chang Street (大井街) an offence: no slaughter of dogs or cats for food, no sale or use of their flesh, the onus of proof on a person found with a carcass, and a maximum of $1,000 and six months. The 1964 revised edition (alt URL, not opened) carries the same regulations as in force in the 1980s (INFERRED).
-- **Lead:** L0197 (cited by gap-street-address-search-2, hk-chinese-press-1947-1984)
-- **Notes:** The PDF is a scan with no text layer (7 pages). The 1950 Ordinance itself is the second alt URL (3 pages); the 1964 edition of the Regulations is the third alt URL.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, Dogs and Cats Regulations (Cap. 167, section 3; Ordinance No. 1 of 1950), 13 January 1950, in The Laws of Hong Kong, revised edition 1950, pp. 269-275 (reg. 26 as amended by G.N.A. 79/51), https://oelawhk.lib.hku.hk/archive/files/75963e1fc70e2eea794748fae4f581b4.pdf; with the Dogs and Cats Ordinance (Cap. 167), 6 January 1950, revised edition 1950, pp. 291-293, https://oelawhk.lib.hku.hk/archive/files/d0c4becad2fd3a5b1b07ddd2c5ada2b4.pdf; and the Dogs and Cats Regulations, 1978 edition, pp. A1-A6, https://oelawhk.lib.hku.hk/archive/files/c48c778cdfbd2f5d075c053b5ecfb2da.pdf; HKU Libraries, Historical Laws of Hong Kong Online
+- **Class:** primary (Legislation in force at the time (1950-1978 editions); a record made at the time. It belongs in primary-sources/ (it is general law, not about the City by name).)
+- **Date of the record:** 1950-01-13 (Regulations); 1950-01-06 (Ordinance); 1978 edition (reprint with amendments to L.N. 289/78)
+- **Files:**
+  - `lead-l0197-75963e1fc70e2eea794748fae4f581b4-2583d046.pdf` (in `local/`, not in git): Dogs and Cats Regulations, revised edition 1950, pp. 269-275 (scan PDF, 7 pages, 0.3 MB); https://oelawhk.lib.hku.hk/archive/files/75963e1fc70e2eea794748fae4f581b4.pdf; 336845 bytes; SHA-256 `8fa33d942c473535effe0ab7f6944dff877390c019c052b947d570bf643b16e3`; licence: Hong Kong legislation (Crown copyright at the time); HKU Libraries, Historical Laws of Hong Kong Online: no open licence stated; the library notice says 'Licences prohibit excessive downloading' (http://www.lib.hku.hk/general/warning.html)
+  - `lead-l0197-d0c4becad2fd3a5b1b07ddd2c5ada2b4-9c63c3b6.pdf` (in `local/`, not in git): Dogs and Cats Ordinance (No. 1 of 1950), revised edition 1950, pp. 291-293 (scan PDF, 3 pages); https://oelawhk.lib.hku.hk/archive/files/d0c4becad2fd3a5b1b07ddd2c5ada2b4.pdf; 133759 bytes; SHA-256 `2fdf945bff48924260015e41b4899a142f4c74b18e28f1949fce0beb2475eee8`; licence: Hong Kong legislation (Crown copyright at the time); HKU Libraries, Historical Laws of Hong Kong Online: no open licence stated; the library notice says 'Licences prohibit excessive downloading' (http://www.lib.hku.hk/general/warning.html)
+  - `lead-l0197-c48c778cdfbd2f5d075c053b5ecfb2da-580cd04a.pdf` (in `local/`, not in git): Dogs and Cats Regulations, 1978 edition, pp. A1-A6 (scan PDF, 6 pages); https://oelawhk.lib.hku.hk/archive/files/c48c778cdfbd2f5d075c053b5ecfb2da.pdf; 269452 bytes; SHA-256 `b92beb29a9248cefeebf0dd77699f4f30d2562997f1c7daa68d6ea4be98fb05b`; licence: Hong Kong legislation (Crown copyright at the time); HKU Libraries, Historical Laws of Hong Kong Online: no open licence stated; the library notice says 'Licences prohibit excessive downloading' (http://www.lib.hku.hk/general/warning.html)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 274, reg. 25(1) | Regulation 25(1) of the Dogs and Cats Regulations forbids anyone to slaughter a dog or cat for use as food, for people or otherwise. | "No person shall slaughter any dog or cat for use as food whether for mankind or otherwise." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 274, reg. 25(2) | Regulation 25(2) forbids anyone to sell or use, or to permit the sale or use of, the flesh of dogs and cats for food. | "No person shall sell or use or permit the sale or use of the flesh of dogs and cats for food." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 274, reg. 25(3) | Regulation 25(3) puts the onus of proof on the accused: a person found with the carcass of a dog or cat, or a part of it, in circumstances that suggest slaughter or sale for food, is guilty unless he satisfies a magistrate that he did not break the rule. | "unless he is able to satisfy a magistrate that he has not in fact committed any breach" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 275, reg. 26 | Regulation 26 sets the penalty for a breach of regulation 25(1) or (2) (and of other rules) at a fine of $1,000 and six months' imprisonment (as amended by G.N.A. 79/51). | "shall be liable to a fine of one thousand dollars and to imprisonment for six months." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 269, heading | The regulations are dated 13 January 1950 and were made under section 3 of the Dogs and Cats Ordinance (Ordinance No. 1 of 1950). | "(Cap. 167, section 3). (Ordinance No. 1 of 1950). [13th January, 1950.]" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, pp. 269-270, regs. 2-3 | Under the 1950 rules a person must hold a licence to keep a dog over three months old; the licensing authority is the Commissioner of Police (the District Commissioner in the New Territories). | "No person shall keep a dog over the age of three months except under and in accordance with a licence" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 270, reg. 4 | INFERRED: The 1950 dog licence fee is $10 a year for Hong Kong Island, Kowloon and New Kowloon (half fee for dogs first licensed in October and November), $10 for the urban areas of the New Territories and $2 for the rest of the New Territories. The Walled City lay in New Kowloon (INFERRED from its location). | "(a) the island of Hong Kong, Kowloon and New Kowloon ... $10.00" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 271, reg. 8(1) | In 1950 each licensed dog must wear a numbered metal badge; a dog found without a badge may be captured and detained, or shot by a police officer. | "Any dog found without such badge may be captured and detained or may be shot by any police officer" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 270, regs. 6-7 | In 1950 a dog must be inoculated against rabies at least once every twelve months, and no licence is issued for a dog that was not inoculated within the month before. | "such dog is inoculated against rabies at least once in every twelve months." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 271, reg. 9(1) | A dog or cat that bites a person must be reported to the nearest police station, and a police officer takes it to the Government observation kennels. | "shall report the fact to the nearest police station without delay" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 274, reg. 21 | In 1950 a dog in a public thoroughfare must be on a lead or wear a muzzle; the owner is liable for a breach even without fault. | "No dog shall be allowed to go abroad in the public thoroughfares or elsewhere unless it is either on the lead, or is fitted with a muzzle" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 275, Orders by the Governor, Inoculation Fees (G.N.A. 10/50) | The 1950 anti-rabies inoculation fee is $10 for Hong Kong Island, Kowloon and New Kowloon, $5 in the New Territories urban areas and free in the rural New Territories. | "(a) Hong Kong Island, Kowloon and New Kowloon ... $10" |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, revised edition 1950, p. 275, Observation and Quarantine Fees (G.N.A. 17/50); Approved Observation Kennels (G.N.A. 32/50) | The kennel fees in 1950 are $2.50 a day for a dog of 25 lb and over, $1.50 for a smaller dog and $1.00 for a cat. The approved observation kennels are Kennedy Town Kennels, Ma Tau Kok Kennels, Sassoon Kennels (Pokfulam) and the Jockey Club Stables. | "(b) Ma Tau Kok Kennels," |
+| Dogs and Cats Ordinance (Cap. 167, Ordinance No. 1 of 1950), Laws of Hong Kong, revised edition 1950, p. 291, s. 2 | INFERRED: The Ordinance says that the 'New Territories' in it does not include New Kowloon; thus the City, in New Kowloon, fell under the urban rules (INFERRED). | "New Territories" does not include New Kowloon; |
+| Dogs and Cats Ordinance (Cap. 167, Ordinance No. 1 of 1950), Laws of Hong Kong, revised edition 1950, p. 291, s. 3(1)(a) | The Ordinance lets the Governor in Council make rules on the slaughter and sale of dogs and cats and on the prohibition of the sale of their flesh. | "controlling dogs and cats and their importation, movement, slaughter and sale, and for the prohibition of the sale of the flesh of dogs and cats;" |
+| Dogs and Cats Ordinance (Cap. 167, Ordinance No. 1 of 1950), Laws of Hong Kong, revised edition 1950, p. 293, s. 5(1) | A police officer or Sanitary Department officer who has reason to believe that a place holds a rabid or suspect dog or cat, or evidence of a breach of the rules on licensing or on the importation, movement or slaughter of dogs or cats or the sale of their flesh, may without a warrant search the place, break open its doors, detain every person found there until it is searched, and seize any dog, cat or carcass. | "or the sale of the flesh of dogs or cats, may without warrant— (a) search any such vessel, aircraft or place;" |
+| Dogs and Cats Ordinance (Cap. 167, Ordinance No. 1 of 1950), Laws of Hong Kong, revised edition 1950, p. 293, s. 6 | Obstructing such a search or seizure is punished by a fine of $1,000 and six months' imprisonment. | "Penalty: a fine of one thousand dollars and imprisonment for six months." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, 1978 edition, p. A6, reg. 22 | The 1978 edition keeps the ban word for word as regulation 22: no slaughter of a dog or cat for food, no sale or use of the flesh, and the same onus of proof. | "No person shall slaughter any dog or cat for use as food whether for mankind or otherwise." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, 1978 edition, p. A6, reg. 23 | INFERRED: In the 1978 edition the penalty (regulation 23) is a fine of $5,000 and six months' imprisonment. On the scan the '5' is written by hand over the printed figure (INFERRED: a hand correction for a later amendment). | "shall be liable to a fine of $5,000 and to imprisonment for 6 months." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, 1978 edition, p. A3, regs. 4-5 | In the 1978 edition the dog licence fee is $15 (L.N. 37/78), and a licence runs for 3 years from the month after the rabies inoculation. | "the licence fee for each dog shall be $15." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, 1978 edition, pp. A2-A3, regs. 3, 6-8 | In the 1978 edition a dog must be licensed from 5 months old, inoculated against rabies at 5 months and then at least every 3 years, and tattooed on the inner ear with a mark for the month and year of inoculation. | "there shall be indelibly tattooed a mark or number referring to the month and year during which the inoculation took place." |
+| Dogs and Cats Regulations (Cap. 167), Laws of Hong Kong, 1978 edition, p. A5, reg. 19(4) | In the 1978 edition a dog off the lead on or by a public thoroughfare may be detained by the police, and destroyed if its owner does not claim it within 4 days. | "if the dog is not claimed by its owner or his agent within 4 days of the day on which it was detained, destroy the dog." |
+
+- **Leads:**
+  - The amendment that raised the penalty of the Dogs and Cats Regulations to $5,000 (the hand correction on p. A6 of the 1978 edition; the Legal Notice is not named on the page).
 ### lead-l0393: Extracts from Papers relating to the Extension of the Colony of Hongkong (No. 9/99), with the report of J. H. Stewart Lockhart on the New Territory (1898)
 
-- **Creator:** Hong Kong Government (laid before the Legislative Council); J. H. Stewart Lockhart, Colonial Secretary; Colonial Office
-- **Date:** 1898-1899
-- **Kind:** document
-- **Class:** primary (Official papers and a survey report of 1898-99, made at the time of the take-over.)
-- **Value:** medium
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (other records of this series state 'In Copyright', rights reserved)
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/s752d4174
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/s752d4174, https://digitalrepository.lib.hku.hk/catalog/x059jx34v, https://digitalrepository.lib.hku.hk/service/api/iiif/images/7940fk486/full/full/0/default.jpg
-- **Proof that it exists:** Canvas 1 (p. 177): 'HONGKONG. EXTRACTS FROM PAPERS RELATING TO THE EXTENSION OF THE COLONY OF HONGKONG.' No. 9/99; Downing Street, 6th January, 1899: 'The questions of the civil administration of Kowloon city and of the extension of the northern frontier ...'
-- **What it gives (resolver's note, not checked):** Lockhart's survey of the leased territory before the take-over (1898), with, by the heritage report's quotes, the Walled City: its wall, gates and watchtowers, its 544 soldiers and 200 civilians; and the despatches of 1899 on the civil administration of Kowloon City.
-- **Lead:** L0393 (cited by hkgov-19, hk-government-records-1899-1996)
-- **Notes:** The catalogue page needs JavaScript; the IIIF manifest and the page images open without it (use full/1000,/0/default.jpg). Find the Kowloon City section of the report (about canvases 7-30) before reading. Earlier history (1898).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, 'Extracts from Papers relating to the Extension of the Colony of Hongkong' (Sessional Paper No. 9/99, laid before the Legislative Council), with J. H. Stewart Lockhart, Report on the Extension of the Colony of Hongkong, 8 October 1898, pp. 177-212; and 'Despatches and other Papers relating to the Extension of the Colony of Hongkong' (No. 32/99), pp. 511-579; HKU Digital Repository record 'Papers Relating to Extension of Colony of Hongkong' (1899), https://digitalrepository.lib.hku.hk/catalog/s752d4174
+- **Class:** primary (Official reports and despatches of 1898-1899, written at the time. Earlier history (1898-1899).)
+- **Date of the record:** 1898-10-08 (Lockhart report); 1899-01-06 to 1899-04 (despatches); laid before the Legislative Council 1899
+- **Files:**
+  - `lead-l0393-default-0171685e.jpg` (in `local/`, not in git): Page image, No. 9/99 p. 177 (despatch of 6 Jan 1899 naming Kowloon City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/7940fk486/full/full/0/default.jpg; 488729 bytes; SHA-256 `d8829c62d85b51067eddf14471644b62e2a11ecc6ebda2c9b109a3fefc017ccb`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - `lead-l0393-default-c737622a.jpg` (in `local/`, not in git): Page image, No. 9/99 p. 197: Lockhart's 'Kowloon City' section (wall, towers, gates, population); https://digitalrepository.lib.hku.hk/service/api/iiif/images/0v83fp33w/full/full/0/default.jpg; 862294 bytes; SHA-256 `b1e45d24ea9fa764b12d382f11bda3c957c82cbd02c87b222cbb0e8f2e575af6`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - `lead-l0393-default-34c5e319.jpg` (in `local/`, not in git): Page image, No. 9/99 p. 198: civil population, no shops, native tribunal; https://digitalrepository.lib.hku.hk/service/api/iiif/images/1z40sh284/full/full/0/default.jpg; 731396 bytes; SHA-256 `78a5cf624425783a157c373e915d562628049619bf98bbc7f1eaeb72eb73a9d2`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - `lead-l0393-default-fea606c7.jpg` (in `local/`, not in git): Page image, No. 9/99 p. 209: Appendix 7, return of the population of Kowloon City with the garrison; https://digitalrepository.lib.hku.hk/service/api/iiif/images/qz210c95t/full/full/0/default.jpg; 547572 bytes; SHA-256 `756c0fd5da4cdc1c9b3aa6d643a23d297bf275c60124ecad333702a5f4ec311a`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - not downloaded (curl exit 35): Page image, No. 32/99 p. 11 (night visit to Kowloon City, 4 Apr 1899); https://digitalrepository.lib.hku.hk/service/api/iiif/images/th83sj460/full/full/0/default.jpg; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - `lead-l0393-default-7ad9ac5b.jpg` (in `local/`, not in git): Page image, No. 32/99 p. 19 (600 men sent to Kowloon); https://digitalrepository.lib.hku.hk/service/api/iiif/images/rf564s75h/full/full/0/default.jpg; 543106 bytes; SHA-256 `be0da7dbf76013b1f85e7580895574c5a93fd2d2d831555b24da0dce1e5bb32b`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+  - not downloaded (curl exit 56): Page image, No. 32/99 p. 28 (Deputy Wang and 300 soldiers at Kowloon); https://digitalrepository.lib.hku.hk/service/api/iiif/images/3r07bg85h/full/full/0/default.jpg; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/s752d4174)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-government-records-1899-1996/SOURCE.md`](../../secondary-sources/hk-government-records-1899-1996/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 177, despatch Chamberlain to Governor, 6 Jan 1899, para 3 | The Secretary of State named three points of special importance in the take-over of the leased territory: Kowloon City, the northern boundary and the Chinese duties on opium. | "They relate to Kowloon city, the northern boundary of the leased territory, and the collection of the Chinese duties on opium." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 177, para 4 | The Secretary of State told the Governor that the civil administration of Kowloon City needed no immediate action while negotiations with China went on. | "The questions of the civil administration of Kowloon city and of the extension of the northern frontier ... will require no immediate action" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 (report p. 15), section Kowloon City | Lockhart's report gives the Chinese name of the city as Kau Lung Shing; 'Shing' is the usual word for a walled city. | "The city of Kowloon is called in Chinese Kau Lung Shing." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | Lockhart reads the Convention's 'within the city of Kowloon' as meaning the walled city only. | "thus clearly showing that the walled city is meant." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The city lies about a quarter of a mile from the sea shore. | "Kowloon is situated about a quarter of a mile from the sea shore." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The city is enclosed by a stone wall that forms nearly a parallelogram of 700 feet by 400 feet, enclosing 6 1/2 acres. | "forming as nearly as possible a parrallelogram, measuring 700 feet by 400 feet, and enclosing an area of 6½ acres." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The wall has a granite ashlar facing, is 15 feet wide at the top and on average 13 feet high. | "The wall is built of granite ashlar facing, is 15 feet in width at the top, and averages in height 13 feet." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The wall has six watch towers, then used as family dwellings, and two gateways with wooden doors lined with iron sheeting. | "The wall has six watch towers, at present occupied as family dwellings, and two gateways" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The parapet wall is of granite with 119 embrasures; the wall is reached by four flights of stone steps. | "The parapet wall is built of granite, and has 119 embrasures. It is approached by four flights of stone steps." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 and footnote | The report refers to 'Sketch Plans of Kowloon City and Neighbourhood' (Maps VIII and IX) and photographs, but a footnote says they were not printed. | "(See Sketch Plans of Kowloon City and Neighbourhood, Maps VIII. and IX., and photographs.)*" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 182 (canvas 6), Index to Maps attached to Report | The index of maps of the report lists eleven maps, all marked 'Not printed'; Maps VIII and IX are 'Sketch Plans of Kowloon City', and Map VII shows where the officials of the San On District reside. | "VIII. IX. } Sketch Plans of Kowloon City" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | By the Deputy Magistrate's return the total population of the city is 744: a garrison of 544 and a civil population of 200. | "the total population of Kowloon city is 744; the garrison amounts to 544; the civil population to 200." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The officials in the city are one civil officer, a Deputy Magistrate, and military officers headed by the Colonel Commanding, the chief military officer of the San On district. | "with the exception of one civil officer, a Deputy Magistrate, military officers, the head of whom is the Colonel Commanding." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The Colonel's original headquarters were at Taip'ang (his title is still Taip'ang Hip); he moved into Kowloon city to be in closer touch with Hong Kong. | "The reason for his having taken up a residence within the city of Kowloon was to place him in closer relations with the Colony" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | Lockhart argues that the Colonel and his troops have no need to stay in the city, and that a foreign garrison in the heart of the territory cannot be allowed. | "The residence, therefore, of the Colonel Commanding and of his troops within the city of Kowloon is entirely unnecessary." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | The Deputy Magistrate does not govern the 200 civilians, who are subject to the military; his jurisdiction is outside the city, and Lockhart proposes to end the office after the take-over. | "He is appointed not to control the 200 civilians resident within the city, who are really subject to the military" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 198 | The 200 civilians live in the city only because they depend on the military; they do not trade, and there are no shops of any kind inside the city. | "It does not engage in trade, there being no shops of any kind within the city." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 198 | Lockhart expects the civilians to follow the military out, leaving no one for a Chinese officer to govern. | "If the military remove from the city, the civil population is sure to follow" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 198 | If some civilians stay, Lockhart proposes a native tribunal of elders and gentry under the travelling magistrate, with appeal to the Council of the Tung and to the Commissioner. | "they might be allowed to establish a native tribunal presided over by the elders and gentry" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 209, Appendix No. 7 (report p. 27) | Appendix 7 breaks down the garrison: a Colonel, a First Captain, and for each of the left and right wing divisions a few officers and NCOs with companies of drilled troops and braves. | "Return showing the Population of Kowloon City, including the Garrison furnished by the Deputy Magistrate." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 209, Appendix No. 7 | The rank and file in Appendix 7: regular infantry 160 (including clerks and servants) and 70; drilled troops 100 and 100; braves of the right and left wing division 100; civil population about 200; total 744. | "Regular infantry (including clerks and servants) ... 160" |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 206, village list, Kau Lung Division | The village list of the Kau Lung Division lists 'Kau lung' (九龍) with 1,200 people, marked P. (Punti). The list does not say whether this is the walled city or the town round it. | "Kau lung ... 九龍 1,200 P." |
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 202, Report on proposed new roads, by Mr. Ormsby | Ormsby's report on new roads proposes carrying the Des Voeux Road on the east side of British Kowloon through Hung Hom on to Kowloon City. | "The Des Vœux road on the east side of British Kowloon through Hung-Hom should be carried on to Kowloon city" |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 11 of the paper (canvas 47), Colonial Secretary's Report of 5 Apr 1899 | On 4 April 1899 Lockhart left Government House at 2.35 a.m. with Mr. Ts'oi by police pinnace and reached Kowloon City at about 3.30 a.m.; he woke the Colonel-in-Command, who promised to telegraph the Viceroy and to send messengers to the San On Magistrate and to Major Fong, the officer in command of the 300 Chinese troops. Lockhart left Kowloon City at 4 a.m. | "proceeded with Mr. Ts'oi on board a Police pinnace to Kowloon City which was reached about 3.30 a.m." |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 11 (canvas 47), Governor's instructions, 4 Apr 1899 | Governor Blake told Lockhart to ask the 'Kowloon Authority' to send 200 men at once to protect the matshed at Tai Po (the report on the same page names the place Tái pó Hü (大埔墟)). | "should communicate with the Kowloon Authority and request him to send 200 men forthwith and protect the matshed." |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, canvas 50, Report by Captain Superintendent of Police, 4 Apr 1899 | On 3 April 1899 the Captain Superintendent of Police went to Tai Po by way of Kowloon City, with 4 Sikh policemen, 5 Chinese soldiers from Kowloon City and an interpreter. | "an escort of 4 Sikh policemen, 5 Chinese soldiers from Kowloon City, and a Chinese interpreter." |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 19 of the paper (canvas 55), Viceroy T'an to Consul Mansfield, 10 Apr 1899 (translation) | The Viceroy wrote on 10 April 1899 that he had sent 600 men to take up quarters at Kowloon. | "I forthwith sent 600 men take up their quarters at Kowloon" |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 28 of the paper (canvas 64), Governor's despatch No. 107 of 28 Apr 1899 (INFERRED from the run of pages) | INFERRED: Governor Blake reports that on 15 April 1899 he was told that Deputy Wang had been sent down by the Viceroy with 300 soldiers to Kowloon; Blake told Wang that he could not permit Chinese troops to remain in the Territory and at Kowloon. | "I told him that I could not permit Chinese troops to remain in the Territory and at Kowloon" |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 24 of the paper (canvas 60), enclosure in Governor's despatch No. 105 of 27 Apr 1899 | The Committee of the Hong Kong Chamber of Commerce urged the removal of the Chinese officials from Kowloon City, calling it a focus of intrigue against the Hong Kong Government. | "for the removal of the Chinese officials from Kowloon City, which otherwise will remain a focus of intrigue" |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 37 of the paper (canvas 73), Enclosure No. 2 in Governor's Minute of 17 Apr 1899, Viceroy T'an (translation) | Viceroy T'an wrote on 17 April 1899 that the Convention lets the Chinese officials stationed in Kowloon City continue their duties 'as heretofore', thus there could be no question of removing them. | "Chinese officials stationed in Kowloon City shall continue to perform their duties "as heretofore." Therefore there can be no question of removing them. |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 37 of the paper (canvas 73), Viceroy T'an, 17 Apr 1899 (translation) | In the same letter the Viceroy says he sent 300 men of the Chien (建) Battalion to take up quarters at Kowloon, because the Governor himself had asked for soldiers to keep order. | "so I sent 300 men of the Chien (建) Battalion to take up their quarters at Kowloon" |
+| No. 32/99, Despatches and other Papers relating to the Extension of the Colony of Hongkong, p. 37 of the paper (canvas 73), Viceroy T'an, 17 Apr 1899 (translation) | The Viceroy adds that by 17 April 1899 the Chien (建) detachment had been moved from Kowloon to Sha T'ou Chio (沙頭角); the Fang Yen (方沿) detachment was still at Shin Chow (深州). | "the Fang Yen detachment are still at Shin Chow, while the Chien detachment have been moved to Sha T'ou Chio (沙頭角)." |
+
+- **Leads:**
+  - Lockhart's 'Sketch Plans of Kowloon City and Neighbourhood' (Maps VIII and IX) and the photographs of the 1898 report, not printed in No. 9/99 (p. 197 footnote; index of maps p. 182); the originals are probably with the Colonial Office papers (INFERRED).
+  - Map VII of the 1898 report, 'Map showing where the Officials of the San On District reside' (index of maps, p. 182), not printed; it can show the official quarters in Kowloon City.
 ### lead-l0395-1: Hong Kong. Public Works Department. Annual departmental report, 1936
 
-- **Creator:** Hong Kong Public Works Department
-- **Date:** 1937 (report for 1936)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/pk02kc078
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/pk02kc078
-- **Proof that it exists:** HKU search result for "walled city" "Public Works": 'Hong Kong. Public Works Department. Annual departmental report, 1936' (catalog/pk02kc078).
-- **What it gives (resolver's note, not checked):** The works of 1936 in New Kowloon; INFERRED from the 1934 report (hkgov-20): the resettlement of the Walled City's inhabitants at Chuk Un and the clearance of the City in the 1930s.
-- **Lead:** L0395 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1936). Look first at the Director's report (pp. 1-10) and the Crown Lands and Survey report (about pp. 80-95), as in hkgov-20.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Public Works Department, Report of the Director of Public Works for the year 1936 (Annual departmental report, 1936), p. Q 49, para 176; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/pk02kc078
+- **Class:** primary (A departmental annual report written at the time (1937, for 1936). Earlier history.)
+- **Date of the record:** 1937 (report for 1936)
+- **Files:**
+  - `lead-l0395-1-default-f4ea3fe6.jpg` (in `local/`, not in git): Page image, PWD report 1936 p. Q 49 (para 176, Kowloon Walled City new village houses); https://digitalrepository.lib.hku.hk/service/api/iiif/images/t148nk45j/full/full/0/default.jpg; 512769 bytes; SHA-256 `0fa660403746d753b09a5e7ef1a1bad20f1637944936aed6d612f857360e973e`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/pk02kc078)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Public Works Department, Annual departmental report 1936, p. Q 49, para 176 | Under the head 'Kowloon Walled City—New Village type houses and site formation', a contract to form 37 building lots to Town Planning levels at Kak Hang was let to Messrs. Woo Hing & Co. in September 1936. | "A contract for the formation of thirty-seven building lots to Town Planning levels at Kak Hang was let to Messrs. Woo Hing & Co. in September." |
+| Public Works Department, Annual departmental report 1936, p. Q 49, para 176 | With the site works a pond near the site was filled in to make room for pig pens; the work was completed in October 1936. | "the filling in of a pond near the site to make provision for pig pens was completed in October, 1936." |
+| Public Works Department, Annual departmental report 1936, p. Q 49, para 176 | The expenditure on this head was $44,073.40 in 1936, and $46,062.74 in all to 31 December 1936. | "Expenditure ... $44,073.40 Expenditure to 31st Dec., 1936 $46,062.74" |
+
+- **Leads:**
+  - The plans of the 37 building lots at Kak Hang for the new village houses of the people moved from the Walled City (PWD 1936, para 176); the contract with Woo Hing & Co. of September 1936.
 ### lead-l0395-2: Hong Kong. Public Works Department. Annual departmental report, 1937
 
-- **Creator:** Hong Kong Public Works Department
-- **Date:** 1938 (report for 1937)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/js95dk281
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/js95dk281
-- **Proof that it exists:** HKU search result for "walled city" "Public Works": 'Hong Kong. Public Works Department. Annual departmental report, 1937' (catalog/js95dk281), first of 71 results.
-- **What it gives (resolver's note, not checked):** The works of 1937 in New Kowloon, with a mention of the walled city (INFERRED from the full-text hit: the clearance and the park plans of the late 1930s).
-- **Lead:** L0395 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1937). Page not located.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Public Works Department, Report of the Director of Public Works for the year 1937 (Annual departmental report, 1937), pp. Q 46 (para 163), Q 53 (para 205) and Q 90 (para 34); HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/js95dk281
+- **Class:** primary (A departmental annual report written at the time (1938, for 1937). Earlier history.)
+- **Date of the record:** 1938 (report for 1937)
+- **Files:**
+  - `lead-l0395-2-default-d0c4606b.jpg` (in `local/`, not in git): Page image, PWD report 1937 p. Q 46 (houses demolished in the Walled City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/tm70tx81q/full/full/0/default.jpg; 460407 bytes; SHA-256 `0e93262998c670d8363252c595cd5467f44fc0f34b7839de8c7b3a7871e45e42`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/js95dk281)
+  - `lead-l0395-2-default-8422f764.jpg` (in `local/`, not in git): Page image, PWD report 1937 p. Q 53 (rehousing of families from the Walled City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/8k71vk12x/full/full/0/default.jpg; 650216 bytes; SHA-256 `b23da3b5b4d1bdaca7a54d27a29dd88eb1911b81a14ff8361386078162b50330`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/js95dk281)
+  - not downloaded (curl exit 35): Page image, PWD report 1937 p. Q 90 (contour survey of the Walled City, 1/600); https://digitalrepository.lib.hku.hk/service/api/iiif/images/tx31xn72z/full/full/0/default.jpg; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/js95dk281)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Public Works Department, Annual departmental report 1937, p. Q 46, para 163 (Miscellaneous) | In 1937 a number of houses were demolished in the Kowloon Walled City (listed among miscellaneous works; the head's total expenditure was $1,502.41 for all its items). | "A number of houses were demolished in Kowloon Walled City." |
+| Public Works Department, Annual departmental report 1937, p. Q 53, para 205 | In 1937 the head 'Kowloon Walled City—New Village Type houses and site formation' paid for the rehousing of a number of families from the Walled City: $10,831.31. | "Expenditure incurred in connection with the rehousing of a number of families from Kowloon Walled City. Expenditure ... $10,831.31" |
+| Public Works Department, Annual departmental report 1937, p. Q 90, Contour Surveys and Levelling, para 34 | In 1937 a contour survey of the Kowloon Walled City (10 1/2 acres) was made and plotted at a scale of 1/600 with a vertical interval of 10 feet. | "Kowloon Walled City (10½ acres) were made and plotted. Scale 1/600, Vertical interval 10 feet in each case." |
+| Public Works Department, Annual departmental report 1937, p. Q 90, para 34 | INFERRED: The 10 1/2 acres of the 1937 survey are more than the 6 1/2 acres inside the wall in Lockhart's report of 1898; the survey thus probably took in ground round the wall (INFERRED). | "Kowloon Walled City (10½ acres)" |
+
+- **Leads:**
+  - The contour survey plan of the Kowloon Walled City, 10 1/2 acres, scale 1/600, vertical interval 10 ft, made by the Crown Lands and Survey Office in 1937 (PWD report 1937, p. Q 90, para 34); where it is kept is not stated.
 ### lead-l0396-1: Administrative Reports for the Year 1919
 
-- **Creator:** Hong Kong Government (departmental reports)
-- **Date:** 1920 (reports for 1919)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/3f467d12q
-- **Other links:** https://digitalrepository.lib.hku.hk/catalog/js95cv06g, https://digitalrepository.lib.hku.hk/catalog/0c488v391, https://digitalrepository.lib.hku.hk/catalog/69704967g
-- **Proof that it exists:** HKU record 'Administrative Reports for the Year 1919', 31 parts (Appendix J. New Territories; Appendix Q. Public Works; ...); it is in the search result for "walled city" "Administrative Reports".
-- **What it gives (resolver's note, not checked):** The departmental reports of 1919; one of them names a walled city (not located; INFERRED: the New Territories, Police or Public Works report).
-- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1919).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, Administrative Reports for the Year 1919, Education report, Table II 'Controlled Schools in receipt of a grant under the Grant Code of 1914', p. O 15; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/3f467d12q (canvas 370)
+- **Class:** primary (A departmental report of the time (for 1919). Earlier history.)
+- **Date of the record:** 1920 (reports for 1919)
+- **Files:**
+  - `lead-l0396-1-default-b78a7514.jpg` (in `local/`, not in git): Page image, Administrative Reports 1919, p. O 15 (Table II of grant schools, row 83 Kowloon Walled City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/zs263h05k/full/full/0/default.jpg; 1618579 bytes; SHA-256 `97c080fa7094c8cdcaefbaa10c047efa7048ad4dfbff55acd9d18947cf62f171`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/3f467d12q)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Administrative Reports 1919, Education, Table II, p. O 15, row 83 | The 1919 list of grant-aided controlled schools has a boys' school called 'Kowloon Walled City' (No. 83) among the vernacular schools of the lower grade. | "Kowloon Walled City, (B.)" |
+| Administrative Reports 1919, Education, Table II, p. O 15, row 83 and Note | The school is run by the Confucian Society (C.S.); the notes at the foot of the table give C.S. = Confucian Society and B. = Boys. | "C. S. =Confucian Society." |
+| Administrative Reports 1919, Education, Table II, p. O 15, row 83 | In 1919 the school had 4 standards (the column head is 'Number of Standards'), 235 school days, a maximum monthly enrolment of 67 and an average attendance of 57. | "Kowloon Walled City, (B.) ** ... 4 235 67 57" |
+| Administrative Reports 1919, Education, Table II, p. O 15, row 83 | INFERRED: Its grant was $171, at a rate of $3 a head of average attendance (57 x 3 = 171; the dollar unit is INFERRED from the table head). | "57 3 ... 171" |
+| Administrative Reports 1919, Education, Table II, p. O 15, notes | The two stars after the name mean that the school year ends on 31 December. | "** = School year ends 31st December." |
 ### lead-l0396-2: Administrative Reports for the Year 1920
 
-- **Creator:** Hong Kong Government (departmental reports)
-- **Date:** 1921 (reports for 1920)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/1n79pd520
-- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1920' (catalog/1n79pd520), first of 7.
-- **What it gives (resolver's note, not checked):** The departmental reports of 1920 with a mention of a walled city (not located).
-- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1920). Not opened beyond the search list.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, Administrative Reports for the Year 1920: Education report, Table II, p. O 25; Report of the Director of Public Works, New Territories, p. Q 65 and Annexe B, p. Q 82; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/1n79pd520
+- **Class:** primary (Departmental reports of the time (for 1920). Earlier history.)
+- **Date of the record:** 1921 (reports for 1920)
+- **Files:**
+  - `lead-l0396-2-default-372ada15.jpg` (in `local/`, not in git): Page image, Administrative Reports 1920, p. O 25 (grant schools, row 83 Kowloon Walled City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/f1886t836/full/full/0/default.jpg; 1279277 bytes; SHA-256 `d63223ca275194d671c62fd3b2cb5008be747bf81ee80b9e328c9f039ccb65d2`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/1n79pd520)
+  - `lead-l0396-2-default-d15f502d.jpg` (in `local/`, not in git): Page image, Administrative Reports 1920, p. Q 65 (Road to Kowloon Walled City); https://digitalrepository.lib.hku.hk/service/api/iiif/images/qr46x886c/full/full/0/default.jpg; 394869 bytes; SHA-256 `07e3c55c0c1943355d4f357f2989ee3647663f4a6702c3204cb1394d5d74d21a`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/1n79pd520)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Administrative Reports 1920, Education, Table II, p. O 25, row 83 | In the 1920 list of grant-aided schools, school No. 83 'Kowloon Walled City' (boys) of the Confucian Society (a ditto of 'C. S.' in the Mission column) had 4 standards, 220 school days, a maximum monthly enrolment of 77 and an average attendance of 44. | "Kowloon Walled City, (B.) ... 4 220 77 44" |
+| Administrative Reports 1920, Education, Table II, p. O 25, row 83 | INFERRED: Its 1920 grant was $88, at a rate of 2 a head of average attendance (44 x 2 = 88); the dollar unit of the rate is INFERRED from the 1919 table head. The row is in the Vernacular Schools (Lower Grade) part of the table, as in 1919. | "44 2 ... 88" |
+| Administrative Reports 1920, Public Works, New Territories, p. Q 65, item (d) | A 'Road to Kowloon Walled City' was in the 1920 New Territories works, but the work was not proceeded with. | "Road to Kowloon Walled City.—This work was not proceeded with." |
+| Administrative Reports 1920, Public Works, p. Q 65, item (d) | The road had a 1920 estimate of $5,000 and no expenditure. | "1920 Estimates, ... $ 5,000.00 1920 Expenditure, ... Nil." |
+| Administrative Reports 1920, Public Works, Annexe B, p. Q 82, head 68 (d) | Annexe B of the works accounts lists the 'Road to Kowloon Walled City' under Roads, New Territories: $5,000 estimated, nothing spent, a decrease and balance of $5,000.00. | "(d) Road to Kowloon Walled City ... 5,000" |
 ### lead-l0396-3: Administrative Reports for the Year 1929
 
-- **Creator:** Hong Kong Government (departmental reports)
-- **Date:** 1930 (reports for 1929)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/sj13g930d
-- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1929' (catalog/sj13g930d).
-- **What it gives (resolver's note, not checked):** The departmental reports of 1929 with a mention of a walled city (not located); not in the lead, found by the same search.
-- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1929). Not opened beyond the search list.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, Administrative Reports for the Year 1929, Report of the Director of Public Works, New Kowloon, p. Q 101, para 230 'Repairs to Kowloon City Wall', and Annexe B, p. Q 129, item 126; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/sj13g930d
+- **Class:** primary (A departmental report of the time (for 1929). Earlier history.)
+- **Date of the record:** 1930 (reports for 1929)
+- **Files:**
+  - `lead-l0396-3-default-73d72e6b.jpg` (in `local/`, not in git): Page image, Administrative Reports 1929, p. Q 101 (para 230, Repairs to Kowloon City Wall); https://digitalrepository.lib.hku.hk/service/api/iiif/images/2n500b327/full/full/0/default.jpg; 506950 bytes; SHA-256 `5e9b04777627138e9f6539b9a06551587503e828d3b4f1c20d7543c5fe6d6397`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/sj13g930d)
+  - `lead-l0396-3-default-d8d316f5.jpg` (in `local/`, not in git): Page image, Administrative Reports 1929, p. Q 129 (Annexe B, item 126); https://digitalrepository.lib.hku.hk/service/api/iiif/images/6w929r387/full/full/0/default.jpg; 514889 bytes; SHA-256 `07dfcf6c79606c61bf273a055babfe79914346dc3b13f6e9bcd15d2ce4bc25b8`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/sj13g930d)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Administrative Reports 1929, Public Works, New Kowloon, p. Q 101, para 230 | In 1929 the PWD repaired the City wall: it rebuilt the north-east corner of the old wall round the 'Walled City', diverted the stream course at that point and improved the drainage. | "the rebuilding of the North East Corner of the Old Wall, encircling the "Walled City", diversion of the stream course at this point" |
+| Administrative Reports 1929, Public Works, p. Q 101, para 230 | The contract was let to Mr. Man Gang for $2,042.40 on 3 July 1929, and the work was completed at the end of the year. | "A Contract was let to Mr. Man Gang for a sum of $2,042.40 on 3rd July, 1929." |
+| Administrative Reports 1929, Public Works, p. Q 101, para 230 | The estimate was $2,000 and the expenditure $1,980.19. | "Estimates, ... $2,000.00 Expenditure, ... $1,980.19" |
+| Administrative Reports 1929, Public Works, Annexe B, p. Q 129, items 125-126 | Annexe B lists 'Repairs to Kowloon City wall' under New Kowloon, Miscellaneous (item 126): $2,000 estimated, $1,980.19 spent, $19.81 less; the item before it, 'Kowloon City, Filling in of large areas', had $30,000 estimated and nothing spent. | "126. Repairs to Kowloon City wall, ... 2,000 1,980.19" |
 ### lead-l0396-4: Administrative Reports for the Years 1934, 1935, 1936 and 1937
 
-- **Creator:** Hong Kong Government (departmental reports)
-- **Date:** 1935-1938
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on the other records of this series in the repo; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/pk02jm424
-- **Other links:** https://digitalrepository.lib.hku.hk/catalog/2f75xj50j, https://digitalrepository.lib.hku.hk/catalog/3j338d38q, https://digitalrepository.lib.hku.hk/catalog/js95ct94w
-- **Proof that it exists:** HKU search result for "walled city" "Administrative Reports": 'Administrative Reports for the Year 1934' (pk02jm424), 1935 (2f75xj50j), 1936 (3j338d38q), 1937 (js95ct94w).
-- **What it gives (resolver's note, not checked):** The departmental reports of 1934-1937 (Police, New Territories, Public Works and others); INFERRED: the walled-city hits can be the Public Works text of lead-l0395 and hkgov-20, or the Police or Secretariat for Chinese Affairs reports on the clearance of the 1930s.
-- **Lead:** L0396 (cited by hkgov-20, hk-government-records-1899-1996)
-- **Notes:** Earlier history (1934-37). Four volumes in one candidate; not opened beyond the search list.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, Administrative Reports for the Years 1934, 1935, 1936 and 1937: Public Works 1934 pp. Q 52 and Q 91; Public Works 1935 p. Q 50; Finance 1936 p. A 34; New Territories, Southern District 1936 p. J (1) 7; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/pk02jm424, /2f75xj50j, /3j338d38q, /js95ct94w
+- **Class:** primary (Departmental reports of the time (1934-1937). Earlier history.)
+- **Date of the record:** 1935-1938 (reports for 1934-1937)
+- **Files:**
+  - `lead-l0396-4-default-3ee3192f.jpg` (in `local/`, not in git): Page image, Administrative Reports 1934, p. Q 52 (para 187, six houses for Walled City inhabitants); https://digitalrepository.lib.hku.hk/service/api/iiif/images/kp78ns608/full/full/0/default.jpg; 383376 bytes; SHA-256 `38e6d96926fe7597f56d3ccf55f56b81cf27be6fd7ba68edfb207f905bcf3ebb`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/pk02jm424)
+  - `lead-l0396-4-default-f2204be3.jpg` (in `local/`, not in git): Page image, Administrative Reports 1935, p. Q 50 (para 169); https://digitalrepository.lib.hku.hk/service/api/iiif/images/n5844585d/full/full/0/default.jpg; 447170 bytes; SHA-256 `5d13ae202a5c11daed1edd96592ce9045baf0d7588780c579f683f31a01a889b`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/2f75xj50j)
+  - not downloaded (curl exit 56): Page image, Administrative Reports 1936, Finances p. A 34; https://digitalrepository.lib.hku.hk/service/api/iiif/images/rv048578b/full/full/0/default.jpg; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/3j338d38q)
+  - `lead-l0396-4-default-37ef45a1.jpg` (in `local/`, not in git): Page image, Administrative Reports 1936, New Territories Southern District p. J (1) 7 (rent roll note); https://digitalrepository.lib.hku.hk/service/api/iiif/images/7s75kp921/full/full/0/default.jpg; 388177 bytes; SHA-256 `bda739fab359d41468a3d7379c2b4c823888b2e55e5b80403dff10512c942774`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/3j338d38q)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Administrative Reports 1934, Public Works, p. Q 52, para 187 | In 1934, under 'Compensation and Resumptions', 29 resumptions were made for the Town Planning Scheme, and a block of six houses to rehouse certain inhabitants of the Kowloon Walled City was begun and nearly completed (the head's expenditure was $20,242.48). | "The erection of a block of six houses to reprovision certain inhabitants of Kowloon Walled City was put in hand and nearly completed." |
+| Administrative Reports 1934, Public Works (Crown Lands and Survey), New Kowloon, p. Q 91 | In 1934 the survey office set out a site for a new village near Chuk Un for the inhabitants of 'Kowloon Walled Village'. | "Setting out a site for a new village near Chuk Un for the inhabitants of Kowloon Walled Village." |
+| Administrative Reports 1935, Public Works, p. Q 50, para 169 | In 1935 the block of six houses to rehouse certain inhabitants of the Walled City was completed; the 1935 expenditure on the head 'Kowloon Walled City—New Village type houses and site formation' was $1,989.34. | "The erection of a block of six houses to reprovision certain inhabitants of Kowloon Walled City was completed." |
+| Administrative Reports 1936, Finances, p. A 34 (Public Works Extraordinary, which starts on p. A 33) | INFERRED: The Treasurer's review of the 1936 out-turn of Public Works Extraordinary says that the new village type houses for the old squatters within the Kowloon Walled City cost $10,073 more than estimated. The year is 1936: the review names the typhoon of 17 August and a revote for 1937 (pp. A 33-A 34). The 1936 PWD report gives $44,073.40 spent on this head in 1936, thus the 1936 estimate was probably $34,000 (INFERRED). | "The provision of new village type houses for the old squatters within Kowloon Walled City cost $10,073 more than anticipated" |
+| Administrative Reports 1936, New Territories Southern District, p. J (1) 7, Table II, note 2 | The District Officer (Southern District) rent roll fell from $26,577.38 (1935) to $26,452.47 (1936), down $124.91, because of the resumption and re-entry of lots and the expiry of leases in the Kowloon Walled City during 1936. | "This is accounted for by the resumption and re-entry of lots and the expiry of leases in Kowloon Walled City during the year." |
+| Administrative Reports 1936, New Territories Southern District, p. J (1) 7, Table II, note 2 | INFERRED: The lots of the Walled City were thus on the rent roll of the New Territories Southern District office in the 1930s, not on the urban rent roll (INFERRED from the note). | "Amount due on 1936 Rent Roll ... $26,452.47" |
+
+- **Leads:**
+  - The rent roll of the New Territories Southern District for 1935-1936 with the Kowloon Walled City lots that were resumed, re-entered or expired (Administrative Reports 1936, p. J (1) 7, note 2).
 ### lead-l0399: Hong Kong. Fire Services Department. Annual departmental report, 1960-1961, 1961-1962, 1963-1964, 1964-1965, 1965-1966 and 1966-1967 (and one undated record)
 
-- **Creator:** Hong Kong Fire Services Department (Director of Fire Services)
-- **Date:** 1961-1967
-- **Kind:** document
-- **Class:** primary (Annual government reports of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/), rights reserved, as on hkgov-23; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/js95d8374
-- **Other links:** https://digitalrepository.lib.hku.hk/catalog/3r07bm931, https://digitalrepository.lib.hku.hk/catalog/cr56tt45p, https://digitalrepository.lib.hku.hk/catalog/g732kx60h, https://digitalrepository.lib.hku.hk/catalog/8336pq372, https://digitalrepository.lib.hku.hk/catalog/sn00hn85x, https://digitalrepository.lib.hku.hk/catalog/7d27gh88w
-- **Proof that it exists:** HKU search result list: 'Hong Kong. Fire Services Department. Annual departmental report. 1963-1964' (catalog/js95d8374) and the other years, for the query "Fire Services Department" "Annual departmental report" "Kowloon City".
-- **What it gives (resolver's note, not checked):** The yearly fire lists and fire-cover notes of the 1960s; they name Kowloon City but not the walled city (full-text search), so any fire in the City is under a street or village name. Low value for 1986.
-- **Lead:** L0399 (cited by hkgov-23, hk-government-records-1899-1996)
-- **Notes:** Use the IIIF manifests (service/api/iiif/manifest/<id>) for the pages. Look for street names of the City (Lung Chun Road (龍津道), Tung Tau Tsuen Road (東頭村道), Sai Shing Road (西城路)) in the lists of large fires.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Fire Services Department, Annual departmental report, 1960-61, 1961-62, 1963-64, 1964-65, 1965-66 and 1966-67 (Director of Fire Services, Annual Departmental Report 1966-67, paras 141-143, p. 26); HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/js95d8374 (1963-64), with /3r07bm931, /cr56tt45p, /g732kx60h, /8336pq372, /sn00hn85x (1966-67) and the undated /7d27gh88w
+- **Class:** primary (Departmental annual reports of the time (1961-1967). They do not name the Walled City; the one Kowloon City fire of 1966 is not located more closely.)
+- **Date of the record:** 1961-1967 (the 1966-67 report: 1967)
+- **Files:**
+  - `lead-l0399-default-d698f4f9.jpg` (in `local/`, not in git): Page image, Fire Services report 1966-67 p. 26 (paras 141-143, 4th Alarm—Kowloon City, 29 Nov 1966); https://digitalrepository.lib.hku.hk/service/api/iiif/images/7p88k873n/full/full/0/default.jpg; 479414 bytes; SHA-256 `fde3cd625401b0e9e672977103e7337e9f99a00082dce700d9cd353cfecd8826`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/sn00hn85x)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Fire Services Department, Annual Departmental Report 1966-67, p. 26, para 141, heading "4th Alarm—Kowloon City" | A '4th Alarm' fire broke out shortly after 6 a.m. on 29 November 1966 in a highly congested squatter area in Kowloon City; the first units arrived within 4 minutes and found a fire over about 30,000 square feet. The report does not say whether the area was inside the Walled City or round it (not located). | "Shortly after 6 a.m. on 29th November 1966 a fire broke out in a highly congested squatter area." |
+| Fire Services Department, Annual Departmental Report 1966-67, p. 26, para 142 | The uneven terrain and the mass of squatter structures made it very hard to lay hose lines and carry equipment; the fire severely damaged 22 structures and was under control in just over an hour. | "The uneven terrain and conglomeration of squatter property made laying of hose lines and manhandling of equipment extremely difficult." |
+| Fire Services Department, Annual Departmental Report 1966-67, p. 26, para 143 | The Fire Prevention Bureau found that the fire started in the kitchen of a squatter structure when a non-pressure type kerosene stove was overturned and lit combustible material nearby. | "the fire started in a kitchen of a squatter structure when a non-pressure type kerosene stove was carelessly over-turned" |
+| Fire Services Department, Annual Departmental Report 1966-67, p. 26, para 141 (with lead-l0464) | INFERRED: The squatter area of this fire is possibly the squatter ground in or next to the Walled City, which the 1964 L901 map shows as one stippled area with Po Toi village (INFERRED; the report gives no street). | "4th Alarm—Kowloon City" |
+
+- **Leads:**
+  - The place of the '4th Alarm—Kowloon City' squatter fire of 29 November 1966 (22 structures; Fire Services report 1966-67, paras 141-143): the Hong Kong press of 29-30 November 1966 can say whether it was in or by the Walled City.
 ### lead-l0465: Public Works Report for 1903 (Report of the Director of Public Works for the year 1903), Sessional Papers for the Year 1904
 
-- **Creator:** Hong Kong Public Works Department (Director of Public Works)
-- **Date:** 1904 (report for 1903)
-- **Kind:** document
-- **Class:** primary (An annual government report of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (records of this series state 'In Copyright')
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/d7920769g
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/d7920769g, https://digitalrepository.lib.hku.hk/catalog/x920pk72z
-- **Proof that it exists:** HKU record title 'Public Works Report for 1903'; breadcrumb 'Hong Kong Government Reports Online / Sessional Papers (1884-1940) / Sessional Papers for the Year 1904'; IIIF manifest with 46 canvases.
-- **What it gives (resolver's note, not checked):** Item 48 'Survey of the New Territory': the survey staff of 1903 (1 inspector, 24 surveyors, 32 Indian chain-men, about 45 Chinese coolies, per Gwulo) and the 557 sheets at 32 inches to the mile of the survey that drew the Walled City in 1903; it can say where the sheets were kept.
-- **Lead:** L0465 (cited by maps-15, maps-and-aerial-photos-1889-1994)
-- **Notes:** Find item 48 in the 46 images (use the IIIF image API, full/1000,/0/default.jpg). Earlier history (1903).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** W. Chatham, Director of Public Works, 'Report of the Director of Public Works, for the year 1903' (No. 1904, 28 March 1904), Sessional Papers 1904, pp. 163-208: item 48 'Survey of New Territory', pp. 178-179, and Appendix C, p. 200; HKU Digital Repository, https://digitalrepository.lib.hku.hk/catalog/d7920769g
+- **Class:** primary (A departmental annual report written at the time (March 1904, for 1903). Earlier history.)
+- **Date of the record:** 1904-03-28
+- **Files:**
+  - `lead-l0465-default-ec732501.jpg` (in `local/`, not in git): Page image, PWD report 1903 p. 178 (item 48, Survey of New Territory); https://digitalrepository.lib.hku.hk/service/api/iiif/images/0k22c190x/full/full/0/default.jpg; 725352 bytes; SHA-256 `2d9d0ccbdea9168925917f04613a7b837ced7dde097d639cbbe99b6a938edf2e`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/d7920769g)
+  - `lead-l0465-default-098543dc.jpg` (in `local/`, not in git): Page image, PWD report 1903 p. 179 (survey staff, sheets and tracings); https://digitalrepository.lib.hku.hk/service/api/iiif/images/hq382b810/full/full/0/default.jpg; 731667 bytes; SHA-256 `4f407a02c51146adb8e010b14b4844d460b69309efecf645905f8f22e8f89e46`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/d7920769g)
+  - `lead-l0465-default-f09f5241.jpg` (in `local/`, not in git): Page image, PWD report 1903 p. 200 (Appendix C, table of the cadastral survey); https://digitalrepository.lib.hku.hk/service/api/iiif/images/p267dj739/full/full/0/default.jpg; 318585 bytes; SHA-256 `59af35542332cee3f72a5364cf4c1d0c0b5c2b6f5fa1e3bc5a6d456cfd396770`; licence: HKU Digital Repository record: rights statement 'In Copyright' (http://rightsstatements.org/vocab/InC/1.0/); licence http://www.europeana.eu/portal/rights/rr-r.html (rights reserved); page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (https://digitalrepository.lib.hku.hk/catalog/d7920769g)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 178, item 48 | The cadastral survey of the New Territory was completed early in May 1903; the areas surveyed in 1903 include the whole of New Kowloon. | "The cadastral survey was completed early in May" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 178, item 48 | New Kowloon was re-surveyed in 1903 so that 32-inch-to-the-mile maps could be made, because the earlier 16-inch maps were useless for the very small subdivisions of the land. | "the work consisted of a re-survey to enable maps of these districts on a scale of 32 inches to the mile to be prepared" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | The areas surveyed in 1903 came to 2,653.65 acres and 28,245 holdings, which were surveyed, mapped and demarcated. | "amounted to 2,653.65 acres and included 28,245 holdings" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | Early in 1903 the field staff was 1 Inspector, 24 Surveyors, 32 Indian chain-men and about 45 Chinese coolies; in May the Inspector, 20 Surveyors and 30 chain-men were sent back to India. | "consisted of 1 Inspector, 24 Surveyors, 32 Indian Chain-men and about 45 Chinese coolies" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | Before this, 2 Surveyors and 1 chain-man were invalided back to India, and both Surveyors died on the voyage. | "both the former dying on the voyage." |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | At the end of 1903 the survey staff under Mr. Newland was 1 Inspector, 11 office assistants, 3 Chinese tracers, 8 Indian coolies and 3 Chinese coolies. | "consisted of 1 Inspector, 11 office assistants, 3 Chinese tracers, 8 Indian coolies, and 3 Chinese coolies." |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | Tracings of all the Demarcation Districts, 555 sheets (45 of them made in 1902), were made for the Land Court and many were copied by sun-printing; 163 tracings in the style of the English Ordnance Survey sheets were done. | "Tracings of the whole of the Demarcation Districts, numbering 555 sheets in all" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 179, item 48 | A general map of the New Territory at 2 inches to the mile, with streams, roads, paths, cultivated areas, named villages and contours, was being prepared. | "A general map of the New Territory on a scale of 2 inches to the mile is now being prepared." |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 200, Appendix C, Grand Total | Appendix C gives the whole cadastral survey: 477 Demarcation Districts, 557 sheets, 555 tracings, 40,709.21 acres and 327,928 holdings. | "Grand Total ... 477 557 555 40,709.21 327,928" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 200, Appendix C | INFERRED: The re-survey at 32 inches of Districts 1, 2, 3, 4, 5, 9 and 401 south of the Kowloon hills, from Lai Chi Kok to Devil's Peak, covered 7 Demarcation Districts, 40 sheets, 40 tracings, 1,366.29 acres and 10,582 holdings. The Walled City lay in this area (INFERRED from its location in New Kowloon). | "Districts 1, 2, 3, 4, 5, 9, and 401 South of Kowloon hills from Lai-chi-kok to Devils Peak, (Resurvey on 32" scale)" |
+| Report of the Director of Public Works for the year 1903 (Sessional Papers 1904), p. 169, item 18 | In 1903 the Kowloon City Police Station had its buildings done up for $989, among the New Territory buildings with large maintenance costs. | "Kowloon City do. —Doing up buildings, ... 989" |
+
+- **Leads:**
+  - The 40 sheets at 32 inches to the mile of the 1903 re-survey of Demarcation Districts 1-5, 9 and 401 (south of the Kowloon hills), with the Walled City; PWD report 1903, p. 200, Appendix C.
 ### lead-l0807: No. 420. Notices (Extension to the Chinese Christian Cemetery, New Kowloon Inland Lot No. 5), The Hongkong Government Gazette, September 12, 1919, p. 390
 
 - **Creator:** Hong Kong Government (A. G. M. Fletcher, Colonial Secretary)
@@ -743,3 +821,54 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** The 1919 extension of the Chinese Christian Cemetery next to NKIL 5 in the upper Kowloon City: the sides of the area (140/135, 387, 210, 290/120 ft) and its size, about 57,585 sq ft. It is about the surroundings, not the City.
 - **Lead:** L0807 (cited by citations-19, scholarship-land-and-planning-1992-2026)
 - **Notes:** The page image is the IIIF canvas of the catalog record; the catalog page shows no viewer without JavaScript.
+
+### lead-l0391: Government Notification No. 383: Police Station, Kowloon City, Register Office of Births and Deaths (Hong Kong Government Gazette, 8 July 1899, p. 1068)
+
+- **Creator:** Hong Kong Government, Colonial Secretary's Office (J. H. Stewart Lockhart)
+- **Date:** 1899-07-05 (notice); 1899-07-08 (Gazette)
+- **Kind:** document
+- **Class:** primary (A government notice of 1899 in the Gazette.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the record of the same collection, vd672n333, has the rights statement 'In Copyright'). The Gazette of 1899 itself is out of copyright.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/ns06bv131
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/ns06bv131, https://digitalrepository.lib.hku.hk/service/api/iiif/images/qj72wh98s/full/full/0/default.jpg
+- **Proof that it exists:** Page image: 'THE HONGKONG GOVERNMENT GAZETTE, 8TH JULY, 1899', 'GOVERNMENT NOTIFICATION.—No. 383. It is hereby notified that His Excellency the Governor has been pleased to declare the Police Station at Kowloon City to be a Register Office for Births and Deaths'
+- **What it gives (resolver's note, not checked):** From 1899 the Kowloon City police station was a register office for births and deaths: the place where births and deaths at Kowloon City were registered after the British occupation. One sentence.
+- **Lead:** L0391 (cited by hkgov-17, hk-government-records-1899-1996)
+- **Notes:** The record page needs JavaScript; the IIIF manifest and image API open without it.
+
+### lead-l0391-2: Government Notification No. 468: Despatches and other Papers relating to the Extension of the Colony of Hongkong (Hong Kong Government Gazette, 26 August 1899, pp. 1347-1415)
+
+- **Creator:** Hong Kong Government (Governor Sir Henry A. Blake, the Colonial Secretary J. H. Stewart Lockhart, the Secretary of State Joseph Chamberlain)
+- **Date:** 1899-08-26 (Gazette); despatches of March-April 1899
+- **Kind:** document
+- **Class:** primary (Official despatches and minutes of 1899, printed in the Gazette of 1899.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (rights statement 'In Copyright' on records of the same collection). The Gazette of 1899 itself is out of copyright.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/hh641m360
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/hh641m360, https://digitalrepository.lib.hku.hk/service/api/iiif/images/zs264k57x/full/full/0/default.jpg
+- **Proof that it exists:** Page image p. 1347: 'GOVERNMENT NOTIFICATION.—No. 468. The following Despatches and other Papers relating to the Extension of the Colony of Hongkong, which were laid before the Legislative Council, are published.'
+- **What it gives (resolver's note, not checked):** The despatches of March-April 1899 on the extension: the Sham Chun boundary agreement, the removal of all Chinese officials from the leased territory (No. 66, 17 March 1899), the April rising and its leaders, the police stations. Background to the seizure of the City in May 1899; the City pages are not identified.
+- **Lead:** L0391 (cited by hkgov-17, hk-government-records-1899-1996)
+- **Notes:** 68 page images; L0976 (leads__29) saw pp. 1347, 1366, 1387, 1407, 1411, 1415, and I saw pp. 1347 and 1402. Search the pages for 'Kowloon City' and the Chinese officials there before cataloguing.
+
+### lead-l0689: The Laws of Hongkong, Vol. III, comprising a selection from the Imperial treaties, statutes, rules and orders specially applicable to Hongkong (New Revised Edition under Ordinance No. 19 of 1911): Lease of New Territories; New Territories Order in Council; Kowloon City Order in Council
+
+- **Creator:** Chaloner Grenville Alabaster (editor); Hong Kong Government (Noronha & Co., Government Printers); scans by HKU Libraries, Historical Laws of Hong Kong Online
+- **Date:** 1913 (printed; the 1912 edition); texts of 1898-1899
+- **Kind:** document
+- **Class:** primary (Official reprint of the treaty and Orders in Council of 1898-1899, made by the Government in 1912-1913; the side notes of 1912 (revocation, proclamation dates) are the editor's.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Historical Laws of Hong Kong Online, HKU Libraries: free to read; no licence stated on the PDF (Hong Kong Government text of 1913).
+- **Link:** https://oelawhk.lib.hku.hk/archive/files/7e14c64329f16461a2a4312f053c3720.pdf
+- **Other links:** https://oelawhk.lib.hku.hk/archive/files/fd42344d9bfda4ef1205852892e8031d.pdf, https://oelawhk.lib.hku.hk/archive/files/a65ca57b4094055dac220188d5c70309.pdf, https://oelawhk.lib.hku.hk/archive/files/b45881dc894baa04ea79d3c01784c943.pdf, https://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=%22Kowloon%22&sfield=ZZ&edition=1912&no_result=50
+- **Proof that it exists:** Title page (fd42344d...pdf, image 1): 'THE LAWS OF HONGKONG VOL. III ... PREPARED AS A PART OF THE NEW REVISED EDITION Under Ordinance No. 19 of 1911 BY CHALONER GRENVILLE ALABASTER'; 7e14c643...pdf, p. 9: '9.—KOWLOON CITY ORDER IN COUNCIL. ORDER IN COUNCIL revoking Article 4 of the Order of October 20th, 1898'
+- **What it gives (resolver's note, not checked):** The 1912 official texts of the Convention of 1898 (lease of the New Territories), the New Territories Order in Council of 20 Oct 1898 with its Article 4 on the Chinese officials in the City of Kowloon (marked as revoked) and the Kowloon City Order in Council of 27 Dec 1899, with side notes on the proclamation dates. Early history; the same texts are held in services-19.
+- **Lead:** L0689 (cited by services-19, hk-government-records-1899-1996)
+- **Notes:** Image scans: read them as pictures (pdftoppm). Only add the side notes if wanted; the operative texts are in services-19 and commons-12.

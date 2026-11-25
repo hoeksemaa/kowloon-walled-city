@@ -404,3 +404,25 @@ Not read yet.
 - **Notes:** Google Books shows a preview to a browser, but the fetch tool got only the bibliographic part. Check p. 49 in a browser.
 - **Reading of 2026-11-19:** it is not about the City. WebFetch saw no page text. In the Playwright browser I searched inside the book: 'Donnithorne' is on pp. 49, 50, 51, 71, 303 and 316; 'Walled City' has no result; 'Kowloon' is only on p. 51. I read pp. 49-51 as page images (open preview, 'pages displayed by permission of Oxfam'). The book does not name the City. The facts below are on Gladys Donnithorne and the refugees of the 1950s, for missions-15.
 
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0068: 歷史、使命及願景 (History, Mission and Vision), 九龍樂善堂 (Kowloon Lok Sin Tong) web site
+
+- **Creator:** Kowloon Lok Sin Tong (九龍樂善堂)
+- **Date:** undated web page (seen 2026-11-25)
+- **Kind:** reference
+- **Class:** secondary (The charity's own later history of itself, written long after the events.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement seen; all rights reserved assumed (organisation web site).
+- **Link:** https://www.loksintong.org/history-mission-vision
+- **Other links:** https://loksintong.org/content/document/39/樂善堂小冊子2019-final.pdf, https://www.loksintong.org/content/document/57/LST_BOOKLET-電子版.pdf
+- **Proof that it exists:** '樂善堂又於 50 至 60 年代開辦留產所為孕婦接生，同時亦設置診所及戒毒登記處等，為市民服務。'
+- **What it gives (resolver's note, not checked):** Lok Sin Tong ran a maternity home, a clinic and a drug-rehabilitation registration office (戒毒登記處) in the 1950s-1960s; officials who inspected the City in the mid-19th century landed at the stone pier. The booklets (not opened) can give more exact years.
+- **Lead:** L0068 (cited by missions-17, church-and-mission-histories)
+- **Notes:** The two booklet PDFs are over 10 MB; open them by hand to look for the years of the registration office.

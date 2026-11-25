@@ -188,7 +188,7 @@ shows is the reader's reading of it.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0747: 邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah (YouTube title begins '1982金馬獎最佳導演＋影帝＋劇本三冠王！...')
@@ -201,3 +201,16 @@ shows is the reader's reading of it.
 - **Leads:**
   - The Hong Kong Film Archive text of 2018 that says the film 'brings back scenes of the Kowloon Walled City' (cited in the plan record; the repo does not hold it): it can name the scene.
   - Original trailer, YouTube dyJqr11HQME ('Man on the Brink / 邊緣人 (1981) ORIGINAL TRAILER', Unseen Trailers, 4:30), not looked at.
+
+### lead-l0105: Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City
+
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Phil, 'Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City', Hong Kong and Macau Film & TV Locations (blog), 14 January 2015, https://hkmacaufilmtvlocations.blogspot.com/2015/01/roaring-fire-hiroyuki-sanada-1982-nga.html ; frames from Roaring Fire (Toei, c.1981; US release 1982)
+- **Class:** depiction (Frame grabs of a fiction film shot about 1981, which record the street at that time (read by inference); the blog text of 2015 is secondary. It fits the secondary tree, as filed.)
+- **Date of the record:** film frames c.1981 (the film's US release was 1982); blog post 2015-01-14
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../secondary-sources/depictions-film-and-tv-1966-2025/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| frame 2 (vlcsnap-2015-01-13-12h10m58s231.jpg), right side | INFERRED: The second frame shows a street-name sign on posts with the English 'Nga Tsin Long Rd' over the Chinese 衙前塱道, in front of a low building, about 1981. My reading of the blurred sign is helped by the blog's identification. | "Nga Tsin Long Rd" |
+| frame 2 (vlcsnap-2015-01-13-12h10m58s231.jpg), right half | INFERRED: The second frame also shows a roadside fruit stall with a table of oranges, a parked saloon car, and a round yellow traffic sign on a post whose first word is 'NO' (the rest is unreadable). |  |
