@@ -97,3 +97,17 @@ See the leads under each item in the primary folder.
 |---|---|---|
 | NPWK19480131 leaf n3 (local news page), British note, first columns | INFERRED: The note answers the Ambassador's note of 13 Jan 1948. It says that, except from 25 Dec 1941 to Aug 1945, the Hong Kong government had in fact governed the area for almost fifty years. | "除一九四一年十二月廿五日至一九四五年八月期間外" |
 | NPWK19480131 leaf n3 (local news page), British note | INFERRED: The note says that the earlier Chinese residents had moved by 1937, and that about 65 of them, all but three or four, had taken better houses in exchange. The dates and the group in this passage are worn; my reading is not sure. | "除三或四名外" |
+
+### lead-l0013-3: 九龍城事件 (Toronto 醒華日報 clipping)
+
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Shing Wah Daily News (醒華日報), Toronto, editorial (社論) 〈九龍城事件〉, Thursday 15 Jan 1948, vol. 26 no. 11, p. 1, continued on p. 2; with the news item 〈港警再拆居民茅屋 英大使已允向倫敦轉達我外部抗議〉 (重慶廣播訊, 13 Jan), p. 2; clipping in the Richard Charles Lee Canada-Hong Kong Library, University of Toronto, https://collections.library.utoronto.ca/view/rclc-hkl:xhrb_article0892
+- **Class:** primary (An editorial of the time (15 Jan 1948) in an overseas Chinese paper, with a radio news item. It is opinion and news of the time, kind primary, but its history of the City (1899-1947) is background (kind secondary). It is press, not an official record: a press folder fits better than china-official-records-1933-1987 (same tree).)
+- **Date of the record:** 1948-01-15
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial gives the history as the paper saw it: when the British took over the New Territories on 17 April 1899, British troops clashed with the villagers of 錦田. Britain blamed the Chinese officials and expelled them from the City on 16 May 1899. | "曾於同年五月十六日將九龍城（當時稱寨）之中國官員逐出境" (on 16 May of the same year it expelled the Chinese officials of Kowloon City (then called the 寨) from the territory) |
+| Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial says that the City was then called the 寨 (stockade). | "九龍城（當時稱寨）" (Kowloon City (then called the 寨)) |
+| Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial counts five later attempts to clear or move the residents: in 1933, 1934, 1939, and in September and November 1947. | "其後一九三三年，一九三四年，一九三九年，以迄去年九月及十一月，先後已有五次迫折迫遷之措施矣" (later, in 1933, 1934, 1939, and up to September and November last year, there have been five attempts at forced demolition and removal) |

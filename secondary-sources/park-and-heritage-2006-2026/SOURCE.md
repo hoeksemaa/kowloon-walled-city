@@ -661,3 +661,71 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** INFERRED from the title and the citing report: the history and archaeology of the Lung Tsun Stone Bridge (1873-1875) and the old Kowloon City shore, with old maps and photos, and the plan of the corridor. Little or nothing on the City of the 1980s.
 - **Lead:** L0931 (cited by top-hkgov-18, park-and-heritage-2006-2026)
 - **Notes:** Download it outside the fetch tool (over 10 MB); look first for the old maps and photos of the City's approach (pier, road, gate).
+
+### lead-l0521: Historical cum Social Study on Kowloon City District in Connection with Kai Tak Area (final report)
+
+- **Creator:** Ho Puay-peng et al., Centre for Architectural Heritage Research, The Chinese University of Hong Kong; for the Development Bureau (Antiquities and Monuments Office web site)
+- **Date:** December 2009 (PDF created 18 October 2010)
+- **Kind:** document
+- **Class:** secondary (A heritage and social study of the district made for the government in 2009, from archives, earlier studies and interviews; not a record of the 1980s.)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** Not stated in the part I saw; a government-commissioned report, © the Government of the HKSAR by default.
+- **Link:** https://web.archive.org/web/20210104190432/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf
+- **Other links:** https://web.archive.org/web/20210104190432id_/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf, https://web.archive.org/web/20201005175839/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf, https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf
+- **Proof that it exists:** XMP metadata of the Wayback PDF: '<dc:title> ... Historical cum Social Study on Kowloon City district in connection with Kai Tak area'; 415 pages, 28.7 MB
+- **What it gives (resolver's note, not checked):** A 391-page (415 PDF pages) history and social study of Kowloon City District and Kai Tak, which per the citing article covers the Walled City; the chapters and any oral-history interviews were not checked.
+- **Lead:** L0521 (cited by tna-21, scholarship-history-law-society-1973-2026)
+- **Notes:** Only on the Wayback Machine now. WebFetch cannot fetch web.archive.org; a browser (Playwright) can. Check it for interviews with former residents and for the district's 1980s streets around the City.
+
+### lead-l0794-1: 席上文件第 3 號：建議優化九龍城衙門展覽廳設施 — 康樂及文化事務署回應
+
+- **Creator:** Leisure and Cultural Services Department (康樂及文化事務署); Kowloon City District Council Secretariat (九龍城區議會秘書處)
+- **Date:** November 2024 (received 13 November 2024)
+- **Kind:** document
+- **Class:** secondary (A 2024 government reply about the park exhibition in the Yamen; it records nothing of the City at the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement in the PDF; a Hong Kong SAR Government (district council) paper.
+- **Link:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf
+- **Other links:** https://www.districtcouncils.gov.hk/kc/tc_chi/meetings/committees/dc_committee_meetings_doc.php?year=2024&meeting_id=27031&committee=763
+- **Proof that it exists:** '席上文件第 3 號 / 建議優化九龍城衙門展覽廳設施 / 康樂及文化事務署回應如下﹕ 本署於九龍寨城公園「衙門」所舉辦的展覽自 2009 年 4 月 19 日開放給市民參觀'
+- **What it gives (resolver's note, not checked):** The Yamen exhibition opened on 19 April 2009 with one outdoor area and six halls (models, images, sound); about 3,300 visits in 2023 (參觀人數約為 3300 人次); free guided tours every day from 3 June 2024 after the film 《九龍城寨之圍城》; the halls closed for renovation from 14 October 2024 to 30 April 2025.
+- **Lead:** L0794 (cited by top-popular-20, park-and-heritage-2006-2026)
+- **Notes:** Twin of the held HKTB reply (top-popular-20) and of the LCSD reply of March 2025 (gap-oral-history-archives-15); the 2009 opening and the closure dates are already in the repo.
+
+### lead-l0794-2: 九龍城區議會轄下社區參與及文化康樂委員會第六次會議記錄 (2024年11月21日), 議程五: 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號)
+
+- **Creator:** Kowloon City District Council (九龍城區議會), Community Involvement and Culture and Recreation Committee (社區參與及文化康樂委員會)
+- **Date:** meeting 21 November 2024 (PDF made 27 January 2025)
+- **Kind:** document
+- **Class:** secondary (Minutes of a 2024 council committee about the park exhibition; not a record of the City.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement in the PDF; a Hong Kong SAR Government (district council) paper.
+- **Link:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf
+- **Other links:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_agenda/CICRC/6CICRC_agenda_tc.pdf, https://www.districtcouncils.gov.hk/kc/tc_chi/meetings/committees/dc_committees_meetings_audio.php?meeting_id=27031
+- **Proof that it exists:** '九龍城區議會轄下 社區參與及文化康樂委員會 第六次會議記錄 日期：2024年11月21日'; p. 7 '議程五 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號)'
+- **What it gives (resolver's note, not checked):** Paras 16-19 (p. 7, 8 pp. in all): members ask for new exhibits, a film area with patriotic elements and more volunteer guides; the LCSD says the renovation will reorganize and enlarge the halls, and the new exhibition will focus on the history of the City past and present (九龍寨城古今歷史).
+- **Lead:** L0794 (cited by top-popular-20, park-and-heritage-2006-2026)
+- **Notes:** The meeting also has an audio recording page (dc_committees_meetings_audio.php?meeting_id=27031), not opened.
+
+### lead-l0903: File:Garden Tablet.jpg ('The Garden Tablet in Kowloon Walled City Park'; the inscription 九龍寨城公園碑記)
+
+- **Creator:** Yd712015 (Wikimedia Commons user), photographer; the inscription: text signed 香山黃坤堯撰 and calligraphy signed 東官陳樹…書 (my reading of the photo)
+- **Date:** photo 14 March 2015; inscription c. 1995 (park opened 1995; INFERRED)
+- **Kind:** photo
+- **Class:** secondary (A later essay on the City and the park, carved in the park in the 1990s; it summarises the history and records nothing first-hand of 1986.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** CC BY-SA 4.0 (Commons file page; author Yd712015)
+- **Link:** https://commons.wikimedia.org/wiki/File:Garden_Tablet.jpg
+- **Other links:** https://upload.wikimedia.org/wikipedia/commons/e/ee/Garden_Tablet.jpg
+- **Proof that it exists:** Commons description 'The Garden Tablet in Kowloon Walled City Park'; the carved title on the photo reads 「九龍寨城公園碑記」
+- **What it gives (resolver's note, not checked):** The full text of the park inscription: the site and the founding of the City (1846-1847), the Wu Di temple and the Lung Tsun school, the 1942 demolition of the walls, the growth of the City after the war with its area and population, the clearance and the making of the park with its features. Useful for the official short history of 1995, not for daily life in 1986.
+- **Lead:** L0903 (cited by gap-builders-demolition-park-31, park-and-heritage-2006-2026)
+- **Notes:** Transcribe from the full-size file (2.8 MB). The other side of the same wall carries the cross-section of the City (see L0893 and commons-8).

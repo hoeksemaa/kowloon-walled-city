@@ -349,3 +349,20 @@ Not read yet.
 
 - **Leads:**
   - HU Jun's full conference paper (2018): not online; the Lingnan Scholars record (held as top-scholarship-1, https://scholars.ln.edu.hk/en/publications/missing-transitions-a-case-study-of-the-clearance-of-kowloon-wall) has no file.
+
+### lead-l0817: Road Network (2nd Generation)
+
+- **Creator:** Transport Department (運輸署), Hong Kong SAR Government; served on DATA.GOV.HK and the CSDI Portal
+- **Date:** current (updated monthly; read 2026-11-25)
+- **Kind:** data
+- **Class:** secondary (Present-day road centre lines; the repo uses them only to place and name the roads round the City of 1986.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** DATA.GOV.HK terms of use (free use with attribution to the Government of the HKSAR); the layer metadata gives no copyright text. The repo states the attribution in data/CONTEXT-NOTICE.md.
+- **Link:** https://data.gov.hk/en-data/dataset/hk-td-tis_15-road-network-v2
+- **Other links:** https://portal.csdi.gov.hk/server/rest/services/common/td_rcd_1638949160594_2844/FeatureServer/10, https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637211194312_35158/FeatureServer/1004
+- **Proof that it exists:** DATA.GOV.HK page title 'Road Network (2nd Generation)', provider Transport Department, CSDI dataset td_rcd_1638949160594_2844; layer 10 name 'CENTERLINE'
+- **What it gives (resolver's note, not checked):** Road centre lines of today with English and Chinese street names (STREET_ENAME, STREET_CNAME), formats FGDB, KML, GML, CSV and API. The second URL (alt) is the occupation permit table (OP number, OP date, floor areas) of the held Lands Department Building service.
+- **Lead:** L0817 (cited by repo-audit-44, scholarship-land-and-planning-1992-2026)
+- **Notes:** Add these URLs to repo-audit-44 rather than make a new item; tools/context.py already queries both.

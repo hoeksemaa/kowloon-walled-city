@@ -77,3 +77,30 @@ See the leads under each item in the primary folder.
 | para. 2 | The reporter explains 追龍 (chasing the dragon) as the way drug users took heroin (白粉) with a matchbox. | "就是吸毒者以火柴盒吸食白粉的吸毒方式" (that is, the way drug users take heroin [white powder] with a matchbox) |
 | para. 2 | The reporter retells that the City was a place no authority governed (三不管); countless drug users came in from outside to take drugs, and girls worked as prostitutes to pay for their boyfriends' drugs. | "有無數吸毒者從城外跑到城內吸毒，也有女孩子當妓女賺錢給男友吸毒" (countless drug users came from outside the City into it to take drugs, and girls worked as prostitutes to earn money for their boyfriends' drugs) |
 | para. 3 | The reporter introduces 阿賢 as one of her old friends who took drugs and was in a triad (黑社會) in the City. | "昔日在九龍城寨吸毒及參與黑社會的朋友" (friends who once took drugs and were in the triads in Kowloon Walled City) |
+
+### lead-l0567: Jackie Pullinger: This formidable and fiery evangelist explains why she isn't 'driven' and does not have a 'ministry'
+
+- **Status:** Partly read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25. I opened the Premier episode page (released 19 Jan 2019) and read its show notes. The episode is audio only and has no transcript on the page; I have no tool to listen to it or to transcribe it, thus I did not hear the interview. The show notes say that the interview is also printed in Premier Christianity magazine (the repo's missions-18 is probably that printed version).
+- **Citation:** Premier Christianity, The Profile (podcast), 'Jackie Pullinger: This formidable and fiery evangelist explains why she isn't 'driven' and does not have a 'ministry'', released 19 January 2019, https://www.premier.plus/the-profile/podcasts/episodes/jackie-pullinger-this-formidable-and-fiery-evangelist-explains-why-she-isnt-driven-and-does-not-have-a-ministry
+- **Class:** retrospective (An interview of Pullinger in 2019 about her own life since 1966: first-hand testimony given later, retrospective (2019). Only the show notes (written by Premier, secondary) were read.)
+- **Date of the record:** 2019-01-19 (release date of the episode)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/pullinger-circle-1966-2026/SOURCE.md`](../../primary-sources/pullinger-circle-1966-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| episode page, show notes | Premier's show notes say that Pullinger arrived in Hong Kong by ship in 1966 and stayed there as a missionary. | "When the boat pulled into Hong Kong in 1966, God ordered her to disembark and Pullinger the missionary obeyed." |
+| episode page, show notes | The show notes say that in the interview she, then 74, talks about her lifetime of service, which included drug addicts set free through praying in tongues. | "seeing drug addicts set free through praying in tongues" |
+| episode page, show notes | The show notes say that the same interview is printed in Premier Christianity magazine. | "You can also read this interview in Premier Christianity magazine" |
+
+### lead-l0568: Nicky & Pippa Interview Jackie Pullinger on Over 55 Years of Missionary Work in Hong Kong
+
+- **Status:** Partly read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25. The alpha.org show-notes page gives 404. I read the episode's item in the podcast feed (https://anchor.fm/s/3a53aaa4/podcast/rss): published 12 Feb 2021, length 1:06:09, a three-sentence description, no transcript. The episode is audio only; I have no tool to listen to it or to transcribe it, thus I did not hear the interview and could not compare it with missions-21.
+- **Citation:** Leadership Conversations with Nicky Gumbel (Alpha), 'Nicky & Pippa Interview Jackie Pullinger on Over 55 Years of Missionary Work in Hong Kong', podcast episode, 12 February 2021, 1:06:09, https://podcasters.spotify.com/pod/show/thethreadfromalpha/episodes/Nicky--Pippa-Interview-Jackie-Pullinger-on-Over-55-Years-of-Missionary-Work-in-Hong-Kong-eqb0uv (feed: https://anchor.fm/s/3a53aaa4/podcast/rss)
+- **Class:** retrospective (An interview of Pullinger in 2021 about her own work since 1966: first-hand testimony given later, retrospective (2021). Only the feed description (written by Alpha, secondary) was read.)
+- **Date of the record:** 2021-02-12 (publication date in the feed)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/pullinger-circle-1966-2026/SOURCE.md`](../../primary-sources/pullinger-circle-1966-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| podcast feed, item description | The episode description says that Pullinger is a missionary in Hong Kong, founder of the St Stephen's Society, and has served in Hong Kong since 1966. | "She has been serving in Hong Kong since 1966." |
+| podcast feed, item description | The description points to her book Chasing the Dragon for the early years of her work in Hong Kong. | "The early years of her Hong Kong ministry are chronicled in her book Chasing the Dragon." |

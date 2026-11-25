@@ -287,3 +287,26 @@ testimony given later: tag its facts "retrospective (year)".
 - **Proof that it exists:** Discovery API record: "PREM 19/1796 | C14568655 | 1985 May 02 - 1986 Oct 20 | HONG KONG. Future of Hong Kong: part 18." The Thatcher Foundation page gave HTTP 403.
 - **What it gives (finder's note, not checked):** The Number 10 papers on Hong Kong from May 1985 to October 1986, the time before the talks on the City. It is not checked that the file names the Walled City.
 - **Notes:** A search extract of the Thatcher Foundation page says: 215 pages, classified Secret, release date 30 December 2016, full file as a PDF of about 221 MB, no selections yet. I did not read the page (403). Open it in a browser and search the PDF for "Walled City" and "Kowloon".
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0881: Kowloon City proposed hospital (Gwulo media 41291; TNA MR 1/787/1, 'S.D. No 1 Kowloon City. Scale 64" = 1 mile.'), full-size photo
+
+- **Creator:** Hong Kong Government (survey plan, signed 17.6.25); photo by David (Gwulo) at The National Archives, Kew
+- **Date:** plan dated 17 June 1925; photo posted 12 Oct 2021
+- **Kind:** map
+- **Class:** primary (A government survey plan of 1925 that marks a proposed hospital site in Kowloon City (a photo of the original at TNA).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the Gwulo page; the plan is a Crown copyright record of The National Archives (UK) (TNA terms for photos of records apply).
+- **Link:** https://gwulo.com/sites/default/files/thumbnails/image/img_3686-kowloon-city.edits_.jpg
+- **Other links:** https://gwulo.com/media/41291, https://gwulo.com/media/41291/zoom, https://discovery.nationalarchives.gov.uk/details/r/C9147358
+- **Proof that it exists:** Gwulo page title 'Kowloon City proposed hospital', 'TNA ref: MR 1/787'; the image (3000 x 2325 px) shows 'S.D. No 1 / KOWLOON CITY. / SCALE 64" = 1 MILE.' and 'N.K.I.L. 35 AREA 34580 Sq. Ft. (ABOUT)'
+- **What it gives (resolver's note, not checked):** The 1925 lot survey of Kowloon City at about 1:990 with building outlines and lot numbers, and the proposed hospital and dispensary site N.K.I.L. 35 (about 34,580 sq ft) in pink: shows the City and its edge before the walls came down (1925).
+- **Lead:** L0881 (cited by gwulo-12, tna-files-kwc-1898-1991)
+- **Notes:** Replace the 640 px file of gwulo-12 with this one. Same Gwulo path pattern serves the full-size photo of the MR 1/797 'Kowloon City' sheet (see L0883).

@@ -801,7 +801,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
+- **Status:** read: 6 of 6 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0876: Port & Airport Development Strategy final report (Figure 4.4, 'Airport Noise Constraints - Kai Tak Airport', p.4-5)
@@ -860,51 +860,123 @@ testimony given later: tag its facts "retrospective (year)".
   - National Library of Australia, MAP G7940 s20 (GSGS 3868), the original sheets of this layer, with the legend
 ### lead-l0464: Kowloon (L901), 1:10,000, revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964
 
-- **Creator:** Director of Military Survey, Ministry of Defence (UK); 84 Field Survey Squadron RE (compiled); Crown Lands and Survey Office, PWD, Hong Kong (revision)
-- **Date:** 1964-08 (revision)
-- **Kind:** map
-- **Class:** primary (A survey map of the time (revised to August 1964).)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** hkmaps.hk states no copyright for this layer; NLA rights not checked (bot check); a UK Ministry of Defence map of 1964 (Crown copyright, INFERRED)
-- **Link:** https://hkmaps.hk/
-- **Other links:** https://hkmaps.hk/data/map-metadata.json?v=20260910-meta, https://catalogue.nla.gov.au/catalog?q=%22G7944.K6+s10%22
-- **Proof that it exists:** hkmaps.hk map-metadata.json: layer '1965', title '1965 - Kowloon (L901)', audience 'public', document source National Library of Australia, call number 'MAP G7944.K6 s10', note 'revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964'.
-- **What it gives (resolver's note, not checked):** Kowloon at 1:10,000 as revised to August 1964: the outline of the built-up City, its edges and the squatter areas round it (secondary twin of maps-14), between the 1963 orthophoto (maps-8) and the 1:1000 sheets of 1974-78 (maps-3).
-- **Lead:** L0464 (cited by maps-14, maps-and-aerial-photos-1889-1994)
-- **Notes:** The viewer needs JavaScript. The NLA record and its digitised copy (if any) are behind an Anubis bot check for automated tools; a person can open them in a browser.
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Director of Military Survey, Ministry of Defence (UK), Kowloon (series L901), 1:10,000, compiled and drawn by 84 Field Survey Squadron RE, revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964; National Library of Australia MAP G7944.K6 s10; seen as the layer '1965 - Kowloon (L901)' on hkmaps.hk, https://hkmaps.hk/
+- **Class:** primary (A survey map revised to August 1964, made at the time. Earlier history (1964).)
+- **Date of the record:** 1964-08 (revision); layer dated 1965
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), map face at the Walled City (zoom 17-18) | INFERRED: The map labels the site 'KOWLOON CITY' and fills it with a fine stipple, like Po Toi village to its north; it draws no single buildings inside it. The stipple is probably the map's sign for a squatter or dense built-up area (INFERRED; the legend was not seen). | "KOWLOON CITY" |
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), map face at the Walled City; the quoted word is from the catalogue entry (map-metadata.json, notes) | INFERRED: Dashed lines (footpaths, INFERRED from the series key in the catalogue) cross the stippled City area; no streets inside it are drawn as roads. | "footpaths" |
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), map face round the Walled City | The stippled City area is bounded by Tung Tau Tsuen Road to the north and Carpenter Road to the south; to the east the map marks 'Development in progress'. | "Development in progress" |
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), map face at the Walled City | INFERRED: Red numbered circles 433 (on Carpenter Road, by a school) and 435 (at the south-east of the City) stand at its edge. They are probably the 'cordon points' of the series key (INFERRED). | "433" |
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), map face round the Walled City | Near the City the map shows a cemetery, the Tung Tau Resettlement Estate and a school to the west on Junction Road; small hatched patches lie at the north-west corner near Tung Tau Tsuen Road. | "Tung Tau Resettlement Estate" |
+
+- **Leads:**
+  - The National Library of Australia copy of L901 Kowloon (MAP G7944.K6 s10), with the legend and the margin notes (bot check for automated tools; a person can open it).
 ### lead-l0467: 1926 - Development of New Kowloon
 
-- **Creator:** Colonial Office, U.K. (Hong Kong Government plan sent with CO 129/494); layer by hkmaps.hk
-- **Date:** 1923-1926
-- **Kind:** map
-- **Class:** primary (A government town-planning key map of 1923-1926 (a scan of the original at TNA, MR 1/797/17-18).)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** no statement in the catalogue entry (copyright field empty)
-- **Link:** https://hkmaps.hk/
-- **Other links:** https://hkmaps.hk/data/map-metadata.json, https://discovery.nationalarchives.gov.uk/details/r/C9147367, https://discovery.nationalarchives.gov.uk/details/r/C4559824
-- **Proof that it exists:** hkmaps.hk catalogue entry: "title":"1926 - Development of New Kowloon", "audience":"public", "scale":"1:7920", "documentSource":"The National Archives, U.K. (Ref: MR 1/797)"
-- **What it gives (resolver's note, not checked):** The whole 1923-1926 key map of New Kowloon: planned parks, cemeteries, public works, reclamation and railways around Kowloon City, and the site of the Walled City inside the plan. It shows the plan that was shelved, not the buildings of the time.
-- **Lead:** L0467 (cited by maps-23, maps-and-aerial-photos-1889-1994)
-- **Notes:** Open the Map Overlays panel, group Plans, layer '1926'. The detailed 'Kowloon City' sheet (MR 1/797/12-16) is not on hkmaps.hk (closed, see where).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Colonial Office (UK), plan of the development of New Kowloon, 1:7,920, enclosed in CO 129/494 with the letter of 1 September 1926; The National Archives (UK), MR 1/797; seen as the layer '1926 - Development of New Kowloon' on hkmaps.hk, https://hkmaps.hk/
+- **Class:** primary (A government planning map of 1923-1926 made at the time; it shows a proposed plan with the buildings of the time under it. Earlier history.)
+- **Date of the record:** 1926 (letter of 1 September 1926)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk layer '1926 - Development of New Kowloon' (1:7,920; TNA MR 1/797), map face at the Walled City (zoom 16-18.6) | The plan lays a grid of planned rectangular lots and streets (red dashed lot lines) over the whole area round the label 'KOWLOON CITY', including the site of the Walled City. | "KOWLOON CITY" |
+| hkmaps.hk layer '1926 - Development of New Kowloon' (1:7,920; TNA MR 1/797), map face at the Walled City, with 45-50% overlay on the modern base map | INFERRED: Under the planned grid the plan draws the existing buildings in grey: a dense cluster cut by diagonal lanes in an X pattern. Over the modern map this cluster lies on the site of today's Kowloon Walled City Park, mostly in its southern half, and the 'KOWLOON CITY' label lies west of the park (INFERRED from the georeferencing). | "KOWLOON CITY" |
+| hkmaps.hk layer '1926 - Development of New Kowloon' (1:7,920; TNA MR 1/797), map face at the Walled City | INFERRED: A yellow north-south band runs through the 'KOWLOON CITY' label, west of the grey cluster (its meaning is not stated on the visible map face; a planned road is INFERRED). | "KOWLOON CITY" |
+| hkmaps.hk layer '1926 - Development of New Kowloon' (1:7,920; TNA MR 1/797), map face round the Walled City | Round the City the plan shows an N.K. (New Kowloon) cemetery, a Kowloon City cemetery reserve, a park in green, land 'Reserved Govt', the proposed branch railway and red circled letters A and D. | "Reserved Govt" |
+
+- **Leads:**
+  - The detailed 'Kowloon City' sheet of the 1926 New Kowloon plans, The National Archives (UK) MR 1/797 (not on hkmaps.hk).
 ### lead-l0515: 1904 - Kowloon and Part of New Territories
 
-- **Creator:** War Office, U.K. (survey under Major H. S. King, R.E.); layer by hkmaps.hk
-- **Date:** 1902-1904
-- **Kind:** map
-- **Class:** primary (A military survey map made in 1902-1903 (a scan of the GRS copy HKRS209-4-1).)
+- **Status:** Partly read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25. I opened the hkmaps.hk viewer in the Playwright browser, chose the layer '1904 - Kowloon and Part of New Territories' and looked at it around the walled City at about 1:1,500, 1:3,000, 1:4,000 and 1:8,000 (screenshots of the viewer). I also read the layer's entry in https://hkmaps.hk/data/map-metadata.json. I did not see the whole sheet, its title block or its legend. The ArcGIS tile service of the layer answers 'Token Required', and the viewer's PDF/JPG export is for the paid version only, thus I list no file. At the scales I saw, I could not make out the gates of the wall.
+- **Citation:** War Office, U.K. (survey under the superintendence of Major H. S. King, R.E.), 'Kowloon and Part of New Territories', 1:7,920, 21 sheets, surveyed 1902-1903, dated 1904; Government Records Service, Hong Kong, HKRS209-4-1; viewed as the layer '1904 - Kowloon and Part of New Territories' of hkmaps.hk, https://hkmaps.hk/ (catalogue entry '1904' in https://hkmaps.hk/data/map-metadata.json)
+- **Class:** primary (A military survey map made at the time (1902-1903). The map is primary; the hkmaps.hk catalogue notes are secondary.)
+- **Date of the record:** surveyed 1902-1903; the catalogue dates the map 1904
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| layer 1904, view at 1:8,000 centred on 22.3315 N, 114.1910 E | The map letters the town beside the walled City 'Kowloon City or Kau Lung Shing'. The lettering stands at the south-east end of the dense town, near the shore. The walled enclosure itself has no name on the map. | "KOWLOON CITY OR KAU LUNG SHING" |
+| layer 1904, views at 1:1,500 and 1:3,000 centred on 22.3322 N, 114.1903 E | INFERRED: The map draws the walled City as a closed wall in a double line. Its outline is a rounded oblong, longer from west-south-west to east-north-east, at the foot of a hill. I identify it by its place (22.332 N, 114.190 E, the place of the later park), because the map gives it no name. |  |
+| layer 1904, view at 1:1,500 centred on 22.3322 N, 114.1903 E | INFERRED: Inside the wall the map draws many separate buildings with open ground between them, not a solid mass. I count roughly 30 to 40 black building shapes (my count on a screenshot, thus approximate). The largest group of buildings stands in the middle and the north-east part of the enclosure. |  |
+| layer 1904, view at 1:1,500 centred on 22.3322 N, 114.1903 E | INFERRED: A line with hachures runs from the west corner of the wall up the hill to the summit marked 263 (feet), and a second one runs from the summit back down to the north side of the wall. They are probably the walls or banks that ran up the hill behind the City; the map does not name them. | "263" |
+| layer 1904, view at 1:3,000 centred on 22.3320 N, 114.1905 E | INFERRED: Outside the wall, a few houses stand along its south and west sides. The dense market town of Kowloon City begins at the east corner of the wall, and its main street runs south-east from there to the shore. |  |
+| layer 1904, view at 1:2,500 centred on 22.3285 N, 114.1945 E | INFERRED: A 'Police Station' is lettered at the south-east end of the town, at the shore. From there a long, narrow structure runs out into the bay, with a small square halfway and another at its end: probably the long pier of Kowloon City. | "Police Station" |
+| layer 1904, view at 1:8,000 centred on 22.3315 N, 114.1910 E | The map names the villages around the City: Nga Tsin (a square walled village north-east of the City), Nga Tsin Long (south-west), Hau Wong Mui (west), Kak Hang Tsun, Shek Ku Lung, Ta Ku Ling and Po Kong (north), Sha Ti Un (east), and Kau Pui Shek, Ma Tau Chung, Ma Tau Wei and Sacred Hill (south). | "Nga Tsin Long" |
+| layer 1904, view at 1:3,000 centred on 22.3255 N, 114.1880 E | INFERRED: South of the City a dash-dot line crosses the map from west to east. It is lettered '... LINE' and has marks 'V.R. NO. 5' to 'V.R. NO. 8' along it. It is probably the old northern boundary of British Kowloon with its marker stones; I did not see the legend. | "V.R. NO. 7" |
+
+- **Leads:**
+  - Government Records Service, Hong Kong, HKRS209-4-1: War Office, 'Kowloon and Part of New Territories', 1:7,920, 21 sheets, surveyed 1902-1903 (the original of the hkmaps.hk layer '1904'); the sheet with the walled City and its legend.
+### lead-l0429-1: Japanese thought East China bases of 14th destroyed; moved shipping to Hong Kong to escape scourge of Nimitz task force. 14th fighters and bombers caught them there. Smoke billows from Kowloon docks and railroad yards. Jap fighter (left center) (U.S. Air Force Number A54567AC)
+
+- **Creator:** US Army Air Forces, 14th Air Force (Record Group 342, Records of U.S. Air Force Commands, Activities, and Organizations)
+- **Date:** 16 Oct 1944 (raid; INFERRED from the Gwulo study of the same print series)
+- **Kind:** photo
+- **Class:** primary (An air photo taken during the raid of 16 October 1944, with its wartime caption.)
 - **Value:** low
 - **Language:** en
 - **Access:** js-only
-- **Licence:** no statement in the catalogue entry
-- **Link:** https://hkmaps.hk/
-- **Other links:** https://hkmaps.hk/data/map-metadata.json
-- **Proof that it exists:** hkmaps.hk catalogue entry '1904': title '1904 - Kowloon and Part of New Territories', audience public, scale 1:7920, documentSource 'HKRS209-4-1, Government Records Service, Hong Kong'
-- **What it gives (resolver's note, not checked):** The walls, gates and buildings of the walled City and the town of Kowloon City around it in 1902-1903, at 1:7,920, a few years after the British took the City in 1899.
-- **Lead:** L0515 (cited by tna-21, scholarship-history-law-society-1973-2026)
-- **Notes:** Open the Map Overlays panel, group Maps, layer 1904. The ArcGIS tile service can give the tiles without the viewer (URL not seen).
+- **Licence:** NARA catalogue: Access Unrestricted, Use Unrestricted; a work of the US Government (public domain); image provided by Fold3.
+- **Link:** https://catalog.archives.gov/id/204833720
+- **Proof that it exists:** Catalog search result: 'Local ID: 342-FH-3A02645-A54567AC', 'NAID: 204833720', 'Available to access online(1)'
+- **What it gives (resolver's note, not checked):** A full-size oblique air photo of Kowloon on the day of the raid (Kowloon docks and railway yards, smoke). It can show the site of the City in 1944, after the Japanese took down the wall in 1943 (INFERRED; not checked in the scan).
+- **Lead:** L0429 (cited by gwulo-13, maps-and-aerial-photos-1889-1994)
+- **Notes:** Download the full image from the item page (IIIF on catalog.archives.gov). Earlier history (1944): less weight.
+
+### lead-l0429-2: Japs were singed by fire of 14th Air force when they ducked Admiral Nimitz' Naval frying pan. Hong Kong harbor would have been safe refuge, but Jap land forces failed to knock out 14th's East China bases. Kowloon docks (center) were sprayed (U.S. Air Force Number B54567AC)
+
+- **Creator:** US Army Air Forces, 14th Air Force (Record Group 342)
+- **Date:** 16 Oct 1944 (raid); prints received 28 Oct 1944 (per the print header, as the repo's secondary twin of gwulo-13 records)
+- **Kind:** photo
+- **Class:** primary (An air photo taken during the raid of 16 October 1944, with its wartime caption.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** NARA catalogue: Access Unrestricted, Use Unrestricted; a work of the US Government (public domain); image provided by Fold3.
+- **Link:** https://catalog.archives.gov/id/204833723
+- **Other links:** https://catalog.archives.gov/iiif/3/lz%2Fpartners%2Fstillpix%2F342-fh%2Fexport_WWII_Photos-USAF_3A02459-3A03299_10083%2Fimages%2F342-FH_000299.jpg/full/full/0/default.jpg, https://catalog.archives.gov/iiif/3/lz%2Fpartners%2Fstillpix%2F342-fh%2Fexport_WWII_Photos-USAF_3A02459-3A03299_10083%2Fimages%2F342-FH_000300.jpg/full/full/0/default.jpg
+- **Proof that it exists:** Item page: 'Local ID: 342-FH-3A02646-B54567AC', 'NAID: 204833723', '2 Images', 'Access: Unrestricted, Use: Unrestricted'; IIIF info 4588 x 3620 px
+- **What it gives (resolver's note, not checked):** The full-size scan (4588 x 3620 px) of the second frame of the raid, which the Gwulo study says shows the site of the City in more detail than the first: the City area in 1944, after the wall was taken down.
+- **Lead:** L0429 (cited by gwulo-13, maps-and-aerial-photos-1889-1994)
+- **Notes:** The IIIF image URLs work without JavaScript. The second image (342-FH_000300) is probably the back of the print with its header. Earlier history (1944): less weight.
+
+### lead-l0436: MONAB VIII gallery: img_KaiTak_02.jpg ('November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield.') and img_KaiTak_03.jpg ('An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete.')
+
+- **Creator:** Unnamed photographers of MONAB VIII (Royal Navy, RNAS Kai Tak); served by the Royal Navy Research Archive
+- **Date:** November 1945 (img_KaiTak_02); date unknown, after the Japanese extension of the airfield, INFERRED 1944-1946 (img_KaiTak_03)
+- **Kind:** photo
+- **Class:** primary (Air photos taken at the time (1945-46) by men of the unit; the captions are later (RNRA).)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** 'The Royal Navy Research Archive is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License' (gallery page; see the RNRA terms of use); footer '© 1999-2026 The Royal Navy Research Archive All Rights Reserved'.
+- **Link:** https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_02.jpg
+- **Other links:** https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_03.jpg, https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html
+- **Proof that it exists:** Gallery captions: 'November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield.' and 'An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete.'
+- **What it gives (resolver's note, not checked):** Two air photos of Kai Tak in 1945 (the Japanese-extended airfield; the RN workshop area on its west side). The City itself cannot be made out; the top edge of img_KaiTak_02 may show built-up ground of Kowloon City north of the airfield (INFERRED).
+- **Lead:** L0436 (cited by gwulo-14, maps-and-aerial-photos-1889-1994)
+- **Notes:** Same gallery as gwulo-14 (img_K&G_Littler_10.jpg). Earlier history (1945): less weight. If the reader wants the City site of 1945, ask the RNRA for higher-resolution copies.
+
+### lead-l0448: Digital Orthophoto DOP1000-1982 (Plain Image Version), tile T11-NW-15B (INFERRED name of the tile west of T11-NE-11A)
+
+- **Creator:** Lands Department (地政總署), Survey and Mapping Office (測繪處)
+- **Date:** October 1982 (aerial photos, as for T11-NE-11A)
+- **Kind:** photo
+- **Class:** primary (Vertical aerial photos of 1982 made into an orthophoto by the survey office, as maps-5.)
+- **Value:** low
+- **Language:** en
+- **Access:** cert-error
+- **Licence:** DATA.GOV.HK terms of use (as for maps-5): free to browse, download, distribute, reproduce and print, for commercial and non-commercial use, with attribution; the Government keeps the intellectual property rights.
+- **Link:** https://open.hkmapservice.gov.hk/OpenData/directDownload?productName=DOP1000-1982P&sheetName=T11-NW-15B&productFormat=TIFF
+- **Other links:** https://open.hkmapservice.gov.hk/OpenData/directDownload?productName=DOP1000-1982G&sheetName=T11-NW-15B&productFormat=TIFF
+- **Proof that it exists:** Not opened: the host gave a certificate error to WebFetch on 2026-11-25. The URL follows the pattern of the held tile T11-NE-11A (maps-5), and the sheet name follows the 1:1000 grid of repo-audit-1.
+- **What it gives (resolver's note, not checked):** The 1982 orthophoto west of the held tile: INFERRED, the west tip of the City (west of about E 837500) and the land west of it (Tung Tau Tsuen Road (東頭村道) side, Sai Tau Tsuen (西頭村)).
+- **Lead:** L0448 (cited by maps-5, maps-and-aerial-photos-1889-1994)
+- **Notes:** Download outside the sandbox with curl as for maps-5 (ZIP about 40 MB, over the repo size limit: keep a crop of the City's west tip). Check with the world file that the tile really holds the west tip before cropping.

@@ -154,23 +154,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1090: Another big estate (News Review: Hong Kong)
 
-- **Creator:** Asian Building & Construction (news note, no byline)
-- **Date:** 1974-09
-- **Kind:** article
-- **Class:** primary (A trade-journal news note written at the time (September 1974) on an estate then about to open.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** HKU Digital Repository: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (page footer); no open licence stated
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/dj5322031
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/dj5322031, https://digitalrepository.lib.hku.hk/service/api/iiif/images/c534mn75p/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/search/dj5322031?q=Walled
-- **Proof that it exists:** Asian Building & Construction, September 1974, p. 8, NEWS REVIEW, HONG KONG: 'Another big estate. - Mei Tung Estate at Tung Tau Cheun Rd, Kowloon, will be ready for occupation by mid-October.'
-- **What it gives (resolver's note, not checked):** Mei Tung Estate (美東邨), on a five-acre site 'directly opposite the Kowloon Walled City' on Tung Tau Tsuen Road, begun November 1972 and ready by mid-October 1974: one block of 10 and 11 storeys, 27 shops, a 3,000 ft2 restaurant, about 500 flats for about 3,400 people, flat sizes 262-498 ft2 and monthly rents of US$34.58-64.23 for families of 5 to 10, with a photo of the blocks.
-- **Lead:** L1090 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
-- **Notes:** Surroundings, not the City: the public estate across Tung Tau Tsuen Road from the north edge. The rents are given in US dollars in the journal. maps-3 notes the estate as 'CIP Dec 74' on the 1:1000 sheet.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Asian Building & Construction (no byline), "News Review: Hong Kong. Another big estate", Asian Building & Construction, September 1974, p. 8; HKU Digital Repository (Hong Kong Journals Online), item dj5322031, canvas 14, https://digitalrepository.lib.hku.hk/catalog/dj5322031
+- **Class:** primary (A trade journal news note of the time (September 1974), with a photo. It stays in primary-sources. Its subject is the surroundings (the public estate across the road), not the City.)
+- **Date of the record:** 1974-09
+- **Files:**
+  - `lead-l1090-default-5c14a7c4.jpg` (in `local/`, not in git): Page image of p. 8 (News Review), 1800 x 2500 px, IIIF image service; https://digitalrepository.lib.hku.hk/service/api/iiif/images/c534mn75p/full/full/0/default.jpg; 930626 bytes; SHA-256 `5413bd931742bd11a2bdf164b2672220b7411395f81d58ad1741e586fe65c237`; licence: HKU Digital Repository: "Copyright (c) 2026 The University of Hong Kong. All Rights Reserved." (page footer); no open licence stated (https://digitalrepository.lib.hku.hk/catalog/dj5322031)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 1 | Mei Tung Estate, on Tung Tau Cheun Road (the journal's spelling), Kowloon, was to be ready for its tenants by mid-October 1974. The note has a photo of the estate above it. | "Mei Tung Estate at Tung Tau Cheun Rd, Kowloon, will be ready for occupation by mid-October. (Picture above)." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 2 | The estate cost about US$1.58 million. It gives homes to about 3,400 people in more than 500 flats of different sizes. | "the estate will provide homes for about 3 400 people in more than 500 domestic flats of various sizes." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 3 | Work on the estate began in November 1972. The site is five acres, directly opposite the Walled City. | "Construction of the estate began in November, 1972. It is built on a five-acre site directly opposite the Kowloon Walled City" |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 3 | The estate is one big block of 10 and 11 storeys. | "comprises one big block of 10 and 11 storeys." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 3 | The block holds 27 shops and a restaurant of 3,000 square feet. | "Incorporated in this block are 27 shops, and a restaurant 3 000 ft2 in area." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 4 | Each of the 500 flats is self-contained, with its own balcony, kitchen, and toilet with a shower. | "The 500 flats are self-contained and each has its own private balcony, kitchen and toilet with shower." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 5 | There are four sizes of flat, for families of five, seven, nine and ten people. The monthly rents are US$34.58, US$43.49, US$53.35 and US$64.23. The journal gives the rents only in US dollars. | "The units are for families of five, seven, nine and 10, for monthly rents of US$34.58, US$43.49, US$53.35 and US$64.23, respectively." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", para. 6 | The four flat sizes are 262, 331, 411 and 498 square feet, with the service area included. | "The flats measure 262, 331, 411 and 498 ft2, including service area." |
+| Asian Building & Construction, Sept 1974, p. 8 (HKU canvas 14), News Review: Hong Kong, "Another big estate", photo at the head of the page | INFERRED: The photo shows the long slab block of the estate, with the number 6 painted on it, and a lower block with open galleries in front. Building debris lies in the foreground. (My description of the photo; the height of about ten storeys is INFERRED from the note.) | "(Picture above)." |

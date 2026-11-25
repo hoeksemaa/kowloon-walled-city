@@ -1273,27 +1273,46 @@ full pages before you use these facts.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0116: Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City
 
-- **Creator:** Wilfred Chan (Asia Blog, Asia Society); interviewees Greg Girard and Ian Lambot
-- **Date:** 2014-02-07
-- **Kind:** testimony
-- **Class:** retrospective (First-hand testimony of the two photographers about their own work in the City (1986-1992), given in 2014: retrospective (2014).)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** '©2025 Asia Society' on the archived page; no open licence; no noai mark seen
-- **Link:** https://web.archive.org/web/20250214104319/https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city
-- **Other links:** https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city
-- **Proof that it exists:** Wayback snapshot page title 'Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City / Asia Society'; date 'February 7th, 2014'; 'For five years starting in 1987, Canadian photojournalist Greg Girard and British architectural photographer Ian Lambot teamed up to photograph Kowloon Walled City'.
-- **What it gives (resolver's note, not checked):** Retrospective (2014) memories of the two photographers, 1986-1992: Girard's first sight of the City at night in 1986; Lambot's way of working; the hostility before Jan 1987 and the easier access after; doors open to shops, clinics, schools and factories; the alleys busy but never crowded; flats without windows; a Cathay Pacific stewardess walking in with a suitcase. Six photo captions credit Greg Girard.
-- **Lead:** L0116 (cited by top-blocked-a-7, documentaries-video-and-podcasts-1990-2026)
-- **Notes:** The live page has a Cloudflare check; fetch the Wayback snapshot. The repo already holds the photos (mplus-girard-lambot-photos) and the panel report (top-blocked-a-7).
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Wilfred Chan, 'Interview: Photographing the 'Shabby, Squalid Dignity' of the Kowloon Walled City', Asia Blog, Asia Society, 7 February 2014 (interview by email with Greg Girard and Ian Lambot), https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city ; read in the Wayback snapshot https://web.archive.org/web/20250214104319/https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city
+- **Class:** retrospective (First-hand memories of the two photographers of their work in the City (1986-1992), given in 2014: retrospective (2014). The introduction and the photo captions are by the blog (secondary).)
+- **Date of the record:** 2014-02-07
+- **Files:**
+  - `lead-l0116-interview-photographing-shabby-squalid-dignity-kowloon-walle-ce11e159.html` (in `local/`, not in git): HTML of the interview page (Wayback snapshot of 14 Feb 2025); text only is wanted, the photos are Greg Girard's; https://web.archive.org/web/20250214104319/https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city; 135992 bytes; SHA-256 `bf053eefe8a637bfbf405780f8a0e4508e6bfc11496889eb103fdff327af5891`; licence: ©2025 Asia Society (page footer); no open licence (https://web.archive.org/web/20250214104319/https://asiasociety.org/blog/asia/interview-photographing-shabby-squalid-dignity-kowloon-walled-city)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/retrospective-testimony-web/SOURCE.md`](../../secondary-sources/retrospective-testimony-web/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'How did you start photographing' | Girard says that he found the City one night in 1986, while he photographed the streets of Kowloon City near Kai Tak airport. | "I "discovered" it one night in 1986 while photographing in the streets in Kowloon City near Kai Tak airport." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'How did you start photographing' | Girard saw the City lit by the lights of its flats: not one building and not separate buildings, but a glowing mass of buildings joined and piled together. | "It was a glowing agglomeration of buildings joined and piled together." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'How did you start photographing' | Lambot says that in the early 1980s the City, seen from outside, looked like other old parts of Hong Kong, and that a large, well-established squatter settlement still surrounded it. | "especially in the early 1980s when it was still surrounded by the large and well-established squatter settlement there." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'How did you start photographing' | Lambot went back to the City only after the clearance was announced in January 1987. By then the squatter settlement around it had been cleared, and the City stood alone. | "the squatter settlement had been cleared away, so the Walled City was standing there alone in its shabby, almost squalid dignity." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'How did you start photographing' | Lambot worked from the outside in: first shots from a distance, then the larger alleys, then the smaller and more remote ones, then the staircases. | "the larger, more clearly defined ones to begin with, then the smaller and more remote, and then the various staircases." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that before the demolition was announced in 1987 there was much hostility to cameras: people gave him the evil eye and slammed doors. He blames the sensational press of the time. | "people were giving you the evil eye and slamming doors if you were walking around with a camera at that time." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that access became easier after the announcement of the demolition and the relocation, because people understood that the place's days were numbered. | "It got easier as people understood that the place's days were numbered." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard's route: the airport express bus from Central to Kai Tak airport, then a walk of about four blocks to the City. | "take it to Kai Tak airport and then walk the four blocks or so to the Walled City" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard gave prints to the people whom he had photographed. These visits led to introductions to neighbouring homes and businesses. | "I might have photographed someone on an earlier visit and made prints to give to them" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | In the public spaces Girard photographed the alleys, the shop fronts, the rooftops and the stairways. | "the alleys, the shop exteriors, the rooftops, or stairways." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'What was it like to go inside?' | Lambot says that the doors of premises were often wide open, so he could walk into shops, clinics, schools and factories. | "frequently wide open, allowing you to wander in to all sorts of locations normally out of bounds — shops, clinics, schools, and factories." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'What was it like to go inside?' | Lambot says that most people were more baffled than offended by his interest in their premises; he remembers only one place that refused him. | "And I only ever remember one place that specifically said no." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'What was it like to go inside?' | Lambot says that he saw almost no evidence of triads or drugs in the City. | "Despite all the stories of the triads and drugs, I had seen almost no evidence of this while I was in the City" |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'What was it like to go inside?' | Lambot says that nearly everyone seemed happy to live or work in the City, in spite of the conditions. | "Despite the conditions, nearly everyone seemed to be happy living or working there." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that the City never felt crowded: the alleys had constant traffic and activity, but they were never crowded. | "The alleys were never crowded, though there was constant traffic and activity." |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that living space was tight, but not as small as the cubicle and box homes of Hong Kong in 2014. | "living space was tight, but not as reduced as we see in Hong Kong today with people living in cubicles" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that many flats had no window that opened onto air or light. | "Many apartments did, however, lack windows that opened into air or light" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'What was it like to go inside?' | Girard says that for most people the way from the front door to the first daylight went down several floors of stairs and then along a series of alleys. | "usually involved a walk down several floors of stairs and then along a series of alleys before emerging into the light of day" |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'So what insights did you take away' | Lambot says that the City mixed living, work and leisure closely, and that this closeness made it a community. | "how the proximity of life, work, and leisure creates a community." |
+| Wayback snapshot of 14 Feb 2025, answer of Lambot to 'How have you seen Hong Kong change' | Lambot came to Hong Kong in 1979. | "I arrived in 1979" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'How have you seen Hong Kong change' | INFERRED: Girard sees traces of the City in the walk-up buildings of Kowloon City in 2013: metal grille work on doors and mailboxes, use of the spaces between buildings, and illegal rooftop additions. He implies that the City had the same features. | "the metal grill work on the doors and mailboxes, the use of the spaces between the buildings, the illegal rooftop additions" |
+| Wayback snapshot of 14 Feb 2025, answer of Girard to 'If you could go back' | Girard once saw a Cathay Pacific stewardess in uniform walk into the City pulling a suitcase, probably coming home after a flight. She disappeared into the alleys before he could photograph her. | "The Cathay Pacific stewardess who I saw, in uniform, one day walk into the Walled City pulling a suitcase, probably returning home after a flight." |
+
+- **Leads:**
+  - Asia Society Hong Kong panel video 'Inside Kowloon Walled City', 11/12/13, embedded in the post (probably the same event as the panel report top-blocked-a-7).
 ### lead-l1003: 夏銘記：做生意唔呃秤 真魚蛋唔彈牙
 
 - **Creator:** 陳嘉文 (text and some photos); photos also by 劉焌陶; Pentoy (評台)

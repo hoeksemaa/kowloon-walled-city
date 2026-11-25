@@ -112,3 +112,20 @@ See the leads under each item in the primary folder.
 - **What it gives (resolver's note, not checked):** Images of the inside of the City (wiring, wet streets, barefoot residents, food factories) with short 2025 captions. The captions add almost no facts beyond the article text that ja-3 already has.
 - **Lead:** L0718 (cited by ja-3, yoshida-ichiro-testimony-1985)
 - **Notes:** Check each image by eye for its source before use; the page states no credit.
+
+### lead-l0719-2: 九龍城砦: 正真正銘の「無法地帯」を生んだ飛び地の中の飛び地 (世界飛び地領土研究会)
+
+- **Creator:** Yoshida Ichiro (吉田一郎), 世界飛び地領土研究会 (personal web site, from July 2002)
+- **Date:** web page of before 2011-07-13 (Wayback capture); site started 2002
+- **Kind:** article
+- **Class:** secondary (A history essay and timeline of the City as an enclave, written later by a former resident; mainly second-hand history.)
+- **Value:** low
+- **Language:** ja
+- **Access:** open
+- **Licence:** No licence seen; personal web site of 吉田一郎, kept by the Wayback Machine.
+- **Link:** https://web.archive.org/web/20110713184503/http://www4.ocn.ne.jp/~keropero/kowloon2.html
+- **Other links:** https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/
+- **Proof that it exists:** Title '九龍城砦'; first lines '正真正銘の「無法地帯」を生んだ飛び地の中の飛び地 九龍城砦 中国領 １８９８年 イギリスが清朝から香港島・九龍に隣接する新界を９９年間租借。'
+- **What it gives (resolver's note, not checked):** A timeline (1898, 1899, 1911, 1949, 1987, 1993, 1997) and an essay on why the City had no law, from the Song fort to the 1898 lease and the landing-pier rights; can hold some first-hand remarks further down (not read).
+- **Lead:** L0719 (cited by ja-4, yoshida-ichiro-testimony-1985)
+- **Notes:** Read only the first screen. Mark any first-hand line as retrospective; the history is secondary.

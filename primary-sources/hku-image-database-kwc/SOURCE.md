@@ -197,3 +197,36 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** Three 1930s views inside the walls: the tiled-roof brick village houses built side by side, with a rocky hill behind (1933); the Sik Tsz Ting (惜字亭), the pavilion for burning written paper (1935); the screen wall opposite the entrance of the Lung Tsun Free School with the words 「海濱鄒魯」 (1936). Each print has its back scanned too (stamp and date). Early history (1930s).
 - **Lead:** L1094 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
 - **Notes:** Image file-set ids: 2z114c17c: 8049pt370, gt54tc35q; jh34bh97c: xd07qk13x, vx0284252; t148p8995: 4m90nj589, fj23dt804 (IIIF images at /service/api/iiif/images/<id>/full/full/0/default.jpg, the pattern of institutions-16; not tested). Add them to institutions-16 (same photographer and collection) or catalogue them as one new item. 1n79qw939 is held already.
+
+### lead-l0701: 九龍城九龍寨城 Kowloon Walled City, Kowloon City (three records: fn107437j, c.1900; 70795f08z, 1898; ws859n14t, c.1920s)
+
+- **Creator:** not named; HKU Libraries, Hong Kong Image Database
+- **Date:** 1898; c.1900; c.1920s
+- **Kind:** photo
+- **Class:** primary (Photos taken at the City in 1898-1920s, records of the time; the HKU titles and descriptions are later (secondary).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** HKU Digital Repository: no item licence shown; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' with a Copyright & Disclaimer link.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/70795f08z
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/fn107437j, https://digitalrepository.lib.hku.hk/catalog/ws859n14t
+- **Proof that it exists:** Record headings '九龍城九龍寨城 Kowloon Walled City, Kowloon City'; descriptions: 70795f08z 'Kowloon Walled City viewed from the Landing Pier. White Crane Hill at the centre.'; fn107437j 'Longjin Pier and Longjin Pavillion, Kowloon Walled City, Kowloon City.'; ws859n14t '九龍寨城內的魁星閣（左）及龍津義學照壁。'
+- **What it gives (resolver's note, not checked):** Three early views: the City seen from the Lung Tsun landing pier with Pak Hok Shan (White Crane Hill) at the centre (1898); the Lung Tsun Pier and its pavilion (c.1900); the Kui Sing pavilion and the screen wall of the Lung Tsun Free School inside the walls (c.1920s). Early history only.
+- **Lead:** L0701 (cited by institutions-9, hku-image-database-kwc)
+- **Notes:** Image file-set ids were not read (the record pages show none to WebFetch); the thumbnail path of fn107437j in the search data is /downloads/tx31qq19t?file=thumbnail, thus the full image is probably at /service/api/iiif/images/tx31qq19t/full/full/0/default.jpg (pattern of institutions-16; not tested). The same search also lists 'The city wall of Kowloon Walled City' dn39x689k (c.1930s-1940s) and ft848w33s (c.1905-1910), which only top-maps.json names.
+
+### lead-l0703: 十九世紀之九龍城 19th-century Kowloon City
+
+- **Creator:** not named; Photographs from Lo Hsiang-lin Collection (羅香林教授所藏照片), HKU Libraries
+- **Date:** late 19th century (record: 十九世紀晚年)
+- **Kind:** photo
+- **Class:** primary (A photo taken at the time (late 19th century); the caption is later (secondary).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** HKU Digital Repository: no item licence shown; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/4t64qb824
+- **Proof that it exists:** Record title '19th-century Kowloon City 十九世紀之九龍城'; description '十九世紀晚年之九龍城，圖片是從龍津石橋碼頭眺望九龍寨城，正中的小山是白鶴山，背後就是獅子山。'
+- **What it gives (resolver's note, not checked):** A late-19th-century view of the Walled City from the Lung Tsun stone bridge pier, with Pak Hok Shan (白鶴山) in the middle and Lion Rock behind. Early history only.
+- **Lead:** L0703 (cited by institutions-16, hku-image-database-kwc)
+- **Notes:** Compare it with 70795f08z (1898, the same view from the landing pier; lead-l0701) and with the ILN engravings of 1899 (top-maps-11): it can be one of the source photos (INFERRED, not checked). Image file-set id not read.

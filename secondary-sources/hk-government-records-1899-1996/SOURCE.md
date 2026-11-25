@@ -73,7 +73,7 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0543: Lands Resumption Ordinance, Chapter 124 (consolidated text with history notes)
@@ -112,3 +112,15 @@ See the leads under each item in the primary folder.
   - Crown Lands Resumption (Amendment) Ordinance 1984 (No. 5 of 1984): the 1984 text on compensation, purchase by agreement and provisional payment
   - Ordinance No. 62 of 1985 (amendments to s. 16A and s. 18 of the Crown Lands Resumption Ordinance)
   - Ordinance No. 71 of 1987, s. 20 (it replaced s. 5 of the Crown Lands Resumption Ordinance: the rights of the owner and of any other person cease on resumption); plan.json names it as the Land Development Corporation Ordinance, not checked
+
+### lead-l0393: Extracts from Papers relating to the Extension of the Colony of Hongkong (No. 9/99), with the report of J. H. Stewart Lockhart on the New Territory (1898)
+
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Hong Kong Government, 'Extracts from Papers relating to the Extension of the Colony of Hongkong' (Sessional Paper No. 9/99, laid before the Legislative Council), with J. H. Stewart Lockhart, Report on the Extension of the Colony of Hongkong, 8 October 1898, pp. 177-212; and 'Despatches and other Papers relating to the Extension of the Colony of Hongkong' (No. 32/99), pp. 511-579; HKU Digital Repository record 'Papers Relating to Extension of Colony of Hongkong' (1899), https://digitalrepository.lib.hku.hk/catalog/s752d4174
+- **Class:** primary (Official reports and despatches of 1898-1899, written at the time. Earlier history (1898-1899).)
+- **Date of the record:** 1898-10-08 (Lockhart report); 1899-01-06 to 1899-04 (despatches); laid before the Legislative Council 1899
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-government-records-1899-1996/SOURCE.md`](../../primary-sources/hk-government-records-1899-1996/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | Lockhart's report says the City's stone wall was built in 1847 (background history in the report, thus secondary). | "enclosed by a stone wall built in 1847" |

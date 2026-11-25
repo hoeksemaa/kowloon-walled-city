@@ -432,3 +432,19 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - Census and Statistics Department, Hong Kong 1981 Census: 'District Board Tabulations' (the further social and economic results by district, issued with this report, April 1982; cited in the foreword of j38618317, canvas 9).
   - The district boundary maps in the appendix of j38618317 (canvases after the index, not read): they can show the 1981 boundary of R-01 Kowloon City and Sai Tau around the Walled City.
+
+### lead-l0862: Hong Kong 1986 By-Census District Board Constituency Area: Summary Tables
+
+- **Creator:** Census and Statistics Department, Hong Kong
+- **Date:** c.1986-1987 (by-census of 11 March 1986); scan 2014-2015
+- **Kind:** data
+- **Class:** primary (Official small-area tables of the by-census of 11 March 1986, published by the government at the time.)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** © Hong Kong Government (Census and Statistics Department); the C&SD site says 'Statistical information on this website can be freely used, unless otherwise specified' (Intellectual Property Rights Notice); no open licence.
+- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1129075/att/B11290751986XXXXE0100.pdf
+- **Proof that it exists:** PDF Info dictionary: /Title(Hong Kong 1986 By-Census District Board Constituency Area: Summary Tables); /Author Census and Statistics Department Hong Kong; 351 pages (linearization N 351); Content-Range bytes 0-3000/60685466
+- **What it gives (resolver's note, not checked):** Summary tables for each 1986 District Board constituency area (INFERRED from the title: population, households, living quarters and more), including the constituency that held the City; the frame of the City's people in March 1986, nine months before the simulated week.
+- **Lead:** L0862 (cited by top-blocked-b-2, hk-census-1981-1991)
+- **Notes:** 60.7 MB: download outside the sandbox (curl), not with WebFetch. Compare the 1986 boundary of R-01 with the City (see the lead of top-blocked-b-2 on the 1991 R-01 count).

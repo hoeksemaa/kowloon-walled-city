@@ -852,3 +852,19 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** The 2023 judicial review: a former owner of property in the City, now in his seventies and living in a subdivided flat, challenged the Housing Authority rule that bars people who took City clearance compensation and arranged their own housing from public housing. Nothing on the City before 1993 beyond the fact of the compensation.
 - **Lead:** L1053 (cited by zh-testimony-8, retrospective-testimony-web)
 - **Notes:** Add as a note to zh-testimony-8 (same case) rather than as a new item. The court file (High Court, judicial review, filed about 7 July 2023) can be found on the Judiciary's sites if the case went to a hearing (not searched).
+
+### lead-l0498: La cité des ténèbres de Hong Kong (Le Petit Journal Hong Kong)
+
+- **Creator:** Didier Pujol, Le Petit Journal Hong Kong
+- **Date:** 2023-05-02 (updated 2024-12-21)
+- **Kind:** article
+- **Class:** secondary (A popular article of 2023 written from books and press features; no first-hand testimony.)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** © Le Petit Journal (no open licence stated on the page)
+- **Link:** https://lepetitjournal.com/hong-kong/la-cite-des-tenebres-kowloon-walled-city-histoire-242531
+- **Proof that it exists:** Standfirst: 'Objet de curiosité voire de crainte, Kowloon Walled City a alimenté les histoires les plus extraordinaires.'
+- **What it gives (resolver's note, not checked):** A French popular history with population figures by decade (1940-1990), the size of the City, the clearance dates (decision Jan 1987, demolition 1993, park 1995), and daily-life claims (shared water pipes, makeshift wiring, umbrellas indoors, rooms from HK$35 a month, up to four families in a flat). The facts come from secondary sources and are not all reliable.
+- **Lead:** L0498 (cited by top-popular-16, documentaries-video-and-podcasts-1990-2026)
+- **Notes:** Language French. Mark each fact secondary; check the HK$35 rent against a primary source before use.

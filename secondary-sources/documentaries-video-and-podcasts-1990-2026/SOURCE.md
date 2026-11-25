@@ -517,22 +517,46 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0502: 《九龍城寨之圍城》製作特輯．美術細節篇
 
-- **Creator:** One Cool Film (YouTube channel @OneCoolFilmProduction)
-- **Date:** 2024
-- **Kind:** film
-- **Class:** depiction (A making-of featurette of the 2024 feature film Twilight of the Warriors: Walled In (九龍城寨之圍城), about its art department and sets.)
+- **Status:** Partly read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25. I read the YouTube metadata and description with yt-dlp (One Cool Film, uploaded 19 Apr 2024, 4:53, no caption track). I could not hear the sound. I read the burned-in Chinese subtitles in the YouTube storyboard (320x180 frames, about one frame every 2 seconds), thus a short line between two frames can be missing, and some blurred characters are my best reading (marked inferred). The featurette shows no names of the former residents whom the team met; the reference photos appear only as blurred prints on a wall. Times are those of the storyboard frames.
+- **Citation:** One Cool Film (YouTube channel @OneCoolFilmProduction), 《九龍城寨之圍城》製作特輯．美術細節篇 (making-of featurette on the art department of Twilight of the Warriors: Walled In), uploaded 19 April 2024, 4:53, https://www.youtube.com/watch?v=dAajqrzEXEk
+- **Class:** secondary (A making-of featurette of 2024 about a film set that reconstructs the City of the 1980s; the art team's statements about the City are later claims from their research, not records of the time. It is in the right tree.)
+- **Date of the record:** 2024-04-19 (upload date)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| YouTube video, description | The description says that the art director 麥國強 rebuilt the City from research and from interviews with former residents of the City. | "透過資料搜集、訪問前城寨居民" (through the collection of material and interviews with former residents of the City) |
+| YouTube video, description | The description says that the hardest part was to show the residents' daily life with warmth, not only vice (gambling, drugs and prostitution), and that the team aimed to recreate the City of the 1980s down to a single sweet. | "以最真實還原出80年代的九龍城寨" (to recreate the Kowloon Walled City of the 1980s as truly as possible) |
+| YouTube video, description | The description says that the art team made the pipes and the electric wiring bigger than real, and built the set from groups of movable building units. Thus the film's pipes and wires are an exaggeration on purpose. | "美術團隊放大了喉管、電線佈置" (the art team enlarged the arrangement of the pipes and the electric wires) |
+| 0:29-0:31 (subtitle) | INFERRED: A subtitle says that the team met many neighbours who once lived in the City. The speaker is probably 麥國強, whose name caption appears just before; no resident is named. | "和見過很多曾經住在城寨的街坊" (and met many neighbours who once lived in the City) |
+| 0:33-0:43 (subtitles and images) | INFERRED: A subtitle says that there are many pictures of the City online, and that the task was to go beyond the reference material that everyone looks at. Prints of old photos of the City's interiors are shown pinned on a wall. | "因為網上圖片太多" (because there are too many pictures online) |
+| 1:27-1:33 (subtitles) | A subtitle says that the team wanted to enlarge the chaotic world of the many tangled water pipes. | "我們想放大那個亂的世界" (we wanted to enlarge that chaotic world) |
+| 1:37-1:46 (subtitles) | INFERRED: A subtitle says that there were more water pipes below the third floor, and that on the lower second and third floors people often took water by stealing it. | "譬如三樓以下就比較多喉管" (for example, below the third floor there were more pipes) |
+| 1:46 (subtitle) | INFERRED: The next subtitle line says that all of it was water theft and water taking. | "全部都是偷水取水" (all of it was stealing water and taking water) |
+| 1:48-1:52 (subtitles) | A subtitle says that above the third floor there were more antenna wires and electric wires, with wires hanging down to each household. | "三樓以上就多一點天線電線" (above the third floor there were a few more antenna wires and electric wires) |
+| 2:10-2:20 (subtitles) | INFERRED: A subtitle says that, strictly speaking, the City should not be messy: the layout inside each building was very orderly and very dense, and this made many narrow lanes. | "每一棟裏面的規劃都是很工整" (the planning inside each building was very orderly) |
+| 2:28-2:38 (subtitles) | Subtitles say that the film wanted its main character to learn the City slowly: he knows the ground, how to walk and which building to pass through, and that by walking through a floor he can reach the back staircase on the opposite side. The team used this structure to explain the whole City. It is a claim about the set and the film, from the team's research. | "行過那層樓可去到對面的後樓梯" (walking through that floor you can get to the back staircase opposite) |
+| 2:42-2:50 (subtitles) | INFERRED: A subtitle says that the streets, the water pipes and some shops of the set followed the reference material as far as possible, and restored about 80 to 90 percent. | "還原了八九成出來" (restored eighty to ninety percent of it) |
+| 3:51-4:05 (subtitles) | INFERRED: A subtitle says that the props and furniture came from all over Hong Kong, from old buildings awaiting demolition: the team searched through rubbish and removed door panels. Thus the set's props are not from the City. | "香港都還有很多舊的待拆的樓" (Hong Kong still has many old buildings awaiting demolition) |
+| 4:13-4:21 (subtitles) | INFERRED: A subtitle says that the fridges, soft-drink crates, soft-drink bottles and beer bottles of that time basically no longer exist, so most of them had to be made new. | "基本上大部分都要生產" (basically most of them had to be manufactured) |
+| 4:07-4:11 (images) | INFERRED: Prop signboards made for the set show, among others, 林氏昌醫生診所 (on the second floor), 永豐五金漆油, 國強牙科, 秋記 and 粥麵凍品. The featurette does not say whether they copy real signs of the City. | "林氏昌醫生診所" (the clinic of doctor 林氏昌 (a name on a prop sign; not translated)) |
+### lead-l0500: Lecture: On the Verge of Metropolis: Squatters in Hong Kong (report), Royal Asiatic Society Hong Kong, March 2020 Newsletter, pp. 13-14
+
+- **Creator:** Veronica Pearson (prepared by), on the talks by Tim Ko (Ko Tim-keung) and Patrick Hase; Royal Asiatic Society Hong Kong
+- **Date:** 2020-02 (report); lecture 19 Jan 2020
+- **Kind:** article
+- **Class:** secondary (A short report, written by a member of the audience, of a 2020 lecture on the history of squatting.)
 - **Value:** low
-- **Language:** zh
+- **Language:** en
 - **Access:** open
-- **Licence:** standard YouTube licence (not stated on the fetched page)
-- **Link:** https://www.youtube.com/watch?v=dAajqrzEXEk
-- **Proof that it exists:** oEmbed title '《九龍城寨之圍城》製作特輯．美術細節篇', author_name 'One Cool Film'
-- **What it gives (resolver's note, not checked):** How the film's art department rebuilt the City's lanes, shops and rooms for the 2024 film; by a search extract, it says that the team interviewed former residents (not checked). A later reconstruction, not a record of the 1980s.
-- **Lead:** L0502 (cited by top-zh-testimony-14, documentaries-video-and-podcasts-1990-2026)
-- **Notes:** Watch for the names of the former residents and the reference photos the team used. Date of upload not seen (the companion featurette top-zh-testimony-14 is of 17 Apr 2024).
+- **Licence:** © Royal Asiatic Society Hong Kong (no open licence stated)
+- **Link:** https://www.royalasiaticsociety.org.hk/s/March-2020-Newsletter.pdf
+- **Other links:** https://www.royalasiaticsociety.org.hk/events/2020/1/19/lecture-on-the-verge-of-metropolis-squatters-in-hong-kong-dr-patrick-hase-and-mr-ko-tim-keung, https://www.royalasiaticsociety.org.hk/s/January_2020newsletter.pdf
+- **Proof that it exists:** 'Lecture: On the Verge of Metropolis: Squatters in Hong Kong. Speakers: Mr. Tim Ko and Dr. Patrick Hase. Date: Sunday, 19th January 2020 ... Prepared by: Veronica Pearson, February 2020'
+- **What it gives (resolver's note, not checked):** A one-page summary of a 2020 lecture on squatters in Hong Kong: survey figures of 1955 and 1964, the Shek Kip Mei fire, and Hase's two case studies (a Kowloon village on former Ho Tung land; triad-built houses at Kwu Tung from the later 1950s). Nothing on the City itself.
+- **Lead:** L0500 (cited by top-top-flickr-6, documentaries-video-and-podcasts-1990-2026)
+- **Notes:** Same newsletter series as top-top-flickr-6. Only useful for the surroundings if 'Yiu Liu village' is the Hau Wong San Tsuen squatter area outside the City (check against another source).

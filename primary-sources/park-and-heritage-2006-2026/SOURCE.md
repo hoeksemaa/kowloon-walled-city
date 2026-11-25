@@ -71,3 +71,43 @@ shows is the reader's reading of it.
 | p. 26 (quoting the Lockhart report, Oct 1898, in translation) | The report quotes the Lockhart report of 1898 in Chinese translation. The walled city was almost a parallelogram, 700 by 400 feet, 6.5 acres. The granite wall was 15 feet wide at the top and 13 feet high on average. | "長闊為七百英呎及四百英呎，面積六點五英畝" (its length and breadth are 700 feet and 400 feet, its area 6.5 acres) |
 | p. 26 (quoting the Lockhart report, 1898, in translation) | The Lockhart report says that the six watchtowers on the wall were then used as dwellings, and that the two wooden gates had iron plates. | "牆上有六個哨樓，目前被佔用為民居；兩個木製城門鑲有鐵板" (On the wall are six watchtowers, at present occupied as dwellings; two wooden gates faced with iron plates) |
 | pp. 26-27 (quoting the Lockhart report, 1898, in translation) | In 1898 the City had 744 people: 544 soldiers and 200 civilians, by the figures of the Deputy Magistrate (巡檢). The civilians depended on the soldiers, did no trade, and the City had no shops. | "城內人口為七百四十四人，其中駐軍佔五百四十四，平民二百人" (The population of the city is 744, of whom the garrison is 544 and the civilians 200.) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0421: Cap. 53B Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice, section 2(ak) (L.N. 406 of 1996)
+
+- **Creator:** Hong Kong Government (Secretary for Broadcasting, Culture and Sport (文康廣播司)); consolidated text by the Department of Justice, Hong Kong e-Legislation
+- **Date:** 4 Oct 1996 (L.N. 406 of 1996); consolidated text with versions from 30/06/1997 to 2026
+- **Kind:** document
+- **Class:** primary (The legal text of the declaration as made in 1996 (consolidated later only in its format); a record of the time of the park, after the clearance.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** Hong Kong e-Legislation: Government copyright; the site's terms of use allow reproduction of the legislation (I did not open the terms page).
+- **Link:** https://www.elegislation.gov.hk/hk/cap53B
+- **Other links:** https://www.elegislation.gov.hk/hk/cap53B!zh-Hant-HK
+- **Proof that it exists:** Page title 'Cap. 53B Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice'; item (ak) 'the building known as the former Yamen Building at Kowloon Walled City Park, Kowloon, ... plan marked KM 6 ... (L.N. 406 of 1996)'
+- **What it gives (resolver's note, not checked):** The legal declaration (4 Oct 1996) of the former Yamen Building at Kowloon Walled City Park as a historical building (now listed among the declared monuments), with its deposited plan number KM 6 (Land Registry).
+- **Lead:** L0421 (cited by top-hkgov-9, legco-and-urban-council-1919-1997)
+- **Notes:** The repo's top-hkgov-9 already gives the declaration and its Chinese wording; the new fact is the plan number KM 6. The plan itself is a Land Registry record (closed). The folder name starts in 2006; the record is of 1996, thus the reader can choose legco-and-urban-council-1919-1997 next to top-hkgov-9 instead.
+
+### lead-l0422: Cap. 53C Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996 (L.N. 405 of 1996)
+
+- **Creator:** Hong Kong Government (Secretary for Broadcasting, Culture and Sport (文康廣播司)); text served by the Department of Justice, Hong Kong e-Legislation
+- **Date:** 4 Oct 1996
+- **Kind:** document
+- **Class:** primary (The legal text of the notice as gazetted in 1996 (only format changes later, E.R. 6 of 2019).)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** Hong Kong e-Legislation: Government copyright; the site's terms of use allow reproduction of the legislation (I did not open the terms page).
+- **Link:** https://www.elegislation.gov.hk/hk/cap53C
+- **Other links:** https://www.elegislation.gov.hk/hk/cap53C!zh-Hant-HK
+- **Proof that it exists:** Page title 'Cap. 53C Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996'; 'The remnants of the South Gate at Kowloon Walled City Park, Kowloon, delineated and shown edged red on the plan marked KM 7 ...'
+- **What it gives (resolver's note, not checked):** The full legal text of the declaration (4 Oct 1996) of the remnants of the South Gate at Kowloon Walled City Park as an archaeological site, with the deposited plan number KM 7 (Land Registry).
+- **Lead:** L0422 (cited by top-hkgov-9, legco-and-urban-council-1919-1997)
+- **Notes:** Same remark as lead-l0421 on the folder (legco-and-urban-council-1919-1997 is also possible). The plan KM 7 (Land Registry) is closed.

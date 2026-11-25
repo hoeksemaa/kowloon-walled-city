@@ -388,3 +388,41 @@ See the leads under each item in the primary folder.
 |---|---|---|
 | hkmaps.hk catalogue (data/map-metadata.json), record map:88018a6c-daec-44d2-a21c-c63348655fbb | The layer '1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)' is a War Office (U.K.) map of 1952 at 1:20,000, series G.S.G.S. No. 3868, with a US Yard Grid. The hkmaps.hk catalogue gives its source as the National Library of Australia (MAP G7940 s20); the copyright field is empty. | "1952.1 - Hong Kong and the New Territories (GSGS 3868 HIND 1009)" |
 | hkmaps.hk catalogue (data/map-metadata.json), record map:88018a6c-daec-44d2-a21c-c63348655fbb, notes | The catalogue note says that for sheets 8, 12, 13, 18, 21 and 24 the missing 1952 sheet is replaced with the 1949 edition. I did not find which sheet covers Kowloon City, thus the date of the Kowloon City part (1952 or 1949) is not certain. | "note missing 1952 sheet replaced with earlier 1949 edition for sheets 8, 12, 13, 18, 21 and 24" |
+
+### lead-l0464: Kowloon (L901), 1:10,000, revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964
+
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Director of Military Survey, Ministry of Defence (UK), Kowloon (series L901), 1:10,000, compiled and drawn by 84 Field Survey Squadron RE, revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964; National Library of Australia MAP G7944.K6 s10; seen as the layer '1965 - Kowloon (L901)' on hkmaps.hk, https://hkmaps.hk/
+- **Class:** primary (A survey map revised to August 1964, made at the time. Earlier history (1964).)
+- **Date of the record:** 1964-08 (revision); layer dated 1965
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), catalogue entry (map-metadata.json) | The map is the Kowloon sheet of series L901 at 1:10,000 on the UTM grid, compiled by 84 Field Survey Squadron RE and revised by the Crown Lands and Survey Office of the Hong Kong PWD to August 1964. | "revised by Crown Lands and Survey Office, Public Works Department, Hong Kong to August 1964." |
+| hkmaps.hk layer '1965 - Kowloon (L901)' (1:10,000, revised to August 1964), catalogue entry, notes | The catalogue says the series shows buildings, development areas, squatter areas, fire stations, police stations, cordon points and footpaths, among other features. | "showing buildings, development areas, squatter areas, rivers or canals" |
+
+### lead-l0467: 1926 - Development of New Kowloon
+
+- **Status:** Read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25.
+- **Citation:** Colonial Office (UK), plan of the development of New Kowloon, 1:7,920, enclosed in CO 129/494 with the letter of 1 September 1926; The National Archives (UK), MR 1/797; seen as the layer '1926 - Development of New Kowloon' on hkmaps.hk, https://hkmaps.hk/
+- **Class:** primary (A government planning map of 1923-1926 made at the time; it shows a proposed plan with the buildings of the time under it. Earlier history.)
+- **Date of the record:** 1926 (letter of 1 September 1926)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk layer '1926 - Development of New Kowloon' (1:7,920; TNA MR 1/797), catalogue entry (map-metadata.json) | The plan was sent to the Colonial Office with CO 129/494, about the development of 'New Kowloon' described in a letter of 1 September 1926; its scale is 1:7,920 (8 inches to the mile). | "Plan included in CO 129/494 regarding the development of "New Kowloon" as described in letter 1st September, 1926" |
+
+### lead-l0515: 1904 - Kowloon and Part of New Territories
+
+- **Status:** Partly read on 2026-11-25; a checker checked a sample of the facts on 2026-11-25. I opened the hkmaps.hk viewer in the Playwright browser, chose the layer '1904 - Kowloon and Part of New Territories' and looked at it around the walled City at about 1:1,500, 1:3,000, 1:4,000 and 1:8,000 (screenshots of the viewer). I also read the layer's entry in https://hkmaps.hk/data/map-metadata.json. I did not see the whole sheet, its title block or its legend. The ArcGIS tile service of the layer answers 'Token Required', and the viewer's PDF/JPG export is for the paid version only, thus I list no file. At the scales I saw, I could not make out the gates of the wall.
+- **Citation:** War Office, U.K. (survey under the superintendence of Major H. S. King, R.E.), 'Kowloon and Part of New Territories', 1:7,920, 21 sheets, surveyed 1902-1903, dated 1904; Government Records Service, Hong Kong, HKRS209-4-1; viewed as the layer '1904 - Kowloon and Part of New Territories' of hkmaps.hk, https://hkmaps.hk/ (catalogue entry '1904' in https://hkmaps.hk/data/map-metadata.json)
+- **Class:** primary (A military survey map made at the time (1902-1903). The map is primary; the hkmaps.hk catalogue notes are secondary.)
+- **Date of the record:** surveyed 1902-1903; the catalogue dates the map 1904
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| hkmaps.hk map-metadata.json, layer '1904', fields 'notes' and 'scale' | The hkmaps.hk catalogue says that this War Office map was surveyed in 1902-1903 for military use, under Major H. S. King, R.E. It has 21 sheets at 1:7,920. | "Detailed map of the NT, 21 sheets Surveyed in 1902-1903 under superintendence of Major H S King RE for military use." |
+| hkmaps.hk map-metadata.json, layer '1904', fields 'documentSource' and 'copyright' | The catalogue gives the source of the scan as the Government Records Service copy HKRS209-4-1. Its copyright field is empty. | "HKRS209-4-1, Government Records Service, Hong Kong" |
