@@ -609,3 +609,37 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** Xu's account that Ji Pengfei and others counted 'the Kowloon Walled City incident' (his visit to the City in August 1983 and his praise of its self-rule) among his 'leftist' errors: how Beijing judged the visit, about 1983-1984. One mention only.
 - **Lead:** L1160 (cited by usgov-2, us-government-records-1948-1994)
 - **Notes:** Scan pages 6-9 (printed pp. 4-7) hold the section; the City sentence is on scan page 7. Read the paragraph around it for the date and the names of those who cited the error.
+
+### lead-l1162: Current Intelligence Weekly Summary, 15 February 1963 (CIA-RDP79-00927A003900080001-3), Weekly Review: 'Chinese Communist Diplomatic Pressure on Hong Kong'
+
+- **Creator:** Central Intelligence Agency, Office of Current Intelligence
+- **Date:** 1963-02-15
+- **Kind:** document
+- **Class:** primary (A CIA weekly intelligence summary written in February 1963, in the weeks of the events.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
+- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp79-00927a003900080001-3
+- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp79-00927a003900080001-3/cia-rdp79-00927a003900080001-3.pdf, https://www.cia.gov/readingroom/document/cia-rdp79-00927a003900080001-3
+- **Proof that it exists:** archive.org metadata title 'CIA Reading Room cia-rdp79-00927a003900080001-3: CURRENT INTELLIGENCE WEEKLY SUMMARY', date 1963-02-15; OCR first line 'Approved For Release 2009/05/11 : CIA-RDP79-00927A003900080001-3'.
+- **What it gives (resolver's note, not checked):** The CIA account of the 1963 protest about the City: London rejected the Chinese claim of sovereignty over the 'walled city' but said that Hong Kong would halt the urban renewal (clearance) there; the Chinese means of pressure on the colony (water, trade, remittances). Early history (1963), not daily life.
+- **Lead:** L1162 (cited by usgov-4, us-government-records-1948-1994)
+- **Notes:** The City passage is in the article on p. 22 of 26 (Weekly Review). The OCR text has 112,867 characters; I read the first 100,000 only.
+
+### lead-l1164: Office of Reports and Estimates, CIA Far East/Pacific Branch, Intelligence Highlights, week of 20 January - 26 January 1948 (CIA-RDP78-01617A004600020003-6)
+
+- **Creator:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch
+- **Date:** 1948-01-20/1948-01-26
+- **Kind:** document
+- **Class:** primary (A CIA weekly summary written in the week after the Canton riot of 16 Jan 1948, about the events of that week.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
+- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp78-01617a004600020003-6
+- **Other links:** https://archive.org/details/cia-readingroom-document-cia-rdp79-01082a000100010036-0, https://archive.org/download/cia-readingroom-document-cia-rdp78-01617a004600020003-6/cia-rdp78-01617a004600020003-6.pdf
+- **Proof that it exists:** archive.org title 'CIA Reading Room cia-rdp78-01617a004600020003-6: OFFICE OF REPORTS AND ESTIMATES, CIA FAR EAST/PACIFIC BRANCH INTELLIGENCE HIGHLIGHTS WEEK OF 20 JANUARY - 26 JANUARY 1948'; OCR p. 1: 'The Chinese press, hungry for news fit to print, found a welcome outlet in the Kowloon incident'.
+- **What it gives (resolver's note, not checked):** The week after the Canton riot of January 1948: the Chinese press used the 'Kowloon incident' (the eviction of the squatters in the City); Britain demanded compensation for Canton, and China claimed compensation for the eviction of the Kowloon squatters. Early history (1948).
+- **Lead:** L1164 (cited by usgov-5, us-government-records-1948-1994)
+- **Notes:** The second copy (RDP79-01082A000100010036-0) has the same title; compare the two scans for legibility. The OCR is poor; read the PDF.

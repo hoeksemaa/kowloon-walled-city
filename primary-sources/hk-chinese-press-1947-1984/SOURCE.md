@@ -1626,7 +1626,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 70 of 70 items read by the reading of the source search of 2026-11.
+- **Status:** read: 101 of 101 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
@@ -3290,521 +3290,760 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0002: 大公報 1963-01-14: 對港府拆遷屋宇事 城砦居民紛紛反對 他們說辛勤建家園 一旦被拆生活無着 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-01-14
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19630114
-- **Other links:** https://archive.org/download/NPTKP19630114/NPTKP19630114.pdf, https://archive.org/metadata/NPTKP19630114
-- **Proof that it exists:** archive.org item NPTKP19630114, title '大公報 1963-01-14'; its description has '對港府拆遷屋宇事城砦居民紛紛反對他們說辛勤建家園一旦被拆生活無着'.
-- **What it gives (resolver's note, not checked):** The residents' talks against the clearance of January 1963, a week after the demolition notices of 7 Jan 1963: what the house owners and tenants said they would lose (homes they built, livelihoods). People's Daily cites this report with the words of the head of the residents' anti-demolition committee.
-- **Lead:** L0002 (cited by china-2, china-official-records-1933-1987); also L0019
-- **Notes:** Leaf not found (the OCR of the page images is unusable). Read the page images; the headline list does not give the page.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈對港府拆遷屋宇事 城砦居民紛紛反對〉, subhead 〈他們說辛勤建家園一旦被拆生活無着〉 (本報訊), Monday 14 January 1963, p. 4 (第一張 第四版; archive.org leaf n3, upper left), https://archive.org/details/NPTKP19630114/page/n3
+- **Class:** primary (A report of the time (14 Jan 1963) by a left-wing (pro-Beijing) daily, with the words of named residents and of two leaders of the residents' anti-demolition committee. It stays in primary-sources/hk-chinese-press-1947-1984. The paper took the residents' side; read it beside 華僑日報 and 工商日報.)
+- **Date of the record:** 1963-01-14
+- **Files:**
+  - `lead-l0002-n3-1b5bf7a7.jpg` (in `local/`, not in git): Page image of p. 4 (第四版, leaf n3) of 大公報, 14 Jan 1963, with the article; https://archive.org/download/NPTKP19630114/page/n3.jpg; 3907995 bytes; SHA-256 `d9be829c85d091e2a9e4de910db5fc67062981c369d155df9d257e0f1f16bcdd`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19630114)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, headline and subhead | The headline says that the residents of the City, one after another, opposed the Hong Kong Government's demolition of their houses. The subhead says that they built their homes by hard work and would have no livelihood if the houses were pulled down. | "對港府拆遷屋宇事 城砦居民紛紛反對 他們說辛勤建家園一旦被拆生活無着" (Over the Hong Kong Government's demolition of houses, the residents of the City oppose one after another; they say they built their homes by hard work and, once these are pulled down, they will have no livelihood) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 1-2 | The paper says that the Resettlement Department (徙置事務處) tried to force the demolition of the residents' own houses in the City, and that the residents firmly opposed it. | "港府徙置事務處企圖强迫拆遷九龍城砦居民原有屋宇，已引起居民的堅決反對" (The Hong Kong Government's Resettlement Department tries to force the demolition of the original houses of the residents of Kowloon Walled City; this has met the firm opposition of the residents) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 3-4 | The residents said that the plan would wreck the homes of tens of thousands of residents of all trades in the City (the paper's figure). | "破毀城砦各行各業數以萬計居民的屋宇" (wreck the houses of tens of thousands of residents of all trades in the City) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 5-6 | The Resettlement Department and the police recently posted notices on house walls. The notices set deadlines in early and mid-February 1963 for the demolition and removal. | "聯合警方人員最近將限期於二月初旬及中旬拆屋迫遷的通知" (together with police officers, recently [posted] the notices that set early and mid-February as the deadline for demolition and removal) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 6-8 | The notices were posted on the walls of houses on Lung Shing Road (龍城路), Lung Chun Road (龍津道), Kwong Ming Street (光明街), Tung Tau Tsuen Road (東頭村道) and other streets of the City. | "貼在九龍城砦龍城路、龍津道、光明街、東頭村道等街巷的屋宇牆上" (posted on the walls of houses on Lung Shing Road, Lung Chun Road, Kwong Ming Street, Tung Tau Tsuen Road and other streets and lanes of the City) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 8-9 | Many residents tore the notices down, to show that they would not accept the demolition. | "表示他們絕不能接受拆遷之意" (to show that they absolutely could not accept the demolition) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 15-16 | The residents' committee against the demolition was called 九龍城砦居民聯合反對拆遷委員會. Its chairman (主任委員) was 黃中平, the principal (校長) of 新華學校. | 「九龍城砦居民聯合反對拆遷委員會」主任委員、新華學校校長黃中平 (黃中平, chairman of the 'Kowloon Walled City Residents' Joint Committee against Demolition' and principal of 新華學校) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 17-20 | 黃中平 said that the residents refused the demolition notices of the authorities, and that they would tear down any notice that was posted on their houses. | "都拒絕接受港府有關當局所派發的拆遷通知" (all refuse to accept the demolition notices issued by the authorities concerned) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 20-22 | The Resettlement Department sent men to paint numbers in oil paint on some houses. The residents washed the numbers off. | "被港府徙置事務處派人塗上油漆的編號，同樣亦將之洗擦" (the numbers that the Resettlement Department sent men to paint on in oil paint were likewise washed off) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 24-28 | 黃中平 said that he ran a school in the City. He had built it up through many difficulties, and it now had some size. If it was pulled down, the pupils would lose their schooling and the teachers their jobs. | "學生將隨之失學，教員也失業了" (the pupils would then lose their schooling and the teachers would lose their jobs) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 30-31 | The vice-chairman (副主任委員) of the committee was 張一帆, the principal of 龍城學校. | "副主任委員、龍城學校校長張一帆" (vice-chairman, principal of 龍城學校 張一帆) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 1, col. 31-32; tier 2, col. 1 | 張一帆 said that the authorities announced the forced demolition on 19 March 1962 ('19 March last year'). Since then the residents had been anxious. | "於去年三月十九日提出要强迫拆遷九龍城砦後" (after [the authorities] proposed on 19 March last year to force the demolition of Kowloon Walled City) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, col. 3-5 | INFERRED: The residents said that many small traders and makers had put their capital into their businesses, and that whole families lived on them. Thus these small traders all opposed the demolition. INFERRED: the verb before 了本錢 reads 落 (put in); the scan does not show 賠 (lose). | "許多小型工商業者落了本錢做生意，全家大小就靠此維持生活" (many small industrial and commercial operators put in their capital to do business, and the whole family, old and young, depends on it for a living) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, col. 5-8 | INFERRED: A woman surnamed 歐 who lived by carrying water (擔水) refused to accept the authorities' 'white card' (白咭). She said that her family of several people lived on carrying water and on a little rent. INFERRED: the paper gives her address as 龍城路 No. 2 (Lung Shing Road (龍城路)); the house number is blurred on the scan. | "依賴擔水和收點租過日子" ([they] depend on carrying water and collecting a little rent to get by) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, left of headline, col. 1-4 | INFERRED: 張一帆 said that he had been in the City for fifteen years. At first he taught in a wooden hut (木屋). The school burned twice, with heavy losses, and he borrowed from relatives and friends to rebuild it. INFERRED: the verb before 了十五年 is blurred; it looks like 住 (lived), not 辦 (ran). | "初時是搭木屋來辦學，但經歷了兩次火燒，損失慘重" (at first he put up a wooden hut to run the school, but it went through two fires, with heavy losses) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, left of headline, col. 4-5 | 張一帆's school had about two hundred pupils in January 1963. | "擴充到現在有兩百學生的學校" (expanded to the present school of two hundred pupils) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, left of headline, col. 7-9 | 張一帆 refused the authorities' registration for demolition and resettlement (拆遷徙置登記). | "拒絕有關當局的拆遷徙置登記" (refused the demolition and resettlement registration of the authorities) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 2, left of headline, col. 10-11; tier 3, col. 1 | 張一帆 said that the City had a historical and traditional status that could not be wiped out; thus it must not be demolished. | "九龍城砦有其歷史傳統地位" (Kowloon Walled City has its historical and traditional status) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 3, right of headline, col. 2-3 | An old resident, 林玉, lived at No. 42 Lung Shing Road (龍城路). She had lived in the City for more than twenty years. | "她現住龍城路四十二號，她在九龍城砦已住了二十多年" (she now lives at 42 Lung Shing Road; she has lived in Kowloon Walled City for more than twenty years) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 3, right of headline, col. 4-6 | 林玉 said that the residents of Lung Shing Road could not eat or sleep, and that some housewives did not do their housework because of the worry. | "有些家庭主婦連家務也無心料理" (some housewives have no heart even to do their housework) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 3, right of headline, col. 8-9; left of headline, col. 5 | INFERRED: A man of more than fifty, 洪炳, lived at No. 61 Lung Shing Road (龍城路). He made bean curd (荳腐) for a living. INFERRED: the next words read 兼養猪 (and kept pigs); the scan is blurred. A later line says that he could not go on with the bean-curd workshop and the pigs. | "龍城路六十一號做荳腐兼養猪爲活的" ([he] makes a living at 61 Lung Shing Road making bean curd and keeping pigs) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 3, left of headline, col. 1-2 | 洪炳's wife was more than forty. The couple raised several children on their business. | "也有四十多歲了" (is also over forty) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, tier 3, left of headline, col. 7-8 | 洪炳 and his wife said that if the house was pulled down they would have no way to live, and that they could only drown themselves in the sea. | "只有死路一條，不如去跳海吧" (there is only the road of death; we might as well go and jump into the sea) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, col. 1-3 | INFERRED: 林玉 said that she and her husband were old and that they owned their house. INFERRED: the next words say that they still had children at school; the scan is blurred here. | "她目前雖有自己的屋宇" (although at present she has her own house) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, col. 6-8 | INFERRED: Another old resident, 龐英南, lived at No. 27 Kwong Ming Street (光明街). He had lived in the City for more than twenty years and had lived through two fires there. INFERRED: his age reads 七十四歲 (74); the first digit is blurred. | "住光明街二十七號" (living at 27 Kwong Ming Street) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, col. 8-10 | After each fire, 龐英南 scrimped and saved (死慳死抵) and rebuilt his home on the same spot, because he did not want to leave. | "於是死慳死抵，辛辛苦苦的在原地重建起來" (so he scrimped and saved and toiled to rebuild on the same spot) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, col. 14-17 | INFERRED: 龐英南's wife of more than twenty years, 伍還, found a demolition notice posted on her door by the Resettlement Department staff 'last Tuesday'. After that she cried all day and did not eat. INFERRED: 'last Tuesday' before this Monday issue is 8 January 1963. | "上個星期二忽然看到自己的門口被徙置事務處人員强行貼了一張限期迫遷的通知" (last Tuesday she suddenly saw that the Resettlement Department staff had forcibly posted a notice with a deadline for removal on her own door) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, left part, col. 1-3 | INFERRED: Other residents told the paper of their hardship. They were an old woman who carried water at No. 40A Kwong Ming Street (光明街); 朱清泉, owner of the 泉利商店 shop at No. 2A Tung Tau Tsuen Road (東頭村道); and 阮志平, owner of the 志平商店 shop on Lung Shing Road (龍城路). INFERRED: the old woman's name reads 歐關旺; the middle character is blurred. | "東頭村道二號A泉利商店老闆朱清泉" (朱清泉, owner of 泉利商店 at No. 2A Tung Tau Tsuen Road) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, left part, col. 3-4 | A dentist (牙科醫生) surnamed 許, at No. 1 Lung Shing Road (龍城路), and 梁姑, who made a living from hardware (五金) on Kwong Ming Street (光明街), also spoke. The paper gives only the dentist's surname. | "龍城路一號姓許的牙科醫生、光明街做五金爲生的梁姑" (the dentist surnamed 許 of No. 1 Lung Shing Road, and 梁姑, who makes a living from hardware on Kwong Ming Street) |
+| NPTKP19630114, leaf n3 (printed 第四版, 第一張), article 對港府拆遷屋宇事 城砦居民紛紛反對, bottom tier, left part, col. 6-8 | These residents said that they could not accept the Resettlement Department's notices and that they firmly opposed the demolition of the City's houses. | "均表示不能接受徙置事務處的拆遷通知" (all said that they could not accept the Resettlement Department's demolition notices) |
+
+- **Leads:**
+  - Resettlement Department (徙置事務處) demolition notices of January 1963 on houses of Lung Shing Road, Lung Chun Road, Kwong Ming Street and Tung Tau Tsuen Road, with deadlines in early and mid-February 1963 (named in this article)
+  - Records of 九龍城砦居民聯合反對拆遷委員會 (chairman 黃中平, vice-chairman 張一帆), January 1963
+  - Education Department records of 龍城學校 (principal 張一帆; about 200 pupils in 1963) and 新華學校 (principal 黃中平)
 ### lead-l0003-1: 華僑日報 1960-05-14: 九龍東北發展草圖 (甲緒言 乙處理計劃途徑 丙授權進行計劃 丁計劃之內容) (OCR of the headline list)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
-- **Date:** 1960-05-14
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 華僑日報
-- **Link:** https://archive.org/details/NPWK19600514
-- **Other links:** https://archive.org/download/NPWK19600514/NPWK19600514.pdf
-- **Proof that it exists:** archive.org item NPWK19600514; its description has '九龍東北發展草圖 甲緒言 乙處理計劃途徑 丙授權進行計劃 丁計劃之內容 公共曠塲 工業區 商業中心'.
-- **What it gives (resolver's note, not checked):** The North-East Kowloon outline development plan of May 1960 as the government stated it: its aims, its way of working, its authority and its contents (open space, industrial area, commercial centre), with objections until mid-July 1960. The plan put the City inside the plan area (china-2).
-- **Lead:** L0003 (cited by china-2, china-official-records-1933-1987)
-- **Notes:** Leaf not found. INFERRED that the text is the government statement printed in full; read it to check that it names the City (九龍城砦 or 寨城).
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), Hong Kong, 〈可使九龍居民及港島居民兩得其益 九龍發展大計〉 (特訊), with the plan statement 〈九龍東北發展草圖〉 and a sketch map 〈九龍城市設計第八及第十一區發展草圖〉, 14 May 1960, 第二張第一頁 (港聞; archive.org leaf n4), https://archive.org/details/NPWK19600514/page/n4
+- **Class:** primary (A news report of the time (14 May 1960) that prints a government planning statement and map of the day. It stays in primary-sources/hk-chinese-press-1947-1984. It does not name the Walled City: it is context for the clearance of 1962-1963 (the PRC note of 17 Jan 1963 said that this plan included the City).)
+- **Date of the record:** 1960-05-14
+- **Files:**
+  - `lead-l0003-1-n4-c7700332.jpg` (in `local/`, not in git): Page image of 第二張第一頁 (leaf n4) of 華僑日報, 14 May 1960, with the report, the plan statement and the sketch map; https://archive.org/download/NPWK19600514/page/n4.jpg; 4935663 bytes; SHA-256 `77b38537696b484a6276e16ef21f9e465e49961e770e1b99a91b4c62ced6eea9`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPWK19600514)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, news report, col. 1-3 | On 13 May 1960 the Town Planning Board (城市設計委員會) published a development plan and outline map for about two square miles of Kowloon. The area ran from the southern foot of the Kowloon hills west to Waterloo Road (窩打老道) and east to Clear Water Bay Road (清水灣道) and Hammer Hill Road (斧山道). | "約兩方英里區域之發展計劃及草圖" (the development plan and outline map for an area of about two square miles) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, sketch map, title | The sketch map printed with the report is titled 九龍城市設計第八及第十一區發展草圖 (outline development plan of Kowloon town planning areas 8 and 11). This matches the name of the plan in the PRC note of 17 January 1963, which said that the plan included the City. | "九龍城市設計第八及第十一區 發展草圖" (Kowloon town planning areas 8 and 11, outline development plan) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, news report, col. 7-10 | Anyone who thought that the Board's proposals affected him could submit objections or any other comments. The period for objections was two months. After it, the Board would consider the objections and report to the Governor in Council. | "得以提出反對或其他任何意見" (may submit objections or any other comments) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 甲, para. 1 | The plan's land was about 1,343 acres north of Kai Tak airport (啓德機場). It was bounded on the north by the foot of the Kowloon hills, on the east by Hammer Hill and Clear Water Bay Road, and on the west by Waterloo Road. | "約爲一、三四三英畝，位於啓德機場之北" (about 1,343 acres, north of Kai Tak airport) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 甲, para. 2 | The statement says that most of the area had been farm land. Because of the housing shortage and the crowding of Kowloon, it had filled with temporary structures, among them several old villages. | "已變爲臨時建築物滿佈之區域，包括若干古老村落在內" (has become an area covered with temporary structures, including several old villages) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 甲, para. 2 | The statement says that most of the temporary structures, on about 200 acres, were illegal and had no official approval; their access, drains and water supply were far below the minimum standard. | "均遠在最低標準之下" (are all far below the minimum standard) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 丁, para. 13 | The existing resettlement estates in the area were 老虎岩, 黃大仙 and 竹園 (resettlement cottages); the planned ones were Tung Tau (東頭), including the site of the existing cottages, 橫頭磡 and 慈雲山. The statement says these estates could house about 453,500 people. | "東頭（包括現有小屋之地址）" (Tung Tau (including the site of the existing small houses)) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 丁, para. 16 | The plan provided homes for about 627,000 people in all, at an overall density of 400 persons an acre. | "約六十二萬七千人" (about 627,000 people) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, statement 丁, road paragraphs (廿四 to 廿六) and the end of the article | The plan widened and extended Prince Edward Road (太子道) as a second main road along the boundary of the new airport. It proposed a large roundabout at Prince Edward Road, Argyle Street (亞皆老街) and Ma Tau Chung Road (馬頭涌道). | "包括在太子道，亞皆老街，馬頭涌道，設一大迴旋處" (including a large roundabout at Prince Edward Road, Argyle Street and Ma Tau Chung Road) |
+| NPWK19600514, leaf n4 (printed 第二張第一頁, 港聞), article 九龍發展大計, news report, subhead and col. 'Landowners to start action' | The statement says that the government would not take back private land except for public needs, and that a landowner who did not wish to redevelop did not have to; but redevelopment must follow the approved plan. | "將不收回任何私地" (will not resume any private land) |
+
+- **Leads:**
+  - Town Planning Board, Kowloon Planning Areas 8 and 11 outline development plan (九龍城市設計第八及第十一區發展草圖) and explanatory statement, published 13 May 1960 (P.W.D. sketch map issued by the Government Information Services); objections until 14 July 1960
 ### lead-l0003-2: 大公報 1960-05-14: 港府公佈九龍發展草圖 半島市區擴至機場北部 兩方哩地闢工商住宅區 約兩百畝地現有房屋受影響 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1960-05-14
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19600514
-- **Other links:** https://archive.org/download/NPTKP19600514/NPTKP19600514.pdf
-- **Proof that it exists:** archive.org item NPTKP19600514; its description has '港府公佈九龍發展草圖半島市區擴至機場北部兩方哩地闢工商住宅區約兩百畝地現有房屋受影響'.
-- **What it gives (resolver's note, not checked):** The same plan of May 1960: about two square miles north of the airport for industry and housing, with existing houses on about 200 畝 (mu) of land affected; the old villages, school sites and low health standards (subheads).
-- **Lead:** L0003 (cited by china-2, china-official-records-1933-1987)
-- **Notes:** Leaf not found.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈港府公佈九龍發展草圖 半島市區擴至機場北部 兩方哩地闢工商住宅區 約兩百畝地現有房屋受影響〉, with the notes 〈反對者可提出意見〉 and 〈草圖可以免費參閱〉, 14 May 1960, p. 4 (第一張 第四版; archive.org leaf n3, top half), https://archive.org/details/NPTKP19600514/page/n3
+- **Class:** primary (A news report of the time (14 May 1960) that summarises a government plan of the day. It stays in primary-sources/hk-chinese-press-1947-1984. It does not name the Walled City: it is context for the clearance of 1962-1963.)
+- **Date of the record:** 1960-05-14
+- **Files:**
+  - `lead-l0003-2-n3-8c702888.jpg` (in `local/`, not in git): Page image of p. 4 (第四版, leaf n3) of 大公報, 14 May 1960, with the article and the sketch map; https://archive.org/download/NPTKP19600514/page/n3.jpg; 5562667 bytes; SHA-256 `904b7f5b48113a357b8598e3d50fcaf62ee281b1ade0e6d025eca2b91fa0ef2b`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19600514)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, headline | The headline says that the plan extended the urban area of the peninsula to the north of the airport, opened about two square miles for industry, commerce and housing, and affected existing houses on about two hundred 畝. The text gives the figure as about 200 acres (英畝) of mostly illegal temporary buildings. | "約兩百畝地現有房屋受影響" (existing houses on about two hundred mu of land affected) |
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, subhead 半島居民住得擠迫, col. 1-3 | The plan's land was about 1,343 acres north of Kai Tak airport, between the Kowloon hills, Hammer Hill, Clear Water Bay Road and Waterloo Road. | "約爲一千三百四十三英畝，位於啓德機場北面" (about 1,343 acres, north of Kai Tak airport) |
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, subhead 半島居民住得擠迫, col. 5-7 | The paper repeats that most of the temporary buildings, on about 200 acres, had no official approval. | "達二百英畝左右之大多數臨時建築物" (most of the temporary buildings, on about two hundred acres) |
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, subhead 兩條主要交通路線 | Prince Edward Road (太子道) was to be widened to 120 feet along the boundary of the development area. | "太子道擴闊爲一百二十呎" (Prince Edward Road widened to 120 feet) |
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, note 草圖可以免費參閱 | The official name of the plan was 九龍城市設計第八及第十一區發展草圖. Copies were on sale: coloured HK$15, uncoloured HK$3. | "已着色者每份售十五元，未着色者每份售三元" (coloured copies sell at fifteen dollars each, uncoloured at three dollars) |
+| NPTKP19600514, leaf n3 (printed 第一張 第四版), article 港府公佈九龍發展草圖, note 反對者可提出意見 | Objections had to reach the Secretary of the Town Planning Board in writing by 14 July 1960. | "必須於一九六〇年七月十四日以前，以書面通知城市設計委員會秘書" (must notify the Secretary of the Town Planning Board in writing before 14 July 1960) |
 ### lead-l0004: 大公報 1962-03-20: 九龍城砦部分房屋昨晨突接拆遷通知 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1962-03-20
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19620320
-- **Other links:** https://archive.org/download/NPTKP19620320/NPTKP19620320.pdf
-- **Proof that it exists:** archive.org item NPTKP19620320; its description has '九龍城砦部分房屋昨晨突接拆遷通知'.
-- **What it gives (resolver's note, not checked):** The first clearance notices of the Tung Tau Tsuen Phase 2 resettlement scheme, served on houses in the City on the morning of 19 Mar 1962: which houses, and what the notices said (as the left-wing paper reported them).
-- **Lead:** L0004 (cited by china-2, china-official-records-1933-1987)
-- **Notes:** Leaf not found. The follow-up reports of 21-29 Mar 1962 (NPTKP19620321, -0323, -0325, -0329) give the residents' meetings and appeals.
+- **Status:** Partly read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24. I read the page image of leaf n2 at full size, in crops; the archive.org OCR is not usable, and the page header is black on the scan, thus I give no printed page number. The article has seven long columns beside a photo of the houses and a strip of short columns under the photo. I read the seven long columns and the first part of the strip (the four items of the notice and the reaction of the small shops and workshops). The last part of the strip (about the residents' meeting of the evening of 19 March) is too blurred to read, and a large ink blot covers some characters of columns 5 to 7.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈九龍城砦部分房屋 昨晨突接拆遷通知〉 (本報訊, with a photo), 20 March 1962, archive.org item NPTKP19620320, leaf n2, https://archive.org/details/NPTKP19620320/page/n2
+- **Class:** primary (A report of the time (20 Mar 1962) by a left-wing (pro-Beijing) daily, on the events of the day before. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1962-03-20
+- **Files:**
+  - `lead-l0004-n2-c5667352.jpg` (in `local/`, not in git): Page image of leaf n2 of 大公報, 20 Mar 1962, with the article and a photo of the houses; https://archive.org/download/NPTKP19620320/page/n2.jpg; 4083366 bytes; SHA-256 `b50168cc77db0a5cec26be800dfcddd4d5d19272149828ca5ba3a2547223380a`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19620320)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), headline | The headline says that some houses of the City suddenly received demolition notices on the morning of 19 March 1962 ('yesterday morning'). | "九龍城砦部分房屋 昨晨突接拆遷通知" (Some houses of Kowloon Walled City suddenly received demolition notices yesterday morning) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 1 | INFERRED: The lead says that demolition notices were posted on some houses of the City and of 東頭村 and 西頭村. INFERRED: the character after 城砦 is half covered; it reads 前 (thus 'in front of the City, East and West Tau Tsuen'). | "西頭村部分房屋被貼上拆遷通告" (demolition notices were posted on some houses of 西頭村) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 2 | At about 6 to 7 a.m. on 19 March 1962 a group of Resettlement Department (徙置事務署) staff entered the City. | "昨晨六、七時，一批徙置事務署的工作人員進入九龍城砦" (at six or seven yesterday morning, a group of Resettlement Department staff entered Kowloon Walled City) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 2-4 | INFERRED: The staff went to parts of Lung Chun Road (龍津道), 光明道 (as printed; INFERRED to be Kwong Ming Street (光明街)), 龍城道, 東頭村, 東頭村大街, 西頭村, 鶴佬村, 鶴佬村正街, 老人村 (as printed) and 上沙埔村. | "龍津道、光明道、龍城道、東頭村" (Lung Chun Road, 光明道, 龍城道, Tung Tau Tsuen) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 4 | The staff registered the houses by their door numbers (門牌) and posted a demolition notice in front of the door of each household. | "按門牌進行登記，並在每戶門前貼上一張拆遷通告" (registered [the houses] by door number and posted a demolition notice in front of the door of each household) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 5 | The paper says that the staff did not truly answer any of the residents' questions. After they wrote down the number of people, they went on to the next home. | "登記了人數後就即往別家" (after registering the number of people, they went straight on to the next home) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 6-7 | The notice had four items. Item 1: the house was registered for demolition; if a nearby resettlement estate had room, the residents would be moved there first (in part). | "此屋已經登記拆遷" (this house has been registered for demolition) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), col. 7 and strip under the photo | Item 2: a household that had not been registered had to register within seven days at the Ho Man Tin (何文田) Resettlement Department office or at the Pui Ching Road (培正道) Resettlement Department office; otherwise it was treated as giving up its claim (作放棄論). | "於七天內前往何文田徙置事務署或培正道" (within seven days, go to the Ho Man Tin Resettlement Department office or the Pui Ching Road [office]) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), strip under the photo | Item 3: a household that moved away in this period had to tell the Resettlement Department. Item 4: anyone who moved in after 18 March 1962 got no right to resettlement. | "凡於三月十八日以後遷入，都得不到徙置權利" (whoever moves in after 18 March will get no resettlement rights) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), strip under the photo, second paragraph | INFERRED: INFERRED: the strip says that the owners of the small shops and small workshops (小工廠) and the residents did not know what to do after this sudden demolition. The characters are blurred; only 小工廠 and 不知日後如何是好 are clear. | "都不知日後如何是好" (none of them know what to do in future) |
+| NPTKP19620320, leaf n2, article 九龍城砦部分房屋 昨晨突接拆遷通知 (right of and under the photo), photo | INFERRED: The article has a photo of houses: low buildings of one to three storeys with flat roofs and small windows, packed close together. INFERRED: the photo shows the houses named in the headline; it has no legible caption, and I could not find a credit such as 本報攝 on the scan. | "九龍城砦部分房屋" (some houses of Kowloon Walled City) |
+
+- **Leads:**
+  - Resettlement Department (徙置事務處) notice of 19 March 1962 to the residents of the City, in four items (registration, seven-day deadline at the Ho Man Tin office, moving-in cut-off of 18 March 1962)
+  - 大公報 21, 23, 25 and 29 March 1962 (NPTKP19620321, -0323, -0325, -0329): the follow-up reports on the residents' meetings and appeals (finder's note; not read)
 ### lead-l0019-1: 大公報 1963-01-21: 城寨居民反拆遷 新華社報道消息 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-01-21
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19630121
-- **Other links:** https://archive.org/download/NPTKP19630121/NPTKP19630121.pdf
-- **Proof that it exists:** archive.org item NPTKP19630121, title '大公報 1963-01-21'; its description has '城寨居民反拆遷新華社報道消息'.
-- **What it gives (resolver's note, not checked):** A report (from Xinhua) on the residents' opposition to the clearance of January 1963.
-- **Lead:** L0019 (cited by top-china-3, china-official-records-1933-1987)
-- **Notes:** Leaf not found. INFERRED: it can repeat the Xinhua text of 19 Jan 1963 that the repo holds (china-3).
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈城寨居民反拆遷 新華社報道消息〉 (本報訊), 21 January 1963, p. 4 (第四版; archive.org leaf n3, top left), https://archive.org/details/NPTKP19630121/page/n3
+- **Class:** primary (A short news note of the time (21 Jan 1963) by a left-wing daily. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1963-01-21
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630121, leaf n3 (printed 第四版), top left, article 城寨居民反拆遷 新華社報道消息, col. 1-2 | On 19 January 1963 Xinhua (新華通訊社) reported that the residents' joint committee against the demolition of the City (九龍城寨居民聯合反對拆遷委員會) held a press conference on 18 January 1963. | "九龍城寨居民聯合反對拆遷委員會十八日舉行記者招待會" (the Kowloon Walled City Residents' Joint Committee against Demolition held a press conference on the 18th) |
+| NPTKP19630121, leaf n3 (printed 第四版), top left, article 城寨居民反拆遷 新華社報道消息, col. 3 | At the press conference of 18 January 1963 the committee issued a statement of firm opposition to the demolition. | "發表堅決反對拆遷聲明" (issued a statement of firm opposition to the demolition) |
+
+- **Leads:**
+  - Xinhua (新華社) release of 19 January 1963 on the press conference of 18 January 1963 of 九龍城寨居民聯合反對拆遷委員會 and its statement (the repo holds a Xinhua text of 19 Jan 1963 as china-3; check that it is the same release)
 ### lead-l0019-2: 大公報 1963-01-22: 關於九龍城寨問題 英國拒絕中國建議 宣佈城寨暫停拆遷 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-01-22
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19630122
-- **Other links:** https://archive.org/download/NPTKP19630122/NPTKP19630122.pdf
-- **Proof that it exists:** archive.org item NPTKP19630122, title '大公報 1963-01-22'; its description has '關於九龍城寨問題英國拒絕中國建議宣佈城寨暫停拆遷'.
-- **What it gives (resolver's note, not checked):** The British answer to the PRC protest of 17 Jan 1963 and the halt of the clearance of the City in January 1963 (as the left-wing paper reported it).
-- **Lead:** L0019 (cited by top-china-3, china-official-records-1933-1987); also L0005, L1199
-- **Notes:** Leaf not found. Pairs with the PRC note of 17 Jan 1963 (leads L0005, L1199) and with the UK files FO 371/170651-170652 (tna-9).
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈關於九龍城寨問題 英國拒絕中國建議 宣佈城寨暫停拆遷〉 (法新社倫敦二十一日電), in the box 最後消息, 22 January 1963, front page (第一版; archive.org leaf n0), https://archive.org/details/NPTKP19630122/page/n0
+- **Class:** primary (A wire report of the time (21-22 Jan 1963) that quotes the British reply note. It stays in primary-sources/hk-chinese-press-1947-1984. It pairs with the PRC note of 17 Jan 1963 and the UK files FO 371/170651-170652.)
+- **Date of the record:** 1963-01-22
+- **Files:**
+  - `lead-l0019-2-n0-94d9415d.jpg` (in `local/`, not in git): Front-page image (leaf n0) of 大公報, 22 Jan 1963, with the late-news report; https://archive.org/download/NPTKP19630122/page/n0.jpg; 3926738 bytes; SHA-256 `dc8103c4f8d384e280e947ecdcdf8b9e41e308127a1914204a333087b635b562`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19630122)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630122, leaf n0 (front page, 第一版), box 最後消息, article 關於九龍城寨問題 英國拒絕中國建議, col. 1-3 | On 21 January 1963 Britain rejected China's claim to jurisdiction over the City. At the same time it announced that the demolition plan in the City, which China had protested against, was now stopped for the time being. | "但公佈現已暫時停止中國所抗議的在九龍城寨的拆遷計劃" (but announced that the demolition plan in Kowloon Walled City, which China protested against, has now been stopped for the time being) |
+| NPTKP19630122, leaf n0 (front page, 第一版), box 最後消息, article 關於九龍城寨問題 英國拒絕中國建議, col. 4-6 | The British reply to the Chinese note of 17 January 1963 was handed in Beijing on the morning of 21 January 1963 to the Chinese Vice Foreign Minister 耿飈 by the British chargé d'affaires. Its full text was published in London the same day. | "英國對中國一月十七日照會的覆照，今晨在北京遞交" (Britain's reply to China's note of 17 January was handed over in Beijing this morning) |
+| NPTKP19630122, leaf n0 (front page, 第一版), box 最後消息, article 關於九龍城寨問題 英國拒絕中國建議, quoted part of the reply, col. 1-3 | The reply said that China's claim to jurisdiction over the area could not be regarded as valid, and that it was the responsibility of the Hong Kong Government to decide on any necessary measures. | "不能視爲有效" (cannot be regarded as valid) |
+| NPTKP19630122, leaf n0 (front page, 第一版), box 最後消息, article 關於九龍城寨問題 英國拒絕中國建議, quoted part of the reply, col. 3-5 | The reply also said that this did not prevent the Hong Kong Government from deciding later to stop the action that it had taken in the City. | "停止在九龍城寨所採取的行動" (stop the action taken in Kowloon Walled City) |
+
+- **Leads:**
+  - British reply note of 21 January 1963 to the Chinese note of 17 January 1963 on Kowloon Walled City (full text published in London on 21 Jan 1963; UK files FO 371/170651-170652)
 ### lead-l0019-3: 大公報 1963-02-07: 城砦西城路前晚有劫案 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-02-07
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19630207
-- **Other links:** https://archive.org/download/NPTKP19630207/NPTKP19630207.pdf
-- **Proof that it exists:** archive.org item NPTKP19630207, title '大公報 1963-02-07'; its description has '城砦西城路前晚有劫案'.
-- **What it gives (resolver's note, not checked):** A robbery on 西城路 in the City on the night of 5 Feb 1963: a crime report of daily life, with a street name of the City.
-- **Lead:** L0019 (cited by top-china-3, china-official-records-1933-1987)
-- **Notes:** Leaf not found.
+- **Status:** Partly read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24. I read the page image of leaf n2 (printed 第三版) at full size, in crops; the archive.org OCR is not usable. The note is short (about eight short columns). The first four columns are legible. The last part, which runs on under the next story, is too faint to read: it names what the robbers took, but I cannot read it.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈城砦西城路 前晚有劫案〉 (本報訊), 7 February 1963, p. 3 (第三版; archive.org leaf n2, lower right), https://archive.org/details/NPTKP19630207/page/n2
+- **Class:** primary (A crime note of the time (7 Feb 1963). It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1963-02-07
+- **Files:**
+  - `lead-l0019-3-n2-f40b9edd.jpg` (in `local/`, not in git): Page image of p. 3 (第三版, leaf n2) of 大公報, 7 Feb 1963, with the note; https://archive.org/download/NPTKP19630207/page/n2.jpg; 4079351 bytes; SHA-256 `5b5227f5e5b9dd136d8d572b531d376e1e3d50df6046cdc2838a65e3546a7054`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19630207)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630207, leaf n2 (printed 第三版), lower right, note 城砦西城路 前晚有劫案, col. 1-3 | A robbery happened at about 8.30 p.m. on 5 February 1963 ('the night before last') in a flat of No. 9 Sai Shing Road (西城路) in the City. The paper hides the floor with ×. | "九龍城砦西城路九號×樓，前晚八時半發生劫案" (At No. 9 Sai Shing Road, Kowloon Walled City, x/F, a robbery took place at 8.30 the night before last) |
+| NPTKP19630207, leaf n2 (printed 第三版), lower right, note 城砦西城路 前晚有劫案, col. 3-4 | INFERRED: INFERRED: the next words say that a teenage robber (一個十多歲的…) took part; the rest of the sentence is blurred. | "一個十多歲的" (a teenaged [person]) |
+| NPTKP19630207, leaf n2 (printed 第三版), lower right, note 城砦西城路 前晚有劫案, col. 2 | INFERRED: INFERRED: No. 9 Sai Shing Road had more than one storey in 1963, because the paper gives a floor (樓) and hides its number. | "西城路九號×樓" (No. 9 Sai Shing Road, x/F) |
+
+- **Leads:**
+  - Police report of the robbery at No. 9 Sai Shing Road (西城路), Kowloon Walled City, about 8.30 p.m. on 5 February 1963; and the same story in 華僑日報 or 工商日報 of 6-7 February 1963 (not checked)
 ### lead-l0019-4: 大公報 1963-05-31: 有人在城砦貼告示 港府昨特發表聲明 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-05-31
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time; the headline list shows a news report of that day on the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** no rights or licenceurl field in the archive.org metadata (collection china-mail); © 大公報
-- **Link:** https://archive.org/details/NPTKP19630531
-- **Other links:** https://archive.org/download/NPTKP19630531/NPTKP19630531.pdf
-- **Proof that it exists:** archive.org item NPTKP19630531, title '大公報 1963-05-31'; its description has '有人在城砦貼告示港府昨特發表聲明'.
-- **What it gives (resolver's note, not checked):** Notices that someone posted in the City in May 1963 and a statement of the Hong Kong Government about them (30 May 1963).
-- **Lead:** L0019 (cited by top-china-3, china-official-records-1933-1987)
-- **Notes:** Leaf not found. INFERRED: it can be about the founding of the kaifong association in May 1963 (see lead-l0162-1 to -3), but the headline does not say.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 〈有人在城砦貼告示 港府昨特發表聲明〉 (本報訊, from the Government Information Services), 31 May 1963, p. 3 (第三版; archive.org leaf n2, lower middle), https://archive.org/details/NPTKP19630531/page/n2
+- **Class:** primary (A short news note of the time (31 May 1963) that gives a government statement of 30 May 1963. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1963-05-31
+- **Files:**
+  - `lead-l0019-4-n2-62cf742f.jpg` (in `local/`, not in git): Page image of p. 3 (第三版, leaf n2) of 大公報, 31 May 1963, with the note; https://archive.org/download/NPTKP19630531/page/n2.jpg; 3634277 bytes; SHA-256 `83164693dfc6a03dd9bd53c61465958f59f7cc76620cd5174c444a2abee6169c`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPTKP19630531)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630531, leaf n2 (printed 第三版), lower middle, note 有人在城砦貼告示 港府昨特發表聲明, col. 1-2 | On 30 May 1963 a government spokesman said, through the Government Information Services (港府新聞處), that someone had posted a notice in the City without the government's knowledge. | "在未經港府知悉下，有人擅自在九龍城砦內張貼" (without the knowledge of the Hong Kong Government, someone posted without authority, inside Kowloon Walled City) |
+| NPTKP19630531, leaf n2 (printed 第三版), lower middle, note 有人在城砦貼告示 港府昨特發表聲明, col. 2-3 | INFERRED: The notice asked the residents of the City to complete a registration at 'that office' (該事務處) on Saturday. The note does not say which office. INFERRED: the Saturday is 1 June 1963, the first Saturday after the statement. | "要求城砦居民在星期六向該事務處完成登記手續" (asked the City residents to complete registration procedures at that office on Saturday) |
+| NPTKP19630531, leaf n2 (printed 第三版), lower middle, note 有人在城砦貼告示 港府昨特發表聲明, col. 4 | The spokesman said that the Hong Kong Government had no intention at that time of moving the residents of the City. | "港府無意於現在搬遷九龍城砦居民" (the Hong Kong Government has no intention at present of moving the residents of Kowloon Walled City) |
+
+- **Leads:**
+  - Government Information Services statement of 30 May 1963 on an unauthorised notice in Kowloon Walled City (English text in SCMP or the GIS daily information bulletin of 30-31 May 1963)
+  - Sing Tao Daily (星島日報) 31 May 1963 p. 23: the 'mysterious registration notice' (named in the HKBU clipping index, zh-press-23)
 ### lead-l0143-1: 在城砦藏大批爆炸品 表帶廠職員判監五年 (deck in the headline list: 被告家庭環境頗好全家月入逾千元)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1967-10-19
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day after the judgment.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19671019/page/n5
-- **Other links:** https://archive.org/download/NPKS19671019/NPKS19671019.pdf, https://archive.org/metadata/NPKS19671019/metadata/description
-- **Proof that it exists:** Page image of leaf n5, top right: 「在城砦藏大批爆炸品」 / 「表帶廠職員判監五年」.
-- **What it gives (resolver's note, not checked):** The judgment of 18 Oct 1967 in the Kowloon District Court: five years' prison for a watch-strap factory clerk who kept a large lot of explosives in the City; the deck says his family earned more than HK$1,000 a month. The 工商日報 twin of the held 華僑日報 report (commons-2).
-- **Lead:** L0143 (cited by commons-2, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈在城砦藏大批爆炸品 表帶廠職員判監五年〉, deck 〈被告家庭環境頗好全家月入逾千元〉 (本報訊), 19 October 1967, p. 6 (第六頁; archive.org leaf n5, top right), https://archive.org/details/NPKS19671019/page/n5
+- **Class:** primary (A court report of the time (19 Oct 1967) on the judgment of 18 Oct 1967, with the evidence of police witnesses. It stays in primary-sources/hk-chinese-press-1947-1984. It is the 工商日報 twin of the held 華僑日報 report of the same day (commons-2); it adds the size of the back room and the family's income and goods.)
+- **Date of the record:** 1967-10-19
+- **Files:**
+  - `lead-l0143-1-n5-2d535b98.jpg` (in `local/`, not in git): Page image of p. 6 (第六頁, leaf n5) of 香港工商日報, 19 Oct 1967, with the article; https://archive.org/download/NPKS19671019/page/n5.jpg; 5556707 bytes; SHA-256 `9895dabb39111f73f7dea6e2f0f172635638b20ede9cf4e4e4fe92c655e96bd1`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPKS19671019)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 2-3 | On 18 October 1967 ('yesterday') the Kowloon District Court (九龍地方法院) found the defendant guilty and sent him to prison for five years. He admitted that the things were his but denied guilt. | "裁定被告罪名成立，判被告入獄五年" (found the defendant guilty and sentenced him to five years in prison) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 1-2 | At the end of August 1967 the police raided a building on Lo Yan Street (老人街) in the City. They broke up a secret place for keeping and making explosives and arrested a young man. | "突擊檢查九龍城砦老人街一座樓宇，破獲一個秘密藏製爆炸品機關" (made a surprise search of a building on Lo Yan Street, Kowloon Walled City, and broke up a secret set-up for storing and making explosives) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 5-6 | The defendant was 楊念慈, 21 years old. He was charged with keeping a lot of explosive materials at 5/F, No. 37 Lo Yan Street (老人街) on 29 August 1967. | "被控八月二十九日，在九龍城砦老人街卅七號五樓藏有一批爆炸品原料" (charged that on 29 August, at 5/F, 37 Lo Yan Street, Kowloon Walled City, he kept a lot of explosive raw materials) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 7-8 | Inspector 劉世霖 said that on 29 August 1967 he went to search 5/F, No. 37 Lo Yan Street. He entered the back room (尾房) and found the defendant there. | "前往九龍城砦老人街三十七號五樓搜查，進入尾房，見被告在場" (went to search 5/F, 37 Lo Yan Street, Kowloon Walled City, entered the back room, and saw the defendant there) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 8-9 | In the room the police found gunpowder (火藥), water pipes (水喉管), a brown powder, iron nails, firecracker fuses (炮竹藥引) and charcoal (炭). Experts tested the gunpowder before the charge. | "搜出若干火藥、水喉管、棕色藥粉、鐵釘、炮竹藥引及炭等物" (found some gunpowder, water pipes, brown powder, iron nails, firecracker fuses, charcoal and other things) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 10-11 | A detective (探目) of Kowloon City police station (九龍城警署), 陳光, said that the back room where they found the defendant was on the right side of the flat and measured four feet by eight feet. | "在樓中右邊一個四呎乘八呎尾房內，見到被告" (in a back room of four feet by eight feet on the right side of the flat, [we] saw the defendant) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 12-13 | At 4.10 p.m. the same day, in the report room of Kowloon City police station, after a caution, the defendant wrote a statement in his own diary. The police said that he wrote it of his own free will. | "被告在彼之日記簿上寫有一段供詞" (the defendant wrote a statement in his diary) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 15 | At the sentence the prosecutor said that the defendant's family had a refrigerator (雪櫃) and a television set. | "被告家庭有雪櫃有電視機" (the defendant's family has a refrigerator and a television set) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 15; deck | The whole family's income was about HK$1,200 a month. The deck of the headline says 'more than a thousand dollars a month'. | "全家收入約爲一千二百元" (the whole family's income is about 1,200 dollars) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 15-16 | The defendant worked in a watch-strap factory (表帶廠) and earned HK$400 a month. He had only six years of schooling. | "被告本人在一間表帶廠任職，月薪四百元，僅受六年教育" (the defendant himself worked in a watch-strap factory at a monthly salary of 400 dollars, and had only six years of education) |
+| NPKS19671019, leaf n5 (printed 第六頁), top right, article 在城砦藏大批爆炸品 表帶廠職員判監五年, col. 7 and 10-11 | INFERRED: INFERRED: No. 37 Lo Yan Street had at least five storeys in 1967, and its 5/F flat had more than one room, with a back room of about 4 by 8 feet (about 3 square metres). | "老人街卅七號五樓" (5/F, 37 Lo Yan Street) |
+
+- **Leads:**
+  - Kowloon District Court (九龍地方法院) record of the case against 楊念慈, judgment of 18 Oct 1967 (the repo names it already as a lead of commons-2)
 ### lead-l0143-2: 警方在九龍城老人街 又搜獲一大批爆炸物 一青年被捕 搜查近一時
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
-- **Date:** 1967-08-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a news report of the day after the search.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPWK19670830/page/n5
-- **Other links:** https://archive.org/download/NPWK19670830/NPWK19670830.pdf, https://archive.org/metadata/NPWK19670830/metadata/description
-- **Proof that it exists:** Page image of leaf n5 (本港新聞, 第二張), top centre: 「警方在九龍城老人街」 / 「又搜獲一大批爆炸物」 / 「一青年被捕 搜查近一時」.
-- **What it gives (resolver's note, not checked):** The police search of 29 Aug 1967 on Lo Yan Street (老人街) in the City during the 1967 riots: a large lot of explosives found and a young man arrested after a search of nearly an hour. INFERRED that it is the arrest of 楊念慈 (the lead gives the search date 29 Aug 1967 and 5/F, 37 Lo Yan Street).
-- **Lead:** L0143 (cited by commons-2, hk-chinese-press-1947-1984)
-- **Notes:** The microfilm has black blots of damage near this story; the headline is clear.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 〈警方在九龍城老人街 又搜獲一大批爆炸物〉, subhead 〈一青年被捕 搜查近一時〉 (特訊, signed 合), 30 August 1967, 第二張第二頁 (本港新聞 ②; archive.org leaf n5, top centre), https://archive.org/details/NPWK19670830/page/n5
+- **Class:** primary (A news report of the time (30 Aug 1967) on the police search of 29 Aug 1967. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1967-08-30
+- **Files:**
+  - `lead-l0143-2-n5-b4c15d3e.jpg` (in `local/`, not in git): Page image of 第二張第二頁 (leaf n5) of 華僑日報, 30 Aug 1967, with the report and a photo of the police at work; https://archive.org/download/NPWK19670830/page/n5.jpg; 6459026 bytes; SHA-256 `57942cb4f23e1f4891dafec1e014ce1773afac59e38e4d1c79db5a1e280843e0`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPWK19670830)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19670830, leaf n5 (printed 第二張第二頁, 本港新聞 ②), top centre, article 警方在九龍城老人街 又搜獲一大批爆炸物, col. 1-3 | At 3 p.m. on 29 August 1967 ('yesterday') the police raided a building in the Kowloon City area. They found a large lot of explosives, chemicals, iron bars and other tools, and arrested a young man of 21. | "昨日下午三時警方人員突擊檢查九龍城區一樓宇" (at 3 p.m. yesterday police officers raided a building in the Kowloon City area) |
+| NPWK19670830, leaf n5 (printed 第二張第二頁, 本港新聞 ②), top centre, article 警方在九龍城老人街 又搜獲一大批爆炸物, col. 4-6 | After a tip-off, a large party of plain-clothes police went to the back room (尾房) of 4/F, No. 37 Lo Yan Street (老人街). The court reports of 19 October 1967 give the same flat as 5/F; the difference can be a different count of the floors. | "前往九龍城老人街卅七號四樓尾房" (went to the back room of 4/F, 37 Lo Yan Street, Kowloon City) |
+| NPWK19670830, leaf n5 (printed 第二張第二頁, 本港新聞 ②), top centre, article 警方在九龍城老人街 又搜獲一大批爆炸物, col. 6-7; subhead | The search lasted 45 minutes; the subhead says 'nearly an hour'. | "搜索達四十五分鐘" (the search lasted forty-five minutes) |
+| NPWK19670830, leaf n5 (printed 第二張第二頁, 本港新聞 ②), top centre, article 警方在九龍城老人街 又搜獲一大批爆炸物, col. 1-5 | INFERRED: The report names the street as 九龍城老人街 and the area as 九龍城區; it does not use the word 城砦. INFERRED: it is the same search as the case of 楊念慈 (21 years old, 37 Lo Yan Street, search on 29 Aug 1967 at about 3 p.m.), because the date, the time, the age and the address match the court reports of 19 Oct 1967. | "一名廿一歲青年被捕" (a young man of twenty-one was arrested) |
 ### lead-l0143-3: 天光道五金工會內 搜出汽油炸彈 另武器一批兩女子被捕 / 城砦一工會搜出火藥及儀器
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1967-08-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a news report of the day after the search.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19670830/page/n4
-- **Other links:** https://archive.org/download/NPKS19670830/NPKS19670830.pdf, https://archive.org/metadata/NPKS19670830/metadata/description
-- **Proof that it exists:** Page image of leaf n4, top left: 「天光道五金工會內」 / 「搜出汽油炸彈」, with the deck 「城砦一工會搜出火藥及儀器」.
-- **What it gives (resolver's note, not checked):** The same search of 29 Aug 1967, as a deck under a story on another raid: gunpowder and instruments found in a trade union (工會) premises in the City. INFERRED that it is the same search as lead-l0143-2; it names the place as a union, which the 華僑日報 head does not.
-- **Lead:** L0143 (cited by commons-2, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈天光道五金工會內 搜出汽油炸彈〉, decks 〈另武器一批兩女子被捕〉 and 〈城砦一工會搜出火藥及儀器〉 (本報訊), 30 August 1967, p. 5 (第五頁; archive.org leaf n4, top left), https://archive.org/details/NPKS19670830/page/n4
+- **Class:** primary (A news report of the time (30 Aug 1967) on the police searches of 29 Aug 1967. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1967-08-30
+- **Files:**
+  - `lead-l0143-3-n4-43d30692.jpg` (in `local/`, not in git): Page image of p. 5 (第五頁, leaf n4) of 香港工商日報, 30 Aug 1967, with the report; https://archive.org/download/NPKS19670830/page/n4.jpg; 4775970 bytes; SHA-256 `e32e9c9678ed2266b86b85212dc03e6a3bc913c568f1e89bb9b87f871a8f311d`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPKS19670830)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19670830, leaf n4 (printed 第五頁), top left, deck 城砦一工會搜出火藥及儀器 under the story 天光道五金工會內 搜出汽油炸彈, note under the deck, col. 1-4 | On the afternoon of 29 August 1967 ('yesterday afternoon') the police searched No. 37 Lo Yan Street (老人街) in the City. They found a small amount of gunpowder (小量火藥), chemicals and some instruments, and arrested one man. | "警方昨日下午搜查九龍城砦老人街卅七號，搜出小量火藥、化學藥物及若干儀器，一名男子被捕" (yesterday afternoon the police searched 37 Lo Yan Street, Kowloon Walled City, found a small amount of gunpowder, chemicals and some instruments; a man was arrested) |
+| NPKS19670830, leaf n4 (printed 第五頁), top left, deck 城砦一工會搜出火藥及儀器 under the story 天光道五金工會內 搜出汽油炸彈, deck | INFERRED: The deck says that the gunpowder and instruments were found in 'a trade union in the City' (城砦一工會). The text of the note does not name a union. INFERRED: the deck can be a slip of the sub-editor, taken from the Tin Kwong Road (天光道) union story above it; the court reports of 19 Oct 1967 speak of a flat (the back room of 5/F), not a union. | "城砦一工會搜出火藥及儀器" (gunpowder and instruments found in a union in the City) |
+| NPKS19670830, leaf n4 (printed 第五頁), top left, deck 城砦一工會搜出火藥及儀器 under the story 天光道五金工會內 搜出汽油炸彈, note under the deck | INFERRED: INFERRED: it is the same search as lead-l0143-2 and as the case of 楊念慈: the date and the address (No. 37 Lo Yan Street) match. This paper says 'a small amount' of gunpowder; 華僑日報 of the same day says 'a large lot' of explosives. | "搜出小量火藥" (found a small amount of gunpowder) |
 ### lead-l0163-1: 砦城德秀校長申訴 被搗毀停課經過 决依法起訴並在短期復課
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1963-05-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time (pro-Kuomintang); a report of the principal's press conference of the day before.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19630530/page/n4
-- **Other links:** https://archive.org/download/NPKS19630530/NPKS19630530.pdf, https://archive.org/metadata/NPKS19630530/metadata/description
-- **Proof that it exists:** Page image of leaf n4 (第五頁), middle: 「砦城德秀校長申訴」 / 「被搗毀停課經過」; the archive.org headline list continues 「决依法起訴並在短期復課」.
-- **What it gives (resolver's note, not checked):** The 工商日報 report of the press conference of 29 May 1963 of the principal of 德秀學校: the wrecking of the school, its closure, his decision to sue and to reopen soon. The twin of the held 華僑日報 report (gap-campus-socialwork-press-11).
-- **Lead:** L0163 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
-- **Notes:** Partisan paper (anti-communist): read beside 華僑日報 and 大公報.
+- **Status:** Partly read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24. I read the page image of leaf n4 (printed 第五頁) at full size, in crops; the archive.org OCR is not usable. The article runs in five tiers. I read the report of the press conference, the principal's answers, and his written statement up to the arrival of the gang on 26 May 1963 closely. I skimmed the rest of the statement (the events of 26 May): it matches the 華僑日報 twin of the same day (gap-campus-socialwork-press-11), which the repo holds. One year and one name in the rent history are blurred (marked INFERRED).
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈砦城德秀校長申訴 被搗毀停課經過〉, subhead 〈决依法起訴並在短期復課〉 (本報訊), 30 May 1963, p. 5 (第五頁; archive.org leaf n4, middle right), https://archive.org/details/NPKS19630530/page/n4
+- **Class:** primary (A news report of the time (30 May 1963) with the principal's own written statement (his words are primary). It stays in primary-sources/hk-chinese-press-1947-1984. The paper was strongly anti-Communist; read it beside 華僑日報 and 大公報.)
+- **Date of the record:** 1963-05-30
+- **Files:**
+  - `lead-l0163-1-n4-a9c4caea.jpg` (in `local/`, not in git): Page image of p. 5 (第五頁, leaf n4) of 香港工商日報, 30 May 1963, with the article; https://archive.org/download/NPKS19630530/page/n4.jpg; 4622074 bytes; SHA-256 `03b8d8c2e7fd862772777d235925e4d7bbf099c0a2b30362b1bc3743fec2b56b`; licence: No rights or licence statement on the archive.org item (collection china-mail); the newspaper's copyright (https://archive.org/details/NPKS19630530)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 1, col. 1-4 | On 29 May 1963 ('yesterday') 葉劍鳴, principal of 德秀學校 in the City, met the press at 狀元樓 on Prince Edward Road (太子道). He reported how 'black-force figures' (黑勢力人物) had wrecked the school three times. | "九龍城砦德秀學校校長葉劍鳴，昨在九龍太子道狀元樓招待新聞界" (葉劍鳴, principal of 德秀學校 in Kowloon Walled City, met the press yesterday at 狀元樓 on Prince Edward Road, Kowloon) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 1, col. 6-9 | 葉劍鳴 said that he had reported the loss to the police, that the pupils' books had been taken, and that the school could not hold classes for now. | "已向警方報案" (has reported the case to the police) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 2, col. 1-2 | He said that, for the sake of the pupils' studies, he would reopen the school within a short time, however hard it was. | "無論怎樣困難，都要在短期間恢復上課" (however difficult, classes must resume within a short time) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 2, col. 3-6 | He said that he would sue, and that he asked the police to catch the attackers. He said that his whole family would not leave the school, even if they died. | "我決定依法起訴" (I have decided to sue according to the law) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 2, col. 7-11; tier 3, col. 1-2 | His written statement says that in 1954 (民國四十三年) he rented the premises on 2/F of Nos. 8 to 10 Lung Shing Road (龍城路) in the City from 魏明 and started 德秀學校. The rent was HK$210 a month. | "劍鳴於九龍城砦龍城路八至十號二樓向魏明租來房屋" (I, 劍鳴, rented premises on 2/F, 8-10 Lung Shing Road, Kowloon Walled City, from 魏明) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 3, col. 2-9 | INFERRED: Later 魏明 had 陳庭美 collect the rent. In 1959 (民國四十八年) the number of pupils fell, and both sides agreed to cut the rent to HK$150 a month. After 陳庭美 died, 陳太 or her relatives collected it each month. INFERRED: the year when 陳庭美 began to collect reads 四十五 (1956); the 華僑日報 twin prints 四十五年. INFERRED: 陳太 is the widow of 陳庭美. | "租金減爲每月一百五十元" (the rent was cut to 150 dollars a month) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 3, col. 10-14 | The statement says that from 1 May 1963 the City had a so-called 'welfare association' (福利會). Then 陳太 came to the school and said: 'Now we have power; we no longer collect rent.' She told him to hand back the premises before 15 May. | "自從五月一日，城砦有了所謂「福利會」" (since 1 May the City has had a so-called 'welfare association') |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 3, col. 14-17 | 陳太 said that if he did not hand back the premises, she would send people to wreck his school, and asked who would dare to interfere. | "否則我就派人將你學校搗毀" (otherwise I will send people to wreck your school) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 3, col. 18-21 | On 14 May 1963 陳太 came with a man surnamed 李. They told him to hand over the premises at once, or they would take away everything in the school. | "同一姓李男子來校" (came to the school with a man surnamed 李) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 3, col. 22-27; tier 4, col. 1-4 | On 16 May 1963 he invited 陳太's uncle, whom he calls the backer of the rent collector, to talk it over, and begged him not to be stirred up by others. The uncle answered that there were no terms: if he did not hand over the premises, they would give him 'a taste' within two weeks, and the law could do nothing to them. | "二星期內給你嘗嘗味道，看法律怎奈何我" (within two weeks we will give you a taste; let's see what the law can do to me) |
+| NPKS19630530, leaf n4 (printed 第五頁), middle right, article 砦城德秀校長申訴 被搗毀停課經過, tier 4, col. 5-10 and tier 5, col. 1-3 | On Sunday 26 May 1963 at about 9 a.m. his wife opened the door to a knock, and more than ten big men carrying sharp weapons (利器) came in. Uncle Chan (陳叔叔) led them. | "携有利器大漢十多名，率領的人便是陳叔叔" (more than ten burly men carrying sharp weapons; the one leading them was uncle Chan) |
+
+- **Leads:**
+  - The lawsuit that 葉劍鳴 said he would bring over 德秀學校 (after 29 May 1963); the repo names it already as a lead of gap-campus-socialwork-press-11
 ### lead-l0163-2: 赤色分子繼續作祟 迫遷事件又有三宗 城砦居民請設警崗 / 一學校檯椅被強搬警方派員保護 / 樹羣校長梁雄拒任「福利會委員」
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1963-05-27
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time (pro-Kuomintang); a news report of the day after the attack on the school.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19630527/page/n3
-- **Other links:** https://archive.org/download/NPKS19630527/NPKS19630527.pdf, https://archive.org/metadata/NPKS19630527/metadata/description
-- **Proof that it exists:** Page image of leaf n3 (第四頁), top: 「赤色分子繼續作祟」 / 「迫遷事件又有三宗」 / 「城砦居民請設警崗」; the headline list adds 「一學校檯椅被強搬警方派員保護」 and 「樹羣校長梁雄拒任「福利會委員」」.
-- **What it gives (resolver's note, not checked):** Three more forced evictions in the City in May 1963 that the paper blames on 'red elements', among them the school whose desks and chairs were carried off (INFERRED: 德秀學校, from the held 華僑日報 report of the same day); residents ask for a police post; the principal of 樹羣 school, 梁雄, refuses a seat on the welfare association (福利會). Gives the 1963 struggle over the new kaifong association.
-- **Lead:** L0163 (cited by gap-campus-socialwork-press-11, hk-chinese-press-1947-1984)
-- **Notes:** Continues the 工商日報 series of 14-25 May 1963 that the repo holds (lead-l0647-1 to -4). 梁雄 is in the founding committee list of lead-l0162-1.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈赤色分子繼續作祟 迫遷事件又有三宗 城砦居民請設警崗 一學校檯椅被強搬警方派員保護 樹羣校長梁雄拒任「福利會委員」〉 (本報訊), Monday 27 May 1963, p. 4 (archive.org leaf n3, top right), https://archive.org/details/NPKS19630527/page/n3
+- **Class:** primary (A report of the time (1963), with a paid notice of a City resident quoted in full. It stays in primary-sources/hk-chinese-press-1947-1984. The paper was strongly anti-Communist and took one side in the quarrel over the new kaifong association.)
+- **Date of the record:** 1963-05-27
+- **Files:**
+  - `lead-l0163-2-n3-cafe689d.jpg` (in `local/`, not in git): Page image of 香港工商日報 27 May 1963, p. 4 (leaf n3), with the article on three more evictions in the City and the notice of 梁雄 (top right; full size about 3622x4630 px); https://archive.org/download/NPKS19630527/page/n3.jpg; 4722575 bytes; SHA-256 `5ea93cf69d3e706fbab3a1ed3eb831ed9f8913c06a88f791ad5393b89af97184`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19630527)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 1 | The paper says that, since it exposed 'red elements' who forced non-Communist residents out of the City and collected donations for Communist China, three more forced evictions had taken place in the City. | "自本報揭出赤色分子在九龍城砦迫走非親共居民" (since this paper exposed red elements forcing non-pro-Communist residents out of Kowloon Walled City) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 2 | Those evicted reported to the Kowloon City police station and asked the police to post men in the City. | "被迫遷者已向九龍城警署報案，請求警方派員到區內站崗" (those forced to move have reported to the Kowloon City police station, asking the police to send men to stand guard in the area) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 3-5 | INFERRED: The three places were a school run by a Christian church (I read its name as 廣仁學校), a workshop run by Hakka people (客籍人) named 榮生, and the 德秀學校. INFERRED: the first character of the church school and the trade word of the workshop are blurred. | "一間是基督教會主辦的廣仁學校" (one is the 廣仁 school run by a Christian church) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 5-6 | 德秀學校 was at No. 12 Lung Shing Road (龍城路) in the City and was registered with the Overseas Chinese Affairs Commission of the Republic of China (僑委會). | "城砦龍城路十二號一間向中華民國僑委會立案的德秀學校" (the 德秀 school at No. 12 Lung Shing Road in the Walled City, registered with the ROC Overseas Chinese Affairs Commission) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 6-8 | After the City's 'kaifong association' (街坊會) was set up on 1 May 1963, more than ten big men came with the landlady, Mrs 陳 (業主陳太), to the school to make it leave. The principal, 葉劍鳴, refused, because he owed no rent. | "自「五一」該區的「街坊會」成立後，即有十餘名大漢陪同業主陳太" (after the area's 'kaifong association' was set up on 1 May, more than ten big men came with the landlady Mrs 陳) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, text col. 8-9 | INFERRED: Men and women came again and again to harass the school. Two days before (25 May 1963), the kaifong association sent men again with the landlady to make the school leave. INFERRED: the date comes from 前日 in the paper of 27 May. | "前日由「街坊會」派員再陪業主到校迫遷" (the day before yesterday the 'kaifong association' sent people again with the landlady to the school to force it out) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, second strip, col. 1-4 | At the Kowloon City police station the police said that if rent was owed, 葉 must pay it. The landlady still refused the rent and wanted the school out. The police told her to go to court to get the flat back, not to act outside the law. | "警方無從調解，乃勸導業主倘要收回樓宇，須依法律起訴" (the police could not mediate, and advised the landlady that if she wanted the premises back she must sue at law) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, second strip, col. 5-7 | INFERRED: At about 9 a.m. on 26 May 1963, Mrs 陳 came to the school with more than 20 big men. They guarded the door, let no one out, and carried away the desks and chairs of all the classrooms. She said she wanted the flat back to live in. INFERRED: the date comes from 昨日 in the paper of 27 May. | "該業主陳太由廿餘名大漢陪同前往德秀學校，由大漢把守門口，不許任何人出門" (the landlady Mrs 陳 went to the 德秀 school with more than twenty big men, who guarded the door and let no one out) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, second strip, col. 7-10 | The principal 葉劍鳴 ran out by the back door and phoned 999. Kowloon City police sent officers to keep order. Both sides were told to come to the police station at 9.30 a.m. on 27 May 1963 for mediation, and a detective was left on guard at the school. | "該校長葉劍鳴乃從後門跑出，打九九九電話報警" (the principal 葉劍鳴 ran out by the back door and dialled 999 to call the police) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, second strip, col. 11-12 | INFERRED: At 9.30 a.m. on 25 May 1963, City residents, among them school heads, pastors, doctors, dentists and managers, met at the 狀元樓 restaurant (酒家) and told how they had been forced to move. INFERRED: the date comes from 前日 in the paper of 27 May. | "前日上午九時半曾在狀元樓酒家舉行座談會" (the day before yesterday at 9.30 a.m. held a forum at the 狀元樓 restaurant) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, second strip, col. 13-14 | INFERRED: The head of 廣仁學校 said that the landlord refused the rent, the tenants sent the rent by post office remittance, and the landlord still sent people day after day to make the school leave. INFERRED: his surname is blurred; the reader read 賀國強, the checker reads 曾國強. | "業主拒收租金，住客將租金由郵局匯交" (the landlord refused to accept rent, so the tenant sent the rent by post office remittance) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, third strip, col. 2-3 | The head of 樂育學校 (the pastor 方益生) and the supervisor (監督) of 聖德中學 (林作遜) said that the sudden evictions by City landlords were more than they could bear, and that they would report to the police for the safety of the residents. | "均謂城砦業主突然頻頻迫遷，實不堪其擾" (all said that the landlords in the City were suddenly and repeatedly forcing people out, which was unbearable) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, third strip, col. 3-6 | INFERRED: A delegation then went to see the superintendent of Kowloon City police station, 司徒智仁. Readings of its members: 曾昌明 (明志學校), 林作遜 (聖德中學), the head of 中山學校, 余子健 (樹人學校), 方益生 (樂育學校), the head of 正德學校, 張謙成 (a 華 middle school), 曾國強 or 賀國強 (廣仁學校), 葉劍明 (德秀學校), the 黃一平醫務所 (a clinic), a workshop and a dentist. INFERRED: the print is blurred, thus each name is uncertain. | "同往晉謁九龍城警署警司司徒智仁，獲得接見" (went together to call on Superintendent 司徒智仁 of Kowloon City police station, and were received) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, third strip, col. 6-7 | The delegation described the evictions of the past weeks and asked for a police post (警崗) in the City. | "并請求在城砦設一警崗，以維公安" (and asked for a police post to be set up in the Walled City to keep public order) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, last strip, col. 1-2 | 梁雄, principal of the 樹羣中學 in the City, had lately been chosen as a member of the 'City welfare association' (城砦福利會). On 26 May 1963 he put a notice in the papers to decline the post. | "九龍城砦樹羣中學校長梁雄，最近被選爲「城砦福利會委員」" (梁雄, principal of the 樹羣 middle school in Kowloon Walled City, was recently elected a 'Walled City Welfare Association committee member') |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, last strip, notice of 梁雄 | INFERRED: His notice lists his posts: principal of 樹羣中學 (registered with the ROC Overseas Chinese Affairs Commission); supervisor (監督) of a school registered with the Hong Kong Education Department (I read its name as 文燊學校); chairman of the Kowloon City committee of the 聯合國香港協會; a member of the Hong Kong district branch of the 革新會 (Reform Club) and of its culture and education committee; and a director (理事) of the 惠州同鄉總會. He said that he was too busy to take the welfare post. INFERRED: the name of the second school is blurred. | "因任樹羣中學校長（中華民國僑委會立案）" (because I serve as principal of the 樹羣 middle school (registered with the ROC Overseas Chinese Affairs Commission)) |
+| NPKS19630527, leaf n3 (printed 第四頁), top right, article 赤色分子繼續作祟 迫遷事件又有三宗, last strip, end of the notice | The notice ends: he 'hereby declines by this notice in the press'. | "故特登報聲明告辭。此啟" (I therefore declare my resignation by this notice in the paper. Notice given) |
+
+- **Leads:**
+  - Kowloon City police station: the request of the City residents' delegation (25 May 1963) to Superintendent 司徒智仁 for a police post in the City, and the mediation between 葉劍鳴 and the landlady 陳太 set for 27 May 1963
+  - The newspaper notice (啟事) of 梁雄, principal of 樹羣中學, declining a seat on the 城砦福利會, in the papers of 26 May 1963
 ### lead-l0186: 九龍城寨破大毒窟 獲鴉片數十磅烟具一批
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
-- **Date:** 1973-01-24
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a news report (特訊) of the day after the raid.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPWK19730124/page/n3
-- **Other links:** https://archive.org/download/NPWK19730124/NPWK19730124.pdf, https://archive.org/metadata/NPWK19730124/metadata/description
-- **Proof that it exists:** Page image of leaf n3 (dated 星期三, 一九七三年一月廿四日), top centre: 「九龍城寨破大毒窟」 / 「獲鴉片數十磅烟具一批」, (特訊).
-- **What it gives (resolver's note, not checked):** The police raid on a large drug den in the City on 23 Jan 1973, with some tens of pounds of opium and a lot of smoking gear seized. It is the 華僑日報 twin of the held 香港工商日報 report (gap-crime-drugs-records-14: 30 places searched, 26 arrested).
-- **Lead:** L0186 (cited by gap-crime-drugs-records-14, hk-chinese-press-1947-1984)
-- **Notes:** The microfilm image is dark; use autocontrast to read it. The OCR (djvu.txt) has no usable text for this story.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 〈九龍城寨破大毒窟 獲鴉片數十磅烟具一批〉 (特訊), Wednesday 24 January 1973, 本港新聞 (archive.org leaf n3, top middle), https://archive.org/details/NPWK19730124/page/n3
+- **Class:** primary (A report of the time (the raid of the day before). It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1973-01-24
+- **Files:**
+  - `lead-l0186-n3-f27bf7cc.jpg` (in `local/`, not in git): Page image of 華僑日報 24 Jan 1973, 本港新聞 (leaf n3), with the report of the raid on 2/F, No. 4× 長樂街 (top middle; full size about 3532x4747 px; dark microfilm, read with autocontrast); https://archive.org/download/NPWK19730124/page/n3.jpg; 5664656 bytes; SHA-256 `c3fff0ad8debccd4fa77d1ac8d428d157259ce0b8254922d5c603e064358f5c4`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPWK19730124)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 1-3 | The paper says that drug dens were spread all over the City, and that the police raided after a close watch and secret inquiries. | "九龍城寨毒窟四佈，警方經過嚴查密訪之後，作出周詳之掃蕩行動" (drug dens are everywhere in Kowloon Walled City; after close inquiry and secret visits the police made a thorough sweep) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 3 | INFERRED: The operation began at midnight on 23 January 1973 (昨晨零時). The paper of 24 Jan says 'yesterday at midnight'; INFERRED: thus the start was 00:00 on 23 Jan 1973. | "昨晨零時開始" (beginning at midnight yesterday morning) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 3-7 | INFERRED: Officers of Kowloon City police station led it: a superintendent (警司), the head of the detective branch, a detective inspector, the detective sergeant 姚木林 and a senior detective (高級探目) 葉熾, with uniformed and plain-clothes police. INFERRED: the other names (I read 高崁, 張炳榮, 司徒忠誠 and □金開) are blurred. | "九龍城警署警司高崁、偵緝主任張炳榮、偵探督察司徒忠誠" (Kowloon City police station superintendent 高崁, detective chief 張炳榮, detective inspector 司徒忠誠) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 7-10 | The police hid in the City and watched the second floor of No. 4× 長樂街 inside the City, waiting to catch the drug sellers at work. The paper hides the last digit with ×, as the 工商日報 twin does. | "進入九龍城寨內埋伏，集中注意城內之長樂街四十×號二樓" (went into Kowloon Walled City to lie in wait, concentrating on 2/F, No. 4× 長樂街 inside the City) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 11-14 | They waited until 10.30 a.m. No drug seller came, so at a signal they broke the door and went in. | "至昨晨十時卅分，仍然未見毒販出現，於是一聲號令，破門衝入該樓宇內" (until 10.30 yesterday morning no drug seller had appeared, so at a word of command they broke the door and rushed into the flat) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 1, col. 15-17 | INFERRED: The flat was empty, but it was a large drug store. INFERRED: I read the last words as 藏毒機關 (a place for hiding drugs); they are blurred. | "該樓宇內雖空無一人，卻原來是一個龐大的藏毒機關" (although no one was in the flat, it turned out to be a huge drug store) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 2 | The seizure: 26 lb of red pills (紅丸) ready for sale, 6½ lb of cooked opium paste, 5¾ lb of raw opium and 8 lb of opium dross. | "已製成之紅丸二十六磅，熟鴉片烟膏六磅半，生鴉片五磅又四分三，鴉片烟渣八磅" (26 lb of finished red pills, 6½ lb of prepared opium paste, 5¾ lb of raw opium, 8 lb of opium dross) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 2 and band 3 | Also seized: 7 opium pipes, 10 pipe bowls and 6 lamps. | "烟槍七枝，烟斗十個，烟燈六盞" (seven opium pipes, ten pipe bowls, six opium lamps) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 3 | All the drugs and gear were taken to the police station. The police were searching for the drug sellers who had got away and for the people behind them. | "全批毒品及用具，分別被押回警署" (the whole lot of drugs and gear was taken back to the police station) |
+| NPWK19730124, leaf n3 (第一張第三頁 本港新聞), top middle, article 九龍城寨破大毒窟 獲鴉片數十磅烟具一批, band 3, last col. | At the prices of the time the drugs were worth more than HK$100,000. | "此批毒品以時價計算，約達港幣十餘萬元" (at current prices this lot of drugs comes to over HK$100,000) |
 ### lead-l0187-1: 在九龍城警署外叫囂 四名男子罪名成立 三人入獄一判簽保 / 城砦「福利會」職員羅開祥囚兩月
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1967-05-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day after the verdict.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19670530/page/n4
-- **Other links:** https://archive.org/download/NPKS19670530/NPKS19670530.pdf, https://archive.org/metadata/NPKS19670530/metadata/description
-- **Proof that it exists:** Page image of leaf n4 (第五頁), right middle: 「在九龍城警署外叫囂」 / 「四名男子罪名成立」 / 「三人入獄一判簽保」, with the deck 「城砦「福利會」職員羅開祥…囚兩月」 (the middle of the deck is too small to read).
-- **What it gives (resolver's note, not checked):** The verdict of 29 May 1967 at the North Kowloon Magistracy: four men guilty of disorderly conduct outside Kowloon City police station on 4 May 1967, three to prison and one bound over; 羅開祥, a staff member (職員) of the City's 福利會, two months. The 工商日報 twin of the held 華僑日報 report (gap-named-persons-records-2).
-- **Lead:** L0187 (cited by gap-named-persons-records-2, hk-chinese-press-1947-1984); also L0195
-- **Notes:** The headline-list OCR garbles the deck as 「城砦「爾利會」職員羅開群囚爾月」; the page image reads 福利會 and 羅開祥.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈在九龍城警署外叫囂 四名男子罪名成立 三人入獄一判簽保 城砦「福利會」職員羅開祥囚兩月〉 (本報訊), Tuesday 30 May 1967 (archive.org leaf n4, lower right), https://archive.org/details/NPKS19670530/page/n4
+- **Class:** primary (A report of the time of a court verdict of 29 May 1967. It stays in primary-sources/hk-chinese-press-1947-1984. The paper was strongly anti-leftist.)
+- **Date of the record:** 1967-05-30
+- **Files:**
+  - `lead-l0187-1-n4-63f5b3fe.jpg` (in `local/`, not in git): Page image of 香港工商日報 30 May 1967, leaf n4, with the report of the verdict against the four City men (lower right; full size about 3663x4578 px); https://archive.org/download/NPKS19670530/page/n4.jpg; 5029859 bytes; SHA-256 `e076cbae9d027d72b8eeb1d313b0fa9c4a9a4918e8db9fa80a15d8dc3c6ed2b9`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19670530)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, lead col. 1-4 | On 29 May 1967 the North Kowloon Magistracy (北九龍裁判署) found four men guilty of disorderly conduct outside the Kowloon City police station on 4 May 1967. | "法官裁定四人均罪名成立" (the magistrate found all four guilty) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, lead col. 4-8 | Sentences: 羅開祥, two months in prison; 姚榮記 and 林雲東, six weeks each; 黃松貴 bound over in $100 to keep the peace for two years, with a surety also of $100. | "判首被告羅開祥入獄兩個月；姚榮記、林雲東各入獄六星期；黃松貴簽保一百元，守行爲兩年" (sentenced the first accused 羅開祥 to two months; 姚榮記 and 林雲東 to six weeks each; 黃松貴 bound over in $100 to keep the peace for two years) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, small text in the headline block | Uniformed police and detectives stood guard in the court. After the verdict the accused at first refused to go into the cells and held on to the dock, but several police took them in. | "緊握犯人欄，但卒被數警員合力帶入羈留所" (gripped the dock, but in the end several police officers together took them into the cells) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, list of the accused | 羅開祥, 41, lived on 3/F, No. 4× Lo Yan Street (老人街) and was a staff member of the 九龍城砦街坊福利會 (the City's kaifong welfare association). The paper hides the last digit of the house numbers with ×. | "㈠羅開祥，四十一歲，住老人街四×號三樓，乃九龍城砦街坊福利會職員" ((1) 羅開祥, 41, living at 3/F, No. 4× Lo Yan Street, a staff member of the Kowloon Walled City Kaifong Welfare Association) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, list of the accused | 姚榮記, 38, a hawker, lived on the ground floor of No. 3× 西城道 (so printed). | "㈡姚榮記，卅八歲，小販，住西城道卅×號地下" ((2) 姚榮記, 38, hawker, living at G/F, No. 3× West City Road) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, list of the accused | 林雲東, 48, and 黃松貴, 51, a worker, both lived on 5/F, No. 4× Lo Yan Street (老人街). This paper and 工商晚報 print the name 黃松貴; 大公報 prints 黃松桂. | "㈢林雲東，四十八歲，住老人街四×號五樓；㈣黃松貴，五十一歲，工人" ((3) 林雲東, 48, living at 5/F, No. 4× Lo Yan Street; (4) 黃松貴, 51, worker) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, list of the accused, last col. | The four had been let out on bail of $20 each at the police station before the trial. | "四被告原在警署獲准各以二十元保釋出外候審" (the four accused had been allowed bail of $20 each at the police station to await trial) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, second band, col. 1-3 | Detective 李石泉 (No. 5714 as printed here; 工商晚報 prints No. 5724 李石全) was on duty in the detective branch at 2.15 p.m. on 4 May 1967. He heard noise outside; the station's iron gate was already shut. He had the task of taking photographs and went out by the back door. | "同時警署鐵閘已閉，他負責攝影，乃持相機由後門而出" (at the same time the station's iron gate was already shut; he was in charge of photography and went out by the back door with a camera) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, second band, col. 3-4 | Outside he saw a crowd shouting 'Oppose the government's illegal demolition of houses'. The four accused were there. | "見到警署外有人羣叫喊「反對政府非法拆屋」" (he saw a crowd outside the station shouting 'Oppose the government's illegal demolition of houses') |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, second band, col. 4-8 | The first accused pointed at him and said that no photos could be taken without their consent. The first accused led the crowd in reading the Quotations (語錄) and said 'Hit him, grab his camera'. The four rushed at him and he went back in. | "打佢，未得我地同意影相，搶佢相機" (Hit him — taking pictures without our consent — grab his camera) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, second band, col. 8-12 | With the help of detective No. 6949 he went out again. The first accused told the crowd to smash the camera; 6949 told them that he was a policeman, and he took another picture. | "首被告又向人羣說：「打爛佢架相機。」" (the first accused again said to the crowd: 'Smash his camera.') |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, third band, col. 1-4 | He then took four photographs of the crowd from the roof (天台) of the station. One shows the fourth accused calling people to the station door; another shows accused men and pupils being arrested. | "在天台向下面人羣攝四張照片" (from the roof he took four photographs of the crowd below) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, third band, col. 4-9 | INFERRED: The head of the Kowloon City police station said that at 2 p.m. on 4 May he saw the first accused inside the station. 羅 asked him to release 黃仲平 (so printed here), arrested by the police earlier. He refused and said the case must go by law. 羅 said the police must take the blame and that he would tell the residents of the City. INFERRED: the officer's name is blurred. | "首被告表示其目的，在要求釋放較早時間被警方拘捕的黃仲平" (the first accused said his aim was to ask for the release of 黃仲平, arrested by the police earlier) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, third band, col. 9-11, and fourth column group | Later he saw a crowd of young people at the door. The first accused led the pupils in shouting 'We want our principal, we want to study; without a principal we have no schooling.' | "我哋要校長，我哋要讀書，沒有校長，我們就沒書讀" (We want the principal, we want to study; without the principal we have no lessons) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, fourth column group | He went down the steps and told 羅 that this was against the law, and warned the crowd through a loudhailer to go back to school. At 2.30 p.m. the crowd was still there and the first and fourth accused were shouting. After a report to his superior, he ordered the arrest of the accused. | "如果要讀書，應該返去學校，不要聚集在警署門口" (if you want to study you should go back to school, do not gather at the station door) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, bottom band, col. 1-3 | INFERRED: In defence, the first accused said that he went into the station for the residents, over the demolition affair, to ask for the release of 黃中平 and the pupils. INFERRED: this band of the scan is dark and blotched; the words of the quote are the clearest part of it. | "要求釋放被拘捕的黃中平及學生" (to ask for the release of 黃中平 and the pupils who had been arrested) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, bottom band, col. 5-8 | INFERRED: The second accused said that he was the father of a pupil and went to ask for the release of the principal. The third accused said the same as the first; the fourth said that he too went to ask for the principal's release. INFERRED: this band of the scan is dark and blotched. | "次被告辯稱，他是一學生的父親" (the second accused pleaded that he is the father of a pupil) |
+| NPKS19670530, leaf n4, lower right, article 在九龍城警署外叫囂 四名男子罪名成立, bottom band, last cols. | None of the four had a criminal record. In mitigation they said that they had wives and children. The magistrate judged that the fourth accused had done less than the others and bound him over; the others went to prison. | "被告均無犯案紀錄" (the accused all have no criminal record) |
+
+- **Leads:**
+  - North Kowloon Magistracy (北九龍裁判署) record of the case of 羅開祥, 姚榮記, 林雲東 and 黃松貴 (verdict 29 May 1967), with the four police photographs taken from the roof of Kowloon City police station on 4 May 1967
+  - Kowloon City police station occurrence book of 4 May 1967: the arrest of 黃中平 (黃仲平), principal of 新華學校, and the arrests of pupils at the station door
 ### lead-l0187-2: 城砦三同胞被判監 一入犯人房叫聲厲 鷹犬當場揚言這兩個月夠他受了 (headline as the archive.org headline list gives it)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1967-05-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time (leftist); a report of the day after the verdict.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPTKP19670530/page/n3
-- **Other links:** https://archive.org/download/NPTKP19670530/NPTKP19670530.pdf, https://archive.org/metadata/NPTKP19670530/metadata/description
-- **Proof that it exists:** Page image of leaf n3, lower middle: 「城砦三同胞被判監」; the headline list continues 「一入犯人房叫聲厲鷹犬當場揚言這兩個月夠他受了」.
-- **What it gives (resolver's note, not checked):** The leftist account of the same verdict: three men of the City sent to prison, with their treatment after sentence as the paper tells it. Gives the 1967 riots in the City from the leftist side.
-- **Lead:** L0187 (cited by gap-named-persons-records-2, hk-chinese-press-1947-1984)
-- **Notes:** Partisan language (鷹犬 for the police); read beside the 工商日報 and 華僑日報 reports.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), 〈城砦三同胞被「判」監 一入「犯人房」叫聲厲 鷹犬當場揚言「這兩個月夠他受了」〉 (本報訊), Tuesday 30 May 1967, 第一張第四版 (archive.org leaf n3, middle left), https://archive.org/details/NPTKP19670530/page/n3
+- **Class:** primary (A report of the time (the verdict of the day before) by a pro-Beijing daily during the 1967 riots. It stays in primary-sources/hk-chinese-press-1947-1984. Its language is partisan: it puts the court words in quotation marks (「法官」, 「判」) and calls the police 鷹犬 (lackeys). Read it beside the 工商日報 and 華僑日報 reports of the same verdict.)
+- **Date of the record:** 1967-05-30
+- **Files:**
+  - `lead-l0187-2-n3-a3a3da32.jpg` (in `local/`, not in git): Page image of 大公報 30 May 1967, 第一張第四版 (leaf n3), with the article on the verdict against the four City residents (middle left; full size about 3624x4628 px); https://archive.org/download/NPTKP19670530/page/n3.jpg; 3939416 bytes; SHA-256 `1df743d2b1bf878c8a5986445952bc4b303804d011def9ecb3343fc8d7a73f33`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPTKP19670530)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, lead paragraph | On 29 May 1967 four residents of the City were tried. The paper says that three of them were sentenced to prison. | "昨天竟將三名九龍城砦居民無理「判處」「監禁」" (yesterday they went so far as to unreasonably 'sentence' three residents of Kowloon Walled City to 'imprisonment') |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 2 | The four accused were 羅開祥 (man, 42), 姚榮記 (man, 38), 林雲東 (48) and 黃松桂 (man, 51). The paper calls all four residents of the City. | "他們是羅開祥，男，四十二歲；姚榮記，男，三十八歲；林雲東，四十八歲；黃松桂，男，五十一歲" (They are 羅開祥, male, 42; 姚榮記, male, 38; 林雲東, 48; 黃松桂, male, 51) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 2 | The charge was disorderly conduct and breach of the peace in front of the Kowloon City police station on 4 May 1967. | "是五月四日在九龍城「警署」門前「行爲不檢，擾亂公安」" (on 4 May in front of the Kowloon City 'police station', 'disorderly behaviour, disturbing public order') |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 3 | All four pleaded not guilty. | "這四名居民均不認罪" (These four residents all pleaded not guilty) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 3 | The accused told the court that they went to the police station because the police had come into the City to pull down houses and arrest people. | "港英當局「執硬」派出警察到九龍城砦進行無理的拆屋" (the British Hong Kong authorities obstinately sent police to Kowloon Walled City to carry out unreasonable demolition of houses) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 3 | The accused also said that the police had arrested 黃中平, the principal of the 新華學校 in the area, and that his pupils were thus without schooling. They went with pupils of the school to the station to ask for his release. | "該區的新華學校校長黃中平也遭到警方強行拘捕，學生因而失學" (黃中平, principal of the 新華學校 of that area, was also forcibly arrested by the police, and the pupils thus lost their schooling) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 4 | 黃松桂 was bound over for two years (守行爲兩年). The other three went to prison: 羅開祥 for two months, 姚榮記 and 林雲東 for six weeks each. | "其中羅開祥入獄兩個月，姚榮記與林雲東各入獄六個星期" (of whom 羅開祥 was jailed for two months, 姚榮記 and 林雲東 for six weeks each) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 5 | The paper says that after sentence the three were pushed into the cells by many police, and that screams were then heard. It reports that some police said in the court building: 'These two months will be enough for him.' | "一些港英警察更在裁判署內公開說：「這兩個月夠他受了」" (some British Hong Kong police even said openly inside the magistracy: 'these two months will be enough for him') |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, para. 6 | The paper says that before the verdict the police put a squad of armed police around the court and sent some tens of plain-clothes detectives into the courtroom. | "警方曾調動了一隊武裝警察，埋伏在「法庭」四週，並且派出數十名便衣警探" (the police moved a squad of armed police to lie in wait around the 'court', and sent several tens of plain-clothes detectives) |
+| NPTKP19670530, leaf n3 (第一張第四版), middle left, article 城砦三同胞被「判」監, 又訊 at the end | A side item (又訊) in the same article: 陳明輝, a 13-year-old pupil of 香島中學, was released by the North Kowloon Magistracy on 29 May 1967 but bound over for one year. He had been held for more than ten days. This item is not about the City. | "香島中學的十三歲學生陳明輝，被港英警察非法拘捕並非法扣留十餘天後" (陳明輝, a 13-year-old pupil of 香島中學, after being illegally arrested and held by the British Hong Kong police for more than ten days) |
+
+- **Leads:**
+  - North Kowloon Magistracy (北九龍裁判署) record of the case of 羅開祥, 姚榮記, 林雲東 and 黃松桂 (disorderly conduct outside Kowloon City police station, 4 May 1967; verdict 29 May 1967)
+  - The arrest of 黃中平, principal of 新華學校 (named as a school 'of that area'), by the police, about 4 May 1967: a report of the day of the arrest, if not held
 ### lead-l0187-3: 九龍城砦板屋案 四名涉嫌男子被控破壞公安 今在北九龍法庭開審 (headline as the archive.org headline list gives it)
 
-- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
-- **Date:** 1967-05-29
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese evening paper of the time; a report of the day of the hearing.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKSE19670529
-- **Other links:** https://archive.org/download/NPKSE19670529/NPKSE19670529.pdf, https://archive.org/metadata/NPKSE19670529/metadata/description
-- **Proof that it exists:** archive.org headline list of NPKSE19670529: 「九龍城砦板屋案 四名涉嫌男子被控破壞公安 今在北九龍法庭開審」. Leaf not found: I looked at leaves n0-n7 at low size.
-- **What it gives (resolver's note, not checked):** A same-day note that the trial of the four men over the City's wooden-house (板屋) affair opened at the North Kowloon Magistracy on 29 May 1967.
-- **Lead:** L0187 (cited by gap-named-persons-records-2, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Evening News (工商晚報), 〈九龍城砦拆屋案 四名涉嫌男子被控破壞公安 今在北九龍法庭開審〉 (本報訊), Monday 29 May 1967, front page (archive.org leaf n0, middle left), https://archive.org/details/NPKSE19670529
+- **Class:** primary (A same-day evening-paper report of a trial (1967). It stays in primary-sources/hk-chinese-press-1947-1984. The paper was anti-leftist (its front page of the day calls the strikers 左仔).)
+- **Date of the record:** 1967-05-29
+- **Files:**
+  - `lead-l0187-3-n0-1507f16e.jpg` (in `local/`, not in git): Page image of 工商晚報 29 May 1967, front page (leaf n0), with the report of the opening of the trial (middle left; full size about 3440x4872 px); https://archive.org/download/NPKSE19670529/page/n0.jpg; 6331996 bytes; SHA-256 `4aa14621242a2ba48407eb3c517521fcc0e4b57d49adc8da3464ed5732bd8118`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKSE19670529)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, kicker | INFERRED: The kicker of the headline names the affair as the 'demolition case' of the City (九龍城砦拆屋案). The archive.org headline list reads 板屋案 (wooden-house case), but the page reads 拆屋案. INFERRED: the third character is small on the scan; I read 拆. | "九龍城砦拆屋案" (Kowloon Walled City house-demolition case) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, lead | The paper ties the case to a demolition of houses in the City. Four men were charged with disorderly conduct and breach of the peace outside the Kowloon City police station. | "在九龍城砦內拆屋事件中，四名涉嫌在九龍警署外行爲不檢破壞公衆安寧被拘控的男子" (In the house-demolition incident in Kowloon Walled City, four men arrested and charged on suspicion of disorderly behaviour and breach of the peace outside the Kowloon police station) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, lead | The trial opened on the morning of 29 May 1967 at the North Kowloon Magistracy (北九龍法庭). | "今晨在北九龍法庭正式開審" (formally opened this morning at the North Kowloon court) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, list of accused | The first accused was 羅開祥, 41, a staff member of the 九龍城寨福利會 (the City's welfare association). | "㈠羅開祥，九龍城寨福利會職員，四十一歲" ((1) 羅開祥, staff member of the Kowloon Walled City Welfare Association, 41) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, list of accused | INFERRED: The other accused: the second, a hawker of 38, whom this paper names 姚榮 and a blurred character (the other papers print 姚榮記); the third, 48, whose name this paper prints as 林雲 and a character in a 門 frame (I read 開; the other papers print 林雲東); and 黃松貴, 51, a worker. INFERRED: the last characters of the second and third names are blurred. | "四十八歲，㈣黃松貴，五十一歲，工人" (48; (4) 黃松貴, 51, worker) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 7-9 | The charge: disorderly conduct and breach of the peace outside Kowloon City police station on 4 May 1967. All four denied it. | "同被控本月四日在九龍城警署外行爲不檢，破壞公衆安寧。四被告皆否認所控罪名" (jointly charged with disorderly behaviour and breach of the peace outside Kowloon City police station on the 4th of this month. All four denied the charge) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 10-14 | The prosecution had nine witnesses. The first was a police photographer, 劉生, who told how he developed on the morning of 5 May the photographs that the police sent him. | "控方有九名証人，首由警方攝影師劉生供述五月五日晨早將警方送來的相片沖晒過程" (The prosecution has nine witnesses; first the police photographer 劉生 described how on the morning of 5 May he developed the photographs the police sent) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 14-17 | The second witness was Kowloon City detective No. 5724, 李石全. At 2.15 p.m. on 4 May 1967 he was on duty in plain clothes in the station and was told to take photographs. | "九龍城警探五七二四李石全登庭作証，謂：本月四日下午二時十五分他在警署裡穿便裝當值" (Kowloon City detective 5724 李石全 testified: at 2.15 p.m. on the 4th he was on duty in plain clothes in the station) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 17-20 | He heard people outside the station door protest against the 'illegal demolition of houses' by the government. The main door was shut, so he went out by the back with a camera. | "聽到警署門外有人嘈吵，謂抗議港府非法拆屋，乃走出大門發覺大門已關上" (he heard people making a noise outside the station door, saying they protested against the government's illegal demolition of houses; he went to the main door and found it shut) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 20-24 | He said that the first accused led a group in reading aloud from the 'Quotations of Chairman Mao' (毛語錄), and warned him not to take pictures or his camera would be smashed. | "發覺第一被告領導一班人高頌毛語錄" (he found the first accused leading a group in loudly reciting the Mao quotations) |
+| NPKSE19670529, leaf n0 (front page, 第一頁), middle left, article 四名涉嫌男子被控破壞公安, text col. 24-26 and the column under the headline | INFERRED: He asked detective No. 6949 to help him take photographs. Soon after, a crowd rushed towards them; the report stops there. INFERRED: one character of the last words (一羣衆□衝過來) is not clear. | "我並要求一名編號六九四九號的警探，協助我攝影" (I also asked a detective, number 6949, to help me photograph) |
+
+- **Leads:**
+  - North Kowloon Magistracy (北九龍裁判署) record of the trial of 羅開祥 and three others, 29 May 1967 (nine prosecution witnesses, among them police photographer 劉生 and detective 5724 李石全)
 ### lead-l0190: 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半 (deck in the headline list: 圍搜九龍摩總分會時被拘)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1967-09-22
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day after the sentence.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19670922/page/n5
-- **Other links:** https://archive.org/download/NPKS19670922/NPKS19670922.pdf, https://archive.org/metadata/NPKS19670922/metadata/description
-- **Proof that it exists:** Page image of leaf n5, middle: 「參加非法集會」 / 「判入獄四年半」 under a small deck; the archive.org headline list gives 「「九龍城砦街坊會」職員 參加非法集會 判入獄四年半 圍搜九龍摩總分會時被拘」.
-- **What it gives (resolver's note, not checked):** The District Court sentence of 21 Sep 1967: four and a half years for a staff member of the 'Kowloon Walled City kaifong association' (九龍城砦街坊會), arrested when the police surrounded and searched a branch of the 九龍摩托車總會 (INFERRED reading of 摩總). INFERRED that he is 羅開祥: the 華僑日報 report of the same day (held, gap-named-persons-records-3) gives his name and the same sentence.
-- **Lead:** L0190 (cited by gap-named-persons-records-3, hk-chinese-press-1947-1984); also L0195
-- **Notes:** It names his body as 「九龍城砦街坊會」, where 大公報 1968 calls it 城寨福利會 and 工商日報 30 May 1967 calls it 城砦「福利會」: see L0195.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈「九龍城砦街坊會」職員 參加非法集會 判入獄四年半〉 (本報訊), Friday 22 September 1967, p. 6 (archive.org leaf n5, middle left), https://archive.org/details/NPKS19670922/page/n5
+- **Class:** primary (A report of the time of a court sentence of 21 Sep 1967. It stays in primary-sources/hk-chinese-press-1947-1984. The paper was strongly anti-leftist.)
+- **Date of the record:** 1967-09-22
+- **Files:**
+  - `lead-l0190-n5-8e2240b1.jpg` (in `local/`, not in git): Page image of 香港工商日報 22 Sep 1967, p. 6 (leaf n5), with the report of the sentence of 羅開祥 (middle left; full size about 3619x4633 px); https://archive.org/download/NPKS19670922/page/n5.jpg; 6010650 bytes; SHA-256 `278a900bc0f0b203db1d2a6568bc2f843a50e2534a5d16c9e9a4fc20f4af6158`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19670922)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, headline and text col. 1-2 | The headline names 羅開祥's body as the 「九龍城砦街坊會」, but the text names it as the 「九龍城砦街坊事務促進會」 (a kaifong affairs promotion association of the City). He was a staff member (職員) of it. | 「九龍城砦街坊事務促進會」職員羅開祥 (羅開祥, staff member of the 'Kowloon Walled City Kaifong Affairs Promotion Association') |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, text col. 2-4 | 羅開祥 was charged with taking part in an unlawful assembly and in an intimidating assembly in the Kowloon City area on 9 August 1967. | "被控八月九日在九龍地區參加非法集會及參加恐嚇性集會兩罪" (charged with two offences, taking part in an unlawful assembly and in an intimidating assembly in the Kowloon area on 9 August) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, text col. 4-6 | On 21 September 1967 the Kowloon District Court (九龍地方法院) sentenced him to four and a half years. The judge's name is printed 比巴. | "昨在九龍地方法院被判入獄四年半。案由比巴法官主審" (yesterday sentenced at the Kowloon District Court to four and a half years. The case was heard by Judge 比巴) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, second band, col. 3-5 | He got four and a half years on each count, to run together, thus four and a half years in all. | "每罪入獄四年半，同期執行，即共入獄四年半" (four and a half years on each count, to run concurrently, thus four and a half years in all) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, second band, col. 5-9 | His wife told the court that he was jailed for two months in May 1967. She said that after his release he stayed at home ill and took no part in the assembly. The judge did not believe her. | "被告自今年五月因犯案被判獄兩月，出獄後在家養病" (the defendant was jailed for two months for an offence in May this year; after release he was convalescing at home) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, second band, col. 10-13 | A police sergeant (警目, No. 2295) said that on 9 August 1967 at 10.10 p.m. (as printed) he was in a government vehicle with four police, going from west to east, near the 天喬茶樓 (a teahouse) in Kowloon City. | "八月九日下午十時十分，他乘政府車與四名警員一起，由西向東行，當經過九龍城衙前道天喬茶樓附近" (on 9 August at 10.10 p.m. he was in a government vehicle with four police officers going west to east, passing near the 天喬茶樓 on 衙前道 in Kowloon City) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, second band, col. 13-15, and third band, col. 1-2 | He saw traffic on 獅子石道 (Lion Rock Road) stopped and 50 to 60 people on the road. Older people put up slogans, young people handed out leaflets, and there were banners. | "見獅子石道輛車被阻，有五六十人在馬路上擁塞" (he saw that vehicles on 獅子石道 were blocked, with fifty or sixty people crowding the road) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, third band, col. 3-6 | Three hawkers pointed out to the police a man with a white shirt, black trousers and a crew cut as the leader. The police fired tear gas and dispersed the crowd. | "有三名小販對他們指出一名穿白恤衫黑褲髮留平頭裝之" (three hawkers pointed out to them a man in a white shirt and black trousers with a crew cut) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, third band, col. 6-8 | Two schoolgirls were arrested. Then stones were thrown at the police; it was very dangerous, and in the end they let the two girls go. | "有兩女學生被捕，他們旋被人擲石，情況甚險，卒將兩女學生釋放" (two schoolgirls were arrested; then stones were thrown at them, the situation was very dangerous, and in the end they released the two schoolgirls) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, third band, col. 8-11 | Outside No. 120 衙前圍道 (Nga Tsin Wai Road) someone threw a bomb at the police. The blast was strong. The police escaped, but five passers-by were hurt. | "當他們經過衙前圍道一二〇號門外，即有人向他投炸彈，火力甚強" (as they passed outside No. 120 衙前圍道, someone threw a bomb at him; its force was very strong) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, third band, col. 11-12 | Two hours after the events the police arrested 羅開祥 at his home. | "事發兩小時後，在被告家中拘獲被告" (two hours after the incident they arrested the defendant at his home) |
+| NPKS19670922, leaf n5 (第六頁), middle left, article 「九龍城砦街坊會」職員 參加非法集會 判入獄四年半, third band, col. 13-16 | The sergeant said that he knew the accused: he was tall and thin with a crew cut, and in May 1967 he had led a crowd that harassed the Kowloon City police station. | "被告人在今年五月曾領導人羣騷擾九龍城警署" (the defendant in May this year led a crowd to harass the Kowloon City police station) |
+
+- **Leads:**
+  - Kowloon District Court (九龍地方法院) record of the case of 羅開祥 (unlawful assembly and intimidating assembly, Kowloon City, 9 Aug 1967; sentence of 21 Sep 1967, Judge 比巴)
+  - The bomb thrown at the police outside No. 120 衙前圍道 on the night of 9 Aug 1967 (five passers-by hurt): a report of 10 Aug 1967, if not held
 ### lead-l0202-1: 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-07-24
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time (leftist); a news report of the day.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPTKP19630724/page/n3
-- **Other links:** https://archive.org/download/NPTKP19630724/NPTKP19630724.pdf, https://archive.org/metadata/NPTKP19630724/metadata/description
-- **Proof that it exists:** Page image of leaf n3 (港聞 page), top left: 「以地易地中途忽生變卦」 / 「龍津道若干住戶今面臨拆遷危機」.
-- **What it gives (resolver's note, not checked):** A land exchange (以地易地) on Lung Chun Road (龍津道) that went wrong in July 1963, leaving some households there facing clearance. INFERRED: the redevelopment of old houses on Lung Chun Road in 1963, the background of the new buildings that the fire report of 18 Dec 1963 names (Nos. 102 and 102A). Not shown that these houses were inside the City: Lung Chun Road was the City's south boundary road.
-- **Lead:** L0202 (cited by gap-street-address-search-6, hk-chinese-press-1947-1984)
-- **Notes:** Not read. Check which side and which numbers of Lung Chun Road the report names before it is used for the City.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), 〈以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機〉 (本報訊), Wednesday 24 July 1963, 第一張第四版 (archive.org leaf n3, upper left), https://archive.org/details/NPTKP19630724/page/n3
+- **Class:** primary (A report of the time (1963) by a pro-Beijing daily. It stays in primary-sources/hk-chinese-press-1947-1984. It is about the edge road of the City; it does not show that the houses were inside the walls.)
+- **Date of the record:** 1963-07-24
+- **Files:**
+  - `lead-l0202-1-n3-e556425c.jpg` (in `local/`, not in git): Page image of 大公報 24 July 1963, 第一張第四版 (leaf n3), with the article on the Lung Chun Road houses (upper left; full size about 3580x4684 px); https://archive.org/download/NPTKP19630724/page/n3.jpg; 4456029 bytes; SHA-256 `2654b28234979e3f72d47c689d47e1e8f3a9741343cdd4c6fa4871aa5cc728d9`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPTKP19630724)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | INFERRED: The report places the houses at 'Tung Tau Tsuen (東頭村), Lung Chun Road (龍津道), Kowloon'. It gives no house numbers and no side of the road. INFERRED: the houses can be on the south side of the road, outside the City: the government resumed the land by a gazette notice and offered land in exchange, which it did for leased land. But 東頭村 was also the name of the east part of the City, thus this is not sure. | "九龍東頭村龍津道若干住戶，今天面臨拆遷危機" (some households on Lung Chun Road, Tung Tau Tsuen, Kowloon, today face the danger of demolition and removal) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | The residents had not yet found suitable new homes on 24 July 1963. | "居民尚未覓得適當安置" (the residents have not yet found suitable accommodation) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | INFERRED: There were some 200 houses in the place. INFERRED: I read the kind of house as 石屋 (stone houses); the character is blurred. | "該區共有石屋二百餘間" (there are over two hundred stone houses in the area) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | Each household held a private deed to its house (私家屋契). | "各戶均有私家屋契" (each household has a private house deed) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | Some years before ('年前'), the government told the occupiers that it would take back the land, for town development. | "年前，當局以城市拓展爲理由，通知住客將收回屋地" (some time ago, the authorities, citing urban development, notified the occupants that they would resume the house sites) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | Most of the owners then agreed to an exchange of land (以地易地). The land given in exchange was in the 鳳凰村 area. | "有大部房屋協議以地易地，交換地點亦指定鳳凰村一帶" (most of the houses agreed to exchange land for land, and the exchange site was set in the 鳳凰村 area) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | INFERRED: About two months before (about May 1963), the Government Gazette printed a notice of resumption. Its terms gave only compensation and said nothing of the land exchange. INFERRED: the date 'about May 1963' comes from 前兩月間 in a paper of 24 July 1963. | "不料前兩月間，憲報突刊登收地通告，在交換條件項下，只提補償，沒說易地" (unexpectedly, two months ago the Gazette suddenly published a land-resumption notice which, under the exchange terms, mentioned only compensation and not land exchange) |
+| NPTKP19630724, leaf n3 (第一張第四版), upper left, article 以地易地中途忽生變卦 龍津道若干住戶今面臨拆遷危機 | With the clearance near, the residents asked the government to keep the land-exchange agreement, so that they would not be left homeless. | "居民盼當局履行易地協議，以免流離失所" (the residents hope the authorities will honour the land-exchange agreement, so that they are not left homeless) |
+
+- **Leads:**
+  - Hong Kong Government Gazette, about May 1963: the notice of resumption of land at Tung Tau Tsuen (東頭村) / Lung Chun Road (龍津道), Kowloon City, with its lot numbers and terms
+  - The earlier agreement of the government with the owners of these houses to exchange land at 鳳凰村 (before 1963): the Crown Lands and Survey Office or New Kowloon land file, if kept
 ### lead-l0202-2: 龍津道昨開始拆遷 商戶盼先補償安置
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1963-07-25
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time (leftist); a news report and press photo of the day after.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPTKP19630725/page/n3
-- **Other links:** https://archive.org/download/NPTKP19630725/NPTKP19630725.pdf, https://archive.org/metadata/NPTKP19630725/metadata/description
-- **Proof that it exists:** Page image of leaf n3 (港聞 page), lower middle: 「龍津道昨開始拆遷」 / 「商戶盼先補償安置」, with a photo.
-- **What it gives (resolver's note, not checked):** The start of the clearance of houses on Lung Chun Road on 24 Jul 1963; the shopkeepers ask for compensation and rehousing first. INFERRED that it continues lead-l0202-1; same caution on whether the houses were inside the City.
-- **Lead:** L0202 (cited by gap-street-address-search-6, hk-chinese-press-1947-1984)
-- **Notes:** Not read.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Ta Kung Pao (大公報), 〈龍津道昨開始拆遷 商戶盼先補償安置〉 (本報訊), Thursday 25 July 1963, 第一張第四版 (archive.org leaf n3, middle left), https://archive.org/details/NPTKP19630725/page/n3
+- **Class:** primary (A report of the time (1963) by a pro-Beijing daily, with the words of the people cleared. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1963-07-25
+- **Files:**
+  - `lead-l0202-2-n3-9a43b7af.jpg` (in `local/`, not in git): Page image of 大公報 25 July 1963, 第一張第四版 (leaf n3), with the article on the start of the Lung Chun Road clearance and a photo of shop fronts (middle left; full size about 3580x4684 px); https://archive.org/download/NPTKP19630725/page/n3.jpg; 4096301 bytes; SHA-256 `b66ee6bc607345c67ce0e95768bc5b8906b5aaaacf450e7122315cf34316690e`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPTKP19630725)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, lead | INFERRED: The clearance of houses on Lung Chun Road (龍津道), Tung Tau Tsuen (東頭村), Kowloon City, began on 24 July 1963. INFERRED: as in the report of 24 July, this does not show that the houses were inside the walls. | "九龍城東頭村龍津道昨日起拆遷" (Lung Chun Road, Tung Tau Tsuen, Kowloon City, began demolition and removal yesterday) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, lead | More than 30 shops and workshops were pulled down on the first day. The rest were given notice to go between 25 July and the end of July 1963. | "昨日被拆除的商戶廠房有三十多間，其餘分別被限令今日至本月底之間拆卸" (more than thirty shops and workshops were demolished yesterday; the rest were ordered to be pulled down between today and the end of the month) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, para. 2 | The owner of a small cloth factory (布廠), named 陳× in the paper, said that the factory was at No. 7 and his family lived at 2/F, No. 10A. His factory had moved to a factory building, but his family of seven had nowhere to live. | "他這間布廠是設在七號，家人則住在十號A二樓" (his cloth factory was at No. 7, and his family lived on the second floor of No. 10A) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, para. 2 | He was offered a flat in a resettlement block (徙置大廈) at $20 a month. He asked for a bigger flat because his family was large, but got no answer. | "當日被徙置到徙置大廈二十元月租的房子" (at that time he was to be resettled to a $20-a-month room in a resettlement block) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, para. 2 | When he then went to take up the $20 flat, he was told that he was too late and had lost his right to it. | "他去辦理二十元租房子的手續時，又被指過期當放棄論" (when he went to complete the formalities for the $20 room, he was told it was overdue and treated as given up) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, para. 3 | The head of another cloth factory, at No. 6 (named 陳× in the paper), said that most of his workers had not been resettled either. | "另據六號某布廠負責人陳×稱，他的布廠之工人亦多未被徙置" (the head of a cloth factory at No. 6, 陳×, said that many of his factory's workers had not been resettled either) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, para. 3 | The carpenter 湯華, of 一巷三號 (No. 3 of the lane 一巷), had to pull down his house by 25 July. His family of ten lived on his work. He asked for a shop space on the ground floor of a resettlement block to work as a carpenter, but got no answer. | "被限今日拆屋之木匠湯華（住一巷三號）說，他一家十口向靠他雙手過活" (the carpenter 湯華 (living at No. 3, First Lane), whose house must be pulled down today, said his family of ten have always lived by his two hands) |
+| NPTKP19630725, leaf n3 (第一張第四版), middle left, article 龍津道昨開始拆遷 商戶盼先補償安置, last para. | The people cleared asked the government to give fair compensation and rehousing first, and only then to pull down the houses. | "希望有關當局先予切實補償和安置然後拆屋" (they hope the authorities will first give real compensation and rehousing, and then demolish the houses) |
+
+- **Leads:**
+  - Resettlement Department record of the clearance of Tung Tau Tsuen (東頭村) / Lung Chun Road (龍津道), Kowloon City, from 24 July 1963 (over 30 shops and workshops on the first day), with the resettlement of the households
 ### lead-l0206-1: 教養所職員被殺案 六青年今日起偵訊 / 龍津道命案亦開始偵訊 潮籍男子四人同被控謀殺罪名
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1959-02-16
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19590216/page/n5
-- **Other links:** https://archive.org/download/NPKS19590216/NPKS19590216.pdf, https://archive.org/metadata/NPKS19590216/metadata/description
-- **Proof that it exists:** Page image of leaf n5 (本港新聞): 「龍津道命案亦開始偵訊」 / 「潮籍男子四人同被控謀殺罪名」, under the main head 「教養所職員被殺案 六青年今日起偵訊」.
-- **What it gives (resolver's note, not checked):** The start of the committal hearing of the four Chiu Chow (潮籍) men charged with the murder on Lung Chun Road (龍津道), February 1959; the City part is a deck under another case.
-- **Lead:** L0206 (cited by gap-street-address-search-8, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈教養所職員被殺案 六青年今日起偵訊〉, deck 〈龍津道命案亦開始偵訊 潮籍男子四人同被控謀殺罪名〉 (新聞社 report), Monday 16 February 1959, p. 6, 本港新聞 (archive.org leaf n5, upper right), https://archive.org/details/NPKS19590216/page/n5
+- **Class:** primary (A report of the time (1959) of a court hearing. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1959-02-16
+- **Files:**
+  - `lead-l0206-1-n5-f50df0bc.jpg` (in `local/`, not in git): Page image of 香港工商日報 16 Feb 1959, p. 6 (本港新聞, leaf n5), with the lead article and its deck on the Lung Chun Road killing (upper right; full size about 3336x5026 px); https://archive.org/download/NPKS19590216/page/n5.jpg; 5778208 bytes; SHA-256 `fbf8f22adaac7ee6559a60d26bc7ce959a153e1ad863fc3270b1d7c44556a6e5`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19590216)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19590216, leaf n5 (第六頁, 本港新聞), upper right, lead article 教養所職員被殺案, deck and last two paragraphs, second-last paragraph | On 25 November 1958 (the paper says 'last year, 25 November') there was a killing on Lung Chun Road (龍津道), Kowloon City: a middle-aged man, 姜浩然, was beaten, badly hurt, and died. Four men were arrested. | "又去年十一月廿五日，九龍城龍津道發生命案，中年男子姜浩然被毆重傷斃命" (Also, on 25 November last year a killing took place on Lung Chun Road, Kowloon City: the middle-aged man 姜浩然 was beaten, gravely hurt and died) |
+| NPKS19590216, leaf n5 (第六頁, 本港新聞), upper right, lead article 教養所職員被殺案, deck and last two paragraphs, second-last paragraph | The committal hearing (初級偵訊) was to start on the morning of 16 February 1959 in Court No. 5 of the Central Magistracy (中央裁判署), before Magistrate 侯, and to go on for two more days. | "此案將於今日上午起在中央裁判署第五法庭由侯法官循刑事程序初級偵訊" (this case will from this morning be heard by Magistrate 侯 in Court No. 5 of the Central Magistracy as a preliminary inquiry under criminal procedure) |
+| NPKS19590216, leaf n5 (第六頁, 本港新聞), upper right, lead article 教養所職員被殺案, deck and last two paragraphs, last paragraph | The four accused were all Chiu Chow (潮州) men and all lived on the ground floor of No. 80 Lung Chun Road. | "四名被告男子皆係潮州人，住龍津道八十號樓下" (the four accused men are all Chiu Chow people, living on the ground floor of No. 80 Lung Chun Road) |
+| NPKS19590216, leaf n5 (第六頁, 本港新聞), upper right, lead article 教養所職員被殺案, deck and last two paragraphs, last paragraph | INFERRED: The accused: (1) □楚南, 28, owner of the 南興 eating house; (2) 姚錫河, 19, and (3) 陳木錦, 40, both its workers; (4) 陳元深, a hawker. This report calls the place 南興茶樓 (a teahouse); the reports of 17 and 18 Feb call it 南興冰室 (a café). INFERRED: the surname of the first accused is blurred here; the 17 Feb report gives 王楚南. This report gives the age of 陳元深 as 卅二 (32); the later reports give 23 and 33. | "㈡姚錫河，十九歲，茶樓夥伴；㈢陳木錦，四十歲，茶樓夥伴" ((2) 姚錫河, 19, teahouse worker; (3) 陳木錦, 40, teahouse worker) |
+| NPKS19590216, leaf n5 (第六頁, 本港新聞), upper right, lead article 教養所職員被殺案, deck and last two paragraphs, last paragraph | All four were charged with the murder of 姜浩然 in the Kowloon City area on 25 November 1958. | "四人皆被控去年十一月廿五日在九龍城區內謀殺男子姜浩然" (all four are charged with murdering the man 姜浩然 within the Kowloon City area on 25 November last year) |
 ### lead-l0206-2: 龍津道命案開審 神女薛玉娣作供
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1959-02-17
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19590217/page/n4
-- **Other links:** https://archive.org/download/NPKS19590217/NPKS19590217.pdf, https://archive.org/metadata/NPKS19590217/metadata/description
-- **Proof that it exists:** Page image of leaf n4 (本港新聞), left middle: headline 「龍津道命案開審」 / 「神女薛玉娣作供」, with a second story below headed 「首被告恨死者…」 (small print, not read).
-- **What it gives (resolver's note, not checked):** The first day of the hearing: the evidence of the prostitute 薛玉娣 on her relations with the first accused and the dead man. Gives sex work, drugs and a street killing in the City, 1959.
-- **Lead:** L0206 (cited by gap-street-address-search-8, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈龍津道命案開審 神女薛玉娣作供 指出命案內情涉及桃色問題 首被告因死者搬弄是非憤而將之毆擊〉 (新聞社 report), Tuesday 17 February 1959, p. 5, 本港新聞 (archive.org leaf n4, left middle), https://archive.org/details/NPKS19590217/page/n4
+- **Class:** primary (A report of the time (1959) of a committal hearing, with the evidence of witnesses in court. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1959-02-17
+- **Files:**
+  - `lead-l0206-2-n4-b38911ca.jpg` (in `local/`, not in git): Page image of 香港工商日報 17 Feb 1959, p. 5 (本港新聞, leaf n4), with the report of the first day of the Lung Chun Road murder hearing (left middle; full size about 3307x5070 px); https://archive.org/download/NPKS19590217/page/n4.jpg; 5036629 bytes; SHA-256 `c3eda30baece8764e860e9c57359eb4570cfba9ee55b5a3f5e2fc6e3b1c62bd8`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19590217)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lead col. 1-2 | INFERRED: The dead man, 姜浩然, was a Chiu Chow man of 51. He made his living as a 'street guide' (帶街, a tout) and broker. INFERRED: I read the second trade as 經紀 (broker); the characters are blurred. | "以「帶街」與經紀爲業之五十一歲潮籍男子姜浩然" (姜浩然, a 51-year-old Chiu Chow man who made his living as a 'street guide' and broker) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lead col. 2-3 | He was beaten by several men on 24 November 1958 and fell badly hurt. He died the next day in Kowloon Hospital (九龍醫院). | "被人圍毆重傷倒地，翌日在九龍醫院斃命" (was surrounded and beaten, fell gravely hurt, and died the next day in Kowloon Hospital) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lead col. 3-5 | INFERRED: The committal hearing opened on 16 February 1959 at the Central Magistracy before Magistrate 侯. The prosecution had 17 witnesses, and three days were set aside to hear the evidence. INFERRED: the character after 一 is blurred (連 or 週). | "控方証人十七名，預訂一連三天聆取証供" (17 prosecution witnesses; three days in a row are set aside to hear the evidence) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lead col. 5-8 | The four accused were all Chiu Chow men living on the ground floor of No. 80 Lung Chun Road, at the 南興冰室 (a café): 王楚南 (28, owner of the café), 姚錫河 (19, café worker), 陳木錦 (40, café worker) and 陳元深 (23, a hawker). | "住龍津道八十號樓下南興冰室：㈠王楚南，廿八歲，南興冰室東主" (living at the ground floor of No. 80 Lung Chun Road, 南興 café: (1) 王楚南, 28, owner of the 南興 café) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, police summary, col. 1-4 | The police case was given by Detective Inspector 英格理 of Kowloon City police station: 王楚南 had a girlfriend, 薛玉娣; the second and third accused worked for him; the fourth sold goods at a stall in front of the café. | "第四被告乃在冰室門前擺檔之小販" (the fourth accused is a hawker who keeps a stall in front of the café) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, police summary, col. 4-9 | Police summary: at 3 p.m. on 24 Nov 1958, 薛玉娣 went to the 南興 café and talked with 姜浩然 about the private life of 王楚南. When 王楚南 heard, he went to 姜 to call him to account. The two fought; the other three accused joined in and beat 姜, who fell and died in hospital the next day. | "迨後首被告知其事，乃向死者興師問罪，兩人動武" (afterwards the first accused learnt of it and went to call the dead man to account; the two came to blows) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, police summary, last col. | INFERRED: 薛玉娣, a Chiu Chow woman, was a main prosecution witness. INFERRED: the paper gives another name for her, which I read as 張非非; the first character is blurred. | "此案之關係人物，亦爲控方主要証人之一之潮籍女子薛玉娣" (the person at the centre of the case, also one of the main prosecution witnesses, the Chiu Chow woman 薛玉娣) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 1-2 | 薛玉娣 said in court that she was a prostitute (神女) and lived in Room 14 of the 潮利源旅店 (an inn) at No. 166 Connaught Road Central (干諾道中). | "伊操神女生涯，住干諾道中一六六號潮利源旅店十四號房" (she lives as a prostitute, at Room 14, 潮利源 inn, No. 166 Connaught Road Central) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 2-3 | INFERRED: She said that for two years she often went to the 南興冰室 at No. 80 Lung Chun Road, which she placed in the City, and was friendly with its owner. INFERRED: I read the words before 龍津道 as 城砦 (the Walled City); they are blurred. | "在過去兩年間，常往城砦龍津道八十號南興冰室" (in the past two years she often went to the 南興 café at No. 80 Lung Chun Road in the Walled City) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 4 | She stayed with 王楚南 at the café and at his home, 2/F, No. 13A 龍城道. | "曾在冰室及其住所（龍城道十三號A二樓）與之住宿" (she stayed with him at the café and at his home (2nd floor, No. 13A 龍城道)) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 5-7 | She met 姜浩然 at the 南興 café in June 1958, but only to talk to. She had not seen 王楚南 for about three months before November 1958. | "去年六月間，始在南興冰室認識死者（姜浩然），但僅見而接談而已" (only in June last year did she get to know the dead man (姜浩然) at the 南興 café, merely meeting and talking) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 7-9 | About a week before 24 November, 王楚南 visited her at the inn and asked why she no longer came to the 南興. She said she had no time, but promised to come another day. | "首被告到潮利源旅店訪彼，首被告問何故久不往南興訪之" (the first accused came to visit her at the 潮利源 inn and asked why she had not gone to the 南興 to see him for so long) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 10-13 | At 5 p.m. on 23 Nov 1958 she went to 2/F, No. 13A 龍城道 and spent the night there with 王楚南. At 11 a.m. the next day she went with him to a teahouse for tea until 2.30 p.m. Then she left No. 13A 龍城道 (so printed) and parted from him on the way, to go to the 南興 café to see friends whom she had not seen for a long time. | "翌日上午十一時，與首被告往一間茶樓品茗，至下午二時卅分" (the next day at 11 a.m. she went with the first accused to a teahouse for tea, until 2.30 p.m.) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, col. 13-17 | She then went to the 南興 café to see old friends. It was empty, but 姜浩然 called her name, came out of the café and asked whether she and 王楚南 had fallen out. | "姜從冰室奔出，與彼搭談，問彼是否與首被告感情破裂" (姜 ran out of the café and talked to her, asking whether she and the first accused had broken up) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, upper row, last col. | 姜 told her things about 王楚南. She grew angry, went to No. 13A 龍城道 and told 王 off: he had slept with a girlfriend of hers there. She said: 'There are many women in the world; why must you have my sister?' | 「世間不少女人，何必要我之姊妹。」 ('There are many women in the world; why must you have my sister?') |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, lower row, col. 1-3 | 王楚南 denied it. She said that he had slept there with a Chiu Chow woman surnamed 黃, her 'sister'. 王 said angrily that he would make 姜 prove it, and left. | "首被告憤然謂要找姜証明此事" (the first accused said angrily that he would find 姜 to prove the matter) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, lower row, col. 4-6 | A few minutes later someone came to say that there was a fight on Lung Chun Road. When 王楚南 came back, he said that he had fought 姜: 'I hit him, but he hit me too.' | "有人報稱龍津道發生打架" (someone reported that a fight had broken out on Lung Chun Road) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, lower row, col. 8-10 | She fell out with 王楚南 over this and blamed him for hitting 姜. She crossed the harbour (渡海) back to the 潮利源 inn; as she left, she warned him not to visit her at the 潮利源. | "行時，警告首被告勿往潮利源訪彼云" (as she left, she warned the first accused not to visit her at the 潮利源) |
+| NPKS19590217, leaf n4 (第五頁, 本港新聞), left middle, article 龍津道命案開審 神女薛玉娣作供, lower block, lower row, last cols. | Most of the evidence on the first day came from the police. Three doctors of Kowloon Hospital described the examination of the dead man. | "三名九龍醫院醫生分別供述檢驗死者經過" (three doctors of Kowloon Hospital each described the examination of the dead man) |
+
+- **Leads:**
+  - Central Magistracy (中央裁判署) record of the committal hearing of 王楚南, 姚錫河, 陳木錦 and 陳元深 for the murder of 姜浩然 (Lung Chun Road, 24-25 Nov 1958), 16-18 Feb 1959, Magistrate 侯
+  - Kowloon Hospital (九龍醫院) records of the death of 姜浩然, 25 Nov 1958, and the evidence of its three doctors
 ### lead-l0206-3: 龍津道命案續審 證人供述目擊 四人毆打死者 是否轉解高院今日可裁定
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1959-02-18
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19590218/page/n6
-- **Other links:** https://archive.org/download/NPKS19590218/NPKS19590218.pdf, https://archive.org/metadata/NPKS19590218/metadata/description
-- **Proof that it exists:** Page image of leaf n6 (本港新聞), top right: 「龍津道命案續審」 / 「證人供述目擊四人毆打死者」 / 「是否轉解高院今日可裁定」.
-- **What it gives (resolver's note, not checked):** The second day: an eyewitness says that he saw four men beat the dead man; the magistrate to decide on committal to the High Court.
-- **Lead:** L0206 (cited by gap-street-address-search-8, hk-chinese-press-1947-1984)
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈龍津道命案續審 証人供述目擊四人毆打死者 是否轉解高院今晨可裁定〉 (新聞社 report), Wednesday 18 February 1959, p. 7, 本港新聞 (archive.org leaf n6, upper right), https://archive.org/details/NPKS19590218/page/n6
+- **Class:** primary (A report of the time (1959) of a committal hearing, with the evidence of eyewitnesses. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1959-02-18
+- **Files:**
+  - `lead-l0206-3-n6-2dd24d42.jpg` (in `local/`, not in git): Page image of 香港工商日報 18 Feb 1959, p. 7 (本港新聞, leaf n6), with the report of the second day of the Lung Chun Road murder hearing (upper right; full size about 3352x5002 px); https://archive.org/download/NPKS19590218/page/n6.jpg; 5192122 bytes; SHA-256 `acf77e88bda48963db213e2e1df998db902ee91040e753a27a321f068e6465db`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19590218)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, lead col. 3-5 | The hearing went on on 17 Feb 1959 at the Central Magistracy. Of the 17 prosecution witnesses, 16 had given evidence; the last was to give evidence on the morning of 18 Feb, and then the court would decide whether to commit the four accused to the High Court. | "控方証人十七名，其中十六人經已作供" (17 prosecution witnesses, of whom 16 have already testified) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 9-12 | INFERRED: A Chiu Chow hawker (I read his name as 楊本, as in the report of 15 May 1959) said that he had known the four accused since June 1958. He knew that 王楚南 owned the 南興冰室, that the second and third accused worked for him, that the fourth was a hawker, and that the woman this report names 張非非 (薛玉娣) was 王楚南's girlfriend. INFERRED: the name of the hawker is blurred. | "知首被告乃南興冰室東主，第二、三被告乃其夥伴，第四被告乃小販" (he knew the first accused was owner of the 南興 café, the second and third accused his workers, and the fourth accused a hawker) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 12-14 | INFERRED: At 3 p.m. on 24 Nov 1958 he was inside the 南興 café. He heard someone fall, looked, and saw 王楚南 on the ground with the man the witnesses called 'the Shanghai man' (「上海佬」) holding him. INFERRED: the 'Shanghai man' is the dead man, 姜浩然. | "去年十一月廿四日下午三時，彼在南興冰室內，聞有人被推倒聲" (at 3 p.m. on 24 November last year he was inside the 南興 café and heard the sound of someone being pushed over) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 14-17 | INFERRED: 王楚南's head struck the stall of the fourth accused. The fourth accused pushed the 'Shanghai man' away. The man asked him 'Do you want to help him?' and hit him; the fourth accused hit back four or five times with a piece of wood. | "第四被告以木棍擊上海佬四五下" (the fourth accused struck the Shanghai man four or five times with a wooden stick) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 18-21 | 王楚南 got up and joined in. The second and third accused came out, tried to stop the fight, failed, and joined in too. The 'Shanghai man' fell, and 王楚南 beat him. | "未幾「上海佬」倒仆地上，首被告毆擊之" (soon the 'Shanghai man' fell to the ground, and the first accused beat him) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 21-23 | Some customers of the café came out and stopped the fight. The 'Shanghai man' left, followed by a man whom the witness did not know. | "冰室內之顧客數名出而阻止打鬥" (several customers in the café came out to stop the fight) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 23-24 | On 5 December 1958 the witness was called to the police station and picked out the four accused as the men in the fight. | "迨至十二月五日，彼被召前往警署認人，認出四名被告乃當日參加打鬥之人" (on 5 December he was called to the police station to identify people, and picked out the four accused as the men who took part in the fight that day) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 25-27 | INFERRED: A detective sergeant (探目) of the Kowloon City detective branch (I read his name as 盧通) said that he went to the 南興 café on Lung Chun Road on 24 Nov 1958, found the second and third accused, told them who he was and why he came. The paper prints the time as 10.30 a.m., which is before the fight; INFERRED: a misprint, perhaps for p.m. | "去年十一月廿四日上午十時卅分，前往龍津道南興冰室，見第二、三被告" (at 10.30 a.m. on 24 November last year he went to the 南興 café on Lung Chun Road and found the second and third accused) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, col. 28-30 (upper left of the headline) | The third accused said that 王楚南 had taken part in the fight. The detective took two of the accused to 2/F, No. 13A 龍城道 to look for 王楚南, then went to the police station; on the way past the door of No. 80 Lung Chun Road he took in the fourth accused too. | "經龍津道八十號門前時，將第四被告一併帶上警署" (when passing the door of No. 80 Lung Chun Road, he took the fourth accused to the station as well) |
+| NPKS19590218, leaf n6 (第七頁, 本港新聞), upper right, article 龍津道命案續審 証人供述目擊四人毆打死者, last col. | INFERRED: The detective 盧通 and Inspector 英格理 described the inquiry. They said that the accused were charged with murder only on 5 December 1958 (去年十二月五日). INFERRED: the character between 控 and 謀 is blurred; I read 以. | "始將各被告人控以謀殺" (only then were the accused charged with murder) |
+
+- **Leads:**
+  - 工商日報 of 19 Feb 1959 (NPKS19590219): the magistrate's decision on committal of the four accused in the Lung Chun Road murder case, if not held
 ### lead-l0206-4: 龍津道冰室命案 昨開始偵訊 (headline as read from the page image; the keyword list has 龍津道冰室命案 and 控方証供)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1959-05-15
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a court report of the day.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKS19590515/page/n5
-- **Other links:** https://archive.org/download/NPKS19590515/NPKS19590515.pdf, https://archive.org/metadata/NPKS19590515/metadata/description
-- **Proof that it exists:** Page image of leaf n5 (本港新聞), right middle: 「龍津道冰室命案」 / 「昨開始偵訊」 (reading of a small image).
-- **What it gives (resolver's note, not checked):** The later hearing (May 1959) of the café (冰室) killing on Lung Chun Road, with the prosecution evidence. INFERRED that it is the High Court trial or a resumed hearing; not read.
-- **Lead:** L0206 (cited by gap-street-address-search-8, hk-chinese-press-1947-1984)
-- **Notes:** The verb of the second line is read from a small image; check it when the page is read.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 〈龍津道冰室命案 昨開始偵訊 控方証供未畢押候今日續審〉 (新聞社 report), Friday 15 May 1959, p. 6, 本港新聞 (archive.org leaf n5, right middle), https://archive.org/details/NPKS19590515/page/n5
+- **Class:** primary (A report of the time (1959) of a court hearing. It stays in primary-sources/hk-chinese-press-1947-1984.)
+- **Date of the record:** 1959-05-15
+- **Files:**
+  - `lead-l0206-4-n5-bcd17214.jpg` (in `local/`, not in git): Page image of 香港工商日報 15 May 1959, p. 6 (本港新聞, leaf n5), with the report of the new preliminary inquiry of the Lung Chun Road café killing (right middle; full size about 3376x4967 px); https://archive.org/download/NPKS19590515/page/n5.jpg; 5215255 bytes; SHA-256 `f800e9874e73a841bd48041d33564d185e836cc6cabe42cdd7bdd8f426014ac8`; licence: No licence statement: the archive.org metadata of the item has no rights or licenseurl field; private upload in the 'china-mail' collection; copyright of the newspaper (https://archive.org/metadata/NPKS19590515)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 1 | At 3 p.m. on 24 Nov 1958, at the 南興冰室 on the ground floor of No. 80 Lung Chun Road, Kowloon City, a Chiu Chow man of 51, 姜浩然, was beaten. He was taken to Kowloon Hospital and died of his injuries in the early morning of 25 Nov. | "九龍城龍津道八十號地下南興冰室有一名五十一歲之潮籍男子姜浩然，被人毆打" (at the 南興 café, ground floor, No. 80 Lung Chun Road, Kowloon City, a 51-year-old Chiu Chow man, 姜浩然, was beaten) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 1 and band 2, col. 1-2 | INFERRED: The case had come before the Kowloon court many times. A preliminary inquiry (初級偵訊) at the Kowloon Magistracy (九龍裁判署), under the procedure for serious criminal cases (I read 循嚴重刑事案程序), was held on 14-16 May 1959, with 16 prosecution witnesses. If, after the inquiry, there was a case to answer, it was to go to the High Court criminal sessions. INFERRED: the February hearing at the Central Magistracy (lead-l0206-1 to -3) did not end the committal; the report does not say why a new inquiry was held. | "刑事案程序在九龍裁判署先作初級偵訊" ([under the] criminal case procedure a preliminary inquiry is first held at the Kowloon Magistracy) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 2, col. 3-4 | INFERRED: The prosecutor was again Inspector 英格理 of the Kowloon City detective branch. INFERRED: the magistrate's name is a transliteration ending in 尼路; the first character is blurred. | "九龍城警署偵探幫辦英格理主控" (Detective Inspector 英格理 of Kowloon City police station prosecuting) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 2, col. 4-8 | The accused: 王楚南 (28, owner of the café), 姚錫河 (19, café worker), 陳木錦 (40, café worker) and 陳源深 (a hawker). All four lived on the ground floor of No. 80 Lung Chun Road. This report spells the fourth name 陳源深 and gives his age as 卅三 (33). | "四人同住於龍津道八十號地下，同被控謀殺罪" (the four live together on the ground floor of No. 80 Lung Chun Road and are jointly charged with murder) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 2, col. 9-12 | A police photographer described taking photographs of the dead man and of the scene. A doctor of Kowloon Hospital described the examination of the dead man. | "九龍醫院醫生供述檢驗死者之情形" (a Kowloon Hospital doctor described the examination of the dead man) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 3 | INFERRED: 薛玉娣 (also called 張非非) and the Chiu Chow hawker 楊本 described the fight between the accused and the dead man. Two more men, the Chiu Chow man 方順元 and the hawker 陳劍峰, described what they saw. INFERRED: the names of the three men are read from a blurred print. | "潮籍女子薛玉娣（又名張非非）及潮籍小販" (the Chiu Chow woman 薛玉娣 (also called 張非非) and a Chiu Chow hawker) |
+| NPKS19590515, leaf n5 (第六頁, 本港新聞), right middle, article 龍津道冰室命案 昨開始偵訊, band 3, last col. | The prosecution evidence was not finished on 14 May, and the magistrate adjourned the case to 10 a.m. on 15 May 1959. | "法官諭將此案押候今日上午十時續訊" (the magistrate ordered the case adjourned to 10 a.m. today) |
+
+- **Leads:**
+  - Kowloon Magistracy (九龍裁判署) record of the preliminary inquiry of 14-16 May 1959 in the case of 王楚南 and three others (murder of 姜浩然); and the High Court trial that followed, if any
+  - 工商日報 of 16 and 17 May 1959 (NPKS19590516, NPKS19590517): the rest of the May 1959 inquiry and the committal decision, if not held
 ### lead-l0208: 龍城老人街又發生血案 龍城之獅被刺垂危 警方疑為黑社會人物開片尋仇
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
-- **Date:** 1958-12-11
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a news report of the day after the stabbing.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPWK19581211/page/n5
-- **Other links:** https://archive.org/download/NPWK19581211/NPWK19581211.pdf, https://archive.org/metadata/NPWK19581211/metadata/description
-- **Proof that it exists:** Page image of leaf n5 (本港新聞): headline 「龍城老人街又發生血案」 / 「龍城之獅被刺垂危」 / 「警方疑為黑社會人物開片尋仇」.
-- **What it gives (resolver's note, not checked):** The stabbing of a man called 'the Lion of Kowloon City' (龍城之獅) on Lo Yan Street (老人街) in December 1958, which the police thought was a triad revenge fight; '又' (again) shows an earlier attack on the same street. Gives the crime and the triad feuds of the City streets in the late 1950s.
-- **Lead:** L0208 (cited by gap-street-address-search-8, hk-chinese-press-1947-1984)
-- **Notes:** The headline list of the issue has the same headline. The text of the report is in the lower left of the page, left of the 島上毒案 story.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「龍城老人街又發生血案 龍城之獅被刺垂危 警方疑為黑社會人物開片尋仇」 (特訊), Thursday 11 December 1958, sheet 2, p. 2 (第二張第二頁, 港聞二); archive.org item NPWK19581211, leaf n5, https://archive.org/details/NPWK19581211/page/n5
+- **Class:** primary (A news report of the time (11 Dec 1958) on a stabbing of 10 Dec 1958; it belongs in primary-sources/.)
+- **Date of the record:** 1958-12-11
+- **Files:**
+  - `lead-l0208-n5-28c2933b.jpg` (in `local/`, not in git): Page image of sheet 2 p. 2 (leaf n5) of 華僑日報, 11 Dec 1958, with the report on the stabbing on Lo Yan Street; https://archive.org/download/NPWK19581211/page/n5.jpg; 4769002 bytes; SHA-256 `49e30bf0442dca4727e4a4c2a65b08a4a81f142019799ca5a2ba285b98ebc4d7`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPWK19581211)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, headline | The headline says another bloody case happened on Lo Yan Street (老人街), Kowloon City: the man it calls 龍城之獅 ('the Lion of Kowloon City') was stabbed and near death, and the police suspected triad members in a revenge fight (開片尋仇). | "龍城老人街又發生血案 龍城之獅被刺垂危 警方疑為黑社會人物開片尋仇" (Another bloody case on Lo Yan Street, Kowloon City; the 'Lion of Kowloon City' stabbed, near death; police suspect triad members fighting for revenge) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 1-2 | On the afternoon of 10 December 1958 ('yesterday') a man was stabbed several times with a sharp blade (利劍) on Lo Yan Street (老人街), Kowloon City. He fled, hurt, and fell by the road from loss of blood. | "九龍城老人街，昨日下午發生兇案，一男子被人以利劍猛刺數刀之後，負傷逃去" (On Lo Yan Street, Kowloon City, a stabbing took place yesterday afternoon; a man, stabbed several times with a sharp blade, fled wounded) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 2-3 | Residents nearby reported it to the police. A large squad of police came to investigate, and the hurt man was taken to hospital. His wounds were serious and his life was in danger. | "警方接獲附近居民報告後，大隊警員趕到詳查兇案經過" (After the police received the report of nearby residents, a large squad of officers arrived to investigate the stabbing) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 4 | The police put out an order to arrest a man named 許X桂 (the paper masks one character), suspected of the stabbing. | "通令追緝一個名許X桂之男子，嫌疑與此血案有關" (Issued an order to hunt down a man named 許X桂, suspected of a connection with this bloody case) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 5 | The stabbed man was 徐克良, 28, who lived in 啟德新村 and sold fruit for a living. | "被刺重傷男子名徐克良、廿八歲，居啟德新村，以販賣生果為業" (The seriously wounded man was named 徐克良, 28, living in 啟德新村, a fruit seller by trade) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 5-6 | Every day he went to Lo Yan Street to 'chase the dragon' (追龍, smoke heroin) and had become a regular of one drug den (毒窟) there. He often bought on credit and owed the den several tens of dollars for heroin powder (白粉). | "已成為該毒窟老主顧，因此關係，時有記賬，一共欠下白粉賬數十元" (He had become a regular customer of that drug den; because of this he often ran a tab, owing in all several tens of dollars for heroin powder) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 7-8 | Lately he had changed to another drug den. At about 3 p.m. on 10 Dec 1958 he passed the door of his old den. The people of the den accused him of breaking the agreement; a fight broke out, and in the confusion he was stabbed several times. | "昨日下午三時許，他行經原日光顧的毒窟門口" (At about 3 p.m. yesterday he passed the door of the drug den he had used before) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 8-9 | INFERRED: The paper says the den's people accused him of not keeping faith (不講義氣, INFERRED reading of two worn characters) and of breaking his word. Badly hurt, he still walked away, did not call for help, and at last fell from his wounds. | "並責他違約，雙方發生衝突，徐克良在混亂中被利器連刺數下重傷" (And blamed him for breaking the agreement; the two sides clashed, and in the confusion 徐克良 was stabbed several times with a weapon and badly hurt) |
+| NPWK19581211 leaf n5 (printed 第二張第二頁, 港聞二), report 龍城老人街又發生血案 (特訊), lower left, col. 5-7 | INFERRED: The report thus places at least two drug dens on or near Lo Yan Street in December 1958, which sold heroin on credit to regular customers. INFERRED: the report says the man went daily to Lo Yan Street and then 'changed to another den'; it does not say that the second den was on the same street. | "光顧另一毒窟" (patronised another drug den) |
+
+- **Leads:**
+  - The earlier stabbing on Lo Yan Street (老人街) that the headline's 又 ('again') refers to, before 10 Dec 1958 (not named in the report)
 ### lead-l0209-1: 龍津道拆危樓 牆壁突然塌下弄成一死三傷 (photo caption in the headline list: 九龍城砦龍津道塌牆釀成一死三傷)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報), Hong Kong
-- **Date:** 1963-11-28
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese daily of the time; a news report and press photo of the day after the accident.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPWK19631128/page/n5
-- **Other links:** https://archive.org/download/NPWK19631128/NPWK19631128.pdf, https://archive.org/metadata/NPWK19631128/metadata/description
-- **Proof that it exists:** Page image of leaf n5 (本港新聞), middle: 「龍津道拆危樓」 / 「牆壁突然塌下 弄成一死三傷」, beside a photo of the site; the headline list has 「九龍城砦龍津道塌牆釀成一死三傷」.
-- **What it gives (resolver's note, not checked):** The fall of a wall during the demolition of a dangerous old building on Lung Chun Road (龍津道) in the City, 27 Nov 1963: one dead, three hurt; with a photo. Gives the rebuilding of the City's old two-storey houses in 1963, the start of the high-rise years.
-- **Lead:** L0209 (cited by gap-street-address-search-9, hk-chinese-press-1947-1984)
-- **Notes:** Same street and weeks as the fire of 18 Dec 1963 (held, gap-street-address-search-6), where Nos. 102 and 102A were new buildings under scaffolding.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「龍津道拆危樓 牆壁突然塌下 弄成一死三傷」 (特訊, signed 雨), with photo 「九龍城砦龍津道塌牆釀成一死三傷」 (本報攝), 28 November 1963; archive.org item NPWK19631128, leaf n5, https://archive.org/details/NPWK19631128/page/n5
+- **Class:** primary (A news report of the time (28 Nov 1963) on an accident of 27 Nov 1963; it belongs in primary-sources/.)
+- **Date of the record:** 1963-11-28
+- **Files:**
+  - `lead-l0209-1-n5-37413243.jpg` (in `local/`, not in git): Page image of leaf n5 of 華僑日報, 28 Nov 1963, with the report and photo of the wall fall at No. 31 Lung Chun Road; https://archive.org/download/NPWK19631128/page/n5.jpg; 5896247 bytes; SHA-256 `d1c377d1bfa9009ff28f6dfa98b6900e98af2df82e07c732f9630b05378f8871`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPWK19631128)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 1-2 | At about 8.30 a.m. on 27 November 1963 ('yesterday morning') a two-storey old building being demolished on Lung Chun Road (龍津道) in Kowloon Walled City fell down. One person died and three were hurt; one of the hurt was the owner. | "九龍城砦龍津道，昨晨八時半左右，發生塌樓慘劇，一幢正在拆卸之兩層舊樓塌下，一死三傷" (On Lung Chun Road, Kowloon Walled City, at about 8.30 yesterday morning, a building collapsed: a two-storey old building being demolished fell, one dead and three hurt) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 3 | The building was No. 31 Lung Chun Road (龍津道卅一號). It was built of brick and stone and timber, and it was old, in poor repair and about to fall. | "崩塌舊樓係龍津道卅一號，用磚石及木材建築，因年久失修，勢將傾倒" (The collapsed old building was No. 31 Lung Chun Road, built of brick, stone and timber; long in disrepair, it was about to fall) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 3-4 | The owner, 張就, hired workers to pull the building down and rebuild. The demolition pay was $11 a day, and the job was agreed to take four days. (The evening paper 工商晚報 of 27 Nov 1963 gives $12 a day for each man.) | "屋主張就僱工拆卸重建，拆屋工金每日十一元，議定四日完工" (The owner 張就 hired workers to demolish and rebuild; the demolition wage was $11 a day, with four days agreed for the job) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 5-6 | The workers began at 8 a.m. They first took out the timber posts that held up the building and then pulled down the walls. The worker 馬坤 levered the left brick wall with an iron crowbar, and with one strong pull the whole wall fell. | "工人馬坤用鐵撬撬左邊磚牆，剛用力一撬" (The worker 馬坤 levered the left brick wall with an iron crowbar; as soon as he pulled hard) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 6-7 | The fallen wall was more than two tons of mud and stone. It pulled the brick walls on all four sides down with it, and the four people working there were buried. | "倒下之牆泥石重兩噸餘，牽動四面磚牆隨之坍塌" (The fallen wall's mud and stone weighed more than two tons, and pulled the brick walls on all four sides down with it) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 7 | Neighbours (街坊) called the police. Police and firemen dug 馬坤 out; he was already dead. A 'black box van' (黑箱車, the mortuary van) took the body to the mortuary. | "街坊報警，警員與消防員趕到搶救，將馬坤掘出，已經氣絕身死，由黑箱車送往殮房" (Neighbours called the police; police and firemen came to rescue, dug out 馬坤, already dead; the black van took him to the mortuary) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 8 | Of the three hurt, one had his left hand crushed and was covered in blood; two lay on the ground groaning. Ambulances took them to hospital. | "其餘三傷者中，一人壓斷左手，鮮血滿身，兩人倒于地上呻吟" (Of the other three hurt, one had his left hand crushed and broken, covered in blood; two lay on the ground groaning) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 9 | After firemen and police cleared the site, they closed it off with iron barriers (鐵馬). | "現場由消防員與警方清理後，即用鐵馬封鎖" (After the firemen and police cleared the scene, it was sealed off with iron barriers) |
+| NPWK19631128 leaf n5, report 龍津道拆危樓 牆壁突然塌下 弄成一死三傷 (特訊, signed 雨), right middle, col. 10 | The dead man was 馬坤, 40. The hurt were 吳強, 39, broken left hand; 陳生, 40, hurt hands and feet; and 張就, 58, hurt head and hands. | "死者馬坤、四十歲；傷者：（一）吳強、卅九歲、斷左手；（二）陳生、四十歲、傷手脚；（三）張就、五十八歲、傷頭及手" (Dead: 馬坤, 40; hurt: (1) 吳強, 39, broken left hand; (2) 陳生, 40, hurt hands and feet; (3) 張就, 58, hurt head and hands) |
+| NPWK19631128 leaf n5, photo caption, right of the report | A photo shows the ruin; its caption says the wall fall on Lung Chun Road, Kowloon Walled City, caused one death and three injuries. | "九龍城砦龍津道塌牆釀成一死三傷（本報攝）" (The wall collapse on Lung Chun Road, Kowloon Walled City, caused one death and three injuries (our photo)) |
 ### lead-l0209-2: 龍津道上拆樓 一死兩傷慘劇 (headline as read from the page image; the archive.org headline list reads 龍津道上拆樓一死兩慘劇)
 
-- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
-- **Date:** 1963-11-27
-- **Kind:** press
-- **Class:** primary (A Hong Kong Chinese evening paper of the time; a report of the same day.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** © publisher; archive.org states no licence
-- **Link:** https://archive.org/details/NPKSE19631127/page/n3
-- **Other links:** https://archive.org/download/NPKSE19631127/NPKSE19631127.pdf, https://archive.org/metadata/NPKSE19631127/metadata/description
-- **Proof that it exists:** Page image of leaf n3 (local news page), right middle: 「龍津道上拆樓」 / 「一死兩傷慘劇」.
-- **What it gives (resolver's note, not checked):** The same-day evening report of the wall collapse during demolition on Lung Chun Road, 27 Nov 1963. It gives one dead and two hurt, against three hurt in 華僑日報 of the next day (the count can have changed).
-- **Lead:** L0209 (cited by gap-street-address-search-9, hk-chinese-press-1947-1984)
-- **Notes:** Leaves n4-n7 of this item are copies of the front page.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Evening News (工商晚報), 「龍津道上拆樓 一死兩傷慘劇」 (本報訊), 27 November 1963; archive.org item NPKSE19631127, leaf n3, https://archive.org/details/NPKSE19631127/page/n3
+- **Class:** primary (A same-day news report (27 Nov 1963); it belongs in primary-sources/.)
+- **Date of the record:** 1963-11-27
+- **Files:**
+  - `lead-l0209-2-n3-f6c63bd5.jpg` (in `local/`, not in git): Page image of leaf n3 of 工商晚報, 27 Nov 1963, with the report of the building collapse at No. 31 Lung Chun Road; https://archive.org/download/NPKSE19631127/page/n3.jpg; 5099542 bytes; SHA-256 `1eb7a9804c717e7648b8026aed9722bb9086fe1e5d9e96711991c47e2f6e11af`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPKSE19631127)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 1, para. 1 | On the morning of 27 Nov 1963 ('this morning') a two-storey building being demolished on Lung Chun Road (龍津道), Kowloon City, fell; one died and two were hurt. | "今晨九龍城龍津道，一拆卸中的兩層樓宇塌下，當場釀成一死兩傷慘劇" (This morning on Lung Chun Road, Kowloon City, a two-storey building under demolition fell, causing one death and two injuries on the spot) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 1, para. 2 | At about 8.30 a.m. the two-storey old sand-brick (沙磚) building at No. 31 Lung Chun Road was being pulled down. The paper thinks it could not stand the shaking and suddenly fell. | "在九龍城龍津道三十一號一座兩層高的沙磚舊樓，當時正進行拆卸" (At No. 31 Lung Chun Road, Kowloon City, a two-storey old sand-brick building was being demolished at the time) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 1 end and tier 2 | Two workers, 李× and 吳×, who were working on the upper floor, fell with the bricks, stones, timber and tiles. 李× was hit by large falling bricks and timber and died of head wounds. (華僑日報 of the next day names the dead man 馬坤.) | "在樓上作拆卸工作的兩名工人李×、吳×，隨磚石木瓦一齊墜下" (The two workers demolishing on the upper floor, 李× and 吳×, fell together with the bricks, stones, timber and tiles) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 2 | 吳× was hit by less material and hurt only in the body and hands. Another worker, 陳生 (40), working downstairs, got away in time and had only light hurts to his hands and feet. | "在樓下工作的另一名工人陳生（四十歲），走避及時，只手脚受輕傷" (Another worker working downstairs, 陳生 (40), dodged in time and only got light injuries to his hands and feet) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 2 | 陳生 said that the owner, 張就, had hired three men from the day before (26 Nov 1963) to pull the building down so that he could rebuild. Each man got $12 a day. (華僑日報 gives $11 a day.) | "上址的業主名張就，昨日起請三人拆卸該樓，準備改建。每人每日工資十二元" (The owner of the address is 張就; from yesterday he hired three men to demolish the building in order to rebuild; each man's daily wage was $12) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 2-3 | They worked one day without trouble; work began at 8 a.m. on 27 Nov, and soon after the accident happened. | "昨天工作一日，平安無事。今晨八時開工未幾，即告發生此一慘劇" (Yesterday they worked one day safely; soon after starting at 8 this morning, this tragedy happened) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 3 | Someone called the police. Fire engines and ambulances came. Superintendent (警司) 司徒志仁 of Kowloon City Police Station led a large squad of police to investigate and questioned the owner. | "九龍城警署警司司徒志仁亦親率大隊警員到場調查，找該座業主問話" (Superintendent 司徒志仁 of Kowloon City police station also personally led a large squad of police to investigate, and questioned the owner) |
+| NPKSE19631127 leaf n3, report 龍津道上拆樓 一死兩傷慘劇 (本報訊), lower middle, tier 3 | The next-door building was the 泰和 cloth factory (泰和布廠). It was not harmed. | "塌樓之隔鄰為泰和布廠，未受牽累，平安無事" (Next to the collapsed building was the 泰和 cloth factory, which was not affected and was safe) |
 ### lead-l0217: 華僑日報 1959-05-02 (headline list line: 龍津後街大藏毒案三人涉嫌還押四天; 第二街地庫)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1959-05-02
-- **Kind:** press
-- **Class:** primary (A court report of the time in a Hong Kong daily newspaper.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19590502
-- **Other links:** https://archive.org/metadata/NPWK19590502/metadata
-- **Proof that it exists:** archive.org metadata: title '華僑日報 1959-05-02', date 19590502, collection china-mail; description line '龍津後街大藏毒案三人涉嫌還押四天'.
-- **What it gives (resolver's note, not checked):** A drug case of May 1959: three suspects remanded for four days over a large store of drugs on 龍津後街, a street of the City; the next line names a basement (地庫) on 第二街, which can be the same story or another one.
-- **Lead:** L0217 (cited by gap-street-address-search-9, hk-chinese-press-1947-1984)
-- **Notes:** Leaf not found; look at the 本港新聞 leaves. Check on the page whether the basement was on 龍津後街 or on 第二街 (the repo now marks the basement on 龍津後街 as INFERRED).
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「龍津後街大藏毒案 三人涉嫌還押四天」 (特訊, signed 恩), 2 May 1959, sheet 2, p. 2 (第二張第二頁, 港聞二); archive.org item NPWK19590502, leaf n5, https://archive.org/details/NPWK19590502/page/n5
+- **Class:** primary (A court report of the time (2 May 1959); it belongs in primary-sources/.)
+- **Date of the record:** 1959-05-02
+- **Files:**
+  - `lead-l0217-n5-ac25dede.jpg` (in `local/`, not in git): Page image of leaf n5 of 華僑日報, 2 May 1959, with the report on the drug case at No. 14 Lung Chun Back Road; https://archive.org/download/NPWK19590502/page/n5.jpg; 5371783 bytes; SHA-256 `05d9465ca6b03356426b6411c004815fc38d8827fe782981963e186dfb313716`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPWK19590502)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 1 | On 29 April 1959 the police raided the second floor (二樓) of No. 14 Lung Chun Back Road (龍津後街) in the City and broke a large drug-store case. They arrested three men. | "四月廿九日，警方在九龍砦城龍津後街，十四號二樓，破獲一宗大藏毒案，拘獲三名疑與案有關男子" (On 29 April the police at No. 14, 2nd floor, Lung Chun Back Road, Kowloon Walled City, broke a big drug-hoarding case and arrested three men suspected of involvement) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 1 | On 1 May 1959 ('yesterday') the three men were brought to the Kowloon Magistracy (九龍裁判署) and charged with possessing and selling drugs. | "昨解九龍裁判署，控以藏毒及販毒罪" (Yesterday they were brought to the Kowloon Magistracy and charged with possessing and trafficking in drugs) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 2 | The first defendant, 楊昌, was 44, a coolie (苦力), and lived at No. 14 Lung Chun Back Road, second floor. | "首被告楊昌、四十四歲、苦力、住龍津後街十四號二樓" (First defendant 楊昌, 44, coolie, living at No. 14 Lung Chun Back Road, 2nd floor) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 2 | The second defendant, 馮偉陶, was 46 and had no occupation. The third, 余錫南, was 37 and had no occupation. Both gave the same address. | "次被告馮偉陶、四十六歲、無職業、住址同上；第三被告余錫南、卅七歲、無職業、住址同上" (Second defendant 馮偉陶, 46, no occupation, same address; third defendant 余錫南, 37, no occupation, same address) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 3, charge (甲) | The first charge: on 29 April 1959, at that address, they held 182.86 grams of heroin and a quantity of barbitone printed as 一磅十三又二分一 (one pound, thirteen and a half; the smaller unit is not printed). | "在上址藏有一八二點八六個格蘭姆海洛英及一磅十三又二分一巴比通" (at the above address held 182.86 grams of heroin and one pound thirteen and a half of barbitone) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, para. 3, charge (乙) | The second charge: at the same time and place they sold heroin and barbitone. | "同時同地，販賣海洛英及巴比通" (At the same time and place, sold heroin and barbitone) |
+| NPWK19590502 leaf n5 (printed 第二張第二頁), report 龍津後街大藏毒案 三人涉嫌還押四天 (特訊, signed 恩), middle right, last para. | The defendants did not have to plead and were remanded for four days. | "被告對控罪無須答辯，還押四天" (The defendants were not required to plead to the charges and were remanded for four days) |
+| NPWK19590502 leaf n5, report 第二街地庫 搜出毒品 三人被控 (特訊), left of the City story | The next story of the page, 第二街地庫 搜出毒品三人被控, is about a basement on Second Street (第二街) in Sai Ying Pun (西營盤), where police found heroin on the same day, 29 April 1959. It is not in the City. | "警方人員在西營盤第二街一地庫中，搜出大小海洛英粉各一包" (Police officers found one large and one small packet of heroin powder in a basement on Second Street, Sai Ying Pun) |
 ### lead-l0218-1: 香港工商日報 1962-09-10 (headline list: 九龍城砦龍城路店戶 限下月中前拆遷)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報)
-- **Date:** 1962-09-10
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time that reports the clearance notice of that week.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19620910
-- **Other links:** https://archive.org/metadata/NPKS19620910/metadata/description
-- **Proof that it exists:** archive.org metadata of NPKS19620910 (title '香港工商日報 1962-09-10'); the description has the headline fragments '九龍城砦龍城路店戶' and '限下月中前拆遷'.
-- **What it gives (resolver's note, not checked):** The second round of Resettlement Department (徙置事務處) clearance notices, September 1962: shops on Lung Shing Road (龍城路) in the City told to move out by the middle of October 1962.
-- **Lead:** L0218 (cited by press-archives-15, hk-chinese-press-1947-1984)
-- **Notes:** Leaf not found; look at the local-news leaves.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 「九龍城砦龍城路店戶 限下月中前拆遷 各地段繼續進行 小型工廠將予徙置，貧苦學生撥入官校攻讀。」 (本報訊), Monday 10 September 1962, p. 6 (第六頁); archive.org item NPKS19620910, leaf n5, https://archive.org/details/NPKS19620910/page/n5
+- **Class:** primary (A news report of the time (10 Sep 1962); it belongs in primary-sources/.)
+- **Date of the record:** 1962-09-10
+- **Files:**
+  - `lead-l0218-1-n5-cf5b3434.jpg` (in `local/`, not in git): Page image of p. 6 (leaf n5) of 香港工商日報, 10 Sep 1962, with the report on the clearance of the Lung Shing Road shops; https://archive.org/download/NPKS19620910/page/n5.jpg; 4855614 bytes; SHA-256 `1fc872e3afafad20ddd2d10923ec02337c2af36a523059dce36b319f17f3b946`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPKS19620910)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, headline and sub-headlines | The headlines say the shops of Lung Shing Road (龍城路) in the City must move out before the middle of the next month, that the other sections will follow, that small factories will be resettled, and that poor pupils will go to government schools. | "九龍城砦龍城路店戶 限下月中前拆遷 各地段繼續進行 小型工廠將予徙置，貧苦學生撥入官校攻讀。" (Shops of Lung Shing Road in Kowloon Walled City must move before the middle of next month; the other sections continue; small factories will be resettled; poor pupils will be placed in government schools) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 1-2 | INFERRED: On 9 September 1962 ('yesterday', in the paper of Monday 10 Sep) the resettlement authorities ordered the shops of Lung Shing Road in the City, the small factories and the schools to move out before 14 October 1962. One character of the street name in the text is unclear; the headline reads 龍城路. | "徙置當局，昨限令九龍城砦龍城□路舖戶、各小型工廠及學校，應於十月十四日前拆遷" (The resettlement authorities yesterday ordered the shops of Lung Shing Road in Kowloon Walled City, the small factories and the schools to move out before 14 October) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 3-4 | An official of the resettlement authorities said that when the clearance of Lung Shing Road was finished, the other sections would follow at once, so that the whole City would become an area of new development. | "一俟龍城路拆遷完竣，當即進行其他地段，務使整個城砦成為新發展之區域" (As soon as the clearance of Lung Shing Road is complete, the other sections will be done at once, so that the whole City becomes a newly developed area) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 5-6 | The official said the authorities would consider suitable resettlement for the small factories and schools that had received clearance notices. | "凡接獲拆遷通知之各小型工廠及學校，有關當局將考慮予以適當徙置" (For all small factories and schools that have received clearance notices, the authorities will consider suitable resettlement) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 6 | Poor pupils would, as far as possible, be placed in the new government primary schools. | "對各貧苦學生，儘可能撥入各新建官立小學就讀" (Poor pupils will, as far as possible, be placed in the newly built government primary schools) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 7 | The resettlement authorities announced that people who met the resettlement rules would be housed in the resettlement blocks of Tung Tau Tsuen (東頭村), 老虎岩 and other places. | "如符合徙置規定者，將分別安置於東頭村、老虎岩等徙置大廈居住" (Those who meet the resettlement rules will be housed in the resettlement blocks at Tung Tau Tsuen, 老虎岩 and others) |
+| NPKS19620910 leaf n5 (printed 第六頁), report 九龍城砦龍城路店戶 限下月中前拆遷 (本報訊), right middle, col. 8 | Residents who had not lived there before March 1962 would have no right to resettlement. | "但凡非本年三月以前居住該地之居民，不得享有上述權利" (But residents who did not live there before March this year will not enjoy the above right) |
+
+- **Leads:**
+  - The clearance notice of the resettlement authorities of 9 Sep 1962 to the Lung Shing Road shops, factories and schools of the City (not held)
 ### lead-l0218-2: 香港工商日報 1962-09-18 (headline list: 九龍城砦內工廠 限下月中前登記)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報)
-- **Date:** 1962-09-18
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 「九龍城砦內工廠 限下月中前登記 居民分別函英殖民部港督及國府 極力反對拆遷謂該區屬中國領土」 (本報特稿, 本報記者唐道一報導), 18 September 1962, p. 5 (第五頁), with a sketch map and two photos; archive.org item NPKS19620918, leaf n4, https://archive.org/details/NPKS19620918/page/n4
+- **Class:** primary (A news feature of the time (18 Sep 1962) on the resettlement clearance of 1962; its narration of the events of the day is primary. Its passages on the past of the City (1949 onward, the 1953 strip shows, the drug years) are background history and kind secondary. It belongs in primary-sources/.)
+- **Date of the record:** 1962-09-18
+- **Files:**
+  - `lead-l0218-2-n4-db0290a3.jpg` (in `local/`, not in git): Page image of p. 5 (leaf n4) of 香港工商日報, 18 Sep 1962, with the feature on the 1962 clearance, the sketch map of the City and photos of the Lung Tsun Free School gate and the big well; https://archive.org/download/NPKS19620918/page/n4.jpg; 5095550 bytes; SHA-256 `4e240b26731f8ca8f59b7188268ce639b11c96a0e85dc3207d74b50c1127725e`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPKS19620918)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md`](../../secondary-sources/hk-chinese-press-1947-1984/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, headline and sub-headlines | The headline says the factories in the City must register before the middle of the next month (October 1962). The sub-headlines say the residents wrote separately to the British Colonial Office, the Governor and the National Government, and firmly opposed the clearance, saying the area is Chinese territory. | "九龍城砦內工廠 限下月中前登記 居民分別函英殖民部港督及國府 極力反對拆遷謂該區屬中國領土" (Factories inside Kowloon Walled City must register before the middle of next month; residents write separately to the British Colonial Office, the Governor and the National Government, firmly oppose the clearance, saying the area is Chinese territory) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 1, para. 1 | INFERRED: The residents of the City had received the second notice of the Resettlement Department (徙置事務處). It ordered the factories in the City to register their equipment before 14 October (1962), so that they could get resettlement. INFERRED: the numeral 二 is read from a worn spot (two strokes are visible); it agrees with the count of two notices since 19 March 1962 in tier 3. | "九龍城砦居民已接獲徙置事務處之第二次通告，限令城砦內工廠於十月十四日以前，將廠內設備登記" (The residents of Kowloon Walled City have received the second notice of the Resettlement Department, ordering the factories in the City to register their equipment before 14 October) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 1, para. 1 | The notice did not give the date of the clearance; it said only that the residents would be told later. | "至於拆遷日期則未有宣佈，僅謂屆時將另行通知" (As for the date of the clearance, none was announced; it only said they would be notified separately at the time) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 1, para. 2-3 | After the Resettlement Department issued its first clearance and resettlement notice on 19 March 1962, the residents formed a joint committee against the clearance (聯合反對拆遷委員會). Residents who had and had not received registration notices were members; all opposed the clearance. | "自本年三月十九日徙置事務處發出第一次拆遷徙置通告後，城砦居民即組織一聯合反對拆遷委員會」" (After the Resettlement Department issued the first clearance-resettlement notice on 19 March this year, the City residents formed a 'Joint Anti-Clearance Committee') |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 1 end and tier 2 | The committee gave two reasons. First, the City is Chinese territory, and Chinese living on Chinese soil cannot be displaced by outsiders. Second, the residents had lived there for generations and had put all their effort and money into their businesses in the City; if their homes were demolished, they would be ruined. | "倘一旦家園被拆，彼等將受破產之苦" (If one day their homes are demolished, they will suffer bankruptcy) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 | The committee was formed by more than a hundred households of the City. It sent the two reasons by letter to the British Secretary of State for the Colonies and to the Governor of Hong Kong (柏立基爵士), and asked them to withdraw the clearance order. | "該由百餘戶城砦居民組成之反對拆遷委員會，曾將上述兩項反對理由分別致函英國殖民地部大臣及香港總督柏立基爵士" (The anti-clearance committee, formed by over a hundred households of City residents, sent the two reasons by letter to the British Secretary of State for the Colonies and to the Governor of Hong Kong, Sir 柏立基) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 | The residents said the Hong Kong Government had never looked after the City. In the past it had neither water nor electricity; only after several rounds of negotiation in recent years did it get an electricity supply. | "就水電兩項設備而言，從前均付缺如，近年來幾經交涉，始獲電流供應" (As for water and electricity, both were formerly lacking; only after several negotiations in recent years was an electricity supply obtained) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 | The Water Works Office does not supply water to an area outside the government's jurisdiction. Thus in September 1962 the City had no mains water and no fire hydrants, and the residents still relied on one big well on Tai Chang Street (大井街) for their drinking water and other water. | "九龍城砦內之居民，仍賴大井街之一口大井供給食水及用水" (The residents of Kowloon Walled City still rely on one big well on Tai Chang Street for their drinking and other water) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 | The residents said that the City's schools, shops, factories, dentists and other trades did not need to register with the Hong Kong Government or take out business registration, and that a radio set needed no licence. | "城砦內之學校、商店、工廠、牙醫……等各種行業，均無須向香港政府註冊或商業登記，即無線電收音機亦無須領有執照" (Schools, shops, factories, dentists and other trades in the City need not register with the Hong Kong Government or take business registration; even radio sets need no licence) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 | The residents said that when they reported a theft or a civil dispute to the police station, the police did not take the complaint. | "當城砦居民發現失竊或民事糾紛而向警署投訴時，均不獲受理" (When City residents found a theft or had a civil dispute and complained to the police station, it was not accepted) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 2 end and tier 3 | In the residents' view the Hong Kong Government had never treated the City land as 'colony'. They held the sudden clearance order to be against international law. The committee's representatives wrote to the Republic of China Government in Taiwan and had received a reply. | "該反對拆遷委員會代表曾呈函台灣中華民國政府，將此事件向政府當局報告，且已獲得複函" (Representatives of the anti-clearance committee wrote to the Republic of China Government in Taiwan, reporting the matter, and have received a reply) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | The reporter found that since 19 March 1962 the Resettlement Department had issued notices twice, both ordering the residents to accept resettlement registration, without a deadline for the clearance. (This agrees with the 'second notice' of the first paragraph.) | "徙置事務處自本年三月十九日至今，曾先後兩次發出通告，均屬限令城砦居民接受徙置登記，並無指明拆遷期限" (Since 19 March this year the Resettlement Department has issued notices twice, both ordering City residents to accept resettlement registration, without stating a clearance deadline) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | The clearance area covered Nos. 2A to 13 Tung Tau Tsuen Road (東頭村道), 15 buildings; Nos. 72 to 85 Lung Chun Road (龍津道), 14 buildings; 63 on Lung Shing Road (龍城路); 8 on 龍城後街; 6 on 龍城路橫巷; and 52 on Kwong Ming Street (光明街). | "計有東頭村道二號A至十三號十五間，龍津道七十二號至八十五號十四間，龍城路六十三間，龍城後街八間，龍城路橫巷六間及光明街五十二間" (In all: Tung Tau Tsuen Road No. 2A to No. 13, 15 buildings; Lung Chun Road Nos. 72 to 85, 14 buildings; Lung Shing Road 63; 龍城後街 8; 龍城路橫巷 6; and Kwong Ming Street 52) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | In all, the clearance area held about 158 buildings and more than 400 households, among them factories, schools, dentists, shops and homes. (The six street counts add up to 158.) | "約共一百五十八間，約四百餘戶（其中包括工廠、學校、牙醫、商店及住戶）" (In all about 158 buildings, about 400-odd households (including factories, schools, dentists, shops and residences)) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | In the half year since March 1962, about ten-odd vegetable growers' households, a few factories and about 100 households had accepted resettlement registration and held white cards (白咭). Most of those not yet registered opposed the clearance. | "已接受徙置登記而領有白咭者，菜主約十餘戶，工廠約數間及住戶約一百戶" (Those who have accepted resettlement registration and hold white cards: vegetable growers about ten-odd households, factories a few, and residents about 100 households) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | The article says that in the past the lack of water made the City unhygienic, and uncontrolled building made the streets very narrow, stuffy and damp; in 1962 this was slowly getting better. | "因為缺乏用水，故衛生環境甚差，又由於建屋不受管制，因此街道甚為狹窄" (Because of the lack of water, hygiene was very poor; and because building was not controlled, the streets were very narrow) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 | When news of the clearance spread, many speculators came and paid high rents for places in the City, hoping to qualify for resettlement when the clearance came. | "不少投機之人都聞風而至，出高價在城砦內租賃地方居住" (Many speculators came at the news, paying high prices to rent places to live in the City) |
+| NPKS19620918 leaf n4 (printed 第五頁), feature 九龍城砦內工廠 限下月中前登記 (本報特稿), lower middle, tier 3 end | INFERRED: The Resettlement Department knew of this. It issued several notices that people who moved into the City after 19 March 1962 would not get the qualification for a resettlement white card, and told them to find other places and move out soon. INFERRED: one worn character after 即無 (it looks like 隨, the same glyph as in 即可□得徙置之資格 in the paragraph before; it is not 權); the sense 'would not get' follows from the context. | "聲明於一九六二年三月十九日以後遷入城砦居住之人士，即無□得徙置白咭之資格" (declared that persons who moved into the City after 19 March 1962 would not get (one worn character) the qualification for a resettlement white card) |
+| NPKS19620918 leaf n4, sketch map (left middle) and its caption | The sketch map of the City (north at the top) marks with a dashed line the area where the Resettlement Department had issued notices: the east part of the City, from Kwong Ming Street (光明街) east to the moat (護城河), between Tung Tau Tsuen Road (東頭村道) on the north and Lung Chun Road (龍津道) on the south. | "九龍城砦簡圖：圖中虛線所圍者，為政府徙置事務處已發出徙置通告之區" (Sketch map of Kowloon Walled City: the area inside the dashed line is where the Government Resettlement Department has issued resettlement notices) |
+| NPKS19620918 leaf n4, sketch map | INFERRED: The map labels the streets Tung Tau Tsuen Road (東頭村道), Sai Shing Road (西城路), Sz Kung Street (社公街), Tai Chang Street (大井街), Lo Yan Street (老人街), 天后廟街, Kwong Ming Street (光明街), Lung Shing Road (龍城路), 龍城路後街, 橫巷, 一巷, 二巷, 三巷, 龍津路 and Lung Chun Road (龍津道). The labels 龍城路後街 and 龍津路 are read from small print (INFERRED). | "東頭村道 … 西城路 … 社公街 … 大井街 … 老人街 … 光明街 … 龍城路" (Tung Tau Tsuen Road … Sai Shing Road … Sz Kung Street … Tai Chang Street … Lo Yan Street … Kwong Ming Street … Lung Shing Road) |
+| NPKS19620918 leaf n4, sketch map | The map places the Tin Hau Temple (天后廟) in the north block between Lo Yan Street and Kwong Ming Street, the Lung Tsun Free School (龍津義學) in the block south of 天后廟街, an old people's home (老人院) at the south end of the block between Tai Chang Street and Lo Yan Street, and the big well (大井) on Tai Chang Street near its south end. | "天后廟 … 龍津義學 … 老人院 … 大井" (Tin Hau Temple … Lung Tsun Free School … old people's home … big well) |
+| NPKS19620918 leaf n4, sketch map, east and west edges | The map shows the moat (護城河) along the east side of the City, Tung Tau Village (東頭村) outside it to the east, and a dashed border on the west marked 英界 (British territory), with 西頭(村) and a place marked 國家片場 beyond it. | "護城河 … 英界" (moat … British territory) |
+| NPKS19620918 leaf n4, photo caption, left middle | INFERRED: A photo caption says the gate tower of the Lung Tsun Free School (龍津義學), 115 years old, has become a dwelling. INFERRED: two characters of the caption (read as 淪為, 'has become') are hard to read. | "已有一百一十五年歷史之龍津義學門樓陳跡，現已淪為民居。（本報記者唐攝）" (The old gate tower of the Lung Tsun Free School, with a history of 115 years, has now become a dwelling. (Photo by our reporter 唐)) |
+| NPKS19620918 leaf n4, photo caption, lower left | A photo caption says the big well is the only well from which the City residents can draw water, and that Tai Chang Street (大井街, 'big well street') takes its name from it. | "城砦居民唯一可以取水的一口大井，大井街亦因此得名（本報記者唐攝）" (The one big well from which the City residents can draw water; Tai Chang Street is named after it (photo by our reporter 唐)) |
+
+- **Leads:**
+  - The letters of the City's 反對拆遷委員會 (1962) to the Secretary of State for the Colonies and to the Governor (not held; can be in the Colonial Office files CO 1030 or the GRS files on the 1962 clearance)
+  - The notices of the Resettlement Department (徙置事務處) to the City residents, 19 March 1962 and the second notice of September 1962 (the feature counts two; not held)
+  - The letter of the committee to the Republic of China Government in Taiwan and its reply, 1962 (not held)
+### lead-l0224: SWEEPING FIRE IN CHINESE CITY / 6,000 Huts Burnt Down (in The Bombay Chronicle, 12 January 1950)
+
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** PTI-Reuter, 'Sweeping Fire In Chinese City: 6,000 Huts Burnt Down' (HONG KONG, Jan. 11), The Bombay Chronicle (Bombay), Thursday 12 January 1950, Vol. XXXVIII No. 9, p. 1, col. 3; archive.org item india.history.resource.13310, leaf n0, https://archive.org/details/india.history.resource.13310
+- **Class:** primary (A wire report of the day of the fire (Reuters, 11 Jan 1950), printed on 12 Jan 1950; it belongs in primary-sources/ (the folder of top-press-en-8, the other printing of the same text).)
+- **Date of the record:** 1950-01-12 (dateline Hong Kong, 11 Jan 1950)
+- **Files:**
+  - `lead-l0224-n0-19b013da.jpg` (in `local/`, not in git): Front-page image of The Bombay Chronicle, 12 Jan 1950, with the Reuters report 'Sweeping Fire In Chinese City'; https://archive.org/download/india.history.resource.13310/page/n0.jpg; 3366702 bytes; SHA-256 `47ed92bee10ef5e1708896f55bbd8959d9c8fd761482bf1975b30d1b5a62c501`; licence: No rights or licenseurl field in the archive.org metadata (collections IndiaHistory, JaiGyan); copyright of the newspaper (https://archive.org/details/india.history.resource.13310)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, dateline | The Indian printing dates the Reuters report 'HONG KONG, Jan. 11' and says the fire was 'today'; thus the fire burned on 11 January 1950. (The Victoria Daily Times copy that the repo holds has no day in its dateline.) | "HONG KONG, Jan. 11, (PTI-Reuter): Fire sweeping through a hutted area on the outskirts of Kowloon today" |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 1 | The fire swept through a hut area on the outskirts of Kowloon and made thousands of poor Chinese homeless. | "made thousands of poor Chinese homeless" |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 2 | Firemen estimated that 6,000 huts were already destroyed and 60,000 people had nowhere to live. (The Victoria Daily Times copy says 'at least 60,000 Chinese'.) | "Firemen estimated that 6,000 huts had already been destroyed leaving 60,000 people with nowhere to live." |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 3 | Many people were hurt, but few died. | "Many people were injured but there were few fatalities." |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 4 | Men of the Royal Air Force and the Army were called out to help fight the fire, which burned near Kai Tak airport. | "British Royal Air Force and Army men were called out to help fight the fire which was raging near to Kaitak airport." |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 5 | The report says the fire destroyed almost all buildings in the old walled city of Kowloon, a small area over which the Chinese had always claimed sovereignty. | "The fire has destroyed almost all buildings in the historical old walled city of Kowloon" |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 6 | All available fire engines in Kowloon went to the fire, and more equipment came by ferry from Hong Kong. | "All available fire engines in modern Kowloon were sent to the fire and other equipment ferried over from Hong Kong." |
+| p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 7 | In the evening a fairly strong wind fanned the flames, which threatened a built-up area. (The Victoria copy adds 'including shops'.) | "Tonight a fairly strong wind was fanning the flames which were threatening a built up area." |
+### lead-l0627: 大公報 1971-04-26: 華革醫療員到城砦免費檢查兒童健康連續進行數天受到街坊歡迎 (OCR of the headline list)
+
+- **Creator:** Ta Kung Pao (大公報), Hong Kong
+- **Date:** 1971-04-26
 - **Kind:** press
-- **Class:** primary (A Hong Kong daily of the time.)
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPTKP19710426
+- **Other links:** https://archive.org/metadata/NPTKP19710426
+- **Proof that it exists:** archive.org metadata: title '大公報 1971-04-26'; description has '華革醫療員到城砦免費檢查兒童健康'
+- **What it gives (resolver's note, not checked):** Free health checks of the City's children by the medical workers of the 華革 clinic over several days in April 1971, welcomed by the kaifong. An early record of the left-wing clinic's work in the City, before the 1977 checks that the repo holds (top-zh-press-33).
+- **Lead:** L0627 (cited by top-zh-press-33, hk-chinese-press-1947-1984)
+- **Notes:** Find the leaf by the page text; 華革 is the name the paper uses (the full name of the body is not in the headline).
+
+### lead-l0642: 工商晚報 1972-12-27: 九龍城砦多層樓宇 圖則未經批准 據說有些樓宇並未打樁 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
+- **Date:** 1972-12-27
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
 - **Value:** medium
 - **Language:** zh
 - **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19620918
-- **Other links:** https://archive.org/metadata/NPKS19620918/metadata/description
-- **Proof that it exists:** archive.org metadata of NPKS19620918 (title '香港工商日報 1962-09-18'); the description has the headline fragments '九龍城砦內工廠' and '限下月中前登記'.
-- **What it gives (resolver's note, not checked):** Factories inside the City told to register (for the clearance) by the middle of October 1962; it can give the number and kind of the factories of 1962.
-- **Lead:** L0218 (cited by press-archives-15, hk-chinese-press-1947-1984)
-- **Notes:** Leaf not found. INFERRED: the registration is part of the same clearance; check on the page.
-
-### lead-l0224: SWEEPING FIRE IN CHINESE CITY / 6,000 Huts Burnt Down (in The Bombay Chronicle, 12 January 1950)
-
-- **Creator:** Reuters; The Bombay Chronicle (Bombay)
-- **Date:** 1950-01-12
-- **Kind:** press
-- **Class:** primary (A wire report of the time, printed two days after the fire.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights field (collections IndiaHistory, JaiGyan)
-- **Link:** https://archive.org/details/india.history.resource.13310
-- **Other links:** https://archive.org/download/india.history.resource.13310/13310_djvu.txt
-- **Proof that it exists:** archive.org title 'The Bombay Chronicle, 12 January 1950'; OCR: 'Fire sweeping through a hutted area on the outskirts of Kowloon to- day made thousands of poor Chinese homeless.'
-- **What it gives (resolver's note, not checked):** The Reuters report of the squatter fire of January 1950 on the edge of Kowloon City: about 6,000 huts burnt and 60,000 people homeless (firemen's estimate). It is a second printing of the Reuters text that the repo holds (top-press-en-8).
-- **Lead:** L0224 (cited by top-press-en-8, hk-chinese-press-1947-1984)
-- **Notes:** Same folder as the citing item top-press-en-8. Use it only to compare the wording of the Reuters text.
+- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPKSE19721227
+- **Other links:** https://archive.org/metadata/NPKSE19721227
+- **Proof that it exists:** archive.org metadata: title '工商晚報 1972-12-27 (The Kung Sheung Evening News)'; description has '九龍城破多層樓宇' (OCR)
+- **What it gives (resolver's note, not checked):** The report of 27 Dec 1972 that the City's new multi-storey buildings had no approved plans and that some had no piles: the start of the high-rise building of the 1970s and its risks. The next day's follow-up (held) says the government would not act.
+- **Lead:** L0642 (cited by zh-press-22, hk-chinese-press-1947-1984)
+- **Notes:** Pair with gap-builders-demolition-park-1 (28 Dec 1972).

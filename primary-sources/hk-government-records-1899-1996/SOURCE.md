@@ -726,3 +726,20 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** Item 48 'Survey of the New Territory': the survey staff of 1903 (1 inspector, 24 surveyors, 32 Indian chain-men, about 45 Chinese coolies, per Gwulo) and the 557 sheets at 32 inches to the mile of the survey that drew the Walled City in 1903; it can say where the sheets were kept.
 - **Lead:** L0465 (cited by maps-15, maps-and-aerial-photos-1889-1994)
 - **Notes:** Find item 48 in the 46 images (use the IIIF image API, full/1000,/0/default.jpg). Earlier history (1903).
+
+### lead-l0807: No. 420. Notices (Extension to the Chinese Christian Cemetery, New Kowloon Inland Lot No. 5), The Hongkong Government Gazette, September 12, 1919, p. 390
+
+- **Creator:** Hong Kong Government (A. G. M. Fletcher, Colonial Secretary)
+- **Date:** 1919-09-12
+- **Kind:** document
+- **Class:** primary (A government notice published at the time of the decision.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Libraries (HKGRO): 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'; the Gazette is a Hong Kong Government publication of 1919
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/5425t418r
+- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/images/31984z87j/full/full/0/default.jpg, https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/5425t418r
+- **Proof that it exists:** Page header 'THE HONGKONG GOVERNMENT GAZETTE, SEPTEMBER 12, 1919', p. 390; 'No. 420.—It is hereby notified that the Governor-in-Council has under section 90 of the Public Health and Buildings Ordinance, 1903, appointed the area ... for Chinese Christians'.
+- **What it gives (resolver's note, not checked):** The 1919 extension of the Chinese Christian Cemetery next to NKIL 5 in the upper Kowloon City: the sides of the area (140/135, 387, 210, 290/120 ft) and its size, about 57,585 sq ft. It is about the surroundings, not the City.
+- **Lead:** L0807 (cited by citations-19, scholarship-land-and-planning-1992-2026)
+- **Notes:** The page image is the IIIF canvas of the catalog record; the catalog page shows no viewer without JavaScript.

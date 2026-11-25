@@ -72,3 +72,26 @@ shows is the reader's reading of it.
 | comment 20 (13 Nov 2010) | INFERRED: An anonymous commenter says that she visited the City once with a guide and that it smelled very bad. The comment cannot be checked. The commenter says: 「一回行ったことあるんだけど」 (I went there once). Anonymous first-hand testimony, retrospective (2010). | "一回行ったことあるんだけど 滅茶苦茶 臭かった！" (I went there once, and it stank terribly!) |
 | comment 26 ('よしを', 14 Nov 2010) | INFERRED: An anonymous commenter says that he was in the City at this time, that it had more order than it seemed, and that it was isolated and surprisingly comfortable. The comment cannot be checked. The commenter says: 「俺もこの時期にここにいた。」 (I was here at this time too). Anonymous first-hand testimony, retrospective (2010). | "混沌としているようだが 意外と秩序？はあったぞ。" (It seems chaotic, but there was surprisingly some order.) |
 | comment 29 (19 Jun 2011) | INFERRED: An anonymous commenter says that the City was very dirty but public order was not bad. The comment cannot be checked. The commenter says: 「俺もちょい訳ありでいたという。」 (I too was there, for my own reasons). The commenter adds that the food was dirty and bad. Anonymous first-hand testimony, retrospective (2011). | "最高に汚かったけど、治安は悪くなかった。" (It was extremely dirty, but public order was not bad.) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0811: EP277(陳欣健#1)陳欣健任職警隊11年/ 第一份差事乃駐守九龍城寨 / 他如何評價電影 / 佈景欠了什麼？
+
+- **Creator:** 文雋 講呢啲 講嗰啲 Man's Talk (YouTube channel @manstalk), with Philip Chan (陳欣健)
+- **Date:** 2024 (YouTube: '2 years ago' on 2026-11-24)
+- **Kind:** testimony
+- **Class:** retrospective (Retrospective (2024): Philip Chan's own memories of his first police posting at the City, among his 11 years in the police (1960s-1970s), given in an interview about the 2024 film.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** js-only
+- **Licence:** Standard YouTube licence (no reuse licence stated)
+- **Link:** https://www.youtube.com/watch?v=Z1pUdyGLG_Y
+- **Other links:** https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=Z1pUdyGLG_Y&format=json
+- **Proof that it exists:** YouTube search result and oEmbed: title 'EP277(陳欣健#1)陳欣健任職警隊11年/ 第一份差事乃駐守九龍城寨 / 他如何評價電影 / 佈景欠了什麼？', author_name '文雋 講呢啲 講嗰啲 Man's Talk', 21 minutes.
+- **What it gives (resolver's note, not checked):** A former police inspector's first-hand account of policing the City (his first posting), of the 'three-no-control' place, and his view of the set of the 2024 film. Cantonese speech, about 21 minutes; it needs listening, not reading.
+- **Lead:** L0811 (cited by citations-19, scholarship-land-and-planning-1992-2026)
+- **Notes:** Look for part 2 (陳欣健#2) on the same channel. Facts on the 1960s-70s police, not 1986; the repo already has his HKFA oral history (top-depictions-6).

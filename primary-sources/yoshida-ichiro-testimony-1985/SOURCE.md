@@ -117,3 +117,26 @@ testimony given later: tag its facts "retrospective (year)".
   - Part 1 of the same Daily Shincho feature (item ja-6 in the repo).
   - The gallery 【写真18枚】「建物のすぐ脇を飛行機が…」吉田さんが住んでいた80年代の九龍城砦 現在との比較も: 18 photos, most credited to Yoshida; the captions of photos 5 to 19 are on page 3.
   - The Japanese book 『九龍城探訪』, which Yoshida supervised (named on page 1).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0717: 《香港の魔窟・九龍城砦に住んだ日本人》… 写真一覧 (photo list of 17 images)
+
+- **Creator:** NEWSNEWS Post Seven, Shogakukan (ポストセブン); photographers not named
+- **Date:** page 2025-09-06; photos undated
+- **Kind:** photo
+- **Class:** primary (INFERRED: photos made inside the City before the clearance (about 1985-1993); the captions are written by the 2025 editors (secondary) and the source of the photos is not named.)
+- **Value:** low
+- **Language:** ja
+- **Access:** open
+- **Licence:** © Shogakukan Inc.; '掲載の記事・写真・イラスト等のすべてのコンテンツの無断複写・転載を禁じます。'
+- **Link:** https://www.news-postseven.com/archives/20250906_2060258.html?IMAGE=1&PAGE=1-17
+- **Other links:** https://www.news-postseven.com/archives/20250906_2060258.html
+- **Proof that it exists:** Page title '《香港の魔窟・九龍城砦に住んだ日本人》アヘン密売、老いた売春婦、違法賭博…｜NEWSポストセブン'; caption 2 '下水管が壊れて汚水が上からたれていた', caption 7 '内部は巨大な迷路のよう'
+- **What it gives (resolver's note, not checked):** 17 photos of the City with short captions: a broken sewer pipe dripping waste water, the maze of the interior, tangled electric wiring, residents walking barefoot on a wet lane, food factories (sweets, dim sum), illegal clinics and eateries. Undated and uncredited.
+- **Lead:** L0717 (cited by ja-3, yoshida-ichiro-testimony-1985)
+- **Notes:** Check each image before use: some can be agency or stock photos, not Yoshida's. If none is Yoshida's, the item belongs with the press photos instead.

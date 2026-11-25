@@ -802,3 +802,53 @@ Not read yet.
   - Wah Kiu Yat Po (華僑日報), 「文廊」 column, 1993: the first printing of 也斯's essay 〈九龍城寨：我們的空間〉
   - The installation exhibition 「城寨城債」 in the theatre of the City Contemporary Dance Company (城市當代舞蹈團), with objects taken from the sealed City (about 1992-1993; date not given)
   - 也斯, 〈城寨風情〉, in 《遊離的詩》 (Oxford University Press (牛津大學出版社), 1995): print only (named in plan.json)
+
+### lead-l0654: 《九龍城寨之圍城》導演鄭保瑞專訪｜城寨既是瀟灑也是面臨消失
+
+- **Creator:** Nic Wong (text), Kit Chan (photo), JET Magazine (Hong Kong)
+- **Date:** 2024-04-27
+- **Kind:** article
+- **Class:** secondary (A 2024 magazine interview in which the film director relays what former residents told him: second-hand testimony.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** no licence in the article text; site footer links to a copyright notice (not read); all rights reserved (INFERRED)
+- **Link:** https://jetmagazine.com.hk/walled-in-soi-cheung-interview-2024/
+- **Proof that it exists:** Page title '《九龍城寨之圍城》導演鄭保瑞專訪｜城寨既是瀟灑也是面臨消失 - JET Magazine'; first sentence '《九龍城寨》拍成電影，尋尋覓覓之下，落在出爐金像獎最佳導演鄭保瑞的手上…'
+- **What it gives (resolver's note, not checked):** Former residents' view of the City in the 1980s as the director heard it: a place to catch one's breath (抖啖氣) and leave once one had made money; they wanted it cleared because it was dirty and did not want their children to live there. No facts on water, rooms or trades.
+- **Lead:** L0654 (cited by zh-testimony-14, press-and-web-features-1990-2026); also L0657
+- **Notes:** 林家棟 introduced the director to the old neighbours (林家棟 '就在那裡長大').
+
+### lead-l0892: 九龍城寨‧多圖｜同你講故！「三不管」係都巿傳說？ 「街喉」係特色街景？城寨居民識飛簷走壁？
+
+- **Creator:** Sing Tao Daily (星島日報) / Sing Tao Headline (星島頭條), no byline
+- **Date:** 2024-05-05
+- **Kind:** article
+- **Class:** secondary (A later explainer (2024) that retells the City's history and life from City of Darkness and other later works.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** (c) Sing Tao News Corporation; no reuse licence stated
+- **Link:** https://www.stheadline.com/realtime/article/1996881/
+- **Other links:** https://std.stheadline.com/realtime/article/1996881/
+- **Proof that it exists:** Headline 「九龍城寨‧多圖｜同你講故！「三不管」係都巿傳說？…」; first sentence 「港產片《九龍城寨之圍城》上演，令網民熱議當時九龍城寨生活及歷史。」
+- **What it gives (resolver's note, not checked):** A general retelling: the 1987 census of about 33,000 residents, the street taps (「城寨四周每隔一段距離，設有「街喉」，供居民取水和洗滌。」), unlicensed dentists, lifts in only three buildings, police patrols (after City of Darkness) and the forced clearance with over 100 police.
+- **Lead:** L0892 (cited by zh-testimony-15, retrospective-testimony-web)
+- **Notes:** The image that zh-testimony-15 reuses ('原圖：星島日報') is the article's lead image; its date and photographer are not stated.
+
+### lead-l1053: 曾獲補償金禁申公屋 劏房翁申覆核
+
+- **Creator:** Oriental Daily News (東方日報), 【本報訊】 (staff report)
+- **Date:** 2023-07-11
+- **Kind:** press
+- **Class:** secondary (A 2023 news report on a court filing about the clearance compensation of the early 1990s; for the City it is a later account with no first-hand words.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence line seen in the fetched HTML; © on.cc / Oriental Daily News assumed (all rights reserved). No noai mark.
+- **Link:** https://orientaldaily.on.cc/content/%E8%A6%81%E8%81%9E%E6%B8%AF%E8%81%9E/odn-20230711-0711_00176_204/%E6%9B%BE%E7%8D%B2%E8%A3%9C%E5%84%9F%E9%87%91%E7%A6%81%E7%94%B3%E5%85%AC%E5%B1%8B--%E5%8A%8F%E6%88%BF%E7%BF%81%E7%94%B3%E8%A6%86%E6%A0%B8
+- **Other links:** https://orientaldaily.on.cc/section/news/20230711
+- **Proof that it exists:** Page title '曾獲補償金禁申公屋 劏房翁申覆核 - 東方日報'; text begins '【本報訊】曾於九龍城寨置業獲發補償金的七旬劏房戶，上周五入稟高院申請司法覆核'.
+- **What it gives (resolver's note, not checked):** The 2023 judicial review: a former owner of property in the City, now in his seventies and living in a subdivided flat, challenged the Housing Authority rule that bars people who took City clearance compensation and arranged their own housing from public housing. Nothing on the City before 1993 beyond the fact of the compensation.
+- **Lead:** L1053 (cited by zh-testimony-8, retrospective-testimony-web)
+- **Notes:** Add as a note to zh-testimony-8 (same case) rather than as a new item. The court file (High Court, judicial review, filed about 7 July 2023) can be found on the Judiciary's sites if the case went to a hearing (not searched).

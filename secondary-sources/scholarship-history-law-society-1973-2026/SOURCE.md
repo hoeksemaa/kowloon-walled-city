@@ -924,3 +924,20 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** The Qing garrison history before the walls: a watchpost 九龍墪台 of 30 guards in 1668, the Kowloon guard-station 九龍汛 of 10 men from 1682 to 1811, the Kowloon Fort 九龍砲台 of 1810 with 48 men, and the building of the Walled City 九龍寨城 in 1847, with notes to Qing sources.
 - **Lead:** L1121 (cited by studies-20, scholarship-history-law-society-1973-2026)
 - **Notes:** Printed pp. 139-141 = canvases 171-173 of the volume (Notes and Queries). Siu's two later notes, 'More about the Kowloon Walled City' (JHKBRAS 26: 265-266) and 'The cannon in the Kowloon Walled City' (JHKBRAS 27: 279-280), are probably in the same HKU series (vol. 27 is record rx919b522, which the repo already uses for lead-l0516) (INFERRED, not opened).
+
+### lead-l1064: What Was the Plan for the Original Qing Kowloon Walled City? Some Thoughts Provoked by Original Data and Traditional Measurements
+
+- **Creator:** Stephen N. G. Davies
+- **Date:** 2025-12
+- **Kind:** article
+- **Class:** secondary (A 2025 research paper that interprets Qing memoranda, 19th-century photos and early 20th-century survey sheets.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** 'All rights reserved. No part of this Journal may be reproduced or transmitted in any form or by any means without the permission of the Hong Kong Institute of Surveyors.' Copyright © 2025 The Hong Kong Institute of Surveyors. No noai mark seen.
+- **Link:** https://web.archive.org/web/20260528025145/https://www.hkis.org.hk/archive/materials/category/SBE-2025-V34_Issue-2_R15_Final.pdf
+- **Other links:** https://www.hkis.org.hk/archive/materials/category/SBE-2025-V34_Issue-2_R15_Final.pdf
+- **Proof that it exists:** PDF cover 'ISSN 1816-9554 Vol. 34 Issue 2 December 2025 THE HONG KONG INSTITUTE OF SURVEYORS'; contents 'Research Paper: What Was the Plan for the Original Qing Kowloon Walled City? ... By Stephen N.G. Davies 8-26'; running foot 'Surveying and Built Environment Vol 34(2), December 2025, 8-26'.
+- **What it gives (resolver's note, not checked):** The planned and the as-built size of the Qing walled city (1846-47) in metric units, the orientation of the walls and gates, a reconstruction of the planned walls on Pak Hok Shan, and the layout of the buildings inside the walls about 1870-1903 in three groups with different orientations (from Thomson's 1870 photo and the 1905 SD Sheet 4). Early history only.
+- **Lead:** L1064 (cited by china-27, scholarship-history-law-society-1973-2026)
+- **Notes:** The live HKIS URL gave HTTP 403 to my tool (no login seen; INFERRED a block of scripts), thus use the Wayback copy. The PDF is the whole issue (306 pp.); the paper is on pp. 8-26. The first page prints the author's e-mail address: do not copy it. Fig. 12 (p. 24) is the only open view of the 1905 SD Sheet 4 (lead L1063).

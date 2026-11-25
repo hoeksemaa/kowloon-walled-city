@@ -2668,7 +2668,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 27 of 27 items read by the reading of the source search of 2026-11.
+- **Status:** read: 28 of 28 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0280-1: 城寨清拆賠償起爭議 商戶不提供營業單據 地政署官員指為問題癥結
@@ -3344,17 +3344,19 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0263: 華僑日報 1988-11-12 (headline list: 房屋署完成五千五戶審核工作 調查城寨居民安置資格 超逾一成住戶混水摸魚)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1988-11-12
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily report of the time on the clearance.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement; archive.org metadata has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPWK19881112
-- **Other links:** https://archive.org/metadata/NPWK19881112/metadata/description
-- **Proof that it exists:** archive.org metadata of NPWK19881112; description headline '房屋署完成五千五戶審核工作調查城寨居民安置資格超逾一成住戶混水摸魚'.
-- **What it gives (resolver's note, not checked):** The Housing Department's (房屋署) check of the rehousing eligibility of the City's households, November 1988: about 5,500 households checked, and more than one tenth found to have given false data. It gives a second account to compare with the held 大公報 report.
-- **Lead:** L0263 (cited by gap-clearance-from-below-12, hk-chinese-press-1985-1993)
-- **Notes:** Leaf not found; look at the 本港新聞 leaves. The OCR headline list has no spaces; the breaks in the title are mine.
+- **Status:** Read on 2026-11-24; a checker checked a sample of the facts on 2026-11-24.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 「房屋署完成五千五戶審核工作 調查城寨居民安置資格 超逾一成住戶混水摸魚」 (特訊), Saturday 12 November 1988, p. (5), 本港新聞; archive.org item NPWK19881112, leaf n4, https://archive.org/details/NPWK19881112/page/n4
+- **Class:** primary (A news report of the time (12 Nov 1988) on the Housing Department's figures; it belongs in primary-sources/.)
+- **Date of the record:** 1988-11-12
+- **Files:**
+  - `lead-l0263-n4-cbba9f62.jpg` (in `local/`, not in git): Page image of p. (5) (leaf n4) of 華僑日報, 12 Nov 1988, with the report on the Housing Department's eligibility check in the City; https://archive.org/download/NPWK19881112/page/n4.jpg; 4898306 bytes; SHA-256 `31e8c004747714c0418a58c410af6eeed15fdf0b36e6e4a71505dd04981631c2`; licence: No licence statement; archive.org metadata has no rights or licenseurl field (collection china-mail); copyright of the newspaper (https://archive.org/details/NPWK19881112)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, headline | The headline says the Housing Department (房屋署) finished checking 5,500 households for rehousing eligibility in the City, and that more than one tenth of the households were 'fishing in troubled waters' (claiming falsely). | "房屋署完成五千五戶審核工作 調查城寨居民安置資格 超逾一成住戶混水摸魚" (Housing Department completes checks of 5,500 households; investigating the rehousing eligibility of City residents; over one tenth of households fishing in troubled waters) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 1, para. 1 | By November 1988 the Housing Department had checked the rehousing eligibility of more than 5,000 households of the City. More than one tenth were not genuine City residents, and the department said they would not be rehoused. | "已完成審查九龍城寨五千多戶居民的安置資格，發現超過一成並非真正的城寨居民" (has completed checking the rehousing eligibility of more than 5,000 households of Kowloon Walled City, and found more than one tenth are not genuine City residents) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 1 | In the first two phases of the clearance, of the 5,500 households affected, the department found 640 that were not genuine residents and refused them rehousing. | "在頭兩期城寨清拆行動，房屋署在受影響的五千五百戶當中，發現有六百四十戶並非是真正居民" (In the first two phases of the City clearance, among the 5,500 affected households, the Housing Department found 640 were not genuine residents) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 1 | Of the households of the last two phases (the report says 5,000 in one place and 5,500 in another), about 3,000 had returns that were in doubt and needed more checks. | "目前餘下兩期的五千戶當中，有三千戶資格可疑，需要進一步調查" (Among the 5,000 households of the two remaining phases, 3,000 have doubtful eligibility and need further investigation) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 1 | The Assistant Director of Housing, 劉寶志, said the department suspected that some residents had another home. If a check found that a household had somewhere to live, it would not get public housing. | "房署懷疑居民可能有另外居所，故要仔細調查" (The Housing Department suspects residents may have other homes, so it must investigate carefully) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 2 | 劉寶志 said that of the more than 13,000 households of the City, about 10 per cent did not qualify. He did not think this high, because other clearances had the same. (The 大公報 report of the same day gives more than 11,000 households.) | "在一萬三千多戶九龍城寨居民中，大概有百分之十是不符合資格" (Among the more than 13,000 households of Kowloon Walled City, about 10 per cent do not qualify) |
+| NPWK19881112 leaf n4 (printed page (5), 本港新聞), report 房屋署完成五千五戶審核工作 (特訊), upper middle, tier 2 | 劉寶志 said the shortage of labour would not delay the moving of the City residents into new flats, because the department had reserved the flats early; almost all the rehousing was ready. | "房署一早預留所需單位作為安居的行動，目前所有安居差不多做妥" (The Housing Department reserved the needed flats early for the rehousing; at present nearly all the rehousing is done) |

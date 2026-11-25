@@ -622,3 +622,42 @@ Not read yet.
 - **Leads:**
   - The Anglican poorhouse 廣蔭院 in the Yamen and the old people's centre that used it until the clearance: the records of the Anglican Church (see church-and-mission-histories/).
   - The photos of the City and the drawings and essays on the making of the park that are shown in the Yamen (The Yamen page, para 4).
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0896: Category:Remnants of the South Gate of Kowloon Walled City
+
+- **Creator:** Wikimedia Commons users (Mk2010, 姒姓賢宧, OhanaUnited, Clément Bucco-Lechat, Hzam M93008 TWCKMMOU and others)
+- **Date:** 2005-2025 (photos)
+- **Kind:** photo
+- **Class:** secondary (Photos of the park and its excavated remains, taken 2005-2025, long after the clearance; they show what survives, not the City of 1986.)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** Per file: CC BY-SA 3.0 (most), CC BY-SA 2.5, CC BY-SA 4.0, CC BY 3.0, CC BY 4.0, CC0 (as each file page states)
+- **Link:** https://commons.wikimedia.org/wiki/Category:Remnants_of_the_South_Gate_of_Kowloon_Walled_City
+- **Other links:** https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Remnants_of_the_South_Gate_of_Kowloon_Walled_City&cmlimit=100&format=json, https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg, https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_stone_plaques_and_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg
+- **Proof that it exists:** API list of 30 File members, first 'File:2024-12-28 Remnants of the South Gate of Kowloon Walled City.jpg', last 'File:南門懷古.jpg'.
+- **What it gives (resolver's note, not checked):** Photos of the excavated South Gate, its two stone plaques (南門 and 九龍寨城) and the concrete foundations of post-war buildings left in the park, 2005-2025. They can place the gate and the bases of the buildings that stood at the south edge of the City.
+- **Lead:** L0896 (cited by commons-30, park-and-heritage-2006-2026)
+- **Notes:** The repo holds commons-30 already. Catalogue only the files that add something (the two 'foundations of post-war buildings' files first); the plaque photos repeat each other.
+
+### lead-l0931: Heritage Impact Assessment for the Lung Tsun Stone Bridge Preservation Corridor (file HIA_Report_LTSBPC.pdf)
+
+- **Creator:** INFERRED: consultant for the Civil Engineering and Development Department (Kowloon Development Office); filed with the Antiquities Advisory Board (古物諮詢委員會)
+- **Date:** INFERRED: about 2013-2017 (not seen)
+- **Kind:** document
+- **Class:** secondary (A heritage assessment written for the preservation corridor after 2010; its history of Kowloon City is a later compilation.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** Hong Kong Government (AAB) web file; no reuse licence seen
+- **Link:** https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf
+- **Proof that it exists:** WebFetch: 'maxContentLength size of 10485760 exceeded' (the file exists and is over 10 MB; first page not seen).
+- **What it gives (resolver's note, not checked):** INFERRED from the title and the citing report: the history and archaeology of the Lung Tsun Stone Bridge (1873-1875) and the old Kowloon City shore, with old maps and photos, and the plan of the corridor. Little or nothing on the City of the 1980s.
+- **Lead:** L0931 (cited by top-hkgov-18, park-and-heritage-2006-2026)
+- **Notes:** Download it outside the fetch tool (over 10 MB); look first for the old maps and photos of the City's approach (pier, road, gate).

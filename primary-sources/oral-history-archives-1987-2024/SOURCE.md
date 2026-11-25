@@ -81,3 +81,26 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Hong Kong Memory audio record TW-HCT-LIFE-002 (27m11s, interview of 28 May 2010) and highlight TW-HCT-HLT-001 (53s): Hui Chor Tin's own words on Lung Tsun Free School and Sheng Xian Pavilion (升仙亭); audio, not held.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0613: Hui Chor Tin, 'School Memories: Lung Tsun Free School and the primary ran by the Hong Kong Bar-Bending Workers Union' (TW-HCT-LIFE-002, 27m11s) and highlight 'Impressions on Lung Tsun Free School in Kowloon Walled City and the surroundings' (TW-HCT-HLT-001, 53s)
+
+- **Creator:** Hui Chor Tin (許佐田), interviewee; Hong Kong Memory Project (香港記憶計劃)
+- **Date:** 2010-05-28
+- **Kind:** testimony
+- **Class:** retrospective (His own spoken memories, given in 2010, of his schooling inside the City in about 1954-1956.)
+- **Value:** low
+- **Language:** zh
+- **Access:** js-only
+- **Licence:** Copyright owned by Hong Kong Memory Project (as the record states)
+- **Link:** https://www.hkmemory.hk/collections/oral_history/All_Items_OH/oha_24/records/index.html
+- **Other links:** https://www.hkmemory.hk/collections/oral_history/All_Items_OH/oha_24/highlight/index.html, https://www.hkmemory.hk/api/drmapi/client-api/hkmp/catalogueRecord/allInfoList?channelId=718&languageEnum=EN
+- **Proof that it exists:** Highlights tab: 'Impressions on Lung Tsun Free School in Kowloon Walled City and the surroundings', Duration 53s, Language Cantonese, Material Type Audio, Accession No. TW-HCT-HLT-001
+- **What it gives (resolver's note, not checked):** His own Cantonese account (not the archive's summary) of Lung Tsun Free School (龍津義學) near Sheng Xian Pavilion (升仙亭), the narrow streets and the dead addicts outside the pavilion, mid-1950s. The 27-minute record can hold more detail than the written summary that the repo holds.
+- **Lead:** L0613 (cited by top-top-en-testimony-19, oral-history-archives-1987-2024)
+- **Notes:** Listening needs the page player; a transcript must be made by ear (Cantonese).
