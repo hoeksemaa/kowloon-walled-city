@@ -90,3 +90,25 @@ See the leads under each item in the primary folder.
 | web page | The page says that he left the City because the government blocked a drain to drive out the people of the wooden houses in front of the City; the sewage pooled and he could not get to school. He had lived there five months. | "九龍城の前に建つ木造住居の住民を追い出すために、政府が排水溝を堰き止め、それによって汚水が溜まって通学が困難になった" (to drive out the residents of the wooden houses in front of the Walled City, the government dammed the drain, so sewage pooled and getting to school became difficult) |
 | web page; compare ja-5 web p. 3, photo 9 | INFERRED: The blocked drain and the wooden houses fit the caption of ja-5 (photo 9), which says that another slum stood across Lung Chun Road (龍津道) until 1985. Thus the clearance of that area in 1985 can be the cause of his leaving. | "九龍城の前に建つ木造住居" (the wooden houses standing in front of the Walled City) |
 | web page; compare ja-3 web p. 2 | INFERRED: This summary gives a rent of about 10,000 yen, but ja-3 gives about 15,000 yen; both give a stay of about five months. | "4分の1（家賃1万円）" (a quarter (rent 10,000 yen)) |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0718: 《香港の魔窟・九龍城砦に住んだ日本人》 photo gallery (17 images)
+
+- **Creator:** NEWSNEWS Post Seven, Shogakukan (ポストセブン); photos not credited (page 2 of the article says Yoshida took them at the time)
+- **Date:** 2025-09-06 (gallery); photos mid-1980s by the article
+- **Kind:** photo
+- **Class:** secondary (The captions are editorial lines written in 2025 and the images have no credit. If a check shows that an image is Yoshida's photo of 1985-87, that image is primary.)
+- **Value:** low
+- **Language:** ja
+- **Access:** open
+- **Licence:** (c) Shogakukan; no reuse licence stated
+- **Link:** https://www.news-postseven.com/archives/20250906_2060258.html?IMAGE=1&PAGE=1
+- **Proof that it exists:** Page title 《香港の魔窟・九龍城砦に住んだ日本人》アヘン密売、老いた売春婦、違法賭博…; 17 numbered images, caption 1 '下水管が壊れて汚水が上からたれていた'.
+- **What it gives (resolver's note, not checked):** Images of the inside of the City (wiring, wet streets, barefoot residents, food factories) with short 2025 captions. The captions add almost no facts beyond the article text that ja-3 already has.
+- **Lead:** L0718 (cited by ja-3, yoshida-ichiro-testimony-1985)
+- **Notes:** Check each image by eye for its source before use; the page states no credit.

@@ -63,3 +63,26 @@ testimony given later: tag its facts "retrospective (year)".
 - **Leads:**
   - A full-text search of the archive.org collection 'war-cry' (the Canadian War Cry, many issues) for 'walled city' and 'Kowloon': not done in this session.
   - The citation of the US Jaycees (National Junior Chamber of Commerce), Ten Outstanding Young Men of 1962, on James Turpin.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0577: The Rotarian, February 1964, p. 39 (Rotary news item datelined HONG KONG: dedication day for a floating medical clinic donated by Rotary Club of Kowloon West)
+
+- **Creator:** Rotary International (The Rotarian)
+- **Date:** 1964-02
+- **Kind:** press
+- **Class:** primary (A news item of the time (early 1964) on the dedication of the floating clinic.)
+- **Value:** low
+- **Language:** en
+- **Access:** js-only
+- **Licence:** Google Books full view; (c) Rotary International; no reuse licence stated
+- **Link:** https://books.google.com/books?id=vzMEAAAAMBAJ&pg=PA39
+- **Other links:** https://books.google.com/books?id=oCfEuUhmb4gC&pg=PA212
+- **Proof that it exists:** Google Books feed entry: title 'The Rotarian', date 1964-02, id vzMEAAAAMBAJ, pg=PA39, viewability view_all_pages; snippet 'floating medical clinic donated by Rotary Club of Kowloon West.'
+- **What it gives (resolver's note, not checked):** The date, cost (HK$80,000) and the Rotary people at the dedication of the Kowloon West floating clinic boat of Project Concern, c. 1963-64. It is about the harbour clinic, not the City clinic.
+- **Lead:** L0577 (cited by missions-10, project-concern-1962-1970)
+- **Notes:** The page view needs JavaScript; the Google Books feed (https://www.google.com/books/feeds/volumes?q=...) gives snippets without it.

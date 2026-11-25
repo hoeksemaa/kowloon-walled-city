@@ -1188,3 +1188,87 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** A Kung Sheung report on Kowloon City of 19-20 Jan 1948, the days of the Po On magistrate's visit (headline not known).
 - **Lead:** L0475 (cited by press-archives-10, hk-english-press-1899-1994)
 - **Notes:** Headline and leaf not known; check the page images.
+
+### lead-l0686: 香港工商日報 1936-10-08: 九龍城居民 縣案 凌士芬昨赴港 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1936-10-08
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19361008
+- **Other links:** https://archive.org/metadata/NPKS19361008
+- **Proof that it exists:** archive.org metadata description: '九龍城居民 / 縣案 / 凌士芬昨赴港 / 昨午乘中午快車赴港'
+- **What it gives (resolver's note, not checked):** 凌士芬, secretary of the Foreign Ministry commissioner 刁作謙, leaves Canton for Hong Kong on 7 Oct 1936 to look into the case of the City residents ordered to move: the start of the Chinese inquiry that the held reports of 23 Oct-29 Nov 1936 continue.
+- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
+- **Notes:** 1936 history, low weight. Read with top-china-23.
+
+### lead-l0686-2: 香港工商日報 1936-10-13: 九龍城居民 民政廳 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1936-10-13
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19361013
+- **Other links:** https://archive.org/metadata/NPKS19361013
+- **Proof that it exists:** archive.org metadata description: '九龍城居民 / 民政廳 / 縣地方自治組織'
+- **What it gives (resolver's note, not checked):** INFERRED: a report of 13 Oct 1936 on the City residents and the Guangdong Department of Civil Affairs (民政廳), perhaps their petition to the province. The keywords alone do not show the content.
+- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
+- **Notes:** Check the leaf; the keyword 縣地方自治組織 can belong to another article.
+
+### lead-l0686-3: 香港工商日報 1936-10-18: 新界南約理民府 九龍城 鄉戶 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1936-10-18
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19361018
+- **Other links:** https://archive.org/metadata/NPKS19361018
+- **Proof that it exists:** archive.org metadata description: '祖居 / 新界南約理民府 / 九龍城 / 鄉戶'
+- **What it gives (resolver's note, not checked):** INFERRED: the New Territories South District Office (新界南約理民府) and the village households of the City with their ancestral homes (祖居), October 1936: probably the report of the third removal notice that the 23 Oct 1936 article calls 前報.
+- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
+
+### lead-l0686-4: 香港工商日報 1936-10-07: 九龍城 居民 (OCR of the headline list)
+
+- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
+- **Date:** 1936-10-07
+- **Kind:** press
+- **Class:** primary (A Hong Kong newspaper report of the time.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
+- **Link:** https://archive.org/details/NPKS19361007
+- **Other links:** https://archive.org/metadata/NPKS19361007
+- **Proof that it exists:** archive.org metadata description: '天氣 / 九龍城 / 居民 / 省會遷桂林'
+- **What it gives (resolver's note, not checked):** INFERRED: a report of 7 Oct 1936 that names the City residents; the keywords do not show whether it is on the removal case.
+- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
+- **Notes:** Weakest of the four; check before collecting.
+
+### lead-l1143: 中央日報 1948.01.17, 第二版: 「廣州英領館被焚後 張院長指令各省市」 (中央社南京十六日電), with 「抗議九龍事件 粵各界示威遊行 穗英總領館被焚毀」
+
+- **Creator:** Central Daily News (中央日報), Nanjing; dispatches of Central News Agency (中央社)
+- **Date:** 1948-01-17
+- **Kind:** press
+- **Class:** primary (A newspaper of the day after the events; it prints the order of the Executive Yuan of 16 Jan 1948 in the words of the government news agency.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence statement; the archive.org item has no rights or licenseurl field (uploader gives none).
+- **Link:** https://archive.org/details/zhongyang-ribao-1948.01.17/page/n1
+- **Other links:** https://archive.org/download/zhongyang-ribao-1948.01.17/1948.01.17.pdf
+- **Proof that it exists:** Page image leaf n1, masthead 中央日報, date 中華民國三十七年一月十七日 星期六; boxed headline 「廣州英領館被焚後 張院長指令各省市」; text begins 「【中央社南京十六日電】今日行政院張院長接獲廣州沙面英國領館及英商太古洋行被焚之報告後」.
+- **What it gives (resolver's note, not checked):** The Chinese Government's answer of 16 Jan 1948 to the burning of the British Consulate-General at Canton: the Executive Yuan's order to punish the rioters and protect British consulates and nationals, with regret for the incident; and the Canton march against the 'Kowloon affair' (the January 1948 evictions from the City). Early history (1948).
+- **Lead:** L1143 (cited by ukhansard-3, uk-hansard-1899-1994)
+- **Notes:** The OCR of the item is useless: read the page image (3052x4166 px) with crops. The text names only 張院長; do not add a personal name unless the page gives it.

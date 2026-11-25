@@ -1293,3 +1293,70 @@ full pages before you use these facts.
 - **What it gives (resolver's note, not checked):** Retrospective (2014) memories of the two photographers, 1986-1992: Girard's first sight of the City at night in 1986; Lambot's way of working; the hostility before Jan 1987 and the easier access after; doors open to shops, clinics, schools and factories; the alleys busy but never crowded; flats without windows; a Cathay Pacific stewardess walking in with a suitcase. Six photo captions credit Greg Girard.
 - **Lead:** L0116 (cited by top-blocked-a-7, documentaries-video-and-podcasts-1990-2026)
 - **Notes:** The live page has a Cloudflare check; fetch the Wayback snapshot. The repo already holds the photos (mplus-girard-lambot-photos) and the panel report (top-blocked-a-7).
+
+### lead-l1003: 夏銘記：做生意唔呃秤 真魚蛋唔彈牙
+
+- **Creator:** 陳嘉文 (text and some photos); photos also by 劉焌陶; Pentoy (評台)
+- **Date:** 2015-09-07
+- **Kind:** article
+- **Class:** retrospective (A reporter's interview of 2015 with the owner 夏藩銘, who lived and worked in the City from 1969; his own words are retrospective (2015) testimony, and the reporter's narration is secondary.)
+- **Value:** medium
+- **Language:** zh
+- **Access:** open
+- **Licence:** No licence on the article; the archived page footer reads '明報網站 · 版權所有 · 不得轉載Copyright © 2018 Mingpao.com All rights reserved.' (INFERRED: from an embedded Ming Pao block); all rights reserved
+- **Link:** https://web.archive.org/web/20181128075143/https://www.pentoy.hk/%e5%a4%8f%e9%8a%98%e8%a8%98%ef%bc%9a%e5%81%9a%e7%94%9f%e6%84%8f%e5%94%94%e5%91%83%e7%a7%a4-%e7%9c%9f%e9%ad%9a%e8%9b%8b%e5%94%94%e5%bd%88%e7%89%99/
+- **Other links:** https://www.pentoy.hk/?p=38215, https://web.archive.org/web/20181127151942/https://www.pentoy.hk/?p=38215
+- **Proof that it exists:** Wayback page title '夏銘記：做生意唔呃秤 真魚蛋唔彈牙 – 評台'; date line '2015年9月7日（星期一）'; paragraph: '翌年，他們搬到九龍城寨，繼續在家做墨魚丸'.
+- **What it gives (resolver's note, not checked):** The owner's account of a family food workshop: from 1969 the couple made cuttlefish balls (墨魚丸) at home in the City and delivered them to Chiu Chow restaurants (金都, 興隆樓, 昇平, 潮州城), before the move to a shop in 1983. It also gives the craft of hand-made fish balls and the wage of a fish-ball master (HK$300 a day, period not exact).
+- **Lead:** L1003 (cited by repo-audit-13, reference-and-web-histories)
+- **Notes:** The live domain is parked; use the Wayback copy (the fetch tool cannot reach web.archive.org; a browser can). The repo holds other 夏銘記 pieces (repo-audit-11, repo-audit-12 in retrospective-testimony-web).
+
+### lead-l1017: My Kowloon Walled City Story (blog): the 24 posts other than 'My Friend Ah Meng', 2014-2016
+
+- **Creator:** KowloonWalledCityBoy (the blog author; identified in the repo as Albert Ng Kam-po, see repo-audit-15 and repo-audit-16)
+- **Date:** 2014-04-11 to 2016-11-21
+- **Kind:** testimony
+- **Class:** retrospective (First-hand memories of a resident who lived in the City from the mid-1970s to the early 1990s, written in 2014-2016: retrospective (2014-2016). The two 'Brief History' posts and 'Where is the Kowloon Walled City?' are the author's own summaries of history (secondary).)
+- **Value:** high
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence or copyright notice on the blog (WordPress.com default: all rights reserved by the author)
+- **Link:** https://mykowloonwalledcityblog.wordpress.com/
+- **Other links:** https://public-api.wordpress.com/rest/v1.1/sites/mykowloonwalledcityblog.wordpress.com/posts/?number=100&fields=title,date,URL,categories, https://mykowloonwalledcityblog.wordpress.com/2014/04/26/our-50-sq-ft-home/, https://mykowloonwalledcityblog.wordpress.com/2014/06/17/home-in-sin-city/, https://mykowloonwalledcityblog.wordpress.com/2014/06/24/where-my-water/, https://mykowloonwalledcityblog.wordpress.com/2014/05/09/father-on-the-10th-floor/, https://mykowloonwalledcityblog.wordpress.com/2015/06/07/the-men-in-white-underpants/, https://mykowloonwalledcityblog.wordpress.com/2015/05/28/teacher-i-dont-want-to-jump/, https://mykowloonwalledcityblog.wordpress.com/2015/07/03/the-bloody-tuberculosis/, https://mykowloonwalledcityblog.wordpress.com/2015/07/10/tuberculosis-the-treatment-part-1-of-2/, https://mykowloonwalledcityblog.wordpress.com/2015/07/17/tuberculosis-the-treatment-part-2-of-2/, https://mykowloonwalledcityblog.wordpress.com/2015/01/08/plain-white-porridge/, https://mykowloonwalledcityblog.wordpress.com/2015/05/03/the-fear-factors/, https://mykowloonwalledcityblog.wordpress.com/2015/04/30/scratching-the-airplanes-bellies/, https://mykowloonwalledcityblog.wordpress.com/2016/11/21/strip-shows-70s/
+- **Proof that it exists:** Blog title 'My Kowloon Walled City Story', tagline 'Memories from my home.'; API 'found: 25'; post 'Where's My Water?' (2014-06-24) begins 'Just like any other building in town, there was a water tank on the roof of Sam Fat building.'
+- **What it gives (resolver's note, not checked):** A resident's memories of the late 1970s and 1980s: the family's 50 sq ft home and the building (Sam Fat building, 7th or 8th floor, no lift), the paid water supply and the public water stations, tuberculosis and its treatment, primary school, the father's work, food (潮州白粥), neighbours, rooftop play under the aircraft, strip shows of the 1970s and Chinese New Year.
+- **Lead:** L1017 (cited by repo-audit-15, retrospective-testimony-web)
+- **Notes:** Read the daily-life posts first (Home, Livelihood, Primary School, Tuberculosis, Neighbor); the two 'Brief History' posts and 'Where is the Kowloon Walled City?' are secondary. Posts with titles: Our 50 sq. ft. home; Home in the Sin City; Where's My Water?; Father on the 10th Floor; Where is Dad?; The Road to Kowloon City; From the River to the Road; The Small Feet Old Lady from Qingdao (青岛); Tung Tau Estate Block 23; Happy Childhood - Fish Bones; Chasing the Belly of an Airplane; The Rooftop Fear Factors; Teacher, I Don't Want to Jump !; The Men in White Underpants; Baby in a Cartoon Box; The Bloody Tuberculosis; Tuberculosis: The Treatment (Parts 1-2); Happy Chinese New Year; The Plain White Porridge (潮州白粥); Strip Shows in the 70s; A Brief History (Parts I-II); Where is the Kowloon Walled City?
+
+### lead-l1026: Cities of Darkness: A conversation with Greg Girard
+
+- **Creator:** Kevin WY Lee (interviewer), Invisible Photographer Asia (IPA); interviewee Greg Girard
+- **Date:** 2017-01-26
+- **Kind:** testimony
+- **Class:** retrospective (First-hand testimony of the photographer about his own work in the City (1985-1992), given in 2017: retrospective (2017).)
+- **Value:** medium
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence or copyright statement in the captured HTML; no open licence (all rights reserved by default). No noai mark seen.
+- **Link:** https://web.archive.org/web/20190102073646/http://invisiblephotographer.asia/2017/01/26/conversation-greggirard/
+- **Other links:** https://invisiblephotographer.asia/2017/01/26/conversation-greggirard/, https://web.archive.org/web/20170129160254/http://invisiblephotographer.asia/2017/01/26/conversation-greggirard/
+- **Proof that it exists:** Page title 'Cities of Darkness: A conversation with Greg Girard - Invisible Photographer Asia (IPA)'; byline 'Kevin WY Lee 26/01/2017 Invisible Interviews'.
+- **What it gives (resolver's note, not checked):** Girard's memories: his first sight of the City one night in 1985 near Kai Tak; how he got access by asking shop and factory owners to photograph their premises and giving them prints; homes were the hardest to enter; many workspaces were also homes, with children doing homework in the evening on the family's noodle-making counter. Retrospective (2017).
+- **Lead:** L1026 (cited by top-citations-6, retrospective-testimony-web)
+- **Notes:** The live site refused connection on 2026-11-24; use the Wayback capture. The page has Girard's photos of the City (his copyright): keep only the text. Girard says 1985 here for his first sight; the Asia Society interview (lead-l0116) says 1986: note the difference.
+
+### lead-l1039: 圖輯｜九龍城重建｜56年鐵皮檔 街坊鞋店憂「冇得留低」
+
+- **Creator:** The Collective (集誌社); photos Nasha Chan, text 陳萃屏
+- **Date:** 2023-05-30
+- **Kind:** photo
+- **Class:** retrospective (A 2023 photo report with the shop owner's own memories of the shop opposite the City since 1967: retrospective (2023); the reporter's narration and the 2023 photos are secondary.)
+- **Value:** low
+- **Language:** zh
+- **Access:** open
+- **Licence:** Footer link to a 版權聲明 (copyright statement); no open licence seen; no noai mark seen.
+- **Link:** https://thecollectivehk.com/%e5%9c%96%e8%bc%af%ef%bd%9c%e4%b9%9d%e9%be%8d%e5%9f%8e%e9%87%8d%e5%bb%ba%ef%bd%9c%e7%94%b1%e9%90%b5%e7%9a%ae%e6%aa%94%e5%88%b0%e5%9c%b0%e8%88%96%e3%80%80%e8%a1%97%e5%9d%8a%e9%9e%8b%e5%ba%97%e6%86%82/
+- **Proof that it exists:** Page title 「圖輯｜九龍城重建｜56年鐵皮檔 街坊鞋店憂「冇得留低」」, 集誌社, 2023-05-30 9:00 am, tags 九龍城重建, 圖輯, 街坊鞋店.
+- **What it gives (resolver's note, not checked):** The shoe shop 崇麟鞋業 opposite the City: begun in 1967 by a Chiu Chow (潮州) father as a sheet-iron stall for household goods, later traditional shoes; at its peak three shops; the City stood opposite before the demolition. Mostly 2023 redevelopment news.
+- **Lead:** L1039 (cited by top-zh-testimony-6, retrospective-testimony-web)
+- **Notes:** Add it to top-zh-testimony-6 as a third text on the same shop, not as a new item. The URL slug (由鐵皮檔到地舖) differs from the title.

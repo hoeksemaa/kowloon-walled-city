@@ -138,3 +138,26 @@ See the leads under each item in the primary folder.
 |---|---|---|
 | LC-PMR05-6588, notes | The six slides were probably used by the architect Paul Rudolph for a lecture called 'Housing Lecture'. | "Slide likely used by Paul Rudolph for a lecture entitled "Housing Lecture."" |
 | LC-PMR05-6588, notes | The slide mounts read 'Robertlam Color Duplicate': the slides are duplicates, and the photographer is not named. | "On slide mount: Robertlam Color Duplicate." |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l1163: Intelligence Report Annex: Ten Years of Chinese Communist Foreign Policy, Section II: South and Southeast Asia (CIA-RDP85T00875R001000010027-7), chapter IV 'Imperialist Colonies: Macao and Hong Kong'
+
+- **Creator:** Central Intelligence Agency, Directorate of Intelligence
+- **Date:** 1968-04-09
+- **Kind:** document
+- **Class:** secondary (A CIA analytic history written in 1968 about the events of 1963 (five years later), drawn from other reports; for the City it is a later account, not a record of the time.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
+- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp85t00875r001000010027-7
+- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp85t00875r001000010027-7/cia-rdp85t00875r001000010027-7.pdf, https://www.cia.gov/readingroom/document/cia-rdp85t00875r001000010027-7
+- **Proof that it exists:** archive.org title 'CIA Reading Room cia-rdp85t00875r001000010027-7: Intelligence Report Annex, Ten Years of Chinese Communist Foreign Policy, Section II: South and Southeast Asia', date 1968-04-09; OCR p. 156: 'they impelled the authorities to postpone a planned urban renewal project in the Kowloon walled city'.
+- **What it gives (resolver's note, not checked):** The CIA analysis of the 1963 dispute: the Hong Kong slum clearance plan for the City (publicized from March 1961) was postponed under Chinese pressure in January 1963; Peking chose the City because it gave the appearance of a legal claim; Peking had not disputed a 1959 court ruling on police jurisdiction there. Early history (1959-1963).
+- **Lead:** L1163 (cited by usgov-4, us-government-records-1948-1994)
+- **Notes:** The City passages are on pp. 156-158 (with footnotes); p. 157 also cites a People's Daily editorial of 8 March 1963 on Kowloon. The 1959 court ruling is probably the case that the repo knows from the press (INFERRED).

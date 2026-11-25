@@ -194,3 +194,20 @@ f23bb2c768a9274f216efcb292f7541bfa19efe3d600212d0a5010250be4fefa  mplus-20184_00
 | Photo 'Water Standpipe #2' (1024 x 768 px web copy) | The standpipe is in a covered space at street level, in front of a shop closed by a folding metal gate. Red plastic crates and a blue bucket stand at the left, and the floor is of small mosaic tiles. | "Water Standpipe #2" |
 | Photo 'Water Standpipe #2' (1024 x 768 px web copy), sign upper right | INFERRED: A vertical sign on the right names a furniture and decoration company, 和興. Below 和興 the words 裝飾 and 傢俬 stand side by side, then 公司, so the order of the full name is not certain (INFERRED). | "和興 / 裝飾 · 傢俬 / 公司" (和興 / decoration · furniture / company) |
 | Photo 'Water Standpipe #2' (1024 x 768 px web copy), wall at right | INFERRED: Red painted characters on the wall make a notice signed by the Urban Services Department (市政總署). The visible words include 不適 and 飲用, so it probably warns that the water is not fit to drink (INFERRED; part of the notice is hidden). | "市政總署示" (Notice of the Urban Services Department) |
+
+### lead-l0607: 'City of Darkness' by Greg Girard & Ian Lambot (Blue Lotus Gallery show page, 8 Nov - 8 Dec 2019): 24 uncaptioned photo screenshots (12 Girard, 12 Lambot)
+
+- **Creator:** Greg Girard and Ian Lambot (photos); Blue Lotus Gallery (page)
+- **Date:** photos c. 1986-1992; page 2019
+- **Kind:** photo
+- **Class:** primary (Photos made inside the City in the late 1980s by the two photographers; the page is a later gallery page without captions.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** no licence on the page; '© Greg Girard' on the main image; all rights reserved by the photographers (INFERRED)
+- **Link:** https://bluelotus-gallery.com/new-events/2019/11/8/city-of-darkness-by-greg-girard-amp-ian-lambot
+- **Other links:** https://images.squarespace-cdn.com/content/v1/54e9ba8ae4b0165bdcf59868/1569473472175-QHNRHETJ1GBWEI3O3Y74/Screen+Shot+2019-09-26+at+12.48.55+PM.png, https://images.squarespace-cdn.com/content/v1/54e9ba8ae4b0165bdcf59868/1569473828235-JKJMJPZT4AVVCLG3BKB8/Screen+Shot+2019-09-26+at+12.54.07+PM.png
+- **Proof that it exists:** Page title "'City of Darkness' by Greg Girard & Ian Lambot — Blue Lotus Gallery"; first sentence "Blue Lotus Gallery is proud to present 'City of Darkness'"
+- **What it gives (resolver's note, not checked):** 24 more views of the City's streets, rooms, roofs and people by Girard and Lambot (late 1980s), without captions or dates. Useful for the look of rooms and lanes if they are not already in the repo's M+ and City of Darkness sets.
+- **Lead:** L0607 (cited by top-blocked-c-8, mplus-girard-lambot-photos)
+- **Notes:** Girard screenshots: 12.46.14 to 12.48.55 PM; Lambot screenshots: 12.52.22 to 12.54.07 PM (file names on the page). Probably duplicates of photos in the repo; check before collecting.

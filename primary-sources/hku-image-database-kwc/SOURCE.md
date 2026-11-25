@@ -157,3 +157,43 @@ testimony given later: tag its facts "retrospective (year)".
 
 - **Leads:**
   - Frank Fischbeck Collection, 'Hong Kong: the Great City' in the HKU repository (5 hits for 九龍寨城), not opened.
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
+  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
+  lead. It is not a checked fact.
+
+### lead-l0699: HKU Libraries Digital Repository, Hong Kong Image Database: search results for 九龍寨城 and for Heather Coulson aerial photos of Kowloon
+
+- **Creator:** The University of Hong Kong Libraries
+- **Date:** photos c. 1898-1990s; catalogue 2026
+- **Kind:** catalogue
+- **Class:** secondary (A library catalogue search (finding aid) made later; the photos it lists are primary.)
+- **Value:** low
+- **Language:** en
+- **Access:** open
+- **Licence:** HKU Digital Repository: no item licence shown on the records seen earlier; page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.'
+- **Link:** https://digitalrepository.lib.hku.hk/catalog?q=Coulson+%E4%B9%9D%E9%BE%8D%E5%AF%A8%E5%9F%8E&per_page=100
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog?q=Coulson+aerial+Kowloon&per_page=100, https://digitalrepository.lib.hku.hk/catalog?q=Coulson+%E4%B9%9D%E9%BE%8D%E5%9F%8E&per_page=100
+- **Proof that it exists:** Search page '1 - 10 of 34' for Coulson 九龍寨城; first hit 'x920pm18c 九龍寨城 Kowloon Walled City (羅香林教授所藏照片)'; '1 - 10 of 556' for Coulson aerial Kowloon, first hit 'h415vv23c 九龍灣高空圖 Aerial view of Kowloon Bay, c. 1970s, Heather Coulson Photo Collection'
+- **What it gives (resolver's note, not checked):** A list of HKU photo records of the City and of Kowloon not yet in the repo, among them Heather Coulson's aerials of c. 1970s; some aerials of Kowloon Bay or Kowloon Tong can show the City at their edge (INFERRED, not checked).
+- **Lead:** L0699 (cited by institutions-2, hku-image-database-kwc)
+- **Notes:** Page through the results and keep only records not already in hku-image-database-kwc; check each aerial for the City before collecting.
+
+### lead-l1094: 舊九龍城內之民居 Dwellings in Kowloon Walled City (2z114c17c, 1933-07-22); 九龍寨城惜字亭舊觀 Sik Tsz Ting in old Kowloon Walled City (jh34bh97c, 1935-08-04); 九龍城龍津義塾照壁 Screen wall of Lung Tsun Free School, Kowloon City (t148p8995, 1936-06-20)
+
+- **Creator:** Zhu, Weide (朱維德), photographer; Photographs from Lo Hsiang-lin Collection (羅香林教授所藏照片), HKU Libraries
+- **Date:** 1933-07-22; 1935-08-04; 1936-06-20
+- **Kind:** photo
+- **Class:** primary (Photos taken in the City in 1933-36, records of the time; the HKU captions are later (secondary).)
+- **Value:** low
+- **Language:** other
+- **Access:** open
+- **Licence:** Page footer 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' with links to Copyright & Disclaimer and Take Down Policy; no open licence named.
+- **Link:** https://digitalrepository.lib.hku.hk/catalog/2z114c17c
+- **Other links:** https://digitalrepository.lib.hku.hk/catalog/jh34bh97c, https://digitalrepository.lib.hku.hk/catalog/t148p8995
+- **Proof that it exists:** Record titles 'Dwellings in Kowloon Walled City 舊九龍城內之民居' (date_ssi 1933-07-22, shelf LHL_B1_F003_017), 'Sik Tsz Ting in old Kowloon Walled City 九龍寨城惜字亭舊觀' (1935-08-04, LHL_B1_F002_009), 'Screen wall of Lung Tsun Free School, Kowloon City 九龍城龍津義塾照壁' (1936-06-20, LHL_B1_F003_014); creator 朱維德 / Zhu, Weide.
+- **What it gives (resolver's note, not checked):** Three 1930s views inside the walls: the tiled-roof brick village houses built side by side, with a rocky hill behind (1933); the Sik Tsz Ting (惜字亭), the pavilion for burning written paper (1935); the screen wall opposite the entrance of the Lung Tsun Free School with the words 「海濱鄒魯」 (1936). Each print has its back scanned too (stamp and date). Early history (1930s).
+- **Lead:** L1094 (cited by hkgov-26, scholarship-history-law-society-1973-2026)
+- **Notes:** Image file-set ids: 2z114c17c: 8049pt370, gt54tc35q; jh34bh97c: xd07qk13x, vx0284252; t148p8995: 4m90nj589, fj23dt804 (IIIF images at /service/api/iiif/images/<id>/full/full/0/default.jpg, the pattern of institutions-16; not tested). Add them to institutions-16 (same photographer and collection) or catalogue them as one new item. 1n79qw939 is held already.
