@@ -851,7 +851,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 16 of 16 items read by the reading of the source search of 2026-11.
+- **Status:** read: 21 of 21 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1158: 许家屯走访九龙城
@@ -1300,84 +1300,121 @@ testimony given later: tag its facts "retrospective (year)".
 | NPKS19480120, leaf n4, left block of the report (items on the arrest and on 朱沛唐) | On the appeal of the two jailed representatives, 李惠珍 said that the residents' association was in charge. The residents' representatives said that the barrister 陳丕士 was already working on it with the Special Commissioner 郭德華. | "但居民代表則謂，已由陳丕士大律師與外交特派員郭德華聯絡進行" (but the residents' representatives said that the barrister 陳丕士 was already in touch with the Special Commissioner for Foreign Affairs 郭德華 and proceeding) |
 ### lead-l0686: 香港工商日報 1936-10-08: 九龍城居民 縣案 凌士芬昨赴港 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1936-10-08
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19361008
-- **Other links:** https://archive.org/metadata/NPKS19361008
-- **Proof that it exists:** archive.org metadata description: '九龍城居民 / 縣案 / 凌士芬昨赴港 / 昨午乘中午快車赴港'
-- **What it gives (resolver's note, not checked):** 凌士芬, secretary of the Foreign Ministry commissioner 刁作謙, leaves Canton for Hong Kong on 7 Oct 1936 to look into the case of the City residents ordered to move: the start of the Chinese inquiry that the held reports of 23 Oct-29 Nov 1936 continue.
-- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
-- **Notes:** 1936 history, low weight. Read with top-china-23.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 8 Oct 1936, sheet 2 p. 3 (第二張第三版), '九龍城居民請解決懸案 凌士芬昨赴港調查 昨午乘中午快車赴港' (廣州專訊), archive.org item NPKS19361008, leaf n6, https://archive.org/details/NPKS19361008/page/n6
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) with an interview of 凌士芬 on 7 Oct 1936.)
+- **Date of the record:** 1936-10-08
+- **Files:**
+  - `lead-l0686-n6-bb809bcc.jpg` (in `local/`, not in git): Page image of leaf n6 (第二張第三版) of the Kung Sheung Daily News of 8 Oct 1936, with the article on the City residents' case (top right); https://archive.org/download/NPKS19361008/page/n6.jpg; 5844293 bytes; SHA-256 `fb351f399f86411e7221e29ca4cbbda6b0af856af9083069634431e608660934`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright status of the 1936 newspaper not stated (https://archive.org/details/NPKS19361008)
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6, col. 1-2 | The report says that the deadline was set at the end of 1936: all residents of the place were to move out by then. | "期限至本年年底止、所有該處居民一律遷出" (the deadline is the end of this year; all residents of the place are to move out without exception) |
+| leaf n6, col. 4-6 | The report says that the residents petitioned the new Special Commissioner for Foreign Affairs again, because the deadline had come and they would be homeless if they moved out. | "且限期已屆、一旦遷出、難免流離、此二百餘居民、棲身無所" (moreover the deadline has arrived; once they move out they cannot avoid being scattered; these 200-odd residents will have nowhere to live) |
+| leaf n6, col. 5-6 | The report gives the number of the residents concerned as more than 200. | "此二百餘居民" (these 200-odd residents) |
+| leaf n6, col. 6-8 | The report says that Commissioner 刁 (刁特派員) sent 凌士芬, a secretary of his office, to Hong Kong to investigate first, because he had only just taken office and did not know the details. | "本人涖任伊始、多有未明之處、特決定派該署秘書凌士芬赴港、先行調查" (as I have just taken office, many points are not clear to me; I have specially decided to send the office secretary 凌士芬 to Hong Kong to investigate first) |
+| leaf n6, col. 8 | The report says that 凌士芬 left Canton for Hong Kong on 7 Oct 1936 on the midday Canton-Hong Kong express train. | "已於昨(七)日下午乘省港中午快車赴港" (already left yesterday (the 7th) afternoon on the Canton-Hong Kong midday express to Hong Kong) |
+| leaf n6, col. 9-12 | 凌士芬 told the reporter on the morning of 7 Oct 1936 that his task was to investigate the Kowloon residents' case, that he travelled alone and that he would report back to Canton in one or two days. | "任務為調查九龍居民懸案" (my task is to investigate the unsettled case of the Kowloon residents) |
+| leaf n6, col. 13-14 | INFERRED: The report says that 凌士芬 would reach Hong Kong at about 4 p.m. on 7 Oct 1936, call on the Governor, 郝德傑, and then investigate inside Kowloon. INFERRED: the character before 郝德傑 is blurred; I read it as 督 (Governor), because 郝德傑 is the Chinese name of Sir Andrew Caldecott, Governor in 1936. | "即日下午四時許、即可抵港、謁見港督郝德傑" (he can reach Hong Kong at about 4 p.m. today and call on the Governor Caldecott) |
 ### lead-l0686-2: 香港工商日報 1936-10-13: 九龍城居民 民政廳 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1936-10-13
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19361013
-- **Other links:** https://archive.org/metadata/NPKS19361013
-- **Proof that it exists:** archive.org metadata description: '九龍城居民 / 民政廳 / 縣地方自治組織'
-- **What it gives (resolver's note, not checked):** INFERRED: a report of 13 Oct 1936 on the City residents and the Guangdong Department of Civil Affairs (民政廳), perhaps their petition to the province. The keywords alone do not show the content.
-- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
-- **Notes:** Check the leaf; the keyword 縣地方自治組織 can belong to another article.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 13 Oct 1936, sheet 2 p. 3 (第二張第三版), '刁作謙清理積案 粵省外交事件進行頗為順利 橫琴島廣州灣北海等案在進行中 九龍城居民案調查後第一步交涉' (廣州專訊), archive.org item NPKS19361013, leaf n6, https://archive.org/details/NPKS19361013/page/n6
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) with an interview of 凌士芬 on 12 Oct 1936.)
+- **Date of the record:** 1936-10-13
+- **Files:**
+  - `lead-l0686-2-n6-bb72e609.jpg` (in `local/`, not in git): Page image of leaf n6 (第二張第三版) of the Kung Sheung Daily News of 13 Oct 1936, with the article on the foreign-affairs cases of Guangdong and its section on the City residents (top right); https://archive.org/download/NPKS19361013/page/n6.jpg; 4996584 bytes; SHA-256 `48adb1cb8342be4d2f1a801846409b871d82154a2bd35387d67ef78d51914b0d`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright status of the 1936 newspaper not stated (https://archive.org/details/NPKS19361013)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6, headline | The sub-headline says that the first step of negotiation on the City residents' case followed the investigation. | "九龍城居民案調查後第一步交涉" (Kowloon City residents' case: first step of negotiation after the investigation) |
+| leaf n6, City section, col. 2-3 | The report says that the Hong Kong Government had now posted a notice ordering all residents inside the City to move to 狗虱嶺 by the end of this month (October 1936). | "現港政府又佈告限令九龍城內居民于本月底一律遷移于狗虱嶺" (now the Hong Kong Government has again posted a notice ordering the residents inside Kowloon City all to move to 狗虱嶺 by the end of this month) |
+| leaf n6, City section, col. 3-4 | The report says that the residents were alarmed by the notice and appealed to the Chinese government again; the provincial government passed the case to the office of the Liang-Guang Special Commissioner for Foreign Affairs. | "居民因之大起恐慌、又致向政府呼籲" (the residents were greatly alarmed and again appealed to the government) |
+| leaf n6, City section, col. 4-5 | The report says that on 8 Oct 1936 凌士芬 called the men and women of the City together inside the City, talked with them, and asked in detail about the history of the City and of the residents' land and houses. | "凌秘書八日曾在九龍城內召集當地居民男女談話、乘詢九龍城歷史及居民地宅沿革甚詳" (on the 8th Secretary 凌 called together local residents, men and women, inside Kowloon City to talk, and took the occasion to ask in detail about the history of Kowloon City and of the residents' land and houses) |
+| leaf n6, City section, col. 5-6 | The report says that 凌士芬 collected evidence inside the City that the City was not part of the land that Britain leased with Kowloon. | "在九龍城內并搜集多項有力証據、証明英政府租借九龍、九龍城內并非租借地" (inside Kowloon City he also collected much strong evidence proving that, while the British Government leased Kowloon, the inside of Kowloon City is not leased land) |
+| leaf n6, City section, col. 6 | The report says that 凌士芬 also went to look at the place at 狗虱嶺 where the City residents were to be moved. | "凌秘書又曾赴遷移九龍城內居民于狗虱嶺之地方視察" (Secretary 凌 also went to inspect the place at 狗虱嶺 where the Kowloon City residents are to be moved) |
+| leaf n6, City section, col. 7 | The report says that 凌士芬 returned to Canton on the last train on the afternoon of 11 Oct 1936 and reported to Commissioner 刁作謙. | "凌秘書乃于十一日下午乘尾車返省、向刁特派員報告" (Secretary 凌 then took the last train back to Canton on the afternoon of the 11th and reported to Special Commissioner 刁) |
+| leaf n6, City section, col. 8-9 | The report says that 刁作謙 planned a note to the British Consulate-General in Canton, and a report to the Ministry of Foreign Affairs asking it to approach the British Ambassador, so that the Hong Kong Government would withdraw the removal order. | "擬文照會英駐粵總領署、另一面呈報外交部請照會英駐我大使" (draft a note to the British Consulate-General in Canton; on the other side, report to the Ministry of Foreign Affairs to ask it to send a note to the British Ambassador to China) |
+| leaf n6, City section, col. 9-10 | The report gives the three grounds of the Chinese request. First, under the lease treaty the inside of the City was not leased land. | "(一)九龍城內在租借條約上并非租借地" ((1) under the lease treaty the inside of Kowloon City is not leased land) |
+| leaf n6, City section, col. 10 | The second ground: all residents inside the City were poor, and a move would cause them very heavy losses. | "(二)九龍城內居民均屬貧苦、一旦遷徙、損失奇重" ((2) the residents inside Kowloon City are all poor; once they move, their losses will be extremely heavy) |
+| leaf n6, City section, col. 11 | The third ground: 狗虱嶺 was far from the City, and the move would hurt the living of the shoulder-pole hawkers (肩挑小販) among the residents. | "(三)狗虱嶺距離九龍城遠、於肩挑小販生活大受影響" ((3) 狗虱嶺 is far from Kowloon City; the livelihood of shoulder-pole hawkers will be greatly affected) |
+| leaf n6, City section, col. 12-13 | The reporter called on 凌士芬 at the Liang-Guang foreign affairs office on 12 Oct 1936; 凌士芬 said that the account above was broadly correct. | "記者昨(十二)日曾造訪兩廣外交署凌秘書士芬" (yesterday (the 12th) the reporter called on Secretary 凌士芬 of the Liang-Guang foreign affairs office) |
 ### lead-l0686-3: 香港工商日報 1936-10-18: 新界南約理民府 九龍城 鄉戶 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1936-10-18
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19361018
-- **Other links:** https://archive.org/metadata/NPKS19361018
-- **Proof that it exists:** archive.org metadata description: '祖居 / 新界南約理民府 / 九龍城 / 鄉戶'
-- **What it gives (resolver's note, not checked):** INFERRED: the New Territories South District Office (新界南約理民府) and the village households of the City with their ancestral homes (祖居), October 1936: probably the report of the third removal notice that the 23 Oct 1936 article calls 前報.
-- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 18 Oct 1936, sheet 3 p. 1 (第三張第一版, 本埠新聞), '祖居不忍毀 新界南約理民府 限令九龍城內鄉戶遷徙案 鄉民準備再呈外部交涉', archive.org item NPKS19361018, leaf n8, https://archive.org/details/NPKS19361018/page/n8
+- **Class:** primary (A Hong Kong news report of the day, with the reporter's interviews of the villagers' representative 楊偉雄 and of two Hong Kong officials.)
+- **Date of the record:** 1936-10-18
+- **Files:**
+  - `lead-l0686-3-n8-df57402d.jpg` (in `local/`, not in git): Page image of leaf n8 (第三張第一版, 本埠新聞) of the Kung Sheung Daily News of 18 Oct 1936, with the article on the removal order for the village households inside the City (bottom right); https://archive.org/download/NPKS19361018/page/n8.jpg; 5019102 bytes; SHA-256 `0df2a08645ad070aa521a775bed26fade3ea7a06968a08517a3128f75e314486`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright status of the 1936 newspaper not stated (https://archive.org/details/NPKS19361018)
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n8, headline | The headline says that the New Territories South District Office (新界南約理民府) ordered the village households inside the City to move, and that the villagers, who could not bear to destroy their ancestral homes, prepared a new petition to the Chinese Ministry of Foreign Affairs. | "祖居不忍毀 新界南約理民府 限令九龍城內鄉戶遷徙案 鄉民準備再呈外部交涉" (Cannot bear to destroy ancestral homes: the case of the New Territories South District Office ordering the village households inside Kowloon City to move; villagers prepare to petition the Foreign Ministry again) |
+| leaf n8, main text col. 2 | The report says that the old wall of the City still stood in October 1936. | "舊昔之城牆、依然存在也" (the old city wall still exists) |
+| leaf n8, main text col. 2 | The report says that there were about 60 households in the City in October 1936. | "城內民居約有六十戶" (the dwellings inside the city number about sixty households) |
+| leaf n8, main text col. 2-3 | The report says that the households were all poor villagers, whose homes had passed down for generations. | "俱是貧乏鄉民、彼等所有之住戶、乃歷代相傳" (all are poor villagers; the homes they have were handed down through the generations) |
+| leaf n8, main text col. 3-4 | The report says that the villagers numbered several hundred; most men worked outside the City, and most women farmed. | "鄉民數百、男多出外謀生、女多耕種以度日" (the villagers number several hundred; the men mostly go out to make a living, the women mostly farm to get by) |
+| leaf n8, main text col. 11-12 | The report says that the New Territories South District Office now ordered all villagers to move out of the City before 31 December 1936. | "鄉民又奉新界南約理民府命令、限於本年底十二月卅一日以前、須悉數遷出" (the villagers again received an order of the New Territories South District Office that they must all move out before the end of this year, 31 December) |
+| leaf n8, main text col. 12-13 | The report says that the villagers sent their representative, 楊偉雄, to Canton to petition, and that 刁作謙 then sent his secretary 凌士芬 to Hong Kong to find the facts. | "鄉民於是派出代表楊偉雄赴省請願" (the villagers therefore sent a representative, 楊偉雄, to Canton to petition) |
+| leaf n8, section 限令遷徙 補回損失, col. 1-2 | INFERRED: The report says that the District Office summoned the City residents to its office on the 1st day of the 9th lunar month and ordered them to move. INFERRED: in 1936 this lunar date fell in mid-October (about 15-16 Oct 1936), later than the reports of 7-13 Oct 1936 on the same order; the date in the report can be an error, or it can be a second summons. | "於本年舊曆九月初一日票傳九龍城內居民到署、飭令遷徙" (on the 1st day of the 9th month of the old calendar this year it summoned the residents of Kowloon City to its office and ordered them to move) |
+| leaf n8, section 限令遷徙 補回損失, col. 2-3 | The report says that the Hong Kong Government offered to make good the losses, and offered two sites, 狗虱嶺 and 沙田頭, for the villagers to choose from. | "願補回損失、并撥出狗虱嶺與沙田頭兩地段、任由鄉民選擇" (willing to make good the losses, and to allot two lots, 狗虱嶺 and 沙田頭, for the villagers to choose) |
+| leaf n8, section 限令遷徙 補回損失, col. 4-7 | The report gives the payment scheme. The government would value each old house in the City and pay the building cost of a new house in instalments: for a house valued at $1,000, it would pay $200 (20 per cent) first. | "假如值一千元者、該戶願遷往上述兩地、政府首次撥給二百元、即百份之二十" (if it is worth one thousand dollars, and the household is willing to move to one of the two places, the government first pays two hundred dollars, that is twenty per cent) |
+| leaf n8, section 限令遷徙 補回損失, col. 7-9 | The report says that the government would pay another $200 when the walls of the new house were built and the roof was about to go on, and the rest when the house was finished. | "至該屋園牆砌成、行將建築上蓋、則再撥給二百元" (when the walls of the house are built and the roof is about to be put on, another two hundred dollars is paid) |
+| leaf n8, section 鄉民請願 擬呈外部, col. 1-2 | The report says that the villagers at first refused 狗虱嶺 because it was too far from the town; the government then offered 沙田頭 instead. | "其初以狗虱嶺距離城市太遠、表示未能接納、迨後則改撥沙田頭" (at first, because 狗虱嶺 is too far from the town, they said they could not accept; later 沙田頭 was allotted instead) |
+| leaf n8, section 鄉民請願 擬呈外部, col. 2-4 | The report says that some women whose husbands worked overseas wanted the money to build new homes and accepted; others did not want to move, because they did not want to pull down their ancestral halls (祠屋). | "其中有幾婦孺、以其夫謀生於海外、欲得款以建新居表示接納、惟其中有未願遷徙者、其意不願拆毀祠屋" (among them some women, as their husbands make a living overseas, want the money to build new homes and accept; but some do not want to move, as they do not want to pull down their ancestral halls) |
+| leaf n8, section 鄉民請願 擬呈外部, tier 2 col. 1-3 | 楊偉雄 told the reporter that women and children were the majority in the village, and that the villagers could not bear to pull down their ancestral houses. | "鄉中婦孺佔多" (women and children are the majority in the village) |
+| leaf n8, section 鄉民請願 擬呈外部, tier 2 col. 7-8 | 楊偉雄 said that 凌士芬 was himself one of the villagers, and that his father still lived in the City. | "凌秘書亦是鄉中一份鄉民、其父尚居於城內" (Secretary 凌 is also one of the villagers; his father still lives inside the city) |
+| leaf n8, section 鄉民請願 擬呈外部, tier 2 col. 9-12 | 楊偉雄 said that 凌士芬 did not negotiate with the Hong Kong Government on his visit and did not come with Hong Kong officials; he only consulted 楊偉雄 and a few others. | "彼前來調查時、并未與港府提出交涉、亦未有偕同港府公務員前來" (when he came to investigate he did not raise negotiations with the Hong Kong Government, nor did he come together with Hong Kong Government officials) |
+| leaf n8, section 鄉民請願 擬呈外部, tier 2 col. 13-16 | 楊偉雄 said that the villagers, short of time, were drafting a petition to the Ministry of Foreign Affairs in Nanjing. | "現在鄉民以時間匆迫、準備擬就呈文、向南京外交部請命" (now, as time is short, the villagers are preparing to draft a petition to the Foreign Ministry in Nanking) |
+| leaf n8, section 港府否認 在港交涉, col. 1-8 | The Colonial Secretary (輔政司), named 那夫 in the report, told the reporter that he did not know the case well and sent him to the Secretary for Chinese Affairs. | "本人對該事件、未甚清楚、請轉向華民政務司詢問" (I am not very clear about this matter; please ask the Secretary for Chinese Affairs instead) |
+| leaf n8, section 港府否認 在港交涉, tier 3 | The Secretary for Chinese Affairs (華民政務司), named 嘉利 in the report, said that he had not seen the secretary from Canton at his office, and that under international practice the Chinese side had to take the case up with the British Consul in Canton. | "本人未見其前來本署、惟按照國際條例、則須向英駐粵領事提出交涉" (I have not seen him come to my office; but under international rules the matter must be raised with the British Consul in Canton) |
+| leaf n8, tier 3 col. 1-2 | The report says that the Secretary for Chinese Affairs had the Chinese press reports on the case translated for him. | "其時適彼將華報所載關於該事件之消息、命其秘書轉譯" (at that time he had just told his secretary to translate the news on this matter in the Chinese press) |
+
+- **Leads:**
+  - Petition of the City villagers (representative 楊偉雄) to the Ministry of Foreign Affairs in Nanjing, drafted in October 1936 (Kung Sheung Daily News 18 Oct 1936, sheet 3 p. 1)
+  - The reply of the British Minister 藍浦森 to the Chinese Ministry of Foreign Affairs, 1934, that the Hong Kong Government had never forced the City residents to move (cited in Kung Sheung Daily News 18 Oct 1936)
 ### lead-l0686-4: 香港工商日報 1936-10-07: 九龍城 居民 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Daily News (香港工商日報), Hong Kong
-- **Date:** 1936-10-07
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org item has no rights or licenseurl field; copyright of the newspaper
-- **Link:** https://archive.org/details/NPKS19361007
-- **Other links:** https://archive.org/metadata/NPKS19361007
-- **Proof that it exists:** archive.org metadata description: '天氣 / 九龍城 / 居民 / 省會遷桂林'
-- **What it gives (resolver's note, not checked):** INFERRED: a report of 7 Oct 1936 that names the City residents; the keywords do not show whether it is on the removal case.
-- **Lead:** L0686 (cited by top-china-23, china-official-records-1933-1987)
-- **Notes:** Weakest of the four; check before collecting.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 7 Oct 1936, sheet 2 p. 2 (第二張第二版), '九龍城 居民遷移案 刁派凌士芬往切實調查 蒐集証據重提交涉解決' (廣州專訊), archive.org item NPKS19361007, leaf n5, https://archive.org/details/NPKS19361007/page/n5
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) on the removal case of the City residents.)
+- **Date of the record:** 1936-10-07
+- **Files:**
+  - `lead-l0686-4-n5-e9d67335.jpg` (in `local/`, not in git): Page image of leaf n5 (第二張第二版) of the Kung Sheung Daily News of 7 Oct 1936, with the article on the removal case of the City residents (top left); https://archive.org/download/NPKS19361007/page/n5.jpg; 4994480 bytes; SHA-256 `d939d67f56398d89e7abfcfcb1b63c42174fa8da59f2fac7caa12d4ea1d58988`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright status of the 1936 newspaper not stated (https://archive.org/details/NPKS19361007)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/china-official-records-1933-1987/SOURCE.md`](../../secondary-sources/china-official-records-1933-1987/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n5, headline | The headline says that 刁作謙 sent 凌士芬 to investigate the removal case of the City residents on the spot, to collect evidence and to take up the negotiation again. | "九龍城 居民遷移案 刁派凌士芬往切實調查 蒐集証據重提交涉解決" (Kowloon City: the case of the removal of the residents. 刁 sends 凌士芬 to investigate on the spot; evidence collected to reopen negotiations for a settlement) |
+| leaf n5, col. 3 | The report says that the case was still not settled on 7 Oct 1936. | "迄今仍未解決" (up to now it is still not settled) |
+| leaf n5, col. 6-8 | The report says that the new Special Commissioner, 刁作謙, paid close attention to the case and wanted to settle it soon, as part of clearing the unsettled cases of his predecessor. | "頃查新任兩廣外交特派員刁作謙氏、對於本案極為注意、為求早將是案解決、以資清理前任積案起見" (the newly appointed Liang-Guang Special Commissioner Mr 刁作謙 pays great attention to this case; in order to settle it early, and to clear the backlog of his predecessor) |
 ### lead-l1143: 中央日報 1948.01.17, 第二版: 「廣州英領館被焚後 張院長指令各省市」 (中央社南京十六日電), with 「抗議九龍事件 粵各界示威遊行 穗英總領館被焚毀」
 
-- **Creator:** Central Daily News (中央日報), Nanjing; dispatches of Central News Agency (中央社)
-- **Date:** 1948-01-17
-- **Kind:** press
-- **Class:** primary (A newspaper of the day after the events; it prints the order of the Executive Yuan of 16 Jan 1948 in the words of the government news agency.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement; the archive.org item has no rights or licenseurl field (uploader gives none).
-- **Link:** https://archive.org/details/zhongyang-ribao-1948.01.17/page/n1
-- **Other links:** https://archive.org/download/zhongyang-ribao-1948.01.17/1948.01.17.pdf
-- **Proof that it exists:** Page image leaf n1, masthead 中央日報, date 中華民國三十七年一月十七日 星期六; boxed headline 「廣州英領館被焚後 張院長指令各省市」; text begins 「【中央社南京十六日電】今日行政院張院長接獲廣州沙面英國領館及英商太古洋行被焚之報告後」.
-- **What it gives (resolver's note, not checked):** The Chinese Government's answer of 16 Jan 1948 to the burning of the British Consulate-General at Canton: the Executive Yuan's order to punish the rioters and protect British consulates and nationals, with regret for the incident; and the Canton march against the 'Kowloon affair' (the January 1948 evictions from the City). Early history (1948).
-- **Lead:** L1143 (cited by ukhansard-3, uk-hansard-1899-1994)
-- **Notes:** The OCR of the item is useless: read the page image (3052x4166 px) with crops. The text names only 張院長; do not add a personal name unless the page gives it.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Central Daily News (中央日報), Nanjing, 17 Jan 1948, p. 2: 「抗議九龍事件 粵各界示威遊行 穗英總領館被焚毀 九龍警察再令我居民遷出」 (中央社廣州十六日電; 中央社香港十五日專電) and 「廣州英領館被焚後 張院長指令各省市」 (中央社南京十六日電), archive.org item zhongyang-ribao-1948.01.17, leaf n1, https://archive.org/details/zhongyang-ribao-1948.01.17/page/n1
+- **Class:** primary (News dispatches of the Central News Agency (中央社) printed the next day: a record made at the time.)
+- **Date of the record:** 1948-01-17
+- **Files:**
+  - `lead-l1143-n1-ba3a66e0.jpg` (in `local/`, not in git): Page image of p. 2 of the Central Daily News (中央日報) of 17 Jan 1948, with the Canton protest article and the Executive Yuan order; https://archive.org/download/zhongyang-ribao-1948.01.17/page/n1.jpg; 7469196 bytes; SHA-256 `02aa2050dfd58e0a036914fd857897e1491c0df61212946a15c16fc9705bdf2e`; licence: No licence statement on the archive.org item (no rights or licenseurl field; uploaded by a private person) (https://archive.org/details/zhongyang-ribao-1948.01.17)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 2, headline | The headline says that people in Guangdong marched in protest against the 'Kowloon affair' (九龍事件), that the British Consulate-General in Canton was burned, and that the Kowloon police again ordered 'our residents' to move out. | "抗議九龍事件 粵各界示威遊行 穗英總領館被焚毀 九龍警察再令我居民遷出" (Protest against the Kowloon affair: all circles of Guangdong march in demonstration; British Consulate-General in Canton burned down; Kowloon police again order our residents to move out) |
+| p. 2, first dispatch, col. 1-3 | The Canton dispatch of 16 Jan 1948 says that more than 30,000 people joined the protest march about the Kowloon City affair (九龍城事件) in Canton that day. | "對九龍城事件、表示憤慨激昂之情緒、參加群眾凡三萬餘人" ([they] expressed indignation over the Kowloon City affair; the crowd taking part numbered more than 30,000) |
+| p. 2, first dispatch, col. 3-4 | The dispatch says that the rally was held at noon in the square in front of the Sun Yat-sen Memorial Hall (中山紀念堂) in Canton. | "大會於中午在中山紀念堂前廣場舉行" (the rally was held at noon in the square in front of the Sun Yat-sen Memorial Hall) |
+| p. 2, first dispatch, col. 4-7 | INFERRED: The dispatch says that a representative of Kowloon City spoke at the rally about the pulling down of the residents' houses in the City, and that the crowd cut him short more than ten times with shouts of 'Down with British imperialism'. INFERRED: his name is printed 盧 plus a blurred character (perhaps 章). | "九龍城代表盧□報告港英強拆九龍城民房拆毀經過" (the Kowloon City representative 盧□ reported how the British in Hong Kong forcibly pulled down the people's houses in Kowloon City) |
+| p. 2, first dispatch, col. 9-11 | The dispatch says that part of the march went from the Bund over the East Bridge into Shameen (沙面) to demonstrate at the British Consulate. | "一部份折出長堤、由東橋入沙面至英領事館示威" (one part turned out to the Bund and went by the East Bridge into Shameen to demonstrate at the British Consulate) |
+| p. 2, first dispatch, tier 2 | The dispatch says that a fire broke out in the British Consulate-General during the disorder and burned until 5 o'clock; five buildings of the consulate and the British information office were burned, and the British firm Butterfield & Swire (太古洋行) and the Canton office of the Hong Kong airline were also hit. | "英商太古洋行、香港航空公司穗辦事處、亦被波及" (the British firm Butterfield & Swire and the Canton office of the Hong Kong airline were also affected) |
+| p. 2, first dispatch, tier 2 | The dispatch says that two British people, a man and a woman, many gendarmes, police and students, and one reporter were slightly hurt in the disorder. | "英籍男女二人、憲警學生多人、記者一人、均受輕微之創傷" (two British nationals, a man and a woman, many gendarmes, police and students, and one reporter all suffered slight injuries) |
+| p. 2, Hong Kong dispatch, col. 1-4 | The Hong Kong dispatch of 15 Jan 1948 says that the Chinese reporters of the Hong Kong papers refused an invitation of the Hong Kong airline (香港航空公司) to fly to Canton. | "我在香港各報記者、已拒絕香港航空公司之邀請、乘該公司飛機赴廣州訪問" (our reporters on the Hong Kong papers have refused the invitation of the Hong Kong airline to fly on its planes to visit Canton) |
+| p. 2, Hong Kong dispatch, col. 5-7 | The dispatch says that the Canton Journalists' Association had earlier announced that it would refuse the airline's invitation to fly to Hong Kong on the 17th until the old Kowloon City question (九龍舊城問題) was settled. | "前此廣州記者公會亦會宣佈在九龍舊城問題未獲圓滿解決前、拒絕該公司之邀請" (earlier the Canton Journalists' Association also announced that until the old Kowloon City question was satisfactorily settled it would refuse the company's invitation) |
+| p. 2, Hong Kong dispatch, tier 4 | A Hong Kong Government spokesman said on 15 Jan 1948 that on the morning of 12 Jan 1948 the Kowloon police used tear gas to drive away Chinese residents, and that six people were hurt. | "本月十二日晨因九龍警察使用催淚彈驅逐中國居民、致有六人受傷" (on the morning of the 12th of this month, because the Kowloon police used tear gas to drive away Chinese residents, six people were injured) |
+| p. 2, Hong Kong dispatch, tier 4 | The spokesman said that the six injured were taken to Kowloon Hospital (九龍醫院), and that one or two of them had left hospital. | "送入九龍醫院診治、今已有一人或二人出院" (sent to Kowloon Hospital for treatment; now one or two have left hospital) |
+| p. 2, boxed article, col. 1-6 | The Nanjing dispatch of 16 Jan 1948 says that after the reports of the attack on the British Consulate-General in Shameen and on Butterfield & Swire, the President of the Executive Yuan, 張院長, ordered all provinces and cities to punish rioters severely, whatever name or reason they used. | "凡違法暴行者、無論假借任何名義或理由、均應依法予以嚴懲" (all who commit unlawful violence, whatever name or reason they use, must be severely punished according to law) |
+| p. 2, boxed article, col. 6-9 | The order told the provincial and city officials to make the police protect British consulates and British nationals and their property, and to punish failures. | "對各該地方英國領館及僑民之生命財產、確實保護、如有違誤、即課以應得之責任" (to give real protection to the lives and property of the British consulates and British nationals in their areas; any failure will be punished as it deserves) |
+| p. 2, boxed article, col. 10-12 | The Executive Yuan also told the Ministry of Foreign Affairs to keep negotiating actively on the Kowloon City affair, on the government's fixed position, for a proper settlement. | "並訓令外交部、對於九龍城事件、務使政府既定之立場與方針、積極繼續交涉、迅謀正當之解決" (and instructed the Foreign Ministry, on the Kowloon City affair, to keep to the government's fixed position and policy, to continue negotiations actively and to seek a proper settlement quickly) |
+| p. 2, boxed article, second dispatch | A second Nanjing dispatch says that the Chinese Government regretted the incident in Canton deeply. | "深表遺憾" (expresses deep regret) |

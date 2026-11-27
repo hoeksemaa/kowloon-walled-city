@@ -2668,7 +2668,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 28 of 28 items read by the reading of the source search of 2026-11.
+- **Status:** read: 30 of 30 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0280-1: 城寨清拆賠償起爭議 商戶不提供營業單據 地政署官員指為問題癥結
@@ -3363,33 +3363,52 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0257: 大公報 (Ta Kung Pao), 8 Nov 1986: 「社會牙科服務促進會主席認為無牌牙醫有益於社會 港府不應將刑罰提高 並建議以考試訓練途徑使他們轉為鑲牙師」 (headline as the OCR list gives it), with 「立局下周提出質詢 並設小組研究未註冊牙醫罰則例」
 
-- **Creator:** Ta Kung Pao (大公報)
-- **Date:** 1986-11-08
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of Nov 1986 that reports a proposal and a Legislative Council question made at the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The newspaper is copyright of its publisher, 大公報.
-- **Link:** https://archive.org/details/NPTKP19861108
-- **Other links:** https://archive.org/details/NPTKP19861108/page/n6, https://archive.org/details/NPTKP19861108/page/n4
-- **Proof that it exists:** archive.org metadata title '大公報 1986-11-08'; headline list: '社會牙科服務促進會主席認為無牌牙醫有益於社會港府不應將刑罰提高並建議以考試訓練途徑使他們轉為鑲牙師'
-- **What it gives (resolver's note, not checked):** Nov 1986, two months before the clearance announcement: a dental-service group says the unlicensed dentists help society, asks the government not to raise the penalties, and proposes that exams and training make them dental technicians (鑲牙師); the Legislative Council is to study the penalties for unregistered dentists. INFERRED: the City's dentists were the main unlicensed dentists of Hong Kong; the headline does not name the City.
-- **Lead:** L0257 (cited by gap-campus-socialwork-press-14, hk-chinese-press-1985-1993)
-- **Notes:** Find the article on the page images (leaf n6 likely, not confirmed) and check whether it names the City and the government's answer. The Dentists Registration (Amendment) Bill of 1986 is the context (INFERRED; check Hansard 1986-87 in legco-hansard-1986-1993).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ta Kung Pao (大公報), 8 November 1986, 港聞 page (第二張), leaf n7: 「社會牙科服務促進會主席認為 無牌牙醫有益於社會 港府不應將刑罰提高 並建議以考試訓練途逕使他們轉為鑲牙師」; with leaf n4: 「巴士車禍如何善後 立局下周提出質詢 並設小組研究未註冊牙醫罰則例」. Internet Archive item NPTKP19861108, https://archive.org/details/NPTKP19861108
+- **Class:** primary (A news report of the next day (press conference of 7 Nov 1986). It does not name the City; it is about the unlicensed dentists of Hong Kong, of whom the City's dentists were a part (INFERRED).)
+- **Date of the record:** 1986-11-08
+- **Files:**
+  - `lead-l0257-n7-4fe47307.jpg` (in `local/`, not in git): Page image of leaf n7 (港聞) of 大公報, 8 Nov 1986, with the article on the unlicensed dentists; https://archive.org/download/NPTKP19861108/page/n7.jpg; 3635201 bytes; SHA-256 `0c5ee5529ea8c55ff5c8e8800aa09e69e98257f1f94e85b00340d7f80947e43c`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPTKP19861108)
+  - `lead-l0257-n4-8e33e11c.jpg` (in `local/`, not in git): Page image of leaf n4 of 大公報, 8 Nov 1986, with the LegCo article (subheadline on the unregistered dentists); https://archive.org/download/NPTKP19861108/page/n4.jpg; 5004842 bytes; SHA-256 `a9ecbf17525c6e167bcc724157018fea2cfc2a552dd3d4d3c881d5f4f191e389`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPTKP19861108)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n7, top right, para. 1 | On 7 November 1986 the 香港社會牙科服務促進會, which had 500 members, held a press conference against the government's plan to raise the penalties for unlicensed dentists. | "有五百名會員的香港社會牙科服務促進會，昨日就港府準備修例提高無牌牙醫罰則一事，舉行記者招待會" (The 香港社會牙科服務促進會, which has 500 members, yesterday held a press conference on the government's plan to amend the law and raise the penalties for unlicensed dentists.) |
+| leaf n7, para. 1 | District Board and Urban Council members at the conference praised the past service of the unlicensed dentists. They asked the government to let them become dental technicians (鑲牙師) through examinations and training. | "希望港府能以考試及訓練等途徑，使無牌牙醫轉為鑲牙師，繼續為市民服務" (They hope the government will, through examinations and training, let the unlicensed dentists become dental technicians and go on serving the public.) |
+| leaf n7, para. 2 | The chairman of the association said that Hong Kong had about 1,000 registered dentists and more than 2,000 unregistered dentists at work. | "現時香港註冊牙醫約有一千人，而在職非註冊牙醫則有二千多人" (At present Hong Kong has about 1,000 registered dentists, and more than 2,000 unregistered dentists at work.) |
+| leaf n7, para. 2 | INFERRED: INFERRED (hard scan): the chairman's name reads 曾文彬. | "會主席曾文彬表示" (the association's chairman 曾文彬 said) |
+| leaf n7, para. 2 | Some unregistered dentists came from mainland China; others were dental technicians trained as apprentices. They had long given the public cheap and convenient dental care. | "他們有些是來自中國大陸，有些是學徒出身的鑲牙師" (Some of them came from mainland China; some were dental technicians who began as apprentices.) |
+| leaf n7, para. 3 | The government proposed to raise the maximum penalty from a fine of HK$2,000 and six months in prison to a fine of HK$100,000 and five years in prison. | "將現有的最高刑罰由罰款二千元及入獄半年，改為罰款十萬及入獄五年" (to change the present maximum penalty from a fine of $2,000 and half a year in prison to a fine of $100,000 and five years in prison) |
+| leaf n7, para. 3 | In recent months there had been some tens of prosecutions of unlicensed dentists, and eight of them had ended in prison terms. | "近月來被拘控的無牌牙醫個案達數十宗，其中被判入獄的就有八宗" (In recent months there were dozens of cases of unlicensed dentists arrested and charged, and eight of them were sentenced to prison.) |
+| leaf n7, last para. | INFERRED: The association's representatives also went to the office of the members of the two Councils. 葉文慶, who received them, told them first to collect more data on unlicensed dentists, and promised to pass on their views. INFERRED (hard scan): the third character of the name is not clear on the scan and looks like 歷; the appointed Legislative Council member of 1985-1988 was 葉文慶 (list of members, zh.wikipedia '1985年香港立法局選舉'), so the name is read as 葉文慶. | "接見他們的葉文慶建議他們先搜集更多有關無牌牙醫的資料" (葉文慶, who received them, suggested that they first collect more information about unlicensed dentists.) |
+| leaf n4, headline | The same day's paper reported that the Legislative Council would set up a group to study the penalty ordinance for unregistered dentists. | "立局下周提出質詢 並設小組研究未註冊牙醫罰則例" (LegCo to ask questions next week, and to set up a group to study the penalty ordinance for unregistered dentists) |
+| leaf n7 | INFERRED: INFERRED: the article does not name the City, but the City's dentists were among the unregistered dentists it describes; the wording of the government's bill is not given. | "無牌牙醫有益於社會" (unlicensed dentists are good for society) |
+
+- **Leads:**
+  - The government's 1986 bill to raise the penalties for unregistered dentists (Dentists Registration (Amendment) Bill, INFERRED name) and the LegCo questions of November 1986: legco-hansard-1986-1993, not checked.
+  - 大公報 8 Nov 1986, leaf n4: the rest of the LegCo article (the part on the dentists group and 梁淑怡) was not found on the page.
 ### lead-l0257-2: 華僑日報 (Wah Kiu Yat Po), 10 Jun 1987: 「清拆特別委員會聽取意見 城砦牙醫要求政府 予鑲牙師合法地位 安排聚集營生‧接受官方監管」 (headline as the OCR list gives it, with 鈿 for 鑲)
 
-- **Creator:** Wah Kiu Yat Po (華僑日報)
-- **Date:** 1987-06-10
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of June 1987 that reports the meeting of the City dentists with the clearance special committee the day before.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The newspaper is copyright of its publisher, 華僑日報.
-- **Link:** https://archive.org/details/NPWK19870610
-- **Proof that it exists:** archive.org metadata title '華僑日報 1987-06-10'; headline list: '清拆特別委員會聽取意見 城砦牙醫要求政府 予鈿牙師合法地位 安排聚集營生‧接受官方監管'
-- **What it gives (resolver's note, not checked):** June 1987: the City's dentists ask the clearance special committee for legal status as dental technicians (鑲牙師), to work together in one place under official supervision after the clearance. A second report of the meeting that the repo holds from 大公報 (top-zh-press-9).
-- **Lead:** L0257 (cited by gap-campus-socialwork-press-14, hk-chinese-press-1985-1993)
-- **Notes:** Leaf not identified (the 本港新聞 pages; the zh-press-7 report of 2 Jun 1987 was on leaf n5). It can say what the government had answered before.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Wah Kiu Yat Po (華僑日報), 10 June 1987, 本港新聞, leaf n7: 「清拆特別委員會聽取意見 城砦牙醫要求政府 予鑲牙師合法地位 安排聚集營生‧接受官方監管」 (特訊, signed 馮). Internet Archive item NPWK19870610, https://archive.org/details/NPWK19870610
+- **Class:** primary (A news report of the next day (meeting of 9 June 1987), with the words of the City's dentists.)
+- **Date of the record:** 1987-06-10
+- **Files:**
+  - `lead-l0257-2-n7-3c4302b5.jpg` (in `local/`, not in git): Page image of leaf n7 (本港新聞) of 華僑日報, 10 Jun 1987, with the report on the City's dentists; https://archive.org/download/NPWK19870610/page/n7.jpg; 6338042 bytes; SHA-256 `a3599ddc175c0574481fed2311270dc0778fd10462623918ba7fa5bfa8a94823`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPWK19870610)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n7, para. 1 | On 9 June 1987 the special committee on the clearance of the City met representatives of the City's dentists to discuss where the dentists would go after the clearance. | "清拆城寨特別委員會昨日與牙醫代表會晤，商討清拆城寨後牙醫的去向問題" (The special committee on the clearance of the Walled City yesterday met dentists' representatives to discuss where the dentists would go after the clearance.) |
+| leaf n7, para. 1 | The dentists asked for a recognised right to practise, recognition as dental technicians (鑲牙師), and direct supervision by the government. | "與會牙科組代表提出要求給予認可的執業權，承認其鑲牙師的身份，並由政府直接監管" (The dental group's representatives asked for a recognised right to practise, recognition of their status as dental technicians, and direct government supervision.) |
+| leaf n7, para. 2 | The Deputy Secretary 呂孝端 (副政務司) said he would pass all requests to the departments concerned; legal status for dental technicians needed careful study by the health department (衛生署). | "而鑲牙師的合法地位，需通過衛生署詳細的考慮" (and the legal status of dental technicians needs detailed consideration by the health department) |
+| leaf n7, para. 3 | Thirty representatives of the City's dentists met the committee. | "城寨牙科三十名代表與城寨特別委員會展開座談時稱" (When thirty representatives of the Walled City's dentistry held talks with the special committee, they said) |
+| leaf n7, para. 3 | The City then had 87 dental clinics and 100 practitioners. | "城寨現時有八十七間牙科診所，一百名從業員" (The Walled City now has 87 dental clinics and 100 practitioners.) |
+| leaf n7, para. 3 | More than 90 per cent of the dentists hoped to go on working after the clearance. | "九成以上的牙醫希望城寨清拆後能繼續謀生" (More than ninety per cent of the dentists hope to keep earning a living after the clearance.) |
+| leaf n7, para. 3 | Their work was mostly making dentures, with a limited amount of extractions, fillings and cleaning. | "業務以鑲牙為主，並作有限度的脫牙，補牙和洗牙服務" (Their business is mainly fitting dentures, with limited extraction, filling and cleaning services.) |
+| leaf n7, para. 4 | They did not ask to become registered dentists by examination, only to be recognised as dental technicians, distinct from registered dentists. | "並非要求成為正式牙科醫生，只希望港府承認其鑲牙師的身份" (they are not asking to become registered dentists; they only hope the government will recognise their status as dental technicians) |
+| leaf n7, para. 4 | For complex work such as wisdom-tooth extraction, orthodontics and X-rays, they wished to work with registered practitioners. | "至於牙齒的根本治療，如脫智慧齒，矯正牙齒和照X光等，他們希望與正式的註冊醫生合作" (For basic dental treatment such as extracting wisdom teeth, straightening teeth and X-rays, they hope to cooperate with registered doctors.) |
+| leaf n7, para. 5 | The dental group's officer 李德康 proposed that the government keep the dentists together in one place, so they could employ registered dentists or doctors, who would give all risky injections of anaesthetic. | "建議港府仍將他們聚集一起，以方便他們僱用正式的註冊牙或醫" (proposed that the government still keep them together, so that they can conveniently employ registered dentists or doctors) |
+| leaf n7, para. 7 | The dental service of the City began in the early 1960s, and most of the present dentists had learned as apprentices. | "城寨牙醫服務，早在六十年代初期開設，而現時的牙醫多是學師出身" (The Walled City's dental services started in the early 1960s, and most present dentists came up as apprentices.) |
+| leaf n7, para. 7 | A City dentist's monthly turnover was usually from about HK$7,000-8,000 to HK$30,000-40,000. | "現時城寨的牙醫，每月的營業額，一般由七、八千元至三、四萬元不等" (At present the Walled City dentists' monthly turnover generally ranges from seven or eight thousand dollars to thirty or forty thousand dollars.) |
+| leaf n7, para. 7 | The dentists said that if they had to change trade they would find it very hard to adapt. | "倘一旦轉業，相信很難適應環境和無所適從" (if they had to change jobs, they believe they would find it hard to adapt and would not know what to do) |
+| leaf n7, last para. | After the meeting 浦炳榮, a member of the special committee on the clearance of the City, said the committee had no set plan for the dentists; it would mainly hear the views of the trade and then report to the committee. | "該會並無特定的方案，主要是聽取牙醫行業的意見" (the committee has no specific plan; it mainly listens to the views of the dental trade) |

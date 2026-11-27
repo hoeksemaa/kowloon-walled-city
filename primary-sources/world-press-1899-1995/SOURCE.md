@@ -295,7 +295,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 8 of 8 items read by the reading of the source search of 2026-11.
+- **Status:** read: 9 of 9 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0714: Hong Kong Journal; The Walled City, Home to Huddled Masses, Falls
@@ -472,3 +472,19 @@ testimony given later: tag its facts "retrospective (year)".
 | Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | The fire swept through a half-mile sector of the mainland strip. The sector was mostly squatters' huts and the grounds of two local motion picture studios. | "The section was the site of mostly squatters' huts and the grounds of two local motion picture studios." |
 | Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | Firemen, helped by the British Army garrison, brought the fire under control. Steps were taken to keep it from spreading to other parts of the heavily populated residential Kowloon sector. | "Firefighters, assisted by the British Army garrison, brought the flames under control." |
 | Evening Star, 11 Jan 1950, p. A-4 (image seq. 4), col. near HPOS 8840-9490 (ALTO lines at VPOS 21704-25484) | INFERRED: The report does not name Kowloon City or the Walled City. The China Mail of 12 Jan 1950 (press-archives-11 in the repo) places the fire in the squatter villages round the City. INFERRED: the link to the City comes from that other report, not from this one. | "15,000 Chinese Lose Homes in Kowloon Fire" |
+
+### lead-l1197: CHINA AND BRITAIN. KOWLOON OCCUPIED.
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 'CHINA AND BRITAIN. KOWLOON OCCUPIED.' United Press Association cable, Hong Kong, 16 May [1899], Daily Telegraph (Napier, New Zealand), 17 May 1899, Papers Past DTN18990517.2.11, https://paperspast.natlib.govt.nz/newspapers/DTN18990517.2.11
+- **Class:** primary (A news cable printed the next day; the background paragraph is secondary.)
+- **Date of the record:** 1899-05-17 (cable of 1899-05-16)
+- **Files:**
+  - `lead-l1197-DTN18990517.2.11-08918bc5.html` (in `local/`, not in git): HTML of the article page (text and page link); https://paperspast.natlib.govt.nz/newspapers/DTN18990517.2.11; 212 bytes; SHA-256 `d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d`; licence: No known copyright restrictions (DigitalNZ usage: Share, Modify, Use commercially) (https://api.digitalnz.org/v3/records/29195055.json)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/world-press-1899-1995/SOURCE.md`](../../secondary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| DTN18990517.2.11, dateline | The cable is dated Hong Kong, 16 May (1899). | "hong kong may 16" |
+| DTN18990517.2.11 | The Welsh Fusiliers and a detachment of the Hong Kong Volunteers with two guns occupied the city of Kowloon without resistance. | "the welsh fusiliers and a detachment of the hong kong volunteers with two guns" |
+| DTN18990517.2.11 | People had believed that a large body of Chinese troops had decided to resist. | "a large body of chinese troops had determined to offer resistance" |

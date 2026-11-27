@@ -517,7 +517,7 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0502: 《九龍城寨之圍城》製作特輯．美術細節篇
@@ -560,3 +560,21 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** A one-page summary of a 2020 lecture on squatters in Hong Kong: survey figures of 1955 and 1964, the Shek Kip Mei fire, and Hase's two case studies (a Kowloon village on former Ho Tung land; triad-built houses at Kwu Tung from the later 1950s). Nothing on the City itself.
 - **Lead:** L0500 (cited by top-top-flickr-6, documentaries-video-and-podcasts-1990-2026)
 - **Notes:** Same newsletter series as top-top-flickr-6. Only useful for the surroundings if 'Yiu Liu village' is the Hau Wong San Tsuen squatter area outside the City (check against another source).
+- **Reading of 2026-11-26:** it is not about the City. Read the whole lecture report (pp. 13-14) in the PDF of the March 2020 Newsletter (the RAS URL redirects to a squarespace file), and searched the newsletter for 'walled', Kowloon City, Tung Tau, Hau Wong and Kai Tak: no match. The report does not mention the City or its surroundings. Yiu Liu village is given no location except 'in Kowloon'.
+
+## Items of the reading of the source search of 2026-11
+
+### lead-l0811: EP277(陳欣健#1)陳欣健任職警隊11年/ 第一份差事乃駐守九龍城寨 / 他如何評價電影 / 佈景欠了什麼？
+
+- **Status:** Partly read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26. I read the video metadata and the description with yt-dlp (uploaded 24 May 2024, 12:30 UTC, no caption track, standard YouTube licence). I cannot hear the sound. I read the burned-in Chinese subtitles in the YouTube storyboard (318x180 frames, one frame about every 10 seconds), thus I saw only one short subtitle line in each 10 seconds and most of the speech is missing: the facts below are fragments, and the readings of their sense are marked inferred. The City part runs from about 2:30 to 11:50; after that the talk is about the 1974 Po Sang Bank case and his film career. Parts #2-#5 of the series (EP279-EP283) are on his film and TV career, by their titles.
+- **Citation:** 文雋 講呢啲 講嗰啲 Man's Talk (YouTube channel), 'EP277(陳欣健#1)陳欣健任職警隊11年| 第一份差事乃駐守九龍城寨 | 他如何評價電影 | 佈景欠了什麼？', with Philip Chan (陳欣健), uploaded 24 May 2024 (12:30 UTC), https://www.youtube.com/watch?v=Z1pUdyGLG_Y
+- **Class:** retrospective (First-hand testimony of a former police officer on his posting at the City in 1966-1967, given in 2024 (retrospective 2024). The video description is the channel's later summary (secondary). Not 1986.)
+- **Date of the record:** 2024-05-24
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md`](../../primary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| description | The channel's description says that 陳欣健 joined the police after secondary school, served eleven years, and was posted to Kowloon Walled City. | "原來他中學畢業後就加入警隊，當差十一年！更曾駐守九龍城寨" (so he joined the police force after secondary school and served eleven years! He was even stationed at Kowloon Walled City) |
+| description | The description says that in the City he saw prostitutes, drug addicts (道友) and gambling stalls, and knew the 'three-no-control' zone well. | "對這三不管地帶瞭如指掌，見盡妓女，道友和賭檔" (he knew this no-man's-land like the back of his hand, and saw all the prostitutes, addicts and gambling stalls) |
+| description | The description says that he judged the 2024 film 九龍城寨之圍城 to restore about 90 per cent of the old look of the City, but that two things were missing. | "他認為電影《九龍城寨》有九成還原當年面貌，唯獨還欠兩樣東西" (he thinks the film restores 90 per cent of the look of those years; only two things are still missing) |
+| description | The description says that a year before the 1967 riots there was already a clash between police and residents in the City over the demolition of a left-wing school. | "原來早在一年前，城寨因為要遷拆一間左派學校，已發生警民衝突" (a year earlier, there was already a police-civilian clash in the Walled City over the removal of a left-wing school) |

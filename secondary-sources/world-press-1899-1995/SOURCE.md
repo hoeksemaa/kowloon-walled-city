@@ -142,3 +142,16 @@ See the leads under each item in the primary folder.
 | Wayback capture 2015-05-24, paras. 10-11 | The article says that a similar plan about 25 years earlier (about 1962) caused protests from residents and from Beijing, and that the government withdrew it. | "Twenty-five years ago a proposal similar to the present one led to sharp protests from both residents and from Beijing." |
 | Wayback capture 2015-05-24, para. 11 | The article says that 'three years ago' the Chinese official Xu Jiatun visited the City and that British officials protested. (The repo dates the visit to 7 August 1983 from another source.) | "just three years ago a Chinese official, Xu Jiatun, caused a stir by visiting the Walled City." |
 | Wayback capture 2015-05-24, para. 5 | The article's history says that the City began about 100 years earlier as a village, and that its granite walls were torn down four decades earlier. | "the granite walls that gave it its name were torn down four decades ago." |
+
+### lead-l1197: CHINA AND BRITAIN. KOWLOON OCCUPIED.
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 'CHINA AND BRITAIN. KOWLOON OCCUPIED.' United Press Association cable, Hong Kong, 16 May [1899], Daily Telegraph (Napier, New Zealand), 17 May 1899, Papers Past DTN18990517.2.11, https://paperspast.natlib.govt.nz/newspapers/DTN18990517.2.11
+- **Class:** primary (A news cable printed the next day; the background paragraph is secondary.)
+- **Date of the record:** 1899-05-17 (cable of 1899-05-16)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/world-press-1899-1995/SOURCE.md`](../../primary-sources/world-press-1899-1995/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| DTN18990517.2.11, background paragraph | Background: the tip of the Kowloon peninsula was ceded to Britain in 1861. | "ceded to britain in 1861" |
+| DTN18990517.2.11, background paragraph | Background: the extension of the year before took in land round Mirs Bay and Deep Bay, because modern guns on the mainland could shell Hong Kong. | "the greater range of modern guns rendered it possible for hong kong to be shelled" |

@@ -8,7 +8,7 @@ Survey sheets, old maps and aerial photos that show the City and its edge.
 - **Dates:** 1866-2026.
 - **Items:** 36, of which 23 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 1 files with an open licence (Public domain (Commons: PD-HK, PD-1996)), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 1 files with an open licence (Public domain (Commons template PD-UKGov: 'This work created by the United Kingdom Government is in the public domain.')), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -801,7 +801,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 6 of 6 items read by the reading of the source search of 2026-11.
+- **Status:** read: 10 of 10 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0876: Port & Airport Development Strategy final report (Figure 4.4, 'Airport Noise Constraints - Kai Tak Airport', p.4-5)
@@ -916,54 +916,64 @@ testimony given later: tag its facts "retrospective (year)".
   - Government Records Service, Hong Kong, HKRS209-4-1: War Office, 'Kowloon and Part of New Territories', 1:7,920, 21 sheets, surveyed 1902-1903 (the original of the hkmaps.hk layer '1904'); the sheet with the walled City and its legend.
 ### lead-l0429-1: Japanese thought East China bases of 14th destroyed; moved shipping to Hong Kong to escape scourge of Nimitz task force. 14th fighters and bombers caught them there. Smoke billows from Kowloon docks and railroad yards. Jap fighter (left center) (U.S. Air Force Number A54567AC)
 
-- **Creator:** US Army Air Forces, 14th Air Force (Record Group 342, Records of U.S. Air Force Commands, Activities, and Organizations)
-- **Date:** 16 Oct 1944 (raid; INFERRED from the Gwulo study of the same print series)
-- **Kind:** photo
-- **Class:** primary (An air photo taken during the raid of 16 October 1944, with its wartime caption.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** NARA catalogue: Access Unrestricted, Use Unrestricted; a work of the US Government (public domain); image provided by Fold3.
-- **Link:** https://catalog.archives.gov/id/204833720
-- **Proof that it exists:** Catalog search result: 'Local ID: 342-FH-3A02645-A54567AC', 'NAID: 204833720', 'Available to access online(1)'
-- **What it gives (resolver's note, not checked):** A full-size oblique air photo of Kowloon on the day of the raid (Kowloon docks and railway yards, smoke). It can show the site of the City in 1944, after the Japanese took down the wall in 1943 (INFERRED; not checked in the scan).
-- **Lead:** L0429 (cited by gwulo-13, maps-and-aerial-photos-1889-1994)
-- **Notes:** Download the full image from the item page (IIIF on catalog.archives.gov). Earlier history (1944): less weight.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Army Air Forces, 14th Air Force (308th Bomb Group, 375th Bomb Squadron), oblique air photo of the raid on Hong Kong of 16 October 1944, print A-54567 A.C., with typed caption on the back; US National Archives, Record Group 342 (Records of U.S. Air Force Commands, Activities, and Organizations), Series 'Photographs of Activities, Facilities and Personnel', Local ID 342-FH-3A02645-A54567AC, NAID 204833720; scan by Fold3 (Fold3 File #29016086); https://catalog.archives.gov/id/204833720
+- **Class:** primary (An air photo of the raid with its typed caption and header notes of October 1944. The primary tree is correct. Earlier history (1944).)
+- **Date of the record:** 16 October 1944 (photo, per the handwritten note on the back); prints received 28 October 1944
+- **Files:**
+  - `lead-l0429-1-342-FH_000297-6bfc2ee6.jpg` (in `local/`, not in git): Front of print A-54567 A.C.: oblique air photo of the raid of 16 Oct 1944, with header notes (4580x3586 px JPEG, 2.5 MB); https://catalog.archives.gov/medialz/partners/stillpix/342-fh/export_WWII_Photos-USAF_3A02459-3A03299_10083/images/342-FH_000297.jpg; 2528055 bytes; SHA-256 `e70dfc8078716e28691bc5d9f75417a80688492e51a99df8545b410cb19efae6`; licence: NARA catalogue page: 'Access: Unrestricted', 'Use: Unrestricted'; 'Image provided by Fold3'. The page does not use the words public domain (a US Government photo of 1944). (https://catalog.archives.gov/id/204833720)
+  - `lead-l0429-1-342-FH_000298-fe4d6d95.jpg` (in `local/`, not in git): Back of the same print: typed caption and handwritten unit and date (JPEG, 2.0 MB); https://catalog.archives.gov/medialz/partners/stillpix/342-fh/export_WWII_Photos-USAF_3A02459-3A03299_10083/images/342-FH_000298.jpg; 1988304 bytes; SHA-256 `c88e80a48ab1304d9feb594dd0a137fce7d21fdb965a855af47f8a9d8f8cb260`; licence: NARA catalogue page: 'Access: Unrestricted', 'Use: Unrestricted'; 'Image provided by Fold3'. The page does not use the words public domain (a US Government photo of 1944). (https://catalog.archives.gov/id/204833720)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 342-FH_000298.jpg (back of print), typed caption | The typed caption on the back: Japanese shipping moved to Hong Kong; 14th Air Force fighters and bombers caught it there; smoke rises from the Kowloon docks and railway yards; a Japanese fighter at left centre turns in to attack. | "Smoke billows from Kowloon docks and railroad yards. Jap fighter (left center) angrily turns in to the attack." |
+| 342-FH_000298.jpg, typed caption | The caption goes on: between the Royal Navy yard and Stonecutter's Island enemy vessels burn; outside the boat basin another ship has been hit; off the Kowloon docks a large oil slick shows that a tanker was struck. | "Just off inferno of Kowloon docks, huge oil slick indicates tanker has been struck." |
+| 342-FH_000298.jpg, handwritten note | A handwritten line on the back gives the unit and the date: 308th Bomb Group, 375th Bomb Squadron, 16 October 1944. | "308th Bomb Group, 375th Bomb Squadron. October 16, 1944." |
+| 342-FH_000297.jpg, header above the photo | The header of the print: War Theatre #11 (Hong Kong, China), Bombing. The prints came from BPR on 28 October 1944, were stamped 'Passed for Pub.' by the U.S. Army Press Censor and were copied on 30 October 1944. A handwritten note says the photo was used in the December 1944 issue of Impact. | "Prints rec'd 10/28/44 from BPR. Stamped: Passed for Pub., U.S. Army Press Censor. Copied 10/30/44." |
+| 342-FH_000297.jpg, handwritten header line | INFERRED: The handwritten negative note gives original negative SPOT C-832, exposure 43, and a code line. INFERRED: '10:16-1341' is 16 October at 13:41, '12-17000' a 12-inch lens at 17,000 feet, and '2218N 11410E' the position 22°18'N 114°10'E. The code is not explained on the print. | "Orig. Neg. No. SPOT C-832, Exp. 43. (308BG-375BS/4M74/07/10:16-1341/12-17000/ 2218N 11410E)" |
+| 342-FH_000297.jpg, whole image | INFERRED: The photo is an oblique view to the north over the harbour. Hong Kong Island with a racecourse is in the foreground, Kowloon in the middle with a smoke cloud over the docks, and the hills of the New Territories behind. Kai Tak airfield shows as a large bright bare area on the shore of Kowloon Bay, right of centre. INFERRED: the racecourse is Happy Valley. |  |
+| 342-FH_000297.jpg, region x 2860-3960, y 1500-2300 px | At full size the ground north of Kai Tak airfield shows a few built-up patches at the foot of the hills, but the walled City site cannot be made out at this angle and height. |  |
+
+- **Leads:**
+  - Impact (US Army Air Forces confidential magazine), issue of December 1944, which used this photo (handwritten note on print A-54567 A.C.).
 ### lead-l0429-2: Japs were singed by fire of 14th Air force when they ducked Admiral Nimitz' Naval frying pan. Hong Kong harbor would have been safe refuge, but Jap land forces failed to knock out 14th's East China bases. Kowloon docks (center) were sprayed (U.S. Air Force Number B54567AC)
 
-- **Creator:** US Army Air Forces, 14th Air Force (Record Group 342)
-- **Date:** 16 Oct 1944 (raid); prints received 28 Oct 1944 (per the print header, as the repo's secondary twin of gwulo-13 records)
-- **Kind:** photo
-- **Class:** primary (An air photo taken during the raid of 16 October 1944, with its wartime caption.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** NARA catalogue: Access Unrestricted, Use Unrestricted; a work of the US Government (public domain); image provided by Fold3.
-- **Link:** https://catalog.archives.gov/id/204833723
-- **Other links:** https://catalog.archives.gov/iiif/3/lz%2Fpartners%2Fstillpix%2F342-fh%2Fexport_WWII_Photos-USAF_3A02459-3A03299_10083%2Fimages%2F342-FH_000299.jpg/full/full/0/default.jpg, https://catalog.archives.gov/iiif/3/lz%2Fpartners%2Fstillpix%2F342-fh%2Fexport_WWII_Photos-USAF_3A02459-3A03299_10083%2Fimages%2F342-FH_000300.jpg/full/full/0/default.jpg
-- **Proof that it exists:** Item page: 'Local ID: 342-FH-3A02646-B54567AC', 'NAID: 204833723', '2 Images', 'Access: Unrestricted, Use: Unrestricted'; IIIF info 4588 x 3620 px
-- **What it gives (resolver's note, not checked):** The full-size scan (4588 x 3620 px) of the second frame of the raid, which the Gwulo study says shows the site of the City in more detail than the first: the City area in 1944, after the wall was taken down.
-- **Lead:** L0429 (cited by gwulo-13, maps-and-aerial-photos-1889-1994)
-- **Notes:** The IIIF image URLs work without JavaScript. The second image (342-FH_000300) is probably the back of the print with its header. Earlier history (1944): less weight.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Army Air Forces, 14th Air Force (308th Bomb Group, 375th Bomb Squadron), near-vertical air photo of the raid on Kowloon of 16 October 1944, print B-54567 A.C., with typed caption on the back; US National Archives, Record Group 342, Series 'Photographs of Activities, Facilities and Personnel', Local ID 342-FH-3A02646-B54567AC, NAID 204833723; scan by Fold3 (Fold3 File #29016093); https://catalog.archives.gov/id/204833723
+- **Class:** primary (An air photo of the raid with its typed caption and header notes of October 1944. The primary tree is correct. Earlier history (1944), but it shows the City site soon after the wall was taken down.)
+- **Date of the record:** 16 October 1944 (photo, per the handwritten note on the back); prints received 28 October 1944
+- **Files:**
+  - `lead-l0429-2-342-FH_000299-acdacdb0.jpg` (in `local/`, not in git): Front of print B-54567 A.C.: near-vertical air photo of Kowloon and Kai Tak, 16 Oct 1944, with the City site north of the airfield (4588x3620 px JPEG, 2.3 MB); https://catalog.archives.gov/medialz/partners/stillpix/342-fh/export_WWII_Photos-USAF_3A02459-3A03299_10083/images/342-FH_000299.jpg; 2337271 bytes; SHA-256 `26dec6083819bcfc337597ad313da010610b698f9bd6108bb24e235750e1838e`; licence: NARA catalogue page: 'Access: Unrestricted', 'Use: Unrestricted'; 'Image provided by Fold3'. The page does not use the words public domain (a US Government photo of 1944). (https://catalog.archives.gov/id/204833723)
+  - `lead-l0429-2-342-FH_000300-59252d43.jpg` (in `local/`, not in git): Back of the same print: typed caption and handwritten unit and date (JPEG, 2.0 MB); https://catalog.archives.gov/medialz/partners/stillpix/342-fh/export_WWII_Photos-USAF_3A02459-3A03299_10083/images/342-FH_000300.jpg; 1995374 bytes; SHA-256 `709a76afea63e8a05032e6834615e92ca02f33a223f9e44d70fc06064cec7853`; licence: NARA catalogue page: 'Access: Unrestricted', 'Use: Unrestricted'; 'Image provided by Fold3'. The page does not use the words public domain (a US Government photo of 1944). (https://catalog.archives.gov/id/204833723)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 342-FH_000300.jpg (back of print), typed caption | The typed caption on the back says that the Kowloon docks (centre) were hit, and that by first reports 32,000 tons of shipping were sunk and 16,000 tons probably sunk. | "Kowloon docks (center) were sprayed with destruction, 32,000 tons of shipping were sunk, 16,000 tons probably sunk, according to first reports." |
+| 342-FH_000300.jpg, handwritten note | A handwritten line on the back gives the unit and the date: 308th Bomb Group, 375th Bomb Squadron, 16 October 1944. | "308th Bomb Group, 375th Bomb Squadron, October 16, 1944." |
+| 342-FH_000299.jpg, header above the photo | INFERRED: The header gives original negative SPOT C-832, exposure 42; print A-54567 A.C. (lead-l0429-1) is exposure 43 of the same negative. INFERRED: this frame was taken just before the oblique frame, on the same run. The rest of the header is the same as on print A (prints received 28 Oct 1944, passed by the censor, copied 30 Oct 1944, used in the December 1944 issue of Impact). | "Orig. Neg. No. SPOT C-832, Exp. 42. (308BG-375BS/4M74/06/10:16-1341/12-17000/ 2218N-11410E)" |
+| 342-FH_000299.jpg, whole image | INFERRED: The photo looks nearly straight down on the Kowloon peninsula. Smoke covers the docks at the centre, and the bare ground of Kai Tak airfield shows at the top right. INFERRED: the docks under smoke are at Hung Hom. |  |
+| 342-FH_000299.jpg, region about x 3720-3895, y 842-960 px | INFERRED: North of the north-west corner of the airfield, the print shows a rectangular block about 175 x 120 px in size, outlined on all four sides by a pale band, with dense small buildings inside. INFERRED: this is the site of the Walled City; the pale band can be the bare ground where the wall stood, taken down in 1943-1944. The shape and its place north of the airfield and at the foot of the hills fit the City. |  |
+| 342-FH_000299.jpg, region about x 3600-4100, y 700-1100 px | INFERRED: Dense low buildings surround the rectangle on the south and the east. North-east of it the hillside is pale and scarred. INFERRED: bare or quarried ground. |  |
+| 342-FH_000299.jpg, region about x 3000-4100, y 440-1500 px | INFERRED: South-west of the rectangle, long parallel rows of buildings stand along straight streets. A channel with straight walls runs along the west edge of the airfield and then east along its north edge. INFERRED: the rows are the tenement streets of Kowloon City, and the channel is the Kai Tak nullah. |  |
 ### lead-l0436: MONAB VIII gallery: img_KaiTak_02.jpg ('November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield.') and img_KaiTak_03.jpg ('An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete.')
 
-- **Creator:** Unnamed photographers of MONAB VIII (Royal Navy, RNAS Kai Tak); served by the Royal Navy Research Archive
-- **Date:** November 1945 (img_KaiTak_02); date unknown, after the Japanese extension of the airfield, INFERRED 1944-1946 (img_KaiTak_03)
-- **Kind:** photo
-- **Class:** primary (Air photos taken at the time (1945-46) by men of the unit; the captions are later (RNRA).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** 'The Royal Navy Research Archive is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License' (gallery page; see the RNRA terms of use); footer '© 1999-2026 The Royal Navy Research Archive All Rights Reserved'.
-- **Link:** https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_02.jpg
-- **Other links:** https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_03.jpg, https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html
-- **Proof that it exists:** Gallery captions: 'November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield.' and 'An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete.'
-- **What it gives (resolver's note, not checked):** Two air photos of Kai Tak in 1945 (the Japanese-extended airfield; the RN workshop area on its west side). The City itself cannot be made out; the top edge of img_KaiTak_02 may show built-up ground of Kowloon City north of the airfield (INFERRED).
-- **Lead:** L0436 (cited by gwulo-14, maps-and-aerial-photos-1889-1994)
-- **Notes:** Same gallery as gwulo-14 (img_K&G_Littler_10.jpg). Earlier history (1945): less weight. If the reader wants the City site of 1945, ask the RNRA for higher-resolution copies.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Royal Navy Research Archive, 'Mobile Naval Air Base No. VIII gallery' (MONAB VIII, RNAS Kai Tak), images img_KaiTak_02.jpg (caption dated November 1945) and img_KaiTak_03.jpg (date unknown); photographers not named; https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html
+- **Class:** primary (Air photos of 1945 (and of about 1945-46) from the private collections of men of MONAB VIII; the captions are the archive's later text, thus secondary. They show Kai Tak, not the City. Earlier history (1945).)
+- **Date of the record:** November 1945 (img_KaiTak_02, per the caption); date unknown, after the Japanese extension of Kai Tak (img_KaiTak_03)
+- **Files:**
+  - `lead-l0436-img_KaiTak_02-056b300e.jpg` (in `local/`, not in git): Air photo of the MONAB VIII workshop area on the west side of Kai Tak, November 1945, with built-up ground north of the airfield at its top edge (1176x900 px JPEG); https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_02.jpg; 282555 bytes; SHA-256 `699e3b365aaf1eb380a074b1ef7a0a2a03ecc1b1fdb008e84156f308b0d44c39`; licence: Creative Commons Attribution-NonCommercial 3.0 Unported (gallery page); footer '© 1999-2026 The Royal Navy Research Archive All Rights Reserved' (https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html)
+  - `lead-l0436-img_KaiTak_03-dc3c6e41.jpg` (in `local/`, not in git): Oblique air photo of Kai Tak after the Japanese extension, date unknown (600x477 px JPEG); https://www.royalnavyresearcharchive.org.uk/MONABS/Photos_M8/img_KaiTak_03.jpg; 59466 bytes; SHA-256 `076bc533c74399373eccfd48c23e868806c8bbf86633ba867e5662514469defa`; licence: Creative Commons Attribution-NonCommercial 3.0 Unported (gallery page); footer '© 1999-2026 The Royal Navy Research Archive All Rights Reserved' (https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html)
+- **Note:** its 5 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../secondary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| img_KaiTak_02.jpg, top edge (y 0-200 px) | INFERRED: img_KaiTak_02 is a near-vertical air photo. Along its top edge a wide road with vehicles runs beside a walled channel. Beyond them is a dense area of small dark roofs, with rows of small white tents or huts at the right. INFERRED: this built-up ground is part of Kowloon City district north of the airfield. The walled City itself cannot be picked out. |  |
+
+- **Leads:**
+  - Higher-resolution copy of img_KaiTak_02.jpg (RNAS Kai Tak, November 1945), on a photo request to the Royal Navy Research Archive (gallery introduction): its top edge shows the ground north of the airfield.
 ### lead-l0448: Digital Orthophoto DOP1000-1982 (Plain Image Version), tile T11-NW-15B (INFERRED name of the tile west of T11-NE-11A)
 
 - **Creator:** Lands Department (地政總署), Survey and Mapping Office (測繪處)
@@ -980,3 +990,28 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** The 1982 orthophoto west of the held tile: INFERRED, the west tip of the City (west of about E 837500) and the land west of it (Tung Tau Tsuen Road (東頭村道) side, Sai Tau Tsuen (西頭村)).
 - **Lead:** L0448 (cited by maps-5, maps-and-aerial-photos-1889-1994)
 - **Notes:** Download outside the sandbox with curl as for maps-5 (ZIP about 40 MB, over the repo size limit: keep a crop of the City's west tip). Check with the world file that the tile really holds the west tip before cropping.
+- **Reading of 2026-11-26:** could not open it. I did not see the image. The file is a ZIP of about 39 MB, and the rules of this run do not let me download it. With a HEAD request in the Playwright browser (which ignores the host's certificate error) I checked that the tile exists: the Plain Image URL answers 200 with the file name 'DOP1000-1982P_TIFF_11NW15B.zip' and 38,966,251 bytes; the Grid Line URL answers 200 with 'DOP1000-1982G_TIFF_11NW15B.zip' and 39,015,044 bytes. Thus the sheet name T11-NW-15B is valid. I did not check with the world file that the tile holds the west tip of the City; repo-audit-1 names 11-NW-15B as a sheet next to 11-NE-11A. The main agent can download it outside the sandbox (as for maps-5) and keep only a crop.
+
+### lead-l1068: Admiralty Chart No 1466 Hong Kong surveyed by Captn. Sir Edward Belcher, in H.M.S. Sulphur 1841, Published 1843, Corrections to 1857
+
+- **Status:** Partly read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26. Opened the Commons file page (template PD-UKGov) and read the 3840 x 2537 px thumbnail. The full file (23,929 x 15,809 px, 55.8 MB) is too large to read or copy. At 3840 px the small fort of Kowloon City (built 1847) is not visible, thus I could not check the claim from china-27 (note 13) that the 1857 edition shows a rectangular fort. raremaps.com returned 403. A 7680 px thumbnail is refused by Commons (400).
+- **Citation:** United Kingdom Hydrographic Office (Admiralty), 'China. Hongkong. Surveyed by Captn. Sir Edward Belcher, in H.M.S. Sulphur, 1841', Admiralty Chart No. 1466, published at the Hydrographic Office of the Admiralty, 1 May 1843, corrections to 1857; Wikimedia Commons file (source: raremaps.com), https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1466_Hong_Kong_surveyed_by_Captn._Sir_Edward_Belcher,_in_H.M.S._Sulphur_1841,_Published_1843,_Corrections_to_1857.jpg
+- **Class:** primary (A survey chart made at the time (1841 survey, corrections to 1857). It is earlier than the folder's 1889 start; it also fits qing-records-and-treaty-1688-1899 by date.)
+- **Date of the record:** 1843-05-01, corrections to 1857
+- **Files:**
+  - `lead-l1068-3840px-Admiralty_Chart_No_1466_Hong_Kong_surveyed_by_Captn._-7e4fdbdd.jpg` (in git): Commons thumbnail of the chart, 3840 x 2537 px, 2.6 MB (the full file is 55.8 MB, too large); https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Admiralty_Chart_No_1466_Hong_Kong_surveyed_by_Captn._Sir_Edward_Belcher%2C_in_H.M.S._Sulphur_1841%2C_Published_1843%2C_Corrections_to_1857.jpg/3840px-Admiralty_Chart_No_1466_Hong_Kong_surveyed_by_Captn._Sir_Edward_Belcher%2C_in_H.M.S._Sulphur_1841%2C_Published_1843%2C_Corrections_to_1857.jpg; 2746774 bytes; SHA-256 `3962a8531c8b3ddb0ed3df780b20020d93ee28d128454213a6a67e2726a74795`; licence: Public domain (Commons template PD-UKGov: 'This work created by the United Kingdom Government is in the public domain.') (https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1466_Hong_Kong_surveyed_by_Captn._Sir_Edward_Belcher,_in_H.M.S._Sulphur_1841,_Published_1843,_Corrections_to_1857.jpg)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| bottom margin, imprint | The imprint says the Hydrographic Office of the Admiralty published the chart on 1 May 1843, with corrections to 1857. J. D. Potter sold it. | "Hydrographic Office of the Admiralty May 1st 1843. – Corrections to 1857." |
+| title block, upper right | The title block says that Captain Sir Edward Belcher surveyed Hongkong in H.M.S. Sulphur in 1841. | "SURVEYED BY CAPTN SIR EDWARD BELCHER, IN H.M.S. SULPHUR 1841." |
+| upper centre, north-west shore of Kowloon Bay (3840 px thumbnail) | The chart writes 'Kowloon' at the north-west shore of Kowloon Bay and draws a line of building blocks along the shore there (the village or town of Kowloon). | "Kowloon" |
+| upper centre, north shore of Kowloon Bay | INFERRED: East of the village, along the north shore of the bay, the chart draws a grid of small plots inland of the shore. INFERRED: these are fields; the chart has no word for them. | "Kowloon" |
+| upper centre, Kowloon Bay | INFERRED: At 3840 px I see no walled fort drawn at Kowloon; the village shows only as a line of building blocks. INFERRED: the fort can be visible in the full-size file. | "Kowloon" |
+| upper centre, Kowloon Bay | INFERRED: The chart names Kowloon Bay and Kowloon Rock in the bay. The soundings in the inner bay are about 2 to 4 fathoms (my reading of small figures). | "KOWLOON BAY" |
+| upper right edge | INFERRED: The chart names Kowloon Peak at the upper right edge, with a height figure that I read as 1980 (feet, INFERRED). | "Kowloon Peak" |
+| upper centre left, Kowloon peninsula | On the west shore of the Kowloon peninsula the chart marks an old fort in ruins, and a fort near Kowloon Point. These are not the walled city. | "Old Fort ruins" |
+
+- **Leads:**
+  - Admiralty Chart No. 1466, edition of 1864 (named by china-27, note 13, as showing the fort before its extension up Pak Hok Shan (白鶴山)); not found online.
+  - Admiralty Chart No. 1466 with corrections to 1903 (Field 1891, Moore 1892-93 surveys), on Commons: a second candidate for the City before 1899.

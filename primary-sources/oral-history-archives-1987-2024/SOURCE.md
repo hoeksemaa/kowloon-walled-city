@@ -104,3 +104,5 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** His own Cantonese account (not the archive's summary) of Lung Tsun Free School (龍津義學) near Sheng Xian Pavilion (升仙亭), the narrow streets and the dead addicts outside the pavilion, mid-1950s. The 27-minute record can hold more detail than the written summary that the repo holds.
 - **Lead:** L0613 (cited by top-top-en-testimony-19, oral-history-archives-1987-2024)
 - **Notes:** Listening needs the page player; a transcript must be made by ear (Cantonese).
+- **Reading of 2026-11-26:** could not open it. The lead is the Cantonese audio itself (TW-HCT-LIFE-002, 27m11s; highlight TW-HCT-HLT-001, 53s). I opened the oha_24 records page in the browser on 2026-11-26: it gives the biography and the player, but no transcript and no text beyond the written summaries. I cannot listen to audio, so I cannot make a transcript by ear. The written summaries of these records are already read in the repo (top-top-en-testimony-19). A person who understands Cantonese must listen to the record.
+

@@ -93,3 +93,31 @@ See the leads under each item in the primary folder.
 | leaf n9 (inside page; page number not legible), signed column 'Kowloon City' by H.G.W.W., col. 2 | The writer says that not many months before, Chinese former property owners, evicted because of the enlargement of the aerodrome and the levelling of the City, asked the British Government for compensation. | "Chinese former property-owners who had been evicted as a result of the enlargement of the aerodrome and the levelling of the City" |
 | leaf n9 (inside page; page number not legible), signed column 'Kowloon City' by H.G.W.W., col. 2, last para. | The writer says the 1898 Convention gave Chinese warships and merchant and passenger vessels only the use of the landing place near Kowloon City, for the movement of the officials and people of the City. | "for the convenience of movement of the officials and people within the City." |
 | p. 13 (leaf n24), 'What The Chinese Press Is Saying', Sing Tao Wan Pao paragraph, para. 2 | The Sing Tao Wan Pao wrote that after the war China prepared to set up a Chinese court in Kowloon City, and that the plan was shelved after the Hong Kong Government rejected China's claim on 14 Sep 1946. | "The Hong Kong Government on September 14, 1946, refuted China's sovereignty claim on Kowloon City" |
+
+### lead-l0484-1: PUBLIC EXECUTIONS AT OLD KOWLOON CITY. (column 'Kowloon 25 Years Ago'), Hong Kong Daily Press, 2 February 1933
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Daily Press, Thursday 2 February 1933, p.2 (Kowloon pages), leaf n17: 'Public Executions at Old Kowloon City'. Internet Archive item NPDP19330202, https://archive.org/details/NPDP19330202 The running head of this page misprints the date as 'Thursday, January 2, 1933'; the item and the weekday give 2 February 1933.
+- **Class:** secondary (A note of 1933 on events of 1891, written 42 years later. It belongs in secondary-sources/.)
+- **Date of the record:** 1933-02-02
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-english-press-1899-1994/SOURCE.md`](../../primary-sources/hk-english-press-1899-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n17, p.2, column 4 | On 17 April 1891 the Chinese authorities carried out a mass execution of pirates at Kowloon City; 16 of the victims were men who had attacked the steamer 'Namoa'. | "On April 17th, 1891, a wholesale execution of pirates was carried out by the Chinese authorities at Kowloon City" |
+| leaf n17, p.2, column 4 | Six more were beheaded on 11 May 1891. | "Another six were beheaded on May 11th." |
+
+### lead-l0484-2: When the Volunteers Stormed Kowloon City (Kowloon Supplement, with 'Is It Progress?'), Hong Kong Daily Press, 20 April 1933
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Daily Press, Kowloon Daily Supplement No. 67, Thursday 20 April 1933, p.11, leaf n10: 'When the Volunteers Stormed Kowloon City. Customs Officials Who Carried Their Lives in Their Hands.' (quotes L. C. Arlington, 'Through the Dragon's Eyes'). Internet Archive item NPDP19330420, https://archive.org/details/NPDP19330420
+- **Class:** secondary (A 1933 article that quotes the memoir of a former official of the Chinese Maritime Customs about 1898-1899; Arlington was not a witness of the seizure. It belongs in secondary-sources/.)
+- **Date of the record:** 1933-04-20
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-english-press-1899-1994/SOURCE.md`](../../primary-sources/hk-english-press-1899-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n10, p.11, column 1 | The article quotes L. C. Arlington, formerly of the Chinese Maritime Customs: Hong Kong decided to take the rest of Kowloon, including the old Kowloon City. | "decided to take the rest of it, including what was known as the old Kowloon City." |
+| leaf n10, p.11, column 1 | INFERRED: By Arlington's story, the Hong Kong Volunteers crossed the harbour one dark night, scaled the walls and took the City. INFERRED: this does not match the reports of 1899, which say the troops came in the afternoon and found the gate open. | "So one dark night the Hong Kong Volunteers crossed the Harbour, and, scaling the walls of the City of Kowloon, took possession of it." |
+| leaf n10, p.11, column 1 | By Arlington's story, the Viceroy at Canton demanded that the British forces leave, but his demands were ignored. | "The Viceroy at Canton demanded the departure of the British forces but his demands fell on deaf ears" |
+| leaf n10, p.11, column 1 | By Arlington's story, there were several fights between the Hong Kong Police and the local Chinese before the British held the new territory. | "there were several tussles between the Hong Kong Police and the local Chinese" |

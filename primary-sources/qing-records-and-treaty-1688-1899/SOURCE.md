@@ -8,7 +8,7 @@ Records of the fort, the yamen and the treaty, made at the time.
 - **Dates:** 1688-1971.
 - **Items:** 28, of which 28 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 6 files with an open licence (Page tagged {{PD-old}}; Wikisource text under CC BY-SA 4.0 (site footer); Qing text public domain: the main page of the work (清實錄/宣宗成皇帝實錄) carries {{PD-old}}; the chapter page has no tag of its own. Wikisource text under CC BY-SA 4.0 (site footer).), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 3 files with an open licence (CC BY-SA 4.0 (Wikisource footer: '本站的全部文字在知识共享 署名-相同方式共享 4.0协议之条款下提供'); the Qing text itself is public domain by age), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -625,72 +625,152 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0494-1: 申報 1899.05 - 139 - 09377 (Shenbao, 25 May 1899 (光緒二十五年四月十六日), issue 9377)
 
-- **Creator:** Shenbao (申報), Shanghai
-- **Date:** 1899-05-25
-- **Kind:** press
-- **Class:** primary (Page images of a newspaper of the time (May 1899), which reprints a Hong Kong daily on the British occupation of 深圳 and the City area.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
-- **Link:** https://archive.org/details/shenbao-1899.05-139
-- **Proof that it exists:** archive.org advanced search: identifier shenbao-1899.05-139, title '申報 1899.05 - 139 - 09377', collection shenbao-archive
-- **What it gives (resolver's note, not checked):** The page images of the issue with the section 英據深圳, to check the gaps of the OCR text that the repo holds (top-commons-15), for May 1899.
-- **Lead:** L0494 (cited by top-commons-15, qing-records-and-treaty-1688-1899)
-- **Notes:** Use with the repo's OCR (top-commons-15-index-48877f59.txt). Earlier history (1899): less weight. Do not copy the uploader's contact details from the item metadata.
+- **Status:** Partly read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26. I read the IIIF manifest of the archive.org item (16 page images) and looked at image 0 (front page) at 1250 px and at full size in crops of the section 英據深圳. The front page of this issue is very heavily blotted with ink, and most of the gaps in the repo's OCR (top-commons-15-index-48877f59.txt) are blots in the print itself: the name of the Hong Kong paper (香□□□日報), the order (英廷□□...), the place after 三隊□至 and the word before 人啓釁 stay unreadable. I could read only a few more characters, and I mark them INFERRED.
+- **Citation:** 申報 (Shenbao), Shanghai, no. 9377 (第九千三百七十七號), 25 May 1899 (光緒二十五年四月十六日), section 英據深圳 (quoting a Hong Kong daily paper), p. 1. Page image of the Internet Archive item 'shenbao-1899.05-139' (申報 1899.05 - 139 - 09377), image 0; https://archive.org/details/shenbao-1899.05-139
+- **Class:** primary (A newspaper of the time (May 1899), reprinting a Hong Kong paper. The primary tree is correct. Earlier history (1899).)
+- **Date of the record:** 1899-05-25 (光緒二十五年四月十六日)
+- **Files:**
+  - `lead-l0494-1-default-01961b2c.jpg` (in `local/`, not in git): 申報 25 May 1899, front page (image 0, 2484x2579 px), with the section 英據深圳; heavily blotted; https://iiif.archive.org/image/iiif/3/shenbao-1899.05-139%2F1899.05%20-%20139%20-%2009377_jp2.zip%2F1899.05%20-%20139%20-%2009377_jp2%2F1899.05%20-%20139%20-%2009377_0000.jp2/full/max/0/default.jpg; 2362367 bytes; SHA-256 `929c3ada808c1994bcb9a40f01294d8b0905055e877b30fc80935923c8bb120f`; licence: No rights statement on the archive.org item (its metadata has no licenseurl or rights field); a Shanghai newspaper of 1899, public domain by age (PD-old), but the host does not say so. (https://archive.org/details/shenbao-1899.05-139)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 0 (p. 1), columns about x 290-540 px of 2484 | The section 英據深圳 is on the front page, in the columns left of centre. The whole front page is heavily blotted with ink; this is the cause of most gaps in the OCR. | "英據深圳" (The British occupy Shenzhen) |
+| image 0 (p. 1), second column of the section, lower half | INFERRED: INFERRED reading: when the residents saw the British troops arrive suddenly, they were at a loss. In the scan the two blotted characters after 一見 look like 英兵, and the one before 無頭緒 looks like 茫. The OCR has gaps at these places. | "居民一見英兵猝至茫無頭緒" (when the residents saw the British troops arrive suddenly, they were utterly at a loss) |
+| image 0 (p. 1), first to third columns of the section | Where it can be read, the scan agrees with the OCR: the troops went to Kowloon City (九龍城), then on the 7th split into three columns; the Chinese troops were not ready and the British took their camps and posts; many residents hired boats and fled inland. | "赴九龍城後初七日復分出三隊" (went to Kowloon City; afterwards, on the 7th, they again split into three columns) |
+
+- **Leads:**
+  - Another copy of 申報 25 May 1899 (for example a reprint edition or another library's microfilm), because the front page of this scan is blotted at the gaps of the section 英據深圳.
 ### lead-l0494-2: 申報 1899.06 - 152 - 09390 (Shenbao, 7 June 1899 (光緒二十五年四月廿九日), issue 9390)
 
-- **Creator:** Shenbao (申報), Shanghai
-- **Date:** 1899-06-07
-- **Kind:** press
-- **Class:** primary (Page images of a newspaper of the time (June 1899), which reprints the Canton papers 廣州中西報 and 廣州博聞報.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
-- **Link:** https://archive.org/details/shenbao-1899.06-152
-- **Proof that it exists:** archive.org advanced search: identifier shenbao-1899.06-152, title '申報 1899.06 - 152 - 09390', collection shenbao-archive
-- **What it gives (resolver's note, not checked):** The page images of the issue with the sections 英踞深圳 and 助守虎門, to check the gaps of the OCR text that the repo holds (top-commons-15), for June 1899.
-- **Lead:** L0494 (cited by top-commons-15, qing-records-and-treaty-1688-1899)
-- **Notes:** Use with the repo's OCR (top-commons-15-index-c075fea2.txt). Earlier history (1899): less weight.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 申報 (Shenbao), Shanghai, no. 9390 (第九千三百九十號), 7 June 1899 (光緒二十五年四月廿九日), sections 英踞深圳 (quoting 廣州中西報) and 助守虎門 (quoting 廣州博聞報), p. 1 (last columns at the left) to p. 2 (first column). Page images of the Internet Archive item 'shenbao-1899.06-152' (申報 1899.06 - 152 - 09390), images 0 and 1; https://archive.org/details/shenbao-1899.06-152
+- **Class:** primary (A newspaper of the time (June 1899), reprinting Canton papers. The primary tree is correct. Earlier history (1899).)
+- **Date of the record:** 1899-06-07 (光緒二十五年四月廿九日)
+- **Files:**
+  - `lead-l0494-2-default-6f47a35c.jpg` (in `local/`, not in git): 申報 7 June 1899, front page (image 0, 2505x2581 px), with the sections 英踞深圳 and 助守虎門; https://iiif.archive.org/image/iiif/3/shenbao-1899.06-152%2F1899.06%20-%20152%20-%2009390_jp2.zip%2F1899.06%20-%20152%20-%2009390_jp2%2F1899.06%20-%20152%20-%2009390_0000.jp2/full/max/0/default.jpg; 2727769 bytes; SHA-256 `cfdd2b7d0ca690db29cd53be55a6676fd4ab3cc3267d582fddfdfcac613a480b`; licence: No rights statement on the archive.org item (its metadata has no licenseurl or rights field); a Shanghai newspaper of 1899, public domain by age (PD-old), but the host does not say so. (https://archive.org/details/shenbao-1899.06-152)
+  - `lead-l0494-2-default-bbd97d9b.jpg` (in `local/`, not in git): 申報 7 June 1899, page 2 (image 1, 2538x2536 px), with the end of 助守虎門; https://iiif.archive.org/image/iiif/3/shenbao-1899.06-152%2F1899.06%20-%20152%20-%2009390_jp2.zip%2F1899.06%20-%20152%20-%2009390_jp2%2F1899.06%20-%20152%20-%2009390_0001.jp2/full/max/0/default.jpg; 2780469 bytes; SHA-256 `e488e383453e3352326fc7376a5e54d1940d6edc39a0c8ce0ed0d543fbfa59a9`; licence: No rights statement on the archive.org item (its metadata has no licenseurl or rights field); a Shanghai newspaper of 1899, public domain by age (PD-old), but the host does not say so. (https://archive.org/details/shenbao-1899.06-152)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 0 (p. 1), columns about x 60-300 px of 2505; image 1 (p. 2), first column | The sections 英踞深圳 and 助守虎門 are the last columns at the far left of the front page. 助守虎門 ends in the first column at the right of page 2. | "英踞深圳" (The British occupy Shenzhen) |
+| image 0 (p. 1), section 英踞深圳, first columns | The scan confirms the OCR text of 英踞深圳 without gaps: the British, having occupied Kowloon City (九龍城), sent three columns of troops straight to Shenzhen market (深圳埠) and put up the British emblem. | "英人旣踞九龍城復派兵三隊直抵深圳埠改樹英國徽章" (The British, having occupied Kowloon City, sent three columns of troops straight to Shenzhen market and put up the British emblem.) |
+| image 1 (p. 2), first column, top | INFERRED: The one OCR gap in 助守虎門 (之□粤督) is a damaged character at the top of the first column of page 2. INFERRED: it is 勢, which gives 'they have the air of taking a foot where they can get a foot, an inch where they can get an inch'. | "大有得尺則尺得寸則寸之勢" (they very much have the air of taking a foot where they can get a foot and an inch where they can get an inch) |
+| image 0 (p. 1), section 助守虎門 | INFERRED: The print itself reads 南安之南頭 (Nantou of 'Nan'an'), as the OCR does; it is not an OCR error. INFERRED: a slip of the paper for 新安 (Xin'an county), whose seat was Nantou. | "揮兵至南安之南頭地方" (sent troops to the place Nantou in Nan'an) |
 ### lead-l0495: 申報 1899.05 - 117 - 09355 (Shenbao, 3 May 1899 (光緒二十五年三月廿四日), issue 9355)
 
-- **Creator:** Shenbao (申報), Shanghai
-- **Date:** 1899-05-03
-- **Kind:** press
-- **Class:** primary (Page images of a newspaper of the time (May 1899): a letter from a correspondent in Guangzhou with the British order on the extension of Hong Kong.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item; the newspaper of 1899 is in the public domain (PD-old).
-- **Link:** https://archive.org/details/shenbao-1899.05-117
-- **Other links:** https://archive.org/download/shenbao-1899.05-117
-- **Proof that it exists:** archive.org metadata: title '申報 1899.05 - 117 - 09355', 14 page images in the JP2 ZIP, an image PDF and OCR files; collection shenbao-archive
-- **What it gives (resolver's note, not checked):** The page images of the issue with the section 九龍近事, to check the garbled passage of the British regulations and the clause on 九龍寨城内外 in the OCR that the repo holds (top-commons-16).
-- **Lead:** L0495 (cited by top-commons-16, qing-records-and-treaty-1688-1899)
-- **Notes:** Earlier history (1899): less weight, but the clause on 九龍寨城内外 bears on the status of the City. Do not copy the uploader's contact details from the item metadata.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 申報 (Shenbao), Shanghai, no. 9355 (第九千三百五十五號), 3 May 1899 (光緒二十五年三月廿四日), section 九龍近事 (letter of a Guangzhou correspondent, with the British regulations and order on the New Territory), p. 1 (left columns) to p. 2 (first columns). Page images of the Internet Archive item 'shenbao-1899.05-117' (申報 1899.05 - 117 - 09355), images 0 and 1; https://archive.org/details/shenbao-1899.05-117
+- **Class:** primary (A newspaper of the time (May 1899). The primary tree is correct. Earlier history (1899).)
+- **Date of the record:** 1899-05-03 (光緒二十五年三月廿四日)
+- **Files:**
+  - `lead-l0495-default-c9186507.jpg` (in `local/`, not in git): 申報 3 May 1899, front page (image 0, 2488x2610 px): start of the section 九龍近事 in the left columns; https://iiif.archive.org/image/iiif/3/shenbao-1899.05-117%2F1899.05%20-%20117%20-%2009355_jp2.zip%2F1899.05%20-%20117%20-%2009355_jp2%2F1899.05%20-%20117%20-%2009355_0000.jp2/full/max/0/default.jpg; 2591106 bytes; SHA-256 `8eac4b178b9943c98d8a3b7cbcf63fed9f795e51dd33633b11e1c7c4fcbfb27f`; licence: No rights statement on the archive.org item (its metadata has no licenseurl or rights field); a Shanghai newspaper of 1899, public domain by age (PD-old), but the host does not say so. (https://archive.org/details/shenbao-1899.05-117)
+  - `lead-l0495-default-28dc5853.jpg` (in `local/`, not in git): 申報 3 May 1899, page 2 (image 1, 2513x2606 px): end of 九龍近事 with the clause on 九龍寨城內外; https://iiif.archive.org/image/iiif/3/shenbao-1899.05-117%2F1899.05%20-%20117%20-%2009355_jp2.zip%2F1899.05%20-%20117%20-%2009355_jp2%2F1899.05%20-%20117%20-%2009355_0001.jp2/full/max/0/default.jpg; 2554999 bytes; SHA-256 `65989caf4d01a8ddfc456174bdd1eb30e6f31334735c3459b8fcac2207e561a5`; licence: No rights statement on the archive.org item (its metadata has no licenseurl or rights field); a Shanghai newspaper of 1899, public domain by age (PD-old), but the host does not say so. (https://archive.org/details/shenbao-1899.05-117)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 0 (p. 1), left columns; image 1 (p. 2), first columns at the right | The section 九龍近事 begins in the left-hand columns of the front page, after a report on Prince Henry at Hankou, and ends in the first columns at the right of page 2, before the section 日界未定. | "九龍近事" (Recent news of Kowloon) |
+| image 0 (p. 1), columns 4-5 of the section | The scan shows the true order of the passage that the Wikisource OCR garbles. After raising their flag, the British officials drew up (釐訂) three articles of rules and posted them in the streets. 釐 stands at the foot of one column and 訂 at the top of the next. The OCR jumps from 之後釐 to the column after next (養六畜 to 審度合宜之), and only then gives the column that it skipped (訂章程 ...). | "至英官則於竪立國旗之後釐訂章程三欵黏貼通衢" (As for the British officials, after raising the national flag they drew up three articles of rules and posted them on the thoroughfares.) |
+| image 0 (p. 1), columns 5-6 of the section | The first article says that 22 Hong Kong ordinances are not suitable for governing the New Territory and can be waived there in future, for example those on keeping livestock, slaughterhouses and markets, licences, opium, personal cleanliness, houses, and registers of births and deaths. The scan reads 豢養 (keeping). The OCR's 釐養 joins 釐 (of 釐訂, at the foot of the column before) to 養 (at the top of the column after next). | "本港則例內有二十二條以之治理新界未能合宜將來新界中可將此例免如豢養六畜及屠房街市領牌鴉片" (this colony's ordinances include twenty-two that are not suitable for governing the New Territory; in future these can be waived in the New Territory, for example on keeping livestock, slaughterhouses and markets, licences, opium) |
+| image 0 (p. 1), last columns of the section | The second article sets up courts in the New Territory: third-class branch courts (三等分署) in suitable places, for petty cases. They hear debt claims of less than 100 dollars and criminal cases with fines of not more than 10 dollars. | "凡禀控錢債銀數不及一百圓刑名案罰銀不過十圓" (all suits for debts of less than one hundred dollars, and criminal cases with fines of not more than ten dollars) |
+| image 0 (p. 1), last column, into image 1 (p. 2), first column | For a repeat offence the third-class courts can fine up to 10 dollars a day, imprison for up to one month and cane with up to twelve strokes of the rattan. | "如係再犯每日罰銀不過十圓監禁不過一月笞靑不過十二藤條者俱由三等分署審判" (for a repeat offence, a fine of not more than ten dollars a day, imprisonment of not more than one month, or not more than twelve strokes of the rattan: all are tried by the third-class branch courts) |
+| image 1 (p. 2), columns 1-2 | INFERRED: First- and second-class branch courts are also set up. An appeal goes from the third-class court to the second and first class, and is then reported to the 巡理府 and up to the Governor's office (督轅). INFERRED: 巡理府 is the Police Magistrate. | "如有上控之案可由三等分署而至二等一等申詳巡理府以達督轅" (an appealed case can go from the third-class court to the second and first class, and be reported to the magistrate and so to the Governor's office) |
+| image 1 (p. 2), column 2 | The Governor has the power to make rules in the Legislative Council (定例局) to govern the New Territory and protect its residents, to levy rates (差餉), to appoint first- and second-class officers, and to punish those who break the rules. One character of the phrase 設立□例 is faint in the scan; it can be 外 or 新, and I cannot decide. | "本港總督有權在定例局設立□例治理新界地方及保護居人身體等事" (the Governor of this colony has power to make [...] rules in the Legislative Council to govern the New Territory and protect the persons of its residents) |
+| image 1 (p. 2), columns 3-4 | INFERRED: The order applies Ordinance 18 (on false oaths) and Ordinance 28 (on 紳耆 and the village watchmen (更練) taking bribes), under Hong Kong Ordinance No. 3 of 1898, and Ordinance 29 (miscellaneous taxes, land tax and rates). The OCR gap after 紳 is a damaged character in the scan. INFERRED: it is 耆 (elders). | "第二十八條紳耆曁更練收受私規則例按照一千八百九十八年本港第三條則例辦理" (Ordinance 28, on gentry-elders and watchmen taking private fees, to be applied according to Ordinance No. 3 of 1898 of this colony) |
+| image 1 (p. 2), columns 4-5 | INFERRED: The third article: the Legislative Council (議例局) is to settle a good way of taxing, so that the residents do not become suspicious. The Governor can also make separate rules on the sale of salt, wine, opium and the like, for one year at first, to be reviewed after it. The scan reads 另 in the OCR gap before 定章程. | "又有權可將販賣鹽酒鴉片等項另定章程如果准行限以一年爲期滿期再議" (and has power to make separate rules for the sale of salt, wine, opium and the like; if approved, for a term of one year, to be reviewed at its end) |
+| image 1 (p. 2), columns 8-9 (top of column 9) | The scan confirms the clause on the City in the appended order: only the places inside and outside the Kowloon walled city (九龍寨城) stay under the self-government of Chinese officials, except for matters of the military defence of Hong Kong. A column break falls between 九龍 and 寨城; the characters 寨城內外 are clear at the top of the next column. | "惟九龍寨城內外地方仍屬中國官員自治倘有關礙保護香港兵事不在此議" (only the places inside and outside the Kowloon walled city remain under the self-government of Chinese officials; matters affecting the military protection of Hong Kong are not covered by this) |
+
+- **Leads:**
+  - The English original of the three articles of rules that the British posted after raising the flag in the New Territory in April 1899 (courts, ordinances not applied, taxes): Hong Kong Government Gazette, April 1899.
+  - Hong Kong Ordinance No. 3 of 1898, as 申報 3 May 1899 names it ('一千八百九十八年本港第三條則例'), under which Ordinances 18, 28 and 29 were to apply to the New Territory.
 ### lead-l0496: Convention between the United Kingdom and China, respecting an extension of Hong Kong territory, with a map; signed at Peking, June, 9, 1898 (Treaty Series, 1898 [No. 16])
 
-- **Creator:** Great Britain (Foreign Office); London: HMSO (Harrison and Sons), 1898
-- **Date:** 1898-12 (presented to Parliament December 1898; convention signed 9 June 1898)
-- **Kind:** document
-- **Class:** primary (The official British print of the treaty and its map, of 1898.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** HKU Digital Repository: License 'All rights reserved', Rights Statement 'In Copyright' (for the scan; the text of 1898 is Crown copyright, expired).
-- **Link:** https://digitalrepository.lib.hku.hk/catalog/1831dr158
-- **Other links:** https://digitalrepository.lib.hku.hk/service/api/iiif/manifest/1831dr158, https://digitalrepository.lib.hku.hk/service/api/iiif/images/qn59rb16j/full/full/0/default.jpg
-- **Proof that it exists:** Title page (image 3): 'TREATY SERI[ES] 1898. CONVENTION between the UNITED KINGDOM AND CHINA, respecting an EXTENSION OF HONG KONG TERRITORY. [WITH A MAP.] Signed at Peking, June 9, 1898.'
-- **What it gives (resolver's note, not checked):** The official text of the Convention of 9 June 1898 with its map, in the British print of December 1898: the clause that kept Chinese jurisdiction in the City and the map that marks it. It confirms the text that the repo has from Rockhill (1904).
-- **Lead:** L0496 (cited by top-commons-17, qing-records-and-treaty-1688-1899)
-- **Notes:** The IIIF images open without JavaScript (10 images, about 2000 x 1500 px; INFERRED: image 5 (portrait, 1500 x 2061) is the map). Earlier history (1898): less weight; the repo already has the text and the map from Rockhill (top-commons-17).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Great Britain, Foreign Office, 'Convention between the United Kingdom and China, respecting an Extension of Hong Kong Territory. [With a map.] Signed at Peking, June 9, 1898. [Ratifications exchanged at London, August 6, 1898.]', Treaty Series 1898, No. 16, [C.—9087], presented to both Houses of Parliament December 1898, London: HMSO (Harrison and Sons), 1898; map 'Hong Kong Extension', lithographed at the Intelligence Division, War Office, Nov. 1898; copy in the University of Hong Kong Libraries (HKP 327.5125 G7), HKU Digital Repository 1831dr158, images 1-10, https://digitalrepository.lib.hku.hk/catalog/1831dr158
+- **Class:** primary (The official British print of the treaty of 1898, made at the time (December 1898). Image 8 is a later handwritten Chinese copy (after 1945, INFERRED from the stamp of the United Nations Association of Hong Kong); its text is the treaty's, but the copy is not of 1898.)
+- **Date of the record:** 1898-12 (presented to Parliament December 1898; convention signed 9 June 1898; map lithographed November 1898)
+- **Files:**
+  - `lead-l0496-default-4967de19.jpg` (in `local/`, not in git): Image 4: title page of Treaty Series 1898 No. 16 (Secretary for Chinese Affairs library copy), 2065 x 1500 px.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/vq280v828/full/full/0/default.jpg; 246960 bytes; SHA-256 `5672dec9197702a1253e22aba2c16619c0845a9e2ae8ef1723b5758c256e8641`; licence: HKU Digital Repository page footer: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the 1898 text is Crown copyright, expired, but the host states all rights reserved for the scan) (https://digitalrepository.lib.hku.hk/catalog/1831dr158)
+  - `lead-l0496-default-bd36e910.jpg` (in `local/`, not in git): Image 5: page [80], the text of the convention with the Kowloon City clause, 1500 x 2061 px.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/6d5713611/full/full/0/default.jpg; 307511 bytes; SHA-256 `bbfc368e0344f9ebbefd4effa58f7f773caa3b38cc87fac70f391ecf29db05df`; licence: HKU Digital Repository page footer: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the 1898 text is Crown copyright, expired, but the host states all rights reserved for the scan) (https://digitalrepository.lib.hku.hk/catalog/1831dr158)
+  - `lead-l0496-default-ee38c587.jpg` (in `local/`, not in git): Image 6: page 2, the end of the convention and the signatures, 1500 x 1585 px.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/vd66x533c/full/full/0/default.jpg; 167692 bytes; SHA-256 `725ccad903219f621a73965063150603b9a18626e533ea5980c4206698924042`; licence: HKU Digital Repository page footer: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the 1898 text is Crown copyright, expired, but the host states all rights reserved for the scan) (https://digitalrepository.lib.hku.hk/catalog/1831dr158)
+  - `lead-l0496-default-d7e5909d.jpg` (in `local/`, not in git): Image 7: the map 'Hong Kong Extension' (I.D.W.O., November 1898), 1500 x 1879 px.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/9z9044957/full/full/0/default.jpg; 194491 bytes; SHA-256 `554b3459874b5828b524f2ad057e8d5593e176307e49b5b5af11b4bc20dc6b79`; licence: HKU Digital Repository page footer: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the 1898 text is Crown copyright, expired, but the host states all rights reserved for the scan) (https://digitalrepository.lib.hku.hk/catalog/1831dr158)
+  - `lead-l0496-default-9c3d3cb0.jpg` (in `local/`, not in git): Image 8: a later handwritten Chinese text of the convention, stamped by the United Nations Association of Hong Kong (聯合國香港協會), 2016 x 1500 px.; https://digitalrepository.lib.hku.hk/service/api/iiif/images/h415qj510/full/full/0/default.jpg; 439926 bytes; SHA-256 `038e455a9ad81edf52bdfdf443910f8f0e58ed15deb69b7da93323cebe25c7f2`; licence: HKU Digital Repository page footer: 'Copyright © 2026 The University of Hong Kong. All Rights Reserved.' (the 1898 text is Crown copyright, expired, but the host states all rights reserved for the scan) (https://digitalrepository.lib.hku.hk/catalog/1831dr158)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 4 (title page) | The print is Treaty Series 1898, No. 16. It was presented to both Houses of Parliament in December 1898 and printed by Harrison and Sons for HMSO, command paper C.-9087, price 3½d. | "TREATY SERIES. No. 16. 1898. ... Presented to both Houses of Parliament by Command of Her Majesty. December 1898." |
+| image 5, p. [80] | The convention was signed at Peking on 9 June 1898. The ratifications were exchanged at London on 6 August 1898. | "Signed at Peking, June 9, 1898. [Ratifications exchanged at London, August 6, 1898.]" |
+| image 5, p. [80] | The limits of British territory were enlarged under lease, as the annexed map shows in general. Officials of the two governments were to fix the exact boundaries after surveys. The lease was for ninety-nine years. | "The exact boundaries shall be hereafter fixed when proper surveys have been made ... The term of this lease shall be ninety-nine years." |
+| image 5, p. [80] | Within the city of Kowloon (九龍城 in the Chinese text of image 8), the Chinese officials then stationed there were to keep their jurisdiction, except where it conflicted with the military needs of the defence of Hong Kong. | "within the city of Kowloon the Chinese officials now stationed there shall continue to exercise jurisdiction except so far as may be inconsistent with the military requirements" |
+| image 5, p. [80] | In the rest of the leased territory Great Britain was to have sole jurisdiction. Chinese officials and people kept the right to use the road from Kowloon to Hsinan (新安 in the Chinese text of image 8). | "Within the remainder of the newly-leased territory Great Britain shall have sole jurisdiction. Chinese officials and people shall be allowed as heretofore to use the road from Kowloon to Hsinan." |
+| image 5, p. [80] | The existing landing-place near Kowloon city was reserved for Chinese men-of-war, merchant and passenger vessels, and for the movement of the officials and people within the city. | "the existing landing-place near Kowloon city shall be reserved for the convenience of Chinese men-of-war, merchant and passenger vessels" |
+| image 5, p. [80] | The convention promised no expropriation or expulsion of the inhabitants of the district in the extension. Land needed for public offices, fortifications and the like was to be bought at a fair price. | "there will be no expropriation or expulsion of the inhabitants of the district included within the extension" |
+| image 6, p. 2 | The convention came into force on 1 July 1898. It was done at Peking in four English and four Chinese copies on 9 June 1898, and signed by Claude M. MacDonald with the seal of the Chinese plenipotentiary. | "This Convention shall come into force on the first day of July, eighteen hundred and ninety-eight" |
+| image 7 (map), title, scale bar and foot | INFERRED: The map is titled 'Hong Kong Extension', a reproduction of the map attached to the convention. Its scale is 1/314,265 (1 inch to 4.96 miles). It was lithographed at the Intelligence Division of the War Office in November 1898. The map number at the lower left reads I.D.W.O. No. 1376 (INFERRED reading: the third digit can also be 1). | "Reproduction of the Map attached to the Convention between Great Britain and China signed at Peking on the 9th of June 1898" |
+| image 7 (map), centre and legend | INFERRED: The map legend has only three entries: territory previously British, the boundary of the leased area, and Chinese territory. The map labels Kowloon in Chinese (九龍, printed right to left) with a small square under it. It has no other mark for the walled city. INFERRED: the small square marks the town of Kowloon City; at this scale the map cannot show the City's shape. | "Territory previously belonging to Great Britain ... Boundary of area leased to Great Britain ... Chinese Territory" |
+| image 8 (handwritten Chinese copy), columns 7-8 from the right, counting the title column (the column that begins 在九龍城內駐紮) | INFERRED: A later handwritten Chinese copy, titled 'Original text of the 1898 convention leasing Kowloon', gives the City clause: the Chinese officials stationed in Kowloon City (九龍城) may continue their duties within the city, but must not hinder the military defence of Hong Kong. (INFERRED reading of handwriting; the copy uses some simplified or variant forms, for example 内 and 与; the quote gives the traditional forms.) | "在九龍城內駐紮之中國官員，仍可在城內各司其事，惟不得與保衛香港之武備有所妨礙" (the Chinese officials stationed within Kowloon City may still each manage their affairs within the city, but must not obstruct the military defence of Hong Kong) |
+| image 8 (handwritten Chinese copy), columns 10-12 from the right, counting the title column | INFERRED: The same handwritten Chinese copy keeps the old pier near Kowloon City (九龍城原舊碼頭) for Chinese warships, merchant ships and ferries, and for the free movement of the officials and people of the city. (INFERRED reading of handwriting.) | "仍留附近九龍城原舊碼頭一區，以便中國兵商各船渡艇，任便往來停泊，且便城內官民，任便行走" (the area of the old pier near Kowloon City is still kept, so that Chinese warships, merchant ships and ferries can come, go and moor freely, and the officials and people of the city can move freely) |
+### lead-l0954-1: 宣宗成皇帝實錄/卷398
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 《宣宗成皇帝實錄》 (Veritable Records of the Daoguang Emperor), 卷398, 道光二十三年冬十月辛酉 (13 December 1843), Chinese Wikisource transcription, https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7398
+- **Class:** primary (Court edicts of 1843, as compiled in the Veritable Records. It belongs in the primary tree.)
+- **Date of the record:** 道光二十三年十月辛酉 (1843-12-13, computed from the day name)
+- **Files:**
+  - `lead-l0954-1-_398-da66b925.html` (in git): HTML of the Wikisource transcription of juan 398; https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7398; 80730 bytes; SHA-256 `75eb760d9ab1c44b07ea13c9572e798756eb9075b348f92dfe9e64ff5bf12c5d`; licence: CC BY-SA 4.0 (Wikisource footer: '本站的全部文字在知识共享 署名-相同方式共享 4.0协议之条款下提供'); the Qing text itself is public domain by age (https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7398)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 卷398, 十月辛酉, first edict | INFERRED: On 13 December 1843 (computed) an edict to the Grand Council answers a memorial of 耆英: he asked to move a sub-magistrate (巡检) to Kowloon, near Hong Kong. | "前据耆英等奏、请改设巡检。移驻附近香港之九龙地方。" (Earlier 耆英 and others memorialised, asking to set up a sub-magistrate moved to the place Kowloon near Hong Kong.) |
+| 卷398, 十月辛酉, first edict | The task of the post was to check the permits of ships going in and out. | "稽查出入牌照等语" (to check the permits for going in and out) |
+| 卷398, 十月辛酉, first edict | The emperor first feared that a sub-magistrate alone was too weak a check. | "若仅责成巡检稽查。恐立法尚未周密。" (If only a sub-magistrate is charged with the checks, the rules may not yet be thorough.) |
+| 卷398, 十月辛酉, first edict | 耆英 replied that the rank of the checking official did not matter; only real work mattered. | "不在验照官之大小。全在行之以实。" (It does not depend on the rank of the official who checks the permits, but entirely on doing it in earnest.) |
+| 卷398, 十月辛酉, first edict | The ports that gave the permits were to report them each month to the Guangdong Customs (粤海关). | "既由给照口岸。按月报明粤海关。" (The ports that issue the permits report them monthly to the Guangdong Customs.) |
+| 卷398, 十月辛酉, first edict | The edict approves the move of the 官富司 sub-magistrate of 新安县 to Kowloon, with the new title Kowloon sub-magistrate (九龙巡检), as an important coastal post. | "广东新安县属之官富司巡检。请移驻九龙地方。改为九龙巡检。作为海疆要缺。" (The 官富司 sub-magistrate under 新安 county, Guangdong, is to move to Kowloon, be renamed Kowloon sub-magistrate, and be an important coastal post.) |
+| 卷398, 十月辛酉, first edict | 許文深 (许文深), a probationer of the lower ninth rank, was to act in the post, with a term of three years. | "准以试用从九品许文深试署 ... 并定为在任三年" (Approved: 许文深, probationer of the lower ninth rank, to act in the post ... and fixed at three years in office.) |
+| 卷398, 十月辛酉, first edict | The edict warns that the sub-magistrate must not let his clerks extort money. | "断不可任吏胥勒索" (He must by no means let the clerks extort money.) |
+| 卷398, 十月辛酉, second edict (又谕) | A second edict of the same day, on 耆英's report on the treaty settlement, makes the Kowloon sub-magistrate responsible for checking the trade with Hong Kong. | "其香港通市一节。责成九龙巡检稽查。" (As for the trade with Hong Kong, the Kowloon sub-magistrate is charged with checking it.) |
+| 卷398, 十月辛酉, second edict (又谕) | The second edict also orders firm terms on the limits of the houses and land that foreigners rent at each port, and strict checks against loss of duties. | "夷人在各口租屋赁地。自应于议定界址时。再与切实要约" (When foreigners rent houses and land at the ports, firm terms must be agreed when the boundaries are fixed.) |
+
+- **Leads:**
+  - The memorial of 耆英 (1843) that asked to move the 官富司巡检 to Kowloon: in 《籌辦夷務始末》 (道光朝) or the Grand Council archives; not pinpointed.
+### lead-l0954-2: 宣宗成皇帝實錄/卷409
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 《宣宗成皇帝實錄》 (Veritable Records of the Daoguang Emperor), 卷409, 道光二十四年九月丁丑 (24 October 1844), Chinese Wikisource transcription, https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7409
+- **Class:** primary (A court record of 1844, as compiled in the Veritable Records.)
+- **Date of the record:** 道光二十四年九月丁丑 (1844-10-24, computed from the day name)
+- **Files:**
+  - `lead-l0954-2-_409-0149bb00.html` (in git): HTML of the Wikisource transcription of juan 409; https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7409; 79184 bytes; SHA-256 `4e4a66b99ee56293352dc5fa3db638fca9421bd5416f84a79d5131809a39eb59`; licence: CC BY-SA 4.0 (Wikisource footer: '本站的全部文字在知识共享 署名-相同方式共享 4.0协议之条款下提供'); the Qing text itself is public domain by age (https://zh.wikisource.org/wiki/%E5%AE%A3%E5%AE%97%E6%88%90%E7%9A%87%E5%B8%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7409)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 卷409, heading | The juan covers the ninth month of Daoguang 24 (甲辰), which began on the day 乙丑. | "道光二十四年。甲辰。九月。乙丑朔。" (Daoguang 24, year 甲辰, ninth month, first day 乙丑.) |
+| 卷409, 九月丁丑 | INFERRED: On 24 October 1844 (computed) the court ordered a new seal cast for the Kowloon sub-magistrate of 新安县, Guangdong. | "改铸广东新安县九龙巡检印信。" (Recast the seal of the Kowloon sub-magistrate of 新安 county, Guangdong.) |
+| 卷409, 九月丁丑 | The new seal followed a request of the Guangdong governor 程矞采. | "从巡抚程矞采请也。" (following the request of Governor 程矞采) |
+### lead-l0955: 虎門條約 (又称《善后事宜清册附粘和约》《五口通商附粘善後條款》)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 《虎門條約》 (also 《善后事宜清册附粘和约》, 《五口通商附粘善後條款》), signed at 虎門寨, 道光二十三年八月十五日 (8 October 1843), Qing government (耆英) and United Kingdom (Pottinger), Chinese Wikisource transcription, https://zh.wikisource.org/wiki/%E8%99%8E%E9%96%80%E6%A2%9D%E7%B4%84
+- **Class:** primary (A treaty text of 1843.)
+- **Date of the record:** 道光二十三年八月十五日 (1843-10-08)
+- **Files:**
+  - `lead-l0955-_-52f9d68e.html` (in git): HTML of the Wikisource transcription of the treaty; https://zh.wikisource.org/wiki/%E8%99%8E%E9%96%80%E6%A2%9D%E7%B4%84; 76227 bytes; SHA-256 `3d51cf50a0365127ddddcc11af0e305cc10c16b3fbc147e756799fff88adb37d`; licence: CC BY-SA 4.0 (Wikisource footer: '本站的全部文字在知识共享 署名-相同方式共享 4.0协议之条款下提供'); the Qing text itself is public domain by age (https://zh.wikisource.org/wiki/%E8%99%8E%E9%96%80%E6%A2%9D%E7%B4%84)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| date and closing lines | The terms were sealed and signed at 虎門寨, dated 道光二十三年八月十五日, that is 8 October 1843. | "道光二十三年八月十五日 ... 一千八百四十三年十月初八日 ... 於虎門寨盖印畫押為據。" (15th day of the 8th month of Daoguang 23 ... 8 October 1843 ... sealed and signed at 虎門寨 as proof.) |
+| item 13 (counted) | Item 13: Chinese who want to take goods to Hong Kong for sale must get permits from the customs of the five ports and pay the duties. | "嗣後凡華民等欲帶貨往香港銷售" (Henceforth, all Chinese who wish to take goods to Hong Kong for sale ...) |
+| item 13 (counted) | Item 13: places such as 乍浦 are not trading ports, and Chinese merchants there may not ask for permits to trade with Hong Kong. | "如乍浦等處，均非互市之處，不准華商擅請牌照往來香港" (Places such as 乍浦 are not trading ports; Chinese merchants may not on their own ask for permits to go to and from Hong Kong.) |
+| item 13 (counted) | Item 13: the Kowloon sub-magistrate (九龍巡檢), with the British officer, must check and report at all times. | "仍责成九龍巡檢會同英官，隨時稽查通報。" (The Kowloon sub-magistrate is charged, together with the British officer, to check and report at all times.) |
+| item 14 (counted) | Item 14: Britain must appoint a special officer at Hong Kong to check strictly the permits of all Chinese ships that come to sell or buy goods. | "香港必須特派英官一員，凡遇華船赴彼售貨、置貨者，將牌照嚴行" (Hong Kong must have a specially appointed British officer; for all Chinese ships that come there to sell or buy goods, the permits are strictly [checked].) |
+| item 14 (counted) | Item 14: a ship or merchant with no permit, or with a permit not given by one of the five ports (廣州, 福州, 厦門, 宁波, 上海), counts as a smuggling ship. It may not trade at Hong Kong, and the British officer reports it to the Chinese officials. | "倘有商船、商人并未帶有牌照，或虽有牌照而非廣州、福州、厦門、宁波、上海所給者，即視為偷漏亂行之船" (If a merchant ship or merchant carries no permit, or carries a permit not given by 廣州, 福州, 厦門, 宁波 or 上海, it is treated as a smuggling ship.) |
+| item 15 (counted) | Item 15: Hong Kong is not like the five ports and has no Chinese official; a British officer deals with debts of Chinese merchants there. | "香港本非五處碼头可比，并未設有華官" (Hong Kong is not comparable to the five ports, and no Chinese official is stationed there.) |
+| item 16 (counted) | Item 16: each month the customs of each port must list the permits it gave (how many, the ship, the merchant, the kind and amount of goods) and report them to the Guangdong Customs (粤海關). The Guangdong Customs tells the British officer at Hong Kong. | "各港口海關按月以所發給之牌照若干张，船只系何字號，商人系何姓名，貨物系何品類、若干數目" (The customs of each port, each month, [report] how many permits they gave, the name of each ship, the name of each merchant, and the kind and amount of the goods.) |
+
+- **Leads:**
+  - 《籌辦夷務始末》 (道光朝) 卷68-69: memorials of 耆英 on the supplementary terms and the Kowloon permit checks; not pinpointed.

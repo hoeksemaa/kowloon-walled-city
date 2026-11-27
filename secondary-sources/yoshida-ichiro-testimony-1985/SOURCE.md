@@ -93,9 +93,8 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0718: 《香港の魔窟・九龍城砦に住んだ日本人》 photo gallery (17 images)
 
@@ -112,20 +111,72 @@ See the leads under each item in the primary folder.
 - **What it gives (resolver's note, not checked):** Images of the inside of the City (wiring, wet streets, barefoot residents, food factories) with short 2025 captions. The captions add almost no facts beyond the article text that ja-3 already has.
 - **Lead:** L0718 (cited by ja-3, yoshida-ichiro-testimony-1985)
 - **Notes:** Check each image by eye for its source before use; the page states no credit.
+- **Reading of 2026-11-26:** it is a duplicate of another item. Opened the gallery with WebFetch: it is the same 17-image gallery as lead-l0717 (primary-sources/yoshida-ichiro-testimony-1985, chunk leads-read__25), at the same URL. The page gives no photo credit. Its 17 captions are short 2025 editorial lines (for example 2 '下水管が壊れて汚水が上からたれていた', 10 '住宅だけではなくお菓子や点心の食品工場も存在していた', 15 '電気系統などの配線が入り乱れていた内部', 16 'びしょびしょになった路面を裸足で歩く住民の姿'); they repeat the text of ja-3. Only the lead image URL is in the page text (https://www.news-postseven.com/uploads/2025/08/25/kyuryujosai_eyc-750x500.jpg). Read it with lead-l0717.
 
 ### lead-l0719-2: 九龍城砦: 正真正銘の「無法地帯」を生んだ飛び地の中の飛び地 (世界飛び地領土研究会)
 
-- **Creator:** Yoshida Ichiro (吉田一郎), 世界飛び地領土研究会 (personal web site, from July 2002)
-- **Date:** web page of before 2011-07-13 (Wayback capture); site started 2002
-- **Kind:** article
-- **Class:** secondary (A history essay and timeline of the City as an enclave, written later by a former resident; mainly second-hand history.)
-- **Value:** low
-- **Language:** ja
-- **Access:** open
-- **Licence:** No licence seen; personal web site of 吉田一郎, kept by the Wayback Machine.
-- **Link:** https://web.archive.org/web/20110713184503/http://www4.ocn.ne.jp/~keropero/kowloon2.html
-- **Other links:** https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/
-- **Proof that it exists:** Title '九龍城砦'; first lines '正真正銘の「無法地帯」を生んだ飛び地の中の飛び地 九龍城砦 中国領 １８９８年 イギリスが清朝から香港島・九龍に隣接する新界を９９年間租借。'
-- **What it gives (resolver's note, not checked):** A timeline (1898, 1899, 1911, 1949, 1987, 1993, 1997) and an essay on why the City had no law, from the Song fort to the 1898 lease and the landing-pier rights; can hold some first-hand remarks further down (not read).
-- **Lead:** L0719 (cited by ja-4, yoshida-ichiro-testimony-1985)
-- **Notes:** Read only the first screen. Mark any first-hand line as retrospective; the history is secondary.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 吉田一郎 (Yoshida Ichiro), '九龍城砦: 正真正銘の「無法地帯」を生んだ飛び地の中の飛び地', 世界飛び地領土研究会 (personal web site, from 30 July 2002), page undated, Wayback capture of 13 July 2011, https://web.archive.org/web/20110713184503/http://www4.ocn.ne.jp/~keropero/kowloon2.html
+- **Class:** secondary (A popular history essay of the 2000s on why the City had no law. It has no first-hand lines about life in the City; the only first-hand line is that the author supervised the Japanese edition of City of Darkness. The photos are not credited. Keep it in secondary-sources.)
+- **Date of the record:** between 2004 and 2011-07-13 (INFERRED: the Wayback banner shows captures from 7 April 2004, and the page names the Japanese edition of City of Darkness; the capture read is of 2011-07-13)
+- **Files:**
+  - `lead-l0719-2-kowloon2-355f9dbe.html` (in `local/`, not in git): HTML of the archived page (text only); https://web.archive.org/web/20110713184503/http://www4.ocn.ne.jp/~keropero/kowloon2.html; 12583 bytes; SHA-256 `f88aaf313e5d5c1efe06dd978fb11d60ac803f5d8ded62373fb2418cffc2f9e5`; licence: No licence; the site's top page says 掲載されている文章等の無断転載はお断りいたします (no reproduction without permission) (https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/)
+  - `lead-l0719-2-k101-4b4c04c0.jpg` (in `local/`, not in git): photo, the walled city at the end of the 1980s (305x215 px, photographer not named); https://web.archive.org/web/20110713184503im_/http://www4.ocn.ne.jp/~keropero/k101.jpg; 36596 bytes; SHA-256 `a423fd007c3b517dd723c301ff5c3915d9d5df58a58f934dc4a3cde91d6a93bc`; licence: No licence; no reproduction without permission (site top page) (https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/)
+  - `lead-l0719-2-k308-b8982475.jpg` (in `local/`, not in git): photo, signboards of doctors and dentists on the street front (229x347 px); https://web.archive.org/web/20110713184503im_/http://www4.ocn.ne.jp/~keropero/k308.jpg; 52719 bytes; SHA-256 `e3291cd2f16e123658c076359c720a1f681eaa2219f6924c09ad49810552d95c`; licence: No licence; no reproduction without permission (site top page) (https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/)
+  - `lead-l0719-2-k304-3d5809a4.jpg` (in `local/`, not in git): photo, a food workshop inside the City (192x318 px); https://web.archive.org/web/20110713184503im_/http://www4.ocn.ne.jp/~keropero/k304.jpg; 40369 bytes; SHA-256 `e113d5e20304cc079a9613ee8247756c19a4303bc7cf22f54bffee441b54baff`; licence: No licence; no reproduction without permission (site top page) (https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/)
+  - `lead-l0719-2-kowloon001-5612f711.jpg` (in `local/`, not in git): street-map extract showing the City and the streets round it (383x292 px; source map not named; the numbers 22 and 23 on it can be sheet or grid numbers); https://web.archive.org/web/20110713184503im_/http://www4.ocn.ne.jp/~keropero/kowloon001.jpg; 40803 bytes; SHA-256 `e3bbbeb68bef6c529fb5f321a29441a75497269ee462be11da0c57d71d3ad098`; licence: No licence; no reproduction without permission (site top page); the map is from an unnamed published street guide (https://web.archive.org/web/20190326061531/http://www.geocities.co.jp/SilkRoad-Lake/2917/)
+- **Note:** its 5 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md`](../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| timeline, top of page | The page's timeline says that in 1898 Britain leased the New Territories for 99 years but left out the walled city alone. | "１８９８年 イギリスが清朝から香港島・九龍に隣接する新界を９９年間租借。ただし九龍城砦だけは租借地から除外" (1898: Britain leases from the Qing the New Territories next to Hong Kong Island and Kowloon for 99 years. But only Kowloon Walled City is left out of the lease.) |
+| timeline | The page's timeline says that in 1899 the Qing troops and officials in the walled city fled under British military pressure. | "１８９９年 イギリス軍の圧力で九龍城砦の清軍や官吏が逃亡" (1899: Under the pressure of the British army, the Qing troops and officials of Kowloon Walled City flee.) |
+| timeline | The page's timeline says that in 1987 the Hong Kong government announced the demolition of the walled city and that Hong Kong law would apply inside; the Chinese government tacitly accepted. The demolition was finished in 1993. | "１９８７年 香港政庁が九龍城砦の取り壊しと、城砦内での香港の法律適用を発表。中国政府は黙認" (1987: The Hong Kong government announces the demolition of the walled city and the application of Hong Kong law inside it. The Chinese government tacitly accepts.) |
+| essay, para. 4 | The page says that the walled city stood about 200 m from the Kowloon peninsula ceded in 1860. | "九龍城砦は九龍半島から２００ｍほど離れた場所にあった" (Kowloon Walled City stood about 200 m away from the Kowloon peninsula) |
+| essay, para. 5 | The page says that the 1898 treaty let Chinese officials stay in the walled city, use a nearby pier, and pass along the road from the walled city to the pier. | "中国側官吏の連絡用に近くの桟橋の使用権と、城砦から桟橋へ至る道の通行権も認められた" (for the communication of the Chinese officials, the right to use a nearby pier and the right of way on the road from the walled city to the pier were also granted) |
+| essay, para. 6 | The page says that at the time of the 1898 lease about 460 people, merchants and farmers among them, lived inside the walled city. It gives no source. | "当時、城内には商人や農民など４６０人が住んでいた" (at that time, 460 people such as merchants and farmers lived inside the walls) |
+| essay, para. 7 | The page tells a story that in 1899 the officials of the walled city set off firecrackers for a celebration, and that Britain used the excuse that its soldiers nearby were startled to expel them. It gives no source; treat it as a story. | "城砦の役人が祝い事のため爆竹を鳴らしていると" (when the officials of the walled city were setting off firecrackers for a celebration) |
+| essay, para. 8 | The page says that Britain ordered the residents out in 1933 and 1936 and withdrew after Chinese protests; that China tried to send officials in 1947; and that Britain tried again in 1948 and 1963 and stopped after Chinese protests. | "１９３３年と３６年にイギリスは城砦内の住民に立ち退きを命じたが、中国側の抗議で撤回" (In 1933 and '36 Britain ordered the residents of the walled city to leave, but withdrew after Chinese protests) |
+| essay, para. 8 | The page claims that only the Japanese army, in the war, ever sent troops or police inside. The 《九龍城區風物志》 (lead-l0520, p. 45) says that the police stepped in actively from the late 1970s, so this claim is not correct for those years. | "城砦の内部に軍隊や警官を立ち入らせたのは、条約なんかおかまいなしに戦争中にここを占領した日本軍だけだ" (the only ones who sent troops or police inside the walled city were the Japanese army, who occupied it in the war with no regard for the treaty) |
+| essay, para. 9 | The page says that the pier the Chinese officials could use was filled in to build Kai Tak airport, and that the Japanese army pulled down the wall to use as material to extend the airport. | "九龍城砦を取り巻く城壁は日本軍が空港を拡張する資材とするために取り壊してしまった" (the Japanese army pulled down the wall round the walled city to use as material to extend the airport) |
+| essay, para. 9 | The page says that after 1949 refugees made the walled city a concrete jungle that ignored the building law, a high-rise slum of more than 50,000 people on only 3 hectares. | "わずか３ヘクタールの敷地に５万人以上もの住民が暮らす高層スラムと化した" (it became a high-rise slum with more than 50,000 residents living on a site of only 3 hectares) |
+| essay, para. 9 | The page says that drugs, prostitution and gambling were believed to flourish, but that the place was apparently not so bad: in fact unlicensed doctors who ignored the Medical Practitioners law, and factories that ignored the food hygiene law, flourished. | "現実には医師法無視の無免許医や、食品衛生法無視の工場が栄えていたくらいである" (in reality, about all that flourished were unlicensed doctors ignoring the medical law and factories ignoring the food hygiene law) |
+| essay, para. 10 | The page says that in the 1980s, when the talks on the return of Hong Kong began, Hong Kong police patrols in the walled city began, and senior Chinese officials came to inspect inside. | "この頃から城砦では香港警察のパトロールが始まり、中国政府の要人も城砦内部を視察に訪れて" (from about this time, Hong Kong police patrols began in the walled city, and senior people of the Chinese government also came to inspect inside) |
+| essay, para. 10 | The page says that the residents protested over the compensation for leaving, and that the walled city was removed in 1993. | "立ち退き補償をめぐって住民が抗議する中、九龍城砦は９３年にあっさり撤去されてしまった" (while residents protested over the eviction compensation, the walled city was simply removed in '93) |
+| essay, para. 11 | The page says that the park is named 九龍寨城公園 because the excavation after the demolition found a stone plaque 「九龍寨城」, thought to have hung over the main gate. | "砦の正門に掲げられていたと思われる「九龍寨城」という石製の額が発見された" (a stone plaque reading 九龍寨城, thought to have hung on the main gate of the fort, was found) |
+| essay, last para. | The page says that in Japan people often say 九龍城 for the walled city, but 九龍城 is the ordinary shopping district near it. | "九龍城とは九龍城砦の近くにある何の変哲もない下町商店街です" (九龍城 is an ordinary downtown shopping street near Kowloon Walled City) |
+
+- **Leads:**
+  - The street guide from which the map extract comes (Hong Kong and Kowloon street maps; the extract shows the numbers 22 and 23; title and year not given) - a dated map of the streets round the City.
+### lead-l0717: 《香港の魔窟・九龍城砦に住んだ日本人》… 写真一覧 (photo list of 17 images)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** NEWSポストセブン (NEWS Post Seven, Shogakukan), 写真一覧 (photo list, 17 images) of 《香港の魔窟・九龍城砦に住んだ日本人》アヘン密売、老いた売春婦、違法賭博…無法地帯の“ヤバい実態”とは「でも医療は充実、“ブラックジャック”がいっぱいいた」, 6 September 2025, photos by 吉田一郎 (Ichiro Yoshida) (as article web p. 2 says), https://www.news-postseven.com/archives/20250906_2060258.html?IMAGE=1&PAGE=1-17
+- **Class:** primary (The photos are a record made at the time (about 1985-1987) by a resident, 吉田一郎; the captions are later (2025) and secondary. One photo (rubble) can be from the clearance of 1993-94. It stays in the yoshida-ichiro-testimony-1985 folder with ja-3.)
+- **Date of the record:** photos about 1985-1987 (one perhaps 1993-94); page 2025-09-06
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md`](../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| article web p. 2 (https://www.news-postseven.com/archives/20250906_2060258.html/2) | The article says that the photos are those that Yoshida took at the time (he lived in the City in 1985 and returned to Japan in 1987). | "吉田氏が当時撮影した写真にうつるのは“the違法建築”" (What Yoshida's photos of the time show is 'the illegal building') |
+| article web p. 2 | The article says the lanes drained badly and were soaked, yet residents walked on them barefoot. | "水捌けの悪い路面はびしょびしょ。しかしそこを裸足で歩く住民の姿もある" (The badly drained lanes were soaking wet, but there were residents walking there barefoot) |
+| captions of photos 3, 6, 8, 11 | The captions repeat the article's background claims: the City was a military fort of the Qing in the 19th century; about four football pitches in area; up to 50,000 people at its peak; pulled down in 1993 and 1994. These are the reporter's later statements. | "最盛期には５万人もの人が住む無法地帯となった" (At its peak it became a lawless zone where as many as 50,000 people lived) |
+
+### lead-l0719: 「東洋の魔窟」九龍城砦探検記 (その１：地底の迷路を歩く; その２：屋上から啓徳空港を見下ろす; その３：再び地底の迷路へ; その４：取り壊し反対住民集会へ; その５：城砦落城の日へ; 九龍城砦★秘宝館)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 吉田一郎 (Yoshida Ichiro), 「東洋の魔窟」九龍城砦探検記, parts その１ to その５ and 九龍城砦★秘宝館, 野次馬的アジア研究中心 (personal web site), http://www4.ocn.ne.jp/~keropero/kyuryu00.html and http://www.geocities.co.jp/SilkRoad/9613/kyuryu/kyuryu1.html to kyuryu5.html and hohou.html, written about 2004-2006, as kept by the Internet Archive Wayback Machine (captures 2006-04-10 to 2011-11-03).
+- **Class:** retrospective (Retrospective (about 2004-2006): first-hand account of the author's visits from autumn 1985 to the eviction, written about 10 years after the demolition (index: '１０年ほど前まで'; it promotes the Japanese edition of City of Darkness, 2004). The 秘宝館 page shows primary records: a rent receipt of December 1985 for the flat the author rented in the City, a kaifong newsletter of 23 January 1987 and his own map printed in Feb-Mar 1992. Primary tree is right.)
+- **Date of the record:** Web pages about 2004-2006 (first Wayback capture 2006-04-10); visits autumn 1985 to the eviction (autumn 1991 and after); rent receipt 15 December 1985; newsletter 23 January 1987; map February-March 1992.
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md`](../../primary-sources/yoshida-ichiro-testimony-1985/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| index page (kyuryu00.html) | Yoshida supervised the Japanese edition of City of Darkness, 『九龍城探訪 魔窟で暮らす人々』 (East Press). | "九龍城探訪 魔窟で暮らす人々 … 監修：吉田一郎" (Kowloon City visit: the people who live in the den of devils … supervised by Yoshida Ichiro) |
+| part 1 (kyuryu1.html), photo 3 | Yoshida says a doctor needed a British licence in Hong Kong, but not in the City; most of the 'unlicensed' doctors there had Chinese licences. | "ほとんどは中国の免許を持った医師だからそれなりの腕前です" (most were doctors with Chinese licences, so they had reasonable skill) |
+| part 1 (kyuryu1.html), photo 5 | A 'legend' says that stalls selling opium and heroin once lined 光明街. Yoshida gives it as a legend only. | "かつてアヘンやヘロインを売る屋台が並んでいたという「伝説」もある光明街" (光明街, of which there is also a 'legend' that stalls selling opium and heroin once lined it) |
+| part 1 (kyuryu1.html), photo 6 | Yoshida gives 50,000 people on about 3 hectares, a density of about 1.6 million per square kilometre, or five people on the area of one tatami mat. | "当時約３ヘクタールの敷地に５万人もの人が住んでいました" (At that time as many as 50,000 people lived on a site of about 3 hectares) |
+| part 1 (kyuryu1.html), photos 9-10 | Yoshida says the residents formed vigilante groups and kept order themselves, because the police could not come in. | "住民たちは自警団を作り、自分たちで治安を守っていました。" (The residents formed vigilante groups and kept the peace themselves.) |
+| part 3 (kyuryu3.html), photo 2 | Yoshida says more than half of the fish balls sold at street stalls in Hong Kong were made in the City. He does not give a source for this. | "魚蛋（つみれ）は半分以上がメイド・イン・九龍城砦でした" (More than half of the fish balls were made in Kowloon Walled City) |
+| part 3 (kyuryu3.html), last paragraph | Yoshida's view: prostitution, drugs and gambling were open in the 1950s and 1960s, the corrupt police used the City as an excuse, and after the anti-corruption drive of the 1970s the vice businesses faded and police patrols inside began by Sino-British agreement. | "７０年代に入り、汚職取り締まりが警察にも及ぶようになると、九龍城砦の裏産業は影をひそめ" (In the 1970s, when the anti-corruption drive reached the police too, the underground industries of the City went into hiding) |
+| part 3 (kyuryu3.html), last paragraph | Yoshida says that in 1987, with the announcement of the demolition plan, Hong Kong law came to apply inside the City. | "そして１９８７年、城砦の取り壊し計画の発表とともに、城砦内でも香港の法律が適用されるようになりました。" (Then in 1987, with the announcement of the demolition plan, Hong Kong law came to be applied inside the City too.) |

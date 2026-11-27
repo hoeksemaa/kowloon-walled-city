@@ -290,23 +290,30 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0881: Kowloon City proposed hospital (Gwulo media 41291; TNA MR 1/787/1, 'S.D. No 1 Kowloon City. Scale 64" = 1 mile.'), full-size photo
 
-- **Creator:** Hong Kong Government (survey plan, signed 17.6.25); photo by David (Gwulo) at The National Archives, Kew
-- **Date:** plan dated 17 June 1925; photo posted 12 Oct 2021
-- **Kind:** map
-- **Class:** primary (A government survey plan of 1925 that marks a proposed hospital site in Kowloon City (a photo of the original at TNA).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the Gwulo page; the plan is a Crown copyright record of The National Archives (UK) (TNA terms for photos of records apply).
-- **Link:** https://gwulo.com/sites/default/files/thumbnails/image/img_3686-kowloon-city.edits_.jpg
-- **Other links:** https://gwulo.com/media/41291, https://gwulo.com/media/41291/zoom, https://discovery.nationalarchives.gov.uk/details/r/C9147358
-- **Proof that it exists:** Gwulo page title 'Kowloon City proposed hospital', 'TNA ref: MR 1/787'; the image (3000 x 2325 px) shows 'S.D. No 1 / KOWLOON CITY. / SCALE 64" = 1 MILE.' and 'N.K.I.L. 35 AREA 34580 Sq. Ft. (ABOUT)'
-- **What it gives (resolver's note, not checked):** The 1925 lot survey of Kowloon City at about 1:990 with building outlines and lot numbers, and the proposed hospital and dispensary site N.K.I.L. 35 (about 34,580 sq ft) in pink: shows the City and its edge before the walls came down (1925).
-- **Lead:** L0881 (cited by gwulo-12, tna-files-kwc-1898-1991)
-- **Notes:** Replace the 640 px file of gwulo-12 with this one. Same Gwulo path pattern serves the full-size photo of the MR 1/797 'Kowloon City' sheet (see L0883).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Government (Lands and Survey Office, P.W.D., INFERRED from the stamp), 'S.D. No 1 / Kowloon City. / Scale 64" = 1 Mile.', plan with the proposed hospital and dispensary site N.K.I.L. 35, signed and dated 17.6.25, The National Archives, Kew, MR 1/787/1 (from CO 129/488); full-size photo by David (Gwulo), 'Kowloon City proposed hospital', Gwulo media 41291, posted 12 Oct 2021, https://gwulo.com/media/41291 ; file https://gwulo.com/sites/default/files/thumbnails/image/img_3686-kowloon-city.edits_.jpg
+- **Class:** primary (A government survey plan of 1925, made at the time; the photo of 2021 only copies it. The tree primary is correct.)
+- **Date of the record:** 1925-06-17 (the date of the stamp and of the signature)
+- **Files:**
+  - `lead-l0881-img_3686-kowloon-city.edits_-274c725c.jpg` (in `local/`, not in git): Full-size photo (3000 x 2325 px, about 1 MB) of the plan MR 1/787/1, 'S.D. No 1 Kowloon City', 1925; replaces the 640 px file of gwulo-12.; https://gwulo.com/sites/default/files/thumbnails/image/img_3686-kowloon-city.edits_.jpg; 1075190 bytes; SHA-256 `bfcb477a10f641d538495693a0a16d5bddbddb3a4092bba7b99b018490cdb38a`; licence: No licence statement on the Gwulo page; the plan is a record of The National Archives (UK), whose terms allow copies of images of its records for personal use, private study and education only. (https://gwulo.com/media/41291)
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md`](../../secondary-sources/tna-files-kwc-1898-1991/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| full-size photo, upper left | The title of the plan reads 'S.D. No 1, Kowloon City', with a scale of 64 inches to 1 mile (about 1:990). This is clear on the full-size photo. The TNA catalogue gives 1 inch to 75 feet instead. | "S. D. No 1 KOWLOON CITY. SCALE 64" = 1 MILE." |
+| full-size photo, centre right (pink rectangle) | The pink site is marked 'N.K.I.L. 35' (New Kowloon Inland Lot 35), with an area of about 34,580 square feet (about 3,210 square metres). The full-size photo shows the second digit is 4, which settles the doubt of gwulo-12. | "N.K.I.L. 35 AREA 34580 Sq. Ft. (ABOUT)" |
+| full-size photo, centre right (inside the pink rectangle) | INFERRED: The pink site is drawn over the outlines of several buildings and a flight of steps. INFERRED: the site held buildings in 1925. | "N.K.I.L. 35" |
+| full-size photo, top right stamp | INFERRED: A stamp at the top right reads 'Plan to accompany [minute] C.S.O. No. 2160/23, dated 17-6-25', with the folio number 465 beside it (INFERRED reading: the last digit can also be 3). INFERRED reading of handwriting in a faint printed stamp; C.S.O. 2160/23 is a file of the Colonial Secretary's Office of 1923. | "Plan ... 2160/23 ... 17-6-25" |
+| full-size photo, lower right signature and lower left stamp | INFERRED: A signature at the lower right has the date 17.6.25 (17 June 1925). An oval stamp at the lower left is of the Lands and Survey Office of the P.W.D. (INFERRED reading of a faint purple stamp). | "17.6.25" |
+| full-size photo, centre and north | INFERRED: The plan numbers the lots in pencil, with four-digit numbers in the 6000s (for example 6300 to 6304 in the central block and 6490s in the north). INFERRED reading of small pencil figures. | "6301" |
+| full-size photo, whole plan | INFERRED: The layout: a pointed hill outline at the upper left, with a dense cluster of small irregular plots on its south slope; a road runs east-north-east along its foot; south of this road is a block of large buildings with courtyards and steps, between two parallel roads; the pink site is at the east end of this block; rows of narrow plots line the southern road and the east of the sheet. INFERRED description of a hand-drawn plan. | "S. D. No 1 KOWLOON CITY" |
+| full-size photo, whole plan | INFERRED: Even at full size, I found no line drawn or named as the City wall, no gates and no towers, and the plan does not name the Walled City. Thus the plan alone cannot show if the hospital site is inside or outside the walls. INFERRED from my reading of the photo. | "KOWLOON CITY" |
+
+- **Leads:**
+  - Hong Kong Colonial Secretary's Office file C.S.O. 2160/23 (1923-1925), named on the stamp of the plan MR 1/787/1: the papers on the proposed hospital and dispensary at Kowloon City (N.K.I.L. 35).
+  - The National Archives, CO 129/488: Governor R. E. Stubbs's despatch No. 275 of 1925 to L. C. M. S. Amery, which the plan MR 1/787/1 came with (Colonial Office file 34175 of 1925).

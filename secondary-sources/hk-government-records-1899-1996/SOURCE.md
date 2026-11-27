@@ -73,7 +73,7 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0543: Lands Resumption Ordinance, Chapter 124 (consolidated text with history notes)
@@ -124,3 +124,17 @@ See the leads under each item in the primary folder.
 | Page | Fact | Words in the source |
 |---|---|---|
 | No. 9/99, Report by Mr. Stewart Lockhart on the Extension of the Colony of Hongkong (8 Oct 1898), p. 197 | Lockhart's report says the City's stone wall was built in 1847 (background history in the report, thus secondary). | "enclosed by a stone wall built in 1847" |
+
+### lead-l0689: The Laws of Hongkong, Vol. III, comprising a selection from the Imperial treaties, statutes, rules and orders specially applicable to Hongkong (New Revised Edition under Ordinance No. 19 of 1911): Lease of New Territories; New Territories Order in Council; Kowloon City Order in Council
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Chaloner Grenville Alabaster (ed.), The Laws of Hongkong, Vol. III, comprising a selection from the Imperial treaties, statutes, rules and orders specially applicable to Hongkong, prepared as a part of the New Revised Edition under Ordinance No. 19 of 1911 (Hongkong: Noronha & Co., Government Printers, 1913), Part I, nos. 6-9, pp. 6-10: 'Lease of New Territories' (Convention of 9 June 1898), 'Delimitation of Northern Frontier of New Territories' (19 March 1899), 'New Territories Order in Council' (20 October 1898) and 'Kowloon City Order in Council' (27 December 1899). Scans: HKU Libraries, Historical Laws of Hong Kong Online, https://oelawhk.lib.hku.hk/archive/files/a65ca57b4094055dac220188d5c70309.pdf (pp. 6-7), https://oelawhk.lib.hku.hk/archive/files/b45881dc894baa04ea79d3c01784c943.pdf (pp. 8-9), https://oelawhk.lib.hku.hk/archive/files/7e14c64329f16461a2a4312f053c3720.pdf (pp. 9-10), https://oelawhk.lib.hku.hk/archive/files/fd42344d9bfda4ef1205852892e8031d.pdf (front matter).
+- **Class:** primary (Official Hong Kong Government edition (1913) of the texts of 1898-1899. The texts are primary records; the side notes and the square brackets were added by the editor in 1912-1913, thus I mark those facts secondary. The primary tree is correct.)
+- **Date of the record:** printed 1913 (the 1912 New Revised Edition); texts of 9 June 1898, 20 October 1898, 19 March 1899 and 27 December 1899
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/hk-government-records-1899-1996/SOURCE.md`](../../primary-sources/hk-government-records-1899-1996/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 6, heading of no. 6 'Lease of New Territories' | The editor's heading of the Convention says that it was signed at Peking on 9 June 1898 and that the ratifications were exchanged at London on 6 August 1898. | "Signed at Peking, 9th June, 1898. [Ratifications exchanged at London, August 6th, 1898.]" |
+| p. 9, New Territories Order in Council, Art. 3 and its side note | Article 3 of the Order: the laws of Hongkong take effect in the new territories from a date that the Governor fixes by proclamation. The editor's side note gives the date as 17 April 1899, by the proclamation of 8 April 1899. | "17th April, 1899:—Proclamation, 8th April, 1899." |
+| p. 9, New Territories Order in Council, Art. 4, side note | The 1912 edition prints Article 4 in square brackets, with the side note that the Order in Council of 27 December 1899 revoked it. | "Revoked, O. in C. 27th Dec., 1899." |

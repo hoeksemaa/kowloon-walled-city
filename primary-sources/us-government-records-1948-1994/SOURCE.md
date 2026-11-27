@@ -8,7 +8,7 @@ US records of the time on the 1948 incident, drugs and the clearance; open.
 - **Dates:** 1948-1994.
 - **Items:** 24, of which 24 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 6 files with an open licence (Public Domain Mark 1.0 (stated on the archive.org item page of us_congress_89)), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 2 files with an open licence (Public Domain Mark 1.0 (archive.org item us_congress_88, licenseurl https://creativecommons.org/publicdomain/mark/1.0/); Public Domain Mark 1.0 (archive.org item us_congress_90, licenseurl https://creativecommons.org/publicdomain/mark/1.0/)), named under their items. The other files stay in `local/`.
 
 ## Why this is primary
 
@@ -589,7 +589,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 15 of 15 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1160: Xu Jiatun's Memoirs on Brainstorming Session (installments No. 64-66, Hong Kong LIEN HO PAO 7-9 Jul 1993), in JPRS Report: China, JPRS-CAR-94-017
@@ -614,229 +614,250 @@ testimony given later: tag its facts "retrospective (year)".
   - Xu Jiatun, 'Xu Jiatun's Hong Kong Memoirs' (serialized in LIEN HO PAO, Hong Kong, 1993): the earlier installment or chapter that tells the 'Kowloon Walled City incident' itself (not in JPRS-CAR-94-017).
 ### lead-l1162: Current Intelligence Weekly Summary, 15 February 1963 (CIA-RDP79-00927A003900080001-3), Weekly Review: 'Chinese Communist Diplomatic Pressure on Hong Kong'
 
-- **Creator:** Central Intelligence Agency, Office of Current Intelligence
-- **Date:** 1963-02-15
-- **Kind:** document
-- **Class:** primary (A CIA weekly intelligence summary written in February 1963, in the weeks of the events.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
-- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp79-00927a003900080001-3
-- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp79-00927a003900080001-3/cia-rdp79-00927a003900080001-3.pdf, https://www.cia.gov/readingroom/document/cia-rdp79-00927a003900080001-3
-- **Proof that it exists:** archive.org metadata title 'CIA Reading Room cia-rdp79-00927a003900080001-3: CURRENT INTELLIGENCE WEEKLY SUMMARY', date 1963-02-15; OCR first line 'Approved For Release 2009/05/11 : CIA-RDP79-00927A003900080001-3'.
-- **What it gives (resolver's note, not checked):** The CIA account of the 1963 protest about the City: London rejected the Chinese claim of sovereignty over the 'walled city' but said that Hong Kong would halt the urban renewal (clearance) there; the Chinese means of pressure on the colony (water, trade, remittances). Early history (1963), not daily life.
-- **Lead:** L1162 (cited by usgov-4, us-government-records-1948-1994)
-- **Notes:** The City passage is in the article on p. 22 of 26 (Weekly Review). The OCR text has 112,867 characters; I read the first 100,000 only.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Central Intelligence Agency, Office of Current Intelligence, Current Intelligence Weekly Summary, 15 February 1963, Weekly Review p. 22 of 26: 'Chinese Communist Diplomatic Pressure on Hong Kong' (CIA-RDP79-00927A003900080001-3, approved for release 2009/05/11), https://archive.org/details/cia-readingroom-document-cia-rdp79-00927a003900080001-3
+- **Class:** primary (A record made at the time (US intelligence summary of the week).)
+- **Date of the record:** 1963-02-15
+- **Files:**
+  - `lead-l1162-cia-rdp79-00927a003900080001-3-3db43550.pdf` (in `local/`, not in git): PDF scan of the whole weekly summary, 26 pp. (about 3.2 MB); the City sentence is on Weekly Review p. 22; https://archive.org/download/cia-readingroom-document-cia-rdp79-00927a003900080001-3/cia-rdp79-00927a003900080001-3.pdf; 3179654 bytes; SHA-256 `5e1f9bc420861036bc99884c2fe0c3090fe0400b71b89776cba78777d3a80827`; licence: No licence statement on the archive.org item; a CIA record (US government work) (https://archive.org/details/cia-readingroom-document-cia-rdp79-00927a003900080001-3)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Weekly Review p. 22 of 26, para 1 | In early 1963 Peking sent a series of protests to Britain about Hong Kong, after about three years of little attention to the colony. | "A series of Chinese Communist protests to the British over Hong Kong brings to an end a period of about three years" |
+| Weekly Review p. 22 of 26, para 2 | London rejected the Chinese claim to sovereignty over the 'walled city', but said the Hong Kong government would halt its urban renewal (clearance) work in the area. | "Although London rejected Chinese claims to sovereignty over the "walled city," it indicated that the Hong Kong government would halt urban renewal activities in the area." |
+| Weekly Review p. 22 of 26, para 3 | With the British answer, Hong Kong announced curbs on Nationalist sabotage bases in the colony and eased entry for students from mainland schools at Chinese New Year, to conciliate Peking. | "A relaxation of restrictions on students from mainland schools entering the colony over the Chinese New Year was also announced." |
+| Weekly Review p. 22 of 26, paras 4-5 | The CIA noted that Hong Kong got a substantial share of its water from mainland sources, a means of pressure; China earned about US$200 million a year in foreign exchange from trade with Hong Kong. | "Hong Kong gets a substantial percentage of its water supply from mainland sources" |
+| Weekly Review p. 22 of 26, paras 6-7 | The CIA judged that Peking did not intend a major crisis over Hong Kong; its motive was to show itself as protector of Chinese rights and to remind Britain that it stayed in Hong Kong on Peking's sufferance. | "their presence in Hong Kong continues only on Peiping's sufferance" |
 ### lead-l1164: Office of Reports and Estimates, CIA Far East/Pacific Branch, Intelligence Highlights, week of 20 January - 26 January 1948 (CIA-RDP78-01617A004600020003-6)
 
-- **Creator:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch
-- **Date:** 1948-01-20/1948-01-26
-- **Kind:** document
-- **Class:** primary (A CIA weekly summary written in the week after the Canton riot of 16 Jan 1948, about the events of that week.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
-- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp78-01617a004600020003-6
-- **Other links:** https://archive.org/details/cia-readingroom-document-cia-rdp79-01082a000100010036-0, https://archive.org/download/cia-readingroom-document-cia-rdp78-01617a004600020003-6/cia-rdp78-01617a004600020003-6.pdf
-- **Proof that it exists:** archive.org title 'CIA Reading Room cia-rdp78-01617a004600020003-6: OFFICE OF REPORTS AND ESTIMATES, CIA FAR EAST/PACIFIC BRANCH INTELLIGENCE HIGHLIGHTS WEEK OF 20 JANUARY - 26 JANUARY 1948'; OCR p. 1: 'The Chinese press, hungry for news fit to print, found a welcome outlet in the Kowloon incident'.
-- **What it gives (resolver's note, not checked):** The week after the Canton riot of January 1948: the Chinese press used the 'Kowloon incident' (the eviction of the squatters in the City); Britain demanded compensation for Canton, and China claimed compensation for the eviction of the Kowloon squatters. Early history (1948).
-- **Lead:** L1164 (cited by usgov-5, us-government-records-1948-1994)
-- **Notes:** The second copy (RDP79-01082A000100010036-0) has the same title; compare the two scans for legibility. The OCR is poor; read the PDF.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch, Intelligence Highlights, week of 20 January - 26 January 1948, China section, 'Internal Political' and 'External Political' (CIA-RDP78-01617A004600020003-6, released 2013/03/21; second copy CIA-RDP79-01082A000100010036-0, released 2008/05/14), https://archive.org/details/cia-readingroom-document-cia-rdp78-01617a004600020003-6
+- **Class:** primary (A record made at the time (US intelligence weekly highlights).)
+- **Date of the record:** 1948-01-20/1948-01-26
+- **Files:**
+  - `lead-l1164-cia-rdp78-01617a004600020003-6-4152136a.pdf` (in `local/`, not in git): PDF scan of the weekly Intelligence Highlights, 20-26 January 1948 (first copy); https://archive.org/download/cia-readingroom-document-cia-rdp78-01617a004600020003-6/cia-rdp78-01617a004600020003-6.pdf; 986135 bytes; SHA-256 `77fd33f491ae557cee50fa0f0a85f06717cca576805f08809ec5137abb35fe74`; licence: No licence statement on the archive.org item; a CIA record (US government work) (https://archive.org/details/cia-readingroom-document-cia-rdp78-01617a004600020003-6)
+  - `lead-l1164-cia-rdp79-01082a000100010036-0-263f18dc.pdf` (in `local/`, not in git): PDF scan of the second copy of the same report (a cleaner OCR); https://archive.org/download/cia-readingroom-document-cia-rdp79-01082a000100010036-0/cia-rdp79-01082a000100010036-0.pdf; 901188 bytes; SHA-256 `5b32023ac690225cb073a93e2a74a9d9eca754d561cc19912fe16c4f7100ab57`; licence: No licence statement on the archive.org item; a CIA record (US government work) (https://archive.org/details/cia-readingroom-document-cia-rdp79-01082a000100010036-0)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| China, 'Internal Political', last paragraph (both copies) | The CIA reported that the Chinese press used the 'Kowloon incident' (the January 1948 eviction in the Walled City), which ended in violence in Canton and demonstrations in Shanghai; papers of all opinions warned the British. | "The Chinese press, hungry for news fit to print, found a welcome outlet in the Kowloon incident which ended in violence in Canton and demonstrations in Shanghai." |
+| China, 'Internal Political', last paragraph, continued at the top of the page marked -5- (RDP78 copy, PDF page 5) | The CIA judged that the great attention to this 'minor incident' was a diversion to keep public attention on a foreign issue while internal affairs grew worse; even Ta Kung Pao joined the uproar. | "the untoward amount of attention given this minor incident was a diversionary tactic" |
+| China, 'External Political', 'Canton-Shanghai disorders' | After the Canton riot, Britain demanded full compensation for the losses at Canton, and China claimed full compensation for the eviction of the Kowloon squatters; neither government mentioned the other's incident. | "China has claimed full compensation for the eviction of the Kowloon squatters." |
+| China, 'External Political', 'Canton-Shanghai disorders', para 2 | The US Embassy reported on 23 January 1948 that the Chinese authorities were reluctant to suppress the Canton and Shanghai disorders because of wide anti-British and anti-US feeling. | "The Embassy reported on 23 January that Chinese authorities were reluctant to adopt strong measures" |
+
+- **Leads:**
+  - US Embassy Nanking report of 23 January 1948 on the Canton-Shanghai disorders (cited in the report)
 ### lead-l1165: Office of Reports and Estimates, CIA Far East/Pacific Branch [Intelligence Highlights, week to about 10 May 1948] (CIA-RDP79-01090A000400060003-9)
 
-- **Creator:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch
-- **Date:** 1948-05 (week of about 4-10 May 1948; the OCR has 'This week (7 May 48)')
-- **Kind:** document
-- **Class:** primary (A CIA weekly intelligence summary written in the week of the events.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
-- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp79-01090a000400060003-9
-- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp79-01090a000400060003-9/cia-rdp79-01090a000400060003-9.pdf, https://www.cia.gov/readingroom/document/cia-rdp79-01090a000400060003-9
-- **Proof that it exists:** archive.org metadata: 'CIA Reading Room cia-rdp79-01090a000400060003-9: OFFICE OF REPORTS AND ESTIMATES, CIA FAR EAST/PACIFIC BRANCH'; OCR: 'Approved For Release 2000/05/23 : CIA-RDP79-01090A000400060003-9'
-- **What it gives (resolver's note, not checked):** One sentence, May 1948: Britain demands 300,000 pounds for the Shameen incident of 16 Jan 1948, while China presses for the settlement of the Kowloon 'squatters incident' (the eviction from the Walled City). Shows the dispute still open in May 1948.
-- **Lead:** L1165 (cited by usgov-5, us-government-records-1948-1994)
-- **Notes:** The PDF file name on archive.org is assumed from the pattern of the held usgov-5 item; check it when collecting. OCR is poor.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Central Intelligence Agency, Office of Reports and Estimates, Far East/Pacific Branch, 'Intelligence Highlights - Week of 4 May - 10 May 1948', Confidential, p. 5 (China, Political), CIA-RDP79-01090A000400060003-9, approved for release 2000/05/23; archive.org item cia-readingroom-document-cia-rdp79-01090a000400060003-9, https://archive.org/details/cia-readingroom-document-cia-rdp79-01090a000400060003-9 ; also https://www.cia.gov/readingroom/document/cia-rdp79-01090a000400060003-9
+- **Class:** primary (A US intelligence summary made at the time (week of 4-10 May 1948).)
+- **Date of the record:** 1948-05 (week of 4-10 May 1948; a stamp on the cover reads May 11 1948, INFERRED reading)
+- **Files:**
+  - `lead-l1165-cia-rdp79-01090a000400060003-9-e2c0a42c.pdf` (in `local/`, not in git): PDF scan of the whole report (8 pages, about 470 KB); the Kowloon sentence is on page 5.; https://archive.org/download/cia-readingroom-document-cia-rdp79-01090a000400060003-9/cia-rdp79-01090a000400060003-9.pdf; 470098 bytes; SHA-256 `8397a32b2f01a03128d09bd921ccc1292f3fa4bdaec3ad57faa23e7485fef438`; licence: No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work). (https://archive.org/details/cia-readingroom-document-cia-rdp79-01090a000400060003-9)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (cover) | The report is the weekly 'Intelligence Highlights' of the CIA's Office of Reports and Estimates, Far East/Pacific Branch, for the week of 4 to 10 May 1948. | "INTELLIGENCE HIGHLIGHTS - WEEK OF 4 MAY - 10 MAY 1948" |
+| p. 5 (printed -5-), China, Political | In May 1948 the British Government demanded £300,000 for 'shame and damage' from the Shameen (沙面) incident of 16 January 1948. At the same time the Chinese Government pressed for a settlement of the Kowloon 'squatters incident' (the eviction from the City). Thus the dispute was still open in May 1948. | "The British Government is demanding £ 300,000 for "shame and damage" resulting from the Shameen incident of 16 January, while the Chinese Government is pressing for the settlement of the Kowloon "squatters incident."" |
 ### lead-l1166-1: The Consul General at Canton (Boucher) to the Secretary of State, telegram 12, Canton, 16 January 1948 (from Lewis Clark), file 893.00/1-1648 (FRUS 1948, vol. VII, doc. 28)
 
-- **Creator:** US Consulate General, Canton (Lewis Clark, Minister-Counselor)
-- **Date:** 1948-01-16
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram written on the day of the Canton riot.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; the HistoryAtState/frus repository states public domain in the US and CC0 1.0 (LICENSE.md).
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d28
-- **Other links:** https://raw.githubusercontent.com/HistoryAtState/frus/master/volumes/frus1948v07.xml
-- **Proof that it exists:** TEI text (held file): '12. From Lewis Clark. Minister-Counselor of Embassy in China. At previously arranged press conference today which took place while British Consulate General was burning'
-- **What it gives (resolver's note, not checked):** Clark's press conference in Canton on 16 Jan 1948 while the British Consulate General burned; he took no position 'in respect of the Kowloon incident'. Context of the 1948 eviction only.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
-- **Notes:** Same TEI volume file as usgov-6.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Consul General at Canton (Boucher) to the Secretary of State, telegram 12, Canton, 16 January 1948 (received 17 January, 8:56 a.m.), from Lewis Clark, file 893.00/1–1648; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 28, pp. 47-48, https://history.state.gov/historicaldocuments/frus1948v07/d28
+- **Class:** primary (A diplomatic telegram of the day, in Clark's own words.)
+- **Date of the record:** 1948-01-16
+- **Files:**
+  - `lead-l1166-1-d28-db140b83.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 28, with its footnotes.; https://history.state.gov/historicaldocuments/frus1948v07/d28; 34881 bytes; SHA-256 `8385e1fa0142f0183a0f01964a6947f7318cdda778c0b87b0caee2c13bcb45e6`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 47 | On 16 January 1948 in Canton, Lewis Clark, Minister-Counselor of the US Embassy in China, held a press conference while the British Consulate General was burning. | "At previously arranged press conference today which took place while British Consulate General was burning" |
+| p. 47 | Clark said he took no position on the 'Kowloon incident'. But he said China should settle such disputes by diplomacy, not by burning the consulate of a friendly nation. | "I was not taking any position in respect of the Kowloon incident" |
+| pp. 47-48 | Clark gave his personal opinion that the events of the day in Canton would prejudice the consideration in Congress of the Aid to China Program. | "events of today in Canton would prejudice consideration in the Congress of Aid to China Program" |
 ### lead-l1166-2: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 127, Shanghai, 19 January 1948, 6 p.m., file 893.00/1-1948 (FRUS 1948, vol. VII, doc. 30)
 
-- **Creator:** US Consulate General, Shanghai (John M. Cabot)
-- **Date:** 1948-01-19
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time on the Shanghai demonstration of 17 Jan 1948.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d30
-- **Proof that it exists:** TEI text (held file): 'Number students demonstrating in front British ConGen Saturday afternoon variously reported by press as between 10 and 30,000.'
-- **What it gives (resolver's note, not checked):** The Shanghai student demonstration of 17 Jan 1948 over the Kowloon eviction: size (press 10,000-30,000; Consulate estimate under 5,000 active), slogans demanding 'the return of Hong Kong and Kowloon'.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 127, Shanghai, 19 January 1948, 6 p.m. (received 11:44 a.m.), file 893.00/1–1948; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 30, pp. 48-49, https://history.state.gov/historicaldocuments/frus1948v07/d30
+- **Class:** primary (A consular telegram of the time, with the Consulate's own observations.)
+- **Date of the record:** 1948-01-19
+- **Files:**
+  - `lead-l1166-2-d30-64002bb7.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 30, with its footnotes.; https://history.state.gov/historicaldocuments/frus1948v07/d30; 36534 bytes; SHA-256 `4a133bb6927a28840b344145a65613ce6d7a4f4d36442ae99ab4992c6597c845`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 48 | INFERRED: On Saturday 17 January 1948 students demonstrated in front of the British Consulate General in Shanghai. The press gave 10,000 to 30,000; the Consulate believed that the active students were not more than 5,000, half of them reported under 15. (The date 17 January is INFERRED: the telegram of Monday 19 January says 'Saturday afternoon'.) | "variously reported by press as between 10 and 30,000. However, it is believed students actively participating did not exceed 5,000" |
+| p. 48 | The demonstration lasted 3 hours and was generally orderly. Police guarded the British Consulate General heavily and with tact. | "Demonstration lasted 3 hours and was conducted generally in orderly manner." |
+| pp. 48-49 | Student delegates with a Chinese flag climbed the gate and demanded that the British flag be lowered and replaced by the Chinese flag. The Consulate refused. The crowd cheered the usual lowering of the British flag at 5 o'clock and dispersed at about 5:30. | "They demanded that British flag be lowered and replaced by Chinese flag." |
+| p. 49 | At 4:30, 400 student marchers and 100 more in trucks paraded past the municipal government offices and posted anti-British slogans on the government building, the Metropole Hotel and Hamilton House. | "400 student marchers and additional 100 in trucks proceeding from British ConGen paraded by municipal government offices" |
+| p. 49 | A Consulate survey of hundreds of slogans found about 40 percent anti-Government, 20 percent anti-British, 20 percent anti-American and 20 percent anti-British and anti-American. | "roughly 40 percent were anti-Government, 20 percent anti-British, 20 percent anti-American and 20 percent anti-British and anti-American" |
+| p. 49 | The anti-British slogans demanded the return of Hong Kong and Kowloon and told the British to get out. | "Those which denounced the British demanded the return of Hong Kong and Kowloon" |
+
+- **Leads:**
+  - Shanghai Consulate General telegram 87 of 17 January 1948 to Nanking (repeated to the Department as 114), on the demonstration over Kowloon; FRUS 1948 vol. VII doc. 30, footnote: 'Not printed' (US National Archives, RG 59, file 893.00).
 ### lead-l1166-3: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 128, Shanghai, 19 January 1948, 7 p.m., file 893.00/1-1948 (FRUS 1948, vol. VII, doc. 31)
 
-- **Creator:** US Consulate General, Shanghai (John M. Cabot)
-- **Date:** 1948-01-19
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d31
-- **Proof that it exists:** TEI text (held file): 'Rightist (CC) elements in Government were first to seize opportunity presented by Kowloon issue and to organize press campaign and student demonstrations'
-- **What it gives (resolver's note, not checked):** US analysis (Jan 1948) of how the CC clique of the Kuomintang used the 'Kowloon issue' to organize the press campaign and the student demonstrations.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 128, Shanghai, 19 January 1948, 7 p.m. (received 7:13 a.m.), file 893.00/1–1948; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 31, pp. 49-50, https://history.state.gov/historicaldocuments/frus1948v07/d31
+- **Class:** primary (A consular analysis written at the time of the events.)
+- **Date of the record:** 1948-01-19
+- **Files:**
+  - `lead-l1166-3-d31-a25e6f73.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 31.; https://history.state.gov/historicaldocuments/frus1948v07/d31; 34255 bytes; SHA-256 `eb1db357195dc3ef4533fc2d7ba372517067259cc583e79de6025daa40c2ffd0`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 49 | The Consulate found that the rightist CC elements in the Government were the first to use the Kowloon issue to organize a press campaign and the student demonstrations in Shanghai. | "Rightist (CC) elements in Government were first to seize opportunity presented by Kowloon issue and to organize press campaign and student demonstrations" |
+| pp. 49-50 | Their aims, as the Consulate saw them: to turn student unrest into a pro-Kuomintang movement, to press the British to improve Nanking's bargaining position on Sino-British issues (especially Hong Kong), and to undermine the Political Science Group. | "bringing pressure on British to improve Nanking's bargaining position on current Sino-British issues (especially relating to Hong Kong)" |
+| p. 50 | The San Min Chu I Youth Corps pushed the demonstrators to harsher slogans against the Government and America. The local authorities tried to turn the main attention to the anti-British side. | "local authorities made no serious attempt to stop use of such slogans but did endeavor to divert main attention of demonstrators to anti-British aspect" |
+| p. 50 | Leftist students (especially of Chiaotung University (交通大學)) took part, but the Consulate found no organized Communist direction. | "organized Communist direction has not been established" |
 ### lead-l1166-4: The Secretary of State to the Ambassador in China (Stuart), telegram 99, Washington, 21 January 1948, 7 p.m., file 893.00/1-1648 (FRUS 1948, vol. VII, doc. 36)
 
-- **Creator:** US Department of State (Secretary of State George C. Marshall)
-- **Date:** 1948-01-21
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time (this is 'Deptel 99' that doc. 49 cites).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d36
-- **Proof that it exists:** history.state.gov: 'The Secretary of State to the Ambassador in China (Stuart)', 'Washington, January 21, 1948—7 p. m.', '99. Telegrams summarizing press reaction recent events Kowloon as well as those reporting Canton affair'
-- **What it gives (resolver's note, not checked):** The State Department's view (21 Jan 1948) that Kuomintang elements built up public indignation over 'recent events Kowloon' and touched off the Canton riots; fear of anti-foreign and anti-American turns.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994); also L1167
-- **Notes:** Resolves L1167 (Deptel 99 of 21 Jan 1948 to Nanking).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Secretary of State (Marshall) to the Ambassador in China (Stuart), telegram 99, Washington, 21 January 1948, 7 p.m., file 893.00/1–1648; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 36, pp. 53-54, https://history.state.gov/historicaldocuments/frus1948v07/d36
+- **Class:** primary (A State Department telegram of the time.)
+- **Date of the record:** 1948-01-21
+- **Files:**
+  - `lead-l1166-4-d36-70ae0e18.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 36, with its footnotes.; https://history.state.gov/historicaldocuments/frus1948v07/d36; 34079 bytes; SHA-256 `dee501f3847c9c6d3960b496c8e4d3f7b1ba31cd9ed415ce011ff7928da2e284`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 53 | The State Department's impression was that Kuomintang elements, with the CC clique most prominent, deliberately built up public indignation over the recent events at Kowloon and touched off the Canton riots. | "give Dept impressions that Kmt elements among which CC clique most prominent deliberately built up pressure public indignation and touched off spark Canton riots" |
+| p. 53 | The Department feared that this feeling could turn into general anti-foreignism or be led by the Chinese Communists into anti-American channels. | "likely turn into indiscriminate anti-foreignism or be directed by CCP and other unfriendly Chinese into anti-American channels" |
+| pp. 53-54 | The Minister-Counselor was to tell Foreign Minister Wang Shih-chieh (王世杰) of his first-hand observations of the Canton affair. The US reserved all rights for the damage to American property. | "we reserve all rights with respect such property damage as did result" |
+
+- **Leads:**
+  - The telegrams of January 1948 from the US Embassy and consulates in China that summarized Chinese press reaction to the Kowloon events, cited in FRUS 1948 vol. VII doc. 36 (US National Archives, RG 59, files 893.00 and 846G.00).
 ### lead-l1166-5: The Ambassador in China (Stuart) to the Secretary of State, telegram 144, Nanking, 22 January 1948, 6 p.m., file 893.00/1-2248 (FRUS 1948, vol. VII, doc. 37)
 
-- **Creator:** US Embassy Nanking (Ambassador J. Leighton Stuart)
-- **Date:** 1948-01-22
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d37
-- **Proof that it exists:** history.state.gov: 'The Ambassador in China (Stuart) to the Secretary of State', 'Nanking, January 22, 1948—6 p. m.', '144. Study of this and other data on current anti-British demonstrations and violence convinces Embassy'
-- **What it gives (resolver's note, not checked):** The Embassy's analysis (22 Jan 1948): the Nanking Government gave 'artificial emphasis on a foreign issue, namely Kowloon' to distract from internal troubles; the press campaign over 'national prestige involved in Kowloon issue'.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Ambassador in China (Stuart) to the Secretary of State, telegram 144, Nanking, 22 January 1948, 6 p.m. (received 23 January, 2:09 p.m.), file 893.00/1–2248; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 37, pp. 54-55, https://history.state.gov/historicaldocuments/frus1948v07/d37
+- **Class:** primary (An embassy analysis written at the time of the events.)
+- **Date of the record:** 1948-01-22
+- **Files:**
+  - `lead-l1166-5-d37-dd3dd56c.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 37.; https://history.state.gov/historicaldocuments/frus1948v07/d37; 36304 bytes; SHA-256 `62e9392a7848105164ccfb5b47762080b1fcf05424f337850d03b10a342406f7`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 54, point (1) | The US Embassy in Nanking judged that the anti-British movement began with a deliberate attempt by the Chinese Government to distract attention from internal troubles by stressing a foreign issue: Kowloon. | "deliberate attempt on part of Government to distract public attention from internal difficulties by artificial emphasis on a foreign issue, namely Kowloon" |
+| p. 54, point (2) | Inflammatory anti-British propaganda in the Government-dominated press, including editorials, slanted news, advertisements of commercial firms and official statements, caught the public through national prestige in the Kowloon issue. | "caught public imagination through appeal to factor of national prestige involved in Kowloon issue" |
+| p. 54, points (3)-(4) | Right-wing Kuomintang elements organized mass demonstrations, and the Communists used the disorders for anti-British and anti-American propaganda. | "Communists took advantage this situation to use disorders as vehicle for circulation both anti-British and anti-American propaganda" |
+| p. 54, point (5) | The Government was reluctant to put down the disorders, because it feared the charge of failing to resist 'imperialist aggression against Chinese sovereignty'. | "would lay Government open to charge of failure to resist “imperialist aggression against Chinese sovereignty”" |
 ### lead-l1166-6: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 209, Shanghai, 30 January 1948, 6 p.m., file 893.00/1-3048 (FRUS 1948, vol. VII, doc. 50)
 
-- **Creator:** US Consulate General, Shanghai (John M. Cabot)
-- **Date:** 1948-01-30
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d50
-- **Proof that it exists:** TEI text (held file): '209. Re Contel 154 dated January 30.' ... 'recently repeated in connection with Kowloon eviction case, of fanning popular Chauvinism'
-- **What it gives (resolver's note, not checked):** One passing mention: Nanking fanned popular chauvinism in the 'Kowloon eviction case' (Jan 1948). Little on the City.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
-- **Notes:** Passing mention only; catalogue with doc. 56 or skip.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 209, Shanghai, 30 January 1948, 6 p.m. (received 9:37 a.m.), file 893.00/1–3048; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 50, pp. 68-70, https://history.state.gov/historicaldocuments/frus1948v07/d50
+- **Class:** primary (A consular telegram of the time.)
+- **Date of the record:** 1948-01-30
+- **Files:**
+  - `lead-l1166-6-d50-bce7cb46.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 50.; https://history.state.gov/historicaldocuments/frus1948v07/d50; 38209 bytes; SHA-256 `3f6501dd5811a1b8272f9174e53f6bd15ffcab44cd50601f2471fdaeefeb0885`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 69 | Cabot judged that Nanking was again fanning popular chauvinism, as it had recently done in the 'Kowloon eviction case', so that it could say it was not responsible for the results if pushed in negotiations. | "too often adopted with disastrous results by China in past and recently repeated in connection with Kowloon eviction case, of fanning popular Chauvinism" |
 ### lead-l1166-7: The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 248, Shanghai, 4 February 1948, 11 a.m., file 893.00/2-448 (FRUS 1948, vol. VII, doc. 56)
 
-- **Creator:** US Consulate General, Shanghai (John M. Cabot)
-- **Date:** 1948-02-04
-- **Kind:** document
-- **Class:** primary (A diplomatic telegram of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** US government work; CC0 1.0 for the HistoryAtState/frus repository.
-- **Link:** https://history.state.gov/historicaldocuments/frus1948v07/d56
-- **Proof that it exists:** TEI text (held file): '248. Events past 2 weeks and information reaching us from various quarters point to accelerating deterioration situation'
-- **What it gives (resolver's note, not checked):** Two passing mentions of the Shanghai 'student demonstration re Kowloon' (students courted the police; anti-American feeling). Nothing on the City itself.
-- **Lead:** L1166 (cited by usgov-6, us-government-records-1948-1994)
-- **Notes:** Passing mention only.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** The Consul General at Shanghai (Cabot) to the Secretary of State, telegram 248, Shanghai, 4 February 1948, 11 a.m. (received 8:10 a.m.), file 893.00/2–448; Foreign Relations of the United States, 1948, The Far East: China, Volume VII, document 56, pp. 73-75, https://history.state.gov/historicaldocuments/frus1948v07/d56
+- **Class:** primary (A consular telegram of the time.)
+- **Date of the record:** 1948-02-04
+- **Files:**
+  - `lead-l1166-7-d56-931beaa8.html` (in `local/`, not in git): HTML page of FRUS 1948 vol. VII document 56.; https://history.state.gov/historicaldocuments/frus1948v07/d56; 41937 bytes; SHA-256 `b09a05d3c8c30032c647db1f23fe0298b4d245e2b3743fc814b636e9a132f849`; licence: A US government work (Office of the Historian). The history.state.gov page states no licence; the CC0 1.0 and public-domain statement of LICENSE.md covers the files of the HistoryAtState/frus repository (the TEI volume file, already held under usgov-6), not this HTML page. (https://github.com/HistoryAtState/frus/blob/master/LICENSE.md)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 74 | In the recent student demonstration over Kowloon in Shanghai, the students made conspicuous efforts to keep the police friendly to them. | "In recent student demonstration re Kowloon, students made conspicuous efforts to keep police friendly to them and create spirit solidarity." |
+| p. 75, point 8 | Cabot named the demonstration over Kowloon as a sign of easily aroused anti-American feeling in Shanghai. | "Easily arousable anti-American feeling as indicated by demonstration re Kowloon" |
 ### lead-l1175: Congressional Record, 88th Congress, 1st session, vol. 109, part 2 (1963): insertion 'James Wesley Turpin, M.D.' (scan page 903 of congressional-record-1963-pt2)
 
-- **Creator:** US Congress (member who inserted it not yet seen)
-- **Date:** 1963 (part 2 of vol. 109, about February 1963)
-- **Kind:** document
-- **Class:** primary (A record of the time (1963) on the Project Concern clinic that opened in the Walled City in 1962-1963.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Public Domain Mark 1.0 is stated on the sister item us_congress_89 (see usgov-14); check the us_congress_88 item page when collecting.
-- **Link:** https://archive.org/details/us_congress_88/congressional-record-1963-pt2/page/n903/mode/1up
-- **Other links:** https://archive.org/download/us_congress_88/congressional-record-1963-pt2.pdf, https://archive.org/download/us_congress_88/congressional-record-1963-pt2_djvu.txt
-- **Proof that it exists:** archive.org full-text search, congressional-record-1963-pt2, page 903: 'JAMES WESLEY Turpin, M.D.'; 'He opened his clinic in the notorious walled city of Kowloon in Hong Kong,'
-- **What it gives (resolver's note, not checked):** A short biography of Dr. James W. Turpin (1963): he left his practice in California in 1962, founded Project Concern and opened his clinic in the Walled City; it claims 'more than 250,000' people in 10 square blocks (a press figure, much higher than the 25,000 of the 1965 Q&A).
-- **Lead:** L1175 (cited by usgov-14, us-government-records-1948-1994)
-- **Notes:** Check the printed page number, date and member on the page image; the BookReader URL with /page/n903 is assumed from the scan page index (the held usgov-14 uses the same pattern).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Congressional Record, 88th Congress, 1st session, vol. 109, part 2, Senate, 14 February 1963, pp. 2326-2328: Mr. Hruska, 'Jaycees' 10 Outstanding Young Men', with the biographies of the ten outstanding young men of 1962, including 'James Wesley Turpin, M.D.' (p. 2328); scan pages n901-n903 of congressional-record-1963-pt2, https://archive.org/details/us_congress_88/congressional-record-1963-pt2/page/n903/mode/1up
+- **Class:** primary (A record of the time (14 February 1963), reprinting a Jaycees biography of 1962-63. It is not first-hand about the City.)
+- **Date of the record:** 1963-02-14
+- **Files:**
+  - `lead-l1175-n901-468efb12.jpg` (in git): Page image of Congressional Record, 14 February 1963, p. 2326 (scan n901): Senator Hruska's introduction 'Jaycees' 10 Outstanding Young Men'.; https://archive.org/download/us_congress_88/congressional-record-1963-pt2/page/n901.jpg; 1159354 bytes; SHA-256 `2b8112905f028d71e508ffe9928bffbd03c0e803509f0e84755d0c845f713927`; licence: Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_88) (https://archive.org/details/us_congress_88)
+  - `lead-l1175-n903-5397eb15.jpg` (in git): Page image of Congressional Record, 14 February 1963, p. 2328 (scan n903): the biography 'James Wesley Turpin, M.D.'.; https://archive.org/download/us_congress_88/congressional-record-1963-pt2/page/n903.jpg; 1202403 bytes; SHA-256 `e60696789c2fe3720338fbdcacb5f13621f06178ed39c66be3d75ba832bf703a`; licence: Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_88) (https://archive.org/details/us_congress_88)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 2326 (scan n901) | On 14 February 1963 Senator Hruska told the Senate that he had addressed the silver anniversary congress of the US Junior Chamber of Commerce's ten-outstanding-young-men program in Little Rock, Arkansas. He said the group of 1962 ranged from Connecticut to Hong Kong. | "This year's group of 10 outstanding young men range geographically from Connecticut to Hong Kong" |
+| p. 2328 (scan n903) | In 1962 Dr. James Wesley Turpin, aged 34, gave up a good medical practice in California and took his family to Hong Kong to give medical care to refugees from China. | "The year 1962 was the one Dr. Turpin, 34, gave up a good medical practice in California" |
+| p. 2328 (scan n903) | To set up a clinic, Turpin founded Project Concern, an independent nonprofit medical relief organization, with a threefold aim: medical care, food and clothing. He was its president. | "Dr. Turpin founded an independent and nonprofit medical relief organization—Project Concern. It has a threefold aim of providing medical care, food and clothing" |
+| p. 2328 (scan n903) | Turpin opened his clinic in the walled city of Kowloon. The biography says more than 250,000 people crowded into 10 square blocks there (a press figure, much higher than other counts of the City). | "He opened his clinic in the notorious walled city of Kowloon in Hong Kong, where more than 250,000 men, women, and children crowd into 10 square blocks." |
+| p. 2328 (scan n903) | A second Project Concern clinic, aboard a modified junk, was under construction in early 1963, to serve the 200,000 Chinese who lived on sampans and junks. | "A second clinic aboard a modified junk is now under construction and will soon be completed." |
+| p. 2328 (scan n903) | Turpin was an ordained Methodist minister who studied theology at Emory University. His wife Martha assisted him at the clinic and cared for their four children. | "His wife, Martha, assists him at the clinic and cares for their four children." |
+| p. 2328 (scan n903) | Turpin took his M.D. at Emory Medical School, interned at Crawford W. Long Memorial Hospital in Atlanta and did his residency at Sonoma County Hospital, Santa Rosa, California. Before Hong Kong he gave an afternoon a week to a clinic in Tijuana. | "he began giving an afternoon a week to a small Mexican medical and surgical clinic in Tijuana" |
 ### lead-l1176: Congressional Record, 87th Congress, 2nd session, vol. 108, part 27 (Appendix), p. A6506: extension of remarks of Hon. Bob Wilson (California), with 'Project Concern' by Alice Sue Hardin (San Diego magazine, July 1962)
 
-- **Creator:** US Congress; Bob Wilson (Representative, California); Alice Sue Hardin (article)
-- **Date:** 1962 (Appendix p. A6506, about August-September 1962; the reprinted article is of July 1962)
-- **Kind:** document
-- **Class:** primary (A record of the time (1962) that reprints a magazine article of July 1962, before the Walled City clinic opened.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_87).
-- **Link:** https://archive.org/details/us_congress_87/congressional-record-1962-pt27/page/n627/mode/1up
-- **Other links:** https://archive.org/download/us_congress_87/congressional-record-1962-pt27.pdf, https://archive.org/download/us_congress_87/congressional-record-1962-pt27_djvu.txt
-- **Proof that it exists:** archive.org full-text search, congressional-record-1962-pt27, leaf 627: 'The second clinic under the Turpin program will be located within the walled city of Kowloon on the mainland'; 'PROJECT CONCERN (By Alice Sue Hardin)'
-- **What it gives (resolver's note, not checked):** Plans of Project Concern in mid-1962: the second Turpin clinic to be in the Walled City; it says the City lay outside the British lease, lacked police and urban services until recently, and had about 250,000 people in 10 square blocks (a press figure). Also names the board (Dr. E. M. Hayes, Imperial Beach).
-- **Lead:** L1176 (cited by usgov-14, us-government-records-1948-1994)
-- **Notes:** The BookReader URL with /page/n627 follows the pattern of the held usgov-14; check the date of the extension and the leaf on the page image when collecting. Twin with project-concern-1962-1970 if that folder fits better.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Congressional Record, 87th Congress, 2nd session, vol. 108, part 27 (Appendix), p. A6506: 'Project Concern', extension of remarks of Hon. Bob Wilson of California, House of Representatives, Wednesday, 29 August 1962, reprinting Alice Sue Hardin, 'Project Concern', San Diego magazine, July 1962; scan page n627 of congressional-record-1962-pt27, https://archive.org/details/us_congress_87/congressional-record-1962-pt27/page/n627/mode/1up
+- **Class:** primary (A record of the time (August 1962) reprinting a magazine article of July 1962, written before the clinics opened. Turpin's words are reported speech, not first-hand about the City.)
+- **Date of the record:** 1962-08-29 (the article: July 1962)
+- **Files:**
+  - `lead-l1176-n627-59fe9296.jpg` (in git): Page image of Congressional Record, Appendix, 29 August 1962, p. A6506 (scan n627): 'Project Concern', remarks of Bob Wilson with Alice Sue Hardin's article.; https://archive.org/download/us_congress_87/congressional-record-1962-pt27/page/n627.jpg; 1002994 bytes; SHA-256 `7a5f6e06535773379c2d9592f82ea1fea7218c4c9ad7ba223b2a3fd189141ebc`; licence: Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_87) (https://archive.org/details/us_congress_87)
+- **Note:** its 2 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/us-government-records-1948-1994/SOURCE.md`](../../secondary-sources/us-government-records-1948-1994/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. A6506 | On 29 August 1962 Representative Bob Wilson of California put in the Record an article from the July 1962 San Diego magazine on Dr. James Turpin's Project Concern. | "The attached article which appeared in the July 1962 issue of San Diego magazine, dramatically illustrates the work being done by Project Concern" |
+| p. A6506 | Turpin practised general medicine and surgery in Coronado, California. He was 28 when he opened his practice there about 4 years before; he was a Methodist minister and was elected to the city council. | "James W. Turpin, M.D., practices general medicine and surgery in Coronado" |
+| p. A6506 | About 1960 Turpin and his wife Martha began to work one day a week at a clinic in Tijuana, where they treated some 50 to 75 poor, ill people each Thursday. | "the Turpins helped treat some 50 to 75 wretchedly poor, ill people" |
+| p. A6506 | In August 1962 a full staff was to sail to Hong Kong to open two clinics. Turpin planned no active missionary or political work. | "In August a full staff will sail to Hong Kong to open two clinics" |
+| p. A6506 | The first clinic was to be a junk for the 200,000 boat people: 40 feet long, with a 13-foot beam and a 55-horsepower British Marine diesel engine, handcrafted at a cost of $8,000. | "The junk, now under construction, is to be 40 feet with a 13-foot beam and a 55 horsepower British Marine diesel engine." |
+| p. A6506 | The second clinic was to be within the walled city of Kowloon, on the mainland. | "The second clinic under the Turpin program will be located within the walled city of Kowloon on the mainland" |
+| p. A6506 | Turpin reported that 250,000 people lived in the worst squalor in an area of 10 square blocks (a press figure, much higher than other counts of the City). | "In an area of 10 square blocks 250,000 people live in the worst imaginable squalor, Dr. Turpin reported." |
+| p. A6506 | The board of Project Concern was chaired by Dr. E. M. Hayes of Imperial Beach, who was born and raised in China. Executive committees worked in several US states and in Hong Kong. | "Board of Directors for Project Concern is chairmaned by Dr. E. M. Hayes, of Imperial Beach, who was born and reared in China." |
+| p. A6506 | The program needed about $25,000 to open the clinics. By mid-1962 it had collected $16,000; a second fund, aiming at pledges of $2,000 a month for an initial 2 years, had reached the $1,250 mark. | "We calculate a modest $25,000 will cover minimum expenses, or at least open the doors of the clinics." |
+| p. A6506 | San Diego County optometrists formed 'Operation Save-A-Sight' to work in Hong Kong. The US Navy's Project Handclasp agreed to carry supplies free of charge. | "The U.S. Navy's Project Handclasp has agreed to deliver this material and other supplies" |
+| p. A6506 | Paul Fleener, Turpin's 'right hand', left his radio job at Kansas State University. The group was to sail from Los Angeles on 10 August 1962, and its members were studying Cantonese. | "The group sails August 10 from Los Angeles; along with making the detailed preparations each member including the Turpins' older sons is studying Cantonese" |
+
+- **Leads:**
+  - Alice Sue Hardin, 'Project Concern', San Diego magazine, July 1962 (the original of the article reprinted at Congressional Record p. A6506).
 ### lead-l1177-1: Congressional Record, 88th Congress, 1st session, vol. 109, part 24 (Appendix), p. A1788: Mr. Bob Wilson, 'Report From Project Concern: A Sense of Deep Satisfaction' (from the San Diego Union)
 
-- **Creator:** US Congress; Bob Wilson (Representative, California); San Diego Union (article, author not seen)
-- **Date:** 1963 (Appendix p. A1788, about March-April 1963)
-- **Kind:** document
-- **Class:** primary (A record of the time (1963) that reprints a press report from Hong Kong on the first months of Project Concern.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_88).
-- **Link:** https://archive.org/details/us_congress_88/congressional-record-1963-pt24/page/n705/mode/1up
-- **Other links:** https://archive.org/download/us_congress_88/congressional-record-1963-pt24.pdf, https://archive.org/download/us_congress_88/congressional-record-1963-pt24_djvu.txt
-- **Proof that it exists:** archive.org full-text search, congressional-record-1963-pt24, leaf 705: 'Report From Project Concern: A Sense of Deep Satisfaction'; 'Turpin treats almost 60 children such as Liu Lum each day in his Project Concern clinic in the walled city of Kowloon'
-- **What it gives (resolver's note, not checked):** A press report of early 1963: Turpin treats almost 60 children a day at the Project Concern clinic in the Walled City (a named child patient, Liu Lum, with an infected ear); the floating clinic being built; the staff (Turpin, Paul Fleener, nine adult workers and two Chinese doctors).
-- **Lead:** L1177 (cited by usgov-14, us-government-records-1948-1994)
-- **Notes:** Check the date of the extension and the original date of the San Diego Union article on the page image. Twin with project-concern-1962-1970 if that folder fits better.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Congress, Congressional Record, 88th Congress, 1st Session, vol. 109, part 24 (Appendix), p. A1788 (archive.org page n705): extension of remarks of Hon. Bob Wilson of California, in the House of Representatives, Thursday, March 28, 1963, 'Report From Project Concern: A Sense of Deep Satisfaction', reprinted from 'a recent issue of the San Diego Union' (author and date not given). https://archive.org/details/us_congress_88/congressional-record-1963-pt24/page/n705/mode/1up
+- **Class:** primary (A press report of the time (San Diego Union, about January 1963), reprinted in the Congressional Record on 28 March 1963. Twin with project-concern-1962-1970 if that folder holds the Turpin material.)
+- **Date of the record:** Extension of remarks: Thursday 28 March 1963. Article: 'a recent issue' of the San Diego Union, about December 1962 to January 1963 (INFERRED: it says the floating clinic 'should be ready by the end of January').
+- **Files:**
+  - `lead-l1177-1-n705-0c335260.jpg` (in git): Page image of Congressional Record 1963 vol. 109 pt. 24, Appendix p. A1788 (archive.org page n705), with the Bob Wilson extension on Project Concern; https://archive.org/download/us_congress_88/congressional-record-1963-pt24/page/n705.jpg; 953279 bytes; SHA-256 `a36b65d54b77cff6c179e278c27ea210bf7ca7c0f26bcf6eb1735d747c552203`; licence: Public Domain Mark 1.0 (archive.org item us_congress_88, licenseurl https://creativecommons.org/publicdomain/mark/1.0/) (https://archive.org/details/us_congress_88)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. A1788 (archive.org n705) | Representative Bob Wilson of California put the article into the Congressional Record on Thursday, 28 March 1963. | "OF CALIFORNIA IN THE HOUSE OF REPRESENTATIVES Thursday, March 28, 1963" |
+| p. A1788 (archive.org n705) | The article came from 'a recent issue' of the San Diego Union. The page does not give its date or author. | "which appeared in a recent issue of the San Diego Union" |
+| p. A1788 (archive.org n705) | Dr. James Turpin treated almost 60 children each day in his Project Concern clinic. | "Turpin treats almost 60 children such as Liu Lum each day" |
+| p. A1788 (archive.org n705) | The clinic was in the walled city of Kowloon. The article calls it one of the most densely populated refugee areas of Hong Kong. | "the walled city of Kowloon, one of Hong Kong's most densely populated refugee areas." |
+| p. A1788 (archive.org n705) | The article opens with a 4-year-old Chinese girl, Liu Lum, who held a cracker while she waited for the doctor. | "A 4-year-old Chinese girl named Liu Lum clutched a cracker" |
+| p. A1788 (archive.org n705) | When her turn came, Liu Lum tilted her head so that Dr. James W. Turpin could look at her infected ear. | "tilted her head so that Dr. James W. Turpin could have a look at her infected ear" |
+| p. A1788 (archive.org n705) | The clinic in the walled city was the first part of the Project Concern programme that was in operation. | "The clinic is the first part of Turpin's Project Concern program to be realized." |
+| p. A1788 (archive.org n705) | Project Concern had nine adult workers and two Chinese doctors. | "there are nine adult workers in Project Concern" |
+| p. A1788 (archive.org n705) | Patients of the planned floating clinic were to come aboard from their own sampans and pay a first registration fee of one Hong Kong dollar (about 17 US cents). The article gives no fee for the walled-city clinic. | "Patients will come aboard the floating clinic from their own sampans, pay an initial registration fee of one Hong Kong dollar (about 17 cents)" |
+| p. A1788 (archive.org n705) | The US Navy programme Operation Handclasp helped to carry the drugs to Hong Kong. | "The U.S. Navy's Operation Handclasp program aids in transporting drugs." |
+| p. A1788 (archive.org n705) | A floating clinic was being built at a shipyard in Kowloon: a 60-foot former cargo junk, bought for $5,000. | "A 60-foot former cargo junk was purchased for $5,000" |
+| p. A1788 (archive.org n705) | The floating clinic was to serve some of the 200,000 boat people of Hong Kong. | "It will serve the needs of some of Hong Kong's 200,000" |
+| p. A1788 (archive.org n705) | Turpin and his family, and another Project Concern official, Paul Fleener, and his family were to live on the junk. | "another Project Concern official, Paul Fleener" |
+| p. A1788 (archive.org n705) | The floating clinic was to be ready by the end of January. The first one was to anchor at the Yaumati typhoon shelter; others were planned for Aberdeen and Causeway Bay. | "The first floating clinic will be anchored at the Yaumati typhoon shelter." |
+| p. A1788 (archive.org n705) | Project Concern chose Hong Kong because of its large population of refugees from Communist China. | "Hong Kong was chosen because of its vast population of refugees from Communist China" |
+| p. A1788 (archive.org n705) | Turpin's American medical licence was not enough in the colony. He had to go through a series of steps, with an examination in Canada and final approval in London. | "His American medical license was not sufficient for practice in this British crown colony" |
+| p. A1788 (archive.org n705) | Turpin was 34, a former Coronado city councilman and an ordained Methodist minister. He said that he planned no active missionary or political work. | "Turpin, 34, a former Coronado city councilman" |
+
+- **Leads:**
+  - San Diego Union, 'Report From Project Concern: A Sense of Deep Satisfaction', about December 1962 to January 1963 (author and date not given in the Congressional Record reprint).
 ### lead-l1177-2: Congressional Record, 90th Congress, 1st session, vol. 113, part 31 (Appendix), p. A497: Mr. Brademas, item on Dr. James Turpin and Project Concern
 
-- **Creator:** US Congress; John Brademas (Representative, Indiana)
-- **Date:** 1967 (Appendix p. A497, about February 1967)
-- **Kind:** document
-- **Class:** primary (A record of the time (1967) that reprints a press column on Turpin.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Public Domain Mark 1.0 (licenseurl of the archive.org item us_congress_90).
-- **Link:** https://archive.org/details/us_congress_90/congressional-record-1967-pt31/page/n114/mode/1up
-- **Other links:** https://archive.org/download/us_congress_90/congressional-record-1967-pt31.pdf, https://archive.org/download/us_congress_90/congressional-record-1967-pt31_djvu.txt
-- **Proof that it exists:** archive.org full-text search, congressional-record-1967-pt31, leaf 114: 'has clinics elsewhere in the Crown Colony, including the notorious walled city of Kowloon'; 'as a friend and admirer of Dr. James Turpin, founder and president of Project Concern'
-- **What it gives (resolver's note, not checked):** One mention of the City (1967): Project Concern has clinics in Hong Kong 'including the notorious walled city of Kowloon'; the rest is about Turpin and his funding (Agua Caliente race track).
-- **Lead:** L1177 (cited by usgov-14, us-government-records-1948-1994)
-- **Notes:** The source of the reprinted column was not seen in the snippets.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Congress, Congressional Record, 90th Congress, 1st Session, vol. 113, part 31 (Appendix), p. A497 (archive.org page n114): extension of remarks of Hon. John Brademas of Indiana, in the House of Representatives, Wednesday, January 18, 1967 (printed in the Appendix of February 7, 1967), introducing Bob Considine's column on Project Concern. https://archive.org/details/us_congress_90/congressional-record-1967-pt31/page/n114/mode/1up
+- **Class:** primary (A newspaper column of the time (early 1967), reprinted in the Congressional Record. Only one mention of the City.)
+- **Date of the record:** Extension of remarks dated Wednesday 18 January 1967 (date line on the page image); printed in the Appendix of Tuesday 7 February 1967 (page header). The Considine column is 'recent', so about January 1967.
+- **Files:**
+  - `lead-l1177-2-n114-b7795044.jpg` (in git): Page image of Congressional Record 1967 vol. 113 pt. 31, Appendix p. A497 (archive.org page n114), with the Brademas extension on Project Concern; https://archive.org/download/us_congress_90/congressional-record-1967-pt31/page/n114.jpg; 1006274 bytes; SHA-256 `1e61acd02d32ccea7886ca973fa9aa699987886db60a5c195a107e3ccc7960b3`; licence: Public Domain Mark 1.0 (archive.org item us_congress_90, licenseurl https://creativecommons.org/publicdomain/mark/1.0/) (https://archive.org/details/us_congress_90)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. A497 (archive.org n114) | Representative John Brademas of Indiana put Bob Considine's 'recent column' on Project Concern into the record on Wednesday 18 January 1967 (printed in the Appendix of 7 February 1967). | "Bob Considine's recent column which describes the achievements of Project Concern." |
+| p. A497 (archive.org n114) | In early 1967 Project Concern had clinics in Hong Kong, and one of them was in the walled city of Kowloon. | "has clinics elsewhere in the Crown Colony, including the notorious walled city of Kowloon" |
+| p. A497 (archive.org n114) | Project Concern had two floating clinics among the Chinese people of Aberdeen. | "operates two floating clinics among the teeming and sorely neglected Chinese inhabitants of the Aberdeen section." |
+| p. A497 (archive.org n114) | Brademas (in his introduction, not the column) calls Dr. James Turpin the founder and president of Project Concern, which brought medical care to the ill in Hong Kong and South Vietnam. | "Dr. James Turpin, founder and president of Project Concern" |
+| p. A497 (archive.org n114) | John Alessio, who ran the Agua Caliente race track, started Turpin's mission with a round-trip airline ticket to Hong Kong, in 1961. | "Jim Turpin is probably the only medical missionary ever launched on his mission by a race track." |
+
+- **Leads:**
+  - Bob Considine, syndicated column on Project Concern and Dr. James Turpin, early 1967 (newspaper not named in the reprint).

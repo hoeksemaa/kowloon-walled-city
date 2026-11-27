@@ -135,6 +135,7 @@ catalogued, not read: read each item on its source before you use one of its fac
 | [`world-press-1899-1995/`](world-press-1899-1995/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/world-press-1899-1995/SOURCE.md |
 | [`missions-1953-1977/`](missions-1953-1977/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/missions-1953-1977/SOURCE.md |
 | [`qing-records-and-treaty-1688-1899/`](qing-records-and-treaty-1688-1899/SOURCE.md) | The secondary parts of the items of the primary folder of the same name: narration, later captions and histories | see the items | no (notes only) | ../primary-sources/qing-records-and-treaty-1688-1899/SOURCE.md |
+| [`housing-authority-rules-2022/`](housing-authority-rules-2022/SOURCE.md) | Leads of the reading of 2026-11, found open: 1 items, catalogued, not read | November 2 | catalogue only | https://www.housingauthority.gov.hk/tc/common/pdf/global-elements/forms/flat-application/HD274.pdf |
 
 <!-- SOURCES-TABLE: the new secondary folders of the search of 2026-11 go above this line -->
 

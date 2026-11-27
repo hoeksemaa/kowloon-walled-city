@@ -332,3 +332,16 @@ Chinese names, and noted the secondary part of fact T6.
 | Page | Fact | Words in the source |
 |---|---|---|
 | Host page, image caption | The caption dates the photo to 1991 and names it 'Water Standpipe #2'. | "Ian Lambot ‘Water Standpipe #2’ Hong Kong 1991_Courtesy of Blue Lotus Gallery, Kowloon Walled City" |
+
+### lead-l0607: 'City of Darkness' by Greg Girard & Ian Lambot (Blue Lotus Gallery show page, 8 Nov - 8 Dec 2019): 24 uncaptioned photo screenshots (12 Girard, 12 Lambot)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Blue Lotus Gallery, ''City of Darkness' by Greg Girard & Ian Lambot' (exhibition page, 8 November - 8 December 2019), 28 Pound Lane, Hong Kong; 24 photo screenshots (12 by Greg Girard, 12 by Ian Lambot) and the main image 'Kowloon Walled City Night View from SW Corner', 1987, https://bluelotus-gallery.com/new-events/2019/11/8/city-of-darkness-by-greg-girard-amp-ian-lambot
+- **Class:** primary (The photos are records made at the time (about 1987-1993) by Girard and Lambot; the gallery text of 2019 is secondary.)
+- **Date of the record:** photos about 1987-1993 (undated); page 2019
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/mplus-girard-lambot-photos/SOURCE.md`](../../primary-sources/mplus-girard-lambot-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| page body | The gallery page puts the 24 photos in two groups: 12 under 'Photos by Greg Girard' and 12 under 'Photos by Ian Lambot'. None has a caption or a date. | "Photos by Greg Girard:" |
+| page body, para 6-7 | The gallery text (2019) gives 35,000 people at the peak and says the demolition was in 1994; these are later statements and differ from other sources (33,000; 1993). | "home to 35,000 people at its peak" |

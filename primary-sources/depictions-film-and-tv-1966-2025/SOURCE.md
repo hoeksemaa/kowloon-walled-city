@@ -188,7 +188,7 @@ shows is the reader's reading of it.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+- **Status:** read: 3 of 3 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0747: 邊緣人 (Man On The Brink)｜嘉倫、金興賢、艾迪｜粵語中字｜美亞影院 Cinema Mei Ah (YouTube title begins '1982金馬獎最佳導演＋影帝＋劇本三冠王！...')
@@ -214,3 +214,15 @@ shows is the reader's reading of it.
 |---|---|---|
 | frame 2 (vlcsnap-2015-01-13-12h10m58s231.jpg), right side | INFERRED: The second frame shows a street-name sign on posts with the English 'Nga Tsin Long Rd' over the Chinese 衙前塱道, in front of a low building, about 1981. My reading of the blurred sign is helped by the blog's identification. | "Nga Tsin Long Rd" |
 | frame 2 (vlcsnap-2015-01-13-12h10m58s231.jpg), right half | INFERRED: The second frame also shows a roadside fruit stall with a table of oranges, a parked saloon car, and a round yellow traffic sign on a post whose first word is 'NO' (the rest is unreadable). |  |
+
+### lead-l0737: 《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Nic Wong (text), Oiyan Chan (photos), 《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大, JET Magazine, 2024-04-27, https://jetmagazine.com.hk/walled-in-yuyi-interview-2024/
+- **Class:** depiction (An interview about a fiction (novel, manhua, film); use only for the depiction file, never as evidence of the real City.)
+- **Date of the record:** 2024-04-27.
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../secondary-sources/depictions-film-and-tv-1966-2025/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| article, section on his childhood | As a child, 余兒 (Yu Yi) passed the outer edge of the City with his grandfather on the way to the cinema in Kowloon City, but did not want to go in. (His memory, told in 2024.) | "看到外圍卻不想進去" (I saw the outer edge but did not want to go in.) |

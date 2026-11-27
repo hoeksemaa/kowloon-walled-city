@@ -406,23 +406,28 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0068: 歷史、使命及願景 (History, Mission and Vision), 九龍樂善堂 (Kowloon Lok Sin Tong) web site
 
-- **Creator:** Kowloon Lok Sin Tong (九龍樂善堂)
-- **Date:** undated web page (seen 2026-11-25)
-- **Kind:** reference
-- **Class:** secondary (The charity's own later history of itself, written long after the events.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement seen; all rights reserved assumed (organisation web site).
-- **Link:** https://www.loksintong.org/history-mission-vision
-- **Other links:** https://loksintong.org/content/document/39/樂善堂小冊子2019-final.pdf, https://www.loksintong.org/content/document/57/LST_BOOKLET-電子版.pdf
-- **Proof that it exists:** '樂善堂又於 50 至 60 年代開辦留產所為孕婦接生，同時亦設置診所及戒毒登記處等，為市民服務。'
-- **What it gives (resolver's note, not checked):** Lok Sin Tong ran a maternity home, a clinic and a drug-rehabilitation registration office (戒毒登記處) in the 1950s-1960s; officials who inspected the City in the mid-19th century landed at the stone pier. The booklets (not opened) can give more exact years.
-- **Lead:** L0068 (cited by missions-17, church-and-mission-histories)
-- **Notes:** The two booklet PDFs are over 10 MB; open them by hand to look for the years of the registration office.
+- **Status:** Partly read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26. Read the web page 歷史、使命及願景 with WebFetch. The two booklet PDFs are over 10 MB: WebFetch refused them (limit 10 MB), so I did not open them. The page does not say where the 1950s-1960s maternity home, clinic and drug-rehabilitation registration office were; it does not say that they were in the Walled City.
+- **Citation:** Kowloon Lok Sin Tong (九龍樂善堂), 歷史、使命及願景 (History, Mission and Vision), undated web page, https://www.loksintong.org/history-mission-vision (seen 2026-11-26).
+- **Class:** secondary (The organisation's own later summary of its history; no witness account.)
+- **Date of the record:** Undated web page (copyright line 2026).
+- **Files:**
+  - `lead-l0068-_2019-final-9369bbaf.pdf` (in `local/`, not in git): Lok Sin Tong booklet 2019 (PDF over 10 MB, not opened); https://loksintong.org/content/document/39/樂善堂小冊子2019-final.pdf; 16382027 bytes; SHA-256 `40a1c122e0a67471c6cf7ab658f631aa6f01bf6cdb58fa3de0f6465610f41181`; licence: 版權所有 2026 © 樂善堂。不得轉載。 (all rights reserved; no reproduction) (https://www.loksintong.org/history-mission-vision)
+  - not downloaded (skipped: application/pdf, 40058842 bytes): Lok Sin Tong booklet, electronic edition (PDF over 10 MB, not opened); https://www.loksintong.org/content/document/57/LST_BOOKLET-電子版.pdf; licence: 版權所有 2026 © 樂善堂。不得轉載。 (all rights reserved; no reproduction) (https://www.loksintong.org/history-mission-vision)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| web page, history section | In the mid-19th century, Chinese officials who went to inspect the Walled City landed at the stone pier (石板碼頭). | "早在十九世紀中期，當年中國官員前赴九龍城寨視察時，均會於石板碼頭登岸。" (As early as the mid-19th century, Chinese officials going to inspect the Kowloon Walled City all landed at the stone-slab pier.) |
+| web page, history section | A market near the pier had a public scale (公秤). All the money from the weighing went to free medical care, medicines and help with burials. | "每次秤量所得款項則全數用作贈醫、施藥、助殮之用。" (All the money from each weighing was used for free medical care, free medicine and burial aid.) |
+| web page, history section | In 1880 the group became a formal charity named Kowloon Lok Sin Tong (九龍樂善堂). | "直至1880年，這個辦理善業之組織始正式成為一個慈善機構，並名為「九龍樂善堂」。" (Only in 1880 did this charitable group formally become a charity, named Kowloon Lok Sin Tong.) |
+| web page, history section | In its early years Lok Sin Tong put first the settling of disputes and free medical care. | "早期的樂善堂以排難解紛及贈醫為首務。" (The early Lok Sin Tong made settling disputes and free medical care its first tasks.) |
+| web page, history section | In 1929 Lok Sin Tong opened the first free school for girls in the Kowloon City district. (The CUHK heritage report of 2009, lead-l0521, gives 1927 for a girls' school.) | "於1929年，在九龍城區開辦首間女子義學" (In 1929 it opened the first free girls' school in the Kowloon City district.) |
+| web page, history section | In the 1950s and 1960s Lok Sin Tong ran a maternity home for births, a clinic and a drug-rehabilitation registration office. The page gives no address and no exact years. | "樂善堂又於 50 至 60 年代開辦留產所為孕婦接生，同時亦設置診所及戒毒登記處等" (In the 1950s to 1960s Lok Sin Tong also ran a maternity home to deliver babies, and set up a clinic and a drug-rehabilitation registration office.) |
+
+- **Leads:**
+  - Lok Sin Tong booklet 2019 (樂善堂小冊子2019-final.pdf) and LST_BOOKLET-電子版.pdf: check for the years and address of the 戒毒登記處, the 留產所 and the clinic.
+  - 九龍樂善堂百年史略 1880-1980 (Lok Sin Tong Benevolent Society, Kowloon, 1981), cited in lead-l0521 for Lok Sin Tong history.

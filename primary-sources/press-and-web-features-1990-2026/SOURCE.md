@@ -223,3 +223,81 @@ shows is the reader's reading of it.
 | p. 118, para. 1 | Later some friends slipped into the sealed City and brought things back. They set up an installation exhibition, '城寨城債', in the theatre of the City Contemporary Dance Company (城市當代舞蹈團). | "後來有些朋友潛入封起來的城寨，把檢回來東西，在「城市當代舞蹈團」劇場擺了個裝置展覽，名為「城寨城債」" (Later some friends slipped into the sealed-up City and, with the things they picked up, set up an installation exhibition in the theatre of the City Contemporary Dance Company, called '城寨城債') |
 | p. 118, para. 1 | A photographer took photos in the sealed City, among them a set of nude photos on a roof. A theatre friend wanted to stage a show on a City roof, but it never happened. | "有攝影師拍了照片——包括在天台上拍攝的一輯裸體照片" (a photographer took photos, including a series of nude photos shot on the rooftops) |
 | p. 118, para. 1 | At the exhibition the author saw old shop signs taken down, abacuses, account books and old photos brought out of the City. | "看着那些拆下來的陳舊的招牌，檢回來的算盤、賬簿、舊照片" (looking at the old signboards taken down, the abacuses, account books and old photos brought back) |
+
+### lead-l0892: 九龍城寨‧多圖｜同你講故！「三不管」係都巿傳說？ 「街喉」係特色街景？城寨居民識飛簷走壁？
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 星島頭條 (Sing Tao Headline), no byline, 「九龍城寨‧多圖｜同你講故！「三不管」係都巿傳說？ 「街喉」係特色街景？城寨居民識飛簷走壁？」, section 社會, 2024-05-05 08:00 HKT, web article with 39 images, https://www.stheadline.com/realtime/article/1996881/ (redirects to https://www.stheadline.com/society/3340761/%e4%b9%9d%e9%be%8d%e5%9f%8e%e5%af%a8%e5%a4%9a%e5%9c%96%e5%90%8c%e4%bd%a0%e8%ac%9b%e6%95%85%e4%b8%89%e4%b8%8d%e7%ae%a1%e4%bf%82%e9%83%bd%e5%b7%bf%e5%82%b3%e8%aa%aa-%e8%a1%97%e5%96%89%e4%bf%82%e7%89%b9%e8%89%b2%e8%a1%97%e6%99%af%e5%9f%8e%e5%af%a8%e5%b1%85%e6%b0%91%e8%ad%98%e9%a3%9b%e7%b0%b7%e8%b5%b0%e5%a3%81)
+- **Class:** secondary (A 2024 retelling prompted by the film; its narration and its captions are secondary. It names few sources (the scholar 呂大樂, the book City of Darkness, 'several residents'). The archive photos in it are records made at the time, but they have no date or photographer.)
+- **Date of the record:** 2024-05-05
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| section 城寨生活｜無牌行醫成風, para 4 | In early March 2024 the police arrested two men said to come from the Walled City for running a dental clinic in a flat at 賢麗苑 in Lai King (荔景). | "據指，兩名男子來自九龍城寨" (reportedly the two men came from Kowloon Walled City) |
+| image 9 (NP-002878-108.jpg), by eye | INFERRED: By eye (photo NP-002878-108, file photo; the 2024 caption says 1980s): a well in a covered lane, with a post of several brass taps where people wash and fill buckets. A sign on the wall says the well water is not fit to drink. A thick mass of plastic hoses and cables hangs from the ceiling above it. Wall signs advertise a furniture and decoration company (傢俬裝飾公司) and plumbing (水渠, 膠水喉). The date is from the caption only. | "此井水不適宜飲用" (this well water is not fit for drinking) |
+| image 19 (DNSL0820KLNCITY009.JPG), by eye | INFERRED: By eye (photo DNSL0820KLNCITY009, captioned 街喉成特色街景, 'the street tap became a feature of the street'): a woman washes clothes at a street tap, a concrete post with two taps in a sunken concrete basin, with plastic buckets. Behind it is a dental shop with the sign 張華富牙科 and a door plate that seems to read 2A1. The photo is undated and looks like a page of a printed book (INFERRED). | "街喉成特色街景" (the street tap became a feature of the streetscape) |
+
+### lead-l1053: 曾獲補償金禁申公屋 劏房翁申覆核
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 東方日報 (Oriental Daily News), 【本報訊】 (staff report), 「曾獲補償金禁申公屋 劏房翁申覆核」, section 要聞港聞, 2023-07-11, web edition, https://orientaldaily.on.cc/content/%E8%A6%81%E8%81%9E%E6%B8%AF%E8%81%9E/odn-20230711-0711_00176_204/%E6%9B%BE%E7%8D%B2%E8%A3%9C%E5%84%9F%E9%87%91%E7%A6%81%E7%94%B3%E5%85%AC%E5%B1%8B--%E5%8A%8F%E6%88%BF%E7%BF%81%E7%94%B3%E8%A6%86%E6%A0%B8
+- **Class:** secondary (A 2023 news report of a court filing. Its narration of the 2021-2023 events (applications, refusals, the filing) is primary, but those events are outside the City. Its City content (the purchase in the 1980s and the clearance compensation) is background history from the court papers, thus secondary.)
+- **Date of the record:** 2023-07-11
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| para 2 (under the subhead 80年代購入九龍城寨單位; begins 申請人為許健雲) | The applicant is a man of 74, born in the mainland, who once owned a flat in the City; the paper gives his name as 許健雲 and marks it as a transliteration (譯音). The respondent is the Housing Authority. | "申請人為許健雲（譯音），擬答辯人是香港房屋委員會。據入稟狀指，在內地出生現年74歲的許" (the applicant is 許健雲 (transliterated); the intended respondent is the Hong Kong Housing Authority. According to the writ, 許, born in the mainland and now 74) |
+| para 3 (begins 入稟狀指許早在2021年) | The Housing Authority refused him public housing because he had taken compensation and chosen to arrange his own housing. | "他已接受補償金，並選擇自行安排居所" (he had already accepted compensation and chosen to arrange his own housing) |
+| para 3 (begins 入稟狀指許早在2021年) | He first applied in 2021, under the priority scheme for elderly single persons; the Housing Authority refused him in July and September 2022 ('last year'). | "房委會於去年7月及9月分別拒絕其申請" (the Housing Authority rejected his application in July and September last year) |
+| para 3 (begins 入稟狀指許早在2021年) | He applied again in March 2023 and was refused in April 2023. | "今年3月再提交申請" (submitted another application in March this year) |
+| para 2 (under the subhead 80年代購入九龍城寨單位; begins 申請人為許健雲) | INFERRED: In 2023 he lived for the time in transitional housing of St. James' Settlement (聖雅各福群會) and planned to move to the Kong Ha Wai (江夏圍) transitional housing in Yuen Long. The paper gives only the Chinese name 江夏圍; the English name is the usual one of the village (INFERRED). | "他打算搬往元朗江夏圍過渡性房屋" (he plans to move to the Kong Ha Wai transitional housing in Yuen Long) |
+| para 1 (lead, begins 【本報訊】) and the end of para 3 (案件編號) | INFERRED: He filed for judicial review in the High Court on the Friday before 11 July 2023 (about 7 July 2023, a date from the context), case HCAL 1132/2023. He says the rule is rigid, unconstitutional and unlawful. | "上周五入稟高院申請司法覆核" (last Friday filed at the High Court for judicial review) |
+
+### lead-l0498: La cité des ténèbres de Hong Kong (Le Petit Journal Hong Kong)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Didier Pujol, 'La cité des ténèbres de Hong Kong' (Kowloon Walled City), Le Petit Journal Hong Kong, published 2 May 2023, updated 21 December 2024, web article, https://lepetitjournal.com/hong-kong/la-cite-des-tenebres-kowloon-walled-city-histoire-242531
+- **Class:** secondary (A French popular history of 2023 from secondary sources (its own reference list: Girard & Lambot, Kessel 1957, Booth, Carney SCMP 2015). It quotes two former residents (Heung Yin-king; Ng, 62) without a source; their words are retrospective testimony (year not given) and are kind primary, probably taken from Carney's SCMP article of 2015 (repo item top-blocked-c-12) - INFERRED. Keep the item in secondary-sources.)
+- **Date of the record:** 2023-05-02 (updated 2024-12-21)
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| section 'La vie à Kowloon City', para. 4 | Heung Yin-king (as the article spells the name) remembers that the rooms of the first family home in the City were small and had no space for a table. The article does not say where the quote comes from or when it was said (retrospective, year not given; before 2023). | "Dans notre premier logement, les pièces étaient petites et qu'il n'y avait pas de place pour une table" (In our first home, the rooms were small and there was no room for a table) |
+| section 'La vie à Kowloon City', para. 4 | Heung Yin-king remembers that the family ate on a board laid over the sewing machine and sat on the bed. | "Nous mangions sur une planche au dessus de la machine à coudre et nous asseyions sur le lit." (We ate on a board above the sewing machine and sat on the bed.) |
+| section 'La vie à Kowloon City', para. 4 | Heung Yin-king remembers that the second flat had no tap and that she, as the eldest daughter, carried buckets from the shared tap four floors up. | "Dans le second appartement, il n'y avait pas de robinet ... porter des seaux à partir du robinet collectif quatre étages au-dessus" (In the second flat there was no tap ... carry buckets from the communal tap four floors above) |
+| section 'La vie à Kowloon City', para. 4 | Heung Yin-king remembers that everyone got on well and that there were many children to play with. | "Tout le monde s'entendait bien et c'était formidable d'avoir autant d'enfants pour jouer." (Everyone got on well and it was great to have so many children to play with.) |
+| section 'La vie à Kowloon City', para. 5 | A former resident named Ng, aged 62 when quoted, remembers that the children climbed onto the roofs and jumped between buildings, and pulled old mattresses onto the roof to jump on. The article gives no source or date for the quote (retrospective, year not given). | "Les enfants montaient sur les toits et sautaient entre les bâtiments. Nous tirions des vieux matelas sur le toit pour sauter dessus." (The children climbed onto the roofs and jumped between the buildings. We pulled old mattresses onto the roof to jump on.) |
+| section 'La vie à Kowloon City', para. 5 | Ng says that they did not see the danger and that it was a happy time. | "Nous ne voyions pas le danger. ... C'était une période heureuse." (We did not see the danger. ... It was a happy time.) |
+| section 'Vice city', para. 4 | The article says that in 1957 Joseph Kessel interviewed a senior police official, who said that the English never entered Kowloon City. When he was in charge of the area, if a professional killer took refuge in the City, he had to pay other criminals to force the man out to the limits of Kowloon (City), where his men waited. These are the official's own words (retrospective, 1957 or earlier), quoted from Kessel's book through this article. | "Jamais les Anglais n'entrent dans Kowloon City." (The English never enter Kowloon City.) |
+
+### lead-l1004: 【短片+圖輯 】夏銘記月中結業 老闆分享手打魚蛋之道
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 劉嘉裕 (明報記者), 「【短片+圖輯 】夏銘記月中結業　老闆分享手打魚蛋之道」, 明報新聞網 (Ming Pao) 即時新聞 港聞, 1 September 2015, 17:25, https://news.mingpao.com/ins/instantnews/web_tc/article/20150901/s00001/1441099463353 ; Wayback capture 27 Nov 2018: https://web.archive.org/web/20181127234253/https://news.mingpao.com/ins/instantnews/web_tc/article/20150901/s00001/1441099463353
+- **Class:** secondary (A news report of 2015 on the closing of the noodle shop 夏銘記. Its only City detail (a wholesale stall in the City) is the reporter's background history, with no date. The owner's quoted words are retrospective (2015) but do not speak of the City. It stays in secondary-sources/.)
+- **Date of the record:** 2015-09-01
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| paragraph 3 | The owner used only fresh fish, not chilled fish, and squeezed out every fish ball by hand. | "魚蛋製作講究，粒粒都用人手「唧出來」" (Fish-ball making is exacting: every ball is squeezed out by hand.) |
+| paragraph 5 (owner's words) | The owner says that in the past he took only one day off a year. The report does not say which years. | "以前一年只放一日假" (In the past I had only one day off a year.) |
+| paragraphs 1 and 4 | The report of 1 September 2015 says the shop will close on 15 September 2015, because the wife was ill and the owner was old. | "故6月決定本月15日結業" (so in June they decided to close on the 15th of this month.) |
+
+### lead-l1005: 具47年歷史月中關閉 夏銘記結業魚蛋不再
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 都市日報 (Metro Daily), 「具47年歷史月中關閉 夏銘記結業魚蛋不再」, 1 September 2015, http://www.metrohk.com.hk/index.php?cmd=detail&id=289461 ; Wayback capture 12 Oct 2015: https://web.archive.org/web/20151012132250/http://www.metrohk.com.hk/index.php?cmd=detail&id=289461
+- **Class:** secondary (A news report of 2015, twin of the Ming Pao report (lead-l1004). The City detail is background narration without a date. The owner's memory of beating fish paste by hand is retrospective (2015) but is set at a stall outside Wong Tai Sin police station, not in the City. It stays in secondary-sources/.)
+- **Date of the record:** 2015-09-01
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md`](../../secondary-sources/press-and-web-features-1990-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| paragraph 2 | The owner Ha Fan-ming (夏藩銘) recalled that at his street stall outside Wong Tai Sin (黃大仙) police station he held a triangular iron bar of about 3-4 catties in each hand to beat cuttlefish balls and pork balls. The report gives no year. | "雙手分持兩支約3、4斤重的三角形鐵棍，打製墨魚丸及豬肉丸" (holding in his two hands two triangular iron bars of about 3 or 4 catties each, he beat cuttlefish balls and pork balls.) |
+| paragraph 3 | In 2015 a machine minced the fish, but each fish ball was still squeezed out by hand, and only fresh fish was used. | "現在轉用機器「攪肉」，但魚蛋都要用人手逐粒「唧出來」" (now a machine minces the meat, but each fish ball still has to be squeezed out by hand.) |
+| paragraph 4 | In 2015 the owner made 30 kg of fish slices and 40 kg of fish balls a day, and 50 kg of fish slices on busy Saturdays and Sundays. | "他每日要製作30公斤魚片及40公斤魚蛋" (each day he had to make 30 kg of fish slices and 40 kg of fish balls.) |
+| paragraph 1 | Ha Ming Kee (夏銘記) was a Chiu Chow (潮式) noodle shop known for fish slices, fish balls and its chilli oil. The noodle shop and its workshop (工場) closed together. | "以魚片魚蛋及售買辣椒油馳名有47年歷史的潮式老麵店夏銘記" (the 47-year-old Chiu Chow noodle shop Ha Ming Kee, famous for fish slices, fish balls and the chilli oil it sold.) |
