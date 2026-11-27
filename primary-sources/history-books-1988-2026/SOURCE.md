@@ -45,3 +45,16 @@ shows is the reader's reading of it.
 | p. 142, caption and photo | An aerial photo captioned 'the City before the clearance, 1988' shows the dense block of the City with a large area of cleared bare ground beside it. | "清拆前的九龍寨城， 1988 年" (Kowloon Walled City before the clearance, 1988) |
 | p. 143, caption and photo (watermark 政府新聞處圖片 HKSARG ISD Photo) | A Government Information Services photo of 1991 shows residents of the City in a petition against the clearance: a crowd with banners on the road in front of the City's buildings. | "1991 年，九龍寨城居民發起反清拆請願行動" (1991: residents of Kowloon Walled City start a petition against the clearance) |
 | p. 143, caption and photo (ISD watermark) | A Government Information Services photo shows the City during demolition in 1993. | "清拆中的九龍寨城， 1993 年" (Kowloon Walled City being demolished, 1993) |
+
+### lead-l0597: Europe in China: The History of Hongkong from the Beginning to the Year 1882, chapters IX, X, XIX and XX
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ernst Johann Eitel, Europe in China: The History of Hongkong from the Beginning to the Year 1882 (1895), ch. IX pp. 100-104, ch. X pp. 127-134, ch. XVII pp. 302-303, ch. XIX p. 417, ch. XX p. 520; Wikisource transcription, https://en.wikisource.org/wiki/Europe_in_China
+- **Class:** secondary (A history written in 1895 of events from 1839 to 1882. Add the passages to the existing item top-commons-22 (same book) rather than make a new item. The 1839 passages are before the walled city was built (1847).)
+- **Date of the record:** 1895.
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/history-books-1988-2026/SOURCE.md`](../../secondary-sources/history-books-1988-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 104 (ch. IX) | Eitel says the battery at Kowloon pier was still in existence when he wrote (1895). | "the battery at Kowloon pier (still in existence)" |
+| p. 128 (ch. X) | Eitel describes Kowloon city, in his own time, as a small fortified town close to the British frontier in the north-east corner of the Kowloon Peninsula, where a Sub-Magistrate under the Sanon (Xin'an) magistrate lived. | "a Sub-Magistrate residing at Kowloon city, a small fortified town, situated close to the British frontier" |

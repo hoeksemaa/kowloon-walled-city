@@ -573,7 +573,7 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0105: Roaring Fire - Hiroyuki Sanada (1982) - Nga Tsin Long Road, Kowloon City
@@ -595,17 +595,16 @@ Not read yet.
 | blog post of 14 Jan 2015, text | The blog says that the dispensary was built in 1951 and opened in 1952. | "The dispensary was built in 1951 and opened for business in 1952." |
 ### lead-l0737: 《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大
 
-- **Creator:** Nic Wong, JET Magazine; interview with Yu Yi (余兒)
-- **Date:** 2024-04-27
-- **Kind:** article
-- **Class:** secondary (A 2024 magazine interview with the author of the novel behind the film, about fiction and the film set; the one childhood memory (walking past the City's edge) is retrospective and slight.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** Not stated in the text I fetched (JET Magazine web site).
-- **Link:** https://jetmagazine.com.hk/walled-in-yuyi-interview-2024/
-- **Other links:** https://www.instagram.com/p/C6VU9JNrfCT/
-- **Proof that it exists:** Headline '《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大', 2024-04-27, byline Nic Wong; first sentence '《九龍城寨》終於搬上大銀幕！'
-- **What it gives (resolver's note, not checked):** The novelist's account of how he wrote the novel and how the manhua and the film followed; he only walked past the edge of the City as a child; the film's set at 達德學校 (temple, opera stage, cha chaan teng). Nothing on daily life in the real City.
-- **Lead:** L0737 (cited by depictions-19, depictions-film-and-tv-1966-2025)
-- **Notes:** Use only for the depiction file (the set at 達德學校), never as evidence of the real City.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Nic Wong (text), Oiyan Chan (photos), 《九龍城寨》原著作者余兒專訪｜小說是原點，漫畫發揚光大, JET Magazine, 2024-04-27, https://jetmagazine.com.hk/walled-in-yuyi-interview-2024/
+- **Class:** depiction (An interview about a fiction (novel, manhua, film); use only for the depiction file, never as evidence of the real City.)
+- **Date of the record:** 2024-04-27.
+- **Note:** its 1 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md`](../../primary-sources/depictions-film-and-tv-1966-2025/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| article, section on his research | As a child he did not know how big the inside of the City was; he later saw it in the book City of Darkness. (The reporter's narration of his memory.) | "小時候不知道圍城裡面有多大" (As a child I did not know how big the inside of the walled city was.) |
+| article | His novel was first published in 2008, and the manhua followed at the end of 2010. | "小說最早出版於2008年" (The novel was first published in 2008.) |
+| article, section on the set | For the 2024 film the production rebuilt the City as a set; the main street set at 西貢成豐片場 was about 200 metres long and up to three storeys high. | "現場足足有200米長" (The set was a full 200 metres long.) |
+| article, section on the set | The film used 元朗屏山公立達德學校 for stairs, exposed wiring, a temple fight, a boss's den, a temporary opera stage (神功戲棚) and a two-storey cha chaan teng. | "神功戲棚" (a temporary bamboo opera stage for festival performances) |
+| article, section on the set | He heard that the film's iron gates were salvaged from materials that other people had thrown away. | "聽說那些鐵閘更是劇組從別人廢棄回收的搬回來" (I heard that those iron gates the crew even brought back, salvaged from things others had discarded.) |

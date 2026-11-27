@@ -608,7 +608,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 18 of 18 items read by the reading of the source search of 2026-11.
+- **Status:** read: 26 of 26 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0474: China Mail 1948-01-14 (p. 2: 'Frivolous Legal Submission' / 'Kowloon City Men Sentenced', continued p. 12; front page: Walled City visit and relief)
@@ -1091,123 +1091,125 @@ testimony given later: tag its facts "retrospective (year)".
   - The resolution of the Kwangtung Provincial Assembly on the Kowloon Walled City case, session of about 1 Jul 1948 (Assembly records or the Canton press of July 1948)
 ### lead-l0680: China Mail 1948-01-30, front page: 'Kowloon City Statement.' and 'Kowloon City Again?' (OCR of the headline list)
 
-- **Creator:** China Mail (Hong Kong)
-- **Date:** 1948-01-30
-- **Kind:** press
-- **Class:** primary (A Hong Kong English daily of the time, reporting the official statement on the British note on the day of its release.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (collection china-mail); copyright of the newspaper
-- **Link:** https://archive.org/details/NPCM19480130
-- **Other links:** https://archive.org/details/NPCM19480131, https://archive.org/metadata/NPCM19480130
-- **Proof that it exists:** archive.org advanced search: 'China Mail 1948-01-30', description has 'Kowloon City Again?' and 'Kowloon City Statement.'; text search inside: '...kowloon City case from the British official point. of'
-- **What it gives (resolver's note, not checked):** The British (Hong Kong Government) official account of the Kowloon City case of January 1948, as released on 30 Jan 1948, and the first Chinese official comment on the British note; INFERRED to give the English wording that the Chinese press translated (top-china-21).
-- **Lead:** L0680 (cited by top-china-21, china-official-records-1933-1987)
-- **Notes:** Read leaf n0; compare with the Chinese text in top-china-21 (華僑日報 31 Jan 1948). 1948 history, low weight.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** China Mail (Hong Kong), 30 Jan 1948, p. 1: 'Kowloon City Again?' and 'Kowloon City Statement' (Nanking, Jan. 29, Reuter-AAP), archive.org item NPCM19480130, leaf n0, https://archive.org/details/NPCM19480130/page/n0; and China Mail, 31 Jan 1948, p. 1: 'KOWLOON CITY ISSUE. Nanking Officials Express Views.' (Nanking, Jan. 30, United Press), archive.org item NPCM19480131, leaf n0, https://archive.org/details/NPCM19480131/page/n0
+- **Class:** primary (Hong Kong newspaper reports of the day, with wire dispatches from Nanking of 29 and 30 Jan 1948.)
+- **Date of the record:** 1948-01-30 and 1948-01-31
+- **Files:**
+  - `lead-l0680-n0-0e53af9c.jpg` (in `local/`, not in git): Page image of the front page of the China Mail of 30 Jan 1948, with 'Kowloon City Again?' and 'Kowloon City Statement'; https://archive.org/download/NPCM19480130/page/n0.jpg; 3968640 bytes; SHA-256 `62a64c65dc118ac730cd28d6a72c7b9973729182f2902e73c7a7d2574e640cf1`; licence: No rights or licenseurl field on the archive.org item (collection china-mail, uploaded by a private person); copyright status of the 1948 newspaper not stated (https://archive.org/details/NPCM19480130)
+  - `lead-l0680-n0-4b300af2.jpg` (in `local/`, not in git): Page image of the front page of the China Mail of 31 Jan 1948, with 'KOWLOON CITY ISSUE. Nanking Officials Express Views.'; https://archive.org/download/NPCM19480131/page/n0.jpg; 3838847 bytes; SHA-256 `3a4b1ff1c648d473d24e24532e6013e9932ffdf593b27e3a421774ca8c288133`; licence: No rights or licenseurl field on the archive.org item (collection china-mail, uploaded by a private person); copyright status of the 1948 newspaper not stated (https://archive.org/details/NPCM19480131)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| 30 Jan 1948, p. 1, 'Kowloon City Again?', para. 1 | The China Mail of 30 Jan 1948 reports that the Po On Kowloon City Residents' Association (named so in the paper) started a campaign for the release of the two Kowloon City squatters who had been convicted of inciting resistance to the police. | "Agitation for the release of the two Kowloon City squatters, convicted of inciting resistance to the police in the execution of the latter's duty" |
+| 30 Jan 1948, p. 1, 'Kowloon City Again?', para. 2 | Representatives of the Association took a petition to the Special Commissioner (Foreign Affairs) for Kwangtung-Kwangsi, asking him to get the two men released. | "have approached the Special Commissioner (Foreign Affairs) for Kwangtung-Kwangsi, with a petition asking him to obtain the release of the two men" |
+| 30 Jan 1948, p. 1, 'Kowloon City Again?', para. 3 | The petition asked for a reply within three days; otherwise the people would court imprisonment so as to 'suffer together' with the two men. | "otherwise the people will court imprisonment so that they may "suffer together" with the two men" |
+| 30 Jan 1948, p. 1, 'Kowloon City Again?', para. 4 | A spokesman for the Special Commissioner told the representatives to wait for instructions from Nanking. | "advised the representatives to await instructions from Nanking" |
+| 30 Jan 1948, p. 1, 'Kowloon City Statement', para. 1 | The British note on the Kowloon City issue was handed to the Chinese Ambassador, Dr. Cheng Tien-hsi, and is dated 27 Jan 1948 in the report. | "the British note on the Kowloon City issue to the Chinese Ambassador, Dr. Cheng Tien-hsi, of January 27" |
+| 30 Jan 1948, p. 1, 'Kowloon City Statement', para. 1 | The first Chinese official comment on the British note came on 29 Jan 1948 from Mr. Chao Ying-shih, Director of the Information Department of the Ministry of Foreign Affairs. | "came today from Mr. Chao Ying-shih, Director of the Information Department of the Ministry of Foreign Affairs" |
+| 30 Jan 1948, p. 1, 'Kowloon City Statement', para. 2 | Chao said that before 5 Jan 1948 the Ministry and its representative in Hong Kong had strongly urged the Hong Kong authorities not to take forcible measures in the City. | "before January 5, strongly urged the Hong Kong authorities to refrain from taking forcible measures in an area where China has never waived her jurisdiction" |
+| 30 Jan 1948, p. 1, 'Kowloon City Statement', para. 2 | Chao said that before 12 Jan 1948 the Ministry and its representative made even stronger representations to the same effect. | "before January 12, the Ministry of Foreign Affairs and its representative in Hong Kong made even stronger representations to the same effect" |
+| 30 Jan 1948, p. 1, 'Kowloon City Statement', para. 3 | Chao said that on 12 Jan 1948 tear gas and rifle fire were used in the City, and called it a deplorable incident. | "the deplorable incident of January 12, when tear gas and rifle fire were resorted to" |
+| 31 Jan 1948, p. 1, 'KOWLOON CITY ISSUE', lead | The China Mail of 31 Jan 1948 reports the view of Chinese official quarters that the crux of the dispute was the Chinese refusal to recognise British jurisdiction over the walled city. | "the Chinese refusal to recognise British jurisdiction over the Kowloon walled city" |
+| 31 Jan 1948, p. 1, 'KOWLOON CITY ISSUE', para. 2 | Chinese circles said that the British Foreign Office note, published on 29 Jan 1948, did not mention the jurisdiction issue and dealt only with the eviction case. | "failed conspicuously in any mention of the jurisdiction issue and merely dwelt upon the eviction case" |
+| 31 Jan 1948, p. 1, 'KOWLOON CITY ISSUE', col. 2 | The report says that the Chinese Ambassador in London was told to negotiate for the release of the two City residents, who had been sentenced to three months' hard labour by the Hong Kong authorities. | "the two Kowloon city residents, sentenced to three months hard labour by the Hong Kong authorities" |
+| 31 Jan 1948, p. 1, 'KOWLOON CITY ISSUE', 'No Agreement' | The report says that no agreement had been reached on jurisdiction, and that this blocked a settlement of the compensation question and of the two residents' sentence. | "thus blocking settlement of the compensation question and disposal of the legal case concerning the sentence on the two residents" |
+| 31 Jan 1948, p. 1, 'KOWLOON CITY ISSUE', last paras. | The Foreign Ministry told the People's Political Council in writing on 30 Jan 1948 that China had demanded that Hong Kong release the arrested Kowloon squatters at once and compensate the evictees. | "had demanded the Hong Kong Government to immediately release the arrested Kowloon squatters and to compensate the evictees" |
+
+- **Leads:**
+  - British Foreign Office note on the Kowloon City issue to the Chinese Ambassador in London, Dr. Cheng Tien-hsi, 27 Jan 1948, published 29 Jan 1948 (cited in China Mail 30 and 31 Jan 1948)
+  - Written report of the Chinese Ministry of Foreign Affairs to the Resident Committee of the People's Political Council, 30 Jan 1948, on the demand to release the arrested squatters and compensate the evictees (cited in China Mail 31 Jan 1948)
 ### lead-l0381: Hong Kong Telegraph, 18 May 1899 (whole issue)
 
-- **Creator:** Hong Kong Telegraph
-- **Date:** 1899-05-18
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of the day after the clearance of the City (17 May 1899).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The paper of 1899 is out of copyright.
-- **Link:** https://archive.org/details/NPTG18990518
-- **Other links:** https://archive.org/download/NPTG18990518/NPTG18990518.pdf, https://archive.org/download/NPTG18990518/NPTG18990518_djvu.txt
-- **Proof that it exists:** archive.org metadata title 'Hong Kong Telegraph 1899-05-18'; OCR: 'sight at Sant Chan at the same time as the Consul's party'
-- **What it gives (resolver's note, not checked):** INFERRED from the OCR only: a report of the march of 16 May 1899 to Sham Chun (the same operation as the seizure of the City). No passage on Kowloon City or the clearance of its inhabitants is readable in the OCR; the page images are not checked.
-- **Lead:** L0381 (cited by press-archives-1, hk-english-press-1899-1994)
-- **Notes:** Check the Local and General page in the page images for a City item before cataloguing. The Telegraph was an evening paper; the issue of 17 May (held) already has 'KOWLOON WALLED CITY TAKEN'.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Telegraph, Thursday 18 May 1899, leaf n2 (local news page), column 2, untitled paragraph beginning 'The inhabitants of the walled city of Kowloon'. Internet Archive item NPTG18990518, https://archive.org/details/NPTG18990518
+- **Class:** primary (A news report of the next day (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-18
+- **Files:**
+  - `lead-l0381-n2-99d0c180.jpg` (in `local/`, not in git): Page image of leaf n2 of the Hong Kong Telegraph, 18 May 1899, with the paragraph on the removal of the inhabitants; https://archive.org/download/NPTG18990518/page/n2.jpg; 6836638 bytes; SHA-256 `9a316ca9cc80004ffb1ecb3b187e67843764bdfc800097d7e410bd3e2df08c62`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPTG18990518)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n2, column 2 | INFERRED: The paper learned that the inhabitants of the walled city had been removed. INFERRED: they left at one o'clock on 17 May 1899, from 'yesterday' in this paper of 18 May. | "The inhabitants of the walled city of Kowloon have, we learn, been removed, leaving at one o'clock yesterday in junks." |
+| leaf n2, column 2 | They took most of their household goods with them. | "They took most of their household goods with them." |
+| leaf n2, column 2 | On the night of 17 May, 250 men of the Hongkong Regiment came back from the front. | "Last night two hundred and fifty men of the Hongkong Regiment returned from the front." |
+| leaf n2, column 2 | The paper said the operations of the past days in the hinterland were the result of definite orders from home, not of the local authorities. | "have been the result of definite orders from home, and were not undertaken on the initiative of the local authorities." |
 ### lead-l0382: China Mail, 16 May 1899: 'Occupation of Kowloon and Sham Chun Cities' and 'Regulars and Volunteers Occupy Kowloon City' (headlines as the OCR list gives them: 'OCCUPATION OF KOWLOON AND SEAM CHUEN OFTIES', 'REGULARS AND VOLUNTEERS OCCUPY KOWLOON CITY')
 
-- **Creator:** China Mail (Hong Kong)
-- **Date:** 1899-05-16
-- **Kind:** press
-- **Class:** primary (A Hong Kong evening daily of the day of the seizure of the City (16 May 1899).)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The paper of 1899 is out of copyright.
-- **Link:** https://archive.org/details/NPCM18990516
-- **Other links:** https://archive.org/download/NPCM18990516/NPCM18990516.pdf, https://archive.org/download/NPCM18990516/NPCM18990516_djvu.txt
-- **Proof that it exists:** archive.org metadata title 'China Mail 1899-05-16'; headline list 'REGULARS AND VOLUNTEERS OCCUPY KOWLOON CITY'
-- **What it gives (resolver's note, not checked):** The first-day report of the British seizure of Kowloon City and Sham Chun on 16 May 1899: the troops (Royal Welch Fusiliers, Royal Engineers, Volunteers, a Naval Brigade of about 300), the landings and the march. It is the earliest Hong Kong English report of the event that I know of.
-- **Lead:** L0382 (cited by press-archives-2, hk-english-press-1899-1994)
-- **Notes:** Read from the page images, not the OCR (the OCR is too poor). Find the leaf with the article first (likely the local-news page; not checked).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** China Mail (Hong Kong), Tuesday 16 May 1899, 'The Kowloon Territory. Occupation of Kowloon and Sham Chuen Cities. Despatch of Troops. Regulars and Volunteers Occupy Kowloon City.', dateline Hongkong 16 May, leaf n2, column 4. Internet Archive item NPCM18990516, https://archive.org/details/NPCM18990516
+- **Class:** primary (A report of the same day (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-16
+- **Files:**
+  - `lead-l0382-n2-1ab6ed5d.jpg` (in `local/`, not in git): Page image of leaf n2 of the China Mail, 16 May 1899, with the column 'The Kowloon Territory'; https://archive.org/download/NPCM18990516/page/n2.jpg; 6629564 bytes; SHA-256 `50e0c741b147c92d17ef00e4f4a22ea87af58ecaf4fbf554accf3aab3db8be74`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPCM18990516)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n2, column 4, lower part | On the morning of 16 May 1899 the Volunteer Corps was called to parade at one o'clock to embark for Kowloon. A large number of Field Battery and Maxim gunners came. | "The call to arms was promptly obeyed, and there was a large muster of Field Battery and Maxim gunners." |
+| leaf n2, column 4, lower part | The men embarked soon after two o'clock for Kowloon City, which they were to garrison with a detachment of the Royal Welch Fusiliers. | "going in the direction of Kowloon City, which, it is stated they are to garrison along with a detachment of the Royal Welch Fusiliers." |
+| leaf n2, column 4, lower part | The paper called the walled city a 'cancerous spot': its keeping by the Chinese authorities had caused violent debate when the Kowloon Convention became known. | "the walled city of Kowloon, the cancerous spot over the retention of which by the Chinese authorities there was so much violent discussion" |
+| leaf n2, column 4, lower part | The paper said the public would be glad that this 'imperium in imperio' would not be tolerated. | "this proposed imperium in imperio is not to be tolerated." |
+| leaf n2, column 4, lower part | The Volunteers were expected back late that evening, marching overland from Kowloon City to Yaumati or Tsimshatsui. | "marching overland from Kowloon City to Yaumati or Tsimshatsui." |
+| leaf n2, column 4, lower part | The rest of the garrison and the off-duty police were kept in barracks, ready to put down any rising. | "are confined to Barracks, ready for any call to put down any rising of the native population" |
+| leaf n2, column 4, middle | INFERRED: A Naval Brigade was to land at Deep Bay, with four days' provisions, under Captain Clarke. INFERRED: the number of men reads 300 or 800; the first digit is not clear on the scan (enlarged, it looks closed on the left, like an 8). | "were to land a Naval Brigade of [3 or 8]00 men to assist the military in the contemplated frontier operations" |
 ### lead-l0383: China Mail, 18 May 1899: 'The Extension of the Boundary' (headline as the OCR list gives it: 'THE EXTENSION OF THE BOUNDARY')
 
-- **Creator:** China Mail (Hong Kong)
-- **Date:** 1899-05-18
-- **Kind:** press
-- **Class:** primary (A Hong Kong evening daily of the day after the clearance of the City (17 May 1899).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The paper of 1899 is out of copyright.
-- **Link:** https://archive.org/details/NPCM18990518
-- **Other links:** https://archive.org/download/NPCM18990518/NPCM18990518.pdf, https://archive.org/download/NPCM18990518/NPCM18990518_djvu.txt
-- **Proof that it exists:** archive.org metadata title 'China Mail 1899-05-18'; headline list 'THE EXTENSION OF THE BOUNDARY'
-- **What it gives (resolver's note, not checked):** INFERRED from the headline only: an item on the extension of the boundary, two days after the seizure of Kowloon City and Sham Chun (May 1899). No passage on the City is readable in the OCR.
-- **Lead:** L0383 (cited by press-archives-2, hk-english-press-1899-1994)
-- **Notes:** Check the page images for the item 'THE EXTENSION OF THE BOUNDARY' and for any City item before cataloguing.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** China Mail (Hong Kong), Thursday 18 May 1899, 'The Kowloon Territory. The Extension of the Boundary. Operations of Military and Naval Columns. The Occupation of Sham Chuen.', dateline Hongkong 18 May, leaf n2, column 2. Internet Archive item NPCM18990518, https://archive.org/details/NPCM18990518
+- **Class:** primary (A report of the time with the words of Major-General Gascoigne (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-18
+- **Files:**
+  - `lead-l0383-n2-209b5afc.jpg` (in `local/`, not in git): Page image of leaf n2 of the China Mail, 18 May 1899, with the interview of Major-General Gascoigne; https://archive.org/download/NPCM18990518/page/n2.jpg; 7849715 bytes; SHA-256 `f6b4a22c0bf8a33096ea8173f91c37833f2443ca53b90e06e84c70fdc81b83f6`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPCM18990518)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n2, column 2 | On 18 May 1899 a reporter of the China Mail interviewed Major-General Gascoigne on the operations in the Kowloon hinterland. | "A representative of the China Mail called to-day upon H.E. Major-General Gascoigne" |
+| leaf n2, column 2 | Gascoigne said orders from home required every means to avoid bloodshed, so the preparations were kept secret. | "Instructions had been received from home that every possible means was to be taken to avoid bloodshed" |
+| leaf n2, column 2 | He said the home authorities ordered him to take Sham Chun and Kowloon City, to mark British feeling at the bad faith of the Chinese. | "the home authorities ordered Major-General Gascoigne to take possession of Sam Chuen and Kowloon City." |
+| leaf n2, column 2 | Knowing that Kowloon City would offer very little opposition, he sent only a small force there; he wanted a display of force at Sham Chun. | "Knowing that very little opposition could be given at Kowloon City, the General sent a small force there" |
 ### lead-l0384: Hong Kong Daily Press, 19 May 1899: 'The Expedition to Shamchun' and 'How It Came About. Official Version of the Operations.'
 
-- **Creator:** Hong Kong Daily Press
-- **Date:** 1899-05-19
-- **Kind:** press
-- **Class:** primary (A Hong Kong daily of 19 May 1899 that prints the government's account three days after the seizure.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (rights and licenseurl absent; collection china-mail, newspapers). The paper of 1899 is out of copyright.
-- **Link:** https://archive.org/details/NPDP18990519
-- **Other links:** https://archive.org/download/NPDP18990519/NPDP18990519.pdf, https://archive.org/download/NPDP18990519/NPDP18990519_djvu.txt
-- **Proof that it exists:** archive.org metadata title 'Hong Kong Daily Press 1899-05-19'; OCR: 'we are by this time in a position to lay before our readers the official version of how the expedition came about'
-- **What it gives (resolver's note, not checked):** The official account of the seizure of Kowloon City and Sham Chun (16-17 May 1899) and the clearance of the inhabitants, as the Daily Press first printed it; the same text as the held weekly reprint (press-archives-5), with the report of the Sham Chun expedition.
-- **Lead:** L0384 (cited by press-archives-5, hk-english-press-1899-1994)
-- **Notes:** Compare it with press-archives-5 (NPWP18990520, pp. 413-414) before cataloguing: if the text is the same, cite it only as the first print. The OCR is poor; read the page images.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Daily Press, Friday 19 May 1899, leaf n1: leader 'Hongkong, May 19th, 1899' (columns 1-2) and 'The Expedition to Shamchun. How It Came About. Official Version of the Operations.' (column 3). Internet Archive item NPDP18990519, https://archive.org/details/NPDP18990519
+- **Class:** primary (A news report and leader of the time (1899). It belongs in primary-sources/.)
+- **Date of the record:** 1899-05-19
+- **Files:**
+  - `lead-l0384-n1-55ee51a3.jpg` (in `local/`, not in git): Page image of leaf n1 of the Hong Kong Daily Press, 19 May 1899, with the leader and the official version; https://archive.org/download/NPDP18990519/page/n1.jpg; 6409703 bytes; SHA-256 `7be901e503596aa923a695a66c0e4536e40791ea80db287bf44adb161ce9f5ed`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPDP18990519)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n1, column 2 (leader) | The leader said the deportation of the people of the walled city with their goods almost recalled Longfellow's 'Evangeline'. | "the deportation of the inhabitants of the walled city of Kowloon, with their goods and chattels, might almost recall the picture presented in Longfellow's "Evangeline."" |
+| leaf n1, column 2 (leader) | The leader expected the Government to pay them money compensation, but said this could hardly make up for the loss of their homes. | "No doubt the Government will give them pecuniary compensation, but it takes a deal to compensate a community for the loss of their homes." |
+| leaf n1, column 2 (leader) | The leader blamed the Colonial Government's delay in taking over the territory for the trouble. | "Public opinion from the beginning deprecated the delay in taking over the New Territory" |
+| leaf n1, column 3 | The official version: because Chinese officials had a hand in the disturbances, the home Government ordered the seizure of the walled city and Shamchun. | "orders were accordingly issued to the military authorities here to seize Kowloon walled city and Shamchun." |
+| leaf n1, column 3 | No great opposition was expected at the walled city, so only a small force under Colonel Mainwaring went there on Tuesday 16 May. | "It was known that no great opposition was to be expected at Kowloon walled city, and therefore but a small force was sent there" |
+| leaf n1, column 3 | The force was mainly Royal Welch Fusiliers and Hongkong Volunteer Corps, about 350 men. It met no opposition; 50 or 60 men stayed as the garrison. | "some 50 or 60 being left to garrison the place." |
+| leaf n1, column 3 | The next day the inhabitants were cleared out and sailed in junks for a place near Swatow. | "The following day the inhabitants were cleared out and set sail in junks for a place in the neighbourhood of Swatow." |
 ### lead-l0484-1: PUBLIC EXECUTIONS AT OLD KOWLOON CITY. (column 'Kowloon 25 Years Ago'), Hong Kong Daily Press, 2 February 1933
 
-- **Creator:** Hong Kong Daily Press
-- **Date:** 1933-02-02 (about events of about 1908, INFERRED from the column title)
-- **Kind:** press
-- **Class:** retrospective (A 1933 newspaper column that looks back 25 years; it can quote the paper of about 1908 (then a record of the time).)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (collection china-mail, private uploader); copyright of the publisher (1933)
-- **Link:** https://archive.org/details/NPDP19330202
-- **Other links:** https://archive.org/download/NPDP19330202/NPDP19330202_djvu.txt
-- **Proof that it exists:** Item title 'Hong Kong Daily Press 1933-02-02'; description headline 'PUBLIC EXECUTIONS AT OLD KOWLOON CITY.'; OCR 'Kowloon 25 Years Ago' ... 'PUBLIC EXECUTIONS AT'
-- **What it gives (resolver's note, not checked):** A short note on public executions at old Kowloon City about 1908 (INFERRED), when the City was still claimed by China; the OCR of the body is lost, so the page image must be read.
-- **Lead:** L0484 (cited by press-archives-30, hk-english-press-1899-1994)
-- **Notes:** Find the Kowloon page in the BookReader and read the image; the OCR jumps from the headline to an advertisement.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Daily Press, Thursday 2 February 1933, p.2 (Kowloon pages), leaf n17: 'Public Executions at Old Kowloon City'. Internet Archive item NPDP19330202, https://archive.org/details/NPDP19330202 The running head of this page misprints the date as 'Thursday, January 2, 1933'; the item and the weekday give 2 February 1933.
+- **Class:** secondary (A note of 1933 on events of 1891, written 42 years later. It belongs in secondary-sources/.)
+- **Date of the record:** 1933-02-02
+- **Files:**
+  - `lead-l0484-1-n17-0a454c9e.jpg` (in `local/`, not in git): Page image of leaf n17 (p.2, Kowloon pages) of the Hong Kong Daily Press, 2 Feb 1933, with the note on the executions; https://archive.org/download/NPDP19330202/page/n17.jpg; 4767197 bytes; SHA-256 `a663d29d63fa3338ceee04e5ba2f09316de9505600fa81a0f07e390d625a9c5f`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPDP19330202)
+- **Note:** the reader classed the whole item as secondary: its 2 facts are in the secondary twin, [`../../secondary-sources/hk-english-press-1899-1994/SOURCE.md`](../../secondary-sources/hk-english-press-1899-1994/SOURCE.md).
 
+- **Leads:**
+  - Hong Kong press of April-May 1891 on the executions of the 'Namoa' pirates at Kowloon City on 17 April and 11 May 1891 (Hong Kong Daily Press, China Mail, Hong Kong Telegraph on archive.org, collection china-mail): not held.
 ### lead-l0484-2: When the Volunteers Stormed Kowloon City (Kowloon Supplement, with 'Is It Progress?'), Hong Kong Daily Press, 20 April 1933
 
-- **Creator:** Hong Kong Daily Press
-- **Date:** 1933-04-20
-- **Kind:** press
-- **Class:** retrospective (A 1933 account of the taking of the City in 1899, written about 34 years later; whether the writer saw it is not known.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No rights statement on the archive.org item (collection china-mail, private uploader); copyright of the publisher (1933)
-- **Link:** https://archive.org/details/NPDP19330420
-- **Other links:** https://archive.org/download/NPDP19330420/NPDP19330420_djvu.txt
-- **Proof that it exists:** Item title 'Hong Kong Daily Press 1933-04-20'; description headline 'IS IT PROGRESS? When The Volunteers Stormed Kowloon City.'; OCR: 'scaling the walls of the City of Kowloon'
-- **What it gives (resolver's note, not checked):** A later story of how the Hong Kong Volunteers took the City by night, scaling its walls, after the lease of the New Territories (INFERRED 1899).
-- **Lead:** L0484 (cited by press-archives-30, hk-english-press-1899-1994)
-- **Notes:** Earlier history: less weight. Compare with the 1899 reports held in press-archives-2, -4 and -5.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Daily Press, Kowloon Daily Supplement No. 67, Thursday 20 April 1933, p.11, leaf n10: 'When the Volunteers Stormed Kowloon City. Customs Officials Who Carried Their Lives in Their Hands.' (quotes L. C. Arlington, 'Through the Dragon's Eyes'). Internet Archive item NPDP19330420, https://archive.org/details/NPDP19330420
+- **Class:** secondary (A 1933 article that quotes the memoir of a former official of the Chinese Maritime Customs about 1898-1899; Arlington was not a witness of the seizure. It belongs in secondary-sources/.)
+- **Date of the record:** 1933-04-20
+- **Files:**
+  - `lead-l0484-2-n10-0eb8c20d.jpg` (in `local/`, not in git): Page image of leaf n10 (Kowloon Daily Supplement, p.11) of the Hong Kong Daily Press, 20 Apr 1933; https://archive.org/download/NPDP19330420/page/n10.jpg; 4013715 bytes; SHA-256 `fd8957a3d4da2f157594a3202c653e51008f5ab763c8d91c083069042771d5f9`; licence: No rights statement on the archive.org item (metadata has no 'rights' or 'licenseurl'); collection 'china-mail', private re-upload (https://archive.org/details/NPDP19330420)
+- **Note:** the reader classed the whole item as secondary: its 4 facts are in the secondary twin, [`../../secondary-sources/hk-english-press-1899-1994/SOURCE.md`](../../secondary-sources/hk-english-press-1899-1994/SOURCE.md).
 
+- **Leads:**
+  - L. C. Arlington, 'Through the Dragon's Eyes: Fifty Years' Experiences of a Foreigner in the Chinese Government Service' (London, 1931): the source of the story; not held.
+  - Hong Kong Daily Press, Kowloon Daily Supplement, the issue after 20 April 1933: the continuation of the article; not read.
 ### lead-l0485: A Chinese Walled City. (Hong Kong Daily Press, 24 March 1933)
 
 - **Creator:** Hong Kong Daily Press
@@ -1224,3 +1226,35 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** Unknown until read: a 1933 item on 'a Chinese walled city', among local Hong Kong news; it can be a description of Kowloon City before the clearance of 1933-1936 (INFERRED), or of another place.
 - **Lead:** L0485 (cited by press-archives-30, hk-english-press-1899-1994)
 - **Notes:** Find the piece on the page images in the BookReader (the OCR does not have it). If it is not about Kowloon City, drop it.
+- **Reading of 2026-11-26:** it is not about the City. Found 'A Chinese Walled City' on leaf n5 (p.6), column 2: it is a subheading of the article 'Chicago World Fair. How China Is To Be Represented.' The Chinese merchants planned a building 'in the form of a Chinese walled city' for their exhibits at the Chicago fair of 1933. It is not about Kowloon City. Drop it.
+
+### lead-l0958: China Mail, 14 September 1898: 'THE EXTENSION OF HONGKONG.' / 'APPEAL TO THE LONDON CHAMBER OF COMMERCE.' (letter of the Hongkong General Chamber of Commerce, 8 September 1898)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 'THE EXTENSION OF HONGKONG. APPEAL TO THE LONDON CHAMBER OF COMMERCE.' The China Mail (Hong Kong), Wednesday 14 September 1898, p. 3, col. 2: letter of the Hongkong General Chamber of Commerce to the President, London General Chamber of Commerce, dated Hongkong 8 September 1898, signed R. M. Gray, Chairman, forwarded by the Secretary, R. C. Wilcox. Internet Archive item NPCM18980914, https://archive.org/details/NPCM18980914
+- **Class:** primary (A letter of 1898 and its printing in a newspaper of the time. The folder starts in 1899; this item is from 1898.)
+- **Date of the record:** 1898-09-14 (letter dated 1898-09-08)
+- **Files:**
+  - `lead-l0958-NPCM18980914-4cba4d68.pdf` (in `local/`, not in git): Image PDF of the whole issue of 14 Sept 1898 (6 pages, 2.9 MB); the article is on PDF page 4 (printed p. 3), col. 2; https://archive.org/download/NPCM18980914/NPCM18980914.pdf; 3086565 bytes; SHA-256 `1bd5bdb19d4aa026da81fc3b0d86cedc620ec5076542c4ca4e59153485044547`; licence: No rights statement on the Internet Archive item (collections china-mail, newspapers); an 1898 newspaper, public domain by age but not stated (https://archive.org/details/NPCM18980914)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 3, col. 2 | The Secretary of the Hongkong General Chamber of Commerce, R. C. Wilcox, sent the paper a copy of the Chamber's letter to the London General Chamber of Commerce. | "The Secretary of the Hongkong General Chamber of Commerce, Mr R. C. Wilcox, forwards to us a copy of the following letter" |
+| p. 3, col. 2 | The letter is dated Hongkong, 8 September 1898. The Chairman, R. M. Gray, signed it. | "Hongkong, 8th September, 1898. ... (Signed) R. M. GRAY, Chairman." |
+| p. 3, col. 2 | The letter is about the Convention that the British Minister signed at Peking on 9 June 1898 to extend the boundaries of Hongkong. The Times had printed its text. | "the Convention signed at Peking on the 9th June by Her Britannic Majesty's Minister" |
+| p. 3, col. 2 | The letter gives the clause: in the city of Kowloon, the Chinese officials who are there will continue to exercise jurisdiction. | "within the city of Kowloon, the Chinese officials now stationed there shall continue to exercise jurisdiction" |
+| p. 3, col. 2 | The same clause keeps the existing landing-place near Kowloon City for Chinese men-of-war, merchant and passenger vessels, which can come, go and lie there as they like. | "the existing landing-place near Kowloon City shall be reserved for the convenience of Chinese men-of-war, merchant and passenger vessels" |
+| p. 3, col. 2 | The Chamber says that the clause greatly lowers the value of the concession, because it leaves a foreign jurisdiction in the centre of a British possession. | "detracting most seriously from the value of the concession, inasmuch as it leaves in the centre of a British possession a jurisdiction" |
+| p. 3, col. 2 | The Chamber says that, under this clause, the local people will see the Chinese Government, not the British, as the main power. | "will assuredly regard the Chinese rather than the British Government as the predominant Power" |
+| p. 3, col. 2 | The letter calls the city of Kowloon an insignificant place, but a thorn in the side of Hongkong since Hongkong became a British colony. | "The city of Kowloon itself is an insignificant place, but it has always been a thorn in the side of Hongkong" |
+| p. 3, col. 2 | The letter says that the gambling dens of the city of Kowloon often caused serious trouble to the Hongkong Government. | "its gambling dens have repeatedly caused serious trouble to the Colonial Government" |
+| p. 3, col. 2 | The letter says that the city of Kowloon is insanitary and a danger to the health of the Colony. | "The insanitary condition of the place also renders it a source of danger to the health of the Colony." |
+| p. 3, col. 2 | The letter says that the landing-place is the only one there and that no merchant steamers use the place. To keep it and the bay for Chinese war vessels and revenue cruisers makes a Chinese port in a British harbour. | "for no merchant steamers frequent the place" |
+| p. 3, col. 2 | The Chamber says that the Chinese Imperial Maritime Customs asked to keep all their stations in the new territory and to collect duties in the harbour. The Colony objects to this. | "the retention of all their existing stations in the new British territory" |
+| p. 3, col. 2 | The Chamber prefers that the Colony stay as it was before the Convention, rather than take the new territory with these conditions. | "the Colony had better remain in the position antecedent to the Convention of June last" |
+| p. 3, col. 2 | The Committee of the Chamber had also written at length to the Secretary of State for Foreign Affairs and to the Hongkong Government on this question. | "The Committee have addressed the Secretary of State for Foreign Affairs and the Colonial Government at length" |
+
+- **Leads:**
+  - Hongkong General Chamber of Commerce, letters of 1898 to the Secretary of State for Foreign Affairs and to the Hongkong Government on the Kowloon City clause of the Convention of 9 June 1898 (named in this letter, China Mail 14 Sept 1898, p. 3).
+  - The Times (London), 1898: text of the Convention of Peking of 9 June 1898 (named in this letter).
+  - China Mail 2 and 8 Sept 1898, 14 Oct 1898 and Hongkong Daily Press 15 Oct 1898 (alt_urls of this item, not opened): can hold more of the Chamber's petition.

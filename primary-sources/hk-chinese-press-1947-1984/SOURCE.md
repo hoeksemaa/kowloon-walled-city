@@ -1626,7 +1626,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 104 of 104 items read by the reading of the source search of 2026-11.
+- **Status:** read: 106 of 106 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0536-2: 大公報 1983-08-08: 「許家屯昨往訪九龍城 詢問城寨管理及居民生活情況 對居民生活上許多不便表關切」
@@ -4033,34 +4033,50 @@ testimony given later: tag its facts "retrospective (year)".
 | p. 1 (leaf n0), 'Sweeping Fire In Chinese City / 6,000 Huts Burnt Down', col. 3, para. 7 | In the evening a fairly strong wind fanned the flames, which threatened a built-up area. (The Victoria copy adds 'including shops'.) | "Tonight a fairly strong wind was fanning the flames which were threatening a built up area." |
 ### lead-l0627: 大公報 1971-04-26: 華革醫療員到城砦免費檢查兒童健康連續進行數天受到街坊歡迎 (OCR of the headline list)
 
-- **Creator:** Ta Kung Pao (大公報), Hong Kong
-- **Date:** 1971-04-26
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
-- **Link:** https://archive.org/details/NPTKP19710426
-- **Other links:** https://archive.org/metadata/NPTKP19710426
-- **Proof that it exists:** archive.org metadata: title '大公報 1971-04-26'; description has '華革醫療員到城砦免費檢查兒童健康'
-- **What it gives (resolver's note, not checked):** Free health checks of the City's children by the medical workers of the 華革 clinic over several days in April 1971, welcomed by the kaifong. An early record of the left-wing clinic's work in the City, before the 1977 checks that the repo holds (top-zh-press-33).
-- **Lead:** L0627 (cited by top-zh-press-33, hk-chinese-press-1947-1984)
-- **Notes:** Find the leaf by the page text; 華革 is the name the paper uses (the full name of the body is not in the headline).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ta Kung Pao (大公報), Hong Kong, 26 Apr 1971, sheet 2 p. 4 (第二張第四版), '華革醫療員到城砦 免費檢查兒童健康 連續進行數天 受到街坊歡迎' (本報訊), archive.org item NPTKP19710426, leaf n3, https://archive.org/details/NPTKP19710426/page/n3
+- **Class:** primary (A Hong Kong news report of the day (a left-wing paper) on a health-check event in the City.)
+- **Date of the record:** 1971-04-26
+- **Files:**
+  - `lead-l0627-n3-3788d23d.jpg` (in `local/`, not in git): Page image of leaf n3 (第二張第四版) of Ta Kung Pao of 26 Apr 1971, with the report on the free health checks of children in the City (left half, upper part); https://archive.org/download/NPTKP19710426/page/n3.jpg; 3578758 bytes; SHA-256 `2a9e4fc7b7802fbb8463a28c2bd999b922abc9bc9375e5f72783743675dd1fcd`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright of the newspaper (https://archive.org/details/NPTKP19710426)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n3, col. 1 | INFERRED: The report says that medical workers of 香港華人革新協會 (short form 華革會) began free health checks of the City's children on Saturday 24 Apr 1971. INFERRED: the first character of the name (香) is blurred; I read 香港華人革新協會, the name that the repo's other sources give. | "於上週末(廿四日)開始到九龍城砦為當地兒童進行健康檢驗" (from last weekend (the 24th) began to give health checks to the local children in Kowloon Walled City) |
+| leaf n3, col. 2 | The report says that the local kaifong (街坊) welcomed the checks warmly. | "受到當地街坊的熱烈歡迎" (warmly welcomed by the local kaifong) |
+| leaf n3, col. 3-4 | The report says that the medical workers also gave free X-ray examinations, laboratory tests and first treatment to children who had a disease. | "對染有疾病的兒童，按照實際情況需要還免費為他們進行X光檢驗、化驗和進行初步治療" (for children with a disease, as the case needed, they also gave them free X-ray examinations, laboratory tests and first treatment) |
+| leaf n3, col. 4-5 | The report says that the medical workers gave the parents advice on the care of their children's health. | "向家長們提供有關照料兒童健康的意見" (gave parents advice on looking after children's health) |
+| leaf n3, col. 6 | The report says that more than 300 children were checked in the first two days (24-25 Apr 1971). | "兩天來，參加檢驗的兒童超過三百人" (in two days, the children who took part in the checks numbered more than three hundred) |
+| leaf n3, col. 6-8 | The report says that local residents handed out the registration forms; some of them gave up their own forms so that more neighbours' children could take part. | "受托代發報名表格的當地居民，雖然自己也有孩子需要檢查健康，但為了讓更多的街坊兒童參加" (local residents entrusted with handing out the registration forms, although they had children who needed checks too, so that more neighbourhood children could take part) |
+| leaf n3, col. 9-10 | The report says that on 24 Apr 1971 the checks were to stop at 9 p.m., but the doctors and workers went on until after 10 p.m. | "廿四日晚原定晚上九時停止檢驗的，醫生和工作人員們也主動延長檢驗時間到十時以後" (on the evening of the 24th the checks were to stop at 9 p.m.; the doctors and workers on their own extended them to after 10 o'clock) |
+| leaf n3, col. 10-11 | The report says that on Sunday 25 Apr 1971 the workers checked children from the morning until dusk. | "昨天星期日，他們從早上堅持工作到黃昏" (yesterday, Sunday, they kept working from the morning to dusk) |
+| leaf n3, col. 12-13 | The report says that the association planned a check station in the City for five days, 24-28 Apr 1971, and could add one more day because more children came than expected. | "原定廿四日開始，至廿八日結束連續舉行五天的九龍城砦檢驗站" (the Kowloon Walled City check station, planned to run for five days in a row from the 24th to the 28th) |
 ### lead-l0642: 工商晚報 1972-12-27: 九龍城砦多層樓宇 圖則未經批准 據說有些樓宇並未打樁 (OCR of the headline list)
 
-- **Creator:** Kung Sheung Evening News (工商晚報), Hong Kong
-- **Date:** 1972-12-27
-- **Kind:** press
-- **Class:** primary (A Hong Kong newspaper report of the time.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement: the archive.org metadata has no rights or licenseurl field (collection china-mail, private uploader); copyright of the newspaper
-- **Link:** https://archive.org/details/NPKSE19721227
-- **Other links:** https://archive.org/metadata/NPKSE19721227
-- **Proof that it exists:** archive.org metadata: title '工商晚報 1972-12-27 (The Kung Sheung Evening News)'; description has '九龍城破多層樓宇' (OCR)
-- **What it gives (resolver's note, not checked):** The report of 27 Dec 1972 that the City's new multi-storey buildings had no approved plans and that some had no piles: the start of the high-rise building of the 1970s and its risks. The next day's follow-up (held) says the government would not act.
-- **Lead:** L0642 (cited by zh-press-22, hk-chinese-press-1947-1984)
-- **Notes:** Pair with gap-builders-demolition-park-1 (28 Dec 1972).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Evening News (工商晚報), Hong Kong, 27 Dec 1972, p. 7 (第七頁), '九龍城砦多層樓宇 圖則未經批准 據說有些樓宇並未打樁' (本報訊), archive.org item NPKSE19721227, leaf n6, https://archive.org/details/NPKSE19721227/page/n6
+- **Class:** primary (A Hong Kong news report of the day, with what City residents told the paper.)
+- **Date of the record:** 1972-12-27
+- **Files:**
+  - `lead-l0642-n6-9c989ea7.jpg` (in `local/`, not in git): Page image of p. 7 of the Kung Sheung Evening News of 27 Dec 1972, with the report on the City's multi-storey buildings (top left); https://archive.org/download/NPKSE19721227/page/n6.jpg; 5300390 bytes; SHA-256 `c0f6c62950cd5b8c203f08964b42e1fa568e94c0b8fcc03a51e7b6927035a861`; licence: No licence statement on the archive.org item (no rights or licenseurl field; collection china-mail, uploaded by a private person); copyright of the newspaper (https://archive.org/details/NPKSE19721227)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 7, col. 1-3 | Some residents said that the plans of the multi-storey buildings built in the City were not approved by the Public Works Department (工務局). | "九龍砦城內興建之多層樓宇，若干居民謂，其圖則係未經工務局批准者" (of the multi-storey buildings put up inside Kowloon Walled City, some residents say their plans were not approved by the Public Works Department) |
+| p. 7, col. 4-5 | The report cites the South China Morning Post (南華早報): the Public Works Department did not usually extend its power into the City. | "南華早報謂，工務局通常未將其權力伸展至城砦之內" (the South China Morning Post says that the Public Works Department usually does not extend its power into the Walled City) |
+| p. 7, col. 6 | The report says that buildings in the City did not need the department's approval first, as they did on Hong Kong Island and in other districts. | "在通常環境下砦城內之建築，無須如港島及其它地區，先行取得工務局之批准" (under normal conditions, buildings inside the Walled City need not first get the approval of the Public Works Department, as on Hong Kong Island and other areas) |
+| p. 7, col. 7 | Sources believed that the department would not stand by in the face of dangerous construction. | "工務局不會坐視有危險性之構造與建" (the Public Works Department will not stand by and watch dangerous construction) |
+| p. 7, col. 7-8 | The report says that houses were still being built in the City in December 1972. | "砦城內目前仍有屋宇興建中" (inside the Walled City houses are still being built at present) |
+| p. 7, col. 8 | The report says that many multi-storey buildings were finished in the City in the years before 1972, some of them more than twelve storeys high. | "在過去幾年間有不少多層樓宇建成，有高逾十二層者" (in the past few years quite a few multi-storey buildings were completed, some over twelve storeys high) |
+| p. 7, col. 8-9 | Residents said that some buildings had no piles: the builders dug about ten-odd feet into the ground and set concrete columns in it. | "有等樓宇並無打樁，祇係掘地約十餘呎深，植以混凝土柱" (some buildings have no piles; they only dug about ten-odd feet into the ground and set concrete columns) |
+| p. 7, col. 9 | Residents thought that these buildings were quite safe. | "但彼等以為此等樓宇相當安全" (but they think these buildings are quite safe) |
+| p. 7, col. 10 | Residents said that one or two storeys were sometimes added on top of buildings that already had tenants. | "間中有等已有住客之樓宇，會加蓋一二層" (now and then some buildings that already have occupants add one or two storeys) |
+| p. 7, col. 11 | The report says that the buildings in the City had electricity but no mains water. | "城內之樓宇有電力，但無自來水" (the buildings inside the city have electricity but no running water) |
+| p. 7, col. 11 | The report says that most buildings drew water from wells that they had bored, and pumped it up to tanks on the roof. | "多係鑿井取水，將之抽至屋頂之水箱" (most bore wells for water and pump it to tanks on the roof) |
+| p. 7, col. 12 | The report says that the old houses had no such system, and their residents carried buckets to the street standpipes for water. | "舊屋則無此設備，居民要携桶至街喉取水" (the old houses do not have this; the residents have to carry buckets to the street standpipes for water) |
+| p. 7, col. 13 | The report says that flats in the multi-storey buildings of the City sold for about HK$120 per square foot. | "以每方呎一百二十元左右出售" (sold at about one hundred and twenty dollars per square foot) |
+| p. 7, col. 13-14 | INFERRED: The report says that rent was about HK$1 per foot. INFERRED: the report does not name the period; a month is the usual period of a Hong Kong rent. | "屋租大約每呎一元左右" (rent is about one dollar per foot) |
+| p. 7, col. 14 | The report says that a ground-floor shop had an area of about 300 square feet and a monthly rent of about HK$500. | "地下商店面積約三百呎，月租約五百元" (a ground-floor shop has an area of about three hundred feet, monthly rent about five hundred dollars) |
+
+- **Leads:**
+  - South China Morning Post, c. 26-27 Dec 1972: report that the Public Works Department did not usually extend its power into the Walled City (cited by Kung Sheung Evening News 27 Dec 1972, p. 7)

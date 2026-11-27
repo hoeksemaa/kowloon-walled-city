@@ -180,3 +180,21 @@ testimony given later: tag its facts "retrospective (year)".
 | Page | Fact | Words in the source |
 |---|---|---|
 | image on both work pages | INFERRED: Both work pages use the same image file. It shows a long row of emptied high-rise blocks with no window glass and stripped cages, over a ground of rubble and stacked timber. I take it to be the City after the residents left, in 1993; the same scene is Osaka print 70490. | "Kowloon Walled City, 1993" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
+
+### lead-l0671: Kowloon Walled City, #036 (九龍寨城, #036)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ryuji Miyamoto (宮本隆司), 'Kowloon Walled City, #036' (九龍寨城, #036), photographed 1987, printed 2004, gelatin silver print, sheet 50.6 x 60.9 cm, image 40.4 x 51 cm, M+, Hong Kong, object number 2018.214, https://www.mplus.org.hk/en/collection/objects/kowloon-walled-city-036-2018214/
+- **Class:** primary (A photograph made in the City in 1987 (printed 2004). The museum data are a later description.)
+- **Date of the record:** photographed 1987, printed 2004
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md`](../../secondary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 009404_001 | INFERRED: The image (file 009404_001, INFERRED to be this object) shows a shop display window with two glass shelves of dentures, sets of teeth in stemmed glasses of water, and round tooth-colour wheels. | "VERIDENT" |
+| image 009404_001, upper half | INFERRED: The glass of the window reflects a street with buildings and hills, and the strip lights of the shop. INFERRED: the window faces an open street, thus the shop is probably on the edge of the City. | "VERIDENT" |

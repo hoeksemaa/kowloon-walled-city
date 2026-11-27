@@ -366,3 +366,5 @@ Not read yet.
 - **What it gives (resolver's note, not checked):** Road centre lines of today with English and Chinese street names (STREET_ENAME, STREET_CNAME), formats FGDB, KML, GML, CSV and API. The second URL (alt) is the occupation permit table (OP number, OP date, floor areas) of the held Lands Department Building service.
 - **Lead:** L0817 (cited by repo-audit-44, scholarship-land-and-planning-1992-2026)
 - **Notes:** Add these URLs to repo-audit-44 rather than make a new item; tools/context.py already queries both.
+- **Reading of 2026-11-26:** it is a duplicate of another item. Opened the DATA.GOV.HK page, queried layer 10 (CENTERLINE) for the street names round the park, and read the metadata of the Lands Department layer 1004. It is the road-network part of repo-audit-44: tools/context.py already queries both services and data/context.json holds 232 roads from it. Merge these URLs and facts into repo-audit-44, as the finder said.
+

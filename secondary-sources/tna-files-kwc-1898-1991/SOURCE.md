@@ -91,3 +91,15 @@ See the leads under each item in the primary folder.
 | British Library record Photo 905 | The British Library set Photo 905 has postcards of the Hau Wong Temple in Kowloon City and of the inside of Kowloon City, both of about 1930. | "(8) Hau Wong Temple in Kowloon City, 1930; ... (10) Inside Kowloon City, 1930" |
 | detail records, field digitised | No record that I checked is digitised: FCO 40/1895, 2253, 2253/1, 2476, 1511, 980, 157, FCO 21/1268, CO 129/544/14, MR 1/787/1 and CN 3/52. All are paper at Kew. | "digitised":false |
 | TNA, Terms and conditions for the Discovery API | The TNA terms say that most Crown copyright information can be re-used under the Open Government Licence, but they ask users not to cache or store API content. | "Please do not cache or store any content returned by the API." |
+
+### lead-l0881: Kowloon City proposed hospital (Gwulo media 41291; TNA MR 1/787/1, 'S.D. No 1 Kowloon City. Scale 64" = 1 mile.'), full-size photo
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Government (Lands and Survey Office, P.W.D., INFERRED from the stamp), 'S.D. No 1 / Kowloon City. / Scale 64" = 1 Mile.', plan with the proposed hospital and dispensary site N.K.I.L. 35, signed and dated 17.6.25, The National Archives, Kew, MR 1/787/1 (from CO 129/488); full-size photo by David (Gwulo), 'Kowloon City proposed hospital', Gwulo media 41291, posted 12 Oct 2021, https://gwulo.com/media/41291 ; file https://gwulo.com/sites/default/files/thumbnails/image/img_3686-kowloon-city.edits_.jpg
+- **Class:** primary (A government survey plan of 1925, made at the time; the photo of 2021 only copies it. The tree primary is correct.)
+- **Date of the record:** 1925-06-17 (the date of the stamp and of the signature)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/tna-files-kwc-1898-1991/SOURCE.md`](../../primary-sources/tna-files-kwc-1898-1991/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Gwulo media 41291 page | Gwulo gives the source as TNA ref MR 1/787 and dates the photo 1925; it was posted on 12 October 2021. The only description on the page is a pointer to the article node/56249. | "TNA ref: MR 1/787" |

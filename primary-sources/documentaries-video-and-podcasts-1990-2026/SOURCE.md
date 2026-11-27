@@ -75,23 +75,29 @@ shows is the reader's reading of it.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0811: EP277(陳欣健#1)陳欣健任職警隊11年/ 第一份差事乃駐守九龍城寨 / 他如何評價電影 / 佈景欠了什麼？
 
-- **Creator:** 文雋 講呢啲 講嗰啲 Man's Talk (YouTube channel @manstalk), with Philip Chan (陳欣健)
-- **Date:** 2024 (YouTube: '2 years ago' on 2026-11-24)
-- **Kind:** testimony
-- **Class:** retrospective (Retrospective (2024): Philip Chan's own memories of his first police posting at the City, among his 11 years in the police (1960s-1970s), given in an interview about the 2024 film.)
-- **Value:** medium
-- **Language:** zh
-- **Access:** js-only
-- **Licence:** Standard YouTube licence (no reuse licence stated)
-- **Link:** https://www.youtube.com/watch?v=Z1pUdyGLG_Y
-- **Other links:** https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=Z1pUdyGLG_Y&format=json
-- **Proof that it exists:** YouTube search result and oEmbed: title 'EP277(陳欣健#1)陳欣健任職警隊11年/ 第一份差事乃駐守九龍城寨 / 他如何評價電影 / 佈景欠了什麼？', author_name '文雋 講呢啲 講嗰啲 Man's Talk', 21 minutes.
-- **What it gives (resolver's note, not checked):** A former police inspector's first-hand account of policing the City (his first posting), of the 'three-no-control' place, and his view of the set of the 2024 film. Cantonese speech, about 21 minutes; it needs listening, not reading.
-- **Lead:** L0811 (cited by citations-19, scholarship-land-and-planning-1992-2026)
-- **Notes:** Look for part 2 (陳欣健#2) on the same channel. Facts on the 1960s-70s police, not 1986; the repo already has his HKFA oral history (top-depictions-6).
+- **Status:** Partly read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26. I read the video metadata and the description with yt-dlp (uploaded 24 May 2024, 12:30 UTC, no caption track, standard YouTube licence). I cannot hear the sound. I read the burned-in Chinese subtitles in the YouTube storyboard (318x180 frames, one frame about every 10 seconds), thus I saw only one short subtitle line in each 10 seconds and most of the speech is missing: the facts below are fragments, and the readings of their sense are marked inferred. The City part runs from about 2:30 to 11:50; after that the talk is about the 1974 Po Sang Bank case and his film career. Parts #2-#5 of the series (EP279-EP283) are on his film and TV career, by their titles.
+- **Citation:** 文雋 講呢啲 講嗰啲 Man's Talk (YouTube channel), 'EP277(陳欣健#1)陳欣健任職警隊11年| 第一份差事乃駐守九龍城寨 | 他如何評價電影 | 佈景欠了什麼？', with Philip Chan (陳欣健), uploaded 24 May 2024 (12:30 UTC), https://www.youtube.com/watch?v=Z1pUdyGLG_Y
+- **Class:** retrospective (First-hand testimony of a former police officer on his posting at the City in 1966-1967, given in 2024 (retrospective 2024). The video description is the channel's later summary (secondary). Not 1986.)
+- **Date of the record:** 2024-05-24
+- **Note:** its 4 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md`](../../secondary-sources/documentaries-video-and-podcasts-1990-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 3:07-3:17 (storyboard) | INFERRED: A subtitle at about 3:17 gives the year 1966, in answer to a question on the area of the City that he policed. INFERRED: 1966 is the year of his posting there. | "是1966年" (it was 1966) |
+| 3:36 (storyboard) | INFERRED: A subtitle at about 3:36: he crossed one road and the whole Walled City was there. INFERRED: his post was just across a road from the City. | "我就走過一條馬路就是整個九龍城寨" (I walk across one road and it's the whole Kowloon Walled City) |
+| 4:26 (storyboard) | INFERRED: A subtitle at about 4:26 names one-woman brothels (一樓一鳳). INFERRED: he says these were no problem for the police. | "如果是一樓一鳳是沒問題的" (if it is a one-woman flat, there is no problem) |
+| 7:23 (storyboard) | INFERRED: A subtitle at about 7:23 says that two kinds of drug were different. INFERRED: 'Y片煙' and 'B粉' are opium (鴉片煙) and heroin (白粉). | "Y片煙和B粉有分別的" (Y-opium smoke and B-powder are different) |
+| 7:33-7:43 (storyboard) | INFERRED: Subtitles at about 7:33-7:43: as soon as he walked in, all around him it was frightening; he saw them holding matches. INFERRED: he describes addicts smoking drugs. | "好恐怖的，見到他們拿著火柴" (very frightening, I saw them holding matches) |
+| 7:53-8:12 (storyboard) | INFERRED: Subtitles at about 7:53 and 8:12: when the people saw a police officer in uniform, whole bowls of sweet soup (糖水) were thrown at him. INFERRED: things were thrown at police from above. | "那些糖水整碗糖水扔過來" (that sweet soup, whole bowls of sweet soup thrown over) |
+| 8:22-8:32 (storyboard) | INFERRED: A subtitle at about 8:32, in answer to what the film got least right: there were two things, with a bad smell. INFERRED: one of the two things missing from the film is the smell of the City. | "是有兩樣事情你會覺得有臭味" (there are two things; you would find there is a stink) |
+| 8:42-9:02 (storyboard) | INFERRED: Subtitles at about 8:42-9:02 name leather boots, 'I thought it was a cat' and rats. INFERRED: he walked in uniform and boots, and the rats in the City were as big as cats. | "我以為是貓" (I thought it was a cat) |
+| 9:21 (storyboard) | A subtitle at about 9:21: people were 'chasing the dragon' (smoking heroin) inside. | "都在裡面追龍" (all inside chasing the dragon) |
+| 9:41-9:51 (storyboard) | Subtitles at about 9:41-9:51: bodies were found, some addicts who had died. | "一些道友他們死了" (some addicts, they died) |
+| 10:01 (storyboard) | A subtitle at about 10:01: he served there from 1966 until 1967. | "我一直由66年開始一直到67年" (I was there from '66 right through to '67) |
+| 10:11-10:30 (storyboard) | INFERRED: Subtitles at about 10:11-10:30: once, in the City, a left-wing primary school was to be pulled down for law enforcement. INFERRED: this is the 1966 clash in the description. | "那間是左派小學" (that one was a left-wing primary school) |
+| 11:29-11:39 (storyboard) | INFERRED: A subtitle at about 11:39 names illegal structures in Tung Tau Village (東頭村). INFERRED: the illegal buildings in the clash were in Tung Tau Village, and the people were not from the City itself (subtitle at 11:29: 'but they were not in the Walled City'). | "当他們在東頭村有些非法搭建" (when they had some illegal structures in Tung Tau Village) |

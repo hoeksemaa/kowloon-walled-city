@@ -111,3 +111,57 @@ See the leads under each item in the primary folder.
 | Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial gives the history as the paper saw it: when the British took over the New Territories on 17 April 1899, British troops clashed with the villagers of 錦田. Britain blamed the Chinese officials and expelled them from the City on 16 May 1899. | "曾於同年五月十六日將九龍城（當時稱寨）之中國官員逐出境" (on 16 May of the same year it expelled the Chinese officials of Kowloon City (then called the 寨) from the territory) |
 | Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial says that the City was then called the 寨 (stockade). | "九龍城（當時稱寨）" (Kowloon City (then called the 寨)) |
 | Shing Wah Daily News, 15 Jan 1948, vol. 26 no. 11, p. 1, 社論 九龍城事件 (clipping xhrb_article0892, part 1), last columns | The editorial counts five later attempts to clear or move the residents: in 1933, 1934, 1939, and in September and November 1947. | "其後一九三三年，一九三四年，一九三九年，以迄去年九月及十一月，先後已有五次迫折迫遷之措施矣" (later, in 1933, 1934, 1939, and up to September and November last year, there have been five attempts at forced demolition and removal) |
+
+### lead-l0686: 香港工商日報 1936-10-08: 九龍城居民 縣案 凌士芬昨赴港 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 8 Oct 1936, sheet 2 p. 3 (第二張第三版), '九龍城居民請解決懸案 凌士芬昨赴港調查 昨午乘中午快車赴港' (廣州專訊), archive.org item NPKS19361008, leaf n6, https://archive.org/details/NPKS19361008/page/n6
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) with an interview of 凌士芬 on 7 Oct 1936.)
+- **Date of the record:** 1936-10-08
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6, col. 1 | The report says that some years before 1936 the Hong Kong Government needed the land inside the City and ordered its residents to move out. | "香港政府前數年因需用九龍城內地域、乃令該地居民遷出" (some years ago the Hong Kong Government, because it needed the land inside Kowloon City, ordered the residents there to move out) |
+| leaf n6, col. 2-3 | The report says that the residents had appealed several times to the Southwest authorities (西南當局) to send officials to negotiate with the Hong Kong Government, and that the case had stayed unsettled for a long time. | "該處居民曾數次向西南當局呼籲、請派員與港府交涉、歷時甚久、已成為未決之懸案" (the residents of the place appealed several times to the Southwest authorities to send officials to negotiate with the Hong Kong Government; after a long time it has become an unsettled case) |
+| leaf n6, col. 3-4 | The report says that when 甘介侯 was the Liang-Guang foreign affairs inspector, he agreed to take charge of the negotiation, but the case was not settled. | "當甘介侯充任兩廣外交視察員時、經允為負責交涉、但仍未得解決" (when 甘介侯 served as Liang-Guang foreign affairs inspector, he agreed to be responsible for the negotiations, but it was still not settled) |
+
+### lead-l0686-2: 香港工商日報 1936-10-13: 九龍城居民 民政廳 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 13 Oct 1936, sheet 2 p. 3 (第二張第三版), '刁作謙清理積案 粵省外交事件進行頗為順利 橫琴島廣州灣北海等案在進行中 九龍城居民案調查後第一步交涉' (廣州專訊), archive.org item NPKS19361013, leaf n6, https://archive.org/details/NPKS19361013/page/n6
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) with an interview of 凌士芬 on 12 Oct 1936.)
+- **Date of the record:** 1936-10-13
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n6, City section, col. 1-2 | The report says that the Hong Kong Government's order to the City residents to move by a deadline first arose some years earlier; the residents then appealed to the authorities, and the order was suspended. | "此事發生前三數年、當時居民已向當局呼籲、請向港政府提出交涉、此案已暫緩執行" (this matter arose some three years ago; at the time the residents appealed to the authorities to negotiate with the Hong Kong Government; the case was suspended) |
+
+### lead-l0686-3: 香港工商日報 1936-10-18: 新界南約理民府 九龍城 鄉戶 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 18 Oct 1936, sheet 3 p. 1 (第三張第一版, 本埠新聞), '祖居不忍毀 新界南約理民府 限令九龍城內鄉戶遷徙案 鄉民準備再呈外部交涉', archive.org item NPKS19361018, leaf n8, https://archive.org/details/NPKS19361018/page/n8
+- **Class:** primary (A Hong Kong news report of the day, with the reporter's interviews of the villagers' representative 楊偉雄 and of two Hong Kong officials.)
+- **Date of the record:** 1936-10-18
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n8, main text col. 4-5 | The report says that five years earlier (about 1931) the Hong Kong Government planned a public garden inside the City and ordered the villagers to move. | "五載以前、港府計劃在城內開闢一公眾花園、乃有飭令彼等遷徙" (five years ago the Hong Kong Government planned to lay out a public garden inside the city, and so ordered them to move) |
+| leaf n8, main text col. 6-7 | The report says that the villagers then petitioned the Guangdong provincial government; 朱兆莘, then foreign affairs commissioner of Guangdong, negotiated with the British, and the residents did not have to move at that time. | "其時適朱兆莘任粵省外交專員、曾與英當局交涉、卒得圓滿解決" (at that time 朱兆莘 happened to be Guangdong foreign affairs commissioner; he negotiated with the British authorities and in the end it was satisfactorily settled) |
+| leaf n8, main text col. 7-8 | The report says that in 1934 (民國廿三年) the villagers were again ordered to move and again sent representatives to Canton to petition. | "至民廿三年、彼等又奉令遷徙、於是再派代表赴省請願" (in the 23rd year of the Republic they were again ordered to move, so again sent representatives to Canton to petition) |
+| leaf n8, main text col. 8-10 | The report says that after 甘介侯, the Liang-Guang foreign affairs inspector, protested, the British Minister in China, 藍浦森, replied to the Chinese Ministry of Foreign Affairs that the Hong Kong Government had never forced the City residents to move, and the residents stayed. | "事經駐華英國公使藍浦森覆我外交部、謂香港政府從未強迫九龍城居民搬遷" (the British Minister to China, 藍浦森, replied to our Foreign Ministry that the Hong Kong Government had never forced the Kowloon City residents to move) |
+
+### lead-l0686-4: 香港工商日報 1936-10-07: 九龍城 居民 (OCR of the headline list)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kung Sheung Daily News (香港工商日報), 7 Oct 1936, sheet 2 p. 2 (第二張第二版), '九龍城 居民遷移案 刁派凌士芬往切實調查 蒐集証據重提交涉解決' (廣州專訊), archive.org item NPKS19361007, leaf n5, https://archive.org/details/NPKS19361007/page/n5
+- **Class:** primary (A Hong Kong news report of the day (a dispatch from Canton) on the removal case of the City residents.)
+- **Date of the record:** 1936-10-07
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/china-official-records-1933-1987/SOURCE.md`](../../primary-sources/china-official-records-1933-1987/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaf n5, col. 1-2 | The report says that the New Territories District Office (九龍新界理民府) had ordered the residents inside the City to move, and that this case once caused a great stir. | "九龍新界理民府、限令九龍城內居民遷移一案、曾發生一度" (the case in which the Kowloon New Territories District Office ordered the residents inside Kowloon City to move once arose) |
+| leaf n5, col. 3-6 | The report says that at the time the Chinese Ministry of Foreign Affairs ordered the office of the Liang-Guang Special Commissioner for Foreign Affairs (兩廣外交特派員公署) to negotiate with the Hong Kong authorities, but several rounds did not settle the case. | "經飭令兩廣外交特派員公署就近負責、向港當局交涉、惟雖數度折衝、仍未能解決" ([it] ordered the Liang-Guang Special Commissioner's office to take charge nearby and negotiate with the Hong Kong authorities; but after several rounds it was still not settled) |

@@ -141,23 +141,44 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l1163: Intelligence Report Annex: Ten Years of Chinese Communist Foreign Policy, Section II: South and Southeast Asia (CIA-RDP85T00875R001000010027-7), chapter IV 'Imperialist Colonies: Macao and Hong Kong'
 
-- **Creator:** Central Intelligence Agency, Directorate of Intelligence
-- **Date:** 1968-04-09
-- **Kind:** document
-- **Class:** secondary (A CIA analytic history written in 1968 about the events of 1963 (five years later), drawn from other reports; for the City it is a later account, not a record of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** No licence statement on the archive.org item (no licenseurl or rights field); a CIA record (US government work).
-- **Link:** https://archive.org/details/cia-readingroom-document-cia-rdp85t00875r001000010027-7
-- **Other links:** https://archive.org/download/cia-readingroom-document-cia-rdp85t00875r001000010027-7/cia-rdp85t00875r001000010027-7.pdf, https://www.cia.gov/readingroom/document/cia-rdp85t00875r001000010027-7
-- **Proof that it exists:** archive.org title 'CIA Reading Room cia-rdp85t00875r001000010027-7: Intelligence Report Annex, Ten Years of Chinese Communist Foreign Policy, Section II: South and Southeast Asia', date 1968-04-09; OCR p. 156: 'they impelled the authorities to postpone a planned urban renewal project in the Kowloon walled city'.
-- **What it gives (resolver's note, not checked):** The CIA analysis of the 1963 dispute: the Hong Kong slum clearance plan for the City (publicized from March 1961) was postponed under Chinese pressure in January 1963; Peking chose the City because it gave the appearance of a legal claim; Peking had not disputed a 1959 court ruling on police jurisdiction there. Early history (1959-1963).
-- **Lead:** L1163 (cited by usgov-4, us-government-records-1948-1994)
-- **Notes:** The City passages are on pp. 156-158 (with footnotes); p. 157 also cites a People's Daily editorial of 8 March 1963 on Kowloon. The 1959 court ruling is probably the case that the repo knows from the press (INFERRED).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Central Intelligence Agency, Directorate of Intelligence, Special Research Staff, 'Intelligence Report Annex: Ten Years of Chinese Communist Foreign Policy, Section II: South and Southeast Asia' (Reference Title: POLO XXVII), RSS No. 0026A/68, 9 April 1968, chapter IV 'Imperialist Colonies: Macao and Hong Kong', pp. 156-158; CIA-RDP85T00875R001000010027-7, declassified in part, sanitized copy approved for release 2011/11/25; https://archive.org/details/cia-readingroom-document-cia-rdp85t00875r001000010027-7
+- **Class:** secondary (A 1968 intelligence analysis written five years after the 1961-63 events from press and intelligence reports; it is a record of US views in 1968 but secondary for the City. Early history (1959-1963) only.)
+- **Date of the record:** 1968-04-09
+- **Files:**
+  - `lead-l1163-cia-rdp85t00875r001000010027-7-6ab843b4.pdf` (in `local/`, not in git): PDF scan of the whole annex (184 pp., 8.8 MB; the City passages on PDF pp. 159-161); https://archive.org/download/cia-readingroom-document-cia-rdp85t00875r001000010027-7/cia-rdp85t00875r001000010027-7.pdf; 8811380 bytes; SHA-256 `056949b62d0f9138da0ba35f143af550ad79c930ed02cea72deee02fc14af264`; licence: No licence statement on the archive.org item page (its metadata has no licenseurl or rights field). A CIA record (US government work), but the host does not state a licence. (https://archive.org/details/cia-readingroom-document-cia-rdp85t00875r001000010027-7)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 156 | In January 1963 the Chinese leaders made the Hong Kong authorities postpone a planned urban renewal project in the Walled City; the report notes the City is in fact outside Kowloon. | "they impelled the authorities to postpone a planned urban renewal project in the Kowloon walled city (actually located outside of Kowloon)" |
+| p. 156, note * | The slum clearance plan had been publicized since March 1961; the Chinese leaders did not protest until demolition was about to start and until after Khrushchev's taunt of December 1962. | "Although the slum clearance plan had been publicized since March 1961, the Chinese leaders had not protested until demolition was about to start" |
+| p. 156, note * | China made an unpublicized, informal protest on 1 January 1963 and a publicized, formal protest to the British chargé in Peking on 17 January 1963. | "On 17 January 1963, they were impelled to follow up an unpublicized and informal protest (of 1 January)" |
+| p. 156, note * | The report links the formal protest in part to a jibe in the Daily Worker of the US Communist Party on 13 January 1963. | "reacting partly to the jibe appearing in the CPUSA organ Daily Worker on 13 January" |
+| p. 157 | Peking handled the January 1963 protest with care: it did not make it a major issue and did not publicize it widely. | "it was not made a major issue and it was not extensively publicized" |
+| p. 157 | By the report, Peking chose the Walled City because there it had the appearance, but only the appearance, of a legal claim, without disputing British rule of the whole colony. | "where there was the appearance (but only the appearance) of a legally valid claim" |
+| p. 157, note * | A People's Daily editorial of 8 March 1963 named Hong Kong, Kowloon and Macao as questions to settle by talks when conditions were ripe; the report says that in Kowloon Peking had gained a minor victory. | "a reference to Kowloon (where Peking had gained a minor victory)" |
+| p. 157, note **, continued p. 158 | By the report, the Chinese leaders had no good case for sovereignty over the City, because, among other things, they had not disputed the 1959 decision of Hong Kong courts reaffirming police jurisdiction over it. | "they had not disputed the dicision [sic] of Hong Kong courts in 1959 reaffirming police jurisdiction over it" |
+
+- **Leads:**
+  - People's Daily (人民日報) editorial of 8 March 1963 (cited on p. 157; title not given)
+  - The British and Chinese notes of 1 and 17 January 1963 on the Walled City clearance (cited on p. 156)
+  - The 1959 Hong Kong court decision on police jurisdiction in the Walled City (cited on p. 158; case name not given)
+  - Daily Worker (CPUSA), 13 January 1963 (cited on p. 156)
+
+### lead-l1176: Congressional Record, 87th Congress, 2nd session, vol. 108, part 27 (Appendix), p. A6506: extension of remarks of Hon. Bob Wilson (California), with 'Project Concern' by Alice Sue Hardin (San Diego magazine, July 1962)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Congressional Record, 87th Congress, 2nd session, vol. 108, part 27 (Appendix), p. A6506: 'Project Concern', extension of remarks of Hon. Bob Wilson of California, House of Representatives, Wednesday, 29 August 1962, reprinting Alice Sue Hardin, 'Project Concern', San Diego magazine, July 1962; scan page n627 of congressional-record-1962-pt27, https://archive.org/details/us_congress_87/congressional-record-1962-pt27/page/n627/mode/1up
+- **Class:** primary (A record of the time (August 1962) reprinting a magazine article of July 1962, written before the clinics opened. Turpin's words are reported speech, not first-hand about the City.)
+- **Date of the record:** 1962-08-29 (the article: July 1962)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/us-government-records-1948-1994/SOURCE.md`](../../primary-sources/us-government-records-1948-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. A6506 | The article gives as background that the City was an area not included in the original lease to Britain. | "an area not included in the original lease to Britain." |
+| p. A6506 | The article says, as background, that the City had lacked both law enforcement and urban services until very recently. | "It has lacked both law enforcement and urban services until very recently." |

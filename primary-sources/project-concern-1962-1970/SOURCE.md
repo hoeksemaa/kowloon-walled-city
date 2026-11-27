@@ -86,3 +86,5 @@ testimony given later: tag its facts "retrospective (year)".
 - **What it gives (resolver's note, not checked):** The date, cost (HK$80,000) and the Rotary people at the dedication of the Kowloon West floating clinic boat of Project Concern, c. 1963-64. It is about the harbour clinic, not the City clinic.
 - **Lead:** L0577 (cited by missions-10, project-concern-1962-1970)
 - **Notes:** The page view needs JavaScript; the Google Books feed (https://www.google.com/books/feeds/volumes?q=...) gives snippets without it.
+- **Reading of 2026-11-26:** could not open it. Google Books blocked every way in on 2026-11-26: the browser and WebFetch got the 'automated queries' page (google.com/sorry), the html_text view gave HTTP 403, and the Books API gave HTTP 429. I did not try to get around the bot check. The item is about the Kowloon West floating clinic in the harbour, not the City clinic, so its value for the City is low.
+

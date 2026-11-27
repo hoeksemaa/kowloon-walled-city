@@ -109,3 +109,17 @@ See the leads under each item in the primary folder.
 | work 2534 page | Work 2534 is a silver gelatin print of 1993, printed in 2002, paper 50 x 60 cm, edition 4/15, signed and titled in English and notated in Japanese on the back. | "Print Date: 2002 / 4/15" |
 | work 33578 page | Work 33578 is a print of the same title, printed later, in an edition of 15. | "Edition of 15" |
 | artist works page, biography | The dealer's biography says that Miyamoto's exhibition and book Kowloon Walled City won the Kimura Ihei award in 1989. | "his exhibition “Kowloon Walled City,” 1989" |
+
+### lead-l0671: Kowloon Walled City, #036 (九龍寨城, #036)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ryuji Miyamoto (宮本隆司), 'Kowloon Walled City, #036' (九龍寨城, #036), photographed 1987, printed 2004, gelatin silver print, sheet 50.6 x 60.9 cm, image 40.4 x 51 cm, M+, Hong Kong, object number 2018.214, https://www.mplus.org.hk/en/collection/objects/kowloon-walled-city-036-2018214/
+- **Class:** primary (A photograph made in the City in 1987 (printed 2004). The museum data are a later description.)
+- **Date of the record:** photographed 1987, printed 2004
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md`](../../primary-sources/miyamoto-ryuji-photos-1987-1993/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| object page | The M+ title of the photograph is Kowloon Walled City, #036 (九龍寨城, #036), by Ryuji Miyamoto (宮本隆司). | "Kowloon Walled City, #036" |
+| object page | M+ says that the photograph was made in 1987 and printed in 2004. | "photographed 1987, printed 2004" |
+| object page | The print is a gelatin silver print: sheet 50.6 x 60.9 cm, image 40.4 x 51 cm. Object number 2018.214; credit line M+, Hong Kong; copyright Ryuji Miyamoto. | "sheet: 50.6 × 60.9 cm; image: 40.4 × 51 cm" |

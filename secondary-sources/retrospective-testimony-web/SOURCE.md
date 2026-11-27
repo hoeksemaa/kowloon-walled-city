@@ -1126,3 +1126,116 @@ corrected the 明周 line on 1987–1992, and I split the long sentences.
 |---|---|---|
 | Wayback snapshot of 14 Feb 2025, introduction | The blog's introduction says that Girard and Lambot photographed the City together for five years from 1987, and that the interview was made by email after the Asia Society Hong Kong panel on the 20th anniversary of the demolition. | "For five years starting in 1987, Canadian photojournalist Greg Girard and British architectural photographer Ian Lambot teamed up to photograph Kowloon Walled City" |
 | Wayback snapshot of 14 Feb 2025, alt text of photo 1 (credit Greg Girard) | A photo caption by the blog says that Kai Tak airport was about four blocks from the City and shows a plane flying over it. | "A plane flies over Kowloon Walled City en route to Kai Tak Airport, approximately four blocks away." |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
+
+### lead-l1008: 敏叔｜九龍寨城公園裡的活字典
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Miff (記者, 照片), 編輯 Zucchhi, Windlikes, Paris, 「敏叔｜九龍寨城公園裡的活字典」, We Are HKers 我地係香港人, 30 November 2020 (also in the English edition of 蘋果日報), https://www.wearehkers.com/main-chinese/uncle-man-the-living-dictionary-in-the-kowloon-walled-city-park
+- **Class:** secondary (As for en-testimony-11: Lei Sing-man (李昇敏), called Uncle Man (敏叔), moved to Kowloon City in 1998 and is a volunteer guide. His only first-hand part is one visit to the City as a schoolboy (year not given), retrospective (2020); those facts are kind primary. The rest is lore he heard as a guide.)
+- **Date of the record:** 2020-11-30
+- **Files:**
+  - `lead-l1008-uncle-man-the-living-dictionary-in-the-kowloon-walled-city-p-0eb9b166.html` (in `local/`, not in git): HTML of the Chinese article; https://www.wearehkers.com/main-chinese/uncle-man-the-living-dictionary-in-the-kowloon-walled-city-park; 374912 bytes; SHA-256 `1eb05358d2d5be8e9ebb4570cdf578e37728ba29af1d1991ca226305c592f2ce`; licence: Copyright © 2020 We Are HKers. All rights reserved. (page footer) (https://www.wearehkers.com/main-chinese/uncle-man-the-living-dictionary-in-the-kowloon-walled-city-park)
+- **Note:** its 4 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| introduction; last section | Lei Sing-man (李昇敏), called Uncle Man (敏叔), moved to Kowloon City in 1998 and has been a volunteer guide in the park for over 10 years. Thus he did not live in the City. | "1998年搬到九龍城後，對九龍寨城公園的園林設計和歷史產生興趣" (after moving to Kowloon City in 1998, he became interested in the garden design and history of the Kowloon Walled City Park.) |
+| section 「罪惡之城」背後的真相, paragraph 2 | Lore he heard as a guide: the City had many connected secret passages; if one household shut its door, others might not get home, so people did not shut their doors at night. | "如果其中一戶關上了家門，那麼其他戶的人便有可能回不了家" (if one household shut its door, people of other households might not be able to get home.) |
+| section 「罪惡之城」背後的真相, paragraph 2 | He says the City had shops, small stores (士多) and even textile factories, and was self-sufficient. | "商店、士多，甚至紡織工廠都應有盡有" (shops, stores, even textile factories - it had everything.) |
+| section 「罪惡之城」背後的真相, paragraph 2 | He says neighbours helped each other and passed things between windows that almost touched; these were called 'handshake buildings' (握手樓). | "在緊貼的窗口間互傳物件，也就是所謂的「握手樓」" (passing things to each other between windows set close together, which is what is called 'handshake buildings'.) |
+| section 「罪惡之城」背後的真相, paragraph 3 | He says '三不管' does not mean vice but that, after the Qing garrison left, the City was not taken over by the British Hong Kong government, the mainland government or the Nationalist government. | "而是指寨城在清朝駐軍撤走後，並沒有被港英政府、大陸政府或國民政府接管" (but means that after the Qing garrison withdrew, the City was not taken over by the British Hong Kong government, the mainland government or the Nationalist government.) |
+| section 「罪惡之城」背後的真相, paragraph 4 | He says that in the 1960s vice, gambling and drugs were common, but the City was peaceful: the gangs only did business there and did not trouble residents. | "到了60年代，雖然黃賭毒盛行，但寨城仍然太平" (by the 1960s, although vice, gambling and drugs were rife, the City was still peaceful.) |
+### lead-l1003: 夏銘記：做生意唔呃秤 真魚蛋唔彈牙
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 陳嘉文 (text; photos 陳嘉文 and 劉焌陶), '夏銘記：做生意唔呃秤 真魚蛋唔彈牙', 評台 (Pentoy), 7 September 2015 (first printed in 明報副刊, Ming Pao supplement), https://www.pentoy.hk/?p=38215 (Wayback capture 20181128075143: https://web.archive.org/web/20181128075143/https://www.pentoy.hk/%e5%a4%8f%e9%8a%98%e8%a8%98%ef%bc%9a%e5%81%9a%e7%94%9f%e6%84%8f%e5%94%94%e5%91%83%e7%a7%a4-%e7%9c%9f%e9%ad%9a%e8%9b%8b%e5%94%94%e5%bd%88%e7%89%99/)
+- **Class:** retrospective (Retrospective (2015): the owner's own words about his work from 1967; the reporter's narration (the dates of 1968, 1969 and 1983) is secondary. A later feature article: it stays in primary-sources/ as testimony, with the narration marked secondary.)
+- **Date of the record:** 2015-09-07
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| section 自家製丸起家 供應名酒家, para 1 | In 1968 夏藩銘, the owner of Ha Ming Kee (夏銘記) (this article gives his Chinese name only), and his wife started 榕江號, a workshop in their home, making cuttlefish balls, pork balls and vegetarian 'chicken' and 'duck', which they delivered to eateries. | "一九六八年，夏老闆夫婦倆創立「榕江號」，把家裏當成工場，自己打墨魚丸、豬肉丸" (In 1968 the couple founded 「榕江號」, made their home the workshop, and made cuttlefish balls and pork balls themselves) |
+| section 自家製丸起家, para 1 | The next year (1969) the couple moved into Kowloon Walled City and went on making cuttlefish balls at home there. | "翌年，他們搬到九龍城寨，繼續在家做墨魚丸" (The next year they moved to Kowloon Walled City and went on making cuttlefish balls at home) |
+| section 自家製丸起家, para 1 | INFERRED: He began to make fish balls (not only cuttlefish balls) only after the move to Victory Road; in 1983 his wife took over a shop on Victory Road, Ho Man Tin, and founded the Ha Ming Kee noodle shop there. This dates the end of the City workshop period to about 1983 (INFERRED: the article does not say when they left the City). | "一九八三年，夏太太在何文田勝利道頂下一間門店來做，在那兒正式開創「夏銘記麵店」" (In 1983 Mrs Ha took over a shop on Victory Road, Ho Man Tin, and there founded the 'Ha Ming Kee Noodle Shop') |
+| section 讀書人 托幾十斤米搵食 | 夏藩銘 came to Hong Kong in 1967, on his third attempt to cross illegally; he and his wife got identity cards with consecutive numbers. They first lived in the Wong Tai Sin resettlement area. | "第三次偷渡，終於成功，那是一九六七年，兩人一同獲發身分證，號碼都是相連的" (The third illegal crossing finally succeeded; that was 1967; the two got identity cards together, with consecutive numbers) |
+
+### lead-l1017: My Kowloon Walled City Story (blog): the 24 posts other than 'My Friend Ah Meng', 2014-2016
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** KowloonWalledCityBoy (identified in the repo as Albert Ng Kam-po), My Kowloon Walled City Story (blog, WordPress.com), 25 posts, 11 April 2014 - 21 November 2016, https://mykowloonwalledcityblog.wordpress.com/ (post list: https://public-api.wordpress.com/rest/v1.1/sites/mykowloonwalledcityblog.wordpress.com/posts/)
+- **Class:** retrospective (Retrospective (2014-2016): a former resident's own memories of his family's homes next to and inside the City, from June 1974 to the mid-1980s. The history posts and the 'Strip Shows' post are secondary (retold from other sources).)
+- **Date of the record:** 2014-04-11 to 2016-11-21 (events 1974 to about 1986)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| 'Strip Shows in the 70s' (2016-11-21) | A schoolboy's account (Chris, 1970s, retold): the strip-show place in the City was called Wah Sing (華聲); vans picked customers up at the Banyan Tree Head (榕樹頭) in Yau Ma Tei; tickets were $5 a set, one ticket for each blue film or live show. Second-hand, from a 2011 blog and a forum. | "The entrance fee for Wah Sing is $5 for one set of tickets." |
+| 'Strip Shows in the 70s' | Another man, Ah Ngoi, went to the City in the evening in 1969 and saw 3 blue films and 2 live shows (second-hand, from a forum post). | "Ah Ngoi went to the Kowloon Walled City in 1969, a few years before Chris." |
+| 'A Brief History of the Kowloon Walled City (Part II)' (2015-08-20) | The two history posts are secondary background (from LCSD, the HK Memory site and City of Darkness): wall 15 ft wide, 13 ft high, 2,200 ft long, about 700 x 400 ft, 6.5 acres; about 700 people in 1898. | "The original Kowloon Walled City measured 15 feet wide, 13 feet high, and a gross length of 2,200 feet." |
+
+### lead-l1026: Cities of Darkness: A conversation with Greg Girard
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kevin WY Lee (interviewer), 'Cities of Darkness: A conversation with Greg Girard', Invisible Photographer Asia (IPA), 26 January 2017, http://invisiblephotographer.asia/2017/01/26/conversation-greggirard/ (Wayback capture 20190102073646: https://web.archive.org/web/20190102073646/http://invisiblephotographer.asia/2017/01/26/conversation-greggirard/)
+- **Class:** retrospective (Retrospective (2017): the photographer's own memories of his work in the City, 1985-1992. The intro paragraph is the text of his book (secondary summary).)
+- **Date of the record:** 2017-01-26
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| intro (book text) | The book blurb on the page (Girard's own words) gives 33,000 people in over 300 interconnected high-rise buildings, built without an architect, near the end of the Kai Tak runway; Girard and Ian Lambot worked there for five years. | "33,000 people living in over 300 interconnected high-rise buildings, built without the contributions of a single architect" |
+| intro (book text) | The same blurb says the City 'worked, and to a large extent, worked well', and dates the demolition to 1992. | "So seemingly compromised and anarchic on its surface, it actually worked -and to a large extent, worked well." |
+
+### lead-l1039: 圖輯｜九龍城重建｜56年鐵皮檔 街坊鞋店憂「冇得留低」
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 集誌社 (The Collective), photos Nasha Chan, text 陳萃屏, '圖輯｜九龍城重建｜56年鐵皮檔　街坊鞋店憂「冇得留低」', 30 May 2023, https://thecollectivehk.com/%e5%9c%96%e8%bc%af%ef%bd%9c%e4%b9%9d%e9%be%8d%e5%9f%8e%e9%87%8d%e5%bb%ba%ef%bd%9c%e7%94%b1%e9%90%b5%e7%9a%ae%e6%aa%94%e5%88%b0%e5%9c%b0%e8%88%96%e3%80%80%e8%a1%97%e5%9d%8a%e9%9e%8b%e5%ba%97%e6%86%82/
+- **Class:** retrospective (Retrospective (2023), thin: one sentence of the owner's own memory (the City opposite the shop); the rest is the reporter's narration (secondary). Add it to top-zh-testimony-6 as a further text on 崇麟鞋業, not as a new item.)
+- **Date of the record:** 2023-05-30
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| para 1 | The shoe shop 崇麟鞋業, on Carpenter Road (賈炳達道), opened in 1967. The father of the owner Tella took it over ('頂手') as a two-storey stall of sheet iron built against a wall. | "位處賈炳達道的崇麟鞋業自 1967 年開業，最初由店主 Tella 的父親「頂手」，由鐵皮搭建的兩層靠牆攤檔做起" (The shoe business 崇麟 on Carpenter Road opened in 1967; at first the owner Tella's father took it over, starting from a two-storey stall of sheet iron against a wall) |
+| para 2; photo caption 1 | Her father was Chiu Chow (潮州; the article writes 潮洲). The stall first sold household goods and sundries, later traditional shoes. A caption says the goods were Chinese-made household goods (國貨家品). | "她的父親是潮洲人，由靠牆、用鐵皮搭建的攤檔做起，先售賣家品雜貨、慢慢轉為出售傳統款式的鞋履" (Her father was Chiu Chow; he started from a sheet-iron stall against a wall, first selling household goods and sundries, slowly changing to traditional shoes) |
+| para 1 | At its peak the business had three shops and supported eight brothers and sisters, Tella among them. | "生意高峰時有三間店舖，養活連同 Tella 在內的 8 個兄弟姊妹" (At the business's peak there were three shops, supporting 8 brothers and sisters including Tella) |
+| para 3 | In 2023 the shop sold mainly school shoes, indoor slippers and traditional 'fish-net' slippers (魚網拖) to neighbours. | "現時主力售賣學童的返學鞋、室內拖鞋，也有傳統款式的魚網拖" (It now sells mainly children's school shoes and indoor slippers, and also traditional fish-net slippers) |
+
+### lead-l1020: 我的城寨童年回憶（下）：九龍城寨，黑暗中有光
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 陳文龍 (publisher of 久石文化), 〈我的城寨童年回憶（下）：九龍城寨，黑暗中有光〉, The News Lens 關鍵評論網, 26 June 2018, article 98486 (editors 朱家儀, 翁世航); read in the Wayback capture https://web.archive.org/web/20180626162518/https://www.thenewslens.com/article/98486
+- **Class:** retrospective (Retrospective (2018): the writer's own memories of his childhood in the City (late 1970s to the clearance, 1987 and after). The few lines of history and hearsay are secondary.)
+- **Date of the record:** 2018-06-26 (memories of about the late 1970s to 1989, INFERRED from '80年代末' and the clearance)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| whole article (Wayback 2018-06-26 capture), Lo Yan Street section | The building of the old people's home and the youth centre was the Qing yamen of the Kowloon sub-magistrate, at the centre of the City. It is the only building kept after the clearance. | "其建築物都是棟清朝時的「九龍巡檢司衙門」，地點是九龍城寨的中心點。" (Its building was the Qing-dynasty yamen of the Kowloon sub-magistrate, at the centre point of the City.) |
+| whole article (Wayback 2018-06-26 capture), Chiu Chow paragraph | Hearsay in the article: in the 1970s, 90% of Hong Kong's heroin was said to come out of the City, and 跛豪 (吳錫豪), a Chiu Chow, almost controlled the drug market. | "據說70年代香港90%的海洛英由九龍城寨輸出" (It is said that in the 1970s 90% of Hong Kong's heroin was exported from the City.) |
+| whole article (Wayback 2018-06-26 capture), section 五、清拆城寨 | On 14 January 1987 the government sent more than 100 staff, among them police and Housing Department staff, to seal off the City, limit entry and exit, and survey and register the households. (The writer gives this as history, with a date and a count of staff that a child could not see; thus kind secondary.) | "1987年1月14日，港府派了警察、房署職員等一百多人的工作人員對城寨進行圍封" (On 14 January 1987 the government sent police, Housing Department staff and others, over a hundred people, to seal off the City.) |
+| whole article (Wayback 2018-06-26 capture), section 七、故事 | The writer says that more than 30,000 people lived in the City. (A general figure, not a first-hand count; thus kind secondary.) | "城寨的景象包羅萬象，住了三萬多人" (The City held everything; more than thirty thousand people lived there.) |
+
+### lead-l1056: 九龍城光影印記——昔日為片場重地 目前仍為熱門取景地「電影朝聖」專頁創辦人王冠豪：九龍城與電影有千絲萬縷的不解緣
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** 盧乙彬 (text; credit 周耀恩), 〈九龍城光影印記——昔日為片場重地 目前仍為熱門取景地「電影朝聖」專頁創辦人王冠豪：九龍城與電影有千絲萬縷的不解緣〉, Ming Pao Weekly 明周文化, series 「九龍城 都市重建啟示錄」, 26 August 2022, https://www.mpweekly.com/culture/%e7%a4%be%e6%9c%83/%e4%b9%9d%e9%be%8d%e5%9f%8e-%e9%a6%99%e6%b8%af%e9%9b%bb%e5%bd%b1-%e9%9b%bb%e5%bd%b1%e6%9c%9d%e8%81%96-210365
+- **Class:** retrospective (Retrospective (2022) for the few memories of Gary (王冠豪), who visited the City as an outsider; most of the article is secondary narration (it could also have a twin folder in secondary-sources/).)
+- **Date of the record:** 2022-08-26
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/retrospective-testimony-web/SOURCE.md`](../../primary-sources/retrospective-testimony-web/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| single web page | The interviewee is Gary (王冠豪), founder of the 「電影朝聖」 page. As a child he lived in San Po Kong (新蒲崗), not in the City. | "他兒時住新蒲崗" (As a child he lived in San Po Kong.) |
+| single web page, section 城寨留情 | The article says that each year at New Year Gary had to go into the City to pay New Year visits. | "每年新年都要進去拜年" (Every New Year he had to go in to pay New Year visits.) |
+| single web page, section 城寨留情 | The writers say that after the clearance was announced in 1987, many foreigners came to film the City. | "當城寨在一九八七年宣布清拆後 ... 亦吸引了不少外國人前來拍攝" (After the clearance of the City was announced in 1987 ... it also drew many foreigners to film there.) |
+| single web page, section 城寨留情 | The writers say that the British architect Ian Lambot (林保賢) and the Canadian photographer Greg Girard visited and photographed the City almost every month from 1987 to 1992. | "一九八七至一九九二年間 ... 幾乎每個月都到城寨訪問及拍照" (Between 1987 and 1992 ... they visited and photographed the City almost every month.) |
+| single web page, section 城寨留情 | The writers date the end of the clearance of the City to 1994. | "在一九九四年九龍城寨完成清拆以前" (Before the clearance of the Kowloon Walled City was completed in 1994) |
+| single web page, section 城寨留情 | The writers say that the film 《省港旗兵》 (1984, 麥當雄) ends with a fight in the lanes of the City. The source gives no English title. | "《省港旗兵》片末的城寨巷戰" (the lane battle in the Walled City at the end of 《省港旗兵》) |
+| single web page, section on film language | INFERRED: The writers call the director 杜琪峯 someone who 'came out of' the Walled City. INFERRED: this can mean the Kowloon City area; check other sources before use. | "他很崇拜在九龍城寨出身的導演杜琪峯" (He greatly admires the director 杜琪峯, who came out of the Kowloon Walled City.) |

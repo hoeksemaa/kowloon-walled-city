@@ -115,3 +115,17 @@ See the leads under each item in the primary folder.
 | media 16096, comment | A reader (wongm, 2015) says that the photo shows the Inverness Road Squatter Area in Kowloon City, taken from the top of Checkerboard Hill. | "This is a photo of the Inverness Road Squatter Area in Kowloon City, taken from atop the Checkerboard Hill." |
 | media 16096, comment | The same reader says that the tall building between the hill and the Kai Tak runway is the Walled City. | "the tall building between the hill and the Kai Tak runway is the Kowloon Walled City." |
 | media 16096, comment | He also names the graves on the hillside at the left as New Kowloon Cemetery No. 1 (the Chinese Christian Cemetery, opened 1904) and the modern building at the right as Musang College. | "The modern concrete building to the right is Musang College" |
+
+### lead-l0490: A view of Tung Tau Resettlement Estate = 東頭新區一景
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Information Services Department (政府新聞處), Hong Kong, 'A view of Tung Tau Resettlement Estate = 東頭新區一景', b&w photograph, 1965, ISD ref. no. 3592/1; Hong Kong Public Libraries (香港公共圖書館) Digital Collection, call number PHPH070389, https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?catalogueId=273478d39cb711ef9c2
+- **Class:** primary (A government photograph made at the time (1965). It belongs in the primary tree. It is about 20 years earlier than the peak period.)
+- **Date of the record:** 1965
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/gwulo-other-photos/SOURCE.md`](../../primary-sources/gwulo-other-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| catalogue record, 附註 | The Information Services Department made the photograph. Its ISD reference number is 3592/1. | "Source of photo : Information Services Department (Ref no. : 3592/1)" |
+| catalogue record, 著錄 and 製作/出版日期 | The library dates the photograph to 1965. The print is one black-and-white photograph, 18 x 13 cm, call number PHPH070389. | "1 photograph : b&w. ; 18 x 13 cm" |
+| catalogue record, 地方 | The record's place list names Block 22 of the old Tung Tau Estate in Wong Tai Sin District. It does not name the Walled City. | "九龍/黃大仙區/黃大仙/東頭邨/舊東頭邨第22座" (Kowloon / Wong Tai Sin District / Wong Tai Sin / Tung Tau Estate / Block 22 of old Tung Tau Estate) |

@@ -231,3 +231,26 @@ Each photographer took the photo at the city, at the date given.
 | media 17595, image, centre | INFERRED: The tallest buildings in the profile view have about 13 to 14 storeys and the lowest about 10. INFERRED: my count of the rows of windows above the trees. | "Kowloon Walled City - profile view" |
 | media 17595, image | Almost every flat in the profile view has a balcony with a cage or grille, with laundry and plants. Two of the top storeys carry signboards with large red characters, which are not legible at this size. | "Kowloon Walled City - profile view" |
 | media 17595, image, bottom | INFERRED: In front of this face is a sports ground with a football goal and a high fence of poles, where many young people in white shirts play football. INFERRED: it is the south face, because M+ calls the same view 'South Elevation'. | "Kowloon Walled City - profile view" |
+
+## More items: the leads of the reading of 2026-11 (catalogued, not read)
+
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
+
+### lead-l0490: A view of Tung Tau Resettlement Estate = 東頭新區一景
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Information Services Department (政府新聞處), Hong Kong, 'A view of Tung Tau Resettlement Estate = 東頭新區一景', b&w photograph, 1965, ISD ref. no. 3592/1; Hong Kong Public Libraries (香港公共圖書館) Digital Collection, call number PHPH070389, https://sls.hkpl.gov.hk/digital-collection/tc/contentcoverpage.html?catalogueId=273478d39cb711ef9c2
+- **Class:** primary (A government photograph made at the time (1965). It belongs in the primary tree. It is about 20 years earlier than the peak period.)
+- **Date of the record:** 1965
+- **Note:** its 3 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/gwulo-other-photos/SOURCE.md`](../../secondary-sources/gwulo-other-photos/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| image 1 (第1頁), centre and background | The photograph shows a tall, long slab block of the resettlement estate. Its ground floor is open between columns, and a wide paved open space lies in front of it. The hills of Lion Rock are behind. | "A view of Tung Tau Resettlement Estate = 東頭新區一景" |
+| image 1 (第1頁), foreground | INFERRED: In the foreground there are dense low houses of one to three floors, with pitched roofs of tiles and of corrugated sheets, small windows and laundry on poles. INFERRED: these are the houses of the City, as the Flickr caption of the same view (gwulo-7) says; this record does not say so. | "東頭新區一景" (A view of Tung Tau New Area) |
+| image 1 (第1頁), middle ground | Between the low houses and the paved space of the estate there is a long row of one-floor sheds with sheet roofs. People walk on the paved space, and a man rides a bicycle. | "東頭新區一景" (A view of Tung Tau New Area) |
+| image 1 (第1頁), right edge | At the right edge a road carries a bus, cars and many people on foot. A building behind the road is under bamboo scaffolding. | "東頭新區一景" (A view of Tung Tau New Area) |
+
+- **Leads:**
+  - Information Services Department photo series 3592 (1965): other frames after 3592/1 can show the City beside Tung Tau Estate; search the HKPL Digital Collection for the ISD reference 3592.

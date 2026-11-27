@@ -7,7 +7,7 @@ Later histories in Chinese, English and Japanese.
 - **Dates:** 1895-2026.
 - **Items:** 5, of which 5 are open now. Value of the set: medium.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 2 files with an open licence (text public domain ({{PD-old}} on the main page of the work, https://en.wikisource.org/wiki/Europe_in_China); Wikisource transcription under CC BY-SA; text public domain ({{PD-old}} on the main page of the work, https://en.wikisource.org/wiki/Europe_in_China); Wikisource transcription under CC BY-SA ('Text is available under the Creative Commons Attribution-ShareAlike License')), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 2 files with an open licence (Work published 1895 (public domain by age); the Wikisource page footer states: 'Text is available under the Creative Commons Attribution-ShareAlike License'), named under their items. The other files stay in `local/`.
 
 ## What it rests on
 
@@ -180,23 +180,26 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0597: Europe in China: The History of Hongkong from the Beginning to the Year 1882, chapters IX, X, XIX and XX
 
-- **Creator:** Ernst Johann Eitel
-- **Date:** 1895
-- **Kind:** book
-- **Class:** secondary (A history written in 1895 from records and memory; Eitel lived in Hong Kong from 1862, but the book is a narrative history, not a record of the time.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Public domain (published 1895; Wikisource transcription).
-- **Link:** https://en.wikisource.org/wiki/Europe_in_China/Chapter_19
-- **Other links:** https://en.wikisource.org/wiki/Europe_in_China/Chapter_9, https://en.wikisource.org/wiki/Europe_in_China/Chapter_10, https://en.wikisource.org/wiki/Europe_in_China/Chapter_20, https://en.wikisource.org/w/api.php?action=query&list=search&srsearch=%22Kowloon+city%22+prefix:Europe_in_China&format=json
-- **Proof that it exists:** Chapter 19 title: 'XIX. The Interregnum of the Hon. W. T. Mercer and the Administration of Sir Richard Graves MacDonnell'; search snippet: 'collected outside the harbour of Hongkong, at Kapshuimoon in the west, at Kowloon city in the north'
-- **What it gives (resolver's note, not checked):** Short mentions of Kowloon city in 1839 (provisions for the British fleet), as part of San On District, as one of the Chinese li-kin tax stations round Hong Kong in the 1860s (the 'blockade'), and in the steam-ferry attempt of July 1873.
-- **Lead:** L0597 (cited by top-commons-22, history-books-1988-2026)
-- **Notes:** Add the passages to the existing item top-commons-22 (same book) rather than as a new item. Chapter 9 (1839) is before the walled city was built (1847): it is about the older Kowloon fort and villages.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ernst Johann Eitel, Europe in China: The History of Hongkong from the Beginning to the Year 1882 (1895), ch. IX pp. 100-104, ch. X pp. 127-134, ch. XVII pp. 302-303, ch. XIX p. 417, ch. XX p. 520; Wikisource transcription, https://en.wikisource.org/wiki/Europe_in_China
+- **Class:** secondary (A history written in 1895 of events from 1839 to 1882. Add the passages to the existing item top-commons-22 (same book) rather than make a new item. The 1839 passages are before the walled city was built (1847).)
+- **Date of the record:** 1895.
+- **Files:**
+  - `lead-l0597-Chapter_17-3de97154.html` (in git): HTML of Wikisource Europe in China, chapter XVII (Kowloon city 1854, pp. 302-303); https://en.wikisource.org/wiki/Europe_in_China/Chapter_17; 238007 bytes; SHA-256 `e5b51b2569ad05eaaf5faa78fe9fefbe1d903b4a8e4eec878349aa0a8b5c3afb`; licence: Work published 1895 (public domain by age); the Wikisource page footer states: 'Text is available under the Creative Commons Attribution-ShareAlike License' (https://en.wikisource.org/wiki/Europe_in_China/Chapter_17)
+  - `lead-l0597-Chapter_20-ac3abebe.html` (in git): HTML of Wikisource Europe in China, chapter XX (steam ferries to Kowloon city 1873, p. 520); https://en.wikisource.org/wiki/Europe_in_China/Chapter_20; 194920 bytes; SHA-256 `ef5f9f8693f32deaab4b3163343ff2dab9efe17d6cbf5e4cd250bf8ffc25a6b3`; licence: Work published 1895 (public domain by age); the Wikisource page footer states: 'Text is available under the Creative Commons Attribution-ShareAlike License' (https://en.wikisource.org/wiki/Europe_in_China/Chapter_20)
+- **Note:** its 2 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/history-books-1988-2026/SOURCE.md`](../../primary-sources/history-books-1988-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 104 (ch. IX) | On 4 September 1839 Elliot and Gützlaff went in two boats to ask the villagers near Kowloon city to sell provisions to the British fleet; three war junks and the battery at Kowloon pier fired on them. This was before the walled city was built (1847). | "to induce the villagers near Kowloon city to furnish the fleet with provisions" |
+| p. 128 (ch. X) | When Hong Kong became British, the headquarters of the Colonel commanding the Marine Constabulary stations of Taipang and Kowloon moved to the citadel of Kowloon city. | "were removed to the citadel of Kowloon city." |
+| p. 134 (ch. X) | The city of Kowloon and the Kowloon Peninsula are both named after a row of nine peaks (Kau-lung, nine dragons). Eitel notes that the city is in Chinese territory. | "both the city of Kowloon (which is in Chinese territory) and the Peninsula of Kowloon (ceded to Great Britain in 1861) are named" |
+| p. 302 (ch. XVII) | At the end of September 1854 Kowloon city was taken and retaken several times by the (Taiping-era) rebels and the imperial troops. | "Kowloon city, opposite Hongkong, was at the end of September, 1854, repeatedly taken and retaken by the Rebels and the Imperialists." |
+| p. 303 (ch. XVII) | On 21 December 1854 the Hong Kong police arrested, in the Lower Bazaar, several hundred armed rebels who were about to sail to attack Kowloon city. | "several hundred armed Rebels who were about to embark to attack Kowloon city." |
+| p. 417 (ch. XIX) | From 1868 the Chinese authorities collected the li-kin war tax on junks trading with Hong Kong at three stations, one of them at Kowloon city in the north (the 'blockade'). | "at Kapshuimoon in the west, at Kowloon city in the north, and at Fattauchau" |
+| p. 520 (ch. XX) | In July 1873 Chinese merchants tried to run steam ferries between Hong Kong and Kowloon city. It was stopped after the British Consul in Canton told the Viceroy that the ferries would only carry customers to the Kowloon gambling houses. | "the ferry-boats were merely intended to bring customers from Hongkong to the Kowloon gambling houses" |

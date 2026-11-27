@@ -188,7 +188,7 @@ See the leads under each item in the primary folder.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 1 of 1 items read by the reading of the source search of 2026-11.
+- **Status:** read: 2 of 2 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0405: Gregorian-Lunar Calendar Conversion Table of 1986 (Bing-yin year of the Tiger)
@@ -217,16 +217,18 @@ See the leads under each item in the primary folder.
 
 ### lead-l0404: Hong Kong Observatory Open Data API Documentation, Version 1.13, Sep 2025
 
-- **Creator:** Hong Kong Observatory (香港天文台)
-- **Date:** Sep 2025 (version 1.13; first released Jun 2019)
-- **Kind:** reference
-- **Class:** secondary (Present-day technical documentation of the HKO data API; it records nothing of 1986, but it says which stations have daily data for 1986.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** '©The Government of the Hong Kong Special Administrative Region. The contents of this document remain the property of and may not be reproduced in whole or in part without the express permission of the Hong Kong Observatory' (cover page).
-- **Link:** https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf
-- **Proof that it exists:** Cover: 'Hong Kong Observatory Open Data API Documentation, Version : 1.13, Date : Sep, 2025'
-- **What it gives (resolver's note, not checked):** The list of dataTypes and stations of the HKO API, with the year range of each station: for December 1986 the daily mean, maximum and minimum temperatures exist only for HKO headquarters, Sha Tin (from 1984) and Lau Fau Shan (from 1985); the Kowloon City station (KLT) starts in 2008.
-- **Lead:** L0404 (cited by services-5, hko-weather-1986-1992)
-- **Notes:** Use it as a key to the data of the hko-weather folder; the Sha Tin series (station SHA) is a second 1986 temperature series near Kowloon if one is wanted.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Hong Kong Observatory (香港天文台), Hong Kong Observatory Open Data API Documentation, Version 1.13, Sep 2025 (first released Jun 2019), https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf
+- **Class:** secondary (Technical documentation of 2025; a key to the climate data, not a record of 1986.)
+- **Date of the record:** September 2025 (version 1.13).
+- **Files:**
+  - `lead-l0404-HKO_Open_Data_API_Documentation-2166e324.pdf` (in `local/`, not in git): PDF of the HKO Open Data API Documentation v1.13, Sep 2025 (568 KB); https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf; 581389 bytes; SHA-256 `1b9957074ce3908792bbc18b4481e4f4796d9df448a167917191475a44275e32`; licence: ©The Government of the Hong Kong Special Administrative Region; 'may not be reproduced in whole or in part without the express permission of the Hong Kong Observatory' (cover) (https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| pp. 26-31 (printed) | The API gives daily mean, maximum and minimum temperature (dataType CLMTEMP, CLMMAXT, CLMMINT) for each station from a station-specific first year. | "CLMTEMP: Daily Mean Temperature" |
+| p. 27 (printed) | For December 1986 only three stations have daily temperatures: Hong Kong Observatory (HKO, from 1884, without 1940-1946), Sha Tin (SHA, from 1984) and Lau Fau Shan (LFS, from 1985). | "HKO: 1884 to current year (Exclude 1940 - 1946)" |
+| p. 27 (printed) | The Kowloon City station (KLT) has data only from 2008; King's Park (KP) from 1992; Wong Chuk Hang (HKS) and Waglan Island (WGL) from 1989; Ta Kwu Ling (TKL) from 1988. | "KLT: 2008 to current year" |
+| p. 27 (printed) | Kai Tak Runway Park (SE1) is a separate station, from 2014. | "SE1: 2014 to current year" |
+| pp. 22-23 (printed) | The astronomical tide data in the API (HHOT, HLT) accept only the years 2022-2024, so they cannot give the tides of 1986. | "2022 - 2024" |
+| p. 38 (printed) | The Gregorian-Lunar calendar API accepts dates from 2023-1-1 only, so it cannot give the lunar dates of 1986. | "2023-1-1 – YYYY-12-31" |

@@ -239,7 +239,7 @@ testimony given later: tag its facts "retrospective (year)".
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** read: 7 of 7 items read by the reading of the source search of 2026-11.
+- **Status:** read: 8 of 8 items read by the reading of the source search of 2026-11.
   A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0523-1: Hong Kong Monthly Digest of Statistics, August 1987
@@ -435,16 +435,50 @@ testimony given later: tag its facts "retrospective (year)".
 
 ### lead-l0862: Hong Kong 1986 By-Census District Board Constituency Area: Summary Tables
 
-- **Creator:** Census and Statistics Department, Hong Kong
-- **Date:** c.1986-1987 (by-census of 11 March 1986); scan 2014-2015
-- **Kind:** data
-- **Class:** primary (Official small-area tables of the by-census of 11 March 1986, published by the government at the time.)
-- **Value:** high
-- **Language:** en
-- **Access:** open
-- **Licence:** © Hong Kong Government (Census and Statistics Department); the C&SD site says 'Statistical information on this website can be freely used, unless otherwise specified' (Intellectual Property Rights Notice); no open licence.
-- **Link:** https://www.censtatd.gov.hk/en/data/stat_report/product/B1129075/att/B11290751986XXXXE0100.pdf
-- **Proof that it exists:** PDF Info dictionary: /Title(Hong Kong 1986 By-Census District Board Constituency Area: Summary Tables); /Author Census and Statistics Department Hong Kong; 351 pages (linearization N 351); Content-Range bytes 0-3000/60685466
-- **What it gives (resolver's note, not checked):** Summary tables for each 1986 District Board constituency area (INFERRED from the title: population, households, living quarters and more), including the constituency that held the City; the frame of the City's people in March 1986, nine months before the simulated week.
-- **Lead:** L0862 (cited by top-blocked-b-2, hk-census-1981-1991)
-- **Notes:** 60.7 MB: download outside the sandbox (curl), not with WebFetch. Compare the 1986 boundary of R-01 with the City (see the lead of top-blocked-b-2 on the 1991 R-01 count).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Census and Statistics Department, Hong Kong. Hong Kong 1986 By-census: District Board Constituency Area Summary Tables. Foreword by R. Butler, Commissioner for Census & Statistics, January 1987. Hong Kong: Government Printer, 1987. pp.70-71 (Kowloon City and Sai Tau, R-01) and the back-sleeve map. PDF scan (2014) B11290751986XXXXE0100.pdf, https://www.censtatd.gov.hk/en/data/stat_report/product/B1129075/att/B11290751986XXXXE0100.pdf
+- **Class:** primary (Official small-area tables of the by-census of 11 March 1986, published by the government in 1987. It belongs in primary-sources/.)
+- **Date of the record:** 1987-01 (foreword); figures for 11 March 1986
+- **Files:**
+  - not downloaded (skipped: application/pdf, 60685466 bytes): Hong Kong 1986 By-census: District Board Constituency Area Summary Tables (PDF scan, 351 pages, 60.7 MB; a copy is already in local/); https://www.censtatd.gov.hk/en/data/stat_report/product/B1129075/att/B11290751986XXXXE0100.pdf; licence: © Hong Kong Government (Census and Statistics Department); the C&SD site says statistical information can be freely used unless otherwise specified (Intellectual Property Rights Notice, as plan.json records it); no open licence (https://www.censtatd.gov.hk/en/data/stat_report/product/B1129075/att/B11290751986XXXXE0100.pdf)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Foreword, p.v | The figures are for the land-based population on 11 March 1986. They leave out the marine population, transients, Vietnamese refugees and residents who were away that night. | "Figures in this report refer to the land - based population of Hong Kong on 11 March 1986, excluding 37280 marine population" |
+| Foreword, p.v | The by-census was a one-in-seven sample, so each count is an estimate. The Commissioner warned that small areas have large sampling errors. | "figures for areas with a small population have larger sampling errors and should be used with caution" |
+| Foreword, p.v | Hong Kong had 145 District Board constituency areas in 19 districts in 1986. | "There are in total 145 District Board Constituency Areas, grouped under 19 Districts" |
+| Foreword, p.v | The foreword is signed by R. Butler, Commissioner for Census and Statistics, in January 1987. A main report was to follow in late 1987. | "Detailed analysis and interpretation of the By-census results will be presented in the Main Report to be published in late 1987." |
+| Explanatory Notes, p.xii | A self-contained living quarters is one with its own piped water and a flush toilet. | "Self-contained Quarters—A living quarters with internal piped water supply and a flush toilet system." |
+| Explanatory Notes, p.xii | 'Other temporary housing' includes landings, staircases and corridors where people slept on the census night. | "places not intended for residential purposes but were occupied on the census reference night (e.g . landings, staircases, corridors etc.)" |
+| Explanatory Notes, p.xiii | A sub-tenant household rents part of a living quarters from someone who lives in the same quarters. A co-tenant household is one of two or more households that each rent part of a quarters from someone who lives outside. | "Sub -tenant- A household which rents part of a living quarters from someone who lives in the same living quarters." |
+| Explanatory Notes, p.xiii | Household rent is the amount paid for March 1986, less any housing allowance. Household income is the total income for February 1986. | "Household Rent- The amount paid for the month of March 1986 by a household for occupying the accommodation" |
+| Contents and Index, p.328 | The constituency of the City is Kowloon City and Sai Tau, code R-01, in Kowloon City District; its tables are on p.70. | "Kowloon City and Sai Tau R-01 70" |
+| Back-sleeve map, PDF p.348 | The boundary map of Kowloon in the back sleeve shows the label 'Kau Lung Shing Chai (Kowloon Walled City)' with 九龍城寨 inside constituency R-01, with Kowloon City (九龍城) to its south and V-05 to its north-east. | "Kau Lung Shing Chai (Kowloon Walled City)" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Kowloon City and Sai Tau, March 1986: 12,124 living quarters, 14,994 domestic households and 47,894 persons. | "LIVING QUARTERS TOTAL: 12124" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Private self-contained housing held 11,501 quarters, 14,294 households and 45,836 persons. The area had no Housing Authority or Housing Society blocks. | "Self-contained 11 501 14294 45836" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Roof-top structures: 210 quarters, 245 households, 700 persons. Other temporary housing: 49 quarters, 56 households, 112 persons. | "Roof -top structures 210 245 700" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Non self-contained private housing: 224 quarters, 238 households, 798 persons. Simple stone structures: 91 quarters, 119 households, 357 persons. | "Non self -conta ined 224 238 798" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Households in each living quarters: one household in 10,255 quarters, two in 1,071, three or more in 679; 119 quarters had none. | "Two 1 071 Three and over 679" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Persons in each living quarters: 245 quarters held ten or more people, 196 held nine and 273 held eight. | "Ten and over 245" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Household size on the census night: 3,381 one-person households, 3,052 of two, 2,625 of three and 2,555 of four. 63 households had ten or more. | "One 3381 Two 3052 Three 2625 Four 2555" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Household composition: 3,052 one-person households, 7,847 single nuclear families, 1,400 vertically extended families, 686 households of two or more families, 532 of unrelated persons. | "One unextended nuclear family 7847" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Household tenure: 6,699 owner-occupiers, 3,514 sole tenants, 574 main tenants, 1,603 sub-tenants, 2,016 co-tenants, 427 rent free, 161 provided by the employer. | "Owner -occupier 6699 Sole tenant 3514 Main tenant 574 Sub -tenant 1 603 Co - tenant 2016" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Monthly rent in March 1986: 7,406 households paid none; the largest paying bands were HK$400-599 and HK$600-799, with 1,477 households each. | "Rent free 7406" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Other rent bands: 1,141 households paid HK$800-999, 1,337 paid HK$1,000-1,499, 455 paid HK$300-399, 147 paid under HK$100. | "800- 999 1 141 1 000-1 499 1 337" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | Monthly household income: the largest bands were HK$3,000-3,999 (2,765 households) and HK$2,000-2,999 (2,611); 721 households had under HK$1,000. | "2000- 2999 2611 3000- 3999 2765" |
+| p.70 (PDF p.87), Kowloon City: Constituency Area Kowloon City and Sai Tau | INFERRED: INFERRED (my calculation from the bands): the median monthly household income of the area was in the band HK$3,000-3,999. | "Under 1 000 721" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Persons by sex: 25,515 male and 22,379 female. The largest age group was 25-29, with 3,731 men and 2,625 women. | "Total 25 515 22379" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Persons aged 65 and over: 1,498 men and 1,967 women. | "65 and over 1 498 1 967" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Place of birth: 24,983 persons born in China, 21,546 in Hong Kong and 1,365 elsewhere. | "China 24983" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Marital status: 11,606 married men and 10,234 married women; 1,820 widowed women and 504 widowed men. | "Widowed 504 1 820" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Education of persons aged 15 and over: 4,991 with no schooling or kindergarten only, 11,732 with primary, 8,470 lower secondary, 8,799 upper secondary, 847 with a degree course. | "No schooling / Kindergarten 4543 4991" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Activity status: 21,371 employees and outworkers, 1,757 self-employed, 945 employers, 392 unpaid family workers, 294 student workers, 1,316 unemployed. | "Employees and outworkers 21 371" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Economically inactive: 5,411 home-makers, 10,731 students, 2,485 retired, 42 of independent means. | "Home-makers 5 411" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Occupation: 13,783 production and related workers, transport operators and labourers; 4,501 service workers; 3,493 sales workers; 2,485 clerical workers. | "operators and labourers 13783" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Industry: 6,048 in textile and clothing manufacture, 4,914 in other manufacturing, 7,056 in trade, restaurants and hotels, 2,303 in construction. | "Textile and wearing apparel 6048" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | Income from main employment per month: the largest bands were HK$2,000-2,499 (4,669 persons) and HK$3,000-3,499 (3,794); 1,869 earned under HK$1,000. | "2000- 2499 4669" |
+| p.71 (PDF p.88), Kowloon City and Sai Tau, Persons | INFERRED: INFERRED (my calculation): the median monthly income from main employment in the area was in the band HK$2,000-2,499. | "1 500- 1 999 3598" |
+| p.70 with the back-sleeve map | INFERRED: INFERRED: The City (about 33,000 people by the survey of January 1987) lies inside R-01 on the map, so it is probably most of the 47,894 persons; the tables do not separate the City from the streets of Kowloon City. | "Kowloon City and Sai Tau R-01 70" |
+
+- **Leads:**
+  - Hong Kong 1986 By-census Main Report (Census and Statistics Department, announced for late 1987 in the foreword, p.v): not held.

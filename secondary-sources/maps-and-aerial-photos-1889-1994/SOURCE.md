@@ -426,3 +426,43 @@ See the leads under each item in the primary folder.
 |---|---|---|
 | hkmaps.hk map-metadata.json, layer '1904', fields 'notes' and 'scale' | The hkmaps.hk catalogue says that this War Office map was surveyed in 1902-1903 for military use, under Major H. S. King, R.E. It has 21 sheets at 1:7,920. | "Detailed map of the NT, 21 sheets Surveyed in 1902-1903 under superintendence of Major H S King RE for military use." |
 | hkmaps.hk map-metadata.json, layer '1904', fields 'documentSource' and 'copyright' | The catalogue gives the source of the scan as the Government Records Service copy HKRS209-4-1. Its copyright field is empty. | "HKRS209-4-1, Government Records Service, Hong Kong" |
+
+### lead-l0429-1: Japanese thought East China bases of 14th destroyed; moved shipping to Hong Kong to escape scourge of Nimitz task force. 14th fighters and bombers caught them there. Smoke billows from Kowloon docks and railroad yards. Jap fighter (left center) (U.S. Air Force Number A54567AC)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Army Air Forces, 14th Air Force (308th Bomb Group, 375th Bomb Squadron), oblique air photo of the raid on Hong Kong of 16 October 1944, print A-54567 A.C., with typed caption on the back; US National Archives, Record Group 342 (Records of U.S. Air Force Commands, Activities, and Organizations), Series 'Photographs of Activities, Facilities and Personnel', Local ID 342-FH-3A02645-A54567AC, NAID 204833720; scan by Fold3 (Fold3 File #29016086); https://catalog.archives.gov/id/204833720
+- **Class:** primary (An air photo of the raid with its typed caption and header notes of October 1944. The primary tree is correct. Earlier history (1944).)
+- **Date of the record:** 16 October 1944 (photo, per the handwritten note on the back); prints received 28 October 1944
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| catalogue record NAID 204833720 | The catalogue gives Access 'Unrestricted' and Use 'Unrestricted'. The item has two images, the front (342-FH_000297.jpg, 2,528,055 bytes) and the back (342-FH_000298.jpg, 1,988,304 bytes). | "Access: Unrestricted , Use: Unrestricted" |
+
+### lead-l0429-2: Japs were singed by fire of 14th Air force when they ducked Admiral Nimitz' Naval frying pan. Hong Kong harbor would have been safe refuge, but Jap land forces failed to knock out 14th's East China bases. Kowloon docks (center) were sprayed (U.S. Air Force Number B54567AC)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** US Army Air Forces, 14th Air Force (308th Bomb Group, 375th Bomb Squadron), near-vertical air photo of the raid on Kowloon of 16 October 1944, print B-54567 A.C., with typed caption on the back; US National Archives, Record Group 342, Series 'Photographs of Activities, Facilities and Personnel', Local ID 342-FH-3A02646-B54567AC, NAID 204833723; scan by Fold3 (Fold3 File #29016093); https://catalog.archives.gov/id/204833723
+- **Class:** primary (An air photo of the raid with its typed caption and header notes of October 1944. The primary tree is correct. Earlier history (1944), but it shows the City site soon after the wall was taken down.)
+- **Date of the record:** 16 October 1944 (photo, per the handwritten note on the back); prints received 28 October 1944
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| catalogue record NAID 204833723 | The catalogue gives Access 'Unrestricted' and Use 'Unrestricted'. The front scan (342-FH_000299.jpg) is 2,337,271 bytes and the back (342-FH_000300.jpg) 1,995,374 bytes. | "Access: Unrestricted , Use: Unrestricted" |
+
+### lead-l0436: MONAB VIII gallery: img_KaiTak_02.jpg ('November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield.') and img_KaiTak_03.jpg ('An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete.')
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Royal Navy Research Archive, 'Mobile Naval Air Base No. VIII gallery' (MONAB VIII, RNAS Kai Tak), images img_KaiTak_02.jpg (caption dated November 1945) and img_KaiTak_03.jpg (date unknown); photographers not named; https://www.royalnavyresearcharchive.org.uk/MONABS/M8_Gallery.html
+- **Class:** primary (Air photos of 1945 (and of about 1945-46) from the private collections of men of MONAB VIII; the captions are the archive's later text, thus secondary. They show Kai Tak, not the City. Earlier history (1945).)
+- **Date of the record:** November 1945 (img_KaiTak_02, per the caption); date unknown, after the Japanese extension of Kai Tak (img_KaiTak_03)
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md`](../../primary-sources/maps-and-aerial-photos-1889-1994/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| M8_Gallery.html, caption of img_KaiTak_02.jpg | INFERRED: The caption of img_KaiTak_02: the workshop and maintenance area of MONAB VIII on the western side of the airfield, November 1945. The caption prints the year as '11945'. INFERRED: a typing error for 1945. | "November 11945: View of the workshop and maintenance area of MONAB VIII located on the western side of the airfield." |
+| M8_Gallery.html, caption of img_KaiTak_02.jpg | The same caption says that the four Dorland hangars were complete, with Sea Otters of 1701 Squadron and reserve aircraft (used by MSR 9) parked around them. | "The four Dorland hangars are complete; Sea Otters of 1701 squadron are parked to the left of the upper pair" |
+| M8_Gallery.html, caption of img_KaiTak_03.jpg; image 600x477 px | The caption of img_KaiTak_03: an oblique air view of Kai Tak, date unknown, after the Japanese expansion work was complete. The small image shows crossing runways and a looping perimeter road, with Kowloon Bay at the left. The City cannot be made out. | "An oblique aerial view of Kai Tak, exact date unknown but the expansion work carried out by the Japanese is complete." |
+| M8_Gallery.html, introduction | The gallery says that its images come from the private collections of nine named men of the unit (two of them are K. and G. Littler). The two Kai Tak images have no single photographer named. Larger high-resolution copies of many images can be supplied on a photo request. | "Many, but not all, of these images are available in larger, high-res versions and copies can be supplied upon receipt of a photo request." |
+| M8_Gallery.html, introduction | The gallery page states the licence: Creative Commons Attribution-NonCommercial 3.0 Unported. | "The Royal Navy Research Archive is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License" |

@@ -74,40 +74,69 @@ shows is the reader's reading of it.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 4 of 4 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0421: Cap. 53B Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice, section 2(ak) (L.N. 406 of 1996)
 
-- **Creator:** Hong Kong Government (Secretary for Broadcasting, Culture and Sport (文康廣播司)); consolidated text by the Department of Justice, Hong Kong e-Legislation
-- **Date:** 4 Oct 1996 (L.N. 406 of 1996); consolidated text with versions from 30/06/1997 to 2026
-- **Kind:** document
-- **Class:** primary (The legal text of the declaration as made in 1996 (consolidated later only in its format); a record of the time of the park, after the clearance.)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** Hong Kong e-Legislation: Government copyright; the site's terms of use allow reproduction of the legislation (I did not open the terms page).
-- **Link:** https://www.elegislation.gov.hk/hk/cap53B
-- **Other links:** https://www.elegislation.gov.hk/hk/cap53B!zh-Hant-HK
-- **Proof that it exists:** Page title 'Cap. 53B Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice'; item (ak) 'the building known as the former Yamen Building at Kowloon Walled City Park, Kowloon, ... plan marked KM 6 ... (L.N. 406 of 1996)'
-- **What it gives (resolver's note, not checked):** The legal declaration (4 Oct 1996) of the former Yamen Building at Kowloon Walled City Park as a historical building (now listed among the declared monuments), with its deposited plan number KM 6 (Land Registry).
-- **Lead:** L0421 (cited by top-hkgov-9, legco-and-urban-council-1919-1997)
-- **Notes:** The repo's top-hkgov-9 already gives the declaration and its Chinese wording; the new fact is the plan number KM 6. The plan itself is a Land Registry record (closed). The folder name starts in 2006; the record is of 1996, thus the reader can choose legco-and-urban-council-1919-1997 next to top-hkgov-9 instead.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice (Cap. 53B), section 2(ak), added by L.N. 406 of 1996 (4 Oct 1996); Hong Kong e-Legislation, Department of Justice, versions of 30/06/1997 and 02/10/2026; https://www.elegislation.gov.hk/hk/cap53B!en and https://www.elegislation.gov.hk/hk/cap53B!zh-Hant-HK
+- **Class:** primary (The legal text of the declaration of 1996. It belongs to 1996, not to the park years: the folder hk-government-records-1899-1996 (or legco-and-urban-council-1919-1997 next to top-hkgov-9) fits better than park-and-heritage-2006-2026.)
+- **Date of the record:** 4 October 1996 (L.N. 406 of 1996); consolidated text as at 30/06/1997 and 02/10/2026
+- **Note:** its 1 secondary facts (narration, later captions) are in the secondary twin, [`../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md).
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| Cap. 53B, s. 2(ak), English text | Section 2(ak) of Cap. 53B declares the former Yamen Building (前衙門) at Kowloon Walled City Park (九龍寨城公園), as shown edged red on plan KM 6. The Secretary for Broadcasting, Culture and Sport (文康廣播司) signed the plan and deposited it in the Land Registry. The source note is L.N. 406 of 1996. | "the building known as the former Yamen Building at Kowloon Walled City Park, Kowloon, delineated and shown edged red on the plan marked KM 6" |
+| Cap. 53B, s. 2(ak), Chinese text | The Chinese text of s. 2(ak) names the building 名為前衙門的建築物 at 九龍寨城公園 and the plan 標明KM 6的圖則. | "位於九龍九龍寨城公園名為前衙門的建築物" (the building called the former Yamen, at Kowloon Walled City Park, Kowloon) |
+| Cap. 53B, headings of ss. 2 and 3, versions 30/06/1997 and 02/10/2026 | In the consolidated notice the Yamen stands in section 2, 'Declaration of monuments', in the version of 30/06/1997 and in the current version. Section 3 is 'Declaration of historical buildings'. The LegCo legal report of 1996 (top-hkgov-9) calls L.N. 406 a declaration of a historical building; the e-Legislation text does not explain the difference. | "2.Declaration of monuments The following places are declared to be monuments—" |
+
+- **Leads:**
+  - Plan KM 6 (the former Yamen Building, Kowloon Walled City Park), signed by the Secretary for Broadcasting, Culture and Sport and deposited in the Land Registry (Cap. 53B, s. 2(ak)).
+  - L.N. 406 of 1996 as gazetted (Hong Kong Government Gazette, Legal Supplement No. 2, 4 Oct 1996), to see whether it declared a monument or a historical building.
 ### lead-l0422: Cap. 53C Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996 (L.N. 405 of 1996)
 
-- **Creator:** Hong Kong Government (Secretary for Broadcasting, Culture and Sport (文康廣播司)); text served by the Department of Justice, Hong Kong e-Legislation
-- **Date:** 4 Oct 1996
-- **Kind:** document
-- **Class:** primary (The legal text of the notice as gazetted in 1996 (only format changes later, E.R. 6 of 2019).)
-- **Value:** low
-- **Language:** en
-- **Access:** js-only
-- **Licence:** Hong Kong e-Legislation: Government copyright; the site's terms of use allow reproduction of the legislation (I did not open the terms page).
-- **Link:** https://www.elegislation.gov.hk/hk/cap53C
-- **Other links:** https://www.elegislation.gov.hk/hk/cap53C!zh-Hant-HK
-- **Proof that it exists:** Page title 'Cap. 53C Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996'; 'The remnants of the South Gate at Kowloon Walled City Park, Kowloon, delineated and shown edged red on the plan marked KM 7 ...'
-- **What it gives (resolver's note, not checked):** The full legal text of the declaration (4 Oct 1996) of the remnants of the South Gate at Kowloon Walled City Park as an archaeological site, with the deposited plan number KM 7 (Land Registry).
-- **Lead:** L0422 (cited by top-hkgov-9, legco-and-urban-council-1919-1997)
-- **Notes:** Same remark as lead-l0421 on the folder (legco-and-urban-council-1919-1997 is also possible). The plan KM 7 (Land Registry) is closed.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Antiquities and Monuments (Declaration of Archaeological Site) Notice 1996 (Cap. 53C; L.N. 405 of 1996), 4 October 1996; Hong Kong e-Legislation, Department of Justice, versions of 30/06/1997 and 12/12/2019; https://www.elegislation.gov.hk/hk/cap53C!en and https://www.elegislation.gov.hk/hk/cap53C!zh-Hant-HK
+- **Class:** primary (The legal text of the declaration of 1996. As for lead-l0421, the folder hk-government-records-1899-1996 (or legco-and-urban-council-1919-1997) fits the date better.)
+- **Date of the record:** 4 October 1996
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| Cap. 53C, s. 1, English text | Section 1 of the notice declares the remnants of the South Gate (南門) at Kowloon Walled City Park an archaeological site, as shown edged red on plan KM 7. The Secretary for Broadcasting, Culture and Sport signed the plan and deposited it in the Land Registry. | "The remnants of the South Gate at Kowloon Walled City Park, Kowloon, delineated and shown edged red on the plan marked KM 7" |
+| Cap. 53C, s. 1, Chinese text, versions 30/06/1997 and 12/12/2019 | The Chinese text calls the site 名為南門的遺蹟 (the remains called the South Gate) and declares it 考古地點 (an archaeological site). The 1997 and the 2019 versions have the same wording. | "現宣布位於九龍九龍寨城公園名為南門的遺蹟" (The remains called the South Gate, at Kowloon Walled City Park, Kowloon, are hereby declared) |
+| Cap. 53C, heading | The notice was made under section 3(1) of the Antiquities and Monuments Ordinance (Cap. 53) and is dated 4 October 1996. Editorial record E.R. 6 of 2019 left out its enacting words and changed its format. | "(Cap. 53, section 3(1)) (Enacting provision omitted—E.R. 6 of 2019) [4 October 1996]" |
+
+- **Leads:**
+  - Plan KM 7 (remnants of the South Gate, Kowloon Walled City Park), signed by the Secretary for Broadcasting, Culture and Sport and deposited in the Land Registry (Cap. 53C, s. 1).
+
+### lead-l0794-1: 席上文件第 3 號：建議優化九龍城衙門展覽廳設施 — 康樂及文化事務署回應
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Leisure and Cultural Services Department (康樂及文化事務署), 席上文件第 3 號：建議優化九龍城衙門展覽廳設施 — 康樂及文化事務署回應, Kowloon City District Council Secretariat (九龍城區議會秘書處), November 2024 (received 13 November 2024), 1 p., https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf
+- **Class:** secondary (A government paper of 2024 on the park's exhibition: a record of the park in 2024, not of the City. Secondary tree (park and heritage) is right.)
+- **Date of the record:** November 2024 (received by the secretariat 13 November 2024).
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1, para. 1 | The LCSD exhibition in the Yamen of Kowloon Walled City Park opened on 19 April 2009, with one outdoor area and six exhibition halls in the Yamen, using models, images and sound to show the City as it was. | "自 2009 年 4 月 19 日開放給市民參觀，展出內容包括一個戶外展區和六個設於衙門內的展覽館" (open to the public from 19 April 2009, with one outdoor exhibition area and six exhibition halls inside the Yamen) |
+| p. 1, para. 1 | INFERRED: The LCSD gives about 3,300 visits in 2023; the sentence follows the one on the free guided tours, so the figure can be tour visitors only. | "在 2023 年，參觀人數約為 3300 人次" (In 2023 the number of visitors was about 3,300 visits.) |
+| p. 1, para. 1 | Because of the success of the film 《九龍城寨之圍城》, from 3 June 2024 the free guided tours of the park went from two days a week to every day. | "由以往一星期兩日，增加至每日均為公園遊人提供免費導賞團服務" (from two days a week before, increased to free guided tours for park visitors every day) |
+| p. 1, para. 2 | The LCSD held a carnival on 11 August 2024 and a fun day on 13 October 2024 in the park, with workshops in grass-grasshopper weaving and calligraphy. | "編織草蜢手工藝、書法體驗等中國傳統工作坊" (traditional Chinese workshops such as grass-grasshopper weaving and calligraphy) |
+| p. 1, para. 3 | The exhibition halls closed from 14 October 2024 to 30 April 2025 for renovation. | "展覽館於 2024 年 10 月 14 日至 2025 年 4 月 30 日暫時關閉，以便進行翻新工程" (The exhibition halls are temporarily closed from 14 October 2024 to 30 April 2025 for renovation works.) |
+
+### lead-l0794-2: 九龍城區議會轄下社區參與及文化康樂委員會第六次會議記錄 (2024年11月21日), 議程五: 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kowloon City District Council (九龍城區議會), Community Involvement and Culture and Recreation Committee (社區參與及文化康樂委員會), 第六次會議記錄, meeting of 21 November 2024, agenda item 5 (議程五), 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號), paras 16-19, p. 6, https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf
+- **Class:** secondary (Minutes of a 2024 meeting on the park's exhibition; a record of 2024, not of the City.)
+- **Date of the record:** Meeting Thursday 21 November 2024, 2:30 p.m.; minutes PDF made 27 January 2025.
+- **Note:** The primary part of the item of the same id in [`../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../secondary-sources/park-and-heritage-2006-2026/SOURCE.md), where its files are.
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 and p. 6, para. 16 | The committee met on Thursday 21 November 2024 at 2:30 p.m. in the meeting room of the Kowloon City District Office, and item 5 was the paper 36/2024 on improving the Yamen exhibition halls. | "建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟" (Proposal to improve the Kowloon City Yamen exhibition hall facilities: preserve the history of the Walled City, attract tourists, revive the economy) |
+| p. 6, para. 17 | The chairman referred members to the written replies of the LCSD (paper 3) and the Hong Kong Tourism Board (paper 7). | "由康文署及旅發局提交的席上文件第 3 號及 7 號" (tabled papers no. 3 and no. 7 submitted by the LCSD and the Tourism Board) |
+| p. 6, para. 18 | Members asked the LCSD to add new elements and exhibits, to invite all members to visit, to add patriotic elements such as a film exhibition area that tells the history of the nation beside the changes of the Walled City, and to recruit more volunteers, retired people included, as guides. | "建議康文署為展覽加入愛國元素，例如增設電影展覽區" (suggested that the LCSD add patriotic elements to the exhibition, for example a new film exhibition area) |
+| p. 6, para. 19 | The LCSD said the halls were closed from 14 October 2024 to 30 April 2025 to refurbish the exhibits and to reorganise and enlarge the exhibition space; the new exhibition will focus on the history of the Walled City past and present. | "新的展覽內容主要聚焦於九龍寨城古今歷史" (The new exhibition content will mainly focus on the history of the Kowloon Walled City, past and present.) |

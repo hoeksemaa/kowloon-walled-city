@@ -7,7 +7,7 @@ AMO and LCSD pages, park displays, the 2025 film-set exhibition.
 - **Dates:** 2006-2026.
 - **Items:** 26, of which 26 are open now. Value of the set: high.
 - **Copyright:** see the licence of each item. Copyrighted files go in `local/`, which git ignores.
-- **Stored in git:** yes: 2 files with an open licence (CC BY-SA 4.0; CC BY-SA 4.0 (page footer of the revision: 'Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply.')), named under their items. The other files stay in `local/`.
+- **Stored in git:** yes: 1 files with an open licence (CC BY-SA 3.0 (licence template on the file page); the Permission field also offers CC BY 4.0 and asks for attribution to the author as 'Malcolm Koo'), named under their items. The other files stay in `local/`.
 
 ## What it rests on
 
@@ -625,107 +625,222 @@ Not read yet.
 
 ## More items: the leads of the reading of 2026-11 (catalogued, not read)
 
-- **Status:** catalogued on 2026-11-21 by the source search of 2026-11 (the leads of its reading). An item is
-  read only when its own Status line says so. "What it gives" is the short note of the agent that resolved the
-  lead. It is not a checked fact.
+- **Status:** read: 9 of 9 items read by the reading of the source search of 2026-11.
+  A checker checked a sample of the facts. Each fact gives its page and a short exact quote.
 
 ### lead-l0896: Category:Remnants of the South Gate of Kowloon Walled City
 
-- **Creator:** Wikimedia Commons users (Mk2010, 姒姓賢宧, OhanaUnited, Clément Bucco-Lechat, Hzam M93008 TWCKMMOU and others)
-- **Date:** 2005-2025 (photos)
-- **Kind:** photo
-- **Class:** secondary (Photos of the park and its excavated remains, taken 2005-2025, long after the clearance; they show what survives, not the City of 1986.)
-- **Value:** low
-- **Language:** other
-- **Access:** open
-- **Licence:** Per file: CC BY-SA 3.0 (most), CC BY-SA 2.5, CC BY-SA 4.0, CC BY 3.0, CC BY 4.0, CC0 (as each file page states)
-- **Link:** https://commons.wikimedia.org/wiki/Category:Remnants_of_the_South_Gate_of_Kowloon_Walled_City
-- **Other links:** https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Remnants_of_the_South_Gate_of_Kowloon_Walled_City&cmlimit=100&format=json, https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg, https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_stone_plaques_and_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg
-- **Proof that it exists:** API list of 30 File members, first 'File:2024-12-28 Remnants of the South Gate of Kowloon Walled City.jpg', last 'File:南門懷古.jpg'.
-- **What it gives (resolver's note, not checked):** Photos of the excavated South Gate, its two stone plaques (南門 and 九龍寨城) and the concrete foundations of post-war buildings left in the park, 2005-2025. They can place the gate and the bases of the buildings that stood at the south edge of the City.
-- **Lead:** L0896 (cited by commons-30, park-and-heritage-2006-2026)
-- **Notes:** The repo holds commons-30 already. Catalogue only the files that add something (the two 'foundations of post-war buildings' files first); the plaque photos repeat each other.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Wikimedia Commons, 'Category:Remnants of the South Gate of Kowloon Walled City' (30 files, 2005-2025; photographers include Mk2010, Clément Bucco-Lechat, OhanaUnited, 姒姓賢寧, Alexkom000 and Hzam M93008 TWCKMMOU), https://commons.wikimedia.org/wiki/Category:Remnants_of_the_South_Gate_of_Kowloon_Walled_City, accessed 2026-11-26
+- **Class:** secondary (Later photos (2005-2025) of the remains kept in the park: a record of the relics after the clearance, not of the City at the time.)
+- **Date of the record:** 2005-08-06 to 2025-06-19 (photos)
+- **Files:**
+  - `lead-l0896-Remnants_of_the_South_Gate_of_Kowloon_Walled_City__foundatio-ced0c662.jpg` (in git): Photo by Mk2010, 4 August 2014: the concrete foundation beams of post-war buildings and the stone-paved path in the South Gate pit (4203x2522, 4.7 MB); https://upload.wikimedia.org/wikipedia/commons/8/88/Remnants_of_the_South_Gate_of_Kowloon_Walled_City%2C_foundations_of_post-war_buildings%2C_Kowloon_City_%28Hong_Kong%29.jpg; 4696015 bytes; SHA-256 `edf9a76595fecd78a8364e10d7135cc6b49317dbc67992d871bba20899fdf380`; licence: CC BY-SA 3.0 (licence template on the file page); the Permission field also offers CC BY 4.0 and asks for attribution to the author as 'Malcolm Koo' (https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg)
+  - `lead-l0896-Remnants_of_the_South_Gate_of_Kowloon_Walled_City__stone_pla-6cc87554.jpg` (in `local/`, not in git): Photo by Mk2010, 4 August 2014, at night: the two stone plaques on the grass and the foundation beams behind them (4270x2657, 7.9 MB) (open licence, but kept in local/ because of its size: the host keeps the open copy); https://upload.wikimedia.org/wikipedia/commons/5/51/Remnants_of_the_South_Gate_of_Kowloon_Walled_City%2C_stone_plaques_and_foundations_of_post-war_buildings%2C_Kowloon_City_%28Hong_Kong%29.jpg; 7923961 bytes; SHA-256 `5ce14e6dbb62636d2af10936b39949b2cce24a9be1f330fee3f4fd81c21870f0`; licence: CC BY-SA 3.0 (licence template on the file page); the Permission field also offers CC BY 4.0 and asks for attribution to the author as 'Malcolm Koo' (https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City,_stone_plaques_and_foundations_of_post-war_buildings,_Kowloon_City_(Hong_Kong).jpg)
+  - not downloaded (curl exit 56): Photo by 姒姓賢寧, 21 February 2024: the foundation beams of the South Gate pit, with exposed rusted reinforcing bars (4000x3000, 6.9 MB); https://upload.wikimedia.org/wikipedia/commons/0/09/Kln_Walled_City_South_Gate_part_3_in_February_2024.jpg; licence: CC BY 4.0 (https://commons.wikimedia.org/wiki/File:Kln_Walled_City_South_Gate_part_3_in_February_2024.jpg)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| category listing (API, 2026-11-26) | The Commons category 'Remnants of the South Gate of Kowloon Walled City' held 30 files on 2026-11-26, photos from 2005 to 2025 under CC BY-SA 2.5/3.0/4.0, CC BY 3.0/4.0 and CC0 (as each file page states). | "Category:Remnants of the South Gate of Kowloon Walled City" |
+| file titles: Remnants of the South Gate of Kowloon Walled City, foundations of post-war buildings, Kowloon City (Hong Kong).jpg; Remnants of the South Gate of Kowloon Walled City, stone plaques and foundations of post-war buildings, Kowloon City (Hong Kong).jpg | Two photos by Mk2010 (4 August 2014) are titled as showing the 'foundations of post-war buildings' kept in the South Gate remains in the park. | "Remnants of the South Gate of Kowloon Walled City, foundations of post-war buildings, Kowloon City (Hong Kong)" |
+| image of Remnants of the South Gate of Kowloon Walled City, foundations of post-war buildings, Kowloon City (Hong Kong).jpg (2014); image of Remnants of the South Gate of Kowloon Walled City (Hong Kong).jpg (2014) | INFERRED: The remains lie in a sunken rectangular pit with grey brick retaining walls. Inside are long concrete beams of building foundations, set in a grid of rectangles, and a path of stone slabs running between them (my reading of the photos). | "foundations of post-war buildings" |
+| image of Kln Walled City South Gate part 3 in February 2024.jpg (2024-02-21) | INFERRED: A photo of February 2024 shows rusted steel reinforcing bars sticking out of the broken ends of the concrete foundation beams, so these are reinforced concrete ground beams of the City's post-war buildings (INFERRED from the image and the Mk2010 file titles). | "Kln Walled City South Gate" |
+| image of Remnants of the South Gate of Kowloon Walled City, stone plaques and foundations of post-war buildings, Kowloon City (Hong Kong).jpg (2014, at night) | The two granite plaques of the gate (the South Gate plaque and the 'Kowloon Walled City' plaque) lie flat on the grass of the pit, in front of the foundations; the larger one is broken (as commons-30 already records). | "Remnants of the South Gate of Kowloon Walled City, stone plaques and foundations of post-war buildings" |
 ### lead-l0931: Heritage Impact Assessment for the Lung Tsun Stone Bridge Preservation Corridor (file HIA_Report_LTSBPC.pdf)
 
-- **Creator:** INFERRED: consultant for the Civil Engineering and Development Department (Kowloon Development Office); filed with the Antiquities Advisory Board (古物諮詢委員會)
-- **Date:** INFERRED: about 2013-2017 (not seen)
-- **Kind:** document
-- **Class:** secondary (A heritage assessment written for the preservation corridor after 2010; its history of Kowloon City is a later compilation.)
-- **Value:** low
-- **Language:** en
-- **Access:** open
-- **Licence:** Hong Kong Government (AAB) web file; no reuse licence seen
-- **Link:** https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf
-- **Proof that it exists:** WebFetch: 'maxContentLength size of 10485760 exceeded' (the file exists and is over 10 MB; first page not seen).
-- **What it gives (resolver's note, not checked):** INFERRED from the title and the citing report: the history and archaeology of the Lung Tsun Stone Bridge (1873-1875) and the old Kowloon City shore, with old maps and photos, and the plan of the corridor. Little or nothing on the City of the 1980s.
-- **Lead:** L0931 (cited by top-hkgov-18, park-and-heritage-2006-2026)
-- **Notes:** Download it outside the fetch tool (over 10 MB); look first for the old maps and photos of the City's approach (pier, road, gate).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** AGC Design Ltd (heritage consultant) for the Architectural Services Department, Heritage Impact Assessment for Lung Tsun Stone Bridge Preservation Corridor at Kai Tak, August 2017, 139 pp. (filed with the Antiquities Advisory Board (古物諮詢委員會)), https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf
+- **Class:** secondary (A 2017 consultant's heritage report: history from earlier reports and the excavations of 2008-2012.)
+- **Date of the record:** 2017-08
+- **Files:**
+  - `lead-l0931-HIA_Report_LTSBPC-2cd75260.pdf` (in `local/`, not in git): PDF of the whole report, 139 pp. (over 10 MB): history of the bridge, Kowloon Street and the City's south approach, with old maps and photos (Figs. 33-48, 56, 69-70); https://www.aab.gov.hk/filemanager/aab/common/hia-report/HIA_Report_LTSBPC.pdf; 12922066 bytes; SHA-256 `86067b932d903bc714d2024a3706a6b0cc92ec04b8d6c15e099a071f85dd51fc`; licence: Hong Kong Government (Antiquities Advisory Board) web file; no reuse licence seen (https://www.aab.gov.hk/)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 1 (title page) | The report was prepared by AGC Design Ltd (heritage consultant) for the Architectural Services Department, dated August 2017 (not for CEDD, as the finder guessed). | "Prepared For Architectural Services Department By Heritage Consultant AGC Design Ltd Aug 2017" |
+| pp. 4, 77, 103 | The project is to show the Lung Tsun Stone Bridge (龍津石橋) remains in situ in a 30 m wide corridor at Kai Tak, with a heritage path to Kowloon Walled City Park through Carpenter Road Park. | "The Project targets to provide landscape open space within a 30-meter wide preservation corridor" |
+| p. 25 | Kowloon Street (九龍街) was not one street but a market area from the foot of Pak Hok Shan (白鶴山) to the shore of Kowloon Bay; in the 1840s it had a few hundred shops and houses. | “Kowloon Street” was not a street as indicated by its name, but an area / market from the foot of Pak Hok Shan |
+| p. 25 | By the late 19th century Kowloon Street had teahouses, wine shops, tobacco shops, opium dens and gambling dens. | "restaurants and entertainment venues such as teahouses, wine shops, tobacco stores, opium dens and gambling dens started to emerge" |
+| pp. 12, 27 | The bridge was built in 1873-1875. At its landward end stood the Pavilion for Greeting Officials, two storeys, about 8 m x 7 m, where local elders greeted new officials going to the Yamen (衙門) in the City. | "a two-storey pavilion with dimension of 8m x 7m which was used by the local elders to greet new Chinese officials to the Yamen" |
+| p. 27 | After the colony banned public gambling in 1872, the gambling houses in the City, under Chinese jurisdiction, went on, and their trade increased water traffic to Kowloon City with the bridge as the landing pier. | "the gambling houses in KWC were under Chinese jurisdiction to continue their operation" |
+| p. 27 | In 1892 the charity Lok Sin Tong (樂善堂) added a T-shaped wooden extension to the bridge after raising funds. | "a “T” shape wooden extension (Fig. 40-41) was added by the local charity organization Lok Sin Tong ( 樂善堂 )" |
+| p. 27 | The 1898 Convention leased the land north of Boundary Street to Britain except the City and the existing pier. | "except KWC and the area of existing pier (LTSB)" |
+| pp. 30, 36 | An 85 m concrete pier (named Kowloon City Pier in the 1920s) replaced the wooden extension in 1910; the pavilion was demolished and about 170 m of the landward bridge was buried for the Kai Tak reclamation in the 1920s. | "A 85-meter long concrete Kowloon City Pier was constructed in 1910 as replacement of the 1892 wooden extension." |
+| pp. 30, 36 | Kai Tak airport was extended and modified from 1965 to 1988, the period of the City's peak density next door. | "Further extension and modification were undergone from 1965 to 1988" |
+| pp. 39, 41, 59 | The granite blocks of the bridge's solid section are laid like the walls of the City: transverse blocks between layers of longitudinal blocks (丁順建築法); Fig. 56 shows the stone blocks of the City's north wall. | "The granite slabs arrangement strikes resemblance to the walls of the Kowloon Walled City (Fig. 56)." |
+
+- **Leads:**
+  - AECOM, Further Archaeological Excavation Report for Kai Tak Development Engineering Study cum Design and Construction of Advance Works - Investigation, Design and Construction, August 2009 (source of Fig. 56, the stone blocks of the City's north wall; cited on HIA pp. 41, 95)
+  - Antiquities and Monuments Office, Conservation Management Plan for the Site of Lung Tsun Stone Bridge, November 2009 (source of Fig. 69, close-up of the Walled City and Kowloon Street; HIA pp. 49, 95)
 ### lead-l0521: Historical cum Social Study on Kowloon City District in Connection with Kai Tak Area (final report)
 
-- **Creator:** Ho Puay-peng et al., Centre for Architectural Heritage Research, The Chinese University of Hong Kong; for the Development Bureau (Antiquities and Monuments Office web site)
-- **Date:** December 2009 (PDF created 18 October 2010)
-- **Kind:** document
-- **Class:** secondary (A heritage and social study of the district made for the government in 2009, from archives, earlier studies and interviews; not a record of the 1980s.)
-- **Value:** medium
-- **Language:** en
-- **Access:** open
-- **Licence:** Not stated in the part I saw; a government-commissioned report, © the Government of the HKSAR by default.
-- **Link:** https://web.archive.org/web/20210104190432/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf
-- **Other links:** https://web.archive.org/web/20210104190432id_/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf, https://web.archive.org/web/20201005175839/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf, https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf
-- **Proof that it exists:** XMP metadata of the Wayback PDF: '<dc:title> ... Historical cum Social Study on Kowloon City district in connection with Kai Tak area'; 415 pages, 28.7 MB
-- **What it gives (resolver's note, not checked):** A 391-page (415 PDF pages) history and social study of Kowloon City District and Kai Tak, which per the citing article covers the Walled City; the chapters and any oral-history interviews were not checked.
-- **Lead:** L0521 (cited by tna-21, scholarship-history-law-society-1973-2026)
-- **Notes:** Only on the Wayback Machine now. WebFetch cannot fetch web.archive.org; a browser (Playwright) can. Check it for interviews with former residents and for the district's 1980s streets around the City.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Ho Puay-peng et al., Centre for Architectural Heritage Research, The Chinese University of Hong Kong, Historical cum Social Study on Kowloon City District in Connection with Kai Tak Area (final report), December 2009, for the Development Bureau, Antiquities and Monuments Office web site, https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf (now only on the Wayback Machine: https://web.archive.org/web/20210104190432/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf).
+- **Class:** secondary (A 2009 historical and architectural study built on published books (Lau Yun Wo 2005, Siu Kwok Kin 1987, Chiu Yu Lok and Chung Po Yin 2001); no witness accounts.)
+- **Date of the record:** December 2009.
+- **Files:**
+  - not downloaded (curl exit 7): PDF of the final report, Historical cum Social Study on Kowloon City District in Connection with Kai Tak Area, Dec 2009 (415 PDF pages, 28.7 MB; Wayback capture 2021-01-04); https://web.archive.org/web/20210104190432id_/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf; licence: No licence statement seen; a government-commissioned report, copyright of the HKSAR Government assumed (https://web.archive.org/web/20210104190432/https://www.heritage.gov.hk/en/doc/conserve/kowlooncityfinalreport.pdf)
 
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 14 [PDF 38] | The report says the Walled City was built in 1847 (27th year of Daoguang) north of Sacred Hill to strengthen the defence of the Kowloon Peninsula. | "Kowloon Walled City that built in the 27th year of Daoguang era in Qing Dynasty (1847) to the north of Sacred Hill" |
+| p. 16 [PDF 40] | The old villages round the Walled City included Sau Tau Village (西頭村), Tung Tau Village (東頭村), Nga Tsin Wai (衙前圍), Nga Tsin Long (衙前塱), Nga Yau Tau (衙右頭) and Ma Tau Wai (馬頭圍). | "Sau Tau Village 西頭村 Tung Tau Village 東頭村 Nga Tsin Wai 衙前圍" |
+| p. 20 [PDF 44] | All the stone for the city walls was quarried at To Kwa Wan. | "all the stones for building the city walls were minded from To Kwa Wan" |
+| p. 20 [PDF 44] | The market Kowloon Street grew up in the mid-18th century south-east of the Walled City. A pier was built near it in 1873 (12th year of Tongzhi); merchants and officials landed there on the way to the Walled City. | "A pier was built near the market in the 12th year of Tongzhi 同治 era (1873)." |
+| p. 21 [PDF 45] | Lok Sin Tong was founded in the late 19th century by Kowloon Street merchants and village elites, with its office in Kowloon Street and support from the officers in the Walled City. Its income came from a fee on each weighing of goods sold in Kowloon Street. | "The income of the organisation came from the charged fee for each weighing of goods sold in the Kowloon Street." |
+| p. 31 [PDF 55] | To extend Kai Tak airport, the Japanese tore down Sung Wong Toi, the wall of the Walled City and the Kai Tack Bund. | "the wall enclosed the Kowloon Walled City and Kai Tack Bund were torn down by the Japanese" |
+| p. 31 [PDF 55] | After 1945 tenement houses were built south of the present Walled City Park and along Ma Tau Wai Road, Ma Tau Chung Road, Pak Tai Street, Tam Kung Road and Kowloon City Road. | "tenement houses were built to the south of the present-day Kowloon Walled City Park" |
+| pp. 32-33 [PDF 56-57] | Squatter huts of iron sheets and wooden planks were scattered over Kowloon City, with problems of sanitation, water supply and fire. A figure caption says squatter settlements grew up round the Walled City in the 1960s. | "The squatter settlements grew up around the Kowloon Walled City the 1960s." |
+| p. 220 [PDF 244] | Rows of tenement houses (tong lau), mostly three to five storeys with flats divided into cubicles and shops or small factories on the ground floor, were built south of the Walled City from the 1930s to the 1950s; Nos. 1 and 3 Hau Wong Road survive. | "Rows of tenement houses were built to the south of Kowloon Walled City between the 1930s and 1950s." |
+| p. 159 [PDF 183] | Hau Wong Temple (九龍城侯王古廟) stands at Junction Road (聯合道) and Tung Tau Tsuen Road (東頭村道). It was built in 1730 and renovated in 1822, 1859, 1879, 1920 and 2005. | "Located at the Junction Road 聯合道 and Tung Tau Tsuen Road 東頭村道 in Kowloon City" |
+| pp. 161-162 [PDF 185-186] | Temple Road (廟道), a granite-slab path, ran west round the outside of the Walled City to Hau Wong Temple, with a ceremonial gate in front of the City's north gate. The text dates it 1895; a figure caption says 1897. The path was later demolished. | "A path, Temple Road 廟道 that skirted outside the Kowloon Walled City in the westerly direction was built of granite slabs" |
+| p. 176 [PDF 200] | The Kowloon Fort (九龍砲台), finished in 1811 south-east of the later Walled City, had one officer and 42 soldiers in ten barracks, eight cannons, and square walls 103.23 m long and 3.66 m high. | "one officer and 42 soldiers were stationed in ten barracks and eight cannons were mounted" |
+| p. 177 [PDF 201] | The Walled City of 1847 was paid for by donations of local merchants and Qing officers. It had six watchtowers and four gates, was roughly an irregular parallelogram of about 6.5 acres, and held 150 soldiers. | "The Walled City guarded by six watchtowers and four gates was roughly in shape of irregular parallelogram, which measured about 6.5 acres." |
+| p. 177 [PDF 201] | The garrison was commanded by the Deputy Commodore of the Dapeng Brigade (大鵬協水師副將), and civilians also lived in the Walled City. | "Besides the officers and garrisons, civilians also lived in the Walled City." |
+| p. 177 [PDF 201] | More than ten official buildings stood inside: the Yamen of the Assistant Magistrate (九龍司巡檢衙署), the Commodore's mansion (大鵬協水師副將府), the Military Officer's Yamen (軍官衙門), a Gunpowder Factory (火藥局), an Armoury (軍裝局), a warehouse, a Parade Pavilion (演武亭), the 敬惜字紙亭, Er Sheng Temple (二聖廟) and Wu Di Temple (武帝廟). | "Gunpowder Factory 火藥局, Armoury 軍裝局, Warehouse, Parade Pavilion 演武亭" |
+| pp. 178-179 [PDF 202-203] | Longjin Charitable School (龍津義學) was set up inside the Walled City with donations; it was also a meeting place for officers, merchants and villagers. Its stone plaque is kept in the Lok Sin Tong office. | "the stone plaque inscribed with four Chinese characters 龍津義學 [Longjin Charitable School] of the building entrance is preserved" |
+| p. 179 [PDF 203] | In 1899 the British expelled the Qing officers. The report calls the City afterwards 'a place of empty sovereignty', where most buildings were demolished and squatters spread. | "The Kowloon Walled City eventually became a place of empty sovereignty." |
+| p. 180 [PDF 204] | The Yamen became Kwong Yem Home for the Aged (廣蔭院), run by the Holy Trinity Church from 1902 and by the Hong Kong Chinese Christian Churches Union from 1918. A plaque 'ALMSHOUSE' is over its door. | "converted into Kwong Yem Home for the Aged 廣蔭院 by the Holy Trinity Church in 1902" |
+| p. 181 [PDF 205] | After the Second World War multi-storey blocks were built illegally in the Walled City. The report says it became a haven for drug addicts, criminals, vice dens and unlicensed dentists, called Sam But Kwun (三不管). | "a haven for drug addicts, criminal hide-outs, vice dens and unlicensed dentists" |
+| p. 181 [PDF 205] | The report says demolition of all buildings except the Yamen was agreed (it gives 1987), the demolition was finished in 1994, and the Yamen was declared a monument and restored in 1996. | "After the demolition was completed in 1994" |
+| p. 158 [PDF 182] | INFERRED: The report wrongly says on another page that all buildings were demolished 'in the 1950s' and that the park opened in 1996; its own p. 181 gives 1994 for the end of the demolition. | "In the 1950s, all buildings in Kowloon Walled City were demolished, except the administrative office" |
+| p. 181 [PDF 205] | The Yamen stands at the heart of the City on Longjin Road (龍津路), which the report calls the main street of the walled city, along which also stood the Military Officer's Yamen, the Longjin school and the Commodore's mansion. | "located at the heart of the Kowloon Walled City at Longjin Road 龍津路, which was the main street of the walled city" |
+| pp. 181-182 [PDF 205-206] | The Yamen has three halls and two open courtyards, three bays wide, on a footprint of about 48 m by 13 m. It is of grey brick with pan-and-roll tiles on timber; the rear hall, the officer's residence, has three rooms. | "The footprint of the Former Yamen occupies an area of roughly 48m x 13m." |
+| p. 182 [PDF 206] | The Yamen is the only structure of the City kept in place; only remnants of the foundations of the South and East Gates survive. | "only remnants of the foundations of the original South and East Gates can be preserved" |
+| p. 185 [PDF 209] | In the Qing period shops lined both sides of the path from the Walled City to Longjin Bridge, the landing pier; the market sold oil, meat, fish, vegetables, fruit, clothes, fertilisers and jewellery. | "Shops aligned along sides of the path leading from the Kowloon Walled City to Longjin Bridge" |
+| p. 216 [PDF 240] | Lee Kee Memorial Dispensary (李基紀念醫局), No. 99 Carpenter Road, was proposed in 1951 by the Kowloon City District Kaifong Welfare Association. | "located at No. 99 Carpenter Road" |
+| p. 337 [PDF 361] | During the Japanese occupation the Kai Tak Nullah was turned into a stone channel; its masonry parapet was built of boulders from the Walled City. | "The masonry parapet of the nullah was constructed by the boulders from the Kowloon Walled City." |
+
+- **Leads:**
+  - Lau Yun Wo (劉潤和), 九龍城區風物志 [A Guide to the Antiquities of Kowloon City District], 2005: p. 24 floor plan of the Walled City, p. 25 photo c. 1868, p. 35 photo c. 1915, p. 38 Longjin school c. 1950, p. 42 squatters round the City 1960s, p. 43 tenement houses in the City 1972.
+  - Siu Kwok Kin (蕭國健), 九龍城史論集 [Studies on the Kowloon Walled City], 顯朝書室, 1987, p. 28 (garrison) and p. 52.
+  - Chiu Yu Lok (趙雨樂) and Chung Po Yin (鍾寶賢), The Benevolent Society: A Study of the Early Kowloon City and Lok Sin Tong, Sunray Publishing, 2001, pp. 77-96; and Regional Study of Hong Kong History: Kowloon City, Joint Publishing, 2001, pp. 221-223.
+  - Lok Sin Tong Benevolent Society, Kowloon, 九龍樂善堂百年史略 1880-1980 (1981), pp. 4-5, 73, 173.
+  - History of Kwong Yem Home for the Aged (廣蔭院) (2000), Hong Kong Chinese Christian Churches Union web site, http://www.hkcccu.org.hk (retrieved by the report 13 May 2009).
 ### lead-l0794-1: 席上文件第 3 號：建議優化九龍城衙門展覽廳設施 — 康樂及文化事務署回應
 
-- **Creator:** Leisure and Cultural Services Department (康樂及文化事務署); Kowloon City District Council Secretariat (九龍城區議會秘書處)
-- **Date:** November 2024 (received 13 November 2024)
-- **Kind:** document
-- **Class:** secondary (A 2024 government reply about the park exhibition in the Yamen; it records nothing of the City at the time.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement in the PDF; a Hong Kong SAR Government (district council) paper.
-- **Link:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf
-- **Other links:** https://www.districtcouncils.gov.hk/kc/tc_chi/meetings/committees/dc_committee_meetings_doc.php?year=2024&meeting_id=27031&committee=763
-- **Proof that it exists:** '席上文件第 3 號 / 建議優化九龍城衙門展覽廳設施 / 康樂及文化事務署回應如下﹕ 本署於九龍寨城公園「衙門」所舉辦的展覽自 2009 年 4 月 19 日開放給市民參觀'
-- **What it gives (resolver's note, not checked):** The Yamen exhibition opened on 19 April 2009 with one outdoor area and six halls (models, images, sound); about 3,300 visits in 2023 (參觀人數約為 3300 人次); free guided tours every day from 3 June 2024 after the film 《九龍城寨之圍城》; the halls closed for renovation from 14 October 2024 to 30 April 2025.
-- **Lead:** L0794 (cited by top-popular-20, park-and-heritage-2006-2026)
-- **Notes:** Twin of the held HKTB reply (top-popular-20) and of the LCSD reply of March 2025 (gap-oral-history-archives-15); the 2009 opening and the closure dates are already in the repo.
-
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Leisure and Cultural Services Department (康樂及文化事務署), 席上文件第 3 號：建議優化九龍城衙門展覽廳設施 — 康樂及文化事務署回應, Kowloon City District Council Secretariat (九龍城區議會秘書處), November 2024 (received 13 November 2024), 1 p., https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf
+- **Class:** secondary (A government paper of 2024 on the park's exhibition: a record of the park in 2024, not of the City. Secondary tree (park and heritage) is right.)
+- **Date of the record:** November 2024 (received by the secretariat 13 November 2024).
+- **Files:**
+  - `lead-l0794-1-CICRC36_3-e603c0ef.pdf` (in `local/`, not in git): PDF of 席上文件第 3 號, LCSD reply on the Yamen exhibition halls, Nov 2024 (1 p., 400 KB); https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf; 409466 bytes; SHA-256 `bcace2c9288925fe2c89b7888a3d3c9fc2c79dced8f10472bc27691a086dd999`; licence: No licence statement in the PDF; Hong Kong SAR Government (district council) paper (https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_doc/CICRC/27031/CICRC36_3.pdf)
+- **Note:** its 5 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../primary-sources/park-and-heritage-2006-2026/SOURCE.md).
 ### lead-l0794-2: 九龍城區議會轄下社區參與及文化康樂委員會第六次會議記錄 (2024年11月21日), 議程五: 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號)
 
-- **Creator:** Kowloon City District Council (九龍城區議會), Community Involvement and Culture and Recreation Committee (社區參與及文化康樂委員會)
-- **Date:** meeting 21 November 2024 (PDF made 27 January 2025)
-- **Kind:** document
-- **Class:** secondary (Minutes of a 2024 council committee about the park exhibition; not a record of the City.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** No licence statement in the PDF; a Hong Kong SAR Government (district council) paper.
-- **Link:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf
-- **Other links:** https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_agenda/CICRC/6CICRC_agenda_tc.pdf, https://www.districtcouncils.gov.hk/kc/tc_chi/meetings/committees/dc_committees_meetings_audio.php?meeting_id=27031
-- **Proof that it exists:** '九龍城區議會轄下 社區參與及文化康樂委員會 第六次會議記錄 日期：2024年11月21日'; p. 7 '議程五 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號)'
-- **What it gives (resolver's note, not checked):** Paras 16-19 (p. 7, 8 pp. in all): members ask for new exhibits, a film area with patriotic elements and more volunteer guides; the LCSD says the renovation will reorganize and enlarge the halls, and the new exhibition will focus on the history of the City past and present (九龍寨城古今歷史).
-- **Lead:** L0794 (cited by top-popular-20, park-and-heritage-2006-2026)
-- **Notes:** The meeting also has an audio recording page (dc_committees_meetings_audio.php?meeting_id=27031), not opened.
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Kowloon City District Council (九龍城區議會), Community Involvement and Culture and Recreation Committee (社區參與及文化康樂委員會), 第六次會議記錄, meeting of 21 November 2024, agenda item 5 (議程五), 建議優化九龍城衙門展覽廳設施 保育城寨歷史，吸引遊客，振興經濟 (社區文康會文件第 36/2024 號), paras 16-19, p. 6, https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf
+- **Class:** secondary (Minutes of a 2024 meeting on the park's exhibition; a record of 2024, not of the City.)
+- **Date of the record:** Meeting Thursday 21 November 2024, 2:30 p.m.; minutes PDF made 27 January 2025.
+- **Files:**
+  - `lead-l0794-2-6CICRC_Minutes_tc-d3e97658.pdf` (in `local/`, not in git): PDF of the minutes of the 6th meeting of the CICRC, Kowloon City District Council, 21 Nov 2024 (8 pp., 478 KB); item 5 on p. 6; https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf; 489515 bytes; SHA-256 `25549c9fa26b5bfda33c030b88689c956720586f5885e694b2b68fee944c2f5d`; licence: No licence statement in the PDF; Hong Kong SAR Government (district council) paper (https://www.districtcouncils.gov.hk/kc/doc/2024_2027/tc/committee_meetings_minutes/CICRC/6CICRC_Minutes_tc.pdf)
+- **Note:** its 4 primary facts (records of the time that it quotes or shows, the words of witnesses) are in the primary twin, [`../../primary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../primary-sources/park-and-heritage-2006-2026/SOURCE.md).
 
+- **Leads:**
+  - Audio recording of the meeting, dc_committees_meetings_audio.php?meeting_id=27031 (not opened).
 ### lead-l0903: File:Garden Tablet.jpg ('The Garden Tablet in Kowloon Walled City Park'; the inscription 九龍寨城公園碑記)
 
-- **Creator:** Yd712015 (Wikimedia Commons user), photographer; the inscription: text signed 香山黃坤堯撰 and calligraphy signed 東官陳樹…書 (my reading of the photo)
-- **Date:** photo 14 March 2015; inscription c. 1995 (park opened 1995; INFERRED)
-- **Kind:** photo
-- **Class:** secondary (A later essay on the City and the park, carved in the park in the 1990s; it summarises the history and records nothing first-hand of 1986.)
-- **Value:** low
-- **Language:** zh
-- **Access:** open
-- **Licence:** CC BY-SA 4.0 (Commons file page; author Yd712015)
-- **Link:** https://commons.wikimedia.org/wiki/File:Garden_Tablet.jpg
-- **Other links:** https://upload.wikimedia.org/wikipedia/commons/e/ee/Garden_Tablet.jpg
-- **Proof that it exists:** Commons description 'The Garden Tablet in Kowloon Walled City Park'; the carved title on the photo reads 「九龍寨城公園碑記」
-- **What it gives (resolver's note, not checked):** The full text of the park inscription: the site and the founding of the City (1846-1847), the Wu Di temple and the Lung Tsun school, the 1942 demolition of the walls, the growth of the City after the war with its area and population, the clearance and the making of the park with its features. Useful for the official short history of 1995, not for daily life in 1986.
-- **Lead:** L0903 (cited by gap-builders-demolition-park-31, park-and-heritage-2006-2026)
-- **Notes:** Transcribe from the full-size file (2.8 MB). The other side of the same wall carries the cross-section of the City (see L0893 and commons-8).
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Yd712015 (photographer), File:Garden Tablet.jpg, 'The Garden Tablet in Kowloon Walled City Park', photo 14 March 2015, Wikimedia Commons, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Garden_Tablet.jpg ; inscription 九龍寨城公園碑記, text by 黃坤堯 (signed 香山黃坤堯撰), calligraphy signed 東官陳樹衡書 (my reading), about 1995 (INFERRED).
+- **Class:** secondary (The park's official short history (about 1995), written after the clearance; not a witness account.)
+- **Date of the record:** Inscription about 1995 (INFERRED: it describes the finished park); photo 14 March 2015.
+- **Files:**
+  - `lead-l0903-Garden_Tablet-5986afaa.jpg` (in `local/`, not in git): Photo of the park tablet 九龍寨城公園碑記, 14 March 2015 (4224 x 2368 px, 2.8 MB), by Yd712015; https://upload.wikimedia.org/wikipedia/commons/e/ee/Garden_Tablet.jpg; 2938988 bytes; SHA-256 `bd0b390608507e552af52de3ff788cdf78a149deb08319f662663ca4d2051734`; licence: CC BY-SA 4.0 for the photo (Commons, author Yd712015); but the photo shows mainly the park inscription of about 1995 (text by 黃坤堯, calligraphy by 陳樹衡). Hong Kong freedom of panorama (Copyright Ordinance s. 71) covers buildings, sculptures and works of artistic craftsmanship, not text or calligraphy, so the right to copy the inscription is in doubt. (https://commons.wikimedia.org/wiki/File:Garden_Tablet.jpg)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| tablet, title and column 1 (columns counted from the right) | The tablet is titled 九龍寨城公園碑記 (Record of Kowloon Walled City Park). It opens: the City lies between hills and sea on flat firm ground, facing 紅香爐山 on Hong Kong Island across the water. | "九龍寨城依山臨海地平土堅與香港之紅香爐山隔海對峙" (Kowloon Walled City leans on the hills and faces the sea, on flat, firm ground, and stands across the water from the 紅香爐山 of Hong Kong.) |
+| tablet, columns 4-5 | After the cession of Hong Kong, the Qing court sent the deputy commander of the Dapeng brigade (大鵬協副將) and the Kowloon assistant magistrate (九龍司巡檢) to the 九龍村寨 to catch pirates and smugglers. | "清廷遣大鵬協副將及九龍司巡檢進駐九龍村寨捕盜緝私" (the Qing court sent the deputy commander of the Dapeng brigade and the Kowloon assistant magistrate to station at the Kowloon village fort to catch bandits and smugglers) |
+| tablet, columns 6-8 | The building of the City began in the 26th year of Daoguang and it was finished in the next year, 1847. Inside the City were built the Wu Di Temple (武帝廟), a temple of the god of war, and the Lung Tsun Free School (龍津義學). | "九龍寨城肇建於道光廿六年翌歲一八四七年落成城內建武帝廟龍津義學" (Kowloon Walled City was begun in the 26th year of Daoguang and completed the following year, 1847; inside the City were built the Wu Di Temple and the Lung Tsun Free School.) |
+| tablet, columns 9-11 | When Britain extended its territory to the New Territories, the Qing court insisted on keeping the City and the area of the old pier, for officials and people to pass. | "清廷堅持保留九龍寨城及舊碼頭一區以便官民行走" (the Qing court insisted on keeping the Kowloon Walled City and the old pier area, so that officials and people could pass) |
+| tablet, column 11 | In 1942 the Japanese army pulled down the city walls to build Kai Tak airport. | "一九四二年日軍拆毀城牆修建啟德機場" (In 1942 the Japanese army demolished the city walls to build Kai Tak airport.) |
+| tablet, columns 12-13 | After the war the residents grew in number and the place was commonly called 九龍城寨. The tablet gives an area of 29,000 square metres and 33,000 residents. | "戰後居民漸多習稱九龍城寨佔地二萬九千平方米入住三萬三千人" (After the war the residents gradually increased; it was commonly called Kowloon City Fort; it covered 29,000 square metres and 33,000 people lived there.) |
+| tablet, columns 13-15 | Early in 1987 the Hong Kong government, with the agreement of the Chinese government, announced the clearance of the City. The clearance was finished in 1994, and the Architectural Services Department then built the park. | "一九八七年初港英當局徵得中國政府同意宣佈清拆九龍城寨一九九四年清拆完成" (In early 1987 the British Hong Kong authorities, with the consent of the Chinese government, announced the clearance of the Kowloon Walled City; in 1994 the clearance was completed.) |
+| tablet, column 16 | The new park joins Carpenter Road Park (賈炳達道公園) to make one park. | "公園與賈炳達道公園連成一體" (The park is joined with the 賈炳達道 park into one.) |
+| tablet, columns 18-19 | After the clearance, the tablet says, only the Yamen, an old well, stone tablets and column bases remained of the old City. | "古蹟漸湮倖者存衙門古井石碑柱礎而已" (the old relics gradually disappeared; what survives is only the Yamen, an old well, stone tablets and column bases) |
+| tablet, columns 19-21 | INFERRED: The Architectural Services Department built the park in the style of an early-Qing garden, with pavilions, galleries, rockeries, flowers, fish ponds, woods and waterfalls. The date before this reads 一九九零年五月 (May 1990) on my reading of the photo, which does not fit the 1994 clearance; the checker's enlarged crop also reads 一九九零 clearly, so the date on the stone is May 1990, which conflicts with the clearance date on the same tablet. | "一九九零年五月建築署仿清初園林風格修築亭臺廊榭" (In May 199? the Architectural Services Department built pavilions, terraces, galleries and kiosks in the style of an early-Qing garden) |
+| tablet, columns 22-23 | The pavilions are named after notable people of the City; for example the 玉壺亭 is named after the City's commander 張玉堂. | "亭榭命名皆爲寨城聞人如玉壺亭乃因寨城守將張玉堂" (the pavilions are all named after notable people of the walled city; for example the Yuk Wu pavilion, after the City's commander 張玉堂) |
+| tablet, columns 24-25 | The paths in the park keep the old names of the 1950s, such as 光明路, 龍城路 and 龍津路. | "園內路徑保留五十年代舊名如光明路龍城路龍津路" (the paths in the park keep the old names of the 1950s, such as 光明路, 龍城路 and 龍津路) |
+| tablet, column 26 | The main axis of the park runs between the two gates on the south and the north of the City. | "以南北二門爲主軸" (takes the south and north gates as its main axis) |
+| tablet, last two columns | INFERRED: The text is signed 香山黃坤堯撰 (written by 黃坤堯 of 香山) and the calligraphy 東官陳樹衡書 (my reading of the calligrapher's name; the last character before 書 is uncertain). | "香山黃坤堯撰" (composed by 黃坤堯 of 香山) |
+### lead-l0922: Kowloon Walled City Park exhibition guide (exhibition_guide_english.pdf), Wayback capture of 18 June 2018
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Leisure and Cultural Services Department (康樂及文化事務署), 'Kowloon Walled City Park Exhibition Guide' (folded leaflet, English; PDF 'leaflet_F(Eng).2017.V3', created 23 Nov 2017), one page, http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_english.pdf, Wayback capture 18 June 2018: https://web.archive.org/web/20180618010118id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_english.pdf . Chinese edition: 九龍寨城公園展覽館指南 ('leaflet_F(chi).2017.V4', created 27 Nov 2017), Wayback capture 17 June 2018: https://web.archive.org/web/20180617225728id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_chinese.pdf
+- **Class:** secondary (An official visitor leaflet of 2017 about the park exhibition (2009 onward). Its history panel is a later narration; its room list records the exhibition, not the City. It stays in secondary-sources/.)
+- **Date of the record:** late 2017 (PDF created 2017-11-23, modified 2017-12-22)
+- **Files:**
+  - `lead-l0922-exhibition_guide_english-c3fa43c1.pdf` (in `local/`, not in git): English exhibition guide leaflet, one-page image PDF (608 KB), version 'leaflet_F(Eng).2017.V3'; https://web.archive.org/web/20180618010118id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_english.pdf; 659486 bytes; SHA-256 `4ba57ccde4a64443d8dc205467680f9e746514480dfcc99c5c09ba954033bb30`; licence: No licence stated in the PDF; Hong Kong SAR Government (LCSD) publication (https://web.archive.org/web/20180618010118id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_english.pdf)
+  - `lead-l0922-exhibition_guide_chinese-b1db5d36.pdf` (in `local/`, not in git): Chinese exhibition guide leaflet 九龍寨城公園展覽館指南, one-page image PDF (594 KB), version 'leaflet_F(chi).2017.V4'; https://web.archive.org/web/20180617225728id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_chinese.pdf; 644614 bytes; SHA-256 `2b91d584075e33236106a9e99a1599a112b03f8f4fa95b70b6efea4dc7d5b6e4`; licence: No licence stated in the PDF; Hong Kong SAR Government (LCSD) publication (https://web.archive.org/web/20180617225728id_/http://www.lcsd.gov.hk/en/parks/kwcp/common/attachment/exhibition_guide_chinese.pdf)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| leaflet panel 'A City of Thousand Faces' (top left) | The exhibition has one outdoor display area and six exhibition rooms inside the former Yamen (衙門). It uses models, images and sound effects to show the old City. | "This exhibition consists of one outdoor display area and six exhibition rooms inside the former Yamen." |
+| panel 'Outdoor Display Area' | The Outdoor Display Area is at the South Gate of Kowloon Walled City Park (九龍寨城公園). It shows a shadow wall (照壁) and a model of the City. | "Located at the South Gate of the Kowloon Walled City Park, the Outdoor Display Area showcases a shadow wall and a model of the Walled City." |
+| panel 'Outdoor Display Area'; Chinese edition panel 戶外展區 | The side of the shadow wall that faces the South Gate carries an inscribed essay on the park (《九龍寨城公園碑記》). The other side shows a cross-section of the City before the demolition. | "On the opposite side, a cross-section of the pre-demolished Walled City is displayed." |
+| panel 'Outdoor Display Area'; Chinese edition 戶外展區 | The bronze model that faces the Yamen copies the buildings of the City before the demolition. The Chinese text calls it a bronze-cast model (銅鑄模型) modelled on the City's buildings. | "面向衙門的銅鑄模型則是仿照寨城清拆前的建築物而造成" (The bronze-cast model facing the Yamen was made after the buildings of the Walled City before the clearance.) |
+| panel 'History of the Yamen' | The Yamen was built in 1847. It is the only historical building of the City that remains. | "Built in 1847, the Yamen is the only historical building that remains in the Walled City." |
+| panel 'History of the Yamen'; Chinese edition 衙門歷史 | The Yamen held the offices of the Commodore of the Dapeng Brigade (大鵬協副將) and of the Kowloon Assistant Military Inspectorate (九龍巡檢司). Later it was a home for the aged; the word 'ALMSHOUSE' over its front door can still be seen. | "it was later used as a home for the aged, and the word "ALMSHOUSE", engraved over the front door of the Yamen, is still visible today." |
+| panel 'History of the Yamen'; Chinese edition 衙門歷史 | The Yamen is in the traditional style of South China, with three halls and four wings of houses (三進四廂). | "with three halls and four wings of houses." |
+| panel 'History' (bottom left) | The leaflet's history: a signal station was set up on the site in 1668, and in 1810 a fort was built at the far end of the beach next to the site. | "A signal station was established at the site in 1668. In 1810, a fort was built at the far end of the beach adjoining the site." |
+| panel 'History' | The Qing government began the walled garrison city in 1846 and finished it in 1847. It had stone walls with six watchtowers and four gates and covered 6.5 acres. | "Surrounded by strong stonewalls with six watchtowers and four gates, the Kowloon Walled City, occupying an area of 6.5 acres, was completed in 1847." |
+| panel 'History' | When British troops took over the City in 1899, the Qing officials and soldiers were expelled. The leaflet says the City then had no rule of law or administration and became a semi-lawless squatter slum. | "It became a semi-lawless squatter slum." |
+| panel 'History' | In the Japanese occupation (1941-1945) Japanese troops pulled down the walls and took the stones to extend Kai Tak Airfield. | "the walls of the Walled City were demolished by the Japanese troops, with the stones extracted for the extension of the nearby Kai Tak Airfield." |
+| panel 'History' | After the war high-rise tenements went up over the City without government supervision, and living conditions got worse. | "The post-war years saw high-rise tenements over the Walled City. Built without government supervision, the living conditions deteriorated as the days went by." |
+| panel 'History' | In 1987 the governments of China and Hong Kong agreed to demolish the City and make it a park. | "the Walled City were brought to an end in 1987 when both governments of China and Hong Kong agreed on the demolition" |
+| panel 'History' | The demolition was completed in April 1994. Some existing buildings, carved granite plaques found in the ground, remnants and relics were kept. | "The demolition works of the Walled City were completed in April 1994." |
+| panel 'Relishing the Past', Exhibition Room 1 | Exhibition Room 1 shows pictures of the history and the daily lives of the residents before the demolition. | "This room displays pictures depicting the history and daily lives of the residents of the Walled City before demolition." |
+| panel 'Relishing the Past', Exhibition Room 2; Chinese edition 二號展覽館 | Exhibition Room 2, 'Streets of the City' (寨城的橫街窄巷), recreates the narrow streets and tight alleys of the City. | "Scenes of narrow streets and tight alleys in the Walled City have been recreated." |
+| panel 'Relishing the Past', Exhibition Room 3; Chinese edition 三號展覽館 | Exhibition Room 3, 'The City's home-based industries' (寨城的家庭式工業), presents three common trades: small noodle factories, home-based candy factories and unlicensed dental clinics. | "小型製麵廠、家庭式糖果廠和無牌牙醫診所" (small noodle factories, home-style sweet (candy) factories and unlicensed dental clinics) |
+| panel 'Relishing the Past', Exhibition Room 4 | Exhibition Room 4 simulates a rooftop of the City in the 1970s and 1980s, to show its bright and dark sides. Its leaflet photo shows children on a flat roof among many TV aerials; the photo has no credit. | "This exhibition simulates the environment of a rooftop in the Walled City in the 1970s and the 1980s" |
+| panel 'Interactive Exhibition Rooms', Exhibition Room 5; Chinese edition 五號展覽館 | INFERRED: Exhibition Room 5 shows images of the Longjin Bridge (龍津石橋), the Longjin Pavilion (龍津亭), the Yamen, the Shadow Wall (大照壁) and Fui Sing Pavilion (魁星閣), Hill Top Pavilion, the buildings and streets, the demolition and the park. INFERRED: the Chinese list has 敬惜字紙亭 in the place of 'Hill Top Pavilion'; the two lists match in order. | "The images presented to you include the Longjin Bridge, the Longjin Pavilion, the Yamen, the Shadow Wall and Fui Sing Pavilion, Hill Top Pavilion" |
+| panel 'Interactive Exhibition Rooms', Exhibition Room 6 | In Exhibition Room 6 a visitor stands on footprints shown on a screen and moves to interact with filmed people of the City. | "You can interact with the people living in the Walled City by standing in front of the screen and match with the footprints" |
+| panel 'Exhibition Rooms' (plan, printed upside down) | The six exhibition rooms are in the Yamen. They open 10:00 am to 6:00 pm and close on Wednesdays, except Room 1. A plan of the Yamen marks Room 1 in the central hall and Rooms 2 to 6 in the side rooms. | "Opening Hours of the Exhibition Rooms: 10:00am to 06:00pm (Closed on Wednesday, except Exhibition Room No.1)" |
+
+- **Leads:**
+  - The newer LCSD exhibition guide at the same path (exhibition_guide_english.pdf, about 6-7 MB, Wayback captures from 2025-05-26) and digitalexhibition_en.pdf / digitalexhibition_tc.pdf (Wayback 2025-06-10 and 2025-07-17): the guide to the exhibition of 2025.
+  - An older Chinese exhibition guide (exhibition_guide_chinese.pdf, 1.65 MB, Wayback 2017-04-21 and 2017-05-17), an earlier version of the leaflet.
+  - The inscribed essay on the park on the shadow wall at the South Gate: 《九龍寨城公園碑記》 (text not in the leaflet).
+### lead-l0979: Experience CITY IN TIME: Time travel in Hong Kong — Kowloon City: From the Past of the Walled City to Kai Tak's New Landmark (CityInTime_KLN_eBook_EN)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** CITY IN TIME (Hong Kong Tourism Commission), 'Experience CITY IN TIME: Time travel in Hong Kong. Kowloon City: From the Past of the Walled City to Kai Tak's New Landmark' (City Walk: Kowloon City Cultural History Tour), eBook, 9 pp., information as of December 2025 (PDF created 19 Jan 2026), https://www.cityintime.hk/media/2026/01/CityInTime_KLN_eBook_EN_final.pdf
+- **Class:** secondary (A tourism walking guide of 2025-26. Every statement about the City is a later narration without sources.)
+- **Date of the record:** December 2025 (information date); PDF created 2026-01-19
+- **Files:**
+  - `lead-l0979-CityInTime_KLN_eBook_EN_final-ad92bf78.pdf` (in `local/`, not in git): English eBook PDF, 9 pages (12.2 MB); https://www.cityintime.hk/media/2026/01/CityInTime_KLN_eBook_EN_final.pdf; 12221590 bytes; SHA-256 `9e5071e22c54f28b4345c6cc110bbe0ca00827f4f2a1b1c074e3b3e028be0a8d`; licence: © Copyright Hong Kong Tourism Commission 2025 (p. 9); the site links to its Terms and Conditions (https://www.cityintime.hk/en/terms-and-conditions/)
+  - `lead-l0979-CityInTime_KLN_eBook_TC_final-748edd3d.pdf` (in `local/`, not in git): Chinese edition of the eBook, PDF (12.3 MB); not read; https://www.cityintime.hk/media/2026/01/CityInTime_KLN_eBook_TC_final.pdf; 12311461 bytes; SHA-256 `23089d7813a36a26666fbab19d766c15e929d45fd3f060362e06eeea483efcfa`; licence: Not checked; INFERRED the same copyright as the English edition (https://www.cityintime.hk/en/terms-and-conditions/)
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| p. 3 (route map) | The guide places AR clocks at Kowloon Walled City Park, showing the City about 1910, and on Carpenter Road (賈炳達道), showing it about 1987. | "Kowloon Walled City Park ca.1910 Carpenter Road ca.1987" |
+| p. 4 | The Hau Wong Temple (侯王廟) keeps a bell cast in 1730 and an iron incense burner given by Qing officials of the garrison in the Walled City. | "an iron incense burner donated by Qing officials garrisoned in Kowloon Walled City" |
+| p. 5 | The Yamen in the park was first the office of the Kowloon Assistant Military Inspectorate. The English word 'ALMSHOUSE' is cut into its lintel. | "with the English word ‘ALMSHOUSE’ engraved on its lintel." |
+| p. 5 | The guide describes the Yamen as a three-hall building with two internal courtyards. | "featuring a three-hall structure with two internal courtyards" |
+| p. 5 | In 1902 the Anglican Church made the Yamen into the 'Kwong Yem Home', first a shelter for poor old people and later an orphanage. The guide gives no Chinese name. | "repurposed by the Anglican Church in 1902 into the “Kwong Yem Home”. It initially served as a shelter for impoverished elderly people and later as an orphanage." |
+| p. 5 | The guide cites a travel guide of 1911 that called the City a favourite retreat of young rich Chinese, and says foreign visitors came to photograph its Chinese buildings. The 1911 guide is not named. | "According to a travel guide published in 1911, this was once a favoured retreat for Chinese young and rich elites." |
+| p. 5 | Since May 2025 the park has a film-set exhibition, 'Kowloon Walled City: A Cinematic Journey', with sets from the film 'Twilight of the Warriors: Walled In', to show the City of the 1980s. | "Since May 2025, an exhibition titled ‘Kowloon Walled City: A Cinematic Journey’, which is a movie set exhibition, has been set up in the park" |
+| p. 5 (Film Hotspot) | The last scene of 'Days of Being Wild' (1990), with Tony Leung, was filmed inside the City. | "The surprise appearance of Tony Leung at the end of the film was shot inside the Kowloon Walled City" |
+| p. 6 (Film Hotspot) | 'Twilight of the Warriors: Walled In' (2024) is set in the City of the 1980s. It is a later depiction. | "Released in 2024, “Twilight of the Warriors: Walled in” is set in the Kowloon Walled City of the 1980s." |
+| p. 6 (Carpenter Road) | The guide says that in the 1950s and 1960s life in the City was hard and many people could not pay for childbirth. | "During the 1950s and 1960s, life within Kowloon Walled City was harsh, and childbirth expenses were unaffordable for many." |
+| p. 6 | The maternity home of the Lok Sin Tong (樂善堂) arranged registered midwives to help with deliveries. | "The maternity home at Lok Sin Tong arranged for registered midwives to assist with deliveries" |
+| p. 6 | The Lok Sin Tong maternity home closed in 1971; its premises then became a drug addiction registry. | "After the maternity home ceased operations in 1971, it was repurposed as a drug addiction registry." |
+| p. 6 | During the demolition of the City the Lok Sin Tong lent its headquarters to the police as a temporary command station. | "During the demolition of the Walled City, Lok Sin Tong offered its headquarters as a temporary command station for the police." |
+| p. 6 (AR clock, Carpenter Road) | The guide says that in the 1980s aircraft flew low over Kowloon City; passengers saw washing lines on the roofs and the light of televisions at night. | "Aircraft flew low over Kowloon City, allowing passengers to glimpse clotheslines on rooftops and the light emanating from televisions of homes at night." |
+| p. 6 | For residents the deafening roar of aircraft engines was part of everyday life. | "For the residents, the deafening roar of aircraft engines became part of everyday life" |
+
+- **Leads:**
+  - The travel guide of 1911 that the eBook cites for the City as a 'favoured retreat' of rich young Chinese (not named; p. 5).
+  - Records of the Anglican Church's 'Kwong Yem Home' in the Yamen from 1902 (p. 5).
+  - Lok Sin Tong records of its maternity home (to 1971) and drug addiction registry (p. 6).
+### lead-l0421: Cap. 53B Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice, section 2(ak) (L.N. 406 of 1996)
+
+- **Status:** Read on 2026-11-26; a checker checked a sample of the facts on 2026-11-26.
+- **Citation:** Antiquities and Monuments (Declaration of Monuments and Historical Buildings) (Consolidation) Notice (Cap. 53B), section 2(ak), added by L.N. 406 of 1996 (4 Oct 1996); Hong Kong e-Legislation, Department of Justice, versions of 30/06/1997 and 02/10/2026; https://www.elegislation.gov.hk/hk/cap53B!en and https://www.elegislation.gov.hk/hk/cap53B!zh-Hant-HK
+- **Class:** primary (The legal text of the declaration of 1996. It belongs to 1996, not to the park years: the folder hk-government-records-1899-1996 (or legco-and-urban-council-1919-1997 next to top-hkgov-9) fits better than park-and-heritage-2006-2026.)
+- **Date of the record:** 4 October 1996 (L.N. 406 of 1996); consolidated text as at 30/06/1997 and 02/10/2026
+- **Note:** The secondary part of the item of the same id in [`../../primary-sources/park-and-heritage-2006-2026/SOURCE.md`](../../primary-sources/park-and-heritage-2006-2026/SOURCE.md).
+
+| Page | Fact | Words in the source |
+|---|---|---|
+| https://www.elegislation.gov.hk/terms, para. 2 | The e-Legislation terms of use say that the contents of the site enjoy copyright and other intellectual property rights, and that users must observe the site's Copyright Policy. | "The contents of HKeL enjoy copyright and other intellectual property rights." |
